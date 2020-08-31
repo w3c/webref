@@ -1,0 +1,883 @@
+{
+  "spec": {
+    "title": "WebIDL Level 1",
+    "url": "https://www.w3.org/TR/WebIDL-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "WebIDL Level 1"
+    },
+    {
+      "id": "w3c-recommendation-15-december-2016",
+      "level": "2",
+      "title": "W3C Recommendation 15 December 2016"
+    },
+    {
+      "id": "h-abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "h-sotd",
+      "level": "2",
+      "title": "Status of This Document"
+    },
+    {
+      "id": "table-of-contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "h-introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "h-conventions",
+      "level": "3",
+      "title": "Typographic conventions"
+    },
+    {
+      "id": "h-conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "h-idl",
+      "level": "2",
+      "title": "Interface definition language"
+    },
+    {
+      "id": "h-idl-names",
+      "level": "3",
+      "title": "Names"
+    },
+    {
+      "id": "h-idl-interfaces",
+      "level": "3",
+      "title": "Interfaces"
+    },
+    {
+      "id": "h-idl-constants",
+      "level": "4",
+      "title": "Constants"
+    },
+    {
+      "id": "h-idl-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "h-idl-operations",
+      "level": "4",
+      "title": "Operations"
+    },
+    {
+      "id": "h-idl-special-operations",
+      "level": "4",
+      "title": "Special operations"
+    },
+    {
+      "id": "h-idl-legacy-callers",
+      "level": "5",
+      "title": "Legacy callers"
+    },
+    {
+      "id": "h-idl-stringifiers",
+      "level": "5",
+      "title": "Stringifiers"
+    },
+    {
+      "id": "h-idl-serializers",
+      "level": "5",
+      "title": "Serializers"
+    },
+    {
+      "id": "h-idl-indexed-properties",
+      "level": "5",
+      "title": "Indexed properties"
+    },
+    {
+      "id": "h-idl-named-properties",
+      "level": "5",
+      "title": "Named properties"
+    },
+    {
+      "id": "h-idl-static-attributes-and-operations",
+      "level": "4",
+      "title": "Static attributes and operations"
+    },
+    {
+      "id": "h-idl-overloading",
+      "level": "4",
+      "title": "Overloading"
+    },
+    {
+      "id": "h-idl-iterable",
+      "level": "4",
+      "title": "Iterable declarations"
+    },
+    {
+      "id": "h-idl-dictionaries",
+      "level": "3",
+      "title": "Dictionaries"
+    },
+    {
+      "id": "h-idl-exceptions",
+      "level": "3",
+      "title": "Exceptions"
+    },
+    {
+      "id": "h-idl-domexception-error-names",
+      "level": "4",
+      "title": "Error names"
+    },
+    {
+      "id": "h-idl-enums",
+      "level": "3",
+      "title": "Enumerations"
+    },
+    {
+      "id": "h-idl-callback-functions",
+      "level": "3",
+      "title": "Callback functions"
+    },
+    {
+      "id": "h-idl-typedefs",
+      "level": "3",
+      "title": "Typedefs"
+    },
+    {
+      "id": "h-idl-implements-statements",
+      "level": "3",
+      "title": "Implements statements"
+    },
+    {
+      "id": "h-idl-objects",
+      "level": "3",
+      "title": "Objects implementing interfaces"
+    },
+    {
+      "id": "h-idl-types",
+      "level": "3",
+      "title": "Types"
+    },
+    {
+      "id": "h-idl-any",
+      "level": "4",
+      "title": "any"
+    },
+    {
+      "id": "h-idl-boolean",
+      "level": "4",
+      "title": "boolean"
+    },
+    {
+      "id": "h-idl-byte",
+      "level": "4",
+      "title": "byte"
+    },
+    {
+      "id": "h-idl-octet",
+      "level": "4",
+      "title": "octet"
+    },
+    {
+      "id": "h-idl-short",
+      "level": "4",
+      "title": "short"
+    },
+    {
+      "id": "h-idl-unsigned-short",
+      "level": "4",
+      "title": "unsigned short"
+    },
+    {
+      "id": "h-idl-long",
+      "level": "4",
+      "title": "long"
+    },
+    {
+      "id": "h-idl-unsigned-long",
+      "level": "4",
+      "title": "unsigned long"
+    },
+    {
+      "id": "h-idl-long-long",
+      "level": "4",
+      "title": "long long"
+    },
+    {
+      "id": "h-idl-unsigned-long-long",
+      "level": "4",
+      "title": "unsigned long long"
+    },
+    {
+      "id": "h-idl-float",
+      "level": "4",
+      "title": "float"
+    },
+    {
+      "id": "h-idl-unrestricted-float",
+      "level": "4",
+      "title": "unrestricted float"
+    },
+    {
+      "id": "h-idl-double",
+      "level": "4",
+      "title": "double"
+    },
+    {
+      "id": "h-idl-unrestricted-double",
+      "level": "4",
+      "title": "unrestricted double"
+    },
+    {
+      "id": "h-idl-domstring",
+      "level": "4",
+      "title": "DOMString"
+    },
+    {
+      "id": "h-idl-bytestring",
+      "level": "4",
+      "title": "ByteString"
+    },
+    {
+      "id": "h-idl-usvstring",
+      "level": "4",
+      "title": "USVString"
+    },
+    {
+      "id": "h-idl-object",
+      "level": "4",
+      "title": "object"
+    },
+    {
+      "id": "h-idl-interface",
+      "level": "4",
+      "title": "Interface types"
+    },
+    {
+      "id": "h-idl-dictionary",
+      "level": "4",
+      "title": "Dictionary types"
+    },
+    {
+      "id": "h-idl-enumeration",
+      "level": "4",
+      "title": "Enumeration types"
+    },
+    {
+      "id": "h-idl-callback-function",
+      "level": "4",
+      "title": "Callback function types"
+    },
+    {
+      "id": "h-idl-nullable-type",
+      "level": "4",
+      "title": "Nullable types — T?"
+    },
+    {
+      "id": "h-idl-sequence",
+      "level": "4",
+      "title": "Sequences — sequence<T>"
+    },
+    {
+      "id": "h-idl-promise",
+      "level": "4",
+      "title": "Promise types — Promise<T>"
+    },
+    {
+      "id": "h-idl-union",
+      "level": "4",
+      "title": "Union types"
+    },
+    {
+      "id": "h-idl-error",
+      "level": "4",
+      "title": "Error"
+    },
+    {
+      "id": "h-idl-domexception",
+      "level": "4",
+      "title": "DOMException"
+    },
+    {
+      "id": "h-idl-buffer-source-types",
+      "level": "4",
+      "title": "Buffer source types"
+    },
+    {
+      "id": "h-idl-extended-attributes",
+      "level": "3",
+      "title": "Extended attributes"
+    },
+    {
+      "id": "h-ecmascript-binding",
+      "level": "2",
+      "title": "ECMAScript binding"
+    },
+    {
+      "id": "h-es-environment",
+      "level": "3",
+      "title": "ECMAScript environment"
+    },
+    {
+      "id": "h-es-type-mapping",
+      "level": "3",
+      "title": "ECMAScript type mapping"
+    },
+    {
+      "id": "h-es-any",
+      "level": "4",
+      "title": "any"
+    },
+    {
+      "id": "h-es-void",
+      "level": "4",
+      "title": "void"
+    },
+    {
+      "id": "h-es-boolean",
+      "level": "4",
+      "title": "boolean"
+    },
+    {
+      "id": "h-es-byte",
+      "level": "4",
+      "title": "byte"
+    },
+    {
+      "id": "h-es-octet",
+      "level": "4",
+      "title": "octet"
+    },
+    {
+      "id": "h-es-short",
+      "level": "4",
+      "title": "short"
+    },
+    {
+      "id": "h-es-unsigned-short",
+      "level": "4",
+      "title": "unsigned short"
+    },
+    {
+      "id": "h-es-long",
+      "level": "4",
+      "title": "long"
+    },
+    {
+      "id": "h-es-unsigned-long",
+      "level": "4",
+      "title": "unsigned long"
+    },
+    {
+      "id": "h-es-long-long",
+      "level": "4",
+      "title": "long long"
+    },
+    {
+      "id": "h-es-unsigned-long-long",
+      "level": "4",
+      "title": "unsigned long long"
+    },
+    {
+      "id": "h-es-float",
+      "level": "4",
+      "title": "float"
+    },
+    {
+      "id": "h-es-unrestricted-float",
+      "level": "4",
+      "title": "unrestricted float"
+    },
+    {
+      "id": "h-es-double",
+      "level": "4",
+      "title": "double"
+    },
+    {
+      "id": "h-es-unrestricted-double",
+      "level": "4",
+      "title": "unrestricted double"
+    },
+    {
+      "id": "h-es-domstring",
+      "level": "4",
+      "title": "DOMString"
+    },
+    {
+      "id": "h-es-bytestring",
+      "level": "4",
+      "title": "ByteString"
+    },
+    {
+      "id": "h-es-usvstring",
+      "level": "4",
+      "title": "USVString"
+    },
+    {
+      "id": "h-es-object",
+      "level": "4",
+      "title": "object"
+    },
+    {
+      "id": "h-es-interface",
+      "level": "4",
+      "title": "Interface types"
+    },
+    {
+      "id": "h-es-dictionary",
+      "level": "4",
+      "title": "Dictionary types"
+    },
+    {
+      "id": "h-es-enumeration",
+      "level": "4",
+      "title": "Enumeration types"
+    },
+    {
+      "id": "h-es-callback-function",
+      "level": "4",
+      "title": "Callback function types"
+    },
+    {
+      "id": "h-es-nullable-type",
+      "level": "4",
+      "title": "Nullable types — T?"
+    },
+    {
+      "id": "h-es-sequence",
+      "level": "4",
+      "title": "Sequences — sequence<T>"
+    },
+    {
+      "id": "h-create-sequence-from-iterable",
+      "level": "5",
+      "title": "Creating a sequence from an iterable"
+    },
+    {
+      "id": "h-es-promise",
+      "level": "4",
+      "title": "Promise types — Promise<T>"
+    },
+    {
+      "id": "h-es-union",
+      "level": "4",
+      "title": "Union types"
+    },
+    {
+      "id": "h-es-error",
+      "level": "4",
+      "title": "Error"
+    },
+    {
+      "id": "h-es-domexception",
+      "level": "4",
+      "title": "DOMException"
+    },
+    {
+      "id": "h-es-buffer-source-types",
+      "level": "4",
+      "title": "Buffer source types"
+    },
+    {
+      "id": "h-es-extended-attributes",
+      "level": "3",
+      "title": "ECMAScript-specific extended attributes"
+    },
+    {
+      "id": "h-clamp",
+      "level": "4",
+      "title": "[Clamp]"
+    },
+    {
+      "id": "h-constructor",
+      "level": "4",
+      "title": "[Constructor]"
+    },
+    {
+      "id": "h-enforcerange",
+      "level": "4",
+      "title": "[EnforceRange]"
+    },
+    {
+      "id": "h-exposed",
+      "level": "4",
+      "title": "[Exposed]"
+    },
+    {
+      "id": "PrimaryGlobal",
+      "level": "4",
+      "title": "[Global] and [PrimaryGlobal]"
+    },
+    {
+      "id": "h-lenientthis",
+      "level": "4",
+      "title": "[LenientThis]"
+    },
+    {
+      "id": "h-namedconstructor",
+      "level": "4",
+      "title": "[NamedConstructor]"
+    },
+    {
+      "id": "h-newobject",
+      "level": "4",
+      "title": "[NewObject]"
+    },
+    {
+      "id": "h-nointerfaceobject",
+      "level": "4",
+      "title": "[NoInterfaceObject]"
+    },
+    {
+      "id": "h-overridebuiltins",
+      "level": "4",
+      "title": "[OverrideBuiltins]"
+    },
+    {
+      "id": "h-putforwards",
+      "level": "4",
+      "title": "[PutForwards]"
+    },
+    {
+      "id": "h-replaceable",
+      "level": "4",
+      "title": "[Replaceable]"
+    },
+    {
+      "id": "h-sameobject",
+      "level": "4",
+      "title": "[SameObject]"
+    },
+    {
+      "id": "h-treatnonobjectasnull",
+      "level": "4",
+      "title": "[TreatNonObjectAsNull]"
+    },
+    {
+      "id": "h-treatnullas",
+      "level": "4",
+      "title": "[TreatNullAs]"
+    },
+    {
+      "id": "h-unforgeable",
+      "level": "4",
+      "title": "[Unforgeable]"
+    },
+    {
+      "id": "h-es-security",
+      "level": "3",
+      "title": "Security"
+    },
+    {
+      "id": "h-es-overloads",
+      "level": "3",
+      "title": "Overload resolution algorithm"
+    },
+    {
+      "id": "h-es-interfaces",
+      "level": "3",
+      "title": "Interfaces"
+    },
+    {
+      "id": "h-interface-object",
+      "level": "4",
+      "title": "Interface object"
+    },
+    {
+      "id": "h-es-interface-call",
+      "level": "5",
+      "title": "Interface object [[Call]] method"
+    },
+    {
+      "id": "h-es-interface-hasinstance",
+      "level": "5",
+      "title": "Interface object [[HasInstance]] method"
+    },
+    {
+      "id": "h-named-constructors",
+      "level": "4",
+      "title": "Named constructors"
+    },
+    {
+      "id": "h-es-dictionary-constructors",
+      "level": "4",
+      "title": "Dictionary constructors"
+    },
+    {
+      "id": "h-interface-prototype-object",
+      "level": "4",
+      "title": "Interface prototype object"
+    },
+    {
+      "id": "h-named-properties-object",
+      "level": "4",
+      "title": "Named properties object"
+    },
+    {
+      "id": "h-named-properties-object-getownproperty",
+      "level": "5",
+      "title": "Named properties object [[GetOwnProperty]] method"
+    },
+    {
+      "id": "h-named-properties-object-defineownproperty",
+      "level": "5",
+      "title": "Named properties object [[DefineOwnProperty]] method"
+    },
+    {
+      "id": "h-named-properties-object-delete",
+      "level": "5",
+      "title": "Named properties object [[Delete]] method"
+    },
+    {
+      "id": "h-es-constants",
+      "level": "4",
+      "title": "Constants"
+    },
+    {
+      "id": "h-es-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "h-es-operations",
+      "level": "4",
+      "title": "Operations"
+    },
+    {
+      "id": "h-es-stringifier",
+      "level": "5",
+      "title": "Stringifiers"
+    },
+    {
+      "id": "h-es-serializer",
+      "level": "5",
+      "title": "Serializers"
+    },
+    {
+      "id": "h-es-iterators",
+      "level": "4",
+      "title": "Common iterator behavior"
+    },
+    {
+      "id": "h-es-iterator",
+      "level": "5",
+      "title": "@@iterator"
+    },
+    {
+      "id": "h-es-foreach",
+      "level": "5",
+      "title": "forEach"
+    },
+    {
+      "id": "h-es-iterable",
+      "level": "4",
+      "title": "Iterable declarations"
+    },
+    {
+      "id": "h-es-iterable-entries",
+      "level": "5",
+      "title": "entries"
+    },
+    {
+      "id": "h-es-iterable-keys",
+      "level": "5",
+      "title": "keys"
+    },
+    {
+      "id": "h-es-iterable-values",
+      "level": "5",
+      "title": "values"
+    },
+    {
+      "id": "h-es-default-iterator-object",
+      "level": "5",
+      "title": "Default iterator objects"
+    },
+    {
+      "id": "h-es-iterator-prototype-object",
+      "level": "5",
+      "title": "Iterator prototype object"
+    },
+    {
+      "id": "h-initializing-objects-from-iterables",
+      "level": "4",
+      "title": "Initializing objects from iterables"
+    },
+    {
+      "id": "h-es-implements-statements",
+      "level": "3",
+      "title": "Implements statements"
+    },
+    {
+      "id": "h-es-platform-objects",
+      "level": "3",
+      "title": "Platform objects implementing interfaces"
+    },
+    {
+      "id": "h-indexed-and-named-properties",
+      "level": "4",
+      "title": "Indexed and named properties"
+    },
+    {
+      "id": "h-getownproperty-guts",
+      "level": "4",
+      "title": "The PlatformObjectGetOwnProperty abstract operation"
+    },
+    {
+      "id": "h-getownproperty",
+      "level": "4",
+      "title": "Platform object [[GetOwnProperty]] method"
+    },
+    {
+      "id": "h-invoking-indexed-setter",
+      "level": "4",
+      "title": "Invoking a platform object indexed property setter"
+    },
+    {
+      "id": "h-invoking-named-setter",
+      "level": "4",
+      "title": "Invoking a platform object named property setter"
+    },
+    {
+      "id": "h-platformobjectset",
+      "level": "4",
+      "title": "Platform object [[Set]] method"
+    },
+    {
+      "id": "h-defineownproperty",
+      "level": "4",
+      "title": "Platform object [[DefineOwnProperty]] method"
+    },
+    {
+      "id": "h-delete",
+      "level": "4",
+      "title": "Platform object [[Delete]] method"
+    },
+    {
+      "id": "h-call",
+      "level": "4",
+      "title": "Platform object [[Call]] method"
+    },
+    {
+      "id": "h-property-enumeration",
+      "level": "4",
+      "title": "Property enumeration"
+    },
+    {
+      "id": "h-es-user-objects",
+      "level": "3",
+      "title": "User objects implementing callback interfaces"
+    },
+    {
+      "id": "h-es-invoking-callback-functions",
+      "level": "3",
+      "title": "Invoking callback functions"
+    },
+    {
+      "id": "h-es-exceptions",
+      "level": "3",
+      "title": "Exceptions"
+    },
+    {
+      "id": "h-es-domexception-constructor-object",
+      "level": "4",
+      "title": "DOMException constructor object"
+    },
+    {
+      "id": "h-es-domexception-call",
+      "level": "5",
+      "title": "DOMException(message, name)"
+    },
+    {
+      "id": "h-es-domexception-prototype-object",
+      "level": "4",
+      "title": "DOMException prototype object"
+    },
+    {
+      "id": "h-es-exception-objects",
+      "level": "3",
+      "title": "Exception objects"
+    },
+    {
+      "id": "h-es-creating-throwing-exceptions",
+      "level": "3",
+      "title": "Creating and throwing exceptions"
+    },
+    {
+      "id": "h-es-handling-exceptions",
+      "level": "3",
+      "title": "Handling exceptions"
+    },
+    {
+      "id": "h-common",
+      "level": "2",
+      "title": "Common definitions"
+    },
+    {
+      "id": "h-common-arraybufferview",
+      "level": "3",
+      "title": "ArrayBufferView"
+    },
+    {
+      "id": "h-common-buffersource",
+      "level": "3",
+      "title": "BufferSource"
+    },
+    {
+      "id": "h-common-domtimestamp",
+      "level": "3",
+      "title": "DOMTimeStamp"
+    },
+    {
+      "id": "h-common-function",
+      "level": "3",
+      "title": "Function"
+    },
+    {
+      "id": "h-common-voidfunction",
+      "level": "3",
+      "title": "VoidFunction"
+    },
+    {
+      "id": "h-extensibility",
+      "level": "2",
+      "title": "Extensibility"
+    },
+    {
+      "id": "h-referencing",
+      "level": "2",
+      "title": "Referencing this specification"
+    },
+    {
+      "id": "h-acknowledgements",
+      "level": "2",
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "h-idl-grammar",
+      "level": "2",
+      "title": "A. IDL grammar"
+    },
+    {
+      "id": "h-references",
+      "level": "2",
+      "title": "B. References"
+    },
+    {
+      "id": "h-normative-references",
+      "level": "3",
+      "title": "B.1 Normative references"
+    },
+    {
+      "id": "h-informative-references",
+      "level": "3",
+      "title": "B.2 Informative references"
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 // Source: Web Share API (https://www.w3.org/TR/web-share/)
 
 partial interface Navigator {
-  [SecureContext] Promise<void> share(optional ShareData data = {});
+  [SecureContext] Promise<undefined> share(optional ShareData data = {});
 };
 
 dictionary ShareData {

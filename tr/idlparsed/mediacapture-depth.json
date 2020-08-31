@@ -1,0 +1,960 @@
+{
+  "spec": {
+    "title": "Media Capture Depth Stream Extensions",
+    "url": "https://www.w3.org/TR/mediacapture-depth/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "DistortionCoefficients": {
+        "type": "dictionary",
+        "name": "DistortionCoefficients",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "k1",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "k2",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "p1",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "p2",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "k3",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "Transformation": {
+        "type": "dictionary",
+        "name": "Transformation",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "transformationMatrix",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "videoDeviceId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "VideoKindEnum": {
+        "type": "enum",
+        "name": "VideoKindEnum",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "color"
+          },
+          {
+            "type": "enum-value",
+            "value": "depth"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "MediaTrackSupportedConstraints": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackSupportedConstraints",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "videoKind",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focalLengthX",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": false
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focalLengthY",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": false
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "principalPointX",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": false
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "principalPointY",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": false
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "deprojectionDistortionCoefficients",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": false
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "projectionDistortionCoefficients",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": false
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "depthNear",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": false
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "depthFar",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": false
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "depthToVideoTransform",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": false
+              },
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackCapabilities": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackCapabilities",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "videoKind",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focalLengthX",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": true,
+                "idlType": [
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DoubleRange"
+                  }
+                ]
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focalLengthY",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": true,
+                "idlType": [
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DoubleRange"
+                  }
+                ]
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "principalPointX",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": true,
+                "idlType": [
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DoubleRange"
+                  }
+                ]
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "principalPointY",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": true,
+                "idlType": [
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DoubleRange"
+                  }
+                ]
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "deprojectionDistortionCoefficients",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "projectionDistortionCoefficients",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "depthNear",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": true,
+                "idlType": [
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DoubleRange"
+                  }
+                ]
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "depthFar",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": true,
+                "idlType": [
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "double"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DoubleRange"
+                  }
+                ]
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "depthToVideoTransform",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackConstraintSet": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackConstraintSet",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "videoKind",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDOMString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focalLengthX",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focalLengthY",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "principalPointX",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "principalPointY",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "deprojectionDistortionCoefficients",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainBoolean"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "projectionDistortionCoefficients",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainBoolean"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "depthNear",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "depthFar",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "depthToVideoTransform",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainBoolean"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackSettings": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackSettings",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "videoKind",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focalLengthX",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focalLengthY",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "principalPointX",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "principalPointY",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "deprojectionDistortionCoefficients",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DistortionCoefficients"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "projectionDistortionCoefficients",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DistortionCoefficients"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "depthNear",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "depthFar",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "depthToVideoTransform",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "Transformation"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "MediaTrackSupportedConstraints": [],
+      "MediaTrackCapabilities": [
+        "DoubleRange"
+      ],
+      "MediaTrackConstraintSet": [
+        "ConstrainDOMString",
+        "ConstrainDouble",
+        "ConstrainBoolean"
+      ],
+      "MediaTrackSettings": [
+        "DistortionCoefficients",
+        "Transformation"
+      ],
+      "DistortionCoefficients": [],
+      "Transformation": []
+    },
+    "externalDependencies": [
+      "MediaTrackSupportedConstraints",
+      "MediaTrackCapabilities",
+      "DoubleRange",
+      "MediaTrackConstraintSet",
+      "ConstrainDOMString",
+      "ConstrainDouble",
+      "ConstrainBoolean",
+      "MediaTrackSettings"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

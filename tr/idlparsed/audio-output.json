@@ -1,0 +1,91 @@
+{
+  "spec": {
+    "title": "Audio Output Devices API",
+    "url": "https://www.w3.org/TR/audio-output/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {},
+    "idlExtendedNames": {
+      "HTMLMediaElement": [
+        {
+          "type": "interface",
+          "name": "HTMLMediaElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "sinkId",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "operation",
+              "name": "setSinkId",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "void"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "sinkId",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "HTMLMediaElement": []
+    },
+    "externalDependencies": [
+      "HTMLMediaElement"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

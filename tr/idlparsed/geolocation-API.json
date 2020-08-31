@@ -1,0 +1,643 @@
+{
+  "spec": {
+    "title": "Geolocation API Specification 2nd Edition",
+    "url": "https://www.w3.org/TR/geolocation-API/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "Geolocation": {
+        "type": "interface",
+        "name": "Geolocation",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "getCurrentPosition",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "successCallback",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PositionCallback"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "errorCallback",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PositionErrorCallback"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PositionOptions"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "watchPosition",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "successCallback",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PositionCallback"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "errorCallback",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PositionErrorCallback"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PositionOptions"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "clearWatch",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "watchId",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "NoInterfaceObject",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "PositionCallback": {
+        "type": "callback",
+        "name": "PositionCallback",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "arguments": [
+          {
+            "type": "argument",
+            "name": "position",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Position"
+            },
+            "default": null,
+            "optional": false,
+            "variadic": false
+          }
+        ],
+        "extAttrs": []
+      },
+      "PositionErrorCallback": {
+        "type": "callback",
+        "name": "PositionErrorCallback",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "arguments": [
+          {
+            "type": "argument",
+            "name": "positionError",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PositionError"
+            },
+            "default": null,
+            "optional": false,
+            "variadic": false
+          }
+        ],
+        "extAttrs": []
+      },
+      "PositionOptions": {
+        "type": "dictionary",
+        "name": "PositionOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "enableHighAccuracy",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "timeout",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Clamp",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0xFFFFFFFF"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "maximumAge",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Clamp",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "Position": {
+        "type": "interface",
+        "name": "Position",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "coords",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Coordinates"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "timestamp",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "NoInterfaceObject",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "Coordinates": {
+        "type": "interface",
+        "name": "Coordinates",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "latitude",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "longitude",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "altitude",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "accuracy",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "altitudeAccuracy",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "heading",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "speed",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "NoInterfaceObject",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "PositionError": {
+        "type": "interface",
+        "name": "PositionError",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "const",
+            "name": "PERMISSION_DENIED",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "POSITION_UNAVAILABLE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            }
+          },
+          {
+            "type": "const",
+            "name": "TIMEOUT",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "3"
+            }
+          },
+          {
+            "type": "attribute",
+            "name": "code",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "message",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "NoInterfaceObject",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Navigator": [
+        {
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "geolocation",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "Geolocation"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "Navigator": [
+        "Geolocation"
+      ],
+      "Geolocation": [
+        "PositionCallback",
+        "PositionErrorCallback",
+        "PositionOptions"
+      ],
+      "PositionOptions": [],
+      "Position": [
+        "Coordinates"
+      ],
+      "Coordinates": [],
+      "PositionError": []
+    },
+    "externalDependencies": [
+      "Navigator"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

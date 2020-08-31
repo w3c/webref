@@ -1,0 +1,231 @@
+{
+  "spec": {
+    "title": "Gyroscope",
+    "url": "https://www.w3.org/TR/gyroscope/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "Gyroscope"
+        ]
+      },
+      "functions": {}
+    },
+    "idlNames": {
+      "Gyroscope": {
+        "type": "interface",
+        "name": "Gyroscope",
+        "inheritance": "Sensor",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "sensorOptions",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GyroscopeSensorOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "x",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "y",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "z",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "GyroscopeLocalCoordinateSystem": {
+        "type": "enum",
+        "name": "GyroscopeLocalCoordinateSystem",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "device"
+          },
+          {
+            "type": "enum-value",
+            "value": "screen"
+          }
+        ],
+        "extAttrs": []
+      },
+      "GyroscopeSensorOptions": {
+        "type": "dictionary",
+        "name": "GyroscopeSensorOptions",
+        "inheritance": "SensorOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "referenceFrame",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GyroscopeLocalCoordinateSystem"
+            },
+            "default": {
+              "type": "string",
+              "value": "device"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GyroscopeReadingValues": {
+        "type": "dictionary",
+        "name": "GyroscopeReadingValues",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "x",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "y",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "z",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "Gyroscope"
+      ]
+    },
+    "dependencies": {
+      "Gyroscope": [
+        "Sensor",
+        "GyroscopeSensorOptions"
+      ],
+      "GyroscopeSensorOptions": [
+        "SensorOptions",
+        "GyroscopeLocalCoordinateSystem"
+      ],
+      "GyroscopeReadingValues": []
+    },
+    "externalDependencies": [
+      "Sensor",
+      "SensorOptions"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

@@ -1,0 +1,498 @@
+{
+  "spec": {
+    "title": "Media Capture and Streams",
+    "url": "https://www.w3.org/TR/mediacapture-streams/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Media Capture and Streams"
+    },
+    {
+      "id": "table-of-contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "x1-introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "x2-conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "x3-terminology",
+      "level": "2",
+      "title": "Terminology"
+    },
+    {
+      "id": "x4-mediastream-api",
+      "level": "2",
+      "title": "MediaStream API"
+    },
+    {
+      "id": "x4-1-introduction",
+      "level": "3",
+      "title": "Introduction"
+    },
+    {
+      "id": "x4-2-mediastream",
+      "level": "3",
+      "title": "MediaStream"
+    },
+    {
+      "id": "constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "x4-3-mediastreamtrack",
+      "level": "3",
+      "title": "MediaStreamTrack"
+    },
+    {
+      "id": "x4-3-1-life-cycle-and-media-flow",
+      "level": "4",
+      "title": "Life-cycle and Media Flow"
+    },
+    {
+      "id": "life-cycle",
+      "level": "4",
+      "title": "Life-cycle"
+    },
+    {
+      "id": "media-flow",
+      "level": "4",
+      "title": "Media Flow"
+    },
+    {
+      "id": "x4-3-2-tracks-and-constraints",
+      "level": "4",
+      "title": "Tracks and Constraints"
+    },
+    {
+      "id": "x4-3-3-interface-definition",
+      "level": "4",
+      "title": "Interface Definition"
+    },
+    {
+      "id": "attributes-0",
+      "level": "5",
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-0",
+      "level": "5",
+      "title": "Methods"
+    },
+    {
+      "id": "x4-3-4-mediatracksupportedconstraints",
+      "level": "4",
+      "title": "MediaTrackSupportedConstraints"
+    },
+    {
+      "id": "dictionary-mediatracksupportedconstraints-members",
+      "level": "5",
+      "title": "Dictionary MediaTrackSupportedConstraints Members"
+    },
+    {
+      "id": "x4-3-5-mediatrackcapabilities",
+      "level": "4",
+      "title": "MediaTrackCapabilities"
+    },
+    {
+      "id": "dictionary-mediatrackcapabilities-members",
+      "level": "5",
+      "title": "Dictionary MediaTrackCapabilities\n            Members"
+    },
+    {
+      "id": "x4-3-6-mediatrackconstraints",
+      "level": "4",
+      "title": "MediaTrackConstraints"
+    },
+    {
+      "id": "dictionary-mediatrackconstraints-members",
+      "level": "5",
+      "title": "Dictionary MediaTrackConstraints\n            Members"
+    },
+    {
+      "id": "dictionary-mediatrackconstraintset-members",
+      "level": "5",
+      "title": "Dictionary MediaTrackConstraintSet\n            Members"
+    },
+    {
+      "id": "x4-3-7-mediatracksettings",
+      "level": "4",
+      "title": "MediaTrackSettings"
+    },
+    {
+      "id": "dictionary-mediatracksettings-members",
+      "level": "5",
+      "title": "Dictionary MediaTrackSettings\n            Members"
+    },
+    {
+      "id": "x4-3-8-constrainable-properties",
+      "level": "4",
+      "title": "Constrainable Properties"
+    },
+    {
+      "id": "x4-4-mediastreamtrackevent",
+      "level": "3",
+      "title": "MediaStreamTrackEvent"
+    },
+    {
+      "id": "constructors-0",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "attributes-1",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "dictionary-mediastreamtrackeventinit-members",
+      "level": "4",
+      "title": "Dictionary MediaStreamTrackEventInit Members"
+    },
+    {
+      "id": "x5-the-model-sources-sinks-constraints-and-settings",
+      "level": "2",
+      "title": "The model: sources, sinks, constraints, and settings"
+    },
+    {
+      "id": "x6-mediastreams-in-media-elements",
+      "level": "2",
+      "title": "MediaStreams in Media Elements"
+    },
+    {
+      "id": "x7-error-handling",
+      "level": "2",
+      "title": "Error Handling"
+    },
+    {
+      "id": "x7-1-ecmascript-6-terminology",
+      "level": "3",
+      "title": "ECMAScript 6 Terminology"
+    },
+    {
+      "id": "x7-2-overconstrainederror-object",
+      "level": "3",
+      "title": "OverconstrainedError Object"
+    },
+    {
+      "id": "x7-2-1-overconstrainederror-constructor",
+      "level": "4",
+      "title": "OverconstrainedError Constructor"
+    },
+    {
+      "id": "x7-2-1-1-overconstrainederror-constraint-message",
+      "level": "5",
+      "title": "OverconstrainedError ( constraint, message )"
+    },
+    {
+      "id": "x7-2-2-properties-of-the-overconstrainederror-constructor",
+      "level": "4",
+      "title": "Properties of the OverconstrainedError Constructor"
+    },
+    {
+      "id": "x7-2-2-1-overconstrainederror-prototype",
+      "level": "5",
+      "title": "OverconstrainedError.prototype"
+    },
+    {
+      "id": "x7-2-3-properties-of-the-overconstrainederror-prototype-object",
+      "level": "4",
+      "title": "Properties of the OverconstrainedError Prototype Object"
+    },
+    {
+      "id": "x7-2-3-1-overconstrainederror-prototype-constructor",
+      "level": "5",
+      "title": "OverconstrainedError.prototype.constructor"
+    },
+    {
+      "id": "x7-2-3-2-overconstrainederror-prototype-constraint",
+      "level": "5",
+      "title": "OverconstrainedError.prototype.constraint"
+    },
+    {
+      "id": "x7-2-3-3-overconstrainederror-prototype-message",
+      "level": "5",
+      "title": "OverconstrainedError.prototype.message"
+    },
+    {
+      "id": "x7-2-3-4-overconstrainederror-prototype-name",
+      "level": "5",
+      "title": "OverconstrainedError.prototype.name"
+    },
+    {
+      "id": "x8-event-summary",
+      "level": "2",
+      "title": "Event summary"
+    },
+    {
+      "id": "x9-enumerating-local-media-devices",
+      "level": "2",
+      "title": "Enumerating Local Media Devices"
+    },
+    {
+      "id": "x9-1-navigator-interface-extensions",
+      "level": "3",
+      "title": "Navigator Interface Extensions"
+    },
+    {
+      "id": "attributes-2",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "x9-2-mediadevices",
+      "level": "3",
+      "title": "MediaDevices"
+    },
+    {
+      "id": "attributes-3",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-1",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "x9-2-1-access-control-model",
+      "level": "4",
+      "title": "Access control model"
+    },
+    {
+      "id": "x9-2-2-device-information-can-be-exposed-check",
+      "level": "4",
+      "title": "Device information can be exposed check"
+    },
+    {
+      "id": "x9-3-device-info",
+      "level": "3",
+      "title": "Device Info"
+    },
+    {
+      "id": "attributes-4",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-2",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "x9-4-input-specific-device-info",
+      "level": "3",
+      "title": "Input-specific Device Info"
+    },
+    {
+      "id": "methods-3",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "x10-obtaining-local-multimedia-content",
+      "level": "2",
+      "title": "Obtaining local multimedia content"
+    },
+    {
+      "id": "x10-1-legacy-interface-extensions",
+      "level": "3",
+      "title": "Legacy Interface Extensions"
+    },
+    {
+      "id": "methods-4",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "x10-2-mediadevices-interface-extensions",
+      "level": "3",
+      "title": "MediaDevices Interface Extensions"
+    },
+    {
+      "id": "methods-5",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "x10-3-mediastreamconstraints",
+      "level": "3",
+      "title": "MediaStreamConstraints"
+    },
+    {
+      "id": "dictionary-mediastreamconstraints-members",
+      "level": "4",
+      "title": "Dictionary MediaStreamConstraints\n          Members"
+    },
+    {
+      "id": "x10-4-navigatorusermediasuccesscallback",
+      "level": "3",
+      "title": "NavigatorUserMediaSuccessCallback"
+    },
+    {
+      "id": "callback-navigatorusermediasuccesscallback-parameters",
+      "level": "4",
+      "title": "Callback NavigatorUserMediaSuccessCallback\n          Parameters"
+    },
+    {
+      "id": "x10-5-navigatorusermediaerrorcallback",
+      "level": "3",
+      "title": "NavigatorUserMediaErrorCallback"
+    },
+    {
+      "id": "callback-navigatorusermediaerrorcallback-parameters",
+      "level": "4",
+      "title": "Callback NavigatorUserMediaErrorCallback\n          Parameters"
+    },
+    {
+      "id": "x10-6-implementation-suggestions",
+      "level": "3",
+      "title": "Implementation Suggestions"
+    },
+    {
+      "id": "x11-constrainable-pattern",
+      "level": "2",
+      "title": "Constrainable Pattern"
+    },
+    {
+      "id": "x11-1-interface-definition",
+      "level": "3",
+      "title": "Interface Definition"
+    },
+    {
+      "id": "methods-6",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "x11-2-types-for-constrainable-properties",
+      "level": "3",
+      "title": "Types for Constrainable Properties"
+    },
+    {
+      "id": "dictionary-doublerange-members",
+      "level": "4",
+      "title": "Dictionary DoubleRange Members"
+    },
+    {
+      "id": "dictionary-constraindoublerange-members",
+      "level": "4",
+      "title": "Dictionary ConstrainDoubleRange Members"
+    },
+    {
+      "id": "dictionary-ulongrange-members",
+      "level": "4",
+      "title": "Dictionary ULongRange Members"
+    },
+    {
+      "id": "dictionary-constrainulongrange-members",
+      "level": "4",
+      "title": "Dictionary ConstrainULongRange Members"
+    },
+    {
+      "id": "dictionary-constrainbooleanparameters-members",
+      "level": "4",
+      "title": "Dictionary ConstrainBooleanParameters Members"
+    },
+    {
+      "id": "dictionary-constraindomstringparameters-members",
+      "level": "4",
+      "title": "Dictionary ConstrainDOMStringParameters Members"
+    },
+    {
+      "id": "x11-3-capabilities",
+      "level": "3",
+      "title": "Capabilities"
+    },
+    {
+      "id": "x11-4-settings",
+      "level": "3",
+      "title": "Settings"
+    },
+    {
+      "id": "x11-5-constraints-and-constraintset",
+      "level": "3",
+      "title": "Constraints and ConstraintSet"
+    },
+    {
+      "id": "dictionary-constraints-members",
+      "level": "4",
+      "title": "Dictionary Constraints Members"
+    },
+    {
+      "id": "x12-examples",
+      "level": "2",
+      "title": "Examples"
+    },
+    {
+      "id": "feature-policy-integration",
+      "level": "2",
+      "title": "Feature Policy Integration"
+    },
+    {
+      "id": "x14-privacy-indicator-requirements",
+      "level": "2",
+      "title": "Privacy Indicator Requirements"
+    },
+    {
+      "id": "x15-privacy-and-security-considerations",
+      "level": "2",
+      "title": "Privacy and Security Considerations"
+    },
+    {
+      "id": "x16-extensibility",
+      "level": "2",
+      "title": "Extensibility"
+    },
+    {
+      "id": "x16-1-defining-a-new-media-type-beyond-the-existing-audio-and-video-types",
+      "level": "3",
+      "title": "Defining a new media type (beyond the existing Audio and Video\n      types)"
+    },
+    {
+      "id": "x16-2-defining-a-new-constrainable-property",
+      "level": "3",
+      "title": "Defining a new constrainable property"
+    },
+    {
+      "id": "x16-3-defining-new-consumers-of-mediastreams-and-mediastreamtracks",
+      "level": "3",
+      "title": "Defining new consumers of MediaStreams and MediaStreamTracks"
+    },
+    {
+      "id": "a-acknowledgements",
+      "level": "2",
+      "title": "A. Acknowledgements"
+    },
+    {
+      "id": "b-references",
+      "level": "2",
+      "title": "B. References"
+    },
+    {
+      "id": "b-1-normative-references",
+      "level": "3",
+      "title": "B.1 Normative references"
+    }
+  ]
+}

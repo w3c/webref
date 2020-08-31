@@ -1,0 +1,323 @@
+{
+  "spec": {
+    "title": "Permissions Policy",
+    "url": "https://www.w3.org/TR/permissions-policy-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Permissions Policy"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "W3C Working Draft, 16 July 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "examples",
+      "level": "2",
+      "title": "Examples"
+    },
+    {
+      "id": "other-and-related-mechanisms",
+      "level": "2",
+      "title": "Other and related mechanisms"
+    },
+    {
+      "id": "framwork",
+      "level": "2",
+      "title": "Framework"
+    },
+    {
+      "id": "features",
+      "level": "3",
+      "title": "Policy-controlled Features"
+    },
+    {
+      "id": "policies",
+      "level": "3",
+      "title": "Policies"
+    },
+    {
+      "id": "inherited-policies",
+      "level": "3",
+      "title": "Inherited policies"
+    },
+    {
+      "id": "declared-policies",
+      "level": "3",
+      "title": "Declared policies"
+    },
+    {
+      "id": "header-policies",
+      "level": "3",
+      "title": "Header policies"
+    },
+    {
+      "id": "container-policies",
+      "level": "3",
+      "title": "Container policies"
+    },
+    {
+      "id": "policy-directives",
+      "level": "3",
+      "title": "Policy directives"
+    },
+    {
+      "id": "allowlists",
+      "level": "3",
+      "title": "Allowlists"
+    },
+    {
+      "id": "default-allowlists",
+      "level": "3",
+      "title": "Default Allowlists"
+    },
+    {
+      "id": "serialization",
+      "level": "2",
+      "title": "Permissions Policy Serialization"
+    },
+    {
+      "id": "ascii-serialization",
+      "level": "3",
+      "title": "HTML attribute serialization"
+    },
+    {
+      "id": "structured-header-serialization",
+      "level": "3",
+      "title": "Structured header serialization"
+    },
+    {
+      "id": "delivery",
+      "level": "2",
+      "title": "Delivery"
+    },
+    {
+      "id": "permissions-policy-http-header-field",
+      "level": "3",
+      "title": "Permissions-Policy HTTP Header\n    Field"
+    },
+    {
+      "id": "iframe-allow-attribute",
+      "level": "3",
+      "title": "The allow attribute of the iframe element"
+    },
+    {
+      "id": "legacy-attributes",
+      "level": "3",
+      "title": "Additional attributes to support legacy\n    features"
+    },
+    {
+      "id": "iframe-allowfullscreen-attribute",
+      "level": "4",
+      "title": "allowfullscreen"
+    },
+    {
+      "id": "iframe-allowpaymentrequest-attribute",
+      "level": "4",
+      "title": "allowpaymentrequest"
+    },
+    {
+      "id": "introspection",
+      "level": "2",
+      "title": "Policy Introspection from Scripts"
+    },
+    {
+      "id": "introspection-overview",
+      "level": "3",
+      "title": "Overview"
+    },
+    {
+      "id": "document-policies",
+      "level": "4",
+      "title": "Document policies"
+    },
+    {
+      "id": "frame-policies",
+      "level": "4",
+      "title": "Frame policies"
+    },
+    {
+      "id": "the-policy-object",
+      "level": "3",
+      "title": "The permissionsPolicy object"
+    },
+    {
+      "id": "reporting",
+      "level": "2",
+      "title": "Reporting"
+    },
+    {
+      "id": "algorithms",
+      "level": "2",
+      "title": "Algorithms"
+    },
+    {
+      "id": "algo-process-response-policy",
+      "level": "3",
+      "title": "Process response policy"
+    },
+    {
+      "id": "algo-construct-policy",
+      "level": "3",
+      "title": "Construct policy from dictionary and origin"
+    },
+    {
+      "id": "algo-parse-policy-directive",
+      "level": "3",
+      "title": "Parse policy directive"
+    },
+    {
+      "id": "algo-process-policy-attributes",
+      "level": "3",
+      "title": "Process permissions policy attributes"
+    },
+    {
+      "id": "algo-create-for-browsingcontext",
+      "level": "3",
+      "title": "Create a Permissions Policy for a browsing context"
+    },
+    {
+      "id": "algo-create-from-response",
+      "level": "3",
+      "title": "Create a Permissions Policy for a browsing context from response"
+    },
+    {
+      "id": "algo-define-inherited-policy",
+      "level": "3",
+      "title": "Define an inherited policy for feature in browsing context"
+    },
+    {
+      "id": "algo-define-inherited-policy-in-container",
+      "level": "3",
+      "title": "Define an inherited policy for feature in container at origin"
+    },
+    {
+      "id": "algo-is-feature-enabled",
+      "level": "3",
+      "title": "Is feature enabled in document for origin?"
+    },
+    {
+      "id": "algo-report-permissions-policy-violation",
+      "level": "3",
+      "title": "Generate report for violation of permissions policy on settings"
+    },
+    {
+      "id": "algo-should-request-be-allowed-to-use-feature",
+      "level": "3",
+      "title": "Should request be allowed to use feature?"
+    },
+    {
+      "id": "iana-considerations",
+      "level": "2",
+      "title": "IANA Considerations"
+    },
+    {
+      "id": "privacy-and-security",
+      "level": "2",
+      "title": "Privacy and Security"
+    },
+    {
+      "id": "privacy-expose-behavior",
+      "level": "3",
+      "title": "Exposure of cross-origin behavior"
+    },
+    {
+      "id": "privacy-alter-behavior",
+      "level": "3",
+      "title": "Unanticipated behavior changes"
+    },
+    {
+      "id": "privacy-expose-policy",
+      "level": "3",
+      "title": "Exposure of embedding policy"
+    },
+    {
+      "id": "change-log",
+      "level": "2",
+      "title": "Change log"
+    },
+    {
+      "id": "changes-since-fpwd",
+      "level": "3",
+      "title": "Changes since FPWD"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "level": "3",
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

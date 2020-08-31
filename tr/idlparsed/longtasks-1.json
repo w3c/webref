@@ -1,0 +1,132 @@
+{
+  "spec": {
+    "title": "Long Tasks API 1",
+    "url": "https://www.w3.org/TR/longtasks-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "PerformanceLongTaskTiming": {
+        "type": "interface",
+        "name": "PerformanceLongTaskTiming",
+        "inheritance": "PerformanceEntry",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "attribution",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TaskAttributionTiming"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "TaskAttributionTiming": {
+        "type": "interface",
+        "name": "TaskAttributionTiming",
+        "inheritance": "PerformanceEntry",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "containerType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "containerSrc",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "containerId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "containerName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "PerformanceLongTaskTiming": [
+        "PerformanceEntry",
+        "TaskAttributionTiming"
+      ],
+      "TaskAttributionTiming": [
+        "PerformanceEntry"
+      ]
+    },
+    "externalDependencies": [
+      "PerformanceEntry"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

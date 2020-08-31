@@ -1,0 +1,343 @@
+{
+  "spec": {
+    "title": "DOM Parsing and Serialization",
+    "url": "https://www.w3.org/TR/DOM-Parsing/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "DOMParser": {
+        "type": "interface",
+        "name": "DOMParser",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "parseFromString",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Document"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "str",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SupportedType"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "XMLSerializer": {
+        "type": "interface",
+        "name": "XMLSerializer",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "serializeToString",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "root",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Node"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Element": [
+        {
+          "type": "interface",
+          "name": "Element",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "innerHTML",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "TreatNullAs",
+                  "rhs": {
+                    "type": "identifier",
+                    "value": "EmptyString"
+                  },
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "outerHTML",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "TreatNullAs",
+                  "rhs": {
+                    "type": "identifier",
+                    "value": "EmptyString"
+                  },
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "operation",
+              "name": "insertAdjacentHTML",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "void"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "position",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "text",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "Range": [
+        {
+          "type": "interface",
+          "name": "Range",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "createContextualFragment",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DocumentFragment"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "fragment",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "NewObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "DOMParser": [
+        "Document",
+        "SupportedType"
+      ],
+      "XMLSerializer": [
+        "Node"
+      ],
+      "Element": [],
+      "Range": [
+        "DocumentFragment"
+      ]
+    },
+    "externalDependencies": [
+      "Document",
+      "SupportedType",
+      "Node",
+      "Element",
+      "Range",
+      "DocumentFragment"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

@@ -1,0 +1,590 @@
+{
+  "spec": {
+    "title": "Reporting API",
+    "url": "https://www.w3.org/TR/reporting-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "ReportBody": {
+        "type": "interface",
+        "name": "ReportBody",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      },
+      "Report": {
+        "type": "interface",
+        "name": "Report",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "url",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "body",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "ReportBody"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ReportingObserver": {
+        "type": "interface",
+        "name": "ReportingObserver",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "observe",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "disconnect",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "takeRecords",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ReportList"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "callback",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ReportingObserverCallback"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ReportingObserverOptions"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "ReportingObserverCallback": {
+        "type": "callback",
+        "name": "ReportingObserverCallback",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "void"
+        },
+        "arguments": [
+          {
+            "type": "argument",
+            "name": "reports",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Report"
+                }
+              ]
+            },
+            "default": null,
+            "optional": false,
+            "variadic": false
+          },
+          {
+            "type": "argument",
+            "name": "observer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ReportingObserver"
+            },
+            "default": null,
+            "optional": false,
+            "variadic": false
+          }
+        ],
+        "extAttrs": []
+      },
+      "ReportingObserverOptions": {
+        "type": "dictionary",
+        "name": "ReportingObserverOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "types",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "buffered",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ReportList": {
+        "type": "typedef",
+        "name": "ReportList",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "sequence",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Report"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "DeprecationReportBody": {
+        "type": "interface",
+        "name": "DeprecationReportBody",
+        "inheritance": "ReportBody",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "id",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "anticipatedRemoval",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Date"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "message",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "sourceFile",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "lineNumber",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "columnNumber",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "InterventionReportBody": {
+        "type": "interface",
+        "name": "InterventionReportBody",
+        "inheritance": "ReportBody",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "id",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "message",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "sourceFile",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "lineNumber",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "columnNumber",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "CrashReportBody": {
+        "type": "interface",
+        "name": "CrashReportBody",
+        "inheritance": "ReportBody",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "crashId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "reason",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GenerateTestReportParameters": {
+        "type": "dictionary",
+        "name": "GenerateTestReportParameters",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "message",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "group",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "ReportBody": [],
+      "Report": [
+        "ReportBody"
+      ],
+      "ReportingObserver": [
+        "ReportingObserverCallback",
+        "ReportingObserverOptions",
+        "ReportList"
+      ],
+      "ReportingObserverOptions": [],
+      "DeprecationReportBody": [
+        "ReportBody",
+        "Date"
+      ],
+      "InterventionReportBody": [
+        "ReportBody"
+      ],
+      "CrashReportBody": [
+        "ReportBody"
+      ],
+      "GenerateTestReportParameters": []
+    },
+    "externalDependencies": [
+      "Date"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

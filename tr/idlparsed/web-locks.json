@@ -1,0 +1,606 @@
+{
+  "spec": {
+    "title": "Web Locks API",
+    "url": "https://wicg.github.io/web-locks/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "LockManager",
+          "Lock"
+        ],
+        "Worker": [
+          "LockManager",
+          "Lock"
+        ]
+      }
+    },
+    "idlNames": {
+      "NavigatorLocks": {
+        "type": "interface mixin",
+        "name": "NavigatorLocks",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "locks",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "LockManager"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "LockManager": {
+        "type": "interface",
+        "name": "LockManager",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "request",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "name",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "callback",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "LockGrantedCallback"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "request",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "name",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "LockOptions"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "callback",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "LockGrantedCallback"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "query",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "LockManagerSnapshot"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "LockGrantedCallback": {
+        "type": "callback",
+        "name": "LockGrantedCallback",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "Promise",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            }
+          ]
+        },
+        "arguments": [
+          {
+            "type": "argument",
+            "name": "lock",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Lock"
+            },
+            "default": null,
+            "optional": false,
+            "variadic": false
+          }
+        ],
+        "extAttrs": []
+      },
+      "LockMode": {
+        "type": "enum",
+        "name": "LockMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "shared"
+          },
+          {
+            "type": "enum-value",
+            "value": "exclusive"
+          }
+        ],
+        "extAttrs": []
+      },
+      "LockOptions": {
+        "type": "dictionary",
+        "name": "LockOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "mode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "LockMode"
+            },
+            "default": {
+              "type": "string",
+              "value": "exclusive"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "ifAvailable",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "steal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "signal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AbortSignal"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "LockManagerSnapshot": {
+        "type": "dictionary",
+        "name": "LockManagerSnapshot",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "held",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "LockInfo"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "pending",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "LockInfo"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "LockInfo": {
+        "type": "dictionary",
+        "name": "LockInfo",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "mode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "LockMode"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "clientId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "Lock": {
+        "type": "interface",
+        "name": "Lock",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "mode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "LockMode"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Navigator": [
+        {
+          "name": "Navigator",
+          "type": "interface",
+          "includes": "NavigatorLocks"
+        }
+      ],
+      "WorkerNavigator": [
+        {
+          "name": "WorkerNavigator",
+          "type": "interface",
+          "includes": "NavigatorLocks"
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "LockManager",
+        "Lock"
+      ],
+      "Worker": [
+        "LockManager",
+        "Lock"
+      ]
+    },
+    "dependencies": {
+      "NavigatorLocks": [
+        "LockManager"
+      ],
+      "Navigator": [
+        "NavigatorLocks"
+      ],
+      "WorkerNavigator": [
+        "NavigatorLocks"
+      ],
+      "LockManager": [
+        "LockGrantedCallback",
+        "LockOptions",
+        "LockManagerSnapshot"
+      ],
+      "LockOptions": [
+        "LockMode",
+        "AbortSignal"
+      ],
+      "LockManagerSnapshot": [
+        "LockInfo"
+      ],
+      "LockInfo": [
+        "LockMode"
+      ],
+      "Lock": [
+        "LockMode"
+      ]
+    },
+    "externalDependencies": [
+      "AbortSignal"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

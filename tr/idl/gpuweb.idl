@@ -243,6 +243,7 @@ enum GPUTextureFormat {
 
     // Depth and stencil formats
     "stencil8",
+    "depth16unorm",
     "depth24plus",
     "depth24plus-stencil8",
     "depth32float",
@@ -337,7 +338,6 @@ dictionary GPUBindGroupLayoutEntry {
 
     // Used for sampled texture bindings. Must be undefined for other binding types.
     GPUTextureComponentType textureComponentType;
-    boolean multisampled;
 
     // Used for storage texture bindings. Must be undefined for other binding types.
     GPUTextureFormat storageTextureFormat;
@@ -357,6 +357,7 @@ enum GPUBindingType {
     "sampler",
     "comparison-sampler",
     "sampled-texture",
+    "multisampled-texture",
     "readonly-storage-texture",
     "writeonly-storage-texture"
 };
@@ -618,7 +619,7 @@ enum GPUInputStepMode {
 };
 
 dictionary GPUVertexStateDescriptor {
-    GPUIndexFormat indexFormat = "uint32";
+    GPUIndexFormat indexFormat;
     sequence<GPUVertexBufferLayoutDescriptor?> vertexBuffers = [];
 };
 
@@ -694,8 +695,8 @@ dictionary GPUCommandEncoderDescriptor : GPUObjectDescriptorBase {
 
 dictionary GPUTextureDataLayout {
     GPUSize64 offset = 0;
-    required GPUSize32 bytesPerRow;
-    GPUSize32 rowsPerImage = 0;
+    GPUSize32 bytesPerRow;
+    GPUSize32 rowsPerImage;
 };
 
 dictionary GPUBufferCopyView : GPUTextureDataLayout {

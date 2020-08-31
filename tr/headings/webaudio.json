@@ -1,0 +1,1313 @@
+{
+  "spec": {
+    "title": "Web Audio API",
+    "url": "https://www.w3.org/TR/webaudio/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Web Audio API"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "W3C Candidate Recommendation, 11 June 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introductory",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "Features",
+      "level": "3",
+      "title": "Features"
+    },
+    {
+      "id": "ModularRouting",
+      "level": "4",
+      "title": "Modular Routing"
+    },
+    {
+      "id": "APIOverview",
+      "level": "3",
+      "title": "API Overview"
+    },
+    {
+      "id": "audioapi",
+      "level": "2",
+      "title": "The Audio API"
+    },
+    {
+      "id": "BaseAudioContext",
+      "level": "3",
+      "title": "The BaseAudioContext Interface"
+    },
+    {
+      "id": "BaseAudioContext-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "BaseAudioContent-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "callback-decodesuccesscallback-parameters",
+      "level": "4",
+      "title": "Callback DecodeSuccessCallback() Parameters"
+    },
+    {
+      "id": "callback-decodeerrorcallback-parameters",
+      "level": "4",
+      "title": "Callback DecodeErrorCallback() Parameters"
+    },
+    {
+      "id": "lifetime-AudioContext",
+      "level": "4",
+      "title": "Lifetime"
+    },
+    {
+      "id": "lack-of-introspection-or-serialization-primitives",
+      "level": "4",
+      "title": "Lack of Introspection or Serialization Primitives"
+    },
+    {
+      "id": "system-resources-associated-with-baseaudiocontext-subclasses",
+      "level": "4",
+      "title": "System Resources Associated with BaseAudioContext Subclasses"
+    },
+    {
+      "id": "AudioContext",
+      "level": "3",
+      "title": "The AudioContext Interface"
+    },
+    {
+      "id": "AudioContext-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "AudioContext-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "AudioContext-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "AudioContextOptions",
+      "level": "4",
+      "title": "AudioContextOptions"
+    },
+    {
+      "id": "dictionary-audiocontextoptions-members",
+      "level": "5",
+      "title": "Dictionary AudioContextOptions Members"
+    },
+    {
+      "id": "AudioTimestamp",
+      "level": "4",
+      "title": "AudioTimestamp"
+    },
+    {
+      "id": "dictionary-audiotimestamp-members",
+      "level": "5",
+      "title": "Dictionary AudioTimestamp Members"
+    },
+    {
+      "id": "OfflineAudioContext",
+      "level": "3",
+      "title": "The OfflineAudioContext Interface"
+    },
+    {
+      "id": "OfflineAudioContext-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "OfflineAudioContext-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "OfflineAudioContext-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "OfflineAudioContextOptions",
+      "level": "4",
+      "title": "OfflineAudioContextOptions"
+    },
+    {
+      "id": "dictionary-offlineaudiocontextoptions-members",
+      "level": "5",
+      "title": "Dictionary OfflineAudioContextOptions Members"
+    },
+    {
+      "id": "OfflineAudioCompletionEvent",
+      "level": "4",
+      "title": "The OfflineAudioCompletionEvent Interface"
+    },
+    {
+      "id": "OfflineAudioCompletionEvent-attributes",
+      "level": "5",
+      "title": "Attributes"
+    },
+    {
+      "id": "OfflineAudioCompletionEventInit",
+      "level": "5",
+      "title": "OfflineAudioCompletionEventInit"
+    },
+    {
+      "id": "dictionary-offlineaudiocompletioneventinit-members",
+      "level": "6",
+      "title": "Dictionary OfflineAudioCompletionEventInit Members"
+    },
+    {
+      "id": "AudioBuffer",
+      "level": "3",
+      "title": "The AudioBuffer Interface"
+    },
+    {
+      "id": "AudioBuffer-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "AudioBuffer-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "AudioBuffer-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "AudioBufferOptions",
+      "level": "4",
+      "title": "AudioBufferOptions"
+    },
+    {
+      "id": "dictionary-audiobufferoptions-members",
+      "level": "5",
+      "title": "Dictionary AudioBufferOptions Members"
+    },
+    {
+      "id": "audionode",
+      "level": "3",
+      "title": "The AudioNode Interface"
+    },
+    {
+      "id": "AudioNode-creation",
+      "level": "4",
+      "title": "AudioNode Creation"
+    },
+    {
+      "id": "AudioNode-tail",
+      "level": "4",
+      "title": "AudioNode Tail-Time"
+    },
+    {
+      "id": "AudioNode-actively-processing",
+      "level": "4",
+      "title": "AudioNode Lifetime"
+    },
+    {
+      "id": "AudioNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "AudioNode-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "dictdef-audionodeoptions",
+      "level": "4",
+      "title": "AudioNodeOptions"
+    },
+    {
+      "id": "dictionary-audionodeoptions-members",
+      "level": "5",
+      "title": "Dictionary AudioNodeOptions Members"
+    },
+    {
+      "id": "AudioParam",
+      "level": "3",
+      "title": "The AudioParam Interface"
+    },
+    {
+      "id": "AudioParam-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "AudioParam-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "computation-of-value",
+      "level": "4",
+      "title": "Computation of Value"
+    },
+    {
+      "id": "example1-AudioParam",
+      "level": "4",
+      "title": "AudioParam Automation Example"
+    },
+    {
+      "id": "AudioScheduledSourceNode",
+      "level": "3",
+      "title": "The AudioScheduledSourceNode Interface"
+    },
+    {
+      "id": "AudioScheduledSourceNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "AudioScheduledSourceNode-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "analysernode",
+      "level": "3",
+      "title": "The AnalyserNode Interface"
+    },
+    {
+      "id": "AnalyserNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "AnalyserNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "AnalyserNode-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "dictdef-analyseroptions",
+      "level": "4",
+      "title": "AnalyserOptions"
+    },
+    {
+      "id": "dictionary-analyseroptions-members",
+      "level": "5",
+      "title": "Dictionary AnalyserOptions Members"
+    },
+    {
+      "id": "time-domain-down-mixing",
+      "level": "4",
+      "title": "Time-Domain Down-Mixing"
+    },
+    {
+      "id": "fft-windowing-and-smoothing-over-time",
+      "level": "4",
+      "title": "FFT Windowing and Smoothing over Time"
+    },
+    {
+      "id": "AudioBufferSourceNode",
+      "level": "3",
+      "title": "The AudioBufferSourceNode Interface"
+    },
+    {
+      "id": "AudioBufferSourceNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "AudioBufferSourceNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "AudioBufferSourceNode-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "dictdef-audiobuffersourceoptions",
+      "level": "4",
+      "title": "AudioBufferSourceOptions"
+    },
+    {
+      "id": "dictionary-audiobuffersourceoptions-members",
+      "level": "5",
+      "title": "Dictionary AudioBufferSourceOptions Members"
+    },
+    {
+      "id": "looping-AudioBufferSourceNode",
+      "level": "4",
+      "title": "Looping"
+    },
+    {
+      "id": "playback-AudioBufferSourceNode",
+      "level": "4",
+      "title": "Playback of AudioBuffer Contents"
+    },
+    {
+      "id": "AudioDestinationNode",
+      "level": "3",
+      "title": "The AudioDestinationNode Interface"
+    },
+    {
+      "id": "AudioDestinationNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "audiolistener",
+      "level": "3",
+      "title": "The AudioListener Interface"
+    },
+    {
+      "id": "AudioListener-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "AudioListener-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "listenerprocessing",
+      "level": "4",
+      "title": "Processing"
+    },
+    {
+      "id": "audioprocessingevent",
+      "level": "3",
+      "title": "The AudioProcessingEvent Interface - DEPRECATED"
+    },
+    {
+      "id": "AudioProcessingEvent-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "dictdef-audioprocessingeventinit",
+      "level": "4",
+      "title": "AudioProcessingEventInit"
+    },
+    {
+      "id": "dictionary-audioprocessingeventinit-members",
+      "level": "5",
+      "title": "Dictionary AudioProcessingEventInit Members"
+    },
+    {
+      "id": "biquadfilternode",
+      "level": "3",
+      "title": "The BiquadFilterNode Interface"
+    },
+    {
+      "id": "BiquadFilterNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "BiquadFilterNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "BiquadFilterNode-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "dictdef-biquadfilteroptions",
+      "level": "4",
+      "title": "BiquadFilterOptions"
+    },
+    {
+      "id": "dictionary-biquadfilteroptions-members",
+      "level": "5",
+      "title": "Dictionary BiquadFilterOptions Members"
+    },
+    {
+      "id": "filters-characteristics",
+      "level": "4",
+      "title": "Filters Characteristics"
+    },
+    {
+      "id": "channelmergernode",
+      "level": "3",
+      "title": "The ChannelMergerNode Interface"
+    },
+    {
+      "id": "ChannelMergerNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "dictdef-channelmergeroptions",
+      "level": "4",
+      "title": "ChannelMergerOptions"
+    },
+    {
+      "id": "dictionary-channelmergeroptions-members",
+      "level": "5",
+      "title": "Dictionary ChannelMergerOptions Members"
+    },
+    {
+      "id": "channelsplitternode",
+      "level": "3",
+      "title": "The ChannelSplitterNode Interface"
+    },
+    {
+      "id": "ChannelSplitterNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "dictdef-channelsplitteroptions",
+      "level": "4",
+      "title": "ChannelSplitterOptions"
+    },
+    {
+      "id": "dictionary-channelsplitteroptions-members",
+      "level": "5",
+      "title": "Dictionary ChannelSplitterOptions Members"
+    },
+    {
+      "id": "ConstantSourceNode",
+      "level": "3",
+      "title": "The ConstantSourceNode Interface"
+    },
+    {
+      "id": "ConstantSourceNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "ConstantSourceNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "dictdef-constantsourceoptions",
+      "level": "4",
+      "title": "ConstantSourceOptions"
+    },
+    {
+      "id": "dictionary-constantsourceoptions-members",
+      "level": "5",
+      "title": "Dictionary ConstantSourceOptions Members"
+    },
+    {
+      "id": "ConvolverNode",
+      "level": "3",
+      "title": "The ConvolverNode Interface"
+    },
+    {
+      "id": "ConvolverNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "ConvolverNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "dictdef-convolveroptions",
+      "level": "4",
+      "title": "ConvolverOptions"
+    },
+    {
+      "id": "dictionary-convolveroptions-members",
+      "level": "5",
+      "title": "Dictionary ConvolverOptions Members"
+    },
+    {
+      "id": "Convolution-channel-configurations",
+      "level": "4",
+      "title": "Channel Configurations for Input, Impulse Response and Output"
+    },
+    {
+      "id": "DelayNode",
+      "level": "3",
+      "title": "The DelayNode Interface"
+    },
+    {
+      "id": "DelayNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "DelayNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "dictdef-delayoptions",
+      "level": "4",
+      "title": "DelayOptions"
+    },
+    {
+      "id": "dictionary-delayoptions-members",
+      "level": "5",
+      "title": "Dictionary DelayOptions Members"
+    },
+    {
+      "id": "DelayNode-processing",
+      "level": "4",
+      "title": "Processing"
+    },
+    {
+      "id": "dynamicscompressornode",
+      "level": "3",
+      "title": "The DynamicsCompressorNode Interface"
+    },
+    {
+      "id": "DynamicsCompressorNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "DynamicsCompressorNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "dictdef-dynamicscompressoroptions",
+      "level": "4",
+      "title": "DynamicsCompressorOptions"
+    },
+    {
+      "id": "dictionary-dynamicscompressoroptions-members",
+      "level": "5",
+      "title": "Dictionary DynamicsCompressorOptions Members"
+    },
+    {
+      "id": "DynamicsCompressorOptions-processing",
+      "level": "4",
+      "title": "Processing"
+    },
+    {
+      "id": "gainnode",
+      "level": "3",
+      "title": "The GainNode Interface"
+    },
+    {
+      "id": "GainNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "GainNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "dictdef-gainoptions",
+      "level": "4",
+      "title": "GainOptions"
+    },
+    {
+      "id": "dictionary-gainoptions-members",
+      "level": "5",
+      "title": "Dictionary GainOptions Members"
+    },
+    {
+      "id": "iirfilternode",
+      "level": "3",
+      "title": "The IIRFilterNode Interface"
+    },
+    {
+      "id": "IIRFilterNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "IIRFilterNode-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "dictdef-iirfilteroptions",
+      "level": "4",
+      "title": "IIRFilterOptions"
+    },
+    {
+      "id": "dictionary-iirfilteroptions-members",
+      "level": "5",
+      "title": "Dictionary IIRFilterOptions Members"
+    },
+    {
+      "id": "IIRFilterNode-filter-definition",
+      "level": "4",
+      "title": "Filter Definition"
+    },
+    {
+      "id": "mediaelementaudiosourcenode",
+      "level": "3",
+      "title": "The MediaElementAudioSourceNode Interface"
+    },
+    {
+      "id": "MediaElementAudioSourceNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "MediaElementAudioSourceNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "dictdef-mediaelementaudiosourceoptions",
+      "level": "4",
+      "title": "MediaElementAudioSourceOptions"
+    },
+    {
+      "id": "dictionary-mediaelementaudiosourceoptions-members",
+      "level": "5",
+      "title": "Dictionary MediaElementAudioSourceOptions Members"
+    },
+    {
+      "id": "MediaElementAudioSourceOptions-security",
+      "level": "4",
+      "title": "Security with MediaElementAudioSourceNode and Cross-Origin Resources"
+    },
+    {
+      "id": "mediastreamaudiodestinationnode",
+      "level": "3",
+      "title": "The MediaStreamAudioDestinationNode Interface"
+    },
+    {
+      "id": "MediaStreamAudioDestinationNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "MediaStreamAudioDestinationNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "mediastreamaudiosourcenode",
+      "level": "3",
+      "title": "The MediaStreamAudioSourceNode Interface"
+    },
+    {
+      "id": "MediaStreamAudioSourceNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "MediaStreamAudioSourceNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "dictdef-mediastreamaudiosourceoptions",
+      "level": "4",
+      "title": "MediaStreamAudioSourceOptions"
+    },
+    {
+      "id": "dictionary-mediastreamaudiosourceoptions-members",
+      "level": "5",
+      "title": "Dictionary MediaStreamAudioSourceOptions Members"
+    },
+    {
+      "id": "mediastreamtrackaudiosourcenode",
+      "level": "3",
+      "title": "The MediaStreamTrackAudioSourceNode Interface"
+    },
+    {
+      "id": "MediaStreamTrackAudioSourceNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "dictdef-mediastreamtrackaudiosourceoptions",
+      "level": "4",
+      "title": "MediaStreamTrackAudioSourceOptions"
+    },
+    {
+      "id": "dictionary-mediastreamtrackaudiosourceoptions-members",
+      "level": "5",
+      "title": "Dictionary MediaStreamTrackAudioSourceOptions Members"
+    },
+    {
+      "id": "oscillatornode",
+      "level": "3",
+      "title": "The OscillatorNode Interface"
+    },
+    {
+      "id": "OscillatorNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "OscillatorNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "OscillatorNode-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "dictdef-oscillatoroptions",
+      "level": "4",
+      "title": "OscillatorOptions"
+    },
+    {
+      "id": "dictionary-oscillatoroptions-members",
+      "level": "5",
+      "title": "Dictionary OscillatorOptions Members"
+    },
+    {
+      "id": "basic-waveform-phase",
+      "level": "4",
+      "title": "Basic Waveform Phase"
+    },
+    {
+      "id": "pannernode",
+      "level": "3",
+      "title": "The PannerNode Interface"
+    },
+    {
+      "id": "PannerNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "PannerNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "PannerNode-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "dictdef-panneroptions",
+      "level": "4",
+      "title": "PannerOptions"
+    },
+    {
+      "id": "dictionary-pannernode-members",
+      "level": "5",
+      "title": "Dictionary PannerOptions Members"
+    },
+    {
+      "id": "panner-channel-limitations",
+      "level": "4",
+      "title": "Channel Limitations"
+    },
+    {
+      "id": "periodicwave",
+      "level": "3",
+      "title": "The PeriodicWave Interface"
+    },
+    {
+      "id": "PeriodicWave-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "dictdef-periodicwaveconstraints",
+      "level": "4",
+      "title": "PeriodicWaveConstraints"
+    },
+    {
+      "id": "dictionary-periodicwaveconstraints-members",
+      "level": "5",
+      "title": "Dictionary PeriodicWaveConstraints Members"
+    },
+    {
+      "id": "dictdef-periodicwaveoptions",
+      "level": "4",
+      "title": "PeriodicWaveOptions"
+    },
+    {
+      "id": "dictionary-periodicwaveoptions-members",
+      "level": "5",
+      "title": "Dictionary PeriodicWaveOptions Members"
+    },
+    {
+      "id": "waveform-generation",
+      "level": "4",
+      "title": "Waveform Generation"
+    },
+    {
+      "id": "waveform-normalization",
+      "level": "4",
+      "title": "Waveform Normalization"
+    },
+    {
+      "id": "oscillator-coefficients",
+      "level": "4",
+      "title": "Oscillator Coefficients"
+    },
+    {
+      "id": "scriptprocessornode",
+      "level": "3",
+      "title": "The ScriptProcessorNode Interface - DEPRECATED"
+    },
+    {
+      "id": "ScriptProcessorNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "stereopannernode",
+      "level": "3",
+      "title": "The StereoPannerNode Interface"
+    },
+    {
+      "id": "StereoPannerNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "StereoPannerNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "dictdef-stereopanneroptions",
+      "level": "4",
+      "title": "StereoPannerOptions"
+    },
+    {
+      "id": "dictionary-stereopanneroptions-members",
+      "level": "5",
+      "title": "Dictionary StereoPannerOptions Members"
+    },
+    {
+      "id": "StereoPanner-channel-limitations",
+      "level": "4",
+      "title": "Channel Limitations"
+    },
+    {
+      "id": "waveshapernode",
+      "level": "3",
+      "title": "The WaveShaperNode Interface"
+    },
+    {
+      "id": "WaveShaperNode-constructors",
+      "level": "4",
+      "title": "Constructors"
+    },
+    {
+      "id": "WaveShaperNode-attributes",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "dictdef-waveshaperoptions",
+      "level": "4",
+      "title": "WaveShaperOptions"
+    },
+    {
+      "id": "dictionary-waveshaperoptions-members",
+      "level": "5",
+      "title": "Dictionary WaveShaperOptions Members"
+    },
+    {
+      "id": "audioworklet",
+      "level": "3",
+      "title": "The AudioWorklet Interface"
+    },
+    {
+      "id": "AudioWorklet-concepts",
+      "level": "4",
+      "title": "Concepts"
+    },
+    {
+      "id": "audioworkletglobalscope",
+      "level": "4",
+      "title": "The AudioWorkletGlobalScope Interface"
+    },
+    {
+      "id": "AudioWorkletGlobalScope-attributes",
+      "level": "5",
+      "title": "Attributes"
+    },
+    {
+      "id": "AudioWorkletGlobalScope-methods",
+      "level": "5",
+      "title": "Methods"
+    },
+    {
+      "id": "AudioWorkletProcessor-instantiation",
+      "level": "5",
+      "title": "The instantiation of AudioWorkletProcessor"
+    },
+    {
+      "id": "audioworkletnode",
+      "level": "4",
+      "title": "The AudioWorkletNode Interface"
+    },
+    {
+      "id": "AudioWorkletNode-constructors",
+      "level": "5",
+      "title": "Constructors"
+    },
+    {
+      "id": "AudioWorkletNode-attributes",
+      "level": "5",
+      "title": "Attributes"
+    },
+    {
+      "id": "dictdef-audioworkletnodeoptions",
+      "level": "5",
+      "title": "AudioWorkletNodeOptions"
+    },
+    {
+      "id": "dictionary-audioworkletnodeoptions-members",
+      "level": "6",
+      "title": "Dictionary AudioWorkletNodeOptions Members"
+    },
+    {
+      "id": "configuring-channels-with-audioworkletnodeoptions",
+      "level": "6",
+      "title": "Configuring Channels with AudioWorkletNodeOptions"
+    },
+    {
+      "id": "audioworkletprocessor",
+      "level": "4",
+      "title": "The AudioWorkletProcessor Interface"
+    },
+    {
+      "id": "AudioWorketProcessor-constructors",
+      "level": "5",
+      "title": "Constructors"
+    },
+    {
+      "id": "AudioWorkletProcessor-attributes",
+      "level": "5",
+      "title": "Attributes"
+    },
+    {
+      "id": "AudioWorkletProcessor-methods",
+      "level": "5",
+      "title": "Methods"
+    },
+    {
+      "id": "dictdef-audioparamdescriptor",
+      "level": "5",
+      "title": "AudioParamDescriptor"
+    },
+    {
+      "id": "dictionary-audioparamdescriptor-members",
+      "level": "6",
+      "title": "Dictionary AudioParamDescriptor Members"
+    },
+    {
+      "id": "AudioWorklet-Sequence",
+      "level": "4",
+      "title": "AudioWorklet Sequence of Events"
+    },
+    {
+      "id": "AudioWorklet-Examples",
+      "level": "4",
+      "title": "AudioWorklet Examples"
+    },
+    {
+      "id": "the-bitcrusher-node",
+      "level": "5",
+      "title": "The BitCrusher Node"
+    },
+    {
+      "id": "vu-meter-mode",
+      "level": "5",
+      "title": "VU Meter Node"
+    },
+    {
+      "id": "processing-model",
+      "level": "2",
+      "title": "Processing model"
+    },
+    {
+      "id": "processing-model-background",
+      "level": "3",
+      "title": "Background"
+    },
+    {
+      "id": "control-thread-and-rendering-thread",
+      "level": "3",
+      "title": "Control Thread and Rendering Thread"
+    },
+    {
+      "id": "asynchronous-operations",
+      "level": "3",
+      "title": "Asynchronous Operations"
+    },
+    {
+      "id": "rendering-loop",
+      "level": "3",
+      "title": "Rendering an Audio Graph"
+    },
+    {
+      "id": "unloading-a-document",
+      "level": "3",
+      "title": "Unloading a document"
+    },
+    {
+      "id": "DynamicLifetime",
+      "level": "2",
+      "title": "Dynamic Lifetime"
+    },
+    {
+      "id": "dynamic-lifetime-background",
+      "level": "3",
+      "title": "Background"
+    },
+    {
+      "id": "dynamic-lifetime-example",
+      "level": "3",
+      "title": "Example"
+    },
+    {
+      "id": "channel-up-mixing-and-down-mixing",
+      "level": "2",
+      "title": "Channel Up-Mixing and Down-Mixing"
+    },
+    {
+      "id": "ChannelLayouts",
+      "level": "3",
+      "title": "Speaker Channel Layouts"
+    },
+    {
+      "id": "ChannelOrdering",
+      "level": "3",
+      "title": "Channel Ordering"
+    },
+    {
+      "id": "channels-tail-time",
+      "level": "3",
+      "title": "Implication of tail-time on input and output channel count"
+    },
+    {
+      "id": "UpMix-sub",
+      "level": "3",
+      "title": "Up Mixing Speaker Layouts"
+    },
+    {
+      "id": "down-mix",
+      "level": "3",
+      "title": "Down Mixing Speaker Layouts"
+    },
+    {
+      "id": "ChannelRules-section",
+      "level": "3",
+      "title": "Channel Rules Examples"
+    },
+    {
+      "id": "audio-signal-values",
+      "level": "2",
+      "title": "Audio Signal Values"
+    },
+    {
+      "id": "audio-sample-format",
+      "level": "3",
+      "title": "Audio sample format"
+    },
+    {
+      "id": "audio-values-rendering",
+      "level": "3",
+      "title": "Rendering"
+    },
+    {
+      "id": "Spatialization",
+      "level": "2",
+      "title": "Spatialization/Panning"
+    },
+    {
+      "id": "Spatialization-background",
+      "level": "3",
+      "title": "Background"
+    },
+    {
+      "id": "azimuth-elevation",
+      "level": "3",
+      "title": "Azimuth and Elevation"
+    },
+    {
+      "id": "Spatialization-panning-algorithm",
+      "level": "3",
+      "title": "Panning Algorithm"
+    },
+    {
+      "id": "Spatialization-equal-power-panning",
+      "level": "4",
+      "title": "PannerNode \"equalpower\" Panning"
+    },
+    {
+      "id": "Spatialization-hrtf-panning",
+      "level": "4",
+      "title": "PannerNode \"HRTF\" Panning (Stereo Only)"
+    },
+    {
+      "id": "stereopanner-algorithm",
+      "level": "4",
+      "title": "StereoPannerNode Panning"
+    },
+    {
+      "id": "Spatialization-distance-effects",
+      "level": "3",
+      "title": "Distance Effects"
+    },
+    {
+      "id": "Spatialization-sound-cones",
+      "level": "3",
+      "title": "Sound Cones"
+    },
+    {
+      "id": "Performance",
+      "level": "2",
+      "title": "Performance Considerations"
+    },
+    {
+      "id": "latency",
+      "level": "3",
+      "title": "Latency"
+    },
+    {
+      "id": "audio-buffer-copying",
+      "level": "3",
+      "title": "Audio Buffer Copying"
+    },
+    {
+      "id": "audioparam-transitions",
+      "level": "3",
+      "title": "AudioParam Transitions"
+    },
+    {
+      "id": "audio-glitching",
+      "level": "3",
+      "title": "Audio Glitching"
+    },
+    {
+      "id": "priv-sec",
+      "level": "2",
+      "title": "Security and Privacy Considerations"
+    },
+    {
+      "id": "requirements",
+      "level": "2",
+      "title": "Requirements and Use Cases"
+    },
+    {
+      "id": "common-definitions",
+      "level": "2",
+      "title": "Common Definitions for Specification Code"
+    },
+    {
+      "id": "changes",
+      "level": "2",
+      "title": "Change Log"
+    },
+    {
+      "id": "changestart1",
+      "level": "3",
+      "title": "Since Candidate Recommendation of 18 September 2018"
+    },
+    {
+      "id": "changestart2",
+      "level": "3",
+      "title": "Since Working Draft of 19 June 2018"
+    },
+    {
+      "id": "changestart3",
+      "level": "3",
+      "title": "Since Working Draft of 08 December 2015"
+    },
+    {
+      "id": "acks",
+      "level": "2",
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "level": "3",
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "conformance-classes",
+      "level": "3",
+      "title": "Conformance Classes"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    }
+  ]
+}

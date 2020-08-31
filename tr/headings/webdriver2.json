@@ -1,0 +1,608 @@
+{
+  "spec": {
+    "title": "WebDriver",
+    "url": "https://www.w3.org/TR/webdriver2/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "WebDriver"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Level 2"
+    },
+    {
+      "id": "table-of-contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "x1-design",
+      "level": "2",
+      "title": "Design"
+    },
+    {
+      "id": "x1-1-compatibility",
+      "level": "3",
+      "title": "Compatibility"
+    },
+    {
+      "id": "x1-2-simplicity",
+      "level": "3",
+      "title": "Simplicity"
+    },
+    {
+      "id": "x1-3-extensions",
+      "level": "3",
+      "title": "Extensions"
+    },
+    {
+      "id": "x2-conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "x3-terminology",
+      "level": "2",
+      "title": "Terminology"
+    },
+    {
+      "id": "x4-interface",
+      "level": "2",
+      "title": "Interface"
+    },
+    {
+      "id": "x5-nodes",
+      "level": "2",
+      "title": "Nodes"
+    },
+    {
+      "id": "x6-protocol",
+      "level": "2",
+      "title": "Protocol"
+    },
+    {
+      "id": "x6-1-algorithms",
+      "level": "3",
+      "title": "Algorithms"
+    },
+    {
+      "id": "x6-2-commands",
+      "level": "3",
+      "title": "Commands"
+    },
+    {
+      "id": "x6-3-processing-model",
+      "level": "3",
+      "title": "Processing model"
+    },
+    {
+      "id": "x6-4-routing-requests",
+      "level": "3",
+      "title": "Routing requests"
+    },
+    {
+      "id": "x6-5-endpoints",
+      "level": "3",
+      "title": "Endpoints"
+    },
+    {
+      "id": "x6-6-errors",
+      "level": "3",
+      "title": "Errors"
+    },
+    {
+      "id": "x6-7-extensions",
+      "level": "3",
+      "title": "Extensions"
+    },
+    {
+      "id": "x7-capabilities",
+      "level": "2",
+      "title": "Capabilities"
+    },
+    {
+      "id": "x7-1-proxy",
+      "level": "3",
+      "title": "Proxy"
+    },
+    {
+      "id": "x7-2-processing-capabilities",
+      "level": "3",
+      "title": "Processing capabilities"
+    },
+    {
+      "id": "x8-sessions",
+      "level": "2",
+      "title": "Sessions"
+    },
+    {
+      "id": "new-session",
+      "level": "3",
+      "title": "New Session"
+    },
+    {
+      "id": "x8-2-delete-session",
+      "level": "3",
+      "title": "Delete Session"
+    },
+    {
+      "id": "x8-3-status",
+      "level": "3",
+      "title": "Status"
+    },
+    {
+      "id": "x9-timeouts",
+      "level": "2",
+      "title": "Timeouts"
+    },
+    {
+      "id": "x9-1-get-timeouts",
+      "level": "3",
+      "title": "Get Timeouts"
+    },
+    {
+      "id": "x9-2-set-timeouts",
+      "level": "3",
+      "title": "Set Timeouts"
+    },
+    {
+      "id": "x10-navigation",
+      "level": "2",
+      "title": "Navigation"
+    },
+    {
+      "id": "x10-1-navigate-to",
+      "level": "3",
+      "title": "Navigate To"
+    },
+    {
+      "id": "x10-2-get-current-url",
+      "level": "3",
+      "title": "Get Current URL"
+    },
+    {
+      "id": "x10-3-back",
+      "level": "3",
+      "title": "Back"
+    },
+    {
+      "id": "x10-4-forward",
+      "level": "3",
+      "title": "Forward"
+    },
+    {
+      "id": "x10-5-refresh",
+      "level": "3",
+      "title": "Refresh"
+    },
+    {
+      "id": "x10-6-get-title",
+      "level": "3",
+      "title": "Get Title"
+    },
+    {
+      "id": "x11-contexts",
+      "level": "2",
+      "title": "Contexts"
+    },
+    {
+      "id": "x11-1-get-window-handle",
+      "level": "3",
+      "title": "Get Window Handle"
+    },
+    {
+      "id": "x11-2-close-window",
+      "level": "3",
+      "title": "Close Window"
+    },
+    {
+      "id": "x11-3-switch-to-window",
+      "level": "3",
+      "title": "Switch To Window"
+    },
+    {
+      "id": "x11-4-get-window-handles",
+      "level": "3",
+      "title": "Get Window Handles"
+    },
+    {
+      "id": "x11-5-new-window",
+      "level": "3",
+      "title": "New Window"
+    },
+    {
+      "id": "x11-6-switch-to-frame",
+      "level": "3",
+      "title": "Switch To Frame"
+    },
+    {
+      "id": "x11-7-switch-to-parent-frame",
+      "level": "3",
+      "title": "Switch To Parent Frame"
+    },
+    {
+      "id": "x11-8-resizing-and-positioning-windows",
+      "level": "3",
+      "title": "Resizing and positioning windows"
+    },
+    {
+      "id": "x11-8-1-get-window-rect",
+      "level": "4",
+      "title": "Get Window Rect"
+    },
+    {
+      "id": "x11-8-2-set-window-rect",
+      "level": "4",
+      "title": "Set Window Rect"
+    },
+    {
+      "id": "x11-8-3-maximize-window",
+      "level": "4",
+      "title": "Maximize Window"
+    },
+    {
+      "id": "x11-8-4-minimize-window",
+      "level": "4",
+      "title": "Minimize Window"
+    },
+    {
+      "id": "x11-8-5-fullscreen-window",
+      "level": "4",
+      "title": "Fullscreen Window"
+    },
+    {
+      "id": "x12-elements",
+      "level": "2",
+      "title": "Elements"
+    },
+    {
+      "id": "x12-1-interactability",
+      "level": "3",
+      "title": "Interactability"
+    },
+    {
+      "id": "element-retrieval",
+      "level": "3",
+      "title": "Retrieval"
+    },
+    {
+      "id": "x12-2-1-locator-strategies",
+      "level": "4",
+      "title": "Locator strategies"
+    },
+    {
+      "id": "x12-2-1-1-css-selectors",
+      "level": "5",
+      "title": "CSS selectors"
+    },
+    {
+      "id": "x12-2-1-2-link-text",
+      "level": "5",
+      "title": "Link text"
+    },
+    {
+      "id": "x12-2-1-3-partial-link-text",
+      "level": "5",
+      "title": "Partial link text"
+    },
+    {
+      "id": "x12-2-1-4-tag-name",
+      "level": "5",
+      "title": "Tag name"
+    },
+    {
+      "id": "x12-2-1-5-xpath",
+      "level": "5",
+      "title": "XPath"
+    },
+    {
+      "id": "x12-2-2-find-element",
+      "level": "4",
+      "title": "Find Element"
+    },
+    {
+      "id": "x12-2-3-find-elements",
+      "level": "4",
+      "title": "Find Elements"
+    },
+    {
+      "id": "x12-2-4-find-element-from-element",
+      "level": "4",
+      "title": "Find Element From Element"
+    },
+    {
+      "id": "x12-2-5-find-elements-from-element",
+      "level": "4",
+      "title": "Find Elements From Element"
+    },
+    {
+      "id": "x12-2-6-get-active-element",
+      "level": "4",
+      "title": "Get Active Element"
+    },
+    {
+      "id": "x12-3-state",
+      "level": "3",
+      "title": "State"
+    },
+    {
+      "id": "x12-3-1-is-element-selected",
+      "level": "4",
+      "title": "Is Element Selected"
+    },
+    {
+      "id": "x12-3-2-get-element-attribute",
+      "level": "4",
+      "title": "Get Element Attribute"
+    },
+    {
+      "id": "x12-3-3-get-element-property",
+      "level": "4",
+      "title": "Get Element Property"
+    },
+    {
+      "id": "x12-3-4-get-element-css-value",
+      "level": "4",
+      "title": "Get Element CSS Value"
+    },
+    {
+      "id": "x12-3-5-get-element-text",
+      "level": "4",
+      "title": "Get Element Text"
+    },
+    {
+      "id": "x12-3-6-get-element-tag-name",
+      "level": "4",
+      "title": "Get Element Tag Name"
+    },
+    {
+      "id": "x12-3-7-get-element-rect",
+      "level": "4",
+      "title": "Get Element Rect"
+    },
+    {
+      "id": "x12-3-8-is-element-enabled",
+      "level": "4",
+      "title": "Is Element Enabled"
+    },
+    {
+      "id": "x12-3-9-get-computed-role",
+      "level": "4",
+      "title": "Get Computed Role"
+    },
+    {
+      "id": "x12-3-10-get-computed-label",
+      "level": "4",
+      "title": "Get Computed Label"
+    },
+    {
+      "id": "element-interaction",
+      "level": "3",
+      "title": "Interaction"
+    },
+    {
+      "id": "x12-4-1-element-click",
+      "level": "4",
+      "title": "Element Click"
+    },
+    {
+      "id": "x12-4-2-element-clear",
+      "level": "4",
+      "title": "Element Clear"
+    },
+    {
+      "id": "x12-4-3-element-send-keys",
+      "level": "4",
+      "title": "Element Send Keys"
+    },
+    {
+      "id": "x13-document",
+      "level": "2",
+      "title": "Document"
+    },
+    {
+      "id": "x13-1-get-page-source",
+      "level": "3",
+      "title": "Get Page Source"
+    },
+    {
+      "id": "x13-2-executing-script",
+      "level": "3",
+      "title": "Executing Script"
+    },
+    {
+      "id": "x13-2-1-execute-script",
+      "level": "4",
+      "title": "Execute Script"
+    },
+    {
+      "id": "x13-2-2-execute-async-script",
+      "level": "4",
+      "title": "Execute Async Script"
+    },
+    {
+      "id": "x14-cookies",
+      "level": "2",
+      "title": "Cookies"
+    },
+    {
+      "id": "x14-1-get-all-cookies",
+      "level": "3",
+      "title": "Get All Cookies"
+    },
+    {
+      "id": "x14-2-get-named-cookie",
+      "level": "3",
+      "title": "Get Named Cookie"
+    },
+    {
+      "id": "x14-3-add-cookie",
+      "level": "3",
+      "title": "Add Cookie"
+    },
+    {
+      "id": "x14-4-delete-cookie",
+      "level": "3",
+      "title": "Delete Cookie"
+    },
+    {
+      "id": "x14-5-delete-all-cookies",
+      "level": "3",
+      "title": "Delete All Cookies"
+    },
+    {
+      "id": "x15-actions",
+      "level": "2",
+      "title": "Actions"
+    },
+    {
+      "id": "x15-1-input-sources",
+      "level": "3",
+      "title": "Input sources"
+    },
+    {
+      "id": "input-sources",
+      "level": "4",
+      "title": "Sources"
+    },
+    {
+      "id": "input-source-state",
+      "level": "4",
+      "title": "State"
+    },
+    {
+      "id": "x15-2-ticks",
+      "level": "3",
+      "title": "Ticks"
+    },
+    {
+      "id": "x15-3-processing-actions",
+      "level": "3",
+      "title": "Processing actions"
+    },
+    {
+      "id": "x15-4-dispatching-actions",
+      "level": "3",
+      "title": "Dispatching actions"
+    },
+    {
+      "id": "x15-4-1-general-actions",
+      "level": "4",
+      "title": "General actions"
+    },
+    {
+      "id": "x15-4-2-keyboard-actions",
+      "level": "4",
+      "title": "Keyboard actions"
+    },
+    {
+      "id": "x15-4-3-pointer-actions",
+      "level": "4",
+      "title": "Pointer actions"
+    },
+    {
+      "id": "x15-4-4-wheel-actions",
+      "level": "4",
+      "title": "Wheel actions"
+    },
+    {
+      "id": "x15-5-perform-actions",
+      "level": "3",
+      "title": "Perform Actions"
+    },
+    {
+      "id": "x15-6-release-actions",
+      "level": "3",
+      "title": "Release Actions"
+    },
+    {
+      "id": "x16-user-prompts",
+      "level": "2",
+      "title": "User prompts"
+    },
+    {
+      "id": "x16-1-dismiss-alert",
+      "level": "3",
+      "title": "Dismiss Alert"
+    },
+    {
+      "id": "x16-2-accept-alert",
+      "level": "3",
+      "title": "Accept Alert"
+    },
+    {
+      "id": "x16-3-get-alert-text",
+      "level": "3",
+      "title": "Get Alert Text"
+    },
+    {
+      "id": "x16-4-send-alert-text",
+      "level": "3",
+      "title": "Send Alert Text"
+    },
+    {
+      "id": "x17-screen-capture",
+      "level": "2",
+      "title": "Screen capture"
+    },
+    {
+      "id": "x17-1-take-screenshot",
+      "level": "3",
+      "title": "Take Screenshot"
+    },
+    {
+      "id": "x17-2-take-element-screenshot",
+      "level": "3",
+      "title": "Take Element Screenshot"
+    },
+    {
+      "id": "x18-print",
+      "level": "2",
+      "title": "Print"
+    },
+    {
+      "id": "print-page",
+      "level": "3",
+      "title": "Print Page"
+    },
+    {
+      "id": "a-privacy",
+      "level": "2",
+      "title": "A. Privacy"
+    },
+    {
+      "id": "b-security",
+      "level": "2",
+      "title": "B. Security"
+    },
+    {
+      "id": "c-element-displayedness",
+      "level": "2",
+      "title": "C. Element displayedness"
+    },
+    {
+      "id": "d-acknowledgements",
+      "level": "2",
+      "title": "D. Acknowledgements"
+    },
+    {
+      "id": "e-index",
+      "level": "2",
+      "title": "E. Index"
+    },
+    {
+      "id": "f-references",
+      "level": "2",
+      "title": "F. References"
+    },
+    {
+      "id": "f-1-normative-references",
+      "level": "3",
+      "title": "F.1 \n        Normative references"
+    }
+  ]
+}

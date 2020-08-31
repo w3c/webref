@@ -1,0 +1,448 @@
+{
+  "spec": {
+    "title": "CSS Syntax Module Level 3",
+    "url": "https://www.w3.org/TR/css-syntax-3/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "CSS Syntax Module Level 3"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "W3C Candidate Recommendation, 16 July 2019"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "placement",
+      "level": "3",
+      "title": "Module interactions"
+    },
+    {
+      "id": "syntax-description",
+      "level": "2",
+      "title": "Description of CSS’s Syntax"
+    },
+    {
+      "id": "escaping",
+      "level": "3",
+      "title": "Escaping"
+    },
+    {
+      "id": "error-handling",
+      "level": "3",
+      "title": "Error Handling"
+    },
+    {
+      "id": "tokenizing-and-parsing",
+      "level": "2",
+      "title": "Tokenizing and Parsing CSS"
+    },
+    {
+      "id": "parsing-overview",
+      "level": "3",
+      "title": "Overview of the Parsing Model"
+    },
+    {
+      "id": "input-byte-stream",
+      "level": "3",
+      "title": "The input byte stream"
+    },
+    {
+      "id": "input-preprocessing",
+      "level": "3",
+      "title": "Preprocessing the input stream"
+    },
+    {
+      "id": "tokenization",
+      "level": "2",
+      "title": "Tokenization"
+    },
+    {
+      "id": "token-diagrams",
+      "level": "3",
+      "title": "Token Railroad Diagrams"
+    },
+    {
+      "id": "tokenizer-definitions",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "tokenizer-algorithms",
+      "level": "3",
+      "title": "Tokenizer Algorithms"
+    },
+    {
+      "id": "consume-token",
+      "level": "4",
+      "title": "Consume a token"
+    },
+    {
+      "id": "consume-comment",
+      "level": "4",
+      "title": "Consume comments"
+    },
+    {
+      "id": "consume-numeric-token",
+      "level": "4",
+      "title": "Consume a numeric token"
+    },
+    {
+      "id": "consume-ident-like-token",
+      "level": "4",
+      "title": "Consume an ident-like token"
+    },
+    {
+      "id": "consume-string-token",
+      "level": "4",
+      "title": "Consume a string token"
+    },
+    {
+      "id": "consume-url-token",
+      "level": "4",
+      "title": "Consume a url token"
+    },
+    {
+      "id": "consume-escaped-code-point",
+      "level": "4",
+      "title": "Consume an escaped code point"
+    },
+    {
+      "id": "starts-with-a-valid-escape",
+      "level": "4",
+      "title": "Check if two code points are a valid escape"
+    },
+    {
+      "id": "would-start-an-identifier",
+      "level": "4",
+      "title": "Check if three code points would start an identifier"
+    },
+    {
+      "id": "starts-with-a-number",
+      "level": "4",
+      "title": "Check if three code points would start a number"
+    },
+    {
+      "id": "consume-name",
+      "level": "4",
+      "title": "Consume a name"
+    },
+    {
+      "id": "consume-number",
+      "level": "4",
+      "title": "Consume a number"
+    },
+    {
+      "id": "convert-string-to-number",
+      "level": "4",
+      "title": "Convert a string to a number"
+    },
+    {
+      "id": "consume-remnants-of-bad-url",
+      "level": "4",
+      "title": "Consume the remnants of a bad url"
+    },
+    {
+      "id": "parsing",
+      "level": "2",
+      "title": "Parsing"
+    },
+    {
+      "id": "parser-diagrams",
+      "level": "3",
+      "title": "Parser Railroad Diagrams"
+    },
+    {
+      "id": "parser-definitions",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "parser-entry-points",
+      "level": "3",
+      "title": "Parser Entry Points"
+    },
+    {
+      "id": "parse-grammar",
+      "level": "4",
+      "title": "Parse something according to a CSS grammar"
+    },
+    {
+      "id": "parse-stylesheet",
+      "level": "4",
+      "title": "Parse a stylesheet"
+    },
+    {
+      "id": "parse-list-of-rules",
+      "level": "4",
+      "title": "Parse a list of rules"
+    },
+    {
+      "id": "parse-rule",
+      "level": "4",
+      "title": "Parse a rule"
+    },
+    {
+      "id": "parse-declaration",
+      "level": "4",
+      "title": "Parse a declaration"
+    },
+    {
+      "id": "parse-list-of-declarations",
+      "level": "4",
+      "title": "Parse a list of declarations"
+    },
+    {
+      "id": "parse-component-value",
+      "level": "4",
+      "title": "Parse a component value"
+    },
+    {
+      "id": "parse-list-of-component-values",
+      "level": "4",
+      "title": "Parse a list of component values"
+    },
+    {
+      "id": "parse-comma-separated-list-of-component-values",
+      "level": "4",
+      "title": "Parse a comma-separated list of component values"
+    },
+    {
+      "id": "parser-algorithms",
+      "level": "3",
+      "title": "Parser Algorithms"
+    },
+    {
+      "id": "consume-list-of-rules",
+      "level": "4",
+      "title": "Consume a list of rules"
+    },
+    {
+      "id": "consume-at-rule",
+      "level": "4",
+      "title": "Consume an at-rule"
+    },
+    {
+      "id": "consume-qualified-rule",
+      "level": "4",
+      "title": "Consume a qualified rule"
+    },
+    {
+      "id": "consume-list-of-declarations",
+      "level": "4",
+      "title": "Consume a list of declarations"
+    },
+    {
+      "id": "consume-declaration",
+      "level": "4",
+      "title": "Consume a declaration"
+    },
+    {
+      "id": "consume-component-value",
+      "level": "4",
+      "title": "Consume a component value"
+    },
+    {
+      "id": "consume-simple-block",
+      "level": "4",
+      "title": "Consume a simple block"
+    },
+    {
+      "id": "consume-function",
+      "level": "4",
+      "title": "Consume a function"
+    },
+    {
+      "id": "anb-microsyntax",
+      "level": "2",
+      "title": "The An+B microsyntax"
+    },
+    {
+      "id": "anb-syntax",
+      "level": "3",
+      "title": "Informal Syntax Description"
+    },
+    {
+      "id": "the-anb-type",
+      "level": "3",
+      "title": "The <an+b> type"
+    },
+    {
+      "id": "urange",
+      "level": "2",
+      "title": "The Unicode-Range microsyntax"
+    },
+    {
+      "id": "urange-syntax",
+      "level": "3",
+      "title": "The <urange> type"
+    },
+    {
+      "id": "rule-defs",
+      "level": "2",
+      "title": "Defining Grammars for Rules and Other Values"
+    },
+    {
+      "id": "declaration-rule-list",
+      "level": "3",
+      "title": "Defining Block Contents: the <declaration-list>, <rule-list>, and <stylesheet> productions"
+    },
+    {
+      "id": "any-value",
+      "level": "3",
+      "title": "Defining Arbitrary Contents: the <declaration-value> and <any-value> productions"
+    },
+    {
+      "id": "css-stylesheets",
+      "level": "2",
+      "title": "CSS stylesheets"
+    },
+    {
+      "id": "style-rules",
+      "level": "3",
+      "title": "Style rules"
+    },
+    {
+      "id": "charset-rule",
+      "level": "3",
+      "title": "The @charset Rule"
+    },
+    {
+      "id": "serialization",
+      "level": "2",
+      "title": "Serialization"
+    },
+    {
+      "id": "serializing-anb",
+      "level": "3",
+      "title": "Serializing <an+b>"
+    },
+    {
+      "id": "priv-sec",
+      "level": "2",
+      "title": "Privacy and Security Considerations"
+    },
+    {
+      "id": "changes",
+      "level": "2",
+      "title": "Changes"
+    },
+    {
+      "id": "changes-CR-20140220",
+      "level": "3",
+      "title": "Changes from the 20 February 2014 Candidate Recommendation"
+    },
+    {
+      "id": "changes-WD-20131105",
+      "level": "3",
+      "title": "Changes from the 5 November 2013 Last Call Working Draft"
+    },
+    {
+      "id": "changes-WD-20130919",
+      "level": "3",
+      "title": "Changes from the 19 September 2013 Working Draft"
+    },
+    {
+      "id": "changes-css21",
+      "level": "3",
+      "title": "Changes from CSS 2.1 and Selectors Level 3"
+    },
+    {
+      "id": "acknowledgments",
+      "level": "2",
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "document-conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conform-classes",
+      "level": "3",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "conform-responsible",
+      "level": "3",
+      "title": "Requirements for Responsible Implementation of CSS"
+    },
+    {
+      "id": "conform-partial",
+      "level": "4",
+      "title": "Partial Implementations"
+    },
+    {
+      "id": "conform-future-proofing",
+      "level": "4",
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "conform-testing",
+      "level": "4",
+      "title": "Implementations of CR-level Features"
+    },
+    {
+      "id": "cr-exit-criteria",
+      "level": "3",
+      "title": "CR exit criteria"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "spec": {
+    "title": "WebXR Augmented Reality Module - Level 1",
+    "url": "https://www.w3.org/TR/webxr-ar-module-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "XRSessionMode": {
+        "type": "enum",
+        "name": "XRSessionMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "inline"
+          },
+          {
+            "type": "enum-value",
+            "value": "immersive-vr"
+          },
+          {
+            "type": "enum-value",
+            "value": "immersive-ar"
+          }
+        ],
+        "extAttrs": []
+      },
+      "XREnvironmentBlendMode": {
+        "type": "enum",
+        "name": "XREnvironmentBlendMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "opaque"
+          },
+          {
+            "type": "enum-value",
+            "value": "alpha-blend"
+          },
+          {
+            "type": "enum-value",
+            "value": "additive"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "XRSession": [
+        {
+          "type": "interface",
+          "name": "XRSession",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "environmentBlendMode",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "XREnvironmentBlendMode"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "XRSession": [
+        "XREnvironmentBlendMode"
+      ]
+    },
+    "externalDependencies": [
+      "XRSession"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

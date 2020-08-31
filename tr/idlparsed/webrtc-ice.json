@@ -1,0 +1,342 @@
+{
+  "spec": {
+    "title": "IceTransport Extensions for WebRTC",
+    "url": "https://w3c.github.io/webrtc-ice/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "RTCIceTransport"
+        ]
+      },
+      "functions": {}
+    },
+    "idlNames": {
+      "RTCIceParameters": {
+        "type": "dictionary",
+        "name": "RTCIceParameters",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "usernameFragment",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "password",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "iceLite",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RTCIceGatherOptions": {
+        "type": "dictionary",
+        "name": "RTCIceGatherOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "gatherPolicy",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RTCIceTransportPolicy"
+            },
+            "default": {
+              "type": "string",
+              "value": "all"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "iceServers",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RTCIceServer"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "RTCIceTransport": [
+        {
+          "type": "interface",
+          "name": "RTCIceTransport",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "constructor",
+              "arguments": [],
+              "extAttrs": []
+            },
+            {
+              "type": "operation",
+              "name": "gather",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "void"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "RTCIceGatherOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "start",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "void"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "remoteParameters",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "RTCIceParameters"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "role",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "RTCIceRole"
+                  },
+                  "default": {
+                    "type": "string",
+                    "value": "controlled"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "stop",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "void"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "addRemoteCandidate",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "void"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "remoteCandidate",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "RTCIceCandidateInit"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "attribute",
+              "name": "onerror",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onicecandidate",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "RTCIceTransport"
+      ]
+    },
+    "dependencies": {
+      "RTCIceParameters": [],
+      "RTCIceGatherOptions": [
+        "RTCIceTransportPolicy",
+        "RTCIceServer"
+      ],
+      "RTCIceTransport": [
+        "RTCIceGatherOptions",
+        "RTCIceParameters",
+        "RTCIceRole",
+        "RTCIceCandidateInit",
+        "EventHandler"
+      ]
+    },
+    "externalDependencies": [
+      "RTCIceTransportPolicy",
+      "RTCIceServer",
+      "RTCIceTransport",
+      "RTCIceRole",
+      "RTCIceCandidateInit",
+      "EventHandler"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

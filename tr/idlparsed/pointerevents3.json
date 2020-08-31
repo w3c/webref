@@ -1,0 +1,845 @@
+{
+  "spec": {
+    "title": "Pointer Events",
+    "url": "https://www.w3.org/TR/pointerevents3/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "PointerEvent"
+        ]
+      },
+      "functions": {}
+    },
+    "idlNames": {
+      "PointerEventInit": {
+        "type": "dictionary",
+        "name": "PointerEventInit",
+        "inheritance": "MouseEventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "pointerId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "width",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "1"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "height",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "1"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "pressure",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "tangentialPressure",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "tiltX",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "tiltY",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "twist",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "pointerType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "isPrimary",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "coalescedEvents",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PointerEvent"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "predictedEvents",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PointerEvent"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "PointerEvent": {
+        "type": "interface",
+        "name": "PointerEvent",
+        "inheritance": "MouseEvent",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PointerEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "pointerId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "width",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "height",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "pressure",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "tangentialPressure",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "tiltX",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "tiltY",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "twist",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "pointerType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "isPrimary",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "getCoalescedEvents",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PointerEvent"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getPredictedEvents",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PointerEvent"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Element": [
+        {
+          "type": "interface",
+          "name": "Element",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "setPointerCapture",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "void"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "pointerId",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "long"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "releasePointerCapture",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "void"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "pointerId",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "long"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "hasPointerCapture",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "pointerId",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "long"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "GlobalEventHandlers": [
+        {
+          "type": "interface mixin",
+          "name": "GlobalEventHandlers",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "ongotpointercapture",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onlostpointercapture",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onpointerdown",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onpointermove",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onpointerup",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onpointercancel",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onpointerover",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onpointerout",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onpointerenter",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onpointerleave",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "Navigator": [
+        {
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "maxTouchPoints",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "long"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "PointerEvent"
+      ]
+    },
+    "dependencies": {
+      "PointerEventInit": [
+        "MouseEventInit",
+        "PointerEvent"
+      ],
+      "PointerEvent": [
+        "MouseEvent",
+        "PointerEventInit",
+        "PointerEvent"
+      ],
+      "Element": [],
+      "GlobalEventHandlers": [
+        "EventHandler"
+      ],
+      "Navigator": []
+    },
+    "externalDependencies": [
+      "MouseEventInit",
+      "MouseEvent",
+      "Element",
+      "GlobalEventHandlers",
+      "EventHandler",
+      "Navigator"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

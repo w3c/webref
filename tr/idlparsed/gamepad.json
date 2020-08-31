@@ -1,0 +1,431 @@
+{
+  "spec": {
+    "title": "Gamepad",
+    "url": "https://www.w3.org/TR/gamepad/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "GamepadEvent"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "Gamepad",
+          "GamepadButton",
+          "Navigator"
+        ]
+      }
+    },
+    "idlNames": {
+      "Gamepad": {
+        "type": "interface",
+        "name": "Gamepad",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "id",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "index",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "connected",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "timestamp",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "mapping",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GamepadMappingType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "axes",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "buttons",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GamepadButton"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "GamepadButton": {
+        "type": "interface",
+        "name": "GamepadButton",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "pressed",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "touched",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "value",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "GamepadMappingType": {
+        "type": "enum",
+        "name": "GamepadMappingType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": ""
+          },
+          {
+            "type": "enum-value",
+            "value": "standard"
+          }
+        ],
+        "extAttrs": []
+      },
+      "GamepadEvent": {
+        "type": "interface",
+        "name": "GamepadEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GamepadEventInit"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "gamepad",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Gamepad"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "GamepadEventInit": {
+        "type": "dictionary",
+        "name": "GamepadEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "gamepad",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Gamepad"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Navigator": [
+        {
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "getGamepads",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "sequence",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": true,
+                    "union": false,
+                    "idlType": "Gamepad"
+                  }
+                ]
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "Gamepad",
+        "GamepadButton",
+        "Navigator",
+        "GamepadEvent"
+      ]
+    },
+    "dependencies": {
+      "Gamepad": [
+        "DOMHighResTimeStamp",
+        "GamepadMappingType",
+        "GamepadButton"
+      ],
+      "GamepadButton": [],
+      "Navigator": [
+        "Gamepad"
+      ],
+      "GamepadEvent": [
+        "Event",
+        "GamepadEventInit",
+        "Gamepad"
+      ],
+      "GamepadEventInit": [
+        "EventInit",
+        "Gamepad"
+      ]
+    },
+    "externalDependencies": [
+      "DOMHighResTimeStamp",
+      "Navigator",
+      "Event",
+      "EventInit"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

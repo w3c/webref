@@ -1,0 +1,253 @@
+{
+  "spec": {
+    "title": "Geolocation Sensor",
+    "url": "https://www.w3.org/TR/geolocation-sensor/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Geolocation Sensor"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "W3C Working Draft, 19 December 2018"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "examples",
+      "level": "2",
+      "title": "Examples"
+    },
+    {
+      "id": "security-and-privacy",
+      "level": "2",
+      "title": "Security and Privacy Considerations"
+    },
+    {
+      "id": "model",
+      "level": "2",
+      "title": "Model"
+    },
+    {
+      "id": "api",
+      "level": "2",
+      "title": "API"
+    },
+    {
+      "id": "geolocationsensor-interface",
+      "level": "3",
+      "title": "The GeolocationSensor Interface"
+    },
+    {
+      "id": "geolocationsensor-read",
+      "level": "4",
+      "title": "GeolocationSensor.read()"
+    },
+    {
+      "id": "geolocationsensor-latitude",
+      "level": "4",
+      "title": "GeolocationSensor.latitude"
+    },
+    {
+      "id": "geolocationsensor-longitude",
+      "level": "4",
+      "title": "GeolocationSensor.longitude"
+    },
+    {
+      "id": "geolocationsensor-altitude",
+      "level": "4",
+      "title": "GeolocationSensor.altitude"
+    },
+    {
+      "id": "geolocationsensor-accuracy",
+      "level": "4",
+      "title": "GeolocationSensor.accuracy"
+    },
+    {
+      "id": "geolocationsensor-altitudeaccuracy",
+      "level": "4",
+      "title": "GeolocationSensor.altitudeAccuracy"
+    },
+    {
+      "id": "geolocationsensor-heading",
+      "level": "4",
+      "title": "GeolocationSensor.heading"
+    },
+    {
+      "id": "geolocationsensor-speed",
+      "level": "4",
+      "title": "GeolocationSensor.speed"
+    },
+    {
+      "id": "abstract-operations",
+      "level": "2",
+      "title": "Abstract Operations"
+    },
+    {
+      "id": "construct-a-geolocation-sensor-object",
+      "level": "3",
+      "title": "Construct a geolocation sensor object"
+    },
+    {
+      "id": "use-cases",
+      "level": "2",
+      "title": "Use Cases"
+    },
+    {
+      "id": "use-cases-categorization",
+      "level": "3",
+      "title": "Categorization of use cases"
+    },
+    {
+      "id": "use-cases-foreground-one-off",
+      "level": "3",
+      "title": "Foreground—One-off geolocation update"
+    },
+    {
+      "id": "use-case-locate-a-user-on-a-map",
+      "level": "4",
+      "title": "Locate a user on a map"
+    },
+    {
+      "id": "use-case-find-points-of-interest-in-the-users-area",
+      "level": "4",
+      "title": "Find points of interest in the user’s area"
+    },
+    {
+      "id": "use-cases-foreground-continuous",
+      "level": "3",
+      "title": "Foreground—Continuous geolocation updates"
+    },
+    {
+      "id": "use-case-up-to-date-local-information",
+      "level": "4",
+      "title": "Up-to-date local information"
+    },
+    {
+      "id": "use-case-alerts-when-points-of-interest-are-in-the-users-vicinity",
+      "level": "4",
+      "title": "Alerts when points of interest are in the user’s vicinity"
+    },
+    {
+      "id": "use-case-show-the-users-position-on-a-map",
+      "level": "4",
+      "title": "Show the user’s position on a map"
+    },
+    {
+      "id": "use-cases-background-continuous",
+      "level": "3",
+      "title": "Background—Continuous geolocation updates"
+    },
+    {
+      "id": "use-case-location-tagged-status-updates-in-social-networking-applications",
+      "level": "4",
+      "title": "Location-tagged status updates in social networking applications"
+    },
+    {
+      "id": "use-case-turn-by-turn-route-navigation",
+      "level": "4",
+      "title": "Turn-by-turn route navigation"
+    },
+    {
+      "id": "use-case-tracking-sports-activity",
+      "level": "4",
+      "title": "Tracking sports activity"
+    },
+    {
+      "id": "use-case-real-estate-search",
+      "level": "4",
+      "title": "Real estate search"
+    },
+    {
+      "id": "use-cases-background-geofence",
+      "level": "3",
+      "title": "Background—One-off geolocation fence alert"
+    },
+    {
+      "id": "use-case-reminder-and-todo-applications",
+      "level": "4",
+      "title": "Reminder and to-do applications"
+    },
+    {
+      "id": "use-case-travel-applications",
+      "level": "4",
+      "title": "Travel applications"
+    },
+    {
+      "id": "use-case-ticketing-or-booking-confirmations",
+      "level": "4",
+      "title": "Ticketing or booking confirmations"
+    },
+    {
+      "id": "use-case-ride-share-applications",
+      "level": "4",
+      "title": "Ride share applications"
+    },
+    {
+      "id": "use-case-retail-special-offers",
+      "level": "4",
+      "title": "Retail special offers"
+    },
+    {
+      "id": "acknowledgements",
+      "level": "2",
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    }
+  ]
+}

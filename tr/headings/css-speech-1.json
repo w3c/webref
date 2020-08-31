@@ -1,0 +1,258 @@
+{
+  "spec": {
+    "title": "CSS Speech Module",
+    "url": "https://www.w3.org/TR/css-speech-1/"
+  },
+  "headings": [
+    {
+      "id": "top",
+      "level": "1",
+      "title": "CSS Speech Module"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction, design goals"
+    },
+    {
+      "id": "background",
+      "level": "2",
+      "title": "Background information, CSS\n   2.1"
+    },
+    {
+      "id": "ssml-rel",
+      "level": "2",
+      "title": "Relationship with SSML"
+    },
+    {
+      "id": "css-values",
+      "level": "2",
+      "title": "CSS values"
+    },
+    {
+      "id": "example",
+      "level": "2",
+      "title": "Example"
+    },
+    {
+      "id": "aural-model",
+      "level": "2",
+      "title": "The aural formatting model"
+    },
+    {
+      "id": "mixing-props",
+      "level": "2",
+      "title": "Mixing properties"
+    },
+    {
+      "id": "mixing-props-voice-volume",
+      "level": "3",
+      "title": "The ‘voice-volume’\n   property"
+    },
+    {
+      "id": "mixing-props-voice-balance",
+      "level": "3",
+      "title": "The ‘voice-balance’\n   property"
+    },
+    {
+      "id": "speaking-props",
+      "level": "2",
+      "title": "Speaking properties"
+    },
+    {
+      "id": "speaking-props-speak",
+      "level": "3",
+      "title": "The ‘speak’ property"
+    },
+    {
+      "id": "speaking-props-speak-as",
+      "level": "3",
+      "title": "The ‘speak-as’ property"
+    },
+    {
+      "id": "pause-props",
+      "level": "2",
+      "title": "Pause properties"
+    },
+    {
+      "id": "pause-props-pause-before-after",
+      "level": "3",
+      "title": "The\n   ‘pause-before’\n   and ‘pause-after’ properties"
+    },
+    {
+      "id": "pause-props-pause",
+      "level": "3",
+      "title": "The ‘pause’ shorthand property"
+    },
+    {
+      "id": "collapsed-pauses",
+      "level": "3",
+      "title": "Collapsing pauses"
+    },
+    {
+      "id": "rest-props",
+      "level": "2",
+      "title": "Rest properties"
+    },
+    {
+      "id": "rest-props-rest-before-after",
+      "level": "3",
+      "title": "The\n   ‘rest-before’\n   and ‘rest-after’\n   properties"
+    },
+    {
+      "id": "rest-props-rest",
+      "level": "3",
+      "title": "The ‘rest’ shorthand property"
+    },
+    {
+      "id": "cue-props",
+      "level": "2",
+      "title": "Cue properties"
+    },
+    {
+      "id": "cue-props-cue-before-after",
+      "level": "3",
+      "title": "The ‘cue-before’ and ‘cue-after’ properties"
+    },
+    {
+      "id": "cue-props-volume",
+      "level": "3",
+      "title": "Relation between\n   audio cues and speech synthesis volume levels"
+    },
+    {
+      "id": "cue-props-cue",
+      "level": "3",
+      "title": "The ‘cue’ shorthand property"
+    },
+    {
+      "id": "voice-char-props",
+      "level": "2",
+      "title": "Voice characteristic\n   properties"
+    },
+    {
+      "id": "voice-props-voice-family",
+      "level": "3",
+      "title": "The ‘voice-family’\n   property"
+    },
+    {
+      "id": "voice-selection",
+      "level": "4",
+      "title": "Voice\n   selection, content language"
+    },
+    {
+      "id": "voice-props-voice-rate",
+      "level": "3",
+      "title": "The ‘voice-rate’ property"
+    },
+    {
+      "id": "voice-props-voice-pitch",
+      "level": "3",
+      "title": "The ‘voice-pitch’\n   property"
+    },
+    {
+      "id": "voice-props-voice-range",
+      "level": "3",
+      "title": "The ‘voice-range’\n   property"
+    },
+    {
+      "id": "voice-props-voice-stress",
+      "level": "3",
+      "title": "The ‘voice-stress’\n   property"
+    },
+    {
+      "id": "duration-props",
+      "level": "2",
+      "title": "Voice duration property"
+    },
+    {
+      "id": "mixing-props-voice-duration",
+      "level": "3",
+      "title": "The ‘voice-duration’\n   property"
+    },
+    {
+      "id": "lists",
+      "level": "2",
+      "title": "List items and counters styles"
+    },
+    {
+      "id": "content",
+      "level": "2",
+      "title": "Inserted and replaced content"
+    },
+    {
+      "id": "pronunciation",
+      "level": "2",
+      "title": "Pronunciation, phonemes"
+    },
+    {
+      "id": "property-index",
+      "level": "2",
+      "title": "Appendix A — Property index"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Appendix B — Index"
+    },
+    {
+      "id": "definitions",
+      "level": "2",
+      "title": "Appendix C — Definitions"
+    },
+    {
+      "id": "glossary",
+      "level": "3",
+      "title": "Glossary"
+    },
+    {
+      "id": "conformance",
+      "level": "3",
+      "title": "Conformance"
+    },
+    {
+      "id": "exit",
+      "level": "3",
+      "title": "CR exit criteria"
+    },
+    {
+      "id": "ack",
+      "level": "2",
+      "title": "Appendix D — Acknowledgements"
+    },
+    {
+      "id": "changes",
+      "level": "2",
+      "title": "Appendix E — Changes"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "Appendix F — References"
+    },
+    {
+      "id": "normative-references",
+      "level": "3",
+      "title": "Normative references"
+    },
+    {
+      "id": "other-references",
+      "level": "3",
+      "title": "Other references"
+    }
+  ]
+}

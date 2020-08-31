@@ -1,0 +1,431 @@
+{
+  "spec": {
+    "title": "Picture-in-Picture",
+    "url": "https://www.w3.org/TR/picture-in-picture/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "EnterPictureInPictureEvent"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "PictureInPictureWindow"
+        ]
+      }
+    },
+    "idlNames": {
+      "PictureInPictureWindow": {
+        "type": "interface",
+        "name": "PictureInPictureWindow",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "width",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "height",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "onresize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "EnterPictureInPictureEvent": {
+        "type": "interface",
+        "name": "EnterPictureInPictureEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "EnterPictureInPictureEventInit"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "pictureInPictureWindow",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PictureInPictureWindow"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "EnterPictureInPictureEventInit": {
+        "type": "dictionary",
+        "name": "EnterPictureInPictureEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "pictureInPictureWindow",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PictureInPictureWindow"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "HTMLVideoElement": [
+        {
+          "type": "interface",
+          "name": "HTMLVideoElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "requestPictureInPicture",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "PictureInPictureWindow"
+                  }
+                ]
+              },
+              "arguments": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "NewObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": ""
+            },
+            {
+              "type": "attribute",
+              "name": "onenterpictureinpicture",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onleavepictureinpicture",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "autoPictureInPicture",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "disablePictureInPicture",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "Document": [
+        {
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "pictureInPictureEnabled",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "operation",
+              "name": "exitPictureInPicture",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "void"
+                  }
+                ]
+              },
+              "arguments": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "NewObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "DocumentOrShadowRoot": [
+        {
+          "type": "interface mixin",
+          "name": "DocumentOrShadowRoot",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "pictureInPictureElement",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "Element"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "PictureInPictureWindow",
+        "EnterPictureInPictureEvent"
+      ]
+    },
+    "dependencies": {
+      "HTMLVideoElement": [
+        "PictureInPictureWindow",
+        "EventHandler"
+      ],
+      "Document": [],
+      "DocumentOrShadowRoot": [
+        "Element"
+      ],
+      "PictureInPictureWindow": [
+        "EventTarget",
+        "EventHandler"
+      ],
+      "EnterPictureInPictureEvent": [
+        "Event",
+        "EnterPictureInPictureEventInit",
+        "PictureInPictureWindow"
+      ],
+      "EnterPictureInPictureEventInit": [
+        "EventInit",
+        "PictureInPictureWindow"
+      ]
+    },
+    "externalDependencies": [
+      "HTMLVideoElement",
+      "EventHandler",
+      "Document",
+      "DocumentOrShadowRoot",
+      "Element",
+      "EventTarget",
+      "Event",
+      "EventInit"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "spec": {
+    "title": "CSS Custom Highlight API Module Level 1",
+    "url": "https://drafts.csswg.org/css-highlight-api-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "Highlight"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "HighlightsRegister"
+        ]
+      }
+    },
+    "idlNames": {
+      "Highlight": {
+        "type": "interface",
+        "name": "Highlight",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "name",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "initialRanges",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AbstractRange"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "setlike",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AbstractRange"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          },
+          {
+            "type": "attribute",
+            "name": "priority",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "HighlightsRegister": {
+        "type": "interface",
+        "name": "HighlightsRegister",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "setlike",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "Highlight"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          },
+          {
+            "type": "operation",
+            "name": "add",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HighlightsRegister"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Highlight"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "CSS": [
+        {
+          "type": "namespace",
+          "name": "CSS",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "highlights",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "HighlightsRegister"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "Highlight",
+        "HighlightsRegister"
+      ]
+    },
+    "dependencies": {
+      "Highlight": [
+        "CSSOMString",
+        "AbstractRange"
+      ],
+      "CSS": [
+        "HighlightsRegister"
+      ],
+      "HighlightsRegister": [
+        "Highlight",
+        "HighlightsRegister"
+      ]
+    },
+    "externalDependencies": [
+      "CSSOMString",
+      "AbstractRange",
+      "CSS"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

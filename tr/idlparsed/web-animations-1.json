@@ -1,0 +1,2103 @@
+{
+  "spec": {
+    "title": "Web Animations",
+    "url": "https://www.w3.org/TR/web-animations-1/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "DocumentTimeline",
+          "Animation",
+          "KeyframeEffect",
+          "AnimationPlaybackEvent"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "AnimationTimeline",
+          "AnimationEffect"
+        ]
+      }
+    },
+    "idlNames": {
+      "AnimationTimeline": {
+        "type": "interface",
+        "name": "AnimationTimeline",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "currentTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "DocumentTimelineOptions": {
+        "type": "dictionary",
+        "name": "DocumentTimelineOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "originTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "DocumentTimeline": {
+        "type": "interface",
+        "name": "DocumentTimeline",
+        "inheritance": "AnimationTimeline",
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DocumentTimelineOptions"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "Animation": {
+        "type": "interface",
+        "name": "Animation",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "id",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "effect",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "AnimationEffect"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "timeline",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "AnimationTimeline"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "startTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "currentTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "playbackRate",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "playState",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AnimationPlayState"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "pending",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "ready",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Animation"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "finished",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Animation"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "onfinish",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "oncancel",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "operation",
+            "name": "cancel",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "finish",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "play",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "pause",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "updatePlaybackRate",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "playbackRate",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "reverse",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "effect",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "AnimationEffect"
+                },
+                "default": {
+                  "type": "null"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "timeline",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "AnimationTimeline"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "AnimationPlayState": {
+        "type": "enum",
+        "name": "AnimationPlayState",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "idle"
+          },
+          {
+            "type": "enum-value",
+            "value": "running"
+          },
+          {
+            "type": "enum-value",
+            "value": "paused"
+          },
+          {
+            "type": "enum-value",
+            "value": "finished"
+          }
+        ],
+        "extAttrs": []
+      },
+      "AnimationEffect": {
+        "type": "interface",
+        "name": "AnimationEffect",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "getTiming",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EffectTiming"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getComputedTiming",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ComputedEffectTiming"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "updateTiming",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "timing",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "OptionalEffectTiming"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "EffectTiming": {
+        "type": "dictionary",
+        "name": "EffectTiming",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "delay",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "endDelay",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "fill",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "FillMode"
+            },
+            "default": {
+              "type": "string",
+              "value": "auto"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "iterationStart",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0.0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "iterations",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "default": {
+              "type": "number",
+              "value": "1.0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "duration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unrestricted double"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "string",
+              "value": "auto"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "direction",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PlaybackDirection"
+            },
+            "default": {
+              "type": "string",
+              "value": "normal"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "easing",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": "linear"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "OptionalEffectTiming": {
+        "type": "dictionary",
+        "name": "OptionalEffectTiming",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "delay",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "endDelay",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "fill",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "FillMode"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "iterationStart",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "iterations",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "duration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unrestricted double"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "direction",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PlaybackDirection"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "easing",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "FillMode": {
+        "type": "enum",
+        "name": "FillMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "none"
+          },
+          {
+            "type": "enum-value",
+            "value": "forwards"
+          },
+          {
+            "type": "enum-value",
+            "value": "backwards"
+          },
+          {
+            "type": "enum-value",
+            "value": "both"
+          },
+          {
+            "type": "enum-value",
+            "value": "auto"
+          }
+        ],
+        "extAttrs": []
+      },
+      "PlaybackDirection": {
+        "type": "enum",
+        "name": "PlaybackDirection",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "normal"
+          },
+          {
+            "type": "enum-value",
+            "value": "reverse"
+          },
+          {
+            "type": "enum-value",
+            "value": "alternate"
+          },
+          {
+            "type": "enum-value",
+            "value": "alternate-reverse"
+          }
+        ],
+        "extAttrs": []
+      },
+      "ComputedEffectTiming": {
+        "type": "dictionary",
+        "name": "ComputedEffectTiming",
+        "inheritance": "EffectTiming",
+        "members": [
+          {
+            "type": "field",
+            "name": "endTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "activeDuration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "localTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "progress",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "currentIteration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "KeyframeEffect": {
+        "type": "interface",
+        "name": "KeyframeEffect",
+        "inheritance": "AnimationEffect",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "target",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSPseudoElement"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "iterationComposite",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "IterationCompositeOperation"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "composite",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CompositeOperation"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "operation",
+            "name": "getKeyframes",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "object"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setKeyframes",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "keyframes",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "object"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "target",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Element"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "CSSPseudoElement"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "keyframes",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "object"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "unrestricted double"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "KeyframeEffectOptions"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ]
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "source",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "KeyframeEffect"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "BaseComputedKeyframe": {
+        "type": "dictionary",
+        "name": "BaseComputedKeyframe",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "offset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "computedOffset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "easing",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": "linear"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "composite",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CompositeOperationOrAuto"
+            },
+            "default": {
+              "type": "string",
+              "value": "auto"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "BasePropertyIndexedKeyframe": {
+        "type": "dictionary",
+        "name": "BasePropertyIndexedKeyframe",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "offset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "double"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": true,
+                      "union": false,
+                      "idlType": "double"
+                    }
+                  ]
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "easing",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    }
+                  ]
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "composite",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CompositeOperationOrAuto"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "CompositeOperationOrAuto"
+                    }
+                  ]
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "BaseKeyframe": {
+        "type": "dictionary",
+        "name": "BaseKeyframe",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "offset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "easing",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": "linear"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "composite",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CompositeOperationOrAuto"
+            },
+            "default": {
+              "type": "string",
+              "value": "auto"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "KeyframeEffectOptions": {
+        "type": "dictionary",
+        "name": "KeyframeEffectOptions",
+        "inheritance": "EffectTiming",
+        "members": [
+          {
+            "type": "field",
+            "name": "iterationComposite",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "IterationCompositeOperation"
+            },
+            "default": {
+              "type": "string",
+              "value": "replace"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "composite",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CompositeOperation"
+            },
+            "default": {
+              "type": "string",
+              "value": "replace"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "IterationCompositeOperation": {
+        "type": "enum",
+        "name": "IterationCompositeOperation",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "replace"
+          },
+          {
+            "type": "enum-value",
+            "value": "accumulate"
+          }
+        ],
+        "extAttrs": []
+      },
+      "CompositeOperation": {
+        "type": "enum",
+        "name": "CompositeOperation",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "replace"
+          },
+          {
+            "type": "enum-value",
+            "value": "add"
+          },
+          {
+            "type": "enum-value",
+            "value": "accumulate"
+          }
+        ],
+        "extAttrs": []
+      },
+      "CompositeOperationOrAuto": {
+        "type": "enum",
+        "name": "CompositeOperationOrAuto",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "replace"
+          },
+          {
+            "type": "enum-value",
+            "value": "add"
+          },
+          {
+            "type": "enum-value",
+            "value": "accumulate"
+          },
+          {
+            "type": "enum-value",
+            "value": "auto"
+          }
+        ],
+        "extAttrs": []
+      },
+      "Animatable": {
+        "type": "interface mixin",
+        "name": "Animatable",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "animate",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Animation"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "keyframes",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "object"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "unrestricted double"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "KeyframeAnimationOptions"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getAnimations",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Animation"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "KeyframeAnimationOptions": {
+        "type": "dictionary",
+        "name": "KeyframeAnimationOptions",
+        "inheritance": "KeyframeEffectOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "id",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AnimationPlaybackEvent": {
+        "type": "interface",
+        "name": "AnimationPlaybackEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "currentTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "timelineTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AnimationPlaybackEventInit"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "AnimationPlaybackEventInit": {
+        "type": "dictionary",
+        "name": "AnimationPlaybackEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "currentTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "timelineTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Document": [
+        {
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "timeline",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DocumentTimeline"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "operation",
+              "name": "getAnimations",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "sequence",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "Animation"
+                  }
+                ]
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "Element": [
+        {
+          "name": "Element",
+          "type": "interface",
+          "includes": "Animatable"
+        }
+      ],
+      "CSSPseudoElement": [
+        {
+          "name": "CSSPseudoElement",
+          "type": "interface",
+          "includes": "Animatable"
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "AnimationTimeline",
+        "DocumentTimeline",
+        "Animation",
+        "AnimationEffect",
+        "KeyframeEffect",
+        "AnimationPlaybackEvent"
+      ]
+    },
+    "dependencies": {
+      "AnimationTimeline": [],
+      "DocumentTimelineOptions": [
+        "DOMHighResTimeStamp"
+      ],
+      "DocumentTimeline": [
+        "AnimationTimeline",
+        "DocumentTimelineOptions"
+      ],
+      "Animation": [
+        "EventTarget",
+        "AnimationEffect",
+        "AnimationTimeline",
+        "AnimationPlayState",
+        "Animation",
+        "EventHandler"
+      ],
+      "AnimationEffect": [
+        "EffectTiming",
+        "ComputedEffectTiming",
+        "OptionalEffectTiming"
+      ],
+      "EffectTiming": [
+        "FillMode",
+        "PlaybackDirection"
+      ],
+      "OptionalEffectTiming": [
+        "FillMode",
+        "PlaybackDirection"
+      ],
+      "ComputedEffectTiming": [
+        "EffectTiming"
+      ],
+      "KeyframeEffect": [
+        "AnimationEffect",
+        "Element",
+        "CSSPseudoElement",
+        "KeyframeEffectOptions",
+        "KeyframeEffect",
+        "IterationCompositeOperation",
+        "CompositeOperation"
+      ],
+      "BaseComputedKeyframe": [
+        "CompositeOperationOrAuto"
+      ],
+      "BasePropertyIndexedKeyframe": [
+        "CompositeOperationOrAuto"
+      ],
+      "BaseKeyframe": [
+        "CompositeOperationOrAuto"
+      ],
+      "KeyframeEffectOptions": [
+        "EffectTiming",
+        "IterationCompositeOperation",
+        "CompositeOperation"
+      ],
+      "Animatable": [
+        "Animation",
+        "KeyframeAnimationOptions"
+      ],
+      "KeyframeAnimationOptions": [
+        "KeyframeEffectOptions"
+      ],
+      "Document": [
+        "DocumentTimeline",
+        "Animation"
+      ],
+      "Element": [
+        "Animatable"
+      ],
+      "CSSPseudoElement": [
+        "Animatable"
+      ],
+      "AnimationPlaybackEvent": [
+        "Event",
+        "AnimationPlaybackEventInit"
+      ],
+      "AnimationPlaybackEventInit": [
+        "EventInit"
+      ]
+    },
+    "externalDependencies": [
+      "DOMHighResTimeStamp",
+      "EventTarget",
+      "EventHandler",
+      "Element",
+      "CSSPseudoElement",
+      "Document",
+      "Event",
+      "EventInit"
+    ],
+    "hasObsoleteIdl": false
+  }
+}
