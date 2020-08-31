@@ -1,0 +1,303 @@
+{
+  "spec": {
+    "title": "CSS Typed OM Level 1",
+    "url": "https://www.w3.org/TR/css-typed-om-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "CSS Typed OM Level 1"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "W3C Working Draft, 10 April 2018"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "stylevalue-objects",
+      "level": "2",
+      "title": "CSSStyleValue objects"
+    },
+    {
+      "id": "direct-cssstylevalue",
+      "level": "3",
+      "title": "Direct CSSStyleValue Objects"
+    },
+    {
+      "id": "the-stylepropertymap",
+      "level": "2",
+      "title": "The StylePropertyMap"
+    },
+    {
+      "id": "computed-stylepropertymapreadonly-objects",
+      "level": "3",
+      "title": "Computed StylePropertyMapReadOnly objects"
+    },
+    {
+      "id": "declared-stylepropertymap-objects",
+      "level": "3",
+      "title": "Declared & Inline StylePropertyMap objects"
+    },
+    {
+      "id": "stylevalue-subclasses",
+      "level": "2",
+      "title": "CSSStyleValue subclasses"
+    },
+    {
+      "id": "unparsedvalue-objects",
+      "level": "3",
+      "title": "CSSUnparsedValue objects"
+    },
+    {
+      "id": "keywordvalue-objects",
+      "level": "3",
+      "title": "CSSKeywordValue objects"
+    },
+    {
+      "id": "numeric-objects",
+      "level": "3",
+      "title": "Numeric Values:"
+    },
+    {
+      "id": "numeric-value",
+      "level": "4",
+      "title": "Common Numeric Operations, and the CSSNumericValue Superclass"
+    },
+    {
+      "id": "numeric-typing",
+      "level": "4",
+      "title": "Numeric Value Typing"
+    },
+    {
+      "id": "simple-numeric",
+      "level": "4",
+      "title": "Value + Unit: CSSUnitValue objects"
+    },
+    {
+      "id": "complex-numeric",
+      "level": "4",
+      "title": "Complex Numeric Values: CSSMathValue objects"
+    },
+    {
+      "id": "numeric-factory",
+      "level": "4",
+      "title": "Numeric Factory Functions"
+    },
+    {
+      "id": "transformvalue-objects",
+      "level": "3",
+      "title": "CSSTransformValue objects"
+    },
+    {
+      "id": "positionvalue-objects",
+      "level": "3",
+      "title": "CSSPositionValue objects"
+    },
+    {
+      "id": "imagevalue-objects",
+      "level": "3",
+      "title": "CSSImageValue objects"
+    },
+    {
+      "id": "reify-stylevalue",
+      "level": "2",
+      "title": "CSSStyleValue Reification"
+    },
+    {
+      "id": "reify-failure",
+      "level": "3",
+      "title": "Unrepresentable Values"
+    },
+    {
+      "id": "reify-tokens",
+      "level": "3",
+      "title": "Raw CSS tokens: properties with var() references"
+    },
+    {
+      "id": "reify-var",
+      "level": "3",
+      "title": "var() References"
+    },
+    {
+      "id": "reify-ident",
+      "level": "3",
+      "title": "Identifier Values"
+    },
+    {
+      "id": "reify-numeric",
+      "level": "3",
+      "title": "<number>, <percentage>, and <dimension> values"
+    },
+    {
+      "id": "reify-transformvalue",
+      "level": "3",
+      "title": "<transform-list> and <transform-function> values"
+    },
+    {
+      "id": "reify-position",
+      "level": "3",
+      "title": "<position> Values"
+    },
+    {
+      "id": "from-single-keyword",
+      "level": "4",
+      "title": "Determining x or y from a single value"
+    },
+    {
+      "id": "from-keyword-and-length",
+      "level": "4",
+      "title": "Determining x or y from a keyword and a length"
+    },
+    {
+      "id": "reify-url",
+      "level": "3",
+      "title": "<url> (and subtype) Values"
+    },
+    {
+      "id": "stylevalue-serialization",
+      "level": "2",
+      "title": "CSSStyleValue Serialization"
+    },
+    {
+      "id": "unparsedvalue-serialization",
+      "level": "3",
+      "title": "CSSUnparsedValue Serialization"
+    },
+    {
+      "id": "keywordvalue-serialization",
+      "level": "3",
+      "title": "CSSKeywordValue Serialization"
+    },
+    {
+      "id": "numericvalue-serialization",
+      "level": "3",
+      "title": "CSSUnitValue Serialization"
+    },
+    {
+      "id": "calc-serialization",
+      "level": "3",
+      "title": "CSSMathValue Serialization"
+    },
+    {
+      "id": "transformvalue-serialization",
+      "level": "3",
+      "title": "CSSTransformValue and CSSTransformComponent Serialization"
+    },
+    {
+      "id": "positionvalue-serialization",
+      "level": "3",
+      "title": "CSSPositionValue Serialization"
+    },
+    {
+      "id": "urlimagevalue-serialization",
+      "level": "3",
+      "title": "CSSURLImageValue Serialization"
+    },
+    {
+      "id": "cssom-serialization",
+      "level": "3",
+      "title": "Serialization from CSSOM Values"
+    },
+    {
+      "id": "security-considerations",
+      "level": "2",
+      "title": "Security Considerations"
+    },
+    {
+      "id": "privacy-considerations",
+      "level": "2",
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformance-classes",
+      "level": "3",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "partial",
+      "level": "3",
+      "title": "Partial implementations"
+    },
+    {
+      "id": "conform-future-proofing",
+      "level": "4",
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "testing",
+      "level": "3",
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

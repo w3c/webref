@@ -1,0 +1,693 @@
+{
+  "spec": {
+    "title": "Web Animations",
+    "url": "https://www.w3.org/TR/web-animations-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Web Animations"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "W3C Working Draft, 11 October 2018"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "use-cases",
+      "level": "3",
+      "title": "Use cases"
+    },
+    {
+      "id": "relationship-to-other-specifications",
+      "level": "3",
+      "title": "Relationship to other specifications"
+    },
+    {
+      "id": "overview-of-this-specification",
+      "level": "3",
+      "title": "Overview of this specification"
+    },
+    {
+      "id": "spec-conventions",
+      "level": "2",
+      "title": "Specification conventions"
+    },
+    {
+      "id": "web-animations-model-overview",
+      "level": "2",
+      "title": "Web Animations model overview"
+    },
+    {
+      "id": "timing-model",
+      "level": "2",
+      "title": "Timing model"
+    },
+    {
+      "id": "timing-model-overview",
+      "level": "3",
+      "title": "Timing model overview"
+    },
+    {
+      "id": "stateless",
+      "level": "4",
+      "title": "Stateless"
+    },
+    {
+      "id": "hierarchical",
+      "level": "4",
+      "title": "Hierarchical"
+    },
+    {
+      "id": "time-value-section",
+      "level": "3",
+      "title": "Time values"
+    },
+    {
+      "id": "timelines",
+      "level": "3",
+      "title": "Timelines"
+    },
+    {
+      "id": "document-timelines",
+      "level": "4",
+      "title": "Document timelines"
+    },
+    {
+      "id": "the-documents-default-timeline",
+      "level": "4",
+      "title": "The default document timeline"
+    },
+    {
+      "id": "animations",
+      "level": "3",
+      "title": "Animations"
+    },
+    {
+      "id": "setting-the-timeline",
+      "level": "4",
+      "title": "Setting the timeline of an animation"
+    },
+    {
+      "id": "responding-to-a-newly-inactive-timeline",
+      "level": "4",
+      "title": "Responding to a newly inactive\n  timeline"
+    },
+    {
+      "id": "setting-the-target-effect",
+      "level": "4",
+      "title": "Setting the target effect of an\n  animation"
+    },
+    {
+      "id": "the-current-time-of-an-animation",
+      "level": "4",
+      "title": "The current time of an animation"
+    },
+    {
+      "id": "setting-the-current-time-of-an-animation",
+      "level": "4",
+      "title": "Setting the current time of an animation"
+    },
+    {
+      "id": "setting-the-start-time-of-an-animation",
+      "level": "4",
+      "title": "Setting the start time of an animation"
+    },
+    {
+      "id": "waiting-for-the-target-effect",
+      "level": "4",
+      "title": "Waiting for the target effect"
+    },
+    {
+      "id": "promise-objects",
+      "level": "4",
+      "title": "Promise objects"
+    },
+    {
+      "id": "the-current-ready-promise",
+      "level": "4",
+      "title": "The current ready promise"
+    },
+    {
+      "id": "playing-an-animation-section",
+      "level": "4",
+      "title": "Playing an animation"
+    },
+    {
+      "id": "pausing-an-animation-section",
+      "level": "4",
+      "title": "Pausing an animation"
+    },
+    {
+      "id": "reaching-the-end",
+      "level": "4",
+      "title": "Reaching the end"
+    },
+    {
+      "id": "the-current-finished-promise",
+      "level": "4",
+      "title": "The current finished promise"
+    },
+    {
+      "id": "updating-the-finished-state",
+      "level": "4",
+      "title": "Updating the finished state"
+    },
+    {
+      "id": "finishing-an-animation-section",
+      "level": "4",
+      "title": "Finishing an animation"
+    },
+    {
+      "id": "canceling-an-animation-section",
+      "level": "4",
+      "title": "Canceling an animation"
+    },
+    {
+      "id": "speed-control",
+      "level": "4",
+      "title": "Speed control"
+    },
+    {
+      "id": "setting-the-playback-rate-of-an-animation",
+      "level": "5",
+      "title": "Setting the playback rate of an animation"
+    },
+    {
+      "id": "seamlessly-updating-the-playback-rate-of-an-animation",
+      "level": "5",
+      "title": "Seamlessly updating the playback rate of an animation"
+    },
+    {
+      "id": "reversing-an-animation-section",
+      "level": "4",
+      "title": "Reversing an animation"
+    },
+    {
+      "id": "play-states",
+      "level": "4",
+      "title": "Play states"
+    },
+    {
+      "id": "animation-events-section",
+      "level": "4",
+      "title": "Animation events"
+    },
+    {
+      "id": "sorting-animation-events",
+      "level": "5",
+      "title": "Sorting animation events"
+    },
+    {
+      "id": "animation-playback-events-section",
+      "level": "5",
+      "title": "Animation playback events"
+    },
+    {
+      "id": "animation-playback-event-types",
+      "level": "5",
+      "title": "Types of animation playback events"
+    },
+    {
+      "id": "animation-effects",
+      "level": "3",
+      "title": "Animation effects"
+    },
+    {
+      "id": "animation-effects-and-animations",
+      "level": "4",
+      "title": "Relationship between animation effects\n  and animations"
+    },
+    {
+      "id": "types-of-animation-effects",
+      "level": "4",
+      "title": "Types of animation effects"
+    },
+    {
+      "id": "the-active-interval",
+      "level": "4",
+      "title": "The active interval"
+    },
+    {
+      "id": "local-time-section",
+      "level": "4",
+      "title": "Local time"
+    },
+    {
+      "id": "animation-effect-phases-and-states",
+      "level": "4",
+      "title": "Animation effect phases and\nstates"
+    },
+    {
+      "id": "fill-behavior",
+      "level": "3",
+      "title": "Fill behavior"
+    },
+    {
+      "id": "fill-modes",
+      "level": "4",
+      "title": "Fill modes"
+    },
+    {
+      "id": "repeating",
+      "level": "3",
+      "title": "Repeating"
+    },
+    {
+      "id": "iteration-intervals",
+      "level": "4",
+      "title": "Iteration intervals"
+    },
+    {
+      "id": "controlling-iteration",
+      "level": "4",
+      "title": "Controlling iteration"
+    },
+    {
+      "id": "iteration-time-space",
+      "level": "4",
+      "title": "Iteration time space"
+    },
+    {
+      "id": "interval-timing",
+      "level": "4",
+      "title": "Interval timing"
+    },
+    {
+      "id": "core-animation-effect-calculations",
+      "level": "3",
+      "title": "Core animation effect\ncalculations"
+    },
+    {
+      "id": "animation-effect-calculations-overview",
+      "level": "4",
+      "title": "Overview"
+    },
+    {
+      "id": "calculating-the-active-duration",
+      "level": "4",
+      "title": "Calculating the active duration"
+    },
+    {
+      "id": "transforming-the-local-time",
+      "level": "4",
+      "title": "Transforming the local time"
+    },
+    {
+      "id": "calculating-the-active-time",
+      "level": "5",
+      "title": "Calculating the active time"
+    },
+    {
+      "id": "calculating-the-overall-progress",
+      "level": "5",
+      "title": "Calculating the overall progress"
+    },
+    {
+      "id": "calculating-the-simple-iteration-progress",
+      "level": "5",
+      "title": "Calculating the simple iteration progress"
+    },
+    {
+      "id": "calculating-the-current-iteration",
+      "level": "4",
+      "title": "Calculating the current iteration"
+    },
+    {
+      "id": "direction-control",
+      "level": "3",
+      "title": "Direction control"
+    },
+    {
+      "id": "calculating-the-directed-progress",
+      "level": "4",
+      "title": "Calculating the directed progress"
+    },
+    {
+      "id": "time-transformations",
+      "level": "3",
+      "title": "Time transformations"
+    },
+    {
+      "id": "calculating-the-transformed-progress",
+      "level": "4",
+      "title": "Calculating the transformed progress"
+    },
+    {
+      "id": "the-iteration-progress",
+      "level": "3",
+      "title": "The iteration progress"
+    },
+    {
+      "id": "animation-model",
+      "level": "2",
+      "title": "Animation model"
+    },
+    {
+      "id": "introduction-to-the-animation-model",
+      "level": "3",
+      "title": "Introduction"
+    },
+    {
+      "id": "animating-properties",
+      "level": "3",
+      "title": "Animating properties"
+    },
+    {
+      "id": "custom-properties",
+      "level": "4",
+      "title": "Custom Properties"
+    },
+    {
+      "id": "keyframe-effects",
+      "level": "3",
+      "title": "Keyframe effects"
+    },
+    {
+      "id": "keyframes-section",
+      "level": "4",
+      "title": "Keyframes"
+    },
+    {
+      "id": "calculating-computed-keyframes",
+      "level": "4",
+      "title": "Calculating computed keyframes"
+    },
+    {
+      "id": "the-effect-value-of-a-keyframe-animation-effect",
+      "level": "4",
+      "title": "The effect value of\n  a keyframe effect"
+    },
+    {
+      "id": "combining-effects",
+      "level": "3",
+      "title": "Combining effects"
+    },
+    {
+      "id": "animation-classes",
+      "level": "4",
+      "title": "Animation classes"
+    },
+    {
+      "id": "the-effect-stack",
+      "level": "4",
+      "title": "The effect stack"
+    },
+    {
+      "id": "calculating-the-result-of-an-effect-stack",
+      "level": "4",
+      "title": "Calculating the result of an effect stack"
+    },
+    {
+      "id": "effect-composition",
+      "level": "4",
+      "title": "Effect composition"
+    },
+    {
+      "id": "applying-the-composited-result",
+      "level": "4",
+      "title": "Applying the composited result"
+    },
+    {
+      "id": "effect-accumulation-section",
+      "level": "3",
+      "title": "Effect accumulation"
+    },
+    {
+      "id": "side-effects-section",
+      "level": "3",
+      "title": "Side effects of animation"
+    },
+    {
+      "id": "programming-interface",
+      "level": "2",
+      "title": "Programming interface"
+    },
+    {
+      "id": "time-values-in-the-programming-interface",
+      "level": "3",
+      "title": "Time values in the programming interface"
+    },
+    {
+      "id": "the-animationtimeline-interface",
+      "level": "3",
+      "title": "The AnimationTimeline interface"
+    },
+    {
+      "id": "the-documenttimeline-interface",
+      "level": "3",
+      "title": "The DocumentTimeline interface"
+    },
+    {
+      "id": "the-animation-interface",
+      "level": "3",
+      "title": "The Animation interface"
+    },
+    {
+      "id": "the-animationplaystate-enumeration",
+      "level": "4",
+      "title": "The AnimationPlayState enumeration"
+    },
+    {
+      "id": "the-animationeffect-interface",
+      "level": "3",
+      "title": "The AnimationEffect interface"
+    },
+    {
+      "id": "the-effecttiming-dictionaries",
+      "level": "4",
+      "title": "The EffectTiming and OptionalEffectTiming dictionaries"
+    },
+    {
+      "id": "the-fillmode-enumeration",
+      "level": "4",
+      "title": "The FillMode enumeration"
+    },
+    {
+      "id": "the-playbackdirection-enumeration",
+      "level": "4",
+      "title": "The PlaybackDirection enumeration"
+    },
+    {
+      "id": "updating-animationeffect-timing",
+      "level": "4",
+      "title": "Updating the timing of an AnimationEffect"
+    },
+    {
+      "id": "the-computedeffecttiming-dictionary",
+      "level": "4",
+      "title": "The ComputedEffectTiming dictionary"
+    },
+    {
+      "id": "the-keyframeeffect-interface",
+      "level": "3",
+      "title": "The KeyframeEffect interface"
+    },
+    {
+      "id": "creating-a-new-keyframeeffect-object",
+      "level": "4",
+      "title": "Creating a new KeyframeEffect object"
+    },
+    {
+      "id": "property-name-conversion",
+      "level": "4",
+      "title": "Property names and IDL names"
+    },
+    {
+      "id": "processing-a-keyframes-argument",
+      "level": "4",
+      "title": "Processing a keyframes argument"
+    },
+    {
+      "id": "the-keyframeeffectoptions-dictionary",
+      "level": "4",
+      "title": "The KeyframeEffectOptions dictionary"
+    },
+    {
+      "id": "the-iterationcompositeoperation-enumeration",
+      "level": "3",
+      "title": "The IterationCompositeOperation enumeration"
+    },
+    {
+      "id": "the-compositeoperation-enumeration",
+      "level": "3",
+      "title": "The CompositeOperation and CompositeOperationOrAuto enumerations"
+    },
+    {
+      "id": "the-animatable-interface-mixin",
+      "level": "3",
+      "title": "The Animatable interface mixin"
+    },
+    {
+      "id": "extensions-to-the-document-interface",
+      "level": "3",
+      "title": "Extensions to the Document interface"
+    },
+    {
+      "id": "extensions-to-the-element-interface",
+      "level": "3",
+      "title": "Extensions to the Element interface"
+    },
+    {
+      "id": "extensions-to-the-pseudoelement-interface",
+      "level": "3",
+      "title": "Extensions to the CSSPseudoElement interface"
+    },
+    {
+      "id": "the-animationplaybackevent-interface",
+      "level": "3",
+      "title": "The AnimationPlaybackEvent interface"
+    },
+    {
+      "id": "model-liveness",
+      "level": "3",
+      "title": "Model liveness"
+    },
+    {
+      "id": "integration-with-media-fragments",
+      "level": "2",
+      "title": "Integration with Media Fragments"
+    },
+    {
+      "id": "interaction-with-page-display",
+      "level": "2",
+      "title": "Interaction with page display"
+    },
+    {
+      "id": "implementation-requirements",
+      "level": "2",
+      "title": "Implementation requirements"
+    },
+    {
+      "id": "precision-of-time-values",
+      "level": "3",
+      "title": "Precision of time values"
+    },
+    {
+      "id": "conformance-criteria",
+      "level": "3",
+      "title": "Conformance criteria"
+    },
+    {
+      "id": "acknowledgements",
+      "level": "2",
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "changes-since-last-publication",
+      "level": "2",
+      "title": "Changes since last publication"
+    },
+    {
+      "id": "animation-types",
+      "level": "2",
+      "title": "Appendix A: Animation types of existing properties"
+    },
+    {
+      "id": "animating-font-weight",
+      "level": "3",
+      "title": "Animation of font-weight"
+    },
+    {
+      "id": "animating-visibility",
+      "level": "3",
+      "title": "Animation of visibility"
+    },
+    {
+      "id": "animating-shadow-lists",
+      "level": "3",
+      "title": "Animation of box-shadow"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformance-classes",
+      "level": "3",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "partial",
+      "level": "3",
+      "title": "Partial implementations"
+    },
+    {
+      "id": "conform-future-proofing",
+      "level": "4",
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "testing",
+      "level": "3",
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "spec": {
+    "title": "CSS Counter Styles Level 3",
+    "url": "https://www.w3.org/TR/css-counter-styles-3/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "CSS Counter Styles Level 3"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "W3C Candidate Recommendation, 14 December 2017"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "counter-styles",
+      "level": "2",
+      "title": "Counter Styles"
+    },
+    {
+      "id": "the-counter-style-rule",
+      "level": "2",
+      "title": "Defining Custom Counter Styles: the @counter-style rule"
+    },
+    {
+      "id": "counter-style-system",
+      "level": "3",
+      "title": "Counter algorithms: the system descriptor"
+    },
+    {
+      "id": "cyclic-system",
+      "level": "4",
+      "title": "Cycling Symbols: the cyclic system"
+    },
+    {
+      "id": "fixed-system",
+      "level": "4",
+      "title": "Exhaustible Symbols: the fixed system"
+    },
+    {
+      "id": "symbolic-system",
+      "level": "4",
+      "title": "Repeating Symbols: the symbolic system"
+    },
+    {
+      "id": "alphabetic-system",
+      "level": "4",
+      "title": "Bijective Numerals: the alphabetic system"
+    },
+    {
+      "id": "numeric-system",
+      "level": "4",
+      "title": "Positional Numerals: the numeric system"
+    },
+    {
+      "id": "additive-system",
+      "level": "4",
+      "title": "Accumulating Numerals: the additive system"
+    },
+    {
+      "id": "extends-system",
+      "level": "4",
+      "title": "Building from Existing Counter Styles: the extends system"
+    },
+    {
+      "id": "counter-style-negative",
+      "level": "3",
+      "title": "Formatting negative values: the negative descriptor"
+    },
+    {
+      "id": "counter-style-prefix",
+      "level": "3",
+      "title": "Symbols before the marker: the prefix descriptor"
+    },
+    {
+      "id": "counter-style-suffix",
+      "level": "3",
+      "title": "Symbols after the marker: the suffix descriptor"
+    },
+    {
+      "id": "counter-style-range",
+      "level": "3",
+      "title": "Limiting the counter scope: the range descriptor"
+    },
+    {
+      "id": "counter-style-pad",
+      "level": "3",
+      "title": "Zero-Padding and Constant-Width Representations: the pad descriptor"
+    },
+    {
+      "id": "counter-style-fallback",
+      "level": "3",
+      "title": "Defining fallback: the fallback descriptor"
+    },
+    {
+      "id": "counter-style-symbols",
+      "level": "3",
+      "title": "Marker characters: the symbols and additive-symbols descriptors"
+    },
+    {
+      "id": "counter-style-speak-as",
+      "level": "3",
+      "title": "Speech Synthesis: the speak-as descriptor"
+    },
+    {
+      "id": "symbols-function",
+      "level": "2",
+      "title": "Defining Anonymous Counter Styles: the symbols() function"
+    },
+    {
+      "id": "extending-css2",
+      "level": "2",
+      "title": "Extending list-style-type, counter(), and counters()"
+    },
+    {
+      "id": "predefined-counters",
+      "level": "2",
+      "title": "Simple Predefined Counter Styles"
+    },
+    {
+      "id": "simple-numeric",
+      "level": "3",
+      "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan"
+    },
+    {
+      "id": "simple-alphabetic",
+      "level": "3",
+      "title": "Alphabetic: lower-alpha, lower-latin, upper-alpha, upper-latin, cjk-earthly-branch, cjk-heavenly-stem, lower-greek, hiragana, hiragana-iroha, katakana, katakana-iroha"
+    },
+    {
+      "id": "simple-symbolic",
+      "level": "3",
+      "title": "Symbolic: disc, circle, square, disclosure-open, disclosure-closed"
+    },
+    {
+      "id": "complex-predefined-counters",
+      "level": "2",
+      "title": "Complex Predefined Counter Styles"
+    },
+    {
+      "id": "complex-cjk",
+      "level": "3",
+      "title": "Longhand East Asian Counter Styles"
+    },
+    {
+      "id": "limited-japanese",
+      "level": "4",
+      "title": "Japanese: japanese-informal and japanese-formal"
+    },
+    {
+      "id": "limited-korean",
+      "level": "4",
+      "title": "Korean: korean-hangul-formal, korean-hanja-informal, and korean-hanja-formal"
+    },
+    {
+      "id": "limited-chinese",
+      "level": "4",
+      "title": "Chinese: simp-chinese-informal, simp-chinese-formal, trad-chinese-informal, and trad-chinese-formal"
+    },
+    {
+      "id": "ethiopic-numeric-counter-style",
+      "level": "3",
+      "title": "Ethiopic Numeric Counter Style: ethiopic-numeric"
+    },
+    {
+      "id": "additional-predefined",
+      "level": "2",
+      "title": "Additional Predefined Counter Styles"
+    },
+    {
+      "id": "apis",
+      "level": "2",
+      "title": "APIs"
+    },
+    {
+      "id": "extentions-to-cssrule-interface",
+      "level": "3",
+      "title": "Extensions to the CSSRule interface"
+    },
+    {
+      "id": "the-csscounterstylerule-interface",
+      "level": "3",
+      "title": "The CSSCounterStyleRule interface"
+    },
+    {
+      "id": "ua-stylesheet",
+      "level": "2",
+      "title": "Sample style sheet for HTML"
+    },
+    {
+      "id": "changes",
+      "level": "2",
+      "title": "Changes"
+    },
+    {
+      "id": "changes-jun-2015",
+      "level": "3",
+      "title": "Changes since the Jun 2015 Candidate Recommendation"
+    },
+    {
+      "id": "changes-feb-2015",
+      "level": "3",
+      "title": "Changes since the Feb 2015 Candidate Recommendation"
+    },
+    {
+      "id": "acknowledgments",
+      "level": "2",
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "priv-sec",
+      "level": "2",
+      "title": "Privacy and Security Considerations"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "document-conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conform-classes",
+      "level": "3",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "conform-responsible",
+      "level": "3",
+      "title": "Requirements for Responsible Implementation of CSS"
+    },
+    {
+      "id": "conform-partial",
+      "level": "4",
+      "title": "Partial Implementations"
+    },
+    {
+      "id": "conform-future-proofing",
+      "level": "4",
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "conform-testing",
+      "level": "4",
+      "title": "Implementations of CR-level Features"
+    },
+    {
+      "id": "cr-exit-criteria",
+      "level": "3",
+      "title": "CR exit criteria"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "level": "2",
+      "title": "Property Index"
+    },
+    {
+      "id": "counter-style-descriptor-table",
+      "level": "3",
+      "title": "@counter-style Descriptors"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    }
+  ]
+}

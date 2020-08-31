@@ -1,0 +1,303 @@
+{
+  "spec": {
+    "title": "Web Bluetooth",
+    "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Web Bluetooth"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Draft Community Group Report, 1 July 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "introduction-examples",
+      "level": "3",
+      "title": "Examples"
+    },
+    {
+      "id": "security-and-privacy",
+      "level": "2",
+      "title": "Security and privacy considerations"
+    },
+    {
+      "id": "device-access-is-powerful",
+      "level": "3",
+      "title": "Device access is powerful"
+    },
+    {
+      "id": "server-takeovers",
+      "level": "3",
+      "title": "Trusted servers can serve malicious code"
+    },
+    {
+      "id": "attacks-on-devices",
+      "level": "3",
+      "title": "Attacks on devices"
+    },
+    {
+      "id": "bluetooth-device-identifiers",
+      "level": "3",
+      "title": "Bluetooth device identifiers"
+    },
+    {
+      "id": "remote-device-identifiers",
+      "level": "4",
+      "title": "Identifiers for remote Bluetooth devices"
+    },
+    {
+      "id": "ua-bluetooth-address",
+      "level": "4",
+      "title": "The UA’s Bluetooth address"
+    },
+    {
+      "id": "availability-fingerprint",
+      "level": "3",
+      "title": "Exposing Bluetooth availability"
+    },
+    {
+      "id": "device-discovery",
+      "level": "2",
+      "title": "Device Discovery"
+    },
+    {
+      "id": "permission-api-integration",
+      "level": "3",
+      "title": "Permission API Integration"
+    },
+    {
+      "id": "availability",
+      "level": "3",
+      "title": "Overall Bluetooth availability"
+    },
+    {
+      "id": "device-representation",
+      "level": "2",
+      "title": "Device Representation"
+    },
+    {
+      "id": "global-device-properties",
+      "level": "3",
+      "title": "Global Bluetooth device properties"
+    },
+    {
+      "id": "bluetoothdevice-interface",
+      "level": "3",
+      "title": "BluetoothDevice"
+    },
+    {
+      "id": "handling-visibility-change",
+      "level": "4",
+      "title": "Handling Visibility Change"
+    },
+    {
+      "id": "handling-full-activity-loss",
+      "level": "4",
+      "title": "Handling Document Loss of Full Activity"
+    },
+    {
+      "id": "advertising-events",
+      "level": "4",
+      "title": "Responding to Advertising Events"
+    },
+    {
+      "id": "bluetoothmanufacturerdatamap",
+      "level": "5",
+      "title": "BluetoothManufacturerDataMap"
+    },
+    {
+      "id": "bluetoothservicedatamap",
+      "level": "5",
+      "title": "BluetoothServiceDataMap"
+    },
+    {
+      "id": "gatt-interaction",
+      "level": "2",
+      "title": "GATT Interaction"
+    },
+    {
+      "id": "information-model",
+      "level": "3",
+      "title": "GATT Information Model"
+    },
+    {
+      "id": "persistence",
+      "level": "4",
+      "title": "Persistence across connections"
+    },
+    {
+      "id": "bluetooth-cache",
+      "level": "4",
+      "title": "The Bluetooth cache"
+    },
+    {
+      "id": "navigating-bluetooth-hierarchy",
+      "level": "4",
+      "title": "Navigating the Bluetooth Hierarchy"
+    },
+    {
+      "id": "identifying-attributes",
+      "level": "4",
+      "title": "Identifying Services, Characteristics, and Descriptors"
+    },
+    {
+      "id": "bluetoothgattremoteserver-interface",
+      "level": "3",
+      "title": "BluetoothRemoteGATTServer"
+    },
+    {
+      "id": "bluetoothgattservice-interface",
+      "level": "3",
+      "title": "BluetoothRemoteGATTService"
+    },
+    {
+      "id": "bluetoothgattcharacteristic-interface",
+      "level": "3",
+      "title": "BluetoothRemoteGATTCharacteristic"
+    },
+    {
+      "id": "characteristicproperties-interface",
+      "level": "4",
+      "title": "BluetoothCharacteristicProperties"
+    },
+    {
+      "id": "bluetoothgattdescriptor-interface",
+      "level": "3",
+      "title": "BluetoothRemoteGATTDescriptor"
+    },
+    {
+      "id": "events",
+      "level": "3",
+      "title": "Events"
+    },
+    {
+      "id": "bluetooth-tree",
+      "level": "4",
+      "title": "Bluetooth Tree"
+    },
+    {
+      "id": "event-types",
+      "level": "4",
+      "title": "Event types"
+    },
+    {
+      "id": "disconnection-events",
+      "level": "4",
+      "title": "Responding to Disconnection"
+    },
+    {
+      "id": "notification-events",
+      "level": "4",
+      "title": "Responding to Notifications and Indications"
+    },
+    {
+      "id": "service-change-events",
+      "level": "4",
+      "title": "Responding to Service Changes"
+    },
+    {
+      "id": "idl-event-handlers",
+      "level": "4",
+      "title": "IDL event handlers"
+    },
+    {
+      "id": "error-handling",
+      "level": "3",
+      "title": "Error handling"
+    },
+    {
+      "id": "uuids",
+      "level": "2",
+      "title": "UUIDs"
+    },
+    {
+      "id": "standardized-uuids",
+      "level": "3",
+      "title": "Standardized UUIDs"
+    },
+    {
+      "id": "the-gatt-blocklist",
+      "level": "2",
+      "title": "The GATT Blocklist"
+    },
+    {
+      "id": "navigator-extensions",
+      "level": "2",
+      "title": "Extensions to the Navigator Interface"
+    },
+    {
+      "id": "terminology",
+      "level": "2",
+      "title": "Terminology and Conventions"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

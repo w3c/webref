@@ -1,0 +1,1577 @@
+{
+  "spec": {
+    "title": "\"MediaStream Image Capture\"",
+    "url": "https://www.w3.org/TR/image-capture/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "ImageCapture": {
+        "type": "interface",
+        "name": "ImageCapture",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "takePhoto",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Blob"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "photoSettings",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PhotoSettings"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getPhotoCapabilities",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PhotoCapabilities"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getPhotoSettings",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PhotoSettings"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "grabFrame",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ImageBitmap"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "track",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaStreamTrack"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Constructor",
+            "rhs": null,
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "videoTrack",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaStreamTrack"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ]
+          }
+        ],
+        "partial": false
+      },
+      "PhotoCapabilities": {
+        "type": "interface",
+        "name": "PhotoCapabilities",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "redEyeReduction",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RedEyeReduction"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "imageHeight",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaSettingsRange"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "imageWidth",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaSettingsRange"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "fillLightMode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "FillLightMode"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "PhotoSettings": {
+        "type": "dictionary",
+        "name": "PhotoSettings",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "fillLightMode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "FillLightMode"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "imageHeight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "imageWidth",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "redEyeReduction",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MediaSettingsRange": {
+        "type": "interface",
+        "name": "MediaSettingsRange",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "max",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "min",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "step",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "RedEyeReduction": {
+        "type": "enum",
+        "name": "RedEyeReduction",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "never"
+          },
+          {
+            "type": "enum-value",
+            "value": "always"
+          },
+          {
+            "type": "enum-value",
+            "value": "controllable"
+          }
+        ],
+        "extAttrs": []
+      },
+      "FillLightMode": {
+        "type": "enum",
+        "name": "FillLightMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "auto"
+          },
+          {
+            "type": "enum-value",
+            "value": "off"
+          },
+          {
+            "type": "enum-value",
+            "value": "flash"
+          }
+        ],
+        "extAttrs": []
+      },
+      "ConstrainPoint2DParameters": {
+        "type": "dictionary",
+        "name": "ConstrainPoint2DParameters",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "exact",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Point2D"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "ideal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Point2D"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ConstrainPoint2D": {
+        "type": "typedef",
+        "name": "ConstrainPoint2D",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Point2D"
+                }
+              ]
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ConstrainPoint2DParameters"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "MeteringMode": {
+        "type": "enum",
+        "name": "MeteringMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "none"
+          },
+          {
+            "type": "enum-value",
+            "value": "manual"
+          },
+          {
+            "type": "enum-value",
+            "value": "single-shot"
+          },
+          {
+            "type": "enum-value",
+            "value": "continuous"
+          }
+        ],
+        "extAttrs": []
+      },
+      "Point2D": {
+        "type": "dictionary",
+        "name": "Point2D",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "x",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0.0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "y",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "0.0"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "MediaTrackSupportedConstraints": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackSupportedConstraints",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "whiteBalanceMode",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "exposureMode",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focusMode",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "pointsOfInterest",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "exposureCompensation",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "colorTemperature",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "iso",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "brightness",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "contrast",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "saturation",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "sharpness",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focusDistance",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "zoom",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "torch",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackCapabilities": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackCapabilities",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "whiteBalanceMode",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "sequence",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "dictionary-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  }
+                ]
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "exposureMode",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "sequence",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "dictionary-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  }
+                ]
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focusMode",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "sequence",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "dictionary-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  }
+                ]
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "exposureCompensation",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MediaSettingsRange"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "colorTemperature",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MediaSettingsRange"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "iso",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MediaSettingsRange"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "brightness",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MediaSettingsRange"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "contrast",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MediaSettingsRange"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "saturation",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MediaSettingsRange"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "sharpness",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MediaSettingsRange"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focusDistance",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MediaSettingsRange"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "zoom",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MediaSettingsRange"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "torch",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackConstraintSet": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackConstraintSet",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "whiteBalanceMode",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDOMString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "exposureMode",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDOMString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focusMode",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDOMString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "pointsOfInterest",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainPoint2D"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "exposureCompensation",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "colorTemperature",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "iso",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "brightness",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "contrast",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "saturation",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "sharpness",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focusDistance",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "zoom",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDouble"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "torch",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainBoolean"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackSettings": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackSettings",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "whiteBalanceMode",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "exposureMode",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focusMode",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "pointsOfInterest",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "sequence",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "dictionary-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "Point2D"
+                  }
+                ]
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "exposureCompensation",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "colorTemperature",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "iso",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "brightness",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "contrast",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "saturation",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "sharpness",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "focusDistance",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "zoom",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "double"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "torch",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "ImageCapture": [
+        "MediaStreamTrack",
+        "Blob",
+        "PhotoSettings",
+        "PhotoCapabilities",
+        "ImageBitmap"
+      ],
+      "PhotoCapabilities": [
+        "RedEyeReduction",
+        "MediaSettingsRange",
+        "FillLightMode"
+      ],
+      "PhotoSettings": [
+        "FillLightMode"
+      ],
+      "MediaSettingsRange": [],
+      "MediaTrackSupportedConstraints": [],
+      "MediaTrackCapabilities": [
+        "MediaSettingsRange"
+      ],
+      "MediaTrackConstraintSet": [
+        "ConstrainDOMString",
+        "ConstrainPoint2D",
+        "ConstrainDouble",
+        "ConstrainBoolean"
+      ],
+      "MediaTrackSettings": [
+        "Point2D"
+      ],
+      "ConstrainPoint2DParameters": [
+        "Point2D"
+      ],
+      "Point2D": []
+    },
+    "externalDependencies": [
+      "MediaStreamTrack",
+      "Blob",
+      "ImageBitmap",
+      "MediaTrackSupportedConstraints",
+      "MediaTrackCapabilities",
+      "MediaTrackConstraintSet",
+      "ConstrainDOMString",
+      "ConstrainDouble",
+      "ConstrainBoolean",
+      "MediaTrackSettings"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

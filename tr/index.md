@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 24, 2020
+% August 31, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -48,7 +48,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/change-password-url/](https://wicg.github.io/change-password-url/)
 - Crawled URL: [https://wicg.github.io/change-password-url/](https://wicg.github.io/change-password-url/)
-- Crawled version: 12 June 2020
+- Crawled version: 25 August 2020
 - Editor's Draft: [https://wicg.github.io/change-password-url/](https://wicg.github.io/change-password-url/)
 - Shortname: change-password-url
 
@@ -758,19 +758,19 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Console Standard {data-spec=true data-ok=true}
+## Console Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
 - Crawled URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
-- Crawled version: 29 June 2020
+- Crawled version: 24 August 2020
 - Editor's Draft: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
 - Shortname: console
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `undefined`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -951,7 +951,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
-- Crawled version: 18 August 2020
+- Crawled version: 26 August 2020
 - Editor's Draft: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Shortname: cookie-store
 
@@ -2086,6 +2086,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/css-content-3/)
+- [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
@@ -2379,7 +2380,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-extensions-1/](https://drafts.csswg.org/css-extensions-1/)
 - Crawled URL: [https://drafts.csswg.org/css-extensions-1/](https://drafts.csswg.org/css-extensions-1/)
-- Crawled version: 9 November 2017
+- Crawled version: 26 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-extensions-1/](https://drafts.csswg.org/css-extensions-1/)
 - Shortname: css-extensions-1
 
@@ -3043,13 +3044,13 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Inline Layout Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## CSS Inline Layout Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Crawled URL: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
-- Crawled version: 18 June 2020
+- Crawled version: 27 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
 - Latest published version: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Shortname: css-inline-3
@@ -3058,6 +3059,11 @@ No informative reference to this spec from other specs.
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-text/`](https://www.w3.org/TR/css-text/)
+     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3510,7 +3516,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
 - Crawled URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
-- Crawled version: 9 March 2019
+- Crawled version: 26 August 2020
 - Editor's Draft: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
 - Shortname: css-nesting-1
 
@@ -5995,7 +6001,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 21 August 2020
+- Crawled version: 28 August 2020
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -6680,7 +6686,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 21 August 2020
+- Crawled version: 30 August 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -6904,6 +6910,7 @@ Normative references to this spec from:
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
+- [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 - [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -7263,6 +7270,7 @@ Normative references to this spec from:
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
+- [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -7513,7 +7521,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Crawled URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
-- Crawled version: 7 August 2020
+- Crawled version: 30 August 2020
 - Editor's Draft: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Shortname: webpackage
 
@@ -7643,7 +7651,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Crawled URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
-- Crawled version: 24 August 2020
+- Crawled version: 27 August 2020
 - Editor's Draft: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Shortname: mathml-core
 
@@ -8175,7 +8183,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Crawled URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
-- Crawled version: 20 August 2020
+- Crawled version: 25 August 2020
 - Editor's Draft: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Shortname: native-file-system
 
@@ -8385,7 +8393,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/sms-one-time-codes/](https://wicg.github.io/sms-one-time-codes/)
 - Crawled URL: [https://wicg.github.io/sms-one-time-codes/](https://wicg.github.io/sms-one-time-codes/)
-- Crawled version: 15 June 2020
+- Crawled version: 25 August 2020
 - Editor's Draft: [https://wicg.github.io/sms-one-time-codes/](https://wicg.github.io/sms-one-time-codes/)
 - Shortname: sms-one-time-codes
 
@@ -8876,7 +8884,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Crawled URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
-- Crawled version: 18 August 2020
+- Crawled version: 27 August 2020
 - Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Shortname: portals
 
@@ -9860,6 +9868,7 @@ Normative references to this spec from:
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
+- [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 
 Informative references to this spec from:
 
@@ -9908,7 +9917,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 18 August 2020
+- Crawled version: 28 August 2020
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -10162,19 +10171,18 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Text Fragments {data-spec=true data-anomaly=true data-unknownExposedNames=true data-missingLinkRef=true}
+## Text Fragments {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/scroll-to-text-fragment/](https://wicg.github.io/scroll-to-text-fragment/)
 - Crawled URL: [https://wicg.github.io/scroll-to-text-fragment/](https://wicg.github.io/scroll-to-text-fragment/)
-- Crawled version: 13 August 2020
+- Crawled version: 28 August 2020
 - Editor's Draft: [https://wicg.github.io/scroll-to-text-fragment/](https://wicg.github.io/scroll-to-text-fragment/)
 - Shortname: scroll-to-text-fragment
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown [Exposed] names used: `Document`
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec-fetch-metadata/`](https://w3c.github.io/webappsec-fetch-metadata/)
      * [`https://w3c.github.io/selection-api/`](https://w3c.github.io/selection-api/)
@@ -10508,7 +10516,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
 - Crawled URL: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
-- Crawled version: 18 August 2020
+- Crawled version: 24 August 2020
 - Editor's Draft: [https://url.spec.whatwg.org/](https://url.spec.whatwg.org/)
 - Shortname: url
 
@@ -10981,7 +10989,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
 - Crawled URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
-- Crawled version: 23 July 2020
+- Crawled version: 26 August 2020
 - Editor's Draft: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
 - Shortname: web-locks
 
@@ -11094,19 +11102,20 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web Share API {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## Web Share API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Crawled URL: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
-- Crawled version: 04 August 2020
+- Crawled version: 27 August 2020
 - Editor's Draft: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
 - Latest published version: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Shortname: web-share
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `undefined`
 - Missing references for links: 
      * [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/)
 
@@ -11246,7 +11255,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webdriver2/](https://www.w3.org/TR/webdriver2/)
 - Crawled URL: [https://www.w3.org/TR/webdriver2/](https://www.w3.org/TR/webdriver2/)
-- Crawled version: 17 July 2020
+- Crawled version: 24 August 2020
 - Editor's Draft: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
 - Latest published version: [https://www.w3.org/TR/webdriver2/](https://www.w3.org/TR/webdriver2/)
 - Shortname: webdriver2
@@ -11364,7 +11373,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 20 August 2020
+- Crawled version: 28 August 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -11604,6 +11613,7 @@ Normative references to this spec from:
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/)
+- [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 - [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
@@ -11622,13 +11632,13 @@ Informative references to this spec from:
 - [WebIDL Level 1](https://www.w3.org/TR/WebIDL-1/)
 
 
-## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-inconsistentRef=true}
+## WebRTC 1.0: Real-time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Crawled version: 13 December 2019
+- Crawled version: 25 August 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Shortname: webrtc
@@ -11638,6 +11648,8 @@ Informative references to this spec from:
 - Unknown WebIDL names used: `AlgorithmIdentifier`, `DOMException`, `DOMHighResTimeStamp`
 - WebIDL names also defined elsewhere: 
     * `RTCIceParameters` also defined in [IceTransport Extensions for WebRTC](https://w3c.github.io/webrtc-ice/)
+- Missing references for links: 
+     * [`https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html`](https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webrtc-stats/`](https://w3c.github.io/webrtc-stats/), related reference "WEBRTC-STATS" uses URL [`https://www.w3.org/TR/webrtc-stats/`](https://www.w3.org/TR/webrtc-stats/)
 
@@ -11843,6 +11855,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
+- [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 Informative references to this spec from:
@@ -11886,6 +11899,7 @@ Normative references to this spec from:
 
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
+- [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
@@ -11940,6 +11954,28 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/), related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## WebXR Hand Input Module - Level 1 {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
+- Crawled URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
+- Crawled version: 16 August 2020
+- Editor's Draft: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
+- Shortname: webxr-hand-input
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
 ### Known dependencies on this specification {.dependencies}
 

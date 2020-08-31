@@ -1,0 +1,233 @@
+{
+  "spec": {
+    "title": "Pointer Lock 2.0",
+    "url": "https://www.w3.org/TR/pointerlock-2/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {},
+    "idlExtendedNames": {
+      "Element": [
+        {
+          "type": "interface",
+          "name": "Element",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "requestPointerLock",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "void"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "Document": [
+        {
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "onpointerlockchange",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onpointerlockerror",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "operation",
+              "name": "exitPointerLock",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "void"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "DocumentOrShadowRoot": [
+        {
+          "type": "interface mixin",
+          "name": "DocumentOrShadowRoot",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "pointerLockElement",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "Element"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MouseEvent": [
+        {
+          "type": "interface",
+          "name": "MouseEvent",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "movementX",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "long"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "attribute",
+              "name": "movementY",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "long"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MouseEventInit": [
+        {
+          "type": "dictionary",
+          "name": "MouseEventInit",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "movementX",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "long"
+              },
+              "default": {
+                "type": "number",
+                "value": "0"
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "movementY",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "long"
+              },
+              "default": {
+                "type": "number",
+                "value": "0"
+              },
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "Element": [],
+      "Document": [
+        "EventHandler"
+      ],
+      "DocumentOrShadowRoot": [
+        "Element"
+      ],
+      "MouseEvent": [],
+      "MouseEventInit": []
+    },
+    "externalDependencies": [
+      "Element",
+      "Document",
+      "EventHandler",
+      "DocumentOrShadowRoot",
+      "MouseEvent",
+      "MouseEventInit"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

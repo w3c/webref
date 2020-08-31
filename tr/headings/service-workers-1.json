@@ -1,0 +1,853 @@
+{
+  "spec": {
+    "title": "Service Workers 1",
+    "url": "https://www.w3.org/TR/service-workers-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Service Workers 1"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "W3C Candidate Recommendation, 19 November 2019"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "motivations",
+      "level": "2",
+      "title": "Motivations"
+    },
+    {
+      "id": "model",
+      "level": "2",
+      "title": "Model"
+    },
+    {
+      "id": "service-worker-concept",
+      "level": "3",
+      "title": "Service Worker"
+    },
+    {
+      "id": "service-worker-lifetime",
+      "level": "4",
+      "title": "Lifetime"
+    },
+    {
+      "id": "service-worker-events",
+      "level": "4",
+      "title": "Events"
+    },
+    {
+      "id": "service-worker-registration-concept",
+      "level": "3",
+      "title": "Service Worker Registration"
+    },
+    {
+      "id": "service-worker-registration-lifetime",
+      "level": "4",
+      "title": "Lifetime"
+    },
+    {
+      "id": "service-worker-client-concept",
+      "level": "3",
+      "title": "Service Worker Client"
+    },
+    {
+      "id": "control-and-use",
+      "level": "3",
+      "title": "Control and Use"
+    },
+    {
+      "id": "control-and-use-window-client",
+      "level": "4",
+      "title": "The window client case"
+    },
+    {
+      "id": "control-and-use-worker-client",
+      "level": "4",
+      "title": "The worker client case"
+    },
+    {
+      "id": "task-sources",
+      "level": "3",
+      "title": "Task Sources"
+    },
+    {
+      "id": "user-agent-shutdown",
+      "level": "3",
+      "title": "User Agent Shutdown"
+    },
+    {
+      "id": "document-context",
+      "level": "2",
+      "title": "Client Context"
+    },
+    {
+      "id": "serviceworker-interface",
+      "level": "3",
+      "title": "ServiceWorker"
+    },
+    {
+      "id": "service-worker-creation",
+      "level": "4",
+      "title": "Getting ServiceWorker instances"
+    },
+    {
+      "id": "service-worker-url",
+      "level": "4",
+      "title": "scriptURL"
+    },
+    {
+      "id": "service-worker-state",
+      "level": "4",
+      "title": "state"
+    },
+    {
+      "id": "service-worker-postmessage",
+      "level": "4",
+      "title": "postMessage(message, transfer)"
+    },
+    {
+      "id": "service-worker-event-handler",
+      "level": "4",
+      "title": "Event handler"
+    },
+    {
+      "id": "serviceworkerregistration-interface",
+      "level": "3",
+      "title": "ServiceWorkerRegistration"
+    },
+    {
+      "id": "service-worker-registration-creation",
+      "level": "4",
+      "title": "Getting ServiceWorkerRegistration instances"
+    },
+    {
+      "id": "navigator-service-worker-installing",
+      "level": "4",
+      "title": "installing"
+    },
+    {
+      "id": "navigator-service-worker-waiting",
+      "level": "4",
+      "title": "waiting"
+    },
+    {
+      "id": "navigator-service-worker-active",
+      "level": "4",
+      "title": "active"
+    },
+    {
+      "id": "service-worker-registration-scope",
+      "level": "4",
+      "title": "scope"
+    },
+    {
+      "id": "service-worker-registration-updateviacache",
+      "level": "4",
+      "title": "updateViaCache"
+    },
+    {
+      "id": "service-worker-registration-update",
+      "level": "4",
+      "title": "update()"
+    },
+    {
+      "id": "navigator-service-worker-unregister",
+      "level": "4",
+      "title": "unregister()"
+    },
+    {
+      "id": "service-worker-registration-event-handler",
+      "level": "4",
+      "title": "Event handler"
+    },
+    {
+      "id": "navigator-serviceworker",
+      "level": "3",
+      "title": "navigator.serviceWorker"
+    },
+    {
+      "id": "serviceworkercontainer-interface",
+      "level": "3",
+      "title": "ServiceWorkerContainer"
+    },
+    {
+      "id": "navigator-service-worker-controller",
+      "level": "4",
+      "title": "controller"
+    },
+    {
+      "id": "navigator-service-worker-ready",
+      "level": "4",
+      "title": "ready"
+    },
+    {
+      "id": "navigator-service-worker-register",
+      "level": "4",
+      "title": "register(scriptURL, options)"
+    },
+    {
+      "id": "navigator-service-worker-getRegistration",
+      "level": "4",
+      "title": "getRegistration(clientURL)"
+    },
+    {
+      "id": "navigator-service-worker-getRegistrations",
+      "level": "4",
+      "title": "getRegistrations()"
+    },
+    {
+      "id": "navigator-service-worker-startMessages",
+      "level": "4",
+      "title": "startMessages()"
+    },
+    {
+      "id": "service-worker-container-event-handlers",
+      "level": "4",
+      "title": "Event handlers"
+    },
+    {
+      "id": "document-context-events",
+      "level": "3",
+      "title": "Events"
+    },
+    {
+      "id": "execution-context",
+      "level": "2",
+      "title": "Execution Context"
+    },
+    {
+      "id": "serviceworkerglobalscope-interface",
+      "level": "3",
+      "title": "ServiceWorkerGlobalScope"
+    },
+    {
+      "id": "service-worker-global-scope-clients",
+      "level": "4",
+      "title": "clients"
+    },
+    {
+      "id": "service-worker-global-scope-registration",
+      "level": "4",
+      "title": "registration"
+    },
+    {
+      "id": "service-worker-global-scope-skipwaiting",
+      "level": "4",
+      "title": "skipWaiting()"
+    },
+    {
+      "id": "service-worker-global-scope-event-handlers",
+      "level": "4",
+      "title": "Event handlers"
+    },
+    {
+      "id": "client-interface",
+      "level": "3",
+      "title": "Client"
+    },
+    {
+      "id": "client-url",
+      "level": "4",
+      "title": "url"
+    },
+    {
+      "id": "client-frametype",
+      "level": "4",
+      "title": "frameType"
+    },
+    {
+      "id": "client-id",
+      "level": "4",
+      "title": "id"
+    },
+    {
+      "id": "client-type",
+      "level": "4",
+      "title": "type"
+    },
+    {
+      "id": "client-postmessage",
+      "level": "4",
+      "title": "postMessage(message, transfer)"
+    },
+    {
+      "id": "client-visibilitystate",
+      "level": "4",
+      "title": "visibilityState"
+    },
+    {
+      "id": "client-focused",
+      "level": "4",
+      "title": "focused"
+    },
+    {
+      "id": "client-ancestororigins",
+      "level": "4",
+      "title": "ancestorOrigins"
+    },
+    {
+      "id": "client-focus",
+      "level": "4",
+      "title": "focus()"
+    },
+    {
+      "id": "client-navigate",
+      "level": "4",
+      "title": "navigate(url)"
+    },
+    {
+      "id": "clients-interface",
+      "level": "3",
+      "title": "Clients"
+    },
+    {
+      "id": "clients-get",
+      "level": "4",
+      "title": "get(id)"
+    },
+    {
+      "id": "clients-matchall",
+      "level": "4",
+      "title": "matchAll(options)"
+    },
+    {
+      "id": "clients-openwindow",
+      "level": "4",
+      "title": "openWindow(url)"
+    },
+    {
+      "id": "clients-claim",
+      "level": "4",
+      "title": "claim()"
+    },
+    {
+      "id": "extendableevent-interface",
+      "level": "3",
+      "title": "ExtendableEvent"
+    },
+    {
+      "id": "wait-until-method",
+      "level": "4",
+      "title": "event.waitUntil(f)"
+    },
+    {
+      "id": "fetchevent-interface",
+      "level": "3",
+      "title": "FetchEvent"
+    },
+    {
+      "id": "fetch-event-request",
+      "level": "4",
+      "title": "event.request"
+    },
+    {
+      "id": "fetch-event-clientid",
+      "level": "4",
+      "title": "event.clientId"
+    },
+    {
+      "id": "fetch-event-respondwith",
+      "level": "4",
+      "title": "event.respondWith(r)"
+    },
+    {
+      "id": "extendablemessageevent-interface",
+      "level": "3",
+      "title": "ExtendableMessageEvent"
+    },
+    {
+      "id": "extendablemessage-event-data",
+      "level": "4",
+      "title": "event.data"
+    },
+    {
+      "id": "extendablemessage-event-origin",
+      "level": "4",
+      "title": "event.origin"
+    },
+    {
+      "id": "extendablemessage-event-lasteventid",
+      "level": "4",
+      "title": "event.lastEventId"
+    },
+    {
+      "id": "extendablemessage-event-source",
+      "level": "4",
+      "title": "event.source"
+    },
+    {
+      "id": "extendablemessage-event-ports",
+      "level": "4",
+      "title": "event.ports"
+    },
+    {
+      "id": "execution-context-events",
+      "level": "3",
+      "title": "Events"
+    },
+    {
+      "id": "cache-objects",
+      "level": "2",
+      "title": "Caches"
+    },
+    {
+      "id": "cache-constructs",
+      "level": "3",
+      "title": "Constructs"
+    },
+    {
+      "id": "cache-lifetimes",
+      "level": "3",
+      "title": "Understanding Cache Lifetimes"
+    },
+    {
+      "id": "self-caches",
+      "level": "3",
+      "title": "self.caches"
+    },
+    {
+      "id": "global-caches",
+      "level": "4",
+      "title": "caches"
+    },
+    {
+      "id": "cache-interface",
+      "level": "3",
+      "title": "Cache"
+    },
+    {
+      "id": "cache-match",
+      "level": "4",
+      "title": "match(request, options)"
+    },
+    {
+      "id": "cache-matchall",
+      "level": "4",
+      "title": "matchAll(request, options)"
+    },
+    {
+      "id": "cache-add",
+      "level": "4",
+      "title": "add(request)"
+    },
+    {
+      "id": "cache-addAll",
+      "level": "4",
+      "title": "addAll(requests)"
+    },
+    {
+      "id": "cache-put",
+      "level": "4",
+      "title": "put(request, response)"
+    },
+    {
+      "id": "cache-delete",
+      "level": "4",
+      "title": "delete(request, options)"
+    },
+    {
+      "id": "cache-keys",
+      "level": "4",
+      "title": "keys(request, options)"
+    },
+    {
+      "id": "cachestorage-interface",
+      "level": "3",
+      "title": "CacheStorage"
+    },
+    {
+      "id": "cache-storage-match",
+      "level": "4",
+      "title": "match(request, options)"
+    },
+    {
+      "id": "cache-storage-has",
+      "level": "4",
+      "title": "has(cacheName)"
+    },
+    {
+      "id": "cache-storage-open",
+      "level": "4",
+      "title": "open(cacheName)"
+    },
+    {
+      "id": "cache-storage-delete",
+      "level": "4",
+      "title": "delete(cacheName)"
+    },
+    {
+      "id": "cache-storage-keys",
+      "level": "4",
+      "title": "keys()"
+    },
+    {
+      "id": "security-considerations",
+      "level": "2",
+      "title": "Security Considerations"
+    },
+    {
+      "id": "secure-context",
+      "level": "3",
+      "title": "Secure Context"
+    },
+    {
+      "id": "content-security-policy",
+      "level": "3",
+      "title": "Content Security Policy"
+    },
+    {
+      "id": "origin-relativity",
+      "level": "3",
+      "title": "Origin Relativity"
+    },
+    {
+      "id": "origin-restriction",
+      "level": "4",
+      "title": "Origin restriction"
+    },
+    {
+      "id": "importscripts",
+      "level": "4",
+      "title": "importScripts(urls)"
+    },
+    {
+      "id": "cross-origin-resources",
+      "level": "3",
+      "title": "Cross-Origin Resources and CORS"
+    },
+    {
+      "id": "path-restriction",
+      "level": "3",
+      "title": "Path restriction"
+    },
+    {
+      "id": "script-request",
+      "level": "3",
+      "title": "Service worker script request"
+    },
+    {
+      "id": "implementer-concerns",
+      "level": "3",
+      "title": "Implementer Concerns"
+    },
+    {
+      "id": "privacy",
+      "level": "3",
+      "title": "Privacy"
+    },
+    {
+      "id": "extensibility",
+      "level": "2",
+      "title": "Extensibility"
+    },
+    {
+      "id": "extension-to-service-worker-registration",
+      "level": "3",
+      "title": "Define API bound to Service Worker Registration"
+    },
+    {
+      "id": "extension-to-extendable-event",
+      "level": "3",
+      "title": "Define Functional Event"
+    },
+    {
+      "id": "extension-to-service-worker-global-scope",
+      "level": "3",
+      "title": "Define Event Handler"
+    },
+    {
+      "id": "firing-functional-events",
+      "level": "3",
+      "title": "Firing Functional Events"
+    },
+    {
+      "id": "algorithms",
+      "level": "2",
+      "title": "Appendix A: Algorithms"
+    },
+    {
+      "id": "create-job-algorithm",
+      "level": "3",
+      "title": "Create Job"
+    },
+    {
+      "id": "schedule-job-algorithm",
+      "level": "3",
+      "title": "Schedule Job"
+    },
+    {
+      "id": "run-job-algorithm",
+      "level": "3",
+      "title": "Run Job"
+    },
+    {
+      "id": "finish-job-algorithm",
+      "level": "3",
+      "title": "Finish Job"
+    },
+    {
+      "id": "resolve-job-promise-algorithm",
+      "level": "3",
+      "title": "Resolve Job Promise"
+    },
+    {
+      "id": "reject-job-promise-algorithm",
+      "level": "3",
+      "title": "Reject Job Promise"
+    },
+    {
+      "id": "register-algorithm",
+      "level": "3",
+      "title": "Register"
+    },
+    {
+      "id": "update-algorithm",
+      "level": "3",
+      "title": "Update"
+    },
+    {
+      "id": "soft-update-algorithm",
+      "level": "3",
+      "title": "Soft Update"
+    },
+    {
+      "id": "installation-algorithm",
+      "level": "3",
+      "title": "Install"
+    },
+    {
+      "id": "activation-algorithm",
+      "level": "3",
+      "title": "Activate"
+    },
+    {
+      "id": "try-activate-algorithm",
+      "level": "3",
+      "title": "Try Activate"
+    },
+    {
+      "id": "run-service-worker-algorithm",
+      "level": "3",
+      "title": "Run Service Worker"
+    },
+    {
+      "id": "terminate-service-worker-algorithm",
+      "level": "3",
+      "title": "Terminate Service Worker"
+    },
+    {
+      "id": "on-fetch-request-algorithm",
+      "level": "3",
+      "title": "Handle Fetch"
+    },
+    {
+      "id": "should-skip-event-algorithm",
+      "level": "3",
+      "title": "Should Skip Event"
+    },
+    {
+      "id": "fire-functional-event-algorithm",
+      "level": "3",
+      "title": "Fire Functional Event"
+    },
+    {
+      "id": "on-client-unload-algorithm",
+      "level": "3",
+      "title": "Handle Service Worker Client Unload"
+    },
+    {
+      "id": "on-user-agent-shutdown-algorithm",
+      "level": "3",
+      "title": "Handle User Agent Shutdown"
+    },
+    {
+      "id": "update-service-worker-extended-events-set-algorithm",
+      "level": "3",
+      "title": "Update Service Worker Extended Events Set"
+    },
+    {
+      "id": "unregister-algorithm",
+      "level": "3",
+      "title": "Unregister"
+    },
+    {
+      "id": "set-registration-algorithm",
+      "level": "3",
+      "title": "Set Registration"
+    },
+    {
+      "id": "clear-registration-algorithm",
+      "level": "3",
+      "title": "Clear Registration"
+    },
+    {
+      "id": "try-clear-registration-algorithm",
+      "level": "3",
+      "title": "Try Clear Registration"
+    },
+    {
+      "id": "update-registration-state-algorithm",
+      "level": "3",
+      "title": "Update Registration State"
+    },
+    {
+      "id": "update-state-algorithm",
+      "level": "3",
+      "title": "Update Worker State"
+    },
+    {
+      "id": "notify-controller-change-algorithm",
+      "level": "3",
+      "title": "Notify Controller Change"
+    },
+    {
+      "id": "scope-match-algorithm",
+      "level": "3",
+      "title": "Match Service Worker Registration"
+    },
+    {
+      "id": "get-registration-algorithm",
+      "level": "3",
+      "title": "Get Registration"
+    },
+    {
+      "id": "get-newest-worker-algorithm",
+      "level": "3",
+      "title": "Get Newest Worker"
+    },
+    {
+      "id": "service-worker-has-no-pending-events-algorithm",
+      "level": "3",
+      "title": "Service Worker Has No Pending Events"
+    },
+    {
+      "id": "create-client-algorithm",
+      "level": "3",
+      "title": "Create Client"
+    },
+    {
+      "id": "create-windowclient-algorithm",
+      "level": "3",
+      "title": "Create Window Client"
+    },
+    {
+      "id": "get-frametype-algorithm",
+      "level": "3",
+      "title": "Get Frame Type"
+    },
+    {
+      "id": "resolve-get-client-promise-algorithm",
+      "level": "3",
+      "title": "Resolve Get Client Promise"
+    },
+    {
+      "id": "query-cache-algorithm",
+      "level": "3",
+      "title": "Query Cache"
+    },
+    {
+      "id": "request-matches-cached-item-algorithm",
+      "level": "3",
+      "title": "Request Matches Cached Item"
+    },
+    {
+      "id": "batch-cache-operations-algorithm",
+      "level": "3",
+      "title": "Batch Cache Operations"
+    },
+    {
+      "id": "extended-http-headers",
+      "level": "2",
+      "title": "Appendix B: Extended HTTP headers"
+    },
+    {
+      "id": "service-worker-script-request",
+      "level": "3",
+      "title": "Service Worker Script Request"
+    },
+    {
+      "id": "service-worker-script-response",
+      "level": "3",
+      "title": "Service Worker Script Response"
+    },
+    {
+      "id": "syntax",
+      "level": "3",
+      "title": "Syntax"
+    },
+    {
+      "id": "acknowledgements",
+      "level": "2",
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "level": "3",
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    }
+  ]
+}

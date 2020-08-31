@@ -1,0 +1,268 @@
+{
+  "spec": {
+    "title": "Background Fetch",
+    "url": "https://wicg.github.io/background-fetch/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Background Fetch"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "Draft Community Group Report, 3 June 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "realms",
+      "level": "2",
+      "title": "Realms"
+    },
+    {
+      "id": "infrastructure",
+      "level": "2",
+      "title": "Infrastructure"
+    },
+    {
+      "id": "service-worker-registration-concept-extensions",
+      "level": "3",
+      "title": "Extensions to service worker registration"
+    },
+    {
+      "id": "background-fetch-concept",
+      "level": "3",
+      "title": "Background fetch"
+    },
+    {
+      "id": "background-fetch-display-algorithm",
+      "level": "4",
+      "title": "Display"
+    },
+    {
+      "id": "background-fetch-record-concept",
+      "level": "3",
+      "title": "Background fetch record"
+    },
+    {
+      "id": "background-fetch-response-concept",
+      "level": "3",
+      "title": "Background fetch response"
+    },
+    {
+      "id": "algorithms",
+      "level": "2",
+      "title": "Algorithms"
+    },
+    {
+      "id": "perform-a-background-fetch-algorithm",
+      "level": "3",
+      "title": "Perform a background fetch"
+    },
+    {
+      "id": "complete-a-record-algorithm",
+      "level": "3",
+      "title": "Complete a record"
+    },
+    {
+      "id": "update-background-fetch-instance-algorithm",
+      "level": "3",
+      "title": "Update background fetch instances"
+    },
+    {
+      "id": "fire-a-background-fetch-click-event-algorithm",
+      "level": "3",
+      "title": "Fire a background fetch click event"
+    },
+    {
+      "id": "get-a-backgroundfetchregistration-instance-algorithm",
+      "level": "3",
+      "title": "Get a BackgroundFetchRegistration instance"
+    },
+    {
+      "id": "validate-partial-response-algorithm",
+      "level": "3",
+      "title": "Validate a partial response"
+    },
+    {
+      "id": "extract-content-range-values-algorithm",
+      "level": "3",
+      "title": "Extract content-range values"
+    },
+    {
+      "id": "create-settled-fetches-algorithm",
+      "level": "3",
+      "title": "Create record objects"
+    },
+    {
+      "id": "contains-background-fetch-algorithm",
+      "level": "3",
+      "title": "Contains background fetch"
+    },
+    {
+      "id": "header-syntax",
+      "level": "2",
+      "title": "Header syntax"
+    },
+    {
+      "id": "api",
+      "level": "2",
+      "title": "API"
+    },
+    {
+      "id": "extensions-to-service-worker-global",
+      "level": "3",
+      "title": "Extensions to ServiceWorkerGlobalScope"
+    },
+    {
+      "id": "service-worker-global-events",
+      "level": "4",
+      "title": "Events"
+    },
+    {
+      "id": "extensions-to-service-worker-registration",
+      "level": "3",
+      "title": "Extensions to ServiceWorkerRegistration"
+    },
+    {
+      "id": "background-fetch-manager",
+      "level": "3",
+      "title": "BackgroundFetchManager"
+    },
+    {
+      "id": "background-fetch-manager-fetch",
+      "level": "4",
+      "title": "fetch()"
+    },
+    {
+      "id": "background-fetch-manager-get",
+      "level": "4",
+      "title": "get()"
+    },
+    {
+      "id": "background-fetch-manager-get-ids",
+      "level": "4",
+      "title": "getIds()"
+    },
+    {
+      "id": "background-fetch-registration",
+      "level": "3",
+      "title": "BackgroundFetchRegistration"
+    },
+    {
+      "id": "background-fetch-registration-events",
+      "level": "4",
+      "title": "Events"
+    },
+    {
+      "id": "background-fetch-registration-abort",
+      "level": "4",
+      "title": "abort()"
+    },
+    {
+      "id": "background-fetch-registration-match",
+      "level": "4",
+      "title": "match()"
+    },
+    {
+      "id": "background-fetch-registration-match-all",
+      "level": "4",
+      "title": "matchAll()"
+    },
+    {
+      "id": "background-fetch-record-interface",
+      "level": "3",
+      "title": "BackgroundFetchRecord"
+    },
+    {
+      "id": "background-fetch-event",
+      "level": "3",
+      "title": "BackgroundFetchEvent"
+    },
+    {
+      "id": "background-fetch-update-ui-event",
+      "level": "3",
+      "title": "BackgroundFetchUpdateUIEvent"
+    },
+    {
+      "id": "background-fetch-update-ui-event-update-ui",
+      "level": "4",
+      "title": "updateUI()"
+    },
+    {
+      "id": "automation",
+      "level": "2",
+      "title": "Automation"
+    },
+    {
+      "id": "automation-click",
+      "level": "3",
+      "title": "Click"
+    },
+    {
+      "id": "privacy-and-bandwidth-use",
+      "level": "2",
+      "title": "Privacy and bandwidth usage"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

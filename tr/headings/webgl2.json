@@ -1,0 +1,458 @@
+{
+  "spec": {
+    "title": "WebGL 2.0 Specification",
+    "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/"
+  },
+  "headings": [
+    {
+      "id": "1",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "1.1",
+      "level": "3",
+      "title": "Conventions"
+    },
+    {
+      "id": "2",
+      "level": "2",
+      "title": "Context Creation and Drawing Buffer Presentation"
+    },
+    {
+      "id": "2.1",
+      "level": "3",
+      "title": "Context Creation"
+    },
+    {
+      "id": "2.2",
+      "level": "3",
+      "title": "The Drawing Buffer"
+    },
+    {
+      "id": "3",
+      "level": "2",
+      "title": "DOM Interfaces"
+    },
+    {
+      "id": "3.1",
+      "level": "3",
+      "title": "Types"
+    },
+    {
+      "id": "3.2",
+      "level": "3",
+      "title": "WebGLQuery"
+    },
+    {
+      "id": "3.3",
+      "level": "3",
+      "title": "WebGLSampler"
+    },
+    {
+      "id": "3.4",
+      "level": "3",
+      "title": "WebGLSync"
+    },
+    {
+      "id": "3.5",
+      "level": "3",
+      "title": "WebGLTransformFeedback"
+    },
+    {
+      "id": "3.6",
+      "level": "3",
+      "title": "WebGLVertexArrayObject"
+    },
+    {
+      "id": "3.7",
+      "level": "3",
+      "title": "The WebGL context"
+    },
+    {
+      "id": "3.7.1",
+      "level": "4",
+      "title": "More binding points"
+    },
+    {
+      "id": "3.7.2",
+      "level": "4",
+      "title": "Setting and getting state"
+    },
+    {
+      "id": "3.7.3",
+      "level": "4",
+      "title": "Buffer objects"
+    },
+    {
+      "id": "3.7.4",
+      "level": "4",
+      "title": "Framebuffer objects"
+    },
+    {
+      "id": "3.7.5",
+      "level": "4",
+      "title": "Renderbuffer objects"
+    },
+    {
+      "id": "3.7.6",
+      "level": "4",
+      "title": "Texture objects"
+    },
+    {
+      "id": "3.7.7",
+      "level": "4",
+      "title": "Programs and Shaders"
+    },
+    {
+      "id": "3.7.8",
+      "level": "4",
+      "title": "Uniforms and attributes"
+    },
+    {
+      "id": "3.7.9",
+      "level": "4",
+      "title": "Writing to the drawing buffer"
+    },
+    {
+      "id": "3.7.10",
+      "level": "4",
+      "title": "Reading back pixels"
+    },
+    {
+      "id": "3.7.11",
+      "level": "4",
+      "title": "Multiple render targets"
+    },
+    {
+      "id": "3.7.12",
+      "level": "4",
+      "title": "Query objects"
+    },
+    {
+      "id": "3.7.13",
+      "level": "4",
+      "title": "Sampler objects"
+    },
+    {
+      "id": "3.7.14",
+      "level": "4",
+      "title": "Sync objects"
+    },
+    {
+      "id": "3.7.15",
+      "level": "4",
+      "title": "Transform feedback"
+    },
+    {
+      "id": "3.7.16",
+      "level": "4",
+      "title": "Uniform Buffer objects"
+    },
+    {
+      "id": "3.7.17",
+      "level": "4",
+      "title": "Vertex Array objects"
+    },
+    {
+      "id": "4",
+      "level": "2",
+      "title": "Other differences Between WebGL 2.0 and WebGL 1.0"
+    },
+    {
+      "id": "4.1",
+      "level": "3",
+      "title": "Backwards Incompatibility"
+    },
+    {
+      "id": "4.1.1",
+      "level": "4",
+      "title": "Errors"
+    },
+    {
+      "id": "4.1.2",
+      "level": "4",
+      "title": "Extensions"
+    },
+    {
+      "id": "4.1.3",
+      "level": "4",
+      "title": "Non-Power-of-Two Texture Access"
+    },
+    {
+      "id": "4.1.4",
+      "level": "4",
+      "title": "Primitive Restart is Always Enabled"
+    },
+    {
+      "id": "4.1.5",
+      "level": "4",
+      "title": "Framebuffer Object Attachments"
+    },
+    {
+      "id": "4.1.6",
+      "level": "4",
+      "title": "Texture Type in TexSubImage2D Calls"
+    },
+    {
+      "id": "4.1.7",
+      "level": "4",
+      "title": "Out-of-bounds Behaviors in copyTexSubImage2D and readPixels calls"
+    },
+    {
+      "id": "4.1.8",
+      "level": "4",
+      "title": "Color conversion in copyTex{Sub}Image2D"
+    },
+    {
+      "id": "4.1.9",
+      "level": "4",
+      "title": "getFramebufferAttachmentParameter with FRAMEBUFFER_ATTACHMENT_OBJECT_NAME"
+    },
+    {
+      "id": "4.2",
+      "level": "3",
+      "title": "New Features Supported in the WebGL 2.0 API"
+    },
+    {
+      "id": "4.3",
+      "level": "3",
+      "title": "GLSL ES 3.00 support"
+    },
+    {
+      "id": "4.3.1",
+      "level": "4",
+      "title": "Maximum GLSL Token Size"
+    },
+    {
+      "id": "4.3.2",
+      "level": "4",
+      "title": "Maximum Uniform and Attribute Location Lengths"
+    },
+    {
+      "id": "4.4",
+      "level": "3",
+      "title": "Vertex Attribute Divisor"
+    },
+    {
+      "id": "5",
+      "level": "2",
+      "title": "Differences Between WebGL and OpenGL ES 3.0"
+    },
+    {
+      "id": "5.1",
+      "level": "3",
+      "title": "Buffer Object Binding"
+    },
+    {
+      "id": "5.2",
+      "level": "3",
+      "title": "Copying Buffers"
+    },
+    {
+      "id": "5.3",
+      "level": "3",
+      "title": "Preventing undefined behavior with Transform Feedback"
+    },
+    {
+      "id": "5.4",
+      "level": "3",
+      "title": "Draw Buffers"
+    },
+    {
+      "id": "5.5",
+      "level": "3",
+      "title": "No Program Binaries"
+    },
+    {
+      "id": "5.6",
+      "level": "3",
+      "title": "Range Checking"
+    },
+    {
+      "id": "5.7",
+      "level": "3",
+      "title": "Active Uniform Block Backing"
+    },
+    {
+      "id": "5.8",
+      "level": "3",
+      "title": "Default Framebuffer"
+    },
+    {
+      "id": "5.9",
+      "level": "3",
+      "title": "String Length Queries"
+    },
+    {
+      "id": "5.10",
+      "level": "3",
+      "title": "Invalid Clears"
+    },
+    {
+      "id": "5.11",
+      "level": "3",
+      "title": "Invalid Texture Offsets"
+    },
+    {
+      "id": "5.12",
+      "level": "3",
+      "title": "Texel Fetches"
+    },
+    {
+      "id": "5.13",
+      "level": "3",
+      "title": "GLSL ES 1.00 Fragment Shader Output"
+    },
+    {
+      "id": "5.14",
+      "level": "3",
+      "title": "No MapBufferRange"
+    },
+    {
+      "id": "5.15",
+      "level": "3",
+      "title": "TIMEOUT_IGNORED"
+    },
+    {
+      "id": "5.16",
+      "level": "3",
+      "title": "clientWaitSync"
+    },
+    {
+      "id": "5.17",
+      "level": "3",
+      "title": "Vertex Attribute Aliasing"
+    },
+    {
+      "id": "5.18",
+      "level": "3",
+      "title": "PRIMITIVE_RESTART_FIXED_INDEX is always enabled"
+    },
+    {
+      "id": "5.19",
+      "level": "3",
+      "title": "No texture swizzles"
+    },
+    {
+      "id": "5.20",
+      "level": "3",
+      "title": "Queries should fail on a program that failed to link"
+    },
+    {
+      "id": "5.21",
+      "level": "3",
+      "title": "Color values from a fragment shader must match the color buffer format"
+    },
+    {
+      "id": "5.22",
+      "level": "3",
+      "title": "A sampler type must match the internal texture format"
+    },
+    {
+      "id": "5.23",
+      "level": "3",
+      "title": "Queries' results must not be made available in the current frame"
+    },
+    {
+      "id": "5.24",
+      "level": "3",
+      "title": "GLSL ES 3.00 #extension directive location"
+    },
+    {
+      "id": "5.25",
+      "level": "3",
+      "title": "Only std140 layout supported in uniform blocks"
+    },
+    {
+      "id": "5.26",
+      "level": "3",
+      "title": "Disallowed variants of GLSL ES 3.00 operators"
+    },
+    {
+      "id": "5.27",
+      "level": "3",
+      "title": "checkFramebufferStatus may return FRAMEBUFFER_INCOMPLETE_DIMENSIONS"
+    },
+    {
+      "id": "5.28",
+      "level": "3",
+      "title": "Uniform block matching"
+    },
+    {
+      "id": "5.29",
+      "level": "3",
+      "title": "Framebuffer contents after invalidation"
+    },
+    {
+      "id": "5.30",
+      "level": "3",
+      "title": "No ArrayBufferView matching texture type FLOAT_32_UNSIGNED_INT_24_8_REV"
+    },
+    {
+      "id": "5.31",
+      "level": "3",
+      "title": "VertexAttrib function must match shader attribute type"
+    },
+    {
+      "id": "5.32",
+      "level": "3",
+      "title": "Transform feedback primitive capture"
+    },
+    {
+      "id": "5.33",
+      "level": "3",
+      "title": "gl_FragDepth"
+    },
+    {
+      "id": "5.34",
+      "level": "3",
+      "title": "Framebuffer color attachments"
+    },
+    {
+      "id": "5.35",
+      "level": "3",
+      "title": "Pixel store parameters for uploads from TexImageSource"
+    },
+    {
+      "id": "5.36",
+      "level": "3",
+      "title": "Pixel store parameter constraints"
+    },
+    {
+      "id": "5.37",
+      "level": "3",
+      "title": "No ETC2 and EAC compressed texture formats"
+    },
+    {
+      "id": "5.38",
+      "level": "3",
+      "title": "The value of UNIFORM_BUFFER_OFFSET_ALIGNMENT must be divisible by 4"
+    },
+    {
+      "id": "5.39",
+      "level": "3",
+      "title": "Sync objects' results must not be made available in the current frame"
+    },
+    {
+      "id": "5.40",
+      "level": "3",
+      "title": "blitFramebuffer rectangle width/height limitations"
+    },
+    {
+      "id": "5.41",
+      "level": "3",
+      "title": "GenerateMipmap requires positive image dimensions"
+    },
+    {
+      "id": "5.42",
+      "level": "3",
+      "title": "deleteQuery implicitly calls endQuery if the query is active"
+    },
+    {
+      "id": "6",
+      "level": "2",
+      "title": "References"
+    }
+  ]
+}

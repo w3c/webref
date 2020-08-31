@@ -1,0 +1,633 @@
+{
+  "spec": {
+    "title": "Filter Effects Module Level 1",
+    "url": "https://www.w3.org/TR/filter-effects-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Filter Effects Module Level 1"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "W3C Working Draft, 18 December 2018"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "placement",
+      "level": "2",
+      "title": "Module interactions"
+    },
+    {
+      "id": "values",
+      "level": "2",
+      "title": "Values"
+    },
+    {
+      "id": "definitions",
+      "level": "2",
+      "title": "Terminology"
+    },
+    {
+      "id": "FilterProperty",
+      "level": "2",
+      "title": "Graphic filters: the filter property"
+    },
+    {
+      "id": "filter-functions",
+      "level": "2",
+      "title": "Filter Functions"
+    },
+    {
+      "id": "supported-filter-functions",
+      "level": "3",
+      "title": "Supported Filter Functions"
+    },
+    {
+      "id": "computed-values-of-filter-functions",
+      "level": "3",
+      "title": "Computed Values of Filter Functions"
+    },
+    {
+      "id": "serialization-of-filter-functions",
+      "level": "3",
+      "title": "Serialization of Filter Functions"
+    },
+    {
+      "id": "interpolation-of-filter-functions",
+      "level": "3",
+      "title": "Interpolation of Filter Functions"
+    },
+    {
+      "id": "FilterElement",
+      "level": "2",
+      "title": "SVG Filter Sources: the filter element"
+    },
+    {
+      "id": "FilterEffectsRegion",
+      "level": "2",
+      "title": "Filter Region"
+    },
+    {
+      "id": "FilterPrimitivesOverview",
+      "level": "2",
+      "title": "Filter primitives"
+    },
+    {
+      "id": "FilterPrimitivesOverviewIntro",
+      "level": "3",
+      "title": "Overview"
+    },
+    {
+      "id": "CommonAttributes",
+      "level": "3",
+      "title": "Common filter primitive attributes"
+    },
+    {
+      "id": "FilterPrimitiveTree",
+      "level": "3",
+      "title": "Filter primitive tree"
+    },
+    {
+      "id": "FilterPrimitiveSubRegion",
+      "level": "3",
+      "title": "Filter primitive subregion"
+    },
+    {
+      "id": "feBlendElement",
+      "level": "3",
+      "title": "Filter primitive feBlend"
+    },
+    {
+      "id": "feColorMatrixElement",
+      "level": "3",
+      "title": "Filter primitive feColorMatrix"
+    },
+    {
+      "id": "feComponentTransferElement",
+      "level": "3",
+      "title": "Filter primitive feComponentTransfer"
+    },
+    {
+      "id": "feFuncRElement",
+      "level": "4",
+      "title": "Transfer function feFuncR"
+    },
+    {
+      "id": "feFuncGElement",
+      "level": "4",
+      "title": "Transfer function feFuncG"
+    },
+    {
+      "id": "feFuncBElement",
+      "level": "4",
+      "title": "Transfer function feFuncB"
+    },
+    {
+      "id": "feFuncAElement",
+      "level": "4",
+      "title": "Transfer function feFuncA"
+    },
+    {
+      "id": "feCompositeElement",
+      "level": "3",
+      "title": "Filter primitive feComposite"
+    },
+    {
+      "id": "feConvolveMatrixElement",
+      "level": "3",
+      "title": "Filter primitive feConvolveMatrix"
+    },
+    {
+      "id": "feDiffuseLightingElement",
+      "level": "3",
+      "title": "Filter primitive feDiffuseLighting"
+    },
+    {
+      "id": "feDisplacementMapElement",
+      "level": "3",
+      "title": "Filter primitive feDisplacementMap"
+    },
+    {
+      "id": "feDropShadowElement",
+      "level": "3",
+      "title": "Filter primitive feDropShadow"
+    },
+    {
+      "id": "feFloodElement",
+      "level": "3",
+      "title": "Filter primitive feFlood"
+    },
+    {
+      "id": "FloodColorProperty",
+      "level": "4",
+      "title": "The flood-color property"
+    },
+    {
+      "id": "FloodOpacityProperty",
+      "level": "4",
+      "title": "The flood-opacity property"
+    },
+    {
+      "id": "feGaussianBlurElement",
+      "level": "3",
+      "title": "Filter primitive feGaussianBlur"
+    },
+    {
+      "id": "feImageElement",
+      "level": "3",
+      "title": "Filter primitive feImage"
+    },
+    {
+      "id": "feMergeElement",
+      "level": "3",
+      "title": "Filter primitive feMerge"
+    },
+    {
+      "id": "feMergeNodeElement",
+      "level": "4",
+      "title": "Merge node feMergeNode"
+    },
+    {
+      "id": "feMorphologyElement",
+      "level": "3",
+      "title": "Filter primitive feMorphology"
+    },
+    {
+      "id": "feOffsetElement",
+      "level": "3",
+      "title": "Filter primitive feOffset"
+    },
+    {
+      "id": "feSpecularLightingElement",
+      "level": "3",
+      "title": "Filter primitive feSpecularLighting"
+    },
+    {
+      "id": "feTileElement",
+      "level": "3",
+      "title": "Filter primitive feTile"
+    },
+    {
+      "id": "feTurbulenceElement",
+      "level": "3",
+      "title": "Filter primitive feTurbulence"
+    },
+    {
+      "id": "ColorInterpolationFiltersProperty",
+      "level": "2",
+      "title": "The color-interpolation-filters property"
+    },
+    {
+      "id": "LightSourceDefinitions",
+      "level": "2",
+      "title": "Light source elements and properties"
+    },
+    {
+      "id": "LightSourceIntro",
+      "level": "3",
+      "title": "Introduction"
+    },
+    {
+      "id": "feDistantLightElement",
+      "level": "3",
+      "title": "Light source feDistantLight"
+    },
+    {
+      "id": "fePointLightElement",
+      "level": "3",
+      "title": "Light source fePointLight"
+    },
+    {
+      "id": "feSpotLightElement",
+      "level": "3",
+      "title": "Light source feSpotLight"
+    },
+    {
+      "id": "LightingColorProperty",
+      "level": "3",
+      "title": "The lighting-color property"
+    },
+    {
+      "id": "FilterCSSImageValue",
+      "level": "2",
+      "title": "Filter CSS <image> values"
+    },
+    {
+      "id": "interpolating-filter-image",
+      "level": "3",
+      "title": "Interpolating filter()"
+    },
+    {
+      "id": "ShorthandEquivalents",
+      "level": "2",
+      "title": "Shorthands defined in terms of the filter element"
+    },
+    {
+      "id": "FilterPrimitiveRepresentation",
+      "level": "3",
+      "title": "Filter primitive representation"
+    },
+    {
+      "id": "grayscaleEquivalent",
+      "level": "4",
+      "title": "grayscale"
+    },
+    {
+      "id": "sepiaEquivalent",
+      "level": "4",
+      "title": "sepia"
+    },
+    {
+      "id": "saturateEquivalent",
+      "level": "4",
+      "title": "saturate"
+    },
+    {
+      "id": "huerotateEquivalent",
+      "level": "4",
+      "title": "hue-rotate"
+    },
+    {
+      "id": "invertEquivalent",
+      "level": "4",
+      "title": "invert"
+    },
+    {
+      "id": "opacityEquivalent",
+      "level": "4",
+      "title": "opacity"
+    },
+    {
+      "id": "brightnessEquivalent",
+      "level": "4",
+      "title": "brightness"
+    },
+    {
+      "id": "contrastEquivalent",
+      "level": "4",
+      "title": "contrast"
+    },
+    {
+      "id": "blurEquivalent",
+      "level": "4",
+      "title": "blur"
+    },
+    {
+      "id": "dropshadowEquivalent",
+      "level": "4",
+      "title": "drop-shadow"
+    },
+    {
+      "id": "filter-region-for-shorthands",
+      "level": "3",
+      "title": "Filter region for shorthands"
+    },
+    {
+      "id": "animation-of-filters",
+      "level": "2",
+      "title": "Animation of Filters"
+    },
+    {
+      "id": "interpolation-of-filters",
+      "level": "3",
+      "title": "Interpolation of Filter Function Lists"
+    },
+    {
+      "id": "addition",
+      "level": "3",
+      "title": "Addition"
+    },
+    {
+      "id": "accumulation",
+      "level": "3",
+      "title": "Accumulation"
+    },
+    {
+      "id": "priv-sec",
+      "level": "2",
+      "title": "Privacy and Security Considerations"
+    },
+    {
+      "id": "tainted-filter-primitives",
+      "level": "3",
+      "title": "Tainted Filter Primitives"
+    },
+    {
+      "id": "fedisplacemnentmap-restrictions",
+      "level": "3",
+      "title": "feDisplacementMap Restrictions"
+    },
+    {
+      "id": "origin-restrictions",
+      "level": "3",
+      "title": "Origin Restrictions"
+    },
+    {
+      "id": "timing-attack",
+      "level": "3",
+      "title": "Timing Attacks"
+    },
+    {
+      "id": "AccessBackgroundImage",
+      "level": "2",
+      "title": "Appendix A: The deprecated enable-background property"
+    },
+    {
+      "id": "DOMInterfaces",
+      "level": "2",
+      "title": "Appendix B: DOM interfaces"
+    },
+    {
+      "id": "InterfaceSVGFilterElement",
+      "level": "3",
+      "title": "Interface SVGFilterElement"
+    },
+    {
+      "id": "InterfaceSVGFilterPrimitiveStandardAttributes",
+      "level": "3",
+      "title": "Interface SVGFilterPrimitiveStandardAttributes"
+    },
+    {
+      "id": "InterfaceSVGFEBlendElement",
+      "level": "3",
+      "title": "Interface SVGFEBlendElement"
+    },
+    {
+      "id": "InterfaceSVGFEColorMatrixElement",
+      "level": "3",
+      "title": "Interface SVGFEColorMatrixElement"
+    },
+    {
+      "id": "InterfaceSVGFEComponentTransferElement",
+      "level": "3",
+      "title": "Interface SVGFEComponentTransferElement"
+    },
+    {
+      "id": "InterfaceSVGComponentTransferFunctionElement",
+      "level": "3",
+      "title": "Interface SVGComponentTransferFunctionElement"
+    },
+    {
+      "id": "InterfaceSVGFEFuncRElement",
+      "level": "3",
+      "title": "Interface SVGFEFuncRElement"
+    },
+    {
+      "id": "InterfaceSVGFEFuncGElement",
+      "level": "3",
+      "title": "Interface SVGFEFuncGElement"
+    },
+    {
+      "id": "InterfaceSVGFEFuncBElement",
+      "level": "3",
+      "title": "Interface SVGFEFuncBElement"
+    },
+    {
+      "id": "InterfaceSVGFEFuncAElement",
+      "level": "3",
+      "title": "Interface SVGFEFuncAElement"
+    },
+    {
+      "id": "InterfaceSVGFECompositeElement",
+      "level": "3",
+      "title": "Interface SVGFECompositeElement"
+    },
+    {
+      "id": "InterfaceSVGFEConvolveMatrixElement",
+      "level": "3",
+      "title": "Interface SVGFEConvolveMatrixElement"
+    },
+    {
+      "id": "InterfaceSVGFEDiffuseLightingElement",
+      "level": "3",
+      "title": "Interface SVGFEDiffuseLightingElement"
+    },
+    {
+      "id": "InterfaceSVGFEDistantLightElement",
+      "level": "3",
+      "title": "Interface SVGFEDistantLightElement"
+    },
+    {
+      "id": "InterfaceSVGFEPointLightElement",
+      "level": "3",
+      "title": "Interface SVGFEPointLightElement"
+    },
+    {
+      "id": "InterfaceSVGFESpotLightElement",
+      "level": "3",
+      "title": "Interface SVGFESpotLightElement"
+    },
+    {
+      "id": "InterfaceSVGFEDisplacementMapElement",
+      "level": "3",
+      "title": "Interface SVGFEDisplacementMapElement"
+    },
+    {
+      "id": "InterfaceSVGFEDropShadowElement",
+      "level": "3",
+      "title": "Interface SVGFEDropShadowElement"
+    },
+    {
+      "id": "InterfaceSVGFEFloodElement",
+      "level": "3",
+      "title": "Interface SVGFEFloodElement"
+    },
+    {
+      "id": "InterfaceSVGFEGaussianBlurElement",
+      "level": "3",
+      "title": "Interface SVGFEGaussianBlurElement"
+    },
+    {
+      "id": "InterfaceSVGFEImageElement",
+      "level": "3",
+      "title": "Interface SVGFEImageElement"
+    },
+    {
+      "id": "InterfaceSVGFEMergeElement",
+      "level": "3",
+      "title": "Interface SVGFEMergeElement"
+    },
+    {
+      "id": "InterfaceSVGFEMergeNodeElement",
+      "level": "3",
+      "title": "Interface SVGFEMergeNodeElement"
+    },
+    {
+      "id": "InterfaceSVGFEMorphologyElement",
+      "level": "3",
+      "title": "Interface SVGFEMorphologyElement"
+    },
+    {
+      "id": "InterfaceSVGFEOffsetElement",
+      "level": "3",
+      "title": "Interface SVGFEOffsetElement"
+    },
+    {
+      "id": "InterfaceSVGFESpecularLightingElement",
+      "level": "3",
+      "title": "Interface SVGFESpecularLightingElement"
+    },
+    {
+      "id": "InterfaceSVGFETileElement",
+      "level": "3",
+      "title": "Interface SVGFETileElement"
+    },
+    {
+      "id": "InterfaceSVGFETurbulenceElement",
+      "level": "3",
+      "title": "Interface SVGFETurbulenceElement"
+    },
+    {
+      "id": "changes",
+      "level": "2",
+      "title": "Changes"
+    },
+    {
+      "id": "acknowledgments",
+      "level": "2",
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "document-conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conform-classes",
+      "level": "3",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "conform-responsible",
+      "level": "3",
+      "title": "Requirements for Responsible Implementation of CSS"
+    },
+    {
+      "id": "conform-partial",
+      "level": "4",
+      "title": "Partial Implementations"
+    },
+    {
+      "id": "conform-future-proofing",
+      "level": "4",
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "conform-testing",
+      "level": "4",
+      "title": "Implementations of CR-level Features"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": "3",
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "level": "2",
+      "title": "Property Index"
+    },
+    {
+      "id": "idl-index",
+      "level": "2",
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

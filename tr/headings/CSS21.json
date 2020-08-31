@@ -1,0 +1,2738 @@
+{
+  "spec": {
+    "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
+    "url": "https://www.w3.org/TR/CSS2/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification"
+    },
+    {
+      "id": "W3C-doctype",
+      "level": "2",
+      "title": "W3C Recommendation 07 June 2011, edited in place 12 April 2016 to point to new work"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "a4.3.6",
+      "level": "3",
+      "title": "C.1.1 Section 4.3.6\nColors"
+    },
+    {
+      "id": "a9.2.4",
+      "level": "3",
+      "title": "C.1.2 Section 9.2.4\nThe 'display' property"
+    },
+    {
+      "id": "a12.2",
+      "level": "3",
+      "title": "C.1.3 Section 12.2 The\n'content' property"
+    },
+    {
+      "id": "a16.6",
+      "level": "3",
+      "title": "C.1.4 Section 16.6\nWhite space: the 'white-space' property"
+    },
+    {
+      "id": "a18.1",
+      "level": "3",
+      "title": "C.1.5 Section 18.1 Cursors:\nthe 'cursor' property"
+    },
+    {
+      "id": "c1.1",
+      "level": "3",
+      "title": "C.2.1 Section 1.1 CSS 2.1 vs CSS 2"
+    },
+    {
+      "id": "c1.2",
+      "level": "3",
+      "title": "C.2.2 Section 1.2 Reading the specification"
+    },
+    {
+      "id": "c1.3",
+      "level": "3",
+      "title": "C.2.3 Section 1.3 How the specification is organized"
+    },
+    {
+      "id": "c1.4.2.1",
+      "level": "3",
+      "title": "C.2.4 Section 1.4.2.1 Value"
+    },
+    {
+      "id": "c1.4.2.6",
+      "level": "3",
+      "title": "C.2.5 Section 1.4.2.6 Media groups"
+    },
+    {
+      "id": "c1.4.2.7",
+      "level": "3",
+      "title": "C.2.6 Section 1.4.2.7 Computed value"
+    },
+    {
+      "id": "c1.4.4",
+      "level": "3",
+      "title": "C.2.7 Section 1.4.4 Notes and examples"
+    },
+    {
+      "id": "c1.5",
+      "level": "3",
+      "title": "C.2.8 Section 1.5 Acknowledgments"
+    },
+    {
+      "id": "c3.2",
+      "level": "3",
+      "title": "C.2.9 Section 3.2\nConformance"
+    },
+    {
+      "id": "c3.3",
+      "level": "3",
+      "title": "C.2.10 Section 3.3\nError Conditions"
+    },
+    {
+      "id": "c4.1.1",
+      "level": "3",
+      "title": "C.2.11 Section 4.1.1 Tokenization"
+    },
+    {
+      "id": "c4.1.3",
+      "level": "3",
+      "title": "C.2.12 Section 4.1.3\nCharacters and case"
+    },
+    {
+      "id": "c4.2",
+      "level": "3",
+      "title": "C.2.13 Section 4.2\nRules for handling parsing errors"
+    },
+    {
+      "id": "c4.3",
+      "level": "3",
+      "title": "C.2.14 Section 4.3\nValues"
+    },
+    {
+      "id": "c4.3.2",
+      "level": "3",
+      "title": "C.2.15 Section 4.3.2\nLengths"
+    },
+    {
+      "id": "c4.3.4",
+      "level": "3",
+      "title": "C.2.16 Section 4.3.4\nURLs and URIs"
+    },
+    {
+      "id": "c4.3.5",
+      "level": "3",
+      "title": "C.2.17 Section 4.3.5\nCounters"
+    },
+    {
+      "id": "c4.3.6",
+      "level": "3",
+      "title": "C.2.18 Section 4.3.6\nColors"
+    },
+    {
+      "id": "c4.3.8",
+      "level": "3",
+      "title": "C.2.19 Section 4.3.8\nUnsupported Values"
+    },
+    {
+      "id": "c4.4",
+      "level": "3",
+      "title": "C.2.20 Section 4.4\nCSS style sheet representation"
+    },
+    {
+      "id": "c5.8.1",
+      "level": "3",
+      "title": "C.2.21 Section 5.8.1 Matching\nattributes and attribute values"
+    },
+    {
+      "id": "c5.8.3",
+      "level": "3",
+      "title": "C.2.22 Section 5.8.3 Class\nselectors"
+    },
+    {
+      "id": "c5.9",
+      "level": "3",
+      "title": "C.2.23 Section 5.9 ID\nselectors"
+    },
+    {
+      "id": "c5.10",
+      "level": "3",
+      "title": "C.2.24 Section 5.10\nPseudo-elements and pseudo-classes"
+    },
+    {
+      "id": "c5.11.2",
+      "level": "3",
+      "title": "C.2.25 Section 5.11.2\nThe link pseudo-classes: :link and :visited"
+    },
+    {
+      "id": "c5.11.4",
+      "level": "3",
+      "title": "C.2.26 Section 5.11.4 The\nlanguage pseudo-class: :lang"
+    },
+    {
+      "id": "c5.12.1",
+      "level": "3",
+      "title": "C.2.27 Section\n5.12.1 The :first-line pseudo-element"
+    },
+    {
+      "id": "c5.12.2",
+      "level": "3",
+      "title": "C.2.28 Section 5.12.2\nThe :first-letter pseudo-element"
+    },
+    {
+      "id": "c6.1",
+      "level": "3",
+      "title": "C.2.29 Section 6.1 Specified, computed, and actual values"
+    },
+    {
+      "id": "c6.4.1",
+      "level": "3",
+      "title": "C.2.30 Section 6.4.1 Cascading order"
+    },
+    {
+      "id": "c6.4.3",
+      "level": "3",
+      "title": "C.2.31 Section 6.4.3\nCalculating a selector's specificity"
+    },
+    {
+      "id": "c6.4.4",
+      "level": "3",
+      "title": "C.2.32 Section 6.4.4 Precedence\nof non-CSS presentational hints"
+    },
+    {
+      "id": "c7.3",
+      "level": "3",
+      "title": "C.2.33 Section 7.3\nRecognized Media Types"
+    },
+    {
+      "id": "c7.3.1",
+      "level": "3",
+      "title": "C.2.34 Section 7.3.1\nMedia Groups"
+    },
+    {
+      "id": "c8.3",
+      "level": "3",
+      "title": "C.2.35 Section 8.3 Margin properties"
+    },
+    {
+      "id": "c8.3.1",
+      "level": "3",
+      "title": "C.2.36 Section 8.3.1 Collapsing margins"
+    },
+    {
+      "id": "c8.4",
+      "level": "3",
+      "title": "C.2.37 Section 8.4 Padding properties"
+    },
+    {
+      "id": "c8.5.2",
+      "level": "3",
+      "title": "C.2.38 Section 8.5.2 Border color"
+    },
+    {
+      "id": "c8.5.3",
+      "level": "3",
+      "title": "C.2.39 Section 8.5.3 Border style"
+    },
+    {
+      "id": "c8.6",
+      "level": "3",
+      "title": "C.2.40 Section 8.6 The box model for inline elements in bidirectional context"
+    },
+    {
+      "id": "c9.1.2",
+      "level": "3",
+      "title": "C.2.41 Section 9.1.2\nContaining blocks"
+    },
+    {
+      "id": "c9.2.1.1",
+      "level": "3",
+      "title": "C.2.42 Section 9.2.1.1\nAnonymous block boxes"
+    },
+    {
+      "id": "c9.2.2.1",
+      "level": "3",
+      "title": "C.2.43 Section 9.2.2.1\nAnonymous inline boxes"
+    },
+    {
+      "id": "c9.2.3",
+      "level": "3",
+      "title": "C.2.44 Section 9.2.3\nRun-in boxes"
+    },
+    {
+      "id": "c9.2.4",
+      "level": "3",
+      "title": "C.2.45 Section 9.2.4\nThe 'display' property"
+    },
+    {
+      "id": "c9.3.1",
+      "level": "3",
+      "title": "C.2.46 Section 9.3.1\nChoosing a positioning scheme"
+    },
+    {
+      "id": "c9.3.2",
+      "level": "3",
+      "title": "C.2.47 Section 9.3.2\nBox offsets"
+    },
+    {
+      "id": "c9.4.1",
+      "level": "3",
+      "title": "C.2.48 Section 9.4.1\nBlock formatting contexts"
+    },
+    {
+      "id": "c9.4.2",
+      "level": "3",
+      "title": "C.2.49 Section 9.4.2\nInline formatting context"
+    },
+    {
+      "id": "c9.4.3",
+      "level": "3",
+      "title": "C.2.50 Section 9.4.3\nRelative positioning"
+    },
+    {
+      "id": "c9.5",
+      "level": "3",
+      "title": "C.2.51 Section 9.5\nFloats"
+    },
+    {
+      "id": "c9.5.1",
+      "level": "3",
+      "title": "C.2.52 Section 9.5.1\nPositioning the float"
+    },
+    {
+      "id": "c9.5.2",
+      "level": "3",
+      "title": "C.2.53 Section 9.5.2\nControlling flow next to floats"
+    },
+    {
+      "id": "c9.7",
+      "level": "3",
+      "title": "C.2.54 Section 9.7\nRelationships between 'display', 'position', and 'float'"
+    },
+    {
+      "id": "c9.9",
+      "level": "3",
+      "title": "C.2.55 Section 9.9\nLayered presentation"
+    },
+    {
+      "id": "c9.10",
+      "level": "3",
+      "title": "C.2.56 Section 9.10\nText direction"
+    },
+    {
+      "id": "c10",
+      "level": "3",
+      "title": "C.2.57 Chapter 10\nVisual formatting model details"
+    },
+    {
+      "id": "c10.1",
+      "level": "3",
+      "title": "C.2.58 Section 10.1\nDefinition of \"containing block\""
+    },
+    {
+      "id": "c10.2",
+      "level": "3",
+      "title": "C.2.59 Section 10.2\nContent width"
+    },
+    {
+      "id": "c10.3",
+      "level": "3",
+      "title": "C.2.60 Section 10.3\nCalculating widths and margins"
+    },
+    {
+      "id": "c10.3.2",
+      "level": "3",
+      "title": "C.2.61 Section 10.3.2\nInline, replaced elements"
+    },
+    {
+      "id": "c10.3.3",
+      "level": "3",
+      "title": "C.2.62 Section 10.3.3\nBlock-level, non-replaced elements in normal flow"
+    },
+    {
+      "id": "c10.3.4",
+      "level": "3",
+      "title": "C.2.63 Section 10.3.4\nBlock-level, replaced elements in normal flow"
+    },
+    {
+      "id": "c10.3.5",
+      "level": "3",
+      "title": "C.2.64 Section 10.3.5\nFloating, non-replaced elements"
+    },
+    {
+      "id": "c10.3.6",
+      "level": "3",
+      "title": "C.2.65 Section 10.3.6\nFloating, replaced elements"
+    },
+    {
+      "id": "c10.3.7",
+      "level": "3",
+      "title": "C.2.66 Section 10.3.7\nAbsolutely positioned, non-replaced elements"
+    },
+    {
+      "id": "c10.3.8",
+      "level": "3",
+      "title": "C.2.67 Section 10.3.8\nAbsolutely positioned, replaced elements"
+    },
+    {
+      "id": "c10.4",
+      "level": "3",
+      "title": "C.2.68 Section 10.4\nMinimum and maximum widths"
+    },
+    {
+      "id": "c10.5",
+      "level": "3",
+      "title": "C.2.69 Section 10.5\nContent height"
+    },
+    {
+      "id": "c10.6",
+      "level": "3",
+      "title": "C.2.70 Section 10.6\nCalculating heights and margins"
+    },
+    {
+      "id": "c10.6.1",
+      "level": "3",
+      "title": "C.2.71 Section 10.6.1\nInline, non-replaced elements"
+    },
+    {
+      "id": "c10.6.2",
+      "level": "3",
+      "title": "C.2.72 Section 10.6.2\nInline replaced elements, block-level replaced elements in normal flow,\n'inline-block' replaced elements in normal flow and floating replaced elements"
+    },
+    {
+      "id": "c10.6.3",
+      "level": "3",
+      "title": "C.2.73 Section 10.6.3\nBlock-level non-replaced elements in normal flow when 'overflow' computes\nto 'visible'"
+    },
+    {
+      "id": "c10.6.4",
+      "level": "3",
+      "title": "C.2.74 Section 10.6.4\nAbsolutely positioned, non-replaced elements"
+    },
+    {
+      "id": "c10.6.5",
+      "level": "3",
+      "title": "C.2.75 Section 10.6.5\nAbsolutely positioned, replaced elements"
+    },
+    {
+      "id": "c10.7",
+      "level": "3",
+      "title": "C.2.76 Section 10.7\nMinimum and maximum heights"
+    },
+    {
+      "id": "c10.8",
+      "level": "3",
+      "title": "C.2.77 Section 10.8\nLine height calculations"
+    },
+    {
+      "id": "c10.8.1",
+      "level": "3",
+      "title": "C.2.78 Section 10.8.1\nLeading and half-leading"
+    },
+    {
+      "id": "c11.1",
+      "level": "3",
+      "title": "C.2.79 Section 11.1\nOverflow and clipping"
+    },
+    {
+      "id": "c11.1.1",
+      "level": "3",
+      "title": "C.2.80 Section 11.1.1\nOverflow"
+    },
+    {
+      "id": "c11.1.2",
+      "level": "3",
+      "title": "C.2.81 Section 11.1.2 Clipping:\nthe 'clip' property"
+    },
+    {
+      "id": "c11.2",
+      "level": "3",
+      "title": "C.2.82 Section 11.2\nVisibility"
+    },
+    {
+      "id": "c12",
+      "level": "3",
+      "title": "C.2.83 Chapter 12\nGenerated content, automatic numbering, and lists"
+    },
+    {
+      "id": "c12.1",
+      "level": "3",
+      "title": "C.2.84 Section 12.1\nThe :before and :after pseudo-elements"
+    },
+    {
+      "id": "c12.2",
+      "level": "3",
+      "title": "C.2.85 Section 12.2 The\n'content' property"
+    },
+    {
+      "id": "c12.3.2",
+      "level": "3",
+      "title": "C.2.86 Section 12.3.2\nInserting quotes with the 'content' property"
+    },
+    {
+      "id": "c12.4",
+      "level": "3",
+      "title": "C.2.87 Section 12.4 Automatic\ncounters and numbering"
+    },
+    {
+      "id": "c12.4.1",
+      "level": "3",
+      "title": "C.2.88 Section 12.4.1 Nested\ncounters and scope"
+    },
+    {
+      "id": "c12.5",
+      "level": "3",
+      "title": "C.2.89 Section 12.5\nLists"
+    },
+    {
+      "id": "c12.5.1",
+      "level": "3",
+      "title": "C.2.90 Section 12.5.1\nLists"
+    },
+    {
+      "id": "c13.1",
+      "level": "3",
+      "title": "C.2.91 Chapter 13 Paged media"
+    },
+    {
+      "id": "c13.2.2",
+      "level": "3",
+      "title": "C.2.92 Section 13.2.2\nPage selectors"
+    },
+    {
+      "id": "c13.3.1",
+      "level": "3",
+      "title": "C.2.93 Section 13.3.1\nPage break properties"
+    },
+    {
+      "id": "c13.3.3",
+      "level": "3",
+      "title": "C.2.94 Section 13.3.3\nAllowed page breaks"
+    },
+    {
+      "id": "c14.2.1",
+      "level": "3",
+      "title": "C.2.95 Section\n14.2.1 Background properties"
+    },
+    {
+      "id": "c14.3",
+      "level": "3",
+      "title": "C.2.96 Section\n14.3 Gamma correction"
+    },
+    {
+      "id": "c15",
+      "level": "3",
+      "title": "C.2.97 Chapter 15 Fonts"
+    },
+    {
+      "id": "c15.2",
+      "level": "3",
+      "title": "C.2.98 Section 15.2\nFont matching algorithm"
+    },
+    {
+      "id": "c15.3",
+      "level": "3",
+      "title": "C.2.99 Section 15.2.2 Font family"
+    },
+    {
+      "id": "c15.5",
+      "level": "3",
+      "title": "C.2.100 Section 15.5\nSmall-caps"
+    },
+    {
+      "id": "c15.6",
+      "level": "3",
+      "title": "C.2.101 Section 15.6\nFont boldness"
+    },
+    {
+      "id": "c15.7",
+      "level": "3",
+      "title": "C.2.102 Section 15.7\nFont size"
+    },
+    {
+      "id": "c16",
+      "level": "3",
+      "title": "C.2.103 Chapter 16 Text"
+    },
+    {
+      "id": "c16.2",
+      "level": "3",
+      "title": "C.2.104 Section 16.2\nAlignment"
+    },
+    {
+      "id": "c16.3.1",
+      "level": "3",
+      "title": "C.2.105 Section 16.3.1\nUnderlining, over lining, striking, and blinking"
+    },
+    {
+      "id": "c16.4",
+      "level": "3",
+      "title": "C.2.106 Section 16.4\nLetter and word spacing"
+    },
+    {
+      "id": "c16.5",
+      "level": "3",
+      "title": "C.2.107 Section 16.5\nCapitalization"
+    },
+    {
+      "id": "c16.6",
+      "level": "3",
+      "title": "C.2.108 Section 16.6\nWhite space"
+    },
+    {
+      "id": "c17",
+      "level": "3",
+      "title": "C.2.109 Chapter 17\nTables"
+    },
+    {
+      "id": "c17.2",
+      "level": "3",
+      "title": "C.2.110 Section 17.2 The CSS table model"
+    },
+    {
+      "id": "c17.2.1",
+      "level": "3",
+      "title": "C.2.111 Section 17.2.1\nAnonymous table objects"
+    },
+    {
+      "id": "c17.4",
+      "level": "3",
+      "title": "C.2.112 Section 17.4\nTables in the visual formatting model"
+    },
+    {
+      "id": "c17.4.1",
+      "level": "3",
+      "title": "C.2.113 Section 17.4.1\nCaption position and alignment"
+    },
+    {
+      "id": "c17.5",
+      "level": "3",
+      "title": "C.2.114 Section 17.5\nVisual layout of table contents"
+    },
+    {
+      "id": "c17.5.1",
+      "level": "3",
+      "title": "C.2.115 Section 17.5.1\nTable layers and transparency"
+    },
+    {
+      "id": "c17.5.2.1",
+      "level": "3",
+      "title": "C.2.116 Section 17.5.2.1\nFixed table layout"
+    },
+    {
+      "id": "c17.5.2.2",
+      "level": "3",
+      "title": "C.2.117 Section 17.5.2.2\nAutomatic table layout"
+    },
+    {
+      "id": "c17.5.3",
+      "level": "3",
+      "title": "C.2.118 Section 17.5.3\nTable height algorithms"
+    },
+    {
+      "id": "c17.5.4",
+      "level": "3",
+      "title": "C.2.119 Section 17.5.4\nHorizontal alignment in a column"
+    },
+    {
+      "id": "c17.6",
+      "level": "3",
+      "title": "C.2.120 Section 17.6\nBorders"
+    },
+    {
+      "id": "c17.6.1",
+      "level": "3",
+      "title": "C.2.121 Section 17.6.1\nThe separated borders model"
+    },
+    {
+      "id": "c17.6.1.1",
+      "level": "3",
+      "title": "C.2.122 Section 17.6.1.1\nBorders and Backgrounds around empty cells"
+    },
+    {
+      "id": "c17.6.2",
+      "level": "3",
+      "title": "C.2.123 Section 17.6.2\nThe collapsing border model"
+    },
+    {
+      "id": "c17.6.2.1",
+      "level": "3",
+      "title": "C.2.124 Section 17.6.2.1\nBorder conflict resolution"
+    },
+    {
+      "id": "c18.1",
+      "level": "3",
+      "title": "C.2.125 Section 18.1 Cursors:\nthe 'cursor' property"
+    },
+    {
+      "id": "c18.4",
+      "level": "3",
+      "title": "C.2.126 Section 18.4\nDynamic outlines"
+    },
+    {
+      "id": "s-12",
+      "level": "3",
+      "title": "C.2.127 Chapter 12 Generated content,\nautomatic numbering, and lists"
+    },
+    {
+      "id": "cA",
+      "level": "3",
+      "title": "C.2.128 Appendix A. Aural style\nsheets"
+    },
+    {
+      "id": "cA.5",
+      "level": "3",
+      "title": "C.2.129 Appendix A Section 5 Pause properties"
+    },
+    {
+      "id": "cA.6",
+      "level": "3",
+      "title": "C.2.130 Appendix A Section 6 Cue properties"
+    },
+    {
+      "id": "cA.7",
+      "level": "3",
+      "title": "C.2.131 Appendix A Section 7\nMixing properties"
+    },
+    {
+      "id": "cB",
+      "level": "3",
+      "title": "C.2.132 Appendix B\nBibliography"
+    },
+    {
+      "id": "other",
+      "level": "3",
+      "title": "C.2.133 Other"
+    },
+    {
+      "id": "x-shorthand-inherit",
+      "level": "3",
+      "title": "C.3.1 Shorthand properties"
+    },
+    {
+      "id": "x-applies-table",
+      "level": "3",
+      "title": "C.3.2 Applies to"
+    },
+    {
+      "id": "x4.1.1",
+      "level": "3",
+      "title": "C.3.3 Section 4.1.1 (and\nG2)"
+    },
+    {
+      "id": "x4.1.3",
+      "level": "3",
+      "title": "C.3.4 Section 4.1.3\nCharacters and case"
+    },
+    {
+      "id": "x4.3",
+      "level": "3",
+      "title": "C.3.5 Section 4.3 (Double sign problem)"
+    },
+    {
+      "id": "x4.3.2",
+      "level": "3",
+      "title": "C.3.6 Section 4.3.2\nLengths"
+    },
+    {
+      "id": "x4.3.3",
+      "level": "3",
+      "title": "C.3.7 Section 4.3.3\nPercentages"
+    },
+    {
+      "id": "x4.3.4",
+      "level": "3",
+      "title": "C.3.8 Section 4.3.4\nURLs and URIs"
+    },
+    {
+      "id": "x4.3.5",
+      "level": "3",
+      "title": "C.3.9 Section 4.3.5\nCounters"
+    },
+    {
+      "id": "x4.3.6",
+      "level": "3",
+      "title": "C.3.10 Section 4.3.6\nColors"
+    },
+    {
+      "id": "x4.3.7",
+      "level": "3",
+      "title": "C.3.11 Section 4.3.7\nStrings"
+    },
+    {
+      "id": "x5.10",
+      "level": "3",
+      "title": "C.3.12 Section 5.10\nPseudo-elements and pseudo-classes"
+    },
+    {
+      "id": "x6.4",
+      "level": "3",
+      "title": "C.3.13 Section 6.4 The cascade"
+    },
+    {
+      "id": "x8.1",
+      "level": "3",
+      "title": "C.3.14 Section 8.1 Box Dimensions"
+    },
+    {
+      "id": "x8.2",
+      "level": "3",
+      "title": "C.3.15 Section 8.2 Example of margins, padding, and borders"
+    },
+    {
+      "id": "x8.5.4",
+      "level": "3",
+      "title": "C.3.16 Section 8.5.4\nBorder shorthand properties"
+    },
+    {
+      "id": "x9.2.1",
+      "level": "3",
+      "title": "C.3.17 Section 9.2.1\nBlock-level elements and block boxes"
+    },
+    {
+      "id": "x9.3.1",
+      "level": "3",
+      "title": "C.3.18 Section 9.3.1\nChoosing a positioning scheme"
+    },
+    {
+      "id": "x9.3.2",
+      "level": "3",
+      "title": "C.3.19 Section 9.3.2\nBox offsets"
+    },
+    {
+      "id": "x9.4.1",
+      "level": "3",
+      "title": "C.3.20 Section 9.4.1\nBlock formatting contexts"
+    },
+    {
+      "id": "x9.4.2",
+      "level": "3",
+      "title": "C.3.21 Section 9.4.2\nInline formatting context"
+    },
+    {
+      "id": "x9.4.3",
+      "level": "3",
+      "title": "C.3.22 Section 9.4.3\nRelative positioning"
+    },
+    {
+      "id": "x9.5",
+      "level": "3",
+      "title": "C.3.23 Section 9.5\nFloats"
+    },
+    {
+      "id": "x9.5.1",
+      "level": "3",
+      "title": "C.3.24 Section 9.5.1\nPositioning the float"
+    },
+    {
+      "id": "x9.5.2",
+      "level": "3",
+      "title": "C.3.25 Section 9.5.2\nControlling flow next to floats"
+    },
+    {
+      "id": "x9.6",
+      "level": "3",
+      "title": "C.3.26 Section 9.6\nAbsolute positioning"
+    },
+    {
+      "id": "x9.7",
+      "level": "3",
+      "title": "C.3.27 Section 9.7\nRelationships between 'display', 'position', and 'float'"
+    },
+    {
+      "id": "x9.10",
+      "level": "3",
+      "title": "C.3.28 Section 9.10\nText direction"
+    },
+    {
+      "id": "x10.1",
+      "level": "3",
+      "title": "C.3.29 Section 10.1\nDefinition of \"containing block\""
+    },
+    {
+      "id": "x10.3.3",
+      "level": "3",
+      "title": "C.3.30 Section 10.3.3\nBlock-level, non-replaced elements in normal flow"
+    },
+    {
+      "id": "x10.4",
+      "level": "3",
+      "title": "C.3.31 Section 10.4\nMinimum and maximum widths"
+    },
+    {
+      "id": "x10.6.3",
+      "level": "3",
+      "title": "C.3.32 Section 10.6.3\nBlock-level non-replaced elements in normal flow when 'overflow'\ncomputes to 'visible'"
+    },
+    {
+      "id": "x10.7",
+      "level": "3",
+      "title": "C.3.33 Section 10.7\nMinimum and maximum heights"
+    },
+    {
+      "id": "x11.1.1",
+      "level": "3",
+      "title": "C.3.34 Section 11.1.1\nOverflow"
+    },
+    {
+      "id": "x11.1.2",
+      "level": "3",
+      "title": "C.3.35 Section 11.1.2 Clipping:\nthe 'clip' property"
+    },
+    {
+      "id": "x11.2",
+      "level": "3",
+      "title": "C.3.36 Section 11.2\nVisibility"
+    },
+    {
+      "id": "x12.4.2",
+      "level": "3",
+      "title": "C.3.37 Section 12.4.2 Counter\nstyles"
+    },
+    {
+      "id": "x12.6.2",
+      "level": "3",
+      "title": "C.3.38 Section 12.6.2 Lists"
+    },
+    {
+      "id": "x14.2",
+      "level": "3",
+      "title": "C.3.39 Section 14.2 The background"
+    },
+    {
+      "id": "x14.2.1",
+      "level": "3",
+      "title": "C.3.40 Section 14.2.1\nBackground properties"
+    },
+    {
+      "id": "x15.2",
+      "level": "3",
+      "title": "C.3.41 Section 15.2 Font\nmatching algorithm"
+    },
+    {
+      "id": "x15.7",
+      "level": "3",
+      "title": "C.3.42 Section 15.7\nFont size"
+    },
+    {
+      "id": "x16.1",
+      "level": "3",
+      "title": "C.3.43 Section 16.1\nIndentation"
+    },
+    {
+      "id": "x16.2",
+      "level": "3",
+      "title": "C.3.44 Section 16.2\nAlignment"
+    },
+    {
+      "id": "x17.2",
+      "level": "3",
+      "title": "C.3.45 Section 17.2 The CSS table\nmodel"
+    },
+    {
+      "id": "x17.2.1",
+      "level": "3",
+      "title": "C.3.46 Section 17.2.1\nAnonymous table objects"
+    },
+    {
+      "id": "x17.4",
+      "level": "3",
+      "title": "C.3.47 Section 17.4\nTables in the visual formatting model"
+    },
+    {
+      "id": "x17.5",
+      "level": "3",
+      "title": "C.3.48 Section 17.5\nVisual layout of table contents"
+    },
+    {
+      "id": "x17.5.1",
+      "level": "3",
+      "title": "C.3.49 Section 17.5.1\nTable layers and transparency"
+    },
+    {
+      "id": "x17.6.1",
+      "level": "3",
+      "title": "C.3.50 Section 17.6.1\nThe separated borders model"
+    },
+    {
+      "id": "x18.2",
+      "level": "3",
+      "title": "C.3.51 Section 18.2 System\nColors"
+    },
+    {
+      "id": "xE.2",
+      "level": "3",
+      "title": "C.3.52 Section E.2 Painting\norder"
+    },
+    {
+      "id": "r2.1",
+      "level": "3",
+      "title": "C.4.1 Section 2.1\nA brief CSS 2.1 tutorial for HTML"
+    },
+    {
+      "id": "r2.2",
+      "level": "3",
+      "title": "C.4.2 Section 2.2\nA brief CSS 2.1 tutorial for XML"
+    },
+    {
+      "id": "r2.3",
+      "level": "3",
+      "title": "C.4.3 Section 2.3\nThe CSS 2.1 processing model"
+    },
+    {
+      "id": "r3.1",
+      "level": "3",
+      "title": "C.4.4 Section 3.1\nDefinitions"
+    },
+    {
+      "id": "r4.1",
+      "level": "3",
+      "title": "C.4.5 Section 4.1\nSyntax"
+    },
+    {
+      "id": "r4.1.1",
+      "level": "3",
+      "title": "C.4.6 Section 4.1.1\nTokenization"
+    },
+    {
+      "id": "r4.1.3",
+      "level": "3",
+      "title": "C.4.7 Section 4.1.3\nCharacters and case"
+    },
+    {
+      "id": "r4.1.7",
+      "level": "3",
+      "title": "C.4.8 Section 4.1.7\nRule sets, declaration blocks, and selectors"
+    },
+    {
+      "id": "r4.2",
+      "level": "3",
+      "title": "C.4.9 Section 4.2\nRules for handling parsing errors"
+    },
+    {
+      "id": "r4.3.1",
+      "level": "3",
+      "title": "C.4.10 Section 4.3.1\nIntegers and real numbers"
+    },
+    {
+      "id": "r4.3.2",
+      "level": "3",
+      "title": "C.4.11 Section 4.3.2\nLengths"
+    },
+    {
+      "id": "r4.3.4",
+      "level": "3",
+      "title": "C.4.12 Section 4.3.4\nURLs and URIs"
+    },
+    {
+      "id": "r5.1",
+      "level": "3",
+      "title": "C.4.13 Section 5.1\nPattern matching"
+    },
+    {
+      "id": "r5.7",
+      "level": "3",
+      "title": "C.4.14 Section 5.7\nAdjacent sibling selectors"
+    },
+    {
+      "id": "r5.8.1",
+      "level": "3",
+      "title": "C.4.15 Section 5.8.1\nMatching attributes and attribute values"
+    },
+    {
+      "id": "r5.8.2",
+      "level": "3",
+      "title": "C.4.16 Section 5.8.2\nDefault attribute values in DTDs"
+    },
+    {
+      "id": "r5.9",
+      "level": "3",
+      "title": "C.4.17 Section 5.9 ID\nselectors"
+    },
+    {
+      "id": "r5.11.3",
+      "level": "3",
+      "title": "C.4.18 Section 5.11.3 The\ndynamic pseudo-classes: :hover, :active, and :focus"
+    },
+    {
+      "id": "r5.11.4",
+      "level": "3",
+      "title": "C.4.19 Section 5.11.4 The\nlanguage pseudo-class: :lang"
+    },
+    {
+      "id": "r5.12.2",
+      "level": "3",
+      "title": "C.4.20 Section 5.12.2\nThe :first-letter pseudo-element"
+    },
+    {
+      "id": "r6.2",
+      "level": "3",
+      "title": "C.4.21 Section 6.2 Inheritance"
+    },
+    {
+      "id": "r6.2.1",
+      "level": "3",
+      "title": "C.4.22 Section 6.2.1 The 'inherit' value"
+    },
+    {
+      "id": "r6.3",
+      "level": "3",
+      "title": "C.4.23 Section 6.3 The @import rule"
+    },
+    {
+      "id": "r6.4",
+      "level": "3",
+      "title": "C.4.24 Section 6.4 The Cascade"
+    },
+    {
+      "id": "r6.4.1",
+      "level": "3",
+      "title": "C.4.25 Section 6.4.1 Cascading order"
+    },
+    {
+      "id": "r6.4.3",
+      "level": "3",
+      "title": "C.4.26 Section 6.4.3 Calculating a\nselector's specificity"
+    },
+    {
+      "id": "r7.2.1",
+      "level": "3",
+      "title": "C.4.27 Section 7.2.1\nThe @media rule"
+    },
+    {
+      "id": "r7.3",
+      "level": "3",
+      "title": "C.4.28 Section 7.3 Recognized\nmedia types"
+    },
+    {
+      "id": "r7.3.1",
+      "level": "3",
+      "title": "C.4.29 Section 7.3.1\nMedia groups"
+    },
+    {
+      "id": "r8.1",
+      "level": "3",
+      "title": "C.4.30 Section 8.1 Box dimensions"
+    },
+    {
+      "id": "r8.3",
+      "level": "3",
+      "title": "C.4.31 Section 8.3 Margin properties"
+    },
+    {
+      "id": "r8.3.1",
+      "level": "3",
+      "title": "C.4.32 Section 8.3.1\nCollapsing margins"
+    },
+    {
+      "id": "r8.5.3",
+      "level": "3",
+      "title": "C.4.33 Section 8.5.3\nBorder style"
+    },
+    {
+      "id": "r9.1.1",
+      "level": "3",
+      "title": "C.4.34 Section 9.1.1\nThe viewport"
+    },
+    {
+      "id": "r9.2.4",
+      "level": "3",
+      "title": "C.4.35 Section 9.2.4 The\n'display' property"
+    },
+    {
+      "id": "r9.3.1",
+      "level": "3",
+      "title": "C.4.36 Section 9.3.1\nChoosing a positioning scheme"
+    },
+    {
+      "id": "r9.3.2",
+      "level": "3",
+      "title": "C.4.37 Section 9.3.2\nBox offsets"
+    },
+    {
+      "id": "r9.4.2",
+      "level": "3",
+      "title": "C.4.38 Section 9.4.2\nInline formatting context"
+    },
+    {
+      "id": "r9.4.3",
+      "level": "3",
+      "title": "C.4.39 Section 9.4.3\nRelative positioning"
+    },
+    {
+      "id": "r9.5",
+      "level": "3",
+      "title": "C.4.40 Section 9.5\nFloats"
+    },
+    {
+      "id": "r9.5.1",
+      "level": "3",
+      "title": "C.4.41 Section 9.5.1\nPositioning the float"
+    },
+    {
+      "id": "r9.5.2",
+      "level": "3",
+      "title": "C.4.42 Section 9.5.2\nControlling flow next to floats"
+    },
+    {
+      "id": "r9.8",
+      "level": "3",
+      "title": "C.4.43 Section 9.8\nComparison of normal flow, floats, and absolute positioning"
+    },
+    {
+      "id": "r10.1",
+      "level": "3",
+      "title": "C.4.44 Section 10.1\nDefinition of \"containing block\""
+    },
+    {
+      "id": "r10.2",
+      "level": "3",
+      "title": "C.4.45 Section 10.2\nContent width"
+    },
+    {
+      "id": "r10.3.3",
+      "level": "3",
+      "title": "C.4.46 Section 10.3.3\nBlock-level, non-replaced elements in normal flow"
+    },
+    {
+      "id": "r10.3.8",
+      "level": "3",
+      "title": "C.4.47 Section 10.3.8\nAbsolutely positioning, replaced elements"
+    },
+    {
+      "id": "r10.4",
+      "level": "3",
+      "title": "C.4.48 Section 10.4\nMinimum and maximum widths"
+    },
+    {
+      "id": "r10.6.1",
+      "level": "3",
+      "title": "C.4.49 Section 10.6\nCalculating heights and margins"
+    },
+    {
+      "id": "r10.7",
+      "level": "3",
+      "title": "C.4.50 Section 10.7\nMinimum and maximum heights"
+    },
+    {
+      "id": "r10.8",
+      "level": "3",
+      "title": "C.4.51 Section 10.8\nLine height calculations"
+    },
+    {
+      "id": "r10.8.1",
+      "level": "3",
+      "title": "C.4.52 Section 10.8.1 Leading\nand half-leading"
+    },
+    {
+      "id": "r11.1",
+      "level": "3",
+      "title": "C.4.53 Section 11.1\nOverflow and clipping"
+    },
+    {
+      "id": "r11.1.1",
+      "level": "3",
+      "title": "C.4.54 Section 11.1.1\nOverflow"
+    },
+    {
+      "id": "r11.1.2",
+      "level": "3",
+      "title": "C.4.55 Section 11.1.2\nClipping"
+    },
+    {
+      "id": "r11.2",
+      "level": "3",
+      "title": "C.4.56 Section 11.2\nVisibility"
+    },
+    {
+      "id": "r12.1",
+      "level": "3",
+      "title": "C.4.57 Section 12.1\nThe :before and :after pseudo-elements"
+    },
+    {
+      "id": "r12.2",
+      "level": "3",
+      "title": "C.4.58 Section 12.2\nThe 'content' property"
+    },
+    {
+      "id": "r12.3.2",
+      "level": "3",
+      "title": "C.4.59 Section 12.3.2\nInserting quotes with the 'content' property"
+    },
+    {
+      "id": "r12.4",
+      "level": "3",
+      "title": "C.4.60 Section 12.4\nAutomatic counters and numbering"
+    },
+    {
+      "id": "r12.4.3",
+      "level": "3",
+      "title": "C.4.61 Section 12.4.3\nCounters in elements with 'display: none'"
+    },
+    {
+      "id": "r14.2",
+      "level": "3",
+      "title": "C.4.62 Section 14.2 The background"
+    },
+    {
+      "id": "r15.1",
+      "level": "3",
+      "title": "C.4.63 Section 15.1 Fonts Introduction"
+    },
+    {
+      "id": "r15.2",
+      "level": "3",
+      "title": "C.4.64 Section 15.2\nFont matching algorithm"
+    },
+    {
+      "id": "r15.3",
+      "level": "3",
+      "title": "C.4.65 Section 15.2.2 Font family"
+    },
+    {
+      "id": "r15.3.1",
+      "level": "3",
+      "title": "C.4.66 Section 15.3.1\nGeneric font families"
+    },
+    {
+      "id": "r15.4",
+      "level": "3",
+      "title": "C.4.67 Section 15.4\nFont styling"
+    },
+    {
+      "id": "r15.5",
+      "level": "3",
+      "title": "C.4.68 Section 15.5\nSmall-caps"
+    },
+    {
+      "id": "r15.6",
+      "level": "3",
+      "title": "C.4.69 Section 15.6\nFont boldness"
+    },
+    {
+      "id": "r15.7",
+      "level": "3",
+      "title": "C.4.70 Section 15.7\nFont size"
+    },
+    {
+      "id": "r16.1",
+      "level": "3",
+      "title": "C.4.71 Section 16.1\nIndentation"
+    },
+    {
+      "id": "r16.2",
+      "level": "3",
+      "title": "C.4.72 Section 16.2\nAlignment"
+    },
+    {
+      "id": "r16.3.1",
+      "level": "3",
+      "title": "C.4.73 Section 16.3.1\nUnderlining, over lining, striking, and blinking"
+    },
+    {
+      "id": "r16.5",
+      "level": "3",
+      "title": "C.4.74 Section 16.5\nCapitalization"
+    },
+    {
+      "id": "r16.6",
+      "level": "3",
+      "title": "C.4.75 Section 16.6\nWhite space"
+    },
+    {
+      "id": "r17.1",
+      "level": "3",
+      "title": "C.4.76 Section 17.1\nIntroduction to tables"
+    },
+    {
+      "id": "r17.2",
+      "level": "3",
+      "title": "C.4.77 Section 17.2\nThe CSS table model"
+    },
+    {
+      "id": "r17.2.1",
+      "level": "3",
+      "title": "C.4.78 Section 17.2.1\nAnonymous table objects"
+    },
+    {
+      "id": "r17.4",
+      "level": "3",
+      "title": "C.4.79 Section 17.4\nTables in the visual formatting model"
+    },
+    {
+      "id": "r17.5",
+      "level": "3",
+      "title": "C.4.80 Section 17.5\nVisual layout of table contents"
+    },
+    {
+      "id": "r17.5.1",
+      "level": "3",
+      "title": "C.4.81 Section 17.5.1 Table layers and\ntransparency"
+    },
+    {
+      "id": "r17.5.2",
+      "level": "3",
+      "title": "C.4.82 Section 17.5.2 Table width algorithms"
+    },
+    {
+      "id": "r17.5.2.1",
+      "level": "3",
+      "title": "C.4.83 Section 17.5.2.1\nFixed table layout"
+    },
+    {
+      "id": "r17.5.2.2",
+      "level": "3",
+      "title": "C.4.84 Section 17.5.2.2\nAutomatic table layout"
+    },
+    {
+      "id": "r17.5.4",
+      "level": "3",
+      "title": "C.4.85 Section 17.5.4\nHorizontal alignment in a column"
+    },
+    {
+      "id": "r17.5.5",
+      "level": "3",
+      "title": "C.4.86 Section 17.5.5\nDynamic row and column effects"
+    },
+    {
+      "id": "r17.6.1",
+      "level": "3",
+      "title": "C.4.87 Section 17.6.1\nThe separated borders model"
+    },
+    {
+      "id": "r17.6.2",
+      "level": "3",
+      "title": "C.4.88 Section 17.6.2\nThe collapsing borders model"
+    },
+    {
+      "id": "r18.2",
+      "level": "3",
+      "title": "C.4.89 Section 18.2\nSystem Colors"
+    },
+    {
+      "id": "r18.4",
+      "level": "3",
+      "title": "C.4.90 Section 18.4\nDynamic outlines"
+    },
+    {
+      "id": "r18.4.1",
+      "level": "3",
+      "title": "C.4.91 Section 18.4.1\nOutlines and the focus"
+    },
+    {
+      "id": "rD",
+      "level": "3",
+      "title": "C.4.92 Appendix D Default style sheet for\nHTML 4"
+    },
+    {
+      "id": "s.1.4.2.1",
+      "level": "3",
+      "title": "C.5.1 \nSection 1.4.2.1 Value"
+    },
+    {
+      "id": "s.2.3",
+      "level": "3",
+      "title": "C.5.2 \nSection 2.3 The CSS 2.1 processing model"
+    },
+    {
+      "id": "s.3.1",
+      "level": "3",
+      "title": "C.5.3 \nSection 3.1 Definitions"
+    },
+    {
+      "id": "s.4.1.1",
+      "level": "3",
+      "title": "C.5.4  Section\n4.1.1 Tokenization"
+    },
+    {
+      "id": "s.4.1.2.2",
+      "level": "3",
+      "title": "C.5.5 \nSection 4.1.2.2 Informative Historical Notes"
+    },
+    {
+      "id": "s.4.1.3",
+      "level": "3",
+      "title": "C.5.6 \nSection 4.1.3 Characters and case"
+    },
+    {
+      "id": "s.4.1.3a",
+      "level": "3",
+      "title": "C.5.7 \nSection 4.1.3 Characters and case"
+    },
+    {
+      "id": "s.4.1.3b",
+      "level": "3",
+      "title": "C.5.8 \nSection 4.1.3 Characters and case"
+    },
+    {
+      "id": "s.4.1.3c",
+      "level": "3",
+      "title": "C.5.9 \nSection 4.1.3 Characters and case"
+    },
+    {
+      "id": "s.4.1.5",
+      "level": "3",
+      "title": "C.5.10 \nSection 4.1.5  At-rules"
+    },
+    {
+      "id": "s.4.1.7",
+      "level": "3",
+      "title": "C.5.11 Section 4.1.7\nRule sets, declaration blocks, and selectors"
+    },
+    {
+      "id": "s.4.2",
+      "level": "3",
+      "title": "C.5.12 \nSection 4.2 Rules for handling parsing errors"
+    },
+    {
+      "id": "s.4.2a",
+      "level": "3",
+      "title": "C.5.13 \nSection 4.2 Rules for handling parsing errors"
+    },
+    {
+      "id": "s.4.3.2",
+      "level": "3",
+      "title": "C.5.14 \nSection 4.3.2 Lengths"
+    },
+    {
+      "id": "s.4.3.5",
+      "level": "3",
+      "title": "C.5.15 \nSection 4.3.5 Counters"
+    },
+    {
+      "id": "s.5.8.1",
+      "level": "3",
+      "title": "C.5.16 \nSection 5.8.1 Matching attributes and attribute values"
+    },
+    {
+      "id": "s.5.8.2",
+      "level": "3",
+      "title": "C.5.17  Section\n5.8.2 Default attribute values in DTDs"
+    },
+    {
+      "id": "s.5.11.4",
+      "level": "3",
+      "title": "C.5.18 \nSection 5.11.4 The language pseudo-class: :lang"
+    },
+    {
+      "id": "s.5.12.3",
+      "level": "3",
+      "title": "C.5.19 \nSection 5.12.3 The :before and :after pseudo-elements"
+    },
+    {
+      "id": "s.6.3",
+      "level": "3",
+      "title": "C.5.20 \nSection 6.3 The @import rule"
+    },
+    {
+      "id": "s.6.3a",
+      "level": "3",
+      "title": "C.5.21 \nSection 6.3 The @import rule"
+    },
+    {
+      "id": "s.6.4.1",
+      "level": "3",
+      "title": "C.5.22 \nSection 6.4.1 Cascading order"
+    },
+    {
+      "id": "s.6.4.1a",
+      "level": "3",
+      "title": "C.5.23 \nSection 6.4.1 Cascading order"
+    },
+    {
+      "id": "s.7.2.1",
+      "level": "3",
+      "title": "C.5.24 \nSection 7.2.1 The @media rule"
+    },
+    {
+      "id": "s.8.3.1",
+      "level": "3",
+      "title": "C.5.25 \nSection 8.3.1 Collapsing margins"
+    },
+    {
+      "id": "s.8.3.1a",
+      "level": "3",
+      "title": "C.5.26 \nSection 8.3.1 Collapsing margins"
+    },
+    {
+      "id": "s.8.3.1b",
+      "level": "3",
+      "title": "C.5.27 \nSection 8.3.1 Collapsing margins"
+    },
+    {
+      "id": "s.9.2.2",
+      "level": "3",
+      "title": "C.5.28 \nSection 9.2.2 Inline-level elements and inline boxes"
+    },
+    {
+      "id": "s.9.2.4",
+      "level": "3",
+      "title": "C.5.29 \nSection 9.2.4 The 'display' property"
+    },
+    {
+      "id": "s.9.3.2",
+      "level": "3",
+      "title": "C.5.30 \nSection 9.3.2 Box offsets: 'top', 'right', 'bottom',\n'left'"
+    },
+    {
+      "id": "s.9.5",
+      "level": "3",
+      "title": "C.5.31 \nSection 9.5 Floats"
+    },
+    {
+      "id": "s.9.5a",
+      "level": "3",
+      "title": "C.5.32 \nSection 9.5 Floats"
+    },
+    {
+      "id": "s.9.5.2",
+      "level": "3",
+      "title": "C.5.33 \nSection 9.5.2 Controlling flow next to floats: the 'clear'\nproperty"
+    },
+    {
+      "id": "s.9.6.1",
+      "level": "3",
+      "title": "C.5.34 \nSection 9.6.1 Fixed positioning"
+    },
+    {
+      "id": "s.9.9.1",
+      "level": "3",
+      "title": "C.5.35 \nSection 9.9.1 Specifying the stack level: the 'z-index'\nproperty"
+    },
+    {
+      "id": "s.10.1",
+      "level": "3",
+      "title": "C.5.36 \nSection 10.1 Definition of \"containing block\""
+    },
+    {
+      "id": "s.10.3",
+      "level": "3",
+      "title": "C.5.37 \nSection 10.3 Calculating widths and margins"
+    },
+    {
+      "id": "s.10.3.1",
+      "level": "3",
+      "title": "C.5.38 \nSection 10.3.1 Inline, non-replaced elements"
+    },
+    {
+      "id": "s.10.3.2",
+      "level": "3",
+      "title": "C.5.39 \nSection 10.3.2 Inline, replaced elements"
+    },
+    {
+      "id": "s.10.3.2a",
+      "level": "3",
+      "title": "C.5.40 \nSection 10.3.2 Inline, replaced elements"
+    },
+    {
+      "id": "s.10.3.3",
+      "level": "3",
+      "title": "C.5.41 \nSection 10.3.3 Block-level, non-replaced elements in normal\nflow"
+    },
+    {
+      "id": "s.10.3.7",
+      "level": "3",
+      "title": "C.5.42 \nSection 10.3.7 Absolutely positioned, non-replaced elements"
+    },
+    {
+      "id": "s.10.3.7a",
+      "level": "3",
+      "title": "C.5.43 \nSection 10.3.7 Absolutely positioned, non-replaced elements"
+    },
+    {
+      "id": "s.10.3.8",
+      "level": "3",
+      "title": "C.5.44 \nSection 10.3.8 Absolutely positioned, replaced elements"
+    },
+    {
+      "id": "s.10.3.8a",
+      "level": "3",
+      "title": "C.5.45 \nSection 10.3.8 Absolutely positioned, replaced elements"
+    },
+    {
+      "id": "s.10.3.8c",
+      "level": "3",
+      "title": "C.5.46 \nSection 10.3.8 Absolutely positioned, replaced elements"
+    },
+    {
+      "id": "s.10.5",
+      "level": "3",
+      "title": "C.5.47 \nSection 10.5 Content height: the 'height' property"
+    },
+    {
+      "id": "s.10.6.2",
+      "level": "3",
+      "title": "C.5.48 \nSection 10.6.2 Inline replaced elements […]"
+    },
+    {
+      "id": "s.10.6.4",
+      "level": "3",
+      "title": "C.5.49 \nSection 10.6.4 Absolutely positioned, non-replaced\nelements"
+    },
+    {
+      "id": "s.10.6.5",
+      "level": "3",
+      "title": "C.5.50 \nSection 10.6.5 Absolutely positioned, replaced elements"
+    },
+    {
+      "id": "s.10.8.1",
+      "level": "3",
+      "title": "C.5.51  Section 10.8.1\nLeading and half-leading"
+    },
+    {
+      "id": "s.11.1.1",
+      "level": "3",
+      "title": "C.5.52 \nSection 11.1.1 Overflow: the 'overflow' property"
+    },
+    {
+      "id": "s.11.1.2",
+      "level": "3",
+      "title": "C.5.53 \nSection 11.1.2 Clipping: the 'clip' property"
+    },
+    {
+      "id": "s.12.2",
+      "level": "3",
+      "title": "C.5.54 \nSection 12.2 The 'content' property"
+    },
+    {
+      "id": "s.12.4.2",
+      "level": "3",
+      "title": "C.5.55 \nSection 12.4.2 Counter styles"
+    },
+    {
+      "id": "s.12.5",
+      "level": "3",
+      "title": "C.5.56 \nSection 12.5 Lists"
+    },
+    {
+      "id": "s.12.5.1",
+      "level": "3",
+      "title": "C.5.57 \nSection 12.5.1 Lists: the 'list-style-type', 'list-style-image',\n'list-style-position', and 'list-style' properties"
+    },
+    {
+      "id": "s.12.5.1a",
+      "level": "3",
+      "title": "C.5.58 \nSection 12.5.1 Lists: the 'list-style-type', 'list-style-image',\n'list-style-position', and 'list-style' properties"
+    },
+    {
+      "id": "s.12.5.1b",
+      "level": "3",
+      "title": "C.5.59 \nSection 12.5.1 Lists: the 'list-style-type', 'list-style-image',\n'list-style-position', and 'list-style' properties"
+    },
+    {
+      "id": "s.13.2",
+      "level": "3",
+      "title": "C.5.60 \nSection 13.2 Page boxes: the @page rule"
+    },
+    {
+      "id": "s.13.2.1.1",
+      "level": "3",
+      "title": "C.5.61 \nSection 13.2.1.1 Rendering page boxes that do not fit a target\nsheet"
+    },
+    {
+      "id": "s.13.2.3",
+      "level": "3",
+      "title": "C.5.62 \nSection 13.2.3 Content outside the page box"
+    },
+    {
+      "id": "s.13.3.1",
+      "level": "3",
+      "title": "C.5.63 \nSection 13.3.1 Page break properties: 'page-break-before',\n'page-break-after', 'page-break-inside'"
+    },
+    {
+      "id": "s.13.3.1a",
+      "level": "3",
+      "title": "C.5.64 \nSection 13.3.1 Page break properties: 'page-break-before',\n'page-break-after', 'page-break-inside'"
+    },
+    {
+      "id": "s.13.3.2",
+      "level": "3",
+      "title": "C.5.65 \nSection 13.3.2 Breaks inside elements: 'orphans',\n'widows'"
+    },
+    {
+      "id": "s.13.3.2a",
+      "level": "3",
+      "title": "C.5.66 \nSection 13.3.2 Breaks inside elements: 'orphans',\n'widows'"
+    },
+    {
+      "id": "s.13.3.3",
+      "level": "3",
+      "title": "C.5.67 \nSection 13.3.3 Allowed page breaks"
+    },
+    {
+      "id": "s.13.3.3a",
+      "level": "3",
+      "title": "C.5.68 \nSection 13.3.3 Allowed page breaks"
+    },
+    {
+      "id": "s.13.3.3b",
+      "level": "3",
+      "title": "C.5.69 \nSection 13.3.3 Allowed page breaks"
+    },
+    {
+      "id": "s.13.3.5",
+      "level": "3",
+      "title": "C.5.70 \nSection 13.3.5 \"Best\" page breaks"
+    },
+    {
+      "id": "s.14.2",
+      "level": "3",
+      "title": "C.5.71 \nSection 14.2 The background"
+    },
+    {
+      "id": "s.14.2a",
+      "level": "3",
+      "title": "C.5.72 \nSection 14.2 The background"
+    },
+    {
+      "id": "s.14.2.1a",
+      "level": "3",
+      "title": "C.5.73 \nSection 14.2.1 Background properties: 'background-color',\n'background-image', 'background-repeat', 'background-attachment',\n'background-position', and 'background'"
+    },
+    {
+      "id": "s.15.6",
+      "level": "3",
+      "title": "C.5.74 \nSection 15.6 Font boldness: the 'font-weight' property"
+    },
+    {
+      "id": "s.16.6",
+      "level": "3",
+      "title": "C.5.75 \nSection 16.6 Whitespace: the 'white-space' property"
+    },
+    {
+      "id": "s.16.6.1",
+      "level": "3",
+      "title": "C.5.76 \nSection 16.6.1 The 'white-space' processing model"
+    },
+    {
+      "id": "s.17.2.1",
+      "level": "3",
+      "title": "C.5.77  Section\n17.2.1 Anonymous table objects"
+    },
+    {
+      "id": "s.17.2.1a",
+      "level": "3",
+      "title": "C.5.78  Section\n17.2.1 Anonymous table objects"
+    },
+    {
+      "id": "s.17.4",
+      "level": "3",
+      "title": "C.5.79 \nSection 17.4 Tables in the visual formatting model"
+    },
+    {
+      "id": "s.17.5.4a",
+      "level": "3",
+      "title": "C.5.80 \nSection 17.5.4 Horizontal alignment in a column"
+    },
+    {
+      "id": "s.18.1",
+      "level": "3",
+      "title": "C.5.81 \nSection 18.1 Cursors: the 'cursor' property"
+    },
+    {
+      "id": "s.B.2",
+      "level": "3",
+      "title": "C.5.82 \nSection B.2 Informative references"
+    },
+    {
+      "id": "s.D",
+      "level": "3",
+      "title": "C.5.83 \nAppendix D. Default style sheet for HTML 4"
+    },
+    {
+      "id": "s.Da",
+      "level": "3",
+      "title": "C.5.84 \nAppendix D. Default style sheet for HTML 4"
+    },
+    {
+      "id": "s.E.2",
+      "level": "3",
+      "title": "C.5.85  Section\nE.2 Painting order"
+    },
+    {
+      "id": "s.G",
+      "level": "3",
+      "title": "C.5.86  Appendix\nG. Grammar of CSS 2.1"
+    },
+    {
+      "id": "s.G.1",
+      "level": "3",
+      "title": "C.5.87 \nSection G.1 Grammar"
+    },
+    {
+      "id": "s.G.2",
+      "level": "3",
+      "title": "C.5.88 \nSection G.2 Lexical scanner"
+    },
+    {
+      "id": "s.G.2a",
+      "level": "3",
+      "title": "C.5.89 \nSection G.2 Lexical scanner"
+    },
+    {
+      "id": "s.G.2b",
+      "level": "3",
+      "title": "C.5.90 \nSection G.2 Lexical scanner"
+    },
+    {
+      "id": "s.G.2c",
+      "level": "3",
+      "title": "C.5.91 \nSection G.2 Lexical scanner"
+    },
+    {
+      "id": "s.I",
+      "level": "3",
+      "title": "C.5.92 \nAppendix I. Index"
+    },
+    {
+      "id": "s.4.2b",
+      "level": "3",
+      "title": "C.6.1 \nSection 4.2 Rules for handling parsing errors"
+    },
+    {
+      "id": "s.13.3.3c",
+      "level": "3",
+      "title": "C.6.2 \nSection 13.3.3 Allowed page breaks"
+    },
+    {
+      "id": "s.15.3",
+      "level": "3",
+      "title": "C.6.3 \nSection 15.3 Font family: the 'font-family' property"
+    },
+    {
+      "id": "s.15.3.1.1",
+      "level": "3",
+      "title": "C.6.4 \nSection 15.3.1.1 serif"
+    },
+    {
+      "id": "s.15.7",
+      "level": "3",
+      "title": "C.6.5 \nSection 15.7 Font size: the 'font-size' property"
+    },
+    {
+      "id": "s.17.5.2.1",
+      "level": "3",
+      "title": "C.6.6 \nSection 17.5.2.1 Fixed table layout"
+    },
+    {
+      "id": "s.17.5.3",
+      "level": "3",
+      "title": "C.6.7 \nSection 17.5.3 Table height layout"
+    },
+    {
+      "id": "s.Ga",
+      "level": "3",
+      "title": "C.6.8 \nAppendix G. Grammar of CSS 2.1"
+    },
+    {
+      "id": "t.1",
+      "level": "3",
+      "title": "C.7.1 \nSection 1.4.2.1 Value"
+    },
+    {
+      "id": "t.3.1",
+      "level": "3",
+      "title": "C.7.2 \nSection 3.1 Definitions"
+    },
+    {
+      "id": "t.4.1.1",
+      "level": "3",
+      "title": "C.7.3 \nSection 4.1.1 Tokenization"
+    },
+    {
+      "id": "t.4.1.1a",
+      "level": "3",
+      "title": "C.7.4 \nSection 4.1.1 Tokenization"
+    },
+    {
+      "id": "t.4.1.1b",
+      "level": "3",
+      "title": "C.7.5 \nSection 4.1.1 Tokenization"
+    },
+    {
+      "id": "t.4.1.1c",
+      "level": "3",
+      "title": "C.7.6 \nSection 4.1.1 Tokenization"
+    },
+    {
+      "id": "t.4.1.2.2",
+      "level": "3",
+      "title": "C.7.7 \nSection 4.1.2.2 Informative Historical Notes"
+    },
+    {
+      "id": "t.4.1.3",
+      "level": "3",
+      "title": "C.7.8 \nSection 4.1.3 Characters and case"
+    },
+    {
+      "id": "t.4.1.3a",
+      "level": "3",
+      "title": "C.7.9 \nSection 4.1.3 Characters and case"
+    },
+    {
+      "id": "t.4.1.8",
+      "level": "3",
+      "title": "C.7.10 \nSection 4.1.8 Declarations and properties"
+    },
+    {
+      "id": "t.4.2",
+      "level": "3",
+      "title": "C.7.11 \nSection 4.2 Rules for handling parsing errors"
+    },
+    {
+      "id": "t.4.3.2",
+      "level": "3",
+      "title": "C.7.12 \nSection 4.3.2 Lengths"
+    },
+    {
+      "id": "t.4.3.2a",
+      "level": "3",
+      "title": "C.7.13 \nSection 4.3.2 Lengths"
+    },
+    {
+      "id": "t.4.3.4a",
+      "level": "3",
+      "title": "C.7.14 \nSection 4.3.4 URLs and URIs"
+    },
+    {
+      "id": "t.4.3.4",
+      "level": "3",
+      "title": "C.7.15 \nSection 4.3.4 URLs and URIs"
+    },
+    {
+      "id": "t.5.8.2",
+      "level": "3",
+      "title": "C.7.16 \nSection 5.8.2 Default attribute values in DTDs"
+    },
+    {
+      "id": "t.5.11.4",
+      "level": "3",
+      "title": "C.7.17 \nSection 5.11.4 The language pseudo-class: :lang"
+    },
+    {
+      "id": "t.5.12",
+      "level": "3",
+      "title": "C.7.18 \nSection 5.12 Pseudo-elements"
+    },
+    {
+      "id": "t.5.12.1",
+      "level": "3",
+      "title": "C.7.19 \nSection 5.12.1 The :first-line pseudo-element"
+    },
+    {
+      "id": "t.5.12.2",
+      "level": "3",
+      "title": "C.7.20 \nSection 5.12.2 The :first-letter pseudo-element"
+    },
+    {
+      "id": "t.6.2",
+      "level": "3",
+      "title": "C.7.21 \nSection 6.2 Inheritance"
+    },
+    {
+      "id": "t.6.4.4",
+      "level": "3",
+      "title": "C.7.22 \nSection 6.4.4 Precedence of non-CSS presentational hints"
+    },
+    {
+      "id": "t.7.3",
+      "level": "3",
+      "title": "C.7.23 \nSection 7.3 Recognized media types"
+    },
+    {
+      "id": "t.8.3.1",
+      "level": "3",
+      "title": "C.7.24 \nSection 8.3.1 Collapsing margins"
+    },
+    {
+      "id": "t.8.3.1a",
+      "level": "3",
+      "title": "C.7.25 \nSection 8.3.1 Collapsing margins"
+    },
+    {
+      "id": "t.9.2.1",
+      "level": "3",
+      "title": "C.7.26 \nSection 9.2.1 Block-level elements and block boxes"
+    },
+    {
+      "id": "t.9.2.1.1",
+      "level": "3",
+      "title": "C.7.27 \nSection 9.2.1.1 Anonymous block boxes"
+    },
+    {
+      "id": "t.9.2.1.1a",
+      "level": "3",
+      "title": "C.7.28 \nSection 9.2.1.1 Anonymous block boxes"
+    },
+    {
+      "id": "t.9.2.1.1b",
+      "level": "3",
+      "title": "C.7.29 \nSection 9.2.1.1 Anonymous block boxes"
+    },
+    {
+      "id": "t.9.2.1.1c",
+      "level": "3",
+      "title": "C.7.30 \nSection 9.2.1.1 Anonymous block boxes"
+    },
+    {
+      "id": "t.9.2.2",
+      "level": "3",
+      "title": "C.7.31 \nSection 9.2.2 Inline-level elements and inline boxes"
+    },
+    {
+      "id": "t.9.2.3a",
+      "level": "3",
+      "title": "C.7.32 \nSection 9.2.3 Run-in boxes"
+    },
+    {
+      "id": "t.9.2.4",
+      "level": "3",
+      "title": "C.7.33 \nSection 9.2.4 The 'display' property"
+    },
+    {
+      "id": "t.9.2.4a",
+      "level": "3",
+      "title": "C.7.34 \nSection 9.2.4 The 'display' property"
+    },
+    {
+      "id": "t.9.3",
+      "level": "3",
+      "title": "C.7.35 \nSection 9.3 Positioning schemes"
+    },
+    {
+      "id": "t.9.4",
+      "level": "3",
+      "title": "C.7.36 \nSection 9.4 Normal flow"
+    },
+    {
+      "id": "t.9.3.2",
+      "level": "3",
+      "title": "C.7.37 \nSection 9.3.2 Box offsets: 'top', 'right', 'bottom', 'left'"
+    },
+    {
+      "id": "t.9.5",
+      "level": "3",
+      "title": "C.7.38 \nSection 9.5 Floats"
+    },
+    {
+      "id": "t.9.5a",
+      "level": "3",
+      "title": "C.7.39 \nSection 9.5 Floats"
+    },
+    {
+      "id": "t.9.5.2",
+      "level": "3",
+      "title": "C.7.40 \nSection 9.5.2 Controlling flow next to floats: the 'clear'\nproperty"
+    },
+    {
+      "id": "t.9.5.2a",
+      "level": "3",
+      "title": "C.7.41 \nSection 9.5.2 Controlling flow next to floats: the 'clear'\nproperty"
+    },
+    {
+      "id": "t.9.5.2b",
+      "level": "3",
+      "title": "C.7.42 \nSection 9.5.2 Controlling flow next to floats: the 'clear'\nproperty"
+    },
+    {
+      "id": "t.9.5.2c",
+      "level": "3",
+      "title": "C.7.43 \nSection 9.5.2 Controlling flow next to floats: the 'clear'\nproperty"
+    },
+    {
+      "id": "t.14.2.1",
+      "level": "3",
+      "title": "C.7.44 \nSection 14.2.1 Background properties"
+    },
+    {
+      "id": "t.9.9.1",
+      "level": "3",
+      "title": "C.7.45 \nSection 9.9.1 Specifying the stack level: the 'z-index'\nproperty"
+    },
+    {
+      "id": "t.9.10",
+      "level": "3",
+      "title": "C.7.46 \nSection 9.10 Text direction: the 'direction' and 'unicode-bidi'\nproperties"
+    },
+    {
+      "id": "t.9.10a",
+      "level": "3",
+      "title": "C.7.47 \nSection 9.10 Text direction: the 'direction' and 'unicode-bidi'\nproperties"
+    },
+    {
+      "id": "t.9.10b",
+      "level": "3",
+      "title": "C.7.48 \nSection 9.10 Text direction: the 'direction' and 'unicode-bidi'\nproperties"
+    },
+    {
+      "id": "t.10.1",
+      "level": "3",
+      "title": "C.7.49 \nSection 10.1 Definition of \"containing block\""
+    },
+    {
+      "id": "t.10.2",
+      "level": "3",
+      "title": "C.7.50 \nSection 10.2 Content width: the 'width' property"
+    },
+    {
+      "id": "t.10.2a",
+      "level": "3",
+      "title": "C.7.51 \nSection 10.2 Content width: the 'width' property"
+    },
+    {
+      "id": "t.10.2b",
+      "level": "3",
+      "title": "C.7.52 \nSection 10.2 Content width: the 'width' property"
+    },
+    {
+      "id": "t.10.5",
+      "level": "3",
+      "title": "C.7.53 \nSection 10.5 Content height: the 'height' property"
+    },
+    {
+      "id": "t.10.5a",
+      "level": "3",
+      "title": "C.7.54 \nSection 10.5 Content height: the 'height' property"
+    },
+    {
+      "id": "t.10.6.7",
+      "level": "3",
+      "title": "C.7.55 \nSection 10.6.7 'Auto' heights for block formatting context\nroots"
+    },
+    {
+      "id": "t.10.7",
+      "level": "3",
+      "title": "C.7.56 \nSection 10.7 Minimum and maximum heights: 'min-height' and\n'max-height'"
+    },
+    {
+      "id": "t.10.8",
+      "level": "3",
+      "title": "C.7.57 Section 10.8\nLine height calculations: the 'line-height' and 'vertical-align'\nproperties"
+    },
+    {
+      "id": "t.10.8a",
+      "level": "3",
+      "title": "C.7.58 Section 10.8\nLine height calculations: the 'line-height' and 'vertical-align'\nproperties"
+    },
+    {
+      "id": "t.10.8.1",
+      "level": "3",
+      "title": "C.7.59 Section 10.8.1\nLeading and half-leading"
+    },
+    {
+      "id": "t.10.8.1a",
+      "level": "3",
+      "title": "C.7.60 Section 10.8.1\nLeading and half-leading"
+    },
+    {
+      "id": "t.10.8.1b",
+      "level": "3",
+      "title": "C.7.61 Section 10.8.1\nLeading and half-leading"
+    },
+    {
+      "id": "t.11.1",
+      "level": "3",
+      "title": "C.7.62 \nSection 11.1 Overflow and clipping"
+    },
+    {
+      "id": "t.11.1.1",
+      "level": "3",
+      "title": "C.7.63 \nSection 11.1.1 Overflow: the 'overflow' property"
+    },
+    {
+      "id": "t.11.1.1a",
+      "level": "3",
+      "title": "C.7.64 \nSection 11.1.1 Overflow: the 'overflow' property"
+    },
+    {
+      "id": "t.11.1.1b",
+      "level": "3",
+      "title": "C.7.65 \nSection 11.1.1 Overflow: the 'overflow' property"
+    },
+    {
+      "id": "t.11.1.2",
+      "level": "3",
+      "title": "C.7.66 \nSection 11.1.2 Clipping: the 'clip' property"
+    },
+    {
+      "id": "t.12.5",
+      "level": "3",
+      "title": "C.7.67 \nSection 12.5 Lists"
+    },
+    {
+      "id": "t.12.5.1",
+      "level": "3",
+      "title": "C.7.68 \nSection 12.5.1 Lists: the 'list-style-type', 'list-style-image',\n'list-style-position', and 'list-style' properties"
+    },
+    {
+      "id": "t.12.5.1a",
+      "level": "3",
+      "title": "C.7.69 \nSection 12.5.1 Lists: the 'list-style-type', 'list-style-image',\n'list-style-position', and 'list-style' properties"
+    },
+    {
+      "id": "t.12.5.1b",
+      "level": "3",
+      "title": "C.7.70 \nSection 12.5.1 Lists: the 'list-style-type', 'list-style-image',\n'list-style-position', and 'list-style' properties"
+    },
+    {
+      "id": "t.12.5.1c",
+      "level": "3",
+      "title": "C.7.71 \nSection 12.5.1 Lists: the 'list-style-type', 'list-style-image',\n'list-style-position', and 'list-style' properties"
+    },
+    {
+      "id": "t.12.5.1d",
+      "level": "3",
+      "title": "C.7.72 \nSection 12.5.1 Lists: the 'list-style-type', 'list-style-image',\n'list-style-position', and 'list-style' properties"
+    },
+    {
+      "id": "t.13.2",
+      "level": "3",
+      "title": "C.7.73  Section 13.2\nPage boxes: the @page rule"
+    },
+    {
+      "id": "t.13.2.2",
+      "level": "3",
+      "title": "C.7.74 \nSection 13.2.2 Page selectors: selecting left, right, and first\npages"
+    },
+    {
+      "id": "t.13.3.2",
+      "level": "3",
+      "title": "C.7.75 \nSection 13.3.2 Breaks inside elements: 'orphans',\n'widows'"
+    },
+    {
+      "id": "t.13.3.3",
+      "level": "3",
+      "title": "C.7.76 \nSection 13.3.3 Allowed page breaks"
+    },
+    {
+      "id": "t.15.3",
+      "level": "3",
+      "title": "C.7.77 \nSection 15.3 Font family: the 'font-family' property"
+    },
+    {
+      "id": "t.15.3.1",
+      "level": "3",
+      "title": "C.7.78 \nSection 15.3.1 Generic font families"
+    },
+    {
+      "id": "t.15.6",
+      "level": "3",
+      "title": "C.7.79 \nSection 15.6 Font boldness: the 'font-weight' property"
+    },
+    {
+      "id": "t.15.6q",
+      "level": "3",
+      "title": "C.7.80 \nSection 15.6 Font boldness: the 'font-weight' property"
+    },
+    {
+      "id": "t.15.7",
+      "level": "3",
+      "title": "C.7.81 \nSection 15.7 Font size: the 'font-size' property"
+    },
+    {
+      "id": "t.16.1",
+      "level": "3",
+      "title": "C.7.82 \nSection 16.1 Indentation: the 'text-indent' property"
+    },
+    {
+      "id": "t.16.1a",
+      "level": "3",
+      "title": "C.7.83 \nSection 16.1 Indentation: the 'text-indent' property"
+    },
+    {
+      "id": "t.16.2",
+      "level": "3",
+      "title": "C.7.84 \nSection 16.2 Alignment: the 'text-align' property"
+    },
+    {
+      "id": "t.16.2a",
+      "level": "3",
+      "title": "C.7.85 \nSection 16.2 Alignment: the 'text-align' property"
+    },
+    {
+      "id": "t.16.3.1",
+      "level": "3",
+      "title": "C.7.86 \nSection 16.3.1 Underlining, overlining, striking, and blinking: the 'text-decoration' property"
+    },
+    {
+      "id": "t.16.3.1a",
+      "level": "3",
+      "title": "C.7.87 \nSection 16.3.1 Underlining, overlining, striking, and blinking:\nthe 'text-decoration' property"
+    },
+    {
+      "id": "t.16.4",
+      "level": "3",
+      "title": "C.7.88 \nSection 16.4 Letter and word spacing: the 'letter-spacing' and\n'word-spacing' properties"
+    },
+    {
+      "id": "t.16.6",
+      "level": "3",
+      "title": "C.7.89 \nSection 16.6 White space: the 'white-space' property"
+    },
+    {
+      "id": "t.16.6.1",
+      "level": "3",
+      "title": "C.7.90 \nSection 16.6.1 The 'white-space' processing model"
+    },
+    {
+      "id": "t.16.6.1a",
+      "level": "3",
+      "title": "C.7.91 \nSection 16.6.1 The 'white-space' processing model"
+    },
+    {
+      "id": "t.16.6.1b",
+      "level": "3",
+      "title": "C.7.92 \nSection 16.6.1 The 'white-space' processing model"
+    },
+    {
+      "id": "t.17.2",
+      "level": "3",
+      "title": "C.7.93 \nSection 17.2 The CSS table model"
+    },
+    {
+      "id": "t.17.2.1",
+      "level": "3",
+      "title": "C.7.94 \nSection 17.2.1 Anonymous table objects"
+    },
+    {
+      "id": "t.17.2.1a",
+      "level": "3",
+      "title": "C.7.95 \nSection 17.2.1 Anonymous table objects"
+    },
+    {
+      "id": "t.17.4",
+      "level": "3",
+      "title": "C.7.96 \nSection 17.4 Tables in the visual formatting model"
+    },
+    {
+      "id": "t.17.4a",
+      "level": "3",
+      "title": "C.7.97 \nSection 17.4 Tables in the visual formatting model"
+    },
+    {
+      "id": "t.17.5.2.2",
+      "level": "3",
+      "title": "C.7.98 \nSection 17.5.2.2 Automatic table layout"
+    },
+    {
+      "id": "t.17.5.3",
+      "level": "3",
+      "title": "C.7.99 \nSection 17.5.3 Table height algorithms"
+    },
+    {
+      "id": "t.17.5.4",
+      "level": "3",
+      "title": "C.7.100 \nSection 17.5.4 Horizontal alignment in a column"
+    },
+    {
+      "id": "t.B.2",
+      "level": "3",
+      "title": "C.7.101 \nSection B.2 Informative references"
+    },
+    {
+      "id": "t.D",
+      "level": "3",
+      "title": "C.7.102 \nSection D. Default style sheet for HTML 4"
+    },
+    {
+      "id": "t.E.2",
+      "level": "3",
+      "title": "C.7.103 \nSection E.2 Painting order"
+    },
+    {
+      "id": "t.G",
+      "level": "3",
+      "title": "C.7.104 \nAppendix G Grammar of CSS 2.1"
+    },
+    {
+      "id": "errata4",
+      "level": "2",
+      "title": "C.8 Changes since the working draft of 7 December 2010"
+    },
+    {
+      "id": "u.8.3.1",
+      "level": "3",
+      "title": "C.8.1 8.3.1\nCollapsing margins"
+    },
+    {
+      "id": "u.10.8.1",
+      "level": "3",
+      "title": "C.8.2 10.8.1 Leading\nand half-leading"
+    },
+    {
+      "id": "u.10.3",
+      "level": "3",
+      "title": "C.8.3 10.3\nCalculating widths and margins"
+    },
+    {
+      "id": "u.14.3",
+      "level": "3",
+      "title": "C.8.4 14.3\nGamma correction"
+    },
+    {
+      "id": "u.11.1.2",
+      "level": "3",
+      "title": "C.8.5 11.1.2 Clipping:\nthe 'clip' property"
+    },
+    {
+      "id": "u.9.4.2",
+      "level": "3",
+      "title": "C.8.6 9.4.2\nInline formatting contexts"
+    },
+    {
+      "id": "u.10.3.2",
+      "level": "3",
+      "title": "C.8.7 10.3.2\nInline, replaced elements"
+    },
+    {
+      "id": "u.10.1",
+      "level": "3",
+      "title": "C.8.8 10.1\nDefinition of \"containing block\""
+    },
+    {
+      "id": "u.13.2.2",
+      "level": "3",
+      "title": "C.8.9 13.2.2 Page\nselectors: selecting left, right, and first pages"
+    },
+    {
+      "id": "u.8.3.1a",
+      "level": "3",
+      "title": "C.8.10 8.3.1\nCollapsing margins"
+    },
+    {
+      "id": "u.10.8",
+      "level": "3",
+      "title": "C.8.11 10.8 Line\nheight calculations: the 'line-height' and 'vertical-align'\nproperties"
+    },
+    {
+      "id": "u.10.8.1a",
+      "level": "3",
+      "title": "C.8.12 10.8.1\nLeading and half-leading"
+    },
+    {
+      "id": "u.10.6.1a",
+      "level": "3",
+      "title": "C.8.13 10.6.1\nInline, non-replaced elements"
+    },
+    {
+      "id": "u.9.5.1",
+      "level": "3",
+      "title": "C.8.14 9.5.1\nPositioning the float: the 'float' property"
+    },
+    {
+      "id": "u.9.2.1.1",
+      "level": "3",
+      "title": "C.8.15 9.2.1.1\nAnonymous block boxes"
+    },
+    {
+      "id": "u.5.12.1",
+      "level": "3",
+      "title": "C.8.16 5.12.1 The :first-line pseudo-element"
+    },
+    {
+      "id": "u.16.6",
+      "level": "3",
+      "title": "C.8.17 16.6 White space: the 'white-space' property"
+    },
+    {
+      "id": "u.12.5.1",
+      "level": "3",
+      "title": "C.8.18 12.5.1\nLists: the 'list-style-type', 'list-style-image',\n'list-style-position', and 'list-style' properties"
+    },
+    {
+      "id": "u.9.7",
+      "level": "3",
+      "title": "C.8.19 9.7\nRelationships between 'display', 'position', and 'float'"
+    },
+    {
+      "id": "u.9.4.2a",
+      "level": "3",
+      "title": "C.8.20 9.4.2\nInline formatting contexts"
+    },
+    {
+      "id": "u.4.1.9",
+      "level": "3",
+      "title": "C.8.21 4.1.9\nComments"
+    },
+    {
+      "id": "u.12.5.1a",
+      "level": "3",
+      "title": "C.8.22 12.5.1 Lists:\nthe 'list-style-type', 'list-style-image', 'list-style-position', and\n'list-style' properties"
+    },
+    {
+      "id": "u.9.5.1a",
+      "level": "3",
+      "title": "C.8.23 9.5.1\nPositioning the float: the 'float' property"
+    },
+    {
+      "id": "u.9.3",
+      "level": "3",
+      "title": "C.8.24 9.3\nPositioning schemes"
+    },
+    {
+      "id": "u.9.10",
+      "level": "3",
+      "title": "C.8.25 9.10 Text\ndirection: the 'direction' and 'unicode-bidi' properties"
+    },
+    {
+      "id": "u.16.3.1",
+      "level": "3",
+      "title": "C.8.26 16.3.1\nUnderlining, overlining, striking, and blinking: the 'text-decoration'\nproperty"
+    },
+    {
+      "id": "u.16.3.1a",
+      "level": "3",
+      "title": "C.8.27 16.3.1\nUnderlining, overlining, striking, and blinking: the 'text-decoration'\nproperty"
+    },
+    {
+      "id": "u.10.4",
+      "level": "3",
+      "title": "C.8.28 10.4\nMinimum and maximum widths: 'min-width' and 'max-width'"
+    },
+    {
+      "id": "u.9.3.2",
+      "level": "3",
+      "title": "C.8.29 9.3.2 Box\noffsets: 'top', 'right', 'bottom', 'left'"
+    },
+    {
+      "id": "u.9.2.1.1a",
+      "level": "3",
+      "title": "C.8.30 9.2.1.1\nAnonymous block boxes"
+    },
+    {
+      "id": "u.9.2.1.1b",
+      "level": "3",
+      "title": "C.8.31 17.4 Tables in the\nvisual formatting model"
+    },
+    {
+      "id": "u.11.1.2a",
+      "level": "3",
+      "title": "C.8.32 11.1.2 Clipping:\nthe 'clip' property"
+    },
+    {
+      "id": "u.13.2",
+      "level": "3",
+      "title": "C.8.33 13.2 Page boxes:\nthe @page rule"
+    },
+    {
+      "id": "u.4.1.1",
+      "level": "3",
+      "title": "C.8.34 4.1.1\nTokenization"
+    },
+    {
+      "id": "u.4.2",
+      "level": "3",
+      "title": "C.8.35 4.2 Rules\nfor handling parsing errors"
+    },
+    {
+      "id": "u.3.1",
+      "level": "3",
+      "title": "C.8.36 3.1\nDefinitions"
+    },
+    {
+      "id": "u.4.3.4",
+      "level": "3",
+      "title": "C.8.37 4.3.4 URLs and\nURIs"
+    },
+    {
+      "id": "u.9.5",
+      "level": "3",
+      "title": "C.8.38 9.5\nFloats"
+    },
+    {
+      "id": "u.11.1.1",
+      "level": "3",
+      "title": "C.8.39 11.1.1 Overflow:\nthe 'overflow' property"
+    },
+    {
+      "id": "u.9.2.1.1c",
+      "level": "3",
+      "title": "C.8.40 9.2.1.1\nAnonymous block boxes"
+    },
+    {
+      "id": "u.16.2",
+      "level": "3",
+      "title": "C.8.41 16.2\nAlignment: the 'text-align' property"
+    },
+    {
+      "id": "u.9.5a",
+      "level": "3",
+      "title": "C.8.42 9.5\nFloats"
+    },
+    {
+      "id": "u.9.4.2b",
+      "level": "3",
+      "title": "C.8.43 9.4.2\nInline formatting contexts"
+    },
+    {
+      "id": "u.5.12",
+      "level": "3",
+      "title": "C.8.44 5.12\nPseudo-elements"
+    },
+    {
+      "id": "u.9.5b",
+      "level": "3",
+      "title": "C.8.45 9.5\nFloats"
+    },
+    {
+      "id": "u.9.5c",
+      "level": "3",
+      "title": "C.8.46 9.5\nFloats"
+    },
+    {
+      "id": "u.14.2.1",
+      "level": "3",
+      "title": "C.8.47 14.2.1\nBackground properties: 'background-color', 'background-image',\n'background-repeat', 'background-attachment', 'background-position',\nand 'background'"
+    },
+    {
+      "id": "u.9.2.4",
+      "level": "3",
+      "title": "C.8.48 9.2.4 The\n'display' property"
+    },
+    {
+      "id": "u.6.1.2",
+      "level": "3",
+      "title": "C.8.49 6.1.2\nComputed values"
+    },
+    {
+      "id": "u.10.3.2a",
+      "level": "3",
+      "title": "C.8.50 10.3.2\nInline, replaced elements"
+    },
+    {
+      "id": "t.9.5.2d",
+      "level": "3",
+      "title": "C.8.51 \nSection 9.5.2 Controlling flow next to floats: the 'clear'\nproperty"
+    },
+    {
+      "id": "t.G.2",
+      "level": "3",
+      "title": "C.8.52 G.2 Lexical\nscanner"
+    },
+    {
+      "id": "t.9.5.2e",
+      "level": "3",
+      "title": "C.8.53 \nSection 9.5.2 Controlling flow next to floats: the 'clear'\nproperty"
+    },
+    {
+      "id": "t.9.5b",
+      "level": "3",
+      "title": "C.8.54 9.5\nFloats"
+    },
+    {
+      "id": "t.10.6.3",
+      "level": "3",
+      "title": "C.8.55 10.6.3\nBlock-level non-replaced elements in normal flow when 'overflow'\ncomputes to 'visible'"
+    }
+  ]
+}

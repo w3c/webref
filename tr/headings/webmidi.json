@@ -1,0 +1,243 @@
+{
+  "spec": {
+    "title": "Web MIDI API",
+    "url": "https://www.w3.org/TR/webmidi/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Web MIDI API"
+    },
+    {
+      "id": "w3c-working-draft-17-march-2015",
+      "level": "2",
+      "title": "W3C Working Draft 17 March 2015"
+    },
+    {
+      "id": "h-abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "h-sotd",
+      "level": "2",
+      "title": "Status of This Document"
+    },
+    {
+      "id": "h-toc",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "h-introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "h-conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "h-terminology",
+      "level": "2",
+      "title": "Terminology"
+    },
+    {
+      "id": "h-obtaining-access-to-midi-devices",
+      "level": "2",
+      "title": "Obtaining Access to MIDI Devices"
+    },
+    {
+      "id": "requestMIDIAccess",
+      "level": "3",
+      "title": "requestMIDIAccess()"
+    },
+    {
+      "id": "h-methods",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "MIDIOptions",
+      "level": "3",
+      "title": "MIDIOptions dictionary"
+    },
+    {
+      "id": "h-dictionary-midioptions-members",
+      "level": "4",
+      "title": "Dictionary MIDIOptions Members"
+    },
+    {
+      "id": "MIDIInputMap",
+      "level": "3",
+      "title": "MIDIInputMap Interface"
+    },
+    {
+      "id": "h-maplike",
+      "level": "4",
+      "title": "Maplike"
+    },
+    {
+      "id": "MIDIOutputMap",
+      "level": "3",
+      "title": "MIDIOutputMap Interface"
+    },
+    {
+      "id": "h-maplike-1",
+      "level": "4",
+      "title": "Maplike"
+    },
+    {
+      "id": "h-midisuccesscallback",
+      "level": "3",
+      "title": "MIDISuccessCallback"
+    },
+    {
+      "id": "h-callback-midisuccesscallback-parameters",
+      "level": "4",
+      "title": "Callback MIDISuccessCallback Parameters"
+    },
+    {
+      "id": "MIDIAccess",
+      "level": "2",
+      "title": "MIDIAccess Interface"
+    },
+    {
+      "id": "h-attributes",
+      "level": "3",
+      "title": "Attributes"
+    },
+    {
+      "id": "MIDIPort",
+      "level": "2",
+      "title": "MIDIPort Interface"
+    },
+    {
+      "id": "h-attributes-1",
+      "level": "3",
+      "title": "Attributes"
+    },
+    {
+      "id": "h-methods-1",
+      "level": "3",
+      "title": "Methods"
+    },
+    {
+      "id": "MIDIInput",
+      "level": "3",
+      "title": "MIDIInput Interface"
+    },
+    {
+      "id": "h-attributes-2",
+      "level": "4",
+      "title": "Attributes"
+    },
+    {
+      "id": "MIDIOutput",
+      "level": "3",
+      "title": "MIDIOutput Interface"
+    },
+    {
+      "id": "h-methods-2",
+      "level": "4",
+      "title": "Methods"
+    },
+    {
+      "id": "MIDIMessageEvent",
+      "level": "2",
+      "title": "MIDIMessageEvent Interface"
+    },
+    {
+      "id": "h-attributes-3",
+      "level": "3",
+      "title": "Attributes"
+    },
+    {
+      "id": "MIDIMessageEventInit",
+      "level": "3",
+      "title": "MIDIMessageEventInit Interface"
+    },
+    {
+      "id": "h-dictionary-midimessageeventinit-members",
+      "level": "4",
+      "title": "Dictionary MIDIMessageEventInit Members"
+    },
+    {
+      "id": "MIDIConnectionEvent",
+      "level": "2",
+      "title": "MIDIConnectionEvent Interface"
+    },
+    {
+      "id": "h-attributes-4",
+      "level": "3",
+      "title": "Attributes"
+    },
+    {
+      "id": "MIDIConnectionEventInit",
+      "level": "3",
+      "title": "MIDIConnectionEventInit Interface"
+    },
+    {
+      "id": "h-dictionary-midiconnectioneventinit-members",
+      "level": "4",
+      "title": "Dictionary MIDIConnectionEventInit Members"
+    },
+    {
+      "id": "examples",
+      "level": "2",
+      "title": "Examples of Web MIDI API Usage in JavaScript"
+    },
+    {
+      "id": "h-getting-access-to-the-midi-system",
+      "level": "3",
+      "title": "Getting Access to the MIDI System"
+    },
+    {
+      "id": "h-requesting-access-to-the-midi-system-with-system-exclusive-support",
+      "level": "3",
+      "title": "Requesting Access to the MIDI System with System Exclusive Support"
+    },
+    {
+      "id": "h-listing-inputs-and-outputs",
+      "level": "3",
+      "title": "Listing Inputs and Outputs"
+    },
+    {
+      "id": "h-handling-midi-input",
+      "level": "3",
+      "title": "Handling MIDI Input"
+    },
+    {
+      "id": "h-sending-midi-messages-to-an-output-device",
+      "level": "3",
+      "title": "Sending MIDI Messages to an Output Device"
+    },
+    {
+      "id": "h-a-simple-loopback",
+      "level": "3",
+      "title": "A Simple Loopback"
+    },
+    {
+      "id": "h-a-simple-monophonic-sine-wave-midi-synthesizer",
+      "level": "3",
+      "title": "A Simple Monophonic Sine Wave MIDI Synthesizer"
+    },
+    {
+      "id": "h-security-and-privacy-considerations-of-midi",
+      "level": "2",
+      "title": "Security and Privacy Considerations of MIDI"
+    },
+    {
+      "id": "h-references",
+      "level": "2",
+      "title": "A. References"
+    },
+    {
+      "id": "h-normative-references",
+      "level": "3",
+      "title": "A.1 Normative references"
+    }
+  ]
+}

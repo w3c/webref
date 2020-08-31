@@ -1,0 +1,228 @@
+{
+  "spec": {
+    "title": "Core Accessibility API Mappings 1.2",
+    "url": "https://www.w3.org/TR/core-aam-1.2/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Core Accessibility API Mappings 1.2"
+    },
+    {
+      "id": "table-of-contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "x1-introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "x1-1-accessibility-apis",
+      "level": "3",
+      "title": "Accessibility APIs"
+    },
+    {
+      "id": "x1-2-comparing-accessibility-apis",
+      "level": "3",
+      "title": "Comparing Accessibility APIs"
+    },
+    {
+      "id": "x1-2-1-atk-at-spi",
+      "level": "4",
+      "title": "ATK/AT-SPI"
+    },
+    {
+      "id": "x1-2-2-uia-ui-automation",
+      "level": "4",
+      "title": "UIA (UI Automation)"
+    },
+    {
+      "id": "x1-2-3-accessible-names-and-descriptions",
+      "level": "4",
+      "title": "Accessible Names and Descriptions"
+    },
+    {
+      "id": "x2-conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "x2-1-rfc-2119-keywords",
+      "level": "3",
+      "title": "RFC-2119 Keywords"
+    },
+    {
+      "id": "x2-2-normative-and-informative-sections",
+      "level": "3",
+      "title": "Normative and Informative Sections"
+    },
+    {
+      "id": "x2-3-features-deprecated-in-wai-aria",
+      "level": "3",
+      "title": "Features Deprecated in WAI-ARIA"
+    },
+    {
+      "id": "x3-important-terms",
+      "level": "2",
+      "title": "Important Terms"
+    },
+    {
+      "id": "x4-mapping-wai-aria-to-accessibility-apis",
+      "level": "2",
+      "title": "Mapping WAI-ARIA to Accessibility APIs"
+    },
+    {
+      "id": "x4-1-general-rules-for-exposing-wai-aria-semantics",
+      "level": "3",
+      "title": "General rules for exposing WAI-ARIA semantics"
+    },
+    {
+      "id": "x4-2-conflicts-between-native-markup-semantics-and-wai-aria",
+      "level": "3",
+      "title": "Conflicts between native markup semantics and WAI-ARIA"
+    },
+    {
+      "id": "x4-3-exposing-attributes-that-do-not-directly-map-to-accessibility-api-properties",
+      "level": "3",
+      "title": "Exposing attributes that do not directly map to accessibility API properties"
+    },
+    {
+      "id": "x4-4-role-mapping",
+      "level": "3",
+      "title": "Role mapping"
+    },
+    {
+      "id": "x4-4-1-general-rules",
+      "level": "4",
+      "title": "General rules"
+    },
+    {
+      "id": "x4-4-2-role-mapping-table",
+      "level": "4",
+      "title": "Role Mapping Table"
+    },
+    {
+      "id": "x4-5-state-and-property-mapping",
+      "level": "3",
+      "title": "State and Property Mapping"
+    },
+    {
+      "id": "x4-5-1-general-rules",
+      "level": "4",
+      "title": "General rules"
+    },
+    {
+      "id": "x4-5-2-state-and-property-mapping-table",
+      "level": "4",
+      "title": "State and Property Mapping Table"
+    },
+    {
+      "id": "x4-5-2-1-not-mapped",
+      "level": "5",
+      "title": "Not Mapped"
+    },
+    {
+      "id": "x4-6-special-processing-requiring-additional-computation",
+      "level": "3",
+      "title": "Special Processing Requiring Additional Computation"
+    },
+    {
+      "id": "x4-6-1-name-and-description",
+      "level": "4",
+      "title": "Name and Description"
+    },
+    {
+      "id": "x4-6-2-relations",
+      "level": "4",
+      "title": "Relations"
+    },
+    {
+      "id": "x4-6-2-1-reverse-relations",
+      "level": "5",
+      "title": "Reverse Relations"
+    },
+    {
+      "id": "x4-6-2-2-implied-reverse-relations",
+      "level": "5",
+      "title": "Implied reverse relations"
+    },
+    {
+      "id": "x4-6-3-group-position",
+      "level": "4",
+      "title": "Group Position"
+    },
+    {
+      "id": "x4-7-actions",
+      "level": "3",
+      "title": "Actions"
+    },
+    {
+      "id": "x4-8-events",
+      "level": "3",
+      "title": "Events"
+    },
+    {
+      "id": "x4-8-1-state-and-property-change-events",
+      "level": "4",
+      "title": "State and Property Change Events"
+    },
+    {
+      "id": "x4-8-2-changes-to-document-content-or-node-visibility",
+      "level": "4",
+      "title": "Changes to document content or node visibility"
+    },
+    {
+      "id": "x4-8-3-focus-changes",
+      "level": "4",
+      "title": "Focus Changes"
+    },
+    {
+      "id": "x4-8-4-selection",
+      "level": "4",
+      "title": "Selection"
+    },
+    {
+      "id": "x4-8-5-special-events-for-menus",
+      "level": "4",
+      "title": "Special Events for Menus"
+    },
+    {
+      "id": "a-change-log",
+      "level": "2",
+      "title": "A. Change Log"
+    },
+    {
+      "id": "a-1-substantive-changes-since-the-last-public-working-draft",
+      "level": "3",
+      "title": "A.1 Substantive changes since the last public working draft"
+    },
+    {
+      "id": "a-2-substantive-changes-since-the-core-accessibility-api-mappings-1-1-recommendation",
+      "level": "3",
+      "title": "A.2 Substantive changes since the Core Accessibility API Mappings 1.1 Recommendation"
+    },
+    {
+      "id": "b-acknowledgments",
+      "level": "2",
+      "title": "B. Acknowledgments"
+    },
+    {
+      "id": "c-references",
+      "level": "2",
+      "title": "C. References"
+    },
+    {
+      "id": "c-1-normative-references",
+      "level": "3",
+      "title": "C.1 Normative references"
+    },
+    {
+      "id": "c-2-informative-references",
+      "level": "3",
+      "title": "C.2 Informative references"
+    }
+  ]
+}

@@ -1,0 +1,429 @@
+{
+  "spec": {
+    "title": "Screen Capture",
+    "url": "https://www.w3.org/TR/screen-capture/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "DisplayMediaStreamConstraints": {
+        "type": "dictionary",
+        "name": "DisplayMediaStreamConstraints",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "video",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaTrackConstraints"
+                }
+              ]
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "audio",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaTrackConstraints"
+                }
+              ]
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "DisplayCaptureSurfaceType": {
+        "type": "enum",
+        "name": "DisplayCaptureSurfaceType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "monitor"
+          },
+          {
+            "type": "enum-value",
+            "value": "window"
+          },
+          {
+            "type": "enum-value",
+            "value": "application"
+          },
+          {
+            "type": "enum-value",
+            "value": "browser"
+          }
+        ],
+        "extAttrs": []
+      },
+      "CursorCaptureConstraint": {
+        "type": "enum",
+        "name": "CursorCaptureConstraint",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "never"
+          },
+          {
+            "type": "enum-value",
+            "value": "always"
+          },
+          {
+            "type": "enum-value",
+            "value": "motion"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "MediaDevices": [
+        {
+          "type": "interface",
+          "name": "MediaDevices",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "getDisplayMedia",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MediaStream"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "constraints",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DisplayMediaStreamConstraints"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackSupportedConstraints": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackSupportedConstraints",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "displaySurface",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "logicalSurface",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "cursor",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "restrictOwnAudio",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackConstraintSet": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackConstraintSet",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "displaySurface",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDOMString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "logicalSurface",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainBoolean"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "cursor",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDOMString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "restrictOwnAudio",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainBoolean"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackSettings": [
+        {
+          "type": "dictionary",
+          "name": "MediaTrackSettings",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "displaySurface",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "logicalSurface",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "cursor",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "MediaDevices": [
+        "MediaStream",
+        "DisplayMediaStreamConstraints"
+      ],
+      "DisplayMediaStreamConstraints": [
+        "MediaTrackConstraints"
+      ],
+      "MediaTrackSupportedConstraints": [],
+      "MediaTrackConstraintSet": [
+        "ConstrainDOMString",
+        "ConstrainBoolean"
+      ],
+      "MediaTrackSettings": []
+    },
+    "externalDependencies": [
+      "MediaDevices",
+      "MediaStream",
+      "MediaTrackConstraints",
+      "MediaTrackSupportedConstraints",
+      "MediaTrackConstraintSet",
+      "ConstrainDOMString",
+      "ConstrainBoolean",
+      "MediaTrackSettings"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

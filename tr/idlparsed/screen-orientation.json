@@ -1,0 +1,258 @@
+{
+  "spec": {
+    "title": "The Screen Orientation API",
+    "url": "https://www.w3.org/TR/screen-orientation/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "ScreenOrientation"
+        ]
+      }
+    },
+    "idlNames": {
+      "ScreenOrientation": {
+        "type": "interface",
+        "name": "ScreenOrientation",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "operation",
+            "name": "lock",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "void"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "orientation",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "OrientationLockType"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "unlock",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "OrientationType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "angle",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "onchange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "OrientationLockType": {
+        "type": "enum",
+        "name": "OrientationLockType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "any"
+          },
+          {
+            "type": "enum-value",
+            "value": "natural"
+          },
+          {
+            "type": "enum-value",
+            "value": "landscape"
+          },
+          {
+            "type": "enum-value",
+            "value": "portrait"
+          },
+          {
+            "type": "enum-value",
+            "value": "portrait-primary"
+          },
+          {
+            "type": "enum-value",
+            "value": "portrait-secondary"
+          },
+          {
+            "type": "enum-value",
+            "value": "landscape-primary"
+          },
+          {
+            "type": "enum-value",
+            "value": "landscape-secondary"
+          }
+        ],
+        "extAttrs": []
+      },
+      "OrientationType": {
+        "type": "enum",
+        "name": "OrientationType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "portrait-primary"
+          },
+          {
+            "type": "enum-value",
+            "value": "portrait-secondary"
+          },
+          {
+            "type": "enum-value",
+            "value": "landscape-primary"
+          },
+          {
+            "type": "enum-value",
+            "value": "landscape-secondary"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "Screen": [
+        {
+          "type": "interface",
+          "name": "Screen",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "orientation",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ScreenOrientation"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "ScreenOrientation"
+      ]
+    },
+    "dependencies": {
+      "Screen": [
+        "ScreenOrientation"
+      ],
+      "ScreenOrientation": [
+        "EventTarget",
+        "OrientationLockType",
+        "OrientationType",
+        "EventHandler"
+      ]
+    },
+    "externalDependencies": [
+      "Screen",
+      "EventTarget",
+      "EventHandler"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

@@ -1,0 +1,423 @@
+{
+  "spec": {
+    "title": "Payment Handler API",
+    "url": "https://www.w3.org/TR/payment-handler/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "Payment Handler API"
+    },
+    {
+      "id": "table-of-contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "x1-introduction",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "x2-overview-of-handling-payment-requests",
+      "level": "2",
+      "title": "Overview of Handling Payment Requests"
+    },
+    {
+      "id": "x2-1-handling-a-payment-request",
+      "level": "3",
+      "title": "Handling a Payment Request"
+    },
+    {
+      "id": "x2-2-structure-of-a-web-payment-app",
+      "level": "3",
+      "title": "Structure of a Web Payment App"
+    },
+    {
+      "id": "x2-3-relation-to-other-types-of-payment-apps",
+      "level": "3",
+      "title": "Relation to Other Types of Payment Apps"
+    },
+    {
+      "id": "x3-registration",
+      "level": "2",
+      "title": "Registration"
+    },
+    {
+      "id": "x3-1-extension-to-the-serviceworkerregistration-interface",
+      "level": "3",
+      "title": "Extension to the ServiceWorkerRegistration interface"
+    },
+    {
+      "id": "x3-2-paymentmanager-interface",
+      "level": "3",
+      "title": "PaymentManager interface"
+    },
+    {
+      "id": "x3-2-1-instruments-attribute",
+      "level": "4",
+      "title": "instruments attribute"
+    },
+    {
+      "id": "x3-2-2-userhint-attribute",
+      "level": "4",
+      "title": "userHint attribute"
+    },
+    {
+      "id": "x3-3-paymentinstruments-interface",
+      "level": "3",
+      "title": "PaymentInstruments interface"
+    },
+    {
+      "id": "x3-3-1-delete-method",
+      "level": "4",
+      "title": "delete() method"
+    },
+    {
+      "id": "x3-3-2-get-method",
+      "level": "4",
+      "title": "get() method"
+    },
+    {
+      "id": "x3-3-3-keys-method",
+      "level": "4",
+      "title": "keys() method"
+    },
+    {
+      "id": "x3-3-4-has-method",
+      "level": "4",
+      "title": "has() method"
+    },
+    {
+      "id": "x3-3-5-set-method",
+      "level": "4",
+      "title": "set() method"
+    },
+    {
+      "id": "x3-3-6-clear-method",
+      "level": "4",
+      "title": "clear() method"
+    },
+    {
+      "id": "x3-3-7-paymentinstrument-dictionary",
+      "level": "4",
+      "title": "PaymentInstrument dictionary"
+    },
+    {
+      "id": "x3-3-8-imageobject-dictionary",
+      "level": "4",
+      "title": "ImageObject dictionary"
+    },
+    {
+      "id": "x3-3-9-convert-image-objects",
+      "level": "4",
+      "title": "Convert image objects"
+    },
+    {
+      "id": "x3-3-10-registration-example",
+      "level": "4",
+      "title": "Registration Example"
+    },
+    {
+      "id": "x4-can-make-payment",
+      "level": "2",
+      "title": "Can make payment"
+    },
+    {
+      "id": "x4-1-extension-to-serviceworkerglobalscope",
+      "level": "3",
+      "title": "Extension to ServiceWorkerGlobalScope"
+    },
+    {
+      "id": "x4-1-1-oncanmakepayment-attribute",
+      "level": "4",
+      "title": "oncanmakepayment attribute"
+    },
+    {
+      "id": "x4-2-the-canmakepaymentevent",
+      "level": "3",
+      "title": "The CanMakePaymentEvent"
+    },
+    {
+      "id": "x4-2-1-respondwith-method",
+      "level": "4",
+      "title": "respondWith() method"
+    },
+    {
+      "id": "x4-2-2-canmakepaymenteventinit-dictionary",
+      "level": "4",
+      "title": "CanMakePaymentEventInit dictionary"
+    },
+    {
+      "id": "x4-3-handling-a-canmakepaymentevent",
+      "level": "3",
+      "title": "Handling a CanMakePaymentEvent"
+    },
+    {
+      "id": "x4-4-example-of-handling-the-canmakepaymentevent",
+      "level": "3",
+      "title": "Example of handling the CanMakePaymentEvent"
+    },
+    {
+      "id": "x4-5-filtering-of-payment-instruments",
+      "level": "3",
+      "title": "Filtering of Payment Instruments"
+    },
+    {
+      "id": "x4-5-1-how-to-specify-capabilities",
+      "level": "4",
+      "title": "How to specify capabilities"
+    },
+    {
+      "id": "x5-invocation",
+      "level": "2",
+      "title": "Invocation"
+    },
+    {
+      "id": "x5-1-extension-to-serviceworkerglobalscope",
+      "level": "3",
+      "title": "Extension to ServiceWorkerGlobalScope"
+    },
+    {
+      "id": "x5-1-1-onpaymentrequest-attribute",
+      "level": "4",
+      "title": "onpaymentrequest attribute"
+    },
+    {
+      "id": "x5-2-the-paymentmethodchangeresponse",
+      "level": "3",
+      "title": "The PaymentMethodChangeResponse"
+    },
+    {
+      "id": "x5-2-1-error-member",
+      "level": "4",
+      "title": "error member"
+    },
+    {
+      "id": "x5-2-2-total-member",
+      "level": "4",
+      "title": "total member"
+    },
+    {
+      "id": "x5-2-3-modifiers-member",
+      "level": "4",
+      "title": "modifiers member"
+    },
+    {
+      "id": "x5-2-4-paymentmethoderrors-member",
+      "level": "4",
+      "title": "paymentMethodErrors member"
+    },
+    {
+      "id": "x5-3-the-paymentrequestevent",
+      "level": "3",
+      "title": "The PaymentRequestEvent"
+    },
+    {
+      "id": "x5-3-1-toporigin-attribute",
+      "level": "4",
+      "title": "topOrigin attribute"
+    },
+    {
+      "id": "x5-3-2-paymentrequestorigin-attribute",
+      "level": "4",
+      "title": "paymentRequestOrigin attribute"
+    },
+    {
+      "id": "x5-3-3-paymentrequestid-attribute",
+      "level": "4",
+      "title": "paymentRequestId attribute"
+    },
+    {
+      "id": "x5-3-4-methoddata-attribute",
+      "level": "4",
+      "title": "methodData attribute"
+    },
+    {
+      "id": "x5-3-5-total-attribute",
+      "level": "4",
+      "title": "total attribute"
+    },
+    {
+      "id": "x5-3-6-modifiers-attribute",
+      "level": "4",
+      "title": "modifiers attribute"
+    },
+    {
+      "id": "x5-3-7-instrumentkey-attribute",
+      "level": "4",
+      "title": "instrumentKey attribute"
+    },
+    {
+      "id": "x5-3-8-requestbillingaddress-attribute",
+      "level": "4",
+      "title": "requestBillingAddress attribute"
+    },
+    {
+      "id": "x5-3-9-openwindow-method",
+      "level": "4",
+      "title": "openWindow() method"
+    },
+    {
+      "id": "x5-3-10-changepaymentmethod-method",
+      "level": "4",
+      "title": "changePaymentMethod()\n            method"
+    },
+    {
+      "id": "x5-3-11-respondwith-method",
+      "level": "4",
+      "title": "respondWith() method"
+    },
+    {
+      "id": "x5-3-12-paymentrequesteventinit-dictionary",
+      "level": "4",
+      "title": "PaymentRequestEventInit dictionary"
+    },
+    {
+      "id": "x5-3-13-methoddata-population-algorithm",
+      "level": "4",
+      "title": "MethodData Population Algorithm"
+    },
+    {
+      "id": "x5-3-14-modifiers-population-algorithm",
+      "level": "4",
+      "title": "Modifiers Population Algorithm"
+    },
+    {
+      "id": "x5-4-internal-slots",
+      "level": "3",
+      "title": "Internal Slots"
+    },
+    {
+      "id": "x5-5-handling-a-paymentrequestevent",
+      "level": "3",
+      "title": "Handling a PaymentRequestEvent"
+    },
+    {
+      "id": "x6-windows",
+      "level": "2",
+      "title": "Windows"
+    },
+    {
+      "id": "x6-1-open-window-algorithm",
+      "level": "3",
+      "title": "Open Window Algorithm"
+    },
+    {
+      "id": "x6-2-example-of-handling-the-paymentrequestevent",
+      "level": "3",
+      "title": "Example of handling the PaymentRequestEvent"
+    },
+    {
+      "id": "x7-response",
+      "level": "2",
+      "title": "Response"
+    },
+    {
+      "id": "x7-1-paymenthandlerresponse-dictionary",
+      "level": "3",
+      "title": "PaymentHandlerResponse dictionary"
+    },
+    {
+      "id": "x7-1-1-methodname-attribute",
+      "level": "4",
+      "title": "methodName attribute"
+    },
+    {
+      "id": "x7-1-2-details-attribute",
+      "level": "4",
+      "title": "details attribute"
+    },
+    {
+      "id": "x7-2-change-payment-method-algorithm",
+      "level": "3",
+      "title": "Change Payment Method Algorithm"
+    },
+    {
+      "id": "x7-3-respond-to-paymentrequest-algorithm",
+      "level": "3",
+      "title": "Respond to PaymentRequest Algorithm"
+    },
+    {
+      "id": "x8-security-and-privacy-considerations",
+      "level": "2",
+      "title": "Security and Privacy Considerations"
+    },
+    {
+      "id": "x8-1-information-about-the-user-environment",
+      "level": "3",
+      "title": "Information about the User Environment"
+    },
+    {
+      "id": "x8-2-user-consent-to-install-a-payment-handler",
+      "level": "3",
+      "title": "User Consent to Install a Payment Handler"
+    },
+    {
+      "id": "x8-3-user-consent-before-payment",
+      "level": "3",
+      "title": "User Consent before Payment"
+    },
+    {
+      "id": "x8-4-secure-communications",
+      "level": "3",
+      "title": "Secure Communications"
+    },
+    {
+      "id": "x8-5-authorized-payment-apps",
+      "level": "3",
+      "title": "Authorized Payment Apps"
+    },
+    {
+      "id": "x8-6-supported-origin",
+      "level": "3",
+      "title": "Supported Origin"
+    },
+    {
+      "id": "x8-7-data-validation",
+      "level": "3",
+      "title": "Data Validation"
+    },
+    {
+      "id": "x8-8-private-browsing-mode",
+      "level": "3",
+      "title": "Private Browsing Mode"
+    },
+    {
+      "id": "x9-payment-handler-display-considerations",
+      "level": "2",
+      "title": "Payment Handler Display Considerations"
+    },
+    {
+      "id": "x10-dependencies",
+      "level": "2",
+      "title": "Dependencies"
+    },
+    {
+      "id": "x11-conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "a-idl-index",
+      "level": "2",
+      "title": "A. IDL Index"
+    },
+    {
+      "id": "b-references",
+      "level": "2",
+      "title": "B. References"
+    },
+    {
+      "id": "b-1-normative-references",
+      "level": "3",
+      "title": "B.1 Normative references"
+    },
+    {
+      "id": "b-2-informative-references",
+      "level": "3",
+      "title": "B.2 Informative references"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "spec": {
+    "title": "SVG Animations",
+    "url": "https://svgwg.org/specs/animations/"
+  },
+  "headings": [
+    {
+      "id": "pagetitle",
+      "level": "1",
+      "title": "SVG Animations Level 2"
+    },
+    {
+      "id": "pagesubtitle",
+      "level": "2",
+      "title": "W3C Editor’s Draft 26 May 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of This Document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "placement",
+      "level": "3",
+      "title": "Module interactions"
+    },
+    {
+      "id": "AnimationElements",
+      "level": "2",
+      "title": "Animation elements"
+    },
+    {
+      "id": "AnimationElementsIntro",
+      "level": "3",
+      "title": "Overview"
+    },
+    {
+      "id": "AnimationDefinitions",
+      "level": "3",
+      "title": "Definitions"
+    },
+    {
+      "id": "RelationshipToSMILAnimation",
+      "level": "3",
+      "title": "Relationship to SMIL Animation"
+    },
+    {
+      "id": "AnimationElementsExample",
+      "level": "3",
+      "title": "Animation elements example"
+    },
+    {
+      "id": "TargetElement",
+      "level": "3",
+      "title": "Attributes to identify the target element for an animation"
+    },
+    {
+      "id": "TargetAttributes",
+      "level": "3",
+      "title": "Attributes to identify the target attribute or property for an animation"
+    },
+    {
+      "id": "Animation.nsexample",
+      "level": "3",
+      "title": "Animation with namespaces"
+    },
+    {
+      "id": "complexDistances",
+      "level": "3",
+      "title": "Paced animation and complex types"
+    },
+    {
+      "id": "TimingAttributes",
+      "level": "3",
+      "title": "Attributes to control the timing of the animation"
+    },
+    {
+      "id": "ClockValueSyntax",
+      "level": "4",
+      "title": "Clock values"
+    },
+    {
+      "id": "ValueAttributes",
+      "level": "3",
+      "title": "Attributes that define animation values over time"
+    },
+    {
+      "id": "AdditionAttributes",
+      "level": "3",
+      "title": "Attributes that control whether animations are additive"
+    },
+    {
+      "id": "Inheritance",
+      "level": "3",
+      "title": "Inheritance"
+    },
+    {
+      "id": "AnimateElement",
+      "level": "3",
+      "title": "The ‘animate’ element"
+    },
+    {
+      "id": "SetElement",
+      "level": "3",
+      "title": "The ‘set’ element"
+    },
+    {
+      "id": "DiscardElement",
+      "level": "3",
+      "title": "The ‘discard’ element"
+    },
+    {
+      "id": "AnimateMotionElement",
+      "level": "3",
+      "title": "The ‘animateMotion’ element"
+    },
+    {
+      "id": "AnimateTransformElement",
+      "level": "3",
+      "title": "The ‘animateTransform’ element"
+    },
+    {
+      "id": "AnimationAttributesAndProperties",
+      "level": "3",
+      "title": "Elements, attributes and properties that can be animated"
+    },
+    {
+      "id": "implicit-aria-semantics",
+      "level": "3",
+      "title": "Implicit ARIA Semantics"
+    },
+    {
+      "id": "DOMAnimationExample",
+      "level": "2",
+      "title": "Animation using the SVG DOM"
+    },
+    {
+      "id": "extensions",
+      "level": "2",
+      "title": "Extensions to SVG 2"
+    },
+    {
+      "id": "SVGElement",
+      "level": "3",
+      "title": "Extensions to the ‘svg’ element"
+    },
+    {
+      "id": "ConditionalProcessing",
+      "level": "3",
+      "title": "Extensions to conditional processing elements"
+    },
+    {
+      "id": "IDL",
+      "level": "2",
+      "title": "IDL"
+    },
+    {
+      "id": "InterfaceTimeEvent",
+      "level": "3",
+      "title": "Interface TimeEvent"
+    },
+    {
+      "id": "InterfaceSVGAnimationElement",
+      "level": "3",
+      "title": "Interface SVGAnimationElement"
+    },
+    {
+      "id": "InterfaceSVGAnimateElement",
+      "level": "3",
+      "title": "Interface SVGAnimateElement"
+    },
+    {
+      "id": "InterfaceSVGSetElement",
+      "level": "3",
+      "title": "Interface SVGSetElement"
+    },
+    {
+      "id": "InterfaceSVGAnimateMotionElement",
+      "level": "3",
+      "title": "Interface SVGAnimateMotionElement"
+    },
+    {
+      "id": "InterfaceSVGMPathElement",
+      "level": "3",
+      "title": "Interface SVGMPathElement"
+    },
+    {
+      "id": "InterfaceSVGAnimateTransformElement",
+      "level": "3",
+      "title": "Interface SVGAnimateTransformElement"
+    },
+    {
+      "id": "InterfaceSVGDiscardElement",
+      "level": "3",
+      "title": "Interface SVGDiscardElement"
+    },
+    {
+      "id": "InterfaceSVGSVGElement",
+      "level": "3",
+      "title": "Extensions to interface SVGSVGElement"
+    },
+    {
+      "id": "refs",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normrefs",
+      "level": "3",
+      "title": "Normative references"
+    },
+    {
+      "id": "nonnormrefs",
+      "level": "3",
+      "title": "Non-normative references"
+    },
+    {
+      "id": "ChangesSinceSVG11",
+      "level": "2",
+      "title": "Changes since SVG 1.1 Second Edition"
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "spec": {
+    "title": "CSS Box Alignment Module Level 3",
+    "url": "https://www.w3.org/TR/css-align-3/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": "1",
+      "title": "CSS Box Alignment Module Level 3"
+    },
+    {
+      "id": "subtitle",
+      "level": "2",
+      "title": "W3C Working Draft, 21 April 2020"
+    },
+    {
+      "id": "abstract",
+      "level": "2",
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": "2",
+      "title": "Status of this document"
+    },
+    {
+      "id": "contents",
+      "level": "2",
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": "2",
+      "title": "Introduction"
+    },
+    {
+      "id": "placement",
+      "level": "3",
+      "title": "Module interactions"
+    },
+    {
+      "id": "values",
+      "level": "3",
+      "title": "Value Definitions"
+    },
+    {
+      "id": "partial",
+      "level": "3",
+      "title": "Partial Implementations"
+    },
+    {
+      "id": "overview",
+      "level": "2",
+      "title": "Overview of Alignment Properties"
+    },
+    {
+      "id": "terms",
+      "level": "2",
+      "title": "Alignment Terminology"
+    },
+    {
+      "id": "alignment-values",
+      "level": "2",
+      "title": "Alignment Keywords"
+    },
+    {
+      "id": "positional-values",
+      "level": "3",
+      "title": "Positional Alignment: the center, start, end, self-start, self-end, flex-start, flex-end, left, and right keywords"
+    },
+    {
+      "id": "baseline-values",
+      "level": "3",
+      "title": "Baseline Alignment: the baseline keyword and first/last modifiers"
+    },
+    {
+      "id": "distribution-values",
+      "level": "3",
+      "title": "Distributed Alignment: the stretch, space-between, space-around, and space-evenly keywords"
+    },
+    {
+      "id": "overflow-values",
+      "level": "3",
+      "title": "Overflow Alignment: the safe and unsafe keywords and scroll safety limits"
+    },
+    {
+      "id": "content-distribution",
+      "level": "2",
+      "title": "Content Distribution: Aligning a Box’s Contents Within Itself"
+    },
+    {
+      "id": "align-justify-content",
+      "level": "3",
+      "title": "The justify-content and align-content Properties"
+    },
+    {
+      "id": "distribution-block",
+      "level": "4",
+      "title": "Block Containers (Including Table Cells)"
+    },
+    {
+      "id": "distribution-multicol",
+      "level": "4",
+      "title": "Multicol Containers"
+    },
+    {
+      "id": "distribution-flex",
+      "level": "4",
+      "title": "Flex Containers"
+    },
+    {
+      "id": "distribution-grid",
+      "level": "4",
+      "title": "Grid Containers"
+    },
+    {
+      "id": "place-content",
+      "level": "3",
+      "title": "Content-Distribution Shorthand: the place-content property"
+    },
+    {
+      "id": "overflow-scroll-position",
+      "level": "3",
+      "title": "Overflow and Scroll Positions"
+    },
+    {
+      "id": "baseline-align-content",
+      "level": "3",
+      "title": "Baseline Content-Alignment"
+    },
+    {
+      "id": "self-alignment",
+      "level": "2",
+      "title": "Self-Alignment: Aligning the Box Within Its Parent"
+    },
+    {
+      "id": "justify-self-property",
+      "level": "3",
+      "title": "Inline-Axis (or Main-Axis) Alignment: the justify-self property"
+    },
+    {
+      "id": "justify-block",
+      "level": "4",
+      "title": "Block-Level Boxes"
+    },
+    {
+      "id": "justify-abspos",
+      "level": "4",
+      "title": "Absolutely-Positioned Boxes"
+    },
+    {
+      "id": "justify-cell",
+      "level": "4",
+      "title": "Table Cells"
+    },
+    {
+      "id": "justify-flex",
+      "level": "4",
+      "title": "Flex Items"
+    },
+    {
+      "id": "justify-grid",
+      "level": "4",
+      "title": "Grid Items"
+    },
+    {
+      "id": "align-self-property",
+      "level": "3",
+      "title": "Block-Axis (or Cross-Axis) Alignment: the align-self property"
+    },
+    {
+      "id": "align-block",
+      "level": "4",
+      "title": "Block-Level Boxes"
+    },
+    {
+      "id": "align-abspos",
+      "level": "4",
+      "title": "Absolutely-Positioned Boxes"
+    },
+    {
+      "id": "align-cell",
+      "level": "4",
+      "title": "Table Cells"
+    },
+    {
+      "id": "align-flex",
+      "level": "4",
+      "title": "Flex Items"
+    },
+    {
+      "id": "align-grid",
+      "level": "4",
+      "title": "Grid Items"
+    },
+    {
+      "id": "place-self-property",
+      "level": "3",
+      "title": "Self-Alignment Shorthand: the place-self property"
+    },
+    {
+      "id": "baseline-align-self",
+      "level": "3",
+      "title": "Baseline Self-Alignment"
+    },
+    {
+      "id": "abspos-sizing",
+      "level": "3",
+      "title": "Effects on Sizing of Absolutely Positioned Boxes with Static-Position Insets"
+    },
+    {
+      "id": "default-alignment",
+      "level": "2",
+      "title": "Default Alignment"
+    },
+    {
+      "id": "justify-items-property",
+      "level": "3",
+      "title": "Inline-Axis (or Main-Axis) Alignment: the justify-items property"
+    },
+    {
+      "id": "align-items-property",
+      "level": "3",
+      "title": "Block-Axis (or Cross-Axis) Alignment: the align-items property"
+    },
+    {
+      "id": "place-items-property",
+      "level": "3",
+      "title": "Self-Alignment Shorthand: the place-items property"
+    },
+    {
+      "id": "gaps",
+      "level": "2",
+      "title": "Gaps Between Boxes"
+    },
+    {
+      "id": "column-row-gap",
+      "level": "3",
+      "title": "Row and Column Gutters: the row-gap and column-gap properties"
+    },
+    {
+      "id": "gap-shorthand",
+      "level": "3",
+      "title": "Gap Shorthand: the gap property"
+    },
+    {
+      "id": "gap-legacy",
+      "level": "3",
+      "title": "Legacy Gap Properties: the grid-row-gap, grid-column-gap, and grid-gap properties"
+    },
+    {
+      "id": "baseline-rules",
+      "level": "2",
+      "title": "Baseline Alignment Details"
+    },
+    {
+      "id": "baseline-export",
+      "level": "3",
+      "title": "Determining the Baselines of a Box"
+    },
+    {
+      "id": "baseline-terms",
+      "level": "3",
+      "title": "Baseline Alignment Grouping"
+    },
+    {
+      "id": "align-by-baseline",
+      "level": "3",
+      "title": "Aligning Boxes by Baseline"
+    },
+    {
+      "id": "staticpos-rect",
+      "level": "2",
+      "title": "Appendix A: Static Position Terminology"
+    },
+    {
+      "id": "changes",
+      "level": "2",
+      "title": "Changes"
+    },
+    {
+      "id": "privacy-security",
+      "level": "2",
+      "title": "Privacy and Security Considerations"
+    },
+    {
+      "id": "acknowledgments",
+      "level": "2",
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "conformance",
+      "level": "2",
+      "title": "Conformance"
+    },
+    {
+      "id": "document-conventions",
+      "level": "3",
+      "title": "Document conventions"
+    },
+    {
+      "id": "conform-classes",
+      "level": "3",
+      "title": "Conformance classes"
+    },
+    {
+      "id": "conform-responsible",
+      "level": "3",
+      "title": "Requirements for Responsible Implementation of CSS"
+    },
+    {
+      "id": "conform-partial",
+      "level": "4",
+      "title": "Partial Implementations"
+    },
+    {
+      "id": "conform-future-proofing",
+      "level": "4",
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "conform-testing",
+      "level": "4",
+      "title": "Implementations of CR-level Features"
+    },
+    {
+      "id": "index",
+      "level": "2",
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": "3",
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": "3",
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": "2",
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": "3",
+      "title": "Normative References"
+    },
+    {
+      "id": "property-index",
+      "level": "2",
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "level": "2",
+      "title": "Issues Index"
+    }
+  ]
+}

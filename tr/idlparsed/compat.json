@@ -1,0 +1,98 @@
+{
+  "spec": {
+    "title": "Compatibility Standard",
+    "url": "https://compat.spec.whatwg.org/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {},
+    "idlExtendedNames": {
+      "Window": [
+        {
+          "type": "interface",
+          "name": "Window",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "orientation",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "short"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "attribute",
+              "name": "onorientationchange",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "HTMLBodyElement": [
+        {
+          "type": "interface",
+          "name": "HTMLBodyElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "onorientationchange",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "Window": [
+        "EventHandler"
+      ],
+      "HTMLBodyElement": [
+        "EventHandler"
+      ]
+    },
+    "externalDependencies": [
+      "Window",
+      "EventHandler",
+      "HTMLBodyElement"
+    ],
+    "hasObsoleteIdl": false
+  }
+}
