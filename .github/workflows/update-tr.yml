@@ -25,7 +25,6 @@ jobs:
       run: sudo apt-get install pandoc
     - name: Setup Reffy
       run: |
-        echo "${{ secrets.CONFIG_JSON }}" | base64 --decode > config.json
         npm ci
       working-directory: reffy
     - name: Run Reffy's crawler
