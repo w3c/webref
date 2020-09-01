@@ -34,7 +34,7 @@ function findIDLFiles(dir) {
 }
 
 // Finds and compares IDL files in `srcDir` and `dstDir`, creating
-// reffy-reports/* branches in the `dstDir` repo for any differences.
+// webref/* branches in the `dstDir` repo for any differences.
 // The `makeCommitMessage` callback is used to create the commit message.
 // Returns the created branch names.
 function createLocalBranches(srcDir, dstDir, makeCommitMessage) {
@@ -42,11 +42,12 @@ function createLocalBranches(srcDir, dstDir, makeCommitMessage) {
         return child.execSync(`git ${args}`, Object.assign({ cwd: dstDir, encoding: 'utf-8' }, options));
     }
 
-    // Returns the sha of any commit not mentioning reffy-reports touching
-    // `file` in `dstDir` since `since`, if any, and a falsy value otherwise.
+    // Returns the sha of any commit neither mentioning webref (new name) nor
+    // mentioning reffy-reports (old name) touching `file` in `dstDir` since
+    // `since`, if any, and a falsy value otherwise.
     // See https://github.com/w3c/webref/issues/25 for background.
     function lastManualCommitSince(file, since) {
-        return git(`log -1 --since=${since} --grep reffy-reports --invert-grep --format=%h -- ${file}`).trim();
+        return git(`log -1 --since=${since} --grep webref --grep reffy-reports --invert-grep --format=%h -- ${file}`).trim();
     }
 
     // Returns any extra lines to put in the commit messages as an array.
@@ -68,7 +69,7 @@ function createLocalBranches(srcDir, dstDir, makeCommitMessage) {
     function commitToBranch(verb, file) {
         assert(file.endsWith('.idl'));
         const shortName = file.substr(0, file.length - 4);
-        const branch = `reffy-reports/${shortName}`;
+        const branch = `webref/${shortName}`;
 
         git(`checkout -q -b ${branch} origin/master`);
         git(`add ${file}`);
@@ -118,9 +119,9 @@ function createLocalBranches(srcDir, dstDir, makeCommitMessage) {
     return branches;
 }
 
-// Returns remote reffy-reports/* branches.
+// Returns remote webref/* (new name) and reffy-reports/* (old name) branches.
 function listRemoteBranches(dir, remote) {
-    const remoteBranches = child.execSync(`git for-each-ref "refs/remotes/${remote}/reffy-reports/*" --format="%(refname:lstrip=3)"`, {
+    const remoteBranches = child.execSync(`git for-each-ref "refs/remotes/${remote}/webref/*" "refs/remotes/${remote}/reffy-reports/*" --format="%(refname:lstrip=3)"`, {
             cwd: dir, encoding: 'ascii'
         }).split('\n').filter(l => l != '');
     remoteBranches.sort();
@@ -166,21 +167,23 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
 
     console.log('Updating pull requests:');
     for (const branch of localBranches) {
-        assert(branch.startsWith('reffy-reports/'));
+        assert(branch.startsWith('webref/'));
+        const oldBranch = branch.replace(/webref/, 'reffy-reports');
 
         // First create or update the remote branch, if not already up to date.
-        if (remoteBranches.has(branch)) {
+        if (remoteBranches.has(branch) || remoteBranches.has(oldBranch)) {
             // Check if there are any differences between the local and remote
             // branch in the files touched by the local branch. This to avoid
             // updating the branch with unrelated changes, which would trigger
             // another Travis run of any existing PR for the branch.
+            const remoteBranch = remoteBranches.has(branch) ? branch : oldBranch;
             const affectedFiles = git(`diff --name-only ${branch} ${branch}^`).replace(/\n/g, ' ');
-            const diff = git(`diff ${branch} ${remote}/${branch} -- ${affectedFiles}`).trim();
+            const diff = git(`diff ${branch} ${remote}/${remoteBranch} -- ${affectedFiles}`).trim();
             if (diff) {
-                git(`push -f ${remote} ${branch}`);
-                console.log(`  Updated remote branch: ${branch}`);
+                git(`push -f ${remote} ${branch}:${remoteBranch}`);
+                console.log(`  Updated remote branch: ${remoteBranch}`);
             } else {
-                console.log(`  Remote branch is up to date: ${branch}`);
+                console.log(`  Remote branch is up to date: ${remoteBranch}`);
             }
         } else {
             git(`push ${remote} ${branch}`);
