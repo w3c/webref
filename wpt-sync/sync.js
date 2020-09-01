@@ -15,7 +15,7 @@ If additional changes are needed, please manually create another PR based on thi
 See the [README](https://github.com/web-platform-tests/wpt/blob/master/interfaces/README.md) for how the IDL files in this directory are used.`
 
 const CSSOM_PREAMBLE = `// GENERATED PREAMBLE - DO NOT EDIT
-// This preamble was added by reffy-reports for web-platform-tests.
+// This preamble was added by webref for web-platform-tests.
 // CSSOMString is an implementation-defined type of either DOMString or
 // USVString in CSSOM: https://drafts.csswg.org/cssom/#cssomstring-type
 // For web-platform-tests, use DOMString because USVString has additional
@@ -44,7 +44,7 @@ function createLocalBranches(srcDir, dstDir, makeCommitMessage) {
 
     // Returns the sha of any commit not mentioning reffy-reports touching
     // `file` in `dstDir` since `since`, if any, and a falsy value otherwise.
-    // See https://github.com/tidoust/reffy-reports/issues/25 for background.
+    // See https://github.com/w3c/webref/issues/25 for background.
     function lastManualCommitSince(file, since) {
         return git(`log -1 --since=${since} --grep reffy-reports --invert-grep --format=%h -- ${file}`).trim();
     }
@@ -294,7 +294,7 @@ async function main() {
         if (extras && extras.length) {
             message += extras.join('\n') + '\n\n';
         }
-        message += `Source: https://github.com/tidoust/reffy-reports/blob/${buildSha}/ed/idl/${file}\n`;
+        message += `Source: https://github.com/w3c/webref/blob/${buildSha}/ed/idl/${file}\n`;
         if (buildUrl) {
             message += `Build: ${buildUrl}\n`;
         }
