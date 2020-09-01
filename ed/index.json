@@ -1,11 +1,11 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2020-09-01T12:38:34.523Z",
+  "date": "2020-09-01T14:43:52.583Z",
   "options": {},
   "stats": {
     "crawled": 331,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -122,12 +122,13 @@
       "versions": [
         "https://drafts.css-houdini.org/css-typed-om-2/"
       ],
-      "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
-      "date": "10 May 2018",
-      "links": "links/css-typed-om-2.json",
-      "refs": "refs/css-typed-om-2.json",
-      "generator": "bikeshed",
-      "headings": "headings/css-typed-om-2.json"
+      "crawled": {
+        "url": "https://drafts.css-houdini.org/css-typed-om-2/",
+        "repository": "https://github.com/w3c/css-houdini-drafts",
+        "filename": "Overview.html"
+      },
+      "date": "",
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at Promise.then (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111)"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -10386,7 +10387,7 @@
         "https://webaudio.github.io/web-audio-api/"
       ],
       "crawled": "https://webaudio.github.io/web-audio-api/",
-      "date": "19 August 2020",
+      "date": "1 September 2020",
       "links": "links/webaudio.json",
       "refs": "refs/webaudio.json",
       "idl": "idl/webaudio.idl",

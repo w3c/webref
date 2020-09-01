@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-09-01T12:38:32.835Z",
+  "date": "2020-09-01T14:43:51.090Z",
   "stats": {
     "crawled": 331,
-    "errors": 0,
+    "errors": 1,
     "studied": 331
   },
   "results": [
@@ -13949,19 +13949,23 @@
     {
       "title": "CSS Typed OM Level 2",
       "shortname": "css-typed-om-2",
-      "date": "10 May 2018",
+      "date": "",
       "url": "https://drafts.css-houdini.org/css-typed-om-2/",
       "nightly": {
         "url": "https://drafts.css-houdini.org/css-typed-om-2/",
         "repository": "https://github.com/w3c/css-houdini-drafts",
         "filename": "Overview.html"
       },
-      "crawled": "https://drafts.css-houdini.org/css-typed-om-2/",
+      "crawled": {
+        "url": "https://drafts.css-houdini.org/css-typed-om-2/",
+        "repository": "https://github.com/w3c/css-houdini-drafts",
+        "filename": "Overview.html"
+      },
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at Promise.then (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -13972,7 +13976,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -29912,7 +29916,7 @@
     {
       "title": "Web Audio API",
       "shortname": "webaudio",
-      "date": "19 August 2020",
+      "date": "1 September 2020",
       "url": "https://www.w3.org/TR/webaudio/",
       "release": {
         "url": "https://www.w3.org/TR/webaudio/",
@@ -29930,7 +29934,9 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "undefined"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
