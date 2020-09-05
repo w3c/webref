@@ -19,7 +19,7 @@ install:
 script:
   - |
     if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
-      node wpt-sync/sync.js --wpt-dir wpt --build-url https://travis-ci.org/w3c/webref/builds/$TRAVIS_BUILD_ID
+      node wpt-sync/sync.js --wpt-dir wpt --build-url https://travis-ci.com/w3c/webref/builds/$TRAVIS_BUILD_ID
     else
       node wpt-sync/sync.js --wpt-dir wpt --dry-run
     fi
