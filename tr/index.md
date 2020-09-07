@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 31, 2020
+% September 07, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -499,6 +499,7 @@ Normative references to this spec from:
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Media Queries](https://www.w3.org/TR/css3-mediaqueries/)
 - [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
@@ -881,6 +882,7 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Mixed Content](https://www.w3.org/TR/mixed-content/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
@@ -951,7 +953,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
-- Crawled version: 26 August 2020
+- Crawled version: 3 September 2020
 - Editor's Draft: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Shortname: cookie-store
 
@@ -5637,7 +5639,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 18 August 2020
+- Crawled version: 2 September 2020
 - Editor's Draft: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Shortname: dom
 
@@ -5712,6 +5714,7 @@ Normative references to this spec from:
 - [Intersection Observer](https://www.w3.org/TR/intersection-observer/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Media Capabilities](https://www.w3.org/TR/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
@@ -5865,7 +5868,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
-- Crawled version: 29 June 2020
+- Crawled version: 1 September 2020
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Shortname: encoding
@@ -6686,7 +6689,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 30 August 2020
+- Crawled version: 2 September 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -7488,7 +7491,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
 - Crawled URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
-- Crawled version: 10 August 2020
+- Crawled version: 3 September 2020
 - Editor's Draft: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
 - Shortname: layout-instability
 
@@ -7521,7 +7524,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Crawled URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
-- Crawled version: 30 August 2020
+- Crawled version: 4 September 2020
 - Editor's Draft: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Shortname: webpackage
 
@@ -7529,6 +7532,7 @@ No informative reference to this spec from other specs.
 
 - Inconsistent references for links: 
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
      * [`https://w3c.github.io/network-error-logging/`](https://w3c.github.io/network-error-logging/), related reference "NETWORK-ERROR-LOGGING-1" uses URL [`https://www.w3.org/TR/network-error-logging-1/`](https://www.w3.org/TR/network-error-logging-1/)
 
@@ -7651,7 +7655,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Crawled URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
-- Crawled version: 27 August 2020
+- Crawled version: 04 September 2020
 - Editor's Draft: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Shortname: mathml-core
 
@@ -8884,7 +8888,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Crawled URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
-- Crawled version: 27 August 2020
+- Crawled version: 3 September 2020
 - Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Shortname: portals
 
@@ -11373,7 +11377,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 28 August 2020
+- Crawled version: 3 September 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -11638,14 +11642,14 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Crawled version: 25 August 2020
+- Crawled version: 03 September 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Shortname: webrtc
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AlgorithmIdentifier`, `DOMException`, `DOMHighResTimeStamp`
+- Unknown WebIDL names used: `AlgorithmIdentifier`, `DOMException`, `DOMHighResTimeStamp`, `undefined`
 - WebIDL names also defined elsewhere: 
     * `RTCIceParameters` also defined in [IceTransport Extensions for WebRTC](https://w3c.github.io/webrtc-ice/)
 - Missing references for links: 

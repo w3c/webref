@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 31, 2020
+% September 07, 2020
 
 331 specifications were crawled in this report.
 
@@ -111,7 +111,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `Screen` used in [The Screen Fold API](https://w3c.github.io/screen-fold/), [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
 - `SupportedType` used in [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [Touch Events](https://www.w3.org/TR/touch-events/)
-- `undefined` used in [Clipboard API and events](https://www.w3.org/TR/clipboard-apis/), [Console Standard](https://console.spec.whatwg.org/), [Cookie Store API](https://wicg.github.io/cookie-store/), [DOM Standard](https://dom.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File and Directory Entries API](https://wicg.github.io/entries-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [HTML Standard](https://html.spec.whatwg.org/multipage/), [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/), [Native File System](https://wicg.github.io/native-file-system/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Portals](https://wicg.github.io/portals/), [Resource Timing Level 2](https://www.w3.org/TR/resource-timing-2/), [Selection API](https://www.w3.org/TR/selection-api/), [Streams Standard](https://streams.spec.whatwg.org/), [The Storage Access API](https://privacycg.github.io/storage-access/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 3](https://www.w3.org/TR/user-timing-3/), [Web NFC](https://w3c.github.io/web-nfc/), [Web Share API](https://www.w3.org/TR/web-share/), [Web Speech API](https://wicg.github.io/speech-api/), [WebGPU](https://gpuweb.github.io/gpuweb/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Layers API Level 1](https://immersive-web.github.io/layers/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `undefined` used in [Clipboard API and events](https://www.w3.org/TR/clipboard-apis/), [Console Standard](https://console.spec.whatwg.org/), [Cookie Store API](https://wicg.github.io/cookie-store/), [DOM Standard](https://dom.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File and Directory Entries API](https://wicg.github.io/entries-api/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [HTML Standard](https://html.spec.whatwg.org/multipage/), [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/), [Native File System](https://wicg.github.io/native-file-system/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Portals](https://wicg.github.io/portals/), [Resource Timing Level 2](https://www.w3.org/TR/resource-timing-2/), [Selection API](https://www.w3.org/TR/selection-api/), [Streams Standard](https://streams.spec.whatwg.org/), [The Storage Access API](https://privacycg.github.io/storage-access/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 3](https://www.w3.org/TR/user-timing-3/), [Web NFC](https://w3c.github.io/web-nfc/), [Web Share API](https://www.w3.org/TR/web-share/), [Web Speech API](https://wicg.github.io/speech-api/), [WebGPU](https://gpuweb.github.io/gpuweb/), [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/webrtc/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Layers API Level 1](https://immersive-web.github.io/layers/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 => 22 WebIDL names found
 
@@ -1321,6 +1321,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/) but related reference "RESOURCE-TIMING-1" uses URL [`https://www.w3.org/TR/resource-timing-1/`](https://www.w3.org/TR/resource-timing-1/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html) links to:
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+    * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/network-error-logging/`](https://w3c.github.io/network-error-logging/) but related reference "NETWORK-ERROR-LOGGING-1" uses URL [`https://www.w3.org/TR/network-error-logging-1/`](https://www.w3.org/TR/network-error-logging-1/)
 - [Local Font Access API](https://wicg.github.io/local-font-access/) links to:
@@ -1496,6 +1497,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 336 inconsistent references for links found in 174 specifications
+=> 337 inconsistent references for links found in 174 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
