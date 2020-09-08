@@ -432,21 +432,6 @@
         ],
         "partial": false
       },
-      "CookieMatchType": {
-        "type": "enum",
-        "name": "CookieMatchType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "equals"
-          },
-          {
-            "type": "enum-value",
-            "value": "starts-with"
-          }
-        ],
-        "extAttrs": []
-      },
       "CookieStoreGetOptions": {
         "type": "dictionary",
         "name": "CookieStoreGetOptions",
@@ -480,24 +465,6 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "matchType",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CookieMatchType"
-            },
-            "default": {
-              "type": "string",
-              "value": "equals"
-            },
             "required": false
           }
         ],
@@ -1414,9 +1381,7 @@
         "CookieStoreDeleteOptions",
         "EventHandler"
       ],
-      "CookieStoreGetOptions": [
-        "CookieMatchType"
-      ],
+      "CookieStoreGetOptions": [],
       "CookieInit": [
         "CookieSameSite"
       ],
