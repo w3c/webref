@@ -5,39 +5,27 @@
   },
   "dfns": [
     {
-      "id": "concept-token",
-      "href": "https://encoding.spec.whatwg.org/#concept-token",
-      "linkingText": [
-        "token"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "concept-stream",
       "href": "https://encoding.spec.whatwg.org/#concept-stream",
       "linkingText": [
-        "stream"
+        "I/O queue"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
       "id": "end-of-stream",
       "href": "https://encoding.spec.whatwg.org/#end-of-stream",
       "linkingText": [
-        "End-of-stream"
+        "End-of-queue"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -49,35 +37,77 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "stream"
+        "I/O queue"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
-      "id": "concept-stream-prepend",
-      "href": "https://encoding.spec.whatwg.org/#concept-stream-prepend",
+      "id": "i-o-queue-peek",
+      "href": "https://encoding.spec.whatwg.org/#i-o-queue-peek",
       "linkingText": [
-        "prepended"
+        "peek"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "stream"
+        "I/O queue"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
       "id": "concept-stream-push",
       "href": "https://encoding.spec.whatwg.org/#concept-stream-push",
       "linkingText": [
-        "pushed"
+        "push"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "stream"
+        "I/O queue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-stream-prepend",
+      "href": "https://encoding.spec.whatwg.org/#concept-stream-prepend",
+      "linkingText": [
+        "prepend"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "I/O queue"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "from-i-o-queue-convert",
+      "href": "https://encoding.spec.whatwg.org/#from-i-o-queue-convert",
+      "linkingText": [
+        "convert"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "from I/O queue"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "to-i-o-queue-convert",
+      "href": "https://encoding.spec.whatwg.org/#to-i-o-queue-convert",
+      "linkingText": [
+        "convert"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "to I/O queue"
       ],
       "access": "private",
       "informative": false
@@ -552,10 +582,10 @@
       "informative": false
     },
     {
-      "id": "textdecodercommon-stream",
-      "href": "https://encoding.spec.whatwg.org/#textdecodercommon-stream",
+      "id": "textdecodercommon-i-o-queue",
+      "href": "https://encoding.spec.whatwg.org/#textdecodercommon-i-o-queue",
       "linkingText": [
-        "stream"
+        "I/O queue"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -611,7 +641,7 @@
       "id": "concept-td-serialize",
       "href": "https://encoding.spec.whatwg.org/#concept-td-serialize",
       "linkingText": [
-        "serialize stream"
+        "serialize I/O queue"
       ],
       "localLinkingText": [],
       "type": "dfn",
