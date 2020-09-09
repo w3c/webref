@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "CSS Grid Layout Module Level 1",
+    "title": "CSS Grid Layout Module Level 2",
     "url": "https://drafts.csswg.org/css-grid/"
   },
   "dfns": [
@@ -106,6 +106,54 @@
       "type": "dfn",
       "for": [],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "nested-grid",
+      "href": "https://drafts.csswg.org/css-grid/#nested-grid",
+      "linkingText": [
+        "nested grid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "parent-grid",
+      "href": "https://drafts.csswg.org/css-grid/#parent-grid",
+      "linkingText": [
+        "parent grid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "subgrid",
+      "href": "https://drafts.csswg.org/css-grid/#subgrid",
+      "linkingText": [
+        "subgrid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "standalone-grid",
+      "href": "https://drafts.csswg.org/css-grid/#standalone-grid",
+      "linkingText": [
+        "standalone grid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -369,6 +417,62 @@
       "informative": false
     },
     {
+      "id": "subgrid-listing",
+      "href": "https://drafts.csswg.org/css-grid/#subgrid-listing",
+      "linkingText": [
+        "subgrid <line-name-list>?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-rows",
+        "grid-template-columns"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-grid-template-rows-subgrid",
+      "href": "https://drafts.csswg.org/css-grid/#valdef-grid-template-rows-subgrid",
+      "linkingText": [
+        "subgrid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-rows",
+        "grid-template-columns"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "subgridded-axis",
+      "href": "https://drafts.csswg.org/css-grid/#subgridded-axis",
+      "linkingText": [
+        "subgridded axis"
+      ],
+      "localLinkingText": [
+        "subgridded"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "standalone-axis",
+      "href": "https://drafts.csswg.org/css-grid/#standalone-axis",
+      "linkingText": [
+        "standalone axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "typedef-track-list",
       "href": "https://drafts.csswg.org/css-grid/#typedef-track-list",
       "linkingText": [
@@ -397,6 +501,18 @@
       "href": "https://drafts.csswg.org/css-grid/#typedef-explicit-track-list",
       "linkingText": [
         "<explicit-track-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-line-name-list",
+      "href": "https://drafts.csswg.org/css-grid/#typedef-line-name-list",
+      "linkingText": [
+        "<line-name-list>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -661,6 +777,18 @@
       "href": "https://drafts.csswg.org/css-grid/#typedef-fixed-repeat",
       "linkingText": [
         "<fixed-repeat>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "typedef-name-repeat",
+      "href": "https://drafts.csswg.org/css-grid/#typedef-name-repeat",
+      "linkingText": [
+        "<name-repeat>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -1235,6 +1363,21 @@
         "row span",
         "column span"
       ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "indefinite-grid-span",
+      "href": "https://drafts.csswg.org/css-grid/#indefinite-grid-span",
+      "linkingText": [
+        "indefinite grid span",
+        "indefinite row span",
+        "indefinite column span",
+        "indefinite span"
+      ],
+      "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "public",
