@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% September 09, 2020
+% September 10, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -6510,7 +6510,7 @@ Informative references to this spec from:
 - [Web App Manifest](https://w3c.github.io/manifest/)
 
 
-## Gamepad {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
+## Gamepad {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -6525,6 +6525,8 @@ Informative references to this spec from:
 
 - WebIDL names also defined elsewhere: 
     * `GamepadMappingType` also defined in [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
+- Missing references for WebIDL names: 
+     * `DOMHighResTimeStamp` defined in [High Resolution Time](https://w3c.github.io/hr-time/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6801,7 +6803,6 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Frame Timing](https://wicg.github.io/frame-timing/)
-- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -6831,6 +6832,7 @@ Normative references to this spec from:
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 
 No informative reference to this spec from other specs.
@@ -11166,7 +11168,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Crawled URL: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Crawled version: 24 August 2020
+- Crawled version: 9 September 2020
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Shortname: webauthn-2
