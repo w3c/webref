@@ -2,11 +2,3 @@
 % Reffy
 % September 10, 2020
 
-## Gamepad
-
-- Initial URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
-- Missing references for WebIDL names: *DEL* DOMHighResTimeStamp
-
-
