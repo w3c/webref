@@ -1010,12 +1010,28 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "FrozenArray",
               "nullable": false,
               "union": false,
-              "idlType": "CookieList"
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CookieListItem"
+                }
+              ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -1025,12 +1041,28 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "FrozenArray",
               "nullable": false,
               "union": false,
-              "idlType": "CookieList"
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CookieListItem"
+                }
+              ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           }
@@ -1144,12 +1176,28 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "FrozenArray",
               "nullable": false,
               "union": false,
-              "idlType": "CookieList"
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CookieListItem"
+                }
+              ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -1159,12 +1207,28 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "FrozenArray",
               "nullable": false,
               "union": false,
-              "idlType": "CookieList"
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CookieListItem"
+                }
+              ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           }
@@ -1399,7 +1463,7 @@
       "CookieChangeEvent": [
         "Event",
         "CookieChangeEventInit",
-        "CookieList"
+        "CookieListItem"
       ],
       "CookieChangeEventInit": [
         "EventInit",
@@ -1408,7 +1472,7 @@
       "ExtendableCookieChangeEvent": [
         "ExtendableEvent",
         "ExtendableCookieChangeEventInit",
-        "CookieList"
+        "CookieListItem"
       ],
       "ExtendableCookieChangeEventInit": [
         "ExtendableEventInit",
