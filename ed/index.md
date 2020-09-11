@@ -12239,7 +12239,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
 - Crawled URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
-- Crawled version: 16 August 2020
+- Crawled version: 11 September 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
 - Shortname: webxr-hand-input
 
