@@ -168,7 +168,7 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
     console.log('Updating pull requests:');
     for (const branch of localBranches) {
         assert(branch.startsWith('webref/'));
-        const oldBranch = branch.replace(/webref/, 'reffy-reports');
+        const oldBranch = branch.replace(/^webref/, 'reffy-reports');
 
         // First create or update the remote branch, if not already up to date.
         if (remoteBranches.has(branch) || remoteBranches.has(oldBranch)) {
