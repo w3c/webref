@@ -7,8 +7,6 @@
 - Initial URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
-- Spec is OK: *INS* false / *DEL* true
-- Missing references for WebIDL names: *INS* Navigator, EventTarget, EventHandler
-- Missing references for links: *INS* https://html.spec.whatwg.org/, https://dom.spec.whatwg.org/, https://www.w3.org/TR/secure-contexts/
+- Spec is OK: *INS* true / *DEL* false
 
 
