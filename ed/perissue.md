@@ -87,6 +87,10 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/) uses `Point2D` but does not reference [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html) uses `Point2D` but does not reference [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
+- [Battery Status API](https://w3c.github.io/battery/) uses:
+    * `Navigator` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/)
+    * `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+    * `EventHandler` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Content Index](https://wicg.github.io/content-index/spec/) uses `ImageResource` but does not reference [Image Resource](https://w3c.github.io/image-resource/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) uses `Gamepad` but does not reference [Gamepad](https://w3c.github.io/gamepad/)
@@ -103,7 +107,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/) uses `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 15 missing references for IDL definitions found in 11 specifications
+=> 18 missing references for IDL definitions found in 12 specifications
 
 
 ## Missing references based on document links
@@ -123,6 +127,10 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Background Fetch](https://wicg.github.io/background-fetch/) links to:
     * [`https://storage.spec.whatwg.org/`](https://storage.spec.whatwg.org/) but does not list it in its references
     * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/) but does not list it in its references
+- [Battery Status API](https://w3c.github.io/battery/) links to:
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
+    * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
+    * [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/) but does not list it in its references
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/) links to:
     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/) but does not list it in its references
     * [`https://w3c.github.io/device-memory/`](https://w3c.github.io/device-memory/) but does not list it in its references
@@ -671,7 +679,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/) but does not list it in its references
 - [Magnetometer](https://w3c.github.io/magnetometer/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/) links to [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but does not list it in its references
-- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/) links to [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/) but does not list it in its references
 - [Media Queries Level 3](https://drafts.csswg.org/mediaqueries-3/) links to:
     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/) but does not list it in its references
     * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/) but does not list it in its references
@@ -851,7 +858,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 615 missing references for links found in 169 specifications
+=> 617 missing references for links found in 169 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
