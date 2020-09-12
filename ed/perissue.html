@@ -95,6 +95,12 @@
   <ul>
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a> uses <code>Point2D</code> but does not reference <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://wicg.github.io/shape-detection-api/text.html">Accelerated Text Detection in Images</a> uses <code>Point2D</code> but does not reference <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a> uses:
+  <ul>
+  <li><code>Navigator</code> but does not reference <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
+  <li><code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>EventHandler</code> but does not reference <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
+  </ul></li>
   <li><a href="https://wicg.github.io/content-index/spec/">Content Index</a> uses <code>ImageResource</code> but does not reference <a href="https://w3c.github.io/image-resource/">Image Resource</a></li>
   <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a> uses <code>Document</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://w3c.github.io/gamepad/extensions.html">Gamepad Extensions</a> uses <code>Gamepad</code> but does not reference <a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
@@ -115,7 +121,7 @@
   </ul></li>
   <li><a href="https://immersive-web.github.io/layers/">WebXR Layers API Level 1</a> uses <code>WebGLTexture</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul>
-  <p>=&gt; 15 missing references for IDL definitions found in 11 specifications</p>
+  <p>=&gt; 18 missing references for IDL definitions found in 12 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -142,6 +148,12 @@
   <ul>
   <li><a href="https://storage.spec.whatwg.org/"><code>https://storage.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/webdriver/"><code>https://w3c.github.io/webdriver/</code></a> but does not list it in its references</li>
+  </ul></li>
+  <li><a href="https://w3c.github.io/battery/">Battery Status API</a> links to:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://wicg.github.io/client-hints-infrastructure/">Client Hints Infrastructure</a> links to:
   <ul>
@@ -879,7 +891,6 @@
   </ul></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a> links to <a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/mathml-aam/">MathML Accessiblity API Mappings 1.0</a> links to <a href="https://w3c.github.io/aria/"><code>https://w3c.github.io/aria/</code></a> but does not list it in its references</li>
-  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a> links to <a href="https://www.w3.org/TR/permissions-policy-1/"><code>https://www.w3.org/TR/permissions-policy-1/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.csswg.org/mediaqueries-3/">Media Queries Level 3</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/1999/REC-html401-19991224/"><code>https://www.w3.org/TR/1999/REC-html401-19991224/</code></a> but does not list it in its references</li>
@@ -1117,7 +1128,7 @@
   <li><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 615 missing references for links found in 169 specifications</p>
+  <p>=&gt; 617 missing references for links found in 169 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>

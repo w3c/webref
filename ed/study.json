@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-09-12T01:07:23.080Z",
+  "date": "2020-09-12T06:37:21.655Z",
   "stats": {
     "crawled": 331,
     "errors": 0,
@@ -632,8 +632,43 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Navigator",
+            "refs": [
+              {
+                "url": "https://html.spec.whatwg.org/multipage/",
+                "title": "HTML Standard",
+                "crawled": "https://html.spec.whatwg.org/multipage/"
+              }
+            ]
+          },
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          },
+          {
+            "name": "EventHandler",
+            "refs": [
+              {
+                "url": "https://html.spec.whatwg.org/multipage/",
+                "title": "HTML Standard",
+                "crawled": "https://html.spec.whatwg.org/multipage/"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [
+          "https://html.spec.whatwg.org/",
+          "https://dom.spec.whatwg.org/",
+          "https://www.w3.org/TR/secure-contexts/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
@@ -650,7 +685,7 @@
             }
           ]
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -16201,11 +16236,6 @@
               "crawled": "https://w3c.github.io/badging/"
             },
             {
-              "url": "https://www.w3.org/TR/battery-status/",
-              "title": "Battery Status API",
-              "crawled": "https://w3c.github.io/battery/"
-            },
-            {
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://w3c.github.io/beacon/"
@@ -19319,11 +19349,6 @@
               "crawled": "https://w3c.github.io/badging/"
             },
             {
-              "url": "https://www.w3.org/TR/battery-status/",
-              "title": "Battery Status API",
-              "crawled": "https://w3c.github.io/battery/"
-            },
-            {
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://w3c.github.io/beacon/"
@@ -21955,7 +21980,7 @@
     {
       "title": "Layout Instability API",
       "shortname": "layout-instability",
-      "date": "3 September 2020",
+      "date": "12 September 2020",
       "url": "https://wicg.github.io/layout-instability/",
       "nightly": {
         "url": "https://wicg.github.io/layout-instability/",
@@ -22387,9 +22412,7 @@
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/permissions-policy-1/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -24997,6 +25020,11 @@
               "crawled": "https://wicg.github.io/js-self-profiling/"
             },
             {
+              "url": "https://www.w3.org/TR/mediacapture-streams/",
+              "title": "Media Capture and Streams",
+              "crawled": "https://w3c.github.io/mediacapture-main/"
+            },
+            {
               "url": "https://www.w3.org/TR/payment-request/",
               "title": "Payment Request API",
               "crawled": "https://w3c.github.io/payment-request/"
@@ -26982,11 +27010,6 @@
               "url": "https://wicg.github.io/change-password-url/",
               "title": "A Well-Known URL for Changing Passwords",
               "crawled": "https://wicg.github.io/change-password-url/"
-            },
-            {
-              "url": "https://www.w3.org/TR/battery-status/",
-              "title": "Battery Status API",
-              "crawled": "https://w3c.github.io/battery/"
             },
             {
               "url": "https://wicg.github.io/client-hints-infrastructure/",
@@ -30324,11 +30347,6 @@
               "url": "https://w3c.github.io/badging/",
               "title": "Badging API",
               "crawled": "https://w3c.github.io/badging/"
-            },
-            {
-              "url": "https://www.w3.org/TR/battery-status/",
-              "title": "Battery Status API",
-              "crawled": "https://w3c.github.io/battery/"
             },
             {
               "url": "https://www.w3.org/TR/beacon/",
