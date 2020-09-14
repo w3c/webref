@@ -123,8 +123,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": true,
-              "union": false,
-              "idlType": "Node"
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Document"
+                }
+              ]
             },
             "extAttrs": [],
             "special": "",
@@ -664,9 +681,9 @@
       "IntersectionObserver": [
         "IntersectionObserverCallback",
         "IntersectionObserverInit",
-        "Node",
-        "undefined",
         "Element",
+        "Document",
+        "undefined",
         "IntersectionObserverEntry"
       ],
       "IntersectionObserverEntry": [
@@ -686,13 +703,12 @@
       ]
     },
     "externalDependencies": [
-      "Node",
-      "undefined",
       "Element",
+      "Document",
+      "undefined",
       "DOMHighResTimeStamp",
       "DOMRectReadOnly",
-      "DOMRectInit",
-      "Document"
+      "DOMRectInit"
     ],
     "hasObsoleteIdl": false
   }
