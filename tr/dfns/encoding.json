@@ -5,39 +5,27 @@
   },
   "dfns": [
     {
-      "id": "concept-token",
-      "href": "https://www.w3.org/TR/encoding/#concept-token",
-      "linkingText": [
-        "token"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "concept-stream",
       "href": "https://www.w3.org/TR/encoding/#concept-stream",
       "linkingText": [
-        "stream"
+        "I/O queue"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
       "id": "end-of-stream",
       "href": "https://www.w3.org/TR/encoding/#end-of-stream",
       "linkingText": [
-        "End-of-stream"
+        "End-of-queue"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -49,35 +37,77 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "stream"
+        "I/O queue"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
-      "id": "concept-stream-prepend",
-      "href": "https://www.w3.org/TR/encoding/#concept-stream-prepend",
+      "id": "i-o-queue-peek",
+      "href": "https://www.w3.org/TR/encoding/#i-o-queue-peek",
       "linkingText": [
-        "prepended"
+        "peek"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "stream"
+        "I/O queue"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
       "id": "concept-stream-push",
       "href": "https://www.w3.org/TR/encoding/#concept-stream-push",
       "linkingText": [
-        "pushed"
+        "push"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "stream"
+        "I/O queue"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-stream-prepend",
+      "href": "https://www.w3.org/TR/encoding/#concept-stream-prepend",
+      "linkingText": [
+        "prepend"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "I/O queue"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "from-i-o-queue-convert",
+      "href": "https://www.w3.org/TR/encoding/#from-i-o-queue-convert",
+      "linkingText": [
+        "convert"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "from I/O queue"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "to-i-o-queue-convert",
+      "href": "https://www.w3.org/TR/encoding/#to-i-o-queue-convert",
+      "linkingText": [
+        "convert"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "to I/O queue"
       ],
       "access": "private",
       "informative": false
@@ -552,10 +582,10 @@
       "informative": false
     },
     {
-      "id": "textdecodercommon-stream",
-      "href": "https://www.w3.org/TR/encoding/#textdecodercommon-stream",
+      "id": "textdecodercommon-i-o-queue",
+      "href": "https://www.w3.org/TR/encoding/#textdecodercommon-i-o-queue",
       "linkingText": [
-        "stream"
+        "I/O queue"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -611,7 +641,7 @@
       "id": "concept-td-serialize",
       "href": "https://www.w3.org/TR/encoding/#concept-td-serialize",
       "linkingText": [
-        "serialize stream"
+        "serialize I/O queue"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2315,6 +2345,18 @@
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false
+    },
+    {
+      "id": "utf-16be-le",
+      "href": "https://www.w3.org/TR/encoding/#utf-16be-le",
+      "linkingText": [
+        "UTF-16BE/LE"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
       "informative": false
     },
     {

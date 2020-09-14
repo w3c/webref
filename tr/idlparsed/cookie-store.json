@@ -432,21 +432,6 @@
         ],
         "partial": false
       },
-      "CookieMatchType": {
-        "type": "enum",
-        "name": "CookieMatchType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "equals"
-          },
-          {
-            "type": "enum-value",
-            "value": "starts-with"
-          }
-        ],
-        "extAttrs": []
-      },
       "CookieStoreGetOptions": {
         "type": "dictionary",
         "name": "CookieStoreGetOptions",
@@ -480,24 +465,6 @@
               "idlType": "USVString"
             },
             "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "matchType",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CookieMatchType"
-            },
-            "default": {
-              "type": "string",
-              "value": "equals"
-            },
             "required": false
           }
         ],
@@ -1043,12 +1010,28 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "FrozenArray",
               "nullable": false,
               "union": false,
-              "idlType": "CookieList"
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CookieListItem"
+                }
+              ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -1058,12 +1041,28 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "FrozenArray",
               "nullable": false,
               "union": false,
-              "idlType": "CookieList"
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CookieListItem"
+                }
+              ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           }
@@ -1177,12 +1176,28 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "FrozenArray",
               "nullable": false,
               "union": false,
-              "idlType": "CookieList"
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CookieListItem"
+                }
+              ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -1192,12 +1207,28 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "FrozenArray",
               "nullable": false,
               "union": false,
-              "idlType": "CookieList"
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CookieListItem"
+                }
+              ]
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           }
@@ -1414,9 +1445,7 @@
         "CookieStoreDeleteOptions",
         "EventHandler"
       ],
-      "CookieStoreGetOptions": [
-        "CookieMatchType"
-      ],
+      "CookieStoreGetOptions": [],
       "CookieInit": [
         "CookieSameSite"
       ],
@@ -1434,7 +1463,7 @@
       "CookieChangeEvent": [
         "Event",
         "CookieChangeEventInit",
-        "CookieList"
+        "CookieListItem"
       ],
       "CookieChangeEventInit": [
         "EventInit",
@@ -1443,7 +1472,7 @@
       "ExtendableCookieChangeEvent": [
         "ExtendableEvent",
         "ExtendableCookieChangeEventInit",
-        "CookieList"
+        "CookieListItem"
       ],
       "ExtendableCookieChangeEventInit": [
         "ExtendableEventInit",

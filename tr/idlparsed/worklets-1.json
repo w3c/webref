@@ -10,8 +10,8 @@
         "Worklet": [
           "WorkletGlobalScope"
         ],
-        "FakeWorklet": [
-          "FakeWorkletGlobalScope"
+        "Window": [
+          "Worklet"
         ]
       }
     },
@@ -20,23 +20,7 @@
         "type": "interface",
         "name": "WorkletGlobalScope",
         "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "console",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "Console"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          }
-        ],
+        "members": [],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -57,7 +41,7 @@
         "members": [
           {
             "type": "operation",
-            "name": "import",
+            "name": "addModule",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -71,7 +55,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -86,10 +70,28 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "USVString"
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WorkletOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -104,212 +106,70 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "Function": {
-        "type": "callback",
-        "name": "Function",
-        "idlType": {
-          "type": "return-type",
-          "extAttrs": [],
-          "generic": "",
-          "nullable": false,
-          "union": false,
-          "idlType": "any"
-        },
-        "arguments": [
-          {
-            "type": "argument",
-            "name": "arguments",
-            "extAttrs": [],
-            "idlType": {
-              "type": "argument-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "any"
-            },
-            "default": null,
-            "optional": false,
-            "variadic": true
-          }
-        ],
-        "extAttrs": []
-      },
-      "FakeWorkletGlobalScope": {
-        "type": "interface",
-        "name": "FakeWorkletGlobalScope",
-        "inheritance": "WorkletGlobalScope",
-        "members": [
-          {
-            "type": "operation",
-            "name": "registerAnArbitaryClass",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "void"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "type",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "classConstructor",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Function"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
         "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Global",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Worklet"
-                },
-                {
-                  "value": "FakeWorklet"
-                }
-              ]
-            },
-            "arguments": []
-          },
           {
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
-              "value": "FakeWorklet"
+              "value": "Window"
             },
             "arguments": []
           }
         ],
         "partial": false
+      },
+      "WorkletOptions": {
+        "type": "dictionary",
+        "name": "WorkletOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "credentials",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RequestCredentials"
+            },
+            "default": {
+              "type": "string",
+              "value": "same-origin"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
-    "idlExtendedNames": {
-      "Window": [
-        {
-          "type": "interface",
-          "name": "Window",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "attribute",
-              "name": "fakeWorklet1",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "Worklet"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "SameObject",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": true
-            },
-            {
-              "type": "attribute",
-              "name": "fakeWorklet2",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "Worklet"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "SameObject",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": true
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ]
-    },
-    "globals": {
-      "Worklet": [
-        "FakeWorkletGlobalScope"
-      ],
-      "FakeWorklet": [
-        "FakeWorkletGlobalScope"
-      ]
-    },
+    "idlExtendedNames": {},
+    "globals": {},
     "exposed": {
       "Worklet": [
         "WorkletGlobalScope"
       ],
-      "FakeWorklet": [
-        "FakeWorkletGlobalScope"
+      "Window": [
+        "Worklet"
       ]
     },
     "dependencies": {
-      "WorkletGlobalScope": [
-        "Console"
+      "WorkletGlobalScope": [],
+      "Worklet": [
+        "undefined",
+        "WorkletOptions"
       ],
-      "Worklet": [],
-      "Window": [
-        "Worklet"
-      ],
-      "FakeWorkletGlobalScope": [
-        "WorkletGlobalScope"
+      "WorkletOptions": [
+        "RequestCredentials"
       ]
     },
     "externalDependencies": [
-      "Console",
-      "Window"
+      "undefined",
+      "RequestCredentials"
     ],
     "hasObsoleteIdl": false
   }
