@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% September 07, 2020
+% September 14, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -779,7 +779,6 @@ Normative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Import Maps](https://wicg.github.io/import-maps/)
-- [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
 
 No informative reference to this spec from other specs.
 
@@ -953,7 +952,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
-- Crawled version: 3 September 2020
+- Crawled version: 11 September 2020
 - Editor's Draft: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Shortname: cookie-store
 
@@ -1030,7 +1029,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
 - Crawled URL: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
-- Crawled version: 8 August 2017
+- Crawled version: 6 July 2020
 - Editor's Draft: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
 - Shortname: cors-rfc1918
 
@@ -4566,6 +4565,7 @@ Normative references to this spec from:
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Web App Manifest](https://www.w3.org/TR/appmanifest/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
+- [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
 
 Informative references to this spec from:
 
@@ -5639,7 +5639,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 2 September 2020
+- Crawled version: 10 September 2020
 - Editor's Draft: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Shortname: dom
 
@@ -5868,7 +5868,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
-- Crawled version: 1 September 2020
+- Crawled version: 10 September 2020
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Shortname: encoding
@@ -5907,6 +5907,7 @@ Normative references to this spec from:
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
+- [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
@@ -6004,7 +6005,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 28 August 2020
+- Crawled version: 8 September 2020
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -6075,6 +6076,7 @@ Normative references to this spec from:
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - [WebTransport](https://wicg.github.io/web-transport/)
+- [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -6689,7 +6691,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 2 September 2020
+- Crawled version: 10 September 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -7275,6 +7277,7 @@ Normative references to this spec from:
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
+- [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -7491,7 +7494,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
 - Crawled URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
-- Crawled version: 3 September 2020
+- Crawled version: 12 September 2020
 - Editor's Draft: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
 - Shortname: layout-instability
 
@@ -7524,7 +7527,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Crawled URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
-- Crawled version: 4 September 2020
+- Crawled version: 11 September 2020
 - Editor's Draft: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Shortname: webpackage
 
@@ -9615,7 +9618,6 @@ Normative references to this spec from:
 - [A Well-Known URL for Changing Passwords](https://wicg.github.io/change-password-url/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/orientation-event/)
 - [Fetch Metadata Request Headers](https://www.w3.org/TR/fetch-metadata/)
@@ -10204,7 +10206,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Crawled URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- Crawled version: 17 August 2020
+- Crawled version: 10 September 2020
 - Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Shortname: screen-fold
 
@@ -10872,6 +10874,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Media Capture from DOM Elements](https://www.w3.org/TR/mediacapture-fromelement/)
+- [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
 
 
 ## Web Authentication: An API for accessing Public Key Credentials - Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -11292,7 +11295,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - Crawled URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
-- Crawled version: 3 August 2020
+- Crawled version: 11 September 2020
 - Editor's Draft: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - Shortname: webdriver-bidi
 
@@ -11377,7 +11380,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 3 September 2020
+- Crawled version: 8 September 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -11972,7 +11975,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
 - Crawled URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
-- Crawled version: 16 August 2020
+- Crawled version: 11 September 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
 - Shortname: webxr-hand-input
 
@@ -12060,20 +12063,22 @@ Informative references to this spec from:
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 
 
-## Worklets Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Worklets Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
 - Crawled URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
-- Crawled version: 07 June 2016
+- Crawled version: 8 September 2020
 - Editor's Draft: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
 - Latest published version: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
 - Shortname: worklets-1
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Console`
+- Unknown WebIDL names used: `undefined`
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
 
 ### Known dependencies on this specification {.dependencies}
 

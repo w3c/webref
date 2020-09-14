@@ -5,21 +5,13 @@
 
 [Exposed=Worklet]
 interface WorkletGlobalScope {
-    attribute Console console;
 };
 
+[Exposed=Window]
 interface Worklet {
-    [NewObject] Promise<void> import(DOMString moduleURL);
+    [NewObject] Promise<undefined> addModule(USVString moduleURL, optional WorkletOptions options = {});
 };
 
-partial interface Window {
-  [SameObject] readonly attribute Worklet fakeWorklet1;
-  [SameObject] readonly attribute Worklet fakeWorklet2;
-};
-
-callback Function = any (any... arguments);
-
-[Global=(Worklet,FakeWorklet),Exposed=FakeWorklet]
-interface FakeWorkletGlobalScope : WorkletGlobalScope {
-    void registerAnArbitaryClass(DOMString type, Function classConstructor);
+dictionary WorkletOptions {
+    RequestCredentials credentials = "same-origin";
 };

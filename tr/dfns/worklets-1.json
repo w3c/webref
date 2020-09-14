@@ -29,17 +29,43 @@
       "informative": false
     },
     {
-      "id": "dom-workletglobalscope-console",
-      "href": "https://www.w3.org/TR/worklets-1/#dom-workletglobalscope-console",
+      "id": "workletglobalscope-owner-document",
+      "href": "https://www.w3.org/TR/worklets-1/#workletglobalscope-owner-document",
       "linkingText": [
-        "console"
+        "owner document"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
       "for": [
         "WorkletGlobalScope"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "workletglobalscope-module-map",
+      "href": "https://www.w3.org/TR/worklets-1/#workletglobalscope-module-map",
+      "linkingText": [
+        "module map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WorkletGlobalScope"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "worklet-global-scope-execution-environment",
+      "href": "https://www.w3.org/TR/worklets-1/#worklet-global-scope-execution-environment",
+      "linkingText": [
+        "worklet global scope execution environment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -51,7 +77,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -63,7 +89,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -79,15 +105,57 @@
       "informative": false
     },
     {
-      "id": "dom-worklet-import-moduleurl-moduleurl",
-      "href": "https://www.w3.org/TR/worklets-1/#dom-worklet-import-moduleurl-moduleurl",
+      "id": "dom-worklet-addmodule-moduleurl-options-moduleurl",
+      "href": "https://www.w3.org/TR/worklets-1/#dom-worklet-addmodule-moduleurl-options-moduleurl",
       "linkingText": [
         "moduleURL"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Worklet/import(moduleURL)"
+        "Worklet/addModule(moduleURL, options)",
+        "Worklet/addModule(moduleURL)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-worklet-addmodule-moduleurl-options-options",
+      "href": "https://www.w3.org/TR/worklets-1/#dom-worklet-addmodule-moduleurl-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Worklet/addModule(moduleURL, options)",
+        "Worklet/addModule(moduleURL)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-workletoptions",
+      "href": "https://www.w3.org/TR/worklets-1/#dictdef-workletoptions",
+      "linkingText": [
+        "WorkletOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-workletoptions-credentials",
+      "href": "https://www.w3.org/TR/worklets-1/#dom-workletoptions-credentials",
+      "linkingText": [
+        "credentials"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WorkletOptions"
       ],
       "access": "public",
       "informative": false
@@ -117,10 +185,22 @@
       "informative": false
     },
     {
-      "id": "worklets-resolved-module-urls",
-      "href": "https://www.w3.org/TR/worklets-1/#worklets-resolved-module-urls",
+      "id": "worklet-destination-type",
+      "href": "https://www.w3.org/TR/worklets-1/#worklet-destination-type",
       "linkingText": [
-        "worklet’s resolved module URLs"
+        "worklet destination type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "module-responses-map",
+      "href": "https://www.w3.org/TR/worklets-1/#module-responses-map",
+      "linkingText": [
+        "module responses map"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -129,10 +209,37 @@
       "informative": false
     },
     {
-      "id": "dom-worklet-import",
-      "href": "https://www.w3.org/TR/worklets-1/#dom-worklet-import",
+      "id": "pending-tasks-struct",
+      "href": "https://www.w3.org/TR/worklets-1/#pending-tasks-struct",
       "linkingText": [
-        "import(moduleURL)"
+        "pending tasks struct"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-tasks-struct-counter",
+      "href": "https://www.w3.org/TR/worklets-1/#pending-tasks-struct-counter",
+      "linkingText": [
+        "counter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "pending tasks struct"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-worklet-addmodule",
+      "href": "https://www.w3.org/TR/worklets-1/#dom-worklet-addmodule",
+      "linkingText": [
+        "addModule(moduleURL, options)",
+        "addModule(moduleURL)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -143,85 +250,27 @@
       "informative": false
     },
     {
-      "id": "dom-window-fakeworklet1",
-      "href": "https://www.w3.org/TR/worklets-1/#dom-window-fakeworklet1",
+      "id": "fetch-and-invoke-a-worklet-script",
+      "href": "https://www.w3.org/TR/worklets-1/#fetch-and-invoke-a-worklet-script",
       "linkingText": [
-        "fakeWorklet1"
+        "fetch and invoke a worklet script"
       ],
       "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Window"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-window-fakeworklet2",
-      "href": "https://www.w3.org/TR/worklets-1/#dom-window-fakeworklet2",
-      "linkingText": [
-        "fakeWorklet2"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Window"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-function-arguments",
-      "href": "https://www.w3.org/TR/worklets-1/#dom-function-arguments",
-      "linkingText": [
-        "arguments"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Function"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "fakeworkletglobalscope",
-      "href": "https://www.w3.org/TR/worklets-1/#fakeworkletglobalscope",
-      "linkingText": [
-        "FakeWorkletGlobalScope"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false
     },
     {
-      "id": "dom-fakeworkletglobalscope-registeranarbitaryclass-type-classconstructor-type",
-      "href": "https://www.w3.org/TR/worklets-1/#dom-fakeworkletglobalscope-registeranarbitaryclass-type-classconstructor-type",
+      "id": "fetch-a-worklet-script",
+      "href": "https://www.w3.org/TR/worklets-1/#fetch-a-worklet-script",
       "linkingText": [
-        "type"
+        "fetch a worklet script"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "FakeWorkletGlobalScope/registerAnArbitaryClass(type, classConstructor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-fakeworkletglobalscope-registeranarbitaryclass-type-classconstructor-classconstructor",
-      "href": "https://www.w3.org/TR/worklets-1/#dom-fakeworkletglobalscope-registeranarbitaryclass-type-classconstructor-classconstructor",
-      "linkingText": [
-        "classConstructor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "FakeWorkletGlobalScope/registerAnArbitaryClass(type, classConstructor)"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -234,7 +283,7 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false
+      "informative": true
     },
     {
       "id": "dom-fakeworkletglobalscope-registeranarbitaryclass",
@@ -248,7 +297,7 @@
         "FakeWorkletGlobalScope"
       ],
       "access": "public",
-      "informative": false
+      "informative": true
     }
   ]
 }
