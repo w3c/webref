@@ -839,7 +839,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
 - Crawled URL: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
-- Crawled version: 8 August 2017
+- Crawled version: 6 July 2020
 - Editor's Draft: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
 - Shortname: cors-rfc1918
 
@@ -9920,7 +9920,6 @@ Normative references to this spec from:
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Fetch Metadata Request Headers](https://w3c.github.io/webappsec-fetch-metadata/)
@@ -11779,7 +11778,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webdriver2/](https://www.w3.org/TR/webdriver2/)
 - Crawled URL: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
-- Crawled version: 24 August 2020
+- Crawled version: 14 September 2020
 - Editor's Draft: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
 - Latest published version: [https://www.w3.org/TR/webdriver2/](https://www.w3.org/TR/webdriver2/)
 - Shortname: webdriver2
