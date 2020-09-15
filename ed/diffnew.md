@@ -2,11 +2,11 @@
 % Reffy
 % September 15, 2020
 
-## Encoding Standard
+## Resource Timing Level 2
 
-- Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
+- Initial URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
-- Spec is OK: *INS* true / *DEL* false
+- Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
+- Inconsistent references for links: *INS* https://w3c.github.io/performance-timeline/
 
 
