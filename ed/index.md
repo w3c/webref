@@ -555,7 +555,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - WebIDL names also defined elsewhere: 
-    * `GenericTransformStream` also defined in [Streams Standard](https://streams.spec.whatwg.org/) and [Encoding Standard](https://encoding.spec.whatwg.org/)
+    * `GenericTransformStream` also defined in [Streams Standard](https://streams.spec.whatwg.org/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6066,21 +6066,20 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Encoding Standard {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
+## Encoding Standard {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
-- Crawled version: 10 September 2020
+- Crawled version: 15 September 2020
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Shortname: encoding
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `GenericTransformStream` also defined in [Streams Standard](https://streams.spec.whatwg.org/) and [Compression Streams](https://wicg.github.io/compression/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6214,7 +6213,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 8 September 2020
+- Crawled version: 15 September 2020
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -10253,7 +10252,7 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `undefined`
 - WebIDL names also defined elsewhere: 
-    * `GenericTransformStream` also defined in [Compression Streams](https://wicg.github.io/compression/) and [Encoding Standard](https://encoding.spec.whatwg.org/)
+    * `GenericTransformStream` also defined in [Compression Streams](https://wicg.github.io/compression/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -10525,7 +10524,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Crawled URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- Crawled version: 10 September 2020
+- Crawled version: 15 September 2020
 - Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Shortname: screen-fold
 

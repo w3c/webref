@@ -465,45 +465,6 @@
         ],
         "partial": false
       },
-      "GenericTransformStream": {
-        "type": "interface mixin",
-        "name": "GenericTransformStream",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "readable",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ReadableStream"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "writable",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "WritableStream"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "TextDecoderStream": {
         "type": "interface",
         "name": "TextDecoderStream",
@@ -675,10 +636,6 @@
         "TextEncoderEncodeIntoResult",
         "TextEncoderCommon"
       ],
-      "GenericTransformStream": [
-        "ReadableStream",
-        "WritableStream"
-      ],
       "TextDecoderStream": [
         "TextDecoderOptions",
         "TextDecoderCommon",
@@ -689,10 +646,7 @@
         "GenericTransformStream"
       ]
     },
-    "externalDependencies": [
-      "ReadableStream",
-      "WritableStream"
-    ],
+    "externalDependencies": [],
     "hasObsoleteIdl": false
   }
 }
