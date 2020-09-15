@@ -1342,7 +1342,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Crawled URL: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
-- Crawled version: 18 August 2020
+- Crawled version: 14 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Shortname: css-ui-4
@@ -1366,7 +1366,6 @@ Normative references to this spec from:
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
-- [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
@@ -1390,7 +1389,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
 - Crawled URL: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
-- Crawled version: 18 August 2020
+- Crawled version: 14 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
 - Latest published version: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
 - Shortname: css-ui-3
@@ -11943,7 +11942,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled URL: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- Crawled version: 10 September 2020
+- Crawled version: 15 September 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Shortname: webrtc
@@ -12152,7 +12151,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 28 August 2020
+- Crawled version: 14 September 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Shortname: webxr
