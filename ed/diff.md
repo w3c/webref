@@ -2,12 +2,11 @@
 % Reffy
 % September 16, 2020
 
-## JS Self-Profiling API
+## HTML Standard
 
-- Initial URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
+- Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
-- Spec is OK: *INS* false / *DEL* true
-- Missing references for links: *INS* https://w3c.github.io/webappsec-permissions-policy/document-policy.html
+- Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
+- Missing references for links: *DEL* https://w3c.github.io/payment-request/
 
 
