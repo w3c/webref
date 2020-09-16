@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% September 15, 2020
+% September 16, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -542,20 +542,19 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Compression Streams {data-spec=true data-anomaly=true data-redefinedIdlNames=true}
+## Compression Streams {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
 - Crawled URL: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
-- Crawled version: 16 February 2020
+- Crawled version: 15 September 2020
 - Editor's Draft: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
 - Shortname: compression
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `GenericTransformStream` also defined in [Streams Standard](https://streams.spec.whatwg.org/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -5456,6 +5455,7 @@ Normative references to this spec from:
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [WebGPU](https://gpuweb.github.io/gpuweb/)
 
 No informative reference to this spec from other specs.
 
@@ -7327,7 +7327,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/import-maps/](https://wicg.github.io/import-maps/)
 - Crawled URL: [https://wicg.github.io/import-maps/](https://wicg.github.io/import-maps/)
-- Crawled version: 19 May 2020
+- Crawled version: 15 September 2020
 - Editor's Draft: [https://wicg.github.io/import-maps/](https://wicg.github.io/import-maps/)
 - Shortname: import-maps
 
@@ -8461,7 +8461,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Crawled URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
-- Crawled version: 25 August 2020
+- Crawled version: 15 September 2020
 - Editor's Draft: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Shortname: native-file-system
 
@@ -9123,7 +9123,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Crawled URL: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
-- Crawled version: 18 August 2020
+- Crawled version: 15 September 2020
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Shortname: pointerevents3
@@ -10240,7 +10240,7 @@ Informative references to this spec from:
 - [Web Locks API](https://wicg.github.io/web-locks/)
 
 
-## Streams Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true}
+## Streams Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -10253,8 +10253,6 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `undefined`
-- WebIDL names also defined elsewhere: 
-    * `GenericTransformStream` also defined in [Compression Streams](https://wicg.github.io/compression/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12242,7 +12240,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
 - Crawled URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
-- Crawled version: 11 September 2020
+- Crawled version: 15 September 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
 - Shortname: webxr-hand-input
 

@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% September 15, 2020
+% September 16, 2020
 
 331 specifications were crawled in this report.
 
@@ -71,14 +71,13 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 ## List of WebIDL names defined in more than one spec
 
 - `GamepadMappingType` defined in [Gamepad](https://w3c.github.io/gamepad/) and [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
-- `GenericTransformStream` defined in [Compression Streams](https://wicg.github.io/compression/) and [Streams Standard](https://streams.spec.whatwg.org/)
 - `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - `MessageEventSource` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/) and [Portals](https://wicg.github.io/portals/)
 - `PermissionState` defined in [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/) and [Permissions](https://w3c.github.io/permissions/)
 - `RTCIceParameters` defined in [IceTransport Extensions for WebRTC](https://w3c.github.io/webrtc-ice/) and [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - `SVGMarkerElement` defined in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) and [SVG Markers](https://svgwg.org/specs/markers/)
 
-=> 7 WebIDL names found
+=> 6 WebIDL names found
 
 "There can be only one"...
 
