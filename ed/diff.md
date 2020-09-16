@@ -1,21 +1,13 @@
-% Diff between report from "September 16, 2020" and reference report from "September 15, 2020"
+% Diff between report from "September 16, 2020" and reference report from "September 16, 2020"
 % Reffy
 % September 16, 2020
 
-## Compression Streams
+## JS Self-Profiling API
 
-- Initial URL: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
+- Initial URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
-- Spec is OK: *INS* true / *DEL* false
-- WebIDL names also defined elsewhere: *DEL* GenericTransformStream
-
-
-## Streams Standard
-
-- Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- WebIDL names also defined elsewhere: *DEL* GenericTransformStream
+- Editor's Draft: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
+- Spec is OK: *INS* false / *DEL* true
+- Missing references for links: *INS* https://w3c.github.io/webappsec-permissions-policy/document-policy.html
 
 
