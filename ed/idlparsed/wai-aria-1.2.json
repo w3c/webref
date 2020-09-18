@@ -9,9 +9,9 @@
       "functions": {}
     },
     "idlNames": {
-      "AccessibilityRole": {
+      "ARIAMixin": {
         "type": "interface mixin",
-        "name": "AccessibilityRole",
+        "name": "ARIAMixin",
         "inheritance": null,
         "members": [
           {
@@ -21,23 +21,14 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "DOMString"
             },
             "extAttrs": [],
             "special": "",
             "readonly": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "AriaAttributes": {
-        "type": "interface mixin",
-        "name": "AriaAttributes",
-        "inheritance": null,
-        "members": [
+          },
           {
             "type": "attribute",
             "name": "ariaAtomic",
@@ -648,24 +639,17 @@
         {
           "name": "Element",
           "type": "interface",
-          "includes": "AccessibilityRole"
-        },
-        {
-          "name": "Element",
-          "type": "interface",
-          "includes": "AriaAttributes"
+          "includes": "ARIAMixin"
         }
       ]
     },
     "globals": {},
     "exposed": {},
     "dependencies": {
-      "AccessibilityRole": [],
+      "ARIAMixin": [],
       "Element": [
-        "AccessibilityRole",
-        "AriaAttributes"
-      ],
-      "AriaAttributes": []
+        "ARIAMixin"
+      ]
     },
     "externalDependencies": [],
     "hasObsoleteIdl": false
