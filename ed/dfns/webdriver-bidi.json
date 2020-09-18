@@ -5,10 +5,10 @@
   },
   "dfns": [
     {
-      "id": "module",
-      "href": "https://w3c.github.io/webdriver-bidi/#module",
+      "id": "remote-end-definition",
+      "href": "https://w3c.github.io/webdriver-bidi/#remote-end-definition",
       "linkingText": [
-        "module"
+        "remote end definition"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -17,17 +17,51 @@
       "informative": false
     },
     {
-      "id": "module-name",
-      "href": "https://w3c.github.io/webdriver-bidi/#module-name",
+      "id": "local-end-definition",
+      "href": "https://w3c.github.io/webdriver-bidi/#local-end-definition",
       "linkingText": [
-        "name"
+        "local end definition"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "module",
+      "href": "https://w3c.github.io/webdriver-bidi/#module",
+      "linkingText": [
         "module"
       ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "module-name",
+      "href": "https://w3c.github.io/webdriver-bidi/#module-name",
+      "linkingText": [
+        "module name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "extension-modules",
+      "href": "https://w3c.github.io/webdriver-bidi/#extension-modules",
+      "linkingText": [
+        "extension modules"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -43,10 +77,10 @@
       "informative": false
     },
     {
-      "id": "command-name",
-      "href": "https://w3c.github.io/webdriver-bidi/#command-name",
+      "id": "command-command-type",
+      "href": "https://w3c.github.io/webdriver-bidi/#command-command-type",
       "linkingText": [
-        "name"
+        "command type"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -57,10 +91,10 @@
       "informative": false
     },
     {
-      "id": "command-parameter-type",
-      "href": "https://w3c.github.io/webdriver-bidi/#command-parameter-type",
+      "id": "command-command-name",
+      "href": "https://w3c.github.io/webdriver-bidi/#command-command-name",
       "linkingText": [
-        "parameter type"
+        "command name"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -71,10 +105,10 @@
       "informative": false
     },
     {
-      "id": "command-return-type",
-      "href": "https://w3c.github.io/webdriver-bidi/#command-return-type",
+      "id": "command-command-parameters",
+      "href": "https://w3c.github.io/webdriver-bidi/#command-command-parameters",
       "linkingText": [
-        "return type"
+        "command parameters"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -85,10 +119,24 @@
       "informative": false
     },
     {
-      "id": "command-table-of-commands",
-      "href": "https://w3c.github.io/webdriver-bidi/#command-table-of-commands",
+      "id": "command-result-type",
+      "href": "https://w3c.github.io/webdriver-bidi/#command-result-type",
       "linkingText": [
-        "table of commands"
+        "result type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "command"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "command-set-of-all-command-names",
+      "href": "https://w3c.github.io/webdriver-bidi/#command-set-of-all-command-names",
+      "linkingText": [
+        "set of all command names"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -111,10 +159,10 @@
       "informative": false
     },
     {
-      "id": "event-name",
-      "href": "https://w3c.github.io/webdriver-bidi/#event-name",
+      "id": "event-event-type",
+      "href": "https://w3c.github.io/webdriver-bidi/#event-event-type",
       "linkingText": [
-        "name"
+        "event type"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -125,15 +173,29 @@
       "informative": false
     },
     {
-      "id": "event-parameter-type",
-      "href": "https://w3c.github.io/webdriver-bidi/#event-parameter-type",
+      "id": "event-event-name",
+      "href": "https://w3c.github.io/webdriver-bidi/#event-event-name",
       "linkingText": [
-        "parameter type"
+        "event name"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
         "event"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "command-event-parameters",
+      "href": "https://w3c.github.io/webdriver-bidi/#command-event-parameters",
+      "linkingText": [
+        "event parameters."
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "command"
       ],
       "access": "public",
       "informative": false
