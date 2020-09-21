@@ -2,51 +2,41 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-09-21T12:41:29.905Z",
+  "date": "2020-09-21T18:38:11.892Z",
   "stats": {
     "crawled": 331,
-    "errors": 0,
+    "errors": 1,
     "studied": 331
   },
   "results": [
     {
       "title": "A Well-Known URL for Changing Passwords",
       "shortname": "change-password-url",
-      "date": "25 August 2020",
+      "date": "",
       "url": "https://wicg.github.io/change-password-url/",
       "nightly": {
         "url": "https://wicg.github.io/change-password-url/",
         "repository": "https://github.com/WICG/change-password-url",
         "filename": "index.html"
       },
-      "crawled": "https://wicg.github.io/change-password-url/",
+      "crawled": {
+        "url": "https://wicg.github.io/change-password-url/",
+        "repository": "https://github.com/WICG/change-password-url",
+        "filename": "index.html"
+      },
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:217:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/webappsec-secure-contexts/",
-            "ref": {
-              "name": "SECURE-CONTEXTS",
-              "url": "https://www.w3.org/TR/secure-contexts/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://wicg.github.io/change-password-url/",
-              "title": "A Well-Known URL for Changing Passwords",
-              "crawled": "https://wicg.github.io/change-password-url/"
-            }
-          ],
+          "normative": [],
           "informative": []
         },
         "ok": false
@@ -9572,7 +9562,7 @@
     {
       "title": "CSS Object Model (CSSOM)",
       "shortname": "cssom-1",
-      "date": "19 April 2020",
+      "date": "17 September 2020",
       "url": "https://www.w3.org/TR/cssom-1/",
       "release": {
         "url": "https://www.w3.org/TR/cssom-1/",
@@ -16802,7 +16792,7 @@
     {
       "title": "Encoding Standard",
       "shortname": "encoding",
-      "date": "15 September 2020",
+      "date": "21 September 2020",
       "url": "https://www.w3.org/TR/encoding/",
       "release": {
         "url": "https://www.w3.org/TR/encoding/",
@@ -17209,11 +17199,6 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://wicg.github.io/change-password-url/",
-              "title": "A Well-Known URL for Changing Passwords",
-              "crawled": "https://wicg.github.io/change-password-url/"
-            },
             {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
@@ -19001,11 +18986,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/change-password-url/",
-              "title": "A Well-Known URL for Changing Passwords",
-              "crawled": "https://wicg.github.io/change-password-url/"
-            },
-            {
               "url": "https://wicg.github.io/shape-detection-api/",
               "title": "Accelerated Shape Detection in Images",
               "crawled": "https://wicg.github.io/shape-detection-api/"
@@ -20681,11 +20661,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/change-password-url/",
-              "title": "A Well-Known URL for Changing Passwords",
-              "crawled": "https://wicg.github.io/change-password-url/"
-            },
-            {
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://w3c.github.io/accelerometer/"
@@ -22041,6 +22016,11 @@
         "referencedBy": {
           "normative": [],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/cssom-1/",
+              "title": "CSS Object Model (CSSOM)",
+              "crawled": "https://drafts.csswg.org/cssom/"
+            },
             {
               "url": "https://w3c.github.io/mathml-aam/",
               "title": "MathML Accessiblity API Mappings 1.0",
@@ -24971,7 +24951,7 @@
     {
       "title": "Portals",
       "shortname": "portals",
-      "date": "14 September 2020",
+      "date": "21 September 2020",
       "url": "https://wicg.github.io/portals/",
       "nightly": {
         "url": "https://wicg.github.io/portals/",
@@ -26711,11 +26691,6 @@
         ],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://wicg.github.io/change-password-url/",
-              "title": "A Well-Known URL for Changing Passwords",
-              "crawled": "https://wicg.github.io/change-password-url/"
-            },
             {
               "url": "https://www.w3.org/TR/battery-status/",
               "title": "Battery Status API",
@@ -28919,11 +28894,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/change-password-url/",
-              "title": "A Well-Known URL for Changing Passwords",
-              "crawled": "https://wicg.github.io/change-password-url/"
-            },
-            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
@@ -29997,7 +29967,7 @@
     {
       "title": "Web IDL",
       "shortname": "WebIDL-1",
-      "date": "18 September 2020",
+      "date": "21 September 2020",
       "url": "https://www.w3.org/TR/WebIDL-1/",
       "release": {
         "url": "https://www.w3.org/TR/WebIDL-1/",

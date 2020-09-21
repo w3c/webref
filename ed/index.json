@@ -1,11 +1,11 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2020-09-21T12:41:31.676Z",
+  "date": "2020-09-21T18:38:13.567Z",
   "options": {},
   "stats": {
     "crawled": 331,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -1700,13 +1700,13 @@
       "versions": [
         "https://wicg.github.io/change-password-url/"
       ],
-      "crawled": "https://wicg.github.io/change-password-url/",
-      "date": "25 August 2020",
-      "links": "links/change-password-url.json",
-      "refs": "refs/change-password-url.json",
-      "generator": "bikeshed",
-      "dfns": "dfns/change-password-url.json",
-      "headings": "headings/change-password-url.json"
+      "crawled": {
+        "url": "https://wicg.github.io/change-password-url/",
+        "repository": "https://github.com/WICG/change-password-url",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:217:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
     },
     {
       "url": "https://wicg.github.io/client-hints-infrastructure/",
@@ -2735,7 +2735,7 @@
         "https://wicg.github.io/portals/"
       ],
       "crawled": "https://wicg.github.io/portals/",
-      "date": "14 September 2020",
+      "date": "21 September 2020",
       "links": "links/portals.json",
       "refs": "refs/portals.json",
       "idl": "idl/portals.idl",
@@ -6839,7 +6839,7 @@
         "https://drafts.csswg.org/cssom/"
       ],
       "crawled": "https://drafts.csswg.org/cssom/",
-      "date": "19 April 2020",
+      "date": "17 September 2020",
       "links": "links/cssom-1.json",
       "refs": "refs/cssom-1.json",
       "idl": "idl/cssom.idl",
@@ -6979,7 +6979,7 @@
         "https://encoding.spec.whatwg.org/"
       ],
       "crawled": "https://encoding.spec.whatwg.org/",
-      "date": "15 September 2020",
+      "date": "21 September 2020",
       "links": "links/encoding.json",
       "refs": "refs/encoding.json",
       "idl": "idl/encoding.idl",
@@ -10526,7 +10526,7 @@
         "https://heycam.github.io/webidl/"
       ],
       "crawled": "https://heycam.github.io/webidl/",
-      "date": "18 September 2020",
+      "date": "21 September 2020",
       "links": "links/WebIDL-1.json",
       "refs": "refs/WebIDL-1.json",
       "idl": "idl/WebIDL.idl",
