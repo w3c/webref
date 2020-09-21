@@ -7,12 +7,10 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "QuicTransport",
-          "Http3Transport"
+          "WebTransport"
         ],
         "Worker": [
-          "QuicTransport",
-          "Http3Transport"
+          "WebTransport"
         ]
       },
       "functions": {
@@ -207,10 +205,74 @@
         "partial": false
       },
       "WebTransport": {
-        "type": "interface mixin",
+        "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "url",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebTransportOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "getStats",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebTransportStats"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
           {
             "type": "attribute",
             "name": "state",
@@ -300,6 +362,56 @@
             "readonly": false
           }
         ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "WebTransportOptions": {
+        "type": "dictionary",
+        "name": "WebTransportOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "serverCertificateFingerprints",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RTCDtlsFingerprint"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
         "extAttrs": [],
         "partial": false
       },
@@ -371,9 +483,9 @@
         "extAttrs": [],
         "partial": false
       },
-      "QuicTransportStats": {
+      "WebTransportStats": {
         "type": "dictionary",
-        "name": "QuicTransportStats",
+        "name": "WebTransportStats",
         "inheritance": null,
         "members": [
           {
@@ -513,129 +625,6 @@
           }
         ],
         "extAttrs": [],
-        "partial": false
-      },
-      "QuicTransportOptions": {
-        "type": "dictionary",
-        "name": "QuicTransportOptions",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "serverCertificateFingerprints",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "RTCDtlsFingerprint"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "QuicTransport": {
-        "type": "interface",
-        "name": "QuicTransport",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "url",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "QuicTransportOptions"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "operation",
-            "name": "getStats",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "QuicTransportStats"
-                }
-              ]
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
         "partial": false
       },
       "OutgoingStream": {
@@ -961,77 +950,24 @@
           }
         ],
         "partial": false
-      },
-      "Http3Transport": {
-        "type": "interface",
-        "name": "Http3Transport",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "url",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
       }
     },
     "idlExtendedNames": {
-      "QuicTransport": [
+      "WebTransport": [
         {
-          "name": "QuicTransport",
+          "name": "WebTransport",
           "type": "interface",
           "includes": "UnidirectionalStreamsTransport"
         },
         {
-          "name": "QuicTransport",
+          "name": "WebTransport",
           "type": "interface",
           "includes": "BidirectionalStreamsTransport"
         },
         {
-          "name": "QuicTransport",
+          "name": "WebTransport",
           "type": "interface",
           "includes": "DatagramTransport"
-        },
-        {
-          "name": "QuicTransport",
-          "type": "interface",
-          "includes": "WebTransport"
         }
       ],
       "BidirectionalStream": [
@@ -1059,49 +995,25 @@
           "type": "interface",
           "includes": "IncomingStream"
         }
-      ],
-      "Http3Transport": [
-        {
-          "name": "Http3Transport",
-          "type": "interface",
-          "includes": "UnidirectionalStreamsTransport"
-        },
-        {
-          "name": "Http3Transport",
-          "type": "interface",
-          "includes": "BidirectionalStreamsTransport"
-        },
-        {
-          "name": "Http3Transport",
-          "type": "interface",
-          "includes": "DatagramTransport"
-        },
-        {
-          "name": "Http3Transport",
-          "type": "interface",
-          "includes": "WebTransport"
-        }
       ]
     },
     "globals": {},
     "exposed": {
       "Window": [
-        "QuicTransport",
+        "WebTransport",
         "OutgoingStream",
         "IncomingStream",
         "BidirectionalStream",
         "SendStream",
-        "ReceiveStream",
-        "Http3Transport"
+        "ReceiveStream"
       ],
       "Worker": [
-        "QuicTransport",
+        "WebTransport",
         "OutgoingStream",
         "IncomingStream",
         "BidirectionalStream",
         "SendStream",
-        "ReceiveStream",
-        "Http3Transport"
+        "ReceiveStream"
       ]
     },
     "dependencies": {
@@ -1120,24 +1032,21 @@
         "ReadableStream"
       ],
       "WebTransport": [
+        "WebTransportOptions",
+        "WebTransportStats",
         "WebTransportState",
         "WebTransportCloseInfo",
-        "EventHandler"
-      ],
-      "WebTransportCloseInfo": [],
-      "QuicTransportStats": [
-        "DOMHighResTimeStamp"
-      ],
-      "QuicTransportOptions": [
-        "RTCDtlsFingerprint"
-      ],
-      "QuicTransport": [
-        "QuicTransportOptions",
-        "QuicTransportStats",
+        "EventHandler",
         "UnidirectionalStreamsTransport",
         "BidirectionalStreamsTransport",
-        "DatagramTransport",
-        "WebTransport"
+        "DatagramTransport"
+      ],
+      "WebTransportOptions": [
+        "RTCDtlsFingerprint"
+      ],
+      "WebTransportCloseInfo": [],
+      "WebTransportStats": [
+        "DOMHighResTimeStamp"
       ],
       "OutgoingStream": [
         "WritableStream",
@@ -1157,20 +1066,14 @@
       ],
       "ReceiveStream": [
         "IncomingStream"
-      ],
-      "Http3Transport": [
-        "UnidirectionalStreamsTransport",
-        "BidirectionalStreamsTransport",
-        "DatagramTransport",
-        "WebTransport"
       ]
     },
     "externalDependencies": [
       "ReadableStream",
       "WritableStream",
       "EventHandler",
-      "DOMHighResTimeStamp",
-      "RTCDtlsFingerprint"
+      "RTCDtlsFingerprint",
+      "DOMHighResTimeStamp"
     ],
     "hasObsoleteIdl": false
   }

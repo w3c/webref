@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% September 14, 2020
+% September 21, 2020
 
 331 specifications were crawled in this report.
 
@@ -125,7 +125,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `DOMParser` defined in [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/) and [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - `DeprecationReportBody` defined in [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/) and [Reporting API](https://www.w3.org/TR/reporting-1/)
 - `GamepadMappingType` defined in [Gamepad](https://www.w3.org/TR/gamepad/) and [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/)
-- `GenericTransformStream` defined in [Compression Streams](https://wicg.github.io/compression/) and [Encoding Standard](https://www.w3.org/TR/encoding/)
 - `InterventionReportBody` defined in [Intervention Reporting](https://wicg.github.io/intervention-reporting/) and [Reporting API](https://www.w3.org/TR/reporting-1/)
 - `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - `MessageEventSource` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/) and [Portals](https://wicg.github.io/portals/)
@@ -133,7 +132,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `RTCIceParameters` defined in [IceTransport Extensions for WebRTC](https://w3c.github.io/webrtc-ice/) and [WebRTC 1.0: Real-time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - `XRSessionMode` defined in [WebXR Augmented Reality Module - Level 1](https://www.w3.org/TR/webxr-ar-module-1/) and [WebXR Device API](https://www.w3.org/TR/webxr/)
 
-=> 12 WebIDL names found
+=> 11 WebIDL names found
 
 "There can be only one"...
 
@@ -846,12 +845,12 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/aria/core-aam/core-aam.html`](https://w3c.github.io/aria/core-aam/core-aam.html) but does not list it in its references
 - [HTML Standard](https://html.spec.whatwg.org/multipage/) links to:
     * [`https://spec.whatwg.org/`](https://spec.whatwg.org/) but does not list it in its references
-    * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
 - [Intersection Observer](https://www.w3.org/TR/intersection-observer/) links to:
     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
     * [`https://www.w3.org/TR/css-masking-1/`](https://www.w3.org/TR/css-masking-1/) but does not list it in its references
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/) links to [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html) but does not list it in its references
 - [Keyboard Map](https://wicg.github.io/keyboard-map/) links to [`https://w3c.github.io/keyboard-lock/`](https://w3c.github.io/keyboard-lock/) but does not list it in its references
 - [Layout Instability API](https://wicg.github.io/layout-instability/) links to:
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
@@ -1071,7 +1070,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://www.w3.org/TR/worklets-1/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 753 missing references for links found in 180 specifications
+=> 753 missing references for links found in 181 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 

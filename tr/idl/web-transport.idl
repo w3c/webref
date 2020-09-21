@@ -22,11 +22,23 @@ interface mixin DatagramTransport {
     ReadableStream receiveDatagrams();
 };
 
-interface mixin WebTransport {
+[Exposed=(Window,Worker)]
+interface WebTransport {
+  constructor(USVString url, optional WebTransportOptions options = {});
+
+  Promise<WebTransportStats> getStats();
   readonly attribute WebTransportState state;
   readonly attribute Promise<WebTransportCloseInfo> closed;
   void close(optional WebTransportCloseInfo closeInfo = {});
   attribute EventHandler onstatechange;
+};
+
+WebTransport includes UnidirectionalStreamsTransport;
+WebTransport includes BidirectionalStreamsTransport;
+WebTransport includes DatagramTransport;
+
+dictionary WebTransportOptions {
+  sequence<RTCDtlsFingerprint> serverCertificateFingerprints;
 };
 
 enum WebTransportState {
@@ -41,7 +53,7 @@ dictionary WebTransportCloseInfo {
   DOMString reason = "";
 };
 
-dictionary QuicTransportStats {
+dictionary WebTransportStats {
   DOMHighResTimeStamp timestamp;
   unsigned long long bytesSent;
   unsigned long long packetsSent;
@@ -52,21 +64,6 @@ dictionary QuicTransportStats {
   DOMHighResTimeStamp minRtt;
   unsigned long numReceivedDatagramsDropped;
 };
-
-dictionary QuicTransportOptions {
-  sequence<RTCDtlsFingerprint> serverCertificateFingerprints;
-};
-
-[Exposed=(Window,Worker)]
-interface QuicTransport {
-  constructor(USVString url, optional QuicTransportOptions options = {});
-  Promise<QuicTransportStats> getStats();
-};
-
-QuicTransport includes UnidirectionalStreamsTransport;
-QuicTransport includes BidirectionalStreamsTransport;
-QuicTransport includes DatagramTransport;
-QuicTransport includes WebTransport;
 
 [ Exposed=(Window,Worker) ]
 interface mixin OutgoingStream {
@@ -102,13 +99,3 @@ SendStream includes OutgoingStream;
 interface ReceiveStream {
 };
 ReceiveStream includes IncomingStream;
-
-[Exposed=(Window,Worker)]
-interface Http3Transport {
-  constructor(DOMString url);
-};
-
-Http3Transport includes UnidirectionalStreamsTransport;
-Http3Transport includes BidirectionalStreamsTransport;
-Http3Transport includes DatagramTransport;
-Http3Transport includes WebTransport;
