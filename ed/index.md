@@ -2,26 +2,29 @@
 % Reffy
 % September 21, 2020
 
-## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## A Well-Known URL for Changing Passwords {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/change-password-url/](https://wicg.github.io/change-password-url/)
-- Crawled URL: [https://wicg.github.io/change-password-url/](https://wicg.github.io/change-password-url/)
-- Crawled version: 25 August 2020
+- Crawled URL: [[object Object]]([object Object])
 - Editor's Draft: [https://wicg.github.io/change-password-url/](https://wicg.github.io/change-password-url/)
 - Shortname: change-password-url
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+The following network or parsing error occurred:
+`Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined
+    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined
+    at __puppeteer_evaluation_script__:4:37
+    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:217:19)
+    at process._tickCallback (internal/process/next_tick.js:68:7)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [A Well-Known URL for Changing Passwords](https://wicg.github.io/change-password-url/)
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -3624,7 +3627,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
 - Crawled URL: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
-- Crawled version: 19 April 2020
+- Crawled version: 17 September 2020
 - Editor's Draft: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
 - Latest published version: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
 - Shortname: cssom-1
@@ -6024,7 +6027,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
-- Crawled version: 15 September 2020
+- Crawled version: 21 September 2020
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Shortname: encoding
@@ -6177,7 +6180,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [A Well-Known URL for Changing Passwords](https://wicg.github.io/change-password-url/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
@@ -6877,7 +6879,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [A Well-Known URL for Changing Passwords](https://wicg.github.io/change-password-url/)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html)
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
@@ -7346,7 +7347,6 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [A Well-Known URL for Changing Passwords](https://wicg.github.io/change-password-url/)
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://w3c.github.io/badging/)
@@ -7855,6 +7855,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/)
 
 
@@ -9135,7 +9136,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Crawled URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
-- Crawled version: 14 September 2020
+- Crawled version: 21 September 2020
 - Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Shortname: portals
 
@@ -9869,7 +9870,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [A Well-Known URL for Changing Passwords](https://wicg.github.io/change-password-url/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
@@ -10799,7 +10799,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [A Well-Known URL for Changing Passwords](https://wicg.github.io/change-password-url/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
@@ -11239,7 +11238,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Crawled URL: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
-- Crawled version: 18 September 2020
+- Crawled version: 21 September 2020
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Shortname: WebIDL-1
