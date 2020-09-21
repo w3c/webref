@@ -46,7 +46,7 @@ function createLocalBranches(srcDir, dstDir, makeCommitMessage) {
     // `file` in `dstDir` since `since`, if any, and a falsy value otherwise.
     // See https://github.com/w3c/webref/issues/25 for background.
     function lastManualCommitSince(file, since) {
-        return git(`log -1 --since=${since} --grep reffy-reports --invert-grep --format=%h -- ${file}`).trim();
+        return git(`log -1 --since=${since} --grep webref --invert-grep --format=%h -- ${file}`).trim();
     }
 
     // Returns any extra lines to put in the commit messages as an array.
