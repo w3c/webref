@@ -7273,6 +7273,18 @@
       "informative": false
     },
     {
+      "id": "gpu-command",
+      "href": "https://gpuweb.github.io/gpuweb/#gpu-command",
+      "linkingText": [
+        "GPU command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "gpucommandbuffer",
       "href": "https://gpuweb.github.io/gpuweb/#gpucommandbuffer",
       "linkingText": [
@@ -7289,6 +7301,20 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandbuffer-executiontime",
       "linkingText": [
         "executionTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUCommandBuffer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandbuffer-command_list-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandbuffer-command_list-slot",
+      "linkingText": [
+        "[[command_list]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -7319,6 +7345,20 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-command_list-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-command_list-slot",
+      "linkingText": [
+        "[[command_list]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUCommandEncoder"
+      ],
       "access": "public",
       "informative": false
     },
@@ -8300,6 +8340,20 @@
       "for": [
         "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup, dynamicOffsets)",
         "GPUProgrammablePassEncoder/setBindGroup(index, bindGroup)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuprogrammablepassencoder-command_encoder-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-command_encoder-slot",
+      "linkingText": [
+        "[[command_encoder]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUProgrammablePassEncoder"
       ],
       "access": "public",
       "informative": false

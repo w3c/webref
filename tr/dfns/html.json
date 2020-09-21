@@ -1602,9 +1602,7 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "url"
-      ],
+      "for": [],
       "access": "private",
       "informative": false
     },
@@ -2635,9 +2633,9 @@
         "Origin"
       ],
       "localLinkingText": [],
-      "type": "http-header",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false
     },
     {
@@ -3092,9 +3090,7 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "request"
-      ],
+      "for": [],
       "access": "private",
       "informative": false
     },
@@ -11291,7 +11287,7 @@
       "localLinkingText": [],
       "type": "element-attr",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -11326,6 +11322,18 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "attr-aria-checked",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#attr-aria-checked",
+      "linkingText": [
+        "aria-checked"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [],
       "access": "private",
       "informative": false
@@ -11367,10 +11375,58 @@
       "informative": false
     },
     {
+      "id": "role",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#role",
+      "linkingText": [
+        "role"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "concept-accessible-name",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#concept-accessible-name",
       "linkingText": [
         "accessible name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ariamixin",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#ariamixin",
+      "linkingText": [
+        "ARIAMixin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ariamixin-getter-steps",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#ariamixin-getter-steps",
+      "linkingText": [
+        "ARIAMixin getter steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "ariamixin-setter-steps",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#ariamixin-setter-steps",
+      "linkingText": [
+        "ARIAMixin setter steps"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -15527,7 +15583,7 @@
       "for": [
         "HTMLElement"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -20932,20 +20988,6 @@
       "informative": false
     },
     {
-      "id": "attr-iframe-allowpaymentrequest",
-      "href": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allowpaymentrequest",
-      "linkingText": [
-        "allowpaymentrequest"
-      ],
-      "localLinkingText": [],
-      "type": "element-attr",
-      "for": [
-        "iframe"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "allowed-to-use",
       "href": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use",
       "linkingText": [
@@ -21060,20 +21102,6 @@
       "href": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-iframe-allowfullscreen",
       "linkingText": [
         "allowFullscreen"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "HTMLIFrameElement"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-iframe-allowpaymentrequest",
-      "href": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#dom-iframe-allowpaymentrequest",
-      "linkingText": [
-        "allowPaymentRequest"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -39495,6 +39523,18 @@
       "informative": false
     },
     {
+      "id": "native-accessibility-semantics-map",
+      "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#native-accessibility-semantics-map",
+      "linkingText": [
+        "native accessibility semantics map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "concept-element-disabled",
       "href": "https://html.spec.whatwg.org/multipage/semantics-other.html#concept-element-disabled",
       "linkingText": [
@@ -42277,7 +42317,7 @@
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "HTMLOrSVGElement"
+        "Window"
       ],
       "access": "public",
       "informative": false
@@ -45100,11 +45140,10 @@
       "id": "dom-open",
       "href": "https://html.spec.whatwg.org/multipage/window-object.html#dom-open",
       "linkingText": [
-        "open()",
         "open(url, target, features)"
       ],
       "localLinkingText": [],
-      "type": "operation",
+      "type": "method",
       "for": [
         "Window"
       ],
@@ -51124,7 +51163,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false
     },
     {
@@ -51218,8 +51257,10 @@
         "DOM manipulation task source"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "unknown",
+      "for": [
+        "manipulation-task with source"
+      ],
       "access": "public",
       "informative": false
     },
@@ -56116,7 +56157,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false
     },
     {
@@ -56128,7 +56169,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false
     },
     {

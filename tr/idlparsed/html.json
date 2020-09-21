@@ -4130,28 +4130,6 @@
           },
           {
             "type": "attribute",
-            "name": "allowPaymentRequest",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
             "name": "width",
             "idlType": {
               "type": "attribute-type",
@@ -34513,6 +34491,13 @@
           "includes": "CanvasPath"
         }
       ],
+      "ElementInternals": [
+        {
+          "name": "ElementInternals",
+          "type": "interface",
+          "includes": "ARIAMixin"
+        }
+      ],
       "Window": [
         {
           "name": "Window",
@@ -37726,7 +37711,8 @@
         "ValidityStateFlags",
         "HTMLElement",
         "ValidityState",
-        "NodeList"
+        "NodeList",
+        "ARIAMixin"
       ],
       "ValidityStateFlags": [],
       "FocusOptions": [],
