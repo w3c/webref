@@ -82,7 +82,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -139,7 +139,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -371,7 +371,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -688,7 +688,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -847,7 +847,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -871,7 +871,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -895,7 +895,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -1100,7 +1100,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -1294,7 +1294,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -1351,7 +1351,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -1764,7 +1764,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -1915,7 +1915,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -2114,12 +2114,12 @@
               "union": false,
               "idlType": [
                 {
-                  "type": "return-type",
+                  "type": "attribute-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -2136,7 +2136,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -2292,12 +2292,12 @@
               "union": false,
               "idlType": [
                 {
-                  "type": "return-type",
+                  "type": "dictionary-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -2776,7 +2776,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -2824,7 +2824,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -2881,7 +2881,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -3632,6 +3632,7 @@
       "ServiceWorker": [
         "EventTarget",
         "ServiceWorkerState",
+        "undefined",
         "PostMessageOptions",
         "EventHandler",
         "AbstractWorker"
@@ -3641,6 +3642,7 @@
         "ServiceWorker",
         "NavigationPreloadManager",
         "ServiceWorkerUpdateViaCache",
+        "undefined",
         "EventHandler"
       ],
       "Navigator": [
@@ -3654,6 +3656,7 @@
         "ServiceWorker",
         "ServiceWorkerRegistration",
         "RegistrationOptions",
+        "undefined",
         "EventHandler"
       ],
       "RegistrationOptions": [
@@ -3661,6 +3664,7 @@
         "ServiceWorkerUpdateViaCache"
       ],
       "NavigationPreloadManager": [
+        "undefined",
         "NavigationPreloadState"
       ],
       "NavigationPreloadState": [],
@@ -3669,11 +3673,13 @@
         "Clients",
         "ServiceWorkerRegistration",
         "ServiceWorker",
+        "undefined",
         "EventHandler"
       ],
       "Client": [
         "FrameType",
         "ClientType",
+        "undefined",
         "PostMessageOptions"
       ],
       "WindowClient": [
@@ -3684,14 +3690,16 @@
       "Clients": [
         "Client",
         "ClientQueryOptions",
-        "WindowClient"
+        "WindowClient",
+        "undefined"
       ],
       "ClientQueryOptions": [
         "ClientType"
       ],
       "ExtendableEvent": [
         "Event",
-        "ExtendableEventInit"
+        "ExtendableEventInit",
+        "undefined"
       ],
       "ExtendableEventInit": [
         "EventInit"
@@ -3700,11 +3708,13 @@
         "ExtendableEvent",
         "FetchEventInit",
         "Request",
+        "undefined",
         "Response"
       ],
       "FetchEventInit": [
         "ExtendableEventInit",
-        "Request"
+        "Request",
+        "undefined"
       ],
       "ExtendableMessageEvent": [
         "ExtendableEvent",
@@ -3726,6 +3736,7 @@
         "RequestInfo",
         "CacheQueryOptions",
         "Response",
+        "undefined",
         "Request"
       ],
       "CacheQueryOptions": [],
@@ -3740,6 +3751,7 @@
     },
     "externalDependencies": [
       "EventTarget",
+      "undefined",
       "PostMessageOptions",
       "EventHandler",
       "Navigator",
