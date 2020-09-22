@@ -2691,21 +2691,6 @@
           },
           {
             "type": "field",
-            "name": "transportId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
             "name": "state",
             "extAttrs": [],
             "idlType": {
@@ -3052,6 +3037,21 @@
         "name": "RTCSctpTransportStats",
         "inheritance": "RTCStats",
         "members": [
+          {
+            "type": "field",
+            "name": "transportId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
           {
             "type": "field",
             "name": "smoothedRoundTripTime",
