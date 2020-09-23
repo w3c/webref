@@ -7937,6 +7937,7 @@ Normative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
+- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 
 Informative references to this spec from:
 
@@ -9808,7 +9809,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Crawled URL: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
-- Crawled version: 21 September 2020
+- Crawled version: 23 September 2020
 - Editor's Draft: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
 - Latest published version: [https://www.w3.org/TR/wake-lock/](https://www.w3.org/TR/wake-lock/)
 - Shortname: wake-lock
@@ -11932,20 +11933,19 @@ Informative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
-## WebRTC Insertable Media using Streams {data-spec=true data-anomaly=true data-inconsistentRef=true}
+## WebRTC Insertable Media using Streams {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
 - Crawled URL: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
-- Crawled version: 11 June 2020
+- Crawled version: 1 September 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
 - Shortname: webrtc-insertable-streams
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webrtc-pc/`](https://w3c.github.io/webrtc-pc/), related reference "WEBRTC" uses URL [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
