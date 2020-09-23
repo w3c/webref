@@ -31,8 +31,9 @@
       "concept-body-clone",
       "concept-response-clone",
       "concept-response",
-      "extract-header-list-values",
+      "concept-header-list",
       "concept-response-header-list",
+      "extract-header-list-values",
       "concept-http-fetch",
       "concept-response-status",
       "redirect-status",
@@ -43,20 +44,27 @@
       "concept-http-network-or-cache-fetch",
       "concept-request-cache-mode",
       "concept-request-initiator",
+      "concept-response-url-list",
+      "concept-header-list-get",
+      "concept-potential-destination",
+      "concept-response-url",
+      "concept-potential-destination-translate",
+      "concept-fetch",
+      "concept-request-url",
+      "synchronous-flag",
+      "concept-request-nonce-metadata",
+      "concept-request-integrity-metadata",
+      "concept-request-referrer-policy",
       "determine-nosniff",
       "concept-header-extract-mime-type",
       "concept-response-body",
       "concept-body-stream",
-      "concept-response-url",
-      "concept-request-url",
       "concept-request-header-list",
       "request-service-workers-mode",
       "concept-request-mode",
-      "concept-fetch",
       "concept-read-all-bytes-from-readablestream",
       "concept-get-reader",
       "header-list-contains",
-      "concept-header-list",
       "concept-header-name",
       "concept-header-value",
       "concept-header-list-append",
@@ -66,7 +74,6 @@
       "concept-cancel-readablestream",
       "concept-construct-readablestream",
       "concept-request-method",
-      "concept-header-list-get",
       "concept-readablestream-closed",
       "concept-readablestream-errored",
       "concept-read-chunk-from-readablestream",
@@ -74,43 +81,105 @@
       "concept-readablestream-readable",
       "concept-readablestream-need-more-data"
     ],
-    "https://tools.ietf.org/html/rfc7231": [
-      "section-7.1.1.2"
-    ],
-    "https://html.spec.whatwg.org/": [
-      "in-parallel",
-      "environment-settings-object",
-      "same-origin",
-      "concept-origin",
-      "concept-origin-host"
-    ],
     "https://infra.spec.whatwg.org/": [
-      "ascii-encode",
-      "struct",
       "byte-sequence",
-      "tuple",
+      "ascii-encode",
+      "ordered-map",
+      "map-set",
+      "string-is",
+      "set-append",
+      "map-exists",
       "list",
+      "list-append",
+      "struct",
+      "tuple",
       "list-item",
       "ascii-string",
+      "string",
       "ascii-byte",
       "ascii-decode",
       "strictly-split",
       "isomorphic-decode",
       "ascii-upper-alpha",
       "set-intersection",
-      "list-empty"
+      "list-empty",
+      "list-contain"
+    ],
+    "https://csrc.nist.gov/publications/fips/fips180-4/fips-180-4.pdf": [],
+    "https://tools.ietf.org/html/rfc7231": [
+      "section-7.1.1.2"
+    ],
+    "https://html.spec.whatwg.org/": [
+      "in-parallel",
+      "rel-alternate",
+      "link-type-preload",
+      "the-document-object",
+      "link-type-prefetch",
+      "navigation-params",
+      "process-the-linked-resource",
+      "event-load",
+      "event-error",
+      "the-link-element",
+      "attr-link-href",
+      "attr-link-imagesrcset",
+      "attr-link-imagesizes",
+      "select-an-image-source",
+      "create-a-potential-cors-request",
+      "attr-crossorigin-none",
+      "queue-a-task",
+      "networking-task-source",
+      "process-a-navigate-fetch",
+      "active-document",
+      "read-html",
+      "navigation-params-response",
+      "cors-settings-attribute",
+      "referrer-policy-attribute",
+      "environment-settings-object",
+      "same-origin",
+      "concept-origin",
+      "concept-origin-host"
     ],
     "https://url.spec.whatwg.org/": [
       "concept-url-serializer",
       "concept-url",
-      "concept-url-origin",
       "concept-url-parser",
+      "concept-url-equals",
+      "concept-url-origin",
       "concept-url-fragment",
-      "concept-url-scheme",
-      "concept-url-equals"
+      "concept-url-scheme"
     ],
     "https://wicg.github.io/webpackage/draft-yasskin-wpack-use-cases.html": [
       "private-prefetch"
+    ],
+    "https://tools.ietf.org/html/rfc8288": [
+      "section-3",
+      "section-3.1",
+      "section-3.2",
+      "section-3.4",
+      "appendix-B.2",
+      "section-3.3",
+      "section-2.2"
+    ],
+    "https://w3c.github.io/webappsec-csp/": [
+      "grammardef-hash-source"
+    ],
+    "https://httpwg.org/http-extensions/draft-ietf-httpbis-variants.html": [
+      "variants",
+      "variant-key",
+      "cache"
+    ],
+    "https://tools.ietf.org/html/rfc7230": [
+      "section-3.2.6"
+    ],
+    "https://dom.spec.whatwg.org/": [
+      "document",
+      "concept-event-fire",
+      "concept-node-document"
+    ],
+    "https://github.com/w3c/resource-hints/issues/77": [],
+    "https://github.com/whatwg/html/issues/4224": [],
+    "https://drafts.csswg.org/css2/": [
+      "viewport"
     ],
     "https://streams.spec.whatwg.org/": [
       "readablestream",
@@ -127,7 +196,6 @@
       "section-4.1.1.2",
       "section-4.2"
     ],
-    "https://csrc.nist.gov/publications/fips/fips180-4/fips-180-4.pdf": [],
     "https://w3c.github.io/webappsec-secure-contexts/": [
       "potentially-trustworthy-origin"
     ],
@@ -166,11 +234,6 @@
     "https://tools.ietf.org/html/draft-thomson-http-mice-03": [
       "section-2.2"
     ],
-    "https://httpwg.org/http-extensions/draft-ietf-httpbis-variants.html": [
-      "variants",
-      "cache",
-      "variant-key"
-    ],
     "https://github.com/httpwg/http-extensions/issues/744": [],
     "https://w3c.github.io/network-error-logging/": [
       "generate-a-network-error-report",
@@ -182,9 +245,12 @@
       "idl-Uint8Array"
     ],
     "https://github.com/whatwg/fetch/issues/730": [],
+    "https://www.w3.org/TR/CSP3/": [],
+    "https://www.w3.org/TR/CSS2/": [],
     "https://www.w3.org/TR/network-error-logging-1/": [],
     "https://tools.ietf.org/html/rfc2119": [],
     "https://httpwg.org/specs/rfc7231.html": [],
+    "https://httpwg.org/specs/rfc8288.html": [],
     "https://tools.ietf.org/html/draft-ietf-tls-tls13": [],
     "https://www.w3.org/TR/secure-contexts/": [],
     "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf": [],

@@ -82,8 +82,13 @@
       "windoweventhandlers",
       "events-2",
       "script-closable",
-      "concept-environment-target-browsing-context",
-      "parent-browsing-context"
+      "process-a-navigate-response",
+      "navigation-params-request",
+      "environment-discarding-steps",
+      "navigation-params-reserved-environment",
+      "process-a-navigate-url-scheme",
+      "allowed-to-download",
+      "concept-environment-target-browsing-context"
     ],
     "https://dom.spec.whatwg.org/": [
       "concept-node-document",
@@ -94,8 +99,8 @@
       "concept-create-element",
       "concept-event-fire",
       "concept-document-url",
-      "concept-node-adopt-ext",
       "document",
+      "concept-node-adopt-ext",
       "eventtarget-activation-behavior",
       "eventtarget",
       "event",
@@ -170,8 +175,9 @@
       "concept-request",
       "concept-request-url",
       "concept-request-referrer-policy",
-      "concept-request-initiator",
-      "concept-request-destination",
+      "concept-request-current-url",
+      "concept-response-status",
+      "concept-response",
       "concept-request-reserved-client"
     ],
     "https://wpt.fyi/results/portals/about-blank-cannot-host.html": [],
@@ -182,12 +188,14 @@
     "https://github.com/web-platform-tests/wpt/blob/master/portals/no-portal-in-sandboxed-popup.html": [],
     "https://w3c.github.io/webappsec-csp/": [
       "sandbox",
-      "navigate-to"
+      "grammardef-serialized-source-list",
+      "header-content-security-policy",
+      "source-lists",
+      "directive-pre-request-check",
+      "directive-value",
+      "directive-post-request-check"
     ],
     "https://github.com/WICG/portals/issues/207": [],
-    "https://wpt.fyi/results/portals/portal-non-http-navigation.html": [],
-    "https://web-platform-tests.live/portals/portal-non-http-navigation.html": [],
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-non-http-navigation.html": [],
     "https://wpt.fyi/results/portals/portals-cross-origin-load.sub.html": [],
     "https://web-platform-tests.live/portals/portals-cross-origin-load.sub.html": [],
     "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-cross-origin-load.sub.html": [],
@@ -228,23 +236,18 @@
     "https://wpt.fyi/results/portals/portals-close-window.html": [],
     "https://web-platform-tests.live/portals/portals-close-window.html": [],
     "https://github.com/web-platform-tests/wpt/blob/master/portals/portals-close-window.html": [],
+    "https://wpt.fyi/results/portals/portal-non-http-navigation.html": [],
+    "https://web-platform-tests.live/portals/portal-non-http-navigation.html": [],
+    "https://github.com/web-platform-tests/wpt/blob/master/portals/portal-non-http-navigation.html": [],
     "https://www.w3.org/TR/CSP3/": [
+      "directives-fetch",
       "effective-directive-for-a-request",
-      "frame-ancestors-navigation-response"
+      "should-directive-execute",
+      "match-request-to-source-list",
+      "match-response-to-source-list",
+      "directive-default-src",
+      "directive-fallback-list"
     ],
-    "https://wpt.fyi/results/portals/csp/frame-src.sub.html": [],
-    "https://web-platform-tests.live/portals/csp/frame-src.sub.html": [],
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/csp/frame-src.sub.html": [],
-    "https://wpt.fyi/results/portals/csp/frame-ancestors.sub.html": [],
-    "https://web-platform-tests.live/portals/csp/frame-ancestors.sub.html": [],
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/csp/frame-ancestors.sub.html": [],
-    "https://github.com/whatwg/html/issues/1230": [],
-    "https://wpt.fyi/results/portals/xfo/portals-xfo-deny.sub.html": [],
-    "https://web-platform-tests.live/portals/xfo/portals-xfo-deny.sub.html": [],
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/xfo/portals-xfo-deny.sub.html": [],
-    "https://wpt.fyi/results/portals/xfo/portals-xfo-sameorigin.html": [],
-    "https://web-platform-tests.live/portals/xfo/portals-xfo-sameorigin.html": [],
-    "https://github.com/web-platform-tests/wpt/blob/master/portals/xfo/portals-xfo-sameorigin.html": [],
     "https://www.w3.org/TR/fetch-metadata/": [
       "abstract-opdef-set-mode"
     ],
@@ -281,10 +284,21 @@
     "https://wpt.fyi/results/portals/predecessor-fires-unload.html": [],
     "https://web-platform-tests.live/portals/predecessor-fires-unload.html": [],
     "https://github.com/web-platform-tests/wpt/blob/master/portals/predecessor-fires-unload.html": [],
+    "https://wpt.fyi/results/portals/csp/frame-ancestors.sub.html": [],
+    "https://web-platform-tests.live/portals/csp/frame-ancestors.sub.html": [],
+    "https://github.com/web-platform-tests/wpt/blob/master/portals/csp/frame-ancestors.sub.html": [],
+    "https://wpt.fyi/results/portals/xfo/portals-xfo-deny.sub.html": [],
+    "https://web-platform-tests.live/portals/xfo/portals-xfo-deny.sub.html": [],
+    "https://github.com/web-platform-tests/wpt/blob/master/portals/xfo/portals-xfo-deny.sub.html": [],
+    "https://wpt.fyi/results/portals/xfo/portals-xfo-sameorigin.html": [],
+    "https://web-platform-tests.live/portals/xfo/portals-xfo-sameorigin.html": [],
+    "https://github.com/web-platform-tests/wpt/blob/master/portals/xfo/portals-xfo-sameorigin.html": [],
+    "https://wpt.fyi/results/portals/csp/frame-src.sub.html": [],
+    "https://web-platform-tests.live/portals/csp/frame-src.sub.html": [],
+    "https://github.com/web-platform-tests/wpt/blob/master/portals/csp/frame-src.sub.html": [],
     "https://tc39.es/ecma262/": [],
     "https://www.w3.org/TR/referrer-policy/": [],
     "https://tools.ietf.org/html/rfc2119": [],
-    "https://www.w3.org/TR/service-workers-1/": [],
-    "https://tools.ietf.org/html/rfc7034": []
+    "https://www.w3.org/TR/service-workers-1/": []
   }
 }

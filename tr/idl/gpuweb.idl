@@ -1,6 +1,6 @@
 // GENERATED CONTENT - DO NOT EDIT
-// Content was automatically extracted by Reffy into reffy-reports
-// (https://github.com/tidoust/reffy-reports)
+// Content was automatically extracted by Reffy into webref
+// (https://github.com/w3c/webref)
 // Source: WebGPU (https://gpuweb.github.io/gpuweb/)
 
 interface mixin GPUObjectBase {
@@ -49,10 +49,12 @@ dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {
 };
 
 enum GPUExtensionName {
-    "texture-compression-bc",
+    "depth-clamping",
+    "depth24unorm-stencil8",
+    "depth32float-stencil8",
     "pipeline-statistics-query",
+    "texture-compression-bc",
     "timestamp-query",
-    "depth-clamping"
 };
 
 dictionary GPULimits {
@@ -263,7 +265,13 @@ enum GPUTextureFormat {
     "bc6h-rgb-ufloat",
     "bc6h-rgb-float",
     "bc7-rgba-unorm",
-    "bc7-rgba-unorm-srgb"
+    "bc7-rgba-unorm-srgb",
+
+    // "depth24unorm-stencil8" extension
+    "depth24unorm-stencil8",
+
+    // "depth32float-stencil8" extension
+    "depth32float-stencil8",
 };
 
 enum GPUTextureComponentType {

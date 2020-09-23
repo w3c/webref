@@ -1410,6 +1410,20 @@
       "informative": false
     },
     {
+      "id": "dom-rtcinboundrtpstreamstats-totalprocessingdelay",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalprocessingdelay",
+      "linkingText": [
+        "totalProcessingDelay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-rtcinboundrtpstreamstats-estimatedplayouttimestamp",
       "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-estimatedplayouttimestamp",
       "linkingText": [
@@ -1456,6 +1470,20 @@
       "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsamplesreceived",
       "linkingText": [
         "totalSamplesReceived"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCInboundRtpStreamStats"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcinboundrtpstreamstats-totalsamplesdecoded",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcinboundrtpstreamstats-totalsamplesdecoded",
+      "linkingText": [
+        "totalSamplesDecoded"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -3080,17 +3108,15 @@
       "informative": false
     },
     {
-      "id": "dom-rtcdatachannelstats-transportid",
-      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcdatachannelstats-transportid",
+      "id": "dfn-transportid",
+      "href": "https://w3c.github.io/webrtc-stats/#dfn-transportid",
       "linkingText": [
         "transportId"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "RTCDataChannelStats"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {
@@ -3422,6 +3448,20 @@
       "localLinkingText": [],
       "type": "dictionary",
       "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-rtcsctptransportstats-transportid",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcsctptransportstats-transportid",
+      "linkingText": [
+        "transportId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCSctpTransportStats"
+      ],
       "access": "public",
       "informative": false
     },
@@ -4333,9 +4373,7 @@
       ],
       "localLinkingText": [],
       "type": "dictionary",
-      "for": [
-        "RTCMediaStreamStats"
-      ],
+      "for": [],
       "access": "public",
       "informative": true
     },
@@ -4399,9 +4437,7 @@
       ],
       "localLinkingText": [],
       "type": "dictionary",
-      "for": [
-        "RTCReceiverVideoTrackAttachmentStats"
-      ],
+      "for": [],
       "access": "public",
       "informative": true
     },
@@ -4413,9 +4449,7 @@
       ],
       "localLinkingText": [],
       "type": "dictionary",
-      "for": [
-        "RTCReceiverAudioTrackAttachmentStats"
-      ],
+      "for": [],
       "access": "public",
       "informative": true
     },

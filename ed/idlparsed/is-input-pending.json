@@ -5,11 +5,7 @@
   },
   "idlparsed": {
     "jsNames": {
-      "constructors": {
-        "Window": [
-          "IsInputPendingOptions"
-        ]
-      },
+      "constructors": {},
       "functions": {
         "Window": [
           "Scheduling"
@@ -17,9 +13,9 @@
       }
     },
     "idlNames": {
-      "IsInputPendingOptionsInit": {
+      "IsInputPendingOptions": {
         "type": "dictionary",
-        "name": "IsInputPendingOptionsInit",
+        "name": "IsInputPendingOptions",
         "inheritance": null,
         "members": [
           {
@@ -35,71 +31,13 @@
               "idlType": "boolean"
             },
             "default": {
-              "type": "string",
-              "value": "false"
+              "type": "boolean",
+              "value": false
             },
             "required": false
           }
         ],
         "extAttrs": [],
-        "partial": false
-      },
-      "IsInputPendingOptions": {
-        "type": "interface",
-        "name": "IsInputPendingOptions",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "isInputPendingOptionsInit",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "IsInputPendingOptionsInit"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "includeContinuous",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
         "partial": false
       },
       "Scheduling": {
@@ -131,7 +69,9 @@
                   "union": false,
                   "idlType": "IsInputPendingOptions"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -185,15 +125,11 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "IsInputPendingOptions",
         "Scheduling"
       ]
     },
     "dependencies": {
-      "IsInputPendingOptionsInit": [],
-      "IsInputPendingOptions": [
-        "IsInputPendingOptionsInit"
-      ],
+      "IsInputPendingOptions": [],
       "Scheduling": [
         "IsInputPendingOptions"
       ],

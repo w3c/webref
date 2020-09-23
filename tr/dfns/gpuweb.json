@@ -785,6 +785,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpuextensionname-depth-clamping",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-depth-clamping",
+      "linkingText": [
+        "\"depth-clamping\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUExtensionName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpuextensionname-pipeline-statistics-query",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-pipeline-statistics-query",
       "linkingText": [
@@ -813,10 +827,10 @@
       "informative": false
     },
     {
-      "id": "dom-gpuextensionname-depth-clamping",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-depth-clamping",
+      "id": "dom-gpuextensionname-texture-compression-bc",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-texture-compression-bc",
       "linkingText": [
-        "\"depth-clamping\""
+        "\"texture-compression-bc\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -827,10 +841,24 @@
       "informative": false
     },
     {
-      "id": "dom-gpuextensionname-texture-compression-bc",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-texture-compression-bc",
+      "id": "dom-gpuextensionname-depth24unorm-stencil8",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-depth24unorm-stencil8",
       "linkingText": [
-        "\"texture-compression-bc\""
+        "\"depth24unorm-stencil8\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUExtensionName"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpuextensionname-depth32float-stencil8",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-depth32float-stencil8",
+      "linkingText": [
+        "\"depth32float-stencil8\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -1003,91 +1031,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpudevice-defaultqueue",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-defaultqueue",
-      "linkingText": [
-        "defaultQueue"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createsampler-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createsampler-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createSampler(descriptor)",
-        "GPUDevice/createSampler()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createreadycomputepipeline",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadycomputepipeline",
-      "linkingText": [
-        "createReadyComputePipeline(descriptor)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createreadycomputepipeline-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadycomputepipeline-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createReadyComputePipeline(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createreadyrenderpipeline",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadyrenderpipeline",
-      "linkingText": [
-        "createReadyRenderPipeline(descriptor)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-gpudevice-createreadyrenderpipeline-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadyrenderpipeline-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUDevice/createReadyRenderPipeline(descriptor)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpudevice-adapter",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-adapter",
       "linkingText": [
@@ -1120,6 +1063,20 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-limits",
       "linkingText": [
         "limits"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-defaultqueue",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-defaultqueue",
+      "linkingText": [
+        "defaultQueue"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1884,21 +1841,6 @@
       "informative": false
     },
     {
-      "id": "dom-gputexture-createview-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-createview-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUTexture/createView(descriptor)",
-        "GPUTexture/createView()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gputexture-texturesize-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-texturesize-slot",
       "linkingText": [
@@ -2579,6 +2521,20 @@
       "type": "method",
       "for": [
         "GPUTexture"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gputexture-createview-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-createview-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUTexture/createView(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -3414,6 +3370,34 @@
       "informative": false
     },
     {
+      "id": "dom-gputextureformat-depth24unorm-stencil8",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-depth24unorm-stencil8",
+      "linkingText": [
+        "\"depth24unorm-stencil8\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureFormat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gputextureformat-depth32float-stencil8",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureformat-depth32float-stencil8",
+      "linkingText": [
+        "\"depth32float-stencil8\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureFormat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "enumdef-gputexturecomponenttype",
       "href": "https://gpuweb.github.io/gpuweb/#enumdef-gputexturecomponenttype",
       "linkingText": [
@@ -3914,6 +3898,20 @@
       "type": "method",
       "for": [
         "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createsampler-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createsampler-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/createSampler(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -4689,6 +4687,18 @@
       "informative": false
     },
     {
+      "id": "gpushadermodule",
+      "href": "https://gpuweb.github.io/gpuweb/#gpushadermodule",
+      "linkingText": [
+        "GPUShaderModule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "enumdef-gpucompilationmessagetype",
       "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpucompilationmessagetype",
       "linkingText": [
@@ -4833,18 +4843,6 @@
       "for": [
         "GPUCompilationInfo"
       ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "gpushadermodule",
-      "href": "https://gpuweb.github.io/gpuweb/#gpushadermodule",
-      "linkingText": [
-        "GPUShaderModule"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false
     },
@@ -5165,6 +5163,34 @@
       "informative": false
     },
     {
+      "id": "dom-gpudevice-createreadycomputepipeline",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadycomputepipeline",
+      "linkingText": [
+        "createReadyComputePipeline(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createreadycomputepipeline-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadycomputepipeline-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/createReadyComputePipeline(descriptor)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "gpurenderpipeline",
       "href": "https://gpuweb.github.io/gpuweb/#gpurenderpipeline",
       "linkingText": [
@@ -5428,6 +5454,34 @@
       "type": "argument",
       "for": [
         "GPUDevice/createRenderPipeline(descriptor)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createreadyrenderpipeline",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadyrenderpipeline",
+      "linkingText": [
+        "createReadyRenderPipeline(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-createreadyrenderpipeline-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadyrenderpipeline-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/createReadyRenderPipeline(descriptor)"
       ],
       "access": "public",
       "informative": false
@@ -7219,6 +7273,18 @@
       "informative": false
     },
     {
+      "id": "gpu-command",
+      "href": "https://gpuweb.github.io/gpuweb/#gpu-command",
+      "linkingText": [
+        "GPU command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "gpucommandbuffer",
       "href": "https://gpuweb.github.io/gpuweb/#gpucommandbuffer",
       "linkingText": [
@@ -7235,6 +7301,20 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandbuffer-executiontime",
       "linkingText": [
         "executionTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUCommandBuffer"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandbuffer-command_list-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandbuffer-command_list-slot",
+      "linkingText": [
+        "[[command_list]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -7265,6 +7345,20 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpucommandencoder-command_list-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoder-command_list-slot",
+      "linkingText": [
+        "[[command_list]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUCommandEncoder"
+      ],
       "access": "public",
       "informative": false
     },
@@ -8251,6 +8345,20 @@
       "informative": false
     },
     {
+      "id": "dom-gpuprogrammablepassencoder-command_encoder-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-command_encoder-slot",
+      "linkingText": [
+        "[[command_encoder]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUProgrammablePassEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-gpuprogrammablepassencoder-debug_group_stack-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprogrammablepassencoder-debug_group_stack-slot",
       "linkingText": [
@@ -8790,10 +8898,10 @@
       "informative": false
     },
     {
-      "id": "gpurenderencoderbase",
-      "href": "https://gpuweb.github.io/gpuweb/#gpurenderencoderbase",
+      "id": "gpurenderpassencoder",
+      "href": "https://gpuweb.github.io/gpuweb/#gpurenderpassencoder",
       "linkingText": [
-        "GPURenderEncoderBase"
+        "GPURenderPassEncoder"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -8802,10 +8910,10 @@
       "informative": false
     },
     {
-      "id": "gpurenderpassencoder",
-      "href": "https://gpuweb.github.io/gpuweb/#gpurenderpassencoder",
+      "id": "gpurenderencoderbase",
+      "href": "https://gpuweb.github.io/gpuweb/#gpurenderencoderbase",
       "linkingText": [
-        "GPURenderPassEncoder"
+        "GPURenderEncoderBase"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -11250,20 +11358,6 @@
       "informative": false
     },
     {
-      "id": "dom-gpudevice-pusherrorscope",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-pusherrorscope",
-      "linkingText": [
-        "pushErrorScope(filter)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUDevice"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-gpudevice-pusherrorscope-filter-filter",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-pusherrorscope-filter-filter",
       "linkingText": [
@@ -11273,6 +11367,20 @@
       "type": "argument",
       "for": [
         "GPUDevice/pushErrorScope(filter)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-gpudevice-pusherrorscope",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-pusherrorscope",
+      "linkingText": [
+        "pushErrorScope(filter)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
       ],
       "access": "public",
       "informative": false

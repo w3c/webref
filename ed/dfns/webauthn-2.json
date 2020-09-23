@@ -3636,6 +3636,18 @@
       "informative": false
     },
     {
+      "id": "user-verification-method",
+      "href": "https://w3c.github.io/webauthn/#user-verification-method",
+      "linkingText": [
+        "User Verification Method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "dom-authenticationextensionsclientinputs-uvm",
       "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-uvm",
       "linkingText": [
@@ -3782,166 +3794,6 @@
       "informative": false
     },
     {
-      "id": "prf",
-      "href": "https://w3c.github.io/webauthn/#prf",
-      "linkingText": [
-        "prf"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dictdef-authenticationextensionsprfvalues",
-      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfvalues",
-      "linkingText": [
-        "AuthenticationExtensionsPRFValues"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsprfvalues-first",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-first",
-      "linkingText": [
-        "first"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsPRFValues"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsprfvalues-second",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfvalues-second",
-      "linkingText": [
-        "second"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsPRFValues"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dictdef-authenticationextensionsprfinputs",
-      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfinputs",
-      "linkingText": [
-        "AuthenticationExtensionsPRFInputs"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientinputs-prf",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientinputs-prf",
-      "linkingText": [
-        "prf"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientInputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsprfinputs-eval",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-eval",
-      "linkingText": [
-        "eval"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsPRFInputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsprfinputs-evalbycredential",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfinputs-evalbycredential",
-      "linkingText": [
-        "evalByCredential"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsPRFInputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dictdef-authenticationextensionsprfoutputs",
-      "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsprfoutputs",
-      "linkingText": [
-        "AuthenticationExtensionsPRFOutputs"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsclientoutputs-prf",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsclientoutputs-prf",
-      "linkingText": [
-        "prf"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsClientOutputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsprfoutputs-enabled",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-enabled",
-      "linkingText": [
-        "enabled"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsPRFOutputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-authenticationextensionsprfoutputs-results",
-      "href": "https://w3c.github.io/webauthn/#dom-authenticationextensionsprfoutputs-results",
-      "linkingText": [
-        "results"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AuthenticationExtensionsPRFOutputs"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "largeblob",
       "href": "https://w3c.github.io/webauthn/#largeblob",
       "linkingText": [
@@ -4059,6 +3911,18 @@
         "AuthenticationExtensionsLargeBlobOutputs"
       ],
       "access": "public",
+      "informative": false
+    },
+    {
+      "id": "authenticator-extension-capabilities",
+      "href": "https://w3c.github.io/webauthn/#authenticator-extension-capabilities",
+      "linkingText": [
+        "Authenticator Extension Capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false
     },
     {

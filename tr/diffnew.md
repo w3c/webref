@@ -1,46 +1,28 @@
-% Diff between report from "August 31, 2020" and reference report from "August 24, 2020"
+% Diff between report from "September 21, 2020" and reference report from "September 14, 2020"
 % Reffy
-% August 31, 2020
+% September 21, 2020
 
-## Console Standard
+## Compression Streams
 
-- Initial URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
+- Initial URL: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
-- Spec is OK: *INS* false / *DEL* true
-- Unknown WebIDL names used: *INS* undefined
+- Editor's Draft: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
+- Spec is OK: *INS* true / *DEL* false
 
 
-## CSS Inline Layout Module Level 3
+## Encoding Standard
 
-- Initial URL: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
+- Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
-- Missing references for links: *INS* https://www.w3.org/TR/css-cascade/, https://www.w3.org/TR/web-animations/, https://html.spec.whatwg.org/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-values/
+- Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
+- Spec is OK: *INS* true / *DEL* false
 
 
-## Web Share API
+## JS Self-Profiling API
 
-- Initial URL: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
+- Initial URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
-- Unknown WebIDL names used: *INS* undefined
-
-
-## WebRTC 1.0: Real-time Communication Between Browsers
-
-- Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- Missing references for links: *INS* https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html
-
-
-## WebXR Hand Input Module - Level 1
-
-- Initial URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
-- This specification was not in the reference crawl report.
+- Editor's Draft: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
+- Missing references for links: *INS* https://w3c.github.io/webappsec-permissions-policy/document-policy.html
 
 

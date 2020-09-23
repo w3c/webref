@@ -798,24 +798,6 @@
         "members": [
           {
             "type": "field",
-            "name": "ignoreRead",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": true
-            },
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "overwrite",
             "extAttrs": [],
             "idlType": {
@@ -858,58 +840,13 @@
         "members": [
           {
             "type": "field",
-            "name": "id",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "recordType",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "mediaType",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "signal",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "AbortSignal"
             },
