@@ -1454,12 +1454,12 @@
       "id": "attr-xml-space",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#attr-xml-space",
       "linkingText": [
-        "xml:space"
+        "space"
       ],
       "localLinkingText": [],
-      "type": "element-attr",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false
     },
     {
@@ -10139,6 +10139,20 @@
       "informative": false
     },
     {
+      "id": "dom-style",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#dom-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLElement"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "dom-cssstyledeclaration-csstext",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#dom-cssstyledeclaration-csstext",
       "linkingText": [
@@ -14629,9 +14643,11 @@
         "title"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -15189,9 +15205,11 @@
         "class"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "global"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -15201,9 +15219,11 @@
         "id"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "global"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -15214,7 +15234,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -15226,7 +15248,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "html-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -15264,7 +15288,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "html-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -15275,9 +15301,9 @@
         "lang"
       ],
       "localLinkingText": [],
-      "type": "element-attr",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false
     },
     {
@@ -15316,7 +15342,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "html-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -15383,15 +15411,17 @@
       "informative": false
     },
     {
-      "id": "the-dir-attribute",
-      "href": "https://html.spec.whatwg.org/multipage/dom.html#the-dir-attribute",
+      "id": "attr-dir",
+      "href": "https://html.spec.whatwg.org/multipage/dom.html#attr-dir",
       "linkingText": [
         "dir"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "html-global"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -15401,9 +15431,9 @@
         "ltr"
       ],
       "localLinkingText": [],
-      "type": "element-attr",
+      "type": "attr-value",
       "for": [
-        "dir"
+        "html-global/dir"
       ],
       "access": "public",
       "informative": false
@@ -15427,9 +15457,9 @@
         "rtl"
       ],
       "localLinkingText": [],
-      "type": "element-attr",
+      "type": "attr-value",
       "for": [
-        "dir"
+        "html-global/dir"
       ],
       "access": "public",
       "informative": false
@@ -15453,9 +15483,9 @@
         "auto"
       ],
       "localLinkingText": [],
-      "type": "element-attr",
+      "type": "attr-value",
       "for": [
-        "dir"
+        "html-global/dir"
       ],
       "access": "public",
       "informative": false
@@ -15561,27 +15591,15 @@
       "informative": false
     },
     {
-      "id": "the-style-attribute",
-      "href": "https://html.spec.whatwg.org/multipage/dom.html#the-style-attribute",
+      "id": "attr-style",
+      "href": "https://html.spec.whatwg.org/multipage/dom.html#attr-style",
       "linkingText": [
         "style"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dom-style",
-      "href": "https://html.spec.whatwg.org/multipage/dom.html#dom-style",
-      "linkingText": [
-        "style"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
+      "type": "element-attr",
       "for": [
-        "HTMLElement"
+        "html-global"
       ],
       "access": "public",
       "informative": false
@@ -38794,7 +38812,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "html-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -39890,7 +39910,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "html-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -39914,7 +39936,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "html-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -39974,7 +39998,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "html-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -39998,20 +40024,10 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "names:-the-itemprop-attribute",
-      "href": "https://html.spec.whatwg.org/multipage/microdata.html#names:-the-itemprop-attribute",
-      "linkingText": [
-        "itemprop"
+      "for": [
+        "html-global"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -41635,15 +41651,17 @@
       "informative": false
     },
     {
-      "id": "the-hidden-attribute",
-      "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute",
+      "id": "attr-hidden",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#attr-hidden",
       "linkingText": [
         "hidden"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "html-global"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -42042,7 +42060,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "htmlsvg-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -42371,13 +42391,7 @@
       "localLinkingText": [],
       "type": "element-attr",
       "for": [
-        "button",
-        "fieldset",
-        "input",
-        "object",
-        "output",
-        "select",
-        "textarea"
+        "html-global"
       ],
       "access": "public",
       "informative": false
@@ -42445,18 +42459,6 @@
       "informative": false
     },
     {
-      "id": "the-accesskey-attribute",
-      "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute",
-      "linkingText": [
-        "accesskey"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "assigned-access-key",
       "href": "https://html.spec.whatwg.org/multipage/interaction.html#assigned-access-key",
       "linkingText": [
@@ -42516,7 +42518,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "html-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -42760,7 +42764,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "html-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -42858,7 +42864,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "html-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -42869,11 +42877,11 @@
         "off"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attr-value",
       "for": [
-        "autocapitalize"
+        "html-global/autocapitalize"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -42883,11 +42891,11 @@
         "none"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attr-value",
       "for": [
-        "autocapitalize"
+        "html-global/autocapitalize"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -42897,11 +42905,11 @@
         "on"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attr-value",
       "for": [
-        "autocapitalize"
+        "html-global/autocapitalize"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -42911,11 +42919,11 @@
         "sentences"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attr-value",
       "for": [
-        "autocapitalize"
+        "html-global/autocapitalize"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -42925,11 +42933,11 @@
         "words"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attr-value",
       "for": [
-        "autocapitalize"
+        "html-global/autocapitalize"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -42939,11 +42947,11 @@
         "characters"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attr-value",
       "for": [
-        "autocapitalize"
+        "html-global/autocapitalize"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -42992,7 +43000,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "html-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -43003,9 +43013,11 @@
         "none"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/inputmode"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43015,9 +43027,11 @@
         "text"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/inputmode"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43027,9 +43041,11 @@
         "tel"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/inputmode"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43039,9 +43055,11 @@
         "url"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/inputmode"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43051,9 +43069,11 @@
         "email"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/inputmode"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43063,9 +43083,11 @@
         "numeric"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/inputmode"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43075,9 +43097,11 @@
         "decimal"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/inputmode"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43087,9 +43111,11 @@
         "search"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/inputmode"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43114,7 +43140,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "html-global"
+      ],
       "access": "public",
       "informative": false
     },
@@ -43125,9 +43153,11 @@
         "enter"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/enterkeyhint"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43137,9 +43167,11 @@
         "done"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/enterkeyhint"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43149,9 +43181,11 @@
         "go"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/enterkeyhint"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43161,9 +43195,11 @@
         "next"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/enterkeyhint"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43173,9 +43209,11 @@
         "previous"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/enterkeyhint"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43185,9 +43223,11 @@
         "search"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/enterkeyhint"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -43197,9 +43237,11 @@
         "send"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "html-global/enterkeyhint"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -44219,15 +44261,17 @@
       "informative": false
     },
     {
-      "id": "the-draggable-attribute",
-      "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-draggable-attribute",
+      "id": "attr-draggable",
+      "href": "https://html.spec.whatwg.org/multipage/dnd.html#attr-draggable",
       "linkingText": [
         "draggable"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "html-global"
+      ],
+      "access": "public",
       "informative": false
     },
     {
