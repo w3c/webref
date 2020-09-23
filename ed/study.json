@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-09-22T18:37:59.501Z",
+  "date": "2020-09-23T01:11:01.721Z",
   "stats": {
     "crawled": 331,
     "errors": 1,
@@ -12,29 +12,33 @@
     {
       "title": "A Well-Known URL for Changing Passwords",
       "shortname": "change-password-url",
-      "date": "",
-      "url": "https://wicg.github.io/change-password-url/",
+      "date": "25 August 2020",
+      "url": "https://w3c.github.io/webappsec-change-password-url/",
       "nightly": {
-        "url": "https://wicg.github.io/change-password-url/",
-        "repository": "https://github.com/WICG/change-password-url",
+        "url": "https://w3c.github.io/webappsec-change-password-url/",
+        "repository": "https://github.com/w3c/webappsec-change-password-url",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://wicg.github.io/change-password-url/",
-        "repository": "https://github.com/WICG/change-password-url",
-        "filename": "index.html"
-      },
+      "crawled": "https://w3c.github.io/webappsec-change-password-url/",
       "report": {
-        "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:217:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-secure-contexts/",
+            "ref": {
+              "name": "SECURE-CONTEXTS",
+              "url": "https://www.w3.org/TR/secure-contexts/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -16527,7 +16531,7 @@
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
-              "crawled": "http://w3c.github.io/webcrypto/"
+              "crawled": "https://w3c.github.io/webcrypto/"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -16888,11 +16892,6 @@
               "crawled": "https://mimesniff.spec.whatwg.org/"
             },
             {
-              "url": "https://wicg.github.io/native-file-system/",
-              "title": "Native File System",
-              "crawled": "https://wicg.github.io/native-file-system/"
-            },
-            {
               "url": "https://wicg.github.io/origin-policy/",
               "title": "Origin Policy",
               "crawled": "https://wicg.github.io/origin-policy/"
@@ -17199,6 +17198,11 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://w3c.github.io/webappsec-change-password-url/",
+              "title": "A Well-Known URL for Changing Passwords",
+              "crawled": "https://w3c.github.io/webappsec-change-password-url/"
+            },
             {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
@@ -17565,13 +17569,7 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": [
-            {
-              "url": "https://wicg.github.io/native-file-system/",
-              "title": "Native File System",
-              "crawled": "https://wicg.github.io/native-file-system/"
-            }
-          ]
+          "informative": []
         },
         "ok": false
       }
@@ -17675,11 +17673,6 @@
               "crawled": "https://w3c.github.io/mediacapture-record/"
             },
             {
-              "url": "https://wicg.github.io/native-file-system/",
-              "title": "Native File System",
-              "crawled": "https://wicg.github.io/native-file-system/"
-            },
-            {
               "url": "https://www.w3.org/TR/presentation-api/",
               "title": "Presentation API",
               "crawled": "https://w3c.github.io/presentation-api/"
@@ -17734,7 +17727,7 @@
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
-              "crawled": "http://w3c.github.io/webcrypto/"
+              "crawled": "https://w3c.github.io/webcrypto/"
             }
           ]
         },
@@ -18986,6 +18979,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://w3c.github.io/webappsec-change-password-url/",
+              "title": "A Well-Known URL for Changing Passwords",
+              "crawled": "https://w3c.github.io/webappsec-change-password-url/"
+            },
+            {
               "url": "https://wicg.github.io/shape-detection-api/",
               "title": "Accelerated Shape Detection in Images",
               "crawled": "https://wicg.github.io/shape-detection-api/"
@@ -19606,11 +19604,6 @@
               "crawled": "https://w3c.github.io/webappsec-mixed-content/"
             },
             {
-              "url": "https://wicg.github.io/native-file-system/",
-              "title": "Native File System",
-              "crawled": "https://wicg.github.io/native-file-system/"
-            },
-            {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/"
@@ -19963,7 +19956,7 @@
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
-              "crawled": "http://w3c.github.io/webcrypto/"
+              "crawled": "https://w3c.github.io/webcrypto/"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -20619,7 +20612,7 @@
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
-              "crawled": "http://w3c.github.io/webcrypto/"
+              "crawled": "https://w3c.github.io/webcrypto/"
             },
             {
               "url": "https://wicg.github.io/web-locks/",
@@ -20660,6 +20653,11 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://w3c.github.io/webappsec-change-password-url/",
+              "title": "A Well-Known URL for Changing Passwords",
+              "crawled": "https://w3c.github.io/webappsec-change-password-url/"
+            },
             {
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
@@ -20994,11 +20992,6 @@
               "url": "https://mimesniff.spec.whatwg.org/",
               "title": "MIME Sniffing Standard",
               "crawled": "https://mimesniff.spec.whatwg.org/"
-            },
-            {
-              "url": "https://wicg.github.io/native-file-system/",
-              "title": "Native File System",
-              "crawled": "https://wicg.github.io/native-file-system/"
             },
             {
               "url": "https://notifications.spec.whatwg.org/",
@@ -23086,11 +23079,6 @@
               "crawled": "https://w3c.github.io/mediasession/"
             },
             {
-              "url": "https://wicg.github.io/native-file-system/",
-              "title": "Native File System",
-              "crawled": "https://wicg.github.io/native-file-system/"
-            },
-            {
               "url": "https://wicg.github.io/origin-policy/",
               "title": "Origin Policy",
               "crawled": "https://wicg.github.io/origin-policy/"
@@ -23336,42 +23324,29 @@
     {
       "title": "Native File System",
       "shortname": "native-file-system",
-      "date": "15 September 2020",
+      "date": "",
       "url": "https://wicg.github.io/native-file-system/",
       "nightly": {
         "url": "https://wicg.github.io/native-file-system/",
         "repository": "https://github.com/WICG/native-file-system",
         "filename": "index.html"
       },
-      "crawled": "https://wicg.github.io/native-file-system/",
+      "crawled": {
+        "url": "https://wicg.github.io/native-file-system/",
+        "repository": "https://github.com/WICG/native-file-system",
+        "filename": "index.html"
+      },
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:217:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "undefined"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/FileAPI/",
-            "ref": {
-              "name": "FILE-API",
-              "url": "https://www.w3.org/TR/FileAPI/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/permissions/",
-            "ref": {
-              "name": "PERMISSIONS",
-              "url": "https://www.w3.org/TR/permissions/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -24543,11 +24518,6 @@
               "crawled": "https://w3c.github.io/mediacapture-image/"
             },
             {
-              "url": "https://wicg.github.io/native-file-system/",
-              "title": "Native File System",
-              "crawled": "https://wicg.github.io/native-file-system/"
-            },
-            {
               "url": "https://www.w3.org/TR/presentation-api/",
               "title": "Presentation API",
               "crawled": "https://w3c.github.io/presentation-api/"
@@ -25628,11 +25598,6 @@
               "crawled": "https://w3c.github.io/sensors/"
             },
             {
-              "url": "https://wicg.github.io/native-file-system/",
-              "title": "Native File System",
-              "crawled": "https://wicg.github.io/native-file-system/"
-            },
-            {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
@@ -26692,6 +26657,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://w3c.github.io/webappsec-change-password-url/",
+              "title": "A Well-Known URL for Changing Passwords",
+              "crawled": "https://w3c.github.io/webappsec-change-password-url/"
+            },
+            {
               "url": "https://www.w3.org/TR/battery-status/",
               "title": "Battery Status API",
               "crawled": "https://w3c.github.io/battery/"
@@ -27635,11 +27605,6 @@
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
             {
-              "url": "https://wicg.github.io/native-file-system/",
-              "title": "Native File System",
-              "crawled": "https://wicg.github.io/native-file-system/"
-            },
-            {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
@@ -27721,11 +27686,6 @@
               "url": "https://wicg.github.io/webpackage/loading.html",
               "title": "Loading Signed Exchanges",
               "crawled": "https://wicg.github.io/webpackage/loading.html"
-            },
-            {
-              "url": "https://wicg.github.io/native-file-system/",
-              "title": "Native File System",
-              "crawled": "https://wicg.github.io/native-file-system/"
             },
             {
               "url": "https://wicg.github.io/serial/",
@@ -28894,6 +28854,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://w3c.github.io/webappsec-change-password-url/",
+              "title": "A Well-Known URL for Changing Passwords",
+              "crawled": "https://w3c.github.io/webappsec-change-password-url/"
+            },
+            {
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
@@ -29911,11 +29876,11 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/webcrypto/Overview.html",
+        "url": "https://w3c.github.io/webcrypto/",
         "repository": "https://github.com/w3c/webcrypto",
         "filename": "Overview.html"
       },
-      "crawled": "http://w3c.github.io/webcrypto/",
+      "crawled": "https://w3c.github.io/webcrypto/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -30533,11 +30498,6 @@
               "crawled": "https://w3c.github.io/mst-content-hint/"
             },
             {
-              "url": "https://wicg.github.io/native-file-system/",
-              "title": "Native File System",
-              "crawled": "https://wicg.github.io/native-file-system/"
-            },
-            {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/"
@@ -30850,7 +30810,7 @@
             {
               "url": "https://www.w3.org/TR/WebCryptoAPI/",
               "title": "Web Cryptography API",
-              "crawled": "http://w3c.github.io/webcrypto/"
+              "crawled": "https://w3c.github.io/webcrypto/"
             },
             {
               "url": "https://wicg.github.io/web-locks/",
@@ -32457,7 +32417,7 @@
     {
       "title": "WebXR Layers API Level 1",
       "shortname": "layers",
-      "date": "16 September 2020",
+      "date": "22 September 2020",
       "url": "https://immersive-web.github.io/layers/",
       "nightly": {
         "url": "https://immersive-web.github.io/layers/",
