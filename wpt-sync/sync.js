@@ -170,13 +170,16 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
         assert(branch.startsWith('webref/'));
         const oldBranch = branch.replace(/^webref/, 'reffy-reports');
 
+        // Remote branch has the same name as the local one, except if it was
+        // created before the switch from "reffy-reports" to "webref"
+        const remoteBranch = remoteBranches.has(oldBranch) ? oldBranch : branch;
+
         // First create or update the remote branch, if not already up to date.
         if (remoteBranches.has(branch) || remoteBranches.has(oldBranch)) {
             // Check if there are any differences between the local and remote
             // branch in the files touched by the local branch. This to avoid
             // updating the branch with unrelated changes, which would trigger
             // another Travis run of any existing PR for the branch.
-            const remoteBranch = remoteBranches.has(branch) ? branch : oldBranch;
             const affectedFiles = git(`diff --name-only ${branch} ${branch}^`).replace(/\n/g, ' ');
             const diff = git(`diff ${branch} ${remote}/${remoteBranch} -- ${affectedFiles}`).trim();
             if (diff) {
@@ -194,8 +197,8 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
         // commit message to create the PR title/body, so that they cannot
         // get out of sync. Note that this will also update the boilerplate of
         // existing PRs even if the branch was not updated. This is intentional.
-        const pr_title = git(`show --format=%s --no-patch ${remote}/${branch}`).trim();
-        const commit_body = git(`show --format=%b --no-patch ${remote}/${branch}`);
+        const pr_title = git(`show --format=%s --no-patch ${remote}/${remoteBranch}`).trim();
+        const commit_body = git(`show --format=%b --no-patch ${remote}/${remoteBranch}`);
         const pr_body = `${PR_BOILERPLATE}\n\n<hr>\n\n${commit_body}`;
 
         // Look for open PRs for the same branch.
@@ -203,7 +206,7 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
             owner: 'web-platform-tests',
             repo: 'wpt',
             state: 'open',
-            head: `${owner}:${branch}`,
+            head: `${owner}:${remoteBranch}`,
         })).data;
 
         if (open_prs.length) {
