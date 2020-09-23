@@ -21,7 +21,7 @@
   
       <header>
       <h1>Reffy crawl</h1>
-            <h2 class="date">September 22, 2020</h2>
+            <h2 class="date">September 23, 2020</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -39,21 +39,26 @@
     <input class="submit" id="submit" type="submit" value="Apply" />
   </p>
   <p id="stats"></p>
-  <section id="a-well-known-url-for-changing-passwords" class="level2" data-spec="true" data-error="true">
+  <section id="a-well-known-url-for-changing-passwords" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>A Well-Known URL for Changing Passwords</h2>
   <section id="spec-info" class="level3 info">
   <h3>Spec info</h3>
   <ul>
-  <li>Initial URL: <a href="https://wicg.github.io/change-password-url/" class="uri">https://wicg.github.io/change-password-url/</a></li>
-  <li>Crawled URL: <a href="%5Bobject%20Object%5D">[object Object]</a></li>
-  <li>Editor's Draft: <a href="https://wicg.github.io/change-password-url/" class="uri">https://wicg.github.io/change-password-url/</a></li>
+  <li>Initial URL: <a href="https://w3c.github.io/webappsec-change-password-url/" class="uri">https://w3c.github.io/webappsec-change-password-url/</a></li>
+  <li>Crawled URL: <a href="https://w3c.github.io/webappsec-change-password-url/" class="uri">https://w3c.github.io/webappsec-change-password-url/</a></li>
+  <li>Crawled version: 25 August 2020</li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/webappsec-change-password-url/" class="uri">https://w3c.github.io/webappsec-change-password-url/</a></li>
   <li>Shortname: change-password-url</li>
   </ul>
   </section>
   <section id="potential-issues" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined     at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined     at __puppeteer_evaluation_script__:4:37     at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:217:19)     at process._tickCallback (internal/process/next_tick.js:68:7)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a>, related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -6950,7 +6955,7 @@
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
-  <li><a href="http://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
+  <li><a href="https://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a></li>
   <li><a href="https://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
@@ -7083,7 +7088,6 @@
   <li><a href="https://infra.spec.whatwg.org/">Infra Standard</a></li>
   <li><a href="https://wicg.github.io/webpackage/loading.html">Loading Signed Exchanges</a></li>
   <li><a href="https://mimesniff.spec.whatwg.org/">MIME Sniffing Standard</a></li>
-  <li><a href="https://wicg.github.io/native-file-system/">Native File System</a></li>
   <li><a href="https://wicg.github.io/origin-policy/">Origin Policy</a></li>
   <li><a href="https://w3c.github.io/payment-method-manifest/">Payment Method Manifest</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
@@ -7234,6 +7238,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/webappsec-change-password-url/">A Well-Known URL for Changing Passwords</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
@@ -7330,10 +7335,7 @@
   <section id="known-dependencies-on-this-specification-147" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
-  <p>Informative references to this spec from:</p>
-  <ul>
-  <li><a href="https://wicg.github.io/native-file-system/">Native File System</a></li>
-  </ul>
+  <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
   <section id="file-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
@@ -7375,7 +7377,6 @@
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
-  <li><a href="https://wicg.github.io/native-file-system/">Native File System</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   <li><a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
@@ -7389,7 +7390,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
-  <li><a href="http://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
+  <li><a href="https://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
   </ul>
   </section>
   </section>
@@ -8041,6 +8042,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/webappsec-change-password-url/">A Well-Known URL for Changing Passwords</a></li>
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a></li>
   <li><a href="https://wicg.github.io/shape-detection-api/text.html">Accelerated Text Detection in Images</a></li>
   <li><a href="https://w3c.github.io/aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a></li>
@@ -8165,7 +8167,6 @@
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content</a></li>
-  <li><a href="https://wicg.github.io/native-file-system/">Native File System</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/network-error-logging/">Network Error Logging</a></li>
   <li><a href="https://wicg.github.io/netinfo/">Network Information API</a></li>
@@ -8236,7 +8237,7 @@
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
   <li><a href="https://wicg.github.io/background-sync/spec/">Web Background Synchronization</a></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
-  <li><a href="http://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
+  <li><a href="https://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a></li>
   <li><a href="https://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
@@ -8516,7 +8517,7 @@
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
-  <li><a href="http://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
+  <li><a href="https://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
   <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-time Communication Between Browsers</a></li>
   </ul>
@@ -8542,6 +8543,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/webappsec-change-password-url/">A Well-Known URL for Changing Passwords</a></li>
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
   <li><a href="https://w3c.github.io/badging/">Badging API</a></li>
@@ -8609,7 +8611,6 @@
   <li><a href="https://mathml-refresh.github.io/mathml-core/">MathML Core</a></li>
   <li><a href="https://w3c.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://mimesniff.spec.whatwg.org/">MIME Sniffing Standard</a></li>
-  <li><a href="https://wicg.github.io/native-file-system/">Native File System</a></li>
   <li><a href="https://notifications.spec.whatwg.org/">Notifications API Standard</a></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
   <li><a href="https://wicg.github.io/origin-policy/">Origin Policy</a></li>
@@ -9667,7 +9668,6 @@
   <li><a href="https://wicg.github.io/webpackage/loading.html">Loading Signed Exchanges</a></li>
   <li><a href="https://w3c.github.io/media-capabilities/">Media Capabilities</a></li>
   <li><a href="https://w3c.github.io/mediasession/">Media Session Standard</a></li>
-  <li><a href="https://wicg.github.io/native-file-system/">Native File System</a></li>
   <li><a href="https://wicg.github.io/origin-policy/">Origin Policy</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
@@ -9771,28 +9771,21 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="native-file-system" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="native-file-system" class="level2" data-spec="true" data-error="true">
   <h2>Native File System</h2>
   <section id="spec-info-207" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://wicg.github.io/native-file-system/" class="uri">https://wicg.github.io/native-file-system/</a></li>
-  <li>Crawled URL: <a href="https://wicg.github.io/native-file-system/" class="uri">https://wicg.github.io/native-file-system/</a></li>
-  <li>Crawled version: 15 September 2020</li>
+  <li>Crawled URL: <a href="%5Bobject%20Object%5D">[object Object]</a></li>
   <li>Editor's Draft: <a href="https://wicg.github.io/native-file-system/" class="uri">https://wicg.github.io/native-file-system/</a></li>
   <li>Shortname: native-file-system</li>
   </ul>
   </section>
   <section id="potential-issues-207" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FILE-API&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
-  <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a>, related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
-  </ul></li>
-  </ul>
+  <p>The following network or parsing error occurred: <code>Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined     at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined     at __puppeteer_evaluation_script__:4:37     at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:217:19)     at process._tickCallback (internal/process/next_tick.js:68:7)</code></p>
+  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
   </section>
   <section id="known-dependencies-on-this-specification-207" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -10446,7 +10439,6 @@
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
-  <li><a href="https://wicg.github.io/native-file-system/">Native File System</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://wicg.github.io/permissions-revoke/">Relinquishing Permissions</a></li>
   <li><a href="https://wicg.github.io/permissions-request/">Requesting Permissions</a></li>
@@ -11037,7 +11029,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
-  <li><a href="https://wicg.github.io/native-file-system/">Native File System</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a></li>
@@ -11477,6 +11468,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/webappsec-change-password-url/">A Well-Known URL for Changing Passwords</a></li>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://wicg.github.io/client-hints-infrastructure/">Client Hints Infrastructure</a></li>
   <li><a href="https://wicg.github.io/contact-api/spec/">Contact Picker API</a></li>
@@ -11825,7 +11817,6 @@
   <ul>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 3.0</a></li>
-  <li><a href="https://wicg.github.io/native-file-system/">Native File System</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -11864,7 +11855,6 @@
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://wicg.github.io/webpackage/loading.html">Loading Signed Exchanges</a></li>
-  <li><a href="https://wicg.github.io/native-file-system/">Native File System</a></li>
   <li><a href="https://wicg.github.io/serial/">Serial API</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://w3c.github.io/webrtc-insertable-streams/">WebRTC Insertable Media using Streams</a></li>
@@ -12546,6 +12536,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/webappsec-change-password-url/">A Well-Known URL for Changing Passwords</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
@@ -13024,9 +13015,9 @@
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/WebCryptoAPI/" class="uri">https://www.w3.org/TR/WebCryptoAPI/</a></li>
-  <li>Crawled URL: <a href="http://w3c.github.io/webcrypto/" class="uri">http://w3c.github.io/webcrypto/</a></li>
+  <li>Crawled URL: <a href="https://w3c.github.io/webcrypto/" class="uri">https://w3c.github.io/webcrypto/</a></li>
   <li>Crawled version: 24 November 2019</li>
-  <li>Editor's Draft: <a href="https://w3c.github.io/webcrypto/Overview.html" class="uri">https://w3c.github.io/webcrypto/Overview.html</a></li>
+  <li>Editor's Draft: <a href="https://w3c.github.io/webcrypto/" class="uri">https://w3c.github.io/webcrypto/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/WebCryptoAPI/" class="uri">https://www.w3.org/TR/WebCryptoAPI/</a></li>
   <li>Shortname: WebCryptoAPI</li>
   </ul>
@@ -13183,7 +13174,6 @@
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/mst-content-hint/">MediaStreamTrack Content Hints</a></li>
-  <li><a href="https://wicg.github.io/native-file-system/">Native File System</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://wicg.github.io/netinfo/">Network Information API</a></li>
   <li><a href="https://notifications.spec.whatwg.org/">Notifications API Standard</a></li>
@@ -13246,7 +13236,7 @@
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
   <li><a href="https://wicg.github.io/background-sync/spec/">Web Background Synchronization</a></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
-  <li><a href="http://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
+  <li><a href="https://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
   <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a></li>
   <li><a href="https://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
   <li><a href="https://w3c.github.io/web-nfc/">Web NFC</a></li>
@@ -14204,7 +14194,7 @@
   <ul>
   <li>Initial URL: <a href="https://immersive-web.github.io/layers/" class="uri">https://immersive-web.github.io/layers/</a></li>
   <li>Crawled URL: <a href="https://immersive-web.github.io/layers/" class="uri">https://immersive-web.github.io/layers/</a></li>
-  <li>Crawled version: 16 September 2020</li>
+  <li>Crawled version: 22 September 2020</li>
   <li>Editor's Draft: <a href="https://immersive-web.github.io/layers/" class="uri">https://immersive-web.github.io/layers/</a></li>
   <li>Shortname: layers</li>
   </ul>

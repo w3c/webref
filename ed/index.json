@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2020-09-22T18:38:01.234Z",
+  "date": "2020-09-23T01:11:03.510Z",
   "options": {},
   "stats": {
     "crawled": 331,
@@ -901,7 +901,7 @@
         "https://immersive-web.github.io/layers/"
       ],
       "crawled": "https://immersive-web.github.io/layers/",
-      "date": "16 September 2020",
+      "date": "22 September 2020",
       "links": "links/layers.json",
       "refs": "refs/layers.json",
       "idl": "idl/layers.idl",
@@ -980,8 +980,8 @@
         "filename": "index.html"
       },
       "title": "MathML Core",
-      "source": "spec",
-      "shortTitle": "MathML Core",
+      "source": "specref",
+      "shortTitle": "MathML",
       "versions": [
         "https://mathml-refresh.github.io/mathml-core/"
       ],
@@ -1481,6 +1481,33 @@
       "idlparsed": "idlparsed/web-share-target.json"
     },
     {
+      "url": "https://w3c.github.io/webappsec-change-password-url/",
+      "seriesComposition": "full",
+      "shortname": "change-password-url",
+      "series": {
+        "shortname": "change-password-url",
+        "currentSpecification": "change-password-url"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/webappsec-change-password-url/",
+        "repository": "https://github.com/w3c/webappsec-change-password-url",
+        "filename": "index.html"
+      },
+      "title": "A Well-Known URL for Changing Passwords",
+      "source": "spec",
+      "shortTitle": "A Well-Known URL for Changing Passwords",
+      "versions": [
+        "https://w3c.github.io/webappsec-change-password-url/"
+      ],
+      "crawled": "https://w3c.github.io/webappsec-change-password-url/",
+      "date": "25 August 2020",
+      "links": "links/change-password-url.json",
+      "refs": "refs/change-password-url.json",
+      "generator": "bikeshed",
+      "dfns": "dfns/change-password-url.json",
+      "headings": "headings/change-password-url.json"
+    },
+    {
       "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
       "seriesComposition": "full",
       "shortname": "trusted-types",
@@ -1579,7 +1606,7 @@
         "filename": "index.html"
       },
       "title": "WebRTC Insertable Media using Streams",
-      "source": "spec",
+      "source": "specref",
       "shortTitle": "WebRTC Insertable Media using Streams",
       "versions": [
         "https://w3c.github.io/webrtc-insertable-streams/"
@@ -1682,33 +1709,6 @@
       "idlparsed": "idlparsed/background-sync.json"
     },
     {
-      "url": "https://wicg.github.io/change-password-url/",
-      "seriesComposition": "full",
-      "shortname": "change-password-url",
-      "series": {
-        "shortname": "change-password-url",
-        "currentSpecification": "change-password-url"
-      },
-      "nightly": {
-        "url": "https://wicg.github.io/change-password-url/",
-        "repository": "https://github.com/WICG/change-password-url",
-        "filename": "index.html"
-      },
-      "title": "A Well-Known URL for Changing Passwords",
-      "source": "spec",
-      "shortTitle": "A Well-Known URL for Changing Passwords",
-      "versions": [
-        "https://wicg.github.io/change-password-url/"
-      ],
-      "crawled": {
-        "url": "https://wicg.github.io/change-password-url/",
-        "repository": "https://github.com/WICG/change-password-url",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:217:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
-    },
-    {
       "url": "https://wicg.github.io/client-hints-infrastructure/",
       "seriesComposition": "full",
       "shortname": "client-hints-infrastructure",
@@ -1749,7 +1749,7 @@
         "filename": "index.html"
       },
       "title": "Compression Streams",
-      "source": "spec",
+      "source": "specref",
       "shortTitle": "Compression Streams",
       "versions": [
         "https://wicg.github.io/compression/"
@@ -2504,15 +2504,13 @@
       "versions": [
         "https://wicg.github.io/native-file-system/"
       ],
-      "crawled": "https://wicg.github.io/native-file-system/",
-      "date": "15 September 2020",
-      "links": "links/native-file-system.json",
-      "refs": "refs/native-file-system.json",
-      "idl": "idl/native-file-system.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/native-file-system.json",
-      "headings": "headings/native-file-system.json",
-      "idlparsed": "idlparsed/native-file-system.json"
+      "crawled": {
+        "url": "https://wicg.github.io/native-file-system/",
+        "repository": "https://github.com/WICG/native-file-system",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:217:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
     },
     {
       "url": "https://wicg.github.io/netinfo/",
@@ -10443,7 +10441,7 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/webcrypto/Overview.html",
+        "url": "https://w3c.github.io/webcrypto/",
         "repository": "https://github.com/w3c/webcrypto",
         "filename": "Overview.html"
       },
@@ -10452,10 +10450,9 @@
       "shortTitle": "Web Cryptography API",
       "versions": [
         "https://www.w3.org/TR/WebCryptoAPI/",
-        "https://w3c.github.io/webcrypto/Overview.html",
         "https://w3c.github.io/webcrypto/"
       ],
-      "crawled": "http://w3c.github.io/webcrypto/",
+      "crawled": "https://w3c.github.io/webcrypto/",
       "date": "24 November 2019",
       "links": "links/WebCryptoAPI.json",
       "refs": "refs/WebCryptoAPI.json",
