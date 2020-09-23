@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-09-23T01:11:01.721Z",
+  "date": "2020-09-23T06:37:42.650Z",
   "stats": {
     "crawled": 331,
-    "errors": 1,
+    "errors": 0,
     "studied": 331
   },
   "results": [
@@ -16867,6 +16867,11 @@
               "crawled": "https://w3c.github.io/FileAPI/"
             },
             {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "File System Access",
+              "crawled": "https://wicg.github.io/file-system-access/"
+            },
+            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
@@ -17569,7 +17574,13 @@
         ],
         "referencedBy": {
           "normative": [],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "File System Access",
+              "crawled": "https://wicg.github.io/file-system-access/"
+            }
+          ]
         },
         "ok": false
       }
@@ -17631,6 +17642,11 @@
               "url": "https://wicg.github.io/entries-api/",
               "title": "File and Directory Entries API",
               "crawled": "https://wicg.github.io/entries-api/"
+            },
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "File System Access",
+              "crawled": "https://wicg.github.io/file-system-access/"
             },
             {
               "url": "https://www.w3.org/TR/html-media-capture/",
@@ -17730,6 +17746,52 @@
               "crawled": "https://w3c.github.io/webcrypto/"
             }
           ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "File System Access",
+      "shortname": "native-file-system",
+      "date": "22 September 2020",
+      "url": "https://wicg.github.io/native-file-system/",
+      "nightly": {
+        "url": "https://wicg.github.io/native-file-system/",
+        "repository": "https://github.com/WICG/native-file-system",
+        "filename": "index.html"
+      },
+      "crawled": "https://wicg.github.io/file-system-access/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [
+          "undefined"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FILE-API",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/permissions/",
+            "ref": {
+              "name": "PERMISSIONS",
+              "url": "https://www.w3.org/TR/permissions/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
         },
         "ok": false
       }
@@ -19389,6 +19451,11 @@
               "crawled": "https://w3c.github.io/FileAPI/"
             },
             {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "File System Access",
+              "crawled": "https://wicg.github.io/file-system-access/"
+            },
+            {
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://drafts.fxtf.org/filter-effects-1/"
@@ -20897,6 +20964,11 @@
               "url": "https://www.w3.org/TR/FileAPI/",
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/"
+            },
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "File System Access",
+              "crawled": "https://wicg.github.io/file-system-access/"
             },
             {
               "url": "https://fullscreen.spec.whatwg.org/",
@@ -23054,6 +23126,11 @@
               "crawled": "https://w3c.github.io/FileAPI/"
             },
             {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "File System Access",
+              "crawled": "https://wicg.github.io/file-system-access/"
+            },
+            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
@@ -23316,39 +23393,6 @@
               "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "Native File System",
-      "shortname": "native-file-system",
-      "date": "",
-      "url": "https://wicg.github.io/native-file-system/",
-      "nightly": {
-        "url": "https://wicg.github.io/native-file-system/",
-        "repository": "https://github.com/WICG/native-file-system",
-        "filename": "index.html"
-      },
-      "crawled": {
-        "url": "https://wicg.github.io/native-file-system/",
-        "repository": "https://github.com/WICG/native-file-system",
-        "filename": "index.html"
-      },
-      "report": {
-        "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:217:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
           "informative": []
         },
         "ok": false
@@ -24483,6 +24527,11 @@
               "crawled": "https://w3c.github.io/clipboard-apis/"
             },
             {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "File System Access",
+              "crawled": "https://wicg.github.io/file-system-access/"
+            },
+            {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://w3c.github.io/sensors/"
@@ -25592,6 +25641,11 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "File System Access",
+              "crawled": "https://wicg.github.io/file-system-access/"
+            },
             {
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
@@ -27595,6 +27649,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "File System Access",
+              "crawled": "https://wicg.github.io/file-system-access/"
+            },
+            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
@@ -27681,6 +27740,11 @@
               "url": "https://www.w3.org/TR/FileAPI/",
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/"
+            },
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "File System Access",
+              "crawled": "https://wicg.github.io/file-system-access/"
             },
             {
               "url": "https://wicg.github.io/webpackage/loading.html",
@@ -30266,6 +30330,11 @@
               "url": "https://www.w3.org/TR/FileAPI/",
               "title": "File API",
               "crawled": "https://w3c.github.io/FileAPI/"
+            },
+            {
+              "url": "https://wicg.github.io/native-file-system/",
+              "title": "File System Access",
+              "crawled": "https://wicg.github.io/file-system-access/"
             },
             {
               "url": "https://www.w3.org/TR/filter-effects-1/",
