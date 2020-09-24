@@ -267,22 +267,6 @@
       "informative": false
     },
     {
-      "id": "dom-paymentrequest-onmerchantvalidation",
-      "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-onmerchantvalidation",
-      "linkingText": [
-        "onmerchantvalidation"
-      ],
-      "localLinkingText": [
-        "PaymentRequest.onmerchantvalidation"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentRequest"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-paymentrequest-onshippingaddresschange",
       "href": "https://w3c.github.io/payment-request/#dom-paymentrequest-onshippingaddresschange",
       "linkingText": [
@@ -2347,18 +2331,6 @@
       "informative": false
     },
     {
-      "id": "dfn-merchantvalidation",
-      "href": "https://w3c.github.io/payment-request/#dfn-merchantvalidation",
-      "linkingText": [
-        "merchantvalidation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true
-    },
-    {
       "id": "dfn-shippingaddresschange",
       "href": "https://w3c.github.io/payment-request/#dfn-shippingaddresschange",
       "linkingText": [
@@ -2405,156 +2377,6 @@
       "for": [],
       "access": "private",
       "informative": true
-    },
-    {
-      "id": "dom-merchantvalidationevent",
-      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationevent",
-      "linkingText": [
-        "MerchantValidationEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-merchantvalidationevent-constructor",
-      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationevent-constructor",
-      "linkingText": [
-        "constructor()",
-        "constructor(type)",
-        "constructor(type, eventInitDict)"
-      ],
-      "localLinkingText": [
-        "MerchantValidationEvent.constructor",
-        "MerchantValidationEvent.constructor()",
-        "constructor"
-      ],
-      "type": "constructor",
-      "for": [
-        "MerchantValidationEvent"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-merchantvalidationevent-methodname",
-      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationevent-methodname",
-      "linkingText": [
-        "methodName"
-      ],
-      "localLinkingText": [
-        "MerchantValidationEvent.methodName"
-      ],
-      "type": "attribute",
-      "for": [
-        "MerchantValidationEvent"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-merchantvalidationevent-merchantvalidationevent",
-      "href": "https://w3c.github.io/payment-request/#dfn-merchantvalidationevent-merchantvalidationevent",
-      "linkingText": [
-        "MerchantValidationEvent.MerchantValidationEvent()",
-        "MerchantValidationEvent constructor"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dom-merchantvalidationevent-validationurl",
-      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationevent-validationurl",
-      "linkingText": [
-        "validationURL"
-      ],
-      "localLinkingText": [
-        "MerchantValidationEvent.validationURL"
-      ],
-      "type": "attribute",
-      "for": [
-        "MerchantValidationEvent"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-merchantvalidationevent-complete",
-      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationevent-complete",
-      "linkingText": [
-        "complete()",
-        "complete(merchantSessionPromise)"
-      ],
-      "localLinkingText": [
-        "MerchantValidationEvent.complete",
-        "MerchantValidationEvent.complete()",
-        "complete"
-      ],
-      "type": "method",
-      "for": [
-        "MerchantValidationEvent"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-waitforupdate",
-      "href": "https://w3c.github.io/payment-request/#dfn-waitforupdate",
-      "linkingText": [
-        "[[waitForUpdate]]"
-      ],
-      "localLinkingText": [],
-      "type": "idl",
-      "for": [
-        "MerchantValidationEvent"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-merchantvalidationeventinit",
-      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationeventinit",
-      "linkingText": [
-        "MerchantValidationEventInit"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-merchantvalidationeventinit-methodname",
-      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationeventinit-methodname",
-      "linkingText": [
-        "methodName"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MerchantValidationEventInit"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-merchantvalidationeventinit-validationurl",
-      "href": "https://w3c.github.io/payment-request/#dom-merchantvalidationeventinit-validationurl",
-      "linkingText": [
-        "validationURL"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MerchantValidationEventInit"
-      ],
-      "access": "public",
-      "informative": false
     },
     {
       "id": "dom-paymentmethodchangeevent",
@@ -2714,8 +2536,8 @@
       "informative": false
     },
     {
-      "id": "dfn-waitforupdate-0",
-      "href": "https://w3c.github.io/payment-request/#dfn-waitforupdate-0",
+      "id": "dfn-waitforupdate",
+      "href": "https://w3c.github.io/payment-request/#dfn-waitforupdate",
       "linkingText": [
         "[[waitForUpdate]]"
       ],
@@ -2737,31 +2559,6 @@
       "type": "dictionary",
       "for": [],
       "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dfn-validate-the-merchant",
-      "href": "https://w3c.github.io/payment-request/#dfn-validate-the-merchant",
-      "linkingText": [
-        "Validate the merchant",
-        "Merchant validation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-request-merchant-validation-algorithm",
-      "href": "https://w3c.github.io/payment-request/#dfn-request-merchant-validation-algorithm",
-      "linkingText": [
-        "request merchant validation algorithm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
       "informative": false
     },
     {
@@ -2881,18 +2678,6 @@
       "href": "https://w3c.github.io/payment-request/#dfn-abort-the-update",
       "linkingText": [
         "abort the update"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "dfn-validate-merchant-s-details-algorithm",
-      "href": "https://w3c.github.io/payment-request/#dfn-validate-merchant-s-details-algorithm",
-      "linkingText": [
-        "validate merchant's details algorithm"
       ],
       "localLinkingText": [],
       "type": "dfn",
