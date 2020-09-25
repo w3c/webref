@@ -1273,6 +1273,53 @@
             ],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "recommendedViewportScale",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "requestViewportScale",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "scale",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -3229,7 +3276,8 @@
       ],
       "XRView": [
         "XREye",
-        "XRRigidTransform"
+        "XRRigidTransform",
+        "undefined"
       ],
       "XRViewport": [],
       "XRRigidTransform": [
