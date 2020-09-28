@@ -6,7 +6,12 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "RTCEncodedVideoFrame",
+          "RTCEncodedAudioFrame"
+        ]
+      }
     },
     "idlNames": {
       "RTCInsertableStreams": {
@@ -280,7 +285,17 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "RTCEncodedAudioFrameMetadata": {
@@ -382,7 +397,17 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       }
     },
@@ -470,7 +495,12 @@
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "RTCEncodedVideoFrame",
+        "RTCEncodedAudioFrame"
+      ]
+    },
     "dependencies": {
       "RTCInsertableStreams": [
         "ReadableStream",
