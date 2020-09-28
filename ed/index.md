@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% September 27, 2020
+% September 28, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -5897,7 +5897,6 @@ Normative references to this spec from:
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [Save Data API](https://wicg.github.io/savedata/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
@@ -7058,7 +7057,6 @@ Normative references to this spec from:
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [Save Data API](https://wicg.github.io/savedata/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
@@ -8506,9 +8504,7 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [Save Data API](https://wicg.github.io/savedata/)
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -9589,20 +9585,35 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 
 
-## Save Data API {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## Save Data API {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
-- Crawled URL: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
-- Crawled version: 30 June 2020
+- Crawled URL: [[object Object]]([object Object])
 - Editor's Draft: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
 - Shortname: savedata
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/)
+The following network or parsing error occurred:
+`Error: Failed to launch the browser process!
+Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md
+ Error: Failed to launch the browser process!
+Inconsistency detected by ld.so: ../elf/dl-tls.c: 481: _dl_allocate_tls_init: Assertion `listp->slotinfo[cnt].gen <= GL(dl_tls_generation)' failed!
+
+
+TROUBLESHOOTING: https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md
+
+    at onClose (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/node/BrowserRunner.js:193:20)
+    at ChildProcess.helper_js_1.helper.addEventListener (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/node/BrowserRunner.js:184:79)
+    at ChildProcess.emit (events.js:203:15)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:248:12)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -11387,7 +11398,6 @@ Normative references to this spec from:
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [Save Data API](https://wicg.github.io/savedata/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
