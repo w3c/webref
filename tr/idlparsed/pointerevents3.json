@@ -120,10 +120,7 @@
               "union": false,
               "idlType": "long"
             },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
+            "default": null,
             "required": false
           },
           {
@@ -138,10 +135,7 @@
               "union": false,
               "idlType": "long"
             },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
+            "default": null,
             "required": false
           },
           {
@@ -160,6 +154,36 @@
               "type": "number",
               "value": "0"
             },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "altitudeAngle",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "azimuthAngle",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
             "required": false
           },
           {
@@ -423,6 +447,36 @@
           },
           {
             "type": "attribute",
+            "name": "altitudeAngle",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "azimuthAngle",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "pointerType",
             "idlType": {
               "type": "attribute-type",
@@ -472,7 +526,14 @@
               ]
             },
             "arguments": [],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SecureContext",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": ""
           },
           {
@@ -530,7 +591,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -562,7 +623,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -685,6 +746,28 @@
                 "idlType": "EventHandler"
               },
               "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onpointerrawupdate",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SecureContext",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "special": "",
               "readonly": false
             },
@@ -826,7 +909,9 @@
         "PointerEventInit",
         "PointerEvent"
       ],
-      "Element": [],
+      "Element": [
+        "undefined"
+      ],
       "GlobalEventHandlers": [
         "EventHandler"
       ],
@@ -836,6 +921,7 @@
       "MouseEventInit",
       "MouseEvent",
       "Element",
+      "undefined",
       "GlobalEventHandlers",
       "EventHandler",
       "Navigator"

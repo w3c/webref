@@ -11,7 +11,7 @@ enum RTCPriorityType {
 };
 
 partial dictionary RTCRtpEncodingParameters {
-  RTCPriorityType priority;
+  RTCPriorityType priority = "low";
   RTCPriorityType networkPriority;
 };
 
@@ -20,5 +20,5 @@ partial interface RTCDataChannel {
 };
 
 partial dictionary RTCDataChannelInit {
-  RTCPriorityType priority;
+  RTCPriorityType priority = "low";
 };

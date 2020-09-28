@@ -4,35 +4,54 @@
     "url": "https://www.w3.org/TR/mediacapture-streams/"
   },
   "links": {
+    "https://www.w3.org/Consortium/Legal/ipr-notice": [
+      "Copyright",
+      "Legal_Disclaimer",
+      "W3C_Trademarks"
+    ],
+    "https://www.w3.org/": [],
+    "https://www.csail.mit.edu/": [],
+    "https://www.ercim.eu/": [],
+    "https://www.keio.ac.jp/": [],
+    "https://ev.buaa.edu.cn/": [],
+    "https://www.w3.org/Consortium/Legal/copyright-documents": [],
     "https://www.w3.org/TR/": [],
-    "https://github.com/w3c/web-platform-tests/tree/master/mediacapture-streams": [],
-    "https://wpt.fyi/mediacapture-streams": [],
-    "https://www.w3.org/2019/06/mediacapture-diff.html": [],
-    "https://www.w3.org/2011/04/webrtc/": [],
-    "https://github.com/w3c/mediacapture-main/issues": [],
+    "https://www.w3.org/groups/wg/webrtc": [],
+    "https://github.com/w3c/mediacapture-main/issues/": [],
     "https://lists.w3.org/Archives/Public/public-webrtc/": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/47318/status": [],
-    "https://www.w3.org/2019/Process-20190301/": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
     "https://tools.ietf.org/html/bcp14": [],
     "https://html.spec.whatwg.org/": [
       "eventhandler",
-      "queuing-tasks",
+      "queue-a-task",
+      "event-handlers",
       "responsible-document",
       "current-settings-object",
       "allowed-to-use",
+      "video",
+      "audio",
       "window",
+      "gains-focus",
+      "media-timeline",
+      "potentially-playing",
       "dom-media-srcobject",
+      "htmlmediaelement",
       "audiotrack",
       "videotrack",
       "audiotracklist",
       "videotracklist",
-      "event-media-ended",
-      "dom-media-ended",
+      "htmlvideoelement",
+      "ended-playback",
+      "dom-media-readystate",
+      "dom-media-have_metadata",
       "dom-media-play",
+      "dom-media-autoplay",
+      "htmlaudioelement",
       "dom-media-fastseek",
       "dom-media-preload",
       "dom-media-buffered",
@@ -49,26 +68,26 @@
       "assigned-media-provider-object",
       "media-element-load-algorithm",
       "concept-relevant-global",
-      "gains-focus",
       "fully-active",
+      "top-level-browsing-context",
+      "nested-browsing-context",
+      "dom-localstorage",
       "browsing-context",
-      "concept-document-feature-policy"
+      "concept-document-permissions-policy"
     ],
     "https://dom.spec.whatwg.org/": [
       "concept-event-fire",
-      "interface-event",
-      "interface-eventtarget",
+      "event",
+      "dictdef-eventinit",
+      "eventtarget",
       "concept-document"
     ],
-    "https://www.w3.org/TR/WebIDL-1/": [
-      "idl-DOMException"
-    ],
     "https://heycam.github.io/webidl/": [
+      "idl-DOMException",
       "Exposed",
-      "Constructor",
       "idl-sequence",
       "idl-DOMString",
-      "idl-void",
+      "idl-undefined",
       "idl-boolean",
       "idl-promise",
       "idl-long",
@@ -77,29 +96,46 @@
       "SecureContext",
       "Default",
       "idl-object",
-      "default-tojson-operation",
+      "default-tojson-steps",
+      "exceptiondef-typeerror",
+      "dom-domexception-name",
+      "invalidstateerror",
+      "notfounderror",
+      "notreadableerror",
+      "aborterror",
+      "notallowederror",
       "dfn-present",
       "Clamp",
       "idl-unsigned-long"
     ],
-    "https://wicg.github.io/feature-policy/": [
+    "https://www.w3.org/TR/webrtc/": [
+      "dom-rtcpeerconnection"
+    ],
+    "https://www.w3.org/TR/permissions/": [
+      "reading-current-states",
+      "request-permission-to-use",
+      "dom-permissionstate-granted",
+      "dom-permissionname-camera",
+      "dom-permissionname-microphone",
+      "dom-permissionstate-denied",
+      "dictdef-permissiondescriptor",
+      "dom-permissiondescriptor-name"
+    ],
+    "https://www.w3.org/TR/webaudio/": [
+      "mediastreamaudiosourcenode"
+    ],
+    "https://www.w3.org/TR/permissions-policy-1/": [
       "policy-controlled-feature",
       "default-allowlist"
     ],
+    "https://github.com/w3c/mediacapture-main/issues": [],
     "https://httpwg.org/specs/rfc6265.html": [],
-    "https://tc39.github.io/ecma262/": [],
-    "https://www.ecma-international.org/ecma-262/6.0/": [],
-    "https://www.w3.org/TR/html52/": [],
-    "https://www.w3.org/TR/image-capture/": [],
-    "https://www.w3.org/TR/mediacapture-fromelement/": [],
-    "https://www.w3.org/TR/mediastream-recording/": [],
-    "https://www.w3.org/TR/mixed-content/": [],
-    "https://www.w3.org/TR/permissions/": [],
+    "https://tc39.es/ecma262/": [],
     "https://tools.ietf.org/html/rfc2119": [],
     "https://tools.ietf.org/html/rfc4122": [],
     "https://tools.ietf.org/html/rfc8174": [],
-    "https://www.w3.org/TR/webaudio/": [],
-    "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/": [],
-    "https://www.w3.org/TR/webrtc/": []
+    "https://www.w3.org/TR/image-capture/": [],
+    "https://www.w3.org/TR/mediacapture-fromelement/": [],
+    "https://www.w3.org/TR/mediastream-recording/": []
   }
 }

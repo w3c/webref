@@ -225,6 +225,34 @@
       "informative": false
     },
     {
+      "id": "dom-pointereventinit-altitudeangle",
+      "href": "https://www.w3.org/TR/pointerevents3/#dom-pointereventinit-altitudeangle",
+      "linkingText": [
+        "altitudeAngle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointereventinit-azimuthangle",
+      "href": "https://www.w3.org/TR/pointerevents3/#dom-pointereventinit-azimuthangle",
+      "linkingText": [
+        "azimuthAngle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PointerEventInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-pointereventinit-pointertype",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointereventinit-pointertype",
       "linkingText": [
@@ -284,12 +312,15 @@
       "id": "dom-pointerevent-constructor",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-constructor",
       "linkingText": [
-        "PointerEvent.constructor()",
-        "PointerEvent.constructor",
         "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "PointerEvent.constructor",
+        "PointerEvent.constructor()",
         "constructor"
       ],
-      "localLinkingText": [],
       "type": "constructor",
       "for": [
         "PointerEvent"
@@ -301,10 +332,11 @@
       "id": "dom-pointerevent-pointerid",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-pointerid",
       "linkingText": [
-        "PointerEvent.pointerId",
         "pointerId"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PointerEvent.pointerId"
+      ],
       "type": "attribute",
       "for": [
         "PointerEvent"
@@ -316,10 +348,11 @@
       "id": "dom-pointerevent-width",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-width",
       "linkingText": [
-        "PointerEvent.width",
         "width"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PointerEvent.width"
+      ],
       "type": "attribute",
       "for": [
         "PointerEvent"
@@ -331,10 +364,11 @@
       "id": "dom-pointerevent-height",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-height",
       "linkingText": [
-        "PointerEvent.height",
         "height"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PointerEvent.height"
+      ],
       "type": "attribute",
       "for": [
         "PointerEvent"
@@ -346,10 +380,11 @@
       "id": "dom-pointerevent-pressure",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-pressure",
       "linkingText": [
-        "PointerEvent.pressure",
         "pressure"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PointerEvent.pressure"
+      ],
       "type": "attribute",
       "for": [
         "PointerEvent"
@@ -361,10 +396,11 @@
       "id": "dom-pointerevent-tangentialpressure",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-tangentialpressure",
       "linkingText": [
-        "PointerEvent.tangentialPressure",
         "tangentialPressure"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PointerEvent.tangentialPressure"
+      ],
       "type": "attribute",
       "for": [
         "PointerEvent"
@@ -376,10 +412,11 @@
       "id": "dom-pointerevent-tiltx",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-tiltx",
       "linkingText": [
-        "PointerEvent.tiltX",
         "tiltX"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PointerEvent.tiltX"
+      ],
       "type": "attribute",
       "for": [
         "PointerEvent"
@@ -391,10 +428,11 @@
       "id": "dom-pointerevent-tilty",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-tilty",
       "linkingText": [
-        "PointerEvent.tiltY",
         "tiltY"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PointerEvent.tiltY"
+      ],
       "type": "attribute",
       "for": [
         "PointerEvent"
@@ -406,10 +444,43 @@
       "id": "dom-pointerevent-twist",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-twist",
       "linkingText": [
-        "PointerEvent.twist",
         "twist"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PointerEvent.twist"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-altitudeangle",
+      "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-altitudeangle",
+      "linkingText": [
+        "altitudeAngle"
+      ],
+      "localLinkingText": [
+        "PointerEvent.altitudeAngle"
+      ],
+      "type": "attribute",
+      "for": [
+        "PointerEvent"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pointerevent-azimuthangle",
+      "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-azimuthangle",
+      "linkingText": [
+        "azimuthAngle"
+      ],
+      "localLinkingText": [
+        "PointerEvent.azimuthAngle"
+      ],
       "type": "attribute",
       "for": [
         "PointerEvent"
@@ -421,10 +492,11 @@
       "id": "dom-pointerevent-pointertype",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-pointertype",
       "linkingText": [
-        "PointerEvent.pointerType",
         "pointerType"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PointerEvent.pointerType"
+      ],
       "type": "attribute",
       "for": [
         "PointerEvent"
@@ -436,10 +508,11 @@
       "id": "dom-pointerevent-isprimary",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-isprimary",
       "linkingText": [
-        "PointerEvent.isPrimary",
         "isPrimary"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PointerEvent.isPrimary"
+      ],
       "type": "attribute",
       "for": [
         "PointerEvent"
@@ -451,12 +524,13 @@
       "id": "dom-pointerevent-getcoalescedevents",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-getcoalescedevents",
       "linkingText": [
-        "PointerEvent.getCoalescedEvents()",
+        "getCoalescedEvents()"
+      ],
+      "localLinkingText": [
         "PointerEvent.getCoalescedEvents",
-        "getCoalescedEvents()",
+        "PointerEvent.getCoalescedEvents()",
         "getCoalescedEvents"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PointerEvent"
@@ -468,12 +542,13 @@
       "id": "dom-pointerevent-getpredictedevents",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-pointerevent-getpredictedevents",
       "linkingText": [
-        "PointerEvent.getPredictedEvents()",
+        "getPredictedEvents()"
+      ],
+      "localLinkingText": [
         "PointerEvent.getPredictedEvents",
-        "getPredictedEvents()",
+        "PointerEvent.getPredictedEvents()",
         "getPredictedEvents"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PointerEvent"
@@ -762,12 +837,14 @@
       "id": "dom-element-setpointercapture",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-element-setpointercapture",
       "linkingText": [
-        "Element.setPointerCapture()",
-        "Element.setPointerCapture",
         "setPointerCapture()",
+        "setPointerCapture(pointerId)"
+      ],
+      "localLinkingText": [
+        "Element.setPointerCapture",
+        "Element.setPointerCapture()",
         "setPointerCapture"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "Element"
@@ -779,12 +856,14 @@
       "id": "dom-element-releasepointercapture",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-element-releasepointercapture",
       "linkingText": [
-        "Element.releasePointerCapture()",
-        "Element.releasePointerCapture",
         "releasePointerCapture()",
+        "releasePointerCapture(pointerId)"
+      ],
+      "localLinkingText": [
+        "Element.releasePointerCapture",
+        "Element.releasePointerCapture()",
         "releasePointerCapture"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "Element"
@@ -796,12 +875,14 @@
       "id": "dom-element-haspointercapture",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-element-haspointercapture",
       "linkingText": [
-        "Element.hasPointerCapture()",
-        "Element.hasPointerCapture",
         "hasPointerCapture()",
+        "hasPointerCapture(pointerId)"
+      ],
+      "localLinkingText": [
+        "Element.hasPointerCapture",
+        "Element.hasPointerCapture()",
         "hasPointerCapture"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "Element"
@@ -822,13 +903,30 @@
       "informative": false
     },
     {
+      "id": "dom-globaleventhandlers-onpointerrawupdate",
+      "href": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerrawupdate",
+      "linkingText": [
+        "onpointerrawupdate"
+      ],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerrawupdate"
+      ],
+      "type": "attribute",
+      "for": [
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-globaleventhandlers-ongotpointercapture",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-ongotpointercapture",
       "linkingText": [
-        "GlobalEventHandlers.ongotpointercapture",
         "ongotpointercapture"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "GlobalEventHandlers.ongotpointercapture"
+      ],
       "type": "attribute",
       "for": [
         "GlobalEventHandlers"
@@ -840,10 +938,11 @@
       "id": "dom-globaleventhandlers-onlostpointercapture",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onlostpointercapture",
       "linkingText": [
-        "GlobalEventHandlers.onlostpointercapture",
         "onlostpointercapture"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "GlobalEventHandlers.onlostpointercapture"
+      ],
       "type": "attribute",
       "for": [
         "GlobalEventHandlers"
@@ -855,10 +954,11 @@
       "id": "dom-globaleventhandlers-onpointerdown",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerdown",
       "linkingText": [
-        "GlobalEventHandlers.onpointerdown",
         "onpointerdown"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerdown"
+      ],
       "type": "attribute",
       "for": [
         "GlobalEventHandlers"
@@ -870,10 +970,11 @@
       "id": "dom-globaleventhandlers-onpointermove",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointermove",
       "linkingText": [
-        "GlobalEventHandlers.onpointermove",
         "onpointermove"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointermove"
+      ],
       "type": "attribute",
       "for": [
         "GlobalEventHandlers"
@@ -885,10 +986,11 @@
       "id": "dom-globaleventhandlers-onpointerup",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerup",
       "linkingText": [
-        "GlobalEventHandlers.onpointerup",
         "onpointerup"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerup"
+      ],
       "type": "attribute",
       "for": [
         "GlobalEventHandlers"
@@ -900,10 +1002,11 @@
       "id": "dom-globaleventhandlers-onpointercancel",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointercancel",
       "linkingText": [
-        "GlobalEventHandlers.onpointercancel",
         "onpointercancel"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointercancel"
+      ],
       "type": "attribute",
       "for": [
         "GlobalEventHandlers"
@@ -915,10 +1018,11 @@
       "id": "dom-globaleventhandlers-onpointerover",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerover",
       "linkingText": [
-        "GlobalEventHandlers.onpointerover",
         "onpointerover"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerover"
+      ],
       "type": "attribute",
       "for": [
         "GlobalEventHandlers"
@@ -930,10 +1034,11 @@
       "id": "dom-globaleventhandlers-onpointerout",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerout",
       "linkingText": [
-        "GlobalEventHandlers.onpointerout",
         "onpointerout"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerout"
+      ],
       "type": "attribute",
       "for": [
         "GlobalEventHandlers"
@@ -945,10 +1050,11 @@
       "id": "dom-globaleventhandlers-onpointerenter",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerenter",
       "linkingText": [
-        "GlobalEventHandlers.onpointerenter",
         "onpointerenter"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerenter"
+      ],
       "type": "attribute",
       "for": [
         "GlobalEventHandlers"
@@ -960,10 +1066,11 @@
       "id": "dom-globaleventhandlers-onpointerleave",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-globaleventhandlers-onpointerleave",
       "linkingText": [
-        "GlobalEventHandlers.onpointerleave",
         "onpointerleave"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "GlobalEventHandlers.onpointerleave"
+      ],
       "type": "attribute",
       "for": [
         "GlobalEventHandlers"
@@ -987,10 +1094,11 @@
       "id": "dom-navigator-maxtouchpoints",
       "href": "https://www.w3.org/TR/pointerevents3/#dom-navigator-maxtouchpoints",
       "linkingText": [
-        "Navigator.maxTouchPoints",
         "maxTouchPoints"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "Navigator.maxTouchPoints"
+      ],
       "type": "attribute",
       "for": [
         "Navigator"
