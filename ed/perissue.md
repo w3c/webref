@@ -2,14 +2,56 @@
 % Reffy
 % September 29, 2020
 
-331 specifications were crawled in this report.
+374 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
 
 - [ContentEditable](https://w3c.github.io/contentEditable/)
+- [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
+- [WebGL EXT_blend_minmax Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
+- [WebGL EXT_clip_cull_distance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
+- [WebGL EXT_color_buffer_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
+- [WebGL EXT_color_buffer_half_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
+- [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
+- [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
+- [WebGL EXT_float_blend Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
+- [WebGL EXT_frag_depth Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
+- [WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
+- [WebGL EXT_sRGB Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
+- [WebGL EXT_texture_compression_bptc Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
+- [WebGL EXT_texture_compression_rgtc Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
+- [WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
+- [WebGL EXT_texture_norm16 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
+- [WebGL KHR_parallel_shader_compile Extension Specification](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
+- [WebGL OES_draw_buffers_indexed Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
+- [WebGL OES_element_index_uint Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
+- [WebGL OES_fbo_render_mipmap Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
+- [WebGL OES_standard_derivatives Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
+- [WebGL OES_texture_float Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
+- [WebGL OES_texture_float_linear Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
+- [WebGL OES_texture_half_float Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
+- [WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
+- [WebGL OES_vertex_array_object Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
+- [WebGL OVR_multiview2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
+- [WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
+- [WebGL WEBGL_color_buffer_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
+- [WebGL WEBGL_compressed_texture_astc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
+- [WebGL WEBGL_compressed_texture_etc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
+- [WebGL WEBGL_compressed_texture_etc1 Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
+- [WebGL WEBGL_compressed_texture_pvrtc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
+- [WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
+- [WebGL WEBGL_compressed_texture_s3tc_srgb Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
+- [WebGL WEBGL_debug_renderer_info Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
+- [WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
+- [WebGL WEBGL_depth_texture Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/)
+- [WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
+- [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
+- [WebGL WEBGL_lose_context Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
+- [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
+- [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 1 specification found
+=> 43 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -38,9 +80,51 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [SVG Markers](https://svgwg.org/specs/markers/)
 - [SVG Paths](https://svgwg.org/specs/paths/)
+- [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
+- [WebGL EXT_blend_minmax Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
+- [WebGL EXT_clip_cull_distance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
+- [WebGL EXT_color_buffer_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
+- [WebGL EXT_color_buffer_half_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
+- [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
+- [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
+- [WebGL EXT_float_blend Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
+- [WebGL EXT_frag_depth Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
+- [WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
+- [WebGL EXT_sRGB Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
+- [WebGL EXT_texture_compression_bptc Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
+- [WebGL EXT_texture_compression_rgtc Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
+- [WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
+- [WebGL EXT_texture_norm16 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
+- [WebGL KHR_parallel_shader_compile Extension Specification](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
+- [WebGL OES_draw_buffers_indexed Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
+- [WebGL OES_element_index_uint Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
+- [WebGL OES_fbo_render_mipmap Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
+- [WebGL OES_standard_derivatives Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
+- [WebGL OES_texture_float Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
+- [WebGL OES_texture_float_linear Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
+- [WebGL OES_texture_half_float Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
+- [WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
+- [WebGL OES_vertex_array_object Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
+- [WebGL OVR_multiview2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
+- [WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
+- [WebGL WEBGL_color_buffer_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
+- [WebGL WEBGL_compressed_texture_astc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
+- [WebGL WEBGL_compressed_texture_etc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
+- [WebGL WEBGL_compressed_texture_etc1 Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
+- [WebGL WEBGL_compressed_texture_pvrtc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
+- [WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
+- [WebGL WEBGL_compressed_texture_s3tc_srgb Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
+- [WebGL WEBGL_debug_renderer_info Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
+- [WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
+- [WebGL WEBGL_depth_texture Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/)
+- [WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
+- [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
+- [WebGL WEBGL_lose_context Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
+- [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
+- [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - [WebRTC Priority Control API](https://w3c.github.io/webrtc-priority/)
 
-=> 7 specifications found
+=> 49 specifications found
 
 
 
@@ -69,6 +153,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 ## List of WebIDL names defined in more than one spec
 
+- `GLuint64EXT` defined in [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/) and [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
 - `GamepadMappingType` defined in [Gamepad](https://w3c.github.io/gamepad/) and [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 - `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - `MessageEventSource` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/) and [Portals](https://wicg.github.io/portals/)
@@ -76,7 +161,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `RTCIceParameters` defined in [IceTransport Extensions for WebRTC](https://w3c.github.io/webrtc-ice/) and [WebRTC 1.0: Real-time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - `SVGMarkerElement` defined in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) and [SVG Markers](https://svgwg.org/specs/markers/)
 
-=> 6 WebIDL names found
+=> 7 WebIDL names found
 
 "There can be only one"...
 
@@ -93,6 +178,48 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [SVG Markers](https://svgwg.org/specs/markers/) uses:
     * `DOMPoint` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
     * `DOMPointReadOnly` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/) uses:
+    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLsizei` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLintptr` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLuint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/) uses:
+    * `WebGLObject` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/) uses:
+    * `WebGLQuery` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebGL OES_draw_buffers_indexed Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/) uses:
+    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLuint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLboolean` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebGL OES_vertex_array_object Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/) uses:
+    * `WebGLObject` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLboolean` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebGL OVR_multiview2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/) uses:
+    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLsizei` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/) uses `WebGLShader` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/) uses `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/) uses:
+    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLsizei` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLuint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLintptr` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/) uses:
+    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLuint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLsizei` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/) uses:
+    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLuint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLsizei` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/) uses `XRHitTestResult` but does not reference [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/) uses:
     * `WebGLRenderingContext` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -101,7 +228,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/) uses `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 15 missing references for IDL definitions found in 11 specifications
+=> 48 missing references for IDL definitions found in 22 specifications
 
 
 ## Missing references based on document links
@@ -267,6 +394,15 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/) but does not list it in its references
     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/) but does not list it in its references
+- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/) links to:
+    * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-conditional/`](https://www.w3.org/TR/css-conditional/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade-4/`](https://www.w3.org/TR/css-cascade-4/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/) but does not list it in its references
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
@@ -286,17 +422,17 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/) but does not list it in its references
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/) links to [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/) links to:
-    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
-    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/) but does not list it in its references
-    * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/) but does not list it in its references
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
     * [`https://www.w3.org/TR/2019/WD-css-contain-2-20191111/`](https://www.w3.org/TR/2019/WD-css-contain-2-20191111/) but does not list it in its references
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/) links to:
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/) but does not list it in its references
+    * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/) links to [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
@@ -379,16 +515,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
-- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid/) links to:
-    * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-speech/`](https://www.w3.org/TR/css3-speech/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
-    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
-    * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
-    * [`https://www.w3.org/TR/2019/WD-css-grid-2-20191203/`](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/) but does not list it in its references
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/) links to:
     * [`https://www.w3.org/TR/css-grid-1/`](https://www.w3.org/TR/css-grid-1/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
@@ -399,6 +525,16 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/) but does not list it in its references
     * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
+- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid/) links to:
+    * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-speech/`](https://www.w3.org/TR/css3-speech/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
+    * [`https://www.w3.org/TR/2019/WD-css-grid-2-20191203/`](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/) but does not list it in its references
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/) links to:
     * [`https://www.w3.org/TR/css-animations/`](https://www.w3.org/TR/css-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/css-transitions/`](https://www.w3.org/TR/css-transitions/) but does not list it in its references
@@ -852,7 +988,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://drafts.css-houdini.org/worklets/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 618 missing references for links found in 171 specifications
+=> 626 missing references for links found in 172 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -939,6 +1075,10 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
+- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/) links to:
+    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+    * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Color Module Level 3](https://drafts.csswg.org/css-color-3/) links to:
     * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/) but related reference "SVG11" uses URL [`http://www.w3.org/TR/2011/REC-SVG11-20110816/`](http://www.w3.org/TR/2011/REC-SVG11-20110816/)
@@ -947,10 +1087,10 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/) links to:
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/2008/REC-WCAG20-20081211/`](https://www.w3.org/TR/2008/REC-WCAG20-20081211/) but related reference "WCAG20" uses URL [`https://www.w3.org/TR/WCAG20/`](https://www.w3.org/TR/WCAG20/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/) links to:
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/) links to:
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://w3c.github.io/IntersectionObserver/`](https://w3c.github.io/IntersectionObserver/) but related reference "INTERSECTION-OBSERVER" uses URL [`https://www.w3.org/TR/intersection-observer/`](https://www.w3.org/TR/intersection-observer/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/) links to:
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/) links to:
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://w3c.github.io/IntersectionObserver/`](https://w3c.github.io/IntersectionObserver/) but related reference "INTERSECTION-OBSERVER" uses URL [`https://www.w3.org/TR/intersection-observer/`](https://www.w3.org/TR/intersection-observer/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -985,10 +1125,10 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2014/WD-dpub-latinreq-20140313/`](https://www.w3.org/TR/2014/WD-dpub-latinreq-20140313/) but related reference "DPUB-LATINREQ" uses URL [`https://www.w3.org/TR/dpub-latinreq/`](https://www.w3.org/TR/dpub-latinreq/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid/) links to:
+- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/) links to:
     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/) links to:
+- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid/) links to:
     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1283,6 +1423,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 344 inconsistent references for links found in 179 specifications
+=> 347 inconsistent references for links found in 180 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

@@ -1,0 +1,173 @@
+{
+  "spec": {
+    "title": "WebGL EXT_disjoint_timer_query_webgl2 Extension Specification",
+    "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "GLuint64EXT": {
+        "type": "typedef",
+        "name": "GLuint64EXT",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "unsigned long long"
+        },
+        "extAttrs": []
+      },
+      "EXT_disjoint_timer_query_webgl2": {
+        "type": "interface",
+        "name": "EXT_disjoint_timer_query_webgl2",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "const",
+            "name": "QUERY_COUNTER_BITS_EXT",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GLenum"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0x8864"
+            }
+          },
+          {
+            "type": "const",
+            "name": "TIME_ELAPSED_EXT",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GLenum"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0x88BF"
+            }
+          },
+          {
+            "type": "const",
+            "name": "TIMESTAMP_EXT",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GLenum"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0x8E28"
+            }
+          },
+          {
+            "type": "const",
+            "name": "GPU_DISJOINT_EXT",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GLenum"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0x8FBB"
+            }
+          },
+          {
+            "type": "operation",
+            "name": "queryCounterEXT",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "query",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebGLQuery"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "target",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLenum"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNoInterfaceObject",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "EXT_disjoint_timer_query_webgl2": [
+        "WebGLQuery",
+        "GLenum"
+      ]
+    },
+    "externalDependencies": [
+      "WebGLQuery",
+      "GLenum"
+    ],
+    "hasObsoleteIdl": false
+  }
+}
