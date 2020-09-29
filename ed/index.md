@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% September 28, 2020
+% September 29, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -3215,7 +3215,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Crawled URL: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
-- Crawled version: 18 September 2020
+- Crawled version: 28 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
 - Latest published version: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Shortname: css-inline-3
@@ -4407,7 +4407,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-shadow-parts-1/](https://www.w3.org/TR/css-shadow-parts-1/)
 - Crawled URL: [https://drafts.csswg.org/css-shadow-parts/](https://drafts.csswg.org/css-shadow-parts/)
-- Crawled version: 15 October 2019
+- Crawled version: 15 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-shadow-parts/](https://drafts.csswg.org/css-shadow-parts/)
 - Latest published version: [https://www.w3.org/TR/css-shadow-parts-1/](https://www.w3.org/TR/css-shadow-parts-1/)
 - Shortname: css-shadow-parts-1
@@ -4808,7 +4808,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Crawled URL: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
-- Crawled version: 18 September 2020
+- Crawled version: 28 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Shortname: css-text-3
@@ -6324,7 +6324,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Crawled URL: [https://wicg.github.io/file-system-access/](https://wicg.github.io/file-system-access/)
-- Crawled version: 25 September 2020
+- Crawled version: 28 September 2020
 - Editor's Draft: [https://wicg.github.io/native-file-system/](https://wicg.github.io/native-file-system/)
 - Shortname: native-file-system
 
@@ -9131,7 +9131,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Crawled URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
-- Crawled version: 21 September 2020
+- Crawled version: 28 September 2020
 - Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Shortname: portals
 
