@@ -1,11 +1,11 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2020-09-30T12:44:18.010Z",
+  "date": "2020-09-30T18:40:26.524Z",
   "options": {},
   "stats": {
     "crawled": 374,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -709,7 +709,7 @@
         "https://gpuweb.github.io/gpuweb/"
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
-      "date": "29 September 2020",
+      "date": "30 September 2020",
       "links": "links/gpuweb.json",
       "refs": "refs/gpuweb.json",
       "idl": "idl/gpuweb.idl",
@@ -1045,7 +1045,7 @@
         "https://mimesniff.spec.whatwg.org/"
       ],
       "crawled": "https://mimesniff.spec.whatwg.org/",
-      "date": "29 June 2020",
+      "date": "30 September 2020",
       "links": "links/mimesniff.json",
       "refs": "refs/mimesniff.json",
       "generator": "bikeshed",
@@ -1274,7 +1274,7 @@
         "https://url.spec.whatwg.org/"
       ],
       "crawled": "https://url.spec.whatwg.org/",
-      "date": "29 September 2020",
+      "date": "30 September 2020",
       "links": "links/url.json",
       "refs": "refs/url.json",
       "idl": "idl/url.idl",
@@ -1557,7 +1557,7 @@
         "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
       ],
       "crawled": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
-      "date": "17 August 2020",
+      "date": "30 September 2020",
       "links": "links/trusted-types.json",
       "refs": "refs/trusted-types.json",
       "idl": "idl/trusted-types.idl",
@@ -3165,15 +3165,13 @@
       "versions": [
         "https://wicg.github.io/web-transport/"
       ],
-      "crawled": "https://w3c.github.io/web-transport/",
-      "date": "24 September 2020",
-      "links": "links/web-transport.json",
-      "refs": "refs/web-transport.json",
-      "idl": "idl/web-transport.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/web-transport.json",
-      "headings": "headings/web-transport.json",
-      "idlparsed": "idlparsed/web-transport.json"
+      "crawled": {
+        "url": "https://wicg.github.io/web-transport/",
+        "repository": "https://github.com/WICG/web-transport",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37 Error: Evaluation failed: TypeError: Cannot read property 'getTitle' of undefined\n    at __puppeteer_evaluation_script__:4:37\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:217:19)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
     },
     {
       "url": "https://wicg.github.io/webhid/",
@@ -9886,7 +9884,7 @@
         "https://w3c.github.io/pointerevents/"
       ],
       "crawled": "https://w3c.github.io/pointerevents/",
-      "date": "16 September 2020",
+      "date": "30 September 2020",
       "links": "links/pointerevents3.json",
       "refs": "refs/pointerevents3.json",
       "idl": "idl/pointerevents.idl",
@@ -11309,7 +11307,7 @@
         "https://w3c.github.io/screen-wake-lock/"
       ],
       "crawled": "https://w3c.github.io/screen-wake-lock/",
-      "date": "28 September 2020",
+      "date": "30 September 2020",
       "links": "links/wake-lock.json",
       "refs": "refs/wake-lock.json",
       "idl": "idl/wake-lock.idl",

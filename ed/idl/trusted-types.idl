@@ -60,31 +60,31 @@ typedef [StringContext=TrustedScript] DOMString ScriptString;
 typedef [StringContext=TrustedScriptURL] USVString ScriptURLString;
 typedef (TrustedHTML or TrustedScript or TrustedScriptURL) TrustedType;
 
-partial interface mixin Window {
+partial interface Window {
   [SecureContext] readonly attribute TrustedTypePolicyFactory trustedTypes;
 };
 
-partial interface mixin Document {
+partial interface Document {
   [CEReactions] void write(HTMLString... text);
   [CEReactions] void writeln(HTMLString... text);
 };
 
-partial interface mixin HTMLScriptElement : HTMLElement {
+partial interface HTMLScriptElement {
  [CEReactions] attribute [TreatNullAs=EmptyString] ScriptString innerText;
  [CEReactions] attribute ScriptString? textContent;
  [CEReactions] attribute ScriptURLString src;
  [CEReactions] attribute ScriptString text;
 };
 
-partial interface mixin HTMLIFrameElement : HTMLElement {
+partial interface HTMLIFrameElement {
   [CEReactions] attribute HTMLString srcdoc;
 };
 
-partial interface HTMLEmbedElement : HTMLElement {
+partial interface HTMLEmbedElement {
   [CEReactions] attribute ScriptURLString src;
 };
 
-partial interface HTMLObjectElement : HTMLElement {
+partial interface HTMLObjectElement {
   [CEReactions] attribute ScriptURLString data;
   [CEReactions] attribute ScriptURLString codeBase; // obsolete
 };
