@@ -13032,7 +13032,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/web-transport/](https://wicg.github.io/web-transport/)
 - Crawled URL: [https://w3c.github.io/web-transport/](https://w3c.github.io/web-transport/)
-- Crawled version: 18 September 2020
+- Crawled version: 24 September 2020
 - Editor's Draft: [https://wicg.github.io/web-transport/](https://wicg.github.io/web-transport/)
 - Shortname: web-transport
 

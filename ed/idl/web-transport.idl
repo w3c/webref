@@ -4,8 +4,9 @@
 // Source: WebTransport (https://w3c.github.io/web-transport/)
 
 interface mixin UnidirectionalStreamsTransport {
-  Promise<SendStream> createSendStream(optional SendStreamParameters parameters = {});
-  ReadableStream receiveStreams();
+  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});
+  /* a ReadableStream of ReceiveStream objects */
+  readonly attribute ReadableStream incomingUnidirectionalStreams;
 };
 
 dictionary SendStreamParameters {
@@ -13,13 +14,15 @@ dictionary SendStreamParameters {
 
 interface mixin BidirectionalStreamsTransport {
     Promise<BidirectionalStream> createBidirectionalStream();
-    ReadableStream receiveBidirectionalStreams();
+    /* a ReadableStream of BidirectionalStream objects */
+    readonly attribute ReadableStream incomingBidirectionalStreams;
 };
 
 interface mixin DatagramTransport {
     readonly attribute unsigned short maxDatagramSize;
-    WritableStream sendDatagrams();
-    ReadableStream receiveDatagrams();
+    /* both streams are streams of Uint8Array objects */
+    readonly attribute ReadableStream readableDatagrams;
+    readonly attribute WritableStream writableDatagrams;
 };
 
 [Exposed=(Window,Worker)]
@@ -78,6 +81,7 @@ dictionary StreamAbortInfo {
 
 [ Exposed=(Window,Worker) ]
 interface mixin IncomingStream {
+  /* a ReadableStream of Uint8Array */
   readonly attribute ReadableStream readable;
   readonly attribute Promise<StreamAbortInfo> readingAborted;
   void abortReading(optional StreamAbortInfo abortInfo = {});
