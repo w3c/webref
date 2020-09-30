@@ -1791,7 +1791,6 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -1833,7 +1832,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -8294,7 +8295,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
 - Crawled URL: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
-- Crawled version: 29 September 2020
+- Crawled version: 30 September 2020
 - Editor's Draft: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
 - Latest published version: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
 - Shortname: image-capture
@@ -9389,7 +9390,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://quirks.spec.whatwg.org/](https://quirks.spec.whatwg.org/)
 - Crawled URL: [https://quirks.spec.whatwg.org/](https://quirks.spec.whatwg.org/)
-- Crawled version: 29 June 2020
+- Crawled version: 30 September 2020
 - Editor's Draft: [https://quirks.spec.whatwg.org/](https://quirks.spec.whatwg.org/)
 - Shortname: quirks
 
@@ -10285,6 +10286,7 @@ Normative references to this spec from:
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 - [WebTransport](https://w3c.github.io/web-transport/)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -13372,7 +13374,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
 - Crawled URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
-- Crawled version: 18 August 2020
+- Crawled version: 30 September 2020
 - Editor's Draft: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
 - Shortname: xhr
 
