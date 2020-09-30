@@ -34,7 +34,7 @@
         "members": [
           {
             "type": "operation",
-            "name": "createSendStream",
+            "name": "createUnidirectionalStream",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -76,19 +76,19 @@
             "special": ""
           },
           {
-            "type": "operation",
-            "name": "receiveStreams",
+            "type": "attribute",
+            "name": "incomingUnidirectionalStreams",
             "idlType": {
-              "type": "return-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "ReadableStream"
             },
-            "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [],
@@ -132,19 +132,19 @@
             "special": ""
           },
           {
-            "type": "operation",
-            "name": "receiveBidirectionalStreams",
+            "type": "attribute",
+            "name": "incomingBidirectionalStreams",
             "idlType": {
-              "type": "return-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "ReadableStream"
             },
-            "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [],
@@ -171,34 +171,34 @@
             "readonly": true
           },
           {
-            "type": "operation",
-            "name": "sendDatagrams",
+            "type": "attribute",
+            "name": "readableDatagrams",
             "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "WritableStream"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "receiveDatagrams",
-            "idlType": {
-              "type": "return-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "ReadableStream"
             },
-            "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "writableDatagrams",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WritableStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [],
@@ -1028,8 +1028,8 @@
         "ReadableStream"
       ],
       "DatagramTransport": [
-        "WritableStream",
-        "ReadableStream"
+        "ReadableStream",
+        "WritableStream"
       ],
       "WebTransport": [
         "WebTransportOptions",
