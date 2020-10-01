@@ -1,0 +1,70 @@
+{
+  "spec": {
+    "title": "CSS Color Module Level 5",
+    "url": "https://drafts.csswg.org/css-color-5/"
+  },
+  "properties": {},
+  "descriptors": {},
+  "valuespaces": {
+    "<colorspace>": {
+      "value": "srgb | hsl | hwb | xyz | lab | lch"
+    },
+    "<color-mix()>": {
+      "value": "color-mix(<colorspace>?, <mix-component>#{2})"
+    },
+    "<mix-component>": {
+      "value": "<color> [ <percentage> | <color-adjuster>+ ]?"
+    },
+    "<color-adjuster>": {
+      "value": "[ [ <srgb-adjuster> | <hsl-adjuster> | <hwb-adjuster> | <xyz-adjuster> | <lab-adjuster> | <lch-adjuster> ] | alpha ] <percentage>?"
+    },
+    "<srgb-adjuster>": {
+      "value": "red || green || blue"
+    },
+    "<hsl-adjuster>": {
+      "value": "<hue-adjuster> || saturation || lightness"
+    },
+    "<hwb-adjuster>": {
+      "value": "<hue-adjuster> || whiteness || blackness"
+    },
+    "<xyz-adjuster>": {
+      "value": "x || y || z"
+    },
+    "<lab-adjuster>": {
+      "value": "lightness || a || b"
+    },
+    "<lch-adjuster>": {
+      "value": "lightness || chroma || <hue-adjuster>"
+    },
+    "<hue-adjuster>": {
+      "value": "hue [shorter | longer | increasing | decreasing | specified ]?"
+    },
+    "<color-contrast()>": {
+      "value": "color-contrast( <color> vs <color># )"
+    },
+    "<color-adjust()>": {
+      "value": "color-adjust( <color> [ color-adjuster <colorspace>? ]? )"
+    },
+    "<rgb()>": {
+      "value": "rgb([from <color>]? <percentage>{3} [ / <alpha-value> ]? ) | rgb([from <color>]? <number>{3} [ / <alpha-value> ]? )"
+    },
+    "<alpha-value>": {
+      "value": "<number> | <percentage>"
+    },
+    "<hsl()>": {
+      "value": "hsl([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
+    },
+    "<hue>": {
+      "value": "<number> | <angle>"
+    },
+    "<hwb()>": {
+      "value": "hwb([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
+    },
+    "<lab()>": {
+      "value": "lab([from <color>]? <percentage> <number> <number> [ / <alpha-value> ]? )"
+    },
+    "<lch()>": {
+      "value": "lch([from <color>]? <percentage> <number> <hue> [ / <alpha-value> ]? )"
+    }
+  }
+}
