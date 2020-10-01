@@ -1245,11 +1245,41 @@
         "extAttrs": [],
         "partial": false
       },
+      "LargeBlobSupport": {
+        "type": "enum",
+        "name": "LargeBlobSupport",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "required"
+          },
+          {
+            "type": "enum-value",
+            "value": "preferred"
+          }
+        ],
+        "extAttrs": []
+      },
       "AuthenticationExtensionsLargeBlobInputs": {
         "type": "dictionary",
         "name": "AuthenticationExtensionsLargeBlobInputs",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "support",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
           {
             "type": "field",
             "name": "read",
@@ -1275,7 +1305,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ArrayBuffer"
+              "idlType": "BufferSource"
             },
             "default": null,
             "required": false
@@ -1289,6 +1319,21 @@
         "name": "AuthenticationExtensionsLargeBlobOutputs",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "supported",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
           {
             "type": "field",
             "name": "blob",
