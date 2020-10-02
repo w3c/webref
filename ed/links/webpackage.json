@@ -62,8 +62,6 @@
       "concept-request-header-list",
       "request-service-workers-mode",
       "concept-request-mode",
-      "concept-read-all-bytes-from-readablestream",
-      "concept-get-reader",
       "header-list-contains",
       "concept-header-name",
       "concept-header-value",
@@ -71,15 +69,7 @@
       "concept-header-list-get-decode-split",
       "handle-content-codings",
       "concept-body",
-      "concept-cancel-readablestream",
-      "concept-construct-readablestream",
-      "concept-request-method",
-      "concept-readablestream-closed",
-      "concept-readablestream-errored",
-      "concept-read-chunk-from-readablestream",
-      "concept-enqueue-readablestream",
-      "concept-readablestream-readable",
-      "concept-readablestream-need-more-data"
+      "concept-request-method"
     ],
     "https://infra.spec.whatwg.org/": [
       "byte-sequence",
@@ -183,7 +173,20 @@
     ],
     "https://streams.spec.whatwg.org/": [
       "readablestream",
-      "readablestreamdefaultreader"
+      "readablestreamdefaultreader",
+      "readablestream-get-a-reader",
+      "readablestreamdefaultreader-read-all-bytes",
+      "readablestream-cancel",
+      "readablestream-create",
+      "readablestream-create-cancelalgorithm",
+      "readablestream-closed",
+      "readablestream-errored",
+      "readablestreamdefaultreader-read-a-chunk",
+      "readablestream-enqueue",
+      "readablestream-readable",
+      "readablestream-need-more-data",
+      "readablestream-close",
+      "readablestream-error"
     ],
     "https://tools.ietf.org/html/rfc6960": [
       "section-4.2.1"
@@ -242,7 +245,8 @@
     ],
     "https://heycam.github.io/webidl/": [
       "sequence-type",
-      "idl-Uint8Array"
+      "idl-Uint8Array",
+      "idl-ArrayBuffer"
     ],
     "https://github.com/whatwg/fetch/issues/730": [],
     "https://www.w3.org/TR/CSP3/": [],

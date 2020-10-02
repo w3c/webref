@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% October 01, 2020
+% October 02, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -1245,9 +1245,6 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
@@ -1299,6 +1296,9 @@ Informative references to this spec from:
 
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
+- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
@@ -1713,7 +1713,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-cascade-3/](https://www.w3.org/TR/css-cascade-3/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade-3/](https://drafts.csswg.org/css-cascade-3/)
-- Crawled version: 30 September 2020
+- Crawled version: 1 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-cascade-3/](https://drafts.csswg.org/css-cascade-3/)
 - Latest published version: [https://www.w3.org/TR/css-cascade-3/](https://www.w3.org/TR/css-cascade-3/)
 - Shortname: css-cascade-3
@@ -1757,7 +1757,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
-- Crawled version: 30 September 2020
+- Crawled version: 1 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
 - Latest published version: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
 - Shortname: css-cascade-4
@@ -1809,7 +1809,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-cascade-5/](https://drafts.csswg.org/css-cascade-5/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade-5/](https://drafts.csswg.org/css-cascade-5/)
-- Crawled version: 22 September 2020
+- Crawled version: 1 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-cascade-5/](https://drafts.csswg.org/css-cascade-5/)
 - Shortname: css-cascade-5
 
@@ -2002,9 +2002,6 @@ Informative references to this spec from:
 
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
@@ -2702,9 +2699,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
@@ -2733,6 +2727,9 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
@@ -2775,9 +2772,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
@@ -2809,6 +2803,9 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Lists Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
@@ -2852,9 +2849,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -2885,6 +2879,9 @@ Informative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
+- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
@@ -3398,9 +3395,6 @@ Normative references to this spec from:
 
 - [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS 2](https://drafts.csswg.org/css2/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
@@ -3417,6 +3411,9 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
 
 
@@ -3426,7 +3423,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-logical-1/](https://www.w3.org/TR/css-logical-1/)
 - Crawled URL: [https://drafts.csswg.org/css-logical-1/](https://drafts.csswg.org/css-logical-1/)
-- Crawled version: 18 September 2020
+- Crawled version: 1 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-logical-1/](https://drafts.csswg.org/css-logical-1/)
 - Latest published version: [https://www.w3.org/TR/css-logical-1/](https://www.w3.org/TR/css-logical-1/)
 - Shortname: css-logical-1
@@ -4884,9 +4881,6 @@ Normative references to this spec from:
 
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts/)
@@ -4919,6 +4913,9 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
@@ -5369,9 +5366,6 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
@@ -7610,7 +7604,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
 - Crawled URL: [https://w3c.github.io/IntersectionObserver/](https://w3c.github.io/IntersectionObserver/)
-- Crawled version: 24 September 2020
+- Crawled version: 1 October 2020
 - Editor's Draft: [https://w3c.github.io/IntersectionObserver/](https://w3c.github.io/IntersectionObserver/)
 - Latest published version: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
 - Shortname: intersection-observer
@@ -7792,7 +7786,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Crawled URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
-- Crawled version: 11 September 2020
+- Crawled version: 1 October 2020
 - Editor's Draft: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Shortname: webpackage
 
@@ -8196,9 +8190,6 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS 2](https://drafts.csswg.org/css2/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
@@ -10263,7 +10254,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 29 September 2020
+- Crawled version: 1 October 2020
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -11801,7 +11792,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webdriver2/](https://www.w3.org/TR/webdriver2/)
 - Crawled URL: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
-- Crawled version: 25 September 2020
+- Crawled version: 01 October 2020
 - Editor's Draft: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
 - Latest published version: [https://www.w3.org/TR/webdriver2/](https://www.w3.org/TR/webdriver2/)
 - Shortname: webdriver2
