@@ -7160,6 +7160,7 @@ Normative references to this spec from:
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
@@ -11825,7 +11826,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - Crawled URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
-- Crawled version: 18 September 2020
+- Crawled version: 2 October 2020
 - Editor's Draft: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - Shortname: webdriver-bidi
 
@@ -13283,7 +13284,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled version: 26 September 2020
+- Crawled version: 2 October 2020
 - Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Shortname: layers
 

@@ -89,6 +89,7 @@ enum XRTextureType {
 };
 
 dictionary XRProjectionLayerInit {
+  XRTextureType textureType = "texture";
   boolean depth = true;
   boolean stencil = false;
   boolean alpha = true;
@@ -106,6 +107,7 @@ dictionary XRLayerInit {
 };
 
 dictionary XRQuadLayerInit : XRLayerInit {
+  XRTextureType textureType = "texture";
   XRRigidTransform? transform;
   float width = 1.0;
   float height = 1.0;
@@ -113,6 +115,7 @@ dictionary XRQuadLayerInit : XRLayerInit {
 };
 
 dictionary XRCylinderLayerInit : XRLayerInit {
+  XRTextureType textureType = "texture";
   XRRigidTransform? transform;
   float radius = 2.0;
   float centralAngle = 0.78539;
@@ -121,6 +124,7 @@ dictionary XRCylinderLayerInit : XRLayerInit {
 };
 
 dictionary XREquirectLayerInit : XRLayerInit {
+  XRTextureType textureType = "texture";
   XRRigidTransform? transform;
   float radius = 0;
   float centralHorizontalAngle = 6.28318;
@@ -139,14 +143,10 @@ dictionary XRCubeLayerInit : XRLayerInit {
 
   readonly attribute double nativeProjectionScaleFactor;
 
-  XRProjectionLayer createProjectionLayer(XRTextureType textureType,
-                                          optional XRProjectionLayerInit init);
-  XRQuadLayer createQuadLayer(XRTextureType textureType,
-                              optional XRQuadLayerInit init);
-  XRCylinderLayer createCylinderLayer(XRTextureType textureType,
-                                      optional XRCylinderLayerInit init);
-  XREquirectLayer createEquirectLayer(XRTextureType textureType,
-                                      optional XREquirectLayerInit init);
+  XRProjectionLayer createProjectionLayer(optional XRProjectionLayerInit init);
+  XRQuadLayer createQuadLayer(optional XRQuadLayerInit init);
+  XRCylinderLayer createCylinderLayer(optional XRCylinderLayerInit init);
+  XREquirectLayer createEquirectLayer(optional XREquirectLayerInit init);
   XRCubeLayer createCubeLayer(optional XRCubeLayerInit init);
 
   XRWebGLSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = "none");
