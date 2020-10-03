@@ -42,12 +42,11 @@ function createLocalBranches(srcDir, dstDir, makeCommitMessage) {
         return child.execSync(`git ${args}`, Object.assign({ cwd: dstDir, encoding: 'utf-8' }, options));
     }
 
-    // Returns the sha of any commit neither mentioning webref (new name) nor
-    // mentioning reffy-reports (old name) touching `file` in `dstDir` since
-    // `since`, if any, and a falsy value otherwise.
+    // Returns the sha of any commit not mentioning webref touching `file`
+    // in `dstDir` since `since`, if any, and a falsy value otherwise.
     // See https://github.com/w3c/webref/issues/25 for background.
     function lastManualCommitSince(file, since) {
-        return git(`log -1 --since=${since} --grep webref --grep reffy-reports --invert-grep --format=%h -- ${file}`).trim();
+        return git(`log -1 --since=${since} --grep webref --invert-grep --format=%h -- ${file}`).trim();
     }
 
     // Returns any extra lines to put in the commit messages as an array.
@@ -119,9 +118,9 @@ function createLocalBranches(srcDir, dstDir, makeCommitMessage) {
     return branches;
 }
 
-// Returns remote webref/* (new name) and reffy-reports/* (old name) branches.
+// Returns remote webref/* branches.
 function listRemoteBranches(dir, remote) {
-    const remoteBranches = child.execSync(`git for-each-ref "refs/remotes/${remote}/webref/*" "refs/remotes/${remote}/reffy-reports/*" --format="%(refname:lstrip=3)"`, {
+    const remoteBranches = child.execSync(`git for-each-ref "refs/remotes/${remote}/webref/*" --format="%(refname:lstrip=3)"`, {
             cwd: dir, encoding: 'ascii'
         }).split('\n').filter(l => l != '');
     remoteBranches.sort();
@@ -168,25 +167,20 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
     console.log('Updating pull requests:');
     for (const branch of localBranches) {
         assert(branch.startsWith('webref/'));
-        const oldBranch = branch.replace(/^webref/, 'reffy-reports');
-
-        // Remote branch has the same name as the local one, except if it was
-        // created before the switch from "reffy-reports" to "webref"
-        const remoteBranch = remoteBranches.has(oldBranch) ? oldBranch : branch;
 
         // First create or update the remote branch, if not already up to date.
-        if (remoteBranches.has(branch) || remoteBranches.has(oldBranch)) {
+        if (remoteBranches.has(branch)) {
             // Check if there are any differences between the local and remote
             // branch in the files touched by the local branch. This to avoid
             // updating the branch with unrelated changes, which would trigger
             // another Travis run of any existing PR for the branch.
             const affectedFiles = git(`diff --name-only ${branch} ${branch}^`).replace(/\n/g, ' ');
-            const diff = git(`diff ${branch} ${remote}/${remoteBranch} -- ${affectedFiles}`).trim();
+            const diff = git(`diff ${branch} ${remote}/${branch} -- ${affectedFiles}`).trim();
             if (diff) {
-                git(`push -f ${remote} ${branch}:${remoteBranch}`);
-                console.log(`  Updated remote branch: ${remoteBranch}`);
+                git(`push -f ${remote} ${branch}`);
+                console.log(`  Updated remote branch: ${branch}`);
             } else {
-                console.log(`  Remote branch is up to date: ${remoteBranch}`);
+                console.log(`  Remote branch is up to date: ${branch}`);
             }
         } else {
             git(`push ${remote} ${branch}`);
@@ -197,8 +191,8 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
         // commit message to create the PR title/body, so that they cannot
         // get out of sync. Note that this will also update the boilerplate of
         // existing PRs even if the branch was not updated. This is intentional.
-        const pr_title = git(`show --format=%s --no-patch ${remote}/${remoteBranch}`).trim();
-        const commit_body = git(`show --format=%b --no-patch ${remote}/${remoteBranch}`);
+        const pr_title = git(`show --format=%s --no-patch ${remote}/${branch}`).trim();
+        const commit_body = git(`show --format=%b --no-patch ${remote}/${branch}`);
         const pr_body = `${PR_BOILERPLATE}\n\n<hr>\n\n${commit_body}`;
 
         // Look for open PRs for the same branch.
@@ -206,7 +200,7 @@ async function updatePullRequests(dir, localBranches, remote, remoteBranches) {
             owner: 'web-platform-tests',
             repo: 'wpt',
             state: 'open',
-            head: `${owner}:${remoteBranch}`,
+            head: `${owner}:${branch}`,
         })).data;
 
         if (open_prs.length) {
