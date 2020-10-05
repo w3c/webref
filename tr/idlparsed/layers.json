@@ -759,6 +759,24 @@
         "members": [
           {
             "type": "field",
+            "name": "textureType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRTextureType"
+            },
+            "default": {
+              "type": "string",
+              "value": "texture"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "depth",
             "extAttrs": [],
             "idlType": {
@@ -966,6 +984,24 @@
         "members": [
           {
             "type": "field",
+            "name": "textureType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRTextureType"
+            },
+            "default": {
+              "type": "string",
+              "value": "texture"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "transform",
             "extAttrs": [],
             "idlType": {
@@ -1042,6 +1078,24 @@
         "name": "XRCylinderLayerInit",
         "inheritance": "XRLayerInit",
         "members": [
+          {
+            "type": "field",
+            "name": "textureType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRTextureType"
+            },
+            "default": {
+              "type": "string",
+              "value": "texture"
+            },
+            "required": false
+          },
           {
             "type": "field",
             "name": "transform",
@@ -1138,6 +1192,24 @@
         "name": "XREquirectLayerInit",
         "inheritance": "XRLayerInit",
         "members": [
+          {
+            "type": "field",
+            "name": "textureType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRTextureType"
+            },
+            "default": {
+              "type": "string",
+              "value": "texture"
+            },
+            "required": false
+          },
           {
             "type": "field",
             "name": "transform",
@@ -1361,22 +1433,6 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "textureType",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRTextureType"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
                 "name": "init",
                 "extAttrs": [],
                 "idlType": {
@@ -1407,22 +1463,6 @@
               "idlType": "XRQuadLayer"
             },
             "arguments": [
-              {
-                "type": "argument",
-                "name": "textureType",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRTextureType"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
               {
                 "type": "argument",
                 "name": "init",
@@ -1457,22 +1497,6 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "textureType",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRTextureType"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
                 "name": "init",
                 "extAttrs": [],
                 "idlType": {
@@ -1503,22 +1527,6 @@
               "idlType": "XREquirectLayer"
             },
             "arguments": [
-              {
-                "type": "argument",
-                "name": "textureType",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "XRTextureType"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
               {
                 "type": "argument",
                 "name": "init",
@@ -2165,21 +2173,26 @@
         "XRSubImage",
         "WebGLTexture"
       ],
-      "XRProjectionLayerInit": [],
+      "XRProjectionLayerInit": [
+        "XRTextureType"
+      ],
       "XRLayerInit": [
         "XRSpace",
         "XRLayerLayout"
       ],
       "XRQuadLayerInit": [
         "XRLayerInit",
+        "XRTextureType",
         "XRRigidTransform"
       ],
       "XRCylinderLayerInit": [
         "XRLayerInit",
+        "XRTextureType",
         "XRRigidTransform"
       ],
       "XREquirectLayerInit": [
         "XRLayerInit",
+        "XRTextureType",
         "XRRigidTransform"
       ],
       "XRCubeLayerInit": [
@@ -2190,7 +2203,6 @@
         "XRSession",
         "XRWebGLRenderingContext",
         "XRProjectionLayer",
-        "XRTextureType",
         "XRProjectionLayerInit",
         "XRQuadLayer",
         "XRQuadLayerInit",

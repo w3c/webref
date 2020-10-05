@@ -1,0 +1,74 @@
+{
+  "spec": {
+    "title": "WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "WEBGL_debug_shaders": {
+        "type": "interface",
+        "name": "WEBGL_debug_shaders",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "getTranslatedShaderSource",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "shader",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebGLShader"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNoInterfaceObject",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "WEBGL_debug_shaders": [
+        "WebGLShader"
+      ]
+    },
+    "externalDependencies": [
+      "WebGLShader"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

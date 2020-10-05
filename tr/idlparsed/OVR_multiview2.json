@@ -1,0 +1,228 @@
+{
+  "spec": {
+    "title": "WebGL OVR_multiview2 Extension Specification",
+    "url": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "OVR_multiview2": {
+        "type": "interface",
+        "name": "OVR_multiview2",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "const",
+            "name": "FRAMEBUFFER_ATTACHMENT_TEXTURE_NUM_VIEWS_OVR",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GLenum"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0x9630"
+            }
+          },
+          {
+            "type": "const",
+            "name": "FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GLenum"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0x9632"
+            }
+          },
+          {
+            "type": "const",
+            "name": "MAX_VIEWS_OVR",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GLenum"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0x9631"
+            }
+          },
+          {
+            "type": "const",
+            "name": "FRAMEBUFFER_INCOMPLETE_VIEW_TARGETS_OVR",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GLenum"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0x9633"
+            }
+          },
+          {
+            "type": "operation",
+            "name": "framebufferTextureMultiviewOVR",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "target",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLenum"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "attachment",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLenum"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "texture",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "WebGLTexture"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "level",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLint"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "baseViewIndex",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLint"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "numViews",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLsizei"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "NoInterfaceObject",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "OVR_multiview2": [
+        "GLenum",
+        "WebGLTexture",
+        "GLint",
+        "GLsizei"
+      ]
+    },
+    "externalDependencies": [
+      "GLenum",
+      "WebGLTexture",
+      "GLint",
+      "GLsizei"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

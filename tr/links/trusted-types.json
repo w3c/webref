@@ -16,7 +16,6 @@
     "https://www.w3.org/2019/Process-20190301/": [],
     "https://w3c.github.io/webappsec-csp/": [
       "script-src",
-      "csp-list",
       "content-security-policy-object",
       "policy-directive-set",
       "directives",
@@ -46,7 +45,6 @@
       "element",
       "context-object",
       "concept-element-interface",
-      "concept-attribute",
       "concept-child-text-content",
       "dom-node-textcontent",
       "connected",
@@ -73,6 +71,7 @@
       "SecureContext",
       "idl-DOMString",
       "idl-boolean",
+      "dfn-attribute",
       "interface-mixin",
       "include",
       "idl-USVString",
@@ -89,6 +88,7 @@
       "AllowShared",
       "Clamp",
       "EnforceRange",
+      "TreatNullAs",
       "dfn-convert-ecmascript-to-idl-value",
       "this",
       "es-security",
@@ -106,10 +106,10 @@
       "reflect",
       "concept-realm-global",
       "window",
+      "concept-document-csp-list",
       "cereactions",
       "htmlscriptelement",
       "dom-innertext",
-      "htmlelement",
       "prepare-a-script",
       "the-script-element",
       "already-started",
@@ -179,7 +179,6 @@
       "workeroptions",
       "sharedworker",
       "workerglobalscope",
-      "secure-context",
       "concept-settings-object-global"
     ],
     "https://en.wikipedia.org/wiki/Object-capability_model": [],
@@ -252,6 +251,9 @@
     ],
     "https://github.com/w3c/svgwg/issues/196": [],
     "https://github.com/whatwg/dom/pull/809": [],
+    "https://w3c.github.io/webappsec-secure-contexts/": [
+      "secure-contexts"
+    ],
     "https://url.spec.whatwg.org/": [
       "concept-url-scheme",
       "concept-url-serializer",
@@ -269,6 +271,7 @@
     "https://w3c.github.io/webcomponents/spec/imports/": [],
     "https://www.w3.org/TR/css-syntax-3/": [],
     "https://tools.ietf.org/html/rfc2119": [],
+    "https://www.w3.org/TR/secure-contexts/": [],
     "https://www.w3.org/TR/service-workers-1/": [],
     "https://www.w3.org/TR/html-design-principles/": []
   }

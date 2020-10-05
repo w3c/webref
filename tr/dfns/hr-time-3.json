@@ -1,31 +1,103 @@
 {
   "spec": {
-    "title": "High Resolution Time Level 3",
+    "title": "High Resolution Time",
     "url": "https://www.w3.org/TR/hr-time-3/"
   },
   "dfns": [
     {
-      "id": "time-origin",
-      "href": "https://www.w3.org/TR/hr-time-3/#time-origin",
+      "id": "dfn-date",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-date",
+      "linkingText": [
+        "Date"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-date-now",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-date-now",
+      "linkingText": [
+        "Date.now()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dfn-time-origin",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-time-origin",
       "linkingText": [
         "time origin"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
-      "id": "time-origin-timestamp",
-      "href": "https://www.w3.org/TR/hr-time-3/#time-origin-timestamp",
+      "id": "dfn-time-origin-timestamp",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-time-origin-timestamp",
       "linkingText": [
         "time origin timestamp"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-relative-high-resolution-time",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-relative-high-resolution-time",
+      "linkingText": [
+        "relative high resolution time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-current-high-resolution-time",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time",
+      "linkingText": [
+        "current high resolution time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-domhighrestimestamp",
+      "href": "https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp",
+      "linkingText": [
+        "DOMHighResTimeStamp"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance",
+      "href": "https://www.w3.org/TR/hr-time-3/#dom-performance",
+      "linkingText": [
+        "Performance"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
       "informative": false
     },
     {
@@ -34,12 +106,16 @@
       "linkingText": [
         "now()"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "performance"
+      "localLinkingText": [
+        "Performance.now",
+        "Performance.now()",
+        "now"
       ],
-      "access": "private",
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -48,12 +124,48 @@
       "linkingText": [
         "timeOrigin"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "localLinkingText": [
+        "Performance.timeOrigin"
+      ],
+      "type": "attribute",
       "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-performance-tojson",
+      "href": "https://www.w3.org/TR/hr-time-3/#dom-performance-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [
+        "Performance.toJSON",
+        "Performance.toJSON()",
+        "toJSON"
+      ],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-windoworworkerglobalscope-performance",
+      "href": "https://www.w3.org/TR/hr-time-3/#dom-windoworworkerglobalscope-performance",
+      "linkingText": [
         "performance"
       ],
-      "access": "private",
+      "localLinkingText": [
+        "WindowOrWorkerGlobalScope.performance"
+      ],
+      "type": "attribute",
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ],
+      "access": "public",
       "informative": false
     },
     {
@@ -65,7 +177,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false
     },
     {
@@ -73,6 +185,18 @@
       "href": "https://www.w3.org/TR/hr-time-3/#dfn-global-monotonic-clock",
       "linkingText": [
         "global monotonic clock"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dfn-time",
+      "href": "https://www.w3.org/TR/hr-time-3/#dfn-time",
+      "linkingText": [
+        "time"
       ],
       "localLinkingText": [],
       "type": "dfn",

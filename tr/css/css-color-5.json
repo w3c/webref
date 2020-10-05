@@ -1,0 +1,40 @@
+{
+  "spec": {
+    "title": "CSS Color Module Level 5",
+    "url": "https://www.w3.org/TR/css-color-5/"
+  },
+  "properties": {},
+  "descriptors": {},
+  "valuespaces": {
+    "<color-mix()>": {
+      "value": "color-mix( <color> <color> [ <number> | <percentage> | [ <color-function> <colorspace>? ]?] )"
+    },
+    "<color-contrast()>": {
+      "value": "color-contrast( <color> <color># )"
+    },
+    "<color-adjust()>": {
+      "value": "color-adjust( <color> [ color-function <colorspace>? ]?] )"
+    },
+    "<rgb()>": {
+      "value": "rgb([from <color>]? <percentage>{3} [ / <alpha-value> ]? ) | rgb([from <color>]? <number>{3} [ / <alpha-value> ]? )"
+    },
+    "<alpha-value>": {
+      "value": "<number> | <percentage>"
+    },
+    "<hsl()>": {
+      "value": "hsl([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
+    },
+    "<hue>": {
+      "value": "<number> | <angle>"
+    },
+    "<hwb()>": {
+      "value": "hwb([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
+    },
+    "<lab()>": {
+      "value": "lab([from <color>]? <percentage> <number> <number> [ / <alpha-value> ]? )"
+    },
+    "<lch()>": {
+      "value": "lch([from <color>]? <percentage> <number> <hue> [ / <alpha-value> ]? )"
+    }
+  }
+}
