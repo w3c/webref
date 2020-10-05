@@ -1,7 +1,7 @@
 // GENERATED CONTENT - DO NOT EDIT
 // Content was automatically extracted by Reffy into webref
 // (https://github.com/w3c/webref)
-// Source: High Resolution Time Level 3 (https://www.w3.org/TR/hr-time-3/)
+// Source: High Resolution Time (https://www.w3.org/TR/hr-time-3/)
 
 typedef double DOMHighResTimeStamp;
 
@@ -9,16 +9,9 @@ typedef double DOMHighResTimeStamp;
 interface Performance : EventTarget {
     DOMHighResTimeStamp now();
     readonly attribute DOMHighResTimeStamp timeOrigin;
-    serializer = {attribute};
+    [Default] object toJSON();
 };
 
-[NoInterfaceObject,
- Exposed=(Window,Worker)]
-interface GlobalPerformance {
-    [Replaceable]
-    readonly attribute Performance performance;
+partial interface mixin WindowOrWorkerGlobalScope {
+  [Replaceable] readonly attribute Performance performance;
 };
-
-Window implements GlobalPerformance;
-
-WorkerGlobalScope implements GlobalPerformance;

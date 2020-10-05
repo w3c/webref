@@ -1,0 +1,197 @@
+{
+  "spec": {
+    "title": "WebGL OES_vertex_array_object Khronos Ratified Extension Specification",
+    "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "WebGLVertexArrayObjectOES": {
+        "type": "interface",
+        "name": "WebGLVertexArrayObjectOES",
+        "inheritance": "WebGLObject",
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNoInterfaceObject",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "OES_vertex_array_object": {
+        "type": "interface",
+        "name": "OES_vertex_array_object",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "const",
+            "name": "VERTEX_ARRAY_BINDING_OES",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GLenum"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "0x85B5"
+            }
+          },
+          {
+            "type": "operation",
+            "name": "createVertexArrayOES",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "WebGLVertexArrayObjectOES"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "deleteVertexArrayOES",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "arrayObject",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "WebGLVertexArrayObjectOES"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "isVertexArrayOES",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GLboolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "arrayObject",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "WebGLVertexArrayObjectOES"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "WebGLHandlesContextLoss",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "bindVertexArrayOES",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "void"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "arrayObject",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "WebGLVertexArrayObjectOES"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNoInterfaceObject",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "WebGLVertexArrayObjectOES": [
+        "WebGLObject"
+      ],
+      "OES_vertex_array_object": [
+        "WebGLVertexArrayObjectOES",
+        "GLboolean"
+      ]
+    },
+    "externalDependencies": [
+      "WebGLObject",
+      "GLboolean"
+    ],
+    "hasObsoleteIdl": false
+  }
+}
