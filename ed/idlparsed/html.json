@@ -20536,6 +20536,21 @@
         "inheritance": null,
         "members": [
           {
+            "type": "attribute",
+            "name": "shadowRoot",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "ShadowRoot"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
             "type": "operation",
             "name": "setFormValue",
             "idlType": {
@@ -20799,21 +20814,6 @@
               "nullable": false,
               "union": false,
               "idlType": "NodeList"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "shadowRoot",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "ShadowRoot"
             },
             "extAttrs": [],
             "special": "",
@@ -37719,6 +37719,7 @@
       ],
       "ElementDefinitionOptions": [],
       "ElementInternals": [
+        "ShadowRoot",
         "undefined",
         "File",
         "FormData",
@@ -37727,7 +37728,6 @@
         "HTMLElement",
         "ValidityState",
         "NodeList",
-        "ShadowRoot",
         "ARIAMixin"
       ],
       "ValidityStateFlags": [],
@@ -38069,8 +38069,8 @@
       "SVGImageElement",
       "DOMMatrix",
       "DOMMatrix2DInit",
-      "File",
       "ShadowRoot",
+      "File",
       "MouseEvent",
       "MouseEventInit",
       "DOMHighResTimeStamp",
