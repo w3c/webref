@@ -104,6 +104,7 @@ dictionary XRLayerInit {
   boolean depth = false;
   boolean stencil = false;
   boolean alpha = true;
+  boolean isStatic = false;
 };
 
 dictionary XRQuadLayerInit : XRLayerInit {
@@ -111,7 +112,6 @@ dictionary XRQuadLayerInit : XRLayerInit {
   XRRigidTransform? transform;
   float width = 1.0;
   float height = 1.0;
-  boolean isStatic = false;
 };
 
 dictionary XRCylinderLayerInit : XRLayerInit {
@@ -120,7 +120,6 @@ dictionary XRCylinderLayerInit : XRLayerInit {
   float radius = 2.0;
   float centralAngle = 0.78539;
   float aspectRatio = 2.0;
-  boolean isStatic = false;
 };
 
 dictionary XREquirectLayerInit : XRLayerInit {
@@ -130,12 +129,10 @@ dictionary XREquirectLayerInit : XRLayerInit {
   float centralHorizontalAngle = 6.28318;
   float upperVerticalAngle = 1.570795;
   float lowerVerticalAngle = -1.570795;
-  boolean isStatic = false;
 };
 
 dictionary XRCubeLayerInit : XRLayerInit {
   DOMPointReadOnly? orientation;
-  boolean isStatic = false;
 };
 
 [Exposed=Window] interface XRWebGLBinding {
