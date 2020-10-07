@@ -6,10 +6,10 @@ jobs:
   update:
     runs-on: ubuntu-18.04
     steps:
-    - name: Checkout reffy-reports
+    - name: Checkout webref
       uses: actions/checkout@master
       with:
-        path: reffy-reports
+        path: webref
     - name: Checkout reffy
       uses: actions/checkout@master
       with:
@@ -31,7 +31,7 @@ jobs:
       run: npm run tr
       working-directory: reffy
     - name: Copy reports
-      run: rsync -av --exclude=README.md reffy/reports/ reffy-reports/
+      run: rsync -av --exclude=README.md reffy/reports/ webref/
     - name: Push updates to git
       run: |
         git config user.name "reffy-bot"
@@ -43,4 +43,4 @@ jobs:
         #npm version patch
         git push origin HEAD:master
         #git push origin --tags
-      working-directory: reffy-reports
+      working-directory: webref
