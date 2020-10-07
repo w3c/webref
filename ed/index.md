@@ -11185,7 +11185,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Crawled URL: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Crawled version: 30 September 2020
+- Crawled version: 7 October 2020
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Shortname: webauthn-2
