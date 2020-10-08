@@ -421,10 +421,10 @@
       "informative": false
     },
     {
-      "id": "dom-adapter-extensions-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-adapter-extensions-slot",
+      "id": "dom-adapter-features-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-adapter-features-slot",
       "linkingText": [
-        "[[extensions]]"
+        "[[features]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -475,10 +475,10 @@
       "informative": false
     },
     {
-      "id": "dom-device-extensions-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-device-extensions-slot",
+      "id": "dom-device-features-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-device-features-slot",
       "linkingText": [
-        "[[extensions]]"
+        "[[features]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -507,6 +507,30 @@
       "href": "https://gpuweb.github.io/gpuweb/#a-new-device",
       "linkingText": [
         "a new device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "capabilities",
+      "href": "https://gpuweb.github.io/gpuweb/#capabilities",
+      "linkingText": [
+        "capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "feature",
+      "href": "https://gpuweb.github.io/gpuweb/#feature",
+      "linkingText": [
+        "feature"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -854,10 +878,10 @@
       "informative": false
     },
     {
-      "id": "dom-gpuadapter-extensions",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-extensions",
+      "id": "dom-gpuadapter-features",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-features",
       "linkingText": [
-        "extensions"
+        "features"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -923,10 +947,10 @@
       "informative": false
     },
     {
-      "id": "dom-gpudevicedescriptor-extensions",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevicedescriptor-extensions",
+      "id": "dom-gpudevicedescriptor-features",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevicedescriptor-features",
       "linkingText": [
-        "extensions"
+        "features"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -951,10 +975,10 @@
       "informative": false
     },
     {
-      "id": "enumdef-gpuextensionname",
-      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpuextensionname",
+      "id": "enumdef-gpufeaturename",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpufeaturename",
       "linkingText": [
-        "GPUExtensionName"
+        "GPUFeatureName"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -963,85 +987,85 @@
       "informative": false
     },
     {
-      "id": "dom-gpuextensionname-depth-clamping",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-depth-clamping",
+      "id": "dom-gpufeaturename-depth-clamping",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-depth-clamping",
       "linkingText": [
         "\"depth-clamping\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUExtensionName"
+        "GPUFeatureName"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-gpuextensionname-pipeline-statistics-query",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-pipeline-statistics-query",
+      "id": "dom-gpufeaturename-pipeline-statistics-query",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-pipeline-statistics-query",
       "linkingText": [
         "\"pipeline-statistics-query\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUExtensionName"
+        "GPUFeatureName"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-gpuextensionname-timestamp-query",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-timestamp-query",
+      "id": "dom-gpufeaturename-timestamp-query",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-timestamp-query",
       "linkingText": [
         "\"timestamp-query\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUExtensionName"
+        "GPUFeatureName"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-gpuextensionname-texture-compression-bc",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-texture-compression-bc",
+      "id": "dom-gpufeaturename-texture-compression-bc",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-texture-compression-bc",
       "linkingText": [
         "\"texture-compression-bc\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUExtensionName"
+        "GPUFeatureName"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-gpuextensionname-depth24unorm-stencil8",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-depth24unorm-stencil8",
+      "id": "dom-gpufeaturename-depth24unorm-stencil8",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-depth24unorm-stencil8",
       "linkingText": [
         "\"depth24unorm-stencil8\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUExtensionName"
+        "GPUFeatureName"
       ],
       "access": "public",
       "informative": false
     },
     {
-      "id": "dom-gpuextensionname-depth32float-stencil8",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuextensionname-depth32float-stencil8",
+      "id": "dom-gpufeaturename-depth32float-stencil8",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-depth32float-stencil8",
       "linkingText": [
         "\"depth32float-stencil8\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUExtensionName"
+        "GPUFeatureName"
       ],
       "access": "public",
       "informative": false
@@ -1073,10 +1097,10 @@
       "informative": false
     },
     {
-      "id": "dom-gpudevice-extensions",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-extensions",
+      "id": "dom-gpudevice-features",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-features",
       "linkingText": [
-        "extensions"
+        "features"
       ],
       "localLinkingText": [],
       "type": "attribute",
