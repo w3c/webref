@@ -49,18 +49,18 @@ enum GPUPowerPreference {
 
 interface GPUAdapter {
     readonly attribute DOMString name;
-    readonly attribute FrozenArray<GPUExtensionName> extensions;
+    readonly attribute FrozenArray<GPUFeatureName> features;
     //readonly attribute GPULimits limits; Don’t expose higher limits for now.
 
     Promise<GPUDevice?> requestDevice(optional GPUDeviceDescriptor descriptor = {});
 };
 
 dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {
-    sequence<GPUExtensionName> extensions = [];
+    sequence<GPUFeatureName> features = [];
     GPULimits limits = {};
 };
 
-enum GPUExtensionName {
+enum GPUFeatureName {
     "depth-clamping",
     "depth24unorm-stencil8",
     "depth32float-stencil8",
@@ -72,7 +72,7 @@ enum GPUExtensionName {
 [Exposed=(Window, DedicatedWorker), Serializable]
 interface GPUDevice : EventTarget {
     [SameObject] readonly attribute GPUAdapter adapter;
-    readonly attribute FrozenArray<GPUExtensionName> extensions;
+    readonly attribute FrozenArray<GPUFeatureName> features;
     readonly attribute object limits;
 
     [SameObject] readonly attribute GPUQueue defaultQueue;
@@ -267,10 +267,10 @@ enum GPUTextureFormat {
     "bc7-rgba-unorm",
     "bc7-rgba-unorm-srgb",
 
-    // "depth24unorm-stencil8" extension
+    // "depth24unorm-stencil8" feature
     "depth24unorm-stencil8",
 
-    // "depth32float-stencil8" extension
+    // "depth32float-stencil8" feature
     "depth32float-stencil8",
 };
 
@@ -486,7 +486,7 @@ enum GPUPrimitiveTopology {
 dictionary GPURasterizationStateDescriptor {
     GPUFrontFace frontFace = "ccw";
     GPUCullMode cullMode = "none";
-    // Enable depth clamping (requires "depth-clamping" extension)
+    // Enable depth clamping (requires "depth-clamping" feature)
     boolean clampDepth = false;
 
     GPUDepthBias depthBias = 0;

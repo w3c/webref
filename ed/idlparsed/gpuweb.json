@@ -376,7 +376,7 @@
           },
           {
             "type": "attribute",
-            "name": "extensions",
+            "name": "features",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -390,7 +390,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUExtensionName"
+                  "idlType": "GPUFeatureName"
                 }
               ]
             },
@@ -452,7 +452,7 @@
         "members": [
           {
             "type": "field",
-            "name": "extensions",
+            "name": "features",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -467,7 +467,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUExtensionName"
+                  "idlType": "GPUFeatureName"
                 }
               ]
             },
@@ -498,9 +498,9 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUExtensionName": {
+      "GPUFeatureName": {
         "type": "enum",
-        "name": "GPUExtensionName",
+        "name": "GPUFeatureName",
         "values": [
           {
             "type": "enum-value",
@@ -558,7 +558,7 @@
           },
           {
             "type": "attribute",
-            "name": "extensions",
+            "name": "features",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -572,7 +572,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUExtensionName"
+                  "idlType": "GPUFeatureName"
                 }
               ]
             },
@@ -9732,19 +9732,19 @@
         "GPUPowerPreference"
       ],
       "GPUAdapter": [
-        "GPUExtensionName",
+        "GPUFeatureName",
         "GPUDevice",
         "GPUDeviceDescriptor"
       ],
       "GPUDeviceDescriptor": [
         "GPUObjectDescriptorBase",
-        "GPUExtensionName",
+        "GPUFeatureName",
         "GPULimits"
       ],
       "GPUDevice": [
         "EventTarget",
         "GPUAdapter",
-        "GPUExtensionName",
+        "GPUFeatureName",
         "GPUQueue",
         "GPUBuffer",
         "GPUBufferDescriptor",
