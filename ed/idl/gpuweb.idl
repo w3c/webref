@@ -23,6 +23,10 @@ dictionary GPULimits {
     GPUSize32 maxUniformBufferBindingSize = 16384;
 };
 
+interface GPUAdapterFeatures {
+    readonly setlike<GPUFeatureName>;
+};
+
 [Exposed=Window]
 partial interface Navigator {
     [SameObject] readonly attribute GPU gpu;
@@ -49,7 +53,7 @@ enum GPUPowerPreference {
 
 interface GPUAdapter {
     readonly attribute DOMString name;
-    readonly attribute FrozenArray<GPUFeatureName> features;
+    [SameObject] readonly attribute GPUAdapterFeatures features;
     //readonly attribute GPULimits limits; Don’t expose higher limits for now.
 
     Promise<GPUDevice?> requestDevice(optional GPUDeviceDescriptor descriptor = {});
