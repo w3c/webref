@@ -246,6 +246,32 @@
         "extAttrs": [],
         "partial": false
       },
+      "GPUAdapterFeatures": {
+        "type": "interface",
+        "name": "GPUAdapterFeatures",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "setlike",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "GPUFeatureName"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": true,
+            "async": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "GPU": {
         "type": "interface",
         "name": "GPU",
@@ -380,21 +406,19 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUFeatureName"
-                }
-              ]
+              "idlType": "GPUAdapterFeatures"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -9718,6 +9742,9 @@
       "GPULimits": [
         "GPUSize32"
       ],
+      "GPUAdapterFeatures": [
+        "GPUFeatureName"
+      ],
       "Navigator": [
         "GPU"
       ],
@@ -9732,7 +9759,7 @@
         "GPUPowerPreference"
       ],
       "GPUAdapter": [
-        "GPUFeatureName",
+        "GPUAdapterFeatures",
         "GPUDevice",
         "GPUDeviceDescriptor"
       ],
