@@ -118,7 +118,7 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -133,7 +133,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -187,7 +187,7 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -217,7 +217,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -232,7 +232,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -554,21 +554,6 @@
         "members": [
           {
             "type": "field",
-            "name": "trackId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "receiverId",
             "extAttrs": [],
             "idlType": {
@@ -580,7 +565,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -976,6 +961,21 @@
           },
           {
             "type": "field",
+            "name": "totalProcessingDelay",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "estimatedPlayoutTimestamp",
             "extAttrs": [],
             "idlType": {
@@ -1022,6 +1022,21 @@
           {
             "type": "field",
             "name": "totalSamplesReceived",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "totalSamplesDecoded",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1363,7 +1378,7 @@
         "members": [
           {
             "type": "field",
-            "name": "trackId",
+            "name": "rtxSsrc",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1371,7 +1386,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "unsigned long"
             },
             "default": null,
             "required": false
@@ -2094,7 +2109,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -2107,6 +2122,21 @@
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "relayedSource",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "default": null,
             "required": false
@@ -2274,7 +2304,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
+              "idlType": "double"
             },
             "default": null,
             "required": false
@@ -2301,7 +2331,7 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -2316,7 +2346,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -2424,7 +2454,7 @@
       "RTCRtpTransceiverStats": {
         "type": "dictionary",
         "name": "RTCRtpTransceiverStats",
-        "inheritance": null,
+        "inheritance": "RTCStats",
         "members": [
           {
             "type": "field",
@@ -2439,7 +2469,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -2454,7 +2484,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -2497,21 +2527,6 @@
           },
           {
             "type": "field",
-            "name": "remoteSource",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "ended",
             "extAttrs": [],
             "idlType": {
@@ -2538,22 +2553,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "priority",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "RTCPriorityType"
-            },
-            "default": null,
-            "required": false
+            "required": true
           }
         ],
         "extAttrs": [],
@@ -2588,14 +2588,6 @@
             "required": false
           }
         ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "RTCSenderVideoTrackAttachmentStats": {
-        "type": "dictionary",
-        "name": "RTCSenderVideoTrackAttachmentStats",
-        "inheritance": "RTCVideoSenderStats",
-        "members": [],
         "extAttrs": [],
         "partial": false
       },
@@ -2636,14 +2628,6 @@
             "required": false
           }
         ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "RTCSenderAudioTrackAttachmentStats": {
-        "type": "dictionary",
-        "name": "RTCSenderAudioTrackAttachmentStats",
-        "inheritance": "RTCAudioSenderStats",
-        "members": [],
         "extAttrs": [],
         "partial": false
       },
@@ -2700,22 +2684,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "transportId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
+              "idlType": "unsigned short"
             },
             "default": null,
             "required": false
@@ -2733,7 +2702,7 @@
               "idlType": "RTCDataChannelState"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -2896,6 +2865,21 @@
           },
           {
             "type": "field",
+            "name": "iceLocalUsernameFragment",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "dtlsState",
             "extAttrs": [],
             "idlType": {
@@ -2905,6 +2889,21 @@
               "nullable": false,
               "union": false,
               "idlType": "RTCDtlsTransportState"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "iceState",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RTCIceTransportState"
             },
             "default": null,
             "required": false
@@ -3040,6 +3039,21 @@
         "members": [
           {
             "type": "field",
+            "name": "transportId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "smoothedRoundTripTime",
             "extAttrs": [],
             "idlType": {
@@ -3049,6 +3063,66 @@
               "nullable": false,
               "union": false,
               "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "congestionWindow",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "receiverWindow",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "mtu",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "unackData",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
             },
             "default": null,
             "required": false
@@ -3075,7 +3149,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -3135,7 +3209,7 @@
               "idlType": "RTCIceCandidateType"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -3204,7 +3278,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -3219,7 +3293,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -3234,7 +3308,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -3249,7 +3323,7 @@
               "idlType": "RTCStatsIceCandidatePairState"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -3625,6 +3699,51 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "requestBytesSent",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "consentRequestBytesSent",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "responseBytesSent",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -3675,7 +3794,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -3690,7 +3809,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -3705,7 +3824,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -3744,7 +3863,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -3763,7 +3882,7 @@
           },
           {
             "type": "field",
-            "name": "protocol",
+            "name": "relayProtocol",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -3824,858 +3943,9 @@
         ],
         "extAttrs": [],
         "partial": false
-      },
-      "RTCMediaStreamStats": {
-        "type": "dictionary",
-        "name": "RTCMediaStreamStats",
-        "inheritance": "RTCStats",
-        "members": [
-          {
-            "type": "field",
-            "name": "streamIdentifier",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "trackIds",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "RTCReceiverVideoTrackAttachmentStats": {
-        "type": "dictionary",
-        "name": "RTCReceiverVideoTrackAttachmentStats",
-        "inheritance": "RTCVideoReceiverStats",
-        "members": [],
-        "extAttrs": [],
-        "partial": false
-      },
-      "RTCReceiverAudioTrackAttachmentStats": {
-        "type": "dictionary",
-        "name": "RTCReceiverAudioTrackAttachmentStats",
-        "inheritance": "RTCAudioReceiverStats",
-        "members": [],
-        "extAttrs": [],
-        "partial": false
       }
     },
-    "idlExtendedNames": {
-      "RTCCodecStats": [
-        {
-          "type": "dictionary",
-          "name": "RTCCodecStats",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "implementation",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "DOMString"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
-      "RTCIceCandidateStats": [
-        {
-          "type": "dictionary",
-          "name": "RTCIceCandidateStats",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "deleted",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "boolean"
-              },
-              "default": {
-                "type": "boolean",
-                "value": false
-              },
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "isRemote",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "boolean"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
-      "RTCIceCandidatePairStats": [
-        {
-          "type": "dictionary",
-          "name": "RTCIceCandidatePairStats",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "totalRtt",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "currentRtt",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "priority",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long long"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
-      "RTCRtpStreamStats": [
-        {
-          "type": "dictionary",
-          "name": "RTCRtpStreamStats",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "mediaType",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "DOMString"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "averageRTCPInterval",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
-      "RTCInboundRtpStreamStats": [
-        {
-          "type": "dictionary",
-          "name": "RTCInboundRtpStreamStats",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "fractionLost",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
-      "RTCAudioHandlerStats": [
-        {
-          "type": "dictionary",
-          "name": "RTCAudioHandlerStats",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "audioLevel",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "totalAudioEnergy",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "totalSamplesDuration",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "voiceActivityFlag",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "boolean"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
-      "RTCAudioSenderStats": [
-        {
-          "type": "dictionary",
-          "name": "RTCAudioSenderStats",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "totalSamplesSent",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "echoReturnLoss",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "echoReturnLossEnhancement",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
-      "RTCAudioReceiverStats": [
-        {
-          "type": "dictionary",
-          "name": "RTCAudioReceiverStats",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "estimatedPlayoutTimestamp",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "DOMHighResTimeStamp"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "jitterBufferDelay",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "jitterBufferEmittedCount",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "totalSamplesReceived",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "concealedSamples",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "silentConcealedSamples",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "concealmentEvents",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "insertedSamplesForDeceleration",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "removedSamplesForAcceleration",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "audioLevel",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "totalAudioEnergy",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "totalSamplesDuration",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
-      "RTCVideoHandlerStats": [
-        {
-          "type": "dictionary",
-          "name": "RTCVideoHandlerStats",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "frameWidth",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "frameHeight",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "framesPerSecond",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
-      "RTCVideoSenderStats": [
-        {
-          "type": "dictionary",
-          "name": "RTCVideoSenderStats",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "keyFramesSent",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "framesCaptured",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "framesSent",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "hugeFramesSent",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
-      "RTCVideoReceiverStats": [
-        {
-          "type": "dictionary",
-          "name": "RTCVideoReceiverStats",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "keyFramesReceived",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "estimatedPlayoutTimestamp",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "DOMHighResTimeStamp"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "jitterBufferDelay",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "double"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "jitterBufferEmittedCount",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "framesReceived",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "framesDecoded",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "framesDropped",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "partialFramesLost",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              "default": null,
-              "required": false
-            },
-            {
-              "type": "field",
-              "name": "fullFramesLost",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ]
-    },
+    "idlExtendedNames": {},
     "globals": {},
     "exposed": {},
     "dependencies": {
@@ -4723,10 +3993,11 @@
       "RTCPeerConnectionStats": [
         "RTCStats"
       ],
-      "RTCRtpTransceiverStats": [],
+      "RTCRtpTransceiverStats": [
+        "RTCStats"
+      ],
       "RTCMediaHandlerStats": [
-        "RTCStats",
-        "RTCPriorityType"
+        "RTCStats"
       ],
       "RTCVideoHandlerStats": [
         "RTCMediaHandlerStats"
@@ -4734,12 +4005,8 @@
       "RTCVideoSenderStats": [
         "RTCVideoHandlerStats"
       ],
-      "RTCSenderVideoTrackAttachmentStats": [
-        "RTCVideoSenderStats"
-      ],
       "RTCVideoReceiverStats": [
-        "RTCVideoHandlerStats",
-        "DOMHighResTimeStamp"
+        "RTCVideoHandlerStats"
       ],
       "RTCAudioHandlerStats": [
         "RTCMediaHandlerStats"
@@ -4747,12 +4014,8 @@
       "RTCAudioSenderStats": [
         "RTCAudioHandlerStats"
       ],
-      "RTCSenderAudioTrackAttachmentStats": [
-        "RTCAudioSenderStats"
-      ],
       "RTCAudioReceiverStats": [
-        "RTCAudioHandlerStats",
-        "DOMHighResTimeStamp"
+        "RTCAudioHandlerStats"
       ],
       "RTCDataChannelStats": [
         "RTCStats",
@@ -4761,7 +4024,8 @@
       "RTCTransportStats": [
         "RTCStats",
         "RTCIceRole",
-        "RTCDtlsTransportState"
+        "RTCDtlsTransportState",
+        "RTCIceTransportState"
       ],
       "RTCSctpTransportStats": [
         "RTCStats"
@@ -4780,24 +4044,15 @@
       ],
       "RTCIceServerStats": [
         "RTCStats"
-      ],
-      "RTCMediaStreamStats": [
-        "RTCStats"
-      ],
-      "RTCReceiverVideoTrackAttachmentStats": [
-        "RTCVideoReceiverStats"
-      ],
-      "RTCReceiverAudioTrackAttachmentStats": [
-        "RTCAudioReceiverStats"
       ]
     },
     "externalDependencies": [
       "RTCStats",
       "DOMHighResTimeStamp",
-      "RTCPriorityType",
       "RTCDataChannelState",
       "RTCIceRole",
       "RTCDtlsTransportState",
+      "RTCIceTransportState",
       "RTCIceCandidateType"
     ],
     "hasObsoleteIdl": false

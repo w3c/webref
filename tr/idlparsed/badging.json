@@ -30,7 +30,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -78,7 +78,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -121,7 +121,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "void"
+                    "idlType": "undefined"
                   }
                 ]
               },
@@ -169,7 +169,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "void"
+                    "idlType": "undefined"
                   }
                 ]
               },
@@ -206,15 +206,19 @@
     "exposed": {},
     "dependencies": {
       "Navigator": [
+        "undefined",
         "NavigatorBadge"
       ],
-      "NavigatorBadge": [],
+      "NavigatorBadge": [
+        "undefined"
+      ],
       "WorkerNavigator": [
         "NavigatorBadge"
       ]
     },
     "externalDependencies": [
-      "Navigator"
+      "Navigator",
+      "undefined"
     ],
     "hasObsoleteIdl": false
   }
