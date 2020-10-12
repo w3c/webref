@@ -1346,7 +1346,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Crawled URL: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
-- Crawled version: 9 October 2020
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Shortname: css-ui-4
@@ -1393,7 +1393,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
 - Crawled URL: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
-- Crawled version: 9 October 2020
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-ui/](https://drafts.csswg.org/css-ui/)
 - Latest published version: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
 - Shortname: css-ui-3
