@@ -17,6 +17,20 @@
       "informative": false
     },
     {
+      "id": "font-representation-data-bytes",
+      "href": "https://wicg.github.io/local-font-access/#font-representation-data-bytes",
+      "linkingText": [
+        "data bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "font representation"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "font-representation-table-list",
       "href": "https://wicg.github.io/local-font-access/#font-representation-table-list",
       "linkingText": [
@@ -57,10 +71,10 @@
       "informative": false
     },
     {
-      "id": "font-table-data-bytes",
-      "href": "https://wicg.github.io/local-font-access/#font-table-data-bytes",
+      "id": "font-table-table-bytes",
+      "href": "https://wicg.github.io/local-font-access/#font-table-table-bytes",
       "linkingText": [
-        "data bytes"
+        "table bytes"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -137,10 +151,10 @@
       "informative": false
     },
     {
-      "id": "dom-permissionname-local-fonts",
-      "href": "https://wicg.github.io/local-font-access/#dom-permissionname-local-fonts",
+      "id": "dom-permissionname-font-access",
+      "href": "https://wicg.github.io/local-font-access/#dom-permissionname-font-access",
       "linkingText": [
-        "\"local-fonts\""
+        "\"font-access\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -269,21 +283,6 @@
       "informative": false
     },
     {
-      "id": "dom-fontmetadata-gettables-tables-tables",
-      "href": "https://wicg.github.io/local-font-access/#dom-fontmetadata-gettables-tables-tables",
-      "linkingText": [
-        "tables"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "FontMetadata/getTables(tables)",
-        "FontMetadata/getTables()"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "dom-fontmetadata-postscriptname",
       "href": "https://wicg.github.io/local-font-access/#dom-fontmetadata-postscriptname",
       "linkingText": [
@@ -326,24 +325,10 @@
       "informative": false
     },
     {
-      "id": "fonttablemap",
-      "href": "https://wicg.github.io/local-font-access/#fonttablemap",
+      "id": "dom-fontmetadata-blob",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontmetadata-blob",
       "linkingText": [
-        "FontTableMap"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-fontmetadata-gettables",
-      "href": "https://wicg.github.io/local-font-access/#dom-fontmetadata-gettables",
-      "linkingText": [
-        "getTables(tables)",
-        "getTables()",
-        "getTables(tableNames)"
+        "blob()"
       ],
       "localLinkingText": [],
       "type": "method",

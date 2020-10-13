@@ -24,14 +24,9 @@ interface FontIterator {
 
 [Exposed=(Window,Worker)]
 interface FontMetadata {
-  Promise<FontTableMap> getTables(optional sequence<ByteString> tables);
+  Promise<Blob> blob();
 
   readonly attribute USVString postscriptName;
   readonly attribute USVString fullName;
   readonly attribute USVString family;
-};
-
-[Exposed=(Window,Worker)]
-interface FontTableMap {
-  readonly maplike<ByteString, Blob>;
 };

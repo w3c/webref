@@ -10,14 +10,12 @@
         "Window": [
           "FontManager",
           "FontIterator",
-          "FontMetadata",
-          "FontTableMap"
+          "FontMetadata"
         ],
         "Worker": [
           "FontManager",
           "FontIterator",
-          "FontMetadata",
-          "FontTableMap"
+          "FontMetadata"
         ]
       }
     },
@@ -163,7 +161,7 @@
         "members": [
           {
             "type": "operation",
-            "name": "getTables",
+            "name": "blob",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -177,37 +175,11 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "FontTableMap"
+                  "idlType": "Blob"
                 }
               ]
             },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "tables",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "sequence",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": [
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "ByteString"
-                    }
-                  ]
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ],
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           },
@@ -276,57 +248,6 @@
           }
         ],
         "partial": false
-      },
-      "FontTableMap": {
-        "type": "interface",
-        "name": "FontTableMap",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "maplike",
-            "idlType": [
-              {
-                "type": null,
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "ByteString"
-              },
-              {
-                "type": null,
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "Blob"
-              }
-            ],
-            "arguments": [],
-            "extAttrs": [],
-            "readonly": true,
-            "async": false
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -350,14 +271,12 @@
       "Window": [
         "FontManager",
         "FontIterator",
-        "FontMetadata",
-        "FontTableMap"
+        "FontMetadata"
       ],
       "Worker": [
         "FontManager",
         "FontIterator",
-        "FontMetadata",
-        "FontTableMap"
+        "FontMetadata"
       ]
     },
     "dependencies": {
@@ -377,9 +296,6 @@
         "FontMetadata"
       ],
       "FontMetadata": [
-        "FontTableMap"
-      ],
-      "FontTableMap": [
         "Blob"
       ]
     },
