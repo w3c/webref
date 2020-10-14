@@ -1,12 +1,100 @@
 {
   "spec": {
-    "title": "CSS Basic User Interface Module Level 4",
-    "url": "https://drafts.csswg.org/css-ui/"
+    "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+    "url": "https://drafts.csswg.org/css-ui-3/"
   },
   "dfns": [
     {
+      "id": "propdef-box-sizing",
+      "href": "https://drafts.csswg.org/css-ui-3/#propdef-box-sizing",
+      "linkingText": [
+        "box-sizing"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-box-sizing-content-box",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-box-sizing-content-box",
+      "linkingText": [
+        "content-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "box-sizing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valdef-box-sizing-border-box",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-box-sizing-border-box",
+      "linkingText": [
+        "border-box"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "box-sizing"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "min-inner-width",
+      "href": "https://drafts.csswg.org/css-ui-3/#min-inner-width",
+      "linkingText": [
+        "min inner width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "max-inner-width",
+      "href": "https://drafts.csswg.org/css-ui-3/#max-inner-width",
+      "linkingText": [
+        "max inner width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "min-inner-height",
+      "href": "https://drafts.csswg.org/css-ui-3/#min-inner-height",
+      "linkingText": [
+        "min inner height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "max-inner-height",
+      "href": "https://drafts.csswg.org/css-ui-3/#max-inner-height",
+      "linkingText": [
+        "max inner height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "propdef-outline",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-outline",
+      "href": "https://drafts.csswg.org/css-ui-3/#propdef-outline",
       "linkingText": [
         "outline"
       ],
@@ -18,7 +106,7 @@
     },
     {
       "id": "propdef-outline-width",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-outline-width",
+      "href": "https://drafts.csswg.org/css-ui-3/#propdef-outline-width",
       "linkingText": [
         "outline-width"
       ],
@@ -30,7 +118,7 @@
     },
     {
       "id": "propdef-outline-style",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-outline-style",
+      "href": "https://drafts.csswg.org/css-ui-3/#propdef-outline-style",
       "linkingText": [
         "outline-style"
       ],
@@ -42,7 +130,7 @@
     },
     {
       "id": "propdef-outline-color",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-outline-color",
+      "href": "https://drafts.csswg.org/css-ui-3/#propdef-outline-color",
       "linkingText": [
         "outline-color"
       ],
@@ -53,20 +141,8 @@
       "informative": false
     },
     {
-      "id": "typedef-outline-line-style",
-      "href": "https://drafts.csswg.org/css-ui/#typedef-outline-line-style",
-      "linkingText": [
-        "<outline-line-style>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "valdef-outline-color-invert",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-outline-color-invert",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-outline-color-invert",
       "linkingText": [
         "invert"
       ],
@@ -80,7 +156,7 @@
     },
     {
       "id": "propdef-outline-offset",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-outline-offset",
+      "href": "https://drafts.csswg.org/css-ui-3/#propdef-outline-offset",
       "linkingText": [
         "outline-offset"
       ],
@@ -92,7 +168,7 @@
     },
     {
       "id": "propdef-resize",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#propdef-resize",
       "linkingText": [
         "resize"
       ],
@@ -103,8 +179,48 @@
       "informative": false
     },
     {
+      "id": "propdef-text-overflow",
+      "href": "https://drafts.csswg.org/css-ui-3/#propdef-text-overflow",
+      "linkingText": [
+        "text-overflow"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "overflow-clip",
+      "href": "https://drafts.csswg.org/css-ui-3/#overflow-clip",
+      "linkingText": [
+        "clip"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-overflow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "overflow-ellipsis",
+      "href": "https://drafts.csswg.org/css-ui-3/#overflow-ellipsis",
+      "linkingText": [
+        "ellipsis"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "text-overflow"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "propdef-cursor",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-cursor",
+      "href": "https://drafts.csswg.org/css-ui-3/#propdef-cursor",
       "linkingText": [
         "cursor"
       ],
@@ -116,7 +232,7 @@
     },
     {
       "id": "valdef-cursor-auto",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-auto",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-auto",
       "linkingText": [
         "auto"
       ],
@@ -130,7 +246,7 @@
     },
     {
       "id": "valdef-cursor-default",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-default",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-default",
       "linkingText": [
         "default"
       ],
@@ -144,7 +260,7 @@
     },
     {
       "id": "valdef-cursor-none",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-none",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-none",
       "linkingText": [
         "none"
       ],
@@ -158,7 +274,7 @@
     },
     {
       "id": "valdef-cursor-context-menu",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-context-menu",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-context-menu",
       "linkingText": [
         "context-menu"
       ],
@@ -172,7 +288,7 @@
     },
     {
       "id": "valdef-cursor-help",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-help",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-help",
       "linkingText": [
         "help"
       ],
@@ -186,7 +302,7 @@
     },
     {
       "id": "valdef-cursor-pointer",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-pointer",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-pointer",
       "linkingText": [
         "pointer"
       ],
@@ -200,7 +316,7 @@
     },
     {
       "id": "valdef-cursor-progress",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-progress",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-progress",
       "linkingText": [
         "progress"
       ],
@@ -214,7 +330,7 @@
     },
     {
       "id": "valdef-cursor-wait",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-wait",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-wait",
       "linkingText": [
         "wait"
       ],
@@ -228,7 +344,7 @@
     },
     {
       "id": "valdef-cursor-cell",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-cell",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-cell",
       "linkingText": [
         "cell"
       ],
@@ -242,7 +358,7 @@
     },
     {
       "id": "valdef-cursor-crosshair",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-crosshair",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-crosshair",
       "linkingText": [
         "crosshair"
       ],
@@ -256,7 +372,7 @@
     },
     {
       "id": "valdef-cursor-text",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-text",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-text",
       "linkingText": [
         "text"
       ],
@@ -270,7 +386,7 @@
     },
     {
       "id": "valdef-cursor-vertical-text",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-vertical-text",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-vertical-text",
       "linkingText": [
         "vertical-text"
       ],
@@ -284,7 +400,7 @@
     },
     {
       "id": "valdef-cursor-alias",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-alias",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-alias",
       "linkingText": [
         "alias"
       ],
@@ -298,7 +414,7 @@
     },
     {
       "id": "valdef-cursor-copy",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-copy",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-copy",
       "linkingText": [
         "copy"
       ],
@@ -312,7 +428,7 @@
     },
     {
       "id": "valdef-cursor-move",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-move",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-move",
       "linkingText": [
         "move"
       ],
@@ -326,7 +442,7 @@
     },
     {
       "id": "valdef-cursor-no-drop",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-no-drop",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-no-drop",
       "linkingText": [
         "no-drop"
       ],
@@ -340,7 +456,7 @@
     },
     {
       "id": "valdef-cursor-not-allowed",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-not-allowed",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-not-allowed",
       "linkingText": [
         "not-allowed"
       ],
@@ -354,7 +470,7 @@
     },
     {
       "id": "valdef-cursor-grab",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-grab",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-grab",
       "linkingText": [
         "grab"
       ],
@@ -368,7 +484,7 @@
     },
     {
       "id": "valdef-cursor-grabbing",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-grabbing",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-grabbing",
       "linkingText": [
         "grabbing"
       ],
@@ -382,7 +498,7 @@
     },
     {
       "id": "valdef-cursor-e-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-e-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-e-resize",
       "linkingText": [
         "e-resize"
       ],
@@ -396,7 +512,7 @@
     },
     {
       "id": "valdef-cursor-n-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-n-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-n-resize",
       "linkingText": [
         "n-resize"
       ],
@@ -410,7 +526,7 @@
     },
     {
       "id": "valdef-cursor-ne-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-ne-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-ne-resize",
       "linkingText": [
         "ne-resize"
       ],
@@ -424,7 +540,7 @@
     },
     {
       "id": "valdef-cursor-nw-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-nw-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-nw-resize",
       "linkingText": [
         "nw-resize"
       ],
@@ -438,7 +554,7 @@
     },
     {
       "id": "valdef-cursor-s-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-s-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-s-resize",
       "linkingText": [
         "s-resize"
       ],
@@ -452,7 +568,7 @@
     },
     {
       "id": "valdef-cursor-se-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-se-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-se-resize",
       "linkingText": [
         "se-resize"
       ],
@@ -466,7 +582,7 @@
     },
     {
       "id": "valdef-cursor-sw-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-sw-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-sw-resize",
       "linkingText": [
         "sw-resize"
       ],
@@ -480,7 +596,7 @@
     },
     {
       "id": "valdef-cursor-w-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-w-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-w-resize",
       "linkingText": [
         "w-resize"
       ],
@@ -494,7 +610,7 @@
     },
     {
       "id": "valdef-cursor-ew-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-ew-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-ew-resize",
       "linkingText": [
         "ew-resize"
       ],
@@ -508,7 +624,7 @@
     },
     {
       "id": "valdef-cursor-ns-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-ns-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-ns-resize",
       "linkingText": [
         "ns-resize"
       ],
@@ -522,7 +638,7 @@
     },
     {
       "id": "valdef-cursor-nesw-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-nesw-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-nesw-resize",
       "linkingText": [
         "nesw-resize"
       ],
@@ -536,7 +652,7 @@
     },
     {
       "id": "valdef-cursor-nwse-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-nwse-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-nwse-resize",
       "linkingText": [
         "nwse-resize"
       ],
@@ -550,7 +666,7 @@
     },
     {
       "id": "valdef-cursor-col-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-col-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-col-resize",
       "linkingText": [
         "col-resize"
       ],
@@ -564,7 +680,7 @@
     },
     {
       "id": "valdef-cursor-row-resize",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-row-resize",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-row-resize",
       "linkingText": [
         "row-resize"
       ],
@@ -578,7 +694,7 @@
     },
     {
       "id": "valdef-cursor-all-scroll",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-all-scroll",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-all-scroll",
       "linkingText": [
         "all-scroll"
       ],
@@ -592,7 +708,7 @@
     },
     {
       "id": "valdef-cursor-zoom-in",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-zoom-in",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-zoom-in",
       "linkingText": [
         "zoom-in"
       ],
@@ -606,7 +722,7 @@
     },
     {
       "id": "valdef-cursor-zoom-out",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-cursor-zoom-out",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-cursor-zoom-out",
       "linkingText": [
         "zoom-out"
       ],
@@ -620,7 +736,7 @@
     },
     {
       "id": "propdef-caret-color",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-caret-color",
+      "href": "https://drafts.csswg.org/css-ui-3/#propdef-caret-color",
       "linkingText": [
         "caret-color"
       ],
@@ -631,570 +747,16 @@
       "informative": false
     },
     {
-      "id": "propdef-caret-shape",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-caret-shape",
-      "linkingText": [
-        "caret-shape"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "character",
-      "href": "https://drafts.csswg.org/css-ui/#character",
-      "linkingText": [
-        "character"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "visible-character",
-      "href": "https://drafts.csswg.org/css-ui/#visible-character",
-      "linkingText": [
-        "visible character"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "valdef-caret-shape-auto",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-caret-shape-auto",
+      "id": "valdef-caret-color-auto",
+      "href": "https://drafts.csswg.org/css-ui-3/#valdef-caret-color-auto",
       "linkingText": [
         "auto"
       ],
       "localLinkingText": [],
       "type": "value",
       "for": [
-        "caret-shape"
+        "caret-color"
       ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-caret-shape-bar",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-caret-shape-bar",
-      "linkingText": [
-        "bar"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "caret-shape"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-caret-shape-block",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-caret-shape-block",
-      "linkingText": [
-        "block"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "caret-shape"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-caret-shape-underscore",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-caret-shape-underscore",
-      "linkingText": [
-        "underscore"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "caret-shape"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "propdef-caret",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-caret",
-      "linkingText": [
-        "caret"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "propdef-nav-up",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-nav-up",
-      "linkingText": [
-        "nav-up"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "propdef-nav-right",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-nav-right",
-      "linkingText": [
-        "nav-right"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "propdef-nav-down",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-nav-down",
-      "linkingText": [
-        "nav-down"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "propdef-nav-left",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-nav-left",
-      "linkingText": [
-        "nav-left"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "typedef-id",
-      "href": "https://drafts.csswg.org/css-ui/#typedef-id",
-      "linkingText": [
-        "<id>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "typedef-target-name",
-      "href": "https://drafts.csswg.org/css-ui/#typedef-target-name",
-      "linkingText": [
-        "<target-name>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "propdef-user-select",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-user-select",
-      "linkingText": [
-        "user-select"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "editable-element",
-      "href": "https://drafts.csswg.org/css-ui/#editable-element",
-      "linkingText": [
-        "editable element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "valdef-user-select-auto",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-user-select-auto",
-      "linkingText": [
-        "auto"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "user-select"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-user-select-text",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-user-select-text",
-      "linkingText": [
-        "text"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "user-select"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-user-select-none",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-user-select-none",
-      "linkingText": [
-        "none"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "user-select"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-user-select-contain",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-user-select-contain",
-      "linkingText": [
-        "contain"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "user-select"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-user-select-all",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-user-select-all",
-      "linkingText": [
-        "all"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "user-select"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "propdef--webkit-user-select",
-      "href": "https://drafts.csswg.org/css-ui/#propdef--webkit-user-select",
-      "linkingText": [
-        "-webkit-user-select"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "propdef-appearance",
-      "href": "https://drafts.csswg.org/css-ui/#propdef-appearance",
-      "linkingText": [
-        "appearance"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "widget",
-      "href": "https://drafts.csswg.org/css-ui/#widget",
-      "linkingText": [
-        "widget"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "native-appearance",
-      "href": "https://drafts.csswg.org/css-ui/#native-appearance",
-      "linkingText": [
-        "native appearance"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-none",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-none",
-      "linkingText": [
-        "none"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-auto",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-auto",
-      "linkingText": [
-        "auto"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-textfield",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-textfield",
-      "linkingText": [
-        "textfield"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-menulist-button",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-menulist-button",
-      "linkingText": [
-        "menulist-button"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "typedef-appearance-compat-auto",
-      "href": "https://drafts.csswg.org/css-ui/#typedef-appearance-compat-auto",
-      "linkingText": [
-        "<compat-auto>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-searchfield",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-searchfield",
-      "linkingText": [
-        "searchfield"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-textarea",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-textarea",
-      "linkingText": [
-        "textarea"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-push-button",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-push-button",
-      "linkingText": [
-        "push-button"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-slider-horizontal",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-slider-horizontal",
-      "linkingText": [
-        "slider-horizontal"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-checkbox",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-checkbox",
-      "linkingText": [
-        "checkbox"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-radio",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-radio",
-      "linkingText": [
-        "radio"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-square-button",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-square-button",
-      "linkingText": [
-        "square-button"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-menulist",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-menulist",
-      "linkingText": [
-        "menulist"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-listbox",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-listbox",
-      "linkingText": [
-        "listbox"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-meter",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-meter",
-      "linkingText": [
-        "meter"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-progress-bar",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-progress-bar",
-      "linkingText": [
-        "progress-bar"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "valdef-appearance-button",
-      "href": "https://drafts.csswg.org/css-ui/#valdef-appearance-button",
-      "linkingText": [
-        "button"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "appearance"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "propdef--webkit-appearance",
-      "href": "https://drafts.csswg.org/css-ui/#propdef--webkit-appearance",
-      "linkingText": [
-        "-webkit-appearance"
-      ],
-      "localLinkingText": [],
-      "type": "property",
-      "for": [],
       "access": "public",
       "informative": false
     }
