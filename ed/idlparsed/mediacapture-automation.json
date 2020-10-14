@@ -1,0 +1,211 @@
+{
+  "spec": {
+    "title": "Media Capture Automation",
+    "url": "https://w3c.github.io/mediacapture-automation/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "MockCapturePromptResult": {
+        "type": "enum",
+        "name": "MockCapturePromptResult",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "granted"
+          },
+          {
+            "type": "enum-value",
+            "value": "denied"
+          }
+        ],
+        "extAttrs": []
+      },
+      "MockCapturePromptResultConfiguration": {
+        "type": "dictionary",
+        "name": "MockCapturePromptResultConfiguration",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "getUserMedia",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MockCapturePromptResult"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "getDisplayMedia",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MockCapturePromptResult"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MockCaptureDeviceConfiguration": {
+        "type": "dictionary",
+        "name": "MockCaptureDeviceConfiguration",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "label",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "deviceId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "groupId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MockCameraConfiguration": {
+        "type": "dictionary",
+        "name": "MockCameraConfiguration",
+        "inheritance": "MockCaptureDeviceConfiguration",
+        "members": [
+          {
+            "type": "field",
+            "name": "defaultFrameRate",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": {
+              "type": "number",
+              "value": "30"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "facingMode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": "user"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MockMicrophoneConfiguration": {
+        "type": "dictionary",
+        "name": "MockMicrophoneConfiguration",
+        "inheritance": "MockCaptureDeviceConfiguration",
+        "members": [
+          {
+            "type": "field",
+            "name": "defaultSampleRate",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "44100"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "MockCapturePromptResultConfiguration": [
+        "MockCapturePromptResult"
+      ],
+      "MockCaptureDeviceConfiguration": [],
+      "MockCameraConfiguration": [
+        "MockCaptureDeviceConfiguration"
+      ],
+      "MockMicrophoneConfiguration": [
+        "MockCaptureDeviceConfiguration"
+      ]
+    },
+    "externalDependencies": [],
+    "hasObsoleteIdl": false
+  }
+}

@@ -1,18 +1,18 @@
 {
   "spec": {
-    "title": "CSS Basic User Interface Module Level 4",
-    "url": "https://drafts.csswg.org/css-ui/"
+    "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)",
+    "url": "https://drafts.csswg.org/css-ui-3/"
   },
   "headings": [
     {
       "id": "title",
       "level": "1",
-      "title": "CSS Basic User Interface Module Level 4"
+      "title": "CSS Basic User Interface Module Level 3 (CSS3 UI)"
     },
     {
       "id": "subtitle",
       "level": "2",
-      "title": "Editor’s Draft, 9 October 2020"
+      "title": "W3C Recommendation, 18 September 2020"
     },
     {
       "id": "abstract",
@@ -46,8 +46,23 @@
     },
     {
       "id": "values",
-      "level": "3",
+      "level": "2",
       "title": "Value Definitions"
+    },
+    {
+      "id": "box-model",
+      "level": "2",
+      "title": "Box Model addition"
+    },
+    {
+      "id": "box-sizing",
+      "level": "3",
+      "title": "Changing the Box Model: the box-sizing property"
+    },
+    {
+      "id": "box-sizing-example",
+      "level": "4",
+      "title": "Using box-sizing to evenly share space"
     },
     {
       "id": "outline-props",
@@ -80,14 +95,44 @@
       "title": "Offsetting the Outline: the outline-offset property"
     },
     {
-      "id": "resizing",
+      "id": "resizing-and-overflow",
       "level": "2",
-      "title": "Resizing"
+      "title": "Resizing & Overflow"
     },
     {
       "id": "resize",
       "level": "3",
       "title": "Resizing Boxes: the resize property"
+    },
+    {
+      "id": "text-overflow",
+      "level": "3",
+      "title": "Overflow Ellipsis: the text-overflow property"
+    },
+    {
+      "id": "bidi-ellipsis",
+      "level": "4",
+      "title": "Bidi ellipsis examples"
+    },
+    {
+      "id": "ellipsing-details",
+      "level": "4",
+      "title": "ellipsing details"
+    },
+    {
+      "id": "ellipsis-interaction",
+      "level": "4",
+      "title": "user interaction with ellipsis"
+    },
+    {
+      "id": "text-overflow-examples",
+      "level": "4",
+      "title": "text-overflow examples"
+    },
+    {
+      "id": "ellipsis-scrolling",
+      "level": "4",
+      "title": "ellipsis interaction with scrolling interfaces"
     },
     {
       "id": "pointing-keyboard",
@@ -120,79 +165,14 @@
       "title": "Coloring the Insertion Caret: the caret-color property"
     },
     {
-      "id": "caret-shape",
-      "level": "4",
-      "title": "Shape of the insertion caret: caret-shape"
-    },
-    {
-      "id": "caret",
-      "level": "4",
-      "title": "Insertion caret shorthand: caret"
-    },
-    {
       "id": "keyboard",
       "level": "3",
       "title": "Keyboard control"
     },
     {
-      "id": "nav-dir",
-      "level": "4",
-      "title": "Directional Focus Navigation: the nav-up, nav-right, nav-down, nav-left properties"
-    },
-    {
-      "id": "example-positioned-buttons",
-      "level": "5",
-      "title": "Example: positioned buttons"
-    },
-    {
-      "id": "example-moving-focus-to-inside-a-frame",
-      "level": "5",
-      "title": "Example: moving focus to inside a frame"
-    },
-    {
       "id": "input-method-editor",
       "level": "4",
       "title": "Obsolete: the ime-mode property"
-    },
-    {
-      "id": "user-interaction",
-      "level": "2",
-      "title": "User Interaction"
-    },
-    {
-      "id": "content-selection",
-      "level": "3",
-      "title": "Controlling content selection"
-    },
-    {
-      "id": "styling-widgets",
-      "level": "2",
-      "title": "Styling Widgets"
-    },
-    {
-      "id": "appearance-switching",
-      "level": "3",
-      "title": "Switching appearance"
-    },
-    {
-      "id": "appearance-decorative",
-      "level": "4",
-      "title": "Effects of appearance on Decorative Aspects of Elements"
-    },
-    {
-      "id": "appearance-semantics",
-      "level": "4",
-      "title": "Effects of appearance on Semantic Aspects of Elements"
-    },
-    {
-      "id": "control-specific-rules",
-      "level": "3",
-      "title": "Control Specific Rules"
-    },
-    {
-      "id": "input-rules",
-      "level": "4",
-      "title": "Single-Line Text Input Controls"
     },
     {
       "id": "acknowledgments",
@@ -203,21 +183,6 @@
       "id": "changes",
       "level": "2",
       "title": "Appendix B. Changes"
-    },
-    {
-      "id": "changes-2-1-2020",
-      "level": "3",
-      "title": "Changes from the 2 January 2020 Working Draft"
-    },
-    {
-      "id": "changes-22-12-2017",
-      "level": "3",
-      "title": "Changes from the 22 December 2017 Working Draft"
-    },
-    {
-      "id": "changes-22-09-2015",
-      "level": "3",
-      "title": "Changes from the 22 Sep 2015 First Public Working Draft"
     },
     {
       "id": "security-privacy-considerations",
@@ -298,11 +263,6 @@
       "id": "property-index",
       "level": "2",
       "title": "Property Index"
-    },
-    {
-      "id": "issues-index",
-      "level": "2",
-      "title": "Issues Index"
     }
   ]
 }

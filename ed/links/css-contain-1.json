@@ -1,7 +1,7 @@
 {
   "spec": {
-    "title": "CSS Containment Module Level 2",
-    "url": "https://drafts.csswg.org/css-contain/"
+    "title": "CSS Containment Module Level 1",
+    "url": "https://drafts.csswg.org/css-contain-1/"
   },
   "links": {
     "https://www.w3.org/TR/CSS/": [
@@ -20,14 +20,12 @@
     ],
     "https://www.w3.org/2004/01/pp-impl/32061/status": [],
     "https://www.w3.org/2020/Process-20200915/": [],
+    "https://drafts.csswg.org/css-contain-1/issues-2019-cr.html": [],
+    "https://drafts.csswg.org/css-contain-1/implementation-report-2019-09": [],
     "https://www.w3.org/TR/CSS2/": [
       "property-defs",
       "propdef-vertical-align",
-      "propdef-content",
-      "value-def-open-quote",
-      "value-def-close-quote",
-      "value-def-no-open-quote",
-      "value-def-no-close-quote",
+      "padding-edge",
       "style-sheet",
       "user-agent",
       "ignore"
@@ -53,8 +51,7 @@
       "animation-type"
     ],
     "https://www.w3.org/TR/css-pseudo-4/": [
-      "generated-content",
-      "highlight-pseudos"
+      "generated-content"
     ],
     "https://svgwg.org/svg2-draft/struct.html": [
       "elementdef-svg"
@@ -78,8 +75,11 @@
       "propdef-width",
       "propdef-height",
       "intrinsic-size",
-      "sizing-property",
-      "valdef-width-auto"
+      "sizing-property"
+    ],
+    "https://drafts.csswg.org/css2/": [
+      "valdef-height-auto",
+      "stacking-context"
     ],
     "https://drafts.csswg.org/css-multicol-1/": [
       "propdef-columns"
@@ -113,20 +113,6 @@
       "propdef-overflow-x",
       "propdef-overflow-y"
     ],
-    "https://drafts.csswg.org/css-position-3/": [
-      "absolute-positioning-containing-block",
-      "fixed-positioning-containing-block",
-      "propdef-position",
-      "propdef-left"
-    ],
-    "https://drafts.csswg.org/css2/": [
-      "stacking-context",
-      "propdef-counter-increment",
-      "propdef-visibility"
-    ],
-    "https://drafts.csswg.org/css-lists-3/": [
-      "propdef-counter-set"
-    ],
     "https://drafts.csswg.org/css-backgrounds-3/": [
       "corner-clipping"
     ],
@@ -136,57 +122,51 @@
     "https://drafts.csswg.org/css-ui-3/": [
       "propdef-text-overflow"
     ],
-    "https://drafts.csswg.org/css-scoping-1/": [
-      "flat-tree"
-    ],
-    "https://svgwg.org/svg2-draft/interact.html": [
-      "PointerEventsProperty"
-    ],
-    "https://html.spec.whatwg.org/": [
-      "focus",
-      "update-the-rendering",
-      "the-iframe-element",
-      "dom-innertext"
-    ],
-    "https://drafts.csswg.org/cssom-view-1/": [
-      "dom-element-getboundingclientrect",
-      "dom-element-scrollintoview"
-    ],
-    "https://drafts.csswg.org/css-sizing-4/": [
-      "propdef-contain-intrinsic-size"
-    ],
-    "https://w3c.github.io/IntersectionObserver/": [
-      "intersectionobserver",
-      "intersectionobserver-intersection-root"
-    ],
-    "https://drafts.csswg.org/resize-observer-1/": [
-      "resizeobserver"
-    ],
     "https://www.w3.org/2001/tag/": [],
     "https://www.w3.org/TR/security-privacy-questionnaire/": [],
-    "https://www.w3.org/TR/2019/WD-css-contain-2-20191111/": [],
-    "https://www.w3.org/TR/css-contain-1/": [],
+    "https://www.w3.org/TR/2019/REC-css-contain-1-20191121/": [],
+    "https://www.w3.org/TR/2019/CR-css-contain-1-20190430/": [],
+    "https://drafts.csswg.org/css-contain-2/": [
+      "style-containment"
+    ],
+    "https://www.w3.org/TR/2018/CR-css-contain-1-20181108/": [],
+    "https://drafts.csswg.org/css-contain-1/issues-2018-11-cr.html": [],
+    "https://www.w3.org/TR/2018/CR-css-contain-1-20180524/": [],
+    "https://drafts.csswg.org/css-contain-1/issues-2018-cr.html": [],
+    "https://test.csswg.org/harness/review/css-contain-1_dev": [],
+    "https://www.w3.org/TR/2017/CR-css-contain-1-20170808/": [],
+    "https://drafts.csswg.org/css-contain-1/issues-2017-cr.html": [],
+    "https://github.com/web-platform-tests/wpt/pull/10549/commits/5b92ee3c170e3be239937a3ae069f37655ff6671": [],
+    "https://github.com/web-platform-tests/wpt/pull/10549/commits/d6a4f606a0501fe6ca526483a7a379ba2e9eaa1c": [],
+    "https://github.com/web-platform-tests/wpt/pull/10549/commits/d7fbc4794403dfeb55f13310d4c1cb51813e2d6e": [],
+    "https://github.com/web-platform-tests/wpt/pull/10549/commits/ba5a04e3d65f9f39c2d6431a9ece5eb15d22116b": [],
+    "https://github.com/web-platform-tests/wpt/pull/10549/commits/402a19bde8981a402d9dba73083f84d96e4aeeb9": [],
+    "https://github.com/web-platform-tests/wpt/pull/10549/commits/69b5681ee7aa5a028eb694b2c93bfd48c1ef08e4": [],
+    "https://github.com/web-platform-tests/wpt/pull/10549/commits/e2f844700a4a165f7ab6a0f021bbe1bf4d921cc0": [],
+    "https://github.com/web-platform-tests/wpt/pull/10549/commits/536f74e4137196b34d63752f5a9217e23c4fb899": [
+      "diff-bd8852c889db6d2b471bae58105f9374"
+    ],
+    "https://github.com/web-platform-tests/wpt/pull/10549/commits/7aad64ade18bce9db257c34d72c6dad126a9e9cd": [],
+    "https://github.com/web-platform-tests/wpt/pull/10549/commits/f6efd2ff775bea39e34b1b260959de618908046b": [],
+    "https://www.w3.org/TR/2017/WD-css-contain-1-20170419/": [],
+    "https://drafts.csswg.org/css-contain-1/issues-2017.html": [],
+    "https://www.w3.org/TR/2017/WD-css-contain-1-20170221/": [],
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
     "https://www.w3.org/TR/css-backgrounds-3/": [],
+    "https://www.w3.org/TR/css-contain-2/": [],
     "https://www.w3.org/TR/css-display-3/": [],
-    "https://www.w3.org/TR/css-lists-3/": [],
     "https://www.w3.org/TR/css-overflow-3/": [],
-    "https://www.w3.org/TR/css-position-3/": [],
-    "https://www.w3.org/TR/css-scoping-1/": [],
     "https://www.w3.org/TR/css-sizing-3/": [],
     "https://www.w3.org/TR/css-values-4/": [],
-    "https://www.w3.org/TR/cssom-view-1/": [],
-    "https://www.w3.org/TR/intersection-observer/": [],
-    "https://www.w3.org/TR/resize-observer-1/": [],
     "https://tools.ietf.org/html/rfc2119": [],
     "https://www.w3.org/TR/SVG2/": [],
+    "https://www.w3.org/TR/css-content-3/": [],
     "https://www.w3.org/TR/css-grid-1/": [],
     "https://www.w3.org/TR/css-multicol-1/": [],
     "https://www.w3.org/TR/css-overflow-4/": [],
     "https://www.w3.org/TR/css-page-3/": [],
     "https://www.w3.org/TR/css-regions-1/": [],
-    "https://www.w3.org/TR/css-sizing-4/": [],
     "https://www.w3.org/TR/css-ui-3/": [],
     "https://www.w3.org/TR/css-ui-4/": []
   }
