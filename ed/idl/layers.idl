@@ -156,12 +156,33 @@ dictionary XRMediaLayerInit {
   boolean invertStereo = false;
 };
 
+dictionary XRMediaQuadLayerInit : XRMediaLayerInit {
+  XRRigidTransform? transform;
+  float? width;
+  float? height;
+};
+
+dictionary XRMediaCylinderLayerInit : XRMediaLayerInit {
+  XRRigidTransform? transform;
+  float radius = 2.0;
+  float centralAngle = 0.78539;
+  float? aspectRatio;
+};
+
+dictionary XRMediaEquirectLayerInit : XRMediaLayerInit {
+  XRRigidTransform? transform;
+  float radius = 0.0;
+  float centralHorizontalAngle = 6.28318;
+  float upperVerticalAngle = 1.570795;
+  float lowerVerticalAngle = -1.570795;
+};
+
 [Exposed=Window] interface XRMediaBinding {
   constructor(XRSession session);
 
-  XRQuadLayer createQuadLayer(HTMLVideoElement video, XRMediaLayerInit init);
-  XRCylinderLayer createCylinderLayer(HTMLVideoElement video, XRMediaLayerInit init);
-  XREquirectLayer createEquirectLayer(HTMLVideoElement video, XRMediaLayerInit init);
+  XRQuadLayer createQuadLayer(HTMLVideoElement video, optional XRMediaQuadLayerInit init);
+  XRCylinderLayer createCylinderLayer(HTMLVideoElement video, optional XRMediaCylinderLayerInit init);
+  XREquirectLayer createEquirectLayer(HTMLVideoElement video, optional XRMediaEquirectLayerInit init);
 };
 
 [SecureContext, Exposed=Window] interface XRLayerEvent : Event {
