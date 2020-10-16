@@ -21,8 +21,8 @@ interface mixin BidirectionalStreamsTransport {
 interface mixin DatagramTransport {
     readonly attribute unsigned short maxDatagramSize;
     /* both streams are streams of Uint8Array objects */
-    readonly attribute ReadableStream readableDatagrams;
-    readonly attribute WritableStream writableDatagrams;
+    readonly attribute ReadableStream datagramReadable;
+    readonly attribute WritableStream datagramWritable;
 };
 
 [Exposed=(Window,Worker)]
