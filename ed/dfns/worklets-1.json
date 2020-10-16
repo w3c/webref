@@ -1,24 +1,108 @@
 {
   "spec": {
-    "title": "Worklets Level 1",
-    "url": "https://drafts.css-houdini.org/worklets/"
+    "title": "HTML Standard",
+    "url": "https://html.spec.whatwg.org/multipage/worklets.html"
   },
   "dfns": [
     {
-      "id": "worklet-global-scope",
-      "href": "https://drafts.css-houdini.org/worklets/#worklet-global-scope",
+      "id": "fake-worklet-1",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#fake-worklet-1",
       "linkingText": [
-        "worklet global scope"
+        "fake worklet 1"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false
+      "informative": true
+    },
+    {
+      "id": "fake-worklet-2",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#fake-worklet-2",
+      "linkingText": [
+        "fake worklet 2"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "fakeworklet1",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#fakeworklet1",
+      "linkingText": [
+        "fakeWorklet1"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "fakeworklet2",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#fakeworklet2",
+      "linkingText": [
+        "fakeWorklet2"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "fakeworkletglobalscope",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#fakeworkletglobalscope",
+      "linkingText": [
+        "FakeWorkletGlobalScope"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "registered-class-constructors-map",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#registered-class-constructors-map",
+      "linkingText": [
+        "registered class constructors map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "dom-fakeworkletglobalscope-registerfake",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#dom-fakeworkletglobalscope-registerfake",
+      "linkingText": [
+        "registerFake(type, classConstructor)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
+    },
+    {
+      "id": "fakeworkletglobalscope-process",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#fakeworkletglobalscope-process",
+      "linkingText": [
+        "find the opposite of true"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true
     },
     {
       "id": "workletglobalscope",
-      "href": "https://drafts.css-houdini.org/worklets/#workletglobalscope",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope",
       "linkingText": [
         "WorkletGlobalScope"
       ],
@@ -29,38 +113,10 @@
       "informative": false
     },
     {
-      "id": "workletglobalscope-owner-document",
-      "href": "https://drafts.css-houdini.org/worklets/#workletglobalscope-owner-document",
-      "linkingText": [
-        "owner document"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "WorkletGlobalScope"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "workletglobalscope-module-map",
-      "href": "https://drafts.css-houdini.org/worklets/#workletglobalscope-module-map",
+      "id": "concept-workletglobalscope-module-map",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#concept-workletglobalscope-module-map",
       "linkingText": [
         "module map"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "WorkletGlobalScope"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "worklet-global-scope-execution-environment",
-      "href": "https://drafts.css-houdini.org/worklets/#worklet-global-scope-execution-environment",
-      "linkingText": [
-        "worklet global scope execution environment"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -69,10 +125,22 @@
       "informative": false
     },
     {
-      "id": "create-a-workletglobalscope",
-      "href": "https://drafts.css-houdini.org/worklets/#create-a-workletglobalscope",
+      "id": "create-a-worklet-global-scope",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#create-a-worklet-global-scope",
       "linkingText": [
-        "create a WorkletGlobalScope"
+        "create a worklet global scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "terminate-a-worklet-global-scope",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#terminate-a-worklet-global-scope",
+      "linkingText": [
+        "terminate a worklet global scope"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -82,19 +150,19 @@
     },
     {
       "id": "set-up-a-worklet-environment-settings-object",
-      "href": "https://drafts.css-houdini.org/worklets/#set-up-a-worklet-environment-settings-object",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#set-up-a-worklet-environment-settings-object",
       "linkingText": [
         "set up a worklet environment settings object"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false
     },
     {
       "id": "worklet",
-      "href": "https://drafts.css-houdini.org/worklets/#worklet",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#worklet",
       "linkingText": [
         "Worklet"
       ],
@@ -105,38 +173,8 @@
       "informative": false
     },
     {
-      "id": "dom-worklet-addmodule-moduleurl-options-moduleurl",
-      "href": "https://drafts.css-houdini.org/worklets/#dom-worklet-addmodule-moduleurl-options-moduleurl",
-      "linkingText": [
-        "moduleURL"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Worklet/addModule(moduleURL, options)",
-        "Worklet/addModule(moduleURL)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dom-worklet-addmodule-moduleurl-options-options",
-      "href": "https://drafts.css-houdini.org/worklets/#dom-worklet-addmodule-moduleurl-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Worklet/addModule(moduleURL, options)",
-        "Worklet/addModule(moduleURL)"
-      ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "dictdef-workletoptions",
-      "href": "https://drafts.css-houdini.org/worklets/#dictdef-workletoptions",
+      "id": "workletoptions",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#workletoptions",
       "linkingText": [
         "WorkletOptions"
       ],
@@ -148,7 +186,7 @@
     },
     {
       "id": "dom-workletoptions-credentials",
-      "href": "https://drafts.css-houdini.org/worklets/#dom-workletoptions-credentials",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#dom-workletoptions-credentials",
       "linkingText": [
         "credentials"
       ],
@@ -162,7 +200,7 @@
     },
     {
       "id": "worklet-global-scope-type",
-      "href": "https://drafts.css-houdini.org/worklets/#worklet-global-scope-type",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#worklet-global-scope-type",
       "linkingText": [
         "worklet global scope type"
       ],
@@ -173,20 +211,8 @@
       "informative": false
     },
     {
-      "id": "worklets-workletglobalscopes",
-      "href": "https://drafts.css-houdini.org/worklets/#worklets-workletglobalscopes",
-      "linkingText": [
-        "worklet’s WorkletGlobalScopes"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
       "id": "worklet-destination-type",
-      "href": "https://drafts.css-houdini.org/worklets/#worklet-destination-type",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#worklet-destination-type",
       "linkingText": [
         "worklet destination type"
       ],
@@ -197,8 +223,34 @@
       "informative": false
     },
     {
-      "id": "module-responses-map",
-      "href": "https://drafts.css-houdini.org/worklets/#module-responses-map",
+      "id": "concept-worklet-global-scopes",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-global-scopes",
+      "linkingText": [
+        "global scopes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Worklet"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "concept-worklet-added-modules-list",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-added-modules-list",
+      "linkingText": [
+        "added modules list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "concept-worklet-module-responses-map",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#concept-worklet-module-responses-map",
       "linkingText": [
         "module responses map"
       ],
@@ -209,37 +261,10 @@
       "informative": false
     },
     {
-      "id": "pending-tasks-struct",
-      "href": "https://drafts.css-houdini.org/worklets/#pending-tasks-struct",
-      "linkingText": [
-        "pending tasks struct"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "pending-tasks-struct-counter",
-      "href": "https://drafts.css-houdini.org/worklets/#pending-tasks-struct-counter",
-      "linkingText": [
-        "counter"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "pending tasks struct"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "dom-worklet-addmodule",
-      "href": "https://drafts.css-houdini.org/worklets/#dom-worklet-addmodule",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#dom-worklet-addmodule",
       "linkingText": [
-        "addModule(moduleURL, options)",
-        "addModule(moduleURL)"
+        "addModule(moduleURL, options)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -250,54 +275,16 @@
       "informative": false
     },
     {
-      "id": "fetch-and-invoke-a-worklet-script",
-      "href": "https://drafts.css-houdini.org/worklets/#fetch-and-invoke-a-worklet-script",
+      "id": "concept-document-worklet-global-scopes",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#concept-document-worklet-global-scopes",
       "linkingText": [
-        "fetch and invoke a worklet script"
+        "worklet global scopes"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
       "informative": false
-    },
-    {
-      "id": "fetch-a-worklet-script",
-      "href": "https://drafts.css-houdini.org/worklets/#fetch-a-worklet-script",
-      "linkingText": [
-        "fetch a worklet script"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "registered-class-constructors-map",
-      "href": "https://drafts.css-houdini.org/worklets/#registered-class-constructors-map",
-      "linkingText": [
-        "registered class constructors map"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true
-    },
-    {
-      "id": "dom-fakeworkletglobalscope-registeranarbitaryclass",
-      "href": "https://drafts.css-houdini.org/worklets/#dom-fakeworkletglobalscope-registeranarbitaryclass",
-      "linkingText": [
-        "registerAnArbitaryClass(type, classConstructor)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "FakeWorkletGlobalScope"
-      ],
-      "access": "public",
-      "informative": true
     }
   ]
 }
