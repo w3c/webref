@@ -1948,7 +1948,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 5 October 2020
+- Crawled version: 16 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -3303,7 +3303,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-layout-api-1/](https://www.w3.org/TR/css-layout-api-1/)
 - Crawled URL: [https://drafts.css-houdini.org/css-layout-api-1/](https://drafts.css-houdini.org/css-layout-api-1/)
-- Crawled version: 18 August 2020
+- Crawled version: 16 October 2020
 - Editor's Draft: [https://drafts.css-houdini.org/css-layout-api-1/](https://drafts.css-houdini.org/css-layout-api-1/)
 - Latest published version: [https://www.w3.org/TR/css-layout-api-1/](https://www.w3.org/TR/css-layout-api-1/)
 - Shortname: css-layout-api-1
@@ -3970,7 +3970,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
 - Crawled URL: [https://drafts.css-houdini.org/css-paint-api-1/](https://drafts.css-houdini.org/css-paint-api-1/)
-- Crawled version: 18 August 2020
+- Crawled version: 16 October 2020
 - Editor's Draft: [https://drafts.css-houdini.org/css-paint-api-1/](https://drafts.css-houdini.org/css-paint-api-1/)
 - Latest published version: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
 - Shortname: css-paint-api-1
@@ -3986,7 +3986,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 
 ## CSS Parser API {data-spec=true data-ok=true}
@@ -4702,7 +4701,6 @@ Normative references to this spec from:
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Web App Manifest](https://w3c.github.io/manifest/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 
 Informative references to this spec from:
 
@@ -6089,7 +6087,6 @@ Normative references to this spec from:
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
@@ -6265,8 +6262,11 @@ Normative references to this spec from:
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebTransport](https://w3c.github.io/webtransport/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
 
 Informative references to this spec from:
 
@@ -6907,7 +6907,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 14 October 2020
+- Crawled version: 16 October 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -7151,7 +7151,6 @@ Normative references to this spec from:
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -7191,6 +7190,47 @@ Informative references to this spec from:
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - [WAI-ARIA Graphics Module](https://w3c.github.io/graphics-aria/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+
+
+## HTML Standard {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
+- Crawled URL: [https://html.spec.whatwg.org/multipage/worklets.html](https://html.spec.whatwg.org/multipage/worklets.html)
+- Crawled version: 16 October 2020
+- Editor's Draft: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
+- Latest published version: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
+- Shortname: worklets-1
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `undefined`
+- Missing references for WebIDL names: 
+     * `RequestCredentials` defined in [Fetch Standard](https://fetch.spec.whatwg.org/)
+- Missing references for links: 
+     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/)
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
+     * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
+     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
+- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
+
+Informative references to this spec from:
+
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## HTMLVideoElement.requestVideoFrameCallback() {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -7516,7 +7556,6 @@ Normative references to this spec from:
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -10927,28 +10966,6 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
-- Crawled URL: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
-- Crawled version: 07 October 2020
-- Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
-- Latest published version: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
-- Shortname: user-timing-3
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `undefined`
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## User Timing Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
-
-### Spec info {.info}
-
 - Initial URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Crawled URL: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Crawled version: 07 October 2020
@@ -10971,6 +10988,28 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
+
+
+## User Timing Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
+- Crawled URL: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
+- Crawled version: 07 October 2020
+- Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
+- Latest published version: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
+- Shortname: user-timing-3
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `undefined`
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## User-Agent Client Hints {data-spec=true data-ok=true}
@@ -11173,7 +11212,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 
 ## Web Authentication: An API for accessing Public Key Credentials - Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -11512,7 +11551,6 @@ Normative references to this spec from:
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
-- [Worklets Level 1](https://drafts.css-houdini.org/worklets/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -13326,40 +13364,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
-
-
-## Worklets Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
-- Crawled URL: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
-- Crawled version: 6 September 2020
-- Editor's Draft: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
-- Latest published version: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
-- Shortname: worklets-1
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `undefined`
-- Missing references for links: 
-     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
-- [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
-- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
-- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
-- [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
-- [Web Audio API](https://webaudio.github.io/web-audio-api/)
-
-Informative references to this spec from:
-
-- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## XMLHttpRequest Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
