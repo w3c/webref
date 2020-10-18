@@ -175,9 +175,18 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html) uses `Point2D` but does not reference [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [Content Index](https://wicg.github.io/content-index/spec/) uses `ImageResource` but does not reference [Image Resource](https://w3c.github.io/image-resource/)
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+- [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/) uses:
+    * `Worklet` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
+    * `WorkletGlobalScope` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
 - [CSS Fonts Module Level 3](https://drafts.csswg.org/css-fonts-3/) uses:
     * `CSSRule` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
     * `CSSStyleDeclaration` but does not reference [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/) uses:
+    * `Worklet` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
+    * `WorkletGlobalScope` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
+- [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/) uses:
+    * `Worklet` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
+    * `WorkletGlobalScope` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) uses `Gamepad` but does not reference [Gamepad](https://w3c.github.io/gamepad/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html) uses `RequestCredentials` but does not reference [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -235,7 +244,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/) uses `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 51 missing references for IDL definitions found in 24 specifications
+=> 57 missing references for IDL definitions found in 27 specifications
 
 
 ## Missing references based on document links
