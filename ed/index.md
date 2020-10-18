@@ -1097,7 +1097,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Animation Worklet API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## CSS Animation Worklet API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -1111,6 +1111,9 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `undefined`
+- Missing references for WebIDL names: 
+     * `Worklet` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
+     * `WorkletGlobalScope` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
 - Missing references for links: 
      * [`https://w3c.github.io/html/infrastructure.html`](https://w3c.github.io/html/infrastructure.html)
      * [`https://w3c.github.io/web-animations/level-2/`](https://w3c.github.io/web-animations/level-2/)
@@ -1948,7 +1951,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 5 October 2020
+- Crawled version: 16 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -3297,7 +3300,7 @@ Informative references to this spec from:
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 
 
-## CSS Layout API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## CSS Layout API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -3311,6 +3314,9 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `undefined`
+- Missing references for WebIDL names: 
+     * `Worklet` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
+     * `WorkletGlobalScope` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css-align-3/`](https://www.w3.org/TR/css-align-3/)
@@ -3363,7 +3369,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-lists-3/](https://www.w3.org/TR/css-lists-3/)
 - Crawled URL: [https://drafts.csswg.org/css-lists-3/](https://drafts.csswg.org/css-lists-3/)
-- Crawled version: 18 September 2020
+- Crawled version: 13 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-lists-3/](https://drafts.csswg.org/css-lists-3/)
 - Latest published version: [https://www.w3.org/TR/css-lists-3/](https://www.w3.org/TR/css-lists-3/)
 - Shortname: css-lists-3
@@ -3964,7 +3970,7 @@ Informative references to this spec from:
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 
 
-## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## CSS Painting API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -3978,6 +3984,9 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `undefined`
+- Missing references for WebIDL names: 
+     * `Worklet` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
+     * `WorkletGlobalScope` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4079,7 +4088,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-properties-values-api-1/](https://www.w3.org/TR/css-properties-values-api-1/)
 - Crawled URL: [https://drafts.css-houdini.org/css-properties-values-api-1/](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- Crawled version: 18 August 2020
+- Crawled version: 13 October 2020
 - Editor's Draft: [https://drafts.css-houdini.org/css-properties-values-api-1/](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - Latest published version: [https://www.w3.org/TR/css-properties-values-api-1/](https://www.w3.org/TR/css-properties-values-api-1/)
 - Shortname: css-properties-values-api-1
@@ -4106,7 +4115,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-pseudo-4/](https://www.w3.org/TR/css-pseudo-4/)
 - Crawled URL: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
-- Crawled version: 10 September 2020
+- Crawled version: 13 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
 - Latest published version: [https://www.w3.org/TR/css-pseudo-4/](https://www.w3.org/TR/css-pseudo-4/)
 - Shortname: css-pseudo-4
@@ -5125,7 +5134,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
 - Crawled URL: [https://drafts.css-houdini.org/css-typed-om-1/](https://drafts.css-houdini.org/css-typed-om-1/)
-- Crawled version: 18 August 2020
+- Crawled version: 16 October 2020
 - Editor's Draft: [https://drafts.css-houdini.org/css-typed-om-1/](https://drafts.css-houdini.org/css-typed-om-1/)
 - Latest published version: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
 - Shortname: css-typed-om-1
@@ -7222,11 +7231,14 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
+
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
-- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
-- [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 Informative references to this spec from:
 
