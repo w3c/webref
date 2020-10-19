@@ -11,11 +11,7 @@ dictionary PropertyDefinition {
 };
 
 partial namespace CSS {
-  void registerProperty(PropertyDefinition definition);
-};
-
-partial interface CSSRule {
-    const unsigned short PROPERTY_RULE = 18;
+  undefined registerProperty(PropertyDefinition definition);
 };
 
 [Exposed=Window]
