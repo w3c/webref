@@ -181,7 +181,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -208,34 +208,6 @@
           "extAttrs": [],
           "partial": true
         }
-      ],
-      "CSSRule": [
-        {
-          "type": "interface",
-          "name": "CSSRule",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "const",
-              "name": "PROPERTY_RULE",
-              "idlType": {
-                "type": "const-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned short"
-              },
-              "extAttrs": [],
-              "value": {
-                "type": "number",
-                "value": "18"
-              }
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
       ]
     },
     "globals": {},
@@ -247,9 +219,9 @@
     "dependencies": {
       "PropertyDefinition": [],
       "CSS": [
+        "undefined",
         "PropertyDefinition"
       ],
-      "CSSRule": [],
       "CSSPropertyRule": [
         "CSSRule",
         "CSSOMString"
@@ -257,6 +229,7 @@
     },
     "externalDependencies": [
       "CSS",
+      "undefined",
       "CSSRule",
       "CSSOMString"
     ],

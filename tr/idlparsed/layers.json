@@ -1714,6 +1714,231 @@
         "extAttrs": [],
         "partial": false
       },
+      "XRMediaQuadLayerInit": {
+        "type": "dictionary",
+        "name": "XRMediaQuadLayerInit",
+        "inheritance": "XRMediaLayerInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "transform",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "XRRigidTransform"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "width",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "height",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "XRMediaCylinderLayerInit": {
+        "type": "dictionary",
+        "name": "XRMediaCylinderLayerInit",
+        "inheritance": "XRMediaLayerInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "transform",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "XRRigidTransform"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "radius",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": {
+              "type": "number",
+              "value": "2.0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "centralAngle",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": {
+              "type": "number",
+              "value": "0.78539"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "aspectRatio",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "XRMediaEquirectLayerInit": {
+        "type": "dictionary",
+        "name": "XRMediaEquirectLayerInit",
+        "inheritance": "XRMediaLayerInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "transform",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "XRRigidTransform"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "radius",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": {
+              "type": "number",
+              "value": "0.0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "centralHorizontalAngle",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": {
+              "type": "number",
+              "value": "6.28318"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "upperVerticalAngle",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": {
+              "type": "number",
+              "value": "1.570795"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "lowerVerticalAngle",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": {
+              "type": "number",
+              "value": "-1.570795"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "XRMediaBinding": {
         "type": "interface",
         "name": "XRMediaBinding",
@@ -1779,10 +2004,10 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "XRMediaLayerInit"
+                  "idlType": "XRMediaQuadLayerInit"
                 },
                 "default": null,
-                "optional": false,
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -1827,10 +2052,10 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "XRMediaLayerInit"
+                  "idlType": "XRMediaCylinderLayerInit"
                 },
                 "default": null,
-                "optional": false,
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -1875,10 +2100,10 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "XRMediaLayerInit"
+                  "idlType": "XRMediaEquirectLayerInit"
                 },
                 "default": null,
-                "optional": false,
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -2168,13 +2393,27 @@
         "XRSpace",
         "XRLayerLayout"
       ],
+      "XRMediaQuadLayerInit": [
+        "XRMediaLayerInit",
+        "XRRigidTransform"
+      ],
+      "XRMediaCylinderLayerInit": [
+        "XRMediaLayerInit",
+        "XRRigidTransform"
+      ],
+      "XRMediaEquirectLayerInit": [
+        "XRMediaLayerInit",
+        "XRRigidTransform"
+      ],
       "XRMediaBinding": [
         "XRSession",
         "XRQuadLayer",
         "HTMLVideoElement",
-        "XRMediaLayerInit",
+        "XRMediaQuadLayerInit",
         "XRCylinderLayer",
-        "XREquirectLayer"
+        "XRMediaCylinderLayerInit",
+        "XREquirectLayer",
+        "XRMediaEquirectLayerInit"
       ],
       "XRLayerEvent": [
         "Event",

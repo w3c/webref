@@ -1,31 +1,39 @@
-% Diff between report from "October 12, 2020" and reference report from "October 05, 2020"
+% Diff between report from "October 19, 2020" and reference report from "October 12, 2020"
 % Reffy
-% October 12, 2020
+% October 19, 2020
 
-## Badging API
+## CSS Properties and Values API Level 1
 
-- Initial URL: [https://w3c.github.io/badging/](https://w3c.github.io/badging/)
+- Initial URL: [https://www.w3.org/TR/css-properties-values-api-1/](https://www.w3.org/TR/css-properties-values-api-1/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/badging/](https://w3c.github.io/badging/)
-- Spec is OK: *INS* false / *DEL* true
+- Editor's Draft: [https://drafts.css-houdini.org/css-properties-values-api-1/](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- Unknown WebIDL names used: *INS* undefined
+- Missing references for links: *DEL* https://www.w3.org/TR/css3-color/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-values/
+
+
+## Media Capture Automation
+
+- Initial URL: [https://w3c.github.io/mediacapture-automation/](https://w3c.github.io/mediacapture-automation/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/mediacapture-automation/](https://w3c.github.io/mediacapture-automation/)
+- This specification was not in the reference crawl report.
+
+
+## The Screen Orientation API
+
+- Initial URL: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Unknown WebIDL names used: *INS* undefined
 
 
-## Identifiers for WebRTC's Statistics API
+## WebXR Hand Input Module - Level 1
 
-- Initial URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
+- Initial URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
+- Editor's Draft: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
 - Spec is OK: *INS* true / *DEL* false
-- Missing references for WebIDL names: *DEL* RTCPriorityType
-- Inconsistent references for links: *DEL* https://w3c.github.io/webrtc-pc/
-
-
-## WebRTC 1.0: Real-Time Communication Between Browsers
-
-- Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- Spec title: *INS* WebRTC 1.0: Real-Time Communication Between Browsers / *DEL* WebRTC 1.0: Real-time Communication Between Browsers
+- Inconsistent references for links: *DEL* https://w3c.github.io/ServiceWorker/
 
 
