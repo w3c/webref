@@ -7941,7 +7941,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Crawled URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
-- Crawled version: 26 September 2020
+- Crawled version: 19 October 2020
 - Editor's Draft: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Shortname: mathml-core
 
@@ -11169,7 +11169,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 01 September 2020
+- Crawled version: 19 October 2020
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest
