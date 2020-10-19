@@ -25,7 +25,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [],
               "extAttrs": [],
@@ -81,7 +81,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [],
               "extAttrs": [],
@@ -210,9 +210,12 @@
     "globals": {},
     "exposed": {},
     "dependencies": {
-      "Element": [],
+      "Element": [
+        "undefined"
+      ],
       "Document": [
-        "EventHandler"
+        "EventHandler",
+        "undefined"
       ],
       "DocumentOrShadowRoot": [
         "Element"
@@ -222,6 +225,7 @@
     },
     "externalDependencies": [
       "Element",
+      "undefined",
       "Document",
       "EventHandler",
       "DocumentOrShadowRoot",

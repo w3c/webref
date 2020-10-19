@@ -6,7 +6,13 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "XRHand",
+          "XRJointSpace",
+          "XRJointPose"
+        ]
+      }
     },
     "idlNames": {
       "XRHand": {
@@ -504,7 +510,17 @@
             }
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "XRJointSpace": {
@@ -512,7 +528,17 @@
         "name": "XRJointSpace",
         "inheritance": "XRSpace",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "XRJointPose": {
@@ -536,7 +562,17 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       }
     },
@@ -758,7 +794,13 @@
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "XRHand",
+        "XRJointSpace",
+        "XRJointPose"
+      ]
+    },
     "dependencies": {
       "XRInputSource": [
         "XRHand"
