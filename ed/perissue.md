@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% October 19, 2020
+% October 20, 2020
 
 375 specifications were crawled in this report.
 
@@ -545,6 +545,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/) but does not list it in its references
     * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
+    * [`https://www.w3.org/TR/2020/CR-css-grid-2-20200818/`](https://www.w3.org/TR/2020/CR-css-grid-2-20200818/) but does not list it in its references
     * [`https://www.w3.org/TR/2019/WD-css-grid-2-20191203/`](https://www.w3.org/TR/2019/WD-css-grid-2-20191203/) but does not list it in its references
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/) links to:
     * [`https://www.w3.org/TR/css-animations/`](https://www.w3.org/TR/css-animations/) but does not list it in its references
@@ -1002,7 +1003,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 623 missing references for links found in 172 specifications
+=> 624 missing references for links found in 172 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
