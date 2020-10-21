@@ -80,7 +80,6 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [Frame Timing](https://wicg.github.io/frame-timing/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/worklets.html)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Save Data API](https://wicg.github.io/savedata/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [SVG Markers](https://svgwg.org/specs/markers/)
 - [SVG Paths](https://svgwg.org/specs/paths/)
@@ -128,7 +127,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - [WebRTC Priority Control API](https://w3c.github.io/webrtc-priority/)
 
-=> 51 specifications found
+=> 50 specifications found
 
 
 
