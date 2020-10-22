@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-10-22T01:25:13.395Z",
+  "date": "2020-10-22T06:43:42.617Z",
   "stats": {
     "crawled": 368,
     "errors": 0,
@@ -1605,6 +1605,11 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
             }
           ],
           "informative": []
@@ -14611,6 +14616,11 @@
               "url": "https://www.w3.org/TR/generic-sensor/",
               "title": "Generic Sensor API",
               "crawled": "https://w3c.github.io/sensors/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
             }
           ]
         },
@@ -15420,6 +15430,11 @@
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
             },
             {
               "url": "https://immersive-web.github.io/dom-overlays/",
@@ -17271,6 +17286,11 @@
               "crawled": "https://w3c.github.io/webdriver/"
             },
             {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
+            },
+            {
               "url": "https://immersive-web.github.io/hit-test/",
               "title": "WebXR Hit Test Module",
               "crawled": "https://immersive-web.github.io/hit-test/"
@@ -17568,12 +17588,12 @@
               "crawled": "https://w3c.github.io/timing-entrytypes-registry/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-3/",
+              "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-2/",
+              "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             },
@@ -17601,6 +17621,11 @@
               "url": "https://w3c.github.io/webtransport/",
               "title": "WebTransport",
               "crawled": "https://w3c.github.io/webtransport/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
             }
           ],
           "informative": []
@@ -17705,6 +17730,111 @@
           "informative": []
         },
         "ok": true
+      }
+    },
+    {
+      "title": "HTML Standard",
+      "shortname": "worklets-1",
+      "date": "20 October 2020",
+      "url": "https://www.w3.org/TR/worklets-1/",
+      "release": {
+        "url": "https://www.w3.org/TR/worklets-1/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.css-houdini.org/worklets/",
+        "repository": "https://github.com/w3c/css-houdini-drafts",
+        "filename": "Overview.html"
+      },
+      "crawled": "https://html.spec.whatwg.org/multipage/worklets.html",
+      "report": {
+        "noNormativeRefs": true,
+        "noRefToWebIDL": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [
+          "undefined"
+        ],
+        "redefinedIdlNames": [
+          {
+            "name": "WorkletGlobalScope",
+            "refs": [
+              {
+                "url": "https://html.spec.whatwg.org/multipage/",
+                "title": "HTML Standard",
+                "crawled": "https://html.spec.whatwg.org/multipage/"
+              }
+            ]
+          },
+          {
+            "name": "Worklet",
+            "refs": [
+              {
+                "url": "https://html.spec.whatwg.org/multipage/",
+                "title": "HTML Standard",
+                "crawled": "https://html.spec.whatwg.org/multipage/"
+              }
+            ]
+          },
+          {
+            "name": "WorkletOptions",
+            "refs": [
+              {
+                "url": "https://html.spec.whatwg.org/multipage/",
+                "title": "HTML Standard",
+                "crawled": "https://html.spec.whatwg.org/multipage/"
+              }
+            ]
+          }
+        ],
+        "missingWebIdlRef": [
+          {
+            "name": "RequestCredentials",
+            "refs": [
+              {
+                "url": "https://fetch.spec.whatwg.org/",
+                "title": "Fetch Standard",
+                "crawled": "https://fetch.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [
+          "https://infra.spec.whatwg.org/",
+          "https://fetch.spec.whatwg.org/",
+          "https://w3c.github.io/webappsec-csp/",
+          "https://encoding.spec.whatwg.org/",
+          "https://url.spec.whatwg.org/"
+        ],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/CSP3/",
+              "title": "Content Security Policy Level 3",
+              "crawled": "https://w3c.github.io/webappsec-csp/"
+            },
+            {
+              "url": "https://www.w3.org/TR/permissions-policy-1/",
+              "title": "Permissions Policy",
+              "crawled": "https://w3c.github.io/webappsec-permissions-policy/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webaudio/",
+              "title": "Web Audio API",
+              "crawled": "https://webaudio.github.io/web-audio-api/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/WebIDL-1/",
+              "title": "Web IDL",
+              "crawled": "https://heycam.github.io/webidl/"
+            }
+          ]
+        },
+        "ok": false
       }
     },
     {
@@ -18775,12 +18905,12 @@
               "crawled": "https://url.spec.whatwg.org/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-3/",
+              "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-2/",
+              "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             },
@@ -18943,6 +19073,11 @@
               "url": "https://www.w3.org/TR/webxr-ar-module-1/",
               "title": "WebXR Augmented Reality Module - Level 1",
               "crawled": "https://immersive-web.github.io/webxr-ar-module/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
             },
             {
               "url": "https://immersive-web.github.io/dom-overlays/",
@@ -19135,111 +19270,6 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://webaudio.github.io/web-audio-api/"
-            }
-          ]
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "HTML Standard",
-      "shortname": "worklets-1",
-      "date": "20 October 2020",
-      "url": "https://www.w3.org/TR/worklets-1/",
-      "release": {
-        "url": "https://www.w3.org/TR/worklets-1/",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://drafts.css-houdini.org/worklets/",
-        "repository": "https://github.com/w3c/css-houdini-drafts",
-        "filename": "Overview.html"
-      },
-      "crawled": "https://html.spec.whatwg.org/multipage/worklets.html",
-      "report": {
-        "noNormativeRefs": true,
-        "noRefToWebIDL": true,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "undefined"
-        ],
-        "redefinedIdlNames": [
-          {
-            "name": "WorkletGlobalScope",
-            "refs": [
-              {
-                "url": "https://html.spec.whatwg.org/multipage/",
-                "title": "HTML Standard",
-                "crawled": "https://html.spec.whatwg.org/multipage/"
-              }
-            ]
-          },
-          {
-            "name": "Worklet",
-            "refs": [
-              {
-                "url": "https://html.spec.whatwg.org/multipage/",
-                "title": "HTML Standard",
-                "crawled": "https://html.spec.whatwg.org/multipage/"
-              }
-            ]
-          },
-          {
-            "name": "WorkletOptions",
-            "refs": [
-              {
-                "url": "https://html.spec.whatwg.org/multipage/",
-                "title": "HTML Standard",
-                "crawled": "https://html.spec.whatwg.org/multipage/"
-              }
-            ]
-          }
-        ],
-        "missingWebIdlRef": [
-          {
-            "name": "RequestCredentials",
-            "refs": [
-              {
-                "url": "https://fetch.spec.whatwg.org/",
-                "title": "Fetch Standard",
-                "crawled": "https://fetch.spec.whatwg.org/"
-              }
-            ]
-          }
-        ],
-        "missingLinkRef": [
-          "https://infra.spec.whatwg.org/",
-          "https://fetch.spec.whatwg.org/",
-          "https://w3c.github.io/webappsec-csp/",
-          "https://encoding.spec.whatwg.org/",
-          "https://url.spec.whatwg.org/"
-        ],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/CSP3/",
-              "title": "Content Security Policy Level 3",
-              "crawled": "https://w3c.github.io/webappsec-csp/"
-            },
-            {
-              "url": "https://www.w3.org/TR/permissions-policy-1/",
-              "title": "Permissions Policy",
-              "crawled": "https://w3c.github.io/webappsec-permissions-policy/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://webaudio.github.io/web-audio-api/"
-            }
-          ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/WebIDL-1/",
-              "title": "Web IDL",
-              "crawled": "https://heycam.github.io/webidl/"
             }
           ]
         },
@@ -20105,12 +20135,12 @@
               "crawled": "https://url.spec.whatwg.org/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-3/",
+              "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-2/",
+              "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             },
@@ -20198,6 +20228,11 @@
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
             },
             {
               "url": "https://immersive-web.github.io/webxr-hand-input/",
@@ -22328,12 +22363,12 @@
               "crawled": "https://w3c.github.io/timing-entrytypes-registry/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-3/",
+              "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-2/",
+              "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             }
@@ -22345,12 +22380,12 @@
               "crawled": "https://w3c.github.io/performance-timeline/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-3/",
+              "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-2/",
+              "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             }
@@ -23284,12 +23319,12 @@
               "crawled": "https://w3c.github.io/timing-entrytypes-registry/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-3/",
+              "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-2/",
+              "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             }
@@ -23506,6 +23541,11 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
             }
           ],
           "informative": []
@@ -23640,6 +23680,16 @@
               "url": "https://wicg.github.io/webhid/",
               "title": "WebHID API",
               "crawled": "https://wicg.github.io/webhid/"
+            },
+            {
+              "url": "https://wicg.github.io/webusb/",
+              "title": "WebUSB API",
+              "crawled": "https://wicg.github.io/webusb/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -23822,6 +23872,11 @@
               "url": "https://www.w3.org/TR/pointerevents3/",
               "title": "Pointer Events",
               "crawled": "https://w3c.github.io/pointerevents/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
             }
           ],
           "informative": [
@@ -24542,6 +24597,11 @@
               "url": "https://wicg.github.io/webusb/",
               "title": "WebUSB API",
               "crawled": "https://wicg.github.io/webusb/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
             }
           ],
           "informative": [
@@ -27533,75 +27593,6 @@
       }
     },
     {
-      "title": "Unicorn! · GitHub",
-      "shortname": "webxr",
-      "date": "22 October 2020",
-      "url": "https://www.w3.org/TR/webxr/",
-      "release": {
-        "url": "https://www.w3.org/TR/webxr/",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://immersive-web.github.io/webxr/",
-        "repository": "https://github.com/immersive-web/webxr",
-        "filename": "index.html"
-      },
-      "crawled": "https://immersive-web.github.io/webxr/",
-      "report": {
-        "noNormativeRefs": true,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://immersive-web.github.io/anchors/",
-              "title": "WebXR Anchors Module",
-              "crawled": "https://immersive-web.github.io/anchors/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webxr-ar-module-1/",
-              "title": "WebXR Augmented Reality Module - Level 1",
-              "crawled": "https://immersive-web.github.io/webxr-ar-module/"
-            },
-            {
-              "url": "https://immersive-web.github.io/dom-overlays/",
-              "title": "WebXR DOM Overlays Module",
-              "crawled": "https://immersive-web.github.io/dom-overlays/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webxr-gamepads-module-1/",
-              "title": "WebXR Gamepads Module - Level 1",
-              "crawled": "https://immersive-web.github.io/webxr-gamepads-module/"
-            },
-            {
-              "url": "https://immersive-web.github.io/webxr-hand-input/",
-              "title": "WebXR Hand Input Module - Level 1",
-              "crawled": "https://immersive-web.github.io/webxr-hand-input/"
-            },
-            {
-              "url": "https://immersive-web.github.io/hit-test/",
-              "title": "WebXR Hit Test Module",
-              "crawled": "https://immersive-web.github.io/hit-test/"
-            },
-            {
-              "url": "https://immersive-web.github.io/layers/",
-              "title": "WebXR Layers API Level 1",
-              "crawled": "https://immersive-web.github.io/layers/"
-            }
-          ],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "Upgrade Insecure Requests",
       "shortname": "upgrade-insecure-requests",
       "date": "11 May 2016",
@@ -28003,41 +27994,6 @@
     },
     {
       "title": "User Timing Level 3",
-      "shortname": "user-timing-3",
-      "date": "07 October 2020",
-      "url": "https://www.w3.org/TR/user-timing-3/",
-      "release": {
-        "url": "https://www.w3.org/TR/user-timing-3/",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/user-timing/",
-        "repository": "https://github.com/w3c/user-timing",
-        "filename": "index.html"
-      },
-      "crawled": "https://w3c.github.io/user-timing/",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "undefined"
-        ],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
-      "title": "User Timing Level 3",
       "shortname": "user-timing-2",
       "date": "07 October 2020",
       "url": "https://www.w3.org/TR/user-timing-2/",
@@ -28079,16 +28035,51 @@
               "crawled": "https://w3c.github.io/performance-timeline/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-3/",
+              "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-2/",
+              "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             }
           ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "User Timing Level 3",
+      "shortname": "user-timing-3",
+      "date": "07 October 2020",
+      "url": "https://www.w3.org/TR/user-timing-3/",
+      "release": {
+        "url": "https://www.w3.org/TR/user-timing-3/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/user-timing/",
+        "repository": "https://github.com/w3c/user-timing",
+        "filename": "index.html"
+      },
+      "crawled": "https://w3c.github.io/user-timing/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [
+          "undefined"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
         },
         "ok": false
       }
@@ -29594,12 +29585,12 @@
               "crawled": "https://url.spec.whatwg.org/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-3/",
+              "url": "https://www.w3.org/TR/user-timing-2/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             },
             {
-              "url": "https://www.w3.org/TR/user-timing-2/",
+              "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
             },
@@ -29772,6 +29763,11 @@
               "url": "https://www.w3.org/TR/webxr-ar-module-1/",
               "title": "WebXR Augmented Reality Module - Level 1",
               "crawled": "https://immersive-web.github.io/webxr-ar-module/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
             },
             {
               "url": "https://immersive-web.github.io/dom-overlays/",
@@ -30401,6 +30397,11 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
+            },
             {
               "url": "https://immersive-web.github.io/layers/",
               "title": "WebXR Layers API Level 1",
@@ -31420,6 +31421,11 @@
               "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/"
             },
             {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
+            },
+            {
               "url": "https://immersive-web.github.io/layers/",
               "title": "WebXR Layers API Level 1",
               "crawled": "https://immersive-web.github.io/layers/"
@@ -32348,7 +32354,7 @@
     {
       "title": "WebUSB API",
       "shortname": "webusb",
-      "date": "18 August 2020",
+      "date": "21 October 2020",
       "url": "https://wicg.github.io/webusb/",
       "nightly": {
         "url": "https://wicg.github.io/webusb/",
@@ -32374,6 +32380,13 @@
             "ref": {
               "name": "PERMISSIONS",
               "url": "https://www.w3.org/TR/permissions/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-permissions-policy/",
+            "ref": {
+              "name": "PERMISSIONS-POLICY-1",
+              "url": "https://www.w3.org/TR/permissions-policy-1/"
             }
           }
         ],
@@ -32442,11 +32455,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "XRFrame",
-          "XRRigidTransform",
-          "XRSpace"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
           {
@@ -32490,10 +32499,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "XRSession",
-          "XRView"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -32509,6 +32515,157 @@
               "url": "https://immersive-web.github.io/webxr-hand-input/",
               "title": "WebXR Hand Input Module - Level 1",
               "crawled": "https://immersive-web.github.io/webxr-hand-input/"
+            },
+            {
+              "url": "https://immersive-web.github.io/layers/",
+              "title": "WebXR Layers API Level 1",
+              "crawled": "https://immersive-web.github.io/layers/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
+            }
+          ]
+        },
+        "ok": true
+      }
+    },
+    {
+      "title": "WebXR Device API",
+      "shortname": "webxr",
+      "date": "21 October 2020",
+      "url": "https://www.w3.org/TR/webxr/",
+      "release": {
+        "url": "https://www.w3.org/TR/webxr/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://immersive-web.github.io/webxr/",
+        "repository": "https://github.com/immersive-web/webxr",
+        "filename": "index.html"
+      },
+      "crawled": "https://immersive-web.github.io/webxr/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [
+          "undefined"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [
+          {
+            "name": "WebGLRenderingContext",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "WebGLFramebuffer",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "WebGLContextAttributes",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "WebGLRenderingContextBase",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [
+          "https://w3c.github.io/orientation-sensor/",
+          "https://www.w3.org/TR/page-visibility-2/",
+          "https://w3c.github.io/page-visibility/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/permissions/",
+            "ref": {
+              "name": "PERMISSIONS",
+              "url": "https://www.w3.org/TR/permissions/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/hr-time/",
+            "ref": {
+              "name": "HR-TIME-2",
+              "url": "https://www.w3.org/TR/hr-time-2/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/requestidlecallback/",
+            "ref": {
+              "name": "REQUESTIDLECALLBACK",
+              "url": "https://www.w3.org/TR/requestidlecallback/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-permissions-policy/",
+            "ref": {
+              "name": "PERMISSIONS-POLICY-1",
+              "url": "https://www.w3.org/TR/permissions-policy-1/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://immersive-web.github.io/anchors/",
+              "title": "WebXR Anchors Module",
+              "crawled": "https://immersive-web.github.io/anchors/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr-ar-module-1/",
+              "title": "WebXR Augmented Reality Module - Level 1",
+              "crawled": "https://immersive-web.github.io/webxr-ar-module/"
+            },
+            {
+              "url": "https://immersive-web.github.io/dom-overlays/",
+              "title": "WebXR DOM Overlays Module",
+              "crawled": "https://immersive-web.github.io/dom-overlays/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr-gamepads-module-1/",
+              "title": "WebXR Gamepads Module - Level 1",
+              "crawled": "https://immersive-web.github.io/webxr-gamepads-module/"
+            },
+            {
+              "url": "https://immersive-web.github.io/webxr-hand-input/",
+              "title": "WebXR Hand Input Module - Level 1",
+              "crawled": "https://immersive-web.github.io/webxr-hand-input/"
+            },
+            {
+              "url": "https://immersive-web.github.io/hit-test/",
+              "title": "WebXR Hit Test Module",
+              "crawled": "https://immersive-web.github.io/hit-test/"
             },
             {
               "url": "https://immersive-web.github.io/layers/",
@@ -32538,10 +32695,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "XRSession",
-          "XRSessionInit"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -32582,9 +32736,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "XRInputSource"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [
           {
             "name": "GamepadMappingType",
@@ -32632,12 +32784,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "XRFrame",
-          "XRInputSource",
-          "XRPose",
-          "XRSpace"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -32646,7 +32793,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -32666,14 +32813,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "XRFrame",
-          "XRInputSource",
-          "XRPose",
-          "XRRigidTransform",
-          "XRSession",
-          "XRSpace"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -32682,7 +32822,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -32703,16 +32843,6 @@
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [
-          "XREye",
-          "XRFrame",
-          "XRLayer",
-          "XRRenderState",
-          "XRRigidTransform",
-          "XRSession",
-          "XRSpace",
-          "XRView",
-          "XRViewport",
-          "XRWebGLRenderingContext",
           "undefined"
         ],
         "redefinedIdlNames": [],
@@ -32731,7 +32861,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/webxr/",
+              "title": "WebXR Device API",
+              "crawled": "https://immersive-web.github.io/webxr/"
+            }
+          ],
           "informative": []
         },
         "ok": false
