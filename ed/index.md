@@ -5710,7 +5710,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
-- Crawled version: 21 October 2020
+- Crawled version: 22 October 2020
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Shortname: encoding
@@ -6569,7 +6569,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/worklets.html](https://html.spec.whatwg.org/multipage/worklets.html)
-- Crawled version: 20 October 2020
+- Crawled version: 22 October 2020
 - Editor's Draft: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
 - Latest published version: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
 - Shortname: worklets-1
@@ -6611,7 +6611,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 20 October 2020
+- Crawled version: 22 October 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
