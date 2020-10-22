@@ -797,6 +797,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 No informative reference to this spec from other specs.
 
@@ -5435,6 +5436,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 
 ## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -5629,6 +5631,7 @@ Normative references to this spec from:
 - [WebTransport](https://w3c.github.io/webtransport/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -6353,6 +6356,7 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [WebDriver](https://w3c.github.io/webdriver/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
@@ -6492,6 +6496,7 @@ Normative references to this spec from:
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebTransport](https://w3c.github.io/webtransport/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -6556,6 +6561,48 @@ This specification looks good!
 No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
+
+
+## HTML Standard {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
+- Crawled URL: [https://html.spec.whatwg.org/multipage/worklets.html](https://html.spec.whatwg.org/multipage/worklets.html)
+- Crawled version: 20 October 2020
+- Editor's Draft: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
+- Latest published version: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
+- Shortname: worklets-1
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Spec uses WebIDL but does not reference it normatively
+- Unknown WebIDL names used: `undefined`
+- WebIDL names also defined elsewhere: 
+    * `WorkletGlobalScope` also defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
+    * `Worklet` also defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
+    * `WorkletOptions` also defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- Missing references for WebIDL names: 
+     * `RequestCredentials` defined in [Fetch Standard](https://fetch.spec.whatwg.org/)
+- Missing references for links: 
+     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/)
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
+     * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
+     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
+
+Informative references to this spec from:
+
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## HTML Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -6805,6 +6852,7 @@ Normative references to this spec from:
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
@@ -6846,48 +6894,6 @@ Informative references to this spec from:
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - [WAI-ARIA Graphics Module](https://w3c.github.io/graphics-aria/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-
-
-## HTML Standard {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
-- Crawled URL: [https://html.spec.whatwg.org/multipage/worklets.html](https://html.spec.whatwg.org/multipage/worklets.html)
-- Crawled version: 20 October 2020
-- Editor's Draft: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
-- Latest published version: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
-- Shortname: worklets-1
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `undefined`
-- WebIDL names also defined elsewhere: 
-    * `WorkletGlobalScope` also defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
-    * `Worklet` also defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
-    * `WorkletOptions` also defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- Missing references for WebIDL names: 
-     * `RequestCredentials` defined in [Fetch Standard](https://fetch.spec.whatwg.org/)
-- Missing references for links: 
-     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/)
-     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
-     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
-     * [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/)
-     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
-- [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
-- [Web Audio API](https://webaudio.github.io/web-audio-api/)
-
-Informative references to this spec from:
-
-- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## HTMLVideoElement.requestVideoFrameCallback() {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
@@ -7210,6 +7216,7 @@ Normative references to this spec from:
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -8710,6 +8717,7 @@ Normative references to this spec from:
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [WebUSB API](https://wicg.github.io/webusb/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 No informative reference to this spec from other specs.
 
@@ -8752,6 +8760,8 @@ Normative references to this spec from:
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [WebHID API](https://wicg.github.io/webhid/)
+- [WebUSB API](https://wicg.github.io/webusb/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
@@ -8837,6 +8847,7 @@ Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Informative references to this spec from:
 
@@ -9204,6 +9215,7 @@ Normative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [WebUSB API](https://wicg.github.io/webusb/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Informative references to this spec from:
 
@@ -10415,36 +10427,6 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Unicorn! · GitHub {data-spec=true data-anomaly=true data-noNormativeRefs=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
-- Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 22 October 2020
-- Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
-- Shortname: webxr
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
-- [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
-- [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
-- [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
-- [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
-- [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
-
-No informative reference to this spec from other specs.
-
-
 ## Upgrade Insecure Requests {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -10563,28 +10545,6 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
-- Crawled URL: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
-- Crawled version: 07 October 2020
-- Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
-- Latest published version: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
-- Shortname: user-timing-3
-
-### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `undefined`
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## User Timing Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
-
-### Spec info {.info}
-
 - Initial URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Crawled URL: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Crawled version: 07 October 2020
@@ -10607,6 +10567,28 @@ Informative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
+
+
+## User Timing Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
+- Crawled URL: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
+- Crawled version: 07 October 2020
+- Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
+- Latest published version: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
+- Shortname: user-timing-3
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `undefined`
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## User-Agent Client Hints {data-spec=true data-ok=true}
@@ -11142,6 +11124,7 @@ Normative references to this spec from:
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
@@ -11494,6 +11477,7 @@ This specification looks good!
 
 Normative references to this spec from:
 
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -12127,6 +12111,7 @@ Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -12142,6 +12127,7 @@ Although they do not, the following specs should also normatively reference this
 - [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 Informative references to this spec from:
@@ -12680,7 +12666,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 18 August 2020
+- Crawled version: 21 October 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -12689,6 +12675,7 @@ No informative reference to this spec from other specs.
 - Unknown WebIDL names used: `undefined`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12722,7 +12709,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebXR Anchors Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true}
+## WebXR Anchors Module {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
 
 ### Spec info {.info}
 
@@ -12734,7 +12721,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `XRFrame`, `XRRigidTransform`, `XRSpace`
 - Missing references for WebIDL names: 
      * `XRHitTestResult` defined in [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 
@@ -12745,7 +12731,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebXR Augmented Reality Module - Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## WebXR Augmented Reality Module - Level 1 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -12758,7 +12744,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `XRSession`, `XRView`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12768,10 +12754,56 @@ Normative references to this spec from:
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
+Informative references to this spec from:
+
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
+
+
+## WebXR Device API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
+- Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
+- Crawled version: 21 October 2020
+- Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
+- Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
+- Shortname: webxr
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `undefined`
+- Missing references for WebIDL names: 
+     * `WebGLRenderingContext` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+     * `WebGLFramebuffer` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+     * `WebGLContextAttributes` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+     * `WebGLRenderingContextBase` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- Missing references for links: 
+     * [`https://w3c.github.io/orientation-sensor/`](https://w3c.github.io/orientation-sensor/)
+     * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
+     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+     * [`https://w3c.github.io/requestidlecallback/`](https://w3c.github.io/requestidlecallback/), related reference "REQUESTIDLECALLBACK" uses URL [`https://www.w3.org/TR/requestidlecallback/`](https://www.w3.org/TR/requestidlecallback/)
+     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
+- [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
+- [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
+- [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
+- [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
+- [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
+- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+
 No informative reference to this spec from other specs.
 
 
-## WebXR DOM Overlays Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
+## WebXR DOM Overlays Module {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -12783,7 +12815,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `XRSession`, `XRSessionInit`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 
@@ -12794,7 +12825,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebXR Gamepads Module - Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-inconsistentRef=true}
+## WebXR Gamepads Module - Level 1 {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -12807,7 +12838,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `XRInputSource`
 - WebIDL names also defined elsewhere: 
     * `GamepadMappingType` also defined in [Gamepad](https://w3c.github.io/gamepad/)
 - Inconsistent references for links: 
@@ -12820,7 +12850,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebXR Hand Input Module - Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## WebXR Hand Input Module - Level 1 {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -12832,7 +12862,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `XRFrame`, `XRInputSource`, `XRPose`, `XRSpace`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12841,7 +12871,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebXR Hit Test Module {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## WebXR Hit Test Module {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -12853,7 +12883,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `XRFrame`, `XRInputSource`, `XRPose`, `XRRigidTransform`, `XRSession`, `XRSpace`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12878,13 +12908,15 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `XREye`, `XRFrame`, `XRLayer`, `XRRenderState`, `XRRigidTransform`, `XRSession`, `XRSpace`, `XRView`, `XRViewport`, `XRWebGLRenderingContext`, `undefined`
+- Unknown WebIDL names used: `undefined`
 - Missing references for WebIDL names: 
      * `WebGLTexture` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 No informative reference to this spec from other specs.
 
