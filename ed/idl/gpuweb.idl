@@ -167,7 +167,7 @@ interface GPUTextureUsage {
     const GPUFlagsConstant COPY_DST          = 0x02;
     const GPUFlagsConstant SAMPLED           = 0x04;
     const GPUFlagsConstant STORAGE           = 0x08;
-    const GPUFlagsConstant OUTPUT_ATTACHMENT = 0x10;
+    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;
 };
 
 interface GPUTextureView {
@@ -926,7 +926,7 @@ interface GPUCanvasContext {
 dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {
     required GPUDevice device;
     required GPUTextureFormat format;
-    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.OUTPUT_ATTACHMENT
+    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT
 };
 
 interface GPUSwapChain {
