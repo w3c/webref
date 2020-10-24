@@ -1,454 +1,237 @@
 {
   "spec": {
-    "title": "CSS Backgrounds and Borders Module Level 3",
-    "url": "https://drafts.csswg.org/css-backgrounds/"
+    "title": "CSS Backgrounds and Borders Module Level 4",
+    "url": "https://drafts.csswg.org/css-backgrounds-4/"
   },
   "properties": {
-    "background-color": {
-      "name": "background-color",
-      "value": "<color>",
-      "initial": "transparent",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "computed color",
-      "animationType": "by computed value"
-    },
-    "background-image": {
-      "name": "background-image",
-      "value": "<bg-image>#",
-      "initial": "none",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "computed <image>",
-      "animationType": "discrete"
-    },
-    "background-repeat": {
-      "name": "background-repeat",
-      "value": "<repeat-style>#",
-      "initial": "repeat",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "list, each item a pair of keywords, one per dimension",
-      "animationType": "discrete"
-    },
-    "background-attachment": {
-      "name": "background-attachment",
-      "value": "<attachment>#",
-      "initial": "scroll",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "list, each item the keyword as specified",
-      "animationType": "discrete"
-    },
     "background-position": {
       "name": "background-position",
-      "value": "<bg-position>#",
-      "initial": "0% 0%",
+      "value": "<position>#",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
+    },
+    "background-position-x": {
+      "name": "background-position-x",
+      "value": "[ center | [ [ left | right | x-start | x-end ]? <length-percentage>? ]! ]#",
+      "initial": "0%",
       "appliesTo": "all elements",
       "inherited": "no",
-      "percentages": "refer to size of background positioning area minus size of background image; see text",
-      "computedValue": "list, each item a pair of offsets (horizontal and vertical) from the top left origin each given as a computed <length-percentage> value",
-      "animationType": "repeatable list"
+      "percentages": "refer to width of background positioning area minus width of background image",
+      "computedValue": "A list, each item consisting of: an offset given as a computed <length-percentage> value, plus an origin keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "background-position-y": {
+      "name": "background-position-y",
+      "value": "[ center | [ [ top | bottom | y-start | y-end ]? <length-percentage>? ]! ]#",
+      "initial": "0%",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to height of background positioning area minus height of background image",
+      "computedValue": "A list, each item consisting of: an offset given as a computed <length-percentage> value, plus an origin keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "background-position-inline": {
+      "name": "background-position-inline",
+      "value": "[ center | [ start | end ]? <length-percentage>? ]#",
+      "initial": "not applicable (initial value comes from physical property)",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to inline-size of background positioning area minus inline-size of background image",
+      "computedValue": "A list, each item consisting of: an offset given as a computed <length-percentage> value, plus an origin keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "background-position-block": {
+      "name": "background-position-block",
+      "value": "[ center | [ start | end ]? <length-percentage>? ]#",
+      "initial": "not applicable (initial value comes from physical property)",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to size of background positioning area minus size of background image",
+      "computedValue": "A list, each item consisting of: an offset given as a computed <length-percentage> value, plus an origin keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
     },
     "background-clip": {
       "name": "background-clip",
-      "value": "<box>#",
+      "value": "<bg-clip>#",
       "initial": "border-box",
       "appliesTo": "all elements",
       "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "list, each item a keyword as specified",
-      "animationType": "repeatable list"
-    },
-    "background-origin": {
-      "name": "background-origin",
-      "value": "<box>#",
-      "initial": "padding-box",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "list, each item a keyword as specified",
-      "animationType": "repeatable list"
-    },
-    "background-size": {
-      "name": "background-size",
-      "value": "<bg-size>#",
-      "initial": "auto",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "see text",
-      "computedValue": "list, each item a pair of sizes (one per axis) each represented as either a keyword or a computed <length-percentage> value",
-      "animationType": "repeatable list"
-    },
-    "background": {
-      "name": "background",
-      "value": "[<bg-layer># ,]? <final-bg-layer>",
-      "initial": "see individual properties",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties"
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
     },
     "border-top-color": {
       "name": "border-top-color",
-      "value": "<color>",
-      "initial": "currentColor",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "value": "<color>#",
+      "initial": "currentcolor",
+      "appliesTo": "all elements",
       "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "computed color",
-      "animationType": "by computed value"
+      "percentages": "n/a",
+      "computedValue": "the computed color",
+      "canonicalOrder": "per grammar",
+      "animationType": "see prose"
     },
     "border-right-color": {
       "name": "border-right-color",
-      "value": "<color>",
-      "initial": "currentColor",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "value": "<color>#",
+      "initial": "currentcolor",
+      "appliesTo": "all elements",
       "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "computed color",
-      "animationType": "by computed value"
+      "percentages": "n/a",
+      "computedValue": "the computed color",
+      "canonicalOrder": "per grammar",
+      "animationType": "see prose"
     },
     "border-bottom-color": {
       "name": "border-bottom-color",
-      "value": "<color>",
-      "initial": "currentColor",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "value": "<color>#",
+      "initial": "currentcolor",
+      "appliesTo": "all elements",
       "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "computed color",
-      "animationType": "by computed value"
+      "percentages": "n/a",
+      "computedValue": "the computed color",
+      "canonicalOrder": "per grammar",
+      "animationType": "see prose"
     },
     "border-left-color": {
       "name": "border-left-color",
-      "value": "<color>",
-      "initial": "currentColor",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
+      "value": "<color>#",
+      "initial": "currentcolor",
+      "appliesTo": "all elements",
       "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "computed color",
-      "animationType": "by computed value"
+      "percentages": "n/a",
+      "computedValue": "the computed color",
+      "canonicalOrder": "per grammar",
+      "animationType": "see prose"
     },
     "border-color": {
       "name": "border-color",
-      "value": "<color>{1,4}",
-      "initial": "(see individual properties)",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "see individual properties",
-      "animatable": "see individual properties"
-    },
-    "border-top-style": {
-      "name": "border-top-style",
-      "value": "<line-style>",
-      "initial": "none",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "specified keyword",
-      "animationType": "discrete"
-    },
-    "border-right-style": {
-      "name": "border-right-style",
-      "value": "<line-style>",
-      "initial": "none",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "specified keyword",
-      "animationType": "discrete"
-    },
-    "border-bottom-style": {
-      "name": "border-bottom-style",
-      "value": "<line-style>",
-      "initial": "none",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "specified keyword",
-      "animationType": "discrete"
-    },
-    "border-left-style": {
-      "name": "border-left-style",
-      "value": "<line-style>",
-      "initial": "none",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "specified keyword",
-      "animationType": "discrete"
-    },
-    "border-style": {
-      "name": "border-style",
-      "value": "<line-style>{1,4}",
-      "initial": "(see individual properties)",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties"
-    },
-    "border-top-width": {
-      "name": "border-top-width",
-      "value": "<line-width>",
-      "initial": "medium",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "absolute length; zero if the border style is none or hidden",
-      "animatable": "by computed value"
-    },
-    "border-right-width": {
-      "name": "border-right-width",
-      "value": "<line-width>",
-      "initial": "medium",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "absolute length; zero if the border style is none or hidden",
-      "animatable": "by computed value"
-    },
-    "border-bottom-width": {
-      "name": "border-bottom-width",
-      "value": "<line-width>",
-      "initial": "medium",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "absolute length; zero if the border style is none or hidden",
-      "animatable": "by computed value"
-    },
-    "border-left-width": {
-      "name": "border-left-width",
-      "value": "<line-width>",
-      "initial": "medium",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "absolute length; zero if the border style is none or hidden",
-      "animatable": "by computed value"
-    },
-    "border-width": {
-      "name": "border-width",
-      "value": "<line-width>{1,4}",
-      "initial": "(see individual properties)",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
+      "value": "<color>#{1,4}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
-      "animatable": "see individual properties"
-    },
-    "border-top": {
-      "name": "border-top",
-      "value": "<line-width> || <line-style> || <color>",
-      "initial": "See individual properties",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "see individual properties",
-      "animatable": "see individual properties"
-    },
-    "border-right": {
-      "name": "border-right",
-      "value": "<line-width> || <line-style> || <color>",
-      "initial": "See individual properties",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "see individual properties",
-      "animatable": "see individual properties"
-    },
-    "border-bottom": {
-      "name": "border-bottom",
-      "value": "<line-width> || <line-style> || <color>",
-      "initial": "See individual properties",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "see individual properties",
-      "animatable": "see individual properties"
-    },
-    "border-left": {
-      "name": "border-left",
-      "value": "<line-width> || <line-style> || <color>",
-      "initial": "See individual properties",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "see individual properties",
-      "animatable": "see individual properties"
-    },
-    "border": {
-      "name": "border",
-      "value": "<line-width> || <line-style> || <color>",
-      "initial": "See individual properties",
-      "appliesTo": "all elements except ruby base containers and ruby annotation containers",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "see individual properties",
-      "animatable": "see individual properties"
-    },
-    "border-top-left-radius": {
-      "name": "border-top-left-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
-      "initial": "0",
-      "appliesTo": "all elements (but see prose)",
-      "inherited": "no",
-      "percentages": "Refer to corresponding dimension of the border box.",
-      "computedValue": "pair of computed <length-percentage> values",
-      "animatable": "by computed value"
-    },
-    "border-top-right-radius": {
-      "name": "border-top-right-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
-      "initial": "0",
-      "appliesTo": "all elements (but see prose)",
-      "inherited": "no",
-      "percentages": "Refer to corresponding dimension of the border box.",
-      "computedValue": "pair of computed <length-percentage> values",
-      "animatable": "by computed value"
-    },
-    "border-bottom-right-radius": {
-      "name": "border-bottom-right-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
-      "initial": "0",
-      "appliesTo": "all elements (but see prose)",
-      "inherited": "no",
-      "percentages": "Refer to corresponding dimension of the border box.",
-      "computedValue": "pair of computed <length-percentage> values",
-      "animatable": "by computed value"
-    },
-    "border-bottom-left-radius": {
-      "name": "border-bottom-left-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
-      "initial": "0",
-      "appliesTo": "all elements (but see prose)",
-      "inherited": "no",
-      "percentages": "Refer to corresponding dimension of the border box.",
-      "computedValue": "pair of computed <length-percentage> values",
-      "animatable": "by computed value"
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
     },
     "border-radius": {
       "name": "border-radius",
       "value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?",
-      "initial": "see individual properties",
-      "appliesTo": "all elements (but see prose)",
-      "inherited": "no",
-      "percentages": "Refer to corresponding dimension of the border box.",
-      "computedValue": "see individual properties",
-      "animatable": "see individual properties"
-    },
-    "border-image-source": {
-      "name": "border-image-source",
-      "value": "none | <image>",
-      "initial": "none",
-      "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "the keyword none or the computed <image>",
-      "animationType": "discrete"
-    },
-    "border-image-slice": {
-      "name": "border-image-slice",
-      "value": "[<number [0,∞]> | <percentage [0,∞]>]{1,4} && fill?",
-      "initial": "100%",
-      "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
-      "inherited": "no",
-      "percentages": "refer to size of the border image",
-      "computedValue": "four values, each either a number or percentage; plus a fill keyword if specified",
-      "animationType": "by computed value"
-    },
-    "border-image-width": {
-      "name": "border-image-width",
-      "value": "[ <length-percentage [0,∞]> | <number [0,∞]> | auto ]{1,4}",
-      "initial": "1",
-      "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
-      "inherited": "no",
-      "percentages": "Relative to width/height of the border image area",
-      "computedValue": "four values, each either a number, the keyword auto, or a computed <length-percentage> value",
-      "animationType": "by computed value"
-    },
-    "border-image-outset": {
-      "name": "border-image-outset",
-      "value": "[ <length [0,∞]> | <number [0,∞]> ]{1,4}",
       "initial": "0",
-      "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
+      "appliesTo": "all elements, except table element when border-collapse is collapse",
       "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "four values, each a number or absolute length",
-      "animationType": "by computed value"
-    },
-    "border-image-repeat": {
-      "name": "border-image-repeat",
-      "value": "[ stretch | repeat | round | space ]{1,2}",
-      "initial": "stretch",
-      "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "two keywords, one per axis",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
       "animationType": "discrete"
     },
-    "border-image": {
-      "name": "border-image",
-      "value": "<'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>",
-      "initial": "See individual properties",
-      "appliesTo": "See individual properties",
+    "corner-shape": {
+      "name": "corner-shape",
+      "value": "[ round | angle ]{1,4}",
+      "initial": "round",
+      "appliesTo": "all elements, except table element when border-collapse is collapse",
       "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "See individual properties",
-      "animatable": "See individual properties"
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
     },
-    "box-shadow": {
-      "name": "box-shadow",
-      "value": "none | <shadow>#",
-      "initial": "none",
+    "corners": {
+      "name": "corners",
+      "value": "<'corner-shape'> || <'border-radius'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
+    },
+    "border-limit": {
+      "name": "border-limit",
+      "value": "all | [ sides | corners ] <length-percentage [0,∞]>? | [ top | right | bottom | left ] <length-percentage [0,∞]>",
+      "initial": "round",
+      "appliesTo": "all elements, except table element when border-collapse is collapse",
+      "inherited": "no",
+      "percentages": "relative to border-box",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "border-clip": {
+      "name": "border-clip",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "either the keyword none or a list, each item consisting of four absolute lengths plus a computed color and optionally also a inset keyword",
-      "animationType": "by computed value, treating none as a zero-item list and appending blank shadows (transparent 0 0 0 0) with a corresponding inset keyword as needed to match the longer list if the the shorter list is otherwise compatible with the longer one"
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "border-clip-top": {
+      "name": "border-clip-top",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "border-clip-right": {
+      "name": "border-clip-right",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "border-clip-bottom": {
+      "name": "border-clip-bottom",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "border-clip-left": {
+      "name": "border-clip-left",
+      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
     }
   },
   "descriptors": {},
   "valuespaces": {
-    "<bg-image>": {
-      "value": "<image> | none"
+    "<position>": {
+      "value": "[ [ left | center | right | top | bottom | start | end | <length-percentage> ] | [ left | center | right | x-start | x-end | <length-percentage> ] [ top | center | bottom | y-start | y-end | <length-percentage> ] | [ center | [ left | right | x-start | x-end ] <length-percentage>? ] && [ center | [ top | bottom | y-start | y-end ] <length-percentage>? ] | [ center | [ start | end ] <length-percentage>? ] [ center | [ start | end ] <length-percentage>? ] ]"
     },
-    "<repeat-style>": {
-      "value": "repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}"
-    },
-    "<attachment>": {
-      "value": "scroll | fixed | local"
-    },
-    "<bg-position>": {
-      "value": "[ left | center | right | top | bottom | <length-percentage> ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ] | [ center | [ left | right ] <length-percentage>? ] && [ center | [ top | bottom ] <length-percentage>? ]"
-    },
-    "<box>": {
-      "value": "border-box | padding-box | content-box"
-    },
-    "<bg-size>": {
-      "value": "[ <length-percentage [0,∞]> | auto ]{1,2} | cover | contain"
-    },
-    "<bg-layer>": {
-      "value": "<bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
-    },
-    "<final-bg-layer>": {
-      "value": "<\\'background-color'> || <bg-image> || <bg-position> [ / <bg-size> ]? || <repeat-style> || <attachment> || <box> || <box>"
-    },
-    "<line-style>": {
-      "value": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset"
-    },
-    "<line-width>": {
-      "value": "<length [0,∞]> | thin | medium | thick"
-    },
-    "<shadow>": {
-      "value": "<color>? && [<length>{2} <length [0,∞]>? <length>?] && inset?"
+    "<bg-clip>": {
+      "value": "<box> | border | text"
     }
   }
 }
