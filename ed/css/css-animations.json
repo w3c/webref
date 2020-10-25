@@ -1,13 +1,57 @@
 {
   "spec": {
-    "title": "CSS Animations Level 2",
-    "url": "https://drafts.csswg.org/css-animations-2/"
+    "title": "CSS Animations Level 1",
+    "url": "https://drafts.csswg.org/css-animations/"
   },
   "properties": {
-    "animation-composition": {
-      "name": "animation-composition",
-      "value": "<single-animation-composition>#",
-      "initial": "replace",
+    "animation-name": {
+      "name": "animation-name",
+      "value": "[ none | <keyframes-name> ]#",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item either a case-sensitive css identifier or the keyword none",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable"
+    },
+    "animation-duration": {
+      "name": "animation-duration",
+      "value": "<time>#",
+      "initial": "0s",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a duration",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable"
+    },
+    "animation-timing-function": {
+      "name": "animation-timing-function",
+      "value": "<easing-function>#",
+      "initial": "ease",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a computed <easing-function>",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable"
+    },
+    "animation-iteration-count": {
+      "name": "animation-iteration-count",
+      "value": "<single-animation-iteration-count>#",
+      "initial": "1",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item either a number or the keyword infinite",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable"
+    },
+    "animation-direction": {
+      "name": "animation-direction",
+      "value": "<single-animation-direction>#",
+      "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
@@ -15,31 +59,76 @@
       "canonicalOrder": "per grammar",
       "animationType": "not animatable"
     },
-    "animation-timeline": {
-      "name": "animation-timeline",
-      "value": "<single-animation-timeline>#",
-      "initial": "auto",
+    "animation-play-state": {
+      "name": "animation-play-state",
+      "value": "<single-animation-play-state>#",
+      "initial": "running",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "list, each item either a case-sensitive css identifier or the keywords none, auto.",
+      "computedValue": "list, each item a keyword as specified",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "not animatable"
+    },
+    "animation-delay": {
+      "name": "animation-delay",
+      "value": "<time>#",
+      "initial": "0s",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a duration",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable"
+    },
+    "animation-fill-mode": {
+      "name": "animation-fill-mode",
+      "value": "<single-animation-fill-mode>#",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item a keyword as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable"
+    },
+    "animation": {
+      "name": "animation",
+      "value": "<single-animation>#",
+      "initial": "see individual properties",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable"
     }
   },
   "descriptors": {},
   "valuespaces": {
-    "<single-animation-timeline>": {
-      "value": "auto | none | <timeline-name>"
+    "<keyframes-name>": {
+      "value": "<custom-ident> | <string>"
     },
-    "<single-animation-composition>": {
-      "value": "replace | add | accumulate"
+    "<keyframe-block>": {
+      "value": "<keyframe-selector># { <declaration-list> }"
+    },
+    "<keyframe-selector>": {
+      "value": "from | to | <percentage>"
+    },
+    "<single-animation-iteration-count>": {
+      "value": "infinite | <number>"
+    },
+    "<single-animation-direction>": {
+      "value": "normal | reverse | alternate | alternate-reverse"
+    },
+    "<single-animation-play-state>": {
+      "value": "running | paused"
+    },
+    "<single-animation-fill-mode>": {
+      "value": "none | forwards | backwards | both"
     },
     "<single-animation>": {
-      "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>"
-    },
-    "<timeline-name>": {
-      "prose": "Find the last timeline at-rule in document order with its name matching <timeline-name>. If such a timeline at-rule exists, then the animation’s timeline is a timeline as defined by that rule. Otherwise the animation is not associated with a timeline. <timeline-name> = <custom-ident> | <string>"
+      "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ]"
     }
   }
 }
