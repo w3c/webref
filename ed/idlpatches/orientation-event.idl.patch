@@ -1,0 +1,29 @@
+From ea0f23f43b8ffcf2b7118e53e7d990eba59205da Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Tue, 21 Jul 2020 19:49:05 +0200
+Subject: [PATCH] Drop duplicate PermissionState definition
+
+https://github.com/w3c/deviceorientation/pull/88
+---
+ ed/idl/orientation-event.idl | 5 -----
+ 1 file changed, 5 deletions(-)
+
+diff --git a/ed/idl/orientation-event.idl b/ed/idl/orientation-event.idl
+index 4cd4356d2..f6ff96f0e 100644
+--- a/ed/idl/orientation-event.idl
++++ b/ed/idl/orientation-event.idl
+@@ -25,11 +25,6 @@ dictionary DeviceOrientationEventInit : EventInit {
+     boolean absolute = false;
+ };
+ 
+-enum PermissionState {
+-    "granted",
+-    "denied",
+-};
+-
+ partial interface Window {
+     [SecureContext] attribute EventHandler ondeviceorientationabsolute;
+ };
+-- 
+2.30.0.365.g02bc693789-goog
+

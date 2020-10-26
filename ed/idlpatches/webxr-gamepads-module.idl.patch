@@ -1,0 +1,27 @@
+From ffcd7899ce4a736e0cca257415a5974c94547375 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Tue, 21 Jul 2020 20:43:48 +0200
+Subject: [PATCH] Remove duplicate enum GamepadMappingType
+
+https://github.com/immersive-web/webxr-gamepads-module/issues/6
+---
+ ed/idl/webxr-gamepads-module.idl | 6 ------
+ 1 file changed, 6 deletions(-)
+
+diff --git a/ed/idl/webxr-gamepads-module.idl b/ed/idl/webxr-gamepads-module.idl
+index f623c632b..f63921c01 100644
+--- a/ed/idl/webxr-gamepads-module.idl
++++ b/ed/idl/webxr-gamepads-module.idl
+@@ -6,9 +6,3 @@
+ partial interface XRInputSource {
+   [SameObject] readonly attribute Gamepad? gamepad;
+ };
+-
+-enum GamepadMappingType {
+-  "",            // Defined in the Gamepad API
+-  "standard",    // Defined in the Gamepad API
+-  "xr-standard",
+-};
+-- 
+2.30.0.365.g02bc693789-goog
+
