@@ -1,0 +1,65 @@
+From a2a36c82e56b8956f32710c0b5d76db2e68d3544 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Wed, 10 Feb 2021 13:24:47 +0100
+Subject: [PATCH] Remove trusted-types.idl overloads
+
+https://github.com/w3c/webappsec-trusted-types/issues/283
+---
+ ed/idl/trusted-types.idl | 44 ----------------------------------------
+ 1 file changed, 44 deletions(-)
+
+diff --git a/ed/idl/trusted-types.idl b/ed/idl/trusted-types.idl
+index ad6d1f998..665936739 100644
+--- a/ed/idl/trusted-types.idl
++++ b/ed/idl/trusted-types.idl
+@@ -98,47 +98,3 @@ partial interface mixin WindowOrWorkerGlobalScope {
+   long setTimeout(TrustedTimerHandler handler, optional long timeout = 0, any... arguments);
+   long setInterval(TrustedTimerHandler handler, optional long timeout = 0, any... arguments);
+ };
+-
+-[Exposed=(Window,Worker)]
+-partial interface Worker : EventTarget {
+-    constructor(ScriptURLString scriptURL, optional WorkerOptions options = {});
+-};
+-
+-[Exposed=(Window,Worker)]
+-partial interface SharedWorker : EventTarget {
+-  constructor(ScriptURLString scriptURL, optional (DOMString or WorkerOptions) options = {});
+-};
+-
+-[Exposed=Worker]
+-partial interface WorkerGlobalScope : EventTarget {
+-  void importScripts(ScriptURLString... urls);
+-};
+-
+-[SecureContext, Exposed=(Window,Worker)]
+-partial interface ServiceWorkerContainer : EventTarget {
+-   [NewObject] Promise<ServiceWorkerRegistration> register(ScriptURLString scriptURL, optional RegistrationOptions options = {});
+-};
+-
+-[Exposed=Window]
+-partial interface mixin SVGAnimatedString {
+-           attribute (DOMString or TrustedScriptURL) baseVal;
+-};
+-
+-partial interface Element {
+-  [CEReactions, TreatNullAs=EmptyString] attribute HTMLString outerHTML;
+-  [CEReactions] void insertAdjacentHTML(DOMString position, HTMLString text);
+-};
+-
+-partial interface mixin InnerHTML { // specified in a draft version at https://w3c.github.io/DOM-Parsing/#the-innerhtml-mixin
+-  [CEReactions, TreatNullAs=EmptyString] attribute HTMLString innerHTML;
+-};
+-
+-partial interface Range {
+-  [CEReactions, NewObject] DocumentFragment createContextualFragment(HTMLString fragment);
+-};
+-
+-[Exposed=Window]
+-interface DOMParser {
+-  constructor();
+-  [NewObject] Document parseFromString(HTMLString str, SupportedType type);
+-};
+-- 
+2.30.0.365.g02bc693789-goog
+

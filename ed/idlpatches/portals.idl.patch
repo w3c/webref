@@ -1,0 +1,26 @@
+From f7d204a5a5004b1fc1e8273c3e7b8220dc0a8ff1 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Tue, 21 Jul 2020 19:56:23 +0200
+Subject: [PATCH] Remove duplicate typedef MessageEventSource
+
+https://github.com/WICG/portals/issues/230
+---
+ ed/idl/portals.idl | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/ed/idl/portals.idl b/ed/idl/portals.idl
+index 0957b2a9c..d0b132889 100644
+--- a/ed/idl/portals.idl
++++ b/ed/idl/portals.idl
+@@ -43,8 +43,6 @@ dictionary PortalActivateEventInit : EventInit {
+     any data = null;
+ };
+ 
+-typedef (WindowProxy or MessagePort or ServiceWorker or HTMLPortalElement or PortalHost) MessageEventSource;
+-
+ partial interface mixin WindowEventHandlers {
+     attribute EventHandler onportalactivate;
+ };
+-- 
+2.30.0.365.g02bc693789-goog
+
