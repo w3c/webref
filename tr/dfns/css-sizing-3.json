@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "CSS Intrinsic & Extrinsic Sizing Module Level 3",
+    "title": "CSS Box Sizing Module Level 3",
     "url": "https://www.w3.org/TR/css-sizing-3/"
   },
   "dfns": [
@@ -20,7 +20,11 @@
       "id": "inner-size",
       "href": "https://www.w3.org/TR/css-sizing-3/#inner-size",
       "linkingText": [
-        "inner size"
+        "inner size",
+        "inner width",
+        "inner height",
+        "inner block size",
+        "inner inline size"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -32,7 +36,11 @@
       "id": "outer-size",
       "href": "https://www.w3.org/TR/css-sizing-3/#outer-size",
       "linkingText": [
-        "outer size"
+        "outer size",
+        "outer width",
+        "outer height",
+        "outer block size",
+        "outer inline size"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -342,6 +350,18 @@
       "informative": false
     },
     {
+      "id": "preferred-aspect-ratio",
+      "href": "https://www.w3.org/TR/css-sizing-3/#preferred-aspect-ratio",
+      "linkingText": [
+        "preferred aspect ratio"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "sizing-property",
       "href": "https://www.w3.org/TR/css-sizing-3/#sizing-property",
       "linkingText": [
@@ -604,6 +624,30 @@
       "informative": false
     },
     {
+      "id": "automatic-block-size",
+      "href": "https://www.w3.org/TR/css-sizing-3/#automatic-block-size",
+      "linkingText": [
+        "automatic block size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "automatic-inline-size",
+      "href": "https://www.w3.org/TR/css-sizing-3/#automatic-inline-size",
+      "linkingText": [
+        "automatic inline size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "automatic-minimum-size",
       "href": "https://www.w3.org/TR/css-sizing-3/#automatic-minimum-size",
       "linkingText": [
@@ -784,6 +828,18 @@
       "informative": false
     },
     {
+      "id": "extrinsic-sizing",
+      "href": "https://www.w3.org/TR/css-sizing-3/#extrinsic-sizing",
+      "linkingText": [
+        "Extrinsic sizing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "intrinsic-sizing",
       "href": "https://www.w3.org/TR/css-sizing-3/#intrinsic-sizing",
       "linkingText": [
@@ -800,18 +856,6 @@
       "href": "https://www.w3.org/TR/css-sizing-3/#dfn-intrinsic-sizes",
       "linkingText": [
         "intrinsic sizes"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "extrinsic-sizing",
-      "href": "https://www.w3.org/TR/css-sizing-3/#extrinsic-sizing",
-      "linkingText": [
-        "Extrinsic sizing"
       ],
       "localLinkingText": [],
       "type": "dfn",

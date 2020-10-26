@@ -1,31 +1,28 @@
 {
   "spec": {
-    "title": "CSS Intrinsic & Extrinsic Sizing Module Level 3",
+    "title": "CSS Box Sizing Module Level 3",
     "url": "https://www.w3.org/TR/css-sizing-3/"
   },
   "links": {
     "https://www.w3.org/TR/CSS/": [
       "future-proofing",
       "unstable",
-      "proprietary-extension",
-      "vendor-prefix"
+      "proprietary-extension"
     ],
     "https://www.w3.org/TR/": [],
+    "https://www.w3.org/Style/CSS/": [],
     "https://github.com/w3c/csswg-drafts/issues": [],
     "https://lists.w3.org/Archives/Public/public-css-archive/": [],
-    "https://lists.w3.org/Archives/Public/www-style/": [],
-    "https://www.w3.org/Style/CSS/members": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/2020/Process-20200915/": [],
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/32061/status": [],
-    "https://www.w3.org/2019/Process-20190301/": [],
-    "https://github.com/w3c/csswg-drafts/issues/1938": [],
-    "https://www.w3.org/TR/css3-multicol/": [
-      "propdef-column-width",
-      "pseudo-algorithm"
+    "https://www.w3.org/TR/css-multicol-1/": [
+      "propdef-column-width"
     ],
+    "https://github.com/w3c/csswg-drafts/issues/1938": [],
     "https://www.w3.org/TR/CSS2/": [
       "property-defs",
       "blockwidth",
@@ -34,10 +31,12 @@
       "the-height-property",
       "inline-replaced-width",
       "the-width-property",
-      "margin-properties",
-      "style-sheet",
-      "user-agent",
-      "ignore"
+      "margin-properties"
+    ],
+    "https://www.w3.org/TR/css-values-3/": [
+      "value-defs",
+      "length-value",
+      "percentage-value"
     ],
     "https://www.w3.org/TR/css-values-4/": [
       "css-wide-keywords",
@@ -51,59 +50,61 @@
       "inline-axis",
       "block-axis",
       "flow-relative",
-      "physical",
-      "vertical-writing-mode"
+      "physical"
     ],
     "https://www.w3.org/TR/css2/": [
       "box-dimensions"
     ],
     "https://www.w3.org/TR/css-display-3/": [
-      "css-box",
+      "box",
       "initial-containing-block",
       "containing-block",
+      "block-container",
+      "inline-box",
       "non-replaced",
       "inline",
       "display-type",
       "block-box",
       "propdef-display",
       "formatting-context",
-      "css-text-run",
+      "text-run",
       "replaced-element"
     ],
-    "https://www.w3.org/TR/css3-values/": [
-      "length-value",
-      "percentage-value"
+    "https://www.w3.org/TR/css3-multicol/": [
+      "pseudo-algorithm"
     ],
-    "https://www.w3.org/TR/css3-page/": [
+    "https://www.w3.org/TR/css-images-3/": [
+      "intrinsic-aspect-ratio",
+      "intrinsic-dimensions"
+    ],
+    "https://www.w3.org/TR/css-box-4/": [
+      "content-box",
+      "border-box",
+      "propdef-padding",
+      "margin",
+      "padding",
+      "margin-properties",
+      "padding-properties"
+    ],
+    "https://www.w3.org/TR/css-page-3/": [
       "at-ruledef-page",
       "descdef-page-size"
     ],
     "https://github.com/w3c/csswg-drafts/issues/820": [],
-    "https://drafts.csswg.org/css-values/": [
+    "https://www.w3.org/TR/css-values/": [
       "value-defs",
       "percentages"
     ],
-    "https://drafts.csswg.org/css-cascade/": [
+    "https://www.w3.org/TR/css-cascade/": [
       "initial-values",
       "inherited-property",
       "computed"
     ],
-    "https://drafts.csswg.org/web-animations/": [
+    "https://www.w3.org/TR/web-animations/": [
       "animation-type"
-    ],
-    "https://www.w3.org/TR/css-box-3/": [
-      "content-box",
-      "border-box",
-      "propdef-padding",
-      "margin-properties",
-      "padding-properties"
     ],
     "https://drafts.csswg.org/cssom-1/": [
       "resolved-value"
-    ],
-    "https://www.w3.org/TR/css-cascade-4/": [
-      "initial-value",
-      "computed-value"
     ],
     "https://www.w3.org/TR/css-flexbox-1/": [
       "propdef-flex-basis",
@@ -112,7 +113,7 @@
     "https://www.w3.org/TR/cssom-1/": [
       "dom-window-getcomputedstyle"
     ],
-    "https://www.w3.org/TR/css3-background/": [
+    "https://www.w3.org/TR/css-backgrounds-3/": [
       "propdef-border"
     ],
     "https://html.spec.whatwg.org/": [
@@ -131,20 +132,36 @@
     "https://www.w3.org/TR/css-ui-3/": [
       "box-sizing"
     ],
-    "https://www.w3.org/TR/CSS21/": [],
+    "https://www.w3.org/TR/CSS21/": [
+      "style-sheet",
+      "user-agent",
+      "ignore"
+    ],
+    "https://www.w3.org/TR/css-cascade-4/": [
+      "computed-value",
+      "initial-value"
+    ],
     "https://www.w3.org/TR/css-text-3/": [
       "soft-wrap-opportunity"
     ],
     "https://github.com/w3c/csswg-drafts/issues/1771": [],
     "https://github.com/w3c/csswg-drafts/issues/765": [],
+    "https://www.w3.org/TR/css-align-3/": [
+      "gutter"
+    ],
     "https://www.w3.org/TR/css-logical-1/": [
       "propdef-block-size",
       "propdef-max-block-size"
     ],
-    "https://www.w3.org/TR/css-grid-1/": [
+    "https://www.w3.org/TR/css-grid-2/": [
       "grid-item"
     ],
     "https://www.w3.org/TR/css-flexbox/": [],
+    "https://www.w3.org/TR/2019/WD-css-sizing-3-20190522/": [],
+    "https://github.com/w3c/csswg-drafts/issues/3973": [],
+    "https://github.com/w3c/csswg-drafts/issues/3731": [],
+    "https://github.com/w3c/csswg-drafts/issues/4217": [],
+    "https://github.com/w3c/csswg-drafts/issues/4218": [],
     "https://www.w3.org/TR/2018/WD-css-sizing-3-20180304/": [],
     "https://github.com/w3c/csswg-drafts/issues/1132": [],
     "https://github.com/w3c/csswg-drafts/issues/2384": [],
@@ -154,10 +171,6 @@
     "https://www.w3.org/TR/2017/WD-css-sizing-3-20170207/": [],
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
-    "https://www.w3.org/TR/css-page-3/": [],
-    "https://www.w3.org/TR/css-values-3/": [],
-    "https://www.w3.org/TR/css-multicol-1/": [],
-    "https://tools.ietf.org/html/rfc2119": [],
-    "https://www.w3.org/TR/css-backgrounds-3/": []
+    "https://tools.ietf.org/html/rfc2119": []
   }
 }

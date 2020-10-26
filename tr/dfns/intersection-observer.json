@@ -71,6 +71,102 @@
       "informative": false
     },
     {
+      "id": "intersectionobserver-intersection-root",
+      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver-intersection-root",
+      "linkingText": [
+        "intersection root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IntersectionObserver"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intersectionobserver-implicit-root",
+      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver-implicit-root",
+      "linkingText": [
+        "implicit root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IntersectionObserver"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intersectionobserver-explicit-root-observer",
+      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver-explicit-root-observer",
+      "linkingText": [
+        "explicit root observer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IntersectionObserver"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intersectionobserver-implicit-root-observer",
+      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver-implicit-root-observer",
+      "linkingText": [
+        "implicit root observer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IntersectionObserver"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intersectionobserver-same-origin-domain-target",
+      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver-same-origin-domain-target",
+      "linkingText": [
+        "same-origin-domain target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IntersectionObserver"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intersectionobserver-cross-origin-domain-target",
+      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver-cross-origin-domain-target",
+      "linkingText": [
+        "cross-origin-domain target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IntersectionObserver"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intersectionobserver",
+      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver",
+      "linkingText": [
+        "IntersectionObserver"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-intersectionobserver-intersectionobserver-callback-options-callback",
       "href": "https://www.w3.org/TR/intersection-observer/#dom-intersectionobserver-intersectionobserver-callback-options-callback",
       "linkingText": [
@@ -79,7 +175,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IntersectionObserver/IntersectionObserver(callback, options)"
+        "IntersectionObserver/IntersectionObserver(callback, options)",
+        "IntersectionObserver/constructor(callback, options)",
+        "IntersectionObserver/IntersectionObserver(callback)",
+        "IntersectionObserver/constructor(callback)"
       ],
       "access": "public",
       "informative": false
@@ -93,20 +192,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IntersectionObserver/IntersectionObserver(callback, options)"
+        "IntersectionObserver/IntersectionObserver(callback, options)",
+        "IntersectionObserver/constructor(callback, options)",
+        "IntersectionObserver/IntersectionObserver(callback)",
+        "IntersectionObserver/constructor(callback)"
       ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "intersectionobserver",
-      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver",
-      "linkingText": [
-        "IntersectionObserver"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false
     },
@@ -142,7 +232,10 @@
       "id": "dom-intersectionobserver-intersectionobserver",
       "href": "https://www.w3.org/TR/intersection-observer/#dom-intersectionobserver-intersectionobserver",
       "linkingText": [
-        "IntersectionObserver(callback, options)"
+        "IntersectionObserver(callback, options)",
+        "constructor(callback, options)",
+        "IntersectionObserver(callback)",
+        "constructor(callback)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -251,34 +344,6 @@
       "informative": false
     },
     {
-      "id": "intersectionobserver-intersection-root",
-      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver-intersection-root",
-      "linkingText": [
-        "intersection root"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "IntersectionObserver"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
-      "id": "intersectionobserver-implicit-root",
-      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver-implicit-root",
-      "linkingText": [
-        "implicit root"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "IntersectionObserver"
-      ],
-      "access": "private",
-      "informative": false
-    },
-    {
       "id": "intersectionobserver-root-intersection-rectangle",
       "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver-root-intersection-rectangle",
       "linkingText": [
@@ -305,10 +370,23 @@
       "informative": false
     },
     {
+      "id": "intersectionobserverentry",
+      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserverentry",
+      "linkingText": [
+        "IntersectionObserverEntry"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
       "id": "dom-intersectionobserverentry-intersectionobserverentry",
       "href": "https://www.w3.org/TR/intersection-observer/#dom-intersectionobserverentry-intersectionobserverentry",
       "linkingText": [
-        "IntersectionObserverEntry(intersectionObserverEntryInit)"
+        "IntersectionObserverEntry(intersectionObserverEntryInit)",
+        "constructor(intersectionObserverEntryInit)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -327,20 +405,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IntersectionObserverEntry/IntersectionObserverEntry(intersectionObserverEntryInit)"
+        "IntersectionObserverEntry/IntersectionObserverEntry(intersectionObserverEntryInit)",
+        "IntersectionObserverEntry/constructor(intersectionObserverEntryInit)"
       ],
-      "access": "public",
-      "informative": false
-    },
-    {
-      "id": "intersectionobserverentry",
-      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserverentry",
-      "linkingText": [
-        "IntersectionObserverEntry"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false
     },
@@ -757,6 +824,54 @@
       "informative": false
     },
     {
+      "id": "initialize-a-new-intersectionobserver",
+      "href": "https://www.w3.org/TR/intersection-observer/#initialize-a-new-intersectionobserver",
+      "linkingText": [
+        "initialize a new IntersectionObserver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "observe-a-target-element",
+      "href": "https://www.w3.org/TR/intersection-observer/#observe-a-target-element",
+      "linkingText": [
+        "observe a target Element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "unobserve-a-target-element",
+      "href": "https://www.w3.org/TR/intersection-observer/#unobserve-a-target-element",
+      "linkingText": [
+        "unobserve a target Element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "intersectionobserver-task-source",
+      "href": "https://www.w3.org/TR/intersection-observer/#intersectionobserver-task-source",
+      "linkingText": [
+        "IntersectionObserver task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
       "id": "queue-an-intersection-observer-task",
       "href": "https://www.w3.org/TR/intersection-observer/#queue-an-intersection-observer-task",
       "linkingText": [
@@ -809,6 +924,18 @@
       "href": "https://www.w3.org/TR/intersection-observer/#run-the-update-intersection-observations-steps",
       "linkingText": [
         "run the update intersection observations steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "pending-initial-intersectionobserver-targets",
+      "href": "https://www.w3.org/TR/intersection-observer/#pending-initial-intersectionobserver-targets",
+      "linkingText": [
+        "pending initial IntersectionObserver targets"
       ],
       "localLinkingText": [],
       "type": "dfn",

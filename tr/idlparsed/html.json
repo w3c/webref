@@ -167,6 +167,7 @@
           "MimeType",
           "ImageBitmap",
           "MessagePort",
+          "Worklet",
           "Storage",
           "External"
         ],
@@ -191,6 +192,9 @@
         ],
         "SharedWorker": [
           "SharedWorkerGlobalScope"
+        ],
+        "Worklet": [
+          "WorkletGlobalScope"
         ]
       }
     },
@@ -31091,6 +31095,148 @@
         ],
         "partial": false
       },
+      "WorkletGlobalScope": {
+        "type": "interface",
+        "name": "WorkletGlobalScope",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Worklet"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "Worklet": {
+        "type": "interface",
+        "name": "Worklet",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "addModule",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "moduleURL",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WorkletOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "WorkletOptions": {
+        "type": "dictionary",
+        "name": "WorkletOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "credentials",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RequestCredentials"
+            },
+            "default": {
+              "type": "string",
+              "value": "same-origin"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "Storage": {
         "type": "interface",
         "name": "Storage",
@@ -37121,6 +37267,7 @@
         "BroadcastChannel",
         "Worker",
         "SharedWorker",
+        "Worklet",
         "Storage",
         "StorageEvent",
         "HTMLMarqueeElement",
@@ -37165,6 +37312,9 @@
       "SharedWorker": [
         "SharedWorkerGlobalScope",
         "Worker"
+      ],
+      "Worklet": [
+        "WorkletGlobalScope"
       ]
     },
     "dependencies": {
@@ -38001,6 +38151,14 @@
         "NavigatorConcurrentHardware"
       ],
       "WorkerLocation": [],
+      "WorkletGlobalScope": [],
+      "Worklet": [
+        "undefined",
+        "WorkletOptions"
+      ],
+      "WorkletOptions": [
+        "RequestCredentials"
+      ],
       "Storage": [
         "undefined"
       ],

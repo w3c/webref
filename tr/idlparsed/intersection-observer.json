@@ -7,7 +7,8 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "IntersectionObserver"
+          "IntersectionObserver",
+          "IntersectionObserverEntry"
         ]
       },
       "functions": {}
@@ -22,7 +23,7 @@
           "generic": "",
           "nullable": false,
           "union": false,
-          "idlType": "void"
+          "idlType": "undefined"
         },
         "arguments": [
           {
@@ -75,6 +76,46 @@
         "inheritance": null,
         "members": [
           {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "callback",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "IntersectionObserverCallback"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "IntersectionObserverInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
             "type": "attribute",
             "name": "root",
             "idlType": {
@@ -82,8 +123,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": true,
-              "union": false,
-              "idlType": "Element"
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Document"
+                }
+              ]
             },
             "extAttrs": [],
             "special": "",
@@ -137,7 +195,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -169,7 +227,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -201,7 +259,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -235,45 +293,6 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "callback",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "IntersectionObserverCallback"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "IntersectionObserverInit"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ]
-          },
-          {
-            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
@@ -289,6 +308,28 @@
         "name": "IntersectionObserverEntry",
         "inheritance": null,
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "intersectionObserverEntryInit",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "IntersectionObserverEntryInit"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "attribute",
             "name": "time",
@@ -398,26 +439,12 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "intersectionObserverEntryInit",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "IntersectionObserverEntryInit"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ]
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
           }
         ],
         "partial": false
@@ -550,8 +577,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": true,
-              "union": false,
-              "idlType": "Element"
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Element"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Document"
+                }
+              ]
             },
             "default": {
               "type": "null"
@@ -629,7 +673,8 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "IntersectionObserver"
+        "IntersectionObserver",
+        "IntersectionObserverEntry"
       ]
     },
     "dependencies": {
@@ -637,6 +682,8 @@
         "IntersectionObserverCallback",
         "IntersectionObserverInit",
         "Element",
+        "Document",
+        "undefined",
         "IntersectionObserverEntry"
       ],
       "IntersectionObserverEntry": [
@@ -651,11 +698,14 @@
         "Element"
       ],
       "IntersectionObserverInit": [
-        "Element"
+        "Element",
+        "Document"
       ]
     },
     "externalDependencies": [
       "Element",
+      "Document",
+      "undefined",
       "DOMHighResTimeStamp",
       "DOMRectReadOnly",
       "DOMRectInit"
