@@ -1,8 +1,8 @@
 % Reffy crawl
 % Reffy
-% October 19, 2020
+% October 26, 2020
 
-375 specifications were crawled in this report.
+368 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
@@ -99,7 +99,6 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
 - [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/)
 - [CSS Font Loading Module Level 3](https://www.w3.org/TR/css-font-loading-3/)
-- [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3/)
 - [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
 - [CSS Regions Module Level 1](https://www.w3.org/TR/css-regions-1/)
@@ -156,7 +155,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [WebRTC Priority Control API](https://www.w3.org/TR/webrtc-priority/)
 - [WebXR Augmented Reality Module - Level 1](https://www.w3.org/TR/webxr-ar-module-1/)
 
-=> 61 specifications found
+=> 60 specifications found
 
 
 
@@ -177,9 +176,9 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `CSS` used in [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/), [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Parser API](https://wicg.github.io/css-parser-api/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - `CSSKeywordish` used in [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - `CSSOMString` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/), [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/), [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/), [CSS Transitions](https://www.w3.org/TR/css-transitions-1/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
-- `CSSRule` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/), [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/), [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3/), [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
+- `CSSRule` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/), [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/), [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - `CSSRuleList` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
-- `CSSStyleDeclaration` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/), [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3/), [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
+- `CSSStyleDeclaration` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/), [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
 - `CSSStyleRule` used in [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - `CSSStyleSheet` used in [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - `DOMException` used in [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
@@ -191,7 +190,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `Screen` used in [The Screen Fold API](https://w3c.github.io/screen-fold/), [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
 - `SupportedType` used in [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [Touch Events](https://www.w3.org/TR/touch-events/)
-- `undefined` used in [Badging API](https://w3c.github.io/badging/), [Clipboard API and events](https://www.w3.org/TR/clipboard-apis/), [Console Standard](https://console.spec.whatwg.org/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [DOM Standard](https://dom.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File and Directory Entries API](https://wicg.github.io/entries-api/), [File System Access](https://wicg.github.io/file-system-access/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [HTML Standard](https://html.spec.whatwg.org/multipage/), [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/), [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Pointer Events](https://www.w3.org/TR/pointerevents3/), [Portals](https://wicg.github.io/portals/), [Resource Timing Level 2](https://www.w3.org/TR/resource-timing-2/), [Screen Wake Lock API](https://www.w3.org/TR/screen-wake-lock/), [Selection API](https://www.w3.org/TR/selection-api/), [Streams Standard](https://streams.spec.whatwg.org/), [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/), [The Storage Access API](https://privacycg.github.io/storage-access/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 3](https://www.w3.org/TR/user-timing-3/), [Web NFC](https://w3c.github.io/web-nfc/), [Web Share API](https://www.w3.org/TR/web-share/), [Web Speech API](https://wicg.github.io/speech-api/), [WebGPU](https://gpuweb.github.io/gpuweb/), [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Layers API Level 1](https://immersive-web.github.io/layers/), [Worklets Level 1](https://www.w3.org/TR/worklets-1/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+- `undefined` used in [Badging API](https://w3c.github.io/badging/), [Clipboard API and events](https://www.w3.org/TR/clipboard-apis/), [Console Standard](https://console.spec.whatwg.org/), [Cookie Store API](https://wicg.github.io/cookie-store/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [DOM Standard](https://dom.spec.whatwg.org/), [Fetch Standard](https://fetch.spec.whatwg.org/), [File and Directory Entries API](https://wicg.github.io/entries-api/), [File System Access](https://wicg.github.io/file-system-access/), [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/), [HTML Standard](https://html.spec.whatwg.org/multipage/), [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/), [Intersection Observer](https://www.w3.org/TR/intersection-observer/), [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/), [Notifications API Standard](https://notifications.spec.whatwg.org/), [Pointer Events](https://www.w3.org/TR/pointerevents3/), [Portals](https://wicg.github.io/portals/), [Resource Timing Level 2](https://www.w3.org/TR/resource-timing-2/), [Screen Wake Lock API](https://www.w3.org/TR/screen-wake-lock/), [Selection API](https://www.w3.org/TR/selection-api/), [Streams Standard](https://streams.spec.whatwg.org/), [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/), [The Storage Access API](https://privacycg.github.io/storage-access/), [URL Standard](https://url.spec.whatwg.org/), [User Timing Level 3](https://www.w3.org/TR/user-timing-3/), [Web NFC](https://w3c.github.io/web-nfc/), [Web Share API](https://www.w3.org/TR/web-share/), [Web Speech API](https://wicg.github.io/speech-api/), [WebGPU](https://gpuweb.github.io/gpuweb/), [WebHID API](https://wicg.github.io/webhid/), [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/), [WebUSB API](https://wicg.github.io/webusb/), [WebXR Layers API Level 1](https://immersive-web.github.io/layers/), [Worklets Level 1](https://www.w3.org/TR/worklets-1/), [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 => 19 WebIDL names found
 
@@ -212,9 +211,12 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `MessageEventSource` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/) and [Portals](https://wicg.github.io/portals/)
 - `PermissionState` defined in [DeviceOrientation Event Specification](https://www.w3.org/TR/orientation-event/) and [Permissions](https://www.w3.org/TR/permissions/)
 - `RTCIceParameters` defined in [IceTransport Extensions for WebRTC](https://w3c.github.io/webrtc-ice/) and [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
+- `Worklet` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/) and [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
+- `WorkletGlobalScope` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/) and [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
+- `WorkletOptions` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/) and [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
 - `XRSessionMode` defined in [WebXR Augmented Reality Module - Level 1](https://www.w3.org/TR/webxr-ar-module-1/) and [WebXR Device API](https://www.w3.org/TR/webxr/)
 
-=> 12 WebIDL names found
+=> 15 WebIDL names found
 
 "There can be only one"...
 
@@ -377,13 +379,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/) links to:
-    * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
-    * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-color-3//`](https://www.w3.org/TR/css-color-3//) but does not list it in its references
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/) links to:
     * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216) but does not list it in its references
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
@@ -398,6 +393,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/) links to:
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
     * [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
     * [`https://www.w3.org/TR/css-flexbox/`](https://www.w3.org/TR/css-flexbox/) but does not list it in its references
@@ -429,17 +425,20 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-logical-1/`](https://www.w3.org/TR/css-logical-1/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
     * [`https://www.w3.org/TR/css-box-3/`](https://www.w3.org/TR/css-box-3/) but does not list it in its references
-- [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/) links to:
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/) links to:
+    * [`https://www.w3.org/TR/css2/`](https://www.w3.org/TR/css2/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-flexbox/`](https://www.w3.org/TR/css-flexbox/) but does not list it in its references
+- [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/) links to:
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/) links to:
     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
     * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
     * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/) but does not list it in its references
@@ -449,6 +448,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-conditional/`](https://www.w3.org/TR/css-conditional/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
     * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/) but does not list it in its references
     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/) but does not list it in its references
@@ -458,6 +458,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-conditional/`](https://www.w3.org/TR/css-conditional/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
     * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade-4/`](https://www.w3.org/TR/css-cascade-4/) but does not list it in its references
@@ -467,13 +468,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
-- [CSS Color Module Level 3](https://www.w3.org/TR/css-color-3/) links to:
-    * [`https://www.w3.org/TR/2008/REC-WCAG20-20081211/`](https://www.w3.org/TR/2008/REC-WCAG20-20081211/) but does not list it in its references
-    * [`https://www.w3.org/TR/2003/CR-css3-color-20030514/`](https://www.w3.org/TR/2003/CR-css3-color-20030514/) but does not list it in its references
-    * [`https://www.w3.org/TR/2011/REC-css3-color-20110607/`](https://www.w3.org/TR/2011/REC-css3-color-20110607/) but does not list it in its references
-    * [`https://www.w3.org/TR/2017/CR-css-ui-3-20170302/`](https://www.w3.org/TR/2017/CR-css-ui-3-20170302/) but does not list it in its references
-    * [`https://www.w3.org/TR/1999/REC-html401-19991224`](https://www.w3.org/TR/1999/REC-html401-19991224) but does not list it in its references
-    * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/) but does not list it in its references
 - [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/) links to:
     * [`https://www.w3.org/TR/css-color-3/`](https://www.w3.org/TR/css-color-3/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
@@ -484,13 +478,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2008/REC-CSS1-20080411`](https://www.w3.org/TR/2008/REC-CSS1-20080411) but does not list it in its references
     * [`https://www.w3.org/TR/2013/WD-css3-transitions-20130212/`](https://www.w3.org/TR/2013/WD-css3-transitions-20130212/) but does not list it in its references
 - [CSS Conditional Rules Module Level 4](https://www.w3.org/TR/css-conditional-4/) links to [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/) links to:
-    * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/) but does not list it in its references
-    * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
-    * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
@@ -523,6 +510,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/) links to:
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
     * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
     * [`https://www.w3.org/TR/css-display/`](https://www.w3.org/TR/css-display/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
@@ -538,14 +526,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but does not list it in its references
     * [`https://www.w3.org/TR/2013/WD-css3-fonts-20130212/`](https://www.w3.org/TR/2013/WD-css3-fonts-20130212/) but does not list it in its references
-- [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3/) links to:
-    * [`https://www.w3.org/TR/2002/WD-css3-fonts-20020802/`](https://www.w3.org/TR/2002/WD-css3-fonts-20020802/) but does not list it in its references
-    * [`https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/`](https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
-    * [`https://www.w3.org/TR/2005/REC-charmod-20050215/`](https://www.w3.org/TR/2005/REC-charmod-20050215/) but does not list it in its references
-    * [`https://www.w3.org/TR/2018/WD-charmod-norm-20180420/`](https://www.w3.org/TR/2018/WD-charmod-norm-20180420/) but does not list it in its references
-    * [`https://www.w3.org/TR/2017/WD-css-text-3-20170822/`](https://www.w3.org/TR/2017/WD-css-text-3-20170822/) but does not list it in its references
-    * [`https://www.w3.org/TR/2013/CR-css3-conditional-20130404/`](https://www.w3.org/TR/2013/CR-css3-conditional-20130404/) but does not list it in its references
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/) links to:
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
@@ -555,6 +535,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-regions/`](https://www.w3.org/TR/css3-regions/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-page/`](https://www.w3.org/TR/css3-page/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
     * [`https://www.w3.org/TR/2015/WD-css3-break-20150129/`](https://www.w3.org/TR/2015/WD-css3-break-20150129/) but does not list it in its references
@@ -589,14 +570,21 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-flexbox/`](https://www.w3.org/TR/css-flexbox/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
     * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-speech/`](https://www.w3.org/TR/css3-speech/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/) but does not list it in its references
     * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/) links to:
+    * [`https://www.w3.org/TR/css-grid-1/`](https://www.w3.org/TR/css-grid-1/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
     * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-speech/`](https://www.w3.org/TR/css3-speech/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/) but does not list it in its references
     * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
@@ -619,12 +607,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/) links to:
-    * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
-    * [`https://www.w3.org/TR/css2/`](https://www.w3.org/TR/css2/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-page/`](https://www.w3.org/TR/css3-page/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-flexbox/`](https://www.w3.org/TR/css-flexbox/) but does not list it in its references
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/) links to:
     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
@@ -724,6 +706,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
     * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
     * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
     * [`https://www.w3.org/TR/css-device-adapt/`](https://www.w3.org/TR/css-device-adapt/) but does not list it in its references
@@ -913,13 +896,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/) but does not list it in its references
     * [`https://www.w3.org/TR/2019/CR-css-values-3-20190131/`](https://www.w3.org/TR/2019/CR-css-values-3-20190131/) but does not list it in its references
 - [CSS Will Change Module Level 1](https://www.w3.org/TR/css-will-change-1/) links to [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/) links to:
-    * [`https://www.w3.org/TR/css-logical-1/`](https://www.w3.org/TR/css-logical-1/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-flexbox/`](https://www.w3.org/TR/css3-flexbox/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-page/`](https://www.w3.org/TR/css3-page/) but does not list it in its references
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/) links to:
     * [`https://www.w3.org/TR/css-logical-1/`](https://www.w3.org/TR/css-logical-1/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
@@ -980,7 +956,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://spec.whatwg.org/`](https://spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
 - [Intersection Observer](https://www.w3.org/TR/intersection-observer/) links to:
-    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
     * [`https://www.w3.org/TR/css-masking-1/`](https://www.w3.org/TR/css-masking-1/) but does not list it in its references
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/) links to [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html) but does not list it in its references
@@ -993,12 +968,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Long Tasks API 1](https://www.w3.org/TR/longtasks-1/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [Magnetometer](https://www.w3.org/TR/magnetometer/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/) links to [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but does not list it in its references
-- [Media Queries](https://www.w3.org/TR/css3-mediaqueries/) links to:
-    * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/) but does not list it in its references
-    * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/) but does not list it in its references
-    * [`https://www.w3.org/TR/1999/REC-html401-19991224`](https://www.w3.org/TR/1999/REC-html401-19991224) but does not list it in its references
-    * [`https://www.w3.org/TR/2012/WD-html5-20120329/`](https://www.w3.org/TR/2012/WD-html5-20120329/) but does not list it in its references
-    * [`https://www.w3.org/TR/2010/REC-xml-stylesheet-20101028/`](https://www.w3.org/TR/2010/REC-xml-stylesheet-20101028/) but does not list it in its references
 - [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/) links to [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [Media Source Extensions™](https://www.w3.org/TR/media-source/) links to [`https://w3c.github.io/encrypted-media/`](https://w3c.github.io/encrypted-media/) but does not list it in its references
 - [MediaStream Recording](https://www.w3.org/TR/mediastream-recording/) links to:
@@ -1059,6 +1028,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/selection-api/`](https://w3c.github.io/selection-api/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
     * [`https://www.w3.org/TR/2013/REC-css-style-attr-20131107/`](https://www.w3.org/TR/2013/REC-css-style-attr-20131107/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
     * [`https://www.w3.org/TR/css-position-3/`](https://www.w3.org/TR/css-position-3/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-exclusions/`](https://www.w3.org/TR/css3-exclusions/) but does not list it in its references
     * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/) but does not list it in its references
@@ -1084,7 +1054,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [Selection API](https://www.w3.org/TR/selection-api/) links to [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/) but does not list it in its references
-- [Selectors Level 3](https://www.w3.org/TR/selectors-3/) links to [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/) but does not list it in its references
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/) links to:
     * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/) but does not list it in its references
@@ -1203,7 +1172,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Worklets Level 1](https://www.w3.org/TR/worklets-1/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 759 missing references for links found in 180 specifications
+=> 732 missing references for links found in 173 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1271,25 +1240,17 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/) but related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/) links to [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
-- [CSS Color Module Level 3](https://www.w3.org/TR/css-color-3/) links to:
-    * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/) but related reference "SVG11" uses URL [`http://www.w3.org/TR/2011/REC-SVG11-20110816/`](http://www.w3.org/TR/2011/REC-SVG11-20110816/)
-    * [`https://www.w3.org/TR/2008/REC-CSS2-20080411`](https://www.w3.org/TR/2008/REC-CSS2-20080411) but related reference "CSS21" uses URL [`http://www.w3.org/TR/2011/REC-CSS2-20110607`](http://www.w3.org/TR/2011/REC-CSS2-20110607)
-    * [`https://www.w3.org/TR/2001/REC-SVG-20010904`](https://www.w3.org/TR/2001/REC-SVG-20010904) but related reference "SVG11" uses URL [`http://www.w3.org/TR/2011/REC-SVG11-20110816/`](http://www.w3.org/TR/2011/REC-SVG11-20110816/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/) links to:
     * [`https://www.w3.org/TR/2008/REC-WCAG20-20081211/`](https://www.w3.org/TR/2008/REC-WCAG20-20081211/) but related reference "WCAG20" uses URL [`https://www.w3.org/TR/WCAG20/`](https://www.w3.org/TR/WCAG20/)
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1309,10 +1270,8 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`http://www.w3.org/TR/2012/WD-css3-writing-modes-20121115/`](http://www.w3.org/TR/2012/WD-css3-writing-modes-20121115/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/fill-stroke-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/) links to:
-    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES" uses URL [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/css-fonts-4/`](https://www.w3.org/TR/css-fonts-4/) but related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
@@ -1321,21 +1280,19 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/) but related reference "CSS21" uses URL [`https://www.w3.org/TR/CSS2/`](https://www.w3.org/TR/CSS2/)
-    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/css-break-4/) links to:
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/) but related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2/`](https://www.w3.org/TR/CSS2/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/css-content-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/) links to [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/) links to [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
+- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/2011/CR-css3-background-20110215/`](https://www.w3.org/TR/2011/CR-css3-background-20110215/) but related reference "CSS-BACKGROUNDS-3" uses URL [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1344,7 +1301,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/css-overflow-4/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Page Floats](https://www.w3.org/TR/css-page-floats-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES" uses URL [`http://www.w3.org/TR/css-values/`](http://www.w3.org/TR/css-values/)
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/) links to:
-    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/) links to:
@@ -1394,7 +1350,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Will Change Module Level 1](https://www.w3.org/TR/css-will-change-1/) links to:
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES" uses URL [`http://www.w3.org/TR/css-values/`](http://www.w3.org/TR/css-values/)
     * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/) but related reference "CSS-VALUES" uses URL [`http://www.w3.org/TR/css-values/`](http://www.w3.org/TR/css-values/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but related reference "REPORTING-1" uses URL [`https://www.w3.org/TR/reporting-1/`](https://www.w3.org/TR/reporting-1/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/orientation-event/) links to [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
@@ -1443,9 +1398,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/domcore/`](https://www.w3.org/TR/domcore/) but related reference "DOM41" uses URL [`https://www.w3.org/TR/dom41/`](https://www.w3.org/TR/dom41/)
     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but related reference "DOM41" uses URL [`https://www.w3.org/TR/dom41/`](https://www.w3.org/TR/dom41/)
 - [Input Events Level 2](https://www.w3.org/TR/input-events-2/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
-- [Intersection Observer](https://www.w3.org/TR/intersection-observer/) links to:
-    * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
-    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [Intersection Observer](https://www.w3.org/TR/intersection-observer/) links to [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
 - [Intervention Reporting](https://wicg.github.io/intervention-reporting/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but related reference "REPORTING-1" uses URL [`https://www.w3.org/TR/reporting-1/`](https://www.w3.org/TR/reporting-1/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/) links to [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/) links to:
@@ -1546,7 +1499,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2014/CR-html5-20140204/`](https://www.w3.org/TR/2014/CR-html5-20140204/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://w3c.github.io/svg-aam/`](https://w3c.github.io/svg-aam/) but related reference "svg-aam-1.0" uses URL [`https://www.w3.org/TR/svg-aam-1.0/`](https://www.w3.org/TR/svg-aam-1.0/)
     * [`https://www.w3.org/TR/2014/WD-dom-20140204/`](https://www.w3.org/TR/2014/WD-dom-20140204/) but related reference "dom" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
-    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "css-writing-modes-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
     * [`https://www.w3.org/TR/2011/WD-css3-fonts-20111004/`](https://www.w3.org/TR/2011/WD-css3-fonts-20111004/) but related reference "css-fonts-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
     * [`https://www.w3.org/TR/2015/CR-css-ui-3-20150707/`](https://www.w3.org/TR/2015/CR-css-ui-3-20150707/) but related reference "css-ui-3" uses URL [`https://www.w3.org/TR/css-ui-3/`](https://www.w3.org/TR/css-ui-3/)
     * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/) but related reference "smil-animation" uses URL [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/)
@@ -1621,7 +1573,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
     * [`https://www.w3.org/TR/2011/WD-html5-20110525/`](https://www.w3.org/TR/2011/WD-html5-20110525/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/) links to [`https://w3c.github.io/webrtc-stats/`](https://w3c.github.io/webrtc-stats/) but related reference "WEBRTC-STATS" uses URL [`https://www.w3.org/TR/webrtc-stats/`](https://www.w3.org/TR/webrtc-stats/)
-- [WebUSB API](https://wicg.github.io/webusb/) links to [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+- [WebUSB API](https://wicg.github.io/webusb/) links to:
+    * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+    * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/) but related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/) links to:
     * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/) but related reference "ENCODING-CR" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM-20151119" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
@@ -1632,6 +1586,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 338 inconsistent references for links found in 171 specifications
+=> 324 inconsistent references for links found in 166 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

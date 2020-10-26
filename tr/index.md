@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% October 19, 2020
+% October 26, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -244,7 +244,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
-- Crawled version: 07 October 2020
+- Crawled version: 20 October 2020
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -425,21 +425,19 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
 - [CSS Box Model Module Level 3](https://www.w3.org/TR/css-box-3/)
 - [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
-- [CSS Color Module Level 3](https://www.w3.org/TR/css-color-3/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/)
 - [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
 - [CSS Conditional Rules Module Level 4](https://www.w3.org/TR/css-conditional-4/)
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://www.w3.org/TR/css-variables-1/)
@@ -456,7 +454,6 @@ Normative references to this spec from:
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/)
@@ -490,7 +487,6 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [CSSOM View Module](https://www.w3.org/TR/cssom-view-1/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
@@ -500,7 +496,6 @@ Normative references to this spec from:
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
-- [Media Queries](https://www.w3.org/TR/css3-mediaqueries/)
 - [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
 - [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/motion-1/)
@@ -509,7 +504,6 @@ Normative references to this spec from:
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
-- [Selectors Level 3](https://www.w3.org/TR/selectors-3/)
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [Web Animations](https://www.w3.org/TR/web-animations-1/)
@@ -702,6 +696,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
+- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 No informative reference to this spec from other specs.
 
@@ -1239,7 +1234,6 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
 - [CSS Box Model Module Level 3](https://www.w3.org/TR/css-box-3/)
 - [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
@@ -1247,7 +1241,6 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
@@ -1273,7 +1266,6 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
@@ -1287,8 +1279,8 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 
@@ -1318,55 +1310,6 @@ Informative references to this spec from:
 No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
-
-
-## CSS Basic User Interface Module Level 3 (CSS3 UI) {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
-- Crawled URL: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
-- Crawled version: 21 June 2018
-- Editor's Draft: [https://drafts.csswg.org/css-ui-3/](https://drafts.csswg.org/css-ui-3/)
-- Latest published version: [https://www.w3.org/TR/css-ui-3/](https://www.w3.org/TR/css-ui-3/)
-- Shortname: css-ui-3
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/2000/WD-css3-userint-20000216`](https://www.w3.org/TR/2000/WD-css3-userint-20000216)
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
-     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
-     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
-     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
-     * [`https://www.w3.org/TR/css-color-3//`](https://www.w3.org/TR/css-color-3//)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
-- [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
-- [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/)
-- [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
-- [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/)
-- [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/)
-- [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
-- [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
-- [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
-
-Informative references to this spec from:
-
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
-- [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
-- [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
-- [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
-- [Selectors Level 4](https://www.w3.org/TR/selectors-4/)
 
 
 ## CSS Basic User Interface Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -1408,7 +1351,7 @@ Informative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 
 
-## CSS Box Alignment Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+## CSS Box Alignment Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -1423,6 +1366,7 @@ Informative references to this spec from:
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/)
      * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
      * [`https://www.w3.org/TR/css-flexbox/`](https://www.w3.org/TR/css-flexbox/)
@@ -1430,14 +1374,13 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/)
      * [`https://www.w3.org/TR/css3-flexbox/`](https://www.w3.org/TR/css3-flexbox/)
      * [`https://www.w3.org/TR/css3-grid-layout/`](https://www.w3.org/TR/css3-grid-layout/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
@@ -1496,16 +1439,13 @@ Normative references to this spec from:
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/css-break-4/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/)
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/css-scroll-anchoring-1/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/css-scroll-snap-1/)
 - [CSS Table Module Level 3](https://www.w3.org/TR/css-tables-3/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/css-text-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
-- [Intersection Observer](https://www.w3.org/TR/intersection-observer/)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Resize Observer](https://www.w3.org/TR/resize-observer-1/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/)
@@ -1549,6 +1489,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
@@ -1558,11 +1499,74 @@ Normative references to this spec from:
 - [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/css-ruby-1/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/)
+- [Intersection Observer](https://www.w3.org/TR/intersection-observer/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 Informative references to this spec from:
 
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
+
+
+## CSS Box Sizing Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
+- Crawled URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
+- Crawled version: 23 October 2020
+- Editor's Draft: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
+- Latest published version: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
+- Shortname: css-sizing-3
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css2/`](https://www.w3.org/TR/css2/)
+     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
+     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
+     * [`https://www.w3.org/TR/css-flexbox/`](https://www.w3.org/TR/css-flexbox/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
+- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
+- [CSS Box Model Module Level 3](https://www.w3.org/TR/css-box-3/)
+- [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
+- [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
+- [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
+- [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
+- [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/)
+- [CSS Fragmentation Module Level 4](https://www.w3.org/TR/css-break-4/)
+- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
+- [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
+- [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
+- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
+- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
+- [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
+- [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)
+- [CSS Positioned Layout Module Level 3](https://www.w3.org/TR/css-position-3/)
+- [CSS Table Module Level 3](https://www.w3.org/TR/css-tables-3/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/)
+- [CSS Text Module Level 4](https://www.w3.org/TR/css-text-4/)
+- [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
+- [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
+- [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
+- [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
+- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
+- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
+- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
+
+Informative references to this spec from:
+
+- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
+- [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
 
 
 ## CSS Box Sizing Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1571,7 +1575,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-sizing-4/](https://www.w3.org/TR/css-sizing-4/)
 - Crawled URL: [https://www.w3.org/TR/css-sizing-4/](https://www.w3.org/TR/css-sizing-4/)
-- Crawled version: 26 May 2020
+- Crawled version: 20 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
 - Latest published version: [https://www.w3.org/TR/css-sizing-4/](https://www.w3.org/TR/css-sizing-4/)
 - Shortname: css-sizing-4
@@ -1579,12 +1583,8 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/)
-     * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/)
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
@@ -1595,8 +1595,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 
 
 ## CSS Cascading and Inheritance Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -1616,6 +1614,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
      * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/)
      * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
@@ -1623,7 +1622,6 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1664,6 +1662,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-conditional/`](https://www.w3.org/TR/css-conditional/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/)
      * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
      * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/)
@@ -1671,7 +1670,6 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1683,6 +1681,7 @@ Normative references to this spec from:
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
 - [CSS Box Model Module Level 3](https://www.w3.org/TR/css-box-3/)
 - [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
@@ -1700,7 +1699,6 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/)
@@ -1723,7 +1721,6 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -1732,14 +1729,12 @@ Normative references to this spec from:
 - [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/motion-1/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
-- [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [Web Animations](https://www.w3.org/TR/web-animations-1/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/)
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/)
 
 
@@ -1760,6 +1755,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-conditional/`](https://www.w3.org/TR/css-conditional/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/)
      * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
      * [`https://www.w3.org/TR/css-cascade-4/`](https://www.w3.org/TR/css-cascade-4/)
@@ -1767,7 +1763,6 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS-WRITING-MODES-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1805,68 +1800,6 @@ Normative references to this spec from:
 - [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/)
 
 No informative reference to this spec from other specs.
-
-
-## CSS Color Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/)
-- Crawled URL: [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/)
-- Crawled version: 19 June 2018
-- Editor's Draft: [https://drafts.csswg.org/css-color-3/](https://drafts.csswg.org/css-color-3/)
-- Latest published version: [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/)
-- Shortname: css-color-3
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/2008/REC-WCAG20-20081211/`](https://www.w3.org/TR/2008/REC-WCAG20-20081211/)
-     * [`https://www.w3.org/TR/2003/CR-css3-color-20030514/`](https://www.w3.org/TR/2003/CR-css3-color-20030514/)
-     * [`https://www.w3.org/TR/2011/REC-css3-color-20110607/`](https://www.w3.org/TR/2011/REC-css3-color-20110607/)
-     * [`https://www.w3.org/TR/2017/CR-css-ui-3-20170302/`](https://www.w3.org/TR/2017/CR-css-ui-3-20170302/)
-     * [`https://www.w3.org/TR/1999/REC-html401-19991224`](https://www.w3.org/TR/1999/REC-html401-19991224)
-     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/), related reference "SVG11" uses URL [`http://www.w3.org/TR/2011/REC-SVG11-20110816/`](http://www.w3.org/TR/2011/REC-SVG11-20110816/)
-     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411`](https://www.w3.org/TR/2008/REC-CSS2-20080411), related reference "CSS21" uses URL [`http://www.w3.org/TR/2011/REC-CSS2-20110607`](http://www.w3.org/TR/2011/REC-CSS2-20110607)
-     * [`https://www.w3.org/TR/2001/REC-SVG-20010904`](https://www.w3.org/TR/2001/REC-SVG-20010904), related reference "SVG11" uses URL [`http://www.w3.org/TR/2011/REC-SVG11-20110816/`](http://www.w3.org/TR/2011/REC-SVG11-20110816/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
-- [CSS Color Module Level 5](https://www.w3.org/TR/css-color-5/)
-- [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
-- [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
-- [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
-- [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/)
-- [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
-- [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
-- [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/)
-- [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/)
-- [CSS Scrollbars Module Level 1](https://www.w3.org/TR/css-scrollbars-1/)
-- [CSS Text Decoration Module Level 3](https://www.w3.org/TR/css-text-decor-3/)
-- [CSS Text Decoration Module Level 4](https://www.w3.org/TR/css-text-decor-4/)
-- [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
-- [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
-- [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
-- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
-
-Informative references to this spec from:
-
-- [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
-- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
-- [CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/)
 
 
 ## CSS Color Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2022,45 +1955,6 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## CSS Containment Module Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
-- Crawled URL: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
-- Crawled version: 21 November 2019
-- Editor's Draft: [https://drafts.csswg.org/css-contain-1/](https://drafts.csswg.org/css-contain-1/)
-- Latest published version: [https://www.w3.org/TR/css-contain-1/](https://www.w3.org/TR/css-contain-1/)
-- Shortname: css-contain-1
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/)
-     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
-     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
-     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
-     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
-     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
-- [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
-- [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
-- [CSS Generated Content Module Level 3](https://www.w3.org/TR/css-content-3/)
-- [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
-- [CSS Overflow Module Level 4](https://www.w3.org/TR/css-overflow-4/)
-- [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [Motion Path Module Level 1](https://www.w3.org/TR/motion-1/)
-
-Informative references to this spec from:
-
-- [CSS Positioned Layout Module Level 3](https://www.w3.org/TR/css-position-3/)
-
-
 ## CSS Containment Module Level 2 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -2087,7 +1981,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
 
 Informative references to this spec from:
@@ -2133,7 +2026,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
 - Crawled URL: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
-- Crawled version: 27 December 2019
+- Crawled version: 21 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
 - Shortname: css-highlight-api-1
 
@@ -2266,10 +2159,10 @@ Normative references to this spec from:
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
 - [CSS Box Model Module Level 3](https://www.w3.org/TR/css-box-3/)
 - [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/fill-stroke-3/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
@@ -2278,7 +2171,6 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/)
@@ -2302,7 +2194,6 @@ Normative references to this spec from:
 - [CSS Text Module Level 4](https://www.w3.org/TR/css-text-4/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
@@ -2475,6 +2366,7 @@ No informative reference to this spec from other specs.
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
      * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/css-display/`](https://www.w3.org/TR/css-display/)
      * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
@@ -2486,7 +2378,6 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/)
      * [`https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/`](https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
@@ -2497,10 +2388,10 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
 - [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
@@ -2519,7 +2410,6 @@ Informative references to this spec from:
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/css-break-4/)
 - [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/css-ruby-1/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 
 
@@ -2556,69 +2446,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
-
-
-## CSS Fonts Module Level 3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
-- Crawled URL: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
-- Crawled version: 20 September 2018
-- Editor's Draft: [https://drafts.csswg.org/css-fonts-3/](https://drafts.csswg.org/css-fonts-3/)
-- Latest published version: [https://www.w3.org/TR/css-fonts-3/](https://www.w3.org/TR/css-fonts-3/)
-- Shortname: css-fonts-3
-
-### Potential issue(s) {.anomalies}
-
-- Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `CSSRule`, `CSSStyleDeclaration`
-- Missing references for links: 
-     * [`https://www.w3.org/TR/2002/WD-css3-fonts-20020802/`](https://www.w3.org/TR/2002/WD-css3-fonts-20020802/)
-     * [`https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/`](https://www.w3.org/TR/2002/WD-css3-webfonts-20020802/)
-     * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
-     * [`https://www.w3.org/TR/2005/REC-charmod-20050215/`](https://www.w3.org/TR/2005/REC-charmod-20050215/)
-     * [`https://www.w3.org/TR/2018/WD-charmod-norm-20180420/`](https://www.w3.org/TR/2018/WD-charmod-norm-20180420/)
-     * [`https://www.w3.org/TR/2017/WD-css-text-3-20170822/`](https://www.w3.org/TR/2017/WD-css-text-3-20170822/)
-     * [`https://www.w3.org/TR/2013/CR-css3-conditional-20130404/`](https://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES" uses URL [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
-- [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
-- [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
-- [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
-- [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)
-- [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/)
-- [CSS Text Decoration Module Level 3](https://www.w3.org/TR/css-text-decor-3/)
-- [CSS Text Decoration Module Level 4](https://www.w3.org/TR/css-text-decor-4/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/)
-- [CSS Text Module Level 4](https://www.w3.org/TR/css-text-4/)
-- [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
-- [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
-- [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
-- [Web Animations](https://www.w3.org/TR/web-animations-1/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
-- [WOFF File Format 2.0](https://www.w3.org/TR/WOFF2/)
-
-Informative references to this spec from:
-
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
-- [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
-- [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
-- [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
-- [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
-- [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/)
 
 
 ## CSS Fonts Module Level 4 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2681,7 +2508,6 @@ Informative references to this spec from:
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/)
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
 - [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/)
@@ -2705,13 +2531,13 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css3-regions/`](https://www.w3.org/TR/css3-regions/)
      * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
      * [`https://www.w3.org/TR/css3-page/`](https://www.w3.org/TR/css3-page/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
      * [`https://www.w3.org/TR/2015/WD-css3-break-20150129/`](https://www.w3.org/TR/2015/WD-css3-break-20150129/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/), related reference "CSS21" uses URL [`https://www.w3.org/TR/CSS2/`](https://www.w3.org/TR/CSS2/)
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2720,7 +2546,6 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/fill-stroke-3/)
@@ -2740,7 +2565,6 @@ Normative references to this spec from:
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/css-text-decor-4/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/css-text-4/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 
 Informative references to this spec from:
@@ -2804,7 +2628,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 
 
 ## CSS Generated Content for Paged Media Module {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingLinkRef=true}
@@ -2907,7 +2730,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/)
 
 
@@ -2917,7 +2739,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/)
 - Crawled URL: [https://www.w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/)
-- Crawled version: 18 August 2020
+- Crawled version: 21 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-grid/](https://drafts.csswg.org/css-grid/)
 - Latest published version: [https://www.w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/)
 - Shortname: css-grid-1
@@ -2928,12 +2750,15 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-flexbox/`](https://www.w3.org/TR/css-flexbox/)
      * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
      * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/css3-speech/`](https://www.w3.org/TR/css3-speech/)
+     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
      * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
      * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/)
      * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2942,7 +2767,6 @@ Normative references to this spec from:
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
 - [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
@@ -2956,11 +2780,9 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/css-break-4/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 
 
@@ -2970,7 +2792,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Crawled URL: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
-- Crawled version: 18 August 2020
+- Crawled version: 21 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
 - Latest published version: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Shortname: css-grid-2
@@ -2978,14 +2800,18 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
+     * [`https://www.w3.org/TR/css-grid-1/`](https://www.w3.org/TR/css-grid-1/)
      * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
      * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/css3-speech/`](https://www.w3.org/TR/css3-speech/)
+     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
      * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
      * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/)
      * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2993,8 +2819,11 @@ Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
+- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 
 
 ## CSS Image Values and Replaced Content Module Level 4 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3033,7 +2862,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
 
 
@@ -3069,13 +2897,16 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 
 
 ## CSS Inline Layout Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3119,7 +2950,6 @@ Normative references to this spec from:
 - [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
@@ -3127,70 +2957,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/)
-
-
-## CSS Intrinsic & Extrinsic Sizing Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
-- Crawled URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
-- Crawled version: 22 May 2019
-- Editor's Draft: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
-- Latest published version: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
-- Shortname: css-sizing-3
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
-     * [`https://www.w3.org/TR/css2/`](https://www.w3.org/TR/css2/)
-     * [`https://www.w3.org/TR/css3-page/`](https://www.w3.org/TR/css3-page/)
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
-     * [`https://www.w3.org/TR/css-flexbox/`](https://www.w3.org/TR/css-flexbox/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
-- [CSS Box Model Module Level 3](https://www.w3.org/TR/css-box-3/)
-- [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
-- [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
-- [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
-- [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
-- [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/)
-- [CSS Fragmentation Module Level 4](https://www.w3.org/TR/css-break-4/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
-- [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
-- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
-- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
-- [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
-- [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)
-- [CSS Positioned Layout Module Level 3](https://www.w3.org/TR/css-position-3/)
-- [CSS Table Module Level 3](https://www.w3.org/TR/css-tables-3/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/)
-- [CSS Text Module Level 4](https://www.w3.org/TR/css-text-4/)
-- [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
-- [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
-- [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
-- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
-
-Informative references to this spec from:
-
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
-- [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
 
 
 ## CSS Layout API Level 1 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3318,8 +3084,8 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Positioned Layout Module Level 3](https://www.w3.org/TR/css-position-3/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/css-scroll-snap-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
@@ -3392,7 +3158,6 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms-1/)
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/css-transforms-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [Motion Path Module Level 1](https://www.w3.org/TR/motion-1/)
@@ -3462,23 +3227,21 @@ Normative references to this spec from:
 
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
 - [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/css-break-4/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 Informative references to this spec from:
 
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
@@ -3540,7 +3303,6 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 - [Non-element Selectors Module Level 1](https://www.w3.org/TR/selectors-nonelement-1/)
-- [Selectors Level 3](https://www.w3.org/TR/selectors-3/)
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/)
 
 No informative reference to this spec from other specs.
@@ -3602,6 +3364,7 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/)
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
@@ -3612,7 +3375,6 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/)
@@ -3675,7 +3437,6 @@ Normative references to this spec from:
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
@@ -3701,7 +3462,6 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -3749,7 +3509,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 
@@ -3825,6 +3584,7 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
      * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/)
      * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
      * [`https://www.w3.org/TR/css-device-adapt/`](https://www.w3.org/TR/css-device-adapt/)
@@ -3832,7 +3592,6 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/web-animations-1/`](https://www.w3.org/TR/web-animations-1/)
      * [`https://www.w3.org/TR/2013/WD-css3-page-20130314/`](https://www.w3.org/TR/2013/WD-css3-page-20130314/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "CSS3-WRITING-MODES" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
@@ -3841,16 +3600,15 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/css-break-4/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Positioned Layout Module Level 3](https://www.w3.org/TR/css-position-3/)
 - [CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 
 Informative references to this spec from:
@@ -3858,7 +3616,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
@@ -4060,7 +3817,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/)
 
 
@@ -4108,7 +3864,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
 
@@ -4201,7 +3956,6 @@ Normative references to this spec from:
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/css-text-decor-4/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
 
 No informative reference to this spec from other specs.
@@ -4675,7 +4429,6 @@ Normative references to this spec from:
 - [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/css-ruby-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
@@ -4750,6 +4503,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/)
@@ -4760,7 +4514,6 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
@@ -4773,7 +4526,6 @@ Normative references to this spec from:
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/css-text-decor-4/)
 - [CSS Text Module Level 4](https://www.w3.org/TR/css-text-4/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
@@ -4964,7 +4716,6 @@ Informative references to this spec from:
 
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -5097,11 +4848,11 @@ Normative references to this spec from:
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3/)
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
 - [CSS Box Model Module Level 3](https://www.w3.org/TR/css-box-3/)
 - [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
@@ -5118,7 +4869,6 @@ Normative references to this spec from:
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/fill-stroke-3/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
-- [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/css-break-4/)
@@ -5129,7 +4879,6 @@ Normative references to this spec from:
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
@@ -5159,7 +4908,6 @@ Normative references to this spec from:
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [CSS Will Change Module Level 1](https://www.w3.org/TR/css-will-change-1/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/geometry-1/)
@@ -5228,6 +4976,7 @@ Normative references to this spec from:
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
 - [CSS Box Model Module Level 3](https://www.w3.org/TR/css-box-3/)
 - [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
@@ -5235,7 +4984,6 @@ Normative references to this spec from:
 - [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/)
 - [CSS Color Module Level 5](https://www.w3.org/TR/css-color-5/)
 - [CSS Conditional Rules Module Level 4](https://www.w3.org/TR/css-conditional-4/)
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Easing Functions Level 1](https://www.w3.org/TR/css-easing-1/)
@@ -5251,7 +4999,6 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
@@ -5280,7 +5027,6 @@ Normative references to this spec from:
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
@@ -5334,71 +5080,6 @@ Informative references to this spec from:
 - [CSS Positioned Layout Module Level 3](https://www.w3.org/TR/css-position-3/)
 
 
-## CSS Writing Modes Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
-- Crawled URL: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
-- Crawled version: 10 December 2019
-- Editor's Draft: [https://drafts.csswg.org/css-writing-modes-3/](https://drafts.csswg.org/css-writing-modes-3/)
-- Latest published version: [https://www.w3.org/TR/css-writing-modes-3/](https://www.w3.org/TR/css-writing-modes-3/)
-- Shortname: css-writing-modes-3
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-logical-1/`](https://www.w3.org/TR/css-logical-1/)
-     * [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/)
-     * [`https://www.w3.org/TR/css3-flexbox/`](https://www.w3.org/TR/css3-flexbox/)
-     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
-     * [`https://www.w3.org/TR/css3-page/`](https://www.w3.org/TR/css3-page/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/)
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
-- [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/)
-- [CSS Exclusions Module Level 1](https://www.w3.org/TR/css3-exclusions/)
-- [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
-- [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/)
-- [CSS Fragmentation Module Level 4](https://www.w3.org/TR/css-break-4/)
-- [CSS Grid Layout Module Level 1](https://www.w3.org/TR/css-grid-1/)
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
-- [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
-- [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
-- [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/)
-- [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
-- [CSS Page Floats](https://www.w3.org/TR/css-page-floats-3/)
-- [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)
-- [CSS Positioned Layout Module Level 3](https://www.w3.org/TR/css-position-3/)
-- [CSS Regions Module Level 1](https://www.w3.org/TR/css-regions-1/)
-- [CSS Ruby Layout Module Level 1](https://www.w3.org/TR/css-ruby-1/)
-- [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/)
-- [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
-- [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
-- [Selectors Level 4](https://www.w3.org/TR/selectors-4/)
-- [Web Animations](https://www.w3.org/TR/web-animations-1/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
-
-Informative references to this spec from:
-
-- [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/)
-
-
 ## CSS Writing Modes Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
@@ -5434,6 +5115,7 @@ Normative references to this spec from:
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
 - [CSS Box Model Module Level 3](https://www.w3.org/TR/css-box-3/)
 - [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/)
@@ -5442,7 +5124,6 @@ Normative references to this spec from:
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
@@ -5461,7 +5142,6 @@ Normative references to this spec from:
 - [CSS Text Module Level 4](https://www.w3.org/TR/css-text-4/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
@@ -5847,7 +5527,6 @@ Informative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Input Events Level 2](https://www.w3.org/TR/input-events-2/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
-- [Selectors Level 3](https://www.w3.org/TR/selectors-3/)
 - [Web Share API](https://www.w3.org/TR/web-share/)
 - [WebIDL Level 1](https://www.w3.org/TR/WebIDL-1/)
 
@@ -5909,7 +5588,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
-- Crawled version: 5 October 2020
+- Crawled version: 23 October 2020
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Shortname: encoding
@@ -6072,7 +5751,6 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Fonts Module Level 3](https://www.w3.org/TR/css-fonts-3/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
 - [Fetch Metadata Request Headers](https://www.w3.org/TR/fetch-metadata/)
 - [File API](https://www.w3.org/TR/FileAPI/)
@@ -6756,7 +6434,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 16 October 2020
+- Crawled version: 22 October 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -6767,6 +6445,9 @@ No informative reference to this spec from other specs.
     * `DOMParser` also defined in [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/)
     * `MessageEventSource` also defined in [Portals](https://wicg.github.io/portals/)
     * `BinaryType` also defined in [Presentation API](https://www.w3.org/TR/presentation-api/)
+    * `WorkletGlobalScope` also defined in [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
+    * `Worklet` also defined in [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
+    * `WorkletOptions` also defined in [Worklets Level 1](https://www.w3.org/TR/worklets-1/)
 - Missing references for WebIDL names: 
      * `WebGL2RenderingContext` defined in [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Missing references for links: 
@@ -6808,8 +6489,8 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/)
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3/)
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
@@ -6819,7 +6500,6 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
 - [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
-- [CSS Intrinsic & Extrinsic Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Lists Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
@@ -6834,7 +6514,6 @@ Normative references to this spec from:
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [CSSOM View Module](https://www.w3.org/TR/cssom-view-1/)
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
@@ -6871,6 +6550,7 @@ Normative references to this spec from:
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/IndexedDB-2/)
 - [Input Device Capabilities](https://wicg.github.io/input-device-capabilities/)
+- [Intersection Observer](https://www.w3.org/TR/intersection-observer/)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
@@ -7027,7 +6707,6 @@ Informative references to this spec from:
 - [Payment Method: Basic Card](https://www.w3.org/TR/payment-method-basic-card/)
 - [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/)
 - [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
-- [Selectors Level 3](https://www.w3.org/TR/selectors-3/)
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0/)
@@ -7171,7 +6850,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/import-maps/](https://wicg.github.io/import-maps/)
 - Crawled URL: [https://wicg.github.io/import-maps/](https://wicg.github.io/import-maps/)
-- Crawled version: 7 October 2020
+- Crawled version: 23 October 2020
 - Editor's Draft: [https://wicg.github.io/import-maps/](https://wicg.github.io/import-maps/)
 - Shortname: import-maps
 
@@ -7402,28 +7081,27 @@ Informative references to this spec from:
 - [UI Events](https://www.w3.org/TR/uievents/)
 
 
-## Intersection Observer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
+## Intersection Observer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingLinkRef=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
 - Crawled URL: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
-- Crawled version: 31 May 2019
+- Crawled version: 21 October 2020
 - Editor's Draft: [https://w3c.github.io/IntersectionObserver/](https://w3c.github.io/IntersectionObserver/)
 - Latest published version: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
 - Shortname: intersection-observer
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `undefined`
 - Missing references for WebIDL names: 
      * `DOMHighResTimeStamp` defined in [High Resolution Time](https://www.w3.org/TR/hr-time-3/)
 - Missing references for links: 
-     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
      * [`https://www.w3.org/TR/css-masking-1/`](https://www.w3.org/TR/css-masking-1/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/), related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7536,7 +7214,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/largest-contentful-paint/](https://wicg.github.io/largest-contentful-paint/)
 - Crawled URL: [https://wicg.github.io/largest-contentful-paint/](https://wicg.github.io/largest-contentful-paint/)
-- Crawled version: 30 March 2020
+- Crawled version: 20 October 2020
 - Editor's Draft: [https://wicg.github.io/largest-contentful-paint/](https://wicg.github.io/largest-contentful-paint/)
 - Shortname: largest-contentful-paint
 
@@ -7927,41 +7605,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Media Capabilities](https://www.w3.org/TR/media-capabilities/)
-
-
-## Media Queries {data-spec=true data-anomaly=true data-missingLinkRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/css3-mediaqueries/](https://www.w3.org/TR/css3-mediaqueries/)
-- Crawled URL: [https://www.w3.org/TR/css3-mediaqueries/](https://www.w3.org/TR/css3-mediaqueries/)
-- Crawled version: 19 June 2012
-- Editor's Draft: [https://drafts.csswg.org/mediaqueries-3/](https://drafts.csswg.org/mediaqueries-3/)
-- Latest published version: [https://www.w3.org/TR/css3-mediaqueries/](https://www.w3.org/TR/css3-mediaqueries/)
-- Shortname: css3-mediaqueries
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/)
-     * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/)
-     * [`https://www.w3.org/TR/1999/REC-html401-19991224`](https://www.w3.org/TR/1999/REC-html401-19991224)
-     * [`https://www.w3.org/TR/2012/WD-html5-20120329/`](https://www.w3.org/TR/2012/WD-html5-20120329/)
-     * [`https://www.w3.org/TR/2010/REC-xml-stylesheet-20101028/`](https://www.w3.org/TR/2010/REC-xml-stylesheet-20101028/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
-- [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/)
-- [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
-- [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/)
-
-Informative references to this spec from:
-
-- [Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification](https://www.w3.org/TR/CSS2/)
-- [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://www.w3.org/TR/CSS22/)
 
 
 ## Media Queries Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -8872,6 +8515,7 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://www.w3.org/TR/webauthn-2/)
 - [Web Share API](https://www.w3.org/TR/web-share/)
 - [WebHID API](https://wicg.github.io/webhid/)
+- [WebUSB API](https://wicg.github.io/webusb/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -9477,6 +9121,7 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/selection-api/`](https://w3c.github.io/selection-api/)
      * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
      * [`https://www.w3.org/TR/2013/REC-css-style-attr-20131107/`](https://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
+     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/css-position-3/`](https://www.w3.org/TR/css-position-3/)
      * [`https://www.w3.org/TR/css3-exclusions/`](https://www.w3.org/TR/css3-exclusions/)
      * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/)
@@ -9513,7 +9158,6 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/2014/CR-html5-20140204/`](https://www.w3.org/TR/2014/CR-html5-20140204/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
      * [`https://w3c.github.io/svg-aam/`](https://w3c.github.io/svg-aam/), related reference "svg-aam-1.0" uses URL [`https://www.w3.org/TR/svg-aam-1.0/`](https://www.w3.org/TR/svg-aam-1.0/)
      * [`https://www.w3.org/TR/2014/WD-dom-20140204/`](https://www.w3.org/TR/2014/WD-dom-20140204/), related reference "dom" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/), related reference "css-writing-modes-3" uses URL [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
      * [`https://www.w3.org/TR/2011/WD-css3-fonts-20111004/`](https://www.w3.org/TR/2011/WD-css3-fonts-20111004/), related reference "css-fonts-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
      * [`https://www.w3.org/TR/2015/CR-css-ui-3-20150707/`](https://www.w3.org/TR/2015/CR-css-ui-3-20150707/), related reference "css-ui-3" uses URL [`https://www.w3.org/TR/css-ui-3/`](https://www.w3.org/TR/css-ui-3/)
      * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/), related reference "smil-animation" uses URL [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/)
@@ -9530,15 +9174,12 @@ Normative references to this spec from:
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/wai-aria-1.2/)
 - [Compositing and Blending Level 1](https://www.w3.org/TR/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [CSS Basic User Interface Module Level 3 (CSS3 UI)](https://www.w3.org/TR/css-ui-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
 - [CSS Box Model Module Level 3](https://www.w3.org/TR/css-box-3/)
 - [CSS Box Model Module Level 4](https://www.w3.org/TR/css-box-4/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
-- [CSS Color Module Level 3](https://www.w3.org/TR/css-color-3/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/)
 - [CSS Color Module Level 5](https://www.w3.org/TR/css-color-5/)
-- [CSS Containment Module Level 1](https://www.w3.org/TR/css-contain-1/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/fill-stroke-3/)
@@ -9549,7 +9190,6 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms-1/)
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/css-transforms-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [CSS Writing Modes Level 3](https://www.w3.org/TR/css-writing-modes-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [CSSOM View Module](https://www.w3.org/TR/cssom-view-1/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
@@ -9590,7 +9230,6 @@ Informative references to this spec from:
 - [File API](https://www.w3.org/TR/FileAPI/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/geometry-1/)
 - [Graphics Accessibility API Mappings](https://www.w3.org/TR/graphics-aam-1.0/)
-- [Selectors Level 3](https://www.w3.org/TR/selectors-3/)
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/)
 - [SVG Accessibility API Mappings](https://www.w3.org/TR/svg-aam-1.0/)
 - [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0/)
@@ -9780,47 +9419,6 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
-
-
-## Selectors Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/selectors-3/](https://www.w3.org/TR/selectors-3/)
-- Crawled URL: [https://www.w3.org/TR/selectors-3/](https://www.w3.org/TR/selectors-3/)
-- Crawled version: 06 November 2018
-- Editor's Draft: [https://drafts.csswg.org/selectors-3/](https://drafts.csswg.org/selectors-3/)
-- Latest published version: [https://www.w3.org/TR/selectors-3/](https://www.w3.org/TR/selectors-3/)
-- Shortname: selectors-3
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css3-namespace/`](https://www.w3.org/TR/css3-namespace/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
-- [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)
-- [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
-- [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
-- [Selectors Level 4](https://www.w3.org/TR/selectors-4/)
-- [Web Animations](https://www.w3.org/TR/web-animations-1/)
-- [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
-
-Informative references to this spec from:
-
-- [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
-- [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/)
-- [CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/)
-- [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
 
 
 ## Selectors Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -10287,7 +9885,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/scroll-to-text-fragment/](https://wicg.github.io/scroll-to-text-fragment/)
 - Crawled URL: [https://wicg.github.io/scroll-to-text-fragment/](https://wicg.github.io/scroll-to-text-fragment/)
-- Crawled version: 28 August 2020
+- Crawled version: 22 October 2020
 - Editor's Draft: [https://wicg.github.io/scroll-to-text-fragment/](https://wicg.github.io/scroll-to-text-fragment/)
 - Shortname: scroll-to-text-fragment
 
@@ -10310,7 +9908,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Crawled URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- Crawled version: 15 September 2020
+- Crawled version: 20 October 2020
 - Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Shortname: screen-fold
 
@@ -10460,7 +10058,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webappsec-trusted-types/dist/spec/](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - Crawled URL: [https://w3c.github.io/webappsec-trusted-types/dist/spec/](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
-- Crawled version: 30 September 2020
+- Crawled version: 21 October 2020
 - Editor's Draft: [https://w3c.github.io/webappsec-trusted-types/dist/spec/](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - Shortname: trusted-types
 
@@ -12447,7 +12045,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 13 October 2020
+- Crawled version: 23 October 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -12462,19 +12060,19 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebHID API {data-spec=true data-ok=true}
+## WebHID API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
 - Crawled URL: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
-- Crawled version: 31 July 2020
+- Crawled version: 23 October 2020
 - Editor's Draft: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
 - Shortname: webhid
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `undefined`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12824,7 +12422,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 18 August 2020
+- Crawled version: 25 October 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -12833,6 +12431,7 @@ No informative reference to this spec from other specs.
 - Unknown WebIDL names used: `undefined`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -13082,7 +12681,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled version: 14 October 2020
+- Crawled version: 24 October 2020
 - Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Shortname: layers
 
@@ -13123,7 +12722,7 @@ Informative references to this spec from:
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 
 
-## Worklets Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
+## Worklets Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -13137,6 +12736,10 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `undefined`
+- WebIDL names also defined elsewhere: 
+    * `WorkletGlobalScope` also defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
+    * `Worklet` also defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
+    * `WorkletOptions` also defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/)
 
