@@ -387,7 +387,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Crawled URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
-- Crawled version: 7 July 2020
+- Crawled version: 27 October 2020
 - Editor's Draft: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Shortname: client-hints-infrastructure
 
@@ -398,6 +398,7 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/device-memory/`](https://w3c.github.io/device-memory/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -405,7 +406,9 @@ Normative references to this spec from:
 
 - [Network Information API](https://wicg.github.io/netinfo/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
 
 
 ## Clipboard API and events {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -5475,7 +5478,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 5 October 2020
+- Crawled version: 27 October 2020
 - Editor's Draft: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Shortname: dom
 
@@ -6232,13 +6235,13 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Generic Sensor API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## Generic Sensor API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
 - Crawled URL: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
-- Crawled version: 18 August 2020
+- Crawled version: 27 October 2020
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
 - Shortname: generic-sensor
@@ -6246,8 +6249,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `undefined`
-- Missing references for links: 
-     * [`https://w3c.github.io/webappsec-feature-policy/`](https://w3c.github.io/webappsec-feature-policy/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
      * [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/), related reference "PERMISSIONS" uses URL [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/)
@@ -6947,7 +6948,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Crawled URL: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
-- Crawled version: 06 October 2020
+- Crawled version: 27 October 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Shortname: webrtc-stats
@@ -8744,6 +8745,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -10597,7 +10599,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled version: 12 August 2020
+- Crawled version: 27 October 2020
 - Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Shortname: ua-client-hints
 
@@ -10767,7 +10769,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Crawled URL: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
-- Crawled version: 14 October 2020
+- Crawled version: 27 October 2020
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Shortname: webaudio
@@ -12514,7 +12516,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 26 October 2020
+- Crawled version: 27 October 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -12666,7 +12668,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 25 October 2020
+- Crawled version: 27 October 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -12765,7 +12767,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 26 October 2020
+- Crawled version: 27 October 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Shortname: webxr
