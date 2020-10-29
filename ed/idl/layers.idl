@@ -90,20 +90,18 @@ enum XRTextureType {
 
 dictionary XRProjectionLayerInit {
   XRTextureType textureType = "texture";
-  boolean depth = true;
-  boolean stencil = false;
-  boolean alpha = true;
+  GLenum colorFormat = 0x1907; // RGBA
+  GLenum? depthFormat;
   double scaleFactor = 1.0;
 };
 
 dictionary XRLayerInit {
   required XRSpace space;
+  GLenum colorFormat = 0x1907; // RGBA
+  GLenum? depthFormat;
   required unsigned long viewPixelWidth;
   required unsigned long viewPixelHeight;
   XRLayerLayout layout = "mono";
-  boolean depth = false;
-  boolean stencil = false;
-  boolean alpha = true;
   boolean isStatic = false;
 };
 
@@ -148,6 +146,9 @@ dictionary XRCubeLayerInit : XRLayerInit {
 
   XRWebGLSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = "none");
   XRWebGLSubImage getViewSubImage(XRProjectionLayer layer, XRView view);
+
+  readonly attribute FrozenArray<GLenum> supportedColorFormats;
+  readonly attribute FrozenArray<GLenum> supportedDepthStencilFormats;
 };
 
 dictionary XRMediaLayerInit {

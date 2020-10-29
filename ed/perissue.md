@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% October 28, 2020
+% October 29, 2020
 
 368 specifications were crawled in this report.
 
@@ -232,9 +232,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLFramebuffer` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/) uses `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/) uses:
+    * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 49 missing references for IDL definitions found in 23 specifications
+=> 50 missing references for IDL definitions found in 23 specifications
 
 
 ## Missing references based on document links
@@ -932,7 +934,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Web Audio API](https://webaudio.github.io/web-audio-api/) links to:
     * [`https://w3c.github.io/mediacapture-fromelement/`](https://w3c.github.io/mediacapture-fromelement/) but does not list it in its references
     * [`https://www.w3.org/TR/html50/`](https://www.w3.org/TR/html50/) but does not list it in its references
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/) links to [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/) but does not list it in its references
+- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/) links to:
+    * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/) but does not list it in its references
+    * [`https://w3c.github.io/IntersectionObserver/v2/`](https://w3c.github.io/IntersectionObserver/v2/) but does not list it in its references
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/) links to:
     * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/) but does not list it in its references
     * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/) but does not list it in its references
@@ -962,7 +966,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 600 missing references for links found in 164 specifications
+=> 601 missing references for links found in 164 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
