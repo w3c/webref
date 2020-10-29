@@ -321,7 +321,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -680,7 +680,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -806,7 +806,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -1036,6 +1036,7 @@
         "WebTransportStats",
         "WebTransportState",
         "WebTransportCloseInfo",
+        "undefined",
         "EventHandler",
         "UnidirectionalStreamsTransport",
         "BidirectionalStreamsTransport",
@@ -1050,12 +1051,14 @@
       ],
       "OutgoingStream": [
         "WritableStream",
-        "StreamAbortInfo"
+        "StreamAbortInfo",
+        "undefined"
       ],
       "StreamAbortInfo": [],
       "IncomingStream": [
         "ReadableStream",
-        "StreamAbortInfo"
+        "StreamAbortInfo",
+        "undefined"
       ],
       "BidirectionalStream": [
         "OutgoingStream",
@@ -1071,6 +1074,7 @@
     "externalDependencies": [
       "ReadableStream",
       "WritableStream",
+      "undefined",
       "EventHandler",
       "RTCDtlsFingerprint",
       "DOMHighResTimeStamp"
