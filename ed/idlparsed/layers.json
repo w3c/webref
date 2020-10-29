@@ -777,7 +777,7 @@
           },
           {
             "type": "field",
-            "name": "depth",
+            "name": "colorFormat",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -785,48 +785,27 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "boolean"
+              "idlType": "GLenum"
             },
             "default": {
-              "type": "boolean",
-              "value": true
+              "type": "number",
+              "value": "0x1907"
             },
             "required": false
           },
           {
             "type": "field",
-            "name": "stencil",
+            "name": "depthFormat",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
-              "idlType": "boolean"
+              "idlType": "GLenum"
             },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "alpha",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": true
-            },
+            "default": null,
             "required": false
           },
           {
@@ -873,6 +852,39 @@
           },
           {
             "type": "field",
+            "name": "colorFormat",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GLenum"
+            },
+            "default": {
+              "type": "number",
+              "value": "0x1907"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "depthFormat",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "GLenum"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "viewPixelWidth",
             "extAttrs": [],
             "idlType": {
@@ -916,60 +928,6 @@
             "default": {
               "type": "string",
               "value": "mono"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "depth",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "stencil",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "alpha",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": true
             },
             "required": false
           },
@@ -1639,6 +1597,54 @@
             ],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "supportedColorFormats",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLenum"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "supportedDepthStencilFormats",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLenum"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [
@@ -2345,10 +2351,12 @@
         "WebGLTexture"
       ],
       "XRProjectionLayerInit": [
-        "XRTextureType"
+        "XRTextureType",
+        "GLenum"
       ],
       "XRLayerInit": [
         "XRSpace",
+        "GLenum",
         "XRLayerLayout"
       ],
       "XRQuadLayerInit": [
@@ -2387,7 +2395,8 @@
         "XRCompositionLayer",
         "XRFrame",
         "XREye",
-        "XRView"
+        "XRView",
+        "GLenum"
       ],
       "XRMediaLayerInit": [
         "XRSpace",
@@ -2437,6 +2446,7 @@
       "DOMPointReadOnly",
       "XRViewport",
       "WebGLTexture",
+      "GLenum",
       "XRSession",
       "XRWebGLRenderingContext",
       "XRFrame",
