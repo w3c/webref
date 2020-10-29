@@ -1,0 +1,776 @@
+{
+  "spec": {
+    "title": "WebXR Hand Input Module - Level 1",
+    "url": "https://immersive-web.github.io/webxr-hand-input/"
+  },
+  "dfns": [
+    {
+      "id": "feature-descriptor-hand-tracking",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#feature-descriptor-hand-tracking",
+      "linkingText": [
+        "hand-tracking"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "feature descriptor"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "physical-hand-input-source",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#physical-hand-input-source",
+      "linkingText": [
+        "physical hand input source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "supports-hand-tracking",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#supports-hand-tracking",
+      "linkingText": [
+        "supports hand tracking"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-xrinputsource-hand",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrinputsource-hand",
+      "linkingText": [
+        "hand"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRInputSource"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "skeleton-joints",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#skeleton-joints",
+      "linkingText": [
+        "skeleton joints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "skeleton-joint-index",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#skeleton-joint-index",
+      "linkingText": [
+        "skeleton joint index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "associated-bone",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#associated-bone",
+      "linkingText": [
+        "associated bone"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "skeleton-joint-radius",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#skeleton-joint-radius",
+      "linkingText": [
+        "radius"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "skeleton joint"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "xrhand",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#xrhand",
+      "linkingText": [
+        "XRHand"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-joint",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-joint",
+      "linkingText": [
+        "joint(jointIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-joint-jointindex-jointindex",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-joint-jointindex-jointindex",
+      "linkingText": [
+        "jointIndex"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRHand/joint(jointIndex)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-wrist",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-wrist",
+      "linkingText": [
+        "WRIST"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-thumb_metacarpal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-thumb_metacarpal",
+      "linkingText": [
+        "THUMB_METACARPAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-thumb_phalanx_proximal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-thumb_phalanx_proximal",
+      "linkingText": [
+        "THUMB_PHALANX_PROXIMAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-thumb_phalanx_distal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-thumb_phalanx_distal",
+      "linkingText": [
+        "THUMB_PHALANX_DISTAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-thumb_phalanx_tip",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-thumb_phalanx_tip",
+      "linkingText": [
+        "THUMB_PHALANX_TIP"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-index_metacarpal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-index_metacarpal",
+      "linkingText": [
+        "INDEX_METACARPAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-index_phalanx_proximal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-index_phalanx_proximal",
+      "linkingText": [
+        "INDEX_PHALANX_PROXIMAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-index_phalanx_intermediate",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-index_phalanx_intermediate",
+      "linkingText": [
+        "INDEX_PHALANX_INTERMEDIATE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-index_phalanx_distal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-index_phalanx_distal",
+      "linkingText": [
+        "INDEX_PHALANX_DISTAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-index_phalanx_tip",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-index_phalanx_tip",
+      "linkingText": [
+        "INDEX_PHALANX_TIP"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-middle_metacarpal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-middle_metacarpal",
+      "linkingText": [
+        "MIDDLE_METACARPAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-middle_phalanx_proximal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-middle_phalanx_proximal",
+      "linkingText": [
+        "MIDDLE_PHALANX_PROXIMAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-middle_phalanx_intermediate",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-middle_phalanx_intermediate",
+      "linkingText": [
+        "MIDDLE_PHALANX_INTERMEDIATE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-middle_phalanx_distal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-middle_phalanx_distal",
+      "linkingText": [
+        "MIDDLE_PHALANX_DISTAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-middle_phalanx_tip",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-middle_phalanx_tip",
+      "linkingText": [
+        "MIDDLE_PHALANX_TIP"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-ring_metacarpal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-ring_metacarpal",
+      "linkingText": [
+        "RING_METACARPAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-ring_phalanx_proximal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-ring_phalanx_proximal",
+      "linkingText": [
+        "RING_PHALANX_PROXIMAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-ring_phalanx_intermediate",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-ring_phalanx_intermediate",
+      "linkingText": [
+        "RING_PHALANX_INTERMEDIATE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-ring_phalanx_distal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-ring_phalanx_distal",
+      "linkingText": [
+        "RING_PHALANX_DISTAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-ring_phalanx_tip",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-ring_phalanx_tip",
+      "linkingText": [
+        "RING_PHALANX_TIP"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-little_metacarpal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-little_metacarpal",
+      "linkingText": [
+        "LITTLE_METACARPAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-little_phalanx_proximal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-little_phalanx_proximal",
+      "linkingText": [
+        "LITTLE_PHALANX_PROXIMAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-little_phalanx_intermediate",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-little_phalanx_intermediate",
+      "linkingText": [
+        "LITTLE_PHALANX_INTERMEDIATE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-little_phalanx_distal",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-little_phalanx_distal",
+      "linkingText": [
+        "LITTLE_PHALANX_DISTAL"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-little_phalanx_tip",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-little_phalanx_tip",
+      "linkingText": [
+        "LITTLE_PHALANX_TIP"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "xrhand-input-source",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#xrhand-input-source",
+      "linkingText": [
+        "input source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRHand"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "xrhand-list-of-joint-spaces",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#xrhand-list-of-joint-spaces",
+      "linkingText": [
+        "list of joint spaces"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRHand"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-xrhand-length",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrhand-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrjointspace-joint",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrjointspace-joint",
+      "linkingText": [
+        "joint(jointIndex)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRJointSpace"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "xrjointspace",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#xrjointspace",
+      "linkingText": [
+        "XRJointSpace"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "xrjointspace-hand",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#xrjointspace-hand",
+      "linkingText": [
+        "hand"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRJointSpace"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "xrjointspace-joint-index",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#xrjointspace-joint-index",
+      "linkingText": [
+        "joint index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRJointSpace"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "xrjointspace-joint",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#xrjointspace-joint",
+      "linkingText": [
+        "joint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRJointSpace"
+      ],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-xrframe-getjointpose-joint-basespace-joint",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-getjointpose-joint-basespace-joint",
+      "linkingText": [
+        "joint"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRFrame/getJointPose(joint, baseSpace)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrframe-getjointpose-joint-basespace-basespace",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-getjointpose-joint-basespace-basespace",
+      "linkingText": [
+        "baseSpace"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRFrame/getJointPose(joint, baseSpace)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrframe-filljointradii-jointspaces-radii-jointspaces",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-filljointradii-jointspaces-radii-jointspaces",
+      "linkingText": [
+        "jointSpaces"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRFrame/fillJointRadii(jointSpaces, radii)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrframe-filljointradii-jointspaces-radii-radii",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-filljointradii-jointspaces-radii-radii",
+      "linkingText": [
+        "radii"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRFrame/fillJointRadii(jointSpaces, radii)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrframe-fillposes-spaces-basespace-transforms-spaces",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-fillposes-spaces-basespace-transforms-spaces",
+      "linkingText": [
+        "spaces"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRFrame/fillPoses(spaces, baseSpace, transforms)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrframe-fillposes-spaces-basespace-transforms-basespace",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-fillposes-spaces-basespace-transforms-basespace",
+      "linkingText": [
+        "baseSpace"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRFrame/fillPoses(spaces, baseSpace, transforms)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrframe-fillposes-spaces-basespace-transforms-transforms",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-fillposes-spaces-basespace-transforms-transforms",
+      "linkingText": [
+        "transforms"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRFrame/fillPoses(spaces, baseSpace, transforms)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrframe-getjointpose",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-getjointpose",
+      "linkingText": [
+        "getJointPose(joint, baseSpace)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrframe-filljointradii",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-filljointradii",
+      "linkingText": [
+        "fillJointRadii(jointSpaces, radii)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrframe-fillposes",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrframe-fillposes",
+      "linkingText": [
+        "fillPoses(spaces, baseSpace, transforms)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "xrjointpose",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#xrjointpose",
+      "linkingText": [
+        "XRJointPose"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-xrjointpose-radius",
+      "href": "https://immersive-web.github.io/webxr-hand-input/#dom-xrjointpose-radius",
+      "linkingText": [
+        "radius"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRJointPose"
+      ],
+      "access": "public",
+      "informative": false
+    }
+  ]
+}
