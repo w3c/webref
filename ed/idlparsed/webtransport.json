@@ -290,6 +290,30 @@
           },
           {
             "type": "attribute",
+            "name": "ready",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "closed",
             "idlType": {
               "type": "attribute-type",
@@ -1035,8 +1059,8 @@
         "WebTransportOptions",
         "WebTransportStats",
         "WebTransportState",
-        "WebTransportCloseInfo",
         "undefined",
+        "WebTransportCloseInfo",
         "EventHandler",
         "UnidirectionalStreamsTransport",
         "BidirectionalStreamsTransport",

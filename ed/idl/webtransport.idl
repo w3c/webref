@@ -31,6 +31,7 @@ interface WebTransport {
 
   Promise<WebTransportStats> getStats();
   readonly attribute WebTransportState state;
+  readonly attribute Promise<undefined> ready;
   readonly attribute Promise<WebTransportCloseInfo> closed;
   undefined close(optional WebTransportCloseInfo closeInfo = {});
   attribute EventHandler onstatechange;
