@@ -90,14 +90,14 @@ enum XRTextureType {
 
 dictionary XRProjectionLayerInit {
   XRTextureType textureType = "texture";
-  GLenum colorFormat = 0x1907; // RGBA
+  GLenum colorFormat = 0x1908; // RGBA
   GLenum? depthFormat;
   double scaleFactor = 1.0;
 };
 
 dictionary XRLayerInit {
   required XRSpace space;
-  GLenum colorFormat = 0x1907; // RGBA
+  GLenum colorFormat = 0x1908; // RGBA
   GLenum? depthFormat;
   required unsigned long viewPixelWidth;
   required unsigned long viewPixelHeight;
