@@ -290,6 +290,30 @@
           },
           {
             "type": "attribute",
+            "name": "ready",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "closed",
             "idlType": {
               "type": "attribute-type",
@@ -321,7 +345,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -680,7 +704,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -806,7 +830,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -1035,6 +1059,7 @@
         "WebTransportOptions",
         "WebTransportStats",
         "WebTransportState",
+        "undefined",
         "WebTransportCloseInfo",
         "EventHandler",
         "UnidirectionalStreamsTransport",
@@ -1050,12 +1075,14 @@
       ],
       "OutgoingStream": [
         "WritableStream",
-        "StreamAbortInfo"
+        "StreamAbortInfo",
+        "undefined"
       ],
       "StreamAbortInfo": [],
       "IncomingStream": [
         "ReadableStream",
-        "StreamAbortInfo"
+        "StreamAbortInfo",
+        "undefined"
       ],
       "BidirectionalStream": [
         "OutgoingStream",
@@ -1071,6 +1098,7 @@
     "externalDependencies": [
       "ReadableStream",
       "WritableStream",
+      "undefined",
       "EventHandler",
       "RTCDtlsFingerprint",
       "DOMHighResTimeStamp"

@@ -5669,6 +5669,24 @@
               "type": "dictionary"
             },
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "aspect",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureAspect"
+            },
+            "default": {
+              "type": "string",
+              "value": "all"
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -10041,7 +10059,8 @@
       "GPUTextureCopyView": [
         "GPUTexture",
         "GPUIntegerCoordinate",
-        "GPUOrigin3D"
+        "GPUOrigin3D",
+        "GPUTextureAspect"
       ],
       "GPUImageBitmapCopyView": [
         "ImageBitmap",

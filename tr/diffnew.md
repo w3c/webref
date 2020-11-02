@@ -1,137 +1,62 @@
-% Diff between report from "October 26, 2020" and reference report from "October 19, 2020"
+% Diff between report from "November 02, 2020" and reference report from "October 26, 2020"
 % Reffy
-% October 26, 2020
+% November 02, 2020
 
-## CSS Box Alignment Module Level 3
+## Client Hints Infrastructure
 
-- Initial URL: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
+- Initial URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-writing-modes/
+- Editor's Draft: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
+- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-permissions-policy/
 
 
-## CSS Box Sizing Module Level 3
+## CSS Box Model Module Level 3
 
-- Initial URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
+- Initial URL: [https://www.w3.org/TR/css-box-3/](https://www.w3.org/TR/css-box-3/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
-- Spec title: *INS* CSS Box Sizing Module Level 3 / *DEL* CSS Intrinsic & Extrinsic Sizing Module Level 3
-- Missing references for links: *INS* https://www.w3.org/TR/css-cascade/, https://www.w3.org/TR/web-animations/ / *DEL* https://www.w3.org/TR/css3-page/, https://www.w3.org/TR/css3-background/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-values/ / *DEL* https://www.w3.org/TR/css3-values/
+- Editor's Draft: [https://drafts.csswg.org/css-box-3/](https://drafts.csswg.org/css-box-3/)
+- Missing references for links: *INS* https://www.w3.org/TR/web-animations/ / *DEL* https://www.w3.org/TR/svg2/, https://www.w3.org/TR/css3-background/
+- Inconsistent references for links: *INS* https://www.w3.org/TR/css-values/
 
 
-## CSS Cascading and Inheritance Level 3
+## CSS Custom Highlight API Module Level 1
 
-- Initial URL: [https://www.w3.org/TR/css-cascade-3/](https://www.w3.org/TR/css-cascade-3/)
+- Initial URL: [https://www.w3.org/TR/css-highlight-api-1/](https://www.w3.org/TR/css-highlight-api-1/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-cascade-3/](https://drafts.csswg.org/css-cascade-3/)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-writing-modes/
+- Editor's Draft: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
+- This specification was not in the reference crawl report.
 
 
-## CSS Cascading and Inheritance Level 4
+## CSS Grid Layout Module Level 3
 
-- Initial URL: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
+- Initial URL: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-writing-modes/
+- Editor's Draft: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
+- This specification was not in the reference crawl report.
 
 
-## CSS Cascading and Inheritance Level 5
+## WebTransport
 
-- Initial URL: [https://drafts.csswg.org/css-cascade-5/](https://drafts.csswg.org/css-cascade-5/)
+- Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-cascade-5/](https://drafts.csswg.org/css-cascade-5/)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-writing-modes/
-
-
-## CSS Flexible Box Layout Module Level 1
-
-- Initial URL: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-writing-modes/
-
-
-## CSS Fragmentation Module Level 3
-
-- Initial URL: [https://www.w3.org/TR/css-break-3/](https://www.w3.org/TR/css-break-3/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-break/](https://drafts.csswg.org/css-break/)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-writing-modes/
-
-
-## CSS Grid Layout Module Level 1
-
-- Initial URL: [https://www.w3.org/TR/css-grid-1/](https://www.w3.org/TR/css-grid-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-grid/](https://drafts.csswg.org/css-grid/)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-writing-modes/, https://www.w3.org/TR/css-cascade/, https://www.w3.org/TR/web-animations/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-values/ / *DEL* https://www.w3.org/TR/css3-writing-modes/
-
-
-## CSS Grid Layout Module Level 2
-
-- Initial URL: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
-- Missing references for links: *INS* https://www.w3.org/TR/css-grid-1/, https://www.w3.org/TR/css3-writing-modes/, https://www.w3.org/TR/css-cascade/, https://www.w3.org/TR/web-animations/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-values/ / *DEL* https://www.w3.org/TR/css3-writing-modes/
-
-
-## CSS Paged Media Module Level 3
-
-- Initial URL: [https://www.w3.org/TR/css-page-3/](https://www.w3.org/TR/css-page-3/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-page-3/](https://drafts.csswg.org/css-page-3/)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-writing-modes/
-
-
-## HTML Standard
-
-- Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- WebIDL names also defined elsewhere: *INS* WorkletGlobalScope, Worklet, WorkletOptions
-
-
-## Intersection Observer
-
-- Initial URL: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/IntersectionObserver/](https://w3c.github.io/IntersectionObserver/)
-- Unknown WebIDL names used: *INS* undefined
-
-
-## Scalable Vector Graphics (SVG) 2
-
-- Initial URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
-- Missing references for links: *INS* https://www.w3.org/TR/css3-writing-modes/
-
-
-## WebHID API
-
-- Initial URL: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
+- Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Spec is OK: *INS* false / *DEL* true
 - Unknown WebIDL names used: *INS* undefined
 
 
-## WebUSB API
+## WebXR Hand Input Module - Level 1
 
-- Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
+- Initial URL: [https://www.w3.org/TR/webxr-hand-input-1/](https://www.w3.org/TR/webxr-hand-input-1/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-permissions-policy/
+- Editor's Draft: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
+- This specification was not in the reference crawl report.
 
 
-## Worklets Level 1
+## WebXR Layers API Level 1
 
-- Initial URL: [https://www.w3.org/TR/worklets-1/](https://www.w3.org/TR/worklets-1/)
+- Initial URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.css-houdini.org/worklets/](https://drafts.css-houdini.org/worklets/)
-- WebIDL names also defined elsewhere: *INS* WorkletGlobalScope, Worklet, WorkletOptions
+- Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
+- Missing references for WebIDL names: *INS* GLenum
 
 
