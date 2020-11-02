@@ -5684,7 +5684,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
-- Crawled version: 26 October 2020
+- Crawled version: 2 November 2020
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Shortname: encoding
@@ -8838,7 +8838,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Crawled URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
-- Crawled version: 28 October 2020
+- Crawled version: 2 November 2020
 - Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Shortname: portals
 
@@ -10255,7 +10255,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
 - Crawled URL: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
-- Crawled version: 29 October 2020
+- Crawled version: 02 November 2020
 - Editor's Draft: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
 - Latest published version: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
 - Shortname: trace-context-1
@@ -10743,7 +10743,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Crawled URL: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
-- Crawled version: 28 October 2020
+- Crawled version: 2 November 2020
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Shortname: webaudio
@@ -12672,7 +12672,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 31 October 2020
+- Crawled version: 2 November 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -12909,7 +12909,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled version: 28 October 2020
+- Crawled version: 2 November 2020
 - Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Shortname: layers
 
