@@ -1,7 +1,7 @@
 {
   "spec": {
-    "title": "CSS Grid Layout Module Level 1",
-    "url": "https://www.w3.org/TR/css-grid-1/"
+    "title": "CSS Grid Layout Module Level 2",
+    "url": "https://www.w3.org/TR/css-grid-2/"
   },
   "properties": {
     "display": {
@@ -10,7 +10,7 @@
     },
     "grid-template-columns": {
       "name": "grid-template-columns",
-      "value": "none | <track-list> | <auto-track-list>",
+      "value": "none | <track-list> | <auto-track-list> | subgrid <line-name-list>?",
       "initial": "none",
       "appliesTo": "grid containers",
       "inherited": "no",
@@ -21,7 +21,7 @@
     },
     "grid-template-rows": {
       "name": "grid-template-rows",
-      "value": "none | <track-list> | <auto-track-list>",
+      "value": "none | <track-list> | <auto-track-list> | subgrid <line-name-list>?",
       "initial": "none",
       "appliesTo": "grid containers",
       "inherited": "no",
@@ -185,6 +185,9 @@
     "<explicit-track-list>": {
       "value": "[ <line-names>? <track-size> ]+ <line-names>?"
     },
+    "<line-name-list>": {
+      "value": "[ <line-names> | <name-repeat> ]+"
+    },
     "<track-size>": {
       "value": "<track-breadth> | minmax( <inflexible-breadth> , <track-breadth> ) | fit-content( <length-percentage> )"
     },
@@ -211,6 +214,9 @@
     },
     "<fixed-repeat>": {
       "value": "repeat( [ <integer [1,∞]> ] , [ <line-names>? <fixed-size> ]+ <line-names>? )"
+    },
+    "<name-repeat>": {
+      "value": "repeat( [ <integer [1,∞]> | auto-fill ], <line-names>+)"
     },
     "<grid-line>": {
       "value": "auto | <custom-ident> | [ <integer> && <custom-ident>? ] | [ span && [ <integer> || <custom-ident> ] ]"

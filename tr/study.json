@@ -2,11 +2,11 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2020-10-26T11:31:17.974Z",
+  "date": "2020-11-02T11:22:03.709Z",
   "stats": {
-    "crawled": 368,
+    "crawled": 367,
     "errors": 0,
-    "studied": 368
+    "studied": 367
   },
   "results": [
     {
@@ -1060,14 +1060,14 @@
               "crawled": "https://drafts.csswg.org/css-gcpm-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-grid-3/",
+              "title": "CSS Grid Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-grid-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-images-4/",
@@ -1567,7 +1567,7 @@
     {
       "title": "Client Hints Infrastructure",
       "shortname": "client-hints-infrastructure",
-      "date": "7 July 2020",
+      "date": "27 October 2020",
       "url": "https://wicg.github.io/client-hints-infrastructure/",
       "nightly": {
         "url": "https://wicg.github.io/client-hints-infrastructure/",
@@ -1595,6 +1595,13 @@
               "name": "SECURE-CONTEXTS",
               "url": "https://www.w3.org/TR/secure-contexts/"
             }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-permissions-policy/",
+            "ref": {
+              "name": "PERMISSIONS-POLICY-1",
+              "url": "https://www.w3.org/TR/permissions-policy-1/"
+            }
           }
         ],
         "referencedBy": {
@@ -1605,7 +1612,13 @@
               "crawled": "https://wicg.github.io/netinfo/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://wicg.github.io/ua-client-hints/",
+              "title": "User-Agent Client Hints",
+              "crawled": "https://wicg.github.io/ua-client-hints/"
+            }
+          ]
         },
         "ok": false
       }
@@ -1613,7 +1626,7 @@
     {
       "title": "Clipboard API and events",
       "shortname": "clipboard-apis",
-      "date": "18 August 2020",
+      "date": "29 October 2020",
       "url": "https://www.w3.org/TR/clipboard-apis/",
       "release": {
         "url": "https://www.w3.org/TR/clipboard-apis/",
@@ -1890,7 +1903,13 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://drafts.csswg.org/css-grid-3/",
+              "title": "CSS Grid Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-grid-3/"
+            }
+          ],
           "informative": []
         },
         "ok": false
@@ -3314,14 +3333,14 @@
               "crawled": "https://www.w3.org/TR/css-flexbox-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-grid-3/",
+              "title": "CSS Grid Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-grid-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-inline-3/",
@@ -3408,7 +3427,7 @@
     {
       "title": "CSS Box Model Module Level 3",
       "shortname": "css-box-3",
-      "date": "21 April 2020",
+      "date": "28 October 2020",
       "url": "https://www.w3.org/TR/css-box-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-box-3/",
@@ -3430,18 +3449,25 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [
-          "https://www.w3.org/TR/svg2/",
           "https://www.w3.org/TR/css-cascade/",
-          "https://www.w3.org/TR/css3-background/",
           "https://www.w3.org/TR/2018/WD-css3-box-20180731/",
           "https://www.w3.org/TR/css-display/",
           "https://www.w3.org/TR/css-flexbox/",
           "https://www.w3.org/TR/css-grid/",
           "https://www.w3.org/TR/css-position/",
           "https://www.w3.org/TR/css-tables/",
-          "https://www.w3.org/TR/css-logical-1/"
+          "https://www.w3.org/TR/css-logical-1/",
+          "https://www.w3.org/TR/web-animations/"
         ],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -3593,11 +3619,6 @@
               "crawled": "https://www.w3.org/TR/css-sizing-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
@@ -3644,6 +3665,11 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://drafts.csswg.org/css-grid-3/",
+              "title": "CSS Grid Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-grid-3/"
+            },
             {
               "url": "https://drafts.csswg.org/scroll-animations-1/",
               "title": "Scroll-linked Animations",
@@ -3747,14 +3773,14 @@
               "crawled": "https://www.w3.org/TR/css-break-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-grid-3/",
+              "title": "CSS Grid Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-grid-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-inline-3/",
@@ -4141,6 +4167,11 @@
               "crawled": "https://www.w3.org/TR/css-counter-styles-3/"
             },
             {
+              "url": "https://www.w3.org/TR/css-highlight-api-1/",
+              "title": "CSS Custom Highlight API Module Level 1",
+              "crawled": "https://www.w3.org/TR/css-highlight-api-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-variables-1/",
               "title": "CSS Custom Properties for Cascading Variables Module Level 1",
               "crawled": "https://www.w3.org/TR/css-variables-1/"
@@ -4179,11 +4210,6 @@
               "url": "https://www.w3.org/TR/css-content-3/",
               "title": "CSS Generated Content Module Level 3",
               "crawled": "https://www.w3.org/TR/css-content-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-2/",
@@ -4939,9 +4965,9 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://drafts.csswg.org/css-highlight-api-1/",
+              "url": "https://www.w3.org/TR/css-highlight-api-1/",
               "title": "CSS Custom Highlight API Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-highlight-api-1/"
+              "crawled": "https://www.w3.org/TR/css-highlight-api-1/"
             }
           ],
           "informative": [
@@ -5034,14 +5060,18 @@
     {
       "title": "CSS Custom Highlight API Module Level 1",
       "shortname": "css-highlight-api-1",
-      "date": "21 October 2020",
-      "url": "https://drafts.csswg.org/css-highlight-api-1/",
+      "date": "22 October 2020",
+      "url": "https://www.w3.org/TR/css-highlight-api-1/",
+      "release": {
+        "url": "https://www.w3.org/TR/css-highlight-api-1/",
+        "filename": "Overview.html"
+      },
       "nightly": {
         "url": "https://drafts.csswg.org/css-highlight-api-1/",
         "repository": "https://github.com/w3c/csswg-drafts",
         "filename": "Overview.html"
       },
-      "crawled": "https://drafts.csswg.org/css-highlight-api-1/",
+      "crawled": "https://www.w3.org/TR/css-highlight-api-1/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -5382,14 +5412,14 @@
               "crawled": "https://www.w3.org/TR/css-break-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-grid-3/",
+              "title": "CSS Grid Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-grid-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-inline-3/",
@@ -5944,11 +5974,6 @@
               "crawled": "https://www.w3.org/TR/css-display-3/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
@@ -6419,11 +6444,6 @@
               "crawled": "https://www.w3.org/TR/css-flexbox-1/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
@@ -6611,14 +6631,14 @@
               "crawled": "https://www.w3.org/TR/css-display-3/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-grid-3/",
+              "title": "CSS Grid Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-grid-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-inline-3/",
@@ -6886,145 +6906,6 @@
       }
     },
     {
-      "title": "CSS Grid Layout Module Level 1",
-      "shortname": "css-grid-1",
-      "date": "21 October 2020",
-      "url": "https://www.w3.org/TR/css-grid-1/",
-      "release": {
-        "url": "https://www.w3.org/TR/css-grid-1/",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-grid/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "filename": "Overview.html"
-      },
-      "crawled": "https://www.w3.org/TR/css-grid-1/",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://www.w3.org/TR/css-flexbox/",
-          "https://www.w3.org/TR/css3-mediaqueries/",
-          "https://www.w3.org/TR/css-align/",
-          "https://www.w3.org/TR/css3-writing-modes/",
-          "https://www.w3.org/TR/css3-speech/",
-          "https://www.w3.org/TR/css-cascade/",
-          "https://www.w3.org/TR/web-animations/",
-          "https://www.w3.org/TR/cssom/",
-          "https://www.w3.org/TR/css-break/",
-          "https://www.w3.org/TR/css3-break/"
-        ],
-        "inconsistentRef": [
-          {
-            "link": "https://www.w3.org/TR/css-values/",
-            "ref": {
-              "name": "CSS-VALUES-3",
-              "url": "https://www.w3.org/TR/css-values-3/"
-            }
-          }
-        ],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/css-align-3/",
-              "title": "CSS Box Alignment Module Level 3",
-              "crawled": "https://www.w3.org/TR/css-align-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-box-4/",
-              "title": "CSS Box Model Module Level 4",
-              "crawled": "https://www.w3.org/TR/css-box-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-display-3/",
-              "title": "CSS Display Module Level 3",
-              "crawled": "https://www.w3.org/TR/css-display-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-layout-api-1/",
-              "title": "CSS Layout API Level 1",
-              "crawled": "https://www.w3.org/TR/css-layout-api-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-multicol-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-3/",
-              "title": "CSS Overflow Module Level 3",
-              "crawled": "https://www.w3.org/TR/css-overflow-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-overflow-4/",
-              "title": "CSS Overflow Module Level 4",
-              "crawled": "https://www.w3.org/TR/css-overflow-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-position-3/",
-              "title": "CSS Positioned Layout Module Level 3",
-              "crawled": "https://www.w3.org/TR/css-position-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-tables-3/",
-              "title": "CSS Table Module Level 3",
-              "crawled": "https://www.w3.org/TR/css-tables-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-typed-om-1/",
-              "title": "CSS Typed OM Level 1",
-              "crawled": "https://www.w3.org/TR/css-typed-om-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-values-4/",
-              "title": "CSS Values and Units Module Level 4",
-              "crawled": "https://www.w3.org/TR/css-values-4/"
-            },
-            {
-              "url": "https://html.spec.whatwg.org/multipage/",
-              "title": "HTML Standard",
-              "crawled": "https://html.spec.whatwg.org/multipage/"
-            }
-          ],
-          "informative": [
-            {
-              "url": "https://drafts.csswg.org/css-backgrounds-4/",
-              "title": "CSS Backgrounds and Borders Module Level 4",
-              "crawled": "https://drafts.csswg.org/css-backgrounds-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-contain-2/",
-              "title": "CSS Containment Module Level 2",
-              "crawled": "https://www.w3.org/TR/css-contain-2/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-break-3/",
-              "title": "CSS Fragmentation Module Level 3",
-              "crawled": "https://www.w3.org/TR/css-break-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-break-4/",
-              "title": "CSS Fragmentation Module Level 4",
-              "crawled": "https://www.w3.org/TR/css-break-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-values-3/",
-              "title": "CSS Values and Units Module Level 3",
-              "crawled": "https://www.w3.org/TR/css-values-3/"
-            }
-          ]
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "CSS Grid Layout Module Level 2",
       "shortname": "css-grid-2",
       "date": "21 October 2020",
@@ -7082,9 +6963,9 @@
               "crawled": "https://www.w3.org/TR/css-display-3/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
+              "url": "https://drafts.csswg.org/css-grid-3/",
+              "title": "CSS Grid Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-grid-3/"
             }
           ],
           "informative": [
@@ -7094,6 +6975,46 @@
               "crawled": "https://www.w3.org/TR/css-sizing-3/"
             }
           ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "CSS Grid Layout Module Level 3",
+      "shortname": "css-grid-3",
+      "date": "22 October 2020",
+      "url": "https://drafts.csswg.org/css-grid-3/",
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-grid-3/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "filename": "Overview.html"
+      },
+      "crawled": "https://drafts.csswg.org/css-grid-3/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/web-animations/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/css-values/",
+            "ref": {
+              "name": "CSS-VALUES-3",
+              "url": "https://www.w3.org/TR/css-values-3/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
         },
         "ok": false
       }
@@ -7279,11 +7200,6 @@
           ],
           "informative": [
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
@@ -7348,11 +7264,6 @@
               "url": "https://www.w3.org/TR/css-flexbox-1/",
               "title": "CSS Flexible Box Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/css-flexbox-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-2/",
@@ -7713,7 +7624,13 @@
               "crawled": "https://www.w3.org/TR/web-animations-1/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://drafts.csswg.org/css-grid-3/",
+              "title": "CSS Grid Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-grid-3/"
+            }
+          ]
         },
         "ok": false
       }
@@ -8034,11 +7951,6 @@
               "crawled": "https://www.w3.org/TR/css-contain-2/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
@@ -8158,7 +8070,7 @@
     {
       "title": "CSS Nesting Module",
       "shortname": "css-nesting-1",
-      "date": "16 October 2020",
+      "date": "29 October 2020",
       "url": "https://drafts.csswg.org/css-nesting-1/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-nesting-1/",
@@ -8268,9 +8180,9 @@
               "crawled": "https://www.w3.org/TR/css-counter-styles-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-highlight-api-1/",
+              "url": "https://www.w3.org/TR/css-highlight-api-1/",
               "title": "CSS Custom Highlight API Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-highlight-api-1/"
+              "crawled": "https://www.w3.org/TR/css-highlight-api-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-device-adapt-1/",
@@ -8291,11 +8203,6 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://www.w3.org/TR/css-fonts-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-2/",
@@ -8545,11 +8452,6 @@
               "url": "https://www.w3.org/TR/css-break-4/",
               "title": "CSS Fragmentation Module Level 4",
               "crawled": "https://www.w3.org/TR/css-break-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-2/",
@@ -9086,11 +8988,6 @@
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/css-properties-values-api-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/worklets-1/",
-              "title": "Worklets Level 1",
-              "crawled": "https://www.w3.org/TR/worklets-1/"
             }
           ]
         },
@@ -9199,11 +9096,6 @@
               "url": "https://www.w3.org/TR/css-flexbox-1/",
               "title": "CSS Flexible Box Layout Module Level 1",
               "crawled": "https://www.w3.org/TR/css-flexbox-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-2/",
@@ -9465,9 +9357,9 @@
               "crawled": "https://www.w3.org/TR/css-color-adjust-1/"
             },
             {
-              "url": "https://drafts.csswg.org/css-highlight-api-1/",
+              "url": "https://www.w3.org/TR/css-highlight-api-1/",
               "title": "CSS Custom Highlight API Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-highlight-api-1/"
+              "crawled": "https://www.w3.org/TR/css-highlight-api-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
@@ -9483,11 +9375,6 @@
               "url": "https://www.w3.org/TR/css-content-3/",
               "title": "CSS Generated Content Module Level 3",
               "crawled": "https://www.w3.org/TR/css-content-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-2/",
@@ -9804,6 +9691,11 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-box-3/",
+              "title": "CSS Box Model Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-box-3/"
+            },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
               "title": "CSS Display Module Level 3",
@@ -10554,9 +10446,9 @@
               "crawled": "https://www.w3.org/TR/css-counter-styles-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-highlight-api-1/",
+              "url": "https://www.w3.org/TR/css-highlight-api-1/",
               "title": "CSS Custom Highlight API Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-highlight-api-1/"
+              "crawled": "https://www.w3.org/TR/css-highlight-api-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-variables-1/",
@@ -10587,11 +10479,6 @@
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://www.w3.org/TR/css-fonts-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-2/",
@@ -10727,11 +10614,6 @@
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://www.w3.org/TR/webvtt1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/worklets-1/",
-              "title": "Worklets Level 1",
-              "crawled": "https://www.w3.org/TR/worklets-1/"
             }
           ],
           "informative": [
@@ -11095,11 +10977,6 @@
               "url": "https://www.w3.org/TR/css-content-3/",
               "title": "CSS Generated Content Module Level 3",
               "crawled": "https://www.w3.org/TR/css-content-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-2/",
@@ -12101,14 +11978,14 @@
               "crawled": "https://www.w3.org/TR/css-content-3/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-grid-3/",
+              "title": "CSS Grid Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-grid-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-images-4/",
@@ -12566,14 +12443,14 @@
               "crawled": "https://www.w3.org/TR/css-content-3/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-grid-3/",
+              "title": "CSS Grid Layout Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-grid-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-images-3/",
@@ -12979,11 +12856,6 @@
               "url": "https://www.w3.org/TR/css-break-4/",
               "title": "CSS Fragmentation Module Level 4",
               "crawled": "https://www.w3.org/TR/css-break-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-2/",
@@ -13625,7 +13497,7 @@
     {
       "title": "DOM Standard",
       "shortname": "dom",
-      "date": "5 October 2020",
+      "date": "27 October 2020",
       "url": "https://dom.spec.whatwg.org/",
       "nightly": {
         "url": "https://dom.spec.whatwg.org/",
@@ -13764,9 +13636,9 @@
               "crawled": "https://www.w3.org/TR/css-color-adjust-1/"
             },
             {
-              "url": "https://drafts.csswg.org/css-highlight-api-1/",
+              "url": "https://www.w3.org/TR/css-highlight-api-1/",
               "title": "CSS Custom Highlight API Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-highlight-api-1/"
+              "crawled": "https://www.w3.org/TR/css-highlight-api-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-variables-1/",
@@ -14491,7 +14363,7 @@
     {
       "title": "Encoding Standard",
       "shortname": "encoding",
-      "date": "23 October 2020",
+      "date": "26 October 2020",
       "url": "https://www.w3.org/TR/encoding/",
       "release": {
         "url": "https://www.w3.org/TR/encoding/",
@@ -14645,11 +14517,6 @@
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://www.w3.org/TR/webvtt1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/worklets-1/",
-              "title": "Worklets Level 1",
-              "crawled": "https://www.w3.org/TR/worklets-1/"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -14851,7 +14718,7 @@
     {
       "title": "Fetch Standard",
       "shortname": "fetch",
-      "date": "29 September 2020",
+      "date": "26 October 2020",
       "url": "https://fetch.spec.whatwg.org/",
       "nightly": {
         "url": "https://fetch.spec.whatwg.org/",
@@ -15168,11 +15035,6 @@
               "url": "https://w3c.github.io/webtransport/",
               "title": "WebTransport",
               "crawled": "https://w3c.github.io/webtransport/"
-            },
-            {
-              "url": "https://www.w3.org/TR/worklets-1/",
-              "title": "Worklets Level 1",
-              "crawled": "https://www.w3.org/TR/worklets-1/"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -15755,7 +15617,7 @@
     {
       "title": "Gamepad",
       "shortname": "gamepad",
-      "date": "17 September 2020",
+      "date": "29 October 2020",
       "url": "https://www.w3.org/TR/gamepad/",
       "release": {
         "url": "https://www.w3.org/TR/gamepad/",
@@ -15805,7 +15667,7 @@
     {
       "title": "Gamepad Extensions",
       "shortname": "gamepad-extensions",
-      "date": "17 September 2020",
+      "date": "29 October 2020",
       "url": "https://w3c.github.io/gamepad/extensions.html",
       "nightly": {
         "url": "https://w3c.github.io/gamepad/extensions.html",
@@ -16696,36 +16558,6 @@
                 "crawled": "https://www.w3.org/TR/presentation-api/"
               }
             ]
-          },
-          {
-            "name": "WorkletGlobalScope",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/worklets-1/",
-                "title": "Worklets Level 1",
-                "crawled": "https://www.w3.org/TR/worklets-1/"
-              }
-            ]
-          },
-          {
-            "name": "Worklet",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/worklets-1/",
-                "title": "Worklets Level 1",
-                "crawled": "https://www.w3.org/TR/worklets-1/"
-              }
-            ]
-          },
-          {
-            "name": "WorkletOptions",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/worklets-1/",
-                "title": "Worklets Level 1",
-                "crawled": "https://www.w3.org/TR/worklets-1/"
-              }
-            ]
           }
         ],
         "missingWebIdlRef": [
@@ -16936,9 +16768,9 @@
               "crawled": "https://www.w3.org/TR/css-contain-2/"
             },
             {
-              "url": "https://drafts.csswg.org/css-highlight-api-1/",
+              "url": "https://www.w3.org/TR/css-highlight-api-1/",
               "title": "CSS Custom Highlight API Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-highlight-api-1/"
+              "crawled": "https://www.w3.org/TR/css-highlight-api-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
@@ -17766,19 +17598,14 @@
               "crawled": "https://immersive-web.github.io/dom-overlays/"
             },
             {
-              "url": "https://immersive-web.github.io/webxr-hand-input/",
+              "url": "https://www.w3.org/TR/webxr-hand-input-1/",
               "title": "WebXR Hand Input Module - Level 1",
-              "crawled": "https://immersive-web.github.io/webxr-hand-input/"
+              "crawled": "https://www.w3.org/TR/webxr-hand-input-1/"
             },
             {
               "url": "https://immersive-web.github.io/layers/",
               "title": "WebXR Layers API Level 1",
               "crawled": "https://immersive-web.github.io/layers/"
-            },
-            {
-              "url": "https://www.w3.org/TR/worklets-1/",
-              "title": "Worklets Level 1",
-              "crawled": "https://www.w3.org/TR/worklets-1/"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -17831,11 +17658,6 @@
               "url": "https://www.w3.org/TR/css-content-3/",
               "title": "CSS Generated Content Module Level 3",
               "crawled": "https://www.w3.org/TR/css-content-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-2/",
@@ -18460,19 +18282,14 @@
               "crawled": "https://www.w3.org/TR/css-counter-styles-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-highlight-api-1/",
+              "url": "https://www.w3.org/TR/css-highlight-api-1/",
               "title": "CSS Custom Highlight API Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-highlight-api-1/"
+              "crawled": "https://www.w3.org/TR/css-highlight-api-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
               "title": "CSS Fonts Module Level 4",
               "crawled": "https://www.w3.org/TR/css-fonts-4/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-grid-2/",
@@ -18890,19 +18707,14 @@
               "crawled": "https://www.w3.org/TR/webxr/"
             },
             {
-              "url": "https://immersive-web.github.io/webxr-hand-input/",
+              "url": "https://www.w3.org/TR/webxr-hand-input-1/",
               "title": "WebXR Hand Input Module - Level 1",
-              "crawled": "https://immersive-web.github.io/webxr-hand-input/"
+              "crawled": "https://www.w3.org/TR/webxr-hand-input-1/"
             },
             {
               "url": "https://immersive-web.github.io/hit-test/",
               "title": "WebXR Hit Test Module",
               "crawled": "https://immersive-web.github.io/hit-test/"
-            },
-            {
-              "url": "https://www.w3.org/TR/worklets-1/",
-              "title": "Worklets Level 1",
-              "crawled": "https://www.w3.org/TR/worklets-1/"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -19015,7 +18827,7 @@
     {
       "title": "Intersection Observer",
       "shortname": "intersection-observer",
-      "date": "21 October 2020",
+      "date": "2 November 2020",
       "url": "https://www.w3.org/TR/intersection-observer/",
       "release": {
         "url": "https://www.w3.org/TR/intersection-observer/",
@@ -19257,7 +19069,7 @@
     {
       "title": "Largest Contentful Paint",
       "shortname": "largest-contentful-paint",
-      "date": "20 October 2020",
+      "date": "28 October 2020",
       "url": "https://wicg.github.io/largest-contentful-paint/",
       "nightly": {
         "url": "https://wicg.github.io/largest-contentful-paint/",
@@ -20236,11 +20048,6 @@
               "crawled": "https://www.w3.org/TR/css-color-4/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
@@ -20254,11 +20061,6 @@
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web App Manifest",
               "crawled": "https://www.w3.org/TR/appmanifest/"
-            },
-            {
-              "url": "https://immersive-web.github.io/webxr-hand-input/",
-              "title": "WebXR Hand Input Module - Level 1",
-              "crawled": "https://immersive-web.github.io/webxr-hand-input/"
             }
           ],
           "informative": [
@@ -22125,6 +21927,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://wicg.github.io/client-hints-infrastructure/",
+              "title": "Client Hints Infrastructure",
+              "crawled": "https://wicg.github.io/client-hints-infrastructure/"
+            },
+            {
               "url": "https://fullscreen.spec.whatwg.org/",
               "title": "Fullscreen API Standard",
               "crawled": "https://fullscreen.spec.whatwg.org/"
@@ -22347,7 +22154,7 @@
     {
       "title": "Portals",
       "shortname": "portals",
-      "date": "28 September 2020",
+      "date": "28 October 2020",
       "url": "https://wicg.github.io/portals/",
       "nightly": {
         "url": "https://wicg.github.io/portals/",
@@ -24426,9 +24233,9 @@
               "crawled": "https://www.w3.org/TR/css-conditional-4/"
             },
             {
-              "url": "https://drafts.csswg.org/css-highlight-api-1/",
+              "url": "https://www.w3.org/TR/css-highlight-api-1/",
               "title": "CSS Custom Highlight API Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-highlight-api-1/"
+              "crawled": "https://www.w3.org/TR/css-highlight-api-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-display-3/",
@@ -24792,6 +24599,11 @@
               "url": "https://wicg.github.io/periodic-background-sync/",
               "title": "Web Periodic Background Synchronization",
               "crawled": "https://wicg.github.io/periodic-background-sync/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webxr-hand-input-1/",
+              "title": "WebXR Hand Input Module - Level 1",
+              "crawled": "https://www.w3.org/TR/webxr-hand-input-1/"
             }
           ],
           "informative": [
@@ -24904,7 +24716,7 @@
     {
       "title": "Streams Standard",
       "shortname": "streams",
-      "date": "1 October 2020",
+      "date": "29 October 2020",
       "url": "https://streams.spec.whatwg.org/",
       "nightly": {
         "url": "https://streams.spec.whatwg.org/",
@@ -26111,7 +25923,7 @@
     {
       "title": "URL Standard",
       "shortname": "url",
-      "date": "8 October 2020",
+      "date": "2 November 2020",
       "url": "https://url.spec.whatwg.org/",
       "nightly": {
         "url": "https://url.spec.whatwg.org/",
@@ -26405,6 +26217,11 @@
               "crawled": "https://w3c.github.io/webtransport/"
             },
             {
+              "url": "https://www.w3.org/TR/webxr-hand-input-1/",
+              "title": "WebXR Hand Input Module - Level 1",
+              "crawled": "https://www.w3.org/TR/webxr-hand-input-1/"
+            },
+            {
               "url": "https://xhr.spec.whatwg.org/",
               "title": "XMLHttpRequest Standard",
               "crawled": "https://xhr.spec.whatwg.org/"
@@ -26519,7 +26336,7 @@
     {
       "title": "User-Agent Client Hints",
       "shortname": "ua-client-hints",
-      "date": "12 August 2020",
+      "date": "27 October 2020",
       "url": "https://wicg.github.io/ua-client-hints/",
       "nightly": {
         "url": "https://wicg.github.io/ua-client-hints/",
@@ -26735,11 +26552,6 @@
               "crawled": "https://drafts.csswg.org/css-animations-2/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-1/",
-              "title": "CSS Grid Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-grid-1/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
@@ -26931,11 +26743,6 @@
               "url": "https://www.w3.org/TR/mediacapture-fromelement/",
               "title": "Media Capture from DOM Elements",
               "crawled": "https://www.w3.org/TR/mediacapture-fromelement/"
-            },
-            {
-              "url": "https://www.w3.org/TR/worklets-1/",
-              "title": "Worklets Level 1",
-              "crawled": "https://www.w3.org/TR/worklets-1/"
             }
           ]
         },
@@ -29417,7 +29224,7 @@
     {
       "title": "WebGPU",
       "shortname": "gpuweb",
-      "date": "23 October 2020",
+      "date": "29 October 2020",
       "url": "https://gpuweb.github.io/gpuweb/",
       "nightly": {
         "url": "https://gpuweb.github.io/gpuweb/",
@@ -29668,9 +29475,9 @@
               "crawled": "https://www.w3.org/TR/css-counter-styles-3/"
             },
             {
-              "url": "https://drafts.csswg.org/css-highlight-api-1/",
+              "url": "https://www.w3.org/TR/css-highlight-api-1/",
               "title": "CSS Custom Highlight API Module Level 1",
-              "crawled": "https://drafts.csswg.org/css-highlight-api-1/"
+              "crawled": "https://www.w3.org/TR/css-highlight-api-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -30443,9 +30250,9 @@
               "crawled": "https://www.w3.org/TR/webxr-gamepads-module-1/"
             },
             {
-              "url": "https://immersive-web.github.io/webxr-hand-input/",
+              "url": "https://www.w3.org/TR/webxr-hand-input-1/",
               "title": "WebXR Hand Input Module - Level 1",
-              "crawled": "https://immersive-web.github.io/webxr-hand-input/"
+              "crawled": "https://www.w3.org/TR/webxr-hand-input-1/"
             },
             {
               "url": "https://immersive-web.github.io/hit-test/",
@@ -30456,11 +30263,6 @@
               "url": "https://immersive-web.github.io/layers/",
               "title": "WebXR Layers API Level 1",
               "crawled": "https://immersive-web.github.io/layers/"
-            },
-            {
-              "url": "https://www.w3.org/TR/worklets-1/",
-              "title": "Worklets Level 1",
-              "crawled": "https://www.w3.org/TR/worklets-1/"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -30720,7 +30522,7 @@
     {
       "title": "WebTransport",
       "shortname": "webtransport",
-      "date": "15 October 2020",
+      "date": "30 October 2020",
       "url": "https://w3c.github.io/webtransport/",
       "nightly": {
         "url": "https://w3c.github.io/webtransport/",
@@ -30734,7 +30536,9 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "undefined"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingLinkRef": [],
@@ -30743,13 +30547,13 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
       "title": "WebUSB API",
       "shortname": "webusb",
-      "date": "25 October 2020",
+      "date": "31 October 2020",
       "url": "https://wicg.github.io/webusb/",
       "nightly": {
         "url": "https://wicg.github.io/webusb/",
@@ -30952,11 +30756,6 @@
               "crawled": "https://immersive-web.github.io/anchors/"
             },
             {
-              "url": "https://immersive-web.github.io/webxr-hand-input/",
-              "title": "WebXR Hand Input Module - Level 1",
-              "crawled": "https://immersive-web.github.io/webxr-hand-input/"
-            },
-            {
               "url": "https://immersive-web.github.io/layers/",
               "title": "WebXR Layers API Level 1",
               "crawled": "https://immersive-web.github.io/layers/"
@@ -31090,11 +30889,6 @@
               "crawled": "https://immersive-web.github.io/dom-overlays/"
             },
             {
-              "url": "https://immersive-web.github.io/webxr-hand-input/",
-              "title": "WebXR Hand Input Module - Level 1",
-              "crawled": "https://immersive-web.github.io/webxr-hand-input/"
-            },
-            {
               "url": "https://immersive-web.github.io/hit-test/",
               "title": "WebXR Hit Test Module",
               "crawled": "https://immersive-web.github.io/hit-test/"
@@ -31214,15 +31008,19 @@
     },
     {
       "title": "WebXR Hand Input Module - Level 1",
-      "shortname": "webxr-hand-input",
-      "date": "18 October 2020",
-      "url": "https://immersive-web.github.io/webxr-hand-input/",
+      "shortname": "webxr-hand-input-1",
+      "date": "22 October 2020",
+      "url": "https://www.w3.org/TR/webxr-hand-input-1/",
+      "release": {
+        "url": "https://www.w3.org/TR/webxr-hand-input-1/",
+        "filename": "Overview.html"
+      },
       "nightly": {
         "url": "https://immersive-web.github.io/webxr-hand-input/",
         "repository": "https://github.com/immersive-web/webxr-hand-input",
         "filename": "index.html"
       },
-      "crawled": "https://immersive-web.github.io/webxr-hand-input/",
+      "crawled": "https://www.w3.org/TR/webxr-hand-input-1/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -31231,14 +31029,65 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [],
-        "inconsistentRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "XRInputSource",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webxr/",
+                "title": "WebXR Device API",
+                "crawled": "https://www.w3.org/TR/webxr/"
+              }
+            ]
+          },
+          {
+            "name": "XRSpace",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webxr/",
+                "title": "WebXR Device API",
+                "crawled": "https://www.w3.org/TR/webxr/"
+              }
+            ]
+          },
+          {
+            "name": "XRFrame",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webxr/",
+                "title": "WebXR Device API",
+                "crawled": "https://www.w3.org/TR/webxr/"
+              }
+            ]
+          },
+          {
+            "name": "XRPose",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/webxr/",
+                "title": "WebXR Device API",
+                "crawled": "https://www.w3.org/TR/webxr/"
+              }
+            ]
+          }
+        ],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/webxr/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "SERVICE-WORKERS-1",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -31273,7 +31122,7 @@
     {
       "title": "WebXR Layers API Level 1",
       "shortname": "layers",
-      "date": "24 October 2020",
+      "date": "28 October 2020",
       "url": "https://immersive-web.github.io/layers/",
       "nightly": {
         "url": "https://immersive-web.github.io/layers/",
@@ -31294,6 +31143,16 @@
         "missingWebIdlRef": [
           {
             "name": "WebGLTexture",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLenum",
             "refs": [
               {
                 "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
@@ -31349,105 +31208,6 @@
           ]
         },
         "ok": true
-      }
-    },
-    {
-      "title": "Worklets Level 1",
-      "shortname": "worklets-1",
-      "date": "8 September 2020",
-      "url": "https://www.w3.org/TR/worklets-1/",
-      "release": {
-        "url": "https://www.w3.org/TR/worklets-1/",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://drafts.css-houdini.org/worklets/",
-        "repository": "https://github.com/w3c/css-houdini-drafts",
-        "filename": "Overview.html"
-      },
-      "crawled": "https://www.w3.org/TR/worklets-1/",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "undefined"
-        ],
-        "redefinedIdlNames": [
-          {
-            "name": "WorkletGlobalScope",
-            "refs": [
-              {
-                "url": "https://html.spec.whatwg.org/multipage/",
-                "title": "HTML Standard",
-                "crawled": "https://html.spec.whatwg.org/multipage/"
-              }
-            ]
-          },
-          {
-            "name": "Worklet",
-            "refs": [
-              {
-                "url": "https://html.spec.whatwg.org/multipage/",
-                "title": "HTML Standard",
-                "crawled": "https://html.spec.whatwg.org/multipage/"
-              }
-            ]
-          },
-          {
-            "name": "WorkletOptions",
-            "refs": [
-              {
-                "url": "https://html.spec.whatwg.org/multipage/",
-                "title": "HTML Standard",
-                "crawled": "https://html.spec.whatwg.org/multipage/"
-              }
-            ]
-          }
-        ],
-        "missingWebIdlRef": [],
-        "missingLinkRef": [
-          "https://w3c.github.io/webappsec-csp/"
-        ],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [
-            {
-              "url": "https://www.w3.org/TR/CSP3/",
-              "title": "Content Security Policy Level 3",
-              "crawled": "https://www.w3.org/TR/CSP3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-animation-worklet-1/",
-              "title": "CSS Animation Worklet API",
-              "crawled": "https://www.w3.org/TR/css-animation-worklet-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-layout-api-1/",
-              "title": "CSS Layout API Level 1",
-              "crawled": "https://www.w3.org/TR/css-layout-api-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-paint-api-1/",
-              "title": "CSS Painting API Level 1",
-              "crawled": "https://www.w3.org/TR/css-paint-api-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/permissions-policy-1/",
-              "title": "Permissions Policy",
-              "crawled": "https://www.w3.org/TR/permissions-policy-1/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webaudio/",
-              "title": "Web Audio API",
-              "crawled": "https://www.w3.org/TR/webaudio/"
-            }
-          ],
-          "informative": []
-        },
-        "ok": false
       }
     },
     {
