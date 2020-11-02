@@ -1,0 +1,3340 @@
+{
+  "spec": {
+    "title": "WebCodecs",
+    "url": "https://wicg.github.io/web-codecs/"
+  },
+  "dfns": [
+    {
+      "id": "control-message-queue",
+      "href": "https://wicg.github.io/web-codecs/#control-message-queue",
+      "linkingText": [
+        "control message queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "control-messages",
+      "href": "https://wicg.github.io/web-codecs/#control-messages",
+      "linkingText": [
+        "control messages"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "enqueues-a-control-message",
+      "href": "https://wicg.github.io/web-codecs/#enqueues-a-control-message",
+      "linkingText": [
+        "Enqueues a control message",
+        "Queue a control message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "running-a-control-message",
+      "href": "https://wicg.github.io/web-codecs/#running-a-control-message",
+      "linkingText": [
+        "running a control message",
+        "control message steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "run-the-control-message-processing-loop",
+      "href": "https://wicg.github.io/web-codecs/#run-the-control-message-processing-loop",
+      "linkingText": [
+        "Run the control message processing loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "audiodecoder",
+      "href": "https://wicg.github.io/web-codecs/#audiodecoder",
+      "linkingText": [
+        "AudioDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoder-audiodecoder-init-init",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoder-audiodecoder-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioDecoder/AudioDecoder(init)",
+        "AudioDecoder/constructor(init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoder-configure-config-config",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoder-configure-config-config",
+      "linkingText": [
+        "config"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioDecoder/configure(config)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoder-decode-chunk-chunk",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoder-decode-chunk-chunk",
+      "linkingText": [
+        "chunk"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioDecoder/decode(chunk)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-audiodecoderinit",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-audiodecoderinit",
+      "linkingText": [
+        "AudioDecoderInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoderinit-output",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoderinit-output",
+      "linkingText": [
+        "output"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDecoderInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoderinit-error",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoderinit-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDecoderInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-audioframeoutputcallback",
+      "href": "https://wicg.github.io/web-codecs/#callbackdef-audioframeoutputcallback",
+      "linkingText": [
+        "AudioFrameOutputCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioframeoutputcallback-output",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioframeoutputcallback-output",
+      "linkingText": [
+        "output"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioFrameOutputCallback"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audodecoder-codec-implementation-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-audodecoder-codec-implementation-slot",
+      "linkingText": [
+        "[[codec implementation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audodecoder-output-callback-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-audodecoder-output-callback-slot",
+      "linkingText": [
+        "[[output callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audodecoder-error-callback-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-audodecoder-error-callback-slot",
+      "linkingText": [
+        "[[error callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoder-audiodecoder",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoder-audiodecoder",
+      "linkingText": [
+        "AudioDecoder(init)",
+        "constructor(init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoder-state",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoder-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoder-decodequeuesize",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoder-decodequeuesize",
+      "linkingText": [
+        "decodeQueueSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoder-configure",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoder-configure",
+      "linkingText": [
+        "configure(config)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoder-decode",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoder-decode",
+      "linkingText": [
+        "decode(chunk)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoder-flush",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoder-flush",
+      "linkingText": [
+        "flush()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoder-reset",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoder-reset",
+      "linkingText": [
+        "reset()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoder-close",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoder-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "videodecoder",
+      "href": "https://wicg.github.io/web-codecs/#videodecoder",
+      "linkingText": [
+        "VideoDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-videodecoder-init-init",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-videodecoder-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoDecoder/VideoDecoder(init)",
+        "VideoDecoder/constructor(init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-configure-config-config",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-configure-config-config",
+      "linkingText": [
+        "config"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoDecoder/configure(config)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-decode-chunk-chunk",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-decode-chunk-chunk",
+      "linkingText": [
+        "chunk"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoDecoder/decode(chunk)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-videodecoderinit",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-videodecoderinit",
+      "linkingText": [
+        "VideoDecoderInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoderinit-output",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoderinit-output",
+      "linkingText": [
+        "output"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoderinit-error",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoderinit-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-videoframeoutputcallback",
+      "href": "https://wicg.github.io/web-codecs/#callbackdef-videoframeoutputcallback",
+      "linkingText": [
+        "VideoFrameOutputCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframeoutputcallback-output",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframeoutputcallback-output",
+      "linkingText": [
+        "output"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoFrameOutputCallback"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-codec-implementation-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-codec-implementation-slot",
+      "linkingText": [
+        "[[codec implementation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-output-callback-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-output-callback-slot",
+      "linkingText": [
+        "[[output callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-error-callback-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-error-callback-slot",
+      "linkingText": [
+        "[[error callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-videodecoder",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-videodecoder",
+      "linkingText": [
+        "VideoDecoder(init)",
+        "constructor(init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-state",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-decodequeuesize",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-decodequeuesize",
+      "linkingText": [
+        "decodeQueueSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-configure",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-configure",
+      "linkingText": [
+        "configure(config)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-decode",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-decode",
+      "linkingText": [
+        "decode(chunk)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-flush",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-flush",
+      "linkingText": [
+        "flush()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-reset",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-reset",
+      "linkingText": [
+        "reset()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoder-close",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoder-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "audioencoder",
+      "href": "https://wicg.github.io/web-codecs/#audioencoder",
+      "linkingText": [
+        "AudioEncoder"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-audioencoder-init-init",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-audioencoder-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioEncoder/AudioEncoder(init)",
+        "AudioEncoder/constructor(init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-configure-config-config",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-configure-config-config",
+      "linkingText": [
+        "config"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioEncoder/configure(config)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-encode-frame-frame",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-encode-frame-frame",
+      "linkingText": [
+        "frame"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioEncoder/encode(frame)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-audioencoderinit",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-audioencoderinit",
+      "linkingText": [
+        "AudioEncoderInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoderinit-output",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoderinit-output",
+      "linkingText": [
+        "output"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioEncoderInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoderinit-error",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoderinit-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioEncoderInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-encodedaudiochunkoutputcallback",
+      "href": "https://wicg.github.io/web-codecs/#callbackdef-encodedaudiochunkoutputcallback",
+      "linkingText": [
+        "EncodedAudioChunkOutputCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedaudiochunkoutputcallback-output",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedaudiochunkoutputcallback-output",
+      "linkingText": [
+        "output"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "EncodedAudioChunkOutputCallback"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-codec-implementation-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-codec-implementation-slot",
+      "linkingText": [
+        "[[codec implementation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-output-callback-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-output-callback-slot",
+      "linkingText": [
+        "[[output callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-error-callback-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-error-callback-slot",
+      "linkingText": [
+        "[[error callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-audioencoder",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-audioencoder",
+      "linkingText": [
+        "AudioEncoder(init)",
+        "constructor(init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-state",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-encodequeuesize",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-encodequeuesize",
+      "linkingText": [
+        "encodeQueueSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-configure",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-configure",
+      "linkingText": [
+        "configure(config)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-encode",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-encode",
+      "linkingText": [
+        "encode(frame)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-flush",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-flush",
+      "linkingText": [
+        "flush()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-reset",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-reset",
+      "linkingText": [
+        "reset()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoder-close",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoder-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "videoencoder",
+      "href": "https://wicg.github.io/web-codecs/#videoencoder",
+      "linkingText": [
+        "VideoEncoder"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-videoencoder-init-init",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-videoencoder-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoEncoder/VideoEncoder(init)",
+        "VideoEncoder/constructor(init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-configure-config-config",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-configure-config-config",
+      "linkingText": [
+        "config"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoEncoder/configure(config)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-encode-frame-options-frame",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-encode-frame-options-frame",
+      "linkingText": [
+        "frame"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoEncoder/encode(frame, options)",
+        "VideoEncoder/encode(frame)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-encode-frame-options-options",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-encode-frame-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoEncoder/encode(frame, options)",
+        "VideoEncoder/encode(frame)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-videoencoderinit",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-videoencoderinit",
+      "linkingText": [
+        "VideoEncoderInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoderinit-output",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderinit-output",
+      "linkingText": [
+        "output"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoderinit-error",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderinit-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-encodedvideochunkoutputcallback",
+      "href": "https://wicg.github.io/web-codecs/#callbackdef-encodedvideochunkoutputcallback",
+      "linkingText": [
+        "EncodedVideoChunkOutputCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunkoutputcallback-output",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunkoutputcallback-output",
+      "linkingText": [
+        "output"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "EncodedVideoChunkOutputCallback"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-codec-implementation-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-codec-implementation-slot",
+      "linkingText": [
+        "[[codec implementation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-output-callback-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-output-callback-slot",
+      "linkingText": [
+        "[[output callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-error-callback-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-error-callback-slot",
+      "linkingText": [
+        "[[error callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-videoencoder",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-videoencoder",
+      "linkingText": [
+        "VideoEncoder(init)",
+        "constructor(init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-state",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-encodequeuesize",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-encodequeuesize",
+      "linkingText": [
+        "encodeQueueSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-configure",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-configure",
+      "linkingText": [
+        "configure(config)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-encode",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-encode",
+      "linkingText": [
+        "encode(frame, options)",
+        "encode(frame)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-flush",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-flush",
+      "linkingText": [
+        "flush()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-reset",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-reset",
+      "linkingText": [
+        "reset()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoder-close",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "configure-decoder",
+      "href": "https://wicg.github.io/web-codecs/#configure-decoder",
+      "linkingText": [
+        "Configure Decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "decode-chunk",
+      "href": "https://wicg.github.io/web-codecs/#decode-chunk",
+      "linkingText": [
+        "Decode Chunk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "flush",
+      "href": "https://wicg.github.io/web-codecs/#flush",
+      "linkingText": [
+        "Flush"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "codec-error",
+      "href": "https://wicg.github.io/web-codecs/#codec-error",
+      "linkingText": [
+        "Codec Error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "audioframe-output",
+      "href": "https://wicg.github.io/web-codecs/#audioframe-output",
+      "linkingText": [
+        "AudioFrame Output"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "videoframe-output",
+      "href": "https://wicg.github.io/web-codecs/#videoframe-output",
+      "linkingText": [
+        "VideoFrame Output"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "reset",
+      "href": "https://wicg.github.io/web-codecs/#reset",
+      "linkingText": [
+        "Reset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "close",
+      "href": "https://wicg.github.io/web-codecs/#close",
+      "linkingText": [
+        "Close"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "configure-encoder",
+      "href": "https://wicg.github.io/web-codecs/#configure-encoder",
+      "linkingText": [
+        "Configure Encoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "encode-frame",
+      "href": "https://wicg.github.io/web-codecs/#encode-frame",
+      "linkingText": [
+        "Encode Frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "encodedaudiochunk-output",
+      "href": "https://wicg.github.io/web-codecs/#encodedaudiochunk-output",
+      "linkingText": [
+        "EncodedAudioChunk Output"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "encodedvideochunk-output",
+      "href": "https://wicg.github.io/web-codecs/#encodedvideochunk-output",
+      "linkingText": [
+        "EncodedVideoChunk Output"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "codec-string",
+      "href": "https://wicg.github.io/web-codecs/#codec-string",
+      "linkingText": [
+        "Codec String"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-codec-string",
+      "href": "https://wicg.github.io/web-codecs/#valid-codec-string",
+      "linkingText": [
+        "valid codec string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dictdef-audiodecoderconfig",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-audiodecoderconfig",
+      "linkingText": [
+        "AudioDecoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-audiodecoderconfig",
+      "href": "https://wicg.github.io/web-codecs/#valid-audiodecoderconfig",
+      "linkingText": [
+        "valid AudioDecoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoderconfig-codec",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoderconfig-codec",
+      "linkingText": [
+        "codec"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoderconfig-samplerate",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoderconfig-samplerate",
+      "linkingText": [
+        "sampleRate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoderconfig-numberofchannels",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoderconfig-numberofchannels",
+      "linkingText": [
+        "numberOfChannels"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audiodecoderconfig-description",
+      "href": "https://wicg.github.io/web-codecs/#dom-audiodecoderconfig-description",
+      "linkingText": [
+        "description"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-videodecoderconfig",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-videodecoderconfig",
+      "linkingText": [
+        "VideoDecoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-videodecoderconfig",
+      "href": "https://wicg.github.io/web-codecs/#valid-videodecoderconfig",
+      "linkingText": [
+        "valid VideoDecoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoderconfig-codec",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoderconfig-codec",
+      "linkingText": [
+        "codec"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoderconfig-description",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoderconfig-description",
+      "linkingText": [
+        "description"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoderconfig-codedwidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoderconfig-codedwidth",
+      "linkingText": [
+        "codedWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoderconfig-codedheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoderconfig-codedheight",
+      "linkingText": [
+        "codedHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoderconfig-cropleft",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoderconfig-cropleft",
+      "linkingText": [
+        "cropLeft"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoderconfig-croptop",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoderconfig-croptop",
+      "linkingText": [
+        "cropTop"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoderconfig-cropwidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoderconfig-cropwidth",
+      "linkingText": [
+        "cropWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoderconfig-cropheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoderconfig-cropheight",
+      "linkingText": [
+        "cropHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoderconfig-displaywidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoderconfig-displaywidth",
+      "linkingText": [
+        "displayWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videodecoderconfig-displayheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videodecoderconfig-displayheight",
+      "linkingText": [
+        "displayHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-audioencoderconfig",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-audioencoderconfig",
+      "linkingText": [
+        "AudioEncoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-audioencoderconfig",
+      "href": "https://wicg.github.io/web-codecs/#valid-audioencoderconfig",
+      "linkingText": [
+        "valid AudioEncoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoderconfig-codec",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoderconfig-codec",
+      "linkingText": [
+        "codec"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoderconfig-samplerate",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoderconfig-samplerate",
+      "linkingText": [
+        "sampleRate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioencoderconfig-numberofchannels",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioencoderconfig-numberofchannels",
+      "linkingText": [
+        "numberOfChannels"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-videoencoderconfig",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-videoencoderconfig",
+      "linkingText": [
+        "VideoEncoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoderconfig-codec",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-codec",
+      "linkingText": [
+        "codec"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoderconfig-bitrate",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-bitrate",
+      "linkingText": [
+        "bitrate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-videoencoderconfig",
+      "href": "https://wicg.github.io/web-codecs/#valid-videoencoderconfig",
+      "linkingText": [
+        "valid VideoEncoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoderconfig-width",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoderconfig-height",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-videoencoderencodeoptions",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-videoencoderencodeoptions",
+      "linkingText": [
+        "VideoEncoderEncodeOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoencoderencodeoptions-keyframe",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderencodeoptions-keyframe",
+      "linkingText": [
+        "keyFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderEncodeOptions"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-codecstate",
+      "href": "https://wicg.github.io/web-codecs/#enumdef-codecstate",
+      "linkingText": [
+        "CodecState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-codecstate-unconfigured",
+      "href": "https://wicg.github.io/web-codecs/#dom-codecstate-unconfigured",
+      "linkingText": [
+        "\"unconfigured\"",
+        "unconfigured"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CodecState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-codecstate-configured",
+      "href": "https://wicg.github.io/web-codecs/#dom-codecstate-configured",
+      "linkingText": [
+        "\"configured\"",
+        "configured"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CodecState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-codecstate-closed",
+      "href": "https://wicg.github.io/web-codecs/#dom-codecstate-closed",
+      "linkingText": [
+        "\"closed\"",
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "CodecState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "callbackdef-webcodecserrorcallback",
+      "href": "https://wicg.github.io/web-codecs/#callbackdef-webcodecserrorcallback",
+      "linkingText": [
+        "WebCodecsErrorCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-webcodecserrorcallback-error",
+      "href": "https://wicg.github.io/web-codecs/#dom-webcodecserrorcallback-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebCodecsErrorCallback"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "encodedaudiochunk",
+      "href": "https://wicg.github.io/web-codecs/#encodedaudiochunk",
+      "linkingText": [
+        "EncodedAudioChunk"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedaudiochunk-encodedaudiochunk-init-init",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedaudiochunk-encodedaudiochunk-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "EncodedAudioChunk/EncodedAudioChunk(init)",
+        "EncodedAudioChunk/constructor(init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-encodedaudiochunkinit",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-encodedaudiochunkinit",
+      "linkingText": [
+        "EncodedAudioChunkInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedaudiochunkinit-type",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedaudiochunkinit-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedAudioChunkInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedaudiochunkinit-timestamp",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedaudiochunkinit-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedAudioChunkInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedaudiochunkinit-data",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedaudiochunkinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedAudioChunkInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-encodedaudiochunktype",
+      "href": "https://wicg.github.io/web-codecs/#enumdef-encodedaudiochunktype",
+      "linkingText": [
+        "EncodedAudioChunkType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedaudiochunktype-key",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedaudiochunktype-key",
+      "linkingText": [
+        "\"key\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "EncodedAudioChunkType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedaudiochunktype-delta",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedaudiochunktype-delta",
+      "linkingText": [
+        "\"delta\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "EncodedAudioChunkType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedaudiochunk-encodedaudiochunk",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedaudiochunk-encodedaudiochunk",
+      "linkingText": [
+        "EncodedAudioChunk(init)",
+        "constructor(init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "EncodedAudioChunk"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedaudiochunk-type",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedaudiochunk-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedAudioChunk"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedaudiochunk-timestamp",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedaudiochunk-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedAudioChunk"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedaudiochunk-data",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedaudiochunk-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedAudioChunk"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "encodedvideochunk",
+      "href": "https://wicg.github.io/web-codecs/#encodedvideochunk",
+      "linkingText": [
+        "EncodedVideoChunk"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunk-encodedvideochunk-init-init",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunk-encodedvideochunk-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "EncodedVideoChunk/EncodedVideoChunk(init)",
+        "EncodedVideoChunk/constructor(init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-encodedvideochunkinit",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-encodedvideochunkinit",
+      "linkingText": [
+        "EncodedVideoChunkInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunkinit-type",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunkinit-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedVideoChunkInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunkinit-timestamp",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunkinit-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedVideoChunkInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunkinit-duration",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunkinit-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedVideoChunkInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunkinit-data",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunkinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedVideoChunkInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-encodedvideochunktype",
+      "href": "https://wicg.github.io/web-codecs/#enumdef-encodedvideochunktype",
+      "linkingText": [
+        "EncodedVideoChunkType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunktype-key",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunktype-key",
+      "linkingText": [
+        "\"key\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "EncodedVideoChunkType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunktype-delta",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunktype-delta",
+      "linkingText": [
+        "\"delta\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "EncodedVideoChunkType"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunk-encodedvideochunk",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunk-encodedvideochunk",
+      "linkingText": [
+        "EncodedVideoChunk(init)",
+        "constructor(init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "EncodedVideoChunk"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunk-type",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunk-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedVideoChunk"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunk-timestamp",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunk-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedVideoChunk"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunk-duration",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunk-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedVideoChunk"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-encodedvideochunk-data",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunk-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedVideoChunk"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "audioframe",
+      "href": "https://wicg.github.io/web-codecs/#audioframe",
+      "linkingText": [
+        "AudioFrame"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioframe-audioframe-init-init",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioframe-audioframe-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioFrame/AudioFrame(init)",
+        "AudioFrame/constructor(init)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-audioframeinit",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-audioframeinit",
+      "linkingText": [
+        "AudioFrameInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioframeinit-timestamp",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioframeinit-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioFrameInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioframeinit-buffer",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioframeinit-buffer",
+      "linkingText": [
+        "buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioFrameInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioframe-detached-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioframe-detached-slot",
+      "linkingText": [
+        "[[detached]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioframe-audioframe",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioframe-audioframe",
+      "linkingText": [
+        "AudioFrame(init)",
+        "constructor(init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "AudioFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioframe-timestamp",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioframe-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioframe-buffer",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioframe-buffer",
+      "linkingText": [
+        "buffer"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-audioframe-close",
+      "href": "https://wicg.github.io/web-codecs/#dom-audioframe-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "videoframe",
+      "href": "https://wicg.github.io/web-codecs/#videoframe",
+      "linkingText": [
+        "VideoFrame"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-videoframe-imagebitmap-frameinit-imagebitmap",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-videoframe-imagebitmap-frameinit-imagebitmap",
+      "linkingText": [
+        "imageBitmap"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoFrame/VideoFrame(imageBitmap, frameInit)",
+        "VideoFrame/constructor(imageBitmap, frameInit)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-videoframe-imagebitmap-frameinit-frameinit",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-videoframe-imagebitmap-frameinit-frameinit",
+      "linkingText": [
+        "frameInit"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoFrame/VideoFrame(imageBitmap, frameInit)",
+        "VideoFrame/constructor(imageBitmap, frameInit)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-videoframe-pixelformat-planes-frameinit-pixelformat",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-videoframe-pixelformat-planes-frameinit-pixelformat",
+      "linkingText": [
+        "pixelFormat"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoFrame/VideoFrame(pixelFormat, planes, frameInit)",
+        "VideoFrame/constructor(pixelFormat, planes, frameInit)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-videoframe-pixelformat-planes-frameinit-planes",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-videoframe-pixelformat-planes-frameinit-planes",
+      "linkingText": [
+        "planes"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoFrame/VideoFrame(pixelFormat, planes, frameInit)",
+        "VideoFrame/constructor(pixelFormat, planes, frameInit)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-videoframe-pixelformat-planes-frameinit-frameinit",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-videoframe-pixelformat-planes-frameinit-frameinit",
+      "linkingText": [
+        "frameInit"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoFrame/VideoFrame(pixelFormat, planes, frameInit)",
+        "VideoFrame/constructor(pixelFormat, planes, frameInit)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-createimagebitmap-options-options",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-createimagebitmap-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoFrame/createImageBitmap(options)",
+        "VideoFrame/createImageBitmap()"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-videoframeinit",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-videoframeinit",
+      "linkingText": [
+        "VideoFrameInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframeinit-codedwidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframeinit-codedwidth",
+      "linkingText": [
+        "codedWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframeinit-codedheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframeinit-codedheight",
+      "linkingText": [
+        "codedHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframeinit-cropleft",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframeinit-cropleft",
+      "linkingText": [
+        "cropLeft"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframeinit-croptop",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframeinit-croptop",
+      "linkingText": [
+        "cropTop"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframeinit-cropwidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframeinit-cropwidth",
+      "linkingText": [
+        "cropWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframeinit-cropheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframeinit-cropheight",
+      "linkingText": [
+        "cropHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframeinit-displaywidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframeinit-displaywidth",
+      "linkingText": [
+        "displayWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframeinit-displayheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframeinit-displayheight",
+      "linkingText": [
+        "displayHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframeinit-duration",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframeinit-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframeinit-timestamp",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframeinit-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-detached-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-detached-slot",
+      "linkingText": [
+        "[[detached]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-videoframe",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-videoframe",
+      "linkingText": [
+        "VideoFrame(imageBitmap, frameInit)",
+        "constructor(imageBitmap, frameInit)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-videoframe-pixelformat-planes-frameinit",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-videoframe-pixelformat-planes-frameinit",
+      "linkingText": [
+        "VideoFrame(pixelFormat, planes, frameInit)",
+        "constructor(pixelFormat, planes, frameInit)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-timestamp",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-duration",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-format",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-format",
+      "linkingText": [
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-planes",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-planes",
+      "linkingText": [
+        "planes"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-codedwidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-codedwidth",
+      "linkingText": [
+        "codedWidth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-codedheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-codedheight",
+      "linkingText": [
+        "codedHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-cropleft",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-cropleft",
+      "linkingText": [
+        "cropLeft"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-croptop",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-croptop",
+      "linkingText": [
+        "cropTop"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-cropwidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-cropwidth",
+      "linkingText": [
+        "cropWidth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-cropheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-cropheight",
+      "linkingText": [
+        "cropHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-displaywidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-displaywidth",
+      "linkingText": [
+        "displayWidth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-displayheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-displayheight",
+      "linkingText": [
+        "displayHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-destroy",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-clone",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-clone",
+      "linkingText": [
+        "clone()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videoframe-createimagebitmap",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoframe-createimagebitmap",
+      "linkingText": [
+        "createImageBitmap(options)",
+        "createImageBitmap()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "valid-videoframeinit",
+      "href": "https://wicg.github.io/web-codecs/#valid-videoframeinit",
+      "linkingText": [
+        "valid VideoFrameInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "plane",
+      "href": "https://wicg.github.io/web-codecs/#plane",
+      "linkingText": [
+        "Plane"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-plane-readinto-dst-dst",
+      "href": "https://wicg.github.io/web-codecs/#dom-plane-readinto-dst-dst",
+      "linkingText": [
+        "dst"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Plane/readInto(dst)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dictdef-planeinit",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-planeinit",
+      "linkingText": [
+        "PlaneInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-planeinit-src",
+      "href": "https://wicg.github.io/web-codecs/#dom-planeinit-src",
+      "linkingText": [
+        "src"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PlaneInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-planeinit-stride",
+      "href": "https://wicg.github.io/web-codecs/#dom-planeinit-stride",
+      "linkingText": [
+        "stride"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PlaneInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-planeinit-rows",
+      "href": "https://wicg.github.io/web-codecs/#dom-planeinit-rows",
+      "linkingText": [
+        "rows"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PlaneInit"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-plane-parent-frame-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-plane-parent-frame-slot",
+      "linkingText": [
+        "[[parent frame]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Plane"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-plane-plane-buffer-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-plane-plane-buffer-slot",
+      "linkingText": [
+        "[[plane buffer]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Plane"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-plane-stride",
+      "href": "https://wicg.github.io/web-codecs/#dom-plane-stride",
+      "linkingText": [
+        "stride"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Plane"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-plane-rows",
+      "href": "https://wicg.github.io/web-codecs/#dom-plane-rows",
+      "linkingText": [
+        "rows"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Plane"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-plane-length",
+      "href": "https://wicg.github.io/web-codecs/#dom-plane-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Plane"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-plane-readinto",
+      "href": "https://wicg.github.io/web-codecs/#dom-plane-readinto",
+      "linkingText": [
+        "readInto(dst)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Plane"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-pixelformat",
+      "href": "https://wicg.github.io/web-codecs/#enumdef-pixelformat",
+      "linkingText": [
+        "PixelFormat"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-pixelformat-i420",
+      "href": "https://wicg.github.io/web-codecs/#dom-pixelformat-i420",
+      "linkingText": [
+        "\"I420\"",
+        "I420"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PixelFormat"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "clone-frame",
+      "href": "https://wicg.github.io/web-codecs/#clone-frame",
+      "linkingText": [
+        "Clone Frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    },
+    {
+      "id": "videotrackreader",
+      "href": "https://wicg.github.io/web-codecs/#videotrackreader",
+      "linkingText": [
+        "VideoTrackReader"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrackreader-videotrackreader-track-track",
+      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-videotrackreader-track-track",
+      "linkingText": [
+        "track"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoTrackReader/VideoTrackReader(track)",
+        "VideoTrackReader/constructor(track)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrackreader-start-callback-callback",
+      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-start-callback-callback",
+      "linkingText": [
+        "callback"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoTrackReader/start(callback)"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "enumdef-videotrackreaderstate",
+      "href": "https://wicg.github.io/web-codecs/#enumdef-videotrackreaderstate",
+      "linkingText": [
+        "VideoTrackReaderState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrackreaderstate-started",
+      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreaderstate-started",
+      "linkingText": [
+        "\"started\"",
+        "started"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoTrackReaderState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrackreaderstate-stopped",
+      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreaderstate-stopped",
+      "linkingText": [
+        "\"stopped\"",
+        "stopped"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoTrackReaderState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrackreaderstate-ended",
+      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreaderstate-ended",
+      "linkingText": [
+        "\"ended\"",
+        "ended"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoTrackReaderState"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrackreader-track-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-track-slot",
+      "linkingText": [
+        "[[track]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoTrackReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrackreader-callback-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-callback-slot",
+      "linkingText": [
+        "[[callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoTrackReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrackreader-videotrackreader",
+      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-videotrackreader",
+      "linkingText": [
+        "VideoTrackReader(track)",
+        "constructor(track)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "VideoTrackReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrackreader-readystate",
+      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-readystate",
+      "linkingText": [
+        "readyState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoTrackReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrackreader-onended",
+      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-onended",
+      "linkingText": [
+        "onended"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoTrackReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "eventdef-videotrackreader-ended",
+      "href": "https://wicg.github.io/web-codecs/#eventdef-videotrackreader-ended",
+      "linkingText": [
+        "ended"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "VideoTrackReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrackreader-start",
+      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-start",
+      "linkingText": [
+        "start(callback)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoTrackReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "dom-videotrackreader-stop",
+      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-stop",
+      "linkingText": [
+        "stop()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoTrackReader"
+      ],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "track-monitor",
+      "href": "https://wicg.github.io/web-codecs/#track-monitor",
+      "linkingText": [
+        "track monitor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false
+    },
+    {
+      "id": "running-the-track-monitor",
+      "href": "https://wicg.github.io/web-codecs/#running-the-track-monitor",
+      "linkingText": [
+        "running the track monitor",
+        "run the track monitor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false
+    }
+  ]
+}
