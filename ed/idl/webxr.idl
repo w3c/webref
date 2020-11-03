@@ -16,6 +16,10 @@ partial interface Navigator {
   attribute EventHandler ondevicechange;
 };
 
+dictionary XRSessionSupportedPermissionDescriptor: PermissionDescriptor {
+  XRSessionMode mode;
+};
+
 enum XRSessionMode {
   "inline",
   "immersive-vr",
