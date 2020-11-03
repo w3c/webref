@@ -183,6 +183,30 @@
         ],
         "partial": false
       },
+      "XRSessionSupportedPermissionDescriptor": {
+        "type": "dictionary",
+        "name": "XRSessionSupportedPermissionDescriptor",
+        "inheritance": "PermissionDescriptor",
+        "members": [
+          {
+            "type": "field",
+            "name": "mode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRSessionMode"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "XRSessionMode": {
         "type": "enum",
         "name": "XRSessionMode",
@@ -3234,6 +3258,10 @@
         "XRSessionInit",
         "EventHandler"
       ],
+      "XRSessionSupportedPermissionDescriptor": [
+        "PermissionDescriptor",
+        "XRSessionMode"
+      ],
       "XRSessionInit": [],
       "XRSession": [
         "EventTarget",
@@ -3371,6 +3399,7 @@
       "Navigator",
       "EventTarget",
       "EventHandler",
+      "PermissionDescriptor",
       "undefined",
       "DOMHighResTimeStamp",
       "DOMPointReadOnly",
@@ -3382,7 +3411,6 @@
       "WebGLRenderingContextBase",
       "Event",
       "EventInit",
-      "PermissionDescriptor",
       "PermissionStatus"
     ],
     "hasObsoleteIdl": false
