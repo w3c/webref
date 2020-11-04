@@ -6,257 +6,294 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "File System Access"
     },
     {
       "id": "subtitle",
-      "level": "2",
+      "level": 2,
       "title": "Draft Community Group Report, 28 September 2020"
     },
     {
       "id": "abstract",
-      "level": "2",
+      "level": 2,
       "title": "Abstract"
     },
     {
       "id": "status",
-      "level": "2",
+      "level": 2,
       "title": "Status of this document"
     },
     {
-      "id": "contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "introduction",
-      "level": "2",
-      "title": "Introduction"
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
       "id": "files-and-directories",
-      "level": "2",
-      "title": "Files and Directories"
+      "level": 2,
+      "title": "Files and Directories",
+      "number": "2"
     },
     {
       "id": "concepts",
-      "level": "3",
-      "title": "Concepts"
+      "level": 3,
+      "title": "Concepts",
+      "number": "2.1"
     },
     {
       "id": "permissions",
-      "level": "3",
-      "title": "Permissions"
+      "level": 3,
+      "title": "Permissions",
+      "number": "2.2"
     },
     {
       "id": "api-filesystemhandle",
-      "level": "3",
-      "title": "The FileSystemHandle interface"
+      "level": 3,
+      "title": "The FileSystemHandle interface",
+      "number": "2.3"
     },
     {
       "id": "api-filesystemhandle-issameentry",
-      "level": "4",
-      "title": "The isSameEntry() method"
+      "level": 4,
+      "title": "The isSameEntry() method",
+      "number": "2.3.1"
     },
     {
       "id": "api-filesystemhandle-querypermission",
-      "level": "4",
-      "title": "The queryPermission() method"
+      "level": 4,
+      "title": "The queryPermission() method",
+      "number": "2.3.2"
     },
     {
       "id": "api-filesystemhandle-requestpermission",
-      "level": "4",
-      "title": "The requestPermission() method"
+      "level": 4,
+      "title": "The requestPermission() method",
+      "number": "2.3.3"
     },
     {
       "id": "api-filesystemfilehandle",
-      "level": "3",
-      "title": "The FileSystemFileHandle interface"
+      "level": 3,
+      "title": "The FileSystemFileHandle interface",
+      "number": "2.4"
     },
     {
       "id": "api-filesystemfilehandle-getfile",
-      "level": "4",
-      "title": "The getFile() method"
+      "level": 4,
+      "title": "The getFile() method",
+      "number": "2.4.1"
     },
     {
       "id": "api-filesystemfilehandle-createwritable",
-      "level": "4",
-      "title": "The createWritable() method"
+      "level": 4,
+      "title": "The createWritable() method",
+      "number": "2.4.2"
     },
     {
       "id": "api-filesystemdirectoryhandle",
-      "level": "3",
-      "title": "The FileSystemDirectoryHandle interface"
+      "level": 3,
+      "title": "The FileSystemDirectoryHandle interface",
+      "number": "2.5"
     },
     {
       "id": "api-filesystemdirectoryhandle-asynciterable",
-      "level": "4",
-      "title": "Directory iteration"
+      "level": 4,
+      "title": "Directory iteration",
+      "number": "2.5.1"
     },
     {
       "id": "api-filesystemdirectoryhandle-getfilehandle",
-      "level": "4",
-      "title": "The getFileHandle() method"
+      "level": 4,
+      "title": "The getFileHandle() method",
+      "number": "2.5.2"
     },
     {
       "id": "api-filesystemdirectoryhandle-getdirectoryhandle",
-      "level": "4",
-      "title": "The getDirectoryHandle() method"
+      "level": 4,
+      "title": "The getDirectoryHandle() method",
+      "number": "2.5.3"
     },
     {
       "id": "api-filesystemdirectoryhandle-removeentry",
-      "level": "4",
-      "title": "The removeEntry() method"
+      "level": 4,
+      "title": "The removeEntry() method",
+      "number": "2.5.4"
     },
     {
       "id": "api-filesystemdirectoryhandle-resolve",
-      "level": "4",
-      "title": "The resolve() method"
+      "level": 4,
+      "title": "The resolve() method",
+      "number": "2.5.5"
     },
     {
       "id": "api-filesystemwritablefilestream",
-      "level": "3",
-      "title": "The FileSystemWritableFileStream interface"
+      "level": 3,
+      "title": "The FileSystemWritableFileStream interface",
+      "number": "2.6"
     },
     {
       "id": "api-filesystemwritablefilestream-write",
-      "level": "4",
-      "title": "The write() method"
+      "level": 4,
+      "title": "The write() method",
+      "number": "2.6.1"
     },
     {
       "id": "api-filesystemwritablefilestream-seek",
-      "level": "4",
-      "title": "The seek() method"
+      "level": 4,
+      "title": "The seek() method",
+      "number": "2.6.2"
     },
     {
       "id": "api-filesystemwritablefilestream-truncate",
-      "level": "4",
-      "title": "The truncate() method"
+      "level": 4,
+      "title": "The truncate() method",
+      "number": "2.6.3"
     },
     {
       "id": "local-filesystem",
-      "level": "2",
-      "title": "Accessing Local File System"
+      "level": 2,
+      "title": "Accessing Local File System",
+      "number": "3"
     },
     {
       "id": "local-file-system-permissions",
-      "level": "3",
-      "title": "Local File System Permissions"
+      "level": 3,
+      "title": "Local File System Permissions",
+      "number": "3.1"
     },
     {
       "id": "api-showopenfilepicker",
-      "level": "3",
-      "title": "The showOpenFilePicker() method"
+      "level": 3,
+      "title": "The showOpenFilePicker() method",
+      "number": "3.2"
     },
     {
       "id": "api-showsavefilepicker",
-      "level": "3",
-      "title": "The showSaveFilePicker() method"
+      "level": 3,
+      "title": "The showSaveFilePicker() method",
+      "number": "3.3"
     },
     {
       "id": "api-filpickeroptions-types",
-      "level": "3",
-      "title": "FilePickerOptions.types"
+      "level": 3,
+      "title": "FilePickerOptions.types",
+      "number": "3.4"
     },
     {
       "id": "api-showdirectorypicker",
-      "level": "3",
-      "title": "The showDirectoryPicker() method"
+      "level": 3,
+      "title": "The showDirectoryPicker() method",
+      "number": "3.5"
     },
     {
       "id": "drag-and-drop",
-      "level": "3",
-      "title": "Drag and Drop"
+      "level": 3,
+      "title": "Drag and Drop",
+      "number": "3.6"
     },
     {
       "id": "sandboxed-filesystem",
-      "level": "2",
-      "title": "Accessing the Origin Private File System"
+      "level": 2,
+      "title": "Accessing the Origin Private File System",
+      "number": "4"
     },
     {
       "id": "accessibility-considerations",
-      "level": "2",
-      "title": "Accessibility Considerations"
+      "level": 2,
+      "title": "Accessibility Considerations",
+      "number": "5"
     },
     {
       "id": "privacy-considerations",
-      "level": "2",
-      "title": "Privacy Considerations"
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "6"
     },
     {
       "id": "privacy-wide-access",
-      "level": "3",
-      "title": "Users giving access to more, or more sensitive files than they intended."
+      "level": 3,
+      "title": "Users giving access to more, or more sensitive files than they intended.",
+      "number": "6.1"
     },
     {
       "id": "privacy-tracking",
-      "level": "3",
-      "title": "Websites trying to use this API for tracking."
+      "level": 3,
+      "title": "Websites trying to use this API for tracking.",
+      "number": "6.2"
     },
     {
       "id": "privacy-third-party",
-      "level": "3",
-      "title": "First-party vs third-party contexts."
+      "level": 3,
+      "title": "First-party vs third-party contexts.",
+      "number": "6.3"
     },
     {
       "id": "security-considerations",
-      "level": "2",
-      "title": "Security Considerations"
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "7"
     },
     {
       "id": "security-malware",
-      "level": "3",
-      "title": "Malware"
+      "level": 3,
+      "title": "Malware",
+      "number": "7.1"
     },
     {
       "id": "security-ransomware",
-      "level": "3",
-      "title": "Ransomware attacks"
+      "level": 3,
+      "title": "Ransomware attacks",
+      "number": "7.2"
     },
     {
       "id": "conformance",
-      "level": "2",
+      "level": 2,
       "title": "Conformance"
     },
     {
       "id": "index",
-      "level": "2",
+      "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "level": "2",
+      "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "level": "3",
+      "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "level": "3",
+      "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
-      "level": "2",
+      "level": 2,
       "title": "IDL Index"
     },
     {
       "id": "issues-index",
-      "level": "2",
+      "level": 2,
       "title": "Issues Index"
     }
   ]

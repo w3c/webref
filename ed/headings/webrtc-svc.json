@@ -6,253 +6,299 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "Scalable Video Coding (SVC) Extension for WebRTC"
     },
     {
-      "id": "table-of-contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
-      "id": "x1-introduction",
-      "level": "2",
-      "title": "Introduction"
+      "id": "intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
-      "id": "x2-conformance",
-      "level": "2",
-      "title": "Conformance"
+      "id": "conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
     },
     {
-      "id": "x3-terminology",
-      "level": "2",
-      "title": "Terminology"
+      "id": "terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "3"
     },
     {
-      "id": "x4-operational-model",
-      "level": "2",
-      "title": "Operational model"
+      "id": "operational-model",
+      "level": 2,
+      "title": "Operational model",
+      "number": "4"
     },
     {
-      "id": "x4-1-error-handling",
-      "level": "3",
-      "title": "Error handling"
+      "id": "error-handling",
+      "level": 3,
+      "title": "Error handling",
+      "number": "4.1"
     },
     {
-      "id": "x4-2-negotiation",
-      "level": "3",
-      "title": "Negotiation"
+      "id": "negotiation",
+      "level": 3,
+      "title": "Negotiation",
+      "number": "4.2"
     },
     {
-      "id": "x5-dictionary-extensions",
-      "level": "2",
-      "title": "Dictionary extensions"
+      "id": "rtpdictionaries",
+      "level": 2,
+      "title": "Dictionary extensions",
+      "number": "5"
     },
     {
-      "id": "x5-1-rtcrtpencodingparameters-dictionary-extensions",
-      "level": "3",
-      "title": "RTCRtpEncodingParameters Dictionary Extensions"
+      "id": "rtcrtpencodingparameters",
+      "level": 3,
+      "title": "RTCRtpEncodingParameters Dictionary Extensions",
+      "number": "5.1"
     },
     {
       "id": "dictionary-rtcrtpencodingparameters-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCRtpEncodingParameters Members"
     },
     {
-      "id": "x5-2-rtcrtpcodeccapability-dictionary-extensions",
-      "level": "3",
-      "title": "RTCRtpCodecCapability Dictionary Extensions"
+      "id": "rtcrtpcodeccapability*",
+      "level": 3,
+      "title": "RTCRtpCodecCapability Dictionary Extensions",
+      "number": "5.2"
     },
     {
       "id": "dictionary-rtcrtpcodeccapability-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCRtpCodecCapability Members"
     },
     {
-      "id": "x6-scalability-modes",
-      "level": "2",
-      "title": "Scalability modes"
+      "id": "scalabilitymodes*",
+      "level": 2,
+      "title": "Scalability modes",
+      "number": "6"
     },
     {
-      "id": "x6-1-guidelines-for-addition-of-scalabilitymode-values",
-      "level": "3",
-      "title": "Guidelines for addition of scalabilityMode values"
+      "id": "addingmodes*",
+      "level": 3,
+      "title": "Guidelines for addition of scalabilityMode values",
+      "number": "6.1"
     },
     {
-      "id": "x7-examples",
-      "level": "2",
-      "title": "Examples"
+      "id": "rtcrtpencodingparameters-example*",
+      "level": 2,
+      "title": "Examples",
+      "number": "7"
     },
     {
-      "id": "x7-1-spatial-simulcast-and-temporal-scalability",
-      "level": "3",
-      "title": "Spatial Simulcast and Temporal Scalability"
+      "id": "simulcasttemporal-example*",
+      "level": 3,
+      "title": "Spatial Simulcast and Temporal Scalability",
+      "number": "7.1"
     },
     {
-      "id": "x7-2-svc-encoder-capabilities",
-      "level": "3",
-      "title": "SVC Encoder Capabilities"
+      "id": "sender-getcapabilities-example*",
+      "level": 3,
+      "title": "SVC Encoder Capabilities",
+      "number": "7.2"
     },
     {
-      "id": "x7-3-sfu-capabilities",
-      "level": "3",
-      "title": "SFU Capabilities"
+      "id": "sfu-getcapabilities-example*",
+      "level": 3,
+      "title": "SFU Capabilities",
+      "number": "7.3"
     },
     {
-      "id": "x7-4-svc-decoder-capabilities",
-      "level": "3",
-      "title": "SVC Decoder Capabilities"
+      "id": "receiver-getcapabilities-example*",
+      "level": 3,
+      "title": "SVC Decoder Capabilities",
+      "number": "7.4"
     },
     {
-      "id": "x8-privacy-and-security-considerations",
-      "level": "2",
-      "title": "Privacy and Security Considerations"
+      "id": "privacy-security",
+      "level": 2,
+      "title": "Privacy and Security Considerations",
+      "number": "8"
     },
     {
-      "id": "x8-1-persistent-information",
-      "level": "3",
-      "title": "Persistent information"
+      "id": "persistent-information",
+      "level": 3,
+      "title": "Persistent information",
+      "number": "8.1"
     },
     {
-      "id": "x9-scalability-mode-dependency-diagrams",
-      "level": "2",
-      "title": "Scalability Mode Dependency Diagrams"
+      "id": "dependencydiagrams*",
+      "level": 2,
+      "title": "Scalability Mode Dependency Diagrams",
+      "number": "9"
     },
     {
-      "id": "x9-1-l1t2-and-l1t2h",
-      "level": "3",
-      "title": "L1T2 and L1T2h"
+      "id": "L1T2*",
+      "level": 3,
+      "title": "L1T2 and L1T2h",
+      "number": "9.1"
     },
     {
-      "id": "x9-2-l1t3-and-l1t3h",
-      "level": "3",
-      "title": "L1T3 and L1T3h"
+      "id": "L1T3*",
+      "level": 3,
+      "title": "L1T3 and L1T3h",
+      "number": "9.2"
     },
     {
-      "id": "x9-3-l2t1-and-l2t1h",
-      "level": "3",
-      "title": "L2T1 and L2T1h"
+      "id": "L2T1*",
+      "level": 3,
+      "title": "L2T1 and L2T1h",
+      "number": "9.3"
     },
     {
-      "id": "x9-4-l2t1_key",
-      "level": "3",
-      "title": "L2T1_KEY"
+      "id": "L2T1_KEY*",
+      "level": 3,
+      "title": "L2T1_KEY",
+      "number": "9.4"
     },
     {
-      "id": "x9-5-l2t2-and-l2t2h",
-      "level": "3",
-      "title": "L2T2 and L2T2h"
+      "id": "L2T2*",
+      "level": 3,
+      "title": "L2T2 and L2T2h",
+      "number": "9.5"
     },
     {
-      "id": "x9-6-l2t2_key",
-      "level": "3",
-      "title": "L2T2_KEY"
+      "id": "L2T2_KEY*",
+      "level": 3,
+      "title": "L2T2_KEY",
+      "number": "9.6"
     },
     {
-      "id": "x9-7-l2t2_key_shift",
-      "level": "3",
-      "title": "L2T2_KEY_SHIFT"
+      "id": "L2T2_KEY_SHIFT*",
+      "level": 3,
+      "title": "L2T2_KEY_SHIFT",
+      "number": "9.7"
     },
     {
-      "id": "x9-8-l2t3-and-l2t3h",
-      "level": "3",
-      "title": "L2T3 and L2T3h"
+      "id": "L2T3*",
+      "level": 3,
+      "title": "L2T3 and L2T3h",
+      "number": "9.8"
     },
     {
-      "id": "x9-9-l2t3_key",
-      "level": "3",
-      "title": "L2T3_KEY"
+      "id": "L2T3_KEY*",
+      "level": 3,
+      "title": "L2T3_KEY",
+      "number": "9.9"
     },
     {
-      "id": "x9-10-l2t3_key_shift",
-      "level": "3",
-      "title": "L2T3_KEY_SHIFT"
+      "id": "L2T3_KEY_SHIFT*",
+      "level": 3,
+      "title": "L2T3_KEY_SHIFT",
+      "number": "9.10"
     },
     {
-      "id": "x9-11-l3t1-and-l3t1h",
-      "level": "3",
-      "title": "L3T1 and L3T1h"
+      "id": "L3T1*",
+      "level": 3,
+      "title": "L3T1 and L3T1h",
+      "number": "9.11"
     },
     {
-      "id": "x9-12-l3t1_key",
-      "level": "3",
-      "title": "L3T1_KEY"
+      "id": "L3T1_KEY*",
+      "level": 3,
+      "title": "L3T1_KEY",
+      "number": "9.12"
     },
     {
-      "id": "x9-13-l3t2-and-l3t2h",
-      "level": "3",
-      "title": "L3T2 and L3T2h"
+      "id": "L3T2*",
+      "level": 3,
+      "title": "L3T2 and L3T2h",
+      "number": "9.13"
     },
     {
-      "id": "x9-14-l3t2_key",
-      "level": "3",
-      "title": "L3T2_KEY"
+      "id": "L3T2_KEY*",
+      "level": 3,
+      "title": "L3T2_KEY",
+      "number": "9.14"
     },
     {
-      "id": "x9-15-l3t2_key_shift",
-      "level": "3",
-      "title": "L3T2_KEY_SHIFT"
+      "id": "L3T2_KEY_SHIFT*",
+      "level": 3,
+      "title": "L3T2_KEY_SHIFT",
+      "number": "9.15"
     },
     {
-      "id": "x9-16-l3t3-and-l3t3h",
-      "level": "3",
-      "title": "L3T3 and L3T3h"
+      "id": "L3T3*",
+      "level": 3,
+      "title": "L3T3 and L3T3h",
+      "number": "9.16"
     },
     {
-      "id": "x9-17-l3t3_key",
-      "level": "3",
-      "title": "L3T3_KEY"
+      "id": "L3T3_KEY*",
+      "level": 3,
+      "title": "L3T3_KEY",
+      "number": "9.17"
     },
     {
-      "id": "x9-18-l3t3_key_shift",
-      "level": "3",
-      "title": "L3T3_KEY_SHIFT"
+      "id": "L3T3_KEY_SHIFT*",
+      "level": 3,
+      "title": "L3T3_KEY_SHIFT",
+      "number": "9.18"
     },
     {
-      "id": "x9-19-s2t1-and-s2t1h",
-      "level": "3",
-      "title": "S2T1 and S2T1h"
+      "id": "S2T1*",
+      "level": 3,
+      "title": "S2T1 and S2T1h",
+      "number": "9.19"
     },
     {
-      "id": "x9-20-s2t2-and-s2t2h",
-      "level": "3",
-      "title": "S2T2 and S2T2h"
+      "id": "S2T2*",
+      "level": 3,
+      "title": "S2T2 and S2T2h",
+      "number": "9.20"
     },
     {
-      "id": "x9-21-s2t3-and-s2t3h",
-      "level": "3",
-      "title": "S2T3 and S2T3h"
+      "id": "S2T3*",
+      "level": 3,
+      "title": "S2T3 and S2T3h",
+      "number": "9.21"
     },
     {
-      "id": "x9-22-s3t1-and-s3t1h",
-      "level": "3",
-      "title": "S3T1 and S3T1h"
+      "id": "S3T1*",
+      "level": 3,
+      "title": "S3T1 and S3T1h",
+      "number": "9.22"
     },
     {
-      "id": "x9-23-s3t2-and-s3t2h",
-      "level": "3",
-      "title": "S3T2 and S3T2h"
+      "id": "S3T2*",
+      "level": 3,
+      "title": "S3T2 and S3T2h",
+      "number": "9.23"
     },
     {
-      "id": "x9-24-s3t3-and-s3t3h",
-      "level": "3",
-      "title": "S3T3 and S3T3h"
+      "id": "S3T3*",
+      "level": 3,
+      "title": "S3T3 and S3T3h",
+      "number": "9.24"
     },
     {
-      "id": "a-references",
-      "level": "2",
-      "title": "A. References"
+      "id": "references",
+      "level": 2,
+      "title": "References",
+      "number": "A"
     },
     {
-      "id": "a-1-normative-references",
-      "level": "3",
-      "title": "A.1 Normative references"
+      "id": "normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "A.1"
     },
     {
-      "id": "a-2-informative-references",
-      "level": "3",
-      "title": "A.2 Informative references"
+      "id": "informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "A.2"
     }
   ]
 }

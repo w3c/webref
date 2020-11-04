@@ -6,897 +6,1059 @@
   "headings": [
     {
       "id": "subtitle",
-      "level": "2",
+      "level": 2,
       "title": "Editor’s Draft, 28 February 2019"
     },
     {
       "id": "abstract",
-      "level": "2",
+      "level": 2,
       "title": "Abstract"
     },
     {
       "id": "status",
-      "level": "2",
+      "level": 2,
       "title": "Status of this document"
     },
     {
-      "id": "contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "intro",
-      "level": "2",
-      "title": "Introduction"
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
       "id": "examples",
-      "level": "3",
-      "title": "Examples"
+      "level": 3,
+      "title": "Examples",
+      "number": "1.1"
     },
     {
       "id": "example-basic",
-      "level": "4",
-      "title": "Control Execution"
+      "level": 4,
+      "title": "Control Execution",
+      "number": "1.1.1"
     },
     {
       "id": "goals",
-      "level": "3",
-      "title": "Goals"
+      "level": 3,
+      "title": "Goals",
+      "number": "1.2"
     },
     {
       "id": "changes-from-level-2",
-      "level": "3",
-      "title": "Changes from Level 2"
+      "level": 3,
+      "title": "Changes from Level 2",
+      "number": "1.3"
     },
     {
       "id": "framework",
-      "level": "2",
-      "title": "Framework"
+      "level": 2,
+      "title": "Framework",
+      "number": "2"
     },
     {
       "id": "framework-infrastructure",
-      "level": "3",
-      "title": "Infrastructure"
+      "level": 3,
+      "title": "Infrastructure",
+      "number": "2.1"
     },
     {
       "id": "framework-policy",
-      "level": "3",
-      "title": "Policies"
+      "level": 3,
+      "title": "Policies",
+      "number": "2.2"
     },
     {
       "id": "parse-serialized-policy",
-      "level": "4",
-      "title": "Parse a serialized CSP"
+      "level": 4,
+      "title": "Parse a serialized CSP",
+      "number": "2.2.1"
     },
     {
       "id": "parse-serialized-policy-list",
-      "level": "4",
-      "title": "Parse a serialized CSP list"
+      "level": 4,
+      "title": "Parse a serialized CSP list",
+      "number": "2.2.2"
     },
     {
       "id": "framework-directives",
-      "level": "3",
-      "title": "Directives"
+      "level": 3,
+      "title": "Directives",
+      "number": "2.3"
     },
     {
       "id": "framework-directive-source-list",
-      "level": "4",
-      "title": "Source Lists"
+      "level": 4,
+      "title": "Source Lists",
+      "number": "2.3.1"
     },
     {
       "id": "framework-violation",
-      "level": "3",
-      "title": "Violations"
+      "level": 3,
+      "title": "Violations",
+      "number": "2.4"
     },
     {
       "id": "create-violation-for-global",
-      "level": "4",
-      "title": "Create a violation object for global, policy, and directive"
+      "level": 4,
+      "title": "Create a violation object for global, policy, and directive",
+      "number": "2.4.1"
     },
     {
       "id": "create-violation-for-request",
-      "level": "4",
-      "title": "Create a violation object for request, and policy."
+      "level": 4,
+      "title": "Create a violation object for request, and policy.",
+      "number": "2.4.2"
     },
     {
       "id": "policy-delivery",
-      "level": "2",
-      "title": "Policy Delivery"
+      "level": 2,
+      "title": "Policy Delivery",
+      "number": "3"
     },
     {
       "id": "csp-header",
-      "level": "3",
-      "title": "The Content-Security-Policy HTTP Response Header Field"
+      "level": 3,
+      "title": "The Content-Security-Policy HTTP Response Header Field",
+      "number": "3.1"
     },
     {
       "id": "cspro-header",
-      "level": "3",
-      "title": "The Content-Security-Policy-Report-Only HTTP Response Header Field"
+      "level": 3,
+      "title": "The Content-Security-Policy-Report-Only HTTP Response Header Field",
+      "number": "3.2"
     },
     {
       "id": "meta-element",
-      "level": "3",
-      "title": "The <meta> element"
+      "level": 3,
+      "title": "The <meta> element",
+      "number": "3.3"
     },
     {
       "id": "integrations",
-      "level": "2",
-      "title": "Integrations"
+      "level": 2,
+      "title": "Integrations",
+      "number": "4"
     },
     {
       "id": "fetch-integration",
-      "level": "3",
-      "title": "Integration with Fetch"
+      "level": 3,
+      "title": "Integration with Fetch",
+      "number": "4.1"
     },
     {
       "id": "set-response-csp-list",
-      "level": "4",
-      "title": "Set response’s CSP list"
+      "level": 4,
+      "title": "Set response’s CSP list",
+      "number": "4.1.1"
     },
     {
       "id": "report-for-request",
-      "level": "4",
-      "title": "Report Content Security Policy violations for request"
+      "level": 4,
+      "title": "Report Content Security Policy violations for request",
+      "number": "4.1.2"
     },
     {
       "id": "should-block-request",
-      "level": "4",
-      "title": "Should request be blocked by Content Security Policy?"
+      "level": 4,
+      "title": "Should request be blocked by Content Security Policy?",
+      "number": "4.1.3"
     },
     {
       "id": "should-block-response",
-      "level": "4",
-      "title": "Should response to request be blocked by Content Security Policy?"
+      "level": 4,
+      "title": "Should response to request be blocked by Content Security Policy?",
+      "number": "4.1.4"
     },
     {
       "id": "html-integration",
-      "level": "3",
-      "title": "Integration with HTML"
+      "level": 3,
+      "title": "Integration with HTML",
+      "number": "4.2"
     },
     {
       "id": "initialize-document-csp",
-      "level": "4",
-      "title": "Initialize a Document's CSP list"
+      "level": 4,
+      "title": "Initialize a Document's CSP list",
+      "number": "4.2.1"
     },
     {
       "id": "initialize-global-object-csp",
-      "level": "4",
-      "title": "Initialize a global object’s CSP list"
+      "level": 4,
+      "title": "Initialize a global object’s CSP list",
+      "number": "4.2.2"
     },
     {
       "id": "get-csp-of-object",
-      "level": "4",
-      "title": "Retrieve the CSP list of an object"
+      "level": 4,
+      "title": "Retrieve the CSP list of an object",
+      "number": "4.2.3"
     },
     {
       "id": "should-block-inline",
-      "level": "4",
-      "title": "Should element’s inline type behavior be blocked by Content Security Policy?"
+      "level": 4,
+      "title": "Should element’s inline type behavior be blocked by Content Security Policy?",
+      "number": "4.2.4"
     },
     {
       "id": "should-block-navigation-request",
-      "level": "4",
-      "title": "Should navigation request of type from source in target be blocked\n    by Content Security Policy?"
+      "level": 4,
+      "title": "Should navigation request of type from source in target be blocked\n    by Content Security Policy?",
+      "number": "4.2.5"
     },
     {
       "id": "should-block-navigation-response",
-      "level": "4",
-      "title": "Should navigation response to navigation request of type from source in target be blocked by Content Security Policy?"
+      "level": 4,
+      "title": "Should navigation response to navigation request of type from source in target be blocked by Content Security Policy?",
+      "number": "4.2.6"
     },
     {
       "id": "ecma-integration",
-      "level": "3",
-      "title": "Integration with ECMAScript"
+      "level": 3,
+      "title": "Integration with ECMAScript",
+      "number": "4.3"
     },
     {
       "id": "can-compile-strings",
-      "level": "4",
-      "title": "EnsureCSPDoesNotBlockStringCompilation(callerRealm, calleeRealm, source)"
+      "level": 4,
+      "title": "EnsureCSPDoesNotBlockStringCompilation(callerRealm, calleeRealm, source)",
+      "number": "4.3.1"
     },
     {
       "id": "reporting",
-      "level": "2",
-      "title": "Reporting"
+      "level": 2,
+      "title": "Reporting",
+      "number": "5"
     },
     {
       "id": "violation-events",
-      "level": "3",
-      "title": "Violation DOM Events"
+      "level": 3,
+      "title": "Violation DOM Events",
+      "number": "5.1"
     },
     {
       "id": "deprecated-serialize-violation",
-      "level": "3",
-      "title": "Obtain the deprecated serialization of violation"
+      "level": 3,
+      "title": "Obtain the deprecated serialization of violation",
+      "number": "5.2"
     },
     {
       "id": "report-violation",
-      "level": "3",
-      "title": "Report a violation"
+      "level": 3,
+      "title": "Report a violation",
+      "number": "5.3"
     },
     {
       "id": "csp-directives",
-      "level": "2",
-      "title": "Content Security Policy Directives"
+      "level": 2,
+      "title": "Content Security Policy Directives",
+      "number": "6"
     },
     {
       "id": "directives-fetch",
-      "level": "3",
-      "title": "Fetch Directives"
+      "level": 3,
+      "title": "Fetch Directives",
+      "number": "6.1"
     },
     {
       "id": "directive-child-src",
-      "level": "4",
-      "title": "child-src"
+      "level": 4,
+      "title": "child-src",
+      "number": "6.1.1"
     },
     {
       "id": "child-src-pre-request",
-      "level": "5",
-      "title": "child-src Pre-request check"
+      "level": 5,
+      "title": "child-src Pre-request check",
+      "number": "6.1.1.1"
     },
     {
       "id": "child-src-post-request",
-      "level": "5",
-      "title": "child-src Post-request check"
+      "level": 5,
+      "title": "child-src Post-request check",
+      "number": "6.1.1.2"
     },
     {
       "id": "directive-connect-src",
-      "level": "4",
-      "title": "connect-src"
+      "level": 4,
+      "title": "connect-src",
+      "number": "6.1.2"
     },
     {
       "id": "connect-src-pre-request",
-      "level": "5",
-      "title": "connect-src Pre-request check"
+      "level": 5,
+      "title": "connect-src Pre-request check",
+      "number": "6.1.2.1"
     },
     {
       "id": "connect-src-post-request",
-      "level": "5",
-      "title": "connect-src Post-request check"
+      "level": 5,
+      "title": "connect-src Post-request check",
+      "number": "6.1.2.2"
     },
     {
       "id": "directive-default-src",
-      "level": "4",
-      "title": "default-src"
+      "level": 4,
+      "title": "default-src",
+      "number": "6.1.3"
     },
     {
       "id": "default-src-pre-request",
-      "level": "5",
-      "title": "default-src Pre-request check"
+      "level": 5,
+      "title": "default-src Pre-request check",
+      "number": "6.1.3.1"
     },
     {
       "id": "default-src-post-request",
-      "level": "5",
-      "title": "default-src Post-request check"
+      "level": 5,
+      "title": "default-src Post-request check",
+      "number": "6.1.3.2"
     },
     {
       "id": "default-src-inline",
-      "level": "5",
-      "title": "default-src Inline Check"
+      "level": 5,
+      "title": "default-src Inline Check",
+      "number": "6.1.3.3"
     },
     {
       "id": "directive-font-src",
-      "level": "4",
-      "title": "font-src"
+      "level": 4,
+      "title": "font-src",
+      "number": "6.1.4"
     },
     {
       "id": "font-src-pre-request",
-      "level": "5",
-      "title": "font-src Pre-request check"
+      "level": 5,
+      "title": "font-src Pre-request check",
+      "number": "6.1.4.1"
     },
     {
       "id": "font-src-post-request",
-      "level": "5",
-      "title": "font-src Post-request check"
+      "level": 5,
+      "title": "font-src Post-request check",
+      "number": "6.1.4.2"
     },
     {
       "id": "directive-frame-src",
-      "level": "4",
-      "title": "frame-src"
+      "level": 4,
+      "title": "frame-src",
+      "number": "6.1.5"
     },
     {
       "id": "frame-src-pre-request",
-      "level": "5",
-      "title": "frame-src Pre-request check"
+      "level": 5,
+      "title": "frame-src Pre-request check",
+      "number": "6.1.5.1"
     },
     {
       "id": "frame-src-post-request",
-      "level": "5",
-      "title": "frame-src Post-request check"
+      "level": 5,
+      "title": "frame-src Post-request check",
+      "number": "6.1.5.2"
     },
     {
       "id": "directive-img-src",
-      "level": "4",
-      "title": "img-src"
+      "level": 4,
+      "title": "img-src",
+      "number": "6.1.6"
     },
     {
       "id": "img-src-pre-request",
-      "level": "5",
-      "title": "img-src Pre-request check"
+      "level": 5,
+      "title": "img-src Pre-request check",
+      "number": "6.1.6.1"
     },
     {
       "id": "img-src-post-request",
-      "level": "5",
-      "title": "img-src Post-request check"
+      "level": 5,
+      "title": "img-src Post-request check",
+      "number": "6.1.6.2"
     },
     {
       "id": "directive-manifest-src",
-      "level": "4",
-      "title": "manifest-src"
+      "level": 4,
+      "title": "manifest-src",
+      "number": "6.1.7"
     },
     {
       "id": "manifest-src-pre-request",
-      "level": "5",
-      "title": "manifest-src Pre-request check"
+      "level": 5,
+      "title": "manifest-src Pre-request check",
+      "number": "6.1.7.1"
     },
     {
       "id": "manifest-src-post-request",
-      "level": "5",
-      "title": "manifest-src Post-request check"
+      "level": 5,
+      "title": "manifest-src Post-request check",
+      "number": "6.1.7.2"
     },
     {
       "id": "directive-media-src",
-      "level": "4",
-      "title": "media-src"
+      "level": 4,
+      "title": "media-src",
+      "number": "6.1.8"
     },
     {
       "id": "media-src-pre-request",
-      "level": "5",
-      "title": "media-src Pre-request check"
+      "level": 5,
+      "title": "media-src Pre-request check",
+      "number": "6.1.8.1"
     },
     {
       "id": "media-src-post-request",
-      "level": "5",
-      "title": "media-src Post-request check"
+      "level": 5,
+      "title": "media-src Post-request check",
+      "number": "6.1.8.2"
     },
     {
       "id": "directive-object-src",
-      "level": "4",
-      "title": "object-src"
+      "level": 4,
+      "title": "object-src",
+      "number": "6.1.9"
     },
     {
       "id": "object-src-pre-request",
-      "level": "5",
-      "title": "object-src Pre-request check"
+      "level": 5,
+      "title": "object-src Pre-request check",
+      "number": "6.1.9.1"
     },
     {
       "id": "object-src-post-request",
-      "level": "5",
-      "title": "object-src Post-request check"
+      "level": 5,
+      "title": "object-src Post-request check",
+      "number": "6.1.9.2"
     },
     {
       "id": "directive-prefetch-src",
-      "level": "4",
-      "title": "prefetch-src"
+      "level": 4,
+      "title": "prefetch-src",
+      "number": "6.1.10"
     },
     {
       "id": "prefetch-src-pre-request",
-      "level": "5",
-      "title": "prefetch-src Pre-request check"
+      "level": 5,
+      "title": "prefetch-src Pre-request check",
+      "number": "6.1.10.1"
     },
     {
       "id": "prefetch-src-post-request",
-      "level": "5",
-      "title": "prefetch-src Post-request check"
+      "level": 5,
+      "title": "prefetch-src Post-request check",
+      "number": "6.1.10.2"
     },
     {
       "id": "directive-script-src",
-      "level": "4",
-      "title": "script-src"
+      "level": 4,
+      "title": "script-src",
+      "number": "6.1.11"
     },
     {
       "id": "script-src-pre-request",
-      "level": "5",
-      "title": "script-src Pre-request check"
+      "level": 5,
+      "title": "script-src Pre-request check",
+      "number": "6.1.11.1"
     },
     {
       "id": "script-src-post-request",
-      "level": "5",
-      "title": "script-src Post-request check"
+      "level": 5,
+      "title": "script-src Post-request check",
+      "number": "6.1.11.2"
     },
     {
       "id": "script-src-inline",
-      "level": "5",
-      "title": "script-src Inline Check"
+      "level": 5,
+      "title": "script-src Inline Check",
+      "number": "6.1.11.3"
     },
     {
       "id": "directive-script-src-elem",
-      "level": "4",
-      "title": "script-src-elem"
+      "level": 4,
+      "title": "script-src-elem",
+      "number": "6.1.12"
     },
     {
       "id": "script-src-elem-pre-request",
-      "level": "5",
-      "title": "script-src-elem Pre-request check"
+      "level": 5,
+      "title": "script-src-elem Pre-request check",
+      "number": "6.1.12.1"
     },
     {
       "id": "script-src-elem-post-request",
-      "level": "5",
-      "title": "script-src-elem Post-request check"
+      "level": 5,
+      "title": "script-src-elem Post-request check",
+      "number": "6.1.12.2"
     },
     {
       "id": "script-src-elem-inline",
-      "level": "5",
-      "title": "script-src-elem Inline Check"
+      "level": 5,
+      "title": "script-src-elem Inline Check",
+      "number": "6.1.12.3"
     },
     {
       "id": "directive-script-src-attr",
-      "level": "4",
-      "title": "script-src-attr"
+      "level": 4,
+      "title": "script-src-attr",
+      "number": "6.1.13"
     },
     {
       "id": "script-src-attr-inline",
-      "level": "5",
-      "title": "script-src-attr Inline Check"
+      "level": 5,
+      "title": "script-src-attr Inline Check",
+      "number": "6.1.13.1"
     },
     {
       "id": "directive-style-src",
-      "level": "4",
-      "title": "style-src"
+      "level": 4,
+      "title": "style-src",
+      "number": "6.1.14"
     },
     {
       "id": "style-src-pre-request",
-      "level": "5",
-      "title": "style-src Pre-request Check"
+      "level": 5,
+      "title": "style-src Pre-request Check",
+      "number": "6.1.14.1"
     },
     {
       "id": "style-src-post-request",
-      "level": "5",
-      "title": "style-src Post-request Check"
+      "level": 5,
+      "title": "style-src Post-request Check",
+      "number": "6.1.14.2"
     },
     {
       "id": "style-src-inline",
-      "level": "5",
-      "title": "style-src Inline Check"
+      "level": 5,
+      "title": "style-src Inline Check",
+      "number": "6.1.14.3"
     },
     {
       "id": "directive-style-src-elem",
-      "level": "4",
-      "title": "style-src-elem"
+      "level": 4,
+      "title": "style-src-elem",
+      "number": "6.1.15"
     },
     {
       "id": "style-src-elem-pre-request",
-      "level": "5",
-      "title": "style-src-elem Pre-request Check"
+      "level": 5,
+      "title": "style-src-elem Pre-request Check",
+      "number": "6.1.15.1"
     },
     {
       "id": "style-src-elem-post-request",
-      "level": "5",
-      "title": "style-src-elem Post-request Check"
+      "level": 5,
+      "title": "style-src-elem Post-request Check",
+      "number": "6.1.15.2"
     },
     {
       "id": "style-src-elem-inline",
-      "level": "5",
-      "title": "style-src-elem Inline Check"
+      "level": 5,
+      "title": "style-src-elem Inline Check",
+      "number": "6.1.15.3"
     },
     {
       "id": "directive-style-src-attr",
-      "level": "4",
-      "title": "style-src-attr"
+      "level": 4,
+      "title": "style-src-attr",
+      "number": "6.1.16"
     },
     {
       "id": "style-src-attr-inline",
-      "level": "5",
-      "title": "style-src-attr Inline Check"
+      "level": 5,
+      "title": "style-src-attr Inline Check",
+      "number": "6.1.16.1"
     },
     {
       "id": "directive-worker-src",
-      "level": "4",
-      "title": "worker-src"
+      "level": 4,
+      "title": "worker-src",
+      "number": "6.1.17"
     },
     {
       "id": "worker-src-pre-request",
-      "level": "5",
-      "title": "worker-src Pre-request Check"
+      "level": 5,
+      "title": "worker-src Pre-request Check",
+      "number": "6.1.17.1"
     },
     {
       "id": "worker-src-post-request",
-      "level": "5",
-      "title": "worker-src Post-request Check"
+      "level": 5,
+      "title": "worker-src Post-request Check",
+      "number": "6.1.17.2"
     },
     {
       "id": "directives-document",
-      "level": "3",
-      "title": "Document Directives"
+      "level": 3,
+      "title": "Document Directives",
+      "number": "6.2"
     },
     {
       "id": "directive-base-uri",
-      "level": "4",
-      "title": "base-uri"
+      "level": 4,
+      "title": "base-uri",
+      "number": "6.2.1"
     },
     {
       "id": "allow-base-for-document",
-      "level": "5",
-      "title": "Is base allowed for document?"
+      "level": 5,
+      "title": "Is base allowed for document?",
+      "number": "6.2.1.1"
     },
     {
       "id": "directive-plugin-types",
-      "level": "4",
-      "title": "plugin-types"
+      "level": 4,
+      "title": "plugin-types",
+      "number": "6.2.2"
     },
     {
       "id": "plugin-types-post-request-check",
-      "level": "5",
-      "title": "plugin-types Post-Request Check"
+      "level": 5,
+      "title": "plugin-types Post-Request Check",
+      "number": "6.2.2.1"
     },
     {
       "id": "should-plugin-element-be-blocked-a-priori-by-content-security-policy",
-      "level": "5",
-      "title": "Should plugin element be blocked a priori by Content\n    Security Policy?:"
+      "level": 5,
+      "title": "Should plugin element be blocked a priori by Content\n    Security Policy?:",
+      "number": "6.2.2.2"
     },
     {
       "id": "directive-sandbox",
-      "level": "4",
-      "title": "sandbox"
+      "level": 4,
+      "title": "sandbox",
+      "number": "6.2.3"
     },
     {
       "id": "sandbox-response",
-      "level": "5",
-      "title": "sandbox Response Check"
+      "level": 5,
+      "title": "sandbox Response Check",
+      "number": "6.2.3.1"
     },
     {
       "id": "sandbox-init",
-      "level": "5",
-      "title": "sandbox Initialization"
+      "level": 5,
+      "title": "sandbox Initialization",
+      "number": "6.2.3.2"
     },
     {
       "id": "directives-navigation",
-      "level": "3",
-      "title": "Navigation Directives"
+      "level": 3,
+      "title": "Navigation Directives",
+      "number": "6.3"
     },
     {
       "id": "directive-form-action",
-      "level": "4",
-      "title": "form-action"
+      "level": 4,
+      "title": "form-action",
+      "number": "6.3.1"
     },
     {
       "id": "form-action-pre-navigate",
-      "level": "5",
-      "title": "form-action Pre-Navigation Check"
+      "level": 5,
+      "title": "form-action Pre-Navigation Check",
+      "number": "6.3.1.1"
     },
     {
       "id": "directive-frame-ancestors",
-      "level": "4",
-      "title": "frame-ancestors"
+      "level": 4,
+      "title": "frame-ancestors",
+      "number": "6.3.2"
     },
     {
       "id": "frame-ancestors-navigation-response",
-      "level": "5",
-      "title": "frame-ancestors Navigation Response Check"
+      "level": 5,
+      "title": "frame-ancestors Navigation Response Check",
+      "number": "6.3.2.1"
     },
     {
       "id": "frame-ancestors-and-frame-options",
-      "level": "5",
-      "title": "Relation to X-Frame-Options"
+      "level": 5,
+      "title": "Relation to X-Frame-Options",
+      "number": "6.3.2.2"
     },
     {
       "id": "directive-navigate-to",
-      "level": "4",
-      "title": "navigate-to"
+      "level": 4,
+      "title": "navigate-to",
+      "number": "6.3.3"
     },
     {
       "id": "navigate-to-pre-navigate",
-      "level": "5",
-      "title": "navigate-to Pre-Navigation Check"
+      "level": 5,
+      "title": "navigate-to Pre-Navigation Check",
+      "number": "6.3.3.1"
     },
     {
       "id": "navigate-to-navigation-response",
-      "level": "5",
-      "title": "navigate-to Navigation Response Check"
+      "level": 5,
+      "title": "navigate-to Navigation Response Check",
+      "number": "6.3.3.2"
     },
     {
       "id": "directives-reporting",
-      "level": "3",
-      "title": "Reporting Directives"
+      "level": 3,
+      "title": "Reporting Directives",
+      "number": "6.4"
     },
     {
       "id": "directive-report-uri",
-      "level": "4",
-      "title": "report-uri"
+      "level": 4,
+      "title": "report-uri",
+      "number": "6.4.1"
     },
     {
       "id": "directive-report-to",
-      "level": "4",
-      "title": "report-to"
+      "level": 4,
+      "title": "report-to",
+      "number": "6.4.2"
     },
     {
       "id": "directives-elsewhere",
-      "level": "3",
-      "title": "Directives Defined in Other Documents"
+      "level": 3,
+      "title": "Directives Defined in Other Documents",
+      "number": "6.5"
     },
     {
       "id": "matching-algorithms",
-      "level": "3",
-      "title": "Matching Algorithms"
+      "level": 3,
+      "title": "Matching Algorithms",
+      "number": "6.6"
     },
     {
       "id": "script-checks",
-      "level": "4",
-      "title": "Script directive checks"
+      "level": 4,
+      "title": "Script directive checks",
+      "number": "6.6.1"
     },
     {
       "id": "script-pre-request",
-      "level": "5",
-      "title": "Script directives pre-request check"
+      "level": 5,
+      "title": "Script directives pre-request check",
+      "number": "6.6.1.1"
     },
     {
       "id": "script-post-request",
-      "level": "5",
-      "title": "Script directives post-request check"
+      "level": 5,
+      "title": "Script directives post-request check",
+      "number": "6.6.1.2"
     },
     {
       "id": "matching-urls",
-      "level": "4",
-      "title": "URL Matching"
+      "level": 4,
+      "title": "URL Matching",
+      "number": "6.6.2"
     },
     {
       "id": "does-request-violate-policy",
-      "level": "5",
-      "title": "Does request violate policy?"
+      "level": 5,
+      "title": "Does request violate policy?",
+      "number": "6.6.2.1"
     },
     {
       "id": "match-nonce-to-source-list",
-      "level": "5",
-      "title": "Does nonce match source list?"
+      "level": 5,
+      "title": "Does nonce match source list?",
+      "number": "6.6.2.2"
     },
     {
       "id": "match-request-to-source-list",
-      "level": "5",
-      "title": "Does request match source list?"
+      "level": 5,
+      "title": "Does request match source list?",
+      "number": "6.6.2.3"
     },
     {
       "id": "match-response-to-source-list",
-      "level": "5",
-      "title": "Does response to request match source list?"
+      "level": 5,
+      "title": "Does response to request match source list?",
+      "number": "6.6.2.4"
     },
     {
       "id": "match-url-to-source-list",
-      "level": "5",
-      "title": "Does url match source list in origin with redirect count?"
+      "level": 5,
+      "title": "Does url match source list in origin with redirect count?",
+      "number": "6.6.2.5"
     },
     {
       "id": "match-url-to-source-expression",
-      "level": "5",
-      "title": "Does url match expression in origin with redirect count?"
+      "level": 5,
+      "title": "Does url match expression in origin with redirect count?",
+      "number": "6.6.2.6"
     },
     {
       "id": "match-schemes",
-      "level": "5",
-      "title": "scheme-part matching"
+      "level": 5,
+      "title": "scheme-part matching",
+      "number": "6.6.2.7"
     },
     {
       "id": "match-hosts",
-      "level": "5",
-      "title": "host-part matching"
+      "level": 5,
+      "title": "host-part matching",
+      "number": "6.6.2.8"
     },
     {
       "id": "match-ports",
-      "level": "5",
-      "title": "port-part matching"
+      "level": 5,
+      "title": "port-part matching",
+      "number": "6.6.2.9"
     },
     {
       "id": "match-paths",
-      "level": "5",
-      "title": "path-part matching"
+      "level": 5,
+      "title": "path-part matching",
+      "number": "6.6.2.10"
     },
     {
       "id": "matching-elements",
-      "level": "4",
-      "title": "Element Matching Algorithms"
+      "level": 4,
+      "title": "Element Matching Algorithms",
+      "number": "6.6.3"
     },
     {
       "id": "is-element-nonceable",
-      "level": "5",
-      "title": "Is element nonceable?"
+      "level": 5,
+      "title": "Is element nonceable?",
+      "number": "6.6.3.1"
     },
     {
       "id": "allow-all-inline",
-      "level": "5",
-      "title": "Does a source list allow all inline behavior for type?"
+      "level": 5,
+      "title": "Does a source list allow all inline behavior for type?",
+      "number": "6.6.3.2"
     },
     {
       "id": "match-element-to-source-list",
-      "level": "5",
-      "title": "Does element match source list for type and source?"
+      "level": 5,
+      "title": "Does element match source list for type and source?",
+      "number": "6.6.3.3"
     },
     {
       "id": "directive-algorithms",
-      "level": "3",
-      "title": "Directive Algorithms"
+      "level": 3,
+      "title": "Directive Algorithms",
+      "number": "6.7"
     },
     {
       "id": "effective-directive-for-a-request",
-      "level": "4",
-      "title": "Get the effective directive for request"
+      "level": 4,
+      "title": "Get the effective directive for request",
+      "number": "6.7.1"
     },
     {
       "id": "effective-directive-for-inline-check",
-      "level": "4",
-      "title": "Get the effective directive for inline checks"
+      "level": 4,
+      "title": "Get the effective directive for inline checks",
+      "number": "6.7.2"
     },
     {
       "id": "directive-fallback-list",
-      "level": "4",
-      "title": "Get fetch directive fallback list"
+      "level": 4,
+      "title": "Get fetch directive fallback list",
+      "number": "6.7.3"
     },
     {
       "id": "should-directive-execute",
-      "level": "4",
-      "title": "Should fetch directive execute"
+      "level": 4,
+      "title": "Should fetch directive execute",
+      "number": "6.7.4"
     },
     {
       "id": "security-considerations",
-      "level": "2",
-      "title": "Security and Privacy Considerations"
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "7"
     },
     {
       "id": "security-nonces",
-      "level": "3",
-      "title": "Nonce Reuse"
+      "level": 3,
+      "title": "Nonce Reuse",
+      "number": "7.1"
     },
     {
       "id": "security-nonce-hijacking",
-      "level": "3",
-      "title": "Nonce Hijacking"
+      "level": 3,
+      "title": "Nonce Hijacking",
+      "number": "7.2"
     },
     {
       "id": "dangling-markup-attacks",
-      "level": "4",
-      "title": "Dangling markup attacks"
+      "level": 4,
+      "title": "Dangling markup attacks",
+      "number": "7.2.1"
     },
     {
       "id": "nonce-exfiltration-content-attributes",
-      "level": "4",
-      "title": "Nonce exfiltration via content attributes"
+      "level": 4,
+      "title": "Nonce exfiltration via content attributes",
+      "number": "7.2.2"
     },
     {
       "id": "security-nonce-retargeting",
-      "level": "3",
-      "title": "Nonce Retargeting"
+      "level": 3,
+      "title": "Nonce Retargeting",
+      "number": "7.3"
     },
     {
       "id": "security-css-parsing",
-      "level": "3",
-      "title": "CSS Parsing"
+      "level": 3,
+      "title": "CSS Parsing",
+      "number": "7.4"
     },
     {
       "id": "security-violation-reports",
-      "level": "3",
-      "title": "Violation Reports"
+      "level": 3,
+      "title": "Violation Reports",
+      "number": "7.5"
     },
     {
       "id": "source-list-paths-and-redirects",
-      "level": "3",
-      "title": "Paths and Redirects"
+      "level": 3,
+      "title": "Paths and Redirects",
+      "number": "7.6"
     },
     {
       "id": "security-secure-upgrades",
-      "level": "3",
-      "title": "Secure Upgrades"
+      "level": 3,
+      "title": "Secure Upgrades",
+      "number": "7.7"
     },
     {
       "id": "security-inherit-csp",
-      "level": "3",
-      "title": "CSP Inheriting to avoid bypasses"
+      "level": 3,
+      "title": "CSP Inheriting to avoid bypasses",
+      "number": "7.8"
     },
     {
       "id": "authoring-considerations",
-      "level": "2",
-      "title": "Authoring Considerations"
+      "level": 2,
+      "title": "Authoring Considerations",
+      "number": "8"
     },
     {
       "id": "multiple-policies",
-      "level": "3",
-      "title": "The effect of multiple policies"
+      "level": 3,
+      "title": "The effect of multiple policies",
+      "number": "8.1"
     },
     {
       "id": "strict-dynamic-usage",
-      "level": "3",
-      "title": "Usage of \"'strict-dynamic'\""
+      "level": 3,
+      "title": "Usage of \"'strict-dynamic'\"",
+      "number": "8.2"
     },
     {
       "id": "unsafe-hashes-usage",
-      "level": "3",
-      "title": "Usage of \"'unsafe-hashes'\""
+      "level": 3,
+      "title": "Usage of \"'unsafe-hashes'\"",
+      "number": "8.3"
     },
     {
       "id": "external-hash",
-      "level": "3",
-      "title": "Allowing external JavaScript via hashes"
+      "level": 3,
+      "title": "Allowing external JavaScript via hashes",
+      "number": "8.4"
     },
     {
       "id": "implementation-considerations",
-      "level": "2",
-      "title": "Implementation Considerations"
+      "level": 2,
+      "title": "Implementation Considerations",
+      "number": "9"
     },
     {
       "id": "extensions",
-      "level": "3",
-      "title": "Vendor-specific Extensions and Addons"
+      "level": 3,
+      "title": "Vendor-specific Extensions and Addons",
+      "number": "9.1"
     },
     {
       "id": "iana-considerations",
-      "level": "2",
-      "title": "IANA Considerations"
+      "level": 2,
+      "title": "10. IANA Considerations"
     },
     {
       "id": "iana-registry",
-      "level": "3",
-      "title": "Directive Registry"
+      "level": 3,
+      "title": "Directive Registry",
+      "number": "10.1"
     },
     {
       "id": "iana-headers",
-      "level": "3",
-      "title": "Headers"
+      "level": 3,
+      "title": "Headers",
+      "number": "10.2"
     },
     {
       "id": "iana-csp",
-      "level": "4",
-      "title": "Content-Security-Policy"
+      "level": 4,
+      "title": "Content-Security-Policy",
+      "number": "10.2.1"
     },
     {
       "id": "iana-cspro",
-      "level": "4",
-      "title": "Content-Security-Policy-Report-Only"
+      "level": 4,
+      "title": "Content-Security-Policy-Report-Only",
+      "number": "10.2.2"
     },
     {
       "id": "acknowledgements",
-      "level": "2",
-      "title": "Acknowledgements"
+      "level": 2,
+      "title": "11. Acknowledgements"
     },
     {
       "id": "conformance",
-      "level": "2",
+      "level": 2,
       "title": "Conformance"
     },
     {
       "id": "conventions",
-      "level": "3",
+      "level": 3,
       "title": "Document conventions"
     },
     {
       "id": "conformant-algorithms",
-      "level": "3",
+      "level": 3,
       "title": "Conformant Algorithms"
     },
     {
       "id": "index",
-      "level": "2",
+      "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "level": "2",
+      "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "level": "3",
+      "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "level": "3",
+      "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
-      "level": "2",
+      "level": 2,
       "title": "IDL Index"
     },
     {
       "id": "issues-index",
-      "level": "2",
+      "level": 2,
       "title": "Issues Index"
     }
   ]

@@ -6,517 +6,602 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "Generic Sensor API"
     },
     {
       "id": "subtitle",
-      "level": "2",
+      "level": 2,
       "title": "Editor’s Draft, 27 October 2020"
     },
     {
       "id": "abstract",
-      "level": "2",
+      "level": 2,
       "title": "Abstract"
     },
     {
       "id": "sotd",
-      "level": "2",
+      "level": 2,
       "title": "Status of this document"
     },
     {
-      "id": "contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "intro",
-      "level": "2",
-      "title": "Introduction"
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
       "id": "scope",
-      "level": "2",
-      "title": "Scope"
+      "level": 2,
+      "title": "Scope",
+      "number": "2"
     },
     {
       "id": "feature-detection",
-      "level": "2",
-      "title": "A note on Feature Detection of Hardware Features"
+      "level": 2,
+      "title": "A note on Feature Detection of Hardware Features",
+      "number": "3"
     },
     {
       "id": "security-and-privacy",
-      "level": "2",
-      "title": "Security and privacy considerations"
+      "level": 2,
+      "title": "Security and privacy considerations",
+      "number": "4"
     },
     {
       "id": "main-privacy-security-threats",
-      "level": "3",
-      "title": "Types of privacy and security threats"
+      "level": 3,
+      "title": "Types of privacy and security threats",
+      "number": "4.1"
     },
     {
       "id": "location-tracking",
-      "level": "4",
-      "title": "Location Tracking"
+      "level": 4,
+      "title": "Location Tracking",
+      "number": "4.1.1"
     },
     {
       "id": "eavesdropping",
-      "level": "4",
-      "title": "Eavesdropping"
+      "level": 4,
+      "title": "Eavesdropping",
+      "number": "4.1.2"
     },
     {
       "id": "keystroke-monitoring",
-      "level": "4",
-      "title": "Keystroke Monitoring"
+      "level": 4,
+      "title": "Keystroke Monitoring",
+      "number": "4.1.3"
     },
     {
       "id": "device-fingerprinting",
-      "level": "4",
-      "title": "Device Fingerprinting"
+      "level": 4,
+      "title": "Device Fingerprinting",
+      "number": "4.1.4"
     },
     {
       "id": "user-identifying",
-      "level": "4",
-      "title": "User Identifying"
+      "level": 4,
+      "title": "User Identifying",
+      "number": "4.1.5"
     },
     {
       "id": "mitigation-strategies",
-      "level": "3",
-      "title": "Mitigation Strategies"
+      "level": 3,
+      "title": "Mitigation Strategies",
+      "number": "4.2"
     },
     {
       "id": "secure-context",
-      "level": "4",
-      "title": "Secure Context"
+      "level": 4,
+      "title": "Secure Context",
+      "number": "4.2.1"
     },
     {
       "id": "permissions-policy",
-      "level": "4",
-      "title": "Permissions Policy"
+      "level": 4,
+      "title": "Permissions Policy",
+      "number": "4.2.2"
     },
     {
       "id": "focused-area",
-      "level": "4",
-      "title": "Focused Area"
+      "level": 4,
+      "title": "Focused Area",
+      "number": "4.2.3"
     },
     {
       "id": "visibility-state",
-      "level": "4",
-      "title": "Visibility State"
+      "level": 4,
+      "title": "Visibility State",
+      "number": "4.2.4"
     },
     {
       "id": "permissions",
-      "level": "4",
-      "title": "Permissions API"
+      "level": 4,
+      "title": "Permissions API",
+      "number": "4.2.5"
     },
     {
       "id": "mitigation-strategies-case-by-case",
-      "level": "3",
-      "title": "Mitigation strategies applied on a case by case basis"
+      "level": 3,
+      "title": "Mitigation strategies applied on a case by case basis",
+      "number": "4.3"
     },
     {
       "id": "limit-max-frequency",
-      "level": "4",
-      "title": "Limit maximum sampling frequency"
+      "level": 4,
+      "title": "Limit maximum sampling frequency",
+      "number": "4.3.1"
     },
     {
       "id": "stop-sensor",
-      "level": "4",
-      "title": "Stop the sensor altogether"
+      "level": 4,
+      "title": "Stop the sensor altogether",
+      "number": "4.3.2"
     },
     {
       "id": "limit-number-of-delivered-readings",
-      "level": "4",
-      "title": "Limit number of delivered readings"
+      "level": 4,
+      "title": "Limit number of delivered readings",
+      "number": "4.3.3"
     },
     {
       "id": "reduce-accuracy",
-      "level": "4",
-      "title": "Reduce accuracy"
+      "level": 4,
+      "title": "Reduce accuracy",
+      "number": "4.3.4"
     },
     {
       "id": "inform-user",
-      "level": "4",
-      "title": "Keep the user informed about API use"
+      "level": 4,
+      "title": "Keep the user informed about API use",
+      "number": "4.3.5"
     },
     {
       "id": "concepts",
-      "level": "2",
-      "title": "Concepts"
+      "level": 2,
+      "title": "Concepts",
+      "number": "5"
     },
     {
       "id": "concepts-sensors",
-      "level": "3",
-      "title": "Sensors"
+      "level": 3,
+      "title": "Sensors",
+      "number": "5.1"
     },
     {
       "id": "concepts-sensor-types",
-      "level": "3",
-      "title": "Sensor Types"
+      "level": 3,
+      "title": "Sensor Types",
+      "number": "5.2"
     },
     {
       "id": "concepts-default-sensor",
-      "level": "3",
-      "title": "Default sensor"
+      "level": 3,
+      "title": "Default sensor",
+      "number": "5.3"
     },
     {
       "id": "concepts-reading-change-threshold",
-      "level": "3",
-      "title": "Reading change threshold"
+      "level": 3,
+      "title": "Reading change threshold",
+      "number": "5.4"
     },
     {
       "id": "concepts-sampling-and-reporting-frequencies",
-      "level": "3",
-      "title": "Sampling Frequency and Reporting Frequency"
+      "level": 3,
+      "title": "Sampling Frequency and Reporting Frequency",
+      "number": "5.5"
     },
     {
       "id": "concepts-can-expose-sensor-readings",
-      "level": "3",
-      "title": "Conditions to expose sensor readings"
+      "level": 3,
+      "title": "Conditions to expose sensor readings",
+      "number": "5.6"
     },
     {
       "id": "model",
-      "level": "2",
-      "title": "Model"
+      "level": 2,
+      "title": "Model",
+      "number": "6"
     },
     {
       "id": "model-sensor-type",
-      "level": "3",
-      "title": "Sensor Type"
+      "level": 3,
+      "title": "Sensor Type",
+      "number": "6.1"
     },
     {
       "id": "model-sensor",
-      "level": "3",
-      "title": "Sensor"
+      "level": 3,
+      "title": "Sensor",
+      "number": "6.2"
     },
     {
       "id": "api",
-      "level": "2",
-      "title": "API"
+      "level": 2,
+      "title": "API",
+      "number": "7"
     },
     {
       "id": "the-sensor-interface",
-      "level": "3",
-      "title": "The Sensor Interface"
+      "level": 3,
+      "title": "The Sensor Interface",
+      "number": "7.1"
     },
     {
       "id": "sensor-lifecycle",
-      "level": "4",
-      "title": "Sensor lifecycle"
+      "level": 4,
+      "title": "Sensor lifecycle",
+      "number": "7.1.1"
     },
     {
       "id": "sensor-garbage-collection",
-      "level": "4",
-      "title": "Sensor garbage collection"
+      "level": 4,
+      "title": "Sensor garbage collection",
+      "number": "7.1.2"
     },
     {
       "id": "sensor-internal-slots",
-      "level": "4",
-      "title": "Sensor internal slots"
+      "level": 4,
+      "title": "Sensor internal slots",
+      "number": "7.1.3"
     },
     {
       "id": "sensor-activated",
-      "level": "4",
-      "title": "Sensor.activated"
+      "level": 4,
+      "title": "Sensor.activated",
+      "number": "7.1.4"
     },
     {
       "id": "sensor-has-reading",
-      "level": "4",
-      "title": "Sensor.hasReading"
+      "level": 4,
+      "title": "Sensor.hasReading",
+      "number": "7.1.5"
     },
     {
       "id": "sensor-timestamp",
-      "level": "4",
-      "title": "Sensor.timestamp"
+      "level": 4,
+      "title": "Sensor.timestamp",
+      "number": "7.1.6"
     },
     {
       "id": "sensor-start",
-      "level": "4",
-      "title": "Sensor.start()"
+      "level": 4,
+      "title": "Sensor.start()",
+      "number": "7.1.7"
     },
     {
       "id": "sensor-stop",
-      "level": "4",
-      "title": "Sensor.stop()"
+      "level": 4,
+      "title": "Sensor.stop()",
+      "number": "7.1.8"
     },
     {
       "id": "sensor-onreading",
-      "level": "4",
-      "title": "Sensor.onreading"
+      "level": 4,
+      "title": "Sensor.onreading",
+      "number": "7.1.9"
     },
     {
       "id": "sensor-onactivate",
-      "level": "4",
-      "title": "Sensor.onactivate"
+      "level": 4,
+      "title": "Sensor.onactivate",
+      "number": "7.1.10"
     },
     {
       "id": "sensor-onerror",
-      "level": "4",
-      "title": "Sensor.onerror"
+      "level": 4,
+      "title": "Sensor.onerror",
+      "number": "7.1.11"
     },
     {
       "id": "event-handlers",
-      "level": "4",
-      "title": "Event handlers"
+      "level": 4,
+      "title": "Event handlers",
+      "number": "7.1.12"
     },
     {
       "id": "the-sensor-error-event-interface",
-      "level": "3",
-      "title": "The SensorErrorEvent Interface"
+      "level": 3,
+      "title": "The SensorErrorEvent Interface",
+      "number": "7.2"
     },
     {
       "id": "sensor-error-event-error",
-      "level": "4",
-      "title": "SensorErrorEvent.error"
+      "level": 4,
+      "title": "SensorErrorEvent.error",
+      "number": "7.2.1"
     },
     {
       "id": "abstract-operations",
-      "level": "2",
-      "title": "Abstract Operations"
+      "level": 2,
+      "title": "Abstract Operations",
+      "number": "8"
     },
     {
       "id": "initialize-a-sensor-object",
-      "level": "3",
-      "title": "Initialize a sensor object"
+      "level": 3,
+      "title": "Initialize a sensor object",
+      "number": "8.1"
     },
     {
       "id": "check-sensor-policy-controlled-features",
-      "level": "3",
-      "title": "Check sensor policy-controlled features"
+      "level": 3,
+      "title": "Check sensor policy-controlled features",
+      "number": "8.2"
     },
     {
       "id": "connect-to-sensor",
-      "level": "3",
-      "title": "Connect to sensor"
+      "level": 3,
+      "title": "Connect to sensor",
+      "number": "8.3"
     },
     {
       "id": "activate-a-sensor-object",
-      "level": "3",
-      "title": "Activate a sensor object"
+      "level": 3,
+      "title": "Activate a sensor object",
+      "number": "8.4"
     },
     {
       "id": "deactivate-a-sensor-object",
-      "level": "3",
-      "title": "Deactivate a sensor object"
+      "level": 3,
+      "title": "Deactivate a sensor object",
+      "number": "8.5"
     },
     {
       "id": "revoke-sensor-permission",
-      "level": "3",
-      "title": "Revoke sensor permission"
+      "level": 3,
+      "title": "Revoke sensor permission",
+      "number": "8.6"
     },
     {
       "id": "set-sensor-settings",
-      "level": "3",
-      "title": "Set sensor settings"
+      "level": 3,
+      "title": "Set sensor settings",
+      "number": "8.7"
     },
     {
       "id": "update-latest-reading",
-      "level": "3",
-      "title": "Update latest reading"
+      "level": 3,
+      "title": "Update latest reading",
+      "number": "8.8"
     },
     {
       "id": "find-the-reporting-frequency-of-a-sensor-object",
-      "level": "3",
-      "title": "Find the reporting frequency of a sensor object"
+      "level": 3,
+      "title": "Find the reporting frequency of a sensor object",
+      "number": "8.9"
     },
     {
       "id": "report-latest-reading-updated",
-      "level": "3",
-      "title": "Report latest reading updated"
+      "level": 3,
+      "title": "Report latest reading updated",
+      "number": "8.10"
     },
     {
       "id": "notify-new-reading",
-      "level": "3",
-      "title": "Notify new reading"
+      "level": 3,
+      "title": "Notify new reading",
+      "number": "8.11"
     },
     {
       "id": "notify-activated-state",
-      "level": "3",
-      "title": "Notify activated state"
+      "level": 3,
+      "title": "Notify activated state",
+      "number": "8.12"
     },
     {
       "id": "notify-error",
-      "level": "3",
-      "title": "Notify error"
+      "level": 3,
+      "title": "Notify error",
+      "number": "8.13"
     },
     {
       "id": "get-value-from-latest-reading",
-      "level": "3",
-      "title": "Get value from latest reading"
+      "level": 3,
+      "title": "Get value from latest reading",
+      "number": "8.14"
     },
     {
       "id": "request-sensor-access",
-      "level": "3",
-      "title": "Request sensor access"
+      "level": 3,
+      "title": "Request sensor access",
+      "number": "8.15"
     },
     {
       "id": "automation",
-      "level": "2",
-      "title": "Automation"
+      "level": 2,
+      "title": "Automation",
+      "number": "9"
     },
     {
       "id": "mock-sensors",
-      "level": "3",
-      "title": "Mock Sensors"
+      "level": 3,
+      "title": "Mock Sensors",
+      "number": "9.1"
     },
     {
       "id": "dictionary-mocksensorconfiguration",
-      "level": "4",
-      "title": "MockSensorConfiguration dictionary"
+      "level": 4,
+      "title": "MockSensorConfiguration dictionary",
+      "number": "9.1.1"
     },
     {
       "id": "dictionary-mocksensor",
-      "level": "4",
-      "title": "MockSensor dictionary"
+      "level": 4,
+      "title": "MockSensor dictionary",
+      "number": "9.1.2"
     },
     {
       "id": "section-mock-sensor-type",
-      "level": "4",
-      "title": "Mock sensor type"
+      "level": 4,
+      "title": "Mock sensor type",
+      "number": "9.1.3"
     },
     {
       "id": "section-extension-commands",
-      "level": "3",
-      "title": "Extension Commands"
+      "level": 3,
+      "title": "Extension Commands",
+      "number": "9.2"
     },
     {
       "id": "create-mock-sensor-command",
-      "level": "4",
-      "title": "Create mock sensor"
+      "level": 4,
+      "title": "Create mock sensor",
+      "number": "9.2.1"
     },
     {
       "id": "get-mock-sensor-command",
-      "level": "4",
-      "title": "Get mock sensor"
+      "level": 4,
+      "title": "Get mock sensor",
+      "number": "9.2.2"
     },
     {
       "id": "update-mock-sensor-reading-command",
-      "level": "4",
-      "title": "Update mock sensor reading"
+      "level": 4,
+      "title": "Update mock sensor reading",
+      "number": "9.2.3"
     },
     {
       "id": "delete-mock-sensor-command",
-      "level": "4",
-      "title": "Delete mock sensor"
+      "level": 4,
+      "title": "Delete mock sensor",
+      "number": "9.2.4"
     },
     {
       "id": "extension-handling-errors",
-      "level": "3",
-      "title": "Handling errors"
+      "level": 3,
+      "title": "Handling errors",
+      "number": "9.3"
     },
     {
       "id": "extensibility",
-      "level": "2",
-      "title": "Extensibility"
+      "level": 2,
+      "title": "10. Extensibility"
     },
     {
       "id": "extension-security-and-privacy",
-      "level": "3",
-      "title": "Security and Privacy"
+      "level": 3,
+      "title": "Security and Privacy",
+      "number": "10.1"
     },
     {
       "id": "naming",
-      "level": "3",
-      "title": "Naming"
+      "level": 3,
+      "title": "Naming",
+      "number": "10.2"
     },
     {
       "id": "unit",
-      "level": "3",
-      "title": "Unit"
+      "level": 3,
+      "title": "Unit",
+      "number": "10.3"
     },
     {
       "id": "high-vs-low-level",
-      "level": "3",
-      "title": "Exposing High-Level vs. Low-Level Sensors"
+      "level": 3,
+      "title": "Exposing High-Level vs. Low-Level Sensors",
+      "number": "10.4"
     },
     {
       "id": "multiple-sensors",
-      "level": "3",
-      "title": "When is Enabling Multiple Sensors of the Same Type Not the Right Choice?"
+      "level": 3,
+      "title": "When is Enabling Multiple Sensors of the Same Type Not the Right Choice?",
+      "number": "10.5"
     },
     {
       "id": "definition-reqs",
-      "level": "3",
-      "title": "Definition Requirements"
+      "level": 3,
+      "title": "Definition Requirements",
+      "number": "10.6"
     },
     {
       "id": "extend-automation",
-      "level": "3",
-      "title": "Automation"
+      "level": 3,
+      "title": "Automation",
+      "number": "10.7"
     },
     {
       "id": "permission-api",
-      "level": "3",
-      "title": "Extending the Permission API"
+      "level": 3,
+      "title": "Extending the Permission API",
+      "number": "10.8"
     },
     {
       "id": "permissions-policy-api",
-      "level": "3",
-      "title": "Extending the Permissions Policy API"
+      "level": 3,
+      "title": "Extending the Permissions Policy API",
+      "number": "10.9"
     },
     {
       "id": "example-webidl",
-      "level": "3",
-      "title": "Example WebIDL"
+      "level": 3,
+      "title": "Example WebIDL",
+      "number": "10.10"
     },
     {
       "id": "acknowledgements",
-      "level": "2",
-      "title": "Acknowledgements"
+      "level": 2,
+      "title": "11. Acknowledgements"
     },
     {
       "id": "conformance",
-      "level": "2",
+      "level": 2,
       "title": "Conformance"
     },
     {
       "id": "conventions",
-      "level": "3",
+      "level": 3,
       "title": "Document conventions"
     },
     {
       "id": "conformant-algorithms",
-      "level": "3",
+      "level": 3,
       "title": "Conformant Algorithms"
     },
     {
       "id": "conformance-classes",
-      "level": "3",
+      "level": 3,
       "title": "Conformance Classes"
     },
     {
       "id": "index",
-      "level": "2",
+      "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "level": "2",
+      "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "level": "3",
+      "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "level": "3",
+      "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
-      "level": "2",
+      "level": 2,
       "title": "IDL Index"
     }
   ]

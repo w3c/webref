@@ -6,1343 +6,1447 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2"
     },
     {
-      "id": "table-of-contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
-      "id": "x1-introduction",
-      "level": "2",
-      "title": "Introduction"
+      "id": "introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
-      "id": "x1-1-rich-internet-application-accessibility",
-      "level": "3",
-      "title": "Rich Internet Application Accessibility"
+      "id": "intro_ria_accessibility",
+      "level": 3,
+      "title": "Rich Internet Application Accessibility",
+      "number": "1.1"
     },
     {
-      "id": "x1-2-target-audience",
-      "level": "3",
-      "title": "Target Audience"
+      "id": "target-audience",
+      "level": 3,
+      "title": "Target Audience",
+      "number": "1.2"
     },
     {
-      "id": "x1-3-user-agent-support",
-      "level": "3",
-      "title": "User Agent Support"
+      "id": "ua-support",
+      "level": 3,
+      "title": "User Agent Support",
+      "number": "1.3"
     },
     {
-      "id": "x1-4-co-evolution-of-wai-aria-and-host-languages",
-      "level": "3",
-      "title": "Co-Evolution of WAI-ARIA and Host Languages"
+      "id": "co-evolution",
+      "level": 3,
+      "title": "Co-Evolution of WAI-ARIA and Host Languages",
+      "number": "1.4"
     },
     {
-      "id": "x1-5-authoring-practices",
-      "level": "3",
-      "title": "Authoring Practices"
+      "id": "authoring_practices",
+      "level": 3,
+      "title": "Authoring Practices",
+      "number": "1.5"
     },
     {
-      "id": "x1-5-1-authoring-tools",
-      "level": "4",
-      "title": "Authoring Tools"
+      "id": "authoring_tools",
+      "level": 4,
+      "title": "Authoring Tools",
+      "number": "1.5.1"
     },
     {
-      "id": "x1-5-2-testing-practices-and-tools",
-      "level": "4",
-      "title": "Testing Practices and Tools"
+      "id": "authoring_testing",
+      "level": 4,
+      "title": "Testing Practices and Tools",
+      "number": "1.5.2"
     },
     {
-      "id": "x1-6-assistive-technologies",
-      "level": "3",
-      "title": "Assistive Technologies"
+      "id": "at_support",
+      "level": 3,
+      "title": "Assistive Technologies",
+      "number": "1.6"
     },
     {
-      "id": "x2-important-terms",
-      "level": "2",
-      "title": "Important Terms"
+      "id": "terms",
+      "level": 2,
+      "title": "Important Terms",
+      "number": "2"
     },
     {
-      "id": "x3-conformance",
-      "level": "2",
-      "title": "Conformance"
+      "id": "conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "3"
     },
     {
-      "id": "x3-1-non-interference-with-the-host-language",
-      "level": "3",
-      "title": "Non-interference with the Host Language"
+      "id": "ua_noninterference",
+      "level": 3,
+      "title": "Non-interference with the Host Language",
+      "number": "3.1"
     },
     {
-      "id": "x3-2-all-wai-aria-in-dom",
-      "level": "3",
-      "title": "All WAI-ARIA in DOM"
+      "id": "ua_dom",
+      "level": 3,
+      "title": "All WAI-ARIA in DOM",
+      "number": "3.2"
     },
     {
-      "id": "x3-3-assistive-technology-notifications-communicated-to-web-applications",
-      "level": "3",
-      "title": "Assistive Technology Notifications Communicated to Web Applications"
+      "id": "ua_domchanges",
+      "level": 3,
+      "title": "Assistive Technology Notifications Communicated to Web Applications",
+      "number": "3.3"
     },
     {
-      "id": "x3-4-conformance-checkers",
-      "level": "3",
-      "title": "Conformance Checkers"
+      "id": "conformance_checkers",
+      "level": 3,
+      "title": "Conformance Checkers",
+      "number": "3.4"
     },
     {
-      "id": "x3-5-deprecated-requirements",
-      "level": "3",
-      "title": "Deprecated Requirements"
+      "id": "deprecated",
+      "level": 3,
+      "title": "Deprecated Requirements",
+      "number": "3.5"
     },
     {
-      "id": "x4-using-wai-aria",
-      "level": "2",
-      "title": "Using WAI-ARIA"
+      "id": "usage",
+      "level": 2,
+      "title": "Using WAI-ARIA",
+      "number": "4"
     },
     {
-      "id": "x4-1-wai-aria-roles",
-      "level": "3",
-      "title": "WAI-ARIA Roles"
+      "id": "introroles",
+      "level": 3,
+      "title": "WAI-ARIA Roles",
+      "number": "4.1"
     },
     {
-      "id": "x4-2-wai-aria-states-and-properties",
-      "level": "3",
-      "title": "WAI-ARIA States and Properties"
+      "id": "introstates",
+      "level": 3,
+      "title": "WAI-ARIA States and Properties",
+      "number": "4.2"
     },
     {
-      "id": "x4-3-managing-focus-and-supporting-keyboard-navigation",
-      "level": "3",
-      "title": "Managing Focus and Supporting Keyboard Navigation"
+      "id": "managingfocus",
+      "level": 3,
+      "title": "Managing Focus and Supporting Keyboard Navigation",
+      "number": "4.3"
     },
     {
-      "id": "x4-3-1-information-for-authors",
-      "level": "4",
-      "title": "Information for Authors"
+      "id": "managingfocus_authors",
+      "level": 4,
+      "title": "Information for Authors",
+      "number": "4.3.1"
     },
     {
-      "id": "x4-3-2-information-for-user-agents",
-      "level": "4",
-      "title": "Information for User Agents"
+      "id": "managingfocus_useragents",
+      "level": 4,
+      "title": "Information for User Agents",
+      "number": "4.3.2"
     },
     {
-      "id": "x5-the-roles-model",
-      "level": "2",
-      "title": "The Roles Model"
+      "id": "roles",
+      "level": 2,
+      "title": "The Roles Model",
+      "number": "5"
     },
     {
-      "id": "x5-1-relationships-between-concepts",
-      "level": "3",
-      "title": "Relationships Between Concepts"
+      "id": "relationshipsconcepts",
+      "level": 3,
+      "title": "Relationships Between Concepts",
+      "number": "5.1"
     },
     {
-      "id": "x5-1-1-superclass-role",
-      "level": "4",
-      "title": "Superclass Role"
+      "id": "superclassrole",
+      "level": 4,
+      "title": "Superclass Role",
+      "number": "5.1.1"
     },
     {
-      "id": "x5-1-2-subclass-roles",
-      "level": "4",
-      "title": "Subclass Roles"
+      "id": "subclassroles",
+      "level": 4,
+      "title": "Subclass Roles",
+      "number": "5.1.2"
     },
     {
-      "id": "x5-1-3-related-concepts",
-      "level": "4",
-      "title": "Related Concepts"
+      "id": "relatedConcept",
+      "level": 4,
+      "title": "Related Concepts",
+      "number": "5.1.3"
     },
     {
-      "id": "x5-1-4-base-concept",
-      "level": "4",
-      "title": "Base Concept"
+      "id": "baseConcept",
+      "level": 4,
+      "title": "Base Concept",
+      "number": "5.1.4"
     },
     {
-      "id": "x5-2-characteristics-of-roles",
-      "level": "3",
-      "title": "Characteristics of Roles"
+      "id": "Properties",
+      "level": 3,
+      "title": "Characteristics of Roles",
+      "number": "5.2"
     },
     {
-      "id": "x5-2-1-abstract-roles",
-      "level": "4",
-      "title": "Abstract Roles"
+      "id": "isAbstract",
+      "level": 4,
+      "title": "Abstract Roles",
+      "number": "5.2.1"
     },
     {
-      "id": "x5-2-2-required-states-and-properties",
-      "level": "4",
-      "title": "Required States and Properties"
+      "id": "requiredState",
+      "level": 4,
+      "title": "Required States and Properties",
+      "number": "5.2.2"
     },
     {
-      "id": "x5-2-3-supported-states-and-properties",
-      "level": "4",
-      "title": "Supported States and Properties"
+      "id": "supportedState",
+      "level": 4,
+      "title": "Supported States and Properties",
+      "number": "5.2.3"
     },
     {
-      "id": "x5-2-4-inherited-states-and-properties",
-      "level": "4",
-      "title": "Inherited States and Properties"
+      "id": "inheritedattributes",
+      "level": 4,
+      "title": "Inherited States and Properties",
+      "number": "5.2.4"
     },
     {
-      "id": "x5-2-5-prohibited-states-and-properties",
-      "level": "4",
-      "title": "Prohibited States and Properties"
+      "id": "prohibitedattributes",
+      "level": 4,
+      "title": "Prohibited States and Properties",
+      "number": "5.2.5"
     },
     {
-      "id": "x5-2-6-required-owned-elements",
-      "level": "4",
-      "title": "Required Owned Elements"
+      "id": "mustContain",
+      "level": 4,
+      "title": "Required Owned Elements",
+      "number": "5.2.6"
     },
     {
-      "id": "x5-2-7-required-context-role",
-      "level": "4",
-      "title": "Required Context Role"
+      "id": "scope",
+      "level": 4,
+      "title": "Required Context Role",
+      "number": "5.2.7"
     },
     {
-      "id": "x5-2-8-accessible-name-calculation",
-      "level": "4",
-      "title": "Accessible Name Calculation"
+      "id": "namecalculation",
+      "level": 4,
+      "title": "Accessible Name Calculation",
+      "number": "5.2.8"
     },
     {
-      "id": "x5-2-8-1-name-computation",
-      "level": "5",
-      "title": "Name Computation"
+      "id": "namecomputation",
+      "level": 5,
+      "title": "Name Computation",
+      "number": "5.2.8.1"
     },
     {
-      "id": "x5-2-8-2-description-computation",
-      "level": "5",
-      "title": "Description Computation"
+      "id": "descriptioncomputation",
+      "level": 5,
+      "title": "Description Computation",
+      "number": "5.2.8.2"
     },
     {
-      "id": "x5-2-8-3-accessible-name-and-description-computation",
-      "level": "5",
-      "title": "Accessible Name and Description Computation"
+      "id": "textalternativecomputation",
+      "level": 5,
+      "title": "Accessible Name and Description Computation",
+      "number": "5.2.8.3"
     },
     {
-      "id": "x5-2-8-4-roles-supporting-name-from-author",
-      "level": "5",
-      "title": "Roles Supporting Name from Author"
+      "id": "namefromauthor",
+      "level": 5,
+      "title": "Roles Supporting Name from Author",
+      "number": "5.2.8.4"
     },
     {
-      "id": "x5-2-8-5-roles-supporting-name-from-content",
-      "level": "5",
-      "title": "Roles Supporting Name from Content"
+      "id": "namefromcontent",
+      "level": 5,
+      "title": "Roles Supporting Name from Content",
+      "number": "5.2.8.5"
     },
     {
-      "id": "x5-2-8-6-roles-supporting-name-from-encapsulation",
-      "level": "5",
-      "title": "Roles Supporting Name from Encapsulation"
+      "id": "namefromencapsulation",
+      "level": 5,
+      "title": "Roles Supporting Name from Encapsulation",
+      "number": "5.2.8.6"
     },
     {
-      "id": "x5-2-8-7-roles-supporting-name-from-legend",
-      "level": "5",
-      "title": "Roles Supporting Name from Legend"
+      "id": "namefromlegend",
+      "level": 5,
+      "title": "Roles Supporting Name from Legend",
+      "number": "5.2.8.7"
     },
     {
-      "id": "x5-2-8-8-roles-which-cannot-be-named-name-prohibited",
-      "level": "5",
-      "title": "Roles which cannot be named (Name prohibited)"
+      "id": "namefromprohibited",
+      "level": 5,
+      "title": "Roles which cannot be named (Name prohibited)",
+      "number": "5.2.8.8"
     },
     {
-      "id": "x5-2-9-presentational-children",
-      "level": "4",
-      "title": "Presentational Children"
+      "id": "childrenArePresentational",
+      "level": 4,
+      "title": "Presentational Children",
+      "number": "5.2.9"
     },
     {
-      "id": "x5-2-10-implicit-value-for-role",
-      "level": "4",
-      "title": "Implicit Value for Role"
+      "id": "implictValueForRole",
+      "level": 4,
+      "title": "Implicit Value for Role",
+      "number": "5.2.10"
     },
     {
-      "id": "x5-3-categorization-of-roles",
-      "level": "3",
-      "title": "Categorization of Roles"
+      "id": "roles_categorization",
+      "level": 3,
+      "title": "Categorization of Roles",
+      "number": "5.3"
     },
     {
-      "id": "x5-3-1-abstract-roles",
-      "level": "4",
-      "title": "Abstract Roles"
+      "id": "abstract_roles",
+      "level": 4,
+      "title": "Abstract Roles",
+      "number": "5.3.1"
     },
     {
-      "id": "x5-3-2-widget-roles",
-      "level": "4",
-      "title": "Widget Roles"
+      "id": "widget_roles",
+      "level": 4,
+      "title": "Widget Roles",
+      "number": "5.3.2"
     },
     {
-      "id": "x5-3-3-document-structure-roles",
-      "level": "4",
-      "title": "Document Structure Roles"
+      "id": "document_structure_roles",
+      "level": 4,
+      "title": "Document Structure Roles",
+      "number": "5.3.3"
     },
     {
-      "id": "x5-3-4-landmark-roles",
-      "level": "4",
-      "title": "Landmark Roles"
+      "id": "landmark_roles",
+      "level": 4,
+      "title": "Landmark Roles",
+      "number": "5.3.4"
     },
     {
-      "id": "x5-3-5-live-region-roles",
-      "level": "4",
-      "title": "Live Region Roles"
+      "id": "live_region_roles",
+      "level": 4,
+      "title": "Live Region Roles",
+      "number": "5.3.5"
     },
     {
-      "id": "x5-3-6-window-roles",
-      "level": "4",
-      "title": "Window Roles"
+      "id": "window_roles",
+      "level": 4,
+      "title": "Window Roles",
+      "number": "5.3.6"
     },
     {
-      "id": "x5-4-definition-of-roles",
-      "level": "3",
-      "title": "Definition of Roles"
+      "id": "role_definitions",
+      "level": 3,
+      "title": "Definition of Roles",
+      "number": "5.4"
     },
     {
-      "id": "alert-0",
-      "level": "4",
+      "id": "alert",
+      "level": 4,
       "title": "alert role"
     },
     {
-      "id": "alertdialog-0",
-      "level": "4",
+      "id": "alertdialog",
+      "level": 4,
       "title": "alertdialog role"
     },
     {
-      "id": "application-0",
-      "level": "4",
+      "id": "application",
+      "level": 4,
       "title": "application role"
     },
     {
-      "id": "article-0",
-      "level": "4",
+      "id": "article",
+      "level": 4,
       "title": "article role"
     },
     {
-      "id": "associationlist-0",
-      "level": "4",
+      "id": "associationlist",
+      "level": 4,
       "title": "associationlist role"
     },
     {
-      "id": "associationlistitemkey-0",
-      "level": "4",
+      "id": "associationlistitemkey",
+      "level": 4,
       "title": "associationlistitemkey role"
     },
     {
-      "id": "associationlistitemvalue-0",
-      "level": "4",
+      "id": "associationlistitemvalue",
+      "level": 4,
       "title": "associationlistitemvalue role"
     },
     {
-      "id": "banner-0",
-      "level": "4",
+      "id": "banner",
+      "level": 4,
       "title": "banner role"
     },
     {
-      "id": "blockquote-0",
-      "level": "4",
+      "id": "blockquote",
+      "level": 4,
       "title": "blockquote role"
     },
     {
-      "id": "button-0",
-      "level": "4",
+      "id": "button",
+      "level": 4,
       "title": "button role"
     },
     {
-      "id": "caption-0",
-      "level": "4",
+      "id": "caption",
+      "level": 4,
       "title": "caption role"
     },
     {
-      "id": "cell-0",
-      "level": "4",
+      "id": "cell",
+      "level": 4,
       "title": "cell role"
     },
     {
-      "id": "checkbox-0",
-      "level": "4",
+      "id": "checkbox",
+      "level": 4,
       "title": "checkbox role"
     },
     {
-      "id": "code-0",
-      "level": "4",
+      "id": "code",
+      "level": 4,
       "title": "code role"
     },
     {
-      "id": "columnheader-0",
-      "level": "4",
+      "id": "columnheader",
+      "level": 4,
       "title": "columnheader role"
     },
     {
-      "id": "combobox-0",
-      "level": "4",
+      "id": "combobox",
+      "level": 4,
       "title": "combobox role"
     },
     {
-      "id": "command-0",
-      "level": "4",
+      "id": "command",
+      "level": 4,
       "title": "command abstract role"
     },
     {
-      "id": "comment-0",
-      "level": "4",
+      "id": "comment",
+      "level": 4,
       "title": "comment role"
     },
     {
-      "id": "complementary-0",
-      "level": "4",
+      "id": "complementary",
+      "level": 4,
       "title": "complementary role"
     },
     {
-      "id": "composite-0",
-      "level": "4",
+      "id": "composite",
+      "level": 4,
       "title": "composite abstract role"
     },
     {
-      "id": "contentinfo-0",
-      "level": "4",
+      "id": "contentinfo",
+      "level": 4,
       "title": "contentinfo role"
     },
     {
-      "id": "definition-0",
-      "level": "4",
+      "id": "definition",
+      "level": 4,
       "title": "definition role"
     },
     {
-      "id": "deletion-0",
-      "level": "4",
+      "id": "deletion",
+      "level": 4,
       "title": "deletion role"
     },
     {
-      "id": "dialog-0",
-      "level": "4",
+      "id": "dialog",
+      "level": 4,
       "title": "dialog role"
     },
     {
-      "id": "directory-0",
-      "level": "4",
+      "id": "directory",
+      "level": 4,
       "title": "directory role"
     },
     {
-      "id": "document-0",
-      "level": "4",
+      "id": "document",
+      "level": 4,
       "title": "document role"
     },
     {
-      "id": "emphasis-0",
-      "level": "4",
+      "id": "emphasis",
+      "level": 4,
       "title": "emphasis role"
     },
     {
-      "id": "feed-0",
-      "level": "4",
+      "id": "feed",
+      "level": 4,
       "title": "feed role"
     },
     {
-      "id": "figure-0",
-      "level": "4",
+      "id": "figure",
+      "level": 4,
       "title": "figure role"
     },
     {
-      "id": "form-0",
-      "level": "4",
+      "id": "form",
+      "level": 4,
       "title": "form role"
     },
     {
-      "id": "generic-0",
-      "level": "4",
+      "id": "generic",
+      "level": 4,
       "title": "generic role"
     },
     {
-      "id": "grid-0",
-      "level": "4",
+      "id": "grid",
+      "level": 4,
       "title": "grid role"
     },
     {
-      "id": "gridcell-0",
-      "level": "4",
+      "id": "gridcell",
+      "level": 4,
       "title": "gridcell role"
     },
     {
-      "id": "group-0",
-      "level": "4",
+      "id": "group",
+      "level": 4,
       "title": "group role"
     },
     {
-      "id": "heading-0",
-      "level": "4",
+      "id": "heading",
+      "level": 4,
       "title": "heading role"
     },
     {
-      "id": "img-0",
-      "level": "4",
+      "id": "img",
+      "level": 4,
       "title": "img role"
     },
     {
-      "id": "input-0",
-      "level": "4",
+      "id": "input",
+      "level": 4,
       "title": "input abstract role"
     },
     {
-      "id": "insertion-0",
-      "level": "4",
+      "id": "insertion",
+      "level": 4,
       "title": "insertion role"
     },
     {
-      "id": "label-0",
-      "level": "4",
+      "id": "label",
+      "level": 4,
       "title": "label role"
     },
     {
-      "id": "landmark-0",
-      "level": "4",
+      "id": "landmark",
+      "level": 4,
       "title": "landmark abstract role"
     },
     {
-      "id": "legend-0",
-      "level": "4",
+      "id": "legend",
+      "level": 4,
       "title": "legend role"
     },
     {
-      "id": "link-0",
-      "level": "4",
+      "id": "link",
+      "level": 4,
       "title": "link role"
     },
     {
-      "id": "list-0",
-      "level": "4",
+      "id": "list",
+      "level": 4,
       "title": "list role"
     },
     {
-      "id": "listbox-0",
-      "level": "4",
+      "id": "listbox",
+      "level": 4,
       "title": "listbox role"
     },
     {
-      "id": "listitem-0",
-      "level": "4",
+      "id": "listitem",
+      "level": 4,
       "title": "listitem role"
     },
     {
-      "id": "log-0",
-      "level": "4",
+      "id": "log",
+      "level": 4,
       "title": "log role"
     },
     {
-      "id": "main-0",
-      "level": "4",
+      "id": "main",
+      "level": 4,
       "title": "main role"
     },
     {
-      "id": "mark-0",
-      "level": "4",
+      "id": "mark",
+      "level": 4,
       "title": "mark role"
     },
     {
-      "id": "marquee-0",
-      "level": "4",
+      "id": "marquee",
+      "level": 4,
       "title": "marquee role"
     },
     {
-      "id": "math-0",
-      "level": "4",
+      "id": "math",
+      "level": 4,
       "title": "math role"
     },
     {
       "id": "mathml-example-with-embedded-tex-annotation",
-      "level": "4",
+      "level": 4,
       "title": "MathML Example with Embedded TeX Annotation"
     },
     {
       "id": "plain-html-or-polyfill-dom-result-of-the-mathml-quadratic-formula",
-      "level": "4",
+      "level": 4,
       "title": "Plain HTML or Polyfill DOM Result of the MathML Quadratic Formula"
     },
     {
-      "id": "meter-0",
-      "level": "4",
+      "id": "meter",
+      "level": 4,
       "title": "meter role"
     },
     {
-      "id": "menu-0",
-      "level": "4",
+      "id": "menu",
+      "level": 4,
       "title": "menu role"
     },
     {
-      "id": "menubar-0",
-      "level": "4",
+      "id": "menubar",
+      "level": 4,
       "title": "menubar role"
     },
     {
-      "id": "menuitem-0",
-      "level": "4",
+      "id": "menuitem",
+      "level": 4,
       "title": "menuitem role"
     },
     {
-      "id": "menuitemcheckbox-0",
-      "level": "4",
+      "id": "menuitemcheckbox",
+      "level": 4,
       "title": "menuitemcheckbox role"
     },
     {
-      "id": "menuitemradio-0",
-      "level": "4",
+      "id": "menuitemradio",
+      "level": 4,
       "title": "menuitemradio role"
     },
     {
-      "id": "navigation-0",
-      "level": "4",
+      "id": "navigation",
+      "level": 4,
       "title": "navigation role"
     },
     {
-      "id": "none-0",
-      "level": "4",
+      "id": "none",
+      "level": 4,
       "title": "none role"
     },
     {
       "id": "note-regarding-the-aria-1-1-none-role",
-      "level": "4",
+      "level": 4,
       "title": "Note regarding the ARIA 1.1 none role."
     },
     {
-      "id": "note-0",
-      "level": "4",
+      "id": "note",
+      "level": 4,
       "title": "note role"
     },
     {
-      "id": "option-0",
-      "level": "4",
+      "id": "option",
+      "level": 4,
       "title": "option role"
     },
     {
-      "id": "paragraph-0",
-      "level": "4",
+      "id": "paragraph",
+      "level": 4,
       "title": "paragraph role"
     },
     {
-      "id": "presentation-0",
-      "level": "4",
+      "id": "presentation",
+      "level": 4,
       "title": "presentation role"
     },
     {
       "id": "note-regarding-the-aria-1-1-none-role-0",
-      "level": "4",
+      "level": 4,
       "title": "Note regarding the ARIA 1.1 none role."
     },
     {
-      "id": "presentational-roles-conflict-resolution",
-      "level": "5",
+      "id": "conflict_resolution_presentation_none",
+      "level": 5,
       "title": "Presentational Roles Conflict Resolution"
     },
     {
-      "id": "progressbar-0",
-      "level": "4",
+      "id": "progressbar",
+      "level": 4,
       "title": "progressbar role"
     },
     {
-      "id": "radio-0",
-      "level": "4",
+      "id": "radio",
+      "level": 4,
       "title": "radio role"
     },
     {
-      "id": "radiogroup-0",
-      "level": "4",
+      "id": "radiogroup",
+      "level": 4,
       "title": "radiogroup role"
     },
     {
-      "id": "range-0",
-      "level": "4",
+      "id": "range",
+      "level": 4,
       "title": "range abstract role"
     },
     {
-      "id": "region-0",
-      "level": "4",
+      "id": "region",
+      "level": 4,
       "title": "region role"
     },
     {
-      "id": "roletype-0",
-      "level": "4",
+      "id": "roletype",
+      "level": 4,
       "title": "roletype abstract role"
     },
     {
-      "id": "row-0",
-      "level": "4",
+      "id": "row",
+      "level": 4,
       "title": "row role"
     },
     {
-      "id": "rowgroup-0",
-      "level": "4",
+      "id": "rowgroup",
+      "level": 4,
       "title": "rowgroup role"
     },
     {
-      "id": "rowheader-0",
-      "level": "4",
+      "id": "rowheader",
+      "level": 4,
       "title": "rowheader role"
     },
     {
-      "id": "scrollbar-0",
-      "level": "4",
+      "id": "scrollbar",
+      "level": 4,
       "title": "scrollbar role"
     },
     {
-      "id": "search-0",
-      "level": "4",
+      "id": "search",
+      "level": 4,
       "title": "search role"
     },
     {
-      "id": "searchbox-0",
-      "level": "4",
+      "id": "searchbox",
+      "level": 4,
       "title": "searchbox role"
     },
     {
-      "id": "section-0",
-      "level": "4",
+      "id": "section",
+      "level": 4,
       "title": "section abstract role"
     },
     {
-      "id": "sectionhead-0",
-      "level": "4",
+      "id": "sectionhead",
+      "level": 4,
       "title": "sectionhead abstract role"
     },
     {
-      "id": "select-0",
-      "level": "4",
+      "id": "select",
+      "level": 4,
       "title": "select abstract role"
     },
     {
-      "id": "separator-0",
-      "level": "4",
+      "id": "separator",
+      "level": 4,
       "title": "separator role"
     },
     {
-      "id": "slider-0",
-      "level": "4",
+      "id": "slider",
+      "level": 4,
       "title": "slider role"
     },
     {
-      "id": "spinbutton-0",
-      "level": "4",
+      "id": "spinbutton",
+      "level": 4,
       "title": "spinbutton role"
     },
     {
-      "id": "status-0",
-      "level": "4",
+      "id": "status",
+      "level": 4,
       "title": "status role"
     },
     {
-      "id": "strong-0",
-      "level": "4",
+      "id": "strong",
+      "level": 4,
       "title": "strong role"
     },
     {
-      "id": "structure-0",
-      "level": "4",
+      "id": "structure",
+      "level": 4,
       "title": "structure abstract role"
     },
     {
-      "id": "subscript-0",
-      "level": "4",
+      "id": "subscript",
+      "level": 4,
       "title": "subscript role"
     },
     {
-      "id": "suggestion-0",
-      "level": "4",
+      "id": "suggestion",
+      "level": 4,
       "title": "suggestion role"
     },
     {
-      "id": "superscript-0",
-      "level": "4",
+      "id": "superscript",
+      "level": 4,
       "title": "superscript role"
     },
     {
-      "id": "switch-0",
-      "level": "4",
+      "id": "switch",
+      "level": 4,
       "title": "switch role"
     },
     {
-      "id": "tab-0",
-      "level": "4",
+      "id": "tab",
+      "level": 4,
       "title": "tab role"
     },
     {
-      "id": "table-0",
-      "level": "4",
+      "id": "table",
+      "level": 4,
       "title": "table role"
     },
     {
-      "id": "tablist-0",
-      "level": "4",
+      "id": "tablist",
+      "level": 4,
       "title": "tablist role"
     },
     {
-      "id": "tabpanel-0",
-      "level": "4",
+      "id": "tabpanel",
+      "level": 4,
       "title": "tabpanel role"
     },
     {
-      "id": "term-0",
-      "level": "4",
+      "id": "term",
+      "level": 4,
       "title": "term role"
     },
     {
-      "id": "textbox-0",
-      "level": "4",
+      "id": "textbox",
+      "level": 4,
       "title": "textbox role"
     },
     {
-      "id": "time-0",
-      "level": "4",
+      "id": "time",
+      "level": 4,
       "title": "time role"
     },
     {
-      "id": "timer-0",
-      "level": "4",
+      "id": "timer",
+      "level": 4,
       "title": "timer role"
     },
     {
-      "id": "toolbar-0",
-      "level": "4",
+      "id": "toolbar",
+      "level": 4,
       "title": "toolbar role"
     },
     {
-      "id": "tooltip-0",
-      "level": "4",
+      "id": "tooltip",
+      "level": 4,
       "title": "tooltip role"
     },
     {
-      "id": "tree-0",
-      "level": "4",
+      "id": "tree",
+      "level": 4,
       "title": "tree role"
     },
     {
-      "id": "treegrid-0",
-      "level": "4",
+      "id": "treegrid",
+      "level": 4,
       "title": "treegrid role"
     },
     {
-      "id": "treeitem-0",
-      "level": "4",
+      "id": "treeitem",
+      "level": 4,
       "title": "treeitem role"
     },
     {
-      "id": "widget-0",
-      "level": "4",
+      "id": "widget",
+      "level": 4,
       "title": "widget abstract role"
     },
     {
-      "id": "window-0",
-      "level": "4",
+      "id": "window",
+      "level": 4,
       "title": "window abstract role"
     },
     {
-      "id": "x6-supported-states-and-properties",
-      "level": "2",
-      "title": "Supported States and Properties"
+      "id": "states_and_properties",
+      "level": 2,
+      "title": "Supported States and Properties",
+      "number": "6"
     },
     {
-      "id": "x6-1-clarification-of-states-versus-properties",
-      "level": "3",
-      "title": "Clarification of States versus Properties"
+      "id": "statevsprop",
+      "level": 3,
+      "title": "Clarification of States versus Properties",
+      "number": "6.1"
     },
     {
-      "id": "x6-2-characteristics-of-states-and-properties",
-      "level": "3",
-      "title": "Characteristics of States and Properties"
+      "id": "state_prop_att",
+      "level": 3,
+      "title": "Characteristics of States and Properties",
+      "number": "6.2"
     },
     {
-      "id": "x6-2-1-related-concepts",
-      "level": "4",
-      "title": "Related Concepts"
+      "id": "propcharacteristic_relatedconcept",
+      "level": 4,
+      "title": "Related Concepts",
+      "number": "6.2.1"
     },
     {
-      "id": "x6-2-2-used-in-roles",
-      "level": "4",
-      "title": "Used in Roles"
+      "id": "propcharacteristic_usedinrole",
+      "level": 4,
+      "title": "Used in Roles",
+      "number": "6.2.2"
     },
     {
-      "id": "x6-2-3-inherits-into-roles",
-      "level": "4",
-      "title": "Inherits into Roles"
+      "id": "propcharacteristic_inheritsintoroles",
+      "level": 4,
+      "title": "Inherits into Roles",
+      "number": "6.2.3"
     },
     {
-      "id": "x6-2-4-value",
-      "level": "4",
-      "title": "Value"
+      "id": "propcharacteristic_value",
+      "level": 4,
+      "title": "Value",
+      "number": "6.2.4"
     },
     {
-      "id": "x6-3-enumerated-attribute-values",
-      "level": "3",
-      "title": "Enumerated Attribute Values"
+      "id": "enumerated-attribute-values",
+      "level": 3,
+      "title": "Enumerated Attribute Values",
+      "number": "6.3"
     },
     {
-      "id": "x6-3-1-example-enumerated-attribute-usage",
-      "level": "4",
-      "title": "Example Enumerated Attribute Usage"
+      "id": "enumeration-example",
+      "level": 4,
+      "title": "Example Enumerated Attribute Usage",
+      "number": "6.3.1"
     },
     {
-      "id": "x6-4-translatable-states-and-properties",
-      "level": "3",
-      "title": "Translatable States and Properties"
+      "id": "translatable-states-and-properties",
+      "level": 3,
+      "title": "Translatable States and Properties",
+      "number": "6.4"
     },
     {
-      "id": "x6-5-global-states-and-properties",
-      "level": "3",
-      "title": "Global States and Properties"
+      "id": "global_states",
+      "level": 3,
+      "title": "Global States and Properties",
+      "number": "6.5"
     },
     {
-      "id": "x6-6-taxonomy-of-wai-aria-states-and-properties",
-      "level": "3",
-      "title": "Taxonomy of WAI-ARIA States and Properties"
+      "id": "state_prop_taxonomy",
+      "level": 3,
+      "title": "Taxonomy of WAI-ARIA States and Properties",
+      "number": "6.6"
     },
     {
-      "id": "x6-6-1-widget-attributes",
-      "level": "4",
-      "title": "Widget Attributes"
+      "id": "attrs_widgets",
+      "level": 4,
+      "title": "Widget Attributes",
+      "number": "6.6.1"
     },
     {
-      "id": "x6-6-2-live-region-attributes",
-      "level": "4",
-      "title": "Live Region Attributes"
+      "id": "attrs_liveregions",
+      "level": 4,
+      "title": "Live Region Attributes",
+      "number": "6.6.2"
     },
     {
-      "id": "x6-6-3-drag-and-drop-attributes",
-      "level": "4",
-      "title": "Drag-and-Drop Attributes"
+      "id": "attrs_dragdrop",
+      "level": 4,
+      "title": "Drag-and-Drop Attributes",
+      "number": "6.6.3"
     },
     {
-      "id": "x6-6-4-relationship-attributes",
-      "level": "4",
-      "title": "Relationship Attributes"
+      "id": "attrs_relationships",
+      "level": 4,
+      "title": "Relationship Attributes",
+      "number": "6.6.4"
     },
     {
-      "id": "x6-7-definitions-of-states-and-properties-all-aria-attributes",
-      "level": "3",
-      "title": "Definitions of States and Properties (all aria-* attributes)"
+      "id": "state_prop_def",
+      "level": 3,
+      "title": "Definitions of States and Properties (all aria-* attributes)",
+      "number": "6.7"
     },
     {
-      "id": "aria-activedescendant-property",
-      "level": "4",
+      "id": "aria-activedescendant",
+      "level": 4,
       "title": "aria-activedescendant property"
     },
     {
-      "id": "aria-atomic-property",
-      "level": "4",
+      "id": "aria-atomic",
+      "level": 4,
       "title": "aria-atomic property"
     },
     {
-      "id": "aria-autocomplete-property",
-      "level": "4",
+      "id": "aria-autocomplete",
+      "level": 4,
       "title": "aria-autocomplete property"
     },
     {
-      "id": "aria-brailleroledescription-property",
-      "level": "4",
+      "id": "aria-brailleroledescription",
+      "level": 4,
       "title": "aria-brailleroledescription property"
     },
     {
-      "id": "aria-busy-state",
-      "level": "4",
+      "id": "aria-busy",
+      "level": 4,
       "title": "aria-busy state"
     },
     {
-      "id": "aria-checked-state",
-      "level": "4",
+      "id": "aria-checked",
+      "level": 4,
       "title": "aria-checked state"
     },
     {
-      "id": "aria-colcount-property",
-      "level": "4",
+      "id": "aria-colcount",
+      "level": 4,
       "title": "aria-colcount property"
     },
     {
-      "id": "aria-colindex-property",
-      "level": "4",
+      "id": "aria-colindex",
+      "level": 4,
       "title": "aria-colindex property"
     },
     {
-      "id": "aria-colindextext-property",
-      "level": "4",
+      "id": "aria-colindextext",
+      "level": 4,
       "title": "aria-colindextext property"
     },
     {
-      "id": "aria-colspan-property",
-      "level": "4",
+      "id": "aria-colspan",
+      "level": 4,
       "title": "aria-colspan property"
     },
     {
-      "id": "aria-controls-property",
-      "level": "4",
+      "id": "aria-controls",
+      "level": 4,
       "title": "aria-controls property"
     },
     {
-      "id": "aria-current-state",
-      "level": "4",
+      "id": "aria-current",
+      "level": 4,
       "title": "aria-current state"
     },
     {
-      "id": "aria-describedby-property",
-      "level": "4",
+      "id": "aria-describedby",
+      "level": 4,
       "title": "aria-describedby property"
     },
     {
-      "id": "aria-description-property",
-      "level": "4",
+      "id": "aria-description",
+      "level": 4,
       "title": "aria-description property"
     },
     {
-      "id": "aria-details-property",
-      "level": "4",
+      "id": "aria-details",
+      "level": 4,
       "title": "aria-details property"
     },
     {
-      "id": "aria-disabled-state",
-      "level": "4",
+      "id": "aria-disabled",
+      "level": 4,
       "title": "aria-disabled state"
     },
     {
-      "id": "aria-dropeffect-property",
-      "level": "4",
+      "id": "aria-dropeffect",
+      "level": 4,
       "title": "aria-dropeffect property"
     },
     {
-      "id": "aria-errormessage-property",
-      "level": "4",
+      "id": "aria-errormessage",
+      "level": 4,
       "title": "aria-errormessage property"
     },
     {
-      "id": "aria-expanded-state",
-      "level": "4",
+      "id": "aria-expanded",
+      "level": 4,
       "title": "aria-expanded state"
     },
     {
-      "id": "aria-flowto-property",
-      "level": "4",
+      "id": "aria-flowto",
+      "level": 4,
       "title": "aria-flowto property"
     },
     {
-      "id": "aria-grabbed-state",
-      "level": "4",
+      "id": "aria-grabbed",
+      "level": 4,
       "title": "aria-grabbed state"
     },
     {
-      "id": "aria-haspopup-property",
-      "level": "4",
+      "id": "aria-haspopup",
+      "level": 4,
       "title": "aria-haspopup property"
     },
     {
-      "id": "aria-hidden-state",
-      "level": "4",
+      "id": "aria-hidden",
+      "level": 4,
       "title": "aria-hidden state"
     },
     {
-      "id": "aria-invalid-state",
-      "level": "4",
+      "id": "aria-invalid",
+      "level": 4,
       "title": "aria-invalid state"
     },
     {
-      "id": "aria-keyshortcuts-property",
-      "level": "4",
+      "id": "aria-keyshortcuts",
+      "level": 4,
       "title": "aria-keyshortcuts property"
     },
     {
-      "id": "aria-label-property",
-      "level": "4",
+      "id": "aria-label",
+      "level": 4,
       "title": "aria-label property"
     },
     {
-      "id": "aria-labelledby-property",
-      "level": "4",
+      "id": "aria-labelledby",
+      "level": 4,
       "title": "aria-labelledby property"
     },
     {
-      "id": "aria-braillelabel-property",
-      "level": "4",
+      "id": "aria-braillelabel",
+      "level": 4,
       "title": "aria-braillelabel property"
     },
     {
-      "id": "aria-level-property",
-      "level": "4",
+      "id": "aria-level",
+      "level": 4,
       "title": "aria-level property"
     },
     {
-      "id": "aria-live-property",
-      "level": "4",
+      "id": "aria-live",
+      "level": 4,
       "title": "aria-live property"
     },
     {
-      "id": "aria-modal-property",
-      "level": "4",
+      "id": "aria-modal",
+      "level": 4,
       "title": "aria-modal property"
     },
     {
-      "id": "aria-multiline-property",
-      "level": "4",
+      "id": "aria-multiline",
+      "level": 4,
       "title": "aria-multiline property"
     },
     {
-      "id": "aria-multiselectable-property",
-      "level": "4",
+      "id": "aria-multiselectable",
+      "level": 4,
       "title": "aria-multiselectable property"
     },
     {
-      "id": "aria-orientation-property",
-      "level": "4",
+      "id": "aria-orientation",
+      "level": 4,
       "title": "aria-orientation property"
     },
     {
-      "id": "aria-owns-property",
-      "level": "4",
+      "id": "aria-owns",
+      "level": 4,
       "title": "aria-owns property"
     },
     {
-      "id": "aria-placeholder-property",
-      "level": "4",
+      "id": "aria-placeholder",
+      "level": 4,
       "title": "aria-placeholder property"
     },
     {
-      "id": "aria-posinset-property",
-      "level": "4",
+      "id": "aria-posinset",
+      "level": 4,
       "title": "aria-posinset property"
     },
     {
-      "id": "aria-pressed-state",
-      "level": "4",
+      "id": "aria-pressed",
+      "level": 4,
       "title": "aria-pressed state"
     },
     {
-      "id": "aria-readonly-property",
-      "level": "4",
+      "id": "aria-readonly",
+      "level": 4,
       "title": "aria-readonly property"
     },
     {
-      "id": "aria-relevant-property",
-      "level": "4",
+      "id": "aria-relevant",
+      "level": 4,
       "title": "aria-relevant property"
     },
     {
-      "id": "aria-required-property",
-      "level": "4",
+      "id": "aria-required",
+      "level": 4,
       "title": "aria-required property"
     },
     {
-      "id": "aria-roledescription-property",
-      "level": "4",
+      "id": "aria-roledescription",
+      "level": 4,
       "title": "aria-roledescription property"
     },
     {
-      "id": "aria-rowcount-property",
-      "level": "4",
+      "id": "aria-rowcount",
+      "level": 4,
       "title": "aria-rowcount property"
     },
     {
-      "id": "aria-rowindex-property",
-      "level": "4",
+      "id": "aria-rowindex",
+      "level": 4,
       "title": "aria-rowindex property"
     },
     {
-      "id": "aria-rowindextext-property",
-      "level": "4",
+      "id": "aria-rowindextext",
+      "level": 4,
       "title": "aria-rowindextext property"
     },
     {
-      "id": "aria-rowspan-property",
-      "level": "4",
+      "id": "aria-rowspan",
+      "level": 4,
       "title": "aria-rowspan property"
     },
     {
-      "id": "aria-selected-state",
-      "level": "4",
+      "id": "aria-selected",
+      "level": 4,
       "title": "aria-selected state"
     },
     {
-      "id": "aria-setsize-property",
-      "level": "4",
+      "id": "aria-setsize",
+      "level": 4,
       "title": "aria-setsize property"
     },
     {
-      "id": "aria-sort-property",
-      "level": "4",
+      "id": "aria-sort",
+      "level": 4,
       "title": "aria-sort property"
     },
     {
-      "id": "aria-valuemax-property",
-      "level": "4",
+      "id": "aria-valuemax",
+      "level": 4,
       "title": "aria-valuemax property"
     },
     {
-      "id": "aria-valuemin-property",
-      "level": "4",
+      "id": "aria-valuemin",
+      "level": 4,
       "title": "aria-valuemin property"
     },
     {
-      "id": "aria-valuenow-property",
-      "level": "4",
+      "id": "aria-valuenow",
+      "level": 4,
       "title": "aria-valuenow property"
     },
     {
-      "id": "aria-valuetext-property",
-      "level": "4",
+      "id": "aria-valuetext",
+      "level": 4,
       "title": "aria-valuetext property"
     },
     {
-      "id": "x7-accessibility-tree",
-      "level": "2",
-      "title": "Accessibility Tree"
+      "id": "accessibility_tree",
+      "level": 2,
+      "title": "Accessibility Tree",
+      "number": "7"
     },
     {
-      "id": "x7-1-excluding-elements-from-the-accessibility-tree",
-      "level": "3",
-      "title": "Excluding Elements from the Accessibility Tree"
+      "id": "tree_exclusion",
+      "level": 3,
+      "title": "Excluding Elements from the Accessibility Tree",
+      "number": "7.1"
     },
     {
-      "id": "x7-2-including-elements-in-the-accessibility-tree",
-      "level": "3",
-      "title": "Including Elements in the Accessibility Tree"
+      "id": "tree_inclusion",
+      "level": 3,
+      "title": "Including Elements in the Accessibility Tree",
+      "number": "7.2"
     },
     {
-      "id": "x8-implementation-in-host-languages",
-      "level": "2",
-      "title": "Implementation in Host Languages"
+      "id": "host_languages",
+      "level": 2,
+      "title": "Implementation in Host Languages",
+      "number": "8"
     },
     {
-      "id": "x8-1-role-attribute",
-      "level": "3",
-      "title": "Role Attribute"
+      "id": "host_general_role",
+      "level": 3,
+      "title": "Role Attribute",
+      "number": "8.1"
     },
     {
-      "id": "x8-2-state-and-property-attributes",
-      "level": "3",
-      "title": "State and Property Attributes"
+      "id": "host_general_attrs",
+      "level": 3,
+      "title": "State and Property Attributes",
+      "number": "8.2"
     },
     {
-      "id": "x8-3-focus-navigation",
-      "level": "3",
-      "title": "Focus Navigation"
+      "id": "host_general_focus",
+      "level": 3,
+      "title": "Focus Navigation",
+      "number": "8.3"
     },
     {
-      "id": "x8-4-implicit-wai-aria-semantics",
-      "level": "3",
-      "title": "Implicit WAI-ARIA Semantics"
+      "id": "implicit_semantics",
+      "level": 3,
+      "title": "Implicit WAI-ARIA Semantics",
+      "number": "8.4"
     },
     {
-      "id": "x8-5-conflicts-with-host-language-semantics",
-      "level": "3",
-      "title": "Conflicts with Host Language Semantics"
+      "id": "host_general_conflict",
+      "level": 3,
+      "title": "Conflicts with Host Language Semantics",
+      "number": "8.5"
     },
     {
-      "id": "x8-6-state-and-property-attribute-processing",
-      "level": "3",
-      "title": "State and Property Attribute Processing"
+      "id": "state_property_processing",
+      "level": 3,
+      "title": "State and Property Attribute Processing",
+      "number": "8.6"
     },
     {
-      "id": "x8-6-1-id-reference-error-processing",
-      "level": "4",
-      "title": "ID Reference Error Processing"
+      "id": "mapping_additional_relations_error_processing",
+      "level": 4,
+      "title": "ID Reference Error Processing",
+      "number": "8.6.1"
     },
     {
-      "id": "x8-7-css-selectors",
-      "level": "3",
-      "title": "CSS Selectors"
+      "id": "document-handling_css-selectors",
+      "level": 3,
+      "title": "CSS Selectors",
+      "number": "8.7"
     },
     {
-      "id": "x9-handling-author-errors",
-      "level": "2",
-      "title": "Handling Author Errors"
+      "id": "document-handling_author-errors",
+      "level": 2,
+      "title": "Handling Author Errors",
+      "number": "9"
     },
     {
-      "id": "x9-1-roles",
-      "level": "3",
-      "title": "Roles"
+      "id": "document-handling_author-errors_roles",
+      "level": 3,
+      "title": "Roles",
+      "number": "9.1"
     },
     {
-      "id": "x9-2-states-and-properties",
-      "level": "3",
-      "title": "States and Properties"
+      "id": "document-handling_author-errors_states-properties",
+      "level": 3,
+      "title": "States and Properties",
+      "number": "9.2"
     },
     {
-      "id": "x10-idl-interface",
-      "level": "2",
-      "title": "IDL Interface"
+      "id": "idl-interface",
+      "level": 2,
+      "title": "10. IDL Interface"
     },
     {
-      "id": "x10-1-interface-mixin-ariamixin",
-      "level": "3",
-      "title": "Interface Mixin ARIAMixin"
+      "id": "ARIAMixin",
+      "level": 3,
+      "title": "Interface Mixin ARIAMixin",
+      "number": "10.1"
     },
     {
-      "id": "x10-2-aria-attribute-correspondence",
-      "level": "3",
-      "title": "ARIA Attribute Correspondence"
+      "id": "accessibilityroleandproperties-correspondence",
+      "level": 3,
+      "title": "ARIA Attribute Correspondence",
+      "number": "10.2"
     },
     {
-      "id": "x10-2-1-disambiguation-pattern",
-      "level": "4",
-      "title": "Disambiguation Pattern"
+      "id": "idl_attr_disambiguation",
+      "level": 4,
+      "title": "Disambiguation Pattern",
+      "number": "10.2.1"
     },
     {
-      "id": "x10-2-2-idl-attribute-name-notes-or-exceptions",
-      "level": "4",
-      "title": "IDL Attribute Name Notes or Exceptions"
+      "id": "idl_attr_exceptions",
+      "level": 4,
+      "title": "IDL Attribute Name Notes or Exceptions",
+      "number": "10.2.2"
     },
     {
-      "id": "x10-3-ariamixin-mixed-in-to-element",
-      "level": "3",
-      "title": "ARIAMixin Mixed in to Element"
+      "id": "idl_element",
+      "level": 3,
+      "title": "ARIAMixin Mixed in to Element",
+      "number": "10.3"
     },
     {
-      "id": "x10-4-example-idl-attribute-usage",
-      "level": "3",
-      "title": "Example IDL Attribute Usage"
+      "id": "idl_example_usage",
+      "level": 3,
+      "title": "Example IDL Attribute Usage",
+      "number": "10.4"
     },
     {
-      "id": "a-mapping-wai-aria-value-types-to-languages",
-      "level": "2",
-      "title": "A. Mapping WAI-ARIA Value types to languages"
+      "id": "typemapping",
+      "level": 2,
+      "title": "Mapping WAI-ARIA Value types to languages",
+      "number": "A"
     },
     {
-      "id": "b-change-log",
-      "level": "2",
-      "title": "B. Change Log"
+      "id": "changelog",
+      "level": 2,
+      "title": "Change Log",
+      "number": "B"
     },
     {
-      "id": "b-1-substantive-changes-targetted-for-the-1-3-release",
-      "level": "3",
-      "title": "B.1 Substantive changes targetted for the 1.3 release"
+      "id": "substantive-changes-targetted-for-the-1-3-release",
+      "level": 3,
+      "title": "Substantive changes targetted for the 1.3 release",
+      "number": "B.1"
     },
     {
       "id": "substantive-changes-since-the-last-public-working-draft",
-      "level": "2",
+      "level": 2,
       "title": "Substantive changes since the last public working draft"
     },
     {
-      "id": "b-2-substantive-changes-since-the-wai-aria-1-1-recommendation",
-      "level": "3",
-      "title": "B.2 Substantive changes since the WAI-ARIA 1.1 Recommendation"
+      "id": "substantive-changes-since-the-wai-aria-1-1-recommendation",
+      "level": 3,
+      "title": "Substantive changes since the WAI-ARIA 1.1 Recommendation",
+      "number": "B.2"
     },
     {
-      "id": "c-acknowledgments",
-      "level": "2",
-      "title": "C. Acknowledgments"
+      "id": "acknowledgements",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "C"
     },
     {
-      "id": "c-1-participants-active-in-the-aria-wg-at-the-time-of-publication",
-      "level": "3",
-      "title": "C.1 Participants active in the ARIA WG at the time of publication"
+      "id": "ack_group",
+      "level": 3,
+      "title": "Participants active in the ARIA WG at the time of publication",
+      "number": "C.1"
     },
     {
-      "id": "c-2-other-aria-contributors-commenters-and-previously-active-participants",
-      "level": "3",
-      "title": "C.2 Other ARIA contributors, commenters, and previously active participants"
+      "id": "ack_others",
+      "level": 3,
+      "title": "Other ARIA contributors, commenters, and previously active participants",
+      "number": "C.2"
     },
     {
-      "id": "c-3-enabling-funders",
-      "level": "3",
-      "title": "C.3 Enabling funders"
+      "id": "ack_funders",
+      "level": 3,
+      "title": "Enabling funders",
+      "number": "C.3"
     },
     {
-      "id": "d-references",
-      "level": "2",
-      "title": "D. References"
+      "id": "references",
+      "level": 2,
+      "title": "References",
+      "number": "D"
     },
     {
-      "id": "d-1-normative-references",
-      "level": "3",
-      "title": "D.1 \n        Normative references"
+      "id": "normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "D.1"
     },
     {
-      "id": "d-2-informative-references",
-      "level": "3",
-      "title": "D.2 \n        Informative references"
+      "id": "informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "D.2"
     }
   ]
 }
