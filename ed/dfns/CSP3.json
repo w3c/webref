@@ -1336,6 +1336,91 @@
       }
     },
     {
+      "id": "initialize-document-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#initialize-document-csp",
+      "linkingText": [
+        "Initialize a Document's CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "initialize-document-csp",
+        "title": "Initialize a Document's CSP list",
+        "number": "4.2.1"
+      }
+    },
+    {
+      "id": "initialize-global-object-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#initialize-global-object-csp",
+      "linkingText": [
+        "Initialize a global object’s CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "initialize-global-object-csp",
+        "title": "Initialize a global object’s CSP list",
+        "number": "4.2.2"
+      }
+    },
+    {
+      "id": "should-block-inline",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-inline",
+      "linkingText": [
+        "Should element’s inline type behavior be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-inline",
+        "title": "Should element’s inline type behavior be blocked by Content Security Policy?",
+        "number": "4.2.4"
+      }
+    },
+    {
+      "id": "should-block-navigation-request",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-navigation-request",
+      "linkingText": [
+        "Should navigation request of type be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-navigation-request",
+        "title": "Should navigation request of type be blocked\n    by Content Security Policy?",
+        "number": "4.2.5"
+      }
+    },
+    {
+      "id": "should-block-navigation-response",
+      "href": "https://w3c.github.io/webappsec-csp/#should-block-navigation-response",
+      "linkingText": [
+        "Should navigation response to navigation request of type in target be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-navigation-response",
+        "title": "Should navigation response to navigation request of type in target be blocked by Content Security Policy?",
+        "number": "4.2.6"
+      }
+    },
+    {
       "id": "can-compile-strings",
       "href": "https://w3c.github.io/webappsec-csp/#can-compile-strings",
       "linkingText": [
@@ -1344,7 +1429,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "can-compile-strings",
@@ -1616,8 +1701,7 @@
       "id": "dom-securitypolicyviolationeventdisposition-enforce",
       "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventdisposition-enforce",
       "linkingText": [
-        "\"enforce\"",
-        "enforce"
+        "\"enforce\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -1636,8 +1720,7 @@
       "id": "dom-securitypolicyviolationeventdisposition-report",
       "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventdisposition-report",
       "linkingText": [
-        "\"report\"",
-        "report"
+        "\"report\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -1653,11 +1736,30 @@
       }
     },
     {
+      "id": "securitypolicyviolationevent",
+      "href": "https://w3c.github.io/webappsec-csp/#securitypolicyviolationevent",
+      "linkingText": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      }
+    },
+    {
       "id": "dom-securitypolicyviolationevent-securitypolicyviolationevent",
       "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-securitypolicyviolationevent",
       "linkingText": [
         "SecurityPolicyViolationEvent(type, eventInitDict)",
-        "SecurityPolicyViolationEvent(type)"
+        "constructor(type, eventInitDict)",
+        "SecurityPolicyViolationEvent(type)",
+        "constructor(type)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -1681,7 +1783,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type, eventInitDict)"
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type, eventInitDict)",
+        "SecurityPolicyViolationEvent/constructor(type, eventInitDict)",
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type)",
+        "SecurityPolicyViolationEvent/constructor(type)"
       ],
       "access": "public",
       "informative": false,
@@ -1700,25 +1805,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type, eventInitDict)"
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type, eventInitDict)",
+        "SecurityPolicyViolationEvent/constructor(type, eventInitDict)",
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type)",
+        "SecurityPolicyViolationEvent/constructor(type)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "violation-events",
-        "title": "Violation DOM Events",
-        "number": "5.1"
-      }
-    },
-    {
-      "id": "securitypolicyviolationevent",
-      "href": "https://w3c.github.io/webappsec-csp/#securitypolicyviolationevent",
-      "linkingText": [
-        "SecurityPolicyViolationEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2581,6 +2672,23 @@
       }
     },
     {
+      "id": "allow-base-for-document",
+      "href": "https://w3c.github.io/webappsec-csp/#allow-base-for-document",
+      "linkingText": [
+        "Is base allowed for document?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "allow-base-for-document",
+        "title": "Is base allowed for document?",
+        "number": "6.2.1.1"
+      }
+    },
+    {
       "id": "plugin-types",
       "href": "https://w3c.github.io/webappsec-csp/#plugin-types",
       "linkingText": [
@@ -2657,7 +2765,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "should-plugin-element-be-blocked-a-priori-by-content-security-policy",
