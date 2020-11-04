@@ -8,12 +8,12 @@
     "https://lists.w3.org/Archives/Public/public-webappsec/": [],
     "https://www.w3.org/Mail/Request": [],
     "https://www.w3.org/2011/webappsec/": [],
-    "https://www.w3.org/Consortium/Patent-Policy-20040205/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/49309/status": [],
-    "https://www.w3.org/2017/Process-20170301/": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
     "https://dom.spec.whatwg.org/": [
       "document",
       "element",
@@ -26,15 +26,14 @@
       "dom-event-composed",
       "dom-event-target",
       "concept-node-document",
-      "dom-document-origin",
       "concept-document"
     ],
     "https://html.spec.whatwg.org/": [
       "worker",
-      "parser-inserted",
       "script",
       "workerglobalscope",
-      "concept-origin",
+      "workletglobalscope",
+      "concept-request-origin",
       "concept-origin-opaque",
       "environment-settings-object",
       "concept-settings-object-origin",
@@ -46,20 +45,16 @@
       "concept-settings-object-global",
       "meta",
       "attr-meta-http-equiv",
-      "attr-meta-http-equiv-content-security-policy",
       "the-link-element",
       "attr-meta-content",
       "run-a-worker",
-      "initialise-the-document-object",
       "prepare-a-script",
       "update-a-style-block",
-      "browsing-context-nested-through",
       "the-base-element",
       "set-the-frozen-base-url",
       "attr-base-href",
       "the-object-element",
       "the-embed-element",
-      "applet",
       "process-a-navigate-fetch",
       "process-a-navigate-response",
       "concept-document-csp-list",
@@ -94,10 +89,10 @@
       "forced-sandboxing-flag-set",
       "ascii-serialisation-of-an-origin",
       "the-form-element",
-      "case-sensitive",
       "concept-origin-scheme",
       "parse-error-duplicate-attribute",
-      "concept-script-parse-error"
+      "parse-errors",
+      "attr-nonce"
     ],
     "https://tc39.github.io/ecma262": [
       "sec-eval-x",
@@ -169,10 +164,6 @@
       "ascii-case-insensitive",
       "javascript-string-convert"
     ],
-    "https://drafts.css-houdini.org/worklets/": [
-      "workletglobalscope",
-      "workletglobalscope-owner-document"
-    ],
     "https://tools.ietf.org/html/rfc5234": [
       "appendix-B.1"
     ],
@@ -199,8 +190,7 @@
       "dom-url-port",
       "default-port",
       "concept-url-host",
-      "concept-ipv6",
-      "percent-decode"
+      "concept-ipv6"
     ],
     "https://tools.ietf.org/html/rfc7231": [
       "section-3"
@@ -209,6 +199,9 @@
     "https://w3c.github.io/ServiceWorker/": [
       "serviceworkerglobalscope",
       "serviceworker"
+    ],
+    "https://www.w3.org/TR/worklets-1/": [
+      "workletglobalscope-owner-document"
     ],
     "https://github.com/tc39/ecma262/issues/938": [],
     "https://w3c.github.io/reporting/": [
@@ -219,14 +212,14 @@
       "group"
     ],
     "https://heycam.github.io/webidl/": [
+      "Exposed",
       "idl-USVString",
       "idl-DOMString",
       "idl-unsigned-short",
-      "idl-unsigned-long",
-      "Exposed"
+      "idl-unsigned-long"
     ],
     "https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/": [],
-    "https://drafts.csswg.org/css-cascade-4/": [
+    "https://drafts.csswg.org/css-cascade-5/": [
       "at-ruledef-import"
     ],
     "https://drafts.csswg.org/cssom-1/": [
@@ -243,7 +236,7 @@
       "valid-mime-type"
     ],
     "https://github.com/whatwg/html/issues/1230": [],
-    "https://w3c.github.io/webappsec-csp/": [
+    "https://www.w3.org/TR/CSP3/": [
       "violation-report"
     ],
     "https://www.w3.org/TR/SRI/": [
@@ -261,8 +254,7 @@
     "https://github.com/cure53/XSSChallengeWiki/wiki/H5SC-Minichallenge-3:-%22Sh*t,-it%27s-CSP!%22": [
       "107-bytes"
     ],
-    "https://www.w3.org/TR/CSP3/": [],
-    "https://www.w3.org/TR/css-cascade-4/": [],
+    "https://www.w3.org/TR/css-cascade-5/": [],
     "https://www.w3.org/TR/cssom-1/": [],
     "https://tc39.github.io/ecma262/": [],
     "https://wicg.github.io/reporting/": [],
@@ -271,10 +263,11 @@
     "https://tools.ietf.org/html/rfc3492": [],
     "https://tools.ietf.org/html/rfc3864": [],
     "https://tools.ietf.org/html/rfc7034": [],
+    "https://httpwg.org/specs/rfc7230.html": [],
+    "https://httpwg.org/specs/rfc7231.html": [],
     "https://tools.ietf.org/html/rfc7762": [],
-    "https://tools.ietf.org/html/rfc8288": [],
+    "https://httpwg.org/specs/rfc8288.html": [],
     "https://www.w3.org/TR/service-workers-1/": [],
-    "https://www.w3.org/TR/worklets-1/": [],
     "https://www.w3.org/TR/appmanifest/": [],
     "https://www.w3.org/TR/beacon/": [],
     "https://www.w3.org/TR/CSP2/": [],
