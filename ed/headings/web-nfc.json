@@ -6,658 +6,780 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "Web NFC"
     },
     {
-      "id": "table-of-contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
-      "id": "x1-conformance",
-      "level": "2",
-      "title": "Conformance"
+      "id": "conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "1"
     },
     {
-      "id": "x2-origin-trial",
-      "level": "2",
-      "title": "Origin Trial"
+      "id": "origin-trial",
+      "level": 2,
+      "title": "Origin Trial",
+      "number": "2"
     },
     {
-      "id": "x3-introduction",
-      "level": "2",
-      "title": "Introduction"
+      "id": "introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "3"
     },
     {
-      "id": "x4-terminology-and-conventions",
-      "level": "2",
-      "title": "Terminology and conventions"
+      "id": "terminology-and-conventions",
+      "level": 2,
+      "title": "Terminology and conventions",
+      "number": "4"
     },
     {
-      "id": "x5-the-nfc-standard",
-      "level": "2",
-      "title": "The NFC Standard"
+      "id": "the-nfc-standard",
+      "level": 2,
+      "title": "The NFC Standard",
+      "number": "5"
     },
     {
-      "id": "x5-1-ndef-compatible-tag-types",
-      "level": "3",
-      "title": "NDEF compatible tag types"
+      "id": "ndef-compatible-tag-types",
+      "level": 3,
+      "title": "NDEF compatible tag types",
+      "number": "5.1"
     },
     {
-      "id": "x5-2-the-ndef-record-and-fields",
-      "level": "3",
-      "title": "The NDEF record and fields"
+      "id": "the-ndef-record-and-fields",
+      "level": 3,
+      "title": "The NDEF record and fields",
+      "number": "5.2"
     },
     {
-      "id": "x5-3-ndef-record-types",
-      "level": "3",
-      "title": "NDEF Record types"
+      "id": "ndef-record-types",
+      "level": 3,
+      "title": "NDEF Record types",
+      "number": "5.3"
     },
     {
-      "id": "x5-3-1-empty-ndef-record-tnf-0",
-      "level": "4",
-      "title": "Empty NDEF record (TNF 0)"
+      "id": "empty-ndef-record-tnf-0",
+      "level": 4,
+      "title": "Empty NDEF record (TNF 0)",
+      "number": "5.3.1"
     },
     {
-      "id": "x5-3-2-well-known-type-records-tnf-1",
-      "level": "4",
-      "title": "Well-known type records (TNF 1)"
+      "id": "well-known-type-records-tnf-1",
+      "level": 4,
+      "title": "Well-known type records (TNF 1)",
+      "number": "5.3.2"
     },
     {
-      "id": "x5-3-2-1-well-known-local-types",
-      "level": "5",
-      "title": "Well-known local types"
+      "id": "well-known-local-types",
+      "level": 5,
+      "title": "Well-known local types",
+      "number": "5.3.2.1"
     },
     {
-      "id": "x5-3-3-well-known-global-types",
-      "level": "4",
-      "title": "Well-known global types"
+      "id": "well-known-global-types",
+      "level": 4,
+      "title": "Well-known global types",
+      "number": "5.3.3"
     },
     {
-      "id": "x5-3-3-1-text-record",
-      "level": "5",
-      "title": "Text record"
+      "id": "text-record",
+      "level": 5,
+      "title": "Text record",
+      "number": "5.3.3.1"
     },
     {
-      "id": "x5-3-3-2-uri-record",
-      "level": "5",
-      "title": "URI record"
+      "id": "uri-record",
+      "level": 5,
+      "title": "URI record",
+      "number": "5.3.3.2"
     },
     {
-      "id": "x5-3-3-3-smart-poster-record",
-      "level": "5",
-      "title": "Smart poster record"
+      "id": "smart-poster-record",
+      "level": 5,
+      "title": "Smart poster record",
+      "number": "5.3.3.3"
     },
     {
-      "id": "x5-3-3-4-signature-records",
-      "level": "5",
-      "title": "Signature records"
+      "id": "signature-records",
+      "level": 5,
+      "title": "Signature records",
+      "number": "5.3.3.4"
     },
     {
-      "id": "x5-3-3-5-handover-records",
-      "level": "5",
-      "title": "Handover records"
+      "id": "handover-records",
+      "level": 5,
+      "title": "Handover records",
+      "number": "5.3.3.5"
     },
     {
-      "id": "x5-3-4-mime-type-records-tnf-2",
-      "level": "4",
-      "title": "MIME type records (TNF 2)"
+      "id": "mime-type-records-tnf-2",
+      "level": 4,
+      "title": "MIME type records (TNF 2)",
+      "number": "5.3.4"
     },
     {
-      "id": "x5-3-5-absolute-url-records-tnf-3",
-      "level": "4",
-      "title": "Absolute-URL records (TNF 3)"
+      "id": "absolute-url-records-tnf-3",
+      "level": 4,
+      "title": "Absolute-URL records (TNF 3)",
+      "number": "5.3.5"
     },
     {
-      "id": "x5-3-6-external-type-records-tnf-4",
-      "level": "4",
-      "title": "External type records (TNF 4)"
+      "id": "external-type-records-tnf-4",
+      "level": 4,
+      "title": "External type records (TNF 4)",
+      "number": "5.3.6"
     },
     {
-      "id": "x5-3-7-unknown-type-records-tnf-5",
-      "level": "4",
-      "title": "Unknown type records (TNF 5)"
+      "id": "unknown-type-records-tnf-5",
+      "level": 4,
+      "title": "Unknown type records (TNF 5)",
+      "number": "5.3.7"
     },
     {
-      "id": "x5-3-8-unchanged-type-records-tnf-6",
-      "level": "4",
-      "title": "Unchanged type records (TNF 6)"
+      "id": "unchanged-type-records-tnf-6",
+      "level": 4,
+      "title": "Unchanged type records (TNF 6)",
+      "number": "5.3.8"
     },
     {
-      "id": "x6-use-cases",
-      "level": "2",
-      "title": "Use Cases"
+      "id": "use-cases",
+      "level": 2,
+      "title": "Use Cases",
+      "number": "6"
     },
     {
-      "id": "x6-1-reading-an-nfc-tag",
-      "level": "3",
-      "title": "Reading an NFC tag"
+      "id": "reading-an-nfc-tag",
+      "level": 3,
+      "title": "Reading an NFC tag",
+      "number": "6.1"
     },
     {
-      "id": "x6-2-writing-to-an-nfc-tag",
-      "level": "3",
-      "title": "Writing to an NFC tag"
+      "id": "writing-to-an-nfc-tag",
+      "level": 3,
+      "title": "Writing to an NFC tag",
+      "number": "6.2"
     },
     {
-      "id": "x6-3-support-for-multiple-nfc-adapters",
-      "level": "3",
-      "title": "Support for multiple NFC adapters"
+      "id": "support-for-multiple-nfc-adapters",
+      "level": 3,
+      "title": "Support for multiple NFC adapters",
+      "number": "6.3"
     },
     {
-      "id": "x7-features",
-      "level": "2",
-      "title": "Features"
+      "id": "features",
+      "level": 2,
+      "title": "Features",
+      "number": "7"
     },
     {
-      "id": "x8-examples",
-      "level": "2",
-      "title": "Examples"
+      "id": "examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "8"
     },
     {
-      "id": "x8-1-feature-support",
-      "level": "3",
-      "title": "Feature support"
+      "id": "feature-support",
+      "level": 3,
+      "title": "Feature support",
+      "number": "8.1"
     },
     {
-      "id": "x8-2-general-information-about-writing-data",
-      "level": "3",
-      "title": "General information about writing data"
+      "id": "general-information-about-writing-data",
+      "level": 3,
+      "title": "General information about writing data",
+      "number": "8.2"
     },
     {
-      "id": "x8-3-write-a-text-string",
-      "level": "3",
-      "title": "Write a text string"
+      "id": "write-a-text-string",
+      "level": 3,
+      "title": "Write a text string",
+      "number": "8.3"
     },
     {
-      "id": "x8-4-write-a-url",
-      "level": "3",
-      "title": "Write a URL"
+      "id": "write-a-url",
+      "level": 3,
+      "title": "Write a URL",
+      "number": "8.4"
     },
     {
-      "id": "x8-5-handling-initial-reads-while-writing",
-      "level": "3",
-      "title": "Handling initial reads while writing"
+      "id": "handling-initial-reads-while-writing",
+      "level": 3,
+      "title": "Handling initial reads while writing",
+      "number": "8.5"
     },
     {
-      "id": "x8-6-scheduling-a-write-with-a-timeout",
-      "level": "3",
-      "title": "Scheduling a write with a timeout"
+      "id": "scheduling-a-write-with-a-timeout",
+      "level": 3,
+      "title": "Scheduling a write with a timeout",
+      "number": "8.6"
     },
     {
-      "id": "x8-7-handle-scanning-errors",
-      "level": "3",
-      "title": "Handle scanning errors"
+      "id": "handle-scanning-errors",
+      "level": 3,
+      "title": "Handle scanning errors",
+      "number": "8.7"
     },
     {
-      "id": "x8-8-read-a-single-tag-once",
-      "level": "3",
-      "title": "Read a single tag, once"
+      "id": "read-a-single-tag-once",
+      "level": 3,
+      "title": "Read a single tag, once",
+      "number": "8.8"
     },
     {
-      "id": "x8-9-read-data-from-tag-and-write-to-empty-ones",
-      "level": "3",
-      "title": "Read data from tag, and write to empty ones"
+      "id": "read-data-from-tag-and-write-to-empty-ones",
+      "level": 3,
+      "title": "Read data from tag, and write to empty ones",
+      "number": "8.9"
     },
     {
-      "id": "x8-10-save-and-restore-game-progress-with-an-nfc-tag",
-      "level": "3",
-      "title": "Save and restore game progress with an NFC tag"
+      "id": "save-and-restore-game-progress-with-an-nfc-tag",
+      "level": 3,
+      "title": "Save and restore game progress with an NFC tag",
+      "number": "8.10"
     },
     {
-      "id": "x8-11-write-and-read-json-serialized-and-deserialized",
-      "level": "3",
-      "title": "Write and read JSON (serialized and deserialized)"
+      "id": "write-and-read-json-serialized-and-deserialized",
+      "level": 3,
+      "title": "Write and read JSON (serialized and deserialized)",
+      "number": "8.11"
     },
     {
-      "id": "x8-12-write-data-and-print-out-existing-data",
-      "level": "3",
-      "title": "Write data and print out existing data"
+      "id": "write-data-and-print-out-existing-data",
+      "level": 3,
+      "title": "Write data and print out existing data",
+      "number": "8.12"
     },
     {
-      "id": "x8-13-stop-listening-to-ndef-messages",
-      "level": "3",
-      "title": "Stop listening to NDEF messages"
+      "id": "stop-listening-to-ndef-messages",
+      "level": 3,
+      "title": "Stop listening to NDEF messages",
+      "number": "8.13"
     },
     {
-      "id": "x8-14-write-a-smart-poster-message",
-      "level": "3",
-      "title": "Write a smart poster message"
+      "id": "write-a-smart-poster-message",
+      "level": 3,
+      "title": "Write a smart poster message",
+      "number": "8.14"
     },
     {
-      "id": "x8-15-read-an-external-record-with-an-ndef-message-as-payload",
-      "level": "3",
-      "title": "Read an external record with an NDEF message as payload"
+      "id": "read-an-external-record-with-an-ndef-message-as-payload",
+      "level": 3,
+      "title": "Read an external record with an NDEF message as payload",
+      "number": "8.15"
     },
     {
-      "id": "x8-16-write-an-external-record-with-an-ndef-message-as-payload",
-      "level": "3",
-      "title": "Write an external record with an NDEF message as payload"
+      "id": "write-an-external-record-with-an-ndef-message-as-payload",
+      "level": 3,
+      "title": "Write an external record with an NDEF message as payload",
+      "number": "8.16"
     },
     {
-      "id": "x8-17-write-and-read-unknown-records-inside-an-external-record",
-      "level": "3",
-      "title": "Write and read unknown records inside an external record"
+      "id": "write-and-read-unknown-records-inside-an-external-record",
+      "level": 3,
+      "title": "Write and read unknown records inside an external record",
+      "number": "8.17"
     },
     {
-      "id": "x9-data-representation",
-      "level": "2",
-      "title": "Data Representation"
+      "id": "data-representation",
+      "level": 2,
+      "title": "Data Representation",
+      "number": "9"
     },
     {
-      "id": "x9-1-the-ndefmessage-interface",
-      "level": "3",
-      "title": "The NDEFMessage interface"
+      "id": "the-ndefmessage-interface",
+      "level": 3,
+      "title": "The NDEFMessage interface",
+      "number": "9.1"
     },
     {
-      "id": "x9-2-the-ndefrecord-interface",
-      "level": "3",
-      "title": "The NDEFRecord interface"
+      "id": "the-ndefrecord-interface",
+      "level": 3,
+      "title": "The NDEFRecord interface",
+      "number": "9.2"
     },
     {
-      "id": "x9-3-the-record-type-string",
-      "level": "3",
-      "title": "The record type string"
+      "id": "the-record-type-string",
+      "level": 3,
+      "title": "The record type string",
+      "number": "9.3"
     },
     {
-      "id": "x9-4-data-mapping",
-      "level": "3",
-      "title": "Data mapping"
+      "id": "data-mapping",
+      "level": 3,
+      "title": "Data mapping",
+      "number": "9.4"
     },
     {
-      "id": "x10-the-ndefreader-and-ndefwriter-objects",
-      "level": "2",
-      "title": "The NDEFReader and NDEFWriter objects"
+      "id": "the-ndefreader-and-ndefwriter-objects",
+      "level": 2,
+      "title": "10. The NDEFReader and NDEFWriter objects"
     },
     {
-      "id": "x10-1-nfc-state-associated-with-the-settings-object",
-      "level": "3",
-      "title": "NFC state associated with the settings object"
+      "id": "nfc-state-associated-with-the-settings-object",
+      "level": 3,
+      "title": "NFC state associated with the settings object",
+      "number": "10.1"
     },
     {
-      "id": "x10-2-handling-nfc-adapters",
-      "level": "3",
-      "title": "Handling NFC adapters"
+      "id": "handling-nfc-adapters",
+      "level": 3,
+      "title": "Handling NFC adapters",
+      "number": "10.2"
     },
     {
-      "id": "x10-3-obtaining-permission",
-      "level": "3",
-      "title": "Obtaining permission"
+      "id": "obtaining-permission",
+      "level": 3,
+      "title": "Obtaining permission",
+      "number": "10.3"
     },
     {
-      "id": "x10-4-handling-visibility-change",
-      "level": "3",
-      "title": "Handling visibility change"
+      "id": "handling-visibility-change",
+      "level": 3,
+      "title": "Handling visibility change",
+      "number": "10.4"
     },
     {
-      "id": "x10-5-aborting-pending-write-operation",
-      "level": "3",
-      "title": "Aborting pending write operation"
+      "id": "aborting-pending-write-operation",
+      "level": 3,
+      "title": "Aborting pending write operation",
+      "number": "10.5"
     },
     {
-      "id": "x10-6-releasing-nfc",
-      "level": "3",
-      "title": "Releasing NFC"
+      "id": "releasing-nfc",
+      "level": 3,
+      "title": "Releasing NFC",
+      "number": "10.6"
     },
     {
-      "id": "x10-7-the-ndefwriteoptions-dictionary",
-      "level": "3",
-      "title": "The NDEFWriteOptions dictionary"
+      "id": "the-ndefwriteoptions-dictionary",
+      "level": 3,
+      "title": "The NDEFWriteOptions dictionary",
+      "number": "10.7"
     },
     {
-      "id": "x10-8-the-ndefscanoptions-dictionary",
-      "level": "3",
-      "title": "The NDEFScanOptions dictionary"
+      "id": "the-ndefscanoptions-dictionary",
+      "level": 3,
+      "title": "The NDEFScanOptions dictionary",
+      "number": "10.8"
     },
     {
-      "id": "x10-9-writing-content",
-      "level": "3",
-      "title": "Writing content"
+      "id": "writing-content",
+      "level": 3,
+      "title": "Writing content",
+      "number": "10.9"
     },
     {
-      "id": "x10-9-1-the-write-method",
-      "level": "4",
-      "title": "The write() method"
+      "id": "the-write-method",
+      "level": 4,
+      "title": "The write() method",
+      "number": "10.9.1"
     },
     {
-      "id": "x10-10-creating-ndef-message",
-      "level": "3",
-      "title": "Creating NDEF message"
+      "id": "creating-ndef-message",
+      "level": 3,
+      "title": "Creating NDEF message",
+      "number": "10.10"
     },
     {
-      "id": "x10-10-1-check-created-records",
-      "level": "4",
-      "title": "Check created records"
+      "id": "check-created-records",
+      "level": 4,
+      "title": "Check created records",
+      "number": "10.10.1"
     },
     {
-      "id": "x10-10-2-creating-ndef-record",
-      "level": "4",
-      "title": "Creating NDEF record"
+      "id": "creating-ndef-record",
+      "level": 4,
+      "title": "Creating NDEF record",
+      "number": "10.10.2"
     },
     {
-      "id": "x10-10-3-validating-external-type",
-      "level": "4",
-      "title": "Validating external type"
+      "id": "validating-external-type",
+      "level": 4,
+      "title": "Validating external type",
+      "number": "10.10.3"
     },
     {
-      "id": "x10-10-4-validating-local-type",
-      "level": "4",
-      "title": "Validating local type"
+      "id": "validating-local-type",
+      "level": 4,
+      "title": "Validating local type",
+      "number": "10.10.4"
     },
     {
-      "id": "x10-10-5-mapping-empty-record-to-ndef",
-      "level": "4",
-      "title": "Mapping empty record to NDEF"
+      "id": "mapping-empty-record-to-ndef",
+      "level": 4,
+      "title": "Mapping empty record to NDEF",
+      "number": "10.10.5"
     },
     {
-      "id": "x10-10-6-mapping-string-to-ndef",
-      "level": "4",
-      "title": "Mapping string to NDEF"
+      "id": "mapping-string-to-ndef",
+      "level": 4,
+      "title": "Mapping string to NDEF",
+      "number": "10.10.6"
     },
     {
-      "id": "x10-10-7-mapping-url-to-ndef",
-      "level": "4",
-      "title": "Mapping URL to NDEF"
+      "id": "mapping-url-to-ndef",
+      "level": 4,
+      "title": "Mapping URL to NDEF",
+      "number": "10.10.7"
     },
     {
-      "id": "x10-10-8-mapping-binary-data-to-ndef",
-      "level": "4",
-      "title": "Mapping binary data to NDEF"
+      "id": "mapping-binary-data-to-ndef",
+      "level": 4,
+      "title": "Mapping binary data to NDEF",
+      "number": "10.10.8"
     },
     {
-      "id": "x10-10-9-mapping-external-data-to-ndef",
-      "level": "4",
-      "title": "Mapping external data to NDEF"
+      "id": "mapping-external-data-to-ndef",
+      "level": 4,
+      "title": "Mapping external data to NDEF",
+      "number": "10.10.9"
     },
     {
-      "id": "x10-10-10-mapping-local-type-to-ndef",
-      "level": "4",
-      "title": "Mapping local type to NDEF"
+      "id": "mapping-local-type-to-ndef",
+      "level": 4,
+      "title": "Mapping local type to NDEF",
+      "number": "10.10.10"
     },
     {
-      "id": "x10-10-11-mapping-smart-poster-to-ndef",
-      "level": "4",
-      "title": "Mapping smart poster to NDEF"
+      "id": "mapping-smart-poster-to-ndef",
+      "level": 4,
+      "title": "Mapping smart poster to NDEF",
+      "number": "10.10.11"
     },
     {
-      "id": "x10-10-12-mapping-absolute-url-to-ndef",
-      "level": "4",
-      "title": "Mapping absolute-URL to NDEF"
+      "id": "mapping-absolute-url-to-ndef",
+      "level": 4,
+      "title": "Mapping absolute-URL to NDEF",
+      "number": "10.10.12"
     },
     {
-      "id": "x10-11-listening-for-content",
-      "level": "3",
-      "title": "Listening for content"
+      "id": "listening-for-content",
+      "level": 3,
+      "title": "Listening for content",
+      "number": "10.11"
     },
     {
-      "id": "x10-11-1-the-scan-method",
-      "level": "4",
-      "title": "The scan() method"
+      "id": "the-scan-method",
+      "level": 4,
+      "title": "The scan() method",
+      "number": "10.11.1"
     },
     {
-      "id": "x10-11-2-the-nfc-reading-algorithm",
-      "level": "4",
-      "title": "The NFC reading algorithm"
+      "id": "the-nfc-reading-algorithm",
+      "level": 4,
+      "title": "The NFC reading algorithm",
+      "number": "10.11.2"
     },
     {
-      "id": "x10-11-3-dispatching-nfc-content",
-      "level": "4",
-      "title": "Dispatching NFC content"
+      "id": "dispatching-nfc-content",
+      "level": 4,
+      "title": "Dispatching NFC content",
+      "number": "10.11.3"
     },
     {
-      "id": "x10-12-parsing-content",
-      "level": "3",
-      "title": "Parsing content"
+      "id": "steps-receiving",
+      "level": 3,
+      "title": "Parsing content",
+      "number": "10.12"
     },
     {
-      "id": "x10-12-1-parsing-records-from-bytes",
-      "level": "4",
-      "title": "Parsing records from bytes"
+      "id": "parsing-records-from-bytes",
+      "level": 4,
+      "title": "Parsing records from bytes",
+      "number": "10.12.1"
     },
     {
-      "id": "x10-12-2-check-parsed-records",
-      "level": "4",
-      "title": "Check parsed records"
+      "id": "check-parsed-records",
+      "level": 4,
+      "title": "Check parsed records",
+      "number": "10.12.2"
     },
     {
-      "id": "x10-12-3-parsing-ndef-records",
-      "level": "4",
-      "title": "Parsing NDEF records"
+      "id": "parsing-ndef-records",
+      "level": 4,
+      "title": "Parsing NDEF records",
+      "number": "10.12.3"
     },
     {
-      "id": "x10-12-4-parsing-ndef-well-known-t-records",
-      "level": "4",
-      "title": "Parsing NDEF well-known T records"
+      "id": "parsing-ndef-well-known-t-records",
+      "level": 4,
+      "title": "Parsing NDEF well-known T records",
+      "number": "10.12.4"
     },
     {
-      "id": "x10-12-5-parsing-ndef-well-known-u-records",
-      "level": "4",
-      "title": "Parsing NDEF well-known U records"
+      "id": "parsing-ndef-well-known-u-records",
+      "level": 4,
+      "title": "Parsing NDEF well-known U records",
+      "number": "10.12.5"
     },
     {
-      "id": "x10-12-6-parsing-ndef-well-known-sp-records",
-      "level": "4",
-      "title": "Parsing NDEF well-known Sp records"
+      "id": "parsing-ndef-well-known-sp-records",
+      "level": 4,
+      "title": "Parsing NDEF well-known Sp records",
+      "number": "10.12.6"
     },
     {
-      "id": "x10-12-7-parsing-local-type-records",
-      "level": "4",
-      "title": "Parsing local type records"
+      "id": "parsing-local-type-records",
+      "level": 4,
+      "title": "Parsing local type records",
+      "number": "10.12.7"
     },
     {
-      "id": "x10-12-8-parsing-ndef-mime-type-records",
-      "level": "4",
-      "title": "Parsing NDEF MIME type records"
+      "id": "parsing-ndef-mime-type-records",
+      "level": 4,
+      "title": "Parsing NDEF MIME type records",
+      "number": "10.12.8"
     },
     {
-      "id": "x10-12-9-parsing-ndef-absolute-url-records",
-      "level": "4",
-      "title": "Parsing NDEF absolute-URL records"
+      "id": "parsing-ndef-absolute-url-records",
+      "level": 4,
+      "title": "Parsing NDEF absolute-URL records",
+      "number": "10.12.9"
     },
     {
-      "id": "x10-12-10-parsing-ndef-external-type-records",
-      "level": "4",
-      "title": "Parsing NDEF external type records"
+      "id": "parsing-ndef-external-type-records",
+      "level": 4,
+      "title": "Parsing NDEF external type records",
+      "number": "10.12.10"
     },
     {
-      "id": "x10-12-11-parsing-ndef-unknown-type-records",
-      "level": "4",
-      "title": "Parsing NDEF unknown type records"
+      "id": "parsing-ndef-unknown-type-records",
+      "level": 4,
+      "title": "Parsing NDEF unknown type records",
+      "number": "10.12.11"
     },
     {
-      "id": "blocklist",
-      "level": "2",
-      "title": "The Blocklist"
+      "id": "the-blocklist",
+      "level": 2,
+      "title": "11. The Blocklist"
     },
     {
-      "id": "security",
-      "level": "2",
-      "title": "Security and Privacy"
+      "id": "security-and-privacy",
+      "level": 2,
+      "title": "12. Security and Privacy"
     },
     {
-      "id": "x12-1-chain-of-trust",
-      "level": "3",
-      "title": "Chain of trust"
+      "id": "chain-of-trust",
+      "level": 3,
+      "title": "Chain of trust",
+      "number": "12.1"
     },
     {
-      "id": "x12-2-privacy-implications-and-implementation-considerations",
-      "level": "3",
-      "title": "Privacy implications and implementation considerations"
+      "id": "privacy-implications-and-implementation-considerations",
+      "level": 3,
+      "title": "Privacy implications and implementation considerations",
+      "number": "12.2"
     },
     {
-      "id": "x12-2-1-reading-and-writing-during-a-scan",
-      "level": "4",
-      "title": "Reading and writing during a scan"
+      "id": "reading-and-writing-during-a-scan",
+      "level": 4,
+      "title": "Reading and writing during a scan",
+      "number": "12.2.1"
     },
     {
-      "id": "x12-2-2-reading-and-writing-during-a-scan",
-      "level": "4",
-      "title": "Reading and writing during a scan"
+      "id": "reading-and-writing-during-a-scan-0",
+      "level": 4,
+      "title": "Reading and writing during a scan",
+      "number": "12.2.2"
     },
     {
-      "id": "x12-2-3-overwriting-existing-data",
-      "level": "4",
-      "title": "Overwriting existing data"
+      "id": "overwriting-existing-data",
+      "level": 4,
+      "title": "Overwriting existing data",
+      "number": "12.2.3"
     },
     {
-      "id": "x12-3-things-that-users-should-be-made-aware-of-when-using-nfc",
-      "level": "3",
-      "title": "Things that users should be made aware of when using NFC"
+      "id": "things-that-users-should-be-made-aware-of-when-using-nfc",
+      "level": 3,
+      "title": "Things that users should be made aware of when using NFC",
+      "number": "12.3"
     },
     {
       "id": "data-that-is-read-is-shared-with-site",
-      "level": "4",
+      "level": 4,
       "title": "Data that is read is shared with site"
     },
     {
       "id": "a-site-may-modify-and-overwrite-data-of-tags-that-are-not-made-read-only",
-      "level": "4",
+      "level": 4,
       "title": "A site may modify and overwrite data of tags that are not made read-only"
     },
     {
       "id": "reading-a-fixed-e-g-mounted-tag-may-expose-reading-location",
-      "level": "4",
+      "level": 4,
       "title": "Reading a fixed (e.g. mounted) tag may expose reading location"
     },
     {
       "id": "multiple-tags-may-be-within-the-reading-field-at-the-same-time",
-      "level": "4",
+      "level": 4,
       "title": "Multiple tags may be within the reading field at the same time"
     },
     {
-      "id": "x12-4-assets",
-      "level": "3",
-      "title": "Assets"
+      "id": "assets",
+      "level": 3,
+      "title": "Assets",
+      "number": "12.4"
     },
     {
-      "id": "x12-5-attacker-model",
-      "level": "3",
-      "title": "Attacker model"
+      "id": "attacker-model",
+      "level": 3,
+      "title": "Attacker model",
+      "number": "12.5"
     },
     {
-      "id": "x12-6-threats",
-      "level": "3",
-      "title": "Threats"
+      "id": "threats",
+      "level": 3,
+      "title": "Threats",
+      "number": "12.6"
     },
     {
-      "id": "x12-6-1-fingerprinting-and-data-collection",
-      "level": "4",
-      "title": "Fingerprinting and data collection"
+      "id": "fingerprinting-and-data-collection",
+      "level": 4,
+      "title": "Fingerprinting and data collection",
+      "number": "12.6.1"
     },
     {
-      "id": "x12-6-2-nfc-tag-modification",
-      "level": "4",
-      "title": "NFC tag modification"
+      "id": "nfc-tag-modification",
+      "level": 4,
+      "title": "NFC tag modification",
+      "number": "12.6.2"
     },
     {
-      "id": "x12-6-3-ndef-record-modification-in-transit",
-      "level": "4",
-      "title": "NDEF record modification in-transit"
+      "id": "ndef-record-modification-in-transit",
+      "level": 4,
+      "title": "NDEF record modification in-transit",
+      "number": "12.6.3"
     },
     {
-      "id": "x12-6-4-ndef-record-payload-disclosure",
-      "level": "4",
-      "title": "NDEF record payload disclosure"
+      "id": "ndef-record-payload-disclosure",
+      "level": 4,
+      "title": "NDEF record payload disclosure",
+      "number": "12.6.4"
     },
     {
-      "id": "x12-6-5-active-attack-via-malicious-nfc-tag",
-      "level": "4",
-      "title": "Active attack via malicious NFC tag"
+      "id": "active-attack-via-malicious-nfc-tag",
+      "level": 4,
+      "title": "Active attack via malicious NFC tag",
+      "number": "12.6.5"
     },
     {
-      "id": "x12-7-security-mechanisms-for-implementations",
-      "level": "3",
-      "title": "Security mechanisms for implementations"
+      "id": "security-mechanisms-for-implementations",
+      "level": 3,
+      "title": "Security mechanisms for implementations",
+      "number": "12.7"
     },
     {
-      "id": "x12-7-1-obtaining-permission",
-      "level": "4",
-      "title": "Obtaining permission"
+      "id": "obtaining-permission-0",
+      "level": 4,
+      "title": "Obtaining permission",
+      "number": "12.7.1"
     },
     {
-      "id": "x12-7-2-warning-user-during-nfc-operations",
-      "level": "4",
-      "title": "Warning user during NFC operations"
+      "id": "warning-user-during-nfc-operations",
+      "level": 4,
+      "title": "Warning user during NFC operations",
+      "number": "12.7.2"
     },
     {
-      "id": "x12-8-security-mechanisms-for-applications",
-      "level": "3",
-      "title": "Security mechanisms for applications"
+      "id": "security-mechanisms-for-applications",
+      "level": 3,
+      "title": "Security mechanisms for applications",
+      "number": "12.8"
     },
     {
-      "id": "x12-8-1-encrypting-nfc-content",
-      "level": "4",
-      "title": "Encrypting NFC content"
+      "id": "encrypting-nfc-content",
+      "level": 4,
+      "title": "Encrypting NFC content",
+      "number": "12.8.1"
     },
     {
-      "id": "x12-8-2-signing-ndef-records",
-      "level": "4",
-      "title": "Signing NDEF records"
+      "id": "signing-ndef-records",
+      "level": 4,
+      "title": "Signing NDEF records",
+      "number": "12.8.2"
     },
     {
-      "id": "x12-9-security-policies",
-      "level": "3",
-      "title": "Security policies"
+      "id": "security-policies",
+      "level": 3,
+      "title": "Security policies",
+      "number": "12.9"
     },
     {
-      "id": "x12-9-1-secure-context",
-      "level": "4",
-      "title": "Secure Context"
+      "id": "secure-context",
+      "level": 4,
+      "title": "Secure Context",
+      "number": "12.9.1"
     },
     {
-      "id": "x12-9-2-visible-document",
-      "level": "4",
-      "title": "Visible document"
+      "id": "visible-document",
+      "level": 4,
+      "title": "Visible document",
+      "number": "12.9.2"
     },
     {
-      "id": "x12-9-3-permissions-controls",
-      "level": "4",
-      "title": "Permissions controls"
+      "id": "permissions-controls",
+      "level": 4,
+      "title": "Permissions controls",
+      "number": "12.9.3"
     },
     {
-      "id": "x12-9-4-blocklist",
-      "level": "4",
-      "title": "Blocklist"
+      "id": "blocklist-0",
+      "level": 4,
+      "title": "Blocklist",
+      "number": "12.9.4"
     },
     {
-      "id": "x12-9-5-warn-about-risk-of-physical-location-leak",
-      "level": "4",
-      "title": "Warn about risk of physical location leak"
+      "id": "warn-about-risk-of-physical-location-leak",
+      "level": 4,
+      "title": "Warn about risk of physical location leak",
+      "number": "12.9.5"
     },
     {
-      "id": "x12-9-6-restrict-automatic-handling",
-      "level": "4",
-      "title": "Restrict automatic handling"
+      "id": "restrict-automatic-handling",
+      "level": 4,
+      "title": "Restrict automatic handling",
+      "number": "12.9.6"
     },
     {
-      "id": "x12-9-7-signing-nfc-content",
-      "level": "4",
-      "title": "Signing NFC content"
+      "id": "signing-nfc-content",
+      "level": 4,
+      "title": "Signing NFC content",
+      "number": "12.9.7"
     },
     {
-      "id": "a-idl-index",
-      "level": "2",
-      "title": "A. IDL Index"
+      "id": "idl-index",
+      "level": 2,
+      "title": "IDL Index",
+      "number": "A"
     },
     {
-      "id": "b-acknowledgments",
-      "level": "2",
-      "title": "B. Acknowledgments"
+      "id": "acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "B"
     },
     {
-      "id": "c-references",
-      "level": "2",
-      "title": "C. References"
+      "id": "references",
+      "level": 2,
+      "title": "References",
+      "number": "C"
     },
     {
-      "id": "c-1-normative-references",
-      "level": "3",
-      "title": "C.1 Normative references"
+      "id": "normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "C.1"
     },
     {
-      "id": "c-2-informative-references",
-      "level": "3",
-      "title": "C.2 Informative references"
+      "id": "informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "C.2"
     }
   ]
 }

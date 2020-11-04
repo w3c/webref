@@ -6,1177 +6,1397 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "Web IDL"
     },
     {
       "id": "subtitle",
-      "level": "2",
+      "level": 2,
       "title": "Editor’s Draft, 15 October 2020"
     },
     {
       "id": "abstract",
-      "level": "2",
+      "level": 2,
       "title": "Abstract"
     },
     {
       "id": "status",
-      "level": "2",
+      "level": 2,
       "title": "Status of this document"
     },
     {
-      "id": "contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "introduction",
-      "level": "2",
-      "title": "Introduction"
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
       "id": "idl",
-      "level": "2",
-      "title": "Interface definition language"
+      "level": 2,
+      "title": "Interface definition language",
+      "number": "2"
     },
     {
       "id": "idl-names",
-      "level": "3",
-      "title": "Names"
+      "level": 3,
+      "title": "Names",
+      "number": "2.1"
     },
     {
       "id": "idl-interfaces",
-      "level": "3",
-      "title": "Interfaces"
+      "level": 3,
+      "title": "Interfaces",
+      "number": "2.2"
     },
     {
       "id": "idl-interface-mixins",
-      "level": "3",
-      "title": "Interface mixins"
+      "level": 3,
+      "title": "Interface mixins",
+      "number": "2.3"
     },
     {
       "id": "using-mixins-and-partials",
-      "level": "4",
-      "title": "Using mixins and partials"
+      "level": 4,
+      "title": "Using mixins and partials",
+      "number": "2.3.1"
     },
     {
       "id": "idl-callback-interfaces",
-      "level": "3",
-      "title": "Callback interfaces"
+      "level": 3,
+      "title": "Callback interfaces",
+      "number": "2.4"
     },
     {
       "id": "idl-members",
-      "level": "3",
-      "title": "Members"
+      "level": 3,
+      "title": "Members",
+      "number": "2.5"
     },
     {
       "id": "idl-constants",
-      "level": "4",
-      "title": "Constants"
+      "level": 4,
+      "title": "Constants",
+      "number": "2.5.1"
     },
     {
       "id": "idl-attributes",
-      "level": "4",
-      "title": "Attributes"
+      "level": 4,
+      "title": "Attributes",
+      "number": "2.5.2"
     },
     {
       "id": "idl-operations",
-      "level": "4",
-      "title": "Operations"
+      "level": 4,
+      "title": "Operations",
+      "number": "2.5.3"
     },
     {
       "id": "idl-tojson-operation",
-      "level": "5",
-      "title": "toJSON"
+      "level": 5,
+      "title": "toJSON",
+      "number": "2.5.3.1"
     },
     {
       "id": "idl-constructors",
-      "level": "4",
-      "title": "Constructor operations"
+      "level": 4,
+      "title": "Constructor operations",
+      "number": "2.5.4"
     },
     {
       "id": "idl-special-operations",
-      "level": "4",
-      "title": "Special operations"
+      "level": 4,
+      "title": "Special operations",
+      "number": "2.5.5"
     },
     {
       "id": "idl-stringifiers",
-      "level": "5",
-      "title": "Stringifiers"
+      "level": 5,
+      "title": "Stringifiers",
+      "number": "2.5.5.1"
     },
     {
       "id": "idl-indexed-properties",
-      "level": "5",
-      "title": "Indexed properties"
+      "level": 5,
+      "title": "Indexed properties",
+      "number": "2.5.5.2"
     },
     {
       "id": "idl-named-properties",
-      "level": "5",
-      "title": "Named properties"
+      "level": 5,
+      "title": "Named properties",
+      "number": "2.5.5.3"
     },
     {
       "id": "idl-static-attributes-and-operations",
-      "level": "4",
-      "title": "Static attributes and operations"
+      "level": 4,
+      "title": "Static attributes and operations",
+      "number": "2.5.6"
     },
     {
       "id": "idl-overloading",
-      "level": "4",
-      "title": "Overloading"
+      "level": 4,
+      "title": "Overloading",
+      "number": "2.5.7"
     },
     {
       "id": "idl-overloading-vs-union",
-      "level": "5",
-      "title": "Overloading vs. union types"
+      "level": 5,
+      "title": "Overloading vs. union types",
+      "number": "2.5.7.1"
     },
     {
       "id": "idl-iterable",
-      "level": "4",
-      "title": "Iterable declarations"
+      "level": 4,
+      "title": "Iterable declarations",
+      "number": "2.5.8"
     },
     {
       "id": "idl-async-iterable",
-      "level": "4",
-      "title": "Asynchronously iterable declarations"
+      "level": 4,
+      "title": "Asynchronously iterable declarations",
+      "number": "2.5.9"
     },
     {
       "id": "idl-maplike",
-      "level": "4",
-      "title": "Maplike declarations"
+      "level": 4,
+      "title": "Maplike declarations",
+      "number": "2.5.10"
     },
     {
       "id": "idl-setlike",
-      "level": "4",
-      "title": "Setlike declarations"
+      "level": 4,
+      "title": "Setlike declarations",
+      "number": "2.5.11"
     },
     {
       "id": "idl-namespaces",
-      "level": "3",
-      "title": "Namespaces"
+      "level": 3,
+      "title": "Namespaces",
+      "number": "2.6"
     },
     {
       "id": "idl-dictionaries",
-      "level": "3",
-      "title": "Dictionaries"
+      "level": 3,
+      "title": "Dictionaries",
+      "number": "2.7"
     },
     {
       "id": "idl-exceptions",
-      "level": "3",
-      "title": "Exceptions"
+      "level": 3,
+      "title": "Exceptions",
+      "number": "2.8"
     },
     {
       "id": "idl-DOMException-error-names",
-      "level": "4",
-      "title": "Error names"
+      "level": 4,
+      "title": "Error names",
+      "number": "2.8.1"
     },
     {
       "id": "idl-enums",
-      "level": "3",
-      "title": "Enumerations"
+      "level": 3,
+      "title": "Enumerations",
+      "number": "2.9"
     },
     {
       "id": "idl-callback-functions",
-      "level": "3",
-      "title": "Callback functions"
+      "level": 3,
+      "title": "Callback functions",
+      "number": "2.10"
     },
     {
       "id": "idl-typedefs",
-      "level": "3",
-      "title": "Typedefs"
+      "level": 3,
+      "title": "Typedefs",
+      "number": "2.11"
     },
     {
       "id": "idl-objects",
-      "level": "3",
-      "title": "Objects implementing interfaces"
+      "level": 3,
+      "title": "Objects implementing interfaces",
+      "number": "2.12"
     },
     {
       "id": "idl-types",
-      "level": "3",
-      "title": "Types"
+      "level": 3,
+      "title": "Types",
+      "number": "2.13"
     },
     {
       "id": "idl-any",
-      "level": "4",
-      "title": "any"
+      "level": 4,
+      "title": "any",
+      "number": "2.13.1"
     },
     {
       "id": "idl-undefined",
-      "level": "4",
-      "title": "undefined"
+      "level": 4,
+      "title": "undefined",
+      "number": "2.13.2"
     },
     {
       "id": "idl-boolean",
-      "level": "4",
-      "title": "boolean"
+      "level": 4,
+      "title": "boolean",
+      "number": "2.13.3"
     },
     {
       "id": "idl-byte",
-      "level": "4",
-      "title": "byte"
+      "level": 4,
+      "title": "byte",
+      "number": "2.13.4"
     },
     {
       "id": "idl-octet",
-      "level": "4",
-      "title": "octet"
+      "level": 4,
+      "title": "octet",
+      "number": "2.13.5"
     },
     {
       "id": "idl-short",
-      "level": "4",
-      "title": "short"
+      "level": 4,
+      "title": "short",
+      "number": "2.13.6"
     },
     {
       "id": "idl-unsigned-short",
-      "level": "4",
-      "title": "unsigned short"
+      "level": 4,
+      "title": "unsigned short",
+      "number": "2.13.7"
     },
     {
       "id": "idl-long",
-      "level": "4",
-      "title": "long"
+      "level": 4,
+      "title": "long",
+      "number": "2.13.8"
     },
     {
       "id": "idl-unsigned-long",
-      "level": "4",
-      "title": "unsigned long"
+      "level": 4,
+      "title": "unsigned long",
+      "number": "2.13.9"
     },
     {
       "id": "idl-long-long",
-      "level": "4",
-      "title": "long long"
+      "level": 4,
+      "title": "long long",
+      "number": "2.13.10"
     },
     {
       "id": "idl-unsigned-long-long",
-      "level": "4",
-      "title": "unsigned long long"
+      "level": 4,
+      "title": "unsigned long long",
+      "number": "2.13.11"
     },
     {
       "id": "idl-float",
-      "level": "4",
-      "title": "float"
+      "level": 4,
+      "title": "float",
+      "number": "2.13.12"
     },
     {
       "id": "idl-unrestricted-float",
-      "level": "4",
-      "title": "unrestricted float"
+      "level": 4,
+      "title": "unrestricted float",
+      "number": "2.13.13"
     },
     {
       "id": "idl-double",
-      "level": "4",
-      "title": "double"
+      "level": 4,
+      "title": "double",
+      "number": "2.13.14"
     },
     {
       "id": "idl-unrestricted-double",
-      "level": "4",
-      "title": "unrestricted double"
+      "level": 4,
+      "title": "unrestricted double",
+      "number": "2.13.15"
     },
     {
       "id": "idl-DOMString",
-      "level": "4",
-      "title": "DOMString"
+      "level": 4,
+      "title": "DOMString",
+      "number": "2.13.16"
     },
     {
       "id": "idl-ByteString",
-      "level": "4",
-      "title": "ByteString"
+      "level": 4,
+      "title": "ByteString",
+      "number": "2.13.17"
     },
     {
       "id": "idl-USVString",
-      "level": "4",
-      "title": "USVString"
+      "level": 4,
+      "title": "USVString",
+      "number": "2.13.18"
     },
     {
       "id": "idl-object",
-      "level": "4",
-      "title": "object"
+      "level": 4,
+      "title": "object",
+      "number": "2.13.19"
     },
     {
       "id": "idl-symbol",
-      "level": "4",
-      "title": "symbol"
+      "level": 4,
+      "title": "symbol",
+      "number": "2.13.20"
     },
     {
       "id": "idl-interface",
-      "level": "4",
-      "title": "Interface types"
+      "level": 4,
+      "title": "Interface types",
+      "number": "2.13.21"
     },
     {
       "id": "idl-callback-interface",
-      "level": "4",
-      "title": "Callback interface types"
+      "level": 4,
+      "title": "Callback interface types",
+      "number": "2.13.22"
     },
     {
       "id": "idl-dictionary",
-      "level": "4",
-      "title": "Dictionary types"
+      "level": 4,
+      "title": "Dictionary types",
+      "number": "2.13.23"
     },
     {
       "id": "idl-enumeration",
-      "level": "4",
-      "title": "Enumeration types"
+      "level": 4,
+      "title": "Enumeration types",
+      "number": "2.13.24"
     },
     {
       "id": "idl-callback-function",
-      "level": "4",
-      "title": "Callback function types"
+      "level": 4,
+      "title": "Callback function types",
+      "number": "2.13.25"
     },
     {
       "id": "idl-nullable-type",
-      "level": "4",
-      "title": "Nullable types — T?"
+      "level": 4,
+      "title": "Nullable types — T?",
+      "number": "2.13.26"
     },
     {
       "id": "idl-sequence",
-      "level": "4",
-      "title": "Sequence types — sequence<T>"
+      "level": 4,
+      "title": "Sequence types — sequence<T>",
+      "number": "2.13.27"
     },
     {
       "id": "idl-record",
-      "level": "4",
-      "title": "Record types — record<K, V>"
+      "level": 4,
+      "title": "Record types — record<K, V>",
+      "number": "2.13.28"
     },
     {
       "id": "idl-promise",
-      "level": "4",
-      "title": "Promise types — Promise<T>"
+      "level": 4,
+      "title": "Promise types — Promise<T>",
+      "number": "2.13.29"
     },
     {
       "id": "idl-union",
-      "level": "4",
-      "title": "Union types"
+      "level": 4,
+      "title": "Union types",
+      "number": "2.13.30"
     },
     {
       "id": "idl-annotated-types",
-      "level": "4",
-      "title": "Annotated types"
+      "level": 4,
+      "title": "Annotated types",
+      "number": "2.13.31"
     },
     {
       "id": "idl-buffer-source-types",
-      "level": "4",
-      "title": "Buffer source types"
+      "level": 4,
+      "title": "Buffer source types",
+      "number": "2.13.32"
     },
     {
       "id": "idl-frozen-array",
-      "level": "4",
-      "title": "Frozen array types — FrozenArray<T>"
+      "level": 4,
+      "title": "Frozen array types — FrozenArray<T>",
+      "number": "2.13.33"
     },
     {
       "id": "idl-observable-array",
-      "level": "4",
-      "title": "Observable array types — ObservableArray<T>"
+      "level": 4,
+      "title": "Observable array types — ObservableArray<T>",
+      "number": "2.13.34"
     },
     {
       "id": "idl-extended-attributes",
-      "level": "3",
-      "title": "Extended attributes"
+      "level": 3,
+      "title": "Extended attributes",
+      "number": "2.14"
     },
     {
       "id": "ecmascript-binding",
-      "level": "2",
-      "title": "ECMAScript binding"
+      "level": 2,
+      "title": "ECMAScript binding",
+      "number": "3"
     },
     {
       "id": "es-environment",
-      "level": "3",
-      "title": "ECMAScript environment"
+      "level": 3,
+      "title": "ECMAScript environment",
+      "number": "3.1"
     },
     {
       "id": "es-type-mapping",
-      "level": "3",
-      "title": "ECMAScript type mapping"
+      "level": 3,
+      "title": "ECMAScript type mapping",
+      "number": "3.2"
     },
     {
       "id": "es-any",
-      "level": "4",
-      "title": "any"
+      "level": 4,
+      "title": "any",
+      "number": "3.2.1"
     },
     {
       "id": "es-undefined",
-      "level": "4",
-      "title": "undefined"
+      "level": 4,
+      "title": "undefined",
+      "number": "3.2.2"
     },
     {
       "id": "es-boolean",
-      "level": "4",
-      "title": "boolean"
+      "level": 4,
+      "title": "boolean",
+      "number": "3.2.3"
     },
     {
       "id": "es-integer-types",
-      "level": "4",
-      "title": "Integer types"
+      "level": 4,
+      "title": "Integer types",
+      "number": "3.2.4"
     },
     {
       "id": "es-byte",
-      "level": "5",
-      "title": "byte"
+      "level": 5,
+      "title": "byte",
+      "number": "3.2.4.1"
     },
     {
       "id": "es-octet",
-      "level": "5",
-      "title": "octet"
+      "level": 5,
+      "title": "octet",
+      "number": "3.2.4.2"
     },
     {
       "id": "es-short",
-      "level": "5",
-      "title": "short"
+      "level": 5,
+      "title": "short",
+      "number": "3.2.4.3"
     },
     {
       "id": "es-unsigned-short",
-      "level": "5",
-      "title": "unsigned short"
+      "level": 5,
+      "title": "unsigned short",
+      "number": "3.2.4.4"
     },
     {
       "id": "es-long",
-      "level": "5",
-      "title": "long"
+      "level": 5,
+      "title": "long",
+      "number": "3.2.4.5"
     },
     {
       "id": "es-unsigned-long",
-      "level": "5",
-      "title": "unsigned long"
+      "level": 5,
+      "title": "unsigned long",
+      "number": "3.2.4.6"
     },
     {
       "id": "es-long-long",
-      "level": "5",
-      "title": "long long"
+      "level": 5,
+      "title": "long long",
+      "number": "3.2.4.7"
     },
     {
       "id": "es-unsigned-long-long",
-      "level": "5",
-      "title": "unsigned long long"
+      "level": 5,
+      "title": "unsigned long long",
+      "number": "3.2.4.8"
     },
     {
       "id": "es-integer-types-abstract-ops",
-      "level": "5",
-      "title": "Abstract operations"
+      "level": 5,
+      "title": "Abstract operations",
+      "number": "3.2.4.9"
     },
     {
       "id": "es-float",
-      "level": "4",
-      "title": "float"
+      "level": 4,
+      "title": "float",
+      "number": "3.2.5"
     },
     {
       "id": "es-unrestricted-float",
-      "level": "4",
-      "title": "unrestricted float"
+      "level": 4,
+      "title": "unrestricted float",
+      "number": "3.2.6"
     },
     {
       "id": "es-double",
-      "level": "4",
-      "title": "double"
+      "level": 4,
+      "title": "double",
+      "number": "3.2.7"
     },
     {
       "id": "es-unrestricted-double",
-      "level": "4",
-      "title": "unrestricted double"
+      "level": 4,
+      "title": "unrestricted double",
+      "number": "3.2.8"
     },
     {
       "id": "es-DOMString",
-      "level": "4",
-      "title": "DOMString"
+      "level": 4,
+      "title": "DOMString",
+      "number": "3.2.9"
     },
     {
       "id": "es-ByteString",
-      "level": "4",
-      "title": "ByteString"
+      "level": 4,
+      "title": "ByteString",
+      "number": "3.2.10"
     },
     {
       "id": "es-USVString",
-      "level": "4",
-      "title": "USVString"
+      "level": 4,
+      "title": "USVString",
+      "number": "3.2.11"
     },
     {
       "id": "es-object",
-      "level": "4",
-      "title": "object"
+      "level": 4,
+      "title": "object",
+      "number": "3.2.12"
     },
     {
       "id": "es-symbol",
-      "level": "4",
-      "title": "symbol"
+      "level": 4,
+      "title": "symbol",
+      "number": "3.2.13"
     },
     {
       "id": "es-interface",
-      "level": "4",
-      "title": "Interface types"
+      "level": 4,
+      "title": "Interface types",
+      "number": "3.2.14"
     },
     {
       "id": "es-callback-interface",
-      "level": "4",
-      "title": "Callback interface types"
+      "level": 4,
+      "title": "Callback interface types",
+      "number": "3.2.15"
     },
     {
       "id": "es-dictionary",
-      "level": "4",
-      "title": "Dictionary types"
+      "level": 4,
+      "title": "Dictionary types",
+      "number": "3.2.16"
     },
     {
       "id": "es-enumeration",
-      "level": "4",
-      "title": "Enumeration types"
+      "level": 4,
+      "title": "Enumeration types",
+      "number": "3.2.17"
     },
     {
       "id": "es-callback-function",
-      "level": "4",
-      "title": "Callback function types"
+      "level": 4,
+      "title": "Callback function types",
+      "number": "3.2.18"
     },
     {
       "id": "es-nullable-type",
-      "level": "4",
-      "title": "Nullable types — T?"
+      "level": 4,
+      "title": "Nullable types — T?",
+      "number": "3.2.19"
     },
     {
       "id": "es-sequence",
-      "level": "4",
-      "title": "Sequences — sequence<T>"
+      "level": 4,
+      "title": "Sequences — sequence<T>",
+      "number": "3.2.20"
     },
     {
       "id": "create-sequence-from-iterable",
-      "level": "5",
-      "title": "Creating a sequence from an iterable"
+      "level": 5,
+      "title": "Creating a sequence from an iterable",
+      "number": "3.2.20.1"
     },
     {
       "id": "es-record",
-      "level": "4",
-      "title": "Records — record<K, V>"
+      "level": 4,
+      "title": "Records — record<K, V>",
+      "number": "3.2.21"
     },
     {
       "id": "es-promise",
-      "level": "4",
-      "title": "Promise types — Promise<T>"
+      "level": 4,
+      "title": "Promise types — Promise<T>",
+      "number": "3.2.22"
     },
     {
       "id": "es-promise-manipulation",
-      "level": "5",
-      "title": "Creating and manipulating Promises"
+      "level": 5,
+      "title": "Creating and manipulating Promises",
+      "number": "3.2.22.1"
     },
     {
       "id": "es-promise-examples",
-      "level": "5",
-      "title": "Examples"
+      "level": 5,
+      "title": "Examples",
+      "number": "3.2.22.2"
     },
     {
       "id": "es-union",
-      "level": "4",
-      "title": "Union types"
+      "level": 4,
+      "title": "Union types",
+      "number": "3.2.23"
     },
     {
       "id": "es-buffer-source-types",
-      "level": "4",
-      "title": "Buffer source types"
+      "level": 4,
+      "title": "Buffer source types",
+      "number": "3.2.24"
     },
     {
       "id": "es-frozen-array",
-      "level": "4",
-      "title": "Frozen arrays — FrozenArray<T>"
+      "level": 4,
+      "title": "Frozen arrays — FrozenArray<T>",
+      "number": "3.2.25"
     },
     {
       "id": "create-frozen-array-from-iterable",
-      "level": "5",
-      "title": "Creating a frozen array from an iterable"
+      "level": 5,
+      "title": "Creating a frozen array from an iterable",
+      "number": "3.2.25.1"
     },
     {
       "id": "es-observable-array",
-      "level": "4",
-      "title": "Observable arrays — ObservableArray<T>"
+      "level": 4,
+      "title": "Observable arrays — ObservableArray<T>",
+      "number": "3.2.26"
     },
     {
       "id": "es-extended-attributes",
-      "level": "3",
-      "title": "Extended attributes"
+      "level": 3,
+      "title": "Extended attributes",
+      "number": "3.3"
     },
     {
       "id": "AllowShared",
-      "level": "4",
-      "title": "[AllowShared]"
+      "level": 4,
+      "title": "[AllowShared]",
+      "number": "3.3.1"
     },
     {
       "id": "Clamp",
-      "level": "4",
-      "title": "[Clamp]"
+      "level": 4,
+      "title": "[Clamp]",
+      "number": "3.3.2"
     },
     {
       "id": "CrossOriginIsolated",
-      "level": "4",
-      "title": "[CrossOriginIsolated]"
+      "level": 4,
+      "title": "[CrossOriginIsolated]",
+      "number": "3.3.3"
     },
     {
       "id": "Default",
-      "level": "4",
-      "title": "[Default]"
+      "level": 4,
+      "title": "[Default]",
+      "number": "3.3.4"
     },
     {
       "id": "EnforceRange",
-      "level": "4",
-      "title": "[EnforceRange]"
+      "level": 4,
+      "title": "[EnforceRange]",
+      "number": "3.3.5"
     },
     {
       "id": "Exposed",
-      "level": "4",
-      "title": "[Exposed]"
+      "level": 4,
+      "title": "[Exposed]",
+      "number": "3.3.6"
     },
     {
       "id": "Global",
-      "level": "4",
-      "title": "[Global]"
+      "level": 4,
+      "title": "[Global]",
+      "number": "3.3.7"
     },
     {
       "id": "NewObject",
-      "level": "4",
-      "title": "[NewObject]"
+      "level": 4,
+      "title": "[NewObject]",
+      "number": "3.3.8"
     },
     {
       "id": "PutForwards",
-      "level": "4",
-      "title": "[PutForwards]"
+      "level": 4,
+      "title": "[PutForwards]",
+      "number": "3.3.9"
     },
     {
       "id": "Replaceable",
-      "level": "4",
-      "title": "[Replaceable]"
+      "level": 4,
+      "title": "[Replaceable]",
+      "number": "3.3.10"
     },
     {
       "id": "SameObject",
-      "level": "4",
-      "title": "[SameObject]"
+      "level": 4,
+      "title": "[SameObject]",
+      "number": "3.3.11"
     },
     {
       "id": "SecureContext",
-      "level": "4",
-      "title": "[SecureContext]"
+      "level": 4,
+      "title": "[SecureContext]",
+      "number": "3.3.12"
     },
     {
       "id": "Unscopable",
-      "level": "4",
-      "title": "[Unscopable]"
+      "level": 4,
+      "title": "[Unscopable]",
+      "number": "3.3.13"
     },
     {
       "id": "es-legacy-extended-attributes",
-      "level": "3",
-      "title": "Legacy extended attributes"
+      "level": 3,
+      "title": "Legacy extended attributes",
+      "number": "3.4"
     },
     {
       "id": "LegacyFactoryFunction",
-      "level": "4",
-      "title": "[LegacyFactoryFunction]"
+      "level": 4,
+      "title": "[LegacyFactoryFunction]",
+      "number": "3.4.1"
     },
     {
       "id": "LegacyLenientSetter",
-      "level": "4",
-      "title": "[LegacyLenientSetter]"
+      "level": 4,
+      "title": "[LegacyLenientSetter]",
+      "number": "3.4.2"
     },
     {
       "id": "LegacyLenientThis",
-      "level": "4",
-      "title": "[LegacyLenientThis]"
+      "level": 4,
+      "title": "[LegacyLenientThis]",
+      "number": "3.4.3"
     },
     {
       "id": "LegacyNamespace",
-      "level": "4",
-      "title": "[LegacyNamespace]"
+      "level": 4,
+      "title": "[LegacyNamespace]",
+      "number": "3.4.4"
     },
     {
       "id": "LegacyNoInterfaceObject",
-      "level": "4",
-      "title": "[LegacyNoInterfaceObject]"
+      "level": 4,
+      "title": "[LegacyNoInterfaceObject]",
+      "number": "3.4.5"
     },
     {
       "id": "LegacyNullToEmptyString",
-      "level": "4",
-      "title": "[LegacyNullToEmptyString]"
+      "level": 4,
+      "title": "[LegacyNullToEmptyString]",
+      "number": "3.4.6"
     },
     {
       "id": "LegacyOverrideBuiltIns",
-      "level": "4",
-      "title": "[LegacyOverrideBuiltIns]"
+      "level": 4,
+      "title": "[LegacyOverrideBuiltIns]",
+      "number": "3.4.7"
     },
     {
       "id": "LegacyTreatNonObjectAsNull",
-      "level": "4",
-      "title": "[LegacyTreatNonObjectAsNull]"
+      "level": 4,
+      "title": "[LegacyTreatNonObjectAsNull]",
+      "number": "3.4.8"
     },
     {
       "id": "LegacyUnenumerableNamedProperties",
-      "level": "4",
-      "title": "[LegacyUnenumerableNamedProperties]"
+      "level": 4,
+      "title": "[LegacyUnenumerableNamedProperties]",
+      "number": "3.4.9"
     },
     {
       "id": "LegacyUnforgeable",
-      "level": "4",
-      "title": "[LegacyUnforgeable]"
+      "level": 4,
+      "title": "[LegacyUnforgeable]",
+      "number": "3.4.10"
     },
     {
       "id": "LegacyWindowAlias",
-      "level": "4",
-      "title": "[LegacyWindowAlias]"
+      "level": 4,
+      "title": "[LegacyWindowAlias]",
+      "number": "3.4.11"
     },
     {
       "id": "es-security",
-      "level": "3",
-      "title": "Security"
+      "level": 3,
+      "title": "Security",
+      "number": "3.5"
     },
     {
       "id": "es-overloads",
-      "level": "3",
-      "title": "Overload resolution algorithm"
+      "level": 3,
+      "title": "Overload resolution algorithm",
+      "number": "3.6"
     },
     {
       "id": "es-interfaces",
-      "level": "3",
-      "title": "Interfaces"
+      "level": 3,
+      "title": "Interfaces",
+      "number": "3.7"
     },
     {
       "id": "interface-object",
-      "level": "4",
-      "title": "Interface object"
+      "level": 4,
+      "title": "Interface object",
+      "number": "3.7.1"
     },
     {
       "id": "legacy-factory-functions",
-      "level": "4",
-      "title": "Legacy factory functions"
+      "level": 4,
+      "title": "Legacy factory functions",
+      "number": "3.7.2"
     },
     {
       "id": "interface-prototype-object",
-      "level": "4",
-      "title": "Interface prototype object"
+      "level": 4,
+      "title": "Interface prototype object",
+      "number": "3.7.3"
     },
     {
       "id": "named-properties-object",
-      "level": "4",
-      "title": "Named properties object"
+      "level": 4,
+      "title": "Named properties object",
+      "number": "3.7.4"
     },
     {
       "id": "named-properties-object-getownproperty",
-      "level": "5",
-      "title": "[[GetOwnProperty]]"
+      "level": 5,
+      "title": "[[GetOwnProperty]]",
+      "number": "3.7.4.1"
     },
     {
       "id": "named-properties-object-defineownproperty",
-      "level": "5",
-      "title": "[[DefineOwnProperty]]"
+      "level": 5,
+      "title": "[[DefineOwnProperty]]",
+      "number": "3.7.4.2"
     },
     {
       "id": "named-properties-object-delete",
-      "level": "5",
-      "title": "[[Delete]]"
+      "level": 5,
+      "title": "[[Delete]]",
+      "number": "3.7.4.3"
     },
     {
       "id": "named-properties-object-setprototypeof",
-      "level": "5",
-      "title": "[[SetPrototypeOf]]"
+      "level": 5,
+      "title": "[[SetPrototypeOf]]",
+      "number": "3.7.4.4"
     },
     {
       "id": "named-properties-object-preventextensions",
-      "level": "5",
-      "title": "[[PreventExtensions]]"
+      "level": 5,
+      "title": "[[PreventExtensions]]",
+      "number": "3.7.4.5"
     },
     {
       "id": "es-constants",
-      "level": "4",
-      "title": "Constants"
+      "level": 4,
+      "title": "Constants",
+      "number": "3.7.5"
     },
     {
       "id": "es-attributes",
-      "level": "4",
-      "title": "Attributes"
+      "level": 4,
+      "title": "Attributes",
+      "number": "3.7.6"
     },
     {
       "id": "es-operations",
-      "level": "4",
-      "title": "Operations"
+      "level": 4,
+      "title": "Operations",
+      "number": "3.7.7"
     },
     {
       "id": "es-default-operations",
-      "level": "5",
-      "title": "Default operations"
+      "level": 5,
+      "title": "Default operations",
+      "number": "3.7.7.1"
     },
     {
       "id": "es-default-tojson",
-      "level": "6",
-      "title": "Default toJSON operation"
+      "level": 6,
+      "title": "Default toJSON operation",
+      "number": "3.7.7.1.1"
     },
     {
       "id": "es-stringifier",
-      "level": "5",
-      "title": "Stringifiers"
+      "level": 5,
+      "title": "Stringifiers",
+      "number": "3.7.7.2"
     },
     {
       "id": "es-iterators",
-      "level": "4",
-      "title": "Maplike and setlike iterator behavior"
+      "level": 4,
+      "title": "Maplike and setlike iterator behavior",
+      "number": "3.7.8"
     },
     {
       "id": "es-iterator",
-      "level": "5",
-      "title": "@@iterator"
+      "level": 5,
+      "title": "@@iterator",
+      "number": "3.7.8.1"
     },
     {
       "id": "es-forEach",
-      "level": "5",
-      "title": "forEach"
+      "level": 5,
+      "title": "forEach",
+      "number": "3.7.8.2"
     },
     {
       "id": "es-iterable",
-      "level": "4",
-      "title": "Iterable declarations"
+      "level": 4,
+      "title": "Iterable declarations",
+      "number": "3.7.9"
     },
     {
       "id": "es-default-iterator-object",
-      "level": "5",
-      "title": "Default iterator objects"
+      "level": 5,
+      "title": "Default iterator objects",
+      "number": "3.7.9.1"
     },
     {
       "id": "es-iterator-prototype-object",
-      "level": "5",
-      "title": "Iterator prototype object"
+      "level": 5,
+      "title": "Iterator prototype object",
+      "number": "3.7.9.2"
     },
     {
       "id": "es-asynchronous-iterable",
-      "level": "4",
-      "title": "Asynchronous iterable declarations"
+      "level": 4,
+      "title": "Asynchronous iterable declarations",
+      "number": "3.7.10"
     },
     {
       "id": "es-default-asynchronous-iterator-object",
-      "level": "5",
-      "title": "Default asynchronous iterator objects"
+      "level": 5,
+      "title": "Default asynchronous iterator objects",
+      "number": "3.7.10.1"
     },
     {
       "id": "es-asynchronous-iterator-prototype-object",
-      "level": "5",
-      "title": "Asynchronous iterator prototype object"
+      "level": 5,
+      "title": "Asynchronous iterator prototype object",
+      "number": "3.7.10.2"
     },
     {
       "id": "es-maplike",
-      "level": "4",
-      "title": "Maplike declarations"
+      "level": 4,
+      "title": "Maplike declarations",
+      "number": "3.7.11"
     },
     {
       "id": "es-map-size",
-      "level": "5",
-      "title": "size"
+      "level": 5,
+      "title": "size",
+      "number": "3.7.11.1"
     },
     {
       "id": "es-map-entries",
-      "level": "5",
-      "title": "entries"
+      "level": 5,
+      "title": "entries",
+      "number": "3.7.11.2"
     },
     {
       "id": "es-map-keys-values",
-      "level": "5",
-      "title": "keys and values"
+      "level": 5,
+      "title": "keys and values",
+      "number": "3.7.11.3"
     },
     {
       "id": "es-map-get-has",
-      "level": "5",
-      "title": "get and has"
+      "level": 5,
+      "title": "get and has",
+      "number": "3.7.11.4"
     },
     {
       "id": "es-map-clear",
-      "level": "5",
-      "title": "clear"
+      "level": 5,
+      "title": "clear",
+      "number": "3.7.11.5"
     },
     {
       "id": "es-map-delete",
-      "level": "5",
-      "title": "delete"
+      "level": 5,
+      "title": "delete",
+      "number": "3.7.11.6"
     },
     {
       "id": "es-map-set",
-      "level": "5",
-      "title": "set"
+      "level": 5,
+      "title": "set",
+      "number": "3.7.11.7"
     },
     {
       "id": "es-setlike",
-      "level": "4",
-      "title": "Setlike declarations"
+      "level": 4,
+      "title": "Setlike declarations",
+      "number": "3.7.12"
     },
     {
       "id": "es-set-size",
-      "level": "5",
-      "title": "size"
+      "level": 5,
+      "title": "size",
+      "number": "3.7.12.1"
     },
     {
       "id": "es-set-values",
-      "level": "5",
-      "title": "values"
+      "level": 5,
+      "title": "values",
+      "number": "3.7.12.2"
     },
     {
       "id": "es-set-entries-keys",
-      "level": "5",
-      "title": "entries and keys"
+      "level": 5,
+      "title": "entries and keys",
+      "number": "3.7.12.3"
     },
     {
       "id": "es-set-has",
-      "level": "5",
-      "title": "has"
+      "level": 5,
+      "title": "has",
+      "number": "3.7.12.4"
     },
     {
       "id": "es-add-delete",
-      "level": "5",
-      "title": "add and delete"
+      "level": 5,
+      "title": "add and delete",
+      "number": "3.7.12.5"
     },
     {
       "id": "es-set-clear",
-      "level": "5",
-      "title": "clear"
+      "level": 5,
+      "title": "clear",
+      "number": "3.7.12.6"
     },
     {
       "id": "es-platform-objects",
-      "level": "3",
-      "title": "Platform objects implementing interfaces"
+      "level": 3,
+      "title": "Platform objects implementing interfaces",
+      "number": "3.8"
     },
     {
       "id": "platform-object-setprototypeof",
-      "level": "4",
-      "title": "[[SetPrototypeOf]]"
+      "level": 4,
+      "title": "[[SetPrototypeOf]]",
+      "number": "3.8.1"
     },
     {
       "id": "es-legacy-platform-objects",
-      "level": "3",
-      "title": "Legacy platform objects"
+      "level": 3,
+      "title": "Legacy platform objects",
+      "number": "3.9"
     },
     {
       "id": "legacy-platform-object-getownproperty",
-      "level": "4",
-      "title": "[[GetOwnProperty]]"
+      "level": 4,
+      "title": "[[GetOwnProperty]]",
+      "number": "3.9.1"
     },
     {
       "id": "legacy-platform-object-set",
-      "level": "4",
-      "title": "[[Set]]"
+      "level": 4,
+      "title": "[[Set]]",
+      "number": "3.9.2"
     },
     {
       "id": "legacy-platform-object-defineownproperty",
-      "level": "4",
-      "title": "[[DefineOwnProperty]]"
+      "level": 4,
+      "title": "[[DefineOwnProperty]]",
+      "number": "3.9.3"
     },
     {
       "id": "legacy-platform-object-delete",
-      "level": "4",
-      "title": "[[Delete]]"
+      "level": 4,
+      "title": "[[Delete]]",
+      "number": "3.9.4"
     },
     {
       "id": "legacy-platform-object-preventextensions",
-      "level": "4",
-      "title": "[[PreventExtensions]]"
+      "level": 4,
+      "title": "[[PreventExtensions]]",
+      "number": "3.9.5"
     },
     {
       "id": "legacy-platform-object-ownpropertykeys",
-      "level": "4",
-      "title": "[[OwnPropertyKeys]]"
+      "level": 4,
+      "title": "[[OwnPropertyKeys]]",
+      "number": "3.9.6"
     },
     {
       "id": "legacy-platform-object-abstract-ops",
-      "level": "4",
-      "title": "Abstract operations"
+      "level": 4,
+      "title": "Abstract operations",
+      "number": "3.9.7"
     },
     {
       "id": "es-observable-arrays",
-      "level": "3",
-      "title": "Observable array exotic objects"
+      "level": 3,
+      "title": "Observable array exotic objects",
+      "number": "3.10"
     },
     {
       "id": "es-observable-array-defineProperty",
-      "level": "4",
-      "title": "defineProperty"
+      "level": 4,
+      "title": "defineProperty",
+      "number": "3.10.1"
     },
     {
       "id": "es-observable-array-deleteProperty",
-      "level": "4",
-      "title": "deleteProperty"
+      "level": 4,
+      "title": "deleteProperty",
+      "number": "3.10.2"
     },
     {
       "id": "es-observable-array-get",
-      "level": "4",
-      "title": "get"
+      "level": 4,
+      "title": "get",
+      "number": "3.10.3"
     },
     {
       "id": "es-observable-array-getOwnPropertyDescriptor",
-      "level": "4",
-      "title": "getOwnPropertyDescriptor"
+      "level": 4,
+      "title": "getOwnPropertyDescriptor",
+      "number": "3.10.4"
     },
     {
       "id": "es-observable-array-has",
-      "level": "4",
-      "title": "has"
+      "level": 4,
+      "title": "has",
+      "number": "3.10.5"
     },
     {
       "id": "es-observable-array-ownKeys",
-      "level": "4",
-      "title": "ownKeys"
+      "level": 4,
+      "title": "ownKeys",
+      "number": "3.10.6"
     },
     {
       "id": "es-observable-array-preventExtensions",
-      "level": "4",
-      "title": "preventExtensions"
+      "level": 4,
+      "title": "preventExtensions",
+      "number": "3.10.7"
     },
     {
       "id": "es-observable-array-set",
-      "level": "4",
-      "title": "set"
+      "level": 4,
+      "title": "set",
+      "number": "3.10.8"
     },
     {
       "id": "es-observable-array-abstract-operations",
-      "level": "4",
-      "title": "Abstract operations"
+      "level": 4,
+      "title": "Abstract operations",
+      "number": "3.10.9"
     },
     {
       "id": "es-user-objects",
-      "level": "3",
-      "title": "Callback interfaces"
+      "level": 3,
+      "title": "Callback interfaces",
+      "number": "3.11"
     },
     {
       "id": "legacy-callback-interface-object",
-      "level": "4",
-      "title": "Legacy callback interface object"
+      "level": 4,
+      "title": "Legacy callback interface object",
+      "number": "3.11.1"
     },
     {
       "id": "es-invoking-callback-functions",
-      "level": "3",
-      "title": "Invoking callback functions"
+      "level": 3,
+      "title": "Invoking callback functions",
+      "number": "3.12"
     },
     {
       "id": "es-namespaces",
-      "level": "3",
-      "title": "Namespaces"
+      "level": 3,
+      "title": "Namespaces",
+      "number": "3.13"
     },
     {
       "id": "namespace-object",
-      "level": "4",
-      "title": "Namespace object"
+      "level": 4,
+      "title": "Namespace object",
+      "number": "3.13.1"
     },
     {
       "id": "es-exceptions",
-      "level": "3",
-      "title": "Exceptions"
+      "level": 3,
+      "title": "Exceptions",
+      "number": "3.14"
     },
     {
       "id": "es-DOMException-specialness",
-      "level": "4",
-      "title": "DOMException custom bindings"
+      "level": 4,
+      "title": "DOMException custom bindings",
+      "number": "3.14.1"
     },
     {
       "id": "es-exception-objects",
-      "level": "4",
-      "title": "Exception objects"
+      "level": 4,
+      "title": "Exception objects",
+      "number": "3.14.2"
     },
     {
       "id": "es-creating-throwing-exceptions",
-      "level": "4",
-      "title": "Creating and throwing exceptions"
+      "level": 4,
+      "title": "Creating and throwing exceptions",
+      "number": "3.14.3"
     },
     {
       "id": "es-handling-exceptions",
-      "level": "4",
-      "title": "Handling exceptions"
+      "level": 4,
+      "title": "Handling exceptions",
+      "number": "3.14.4"
     },
     {
       "id": "common",
-      "level": "2",
-      "title": "Common definitions"
+      "level": 2,
+      "title": "Common definitions",
+      "number": "4"
     },
     {
       "id": "ArrayBufferView",
-      "level": "3",
-      "title": "ArrayBufferView"
+      "level": 3,
+      "title": "ArrayBufferView",
+      "number": "4.1"
     },
     {
       "id": "BufferSource",
-      "level": "3",
-      "title": "BufferSource"
+      "level": 3,
+      "title": "BufferSource",
+      "number": "4.2"
     },
     {
       "id": "idl-DOMException",
-      "level": "3",
-      "title": "DOMException"
+      "level": 3,
+      "title": "DOMException",
+      "number": "4.3"
     },
     {
       "id": "DOMTimeStamp",
-      "level": "3",
-      "title": "DOMTimeStamp"
+      "level": 3,
+      "title": "DOMTimeStamp",
+      "number": "4.4"
     },
     {
       "id": "Function",
-      "level": "3",
-      "title": "Function"
+      "level": 3,
+      "title": "Function",
+      "number": "4.5"
     },
     {
       "id": "VoidFunction",
-      "level": "3",
-      "title": "VoidFunction"
+      "level": 3,
+      "title": "VoidFunction",
+      "number": "4.6"
     },
     {
       "id": "extensibility",
-      "level": "2",
-      "title": "Extensibility"
+      "level": 2,
+      "title": "Extensibility",
+      "number": "5"
     },
     {
       "id": "legacy-constructs",
-      "level": "2",
-      "title": "Legacy constructs"
+      "level": 2,
+      "title": "Legacy constructs",
+      "number": "6"
     },
     {
       "id": "referencing",
-      "level": "2",
-      "title": "Referencing this specification"
+      "level": 2,
+      "title": "Referencing this specification",
+      "number": "7"
     },
     {
       "id": "priv-sec",
-      "level": "2",
-      "title": "Privacy and Security Considerations"
+      "level": 2,
+      "title": "Privacy and Security Considerations",
+      "number": "8"
     },
     {
       "id": "acknowledgements",
-      "level": "2",
-      "title": "Acknowledgements"
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "9"
     },
     {
       "id": "idl-grammar",
-      "level": "2",
+      "level": 2,
       "title": "IDL grammar"
     },
     {
       "id": "conventions",
-      "level": "2",
+      "level": 2,
       "title": "Document conventions"
     },
     {
       "id": "conformance",
-      "level": "2",
+      "level": 2,
       "title": "Conformance"
     },
     {
       "id": "index",
-      "level": "2",
+      "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "level": "2",
+      "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "level": "3",
+      "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "level": "3",
+      "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
-      "level": "2",
+      "level": 2,
       "title": "IDL Index"
     }
   ]

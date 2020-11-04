@@ -6,337 +6,391 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "Loading Signed Exchanges"
     },
     {
       "id": "subtitle",
-      "level": "2",
+      "level": 2,
       "title": "Draft Community Group Report, 6 October 2020"
     },
     {
       "id": "abstract",
-      "level": "2",
+      "level": 2,
       "title": "Abstract"
     },
     {
       "id": "status",
-      "level": "2",
+      "level": 2,
       "title": "Status of this document"
     },
     {
-      "id": "contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "intro",
-      "level": "2",
-      "title": "Introduction"
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
       "id": "overview",
-      "level": "3",
-      "title": "Overview"
+      "level": 3,
+      "title": "Overview",
+      "number": "1.1"
     },
     {
       "id": "details",
-      "level": "3",
-      "title": "Other interesting details"
+      "level": 3,
+      "title": "Other interesting details",
+      "number": "1.2"
     },
     {
       "id": "monkeypatches",
-      "level": "2",
-      "title": "Fetch monkeypatches"
+      "level": 2,
+      "title": "Fetch monkeypatches",
+      "number": "2"
     },
     {
       "id": "mp-request-stashed-exchange",
-      "level": "3",
-      "title": "A request’s stashed exchange"
+      "level": 3,
+      "title": "A request’s stashed exchange",
+      "number": "2.1"
     },
     {
       "id": "mp-request-clone",
-      "level": "3",
-      "title": "Request clone"
+      "level": 3,
+      "title": "Request clone",
+      "number": "2.2"
     },
     {
       "id": "mp-response",
-      "level": "3",
-      "title": "New response fields"
+      "level": 3,
+      "title": "New response fields",
+      "number": "2.3"
     },
     {
       "id": "mp-response-date",
-      "level": "3",
-      "title": "Response date"
+      "level": 3,
+      "title": "Response date",
+      "number": "2.4"
     },
     {
       "id": "mp-http-fetch",
-      "level": "3",
-      "title": "Monkeypatch HTTP fetch"
+      "level": 3,
+      "title": "Monkeypatch HTTP fetch",
+      "number": "2.5"
     },
     {
       "id": "mp-http-network-or-cache-fetch",
-      "level": "3",
-      "title": "Monkeypatch HTTP-network-or-cache fetch"
+      "level": 3,
+      "title": "Monkeypatch HTTP-network-or-cache fetch",
+      "number": "2.6"
     },
     {
       "id": "subresource-substitution",
-      "level": "2",
-      "title": "Subresource substitution"
+      "level": 2,
+      "title": "Subresource substitution",
+      "number": "3"
     },
     {
       "id": "mp-document",
-      "level": "3",
-      "title": "New Document fields"
+      "level": 3,
+      "title": "New Document fields",
+      "number": "3.1"
     },
     {
       "id": "mp-navigation-params",
-      "level": "3",
-      "title": "New navigation params struct field"
+      "level": 3,
+      "title": "New navigation params struct field",
+      "number": "3.2"
     },
     {
       "id": "mp-link-type-prefetch",
-      "level": "3",
-      "title": "Monkeypatch Link type \"prefetch\""
+      "level": 3,
+      "title": "Monkeypatch Link type \"prefetch\"",
+      "number": "3.3"
     },
     {
       "id": "mp-process-a-navigate-fetch",
-      "level": "3",
-      "title": "Monkeypatch process a navigate fetch"
+      "level": 3,
+      "title": "Monkeypatch process a navigate fetch",
+      "number": "3.4"
     },
     {
       "id": "mp-page-load-processing-model-for-html-fiiles",
-      "level": "3",
-      "title": "Monkeypatch Page load processing model for HTML files"
+      "level": 3,
+      "title": "Monkeypatch Page load processing model for HTML files",
+      "number": "3.5"
     },
     {
       "id": "structs",
-      "level": "2",
-      "title": "Structures"
+      "level": 2,
+      "title": "Structures",
+      "number": "4"
     },
     {
       "id": "exchange",
-      "level": "3",
-      "title": "Exchange"
+      "level": 3,
+      "title": "Exchange",
+      "number": "4.1"
     },
     {
       "id": "read-buffer",
-      "level": "3",
-      "title": "Read buffer"
+      "level": 3,
+      "title": "Read buffer",
+      "number": "4.2"
     },
     {
       "id": "augmented-certificate",
-      "level": "3",
-      "title": "Augmented Certificate"
+      "level": 3,
+      "title": "Augmented Certificate",
+      "number": "4.3"
     },
     {
       "id": "signed-exchange-report",
-      "level": "3",
-      "title": "Signed Exchange report"
+      "level": 3,
+      "title": "Signed Exchange report",
+      "number": "4.4"
     },
     {
       "id": "exchange-signature",
-      "level": "3",
-      "title": "Exchange Signature"
+      "level": 3,
+      "title": "Exchange Signature",
+      "number": "4.5"
     },
     {
       "id": "allowed-signed-exchange-link-info",
-      "level": "3",
-      "title": "Allowed signed exchange link info"
+      "level": 3,
+      "title": "Allowed signed exchange link info",
+      "number": "4.6"
     },
     {
       "id": "alternate-signed-exchange-link-info",
-      "level": "3",
-      "title": "Alternate signed exchange link info"
+      "level": 3,
+      "title": "Alternate signed exchange link info",
+      "number": "4.7"
     },
     {
       "id": "alternate-signed-exchange-preload-info",
-      "level": "3",
-      "title": "Alternate signed exchange preload info"
+      "level": 3,
+      "title": "Alternate signed exchange preload info",
+      "number": "4.8"
     },
     {
       "id": "algorithms",
-      "level": "2",
-      "title": "Algorithms"
+      "level": 2,
+      "title": "Algorithms",
+      "number": "5"
     },
     {
       "id": "identifying-sxg",
-      "level": "3",
-      "title": "Identifying signed exchanges"
+      "level": 3,
+      "title": "Identifying signed exchanges",
+      "number": "5.1"
     },
     {
       "id": "parsing-fallback",
-      "level": "3",
-      "title": "Extracting the fallback URL"
+      "level": 3,
+      "title": "Extracting the fallback URL",
+      "number": "5.2"
     },
     {
       "id": "parsing",
-      "level": "3",
-      "title": "Parsing signed exchanges"
+      "level": 3,
+      "title": "Parsing signed exchanges",
+      "number": "5.3"
     },
     {
       "id": "parsing-prefix",
-      "level": "3",
-      "title": "Parsing the invariant prefix"
+      "level": 3,
+      "title": "Parsing the invariant prefix",
+      "number": "5.4"
     },
     {
       "id": "parsing-signature",
-      "level": "3",
-      "title": "Parsing a Signature Header Field"
+      "level": 3,
+      "title": "Parsing a Signature Header Field",
+      "number": "5.5"
     },
     {
       "id": "handling-cert-url",
-      "level": "4",
-      "title": "Handling the certificate reference"
+      "level": 4,
+      "title": "Handling the certificate reference",
+      "number": "5.5.1"
     },
     {
       "id": "the-signed-message",
-      "level": "3",
-      "title": "The signed message"
+      "level": 3,
+      "title": "The signed message",
+      "number": "5.6"
     },
     {
       "id": "validating-signature",
-      "level": "3",
-      "title": "Validating a signature"
+      "level": 3,
+      "title": "Validating a signature",
+      "number": "5.7"
     },
     {
       "id": "cross-origin-trust",
-      "level": "3",
-      "title": "Cross-origin trust"
+      "level": 3,
+      "title": "Cross-origin trust",
+      "number": "5.8"
     },
     {
       "id": "trusting-certificate",
-      "level": "3",
-      "title": "Establishing trust in a certificate"
+      "level": 3,
+      "title": "Establishing trust in a certificate",
+      "number": "5.9"
     },
     {
       "id": "parse-b2-cbor-headers",
-      "level": "3",
-      "title": "Parsing b2 CBOR headers"
+      "level": 3,
+      "title": "Parsing b2 CBOR headers",
+      "number": "5.10"
     },
     {
       "id": "parse-cbor-headers",
-      "level": "3",
-      "title": "Parsing b3 CBOR headers"
+      "level": 3,
+      "title": "Parsing b3 CBOR headers",
+      "number": "5.11"
     },
     {
       "id": "headers-from-map",
-      "level": "4",
-      "title": "Converting a map to a header list"
+      "level": 4,
+      "title": "Converting a map to a header list",
+      "number": "5.11.1"
     },
     {
       "id": "read-a-body",
-      "level": "3",
-      "title": "Creating the response stream."
+      "level": 3,
+      "title": "Creating the response stream.",
+      "number": "5.12"
     },
     {
       "id": "request-matching",
-      "level": "3",
-      "title": "Request matching"
+      "level": 3,
+      "title": "Request matching",
+      "number": "5.13"
     },
     {
       "id": "create-a-new-report",
-      "level": "3",
-      "title": "Create a new signed exchange report"
+      "level": 3,
+      "title": "Create a new signed exchange report",
+      "number": "5.14"
     },
     {
       "id": "wait-and-queue-a-report",
-      "level": "3",
-      "title": "Wait and queue a report"
+      "level": 3,
+      "title": "Wait and queue a report",
+      "number": "5.15"
     },
     {
       "id": "queue-report",
-      "level": "3",
-      "title": "Queuing signed exchange report"
+      "level": 3,
+      "title": "Queuing signed exchange report",
+      "number": "5.16"
     },
     {
       "id": "stream-algs",
-      "level": "3",
-      "title": "Stream algorithms"
+      "level": 3,
+      "title": "Stream algorithms",
+      "number": "5.17"
     },
     {
       "id": "create-read-buffer",
-      "level": "4",
-      "title": "Create a read buffer"
+      "level": 4,
+      "title": "Create a read buffer",
+      "number": "5.17.1"
     },
     {
       "id": "read-up-to-bytes",
-      "level": "4",
-      "title": "Read up to bytes"
+      "level": 4,
+      "title": "Read up to bytes",
+      "number": "5.17.2"
     },
     {
       "id": "read-bytes",
-      "level": "4",
-      "title": "Read bytes"
+      "level": 4,
+      "title": "Read bytes",
+      "number": "5.17.3"
     },
     {
       "id": "dump-stream",
-      "level": "4",
-      "title": "Dump to another stream"
+      "level": 4,
+      "title": "Dump to another stream",
+      "number": "5.17.4"
     },
     {
       "id": "dump-value-of-target-attributes",
-      "level": "3",
-      "title": "Get value of Target Attributes"
+      "level": 3,
+      "title": "Get value of Target Attributes",
+      "number": "5.18"
     },
     {
       "id": "get-allowed-signed-exchange-links",
-      "level": "3",
-      "title": "Get allowed signed exchange link info"
+      "level": 3,
+      "title": "Get allowed signed exchange link info",
+      "number": "5.19"
     },
     {
       "id": "get-alternate-signed-exchange-links",
-      "level": "3",
-      "title": "Get alternate signed\nexchange link info"
+      "level": 3,
+      "title": "Get alternate signed\nexchange link info",
+      "number": "5.20"
     },
     {
       "id": "seccons",
-      "level": "2",
-      "title": "Security Considerations"
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "6"
     },
     {
       "id": "seccons-ct",
-      "level": "3",
-      "title": "Certificate Transparency"
+      "level": 3,
+      "title": "Certificate Transparency",
+      "number": "6.1"
     },
     {
       "id": "conformance",
-      "level": "2",
+      "level": 2,
       "title": "Conformance"
     },
     {
       "id": "index",
-      "level": "2",
+      "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "level": "2",
+      "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "level": "3",
+      "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "level": "3",
+      "level": 3,
       "title": "Informative References"
     },
     {
       "id": "issues-index",
-      "level": "2",
+      "level": 2,
       "title": "Issues Index"
     }
   ]
