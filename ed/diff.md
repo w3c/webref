@@ -1,12 +1,4 @@
-% Diff between report from "November 04, 2020" and reference report from "November 04, 2020"
+% Diff between report from "November 05, 2020" and reference report from "November 04, 2020"
 % Reffy
-% November 04, 2020
-
-## Content Security Policy Level 3
-
-- Initial URL: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
-- Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-csp/
-
+% November 05, 2020
 
