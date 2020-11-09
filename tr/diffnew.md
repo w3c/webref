@@ -1,62 +1,36 @@
-% Diff between report from "November 02, 2020" and reference report from "October 26, 2020"
+% Diff between report from "November 09, 2020" and reference report from "November 02, 2020"
 % Reffy
-% November 02, 2020
+% November 09, 2020
 
-## Client Hints Infrastructure
+## Idle Detection API
 
-- Initial URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
+- Initial URL: [https://wicg.github.io/idle-detection/](https://wicg.github.io/idle-detection/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
-- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-permissions-policy/
-
-
-## CSS Box Model Module Level 3
-
-- Initial URL: [https://www.w3.org/TR/css-box-3/](https://www.w3.org/TR/css-box-3/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-box-3/](https://drafts.csswg.org/css-box-3/)
-- Missing references for links: *INS* https://www.w3.org/TR/web-animations/ / *DEL* https://www.w3.org/TR/svg2/, https://www.w3.org/TR/css3-background/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-values/
-
-
-## CSS Custom Highlight API Module Level 1
-
-- Initial URL: [https://www.w3.org/TR/css-highlight-api-1/](https://www.w3.org/TR/css-highlight-api-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
+- Editor's Draft: [https://wicg.github.io/idle-detection/](https://wicg.github.io/idle-detection/)
 - This specification was not in the reference crawl report.
 
 
-## CSS Grid Layout Module Level 3
+## Measure Memory API
 
-- Initial URL: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
+- Initial URL: [https://wicg.github.io/performance-measure-memory/](https://wicg.github.io/performance-measure-memory/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
+- Editor's Draft: [https://wicg.github.io/performance-measure-memory/](https://wicg.github.io/performance-measure-memory/)
 - This specification was not in the reference crawl report.
 
 
-## WebTransport
+## Presentation API
 
-- Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
+- Initial URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Spec is OK: *INS* false / *DEL* true
+- Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
 - Unknown WebIDL names used: *INS* undefined
 
 
-## WebXR Hand Input Module - Level 1
+## WebCodecs
 
-- Initial URL: [https://www.w3.org/TR/webxr-hand-input-1/](https://www.w3.org/TR/webxr-hand-input-1/)
+- Initial URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
+- Editor's Draft: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
 - This specification was not in the reference crawl report.
-
-
-## WebXR Layers API Level 1
-
-- Initial URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Missing references for WebIDL names: *INS* GLenum
 
 

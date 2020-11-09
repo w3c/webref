@@ -6,398 +6,475 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "HTML Accessibility API Mappings 1.0"
     },
     {
-      "id": "table-of-contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
-      "id": "x1-introduction",
-      "level": "2",
-      "title": "Introduction"
+      "id": "intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
-      "id": "x1-1-accessibility-apis",
-      "level": "3",
-      "title": "Accessibility APIs"
+      "id": "intro_aapi",
+      "level": 3,
+      "title": "Accessibility APIs",
+      "number": "1.1"
     },
     {
-      "id": "x2-conformance",
-      "level": "2",
-      "title": "Conformance"
+      "id": "conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
     },
     {
-      "id": "x2-1-deprecated",
-      "level": "3",
-      "title": "Deprecated"
+      "id": "deprecated",
+      "level": 3,
+      "title": "Deprecated",
+      "number": "2.1"
     },
     {
-      "id": "x3-important-terms",
-      "level": "2",
-      "title": "Important Terms"
+      "id": "glossary",
+      "level": 2,
+      "title": "Important Terms",
+      "number": "3"
     },
     {
-      "id": "x4-mapping-html-to-accessibility-apis",
-      "level": "2",
-      "title": "Mapping HTML to Accessibility APIs"
+      "id": "mapping-html-to-accessibility-apis",
+      "level": 2,
+      "title": "Mapping HTML to Accessibility APIs",
+      "number": "4"
     },
     {
-      "id": "x4-1-general-rules-for-exposing-wai-aria-semantics",
-      "level": "3",
-      "title": "General Rules for Exposing WAI-ARIA Semantics"
+      "id": "mapping_general",
+      "level": 3,
+      "title": "General Rules for Exposing WAI-ARIA Semantics",
+      "number": "4.1"
     },
     {
-      "id": "x4-2-conflicts-between-native-markup-semantics-and-wai-aria",
-      "level": "3",
-      "title": "Conflicts Between Native Markup Semantics and WAI-ARIA"
+      "id": "mapping_conflicts",
+      "level": 3,
+      "title": "Conflicts Between Native Markup Semantics and WAI-ARIA",
+      "number": "4.2"
     },
     {
-      "id": "x4-3-exposing-html-features-that-do-not-directly-map-to-accessibility-apis",
-      "level": "3",
-      "title": "Exposing HTML Features That Do Not Directly Map to Accessibility APIs"
+      "id": "mapping_nodirect",
+      "level": 3,
+      "title": "Exposing HTML Features That Do Not Directly Map to Accessibility APIs",
+      "number": "4.3"
     },
     {
-      "id": "x4-4-html-element-role-mappings",
-      "level": "3",
-      "title": "HTML Element Role Mappings"
+      "id": "html-element-role-mappings",
+      "level": 3,
+      "title": "HTML Element Role Mappings",
+      "number": "4.4"
     },
     {
-      "id": "x4-5-html-attribute-state-and-property-mappings",
-      "level": "3",
-      "title": "HTML Attribute State and Property Mappings"
+      "id": "html-attribute-state-and-property-mappings",
+      "level": 3,
+      "title": "HTML Attribute State and Property Mappings",
+      "number": "4.5"
     },
     {
-      "id": "x5-accessible-name-and-description-computation",
-      "level": "2",
-      "title": "Accessible Name and Description Computation"
+      "id": "accessible-name-and-description-computation",
+      "level": 2,
+      "title": "Accessible Name and Description Computation",
+      "number": "5"
     },
     {
-      "id": "x5-1-input-type-text-input-type-password-input-type-search-input-type-tel-input-type-url-and-textarea-element",
-      "level": "3",
-      "title": "input type=\"text\", input type=\"password\", input type=\"search\", input type=\"tel\", input type=\"url\" and textarea Element"
+      "id": "input-type-text-input-type-password-input-type-search-input-type-tel-input-type-url-and-textarea-element",
+      "level": 3,
+      "title": "input type=\"text\", input type=\"password\", input type=\"search\", input type=\"tel\", input type=\"url\" and textarea Element",
+      "number": "5.1"
     },
     {
-      "id": "x5-1-1-input-type-text-input-type-password-input-type-search-input-type-tel-input-type-email-input-type-url-and-textarea-element-accessible-name-computation",
-      "level": "4",
-      "title": "input type=\"text\", input type=\"password\", input type=\"search\", input type=\"tel\", input type=\"email\", input type=\"url\" and textarea Element Accessible Name Computation"
+      "id": "input-type-text-input-type-password-input-type-search-input-type-tel-input-type-email-input-type-url-and-textarea-element-accessible-name-computation",
+      "level": 4,
+      "title": "input type=\"text\", input type=\"password\", input type=\"search\", input type=\"tel\", input type=\"email\", input type=\"url\" and textarea Element Accessible Name Computation",
+      "number": "5.1.1"
     },
     {
-      "id": "x5-1-2-input-type-text-input-type-password-input-type-search-input-type-tel-input-type-email-input-type-url-and-textarea-element-accessible-description-computation",
-      "level": "4",
-      "title": "input type=\"text\", input type=\"password\", input type=\"search\", input type=\"tel\", input type=\"email\", input type=\"url\" and textarea Element Accessible Description Computation"
+      "id": "input-type-text-input-type-password-input-type-search-input-type-tel-input-type-email-input-type-url-and-textarea-element-accessible-description-computation",
+      "level": 4,
+      "title": "input type=\"text\", input type=\"password\", input type=\"search\", input type=\"tel\", input type=\"email\", input type=\"url\" and textarea Element Accessible Description Computation",
+      "number": "5.1.2"
     },
     {
-      "id": "x5-2-input-type-button-input-type-submit-and-input-type-reset",
-      "level": "3",
-      "title": "input type=\"button\", input type=\"submit\" and input type=\"reset\""
+      "id": "input-type-button-input-type-submit-and-input-type-reset",
+      "level": 3,
+      "title": "input type=\"button\", input type=\"submit\" and input type=\"reset\"",
+      "number": "5.2"
     },
     {
-      "id": "x5-2-1-input-type-button-input-type-submit-and-input-type-reset-accessible-name-computation",
-      "level": "4",
-      "title": "input type=\"button\" , input type=\"submit\" and input type=\"reset\" Accessible Name Computation"
+      "id": "input-type-button-input-type-submit-and-input-type-reset-accessible-name-computation",
+      "level": 4,
+      "title": "input type=\"button\" , input type=\"submit\" and input type=\"reset\" Accessible Name Computation",
+      "number": "5.2.1"
     },
     {
-      "id": "x5-2-2-input-type-button-input-type-submit-and-input-type-reset-accessible-description-computation",
-      "level": "4",
-      "title": "input type=\"button\" , input type=\"submit\" and input type=\"reset\" Accessible Description Computation"
+      "id": "input-type-button-input-type-submit-and-input-type-reset-accessible-description-computation",
+      "level": 4,
+      "title": "input type=\"button\" , input type=\"submit\" and input type=\"reset\" Accessible Description Computation",
+      "number": "5.2.2"
     },
     {
-      "id": "x5-3-input-type-image",
-      "level": "3",
-      "title": "input type=\"image\""
+      "id": "input-type-image",
+      "level": 3,
+      "title": "input type=\"image\"",
+      "number": "5.3"
     },
     {
-      "id": "x5-3-1-input-type-image-accessible-name-computation",
-      "level": "4",
-      "title": "input type=\"image\" Accessible Name Computation"
+      "id": "input-type-image-accessible-name-computation",
+      "level": 4,
+      "title": "input type=\"image\" Accessible Name Computation",
+      "number": "5.3.1"
     },
     {
-      "id": "x5-3-2-input-type-image-accessible-description-computation",
-      "level": "4",
-      "title": "input type=\"image\" Accessible Description Computation"
+      "id": "input-type-image-accessible-description-computation",
+      "level": 4,
+      "title": "input type=\"image\" Accessible Description Computation",
+      "number": "5.3.2"
     },
     {
-      "id": "x5-4-button-element",
-      "level": "3",
-      "title": "button Element"
+      "id": "button-element",
+      "level": 3,
+      "title": "button Element",
+      "number": "5.4"
     },
     {
-      "id": "x5-4-1-button-element-accessible-name-computation",
-      "level": "4",
-      "title": "button Element Accessible Name Computation"
+      "id": "button-element-accessible-name-computation",
+      "level": 4,
+      "title": "button Element Accessible Name Computation",
+      "number": "5.4.1"
     },
     {
-      "id": "x5-4-2-button-element-accessible-description-computation",
-      "level": "4",
-      "title": "button Element Accessible Description Computation"
+      "id": "button-element-accessible-description-computation",
+      "level": 4,
+      "title": "button Element Accessible Description Computation",
+      "number": "5.4.2"
     },
     {
-      "id": "x5-5-fieldset-and-legend-elements",
-      "level": "3",
-      "title": "fieldset and legend Elements"
+      "id": "fieldset-and-legend-elements",
+      "level": 3,
+      "title": "fieldset and legend Elements",
+      "number": "5.5"
     },
     {
-      "id": "x5-5-1-fieldset-element-accessible-name-computation",
-      "level": "4",
-      "title": "fieldset Element Accessible Name Computation"
+      "id": "fieldset-element-accessible-name-computation",
+      "level": 4,
+      "title": "fieldset Element Accessible Name Computation",
+      "number": "5.5.1"
     },
     {
-      "id": "x5-5-2-fieldset-element-accessible-description-computation",
-      "level": "4",
-      "title": "fieldset Element Accessible Description Computation"
+      "id": "fieldset-element-accessible-description-computation",
+      "level": 4,
+      "title": "fieldset Element Accessible Description Computation",
+      "number": "5.5.2"
     },
     {
-      "id": "x5-6-output-element",
-      "level": "3",
-      "title": "output Element"
+      "id": "output-element",
+      "level": 3,
+      "title": "output Element",
+      "number": "5.6"
     },
     {
-      "id": "x5-6-1-output-element-accessible-name-computation",
-      "level": "4",
-      "title": "output Element Accessible Name Computation"
+      "id": "output-element-accessible-name-computation",
+      "level": 4,
+      "title": "output Element Accessible Name Computation",
+      "number": "5.6.1"
     },
     {
-      "id": "x5-6-2-output-element-accessible-description-computation",
-      "level": "4",
-      "title": "output Element Accessible Description Computation"
+      "id": "output-element-accessible-description-computation",
+      "level": 4,
+      "title": "output Element Accessible Description Computation",
+      "number": "5.6.2"
     },
     {
-      "id": "x5-7-other-form-elements",
-      "level": "3",
-      "title": "Other Form Elements"
+      "id": "other-form-elements",
+      "level": 3,
+      "title": "Other Form Elements",
+      "number": "5.7"
     },
     {
-      "id": "x5-7-1-other-form-elements-accessible-name-computation",
-      "level": "4",
-      "title": "Other Form Elements Accessible Name Computation"
+      "id": "other-form-elements-accessible-name-computation",
+      "level": 4,
+      "title": "Other Form Elements Accessible Name Computation",
+      "number": "5.7.1"
     },
     {
-      "id": "x5-7-2-other-form-elements-accessible-description-computation",
-      "level": "4",
-      "title": "Other Form Elements Accessible Description Computation"
+      "id": "other-form-elements-accessible-description-computation",
+      "level": 4,
+      "title": "Other Form Elements Accessible Description Computation",
+      "number": "5.7.2"
     },
     {
-      "id": "x5-8-summary-element",
-      "level": "3",
-      "title": "summary Element"
+      "id": "summary-element",
+      "level": 3,
+      "title": "summary Element",
+      "number": "5.8"
     },
     {
-      "id": "x5-8-1-summary-element-accessible-name-computation",
-      "level": "4",
-      "title": "summary Element Accessible Name Computation"
+      "id": "summary-element-accessible-name-computation",
+      "level": 4,
+      "title": "summary Element Accessible Name Computation",
+      "number": "5.8.1"
     },
     {
-      "id": "x5-8-2-summary-element-accessible-description-computation",
-      "level": "4",
-      "title": "summary Element Accessible Description Computation"
+      "id": "summary-element-accessible-description-computation",
+      "level": 4,
+      "title": "summary Element Accessible Description Computation",
+      "number": "5.8.2"
     },
     {
-      "id": "x5-9-figure-and-figcaption-elements",
-      "level": "3",
-      "title": "figure and figcaption Elements"
+      "id": "figure-and-figcaption-elements",
+      "level": 3,
+      "title": "figure and figcaption Elements",
+      "number": "5.9"
     },
     {
-      "id": "x5-9-1-figure-element-accessible-name-computation",
-      "level": "4",
-      "title": "figure Element Accessible Name Computation"
+      "id": "figure-element-accessible-name-computation",
+      "level": 4,
+      "title": "figure Element Accessible Name Computation",
+      "number": "5.9.1"
     },
     {
-      "id": "x5-9-2-figure-element-accessible-description-computation",
-      "level": "4",
-      "title": "figure Element Accessible Description Computation"
+      "id": "figure-element-accessible-description-computation",
+      "level": 4,
+      "title": "figure Element Accessible Description Computation",
+      "number": "5.9.2"
     },
     {
-      "id": "x5-10-img-element",
-      "level": "3",
-      "title": "img Element"
+      "id": "img-element",
+      "level": 3,
+      "title": "img Element",
+      "number": "5.10"
     },
     {
-      "id": "x5-10-1-img-element-accessible-name-computation",
-      "level": "4",
-      "title": "img Element Accessible Name Computation"
+      "id": "img-element-accessible-name-computation",
+      "level": 4,
+      "title": "img Element Accessible Name Computation",
+      "number": "5.10.1"
     },
     {
-      "id": "x5-10-2-img-element-accessible-description-computation",
-      "level": "4",
-      "title": "img Element Accessible Description Computation"
+      "id": "img-element-accessible-description-computation",
+      "level": 4,
+      "title": "img Element Accessible Description Computation",
+      "number": "5.10.2"
     },
     {
-      "id": "x5-11-table-element",
-      "level": "3",
-      "title": "table Element"
+      "id": "table-element",
+      "level": 3,
+      "title": "table Element",
+      "number": "5.11"
     },
     {
-      "id": "x5-11-1-table-element-accessible-name-computation",
-      "level": "4",
-      "title": "table Element Accessible Name Computation"
+      "id": "table-element-accessible-name-computation",
+      "level": 4,
+      "title": "table Element Accessible Name Computation",
+      "number": "5.11.1"
     },
     {
-      "id": "x5-11-2-table-element-accessible-description-computation",
-      "level": "4",
-      "title": "table Element Accessible Description Computation"
+      "id": "table-element-accessible-description-computation",
+      "level": 4,
+      "title": "table Element Accessible Description Computation",
+      "number": "5.11.2"
     },
     {
-      "id": "x5-12-other-tabular-data-elements",
-      "level": "3",
-      "title": "Other Tabular data elements"
+      "id": "other-tabular-data-elements",
+      "level": 3,
+      "title": "Other Tabular data elements",
+      "number": "5.12"
     },
     {
-      "id": "x5-12-1-tr-td-th-elements-accessible-name-computation",
-      "level": "4",
-      "title": "tr, td, th Elements Accessible Name Computation"
+      "id": "tr-td-th-elements-accessible-name-computation",
+      "level": 4,
+      "title": "tr, td, th Elements Accessible Name Computation",
+      "number": "5.12.1"
     },
     {
-      "id": "x5-12-2-tr-td-th-elements-accessible-description-computation",
-      "level": "4",
-      "title": "tr, td, th Elements Accessible Description Computation"
+      "id": "tr-td-th-elements-accessible-description-computation",
+      "level": 4,
+      "title": "tr, td, th Elements Accessible Description Computation",
+      "number": "5.12.2"
     },
     {
-      "id": "x5-13-a-element",
-      "level": "3",
-      "title": "a Element"
+      "id": "a-element",
+      "level": 3,
+      "title": "a Element",
+      "number": "5.13"
     },
     {
-      "id": "x5-13-1-a-element-accessible-name-computation",
-      "level": "4",
-      "title": "a Element Accessible Name Computation"
+      "id": "a-element-accessible-name-computation",
+      "level": 4,
+      "title": "a Element Accessible Name Computation",
+      "number": "5.13.1"
     },
     {
-      "id": "x5-13-2-a-element-accessible-description-computation",
-      "level": "4",
-      "title": "a Element Accessible Description Computation"
+      "id": "a-element-accessible-description-computation",
+      "level": 4,
+      "title": "a Element Accessible Description Computation",
+      "number": "5.13.2"
     },
     {
-      "id": "x5-14-area-element",
-      "level": "3",
-      "title": "area Element"
+      "id": "area-element",
+      "level": 3,
+      "title": "area Element",
+      "number": "5.14"
     },
     {
-      "id": "x5-14-1-area-element-accessible-name-computation",
-      "level": "4",
-      "title": "area Element Accessible Name Computation"
+      "id": "area-element-accessible-name-computation",
+      "level": 4,
+      "title": "area Element Accessible Name Computation",
+      "number": "5.14.1"
     },
     {
-      "id": "x5-14-2-area-element-accessible-description-computation",
-      "level": "4",
-      "title": "area Element Accessible Description Computation"
+      "id": "area-element-accessible-description-computation",
+      "level": 4,
+      "title": "area Element Accessible Description Computation",
+      "number": "5.14.2"
     },
     {
-      "id": "x5-15-iframe-element",
-      "level": "3",
-      "title": "iframe Element"
+      "id": "iframe-element",
+      "level": 3,
+      "title": "iframe Element",
+      "number": "5.15"
     },
     {
-      "id": "x5-15-1-iframe-element-accessible-name-computation",
-      "level": "4",
-      "title": "iframe Element Accessible Name Computation"
+      "id": "iframe-element-accessible-name-computation",
+      "level": 4,
+      "title": "iframe Element Accessible Name Computation",
+      "number": "5.15.1"
     },
     {
-      "id": "x5-15-2-iframe-element-accessible-description-computation",
-      "level": "4",
-      "title": "iframe Element Accessible Description Computation"
+      "id": "iframe-element-accessible-description-computation",
+      "level": 4,
+      "title": "iframe Element Accessible Description Computation",
+      "number": "5.15.2"
     },
     {
-      "id": "x5-16-section-elements-and-grouping-content-elements-not-listed-elsewhere",
-      "level": "3",
-      "title": "Section Elements and Grouping Content Elements Not listed Elsewhere"
+      "id": "section-elements-and-grouping-content-elements-not-listed-elsewhere",
+      "level": 3,
+      "title": "Section Elements and Grouping Content Elements Not listed Elsewhere",
+      "number": "5.16"
     },
     {
-      "id": "x5-16-1-section-and-grouping-element-accessible-name-computation",
-      "level": "4",
-      "title": "Section and Grouping Element Accessible Name Computation"
+      "id": "section-and-grouping-element-accessible-name-computation",
+      "level": 4,
+      "title": "Section and Grouping Element Accessible Name Computation",
+      "number": "5.16.1"
     },
     {
-      "id": "x5-16-2-section-and-grouping-element-accessible-description-computation",
-      "level": "4",
-      "title": "Section and Grouping Element Accessible Description Computation"
+      "id": "section-and-grouping-element-accessible-description-computation",
+      "level": 4,
+      "title": "Section and Grouping Element Accessible Description Computation",
+      "number": "5.16.2"
     },
     {
-      "id": "x5-17-text-level-elements-not-listed-elsewhere",
-      "level": "3",
-      "title": "Text Level Elements Not Listed Elsewhere"
+      "id": "text-level-elements-not-listed-elsewhere",
+      "level": 3,
+      "title": "Text Level Elements Not Listed Elsewhere",
+      "number": "5.17"
     },
     {
-      "id": "x5-17-1-text-level-element-accessible-name-computation",
-      "level": "4",
-      "title": "Text Level Element Accessible Name Computation"
+      "id": "text-level-element-accessible-name-computation",
+      "level": 4,
+      "title": "Text Level Element Accessible Name Computation",
+      "number": "5.17.1"
     },
     {
-      "id": "x5-17-2-text-level-element-accessible-description-computation",
-      "level": "4",
-      "title": "Text Level Element Accessible Description Computation"
+      "id": "text-level-element-accessible-description-computation",
+      "level": 4,
+      "title": "Text Level Element Accessible Description Computation",
+      "number": "5.17.2"
     },
     {
-      "id": "x6-accessible-feature-implementation-examples",
-      "level": "2",
-      "title": "Accessible Feature Implementation Examples"
+      "id": "accessible-feature-implementation-examples",
+      "level": 2,
+      "title": "Accessible Feature Implementation Examples",
+      "number": "6"
     },
     {
-      "id": "x6-1-summary-and-details-elements",
-      "level": "3",
-      "title": "summary and details Elements"
+      "id": "summary-and-details-elements",
+      "level": 3,
+      "title": "summary and details Elements",
+      "number": "6.1"
     },
     {
-      "id": "x6-1-1-focus-and-keyboard-interaction",
-      "level": "4",
-      "title": "Focus and Keyboard Interaction"
+      "id": "focus-and-keyboard-interaction",
+      "level": 4,
+      "title": "Focus and Keyboard Interaction",
+      "number": "6.1.1"
     },
     {
-      "id": "x6-1-2-role-name-state-and-property-mapping",
-      "level": "4",
-      "title": "Role, Name, State and Property Mapping"
+      "id": "role-name-state-and-property-mapping",
+      "level": 4,
+      "title": "Role, Name, State and Property Mapping",
+      "number": "6.1.2"
     },
     {
-      "id": "x6-2-the-figure-and-figcaption-elements",
-      "level": "3",
-      "title": "The figure and figcaption Elements"
+      "id": "the-figure-and-figcaption-elements",
+      "level": 3,
+      "title": "The figure and figcaption Elements",
+      "number": "6.2"
     },
     {
-      "id": "a-appendices",
-      "level": "2",
-      "title": "A. Appendices"
+      "id": "appendices",
+      "level": 2,
+      "title": "Appendices",
+      "number": "A"
     },
     {
-      "id": "a-1-change-log",
-      "level": "3",
-      "title": "A.1 Change Log"
+      "id": "changelog",
+      "level": 3,
+      "title": "Change Log",
+      "number": "A.1"
     },
     {
-      "id": "a-1-1-substantive-changes-since-moving-entirely-to-the-web-application-working-group-formerly-web-platform-wg-01-oct-2016",
-      "level": "4",
-      "title": "A.1.1 Substantive changes since moving entirely to the Web Application Working Group (formerly Web Platform WG) (01-Oct-2016)"
+      "id": "substantive-changes-since-moving-entirely-to-the-web-application-working-group-formerly-web-platform-wg-01-oct-2016",
+      "level": 4,
+      "title": "Substantive changes since moving entirely to the Web Application Working Group (formerly Web Platform WG) (01-Oct-2016)",
+      "number": "A.1.1"
     },
     {
-      "id": "a-2-acknowledgments",
-      "level": "3",
-      "title": "A.2 Acknowledgments"
+      "id": "acknowledgements",
+      "level": 3,
+      "title": "Acknowledgments",
+      "number": "A.2"
     },
     {
-      "id": "a-2-1-participants-active-in-the-html-accessibility-task-force-active-at-the-time-of-publication",
-      "level": "4",
-      "title": "A.2.1 Participants active in the HTML Accessibility Task Force active at the time of publication"
+      "id": "ack_group",
+      "level": 4,
+      "title": "Participants active in the HTML Accessibility Task Force active at the time of publication",
+      "number": "A.2.1"
     },
     {
-      "id": "a-2-2-enabling-funders",
-      "level": "4",
-      "title": "A.2.2 Enabling funders"
+      "id": "ack_funders",
+      "level": 4,
+      "title": "Enabling funders",
+      "number": "A.2.2"
     },
     {
-      "id": "b-references",
-      "level": "2",
-      "title": "B. References"
+      "id": "references",
+      "level": 2,
+      "title": "References",
+      "number": "B"
     },
     {
-      "id": "b-1-normative-references",
-      "level": "3",
-      "title": "B.1 \n        Normative references"
+      "id": "normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "B.1"
     },
     {
-      "id": "b-2-informative-references",
-      "level": "3",
-      "title": "B.2 \n        Informative references"
+      "id": "informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "B.2"
     }
   ]
 }

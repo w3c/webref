@@ -1,0 +1,205 @@
+{
+  "spec": {
+    "title": "Idle Detection API",
+    "url": "https://wicg.github.io/idle-detection/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": 1,
+      "title": "Idle Detection API"
+    },
+    {
+      "id": "subtitle",
+      "level": 2,
+      "title": "Draft Community Group Report, 2 October 2020"
+    },
+    {
+      "id": "abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "alternatives-considered",
+      "level": 3,
+      "title": "Alternatives Considered",
+      "number": "1.1"
+    },
+    {
+      "id": "api",
+      "level": 2,
+      "title": "Observing User Presence",
+      "number": "2"
+    },
+    {
+      "id": "api-model",
+      "level": 3,
+      "title": "Model",
+      "number": "2.1"
+    },
+    {
+      "id": "api-useridlestate",
+      "level": 4,
+      "title": "The UserIdleState enum",
+      "number": "2.1.1"
+    },
+    {
+      "id": "api-screenidlestate",
+      "level": 4,
+      "title": "The ScreenIdleState enum",
+      "number": "2.1.2"
+    },
+    {
+      "id": "api-permissions",
+      "level": 3,
+      "title": "Permissions",
+      "number": "2.2"
+    },
+    {
+      "id": "api-permissions-policy",
+      "level": 3,
+      "title": "Permissions policy",
+      "number": "2.3"
+    },
+    {
+      "id": "api-idledetector",
+      "level": 3,
+      "title": "The IdleDetector interface",
+      "number": "2.4"
+    },
+    {
+      "id": "api-idledetector-userstate",
+      "level": 4,
+      "title": "userState attribute",
+      "number": "2.4.1"
+    },
+    {
+      "id": "api-idledetector-screenstate",
+      "level": 4,
+      "title": "screenState attribute",
+      "number": "2.4.2"
+    },
+    {
+      "id": "api-idledetector-onchange",
+      "level": 4,
+      "title": "onchange attribute",
+      "number": "2.4.3"
+    },
+    {
+      "id": "api-idledetector-requestpermission",
+      "level": 4,
+      "title": "requestPermission() method",
+      "number": "2.4.4"
+    },
+    {
+      "id": "api-idledetector-start",
+      "level": 4,
+      "title": "start() method",
+      "number": "2.4.5"
+    },
+    {
+      "id": "state-changes",
+      "level": 4,
+      "title": "Reacting to state changes",
+      "number": "2.4.6"
+    },
+    {
+      "id": "security-and-privacy",
+      "level": 2,
+      "title": "Security and privacy considerations",
+      "number": "3"
+    },
+    {
+      "id": "privacy-cross-origin-leakage",
+      "level": 3,
+      "title": "Cross-origin information leakage",
+      "number": "3.1"
+    },
+    {
+      "id": "privacy-behavior-tracking",
+      "level": 3,
+      "title": "Behavior tracking",
+      "number": "3.2"
+    },
+    {
+      "id": "privacy-user-coercion",
+      "level": 3,
+      "title": "User coercion",
+      "number": "3.3"
+    },
+    {
+      "id": "accessibility",
+      "level": 2,
+      "title": "Accessibility considerations",
+      "number": "4"
+    },
+    {
+      "id": "internationalization",
+      "level": 2,
+      "title": "Internationalization considerations",
+      "number": "5"
+    },
+    {
+      "id": "acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "6"
+    },
+    {
+      "id": "conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

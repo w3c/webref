@@ -6,407 +6,470 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "WebXR Device API"
     },
     {
       "id": "subtitle",
-      "level": "2",
+      "level": 2,
       "title": "W3C Working Draft, 24 July 2020"
     },
     {
       "id": "abstract",
-      "level": "2",
+      "level": 2,
       "title": "Abstract"
     },
     {
       "id": "status",
-      "level": "2",
+      "level": 2,
       "title": "Status of this document"
     },
     {
-      "id": "contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "intro",
-      "level": "2",
-      "title": "Introduction"
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
       "id": "terminology",
-      "level": "3",
-      "title": "Terminology"
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.1"
     },
     {
       "id": "applicationflow",
-      "level": "3",
-      "title": "Application flow"
+      "level": 3,
+      "title": "Application flow",
+      "number": "1.2"
     },
     {
       "id": "model",
-      "level": "2",
-      "title": "Model"
+      "level": 2,
+      "title": "Model",
+      "number": "2"
     },
     {
       "id": "xr-device-concept",
-      "level": "3",
-      "title": "XR device"
+      "level": 3,
+      "title": "XR device",
+      "number": "2.1"
     },
     {
       "id": "initialization",
-      "level": "2",
-      "title": "Initialization"
+      "level": 2,
+      "title": "Initialization",
+      "number": "3"
     },
     {
       "id": "navigator-xr-attribute",
-      "level": "3",
-      "title": "navigator.xr"
+      "level": 3,
+      "title": "navigator.xr",
+      "number": "3.1"
     },
     {
       "id": "xrsystem-interface",
-      "level": "3",
-      "title": "XRSystem"
+      "level": 3,
+      "title": "XRSystem",
+      "number": "3.2"
     },
     {
       "id": "xrsessionmode-enum",
-      "level": "3",
-      "title": "XRSessionMode"
+      "level": 3,
+      "title": "XRSessionMode",
+      "number": "3.3"
     },
     {
       "id": "feature-dependencies",
-      "level": "3",
-      "title": "Feature Dependencies"
+      "level": 3,
+      "title": "Feature Dependencies",
+      "number": "3.4"
     },
     {
       "id": "session",
-      "level": "2",
-      "title": "Session"
+      "level": 2,
+      "title": "Session",
+      "number": "4"
     },
     {
       "id": "xrsession-interface",
-      "level": "3",
-      "title": "XRSession"
+      "level": 3,
+      "title": "XRSession",
+      "number": "4.1"
     },
     {
       "id": "xrrenderstate-interface",
-      "level": "3",
-      "title": "XRRenderState"
+      "level": 3,
+      "title": "XRRenderState",
+      "number": "4.2"
     },
     {
       "id": "animation-frames",
-      "level": "3",
-      "title": "Animation Frames"
+      "level": 3,
+      "title": "Animation Frames",
+      "number": "4.3"
     },
     {
       "id": "compositor",
-      "level": "3",
-      "title": "The XR Compositor"
+      "level": 3,
+      "title": "The XR Compositor",
+      "number": "4.4"
     },
     {
       "id": "frame",
-      "level": "2",
-      "title": "Frame Loop"
+      "level": 2,
+      "title": "Frame Loop",
+      "number": "5"
     },
     {
       "id": "xrframe-interface",
-      "level": "3",
-      "title": "XRFrame"
+      "level": 3,
+      "title": "XRFrame",
+      "number": "5.1"
     },
     {
       "id": "spaces",
-      "level": "2",
-      "title": "Spaces"
+      "level": 2,
+      "title": "Spaces",
+      "number": "6"
     },
     {
       "id": "xrspace-interface",
-      "level": "3",
-      "title": "XRSpace"
+      "level": 3,
+      "title": "XRSpace",
+      "number": "6.1"
     },
     {
       "id": "xrreferencespace-interface",
-      "level": "3",
-      "title": "XRReferenceSpace"
+      "level": 3,
+      "title": "XRReferenceSpace",
+      "number": "6.2"
     },
     {
       "id": "xrboundedreferencespace-interface",
-      "level": "3",
-      "title": "XRBoundedReferenceSpace"
+      "level": 3,
+      "title": "XRBoundedReferenceSpace",
+      "number": "6.3"
     },
     {
       "id": "views",
-      "level": "2",
-      "title": "Views"
+      "level": 2,
+      "title": "Views",
+      "number": "7"
     },
     {
       "id": "xrview-interface",
-      "level": "3",
-      "title": "XRView"
+      "level": 3,
+      "title": "XRView",
+      "number": "7.1"
     },
     {
       "id": "primary-and-secondary-views",
-      "level": "3",
-      "title": "Primary and Secondary Views"
+      "level": 3,
+      "title": "Primary and Secondary Views",
+      "number": "7.2"
     },
     {
       "id": "xrviewport-interface",
-      "level": "3",
-      "title": "XRViewport"
+      "level": 3,
+      "title": "XRViewport",
+      "number": "7.3"
     },
     {
       "id": "geometricprimitives",
-      "level": "2",
-      "title": "Geometric Primitives"
+      "level": 2,
+      "title": "Geometric Primitives",
+      "number": "8"
     },
     {
       "id": "matrices",
-      "level": "3",
-      "title": "Matrices"
+      "level": 3,
+      "title": "Matrices",
+      "number": "8.1"
     },
     {
       "id": "normalization",
-      "level": "3",
-      "title": "Normalization"
+      "level": 3,
+      "title": "Normalization",
+      "number": "8.2"
     },
     {
       "id": "xrrigidtransform-interface",
-      "level": "3",
-      "title": "XRRigidTransform"
+      "level": 3,
+      "title": "XRRigidTransform",
+      "number": "8.3"
     },
     {
       "id": "pose",
-      "level": "2",
-      "title": "Pose"
+      "level": 2,
+      "title": "Pose",
+      "number": "9"
     },
     {
       "id": "xrpose-interface",
-      "level": "3",
-      "title": "XRPose"
+      "level": 3,
+      "title": "XRPose",
+      "number": "9.1"
     },
     {
       "id": "xrviewerpose-interface",
-      "level": "3",
-      "title": "XRViewerPose"
+      "level": 3,
+      "title": "XRViewerPose",
+      "number": "9.2"
     },
     {
       "id": "input",
-      "level": "2",
-      "title": "Input"
+      "level": 2,
+      "title": "10. Input"
     },
     {
       "id": "xrinputsource-interface",
-      "level": "3",
-      "title": "XRInputSource"
+      "level": 3,
+      "title": "XRInputSource",
+      "number": "10.1"
     },
     {
       "id": "transient-input",
-      "level": "3",
-      "title": "Transient input"
+      "level": 3,
+      "title": "Transient input",
+      "number": "10.2"
     },
     {
       "id": "xrinputsourcearray-interface",
-      "level": "3",
-      "title": "XRInputSourceArray"
+      "level": 3,
+      "title": "XRInputSourceArray",
+      "number": "10.3"
     },
     {
       "id": "layers",
-      "level": "2",
-      "title": "Layers"
+      "level": 2,
+      "title": "11. Layers"
     },
     {
       "id": "xrlayer-interface",
-      "level": "3",
-      "title": "XRLayer"
+      "level": 3,
+      "title": "XRLayer",
+      "number": "11.1"
     },
     {
       "id": "xrwebgllayer-interface",
-      "level": "3",
-      "title": "XRWebGLLayer"
+      "level": 3,
+      "title": "XRWebGLLayer",
+      "number": "11.2"
     },
     {
       "id": "contextcompatibility",
-      "level": "3",
-      "title": "WebGL Context Compatibility"
+      "level": 3,
+      "title": "WebGL Context Compatibility",
+      "number": "11.3"
     },
     {
       "id": "events",
-      "level": "2",
-      "title": "Events"
+      "level": 2,
+      "title": "12. Events"
     },
     {
       "id": "xrsessionevent-interface",
-      "level": "3",
-      "title": "XRSessionEvent"
+      "level": 3,
+      "title": "XRSessionEvent",
+      "number": "12.1"
     },
     {
       "id": "xrinputsourceevent-interface",
-      "level": "3",
-      "title": "XRInputSourceEvent"
+      "level": 3,
+      "title": "XRInputSourceEvent",
+      "number": "12.2"
     },
     {
       "id": "xrinputsourceschangeevent-interface",
-      "level": "3",
-      "title": "XRInputSourcesChangeEvent"
+      "level": 3,
+      "title": "XRInputSourcesChangeEvent",
+      "number": "12.3"
     },
     {
       "id": "xrreferencespaceevent-interface",
-      "level": "3",
-      "title": "XRReferenceSpaceEvent"
+      "level": 3,
+      "title": "XRReferenceSpaceEvent",
+      "number": "12.4"
     },
     {
       "id": "event-types",
-      "level": "3",
-      "title": "Event Types"
+      "level": 3,
+      "title": "Event Types",
+      "number": "12.5"
     },
     {
       "id": "security",
-      "level": "2",
-      "title": "Security, Privacy, and Comfort Considerations"
+      "level": 2,
+      "title": "13. Security, Privacy, and Comfort Considerations"
     },
     {
       "id": "sensitive-information-header",
-      "level": "3",
-      "title": "Sensitive Information"
+      "level": 3,
+      "title": "Sensitive Information",
+      "number": "13.1"
     },
     {
       "id": "user-intention",
-      "level": "3",
-      "title": "User intention"
+      "level": 3,
+      "title": "User intention",
+      "number": "13.2"
     },
     {
       "id": "user-activation",
-      "level": "4",
-      "title": "User activation"
+      "level": 4,
+      "title": "User activation",
+      "number": "13.2.1"
     },
     {
       "id": "application-launch",
-      "level": "4",
-      "title": "Launching a web application"
+      "level": 4,
+      "title": "Launching a web application",
+      "number": "13.2.2"
     },
     {
       "id": "user-consent",
-      "level": "4",
-      "title": "Implicit and Explicit consent"
+      "level": 4,
+      "title": "Implicit and Explicit consent",
+      "number": "13.2.3"
     },
     {
       "id": "consent-duration",
-      "level": "4",
-      "title": "Duration of consent"
+      "level": 4,
+      "title": "Duration of consent",
+      "number": "13.2.4"
     },
     {
       "id": "mid-session-consent",
-      "level": "3",
-      "title": "Mid-session consent"
+      "level": 3,
+      "title": "Mid-session consent",
+      "number": "13.3"
     },
     {
       "id": "data-adjustments-header",
-      "level": "3",
-      "title": "Data adjustments"
+      "level": 3,
+      "title": "Data adjustments",
+      "number": "13.4"
     },
     {
       "id": "throttling-header",
-      "level": "4",
-      "title": "Throttling"
+      "level": 4,
+      "title": "Throttling",
+      "number": "13.4.1"
     },
     {
       "id": "rounding-and-friends",
-      "level": "4",
-      "title": "Rounding, quantization, and fuzzing"
+      "level": 4,
+      "title": "Rounding, quantization, and fuzzing",
+      "number": "13.4.2"
     },
     {
       "id": "limiting-header",
-      "level": "4",
-      "title": "Limiting"
+      "level": 4,
+      "title": "Limiting",
+      "number": "13.4.3"
     },
     {
       "id": "protected-functionality",
-      "level": "3",
-      "title": "Protected functionality"
+      "level": 3,
+      "title": "Protected functionality",
+      "number": "13.5"
     },
     {
       "id": "protect-immersiveness",
-      "level": "4",
-      "title": "Immersiveness"
+      "level": 4,
+      "title": "Immersiveness",
+      "number": "13.5.1"
     },
     {
       "id": "protect-poses",
-      "level": "4",
-      "title": "Poses"
+      "level": 4,
+      "title": "Poses",
+      "number": "13.5.2"
     },
     {
       "id": "protect-reference-spaces",
-      "level": "4",
-      "title": "Reference spaces"
+      "level": 4,
+      "title": "Reference spaces",
+      "number": "13.5.3"
     },
     {
       "id": "trustedenvironment-security",
-      "level": "3",
-      "title": "Trusted Environment"
+      "level": 3,
+      "title": "Trusted Environment",
+      "number": "13.6"
     },
     {
       "id": "contextisolation-security",
-      "level": "3",
-      "title": "Context Isolation"
+      "level": 3,
+      "title": "Context Isolation",
+      "number": "13.7"
     },
     {
       "id": "fingerprinting-security",
-      "level": "3",
-      "title": "Fingerprinting"
+      "level": 3,
+      "title": "Fingerprinting",
+      "number": "13.8"
     },
     {
       "id": "integrations",
-      "level": "2",
-      "title": "Integrations"
+      "level": 2,
+      "title": "14. Integrations"
     },
     {
       "id": "feature-policy",
-      "level": "3",
-      "title": "Feature Policy"
+      "level": 3,
+      "title": "Feature Policy",
+      "number": "14.1"
     },
     {
       "id": "permissions",
-      "level": "3",
-      "title": "Permissions API Integration"
+      "level": 3,
+      "title": "Permissions API Integration",
+      "number": "14.2"
     },
     {
       "id": "ack",
-      "level": "2",
-      "title": "Acknowledgements"
+      "level": 2,
+      "title": "15. Acknowledgements"
     },
     {
       "id": "index",
-      "level": "2",
+      "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "level": "2",
+      "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "level": "3",
+      "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "level": "3",
+      "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
-      "level": "2",
+      "level": 2,
       "title": "IDL Index"
     }
   ]

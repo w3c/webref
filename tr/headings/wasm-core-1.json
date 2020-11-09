@@ -6,2597 +6,3018 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "WebAssembly Core Specification"
     },
     {
       "id": "subtitle",
-      "level": "2",
+      "level": 2,
       "title": "W3C Recommendation, 5 December 2019"
     },
     {
       "id": "abstract",
-      "level": "2",
+      "level": 2,
       "title": "Abstract"
     },
     {
       "id": "status",
-      "level": "2",
+      "level": 2,
       "title": "Status of this document"
     },
     {
-      "id": "contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "introduction①",
-      "level": "2",
-      "title": "Introduction"
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
       "id": "introduction③",
-      "level": "3",
-      "title": "Introduction"
+      "level": 3,
+      "title": "Introduction",
+      "number": "1.1"
     },
     {
       "id": "design-goals①",
-      "level": "4",
-      "title": "Design Goals"
+      "level": 4,
+      "title": "Design Goals",
+      "number": "1.1.1"
     },
     {
       "id": "scope①",
-      "level": "4",
-      "title": "Scope"
+      "level": 4,
+      "title": "Scope",
+      "number": "1.1.2"
     },
     {
       "id": "security-considerations①",
-      "level": "3",
-      "title": "Security Considerations"
+      "level": 3,
+      "title": "Security Considerations",
+      "number": "1.2"
     },
     {
       "id": "dependencies①",
-      "level": "4",
-      "title": "Dependencies"
+      "level": 4,
+      "title": "Dependencies",
+      "number": "1.2.1"
     },
     {
       "id": "overview①",
-      "level": "3",
-      "title": "Overview"
+      "level": 3,
+      "title": "Overview",
+      "number": "1.3"
     },
     {
       "id": "concepts①",
-      "level": "4",
-      "title": "Concepts"
+      "level": 4,
+      "title": "Concepts",
+      "number": "1.3.1"
     },
     {
       "id": "semantic-phases①",
-      "level": "4",
-      "title": "Semantic Phases"
+      "level": 4,
+      "title": "Semantic Phases",
+      "number": "1.3.2"
     },
     {
       "id": "structure①",
-      "level": "2",
-      "title": "Structure"
+      "level": 2,
+      "title": "Structure",
+      "number": "2"
     },
     {
       "id": "conventions①",
-      "level": "3",
-      "title": "Conventions"
+      "level": 3,
+      "title": "Conventions",
+      "number": "2.1"
     },
     {
       "id": "grammar-notation①",
-      "level": "4",
-      "title": "Grammar Notation"
+      "level": 4,
+      "title": "Grammar Notation",
+      "number": "2.1.1"
     },
     {
       "id": "auxiliary-notation①",
-      "level": "4",
-      "title": "Auxiliary Notation"
+      "level": 4,
+      "title": "Auxiliary Notation",
+      "number": "2.1.2"
     },
     {
       "id": "vectors①",
-      "level": "4",
-      "title": "Vectors"
+      "level": 4,
+      "title": "Vectors",
+      "number": "2.1.3"
     },
     {
       "id": "values①",
-      "level": "3",
-      "title": "Values"
+      "level": 3,
+      "title": "Values",
+      "number": "2.2"
     },
     {
       "id": "bytes①",
-      "level": "4",
-      "title": "Bytes"
+      "level": 4,
+      "title": "Bytes",
+      "number": "2.2.1"
     },
     {
       "id": "conventions③",
-      "level": "5",
-      "title": "Conventions"
+      "level": 5,
+      "title": "Conventions",
+      "number": "2.2.1.1"
     },
     {
       "id": "integers①",
-      "level": "4",
-      "title": "Integers"
+      "level": 4,
+      "title": "Integers",
+      "number": "2.2.2"
     },
     {
       "id": "conventions④",
-      "level": "5",
-      "title": "Conventions"
+      "level": 5,
+      "title": "Conventions",
+      "number": "2.2.2.1"
     },
     {
       "id": "floating-point①",
-      "level": "4",
-      "title": "Floating-Point"
+      "level": 4,
+      "title": "Floating-Point",
+      "number": "2.2.3"
     },
     {
       "id": "conventions⑤",
-      "level": "5",
-      "title": "Conventions"
+      "level": 5,
+      "title": "Conventions",
+      "number": "2.2.3.1"
     },
     {
       "id": "names①",
-      "level": "4",
-      "title": "Names"
+      "level": 4,
+      "title": "Names",
+      "number": "2.2.4"
     },
     {
       "id": "convention①",
-      "level": "5",
-      "title": "Convention"
+      "level": 5,
+      "title": "Convention",
+      "number": "2.2.4.1"
     },
     {
       "id": "types①",
-      "level": "3",
-      "title": "Types"
+      "level": 3,
+      "title": "Types",
+      "number": "2.3"
     },
     {
       "id": "value-types①",
-      "level": "4",
-      "title": "Value Types"
+      "level": 4,
+      "title": "Value Types",
+      "number": "2.3.1"
     },
     {
       "id": "conventions⑦",
-      "level": "5",
-      "title": "Conventions"
+      "level": 5,
+      "title": "Conventions",
+      "number": "2.3.1.1"
     },
     {
       "id": "result-types①",
-      "level": "4",
-      "title": "Result Types"
+      "level": 4,
+      "title": "Result Types",
+      "number": "2.3.2"
     },
     {
       "id": "function-types①",
-      "level": "4",
-      "title": "Function Types"
+      "level": 4,
+      "title": "Function Types",
+      "number": "2.3.3"
     },
     {
       "id": "limits①",
-      "level": "4",
-      "title": "Limits"
+      "level": 4,
+      "title": "Limits",
+      "number": "2.3.4"
     },
     {
       "id": "memory-types①",
-      "level": "4",
-      "title": "Memory Types"
+      "level": 4,
+      "title": "Memory Types",
+      "number": "2.3.5"
     },
     {
       "id": "table-types①",
-      "level": "4",
-      "title": "Table Types"
+      "level": 4,
+      "title": "Table Types",
+      "number": "2.3.6"
     },
     {
       "id": "global-types①",
-      "level": "4",
-      "title": "Global Types"
+      "level": 4,
+      "title": "Global Types",
+      "number": "2.3.7"
     },
     {
       "id": "external-types①",
-      "level": "4",
-      "title": "External Types"
+      "level": 4,
+      "title": "External Types",
+      "number": "2.3.8"
     },
     {
       "id": "conventions⑧",
-      "level": "5",
-      "title": "Conventions"
+      "level": 5,
+      "title": "Conventions",
+      "number": "2.3.8.1"
     },
     {
       "id": "instructions①",
-      "level": "3",
-      "title": "Instructions"
+      "level": 3,
+      "title": "Instructions",
+      "number": "2.4"
     },
     {
       "id": "numeric-instructions①",
-      "level": "4",
-      "title": "Numeric Instructions"
+      "level": 4,
+      "title": "Numeric Instructions",
+      "number": "2.4.1"
     },
     {
       "id": "conventions①⓪",
-      "level": "5",
-      "title": "Conventions"
+      "level": 5,
+      "title": "Conventions",
+      "number": "2.4.1.1"
     },
     {
       "id": "parametric-instructions①",
-      "level": "4",
-      "title": "Parametric Instructions"
+      "level": 4,
+      "title": "Parametric Instructions",
+      "number": "2.4.2"
     },
     {
       "id": "variable-instructions①",
-      "level": "4",
-      "title": "Variable Instructions"
+      "level": 4,
+      "title": "Variable Instructions",
+      "number": "2.4.3"
     },
     {
       "id": "memory-instructions①",
-      "level": "4",
-      "title": "Memory Instructions"
+      "level": 4,
+      "title": "Memory Instructions",
+      "number": "2.4.4"
     },
     {
       "id": "control-instructions①",
-      "level": "4",
-      "title": "Control Instructions"
+      "level": 4,
+      "title": "Control Instructions",
+      "number": "2.4.5"
     },
     {
       "id": "expressions①",
-      "level": "4",
-      "title": "Expressions"
+      "level": 4,
+      "title": "Expressions",
+      "number": "2.4.6"
     },
     {
       "id": "modules①",
-      "level": "3",
-      "title": "Modules"
+      "level": 3,
+      "title": "Modules",
+      "number": "2.5"
     },
     {
       "id": "indices①",
-      "level": "4",
-      "title": "Indices"
+      "level": 4,
+      "title": "Indices",
+      "number": "2.5.1"
     },
     {
       "id": "conventions①②",
-      "level": "5",
-      "title": "Conventions"
+      "level": 5,
+      "title": "Conventions",
+      "number": "2.5.1.1"
     },
     {
       "id": "types③",
-      "level": "4",
-      "title": "Types"
+      "level": 4,
+      "title": "Types",
+      "number": "2.5.2"
     },
     {
       "id": "functions①",
-      "level": "4",
-      "title": "Functions"
+      "level": 4,
+      "title": "Functions",
+      "number": "2.5.3"
     },
     {
       "id": "tables①",
-      "level": "4",
-      "title": "Tables"
+      "level": 4,
+      "title": "Tables",
+      "number": "2.5.4"
     },
     {
       "id": "memories①",
-      "level": "4",
-      "title": "Memories"
+      "level": 4,
+      "title": "Memories",
+      "number": "2.5.5"
     },
     {
       "id": "globals①",
-      "level": "4",
-      "title": "Globals"
+      "level": 4,
+      "title": "Globals",
+      "number": "2.5.6"
     },
     {
       "id": "element-segments①",
-      "level": "4",
-      "title": "Element Segments"
+      "level": 4,
+      "title": "Element Segments",
+      "number": "2.5.7"
     },
     {
       "id": "data-segments①",
-      "level": "4",
-      "title": "Data Segments"
+      "level": 4,
+      "title": "Data Segments",
+      "number": "2.5.8"
     },
     {
       "id": "start-function①",
-      "level": "4",
-      "title": "Start Function"
+      "level": 4,
+      "title": "Start Function",
+      "number": "2.5.9"
     },
     {
       "id": "exports①",
-      "level": "4",
-      "title": "Exports"
+      "level": 4,
+      "title": "Exports",
+      "number": "2.5.10"
     },
     {
       "id": "conventions①③",
-      "level": "5",
-      "title": "Conventions"
+      "level": 5,
+      "title": "Conventions",
+      "number": "2.5.10.1"
     },
     {
       "id": "imports①",
-      "level": "4",
-      "title": "Imports"
+      "level": 4,
+      "title": "Imports",
+      "number": "2.5.11"
     },
     {
       "id": "validation②",
-      "level": "2",
-      "title": "Validation"
+      "level": 2,
+      "title": "Validation",
+      "number": "3"
     },
     {
       "id": "conventions①⑤",
-      "level": "3",
-      "title": "Conventions"
+      "level": 3,
+      "title": "Conventions",
+      "number": "3.1"
     },
     {
       "id": "contexts①",
-      "level": "4",
-      "title": "Contexts"
+      "level": 4,
+      "title": "Contexts",
+      "number": "3.1.1"
     },
     {
       "id": "prose-notation①",
-      "level": "4",
-      "title": "Prose Notation"
+      "level": 4,
+      "title": "Prose Notation",
+      "number": "3.1.2"
     },
     {
       "id": "formal-notation①",
-      "level": "4",
-      "title": "Formal Notation"
+      "level": 4,
+      "title": "Formal Notation",
+      "number": "3.1.3"
     },
     {
       "id": "types⑤",
-      "level": "3",
-      "title": "Types"
+      "level": 3,
+      "title": "Types",
+      "number": "3.2"
     },
     {
       "id": "limits③",
-      "level": "4",
-      "title": "Limits"
+      "level": 4,
+      "title": "Limits",
+      "number": "3.2.1"
     },
     {
       "id": "--hrefsyntax-limitsmathsfminn-hrefsyntax-limitsmathsfmaxm",
-      "level": "5",
-      "title": "{min n,max m?}"
+      "level": 5,
+      "title": "{min n,max m?}",
+      "number": "3.2.1.1"
     },
     {
       "id": "function-types③",
-      "level": "4",
-      "title": "Function Types"
+      "level": 4,
+      "title": "Function Types",
+      "number": "3.2.2"
     },
     {
       "id": "-t_1n-hrefsyntax-functyperightarrow-t_2m",
-      "level": "5",
-      "title": "[t1n​]→[t2m​]"
+      "level": 5,
+      "title": "[t1n​]→[t2m​]",
+      "number": "3.2.2.1"
     },
     {
       "id": "table-types③",
-      "level": "4",
-      "title": "Table Types"
+      "level": 4,
+      "title": "Table Types",
+      "number": "3.2.3"
     },
     {
       "id": "-hrefsyntax-limitsmathitlimitshrefsyntax-elemtypemathitelemtype",
-      "level": "5",
-      "title": "limits elemtype"
+      "level": 5,
+      "title": "limits elemtype",
+      "number": "3.2.3.1"
     },
     {
       "id": "memory-types③",
-      "level": "4",
-      "title": "Memory Types"
+      "level": 4,
+      "title": "Memory Types",
+      "number": "3.2.4"
     },
     {
       "id": "-hrefsyntax-limitsmathitlimits",
-      "level": "5",
-      "title": "limits"
+      "level": 5,
+      "title": "limits",
+      "number": "3.2.4.1"
     },
     {
       "id": "global-types③",
-      "level": "4",
-      "title": "Global Types"
+      "level": 4,
+      "title": "Global Types",
+      "number": "3.2.5"
     },
     {
       "id": "-hrefsyntax-mutmathitmuthrefsyntax-valtypemathitvaltype",
-      "level": "5",
-      "title": "mut valtype"
+      "level": 5,
+      "title": "mut valtype",
+      "number": "3.2.5.1"
     },
     {
       "id": "external-types③",
-      "level": "4",
-      "title": "External Types"
+      "level": 4,
+      "title": "External Types",
+      "number": "3.2.6"
     },
     {
       "id": "-hrefsyntax-externtypemathsffunchrefsyntax-functypemathitfunctype",
-      "level": "5",
-      "title": "func functype"
+      "level": 5,
+      "title": "func functype",
+      "number": "3.2.6.1"
     },
     {
       "id": "-hrefsyntax-externtypemathsftablehrefsyntax-tabletypemathittabletype",
-      "level": "5",
-      "title": "table tabletype"
+      "level": 5,
+      "title": "table tabletype",
+      "number": "3.2.6.2"
     },
     {
       "id": "-hrefsyntax-externtypemathsfmemhrefsyntax-memtypemathitmemtype",
-      "level": "5",
-      "title": "mem memtype"
+      "level": 5,
+      "title": "mem memtype",
+      "number": "3.2.6.3"
     },
     {
       "id": "-hrefsyntax-externtypemathsfglobalhrefsyntax-globaltypemathitglobaltype",
-      "level": "5",
-      "title": "global globaltype"
+      "level": 5,
+      "title": "global globaltype",
+      "number": "3.2.6.4"
     },
     {
       "id": "instructions③",
-      "level": "3",
-      "title": "Instructions"
+      "level": 3,
+      "title": "Instructions",
+      "number": "3.3"
     },
     {
       "id": "numeric-instructions③",
-      "level": "4",
-      "title": "Numeric Instructions"
+      "level": 4,
+      "title": "Numeric Instructions",
+      "number": "3.3.1"
     },
     {
       "id": "-tmathsfhrefsyntax-instr-numericmathsfconstc",
-      "level": "5",
-      "title": "t.const c"
+      "level": 5,
+      "title": "t.const c",
+      "number": "3.3.1.1"
     },
     {
       "id": "-tmathsfhrefsyntax-unopmathitunop",
-      "level": "5",
-      "title": "t.unop"
+      "level": 5,
+      "title": "t.unop",
+      "number": "3.3.1.2"
     },
     {
       "id": "-tmathsfhrefsyntax-binopmathitbinop",
-      "level": "5",
-      "title": "t.binop"
+      "level": 5,
+      "title": "t.binop",
+      "number": "3.3.1.3"
     },
     {
       "id": "-tmathsfhrefsyntax-testopmathittestop",
-      "level": "5",
-      "title": "t.testop"
+      "level": 5,
+      "title": "t.testop",
+      "number": "3.3.1.4"
     },
     {
       "id": "-tmathsfhrefsyntax-relopmathitrelop",
-      "level": "5",
-      "title": "t.relop"
+      "level": 5,
+      "title": "t.relop",
+      "number": "3.3.1.5"
     },
     {
       "id": "-t_2mathsfhrefsyntax-cvtopmathitcvtopmathsf_t_1mathsf_hrefsyntax-sxmathitsx",
-      "level": "5",
-      "title": "t2​.cvtop_t1​_sx?"
+      "level": 5,
+      "title": "t2​.cvtop_t1​_sx?",
+      "number": "3.3.1.6"
     },
     {
       "id": "parametric-instructions③",
-      "level": "4",
-      "title": "Parametric Instructions"
+      "level": 4,
+      "title": "Parametric Instructions",
+      "number": "3.3.2"
     },
     {
       "id": "-hrefsyntax-instr-parametricmathsfdrop",
-      "level": "5",
-      "title": "drop"
+      "level": 5,
+      "title": "drop",
+      "number": "3.3.2.1"
     },
     {
       "id": "-hrefsyntax-instr-parametricmathsfselect",
-      "level": "5",
-      "title": "select"
+      "level": 5,
+      "title": "select",
+      "number": "3.3.2.2"
     },
     {
       "id": "variable-instructions③",
-      "level": "4",
-      "title": "Variable Instructions"
+      "level": 4,
+      "title": "Variable Instructions",
+      "number": "3.3.3"
     },
     {
       "id": "-hrefsyntax-instr-variablemathsflocalgetx",
-      "level": "5",
-      "title": "local.get x"
+      "level": 5,
+      "title": "local.get x",
+      "number": "3.3.3.1"
     },
     {
       "id": "-hrefsyntax-instr-variablemathsflocalsetx",
-      "level": "5",
-      "title": "local.set x"
+      "level": 5,
+      "title": "local.set x",
+      "number": "3.3.3.2"
     },
     {
       "id": "-hrefsyntax-instr-variablemathsflocalteex",
-      "level": "5",
-      "title": "local.tee x"
+      "level": 5,
+      "title": "local.tee x",
+      "number": "3.3.3.3"
     },
     {
       "id": "-hrefsyntax-instr-variablemathsfglobalgetx",
-      "level": "5",
-      "title": "global.get x"
+      "level": 5,
+      "title": "global.get x",
+      "number": "3.3.3.4"
     },
     {
       "id": "-hrefsyntax-instr-variablemathsfglobalsetx",
-      "level": "5",
-      "title": "global.set x"
+      "level": 5,
+      "title": "global.set x",
+      "number": "3.3.3.5"
     },
     {
       "id": "memory-instructions③",
-      "level": "4",
-      "title": "Memory Instructions"
+      "level": 4,
+      "title": "Memory Instructions",
+      "number": "3.3.4"
     },
     {
       "id": "-tmathsfhrefsyntax-instr-memorymathsfloadhrefsyntax-memargmathitmemarg",
-      "level": "5",
-      "title": "t.load memarg"
+      "level": 5,
+      "title": "t.load memarg",
+      "number": "3.3.4.1"
     },
     {
       "id": "-tmathsfhrefsyntax-instr-memorymathsfloadnmathsf_hrefsyntax-sxmathitsxhrefsyntax-memargmathitmemarg",
-      "level": "5",
-      "title": "t.loadN_sx memarg"
+      "level": 5,
+      "title": "t.loadN_sx memarg",
+      "number": "3.3.4.2"
     },
     {
       "id": "-tmathsfhrefsyntax-instr-memorymathsfstorehrefsyntax-memargmathitmemarg",
-      "level": "5",
-      "title": "t.store memarg"
+      "level": 5,
+      "title": "t.store memarg",
+      "number": "3.3.4.3"
     },
     {
       "id": "-tmathsfhrefsyntax-instr-memorymathsfstorenhrefsyntax-memargmathitmemarg",
-      "level": "5",
-      "title": "t.storeN memarg"
+      "level": 5,
+      "title": "t.storeN memarg",
+      "number": "3.3.4.4"
     },
     {
       "id": "-hrefsyntax-instr-memorymathsfmemorysize",
-      "level": "5",
-      "title": "memory.size"
+      "level": 5,
+      "title": "memory.size",
+      "number": "3.3.4.5"
     },
     {
       "id": "-hrefsyntax-instr-memorymathsfmemorygrow",
-      "level": "5",
-      "title": "memory.grow"
+      "level": 5,
+      "title": "memory.grow",
+      "number": "3.3.4.6"
     },
     {
       "id": "control-instructions③",
-      "level": "4",
-      "title": "Control Instructions"
+      "level": 4,
+      "title": "Control Instructions",
+      "number": "3.3.5"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfnop",
-      "level": "5",
-      "title": "nop"
+      "level": 5,
+      "title": "nop",
+      "number": "3.3.5.1"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfunreachable",
-      "level": "5",
-      "title": "unreachable"
+      "level": 5,
+      "title": "unreachable",
+      "number": "3.3.5.2"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfblockthrefsyntax-instrmathitinstrasthrefsyntax-instr-controlmathsfend",
-      "level": "5",
-      "title": "block [t?] instr∗ end"
+      "level": 5,
+      "title": "block [t?] instr∗ end",
+      "number": "3.3.5.3"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfloopthrefsyntax-instrmathitinstrasthrefsyntax-instr-controlmathsfend",
-      "level": "5",
-      "title": "loop [t?] instr∗ end"
+      "level": 5,
+      "title": "loop [t?] instr∗ end",
+      "number": "3.3.5.4"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfifthrefsyntax-instrmathitinstr_1asthrefsyntax-instr-controlmathsfelsehrefsyntax-instrmathitinstr_2asthrefsyntax-instr-controlmathsfend",
-      "level": "5",
-      "title": "if [t?] instr1∗​ else instr2∗​ end"
+      "level": 5,
+      "title": "if [t?] instr1∗​ else instr2∗​ end",
+      "number": "3.3.5.5"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfbrl",
-      "level": "5",
-      "title": "br l"
+      "level": 5,
+      "title": "br l",
+      "number": "3.3.5.6"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfbr_ifl",
-      "level": "5",
-      "title": "br_if l"
+      "level": 5,
+      "title": "br_if l",
+      "number": "3.3.5.7"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfbr_tablelastl_n",
-      "level": "5",
-      "title": "br_table l∗ lN​"
+      "level": 5,
+      "title": "br_table l∗ lN​",
+      "number": "3.3.5.8"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfreturn",
-      "level": "5",
-      "title": "return"
+      "level": 5,
+      "title": "return",
+      "number": "3.3.5.9"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfcallx",
-      "level": "5",
-      "title": "call x"
+      "level": 5,
+      "title": "call x",
+      "number": "3.3.5.10"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfcall_indirectx",
-      "level": "5",
-      "title": "call_indirect x"
+      "level": 5,
+      "title": "call_indirect x",
+      "number": "3.3.5.11"
     },
     {
       "id": "instruction-sequences①",
-      "level": "4",
-      "title": "Instruction Sequences"
+      "level": 4,
+      "title": "Instruction Sequences",
+      "number": "3.3.6"
     },
     {
       "id": "empty-instruction-sequence--epsilon",
-      "level": "5",
-      "title": "Empty Instruction Sequence: ϵ"
+      "level": 5,
+      "title": "Empty Instruction Sequence: ϵ",
+      "number": "3.3.6.1"
     },
     {
       "id": "non-empty-instruction-sequence--hrefsyntax-instrmathitinstrasthrefsyntax-instrmathitinstr_n",
-      "level": "5",
-      "title": "Non-empty Instruction Sequence: instr∗ instrN​"
+      "level": 5,
+      "title": "Non-empty Instruction Sequence: instr∗ instrN​",
+      "number": "3.3.6.2"
     },
     {
       "id": "expressions③",
-      "level": "4",
-      "title": "Expressions"
+      "level": 4,
+      "title": "Expressions",
+      "number": "3.3.7"
     },
     {
       "id": "-hrefsyntax-instrmathitinstrasthrefsyntax-instr-controlmathsfend",
-      "level": "5",
-      "title": "instr∗ end"
+      "level": 5,
+      "title": "instr∗ end",
+      "number": "3.3.7.1"
     },
     {
       "id": "constant-expressions①",
-      "level": "5",
-      "title": "Constant Expressions"
+      "level": 5,
+      "title": "Constant Expressions",
+      "number": "3.3.7.2"
     },
     {
       "id": "modules③",
-      "level": "3",
-      "title": "Modules"
+      "level": 3,
+      "title": "Modules",
+      "number": "3.4"
     },
     {
       "id": "functions③",
-      "level": "4",
-      "title": "Functions"
+      "level": 4,
+      "title": "Functions",
+      "number": "3.4.1"
     },
     {
       "id": "--hrefsyntax-funcmathsftypex-hrefsyntax-funcmathsflocalstast-hrefsyntax-funcmathsfbodyhrefsyntax-exprmathitexpr",
-      "level": "5",
-      "title": "{type x,locals t∗,body expr}"
+      "level": 5,
+      "title": "{type x,locals t∗,body expr}",
+      "number": "3.4.1.1"
     },
     {
       "id": "tables③",
-      "level": "4",
-      "title": "Tables"
+      "level": 4,
+      "title": "Tables",
+      "number": "3.4.2"
     },
     {
       "id": "--hrefsyntax-tablemathsftypehrefsyntax-tabletypemathittabletype",
-      "level": "5",
-      "title": "{type tabletype}"
+      "level": 5,
+      "title": "{type tabletype}",
+      "number": "3.4.2.1"
     },
     {
       "id": "memories③",
-      "level": "4",
-      "title": "Memories"
+      "level": 4,
+      "title": "Memories",
+      "number": "3.4.3"
     },
     {
       "id": "--hrefsyntax-memmathsftypehrefsyntax-memtypemathitmemtype",
-      "level": "5",
-      "title": "{type memtype}"
+      "level": 5,
+      "title": "{type memtype}",
+      "number": "3.4.3.1"
     },
     {
       "id": "globals③",
-      "level": "4",
-      "title": "Globals"
+      "level": 4,
+      "title": "Globals",
+      "number": "3.4.4"
     },
     {
       "id": "--hrefsyntax-globalmathsftypehrefsyntax-mutmathitmutt-hrefsyntax-globalmathsfinithrefsyntax-exprmathitexpr",
-      "level": "5",
-      "title": "{type mut t,init expr}"
+      "level": 5,
+      "title": "{type mut t,init expr}",
+      "number": "3.4.4.1"
     },
     {
       "id": "element-segments③",
-      "level": "4",
-      "title": "Element Segments"
+      "level": 4,
+      "title": "Element Segments",
+      "number": "3.4.5"
     },
     {
       "id": "--hrefsyntax-elemmathsftablex-hrefsyntax-elemmathsfoffsethrefsyntax-exprmathitexpr-hrefsyntax-elemmathsfinityast",
-      "level": "5",
-      "title": "{table x,offset expr,init y∗}"
+      "level": 5,
+      "title": "{table x,offset expr,init y∗}",
+      "number": "3.4.5.1"
     },
     {
       "id": "data-segments③",
-      "level": "4",
-      "title": "Data Segments"
+      "level": 4,
+      "title": "Data Segments",
+      "number": "3.4.6"
     },
     {
       "id": "--hrefsyntax-datamathsfdatax-hrefsyntax-datamathsfoffsethrefsyntax-exprmathitexpr-hrefsyntax-datamathsfinitbast",
-      "level": "5",
-      "title": "{data x,offset expr,init b∗}"
+      "level": 5,
+      "title": "{data x,offset expr,init b∗}",
+      "number": "3.4.6.1"
     },
     {
       "id": "start-function③",
-      "level": "4",
-      "title": "Start Function"
+      "level": 4,
+      "title": "Start Function",
+      "number": "3.4.7"
     },
     {
       "id": "--hrefsyntax-startmathsffuncx",
-      "level": "5",
-      "title": "{func x}"
+      "level": 5,
+      "title": "{func x}",
+      "number": "3.4.7.1"
     },
     {
       "id": "exports③",
-      "level": "4",
-      "title": "Exports"
+      "level": 4,
+      "title": "Exports",
+      "number": "3.4.8"
     },
     {
       "id": "--hrefsyntax-exportmathsfnamehrefsyntax-namemathitname-hrefsyntax-exportmathsfdeschrefsyntax-exportdescmathitexportdesc",
-      "level": "5",
-      "title": "{name name,desc exportdesc}"
+      "level": 5,
+      "title": "{name name,desc exportdesc}",
+      "number": "3.4.8.1"
     },
     {
       "id": "-hrefsyntax-exportdescmathsffuncx",
-      "level": "5",
-      "title": "func x"
+      "level": 5,
+      "title": "func x",
+      "number": "3.4.8.2"
     },
     {
       "id": "-hrefsyntax-exportdescmathsftablex",
-      "level": "5",
-      "title": "table x"
+      "level": 5,
+      "title": "table x",
+      "number": "3.4.8.3"
     },
     {
       "id": "-hrefsyntax-exportdescmathsfmemx",
-      "level": "5",
-      "title": "mem x"
+      "level": 5,
+      "title": "mem x",
+      "number": "3.4.8.4"
     },
     {
       "id": "-hrefsyntax-exportdescmathsfglobalx",
-      "level": "5",
-      "title": "global x"
+      "level": 5,
+      "title": "global x",
+      "number": "3.4.8.5"
     },
     {
       "id": "imports③",
-      "level": "4",
-      "title": "Imports"
+      "level": 4,
+      "title": "Imports",
+      "number": "3.4.9"
     },
     {
       "id": "--hrefsyntax-importmathsfmodulehrefsyntax-namemathitname_1-hrefsyntax-importmathsfnamehrefsyntax-namemathitname_2-hrefsyntax-importmathsfdeschrefsyntax-importdescmathitimportdesc",
-      "level": "5",
-      "title": "{module name1​,name name2​,desc importdesc}"
+      "level": 5,
+      "title": "{module name1​,name name2​,desc importdesc}",
+      "number": "3.4.9.1"
     },
     {
       "id": "-hrefsyntax-importdescmathsffuncx",
-      "level": "5",
-      "title": "func x"
+      "level": 5,
+      "title": "func x",
+      "number": "3.4.9.2"
     },
     {
       "id": "-hrefsyntax-importdescmathsftablehrefsyntax-tabletypemathittabletype",
-      "level": "5",
-      "title": "table tabletype"
+      "level": 5,
+      "title": "table tabletype",
+      "number": "3.4.9.3"
     },
     {
       "id": "-hrefsyntax-importdescmathsfmemhrefsyntax-memtypemathitmemtype",
-      "level": "5",
-      "title": "mem memtype"
+      "level": 5,
+      "title": "mem memtype",
+      "number": "3.4.9.4"
     },
     {
       "id": "-hrefsyntax-importdescmathsfglobalhrefsyntax-globaltypemathitglobaltype",
-      "level": "5",
-      "title": "global globaltype"
+      "level": 5,
+      "title": "global globaltype",
+      "number": "3.4.9.5"
     },
     {
       "id": "modules④",
-      "level": "4",
-      "title": "Modules"
+      "level": 4,
+      "title": "Modules",
+      "number": "3.4.10"
     },
     {
       "id": "execution②",
-      "level": "2",
-      "title": "Execution"
+      "level": 2,
+      "title": "Execution",
+      "number": "4"
     },
     {
       "id": "conventions①⑦",
-      "level": "3",
-      "title": "Conventions"
+      "level": 3,
+      "title": "Conventions",
+      "number": "4.1"
     },
     {
       "id": "prose-notation③",
-      "level": "4",
-      "title": "Prose Notation"
+      "level": 4,
+      "title": "Prose Notation",
+      "number": "4.1.1"
     },
     {
       "id": "formal-notation③",
-      "level": "4",
-      "title": "Formal Notation"
+      "level": 4,
+      "title": "Formal Notation",
+      "number": "4.1.2"
     },
     {
       "id": "runtime-structure①",
-      "level": "3",
-      "title": "Runtime Structure"
+      "level": 3,
+      "title": "Runtime Structure",
+      "number": "4.2"
     },
     {
       "id": "values③",
-      "level": "4",
-      "title": "Values"
+      "level": 4,
+      "title": "Values",
+      "number": "4.2.1"
     },
     {
       "id": "results①",
-      "level": "4",
-      "title": "Results"
+      "level": 4,
+      "title": "Results",
+      "number": "4.2.2"
     },
     {
       "id": "store①",
-      "level": "4",
-      "title": "Store"
+      "level": 4,
+      "title": "Store",
+      "number": "4.2.3"
     },
     {
       "id": "convention③",
-      "level": "5",
-      "title": "Convention"
+      "level": 5,
+      "title": "Convention",
+      "number": "4.2.3.1"
     },
     {
       "id": "addresses①",
-      "level": "4",
-      "title": "Addresses"
+      "level": 4,
+      "title": "Addresses",
+      "number": "4.2.4"
     },
     {
       "id": "module-instances①",
-      "level": "4",
-      "title": "Module Instances"
+      "level": 4,
+      "title": "Module Instances",
+      "number": "4.2.5"
     },
     {
       "id": "function-instances①",
-      "level": "4",
-      "title": "Function Instances"
+      "level": 4,
+      "title": "Function Instances",
+      "number": "4.2.6"
     },
     {
       "id": "table-instances①",
-      "level": "4",
-      "title": "Table Instances"
+      "level": 4,
+      "title": "Table Instances",
+      "number": "4.2.7"
     },
     {
       "id": "memory-instances①",
-      "level": "4",
-      "title": "Memory Instances"
+      "level": 4,
+      "title": "Memory Instances",
+      "number": "4.2.8"
     },
     {
       "id": "global-instances①",
-      "level": "4",
-      "title": "Global Instances"
+      "level": 4,
+      "title": "Global Instances",
+      "number": "4.2.9"
     },
     {
       "id": "export-instances①",
-      "level": "4",
-      "title": "Export Instances"
+      "level": 4,
+      "title": "Export Instances",
+      "number": "4.2.10"
     },
     {
       "id": "external-values①",
-      "level": "4",
-      "title": "External Values"
+      "level": 4,
+      "title": "External Values",
+      "number": "4.2.11"
     },
     {
       "id": "conventions①⑨",
-      "level": "5",
-      "title": "Conventions"
+      "level": 5,
+      "title": "Conventions",
+      "number": "4.2.11.1"
     },
     {
       "id": "stack①",
-      "level": "4",
-      "title": "Stack"
+      "level": 4,
+      "title": "Stack",
+      "number": "4.2.12"
     },
     {
       "id": "values④",
-      "level": "5",
-      "title": "Values"
+      "level": 5,
+      "title": "Values",
+      "number": "4.2.12.1"
     },
     {
       "id": "labels①",
-      "level": "5",
-      "title": "Labels"
+      "level": 5,
+      "title": "Labels",
+      "number": "4.2.12.2"
     },
     {
       "id": "activations-and-frames①",
-      "level": "5",
-      "title": "Activations and Frames"
+      "level": 5,
+      "title": "Activations and Frames",
+      "number": "4.2.12.3"
     },
     {
       "id": "conventions②⓪",
-      "level": "5",
-      "title": "Conventions"
+      "level": 5,
+      "title": "Conventions",
+      "number": "4.2.12.4"
     },
     {
       "id": "administrative-instructions①",
-      "level": "4",
-      "title": "Administrative Instructions"
+      "level": 4,
+      "title": "Administrative Instructions",
+      "number": "4.2.13"
     },
     {
       "id": "block-contexts①",
-      "level": "5",
-      "title": "Block Contexts"
+      "level": 5,
+      "title": "Block Contexts",
+      "number": "4.2.13.1"
     },
     {
       "id": "configurations①",
-      "level": "5",
-      "title": "Configurations"
+      "level": 5,
+      "title": "Configurations",
+      "number": "4.2.13.2"
     },
     {
       "id": "evaluation-contexts①",
-      "level": "5",
-      "title": "Evaluation Contexts"
+      "level": 5,
+      "title": "Evaluation Contexts",
+      "number": "4.2.13.3"
     },
     {
       "id": "numerics①",
-      "level": "3",
-      "title": "Numerics"
+      "level": 3,
+      "title": "Numerics",
+      "number": "4.3"
     },
     {
       "id": "representations①",
-      "level": "4",
-      "title": "Representations"
+      "level": 4,
+      "title": "Representations",
+      "number": "4.3.1"
     },
     {
       "id": "integers③",
-      "level": "5",
-      "title": "Integers"
+      "level": 5,
+      "title": "Integers",
+      "number": "4.3.1.1"
     },
     {
       "id": "floating-point③",
-      "level": "5",
-      "title": "Floating-Point"
+      "level": 5,
+      "title": "Floating-Point",
+      "number": "4.3.1.2"
     },
     {
       "id": "storage①",
-      "level": "5",
-      "title": "Storage"
+      "level": 5,
+      "title": "Storage",
+      "number": "4.3.1.3"
     },
     {
       "id": "integer-operations①",
-      "level": "4",
-      "title": "Integer Operations"
+      "level": 4,
+      "title": "Integer Operations",
+      "number": "4.3.2"
     },
     {
       "id": "sign-interpretation①",
-      "level": "5",
-      "title": "Sign Interpretation"
+      "level": 5,
+      "title": "Sign Interpretation",
+      "number": "4.3.2.1"
     },
     {
       "id": "boolean-interpretation①",
-      "level": "5",
-      "title": "Boolean Interpretation"
+      "level": 5,
+      "title": "Boolean Interpretation",
+      "number": "4.3.2.2"
     },
     {
       "id": "-hrefop-iaddmathrmiadd_n-i_1-i_2",
-      "level": "5",
-      "title": "iaddN​(i1​,i2​)"
+      "level": 5,
+      "title": "iaddN​(i1​,i2​)",
+      "number": "4.3.2.3"
     },
     {
       "id": "-hrefop-isubmathrmisub_n-i_1-i_2",
-      "level": "5",
-      "title": "isubN​(i1​,i2​)"
+      "level": 5,
+      "title": "isubN​(i1​,i2​)",
+      "number": "4.3.2.4"
     },
     {
       "id": "-hrefop-imulmathrmimul_n-i_1-i_2",
-      "level": "5",
-      "title": "imulN​(i1​,i2​)"
+      "level": 5,
+      "title": "imulN​(i1​,i2​)",
+      "number": "4.3.2.5"
     },
     {
       "id": "-hrefop-idiv-umathrmidiv_u_n-i_1-i_2",
-      "level": "5",
-      "title": "idiv_uN​(i1​,i2​)"
+      "level": 5,
+      "title": "idiv_uN​(i1​,i2​)",
+      "number": "4.3.2.6"
     },
     {
       "id": "-hrefop-idiv-smathrmidiv_s_n-i_1-i_2",
-      "level": "5",
-      "title": "idiv_sN​(i1​,i2​)"
+      "level": 5,
+      "title": "idiv_sN​(i1​,i2​)",
+      "number": "4.3.2.7"
     },
     {
       "id": "-hrefop-irem-umathrmirem_u_n-i_1-i_2",
-      "level": "5",
-      "title": "irem_uN​(i1​,i2​)"
+      "level": 5,
+      "title": "irem_uN​(i1​,i2​)",
+      "number": "4.3.2.8"
     },
     {
       "id": "-hrefop-irem-smathrmirem_s_n-i_1-i_2",
-      "level": "5",
-      "title": "irem_sN​(i1​,i2​)"
+      "level": 5,
+      "title": "irem_sN​(i1​,i2​)",
+      "number": "4.3.2.9"
     },
     {
       "id": "-hrefop-iandmathrmiand_n-i_1-i_2",
-      "level": "5",
-      "title": "iandN​(i1​,i2​)"
+      "level": 5,
+      "title": "iandN​(i1​,i2​)",
+      "number": "4.3.2.10"
     },
     {
       "id": "-hrefop-iormathrmior_n-i_1-i_2",
-      "level": "5",
-      "title": "iorN​(i1​,i2​)"
+      "level": 5,
+      "title": "iorN​(i1​,i2​)",
+      "number": "4.3.2.11"
     },
     {
       "id": "-hrefop-ixormathrmixor_n-i_1-i_2",
-      "level": "5",
-      "title": "ixorN​(i1​,i2​)"
+      "level": 5,
+      "title": "ixorN​(i1​,i2​)",
+      "number": "4.3.2.12"
     },
     {
       "id": "-hrefop-ishlmathrmishl_n-i_1-i_2",
-      "level": "5",
-      "title": "ishlN​(i1​,i2​)"
+      "level": 5,
+      "title": "ishlN​(i1​,i2​)",
+      "number": "4.3.2.13"
     },
     {
       "id": "-hrefop-ishr-umathrmishr_u_n-i_1-i_2",
-      "level": "5",
-      "title": "ishr_uN​(i1​,i2​)"
+      "level": 5,
+      "title": "ishr_uN​(i1​,i2​)",
+      "number": "4.3.2.14"
     },
     {
       "id": "-hrefop-ishr-smathrmishr_s_n-i_1-i_2",
-      "level": "5",
-      "title": "ishr_sN​(i1​,i2​)"
+      "level": 5,
+      "title": "ishr_sN​(i1​,i2​)",
+      "number": "4.3.2.15"
     },
     {
       "id": "-hrefop-irotlmathrmirotl_n-i_1-i_2",
-      "level": "5",
-      "title": "irotlN​(i1​,i2​)"
+      "level": 5,
+      "title": "irotlN​(i1​,i2​)",
+      "number": "4.3.2.16"
     },
     {
       "id": "-hrefop-irotrmathrmirotr_n-i_1-i_2",
-      "level": "5",
-      "title": "irotrN​(i1​,i2​)"
+      "level": 5,
+      "title": "irotrN​(i1​,i2​)",
+      "number": "4.3.2.17"
     },
     {
       "id": "-hrefop-iclzmathrmiclz_n-i",
-      "level": "5",
-      "title": "iclzN​(i)"
+      "level": 5,
+      "title": "iclzN​(i)",
+      "number": "4.3.2.18"
     },
     {
       "id": "-hrefop-ictzmathrmictz_n-i",
-      "level": "5",
-      "title": "ictzN​(i)"
+      "level": 5,
+      "title": "ictzN​(i)",
+      "number": "4.3.2.19"
     },
     {
       "id": "-hrefop-ipopcntmathrmipopcnt_n-i",
-      "level": "5",
-      "title": "ipopcntN​(i)"
+      "level": 5,
+      "title": "ipopcntN​(i)",
+      "number": "4.3.2.20"
     },
     {
       "id": "-hrefop-ieqzmathrmieqz_n-i",
-      "level": "5",
-      "title": "ieqzN​(i)"
+      "level": 5,
+      "title": "ieqzN​(i)",
+      "number": "4.3.2.21"
     },
     {
       "id": "-hrefop-ieqmathrmieq_n-i_1-i_2",
-      "level": "5",
-      "title": "ieqN​(i1​,i2​)"
+      "level": 5,
+      "title": "ieqN​(i1​,i2​)",
+      "number": "4.3.2.22"
     },
     {
       "id": "-hrefop-inemathrmine_n-i_1-i_2",
-      "level": "5",
-      "title": "ineN​(i1​,i2​)"
+      "level": 5,
+      "title": "ineN​(i1​,i2​)",
+      "number": "4.3.2.23"
     },
     {
       "id": "-hrefop-ilt-umathrmilt_u_n-i_1-i_2",
-      "level": "5",
-      "title": "ilt_uN​(i1​,i2​)"
+      "level": 5,
+      "title": "ilt_uN​(i1​,i2​)",
+      "number": "4.3.2.24"
     },
     {
       "id": "-hrefop-ilt-smathrmilt_s_n-i_1-i_2",
-      "level": "5",
-      "title": "ilt_sN​(i1​,i2​)"
+      "level": 5,
+      "title": "ilt_sN​(i1​,i2​)",
+      "number": "4.3.2.25"
     },
     {
       "id": "-hrefop-igt-umathrmigt_u_n-i_1-i_2",
-      "level": "5",
-      "title": "igt_uN​(i1​,i2​)"
+      "level": 5,
+      "title": "igt_uN​(i1​,i2​)",
+      "number": "4.3.2.26"
     },
     {
       "id": "-hrefop-igt-smathrmigt_s_n-i_1-i_2",
-      "level": "5",
-      "title": "igt_sN​(i1​,i2​)"
+      "level": 5,
+      "title": "igt_sN​(i1​,i2​)",
+      "number": "4.3.2.27"
     },
     {
       "id": "-hrefop-ile-umathrmile_u_n-i_1-i_2",
-      "level": "5",
-      "title": "ile_uN​(i1​,i2​)"
+      "level": 5,
+      "title": "ile_uN​(i1​,i2​)",
+      "number": "4.3.2.28"
     },
     {
       "id": "-hrefop-ile-smathrmile_s_n-i_1-i_2",
-      "level": "5",
-      "title": "ile_sN​(i1​,i2​)"
+      "level": 5,
+      "title": "ile_sN​(i1​,i2​)",
+      "number": "4.3.2.29"
     },
     {
       "id": "-hrefop-ige-umathrmige_u_n-i_1-i_2",
-      "level": "5",
-      "title": "ige_uN​(i1​,i2​)"
+      "level": 5,
+      "title": "ige_uN​(i1​,i2​)",
+      "number": "4.3.2.30"
     },
     {
       "id": "-hrefop-ige-smathrmige_s_n-i_1-i_2",
-      "level": "5",
-      "title": "ige_sN​(i1​,i2​)"
+      "level": 5,
+      "title": "ige_sN​(i1​,i2​)",
+      "number": "4.3.2.31"
     },
     {
       "id": "floating-point-operations①",
-      "level": "4",
-      "title": "Floating-Point Operations"
+      "level": 4,
+      "title": "Floating-Point Operations",
+      "number": "4.3.3"
     },
     {
       "id": "rounding①",
-      "level": "5",
-      "title": "Rounding"
+      "level": 5,
+      "title": "Rounding",
+      "number": "4.3.3.1"
     },
     {
       "id": "nan-propagation①",
-      "level": "5",
-      "title": "NaN Propagation"
+      "level": 5,
+      "title": "NaN Propagation",
+      "number": "4.3.3.2"
     },
     {
       "id": "-hrefop-faddmathrmfadd_n-z_1-z_2",
-      "level": "5",
-      "title": "faddN​(z1​,z2​)"
+      "level": 5,
+      "title": "faddN​(z1​,z2​)",
+      "number": "4.3.3.3"
     },
     {
       "id": "-hrefop-fsubmathrmfsub_n-z_1-z_2",
-      "level": "5",
-      "title": "fsubN​(z1​,z2​)"
+      "level": 5,
+      "title": "fsubN​(z1​,z2​)",
+      "number": "4.3.3.4"
     },
     {
       "id": "-hrefop-fmulmathrmfmul_n-z_1-z_2",
-      "level": "5",
-      "title": "fmulN​(z1​,z2​)"
+      "level": 5,
+      "title": "fmulN​(z1​,z2​)",
+      "number": "4.3.3.5"
     },
     {
       "id": "-hrefop-fdivmathrmfdiv_n-z_1-z_2",
-      "level": "5",
-      "title": "fdivN​(z1​,z2​)"
+      "level": 5,
+      "title": "fdivN​(z1​,z2​)",
+      "number": "4.3.3.6"
     },
     {
       "id": "-hrefop-fminmathrmfmin_n-z_1-z_2",
-      "level": "5",
-      "title": "fminN​(z1​,z2​)"
+      "level": 5,
+      "title": "fminN​(z1​,z2​)",
+      "number": "4.3.3.7"
     },
     {
       "id": "-hrefop-fmaxmathrmfmax_n-z_1-z_2",
-      "level": "5",
-      "title": "fmaxN​(z1​,z2​)"
+      "level": 5,
+      "title": "fmaxN​(z1​,z2​)",
+      "number": "4.3.3.8"
     },
     {
       "id": "-hrefop-fcopysignmathrmfcopysign_n-z_1-z_2",
-      "level": "5",
-      "title": "fcopysignN​(z1​,z2​)"
+      "level": 5,
+      "title": "fcopysignN​(z1​,z2​)",
+      "number": "4.3.3.9"
     },
     {
       "id": "-hrefop-fabsmathrmfabs_n-z",
-      "level": "5",
-      "title": "fabsN​(z)"
+      "level": 5,
+      "title": "fabsN​(z)",
+      "number": "4.3.3.10"
     },
     {
       "id": "-hrefop-fnegmathrmfneg_n-z",
-      "level": "5",
-      "title": "fnegN​(z)"
+      "level": 5,
+      "title": "fnegN​(z)",
+      "number": "4.3.3.11"
     },
     {
       "id": "-hrefop-fsqrtmathrmfsqrt_n-z",
-      "level": "5",
-      "title": "fsqrtN​(z)"
+      "level": 5,
+      "title": "fsqrtN​(z)",
+      "number": "4.3.3.12"
     },
     {
       "id": "-hrefop-fceilmathrmfceil_n-z",
-      "level": "5",
-      "title": "fceilN​(z)"
+      "level": 5,
+      "title": "fceilN​(z)",
+      "number": "4.3.3.13"
     },
     {
       "id": "-hrefop-ffloormathrmffloor_n-z",
-      "level": "5",
-      "title": "ffloorN​(z)"
+      "level": 5,
+      "title": "ffloorN​(z)",
+      "number": "4.3.3.14"
     },
     {
       "id": "-hrefop-ftruncmathrmftrunc_n-z",
-      "level": "5",
-      "title": "ftruncN​(z)"
+      "level": 5,
+      "title": "ftruncN​(z)",
+      "number": "4.3.3.15"
     },
     {
       "id": "-hrefop-fnearestmathrmfnearest_n-z",
-      "level": "5",
-      "title": "fnearestN​(z)"
+      "level": 5,
+      "title": "fnearestN​(z)",
+      "number": "4.3.3.16"
     },
     {
       "id": "-hrefop-feqmathrmfeq_n-z_1-z_2",
-      "level": "5",
-      "title": "feqN​(z1​,z2​)"
+      "level": 5,
+      "title": "feqN​(z1​,z2​)",
+      "number": "4.3.3.17"
     },
     {
       "id": "-hrefop-fnemathrmfne_n-z_1-z_2",
-      "level": "5",
-      "title": "fneN​(z1​,z2​)"
+      "level": 5,
+      "title": "fneN​(z1​,z2​)",
+      "number": "4.3.3.18"
     },
     {
       "id": "-hrefop-fltmathrmflt_n-z_1-z_2",
-      "level": "5",
-      "title": "fltN​(z1​,z2​)"
+      "level": 5,
+      "title": "fltN​(z1​,z2​)",
+      "number": "4.3.3.19"
     },
     {
       "id": "-hrefop-fgtmathrmfgt_n-z_1-z_2",
-      "level": "5",
-      "title": "fgtN​(z1​,z2​)"
+      "level": 5,
+      "title": "fgtN​(z1​,z2​)",
+      "number": "4.3.3.20"
     },
     {
       "id": "-hrefop-flemathrmfle_n-z_1-z_2",
-      "level": "5",
-      "title": "fleN​(z1​,z2​)"
+      "level": 5,
+      "title": "fleN​(z1​,z2​)",
+      "number": "4.3.3.21"
     },
     {
       "id": "-hrefop-fgemathrmfge_n-z_1-z_2",
-      "level": "5",
-      "title": "fgeN​(z1​,z2​)"
+      "level": 5,
+      "title": "fgeN​(z1​,z2​)",
+      "number": "4.3.3.22"
     },
     {
       "id": "conversions①",
-      "level": "4",
-      "title": "Conversions"
+      "level": 4,
+      "title": "Conversions",
+      "number": "4.3.4"
     },
     {
       "id": "-hrefop-extend-umathrmextendmathsfu_m-n-i",
-      "level": "5",
-      "title": "extenduM,N​(i)"
+      "level": 5,
+      "title": "extenduM,N​(i)",
+      "number": "4.3.4.1"
     },
     {
       "id": "-hrefop-extend-smathrmextendmathsfs_m-n-i",
-      "level": "5",
-      "title": "extendsM,N​(i)"
+      "level": 5,
+      "title": "extendsM,N​(i)",
+      "number": "4.3.4.2"
     },
     {
       "id": "-hrefop-wrapmathrmwrap_m-n-i",
-      "level": "5",
-      "title": "wrapM,N​(i)"
+      "level": 5,
+      "title": "wrapM,N​(i)",
+      "number": "4.3.4.3"
     },
     {
       "id": "-hrefop-trunc-umathrmtruncmathsfu_m-n-z",
-      "level": "5",
-      "title": "truncuM,N​(z)"
+      "level": 5,
+      "title": "truncuM,N​(z)",
+      "number": "4.3.4.4"
     },
     {
       "id": "-hrefop-trunc-smathrmtruncmathsfs_m-n-z",
-      "level": "5",
-      "title": "truncsM,N​(z)"
+      "level": 5,
+      "title": "truncsM,N​(z)",
+      "number": "4.3.4.5"
     },
     {
       "id": "-hrefop-promotemathrmpromote_m-n-z",
-      "level": "5",
-      "title": "promoteM,N​(z)"
+      "level": 5,
+      "title": "promoteM,N​(z)",
+      "number": "4.3.4.6"
     },
     {
       "id": "-hrefop-demotemathrmdemote_m-n-z",
-      "level": "5",
-      "title": "demoteM,N​(z)"
+      "level": 5,
+      "title": "demoteM,N​(z)",
+      "number": "4.3.4.7"
     },
     {
       "id": "-hrefop-convert-umathrmconvertmathsfu_m-n-i",
-      "level": "5",
-      "title": "convertuM,N​(i)"
+      "level": 5,
+      "title": "convertuM,N​(i)",
+      "number": "4.3.4.8"
     },
     {
       "id": "-hrefop-convert-smathrmconvertmathsfs_m-n-i",
-      "level": "5",
-      "title": "convertsM,N​(i)"
+      "level": 5,
+      "title": "convertsM,N​(i)",
+      "number": "4.3.4.9"
     },
     {
       "id": "-hrefop-reinterpretmathrmreinterpret_t_1-t_2-c",
-      "level": "5",
-      "title": "reinterprett1​,t2​​(c)"
+      "level": 5,
+      "title": "reinterprett1​,t2​​(c)",
+      "number": "4.3.4.10"
     },
     {
       "id": "instructions⑤",
-      "level": "3",
-      "title": "Instructions"
+      "level": 3,
+      "title": "Instructions",
+      "number": "4.4"
     },
     {
       "id": "numeric-instructions⑤",
-      "level": "4",
-      "title": "Numeric Instructions"
+      "level": 4,
+      "title": "Numeric Instructions",
+      "number": "4.4.1"
     },
     {
       "id": "-tmathsfhrefsyntax-instr-numericmathsfconstc①",
-      "level": "5",
-      "title": "t.const c"
+      "level": 5,
+      "title": "t.const c",
+      "number": "4.4.1.1"
     },
     {
       "id": "-tmathsfhrefsyntax-unopmathitunop①",
-      "level": "5",
-      "title": "t.unop"
+      "level": 5,
+      "title": "t.unop",
+      "number": "4.4.1.2"
     },
     {
       "id": "-tmathsfhrefsyntax-binopmathitbinop①",
-      "level": "5",
-      "title": "t.binop"
+      "level": 5,
+      "title": "t.binop",
+      "number": "4.4.1.3"
     },
     {
       "id": "-tmathsfhrefsyntax-testopmathittestop①",
-      "level": "5",
-      "title": "t.testop"
+      "level": 5,
+      "title": "t.testop",
+      "number": "4.4.1.4"
     },
     {
       "id": "-tmathsfhrefsyntax-relopmathitrelop①",
-      "level": "5",
-      "title": "t.relop"
+      "level": 5,
+      "title": "t.relop",
+      "number": "4.4.1.5"
     },
     {
       "id": "-t_2mathsfhrefsyntax-cvtopmathitcvtopmathsf_t_1mathsf_hrefsyntax-sxmathitsx①",
-      "level": "5",
-      "title": "t2​.cvtop_t1​_sx?"
+      "level": 5,
+      "title": "t2​.cvtop_t1​_sx?",
+      "number": "4.4.1.6"
     },
     {
       "id": "parametric-instructions⑤",
-      "level": "4",
-      "title": "Parametric Instructions"
+      "level": 4,
+      "title": "Parametric Instructions",
+      "number": "4.4.2"
     },
     {
       "id": "-hrefsyntax-instr-parametricmathsfdrop①",
-      "level": "5",
-      "title": "drop"
+      "level": 5,
+      "title": "drop",
+      "number": "4.4.2.1"
     },
     {
       "id": "-hrefsyntax-instr-parametricmathsfselect①",
-      "level": "5",
-      "title": "select"
+      "level": 5,
+      "title": "select",
+      "number": "4.4.2.2"
     },
     {
       "id": "variable-instructions⑤",
-      "level": "4",
-      "title": "Variable Instructions"
+      "level": 4,
+      "title": "Variable Instructions",
+      "number": "4.4.3"
     },
     {
       "id": "-hrefsyntax-instr-variablemathsflocalgetx①",
-      "level": "5",
-      "title": "local.get x"
+      "level": 5,
+      "title": "local.get x",
+      "number": "4.4.3.1"
     },
     {
       "id": "-hrefsyntax-instr-variablemathsflocalsetx①",
-      "level": "5",
-      "title": "local.set x"
+      "level": 5,
+      "title": "local.set x",
+      "number": "4.4.3.2"
     },
     {
       "id": "-hrefsyntax-instr-variablemathsflocalteex①",
-      "level": "5",
-      "title": "local.tee x"
+      "level": 5,
+      "title": "local.tee x",
+      "number": "4.4.3.3"
     },
     {
       "id": "-hrefsyntax-instr-variablemathsfglobalgetx①",
-      "level": "5",
-      "title": "global.get x"
+      "level": 5,
+      "title": "global.get x",
+      "number": "4.4.3.4"
     },
     {
       "id": "-hrefsyntax-instr-variablemathsfglobalsetx①",
-      "level": "5",
-      "title": "global.set x"
+      "level": 5,
+      "title": "global.set x",
+      "number": "4.4.3.5"
     },
     {
       "id": "memory-instructions⑤",
-      "level": "4",
-      "title": "Memory Instructions"
+      "level": 4,
+      "title": "Memory Instructions",
+      "number": "4.4.4"
     },
     {
       "id": "-tmathsfhrefsyntax-instr-memorymathsfloadhrefsyntax-memargmathitmemarg-and--tmathsfhrefsyntax-instr-memorymathsfloadnmathsf_hrefsyntax-sxmathitsxhrefsyntax-memargmathitmemarg",
-      "level": "5",
-      "title": "t.load memarg and t.loadN_sx memarg"
+      "level": 5,
+      "title": "t.load memarg and t.loadN_sx memarg",
+      "number": "4.4.4.1"
     },
     {
       "id": "-tmathsfhrefsyntax-instr-memorymathsfstorehrefsyntax-memargmathitmemarg-and--tmathsfhrefsyntax-instr-memorymathsfstorenhrefsyntax-memargmathitmemarg",
-      "level": "5",
-      "title": "t.store memarg and t.storeN memarg"
+      "level": 5,
+      "title": "t.store memarg and t.storeN memarg",
+      "number": "4.4.4.2"
     },
     {
       "id": "-hrefsyntax-instr-memorymathsfmemorysize①",
-      "level": "5",
-      "title": "memory.size"
+      "level": 5,
+      "title": "memory.size",
+      "number": "4.4.4.3"
     },
     {
       "id": "-hrefsyntax-instr-memorymathsfmemorygrow①",
-      "level": "5",
-      "title": "memory.grow"
+      "level": 5,
+      "title": "memory.grow",
+      "number": "4.4.4.4"
     },
     {
       "id": "control-instructions⑤",
-      "level": "4",
-      "title": "Control Instructions"
+      "level": 4,
+      "title": "Control Instructions",
+      "number": "4.4.5"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfnop①",
-      "level": "5",
-      "title": "nop"
+      "level": 5,
+      "title": "nop",
+      "number": "4.4.5.1"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfunreachable①",
-      "level": "5",
-      "title": "unreachable"
+      "level": 5,
+      "title": "unreachable",
+      "number": "4.4.5.2"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfblockthrefsyntax-instrmathitinstrasthrefsyntax-instr-controlmathsfend①",
-      "level": "5",
-      "title": "block [t?] instr∗ end"
+      "level": 5,
+      "title": "block [t?] instr∗ end",
+      "number": "4.4.5.3"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfloopthrefsyntax-instrmathitinstrasthrefsyntax-instr-controlmathsfend①",
-      "level": "5",
-      "title": "loop [t?] instr∗ end"
+      "level": 5,
+      "title": "loop [t?] instr∗ end",
+      "number": "4.4.5.4"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfifthrefsyntax-instrmathitinstr_1asthrefsyntax-instr-controlmathsfelsehrefsyntax-instrmathitinstr_2asthrefsyntax-instr-controlmathsfend①",
-      "level": "5",
-      "title": "if [t?] instr1∗​ else instr2∗​ end"
+      "level": 5,
+      "title": "if [t?] instr1∗​ else instr2∗​ end",
+      "number": "4.4.5.5"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfbrl①",
-      "level": "5",
-      "title": "br l"
+      "level": 5,
+      "title": "br l",
+      "number": "4.4.5.6"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfbr_ifl①",
-      "level": "5",
-      "title": "br_if l"
+      "level": 5,
+      "title": "br_if l",
+      "number": "4.4.5.7"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfbr_tablelastl_n①",
-      "level": "5",
-      "title": "br_table l∗ lN​"
+      "level": 5,
+      "title": "br_table l∗ lN​",
+      "number": "4.4.5.8"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfreturn①",
-      "level": "5",
-      "title": "return"
+      "level": 5,
+      "title": "return",
+      "number": "4.4.5.9"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfcallx①",
-      "level": "5",
-      "title": "call x"
+      "level": 5,
+      "title": "call x",
+      "number": "4.4.5.10"
     },
     {
       "id": "-hrefsyntax-instr-controlmathsfcall_indirectx①",
-      "level": "5",
-      "title": "call_indirect x"
+      "level": 5,
+      "title": "call_indirect x",
+      "number": "4.4.5.11"
     },
     {
       "id": "blocks①",
-      "level": "4",
-      "title": "Blocks"
+      "level": 4,
+      "title": "Blocks",
+      "number": "4.4.6"
     },
     {
       "id": "entering--hrefsyntax-instrmathitinstrast-with-label--l",
-      "level": "5",
-      "title": "Entering instr∗ with label L"
+      "level": 5,
+      "title": "Entering instr∗ with label L",
+      "number": "4.4.6.1"
     },
     {
       "id": "exiting--hrefsyntax-instrmathitinstrast-with-label--l",
-      "level": "5",
-      "title": "Exiting instr∗ with label L"
+      "level": 5,
+      "title": "Exiting instr∗ with label L",
+      "number": "4.4.6.2"
     },
     {
       "id": "function-calls①",
-      "level": "4",
-      "title": "Function Calls"
+      "level": 4,
+      "title": "Function Calls",
+      "number": "4.4.7"
     },
     {
       "id": "invocation-of-function-address--a",
-      "level": "5",
-      "title": "Invocation of function address a"
+      "level": 5,
+      "title": "Invocation of function address a",
+      "number": "4.4.7.1"
     },
     {
       "id": "returning-from-a-function①",
-      "level": "5",
-      "title": "Returning from a function"
+      "level": 5,
+      "title": "Returning from a function",
+      "number": "4.4.7.2"
     },
     {
       "id": "host-functions①",
-      "level": "5",
-      "title": "Host Functions"
+      "level": 5,
+      "title": "Host Functions",
+      "number": "4.4.7.3"
     },
     {
       "id": "expressions⑤",
-      "level": "4",
-      "title": "Expressions"
+      "level": 4,
+      "title": "Expressions",
+      "number": "4.4.8"
     },
     {
       "id": "modules⑥",
-      "level": "3",
-      "title": "Modules"
+      "level": 3,
+      "title": "Modules",
+      "number": "4.5"
     },
     {
       "id": "external-typing①",
-      "level": "4",
-      "title": "External Typing"
+      "level": 4,
+      "title": "External Typing",
+      "number": "4.5.1"
     },
     {
       "id": "-hrefsyntax-externvalmathsffunca",
-      "level": "5",
-      "title": "func a"
+      "level": 5,
+      "title": "func a",
+      "number": "4.5.1.1"
     },
     {
       "id": "-hrefsyntax-externvalmathsftablea",
-      "level": "5",
-      "title": "table a"
+      "level": 5,
+      "title": "table a",
+      "number": "4.5.1.2"
     },
     {
       "id": "-hrefsyntax-externvalmathsfmema",
-      "level": "5",
-      "title": "mem a"
+      "level": 5,
+      "title": "mem a",
+      "number": "4.5.1.3"
     },
     {
       "id": "-hrefsyntax-externvalmathsfglobala",
-      "level": "5",
-      "title": "global a"
+      "level": 5,
+      "title": "global a",
+      "number": "4.5.1.4"
     },
     {
       "id": "import-matching①",
-      "level": "4",
-      "title": "Import Matching"
+      "level": 4,
+      "title": "Import Matching",
+      "number": "4.5.2"
     },
     {
       "id": "limits⑤",
-      "level": "5",
-      "title": "Limits"
+      "level": 5,
+      "title": "Limits",
+      "number": "4.5.2.1"
     },
     {
       "id": "functions⑤",
-      "level": "5",
-      "title": "Functions"
+      "level": 5,
+      "title": "Functions",
+      "number": "4.5.2.2"
     },
     {
       "id": "tables⑤",
-      "level": "5",
-      "title": "Tables"
+      "level": 5,
+      "title": "Tables",
+      "number": "4.5.2.3"
     },
     {
       "id": "memories⑤",
-      "level": "5",
-      "title": "Memories"
+      "level": 5,
+      "title": "Memories",
+      "number": "4.5.2.4"
     },
     {
       "id": "globals⑤",
-      "level": "5",
-      "title": "Globals"
+      "level": 5,
+      "title": "Globals",
+      "number": "4.5.2.5"
     },
     {
       "id": "allocation①",
-      "level": "4",
-      "title": "Allocation"
+      "level": 4,
+      "title": "Allocation",
+      "number": "4.5.3"
     },
     {
       "id": "functions⑥",
-      "level": "5",
-      "title": "Functions"
+      "level": 5,
+      "title": "Functions",
+      "number": "4.5.3.1"
     },
     {
       "id": "host-functions③",
-      "level": "5",
-      "title": "Host Functions"
+      "level": 5,
+      "title": "Host Functions",
+      "number": "4.5.3.2"
     },
     {
       "id": "tables⑥",
-      "level": "5",
-      "title": "Tables"
+      "level": 5,
+      "title": "Tables",
+      "number": "4.5.3.3"
     },
     {
       "id": "memories⑥",
-      "level": "5",
-      "title": "Memories"
+      "level": 5,
+      "title": "Memories",
+      "number": "4.5.3.4"
     },
     {
       "id": "globals⑥",
-      "level": "5",
-      "title": "Globals"
+      "level": 5,
+      "title": "Globals",
+      "number": "4.5.3.5"
     },
     {
       "id": "growing-tables①",
-      "level": "5",
-      "title": "Growing tables"
+      "level": 5,
+      "title": "Growing tables",
+      "number": "4.5.3.6"
     },
     {
       "id": "growing-memories①",
-      "level": "5",
-      "title": "Growing memories"
+      "level": 5,
+      "title": "Growing memories",
+      "number": "4.5.3.7"
     },
     {
       "id": "modules⑦",
-      "level": "5",
-      "title": "Modules"
+      "level": 5,
+      "title": "Modules",
+      "number": "4.5.3.8"
     },
     {
       "id": "instantiation②",
-      "level": "4",
-      "title": "Instantiation"
+      "level": 4,
+      "title": "Instantiation",
+      "number": "4.5.4"
     },
     {
       "id": "invocation②",
-      "level": "4",
-      "title": "Invocation"
+      "level": 4,
+      "title": "Invocation",
+      "number": "4.5.5"
     },
     {
       "id": "binary-format①",
-      "level": "2",
-      "title": "Binary Format"
+      "level": 2,
+      "title": "Binary Format",
+      "number": "5"
     },
     {
       "id": "conventions②②",
-      "level": "3",
-      "title": "Conventions"
+      "level": 3,
+      "title": "Conventions",
+      "number": "5.1"
     },
     {
       "id": "grammar②",
-      "level": "4",
-      "title": "Grammar"
+      "level": 4,
+      "title": "Grammar",
+      "number": "5.1.1"
     },
     {
       "id": "auxiliary-notation③",
-      "level": "4",
-      "title": "Auxiliary Notation"
+      "level": 4,
+      "title": "Auxiliary Notation",
+      "number": "5.1.2"
     },
     {
       "id": "vectors③",
-      "level": "4",
-      "title": "Vectors"
+      "level": 4,
+      "title": "Vectors",
+      "number": "5.1.3"
     },
     {
       "id": "values⑥",
-      "level": "3",
-      "title": "Values"
+      "level": 3,
+      "title": "Values",
+      "number": "5.2"
     },
     {
       "id": "bytes③",
-      "level": "4",
-      "title": "Bytes"
+      "level": 4,
+      "title": "Bytes",
+      "number": "5.2.1"
     },
     {
       "id": "integers⑤",
-      "level": "4",
-      "title": "Integers"
+      "level": 4,
+      "title": "Integers",
+      "number": "5.2.2"
     },
     {
       "id": "floating-point⑤",
-      "level": "4",
-      "title": "Floating-Point"
+      "level": 4,
+      "title": "Floating-Point",
+      "number": "5.2.3"
     },
     {
       "id": "names③",
-      "level": "4",
-      "title": "Names"
+      "level": 4,
+      "title": "Names",
+      "number": "5.2.4"
     },
     {
       "id": "types⑦",
-      "level": "3",
-      "title": "Types"
+      "level": 3,
+      "title": "Types",
+      "number": "5.3"
     },
     {
       "id": "value-types③",
-      "level": "4",
-      "title": "Value Types"
+      "level": 4,
+      "title": "Value Types",
+      "number": "5.3.1"
     },
     {
       "id": "result-types③",
-      "level": "4",
-      "title": "Result Types"
+      "level": 4,
+      "title": "Result Types",
+      "number": "5.3.2"
     },
     {
       "id": "function-types⑤",
-      "level": "4",
-      "title": "Function Types"
+      "level": 4,
+      "title": "Function Types",
+      "number": "5.3.3"
     },
     {
       "id": "limits⑦",
-      "level": "4",
-      "title": "Limits"
+      "level": 4,
+      "title": "Limits",
+      "number": "5.3.4"
     },
     {
       "id": "memory-types⑤",
-      "level": "4",
-      "title": "Memory Types"
+      "level": 4,
+      "title": "Memory Types",
+      "number": "5.3.5"
     },
     {
       "id": "table-types⑤",
-      "level": "4",
-      "title": "Table Types"
+      "level": 4,
+      "title": "Table Types",
+      "number": "5.3.6"
     },
     {
       "id": "global-types⑤",
-      "level": "4",
-      "title": "Global Types"
+      "level": 4,
+      "title": "Global Types",
+      "number": "5.3.7"
     },
     {
       "id": "instructions⑦",
-      "level": "3",
-      "title": "Instructions"
+      "level": 3,
+      "title": "Instructions",
+      "number": "5.4"
     },
     {
       "id": "control-instructions⑦",
-      "level": "4",
-      "title": "Control Instructions"
+      "level": 4,
+      "title": "Control Instructions",
+      "number": "5.4.1"
     },
     {
       "id": "parametric-instructions⑦",
-      "level": "4",
-      "title": "Parametric Instructions"
+      "level": 4,
+      "title": "Parametric Instructions",
+      "number": "5.4.2"
     },
     {
       "id": "variable-instructions⑦",
-      "level": "4",
-      "title": "Variable Instructions"
+      "level": 4,
+      "title": "Variable Instructions",
+      "number": "5.4.3"
     },
     {
       "id": "memory-instructions⑦",
-      "level": "4",
-      "title": "Memory Instructions"
+      "level": 4,
+      "title": "Memory Instructions",
+      "number": "5.4.4"
     },
     {
       "id": "numeric-instructions⑦",
-      "level": "4",
-      "title": "Numeric Instructions"
+      "level": 4,
+      "title": "Numeric Instructions",
+      "number": "5.4.5"
     },
     {
       "id": "expressions⑦",
-      "level": "4",
-      "title": "Expressions"
+      "level": 4,
+      "title": "Expressions",
+      "number": "5.4.6"
     },
     {
       "id": "modules⑨",
-      "level": "3",
-      "title": "Modules"
+      "level": 3,
+      "title": "Modules",
+      "number": "5.5"
     },
     {
       "id": "indices③",
-      "level": "4",
-      "title": "Indices"
+      "level": 4,
+      "title": "Indices",
+      "number": "5.5.1"
     },
     {
       "id": "sections①",
-      "level": "4",
-      "title": "Sections"
+      "level": 4,
+      "title": "Sections",
+      "number": "5.5.2"
     },
     {
       "id": "custom-section①",
-      "level": "4",
-      "title": "Custom Section"
+      "level": 4,
+      "title": "Custom Section",
+      "number": "5.5.3"
     },
     {
       "id": "type-section①",
-      "level": "4",
-      "title": "Type Section"
+      "level": 4,
+      "title": "Type Section",
+      "number": "5.5.4"
     },
     {
       "id": "import-section①",
-      "level": "4",
-      "title": "Import Section"
+      "level": 4,
+      "title": "Import Section",
+      "number": "5.5.5"
     },
     {
       "id": "function-section①",
-      "level": "4",
-      "title": "Function Section"
+      "level": 4,
+      "title": "Function Section",
+      "number": "5.5.6"
     },
     {
       "id": "table-section①",
-      "level": "4",
-      "title": "Table Section"
+      "level": 4,
+      "title": "Table Section",
+      "number": "5.5.7"
     },
     {
       "id": "memory-section①",
-      "level": "4",
-      "title": "Memory Section"
+      "level": 4,
+      "title": "Memory Section",
+      "number": "5.5.8"
     },
     {
       "id": "global-section①",
-      "level": "4",
-      "title": "Global Section"
+      "level": 4,
+      "title": "Global Section",
+      "number": "5.5.9"
     },
     {
       "id": "export-section①",
-      "level": "4",
-      "title": "Export Section"
+      "level": 4,
+      "title": "Export Section",
+      "number": "5.5.10"
     },
     {
       "id": "start-section①",
-      "level": "4",
-      "title": "Start Section"
+      "level": 4,
+      "title": "Start Section",
+      "number": "5.5.11"
     },
     {
       "id": "element-section①",
-      "level": "4",
-      "title": "Element Section"
+      "level": 4,
+      "title": "Element Section",
+      "number": "5.5.12"
     },
     {
       "id": "code-section①",
-      "level": "4",
-      "title": "Code Section"
+      "level": 4,
+      "title": "Code Section",
+      "number": "5.5.13"
     },
     {
       "id": "data-section①",
-      "level": "4",
-      "title": "Data Section"
+      "level": 4,
+      "title": "Data Section",
+      "number": "5.5.14"
     },
     {
       "id": "modules①⓪",
-      "level": "4",
-      "title": "Modules"
+      "level": 4,
+      "title": "Modules",
+      "number": "5.5.15"
     },
     {
       "id": "text-format①",
-      "level": "2",
-      "title": "Text Format"
+      "level": 2,
+      "title": "Text Format",
+      "number": "6"
     },
     {
       "id": "conventions②④",
-      "level": "3",
-      "title": "Conventions"
+      "level": 3,
+      "title": "Conventions",
+      "number": "6.1"
     },
     {
       "id": "grammar④",
-      "level": "4",
-      "title": "Grammar"
+      "level": 4,
+      "title": "Grammar",
+      "number": "6.1.1"
     },
     {
       "id": "abbreviations①",
-      "level": "4",
-      "title": "Abbreviations"
+      "level": 4,
+      "title": "Abbreviations",
+      "number": "6.1.2"
     },
     {
       "id": "contexts③",
-      "level": "4",
-      "title": "Contexts"
+      "level": 4,
+      "title": "Contexts",
+      "number": "6.1.3"
     },
     {
       "id": "conventions②⑤",
-      "level": "5",
-      "title": "Conventions"
+      "level": 5,
+      "title": "Conventions",
+      "number": "6.1.3.1"
     },
     {
       "id": "vectors⑤",
-      "level": "4",
-      "title": "Vectors"
+      "level": 4,
+      "title": "Vectors",
+      "number": "6.1.4"
     },
     {
       "id": "lexical-format①",
-      "level": "3",
-      "title": "Lexical Format"
+      "level": 3,
+      "title": "Lexical Format",
+      "number": "6.2"
     },
     {
       "id": "characters①",
-      "level": "4",
-      "title": "Characters"
+      "level": 4,
+      "title": "Characters",
+      "number": "6.2.1"
     },
     {
       "id": "tokens①",
-      "level": "4",
-      "title": "Tokens"
+      "level": 4,
+      "title": "Tokens",
+      "number": "6.2.2"
     },
     {
       "id": "white-space①",
-      "level": "4",
-      "title": "White Space"
+      "level": 4,
+      "title": "White Space",
+      "number": "6.2.3"
     },
     {
       "id": "comments①",
-      "level": "4",
-      "title": "Comments"
+      "level": 4,
+      "title": "Comments",
+      "number": "6.2.4"
     },
     {
       "id": "values⑧",
-      "level": "3",
-      "title": "Values"
+      "level": 3,
+      "title": "Values",
+      "number": "6.3"
     },
     {
       "id": "integers⑦",
-      "level": "4",
-      "title": "Integers"
+      "level": 4,
+      "title": "Integers",
+      "number": "6.3.1"
     },
     {
       "id": "floating-point⑦",
-      "level": "4",
-      "title": "Floating-Point"
+      "level": 4,
+      "title": "Floating-Point",
+      "number": "6.3.2"
     },
     {
       "id": "strings①",
-      "level": "4",
-      "title": "Strings"
+      "level": 4,
+      "title": "Strings",
+      "number": "6.3.3"
     },
     {
       "id": "names⑤",
-      "level": "4",
-      "title": "Names"
+      "level": 4,
+      "title": "Names",
+      "number": "6.3.4"
     },
     {
       "id": "identifiers①",
-      "level": "4",
-      "title": "Identifiers"
+      "level": 4,
+      "title": "Identifiers",
+      "number": "6.3.5"
     },
     {
       "id": "conventions②⑦",
-      "level": "5",
-      "title": "Conventions"
+      "level": 5,
+      "title": "Conventions",
+      "number": "6.3.5.1"
     },
     {
       "id": "types⑨",
-      "level": "3",
-      "title": "Types"
+      "level": 3,
+      "title": "Types",
+      "number": "6.4"
     },
     {
       "id": "value-types⑤",
-      "level": "4",
-      "title": "Value Types"
+      "level": 4,
+      "title": "Value Types",
+      "number": "6.4.1"
     },
     {
       "id": "result-types⑤",
-      "level": "4",
-      "title": "Result Types"
+      "level": 4,
+      "title": "Result Types",
+      "number": "6.4.2"
     },
     {
       "id": "function-types⑦",
-      "level": "4",
-      "title": "Function Types"
+      "level": 4,
+      "title": "Function Types",
+      "number": "6.4.3"
     },
     {
       "id": "abbreviations③",
-      "level": "5",
-      "title": "Abbreviations"
+      "level": 5,
+      "title": "Abbreviations",
+      "number": "6.4.3.1"
     },
     {
       "id": "limits⑨",
-      "level": "4",
-      "title": "Limits"
+      "level": 4,
+      "title": "Limits",
+      "number": "6.4.4"
     },
     {
       "id": "memory-types⑦",
-      "level": "4",
-      "title": "Memory Types"
+      "level": 4,
+      "title": "Memory Types",
+      "number": "6.4.5"
     },
     {
       "id": "table-types⑦",
-      "level": "4",
-      "title": "Table Types"
+      "level": 4,
+      "title": "Table Types",
+      "number": "6.4.6"
     },
     {
       "id": "global-types⑦",
-      "level": "4",
-      "title": "Global Types"
+      "level": 4,
+      "title": "Global Types",
+      "number": "6.4.7"
     },
     {
       "id": "instructions⑨",
-      "level": "3",
-      "title": "Instructions"
+      "level": 3,
+      "title": "Instructions",
+      "number": "6.5"
     },
     {
       "id": "labels③",
-      "level": "4",
-      "title": "Labels"
+      "level": 4,
+      "title": "Labels",
+      "number": "6.5.1"
     },
     {
       "id": "control-instructions⑨",
-      "level": "4",
-      "title": "Control Instructions"
+      "level": 4,
+      "title": "Control Instructions",
+      "number": "6.5.2"
     },
     {
       "id": "abbreviations⑤",
-      "level": "5",
-      "title": "Abbreviations"
+      "level": 5,
+      "title": "Abbreviations",
+      "number": "6.5.2.1"
     },
     {
       "id": "parametric-instructions⑨",
-      "level": "4",
-      "title": "Parametric Instructions"
+      "level": 4,
+      "title": "Parametric Instructions",
+      "number": "6.5.3"
     },
     {
       "id": "variable-instructions⑨",
-      "level": "4",
-      "title": "Variable Instructions"
+      "level": 4,
+      "title": "Variable Instructions",
+      "number": "6.5.4"
     },
     {
       "id": "memory-instructions⑨",
-      "level": "4",
-      "title": "Memory Instructions"
+      "level": 4,
+      "title": "Memory Instructions",
+      "number": "6.5.5"
     },
     {
       "id": "numeric-instructions⑨",
-      "level": "4",
-      "title": "Numeric Instructions"
+      "level": 4,
+      "title": "Numeric Instructions",
+      "number": "6.5.6"
     },
     {
       "id": "folded-instructions①",
-      "level": "4",
-      "title": "Folded Instructions"
+      "level": 4,
+      "title": "Folded Instructions",
+      "number": "6.5.7"
     },
     {
       "id": "expressions⑨",
-      "level": "4",
-      "title": "Expressions"
+      "level": 4,
+      "title": "Expressions",
+      "number": "6.5.8"
     },
     {
       "id": "modules①②",
-      "level": "3",
-      "title": "Modules"
+      "level": 3,
+      "title": "Modules",
+      "number": "6.6"
     },
     {
       "id": "indices⑤",
-      "level": "4",
-      "title": "Indices"
+      "level": 4,
+      "title": "Indices",
+      "number": "6.6.1"
     },
     {
       "id": "types①①",
-      "level": "4",
-      "title": "Types"
+      "level": 4,
+      "title": "Types",
+      "number": "6.6.2"
     },
     {
       "id": "type-uses①",
-      "level": "4",
-      "title": "Type Uses"
+      "level": 4,
+      "title": "Type Uses",
+      "number": "6.6.3"
     },
     {
       "id": "abbreviations⑦",
-      "level": "5",
-      "title": "Abbreviations"
+      "level": 5,
+      "title": "Abbreviations",
+      "number": "6.6.3.1"
     },
     {
       "id": "imports⑤",
-      "level": "4",
-      "title": "Imports"
+      "level": 4,
+      "title": "Imports",
+      "number": "6.6.4"
     },
     {
       "id": "abbreviations⑧",
-      "level": "5",
-      "title": "Abbreviations"
+      "level": 5,
+      "title": "Abbreviations",
+      "number": "6.6.4.1"
     },
     {
       "id": "functions⑧",
-      "level": "4",
-      "title": "Functions"
+      "level": 4,
+      "title": "Functions",
+      "number": "6.6.5"
     },
     {
       "id": "abbreviations⑨",
-      "level": "5",
-      "title": "Abbreviations"
+      "level": 5,
+      "title": "Abbreviations",
+      "number": "6.6.5.1"
     },
     {
       "id": "tables⑧",
-      "level": "4",
-      "title": "Tables"
+      "level": 4,
+      "title": "Tables",
+      "number": "6.6.6"
     },
     {
       "id": "abbreviations①⓪",
-      "level": "5",
-      "title": "Abbreviations"
+      "level": 5,
+      "title": "Abbreviations",
+      "number": "6.6.6.1"
     },
     {
       "id": "memories⑧",
-      "level": "4",
-      "title": "Memories"
+      "level": 4,
+      "title": "Memories",
+      "number": "6.6.7"
     },
     {
       "id": "abbreviations①①",
-      "level": "5",
-      "title": "Abbreviations"
+      "level": 5,
+      "title": "Abbreviations",
+      "number": "6.6.7.1"
     },
     {
       "id": "globals⑧",
-      "level": "4",
-      "title": "Globals"
+      "level": 4,
+      "title": "Globals",
+      "number": "6.6.8"
     },
     {
       "id": "abbreviations①②",
-      "level": "5",
-      "title": "Abbreviations"
+      "level": 5,
+      "title": "Abbreviations",
+      "number": "6.6.8.1"
     },
     {
       "id": "exports⑤",
-      "level": "4",
-      "title": "Exports"
+      "level": 4,
+      "title": "Exports",
+      "number": "6.6.9"
     },
     {
       "id": "abbreviations①③",
-      "level": "5",
-      "title": "Abbreviations"
+      "level": 5,
+      "title": "Abbreviations",
+      "number": "6.6.9.1"
     },
     {
       "id": "start-function⑤",
-      "level": "4",
-      "title": "Start Function"
+      "level": 4,
+      "title": "Start Function",
+      "number": "6.6.10"
     },
     {
       "id": "element-segments⑤",
-      "level": "4",
-      "title": "Element Segments"
+      "level": 4,
+      "title": "Element Segments",
+      "number": "6.6.11"
     },
     {
       "id": "abbreviations①④",
-      "level": "5",
-      "title": "Abbreviations"
+      "level": 5,
+      "title": "Abbreviations",
+      "number": "6.6.11.1"
     },
     {
       "id": "data-segments⑤",
-      "level": "4",
-      "title": "Data Segments"
+      "level": 4,
+      "title": "Data Segments",
+      "number": "6.6.12"
     },
     {
       "id": "abbreviations①⑤",
-      "level": "5",
-      "title": "Abbreviations"
+      "level": 5,
+      "title": "Abbreviations",
+      "number": "6.6.12.1"
     },
     {
       "id": "modules①③",
-      "level": "4",
-      "title": "Modules"
+      "level": 4,
+      "title": "Modules",
+      "number": "6.6.13"
     },
     {
       "id": "abbreviations①⑥",
-      "level": "5",
-      "title": "Abbreviations"
+      "level": 5,
+      "title": "Abbreviations",
+      "number": "6.6.13.1"
     },
     {
       "id": "a-appendix",
-      "level": "2",
+      "level": 2,
       "title": "A Appendix"
     },
     {
       "id": "a1-embedding",
-      "level": "3",
-      "title": "A.1 Embedding"
+      "level": 3,
+      "title": "Embedding",
+      "number": "A.1"
     },
     {
       "id": "types①③",
-      "level": "4",
+      "level": 4,
       "title": "Types"
     },
     {
       "id": "errors①",
-      "level": "4",
+      "level": 4,
       "title": "Errors"
     },
     {
       "id": "pre--and-post-conditions",
-      "level": "4",
+      "level": 4,
       "title": "Pre- and Post-Conditions"
     },
     {
       "id": "store③",
-      "level": "4",
+      "level": 4,
       "title": "Store"
     },
     {
       "id": "-mathrmstore_init--hrefsyntax-storemathitstore",
-      "level": "5",
+      "level": 5,
       "title": "store_init():store"
     },
     {
       "id": "modules①⑤",
-      "level": "4",
+      "level": 4,
       "title": "Modules"
     },
     {
       "id": "-mathrmmodule_decode-hrefsyntax-bytemathitbyteast--hrefsyntax-modulemathitmodule--hrefembed-errormathiterror",
-      "level": "5",
-      "title": "module_decode(byte∗):module ∣ error"
+      "level": 5,
+      "title": "module_decode(byte∗):module ∣ error"
     },
     {
       "id": "-mathrmmodule_parse-hrefsyntax-namemathitcharast--hrefsyntax-modulemathitmodule--hrefembed-errormathiterror",
-      "level": "5",
-      "title": "module_parse(char∗):module ∣ error"
+      "level": 5,
+      "title": "module_parse(char∗):module ∣ error"
     },
     {
       "id": "-mathrmmodule_validate-hrefsyntax-modulemathitmodule--hrefembed-errormathiterror",
-      "level": "5",
+      "level": 5,
       "title": "module_validate(module):error?"
     },
     {
       "id": "-mathrmmodule_instantiate-hrefsyntax-storemathitstore-hrefsyntax-modulemathitmodule-hrefsyntax-externvalmathitexternvalast--hrefsyntax-storemathitstore-hrefsyntax-moduleinstmathitmoduleinst--hrefembed-errormathiterror",
-      "level": "5",
-      "title": "module_instantiate(store,module,externval∗):(store,moduleinst ∣ error)"
+      "level": 5,
+      "title": "module_instantiate(store,module,externval∗):(store,moduleinst ∣ error)"
     },
     {
       "id": "-mathrmmodule_imports-hrefsyntax-modulemathitmodule--hrefsyntax-namemathitname-hrefsyntax-namemathitname-hrefsyntax-externtypemathitexterntypeast",
-      "level": "5",
+      "level": 5,
       "title": "module_imports(module):(name,name,externtype)∗"
     },
     {
       "id": "-mathrmmodule_exports-hrefsyntax-modulemathitmodule--hrefsyntax-namemathitname-hrefsyntax-externtypemathitexterntypeast",
-      "level": "5",
+      "level": 5,
       "title": "module_exports(module):(name,externtype)∗"
     },
     {
       "id": "module-instances③",
-      "level": "4",
+      "level": 4,
       "title": "Module Instances"
     },
     {
       "id": "-mathrminstance_export-hrefsyntax-moduleinstmathitmoduleinst-hrefsyntax-namemathitname--hrefsyntax-externvalmathitexternval--hrefembed-errormathiterror",
-      "level": "5",
-      "title": "instance_export(moduleinst,name):externval ∣ error"
+      "level": 5,
+      "title": "instance_export(moduleinst,name):externval ∣ error"
     },
     {
       "id": "functions①⓪",
-      "level": "4",
+      "level": 4,
       "title": "Functions"
     },
     {
       "id": "-mathrmfunc_alloc-hrefsyntax-storemathitstore-hrefsyntax-functypemathitfunctype-hrefsyntax-hostfuncmathithostfunc--hrefsyntax-storemathitstore-hrefsyntax-funcaddrmathitfuncaddr",
-      "level": "5",
+      "level": 5,
       "title": "func_alloc(store,functype,hostfunc):(store,funcaddr)"
     },
     {
       "id": "-mathrmfunc_type-hrefsyntax-storemathitstore-hrefsyntax-funcaddrmathitfuncaddr--hrefsyntax-functypemathitfunctype",
-      "level": "5",
+      "level": 5,
       "title": "func_type(store,funcaddr):functype"
     },
     {
       "id": "-mathrmfunc_invoke-hrefsyntax-storemathitstore-hrefsyntax-funcaddrmathitfuncaddr-hrefsyntax-valmathitvalast--hrefsyntax-storemathitstore-hrefsyntax-valmathitvalast--hrefembed-errormathiterror",
-      "level": "5",
-      "title": "func_invoke(store,funcaddr,val∗):(store,val∗ ∣ error)"
+      "level": 5,
+      "title": "func_invoke(store,funcaddr,val∗):(store,val∗ ∣ error)"
     },
     {
       "id": "tables①⓪",
-      "level": "4",
+      "level": 4,
       "title": "Tables"
     },
     {
       "id": "-mathrmtable_alloc-hrefsyntax-storemathitstore-hrefsyntax-tabletypemathittabletype--hrefsyntax-storemathitstore-hrefsyntax-tableaddrmathittableaddr",
-      "level": "5",
+      "level": 5,
       "title": "table_alloc(store,tabletype):(store,tableaddr)"
     },
     {
       "id": "-mathrmtable_type-hrefsyntax-storemathitstore-hrefsyntax-tableaddrmathittableaddr--hrefsyntax-tabletypemathittabletype",
-      "level": "5",
+      "level": 5,
       "title": "table_type(store,tableaddr):tabletype"
     },
     {
       "id": "-mathrmtable_read-hrefsyntax-storemathitstore-hrefsyntax-tableaddrmathittableaddr-ihrefsyntax-intmathitu32--hrefsyntax-funcaddrmathitfuncaddr--hrefembed-errormathiterror",
-      "level": "5",
-      "title": "table_read(store,tableaddr,i:u32):funcaddr? ∣ error"
+      "level": 5,
+      "title": "table_read(store,tableaddr,i:u32):funcaddr? ∣ error"
     },
     {
       "id": "-mathrmtable_write-hrefsyntax-storemathitstore-hrefsyntax-tableaddrmathittableaddr-ihrefsyntax-intmathitu32-hrefsyntax-funcaddrmathitfuncaddr--hrefsyntax-storemathitstore--hrefembed-errormathiterror",
-      "level": "5",
-      "title": "table_write(store,tableaddr,i:u32,funcaddr?):store ∣ error"
+      "level": 5,
+      "title": "table_write(store,tableaddr,i:u32,funcaddr?):store ∣ error"
     },
     {
       "id": "-mathrmtable_size-hrefsyntax-storemathitstore-hrefsyntax-tableaddrmathittableaddr--hrefsyntax-intmathitu32",
-      "level": "5",
+      "level": 5,
       "title": "table_size(store,tableaddr):u32"
     },
     {
       "id": "-mathrmtable_grow-hrefsyntax-storemathitstore-hrefsyntax-tableaddrmathittableaddr-nhrefsyntax-intmathitu32--hrefsyntax-storemathitstore--hrefembed-errormathiterror",
-      "level": "5",
-      "title": "table_grow(store,tableaddr,n:u32):store ∣ error"
+      "level": 5,
+      "title": "table_grow(store,tableaddr,n:u32):store ∣ error"
     },
     {
       "id": "memories①⓪",
-      "level": "4",
+      "level": 4,
       "title": "Memories"
     },
     {
       "id": "-mathrmmem_alloc-hrefsyntax-storemathitstore-hrefsyntax-memtypemathitmemtype--hrefsyntax-storemathitstore-hrefsyntax-memaddrmathitmemaddr",
-      "level": "5",
+      "level": 5,
       "title": "mem_alloc(store,memtype):(store,memaddr)"
     },
     {
       "id": "-mathrmmem_type-hrefsyntax-storemathitstore-hrefsyntax-memaddrmathitmemaddr--hrefsyntax-memtypemathitmemtype",
-      "level": "5",
+      "level": 5,
       "title": "mem_type(store,memaddr):memtype"
     },
     {
       "id": "-mathrmmem_read-hrefsyntax-storemathitstore-hrefsyntax-memaddrmathitmemaddr-ihrefsyntax-intmathitu32--hrefsyntax-bytemathitbyte--hrefembed-errormathiterror",
-      "level": "5",
-      "title": "mem_read(store,memaddr,i:u32):byte ∣ error"
+      "level": 5,
+      "title": "mem_read(store,memaddr,i:u32):byte ∣ error"
     },
     {
       "id": "-mathrmmem_write-hrefsyntax-storemathitstore-hrefsyntax-memaddrmathitmemaddr-ihrefsyntax-intmathitu32-hrefsyntax-bytemathitbyte--hrefsyntax-storemathitstore--hrefembed-errormathiterror",
-      "level": "5",
-      "title": "mem_write(store,memaddr,i:u32,byte):store ∣ error"
+      "level": 5,
+      "title": "mem_write(store,memaddr,i:u32,byte):store ∣ error"
     },
     {
       "id": "-mathrmmem_size-hrefsyntax-storemathitstore-hrefsyntax-memaddrmathitmemaddr--hrefsyntax-intmathitu32",
-      "level": "5",
+      "level": 5,
       "title": "mem_size(store,memaddr):u32"
     },
     {
       "id": "-mathrmmem_grow-hrefsyntax-storemathitstore-hrefsyntax-memaddrmathitmemaddr-nhrefsyntax-intmathitu32--hrefsyntax-storemathitstore--hrefembed-errormathiterror",
-      "level": "5",
-      "title": "mem_grow(store,memaddr,n:u32):store ∣ error"
+      "level": 5,
+      "title": "mem_grow(store,memaddr,n:u32):store ∣ error"
     },
     {
       "id": "globals①⓪",
-      "level": "4",
+      "level": 4,
       "title": "Globals"
     },
     {
       "id": "-mathrmglobal_alloc-hrefsyntax-storemathitstore-hrefsyntax-globaltypemathitglobaltype-hrefsyntax-valmathitval--hrefsyntax-storemathitstore-hrefsyntax-globaladdrmathitglobaladdr",
-      "level": "5",
+      "level": 5,
       "title": "global_alloc(store,globaltype,val):(store,globaladdr)"
     },
     {
       "id": "-mathrmglobal_type-hrefsyntax-storemathitstore-hrefsyntax-globaladdrmathitglobaladdr--hrefsyntax-globaltypemathitglobaltype",
-      "level": "5",
+      "level": 5,
       "title": "global_type(store,globaladdr):globaltype"
     },
     {
       "id": "-mathrmglobal_read-hrefsyntax-storemathitstore-hrefsyntax-globaladdrmathitglobaladdr--hrefsyntax-valmathitval",
-      "level": "5",
+      "level": 5,
       "title": "global_read(store,globaladdr):val"
     },
     {
       "id": "-mathrmglobal_write-hrefsyntax-storemathitstore-hrefsyntax-globaladdrmathitglobaladdr-hrefsyntax-valmathitval--hrefsyntax-storemathitstore--hrefembed-errormathiterror",
-      "level": "5",
-      "title": "global_write(store,globaladdr,val):store ∣ error"
+      "level": 5,
+      "title": "global_write(store,globaladdr,val):store ∣ error"
     },
     {
       "id": "a2-implementation-limitations",
-      "level": "3",
-      "title": "A.2 Implementation Limitations"
+      "level": 3,
+      "title": "Implementation Limitations",
+      "number": "A.2"
     },
     {
       "id": "syntactic-limits①",
-      "level": "4",
+      "level": 4,
       "title": "Syntactic Limits"
     },
     {
       "id": "structure③",
-      "level": "5",
+      "level": 5,
       "title": "Structure"
     },
     {
       "id": "binary-format③",
-      "level": "5",
+      "level": 5,
       "title": "Binary Format"
     },
     {
       "id": "text-format④",
-      "level": "5",
+      "level": 5,
       "title": "Text Format"
     },
     {
       "id": "validation④",
-      "level": "4",
+      "level": 4,
       "title": "Validation"
     },
     {
       "id": "execution④",
-      "level": "4",
+      "level": 4,
       "title": "Execution"
     },
     {
       "id": "a3-validation-algorithm",
-      "level": "3",
-      "title": "A.3 Validation Algorithm"
+      "level": 3,
+      "title": "Validation Algorithm",
+      "number": "A.3"
     },
     {
       "id": "data-structures①",
-      "level": "4",
+      "level": 4,
       "title": "Data Structures"
     },
     {
       "id": "validation-of-opcode-sequences①",
-      "level": "4",
+      "level": 4,
       "title": "Validation of Opcode Sequences"
     },
     {
       "id": "a4-custom-sections",
-      "level": "3",
-      "title": "A.4 Custom Sections"
+      "level": 3,
+      "title": "Custom Sections",
+      "number": "A.4"
     },
     {
       "id": "name-section①",
-      "level": "4",
+      "level": 4,
       "title": "Name Section"
     },
     {
       "id": "subsections①",
-      "level": "5",
+      "level": 5,
       "title": "Subsections"
     },
     {
       "id": "name-maps①",
-      "level": "5",
+      "level": 5,
       "title": "Name Maps"
     },
     {
       "id": "module-names①",
-      "level": "5",
+      "level": 5,
       "title": "Module Names"
     },
     {
       "id": "function-names①",
-      "level": "5",
+      "level": 5,
       "title": "Function Names"
     },
     {
       "id": "local-names①",
-      "level": "5",
+      "level": 5,
       "title": "Local Names"
     },
     {
       "id": "a5-soundness",
-      "level": "3",
-      "title": "A.5 Soundness"
+      "level": 3,
+      "title": "Soundness",
+      "number": "A.5"
     },
     {
       "id": "values-and-results①",
-      "level": "4",
+      "level": 4,
       "title": "Values and Results"
     },
     {
       "id": "values--threfsyntax-instr-numericmathsfconstc",
-      "level": "5",
-      "title": "Values t.const c"
+      "level": 5,
+      "title": "Values t.const c"
     },
     {
       "id": "results--hrefsyntax-valmathitvalast",
-      "level": "5",
+      "level": 5,
       "title": "Results val∗"
     },
     {
       "id": "results--hrefsyntax-trapmathsftrap",
-      "level": "5",
+      "level": 5,
       "title": "Results trap"
     },
     {
       "id": "store-validity①",
-      "level": "4",
+      "level": 4,
       "title": "Store Validity"
     },
     {
       "id": "store--s",
-      "level": "5",
+      "level": 5,
       "title": "Store S"
     },
     {
       "id": "function-instances--hrefsyntax-funcinstmathsftypehrefsyntax-functypemathitfunctype-hrefsyntax-funcinstmathsfmodulehrefsyntax-moduleinstmathitmoduleinst-hrefsyntax-funcinstmathsfcodehrefsyntax-funcmathitfunc",
-      "level": "5",
-      "title": "Function Instances {type functype,module moduleinst,code func}"
+      "level": 5,
+      "title": "Function Instances {type functype,module moduleinst,code func}"
     },
     {
       "id": "host-function-instances--hrefsyntax-funcinstmathsftypehrefsyntax-functypemathitfunctype-hrefsyntax-funcinstmathsfhostcodemathithf",
-      "level": "5",
-      "title": "Host Function Instances {type functype,hostcode hf}"
+      "level": 5,
+      "title": "Host Function Instances {type functype,hostcode hf}"
     },
     {
       "id": "table-instances---hrefsyntax-tableinstmathsfelem-mathitfan-hrefsyntax-tableinstmathsfmaxm",
-      "level": "5",
-      "title": "Table Instances {elem (fa?)n,max m?}"
+      "level": 5,
+      "title": "Table Instances {elem (fa?)n,max m?}"
     },
     {
       "id": "memory-instances---hrefsyntax-meminstmathsfdatabn-hrefsyntax-meminstmathsfmaxm",
-      "level": "5",
-      "title": "Memory Instances {data bn,max m?}"
+      "level": 5,
+      "title": "Memory Instances {data bn,max m?}"
     },
     {
       "id": "global-instances---hrefsyntax-globalinstmathsfvalue-threfsyntax-instr-numericmathsfconstc-hrefsyntax-globalinstmathsfmuthrefsyntax-mutmathitmut",
-      "level": "5",
-      "title": "Global Instances {value (t.const c),mut mut}"
+      "level": 5,
+      "title": "Global Instances {value (t.const c),mut mut}"
     },
     {
       "id": "export-instances---hrefsyntax-exportinstmathsfnamehrefsyntax-namemathitname-hrefsyntax-exportinstmathsfvaluehrefsyntax-externvalmathitexternval",
-      "level": "5",
-      "title": "Export Instances {name name,value externval}"
+      "level": 5,
+      "title": "Export Instances {name name,value externval}"
     },
     {
       "id": "module-instances--hrefsyntax-moduleinstmathitmoduleinst",
-      "level": "5",
+      "level": 5,
       "title": "Module Instances moduleinst"
     },
     {
       "id": "configuration-validity①",
-      "level": "4",
+      "level": 4,
       "title": "Configuration Validity"
     },
     {
       "id": "configurations--st",
-      "level": "5",
+      "level": 5,
       "title": "Configurations S;T"
     },
     {
       "id": "threads--fhrefsyntax-instrmathitinstrast",
-      "level": "5",
+      "level": 5,
       "title": "Threads F;instr∗"
     },
     {
       "id": "frames--hrefsyntax-framemathsflocalshrefsyntax-valmathitvalast-hrefsyntax-framemathsfmodulehrefsyntax-moduleinstmathitmoduleinst",
-      "level": "5",
-      "title": "Frames {locals val∗,module moduleinst}"
+      "level": 5,
+      "title": "Frames {locals val∗,module moduleinst}"
     },
     {
       "id": "administrative-instructions③",
-      "level": "4",
+      "level": 4,
       "title": "Administrative Instructions"
     },
     {
       "id": "-hrefsyntax-trapmathsftrap",
-      "level": "5",
+      "level": 5,
       "title": "trap"
     },
     {
       "id": "-hrefsyntax-invokemathsfinvokehrefsyntax-funcaddrmathitfuncaddr",
-      "level": "5",
-      "title": "invoke funcaddr"
+      "level": 5,
+      "title": "invoke funcaddr"
     },
     {
       "id": "-hrefsyntax-init-elemmathsfinit_elemhrefsyntax-tableaddrmathittableaddroxn",
-      "level": "5",
-      "title": "init_elem tableaddr o xn"
+      "level": 5,
+      "title": "init_elem tableaddr o xn"
     },
     {
       "id": "-hrefsyntax-init-datamathsfinit_datahrefsyntax-memaddrmathitmemaddrobn",
-      "level": "5",
-      "title": "init_data memaddr o bn"
+      "level": 5,
+      "title": "init_data memaddr o bn"
     },
     {
       "id": "-hrefsyntax-labelmathsflabel_nhrefsyntax-instrmathitinstr_0asthrefsyntax-instrmathitinstrasthrefsyntax-instr-controlmathsfend",
-      "level": "5",
-      "title": "labeln​{instr0∗​} instr∗ end"
+      "level": 5,
+      "title": "labeln​{instr0∗​} instr∗ end"
     },
     {
       "id": "-hrefsyntax-framemathsfframe_nfhrefsyntax-instrmathitinstrasthrefsyntax-instr-controlmathsfend",
-      "level": "5",
-      "title": "framen​{F} instr∗ end"
+      "level": 5,
+      "title": "framen​{F} instr∗ end"
     },
     {
       "id": "store-extension①",
-      "level": "4",
+      "level": 4,
       "title": "Store Extension"
     },
     {
       "id": "store--s①",
-      "level": "5",
+      "level": 5,
       "title": "Store S"
     },
     {
       "id": "function-instance--hrefsyntax-funcinstmathitfuncinst",
-      "level": "5",
+      "level": 5,
       "title": "Function Instance funcinst"
     },
     {
       "id": "table-instance--hrefsyntax-tableinstmathittableinst",
-      "level": "5",
+      "level": 5,
       "title": "Table Instance tableinst"
     },
     {
       "id": "memory-instance--hrefsyntax-meminstmathitmeminst",
-      "level": "5",
+      "level": 5,
       "title": "Memory Instance meminst"
     },
     {
       "id": "global-instance--hrefsyntax-globalinstmathitglobalinst",
-      "level": "5",
+      "level": 5,
       "title": "Global Instance globalinst"
     },
     {
       "id": "theorems①",
-      "level": "4",
+      "level": 4,
       "title": "Theorems"
     },
     {
       "id": "a6-index-of-types",
-      "level": "3",
-      "title": "A.6 Index of Types"
+      "level": 3,
+      "title": "Index of Types",
+      "number": "A.6"
     },
     {
       "id": "a7-index-of-instructions",
-      "level": "3",
-      "title": "A.7 Index of Instructions"
+      "level": 3,
+      "title": "Index of Instructions",
+      "number": "A.7"
     },
     {
       "id": "a8-index-of-semantic-rules",
-      "level": "3",
-      "title": "A.8 Index of Semantic Rules"
+      "level": 3,
+      "title": "Index of Semantic Rules",
+      "number": "A.8"
     },
     {
       "id": "typing-of-static-constructs①",
-      "level": "4",
+      "level": 4,
       "title": "Typing of Static Constructs"
     },
     {
       "id": "typing-of-runtime-constructs①",
-      "level": "4",
+      "level": 4,
       "title": "Typing of Runtime Constructs"
     },
     {
       "id": "constantness①",
-      "level": "4",
+      "level": 4,
       "title": "Constantness"
     },
     {
       "id": "import-matching③",
-      "level": "4",
+      "level": 4,
       "title": "Import Matching"
     },
     {
       "id": "store-extension③",
-      "level": "4",
+      "level": 4,
       "title": "Store Extension"
     },
     {
       "id": "execution⑥",
-      "level": "4",
+      "level": 4,
       "title": "Execution"
     },
     {
       "id": "conformance",
-      "level": "2",
+      "level": 2,
       "title": "Conformance"
     },
     {
       "id": "document-conventions",
-      "level": "3",
+      "level": 3,
       "title": "Document conventions"
     },
     {
       "id": "references",
-      "level": "2",
+      "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "level": "3",
+      "level": 3,
       "title": "Normative References"
     }
   ]

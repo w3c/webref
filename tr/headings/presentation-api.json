@@ -6,333 +6,420 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "Presentation API"
     },
     {
-      "id": "w3c-candidate-recommendation-01-june-2017",
-      "level": "2",
-      "title": "W3C Candidate Recommendation 01 June 2017"
+      "id": "draft",
+      "level": 3,
+      "title": "Draft"
     },
     {
-      "id": "h-abstract",
-      "level": "2",
-      "title": "Abstract"
-    },
-    {
-      "id": "h-sotd",
-      "level": "2",
-      "title": "Status of This Document"
-    },
-    {
-      "id": "table-of-contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
-      "id": "h-introduction",
-      "level": "2",
-      "title": "Introduction"
+      "id": "introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
-      "id": "h-use-cases-and-requirements",
-      "level": "2",
-      "title": "Use cases and requirements"
+      "id": "use-cases-and-requirements",
+      "level": 2,
+      "title": "Use cases and requirements",
+      "number": "2"
     },
     {
-      "id": "h-conformance",
-      "level": "2",
-      "title": "Conformance"
+      "id": "conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "3"
     },
     {
-      "id": "h-conformance-classes",
-      "level": "3",
-      "title": "Conformance classes"
+      "id": "conformance-classes",
+      "level": 3,
+      "title": "Conformance classes",
+      "number": "3.1"
     },
     {
-      "id": "h-terminology",
-      "level": "2",
-      "title": "Terminology"
+      "id": "terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "4"
     },
     {
-      "id": "h-examples",
-      "level": "2",
-      "title": "Examples"
+      "id": "examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "5"
     },
     {
-      "id": "h-monitor-availability-of-presentation-displays-example",
-      "level": "3",
-      "title": "Monitor availability of presentation displays example"
+      "id": "monitoring-availability-of-presentation-displays",
+      "level": 3,
+      "title": "Monitoring availability of presentation displays",
+      "number": "5.1"
     },
     {
-      "id": "h-starting-a-new-presentation-example",
-      "level": "3",
-      "title": "Starting a new presentation example"
+      "id": "starting-a-new-presentation",
+      "level": 3,
+      "title": "Starting a new presentation",
+      "number": "5.2"
     },
     {
-      "id": "h-reconnect-to-a-presentation-example",
-      "level": "3",
-      "title": "Reconnect to a presentation example"
+      "id": "reconnecting-to-an-existing-presentation",
+      "level": 3,
+      "title": "Reconnecting to an existing presentation",
+      "number": "5.3"
     },
     {
-      "id": "h-presentation-initiation-by-the-controlling-ua-example",
-      "level": "3",
-      "title": "Presentation initiation by the controlling UA example"
+      "id": "starting-a-presentation-by-the-controlling-user-agent",
+      "level": 3,
+      "title": "Starting a presentation by the controlling user agent",
+      "number": "5.4"
     },
     {
-      "id": "h-monitor-connection-s-state-and-exchange-data-example",
-      "level": "3",
-      "title": "Monitor connection's state and exchange data example"
+      "id": "monitoring-the-connection-state-and-exchanging-data",
+      "level": 3,
+      "title": "Monitoring the connection state and exchanging data",
+      "number": "5.5"
     },
     {
-      "id": "h-monitor-available-connection-s-and-say-hello",
-      "level": "3",
-      "title": "Monitor available connection(s) and say hello"
+      "id": "listening-for-incoming-presentation-connections",
+      "level": 3,
+      "title": "Listening for incoming presentation connections",
+      "number": "5.6"
     },
     {
-      "id": "h-passing-locale-information-with-a-message",
-      "level": "3",
-      "title": "Passing locale information with a message"
+      "id": "passing-locale-information-with-a-message",
+      "level": 3,
+      "title": "Passing locale information with a message",
+      "number": "5.7"
     },
     {
-      "id": "h-api",
-      "level": "2",
-      "title": "API"
+      "id": "creating-a-second-presentation-from-the-same-controlling-page",
+      "level": 3,
+      "title": "Creating a second presentation from the same controlling page",
+      "number": "5.8"
     },
     {
-      "id": "h-common-idioms",
-      "level": "3",
-      "title": "Common idioms"
+      "id": "api",
+      "level": 2,
+      "title": "API",
+      "number": "6"
     },
     {
-      "id": "h-interface-presentation",
-      "level": "3",
-      "title": "Interface Presentation"
+      "id": "common-idioms",
+      "level": 3,
+      "title": "Common idioms",
+      "number": "6.1"
     },
     {
-      "id": "h-controlling-user-agent",
-      "level": "4",
-      "title": "Controlling user agent"
+      "id": "interface-presentation",
+      "level": 3,
+      "title": "Interface Presentation",
+      "number": "6.2"
     },
     {
-      "id": "h-receiving-user-agent",
-      "level": "4",
-      "title": "Receiving user agent"
+      "id": "controlling-user-agent",
+      "level": 4,
+      "title": "Controlling user agent",
+      "number": "6.2.1"
     },
     {
-      "id": "h-interface-presentationrequest",
-      "level": "3",
-      "title": "Interface PresentationRequest"
+      "id": "receiving-user-agent",
+      "level": 4,
+      "title": "Receiving user agent",
+      "number": "6.2.2"
     },
     {
-      "id": "h-constructing-a-presentationrequest",
-      "level": "4",
-      "title": "Constructing a PresentationRequest"
+      "id": "interface-presentationrequest",
+      "level": 3,
+      "title": "Interface PresentationRequest",
+      "number": "6.3"
     },
     {
-      "id": "h-selecting-a-presentation-display",
-      "level": "4",
-      "title": "Selecting a presentation display"
+      "id": "constructing-a-presentationrequest",
+      "level": 4,
+      "title": "Constructing a PresentationRequest",
+      "number": "6.3.1"
     },
     {
-      "id": "h-starting-a-presentation-from-a-default-presentation-request",
-      "level": "4",
-      "title": "Starting a presentation from a default presentation request"
+      "id": "selecting-a-presentation-display",
+      "level": 4,
+      "title": "Selecting a presentation display",
+      "number": "6.3.2"
     },
     {
-      "id": "h-starting-a-presentation-connection",
-      "level": "4",
-      "title": "Starting a presentation connection"
+      "id": "starting-a-presentation-from-a-default-presentation-request",
+      "level": 4,
+      "title": "Starting a presentation from a default presentation request",
+      "number": "6.3.3"
     },
     {
-      "id": "h-reconnecting-to-a-presentation",
-      "level": "4",
-      "title": "Reconnecting to a presentation"
+      "id": "starting-a-presentation-connection",
+      "level": 4,
+      "title": "Starting a presentation connection",
+      "number": "6.3.4"
     },
     {
-      "id": "h-event-handlers",
-      "level": "4",
-      "title": "Event Handlers"
+      "id": "reconnecting-to-a-presentation",
+      "level": 4,
+      "title": "Reconnecting to a presentation",
+      "number": "6.3.5"
     },
     {
-      "id": "h-interface-presentationavailability",
-      "level": "3",
-      "title": "Interface PresentationAvailability"
+      "id": "event-handlers",
+      "level": 4,
+      "title": "Event Handlers",
+      "number": "6.3.6"
     },
     {
-      "id": "h-the-set-of-presentation-availability-objects",
-      "level": "4",
-      "title": "The set of presentation availability objects"
+      "id": "interface-presentationavailability",
+      "level": 3,
+      "title": "Interface PresentationAvailability",
+      "number": "6.4"
     },
     {
-      "id": "h-the-list-of-available-presentation-displays",
-      "level": "4",
-      "title": "The list of available presentation displays"
+      "id": "the-set-of-presentation-availability-objects",
+      "level": 4,
+      "title": "The set of presentation availability objects",
+      "number": "6.4.1"
     },
     {
-      "id": "h-getting-the-presentation-displays-availability-information",
-      "level": "4",
-      "title": "Getting the presentation displays availability information"
+      "id": "the-list-of-available-presentation-displays",
+      "level": 4,
+      "title": "The list of available presentation displays",
+      "number": "6.4.2"
     },
     {
-      "id": "h-monitoring-the-list-of-available-presentation-displays",
-      "level": "4",
-      "title": "Monitoring the list of available presentation displays"
+      "id": "getting-the-presentation-displays-availability-information",
+      "level": 4,
+      "title": "Getting the presentation displays availability information",
+      "number": "6.4.3"
     },
     {
-      "id": "h-interface-presentationconnectionavailableevent",
-      "level": "4",
-      "title": "Interface PresentationConnectionAvailableEvent"
+      "id": "monitoring-the-list-of-available-presentation-displays",
+      "level": 4,
+      "title": "Monitoring the list of available presentation displays",
+      "number": "6.4.4"
     },
     {
-      "id": "h-interface-presentationconnection",
-      "level": "3",
-      "title": "Interface PresentationConnection"
+      "id": "interface-presentationconnectionavailableevent",
+      "level": 4,
+      "title": "Interface PresentationConnectionAvailableEvent",
+      "number": "6.4.5"
     },
     {
-      "id": "h-establishing-a-presentation-connection",
-      "level": "4",
-      "title": "Establishing a presentation connection"
+      "id": "interface-presentationconnection",
+      "level": 3,
+      "title": "Interface PresentationConnection",
+      "number": "6.5"
     },
     {
-      "id": "h-sending-a-message-through-presentationconnection",
-      "level": "4",
-      "title": "Sending a message through PresentationConnection"
+      "id": "establishing-a-presentation-connection",
+      "level": 4,
+      "title": "Establishing a presentation connection",
+      "number": "6.5.1"
     },
     {
-      "id": "h-receiving-a-message-through-presentationconnection",
-      "level": "4",
-      "title": "Receiving a message through PresentationConnection"
+      "id": "sending-a-message-through-presentationconnection",
+      "level": 4,
+      "title": "Sending a message through PresentationConnection",
+      "number": "6.5.2"
     },
     {
-      "id": "h-interface-presentationconnectioncloseevent",
-      "level": "4",
-      "title": "Interface PresentationConnectionCloseEvent"
+      "id": "receiving-a-message-through-presentationconnection",
+      "level": 4,
+      "title": "Receiving a message through PresentationConnection",
+      "number": "6.5.3"
     },
     {
-      "id": "h-closing-a-presentationconnection",
-      "level": "4",
-      "title": "Closing a PresentationConnection"
+      "id": "interface-presentationconnectioncloseevent",
+      "level": 4,
+      "title": "Interface PresentationConnectionCloseEvent",
+      "number": "6.5.4"
     },
     {
-      "id": "h-terminating-a-presentation-in-a-controlling-browsing-context",
-      "level": "4",
-      "title": "Terminating a presentation in a controlling browsing context"
+      "id": "closing-a-presentationconnection",
+      "level": 4,
+      "title": "Closing a PresentationConnection",
+      "number": "6.5.5"
     },
     {
-      "id": "h-terminating-a-presentation-in-a-receiving-browsing-context",
-      "level": "4",
-      "title": "Terminating a presentation in a receiving browsing context"
+      "id": "terminating-a-presentation-in-a-controlling-browsing-context",
+      "level": 4,
+      "title": "Terminating a presentation in a controlling browsing context",
+      "number": "6.5.6"
     },
     {
-      "id": "h-handling-a-termination-confirmation-in-a-controlling-user-agent",
-      "level": "4",
-      "title": "Handling a termination confirmation in a controlling user agent"
+      "id": "terminating-a-presentation-in-a-receiving-browsing-context",
+      "level": 4,
+      "title": "Terminating a presentation in a receiving browsing context",
+      "number": "6.5.7"
     },
     {
-      "id": "h-event-handlers-1",
-      "level": "4",
-      "title": "Event Handlers"
+      "id": "handling-a-termination-confirmation-in-a-controlling-user-agent",
+      "level": 4,
+      "title": "Handling a termination confirmation in a controlling user agent",
+      "number": "6.5.8"
     },
     {
-      "id": "h-interface-presentationreceiver",
-      "level": "3",
-      "title": "Interface PresentationReceiver"
+      "id": "event-handlers-0",
+      "level": 4,
+      "title": "Event Handlers",
+      "number": "6.5.9"
     },
     {
-      "id": "h-creating-a-receiving-browsing-context",
-      "level": "4",
-      "title": "Creating a receiving browsing context"
+      "id": "interface-presentationreceiver",
+      "level": 3,
+      "title": "Interface PresentationReceiver",
+      "number": "6.6"
     },
     {
-      "id": "h-interface-presentationconnectionlist",
-      "level": "3",
-      "title": "Interface PresentationConnectionList"
+      "id": "creating-a-receiving-browsing-context",
+      "level": 4,
+      "title": "Creating a receiving browsing context",
+      "number": "6.6.1"
     },
     {
-      "id": "h-monitoring-incoming-presentation-connections",
-      "level": "4",
-      "title": "Monitoring incoming presentation connections"
+      "id": "interface-presentationconnectionlist",
+      "level": 3,
+      "title": "Interface PresentationConnectionList",
+      "number": "6.7"
     },
     {
-      "id": "h-event-handlers-2",
-      "level": "4",
-      "title": "Event Handlers"
+      "id": "monitoring-incoming-presentation-connections",
+      "level": 4,
+      "title": "Monitoring incoming presentation connections",
+      "number": "6.7.1"
     },
     {
-      "id": "h-security-and-privacy-considerations",
-      "level": "2",
-      "title": "Security and privacy considerations"
+      "id": "event-handlers-1",
+      "level": 4,
+      "title": "Event Handlers",
+      "number": "6.7.2"
     },
     {
-      "id": "h-personally-identifiable-information",
-      "level": "3",
-      "title": "Personally identifiable information"
+      "id": "security-and-privacy-considerations",
+      "level": 2,
+      "title": "Security and privacy considerations",
+      "number": "7"
     },
     {
-      "id": "h-cross-origin-access",
-      "level": "3",
-      "title": "Cross-origin access"
+      "id": "personally-identifiable-information",
+      "level": 3,
+      "title": "Personally identifiable information",
+      "number": "7.1"
     },
     {
-      "id": "h-user-interface-guidelines",
-      "level": "3",
-      "title": "User interface guidelines"
+      "id": "cross-origin-access",
+      "level": 3,
+      "title": "Cross-origin access",
+      "number": "7.2"
     },
     {
-      "id": "h-device-access",
-      "level": "3",
-      "title": "Device Access"
+      "id": "user-interface-guidelines",
+      "level": 3,
+      "title": "User interface guidelines",
+      "number": "7.3"
     },
     {
-      "id": "h-temporary-identifiers-and-browser-state",
-      "level": "3",
-      "title": "Temporary identifiers and browser state"
+      "id": "device-access",
+      "level": 3,
+      "title": "Device Access",
+      "number": "7.4"
     },
     {
-      "id": "h-private-browsing-mode-and-clearing-of-browsing-data",
-      "level": "3",
-      "title": "Private browsing mode and clearing of browsing data"
+      "id": "temporary-identifiers-and-browser-state",
+      "level": 3,
+      "title": "Temporary identifiers and browser state",
+      "number": "7.5"
     },
     {
-      "id": "h-messaging-between-presentation-connections",
-      "level": "3",
-      "title": "Messaging between presentation connections"
+      "id": "private-browsing-mode-and-clearing-of-browsing-data",
+      "level": 3,
+      "title": "Private browsing mode and clearing of browsing data",
+      "number": "7.6"
     },
     {
-      "id": "h-acknowledgments",
-      "level": "2",
-      "title": "A.  Acknowledgments"
+      "id": "messaging-between-presentation-connections",
+      "level": 3,
+      "title": "Messaging between presentation connections",
+      "number": "7.7"
     },
     {
-      "id": "h-candidate-recommendation-exit-criteria",
-      "level": "2",
-      "title": "B.  Candidate Recommendation exit criteria"
+      "id": "idl-index",
+      "level": 2,
+      "title": "IDL Index",
+      "number": "A"
     },
     {
-      "id": "h-change-log",
-      "level": "2",
-      "title": "C.  Change log"
+      "id": "index",
+      "level": 2,
+      "title": "Index",
+      "number": "B"
     },
     {
-      "id": "h-changes-since-14-july-2016",
-      "level": "3",
-      "title": "C.1  Changes since 14 July 2016"
+      "id": "index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "B.1"
     },
     {
-      "id": "h-references",
-      "level": "2",
-      "title": "D. References"
+      "id": "index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "B.2"
     },
     {
-      "id": "h-normative-references",
-      "level": "3",
-      "title": "D.1 Normative references"
+      "id": "acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "C"
     },
     {
-      "id": "h-informative-references",
-      "level": "3",
-      "title": "D.2 Informative references"
+      "id": "candidate-recommendation-exit-criteria",
+      "level": 2,
+      "title": "Candidate Recommendation exit criteria",
+      "number": "D"
+    },
+    {
+      "id": "change-log",
+      "level": 2,
+      "title": "Change log",
+      "number": "E"
+    },
+    {
+      "id": "changes-since-01-june-2017",
+      "level": 3,
+      "title": "Changes since 01 June 2017",
+      "number": "E.1"
+    },
+    {
+      "id": "changes-since-14-july-2016",
+      "level": 3,
+      "title": "Changes since 14 July 2016",
+      "number": "E.2"
+    },
+    {
+      "id": "references",
+      "level": 2,
+      "title": "References",
+      "number": "F"
+    },
+    {
+      "id": "normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "F.1"
+    },
+    {
+      "id": "informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "F.2"
     }
   ]
 }

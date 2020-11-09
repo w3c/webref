@@ -4,109 +4,92 @@
 // Source: Presentation API (https://www.w3.org/TR/presentation-api/)
 
 partial interface Navigator {
-    [SecureContext,
-     SameObject]
-    readonly attribute Presentation presentation;
+  [SecureContext, SameObject] readonly attribute Presentation presentation;
 };
 
-[SecureContext]
+[SecureContext, Exposed=Window]
 interface Presentation {
 };
 
 partial interface Presentation {
-    attribute PresentationRequest? defaultRequest;
+  attribute PresentationRequest? defaultRequest;
 };
 
 partial interface Presentation {
-    readonly attribute PresentationReceiver? receiver;
+  readonly attribute PresentationReceiver? receiver;
 };
 
-[SecureContext,
- Constructor(USVString url),
- Constructor(sequence<USVString> urls)]
+[SecureContext, Exposed=Window]
 interface PresentationRequest : EventTarget {
-    Promise<PresentationConnection>   start();
-    Promise<PresentationConnection>   reconnect(USVString presentationId);
-    Promise<PresentationAvailability> getAvailability();
+  constructor(USVString url);
+  constructor(sequence<USVString> urls);
+  Promise<PresentationConnection> start();
+  Promise<PresentationConnection> reconnect(USVString presentationId);
+  Promise<PresentationAvailability> getAvailability();
 
-    attribute EventHandler onconnectionavailable;
+  attribute EventHandler onconnectionavailable;
 };
 
-[SecureContext]
+[SecureContext, Exposed=Window]
 interface PresentationAvailability : EventTarget {
-    readonly attribute boolean      value;
+  readonly attribute boolean value;
 
-             attribute EventHandler onchange;
+  attribute EventHandler onchange;
 };
 
-[SecureContext,
- Constructor(DOMString type, PresentationConnectionAvailableEventInit eventInitDict)]
+[SecureContext, Exposed=Window]
 interface PresentationConnectionAvailableEvent : Event {
-    [SameObject]
-    readonly attribute PresentationConnection connection;
+  constructor(DOMString type, PresentationConnectionAvailableEventInit eventInitDict);
+  [SameObject] readonly attribute PresentationConnection connection;
 };
 
 dictionary PresentationConnectionAvailableEventInit : EventInit {
-    required PresentationConnection connection;
+  required PresentationConnection connection;
 };
 
-enum PresentationConnectionState {
-    "connecting",
-    "connected",
-    "closed",
-    "terminated"
-};
+enum PresentationConnectionState { "connecting", "connected", "closed", "terminated" };
 
-enum BinaryType {
-    "blob",
-    "arraybuffer"
-};
-
-[SecureContext]
+[SecureContext, Exposed=Window]
 interface PresentationConnection : EventTarget {
-    readonly attribute USVString                   id;
-    readonly attribute USVString                   url;
-    readonly attribute PresentationConnectionState state;
-    void close();
-    void terminate();
-             attribute EventHandler                onconnect;
-             attribute EventHandler                onclose;
-             attribute EventHandler                onterminate;
+  readonly attribute USVString id;
+  readonly attribute USVString url;
+  readonly attribute PresentationConnectionState state;
+  undefined close();
+  undefined terminate();
+  attribute EventHandler onconnect;
+  attribute EventHandler onclose;
+  attribute EventHandler onterminate;
 
-    // Communication
-             attribute BinaryType                  binaryType;
-             attribute EventHandler                onmessage;
-    void send(DOMString message);
-    void send(Blob data);
-    void send(ArrayBuffer data);
-    void send(ArrayBufferView data);
+  // Communication
+  attribute BinaryType binaryType;
+  attribute EventHandler onmessage;
+  undefined send (DOMString message);
+  undefined send (Blob data);
+  undefined send (ArrayBuffer data);
+  undefined send (ArrayBufferView data);
 };
 
-enum PresentationConnectionCloseReason {
-    "error",
-    "closed",
-    "wentaway"
-};
+enum PresentationConnectionCloseReason { "error", "closed", "wentaway" };
 
-[SecureContext,
- Constructor(DOMString type, PresentationConnectionCloseEventInit eventInitDict)]
+[SecureContext, Exposed=Window]
 interface PresentationConnectionCloseEvent : Event {
-    readonly attribute PresentationConnectionCloseReason reason;
-    readonly attribute DOMString                         message;
+  constructor(DOMString type, PresentationConnectionCloseEventInit eventInitDict);
+  readonly attribute PresentationConnectionCloseReason reason;
+  readonly attribute DOMString message;
 };
 
 dictionary PresentationConnectionCloseEventInit : EventInit {
-    required PresentationConnectionCloseReason reason;
-             DOMString                         message = "";
+  required PresentationConnectionCloseReason reason;
+  DOMString message = "";
 };
 
-[SecureContext]
+[SecureContext, Exposed=Window]
 interface PresentationReceiver {
-    readonly attribute Promise<PresentationConnectionList> connectionList;
+  readonly attribute Promise<PresentationConnectionList> connectionList;
 };
 
-[SecureContext]
+[SecureContext, Exposed=Window]
 interface PresentationConnectionList : EventTarget {
-    readonly attribute FrozenArray<PresentationConnection> connections;
-             attribute EventHandler                        onconnectionavailable;
+  readonly attribute FrozenArray<PresentationConnection> connections;
+  attribute EventHandler onconnectionavailable;
 };

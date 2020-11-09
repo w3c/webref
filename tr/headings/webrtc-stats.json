@@ -6,523 +6,577 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "Identifiers for WebRTC's Statistics API"
     },
     {
       "id": "draft",
-      "level": "3",
+      "level": 3,
       "title": "Draft"
     },
     {
-      "id": "table-of-contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
-      "id": "x1-introduction",
-      "level": "2",
-      "title": "Introduction"
+      "id": "introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
-      "id": "x2-conformance",
-      "level": "2",
-      "title": "Conformance"
+      "id": "conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
     },
     {
-      "id": "x3-terminology",
-      "level": "2",
-      "title": "Terminology"
+      "id": "terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "3"
     },
     {
-      "id": "x4-basic-concepts",
-      "level": "2",
-      "title": "Basic concepts"
+      "id": "basic-concepts",
+      "level": 2,
+      "title": "Basic concepts",
+      "number": "4"
     },
     {
-      "id": "x4-1-guidelines-for-design-of-stats-objects",
-      "level": "3",
-      "title": "Guidelines for design of stats objects"
+      "id": "guidelines-for-design-of-stats-objects",
+      "level": 3,
+      "title": "Guidelines for design of stats objects",
+      "number": "4.1"
     },
     {
-      "id": "x4-2-guidelines-for-implementing-stats-objects",
-      "level": "3",
-      "title": "Guidelines for implementing stats objects"
+      "id": "guidelines-for-implementing-stats-objects",
+      "level": 3,
+      "title": "Guidelines for implementing stats objects",
+      "number": "4.2"
     },
     {
-      "id": "x4-3-lifetime-considerations-for-monitored-objects",
-      "level": "3",
-      "title": "Lifetime considerations for monitored objects"
+      "id": "lifetime-considerations-for-monitored-objects",
+      "level": 3,
+      "title": "Lifetime considerations for monitored objects",
+      "number": "4.3"
     },
     {
-      "id": "x4-4-guidelines-for-getstats-results-caching-throttling",
-      "level": "3",
-      "title": "Guidelines for getStats() results caching/throttling"
+      "id": "guidelines-for-getstats-results-caching-throttling",
+      "level": 3,
+      "title": "Guidelines for getStats() results caching/throttling",
+      "number": "4.4"
     },
     {
-      "id": "x5-maintenance-procedures-for-stats-object-types",
-      "level": "2",
-      "title": "Maintenance procedures for stats object types"
+      "id": "maintenance-procedures-for-stats-object-types",
+      "level": 2,
+      "title": "Maintenance procedures for stats object types",
+      "number": "5"
     },
     {
-      "id": "x5-1-adding-new-stats-objects",
-      "level": "3",
-      "title": "Adding new stats objects"
+      "id": "adding-new-stats-objects",
+      "level": 3,
+      "title": "Adding new stats objects",
+      "number": "5.1"
     },
     {
-      "id": "x5-2-retiring-stats-objects",
-      "level": "3",
-      "title": "Retiring stats objects"
+      "id": "retiring-stats-objects",
+      "level": 3,
+      "title": "Retiring stats objects",
+      "number": "5.2"
     },
     {
-      "id": "x6-rtcstatstype",
-      "level": "2",
-      "title": "RTCStatsType"
+      "id": "rtctatstype-*",
+      "level": 2,
+      "title": "RTCStatsType",
+      "number": "6"
     },
     {
-      "id": "x6-1-rtcstatstype-enum",
-      "level": "3",
-      "title": "RTCStatsType enum"
+      "id": "rtcstatstype-str*",
+      "level": 3,
+      "title": "RTCStatsType enum",
+      "number": "6.1"
     },
     {
-      "id": "x7-stats-dictionaries",
-      "level": "2",
-      "title": "Stats dictionaries"
+      "id": "stats-dictionaries",
+      "level": 2,
+      "title": "Stats dictionaries",
+      "number": "7"
     },
     {
-      "id": "x7-1-the-rtp-statistics-hierarchy",
-      "level": "3",
-      "title": "The RTP statistics hierarchy"
+      "id": "the-rtp-statistics-hierarchy",
+      "level": 3,
+      "title": "The RTP statistics hierarchy",
+      "number": "7.1"
     },
     {
-      "id": "x7-2-rtcrtpstreamstats-dictionary",
-      "level": "3",
-      "title": "RTCRtpStreamStats dictionary"
+      "id": "streamstats-dict*",
+      "level": 3,
+      "title": "RTCRtpStreamStats dictionary",
+      "number": "7.2"
     },
     {
       "id": "dictionary-rtcrtpstreamstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCRtpStreamStats Members"
     },
     {
-      "id": "x7-3-rtccodecstats-dictionary",
-      "level": "3",
-      "title": "RTCCodecStats dictionary"
+      "id": "codec-dict*",
+      "level": 3,
+      "title": "RTCCodecStats dictionary",
+      "number": "7.3"
     },
     {
       "id": "dictionary-rtccodecstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCCodecStats Members"
     },
     {
-      "id": "x7-3-1-rtccodectype-enum",
-      "level": "4",
-      "title": "RTCCodecType enum"
+      "id": "rtccodectype-enum",
+      "level": 4,
+      "title": "RTCCodecType enum",
+      "number": "7.3.1"
     },
     {
-      "id": "x7-4-rtcreceivedrtpstreamstats-dictionary",
-      "level": "3",
-      "title": "RTCReceivedRtpStreamStats dictionary"
+      "id": "receivedrtpstats-dict*",
+      "level": 3,
+      "title": "RTCReceivedRtpStreamStats dictionary",
+      "number": "7.4"
     },
     {
       "id": "dictionary-rtcreceivedrtpstreamstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCReceivedRtpStreamStats Members"
     },
     {
-      "id": "x7-5-rtcinboundrtpstreamstats-dictionary",
-      "level": "3",
-      "title": "RTCInboundRtpStreamStats dictionary"
+      "id": "inboundrtpstats-dict*",
+      "level": 3,
+      "title": "RTCInboundRtpStreamStats dictionary",
+      "number": "7.5"
     },
     {
       "id": "dictionary-rtcinboundrtpstreamstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCInboundRtpStreamStats Members"
     },
     {
-      "id": "x7-6-rtcremoteinboundrtpstreamstats-dictionary",
-      "level": "3",
-      "title": "RTCRemoteInboundRtpStreamStats dictionary"
+      "id": "remoteinboundrtpstats-dict*",
+      "level": 3,
+      "title": "RTCRemoteInboundRtpStreamStats dictionary",
+      "number": "7.6"
     },
     {
       "id": "dictionary-rtcremoteinboundrtpstreamstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCRemoteInboundRtpStreamStats Members"
     },
     {
-      "id": "x7-7-rtcsentrtpstreamstats-dictionary",
-      "level": "3",
-      "title": "RTCSentRtpStreamStats dictionary"
+      "id": "sentrtpstats-dict*",
+      "level": 3,
+      "title": "RTCSentRtpStreamStats dictionary",
+      "number": "7.7"
     },
     {
       "id": "dictionary-rtcsentrtpstreamstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCSentRtpStreamStats Members"
     },
     {
-      "id": "x7-8-rtcoutboundrtpstreamstats-dictionary",
-      "level": "3",
-      "title": "RTCOutboundRtpStreamStats dictionary"
+      "id": "outboundrtpstats-dict*",
+      "level": 3,
+      "title": "RTCOutboundRtpStreamStats dictionary",
+      "number": "7.8"
     },
     {
       "id": "dictionary-rtcoutboundrtpstreamstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCOutboundRtpStreamStats Members"
     },
     {
-      "id": "x7-9-rtcqualitylimitationreason-enum",
-      "level": "3",
-      "title": "RTCQualityLimitationReason enum"
+      "id": "rtcqualitylimitationreason-enum",
+      "level": 3,
+      "title": "RTCQualityLimitationReason enum",
+      "number": "7.9"
     },
     {
-      "id": "x7-10-rtcremoteoutboundrtpstreamstats-dictionary",
-      "level": "3",
-      "title": "RTCRemoteOutboundRtpStreamStats dictionary"
+      "id": "remoteoutboundrtpstats-dict*",
+      "level": 3,
+      "title": "RTCRemoteOutboundRtpStreamStats dictionary",
+      "number": "7.10"
     },
     {
       "id": "dictionary-rtcremoteoutboundrtpstreamstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCRemoteOutboundRtpStreamStats Members"
     },
     {
-      "id": "x7-11-rtcmediasourcestats-dictionary",
-      "level": "3",
-      "title": "RTCMediaSourceStats dictionary"
+      "id": "mediasourcestats-dict*",
+      "level": 3,
+      "title": "RTCMediaSourceStats dictionary",
+      "number": "7.11"
     },
     {
       "id": "dictionary-rtcmediasourcestats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCMediaSourceStats Members"
     },
     {
-      "id": "x7-12-rtcaudiosourcestats-dictionary",
-      "level": "3",
-      "title": "RTCAudioSourceStats dictionary"
+      "id": "audiosourcestats-dict*",
+      "level": 3,
+      "title": "RTCAudioSourceStats dictionary",
+      "number": "7.12"
     },
     {
       "id": "dictionary-rtcaudiosourcestats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCAudioSourceStats Members"
     },
     {
-      "id": "x7-13-rtcvideosourcestats-dictionary",
-      "level": "3",
-      "title": "RTCVideoSourceStats dictionary"
+      "id": "videosourcestats-dict*",
+      "level": 3,
+      "title": "RTCVideoSourceStats dictionary",
+      "number": "7.13"
     },
     {
       "id": "dictionary-rtcvideosourcestats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCVideoSourceStats Members"
     },
     {
-      "id": "x7-14-rtcrtpcontributingsourcestats-dictionary",
-      "level": "3",
-      "title": "RTCRtpContributingSourceStats dictionary"
+      "id": "contributingsourcestats-dict*",
+      "level": 3,
+      "title": "RTCRtpContributingSourceStats dictionary",
+      "number": "7.14"
     },
     {
       "id": "dictionary-rtcrtpcontributingsourcestats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCRtpContributingSourceStats Members"
     },
     {
-      "id": "x7-15-rtcpeerconnectionstats-dictionary",
-      "level": "3",
-      "title": "RTCPeerConnectionStats dictionary"
+      "id": "pcstats-dict*",
+      "level": 3,
+      "title": "RTCPeerConnectionStats dictionary",
+      "number": "7.15"
     },
     {
       "id": "dictionary-rtcpeerconnectionstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCPeerConnectionStats Members"
     },
     {
-      "id": "x7-16-rtcrtptransceiverstats-dictionary",
-      "level": "3",
-      "title": "RTCRtpTransceiverStats dictionary"
+      "id": "transceiver-dict*",
+      "level": 3,
+      "title": "RTCRtpTransceiverStats dictionary",
+      "number": "7.16"
     },
     {
       "id": "dictionary-rtcrtptransceiverstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCRtpTransceiverStats Members"
     },
     {
-      "id": "x7-17-rtcmediahandlerstats-dictionary",
-      "level": "3",
-      "title": "RTCMediaHandlerStats dictionary"
+      "id": "mststats-dict*",
+      "level": 3,
+      "title": "RTCMediaHandlerStats dictionary",
+      "number": "7.17"
     },
     {
       "id": "dictionary-rtcmediahandlerstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCMediaHandlerStats Members"
     },
     {
-      "id": "x7-18-rtcvideohandlerstats-dictionary",
-      "level": "3",
-      "title": "RTCVideoHandlerStats dictionary"
+      "id": "vststats-dict*",
+      "level": 3,
+      "title": "RTCVideoHandlerStats dictionary",
+      "number": "7.18"
     },
     {
       "id": "dictionary-rtcvideohandlerstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCVideoHandlerStats Members"
     },
     {
-      "id": "x7-19-rtcvideosenderstats-dictionary",
-      "level": "3",
-      "title": "RTCVideoSenderStats dictionary"
+      "id": "vsstats-dict*",
+      "level": 3,
+      "title": "RTCVideoSenderStats dictionary",
+      "number": "7.19"
     },
     {
       "id": "dictionary-rtcvideosenderstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCVideoSenderStats Members"
     },
     {
-      "id": "x7-20-rtcvideoreceiverstats-dictionary",
-      "level": "3",
-      "title": "RTCVideoReceiverStats dictionary"
+      "id": "rvststats-dict*",
+      "level": 3,
+      "title": "RTCVideoReceiverStats dictionary",
+      "number": "7.20"
     },
     {
       "id": "dictionary-rtcvideoreceiverstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCVideoReceiverStats Members"
     },
     {
-      "id": "x7-21-rtcaudiohandlerstats-dictionary",
-      "level": "3",
-      "title": "RTCAudioHandlerStats dictionary"
+      "id": "aststats-dict*",
+      "level": 3,
+      "title": "RTCAudioHandlerStats dictionary",
+      "number": "7.21"
     },
     {
       "id": "dictionary-rtcaudiohandlerstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCAudioHandlerStats Members"
     },
     {
-      "id": "x7-22-rtcaudiosenderstats-dictionary",
-      "level": "3",
-      "title": "RTCAudioSenderStats dictionary"
+      "id": "asstats-dict*",
+      "level": 3,
+      "title": "RTCAudioSenderStats dictionary",
+      "number": "7.22"
     },
     {
       "id": "dictionary-rtcaudiosenderstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCAudioSenderStats Members"
     },
     {
-      "id": "x7-23-rtcaudioreceiverstats-dictionary",
-      "level": "3",
-      "title": "RTCAudioReceiverStats dictionary"
+      "id": "raststats-dict*",
+      "level": 3,
+      "title": "RTCAudioReceiverStats dictionary",
+      "number": "7.23"
     },
     {
       "id": "dictionary-rtcaudioreceiverstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCAudioReceiverStats Members"
     },
     {
-      "id": "x7-24-rtcdatachannelstats-dictionary",
-      "level": "3",
-      "title": "RTCDataChannelStats dictionary"
+      "id": "dcstats-dict*",
+      "level": 3,
+      "title": "RTCDataChannelStats dictionary",
+      "number": "7.24"
     },
     {
       "id": "dictionary-rtcdatachannelstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCDataChannelStats Members"
     },
     {
-      "id": "x7-25-rtctransportstats-dictionary",
-      "level": "3",
-      "title": "RTCTransportStats dictionary"
+      "id": "transportstats-dict*",
+      "level": 3,
+      "title": "RTCTransportStats dictionary",
+      "number": "7.25"
     },
     {
       "id": "dictionary-rtctransportstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCTransportStats Members"
     },
     {
-      "id": "x7-26-rtcsctptransportstats-dictionary",
-      "level": "3",
-      "title": "RTCSctpTransportStats dictionary"
+      "id": "sctptransportstats-dict*",
+      "level": 3,
+      "title": "RTCSctpTransportStats dictionary",
+      "number": "7.26"
     },
     {
       "id": "dictionary-rtcsctptransportstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCSctpTransportStats Members"
     },
     {
-      "id": "x7-27-rtcicecandidatestats-dictionary",
-      "level": "3",
-      "title": "RTCIceCandidateStats dictionary"
+      "id": "icecandidate-dict*",
+      "level": 3,
+      "title": "RTCIceCandidateStats dictionary",
+      "number": "7.27"
     },
     {
       "id": "dictionary-rtcicecandidatestats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCIceCandidateStats Members"
     },
     {
-      "id": "x7-28-rtcicecandidatepairstats-dictionary",
-      "level": "3",
-      "title": "RTCIceCandidatePairStats dictionary"
+      "id": "candidatepair-dict*",
+      "level": 3,
+      "title": "RTCIceCandidatePairStats dictionary",
+      "number": "7.28"
     },
     {
       "id": "dictionary-rtcicecandidatepairstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCIceCandidatePairStats Members"
     },
     {
-      "id": "x7-28-1-rtcstatsicecandidatepairstate-enum",
-      "level": "4",
-      "title": "RTCStatsIceCandidatePairState enum"
+      "id": "rtcstatsicecandidatepairstate-enum",
+      "level": 4,
+      "title": "RTCStatsIceCandidatePairState enum",
+      "number": "7.28.1"
     },
     {
-      "id": "x7-29-rtccertificatestats-dictionary",
-      "level": "3",
-      "title": "RTCCertificateStats dictionary"
+      "id": "certificatestats-dict*",
+      "level": 3,
+      "title": "RTCCertificateStats dictionary",
+      "number": "7.29"
     },
     {
       "id": "dictionary-rtccertificatestats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCCertificateStats Members"
     },
     {
-      "id": "x7-30-rtciceserverstats-dictionary",
-      "level": "3",
-      "title": "RTCIceServerStats dictionary"
+      "id": "ice-server-dict*",
+      "level": 3,
+      "title": "RTCIceServerStats dictionary",
+      "number": "7.30"
     },
     {
       "id": "dictionary-rtciceserverstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCIceServerStats Members"
     },
     {
-      "id": "x8-obsolete-stats",
-      "level": "2",
-      "title": "Obsolete stats"
+      "id": "obsolete-stats",
+      "level": 2,
+      "title": "Obsolete stats",
+      "number": "8"
     },
     {
       "id": "obsolete-rtcmediastreamstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCMediaStreamStats members"
     },
     {
-      "id": "obsolete-rtcsendervideotrackattachmentstats-dictionary",
-      "level": "3",
+      "id": "lvststats-dict*",
+      "level": 3,
       "title": "Obsolete RTCSenderVideoTrackAttachmentStats dictionary"
     },
     {
-      "id": "obsolete-rtcsenderaudiotrackattachmentstats-dictionary",
-      "level": "3",
+      "id": "laststats-dict*",
+      "level": 3,
       "title": "Obsolete RTCSenderAudioTrackAttachmentStats dictionary"
     },
     {
       "id": "obsolete-rtcreceivervideotrackattachmentstats-dictionary",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCReceiverVideoTrackAttachmentStats dictionary"
     },
     {
       "id": "obsolete-rtcreceiveraudiotrackattachmentstats-dictionary",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCReceiverAudioTrackAttachmentStats dictionary"
     },
     {
       "id": "obsolete-rtccodecstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCCodecStats members"
     },
     {
       "id": "obsolete-rtcicecandidatestats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCIceCandidateStats members"
     },
     {
       "id": "obsolete-rtcicecandidatepairstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCIceCandidatePairStats members"
     },
     {
       "id": "obsolete-rtcrtpstreamstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCRtpStreamStats members"
     },
     {
       "id": "obsolete-rtcinboundrtpstreamstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCInboundRtpStreamStats members"
     },
     {
       "id": "obsolete-rtcoutboundrtpstreamstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCOutboundRtpStreamStats members"
     },
     {
       "id": "obsolete-rtcmediahandlerstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCMediaHandlerStats members"
     },
     {
       "id": "obsolete-rtcaudiohandlerstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCAudioHandlerStats members"
     },
     {
       "id": "obsolete-rtcaudiosenderstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCAudioSenderStats members"
     },
     {
       "id": "obsolete-rtcaudioreceiverstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCAudioReceiverStats members"
     },
     {
       "id": "obsolete-rtcvideohandlerstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCVideoHandlerStats members"
     },
     {
       "id": "obsolete-rtcvideosenderstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCVideoSenderStats members"
     },
     {
       "id": "obsolete-rtcvideoreceiverstats-members",
-      "level": "3",
+      "level": 3,
       "title": "Obsolete RTCVideoReceiverStats members"
     },
     {
-      "id": "x9-examples",
-      "level": "2",
-      "title": "Examples"
+      "id": "examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "9"
     },
     {
-      "id": "x9-1-example-of-a-stats-application",
-      "level": "3",
-      "title": "Example of a stats application"
+      "id": "example-of-a-stats-application",
+      "level": 3,
+      "title": "Example of a stats application",
+      "number": "9.1"
     },
     {
-      "id": "x10-security-and-privacy-considerations",
-      "level": "2",
-      "title": "Security and Privacy Considerations"
+      "id": "security-and-privacy-considerations",
+      "level": 2,
+      "title": "10. Security and Privacy Considerations"
     },
     {
-      "id": "a-summary-of-webrtc-stats-fields-per-type",
-      "level": "2",
-      "title": "A. Summary of WebRTC stats fields per type"
+      "id": "summary",
+      "level": 2,
+      "title": "Summary of WebRTC stats fields per type",
+      "number": "A"
     },
     {
-      "id": "b-acknowledgements",
-      "level": "2",
-      "title": "B. \n          Acknowledgements"
+      "id": "acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "B"
     },
     {
-      "id": "c-references",
-      "level": "2",
-      "title": "C. References"
+      "id": "references",
+      "level": 2,
+      "title": "References",
+      "number": "C"
     },
     {
-      "id": "c-1-normative-references",
-      "level": "3",
-      "title": "C.1 Normative references"
+      "id": "normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "C.1"
     },
     {
-      "id": "c-2-informative-references",
-      "level": "3",
-      "title": "C.2 Informative references"
+      "id": "informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "C.2"
     }
   ]
 }

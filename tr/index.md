@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% November 02, 2020
+% November 09, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -585,7 +585,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Crawled URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
-- Crawled version: 27 October 2020
+- Crawled version: 6 November 2020
 - Editor's Draft: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Shortname: client-hints-infrastructure
 
@@ -5279,6 +5279,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 
@@ -5398,6 +5399,7 @@ Normative references to this spec from:
 - [High Resolution Time](https://www.w3.org/TR/hr-time-3/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Image Resource](https://www.w3.org/TR/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/IndexedDB-2/)
@@ -5406,6 +5408,7 @@ Normative references to this spec from:
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
+- [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://www.w3.org/TR/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
 - [MediaStream Recording](https://www.w3.org/TR/mediastream-recording/)
@@ -5556,7 +5559,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
-- Crawled version: 26 October 2020
+- Crawled version: 2 November 2020
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Shortname: encoding
@@ -5691,7 +5694,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 26 October 2020
+- Crawled version: 5 November 2020
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -5766,6 +5769,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Payment Request API](https://www.w3.org/TR/payment-request/)
 - [Push API](https://www.w3.org/TR/push-api/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
@@ -6132,6 +6136,7 @@ Informative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
 - [Geolocation Sensor](https://www.w3.org/TR/geolocation-sensor/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Permissions](https://www.w3.org/TR/permissions/)
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Secure Contexts](https://www.w3.org/TR/secure-contexts/)
@@ -6312,6 +6317,7 @@ Normative references to this spec from:
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Long Tasks API 1](https://www.w3.org/TR/longtasks-1/)
+- [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/navigation-timing-2/)
 - [Paint Timing 1](https://www.w3.org/TR/paint-timing/)
@@ -6400,7 +6406,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 22 October 2020
+- Crawled version: 6 November 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -6410,7 +6416,6 @@ No informative reference to this spec from other specs.
 - WebIDL names also defined elsewhere: 
     * `DOMParser` also defined in [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/)
     * `MessageEventSource` also defined in [Portals](https://wicg.github.io/portals/)
-    * `BinaryType` also defined in [Presentation API](https://www.w3.org/TR/presentation-api/)
 - Missing references for WebIDL names: 
      * `WebGL2RenderingContext` defined in [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - Missing references for links: 
@@ -6509,6 +6514,7 @@ Normative references to this spec from:
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [IceTransport Extensions for WebRTC](https://w3c.github.io/webrtc-ice/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Image Resource](https://www.w3.org/TR/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/IndexedDB-2/)
@@ -6522,6 +6528,7 @@ Normative references to this spec from:
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
+- [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://www.w3.org/TR/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
 - [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
@@ -6613,6 +6620,7 @@ Normative references to this spec from:
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1/)
 - [WebAssembly Web API](https://www.w3.org/TR/wasm-web-api-1/)
+- [WebCodecs](https://wicg.github.io/web-codecs/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
@@ -6776,6 +6784,29 @@ Informative references to this spec from:
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 
 
+## Idle Detection API {data-spec=true data-anomaly=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/idle-detection/](https://wicg.github.io/idle-detection/)
+- Crawled URL: [https://wicg.github.io/idle-detection/](https://wicg.github.io/idle-detection/)
+- Crawled version: 2 October 2020
+- Editor's Draft: [https://wicg.github.io/idle-detection/](https://wicg.github.io/idle-detection/)
+- Shortname: idle-detection
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "PERMISSIONS-POLICY" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Image Resource {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -6927,6 +6958,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Image Resource](https://www.w3.org/TR/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/IndexedDB-2/)
@@ -6936,6 +6968,7 @@ Normative references to this spec from:
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Magnetometer](https://www.w3.org/TR/magnetometer/)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
+- [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Session Standard](https://www.w3.org/TR/mediasession/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
@@ -7173,7 +7206,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/largest-contentful-paint/](https://wicg.github.io/largest-contentful-paint/)
 - Crawled URL: [https://wicg.github.io/largest-contentful-paint/](https://wicg.github.io/largest-contentful-paint/)
-- Crawled version: 28 October 2020
+- Crawled version: 6 November 2020
 - Editor's Draft: [https://wicg.github.io/largest-contentful-paint/](https://wicg.github.io/largest-contentful-paint/)
 - Shortname: largest-contentful-paint
 
@@ -7340,7 +7373,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
 - Crawled URL: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
-- Crawled version: 10 July 2020
+- Crawled version: 05 November 2020
 - Editor's Draft: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
 - Shortname: mathml-aam
 
@@ -7379,6 +7412,27 @@ Informative references to this spec from:
 - [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/)
 
 
+## Measure Memory API {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/performance-measure-memory/](https://wicg.github.io/performance-measure-memory/)
+- Crawled URL: [https://wicg.github.io/performance-measure-memory/](https://wicg.github.io/performance-measure-memory/)
+- Crawled version: 20 October 2020
+- Editor's Draft: [https://wicg.github.io/performance-measure-memory/](https://wicg.github.io/performance-measure-memory/)
+- Shortname: performance-measure-memory
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Media Capabilities {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -7409,7 +7463,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Crawled URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
-- Crawled version: 07 October 2020
+- Crawled version: 04 November 2020
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Shortname: mediacapture-streams
@@ -7434,6 +7488,7 @@ Normative references to this spec from:
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/webrtc-svc/)
 - [Screen Capture](https://www.w3.org/TR/screen-capture/)
 - [Web Audio API](https://www.w3.org/TR/webaudio/)
+- [WebCodecs](https://wicg.github.io/web-codecs/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 
@@ -7695,6 +7750,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Media Capabilities](https://www.w3.org/TR/media-capabilities/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [WebCodecs](https://wicg.github.io/web-codecs/)
 
 Informative references to this spec from:
 
@@ -8162,6 +8218,7 @@ Normative references to this spec from:
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/orientation-event/)
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Picture-in-Picture](https://www.w3.org/TR/picture-in-picture/)
 - [Resource Hints](https://www.w3.org/TR/resource-hints/)
 - [Screen Wake Lock API](https://www.w3.org/TR/screen-wake-lock/)
@@ -8422,6 +8479,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
 - [Geolocation Sensor](https://www.w3.org/TR/geolocation-sensor/)
 - [Gyroscope](https://www.w3.org/TR/gyroscope/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Magnetometer](https://www.w3.org/TR/magnetometer/)
 - [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
@@ -8467,6 +8525,7 @@ Normative references to this spec from:
 
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
 - [Screen Wake Lock API](https://www.w3.org/TR/screen-wake-lock/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
@@ -8568,7 +8627,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Crawled URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
-- Crawled version: 28 October 2020
+- Crawled version: 2 November 2020
 - Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Shortname: portals
 
@@ -8617,25 +8676,20 @@ Informative references to this spec from:
 - [Priority Hints](https://wicg.github.io/priority-hints/)
 
 
-## Presentation API {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-inconsistentRef=true}
+## Presentation API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Crawled URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
-- Crawled version: 01 June 2017
+- Crawled version: 05 November 2020
 - Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
 - Latest published version: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Shortname: presentation-api
 
 ### Potential issue(s) {.anomalies}
 
-- WebIDL names also defined elsewhere: 
-    * `BinaryType` also defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FILEAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
-     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
+- Unknown WebIDL names used: `undefined`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8756,6 +8810,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Permissions](https://www.w3.org/TR/permissions/)
 
 
@@ -9522,6 +9577,7 @@ Normative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/navigation-timing-2/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
@@ -10319,7 +10375,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled version: 27 October 2020
+- Crawled version: 5 November 2020
 - Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Shortname: ua-client-hints
 
@@ -10508,6 +10564,7 @@ Normative references to this spec from:
 - [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
 - [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [Web MIDI API](https://www.w3.org/TR/webmidi/)
+- [WebCodecs](https://wicg.github.io/web-codecs/)
 
 Informative references to this spec from:
 
@@ -10886,6 +10943,31 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/)
      * [`https://www.w3.org/TR/wasm-js-api/`](https://www.w3.org/TR/wasm-js-api/)
      * [`https://www.w3.org/TR/wasm-web-api/`](https://www.w3.org/TR/wasm-web-api/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## WebCodecs {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
+- Crawled URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
+- Crawled version: 5 October 2020
+- Editor's Draft: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
+- Shortname: web-codecs
+
+### Potential issue(s) {.anomalies}
+
+- Unknown WebIDL names used: `undefined`
+- Missing references for links: 
+     * [`https://w3c.github.io/mediacapture-screen-share/`](https://w3c.github.io/mediacapture-screen-share/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "MEDIACAPTURE-STREAMS" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12003,7 +12085,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 29 October 2020
+- Crawled version: 5 November 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -12136,6 +12218,7 @@ Normative references to this spec from:
 - [IceTransport Extensions for WebRTC](https://w3c.github.io/webrtc-ice/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Image Resource](https://www.w3.org/TR/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 2.0](https://www.w3.org/TR/IndexedDB-2/)
@@ -12153,6 +12236,7 @@ Normative references to this spec from:
 - [Long Tasks API 1](https://www.w3.org/TR/longtasks-1/)
 - [Magnetometer](https://www.w3.org/TR/magnetometer/)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
+- [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://www.w3.org/TR/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
 - [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
@@ -12230,6 +12314,7 @@ Normative references to this spec from:
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1/)
 - [WebAssembly Web API](https://www.w3.org/TR/wasm-web-api-1/)
+- [WebCodecs](https://wicg.github.io/web-codecs/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
@@ -12269,7 +12354,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Crawled version: 15 October 2020
+- Crawled version: 05 November 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Shortname: webrtc
@@ -12358,7 +12443,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 30 October 2020
+- Crawled version: 6 November 2020
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Shortname: webtransport
 
@@ -12379,7 +12464,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 31 October 2020
+- Crawled version: 8 November 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -12646,7 +12731,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled version: 28 October 2020
+- Crawled version: 2 November 2020
 - Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Shortname: layers
 

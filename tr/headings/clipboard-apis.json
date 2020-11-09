@@ -6,372 +6,424 @@
   "headings": [
     {
       "id": "subtitle",
-      "level": "2",
+      "level": 2,
       "title": "W3C Working Draft, 29 October 2020"
     },
     {
       "id": "abstract",
-      "level": "2",
+      "level": 2,
       "title": "Abstract"
     },
     {
       "id": "status",
-      "level": "2",
+      "level": 2,
       "title": "Status of this document"
     },
     {
-      "id": "contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "secintro",
-      "level": "2",
-      "title": "Introduction"
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
       "id": "Cases",
-      "level": "2",
-      "title": "Use Cases"
+      "level": 2,
+      "title": "Use Cases",
+      "number": "2"
     },
     {
       "id": "change-default-clipboard-ops",
-      "level": "3",
-      "title": "Changing Default Clipboard Operations"
+      "level": 3,
+      "title": "Changing Default Clipboard Operations",
+      "number": "2.1"
     },
     {
       "id": "remote-clipboard-sync",
-      "level": "3",
-      "title": "Remote Clipboard Synchronization"
+      "level": 3,
+      "title": "Remote Clipboard Synchronization",
+      "number": "2.2"
     },
     {
       "id": "trigger-clipboard-actions",
-      "level": "3",
-      "title": "Trigger Clipboard Actions"
+      "level": 3,
+      "title": "Trigger Clipboard Actions",
+      "number": "2.3"
     },
     {
       "id": "terminolofy",
-      "level": "2",
-      "title": "Terminology"
+      "level": 2,
+      "title": "Terminology",
+      "number": "3"
     },
     {
       "id": "model",
-      "level": "2",
-      "title": "Model"
+      "level": 2,
+      "title": "Model",
+      "number": "4"
     },
     {
       "id": "clipboard-events-and-interfaces",
-      "level": "2",
-      "title": "Clipboard Events"
+      "level": 2,
+      "title": "Clipboard Events",
+      "number": "5"
     },
     {
       "id": "clipboard-event-interfaces",
-      "level": "3",
-      "title": "Clipboard event interfaces"
+      "level": 3,
+      "title": "Clipboard event interfaces",
+      "number": "5.1"
     },
     {
       "id": "clipboard-event-definitions",
-      "level": "3",
-      "title": "Clipboard events"
+      "level": 3,
+      "title": "Clipboard events",
+      "number": "5.2"
     },
     {
       "id": "clipboard-event-clipboardchange",
-      "level": "4",
-      "title": "The clipboardchange event"
+      "level": 4,
+      "title": "The clipboardchange event",
+      "number": "5.2.1"
     },
     {
       "id": "clipboard-event-copy",
-      "level": "4",
-      "title": "The copy event"
+      "level": 4,
+      "title": "The copy event",
+      "number": "5.2.2"
     },
     {
       "id": "clipboard-event-cut",
-      "level": "4",
-      "title": "The cut event"
+      "level": 4,
+      "title": "The cut event",
+      "number": "5.2.3"
     },
     {
       "id": "clipboard-event-paste",
-      "level": "4",
-      "title": "The paste event"
+      "level": 4,
+      "title": "The paste event",
+      "number": "5.2.4"
     },
     {
       "id": "integration-with-other-scripts-and-events",
-      "level": "3",
-      "title": "Integration with other scripts and events"
+      "level": 3,
+      "title": "Integration with other scripts and events",
+      "number": "5.3"
     },
     {
       "id": "allow-modify-clipboard",
-      "level": "4",
-      "title": "Event handlers that are allowed to modify the clipboard"
+      "level": 4,
+      "title": "Event handlers that are allowed to modify the clipboard",
+      "number": "5.3.1"
     },
     {
       "id": "allow-read-clipboard",
-      "level": "4",
-      "title": "Event handlers that are allowed to read from clipboard"
+      "level": 4,
+      "title": "Event handlers that are allowed to read from clipboard",
+      "number": "5.3.2"
     },
     {
       "id": "integration-with-rich-text-editing",
-      "level": "4",
-      "title": "Integration with rich text editing APIs"
+      "level": 4,
+      "title": "Integration with rich text editing APIs",
+      "number": "5.3.3"
     },
     {
       "id": "otherevents",
-      "level": "4",
-      "title": "Interaction with other events"
+      "level": 4,
+      "title": "Interaction with other events",
+      "number": "5.3.4"
     },
     {
       "id": "selection-mod",
-      "level": "4",
-      "title": "Event listeners that modify selection or focus"
+      "level": 4,
+      "title": "Event listeners that modify selection or focus",
+      "number": "5.3.5"
     },
     {
       "id": "clipboard-event-api",
-      "level": "2",
-      "title": "Clipboard Event API"
+      "level": 2,
+      "title": "Clipboard Event API",
+      "number": "6"
     },
     {
       "id": "override-copy",
-      "level": "3",
-      "title": "Overriding the copy event"
+      "level": 3,
+      "title": "Overriding the copy event",
+      "number": "6.1"
     },
     {
       "id": "override-cut",
-      "level": "3",
-      "title": "Overriding the cut event"
+      "level": 3,
+      "title": "Overriding the cut event",
+      "number": "6.2"
     },
     {
       "id": "override-paste",
-      "level": "3",
-      "title": "Overriding the paste event"
+      "level": 3,
+      "title": "Overriding the paste event",
+      "number": "6.3"
     },
     {
       "id": "mandatory-data-types-x",
-      "level": "3",
-      "title": "Mandatory data types"
+      "level": 3,
+      "title": "Mandatory data types",
+      "number": "6.4"
     },
     {
       "id": "reading-from-clipboard",
-      "level": "4",
-      "title": "Reading from the clipboard"
+      "level": 4,
+      "title": "Reading from the clipboard",
+      "number": "6.4.1"
     },
     {
       "id": "writing-to-clipboard",
-      "level": "4",
-      "title": "Writing to the clipboard"
+      "level": 4,
+      "title": "Writing to the clipboard",
+      "number": "6.4.2"
     },
     {
       "id": "async-clipboard-api",
-      "level": "2",
-      "title": "Asynchronous Clipboard API"
+      "level": 2,
+      "title": "Asynchronous Clipboard API",
+      "number": "7"
     },
     {
       "id": "navigator-interface",
-      "level": "3",
-      "title": "Navigator Interface"
+      "level": 3,
+      "title": "Navigator Interface",
+      "number": "7.1"
     },
     {
       "id": "h-navigator-clipboard",
-      "level": "4",
-      "title": "clipboard"
+      "level": 4,
+      "title": "clipboard",
+      "number": "7.1.1"
     },
     {
       "id": "clipboard-interface",
-      "level": "3",
-      "title": "Clipboard Interface"
+      "level": 3,
+      "title": "Clipboard Interface",
+      "number": "7.2"
     },
     {
       "id": "dom-clipboard-read",
-      "level": "4",
-      "title": "read()"
+      "level": 4,
+      "title": "read()",
+      "number": "7.2.1"
     },
     {
       "id": "dom-clipboard-readtext",
-      "level": "4",
-      "title": "readText()"
+      "level": 4,
+      "title": "readText()",
+      "number": "7.2.2"
     },
     {
       "id": "dom-clipboard-write",
-      "level": "4",
-      "title": "write(data)"
+      "level": 4,
+      "title": "write(data)",
+      "number": "7.2.3"
     },
     {
       "id": "dom-clipboard-writetext",
-      "level": "4",
-      "title": "writeText(data)"
+      "level": 4,
+      "title": "writeText(data)",
+      "number": "7.2.4"
     },
     {
       "id": "clipboard-actions",
-      "level": "2",
-      "title": "Clipboard Actions"
+      "level": 2,
+      "title": "Clipboard Actions",
+      "number": "8"
     },
     {
       "id": "copy-action",
-      "level": "3",
-      "title": "The copy action"
+      "level": 3,
+      "title": "The copy action",
+      "number": "8.1"
     },
     {
       "id": "cut-action",
-      "level": "3",
-      "title": "The cut action"
+      "level": 3,
+      "title": "The cut action",
+      "number": "8.2"
     },
     {
       "id": "paste-action",
-      "level": "3",
-      "title": "The paste action"
+      "level": 3,
+      "title": "The paste action",
+      "number": "8.3"
     },
     {
       "id": "clipboard-permissions",
-      "level": "2",
-      "title": "Permissions API Integration"
+      "level": 2,
+      "title": "Permissions API Integration",
+      "number": "9"
     },
     {
       "id": "read-permission",
-      "level": "3",
-      "title": "Clipboard read permission"
+      "level": 3,
+      "title": "Clipboard read permission",
+      "number": "9.1"
     },
     {
       "id": "h-clipboard-read-permission",
-      "level": "4",
-      "title": "check clipboard read permission"
+      "level": 4,
+      "title": "check clipboard read permission",
+      "number": "9.1.1"
     },
     {
       "id": "write-permission",
-      "level": "3",
-      "title": "Clipboard write permission"
+      "level": 3,
+      "title": "Clipboard write permission",
+      "number": "9.2"
     },
     {
       "id": "h-clipboard-write-permission",
-      "level": "4",
-      "title": "check clipboard write permission"
+      "level": 4,
+      "title": "check clipboard write permission",
+      "number": "9.2.1"
     },
     {
       "id": "security",
-      "level": "2",
-      "title": "Security Considerations"
+      "level": 2,
+      "title": "10. Security Considerations"
     },
     {
       "id": "pasting-html",
-      "level": "3",
-      "title": "Pasting HTML and multi-part data"
+      "level": 3,
+      "title": "Pasting HTML and multi-part data",
+      "number": "10.1"
     },
     {
       "id": "general-security-policies",
-      "level": "3",
-      "title": "General security policies"
+      "level": 3,
+      "title": "General security policies",
+      "number": "10.2"
     },
     {
       "id": "image-transcode",
-      "level": "3",
-      "title": "Transcoding images"
+      "level": 3,
+      "title": "Transcoding images",
+      "number": "10.3"
     },
     {
       "id": "nuisances",
-      "level": "3",
-      "title": "Nuisance considerations"
+      "level": 3,
+      "title": "Nuisance considerations",
+      "number": "10.4"
     },
     {
       "id": "privacy",
-      "level": "2",
-      "title": "Privacy Considerations"
+      "level": 2,
+      "title": "11. Privacy Considerations"
     },
     {
       "id": "privacy-events",
-      "level": "3",
-      "title": "Privacy and the Clipboard Event API"
+      "level": 3,
+      "title": "Privacy and the Clipboard Event API",
+      "number": "11.1"
     },
     {
       "id": "privacy-async",
-      "level": "3",
-      "title": "Privacy and the Asychronous Clipboard API"
+      "level": 3,
+      "title": "Privacy and the Asychronous Clipboard API",
+      "number": "11.2"
     },
     {
       "id": "privacy-permission",
-      "level": "4",
-      "title": "Privacy and Clipboard Permission"
+      "level": 4,
+      "title": "Privacy and Clipboard Permission",
+      "number": "11.2.1"
     },
     {
       "id": "privacy-other",
-      "level": "3",
-      "title": "Other Privacy Concerns"
+      "level": 3,
+      "title": "Other Privacy Concerns",
+      "number": "11.3"
     },
     {
       "id": "acknowledge",
-      "level": "2",
-      "title": "Acknowledgements"
+      "level": 2,
+      "title": "12. Acknowledgements"
     },
     {
       "id": "algorithms",
-      "level": "2",
+      "level": 2,
       "title": "Appendix A: Algorithms"
     },
     {
       "id": "to-write-content-to-clipboard",
-      "level": "3",
+      "level": 3,
       "title": "write content to the clipboard"
     },
     {
       "id": "to-fire-a-clipboard-event",
-      "level": "3",
+      "level": 3,
       "title": "fire a clipboard event"
     },
     {
       "id": "to-process-html-paste-event",
-      "level": "3",
+      "level": 3,
       "title": "process an HTML paste event"
     },
     {
       "id": "conformance",
-      "level": "2",
+      "level": 2,
       "title": "Conformance"
     },
     {
       "id": "conventions",
-      "level": "3",
+      "level": 3,
       "title": "Document conventions"
     },
     {
       "id": "conformant-algorithms",
-      "level": "3",
+      "level": 3,
       "title": "Conformant Algorithms"
     },
     {
       "id": "index",
-      "level": "2",
+      "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "level": "2",
+      "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "level": "3",
+      "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "level": "3",
+      "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
-      "level": "2",
+      "level": 2,
       "title": "IDL Index"
     },
     {
       "id": "issues-index",
-      "level": "2",
+      "level": 2,
       "title": "Issues Index"
     }
   ]

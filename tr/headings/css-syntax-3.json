@@ -6,442 +6,507 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "CSS Syntax Module Level 3"
     },
     {
       "id": "subtitle",
-      "level": "2",
+      "level": 2,
       "title": "W3C Candidate Recommendation, 16 July 2019"
     },
     {
       "id": "abstract",
-      "level": "2",
+      "level": 2,
       "title": "Abstract"
     },
     {
       "id": "status",
-      "level": "2",
+      "level": 2,
       "title": "Status of this document"
     },
     {
-      "id": "contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "intro",
-      "level": "2",
-      "title": "Introduction"
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
       "id": "placement",
-      "level": "3",
-      "title": "Module interactions"
+      "level": 3,
+      "title": "Module interactions",
+      "number": "1.1"
     },
     {
       "id": "syntax-description",
-      "level": "2",
-      "title": "Description of CSS’s Syntax"
+      "level": 2,
+      "title": "Description of CSS’s Syntax",
+      "number": "2"
     },
     {
       "id": "escaping",
-      "level": "3",
-      "title": "Escaping"
+      "level": 3,
+      "title": "Escaping",
+      "number": "2.1"
     },
     {
       "id": "error-handling",
-      "level": "3",
-      "title": "Error Handling"
+      "level": 3,
+      "title": "Error Handling",
+      "number": "2.2"
     },
     {
       "id": "tokenizing-and-parsing",
-      "level": "2",
-      "title": "Tokenizing and Parsing CSS"
+      "level": 2,
+      "title": "Tokenizing and Parsing CSS",
+      "number": "3"
     },
     {
       "id": "parsing-overview",
-      "level": "3",
-      "title": "Overview of the Parsing Model"
+      "level": 3,
+      "title": "Overview of the Parsing Model",
+      "number": "3.1"
     },
     {
       "id": "input-byte-stream",
-      "level": "3",
-      "title": "The input byte stream"
+      "level": 3,
+      "title": "The input byte stream",
+      "number": "3.2"
     },
     {
       "id": "input-preprocessing",
-      "level": "3",
-      "title": "Preprocessing the input stream"
+      "level": 3,
+      "title": "Preprocessing the input stream",
+      "number": "3.3"
     },
     {
       "id": "tokenization",
-      "level": "2",
-      "title": "Tokenization"
+      "level": 2,
+      "title": "Tokenization",
+      "number": "4"
     },
     {
       "id": "token-diagrams",
-      "level": "3",
-      "title": "Token Railroad Diagrams"
+      "level": 3,
+      "title": "Token Railroad Diagrams",
+      "number": "4.1"
     },
     {
       "id": "tokenizer-definitions",
-      "level": "3",
-      "title": "Definitions"
+      "level": 3,
+      "title": "Definitions",
+      "number": "4.2"
     },
     {
       "id": "tokenizer-algorithms",
-      "level": "3",
-      "title": "Tokenizer Algorithms"
+      "level": 3,
+      "title": "Tokenizer Algorithms",
+      "number": "4.3"
     },
     {
       "id": "consume-token",
-      "level": "4",
-      "title": "Consume a token"
+      "level": 4,
+      "title": "Consume a token",
+      "number": "4.3.1"
     },
     {
       "id": "consume-comment",
-      "level": "4",
-      "title": "Consume comments"
+      "level": 4,
+      "title": "Consume comments",
+      "number": "4.3.2"
     },
     {
       "id": "consume-numeric-token",
-      "level": "4",
-      "title": "Consume a numeric token"
+      "level": 4,
+      "title": "Consume a numeric token",
+      "number": "4.3.3"
     },
     {
       "id": "consume-ident-like-token",
-      "level": "4",
-      "title": "Consume an ident-like token"
+      "level": 4,
+      "title": "Consume an ident-like token",
+      "number": "4.3.4"
     },
     {
       "id": "consume-string-token",
-      "level": "4",
-      "title": "Consume a string token"
+      "level": 4,
+      "title": "Consume a string token",
+      "number": "4.3.5"
     },
     {
       "id": "consume-url-token",
-      "level": "4",
-      "title": "Consume a url token"
+      "level": 4,
+      "title": "Consume a url token",
+      "number": "4.3.6"
     },
     {
       "id": "consume-escaped-code-point",
-      "level": "4",
-      "title": "Consume an escaped code point"
+      "level": 4,
+      "title": "Consume an escaped code point",
+      "number": "4.3.7"
     },
     {
       "id": "starts-with-a-valid-escape",
-      "level": "4",
-      "title": "Check if two code points are a valid escape"
+      "level": 4,
+      "title": "Check if two code points are a valid escape",
+      "number": "4.3.8"
     },
     {
       "id": "would-start-an-identifier",
-      "level": "4",
-      "title": "Check if three code points would start an identifier"
+      "level": 4,
+      "title": "Check if three code points would start an identifier",
+      "number": "4.3.9"
     },
     {
       "id": "starts-with-a-number",
-      "level": "4",
-      "title": "Check if three code points would start a number"
+      "level": 4,
+      "title": "Check if three code points would start a number",
+      "number": "4.3.10"
     },
     {
       "id": "consume-name",
-      "level": "4",
-      "title": "Consume a name"
+      "level": 4,
+      "title": "Consume a name",
+      "number": "4.3.11"
     },
     {
       "id": "consume-number",
-      "level": "4",
-      "title": "Consume a number"
+      "level": 4,
+      "title": "Consume a number",
+      "number": "4.3.12"
     },
     {
       "id": "convert-string-to-number",
-      "level": "4",
-      "title": "Convert a string to a number"
+      "level": 4,
+      "title": "Convert a string to a number",
+      "number": "4.3.13"
     },
     {
       "id": "consume-remnants-of-bad-url",
-      "level": "4",
-      "title": "Consume the remnants of a bad url"
+      "level": 4,
+      "title": "Consume the remnants of a bad url",
+      "number": "4.3.14"
     },
     {
       "id": "parsing",
-      "level": "2",
-      "title": "Parsing"
+      "level": 2,
+      "title": "Parsing",
+      "number": "5"
     },
     {
       "id": "parser-diagrams",
-      "level": "3",
-      "title": "Parser Railroad Diagrams"
+      "level": 3,
+      "title": "Parser Railroad Diagrams",
+      "number": "5.1"
     },
     {
       "id": "parser-definitions",
-      "level": "3",
-      "title": "Definitions"
+      "level": 3,
+      "title": "Definitions",
+      "number": "5.2"
     },
     {
       "id": "parser-entry-points",
-      "level": "3",
-      "title": "Parser Entry Points"
+      "level": 3,
+      "title": "Parser Entry Points",
+      "number": "5.3"
     },
     {
       "id": "parse-grammar",
-      "level": "4",
-      "title": "Parse something according to a CSS grammar"
+      "level": 4,
+      "title": "Parse something according to a CSS grammar",
+      "number": "5.3.1"
     },
     {
       "id": "parse-stylesheet",
-      "level": "4",
-      "title": "Parse a stylesheet"
+      "level": 4,
+      "title": "Parse a stylesheet",
+      "number": "5.3.2"
     },
     {
       "id": "parse-list-of-rules",
-      "level": "4",
-      "title": "Parse a list of rules"
+      "level": 4,
+      "title": "Parse a list of rules",
+      "number": "5.3.3"
     },
     {
       "id": "parse-rule",
-      "level": "4",
-      "title": "Parse a rule"
+      "level": 4,
+      "title": "Parse a rule",
+      "number": "5.3.4"
     },
     {
       "id": "parse-declaration",
-      "level": "4",
-      "title": "Parse a declaration"
+      "level": 4,
+      "title": "Parse a declaration",
+      "number": "5.3.5"
     },
     {
       "id": "parse-list-of-declarations",
-      "level": "4",
-      "title": "Parse a list of declarations"
+      "level": 4,
+      "title": "Parse a list of declarations",
+      "number": "5.3.6"
     },
     {
       "id": "parse-component-value",
-      "level": "4",
-      "title": "Parse a component value"
+      "level": 4,
+      "title": "Parse a component value",
+      "number": "5.3.7"
     },
     {
       "id": "parse-list-of-component-values",
-      "level": "4",
-      "title": "Parse a list of component values"
+      "level": 4,
+      "title": "Parse a list of component values",
+      "number": "5.3.8"
     },
     {
       "id": "parse-comma-separated-list-of-component-values",
-      "level": "4",
-      "title": "Parse a comma-separated list of component values"
+      "level": 4,
+      "title": "Parse a comma-separated list of component values",
+      "number": "5.3.9"
     },
     {
       "id": "parser-algorithms",
-      "level": "3",
-      "title": "Parser Algorithms"
+      "level": 3,
+      "title": "Parser Algorithms",
+      "number": "5.4"
     },
     {
       "id": "consume-list-of-rules",
-      "level": "4",
-      "title": "Consume a list of rules"
+      "level": 4,
+      "title": "Consume a list of rules",
+      "number": "5.4.1"
     },
     {
       "id": "consume-at-rule",
-      "level": "4",
-      "title": "Consume an at-rule"
+      "level": 4,
+      "title": "Consume an at-rule",
+      "number": "5.4.2"
     },
     {
       "id": "consume-qualified-rule",
-      "level": "4",
-      "title": "Consume a qualified rule"
+      "level": 4,
+      "title": "Consume a qualified rule",
+      "number": "5.4.3"
     },
     {
       "id": "consume-list-of-declarations",
-      "level": "4",
-      "title": "Consume a list of declarations"
+      "level": 4,
+      "title": "Consume a list of declarations",
+      "number": "5.4.4"
     },
     {
       "id": "consume-declaration",
-      "level": "4",
-      "title": "Consume a declaration"
+      "level": 4,
+      "title": "Consume a declaration",
+      "number": "5.4.5"
     },
     {
       "id": "consume-component-value",
-      "level": "4",
-      "title": "Consume a component value"
+      "level": 4,
+      "title": "Consume a component value",
+      "number": "5.4.6"
     },
     {
       "id": "consume-simple-block",
-      "level": "4",
-      "title": "Consume a simple block"
+      "level": 4,
+      "title": "Consume a simple block",
+      "number": "5.4.7"
     },
     {
       "id": "consume-function",
-      "level": "4",
-      "title": "Consume a function"
+      "level": 4,
+      "title": "Consume a function",
+      "number": "5.4.8"
     },
     {
       "id": "anb-microsyntax",
-      "level": "2",
-      "title": "The An+B microsyntax"
+      "level": 2,
+      "title": "The An+B microsyntax",
+      "number": "6"
     },
     {
       "id": "anb-syntax",
-      "level": "3",
-      "title": "Informal Syntax Description"
+      "level": 3,
+      "title": "Informal Syntax Description",
+      "number": "6.1"
     },
     {
       "id": "the-anb-type",
-      "level": "3",
-      "title": "The <an+b> type"
+      "level": 3,
+      "title": "The <an+b> type",
+      "number": "6.2"
     },
     {
       "id": "urange",
-      "level": "2",
-      "title": "The Unicode-Range microsyntax"
+      "level": 2,
+      "title": "The Unicode-Range microsyntax",
+      "number": "7"
     },
     {
       "id": "urange-syntax",
-      "level": "3",
-      "title": "The <urange> type"
+      "level": 3,
+      "title": "The <urange> type",
+      "number": "7.1"
     },
     {
       "id": "rule-defs",
-      "level": "2",
-      "title": "Defining Grammars for Rules and Other Values"
+      "level": 2,
+      "title": "Defining Grammars for Rules and Other Values",
+      "number": "8"
     },
     {
       "id": "declaration-rule-list",
-      "level": "3",
-      "title": "Defining Block Contents: the <declaration-list>, <rule-list>, and <stylesheet> productions"
+      "level": 3,
+      "title": "Defining Block Contents: the <declaration-list>, <rule-list>, and <stylesheet> productions",
+      "number": "8.1"
     },
     {
       "id": "any-value",
-      "level": "3",
-      "title": "Defining Arbitrary Contents: the <declaration-value> and <any-value> productions"
+      "level": 3,
+      "title": "Defining Arbitrary Contents: the <declaration-value> and <any-value> productions",
+      "number": "8.2"
     },
     {
       "id": "css-stylesheets",
-      "level": "2",
-      "title": "CSS stylesheets"
+      "level": 2,
+      "title": "CSS stylesheets",
+      "number": "9"
     },
     {
       "id": "style-rules",
-      "level": "3",
-      "title": "Style rules"
+      "level": 3,
+      "title": "Style rules",
+      "number": "9.1"
     },
     {
       "id": "charset-rule",
-      "level": "3",
-      "title": "The @charset Rule"
+      "level": 3,
+      "title": "The @charset Rule",
+      "number": "9.2"
     },
     {
       "id": "serialization",
-      "level": "2",
-      "title": "Serialization"
+      "level": 2,
+      "title": "10. Serialization"
     },
     {
       "id": "serializing-anb",
-      "level": "3",
-      "title": "Serializing <an+b>"
+      "level": 3,
+      "title": "Serializing <an+b>",
+      "number": "10.1"
     },
     {
       "id": "priv-sec",
-      "level": "2",
-      "title": "Privacy and Security Considerations"
+      "level": 2,
+      "title": "11. Privacy and Security Considerations"
     },
     {
       "id": "changes",
-      "level": "2",
-      "title": "Changes"
+      "level": 2,
+      "title": "12. Changes"
     },
     {
       "id": "changes-CR-20140220",
-      "level": "3",
-      "title": "Changes from the 20 February 2014 Candidate Recommendation"
+      "level": 3,
+      "title": "Changes from the 20 February 2014 Candidate Recommendation",
+      "number": "12.1"
     },
     {
       "id": "changes-WD-20131105",
-      "level": "3",
-      "title": "Changes from the 5 November 2013 Last Call Working Draft"
+      "level": 3,
+      "title": "Changes from the 5 November 2013 Last Call Working Draft",
+      "number": "12.2"
     },
     {
       "id": "changes-WD-20130919",
-      "level": "3",
-      "title": "Changes from the 19 September 2013 Working Draft"
+      "level": 3,
+      "title": "Changes from the 19 September 2013 Working Draft",
+      "number": "12.3"
     },
     {
       "id": "changes-css21",
-      "level": "3",
-      "title": "Changes from CSS 2.1 and Selectors Level 3"
+      "level": 3,
+      "title": "Changes from CSS 2.1 and Selectors Level 3",
+      "number": "12.4"
     },
     {
       "id": "acknowledgments",
-      "level": "2",
+      "level": 2,
       "title": "Acknowledgments"
     },
     {
       "id": "conformance",
-      "level": "2",
+      "level": 2,
       "title": "Conformance"
     },
     {
       "id": "document-conventions",
-      "level": "3",
+      "level": 3,
       "title": "Document conventions"
     },
     {
       "id": "conform-classes",
-      "level": "3",
+      "level": 3,
       "title": "Conformance classes"
     },
     {
       "id": "conform-responsible",
-      "level": "3",
+      "level": 3,
       "title": "Requirements for Responsible Implementation of CSS"
     },
     {
       "id": "conform-partial",
-      "level": "4",
+      "level": 4,
       "title": "Partial Implementations"
     },
     {
       "id": "conform-future-proofing",
-      "level": "4",
+      "level": 4,
       "title": "Implementations of Unstable and Proprietary Features"
     },
     {
       "id": "conform-testing",
-      "level": "4",
+      "level": 4,
       "title": "Implementations of CR-level Features"
     },
     {
       "id": "cr-exit-criteria",
-      "level": "3",
+      "level": 3,
       "title": "CR exit criteria"
     },
     {
       "id": "index",
-      "level": "2",
+      "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "level": "2",
+      "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "level": "3",
+      "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "level": "3",
+      "level": 3,
       "title": "Informative References"
     }
   ]

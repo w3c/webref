@@ -6,872 +6,1031 @@
   "headings": [
     {
       "id": "subtitle",
-      "level": "2",
+      "level": 2,
       "title": "W3C Working Draft, 30 May 2019"
     },
     {
       "id": "abstract",
-      "level": "2",
+      "level": 2,
       "title": "Abstract"
     },
     {
-      "id": "contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "ui-events-intro",
-      "level": "2",
-      "title": "Introduction"
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
       "id": "ui-events-overview",
-      "level": "3",
-      "title": "Overview"
+      "level": 3,
+      "title": "Overview",
+      "number": "1.1"
     },
     {
       "id": "ui-events-conformance",
-      "level": "3",
-      "title": "Conformance"
+      "level": 3,
+      "title": "Conformance",
+      "number": "1.2"
     },
     {
       "id": "conf-interactive-ua",
-      "level": "4",
-      "title": "Web browsers and other dynamic or interactive user agents"
+      "level": 4,
+      "title": "Web browsers and other dynamic or interactive user agents",
+      "number": "1.2.1"
     },
     {
       "id": "conf-author-tools",
-      "level": "4",
-      "title": "Authoring tools"
+      "level": 4,
+      "title": "Authoring tools",
+      "number": "1.2.2"
     },
     {
       "id": "conf-authors",
-      "level": "4",
-      "title": "Content authors and content"
+      "level": 4,
+      "title": "Content authors and content",
+      "number": "1.2.3"
     },
     {
       "id": "conf-specs",
-      "level": "4",
-      "title": "Specifications and host languages"
+      "level": 4,
+      "title": "Specifications and host languages",
+      "number": "1.2.4"
     },
     {
       "id": "style-conventions",
-      "level": "2",
-      "title": "Stylistic Conventions"
+      "level": 2,
+      "title": "Stylistic Conventions",
+      "number": "2"
     },
     {
       "id": "dom-event-architecture",
-      "level": "2",
-      "title": "DOM Event Architecture"
+      "level": 2,
+      "title": "DOM Event Architecture",
+      "number": "3"
     },
     {
       "id": "event-flow",
-      "level": "3",
-      "title": "Event dispatch and DOM event flow"
+      "level": 3,
+      "title": "Event dispatch and DOM event flow",
+      "number": "3.1"
     },
     {
       "id": "event-flow-default-cancel",
-      "level": "3",
-      "title": "Default actions and cancelable events"
+      "level": 3,
+      "title": "Default actions and cancelable events",
+      "number": "3.2"
     },
     {
       "id": "sync-async",
-      "level": "3",
-      "title": "Synchronous and asynchronous events"
+      "level": 3,
+      "title": "Synchronous and asynchronous events",
+      "number": "3.3"
     },
     {
       "id": "trusted-events",
-      "level": "3",
-      "title": "Trusted events"
+      "level": 3,
+      "title": "Trusted events",
+      "number": "3.4"
     },
     {
       "id": "event-flow-activation",
-      "level": "3",
-      "title": "Activation triggers and behavior"
+      "level": 3,
+      "title": "Activation triggers and behavior",
+      "number": "3.5"
     },
     {
       "id": "event-constructors",
-      "level": "3",
-      "title": "Constructing Mouse and Keyboard Events"
+      "level": 3,
+      "title": "Constructing Mouse and Keyboard Events",
+      "number": "3.6"
     },
     {
       "id": "event-types",
-      "level": "2",
-      "title": "Event Types"
+      "level": 2,
+      "title": "Event Types",
+      "number": "4"
     },
     {
       "id": "events-uievents",
-      "level": "3",
-      "title": "User Interface Events"
+      "level": 3,
+      "title": "User Interface Events",
+      "number": "4.1"
     },
     {
       "id": "interface-uievent",
-      "level": "4",
-      "title": "Interface UIEvent"
+      "level": 4,
+      "title": "Interface UIEvent",
+      "number": "4.1.1"
     },
     {
       "id": "idl-uievent",
-      "level": "5",
-      "title": "UIEvent"
+      "level": 5,
+      "title": "UIEvent",
+      "number": "4.1.1.1"
     },
     {
       "id": "idl-uieventinit",
-      "level": "5",
-      "title": "UIEventInit"
+      "level": 5,
+      "title": "UIEventInit",
+      "number": "4.1.1.2"
     },
     {
       "id": "events-uievent-types",
-      "level": "4",
-      "title": "UI Event Types"
+      "level": 4,
+      "title": "UI Event Types",
+      "number": "4.1.2"
     },
     {
       "id": "event-type-load",
-      "level": "5",
-      "title": "load"
+      "level": 5,
+      "title": "load",
+      "number": "4.1.2.1"
     },
     {
       "id": "event-type-unload",
-      "level": "5",
-      "title": "unload"
+      "level": 5,
+      "title": "unload",
+      "number": "4.1.2.2"
     },
     {
       "id": "event-type-abort",
-      "level": "5",
-      "title": "abort"
+      "level": 5,
+      "title": "abort",
+      "number": "4.1.2.3"
     },
     {
       "id": "event-type-error",
-      "level": "5",
-      "title": "error"
+      "level": 5,
+      "title": "error",
+      "number": "4.1.2.4"
     },
     {
       "id": "event-type-select",
-      "level": "5",
-      "title": "select"
+      "level": 5,
+      "title": "select",
+      "number": "4.1.2.5"
     },
     {
       "id": "events-focusevent",
-      "level": "3",
-      "title": "Focus Events"
+      "level": 3,
+      "title": "Focus Events",
+      "number": "4.2"
     },
     {
       "id": "interface-focusevent",
-      "level": "4",
-      "title": "Interface FocusEvent"
+      "level": 4,
+      "title": "Interface FocusEvent",
+      "number": "4.2.1"
     },
     {
       "id": "idl-focusevent",
-      "level": "5",
-      "title": "FocusEvent"
+      "level": 5,
+      "title": "FocusEvent",
+      "number": "4.2.1.1"
     },
     {
       "id": "idl-focuseventinit",
-      "level": "5",
-      "title": "FocusEventInit"
+      "level": 5,
+      "title": "FocusEventInit",
+      "number": "4.2.1.2"
     },
     {
       "id": "events-focusevent-event-order",
-      "level": "4",
-      "title": "Focus Event Order"
+      "level": 4,
+      "title": "Focus Event Order",
+      "number": "4.2.2"
     },
     {
       "id": "events-focusevent-doc-focus",
-      "level": "4",
-      "title": "Document Focus and Focus Context"
+      "level": 4,
+      "title": "Document Focus and Focus Context",
+      "number": "4.2.3"
     },
     {
       "id": "events-focus-types",
-      "level": "4",
-      "title": "Focus Event Types"
+      "level": 4,
+      "title": "Focus Event Types",
+      "number": "4.2.4"
     },
     {
       "id": "event-type-blur",
-      "level": "5",
-      "title": "blur"
+      "level": 5,
+      "title": "blur",
+      "number": "4.2.4.1"
     },
     {
       "id": "event-type-focus",
-      "level": "5",
-      "title": "focus"
+      "level": 5,
+      "title": "focus",
+      "number": "4.2.4.2"
     },
     {
       "id": "event-type-focusin",
-      "level": "5",
-      "title": "focusin"
+      "level": 5,
+      "title": "focusin",
+      "number": "4.2.4.3"
     },
     {
       "id": "event-type-focusout",
-      "level": "5",
-      "title": "focusout"
+      "level": 5,
+      "title": "focusout",
+      "number": "4.2.4.4"
     },
     {
       "id": "events-mouseevents",
-      "level": "3",
-      "title": "Mouse Events"
+      "level": 3,
+      "title": "Mouse Events",
+      "number": "4.3"
     },
     {
       "id": "interface-mouseevent",
-      "level": "4",
-      "title": "Interface MouseEvent"
+      "level": 4,
+      "title": "Interface MouseEvent",
+      "number": "4.3.1"
     },
     {
       "id": "idl-mouseevent",
-      "level": "5",
-      "title": "MouseEvent"
+      "level": 5,
+      "title": "MouseEvent",
+      "number": "4.3.1.1"
     },
     {
       "id": "idl-mouseeventinit",
-      "level": "5",
-      "title": "MouseEventInit"
+      "level": 5,
+      "title": "MouseEventInit",
+      "number": "4.3.1.2"
     },
     {
       "id": "event-modifier-initializers",
-      "level": "4",
-      "title": "Event Modifier Initializers"
+      "level": 4,
+      "title": "Event Modifier Initializers",
+      "number": "4.3.2"
     },
     {
       "id": "events-mouseevent-event-order",
-      "level": "4",
-      "title": "Mouse Event Order"
+      "level": 4,
+      "title": "Mouse Event Order",
+      "number": "4.3.3"
     },
     {
       "id": "events-mouse-types",
-      "level": "4",
-      "title": "Mouse Event Types"
+      "level": 4,
+      "title": "Mouse Event Types",
+      "number": "4.3.4"
     },
     {
       "id": "event-type-auxclick",
-      "level": "5",
-      "title": "auxclick"
+      "level": 5,
+      "title": "auxclick",
+      "number": "4.3.4.1"
     },
     {
       "id": "event-type-click",
-      "level": "5",
-      "title": "click"
+      "level": 5,
+      "title": "click",
+      "number": "4.3.4.2"
     },
     {
       "id": "event-type-dblclick",
-      "level": "5",
-      "title": "dblclick"
+      "level": 5,
+      "title": "dblclick",
+      "number": "4.3.4.3"
     },
     {
       "id": "event-type-mousedown",
-      "level": "5",
-      "title": "mousedown"
+      "level": 5,
+      "title": "mousedown",
+      "number": "4.3.4.4"
     },
     {
       "id": "event-type-mouseenter",
-      "level": "5",
-      "title": "mouseenter"
+      "level": 5,
+      "title": "mouseenter",
+      "number": "4.3.4.5"
     },
     {
       "id": "event-type-mouseleave",
-      "level": "5",
-      "title": "mouseleave"
+      "level": 5,
+      "title": "mouseleave",
+      "number": "4.3.4.6"
     },
     {
       "id": "event-type-mousemove",
-      "level": "5",
-      "title": "mousemove"
+      "level": 5,
+      "title": "mousemove",
+      "number": "4.3.4.7"
     },
     {
       "id": "event-type-mouseout",
-      "level": "5",
-      "title": "mouseout"
+      "level": 5,
+      "title": "mouseout",
+      "number": "4.3.4.8"
     },
     {
       "id": "event-type-mouseover",
-      "level": "5",
-      "title": "mouseover"
+      "level": 5,
+      "title": "mouseover",
+      "number": "4.3.4.9"
     },
     {
       "id": "event-type-mouseup",
-      "level": "5",
-      "title": "mouseup"
+      "level": 5,
+      "title": "mouseup",
+      "number": "4.3.4.10"
     },
     {
       "id": "events-wheelevents",
-      "level": "3",
-      "title": "Wheel Events"
+      "level": 3,
+      "title": "Wheel Events",
+      "number": "4.4"
     },
     {
       "id": "interface-wheelevent",
-      "level": "4",
-      "title": "Interface WheelEvent"
+      "level": 4,
+      "title": "Interface WheelEvent",
+      "number": "4.4.1"
     },
     {
       "id": "idl-wheelevent",
-      "level": "5",
-      "title": "WheelEvent"
+      "level": 5,
+      "title": "WheelEvent",
+      "number": "4.4.1.1"
     },
     {
       "id": "idl-wheeleventinit",
-      "level": "5",
-      "title": "WheelEventInit"
+      "level": 5,
+      "title": "WheelEventInit",
+      "number": "4.4.1.2"
     },
     {
       "id": "events-wheel-types",
-      "level": "4",
-      "title": "Wheel Event Types"
+      "level": 4,
+      "title": "Wheel Event Types",
+      "number": "4.4.2"
     },
     {
       "id": "event-type-wheel",
-      "level": "5",
-      "title": "wheel"
+      "level": 5,
+      "title": "wheel",
+      "number": "4.4.2.1"
     },
     {
       "id": "cancelability-of-wheel-events",
-      "level": "5",
-      "title": "cancelability of wheel events"
+      "level": 5,
+      "title": "cancelability of wheel events",
+      "number": "4.4.2.2"
     },
     {
       "id": "events-inputevents",
-      "level": "3",
-      "title": "Input Events"
+      "level": 3,
+      "title": "Input Events",
+      "number": "4.5"
     },
     {
       "id": "interface-inputevent",
-      "level": "4",
-      "title": "Interface InputEvent"
+      "level": 4,
+      "title": "Interface InputEvent",
+      "number": "4.5.1"
     },
     {
       "id": "idl-inputevent",
-      "level": "5",
-      "title": "InputEvent"
+      "level": 5,
+      "title": "InputEvent",
+      "number": "4.5.1.1"
     },
     {
       "id": "idl-inputeventinit",
-      "level": "5",
-      "title": "InputEventInit"
+      "level": 5,
+      "title": "InputEventInit",
+      "number": "4.5.1.2"
     },
     {
       "id": "events-inputevent-event-order",
-      "level": "4",
-      "title": "Input Event Order"
+      "level": 4,
+      "title": "Input Event Order",
+      "number": "4.5.2"
     },
     {
       "id": "events-input-types",
-      "level": "4",
-      "title": "Input Event Types"
+      "level": 4,
+      "title": "Input Event Types",
+      "number": "4.5.3"
     },
     {
       "id": "event-type-beforeinput",
-      "level": "5",
-      "title": "beforeinput"
+      "level": 5,
+      "title": "beforeinput",
+      "number": "4.5.3.1"
     },
     {
       "id": "event-type-input",
-      "level": "5",
-      "title": "input"
+      "level": 5,
+      "title": "input",
+      "number": "4.5.3.2"
     },
     {
       "id": "events-keyboardevents",
-      "level": "3",
-      "title": "Keyboard Events"
+      "level": 3,
+      "title": "Keyboard Events",
+      "number": "4.6"
     },
     {
       "id": "interface-keyboardevent",
-      "level": "4",
-      "title": "Interface KeyboardEvent"
+      "level": 4,
+      "title": "Interface KeyboardEvent",
+      "number": "4.6.1"
     },
     {
       "id": "idl-keyboardevent",
-      "level": "5",
-      "title": "KeyboardEvent"
+      "level": 5,
+      "title": "KeyboardEvent",
+      "number": "4.6.1.1"
     },
     {
       "id": "idl-keyboardeventinit",
-      "level": "5",
-      "title": "KeyboardEventInit"
+      "level": 5,
+      "title": "KeyboardEventInit",
+      "number": "4.6.1.2"
     },
     {
       "id": "events-keyboard-key-location",
-      "level": "4",
-      "title": "Keyboard Event Key Location"
+      "level": 4,
+      "title": "Keyboard Event Key Location",
+      "number": "4.6.2"
     },
     {
       "id": "events-keyboard-event-order",
-      "level": "4",
-      "title": "Keyboard Event Order"
+      "level": 4,
+      "title": "Keyboard Event Order",
+      "number": "4.6.3"
     },
     {
       "id": "events-keyboard-types",
-      "level": "4",
-      "title": "Keyboard Event Types"
+      "level": 4,
+      "title": "Keyboard Event Types",
+      "number": "4.6.4"
     },
     {
       "id": "event-type-keydown",
-      "level": "5",
-      "title": "keydown"
+      "level": 5,
+      "title": "keydown",
+      "number": "4.6.4.1"
     },
     {
       "id": "event-type-keyup",
-      "level": "5",
-      "title": "keyup"
+      "level": 5,
+      "title": "keyup",
+      "number": "4.6.4.2"
     },
     {
       "id": "events-compositionevents",
-      "level": "3",
-      "title": "Composition Events"
+      "level": 3,
+      "title": "Composition Events",
+      "number": "4.7"
     },
     {
       "id": "interface-compositionevent",
-      "level": "4",
-      "title": "Interface CompositionEvent"
+      "level": 4,
+      "title": "Interface CompositionEvent",
+      "number": "4.7.1"
     },
     {
       "id": "idl-compositionevent",
-      "level": "5",
-      "title": "CompositionEvent"
+      "level": 5,
+      "title": "CompositionEvent",
+      "number": "4.7.1.1"
     },
     {
       "id": "idl-compositioneventinit",
-      "level": "5",
-      "title": "CompositionEventInit"
+      "level": 5,
+      "title": "CompositionEventInit",
+      "number": "4.7.1.2"
     },
     {
       "id": "events-composition-order",
-      "level": "4",
-      "title": "Composition Event Order"
+      "level": 4,
+      "title": "Composition Event Order",
+      "number": "4.7.2"
     },
     {
       "id": "events-composition-handwriting",
-      "level": "4",
-      "title": "Handwriting Recognition Systems"
+      "level": 4,
+      "title": "Handwriting Recognition Systems",
+      "number": "4.7.3"
     },
     {
       "id": "events-composition-canceling",
-      "level": "4",
-      "title": "Canceling Composition Events"
+      "level": 4,
+      "title": "Canceling Composition Events",
+      "number": "4.7.4"
     },
     {
       "id": "events-composition-key-events",
-      "level": "4",
-      "title": "Key Events During Composition"
+      "level": 4,
+      "title": "Key Events During Composition",
+      "number": "4.7.5"
     },
     {
       "id": "events-composition-input-events",
-      "level": "4",
-      "title": "Input Events During Composition"
+      "level": 4,
+      "title": "Input Events During Composition",
+      "number": "4.7.6"
     },
     {
       "id": "events-composition-types",
-      "level": "4",
-      "title": "Composition Event Types"
+      "level": 4,
+      "title": "Composition Event Types",
+      "number": "4.7.7"
     },
     {
       "id": "event-type-compositionstart",
-      "level": "5",
-      "title": "compositionstart"
+      "level": 5,
+      "title": "compositionstart",
+      "number": "4.7.7.1"
     },
     {
       "id": "event-type-compositionupdate",
-      "level": "5",
-      "title": "compositionupdate"
+      "level": 5,
+      "title": "compositionupdate",
+      "number": "4.7.7.2"
     },
     {
       "id": "event-type-compositionend",
-      "level": "5",
-      "title": "compositionend"
+      "level": 5,
+      "title": "compositionend",
+      "number": "4.7.7.3"
     },
     {
       "id": "keys",
-      "level": "2",
-      "title": "Keyboard events and key values"
+      "level": 2,
+      "title": "Keyboard events and key values",
+      "number": "5"
     },
     {
       "id": "keyboard-input",
-      "level": "3",
-      "title": "Keyboard Input"
+      "level": 3,
+      "title": "Keyboard Input",
+      "number": "5.1"
     },
     {
       "id": "key-legends",
-      "level": "4",
-      "title": "Key Legends"
+      "level": 4,
+      "title": "Key Legends",
+      "number": "5.1.1"
     },
     {
       "id": "keys-codevalues",
-      "level": "3",
-      "title": "Key codes"
+      "level": 3,
+      "title": "Key codes",
+      "number": "5.2"
     },
     {
       "id": "code-motivation",
-      "level": "4",
-      "title": "Motivation for the code Attribute"
+      "level": 4,
+      "title": "Motivation for the code Attribute",
+      "number": "5.2.1"
     },
     {
       "id": "relationship-between-key-code",
-      "level": "4",
-      "title": "The Relationship Between key and code"
+      "level": 4,
+      "title": "The Relationship Between key and code",
+      "number": "5.2.2"
     },
     {
       "id": "code-examples",
-      "level": "4",
-      "title": "code Examples"
+      "level": 4,
+      "title": "code Examples",
+      "number": "5.2.3"
     },
     {
       "id": "code-virtual-keyboards",
-      "level": "4",
-      "title": "code and Virtual Keyboards"
+      "level": 4,
+      "title": "code and Virtual Keyboards",
+      "number": "5.2.4"
     },
     {
       "id": "keys-keyvalues",
-      "level": "3",
-      "title": "Keyboard Event key Values"
+      "level": 3,
+      "title": "Keyboard Event key Values",
+      "number": "5.3"
     },
     {
       "id": "keys-modifiers",
-      "level": "4",
-      "title": "Modifier keys"
+      "level": 4,
+      "title": "Modifier keys",
+      "number": "5.3.1"
     },
     {
       "id": "keys-dead",
-      "level": "4",
-      "title": "Dead keys"
+      "level": 4,
+      "title": "Dead keys",
+      "number": "5.3.2"
     },
     {
       "id": "keys-IME",
-      "level": "4",
-      "title": "Input Method Editors"
+      "level": 4,
+      "title": "Input Method Editors",
+      "number": "5.3.3"
     },
     {
       "id": "keys-IME-keys",
-      "level": "5",
-      "title": "Input Method Editor mode keys"
+      "level": 5,
+      "title": "Input Method Editor mode keys",
+      "number": "5.3.3.1"
     },
     {
       "id": "keys-cancelable-keys",
-      "level": "4",
-      "title": "Default actions and cancelable keyboard events"
+      "level": 4,
+      "title": "Default actions and cancelable keyboard events",
+      "number": "5.3.4"
     },
     {
       "id": "legacy-event-initializers",
-      "level": "2",
-      "title": "Legacy Event Initializers"
+      "level": 2,
+      "title": "Legacy Event Initializers",
+      "number": "6"
     },
     {
       "id": "legacy-event-initializer-interfaces",
-      "level": "3",
-      "title": "Legacy Event Initializer Interfaces"
+      "level": 3,
+      "title": "Legacy Event Initializer Interfaces",
+      "number": "6.1"
     },
     {
       "id": "idl-interface-UIEvent-initializers",
-      "level": "4",
-      "title": "Initializers for interface UIEvent"
+      "level": 4,
+      "title": "Initializers for interface UIEvent",
+      "number": "6.1.1"
     },
     {
       "id": "idl-interface-MouseEvent-initializers",
-      "level": "4",
-      "title": "Initializers for interface MouseEvent"
+      "level": 4,
+      "title": "Initializers for interface MouseEvent",
+      "number": "6.1.2"
     },
     {
       "id": "idl-interface-WheelEvent-initializers",
-      "level": "4",
-      "title": "Initializers for interface WheelEvent"
+      "level": 4,
+      "title": "Initializers for interface WheelEvent",
+      "number": "6.1.3"
     },
     {
       "id": "idl-interface-KeyboardEvent-initializers",
-      "level": "4",
-      "title": "Initializers for interface KeyboardEvent"
+      "level": 4,
+      "title": "Initializers for interface KeyboardEvent",
+      "number": "6.1.4"
     },
     {
       "id": "idl-interface-CompositionEvent-initializers",
-      "level": "4",
-      "title": "Initializers for interface CompositionEvent"
+      "level": 4,
+      "title": "Initializers for interface CompositionEvent",
+      "number": "6.1.5"
     },
     {
       "id": "legacy-key-attributes",
-      "level": "2",
-      "title": "Legacy Key & Mouse Event Attributes"
+      "level": 2,
+      "title": "Legacy Key & Mouse Event Attributes",
+      "number": "7"
     },
     {
       "id": "legacy-UIEvent",
-      "level": "3",
-      "title": "Legacy UIEvent supplemental interface"
+      "level": 3,
+      "title": "Legacy UIEvent supplemental interface",
+      "number": "7.1"
     },
     {
       "id": "legacy-interface-UIEvent",
-      "level": "4",
-      "title": "Interface UIEvent (supplemental)"
+      "level": 4,
+      "title": "Interface UIEvent (supplemental)",
+      "number": "7.1.1"
     },
     {
       "id": "legacy-dictionary-UIEventInit",
-      "level": "4",
-      "title": "Interface UIEventInit (supplemental)"
+      "level": 4,
+      "title": "Interface UIEventInit (supplemental)",
+      "number": "7.1.2"
     },
     {
       "id": "legacy-KeyboardEvent",
-      "level": "3",
-      "title": "Legacy KeyboardEvent supplemental interface"
+      "level": 3,
+      "title": "Legacy KeyboardEvent supplemental interface",
+      "number": "7.2"
     },
     {
       "id": "legacy-interface-KeyboardEvent",
-      "level": "4",
-      "title": "Interface KeyboardEvent (supplemental)"
+      "level": 4,
+      "title": "Interface KeyboardEvent (supplemental)",
+      "number": "7.2.1"
     },
     {
       "id": "legacy-dictionary-KeyboardEventInit",
-      "level": "4",
-      "title": "Interface KeyboardEventInit (supplemental)"
+      "level": 4,
+      "title": "Interface KeyboardEventInit (supplemental)",
+      "number": "7.2.2"
     },
     {
       "id": "legacy-key-models",
-      "level": "3",
-      "title": "Legacy key models"
+      "level": 3,
+      "title": "Legacy key models",
+      "number": "7.3"
     },
     {
       "id": "determine-keydown-keyup-keyCode",
-      "level": "4",
-      "title": "How to determine keyCode for keydown and keyup events"
+      "level": 4,
+      "title": "How to determine keyCode for keydown and keyup events",
+      "number": "7.3.1"
     },
     {
       "id": "determine-keypress-keyCode",
-      "level": "4",
-      "title": "How to determine keyCode for keypress events"
+      "level": 4,
+      "title": "How to determine keyCode for keypress events",
+      "number": "7.3.2"
     },
     {
       "id": "fixed-virtual-key-codes",
-      "level": "4",
-      "title": "Fixed virtual key codes"
+      "level": 4,
+      "title": "Fixed virtual key codes",
+      "number": "7.3.3"
     },
     {
       "id": "optionally-fixed-virtual-key-codes",
-      "level": "4",
-      "title": "Optionally fixed virtual key codes"
+      "level": 4,
+      "title": "Optionally fixed virtual key codes",
+      "number": "7.3.4"
     },
     {
       "id": "legacy-event-types",
-      "level": "2",
-      "title": "Legacy Event Types"
+      "level": 2,
+      "title": "Legacy Event Types",
+      "number": "8"
     },
     {
       "id": "legacy-uievent-events",
-      "level": "3",
-      "title": "Legacy UIEvent events"
+      "level": 3,
+      "title": "Legacy UIEvent events",
+      "number": "8.1"
     },
     {
       "id": "legacy-uievent-event-types",
-      "level": "4",
-      "title": "Legacy UIEvent event types"
+      "level": 4,
+      "title": "Legacy UIEvent event types",
+      "number": "8.1.1"
     },
     {
       "id": "event-type-DOMActivate",
-      "level": "5",
-      "title": "DOMActivate"
+      "level": 5,
+      "title": "DOMActivate",
+      "number": "8.1.1.1"
     },
     {
       "id": "legacy-uievent-event-order",
-      "level": "4",
-      "title": "Activation event order"
+      "level": 4,
+      "title": "Activation event order",
+      "number": "8.1.2"
     },
     {
       "id": "legacy-focusevent-events",
-      "level": "3",
-      "title": "Legacy FocusEvent events"
+      "level": 3,
+      "title": "Legacy FocusEvent events",
+      "number": "8.2"
     },
     {
       "id": "legacy-focusevent-event-types",
-      "level": "4",
-      "title": "Legacy FocusEvent event types"
+      "level": 4,
+      "title": "Legacy FocusEvent event types",
+      "number": "8.2.1"
     },
     {
       "id": "event-type-DOMFocusIn",
-      "level": "5",
-      "title": "DOMFocusIn"
+      "level": 5,
+      "title": "DOMFocusIn",
+      "number": "8.2.1.1"
     },
     {
       "id": "event-type-DOMFocusOut",
-      "level": "5",
-      "title": "DOMFocusOut"
+      "level": 5,
+      "title": "DOMFocusOut",
+      "number": "8.2.1.2"
     },
     {
       "id": "legacy-focusevent-event-order",
-      "level": "4",
-      "title": "Legacy FocusEvent event order"
+      "level": 4,
+      "title": "Legacy FocusEvent event order",
+      "number": "8.2.2"
     },
     {
       "id": "legacy-keyboardevent-events",
-      "level": "3",
-      "title": "Legacy KeyboardEvent events"
+      "level": 3,
+      "title": "Legacy KeyboardEvent events",
+      "number": "8.3"
     },
     {
       "id": "legacy-keyboardevent-event-types",
-      "level": "4",
-      "title": "Legacy KeyboardEvent event types"
+      "level": 4,
+      "title": "Legacy KeyboardEvent event types",
+      "number": "8.3.1"
     },
     {
       "id": "event-type-keypress",
-      "level": "5",
-      "title": "keypress"
+      "level": 5,
+      "title": "keypress",
+      "number": "8.3.1.1"
     },
     {
       "id": "keypress-event-order",
-      "level": "4",
-      "title": "keypress event order"
+      "level": 4,
+      "title": "keypress event order",
+      "number": "8.3.2"
     },
     {
       "id": "legacy-mutationevent-events",
-      "level": "3",
-      "title": "Legacy MutationEvent events"
+      "level": 3,
+      "title": "Legacy MutationEvent events",
+      "number": "8.4"
     },
     {
       "id": "interface-mutationevent",
-      "level": "4",
-      "title": "Interface MutationEvent"
+      "level": 4,
+      "title": "Interface MutationEvent",
+      "number": "8.4.1"
     },
     {
       "id": "legacy-mutationevent-event-types",
-      "level": "4",
-      "title": "Legacy MutationEvent event types"
+      "level": 4,
+      "title": "Legacy MutationEvent event types",
+      "number": "8.4.2"
     },
     {
       "id": "event-type-DOMAttrModified",
-      "level": "5",
-      "title": "DOMAttrModified"
+      "level": 5,
+      "title": "DOMAttrModified",
+      "number": "8.4.2.1"
     },
     {
       "id": "event-type-DOMCharacterDataModified",
-      "level": "5",
-      "title": "DOMCharacterDataModified"
+      "level": 5,
+      "title": "DOMCharacterDataModified",
+      "number": "8.4.2.2"
     },
     {
       "id": "event-type-DOMNodeInserted",
-      "level": "5",
-      "title": "DOMNodeInserted"
+      "level": 5,
+      "title": "DOMNodeInserted",
+      "number": "8.4.2.3"
     },
     {
       "id": "event-type-DOMNodeInsertedIntoDocument",
-      "level": "5",
-      "title": "DOMNodeInsertedIntoDocument"
+      "level": 5,
+      "title": "DOMNodeInsertedIntoDocument",
+      "number": "8.4.2.4"
     },
     {
       "id": "event-type-DOMNodeRemoved",
-      "level": "5",
-      "title": "DOMNodeRemoved"
+      "level": 5,
+      "title": "DOMNodeRemoved",
+      "number": "8.4.2.5"
     },
     {
       "id": "event-type-DOMNodeRemovedFromDocument",
-      "level": "5",
-      "title": "DOMNodeRemovedFromDocument"
+      "level": 5,
+      "title": "DOMNodeRemovedFromDocument",
+      "number": "8.4.2.6"
     },
     {
       "id": "event-type-DOMSubtreeModified",
-      "level": "5",
-      "title": "DOMSubtreeModified"
+      "level": 5,
+      "title": "DOMSubtreeModified",
+      "number": "8.4.2.7"
     },
     {
       "id": "extending-events",
-      "level": "2",
-      "title": "Extending Events"
+      "level": 2,
+      "title": "Extending Events",
+      "number": "9"
     },
     {
       "id": "extending-events-intro",
-      "level": "3",
-      "title": "Introduction"
+      "level": 3,
+      "title": "Introduction",
+      "number": "9.1"
     },
     {
       "id": "extending-events-Custom_Events",
-      "level": "3",
-      "title": "Custom Events"
+      "level": 3,
+      "title": "Custom Events",
+      "number": "9.2"
     },
     {
       "id": "extending-events-Impl_Extensions",
-      "level": "3",
-      "title": "Implementation-Specific Extensions"
+      "level": 3,
+      "title": "Implementation-Specific Extensions",
+      "number": "9.3"
     },
     {
       "id": "extending-events-prefixes",
-      "level": "4",
-      "title": "Known Implementation-Specific Prefixes"
+      "level": 4,
+      "title": "Known Implementation-Specific Prefixes",
+      "number": "9.3.1"
     },
     {
       "id": "security-considerations",
-      "level": "2",
-      "title": "Security Considerations"
+      "level": 2,
+      "title": "10. Security Considerations"
     },
     {
       "id": "changes-from-earlier-versions",
-      "level": "2",
-      "title": "Changes"
+      "level": 2,
+      "title": "11. Changes"
     },
     {
       "id": "changes-DOMEvents2to3Changes",
-      "level": "3",
-      "title": "Changes between DOM Level 2 Events and UI Events"
+      "level": 3,
+      "title": "Changes between DOM Level 2 Events and UI Events",
+      "number": "11.1"
     },
     {
       "id": "changes-DOMEvents2to3Changes-flow",
-      "level": "4",
-      "title": "Changes to DOM Level 2 event flow"
+      "level": 4,
+      "title": "Changes to DOM Level 2 event flow",
+      "number": "11.1.1"
     },
     {
       "id": "changes-DOMEvents2to3Changes-event-types",
-      "level": "4",
-      "title": "Changes to DOM Level 2 event types"
+      "level": 4,
+      "title": "Changes to DOM Level 2 event types",
+      "number": "11.1.2"
     },
     {
       "id": "changes-DOMLevel2to3Changes",
-      "level": "4",
-      "title": "Changes to DOM Level 2 Events interfaces"
+      "level": 4,
+      "title": "Changes to DOM Level 2 Events interfaces",
+      "number": "11.1.3"
     },
     {
       "id": "changes-DOMLevel3Addons",
-      "level": "4",
-      "title": "New Interfaces"
+      "level": 4,
+      "title": "New Interfaces",
+      "number": "11.1.4"
     },
     {
       "id": "changes-drafts",
-      "level": "3",
-      "title": "Changes between different drafts of UI Events"
+      "level": 3,
+      "title": "Changes between different drafts of UI Events",
+      "number": "11.2"
     },
     {
       "id": "acknowledgements-contributors",
-      "level": "2",
-      "title": "Acknowledgements"
+      "level": 2,
+      "title": "12. Acknowledgements"
     },
     {
       "id": "glossary",
-      "level": "2",
-      "title": "Glossary"
+      "level": 2,
+      "title": "13. Glossary"
     },
     {
       "id": "conformance",
-      "level": "2",
+      "level": 2,
       "title": "Conformance"
     },
     {
       "id": "index",
-      "level": "2",
+      "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "level": "3",
+      "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "level": "2",
+      "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "level": "3",
+      "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "level": "3",
+      "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
-      "level": "2",
+      "level": 2,
       "title": "IDL Index"
     }
   ]

@@ -6,192 +6,217 @@
   "headings": [
     {
       "id": "title_heading",
-      "level": "1",
+      "level": 1,
       "title": "Geolocation API Specification 2nd Edition"
     },
     {
       "id": "draft_date",
-      "level": "2",
+      "level": 2,
       "title": "W3C Recommendation 8 November 2016 (GitHub reference added 31 January 2018)"
     },
     {
       "id": "abstract",
-      "level": "2",
+      "level": 2,
       "title": "Abstract"
     },
     {
       "id": "status",
-      "level": "2",
+      "level": 2,
       "title": "Status of This Document"
     },
     {
-      "id": "contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "conformance",
-      "level": "2",
-      "title": "Conformance requirements"
+      "level": 2,
+      "title": "1 Conformance requirements"
     },
     {
       "id": "introduction",
-      "level": "2",
-      "title": "Introduction"
+      "level": 2,
+      "title": "2 Introduction"
     },
     {
       "id": "scope",
-      "level": "2",
-      "title": "Scope"
+      "level": 2,
+      "title": "3 Scope"
     },
     {
       "id": "security",
-      "level": "2",
-      "title": "Security and privacy\n   considerations"
+      "level": 2,
+      "title": "4 Security and privacy considerations"
     },
     {
       "id": "privacy_for_uas",
-      "level": "3",
-      "title": "Privacy\n   considerations for implementers of the Geolocation API"
+      "level": 3,
+      "title": "Privacy considerations for implementers of the Geolocation API",
+      "number": "4.1"
     },
     {
       "id": "privacy_for_recipients",
-      "level": "3",
-      "title": "Privacy\n   considerations for recipients of location information"
+      "level": 3,
+      "title": "Privacy considerations for recipients of location information",
+      "number": "4.2"
     },
     {
       "id": "implementation_considerations",
-      "level": "3",
-      "title": "4.3\n   Additional implementation considerations"
+      "level": 3,
+      "title": "Additional implementation considerations",
+      "number": "4.3"
     },
     {
       "id": "api_description",
-      "level": "2",
-      "title": "API Description"
+      "level": 2,
+      "title": "5 API Description"
     },
     {
       "id": "geolocation_interface",
-      "level": "3",
-      "title": "Geolocation\n   interface"
+      "level": 3,
+      "title": "Geolocation interface",
+      "number": "5.1"
     },
     {
       "id": "position_options_interface",
-      "level": "3",
-      "title": "5.2\n   PositionOptions interface"
+      "level": 3,
+      "title": "PositionOptions interface",
+      "number": "5.2"
     },
     {
       "id": "position_interface",
-      "level": "3",
-      "title": "Position interface"
+      "level": 3,
+      "title": "Position interface",
+      "number": "5.3"
     },
     {
       "id": "coordinates_interface",
-      "level": "3",
-      "title": "Coordinates\n   interface"
+      "level": 3,
+      "title": "Coordinates interface",
+      "number": "5.4"
     },
     {
       "id": "position_error_interface",
-      "level": "3",
-      "title": "5.5\n   PositionError interface"
+      "level": 3,
+      "title": "PositionError interface",
+      "number": "5.5"
     },
     {
       "id": "usecases",
-      "level": "2",
-      "title": "Use-Cases and Requirements"
+      "level": 2,
+      "title": "6 Use-Cases and Requirements"
     },
     {
       "id": "usecases_section",
-      "level": "3",
-      "title": "Use-Cases"
+      "level": 3,
+      "title": "Use-Cases",
+      "number": "6.1"
     },
     {
       "id": "usecase_find_poi",
-      "level": "4",
-      "title": "Find points of\n   interest in the user's area"
+      "level": 4,
+      "title": "Find points of interest in the user's area",
+      "number": "6.1.1"
     },
     {
       "id": "usecase_content_annotation",
-      "level": "4",
-      "title": "6.1.2\n   Annotating content with location information"
+      "level": 4,
+      "title": "Annotating content with location information",
+      "number": "6.1.2"
     },
     {
       "id": "usecase_show_position",
-      "level": "4",
-      "title": "Show the\n   user's position on a map"
+      "level": 4,
+      "title": "Show the user's position on a map",
+      "number": "6.1.3"
     },
     {
       "id": "usecase_turn_by_turn",
-      "level": "4",
-      "title": "Turn-by-turn\n   route navigation"
+      "level": 4,
+      "title": "Turn-by-turn route navigation",
+      "number": "6.1.4"
     },
     {
       "id": "usecase_poi_alert",
-      "level": "4",
-      "title": "Alerts when\n   points of interest are in the user's vicinity"
+      "level": 4,
+      "title": "Alerts when points of interest are in the user's vicinity",
+      "number": "6.1.5"
     },
     {
       "id": "usecase_local_info",
-      "level": "4",
-      "title": "Up-to-date local\n   information"
+      "level": 4,
+      "title": "Up-to-date local information",
+      "number": "6.1.6"
     },
     {
       "id": "usecase_social_networking",
-      "level": "4",
-      "title": "6.1.7\n   Location-tagged status updates in social networking applications"
+      "level": 4,
+      "title": "Location-tagged status updates in social networking applications",
+      "number": "6.1.7"
     },
     {
       "id": "requirements_section",
-      "level": "3",
-      "title": "Requirements"
+      "level": 3,
+      "title": "Requirements",
+      "number": "6.2"
     },
     {
       "id": "req_latlong",
-      "level": "4",
-      "title": "The Geolocation API\n   must provide location data in terms of a pair of latitude and longitude\n   coordinates."
+      "level": 4,
+      "title": "The Geolocation API must provide location data in terms of a pair of latitude and longitude coordinates.",
+      "number": "6.2.1"
     },
     {
       "id": "req_accuracy",
-      "level": "4",
-      "title": "The Geolocation API\n   must provide information about the accuracy of the retrieved location\n   data."
+      "level": 4,
+      "title": "The Geolocation API must provide information about the accuracy of the retrieved location data.",
+      "number": "6.2.2"
     },
     {
       "id": "req_oneshot",
-      "level": "4",
-      "title": "The Geolocation API\n   must support \"one-shot\" position updates."
+      "level": 4,
+      "title": "The Geolocation API must support \"one-shot\" position updates.",
+      "number": "6.2.3"
     },
     {
       "id": "req_updates",
-      "level": "4",
-      "title": "The Geolocation API\n   must allow an application to register to receive updates when the position\n   of the hosting device changes."
+      "level": 4,
+      "title": "The Geolocation API must allow an application to register to receive updates when the position of the hosting device changes.",
+      "number": "6.2.4"
     },
     {
       "id": "req_last_known",
-      "level": "4",
-      "title": "The Geolocation API\n   must allow an application to request a cached position whose age is no\n   greater than a specified value."
+      "level": 4,
+      "title": "The Geolocation API must allow an application to request a cached position whose age is no greater than a specified value.",
+      "number": "6.2.5"
     },
     {
       "id": "req_errors",
-      "level": "4",
-      "title": "The Geolocation API must\n   provide a way for the application to receive updates about errors that may\n   have occurred while obtaining a location fix."
+      "level": 4,
+      "title": "The Geolocation API must provide a way for the application to receive updates about errors that may have occurred while obtaining a location fix.",
+      "number": "6.2.6"
     },
     {
       "id": "req_request_acuracy",
-      "level": "4",
-      "title": "The Geolocation\n   API must allow an application to specify a desired accuracy level of the\n   location information."
+      "level": 4,
+      "title": "The Geolocation API must allow an application to specify a desired accuracy level of the location information.",
+      "number": "6.2.7"
     },
     {
       "id": "req_source_agnostic",
-      "level": "4",
-      "title": "The Geolocation\n   API must be agnostic to the underlying sources of location information."
+      "level": 4,
+      "title": "The Geolocation API must be agnostic to the underlying sources of location information.",
+      "number": "6.2.8"
     },
     {
       "id": "acknowledgments",
-      "level": "2",
+      "level": 2,
       "title": "Acknowledgments"
     },
     {
       "id": "references",
-      "level": "2",
+      "level": 2,
       "title": "References"
     }
   ]
