@@ -6,1168 +6,1312 @@
   "headings": [
     {
       "id": "title",
-      "level": "1",
+      "level": 1,
       "title": "WebRTC 1.0: Real-Time Communication Between Browsers"
     },
     {
       "id": "draft",
-      "level": "3",
+      "level": 3,
       "title": "Draft"
     },
     {
-      "id": "table-of-contents",
-      "level": "2",
+      "id": "toc",
+      "level": 2,
       "title": "Table of Contents"
     },
     {
-      "id": "x1-introduction",
-      "level": "2",
-      "title": "Introduction"
+      "id": "intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
     },
     {
-      "id": "x2-conformance",
-      "level": "2",
-      "title": "Conformance"
+      "id": "conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
     },
     {
-      "id": "x3-terminology",
-      "level": "2",
-      "title": "Terminology"
+      "id": "terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "3"
     },
     {
-      "id": "x4-peer-to-peer-connections",
-      "level": "2",
-      "title": "Peer-to-peer connections"
+      "id": "peer-to-peer-connections",
+      "level": 2,
+      "title": "Peer-to-peer connections",
+      "number": "4"
     },
     {
-      "id": "x4-1-introduction",
-      "level": "3",
-      "title": "Introduction"
+      "id": "introduction",
+      "level": 3,
+      "title": "Introduction",
+      "number": "4.1"
     },
     {
-      "id": "x4-2-configuration",
-      "level": "3",
-      "title": "Configuration"
+      "id": "configuration",
+      "level": 3,
+      "title": "Configuration",
+      "number": "4.2"
     },
     {
-      "id": "x4-2-1-rtcconfiguration-dictionary",
-      "level": "4",
-      "title": "RTCConfiguration Dictionary"
+      "id": "rtcconfiguration-dictionary",
+      "level": 4,
+      "title": "RTCConfiguration Dictionary",
+      "number": "4.2.1"
     },
     {
       "id": "dictionary-rtcconfiguration-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCConfiguration Members"
     },
     {
-      "id": "x4-2-2-rtcicecredentialtype-enum",
-      "level": "4",
-      "title": "RTCIceCredentialType Enum"
+      "id": "rtcicecredentialtype-enum",
+      "level": 4,
+      "title": "RTCIceCredentialType Enum",
+      "number": "4.2.2"
     },
     {
-      "id": "x4-2-3-rtciceserver-dictionary",
-      "level": "4",
-      "title": "RTCIceServer Dictionary"
+      "id": "rtciceserver-dictionary",
+      "level": 4,
+      "title": "RTCIceServer Dictionary",
+      "number": "4.2.3"
     },
     {
       "id": "dictionary-rtciceserver-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCIceServer Members"
     },
     {
-      "id": "x4-2-4-rtcicetransportpolicy-enum",
-      "level": "4",
-      "title": "RTCIceTransportPolicy Enum"
+      "id": "rtcicetransportpolicy-enum",
+      "level": 4,
+      "title": "RTCIceTransportPolicy Enum",
+      "number": "4.2.4"
     },
     {
-      "id": "x4-2-5-rtcbundlepolicy-enum",
-      "level": "4",
-      "title": "RTCBundlePolicy Enum"
+      "id": "rtcbundlepolicy-enum",
+      "level": 4,
+      "title": "RTCBundlePolicy Enum",
+      "number": "4.2.5"
     },
     {
-      "id": "x4-2-6-rtcrtcpmuxpolicy-enum",
-      "level": "4",
-      "title": "RTCRtcpMuxPolicy Enum"
+      "id": "rtcrtcpmuxpolicy-enum",
+      "level": 4,
+      "title": "RTCRtcpMuxPolicy Enum",
+      "number": "4.2.6"
     },
     {
-      "id": "x4-2-7-offer-answer-options",
-      "level": "4",
-      "title": "Offer/Answer Options"
+      "id": "offer-answer-options",
+      "level": 4,
+      "title": "Offer/Answer Options",
+      "number": "4.2.7"
     },
     {
       "id": "dictionary-rtcofferansweroptions-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCOfferAnswerOptions Members"
     },
     {
       "id": "dictionary-rtcofferoptions-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCOfferOptions Members"
     },
     {
-      "id": "x4-3-state-definitions",
-      "level": "3",
-      "title": "State Definitions"
+      "id": "state-definitions",
+      "level": 3,
+      "title": "State Definitions",
+      "number": "4.3"
     },
     {
-      "id": "x4-3-1-rtcsignalingstate-enum",
-      "level": "4",
-      "title": "RTCSignalingState Enum"
+      "id": "rtcsignalingstate-enum",
+      "level": 4,
+      "title": "RTCSignalingState Enum",
+      "number": "4.3.1"
     },
     {
-      "id": "x4-3-2-rtcicegatheringstate-enum",
-      "level": "4",
-      "title": "RTCIceGatheringState Enum"
+      "id": "rtcicegatheringstate-enum",
+      "level": 4,
+      "title": "RTCIceGatheringState Enum",
+      "number": "4.3.2"
     },
     {
-      "id": "x4-3-3-rtcpeerconnectionstate-enum",
-      "level": "4",
-      "title": "RTCPeerConnectionState Enum"
+      "id": "rtcpeerconnectionstate-enum",
+      "level": 4,
+      "title": "RTCPeerConnectionState Enum",
+      "number": "4.3.3"
     },
     {
-      "id": "x4-3-4-rtciceconnectionstate-enum",
-      "level": "4",
-      "title": "RTCIceConnectionState Enum"
+      "id": "rtciceconnectionstate-enum",
+      "level": 4,
+      "title": "RTCIceConnectionState Enum",
+      "number": "4.3.4"
     },
     {
-      "id": "x4-4-rtcpeerconnection-interface",
-      "level": "3",
-      "title": "RTCPeerConnection Interface"
+      "id": "rtcpeerconnection-interface",
+      "level": 3,
+      "title": "RTCPeerConnection Interface",
+      "number": "4.4"
     },
     {
-      "id": "x4-4-1-operation",
-      "level": "4",
-      "title": "Operation"
+      "id": "operation",
+      "level": 4,
+      "title": "Operation",
+      "number": "4.4.1"
     },
     {
-      "id": "x4-4-1-1-constructor",
-      "level": "5",
-      "title": "Constructor"
+      "id": "constructor",
+      "level": 5,
+      "title": "Constructor",
+      "number": "4.4.1.1"
     },
     {
-      "id": "x4-4-1-2-chain-an-asynchronous-operation",
-      "level": "5",
-      "title": "Chain an asynchronous operation"
+      "id": "chain-an-asynchronous-operation",
+      "level": 5,
+      "title": "Chain an asynchronous operation",
+      "number": "4.4.1.2"
     },
     {
-      "id": "x4-4-1-3-update-the-connection-state",
-      "level": "5",
-      "title": "Update the connection state"
+      "id": "update-the-connection-state",
+      "level": 5,
+      "title": "Update the connection state",
+      "number": "4.4.1.3"
     },
     {
-      "id": "x4-4-1-4-update-the-ice-gathering-state",
-      "level": "5",
-      "title": "Update the ICE gathering state"
+      "id": "update-the-ice-gathering-state",
+      "level": 5,
+      "title": "Update the ICE gathering state",
+      "number": "4.4.1.4"
     },
     {
-      "id": "x4-4-1-5-set-the-rtcsessiondescription",
-      "level": "5",
-      "title": "Set the RTCSessionDescription"
+      "id": "set-the-rtcsessiondescription",
+      "level": 5,
+      "title": "Set the RTCSessionDescription",
+      "number": "4.4.1.5"
     },
     {
-      "id": "x4-4-1-6-set-the-configuration",
-      "level": "5",
-      "title": "Set the configuration"
+      "id": "set-the-configuration",
+      "level": 5,
+      "title": "Set the configuration",
+      "number": "4.4.1.6"
     },
     {
-      "id": "x4-4-2-interface-definition",
-      "level": "4",
-      "title": "Interface Definition"
+      "id": "interface-definition",
+      "level": 4,
+      "title": "Interface Definition",
+      "number": "4.4.2"
     },
     {
       "id": "attributes-1",
-      "level": "5",
+      "level": 5,
       "title": "Attributes"
     },
     {
       "id": "methods",
-      "level": "5",
+      "level": 5,
       "title": "Methods"
     },
     {
-      "id": "x4-4-3-legacy-interface-extensions",
-      "level": "4",
-      "title": "Legacy Interface Extensions"
+      "id": "legacy-interface-extensions",
+      "level": 4,
+      "title": "Legacy Interface Extensions",
+      "number": "4.4.3"
     },
     {
-      "id": "x4-4-3-1-method-extensions",
-      "level": "5",
-      "title": "Method extensions"
+      "id": "method-extensions",
+      "level": 5,
+      "title": "Method extensions",
+      "number": "4.4.3.1"
     },
     {
       "id": "methods-0",
-      "level": "6",
+      "level": 6,
       "title": "Methods"
     },
     {
       "id": "callback-definitions",
-      "level": "4",
+      "level": 4,
       "title": "Callback Definitions"
     },
     {
       "id": "rtcpeerconnectionerrorcallback",
-      "level": "6",
+      "level": 6,
       "title": "RTCPeerConnectionErrorCallback"
     },
     {
       "id": "callback-rtcpeerconnectionerrorcallback-parameters",
-      "level": "6",
+      "level": 6,
       "title": "Callback RTCPeerConnectionErrorCallback Parameters"
     },
     {
       "id": "rtcsessiondescriptioncallback",
-      "level": "6",
+      "level": 6,
       "title": "RTCSessionDescriptionCallback"
     },
     {
       "id": "callback-rtcsessiondescriptioncallback-parameters",
-      "level": "6",
+      "level": 6,
       "title": "Callback RTCSessionDescriptionCallback Parameters"
     },
     {
-      "id": "x4-4-3-2-legacy-configuration-extensions",
-      "level": "5",
-      "title": "Legacy configuration extensions"
+      "id": "legacy-configuration-extensions",
+      "level": 5,
+      "title": "Legacy configuration extensions",
+      "number": "4.4.3.2"
     },
     {
       "id": "attributes-2",
-      "level": "6",
+      "level": 6,
       "title": "Attributes"
     },
     {
-      "id": "x4-4-4-garbage-collection",
-      "level": "4",
-      "title": "Garbage collection"
+      "id": "garbage-collection",
+      "level": 4,
+      "title": "Garbage collection",
+      "number": "4.4.4"
     },
     {
-      "id": "x4-5-error-handling",
-      "level": "3",
-      "title": "Error Handling"
+      "id": "error-handling",
+      "level": 3,
+      "title": "Error Handling",
+      "number": "4.5"
     },
     {
-      "id": "x4-5-1-general-principles",
-      "level": "4",
-      "title": "General Principles"
+      "id": "general-principles",
+      "level": 4,
+      "title": "General Principles",
+      "number": "4.5.1"
     },
     {
-      "id": "x4-6-session-description-model",
-      "level": "3",
-      "title": "Session Description Model"
+      "id": "session-description-model",
+      "level": 3,
+      "title": "Session Description Model",
+      "number": "4.6"
     },
     {
-      "id": "x4-6-1-rtcsdptype",
-      "level": "4",
-      "title": "RTCSdpType"
+      "id": "rtcsdptype",
+      "level": 4,
+      "title": "RTCSdpType",
+      "number": "4.6.1"
     },
     {
-      "id": "x4-6-2-rtcsessiondescription-class",
-      "level": "4",
-      "title": "RTCSessionDescription Class"
+      "id": "rtcsessiondescription-class",
+      "level": 4,
+      "title": "RTCSessionDescription Class",
+      "number": "4.6.2"
     },
     {
       "id": "constructors-1",
-      "level": "5",
+      "level": 5,
       "title": "Constructors"
     },
     {
       "id": "attributes-3",
-      "level": "5",
+      "level": 5,
       "title": "Attributes"
     },
     {
       "id": "methods-1",
-      "level": "5",
+      "level": 5,
       "title": "Methods"
     },
     {
       "id": "dictionary-rtcsessiondescriptioninit-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCSessionDescriptionInit Members"
     },
     {
       "id": "dictionary-rtclocalsessiondescriptioninit-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCLocalSessionDescriptionInit Members"
     },
     {
-      "id": "x4-7-session-negotiation-model",
-      "level": "3",
-      "title": "Session Negotiation Model"
+      "id": "session-negotiation-model",
+      "level": 3,
+      "title": "Session Negotiation Model",
+      "number": "4.7"
     },
     {
-      "id": "x4-7-1-setting-negotiation-needed",
-      "level": "4",
-      "title": "Setting Negotiation-Needed"
+      "id": "setting-negotiation-needed",
+      "level": 4,
+      "title": "Setting Negotiation-Needed",
+      "number": "4.7.1"
     },
     {
-      "id": "x4-7-2-clearing-negotiation-needed",
-      "level": "4",
-      "title": "Clearing Negotiation-Needed"
+      "id": "clearing-negotiation-needed",
+      "level": 4,
+      "title": "Clearing Negotiation-Needed",
+      "number": "4.7.2"
     },
     {
-      "id": "x4-7-3-updating-the-negotiation-needed-flag",
-      "level": "4",
-      "title": "Updating the Negotiation-Needed flag"
+      "id": "updating-the-negotiation-needed-flag",
+      "level": 4,
+      "title": "Updating the Negotiation-Needed flag",
+      "number": "4.7.3"
     },
     {
-      "id": "x4-8-interfaces-for-interactive-connectivity-establishment",
-      "level": "3",
-      "title": "Interfaces for Interactive Connectivity Establishment"
+      "id": "interfaces-for-interactive-connectivity-establishment",
+      "level": 3,
+      "title": "Interfaces for Interactive Connectivity Establishment",
+      "number": "4.8"
     },
     {
-      "id": "x4-8-1-rtcicecandidate-interface",
-      "level": "4",
-      "title": "RTCIceCandidate Interface"
+      "id": "rtcicecandidate-interface",
+      "level": 4,
+      "title": "RTCIceCandidate Interface",
+      "number": "4.8.1"
     },
     {
       "id": "constructor-0",
-      "level": "5",
+      "level": 5,
       "title": "Constructor"
     },
     {
       "id": "attributes-4",
-      "level": "5",
+      "level": 5,
       "title": "Attributes"
     },
     {
       "id": "methods-2",
-      "level": "5",
+      "level": 5,
       "title": "Methods"
     },
     {
       "id": "dictionary-rtcicecandidateinit-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCIceCandidateInit Members"
     },
     {
-      "id": "x4-8-1-1-candidate-attribute-grammar",
-      "level": "5",
-      "title": "candidate-attribute Grammar"
+      "id": "candidate-attribute-grammar",
+      "level": 5,
+      "title": "candidate-attribute Grammar",
+      "number": "4.8.1.1"
     },
     {
-      "id": "x4-8-1-2-rtciceprotocol-enum",
-      "level": "5",
-      "title": "RTCIceProtocol Enum"
+      "id": "rtciceprotocol-enum",
+      "level": 5,
+      "title": "RTCIceProtocol Enum",
+      "number": "4.8.1.2"
     },
     {
-      "id": "x4-8-1-3-rtcicetcpcandidatetype-enum",
-      "level": "5",
-      "title": "RTCIceTcpCandidateType Enum"
+      "id": "rtcicetcpcandidatetype-enum",
+      "level": 5,
+      "title": "RTCIceTcpCandidateType Enum",
+      "number": "4.8.1.3"
     },
     {
-      "id": "x4-8-1-4-rtcicecandidatetype-enum",
-      "level": "5",
-      "title": "RTCIceCandidateType Enum"
+      "id": "rtcicecandidatetype-enum",
+      "level": 5,
+      "title": "RTCIceCandidateType Enum",
+      "number": "4.8.1.4"
     },
     {
-      "id": "x4-8-2-rtcpeerconnectioniceevent",
-      "level": "4",
-      "title": "RTCPeerConnectionIceEvent"
+      "id": "rtcpeerconnectioniceevent",
+      "level": 4,
+      "title": "RTCPeerConnectionIceEvent",
+      "number": "4.8.2"
     },
     {
       "id": "constructors-2",
-      "level": "5",
+      "level": 5,
       "title": "Constructors"
     },
     {
       "id": "attributes-5",
-      "level": "5",
+      "level": 5,
       "title": "Attributes"
     },
     {
       "id": "dictionary-rtcpeerconnectioniceeventinit-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCPeerConnectionIceEventInit Members"
     },
     {
-      "id": "x4-8-3-rtcpeerconnectioniceerrorevent",
-      "level": "4",
-      "title": "RTCPeerConnectionIceErrorEvent"
+      "id": "rtcpeerconnectioniceerrorevent",
+      "level": 4,
+      "title": "RTCPeerConnectionIceErrorEvent",
+      "number": "4.8.3"
     },
     {
       "id": "constructors-3",
-      "level": "5",
+      "level": 5,
       "title": "Constructors"
     },
     {
       "id": "attributes-6",
-      "level": "5",
+      "level": 5,
       "title": "Attributes"
     },
     {
       "id": "dictionary-rtcpeerconnectioniceerroreventinit-members",
-      "level": "5",
-      "title": "Dictionary RTCPeerConnectionIceErrorEventInit\n                Members"
+      "level": 5,
+      "title": "Dictionary RTCPeerConnectionIceErrorEventInit Members"
     },
     {
-      "id": "sec.cert-mgmt",
-      "level": "3",
-      "title": "Certificate Management"
+      "id": "certificate-management",
+      "level": 3,
+      "title": "Certificate Management",
+      "number": "4.9"
     },
     {
       "id": "methods-3",
-      "level": "4",
+      "level": 4,
       "title": "Methods"
     },
     {
-      "id": "x4-9-1-rtccertificateexpiration-dictionary",
-      "level": "4",
-      "title": "RTCCertificateExpiration Dictionary"
+      "id": "rtccertificateexpiration-dictionary",
+      "level": 4,
+      "title": "RTCCertificateExpiration Dictionary",
+      "number": "4.9.1"
     },
     {
-      "id": "x4-9-2-rtccertificate-interface",
-      "level": "4",
-      "title": "RTCCertificate Interface"
+      "id": "rtccertificate-interface",
+      "level": 4,
+      "title": "RTCCertificate Interface",
+      "number": "4.9.2"
     },
     {
       "id": "attributes-7",
-      "level": "5",
+      "level": 5,
       "title": "Attributes"
     },
     {
       "id": "methods-4",
-      "level": "5",
+      "level": 5,
       "title": "Methods"
     },
     {
-      "id": "x5-rtp-media-api",
-      "level": "2",
-      "title": "RTP Media API"
+      "id": "rtp-media-api",
+      "level": 2,
+      "title": "RTP Media API",
+      "number": "5"
     },
     {
-      "id": "x5-1-rtcpeerconnection-interface-extensions",
-      "level": "3",
-      "title": "RTCPeerConnection Interface Extensions"
+      "id": "rtcpeerconnection-interface-extensions",
+      "level": 3,
+      "title": "RTCPeerConnection Interface Extensions",
+      "number": "5.1"
     },
     {
       "id": "attributes-8",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
       "id": "methods-5",
-      "level": "4",
+      "level": 4,
       "title": "Methods"
     },
     {
       "id": "dictionary-rtcrtptransceiverinit-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCRtpTransceiverInit Members"
     },
     {
-      "id": "x5-1-1-processing-remote-mediastreamtracks",
-      "level": "4",
-      "title": "Processing Remote MediaStreamTracks"
+      "id": "processing-remote-mediastreamtracks",
+      "level": 4,
+      "title": "Processing Remote MediaStreamTracks",
+      "number": "5.1.1"
     },
     {
-      "id": "x5-2-rtcrtpsender-interface",
-      "level": "3",
-      "title": "RTCRtpSender Interface"
+      "id": "rtcrtpsender-interface",
+      "level": 3,
+      "title": "RTCRtpSender Interface",
+      "number": "5.2"
     },
     {
       "id": "attributes-9",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
       "id": "methods-6",
-      "level": "4",
+      "level": 4,
       "title": "Methods"
     },
     {
-      "id": "x5-2-1-rtcrtpparameters-dictionary",
-      "level": "4",
-      "title": "RTCRtpParameters Dictionary"
+      "id": "rtcrtpparameters",
+      "level": 4,
+      "title": "RTCRtpParameters Dictionary",
+      "number": "5.2.1"
     },
     {
       "id": "dictionary-rtcrtpparameters-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCRtpParameters Members"
     },
     {
-      "id": "x5-2-2-rtcrtpsendparameters-dictionary",
-      "level": "4",
-      "title": "RTCRtpSendParameters Dictionary"
+      "id": "rtcsendrtpparameters",
+      "level": 4,
+      "title": "RTCRtpSendParameters Dictionary",
+      "number": "5.2.2"
     },
     {
       "id": "dictionary-rtcrtpsendparameters-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCRtpSendParameters Members"
     },
     {
-      "id": "x5-2-3-rtcrtpreceiveparameters-dictionary",
-      "level": "4",
-      "title": "RTCRtpReceiveParameters Dictionary"
+      "id": "rtcreceivertpparameters",
+      "level": 4,
+      "title": "RTCRtpReceiveParameters Dictionary",
+      "number": "5.2.3"
     },
     {
-      "id": "x5-2-4-rtcrtpcodingparameters-dictionary",
-      "level": "4",
-      "title": "RTCRtpCodingParameters Dictionary"
+      "id": "rtcrtpcodingparameters",
+      "level": 4,
+      "title": "RTCRtpCodingParameters Dictionary",
+      "number": "5.2.4"
     },
     {
       "id": "dictionary-rtcrtpcodingparameters-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCRtpCodingParameters Members"
     },
     {
-      "id": "x5-2-5-rtcrtpdecodingparameters-dictionary",
-      "level": "4",
-      "title": "RTCRtpDecodingParameters Dictionary"
+      "id": "rtcrtpdecodingparameters",
+      "level": 4,
+      "title": "RTCRtpDecodingParameters Dictionary",
+      "number": "5.2.5"
     },
     {
-      "id": "x5-2-6-rtcrtpencodingparameters-dictionary",
-      "level": "4",
-      "title": "RTCRtpEncodingParameters Dictionary"
+      "id": "rtcrtpencodingparameters",
+      "level": 4,
+      "title": "RTCRtpEncodingParameters Dictionary",
+      "number": "5.2.6"
     },
     {
       "id": "dictionary-rtcrtpencodingparameters-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCRtpEncodingParameters Members"
     },
     {
-      "id": "x5-2-7-rtcrtcpparameters-dictionary",
-      "level": "4",
-      "title": "RTCRtcpParameters Dictionary"
+      "id": "rtcrtcpparameters",
+      "level": 4,
+      "title": "RTCRtcpParameters Dictionary",
+      "number": "5.2.7"
     },
     {
       "id": "dictionary-rtcrtcpparameters-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCRtcpParameters Members"
     },
     {
-      "id": "x5-2-8-rtcrtpheaderextensionparameters-dictionary",
-      "level": "4",
-      "title": "RTCRtpHeaderExtensionParameters Dictionary"
+      "id": "rtcrtpheaderextensionparameters",
+      "level": 4,
+      "title": "RTCRtpHeaderExtensionParameters Dictionary",
+      "number": "5.2.8"
     },
     {
       "id": "dictionary-rtcrtpheaderextensionparameters-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCRtpHeaderExtensionParameters Members"
     },
     {
-      "id": "x5-2-9-rtcrtpcodecparameters-dictionary",
-      "level": "4",
-      "title": "RTCRtpCodecParameters Dictionary"
+      "id": "rtcrtpcodecparameters",
+      "level": 4,
+      "title": "RTCRtpCodecParameters Dictionary",
+      "number": "5.2.9"
     },
     {
       "id": "dictionary-rtcrtpcodecparameters-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCRtpCodecParameters Members"
     },
     {
-      "id": "x5-2-10-rtcrtpcapabilities-dictionary",
-      "level": "4",
-      "title": "RTCRtpCapabilities Dictionary"
+      "id": "rtcrtpcapabilities",
+      "level": 4,
+      "title": "RTCRtpCapabilities Dictionary",
+      "number": "5.2.10"
     },
     {
       "id": "dictionary-rtcrtpcapabilities-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCRtpCapabilities Members"
     },
     {
-      "id": "x5-2-11-rtcrtpcodeccapability-dictionary",
-      "level": "4",
-      "title": "RTCRtpCodecCapability Dictionary"
+      "id": "rtcrtpcodeccapability",
+      "level": 4,
+      "title": "RTCRtpCodecCapability Dictionary",
+      "number": "5.2.11"
     },
     {
       "id": "dictionary-rtcrtpcodeccapability-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCRtpCodecCapability Members"
     },
     {
-      "id": "x5-2-12-rtcrtpheaderextensioncapability-dictionary",
-      "level": "4",
-      "title": "RTCRtpHeaderExtensionCapability Dictionary"
+      "id": "rtcrtpheaderextensioncapability",
+      "level": 4,
+      "title": "RTCRtpHeaderExtensionCapability Dictionary",
+      "number": "5.2.12"
     },
     {
       "id": "dictionary-rtcrtpheaderextensioncapability-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCRtpHeaderExtensionCapability Members"
     },
     {
-      "id": "x5-3-rtcrtpreceiver-interface",
-      "level": "3",
-      "title": "RTCRtpReceiver Interface"
+      "id": "rtcrtpreceiver-interface",
+      "level": 3,
+      "title": "RTCRtpReceiver Interface",
+      "number": "5.3"
     },
     {
       "id": "attributes-10",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
       "id": "methods-7",
-      "level": "4",
+      "level": 4,
       "title": "Methods"
     },
     {
       "id": "dictionary-rtcrtpcontributingsource-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCRtpContributingSource Members"
     },
     {
       "id": "dictionary-rtcrtpsynchronizationsource-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCRtpSynchronizationSource Members"
     },
     {
-      "id": "x5-4-rtcrtptransceiver-interface",
-      "level": "3",
-      "title": "RTCRtpTransceiver Interface"
+      "id": "rtcrtptransceiver-interface",
+      "level": 3,
+      "title": "RTCRtpTransceiver Interface",
+      "number": "5.4"
     },
     {
       "id": "attributes-11",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
       "id": "methods-8",
-      "level": "4",
+      "level": 4,
       "title": "Methods"
     },
     {
-      "id": "x5-4-1-simulcast-functionality",
-      "level": "4",
-      "title": "Simulcast functionality"
+      "id": "simulcast-functionality",
+      "level": 4,
+      "title": "Simulcast functionality",
+      "number": "5.4.1"
     },
     {
-      "id": "x5-4-1-1-encoding-parameter-examples",
-      "level": "5",
-      "title": "Encoding Parameter Examples"
+      "id": "rtcrtpencodingspatialsim-example*",
+      "level": 5,
+      "title": "Encoding Parameter Examples",
+      "number": "5.4.1.1"
     },
     {
-      "id": "x5-4-2-hold-functionality",
-      "level": "4",
-      "title": "\"Hold\" functionality"
+      "id": "hold-functionality",
+      "level": 4,
+      "title": "\"Hold\" functionality",
+      "number": "5.4.2"
     },
     {
-      "id": "x5-5-rtcdtlstransport-interface",
-      "level": "3",
-      "title": "RTCDtlsTransport Interface"
+      "id": "rtcdtlstransport-interface",
+      "level": 3,
+      "title": "RTCDtlsTransport Interface",
+      "number": "5.5"
     },
     {
       "id": "attributes-12",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
       "id": "methods-9",
-      "level": "4",
+      "level": 4,
       "title": "Methods"
     },
     {
       "id": "rtcdtlstransportstate-enum",
-      "level": "3",
+      "level": 3,
       "title": "RTCDtlsTransportState Enum"
     },
     {
-      "id": "x5-5-1-rtcdtlsfingerprint-dictionary",
-      "level": "4",
-      "title": "RTCDtlsFingerprint Dictionary"
+      "id": "rtcdtlsfingerprint",
+      "level": 4,
+      "title": "RTCDtlsFingerprint Dictionary",
+      "number": "5.5.1"
     },
     {
       "id": "dictionary-rtcdtlsfingerprint-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCDtlsFingerprint Members"
     },
     {
-      "id": "x5-6-rtcicetransport-interface",
-      "level": "3",
-      "title": "RTCIceTransport Interface"
+      "id": "rtcicetransport",
+      "level": 3,
+      "title": "RTCIceTransport Interface",
+      "number": "5.6"
     },
     {
       "id": "attributes-13",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
       "id": "methods-10",
-      "level": "4",
+      "level": 4,
       "title": "Methods"
     },
     {
-      "id": "x5-6-1-rtciceparameters-dictionary",
-      "level": "4",
-      "title": "RTCIceParameters Dictionary"
+      "id": "rtciceparameters",
+      "level": 4,
+      "title": "RTCIceParameters Dictionary",
+      "number": "5.6.1"
     },
     {
       "id": "dictionary-rtciceparameters-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCIceParameters Members"
     },
     {
-      "id": "x5-6-2-rtcicecandidatepair-dictionary",
-      "level": "4",
-      "title": "RTCIceCandidatePair Dictionary"
+      "id": "rtcicecandidatepair",
+      "level": 4,
+      "title": "RTCIceCandidatePair Dictionary",
+      "number": "5.6.2"
     },
     {
       "id": "dictionary-rtcicecandidatepair-members",
-      "level": "5",
+      "level": 5,
       "title": "Dictionary RTCIceCandidatePair Members"
     },
     {
-      "id": "x5-6-3-rtcicegathererstate-enum",
-      "level": "4",
-      "title": "RTCIceGathererState Enum"
+      "id": "rtcicegathererstate",
+      "level": 4,
+      "title": "RTCIceGathererState Enum",
+      "number": "5.6.3"
     },
     {
-      "id": "x5-6-4-rtcicetransportstate-enum",
-      "level": "4",
-      "title": "RTCIceTransportState Enum"
+      "id": "rtcicetransportstate",
+      "level": 4,
+      "title": "RTCIceTransportState Enum",
+      "number": "5.6.4"
     },
     {
-      "id": "x5-6-5-rtcicerole-enum",
-      "level": "4",
-      "title": "RTCIceRole Enum"
+      "id": "rtcicerole",
+      "level": 4,
+      "title": "RTCIceRole Enum",
+      "number": "5.6.5"
     },
     {
-      "id": "x5-6-6-rtcicecomponent-enum",
-      "level": "4",
-      "title": "RTCIceComponent Enum"
+      "id": "rtcicecomponent",
+      "level": 4,
+      "title": "RTCIceComponent Enum",
+      "number": "5.6.6"
     },
     {
-      "id": "x5-7-rtctrackevent",
-      "level": "3",
-      "title": "RTCTrackEvent"
+      "id": "rtctrackevent",
+      "level": 3,
+      "title": "RTCTrackEvent",
+      "number": "5.7"
     },
     {
       "id": "constructors-4",
-      "level": "4",
+      "level": 4,
       "title": "Constructors"
     },
     {
       "id": "attributes-14",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
       "id": "dictionary-rtctrackeventinit-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCTrackEventInit Members"
     },
     {
-      "id": "x6-peer-to-peer-data-api",
-      "level": "2",
-      "title": "Peer-to-peer Data API"
+      "id": "peer-to-peer-data-api",
+      "level": 2,
+      "title": "Peer-to-peer Data API",
+      "number": "6"
     },
     {
-      "id": "x6-1-rtcpeerconnection-interface-extensions",
-      "level": "3",
-      "title": "RTCPeerConnection Interface Extensions"
+      "id": "rtcpeerconnection-interface-extensions-0",
+      "level": 3,
+      "title": "RTCPeerConnection Interface Extensions",
+      "number": "6.1"
     },
     {
       "id": "attributes-15",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
       "id": "methods-11",
-      "level": "4",
+      "level": 4,
       "title": "Methods"
     },
     {
-      "id": "x6-1-1-rtcsctptransport-interface",
-      "level": "4",
-      "title": "RTCSctpTransport Interface"
+      "id": "rtcsctptransport-interface",
+      "level": 4,
+      "title": "RTCSctpTransport Interface",
+      "number": "6.1.1"
     },
     {
-      "id": "sctp-transport-create",
-      "level": "5",
-      "title": "Create an instance"
+      "id": "create-an-instance",
+      "level": 5,
+      "title": "Create an instance",
+      "number": "6.1.1.1"
     },
     {
-      "id": "sctp-transport-update-mms",
-      "level": "5",
-      "title": "Update max message size"
+      "id": "update-max-message-size",
+      "level": 5,
+      "title": "Update max message size",
+      "number": "6.1.1.2"
     },
     {
-      "id": "sctp-transport-connected",
-      "level": "5",
-      "title": "Connected procedure"
+      "id": "connected-procedure",
+      "level": 5,
+      "title": "Connected procedure",
+      "number": "6.1.1.3"
     },
     {
       "id": "attributes-16",
-      "level": "5",
+      "level": 5,
       "title": "Attributes"
     },
     {
-      "id": "x6-1-2-rtcsctptransportstate-enum",
-      "level": "4",
-      "title": "RTCSctpTransportState Enum"
+      "id": "rtcsctptransportstate",
+      "level": 4,
+      "title": "RTCSctpTransportState Enum",
+      "number": "6.1.2"
     },
     {
-      "id": "x6-2-rtcdatachannel",
-      "level": "3",
-      "title": "RTCDataChannel"
+      "id": "rtcdatachannel",
+      "level": 3,
+      "title": "RTCDataChannel",
+      "number": "6.2"
     },
     {
-      "id": "x6-2-1-creating-a-data-channel",
-      "level": "4",
-      "title": "Creating a data channel"
+      "id": "creating-a-data-channel",
+      "level": 4,
+      "title": "Creating a data channel",
+      "number": "6.2.1"
     },
     {
-      "id": "x6-2-2-announcing-a-data-channel-as-open",
-      "level": "4",
-      "title": "Announcing a data channel as open"
+      "id": "announcing-a-data-channel-as-open",
+      "level": 4,
+      "title": "Announcing a data channel as open",
+      "number": "6.2.2"
     },
     {
-      "id": "x6-2-3-announcing-a-data-channel-instance",
-      "level": "4",
-      "title": "Announcing a data channel instance"
+      "id": "announcing-a-data-channel-instance",
+      "level": 4,
+      "title": "Announcing a data channel instance",
+      "number": "6.2.3"
     },
     {
-      "id": "x6-2-4-closing-procedure",
-      "level": "4",
-      "title": "Closing procedure"
+      "id": "closing-procedure",
+      "level": 4,
+      "title": "Closing procedure",
+      "number": "6.2.4"
     },
     {
-      "id": "x6-2-5-announcing-a-data-channel-as-closed",
-      "level": "4",
-      "title": "Announcing a data channel as closed"
+      "id": "announcing-a-data-channel-as-closed",
+      "level": 4,
+      "title": "Announcing a data channel as closed",
+      "number": "6.2.5"
     },
     {
-      "id": "x6-2-6-error-on-creating-data-channels",
-      "level": "4",
-      "title": "Error on creating data channels"
+      "id": "error-on-creating-data-channels",
+      "level": 4,
+      "title": "Error on creating data channels",
+      "number": "6.2.6"
     },
     {
-      "id": "x6-2-7-receiving-messages-on-a-data-channel",
-      "level": "4",
-      "title": "Receiving messages on a data channel"
+      "id": "receiving-messages-on-a-data-channel",
+      "level": 4,
+      "title": "Receiving messages on a data channel",
+      "number": "6.2.7"
     },
     {
       "id": "attributes-17",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
       "id": "methods-12",
-      "level": "4",
+      "level": 4,
       "title": "Methods"
     },
     {
       "id": "dictionary-rtcdatachannelinit-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCDataChannelInit Members"
     },
     {
-      "id": "x6-3-rtcdatachannelevent",
-      "level": "3",
-      "title": "RTCDataChannelEvent"
+      "id": "rtcdatachannelevent",
+      "level": 3,
+      "title": "RTCDataChannelEvent",
+      "number": "6.3"
     },
     {
       "id": "constructors-5",
-      "level": "4",
+      "level": 4,
       "title": "Constructors"
     },
     {
       "id": "attributes-18",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
       "id": "dictionary-rtcdatachanneleventinit-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCDataChannelEventInit Members"
     },
     {
-      "id": "x6-4-garbage-collection",
-      "level": "3",
-      "title": "Garbage Collection"
+      "id": "garbage-collection-0",
+      "level": 3,
+      "title": "Garbage Collection",
+      "number": "6.4"
     },
     {
-      "id": "x7-peer-to-peer-dtmf",
-      "level": "2",
-      "title": "Peer-to-peer DTMF"
+      "id": "peer-to-peer-dtmf",
+      "level": 2,
+      "title": "Peer-to-peer DTMF",
+      "number": "7"
     },
     {
-      "id": "x7-1-rtcrtpsender-interface-extensions",
-      "level": "3",
-      "title": "RTCRtpSender Interface Extensions"
+      "id": "rtcrtpsender-interface-extensions",
+      "level": 3,
+      "title": "RTCRtpSender Interface Extensions",
+      "number": "7.1"
     },
     {
       "id": "attributes-19",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
-      "id": "x7-2-rtcdtmfsender",
-      "level": "3",
-      "title": "RTCDTMFSender"
+      "id": "rtcdtmfsender",
+      "level": 3,
+      "title": "RTCDTMFSender",
+      "number": "7.2"
     },
     {
       "id": "attributes-20",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
       "id": "methods-13",
-      "level": "4",
+      "level": 4,
       "title": "Methods"
     },
     {
-      "id": "x7-3-caninsertdtmf-algorithm",
-      "level": "3",
-      "title": "canInsertDTMF algorithm"
+      "id": "caninsertdtmf-algorithm",
+      "level": 3,
+      "title": "canInsertDTMF algorithm",
+      "number": "7.3"
     },
     {
-      "id": "x7-4-rtcdtmftonechangeevent",
-      "level": "3",
-      "title": "RTCDTMFToneChangeEvent"
+      "id": "rtcdtmftonechangeevent",
+      "level": 3,
+      "title": "RTCDTMFToneChangeEvent",
+      "number": "7.4"
     },
     {
       "id": "constructors-6",
-      "level": "4",
+      "level": 4,
       "title": "Constructors"
     },
     {
       "id": "attributes-21",
-      "level": "4",
+      "level": 4,
       "title": "Attributes"
     },
     {
       "id": "dictionary-rtcdtmftonechangeeventinit-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCDTMFToneChangeEventInit Members"
     },
     {
-      "id": "sec.stats-model",
-      "level": "2",
-      "title": "Statistics Model"
+      "id": "statistics-model",
+      "level": 2,
+      "title": "Statistics Model",
+      "number": "8"
     },
     {
-      "id": "x8-1-introduction",
-      "level": "3",
-      "title": "Introduction"
+      "id": "introduction-0",
+      "level": 3,
+      "title": "Introduction",
+      "number": "8.1"
     },
     {
-      "id": "x8-2-rtcpeerconnection-interface-extensions",
-      "level": "3",
-      "title": "RTCPeerConnection Interface Extensions"
+      "id": "rtcpeerconnection-interface-extensions-1",
+      "level": 3,
+      "title": "RTCPeerConnection Interface Extensions",
+      "number": "8.2"
     },
     {
       "id": "methods-14",
-      "level": "4",
+      "level": 4,
       "title": "Methods"
     },
     {
-      "id": "x8-3-rtcstatsreport-object",
-      "level": "3",
-      "title": "RTCStatsReport Object"
+      "id": "rtcstatsreport-object",
+      "level": 3,
+      "title": "RTCStatsReport Object",
+      "number": "8.3"
     },
     {
-      "id": "x8-4-rtcstats-dictionary",
-      "level": "3",
-      "title": "RTCStats Dictionary"
+      "id": "rtcstats-dictionary",
+      "level": 3,
+      "title": "RTCStats Dictionary",
+      "number": "8.4"
     },
     {
       "id": "dictionary-rtcstats-members",
-      "level": "4",
+      "level": 4,
       "title": "Dictionary RTCStats Members"
     },
     {
-      "id": "x8-5-the-stats-selection-algorithm",
-      "level": "3",
-      "title": "The stats selection algorithm"
+      "id": "the-stats-selection-algorithm",
+      "level": 3,
+      "title": "The stats selection algorithm",
+      "number": "8.5"
     },
     {
-      "id": "x8-6-mandatory-to-implement-stats",
-      "level": "3",
-      "title": "Mandatory To Implement Stats"
+      "id": "mandatory-to-implement-stats",
+      "level": 3,
+      "title": "Mandatory To Implement Stats",
+      "number": "8.6"
     },
     {
-      "id": "x8-7-getstats-example",
-      "level": "3",
-      "title": "GetStats Example"
+      "id": "getstats-example",
+      "level": 3,
+      "title": "GetStats Example",
+      "number": "8.7"
     },
     {
-      "id": "x9-media-stream-api-extensions-for-network-use",
-      "level": "2",
-      "title": "Media Stream API Extensions for Network Use"
+      "id": "media-stream-api-extensions-for-network-use",
+      "level": 2,
+      "title": "Media Stream API Extensions for Network Use",
+      "number": "9"
     },
     {
-      "id": "x9-1-introduction",
-      "level": "3",
-      "title": "Introduction"
+      "id": "introduction-1",
+      "level": 3,
+      "title": "Introduction",
+      "number": "9.1"
     },
     {
-      "id": "mediastream-network-use",
-      "level": "3",
-      "title": "MediaStream"
+      "id": "mediastream",
+      "level": 3,
+      "title": "MediaStream",
+      "number": "9.2"
     },
     {
-      "id": "x9-2-1-id",
-      "level": "4",
-      "title": "id"
+      "id": "id",
+      "level": 4,
+      "title": "id",
+      "number": "9.2.1"
     },
     {
-      "id": "mediastreamtrack-network-use",
-      "level": "3",
-      "title": "MediaStreamTrack"
+      "id": "mediastreamtrack",
+      "level": 3,
+      "title": "MediaStreamTrack",
+      "number": "9.3"
     },
     {
-      "id": "x9-3-1-mediatracksupportedconstraints-mediatrackcapabilities-mediatrackconstraints-and-mediatracksettings",
-      "level": "4",
-      "title": "MediaTrackSupportedConstraints, MediaTrackCapabilities,\n            MediaTrackConstraints and MediaTrackSettings"
+      "id": "mediatracksupportedconstraints-mediatrackcapabilities-mediatrackconstraints-and-mediatracksettings",
+      "level": 4,
+      "title": "MediaTrackSupportedConstraints, MediaTrackCapabilities, MediaTrackConstraints and MediaTrackSettings",
+      "number": "9.3.1"
     },
     {
-      "id": "x10-examples-and-call-flows",
-      "level": "2",
-      "title": "Examples and Call Flows"
+      "id": "examples-and-call-flows",
+      "level": 2,
+      "title": "10. Examples and Call Flows"
     },
     {
-      "id": "x10-1-simple-peer-to-peer-example",
-      "level": "3",
-      "title": "Simple Peer-to-peer Example"
+      "id": "simple-peer-to-peer-example",
+      "level": 3,
+      "title": "Simple Peer-to-peer Example",
+      "number": "10.1"
     },
     {
-      "id": "x10-2-advanced-peer-to-peer-example-with-warm-up",
-      "level": "3",
-      "title": "Advanced Peer-to-peer Example with Warm-up"
+      "id": "advanced-peer-to-peer-example-with-warm-up",
+      "level": 3,
+      "title": "Advanced Peer-to-peer Example with Warm-up",
+      "number": "10.2"
     },
     {
-      "id": "x10-3-simulcast-example",
-      "level": "3",
-      "title": "Simulcast Example"
+      "id": "simulcast-example",
+      "level": 3,
+      "title": "Simulcast Example",
+      "number": "10.3"
     },
     {
-      "id": "x10-4-peer-to-peer-data-example",
-      "level": "3",
-      "title": "Peer-to-peer Data Example"
+      "id": "peer-to-peer-data-example",
+      "level": 3,
+      "title": "Peer-to-peer Data Example",
+      "number": "10.4"
     },
     {
-      "id": "x10-5-call-flow-browser-to-browser",
-      "level": "3",
-      "title": "Call Flow Browser to Browser"
+      "id": "call-flow-browser-to-browser",
+      "level": 3,
+      "title": "Call Flow Browser to Browser",
+      "number": "10.5"
     },
     {
-      "id": "x10-6-dtmf-example",
-      "level": "3",
-      "title": "DTMF Example"
+      "id": "dtmf-example",
+      "level": 3,
+      "title": "DTMF Example",
+      "number": "10.6"
     },
     {
-      "id": "x10-7-perfect-negotiation-example",
-      "level": "3",
-      "title": "Perfect Negotiation Example"
+      "id": "perfect-negotiation-example",
+      "level": 3,
+      "title": "Perfect Negotiation Example",
+      "number": "10.7"
     },
     {
-      "id": "x11-error-handling",
-      "level": "2",
-      "title": "Error Handling"
+      "id": "error-handling-0",
+      "level": 2,
+      "title": "11. Error Handling"
     },
     {
-      "id": "x11-1-rtcerror-interface",
-      "level": "3",
-      "title": "RTCError Interface"
+      "id": "rtcerror-interface",
+      "level": 3,
+      "title": "RTCError Interface",
+      "number": "11.1"
     },
     {
-      "id": "x11-1-1-constructors",
-      "level": "4",
-      "title": "Constructors"
+      "id": "constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "11.1.1"
     },
     {
-      "id": "x11-1-2-attributes",
-      "level": "4",
-      "title": "Attributes"
+      "id": "attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "11.1.2"
     },
     {
       "id": "rtcerrorinit-dictionary",
-      "level": "3",
+      "level": 3,
       "title": "RTCErrorInit Dictionary"
     },
     {
-      "id": "x11-2-rtcerrordetailtype-enum",
-      "level": "3",
-      "title": "RTCErrorDetailType Enum"
+      "id": "rtcerrordetailtype-enum",
+      "level": 3,
+      "title": "RTCErrorDetailType Enum",
+      "number": "11.2"
     },
     {
-      "id": "x11-3-rtcerrorevent-interface",
-      "level": "3",
-      "title": "RTCErrorEvent Interface"
+      "id": "rtcerrorevent-interface",
+      "level": 3,
+      "title": "RTCErrorEvent Interface",
+      "number": "11.3"
     },
     {
-      "id": "x11-3-1-constructors",
-      "level": "4",
-      "title": "Constructors"
+      "id": "constructors-0",
+      "level": 4,
+      "title": "Constructors",
+      "number": "11.3.1"
     },
     {
-      "id": "x11-3-2-attributes",
-      "level": "4",
-      "title": "Attributes"
+      "id": "attributes-0",
+      "level": 4,
+      "title": "Attributes",
+      "number": "11.3.2"
     },
     {
-      "id": "x11-4-rtcerroreventinit-dictionary",
-      "level": "3",
-      "title": "RTCErrorEventInit Dictionary"
+      "id": "rtcerroreventinit-dictionary",
+      "level": 3,
+      "title": "RTCErrorEventInit Dictionary",
+      "number": "11.4"
     },
     {
-      "id": "x11-4-1-dictionary-rtcerroreventinit-members",
-      "level": "4",
-      "title": "Dictionary RTCErrorEventInit Members"
+      "id": "dictionary-rtcerroreventinit-members",
+      "level": 4,
+      "title": "Dictionary RTCErrorEventInit Members",
+      "number": "11.4.1"
     },
     {
-      "id": "x12-event-summary",
-      "level": "2",
-      "title": "Event summary"
+      "id": "event-summary",
+      "level": 2,
+      "title": "12. Event summary"
     },
     {
-      "id": "x13-privacy-and-security-considerations",
-      "level": "2",
-      "title": "Privacy and Security Considerations"
+      "id": "privacy-and-security-considerations",
+      "level": 2,
+      "title": "13. Privacy and Security Considerations"
     },
     {
-      "id": "x13-1-impact-on-same-origin-policy",
-      "level": "3",
-      "title": "Impact on same origin policy"
+      "id": "impact-on-same-origin-policy",
+      "level": 3,
+      "title": "Impact on same origin policy",
+      "number": "13.1"
     },
     {
-      "id": "x13-2-revealing-ip-addresses",
-      "level": "3",
-      "title": "Revealing IP addresses"
+      "id": "revealing-ip-addresses",
+      "level": 3,
+      "title": "Revealing IP addresses",
+      "number": "13.2"
     },
     {
-      "id": "x13-3-impact-on-local-network",
-      "level": "3",
-      "title": "Impact on local network"
+      "id": "impact-on-local-network",
+      "level": 3,
+      "title": "Impact on local network",
+      "number": "13.3"
     },
     {
-      "id": "x13-4-confidentiality-of-communications",
-      "level": "3",
-      "title": "Confidentiality of Communications"
+      "id": "confidentiality-of-communications",
+      "level": 3,
+      "title": "Confidentiality of Communications",
+      "number": "13.4"
     },
     {
-      "id": "x13-5-persistent-information-exposed-by-webrtc",
-      "level": "3",
-      "title": "Persistent information exposed by WebRTC"
+      "id": "persistent-information-exposed-by-webrtc",
+      "level": 3,
+      "title": "Persistent information exposed by WebRTC",
+      "number": "13.5"
     },
     {
-      "id": "x13-6-setting-sdp-from-remote-endpoints",
-      "level": "3",
-      "title": "Setting SDP from remote endpoints"
+      "id": "setting-sdp-from-remote-endpoints",
+      "level": 3,
+      "title": "Setting SDP from remote endpoints",
+      "number": "13.6"
     },
     {
-      "id": "x14-accessibility-considerations",
-      "level": "2",
-      "title": "Accessibility Considerations"
+      "id": "accessibility-considerations",
+      "level": 2,
+      "title": "14. Accessibility Considerations"
     },
     {
-      "id": "a-acknowledgements",
-      "level": "2",
-      "title": "A. \n        Acknowledgements"
+      "id": "acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "A"
     },
     {
-      "id": "b-references",
-      "level": "2",
-      "title": "B. References"
+      "id": "references",
+      "level": 2,
+      "title": "References",
+      "number": "B"
     },
     {
-      "id": "b-1-normative-references",
-      "level": "3",
-      "title": "B.1 Normative references"
+      "id": "normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "B.1"
     },
     {
-      "id": "b-2-informative-references",
-      "level": "3",
-      "title": "B.2 Informative references"
+      "id": "informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "B.2"
     }
   ]
 }

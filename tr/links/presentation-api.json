@@ -6,99 +6,48 @@
   "links": {
     "https://www.w3.org/TR/": [],
     "https://www.w3.org/2014/secondscreen/": [],
-    "https://lists.w3.org/Archives/Public/public-secondscreen/": [],
+    "https://www.w3.org/TR/2017/CR-presentation-api-20170601/": [],
+    "https://w3c-test.org/presentation-api/": [],
     "https://www.w3.org/wiki/Second_Screen/Implementation_Status": [
       "Tests"
     ],
-    "https://www.w3.org/TR/2016/CR-presentation-api-20160714/": [],
-    "https://w3c-test.org/presentation-api/": [],
-    "https://www.w3.org/Consortium/Patent-Policy-20040205/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/74168/status": [],
-    "https://www.w3.org/2017/Process-20170301/": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
     "https://www.w3.org/community/webscreens/": [],
     "https://github.com/w3c/presentation-api/blob/gh-pages/uc-req.md": [
       "nf-req01-power-saving-friendly"
     ],
-    "https://www.w3.org/TR/html51/": [
-      "active-sandboxing-flag-set",
-      "allowed-to-show-a-popup",
-      "application-cache-manifest",
-      "browsing-context",
-      "creating-a-new-browsing-context",
-      "current",
-      "current-settings-object",
-      "a-browsing-context-is-discarded",
-      "events-event-handlers",
-      "event-handler",
-      "event-handler-event-type",
-      "fire",
-      "firing-a-simple-event-named-e",
-      "in-parallel",
-      "list-of-the-descendant-browsing-contexts",
-      "navigated",
-      "navigator-navigator",
-      "nested-browsing-contexts",
-      "parse-the-sandboxing-directive",
-      "queuing",
-      "relevant-settings-object",
-      "responsible-browsing-context",
-      "sandboxed-auxiliary-navigation-browsing-context-flag",
-      "sandboxed-top-level-navigation-browsing-context-flag",
-      "sandboxed-modals-flag",
-      "sandboxing-flag-set",
-      "session-history",
-      "task-source",
-      "top-level-browsing-context",
-      "trusted",
-      "unloaded"
-    ],
-    "https://www.w3.org/TR/html52/": [
-      "sandboxed-presentation-browsing-context-flag"
-    ],
-    "https://tc39.github.io/ecma262/": [
-      "sec-code-realms"
-    ],
-    "https://dom.spec.whatwg.org/": [
-      "eventtarget",
-      "event",
-      "dictdef-eventinit"
-    ],
-    "https://www.w3.org/TR/webmessaging/": [
-      "messageevent"
+    "https://tools.ietf.org/html/bcp14": [],
+    "https://tc39.es/ecma262/": [
+      "sec-code-realms",
+      "current-realm"
     ],
     "https://heycam.github.io/webidl/": [
-      "dfn-throw",
       "idl-promise",
-      "idl-ArrayBuffer",
-      "ArrayBufferView",
-      "invalidaccesserror",
-      "notfounderror",
-      "notsupportederror",
-      "operationerror",
-      "securityerror",
-      "syntaxerror",
-      "notallowederror",
       "SecureContext",
       "SameObject",
-      "Constructor",
+      "Exposed",
       "idl-USVString",
       "idl-sequence",
+      "securityerror",
+      "dfn-throw",
+      "notsupportederror",
+      "syntaxerror",
+      "invalidaccesserror",
+      "operationerror",
+      "notfounderror",
+      "notallowederror",
       "idl-boolean",
       "idl-DOMString",
+      "idl-undefined",
+      "idl-ArrayBuffer",
+      "ArrayBufferView",
+      "invalidstateerror",
       "idl-frozen-array"
-    ],
-    "https://www.w3.org/2001/tag/doc/promises-guide": [
-      "resolve-promise",
-      "reject-promise"
-    ],
-    "https://url.spec.whatwg.org/": [
-      "url"
-    ],
-    "https://w3c.github.io/FileAPI/": [
-      "blob"
     ],
     "https://tools.ietf.org/html/rfc7231": [
       "section-5.3.5"
@@ -106,36 +55,101 @@
     "https://tools.ietf.org/html/rfc7235": [
       "section-2"
     ],
-    "https://www.w3.org/TR/webrtc/": [
-      "idl-def-rtcdatachannel"
-    ],
     "https://tools.ietf.org/html/rfc6265": [
       "section-4.2"
     ],
     "https://tools.ietf.org/html/rfc4122": [],
-    "https://w3c.github.io/permissions/": [
-      "permission-descriptor-type",
-      "permission-state"
+    "https://www.dial-multiscreen.org/": [],
+    "https://dom.spec.whatwg.org/": [
+      "event",
+      "dom-event-istrusted",
+      "eventtarget",
+      "concept-event-fire",
+      "dictdef-eventinit"
+    ],
+    "https://html.spec.whatwg.org/": [
+      "dom-location-reload",
+      "dom-localstorage",
+      "dom-sessionstorage",
+      "parse-a-url",
+      "list-of-the-descendant-browsing-contexts",
+      "creating-a-new-browsing-context",
+      "session-history",
+      "allowed-to-navigate",
+      "navigate-fragid",
+      "browsing-context",
+      "task-source",
+      "navigator",
+      "window",
+      "nested-browsing-context",
+      "eventhandler",
+      "active-sandboxing-flag-set",
+      "sandboxed-presentation-browsing-context-flag",
+      "current-settings-object",
+      "active-window",
+      "transient-activation",
+      "top-level-browsing-context",
+      "in-parallel",
+      "queue-a-task",
+      "event-handlers",
+      "event-handler-event-type",
+      "binarytype",
+      "messageevent",
+      "unload-a-document",
+      "navigate",
+      "a-browsing-context-is-discarded",
+      "sandboxed-modals-flag",
+      "sandboxed-auxiliary-navigation-browsing-context-flag",
+      "application-cache",
+      "sandboxed-top-level-navigation-without-user-activation-browsing-context-flag"
     ],
     "https://www.w3.org/TR/IndexedDB/": [
-      "database-concept"
+      "database"
     ],
-    "https://www.w3.org/TR/webstorage/": [
-      "the-localstorage-attribute",
-      "the-sessionstorage-attribute"
+    "https://url.spec.whatwg.org/": [
+      "concept-url"
     ],
-    "https://w3c.github.io/webappsec-mixed-content/": [
+    "https://www.w3.org/TR/mixed-content/": [
       "a-priori-authenticated-url"
     ],
-    "https://www.w3.org/TR/service-workers-1/": [
-      "dfn-service-worker",
-      "service-worker-registration-lifetime",
-      "cache-objects",
-      "dfn-window-client",
-      "dfn-worker-client"
-    ],
-    "https://www.dial-multiscreen.org/": [],
     "https://nfc-forum.org/": [],
+    "https://www.w3.org/TR/FileAPI/": [
+      "dfn-Blob"
+    ],
+    "https://www.w3.org/TR/webrtc/": [
+      "dom-rtcdatachannel"
+    ],
+    "https://www.w3.org/TR/permissions/": [
+      "permission-state",
+      "permission-descriptor-type"
+    ],
+    "https://www.w3.org/TR/service-workers-1/": [
+      "dfn-service-worker-registration",
+      "cache",
+      "dfn-window-client",
+      "dfn-worker-client",
+      "dfn-service-worker"
+    ],
+    "https://github.com/w3c/presentation-api/issues/473": [],
+    "https://github.com/w3c/presentation-api/issues/469": [],
+    "https://github.com/w3c/presentation-api/issues/461": [],
+    "https://github.com/w3c/presentation-api/issues/460": [],
+    "https://github.com/w3c/presentation-api/issues/453": [],
+    "https://github.com/w3c/presentation-api/issues/447": [],
+    "https://github.com/w3c/presentation-api/issues/434": [],
+    "https://github.com/w3c/presentation-api/issues/438": [],
+    "https://github.com/w3c/presentation-api/issues/429": [],
+    "https://github.com/w3c/presentation-api/issues/431": [],
+    "https://github.com/w3c/presentation-api/issues/432": [],
+    "https://github.com/w3c/presentation-api/issues/433": [],
+    "https://github.com/w3c/presentation-api/issues/441": [],
+    "https://github.com/w3c/presentation-api/issues/442": [],
+    "https://github.com/w3c/presentation-api/issues/443": [],
+    "https://github.com/w3c/presentation-api/issues/454": [],
+    "https://github.com/w3c/presentation-api/issues/465": [],
+    "https://github.com/w3c/presentation-api/issues/482": [],
+    "https://github.com/w3c/presentation-api/issues/483": [],
+    "https://github.com/w3c/presentation-api/issues/486": [],
     "https://github.com/w3c/presentation-api/pull/428": [],
     "https://github.com/w3c/presentation-api/issues/421": [],
     "https://github.com/w3c/presentation-api/issues/423": [],
@@ -183,10 +197,11 @@
     "https://github.com/w3c/presentation-api/issues/363": [],
     "https://github.com/w3c/presentation-api/issues/366": [],
     "https://github.com/w3c/presentation-api/issues/397": [],
-    "https://www.w3.org/TR/FileAPI/": [],
-    "https://www.w3.org/TR/mixed-content/": [],
-    "https://www.w3.org/TR/permissions/": [],
+    "https://httpwg.org/specs/rfc6265.html": [],
+    "https://www.dial-multiscreen.org/dial-protocol-specification": [],
     "https://tools.ietf.org/html/rfc2119": [],
-    "https://www.dial-multiscreen.org/dial-protocol-specification": []
+    "https://httpwg.org/specs/rfc7231.html": [],
+    "https://httpwg.org/specs/rfc7235.html": [],
+    "https://tools.ietf.org/html/rfc8174": []
   }
 }

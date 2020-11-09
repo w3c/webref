@@ -5,8 +5,22 @@
   },
   "idlparsed": {
     "jsNames": {
-      "constructors": {},
-      "functions": {}
+      "constructors": {
+        "Window": [
+          "PresentationRequest",
+          "PresentationConnectionAvailableEvent",
+          "PresentationConnectionCloseEvent"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "Presentation",
+          "PresentationAvailability",
+          "PresentationConnection",
+          "PresentationReceiver",
+          "PresentationConnectionList"
+        ]
+      }
     },
     "idlNames": {
       "Presentation": {
@@ -20,6 +34,15 @@
             "name": "SecureContext",
             "rhs": null,
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
           }
         ],
         "partial": false
@@ -29,6 +52,59 @@
         "name": "PresentationRequest",
         "inheritance": "EventTarget",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "url",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "urls",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "USVString"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "operation",
             "name": "start",
@@ -143,58 +219,12 @@
           },
           {
             "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "url",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ]
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "urls",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "sequence",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": [
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "USVString"
-                    }
-                  ]
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ]
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
           }
         ],
         "partial": false
@@ -241,6 +271,15 @@
             "name": "SecureContext",
             "rhs": null,
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
           }
         ],
         "partial": false
@@ -251,39 +290,7 @@
         "inheritance": "Event",
         "members": [
           {
-            "type": "attribute",
-            "name": "connection",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "PresentationConnection"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
+            "type": "constructor",
             "arguments": [
               {
                 "type": "argument",
@@ -317,7 +324,47 @@
                 "optional": false,
                 "variadic": false
               }
-            ]
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "connection",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PresentationConnection"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
           }
         ],
         "partial": false
@@ -365,21 +412,6 @@
           {
             "type": "enum-value",
             "value": "terminated"
-          }
-        ],
-        "extAttrs": []
-      },
-      "BinaryType": {
-        "type": "enum",
-        "name": "BinaryType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "blob"
-          },
-          {
-            "type": "enum-value",
-            "value": "arraybuffer"
           }
         ],
         "extAttrs": []
@@ -443,7 +475,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -458,7 +490,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -548,7 +580,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -580,7 +612,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -612,7 +644,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -644,7 +676,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -674,6 +706,15 @@
             "name": "SecureContext",
             "rhs": null,
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
           }
         ],
         "partial": false
@@ -702,6 +743,44 @@
         "name": "PresentationConnectionCloseEvent",
         "inheritance": "Event",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PresentationConnectionCloseEventInit"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "attribute",
             "name": "reason",
@@ -742,42 +821,12 @@
           },
           {
             "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "type",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "eventInitDict",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "PresentationConnectionCloseEventInit"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ]
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
           }
         ],
         "partial": false
@@ -860,6 +909,15 @@
             "name": "SecureContext",
             "rhs": null,
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
           }
         ],
         "partial": false
@@ -914,6 +972,15 @@
             "type": "extended-attribute",
             "name": "SecureContext",
             "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
             "arguments": []
           }
         ],
@@ -1012,7 +1079,18 @@
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "Presentation",
+        "PresentationRequest",
+        "PresentationAvailability",
+        "PresentationConnectionAvailableEvent",
+        "PresentationConnection",
+        "PresentationConnectionCloseEvent",
+        "PresentationReceiver",
+        "PresentationConnectionList"
+      ]
+    },
     "dependencies": {
       "Navigator": [
         "Presentation"
@@ -1043,6 +1121,7 @@
       "PresentationConnection": [
         "EventTarget",
         "PresentationConnectionState",
+        "undefined",
         "EventHandler",
         "BinaryType",
         "Blob"
@@ -1071,6 +1150,8 @@
       "EventHandler",
       "Event",
       "EventInit",
+      "undefined",
+      "BinaryType",
       "Blob"
     ],
     "hasObsoleteIdl": false
