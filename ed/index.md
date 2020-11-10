@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% November 09, 2020
+% November 10, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -922,7 +922,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/CSS21/](https://www.w3.org/TR/CSS21/)
 - Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Crawled version: 7 July 2020
+- Crawled version: 9 July 2020
 - Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
 - Latest published version: [https://www.w3.org/TR/CSS2/](https://www.w3.org/TR/CSS2/)
 - Shortname: CSS21
@@ -1063,7 +1063,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
 - Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Crawled version: 7 July 2020
+- Crawled version: 9 July 2020
 - Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
 - Latest published version: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
 - Shortname: CSS22
@@ -2879,7 +2879,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
 - Crawled URL: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
-- Crawled version: 13 October 2020
+- Crawled version: 9 November 2020
 - Editor's Draft: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
 - Latest published version: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
 - Shortname: css-images-3
@@ -2936,7 +2936,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Crawled URL: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
-- Crawled version: 18 September 2020
+- Crawled version: 9 November 2020
 - Editor's Draft: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
 - Latest published version: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Shortname: css-images-4
@@ -3364,7 +3364,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
 - Crawled URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
-- Crawled version: 29 October 2020
+- Crawled version: 9 November 2020
 - Editor's Draft: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
 - Shortname: css-nesting-1
 
@@ -5012,7 +5012,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Crawled URL: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
-- Crawled version: 6 November 2020
+- Crawled version: 9 November 2020
 - Editor's Draft: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
 - Latest published version: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Shortname: css-values-4
@@ -6540,7 +6540,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 6 November 2020
+- Crawled version: 9 November 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -9646,7 +9646,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Crawled URL: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
-- Crawled version: 14 September 2020
+- Crawled version: 30 August 2019
 - Editor's Draft: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
 - Latest published version: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Shortname: selectors-4
@@ -10400,6 +10400,28 @@ Normative references to this spec from:
 - [UI Events](https://w3c.github.io/uievents/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [WebDriver](https://w3c.github.io/webdriver/)
+
+No informative reference to this spec from other specs.
+
+
+## Unicorn! · GitHub {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/wasm-core-1/](https://www.w3.org/TR/wasm-core-1/)
+- Crawled URL: [https://webassembly.github.io/spec/core/bikeshed/](https://webassembly.github.io/spec/core/bikeshed/)
+- Crawled version: 10 November 2020
+- Editor's Draft: [https://webassembly.github.io/spec/core/bikeshed/](https://webassembly.github.io/spec/core/bikeshed/)
+- Latest published version: [https://www.w3.org/TR/wasm-core-1/](https://www.w3.org/TR/wasm-core-1/)
+- Shortname: wasm-core-1
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -11297,31 +11319,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `undefined`
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## WebAssembly Core Specification {data-spec=true data-anomaly=true data-missingLinkRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/wasm-core-1/](https://www.w3.org/TR/wasm-core-1/)
-- Crawled URL: [https://webassembly.github.io/spec/core/bikeshed/](https://webassembly.github.io/spec/core/bikeshed/)
-- Crawled version: 2 November 2020
-- Editor's Draft: [https://webassembly.github.io/spec/core/bikeshed/](https://webassembly.github.io/spec/core/bikeshed/)
-- Latest published version: [https://www.w3.org/TR/wasm-core-1/](https://www.w3.org/TR/wasm-core-1/)
-- Shortname: wasm-core-1
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/)
-     * [`https://www.w3.org/TR/wasm-js-api/`](https://www.w3.org/TR/wasm-js-api/)
-     * [`https://www.w3.org/TR/wasm-web-api/`](https://www.w3.org/TR/wasm-web-api/)
 
 ### Known dependencies on this specification {.dependencies}
 
