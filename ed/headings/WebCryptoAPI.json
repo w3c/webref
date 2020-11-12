@@ -5,9 +5,996 @@
   },
   "headings": [
     {
+      "id": "title",
+      "level": 1,
+      "title": "Web Cryptography API"
+    },
+    {
       "id": "toc",
       "level": 2,
       "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "use-cases",
+      "level": 2,
+      "title": "Use Cases",
+      "number": "2"
+    },
+    {
+      "id": "multifactor-authentication",
+      "level": 3,
+      "title": "Multi-factor Authentication",
+      "number": "2.1"
+    },
+    {
+      "id": "protected-document",
+      "level": 3,
+      "title": "Protected Document Exchange",
+      "number": "2.2"
+    },
+    {
+      "id": "cloud-storage",
+      "level": 3,
+      "title": "Cloud Storage",
+      "number": "2.3"
+    },
+    {
+      "id": "document-signing",
+      "level": 3,
+      "title": "Document Signing",
+      "number": "2.4"
+    },
+    {
+      "id": "data-integrity-protection",
+      "level": 3,
+      "title": "Data Integrity Protection",
+      "number": "2.5"
+    },
+    {
+      "id": "secure-messaging",
+      "level": 3,
+      "title": "Secure Messaging",
+      "number": "2.6"
+    },
+    {
+      "id": "jose",
+      "level": 3,
+      "title": "JavaScript Object Signing and Encryption (JOSE)",
+      "number": "2.7"
+    },
+    {
+      "id": "conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "3"
+    },
+    {
+      "id": "extensibility",
+      "level": 3,
+      "title": "Extensibility",
+      "number": "3.1"
+    },
+    {
+      "id": "scope",
+      "level": 2,
+      "title": "Scope",
+      "number": "4"
+    },
+    {
+      "id": "scope-abstraction",
+      "level": 3,
+      "title": "Level of abstraction",
+      "number": "4.1"
+    },
+    {
+      "id": "scope-algorithms",
+      "level": 3,
+      "title": "Cryptographic algorithms",
+      "number": "4.2"
+    },
+    {
+      "id": "scope-out-of-scope",
+      "level": 3,
+      "title": "Out of scope",
+      "number": "4.3"
+    },
+    {
+      "id": "concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "5"
+    },
+    {
+      "id": "concepts-underlying-implementation",
+      "level": 3,
+      "title": "Underlying Cryptographic Implementation",
+      "number": "5.1"
+    },
+    {
+      "id": "concepts-key-storage",
+      "level": 3,
+      "title": "Key Storage",
+      "number": "5.2"
+    },
+    {
+      "id": "security-considerations",
+      "level": 2,
+      "title": "Security considerations",
+      "number": "6"
+    },
+    {
+      "id": "security-implementers",
+      "level": 3,
+      "title": "Security considerations for implementers",
+      "number": "6.1"
+    },
+    {
+      "id": "security-developers",
+      "level": 3,
+      "title": "Security considerations for authors",
+      "number": "6.2"
+    },
+    {
+      "id": "security-users",
+      "level": 3,
+      "title": "Security considerations for users",
+      "number": "6.3"
+    },
+    {
+      "id": "privacy",
+      "level": 2,
+      "title": "Privacy considerations",
+      "number": "7"
+    },
+    {
+      "id": "dependencies",
+      "level": 2,
+      "title": "Dependencies",
+      "number": "8"
+    },
+    {
+      "id": "terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "9"
+    },
+    {
+      "id": "crypto-interface",
+      "level": 2,
+      "title": "10. Crypto interface"
+    },
+    {
+      "id": "Crypto-description",
+      "level": 3,
+      "title": "Description",
+      "number": "10.1"
+    },
+    {
+      "id": "Crypto-interface-methods",
+      "level": 3,
+      "title": "Methods and Parameters",
+      "number": "10.2"
+    },
+    {
+      "id": "Crypto-method-getRandomValues",
+      "level": 4,
+      "title": "The getRandomValues method",
+      "number": "10.2.1"
+    },
+    {
+      "id": "Crypto-interface-attributes",
+      "level": 3,
+      "title": "Attributes",
+      "number": "10.3"
+    },
+    {
+      "id": "Crypto-attribute-subtle",
+      "level": 4,
+      "title": "The subtle attribute",
+      "number": "10.3.1"
+    },
+    {
+      "id": "algorithm-dictionary",
+      "level": 2,
+      "title": "11. Algorithm dictionary"
+    },
+    {
+      "id": "algorithm-dictionary-members",
+      "level": 3,
+      "title": "Algorithm Dictionary Members",
+      "number": "11.1"
+    },
+    {
+      "id": "key-algorithm-dictionary",
+      "level": 2,
+      "title": "12. KeyAlgorithm dictionary"
+    },
+    {
+      "id": "key-algorithm-dictionary-description",
+      "level": 3,
+      "title": "Description",
+      "number": "12.1"
+    },
+    {
+      "id": "key-algorithm-dictionary-members",
+      "level": 3,
+      "title": "KeyAlgorithm dictionary members",
+      "number": "12.2"
+    },
+    {
+      "id": "cryptokey-interface",
+      "level": 2,
+      "title": "13. CryptoKey interface"
+    },
+    {
+      "id": "cryptokey-interface-description",
+      "level": 3,
+      "title": "Description",
+      "number": "13.1"
+    },
+    {
+      "id": "cryptokey-interface-types",
+      "level": 3,
+      "title": "Key interface data types",
+      "number": "13.2"
+    },
+    {
+      "id": "cryptokey-interface-internal-slots",
+      "level": 3,
+      "title": "CryptoKey internal slots",
+      "number": "13.3"
+    },
+    {
+      "id": "cryptokey-interface-members",
+      "level": 3,
+      "title": "CryptoKey interface members",
+      "number": "13.4"
+    },
+    {
+      "id": "cryptokey-interface-clone",
+      "level": 3,
+      "title": "Structured clone algorithm",
+      "number": "13.5"
+    },
+    {
+      "id": "subtlecrypto-interface",
+      "level": 2,
+      "title": "14. SubtleCrypto interface"
+    },
+    {
+      "id": "subtlecrypto-interface-description",
+      "level": 3,
+      "title": "Description",
+      "number": "14.1"
+    },
+    {
+      "id": "subtlecrypto-interface-datatypes",
+      "level": 3,
+      "title": "Data Types",
+      "number": "14.2"
+    },
+    {
+      "id": "subtlecrypto-interface-methods",
+      "level": 3,
+      "title": "Methods and Parameters",
+      "number": "14.3"
+    },
+    {
+      "id": "SubtleCrypto-method-encrypt",
+      "level": 4,
+      "title": "The encrypt method",
+      "number": "14.3.1"
+    },
+    {
+      "id": "SubtleCrypto-method-decrypt",
+      "level": 4,
+      "title": "The decrypt method",
+      "number": "14.3.2"
+    },
+    {
+      "id": "SubtleCrypto-method-sign",
+      "level": 4,
+      "title": "The sign method",
+      "number": "14.3.3"
+    },
+    {
+      "id": "SubtleCrypto-method-verify",
+      "level": 4,
+      "title": "The verify method",
+      "number": "14.3.4"
+    },
+    {
+      "id": "SubtleCrypto-method-digest",
+      "level": 4,
+      "title": "The digest method",
+      "number": "14.3.5"
+    },
+    {
+      "id": "SubtleCrypto-method-generateKey",
+      "level": 4,
+      "title": "The generateKey method",
+      "number": "14.3.6"
+    },
+    {
+      "id": "SubtleCrypto-method-deriveKey",
+      "level": 4,
+      "title": "The deriveKey method",
+      "number": "14.3.7"
+    },
+    {
+      "id": "SubtleCrypto-method-deriveBits",
+      "level": 4,
+      "title": "The deriveBits method",
+      "number": "14.3.8"
+    },
+    {
+      "id": "SubtleCrypto-method-importKey",
+      "level": 4,
+      "title": "The importKey() method",
+      "number": "14.3.9"
+    },
+    {
+      "id": "SubtleCrypto-method-exportKey",
+      "level": 4,
+      "title": "The exportKey() method",
+      "number": "14.3.10"
+    },
+    {
+      "id": "SubtleCrypto-method-wrapKey",
+      "level": 4,
+      "title": "The wrapKey method",
+      "number": "14.3.11"
+    },
+    {
+      "id": "SubtleCrypto-method-unwrapKey",
+      "level": 4,
+      "title": "The unwrapKey method",
+      "number": "14.3.12"
+    },
+    {
+      "id": "SubtleCrypto-Exceptions",
+      "level": 3,
+      "title": "Exceptions",
+      "number": "14.4"
+    },
+    {
+      "id": "JsonWebKey-dictionary",
+      "level": 2,
+      "title": "15. JsonWebKey dictionary"
+    },
+    {
+      "id": "JsonWebKey-description",
+      "level": 3,
+      "title": "Description",
+      "number": "15.1"
+    },
+    {
+      "id": "big-integer",
+      "level": 2,
+      "title": "16. BigInteger"
+    },
+    {
+      "id": "keypair",
+      "level": 2,
+      "title": "17. CryptoKeyPair dictionary"
+    },
+    {
+      "id": "algorithms",
+      "level": 2,
+      "title": "18. Algorithms"
+    },
+    {
+      "id": "algorithms-section-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "18.1"
+    },
+    {
+      "id": "algorithm-concepts",
+      "level": 3,
+      "title": "Concepts",
+      "number": "18.2"
+    },
+    {
+      "id": "algorithm-concepts-naming",
+      "level": 4,
+      "title": "Naming",
+      "number": "18.2.1"
+    },
+    {
+      "id": "algorithm-concepts-operations",
+      "level": 4,
+      "title": "Supported Operations",
+      "number": "18.2.2"
+    },
+    {
+      "id": "algorithm-concepts-normalization",
+      "level": 4,
+      "title": "Normalization",
+      "number": "18.2.3"
+    },
+    {
+      "id": "algorithm-conventions",
+      "level": 3,
+      "title": "Specification Conventions",
+      "number": "18.3"
+    },
+    {
+      "id": "algorithm-normalization",
+      "level": 3,
+      "title": "Algorithm Normalization",
+      "number": "18.4"
+    },
+    {
+      "id": "algorithm-normalization-description",
+      "level": 4,
+      "title": "Description",
+      "number": "18.4.1"
+    },
+    {
+      "id": "algorithm-normalization-internal",
+      "level": 4,
+      "title": "Internal State Objects",
+      "number": "18.4.2"
+    },
+    {
+      "id": "algorithm-normalization-define-an-algorithm",
+      "level": 4,
+      "title": "Defining an Algorithm",
+      "number": "18.4.3"
+    },
+    {
+      "id": "algorithm-normalization-normalize-an-algorithm",
+      "level": 4,
+      "title": "Normalizing an algorithm",
+      "number": "18.4.4"
+    },
+    {
+      "id": "algorithm-recommendations",
+      "level": 3,
+      "title": "Recommendations",
+      "number": "18.5"
+    },
+    {
+      "id": "algorithm-recommendations-authors",
+      "level": 4,
+      "title": "For Authors",
+      "number": "18.5.1"
+    },
+    {
+      "id": "algorithm-recommendations-implementers",
+      "level": 4,
+      "title": "For Implementers",
+      "number": "18.5.2"
+    },
+    {
+      "id": "algorithm-overview",
+      "level": 2,
+      "title": "19. Algorithm Overview"
+    },
+    {
+      "id": "rsassa-pkcs1",
+      "level": 2,
+      "title": "20. RSASSA-PKCS1-v1_5"
+    },
+    {
+      "id": "rsassa-pkcs1-description",
+      "level": 3,
+      "title": "Description",
+      "number": "20.1"
+    },
+    {
+      "id": "rsassa-pkcs1-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "20.2"
+    },
+    {
+      "id": "RsaKeyGenParams-dictionary",
+      "level": 3,
+      "title": "RsaKeyGenParams dictionary",
+      "number": "20.3"
+    },
+    {
+      "id": "RsaHashedKeyGenParams-dictionary",
+      "level": 3,
+      "title": "RsaHashedKeyGenParams dictionary",
+      "number": "20.4"
+    },
+    {
+      "id": "RsaKeyAlgorithm-dictionary",
+      "level": 3,
+      "title": "RsaKeyAlgorithm dictionary",
+      "number": "20.5"
+    },
+    {
+      "id": "RsaHashedKeyAlgorithm-dictionary",
+      "level": 3,
+      "title": "RsaHashedKeyAlgorithm dictionary",
+      "number": "20.6"
+    },
+    {
+      "id": "RsaHashedImportParams-dictionary",
+      "level": 3,
+      "title": "RsaHashedImportParams dictionary",
+      "number": "20.7"
+    },
+    {
+      "id": "rsassa-pkcs1-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "20.8"
+    },
+    {
+      "id": "rsa-pss",
+      "level": 2,
+      "title": "21. RSA-PSS"
+    },
+    {
+      "id": "rsa-pss-description",
+      "level": 3,
+      "title": "Description",
+      "number": "21.1"
+    },
+    {
+      "id": "rsa-pss-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "21.2"
+    },
+    {
+      "id": "RsaPssParams-dictionary",
+      "level": 3,
+      "title": "RsaPssParams dictionary",
+      "number": "21.3"
+    },
+    {
+      "id": "rsa-pss-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "21.4"
+    },
+    {
+      "id": "rsa-oaep",
+      "level": 2,
+      "title": "22. RSA-OAEP"
+    },
+    {
+      "id": "rsa-oaep-description",
+      "level": 3,
+      "title": "Description",
+      "number": "22.1"
+    },
+    {
+      "id": "rsa-oaep-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "22.2"
+    },
+    {
+      "id": "rsa-oaep-params",
+      "level": 3,
+      "title": "RsaOaepParams dictionary",
+      "number": "22.3"
+    },
+    {
+      "id": "rsa-oaep-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "22.4"
+    },
+    {
+      "id": "ecdsa",
+      "level": 2,
+      "title": "23. ECDSA"
+    },
+    {
+      "id": "ecdsa-description",
+      "level": 3,
+      "title": "Description",
+      "number": "23.1"
+    },
+    {
+      "id": "ecdsa-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "23.2"
+    },
+    {
+      "id": "EcdsaParams-dictionary",
+      "level": 3,
+      "title": "EcdsaParams dictionary",
+      "number": "23.3"
+    },
+    {
+      "id": "EcKeyGenParams-dictionary",
+      "level": 3,
+      "title": "EcKeyGenParams dictionary",
+      "number": "23.4"
+    },
+    {
+      "id": "EcKeyAlgorithm-dictionary",
+      "level": 3,
+      "title": "EcKeyAlgorithm dictionary",
+      "number": "23.5"
+    },
+    {
+      "id": "EcKeyImportParams-dictionary",
+      "level": 3,
+      "title": "EcKeyImportParams dictionary",
+      "number": "23.6"
+    },
+    {
+      "id": "ecdsa-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "23.7"
+    },
+    {
+      "id": "ecdh",
+      "level": 2,
+      "title": "24. ECDH"
+    },
+    {
+      "id": "ecdh-description",
+      "level": 3,
+      "title": "Description",
+      "number": "24.1"
+    },
+    {
+      "id": "ecdh-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "24.2"
+    },
+    {
+      "id": "dh-EcdhKeyDeriveParams",
+      "level": 3,
+      "title": "EcdhKeyDeriveParams dictionary",
+      "number": "24.3"
+    },
+    {
+      "id": "ecdh-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "24.4"
+    },
+    {
+      "id": "aes-ctr",
+      "level": 2,
+      "title": "25. AES-CTR"
+    },
+    {
+      "id": "aes-ctr-description",
+      "level": 3,
+      "title": "Description",
+      "number": "25.1"
+    },
+    {
+      "id": "aes-ctr-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "25.2"
+    },
+    {
+      "id": "aes-ctr-params",
+      "level": 3,
+      "title": "AesCtrParams dictionary",
+      "number": "25.3"
+    },
+    {
+      "id": "AesKeyAlgorithm-dictionary",
+      "level": 3,
+      "title": "AesKeyAlgorithm dictionary",
+      "number": "25.4"
+    },
+    {
+      "id": "aes-keygen-params",
+      "level": 3,
+      "title": "AesKeyGenParams dictionary",
+      "number": "25.5"
+    },
+    {
+      "id": "aes-derivedkey-params",
+      "level": 3,
+      "title": "AesDerivedKeyParams dictionary",
+      "number": "25.6"
+    },
+    {
+      "id": "aes-ctr-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "25.7"
+    },
+    {
+      "id": "aes-cbc",
+      "level": 2,
+      "title": "26. AES-CBC"
+    },
+    {
+      "id": "aes-cbc-description",
+      "level": 3,
+      "title": "Description",
+      "number": "26.1"
+    },
+    {
+      "id": "aes-cbc-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "26.2"
+    },
+    {
+      "id": "aes-cbc-params",
+      "level": 3,
+      "title": "AesCbcParams dictionary",
+      "number": "26.3"
+    },
+    {
+      "id": "aes-cbc-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "26.4"
+    },
+    {
+      "id": "aes-gcm",
+      "level": 2,
+      "title": "27. AES-GCM"
+    },
+    {
+      "id": "aes-gcm-description",
+      "level": 3,
+      "title": "Description",
+      "number": "27.1"
+    },
+    {
+      "id": "aes-gcm-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "27.2"
+    },
+    {
+      "id": "aes-gcm-params",
+      "level": 3,
+      "title": "AesGcmParams dictionary",
+      "number": "27.3"
+    },
+    {
+      "id": "aes-gcm-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "27.4"
+    },
+    {
+      "id": "aes-kw",
+      "level": 2,
+      "title": "28. AES-KW"
+    },
+    {
+      "id": "aes-kw-description",
+      "level": 3,
+      "title": "Description",
+      "number": "28.1"
+    },
+    {
+      "id": "aes-kw-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "28.2"
+    },
+    {
+      "id": "aes-kw-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "28.3"
+    },
+    {
+      "id": "hmac",
+      "level": 2,
+      "title": "29. HMAC"
+    },
+    {
+      "id": "hmac-description",
+      "level": 3,
+      "title": "Description",
+      "number": "29.1"
+    },
+    {
+      "id": "hmac-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "29.2"
+    },
+    {
+      "id": "hmac-importparams",
+      "level": 3,
+      "title": "HmacImportParams dictionary",
+      "number": "29.3"
+    },
+    {
+      "id": "HmacKeyAlgorithm-dictionary",
+      "level": 3,
+      "title": "HmacKeyAlgorithm dictionary",
+      "number": "29.4"
+    },
+    {
+      "id": "hmac-keygen-params",
+      "level": 3,
+      "title": "HmacKeyGenParams dictionary",
+      "number": "29.5"
+    },
+    {
+      "id": "hmac-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "29.6"
+    },
+    {
+      "id": "sha",
+      "level": 2,
+      "title": "30. SHA"
+    },
+    {
+      "id": "sha-description",
+      "level": 3,
+      "title": "Description",
+      "number": "30.1"
+    },
+    {
+      "id": "sha-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "30.2"
+    },
+    {
+      "id": "sha-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "30.3"
+    },
+    {
+      "id": "hkdf",
+      "level": 2,
+      "title": "31. HKDF"
+    },
+    {
+      "id": "hkdf-description",
+      "level": 3,
+      "title": "Description",
+      "number": "31.1"
+    },
+    {
+      "id": "hkdf-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "31.2"
+    },
+    {
+      "id": "hkdf-params",
+      "level": 3,
+      "title": "HkdfParams dictionary",
+      "number": "31.3"
+    },
+    {
+      "id": "hkdf2-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "31.4"
+    },
+    {
+      "id": "pbkdf2",
+      "level": 2,
+      "title": "32. PBKDF2"
+    },
+    {
+      "id": "pbkdf2-description",
+      "level": 3,
+      "title": "Description",
+      "number": "32.1"
+    },
+    {
+      "id": "pbkdf2-registration",
+      "level": 3,
+      "title": "Registration",
+      "number": "32.2"
+    },
+    {
+      "id": "pbkdf2-params",
+      "level": 3,
+      "title": "Pbkdf2Params dictionary",
+      "number": "32.3"
+    },
+    {
+      "id": "pbkdf2-operations",
+      "level": 3,
+      "title": "Operations",
+      "number": "32.4"
+    },
+    {
+      "id": "examples-section",
+      "level": 2,
+      "title": "33. JavaScript Example Code"
+    },
+    {
+      "id": "examples-signing",
+      "level": 3,
+      "title": "Generate a signing key pair, sign some data",
+      "number": "33.1"
+    },
+    {
+      "id": "examples-symmetric-encryption",
+      "level": 3,
+      "title": "Symmetric Encryption",
+      "number": "33.2"
+    },
+    {
+      "id": "iana-section",
+      "level": 2,
+      "title": "34. IANA Considerations"
+    },
+    {
+      "id": "iana-section-jws-jwa",
+      "level": 3,
+      "title": "JSON Web Signature and Encryption Algorithms Registration",
+      "number": "34.1"
+    },
+    {
+      "id": "iana-section-jwk",
+      "level": 3,
+      "title": "JSON Web Key Parameters Registration",
+      "number": "34.2"
+    },
+    {
+      "id": "acknowledgements-section",
+      "level": 2,
+      "title": "35. Acknowledgments"
+    },
+    {
+      "id": "jwk-mapping",
+      "level": 2,
+      "title": "Mapping between JSON Web Key / JSON Web Algorithm",
+      "number": "A"
+    },
+    {
+      "id": "jwk-mapping-alg",
+      "level": 3,
+      "title": "Algorithm mappings",
+      "number": "A.1"
+    },
+    {
+      "id": "spki-mapping",
+      "level": 2,
+      "title": "Mapping between Algorithm and SubjectPublicKeyInfo",
+      "number": "B"
+    },
+    {
+      "id": "pkcs8-mapping",
+      "level": 2,
+      "title": "Mapping between Algorithm and PKCS#8 PrivateKeyInfo",
+      "number": "C"
+    },
+    {
+      "id": "references",
+      "level": 2,
+      "title": "References",
+      "number": "D"
+    },
+    {
+      "id": "normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "D.1"
+    },
+    {
+      "id": "informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "D.2"
     }
   ]
 }
