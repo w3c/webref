@@ -1,13 +1,20 @@
-% Diff between report from "November 12, 2020" and reference report from "November 11, 2020"
+% Diff between report from "November 12, 2020" and reference report from "November 12, 2020"
 % Reffy
 % November 12, 2020
 
-## Mixed Content Level 2
+## CSS Containment Module Level 2
 
-- Initial URL: [https://www.w3.org/TR/mixed-content/](https://www.w3.org/TR/mixed-content/)
+- Initial URL: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webappsec-mixed-content/](https://w3c.github.io/webappsec-mixed-content/)
-- Spec title: *INS* Mixed Content Level 2 / *DEL* Mixed Content
-- Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-csp/
+- Editor's Draft: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
+- Missing references for links: *DEL* https://www.w3.org/TR/css-pseudo-4/
+
+
+## CSS Scroll Anchoring Module Level 1
+
+- Initial URL: [https://www.w3.org/TR/css-scroll-anchoring-1/](https://www.w3.org/TR/css-scroll-anchoring-1/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://drafts.csswg.org/css-scroll-anchoring/](https://drafts.csswg.org/css-scroll-anchoring/)
+- Missing references for links: *INS* https://w3c.github.io/editing/docs/execCommand/
 
 
