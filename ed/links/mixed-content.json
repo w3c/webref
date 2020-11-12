@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Mixed Content",
+    "title": "Mixed Content Level 2",
     "url": "https://w3c.github.io/webappsec-mixed-content/"
   },
   "links": {
@@ -13,8 +13,7 @@
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/49309/status": [],
-    "https://www.w3.org/2019/Process-20190301/": [],
-    "https://twitter.com/ericlaw/status/469813922908758016": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
     "https://fetch.spec.whatwg.org/": [
       "concept-request",
       "concept-request-url",
@@ -24,11 +23,9 @@
       "concept-request-destination",
       "navigation-request",
       "concept-request-client",
-      "concept-filtered-response-opaque",
-      "dom-global-fetch"
-    ],
-    "https://tools.ietf.org/html/rfc6797": [
-      "section-12.4"
+      "concept-request-mode",
+      "main-fetch",
+      "concept-response-url-list"
     ],
     "https://www.w3.org/TR/wsc-ui/": [
       "securepage"
@@ -43,11 +40,12 @@
       "concept-url-scheme"
     ],
     "https://dom.spec.whatwg.org/": [
-      "document"
+      "document",
+      "concept-document-url",
+      "concept-node-document"
     ],
     "https://html.spec.whatwg.org/": [
       "browsing-context",
-      "bc-container-document",
       "the-img-element",
       "use-srcset-or-picture",
       "video",
@@ -55,20 +53,16 @@
       "audio",
       "plugin",
       "top-level-browsing-context",
-      "meta",
-      "nested-browsing-context",
-      "global-object",
-      "initialise-the-document-object",
       "environment-settings-object",
       "concept-settings-object-origin",
       "responsible-document",
+      "global-object",
       "relevant-settings-object",
       "concept-environment-target-browsing-context",
       "parent-browsing-context",
-      "concept-document-csp-list",
-      "websocket",
-      "handler-websocket-onerror",
-      "eventsource",
+      "process-a-navigate-response",
+      "active-document",
+      "downloading-hyperlinks",
       "the-form-element",
       "attr-fs-action"
     ],
@@ -79,39 +73,19 @@
     "https://xhr.spec.whatwg.org/": [
       "xmlhttprequest"
     ],
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content": [],
-    "https://w3c.github.io/webappsec-csp/": [
-      "directive-initialization",
-      "content-security-policy-object",
-      "policy-disposition",
-      "policy-directive-set",
-      "directives",
-      "directive-name",
-      "violation-resource"
+    "https://www.w3.org/TR/mixed-content/": [
+      "should-block-fetch",
+      "should-block-response",
+      "categorize-settings-object",
+      "strict-checking"
     ],
-    "https://www.w3.org/TR/CSP3/": [
-      "create-violation-for-global",
-      "report-violation"
-    ],
-    "https://www.w3.org/TR/websockets/": [
-      "the-websocket-interface"
-    ],
-    "https://www.w3.org/Bugs/Public/show_bug.cgi?id=28841": [],
-    "https://tools.ietf.org/html/rfc6455": [
-      "section-4.1",
-      "section-7.1.7"
-    ],
-    "https://www.rfc-editor.org/errata_search.php?rfc=6455&eid=4398": [],
-    "https://cabforum.org/about-ev-ssl/": [],
     "https://tools.ietf.org/html/rfc6919": [
       "section-3"
     ],
     "https://tools.ietf.org/html/rfc2119": [],
-    "https://tools.ietf.org/html/rfc7762": [],
     "https://www.w3.org/TR/secure-contexts/": [],
-    "https://cabforum.org/baseline-requirements-documents/": [],
     "https://www.w3.org/TR/css-backgrounds-3/": [],
-    "https://www.w3.org/TR/SRI/": [],
+    "https://www.w3.org/TR/upgrade-insecure-requests/": [],
     "https://www.w3.org/TR/xml/": []
   }
 }
