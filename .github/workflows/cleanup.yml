@@ -3,9 +3,6 @@ Name: Clean up abandoned files
 on:
   schedule:
     - cron: '30 0 * * 1'
-  push:
-    branches:
-    - master
 jobs:
   update:
     runs-on: ubuntu-18.04
@@ -31,4 +28,8 @@ jobs:
         assignees: tidoust, dontcallmedom
         draft: true
         branch: cleanup
+<<<<<<< HEAD
         branch-suffix: timestamp
+=======
+        branch-suffix: timestamp
+>>>>>>> 77125491... Run only as cron job
