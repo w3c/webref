@@ -6,7 +6,7 @@
   "properties": {
     "string-set": {
       "name": "string-set",
-      "value": "[[ <custom-ident> <content-list>] [, <custom-ident> <content-list>]* ] | none",
+      "value": "[ <custom-ident> <content-list> ]# | none",
       "initial": "none",
       "appliesTo": "all elements, but not pseudo-elements",
       "inherited": "no",
@@ -67,13 +67,13 @@
       "value": "content([text | before | after | first-letter ])"
     },
     "<string()>": {
-      "value": "string( <custom-ident> [ , [ first | start | last | first-except] ]? )"
+      "value": "string( <custom-ident> , [ first | start | last | first-except ]? )"
     },
     "<running()>": {
       "value": "running( <custom-ident> )"
     },
     "<element()>": {
-      "value": "element( <custom-ident> [ , [ first | start | last | first-except] ]? )"
+      "value": "element( <custom-ident> , [ first | start | last | first-except ]? )"
     },
     "<nth()>": {
       "value": "( An+B [of <custom-ident>]?)"
