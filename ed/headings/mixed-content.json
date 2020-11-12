@@ -1,13 +1,13 @@
 {
   "spec": {
-    "title": "Mixed Content",
+    "title": "Mixed Content Level 2",
     "url": "https://w3c.github.io/webappsec-mixed-content/"
   },
   "headings": [
     {
       "id": "subtitle",
       "level": 2,
-      "title": "Editor’s Draft, 10 September 2020"
+      "title": "Editor’s Draft, 11 November 2020"
     },
     {
       "id": "abstract",
@@ -43,9 +43,9 @@
       "number": "3"
     },
     {
-      "id": "category-optionally-blockable",
+      "id": "category-upgradeable",
       "level": 3,
-      "title": "Optionally-blockable Content",
+      "title": "Upgradeable Content",
       "number": "3.1"
     },
     {
@@ -55,64 +55,76 @@
       "number": "3.2"
     },
     {
-      "id": "strict-checking",
+      "id": "algorithms",
       "level": 2,
-      "title": "Strict Mixed Content Checking",
+      "title": "Algorithms",
       "number": "4"
     },
     {
-      "id": "strict-effects",
+      "id": "upgrade-algorithm",
       "level": 3,
-      "title": "Effects",
+      "title": "Upgrade request to an a priori authenticated URL as mixed content, if appropriate",
       "number": "4.1"
     },
     {
-      "id": "strict-opt-in",
+      "id": "existing-mix-algorithms",
       "level": 3,
-      "title": "Opting-in",
+      "title": "Existing Mixed Content Algorithms and Modifications",
       "number": "4.2"
-    },
-    {
-      "id": "directive-initialization",
-      "level": 3,
-      "title": "block-all-mixed-content Initialization",
-      "number": "4.3"
-    },
-    {
-      "id": "strict-nesting",
-      "level": 3,
-      "title": "Inheriting an opt-in",
-      "number": "4.4"
-    },
-    {
-      "id": "algorithms",
-      "level": 2,
-      "title": "Insecure Content in Secure Contexts",
-      "number": "5"
     },
     {
       "id": "categorize-settings-object",
       "level": 3,
       "title": "Does settings prohibit mixed security contexts?",
-      "number": "5.1"
+      "number": "4.3"
     },
     {
       "id": "should-block-fetch",
       "level": 3,
       "title": "Should fetching request be blocked as mixed content?",
-      "number": "5.2"
+      "number": "4.4"
     },
     {
       "id": "should-block-response",
       "level": 3,
       "title": "Should response to request be blocked as mixed content?",
-      "number": "5.3"
+      "number": "4.5"
     },
     {
-      "id": "websockets-integration",
+      "id": "integration",
       "level": 2,
-      "title": "Modifications to WebSockets",
+      "title": "Integrations",
+      "number": "5"
+    },
+    {
+      "id": "fetch",
+      "level": 3,
+      "title": "Modifications to Fetch",
+      "number": "5.1"
+    },
+    {
+      "id": "html",
+      "level": 3,
+      "title": "Modifications to HTML",
+      "number": "5.2"
+    },
+    {
+      "id": "obsolescences",
+      "level": 2,
+      "title": "Obsolescences",
       "number": "6"
+    },
+    {
+      "id": "strict-checking",
+      "level": 3,
+      "title": "Strict Mixed Content Checking",
+      "number": "6.1"
+    },
+    {
+      "id": "mixed-content-1",
+      "level": 3,
+      "title": "Mixed Content",
+      "number": "6.2"
     },
     {
       "id": "security-considerations",
@@ -121,46 +133,22 @@
       "number": "7"
     },
     {
-      "id": "limitations",
-      "level": 3,
-      "title": "Limitations",
-      "number": "7.1"
-    },
-    {
       "id": "requirements-forms",
       "level": 3,
       "title": "Form Submission",
-      "number": "7.2"
-    },
-    {
-      "id": "requirements-ux",
-      "level": 3,
-      "title": "UI Requirements",
-      "number": "7.3"
+      "number": "7.1"
     },
     {
       "id": "requirements-user-controls",
       "level": 3,
       "title": "User Controls",
-      "number": "7.4"
-    },
-    {
-      "id": "further-action",
-      "level": 3,
-      "title": "Further Action",
-      "number": "7.5"
-    },
-    {
-      "id": "iana-considerations",
-      "level": 2,
-      "title": "IANA Considerations",
-      "number": "8"
+      "number": "7.2"
     },
     {
       "id": "acknowledgements",
       "level": 2,
       "title": "Acknowledgements",
-      "number": "9"
+      "number": "8"
     },
     {
       "id": "conformance",
