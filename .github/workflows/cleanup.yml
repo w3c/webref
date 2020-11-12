@@ -1,0 +1,34 @@
+Name: Clean up abandonned files
+
+on:
+  schedule:
+    - cron: '30 0 * * 1'
+  push:
+    branches:
+    - master
+jobs:
+  update:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Checkout webref
+      uses: actions/checkout@master
+      with:
+        path: webref
+    - name: Setup node.js
+      uses: actions/setup-node@master
+      with:
+        node-version: 10.x
+    - name: Run clean up
+      run: node tools/clean-abandonned-files.js
+    - uses: peter-evans/create-pull-request@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        title: Remove files no longer referenced
+        commit-message: "Remove files no longer referenced"
+        body: |
+          This removes previously extracted files that are no longer referenced in browser-specs
+        assignees: tidoust, dontcallmedom
+        draft: true
+        branch: cleanup
+        branch-suffix: timestamp
