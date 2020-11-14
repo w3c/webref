@@ -4,7 +4,21 @@
     "url": "https://w3c.github.io/web-share-target/"
   },
   "links": {
-    "https://www.w3.org/TR/web-share/": [],
+    "https://www.w3.org/TR/web-share/": [
+      "dom-sharedata",
+      "dfn-share-target",
+      "dom-navigator-share",
+      "dom-sharedata-url"
+    ],
+    "https://html.spec.whatwg.org/": [
+      "dom-navigator-registerprotocolhandler",
+      "navigator",
+      "multipart/form-data-encoding-algorithm",
+      "multipart/form-data-boundary-string",
+      "creating-a-new-browsing-context",
+      "top-level-browsing-context",
+      "navigate"
+    ],
     "https://www.w3.org/TR/appmanifest/": [
       "dom-webappmanifest",
       "dfn-extension-point",
@@ -16,8 +30,12 @@
       "dfn-install"
     ],
     "https://url.spec.whatwg.org/": [
+      "concept-urlencoded",
+      "concept-url",
       "concept-url-parser",
       "concept-url-origin",
+      "valid-url-string",
+      "concept-urlencoded-serializer",
       "concept-url-query"
     ],
     "https://tc39.es/ecma262/": [
@@ -26,26 +44,31 @@
     "https://www.w3.org/TR/service-workers-1/": [
       "service-worker-concept"
     ],
+    "https://heycam.github.io/webidl/": [
+      "idl-USVString",
+      "idl-DOMString"
+    ],
     "https://infra.spec.whatwg.org/": [
       "ascii-case-insensitive",
       "list-append"
     ],
     "https://www.w3.org/TR/secure-contexts/": [
-      "is-origin-trustworthy"
+      "is-origin-trustworthy",
+      "potentially-trustworthy-origin"
     ],
     "https://tools.ietf.org/html/rfc7231": [
       "section-4"
     ],
+    "https://github.com/w3c/web-share-target/issues/26": [],
+    "https://github.com/w3c/web-share-target/issues/?q=is%3Aissue+is%3Aopen+label%3A%22enhancement%22": [],
     "https://fetch.spec.whatwg.org/": [
       "concept-header-list",
+      "concept-header-list-append",
       "concept-request"
     ],
-    "https://html.spec.whatwg.org/": [
-      "multipart/form-data-boundary-string",
-      "multipart/form-data-encoding-algorithm",
-      "creating-a-new-browsing-context",
-      "top-level-browsing-context",
-      "navigate"
+    "https://encoding.spec.whatwg.org/": [
+      "utf-8-encode",
+      "utf-8"
     ],
     "https://tools.ietf.org/html/bcp14": [],
     "https://dvcs.w3.org/hg/web-intents/raw-file/tip/spec/": [],
