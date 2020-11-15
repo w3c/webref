@@ -21,7 +21,7 @@
   
       <header>
       <h1>Reffy crawl</h1>
-            <h2 class="date">November 14, 2020</h2>
+            <h2 class="date">November 15, 2020</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -388,7 +388,7 @@
   </ul>
   </section>
   </section>
-  <section id="badging-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="badging-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Badging API</h2>
   <section id="spec-info-10" class="level3 info">
   <h3>Spec info</h3>
@@ -404,6 +404,10 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Navigator</code> defined in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-10" class="level3 dependencies">
@@ -2235,7 +2239,6 @@
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
   <li><a href="https://quirks.spec.whatwg.org/">Quirks Mode Standard</a></li>
   <li><a href="https://drafts.csswg.org/web-animations-1/">Web Animations</a></li>
-  <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -5236,7 +5239,6 @@
   <li><a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a></li>
   <li><a href="https://drafts.csswg.org/selectors/">Selectors Level 4</a></li>
   <li><a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">Trusted Types</a></li>
-  <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -6448,7 +6450,6 @@
   <ul>
   <li><a href="https://w3c.github.io/aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
-  <li><a href="https://w3c.github.io/badging/">Badging API</a></li>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
@@ -6501,11 +6502,9 @@
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/geolocation-sensor/">Geolocation Sensor</a></li>
   <li><a href="https://wicg.github.io/get-installed-related-apps/spec/">Get Installed Related Apps API</a></li>
-  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
   <li><a href="https://wicg.github.io/video-rvfc/">HTMLVideoElement.requestVideoFrameCallback()</a></li>
   <li><a href="https://wicg.github.io/idle-detection/">Idle Detection API</a></li>
-  <li><a href="https://w3c.github.io/image-resource/">Image Resource</a></li>
   <li><a href="https://wicg.github.io/import-maps/">Import Maps</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 3.0</a></li>
   <li><a href="https://w3c.github.io/input-events/">Input Events Level 2</a></li>
@@ -6524,11 +6523,7 @@
   <li><a href="https://wicg.github.io/netinfo/">Network Information API</a></li>
   <li><a href="https://notifications.spec.whatwg.org/">Notifications API Standard</a></li>
   <li><a href="https://wicg.github.io/page-lifecycle/">Page Lifecycle</a></li>
-  <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/paint-timing/">Paint Timing 1</a></li>
-  <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
-  <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/webappsec-permissions-policy/">Permissions Policy</a></li>
   <li><a href="https://w3c.github.io/picture-in-picture/">Picture-in-Picture</a></li>
@@ -6538,28 +6533,22 @@
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://privacycg.github.io/private-click-measurement/">Private Click Measurement</a></li>
-  <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   <li><a href="https://quirks.spec.whatwg.org/">Quirks Mode Standard</a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></li>
-  <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
   <li><a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
   <li><a href="https://drafts.csswg.org/resize-observer/">Resize Observer</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 2</a></li>
   <li><a href="https://wicg.github.io/savedata/">Save Data API</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
-  <li><a href="https://w3c.github.io/screen-wake-lock/">Screen Wake Lock API</a></li>
   <li><a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
   <li><a href="https://w3c.github.io/selection-api/">Selection API</a></li>
   <li><a href="https://drafts.csswg.org/selectors/">Selectors Level 4</a></li>
-  <li><a href="https://wicg.github.io/serial/">Serial API</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
   <li><a href="https://w3c.github.io/svg-aam/">SVG Accessibility API Mappings</a></li>
   <li><a href="https://svgwg.org/specs/animations/">SVG Animations</a></li>
   <li><a href="https://wicg.github.io/scroll-to-text-fragment/">Text Fragments</a></li>
-  <li><a href="https://w3c.github.io/screen-fold/">The Screen Fold API</a></li>
-  <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://privacycg.github.io/storage-access/">The Storage Access API</a></li>
   <li><a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
   <li><a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">Trusted Types</a></li>
@@ -6568,14 +6557,12 @@
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="https://wicg.github.io/visual-viewport/">Visual Viewport API</a></li>
   <li><a href="https://drafts.csswg.org/web-animations-1/">Web Animations</a></li>
-  <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
   <li><a href="https://w3c.github.io/webcrypto/">Web Cryptography API</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a></li>
-  <li><a href="https://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
   <li><a href="https://w3c.github.io/web-nfc/">Web NFC</a></li>
   <li><a href="https://wicg.github.io/web-otp/">Web OTP API</a></li>
   <li><a href="https://wicg.github.io/periodic-background-sync/">Web Periodic Background Synchronization</a></li>
@@ -6583,7 +6570,6 @@
   <li><a href="https://w3c.github.io/webdriver/">WebDriver</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   <li><a href="https://gpuweb.github.io/gpuweb/">WebGPU</a></li>
-  <li><a href="https://wicg.github.io/webhid/">WebHID API</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-Time Communication Between Browsers</a></li>
   <li><a href="https://w3c.github.io/webtransport/">WebTransport</a></li>
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a></li>
@@ -6596,11 +6582,20 @@
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></li>
+  <li><a href="https://w3c.github.io/hr-time/">High Resolution Time</a></li>
+  <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
+  <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
+  <li><a href="https://w3c.github.io/screen-wake-lock/">Screen Wake Lock API</a></li>
+  <li><a href="https://wicg.github.io/serial/">Serial API</a></li>
+  <li><a href="https://w3c.github.io/screen-fold/">The Screen Fold API</a></li>
+  <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
+  <li><a href="https://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
+  <li><a href="https://wicg.github.io/webhid/">WebHID API</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/accname/">Accessible Name and Description Computation 1.2</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://drafts.csswg.org/css2/">CSS 2</a></li>
   <li><a href="https://drafts.csswg.org/css2/">CSS 2</a></li>
   <li><a href="https://drafts.csswg.org/css-sizing-3/">CSS Box Sizing Module Level 3</a></li>
@@ -6608,8 +6603,6 @@
   <li><a href="https://drafts.csswg.org/css-content-3/">CSS Generated Content Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/selectors-nonelement/">Non-element Selectors Module Level 1</a></li>
   <li><a href="https://wicg.github.io/origin-policy/">Origin Policy</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
-  <li><a href="https://w3c.github.io/web-share/">Web Share API</a></li>
   </ul>
   </section>
   </section>
@@ -6709,14 +6702,12 @@
   <li><a href="https://mimesniff.spec.whatwg.org/">MIME Sniffing Standard</a></li>
   <li><a href="https://wicg.github.io/origin-policy/">Origin Policy</a></li>
   <li><a href="https://w3c.github.io/payment-method-manifest/">Payment Method Manifest</a></li>
-  <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
   <li><a href="https://w3c.github.io/web-nfc/">Web NFC</a></li>
-  <li><a href="https://w3c.github.io/web-share-target/">Web Share Target API</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a></li>
   <li><a href="https://w3c.github.io/webdriver/">WebDriver</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
@@ -6879,7 +6870,6 @@
   <li><a href="https://drafts.fxtf.org/filter-effects-1/">Filter Effects Module Level 1</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a></li>
-  <li><a href="https://w3c.github.io/image-resource/">Image Resource</a></li>
   <li><a href="https://wicg.github.io/import-maps/">Import Maps</a></li>
   <li><a href="https://wicg.github.io/largest-contentful-paint/">Largest Contentful Paint</a></li>
   <li><a href="https://wicg.github.io/webpackage/loading.html">Loading Signed Exchanges</a></li>
@@ -6893,7 +6883,6 @@
   <li><a href="https://wicg.github.io/origin-policy/">Origin Policy</a></li>
   <li><a href="https://w3c.github.io/payment-method-id/">Payment Method Identifiers</a></li>
   <li><a href="https://w3c.github.io/payment-method-manifest/">Payment Method Manifest</a></li>
-  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/webappsec-permissions-policy/">Permissions Policy</a></li>
   <li><a href="https://wicg.github.io/portals/">Portals</a></li>
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
@@ -6902,14 +6891,12 @@
   <li><a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 2</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
-  <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://w3c.github.io/webappsec-subresource-integrity/">Subresource Integrity</a></li>
   <li><a href="https://wicg.github.io/scroll-to-text-fragment/">Text Fragments</a></li>
   <li><a href="https://w3c.github.io/trace-context/">Trace Context Level 2</a></li>
   <li><a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">Trusted Types</a></li>
   <li><a href="https://w3c.github.io/webappsec-upgrade-insecure-requests/">Upgrade Insecure Requests</a></li>
-  <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
   <li><a href="https://wicg.github.io/web-otp/">Web OTP API</a></li>
@@ -6924,6 +6911,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://wicg.github.io/idle-detection/">Idle Detection API</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   <li><a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
@@ -7001,16 +6989,19 @@
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
-  <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
-  <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
   <li><a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
-  <li><a href="https://w3c.github.io/web-share/">Web Share API</a></li>
   <li><a href="https://w3c.github.io/webdriver/">WebDriver</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-Time Communication Between Browsers</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
+  </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
+  <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
+  <li><a href="https://w3c.github.io/web-share/">Web Share API</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -7212,7 +7203,7 @@
   </ul>
   </section>
   </section>
-  <section id="gamepad" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true">
+  <section id="gamepad" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true">
   <h2>Gamepad</h2>
   <section id="spec-info-151" class="level3 info">
   <h3>Spec info</h3>
@@ -7231,6 +7222,10 @@
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>GamepadMappingType</code> also defined in <a href="https://immersive-web.github.io/webxr-gamepads-module/">WebXR Gamepads Module - Level 1</a></li>
+  </ul></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>DOMHighResTimeStamp</code> defined in <a href="https://w3c.github.io/hr-time/">High Resolution Time</a></li>
   </ul></li>
   </ul>
   </section>
@@ -7321,7 +7316,7 @@
   </ul>
   </section>
   </section>
-  <section id="geolocation-api-specification" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="geolocation-api-specification" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true">
   <h2>Geolocation API Specification</h2>
   <section id="spec-info-154" class="level3 info">
   <h3>Spec info</h3>
@@ -7337,6 +7332,7 @@
   <section id="potential-issues-154" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
   </ul>
   </section>
@@ -7522,7 +7518,7 @@
   </ul>
   </section>
   </section>
-  <section id="high-resolution-time" class="level2" data-spec="true" data-ok="true">
+  <section id="high-resolution-time" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>High Resolution Time</h2>
   <section id="spec-info-160" class="level3 info">
   <h3>Spec info</h3>
@@ -7537,7 +7533,12 @@
   </section>
   <section id="potential-issues-160" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-160" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -7548,7 +7549,6 @@
   <li><a href="https://wicg.github.io/element-timing/">Element Timing API</a></li>
   <li><a href="https://wicg.github.io/event-timing/">Event Timing API</a></li>
   <li><a href="https://wicg.github.io/frame-timing/">Frame Timing</a></li>
-  <li><a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://w3c.github.io/geolocation-sensor/">Geolocation Sensor</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
@@ -7560,26 +7560,27 @@
   <li><a href="https://wicg.github.io/layout-instability/">Layout Instability API</a></li>
   <li><a href="https://w3c.github.io/longtasks/">Long Tasks API 1</a></li>
   <li><a href="https://wicg.github.io/performance-measure-memory/">Measure Memory API</a></li>
-  <li><a href="https://w3c.github.io/media-playback-quality/">Media Playback Quality</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/paint-timing/">Paint Timing 1</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 2</a></li>
-  <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
   <li><a href="https://w3c.github.io/timing-entrytypes-registry/">Timing Entry Names Registry</a></li>
   <li><a href="https://w3c.github.io/user-timing/">User Timing Level 3</a></li>
   <li><a href="https://w3c.github.io/user-timing/">User Timing Level 3</a></li>
   <li><a href="https://drafts.csswg.org/web-animations-1/">Web Animations</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
-  <li><a href="https://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-Time Communication Between Browsers</a></li>
   <li><a href="https://w3c.github.io/webtransport/">WebTransport</a></li>
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a></li>
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
+  <li><a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
+  <li><a href="https://w3c.github.io/media-playback-quality/">Media Playback Quality</a></li>
+  <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
+  <li><a href="https://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -7697,7 +7698,6 @@
   <li><a href="https://w3c.github.io/html-aria/">ARIA in HTML</a></li>
   <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
-  <li><a href="https://w3c.github.io/badging/">Badging API</a></li>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
   <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
@@ -7788,7 +7788,6 @@
   <li><a href="https://w3c.github.io/webrtc-ice/">IceTransport Extensions for WebRTC</a></li>
   <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a></li>
   <li><a href="https://wicg.github.io/idle-detection/">Idle Detection API</a></li>
-  <li><a href="https://w3c.github.io/image-resource/">Image Resource</a></li>
   <li><a href="https://wicg.github.io/import-maps/">Import Maps</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 3.0</a></li>
   <li><a href="https://wicg.github.io/input-device-capabilities/">Input Device Capabilities</a></li>
@@ -7806,7 +7805,6 @@
   <li><a href="https://wicg.github.io/performance-measure-memory/">Measure Memory API</a></li>
   <li><a href="https://w3c.github.io/media-capabilities/">Media Capabilities</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-automation/">Media Capture Automation</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://wicg.github.io/media-feeds/">Media Feeds</a></li>
@@ -7835,7 +7833,6 @@
   <li><a href="https://w3c.github.io/webappsec-permissions-policy/">Permissions Policy</a></li>
   <li><a href="https://w3c.github.io/picture-in-picture/">Picture-in-Picture</a></li>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events</a></li>
-  <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
   <li><a href="https://wicg.github.io/portals/">Portals</a></li>
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
@@ -7893,7 +7890,6 @@
   <li><a href="https://w3c.github.io/web-nfc/">Web NFC</a></li>
   <li><a href="https://wicg.github.io/web-otp/">Web OTP API</a></li>
   <li><a href="https://wicg.github.io/periodic-background-sync/">Web Periodic Background Synchronization</a></li>
-  <li><a href="https://w3c.github.io/web-share/">Web Share API</a></li>
   <li><a href="https://w3c.github.io/web-share-target/">Web Share Target API</a></li>
   <li><a href="https://wicg.github.io/speech-api/">Web Speech API</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a></li>
@@ -7915,6 +7911,12 @@
   <li><a href="https://immersive-web.github.io/webxr-hand-input/">WebXR Hand Input Module - Level 1</a></li>
   <li><a href="https://immersive-web.github.io/layers/">WebXR Layers API Level 1</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
+  </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/badging/">Badging API</a></li>
+  <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
+  <li><a href="https://w3c.github.io/web-share/">Web Share API</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -8103,7 +8105,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="image-resource" class="level2" data-spec="true" data-ok="true">
+  <section id="image-resource" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true">
   <h2>Image Resource</h2>
   <section id="spec-info-169" class="level3 info">
   <h3>Spec info</h3>
@@ -8118,18 +8120,20 @@
   </section>
   <section id="potential-issues-169" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-169" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
-  <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   </ul>
   <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
   <ul>
   <li><a href="https://wicg.github.io/content-index/spec/">Content Index</a></li>
+  <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -8221,7 +8225,6 @@
   <li><a href="https://w3c.github.io/webappsec-change-password-url/">A Well-Known URL for Changing Passwords</a></li>
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
-  <li><a href="https://w3c.github.io/badging/">Badging API</a></li>
   <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
   <li><a href="https://wicg.github.io/client-hints-infrastructure/">Client Hints Infrastructure</a></li>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
@@ -8271,10 +8274,8 @@
   <li><a href="https://wicg.github.io/get-installed-related-apps/spec/">Get Installed Related Apps API</a></li>
   <li><a href="https://w3c.github.io/gyroscope/">Gyroscope</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
-  <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a></li>
   <li><a href="https://wicg.github.io/idle-detection/">Idle Detection API</a></li>
-  <li><a href="https://w3c.github.io/image-resource/">Image Resource</a></li>
   <li><a href="https://wicg.github.io/import-maps/">Import Maps</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 3.0</a></li>
   <li><a href="https://wicg.github.io/keyboard-lock/">Keyboard Lock</a></li>
@@ -8291,10 +8292,7 @@
   <li><a href="https://wicg.github.io/origin-policy/">Origin Policy</a></li>
   <li><a href="https://wicg.github.io/sms-one-time-codes/">Origin-bound one-time codes delivered via SMS</a></li>
   <li><a href="https://wicg.github.io/page-lifecycle/">Page Lifecycle</a></li>
-  <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://w3c.github.io/payment-method-manifest/">Payment Method Manifest</a></li>
-  <li><a href="https://w3c.github.io/payment-method-basic-card/">Payment Method: Basic Card</a></li>
-  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/webappsec-permissions-policy/">Permissions Policy</a></li>
@@ -8303,16 +8301,12 @@
   <li><a href="https://w3c.github.io/proximity/">Proximity Sensor</a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></li>
   <li><a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
-  <li><a href="https://w3c.github.io/screen-wake-lock/">Screen Wake Lock API</a></li>
   <li><a href="https://drafts.csswg.org/selectors/">Selectors Level 4</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://storage.spec.whatwg.org/">Storage Standard</a></li>
   <li><a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
   <li><a href="https://w3c.github.io/webappsec-subresource-integrity/">Subresource Integrity</a></li>
   <li><a href="https://wicg.github.io/scroll-to-text-fragment/">Text Fragments</a></li>
-  <li><a href="https://w3c.github.io/screen-fold/">The Screen Fold API</a></li>
-  <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://privacycg.github.io/storage-access/">The Storage Access API</a></li>
   <li><a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">Trusted Types</a></li>
   <li><a href="https://url.spec.whatwg.org/">URL Standard</a></li>
@@ -8320,13 +8314,11 @@
   <li><a href="https://w3c.github.io/user-timing/">User Timing Level 3</a></li>
   <li><a href="https://wicg.github.io/ua-client-hints/">User-Agent Client Hints</a></li>
   <li><a href="https://drafts.csswg.org/web-animations-1/">Web Animations</a></li>
-  <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
   <li><a href="https://heycam.github.io/webidl/">Web IDL</a></li>
   <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a></li>
-  <li><a href="https://w3c.github.io/web-nfc/">Web NFC</a></li>
   <li><a href="https://wicg.github.io/periodic-background-sync/">Web Periodic Background Synchronization</a></li>
   <li><a href="https://w3c.github.io/web-share-target/">Web Share Target API</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a></li>
@@ -8349,7 +8341,7 @@
   </ul>
   </section>
   </section>
-  <section id="input-device-capabilities" class="level2" data-spec="true" data-ok="true">
+  <section id="input-device-capabilities" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true">
   <h2>Input Device Capabilities</h2>
   <section id="spec-info-173" class="level3 info">
   <h3>Spec info</h3>
@@ -8363,7 +8355,9 @@
   </section>
   <section id="potential-issues-173" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-173" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -8789,7 +8783,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="mathml-core" class="level2" data-spec="true" data-ok="true">
+  <section id="mathml-core" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true">
   <h2>MathML Core</h2>
   <section id="spec-info-187" class="level3 info">
   <h3>Spec info</h3>
@@ -8803,7 +8797,9 @@
   </section>
   <section id="potential-issues-187" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-187" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -8893,7 +8889,6 @@
   <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a></li>
   <li><a href="https://w3c.github.io/mediacapture-automation/">Media Capture Automation</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
   <li><a href="https://w3c.github.io/mst-content-hint/">MediaStreamTrack Content Hints</a></li>
@@ -8902,6 +8897,10 @@
   <li><a href="https://wicg.github.io/web-codecs/">WebCodecs</a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-Time Communication Between Browsers</a></li>
   <li><a href="https://w3c.github.io/webrtc-insertable-streams/">WebRTC Insertable Media using Streams</a></li>
+  </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -8970,7 +8969,7 @@
   </ul>
   </section>
   </section>
-  <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-inconsistentRef="true">
   <h2>Media Capture from DOM Elements</h2>
   <section id="spec-info-193" class="level3 info">
   <h3>Spec info</h3>
@@ -8987,9 +8986,14 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>MediaStream</code> defined in <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  <li><code>MediaStreamTrack</code> defined in <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
+  </ul></li>
   <li>Inconsistent references for links:
   <ul>
-  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;mediacapture-streams&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -9024,7 +9028,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="media-playback-quality" class="level2" data-spec="true" data-ok="true">
+  <section id="media-playback-quality" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
   <h2>Media Playback Quality</h2>
   <section id="spec-info-195" class="level3 info">
   <h3>Spec info</h3>
@@ -9038,7 +9042,13 @@
   </section>
   <section id="potential-issues-195" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>DOMHighResTimeStamp</code> defined in <a href="https://w3c.github.io/hr-time/">High Resolution Time</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-195" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -9145,7 +9155,6 @@
   <li><a href="https://drafts.csswg.org/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-4/">CSS Writing Modes Level 4</a></li>
   <li><a href="https://drafts.fxtf.org/filter-effects-1/">Filter Effects Module Level 1</a></li>
-  <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://immersive-web.github.io/webxr-hand-input/">WebXR Hand Input Module - Level 1</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -9306,7 +9315,7 @@
   </ul>
   </section>
   </section>
-  <section id="mediastreamtrack-content-hints" class="level2" data-spec="true" data-ok="true">
+  <section id="mediastreamtrack-content-hints" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true">
   <h2>MediaStreamTrack Content Hints</h2>
   <section id="spec-info-202" class="level3 info">
   <h3>Spec info</h3>
@@ -9321,7 +9330,9 @@
   </section>
   <section id="potential-issues-202" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-202" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -9355,7 +9366,6 @@
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://wicg.github.io/file-system-access/">File System Access</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
-  <li><a href="https://w3c.github.io/image-resource/">Image Resource</a></li>
   <li><a href="https://wicg.github.io/webpackage/loading.html">Loading Signed Exchanges</a></li>
   <li><a href="https://w3c.github.io/media-capabilities/">Media Capabilities</a></li>
   <li><a href="https://w3c.github.io/mediasession/">Media Session Standard</a></li>
@@ -9363,14 +9373,12 @@
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
-  <li><a href="https://w3c.github.io/web-nfc/">Web NFC</a></li>
   <li><a href="https://w3c.github.io/webvtt/">WebVTT: The Web Video Text Tracks Format</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://wicg.github.io/contact-api/spec/">Contact Picker API</a></li>
-  <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
   </ul>
   </section>
@@ -9409,7 +9417,6 @@
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content Level 2</a></li>
-  <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/resource-hints/">Resource Hints</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -9528,7 +9535,7 @@
   </ul>
   </section>
   </section>
-  <section id="network-information-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
+  <section id="network-information-api" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingLinkRef="true">
   <h2>Network Information API</h2>
   <section id="spec-info-208" class="level3 info">
   <h3>Spec info</h3>
@@ -9543,6 +9550,7 @@
   <section id="potential-issues-208" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/ServiceWorker/v1/"><code>https://w3c.github.io/ServiceWorker/v1/</code></a></li>
@@ -9770,7 +9778,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="page-visibility-level-2" class="level2" data-spec="true" data-ok="true">
+  <section id="page-visibility-level-2" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
   <h2>Page Visibility Level 2</h2>
   <section id="spec-info-216" class="level3 info">
   <h3>Spec info</h3>
@@ -9785,7 +9793,13 @@
   </section>
   <section id="potential-issues-216" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Document</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-216" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -9905,9 +9919,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://w3c.github.io/payment-method-manifest/">Payment Method Manifest</a></li>
-  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -9968,15 +9980,15 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
-  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/payment-method-id/">Payment Method Identifiers</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   </ul>
   </section>
   </section>
-  <section id="payment-request-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="payment-request-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Payment Request API</h2>
   <section id="spec-info-222" class="level3 info">
   <h3>Spec info</h3>
@@ -9993,6 +10005,12 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>Event</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>EventInit</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-222" class="level3 dependencies">
@@ -10099,7 +10117,6 @@
   <ul>
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://wicg.github.io/file-system-access/">File System Access</a></li>
@@ -10110,7 +10127,6 @@
   <li><a href="https://wicg.github.io/local-font-access/">Local Font Access API</a></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-automation/">Media Capture Automation</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://wicg.github.io/permissions-revoke/">Relinquishing Permissions</a></li>
@@ -10126,7 +10142,10 @@
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a></li>
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a></li>
   </ul>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/mediacapture-automation/">Media Capture Automation</a></li>
+  </ul>
   </section>
   </section>
   <section id="permissions-policy" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
@@ -10156,30 +10175,27 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></li>
   <li><a href="https://wicg.github.io/client-hints-infrastructure/">Client Hints Infrastructure</a></li>
   <li><a href="https://drafts.csswg.org/css-nav-1/">CSS Spatial Navigation Level 1</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
-  <li><a href="https://w3c.github.io/geolocation-api/">Geolocation API Specification</a></li>
   <li><a href="https://wicg.github.io/idle-detection/">Idle Detection API</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/permissions/">Permissions</a></li>
   <li><a href="https://w3c.github.io/picture-in-picture/">Picture-in-Picture</a></li>
-  <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
-  <li><a href="https://w3c.github.io/screen-wake-lock/">Screen Wake Lock API</a></li>
   <li><a href="https://wicg.github.io/scroll-to-text-fragment/">Text Fragments</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
   <li><a href="https://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
-  <li><a href="https://w3c.github.io/web-share/">Web Share API</a></li>
-  <li><a href="https://wicg.github.io/webhid/">WebHID API</a></li>
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a></li>
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://w3c.github.io/geolocation-api/">Geolocation API Specification</a></li>
+  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
+  <li><a href="https://w3c.github.io/screen-wake-lock/">Screen Wake Lock API</a></li>
+  </ul>
   </section>
   </section>
   <section id="picture-in-picture" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
@@ -10252,7 +10268,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="pointer-lock-2.0" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="pointer-lock-2.0" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-inconsistentRef="true">
   <h2>Pointer Lock 2.0</h2>
   <section id="spec-info-228" class="level3 info">
   <h3>Spec info</h3>
@@ -10268,7 +10284,12 @@
   <section id="potential-issues-228" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventHandler</code> defined in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
+  </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a>, related reference &quot;ui-events&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
@@ -10358,7 +10379,7 @@
   </ul>
   </section>
   </section>
-  <section id="presentation-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="presentation-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Presentation API</h2>
   <section id="spec-info-231" class="level3 info">
   <h3>Spec info</h3>
@@ -10375,6 +10396,10 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Blob</code> defined in <a href="https://w3c.github.io/FileAPI/">File API</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-231" class="level3 dependencies">
@@ -10479,7 +10504,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="push-api" class="level2" data-spec="true" data-ok="true">
+  <section id="push-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Push API</h2>
   <section id="spec-info-236" class="level3 info">
   <h3>Spec info</h3>
@@ -10494,7 +10519,12 @@
   </section>
   <section id="potential-issues-236" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Blob</code> defined in <a href="https://w3c.github.io/FileAPI/">File API</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-236" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -10608,7 +10638,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="remote-playback-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="remote-playback-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Remote Playback API</h2>
   <section id="spec-info-240" class="level3 info">
   <h3>Spec info</h3>
@@ -10625,6 +10655,10 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-240" class="level3 dependencies">
@@ -10835,7 +10869,7 @@
   </ul>
   </section>
   </section>
-  <section id="save-data-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
+  <section id="save-data-api" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingLinkRef="true">
   <h2>Save Data API</h2>
   <section id="spec-info-246" class="level3 info">
   <h3>Spec info</h3>
@@ -10850,6 +10884,7 @@
   <section id="potential-issues-246" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/netinfo/"><code>https://www.w3.org/TR/netinfo/</code></a></li>
@@ -11064,7 +11099,7 @@
   </ul>
   </section>
   </section>
-  <section id="screen-wake-lock-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="screen-wake-lock-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Screen Wake Lock API</h2>
   <section id="spec-info-250" class="level3 info">
   <h3>Spec info</h3>
@@ -11081,6 +11116,10 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-250" class="level3 dependencies">
@@ -11171,7 +11210,6 @@
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
   <li><a href="https://wicg.github.io/background-sync/spec/">Web Background Synchronization</a></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
-  <li><a href="https://w3c.github.io/web-nfc/">Web NFC</a></li>
   <li><a href="https://wicg.github.io/periodic-background-sync/">Web Periodic Background Synchronization</a></li>
   <li><a href="https://w3c.github.io/web-share-target/">Web Share Target API</a></li>
   </ul>
@@ -11180,15 +11218,13 @@
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
   <li><a href="https://wicg.github.io/sms-one-time-codes/">Origin-bound one-time codes delivered via SMS</a></li>
-  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/picture-in-picture/">Picture-in-Picture</a></li>
   <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
-  <li><a href="https://w3c.github.io/web-share/">Web Share API</a></li>
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a></li>
   </ul>
   </section>
   </section>
-  <section id="selection-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="selection-api" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Selection API</h2>
   <section id="spec-info-253" class="level3 info">
   <h3>Spec info</h3>
@@ -11204,6 +11240,7 @@
   <section id="potential-issues-253" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Missing references for links:
   <ul>
@@ -11297,7 +11334,7 @@
   </ul>
   </section>
   </section>
-  <section id="serial-api" class="level2" data-spec="true" data-ok="true">
+  <section id="serial-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Serial API</h2>
   <section id="spec-info-255" class="level3 info">
   <h3>Spec info</h3>
@@ -11311,7 +11348,14 @@
   </section>
   <section id="potential-issues-255" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>ReadableStream</code> defined in <a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
+  <li><code>WritableStream</code> defined in <a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-255" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -11319,7 +11363,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="server-timing" class="level2" data-spec="true" data-ok="true">
+  <section id="server-timing" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Server Timing</h2>
   <section id="spec-info-256" class="level3 info">
   <h3>Spec info</h3>
@@ -11334,7 +11378,12 @@
   </section>
   <section id="potential-issues-256" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>DOMHighResTimeStamp</code> defined in <a href="https://w3c.github.io/hr-time/">High Resolution Time</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-256" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -11379,7 +11428,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
-  <li><a href="https://w3c.github.io/badging/">Badging API</a></li>
   <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
   <li><a href="https://wicg.github.io/content-index/spec/">Content Index</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
@@ -11477,11 +11525,14 @@
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
   <li><a href="https://wicg.github.io/file-system-access/">File System Access</a></li>
   <li><a href="https://wicg.github.io/webpackage/loading.html">Loading Signed Exchanges</a></li>
-  <li><a href="https://wicg.github.io/serial/">Serial API</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><a href="https://w3c.github.io/webrtc-insertable-streams/">WebRTC Insertable Media using Streams</a></li>
   <li><a href="https://w3c.github.io/webtransport/">WebTransport</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
+  </ul>
+  <p>Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:</p>
+  <ul>
+  <li><a href="https://wicg.github.io/serial/">Serial API</a></li>
   </ul>
   <p>No informative reference to this spec from other specs.</p>
   </section>
@@ -11778,7 +11829,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="the-screen-fold-api" class="level2" data-spec="true" data-ok="true">
+  <section id="the-screen-fold-api" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
   <h2>The Screen Fold API</h2>
   <section id="spec-info-268" class="level3 info">
   <h3>Spec info</h3>
@@ -11792,7 +11843,13 @@
   </section>
   <section id="potential-issues-268" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-268" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -11800,7 +11857,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="the-screen-orientation-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="the-screen-orientation-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>The Screen Orientation API</h2>
   <section id="spec-info-269" class="level3 info">
   <h3>Spec info</h3>
@@ -11817,6 +11874,10 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-269" class="level3 dependencies">
@@ -12178,10 +12239,8 @@
   <li><a href="https://w3c.github.io/webappsec-fetch-metadata/">Fetch Metadata Request Headers</a></li>
   <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a></li>
-  <li><a href="https://w3c.github.io/geolocation-api/">Geolocation API Specification</a></li>
   <li><a href="https://wicg.github.io/get-installed-related-apps/spec/">Get Installed Related Apps API</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
-  <li><a href="https://w3c.github.io/image-resource/">Image Resource</a></li>
   <li><a href="https://wicg.github.io/import-maps/">Import Maps</a></li>
   <li><a href="https://wicg.github.io/webpackage/loading.html">Loading Signed Exchanges</a></li>
   <li><a href="https://wicg.github.io/media-feeds/">Media Feeds</a></li>
@@ -12196,10 +12255,8 @@
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://w3c.github.io/payment-method-id/">Payment Method Identifiers</a></li>
   <li><a href="https://w3c.github.io/payment-method-manifest/">Payment Method Manifest</a></li>
-  <li><a href="https://w3c.github.io/payment-request/">Payment Request API</a></li>
   <li><a href="https://w3c.github.io/webappsec-permissions-policy/">Permissions Policy</a></li>
   <li><a href="https://wicg.github.io/portals/">Portals</a></li>
-  <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://privacycg.github.io/private-click-measurement/">Private Click Measurement</a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></li>
   <li><a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
@@ -12214,7 +12271,6 @@
   <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 2</a></li>
   <li><a href="https://w3c.github.io/web-nfc/">Web NFC</a></li>
-  <li><a href="https://w3c.github.io/web-share/">Web Share API</a></li>
   <li><a href="https://w3c.github.io/web-share-target/">Web Share Target API</a></li>
   <li><a href="https://w3c.github.io/webdriver/">WebDriver</a></li>
   <li><a href="https://w3c.github.io/webtransport/">WebTransport</a></li>
@@ -12223,7 +12279,6 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></li>
-  <li><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></li>
   <li><a href="https://wicg.github.io/web-otp/">Web OTP API</a></li>
   </ul>
   </section>
@@ -12339,7 +12394,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="visual-viewport-api" class="level2" data-spec="true" data-ok="true">
+  <section id="visual-viewport-api" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true">
   <h2>Visual Viewport API</h2>
   <section id="spec-info-284" class="level3 info">
   <h3>Spec info</h3>
@@ -12353,7 +12408,9 @@
   </section>
   <section id="potential-issues-284" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-284" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -12445,7 +12502,7 @@
   </ul>
   </section>
   </section>
-  <section id="web-app-manifest" class="level2" data-spec="true" data-ok="true">
+  <section id="web-app-manifest" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>Web App Manifest</h2>
   <section id="spec-info-287" class="level3 info">
   <h3>Spec info</h3>
@@ -12460,7 +12517,12 @@
   </section>
   <section id="potential-issues-287" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>ImageResource</code> defined in <a href="https://w3c.github.io/image-resource/">Image Resource</a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-287" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -12513,7 +12575,6 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
   <li><a href="https://webaudio.github.io/web-midi-api/">Web MIDI API</a></li>
   <li><a href="https://wicg.github.io/web-codecs/">WebCodecs</a></li>
@@ -12521,6 +12582,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
+  <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   </ul>
   </section>
   </section>
@@ -12755,7 +12817,6 @@
   <li><a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
   <li><a href="https://w3c.github.io/gamepad/extensions.html">Gamepad Extensions</a></li>
   <li><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></li>
-  <li><a href="https://w3c.github.io/geolocation-api/">Geolocation API Specification</a></li>
   <li><a href="https://w3c.github.io/geolocation-sensor/">Geolocation Sensor</a></li>
   <li><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></li>
   <li><a href="https://wicg.github.io/get-installed-related-apps/spec/">Get Installed Related Apps API</a></li>
@@ -12768,11 +12829,9 @@
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></li>
   <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a></li>
   <li><a href="https://wicg.github.io/idle-detection/">Idle Detection API</a></li>
-  <li><a href="https://w3c.github.io/image-resource/">Image Resource</a></li>
   <li><a href="https://wicg.github.io/import-maps/">Import Maps</a></li>
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 3.0</a></li>
   <li><a href="https://infra.spec.whatwg.org/">Infra Standard</a></li>
-  <li><a href="https://wicg.github.io/input-device-capabilities/">Input Device Capabilities</a></li>
   <li><a href="https://w3c.github.io/input-events/">Input Events Level 2</a></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></li>
   <li><a href="https://wicg.github.io/intervention-reporting/">Intervention Reporting</a></li>
@@ -12785,26 +12844,21 @@
   <li><a href="https://wicg.github.io/local-font-access/">Local Font Access API</a></li>
   <li><a href="https://w3c.github.io/longtasks/">Long Tasks API 1</a></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></li>
-  <li><a href="https://mathml-refresh.github.io/mathml-core/">MathML Core</a></li>
   <li><a href="https://wicg.github.io/performance-measure-memory/">Measure Memory API</a></li>
   <li><a href="https://w3c.github.io/media-capabilities/">Media Capabilities</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
   <li><a href="https://w3c.github.io/mediacapture-automation/">Media Capture Automation</a></li>
   <li><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></li>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></li>
-  <li><a href="https://w3c.github.io/media-playback-quality/">Media Playback Quality</a></li>
   <li><a href="https://w3c.github.io/mediasession/">Media Session Standard</a></li>
   <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></li>
-  <li><a href="https://w3c.github.io/mst-content-hint/">MediaStreamTrack Content Hints</a></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></li>
-  <li><a href="https://wicg.github.io/netinfo/">Network Information API</a></li>
   <li><a href="https://notifications.spec.whatwg.org/">Notifications API Standard</a></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></li>
   <li><a href="https://wicg.github.io/origin-policy/">Origin Policy</a></li>
   <li><a href="https://wicg.github.io/page-lifecycle/">Page Lifecycle</a></li>
-  <li><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></li>
   <li><a href="https://w3c.github.io/paint-timing/">Paint Timing 1</a></li>
   <li><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></li>
   <li><a href="https://w3c.github.io/payment-method-manifest/">Payment Method Manifest</a></li>
@@ -12815,7 +12869,6 @@
   <li><a href="https://w3c.github.io/webappsec-permissions-policy/">Permissions Policy</a></li>
   <li><a href="https://w3c.github.io/picture-in-picture/">Picture-in-Picture</a></li>
   <li><a href="https://w3c.github.io/pointerevents/">Pointer Events</a></li>
-  <li><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></li>
   <li><a href="https://wicg.github.io/portals/">Portals</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://privacycg.github.io/private-click-measurement/">Private Click Measurement</a></li>
@@ -12827,14 +12880,12 @@
   <li><a href="https://wicg.github.io/permissions-request/">Requesting Permissions</a></li>
   <li><a href="https://drafts.csswg.org/resize-observer/">Resize Observer</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 2</a></li>
-  <li><a href="https://wicg.github.io/savedata/">Save Data API</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="https://w3c.github.io/webrtc-svc/">Scalable Video Coding (SVC) Extension for WebRTC</a></li>
   <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
   <li><a href="https://w3c.github.io/screen-wake-lock/">Screen Wake Lock API</a></li>
   <li><a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></li>
-  <li><a href="https://w3c.github.io/selection-api/">Selection API</a></li>
   <li><a href="https://wicg.github.io/serial/">Serial API</a></li>
   <li><a href="https://w3c.github.io/server-timing/">Server Timing</a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
@@ -12842,7 +12893,6 @@
   <li><a href="https://streams.spec.whatwg.org/">Streams Standard</a></li>
   <li><a href="https://w3c.github.io/webappsec-subresource-integrity/">Subresource Integrity</a></li>
   <li><a href="https://wicg.github.io/scroll-to-text-fragment/">Text Fragments</a></li>
-  <li><a href="https://w3c.github.io/screen-fold/">The Screen Fold API</a></li>
   <li><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></li>
   <li><a href="https://privacycg.github.io/storage-access/">The Storage Access API</a></li>
   <li><a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></li>
@@ -12853,7 +12903,6 @@
   <li><a href="https://w3c.github.io/user-timing/">User Timing Level 3</a></li>
   <li><a href="https://wicg.github.io/ua-client-hints/">User-Agent Client Hints</a></li>
   <li><a href="https://w3c.github.io/vibration/">Vibration API (Second Edition)</a></li>
-  <li><a href="https://wicg.github.io/visual-viewport/">Visual Viewport API</a></li>
   <li><a href="https://drafts.csswg.org/web-animations-1/">Web Animations</a></li>
   <li><a href="https://w3c.github.io/manifest/">Web App Manifest</a></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></li>
@@ -12868,7 +12917,6 @@
   <li><a href="https://wicg.github.io/web-otp/">Web OTP API</a></li>
   <li><a href="https://wicg.github.io/periodic-background-sync/">Web Periodic Background Synchronization</a></li>
   <li><a href="https://w3c.github.io/web-share/">Web Share API</a></li>
-  <li><a href="https://w3c.github.io/web-share-target/">Web Share Target API</a></li>
   <li><a href="https://wicg.github.io/speech-api/">Web Speech API</a></li>
   <li><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a></li>
   <li><a href="https://webassembly.github.io/spec/web-api/">WebAssembly Web API</a></li>
@@ -12897,7 +12945,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a></li>
-  <li><a href="https://wicg.github.io/overscroll-scrollend-events/">overscroll and scrollend events</a></li>
+  <li><a href="https://mathml-refresh.github.io/mathml-core/">MathML Core</a></li>
   </ul>
   </section>
   </section>
@@ -12933,7 +12981,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-midi-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="web-midi-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Web MIDI API</h2>
   <section id="spec-info-295" class="level3 info">
   <h3>Spec info</h3>
@@ -12950,6 +12998,13 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>DOMHighResTimeStamp</code> defined in <a href="https://w3c.github.io/hr-time/">High Resolution Time</a></li>
+  <li><code>Event</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>EventInit</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-295" class="level3 dependencies">
@@ -13044,7 +13099,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-share-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
+  <section id="web-share-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>Web Share API</h2>
   <section id="spec-info-299" class="level3 info">
   <h3>Spec info</h3>
@@ -13061,6 +13116,11 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>Navigator</code> defined in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
+  <li><code>File</code> defined in <a href="https://w3c.github.io/FileAPI/">File API</a></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/web-intents/"><code>https://www.w3.org/TR/web-intents/</code></a></li>
@@ -13076,7 +13136,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-share-target-api" class="level2" data-spec="true" data-ok="true">
+  <section id="web-share-target-api" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true">
   <h2>Web Share Target API</h2>
   <section id="spec-info-300" class="level3 info">
   <h3>Spec info</h3>
@@ -13090,7 +13150,9 @@
   </section>
   <section id="potential-issues-300" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Spec uses WebIDL but does not reference it normatively</li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-300" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -14546,7 +14608,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webhid-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="webhid-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebHID API</h2>
   <section id="spec-info-353" class="level3 info">
   <h3>Spec info</h3>
@@ -14562,6 +14624,12 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown WebIDL names used: <code>undefined</code></li>
+  <li>Missing references for WebIDL names:
+  <ul>
+  <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>EventInit</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><code>Event</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  </ul></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-353" class="level3 dependencies">
@@ -14620,7 +14688,6 @@
   <ul>
   <li><a href="https://w3c.github.io/media-capabilities/">Media Capabilities</a></li>
   <li><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></li>
-  <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
   </ul>
   </section>
