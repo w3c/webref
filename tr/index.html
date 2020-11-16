@@ -21,7 +21,7 @@
   
       <header>
       <h1>Reffy crawl</h1>
-            <h2 class="date">November 09, 2020</h2>
+            <h2 class="date">November 16, 2020</h2>
           </header>
     <p><a href="https://github.com/tidoust/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>
@@ -358,7 +358,7 @@
   </ul>
   </section>
   </section>
-  <section id="audio-output-devices-api" class="level2" data-spec="true" data-ok="true">
+  <section id="audio-output-devices-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>Audio Output Devices API</h2>
   <section id="spec-info-9" class="level3 info">
   <h3>Spec info</h3>
@@ -373,7 +373,9 @@
   </section>
   <section id="potential-issues-9" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-9" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -384,7 +386,7 @@
   </ul>
   </section>
   </section>
-  <section id="background-fetch" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="background-fetch" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Background Fetch</h2>
   <section id="spec-info-10" class="level3 info">
   <h3>Spec info</h3>
@@ -399,6 +401,7 @@
   <section id="potential-issues-10" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://storage.spec.whatwg.org/"><code>https://storage.spec.whatwg.org/</code></a></li>
@@ -424,7 +427,7 @@
   </ul>
   </section>
   </section>
-  <section id="badging-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="badging-api" class="level2" data-spec="true" data-ok="true">
   <h2>Badging API</h2>
   <section id="spec-info-11" class="level3 info">
   <h3>Spec info</h3>
@@ -438,9 +441,7 @@
   </section>
   <section id="potential-issues-11" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-11" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -524,10 +525,10 @@
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/CSS21/" class="uri">https://www.w3.org/TR/CSS21/</a></li>
-  <li>Crawled URL: <a href="https://www.w3.org/TR/CSS2/" class="uri">https://www.w3.org/TR/CSS2/</a></li>
+  <li>Crawled URL: <a href="https://www.w3.org/TR/CSS21/" class="uri">https://www.w3.org/TR/CSS21/</a></li>
   <li>Crawled version: to new work</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css2/" class="uri">https://drafts.csswg.org/css2/</a></li>
-  <li>Latest published version: <a href="https://www.w3.org/TR/CSS2/" class="uri">https://www.w3.org/TR/CSS2/</a></li>
+  <li>Latest published version: <a href="https://www.w3.org/TR/CSS21/" class="uri">https://www.w3.org/TR/CSS21/</a></li>
   <li>Shortname: CSS21</li>
   </ul>
   </section>
@@ -537,7 +538,6 @@
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-color/"><code>https://www.w3.org/TR/css3-color/</code></a>, related reference &quot;CSS3COLOR&quot; uses URL <a href="http://www.w3.org/TR/2010/PR-css3-color-20101028/"><code>http://www.w3.org/TR/2010/PR-css3-color-20101028/</code></a></li>
-  <li><a href="https://www.w3.org/TR/2007/CR-CSS21-20070719/"><code>https://www.w3.org/TR/2007/CR-CSS21-20070719/</code></a>, related reference &quot;CSS2&quot; uses URL <a href="http://www.w3.org/TR/2008/REC-CSS2-20080411/"><code>http://www.w3.org/TR/2008/REC-CSS2-20080411/</code></a></li>
   <li><a href="https://www.w3.org/TR/2009/CR-CSS2-20090423"><code>https://www.w3.org/TR/2009/CR-CSS2-20090423</code></a>, related reference &quot;CSS2&quot; uses URL <a href="http://www.w3.org/TR/2008/REC-CSS2-20080411/"><code>http://www.w3.org/TR/2008/REC-CSS2-20080411/</code></a></li>
   <li><a href="https://www.w3.org/TR/2009/CR-CSS2-20090908"><code>https://www.w3.org/TR/2009/CR-CSS2-20090908</code></a>, related reference &quot;CSS2&quot; uses URL <a href="http://www.w3.org/TR/2008/REC-CSS2-20080411/"><code>http://www.w3.org/TR/2008/REC-CSS2-20080411/</code></a></li>
   </ul></li>
@@ -547,106 +547,26 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://www.w3.org/TR/accname-1.2/">Accessible Name and Description Computation 1.2</a></li>
   <li><a href="https://compat.spec.whatwg.org/">Compatibility Standard</a></li>
-  <li><a href="https://www.w3.org/TR/compositing-1/">Compositing and Blending Level 1</a></li>
-  <li><a href="https://drafts.fxtf.org/compositing-2/">Compositing and Blending Level 2</a></li>
-  <li><a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-backgrounds-3/">CSS Backgrounds and Borders Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-backgrounds-4/">CSS Backgrounds and Borders Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-ui-4/">CSS Basic User Interface Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-align-3/">CSS Box Alignment Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-box-3/">CSS Box Model Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-box-4/">CSS Box Model Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-sizing-3/">CSS Box Sizing Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-sizing-4/">CSS Box Sizing Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-cascade-3/">CSS Cascading and Inheritance Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-cascade-5/">CSS Cascading and Inheritance Level 5</a></li>
-  <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css3-conditional/">CSS Conditional Rules Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-conditional-4/">CSS Conditional Rules Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-contain-2/">CSS Containment Module Level 2</a></li>
-  <li><a href="https://www.w3.org/TR/css-counter-styles-3/">CSS Counter Styles Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-variables-1/">CSS Custom Properties for Cascading Variables Module Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-device-adapt-1/">CSS Device Adaptation Module Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-display-3/">CSS Display Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css3-exclusions/">CSS Exclusions Module Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-flexbox-1/">CSS Flexible Box Layout Module Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-fonts-4/">CSS Fonts Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-break-3/">CSS Fragmentation Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-break-4/">CSS Fragmentation Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-gcpm-4/">CSS Generated Content for Paged Media Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-grid-2/">CSS Grid Layout Module Level 2</a></li>
   <li><a href="https://drafts.csswg.org/css-grid-3/">CSS Grid Layout Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-images-4/">CSS Image Values and Replaced Content Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-images-3/">CSS Images Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-inline-3/">CSS Inline Layout Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-layout-api-1/">CSS Layout API Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-lists-3/">CSS Lists Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-logical-1/">CSS Logical Properties and Values Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-size-adjust-1/">CSS Mobile Text Size Adjustment Module Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-multicol-1/">CSS Multi-column Layout Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-nesting-1/">CSS Nesting Module</a></li>
-  <li><a href="https://www.w3.org/TR/cssom-1/">CSS Object Model (CSSOM)</a></li>
-  <li><a href="https://www.w3.org/TR/css-overflow-3/">CSS Overflow Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-overflow-4/">CSS Overflow Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-page-3/">CSS Paged Media Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-position-3/">CSS Positioned Layout Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-regions-1/">CSS Regions Module Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-rhythm-1/">CSS Rhythmic Sizing</a></li>
-  <li><a href="https://www.w3.org/TR/css-round-display-1/">CSS Round Display Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-ruby-1/">CSS Ruby Layout Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-scroll-anchoring-1/">CSS Scroll Anchoring Module Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-scroll-snap-1/">CSS Scroll Snap Module Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-scrollbars-1/">CSS Scrollbars Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-shapes-2/">CSS Shapes Module Level 2</a></li>
-  <li><a href="https://www.w3.org/TR/css-nav-1/">CSS Spatial Navigation Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-speech-1/">CSS Speech Module</a></li>
-  <li><a href="https://www.w3.org/TR/css-style-attr/">CSS Style Attributes</a></li>
-  <li><a href="https://www.w3.org/TR/css-tables-3/">CSS Table Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-text-decor-3/">CSS Text Decoration Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-text-decor-4/">CSS Text Decoration Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-transforms-1/">CSS Transforms Module Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-transforms-2/">CSS Transforms Module Level 2</a></li>
-  <li><a href="https://www.w3.org/TR/css-transitions-1/">CSS Transitions</a></li>
-  <li><a href="https://www.w3.org/TR/css-typed-om-1/">CSS Typed OM Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/css-values-3/">CSS Values and Units Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-writing-modes-4/">CSS Writing Modes Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/cssom-view-1/">CSSOM View Module</a></li>
-  <li><a href="https://www.w3.org/TR/filter-effects-1/">Filter Effects Module Level 1</a></li>
   <li><a href="https://drafts.fxtf.org/filter-effects-2/">Filter Effects Module Level 2</a></li>
   <li><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
-  <li><a href="https://wicg.github.io/layout-instability/">Layout Instability API</a></li>
-  <li><a href="https://wicg.github.io/webpackage/loading.html">Loading Signed Exchanges</a></li>
   <li><a href="https://mathml-refresh.github.io/mathml-core/">MathML Core</a></li>
-  <li><a href="https://www.w3.org/TR/mediaqueries-4/">Media Queries Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/mediaqueries-5/">Media Queries Level 5</a></li>
-  <li><a href="https://www.w3.org/TR/motion-1/">Motion Path Module Level 1</a></li>
-  <li><a href="https://www.w3.org/TR/pointerevents3/">Pointer Events</a></li>
-  <li><a href="https://drafts.csswg.org/css-page-4/">Proposals for the future of CSS Paged Media</a></li>
   <li><a href="https://quirks.spec.whatwg.org/">Quirks Mode Standard</a></li>
-  <li><a href="https://www.w3.org/TR/SVG2/">Scalable Vector Graphics (SVG) 2</a></li>
   <li><a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a></li>
-  <li><a href="https://www.w3.org/TR/selectors-4/">Selectors Level 4</a></li>
   <li><a href="https://wicg.github.io/scroll-to-text-fragment/">Text Fragments</a></li>
-  <li><a href="https://www.w3.org/TR/web-animations-1/">Web Animations</a></li>
-  <li><a href="https://www.w3.org/TR/webdriver2/">WebDriver</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul>
-  <p>Informative references to this spec from:</p>
-  <ul>
-  <li><a href="https://www.w3.org/TR/CSS2/">Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification</a></li>
-  <li><a href="https://www.w3.org/TR/CSS22/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
-  <li><a href="https://www.w3.org/TR/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-syntax-3/">CSS Syntax Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/uievents/">UI Events</a></li>
-  </ul>
+  <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
   <section id="cascading-style-sheets-level-2-revision-2-css2.2-specification" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
@@ -729,7 +649,7 @@
   <ul>
   <li>Initial URL: <a href="https://wicg.github.io/client-hints-infrastructure/" class="uri">https://wicg.github.io/client-hints-infrastructure/</a></li>
   <li>Crawled URL: <a href="https://wicg.github.io/client-hints-infrastructure/" class="uri">https://wicg.github.io/client-hints-infrastructure/</a></li>
-  <li>Crawled version: 6 November 2020</li>
+  <li>Crawled version: 13 November 2020</li>
   <li>Editor's Draft: <a href="https://wicg.github.io/client-hints-infrastructure/" class="uri">https://wicg.github.io/client-hints-infrastructure/</a></li>
   <li>Shortname: client-hints-infrastructure</li>
   </ul>
@@ -739,13 +659,11 @@
   <ul>
   <li>Missing references for links:
   <ul>
-  <li><a href="https://w3c.github.io/webappsec-feature-policy/"><code>https://w3c.github.io/webappsec-feature-policy/</code></a></li>
   <li><a href="https://w3c.github.io/device-memory/"><code>https://w3c.github.io/device-memory/</code></a></li>
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a>, related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-permissions-policy/"><code>https://w3c.github.io/webappsec-permissions-policy/</code></a>, related reference &quot;PERMISSIONS-POLICY-1&quot; uses URL <a href="https://www.w3.org/TR/permissions-policy-1/"><code>https://www.w3.org/TR/permissions-policy-1/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -761,7 +679,7 @@
   </ul>
   </section>
   </section>
-  <section id="clipboard-api-and-events" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="clipboard-api-and-events" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Clipboard API and events</h2>
   <section id="spec-info-18" class="level3 info">
   <h3>Spec info</h3>
@@ -777,7 +695,6 @@
   <section id="potential-issues-18" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a></li>
@@ -941,7 +858,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="console-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="console-standard" class="level2" data-spec="true" data-ok="true">
   <h2>Console Standard</h2>
   <section id="spec-info-23" class="level3 info">
   <h3>Spec info</h3>
@@ -955,9 +872,7 @@
   </section>
   <section id="potential-issues-23" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-23" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -984,7 +899,7 @@
   <section id="potential-issues-24" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>CSSStyleSheet</code>, <code>MediaList</code></li>
+  <li>Unknown WebIDL names used: <code>CSSStyleSheet</code>, <code>MediaList</code>, <code>void</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-24" class="level3 dependencies">
@@ -1022,7 +937,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="content-index" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="content-index" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Content Index</h2>
   <section id="spec-info-26" class="level3 info">
   <h3>Spec info</h3>
@@ -1037,6 +952,7 @@
   <section id="potential-issues-26" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>ImageResource</code> defined in <a href="https://www.w3.org/TR/image-resource/">Image Resource</a></li>
@@ -1164,7 +1080,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="cookie-store-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="cookie-store-api" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>Cookie Store API</h2>
   <section id="spec-info-30" class="level3 info">
   <h3>Spec info</h3>
@@ -1179,7 +1095,6 @@
   <section id="potential-issues-30" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a>, related reference &quot;Service-Workers&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
@@ -1192,7 +1107,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="cooperative-scheduling-of-background-tasks" class="level2" data-spec="true" data-ok="true">
+  <section id="cooperative-scheduling-of-background-tasks" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>Cooperative Scheduling of Background Tasks</h2>
   <section id="spec-info-31" class="level3 info">
   <h3>Spec info</h3>
@@ -1207,7 +1122,9 @@
   </section>
   <section id="potential-issues-31" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-31" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1261,7 +1178,7 @@
   <ul>
   <li>Initial URL: <a href="https://wicg.github.io/cors-rfc1918/" class="uri">https://wicg.github.io/cors-rfc1918/</a></li>
   <li>Crawled URL: <a href="https://wicg.github.io/cors-rfc1918/" class="uri">https://wicg.github.io/cors-rfc1918/</a></li>
-  <li>Crawled version: 6 July 2020</li>
+  <li>Crawled version: 10 November 2020</li>
   <li>Editor's Draft: <a href="https://wicg.github.io/cors-rfc1918/" class="uri">https://wicg.github.io/cors-rfc1918/</a></li>
   <li>Shortname: cors-rfc1918</li>
   </ul>
@@ -1317,7 +1234,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="credential-management-level-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="credential-management-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Credential Management Level 1</h2>
   <section id="spec-info-35" class="level3 info">
   <h3>Spec info</h3>
@@ -1333,6 +1250,7 @@
   <section id="potential-issues-35" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/webappsec/usecases/credentialmanagement/"><code>https://w3c.github.io/webappsec/usecases/credentialmanagement/</code></a></li>
@@ -1372,7 +1290,7 @@
   <section id="potential-issues-36" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>CSS</code></li>
+  <li>Unknown WebIDL names used: <code>CSS</code>, <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/web-animations/"><code>https://w3c.github.io/web-animations/</code></a></li>
@@ -1404,7 +1322,7 @@
   <section id="potential-issues-37" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>CSSOMString</code>, <code>CSSRule</code>, <code>CSSRuleList</code>, <code>CSSStyleDeclaration</code></li>
+  <li>Unknown WebIDL names used: <code>CSSOMString</code>, <code>CSSRule</code>, <code>CSSRuleList</code>, <code>CSSStyleDeclaration</code>, <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a></li>
@@ -1761,7 +1679,6 @@
   <li><a href="https://www.w3.org/TR/css-break-4/">CSS Fragmentation Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-logical-1/">CSS Logical Properties and Values Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-page-3/">CSS Paged Media Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-scroll-anchoring-1/">CSS Scroll Anchoring Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-scroll-snap-1/">CSS Scroll Snap Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-tables-3/">CSS Table Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-text-4/">CSS Text Module Level 4</a></li>
@@ -1775,7 +1692,6 @@
   <li><a href="https://www.w3.org/TR/css-multicol-1/">CSS Multi-column Layout Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-overflow-3/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-values-3/">CSS Values and Units Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   </ul>
   </section>
   </section>
@@ -1823,6 +1739,7 @@
   <li><a href="https://www.w3.org/TR/css-overflow-3/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-position-3/">CSS Positioned Layout Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-ruby-1/">CSS Ruby Layout Module Level 1</a></li>
+  <li><a href="https://www.w3.org/TR/css-scroll-anchoring-1/">CSS Scroll Anchoring Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-shapes-2/">CSS Shapes Module Level 2</a></li>
   <li><a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/intersection-observer/">Intersection Observer</a></li>
@@ -1831,6 +1748,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://drafts.csswg.org/css-grid-3/">CSS Grid Layout Module Level 3</a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a></li>
   </ul>
   </section>
@@ -1888,6 +1806,7 @@
   <li><a href="https://www.w3.org/TR/css-overflow-3/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-page-3/">CSS Paged Media Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-position-3/">CSS Positioned Layout Module Level 3</a></li>
+  <li><a href="https://www.w3.org/TR/css-scroll-anchoring-1/">CSS Scroll Anchoring Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-tables-3/">CSS Table Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-text-3/">CSS Text Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-text-4/">CSS Text Module Level 4</a></li>
@@ -2144,14 +2063,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-color-adjustment-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
+  <section id="css-color-adjustment-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>CSS Color Adjustment Module Level 1</h2>
   <section id="spec-info-50" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/css-color-adjust-1/" class="uri">https://www.w3.org/TR/css-color-adjust-1/</a></li>
   <li>Crawled URL: <a href="https://www.w3.org/TR/css-color-adjust-1/" class="uri">https://www.w3.org/TR/css-color-adjust-1/</a></li>
-  <li>Crawled version: 2 April 2020</li>
+  <li>Crawled version: 9 November 2020</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-color-adjust-1/" class="uri">https://drafts.csswg.org/css-color-adjust-1/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-color-adjust-1/" class="uri">https://www.w3.org/TR/css-color-adjust-1/</a></li>
   <li>Shortname: css-color-adjust-1</li>
@@ -2162,10 +2081,13 @@
   <ul>
   <li>Missing references for links:
   <ul>
-  <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-ui/"><code>https://www.w3.org/TR/css3-ui/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-multicol/"><code>https://www.w3.org/TR/css3-multicol/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a></li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a></li>
+  </ul></li>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a>, related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -2186,7 +2108,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/css-color-4/" class="uri">https://www.w3.org/TR/css-color-4/</a></li>
   <li>Crawled URL: <a href="https://www.w3.org/TR/css-color-4/" class="uri">https://www.w3.org/TR/css-color-4/</a></li>
-  <li>Crawled version: 5 November 2019</li>
+  <li>Crawled version: 12 November 2020</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-color/" class="uri">https://drafts.csswg.org/css-color/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-color-4/" class="uri">https://www.w3.org/TR/css-color-4/</a></li>
   <li>Shortname: css-color-4</li>
@@ -2198,12 +2120,14 @@
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css-color-3/"><code>https://www.w3.org/TR/css-color-3/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a></li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a></li>
+  <li><a href="https://infra.spec.whatwg.org/"><code>https://infra.spec.whatwg.org/</code></a></li>
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
-  <li><a href="https://www.w3.org/TR/2008/REC-WCAG20-20081211/"><code>https://www.w3.org/TR/2008/REC-WCAG20-20081211/</code></a>, related reference &quot;WCAG20&quot; uses URL <a href="https://www.w3.org/TR/WCAG20/"><code>https://www.w3.org/TR/WCAG20/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a>, related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a>, related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -2274,7 +2198,11 @@
   <section id="known-dependencies-on-this-specification-52" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
   <p>No normative reference to this spec from other specs.</p>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
+  </ul>
   </section>
   </section>
   <section id="css-conditional-rules-module-level-3" class="level2" data-spec="true" data-anomaly="true" data-noRefToWebIDL="true" data-hasInvalidIdl="true" data-missingLinkRef="true" data-inconsistentRef="true">
@@ -2326,6 +2254,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-fonts-4/">CSS Fonts Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-syntax-3/">CSS Syntax Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-text-4/">CSS Text Module Level 4</a></li>
@@ -2507,6 +2436,7 @@
   <li><a href="https://www.w3.org/TR/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-shadow-parts-1/">CSS Shadow Parts</a></li>
   <li><a href="https://www.w3.org/TR/css-typed-om-1/">CSS Typed OM Level 1</a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/web-animations-1/">Web Animations</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -2820,6 +2750,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-images-3/">CSS Images Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-text-decor-4/">CSS Text Decoration Module Level 4</a></li>
@@ -2957,7 +2888,7 @@
   <section id="potential-issues-68" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>CSSOMString</code>, <code>CSSRule</code>, <code>CSSStyleDeclaration</code></li>
+  <li>Unknown WebIDL names used: <code>CSSOMString</code>, <code>CSSRule</code>, <code>CSSStyleDeclaration</code>, <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a></li>
@@ -3318,6 +3249,7 @@
   <li><a href="https://drafts.csswg.org/css-backgrounds-4/">CSS Backgrounds and Borders Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-display-3/">CSS Display Module Level 3</a></li>
   <li><a href="https://drafts.csswg.org/css-grid-3/">CSS Grid Layout Module Level 3</a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -3450,6 +3382,7 @@
   <li><a href="https://www.w3.org/TR/css-lists-3/">CSS Lists Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-shapes-2/">CSS Shapes Module Level 2</a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
@@ -3920,7 +3853,6 @@
   <p>Normative references to this spec from:</p>
   <ul>
   <li><a href="https://www.w3.org/TR/css-values-3/">CSS Values and Units Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/selectors-nonelement-1/">Non-element Selectors Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/selectors-4/">Selectors Level 4</a></li>
   </ul>
@@ -3934,7 +3866,7 @@
   <ul>
   <li>Initial URL: <a href="https://drafts.csswg.org/css-nesting-1/" class="uri">https://drafts.csswg.org/css-nesting-1/</a></li>
   <li>Crawled URL: <a href="https://drafts.csswg.org/css-nesting-1/" class="uri">https://drafts.csswg.org/css-nesting-1/</a></li>
-  <li>Crawled version: 29 October 2020</li>
+  <li>Crawled version: 9 November 2020</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-nesting-1/" class="uri">https://drafts.csswg.org/css-nesting-1/</a></li>
   <li>Shortname: css-nesting-1</li>
   </ul>
@@ -3993,6 +3925,7 @@
   <li><a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a></li>
   <li><a href="https://www.w3.org/TR/css-sizing-3/">CSS Box Sizing Module Level 3</a></li>
+  <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-counter-styles-3/">CSS Counter Styles Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-highlight-api-1/">CSS Custom Highlight API Module Level 1</a></li>
@@ -4301,7 +4234,7 @@
   <section id="potential-issues-95" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>CSS</code></li>
+  <li>Unknown WebIDL names used: <code>CSS</code>, <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css-properties-values-api-1/"><code>https://www.w3.org/TR/css-properties-values-api-1/</code></a></li>
@@ -4384,7 +4317,6 @@
   <ul>
   <li><a href="https://www.w3.org/TR/css-ui-4/">CSS Basic User Interface Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-align-3/">CSS Box Alignment Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-contain-2/">CSS Containment Module Level 2</a></li>
   <li><a href="https://www.w3.org/TR/css-display-3/">CSS Display Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-flexbox-1/">CSS Flexible Box Layout Module Level 1</a></li>
@@ -4437,7 +4369,7 @@
   <section id="potential-issues-98" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>CSS</code>, <code>CSSOMString</code>, <code>CSSRule</code>, <code>undefined</code></li>
+  <li>Unknown WebIDL names used: <code>CSS</code>, <code>CSSOMString</code>, <code>CSSRule</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-98" class="level3 dependencies">
@@ -4601,7 +4533,10 @@
   <ul>
   <li><a href="https://www.w3.org/TR/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   </ul>
-  <p>No informative reference to this spec from other specs.</p>
+  <p>Informative references to this spec from:</p>
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
+  </ul>
   </section>
   </section>
   <section id="css-round-display-level-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
@@ -4675,7 +4610,6 @@
   <li><a href="https://www.w3.org/TR/css-inline-3/">CSS Inline Layout Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-layout-api-1/">CSS Layout API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-scroll-anchoring-1/">CSS Scroll Anchoring Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-tables-3/">CSS Table Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-text-decor-3/">CSS Text Decoration Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-text-decor-4/">CSS Text Decoration Module Level 4</a></li>
@@ -4747,7 +4681,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/css-scroll-anchoring-1/" class="uri">https://www.w3.org/TR/css-scroll-anchoring-1/</a></li>
   <li>Crawled URL: <a href="https://www.w3.org/TR/css-scroll-anchoring-1/" class="uri">https://www.w3.org/TR/css-scroll-anchoring-1/</a></li>
-  <li>Crawled version: 11 February 2020</li>
+  <li>Crawled version: 11 November 2020</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-scroll-anchoring/" class="uri">https://drafts.csswg.org/css-scroll-anchoring/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-scroll-anchoring-1/" class="uri">https://www.w3.org/TR/css-scroll-anchoring-1/</a></li>
   <li>Shortname: css-scroll-anchoring-1</li>
@@ -4758,12 +4692,14 @@
   <ul>
   <li>Missing references for links:
   <ul>
-  <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a></li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a></li>
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a>, related reference &quot;CSSOM-VIEW&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a>, related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -4974,7 +4910,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="css-spatial-navigation-level-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="css-spatial-navigation-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>CSS Spatial Navigation Level 1</h2>
   <section id="spec-info-111" class="level3 info">
   <h3>Spec info</h3>
@@ -4990,6 +4926,7 @@
   <section id="potential-issues-111" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-feature-policy/"><code>https://w3c.github.io/webappsec-feature-policy/</code></a></li>
@@ -5118,7 +5055,6 @@
   <li><a href="https://www.w3.org/TR/css-cascade-3/">CSS Cascading and Inheritance Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-cascade-5/">CSS Cascading and Inheritance Level 5</a></li>
-  <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-counter-styles-3/">CSS Counter Styles Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-highlight-api-1/">CSS Custom Highlight API Module Level 1</a></li>
@@ -5627,7 +5563,7 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown [Exposed] names used: <code>LayoutWorklet</code></li>
-  <li>Unknown WebIDL names used: <code>CSS</code>, <code>CSSStyleRule</code>, <code>ElementCSSInlineStyle</code></li>
+  <li>Unknown WebIDL names used: <code>CSS</code>, <code>CSSStyleRule</code>, <code>ElementCSSInlineStyle</code>, <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a></li>
@@ -5823,7 +5759,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/css-values-4/" class="uri">https://www.w3.org/TR/css-values-4/</a></li>
   <li>Crawled URL: <a href="https://www.w3.org/TR/css-values-4/" class="uri">https://www.w3.org/TR/css-values-4/</a></li>
-  <li>Crawled version: 31 January 2019</li>
+  <li>Crawled version: 11 November 2020</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-values-4/" class="uri">https://drafts.csswg.org/css-values-4/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-values-4/" class="uri">https://www.w3.org/TR/css-values-4/</a></li>
   <li>Shortname: css-values-4</li>
@@ -5834,24 +5770,14 @@
   <ul>
   <li>Missing references for links:
   <ul>
-  <li><a href="https://www.w3.org/TR/selectors4/"><code>https://www.w3.org/TR/selectors4/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-selectors/"><code>https://www.w3.org/TR/css3-selectors/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-break/"><code>https://www.w3.org/TR/css3-break/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-ui/"><code>https://www.w3.org/TR/css3-ui/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-transitions/"><code>https://www.w3.org/TR/css-transitions/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-animations/"><code>https://www.w3.org/TR/css-animations/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-animations/"><code>https://www.w3.org/TR/css3-animations/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css4-images/"><code>https://www.w3.org/TR/css4-images/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-color/"><code>https://www.w3.org/TR/css3-color/</code></a></li>
-  <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
-  <li><a href="https://www.w3.org/TR/2019/CR-css-values-3-20190131/"><code>https://www.w3.org/TR/2019/CR-css-values-3-20190131/</code></a></li>
   </ul></li>
   <li>Inconsistent references for links:
   <ul>
-  <li><a href="https://www.w3.org/TR/css-syntax/"><code>https://www.w3.org/TR/css-syntax/</code></a>, related reference &quot;CSS3SYN&quot; uses URL <a href="https://www.w3.org/TR/css-syntax-3/"><code>https://www.w3.org/TR/css-syntax-3/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-syntax/"><code>https://www.w3.org/TR/css-syntax/</code></a>, related reference &quot;CSS-SYNTAX-3&quot; uses URL <a href="https://www.w3.org/TR/css-syntax-3/"><code>https://www.w3.org/TR/css-syntax-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-fonts/"><code>https://www.w3.org/TR/css3-fonts/</code></a>, related reference &quot;CSS3-FONTS&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
   </ul></li>
   </ul>
@@ -6268,7 +6194,7 @@
   <section id="potential-issues-135" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>SupportedType</code></li>
+  <li>Unknown WebIDL names used: <code>SupportedType</code>, <code>void</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>DOMParser</code> also defined in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
@@ -6302,14 +6228,14 @@
   </ul>
   </section>
   </section>
-  <section id="dom-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="dom-standard" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>DOM Standard</h2>
   <section id="spec-info-136" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://dom.spec.whatwg.org/" class="uri">https://dom.spec.whatwg.org/</a></li>
   <li>Crawled URL: <a href="https://dom.spec.whatwg.org/" class="uri">https://dom.spec.whatwg.org/</a></li>
-  <li>Crawled version: 27 October 2020</li>
+  <li>Crawled version: 9 November 2020</li>
   <li>Editor's Draft: <a href="https://dom.spec.whatwg.org/" class="uri">https://dom.spec.whatwg.org/</a></li>
   <li>Shortname: dom</li>
   </ul>
@@ -6317,7 +6243,6 @@
   <section id="potential-issues-136" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html"><code>https://w3c.github.io/deviceorientation/spec-source-orientation.html</code></a></li>
@@ -6352,7 +6277,6 @@
   <li><a href="https://www.w3.org/TR/css-box-4/">CSS Box Model Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-cascade-5/">CSS Cascading and Inheritance Level 5</a></li>
-  <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-highlight-api-1/">CSS Custom Highlight API Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-variables-1/">CSS Custom Properties for Cascading Variables Module Level 1</a></li>
   <li><a href="https://drafts.csswg.org/css-env-1/">CSS Environment Variables Module Level 1</a></li>
@@ -6369,6 +6293,7 @@
   <li><a href="https://www.w3.org/TR/css-transitions-1/">CSS Transitions</a></li>
   <li><a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a></li>
   <li><a href="https://www.w3.org/TR/css-typed-om-1/">CSS Typed OM Level 1</a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/cssom-view-1/">CSSOM View Module</a></li>
   <li><a href="https://wicg.github.io/custom-state-pseudo-class/">Custom State Pseudo Class</a></li>
   <li><a href="https://www.w3.org/TR/orientation-event/">DeviceOrientation Event Specification</a></li>
@@ -6479,11 +6404,10 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://www.w3.org/TR/accname-1.2/">Accessible Name and Description Computation 1.2</a></li>
-  <li><a href="https://www.w3.org/TR/CSS2/">Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification</a></li>
+  <li><a href="https://www.w3.org/TR/CSS21/">Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification</a></li>
   <li><a href="https://www.w3.org/TR/CSS22/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
   <li><a href="https://www.w3.org/TR/css-content-3/">CSS Generated Content Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/DOM-Parsing/">DOM Parsing and Serialization</a></li>
-  <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://www.w3.org/TR/input-events-2/">Input Events Level 2</a></li>
   <li><a href="https://wicg.github.io/origin-policy/">Origin Policy</a></li>
   <li><a href="https://www.w3.org/TR/web-share/">Web Share API</a></li>
@@ -6601,7 +6525,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="encrypted-media-extensions" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="encrypted-media-extensions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Encrypted Media Extensions</h2>
   <section id="spec-info-140" class="level3 info">
   <h3>Spec info</h3>
@@ -6617,6 +6541,7 @@
   <section id="potential-issues-140" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a>, related reference &quot;DOM&quot; uses URL <a href="https://www.w3.org/TR/2015/REC-dom-20151119/"><code>https://www.w3.org/TR/2015/REC-dom-20151119/</code></a></li>
@@ -6704,26 +6629,25 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://wicg.github.io/portals/">Portals</a></li>
+  <li><a href="https://wicg.github.io/scroll-to-text-fragment/">Text Fragments</a></li>
   </ul>
   </section>
   </section>
-  <section id="fetch-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="fetch-standard" class="level2" data-spec="true" data-ok="true">
   <h2>Fetch Standard</h2>
   <section id="spec-info-143" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://fetch.spec.whatwg.org/" class="uri">https://fetch.spec.whatwg.org/</a></li>
   <li>Crawled URL: <a href="https://fetch.spec.whatwg.org/" class="uri">https://fetch.spec.whatwg.org/</a></li>
-  <li>Crawled version: 5 November 2020</li>
+  <li>Crawled version: 10 November 2020</li>
   <li>Editor's Draft: <a href="https://fetch.spec.whatwg.org/" class="uri">https://fetch.spec.whatwg.org/</a></li>
   <li>Shortname: fetch</li>
   </ul>
   </section>
   <section id="potential-issues-143" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-143" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -6799,7 +6723,7 @@
   </ul>
   </section>
   </section>
-  <section id="file-and-directory-entries-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="file-and-directory-entries-api" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>File and Directory Entries API</h2>
   <section id="spec-info-144" class="level3 info">
   <h3>Spec info</h3>
@@ -6814,7 +6738,6 @@
   <section id="potential-issues-144" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -6830,7 +6753,7 @@
   </ul>
   </section>
   </section>
-  <section id="file-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="file-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>File API</h2>
   <section id="spec-info-145" class="level3 info">
   <h3>Spec info</h3>
@@ -6846,6 +6769,7 @@
   <section id="potential-issues-145" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a></li>
@@ -6892,7 +6816,7 @@
   </ul>
   </section>
   </section>
-  <section id="file-system-access" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="file-system-access" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>File System Access</h2>
   <section id="spec-info-146" class="level3 info">
   <h3>Spec info</h3>
@@ -6907,7 +6831,6 @@
   <section id="potential-issues-146" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FILE-API&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -6921,7 +6844,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="filter-effects-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="filter-effects-module-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Filter Effects Module Level 1</h2>
   <section id="spec-info-147" class="level3 info">
   <h3>Spec info</h3>
@@ -6937,6 +6860,7 @@
   <section id="potential-issues-147" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a></li>
@@ -7049,7 +6973,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="fullscreen-api-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
+  <section id="fullscreen-api-standard" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
   <h2>Fullscreen API Standard</h2>
   <section id="spec-info-151" class="level3 info">
   <h3>Spec info</h3>
@@ -7064,7 +6988,6 @@
   <section id="potential-issues-151" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/screen-orientation/"><code>https://w3c.github.io/screen-orientation/</code></a></li>
@@ -7160,7 +7083,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="generic-sensor-api" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="generic-sensor-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Generic Sensor API</h2>
   <section id="spec-info-154" class="level3 info">
   <h3>Spec info</h3>
@@ -7176,6 +7099,7 @@
   <section id="potential-issues-154" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/page-visibility-2/"><code>https://www.w3.org/TR/page-visibility-2/</code></a>, related reference &quot;PAGE-VISIBILITY&quot; uses URL <a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a></li>
@@ -7202,7 +7126,7 @@
   </ul>
   </section>
   </section>
-  <section id="geolocation-api-specification-2nd-edition" class="level2" data-spec="true" data-ok="true">
+  <section id="geolocation-api-specification-2nd-edition" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>Geolocation API Specification 2nd Edition</h2>
   <section id="spec-info-155" class="level3 info">
   <h3>Spec info</h3>
@@ -7217,7 +7141,9 @@
   </section>
   <section id="potential-issues-155" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-155" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -7532,7 +7458,7 @@
   <ul>
   <li>Initial URL: <a href="https://html.spec.whatwg.org/multipage/" class="uri">https://html.spec.whatwg.org/multipage/</a></li>
   <li>Crawled URL: <a href="https://html.spec.whatwg.org/multipage/" class="uri">https://html.spec.whatwg.org/multipage/</a></li>
-  <li>Crawled version: 6 November 2020</li>
+  <li>Crawled version: 16 November 2020</li>
   <li>Editor's Draft: <a href="https://html.spec.whatwg.org/multipage/" class="uri">https://html.spec.whatwg.org/multipage/</a></li>
   <li>Shortname: html</li>
   </ul>
@@ -7540,7 +7466,7 @@
   <section id="potential-issues-164" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>WindowProxy</code>, <code>undefined</code></li>
+  <li>Unknown WebIDL names used: <code>WindowProxy</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>DOMParser</code> also defined in <a href="https://www.w3.org/TR/DOM-Parsing/">DOM Parsing and Serialization</a></li>
@@ -7600,6 +7526,7 @@
   <li><a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-cascade-5/">CSS Cascading and Inheritance Level 5</a></li>
   <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a></li>
+  <li><a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-contain-2/">CSS Containment Module Level 2</a></li>
   <li><a href="https://www.w3.org/TR/css-highlight-api-1/">CSS Custom Highlight API Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-display-3/">CSS Display Module Level 3</a></li>
@@ -7613,12 +7540,12 @@
   <li><a href="https://wicg.github.io/css-parser-api/">CSS Parser API</a></li>
   <li><a href="https://www.w3.org/TR/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-ruby-1/">CSS Ruby Layout Module Level 1</a></li>
+  <li><a href="https://www.w3.org/TR/css-scroll-anchoring-1/">CSS Scroll Anchoring Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-nav-1/">CSS Spatial Navigation Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-text-4/">CSS Text Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-transforms-2/">CSS Transforms Module Level 2</a></li>
   <li><a href="https://www.w3.org/TR/css-transitions-1/">CSS Transitions</a></li>
   <li><a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a></li>
-  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-writing-modes-4/">CSS Writing Modes Level 4</a></li>
   <li><a href="https://www.w3.org/TR/cssom-view-1/">CSSOM View Module</a></li>
   <li><a href="https://wicg.github.io/custom-state-pseudo-class/">Custom State Pseudo Class</a></li>
@@ -7797,6 +7724,7 @@
   <li><a href="https://www.w3.org/TR/css-transforms-1/">CSS Transforms Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-values-3/">CSS Values and Units Module Level 3</a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-writing-modes-4/">CSS Writing Modes Level 4</a></li>
   <li><a href="https://www.w3.org/TR/encoding/">Encoding Standard</a></li>
   <li><a href="https://www.w3.org/TR/FileAPI/">File API</a></li>
@@ -7821,7 +7749,7 @@
   </ul>
   </section>
   </section>
-  <section id="htmlvideoelement.requestvideoframecallback" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="htmlvideoelement.requestvideoframecallback" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>HTMLVideoElement.requestVideoFrameCallback()</h2>
   <section id="spec-info-165" class="level3 info">
   <h3>Spec info</h3>
@@ -7836,7 +7764,6 @@
   <section id="potential-issues-165" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a>, related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
@@ -7849,7 +7776,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="icetransport-extensions-for-webrtc" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true">
+  <section id="icetransport-extensions-for-webrtc" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true">
   <h2>IceTransport Extensions for WebRTC</h2>
   <section id="spec-info-166" class="level3 info">
   <h3>Spec info</h3>
@@ -7864,6 +7791,7 @@
   <section id="potential-issues-166" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>RTCIceParameters</code> also defined in <a href="https://www.w3.org/TR/webrtc/">WebRTC 1.0: Real-Time Communication Between Browsers</a></li>
@@ -7906,7 +7834,7 @@
   </ul>
   </section>
   </section>
-  <section id="identity-for-webrtc-1.0" class="level2" data-spec="true" data-anomaly="true" data-unknownExposedNames="true" data-inconsistentRef="true">
+  <section id="identity-for-webrtc-1.0" class="level2" data-spec="true" data-anomaly="true" data-unknownExposedNames="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Identity for WebRTC 1.0</h2>
   <section id="spec-info-168" class="level3 info">
   <h3>Spec info</h3>
@@ -7923,6 +7851,7 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Unknown [Exposed] names used: <code>RTCIdentityProviderGlobalScope</code></li>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/2018/CR-webrtc-20180621/"><code>https://www.w3.org/TR/2018/CR-webrtc-20180621/</code></a>, related reference &quot;WEBRTC&quot; uses URL <a href="https://www.w3.org/TR/webrtc/"><code>https://www.w3.org/TR/webrtc/</code></a></li>
@@ -7942,7 +7871,7 @@
   </ul>
   </section>
   </section>
-  <section id="idle-detection-api" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="idle-detection-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Idle Detection API</h2>
   <section id="spec-info-169" class="level3 info">
   <h3>Spec info</h3>
@@ -7957,6 +7886,7 @@
   <section id="potential-issues-169" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a>, related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
@@ -8023,7 +7953,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="indexed-database-api-2.0" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="indexed-database-api-2.0" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Indexed Database API 2.0</h2>
   <section id="spec-info-172" class="level3 info">
   <h3>Spec info</h3>
@@ -8039,6 +7969,7 @@
   <section id="potential-issues-172" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a>, related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -8100,7 +8031,6 @@
   <li><a href="https://wicg.github.io/cookie-store/">Cookie Store API</a></li>
   <li><a href="https://www.w3.org/TR/credential-management-1/">Credential Management Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-animation-worklet-1/">CSS Animation Worklet API</a></li>
-  <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-counter-styles-3/">CSS Counter Styles Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-highlight-api-1/">CSS Custom Highlight API Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-fonts-4/">CSS Fonts Module Level 4</a></li>
@@ -8256,7 +8186,7 @@
   </ul>
   </section>
   </section>
-  <section id="intersection-observer" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="intersection-observer" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Intersection Observer</h2>
   <section id="spec-info-176" class="level3 info">
   <h3>Spec info</h3>
@@ -8272,7 +8202,6 @@
   <section id="potential-issues-176" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>DOMHighResTimeStamp</code> defined in <a href="https://www.w3.org/TR/hr-time-3/">High Resolution Time</a></li>
@@ -8357,7 +8286,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="keyboard-lock" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true">
+  <section id="keyboard-lock" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true">
   <h2>Keyboard Lock</h2>
   <section id="spec-info-179" class="level3 info">
   <h3>Spec info</h3>
@@ -8372,6 +8301,7 @@
   <section id="potential-issues-179" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>Keyboard</code> also defined in <a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></li>
@@ -8426,7 +8356,7 @@
   <ul>
   <li>Initial URL: <a href="https://wicg.github.io/largest-contentful-paint/" class="uri">https://wicg.github.io/largest-contentful-paint/</a></li>
   <li>Crawled URL: <a href="https://wicg.github.io/largest-contentful-paint/" class="uri">https://wicg.github.io/largest-contentful-paint/</a></li>
-  <li>Crawled version: 6 November 2020</li>
+  <li>Crawled version: 10 November 2020</li>
   <li>Editor's Draft: <a href="https://wicg.github.io/largest-contentful-paint/" class="uri">https://wicg.github.io/largest-contentful-paint/</a></li>
   <li>Shortname: largest-contentful-paint</li>
   </ul>
@@ -8727,7 +8657,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="media-capture-and-streams" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="media-capture-and-streams" class="level2" data-spec="true" data-ok="true">
   <h2>Media Capture and Streams</h2>
   <section id="spec-info-191" class="level3 info">
   <h3>Spec info</h3>
@@ -8742,9 +8672,7 @@
   </section>
   <section id="potential-issues-191" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-191" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -8837,7 +8765,7 @@
   </ul>
   </section>
   </section>
-  <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="media-capture-from-dom-elements" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Media Capture from DOM Elements</h2>
   <section id="spec-info-194" class="level3 info">
   <h3>Spec info</h3>
@@ -8853,6 +8781,7 @@
   <section id="potential-issues-194" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a>, related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
@@ -8950,12 +8879,10 @@
   <li><a href="https://www.w3.org/TR/css-cascade-3/">CSS Cascading and Inheritance Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a></li>
   <li><a href="https://drafts.csswg.org/css-cascade-5/">CSS Cascading and Inheritance Level 5</a></li>
-  <li><a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/cssom-1/">CSS Object Model (CSSOM)</a></li>
   <li><a href="https://www.w3.org/TR/css-overflow-3/">CSS Overflow Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-page-3/">CSS Paged Media Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-values-3/">CSS Values and Units Module Level 3</a></li>
-  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/mediaqueries-5/">Media Queries Level 5</a></li>
   <li><a href="https://w3c.github.io/screen-fold/">The Screen Fold API</a></li>
   <li><a href="https://www.w3.org/TR/appmanifest/">Web App Manifest</a></li>
@@ -8965,6 +8892,7 @@
   <ul>
   <li><a href="https://www.w3.org/TR/css-round-display-1/">CSS Round Display Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-syntax-3/">CSS Syntax Module Level 3</a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://mimesniff.spec.whatwg.org/">MIME Sniffing Standard</a></li>
   </ul>
   </section>
@@ -9001,6 +8929,7 @@
   <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-grid-2/">CSS Grid Layout Module Level 2</a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/filter-effects-1/">Filter Effects Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/appmanifest/">Web App Manifest</a></li>
   </ul>
@@ -9010,7 +8939,7 @@
   </ul>
   </section>
   </section>
-  <section id="media-session-standard" class="level2" data-spec="true" data-ok="true">
+  <section id="media-session-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>Media Session Standard</h2>
   <section id="spec-info-199" class="level3 info">
   <h3>Spec info</h3>
@@ -9025,7 +8954,9 @@
   </section>
   <section id="potential-issues-199" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-199" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -9036,7 +8967,7 @@
   </ul>
   </section>
   </section>
-  <section id="media-source-extensions" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
+  <section id="media-source-extensions" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true">
   <h2>Media Source Extensions™</h2>
   <section id="spec-info-200" class="level3 info">
   <h3>Spec info</h3>
@@ -9052,6 +8983,7 @@
   <section id="potential-issues-200" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
@@ -9080,7 +9012,7 @@
   </ul>
   </section>
   </section>
-  <section id="mediastream-recording" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="mediastream-recording" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>MediaStream Recording</h2>
   <section id="spec-info-201" class="level3 info">
   <h3>Spec info</h3>
@@ -9096,6 +9028,7 @@
   <section id="potential-issues-201" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>MediaStream</code> defined in <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a></li>
@@ -9408,7 +9341,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="notifications-api-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="notifications-api-standard" class="level2" data-spec="true" data-ok="true">
   <h2>Notifications API Standard</h2>
   <section id="spec-info-210" class="level3 info">
   <h3>Spec info</h3>
@@ -9422,9 +9355,7 @@
   </section>
   <section id="potential-issues-210" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-210" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -9440,7 +9371,7 @@
   </ul>
   </section>
   </section>
-  <section id="orientation-sensor" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="orientation-sensor" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Orientation Sensor</h2>
   <section id="spec-info-211" class="level3 info">
   <h3>Spec info</h3>
@@ -9456,6 +9387,7 @@
   <section id="potential-issues-211" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/2016/CR-orientation-event-20160818/"><code>https://www.w3.org/TR/2016/CR-orientation-event-20160818/</code></a></li>
@@ -9686,7 +9618,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="payment-handler-api" class="level2" data-spec="true" data-ok="true">
+  <section id="payment-handler-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>Payment Handler API</h2>
   <section id="spec-info-218" class="level3 info">
   <h3>Spec info</h3>
@@ -9701,7 +9633,9 @@
   </section>
   <section id="potential-issues-218" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-218" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -9804,7 +9738,7 @@
   </ul>
   </section>
   </section>
-  <section id="payment-request-api" class="level2" data-spec="true" data-ok="true">
+  <section id="payment-request-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>Payment Request API</h2>
   <section id="spec-info-222" class="level3 info">
   <h3>Spec info</h3>
@@ -9819,7 +9753,9 @@
   </section>
   <section id="potential-issues-222" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-222" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -9838,7 +9774,7 @@
   </ul>
   </section>
   </section>
-  <section id="performance-timeline-level-2" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
+  <section id="performance-timeline-level-2" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
   <h2>Performance Timeline Level 2</h2>
   <section id="spec-info-223" class="level3 info">
   <h3>Spec info</h3>
@@ -9854,6 +9790,7 @@
   <section id="potential-issues-223" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/timing-entrytypes-registry/"><code>https://w3c.github.io/timing-entrytypes-registry/</code></a></li>
@@ -9997,7 +9934,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="picture-in-picture" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="picture-in-picture" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Picture-in-Picture</h2>
   <section id="spec-info-226" class="level3 info">
   <h3>Spec info</h3>
@@ -10013,6 +9950,7 @@
   <section id="potential-issues-226" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/remote-playback/"><code>https://w3c.github.io/remote-playback/</code></a>, related reference &quot;Remote-Playback&quot; uses URL <a href="https://www.w3.org/TR/remote-playback/"><code>https://www.w3.org/TR/remote-playback/</code></a></li>
@@ -10025,7 +9963,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="pointer-events" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="pointer-events" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Pointer Events</h2>
   <section id="spec-info-227" class="level3 info">
   <h3>Spec info</h3>
@@ -10041,7 +9979,6 @@
   <section id="potential-issues-227" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a></li>
@@ -10064,7 +10001,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="pointer-lock-2.0" class="level2" data-spec="true" data-ok="true">
+  <section id="pointer-lock-2.0" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>Pointer Lock 2.0</h2>
   <section id="spec-info-228" class="level3 info">
   <h3>Spec info</h3>
@@ -10079,7 +10016,9 @@
   </section>
   <section id="potential-issues-228" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-228" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -10110,7 +10049,7 @@
   <section id="potential-issues-229" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>WindowProxy</code>, <code>undefined</code></li>
+  <li>Unknown WebIDL names used: <code>WindowProxy</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>MessageEventSource</code> also defined in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
@@ -10164,7 +10103,7 @@
   </ul>
   </section>
   </section>
-  <section id="presentation-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="presentation-api" class="level2" data-spec="true" data-ok="true">
   <h2>Presentation API</h2>
   <section id="spec-info-231" class="level3 info">
   <h3>Spec info</h3>
@@ -10179,9 +10118,7 @@
   </section>
   <section id="potential-issues-231" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-231" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -10343,6 +10280,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://www.w3.org/TR/css-values-4/">CSS Values and Units Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/selectors-4/">Selectors Level 4</a></li>
   </ul>
   </section>
@@ -10417,7 +10355,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="remote-playback-api" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <section id="remote-playback-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>Remote Playback API</h2>
   <section id="spec-info-240" class="level3 info">
   <h3>Spec info</h3>
@@ -10433,6 +10371,7 @@
   <section id="potential-issues-240" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>EventTarget</code> defined in <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
@@ -10464,7 +10403,7 @@
   <section id="potential-issues-241" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Date</code></li>
+  <li>Unknown WebIDL names used: <code>Date</code>, <code>void</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>DeprecationReportBody</code> also defined in <a href="https://wicg.github.io/deprecation-reporting/">Deprecation Reporting</a></li>
@@ -10615,7 +10554,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="resource-timing-level-2" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="resource-timing-level-2" class="level2" data-spec="true" data-ok="true">
   <h2>Resource Timing Level 2</h2>
   <section id="spec-info-245" class="level3 info">
   <h3>Spec info</h3>
@@ -10630,9 +10569,7 @@
   </section>
   <section id="potential-issues-245" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-245" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -10678,7 +10615,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="scalable-vector-graphics-svg-2" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="scalable-vector-graphics-svg-2" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Scalable Vector Graphics (SVG) 2</h2>
   <section id="spec-info-247" class="level3 info">
   <h3>Spec info</h3>
@@ -10694,6 +10631,7 @@
   <section id="potential-issues-247" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/svg-integration/"><code>https://www.w3.org/TR/svg-integration/</code></a></li>
@@ -10766,7 +10704,6 @@
   <li><a href="https://www.w3.org/TR/css-ui-4/">CSS Basic User Interface Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-box-3/">CSS Box Model Module Level 3</a></li>
   <li><a href="https://www.w3.org/TR/css-box-4/">CSS Box Model Module Level 4</a></li>
-  <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a></li>
   <li><a href="https://www.w3.org/TR/css-color-5/">CSS Color Module Level 5</a></li>
   <li><a href="https://www.w3.org/TR/css-contain-2/">CSS Containment Module Level 2</a></li>
@@ -10805,7 +10742,7 @@
   <p>Informative references to this spec from:</p>
   <ul>
   <li><a href="https://www.w3.org/TR/wai-aria-1.2/">Accessible Rich Internet Applications (WAI-ARIA) 1.2</a></li>
-  <li><a href="https://www.w3.org/TR/CSS2/">Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification</a></li>
+  <li><a href="https://www.w3.org/TR/CSS21/">Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification</a></li>
   <li><a href="https://www.w3.org/TR/CSS22/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a></li>
   <li><a href="https://www.w3.org/TR/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://www.w3.org/TR/css-cascade-3/">CSS Cascading and Inheritance Level 3</a></li>
@@ -10887,7 +10824,7 @@
   </ul>
   </section>
   </section>
-  <section id="screen-wake-lock-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="screen-wake-lock-api" class="level2" data-spec="true" data-ok="true">
   <h2>Screen Wake Lock API</h2>
   <section id="spec-info-250" class="level3 info">
   <h3>Spec info</h3>
@@ -10902,9 +10839,7 @@
   </section>
   <section id="potential-issues-250" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-250" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -10919,7 +10854,7 @@
   <ul>
   <li>Initial URL: <a href="https://drafts.csswg.org/scroll-animations-1/" class="uri">https://drafts.csswg.org/scroll-animations-1/</a></li>
   <li>Crawled URL: <a href="https://drafts.csswg.org/scroll-animations-1/" class="uri">https://drafts.csswg.org/scroll-animations-1/</a></li>
-  <li>Crawled version: 18 September 2020</li>
+  <li>Crawled version: 11 November 2020</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/scroll-animations-1/" class="uri">https://drafts.csswg.org/scroll-animations-1/</a></li>
   <li>Shortname: scroll-animations-1</li>
   </ul>
@@ -11008,7 +10943,7 @@
   </ul>
   </section>
   </section>
-  <section id="selection-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="selection-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Selection API</h2>
   <section id="spec-info-253" class="level3 info">
   <h3>Spec info</h3>
@@ -11024,7 +10959,6 @@
   <section id="potential-issues-253" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/"><code>https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/</code></a></li>
@@ -11118,7 +11052,7 @@
   </ul>
   </section>
   </section>
-  <section id="serial-api" class="level2" data-spec="true" data-ok="true">
+  <section id="serial-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>Serial API</h2>
   <section id="spec-info-255" class="level3 info">
   <h3>Spec info</h3>
@@ -11132,7 +11066,9 @@
   </section>
   <section id="potential-issues-255" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-255" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -11163,7 +11099,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="service-workers-1" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="service-workers-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Service Workers 1</h2>
   <section id="spec-info-257" class="level3 info">
   <h3>Spec info</h3>
@@ -11179,6 +11115,7 @@
   <section id="potential-issues-257" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/push-api/"><code>https://w3c.github.io/push-api/</code></a></li>
@@ -11266,7 +11203,7 @@
   </ul>
   </section>
   </section>
-  <section id="streams-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="streams-standard" class="level2" data-spec="true" data-ok="true">
   <h2>Streams Standard</h2>
   <section id="spec-info-259" class="level3 info">
   <h3>Spec info</h3>
@@ -11280,9 +11217,7 @@
   </section>
   <section id="potential-issues-259" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-259" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -11411,7 +11346,7 @@
   <h3>Potential issue(s)</h3>
   <ul>
   <li>Spec uses WebIDL but does not reference it normatively</li>
-  <li>Unknown WebIDL names used: <code>WindowProxy</code></li>
+  <li>Unknown WebIDL names used: <code>WindowProxy</code>, <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/2012/WD-css-animations-1-20120403/"><code>https://www.w3.org/TR/2012/WD-css-animations-1-20120403/</code></a></li>
@@ -11584,7 +11519,7 @@
   <ul>
   <li>Initial URL: <a href="https://wicg.github.io/scroll-to-text-fragment/" class="uri">https://wicg.github.io/scroll-to-text-fragment/</a></li>
   <li>Crawled URL: <a href="https://wicg.github.io/scroll-to-text-fragment/" class="uri">https://wicg.github.io/scroll-to-text-fragment/</a></li>
-  <li>Crawled version: 22 October 2020</li>
+  <li>Crawled version: 13 November 2020</li>
   <li>Editor's Draft: <a href="https://wicg.github.io/scroll-to-text-fragment/" class="uri">https://wicg.github.io/scroll-to-text-fragment/</a></li>
   <li>Shortname: scroll-to-text-fragment</li>
   </ul>
@@ -11594,7 +11529,6 @@
   <ul>
   <li>Missing references for links:
   <ul>
-  <li><a href="https://w3c.github.io/webappsec-fetch-metadata/"><code>https://w3c.github.io/webappsec-fetch-metadata/</code></a></li>
   <li><a href="https://w3c.github.io/selection-api/"><code>https://w3c.github.io/selection-api/</code></a></li>
   </ul></li>
   </ul>
@@ -11645,7 +11579,7 @@
   <section id="potential-issues-269" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>Screen</code>, <code>undefined</code></li>
+  <li>Unknown WebIDL names used: <code>Screen</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-269" class="level3 dependencies">
@@ -11661,7 +11595,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="the-storage-access-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="the-storage-access-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>The Storage Access API</h2>
   <section id="spec-info-270" class="level3 info">
   <h3>Spec info</h3>
@@ -11676,7 +11610,6 @@
   <section id="potential-issues-270" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/webdriver/webdriver-spec.html"><code>https://w3c.github.io/webdriver/webdriver-spec.html</code></a></li>
@@ -11972,7 +11905,7 @@
   </ul>
   </section>
   </section>
-  <section id="url-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="url-standard" class="level2" data-spec="true" data-ok="true">
   <h2>URL Standard</h2>
   <section id="spec-info-279" class="level3 info">
   <h3>Spec info</h3>
@@ -11986,9 +11919,7 @@
   </section>
   <section id="potential-issues-279" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-279" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -12062,7 +11993,7 @@
   </ul>
   </section>
   </section>
-  <section id="user-timing-level-2" class="level2" data-spec="true" data-ok="true">
+  <section id="user-timing-level-2" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>User Timing Level 2</h2>
   <section id="spec-info-280" class="level3 info">
   <h3>Spec info</h3>
@@ -12077,7 +12008,9 @@
   </section>
   <section id="potential-issues-280" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-280" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -12093,7 +12026,7 @@
   </ul>
   </section>
   </section>
-  <section id="user-timing-level-3" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="user-timing-level-3" class="level2" data-spec="true" data-ok="true">
   <h2>User Timing Level 3</h2>
   <section id="spec-info-281" class="level3 info">
   <h3>Spec info</h3>
@@ -12108,9 +12041,7 @@
   </section>
   <section id="potential-issues-281" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-281" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -12226,7 +12157,7 @@
   </ul>
   </section>
   </section>
-  <section id="web-animations" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="web-animations" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Web Animations</h2>
   <section id="spec-info-286" class="level3 info">
   <h3>Spec info</h3>
@@ -12242,6 +12173,7 @@
   <section id="potential-issues-286" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a></li>
@@ -12311,7 +12243,7 @@
   </ul>
   </section>
   </section>
-  <section id="web-audio-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="web-audio-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Web Audio API</h2>
   <section id="spec-info-288" class="level3 info">
   <h3>Spec info</h3>
@@ -12327,6 +12259,7 @@
   <section id="potential-issues-288" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-fromelement/"><code>https://w3c.github.io/mediacapture-fromelement/</code></a></li>
@@ -12389,7 +12322,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-background-synchronization" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="web-background-synchronization" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Web Background Synchronization</h2>
   <section id="spec-info-290" class="level3 info">
   <h3>Spec info</h3>
@@ -12404,6 +12337,7 @@
   <section id="potential-issues-290" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/webappsec/specs/powerfulfeatures/"><code>https://w3c.github.io/webappsec/specs/powerfulfeatures/</code></a></li>
@@ -12424,7 +12358,7 @@
   </ul>
   </section>
   </section>
-  <section id="web-bluetooth" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="web-bluetooth" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>Web Bluetooth</h2>
   <section id="spec-info-291" class="level3 info">
   <h3>Spec info</h3>
@@ -12439,6 +12373,7 @@
   <section id="potential-issues-291" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/fingerprinting-guidance/"><code>https://w3c.github.io/fingerprinting-guidance/</code></a></li>
@@ -12528,7 +12463,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-midi-api" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="web-midi-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Web MIDI API</h2>
   <section id="spec-info-294" class="level3 info">
   <h3>Spec info</h3>
@@ -12544,6 +12479,7 @@
   <section id="potential-issues-294" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a>, related reference &quot;DOM-LEVEL-3-CORE&quot; uses URL <a href="http://www.w3.org/TR/DOM-Level-3-Core/"><code>http://www.w3.org/TR/DOM-Level-3-Core/</code></a></li>
@@ -12559,7 +12495,7 @@
   </ul>
   </section>
   </section>
-  <section id="web-nfc" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="web-nfc" class="level2" data-spec="true" data-ok="true">
   <h2>Web NFC</h2>
   <section id="spec-info-295" class="level3 info">
   <h3>Spec info</h3>
@@ -12573,9 +12509,7 @@
   </section>
   <section id="potential-issues-295" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-295" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -12613,7 +12547,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-periodic-background-synchronization" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
+  <section id="web-periodic-background-synchronization" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
   <h2>Web Periodic Background Synchronization</h2>
   <section id="spec-info-297" class="level3 info">
   <h3>Spec info</h3>
@@ -12628,6 +12562,7 @@
   <section id="potential-issues-297" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a>, related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
@@ -12642,7 +12577,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-share-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
+  <section id="web-share-api" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
   <h2>Web Share API</h2>
   <section id="spec-info-298" class="level3 info">
   <h3>Spec info</h3>
@@ -12658,7 +12593,6 @@
   <section id="potential-issues-298" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/web-intents/"><code>https://www.w3.org/TR/web-intents/</code></a></li>
@@ -12696,7 +12630,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="web-speech-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="web-speech-api" class="level2" data-spec="true" data-ok="true">
   <h2>Web Speech API</h2>
   <section id="spec-info-300" class="level3 info">
   <h3>Spec info</h3>
@@ -12710,9 +12644,7 @@
   </section>
   <section id="potential-issues-300" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-300" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -12750,7 +12682,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webassembly-javascript-interface" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
+  <section id="webassembly-javascript-interface" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
   <h2>WebAssembly JavaScript Interface</h2>
   <section id="spec-info-302" class="level3 info">
   <h3>Spec info</h3>
@@ -12766,6 +12698,7 @@
   <section id="potential-issues-302" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/wasm-core/"><code>https://www.w3.org/TR/wasm-core/</code></a></li>
@@ -12816,7 +12749,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webcodecs" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="webcodecs" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>WebCodecs</h2>
   <section id="spec-info-304" class="level3 info">
   <h3>Spec info</h3>
@@ -12831,7 +12764,6 @@
   <section id="potential-issues-304" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://w3c.github.io/mediacapture-screen-share/"><code>https://w3c.github.io/mediacapture-screen-share/</code></a></li>
@@ -12912,7 +12844,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-2.0-specification" class="level2" data-spec="true" data-ok="true">
+  <section id="webgl-2.0-specification" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>WebGL 2.0 Specification</h2>
   <section id="spec-info-307" class="level3 info">
   <h3>Spec info</h3>
@@ -12926,7 +12858,9 @@
   </section>
   <section id="potential-issues-307" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-307" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -12946,14 +12880,14 @@
   </ul>
   </section>
   </section>
-  <section id="webgl-angle_instanced_arrays-khronos-ratified-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
+  <section id="webgl-angle_instanced_arrays-khronos-ratified-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification</h2>
   <section id="spec-info-308" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/" class="uri">https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/" class="uri">https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/" class="uri">https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/</a></li>
   <li>Shortname: ANGLE_instanced_arrays</li>
   </ul>
@@ -12963,6 +12897,7 @@
   <ul>
   <li>No normative references found</li>
   <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>GLenum</code> defined in <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
@@ -12986,7 +12921,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/</a></li>
   <li>Shortname: EXT_blend_minmax</li>
   </ul>
@@ -13011,7 +12946,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/</a></li>
   <li>Shortname: EXT_clip_cull_distance</li>
   </ul>
@@ -13036,7 +12971,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/</a></li>
   <li>Shortname: EXT_color_buffer_float</li>
   </ul>
@@ -13061,7 +12996,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/</a></li>
   <li>Shortname: EXT_color_buffer_half_float</li>
   </ul>
@@ -13079,14 +13014,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-ext_disjoint_timer_query-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true">
+  <section id="webgl-ext_disjoint_timer_query-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebGL EXT_disjoint_timer_query Extension Specification</h2>
   <section id="spec-info-313" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/</a></li>
   <li>Shortname: EXT_disjoint_timer_query</li>
   </ul>
@@ -13096,6 +13031,7 @@
   <ul>
   <li>No normative references found</li>
   <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>GLuint64EXT</code> also defined in <a href="https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/">WebGL EXT_disjoint_timer_query_webgl2 Extension Specification</a></li>
@@ -13113,14 +13049,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-ext_disjoint_timer_query_webgl2-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true">
+  <section id="webgl-ext_disjoint_timer_query_webgl2-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebGL EXT_disjoint_timer_query_webgl2 Extension Specification</h2>
   <section id="spec-info-314" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/</a></li>
   <li>Shortname: EXT_disjoint_timer_query_webgl2</li>
   </ul>
@@ -13130,6 +13066,7 @@
   <ul>
   <li>No normative references found</li>
   <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>GLuint64EXT</code> also defined in <a href="https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/">WebGL EXT_disjoint_timer_query Extension Specification</a></li>
@@ -13154,7 +13091,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/</a></li>
   <li>Shortname: EXT_float_blend</li>
   </ul>
@@ -13179,7 +13116,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/</a></li>
   <li>Shortname: EXT_frag_depth</li>
   </ul>
@@ -13204,7 +13141,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/</a></li>
   <li>Shortname: EXT_shader_texture_lod</li>
   </ul>
@@ -13229,7 +13166,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/</a></li>
   <li>Shortname: EXT_sRGB</li>
   </ul>
@@ -13254,7 +13191,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/</a></li>
   <li>Shortname: EXT_texture_compression_bptc</li>
   </ul>
@@ -13279,7 +13216,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/</a></li>
   <li>Shortname: EXT_texture_compression_rgtc</li>
   </ul>
@@ -13304,7 +13241,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/</a></li>
   <li>Shortname: EXT_texture_filter_anisotropic</li>
   </ul>
@@ -13329,7 +13266,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/" class="uri">https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/</a></li>
   <li>Shortname: EXT_texture_norm16</li>
   </ul>
@@ -13354,7 +13291,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/" class="uri">https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/" class="uri">https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/" class="uri">https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/</a></li>
   <li>Shortname: KHR_parallel_shader_compile</li>
   </ul>
@@ -13372,14 +13309,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-oes_draw_buffers_indexed-extension-draft-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
+  <section id="webgl-oes_draw_buffers_indexed-extension-draft-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebGL OES_draw_buffers_indexed Extension Draft Specification</h2>
   <section id="spec-info-324" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/</a></li>
   <li>Shortname: OES_draw_buffers_indexed</li>
   </ul>
@@ -13389,6 +13326,7 @@
   <ul>
   <li>No normative references found</li>
   <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>GLenum</code> defined in <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
@@ -13410,7 +13348,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/</a></li>
   <li>Shortname: OES_element_index_uint</li>
   </ul>
@@ -13435,7 +13373,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/</a></li>
   <li>Shortname: OES_fbo_render_mipmap</li>
   </ul>
@@ -13460,7 +13398,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/</a></li>
   <li>Shortname: OES_standard_derivatives</li>
   </ul>
@@ -13485,7 +13423,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_texture_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_texture_float/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_texture_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_texture_float/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/OES_texture_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_texture_float/</a></li>
   <li>Shortname: OES_texture_float</li>
   </ul>
@@ -13510,7 +13448,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/</a></li>
   <li>Shortname: OES_texture_float_linear</li>
   </ul>
@@ -13535,7 +13473,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/</a></li>
   <li>Shortname: OES_texture_half_float</li>
   </ul>
@@ -13560,7 +13498,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/</a></li>
   <li>Shortname: OES_texture_half_float_linear</li>
   </ul>
@@ -13578,14 +13516,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-oes_vertex_array_object-khronos-ratified-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
+  <section id="webgl-oes_vertex_array_object-khronos-ratified-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebGL OES_vertex_array_object Khronos Ratified Extension Specification</h2>
   <section id="spec-info-332" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/" class="uri">https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/</a></li>
   <li>Shortname: OES_vertex_array_object</li>
   </ul>
@@ -13595,6 +13533,7 @@
   <ul>
   <li>No normative references found</li>
   <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>WebGLObject</code> defined in <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
@@ -13608,14 +13547,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-ovr_multiview2-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
+  <section id="webgl-ovr_multiview2-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebGL OVR_multiview2 Extension Specification</h2>
   <section id="spec-info-333" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/" class="uri">https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/" class="uri">https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/" class="uri">https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/</a></li>
   <li>Shortname: OVR_multiview2</li>
   </ul>
@@ -13625,6 +13564,7 @@
   <ul>
   <li>No normative references found</li>
   <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>GLenum</code> defined in <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
@@ -13640,7 +13580,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-specification" class="level2" data-spec="true" data-ok="true">
+  <section id="webgl-specification" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>WebGL Specification</h2>
   <section id="spec-info-334" class="level3 info">
   <h3>Spec info</h3>
@@ -13654,7 +13594,9 @@
   </section>
   <section id="potential-issues-334" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-334" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -13695,7 +13637,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/</a></li>
   <li>Shortname: WEBGL_blend_equation_advanced_coherent</li>
   </ul>
@@ -13720,7 +13662,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/</a></li>
   <li>Shortname: WEBGL_color_buffer_float</li>
   </ul>
@@ -13745,7 +13687,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/</a></li>
   <li>Shortname: WEBGL_compressed_texture_astc</li>
   </ul>
@@ -13770,7 +13712,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/</a></li>
   <li>Shortname: WEBGL_compressed_texture_etc</li>
   </ul>
@@ -13795,7 +13737,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/</a></li>
   <li>Shortname: WEBGL_compressed_texture_etc1</li>
   </ul>
@@ -13820,7 +13762,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/</a></li>
   <li>Shortname: WEBGL_compressed_texture_pvrtc</li>
   </ul>
@@ -13845,7 +13787,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/</a></li>
   <li>Shortname: WEBGL_compressed_texture_s3tc</li>
   </ul>
@@ -13870,7 +13812,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/</a></li>
   <li>Shortname: WEBGL_compressed_texture_s3tc_srgb</li>
   </ul>
@@ -13895,7 +13837,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/</a></li>
   <li>Shortname: WEBGL_debug_renderer_info</li>
   </ul>
@@ -13920,7 +13862,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/</a></li>
   <li>Shortname: WEBGL_debug_shaders</li>
   </ul>
@@ -13949,7 +13891,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/</a></li>
   <li>Shortname: WEBGL_depth_texture</li>
   </ul>
@@ -13967,14 +13909,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-webgl_draw_buffers-khronos-ratified-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
+  <section id="webgl-webgl_draw_buffers-khronos-ratified-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification</h2>
   <section id="spec-info-346" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/</a></li>
   <li>Shortname: WEBGL_draw_buffers</li>
   </ul>
@@ -13984,6 +13926,7 @@
   <ul>
   <li>No normative references found</li>
   <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>GLenum</code> defined in <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
@@ -13996,14 +13939,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-webgl_draw_instanced_base_vertex_base_instance-extension-draft-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
+  <section id="webgl-webgl_draw_instanced_base_vertex_base_instance-extension-draft-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification</h2>
   <section id="spec-info-347" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/</a></li>
   <li>Shortname: WEBGL_draw_instanced_base_vertex_base_instance</li>
   </ul>
@@ -14013,6 +13956,7 @@
   <ul>
   <li>No normative references found</li>
   <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>GLenum</code> defined in <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
@@ -14029,14 +13973,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-webgl_lose_context-khronos-ratified-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true">
+  <section id="webgl-webgl_lose_context-khronos-ratified-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-unknownIdlNames="true">
   <h2>WebGL WEBGL_lose_context Khronos Ratified Extension Specification</h2>
   <section id="spec-info-348" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/</a></li>
   <li>Shortname: WEBGL_lose_context</li>
   </ul>
@@ -14046,6 +13990,7 @@
   <ul>
   <li>No normative references found</li>
   <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   </ul>
   </section>
   <section id="known-dependencies-on-this-specification-348" class="level3 dependencies">
@@ -14054,14 +13999,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-webgl_multi_draw-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
+  <section id="webgl-webgl_multi_draw-extension-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebGL WEBGL_multi_draw Extension Specification</h2>
   <section id="spec-info-349" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/</a></li>
   <li>Shortname: WEBGL_multi_draw</li>
   </ul>
@@ -14071,6 +14016,7 @@
   <ul>
   <li>No normative references found</li>
   <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>GLenum</code> defined in <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
@@ -14086,14 +14032,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgl-webgl_multi_draw_instanced_base_vertex_base_instance-extension-draft-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-missingWebIdlRef="true">
+  <section id="webgl-webgl_multi_draw_instanced_base_vertex_base_instance-extension-draft-specification" class="level2" data-spec="true" data-anomaly="true" data-noNormativeRefs="true" data-noRefToWebIDL="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification</h2>
   <section id="spec-info-350" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/</a></li>
   <li>Crawled URL: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/</a></li>
-  <li>Crawled version: 7 October 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/" class="uri">https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/</a></li>
   <li>Shortname: WEBGL_multi_draw_instanced_base_vertex_base_instance</li>
   </ul>
@@ -14103,6 +14049,7 @@
   <ul>
   <li>No normative references found</li>
   <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>GLenum</code> defined in <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
@@ -14118,23 +14065,21 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webgpu" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="webgpu" class="level2" data-spec="true" data-ok="true">
   <h2>WebGPU</h2>
   <section id="spec-info-351" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://gpuweb.github.io/gpuweb/" class="uri">https://gpuweb.github.io/gpuweb/</a></li>
   <li>Crawled URL: <a href="https://gpuweb.github.io/gpuweb/" class="uri">https://gpuweb.github.io/gpuweb/</a></li>
-  <li>Crawled version: 5 November 2020</li>
+  <li>Crawled version: 11 November 2020</li>
   <li>Editor's Draft: <a href="https://gpuweb.github.io/gpuweb/" class="uri">https://gpuweb.github.io/gpuweb/</a></li>
   <li>Shortname: gpuweb</li>
   </ul>
   </section>
   <section id="potential-issues-351" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-351" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -14142,7 +14087,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webhid-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="webhid-api" class="level2" data-spec="true" data-ok="true">
   <h2>WebHID API</h2>
   <section id="spec-info-352" class="level3 info">
   <h3>Spec info</h3>
@@ -14156,9 +14101,7 @@
   </section>
   <section id="potential-issues-352" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-352" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -14416,7 +14359,7 @@
   <section id="potential-issues-354" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>AlgorithmIdentifier</code>, <code>DOMException</code>, <code>undefined</code></li>
+  <li>Unknown WebIDL names used: <code>AlgorithmIdentifier</code>, <code>DOMException</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>RTCIceParameters</code> also defined in <a href="https://w3c.github.io/webrtc-ice/">IceTransport Extensions for WebRTC</a></li>
@@ -14505,23 +14448,21 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webtransport" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
+  <section id="webtransport" class="level2" data-spec="true" data-ok="true">
   <h2>WebTransport</h2>
   <section id="spec-info-357" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://w3c.github.io/webtransport/" class="uri">https://w3c.github.io/webtransport/</a></li>
   <li>Crawled URL: <a href="https://w3c.github.io/webtransport/" class="uri">https://w3c.github.io/webtransport/</a></li>
-  <li>Crawled version: 6 November 2020</li>
+  <li>Crawled version: 11 November 2020</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webtransport/" class="uri">https://w3c.github.io/webtransport/</a></li>
   <li>Shortname: webtransport</li>
   </ul>
   </section>
   <section id="potential-issues-357" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
-  </ul>
+  <p>This specification looks good!</p>
   </section>
   <section id="known-dependencies-on-this-specification-357" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -14529,14 +14470,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webusb-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-inconsistentRef="true">
+  <section id="webusb-api" class="level2" data-spec="true" data-anomaly="true" data-inconsistentRef="true">
   <h2>WebUSB API</h2>
   <section id="spec-info-358" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://wicg.github.io/webusb/" class="uri">https://wicg.github.io/webusb/</a></li>
   <li>Crawled URL: <a href="https://wicg.github.io/webusb/" class="uri">https://wicg.github.io/webusb/</a></li>
-  <li>Crawled version: 8 November 2020</li>
+  <li>Crawled version: 14 November 2020</li>
   <li>Editor's Draft: <a href="https://wicg.github.io/webusb/" class="uri">https://wicg.github.io/webusb/</a></li>
   <li>Shortname: webusb</li>
   </ul>
@@ -14544,7 +14485,6 @@
   <section id="potential-issues-358" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Inconsistent references for links:
   <ul>
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a>, related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
@@ -14599,7 +14539,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webxr-anchors-module" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
+  <section id="webxr-anchors-module" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
   <h2>WebXR Anchors Module</h2>
   <section id="spec-info-360" class="level3 info">
   <h3>Spec info</h3>
@@ -14614,6 +14554,7 @@
   <section id="potential-issues-360" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>XRHitTestResult</code> defined in <a href="https://immersive-web.github.io/hit-test/">WebXR Hit Test Module</a></li>
@@ -14672,7 +14613,7 @@
   </ul>
   </section>
   </section>
-  <section id="webxr-device-api" class="level2" data-spec="true" data-anomaly="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
+  <section id="webxr-device-api" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-redefinedIdlNames="true" data-missingWebIdlRef="true" data-missingLinkRef="true" data-inconsistentRef="true">
   <h2>WebXR Device API</h2>
   <section id="spec-info-362" class="level3 info">
   <h3>Spec info</h3>
@@ -14688,6 +14629,7 @@
   <section id="potential-issues-362" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
   <li>WebIDL names also defined elsewhere:
   <ul>
   <li><code>XRSessionMode</code> also defined in <a href="https://www.w3.org/TR/webxr-ar-module-1/">WebXR Augmented Reality Module - Level 1</a></li>
@@ -14837,7 +14779,7 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webxr-hit-test-module" class="level2" data-spec="true" data-ok="true">
+  <section id="webxr-hit-test-module" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true">
   <h2>WebXR Hit Test Module</h2>
   <section id="spec-info-366" class="level3 info">
   <h3>Spec info</h3>
@@ -14851,7 +14793,9 @@
   </section>
   <section id="potential-issues-366" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>This specification looks good!</p>
+  <ul>
+  <li>Unknown WebIDL names used: <code>void</code></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-366" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -14863,14 +14807,14 @@
   <p>No informative reference to this spec from other specs.</p>
   </section>
   </section>
-  <section id="webxr-layers-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingWebIdlRef="true">
+  <section id="webxr-layers-api-level-1" class="level2" data-spec="true" data-anomaly="true" data-missingWebIdlRef="true">
   <h2>WebXR Layers API Level 1</h2>
   <section id="spec-info-367" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://immersive-web.github.io/layers/" class="uri">https://immersive-web.github.io/layers/</a></li>
   <li>Crawled URL: <a href="https://immersive-web.github.io/layers/" class="uri">https://immersive-web.github.io/layers/</a></li>
-  <li>Crawled version: 2 November 2020</li>
+  <li>Crawled version: 13 November 2020</li>
   <li>Editor's Draft: <a href="https://immersive-web.github.io/layers/" class="uri">https://immersive-web.github.io/layers/</a></li>
   <li>Shortname: layers</li>
   </ul>
@@ -14878,7 +14822,6 @@
   <section id="potential-issues-367" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Missing references for WebIDL names:
   <ul>
   <li><code>WebGLTexture</code> defined in <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
@@ -14918,7 +14861,7 @@
   </ul>
   </section>
   </section>
-  <section id="xmlhttprequest-standard" class="level2" data-spec="true" data-anomaly="true" data-unknownIdlNames="true" data-missingLinkRef="true">
+  <section id="xmlhttprequest-standard" class="level2" data-spec="true" data-anomaly="true" data-missingLinkRef="true">
   <h2>XMLHttpRequest Standard</h2>
   <section id="spec-info-369" class="level3 info">
   <h3>Spec info</h3>
@@ -14933,7 +14876,6 @@
   <section id="potential-issues-369" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
   <ul>
-  <li>Unknown WebIDL names used: <code>undefined</code></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a></li>

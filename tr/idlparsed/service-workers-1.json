@@ -3137,6 +3137,7 @@
       "ServiceWorker": [
         "EventTarget",
         "ServiceWorkerState",
+        "void",
         "EventHandler",
         "AbstractWorker"
       ],
@@ -3144,6 +3145,7 @@
         "EventTarget",
         "ServiceWorker",
         "ServiceWorkerUpdateViaCache",
+        "void",
         "EventHandler"
       ],
       "Navigator": [
@@ -3157,6 +3159,7 @@
         "ServiceWorker",
         "ServiceWorkerRegistration",
         "RegistrationOptions",
+        "void",
         "EventHandler"
       ],
       "RegistrationOptions": [
@@ -3167,11 +3170,13 @@
         "WorkerGlobalScope",
         "Clients",
         "ServiceWorkerRegistration",
+        "void",
         "EventHandler"
       ],
       "Client": [
         "FrameType",
-        "ClientType"
+        "ClientType",
+        "void"
       ],
       "WindowClient": [
         "Client",
@@ -3181,14 +3186,16 @@
       "Clients": [
         "Client",
         "ClientQueryOptions",
-        "WindowClient"
+        "WindowClient",
+        "void"
       ],
       "ClientQueryOptions": [
         "ClientType"
       ],
       "ExtendableEvent": [
         "Event",
-        "ExtendableEventInit"
+        "ExtendableEventInit",
+        "void"
       ],
       "ExtendableEventInit": [
         "EventInit"
@@ -3197,6 +3204,7 @@
         "ExtendableEvent",
         "FetchEventInit",
         "Request",
+        "void",
         "Response"
       ],
       "FetchEventInit": [
@@ -3223,6 +3231,7 @@
         "RequestInfo",
         "CacheQueryOptions",
         "Response",
+        "void",
         "Request"
       ],
       "CacheQueryOptions": [],
@@ -3237,6 +3246,7 @@
     },
     "externalDependencies": [
       "EventTarget",
+      "void",
       "EventHandler",
       "Navigator",
       "WorkerNavigator",

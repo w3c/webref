@@ -2392,6 +2392,7 @@
         "PaymentOptions",
         "PaymentResponse",
         "PaymentDetailsUpdate",
+        "void",
         "PaymentAddress",
         "PaymentShippingType",
         "EventHandler"
@@ -2431,6 +2432,7 @@
       "PaymentResponse": [
         "EventTarget",
         "PaymentAddress",
+        "void",
         "PaymentComplete",
         "PaymentValidationErrors",
         "EventHandler"
@@ -2442,7 +2444,8 @@
       "PayerErrors": [],
       "MerchantValidationEvent": [
         "Event",
-        "MerchantValidationEventInit"
+        "MerchantValidationEventInit",
+        "void"
       ],
       "MerchantValidationEventInit": [
         "EventInit"
@@ -2457,6 +2460,7 @@
       "PaymentRequestUpdateEvent": [
         "Event",
         "PaymentRequestUpdateEventInit",
+        "void",
         "PaymentDetailsUpdate"
       ],
       "PaymentRequestUpdateEventInit": [
@@ -2465,6 +2469,7 @@
     },
     "externalDependencies": [
       "EventTarget",
+      "void",
       "EventHandler",
       "Event",
       "EventInit"

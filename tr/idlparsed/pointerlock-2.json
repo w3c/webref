@@ -210,9 +210,12 @@
     "globals": {},
     "exposed": {},
     "dependencies": {
-      "Element": [],
+      "Element": [
+        "void"
+      ],
       "Document": [
-        "EventHandler"
+        "EventHandler",
+        "void"
       ],
       "DocumentOrShadowRoot": [
         "Element"
@@ -222,6 +225,7 @@
     },
     "externalDependencies": [
       "Element",
+      "void",
       "Document",
       "EventHandler",
       "DocumentOrShadowRoot",
