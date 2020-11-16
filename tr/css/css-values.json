@@ -7,10 +7,19 @@
   "descriptors": {},
   "valuespaces": {
     "<url>": {
-      "value": "url( <string> <url-modifier>* )"
+      "value": "url( <string> <url-modifier>* ) | src( <string> <url-modifier>* )"
+    },
+    "<ratio>": {
+      "value": "<number [0,∞]> [ / <number [0,∞]> ]?"
     },
     "<position>": {
       "value": "[ [ left | center | right ] || [ top | center | bottom ] | [ left | center | right | <length-percentage> ] [ top | center | bottom | <length-percentage> ]? | [ [ left | right ] <length-percentage> ] && [ [ top | bottom ] <length-percentage> ] ]"
+    },
+    "<attr()>": {
+      "value": "attr( <wq-name> <attr-type>? , <declaration-value>?)"
+    },
+    "<attr-type>": {
+      "value": "string | url | ident | color | number | percentage | length | angle | time | frequency | flex | <dimension-unit>"
     },
     "<calc()>": {
       "value": "calc( <calc-sum> )"
@@ -24,6 +33,57 @@
     "<clamp()>": {
       "value": "clamp( <calc-sum>#{3} )"
     },
+    "<round()>": {
+      "value": "round( <rounding-strategy>?, <calc-sum>, <calc-sum> )"
+    },
+    "<mod()>": {
+      "value": "mod( <calc-sum>, <calc-sum> )"
+    },
+    "<rem()>": {
+      "value": "rem( <calc-sum>, <calc-sum> )"
+    },
+    "<sin()>": {
+      "value": "sin( <calc-sum> )"
+    },
+    "<cos()>": {
+      "value": "cos( <calc-sum> )"
+    },
+    "<tan()>": {
+      "value": "tan( <calc-sum> )"
+    },
+    "<asin()>": {
+      "value": "asin( <calc-sum> )"
+    },
+    "<acos()>": {
+      "value": "acos( <calc-sum> )"
+    },
+    "<atan()>": {
+      "value": "atan( <calc-sum> )"
+    },
+    "<atan2()>": {
+      "value": "atan2( <calc-sum>, <calc-sum> )"
+    },
+    "<pow()>": {
+      "value": "pow( <calc-sum>, <calc-sum> )"
+    },
+    "<sqrt()>": {
+      "value": "sqrt( <calc-sum> )"
+    },
+    "<hypot()>": {
+      "value": "hypot( <calc-sum># )"
+    },
+    "<log()>": {
+      "value": "log( <calc-sum>, <calc-sum>? )"
+    },
+    "<exp()>": {
+      "value": "exp( <calc-sum> )"
+    },
+    "<abs()>": {
+      "value": "abs( <calc-sum> )"
+    },
+    "<sign()>": {
+      "value": "sign( <calc-sum> )"
+    },
     "<calc-sum>": {
       "value": "<calc-product> [ [ '+' | '-' ] <calc-product> ]*"
     },
@@ -31,7 +91,10 @@
       "value": "<calc-value> [ [ '*' | '/' ] <calc-value> ]*"
     },
     "<calc-value>": {
-      "value": "<number> | <dimension> | <percentage> | ( <calc-sum> )"
+      "value": "<number> | <dimension> | <percentage> | <calc-constant> | ( <calc-sum> )"
+    },
+    "<calc-constant>": {
+      "value": "e | pi | infinity | -infinity | NaN"
     },
     "<length-percentage>": {
       "value": "[ <length> | <percentage> ]"

@@ -7,7 +7,7 @@
     "color": {
       "name": "color",
       "value": "<color>",
-      "initial": "black",
+      "initial": "CanvasText",
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
@@ -43,7 +43,10 @@
   },
   "valuespaces": {
     "<color>": {
-      "value": "<hex-color> | <named-color> | currentcolor | transparent <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <gray()> | <color()> | <device-cmyk()> | <system-color>"
+      "value": "<hex-color> | <named-color> | currentcolor | transparent | <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <color()> | <device-cmyk()> | <system-color>"
+    },
+    "<hue>": {
+      "value": "<number> | <angle>"
     },
     "<rgb()>": {
       "value": "rgb( <percentage>{3} [ / <alpha-value> ]? ) | rgb( <number>{3} [ / <alpha-value> ]? )"
@@ -54,9 +57,6 @@
     "<hsl()>": {
       "value": "hsl( <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
     },
-    "<hue>": {
-      "value": "<number> | <angle>"
-    },
     "<hwb()>": {
       "value": "hwb( <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
     },
@@ -66,11 +66,8 @@
     "<lch()>": {
       "value": "lch( <percentage> <number> <hue> [ / <alpha-value> ]? )"
     },
-    "<gray()>": {
-      "value": "gray( <number> [ / <alpha-value> ]? )"
-    },
     "<color()>": {
-      "value": "color( [ <ident>? [ <number>+ | <string> ] [ / <alpha-value> ]? ]# , <color>? )"
+      "value": "color( [ [<ident> | <dashed-ident>]? [ <number-percentage>+ | <string> ] [ / <alpha-value> ]? ]# , <color>? )"
     },
     "<device-cmyk()>": {
       "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? , <color>? )"
