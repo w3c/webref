@@ -381,26 +381,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-profilerresource",
-      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerresource",
-      "linkingText": [
-        "ProfilerResource"
-      ],
-      "localLinkingText": [],
-      "type": "typedef",
-      "for": [
-        "ProfilerResource"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-profilertrace-dictionary",
-        "title": "The ProfilerTrace Dictionary",
-        "number": "7"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-profilertrace-resources",
       "href": "https://wicg.github.io/js-self-profiling/#dom-profilertrace-resources",
       "linkingText": [
@@ -709,6 +689,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-profilerresource",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerresource",
+      "linkingText": [
+        "ProfilerResource"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-profilerframe-dictionary",
+        "title": "The ProfilerFrame Dictionary",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-script-record",
       "href": "https://wicg.github.io/js-self-profiling/#dfn-script-record",
       "linkingText": [
@@ -785,6 +783,64 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-profilerinitoptions",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions",
+      "linkingText": [
+        "ProfilerInitOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-profilerinitoptions-dictionary",
+        "title": "The ProfilerInitOptions dictionary",
+        "number": "8"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-profilerinitoptions-sampleinterval",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions-sampleinterval",
+      "linkingText": [
+        "sampleInterval"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerInitOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-profilerinitoptions-dictionary",
+        "title": "The ProfilerInitOptions dictionary",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-profilerinitoptions-maxbuffersize",
+      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions-maxbuffersize",
+      "linkingText": [
+        "maxBufferSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ProfilerInitOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-profilerinitoptions-dictionary",
+        "title": "The ProfilerInitOptions dictionary",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-performance",
       "href": "https://wicg.github.io/js-self-profiling/#dom-performance",
       "linkingText": [
@@ -798,67 +854,9 @@
       "heading": {
         "id": "extensions-to-the-performance-interface",
         "title": "Extensions to the Performance Interface",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "heading"
-    },
-    {
-      "id": "dom-profilerinitoptions",
-      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions",
-      "linkingText": [
-        "ProfilerInitOptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "extensions-to-the-performance-interface",
-        "title": "Extensions to the Performance Interface",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-profilerinitoptions-sampleinterval",
-      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions-sampleinterval",
-      "linkingText": [
-        "ProfilerInitOptions.sampleInterval"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ProfilerInitOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "extensions-to-the-performance-interface",
-        "title": "Extensions to the Performance Interface",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-profilerinitoptions-maxbuffersize",
-      "href": "https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions-maxbuffersize",
-      "linkingText": [
-        "ProfilerInitOptions.maxBufferSize"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ProfilerInitOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "extensions-to-the-performance-interface",
-        "title": "Extensions to the Performance Interface",
-        "number": "8"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dom-performance-profile",
@@ -881,7 +879,7 @@
       "heading": {
         "id": "profile-method",
         "title": "profile() method",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "heading"
     },
@@ -899,7 +897,7 @@
       "heading": {
         "id": "profile-method",
         "title": "profile() method",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "prose"
     },
@@ -917,7 +915,7 @@
       "heading": {
         "id": "profile-method",
         "title": "profile() method",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "prose"
     },
@@ -935,7 +933,7 @@
       "heading": {
         "id": "profile-method",
         "title": "profile() method",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "prose"
     },
@@ -952,8 +950,7 @@
       "informative": false,
       "heading": {
         "id": "feature-policy",
-        "title": "Feature Policy",
-        "number": "9"
+        "title": "10. Feature Policy"
       },
       "definedIn": "prose"
     },
@@ -970,8 +967,7 @@
       "informative": false,
       "heading": {
         "id": "feature-policy",
-        "title": "Feature Policy",
-        "number": "9"
+        "title": "10. Feature Policy"
       },
       "definedIn": "prose"
     }
