@@ -9,7 +9,6 @@
         "Window": [
           "NDEFMessage",
           "NDEFRecord",
-          "NDEFWriter",
           "NDEFReader",
           "NDEFReadingEvent"
         ]
@@ -457,15 +456,88 @@
         },
         "extAttrs": []
       },
-      "NDEFWriter": {
+      "NDEFReader": {
         "type": "interface",
-        "name": "NDEFWriter",
-        "inheritance": null,
+        "name": "NDEFReader",
+        "inheritance": "EventTarget",
         "members": [
           {
             "type": "constructor",
             "arguments": [],
             "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "onreading",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "onreadingerror",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "operation",
+            "name": "scan",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NDEFScanOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
           },
           {
             "type": "operation",
@@ -515,109 +587,6 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "NDEFWriteOptions"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "NDEFReader": {
-        "type": "interface",
-        "name": "NDEFReader",
-        "inheritance": "EventTarget",
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "onerror",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onreading",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "operation",
-            "name": "scan",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "NDEFScanOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -864,7 +833,6 @@
       "Window": [
         "NDEFMessage",
         "NDEFRecord",
-        "NDEFWriter",
         "NDEFReader",
         "NDEFReadingEvent"
       ]
@@ -884,14 +852,12 @@
       "NDEFRecordInit": [
         "NDEFRecordDataSource"
       ],
-      "NDEFWriter": [
-        "NDEFMessageSource",
-        "NDEFWriteOptions"
-      ],
       "NDEFReader": [
         "EventTarget",
         "EventHandler",
-        "NDEFScanOptions"
+        "NDEFScanOptions",
+        "NDEFMessageSource",
+        "NDEFWriteOptions"
       ],
       "NDEFReadingEvent": [
         "Event",
