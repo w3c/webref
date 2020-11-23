@@ -20,7 +20,7 @@ Individual files are named after the shortname of the specification, or after th
 
 The [ed/index.json](ed/index.json) and [tr/index.json](tr/index.json) files contain the index of specifications that have been crawled, and relative links to individual files that have been created.
 
-This repository uses [Reffy](https://github.com/tidoust/reffy), a Web spec exploration tool, to crawl the specifications and generate the data. In particular, the data it contains is the result of running Reffy. The repository does not contain any more data.
+This repository uses [Reffy](https://github.com/w3c/reffy), a Web spec exploration tool, to crawl the specifications and generate the data. In particular, the data it contains is the result of running Reffy. The repository does not contain any more data.
 
 Raw WebIDL extracts are used in [web-platform-tests](https://github.com/web-platform-tests/wpt), please see their [interfaces/README.md](https://github.com/web-platform-tests/wpt/blob/master/interfaces/README.md) for details.
 
@@ -34,7 +34,7 @@ On top of data extracted from the specifications, this repository also contains 
 
 Feel free to raise [issues in this repository](https://github.com/w3c/webref/issues) as needed. Note that most issues likely more directly apply to underlying tools:
 
-- Errors in the data are most likely caused by bugs or missing features in [Reffy](https://github.com/tidoust/reffy), which is the tool that crawls and parses specifications under the hoods. If you spot an error, please report it in [Reffy's issue tracker](https://github.com/tidoust/reffy/issues/new).
+- Errors in the data are most likely caused by bugs or missing features in [Reffy](https://github.com/w3c/reffy), which is the tool that crawls and parses specifications under the hoods. If you spot an error, please report it in [Reffy's issue tracker](https://github.com/w3c/reffy/issues/new).
 - If you believe that a spec is missing from the list, please check [browser-specs](https://github.com/w3c/browser-specs/#how-to-addupdatedelete-a-spec) and report it [there](https://github.com/w3c/browser-specs/issues/new).
 
 
