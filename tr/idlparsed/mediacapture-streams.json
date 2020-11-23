@@ -8,7 +8,8 @@
       "constructors": {
         "Window": [
           "MediaStream",
-          "MediaStreamTrackEvent"
+          "MediaStreamTrackEvent",
+          "OverconstrainedError"
         ]
       },
       "functions": {
@@ -1828,6 +1829,81 @@
         "extAttrs": [],
         "partial": false
       },
+      "OverconstrainedError": {
+        "type": "interface",
+        "name": "OverconstrainedError",
+        "inheritance": "DOMException",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "constraint",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "message",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": {
+                  "type": "string",
+                  "value": ""
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "constraint",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "MediaDevices": {
         "type": "interface",
         "name": "MediaDevices",
@@ -2193,26 +2269,13 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MediaStreamError"
+              "idlType": "DOMException"
             },
             "default": null,
             "optional": false,
             "variadic": false
           }
         ],
-        "extAttrs": []
-      },
-      "MediaStreamError": {
-        "type": "typedef",
-        "name": "MediaStreamError",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "",
-          "nullable": false,
-          "union": false,
-          "idlType": "object"
-        },
         "extAttrs": []
       },
       "DoubleRange": {
@@ -2927,6 +2990,7 @@
         "MediaStream",
         "MediaStreamTrack",
         "MediaStreamTrackEvent",
+        "OverconstrainedError",
         "MediaDevices",
         "MediaDeviceInfo",
         "InputDeviceInfo"
@@ -2971,6 +3035,9 @@
       "MediaStreamTrackEventInit": [
         "EventInit",
         "MediaStreamTrack"
+      ],
+      "OverconstrainedError": [
+        "DOMException"
       ],
       "Navigator": [
         "MediaDevices",
@@ -3018,6 +3085,7 @@
       "EventHandler",
       "Event",
       "EventInit",
+      "DOMException",
       "Navigator"
     ],
     "hasObsoleteIdl": false

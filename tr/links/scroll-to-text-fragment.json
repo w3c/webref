@@ -7,6 +7,12 @@
     "https://www.w3.org/community/wicg/": [],
     "https://www.w3.org/community/about/agreements/cla/": [],
     "https://www.w3.org/community/": [],
+    "https://url.spec.whatwg.org/": [
+      "concept-url-fragment",
+      "concept-url",
+      "string-percent-decode",
+      "url-code-points"
+    ],
     "https://dom.spec.whatwg.org/": [
       "concept-document",
       "concept-document-url",
@@ -42,6 +48,9 @@
     ],
     "https://html.spec.whatwg.org/": [
       "initialise-the-document-object",
+      "traverse-the-history",
+      "location",
+      "active-document",
       "scroll-to-the-fragment-identifier",
       "transient-activation",
       "navigation-params-request",
@@ -52,7 +61,6 @@
       "tlbc-group",
       "browsing-context-set",
       "process-a-navigate-fetch",
-      "active-document",
       "try-to-scroll-to-the-fragment",
       "scroll-to-fragid",
       "the-indicated-part-of-the-document",
@@ -73,24 +81,14 @@
       "restore-persisted-state",
       "child-browsing-context"
     ],
-    "https://fetch.spec.whatwg.org/": [
-      "concept-request-current-url",
-      "concept-response-url",
-      "concept-request"
-    ],
-    "https://url.spec.whatwg.org/": [
-      "concept-url-fragment",
-      "string-percent-decode",
-      "url-code-points"
-    ],
     "https://infra.spec.whatwg.org/": [
+      "struct",
       "string",
       "assert",
       "list",
       "split-on-commas",
       "list-remove",
       "list-size",
-      "struct",
       "strictly-split",
       "iteration-continue",
       "list-append",
@@ -99,6 +97,9 @@
       "html-namespace",
       "string-concatenate",
       "string-length"
+    ],
+    "https://fetch.spec.whatwg.org/": [
+      "concept-request"
     ],
     "https://w3c.github.io/webappsec-fetch-metadata/": [
       "request-user-activation-flag",

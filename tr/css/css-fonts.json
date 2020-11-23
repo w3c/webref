@@ -55,7 +55,7 @@
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "refer to parent element’s font size",
-      "computedValue": "an absolute length, as clamped by font-min-size and font-max-size",
+      "computedValue": "an absolute length",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type`"
     },
@@ -261,7 +261,7 @@
     },
     "font-palette": {
       "name": "font-palette",
-      "value": "normal | light | dark | <palette-identifier>",
+      "value": "none | normal | light | dark | <palette-identifier>",
       "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "yes",
@@ -349,6 +349,24 @@
       "value": "normal | <string>",
       "initial": "normal"
     },
+    "ascent-override": {
+      "name": "ascent-override",
+      "for": "@font-face",
+      "value": "normal | <percentage>",
+      "initial": "normal"
+    },
+    "descent-override": {
+      "name": "descent-override",
+      "for": "@font-face",
+      "value": "normal | <percentage>",
+      "initial": "normal"
+    },
+    "line-gap-override": {
+      "name": "line-gap-override",
+      "for": "@font-face",
+      "value": "normal | <percentage>",
+      "initial": "normal"
+    },
     "base-palette": {
       "name": "base-palette",
       "for": "@font-palette-values",
@@ -364,7 +382,7 @@
   },
   "valuespaces": {
     "<font-weight-absolute>": {
-      "value": "[normal | bold | <number>]"
+      "value": "[normal | bold | <number [1,1000]>]"
     },
     "<font-variant-css2>": {
       "value": "[normal | small-caps]"
@@ -373,13 +391,13 @@
       "value": "[normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded]"
     },
     "<font-format>": {
-      "value": "[<string> | woff | truetype | opentype | woff2 | embedded-opentype | svg]"
+      "value": "[<string> | woff | truetype | opentype | woff2 | embedded-opentype | collection | svg]"
     },
     "<font-technology>": {
       "value": "[features | variations | color(<color-font-technology>) | palettes]"
     },
     "<color-font-technology>": {
-      "value": "[COLR | SVG | sbix]"
+      "value": "[COLR | SVG | sbix | CBDT ]"
     },
     "<common-lig-values>": {
       "value": "[ common-ligatures | no-common-ligatures ]"
@@ -442,7 +460,7 @@
       "prose": "The name of a font family, such as Helvetica or Verdana in the previous example."
     },
     "<generic-family>": {
-      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as an alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a reliable fallback for when an author’s more specific font choices are not available. Authors are encouraged to append a generic font family as a last alternative for improved robustness. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The following generic family keywords are defined: serif, sans-serif, cursive, fantasy, monospace, system-ui, emoji, math and fangsong. See §2.1.3 Generic font families."
+      "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as an alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a reliable fallback for when an author’s more specific font choices are not available. Authors are encouraged to append a generic font family as a last alternative for improved robustness. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.3 Generic font families."
     },
     "<palette-identifier>": {
       "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. Note: Such a CSS-defined palette may be a reference to an existing palette already present in the font, be a modification of an existing palette already present in the font, or be an entirely new palette."

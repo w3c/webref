@@ -670,6 +670,21 @@
           },
           {
             "type": "field",
+            "name": "residentKey",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "requireResidentKey",
             "extAttrs": [],
             "idlType": {
@@ -684,21 +699,6 @@
               "type": "boolean",
               "value": false
             },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "residentKey",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
             "required": false
           },
           {
@@ -1245,145 +1245,41 @@
         "extAttrs": [],
         "partial": false
       },
-      "AuthenticationExtensionsPRFValues": {
-        "type": "dictionary",
-        "name": "AuthenticationExtensionsPRFValues",
-        "inheritance": null,
-        "members": [
+      "LargeBlobSupport": {
+        "type": "enum",
+        "name": "LargeBlobSupport",
+        "values": [
           {
-            "type": "field",
-            "name": "first",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ArrayBuffer"
-            },
-            "default": null,
-            "required": true
+            "type": "enum-value",
+            "value": "required"
           },
           {
-            "type": "field",
-            "name": "second",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ArrayBuffer"
-            },
-            "default": null,
-            "required": false
+            "type": "enum-value",
+            "value": "preferred"
           }
         ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "AuthenticationExtensionsPRFInputs": {
-        "type": "dictionary",
-        "name": "AuthenticationExtensionsPRFInputs",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "eval",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "AuthenticationExtensionsPRFValues"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "evalByCredential",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "record",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
-                },
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "AuthenticationExtensionsPRFValues"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "AuthenticationExtensionsPRFOutputs": {
-        "type": "dictionary",
-        "name": "AuthenticationExtensionsPRFOutputs",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "enabled",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "results",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "AuthenticationExtensionsPRFValues"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
+        "extAttrs": []
       },
       "AuthenticationExtensionsLargeBlobInputs": {
         "type": "dictionary",
         "name": "AuthenticationExtensionsLargeBlobInputs",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "support",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
           {
             "type": "field",
             "name": "read",
@@ -1409,7 +1305,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ArrayBuffer"
+              "idlType": "BufferSource"
             },
             "default": null,
             "required": false
@@ -1423,6 +1319,21 @@
         "name": "AuthenticationExtensionsLargeBlobOutputs",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "supported",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
           {
             "type": "field",
             "name": "blob",
@@ -1650,30 +1561,6 @@
           "members": [
             {
               "type": "field",
-              "name": "prf",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "AuthenticationExtensionsPRFInputs"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
-          "type": "dictionary",
-          "name": "AuthenticationExtensionsClientInputs",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
               "name": "largeBlob",
               "extAttrs": [],
               "idlType": {
@@ -1796,30 +1683,6 @@
           "members": [
             {
               "type": "field",
-              "name": "prf",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "AuthenticationExtensionsPRFOutputs"
-              },
-              "default": null,
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
-          "type": "dictionary",
-          "name": "AuthenticationExtensionsClientOutputs",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
               "name": "largeBlob",
               "extAttrs": [],
               "idlType": {
@@ -1892,13 +1755,11 @@
         "AuthenticationExtensionsClientInputs"
       ],
       "AuthenticationExtensionsClientInputs": [
-        "AuthenticationExtensionsPRFInputs",
         "AuthenticationExtensionsLargeBlobInputs"
       ],
       "AuthenticationExtensionsClientOutputs": [
         "UvmEntries",
         "CredentialPropertiesOutput",
-        "AuthenticationExtensionsPRFOutputs",
         "AuthenticationExtensionsLargeBlobOutputs"
       ],
       "CollectedClientData": [
@@ -1907,13 +1768,6 @@
       "TokenBinding": [],
       "PublicKeyCredentialDescriptor": [],
       "CredentialPropertiesOutput": [],
-      "AuthenticationExtensionsPRFValues": [],
-      "AuthenticationExtensionsPRFInputs": [
-        "AuthenticationExtensionsPRFValues"
-      ],
-      "AuthenticationExtensionsPRFOutputs": [
-        "AuthenticationExtensionsPRFValues"
-      ],
       "AuthenticationExtensionsLargeBlobInputs": [],
       "AuthenticationExtensionsLargeBlobOutputs": []
     },
