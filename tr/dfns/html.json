@@ -24699,24 +24699,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "default-process-the-linked-resource",
-      "href": "https://html.spec.whatwg.org/multipage/semantics.html#default-process-the-linked-resource",
-      "linkingText": [
-        "default process the linked resource"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "fetching-and-processing-a-resource-from-a-link-element",
-        "title": "Fetching and processing a resource from a link element",
-        "number": "4.2.4.3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "the-meta-element",
       "href": "https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element",
       "linkingText": [
@@ -31258,10 +31240,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "otherwise-steps-for-iframe-or-frame-elements",
-      "href": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#otherwise-steps-for-iframe-or-frame-elements",
+      "id": "shared-attribute-processing-steps-for-iframe-and-frame-elements",
+      "href": "https://html.spec.whatwg.org/multipage/iframe-embed-object.html#shared-attribute-processing-steps-for-iframe-and-frame-elements",
       "linkingText": [
-        "otherwise steps for iframe or frame elements"
+        "shared attribute processing steps for iframe and frame elements"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -65713,6 +65695,60 @@
       "definedIn": "prose"
     },
     {
+      "id": "virtual-browsing-context-group-id",
+      "href": "https://html.spec.whatwg.org/multipage/browsers.html#virtual-browsing-context-group-id",
+      "linkingText": [
+        "virtual browsing context group ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "windows",
+        "title": "Browsing contexts",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "browsing-context-initial-url",
+      "href": "https://html.spec.whatwg.org/multipage/browsers.html#browsing-context-initial-url",
+      "linkingText": [
+        "initial URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "windows",
+        "title": "Browsing contexts",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "opener-origin-at-creation",
+      "href": "https://html.spec.whatwg.org/multipage/browsers.html#opener-origin-at-creation",
+      "linkingText": [
+        "opener origin at creation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "windows",
+        "title": "Browsing contexts",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "set-the-active-document",
       "href": "https://html.spec.whatwg.org/multipage/browsers.html#set-the-active-document",
       "linkingText": [
@@ -66567,6 +66603,24 @@
         "number": "7.2.3.1"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "cross-origin-accessible-window-property-name",
+      "href": "https://html.spec.whatwg.org/multipage/browsers.html#cross-origin-accessible-window-property-name",
+      "linkingText": [
+        "cross-origin accessible window property name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "crossoriginproperties-(-o-)",
+        "title": "CrossOriginProperties ( O )",
+        "number": "7.2.3.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "crossoriginpropertyfallback-(-p-)",
@@ -68591,10 +68645,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "cross-origin-opener-policy",
-      "href": "https://html.spec.whatwg.org/multipage/origin.html#cross-origin-opener-policy",
+      "id": "cross-origin-opener-policy-value",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#cross-origin-opener-policy-value",
       "linkingText": [
-        "cross-origin opener policy"
+        "cross-origin opener policy value"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -68681,10 +68735,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "matching-coop",
-      "href": "https://html.spec.whatwg.org/multipage/origin.html#matching-coop",
+      "id": "cross-origin-opener-policy",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#cross-origin-opener-policy",
       "linkingText": [
-        "match cross-origin opener policies"
+        "cross-origin opener policy"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -68695,6 +68749,114 @@
         "id": "cross-origin-opener-policies",
         "title": "Cross-origin opener policies",
         "number": "7.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-struct-value",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-struct-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cross-origin-opener-policies",
+        "title": "Cross-origin opener policies",
+        "number": "7.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-struct-report-endpoint",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-struct-report-endpoint",
+      "linkingText": [
+        "reporting endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cross-origin-opener-policies",
+        "title": "Cross-origin opener policies",
+        "number": "7.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-struct-report-only-value",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-struct-report-only-value",
+      "linkingText": [
+        "report-only value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cross-origin-opener-policies",
+        "title": "Cross-origin opener policies",
+        "number": "7.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-struct-report-only-endpoint",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-struct-report-only-endpoint",
+      "linkingText": [
+        "report-only reporting endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cross-origin-opener-policies",
+        "title": "Cross-origin opener policies",
+        "number": "7.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "matching-coop",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#matching-coop",
+      "linkingText": [
+        "match cross-origin opener policy values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cross-origin-opener-policies",
+        "title": "Cross-origin opener policies",
+        "number": "7.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-report-to",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-report-to",
+      "linkingText": [
+        "report-to"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-headers",
+        "title": "The headers",
+        "number": "7.7.1"
       },
       "definedIn": "prose"
     },
@@ -68710,9 +68872,45 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "the-cross-origin-opener-policy-header",
-        "title": "The `Cross-Origin-Opener-Policy` header",
+        "id": "the-headers",
+        "title": "The headers",
         "number": "7.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-browsing-context-group-switch-coop-value",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#check-browsing-context-group-switch-coop-value",
+      "linkingText": [
+        "check if COOP values require a browsing context group switch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browsing-context-group-switches-due-to-cross-origin-opener-policy",
+        "title": "Browsing context group switches due to cross-origin opener policy",
+        "number": "7.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-bcg-switch-navigation-report-only",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#check-bcg-switch-navigation-report-only",
+      "linkingText": [
+        "check if enforcing report-only COOP would require a browsing context group switch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browsing-context-group-switches-due-to-cross-origin-opener-policy",
+        "title": "Browsing context group switches due to cross-origin opener policy",
+        "number": "7.7.2"
       },
       "definedIn": "prose"
     },
@@ -68753,10 +68951,46 @@
       "definedIn": "prose"
     },
     {
+      "id": "coop-enforcement-bcg-switch-report-only",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-enforcement-bcg-switch-report-only",
+      "linkingText": [
+        "would need a browsing context group switch due to report-only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browsing-context-group-switches-due-to-cross-origin-opener-policy",
+        "title": "Browsing context group switches due to cross-origin opener policy",
+        "number": "7.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-enforcement-url",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-enforcement-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browsing-context-group-switches-due-to-cross-origin-opener-policy",
+        "title": "Browsing context group switches due to cross-origin opener policy",
+        "number": "7.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "coop-enforcement-origin",
       "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-enforcement-origin",
       "linkingText": [
-        "origin"
+        "current origin"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -68775,6 +69009,24 @@
       "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-enforcement-coop",
       "linkingText": [
         "cross-origin opener policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browsing-context-group-switches-due-to-cross-origin-opener-policy",
+        "title": "Browsing context group switches due to cross-origin opener policy",
+        "number": "7.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-enforcement-source",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-enforcement-source",
+      "linkingText": [
+        "current context is navigation source"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -68821,6 +69073,276 @@
         "id": "browsing-context-group-switches-due-to-cross-origin-opener-policy",
         "title": "Browsing context group switches due to cross-origin opener policy",
         "number": "7.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "accessor-accessed-relationship",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#accessor-accessed-relationship",
+      "linkingText": [
+        "accessor-accessed relationship"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "accessor-accessed-opener",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#accessor-accessed-opener",
+      "linkingText": [
+        "accessor is opener"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "accessor-accessed-openee",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#accessor-accessed-openee",
+      "linkingText": [
+        "accessor is openee"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "accessor-accessed-none",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#accessor-accessed-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "coop-check-access-report",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-check-access-report",
+      "linkingText": [
+        "check if an access between two browsing contexts should be reported"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sanitize-url-report",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#sanitize-url-report",
+      "linkingText": [
+        "sanitize a URL to send in a report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-violation-navigation-to",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-violation-navigation-to",
+      "linkingText": [
+        "queue a violation report for browsing context group switch when navigating to a COOP response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-violation-navigation-from",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-violation-navigation-from",
+      "linkingText": [
+        "queue a violation report for browsing context group switch when navigating away from a COOP response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-violation-access",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-violation-access",
+      "linkingText": [
+        "queue violation reports for accesses"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-violation-access-to-opener",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-violation-access-to-opener",
+      "linkingText": [
+        "queue a violation report for access to the opener"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-violation-access-to-opened",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-violation-access-to-opened",
+      "linkingText": [
+        "queue a violation report for access to an opened window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-violation-access-to-other",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-violation-access-to-other",
+      "linkingText": [
+        "queue a violation report for access to another window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-violation-access-from-opener",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-violation-access-from-opener",
+      "linkingText": [
+        "queue a violation report for access from the opener"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-violation-access-from-opened",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-violation-access-from-opened",
+      "linkingText": [
+        "queue a violation report for access from an opened window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "coop-violation-access-from-other",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#coop-violation-access-from-other",
+      "linkingText": [
+        "queue a violation report for access from another window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "7.7.3"
       },
       "definedIn": "prose"
     },
@@ -69010,7 +69532,7 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "the-headers",
+        "id": "the-headers-2",
         "title": "The headers",
         "number": "7.8.1"
       },
@@ -69028,7 +69550,7 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-headers",
+        "id": "the-headers-2",
         "title": "The headers",
         "number": "7.8.1"
       },
@@ -70387,6 +70909,24 @@
       "definedIn": "dt"
     },
     {
+      "id": "navigation-params-coop-enforcement-result",
+      "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-coop-enforcement-result",
+      "linkingText": [
+        "COOP enforcement result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigating-across-documents",
+        "title": "Navigating across documents",
+        "number": "7.10.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "navigation-params-reserved-environment",
       "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-reserved-environment",
       "linkingText": [
@@ -70409,24 +70949,6 @@
       "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-browsing-context",
       "linkingText": [
         "browsing context"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "navigating-across-documents",
-        "title": "Navigating across documents",
-        "number": "7.10.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "navigation-params-bc-switch-needed",
-      "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-bc-switch-needed",
-      "linkingText": [
-        "browsing context switch needed"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -98555,7 +99077,7 @@
       "heading": {
         "id": "origin-isolation-2",
         "title": "`Origin-Isolation`",
-        "number": "17.11"
+        "number": "17.12"
       },
       "definedIn": "heading"
     },
@@ -98573,7 +99095,7 @@
       "heading": {
         "id": "ping-from",
         "title": "`Ping-From`",
-        "number": "17.12"
+        "number": "17.13"
       },
       "definedIn": "heading"
     },
@@ -98591,7 +99113,7 @@
       "heading": {
         "id": "ping-to",
         "title": "`Ping-To`",
-        "number": "17.13"
+        "number": "17.14"
       },
       "definedIn": "heading"
     },
@@ -98609,7 +99131,7 @@
       "heading": {
         "id": "refresh",
         "title": "`Refresh`",
-        "number": "17.14"
+        "number": "17.15"
       },
       "definedIn": "heading"
     },
@@ -98627,7 +99149,7 @@
       "heading": {
         "id": "last-event-id",
         "title": "`Last-Event-ID`",
-        "number": "17.15"
+        "number": "17.16"
       },
       "definedIn": "heading"
     },
@@ -98645,7 +99167,7 @@
       "heading": {
         "id": "x-frame-options",
         "title": "`X-Frame-Options`",
-        "number": "17.16"
+        "number": "17.17"
       },
       "definedIn": "heading"
     },
@@ -98663,7 +99185,7 @@
       "heading": {
         "id": "web+-scheme-prefix",
         "title": "web+ scheme prefix",
-        "number": "17.17"
+        "number": "17.18"
       },
       "definedIn": "heading"
     },
