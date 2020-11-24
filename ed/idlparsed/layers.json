@@ -801,11 +801,14 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "GLenum"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0x1902"
+            },
             "required": false
           },
           {
@@ -1597,54 +1600,6 @@
             ],
             "extAttrs": [],
             "special": ""
-          },
-          {
-            "type": "attribute",
-            "name": "supportedColorFormats",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "FrozenArray",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GLenum"
-                }
-              ]
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "supportedDepthStencilFormats",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "FrozenArray",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GLenum"
-                }
-              ]
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
           }
         ],
         "extAttrs": [
@@ -2394,8 +2349,7 @@
         "XRCompositionLayer",
         "XRFrame",
         "XREye",
-        "XRView",
-        "GLenum"
+        "XRView"
       ],
       "XRMediaLayerInit": [
         "XRSpace",
