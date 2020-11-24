@@ -513,9 +513,13 @@ enum GPUCullMode {
 dictionary GPUColorStateDescriptor {
     required GPUTextureFormat format;
 
-    GPUBlendDescriptor alphaBlend = {};
-    GPUBlendDescriptor colorBlend = {};
+    GPUBlendDescriptor blend;
     GPUColorWriteFlags writeMask = 0xF;  // GPUColorWrite.ALL
+};
+
+dictionary GPUBlendDescriptor {
+    required GPUBlendComponent color;
+    required GPUBlendComponent alpha;
 };
 
 typedef [EnforceRange] unsigned long GPUColorWriteFlags;
@@ -527,7 +531,7 @@ interface GPUColorWrite {
     const GPUFlagsConstant ALL   = 0xF;
 };
 
-dictionary GPUBlendDescriptor {
+dictionary GPUBlendComponent {
     GPUBlendFactor srcFactor = "one";
     GPUBlendFactor dstFactor = "zero";
     GPUBlendOperation operation = "add";
@@ -861,8 +865,7 @@ dictionary GPURenderBundleEncoderDescriptor : GPUObjectDescriptorBase {
 interface GPUQueue {
     undefined submit(sequence<GPUCommandBuffer> commandBuffers);
 
-    GPUFence createFence(optional GPUFenceDescriptor descriptor = {});
-    undefined signal(GPUFence fence, GPUFenceValue signalValue);
+    Promise<undefined> onSubmittedWorkDone();
 
     undefined writeBuffer(
         GPUBuffer buffer,
@@ -883,16 +886,6 @@ interface GPUQueue {
         GPUExtent3D copySize);
 };
 GPUQueue includes GPUObjectBase;
-
-interface GPUFence {
-    GPUFenceValue getCompletedValue();
-    Promise<undefined> onCompletion(GPUFenceValue completionValue);
-};
-GPUFence includes GPUObjectBase;
-
-dictionary GPUFenceDescriptor : GPUObjectDescriptorBase {
-    GPUFenceValue initialValue = 0;
-};
 
 interface GPUQuerySet {
     undefined destroy();
@@ -986,7 +979,6 @@ partial interface GPUDevice {
 };
 
 typedef [EnforceRange] unsigned long GPUBufferDynamicOffset;
-typedef [EnforceRange] unsigned long long GPUFenceValue;
 typedef [EnforceRange] unsigned long GPUStencilValue;
 typedef [EnforceRange] unsigned long GPUSampleMask;
 typedef [EnforceRange] long GPUDepthBias;

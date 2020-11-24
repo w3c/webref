@@ -8380,30 +8380,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpucolorstatedescriptor-alphablend",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucolorstatedescriptor-alphablend",
+      "id": "dom-gpucolorstatedescriptor-blend",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucolorstatedescriptor-blend",
       "linkingText": [
-        "alphaBlend"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPUColorStateDescriptor"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "color-state",
-        "title": "Color State",
-        "number": "10.3.7"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucolorstatedescriptor-colorblend",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucolorstatedescriptor-colorblend",
-      "linkingText": [
-        "colorBlend"
+        "blend"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -8429,6 +8409,64 @@
       "type": "dict-member",
       "for": [
         "GPUColorStateDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-state",
+        "title": "Color State",
+        "number": "10.3.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-gpublenddescriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpublenddescriptor",
+      "linkingText": [
+        "GPUBlendDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-state",
+        "title": "Color State",
+        "number": "10.3.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpublenddescriptor-color",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublenddescriptor-color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUBlendDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-state",
+        "title": "Color State",
+        "number": "10.3.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpublenddescriptor-alpha",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublenddescriptor-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUBlendDescriptor"
       ],
       "access": "public",
       "informative": false,
@@ -8576,10 +8614,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-gpublenddescriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpublenddescriptor",
+      "id": "dictdef-gpublendcomponent",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpublendcomponent",
       "linkingText": [
-        "GPUBlendDescriptor"
+        "GPUBlendComponent"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -8594,15 +8632,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpublenddescriptor-srcfactor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublenddescriptor-srcfactor",
+      "id": "dom-gpublendcomponent-srcfactor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendcomponent-srcfactor",
       "linkingText": [
         "srcFactor"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUBlendDescriptor"
+        "GPUBlendComponent"
       ],
       "access": "public",
       "informative": false,
@@ -8614,15 +8652,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpublenddescriptor-dstfactor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublenddescriptor-dstfactor",
+      "id": "dom-gpublendcomponent-dstfactor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendcomponent-dstfactor",
       "linkingText": [
         "dstFactor"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUBlendDescriptor"
+        "GPUBlendComponent"
       ],
       "access": "public",
       "informative": false,
@@ -8634,15 +8672,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpublenddescriptor-operation",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublenddescriptor-operation",
+      "id": "dom-gpublendcomponent-operation",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendcomponent-operation",
       "linkingText": [
         "operation"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUBlendDescriptor"
+        "GPUBlendComponent"
       ],
       "access": "public",
       "informative": false,
@@ -15335,67 +15373,10 @@
       "definedIn": "table"
     },
     {
-      "id": "gpufence",
-      "href": "https://gpuweb.github.io/gpuweb/#gpufence",
+      "id": "dom-gpuqueue-onsubmittedworkdone",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-onsubmittedworkdone",
       "linkingText": [
-        "GPUFence"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fence",
-        "title": "GPUFence",
-        "number": "17.1"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dictdef-gpufencedescriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpufencedescriptor",
-      "linkingText": [
-        "GPUFenceDescriptor"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fence-creation",
-        "title": "Creation",
-        "number": "17.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpufencedescriptor-initialvalue",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufencedescriptor-initialvalue",
-      "linkingText": [
-        "initialValue"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPUFenceDescriptor"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fence-creation",
-        "title": "Creation",
-        "number": "17.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuqueue-createfence",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-createfence",
-      "linkingText": [
-        "createFence(descriptor)",
-        "createFence()"
+        "onSubmittedWorkDone()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -15405,151 +15386,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "fence-creation",
-        "title": "Creation",
-        "number": "17.1.1"
+        "id": "queues",
+        "title": "17. Queues"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpuqueue-createfence-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-createfence-descriptor-descriptor",
-      "linkingText": [
-        "descriptor"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/createFence(descriptor)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fence-creation",
-        "title": "Creation",
-        "number": "17.1.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-gpuqueue-signal",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-signal",
-      "linkingText": [
-        "signal(fence, signalValue)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUQueue"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fence-signaling",
-        "title": "Completion",
-        "number": "17.1.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpuqueue-signal-fence-signalvalue-fence",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-signal-fence-signalvalue-fence",
-      "linkingText": [
-        "fence"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/signal(fence, signalValue)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fence-signaling",
-        "title": "Completion",
-        "number": "17.1.2"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-gpuqueue-signal-fence-signalvalue-signalvalue",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueue-signal-fence-signalvalue-signalvalue",
-      "linkingText": [
-        "signalValue"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUQueue/signal(fence, signalValue)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fence-signaling",
-        "title": "Completion",
-        "number": "17.1.2"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-gpufence-getcompletedvalue",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufence-getcompletedvalue",
-      "linkingText": [
-        "getCompletedValue()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUFence"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fence-signaling",
-        "title": "Completion",
-        "number": "17.1.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpufence-oncompletion",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufence-oncompletion",
-      "linkingText": [
-        "onCompletion(completionValue)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUFence"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fence-signaling",
-        "title": "Completion",
-        "number": "17.1.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpufence-oncompletion-completionvalue-completionvalue",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufence-oncompletion-completionvalue-completionvalue",
-      "linkingText": [
-        "completionValue"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUFence/onCompletion(completionValue)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "fence-signaling",
-        "title": "Completion",
-        "number": "17.1.2"
-      },
-      "definedIn": "table"
     },
     {
       "id": "gpuqueryset",
@@ -15568,6 +15408,26 @@
         "number": "18.1"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "dom-gpuqueryset-descriptor-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuqueryset-descriptor-slot",
+      "linkingText": [
+        "[[descriptor]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUQuerySet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "queryset",
+        "title": "GPUQuerySet",
+        "number": "18.1"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dictdef-gpuquerysetdescriptor",
@@ -15605,7 +15465,7 @@
         "title": "Creation",
         "number": "18.1.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpuquerysetdescriptor-count",
@@ -15625,7 +15485,7 @@
         "title": "Creation",
         "number": "18.1.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpuquerysetdescriptor-pipelinestatistics",
@@ -15646,26 +15506,6 @@
         "number": "18.1.1"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "abstract-opdef-gpuquerysetdescriptorpipelinestatistics-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpuquerysetdescriptorpipelinestatistics-valid-usage",
-      "linkingText": [
-        "Valid Usage"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [
-        "GPUQuerySetDescriptor.pipelineStatistics"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "queryset-creation",
-        "title": "Creation",
-        "number": "18.1.1"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dom-gpudevice-createqueryset",
@@ -16603,23 +16443,6 @@
       "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpubufferdynamicoffset",
       "linkingText": [
         "GPUBufferDynamicOffset"
-      ],
-      "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "type-definitions",
-        "title": "21. Type Definitions"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "typedefdef-gpufencevalue",
-      "href": "https://gpuweb.github.io/gpuweb/#typedefdef-gpufencevalue",
-      "linkingText": [
-        "GPUFenceValue"
       ],
       "localLinkingText": [],
       "type": "typedef",
