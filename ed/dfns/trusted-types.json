@@ -764,7 +764,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "TrustedTypePolicy/createHTML(input, ...arguments)"
+        "TrustedTypePolicy/createHTML(input, ...arguments)",
+        "TrustedTypePolicy/createHTML(input)"
       ],
       "access": "public",
       "informative": false,
@@ -784,7 +785,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "TrustedTypePolicy/createHTML(input, ...arguments)"
+        "TrustedTypePolicy/createHTML(input, ...arguments)",
+        "TrustedTypePolicy/createHTML(input)"
       ],
       "access": "public",
       "informative": false,
@@ -804,7 +806,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "TrustedTypePolicy/createScript(input, ...arguments)"
+        "TrustedTypePolicy/createScript(input, ...arguments)",
+        "TrustedTypePolicy/createScript(input)"
       ],
       "access": "public",
       "informative": false,
@@ -824,7 +827,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "TrustedTypePolicy/createScript(input, ...arguments)"
+        "TrustedTypePolicy/createScript(input, ...arguments)",
+        "TrustedTypePolicy/createScript(input)"
       ],
       "access": "public",
       "informative": false,
@@ -844,7 +848,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "TrustedTypePolicy/createScriptURL(input, ...arguments)"
+        "TrustedTypePolicy/createScriptURL(input, ...arguments)",
+        "TrustedTypePolicy/createScriptURL(input)"
       ],
       "access": "public",
       "informative": false,
@@ -864,7 +869,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "TrustedTypePolicy/createScriptURL(input, ...arguments)"
+        "TrustedTypePolicy/createScriptURL(input, ...arguments)",
+        "TrustedTypePolicy/createScriptURL(input)"
       ],
       "access": "public",
       "informative": false,
@@ -1552,7 +1558,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Document/write(...text)"
+        "Document/write(...text)",
+        "Document/write()"
       ],
       "access": "public",
       "informative": false,
@@ -1593,7 +1600,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Document/writeln(...text)"
+        "Document/writeln(...text)",
+        "Document/writeln()"
       ],
       "access": "public",
       "informative": false,
@@ -1907,7 +1915,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "WindowOrWorkerGlobalScope/setTimeout(handler, timeout, ...arguments)"
+        "WindowOrWorkerGlobalScope/setTimeout(handler, timeout, ...arguments)",
+        "WindowOrWorkerGlobalScope/setTimeout(handler, timeout)",
+        "WindowOrWorkerGlobalScope/setTimeout(handler)"
       ],
       "access": "public",
       "informative": false,
@@ -1927,7 +1937,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "WindowOrWorkerGlobalScope/setTimeout(handler, timeout, ...arguments)"
+        "WindowOrWorkerGlobalScope/setTimeout(handler, timeout, ...arguments)",
+        "WindowOrWorkerGlobalScope/setTimeout(handler, timeout)",
+        "WindowOrWorkerGlobalScope/setTimeout(handler)"
       ],
       "access": "public",
       "informative": false,
@@ -1947,7 +1959,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "WindowOrWorkerGlobalScope/setTimeout(handler, timeout, ...arguments)"
+        "WindowOrWorkerGlobalScope/setTimeout(handler, timeout, ...arguments)",
+        "WindowOrWorkerGlobalScope/setTimeout(handler, timeout)",
+        "WindowOrWorkerGlobalScope/setTimeout(handler)"
       ],
       "access": "public",
       "informative": false,
@@ -1989,7 +2003,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "WindowOrWorkerGlobalScope/setInterval(handler, timeout, ...arguments)"
+        "WindowOrWorkerGlobalScope/setInterval(handler, timeout, ...arguments)",
+        "WindowOrWorkerGlobalScope/setInterval(handler, timeout)",
+        "WindowOrWorkerGlobalScope/setInterval(handler)"
       ],
       "access": "public",
       "informative": false,
@@ -2009,7 +2025,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "WindowOrWorkerGlobalScope/setInterval(handler, timeout, ...arguments)"
+        "WindowOrWorkerGlobalScope/setInterval(handler, timeout, ...arguments)",
+        "WindowOrWorkerGlobalScope/setInterval(handler, timeout)",
+        "WindowOrWorkerGlobalScope/setInterval(handler)"
       ],
       "access": "public",
       "informative": false,
@@ -2029,7 +2047,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "WindowOrWorkerGlobalScope/setInterval(handler, timeout, ...arguments)"
+        "WindowOrWorkerGlobalScope/setInterval(handler, timeout, ...arguments)",
+        "WindowOrWorkerGlobalScope/setInterval(handler, timeout)",
+        "WindowOrWorkerGlobalScope/setInterval(handler)"
       ],
       "access": "public",
       "informative": false,
@@ -2064,15 +2084,17 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-worker-constructor-scripturl-options-scripturl",
-      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-worker-constructor-scripturl-options-scripturl",
+      "id": "dom-worker-worker-scripturl-options-scripturl",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-worker-worker-scripturl-options-scripturl",
       "linkingText": [
         "scriptURL"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "Worker/Worker(scriptURL, options)",
         "Worker/constructor(scriptURL, options)",
+        "Worker/Worker(scriptURL)",
         "Worker/constructor(scriptURL)"
       ],
       "access": "public",
@@ -2085,15 +2107,17 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-worker-constructor-scripturl-options-options",
-      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-worker-constructor-scripturl-options-options",
+      "id": "dom-worker-worker-scripturl-options-options",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-worker-worker-scripturl-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "Worker/Worker(scriptURL, options)",
         "Worker/constructor(scriptURL, options)",
+        "Worker/Worker(scriptURL)",
         "Worker/constructor(scriptURL)"
       ],
       "access": "public",
@@ -2129,15 +2153,17 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-sharedworker-constructor-scripturl-options-scripturl",
-      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-sharedworker-constructor-scripturl-options-scripturl",
+      "id": "dom-sharedworker-sharedworker-scripturl-options-scripturl",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-sharedworker-sharedworker-scripturl-options-scripturl",
       "linkingText": [
         "scriptURL"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "SharedWorker/SharedWorker(scriptURL, options)",
         "SharedWorker/constructor(scriptURL, options)",
+        "SharedWorker/SharedWorker(scriptURL)",
         "SharedWorker/constructor(scriptURL)"
       ],
       "access": "public",
@@ -2150,15 +2176,17 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-sharedworker-constructor-scripturl-options-options",
-      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-sharedworker-constructor-scripturl-options-options",
+      "id": "dom-sharedworker-sharedworker-scripturl-options-options",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-sharedworker-sharedworker-scripturl-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "SharedWorker/SharedWorker(scriptURL, options)",
         "SharedWorker/constructor(scriptURL, options)",
+        "SharedWorker/SharedWorker(scriptURL)",
         "SharedWorker/constructor(scriptURL)"
       ],
       "access": "public",
@@ -2200,7 +2228,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "WorkerGlobalScope/importScripts(...urls)"
+        "WorkerGlobalScope/importScripts(...urls)",
+        "WorkerGlobalScope/importScripts()"
       ],
       "access": "public",
       "informative": false,
