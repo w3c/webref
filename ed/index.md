@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% November 25, 2020
+% November 26, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -7217,7 +7217,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
 - Crawled URL: [https://w3c.github.io/IntersectionObserver/](https://w3c.github.io/IntersectionObserver/)
-- Crawled version: 2 November 2020
+- Crawled version: 26 November 2020
 - Editor's Draft: [https://w3c.github.io/IntersectionObserver/](https://w3c.github.io/IntersectionObserver/)
 - Latest published version: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
 - Shortname: intersection-observer
@@ -12502,7 +12502,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 24 November 2020
+- Crawled version: 26 November 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
