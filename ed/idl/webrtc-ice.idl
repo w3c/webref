@@ -3,9 +3,7 @@
 // (https://github.com/w3c/webref)
 // Source: IceTransport Extensions for WebRTC (https://w3c.github.io/webrtc-ice/)
 
-dictionary RTCIceParameters {
-             required DOMString usernameFragment;
-             required DOMString password;
+partial dictionary RTCIceParameters {
              boolean   iceLite;
 };
 
@@ -17,10 +15,10 @@ dictionary RTCIceGatherOptions {
 [Exposed=Window]
 partial interface RTCIceTransport {
     constructor();
-    void                      gather (optional RTCIceGatherOptions options = {});
-    void                      start (RTCIceParameters remoteParameters, optional RTCIceRole role = "controlled");
-    void                      stop ();
-    void                      addRemoteCandidate (RTCIceCandidateInit remoteCandidate);
+    undefined                      gather (optional RTCIceGatherOptions options = {});
+    undefined                      start (RTCIceParameters remoteParameters, optional RTCIceRole role = "controlled");
+    undefined                      stop ();
+    undefined                      addRemoteCandidate (RTCIceCandidateInit remoteCandidate);
                     attribute EventHandler        onerror;
                     attribute EventHandler        onicecandidate;
 };
