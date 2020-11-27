@@ -13,60 +13,6 @@
       "functions": {}
     },
     "idlNames": {
-      "RTCIceParameters": {
-        "type": "dictionary",
-        "name": "RTCIceParameters",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "usernameFragment",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "password",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "iceLite",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "RTCIceGatherOptions": {
         "type": "dictionary",
         "name": "RTCIceGatherOptions",
@@ -120,6 +66,32 @@
       }
     },
     "idlExtendedNames": {
+      "RTCIceParameters": [
+        {
+          "type": "dictionary",
+          "name": "RTCIceParameters",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "iceLite",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
       "RTCIceTransport": [
         {
           "type": "interface",
@@ -140,7 +112,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -174,7 +146,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -225,7 +197,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [],
               "extAttrs": [],
@@ -240,7 +212,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -322,7 +294,6 @@
         "RTCIceServer"
       ],
       "RTCIceTransport": [
-        "void",
         "RTCIceGatherOptions",
         "RTCIceParameters",
         "RTCIceRole",
@@ -331,10 +302,10 @@
       ]
     },
     "externalDependencies": [
+      "RTCIceParameters",
       "RTCIceTransportPolicy",
       "RTCIceServer",
       "RTCIceTransport",
-      "void",
       "RTCIceRole",
       "RTCIceCandidateInit",
       "EventHandler"
