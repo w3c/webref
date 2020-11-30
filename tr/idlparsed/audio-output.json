@@ -8,7 +8,35 @@
       "constructors": {},
       "functions": {}
     },
-    "idlNames": {},
+    "idlNames": {
+      "AudioOutputOptions": {
+        "type": "dictionary",
+        "name": "AudioOutputOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "deviceId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
     "idlExtendedNames": {
       "HTMLMediaElement": [
         {
@@ -27,7 +55,14 @@
                 "union": false,
                 "idlType": "DOMString"
               },
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SecureContext",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "special": "",
               "readonly": true
             },
@@ -47,7 +82,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "void"
+                    "idlType": "undefined"
                   }
                 ]
               },
@@ -69,6 +104,67 @@
                   "variadic": false
                 }
               ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SecureContext",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaDevices": [
+        {
+          "type": "interface",
+          "name": "MediaDevices",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "selectAudioOutput",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MediaDeviceInfo"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "AudioOutputOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
               "extAttrs": [],
               "special": ""
             }
@@ -81,13 +177,17 @@
     "globals": {},
     "exposed": {},
     "dependencies": {
-      "HTMLMediaElement": [
-        "void"
-      ]
+      "HTMLMediaElement": [],
+      "MediaDevices": [
+        "MediaDeviceInfo",
+        "AudioOutputOptions"
+      ],
+      "AudioOutputOptions": []
     },
     "externalDependencies": [
       "HTMLMediaElement",
-      "void"
+      "MediaDevices",
+      "MediaDeviceInfo"
     ],
     "hasObsoleteIdl": false
   }

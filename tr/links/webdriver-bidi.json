@@ -6,7 +6,7 @@
   "links": {
     "https://github.com/w3c/webdriver-bidi/issues": [],
     "https://www.w3.org/testing/browser/": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
@@ -21,11 +21,11 @@
       "dfn-errors",
       "dfn-error-code",
       "dfn-invalid-argument",
-      "dfn-unknown-command",
       "dfn-active-session",
       "dfn-session-id",
       "dfn-intermediary-node",
       "dfn-endpoint-node",
+      "dfn-unknown-command",
       "dfn-additional-webdriver-capability",
       "dfn-capability-name",
       "dfn-additional-capability-deserialization-algorithm",
@@ -34,15 +34,19 @@
       "dfn-get-a-property",
       "dfn-set-a-property",
       "dfn-window-handle",
-      "dfn-try",
-      "dfn-current-session"
+      "dfn-current-session",
+      "dfn-web-element-reference",
+      "dfn-no-such-element",
+      "dfn-try"
     ],
     "https://heycam.github.io/webidl/": [
-      "dfn-return-type"
+      "dfn-return-type",
+      "dfn-platform-object"
     ],
     "https://html.spec.whatwg.org/": [
       "browsing-context",
-      "parent-browsing-context"
+      "parent-browsing-context",
+      "windowproxy"
     ],
     "https://infra.spec.whatwg.org/": [
       "ordered-set",
@@ -50,9 +54,9 @@
       "set-append",
       "assert",
       "scalar-value-string",
-      "parse-json-into-infra-values",
-      "ordered-map",
-      "serialize-json-to-bytes"
+      "serialize-an-infra-value-to-json-bytes",
+      "parse-a-json-string-to-an-infra-value",
+      "ordered-map"
     ],
     "https://tools.ietf.org/html/rfc6455": [
       "section-4.1",
@@ -70,6 +74,35 @@
     ],
     "https://fetch.spec.whatwg.org/": [
       "concept-connection"
+    ],
+    "https://tc39.es/ecma262/": [
+      "sec-code-realms",
+      "sec-ecmascript-data-types-and-values",
+      "sec-tostring",
+      "sec-isarray",
+      "sec-createarrayiterator",
+      "sec-isregexp",
+      "sec-get",
+      "sec-object-internal-methods-and-internal-slots",
+      "sec-todatestring",
+      "thistimevalue",
+      "sec-createmapiterator",
+      "sec-createsetiterator",
+      "sec-ispromise",
+      "sec-iscallable",
+      "sec-enumerableownpropertynames",
+      "sec-createlistfromarraylike"
+    ],
+    "https://dom.spec.whatwg.org/": [
+      "concept-node",
+      "concept-element",
+      "boundary-point-node",
+      "concept-attribute",
+      "concept-tree-child",
+      "concept-element-attribute",
+      "concept-attribute-qualified-name",
+      "concept-attribute-value",
+      "concept-element-shadow-root"
     ],
     "https://tools.ietf.org/html/rfc4122": [],
     "https://tools.ietf.org/html/rfc8610": [],
