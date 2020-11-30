@@ -8,14 +8,15 @@
     "https://lists.w3.org/Archives/Public/public-webappsec/": [],
     "https://www.w3.org/Mail/Request": [],
     "https://www.w3.org/2011/webappsec/": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/49309/status": [],
-    "https://www.w3.org/2019/Process-20190301/": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
     "https://w3c.github.io/webappsec-csp/": [
       "script-src",
+      "csp-list",
       "content-security-policy-object",
       "policy-directive-set",
       "directives",
@@ -45,6 +46,7 @@
       "element",
       "context-object",
       "concept-element-interface",
+      "concept-attribute",
       "concept-child-text-content",
       "dom-node-textcontent",
       "connected",
@@ -71,7 +73,7 @@
       "SecureContext",
       "idl-DOMString",
       "idl-boolean",
-      "dfn-attribute",
+      "idl-any",
       "interface-mixin",
       "include",
       "idl-USVString",
@@ -88,7 +90,6 @@
       "AllowShared",
       "Clamp",
       "EnforceRange",
-      "TreatNullAs",
       "dfn-convert-ecmascript-to-idl-value",
       "this",
       "es-security",
@@ -98,6 +99,7 @@
       "idl-long",
       "dfn-identifier",
       "NewObject",
+      "idl-promise",
       "exceptiondef-evalerror"
     ],
     "https://html.spec.whatwg.org/": [
@@ -106,9 +108,8 @@
       "reflect",
       "concept-realm-global",
       "window",
-      "concept-document-csp-list",
-      "cereactions",
       "htmlscriptelement",
+      "cereactions",
       "dom-innertext",
       "prepare-a-script",
       "the-script-element",
@@ -179,6 +180,7 @@
       "workeroptions",
       "sharedworker",
       "workerglobalscope",
+      "secure-context",
       "concept-settings-object-global"
     ],
     "https://en.wikipedia.org/wiki/Object-capability_model": [],
@@ -207,13 +209,7 @@
       "can-compile-strings",
       "initialize-document-csp"
     ],
-    "https://fetch.spec.whatwg.org/": [
-      "dom-requestdestination-script",
-      "concept-request",
-      "concept-request-client",
-      "concept-request-url",
-      "local-scheme"
-    ],
+    "https://tc39.es/proposal-dynamic-code-brand-checks/": [],
     "https://drafts.csswg.org/css-syntax-3/": [
       "identifier"
     ],
@@ -251,8 +247,11 @@
     ],
     "https://github.com/w3c/svgwg/issues/196": [],
     "https://github.com/whatwg/dom/pull/809": [],
-    "https://w3c.github.io/webappsec-secure-contexts/": [
-      "secure-contexts"
+    "https://fetch.spec.whatwg.org/": [
+      "concept-request",
+      "concept-request-client",
+      "concept-request-url",
+      "local-scheme"
     ],
     "https://url.spec.whatwg.org/": [
       "concept-url-scheme",
@@ -263,15 +262,10 @@
       "appendix-B.1"
     ],
     "https://github.com/tc39/ecma262/issues/938": [],
-    "https://github.com/w3c/webappsec-trusted-types/issues/144": [],
-    "https://github.com/tc39-transfer/dynamic-code-brand-checks": [
-      "problem-host-callout-does-not-receive-type-information"
-    ],
     "https://wicg.github.io/origin-policy/": [],
     "https://w3c.github.io/webcomponents/spec/imports/": [],
     "https://www.w3.org/TR/css-syntax-3/": [],
     "https://tools.ietf.org/html/rfc2119": [],
-    "https://www.w3.org/TR/secure-contexts/": [],
     "https://www.w3.org/TR/service-workers-1/": [],
     "https://www.w3.org/TR/html-design-principles/": []
   }

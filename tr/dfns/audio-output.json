@@ -5,15 +5,15 @@
   },
   "dfns": [
     {
-      "id": "dom-htmlmediaelement",
-      "href": "https://www.w3.org/TR/audio-output/#dom-htmlmediaelement",
+      "id": "dfn-sinkid",
+      "href": "https://www.w3.org/TR/audio-output/#dfn-sinkid",
       "linkingText": [
-        "HTMLMediaElement"
+        "[[SinkId]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "idl",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "htmlmediaelement-extensions",
@@ -28,12 +28,14 @@
       "linkingText": [
         "sinkId"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "htmlmediaelement"
+      "localLinkingText": [
+        "HTMLMediaElement.sinkId"
       ],
-      "access": "private",
+      "type": "attribute",
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "attributes",
@@ -42,69 +44,22 @@
       "definedIn": "dt"
     },
     {
-      "id": "dfn-deviceid",
-      "href": "https://www.w3.org/TR/audio-output/#dfn-deviceid",
-      "linkingText": [
-        "deviceId"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "attributes",
-        "title": "Attributes"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-mediadeviceinfo",
-      "href": "https://www.w3.org/TR/audio-output/#dfn-mediadeviceinfo",
-      "linkingText": [
-        "MediaDeviceInfo"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "attributes",
-        "title": "Attributes"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-enumeratedevices()",
-      "href": "https://www.w3.org/TR/audio-output/#dfn-enumeratedevices()",
-      "linkingText": [
-        "enumerateDevices()"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "attributes",
-        "title": "Attributes"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-htmlmediaelement-setsinkid",
       "href": "https://www.w3.org/TR/audio-output/#dom-htmlmediaelement-setsinkid",
       "linkingText": [
-        "setsinkid()",
+        "setSinkId()",
+        "setSinkId(sinkId)"
+      ],
+      "localLinkingText": [
+        "HTMLMediaElement.setSinkId",
+        "HTMLMediaElement.setSinkId()",
         "setSinkId"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "type": "method",
       "for": [
-        "htmlmediaelement"
+        "HTMLMediaElement"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "methods",
@@ -113,10 +68,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dfn-domexception",
-      "href": "https://www.w3.org/TR/audio-output/#dfn-domexception",
+      "id": "dfn-unavailable",
+      "href": "https://www.w3.org/TR/audio-output/#dfn-unavailable",
       "linkingText": [
-        "DOMException"
+        "unavailable"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -124,81 +79,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "htmlmediaelement-extensions",
-        "title": "HTMLMediaElement Extensions",
-        "number": "2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-notfounderror",
-      "href": "https://www.w3.org/TR/audio-output/#dfn-notfounderror",
-      "linkingText": [
-        "NotFoundError"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "htmlmediaelement-extensions",
-        "title": "HTMLMediaElement Extensions",
-        "number": "2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-securityerror",
-      "href": "https://www.w3.org/TR/audio-output/#dfn-securityerror",
-      "linkingText": [
-        "SecurityError"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "htmlmediaelement-extensions",
-        "title": "HTMLMediaElement Extensions",
-        "number": "2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-paused",
-      "href": "https://www.w3.org/TR/audio-output/#dfn-paused",
-      "linkingText": [
-        "paused"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "htmlmediaelement-extensions",
-        "title": "HTMLMediaElement Extensions",
-        "number": "2"
-      },
-      "definedIn": "note"
-    },
-    {
-      "id": "dfn-aborterror",
-      "href": "https://www.w3.org/TR/audio-output/#dfn-aborterror",
-      "linkingText": [
-        "AbortError"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "htmlmediaelement-extensions",
-        "title": "HTMLMediaElement Extensions",
-        "number": "2"
+        "id": "algorithms-sink-unavailable",
+        "title": "Sink no longer available",
+        "number": "2.1.1"
       },
       "definedIn": "prose"
     },
@@ -221,28 +104,88 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-getusermedia()",
-      "href": "https://www.w3.org/TR/audio-output/#dfn-getusermedia()",
+      "id": "dom-mediadevices-selectaudiooutput",
+      "href": "https://www.w3.org/TR/audio-output/#dom-mediadevices-selectaudiooutput",
       "linkingText": [
-        "getUserMedia()"
+        "selectAudioOutput()",
+        "selectAudioOutput(options)"
+      ],
+      "localLinkingText": [
+        "MediaDevices.selectAudioOutput",
+        "MediaDevices.selectAudioOutput()",
+        "selectAudioOutput"
+      ],
+      "type": "method",
+      "for": [
+        "MediaDevices"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "methods-0",
+        "title": "Methods"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiooutputoptions",
+      "href": "https://www.w3.org/TR/audio-output/#dom-audiooutputoptions",
+      "linkingText": [
+        "AudioOutputOptions"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-audiooutputoptions-members",
+        "title": "Dictionary AudioOutputOptions Members"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-audiooutputoptions-deviceid",
+      "href": "https://www.w3.org/TR/audio-output/#dom-audiooutputoptions-deviceid",
+      "linkingText": [
+        "deviceId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioOutputOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dictionary-audiooutputoptions-members",
+        "title": "Dictionary AudioOutputOptions Members"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-explicitelygrantedaudiooutputdevices",
+      "href": "https://www.w3.org/TR/audio-output/#dfn-explicitelygrantedaudiooutputdevices",
+      "linkingText": [
+        "[[explicitelyGrantedAudioOutputDevices]]"
+      ],
+      "localLinkingText": [],
+      "type": "idl",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "privacy-obtaining-consent",
         "title": "Obtaining Consent",
-        "number": "3.2"
+        "number": "4.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-groupid",
-      "href": "https://www.w3.org/TR/audio-output/#dfn-groupid",
+      "id": "dfn-exposure-decision-algorithm-for-devices-other-than-camera-and-microphone",
+      "href": "https://www.w3.org/TR/audio-output/#dfn-exposure-decision-algorithm-for-devices-other-than-camera-and-microphone",
       "linkingText": [
-        "groupId"
+        "exposure decision algorithm for devices other than camera and microphone"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -252,7 +195,25 @@
       "heading": {
         "id": "privacy-obtaining-consent",
         "title": "Obtaining Consent",
-        "number": "3.2"
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-speaker-selection",
+      "href": "https://www.w3.org/TR/audio-output/#dfn-speaker-selection",
+      "linkingText": [
+        "\"speaker-selection\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permissions-policy-integration-0",
+        "title": "Permissions Policy Integration",
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -270,7 +231,7 @@
       "heading": {
         "id": "conformance",
         "title": "Conformance",
-        "number": "4"
+        "number": "5"
       },
       "definedIn": "prose"
     }

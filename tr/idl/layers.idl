@@ -91,7 +91,7 @@ enum XRTextureType {
 dictionary XRProjectionLayerInit {
   XRTextureType textureType = "texture";
   GLenum colorFormat = 0x1908; // RGBA
-  GLenum? depthFormat;
+  GLenum depthFormat = 0x1902; // DEPTH_COMPONENT
   double scaleFactor = 1.0;
 };
 
@@ -146,9 +146,6 @@ dictionary XRCubeLayerInit : XRLayerInit {
 
   XRWebGLSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = "none");
   XRWebGLSubImage getViewSubImage(XRProjectionLayer layer, XRView view);
-
-  readonly attribute FrozenArray<GLenum> supportedColorFormats;
-  readonly attribute FrozenArray<GLenum> supportedDepthStencilFormats;
 };
 
 dictionary XRMediaLayerInit {

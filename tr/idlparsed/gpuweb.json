@@ -2370,29 +2370,6 @@
         ],
         "extAttrs": []
       },
-      "GPUTextureComponentType": {
-        "type": "enum",
-        "name": "GPUTextureComponentType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "float"
-          },
-          {
-            "type": "enum-value",
-            "value": "sint"
-          },
-          {
-            "type": "enum-value",
-            "value": "uint"
-          },
-          {
-            "type": "enum-value",
-            "value": "depth-comparison"
-          }
-        ],
-        "extAttrs": []
-      },
       "GPUSampler": {
         "type": "interface",
         "name": "GPUSampler",
@@ -2708,135 +2685,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUBindGroupLayoutEntry": {
-        "type": "dictionary",
-        "name": "GPUBindGroupLayoutEntry",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "binding",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUIndex32"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "visibility",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUShaderStageFlags"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "type",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUBindingType"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "hasDynamicOffset",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "minBufferBindingSize",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUSize64"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "viewDimension",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUTextureViewDimension"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "textureComponentType",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUTextureComponentType"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "storageTextureFormat",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUTextureFormat"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "GPUShaderStageFlags": {
         "type": "typedef",
         "name": "GPUShaderStageFlags",
@@ -2917,48 +2765,394 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUBindingType": {
+      "GPUBindGroupLayoutEntry": {
+        "type": "dictionary",
+        "name": "GPUBindGroupLayoutEntry",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "binding",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUIndex32"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "visibility",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUShaderStageFlags"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "buffer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBufferBindingLayout"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "sampler",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSamplerBindingLayout"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "texture",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureBindingLayout"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "storageTexture",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUStorageTextureBindingLayout"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUBufferType": {
         "type": "enum",
-        "name": "GPUBindingType",
+        "name": "GPUBufferType",
         "values": [
           {
             "type": "enum-value",
-            "value": "uniform-buffer"
+            "value": "uniform"
           },
           {
             "type": "enum-value",
-            "value": "storage-buffer"
+            "value": "storage"
           },
           {
             "type": "enum-value",
-            "value": "readonly-storage-buffer"
-          },
-          {
-            "type": "enum-value",
-            "value": "sampler"
-          },
-          {
-            "type": "enum-value",
-            "value": "comparison-sampler"
-          },
-          {
-            "type": "enum-value",
-            "value": "sampled-texture"
-          },
-          {
-            "type": "enum-value",
-            "value": "multisampled-texture"
-          },
-          {
-            "type": "enum-value",
-            "value": "readonly-storage-texture"
-          },
-          {
-            "type": "enum-value",
-            "value": "writeonly-storage-texture"
+            "value": "readonly-storage"
           }
         ],
         "extAttrs": []
+      },
+      "GPUBufferBindingLayout": {
+        "type": "dictionary",
+        "name": "GPUBufferBindingLayout",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBufferType"
+            },
+            "default": {
+              "type": "string",
+              "value": "uniform"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "hasDynamicOffset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "minBindingSize",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize64"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUSamplerType": {
+        "type": "enum",
+        "name": "GPUSamplerType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "filtering"
+          },
+          {
+            "type": "enum-value",
+            "value": "non-filtering"
+          },
+          {
+            "type": "enum-value",
+            "value": "comparison"
+          }
+        ],
+        "extAttrs": []
+      },
+      "GPUSamplerBindingLayout": {
+        "type": "dictionary",
+        "name": "GPUSamplerBindingLayout",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSamplerType"
+            },
+            "default": {
+              "type": "string",
+              "value": "filtering"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUTextureSampleType": {
+        "type": "enum",
+        "name": "GPUTextureSampleType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "float"
+          },
+          {
+            "type": "enum-value",
+            "value": "unfilterable-float"
+          },
+          {
+            "type": "enum-value",
+            "value": "depth"
+          },
+          {
+            "type": "enum-value",
+            "value": "sint"
+          },
+          {
+            "type": "enum-value",
+            "value": "uint"
+          }
+        ],
+        "extAttrs": []
+      },
+      "GPUTextureBindingLayout": {
+        "type": "dictionary",
+        "name": "GPUTextureBindingLayout",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureSampleType"
+            },
+            "default": {
+              "type": "string",
+              "value": "float"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "viewDimension",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureViewDimension"
+            },
+            "default": {
+              "type": "string",
+              "value": "2d"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "multisampled",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUStorageTextureAccess": {
+        "type": "enum",
+        "name": "GPUStorageTextureAccess",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "readonly"
+          },
+          {
+            "type": "enum-value",
+            "value": "writeonly"
+          }
+        ],
+        "extAttrs": []
+      },
+      "GPUStorageTextureBindingLayout": {
+        "type": "dictionary",
+        "name": "GPUStorageTextureBindingLayout",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUStorageTextureAccess"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "format",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureFormat"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "viewDimension",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureViewDimension"
+            },
+            "default": {
+              "type": "string",
+              "value": "2d"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       },
       "GPUBindGroup": {
         "type": "interface",
@@ -3951,7 +4145,7 @@
           },
           {
             "type": "field",
-            "name": "alphaBlend",
+            "name": "blend",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -3961,26 +4155,7 @@
               "union": false,
               "idlType": "GPUBlendDescriptor"
             },
-            "default": {
-              "type": "dictionary"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "colorBlend",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUBlendDescriptor"
-            },
-            "default": {
-              "type": "dictionary"
-            },
+            "default": null,
             "required": false
           },
           {
@@ -4000,6 +4175,45 @@
               "value": "0xF"
             },
             "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUBlendDescriptor": {
+        "type": "dictionary",
+        "name": "GPUBlendDescriptor",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "color",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBlendComponent"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "alpha",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBlendComponent"
+            },
+            "default": null,
+            "required": true
           }
         ],
         "extAttrs": [],
@@ -4119,9 +4333,9 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUBlendDescriptor": {
+      "GPUBlendComponent": {
         "type": "dictionary",
-        "name": "GPUBlendDescriptor",
+        "name": "GPUBlendComponent",
         "inheritance": null,
         "members": [
           {
@@ -7776,83 +7990,25 @@
           },
           {
             "type": "operation",
-            "name": "createFence",
+            "name": "onSubmittedWorkDone",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "Promise",
               "nullable": false,
               "union": false,
-              "idlType": "GPUFence"
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
             },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "descriptor",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUFenceDescriptor"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "signal",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "fence",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUFence"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "signalValue",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUFenceValue"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           },
@@ -8112,98 +8268,6 @@
             ],
             "extAttrs": [],
             "special": ""
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "GPUFence": {
-        "type": "interface",
-        "name": "GPUFence",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "operation",
-            "name": "getCompletedValue",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUFenceValue"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "onCompletion",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "completionValue",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUFenceValue"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "GPUFenceDescriptor": {
-        "type": "dictionary",
-        "name": "GPUFenceDescriptor",
-        "inheritance": "GPUObjectDescriptorBase",
-        "members": [
-          {
-            "type": "field",
-            "name": "initialValue",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUFenceValue"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
-            "required": false
           }
         ],
         "extAttrs": [],
@@ -8764,26 +8828,6 @@
           "nullable": false,
           "union": false,
           "idlType": "unsigned long"
-        },
-        "extAttrs": []
-      },
-      "GPUFenceValue": {
-        "type": "typedef",
-        "name": "GPUFenceValue",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "EnforceRange",
-              "rhs": null,
-              "arguments": []
-            }
-          ],
-          "generic": "",
-          "nullable": false,
-          "union": false,
-          "idlType": "unsigned long long"
         },
         "extAttrs": []
       },
@@ -9744,13 +9788,6 @@
           "includes": "GPUObjectBase"
         }
       ],
-      "GPUFence": [
-        {
-          "name": "GPUFence",
-          "type": "interface",
-          "includes": "GPUObjectBase"
-        }
-      ],
       "GPUQuerySet": [
         {
           "name": "GPUQuerySet",
@@ -9901,16 +9938,31 @@
         "GPUObjectDescriptorBase",
         "GPUBindGroupLayoutEntry"
       ],
+      "GPUShaderStage": [],
       "GPUBindGroupLayoutEntry": [
         "GPUIndex32",
         "GPUShaderStageFlags",
-        "GPUBindingType",
-        "GPUSize64",
-        "GPUTextureViewDimension",
-        "GPUTextureComponentType",
-        "GPUTextureFormat"
+        "GPUBufferBindingLayout",
+        "GPUSamplerBindingLayout",
+        "GPUTextureBindingLayout",
+        "GPUStorageTextureBindingLayout"
       ],
-      "GPUShaderStage": [],
+      "GPUBufferBindingLayout": [
+        "GPUBufferType",
+        "GPUSize64"
+      ],
+      "GPUSamplerBindingLayout": [
+        "GPUSamplerType"
+      ],
+      "GPUTextureBindingLayout": [
+        "GPUTextureSampleType",
+        "GPUTextureViewDimension"
+      ],
+      "GPUStorageTextureBindingLayout": [
+        "GPUStorageTextureAccess",
+        "GPUTextureFormat",
+        "GPUTextureViewDimension"
+      ],
       "GPUBindGroup": [
         "GPUObjectBase"
       ],
@@ -9990,8 +10042,11 @@
         "GPUBlendDescriptor",
         "GPUColorWriteFlags"
       ],
-      "GPUColorWrite": [],
       "GPUBlendDescriptor": [
+        "GPUBlendComponent"
+      ],
+      "GPUColorWrite": [],
+      "GPUBlendComponent": [
         "GPUBlendFactor",
         "GPUBlendOperation"
       ],
@@ -10139,9 +10194,6 @@
       ],
       "GPUQueue": [
         "GPUCommandBuffer",
-        "GPUFence",
-        "GPUFenceDescriptor",
-        "GPUFenceValue",
         "GPUBuffer",
         "GPUSize64",
         "GPUTextureCopyView",
@@ -10149,14 +10201,6 @@
         "GPUExtent3D",
         "GPUImageBitmapCopyView",
         "GPUObjectBase"
-      ],
-      "GPUFence": [
-        "GPUFenceValue",
-        "GPUObjectBase"
-      ],
-      "GPUFenceDescriptor": [
-        "GPUObjectDescriptorBase",
-        "GPUFenceValue"
       ],
       "GPUQuerySet": [
         "GPUObjectBase"

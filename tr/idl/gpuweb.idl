@@ -279,14 +279,6 @@ enum GPUTextureFormat {
     "depth32float-stencil8",
 };
 
-enum GPUTextureComponentType {
-    "float",
-    "sint",
-    "uint",
-    // Texture is used with comparison sampling only.
-    "depth-comparison"
-};
-
 interface GPUSampler {
 };
 GPUSampler includes GPUObjectBase;
@@ -335,27 +327,6 @@ dictionary GPUBindGroupLayoutDescriptor : GPUObjectDescriptorBase {
     required sequence<GPUBindGroupLayoutEntry> entries;
 };
 
-dictionary GPUBindGroupLayoutEntry {
-    required GPUIndex32 binding;
-    required GPUShaderStageFlags visibility;
-    required GPUBindingType type;
-
-    // Used for uniform buffer and storage buffer bindings. Must be undefined for other binding types.
-    boolean hasDynamicOffset;
-
-    // Used for uniform buffer and storage buffer bindings. Must be undefined for other binding types.
-    GPUSize64 minBufferBindingSize;
-
-    // Used for sampled texture and storage texture bindings. Must be undefined for other binding types.
-    GPUTextureViewDimension viewDimension;
-
-    // Used for sampled texture bindings. Must be undefined for other binding types.
-    GPUTextureComponentType textureComponentType;
-
-    // Used for storage texture bindings. Must be undefined for other binding types.
-    GPUTextureFormat storageTextureFormat;
-};
-
 typedef [EnforceRange] unsigned long GPUShaderStageFlags;
 interface GPUShaderStage {
     const GPUFlagsConstant VERTEX   = 0x1;
@@ -363,16 +334,61 @@ interface GPUShaderStage {
     const GPUFlagsConstant COMPUTE  = 0x4;
 };
 
-enum GPUBindingType {
-    "uniform-buffer",
-    "storage-buffer",
-    "readonly-storage-buffer",
-    "sampler",
-    "comparison-sampler",
-    "sampled-texture",
-    "multisampled-texture",
-    "readonly-storage-texture",
-    "writeonly-storage-texture"
+dictionary GPUBindGroupLayoutEntry {
+    required GPUIndex32 binding;
+    required GPUShaderStageFlags visibility;
+
+    GPUBufferBindingLayout buffer;
+    GPUSamplerBindingLayout sampler;
+    GPUTextureBindingLayout texture;
+    GPUStorageTextureBindingLayout storageTexture;
+};
+
+enum GPUBufferType {
+    "uniform",
+    "storage",
+    "readonly-storage",
+};
+
+dictionary GPUBufferBindingLayout {
+    GPUBufferType type = "uniform";
+    boolean hasDynamicOffset = false;
+    GPUSize64 minBindingSize = 0;
+};
+
+enum GPUSamplerType {
+    "filtering",
+    "non-filtering",
+    "comparison",
+};
+
+dictionary GPUSamplerBindingLayout {
+    GPUSamplerType type = "filtering";
+};
+
+enum GPUTextureSampleType {
+  "float",
+  "unfilterable-float",
+  "depth",
+  "sint",
+  "uint",
+};
+
+dictionary GPUTextureBindingLayout {
+    GPUTextureSampleType type = "float";
+    GPUTextureViewDimension viewDimension = "2d";
+    boolean multisampled = false;
+};
+
+enum GPUStorageTextureAccess {
+    "readonly",
+    "writeonly",
+};
+
+dictionary GPUStorageTextureBindingLayout {
+    required GPUStorageTextureAccess type;
+    required GPUTextureFormat format;
+    GPUTextureViewDimension viewDimension = "2d";
 };
 
 interface GPUBindGroup {
@@ -513,9 +529,13 @@ enum GPUCullMode {
 dictionary GPUColorStateDescriptor {
     required GPUTextureFormat format;
 
-    GPUBlendDescriptor alphaBlend = {};
-    GPUBlendDescriptor colorBlend = {};
+    GPUBlendDescriptor blend;
     GPUColorWriteFlags writeMask = 0xF;  // GPUColorWrite.ALL
+};
+
+dictionary GPUBlendDescriptor {
+    required GPUBlendComponent color;
+    required GPUBlendComponent alpha;
 };
 
 typedef [EnforceRange] unsigned long GPUColorWriteFlags;
@@ -527,7 +547,7 @@ interface GPUColorWrite {
     const GPUFlagsConstant ALL   = 0xF;
 };
 
-dictionary GPUBlendDescriptor {
+dictionary GPUBlendComponent {
     GPUBlendFactor srcFactor = "one";
     GPUBlendFactor dstFactor = "zero";
     GPUBlendOperation operation = "add";
@@ -861,8 +881,7 @@ dictionary GPURenderBundleEncoderDescriptor : GPUObjectDescriptorBase {
 interface GPUQueue {
     undefined submit(sequence<GPUCommandBuffer> commandBuffers);
 
-    GPUFence createFence(optional GPUFenceDescriptor descriptor = {});
-    undefined signal(GPUFence fence, GPUFenceValue signalValue);
+    Promise<undefined> onSubmittedWorkDone();
 
     undefined writeBuffer(
         GPUBuffer buffer,
@@ -883,16 +902,6 @@ interface GPUQueue {
         GPUExtent3D copySize);
 };
 GPUQueue includes GPUObjectBase;
-
-interface GPUFence {
-    GPUFenceValue getCompletedValue();
-    Promise<undefined> onCompletion(GPUFenceValue completionValue);
-};
-GPUFence includes GPUObjectBase;
-
-dictionary GPUFenceDescriptor : GPUObjectDescriptorBase {
-    GPUFenceValue initialValue = 0;
-};
 
 interface GPUQuerySet {
     undefined destroy();
@@ -986,7 +995,6 @@ partial interface GPUDevice {
 };
 
 typedef [EnforceRange] unsigned long GPUBufferDynamicOffset;
-typedef [EnforceRange] unsigned long long GPUFenceValue;
 typedef [EnforceRange] unsigned long GPUStencilValue;
 typedef [EnforceRange] unsigned long GPUSampleMask;
 typedef [EnforceRange] long GPUDepthBias;
