@@ -8541,11 +8541,11 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Payment Request API](https://w3c.github.io/payment-request/)
 
 Informative references to this spec from:
 
 - [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 
 
 ## Payment Request API {data-spec=true data-ok=true}
