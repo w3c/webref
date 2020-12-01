@@ -159,7 +159,6 @@
           "History",
           "Location",
           "BeforeUnloadEvent",
-          "ApplicationCache",
           "Navigator",
           "PluginArray",
           "MimeTypeArray",
@@ -22477,28 +22476,6 @@
           },
           {
             "type": "attribute",
-            "name": "applicationCache",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ApplicationCache"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SecureContext",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
             "name": "originIsolated",
             "idlType": {
               "type": "attribute-type",
@@ -23867,337 +23844,6 @@
             "arguments": []
           }
         ],
-        "partial": false
-      },
-      "ApplicationCache": {
-        "type": "interface",
-        "name": "ApplicationCache",
-        "inheritance": "EventTarget",
-        "members": [
-          {
-            "type": "const",
-            "name": "UNCACHED",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "0"
-            }
-          },
-          {
-            "type": "const",
-            "name": "IDLE",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "1"
-            }
-          },
-          {
-            "type": "const",
-            "name": "CHECKING",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "2"
-            }
-          },
-          {
-            "type": "const",
-            "name": "DOWNLOADING",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "3"
-            }
-          },
-          {
-            "type": "const",
-            "name": "UPDATEREADY",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "4"
-            }
-          },
-          {
-            "type": "const",
-            "name": "OBSOLETE",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "5"
-            }
-          },
-          {
-            "type": "attribute",
-            "name": "status",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "update",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "abort",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "swapCache",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "attribute",
-            "name": "onchecking",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onerror",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onnoupdate",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "ondownloading",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onprogress",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onupdateready",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "oncached",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onobsolete",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "NavigatorOnLine": {
-        "type": "interface mixin",
-        "name": "NavigatorOnLine",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "onLine",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [],
         "partial": false
       },
       "ErrorEvent": {
@@ -27050,6 +26696,30 @@
                   "idlType": "DOMString"
                 }
               ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "NavigatorOnLine": {
+        "type": "interface mixin",
+        "name": "NavigatorOnLine",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "onLine",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "extAttrs": [],
             "special": "",
@@ -37248,7 +36918,6 @@
         "HashChangeEvent",
         "PageTransitionEvent",
         "BeforeUnloadEvent",
-        "ApplicationCache",
         "ErrorEvent",
         "PromiseRejectionEvent",
         "DOMParser",
@@ -37872,7 +37541,6 @@
         "BarProp",
         "Element",
         "Navigator",
-        "ApplicationCache",
         "WindowPostMessageOptions",
         "GlobalEventHandlers",
         "WindowEventHandlers",
@@ -37916,11 +37584,6 @@
       "BeforeUnloadEvent": [
         "Event"
       ],
-      "ApplicationCache": [
-        "EventTarget",
-        "EventHandler"
-      ],
-      "NavigatorOnLine": [],
       "ErrorEvent": [
         "Event",
         "ErrorEventInit"
@@ -37976,6 +37639,7 @@
       ],
       "NavigatorID": [],
       "NavigatorLanguage": [],
+      "NavigatorOnLine": [],
       "NavigatorContentUtils": [],
       "NavigatorCookies": [],
       "NavigatorPlugins": [
