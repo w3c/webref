@@ -183,30 +183,6 @@
         ],
         "partial": false
       },
-      "XRSessionSupportedPermissionDescriptor": {
-        "type": "dictionary",
-        "name": "XRSessionSupportedPermissionDescriptor",
-        "inheritance": "PermissionDescriptor",
-        "members": [
-          {
-            "type": "field",
-            "name": "mode",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "XRSessionMode"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "XRSessionMode": {
         "type": "enum",
         "name": "XRSessionMode",
@@ -275,6 +251,30 @@
                   "idlType": "any"
                 }
               ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "XRSessionSupportedPermissionDescriptor": {
+        "type": "dictionary",
+        "name": "XRSessionSupportedPermissionDescriptor",
+        "inheritance": "PermissionDescriptor",
+        "members": [
+          {
+            "type": "field",
+            "name": "mode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRSessionMode"
             },
             "default": null,
             "required": false
@@ -3258,11 +3258,11 @@
         "XRSessionInit",
         "EventHandler"
       ],
+      "XRSessionInit": [],
       "XRSessionSupportedPermissionDescriptor": [
         "PermissionDescriptor",
         "XRSessionMode"
       ],
-      "XRSessionInit": [],
       "XRSession": [
         "EventTarget",
         "XRVisibilityState",
