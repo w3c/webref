@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% December 02, 2020
+% December 03, 2020
 
 370 specifications were crawled in this report.
 
@@ -728,7 +728,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
-- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/) links to [`https://compat.spec.whatwg.org/`](https://compat.spec.whatwg.org/) but does not list it in its references
+- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/) links to:
+    * [`https://compat.spec.whatwg.org/`](https://compat.spec.whatwg.org/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-transforms-2/`](https://www.w3.org/TR/css-transforms-2/) but does not list it in its references
 - [DOM Standard](https://dom.spec.whatwg.org/) links to [`https://w3c.github.io/deviceorientation/spec-source-orientation.html`](https://w3c.github.io/deviceorientation/spec-source-orientation.html) but does not list it in its references
 - [Event Timing API](https://wicg.github.io/event-timing/) links to:
     * [`https://w3c.github.io/pointerevents/`](https://w3c.github.io/pointerevents/) but does not list it in its references
@@ -948,7 +950,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 593 missing references for links found in 164 specifications
+=> 594 missing references for links found in 164 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 

@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% December 02, 2020
+% December 03, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -2460,7 +2460,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-font-loading-3/](https://www.w3.org/TR/css-font-loading-3/)
 - Crawled URL: [https://drafts.csswg.org/css-font-loading/](https://drafts.csswg.org/css-font-loading/)
-- Crawled version: 22 September 2020
+- Crawled version: 2 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-font-loading/](https://drafts.csswg.org/css-font-loading/)
 - Latest published version: [https://www.w3.org/TR/css-font-loading-3/](https://www.w3.org/TR/css-font-loading-3/)
 - Shortname: css-font-loading-3
@@ -5373,7 +5373,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/orientation-event/](https://www.w3.org/TR/orientation-event/)
 - Crawled URL: [https://w3c.github.io/deviceorientation/](https://w3c.github.io/deviceorientation/)
-- Crawled version: 23 June 2020
+- Crawled version: 2 December 2020
 - Editor's Draft: [https://w3c.github.io/deviceorientation/](https://w3c.github.io/deviceorientation/)
 - Latest published version: [https://www.w3.org/TR/orientation-event/](https://www.w3.org/TR/orientation-event/)
 - Shortname: orientation-event
@@ -5384,6 +5384,7 @@ No informative reference to this spec from other specs.
     * `PermissionState` also defined in [Permissions](https://w3c.github.io/permissions/)
 - Missing references for links: 
      * [`https://compat.spec.whatwg.org/`](https://compat.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/css-transforms-2/`](https://www.w3.org/TR/css-transforms-2/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
 
@@ -6320,7 +6321,9 @@ Although they do not, the following specs should also normatively reference this
 
 - [SVG Markers](https://svgwg.org/specs/markers/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 
 
 ## Get Installed Related Apps API {data-spec=true data-ok=true}
@@ -6969,7 +6972,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/import-maps/](https://wicg.github.io/import-maps/)
 - Crawled URL: [https://wicg.github.io/import-maps/](https://wicg.github.io/import-maps/)
-- Crawled version: 23 October 2020
+- Crawled version: 2 December 2020
 - Editor's Draft: [https://wicg.github.io/import-maps/](https://wicg.github.io/import-maps/)
 - Shortname: import-maps
 
@@ -6990,7 +6993,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Crawled URL: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
-- Crawled version: 20 November 2020
+- Crawled version: 3 December 2020
 - Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
 - Latest published version: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Shortname: IndexedDB-2
@@ -7448,7 +7451,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
 - Crawled URL: [https://w3c.github.io/longtasks/](https://w3c.github.io/longtasks/)
-- Crawled version: 30 November 2020
+- Crawled version: 2 December 2020
 - Editor's Draft: [https://w3c.github.io/longtasks/](https://w3c.github.io/longtasks/)
 - Latest published version: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
 - Shortname: longtasks-1
