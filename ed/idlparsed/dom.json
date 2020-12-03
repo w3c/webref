@@ -1137,6 +1137,21 @@
               "value": false
             },
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "signal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AbortSignal"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -10381,7 +10396,8 @@
       ],
       "EventListenerOptions": [],
       "AddEventListenerOptions": [
-        "EventListenerOptions"
+        "EventListenerOptions",
+        "AbortSignal"
       ],
       "AbortController": [
         "AbortSignal"
