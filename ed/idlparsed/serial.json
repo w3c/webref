@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Serial API",
+    "title": "Web Serial API",
     "url": "https://wicg.github.io/serial/"
   },
   "idlparsed": {
@@ -10,14 +10,12 @@
         "Window": [
           "Navigator",
           "Serial",
-          "SerialPort",
-          "SerialPortInfo"
+          "SerialPort"
         ],
         "DedicatedWorker": [
           "WorkerNavigator",
           "Serial",
-          "SerialPort",
-          "SerialPortInfo"
+          "SerialPort"
         ]
       }
     },
@@ -121,7 +119,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "SerialOptions"
+                  "idlType": "SerialPortRequestOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -170,11 +168,158 @@
         ],
         "partial": false
       },
+      "SerialPortRequestOptions": {
+        "type": "dictionary",
+        "name": "SerialPortRequestOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "filters",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SerialPortFilter"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SerialPortFilter": {
+        "type": "dictionary",
+        "name": "SerialPortFilter",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "usbVendorId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "usbProductId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "SerialPort": {
         "type": "interface",
         "name": "SerialPort",
-        "inheritance": null,
+        "inheritance": "EventTarget",
         "members": [
+          {
+            "type": "attribute",
+            "name": "onconnect",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "ondisconnect",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "readable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ReadableStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "writable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WritableStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "getInfo",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SerialPortInfo"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
           {
             "type": "operation",
             "name": "open",
@@ -208,6 +353,47 @@
                   "union": false,
                   "idlType": "SerialOptions"
                 },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setSignals",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "signals",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SerialOutputSignals"
+                },
                 "default": {
                   "type": "dictionary"
                 },
@@ -219,45 +405,48 @@
             "special": ""
           },
           {
-            "type": "attribute",
-            "name": "in",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ReadableStream"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "out",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "WritableStream"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
             "type": "operation",
-            "name": "getInfo",
+            "name": "getSignals",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "Promise",
               "nullable": false,
               "union": false,
-              "idlType": "SerialPortInfo"
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SerialInputSignals"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "close",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
             },
             "arguments": [],
             "extAttrs": [],
@@ -291,60 +480,42 @@
         "partial": false
       },
       "SerialPortInfo": {
-        "type": "interface",
+        "type": "dictionary",
         "name": "SerialPortInfo",
         "inheritance": null,
         "members": [
           {
-            "type": "maplike",
-            "idlType": [
-              {
-                "type": null,
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "DOMString"
-              },
-              {
-                "type": null,
-                "extAttrs": [],
-                "generic": "",
-                "nullable": true,
-                "union": false,
-                "idlType": "DOMString"
-              }
-            ],
-            "arguments": [],
+            "type": "field",
+            "name": "usbVendorId",
             "extAttrs": [],
-            "readonly": false,
-            "async": false
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "Window"
-                }
-              ]
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
             },
-            "arguments": []
+            "default": null,
+            "required": false
           },
           {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
+            "type": "field",
+            "name": "usbProductId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": false
           }
         ],
+        "extAttrs": [],
         "partial": false
       },
       "SerialOptions": {
@@ -358,22 +529,33 @@
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
-            "default": {
-              "type": "number",
-              "value": "9600"
-            },
-            "required": false
+            "default": null,
+            "required": true
           },
           {
             "type": "field",
             "name": "dataBits",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -391,7 +573,14 @@
           {
             "type": "field",
             "name": "stopBits",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -427,14 +616,21 @@
           {
             "type": "field",
             "name": "bufferSize",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long"
+              "idlType": "unsigned long"
             },
             "default": {
               "type": "number",
@@ -479,14 +675,6 @@
           {
             "type": "enum-value",
             "value": "odd"
-          },
-          {
-            "type": "enum-value",
-            "value": "mark"
-          },
-          {
-            "type": "enum-value",
-            "value": "space"
           }
         ],
         "extAttrs": []
@@ -505,6 +693,129 @@
           }
         ],
         "extAttrs": []
+      },
+      "SerialOutputSignals": {
+        "type": "dictionary",
+        "name": "SerialOutputSignals",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "dataTerminalReady",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "requestToSend",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "break",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SerialInputSignals": {
+        "type": "dictionary",
+        "name": "SerialInputSignals",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "dataCarrierDetect",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "clearToSend",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "ringIndicator",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "dataSetReady",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -612,14 +923,12 @@
       "Window": [
         "Navigator",
         "Serial",
-        "SerialPort",
-        "SerialPortInfo"
+        "SerialPort"
       ],
       "DedicatedWorker": [
         "WorkerNavigator",
         "Serial",
-        "SerialPort",
-        "SerialPortInfo"
+        "SerialPort"
       ]
     },
     "dependencies": {
@@ -633,19 +942,29 @@
         "EventTarget",
         "EventHandler",
         "SerialPort",
-        "SerialOptions"
+        "SerialPortRequestOptions"
       ],
+      "SerialPortRequestOptions": [
+        "SerialPortFilter"
+      ],
+      "SerialPortFilter": [],
       "SerialPort": [
-        "SerialOptions",
+        "EventTarget",
+        "EventHandler",
         "ReadableStream",
         "WritableStream",
-        "SerialPortInfo"
+        "SerialPortInfo",
+        "SerialOptions",
+        "SerialOutputSignals",
+        "SerialInputSignals"
       ],
       "SerialPortInfo": [],
       "SerialOptions": [
         "ParityType",
         "FlowControlType"
-      ]
+      ],
+      "SerialOutputSignals": [],
+      "SerialInputSignals": []
     },
     "externalDependencies": [
       "Navigator",

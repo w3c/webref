@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Serial API",
+    "title": "Web Serial API",
     "url": "https://wicg.github.io/serial/"
   },
   "dfns": [
@@ -21,8 +21,7 @@
       "informative": false,
       "heading": {
         "id": "serial-attribute",
-        "title": "serial attribute",
-        "number": "2.1"
+        "title": "serial attribute"
       },
       "definedIn": "heading"
     },
@@ -43,8 +42,7 @@
       "informative": false,
       "heading": {
         "id": "serial-attribute-0",
-        "title": "serial attribute",
-        "number": "3.1"
+        "title": "serial attribute"
       },
       "definedIn": "heading"
     },
@@ -56,26 +54,6 @@
       ],
       "localLinkingText": [],
       "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "serial-interface",
-        "title": "Serial interface",
-        "number": "4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-serial-onconnect",
-      "href": "https://wicg.github.io/serial/#dom-serial-onconnect",
-      "linkingText": [
-        "onconnect"
-      ],
-      "localLinkingText": [
-        "Serial.onconnect"
-      ],
-      "type": "attribute",
       "for": [
         "Serial"
       ],
@@ -84,53 +62,7 @@
       "heading": {
         "id": "serial-interface",
         "title": "Serial interface",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-serial-ondisconnect",
-      "href": "https://wicg.github.io/serial/#dom-serial-ondisconnect",
-      "linkingText": [
-        "ondisconnect"
-      ],
-      "localLinkingText": [
-        "Serial.ondisconnect"
-      ],
-      "type": "attribute",
-      "for": [
-        "Serial"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "serial-interface",
-        "title": "Serial interface",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-serial-getports",
-      "href": "https://wicg.github.io/serial/#dom-serial-getports",
-      "linkingText": [
-        "getPorts()"
-      ],
-      "localLinkingText": [
-        "Serial.getPorts",
-        "Serial.getPorts()",
-        "getPorts"
-      ],
-      "type": "method",
-      "for": [
-        "Serial"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "serial-interface",
-        "title": "Serial interface",
-        "number": "4"
+        "number": "3"
       },
       "definedIn": "pre"
     },
@@ -155,9 +87,247 @@
       "heading": {
         "id": "requestport-method",
         "title": "requestPort() method",
-        "number": "4.1"
+        "number": "3.1"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "dom-serialportrequestoptions",
+      "href": "https://wicg.github.io/serial/#dom-serialportrequestoptions",
+      "linkingText": [
+        "SerialPortRequestOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialportrequestoptions-dictionary",
+        "title": "SerialPortRequestOptions dictionary",
+        "number": "3.1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-serialportrequestoptions-filters",
+      "href": "https://wicg.github.io/serial/#dom-serialportrequestoptions-filters",
+      "linkingText": [
+        "filters"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialPortRequestOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialportrequestoptions-dictionary",
+        "title": "SerialPortRequestOptions dictionary",
+        "number": "3.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-serialportfilter",
+      "href": "https://wicg.github.io/serial/#dom-serialportfilter",
+      "linkingText": [
+        "SerialPortFilter"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialportfilter-dictionary",
+        "title": "SerialPortFilter dictionary",
+        "number": "3.1.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-serialportfilter-usbvendorid",
+      "href": "https://wicg.github.io/serial/#dom-serialportfilter-usbvendorid",
+      "linkingText": [
+        "usbVendorId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialPortFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialportfilter-dictionary",
+        "title": "SerialPortFilter dictionary",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-serialportfilter-usbproductid",
+      "href": "https://wicg.github.io/serial/#dom-serialportfilter-usbproductid",
+      "linkingText": [
+        "usbProductId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialPortFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialportfilter-dictionary",
+        "title": "SerialPortFilter dictionary",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-match-the-filter",
+      "href": "https://wicg.github.io/serial/#dfn-match-the-filter",
+      "linkingText": [
+        "match the filter",
+        "matches the filter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serialportfilter-dictionary",
+        "title": "SerialPortFilter dictionary",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-match-any-filter",
+      "href": "https://wicg.github.io/serial/#dfn-match-any-filter",
+      "linkingText": [
+        "match any filter",
+        "matches any filter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serialportfilter-dictionary",
+        "title": "SerialPortFilter dictionary",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-serial-getports",
+      "href": "https://wicg.github.io/serial/#dom-serial-getports",
+      "linkingText": [
+        "getPorts()"
+      ],
+      "localLinkingText": [
+        "Serial.getPorts",
+        "Serial.getPorts()",
+        "getPorts"
+      ],
+      "type": "method",
+      "for": [
+        "Serial"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getports-method",
+        "title": "getPorts() method",
+        "number": "3.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-serial-onconnect",
+      "href": "https://wicg.github.io/serial/#dom-serial-onconnect",
+      "linkingText": [
+        "onconnect"
+      ],
+      "localLinkingText": [
+        "Serial.onconnect"
+      ],
+      "type": "attribute",
+      "for": [
+        "Serial"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "onconnect-attribute",
+        "title": "onconnect attribute",
+        "number": "3.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-connect",
+      "href": "https://wicg.github.io/serial/#dfn-connect",
+      "linkingText": [
+        "connect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "onconnect-attribute",
+        "title": "onconnect attribute",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-serial-ondisconnect",
+      "href": "https://wicg.github.io/serial/#dom-serial-ondisconnect",
+      "linkingText": [
+        "ondisconnect"
+      ],
+      "localLinkingText": [
+        "Serial.ondisconnect"
+      ],
+      "type": "attribute",
+      "for": [
+        "Serial"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ondisconnect-attribute",
+        "title": "ondisconnect attribute",
+        "number": "3.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-disconnect",
+      "href": "https://wicg.github.io/serial/#dfn-disconnect",
+      "linkingText": [
+        "disconnect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ondisconnect-attribute",
+        "title": "ondisconnect attribute",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-serialport",
@@ -173,43 +343,162 @@
       "heading": {
         "id": "serialport-interface",
         "title": "SerialPort interface",
-        "number": "5"
+        "number": "4"
       },
       "definedIn": "heading"
     },
     {
-      "id": "dom-serialport-open",
-      "href": "https://wicg.github.io/serial/#dom-serialport-open",
+      "id": "dfn-serial-port-task-source",
+      "href": "https://wicg.github.io/serial/#dfn-serial-port-task-source",
       "linkingText": [
-        "open()",
-        "open(options)"
+        "serial port task source"
       ],
-      "localLinkingText": [
-        "SerialPort.open",
-        "SerialPort.open()",
-        "open"
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serialport-interface",
+        "title": "SerialPort interface",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-state",
+      "href": "https://wicg.github.io/serial/#dfn-state",
+      "linkingText": [
+        "[[state]]"
       ],
-      "type": "method",
-      "for": [
-        "SerialPort"
-      ],
+      "localLinkingText": [],
+      "type": "idl",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "serialport-interface",
         "title": "SerialPort interface",
-        "number": "5"
+        "number": "4"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
-      "id": "dom-serialport-in",
-      "href": "https://wicg.github.io/serial/#dom-serialport-in",
+      "id": "dfn-buffersize",
+      "href": "https://wicg.github.io/serial/#dfn-buffersize",
       "linkingText": [
-        "in"
+        "[[bufferSize]]"
+      ],
+      "localLinkingText": [],
+      "type": "idl",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialport-interface",
+        "title": "SerialPort interface",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-readable",
+      "href": "https://wicg.github.io/serial/#dfn-readable",
+      "linkingText": [
+        "[[readable]]"
+      ],
+      "localLinkingText": [],
+      "type": "idl",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialport-interface",
+        "title": "SerialPort interface",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-readfatal",
+      "href": "https://wicg.github.io/serial/#dfn-readfatal",
+      "linkingText": [
+        "[[readFatal]]"
+      ],
+      "localLinkingText": [],
+      "type": "idl",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialport-interface",
+        "title": "SerialPort interface",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-writable",
+      "href": "https://wicg.github.io/serial/#dfn-writable",
+      "linkingText": [
+        "[[writable]]"
+      ],
+      "localLinkingText": [],
+      "type": "idl",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialport-interface",
+        "title": "SerialPort interface",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-writefatal",
+      "href": "https://wicg.github.io/serial/#dfn-writefatal",
+      "linkingText": [
+        "[[writeFatal]]"
+      ],
+      "localLinkingText": [],
+      "type": "idl",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialport-interface",
+        "title": "SerialPort interface",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-pendingclosepromise",
+      "href": "https://wicg.github.io/serial/#dfn-pendingclosepromise",
+      "linkingText": [
+        "[[pendingClosePromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "idl",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialport-interface",
+        "title": "SerialPort interface",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-serialport-onconnect",
+      "href": "https://wicg.github.io/serial/#dom-serialport-onconnect",
+      "linkingText": [
+        "onconnect"
       ],
       "localLinkingText": [
-        "SerialPort.in"
+        "SerialPort.onconnect"
       ],
       "type": "attribute",
       "for": [
@@ -218,20 +507,20 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "serialport-interface",
-        "title": "SerialPort interface",
-        "number": "5"
+        "id": "onconnect-attribute-0",
+        "title": "onconnect attribute",
+        "number": "4.1"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
-      "id": "dom-serialport-out",
-      "href": "https://wicg.github.io/serial/#dom-serialport-out",
+      "id": "dom-serialport-ondisconnect",
+      "href": "https://wicg.github.io/serial/#dom-serialport-ondisconnect",
       "linkingText": [
-        "out"
+        "ondisconnect"
       ],
       "localLinkingText": [
-        "SerialPort.out"
+        "SerialPort.ondisconnect"
       ],
       "type": "attribute",
       "for": [
@@ -240,11 +529,11 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "serialport-interface",
-        "title": "SerialPort interface",
-        "number": "5"
+        "id": "ondisconnect-attribute-0",
+        "title": "ondisconnect attribute",
+        "number": "4.2"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-serialport-getinfo",
@@ -266,7 +555,7 @@
       "heading": {
         "id": "getinfo-method",
         "title": "getInfo() method",
-        "number": "5.1"
+        "number": "4.3"
       },
       "definedIn": "heading"
     },
@@ -277,52 +566,81 @@
         "SerialPortInfo"
       ],
       "localLinkingText": [],
-      "type": "interface",
+      "type": "dictionary",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "serialportinfo-interface",
-        "title": "SerialPortInfo interface",
-        "number": "6"
+        "id": "serialportinfo-dictionary",
+        "title": "SerialPortInfo dictionary",
+        "number": "4.3.1"
       },
       "definedIn": "heading"
     },
     {
-      "id": "dfn-table-of-recommended-metadata",
-      "href": "https://wicg.github.io/serial/#dfn-table-of-recommended-metadata",
+      "id": "dom-serialportinfo-usbvendorid",
+      "href": "https://wicg.github.io/serial/#dom-serialportinfo-usbvendorid",
       "linkingText": [
-        "Table of recommended metadata"
+        "usbVendorId"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "dict-member",
+      "for": [
+        "SerialPortInfo"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "recommended-serial-port-metadata",
-        "title": "Recommended serial port metadata",
-        "number": "6.2"
+        "id": "serialportinfo-dictionary",
+        "title": "SerialPortInfo dictionary",
+        "number": "4.3.1"
       },
-      "definedIn": "table"
+      "definedIn": "dt"
     },
     {
-      "id": "dfn-steps-for-getting-metadata-of-a-serial-port",
-      "href": "https://wicg.github.io/serial/#dfn-steps-for-getting-metadata-of-a-serial-port",
+      "id": "dom-serialportinfo-usbproductid",
+      "href": "https://wicg.github.io/serial/#dom-serialportinfo-usbproductid",
       "linkingText": [
-        "steps for getting metadata of a serial port"
+        "usbProductId"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "dict-member",
+      "for": [
+        "SerialPortInfo"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "getting-serial-port-metadata",
-        "title": "Getting serial port metadata",
-        "number": "6.3"
+        "id": "serialportinfo-dictionary",
+        "title": "SerialPortInfo dictionary",
+        "number": "4.3.1"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-serialport-open",
+      "href": "https://wicg.github.io/serial/#dom-serialport-open",
+      "linkingText": [
+        "open()",
+        "open(options)"
+      ],
+      "localLinkingText": [
+        "SerialPort.open",
+        "SerialPort.open()",
+        "open"
+      ],
+      "type": "method",
+      "for": [
+        "SerialPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "open-method",
+        "title": "open() method",
+        "number": "4.4"
+      },
+      "definedIn": "heading"
     },
     {
       "id": "dom-serialoptions",
@@ -338,29 +656,9 @@
       "heading": {
         "id": "serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "number": "7"
+        "number": "4.4.1"
       },
       "definedIn": "heading"
-    },
-    {
-      "id": "dom-serialoptions-buffersize",
-      "href": "https://wicg.github.io/serial/#dom-serialoptions-buffersize",
-      "linkingText": [
-        "bufferSize"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "SerialOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "serialoptions-dictionary",
-        "title": "SerialOptions dictionary",
-        "number": "7"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "dom-serialoptions-baudrate",
@@ -378,7 +676,7 @@
       "heading": {
         "id": "serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "number": "7"
+        "number": "4.4.1"
       },
       "definedIn": "dt"
     },
@@ -398,7 +696,7 @@
       "heading": {
         "id": "serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "number": "7"
+        "number": "4.4.1"
       },
       "definedIn": "dt"
     },
@@ -418,7 +716,7 @@
       "heading": {
         "id": "serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "number": "7"
+        "number": "4.4.1"
       },
       "definedIn": "dt"
     },
@@ -438,7 +736,27 @@
       "heading": {
         "id": "serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "number": "7"
+        "number": "4.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-serialoptions-buffersize",
+      "href": "https://wicg.github.io/serial/#dom-serialoptions-buffersize",
+      "linkingText": [
+        "bufferSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialoptions-dictionary",
+        "title": "SerialOptions dictionary",
+        "number": "4.4.1"
       },
       "definedIn": "dt"
     },
@@ -458,7 +776,7 @@
       "heading": {
         "id": "serialoptions-dictionary",
         "title": "SerialOptions dictionary",
-        "number": "7"
+        "number": "4.4.1"
       },
       "definedIn": "dt"
     },
@@ -476,7 +794,7 @@
       "heading": {
         "id": "paritytype-enum",
         "title": "ParityType enum",
-        "number": "8"
+        "number": "4.4.1.1"
       },
       "definedIn": "heading"
     },
@@ -496,7 +814,7 @@
       "heading": {
         "id": "paritytype-enum",
         "title": "ParityType enum",
-        "number": "8"
+        "number": "4.4.1.1"
       },
       "definedIn": "dt"
     },
@@ -516,7 +834,7 @@
       "heading": {
         "id": "paritytype-enum",
         "title": "ParityType enum",
-        "number": "8"
+        "number": "4.4.1.1"
       },
       "definedIn": "dt"
     },
@@ -536,47 +854,7 @@
       "heading": {
         "id": "paritytype-enum",
         "title": "ParityType enum",
-        "number": "8"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paritytype-mark",
-      "href": "https://wicg.github.io/serial/#dom-paritytype-mark",
-      "linkingText": [
-        "mark"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "ParityType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paritytype-enum",
-        "title": "ParityType enum",
-        "number": "8"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paritytype-space",
-      "href": "https://wicg.github.io/serial/#dom-paritytype-space",
-      "linkingText": [
-        "space"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "ParityType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paritytype-enum",
-        "title": "ParityType enum",
-        "number": "8"
+        "number": "4.4.1.1"
       },
       "definedIn": "dt"
     },
@@ -594,7 +872,7 @@
       "heading": {
         "id": "flowcontroltype-enum",
         "title": "FlowControlType enum",
-        "number": "9"
+        "number": "4.4.1.2"
       },
       "definedIn": "heading"
     },
@@ -614,7 +892,7 @@
       "heading": {
         "id": "flowcontroltype-enum",
         "title": "FlowControlType enum",
-        "number": "9"
+        "number": "4.4.1.2"
       },
       "definedIn": "dt"
     },
@@ -634,15 +912,37 @@
       "heading": {
         "id": "flowcontroltype-enum",
         "title": "FlowControlType enum",
-        "number": "9"
+        "number": "4.4.1.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dfn-security-considerations",
-      "href": "https://wicg.github.io/serial/#dfn-security-considerations",
+      "id": "dom-serialport-readable",
+      "href": "https://wicg.github.io/serial/#dom-serialport-readable",
       "linkingText": [
-        "Security considerations"
+        "readable"
+      ],
+      "localLinkingText": [
+        "SerialPort.readable"
+      ],
+      "type": "attribute",
+      "for": [
+        "SerialPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "readable-attribute",
+        "title": "readable attribute",
+        "number": "4.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-handle-closing-the-readable-stream",
+      "href": "https://wicg.github.io/serial/#dfn-handle-closing-the-readable-stream",
+      "linkingText": [
+        "handle closing the readable stream"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -650,10 +950,300 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "security",
-        "title": "10. Security considerations"
+        "id": "readable-attribute",
+        "title": "readable attribute",
+        "number": "4.5"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "dom-serialport-writable",
+      "href": "https://wicg.github.io/serial/#dom-serialport-writable",
+      "linkingText": [
+        "writable"
+      ],
+      "localLinkingText": [
+        "SerialPort.writable"
+      ],
+      "type": "attribute",
+      "for": [
+        "SerialPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "writable-attribute",
+        "title": "writable attribute",
+        "number": "4.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-handle-closing-the-writable-stream",
+      "href": "https://wicg.github.io/serial/#dfn-handle-closing-the-writable-stream",
+      "linkingText": [
+        "handle closing the writable stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "writable-attribute",
+        "title": "writable attribute",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-serialport-setsignals",
+      "href": "https://wicg.github.io/serial/#dom-serialport-setsignals",
+      "linkingText": [
+        "setSignals()",
+        "setSignals(signals)"
+      ],
+      "localLinkingText": [
+        "SerialPort.setSignals",
+        "SerialPort.setSignals()",
+        "setSignals"
+      ],
+      "type": "method",
+      "for": [
+        "SerialPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "setsignals-method",
+        "title": "setSignals() method",
+        "number": "4.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-serialoutputsignals",
+      "href": "https://wicg.github.io/serial/#dom-serialoutputsignals",
+      "linkingText": [
+        "SerialOutputSignals"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialoutputsignals-dictionary",
+        "title": "SerialOutputSignals dictionary",
+        "number": "4.7.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-serialoutputsignals-dataterminalready",
+      "href": "https://wicg.github.io/serial/#dom-serialoutputsignals-dataterminalready",
+      "linkingText": [
+        "dataTerminalReady"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOutputSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialoutputsignals-dictionary",
+        "title": "SerialOutputSignals dictionary",
+        "number": "4.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-serialoutputsignals-requesttosend",
+      "href": "https://wicg.github.io/serial/#dom-serialoutputsignals-requesttosend",
+      "linkingText": [
+        "requestToSend"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOutputSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialoutputsignals-dictionary",
+        "title": "SerialOutputSignals dictionary",
+        "number": "4.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-serialoutputsignals-break",
+      "href": "https://wicg.github.io/serial/#dom-serialoutputsignals-break",
+      "linkingText": [
+        "break"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialOutputSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialoutputsignals-dictionary",
+        "title": "SerialOutputSignals dictionary",
+        "number": "4.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-serialport-getsignals",
+      "href": "https://wicg.github.io/serial/#dom-serialport-getsignals",
+      "linkingText": [
+        "getSignals()"
+      ],
+      "localLinkingText": [
+        "SerialPort.getSignals",
+        "SerialPort.getSignals()",
+        "getSignals"
+      ],
+      "type": "method",
+      "for": [
+        "SerialPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getsignals-method",
+        "title": "getSignals() method",
+        "number": "4.8"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-serialinputsignals",
+      "href": "https://wicg.github.io/serial/#dom-serialinputsignals",
+      "linkingText": [
+        "SerialInputSignals"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialinputsignals-dictionary",
+        "title": "SerialInputSignals dictionary",
+        "number": "4.8.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-serialinputsignals-datacarrierdetect",
+      "href": "https://wicg.github.io/serial/#dom-serialinputsignals-datacarrierdetect",
+      "linkingText": [
+        "dataCarrierDetect"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialInputSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialinputsignals-dictionary",
+        "title": "SerialInputSignals dictionary",
+        "number": "4.8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-serialinputsignals-cleartosend",
+      "href": "https://wicg.github.io/serial/#dom-serialinputsignals-cleartosend",
+      "linkingText": [
+        "clearToSend"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialInputSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialinputsignals-dictionary",
+        "title": "SerialInputSignals dictionary",
+        "number": "4.8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-serialinputsignals-ringindicator",
+      "href": "https://wicg.github.io/serial/#dom-serialinputsignals-ringindicator",
+      "linkingText": [
+        "ringIndicator"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialInputSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialinputsignals-dictionary",
+        "title": "SerialInputSignals dictionary",
+        "number": "4.8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-serialinputsignals-datasetready",
+      "href": "https://wicg.github.io/serial/#dom-serialinputsignals-datasetready",
+      "linkingText": [
+        "dataSetReady"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SerialInputSignals"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serialinputsignals-dictionary",
+        "title": "SerialInputSignals dictionary",
+        "number": "4.8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-serialport-close",
+      "href": "https://wicg.github.io/serial/#dom-serialport-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [
+        "SerialPort.close",
+        "SerialPort.close()",
+        "close"
+      ],
+      "type": "method",
+      "for": [
+        "SerialPort"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-method",
+        "title": "close() method",
+        "number": "4.9"
+      },
+      "definedIn": "heading"
     }
   ]
 }

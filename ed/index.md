@@ -709,6 +709,7 @@ Informative references to this spec from:
 - [Preload](https://w3c.github.io/preload/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web Serial API](https://wicg.github.io/serial/)
 
 
 ## Content Security Policy: Embedded Enforcement {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -5559,7 +5560,6 @@ Normative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
-- [Serial API](https://wicg.github.io/serial/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
@@ -5586,6 +5586,7 @@ Normative references to this spec from:
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web OTP API](https://wicg.github.io/web-otp/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
+- [Web Serial API](https://wicg.github.io/serial/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
@@ -6722,7 +6723,6 @@ Normative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
-- [Serial API](https://wicg.github.io/serial/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
@@ -6756,6 +6756,7 @@ Normative references to this spec from:
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web OTP API](https://wicg.github.io/web-otp/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
+- [Web Serial API](https://wicg.github.io/serial/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
@@ -7150,6 +7151,7 @@ Normative references to this spec from:
 - [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
+- [Web Serial API](https://wicg.github.io/serial/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -7404,7 +7406,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Crawled URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
-- Crawled version: 26 November 2020
+- Crawled version: 4 December 2020
 - Editor's Draft: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Shortname: webpackage
 
@@ -8721,6 +8723,7 @@ Normative references to this spec from:
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
+- [Web Serial API](https://wicg.github.io/serial/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [WebHID API](https://wicg.github.io/webhid/)
 - [WebUSB API](https://wicg.github.io/webusb/)
@@ -9683,27 +9686,6 @@ Informative references to this spec from:
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 
 
-## Serial API {data-spec=true data-ok=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
-- Crawled URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
-- Crawled version: 01 December 2020
-- Editor's Draft: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
-- Shortname: serial
-
-### Potential issue(s) {.anomalies}
-
-This specification looks good!
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Server Timing {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -9844,8 +9826,8 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
-- [Serial API](https://wicg.github.io/serial/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [Web Serial API](https://wicg.github.io/serial/)
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 - [WebTransport](https://w3c.github.io/webtransport/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -10831,6 +10813,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Web Serial API](https://wicg.github.io/serial/)
 
 
 ## Web Cryptography API {data-spec=true data-ok=true}
@@ -11029,7 +11012,6 @@ Normative references to this spec from:
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selection API](https://w3c.github.io/selection-api/)
-- [Serial API](https://wicg.github.io/serial/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
@@ -11061,6 +11043,7 @@ Normative references to this spec from:
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web OTP API](https://wicg.github.io/web-otp/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
+- [Web Serial API](https://wicg.github.io/serial/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
@@ -11205,6 +11188,27 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Web Serial API {data-spec=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
+- Crawled URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
+- Crawled version: 04 December 2020
+- Editor's Draft: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
+- Shortname: serial
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12667,7 +12671,9 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Web Serial API](https://wicg.github.io/serial/)
 
 
 ## WebVTT: The Web Video Text Tracks Format {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -12842,7 +12848,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr-hand-input-1/](https://www.w3.org/TR/webxr-hand-input-1/)
 - Crawled URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
-- Crawled version: 17 November 2020
+- Crawled version: 3 December 2020
 - Editor's Draft: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
 - Latest published version: [https://www.w3.org/TR/webxr-hand-input-1/](https://www.w3.org/TR/webxr-hand-input-1/)
 - Shortname: webxr-hand-input-1
