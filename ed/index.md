@@ -9807,7 +9807,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 2 December 2020
+- Crawled version: 4 December 2020
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -10699,7 +10699,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Crawled URL: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
-- Crawled version: 30 November 2020
+- Crawled version: 4 December 2020
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Shortname: webaudio
@@ -12636,7 +12636,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 11 November 2020
+- Crawled version: 4 December 2020
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Shortname: webtransport
 
@@ -12657,7 +12657,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 2 December 2020
+- Crawled version: 4 December 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
