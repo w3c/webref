@@ -22,6 +22,9 @@ dictionary GPULimits {
     GPUSize32 maxUniformBuffersPerShaderStage = 12;
     GPUSize32 maxUniformBufferBindingSize = 16384;
     GPUSize32 maxStorageBufferBindingSize = 134217728;
+    GPUSize32 maxVertexBuffers = 8;
+    GPUSize32 maxVertexAttributes = 16;
+    GPUSize32 maxVertexArrayStride = 2048;
 };
 
 interface GPUAdapterFeatures {
@@ -344,26 +347,26 @@ dictionary GPUBindGroupLayoutEntry {
     GPUStorageTextureBindingLayout storageTexture;
 };
 
-enum GPUBufferType {
+enum GPUBufferBindingType {
     "uniform",
     "storage",
     "readonly-storage",
 };
 
 dictionary GPUBufferBindingLayout {
-    GPUBufferType type = "uniform";
+    GPUBufferBindingType type = "uniform";
     boolean hasDynamicOffset = false;
     GPUSize64 minBindingSize = 0;
 };
 
-enum GPUSamplerType {
+enum GPUSamplerBindingType {
     "filtering",
     "non-filtering",
     "comparison",
 };
 
 dictionary GPUSamplerBindingLayout {
-    GPUSamplerType type = "filtering";
+    GPUSamplerBindingType type = "filtering";
 };
 
 enum GPUTextureSampleType {
@@ -375,7 +378,7 @@ enum GPUTextureSampleType {
 };
 
 dictionary GPUTextureBindingLayout {
-    GPUTextureSampleType type = "float";
+    GPUTextureSampleType sampleType = "float";
     GPUTextureViewDimension viewDimension = "2d";
     boolean multisampled = false;
 };
@@ -386,7 +389,7 @@ enum GPUStorageTextureAccess {
 };
 
 dictionary GPUStorageTextureBindingLayout {
-    required GPUStorageTextureAccess type;
+    required GPUStorageTextureAccess access;
     required GPUTextureFormat format;
     GPUTextureViewDimension viewDimension = "2d";
 };
@@ -931,7 +934,7 @@ enum GPUPipelineStatisticName {
 interface GPUCanvasContext {
     GPUSwapChain configureSwapChain(GPUSwapChainDescriptor descriptor);
 
-    Promise<GPUTextureFormat> getSwapChainPreferredFormat(GPUDevice device);
+    GPUTextureFormat getSwapChainPreferredFormat(GPUAdapter adapter);
 };
 
 dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {

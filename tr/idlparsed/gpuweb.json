@@ -259,6 +259,60 @@
               "value": "134217728"
             },
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "maxVertexBuffers",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "default": {
+              "type": "number",
+              "value": "8"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "maxVertexAttributes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "default": {
+              "type": "number",
+              "value": "16"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "maxVertexArrayStride",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "default": {
+              "type": "number",
+              "value": "2048"
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -2864,9 +2918,9 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUBufferType": {
+      "GPUBufferBindingType": {
         "type": "enum",
-        "name": "GPUBufferType",
+        "name": "GPUBufferBindingType",
         "values": [
           {
             "type": "enum-value",
@@ -2898,7 +2952,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUBufferType"
+              "idlType": "GPUBufferBindingType"
             },
             "default": {
               "type": "string",
@@ -2946,9 +3000,9 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUSamplerType": {
+      "GPUSamplerBindingType": {
         "type": "enum",
-        "name": "GPUSamplerType",
+        "name": "GPUSamplerBindingType",
         "values": [
           {
             "type": "enum-value",
@@ -2980,7 +3034,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSamplerType"
+              "idlType": "GPUSamplerBindingType"
             },
             "default": {
               "type": "string",
@@ -3026,7 +3080,7 @@
         "members": [
           {
             "type": "field",
-            "name": "type",
+            "name": "sampleType",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -3104,7 +3158,7 @@
         "members": [
           {
             "type": "field",
-            "name": "type",
+            "name": "access",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -8452,24 +8506,15 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUTextureFormat"
-                }
-              ]
+              "idlType": "GPUTextureFormat"
             },
             "arguments": [
               {
                 "type": "argument",
-                "name": "device",
+                "name": "adapter",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -8477,7 +8522,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUDevice"
+                  "idlType": "GPUAdapter"
                 },
                 "default": null,
                 "optional": false,
@@ -9948,11 +9993,11 @@
         "GPUStorageTextureBindingLayout"
       ],
       "GPUBufferBindingLayout": [
-        "GPUBufferType",
+        "GPUBufferBindingType",
         "GPUSize64"
       ],
       "GPUSamplerBindingLayout": [
-        "GPUSamplerType"
+        "GPUSamplerBindingType"
       ],
       "GPUTextureBindingLayout": [
         "GPUTextureSampleType",
@@ -10215,7 +10260,7 @@
         "GPUSwapChain",
         "GPUSwapChainDescriptor",
         "GPUTextureFormat",
-        "GPUDevice"
+        "GPUAdapter"
       ],
       "GPUSwapChainDescriptor": [
         "GPUObjectDescriptorBase",

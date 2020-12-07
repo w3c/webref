@@ -8,7 +8,6 @@
       "constructors": {
         "Window": [
           "PaymentRequest",
-          "MerchantValidationEvent",
           "PaymentMethodChangeEvent",
           "PaymentRequestUpdateEvent"
         ]
@@ -164,7 +163,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -269,21 +268,6 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "onmerchantvalidation",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
           },
           {
             "type": "attribute",
@@ -1130,7 +1114,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false
           },
           {
@@ -1154,7 +1141,10 @@
                 }
               ]
             },
-            "default": null,
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
             "required": false
           },
           {
@@ -1169,7 +1159,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false
           },
           {
@@ -1184,7 +1177,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false
           },
           {
@@ -1199,7 +1195,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false
           },
           {
@@ -1214,7 +1213,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false
           },
           {
@@ -1229,7 +1231,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false
           },
           {
@@ -1244,7 +1249,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false
           },
           {
@@ -1259,7 +1267,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false
           },
           {
@@ -1274,7 +1285,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false
           }
         ],
@@ -1694,7 +1708,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -1745,7 +1759,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -1931,187 +1945,6 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "MerchantValidationEvent": {
-        "type": "interface",
-        "name": "MerchantValidationEvent",
-        "inheritance": "Event",
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "type",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "eventInitDict",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MerchantValidationEventInit"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "methodName",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "validationURL",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "complete",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "void"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "merchantSessionPromise",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "Promise",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": [
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "any"
-                    }
-                  ]
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "MerchantValidationEventInit": {
-        "type": "dictionary",
-        "name": "MerchantValidationEventInit",
-        "inheritance": "EventInit",
-        "members": [
-          {
-            "type": "field",
-            "name": "methodName",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": {
-              "type": "string",
-              "value": ""
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "validationURL",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "default": {
-              "type": "string",
-              "value": ""
-            },
             "required": false
           }
         ],
@@ -2311,7 +2144,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -2379,7 +2212,6 @@
         "PaymentRequest",
         "PaymentAddress",
         "PaymentResponse",
-        "MerchantValidationEvent",
         "PaymentMethodChangeEvent",
         "PaymentRequestUpdateEvent"
       ]
@@ -2392,7 +2224,6 @@
         "PaymentOptions",
         "PaymentResponse",
         "PaymentDetailsUpdate",
-        "void",
         "PaymentAddress",
         "PaymentShippingType",
         "EventHandler"
@@ -2432,7 +2263,6 @@
       "PaymentResponse": [
         "EventTarget",
         "PaymentAddress",
-        "void",
         "PaymentComplete",
         "PaymentValidationErrors",
         "EventHandler"
@@ -2442,14 +2272,6 @@
         "AddressErrors"
       ],
       "PayerErrors": [],
-      "MerchantValidationEvent": [
-        "Event",
-        "MerchantValidationEventInit",
-        "void"
-      ],
-      "MerchantValidationEventInit": [
-        "EventInit"
-      ],
       "PaymentMethodChangeEvent": [
         "PaymentRequestUpdateEvent",
         "PaymentMethodChangeEventInit"
@@ -2460,7 +2282,6 @@
       "PaymentRequestUpdateEvent": [
         "Event",
         "PaymentRequestUpdateEventInit",
-        "void",
         "PaymentDetailsUpdate"
       ],
       "PaymentRequestUpdateEventInit": [
@@ -2469,7 +2290,6 @@
     },
     "externalDependencies": [
       "EventTarget",
-      "void",
       "EventHandler",
       "Event",
       "EventInit"

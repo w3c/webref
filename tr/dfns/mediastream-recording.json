@@ -5,6 +5,24 @@
   },
   "dfns": [
     {
+      "id": "mediarecorder",
+      "href": "https://www.w3.org/TR/mediastream-recording/#mediarecorder",
+      "linkingText": [
+        "MediaRecorder"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediarecorder-api",
+        "title": "Media Recorder API",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-mediarecorder-mediarecorder-stream-options-stream",
       "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-mediarecorder-stream-options-stream",
       "linkingText": [
@@ -13,7 +31,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MediaRecorder/MediaRecorder(stream, options)"
+        "MediaRecorder/MediaRecorder(stream, options)",
+        "MediaRecorder/constructor(stream, options)",
+        "MediaRecorder/MediaRecorder(stream)",
+        "MediaRecorder/constructor(stream)"
       ],
       "access": "public",
       "informative": false,
@@ -33,26 +54,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MediaRecorder/MediaRecorder(stream, options)"
+        "MediaRecorder/MediaRecorder(stream, options)",
+        "MediaRecorder/constructor(stream, options)",
+        "MediaRecorder/MediaRecorder(stream)",
+        "MediaRecorder/constructor(stream)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "mediarecorder-api",
-        "title": "Media Recorder API",
-        "number": "2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "mediarecorder",
-      "href": "https://www.w3.org/TR/mediastream-recording/#mediarecorder",
-      "linkingText": [
-        "MediaRecorder"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -108,7 +114,9 @@
       "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-mediarecorder",
       "linkingText": [
         "MediaRecorder(stream, options)",
-        "MediaRecorder(stream)"
+        "constructor(stream, options)",
+        "MediaRecorder(stream)",
+        "constructor(stream)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -123,6 +131,42 @@
         "number": "2.1"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "constrainedmimetype",
+      "href": "https://www.w3.org/TR/mediastream-recording/#constrainedmimetype",
+      "linkingText": [
+        "[[ConstrainedMimeType]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediarecorder-constructor",
+        "title": "Constructors",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "constrainedbitspersecond",
+      "href": "https://www.w3.org/TR/mediastream-recording/#constrainedbitspersecond",
+      "linkingText": [
+        "[[ConstrainedBitsPerSecond]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediarecorder-constructor",
+        "title": "Constructors",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-mediarecorder-stream",
@@ -345,6 +389,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-mediarecorder-audiobitratemode",
+      "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-audiobitratemode",
+      "linkingText": [
+        "audioBitrateMode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediarecorder-attributes",
+        "title": "Attributes",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-mediarecorder-start",
       "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecorder-start",
       "linkingText": [
@@ -364,6 +428,24 @@
         "number": "2.3"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "abstract-opdef-inactivate-the-recorder",
+      "href": "https://www.w3.org/TR/mediastream-recording/#abstract-opdef-inactivate-the-recorder",
+      "linkingText": [
+        "Inactivate the recorder"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediarecorder-methods",
+        "title": "Methods",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-mediarecorder-stop",
@@ -466,10 +548,28 @@
       "definedIn": "dt"
     },
     {
-      "id": "to-fire-a-blob-event",
-      "href": "https://www.w3.org/TR/mediastream-recording/#to-fire-a-blob-event",
+      "id": "abstract-opdef-is-type-supported",
+      "href": "https://www.w3.org/TR/mediastream-recording/#abstract-opdef-is-type-supported",
       "linkingText": [
-        "To fire a blob event"
+        "is type supported"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediarecorder-methods",
+        "title": "Methods",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fire-a-blob-event",
+      "href": "https://www.w3.org/TR/mediastream-recording/#fire-a-blob-event",
+      "linkingText": [
+        "fire a blob event"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -582,6 +682,86 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-mediarecorderoptions-audiobitratemode",
+      "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecorderoptions-audiobitratemode",
+      "linkingText": [
+        "audioBitrateMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaRecorderOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediarecorderoptions-members",
+        "title": "Members",
+        "number": "2.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-bitratemode",
+      "href": "https://www.w3.org/TR/mediastream-recording/#enumdef-bitratemode",
+      "linkingText": [
+        "BitrateMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bitratemode",
+        "title": "BitrateMode",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bitratemode-cbr",
+      "href": "https://www.w3.org/TR/mediastream-recording/#dom-bitratemode-cbr",
+      "linkingText": [
+        "\"cbr\"",
+        "cbr"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BitrateMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bitratemode-values",
+        "title": "Values",
+        "number": "2.6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-bitratemode-vbr",
+      "href": "https://www.w3.org/TR/mediastream-recording/#dom-bitratemode-vbr",
+      "linkingText": [
+        "\"vbr\"",
+        "vbr"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "BitrateMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bitratemode-values",
+        "title": "Values",
+        "number": "2.6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "enumdef-recordingstate",
       "href": "https://www.w3.org/TR/mediastream-recording/#enumdef-recordingstate",
       "linkingText": [
@@ -595,7 +775,7 @@
       "heading": {
         "id": "recordingstate",
         "title": "RecordingState",
-        "number": "2.6"
+        "number": "2.7"
       },
       "definedIn": "pre"
     },
@@ -603,6 +783,7 @@
       "id": "dom-recordingstate-inactive",
       "href": "https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-inactive",
       "linkingText": [
+        "\"inactive\"",
         "inactive"
       ],
       "localLinkingText": [],
@@ -615,7 +796,7 @@
       "heading": {
         "id": "recordingstate-values",
         "title": "Values",
-        "number": "2.6.1"
+        "number": "2.7.1"
       },
       "definedIn": "dt"
     },
@@ -623,6 +804,7 @@
       "id": "dom-recordingstate-recording",
       "href": "https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-recording",
       "linkingText": [
+        "\"recording\"",
         "recording"
       ],
       "localLinkingText": [],
@@ -635,7 +817,7 @@
       "heading": {
         "id": "recordingstate-values",
         "title": "Values",
-        "number": "2.6.1"
+        "number": "2.7.1"
       },
       "definedIn": "dt"
     },
@@ -643,6 +825,7 @@
       "id": "dom-recordingstate-paused",
       "href": "https://www.w3.org/TR/mediastream-recording/#dom-recordingstate-paused",
       "linkingText": [
+        "\"paused\"",
         "paused"
       ],
       "localLinkingText": [],
@@ -655,49 +838,9 @@
       "heading": {
         "id": "recordingstate-values",
         "title": "Values",
-        "number": "2.6.1"
+        "number": "2.7.1"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "dom-blobevent-blobevent-type-eventinitdict-type",
-      "href": "https://www.w3.org/TR/mediastream-recording/#dom-blobevent-blobevent-type-eventinitdict-type",
-      "linkingText": [
-        "type"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "BlobEvent/BlobEvent(type, eventInitDict)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "blobevent-section",
-        "title": "Blob Event",
-        "number": "3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-blobevent-blobevent-type-eventinitdict-eventinitdict",
-      "href": "https://www.w3.org/TR/mediastream-recording/#dom-blobevent-blobevent-type-eventinitdict-eventinitdict",
-      "linkingText": [
-        "eventInitDict"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "BlobEvent/BlobEvent(type, eventInitDict)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "blobevent-section",
-        "title": "Blob Event",
-        "number": "3"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "blobevent",
@@ -718,10 +861,53 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-blobevent-blobevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/mediastream-recording/#dom-blobevent-blobevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BlobEvent/BlobEvent(type, eventInitDict)",
+        "BlobEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "blobevent-section",
+        "title": "Blob Event",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-blobevent-blobevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/mediastream-recording/#dom-blobevent-blobevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "BlobEvent/BlobEvent(type, eventInitDict)",
+        "BlobEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "blobevent-section",
+        "title": "Blob Event",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-blobevent-blobevent",
       "href": "https://www.w3.org/TR/mediastream-recording/#dom-blobevent-blobevent",
       "linkingText": [
-        "BlobEvent(type, eventInitDict)"
+        "BlobEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -872,6 +1058,24 @@
       "definedIn": "pre"
     },
     {
+      "id": "mediarecordererrorevent",
+      "href": "https://www.w3.org/TR/mediastream-recording/#mediarecordererrorevent",
+      "linkingText": [
+        "MediaRecorderErrorEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "errorevent-section",
+        "title": "MediaRecorderErrorEvent",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-mediarecordererrorevent-mediarecordererrorevent-type-eventinitdict-type",
       "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecordererrorevent-mediarecordererrorevent-type-eventinitdict-type",
       "linkingText": [
@@ -880,7 +1084,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MediaRecorderErrorEvent/MediaRecorderErrorEvent(type, eventInitDict)"
+        "MediaRecorderErrorEvent/MediaRecorderErrorEvent(type, eventInitDict)",
+        "MediaRecorderErrorEvent/constructor(type, eventInitDict)"
       ],
       "access": "public",
       "informative": false,
@@ -900,26 +1105,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "MediaRecorderErrorEvent/MediaRecorderErrorEvent(type, eventInitDict)"
+        "MediaRecorderErrorEvent/MediaRecorderErrorEvent(type, eventInitDict)",
+        "MediaRecorderErrorEvent/constructor(type, eventInitDict)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "errorevent-section",
-        "title": "MediaRecorderErrorEvent",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "mediarecordererrorevent",
-      "href": "https://www.w3.org/TR/mediastream-recording/#mediarecordererrorevent",
-      "linkingText": [
-        "MediaRecorderErrorEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -933,7 +1121,8 @@
       "id": "dom-mediarecordererrorevent-mediarecordererrorevent",
       "href": "https://www.w3.org/TR/mediastream-recording/#dom-mediarecordererrorevent-mediarecordererrorevent",
       "linkingText": [
-        "MediaRecorderErrorEvent(type, eventInitDict)"
+        "MediaRecorderErrorEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -990,15 +1179,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "start",
-      "href": "https://www.w3.org/TR/mediastream-recording/#start",
+      "id": "eventdef-mediarecorder-start",
+      "href": "https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-start",
       "linkingText": [
         "start"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "event-summary",
@@ -1008,15 +1199,17 @@
       "definedIn": "table"
     },
     {
-      "id": "stop",
-      "href": "https://www.w3.org/TR/mediastream-recording/#stop",
+      "id": "eventdef-mediarecorder-stop",
+      "href": "https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-stop",
       "linkingText": [
         "stop"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "event-summary",
@@ -1026,15 +1219,17 @@
       "definedIn": "table"
     },
     {
-      "id": "dataavailable",
-      "href": "https://www.w3.org/TR/mediastream-recording/#dataavailable",
+      "id": "eventdef-mediarecorder-dataavailable",
+      "href": "https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-dataavailable",
       "linkingText": [
         "dataavailable"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "event-summary",
@@ -1044,15 +1239,17 @@
       "definedIn": "table"
     },
     {
-      "id": "pause",
-      "href": "https://www.w3.org/TR/mediastream-recording/#pause",
+      "id": "eventdef-mediarecorder-pause",
+      "href": "https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-pause",
       "linkingText": [
         "pause"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "event-summary",
@@ -1062,15 +1259,17 @@
       "definedIn": "table"
     },
     {
-      "id": "resume",
-      "href": "https://www.w3.org/TR/mediastream-recording/#resume",
+      "id": "eventdef-mediarecorder-resume",
+      "href": "https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-resume",
       "linkingText": [
         "resume"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "event-summary",
@@ -1080,15 +1279,17 @@
       "definedIn": "table"
     },
     {
-      "id": "error",
-      "href": "https://www.w3.org/TR/mediastream-recording/#error",
+      "id": "eventdef-mediarecorder-error",
+      "href": "https://www.w3.org/TR/mediastream-recording/#eventdef-mediarecorder-error",
       "linkingText": [
         "error"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "event",
+      "for": [
+        "MediaRecorder"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "event-summary",
@@ -1096,40 +1297,6 @@
         "number": "5"
       },
       "definedIn": "table"
-    },
-    {
-      "id": "conformant-user-agent",
-      "href": "https://www.w3.org/TR/mediastream-recording/#conformant-user-agent",
-      "linkingText": [
-        "conformant user agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "conformance-classes",
-        "title": "Conformance Classes"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "conformant-server",
-      "href": "https://www.w3.org/TR/mediastream-recording/#conformant-server",
-      "linkingText": [
-        "conformant server"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "conformance-classes",
-        "title": "Conformance Classes"
-      },
-      "definedIn": "prose"
     }
   ]
 }

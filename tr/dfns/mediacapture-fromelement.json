@@ -23,42 +23,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-htmlmediaelement",
-      "href": "https://www.w3.org/TR/mediacapture-fromelement/#dom-htmlmediaelement",
-      "linkingText": [
-        "HTMLMediaElement"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "html-media-element-media-capture-extensions",
-        "title": "HTML Media Element Media Capture Extensions",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-htmlcanvaselement",
-      "href": "https://www.w3.org/TR/mediacapture-fromelement/#dom-htmlcanvaselement",
-      "linkingText": [
-        "HTMLCanvasElement"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "html-media-element-media-capture-extensions",
-        "title": "HTML Media Element Media Capture Extensions",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-track",
       "href": "https://www.w3.org/TR/mediacapture-fromelement/#dfn-track",
       "linkingText": [
@@ -77,90 +41,21 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-videotrack",
-      "href": "https://www.w3.org/TR/mediacapture-fromelement/#dfn-videotrack",
+      "id": "dom-htmlmediaelement-capturestream",
+      "href": "https://www.w3.org/TR/mediacapture-fromelement/#dom-htmlmediaelement-capturestream",
       "linkingText": [
-        "VideoTrack"
+        "captureStream()"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "html-media-element-media-capture-extensions",
-        "title": "HTML Media Element Media Capture Extensions",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-audiotrack",
-      "href": "https://www.w3.org/TR/mediacapture-fromelement/#dfn-audiotrack",
-      "linkingText": [
-        "AudioTrack"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "html-media-element-media-capture-extensions",
-        "title": "HTML Media Element Media Capture Extensions",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-mediastreamtrack",
-      "href": "https://www.w3.org/TR/mediacapture-fromelement/#dfn-mediastreamtrack",
-      "linkingText": [
-        "MediaStreamTrack"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "html-media-element-media-capture-extensions",
-        "title": "HTML Media Element Media Capture Extensions",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-mediastream",
-      "href": "https://www.w3.org/TR/mediacapture-fromelement/#dfn-mediastream",
-      "linkingText": [
-        "MediaStream"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "html-media-element-media-capture-extensions",
-        "title": "HTML Media Element Media Capture Extensions",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-htmlmediaelement-capturestream()",
-      "href": "https://www.w3.org/TR/mediacapture-fromelement/#dom-htmlmediaelement-capturestream()",
-      "linkingText": [
-        "capturestream()",
+      "localLinkingText": [
+        "HTMLMediaElement.captureStream",
+        "HTMLMediaElement.captureStream()",
         "captureStream"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "type": "method",
       "for": [
-        "htmlmediaelement"
+        "HTMLMediaElement"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "methods",
@@ -203,18 +98,22 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-htmlcanvaselement-capturestream()",
-      "href": "https://www.w3.org/TR/mediacapture-fromelement/#dom-htmlcanvaselement-capturestream()",
+      "id": "dom-htmlcanvaselement-capturestream",
+      "href": "https://www.w3.org/TR/mediacapture-fromelement/#dom-htmlcanvaselement-capturestream",
       "linkingText": [
-        "capturestream()",
+        "captureStream()",
+        "captureStream(frameRequestRate)"
+      ],
+      "localLinkingText": [
+        "HTMLCanvasElement.captureStream",
+        "HTMLCanvasElement.captureStream()",
         "captureStream"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "type": "method",
       "for": [
-        "htmlcanvaselement"
+        "HTMLCanvasElement"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "methods-0",
@@ -243,12 +142,12 @@
       "id": "dfn-framecapturerequested",
       "href": "https://www.w3.org/TR/mediacapture-fromelement/#dfn-framecapturerequested",
       "linkingText": [
-        "frameCaptureRequested"
+        "[[frameCaptureRequested]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "idl",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "methods-0",
@@ -263,9 +162,9 @@
         "CanvasCaptureMediaStreamTrack"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "interface",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-canvascapturemediastreamtrack",
@@ -280,12 +179,14 @@
       "linkingText": [
         "canvas"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "canvascapturemediastreamtrack"
+      "localLinkingText": [
+        "CanvasCaptureMediaStreamTrack.canvas"
       ],
-      "access": "private",
+      "type": "attribute",
+      "for": [
+        "CanvasCaptureMediaStreamTrack"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "attributes",
@@ -297,15 +198,18 @@
       "id": "dom-canvascapturemediastreamtrack-requestframe",
       "href": "https://www.w3.org/TR/mediacapture-fromelement/#dom-canvascapturemediastreamtrack-requestframe",
       "linkingText": [
-        "requestframe()",
+        "requestFrame()"
+      ],
+      "localLinkingText": [
+        "CanvasCaptureMediaStreamTrack.requestFrame",
+        "CanvasCaptureMediaStreamTrack.requestFrame()",
         "requestFrame"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "type": "method",
       "for": [
-        "canvascapturemediastreamtrack"
+        "CanvasCaptureMediaStreamTrack"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "methods-1",
