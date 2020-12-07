@@ -5,22 +5,80 @@
   },
   "dfns": [
     {
-      "id": "private-address",
-      "href": "https://wicg.github.io/cors-rfc1918/#private-address",
+      "id": "address-space",
+      "href": "https://wicg.github.io/cors-rfc1918/#address-space",
       "linkingText": [
-        "private address"
+        "address space"
       ],
-      "localLinkingText": [
-        "private"
-      ],
+      "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "framework",
-        "title": "Framework",
-        "number": "2"
+        "id": "address-space-heading",
+        "title": "Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "address-space-local",
+      "href": "https://wicg.github.io/cors-rfc1918/#address-space-local",
+      "linkingText": [
+        "local"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "address space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "address-space-heading",
+        "title": "Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "address-space-private",
+      "href": "https://wicg.github.io/cors-rfc1918/#address-space-private",
+      "linkingText": [
+        "private"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "address space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "address-space-heading",
+        "title": "Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "address-space-public",
+      "href": "https://wicg.github.io/cors-rfc1918/#address-space-public",
+      "linkingText": [
+        "public"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "address space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "address-space-heading",
+        "title": "Address Space",
+        "number": "2.1"
       },
       "definedIn": "prose"
     },
@@ -30,17 +88,33 @@
       "linkingText": [
         "local address"
       ],
-      "localLinkingText": [
-        "local"
-      ],
+      "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "framework",
-        "title": "Framework",
-        "number": "2"
+        "id": "address-space-heading",
+        "title": "Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "private-address",
+      "href": "https://wicg.github.io/cors-rfc1918/#private-address",
+      "linkingText": [
+        "private address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "address-space-heading",
+        "title": "Address Space",
+        "number": "2.1"
       },
       "definedIn": "prose"
     },
@@ -50,17 +124,15 @@
       "linkingText": [
         "public address"
       ],
-      "localLinkingText": [
-        "public"
-      ],
+      "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "framework",
-        "title": "Framework",
-        "number": "2"
+        "id": "address-space-heading",
+        "title": "Address Space",
+        "number": "2.1"
       },
       "definedIn": "prose"
     },
@@ -76,9 +148,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "framework",
-        "title": "Framework",
-        "number": "2"
+        "id": "private-network-request-heading",
+        "title": "Private Network Request",
+        "number": "2.2"
       },
       "definedIn": "prose"
     },
@@ -96,7 +168,7 @@
       "heading": {
         "id": "headers",
         "title": "Additional CORS Headers",
-        "number": "2.1"
+        "number": "2.3"
       },
       "definedIn": "prose"
     },
@@ -114,7 +186,7 @@
       "heading": {
         "id": "headers",
         "title": "Additional CORS Headers",
-        "number": "2.1"
+        "number": "2.3"
       },
       "definedIn": "prose"
     },
@@ -132,7 +204,7 @@
       "heading": {
         "id": "csp",
         "title": "The treat-as-public-address Content Security Policy Directive",
-        "number": "2.2"
+        "number": "2.4"
       },
       "definedIn": "prose"
     },
@@ -150,7 +222,7 @@
       "heading": {
         "id": "feature-detect",
         "title": "Feature Detection",
-        "number": "2.3"
+        "number": "2.5"
       },
       "definedIn": "pre"
     },
@@ -170,7 +242,7 @@
       "heading": {
         "id": "feature-detect",
         "title": "Feature Detection",
-        "number": "2.3"
+        "number": "2.5"
       },
       "definedIn": "pre"
     },
@@ -190,7 +262,7 @@
       "heading": {
         "id": "feature-detect",
         "title": "Feature Detection",
-        "number": "2.3"
+        "number": "2.5"
       },
       "definedIn": "pre"
     },
@@ -210,7 +282,7 @@
       "heading": {
         "id": "feature-detect",
         "title": "Feature Detection",
-        "number": "2.3"
+        "number": "2.5"
       },
       "definedIn": "pre"
     },
@@ -230,7 +302,7 @@
       "heading": {
         "id": "feature-detect",
         "title": "Feature Detection",
-        "number": "2.3"
+        "number": "2.5"
       },
       "definedIn": "pre"
     },
@@ -250,7 +322,7 @@
       "heading": {
         "id": "feature-detect",
         "title": "Feature Detection",
-        "number": "2.3"
+        "number": "2.5"
       },
       "definedIn": "pre"
     },
@@ -275,15 +347,37 @@
       "definedIn": "prose"
     },
     {
-      "id": "address-space",
-      "href": "https://wicg.github.io/cors-rfc1918/#address-space",
+      "id": "dom-document-address-space",
+      "href": "https://wicg.github.io/cors-rfc1918/#dom-document-address-space",
       "linkingText": [
         "address space"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "integration-html",
+        "title": "Integration with HTML",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-workerglobalscope-address-space",
+      "href": "https://wicg.github.io/cors-rfc1918/#dom-workerglobalscope-address-space",
+      "linkingText": [
+        "address space"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WorkerGlobalScope"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "integration-html",
