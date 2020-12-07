@@ -1049,6 +1049,66 @@
       "definedIn": "table"
     },
     {
+      "id": "dom-gpulimits-maxvertexbuffers",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxvertexbuffers",
+      "linkingText": [
+        "maxVertexBuffers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPULimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-gpulimits-maxvertexattributes",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxvertexattributes",
+      "linkingText": [
+        "maxVertexAttributes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPULimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-gpulimits-maxvertexarraystride",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxvertexarraystride",
+      "linkingText": [
+        "maxVertexArrayStride"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPULimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dictdef-gpulimits",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpulimits",
       "linkingText": [
@@ -5947,10 +6007,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "enumdef-gpubuffertype",
-      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpubuffertype",
+      "id": "enumdef-gpubufferbindingtype",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpubufferbindingtype",
       "linkingText": [
-        "GPUBufferType"
+        "GPUBufferBindingType"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -5965,15 +6025,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpubuffertype-uniform",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffertype-uniform",
+      "id": "dom-gpubufferbindingtype-uniform",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubufferbindingtype-uniform",
       "linkingText": [
         "\"uniform\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUBufferType"
+        "GPUBufferBindingType"
       ],
       "access": "public",
       "informative": false,
@@ -5985,15 +6045,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpubuffertype-storage",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffertype-storage",
+      "id": "dom-gpubufferbindingtype-storage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubufferbindingtype-storage",
       "linkingText": [
         "\"storage\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUBufferType"
+        "GPUBufferBindingType"
       ],
       "access": "public",
       "informative": false,
@@ -6005,15 +6065,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpubuffertype-readonly-storage",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubuffertype-readonly-storage",
+      "id": "dom-gpubufferbindingtype-readonly-storage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubufferbindingtype-readonly-storage",
       "linkingText": [
         "\"readonly-storage\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUBufferType"
+        "GPUBufferBindingType"
       ],
       "access": "public",
       "informative": false,
@@ -6103,10 +6163,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "enumdef-gpusamplertype",
-      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpusamplertype",
+      "id": "enumdef-gpusamplerbindingtype",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpusamplerbindingtype",
       "linkingText": [
-        "GPUSamplerType"
+        "GPUSamplerBindingType"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -6121,15 +6181,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpusamplertype-filtering",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusamplertype-filtering",
+      "id": "dom-gpusamplerbindingtype-filtering",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusamplerbindingtype-filtering",
       "linkingText": [
         "\"filtering\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUSamplerType"
+        "GPUSamplerBindingType"
       ],
       "access": "public",
       "informative": false,
@@ -6141,15 +6201,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpusamplertype-non-filtering",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusamplertype-non-filtering",
+      "id": "dom-gpusamplerbindingtype-non-filtering",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusamplerbindingtype-non-filtering",
       "linkingText": [
         "\"non-filtering\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUSamplerType"
+        "GPUSamplerBindingType"
       ],
       "access": "public",
       "informative": false,
@@ -6161,15 +6221,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpusamplertype-comparison",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusamplertype-comparison",
+      "id": "dom-gpusamplerbindingtype-comparison",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpusamplerbindingtype-comparison",
       "linkingText": [
         "\"comparison\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUSamplerType"
+        "GPUSamplerBindingType"
       ],
       "access": "public",
       "informative": false,
@@ -6355,10 +6415,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gputexturebindinglayout-type",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturebindinglayout-type",
+      "id": "dom-gputexturebindinglayout-sampletype",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturebindinglayout-sampletype",
       "linkingText": [
-        "type"
+        "sampleType"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -6491,10 +6551,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpustoragetexturebindinglayout-type",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustoragetexturebindinglayout-type",
+      "id": "dom-gpustoragetexturebindinglayout-access",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustoragetexturebindinglayout-access",
       "linkingText": [
-        "type"
+        "access"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -14123,24 +14183,6 @@
       "definedIn": "table"
     },
     {
-      "id": "maximum-number-of-vertex-buffers",
-      "href": "https://gpuweb.github.io/gpuweb/#maximum-number-of-vertex-buffers",
-      "linkingText": [
-        "maximum number of vertex buffers"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "render-pass-encoder-drawing",
-        "title": "Drawing",
-        "number": "15.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-gpurenderencoderbase-draw",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-draw",
       "linkingText": [
@@ -16144,7 +16186,7 @@
       "id": "dom-gpucanvascontext-getswapchainpreferredformat",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-getswapchainpreferredformat",
       "linkingText": [
-        "getSwapChainPreferredFormat(device)"
+        "getSwapChainPreferredFormat(adapter)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -16160,15 +16202,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucanvascontext-getswapchainpreferredformat-device-device",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-getswapchainpreferredformat-device-device",
+      "id": "dom-gpucanvascontext-getswapchainpreferredformat-adapter-adapter",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-getswapchainpreferredformat-adapter-adapter",
       "linkingText": [
-        "device"
+        "adapter"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUCanvasContext/getSwapChainPreferredFormat(device)"
+        "GPUCanvasContext/getSwapChainPreferredFormat(adapter)"
       ],
       "access": "public",
       "informative": false,
@@ -16177,6 +16219,23 @@
         "title": "19. Canvas Rendering & Swap Chains"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "supported-swap-chain-formats",
+      "href": "https://gpuweb.github.io/gpuweb/#supported-swap-chain-formats",
+      "linkingText": [
+        "supported swap chain formats"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "canvas-rendering",
+        "title": "19. Canvas Rendering & Swap Chains"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dictdef-gpuswapchaindescriptor",

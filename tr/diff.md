@@ -1,39 +1,61 @@
-% Diff between report from "November 30, 2020" and reference report from "November 23, 2020"
+% Diff between report from "December 07, 2020" and reference report from "November 30, 2020"
 % Reffy
-% November 30, 2020
+% December 07, 2020
 
-## Audio Output Devices API
+## CSS Nesting Module
 
-- Initial URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
+- Initial URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
+- Editor's Draft: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
+- Spec is OK: *INS* false / *DEL* true
+- Unknown WebIDL names used: *INS* CSSOMString, CSSRule, CSSRuleList, CSSStyleDeclaration
+
+
+## JS Self-Profiling API
+
+- Initial URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
+- Spec is OK: *INS* false / *DEL* true
+- Missing references for links: *INS* https://w3c.github.io/webappsec-permissions-policy/document-policy.html
+
+
+## Media Capture from DOM Elements
+
+- Initial URL: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
+- Unknown WebIDL names used: *DEL* void
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/2dcontext2/
+
+
+## MediaStream Recording
+
+- Initial URL: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/mediacapture-record/](https://w3c.github.io/mediacapture-record/)
+- Unknown WebIDL names used: *DEL* void
+- Missing references for WebIDL names: *DEL* MediaStream, DOMHighResTimeStamp
+- Missing references for links: *INS* https://www.w3.org/TR/webrtc-identity/, https://www.w3.org/TR/fingerprinting-guidance/ / *DEL* https://www.w3.org/TR/mediacapture-streams/, https://www.w3.org/TR/hr-time-2/
+- Inconsistent references for links: *INS* https://www.w3.org/TR/hr-time/
+
+
+## Payment Request API
+
+- Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* void
 
 
-## IceTransport Extensions for WebRTC
+## Web Serial API
 
-- Initial URL: [https://w3c.github.io/webrtc-ice/](https://w3c.github.io/webrtc-ice/)
+- Initial URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-ice/](https://w3c.github.io/webrtc-ice/)
+- Editor's Draft: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
+- Spec title: *INS* Web Serial API / *DEL* Serial API
 - Spec is OK: *INS* true / *DEL* false
 - Unknown WebIDL names used: *DEL* void
-- WebIDL names also defined elsewhere: *DEL* RTCIceParameters
-
-
-## Trusted Types
-
-- Initial URL: [https://w3c.github.io/webappsec-trusted-types/dist/spec/](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webappsec-trusted-types/dist/spec/](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
-- Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-secure-contexts/
-
-
-## WebRTC 1.0: Real-Time Communication Between Browsers
-
-- Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- WebIDL names also defined elsewhere: *DEL* RTCIceParameters
 
 
