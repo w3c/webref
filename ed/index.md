@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% December 07, 2020
+% December 08, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -1553,7 +1553,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Crawled URL: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
-- Crawled version: 11 November 2020
+- Crawled version: 7 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
 - Latest published version: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Shortname: css-sizing-3
@@ -2565,7 +2565,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-break-3/](https://www.w3.org/TR/css-break-3/)
 - Crawled URL: [https://drafts.csswg.org/css-break/](https://drafts.csswg.org/css-break/)
-- Crawled version: 18 September 2020
+- Crawled version: 7 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-break/](https://drafts.csswg.org/css-break/)
 - Latest published version: [https://www.w3.org/TR/css-break-3/](https://www.w3.org/TR/css-break-3/)
 - Shortname: css-break-3
@@ -10528,7 +10528,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled version: 18 November 2020
+- Crawled version: 7 December 2020
 - Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Shortname: ua-client-hints
 
