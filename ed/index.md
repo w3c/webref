@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% December 08, 2020
+% December 09, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -147,7 +147,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
-- Crawled version: 04 December 2020
+- Crawled version: 09 December 2020
 - Editor's Draft: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Shortname: wai-aria-1.2
@@ -1910,7 +1910,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css3-conditional/](https://www.w3.org/TR/css3-conditional/)
 - Crawled URL: [https://drafts.csswg.org/css-conditional-3/](https://drafts.csswg.org/css-conditional-3/)
-- Crawled version: 1 December 2020
+- Crawled version: 8 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-conditional-3/](https://drafts.csswg.org/css-conditional-3/)
 - Latest published version: [https://www.w3.org/TR/css3-conditional/](https://www.w3.org/TR/css3-conditional/)
 - Shortname: css3-conditional
@@ -8871,21 +8871,20 @@ Informative references to this spec from:
 - [Priority Hints](https://wicg.github.io/priority-hints/)
 
 
-## Presentation API {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## Presentation API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Crawled URL: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
-- Crawled version: 05 November 2020
+- Crawled version: 08 December 2020
 - Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
 - Latest published version: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Shortname: presentation-api
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9568,6 +9567,7 @@ Normative references to this spec from:
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
@@ -12634,7 +12634,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 4 December 2020
+- Crawled version: 9 December 2020
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Shortname: webtransport
 
