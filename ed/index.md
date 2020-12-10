@@ -7854,20 +7854,20 @@ Informative references to this spec from:
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 
 
-## Media Session Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true}
+## Media Session Standard {data-spec=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/mediasession/](https://www.w3.org/TR/mediasession/)
 - Crawled URL: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
-- Crawled version: 18 March 2020
+- Crawled version: 10 December 2020
 - Editor's Draft: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
 - Latest published version: [https://www.w3.org/TR/mediasession/](https://www.w3.org/TR/mediasession/)
 - Shortname: mediasession
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `void`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
