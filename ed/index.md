@@ -12798,7 +12798,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
 - Crawled URL: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
-- Crawled version: 4 June 2020
+- Crawled version: 10 December 2020
 - Editor's Draft: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
 - Shortname: dom-overlays
 
