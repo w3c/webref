@@ -10086,7 +10086,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Crawled URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- Crawled version: 10 December 2020
+- Crawled version: 12 December 2020
 - Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Shortname: screen-fold
 
