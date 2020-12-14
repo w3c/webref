@@ -20,7 +20,7 @@ jobs:
     - name: Setup node.js
       uses: actions/setup-node@master
       with:
-        node-version: 10.x
+        node-version: 14.x
     - name: Install pandoc
       run: sudo apt-get install pandoc
     - name: Setup Reffy
