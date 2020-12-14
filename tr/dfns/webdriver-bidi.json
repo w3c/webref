@@ -629,6 +629,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "emit-an-event",
+      "href": "https://w3c.github.io/webdriver-bidi/#emit-an-event",
+      "linkingText": [
+        "emit an event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transport",
+        "title": "Transport",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "respond-with-an-error",
       "href": "https://w3c.github.io/webdriver-bidi/#respond-with-an-error",
       "linkingText": [
@@ -665,24 +683,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "browsing-context-id",
-      "href": "https://w3c.github.io/webdriver-bidi/#browsing-context-id",
-      "linkingText": [
-        "browsing context id"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "data_types-browsing_context",
-        "title": "Browsing Context",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "realm-id",
       "href": "https://w3c.github.io/webdriver-bidi/#realm-id",
       "linkingText": [
@@ -696,7 +696,7 @@
       "heading": {
         "id": "data-types-realm",
         "title": "Realm",
-        "number": "5.2"
+        "number": "5.1"
       },
       "definedIn": "prose"
     },
@@ -714,7 +714,7 @@
       "heading": {
         "id": "data-types-remote-value",
         "title": "Remote Value",
-        "number": "5.3"
+        "number": "5.2"
       },
       "definedIn": "prose"
     },
@@ -732,7 +732,7 @@
       "heading": {
         "id": "data-types-remote-value",
         "title": "Remote Value",
-        "number": "5.3"
+        "number": "5.2"
       },
       "definedIn": "prose"
     },
@@ -750,7 +750,7 @@
       "heading": {
         "id": "data-types-remote-value",
         "title": "Remote Value",
-        "number": "5.3"
+        "number": "5.2"
       },
       "definedIn": "prose"
     },
@@ -768,7 +768,7 @@
       "heading": {
         "id": "data-types-remote-value",
         "title": "Remote Value",
-        "number": "5.3"
+        "number": "5.2"
       },
       "definedIn": "prose"
     },
@@ -786,7 +786,7 @@
       "heading": {
         "id": "data-types-remote-value",
         "title": "Remote Value",
-        "number": "5.3"
+        "number": "5.2"
       },
       "definedIn": "prose"
     },
@@ -805,7 +805,7 @@
       "informative": false,
       "heading": {
         "id": "module-session",
-        "title": "Session",
+        "title": "The session Module",
         "number": "6.1"
       },
       "definedIn": "prose"
@@ -829,30 +829,30 @@
       "definedIn": "prose"
     },
     {
-      "id": "commands-status",
-      "href": "https://w3c.github.io/webdriver-bidi/#commands-status",
+      "id": "commands-sessionstatus",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-sessionstatus",
       "linkingText": [
-        "status"
+        "session.status"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
         "commands"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "command-session-status",
-        "title": "Status",
-        "number": "6.1.2"
+        "title": "The session.status Command",
+        "number": "6.1.2.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "commands-subscribe",
-      "href": "https://w3c.github.io/webdriver-bidi/#commands-subscribe",
+      "id": "commands-sessionsubscribe",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-sessionsubscribe",
       "linkingText": [
-        "subscribe"
+        "session.subscribe"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -863,16 +863,16 @@
       "informative": false,
       "heading": {
         "id": "command-session-subscribe",
-        "title": "Subscribe",
-        "number": "6.1.3"
+        "title": "The session.subscribe Command",
+        "number": "6.1.2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "commands-unsubscribe",
-      "href": "https://w3c.github.io/webdriver-bidi/#commands-unsubscribe",
+      "id": "commands-sessionunsubscribe",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-sessionunsubscribe",
       "linkingText": [
-        "unsubscribe"
+        "session.unsubscribe"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -883,8 +883,138 @@
       "informative": false,
       "heading": {
         "id": "command-session-unsubscribe",
-        "title": "Unsubscribe",
-        "number": "6.1.4"
+        "title": "The session.unsubscribe Command",
+        "number": "6.1.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "modules-browsingcontext",
+      "href": "https://w3c.github.io/webdriver-bidi/#modules-browsingcontext",
+      "linkingText": [
+        "browsingContext"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "modules"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-browsingContext",
+        "title": "The browsingContext Module",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "browsing-context-id",
+      "href": "https://w3c.github.io/webdriver-bidi/#browsing-context-id",
+      "linkingText": [
+        "browsing context id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "types-browsingcontext",
+        "title": "The browsingContext.BrowsingContext Type",
+        "number": "6.2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-browsing-context",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-a-browsing-context",
+      "linkingText": [
+        "get a browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-browsingcontext",
+        "title": "The browsingContext.BrowsingContext Type",
+        "number": "6.2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-browsing-context-info",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-the-browsing-context-info",
+      "linkingText": [
+        "get the browsing context info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-browsingcontextinfo",
+        "title": "The browsingContext.BrowsingContextInfo Type",
+        "number": "6.2.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-descendent-browsing-contexts",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-the-descendent-browsing-contexts",
+      "linkingText": [
+        "get the descendent browsing contexts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-browsingcontextinfo",
+        "title": "The browsingContext.BrowsingContextInfo Type",
+        "number": "6.2.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-browsingcontextgettree",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-browsingcontextgettree",
+      "linkingText": [
+        "browsingContext.getTree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-browsingContext-list",
+        "title": "The browsingContext.getTree Command",
+        "number": "6.2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "browsing-context-tree-discarded",
+      "href": "https://w3c.github.io/webdriver-bidi/#browsing-context-tree-discarded",
+      "linkingText": [
+        "browsing context tree discarded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "patches-html",
+        "title": "HTML",
+        "number": "7.1"
       },
       "definedIn": "prose"
     }

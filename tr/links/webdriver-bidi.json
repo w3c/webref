@@ -26,6 +26,7 @@
       "dfn-intermediary-node",
       "dfn-endpoint-node",
       "dfn-unknown-command",
+      "dfn-current-session",
       "dfn-additional-webdriver-capability",
       "dfn-capability-name",
       "dfn-additional-capability-deserialization-algorithm",
@@ -33,10 +34,10 @@
       "dfn-webdriver-new-session-algorithm",
       "dfn-get-a-property",
       "dfn-set-a-property",
-      "dfn-window-handle",
-      "dfn-current-session",
       "dfn-web-element-reference",
-      "dfn-try"
+      "dfn-window-handle",
+      "dfn-try",
+      "dfn-no-such-frame"
     ],
     "https://heycam.github.io/webidl/": [
       "dfn-return-type",
@@ -44,8 +45,20 @@
     ],
     "https://html.spec.whatwg.org/": [
       "browsing-context",
+      "shared-workers",
       "parent-browsing-context",
-      "windowproxy"
+      "windowproxy",
+      "active-document",
+      "top-level-browsing-context",
+      "child-browsing-context",
+      "creating-a-new-browsing-context",
+      "a-browsing-context-is-discarded",
+      "session-history",
+      "bcg-remove"
+    ],
+    "https://fetch.spec.whatwg.org/": [
+      "header-list-contains",
+      "concept-connection"
     ],
     "https://infra.spec.whatwg.org/": [
       "ordered-set",
@@ -53,8 +66,10 @@
       "set-append",
       "assert",
       "scalar-value-string",
-      "serialize-an-infra-value-to-json-bytes",
       "parse-a-json-string-to-an-infra-value",
+      "serialize-an-infra-value-to-json-bytes",
+      "map-size",
+      "list-size",
       "ordered-map"
     ],
     "https://tools.ietf.org/html/rfc6455": [
@@ -66,13 +81,10 @@
       "section-7.1.4",
       "section-3",
       "section-5.2",
-      "section-7.4",
       "section-8.1",
       "section-7.1.7",
+      "section-7.4",
       "section-6.1"
-    ],
-    "https://fetch.spec.whatwg.org/": [
-      "concept-connection"
     ],
     "https://tc39.es/ecma262/": [
       "sec-code-realms",
@@ -101,7 +113,12 @@
       "concept-element-attribute",
       "concept-attribute-qualified-name",
       "concept-attribute-value",
-      "concept-element-shadow-root"
+      "concept-element-shadow-root",
+      "concept-document-url",
+      "document"
+    ],
+    "https://url.spec.whatwg.org/": [
+      "concept-url-serializer"
     ],
     "https://tools.ietf.org/html/rfc4122": [],
     "https://tools.ietf.org/html/rfc8610": [],

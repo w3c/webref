@@ -5,15 +5,15 @@
   },
   "dfns": [
     {
-      "id": "conditional-group-rules",
-      "href": "https://www.w3.org/TR/css3-conditional/#conditional-group-rules",
+      "id": "conditional-group-rule",
+      "href": "https://www.w3.org/TR/css3-conditional/#conditional-group-rule",
       "linkingText": [
-        "conditional group rules"
+        "conditional group rule"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "processing",
@@ -23,289 +23,109 @@
       "definedIn": "prose"
     },
     {
-      "id": "group-rule-body",
-      "href": "https://www.w3.org/TR/css3-conditional/#group-rule-body",
+      "id": "at-ruledef-media",
+      "href": "https://www.w3.org/TR/css3-conditional/#at-ruledef-media",
       "linkingText": [
-        "group rule body"
+        "@media"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "at-rule",
       "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "contents-of",
-        "title": "Contents of conditional group rules",
-        "number": "3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "nested_statement",
-      "href": "https://www.w3.org/TR/css3-conditional/#nested_statement",
-      "linkingText": [
-        "nested_statement"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "contents-of",
-        "title": "Contents of conditional group rules",
-        "number": "3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "group_rule_body",
-      "href": "https://www.w3.org/TR/css3-conditional/#group_rule_body",
-      "linkingText": [
-        "group_rule_body"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "contents-of",
-        "title": "Contents of conditional group rules",
-        "number": "3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "atmedia-rule",
-      "href": "https://www.w3.org/TR/css3-conditional/#atmedia-rule",
-      "linkingText": [
-        "‘@media’ rule"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "at-media",
-        "title": "Media-specific style sheets: the ‘@media’ rule",
+        "title": "Media-specific style sheets: the @media rule",
         "number": "5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "media",
-      "href": "https://www.w3.org/TR/css3-conditional/#media",
+      "id": "at-ruledef-supports",
+      "href": "https://www.w3.org/TR/css3-conditional/#at-ruledef-supports",
       "linkingText": [
-        "media"
+        "@supports"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "at-rule",
       "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "at-media",
-        "title": "Media-specific style sheets: the ‘@media’ rule",
-        "number": "5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "atsupports-rule",
-      "href": "https://www.w3.org/TR/css3-conditional/#atsupports-rule",
-      "linkingText": [
-        "‘@supports’ rule"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "at-supports",
-        "title": "Feature queries: the ‘@supports’ rule",
+        "title": "Feature queries: the @supports rule",
         "number": "6"
       },
       "definedIn": "prose"
     },
     {
-      "id": "supports_sym",
-      "href": "https://www.w3.org/TR/css3-conditional/#supports_sym",
+      "id": "typedef-supports-condition",
+      "href": "https://www.w3.org/TR/css3-conditional/#typedef-supports-condition",
       "linkingText": [
-        "SUPPORTS_SYM"
+        "<supports-condition>"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "type",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "at-supports",
-        "title": "Feature queries: the ‘@supports’ rule",
+        "title": "Feature queries: the @supports rule",
         "number": "6"
       },
       "definedIn": "pre"
     },
     {
-      "id": "or",
-      "href": "https://www.w3.org/TR/css3-conditional/#or",
+      "id": "typedef-supports-in-parens",
+      "href": "https://www.w3.org/TR/css3-conditional/#typedef-supports-in-parens",
       "linkingText": [
-        "OR"
+        "<supports-in-parens>"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "type",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "at-supports",
-        "title": "Feature queries: the ‘@supports’ rule",
+        "title": "Feature queries: the @supports rule",
         "number": "6"
       },
       "definedIn": "pre"
     },
     {
-      "id": "supports_rule",
-      "href": "https://www.w3.org/TR/css3-conditional/#supports_rule",
+      "id": "typedef-supports-feature",
+      "href": "https://www.w3.org/TR/css3-conditional/#typedef-supports-feature",
       "linkingText": [
-        "supports_rule"
+        "<supports-feature>"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "type",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "at-supports",
-        "title": "Feature queries: the ‘@supports’ rule",
+        "title": "Feature queries: the @supports rule",
         "number": "6"
       },
       "definedIn": "pre"
     },
     {
-      "id": "supports_condition",
-      "href": "https://www.w3.org/TR/css3-conditional/#supports_condition",
+      "id": "typedef-supports-decl",
+      "href": "https://www.w3.org/TR/css3-conditional/#typedef-supports-decl",
       "linkingText": [
-        "supports_condition"
+        "<supports-decl>"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "type",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "at-supports",
-        "title": "Feature queries: the ‘@supports’ rule",
-        "number": "6"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "supports_condition_in_parens",
-      "href": "https://www.w3.org/TR/css3-conditional/#supports_condition_in_parens",
-      "linkingText": [
-        "supports_condition_in_parens"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "at-supports",
-        "title": "Feature queries: the ‘@supports’ rule",
-        "number": "6"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "supports_negation",
-      "href": "https://www.w3.org/TR/css3-conditional/#supports_negation",
-      "linkingText": [
-        "supports_negation"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "at-supports",
-        "title": "Feature queries: the ‘@supports’ rule",
-        "number": "6"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "supports_conjunction",
-      "href": "https://www.w3.org/TR/css3-conditional/#supports_conjunction",
-      "linkingText": [
-        "supports_conjunction"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "at-supports",
-        "title": "Feature queries: the ‘@supports’ rule",
-        "number": "6"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "supports_disjunction",
-      "href": "https://www.w3.org/TR/css3-conditional/#supports_disjunction",
-      "linkingText": [
-        "supports_disjunction"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "at-supports",
-        "title": "Feature queries: the ‘@supports’ rule",
-        "number": "6"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "supports_declaration_condition",
-      "href": "https://www.w3.org/TR/css3-conditional/#supports_declaration_condition",
-      "linkingText": [
-        "supports_declaration_condition"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "at-supports",
-        "title": "Feature queries: the ‘@supports’ rule",
-        "number": "6"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "general_enclosed",
-      "href": "https://www.w3.org/TR/css3-conditional/#general_enclosed",
-      "linkingText": [
-        "general_enclosed"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "at-supports",
-        "title": "Feature queries: the ‘@supports’ rule",
+        "title": "Feature queries: the @supports rule",
         "number": "6"
       },
       "definedIn": "pre"
@@ -318,8 +138,10 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "support-definition",
@@ -329,22 +151,24 @@
       "definedIn": "prose"
     },
     {
-      "id": "cssgroupingrule",
-      "href": "https://www.w3.org/TR/css3-conditional/#cssgroupingrule",
+      "id": "dom-cssrule-supports_rule",
+      "href": "https://www.w3.org/TR/css3-conditional/#dom-cssrule-supports_rule",
       "linkingText": [
-        "CSSGroupingRule"
+        "SUPPORTS_RULE"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-cssgroupingrule-interface",
-        "title": "The CSSGroupingRule interface",
-        "number": "7.2"
+        "id": "extentions-to-cssrule-interface",
+        "title": "Extensions to the CSSRule interface",
+        "number": "7.1"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
       "id": "cssconditionrule",
@@ -353,16 +177,36 @@
         "CSSConditionRule"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "interface",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-cssconditionrule-interface",
         "title": "The CSSConditionRule interface",
-        "number": "7.3"
+        "number": "7.2"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssconditionrule-conditiontext",
+      "href": "https://www.w3.org/TR/css3-conditional/#dom-cssconditionrule-conditiontext",
+      "linkingText": [
+        "conditionText"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSConditionRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssconditionrule-interface",
+        "title": "The CSSConditionRule interface",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "cssmediarule",
@@ -371,16 +215,36 @@
         "CSSMediaRule"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "interface",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-cssmediarule-interface",
         "title": "The CSSMediaRule interface",
-        "number": "7.4"
+        "number": "7.3"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssmediarule-media",
+      "href": "https://www.w3.org/TR/css3-conditional/#dom-cssmediarule-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSMediaRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssmediarule-interface",
+        "title": "The CSSMediaRule interface",
+        "number": "7.3"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "csssupportsrule",
@@ -389,88 +253,116 @@
         "CSSSupportsRule"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "interface",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-csssupportsrule-interface",
         "title": "The CSSSupportsRule interface",
-        "number": "7.5"
+        "number": "7.4"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
-      "id": "CSS-interface",
-      "href": "https://www.w3.org/TR/css3-conditional/#CSS-interface",
+      "id": "dom-css-supports",
+      "href": "https://www.w3.org/TR/css3-conditional/#dom-css-supports",
       "linkingText": [
+        "supports(property, value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
         "CSS"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-css-interface",
-        "title": "The CSS interface, and the supports() function",
-        "number": "7.6"
+        "id": "the-css-namespace",
+        "title": "The CSS namespace, and the supports() function",
+        "number": "7.5"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
-      "id": "conform-style-sheet",
-      "href": "https://www.w3.org/TR/css3-conditional/#conform-style-sheet",
+      "id": "dom-css-supports-property-value-property",
+      "href": "https://www.w3.org/TR/css3-conditional/#dom-css-supports-property-value-property",
       "linkingText": [
-        "style sheet"
+        "property"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "argument",
+      "for": [
+        "CSS/supports(property, value)"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "conformance-classes",
-        "title": "Conformance Classes",
-        "number": "8.2"
+        "id": "the-css-namespace",
+        "title": "The CSS namespace, and the supports() function",
+        "number": "7.5"
       },
-      "definedIn": "dt"
+      "definedIn": "pre"
     },
     {
-      "id": "conform-processor",
-      "href": "https://www.w3.org/TR/css3-conditional/#conform-processor",
+      "id": "dom-css-supports-property-value-value",
+      "href": "https://www.w3.org/TR/css3-conditional/#dom-css-supports-property-value-value",
       "linkingText": [
-        "processor"
+        "value"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "argument",
+      "for": [
+        "CSS/supports(property, value)"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "conformance-classes",
-        "title": "Conformance Classes",
-        "number": "8.2"
+        "id": "the-css-namespace",
+        "title": "The CSS namespace, and the supports() function",
+        "number": "7.5"
       },
-      "definedIn": "dt"
+      "definedIn": "pre"
     },
     {
-      "id": "conform-authoring-tool",
-      "href": "https://www.w3.org/TR/css3-conditional/#conform-authoring-tool",
+      "id": "dom-css-supports-conditiontext",
+      "href": "https://www.w3.org/TR/css3-conditional/#dom-css-supports-conditiontext",
       "linkingText": [
-        "authoring tool"
+        "supports(conditionText)"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "conformance-classes",
-        "title": "Conformance Classes",
-        "number": "8.2"
+        "id": "the-css-namespace",
+        "title": "The CSS namespace, and the supports() function",
+        "number": "7.5"
       },
-      "definedIn": "dt"
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-css-supports-conditiontext-conditiontext",
+      "href": "https://www.w3.org/TR/css3-conditional/#dom-css-supports-conditiontext-conditiontext",
+      "linkingText": [
+        "conditionText"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/supports(conditionText)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-css-namespace",
+        "title": "The CSS namespace, and the supports() function",
+        "number": "7.5"
+      },
+      "definedIn": "pre"
     }
   ]
 }

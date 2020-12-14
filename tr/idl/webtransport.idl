@@ -86,7 +86,6 @@ interface mixin IncomingStream {
   readonly attribute ReadableStream readable;
   readonly attribute Promise<StreamAbortInfo> readingAborted;
   undefined abortReading(optional StreamAbortInfo abortInfo = {});
-  Promise<ArrayBuffer> arrayBuffer();
 };
 
 [ Exposed=(Window,Worker) ]
