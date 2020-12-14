@@ -5,27 +5,23 @@
 
 partial interface CSSRule {
     const unsigned short SUPPORTS_RULE = 12;
+};
 
-}
-
-interface CSSGroupingRule : CSSRule {
-    readonly attribute CSSRuleList cssRules;
-    unsigned long insertRule (DOMString rule, unsigned long index);
-    void deleteRule (unsigned long index);
-}
-
+[Exposed=Window]
 interface CSSConditionRule : CSSGroupingRule {
-    attribute DOMString conditionText;
-}
+    attribute CSSOMString conditionText;
+};
 
+[Exposed=Window]
 interface CSSMediaRule : CSSConditionRule {
-    readonly attribute MediaList media;
-}
+    [SameObject, PutForwards=mediaText] readonly attribute MediaList media;
+};
 
+[Exposed=Window]
 interface CSSSupportsRule : CSSConditionRule {
-}
+};
 
-interface CSS {
-  static boolean supports(DOMString property, DOMString value);
-  static boolean supports(DOMString conditionText);
-}
+partial namespace CSS {
+  boolean supports(CSSOMString property, CSSOMString value);
+  boolean supports(CSSOMString conditionText);
+};
