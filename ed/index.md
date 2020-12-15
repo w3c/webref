@@ -4552,7 +4552,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
      * [`https://www.w3.org/TR/css-writing-modes/`](https://www.w3.org/TR/css-writing-modes/)
-     * [`https://www.w3.org/TR/klreq/`](https://www.w3.org/TR/klreq/)
      * [`https://www.w3.org/TR/css-fonts/`](https://www.w3.org/TR/css-fonts/)
      * [`https://www.w3.org/TR/css-text-decoration/`](https://www.w3.org/TR/css-text-decoration/)
 - Inconsistent references for links: 
