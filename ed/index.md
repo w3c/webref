@@ -229,6 +229,27 @@ Informative references to this spec from:
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 
 
+## Atomics.waitAsync {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-atomics-wait-async/](https://tc39.es/proposal-atomics-wait-async/)
+- Crawled URL: [https://tc39.es/proposal-atomics-wait-async/](https://tc39.es/proposal-atomics-wait-async/)
+- Crawled version: 25 September 2020
+- Editor's Draft: [https://tc39.es/proposal-atomics-wait-async/](https://tc39.es/proposal-atomics-wait-async/)
+- Shortname: tc39-atomics-wait-async
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Audio Output Devices API {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -1004,7 +1025,7 @@ Normative references to this spec from:
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
@@ -1523,7 +1544,7 @@ Normative references to this spec from:
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
@@ -1597,7 +1618,7 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
@@ -1908,17 +1929,18 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://www.w3.org/TR/css3-conditional/](https://www.w3.org/TR/css3-conditional/)
+- Initial URL: [https://www.w3.org/TR/css-conditional-3/](https://www.w3.org/TR/css-conditional-3/)
 - Crawled URL: [https://drafts.csswg.org/css-conditional-3/](https://drafts.csswg.org/css-conditional-3/)
 - Crawled version: 9 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-conditional-3/](https://drafts.csswg.org/css-conditional-3/)
-- Latest published version: [https://www.w3.org/TR/css3-conditional/](https://www.w3.org/TR/css3-conditional/)
-- Shortname: css3-conditional
+- Latest published version: [https://www.w3.org/TR/css-conditional-3/](https://www.w3.org/TR/css-conditional-3/)
+- Shortname: css-conditional-3
 
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `CSSOMString`
 - Missing references for links: 
+     * [`https://www.w3.org/TR/2013/CR-css3-conditional-20130404/`](https://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
      * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -1926,26 +1948,10 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Conditional Rules Module Level 4](https://drafts.csswg.org/css-conditional-4/)
-- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
-- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
-- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
-- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
-- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
-- [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 Informative references to this spec from:
 
-- [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
-- [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
 
@@ -2213,7 +2219,7 @@ Normative references to this spec from:
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
@@ -2488,7 +2494,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Crawled URL: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
-- Crawled version: 2 December 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Shortname: css-fonts-4
@@ -3491,7 +3497,7 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
 - [CSS Overscroll Behavior Module Level 1](https://drafts.csswg.org/css-overscroll-1/)
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
@@ -3758,7 +3764,7 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
@@ -4052,9 +4058,9 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css-scroll-anchoring-1/](https://www.w3.org/TR/css-scroll-anchoring-1/)
-- Crawled URL: [https://drafts.csswg.org/css-scroll-anchoring/](https://drafts.csswg.org/css-scroll-anchoring/)
+- Crawled URL: [https://drafts.csswg.org/css-scroll-anchoring](https://drafts.csswg.org/css-scroll-anchoring)
 - Crawled version: 11 November 2020
-- Editor's Draft: [https://drafts.csswg.org/css-scroll-anchoring/](https://drafts.csswg.org/css-scroll-anchoring/)
+- Editor's Draft: [https://drafts.csswg.org/css-scroll-anchoring](https://drafts.csswg.org/css-scroll-anchoring)
 - Latest published version: [https://www.w3.org/TR/css-scroll-anchoring-1/](https://www.w3.org/TR/css-scroll-anchoring-1/)
 - Shortname: css-scroll-anchoring-1
 
@@ -4102,7 +4108,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
@@ -4682,7 +4688,7 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
@@ -4955,7 +4961,7 @@ Normative references to this spec from:
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
@@ -5085,7 +5091,7 @@ Normative references to this spec from:
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
@@ -5219,7 +5225,7 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
@@ -5270,7 +5276,7 @@ Normative references to this spec from:
 
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -5483,7 +5489,7 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
@@ -5637,6 +5643,97 @@ This specification looks good!
 No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
+
+
+## ECMAScript® 2021 Language Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
+- Crawled URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
+- Crawled version: 15 December 2020
+- Editor's Draft: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
+- Shortname: ecmascript
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Missing references for links: 
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
+- [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [Console Standard](https://console.spec.whatwg.org/)
+- [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
+- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
+- [DOM Standard](https://dom.spec.whatwg.org/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
+- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [File API](https://w3c.github.io/FileAPI/)
+- [File System Access](https://wicg.github.io/file-system-access/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [High Resolution Time](https://w3c.github.io/hr-time/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
+- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Infra Standard](https://infra.spec.whatwg.org/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
+- [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
+- [Long Tasks API 1](https://w3c.github.io/longtasks/)
+- [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
+- [Media Capabilities](https://w3c.github.io/media-capabilities/)
+- [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Permissions](https://w3c.github.io/permissions/)
+- [Portals](https://wicg.github.io/portals/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
+- [Reporting API 1](https://w3c.github.io/reporting/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [Storage Standard](https://storage.spec.whatwg.org/)
+- [Streams Standard](https://streams.spec.whatwg.org/)
+- [The Storage Access API](https://privacycg.github.io/storage-access/)
+- [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
+- [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
+- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web Cryptography API](https://w3c.github.io/webcrypto/)
+- [Web IDL](https://heycam.github.io/webidl/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
+- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
+- [WebGPU](https://gpuweb.github.io/gpuweb/)
+- [WebUSB API](https://wicg.github.io/webusb/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
+- [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+
+Informative references to this spec from:
+
+- [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [File and Directory Entries API](https://wicg.github.io/entries-api/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 
 
 ## Element Timing API {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -6605,7 +6702,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
-- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
+- [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
@@ -6961,6 +7058,29 @@ Normative references to this spec from:
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [Content Index](https://wicg.github.io/content-index/spec/)
+
+No informative reference to this spec from other specs.
+
+
+## import assertions {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-import-assertions/](https://tc39.es/proposal-import-assertions/)
+- Crawled URL: [https://tc39.es/proposal-import-assertions/](https://tc39.es/proposal-import-assertions/)
+- Crawled version: 3 December 2020
+- Editor's Draft: [https://tc39.es/proposal-import-assertions/](https://tc39.es/proposal-import-assertions/)
+- Shortname: tc39-import-assertions
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Missing references for links: 
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -8939,6 +9059,27 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Private Methods and Accessors Proposal {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-private-methods/](https://tc39.es/proposal-private-methods/)
+- Crawled URL: [https://tc39.es/proposal-private-methods/](https://tc39.es/proposal-private-methods/)
+- Crawled version: 24 April 2020
+- Editor's Draft: [https://tc39.es/proposal-private-methods/](https://tc39.es/proposal-private-methods/)
+- Shortname: tc39-private-methods
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Proposals for the future of CSS Paged Media {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -8980,6 +9121,27 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+
+No informative reference to this spec from other specs.
+
+
+## Public and private instance fields proposal {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-class-fields/](https://tc39.es/proposal-class-fields/)
+- Crawled URL: [https://tc39.es/proposal-class-fields/](https://tc39.es/proposal-class-fields/)
+- Crawled version: 13 December 2020
+- Editor's Draft: [https://tc39.es/proposal-class-fields/](https://tc39.es/proposal-class-fields/)
+- Shortname: tc39-class-fields
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -9068,6 +9230,48 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Preload](https://w3c.github.io/preload/)
+
+
+## RegExp Match Indices {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-regexp-match-indices/](https://tc39.es/proposal-regexp-match-indices/)
+- Crawled URL: [https://tc39.es/proposal-regexp-match-indices/](https://tc39.es/proposal-regexp-match-indices/)
+- Crawled version: 1 December 2020
+- Editor's Draft: [https://tc39.es/proposal-regexp-match-indices/](https://tc39.es/proposal-regexp-match-indices/)
+- Shortname: tc39-regexp-match-indices
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Relative Indexing Method {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-relative-indexing-method/](https://tc39.es/proposal-relative-indexing-method/)
+- Crawled URL: [https://tc39.es/proposal-relative-indexing-method/](https://tc39.es/proposal-relative-indexing-method/)
+- Crawled version: 1 December 2020
+- Editor's Draft: [https://tc39.es/proposal-relative-indexing-method/](https://tc39.es/proposal-relative-indexing-method/)
+- Shortname: tc39-relative-indexing-method
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Relinquishing Permissions {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -9772,6 +9976,27 @@ Informative references to this spec from:
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 
 
+## Static class features {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
+- Crawled URL: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
+- Crawled version: 27 April 2020
+- Editor's Draft: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
+- Shortname: tc39-static-class-features
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Storage Standard {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -10086,7 +10311,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Crawled URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- Crawled version: 12 December 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Shortname: screen-fold
 
@@ -10171,6 +10396,29 @@ This specification looks good!
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Top-Level Await {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-top-level-await/](https://tc39.es/proposal-top-level-await/)
+- Crawled URL: [https://tc39.es/proposal-top-level-await/](https://tc39.es/proposal-top-level-await/)
+- Crawled version: 4 December 2020
+- Editor's Draft: [https://tc39.es/proposal-top-level-await/](https://tc39.es/proposal-top-level-await/)
+- Shortname: tc39-top-level-await
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -12893,11 +13141,12 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
+- Initial URL: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
 - Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Crawled version: 8 December 2020
 - Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Shortname: layers
+- Latest published version: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
+- Shortname: webxrlayers-1
 
 ### Potential issue(s) {.anomalies}
 

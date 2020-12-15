@@ -20,11 +20,20 @@
 <body>
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/w3c/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
-  <p>370 specifications were crawled in this report.</p>
+  <p>379 specifications were crawled in this report.</p>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
+  <li><a href="https://tc39.es/proposal-atomics-wait-async/">Atomics.waitAsync</a></li>
   <li><a href="https://w3c.github.io/contentEditable/">ContentEditable</a></li>
+  <li><a href="https://tc39.es/ecma262/">ECMAScript® 2021 Language Specification</a></li>
+  <li><a href="https://tc39.es/proposal-import-assertions/">import assertions</a></li>
+  <li><a href="https://tc39.es/proposal-private-methods/">Private Methods and Accessors Proposal</a></li>
+  <li><a href="https://tc39.es/proposal-class-fields/">Public and private instance fields proposal</a></li>
+  <li><a href="https://tc39.es/proposal-regexp-match-indices/">RegExp Match Indices</a></li>
+  <li><a href="https://tc39.es/proposal-relative-indexing-method/">Relative Indexing Method</a></li>
+  <li><a href="https://tc39.es/proposal-static-class-features/">Static class features</a></li>
+  <li><a href="https://tc39.es/proposal-top-level-await/">Top-Level Await</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/">WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/">WebGL EXT_blend_minmax Khronos Ratified Extension Specification</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/">WebGL EXT_clip_cull_distance Extension Draft Specification</a></li>
@@ -68,7 +77,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/">WebGL WEBGL_multi_draw Extension Specification</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/">WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification</a></li>
   </ul>
-  <p>=&gt; 43 specifications found</p>
+  <p>=&gt; 52 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
   </section>
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
@@ -494,7 +503,11 @@
   <li><a href="https://infra.spec.whatwg.org/"><code>https://infra.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a> links to <a href="https://www.w3.org/TR/css3-mediaqueries/"><code>https://www.w3.org/TR/css3-mediaqueries/</code></a> but does not list it in its references</li>
+  <li><a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2013/CR-css3-conditional-20130404/"><code>https://www.w3.org/TR/2013/CR-css3-conditional-20130404/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-mediaqueries/"><code>https://www.w3.org/TR/css3-mediaqueries/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://drafts.csswg.org/css-contain-2/">CSS Containment Module Level 2</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
@@ -777,7 +790,7 @@
   <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-scoping/">CSS Scoping Module Level 1</a> links to <a href="https://www.w3.org/TR/css-cascade-4/"><code>https://www.w3.org/TR/css-cascade-4/</code></a> but does not list it in its references</li>
-  <li><a href="https://drafts.csswg.org/css-scroll-anchoring/">CSS Scroll Anchoring Module Level 1</a> links to:
+  <li><a href="https://drafts.csswg.org/css-scroll-anchoring">CSS Scroll Anchoring Module Level 1</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/editing/docs/execCommand/"><code>https://w3c.github.io/editing/docs/execCommand/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
@@ -930,6 +943,7 @@
   <li><a href="https://www.w3.org/TR/css-transforms-2/"><code>https://www.w3.org/TR/css-transforms-2/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a> links to <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html"><code>https://w3c.github.io/deviceorientation/spec-source-orientation.html</code></a> but does not list it in its references</li>
+  <li><a href="https://tc39.es/ecma262/">ECMAScript® 2021 Language Specification</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://wicg.github.io/event-timing/">Event Timing API</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/pointerevents/"><code>https://w3c.github.io/pointerevents/</code></a> but does not list it in its references</li>
@@ -978,6 +992,7 @@
   <li><a href="https://spec.whatwg.org/"><code>https://spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-color/"><code>https://www.w3.org/TR/css3-color/</code></a> but does not list it in its references</li>
   </ul></li>
+  <li><a href="https://tc39.es/proposal-import-assertions/">import assertions</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a> but does not list it in its references</li>
@@ -1220,7 +1235,7 @@
   </ul></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 590 missing references for links found in 163 specifications</p>
+  <p>=&gt; 593 missing references for links found in 165 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -1402,7 +1417,7 @@
   <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-scoping/">CSS Scoping Module Level 1</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-scroll-anchoring/">CSS Scroll Anchoring Module Level 1</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-scroll-anchoring">CSS Scroll Anchoring Module Level 1</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-scroll-snap-1/">CSS Scroll Snap Module Level 1</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-scrollbars/">CSS Scrollbars Module Level 1</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-shapes/">CSS Shapes Module Level 1</a> links to:

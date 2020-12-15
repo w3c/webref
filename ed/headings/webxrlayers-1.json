@@ -1,0 +1,342 @@
+{
+  "spec": {
+    "title": "WebXR Layers API Level 1",
+    "url": "https://immersive-web.github.io/layers/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": 1,
+      "title": "WebXR Layers API Level 1"
+    },
+    {
+      "id": "subtitle",
+      "level": 2,
+      "title": "Editor’s Draft, 8 December 2020"
+    },
+    {
+      "id": "abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.1"
+    },
+    {
+      "id": "applicationflow",
+      "level": 3,
+      "title": "Application flow",
+      "number": "1.2"
+    },
+    {
+      "id": "initialization",
+      "level": 2,
+      "title": "Initialization",
+      "number": "2"
+    },
+    {
+      "id": "xrlayertypes",
+      "level": 2,
+      "title": "Layer types",
+      "number": "3"
+    },
+    {
+      "id": "monovsstereo",
+      "level": 3,
+      "title": "Mono and stereo layers",
+      "number": "3.1"
+    },
+    {
+      "id": "xrlayerlayouttype",
+      "level": 3,
+      "title": "XRLayerLayout",
+      "number": "3.2"
+    },
+    {
+      "id": "xrcompositionlayertype",
+      "level": 3,
+      "title": "XRCompositionLayer",
+      "number": "3.3"
+    },
+    {
+      "id": "xrprojectionlayertype",
+      "level": 3,
+      "title": "XRProjectionLayer",
+      "number": "3.4"
+    },
+    {
+      "id": "xrquadlayertype",
+      "level": 3,
+      "title": "XRQuadLayer",
+      "number": "3.5"
+    },
+    {
+      "id": "xrcylinderayertype",
+      "level": 3,
+      "title": "XRCylinderLayer",
+      "number": "3.6"
+    },
+    {
+      "id": "xrequirectlayertype",
+      "level": 3,
+      "title": "XREquirectLayer",
+      "number": "3.7"
+    },
+    {
+      "id": "xcubelayertype",
+      "level": 3,
+      "title": "XRCubeLayer",
+      "number": "3.8"
+    },
+    {
+      "id": "spaces",
+      "level": 2,
+      "title": "Spaces",
+      "number": "4"
+    },
+    {
+      "id": "rendering",
+      "level": 2,
+      "title": "Rendering",
+      "number": "5"
+    },
+    {
+      "id": "xrsubimagetype",
+      "level": 3,
+      "title": "XRSubImage",
+      "number": "5.1"
+    },
+    {
+      "id": "xrwebglsubimagetype",
+      "level": 3,
+      "title": "XRWebGLSubImage",
+      "number": "5.2"
+    },
+    {
+      "id": "xrtexturetype",
+      "level": 3,
+      "title": "XRTextureType",
+      "number": "5.3"
+    },
+    {
+      "id": "gpulayer",
+      "level": 2,
+      "title": "GPU layer and view creation",
+      "number": "6"
+    },
+    {
+      "id": "xrgpulayeroverview",
+      "level": 3,
+      "title": "Overview",
+      "number": "6.1"
+    },
+    {
+      "id": "xropaquetextures",
+      "level": 3,
+      "title": "Opaque textures",
+      "number": "6.2"
+    },
+    {
+      "id": "xrprojectionlayerinittype",
+      "level": 3,
+      "title": "XRProjectionLayerInit",
+      "number": "6.3"
+    },
+    {
+      "id": "xrlayerinittype",
+      "level": 3,
+      "title": "XRLayerInit",
+      "number": "6.4"
+    },
+    {
+      "id": "xrquadlayerinit",
+      "level": 3,
+      "title": "XRQuadLayerInit",
+      "number": "6.5"
+    },
+    {
+      "id": "xrcylinderlayerinit",
+      "level": 3,
+      "title": "XRCylinderLayerInit",
+      "number": "6.6"
+    },
+    {
+      "id": "xrequirectlayerinit",
+      "level": 3,
+      "title": "XREquirectLayerInit",
+      "number": "6.7"
+    },
+    {
+      "id": "xrcubelayerinit",
+      "level": 3,
+      "title": "XRCubeLayerInit",
+      "number": "6.8"
+    },
+    {
+      "id": "XRWebGLBindingtype",
+      "level": 3,
+      "title": "XRWebGLBinding",
+      "number": "6.9"
+    },
+    {
+      "id": "videolayer",
+      "level": 2,
+      "title": "Video layer creation",
+      "number": "7"
+    },
+    {
+      "id": "xrmedialayerinittype",
+      "level": 3,
+      "title": "XRMediaLayerInit",
+      "number": "7.1"
+    },
+    {
+      "id": "xrmediaquadlayerinittype",
+      "level": 3,
+      "title": "XRMediaQuadLayerInit",
+      "number": "7.2"
+    },
+    {
+      "id": "xrmediacylinderlayerinittype",
+      "level": 3,
+      "title": "XRMediaCylinderLayerInit",
+      "number": "7.3"
+    },
+    {
+      "id": "xrmediaequirectlayerinittype",
+      "level": 3,
+      "title": "XRMediaEquirectLayerInit",
+      "number": "7.4"
+    },
+    {
+      "id": "xrmediabindingtype",
+      "level": 3,
+      "title": "XRMediaBinding",
+      "number": "7.5"
+    },
+    {
+      "id": "events",
+      "level": 2,
+      "title": "Events",
+      "number": "8"
+    },
+    {
+      "id": "xrlayerevent-interface",
+      "level": 3,
+      "title": "XRLayerEvent",
+      "number": "8.1"
+    },
+    {
+      "id": "event-types",
+      "level": 3,
+      "title": "Event Types",
+      "number": "8.2"
+    },
+    {
+      "id": "webxrintegration",
+      "level": 2,
+      "title": "WebXR Device API Integration",
+      "number": "9"
+    },
+    {
+      "id": "xrrenderstatechanges",
+      "level": 3,
+      "title": "XRRenderState changes",
+      "number": "9.1"
+    },
+    {
+      "id": "updaterenderstatechanges",
+      "level": 3,
+      "title": "updateRenderState changes",
+      "number": "9.2"
+    },
+    {
+      "id": "xrcompositorchanges",
+      "level": 3,
+      "title": "XRCompositor changes",
+      "number": "9.3"
+    },
+    {
+      "id": "xrviewchanges",
+      "level": 3,
+      "title": "XRView changes",
+      "number": "9.4"
+    },
+    {
+      "id": "animationframeschanges",
+      "level": 3,
+      "title": "Animation frames changes",
+      "number": "9.5"
+    },
+    {
+      "id": "security",
+      "level": 2,
+      "title": "10. Security and Privacy Considerations"
+    },
+    {
+      "id": "xrcompositiontiming",
+      "level": 3,
+      "title": "Timing of the composition",
+      "number": "10.1"
+    },
+    {
+      "id": "index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
