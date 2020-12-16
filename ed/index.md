@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% December 15, 2020
+% December 16, 2020
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -1220,7 +1220,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-backgrounds-3/](https://www.w3.org/TR/css-backgrounds-3/)
 - Crawled URL: [https://drafts.csswg.org/css-backgrounds/](https://drafts.csswg.org/css-backgrounds/)
-- Crawled version: 30 October 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-backgrounds/](https://drafts.csswg.org/css-backgrounds/)
 - Latest published version: [https://www.w3.org/TR/css-backgrounds-3/](https://www.w3.org/TR/css-backgrounds-3/)
 - Shortname: css-backgrounds-3
@@ -1348,7 +1348,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Crawled URL: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
-- Crawled version: 9 October 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Shortname: css-ui-4
@@ -1395,7 +1395,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
 - Crawled URL: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
-- Crawled version: 13 October 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
 - Latest published version: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
 - Shortname: css-align-3
@@ -1574,7 +1574,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Crawled URL: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
-- Crawled version: 7 December 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
 - Latest published version: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Shortname: css-sizing-3
@@ -1646,7 +1646,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-sizing-4/](https://www.w3.org/TR/css-sizing-4/)
 - Crawled URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
-- Crawled version: 11 December 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
 - Latest published version: [https://www.w3.org/TR/css-sizing-4/](https://www.w3.org/TR/css-sizing-4/)
 - Shortname: css-sizing-4
@@ -1983,7 +1983,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Crawled URL: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
-- Crawled version: 13 December 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
 - Latest published version: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Shortname: css-contain-2
@@ -2156,7 +2156,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Crawled URL: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
-- Crawled version: 23 September 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
 - Latest published version: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Shortname: css-display-3
@@ -2757,7 +2757,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-content-3/](https://www.w3.org/TR/css-content-3/)
 - Crawled URL: [https://drafts.csswg.org/css-content-3/](https://drafts.csswg.org/css-content-3/)
-- Crawled version: 18 September 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-content-3/](https://drafts.csswg.org/css-content-3/)
 - Latest published version: [https://www.w3.org/TR/css-content-3/](https://www.w3.org/TR/css-content-3/)
 - Shortname: css-content-3
@@ -2797,7 +2797,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Crawled URL: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
-- Crawled version: 4 November 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
 - Latest published version: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Shortname: css-grid-2
@@ -2874,7 +2874,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
 - Crawled URL: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
-- Crawled version: 11 November 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
 - Latest published version: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
 - Shortname: css-images-3
@@ -2902,9 +2902,11 @@ Normative references to this spec from:
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
+- [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
+- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
@@ -2921,7 +2923,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 
 
@@ -2931,7 +2932,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Crawled URL: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
-- Crawled version: 9 November 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
 - Latest published version: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Shortname: css-images-4
@@ -2956,7 +2957,6 @@ Normative references to this spec from:
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
-- [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
@@ -2968,6 +2968,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 
 
 ## CSS Inline Layout Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3024,7 +3025,7 @@ Informative references to this spec from:
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 
 
-## CSS Layout API Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## CSS Layout API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -3037,6 +3038,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `StylePropertyMapReadOnly`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css-align-3/`](https://www.w3.org/TR/css-align-3/)
@@ -3089,7 +3091,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-lists-3/](https://www.w3.org/TR/css-lists-3/)
 - Crawled URL: [https://drafts.csswg.org/css-lists-3/](https://drafts.csswg.org/css-lists-3/)
-- Crawled version: 17 November 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-lists-3/](https://drafts.csswg.org/css-lists-3/)
 - Latest published version: [https://www.w3.org/TR/css-lists-3/](https://www.w3.org/TR/css-lists-3/)
 - Shortname: css-lists-3
@@ -3686,7 +3688,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
 - Crawled URL: [https://drafts.css-houdini.org/css-paint-api-1/](https://drafts.css-houdini.org/css-paint-api-1/)
-- Crawled version: 16 October 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.css-houdini.org/css-paint-api-1/](https://drafts.css-houdini.org/css-paint-api-1/)
 - Latest published version: [https://www.w3.org/TR/css-paint-api-1/](https://www.w3.org/TR/css-paint-api-1/)
 - Shortname: css-paint-api-1
@@ -3704,7 +3706,7 @@ Informative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 
 
-## CSS Parser API {data-spec=true data-ok=true}
+## CSS Parser API {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -3716,7 +3718,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `CSSStyleValue`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -4823,19 +4825,20 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Typed OM Level 1 {data-spec=true data-anomaly=true data-missingLinkRef=true}
+## CSS Typed OM Level 1 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
 - Crawled URL: [https://drafts.css-houdini.org/css-typed-om-1/](https://drafts.css-houdini.org/css-typed-om-1/)
-- Crawled version: 16 October 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.css-houdini.org/css-typed-om-1/](https://drafts.css-houdini.org/css-typed-om-1/)
 - Latest published version: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
 - Shortname: css-typed-om-1
 
 ### Potential issue(s) {.anomalies}
 
+- Invalid WebIDL content found
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
 
@@ -5208,7 +5211,6 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
-- [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
@@ -6155,7 +6157,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Font Metrics API Level 1 {data-spec=true data-ok=true}
+## Font Metrics API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true}
 
 ### Spec info {.info}
 
@@ -6167,7 +6169,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `StylePropertyMapReadOnly`
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9724,7 +9726,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CSSOMString`
+- Unknown WebIDL names used: `CSSKeywordish`, `CSSNumericValue`, `CSSOMString`
 - Missing references for links: 
      * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
      * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
@@ -10460,7 +10462,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
 - Crawled URL: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
-- Crawled version: 01 December 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
 - Latest published version: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
 - Shortname: trace-context-1
@@ -10947,7 +10949,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Crawled URL: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
-- Crawled version: 8 December 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Shortname: webaudio
@@ -10988,13 +10990,13 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
+     * [`https://www.w3.org/TR/permissions-policy/`](https://www.w3.org/TR/permissions-policy/)
      * [`https://www.w3.org/TR/string-meta/`](https://www.w3.org/TR/string-meta/)
      * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/)
      * [`https://w3c.github.io/IntersectionObserver/v2/`](https://w3c.github.io/IntersectionObserver/v2/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/), related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
-     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "Permissions-Policy" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 
 ### Known dependencies on this specification {.dependencies}
