@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% December 15, 2020
+% December 16, 2020
 
 379 specifications were crawled in this report.
 
@@ -67,10 +67,11 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## List of specifications with invalid WebIDL content
 
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [SVG Paths](https://svgwg.org/specs/paths/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 
-=> 2 specifications found
+=> 3 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -149,12 +150,16 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 
 ## List of WebIDL names not defined in the specifications crawled
 
+- `CSSKeywordish` used in [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
+- `CSSNumericValue` used in [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- `CSSStyleValue` used in [CSS Parser API](https://wicg.github.io/css-parser-api/)
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
+- `StylePropertyMapReadOnly` used in [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/), [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api-1/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/)
 - `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/), [Idle Detection API](https://wicg.github.io/idle-detection/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [SVG Animations](https://svgwg.org/specs/animations/), [SVG Markers](https://svgwg.org/specs/markers/), [Web Background Synchronization](https://wicg.github.io/background-sync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/), [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/), [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/), [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/), [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/), [WebGL OES_draw_buffers_indexed Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/), [WebGL OES_vertex_array_object Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/), [WebGL OVR_multiview2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/), [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/), [WebGL WEBGL_lose_context Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/), [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/), [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/), [WebXR Anchors Module](https://immersive-web.github.io/anchors/), [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 
-=> 4 WebIDL names found
+=> 8 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -927,6 +932,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/mediacapture-fromelement/`](https://w3c.github.io/mediacapture-fromelement/) but does not list it in its references
     * [`https://www.w3.org/TR/html50/`](https://www.w3.org/TR/html50/) but does not list it in its references
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/) links to:
+    * [`https://www.w3.org/TR/permissions-policy/`](https://www.w3.org/TR/permissions-policy/) but does not list it in its references
     * [`https://www.w3.org/TR/string-meta/`](https://www.w3.org/TR/string-meta/) but does not list it in its references
     * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/) but does not list it in its references
     * [`https://w3c.github.io/IntersectionObserver/v2/`](https://w3c.github.io/IntersectionObserver/v2/) but does not list it in its references
@@ -960,7 +966,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 594 missing references for links found in 165 specifications
+=> 595 missing references for links found in 165 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1317,7 +1323,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/) links to:
     * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/) but related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
-    * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/) but related reference "Permissions-Policy" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/) links to:
@@ -1351,6 +1356,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 316 inconsistent references for links found in 174 specifications
+=> 315 inconsistent references for links found in 174 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.

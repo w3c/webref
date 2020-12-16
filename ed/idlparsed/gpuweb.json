@@ -495,6 +495,21 @@
             "readonly": true
           },
           {
+            "type": "attribute",
+            "name": "limits",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPULimits"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
             "type": "operation",
             "name": "requestDevice",
             "idlType": {
@@ -9894,6 +9909,7 @@
       ],
       "GPUAdapter": [
         "GPUAdapterFeatures",
+        "GPULimits",
         "GPUDevice",
         "GPUDeviceDescriptor"
       ],
