@@ -15,6 +15,113 @@
       }
     },
     "idlNames": {
+      "XRHandJoint": {
+        "type": "enum",
+        "name": "XRHandJoint",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "wrist"
+          },
+          {
+            "type": "enum-value",
+            "value": "thumb-metacarpal"
+          },
+          {
+            "type": "enum-value",
+            "value": "thumb-phalanx-proximal"
+          },
+          {
+            "type": "enum-value",
+            "value": "thumb-phalanx-distal"
+          },
+          {
+            "type": "enum-value",
+            "value": "thumb-tip"
+          },
+          {
+            "type": "enum-value",
+            "value": "index-finger-metacarpal"
+          },
+          {
+            "type": "enum-value",
+            "value": "index-finger-phalanx-proximal"
+          },
+          {
+            "type": "enum-value",
+            "value": "index-finger-phalanx-intermediate"
+          },
+          {
+            "type": "enum-value",
+            "value": "index-finger-phalanx-distal"
+          },
+          {
+            "type": "enum-value",
+            "value": "index-finger-tip"
+          },
+          {
+            "type": "enum-value",
+            "value": "middle-finger-metacarpal"
+          },
+          {
+            "type": "enum-value",
+            "value": "middle-finger-phalanx-proximal"
+          },
+          {
+            "type": "enum-value",
+            "value": "middle-finger-phalanx-intermediate"
+          },
+          {
+            "type": "enum-value",
+            "value": "middle-finger-phalanx-distal"
+          },
+          {
+            "type": "enum-value",
+            "value": "middle-finger-tip"
+          },
+          {
+            "type": "enum-value",
+            "value": "ring-finger-metacarpal"
+          },
+          {
+            "type": "enum-value",
+            "value": "ring-finger-phalanx-proximal"
+          },
+          {
+            "type": "enum-value",
+            "value": "ring-finger-phalanx-intermediate"
+          },
+          {
+            "type": "enum-value",
+            "value": "ring-finger-phalanx-distal"
+          },
+          {
+            "type": "enum-value",
+            "value": "ring-finger-tip"
+          },
+          {
+            "type": "enum-value",
+            "value": "pinky-finger-metacarpal"
+          },
+          {
+            "type": "enum-value",
+            "value": "pinky-finger-phalanx-proximal"
+          },
+          {
+            "type": "enum-value",
+            "value": "pinky-finger-phalanx-intermediate"
+          },
+          {
+            "type": "enum-value",
+            "value": "pinky-finger-phalanx-distal"
+          },
+          {
+            "type": "enum-value",
+            "value": "pinky-finger-tip"
+          }
+        ],
+        "extAttrs": []
+      },
       "XRHand": {
         "type": "interface",
         "name": "XRHand",
@@ -23,6 +130,14 @@
           {
             "type": "iterable",
             "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "XRHandJoint"
+              },
               {
                 "type": null,
                 "extAttrs": [],
@@ -39,7 +154,7 @@
           },
           {
             "type": "attribute",
-            "name": "length",
+            "name": "size",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -54,7 +169,7 @@
           },
           {
             "type": "operation",
-            "name": "joint",
+            "name": "get",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -66,7 +181,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "jointIndex",
+                "name": "key",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -74,7 +189,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "unsigned long"
+                  "idlType": "XRHandJoint"
                 },
                 "default": null,
                 "optional": false,
@@ -82,432 +197,7 @@
               }
             ],
             "extAttrs": [],
-            "special": "getter"
-          },
-          {
-            "type": "const",
-            "name": "WRIST",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "0"
-            }
-          },
-          {
-            "type": "const",
-            "name": "THUMB_METACARPAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "1"
-            }
-          },
-          {
-            "type": "const",
-            "name": "THUMB_PHALANX_PROXIMAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "2"
-            }
-          },
-          {
-            "type": "const",
-            "name": "THUMB_PHALANX_DISTAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "3"
-            }
-          },
-          {
-            "type": "const",
-            "name": "THUMB_PHALANX_TIP",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "4"
-            }
-          },
-          {
-            "type": "const",
-            "name": "INDEX_METACARPAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "5"
-            }
-          },
-          {
-            "type": "const",
-            "name": "INDEX_PHALANX_PROXIMAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "6"
-            }
-          },
-          {
-            "type": "const",
-            "name": "INDEX_PHALANX_INTERMEDIATE",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "7"
-            }
-          },
-          {
-            "type": "const",
-            "name": "INDEX_PHALANX_DISTAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "8"
-            }
-          },
-          {
-            "type": "const",
-            "name": "INDEX_PHALANX_TIP",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "9"
-            }
-          },
-          {
-            "type": "const",
-            "name": "MIDDLE_METACARPAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "10"
-            }
-          },
-          {
-            "type": "const",
-            "name": "MIDDLE_PHALANX_PROXIMAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "11"
-            }
-          },
-          {
-            "type": "const",
-            "name": "MIDDLE_PHALANX_INTERMEDIATE",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "12"
-            }
-          },
-          {
-            "type": "const",
-            "name": "MIDDLE_PHALANX_DISTAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "13"
-            }
-          },
-          {
-            "type": "const",
-            "name": "MIDDLE_PHALANX_TIP",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "14"
-            }
-          },
-          {
-            "type": "const",
-            "name": "RING_METACARPAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "15"
-            }
-          },
-          {
-            "type": "const",
-            "name": "RING_PHALANX_PROXIMAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "16"
-            }
-          },
-          {
-            "type": "const",
-            "name": "RING_PHALANX_INTERMEDIATE",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "17"
-            }
-          },
-          {
-            "type": "const",
-            "name": "RING_PHALANX_DISTAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "18"
-            }
-          },
-          {
-            "type": "const",
-            "name": "RING_PHALANX_TIP",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "19"
-            }
-          },
-          {
-            "type": "const",
-            "name": "LITTLE_METACARPAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "20"
-            }
-          },
-          {
-            "type": "const",
-            "name": "LITTLE_PHALANX_PROXIMAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "21"
-            }
-          },
-          {
-            "type": "const",
-            "name": "LITTLE_PHALANX_INTERMEDIATE",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "22"
-            }
-          },
-          {
-            "type": "const",
-            "name": "LITTLE_PHALANX_DISTAL",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "23"
-            }
-          },
-          {
-            "type": "const",
-            "name": "LITTLE_PHALANX_TIP",
-            "idlType": {
-              "type": "const-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "value": {
-              "type": "number",
-              "value": "24"
-            }
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -527,7 +217,23 @@
         "type": "interface",
         "name": "XRJointSpace",
         "inheritance": "XRSpace",
-        "members": [],
+        "members": [
+          {
+            "type": "attribute",
+            "name": "jointName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRHandJoint"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -806,10 +512,12 @@
         "XRHand"
       ],
       "XRHand": [
+        "XRHandJoint",
         "XRJointSpace"
       ],
       "XRJointSpace": [
-        "XRSpace"
+        "XRSpace",
+        "XRHandJoint"
       ],
       "XRFrame": [
         "XRJointPose",
