@@ -75,244 +75,205 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPULimits": {
-        "type": "dictionary",
-        "name": "GPULimits",
+      "GPUAdapterLimits": {
+        "type": "interface",
+        "name": "GPUAdapterLimits",
         "inheritance": null,
         "members": [
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxBindGroups",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "4"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxDynamicUniformBuffersPerPipelineLayout",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "8"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxDynamicStorageBuffersPerPipelineLayout",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "4"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxSampledTexturesPerShaderStage",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "16"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxSamplersPerShaderStage",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "16"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxStorageBuffersPerShaderStage",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "4"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxStorageTexturesPerShaderStage",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "4"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxUniformBuffersPerShaderStage",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "12"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxUniformBufferBindingSize",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "16384"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxStorageBufferBindingSize",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "134217728"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxVertexBuffers",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "8"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxVertexAttributes",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "16"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "field",
+            "type": "attribute",
             "name": "maxVertexBufferArrayStride",
-            "extAttrs": [],
             "idlType": {
-              "type": "dictionary-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "GPUSize32"
             },
-            "default": {
-              "type": "number",
-              "value": "2048"
-            },
-            "required": false
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [],
@@ -503,9 +464,16 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPULimits"
+              "idlType": "GPUAdapterLimits"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -595,10 +563,27 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "record",
               "nullable": false,
               "union": false,
-              "idlType": "GPULimits"
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize32"
+                }
+              ]
             },
             "default": {
               "type": "dictionary"
@@ -9888,7 +9873,7 @@
     "dependencies": {
       "GPUObjectBase": [],
       "GPUObjectDescriptorBase": [],
-      "GPULimits": [
+      "GPUAdapterLimits": [
         "GPUSize32"
       ],
       "GPUAdapterFeatures": [
@@ -9909,14 +9894,14 @@
       ],
       "GPUAdapter": [
         "GPUAdapterFeatures",
-        "GPULimits",
+        "GPUAdapterLimits",
         "GPUDevice",
         "GPUDeviceDescriptor"
       ],
       "GPUDeviceDescriptor": [
         "GPUObjectDescriptorBase",
         "GPUFeatureName",
-        "GPULimits"
+        "GPUSize32"
       ],
       "GPUDevice": [
         "EventTarget",
