@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% December 14, 2020
+% December 21, 2020
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-inconsistentRef=true}
 
@@ -244,7 +244,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
-- Crawled version: 25 November 2020
+- Crawled version: 14 December 2020
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -262,6 +262,27 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/wai-aria-1.2/)
+
+
+## Atomics.waitAsync {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-atomics-wait-async/](https://tc39.es/proposal-atomics-wait-async/)
+- Crawled URL: [https://tc39.es/proposal-atomics-wait-async/](https://tc39.es/proposal-atomics-wait-async/)
+- Crawled version: 25 September 2020
+- Editor's Draft: [https://tc39.es/proposal-atomics-wait-async/](https://tc39.es/proposal-atomics-wait-async/)
+- Shortname: tc39-atomics-wait-async
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Audio Output Devices API {data-spec=true data-ok=true}
@@ -420,10 +441,15 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
+- [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
+- [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
+- [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
@@ -569,7 +595,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
 - Crawled URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
-- Crawled version: 29 September 2020
+- Crawled version: 16 December 2020
 - Editor's Draft: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
 - Shortname: compat
 
@@ -622,7 +648,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+- [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/)
 
 No informative reference to this spec from other specs.
 
@@ -875,7 +901,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Crawled URL: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
-- Crawled version: 23 September 2020
+- Crawled version: 14 December 2020
 - Editor's Draft: [https://wicg.github.io/cookie-store/](https://wicg.github.io/cookie-store/)
 - Shortname: cookie-store
 
@@ -951,7 +977,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
 - Crawled URL: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
-- Crawled version: 8 December 2020
+- Crawled version: 10 December 2020
 - Editor's Draft: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
 - Shortname: cors-rfc1918
 
@@ -1081,7 +1107,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -1212,7 +1238,7 @@ Informative references to this spec from:
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
 - [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 
@@ -1319,6 +1345,7 @@ Normative references to this spec from:
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
+- [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
@@ -1423,6 +1450,7 @@ Normative references to this spec from:
 
 - [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
+- [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
@@ -1447,7 +1475,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Crawled URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
-- Crawled version: 23 October 2020
+- Crawled version: 18 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
 - Latest published version: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Shortname: css-sizing-3
@@ -1479,6 +1507,7 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/css-break-4/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
+- [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
@@ -1501,7 +1530,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
 
 
@@ -1622,7 +1651,8 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
+- [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/)
 - [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://www.w3.org/TR/css-variables-1/)
@@ -1681,13 +1711,14 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-cascade-5/](https://drafts.csswg.org/css-cascade-5/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade-5/](https://drafts.csswg.org/css-cascade-5/)
-- Crawled version: 27 November 2020
+- Crawled version: 14 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-cascade-5/](https://drafts.csswg.org/css-cascade-5/)
 - Shortname: css-cascade-5
 
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
+     * [`https://www.w3.org/TR/css3-conditional/`](https://www.w3.org/TR/css3-conditional/)
      * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
      * [`https://www.w3.org/TR/css-conditional/`](https://www.w3.org/TR/css-conditional/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
@@ -1794,7 +1825,7 @@ Informative references to this spec from:
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/)
@@ -1834,17 +1865,18 @@ Informative references to this spec from:
 
 ### Spec info {.info}
 
-- Initial URL: [https://www.w3.org/TR/css3-conditional/](https://www.w3.org/TR/css3-conditional/)
-- Crawled URL: [https://www.w3.org/TR/css3-conditional/](https://www.w3.org/TR/css3-conditional/)
+- Initial URL: [https://www.w3.org/TR/css-conditional-3/](https://www.w3.org/TR/css-conditional-3/)
+- Crawled URL: [https://www.w3.org/TR/css-conditional-3/](https://www.w3.org/TR/css-conditional-3/)
 - Crawled version: 8 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-conditional-3/](https://drafts.csswg.org/css-conditional-3/)
-- Latest published version: [https://www.w3.org/TR/css3-conditional/](https://www.w3.org/TR/css3-conditional/)
-- Shortname: css3-conditional
+- Latest published version: [https://www.w3.org/TR/css-conditional-3/](https://www.w3.org/TR/css-conditional-3/)
+- Shortname: css-conditional-3
 
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `CSS`, `CSSGroupingRule`, `CSSOMString`, `CSSRule`, `MediaList`
 - Missing references for links: 
+     * [`https://www.w3.org/TR/2013/CR-css3-conditional-20130404/`](https://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
      * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -1852,25 +1884,12 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Conditional Rules Module Level 4](https://www.w3.org/TR/css-conditional-4/)
-- [CSS Custom Properties for Cascading Variables Module Level 1](https://www.w3.org/TR/css-variables-1/)
 - [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/)
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
-- [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/)
-- [CSS Round Display Level 1](https://www.w3.org/TR/css-round-display-1/)
-- [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/)
-- [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
-Informative references to this spec from:
-
-- [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
-- [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
-- [CSS Syntax Module Level 3](https://www.w3.org/TR/css-syntax-3/)
-- [CSS Text Module Level 4](https://www.w3.org/TR/css-text-4/)
+No informative reference to this spec from other specs.
 
 
 ## CSS Conditional Rules Module Level 4 {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -1902,7 +1921,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Crawled URL: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
-- Crawled version: 3 June 2020
+- Crawled version: 16 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
 - Latest published version: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Shortname: css-contain-2
@@ -1912,7 +1931,6 @@ No informative reference to this spec from other specs.
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/css-pseudo-4/`](https://www.w3.org/TR/css-pseudo-4/)
      * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -2066,7 +2084,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Crawled URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
-- Crawled version: 19 May 2020
+- Crawled version: 18 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
 - Latest published version: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Shortname: css-display-3
@@ -2074,17 +2092,12 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
      * [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/)
      * [`https://www.w3.org/TR/css-multicol-1/`](https://www.w3.org/TR/css-multicol-1/)
      * [`https://www.w3.org/TR/css3-speech/`](https://www.w3.org/TR/css3-speech/)
      * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
-     * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/)
-     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
@@ -2148,7 +2161,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
 
 
@@ -2283,7 +2296,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
-- [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/css-text-decor-4/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
@@ -2679,7 +2691,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Crawled URL: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
-- Crawled version: 21 October 2020
+- Crawled version: 18 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
 - Latest published version: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Shortname: css-grid-2
@@ -2712,6 +2724,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
+- [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 
 
 ## CSS Grid Layout Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2765,7 +2778,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/css-content-3/)
-- [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
@@ -2776,6 +2788,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
+- [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 
 
 ## CSS Images Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -2784,7 +2797,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
 - Crawled URL: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
-- Crawled version: 10 October 2019
+- Crawled version: 17 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
 - Latest published version: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
 - Shortname: css-images-3
@@ -2792,18 +2805,15 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
-     * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/)
-     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
-     * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/)
-     * [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/)
-     * [`https://www.w3.org/TR/css4-images/`](https://www.w3.org/TR/css4-images/)
      * [`https://www.w3.org/TR/css-animations/`](https://www.w3.org/TR/css-animations/)
      * [`https://www.w3.org/TR/css-transitions/`](https://www.w3.org/TR/css-transitions/)
+     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
+     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
+     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
      * [`https://www.w3.org/TR/2012/CR-css3-images-20120417/`](https://www.w3.org/TR/2012/CR-css3-images-20120417/)
-     * [`https://www.w3.org/TR/css-print/`](https://www.w3.org/TR/css-print/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2812,14 +2822,15 @@ Normative references to this spec from:
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
 - [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://www.w3.org/TR/css-sizing-4/)
+- [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
+- [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
+- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 
-Informative references to this spec from:
-
-- [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
+No informative reference to this spec from other specs.
 
 
 ## CSS Inline Layout Module Level 3 {data-spec=true data-anomaly=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -3225,7 +3236,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 
 
 ## CSS Nesting Module {data-spec=true data-anomaly=true data-unknownIdlNames=true}
@@ -3287,7 +3298,7 @@ Normative references to this spec from:
 - [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/)
 - [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/)
 - [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/)
@@ -3716,6 +3727,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
+- [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
@@ -3935,7 +3947,7 @@ No informative reference to this spec from other specs.
 - Initial URL: [https://www.w3.org/TR/css-scroll-anchoring-1/](https://www.w3.org/TR/css-scroll-anchoring-1/)
 - Crawled URL: [https://www.w3.org/TR/css-scroll-anchoring-1/](https://www.w3.org/TR/css-scroll-anchoring-1/)
 - Crawled version: 11 November 2020
-- Editor's Draft: [https://drafts.csswg.org/css-scroll-anchoring/](https://drafts.csswg.org/css-scroll-anchoring/)
+- Editor's Draft: [https://drafts.csswg.org/css-scroll-anchoring](https://drafts.csswg.org/css-scroll-anchoring)
 - Latest published version: [https://www.w3.org/TR/css-scroll-anchoring-1/](https://www.w3.org/TR/css-scroll-anchoring-1/)
 - Shortname: css-scroll-anchoring-1
 
@@ -4240,7 +4252,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/)
 - [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://www.w3.org/TR/css-variables-1/)
@@ -4636,7 +4648,7 @@ Informative references to this spec from:
 
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -4700,7 +4712,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/)
 - [CSS Parser API](https://wicg.github.io/css-parser-api/)
@@ -4895,7 +4907,7 @@ Normative references to this spec from:
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/)
 - [CSS Color Module Level 5](https://www.w3.org/TR/css-color-5/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Conditional Rules Module Level 4](https://www.w3.org/TR/css-conditional-4/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
@@ -5035,7 +5047,6 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 3](https://www.w3.org/TR/css-break-3/)
 - [CSS Fragmentation Module Level 4](https://www.w3.org/TR/css-break-4/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
-- [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://www.w3.org/TR/css-logical-1/)
@@ -5111,7 +5122,7 @@ Normative references to this spec from:
 - [Resize Observer](https://www.w3.org/TR/resize-observer-1/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
+- [The Screen Fold API](https://www.w3.org/TR/screen-fold/)
 - [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web App Manifest](https://www.w3.org/TR/appmanifest/)
@@ -5389,7 +5400,7 @@ Normative references to this spec from:
 - [SVG Accessibility API Mappings](https://www.w3.org/TR/svg-aam-1.0/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
+- [The Screen Fold API](https://www.w3.org/TR/screen-fold/)
 - [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Touch Events](https://www.w3.org/TR/touch-events/)
@@ -5422,7 +5433,7 @@ Normative references to this spec from:
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+- [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -5439,6 +5450,7 @@ Informative references to this spec from:
 - [Audio Output Devices API](https://www.w3.org/TR/audio-output/)
 - [Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification](https://www.w3.org/TR/CSS21/)
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://www.w3.org/TR/CSS22/)
+- [CSS Box Sizing Module Level 3](https://www.w3.org/TR/css-sizing-3/)
 - [CSS Generated Content Module Level 3](https://www.w3.org/TR/css-content-3/)
 - [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/)
 - [Input Events Level 2](https://www.w3.org/TR/input-events-2/)
@@ -5466,6 +5478,106 @@ This specification looks good!
 No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
+
+
+## ECMAScript® 2021 Internationalization API Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
+- Crawled URL: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
+- Crawled version: 15 December 2020
+- Editor's Draft: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
+- Shortname: ecma-402
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Payment Request API](https://www.w3.org/TR/payment-request/)
+- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+
+No informative reference to this spec from other specs.
+
+
+## ECMAScript® 2021 Language Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
+- Crawled URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
+- Crawled version: 17 December 2020
+- Editor's Draft: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
+- Shortname: ecmascript
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Missing references for links: 
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
+- [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Clipboard API and events](https://www.w3.org/TR/clipboard-apis/)
+- [Console Standard](https://console.spec.whatwg.org/)
+- [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
+- [DOM Standard](https://dom.spec.whatwg.org/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
+- [File System Access](https://wicg.github.io/file-system-access/)
+- [High Resolution Time](https://www.w3.org/TR/hr-time-3/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
+- [Infra Standard](https://infra.spec.whatwg.org/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
+- [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
+- [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
+- [Media Capabilities](https://www.w3.org/TR/media-capabilities/)
+- [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
+- [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
+- [Payment Handler API](https://www.w3.org/TR/payment-handler/)
+- [Payment Method: Basic Card](https://www.w3.org/TR/payment-method-basic-card/)
+- [Payment Request API](https://www.w3.org/TR/payment-request/)
+- [Permissions](https://www.w3.org/TR/permissions/)
+- [Portals](https://wicg.github.io/portals/)
+- [Presentation API](https://www.w3.org/TR/presentation-api/)
+- [Push API](https://www.w3.org/TR/push-api/)
+- [Resource Timing Level 2](https://www.w3.org/TR/resource-timing-2/)
+- [Screen Capture](https://www.w3.org/TR/screen-capture/)
+- [Screen Wake Lock API](https://www.w3.org/TR/screen-wake-lock/)
+- [Storage Standard](https://storage.spec.whatwg.org/)
+- [Streams Standard](https://streams.spec.whatwg.org/)
+- [The Storage Access API](https://privacycg.github.io/storage-access/)
+- [Web App Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://www.w3.org/TR/webauthn-2/)
+- [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
+- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
+- [WebDriver](https://www.w3.org/TR/webdriver2/)
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
+- [WebGPU](https://gpuweb.github.io/gpuweb/)
+- [WebUSB API](https://wicg.github.io/webusb/)
+- [WebXR Device API](https://www.w3.org/TR/webxr/)
+- [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
+
+Informative references to this spec from:
+
+- [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [File and Directory Entries API](https://wicg.github.io/entries-api/)
+- [Pointer Events](https://www.w3.org/TR/pointerevents3/)
+- [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 3](https://www.w3.org/TR/user-timing-3/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 
 
 ## Element Timing API {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -5959,7 +6071,7 @@ Normative references to this spec from:
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Permissions Policy](https://www.w3.org/TR/permissions-policy-1/)
 - [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
+- [The Screen Fold API](https://www.w3.org/TR/screen-fold/)
 - [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
@@ -6151,7 +6263,7 @@ Normative references to this spec from:
 - [WebDriver](https://www.w3.org/TR/webdriver2/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+- [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/)
 
 No informative reference to this spec from other specs.
 
@@ -6355,7 +6467,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 11 December 2020
+- Crawled version: 17 December 2020
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -6413,7 +6525,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Containment Module Level 2](https://www.w3.org/TR/css-contain-2/)
 - [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
@@ -6539,7 +6651,7 @@ Normative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
+- [The Screen Fold API](https://www.w3.org/TR/screen-fold/)
 - [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Touch Events](https://www.w3.org/TR/touch-events/)
@@ -6584,7 +6696,7 @@ Normative references to this spec from:
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+- [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -6786,6 +6898,29 @@ Although they do not, the following specs should also normatively reference this
 No informative reference to this spec from other specs.
 
 
+## import assertions {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingLinkRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-import-assertions/](https://tc39.es/proposal-import-assertions/)
+- Crawled URL: [https://tc39.es/proposal-import-assertions/](https://tc39.es/proposal-import-assertions/)
+- Crawled version: 3 December 2020
+- Editor's Draft: [https://tc39.es/proposal-import-assertions/](https://tc39.es/proposal-import-assertions/)
+- Shortname: tc39-import-assertions
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Missing references for links: 
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Import Maps {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -6851,7 +6986,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
 - Crawled URL: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
-- Crawled version: 8 October 2020
+- Crawled version: 17 December 2020
 - Editor's Draft: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
 - Shortname: infra
 
@@ -6876,7 +7011,7 @@ Normative references to this spec from:
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/)
 - [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/)
 - [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
@@ -6920,6 +7055,7 @@ Normative references to this spec from:
 - [Magnetometer](https://www.w3.org/TR/magnetometer/)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
+- [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
 - [Media Session Standard](https://www.w3.org/TR/mediasession/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
@@ -6944,7 +7080,7 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
+- [The Screen Fold API](https://www.w3.org/TR/screen-fold/)
 - [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
@@ -7417,7 +7553,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Crawled URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
-- Crawled version: 10 December 2020
+- Crawled version: 17 December 2020
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Shortname: mediacapture-streams
@@ -7600,13 +7736,13 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
+- [The Screen Fold API](https://www.w3.org/TR/screen-fold/)
 - [Web App Manifest](https://www.w3.org/TR/appmanifest/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/)
 
@@ -7643,7 +7779,8 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
+- [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
@@ -8179,7 +8316,7 @@ Normative references to this spec from:
 - [Resource Hints](https://www.w3.org/TR/resource-hints/)
 - [Screen Wake Lock API](https://www.w3.org/TR/screen-wake-lock/)
 - [Service Workers 1](https://www.w3.org/TR/service-workers-1/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
+- [The Screen Fold API](https://www.w3.org/TR/screen-fold/)
 - [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/vibration/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://www.w3.org/TR/webauthn-2/)
@@ -8705,6 +8842,27 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Private Methods and Accessors Proposal {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-private-methods/](https://tc39.es/proposal-private-methods/)
+- Crawled URL: [https://tc39.es/proposal-private-methods/](https://tc39.es/proposal-private-methods/)
+- Crawled version: 24 April 2020
+- Editor's Draft: [https://tc39.es/proposal-private-methods/](https://tc39.es/proposal-private-methods/)
+- Shortname: tc39-private-methods
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Proposals for the future of CSS Paged Media {data-spec=true data-ok=true}
 
 ### Spec info {.info}
@@ -8746,6 +8904,27 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
+
+No informative reference to this spec from other specs.
+
+
+## Public and private instance fields proposal {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-class-fields/](https://tc39.es/proposal-class-fields/)
+- Crawled URL: [https://tc39.es/proposal-class-fields/](https://tc39.es/proposal-class-fields/)
+- Crawled version: 13 December 2020
+- Editor's Draft: [https://tc39.es/proposal-class-fields/](https://tc39.es/proposal-class-fields/)
+- Shortname: tc39-class-fields
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -8836,6 +9015,48 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Preload](https://www.w3.org/TR/preload/)
+
+
+## RegExp Match Indices {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-regexp-match-indices/](https://tc39.es/proposal-regexp-match-indices/)
+- Crawled URL: [https://tc39.es/proposal-regexp-match-indices/](https://tc39.es/proposal-regexp-match-indices/)
+- Crawled version: 1 December 2020
+- Editor's Draft: [https://tc39.es/proposal-regexp-match-indices/](https://tc39.es/proposal-regexp-match-indices/)
+- Shortname: tc39-regexp-match-indices
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Relative Indexing Method {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-relative-indexing-method/](https://tc39.es/proposal-relative-indexing-method/)
+- Crawled URL: [https://tc39.es/proposal-relative-indexing-method/](https://tc39.es/proposal-relative-indexing-method/)
+- Crawled version: 1 December 2020
+- Editor's Draft: [https://tc39.es/proposal-relative-indexing-method/](https://tc39.es/proposal-relative-indexing-method/)
+- Shortname: tc39-relative-indexing-method
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Relinquishing Permissions {data-spec=true data-anomaly=true data-inconsistentRef=true}
@@ -8951,7 +9172,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+- [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/)
 
 
 ## Resize Observer {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingLinkRef=true data-inconsistentRef=true}
@@ -9160,6 +9381,7 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/fill-stroke-3/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/)
+- [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
@@ -9198,7 +9420,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://drafts.csswg.org/css-cascade-5/)
-- [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
 - [CSS Style Attributes](https://www.w3.org/TR/css-style-attr/)
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
@@ -9374,7 +9595,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Crawled URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
-- Crawled version: 18 August 2020
+- Crawled version: 19 December 2020
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Shortname: selection-api
@@ -9543,6 +9764,27 @@ Informative references to this spec from:
 - [Web App Manifest](https://www.w3.org/TR/appmanifest/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
+
+
+## Static class features {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
+- Crawled URL: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
+- Crawled version: 27 April 2020
+- Editor's Draft: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
+- Shortname: tc39-static-class-features
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Storage Standard {data-spec=true data-ok=true}
@@ -9861,10 +10103,11 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- Crawled URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- Crawled version: 12 December 2020
+- Initial URL: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
+- Crawled URL: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
+- Crawled version: 17 December 2020
 - Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
+- Latest published version: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
 - Shortname: screen-fold
 
 ### Potential issue(s) {.anomalies}
@@ -9900,7 +10143,7 @@ Normative references to this spec from:
 - [Accelerometer](https://www.w3.org/TR/accelerometer/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
+- [The Screen Fold API](https://www.w3.org/TR/screen-fold/)
 - [Web App Manifest](https://www.w3.org/TR/appmanifest/)
 
 No informative reference to this spec from other specs.
@@ -9948,6 +10191,29 @@ This specification looks good!
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Top-Level Await {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-top-level-await/](https://tc39.es/proposal-top-level-await/)
+- Crawled URL: [https://tc39.es/proposal-top-level-await/](https://tc39.es/proposal-top-level-await/)
+- Crawled version: 4 December 2020
+- Editor's Draft: [https://tc39.es/proposal-top-level-await/](https://tc39.es/proposal-top-level-await/)
+- Shortname: tc39-top-level-await
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -10519,7 +10785,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Crawled URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
-- Crawled version: 16 November 2020
+- Crawled version: 16 December 2020
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Shortname: webauthn-2
@@ -10528,6 +10794,7 @@ Informative references to this spec from:
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/permissions-policy/`](https://www.w3.org/TR/permissions-policy/)
+     * [`https://www.w3.org/TR/string-meta/`](https://www.w3.org/TR/string-meta/)
      * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/)
      * [`https://w3c.github.io/IntersectionObserver/v2/`](https://w3c.github.io/IntersectionObserver/v2/)
 - Inconsistent references for links: 
@@ -11017,7 +11284,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+- [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -11656,7 +11923,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+- [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -11672,7 +11939,7 @@ Although they do not, the following specs should also normatively reference this
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+- [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/)
 
 Informative references to this spec from:
 
@@ -12063,7 +12330,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 10 December 2020
+- Crawled version: 17 December 2020
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -12149,7 +12416,7 @@ Normative references to this spec from:
 - [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/)
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css3-conditional/)
+- [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/)
 - [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
@@ -12266,7 +12533,7 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
+- [The Screen Fold API](https://www.w3.org/TR/screen-fold/)
 - [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
@@ -12312,7 +12579,7 @@ Normative references to this spec from:
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/)
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+- [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -12328,13 +12595,13 @@ Informative references to this spec from:
 - [WebIDL Level 1](https://www.w3.org/TR/WebIDL-1/)
 
 
-## WebRTC 1.0: Real-Time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true data-inconsistentRef=true}
+## WebRTC 1.0: Real-Time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Crawled version: 03 December 2020
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Shortname: webrtc
@@ -12344,8 +12611,6 @@ Informative references to this spec from:
 - Unknown WebIDL names used: `AlgorithmIdentifier`, `DOMException`
 - Missing references for links: 
      * [`https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html`](https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webrtc-stats/`](https://w3c.github.io/webrtc-stats/), related reference "WEBRTC-STATS" uses URL [`https://www.w3.org/TR/webrtc-stats/`](https://www.w3.org/TR/webrtc-stats/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12354,6 +12619,7 @@ Normative references to this spec from:
 - [IceTransport Extensions for WebRTC](https://w3c.github.io/webrtc-ice/)
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/)
+- [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
 - [Media Capture from DOM Elements](https://www.w3.org/TR/mediacapture-fromelement/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/mst-content-hint/)
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/webrtc-svc/)
@@ -12365,7 +12631,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Media Capabilities](https://www.w3.org/TR/media-capabilities/)
-- [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
 - [Presentation API](https://www.w3.org/TR/presentation-api/)
 - [Screen Capture](https://www.w3.org/TR/screen-capture/)
 
@@ -12442,7 +12707,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 12 December 2020
+- Crawled version: 20 December 2020
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -12545,7 +12810,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+- [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/)
 
 Informative references to this spec from:
 
@@ -12589,7 +12854,7 @@ Normative references to this spec from:
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+- [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -12710,11 +12975,12 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled version: 8 December 2020
+- Initial URL: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
+- Crawled URL: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
+- Crawled version: 3 December 2020
 - Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Shortname: layers
+- Latest published version: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
+- Shortname: webxrlayers-1
 
 ### Potential issue(s) {.anomalies}
 

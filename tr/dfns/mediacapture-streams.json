@@ -91,7 +91,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "terminology",
@@ -297,7 +297,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "mediastream",
@@ -315,7 +315,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "mediastream",
@@ -332,7 +332,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "stream"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -350,7 +352,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "stream"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -368,7 +372,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "stream"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -386,7 +392,9 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "stream"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -771,12 +779,13 @@
       "id": "track-ended",
       "href": "https://www.w3.org/TR/mediacapture-streams/#track-ended",
       "linkingText": [
-        "track ended state",
         "ended"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "track"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -789,12 +798,13 @@
       "id": "ends-nostop",
       "href": "https://www.w3.org/TR/mediacapture-streams/#ends-nostop",
       "linkingText": [
+        "track ended by the User agent",
         "ends for any reason other than the stop() method being invoked"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "life-cycle",
@@ -823,13 +833,12 @@
       "id": "track-muted",
       "href": "https://www.w3.org/TR/mediacapture-streams/#track-muted",
       "linkingText": [
-        "track muted state",
         "Muted"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "media-flow",
@@ -846,7 +855,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "media-flow",
@@ -864,7 +873,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "media-flow",
@@ -1254,26 +1263,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-mediastreamtrackstate-ended",
-      "href": "https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrackstate-ended",
-      "linkingText": [
-        "ended"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "MediaStreamTrackState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "media-stream-track-interface-definition",
-        "title": "Interface Definition",
-        "number": "4.3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-mediastreamtrackstate",
       "href": "https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrackstate",
       "linkingText": [
@@ -1315,12 +1304,14 @@
       "id": "idl-def-MediaStreamTrackState.ended",
       "href": "https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaStreamTrackState.ended",
       "linkingText": [
-        "ended event"
+        "ended"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "enum-value",
+      "for": [
+        "MediaStreamTrackState"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "media-stream-track-interface-definition",
@@ -2723,6 +2714,24 @@
       "definedIn": "table"
     },
     {
+      "id": "dfn-primary-orientation",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dfn-primary-orientation",
+      "linkingText": [
+        "primary orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "title": "Constrainable Properties",
+        "number": "4.3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-videofacingmodeenum",
       "href": "https://www.w3.org/TR/mediacapture-streams/#dom-videofacingmodeenum",
       "linkingText": [
@@ -3233,9 +3242,9 @@
         "addtrack"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "event",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": true,
       "heading": {
         "id": "event-summary",
@@ -3251,9 +3260,9 @@
         "removetrack"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "event",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": true,
       "heading": {
         "id": "event-summary",
@@ -3269,9 +3278,9 @@
         "mute"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "event",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": true,
       "heading": {
         "id": "event-summary",
@@ -3287,9 +3296,27 @@
         "unmute"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "event",
       "for": [],
-      "access": "private",
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "event-summary",
+        "title": "Event summary",
+        "number": "8"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "event-mediastreamtrack-ended",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#event-mediastreamtrack-ended",
+      "linkingText": [
+        "ended"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [],
+      "access": "public",
       "informative": true,
       "heading": {
         "id": "event-summary",
@@ -3305,9 +3332,9 @@
         "devicechange"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "event",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": true,
       "heading": {
         "id": "event-summary",
@@ -3623,13 +3650,12 @@
       "id": "device-exposure-decision-non-camera-microphone",
       "href": "https://www.w3.org/TR/mediacapture-streams/#device-exposure-decision-non-camera-microphone",
       "linkingText": [
-        "device-exposure-decision-non-camera-microphone",
         "exposure decision algorithm for devices other than camera and microphone"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "exposure-decision-algorithm-for-devices-other-than-camera-and-microphone",
@@ -4289,7 +4315,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "methods-6",
@@ -4306,7 +4332,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "methods-6",
@@ -4340,7 +4366,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "methods-6",
@@ -4357,7 +4383,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "methods-6",
