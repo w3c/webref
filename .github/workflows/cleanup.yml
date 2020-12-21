@@ -16,7 +16,7 @@ jobs:
         node-version: 10.x
     - name: Run clean up
       run: node tools/clean-abandoned-files.js
-    - uses: peter-evans/create-pull-request@v2
+    - uses: peter-evans/create-pull-request@v3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
