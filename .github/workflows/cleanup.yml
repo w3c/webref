@@ -3,6 +3,7 @@ name: Clean up abandoned files
 on:
   schedule:
     - cron: '30 0 * * 1'
+  workflow_dispatch:
 jobs:
   update:
     runs-on: ubuntu-18.04
