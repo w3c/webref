@@ -2,13 +2,14 @@
 % Reffy
 % December 21, 2020
 
-379 specifications were crawled in this report.
+380 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
 
 - [Atomics.waitAsync](https://tc39.es/proposal-atomics-wait-async/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
+- [ECMAScript® 2021 Internationalization API Specification](https://tc39.es/ecma402/)
 - [ECMAScript® 2021 Language Specification](https://tc39.es/ecma262/)
 - [import assertions](https://tc39.es/proposal-import-assertions/)
 - [Private Methods and Accessors Proposal](https://tc39.es/proposal-private-methods/)
@@ -60,7 +61,7 @@
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 52 specifications found
+=> 53 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 

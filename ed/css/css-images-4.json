@@ -1,0 +1,93 @@
+{
+  "spec": {
+    "title": "CSS Images Module Level 4",
+    "url": "https://drafts.csswg.org/css-images-4/"
+  },
+  "properties": {
+    "object-fit": {
+      "name": "object-fit",
+      "value": "fill | none | [contain | cover] || scale-down",
+      "initial": "fill",
+      "appliesTo": "replaced elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "image-resolution": {
+      "name": "image-resolution",
+      "value": "[ from-image || <resolution> ] && snap?",
+      "initial": "1dppx",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword(s) and/or <resolution> (possibly adjusted for snap, see below)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<image>": {
+      "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <element()> | <gradient>"
+    },
+    "<image-set()>": {
+      "value": "image-set( <image-set-option># )"
+    },
+    "<image-set-option>": {
+      "value": "[ <image> | <string> ] [ <resolution> || type(<string>) ]"
+    },
+    "<image()>": {
+      "value": "image( <image-tags>? [ <image-src>? , <color>? ]! )"
+    },
+    "<image-tags>": {
+      "value": "[ ltr | rtl ]"
+    },
+    "<image-src>": {
+      "value": "[ <url> | <string> ]"
+    },
+    "<cross-fade()>": {
+      "value": "cross-fade( <cf-image># )"
+    },
+    "<cf-image>": {
+      "value": "<percentage>? && [ <image> | <color> ]"
+    },
+    "<element()>": {
+      "value": "element( <id-selector> )"
+    },
+    "<gradient>": {
+      "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]"
+    },
+    "<conic-gradient()>": {
+      "value": "conic-gradient( [ from <angle> ]? [ at <position> ]?, <angular-color-stop-list> )"
+    },
+    "<color-stop-list>": {
+      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#"
+    },
+    "<linear-color-stop>": {
+      "value": "<color> && <color-stop-length>?"
+    },
+    "<linear-color-hint>": {
+      "value": "<length-percentage>"
+    },
+    "<color-stop-length>": {
+      "value": "<length-percentage>{1,2}"
+    },
+    "<angular-color-stop-list>": {
+      "value": "<angular-color-stop> , [ <angular-color-hint>? , <angular-color-stop> ]#"
+    },
+    "<angular-color-stop>": {
+      "value": "<color> && <color-stop-angle>?"
+    },
+    "<angular-color-hint>": {
+      "value": "<angle-percentage>"
+    },
+    "<color-stop-angle>": {
+      "value": "<angle-percentage>{1,2}"
+    },
+    "<color-stop>": {
+      "value": "<color-stop-length> | <color-stop-angle>"
+    }
+  }
+}

@@ -5664,6 +5664,31 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## ECMAScript® 2021 Internationalization API Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
+- Crawled URL: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
+- Crawled version: 15 December 2020
+- Editor's Draft: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
+- Shortname: ecma-402
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Web App Manifest](https://w3c.github.io/manifest/)
+
+No informative reference to this spec from other specs.
+
+
 ## ECMAScript® 2021 Language Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingLinkRef=true}
 
 ### Spec info {.info}
@@ -10329,10 +10354,11 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
+- Initial URL: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
 - Crawled URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Crawled version: 15 December 2020
 - Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
+- Latest published version: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
 - Shortname: screen-fold
 
 ### Potential issue(s) {.anomalies}
