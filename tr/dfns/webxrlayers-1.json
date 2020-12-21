@@ -1,0 +1,3608 @@
+{
+  "spec": {
+    "title": "WebXR Layers API Level 1",
+    "url": "https://www.w3.org/TR/webxrlayers-1/"
+  },
+  "dfns": [
+    {
+      "id": "feature-descriptor-layers",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#feature-descriptor-layers",
+      "linkingText": [
+        "layers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "feature descriptor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "initialization",
+        "title": "Initialization",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-xrlayerlayout",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#enumdef-xrlayerlayout",
+      "linkingText": [
+        "XRLayerLayout"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerlayouttype",
+        "title": "XRLayerLayout",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrlayerlayout-default",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerlayout-default",
+      "linkingText": [
+        "\"default\"",
+        "default"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRLayerLayout"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerlayouttype",
+        "title": "XRLayerLayout",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrlayerlayout-mono",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerlayout-mono",
+      "linkingText": [
+        "\"mono\"",
+        "mono"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRLayerLayout"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerlayouttype",
+        "title": "XRLayerLayout",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrlayerlayout-stereo",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerlayout-stereo",
+      "linkingText": [
+        "\"stereo\"",
+        "stereo"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRLayerLayout"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerlayouttype",
+        "title": "XRLayerLayout",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrlayerlayout-stereo-left-right",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerlayout-stereo-left-right",
+      "linkingText": [
+        "\"stereo-left-right\"",
+        "stereo-left-right"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRLayerLayout"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerlayouttype",
+        "title": "XRLayerLayout",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrlayerlayout-stereo-top-bottom",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerlayout-stereo-top-bottom",
+      "linkingText": [
+        "\"stereo-top-bottom\"",
+        "stereo-top-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRLayerLayout"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerlayouttype",
+        "title": "XRLayerLayout",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrcompositionlayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrcompositionlayer",
+      "linkingText": [
+        "XRCompositionLayer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcompositionlayer-destroy",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcompositionlayer-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcompositionlayer-layout",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcompositionlayer-layout",
+      "linkingText": [
+        "layout"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrcompositionlayer-blendtexturesourcealpha",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcompositionlayer-blendtexturesourcealpha",
+      "linkingText": [
+        "blendTextureSourceAlpha"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrcompositionlayer-chromaticaberrationcorrection",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcompositionlayer-chromaticaberrationcorrection",
+      "linkingText": [
+        "chromaticAberrationCorrection"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrcompositionlayer-fixedfoveation",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcompositionlayer-fixedfoveation",
+      "linkingText": [
+        "fixedFoveation"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrcompositionlayer-needsredraw",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcompositionlayer-needsredraw",
+      "linkingText": [
+        "needsRedraw"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "the-underlying-resources-of-a-layer-are-lost",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#the-underlying-resources-of-a-layer-are-lost",
+      "linkingText": [
+        "the underlying resources of a layer are lost"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "intialize-a-composition-layer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#intialize-a-composition-layer",
+      "linkingText": [
+        "intialize a composition layer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrcompositionlayer-context",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrcompositionlayer-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrcompositionlayer-media",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrcompositionlayer-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrcompositionlayer-session",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrcompositionlayer-session",
+      "linkingText": [
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "setting-the-space-on-a-layer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#setting-the-space-on-a-layer",
+      "linkingText": [
+        "setting the space on a layer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrcompositionlayer-isstatic",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrcompositionlayer-isstatic",
+      "linkingText": [
+        "isStatic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRCompositionLayer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrcompositionlayertype",
+        "title": "XRCompositionLayer",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrprojectionlayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrprojectionlayer",
+      "linkingText": [
+        "XRProjectionLayer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrprojectionlayertype",
+        "title": "XRProjectionLayer",
+        "number": "3.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrprojectionlayer-ignoredepthvalues",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrprojectionlayer-ignoredepthvalues",
+      "linkingText": [
+        "ignoreDepthValues"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRProjectionLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrprojectionlayertype",
+        "title": "XRProjectionLayer",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrquadlayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrquadlayer",
+      "linkingText": [
+        "XRQuadLayer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrquadlayertype",
+        "title": "XRQuadLayer",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrquadlayer-transform",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrquadlayer-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRQuadLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrquadlayertype",
+        "title": "XRQuadLayer",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrquadlayer-space",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrquadlayer-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRQuadLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrquadlayertype",
+        "title": "XRQuadLayer",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrquadlayer-width",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrquadlayer-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRQuadLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrquadlayertype",
+        "title": "XRQuadLayer",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrquadlayer-height",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrquadlayer-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRQuadLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrquadlayertype",
+        "title": "XRQuadLayer",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-a-quad-layer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#initialize-a-quad-layer",
+      "linkingText": [
+        "initialize a quad layer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrquadlayertype",
+        "title": "XRQuadLayer",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrquadlayer-onredraw",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrquadlayer-onredraw",
+      "linkingText": [
+        "onredraw"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRQuadLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrquadlayertype",
+        "title": "XRQuadLayer",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrcylinderlayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrcylinderlayer",
+      "linkingText": [
+        "XRCylinderLayer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderayertype",
+        "title": "XRCylinderLayer",
+        "number": "3.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcylinderlayer-transform",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcylinderlayer-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCylinderLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderayertype",
+        "title": "XRCylinderLayer",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrcylinderlayer-space",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcylinderlayer-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCylinderLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderayertype",
+        "title": "XRCylinderLayer",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrcylinderlayer-radius",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcylinderlayer-radius",
+      "linkingText": [
+        "radius"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCylinderLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderayertype",
+        "title": "XRCylinderLayer",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrcylinderlayer-centralangle",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcylinderlayer-centralangle",
+      "linkingText": [
+        "centralAngle"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCylinderLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderayertype",
+        "title": "XRCylinderLayer",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrcylinderlayer-aspectratio",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcylinderlayer-aspectratio",
+      "linkingText": [
+        "aspectRatio"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCylinderLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderayertype",
+        "title": "XRCylinderLayer",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-a-cylinder-layer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#initialize-a-cylinder-layer",
+      "linkingText": [
+        "initialize a cylinder layer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderayertype",
+        "title": "XRCylinderLayer",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrcylinderlayer-onredraw",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcylinderlayer-onredraw",
+      "linkingText": [
+        "onredraw"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCylinderLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderayertype",
+        "title": "XRCylinderLayer",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrequirectlayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrequirectlayer",
+      "linkingText": [
+        "XREquirectLayer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayertype",
+        "title": "XREquirectLayer",
+        "number": "3.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrequirectlayer-space",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayer-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayertype",
+        "title": "XREquirectLayer",
+        "number": "3.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrequirectlayer-transform",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayer-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayertype",
+        "title": "XREquirectLayer",
+        "number": "3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrequirectlayer-radius",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayer-radius",
+      "linkingText": [
+        "radius"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayertype",
+        "title": "XREquirectLayer",
+        "number": "3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrequirectlayer-centralhorizontalangle",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayer-centralhorizontalangle",
+      "linkingText": [
+        "centralHorizontalAngle"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayertype",
+        "title": "XREquirectLayer",
+        "number": "3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrequirectlayer-upperverticalangle",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayer-upperverticalangle",
+      "linkingText": [
+        "upperVerticalAngle"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayertype",
+        "title": "XREquirectLayer",
+        "number": "3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrequirectlayer-lowerverticalangle",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayer-lowerverticalangle",
+      "linkingText": [
+        "lowerVerticalAngle"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayertype",
+        "title": "XREquirectLayer",
+        "number": "3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-a-equirect-layer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#initialize-a-equirect-layer",
+      "linkingText": [
+        "initialize a equirect layer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayertype",
+        "title": "XREquirectLayer",
+        "number": "3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrequirectlayer-onredraw",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayer-onredraw",
+      "linkingText": [
+        "onredraw"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XREquirectLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayertype",
+        "title": "XREquirectLayer",
+        "number": "3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrcubelayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrcubelayer",
+      "linkingText": [
+        "XRCubeLayer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xcubelayertype",
+        "title": "XRCubeLayer",
+        "number": "3.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcubelayer-orientation",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcubelayer-orientation",
+      "linkingText": [
+        "orientation"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCubeLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xcubelayertype",
+        "title": "XRCubeLayer",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrcubelayer-space",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcubelayer-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCubeLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xcubelayertype",
+        "title": "XRCubeLayer",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrcubelayer-onredraw",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcubelayer-onredraw",
+      "linkingText": [
+        "onredraw"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCubeLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xcubelayertype",
+        "title": "XRCubeLayer",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrsubimage",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrsubimage",
+      "linkingText": [
+        "XRSubImage"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrsubimagetype",
+        "title": "XRSubImage",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrsubimage-viewport",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrsubimage-viewport",
+      "linkingText": [
+        "viewport"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRSubImage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrsubimagetype",
+        "title": "XRSubImage",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrwebglsubimage",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrwebglsubimage",
+      "linkingText": [
+        "XRWebGLSubImage"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrwebglsubimagetype",
+        "title": "XRWebGLSubImage",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglsubimage-colortexture",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-colortexture",
+      "linkingText": [
+        "colorTexture"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRWebGLSubImage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrwebglsubimagetype",
+        "title": "XRWebGLSubImage",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglsubimage-depthstenciltexture",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-depthstenciltexture",
+      "linkingText": [
+        "depthStencilTexture"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRWebGLSubImage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrwebglsubimagetype",
+        "title": "XRWebGLSubImage",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglsubimage-imageindex",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-imageindex",
+      "linkingText": [
+        "imageIndex"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRWebGLSubImage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrwebglsubimagetype",
+        "title": "XRWebGLSubImage",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglsubimage-texturewidth",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-texturewidth",
+      "linkingText": [
+        "textureWidth"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRWebGLSubImage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrwebglsubimagetype",
+        "title": "XRWebGLSubImage",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglsubimage-textureheight",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglsubimage-textureheight",
+      "linkingText": [
+        "textureHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRWebGLSubImage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrwebglsubimagetype",
+        "title": "XRWebGLSubImage",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-xrtexturetype",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#enumdef-xrtexturetype",
+      "linkingText": [
+        "XRTextureType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrtexturetype",
+        "title": "XRTextureType",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrtexturetype-texture",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrtexturetype-texture",
+      "linkingText": [
+        "\"texture\"",
+        "texture"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRTextureType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrtexturetype",
+        "title": "XRTextureType",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrtexturetype-texture-array",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrtexturetype-texture-array",
+      "linkingText": [
+        "\"texture-array\"",
+        "texture-array"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRTextureType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrtexturetype",
+        "title": "XRTextureType",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "opaque-texture",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#opaque-texture",
+      "linkingText": [
+        "opaque texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xropaquetextures",
+        "title": "Opaque textures",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-xrprojectionlayerinit",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dictdef-xrprojectionlayerinit",
+      "linkingText": [
+        "XRProjectionLayerInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrprojectionlayerinittype",
+        "title": "XRProjectionLayerInit",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrprojectionlayerinit-texturetype",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrprojectionlayerinit-texturetype",
+      "linkingText": [
+        "textureType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRProjectionLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrprojectionlayerinittype",
+        "title": "XRProjectionLayerInit",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrprojectionlayerinit-colorformat",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrprojectionlayerinit-colorformat",
+      "linkingText": [
+        "colorFormat"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRProjectionLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrprojectionlayerinittype",
+        "title": "XRProjectionLayerInit",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "list-of-color-formats-for-projection-layers",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#list-of-color-formats-for-projection-layers",
+      "linkingText": [
+        "list of color formats for projection layers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrprojectionlayerinittype",
+        "title": "XRProjectionLayerInit",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrprojectionlayerinit-depthformat",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrprojectionlayerinit-depthformat",
+      "linkingText": [
+        "depthFormat"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRProjectionLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrprojectionlayerinittype",
+        "title": "XRProjectionLayerInit",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "list-of-depth-formats-for-projection-layers",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#list-of-depth-formats-for-projection-layers",
+      "linkingText": [
+        "list of depth formats for projection layers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrprojectionlayerinittype",
+        "title": "XRProjectionLayerInit",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrprojectionlayerinit-scalefactor",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrprojectionlayerinit-scalefactor",
+      "linkingText": [
+        "scaleFactor"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRProjectionLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrprojectionlayerinittype",
+        "title": "XRProjectionLayerInit",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-xrlayerinit",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dictdef-xrlayerinit",
+      "linkingText": [
+        "XRLayerInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerinittype",
+        "title": "XRLayerInit",
+        "number": "6.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrlayerinit-isstatic",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerinit-isstatic",
+      "linkingText": [
+        "isStatic"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerinittype",
+        "title": "XRLayerInit",
+        "number": "6.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrlayerinit-space",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerinit-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerinittype",
+        "title": "XRLayerInit",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrlayerinit-colorformat",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerinit-colorformat",
+      "linkingText": [
+        "colorFormat"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerinittype",
+        "title": "XRLayerInit",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "list-of-color-formats-for-non-projection-layers",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#list-of-color-formats-for-non-projection-layers",
+      "linkingText": [
+        "list of color formats for non-projection layers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerinittype",
+        "title": "XRLayerInit",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrlayerinit-depthformat",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerinit-depthformat",
+      "linkingText": [
+        "depthFormat"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerinittype",
+        "title": "XRLayerInit",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "list-of-depth-formats-for-non-projection-layers",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#list-of-depth-formats-for-non-projection-layers",
+      "linkingText": [
+        "list of depth formats for non-projection layers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerinittype",
+        "title": "XRLayerInit",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrlayerinit-viewpixelwidth",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerinit-viewpixelwidth",
+      "linkingText": [
+        "viewPixelWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerinittype",
+        "title": "XRLayerInit",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrlayerinit-viewpixelheight",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerinit-viewpixelheight",
+      "linkingText": [
+        "viewPixelHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerinittype",
+        "title": "XRLayerInit",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrlayerinit-layout",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerinit-layout",
+      "linkingText": [
+        "layout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerinittype",
+        "title": "XRLayerInit",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-xrquadlayerinit",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dictdef-xrquadlayerinit",
+      "linkingText": [
+        "XRQuadLayerInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrquadlayerinit",
+        "title": "XRQuadLayerInit",
+        "number": "6.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrquadlayerinit-texturetype",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrquadlayerinit-texturetype",
+      "linkingText": [
+        "textureType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRQuadLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrquadlayerinit",
+        "title": "XRQuadLayerInit",
+        "number": "6.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrquadlayerinit-transform",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrquadlayerinit-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRQuadLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrquadlayerinit",
+        "title": "XRQuadLayerInit",
+        "number": "6.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrquadlayerinit-width",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrquadlayerinit-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRQuadLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrquadlayerinit",
+        "title": "XRQuadLayerInit",
+        "number": "6.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrquadlayerinit-height",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrquadlayerinit-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRQuadLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrquadlayerinit",
+        "title": "XRQuadLayerInit",
+        "number": "6.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-xrcylinderlayerinit",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dictdef-xrcylinderlayerinit",
+      "linkingText": [
+        "XRCylinderLayerInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderlayerinit",
+        "title": "XRCylinderLayerInit",
+        "number": "6.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcylinderlayerinit-texturetype",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcylinderlayerinit-texturetype",
+      "linkingText": [
+        "textureType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRCylinderLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderlayerinit",
+        "title": "XRCylinderLayerInit",
+        "number": "6.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcylinderlayerinit-transform",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcylinderlayerinit-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRCylinderLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderlayerinit",
+        "title": "XRCylinderLayerInit",
+        "number": "6.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcylinderlayerinit-radius",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcylinderlayerinit-radius",
+      "linkingText": [
+        "radius"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRCylinderLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderlayerinit",
+        "title": "XRCylinderLayerInit",
+        "number": "6.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcylinderlayerinit-centralangle",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcylinderlayerinit-centralangle",
+      "linkingText": [
+        "centralAngle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRCylinderLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderlayerinit",
+        "title": "XRCylinderLayerInit",
+        "number": "6.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcylinderlayerinit-aspectratio",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcylinderlayerinit-aspectratio",
+      "linkingText": [
+        "aspectRatio"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRCylinderLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcylinderlayerinit",
+        "title": "XRCylinderLayerInit",
+        "number": "6.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-xrequirectlayerinit",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dictdef-xrequirectlayerinit",
+      "linkingText": [
+        "XREquirectLayerInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayerinit",
+        "title": "XREquirectLayerInit",
+        "number": "6.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrequirectlayerinit-texturetype",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayerinit-texturetype",
+      "linkingText": [
+        "textureType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XREquirectLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayerinit",
+        "title": "XREquirectLayerInit",
+        "number": "6.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrequirectlayerinit-transform",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayerinit-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XREquirectLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayerinit",
+        "title": "XREquirectLayerInit",
+        "number": "6.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrequirectlayerinit-radius",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayerinit-radius",
+      "linkingText": [
+        "radius"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XREquirectLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayerinit",
+        "title": "XREquirectLayerInit",
+        "number": "6.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrequirectlayerinit-centralhorizontalangle",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayerinit-centralhorizontalangle",
+      "linkingText": [
+        "centralHorizontalAngle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XREquirectLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayerinit",
+        "title": "XREquirectLayerInit",
+        "number": "6.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrequirectlayerinit-upperverticalangle",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayerinit-upperverticalangle",
+      "linkingText": [
+        "upperVerticalAngle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XREquirectLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayerinit",
+        "title": "XREquirectLayerInit",
+        "number": "6.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrequirectlayerinit-lowerverticalangle",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrequirectlayerinit-lowerverticalangle",
+      "linkingText": [
+        "lowerVerticalAngle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XREquirectLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrequirectlayerinit",
+        "title": "XREquirectLayerInit",
+        "number": "6.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-xrcubelayerinit",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dictdef-xrcubelayerinit",
+      "linkingText": [
+        "XRCubeLayerInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcubelayerinit",
+        "title": "XRCubeLayerInit",
+        "number": "6.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcubelayerinit-orientation",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrcubelayerinit-orientation",
+      "linkingText": [
+        "orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRCubeLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrcubelayerinit",
+        "title": "XRCubeLayerInit",
+        "number": "6.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrwebglbinding",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding",
+      "linkingText": [
+        "XRWebGLBinding"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-xrwebglbinding-session-context-session",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-xrwebglbinding-session-context-session",
+      "linkingText": [
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/XRWebGLBinding(session, context)",
+        "XRWebGLBinding/constructor(session, context)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-xrwebglbinding-session-context-context",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-xrwebglbinding-session-context-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/XRWebGLBinding(session, context)",
+        "XRWebGLBinding/constructor(session, context)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-nativeprojectionscalefactor",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-nativeprojectionscalefactor",
+      "linkingText": [
+        "nativeProjectionScaleFactor"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-createprojectionlayer-init-init",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-createprojectionlayer-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/createProjectionLayer(init)",
+        "XRWebGLBinding/createProjectionLayer()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-createquadlayer-init-init",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-createquadlayer-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/createQuadLayer(init)",
+        "XRWebGLBinding/createQuadLayer()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-createcylinderlayer-init-init",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-createcylinderlayer-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/createCylinderLayer(init)",
+        "XRWebGLBinding/createCylinderLayer()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-createequirectlayer-init-init",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-createequirectlayer-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/createEquirectLayer(init)",
+        "XRWebGLBinding/createEquirectLayer()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-createcubelayer-init-init",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-createcubelayer-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/createCubeLayer(init)",
+        "XRWebGLBinding/createCubeLayer()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-getsubimage-layer-frame-eye-layer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-getsubimage-layer-frame-eye-layer",
+      "linkingText": [
+        "layer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/getSubImage(layer, frame, eye)",
+        "XRWebGLBinding/getSubImage(layer, frame)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-getsubimage-layer-frame-eye-frame",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-getsubimage-layer-frame-eye-frame",
+      "linkingText": [
+        "frame"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/getSubImage(layer, frame, eye)",
+        "XRWebGLBinding/getSubImage(layer, frame)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-getsubimage-layer-frame-eye-eye",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-getsubimage-layer-frame-eye-eye",
+      "linkingText": [
+        "eye"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/getSubImage(layer, frame, eye)",
+        "XRWebGLBinding/getSubImage(layer, frame)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-getviewsubimage-layer-view-layer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-getviewsubimage-layer-view-layer",
+      "linkingText": [
+        "layer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/getViewSubImage(layer, view)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-getviewsubimage-layer-view-view",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-getviewsubimage-layer-view-view",
+      "linkingText": [
+        "view"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/getViewSubImage(layer, view)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrwebglbinding-context",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrwebglbinding-session",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding-session",
+      "linkingText": [
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "colortextures",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#colortextures",
+      "linkingText": [
+        "colorTextures"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "depthstenciltextures",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#depthstenciltextures",
+      "linkingText": [
+        "depthStencilTextures"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrprojectionlayer-colortextures-for-secondary-views",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrprojectionlayer-colortextures-for-secondary-views",
+      "linkingText": [
+        "colorTextures for secondary views"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRProjectionLayer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrprojectionlayer-depthstenciltextures-for-secondary-views",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrprojectionlayer-depthstenciltextures-for-secondary-views",
+      "linkingText": [
+        "depthStencilTextures for secondary views"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRProjectionLayer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglbinding-xrwebglbinding",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-xrwebglbinding",
+      "linkingText": [
+        "XRWebGLBinding(session, context)",
+        "constructor(session, context)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "determine-the-layout-attribute",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#determine-the-layout-attribute",
+      "linkingText": [
+        "determine the layout attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "determine-the-maximum-scalefactor",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#determine-the-maximum-scalefactor",
+      "linkingText": [
+        "determine the maximum scalefactor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "allocate-color-textures-for-projection-layers",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#allocate-color-textures-for-projection-layers",
+      "linkingText": [
+        "allocate color textures for projection layers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "allocate-depth-textures-for-projection-layers",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#allocate-depth-textures-for-projection-layers",
+      "linkingText": [
+        "allocate depth textures for projection layers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "allocate-the-color-textures-for-the-secondary-views",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#allocate-the-color-textures-for-the-secondary-views",
+      "linkingText": [
+        "allocate the color textures for the secondary views"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "allocate-the-depth-textures-for-the-secondary-views",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#allocate-the-depth-textures-for-the-secondary-views",
+      "linkingText": [
+        "allocate the depth textures for the secondary views"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "allocate-color-textures",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#allocate-color-textures",
+      "linkingText": [
+        "allocate color textures"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "allocate-depth-textures",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#allocate-depth-textures",
+      "linkingText": [
+        "allocate depth textures"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglbinding-createprojectionlayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-createprojectionlayer",
+      "linkingText": [
+        "createProjectionLayer(init)",
+        "createProjectionLayer()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglbinding-createquadlayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-createquadlayer",
+      "linkingText": [
+        "createQuadLayer(init)",
+        "createQuadLayer()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglbinding-createcylinderlayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-createcylinderlayer",
+      "linkingText": [
+        "createCylinderLayer(init)",
+        "createCylinderLayer()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglbinding-createequirectlayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-createequirectlayer",
+      "linkingText": [
+        "createEquirectLayer(init)",
+        "createEquirectLayer()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglbinding-createcubelayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-createcubelayer",
+      "linkingText": [
+        "createCubeLayer(init)",
+        "createCubeLayer()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "validate-the-state-of-the-xrwebglsubimage-creation-function",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#validate-the-state-of-the-xrwebglsubimage-creation-function",
+      "linkingText": [
+        "validate the state of the XRWebGLSubImage creation function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-the-viewport",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#initialize-the-viewport",
+      "linkingText": [
+        "initialize the viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglbinding-getsubimage",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-getsubimage",
+      "linkingText": [
+        "getSubImage(layer, frame, eye)",
+        "getSubImage(layer, frame)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrwebglbinding-getviewsubimage",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrwebglbinding-getviewsubimage",
+      "linkingText": [
+        "getViewSubImage(layer, view)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "XRWebGLBindingtype",
+        "title": "XRWebGLBinding",
+        "number": "6.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-xrmedialayerinit",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dictdef-xrmedialayerinit",
+      "linkingText": [
+        "XRMediaLayerInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmedialayerinittype",
+        "title": "XRMediaLayerInit",
+        "number": "7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmedialayerinit-space",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmedialayerinit-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmedialayerinittype",
+        "title": "XRMediaLayerInit",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrmedialayerinit-layout",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmedialayerinit-layout",
+      "linkingText": [
+        "layout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmedialayerinittype",
+        "title": "XRMediaLayerInit",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrmedialayerinit-invertstereo",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmedialayerinit-invertstereo",
+      "linkingText": [
+        "invertStereo"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmedialayerinittype",
+        "title": "XRMediaLayerInit",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-xrmediaquadlayerinit",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dictdef-xrmediaquadlayerinit",
+      "linkingText": [
+        "XRMediaQuadLayerInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediaquadlayerinittype",
+        "title": "XRMediaQuadLayerInit",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediaquadlayerinit-transform",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediaquadlayerinit-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaQuadLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediaquadlayerinittype",
+        "title": "XRMediaQuadLayerInit",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediaquadlayerinit-width",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediaquadlayerinit-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaQuadLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediaquadlayerinittype",
+        "title": "XRMediaQuadLayerInit",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediaquadlayerinit-height",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediaquadlayerinit-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaQuadLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediaquadlayerinittype",
+        "title": "XRMediaQuadLayerInit",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-xrmediacylinderlayerinit",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dictdef-xrmediacylinderlayerinit",
+      "linkingText": [
+        "XRMediaCylinderLayerInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediacylinderlayerinittype",
+        "title": "XRMediaCylinderLayerInit",
+        "number": "7.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediacylinderlayerinit-transform",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediacylinderlayerinit-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaCylinderLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediacylinderlayerinittype",
+        "title": "XRMediaCylinderLayerInit",
+        "number": "7.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediacylinderlayerinit-radius",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediacylinderlayerinit-radius",
+      "linkingText": [
+        "radius"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaCylinderLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediacylinderlayerinittype",
+        "title": "XRMediaCylinderLayerInit",
+        "number": "7.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediacylinderlayerinit-centralangle",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediacylinderlayerinit-centralangle",
+      "linkingText": [
+        "centralAngle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaCylinderLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediacylinderlayerinittype",
+        "title": "XRMediaCylinderLayerInit",
+        "number": "7.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediacylinderlayerinit-aspectratio",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediacylinderlayerinit-aspectratio",
+      "linkingText": [
+        "aspectRatio"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaCylinderLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediacylinderlayerinittype",
+        "title": "XRMediaCylinderLayerInit",
+        "number": "7.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-xrmediaequirectlayerinit",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dictdef-xrmediaequirectlayerinit",
+      "linkingText": [
+        "XRMediaEquirectLayerInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediaequirectlayerinittype",
+        "title": "XRMediaEquirectLayerInit",
+        "number": "7.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediaequirectlayerinit-transform",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediaequirectlayerinit-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaEquirectLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediaequirectlayerinittype",
+        "title": "XRMediaEquirectLayerInit",
+        "number": "7.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediaequirectlayerinit-radius",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediaequirectlayerinit-radius",
+      "linkingText": [
+        "radius"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaEquirectLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediaequirectlayerinittype",
+        "title": "XRMediaEquirectLayerInit",
+        "number": "7.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediaequirectlayerinit-centralhorizontalangle",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediaequirectlayerinit-centralhorizontalangle",
+      "linkingText": [
+        "centralHorizontalAngle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaEquirectLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediaequirectlayerinittype",
+        "title": "XRMediaEquirectLayerInit",
+        "number": "7.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediaequirectlayerinit-upperverticalangle",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediaequirectlayerinit-upperverticalangle",
+      "linkingText": [
+        "upperVerticalAngle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaEquirectLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediaequirectlayerinittype",
+        "title": "XRMediaEquirectLayerInit",
+        "number": "7.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediaequirectlayerinit-lowerverticalangle",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediaequirectlayerinit-lowerverticalangle",
+      "linkingText": [
+        "lowerVerticalAngle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRMediaEquirectLayerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediaequirectlayerinittype",
+        "title": "XRMediaEquirectLayerInit",
+        "number": "7.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrmediabinding",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrmediabinding",
+      "linkingText": [
+        "XRMediaBinding"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediabinding-xrmediabinding-session-session",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediabinding-xrmediabinding-session-session",
+      "linkingText": [
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRMediaBinding/XRMediaBinding(session)",
+        "XRMediaBinding/constructor(session)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediabinding-createquadlayer-video-init-video",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediabinding-createquadlayer-video-init-video",
+      "linkingText": [
+        "video"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRMediaBinding/createQuadLayer(video, init)",
+        "XRMediaBinding/createQuadLayer(video)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediabinding-createquadlayer-video-init-init",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediabinding-createquadlayer-video-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRMediaBinding/createQuadLayer(video, init)",
+        "XRMediaBinding/createQuadLayer(video)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediabinding-createcylinderlayer-video-init-video",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediabinding-createcylinderlayer-video-init-video",
+      "linkingText": [
+        "video"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRMediaBinding/createCylinderLayer(video, init)",
+        "XRMediaBinding/createCylinderLayer(video)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediabinding-createcylinderlayer-video-init-init",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediabinding-createcylinderlayer-video-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRMediaBinding/createCylinderLayer(video, init)",
+        "XRMediaBinding/createCylinderLayer(video)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediabinding-createequirectlayer-video-init-video",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediabinding-createequirectlayer-video-init-video",
+      "linkingText": [
+        "video"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRMediaBinding/createEquirectLayer(video, init)",
+        "XRMediaBinding/createEquirectLayer(video)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrmediabinding-createequirectlayer-video-init-init",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediabinding-createequirectlayer-video-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRMediaBinding/createEquirectLayer(video, init)",
+        "XRMediaBinding/createEquirectLayer(video)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrmediabinding-session",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrmediabinding-session",
+      "linkingText": [
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRMediaBinding"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrmediabinding-xrmediabinding",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediabinding-xrmediabinding",
+      "linkingText": [
+        "XRMediaBinding(session)",
+        "constructor(session)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "XRMediaBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "calculate-the-aspect-ratio",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#calculate-the-aspect-ratio",
+      "linkingText": [
+        "calculate the aspect ratio"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrmediabinding-createquadlayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediabinding-createquadlayer",
+      "linkingText": [
+        "createQuadLayer(video, init)",
+        "createQuadLayer(video)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRMediaBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrmediabinding-createcylinderlayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediabinding-createcylinderlayer",
+      "linkingText": [
+        "createCylinderLayer(video, init)",
+        "createCylinderLayer(video)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRMediaBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrmediabinding-createequirectlayer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrmediabinding-createequirectlayer",
+      "linkingText": [
+        "createEquirectLayer(video, init)",
+        "createEquirectLayer(video)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRMediaBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrmediabindingtype",
+        "title": "XRMediaBinding",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrlayerevent",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#xrlayerevent",
+      "linkingText": [
+        "XRLayerEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerevent-interface",
+        "title": "XRLayerEvent",
+        "number": "8.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrlayerevent-xrlayerevent",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerevent-xrlayerevent",
+      "linkingText": [
+        "XRLayerEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "XRLayerEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerevent-interface",
+        "title": "XRLayerEvent",
+        "number": "8.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrlayerevent-xrlayerevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerevent-xrlayerevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRLayerEvent/XRLayerEvent(type, eventInitDict)",
+        "XRLayerEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerevent-interface",
+        "title": "XRLayerEvent",
+        "number": "8.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrlayerevent-xrlayerevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerevent-xrlayerevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRLayerEvent/XRLayerEvent(type, eventInitDict)",
+        "XRLayerEvent/constructor(type, eventInitDict)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerevent-interface",
+        "title": "XRLayerEvent",
+        "number": "8.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-xrlayereventinit",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dictdef-xrlayereventinit",
+      "linkingText": [
+        "XRLayerEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerevent-interface",
+        "title": "XRLayerEvent",
+        "number": "8.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrlayereventinit-layer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayereventinit-layer",
+      "linkingText": [
+        "layer"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRLayerEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerevent-interface",
+        "title": "XRLayerEvent",
+        "number": "8.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrlayerevent-layer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerevent-layer",
+      "linkingText": [
+        "layer"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRLayerEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrlayerevent-interface",
+        "title": "XRLayerEvent",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-xrlayer-redraw",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#eventdef-xrlayer-redraw",
+      "linkingText": [
+        "redraw"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XRLayer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-types",
+        "title": "Event Types",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrrenderstate-layers",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#dom-xrrenderstate-layers",
+      "linkingText": [
+        "layers"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRRenderState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrrenderstatechanges",
+        "title": "XRRenderState changes",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layers-initialize-the-render-state",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#layers-initialize-the-render-state",
+      "linkingText": [
+        "initialize the render state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layers"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrrenderstatechanges",
+        "title": "XRRenderState changes",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "layers-update-the-pending-layers-state",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#layers-update-the-pending-layers-state",
+      "linkingText": [
+        "update the pending layers state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "layers"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "updaterenderstatechanges",
+        "title": "updateRenderState changes",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-the-layers-state",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#check-the-layers-state",
+      "linkingText": [
+        "check the layers state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animationframeschanges",
+        "title": "Animation frames changes",
+        "number": "9.5"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

@@ -809,6 +809,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "supported-limits",
+      "href": "https://gpuweb.github.io/gpuweb/#supported-limits",
+      "linkingText": [
+        "supported limits"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "limit-better",
       "href": "https://gpuweb.github.io/gpuweb/#limit-better",
       "linkingText": [
@@ -829,10 +847,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "limit-baseline",
-      "href": "https://gpuweb.github.io/gpuweb/#limit-baseline",
+      "id": "limit-default",
+      "href": "https://gpuweb.github.io/gpuweb/#limit-default",
       "linkingText": [
-        "baseline"
+        "default"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -849,15 +867,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-gpulimits-maxbindgroups",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxbindgroups",
+      "id": "dom-supported-limits-maxbindgroups",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxbindgroups",
       "linkingText": [
         "maxBindGroups"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -869,15 +887,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpulimits-maxdynamicuniformbuffersperpipelinelayout",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxdynamicuniformbuffersperpipelinelayout",
+      "id": "dom-supported-limits-maxdynamicuniformbuffersperpipelinelayout",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxdynamicuniformbuffersperpipelinelayout",
       "linkingText": [
         "maxDynamicUniformBuffersPerPipelineLayout"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -889,15 +907,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpulimits-maxdynamicstoragebuffersperpipelinelayout",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxdynamicstoragebuffersperpipelinelayout",
+      "id": "dom-supported-limits-maxdynamicstoragebuffersperpipelinelayout",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxdynamicstoragebuffersperpipelinelayout",
       "linkingText": [
         "maxDynamicStorageBuffersPerPipelineLayout"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -909,15 +927,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpulimits-maxsampledtexturespershaderstage",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxsampledtexturespershaderstage",
+      "id": "dom-supported-limits-maxsampledtexturespershaderstage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxsampledtexturespershaderstage",
       "linkingText": [
         "maxSampledTexturesPerShaderStage"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -929,15 +947,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpulimits-maxsamplerspershaderstage",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxsamplerspershaderstage",
+      "id": "dom-supported-limits-maxsamplerspershaderstage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxsamplerspershaderstage",
       "linkingText": [
         "maxSamplersPerShaderStage"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -949,15 +967,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpulimits-maxstoragebufferspershaderstage",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxstoragebufferspershaderstage",
+      "id": "dom-supported-limits-maxstoragebufferspershaderstage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxstoragebufferspershaderstage",
       "linkingText": [
         "maxStorageBuffersPerShaderStage"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -969,15 +987,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpulimits-maxstoragetexturespershaderstage",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxstoragetexturespershaderstage",
+      "id": "dom-supported-limits-maxstoragetexturespershaderstage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxstoragetexturespershaderstage",
       "linkingText": [
         "maxStorageTexturesPerShaderStage"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -989,15 +1007,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpulimits-maxuniformbufferspershaderstage",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxuniformbufferspershaderstage",
+      "id": "dom-supported-limits-maxuniformbufferspershaderstage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxuniformbufferspershaderstage",
       "linkingText": [
         "maxUniformBuffersPerShaderStage"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -1009,15 +1027,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpulimits-maxuniformbufferbindingsize",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxuniformbufferbindingsize",
+      "id": "dom-supported-limits-maxuniformbufferbindingsize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxuniformbufferbindingsize",
       "linkingText": [
         "maxUniformBufferBindingSize"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -1029,15 +1047,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpulimits-maxstoragebufferbindingsize",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxstoragebufferbindingsize",
+      "id": "dom-supported-limits-maxstoragebufferbindingsize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxstoragebufferbindingsize",
       "linkingText": [
         "maxStorageBufferBindingSize"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -1049,15 +1067,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpulimits-maxvertexbuffers",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxvertexbuffers",
+      "id": "dom-supported-limits-maxvertexbuffers",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxvertexbuffers",
       "linkingText": [
         "maxVertexBuffers"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -1069,15 +1087,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpulimits-maxvertexattributes",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxvertexattributes",
+      "id": "dom-supported-limits-maxvertexattributes",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxvertexattributes",
       "linkingText": [
         "maxVertexAttributes"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -1089,15 +1107,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpulimits-maxvertexarraystride",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpulimits-maxvertexarraystride",
+      "id": "dom-supported-limits-maxvertexbufferarraystride",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-supported-limits-maxvertexbufferarraystride",
       "linkingText": [
-        "maxVertexArrayStride"
+        "maxVertexBufferArrayStride"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "attribute",
       "for": [
-        "GPULimits"
+        "supported limits"
       ],
       "access": "public",
       "informative": false,
@@ -1109,22 +1127,282 @@
       "definedIn": "table"
     },
     {
-      "id": "dictdef-gpulimits",
-      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpulimits",
+      "id": "gpuadapterlimits",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuadapterlimits",
       "linkingText": [
-        "GPULimits"
+        "GPUAdapterLimits"
       ],
       "localLinkingText": [],
-      "type": "dictionary",
+      "type": "interface",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "gpulimits",
-        "title": "GPULimits",
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
         "number": "3.6.2.1"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxbindgroups",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxbindgroups",
+      "linkingText": [
+        "maxBindGroups"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxdynamicuniformbuffersperpipelinelayout",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxdynamicuniformbuffersperpipelinelayout",
+      "linkingText": [
+        "maxDynamicUniformBuffersPerPipelineLayout"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxdynamicstoragebuffersperpipelinelayout",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxdynamicstoragebuffersperpipelinelayout",
+      "linkingText": [
+        "maxDynamicStorageBuffersPerPipelineLayout"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxsampledtexturespershaderstage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxsampledtexturespershaderstage",
+      "linkingText": [
+        "maxSampledTexturesPerShaderStage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxsamplerspershaderstage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxsamplerspershaderstage",
+      "linkingText": [
+        "maxSamplersPerShaderStage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxstoragebufferspershaderstage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxstoragebufferspershaderstage",
+      "linkingText": [
+        "maxStorageBuffersPerShaderStage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxstoragetexturespershaderstage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxstoragetexturespershaderstage",
+      "linkingText": [
+        "maxStorageTexturesPerShaderStage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxuniformbufferspershaderstage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxuniformbufferspershaderstage",
+      "linkingText": [
+        "maxUniformBuffersPerShaderStage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxuniformbufferbindingsize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxuniformbufferbindingsize",
+      "linkingText": [
+        "maxUniformBufferBindingSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxstoragebufferbindingsize",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxstoragebufferbindingsize",
+      "linkingText": [
+        "maxStorageBufferBindingSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxvertexbuffers",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxvertexbuffers",
+      "linkingText": [
+        "maxVertexBuffers"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxvertexattributes",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxvertexattributes",
+      "linkingText": [
+        "maxVertexAttributes"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuadapterlimits-maxvertexbufferarraystride",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapterlimits-maxvertexbufferarraystride",
+      "linkingText": [
+        "maxVertexBufferArrayStride"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapterLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapterlimits",
+        "title": "GPUAdapterLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "gpuadapterfeatures",
@@ -1382,6 +1660,26 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-features",
       "linkingText": [
         "features"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapter",
+        "title": "GPUAdapter",
+        "number": "4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpuadapter-limits",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuadapter-limits",
+      "linkingText": [
+        "limits"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -6085,10 +6383,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpubufferbindingtype-readonly-storage",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubufferbindingtype-readonly-storage",
+      "id": "dom-gpubufferbindingtype-read-only-storage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubufferbindingtype-read-only-storage",
       "linkingText": [
-        "\"readonly-storage\""
+        "\"read-only-storage\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6513,10 +6811,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpustoragetextureaccess-readonly",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-readonly",
+      "id": "dom-gpustoragetextureaccess-read-only",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-read-only",
       "linkingText": [
-        "\"readonly\""
+        "\"read-only\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6533,10 +6831,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpustoragetextureaccess-writeonly",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-writeonly",
+      "id": "dom-gpustoragetextureaccess-write-only",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-write-only",
       "linkingText": [
-        "\"writeonly\""
+        "\"write-only\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -8334,6 +8632,24 @@
       "definedIn": "table"
     },
     {
+      "id": "abstract-opdef-validating-gpurenderpipelinedescriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpurenderpipelinedescriptor",
+      "linkingText": [
+        "validating GPURenderPipelineDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sample-masking",
+        "title": "Sample Masking",
+        "number": "10.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "enumdef-gpuprimitivetopology",
       "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpuprimitivetopology",
       "linkingText": [
@@ -9940,6 +10256,24 @@
         "number": "10.3.8"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "abstract-opdef-validating-gpudepthstencilstatedescriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-validating-gpudepthstencilstatedescriptor",
+      "linkingText": [
+        "validating GPUDepthStencilStateDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "depth-stencil-state",
+        "title": "Depth/Stencil State",
+        "number": "10.3.8"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "enumdef-gpuindexformat",

@@ -1,0 +1,1338 @@
+{
+  "spec": {
+    "title": "ECMAScript® 2021 Language Specification",
+    "url": "https://tc39.es/ecma262/"
+  },
+  "dfns": [
+    {
+      "id": "implementation-defined",
+      "href": "https://tc39.es/ecma262/#implementation-defined",
+      "linkingText": [
+        "implementation-defined"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Hosts and Implementations",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "implementation-approximated",
+      "href": "https://tc39.es/ecma262/#implementation-approximated",
+      "linkingText": [
+        "implementation-approximated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Hosts and Implementations",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "host",
+      "href": "https://tc39.es/ecma262/#host",
+      "linkingText": [
+        "host"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Hosts and Implementations",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "host-hook",
+      "href": "https://tc39.es/ecma262/#host-hook",
+      "linkingText": [
+        "host hook"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Hosts and Implementations",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "host-defined",
+      "href": "https://tc39.es/ecma262/#host-defined",
+      "linkingText": [
+        "host-defined"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Hosts and Implementations",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "host-environment",
+      "href": "https://tc39.es/ecma262/#host-environment",
+      "linkingText": [
+        "host environment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Hosts and Implementations",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "assert",
+      "href": "https://tc39.es/ecma262/#assert",
+      "linkingText": [
+        "Assert"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Algorithm Conventions",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "early-error-rule",
+      "href": "https://tc39.es/ecma262/#early-error-rule",
+      "linkingText": [
+        "Early Error Rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Static Semantics",
+        "number": "5.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "integer",
+      "href": "https://tc39.es/ecma262/#integer",
+      "linkingText": [
+        "integer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Mathematical Operations",
+        "number": "5.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "integral-number",
+      "href": "https://tc39.es/ecma262/#integral-number",
+      "linkingText": [
+        "integral Number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Mathematical Operations",
+        "number": "5.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "𝔽",
+      "href": "https://tc39.es/ecma262/#%F0%9D%94%BD",
+      "linkingText": [
+        "𝔽"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Mathematical Operations",
+        "number": "5.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ℤ",
+      "href": "https://tc39.es/ecma262/#%E2%84%A4",
+      "linkingText": [
+        "ℤ"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Mathematical Operations",
+        "number": "5.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "mathematical-value",
+      "href": "https://tc39.es/ecma262/#mathematical-value",
+      "linkingText": [
+        "mathematical value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Mathematical Operations",
+        "number": "5.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ℝ",
+      "href": "https://tc39.es/ecma262/#%E2%84%9D",
+      "linkingText": [
+        "ℝ"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Mathematical Operations",
+        "number": "5.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extended-mathematical-value",
+      "href": "https://tc39.es/ecma262/#extended-mathematical-value",
+      "linkingText": [
+        "extended mathematical value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Mathematical Operations",
+        "number": "5.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "clamping",
+      "href": "https://tc39.es/ecma262/#clamping",
+      "linkingText": [
+        "clamping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Mathematical Operations",
+        "number": "5.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type",
+      "href": "https://tc39.es/ecma262/#type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "6 ECMAScript Data Types and Values"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "leading-surrogate",
+      "href": "https://tc39.es/ecma262/#leading-surrogate",
+      "linkingText": [
+        "leading surrogate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "The String Type",
+        "number": "6.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "high-surrogate-code-unit",
+      "href": "https://tc39.es/ecma262/#high-surrogate-code-unit",
+      "linkingText": [
+        "high-surrogate code unit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "The String Type",
+        "number": "6.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trailing-surrogate",
+      "href": "https://tc39.es/ecma262/#trailing-surrogate",
+      "linkingText": [
+        "trailing surrogate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "The String Type",
+        "number": "6.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "low-surrogate-code-unit",
+      "href": "https://tc39.es/ecma262/#low-surrogate-code-unit",
+      "linkingText": [
+        "low-surrogate code unit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "The String Type",
+        "number": "6.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "surrogate-pair",
+      "href": "https://tc39.es/ecma262/#surrogate-pair",
+      "linkingText": [
+        "surrogate pair"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "The String Type",
+        "number": "6.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "string-concatenation",
+      "href": "https://tc39.es/ecma262/#string-concatenation",
+      "linkingText": [
+        "string-concatenation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "The String Type",
+        "number": "6.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "substring",
+      "href": "https://tc39.es/ecma262/#substring",
+      "linkingText": [
+        "substring"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "The String Type",
+        "number": "6.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "number-value",
+      "href": "https://tc39.es/ecma262/#number-value",
+      "linkingText": [
+        "Number value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "The Number Type",
+        "number": "6.1.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "property-name",
+      "href": "https://tc39.es/ecma262/#property-name",
+      "linkingText": [
+        "property name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "The Object Type",
+        "number": "6.1.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "integer-index",
+      "href": "https://tc39.es/ecma262/#integer-index",
+      "linkingText": [
+        "integer index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "The Object Type",
+        "number": "6.1.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "array-index",
+      "href": "https://tc39.es/ecma262/#array-index",
+      "linkingText": [
+        "array index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "The Object Type",
+        "number": "6.1.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ordinary-object",
+      "href": "https://tc39.es/ecma262/#ordinary-object",
+      "linkingText": [
+        "ordinary object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Object Internal Methods and Internal Slots",
+        "number": "6.1.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exotic-object",
+      "href": "https://tc39.es/ecma262/#exotic-object",
+      "linkingText": [
+        "exotic object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Object Internal Methods and Internal Slots",
+        "number": "6.1.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "function-object",
+      "href": "https://tc39.es/ecma262/#function-object",
+      "linkingText": [
+        "function object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Object Internal Methods and Internal Slots",
+        "number": "6.1.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "constructor",
+      "href": "https://tc39.es/ecma262/#constructor",
+      "linkingText": [
+        "constructor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Object Internal Methods and Internal Slots",
+        "number": "6.1.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "super-reference-record",
+      "href": "https://tc39.es/ecma262/#super-reference-record",
+      "linkingText": [
+        "Super Reference Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "The Reference Record Specification Type",
+        "number": "6.2.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "realm",
+      "href": "https://tc39.es/ecma262/#realm",
+      "linkingText": [
+        "realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Realms",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "realm-record",
+      "href": "https://tc39.es/ecma262/#realm-record",
+      "linkingText": [
+        "Realm Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Realms",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "running-execution-context",
+      "href": "https://tc39.es/ecma262/#running-execution-context",
+      "linkingText": [
+        "running execution context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Execution Contexts",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "execution-context-stack",
+      "href": "https://tc39.es/ecma262/#execution-context-stack",
+      "linkingText": [
+        "execution context stack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Execution Contexts",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "current-realm",
+      "href": "https://tc39.es/ecma262/#current-realm",
+      "linkingText": [
+        "the current Realm Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Execution Contexts",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "active-function-object",
+      "href": "https://tc39.es/ecma262/#active-function-object",
+      "linkingText": [
+        "active function object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Execution Contexts",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "job",
+      "href": "https://tc39.es/ecma262/#job",
+      "linkingText": [
+        "Job"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Jobs and Host Operations to Enqueue Jobs",
+        "number": "8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "job-activescriptormodule",
+      "href": "https://tc39.es/ecma262/#job-activescriptormodule",
+      "linkingText": [
+        "active script or module"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Jobs and Host Operations to Enqueue Jobs",
+        "number": "8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "job-preparedtoevaluatecode",
+      "href": "https://tc39.es/ecma262/#job-preparedtoevaluatecode",
+      "linkingText": [
+        "prepared to evaluate ECMAScript code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Jobs and Host Operations to Enqueue Jobs",
+        "number": "8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "agent",
+      "href": "https://tc39.es/ecma262/#agent",
+      "linkingText": [
+        "agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Agents",
+        "number": "8.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "agent-record",
+      "href": "https://tc39.es/ecma262/#agent-record",
+      "linkingText": [
+        "Agent Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Agents",
+        "number": "8.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "executing-thread",
+      "href": "https://tc39.es/ecma262/#executing-thread",
+      "linkingText": [
+        "executing thread"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Agents",
+        "number": "8.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "surrounding-agent",
+      "href": "https://tc39.es/ecma262/#surrounding-agent",
+      "linkingText": [
+        "surrounding agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Agents",
+        "number": "8.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "strict-function",
+      "href": "https://tc39.es/ecma262/#strict-function",
+      "linkingText": [
+        "strict function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "ECMAScript Function Objects",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "non-strict-function",
+      "href": "https://tc39.es/ecma262/#non-strict-function",
+      "linkingText": [
+        "non-strict function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "ECMAScript Function Objects",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bound-function-exotic-object",
+      "href": "https://tc39.es/ecma262/#bound-function-exotic-object",
+      "linkingText": [
+        "bound function exotic object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Bound Function Exotic Objects",
+        "number": "9.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "array-exotic-object",
+      "href": "https://tc39.es/ecma262/#array-exotic-object",
+      "linkingText": [
+        "Array exotic object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Array Exotic Objects",
+        "number": "9.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "string-exotic-object",
+      "href": "https://tc39.es/ecma262/#string-exotic-object",
+      "linkingText": [
+        "String exotic object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "String Exotic Objects",
+        "number": "9.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "arguments-exotic-object",
+      "href": "https://tc39.es/ecma262/#arguments-exotic-object",
+      "linkingText": [
+        "arguments exotic object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Arguments Exotic Objects",
+        "number": "9.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "integer-indexed-exotic-object",
+      "href": "https://tc39.es/ecma262/#integer-indexed-exotic-object",
+      "linkingText": [
+        "Integer-Indexed exotic object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Integer-Indexed Exotic Objects",
+        "number": "9.4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "module-namespace-exotic-object",
+      "href": "https://tc39.es/ecma262/#module-namespace-exotic-object",
+      "linkingText": [
+        "module namespace exotic object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Module Namespace Exotic Objects",
+        "number": "9.4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "immutable-prototype-exotic-object",
+      "href": "https://tc39.es/ecma262/#immutable-prototype-exotic-object",
+      "linkingText": [
+        "immutable prototype exotic object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Immutable Prototype Exotic Objects",
+        "number": "9.4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "proxy-exotic-object",
+      "href": "https://tc39.es/ecma262/#proxy-exotic-object",
+      "linkingText": [
+        "Proxy exotic object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Proxy Object Internal Methods and Internal Slots",
+        "number": "9.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "directive-prologue",
+      "href": "https://tc39.es/ecma262/#directive-prologue",
+      "linkingText": [
+        "Directive Prologue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Directive Prologues and the Use Strict Directive",
+        "number": "10.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "use-strict-directive",
+      "href": "https://tc39.es/ecma262/#use-strict-directive",
+      "linkingText": [
+        "Use Strict Directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Directive Prologues and the Use Strict Directive",
+        "number": "10.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "non-strict-code",
+      "href": "https://tc39.es/ecma262/#non-strict-code",
+      "linkingText": [
+        "non-strict code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Strict Mode Code",
+        "number": "10.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "script-record",
+      "href": "https://tc39.es/ecma262/#script-record",
+      "linkingText": [
+        "Script Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Script Records",
+        "number": "15.1.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "resolvedbinding-record",
+      "href": "https://tc39.es/ecma262/#resolvedbinding-record",
+      "linkingText": [
+        "ResolvedBinding Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Abstract Module Records",
+        "number": "15.2.1.15"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "cyclic-module-record",
+      "href": "https://tc39.es/ecma262/#cyclic-module-record",
+      "linkingText": [
+        "Cyclic Module Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Cyclic Module Records",
+        "number": "15.2.1.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sourctextmodule-record",
+      "href": "https://tc39.es/ecma262/#sourctextmodule-record",
+      "linkingText": [
+        "Source Text Module Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Source Text Module Records",
+        "number": "15.2.1.17"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "importentry-record",
+      "href": "https://tc39.es/ecma262/#importentry-record",
+      "linkingText": [
+        "ImportEntry Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Source Text Module Records",
+        "number": "15.2.1.17"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exportentry-record",
+      "href": "https://tc39.es/ecma262/#exportentry-record",
+      "linkingText": [
+        "ExportEntry Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Source Text Module Records",
+        "number": "15.2.1.17"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "early-error",
+      "href": "https://tc39.es/ecma262/#early-error",
+      "linkingText": [
+        "early error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "16 Error Handling and Language Extensions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "thisbooleanvalue",
+      "href": "https://tc39.es/ecma262/#thisbooleanvalue",
+      "linkingText": [
+        "thisBooleanValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Properties of the Boolean Prototype Object",
+        "number": "19.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "thissymbolvalue",
+      "href": "https://tc39.es/ecma262/#thissymbolvalue",
+      "linkingText": [
+        "thisSymbolValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Properties of the Symbol Prototype Object",
+        "number": "19.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "thisnumbervalue",
+      "href": "https://tc39.es/ecma262/#thisnumbervalue",
+      "linkingText": [
+        "thisNumberValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Properties of the Number Prototype Object",
+        "number": "20.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "thisbigintvalue",
+      "href": "https://tc39.es/ecma262/#thisbigintvalue",
+      "linkingText": [
+        "thisBigIntValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Properties of the BigInt Prototype Object",
+        "number": "20.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "thistimevalue",
+      "href": "https://tc39.es/ecma262/#thistimevalue",
+      "linkingText": [
+        "thisTimeValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Properties of the Date Prototype Object",
+        "number": "20.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "this-Date-object",
+      "href": "https://tc39.es/ecma262/#this-Date-object",
+      "linkingText": [
+        "this Date object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Properties of the Date Prototype Object",
+        "number": "20.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "this-time-value",
+      "href": "https://tc39.es/ecma262/#this-time-value",
+      "linkingText": [
+        "this time value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Properties of the Date Prototype Object",
+        "number": "20.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "thisstringvalue",
+      "href": "https://tc39.es/ecma262/#thisstringvalue",
+      "linkingText": [
+        "thisStringValue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "",
+        "title": "Properties of the String Prototype Object",
+        "number": "21.1.3"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

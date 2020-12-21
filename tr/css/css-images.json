@@ -1,71 +1,88 @@
 {
   "spec": {
-    "title": "CSS Image Values and Replaced Content Module Level 4",
-    "url": "https://www.w3.org/TR/css-images-4/"
+    "title": "CSS Images Module Level 3",
+    "url": "https://www.w3.org/TR/css-images-3/"
   },
   "properties": {
-    "image-resolution": {
-      "name": "image-resolution",
-      "value": "[ from-image || <resolution> ] && snap?",
-      "initial": "1dppx",
+    "object-fit": {
+      "name": "object-fit",
+      "value": "fill | contain | cover | none | scale-down",
+      "initial": "fill",
+      "appliesTo": "replaced elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
+    },
+    "object-position": {
+      "name": "object-position",
+      "value": "<position>",
+      "initial": "50% 50%",
+      "appliesTo": "replaced elements",
+      "inherited": "no",
+      "percentages": "refer to width and height of element itself",
+      "computedValue": "as for background-position",
+      "canonicalOrder": "the horizontal component of the <position>, followed by the vertical component",
+      "animationType": "as for background-position"
+    },
+    "image-orientation": {
+      "name": "image-orientation",
+      "value": "from-image | none | [ <angle> || flip ]",
+      "initial": "from-image",
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
-      "media": "visual",
-      "computedValue": "as specified, except with <resolution> possibly altered by computed for snap (see below)",
+      "computedValue": "the specified keyword, or an <angle>, rounded and normalized (see text), plus optionally a flip keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no"
+      "animationType": "discrete"
+    },
+    "image-rendering": {
+      "name": "image-rendering",
+      "value": "auto | smooth | high-quality | crisp-edges | pixelated",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete"
     }
   },
   "descriptors": {},
   "valuespaces": {
     "<image>": {
-      "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <gradient>"
-    },
-    "<image()>": {
-      "value": "image( <image-tags>? [ <image-src>? , <color>? ]! )"
-    },
-    "<image-tags>": {
-      "value": "[ ltr | rtl ]"
-    },
-    "<image-src>": {
-      "value": "[ <url> | <string> ]"
-    },
-    "<element()>": {
-      "value": "element( <id-selector> )"
+      "value": "<url> | <gradient>"
     },
     "<gradient>": {
-      "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]"
+      "value": "<linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>"
     },
-    "<conic-gradient()>": {
-      "value": "conic-gradient( [ from <angle> ]? [ at <position> ]?, <angular-color-stop-list> )"
+    "<linear-gradient()>": {
+      "value": "linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> )"
+    },
+    "<side-or-corner>": {
+      "value": "[left | right] || [top | bottom]"
     },
     "<color-stop-list>": {
-      "value": "[ <linear-color-stop> [, <linear-color-hint>]? ]# , <linear-color-stop>"
+      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#"
     },
     "<linear-color-stop>": {
-      "value": "<color> && <color-stop-length>"
+      "value": "<color> && <length-percentage>?"
     },
     "<linear-color-hint>": {
       "value": "<length-percentage>"
     },
-    "<color-stop-length>": {
-      "value": "<length-percentage>{1,2}"
+    "<radial-gradient()>": {
+      "value": "radial-gradient( [ [ circle || <length> ] [ at <position> ]? , | [ ellipse || <length-percentage>{2} ] [ at <position> ]? , | [ [ circle | ellipse ] || <extent-keyword> ] [ at <position> ]? , | at <position> , ]? <color-stop> [ , <color-stop> ]+ )"
     },
-    "<angular-color-stop-list>": {
-      "value": "[ <angular-color-stop> [, <angular-color-hint>]? ]# , <angular-color-stop>"
+    "<extent-keyword>": {
+      "value": "closest-corner | closest-side | farthest-corner | farthest-side"
     },
-    "<angular-color-stop>": {
-      "value": "<color> && <color-stop-angle>?"
+    "<ending-shape>": {
+      "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <ending-shape> is omitted, the ending shape defaults to a circle if the <size> is a single <length>, and to an ellipse otherwise."
     },
-    "<angular-color-hint>": {
-      "value": "<angle-percentage>"
-    },
-    "<color-stop-angle>": {
-      "value": "<angle-percentage>{1,2}"
-    },
-    "<color-stop>": {
-      "value": "<color-stop-length> | <color-stop-angle>"
+    "<length>": {
+      "prose": "Gives the radius of the circle explicitly. Negative values are invalid. Note: Percentages are not allowed here; they can only be used to specify the size of an elliptical gradient, not a circular one. This restriction exists because there is are multiple reasonable answers as to which dimension the percentage should be relative to. A future level of this module may provide the ability to size circles with percentages, perhaps with more explicit controls over which dimension is used."
     }
   }
 }

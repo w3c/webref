@@ -1,0 +1,71 @@
+{
+  "spec": {
+    "title": "CSS Image Values and Replaced Content Module Level 4",
+    "url": "https://www.w3.org/TR/css-images-4/"
+  },
+  "properties": {
+    "image-resolution": {
+      "name": "image-resolution",
+      "value": "[ from-image || <resolution> ] && snap?",
+      "initial": "1dppx",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "media": "visual",
+      "computedValue": "as specified, except with <resolution> possibly altered by computed for snap (see below)",
+      "canonicalOrder": "per grammar",
+      "animatable": "no"
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<image>": {
+      "value": "<url> | <image()> | <image-set()> | <cross-fade()> | <gradient>"
+    },
+    "<image()>": {
+      "value": "image( <image-tags>? [ <image-src>? , <color>? ]! )"
+    },
+    "<image-tags>": {
+      "value": "[ ltr | rtl ]"
+    },
+    "<image-src>": {
+      "value": "[ <url> | <string> ]"
+    },
+    "<element()>": {
+      "value": "element( <id-selector> )"
+    },
+    "<gradient>": {
+      "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]"
+    },
+    "<conic-gradient()>": {
+      "value": "conic-gradient( [ from <angle> ]? [ at <position> ]?, <angular-color-stop-list> )"
+    },
+    "<color-stop-list>": {
+      "value": "[ <linear-color-stop> [, <linear-color-hint>]? ]# , <linear-color-stop>"
+    },
+    "<linear-color-stop>": {
+      "value": "<color> && <color-stop-length>"
+    },
+    "<linear-color-hint>": {
+      "value": "<length-percentage>"
+    },
+    "<color-stop-length>": {
+      "value": "<length-percentage>{1,2}"
+    },
+    "<angular-color-stop-list>": {
+      "value": "[ <angular-color-stop> [, <angular-color-hint>]? ]# , <angular-color-stop>"
+    },
+    "<angular-color-stop>": {
+      "value": "<color> && <color-stop-angle>?"
+    },
+    "<angular-color-hint>": {
+      "value": "<angle-percentage>"
+    },
+    "<color-stop-angle>": {
+      "value": "<angle-percentage>{1,2}"
+    },
+    "<color-stop>": {
+      "value": "<color-stop-length> | <color-stop-angle>"
+    }
+  }
+}
