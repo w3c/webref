@@ -9,14 +9,12 @@ jobs:
     steps:
     - name: Checkout webref
       uses: actions/checkout@master
-      with:
-        path: webref
     - name: Setup node.js
       uses: actions/setup-node@master
       with:
         node-version: 10.x
     - name: Run clean up
-      run: node tools/clean-abandonned-files.js
+      run: node tools/clean-abandoned-files.js
     - uses: peter-evans/create-pull-request@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
