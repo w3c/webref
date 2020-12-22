@@ -4078,7 +4078,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-scroll-anchoring-1/](https://www.w3.org/TR/css-scroll-anchoring-1/)
 - Crawled URL: [https://drafts.csswg.org/css-scroll-anchoring](https://drafts.csswg.org/css-scroll-anchoring)
-- Crawled version: 11 November 2020
+- Crawled version: 22 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-scroll-anchoring](https://drafts.csswg.org/css-scroll-anchoring)
 - Latest published version: [https://www.w3.org/TR/css-scroll-anchoring-1/](https://www.w3.org/TR/css-scroll-anchoring-1/)
 - Shortname: css-scroll-anchoring-1
@@ -5460,7 +5460,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 3 December 2020
+- Crawled version: 21 December 2020
 - Editor's Draft: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Shortname: dom
 
