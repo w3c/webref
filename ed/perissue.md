@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% December 22, 2020
+% December 23, 2020
 
 380 specifications were crawled in this report.
 
@@ -630,7 +630,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
-- [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/) links to:
+- [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/) links to:
     * [`https://www.w3.org/TR/css3-text/`](https://www.w3.org/TR/css3-text/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
@@ -1100,7 +1100,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Ruby Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/) links to:
+- [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/) links to:
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
