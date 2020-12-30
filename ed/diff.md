@@ -1,4 +1,4 @@
-% Diff between report from "December 30, 2020" and reference report from "December 29, 2020"
+% Diff between report from "December 30, 2020" and reference report from "December 30, 2020"
 % Reffy
 % December 30, 2020
 
