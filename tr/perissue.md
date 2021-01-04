@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% December 28, 2020
+% January 04, 2021
 
 380 specifications were crawled in this report.
 
@@ -212,7 +212,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `CrashReportBody` defined in [Crash Reporting](https://wicg.github.io/crash-reporting/) and [Reporting API](https://www.w3.org/TR/reporting-1/)
 - `DOMParser` defined in [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/) and [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - `DeprecationReportBody` defined in [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/) and [Reporting API](https://www.w3.org/TR/reporting-1/)
-- `GLuint64EXT` defined in [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/) and [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
 - `GamepadMappingType` defined in [Gamepad](https://www.w3.org/TR/gamepad/) and [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/)
 - `InterventionReportBody` defined in [Intervention Reporting](https://wicg.github.io/intervention-reporting/) and [Reporting API](https://www.w3.org/TR/reporting-1/)
 - `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
@@ -220,7 +219,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - `PermissionState` defined in [DeviceOrientation Event Specification](https://www.w3.org/TR/orientation-event/) and [Permissions](https://www.w3.org/TR/permissions/)
 - `XRSessionMode` defined in [WebXR Augmented Reality Module - Level 1](https://www.w3.org/TR/webxr-ar-module-1/) and [WebXR Device API](https://www.w3.org/TR/webxr/)
 
-=> 10 WebIDL names found
+=> 9 WebIDL names found
 
 "There can be only one"...
 
@@ -721,13 +720,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-page/`](https://www.w3.org/TR/css3-page/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/) but does not list it in its references
-- [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/) links to:
-    * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-text-decor/`](https://www.w3.org/TR/css-text-decor/) but does not list it in its references
+- [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/) links to [`https://www.w3.org/TR/css-text-decor/`](https://www.w3.org/TR/css-text-decor/) but does not list it in its references
 - [CSS Regions Module Level 1](https://www.w3.org/TR/css-regions-1/) links to:
     * [`https://www.w3.org/TR/mediaqueries-4/`](https://www.w3.org/TR/mediaqueries-4/) but does not list it in its references
     * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
@@ -1161,7 +1154,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 714 missing references for links found in 176 specifications
+=> 709 missing references for links found in 176 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
