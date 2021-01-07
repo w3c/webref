@@ -256,7 +256,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Crawled URL: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
-- Crawled version: 27 November 2020
+- Crawled version: 07 January 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
 - Latest published version: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Shortname: audio-output
@@ -12950,7 +12950,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 5 January 2021
+- Crawled version: 7 January 2021
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -13051,7 +13051,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 2 December 2020
+- Crawled version: 7 January 2021
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Shortname: webxr
