@@ -259,30 +259,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "XRSessionSupportedPermissionDescriptor": {
-        "type": "dictionary",
-        "name": "XRSessionSupportedPermissionDescriptor",
-        "inheritance": "PermissionDescriptor",
-        "members": [
-          {
-            "type": "field",
-            "name": "mode",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "XRSessionMode"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "XRVisibilityState": {
         "type": "enum",
         "name": "XRVisibilityState",
@@ -2993,6 +2969,30 @@
         "extAttrs": [],
         "partial": false
       },
+      "XRSessionSupportedPermissionDescriptor": {
+        "type": "dictionary",
+        "name": "XRSessionSupportedPermissionDescriptor",
+        "inheritance": "PermissionDescriptor",
+        "members": [
+          {
+            "type": "field",
+            "name": "mode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRSessionMode"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "XRPermissionDescriptor": {
         "type": "dictionary",
         "name": "XRPermissionDescriptor",
@@ -3259,10 +3259,6 @@
         "EventHandler"
       ],
       "XRSessionInit": [],
-      "XRSessionSupportedPermissionDescriptor": [
-        "PermissionDescriptor",
-        "XRSessionMode"
-      ],
       "XRSession": [
         "EventTarget",
         "XRVisibilityState",
@@ -3383,6 +3379,10 @@
         "XRReferenceSpace",
         "XRRigidTransform"
       ],
+      "XRSessionSupportedPermissionDescriptor": [
+        "PermissionDescriptor",
+        "XRSessionMode"
+      ],
       "XRPermissionDescriptor": [
         "PermissionDescriptor",
         "XRSessionMode"
@@ -3395,7 +3395,6 @@
       "Navigator",
       "EventTarget",
       "EventHandler",
-      "PermissionDescriptor",
       "DOMHighResTimeStamp",
       "DOMPointReadOnly",
       "DOMPointInit",
@@ -3406,6 +3405,7 @@
       "WebGLRenderingContextBase",
       "Event",
       "EventInit",
+      "PermissionDescriptor",
       "PermissionStatus"
     ],
     "hasObsoleteIdl": false

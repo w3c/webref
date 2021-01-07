@@ -27,10 +27,6 @@ dictionary XRSessionInit {
   sequence<any> optionalFeatures;
 };
 
-dictionary XRSessionSupportedPermissionDescriptor: PermissionDescriptor {
-  XRSessionMode mode;
-};
-
 enum XRVisibilityState {
   "visible",
   "visible-blurred",
@@ -270,6 +266,10 @@ interface XRReferenceSpaceEvent : Event {
 dictionary XRReferenceSpaceEventInit : EventInit {
   required XRReferenceSpace referenceSpace;
   XRRigidTransform? transform = null;
+};
+
+dictionary XRSessionSupportedPermissionDescriptor: PermissionDescriptor {
+  XRSessionMode mode;
 };
 
 dictionary XRPermissionDescriptor: PermissionDescriptor {
