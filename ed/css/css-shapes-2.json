@@ -32,6 +32,45 @@
     "<path()>": {
       "value": "path( [<fill-rule>,]? <string> )"
     },
+    "<shape()>": {
+      "value": "shape( [<fill-rule>]? from <coordinate-pair>, <draw-command>#)"
+    },
+    "<coordinate-pair>": {
+      "prose": "Defines a pair of coordinates x & y."
+    },
+    "<draw-command>": {
+      "prose": "Defines a single draw command, equivalent to an SVG draw command."
+    },
+    "<by-to>": {
+      "prose": "Represents the reference from which offsets are computed in <draw-command>s. When to is present, the coordinates are relative to the top-left origin of the reference box. Otherwise by is present, the coordinates are relative to the end position of the previous command. Note: <percentage> values are always computed relative to the reference box regardless of how offsets are computed."
+    },
+    "<move-command>": {
+      "prose": "Corresponds to a moveto command."
+    },
+    "<line-command>": {
+      "prose": "Corresponds to a lineto command. If 'x' or 'y' are present instead of a <length-percentage>, the line will be horizontal or vertical, respectively."
+    },
+    "<hv-line-command>": {
+      "prose": "Corresponds to a horizontal or vertical lineto command."
+    },
+    "<curve-command>": {
+      "prose": "Corresponds to a quadratic curve command if one <coordinate-pair> is provided, otherwise corresponds to a cubic curve command."
+    },
+    "<smooth-command>": {
+      "prose": "Corresponds to a smooth cubic curve command if a second <coordinate-pair> is provided, otherwise corresponds to a smooth quadratic curve command."
+    },
+    "<arc-command>": {
+      "prose": "Corresponds to an arc command."
+    },
+    "<arc-radius>": {
+      "prose": "Corresponds to the arc’s radius. If only one <length-percentage> is present, that value will be used for both 'rx' and 'ry'."
+    },
+    "<arc-sweep>": {
+      "prose": "If ccw is set, the arc’s sweep flag is set to 0. If cw is set, the arc’s sweep flag is set to 1. If it is not set, the automatic value is used."
+    },
+    "<arc-large>": {
+      "prose": "If large is set, the arc’s large flag is set to 1. If small is set, the arc’s large flag is set to 0. If it is not set, the automatic value is used."
+    },
     "<basic-shape>": {
       "prose": "The shape is computed based on the values of one of inset(), circle(), ellipse() or polygon()."
     },

@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% January 06, 2021
+% January 07, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -1766,7 +1766,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-cascade-5/](https://drafts.csswg.org/css-cascade-5/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade-5/](https://drafts.csswg.org/css-cascade-5/)
-- Crawled version: 14 December 2020
+- Crawled version: 6 January 2021
 - Editor's Draft: [https://drafts.csswg.org/css-cascade-5/](https://drafts.csswg.org/css-cascade-5/)
 - Shortname: css-cascade-5
 
@@ -4239,7 +4239,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
 - Crawled URL: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
-- Crawled version: 18 September 2020
+- Crawled version: 6 January 2021
 - Editor's Draft: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
 - Shortname: css-shapes-2
 
@@ -5671,7 +5671,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
 - Crawled URL: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
-- Crawled version: 6 January 2021
+- Crawled version: 7 January 2021
 - Editor's Draft: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
 - Shortname: ecma-402
 
