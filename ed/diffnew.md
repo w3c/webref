@@ -1,4 +1,4 @@
-% Diff between report from "January 09, 2021" and reference report from "January 08, 2021"
+% Diff between report from "January 09, 2021" and reference report from "January 09, 2021"
 % Reffy
 % January 09, 2021
 
