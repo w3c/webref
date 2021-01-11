@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-01-04T11:44:45.397Z",
+  "date": "2021-01-11T11:53:21.933Z",
   "options": {
     "publishedVersion": true
   },
@@ -27,6 +27,12 @@
       "title": "Compatibility Standard",
       "source": "specref",
       "shortTitle": "Compatibility",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "compat"
+        ]
+      },
       "versions": [
         "https://compat.spec.whatwg.org/"
       ],
@@ -59,6 +65,12 @@
       "title": "Console Standard",
       "source": "specref",
       "shortTitle": "Console",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "console"
+        ]
+      },
       "versions": [
         "https://console.spec.whatwg.org/"
       ],
@@ -90,6 +102,13 @@
       "title": "DOM Standard",
       "source": "specref",
       "shortTitle": "DOM",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "dom",
+          "shadow-dom"
+        ]
+      },
       "versions": [
         "https://dom.spec.whatwg.org/",
         "https://www.w3.org/TR/dom/",
@@ -128,6 +147,12 @@
       "title": "CSS Typed OM Level 2",
       "source": "spec",
       "shortTitle": "CSS Typed OM 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-typed-om"
+        ]
+      },
       "versions": [
         "https://drafts.css-houdini.org/css-typed-om-2/"
       ],
@@ -190,6 +215,12 @@
       "title": "CSS Animations Level 2",
       "source": "spec",
       "shortTitle": "CSS Animations 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-animations"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/css-animations-2/"
       ],
@@ -224,6 +255,12 @@
       "title": "CSS Backgrounds and Borders Module Level 4",
       "source": "specref",
       "shortTitle": "CSS Backgrounds and Borders 4",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-backgrounds"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/css-backgrounds-4/"
       ],
@@ -256,11 +293,17 @@
       },
       "title": "CSS Cascading and Inheritance Level 5",
       "source": "spec",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-cascade"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/css-cascade-5/"
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-5/",
-      "date": "14 December 2020",
+      "date": "10 January 2021",
       "links": "links/css-cascade-5.json",
       "refs": "refs/css-cascade-5.json",
       "generator": "bikeshed",
@@ -287,6 +330,12 @@
       "title": "CSS Environment Variables Module Level 1",
       "source": "spec",
       "shortTitle": "CSS Environment Variables 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-env"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/css-env-1/"
       ],
@@ -350,6 +399,12 @@
       },
       "title": "CSS Generated Content for Paged Media Module Level 4",
       "source": "spec",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-gcpm"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/css-gcpm-4/"
       ],
@@ -382,6 +437,12 @@
       "title": "CSS Grid Layout Module Level 3",
       "source": "spec",
       "shortTitle": "CSS Grid Layout 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-grid"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/css-grid-3/"
       ],
@@ -414,6 +475,12 @@
       },
       "title": "CSS Multi-column Layout Module Level 2",
       "source": "spec",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-multicol"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/css-multicol-2/"
       ],
@@ -478,6 +545,12 @@
       "title": "Proposals for the future of CSS Paged Media",
       "source": "spec",
       "shortTitle": "Proposals for the future of CSS Paged Media",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-page"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/css-page-4/"
       ],
@@ -509,11 +582,17 @@
       "title": "CSS Shapes Module Level 2",
       "source": "spec",
       "shortTitle": "CSS Shapes 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-shapes"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/css-shapes-2/"
       ],
       "crawled": "https://drafts.csswg.org/css-shapes-2/",
-      "date": "18 September 2020",
+      "date": "8 January 2021",
       "links": "links/css-shapes-2.json",
       "refs": "refs/css-shapes-2.json",
       "generator": "bikeshed",
@@ -540,6 +619,12 @@
       },
       "title": "CSS Mobile Text Size Adjustment Module Level 1",
       "source": "spec",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-size-adjust"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/css-size-adjust-1/"
       ],
@@ -572,6 +657,12 @@
       "title": "CSS Transitions Level 2",
       "source": "spec",
       "shortTitle": "CSS Transitions 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-transitions"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/css-transitions-2/"
       ],
@@ -604,6 +695,12 @@
       "title": "Scroll-linked Animations",
       "source": "spec",
       "shortTitle": "Scroll-linked Animations",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "scroll-animations"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/scroll-animations-1/"
       ],
@@ -638,6 +735,12 @@
       },
       "title": "Compositing and Blending Level 2",
       "source": "spec",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/compositing"
+        ]
+      },
       "versions": [
         "https://drafts.fxtf.org/compositing-2/"
       ],
@@ -670,6 +773,12 @@
       "title": "Filter Effects Module Level 2",
       "source": "spec",
       "shortTitle": "Filter Effects 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/filter-effects"
+        ]
+      },
       "versions": [
         "https://drafts.fxtf.org/filter-effects-2/"
       ],
@@ -700,6 +809,16 @@
       "title": "Fetch Standard",
       "source": "specref",
       "shortTitle": "Fetch",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "cors",
+          "fetch"
+        ],
+        "excludePaths": [
+          "fetch/metadata"
+        ]
+      },
       "versions": [
         "https://fetch.spec.whatwg.org/"
       ],
@@ -731,6 +850,12 @@
       "title": "Fullscreen API Standard",
       "source": "specref",
       "shortTitle": "Fullscreen API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "fullscreen"
+        ]
+      },
       "versions": [
         "https://fullscreen.spec.whatwg.org/"
       ],
@@ -753,6 +878,12 @@
         "shortname": "gpuweb",
         "currentSpecification": "gpuweb"
       },
+      "tests": {
+        "repository": "https://github.com/gpuweb/cts",
+        "testPaths": [
+          "src/webgpu"
+        ]
+      },
       "nightly": {
         "url": "https://gpuweb.github.io/gpuweb/",
         "repository": "https://github.com/gpuweb/gpuweb",
@@ -766,7 +897,7 @@
         "https://gpuweb.github.io/gpuweb/"
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
-      "date": "31 December 2020",
+      "date": "9 January 2021",
       "links": "links/gpuweb.json",
       "refs": "refs/gpuweb.json",
       "idl": "idl/gpuweb.idl",
@@ -854,6 +985,22 @@
       "title": "HTML Standard",
       "source": "specref",
       "shortTitle": "HTML",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "custom-elements",
+          "eventsource",
+          "html",
+          "imagebitmap-renderingcontext",
+          "webmessaging",
+          "websockets",
+          "webstorage",
+          "workers",
+          "worklets",
+          "x-frame-options",
+          "xslt"
+        ]
+      },
       "versions": [
         "https://html.spec.whatwg.org/multipage/",
         "https://w3c.github.io/html/",
@@ -873,7 +1020,7 @@
         "https://www.w3.org/html/wg/drafts/html/master/webappapis.html"
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
-      "date": "4 January 2021",
+      "date": "9 January 2021",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -901,6 +1048,12 @@
       "title": "WebXR Anchors Module",
       "source": "spec",
       "shortTitle": "WebXR Anchors",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webxr/anchors"
+        ]
+      },
       "versions": [
         "https://immersive-web.github.io/anchors/"
       ],
@@ -932,6 +1085,12 @@
       "title": "WebXR DOM Overlays Module",
       "source": "spec",
       "shortTitle": "WebXR DOM Overlays",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webxr/dom-overlay"
+        ]
+      },
       "versions": [
         "https://immersive-web.github.io/dom-overlays/"
       ],
@@ -963,6 +1122,12 @@
       "title": "WebXR Hit Test Module",
       "source": "spec",
       "shortTitle": "WebXR Hit Test",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webxr/hit-test"
+        ]
+      },
       "versions": [
         "https://immersive-web.github.io/hit-test/"
       ],
@@ -1023,6 +1188,12 @@
       "title": "MathML Core",
       "source": "specref",
       "shortTitle": "MathML Core",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "mathml"
+        ]
+      },
       "versions": [
         "https://mathml-refresh.github.io/mathml-core/"
       ],
@@ -1054,6 +1225,12 @@
       "title": "MIME Sniffing Standard",
       "source": "specref",
       "shortTitle": "MIME Sniffing",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "mimesniff"
+        ]
+      },
       "versions": [
         "https://mimesniff.spec.whatwg.org/"
       ],
@@ -1083,6 +1260,12 @@
       "title": "Notifications API Standard",
       "source": "specref",
       "shortTitle": "Notifications API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "notifications"
+        ]
+      },
       "versions": [
         "https://notifications.spec.whatwg.org/"
       ],
@@ -1145,6 +1328,12 @@
       "title": "The Storage Access API",
       "source": "spec",
       "shortTitle": "The Storage Access API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "storage-access-api"
+        ]
+      },
       "versions": [
         "https://privacycg.github.io/storage-access/"
       ],
@@ -1176,6 +1365,12 @@
       "title": "Quirks Mode Standard",
       "source": "specref",
       "shortTitle": "Quirks Mode",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "quirks"
+        ]
+      },
       "versions": [
         "https://quirks.spec.whatwg.org/"
       ],
@@ -1205,6 +1400,15 @@
       "title": "Storage Standard",
       "source": "specref",
       "shortTitle": "Storage",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "storage"
+        ],
+        "excludePaths": [
+          "storage/buckets"
+        ]
+      },
       "versions": [
         "https://storage.spec.whatwg.org/"
       ],
@@ -1236,11 +1440,17 @@
       "title": "Streams Standard",
       "source": "specref",
       "shortTitle": "Streams",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "streams"
+        ]
+      },
       "versions": [
         "https://streams.spec.whatwg.org/"
       ],
       "crawled": "https://streams.spec.whatwg.org/",
-      "date": "8 December 2020",
+      "date": "5 January 2021",
       "links": "links/streams.json",
       "refs": "refs/streams.json",
       "idl": "idl/streams.idl",
@@ -1291,6 +1501,15 @@
         "currentSpecification": "ecmascript"
       },
       "shortTitle": "ECMAScript",
+      "tests": {
+        "repository": "https://github.com/tc39/test262",
+        "testPaths": [
+          "test"
+        ],
+        "excludePaths": [
+          "test/intl402"
+        ]
+      },
       "nightly": {
         "url": "https://tc39.es/ecma262/",
         "repository": "https://github.com/tc39/ecma262",
@@ -1303,7 +1522,7 @@
         "https://tc39.es/ecma262/"
       ],
       "crawled": "https://tc39.es/ecma262/",
-      "date": "28 December 2020",
+      "date": "8 January 2021",
       "links": "links/ecmascript.json",
       "generator": null,
       "dfns": "dfns/ecmascript.json",
@@ -1316,6 +1535,12 @@
       "series": {
         "shortname": "ecma-402",
         "currentSpecification": "ecma-402"
+      },
+      "tests": {
+        "repository": "https://github.com/tc39/test262",
+        "testPaths": [
+          "test/intl402"
+        ]
       },
       "nightly": {
         "url": "https://tc39.es/ecma402/",
@@ -1330,7 +1555,7 @@
         "https://tc39.es/ecma402/"
       ],
       "crawled": "https://tc39.es/ecma402/",
-      "date": "15 December 2020",
+      "date": "7 January 2021",
       "links": "links/ecma-402.json",
       "generator": null,
       "ids": "ids/ecma-402.json"
@@ -1539,7 +1764,7 @@
         "https://tc39.es/proposal-top-level-await/"
       ],
       "crawled": "https://tc39.es/proposal-top-level-await/",
-      "date": "4 December 2020",
+      "date": "7 January 2021",
       "links": "links/tc39-top-level-await.json",
       "generator": null,
       "dfns": "dfns/tc39-top-level-await.json",
@@ -1562,6 +1787,12 @@
       "title": "URL Standard",
       "source": "specref",
       "shortTitle": "URL",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "url"
+        ]
+      },
       "versions": [
         "https://url.spec.whatwg.org/"
       ],
@@ -1593,6 +1824,12 @@
       "title": "Badging API",
       "source": "specref",
       "shortTitle": "Badging API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "badging"
+        ]
+      },
       "versions": [
         "https://w3c.github.io/badging/"
       ],
@@ -1624,6 +1861,12 @@
       "title": "ContentEditable",
       "source": "spec",
       "shortTitle": "ContentEditable",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "contenteditable"
+        ]
+      },
       "versions": [
         "https://w3c.github.io/contentEditable/"
       ],
@@ -1712,6 +1955,12 @@
       "title": "Media Playback Quality",
       "source": "specref",
       "shortTitle": "Media Playback Quality",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "media-playback-quality"
+        ]
+      },
       "versions": [
         "https://w3c.github.io/media-playback-quality/"
       ],
@@ -1774,6 +2023,12 @@
       "title": "Web NFC",
       "source": "specref",
       "shortTitle": "Web NFC API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "web-nfc"
+        ]
+      },
       "versions": [
         "https://w3c.github.io/web-nfc/"
       ],
@@ -1865,6 +2120,12 @@
       "title": "Trusted Types",
       "source": "specref",
       "shortTitle": "Trusted Types",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "trusted-types"
+        ]
+      },
       "versions": [
         "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
       ],
@@ -1956,6 +2217,12 @@
       "title": "WebRTC Insertable Media using Streams",
       "source": "specref",
       "shortTitle": "WebRTC Insertable Media using Streams",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webrtc-insertable-streams"
+        ]
+      },
       "versions": [
         "https://w3c.github.io/webrtc-insertable-streams/"
       ],
@@ -1987,6 +2254,12 @@
       "title": "WebTransport",
       "source": "spec",
       "shortTitle": "WebTransport",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webtransport"
+        ]
+      },
       "versions": [
         "https://w3c.github.io/webtransport/"
       ],
@@ -2018,6 +2291,12 @@
       "title": "Web Bluetooth",
       "source": "specref",
       "shortTitle": "Web Bluetooth",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "bluetooth"
+        ]
+      },
       "versions": [
         "https://webbluetoothcg.github.io/web-bluetooth/"
       ],
@@ -2049,6 +2328,12 @@
       "title": "Background Fetch",
       "source": "specref",
       "shortTitle": "Background Fetch",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "background-fetch"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/background-fetch/"
       ],
@@ -2080,6 +2365,12 @@
       },
       "title": "Web Background Synchronization",
       "source": "spec",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "BackgroundSync"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/background-sync/spec/"
       ],
@@ -2111,6 +2402,12 @@
       "title": "Client Hints Infrastructure",
       "source": "specref",
       "shortTitle": "Client Hints Infrastructure",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "client-hints"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/client-hints-infrastructure/"
       ],
@@ -2140,6 +2437,12 @@
       "title": "Compression Streams",
       "source": "specref",
       "shortTitle": "Compression Streams",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "compression"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/compression/"
       ],
@@ -2171,6 +2474,12 @@
       "title": "Constructable Stylesheet Objects",
       "source": "spec",
       "shortTitle": "Constructable Stylesheet Objects",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/construct-stylesheets"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/construct-stylesheets/"
       ],
@@ -2202,6 +2511,12 @@
       "title": "Contact Picker API",
       "source": "spec",
       "shortTitle": "Contact Picker API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "contacts"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/contact-api/spec/"
       ],
@@ -2233,6 +2548,12 @@
       "title": "Content Index",
       "source": "spec",
       "shortTitle": "Content Index",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "content-index"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/content-index/spec/"
       ],
@@ -2264,6 +2585,12 @@
       "title": "Cookie Store API",
       "source": "specref",
       "shortTitle": "Cookie Store API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "cookie-store"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/cookie-store/"
       ],
@@ -2295,6 +2622,12 @@
       "title": "CORS and RFC1918",
       "source": "specref",
       "shortTitle": "CORS and RFC1918",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "cors-rfc1918"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/cors-rfc1918/"
       ],
@@ -2357,6 +2690,12 @@
       "title": "CSS Parser API",
       "source": "specref",
       "shortTitle": "CSS Parser API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-parser-api"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/css-parser-api/"
       ],
@@ -2388,6 +2727,12 @@
       "title": "Custom State Pseudo Class",
       "source": "spec",
       "shortTitle": "Custom State Pseudo Class",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "custom-state-pseudo-class"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/custom-state-pseudo-class/"
       ],
@@ -2419,6 +2764,12 @@
       "title": "Deprecation Reporting",
       "source": "spec",
       "shortTitle": "Deprecation Reporting",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "deprecation-reporting"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/deprecation-reporting/"
       ],
@@ -2450,6 +2801,12 @@
       "title": "Element Timing API",
       "source": "specref",
       "shortTitle": "Element Timing API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "element-timing"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/element-timing/"
       ],
@@ -2481,6 +2838,12 @@
       "title": "File and Directory Entries API",
       "source": "specref",
       "shortTitle": "File and Directory Entries API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "entries-api"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/entries-api/"
       ],
@@ -2512,6 +2875,12 @@
       "title": "Event Timing API",
       "source": "specref",
       "shortTitle": "Event Timing API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "event-timing"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/event-timing/"
       ],
@@ -2543,6 +2912,12 @@
       "title": "File System Access",
       "source": "specref",
       "shortTitle": "File System Access",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "native-file-system"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/file-system-access/"
       ],
@@ -2605,6 +2980,12 @@
       "title": "Get Installed Related Apps API",
       "source": "spec",
       "shortTitle": "Get Installed Related Apps API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "installedapp"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/get-installed-related-apps/spec/"
       ],
@@ -2636,6 +3017,12 @@
       "title": "Idle Detection API",
       "source": "spec",
       "shortTitle": "Idle Detection API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "idle-detection"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/idle-detection/"
       ],
@@ -2667,11 +3054,17 @@
       "title": "Import Maps",
       "source": "spec",
       "shortTitle": "Import Maps",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "import-maps"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/import-maps/"
       ],
       "crawled": "https://wicg.github.io/import-maps/",
-      "date": "3 December 2020",
+      "date": "8 January 2021",
       "links": "links/import-maps.json",
       "refs": "refs/import-maps.json",
       "generator": "bikeshed",
@@ -2696,6 +3089,12 @@
       "title": "Input Device Capabilities",
       "source": "specref",
       "shortTitle": "Input Device Capabilities",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "input-device-capabilities"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/input-device-capabilities/"
       ],
@@ -2727,6 +3126,12 @@
       "title": "Intervention Reporting",
       "source": "spec",
       "shortTitle": "Intervention Reporting",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "intervention-reporting"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/intervention-reporting/"
       ],
@@ -2758,6 +3163,12 @@
       "title": "Early detection of input events",
       "source": "spec",
       "shortTitle": "isInputPending",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "is-input-pending"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/is-input-pending/"
       ],
@@ -2789,6 +3200,12 @@
       "title": "JS Self-Profiling API",
       "source": "specref",
       "shortTitle": "JS Self-Profiling API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "js-self-profiling"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/js-self-profiling/"
       ],
@@ -2820,6 +3237,12 @@
       "title": "Keyboard Lock",
       "source": "specref",
       "shortTitle": "Keyboard Lock",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "keyboard-lock"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/keyboard-lock/"
       ],
@@ -2851,6 +3274,12 @@
       "title": "Keyboard Map",
       "source": "specref",
       "shortTitle": "Keyboard Map",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "keyboard-map"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/keyboard-map/"
       ],
@@ -2882,6 +3311,12 @@
       "title": "Largest Contentful Paint",
       "source": "specref",
       "shortTitle": "Largest Contentful Paint",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "largest-contentful-paint"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/largest-contentful-paint/"
       ],
@@ -2913,6 +3348,12 @@
       "title": "Layout Instability API",
       "source": "specref",
       "shortTitle": "Layout Instability",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "layout-instability"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/layout-instability/"
       ],
@@ -2975,6 +3416,12 @@
       "title": "Media Feeds",
       "source": "spec",
       "shortTitle": "Media Feeds",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "media-feeds"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/media-feeds/"
       ],
@@ -3004,6 +3451,12 @@
       "title": "Network Information API",
       "source": "specref",
       "shortTitle": "Network Information API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "netinfo"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/netinfo/"
       ],
@@ -3035,6 +3488,12 @@
       "title": "Origin Policy",
       "source": "specref",
       "shortTitle": "Origin Policy",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "origin-policy"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/origin-policy/"
       ],
@@ -3095,6 +3554,13 @@
       "title": "Page Lifecycle",
       "source": "specref",
       "shortTitle": "Page Lifecycle",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "lifecycle",
+          "page-lifecycle"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/page-lifecycle/"
       ],
@@ -3126,6 +3592,12 @@
       "title": "Measure Memory API",
       "source": "spec",
       "shortTitle": "Measure Memory API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "measure-memory"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/performance-measure-memory/"
       ],
@@ -3157,6 +3629,12 @@
       "title": "Web Periodic Background Synchronization",
       "source": "specref",
       "shortTitle": "Web Periodic Background Synchronization",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "periodic-background-sync"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/periodic-background-sync/"
       ],
@@ -3188,6 +3666,12 @@
       "title": "Requesting Permissions",
       "source": "specref",
       "shortTitle": "Requesting Permissions",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "permissions-request"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/permissions-request/"
       ],
@@ -3219,6 +3703,12 @@
       "title": "Relinquishing Permissions",
       "source": "specref",
       "shortTitle": "Relinquishing Permissions",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "permissions-revoke"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/permissions-revoke/"
       ],
@@ -3250,6 +3740,12 @@
       "title": "Portals",
       "source": "spec",
       "shortTitle": "Portals",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "portals"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/portals/"
       ],
@@ -3281,6 +3777,12 @@
       "title": "Priority Hints",
       "source": "specref",
       "shortTitle": "Priority Hints",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "priority-hints"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/priority-hints/"
       ],
@@ -3309,6 +3811,12 @@
       "title": "Save Data API",
       "source": "spec",
       "shortTitle": "Save Data API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "savedata"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/savedata/"
       ],
@@ -3340,6 +3848,12 @@
       "title": "Text Fragments",
       "source": "spec",
       "shortTitle": "Text Fragments",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "scroll-to-text-fragment"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/scroll-to-text-fragment/"
       ],
@@ -3371,11 +3885,17 @@
       "title": "Web Serial API",
       "source": "spec",
       "shortTitle": "Web Serial API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "serial"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/serial/"
       ],
       "crawled": "https://wicg.github.io/serial/",
-      "date": "04 December 2020",
+      "date": "05 January 2021",
       "links": "links/serial.json",
       "refs": "refs/serial.json",
       "idl": "idl/serial.idl",
@@ -3402,6 +3922,12 @@
       "title": "Accelerated Shape Detection in Images",
       "source": "specref",
       "shortTitle": "Accelerated Shape Detection in Images",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "shape-detection"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/shape-detection-api/"
       ],
@@ -3493,6 +4019,12 @@
       "title": "Web Speech API",
       "source": "specref",
       "shortTitle": "Web Speech API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "speech-api"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/speech-api/"
       ],
@@ -3524,11 +4056,17 @@
       "title": "User-Agent Client Hints",
       "source": "spec",
       "shortTitle": "User-Agent Client Hints",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "ua-client-hints"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/ua-client-hints/"
       ],
       "crawled": "https://wicg.github.io/ua-client-hints/",
-      "date": "21 December 2020",
+      "date": "8 January 2021",
       "links": "links/ua-client-hints.json",
       "refs": "refs/ua-client-hints.json",
       "idl": "idl/ua-client-hints.idl",
@@ -3555,11 +4093,17 @@
       "title": "HTMLVideoElement.requestVideoFrameCallback()",
       "source": "spec",
       "shortTitle": "HTMLVideoElement.requestVideoFrameCallback()",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "video-rvfc"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/video-rvfc/"
       ],
       "crawled": "https://wicg.github.io/video-rvfc/",
-      "date": "18 August 2020",
+      "date": "5 January 2021",
       "links": "links/video-rvfc.json",
       "refs": "refs/video-rvfc.json",
       "idl": "idl/video-rvfc.idl",
@@ -3586,6 +4130,12 @@
       "title": "Visual Viewport API",
       "source": "specref",
       "shortTitle": "Visual Viewport API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "visual-viewport"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/visual-viewport/"
       ],
@@ -3617,6 +4167,12 @@
       "title": "WebCodecs",
       "source": "spec",
       "shortTitle": "WebCodecs",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webcodecs"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/web-codecs/"
       ],
@@ -3648,6 +4204,12 @@
       "title": "Web Locks API",
       "source": "specref",
       "shortTitle": "Web Locks API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "web-locks"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/web-locks/"
       ],
@@ -3679,6 +4241,12 @@
       "title": "Web OTP API",
       "source": "spec",
       "shortTitle": "Web OTP API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "web-otp"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/web-otp/"
       ],
@@ -3710,11 +4278,17 @@
       "title": "WebHID API",
       "source": "spec",
       "shortTitle": "WebHID API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webhid"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/webhid/"
       ],
       "crawled": "https://wicg.github.io/webhid/",
-      "date": "23 October 2020",
+      "date": "08 January 2021",
       "links": "links/webhid.json",
       "refs": "refs/webhid.json",
       "idl": "idl/webhid.idl",
@@ -3770,11 +4344,17 @@
       "title": "WebUSB API",
       "source": "specref",
       "shortTitle": "WebUSB API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webusb"
+        ]
+      },
       "versions": [
         "https://wicg.github.io/webusb/"
       ],
       "crawled": "https://wicg.github.io/webusb/",
-      "date": "3 January 2021",
+      "date": "9 January 2021",
       "links": "links/webusb.json",
       "refs": "refs/webusb.json",
       "idl": "idl/webusb.idl",
@@ -3801,11 +4381,17 @@
       "title": "WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL ANGLE_instanced_arrays Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/ANGLE_instanced_arrays.json",
       "idl": "idl/ANGLE_instanced_arrays.idl",
       "generator": null,
@@ -3828,11 +4414,17 @@
       "title": "WebGL EXT_blend_minmax Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_blend_minmax Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_blend_minmax.json",
       "idl": "idl/EXT_blend_minmax.idl",
       "generator": null,
@@ -3855,11 +4447,17 @@
       "title": "WebGL EXT_clip_cull_distance Extension Draft Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_clip_cull_distance Extension Draft",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_clip_cull_distance.json",
       "idl": "idl/EXT_clip_cull_distance.idl",
       "generator": null,
@@ -3882,11 +4480,17 @@
       "title": "WebGL EXT_color_buffer_float Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_color_buffer_float Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_color_buffer_float.json",
       "idl": "idl/EXT_color_buffer_float.idl",
       "generator": null,
@@ -3909,11 +4513,17 @@
       "title": "WebGL EXT_color_buffer_half_float Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_color_buffer_half_float Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_color_buffer_half_float.json",
       "idl": "idl/EXT_color_buffer_half_float.idl",
       "generator": null,
@@ -3936,11 +4546,17 @@
       "title": "WebGL EXT_disjoint_timer_query_webgl2 Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_disjoint_timer_query_webgl2 Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_disjoint_timer_query_webgl2.json",
       "idl": "idl/EXT_disjoint_timer_query_webgl2.idl",
       "generator": null,
@@ -3963,11 +4579,17 @@
       "title": "WebGL EXT_disjoint_timer_query Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_disjoint_timer_query Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_disjoint_timer_query.json",
       "idl": "idl/EXT_disjoint_timer_query.idl",
       "generator": null,
@@ -3990,11 +4612,17 @@
       "title": "WebGL EXT_float_blend Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_float_blend Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_float_blend.json",
       "idl": "idl/EXT_float_blend.idl",
       "generator": null,
@@ -4017,11 +4645,17 @@
       "title": "WebGL EXT_frag_depth Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_frag_depth Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_frag_depth.json",
       "idl": "idl/EXT_frag_depth.idl",
       "generator": null,
@@ -4044,11 +4678,17 @@
       "title": "WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_shader_texture_lod Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_shader_texture_lod.json",
       "idl": "idl/EXT_shader_texture_lod.idl",
       "generator": null,
@@ -4071,11 +4711,17 @@
       "title": "WebGL EXT_sRGB Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_sRGB Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_sRGB.json",
       "idl": "idl/EXT_sRGB.idl",
       "generator": null,
@@ -4098,11 +4744,17 @@
       "title": "WebGL EXT_texture_compression_bptc Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_texture_compression_bptc Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_texture_compression_bptc.json",
       "idl": "idl/EXT_texture_compression_bptc.idl",
       "generator": null,
@@ -4125,11 +4777,17 @@
       "title": "WebGL EXT_texture_compression_rgtc Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_texture_compression_rgtc Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_texture_compression_rgtc.json",
       "idl": "idl/EXT_texture_compression_rgtc.idl",
       "generator": null,
@@ -4152,11 +4810,17 @@
       "title": "WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_texture_filter_anisotropic.json",
       "idl": "idl/EXT_texture_filter_anisotropic.idl",
       "generator": null,
@@ -4179,11 +4843,17 @@
       "title": "WebGL EXT_texture_norm16 Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL EXT_texture_norm16 Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/EXT_texture_norm16.json",
       "idl": "idl/EXT_texture_norm16.idl",
       "generator": null,
@@ -4206,11 +4876,17 @@
       "title": "WebGL KHR_parallel_shader_compile Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL KHR_parallel_shader_compile Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/KHR_parallel_shader_compile.json",
       "idl": "idl/KHR_parallel_shader_compile.idl",
       "generator": null,
@@ -4233,11 +4909,17 @@
       "title": "WebGL OES_draw_buffers_indexed Extension Draft Specification",
       "source": "spec",
       "shortTitle": "WebGL OES_draw_buffers_indexed Extension Draft",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/OES_draw_buffers_indexed.json",
       "idl": "idl/OES_draw_buffers_indexed.idl",
       "generator": null,
@@ -4260,11 +4942,17 @@
       "title": "WebGL OES_element_index_uint Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL OES_element_index_uint Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/OES_element_index_uint.json",
       "idl": "idl/OES_element_index_uint.idl",
       "generator": null,
@@ -4287,11 +4975,17 @@
       "title": "WebGL OES_fbo_render_mipmap Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL OES_fbo_render_mipmap Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/OES_fbo_render_mipmap.json",
       "idl": "idl/OES_fbo_render_mipmap.idl",
       "generator": null,
@@ -4314,11 +5008,17 @@
       "title": "WebGL OES_standard_derivatives Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL OES_standard_derivatives Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/OES_standard_derivatives.json",
       "idl": "idl/OES_standard_derivatives.idl",
       "generator": null,
@@ -4341,11 +5041,17 @@
       "title": "WebGL OES_texture_float_linear Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL OES_texture_float_linear Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/OES_texture_float_linear.json",
       "idl": "idl/OES_texture_float_linear.idl",
       "generator": null,
@@ -4368,11 +5074,17 @@
       "title": "WebGL OES_texture_float Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL OES_texture_float Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/OES_texture_float.json",
       "idl": "idl/OES_texture_float.idl",
       "generator": null,
@@ -4395,11 +5107,17 @@
       "title": "WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL OES_texture_half_float_linear Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/OES_texture_half_float_linear.json",
       "idl": "idl/OES_texture_half_float_linear.idl",
       "generator": null,
@@ -4422,11 +5140,17 @@
       "title": "WebGL OES_texture_half_float Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL OES_texture_half_float Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/OES_texture_half_float.json",
       "idl": "idl/OES_texture_half_float.idl",
       "generator": null,
@@ -4449,11 +5173,17 @@
       "title": "WebGL OES_vertex_array_object Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL OES_vertex_array_object Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/OES_vertex_array_object.json",
       "idl": "idl/OES_vertex_array_object.idl",
       "generator": null,
@@ -4476,11 +5206,17 @@
       "title": "WebGL OVR_multiview2 Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL OVR_multiview2 Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/OVR_multiview2.json",
       "idl": "idl/OVR_multiview2.idl",
       "generator": null,
@@ -4503,11 +5239,17 @@
       "title": "WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_blend_equation_advanced_coherent Extension Draft",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_blend_equation_advanced_coherent.json",
       "idl": "idl/WEBGL_blend_equation_advanced_coherent.idl",
       "generator": null,
@@ -4530,11 +5272,17 @@
       "title": "WebGL WEBGL_color_buffer_float Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_color_buffer_float Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_color_buffer_float.json",
       "idl": "idl/WEBGL_color_buffer_float.idl",
       "generator": null,
@@ -4557,11 +5305,17 @@
       "title": "WebGL WEBGL_compressed_texture_astc Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_compressed_texture_astc Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_compressed_texture_astc.json",
       "idl": "idl/WEBGL_compressed_texture_astc.idl",
       "generator": null,
@@ -4584,11 +5338,17 @@
       "title": "WebGL WEBGL_compressed_texture_etc Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_compressed_texture_etc Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_compressed_texture_etc.json",
       "idl": "idl/WEBGL_compressed_texture_etc.idl",
       "generator": null,
@@ -4611,11 +5371,17 @@
       "title": "WebGL WEBGL_compressed_texture_etc1 Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_compressed_texture_etc1 Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_compressed_texture_etc1.json",
       "idl": "idl/WEBGL_compressed_texture_etc1.idl",
       "generator": null,
@@ -4638,11 +5404,17 @@
       "title": "WebGL WEBGL_compressed_texture_pvrtc Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_compressed_texture_pvrtc Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_compressed_texture_pvrtc.json",
       "idl": "idl/WEBGL_compressed_texture_pvrtc.idl",
       "generator": null,
@@ -4665,11 +5437,17 @@
       "title": "WebGL WEBGL_compressed_texture_s3tc_srgb Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_compressed_texture_s3tc_srgb Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_compressed_texture_s3tc_srgb.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc_srgb.idl",
       "generator": null,
@@ -4692,11 +5470,17 @@
       "title": "WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_compressed_texture_s3tc.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc.idl",
       "generator": null,
@@ -4719,11 +5503,17 @@
       "title": "WebGL WEBGL_debug_renderer_info Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_debug_renderer_info Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_debug_renderer_info.json",
       "idl": "idl/WEBGL_debug_renderer_info.idl",
       "generator": null,
@@ -4746,11 +5536,17 @@
       "title": "WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_debug_shaders Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_debug_shaders.json",
       "idl": "idl/WEBGL_debug_shaders.idl",
       "generator": null,
@@ -4773,11 +5569,17 @@
       "title": "WebGL WEBGL_depth_texture Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_depth_texture Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl",
       "generator": null,
@@ -4800,11 +5602,17 @@
       "title": "WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_draw_buffers Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_draw_buffers.json",
       "idl": "idl/WEBGL_draw_buffers.idl",
       "generator": null,
@@ -4827,11 +5635,17 @@
       "title": "WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_draw_instanced_base_vertex_base_instance.idl",
       "generator": null,
@@ -4854,11 +5668,17 @@
       "title": "WebGL WEBGL_lose_context Khronos Ratified Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_lose_context Khronos Ratified Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_lose_context.json",
       "idl": "idl/WEBGL_lose_context.idl",
       "generator": null,
@@ -4881,11 +5701,17 @@
       "title": "WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_multi_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_multi_draw_instanced_base_vertex_base_instance.idl",
       "generator": null,
@@ -4908,11 +5734,17 @@
       "title": "WebGL WEBGL_multi_draw Extension Specification",
       "source": "spec",
       "shortTitle": "WebGL WEBGL_multi_draw Extension",
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites"
+        ]
+      },
       "versions": [
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
-      "date": "31 December 2020",
+      "date": "6 January 2021",
       "links": "links/WEBGL_multi_draw.json",
       "idl": "idl/WEBGL_multi_draw.idl",
       "generator": null,
@@ -4932,6 +5764,12 @@
         "sourcePath": "specs/latest/1.0/index.html",
         "repository": "https://github.com/KhronosGroup/WebGL",
         "filename": "index.html"
+      },
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites/1.0.3"
+        ]
       },
       "title": "WebGL Specification",
       "source": "spec",
@@ -4966,6 +5804,12 @@
         "sourcePath": "specs/latest/2.0/index.html",
         "repository": "https://github.com/KhronosGroup/WebGL",
         "filename": "index.html"
+      },
+      "tests": {
+        "repository": "https://github.com/KhronosGroup/WebGL",
+        "testPaths": [
+          "conformance-suites/2.0.0"
+        ]
       },
       "title": "WebGL 2.0 Specification",
       "source": "spec",
@@ -5005,6 +5849,12 @@
       "title": "Accelerometer",
       "source": "w3c",
       "shortTitle": "Accelerometer",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "accelerometer"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/accelerometer/",
         "https://w3c.github.io/accelerometer/"
@@ -5042,6 +5892,12 @@
       "title": "Accessible Name and Description Computation 1.2",
       "source": "w3c",
       "shortTitle": "Accessible Name and Description Computation 1.2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "accname"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/accname-1.2/",
         "https://w3c.github.io/accname/"
@@ -5076,6 +5932,12 @@
       "title": "Ambient Light Sensor",
       "source": "w3c",
       "shortTitle": "Ambient Light Sensor",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "ambient-light"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/ambient-light/",
         "https://w3c.github.io/ambient-light/"
@@ -5112,6 +5974,12 @@
       "title": "Web App Manifest",
       "source": "w3c",
       "shortTitle": "Web App Manifest",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "appmanifest"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/appmanifest/",
         "https://w3c.github.io/manifest/"
@@ -5148,12 +6016,18 @@
       "title": "Audio Output Devices API",
       "source": "w3c",
       "shortTitle": "Audio Output Devices API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "audio-output"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/audio-output/",
         "https://w3c.github.io/mediacapture-output/"
       ],
       "crawled": "https://www.w3.org/TR/audio-output/",
-      "date": "27 November 2020",
+      "date": "07 January 2021",
       "links": "links/audio-output.json",
       "refs": "refs/audio-output.json",
       "idl": "idl/audio-output.idl",
@@ -5184,6 +6058,12 @@
       "title": "Battery Status API",
       "source": "w3c",
       "shortTitle": "Battery Status API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "battery-status"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/battery-status/",
         "https://w3c.github.io/battery/"
@@ -5220,6 +6100,12 @@
       "title": "Beacon",
       "source": "w3c",
       "shortTitle": "Beacon",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "beacon"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/beacon/",
         "https://w3c.github.io/beacon/"
@@ -5256,6 +6142,12 @@
       "title": "Clear Site Data",
       "source": "w3c",
       "shortTitle": "Clear Site Data",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "clear-site-data"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/clear-site-data/",
         "https://w3c.github.io/webappsec-clear-site-data/"
@@ -5290,6 +6182,12 @@
       "title": "Clipboard API and events",
       "source": "w3c",
       "shortTitle": "Clipboard API and events",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "clipboard-apis"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/clipboard-apis/",
         "https://w3c.github.io/clipboard-apis/"
@@ -5328,6 +6226,12 @@
       },
       "title": "Compositing and Blending Level 1",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/compositing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/compositing-1/",
         "https://drafts.fxtf.org/compositing-1/",
@@ -5364,6 +6268,12 @@
       "title": "Core Accessibility API Mappings 1.2",
       "source": "w3c",
       "shortTitle": "Core Accessibility API Mappings 1.2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "core-aam"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/core-aam-1.2/",
         "https://w3c.github.io/core-aam/"
@@ -5399,6 +6309,12 @@
       "title": "Credential Management Level 1",
       "source": "w3c",
       "shortTitle": "Credential Management 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "credential-management"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/credential-management-1/",
         "https://w3c.github.io/webappsec-credential-management/"
@@ -5435,6 +6351,12 @@
       "title": "Content Security Policy: Embedded Enforcement",
       "source": "w3c",
       "shortTitle": "Content Security Policy: Embedded Enforcement",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "content-security-policy/embedded-enforcement"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/csp-embedded-enforcement/",
         "https://w3c.github.io/webappsec-cspee/"
@@ -5472,6 +6394,15 @@
       "title": "Content Security Policy Level 3",
       "source": "w3c",
       "shortTitle": "Content Security Policy 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "content-security-policy"
+        ],
+        "excludePaths": [
+          "content-security-policy/embedded-enforcement"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/CSP3/",
         "https://w3c.github.io/webappsec-csp/"
@@ -5509,6 +6440,12 @@
       "title": "CSS Box Alignment Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Box Alignment 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-align"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-align-3/",
         "https://drafts.csswg.org/css-align/"
@@ -5545,6 +6482,12 @@
       "title": "CSS Animation Worklet API",
       "source": "w3c",
       "shortTitle": "CSS Animation Worklet API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "animation-worklet"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-animation-worklet-1/",
         "https://drafts.css-houdini.org/css-animationworklet-1/"
@@ -5583,6 +6526,12 @@
       "title": "CSS Animations Level 1",
       "source": "w3c",
       "shortTitle": "CSS Animations 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-animations"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-animations-1/",
         "https://drafts.csswg.org/css-animations/"
@@ -5622,6 +6571,12 @@
       },
       "title": "CSS Backgrounds and Borders Module Level 3",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-backgrounds"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-backgrounds-3/",
         "https://drafts.csswg.org/css-backgrounds/"
@@ -5659,6 +6614,12 @@
       "title": "CSS Box Model Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Box Model 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-box"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-box-3/",
         "https://drafts.csswg.org/css-box-3/"
@@ -5695,6 +6656,12 @@
       "title": "CSS Box Model Module Level 4",
       "source": "w3c",
       "shortTitle": "CSS Box Model 4",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-box"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-box-4/",
         "https://drafts.csswg.org/css-box-4/"
@@ -5732,6 +6699,12 @@
       "title": "CSS Fragmentation Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Fragmentation 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-break"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-break-3/",
         "https://drafts.csswg.org/css-break/"
@@ -5768,6 +6741,12 @@
       "title": "CSS Fragmentation Module Level 4",
       "source": "w3c",
       "shortTitle": "CSS Fragmentation 4",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-break"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-break-4/",
         "https://drafts.csswg.org/css-break-4/"
@@ -5805,6 +6784,12 @@
       },
       "title": "CSS Cascading and Inheritance Level 3",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-cascade"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-cascade-3/",
         "https://drafts.csswg.org/css-cascade-3/"
@@ -5842,6 +6827,12 @@
       },
       "title": "CSS Cascading and Inheritance Level 4",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-cascade"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-cascade-4/",
         "https://drafts.csswg.org/css-cascade/"
@@ -5878,6 +6869,12 @@
       "title": "CSS Color Module Level 4",
       "source": "w3c",
       "shortTitle": "CSS Color 4",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-color"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-color-4/",
         "https://drafts.csswg.org/css-color/"
@@ -5915,6 +6912,12 @@
       "title": "CSS Color Module Level 5",
       "source": "w3c",
       "shortTitle": "CSS Color 5",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-color"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-color-5/",
         "https://drafts.csswg.org/css-color-5/"
@@ -5951,6 +6954,12 @@
       "title": "CSS Color Adjustment Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Color Adjustment 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-color-adjust"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-color-adjust-1/",
         "https://drafts.csswg.org/css-color-adjust-1/"
@@ -5988,6 +6997,12 @@
       },
       "title": "CSS Conditional Rules Module Level 3",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-conditional"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-conditional-3/",
         "https://drafts.csswg.org/css-conditional-3/"
@@ -6027,6 +7042,12 @@
       },
       "title": "CSS Conditional Rules Module Level 4",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-conditional"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-conditional-4/",
         "https://drafts.csswg.org/css-conditional-4/"
@@ -6063,6 +7084,12 @@
       "title": "CSS Containment Module Level 2",
       "source": "w3c",
       "shortTitle": "CSS Containment 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-contain"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-contain-2/",
         "https://drafts.csswg.org/css-contain-2/"
@@ -6099,6 +7126,12 @@
       "title": "CSS Generated Content Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Generated Content 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-content"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-content-3/",
         "https://drafts.csswg.org/css-content-3/"
@@ -6135,6 +7168,12 @@
       "title": "CSS Counter Styles Level 3",
       "source": "w3c",
       "shortTitle": "CSS Counter Styles 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-counter-styles"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-counter-styles-3/",
         "https://drafts.csswg.org/css-counter-styles/"
@@ -6173,6 +7212,12 @@
       "title": "CSS Device Adaptation Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Device Adaptation 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-device-adapt"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-device-adapt-1/",
         "https://drafts.csswg.org/css-device-adapt/"
@@ -6211,6 +7256,12 @@
       "title": "CSS Display Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Display 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-display"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-display-3/",
         "https://drafts.csswg.org/css-display/"
@@ -6247,6 +7298,12 @@
       "title": "CSS Easing Functions Level 1",
       "source": "w3c",
       "shortTitle": "CSS Easing Functions 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-easing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-easing-1/",
         "https://drafts.csswg.org/css-easing/"
@@ -6283,6 +7340,12 @@
       },
       "title": "CSS Flexible Box Layout Module Level 1",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-flexbox"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-flexbox-1/",
         "https://drafts.csswg.org/css-flexbox-1/"
@@ -6319,6 +7382,12 @@
       "title": "CSS Font Loading Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Font Loading 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-font-loading"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-font-loading-3/",
         "https://drafts.csswg.org/css-font-loading/"
@@ -6355,6 +7424,12 @@
       "title": "CSS Fonts Module Level 4",
       "source": "w3c",
       "shortTitle": "CSS Fonts 4",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-fonts"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-fonts-4/",
         "https://drafts.csswg.org/css-fonts-4/",
@@ -6396,6 +7471,12 @@
       },
       "title": "CSS Generated Content for Paged Media Module",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-gcpm"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-gcpm-3/",
         "https://drafts.csswg.org/css-gcpm/"
@@ -6432,6 +7513,12 @@
       "title": "CSS Grid Layout Module Level 2",
       "source": "w3c",
       "shortTitle": "CSS Grid Layout 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-grid"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-grid-2/",
         "https://drafts.csswg.org/css-grid-2/"
@@ -6506,6 +7593,12 @@
       },
       "title": "CSS Images Module Level 3",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-images"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-images-3/",
         "https://drafts.csswg.org/css-images-3/"
@@ -6543,6 +7636,12 @@
       },
       "title": "CSS Image Values and Replaced Content Module Level 4",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-images"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-images-4/",
         "https://drafts.csswg.org/css-images-4/"
@@ -6581,6 +7680,12 @@
       "title": "CSS Inline Layout Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Inline Layout 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-inline"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-inline-3/",
         "https://drafts.csswg.org/css-inline-3/"
@@ -6617,6 +7722,12 @@
       "title": "CSS Layout API Level 1",
       "source": "w3c",
       "shortTitle": "CSS Layout API 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-layout-api"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-layout-api-1/",
         "https://drafts.css-houdini.org/css-layout-api-1/"
@@ -6690,6 +7801,12 @@
       },
       "title": "CSS Lists and Counters Module Level 3",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-lists"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-lists-3/",
         "https://drafts.csswg.org/css-lists-3/"
@@ -6726,6 +7843,12 @@
       },
       "title": "CSS Logical Properties and Values Level 1",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-logical"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-logical-1/",
         "https://drafts.csswg.org/css-logical-1/"
@@ -6762,6 +7885,12 @@
       "title": "CSS Masking Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Masking 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-masking"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-masking-1/",
         "https://drafts.fxtf.org/css-masking-1/"
@@ -6800,6 +7929,12 @@
       },
       "title": "CSS Multi-column Layout Module Level 1",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-multicol"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-multicol-1/",
         "https://drafts.csswg.org/css-multicol/"
@@ -6836,6 +7971,12 @@
       "title": "CSS Namespaces Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Namespaces 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-namespaces"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-namespaces-3/",
         "https://drafts.csswg.org/css-namespaces/"
@@ -6909,6 +8050,12 @@
       "title": "CSS Overflow Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Overflow 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-overflow"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-overflow-3/",
         "https://drafts.csswg.org/css-overflow-3/"
@@ -6946,6 +8093,12 @@
       "title": "CSS Overflow Module Level 4",
       "source": "w3c",
       "shortTitle": "CSS Overflow 4",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-overflow"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-overflow-4/",
         "https://drafts.csswg.org/css-overflow-4/"
@@ -6982,6 +8135,12 @@
       "title": "CSS Overscroll Behavior Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Overscroll Behavior 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-overscroll-behavior"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-overscroll-1/",
         "https://drafts.csswg.org/css-overscroll-1/"
@@ -7019,6 +8178,12 @@
       "title": "CSS Paged Media Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Paged Media 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-page"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-page-3/",
         "https://drafts.csswg.org/css-page-3/"
@@ -7091,6 +8256,12 @@
       "title": "CSS Painting API Level 1",
       "source": "w3c",
       "shortTitle": "CSS Painting API 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-paint-api"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-paint-api-1/",
         "https://drafts.css-houdini.org/css-paint-api-1/"
@@ -7129,6 +8300,12 @@
       "title": "CSS Positioned Layout Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Positioned Layout 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-position"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-position-3/",
         "https://drafts.csswg.org/css-position/"
@@ -7165,6 +8342,12 @@
       "title": "CSS Properties and Values API Level 1",
       "source": "w3c",
       "shortTitle": "CSS Properties and Values API 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-properties-values-api"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-properties-values-api-1/",
         "https://drafts.css-houdini.org/css-properties-values-api-1/"
@@ -7203,6 +8386,12 @@
       "title": "CSS Pseudo-Elements Module Level 4",
       "source": "w3c",
       "shortTitle": "CSS Pseudo-Elements 4",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-pseudo"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-pseudo-4/",
         "https://drafts.csswg.org/css-pseudo-4/"
@@ -7314,6 +8503,12 @@
       "title": "CSS Round Display Level 1",
       "source": "w3c",
       "shortTitle": "CSS Round Display 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-round-display"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-round-display-1/",
         "https://drafts.csswg.org/css-round-display/"
@@ -7350,6 +8545,12 @@
       "title": "CSS Ruby Layout Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Ruby Layout 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-ruby"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-ruby-1/",
         "https://drafts.csswg.org/css-ruby-1/"
@@ -7386,6 +8587,12 @@
       "title": "CSS Scoping Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Scoping 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-scoping"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-scoping-1/",
         "https://drafts.csswg.org/css-scoping/"
@@ -7412,7 +8619,7 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://drafts.csswg.org/css-scroll-anchoring",
+        "url": "https://drafts.csswg.org/css-scroll-anchoring/",
         "repository": "https://github.com/w3c/csswg-drafts",
         "sourcePath": "css-scroll-anchoring-1/Overview.bs",
         "filename": "Overview.html"
@@ -7420,9 +8627,15 @@
       "title": "CSS Scroll Anchoring Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Scroll Anchoring 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-scroll-anchoring"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-scroll-anchoring-1/",
-        "https://drafts.csswg.org/css-scroll-anchoring"
+        "https://drafts.csswg.org/css-scroll-anchoring/"
       ],
       "crawled": "https://www.w3.org/TR/css-scroll-anchoring-1/",
       "date": "11 November 2020",
@@ -7456,6 +8669,12 @@
       "title": "CSS Scroll Snap Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Scroll Snap 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-scroll-snap"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-scroll-snap-1/",
         "https://drafts.csswg.org/css-scroll-snap-1/"
@@ -7492,6 +8711,12 @@
       "title": "CSS Scrollbars Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Scrollbars 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-scrollbars"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-scrollbars-1/",
         "https://drafts.csswg.org/css-scrollbars/"
@@ -7528,6 +8753,12 @@
       "title": "CSS Shadow Parts",
       "source": "w3c",
       "shortTitle": "CSS Shadow Parts",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-shadow-parts"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-shadow-parts-1/",
         "https://drafts.csswg.org/css-shadow-parts/"
@@ -7567,6 +8798,12 @@
       "title": "CSS Shapes Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Shapes 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-shapes"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-shapes-1/",
         "https://drafts.csswg.org/css-shapes/"
@@ -7603,6 +8840,12 @@
       },
       "title": "CSS Box Sizing Module Level 3",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-sizing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-sizing-3/",
         "https://drafts.csswg.org/css-sizing-3/"
@@ -7640,6 +8883,12 @@
       },
       "title": "CSS Box Sizing Module Level 4",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-sizing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-sizing-4/",
         "https://drafts.csswg.org/css-sizing-4/"
@@ -7676,6 +8925,12 @@
       "title": "CSS Speech Module",
       "source": "w3c",
       "shortTitle": "CSS Speech",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-speech"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-speech-1/",
         "https://drafts.csswg.org/css-speech-1/"
@@ -7711,6 +8966,12 @@
       "title": "CSS Style Attributes",
       "source": "w3c",
       "shortTitle": "CSS Style Attributes",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-style-attr"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-style-attr/",
         "https://drafts.csswg.org/css-style-attr/"
@@ -7746,6 +9007,12 @@
       "title": "CSS Syntax Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Syntax 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-syntax"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-syntax-3/",
         "https://drafts.csswg.org/css-syntax/",
@@ -7783,6 +9050,12 @@
       "title": "CSS Table Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Table 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-tables"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-tables-3/",
         "https://drafts.csswg.org/css-tables-3/"
@@ -7820,6 +9093,12 @@
       "title": "CSS Text Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Text 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-text"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-text-3/",
         "https://drafts.csswg.org/css-text-3/"
@@ -7857,6 +9136,12 @@
       "title": "CSS Text Module Level 4",
       "source": "w3c",
       "shortTitle": "CSS Text 4",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-text"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-text-4/",
         "https://drafts.csswg.org/css-text-4/"
@@ -7894,6 +9179,12 @@
       "title": "CSS Text Decoration Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Text Decoration 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-text-decor"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-text-decor-3/",
         "https://drafts.csswg.org/css-text-decor-3/"
@@ -7931,6 +9222,12 @@
       "title": "CSS Text Decoration Module Level 4",
       "source": "w3c",
       "shortTitle": "CSS Text Decoration 4",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-text-decor"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-text-decor-4/",
         "https://drafts.csswg.org/css-text-decor-4/"
@@ -7968,6 +9265,12 @@
       "title": "CSS Transforms Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Transforms 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-transforms"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-transforms-1/",
         "https://drafts.csswg.org/css-transforms/"
@@ -8005,6 +9308,12 @@
       "title": "CSS Transforms Module Level 2",
       "source": "w3c",
       "shortTitle": "CSS Transforms 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-transforms"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-transforms-2/",
         "https://drafts.csswg.org/css-transforms-2/"
@@ -8042,6 +9351,12 @@
       "title": "CSS Transitions",
       "source": "w3c",
       "shortTitle": "CSS Transitions",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-transitions"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-transitions-1/",
         "https://drafts.csswg.org/css-transitions/"
@@ -8081,6 +9396,12 @@
       "title": "CSS Typed OM Level 1",
       "source": "w3c",
       "shortTitle": "CSS Typed OM 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-typed-om"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-typed-om-1/",
         "https://drafts.css-houdini.org/css-typed-om-1/"
@@ -8118,6 +9439,12 @@
       },
       "title": "CSS Basic User Interface Module Level 4",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-ui"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-ui-4/",
         "https://drafts.csswg.org/css-ui-4/"
@@ -8155,6 +9482,12 @@
       },
       "title": "CSS Values and Units Module Level 3",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-values"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-values-3/",
         "https://drafts.csswg.org/css-values-3/",
@@ -8193,6 +9526,12 @@
       },
       "title": "CSS Values and Units Module Level 4",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-values"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-values-4/",
         "https://drafts.csswg.org/css-values-4/"
@@ -8229,6 +9568,12 @@
       },
       "title": "CSS Custom Properties for Cascading Variables Module Level 1",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-variables"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-variables-1/",
         "https://drafts.csswg.org/css-variables/"
@@ -8265,6 +9610,12 @@
       "title": "CSS Will Change Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Will Change 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-will-change"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-will-change-1/",
         "https://drafts.csswg.org/css-will-change/"
@@ -8301,6 +9652,12 @@
       "title": "CSS Writing Modes Level 4",
       "source": "w3c",
       "shortTitle": "CSS Writing Modes 4",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-writing-modes"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-writing-modes-4/",
         "https://drafts.csswg.org/css-writing-modes-4/"
@@ -8367,6 +9724,12 @@
       "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
       "source": "w3c",
       "shortTitle": "CSS 2.1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/CSS2"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/CSS21/",
         "https://drafts.csswg.org/css2/"
@@ -8432,6 +9795,12 @@
       "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
       "source": "w3c",
       "shortTitle": "CSS 2.2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/CSS2"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/CSS22/",
         "https://drafts.csswg.org/css2/"
@@ -8468,6 +9837,12 @@
       "title": "CSS Exclusions Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Exclusions 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-exclusions"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css3-exclusions/",
         "https://drafts.csswg.org/css-exclusions/"
@@ -8504,6 +9879,12 @@
       "title": "CSS Object Model (CSSOM)",
       "source": "w3c",
       "shortTitle": "CSSOM",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/cssom"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/cssom-1/",
         "https://drafts.csswg.org/cssom/"
@@ -8541,6 +9922,12 @@
       "title": "CSSOM View Module",
       "source": "w3c",
       "shortTitle": "CSSOM View",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/cssom-view"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/cssom-view-1/",
         "https://drafts.csswg.org/cssom-view/",
@@ -8580,6 +9967,12 @@
       "title": "Device Memory",
       "source": "w3c",
       "shortTitle": "Device Memory",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "device-memory"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/device-memory-1/",
         "https://w3c.github.io/device-memory/"
@@ -8616,6 +10009,12 @@
       "title": "DOM Parsing and Serialization",
       "source": "w3c",
       "shortTitle": "DOM Parsing and Serialization",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "domparsing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/DOM-Parsing/",
         "https://w3c.github.io/DOM-Parsing/"
@@ -8652,6 +10051,12 @@
       "title": "Encoding Standard",
       "source": "w3c",
       "shortTitle": "Encoding",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "encoding"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/encoding/",
         "https://encoding.spec.whatwg.org/"
@@ -8688,6 +10093,12 @@
       "title": "Encrypted Media Extensions",
       "source": "w3c",
       "shortTitle": "Encrypted Media Extensions",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "encrypted-media"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/encrypted-media/",
         "https://w3c.github.io/encrypted-media/"
@@ -8724,6 +10135,12 @@
       },
       "title": "Fetch Metadata Request Headers",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "fetch/metadata"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/fetch-metadata/",
         "https://w3c.github.io/webappsec-fetch-metadata/"
@@ -8758,6 +10175,12 @@
       "title": "File API",
       "source": "w3c",
       "shortTitle": "File API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "FileAPI"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/FileAPI/",
         "https://w3c.github.io/FileAPI/"
@@ -8795,6 +10218,12 @@
       "title": "CSS Fill and Stroke Module Level 3",
       "source": "w3c",
       "shortTitle": "CSS Fill and Stroke 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-fill-stroke"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/fill-stroke-3/",
         "https://drafts.fxtf.org/fill-stroke/"
@@ -8832,6 +10261,12 @@
       "title": "Filter Effects Module Level 1",
       "source": "w3c",
       "shortTitle": "Filter Effects 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/filter-effects"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/filter-effects-1/",
         "https://drafts.fxtf.org/filter-effects-1/"
@@ -8869,6 +10304,12 @@
       "title": "Gamepad",
       "source": "w3c",
       "shortTitle": "Gamepad",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "gamepad"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/gamepad/",
         "https://w3c.github.io/gamepad/"
@@ -8905,6 +10346,12 @@
       "title": "Generic Sensor API",
       "source": "w3c",
       "shortTitle": "Generic Sensor API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "generic-sensor"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/generic-sensor/",
         "https://w3c.github.io/sensors/"
@@ -8941,6 +10388,12 @@
       "title": "Geolocation API Specification 2nd Edition",
       "source": "w3c",
       "shortTitle": "Geolocation API Specification 2nd Edition",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "geolocation-API"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/geolocation-API/",
         "https://w3c.github.io/geolocation-api/",
@@ -8978,6 +10431,12 @@
       "title": "Geolocation Sensor",
       "source": "w3c",
       "shortTitle": "Geolocation Sensor",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "geolocation-sensor"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/geolocation-sensor/",
         "https://w3c.github.io/geolocation-sensor/"
@@ -9015,6 +10474,12 @@
       "title": "Geometry Interfaces Module Level 1",
       "source": "w3c",
       "shortTitle": "Geometry Interfaces 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/geometry"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/geometry-1/",
         "https://drafts.fxtf.org/geometry/"
@@ -9052,6 +10517,12 @@
       "title": "Graphics Accessibility API Mappings",
       "source": "w3c",
       "shortTitle": "Graphics Accessibility API Mappings",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "graphics-aam"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/graphics-aam-1.0/",
         "https://w3c.github.io/graphics-aam/"
@@ -9121,6 +10592,12 @@
       "title": "Gyroscope",
       "source": "w3c",
       "shortTitle": "Gyroscope",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "gyroscope"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/gyroscope/",
         "https://w3c.github.io/gyroscope/"
@@ -9158,6 +10635,12 @@
       "title": "High Resolution Time",
       "source": "w3c",
       "shortTitle": "High Resolution Time",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "hr-time"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/hr-time-3/",
         "https://w3c.github.io/hr-time/",
@@ -9265,6 +10748,12 @@
       "title": "HTML Media Capture",
       "source": "w3c",
       "shortTitle": "HTML Media Capture",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "html-media-capture"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/html-media-capture/",
         "https://w3c.github.io/html-media-capture/",
@@ -9302,6 +10791,12 @@
       "title": "\"MediaStream Image Capture\"",
       "source": "w3c",
       "shortTitle": "\"MediaStream Image Capture\"",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "mediacapture-image"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/image-capture/",
         "https://w3c.github.io/mediacapture-image/"
@@ -9375,6 +10870,12 @@
       },
       "title": "Indexed Database API 2.0",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "IndexedDB"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/IndexedDB-2/",
         "https://w3c.github.io/IndexedDB/",
@@ -9413,6 +10914,12 @@
       "title": "Input Events Level 2",
       "source": "w3c",
       "shortTitle": "Input Events 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "input-events"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/input-events-2/",
         "https://w3c.github.io/input-events/",
@@ -9448,6 +10955,12 @@
       "title": "Intersection Observer",
       "source": "w3c",
       "shortTitle": "Intersection Observer",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "intersection-observer"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/intersection-observer/",
         "https://w3c.github.io/IntersectionObserver/"
@@ -9485,6 +10998,12 @@
       "title": "Long Tasks API 1",
       "source": "w3c",
       "shortTitle": "Long Tasks API 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "longtask-timing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/longtasks-1/",
         "https://w3c.github.io/longtasks/"
@@ -9521,6 +11040,12 @@
       "title": "Magnetometer",
       "source": "w3c",
       "shortTitle": "Magnetometer",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "magnetometer"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/magnetometer/",
         "https://w3c.github.io/magnetometer/"
@@ -9557,6 +11082,12 @@
       "title": "Media Capabilities",
       "source": "w3c",
       "shortTitle": "Media Capabilities",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "media-capabilities"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/media-capabilities/",
         "https://w3c.github.io/media-capabilities/"
@@ -9593,6 +11124,12 @@
       "title": "Media Source Extensions™",
       "source": "w3c",
       "shortTitle": "Media Source Extensions™",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "media-source"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/media-source/",
         "https://w3c.github.io/media-source/"
@@ -9629,6 +11166,12 @@
       "title": "Media Capture Depth Stream Extensions",
       "source": "w3c",
       "shortTitle": "Media Capture Depth Stream Extensions",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "mediacapture-depth"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/mediacapture-depth/",
         "https://w3c.github.io/mediacapture-depth/"
@@ -9665,6 +11208,12 @@
       "title": "Media Capture from DOM Elements",
       "source": "w3c",
       "shortTitle": "Media Capture from DOM Elements",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "mediacapture-fromelement"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/mediacapture-fromelement/",
         "https://w3c.github.io/mediacapture-fromelement/"
@@ -9701,6 +11250,12 @@
       "title": "Media Capture and Streams",
       "source": "w3c",
       "shortTitle": "Media Capture and Streams",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "mediacapture-streams"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/mediacapture-streams/",
         "https://w3c.github.io/mediacapture-main/",
@@ -9740,6 +11295,12 @@
       "title": "Media Queries Level 4",
       "source": "w3c",
       "shortTitle": "Media Queries 4",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/mediaqueries"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/mediaqueries-4/",
         "https://drafts.csswg.org/mediaqueries-4/"
@@ -9777,6 +11338,12 @@
       "title": "Media Queries Level 5",
       "source": "w3c",
       "shortTitle": "Media Queries 5",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/mediaqueries"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/mediaqueries-5/",
         "https://drafts.csswg.org/mediaqueries-5/"
@@ -9812,6 +11379,12 @@
       "title": "Media Session Standard",
       "source": "w3c",
       "shortTitle": "Media Session",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "mediasession"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/mediasession/",
         "https://w3c.github.io/mediasession/"
@@ -9848,6 +11421,12 @@
       "title": "MediaStream Recording",
       "source": "w3c",
       "shortTitle": "MediaStream Recording",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "mediacapture-record"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/mediastream-recording/",
         "https://w3c.github.io/mediacapture-record/"
@@ -9884,6 +11463,12 @@
       "title": "Mixed Content",
       "source": "w3c",
       "shortTitle": "Mixed Content",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "mixed-content"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/mixed-content/",
         "https://w3c.github.io/webappsec-mixed-content/"
@@ -9919,6 +11504,12 @@
       "title": "Motion Path Module Level 1",
       "source": "w3c",
       "shortTitle": "Motion Path 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/motion"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/motion-1/",
         "https://drafts.fxtf.org/motion-1/"
@@ -9954,6 +11545,12 @@
       "title": "MediaStreamTrack Content Hints",
       "source": "w3c",
       "shortTitle": "MediaStreamTrack Content Hints",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "mst-content-hint"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/mst-content-hint/",
         "https://w3c.github.io/mst-content-hint/"
@@ -9991,6 +11588,12 @@
       "title": "Navigation Timing Level 2",
       "source": "w3c",
       "shortTitle": "Navigation Timing 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "navigation-timing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/navigation-timing-2/",
         "https://w3c.github.io/navigation-timing/",
@@ -10029,6 +11632,12 @@
       "title": "Network Error Logging",
       "source": "w3c",
       "shortTitle": "Network Error Logging",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "network-error-logging"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/network-error-logging-1/",
         "https://w3c.github.io/network-error-logging/"
@@ -10063,6 +11672,12 @@
       "title": "DeviceOrientation Event Specification",
       "source": "w3c",
       "shortTitle": "DeviceOrientation Event",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "orientation-event"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/orientation-event/",
         "https://w3c.github.io/deviceorientation/"
@@ -10099,6 +11714,12 @@
       "title": "Orientation Sensor",
       "source": "w3c",
       "shortTitle": "Orientation Sensor",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "orientation-sensor"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/orientation-sensor/",
         "https://w3c.github.io/orientation-sensor/"
@@ -10136,6 +11757,12 @@
       "title": "Page Visibility Level 2",
       "source": "w3c",
       "shortTitle": "Page Visibility 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "page-visibility"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/page-visibility-2/",
         "https://w3c.github.io/page-visibility/",
@@ -10173,6 +11800,12 @@
       "title": "Paint Timing 1",
       "source": "w3c",
       "shortTitle": "Paint Timing 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "paint-timing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/paint-timing/",
         "https://w3c.github.io/paint-timing/"
@@ -10209,6 +11842,12 @@
       "title": "Payment Handler API",
       "source": "w3c",
       "shortTitle": "Payment Handler API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "payment-handler"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/payment-handler/",
         "https://w3c.github.io/payment-handler/"
@@ -10245,6 +11884,12 @@
       },
       "title": "Payment Method: Basic Card",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "payment-method-basic-card"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/payment-method-basic-card/",
         "https://w3c.github.io/payment-method-basic-card/"
@@ -10281,6 +11926,12 @@
       "title": "Payment Method Identifiers",
       "source": "w3c",
       "shortTitle": "Payment Method Identifiers",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "payment-method-id"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/payment-method-id/",
         "https://w3c.github.io/payment-method-id/"
@@ -10349,6 +12000,12 @@
       "title": "Payment Request API",
       "source": "w3c",
       "shortTitle": "Payment Request API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "payment-request"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/payment-request/",
         "https://w3c.github.io/payment-request/"
@@ -10386,6 +12043,12 @@
       "title": "Performance Timeline Level 2",
       "source": "w3c",
       "shortTitle": "Performance Timeline 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "performance-timeline"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/performance-timeline-2/",
         "https://w3c.github.io/performance-timeline/",
@@ -10424,6 +12087,12 @@
       "title": "Permissions Policy",
       "source": "w3c",
       "shortTitle": "Permissions Policy",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "permissions-policy"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/permissions-policy-1/",
         "https://w3c.github.io/webappsec-permissions-policy/"
@@ -10460,6 +12129,12 @@
       "title": "Permissions",
       "source": "w3c",
       "shortTitle": "Permissions",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "permissions"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/permissions/",
         "https://w3c.github.io/permissions/"
@@ -10496,6 +12171,12 @@
       "title": "Picture-in-Picture",
       "source": "w3c",
       "shortTitle": "Picture-in-Picture",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "picture-in-picture"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/picture-in-picture/",
         "https://w3c.github.io/picture-in-picture/"
@@ -10533,6 +12214,12 @@
       "title": "Pointer Events",
       "source": "w3c",
       "shortTitle": "Pointer Events 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "pointerevents"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/pointerevents3/",
         "https://w3c.github.io/pointerevents/"
@@ -10570,6 +12257,12 @@
       "title": "Pointer Lock 2.0",
       "source": "w3c",
       "shortTitle": "Pointer Lock 2.0",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "pointerlock"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/pointerlock-2/",
         "https://w3c.github.io/pointerlock/",
@@ -10607,6 +12300,12 @@
       "title": "Preload",
       "source": "w3c",
       "shortTitle": "Preload",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "preload"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/preload/",
         "https://w3c.github.io/preload/"
@@ -10641,6 +12340,12 @@
       "title": "Presentation API",
       "source": "w3c",
       "shortTitle": "Presentation API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "presentation-api"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/presentation-api/",
         "https://w3c.github.io/presentation-api/"
@@ -10677,6 +12382,12 @@
       "title": "Proximity Sensor",
       "source": "w3c",
       "shortTitle": "Proximity Sensor",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "proximity"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/proximity/",
         "https://w3c.github.io/proximity/"
@@ -10713,6 +12424,12 @@
       "title": "Push API",
       "source": "w3c",
       "shortTitle": "Push API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "push-api"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/push-api/",
         "https://w3c.github.io/push-api/"
@@ -10749,6 +12466,12 @@
       "title": "Referrer Policy",
       "source": "w3c",
       "shortTitle": "Referrer Policy",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "referrer-policy"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/referrer-policy/",
         "https://w3c.github.io/webappsec-referrer-policy/"
@@ -10785,6 +12508,12 @@
       "title": "Remote Playback API",
       "source": "w3c",
       "shortTitle": "Remote Playback API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "remote-playback"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/remote-playback/",
         "https://w3c.github.io/remote-playback/"
@@ -10822,6 +12551,12 @@
       "title": "Reporting API",
       "source": "w3c",
       "shortTitle": "Reporting API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "reporting"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/reporting-1/",
         "https://w3c.github.io/reporting/"
@@ -10858,6 +12593,12 @@
       "title": "Cooperative Scheduling of Background Tasks",
       "source": "w3c",
       "shortTitle": "Cooperative Scheduling of Background Tasks",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "requestidlecallback"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/requestidlecallback/",
         "https://w3c.github.io/requestidlecallback/"
@@ -10895,6 +12636,12 @@
       "title": "Resize Observer",
       "source": "w3c",
       "shortTitle": "Resize Observer",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "resize-observer"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/resize-observer-1/",
         "https://drafts.csswg.org/resize-observer/"
@@ -10966,6 +12713,12 @@
       "title": "Resource Timing Level 2",
       "source": "w3c",
       "shortTitle": "Resource Timing 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "resource-timing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/resource-timing-2/",
         "https://w3c.github.io/resource-timing/",
@@ -11004,6 +12757,12 @@
       "title": "Screen Capture",
       "source": "w3c",
       "shortTitle": "Screen Capture",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "screen-capture"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/screen-capture/",
         "https://w3c.github.io/mediacapture-screen-share/"
@@ -11076,6 +12835,12 @@
       "title": "The Screen Orientation API",
       "source": "w3c",
       "shortTitle": "The Screen Orientation API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "screen-orientation"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/screen-orientation/",
         "https://w3c.github.io/screen-orientation/"
@@ -11112,6 +12877,12 @@
       "title": "Screen Wake Lock API",
       "source": "w3c",
       "shortTitle": "Screen Wake Lock API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "screen-wake-lock"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/screen-wake-lock/",
         "https://w3c.github.io/screen-wake-lock/"
@@ -11148,6 +12919,12 @@
       "title": "Secure Contexts",
       "source": "w3c",
       "shortTitle": "Secure Contexts",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "secure-contexts"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/secure-contexts/",
         "https://w3c.github.io/webappsec-secure-contexts/"
@@ -11184,6 +12961,12 @@
       "title": "Selection API",
       "source": "w3c",
       "shortTitle": "Selection API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "selection"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/selection-api/",
         "https://w3c.github.io/selection-api/"
@@ -11221,6 +13004,12 @@
       "title": "Selectors Level 4",
       "source": "w3c",
       "shortTitle": "Selectors 4",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/selectors"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/selectors-4/",
         "https://drafts.csswg.org/selectors/"
@@ -11292,6 +13081,12 @@
       "title": "Server Timing",
       "source": "w3c",
       "shortTitle": "Server Timing",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "server-timing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/server-timing/",
         "https://w3c.github.io/server-timing/"
@@ -11329,6 +13124,12 @@
       "title": "Service Workers 1",
       "source": "w3c",
       "shortTitle": "Service Workers 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "service-workers"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/service-workers-1/",
         "https://w3c.github.io/ServiceWorker/",
@@ -11366,6 +13167,12 @@
       },
       "title": "Subresource Integrity",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "subresource-integrity"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/SRI/",
         "https://w3c.github.io/webappsec-subresource-integrity/"
@@ -11403,6 +13210,12 @@
       "title": "SVG Accessibility API Mappings",
       "source": "w3c",
       "shortTitle": "SVG Accessibility API Mappings",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "svg-aam"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/svg-aam-1.0/",
         "https://w3c.github.io/svg-aam/"
@@ -11638,6 +13451,12 @@
       "title": "Scalable Vector Graphics (SVG) 2",
       "source": "w3c",
       "shortTitle": "SVG 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "svg"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/SVG2/",
         "https://svgwg.org/svg2-draft/",
@@ -11677,6 +13496,12 @@
       "title": "Timing Entry Names Registry",
       "source": "w3c",
       "shortTitle": "Timing Entry Names Registry",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "timing-entrytypes-registry"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/timing-entrytypes-registry/",
         "https://w3c.github.io/timing-entrytypes-registry/"
@@ -11711,6 +13536,12 @@
       "title": "Touch Events",
       "source": "w3c",
       "shortTitle": "Touch Events",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "touch-events"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/touch-events/",
         "https://w3c.github.io/touch-events/"
@@ -11850,6 +13681,12 @@
       "title": "UI Events",
       "source": "w3c",
       "shortTitle": "UI Events",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "uievents"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/uievents/",
         "https://w3c.github.io/uievents/"
@@ -11886,6 +13723,12 @@
       "title": "Upgrade Insecure Requests",
       "source": "w3c",
       "shortTitle": "Upgrade Insecure Requests",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "upgrade-insecure-requests"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/upgrade-insecure-requests/",
         "https://w3c.github.io/webappsec-upgrade-insecure-requests/"
@@ -11922,6 +13765,12 @@
       "title": "User Timing Level 2",
       "source": "w3c",
       "shortTitle": "User Timing 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "user-timing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/user-timing-2/",
         "https://w3c.github.io/user-timing/",
@@ -11961,6 +13810,12 @@
       "title": "User Timing Level 3",
       "source": "w3c",
       "shortTitle": "User Timing 3",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "user-timing"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/user-timing-3/",
         "https://w3c.github.io/user-timing/"
@@ -11997,6 +13852,12 @@
       "title": "Vibration API (Second Edition)",
       "source": "w3c",
       "shortTitle": "Vibration API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "vibration"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/vibration/",
         "https://w3c.github.io/vibration/",
@@ -12035,6 +13896,12 @@
       "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
       "source": "w3c",
       "shortTitle": "WAI-ARIA 1.2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "wai-aria"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/wai-aria-1.2/",
         "https://w3c.github.io/aria/"
@@ -12059,6 +13926,12 @@
         "currentSpecification": "wasm-core-1"
       },
       "seriesVersion": "1",
+      "tests": {
+        "repository": "https://github.com/WebAssembly/spec/",
+        "testPaths": [
+          "test/core"
+        ]
+      },
       "release": {
         "url": "https://www.w3.org/TR/wasm-core-1/",
         "filename": "Overview.html"
@@ -12106,6 +13979,12 @@
       "title": "WebAssembly JavaScript Interface",
       "source": "w3c",
       "shortTitle": "WebAssembly JavaScript Interface",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "wasm/jsapi"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/wasm-js-api-1/",
         "https://webassembly.github.io/spec/js-api/"
@@ -12143,6 +14022,12 @@
       "title": "WebAssembly Web API",
       "source": "w3c",
       "shortTitle": "WebAssembly Web API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "wasm/webapi"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/wasm-web-api-1/",
         "https://webassembly.github.io/spec/web-api/"
@@ -12180,6 +14065,12 @@
       "title": "Web Animations",
       "source": "w3c",
       "shortTitle": "Web Animations",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "web-animations"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/web-animations-1/",
         "https://drafts.csswg.org/web-animations-1/"
@@ -12216,6 +14107,12 @@
       "title": "Web Share API",
       "source": "w3c",
       "shortTitle": "Web Share API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "web-share"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/web-share/",
         "https://w3c.github.io/web-share/"
@@ -12252,6 +14149,12 @@
       "title": "Web Audio API",
       "source": "w3c",
       "shortTitle": "Web Audio API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webaudio"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webaudio/",
         "https://webaudio.github.io/web-audio-api/"
@@ -12289,6 +14192,12 @@
       },
       "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webauthn"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webauthn-2/",
         "https://w3c.github.io/webauthn/"
@@ -12325,6 +14234,12 @@
       "title": "Web Cryptography API",
       "source": "w3c",
       "shortTitle": "Web Cryptography API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "WebCryptoAPI"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/WebCryptoAPI/",
         "https://w3c.github.io/webcrypto/"
@@ -12362,6 +14277,12 @@
       "title": "WebDriver",
       "source": "w3c",
       "shortTitle": "WebDriver 2",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webdriver"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webdriver2/",
         "https://w3c.github.io/webdriver/"
@@ -12399,6 +14320,12 @@
       "title": "WebIDL Level 1",
       "source": "w3c",
       "shortTitle": "WebIDL 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "WebIDL"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/WebIDL-1/",
         "https://heycam.github.io/webidl/"
@@ -12435,6 +14362,12 @@
       "title": "Web MIDI API",
       "source": "w3c",
       "shortTitle": "Web MIDI API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webmidi"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webmidi/",
         "https://webaudio.github.io/web-midi-api/"
@@ -12471,6 +14404,12 @@
       "title": "Identity for WebRTC 1.0",
       "source": "w3c",
       "shortTitle": "Identity for WebRTC 1.0",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webrtc-identity"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webrtc-identity/",
         "https://w3c.github.io/webrtc-identity/identity.html"
@@ -12507,6 +14446,12 @@
       "title": "WebRTC Priority Control API",
       "source": "w3c",
       "shortTitle": "WebRTC Priority Control API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webrtc-priority"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webrtc-priority/",
         "https://w3c.github.io/webrtc-priority/"
@@ -12543,6 +14488,12 @@
       },
       "title": "Identifiers for WebRTC's Statistics API",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webrtc-stats"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webrtc-stats/",
         "https://w3c.github.io/webrtc-stats/"
@@ -12579,6 +14530,12 @@
       "title": "Scalable Video Coding (SVC) Extension for WebRTC",
       "source": "w3c",
       "shortTitle": "SVC",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webrtc-svc"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webrtc-svc/",
         "https://w3c.github.io/webrtc-svc/"
@@ -12615,6 +14572,12 @@
       },
       "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webrtc"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webrtc/",
         "https://w3c.github.io/webrtc-pc/"
@@ -12652,6 +14615,12 @@
       "title": "WebVTT: The Web Video Text Tracks Format",
       "source": "w3c",
       "shortTitle": "WebVTT: The Web Video Text Tracks Format",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webvtt"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webvtt1/",
         "https://w3c.github.io/webvtt/",
@@ -12690,6 +14659,12 @@
       "title": "WebXR Augmented Reality Module - Level 1",
       "source": "w3c",
       "shortTitle": "WebXR Augmented Reality 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webxr/ar-module"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webxr-ar-module-1/",
         "https://immersive-web.github.io/webxr-ar-module/"
@@ -12726,6 +14701,12 @@
       "title": "WebXR Gamepads Module - Level 1",
       "source": "w3c",
       "shortTitle": "WebXR Gamepads 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webxr/gamepads-module"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webxr-gamepads-module-1/",
         "https://immersive-web.github.io/webxr-gamepads-module/"
@@ -12763,6 +14744,12 @@
       "title": "WebXR Hand Input Module - Level 1",
       "source": "w3c",
       "shortTitle": "WebXR Hand Input 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webxr/hand-input"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webxr-hand-input-1/",
         "https://immersive-web.github.io/webxr-hand-input/"
@@ -12799,6 +14786,21 @@
       "title": "WebXR Device API",
       "source": "w3c",
       "shortTitle": "WebXR Device API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webxr"
+        ],
+        "excludePaths": [
+          "webxr/anchors",
+          "webxr/ar-module",
+          "webxr/dom-overlay",
+          "webxr/gamepads-module",
+          "webxr/hand-input",
+          "webxr/hit-test",
+          "webxr/layers"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webxr/",
         "https://immersive-web.github.io/webxr/"
@@ -12836,6 +14838,12 @@
       "title": "WebXR Layers API Level 1",
       "source": "w3c",
       "shortTitle": "WebXR Layers API 1",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webxr/layers"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/webxrlayers-1/",
         "https://immersive-web.github.io/layers/"
@@ -12873,6 +14881,12 @@
       },
       "title": "WOFF File Format 2.0",
       "source": "w3c",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/WOFF2"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/WOFF2/",
         "https://w3c.github.io/woff/woff2/"
@@ -12902,6 +14916,12 @@
       "title": "XMLHttpRequest Standard",
       "source": "specref",
       "shortTitle": "XMLHttpRequest",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "xhr"
+        ]
+      },
       "versions": [
         "https://xhr.spec.whatwg.org/"
       ],
