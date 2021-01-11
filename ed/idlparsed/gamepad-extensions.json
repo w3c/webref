@@ -9,7 +9,8 @@
       "functions": {
         "Window": [
           "GamepadHapticActuator",
-          "GamepadPose"
+          "GamepadPose",
+          "GamepadTouch"
         ]
       }
     },
@@ -273,6 +274,91 @@
           }
         ],
         "partial": false
+      },
+      "GamepadTouch": {
+        "type": "interface",
+        "name": "GamepadTouch",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "touchId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "surfaceId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "position",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "surfaceDimensions",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Uint32Array"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -335,6 +421,30 @@
               "extAttrs": [],
               "special": "",
               "readonly": true
+            },
+            {
+              "type": "attribute",
+              "name": "touchEvents",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "FrozenArray",
+                "nullable": true,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "attribute-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "GamepadTouch"
+                  }
+                ]
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
             }
           ],
           "extAttrs": [],
@@ -346,7 +456,8 @@
     "exposed": {
       "Window": [
         "GamepadHapticActuator",
-        "GamepadPose"
+        "GamepadPose",
+        "GamepadTouch"
       ]
     },
     "dependencies": {
@@ -354,10 +465,12 @@
         "GamepadHapticActuatorType"
       ],
       "GamepadPose": [],
+      "GamepadTouch": [],
       "Gamepad": [
         "GamepadHand",
         "GamepadHapticActuator",
-        "GamepadPose"
+        "GamepadPose",
+        "GamepadTouch"
       ]
     },
     "externalDependencies": [
