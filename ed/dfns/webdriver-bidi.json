@@ -683,24 +683,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "realm-id",
-      "href": "https://w3c.github.io/webdriver-bidi/#realm-id",
-      "linkingText": [
-        "realm id"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "data-types-realm",
-        "title": "Realm",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "object-id-map",
       "href": "https://w3c.github.io/webdriver-bidi/#object-id-map",
       "linkingText": [
@@ -712,9 +694,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "data-types-remote-value",
+        "id": "type-common-RemoteValue",
         "title": "Remote Value",
-        "number": "5.2"
+        "number": "5.1"
       },
       "definedIn": "prose"
     },
@@ -730,9 +712,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "data-types-remote-value",
+        "id": "type-common-RemoteValue",
         "title": "Remote Value",
-        "number": "5.2"
+        "number": "5.1"
       },
       "definedIn": "prose"
     },
@@ -748,9 +730,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "data-types-remote-value",
+        "id": "type-common-RemoteValue",
         "title": "Remote Value",
-        "number": "5.2"
+        "number": "5.1"
       },
       "definedIn": "prose"
     },
@@ -766,9 +748,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "data-types-remote-value",
+        "id": "type-common-RemoteValue",
         "title": "Remote Value",
-        "number": "5.2"
+        "number": "5.1"
       },
       "definedIn": "prose"
     },
@@ -784,9 +766,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "data-types-remote-value",
+        "id": "type-common-RemoteValue",
         "title": "Remote Value",
-        "number": "5.2"
+        "number": "5.1"
       },
       "definedIn": "prose"
     },
@@ -920,7 +902,7 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "types-browsingcontext",
+        "id": "type-browsingContext-Browsingcontext",
         "title": "The browsingContext.BrowsingContext Type",
         "number": "6.2.2.1"
       },
@@ -938,7 +920,7 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "types-browsingcontext",
+        "id": "type-browsingContext-Browsingcontext",
         "title": "The browsingContext.BrowsingContext Type",
         "number": "6.2.2.1"
       },
@@ -956,7 +938,7 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "types-browsingcontextinfo",
+        "id": "type-browsingContext-BrowsingContextInfo",
         "title": "The browsingContext.BrowsingContextInfo Type",
         "number": "6.2.2.2"
       },
@@ -974,7 +956,7 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "types-browsingcontextinfo",
+        "id": "type-browsingContext-BrowsingContextInfo",
         "title": "The browsingContext.BrowsingContextInfo Type",
         "number": "6.2.2.2"
       },
@@ -997,6 +979,82 @@
         "id": "command-browsingContext-list",
         "title": "The browsingContext.getTree Command",
         "number": "6.2.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "modules-script",
+      "href": "https://w3c.github.io/webdriver-bidi/#modules-script",
+      "linkingText": [
+        "script"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "modules"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "module-script",
+        "title": "The script Module",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "realm-id",
+      "href": "https://w3c.github.io/webdriver-bidi/#realm-id",
+      "linkingText": [
+        "realm id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "type-script-Realm",
+        "title": "The script.Realm type",
+        "number": "6.3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-the-realm-info",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-the-realm-info",
+      "linkingText": [
+        "get the realm info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-RealmInfo",
+        "title": "The script.RealmInfo type",
+        "number": "6.3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-scriptgetrealms",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-scriptgetrealms",
+      "linkingText": [
+        "script.getRealms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-script-getRealms",
+        "title": "The script.getRealms Command",
+        "number": "6.3.3.1"
       },
       "definedIn": "prose"
     },
