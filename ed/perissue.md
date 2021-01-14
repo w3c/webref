@@ -955,6 +955,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebDriver](https://w3c.github.io/webdriver/) links to:
     * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
     * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html) but does not list it in its references
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/) links to [`https://www.w3.org/TR/worklets-1/`](https://www.w3.org/TR/worklets-1/) but does not list it in its references
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) links to [`https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html`](https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html) but does not list it in its references
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/) links to [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/) but does not list it in its references
 - [WebXR Device API](https://immersive-web.github.io/webxr/) links to:
@@ -963,7 +964,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 592 missing references for links found in 165 specifications
+=> 593 missing references for links found in 166 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 

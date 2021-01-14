@@ -692,7 +692,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Crawled URL: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
-- Crawled version: 5 November 2020
+- Crawled version: 11 January 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
 - Latest published version: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Shortname: CSP3
@@ -3723,7 +3723,9 @@ This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 
 Informative references to this spec from:
 
@@ -7777,7 +7779,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Crawled URL: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
-- Crawled version: 17 December 2020
+- Crawled version: 14 January 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Shortname: mediacapture-streams
@@ -9258,7 +9260,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/referrer-policy/](https://www.w3.org/TR/referrer-policy/)
 - Crawled URL: [https://w3c.github.io/webappsec-referrer-policy/](https://w3c.github.io/webappsec-referrer-policy/)
-- Crawled version: 12 January 2021
+- Crawled version: 14 January 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-referrer-policy/](https://w3c.github.io/webappsec-referrer-policy/)
 - Latest published version: [https://www.w3.org/TR/referrer-policy/](https://www.w3.org/TR/referrer-policy/)
 - Shortname: referrer-policy
@@ -10017,6 +10019,7 @@ Normative references to this spec from:
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 
 Informative references to this spec from:
 
@@ -11025,6 +11028,7 @@ Normative references to this spec from:
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [WebCodecs](https://wicg.github.io/web-codecs/)
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 
 Informative references to this spec from:
 
@@ -11727,19 +11731,20 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebDriver BiDi {data-spec=true data-ok=true}
+## WebDriver BiDi {data-spec=true data-anomaly=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - Crawled URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
-- Crawled version: 11 December 2020
+- Crawled version: 14 January 2021
 - Editor's Draft: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - Shortname: webdriver-bidi
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Missing references for links: 
+     * [`https://www.w3.org/TR/worklets-1/`](https://www.w3.org/TR/worklets-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12810,7 +12815,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 12 January 2021
+- Crawled version: 14 January 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
