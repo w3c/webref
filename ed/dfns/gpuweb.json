@@ -2111,6 +2111,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpudevice-destroy",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-device",
+        "title": "GPUDevice",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "abstract-opdef-the-steps-to-serialize-a-gpudevice-object",
       "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-the-steps-to-serialize-a-gpudevice-object",
       "linkingText": [
@@ -16862,6 +16882,44 @@
       "definedIn": "dt"
     },
     {
+      "id": "enumdef-gpudevicelostreason",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpudevicelostreason",
+      "linkingText": [
+        "GPUDeviceLostReason"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fatal-errors",
+        "title": "Fatal Errors",
+        "number": "20.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpudevicelostreason-destroyed",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevicelostreason-destroyed",
+      "linkingText": [
+        "\"destroyed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUDeviceLostReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fatal-errors",
+        "title": "Fatal Errors",
+        "number": "20.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "gpudevicelostinfo",
       "href": "https://gpuweb.github.io/gpuweb/#gpudevicelostinfo",
       "linkingText": [
@@ -16870,6 +16928,26 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fatal-errors",
+        "title": "Fatal Errors",
+        "number": "20.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpudevicelostinfo-reason",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevicelostinfo-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUDeviceLostInfo"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
