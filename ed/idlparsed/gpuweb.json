@@ -775,6 +775,21 @@
           },
           {
             "type": "operation",
+            "name": "destroy",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
             "name": "createBuffer",
             "idlType": {
               "type": "return-type",
@@ -8684,11 +8699,54 @@
         "extAttrs": [],
         "partial": false
       },
+      "GPUDeviceLostReason": {
+        "type": "enum",
+        "name": "GPUDeviceLostReason",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "destroyed"
+          }
+        ],
+        "extAttrs": []
+      },
       "GPUDeviceLostInfo": {
         "type": "interface",
         "name": "GPUDeviceLostInfo",
         "inheritance": null,
         "members": [
+          {
+            "type": "attribute",
+            "name": "reason",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUDeviceLostReason"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
           {
             "type": "attribute",
             "name": "message",
@@ -10340,7 +10398,9 @@
         "GPUTexture",
         "GPUObjectBase"
       ],
-      "GPUDeviceLostInfo": [],
+      "GPUDeviceLostInfo": [
+        "GPUDeviceLostReason"
+      ],
       "GPUOutOfMemoryError": [],
       "GPUValidationError": [],
       "GPUUncapturedErrorEvent": [
