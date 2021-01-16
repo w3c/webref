@@ -24,6 +24,10 @@ enum XRLayerLayout {
 };
 
 [Exposed=Window] interface XRProjectionLayer : XRCompositionLayer {
+  readonly attribute unsigned long textureWidth;
+  readonly attribute unsigned long textureHeight;
+  readonly attribute unsigned long textureLayers;
+
   readonly attribute boolean ignoreDepthValues;
 };
 
