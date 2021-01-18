@@ -52,13 +52,35 @@
       "top-level-browsing-context",
       "child-browsing-context",
       "creating-a-new-browsing-context",
+      "realm-execution-context",
+      "concept-realm-global",
+      "dedicatedworkerglobalscope",
+      "sharedworkerglobalscope",
+      "workerglobalscope",
+      "workletglobalscope",
+      "ascii-serialisation-of-an-origin",
+      "environment-settings-object",
+      "concept-environment-execution-ready-flag",
+      "responsible-document",
+      "concept-WorkerGlobalScope-owner-set",
+      "set-up-a-window-environment-settings-object",
+      "set-up-a-worker-environment-settings-object",
+      "concept-document-bc",
+      "unloading-document-cleanup-steps",
+      "concept-document-worklet-global-scopes",
+      "concept-relevant-realm",
+      "worker-event-loop-2",
+      "terminate-a-worker",
+      "responsible-event-loop",
+      "environment-settings-object's-realm",
       "a-browsing-context-is-discarded",
       "session-history",
       "bcg-remove"
     ],
     "https://fetch.spec.whatwg.org/": [
       "header-list-contains",
-      "concept-connection"
+      "concept-connection",
+      "concept-request-window"
     ],
     "https://infra.spec.whatwg.org/": [
       "ordered-set",
@@ -70,7 +92,8 @@
       "serialize-an-infra-value-to-json-bytes",
       "map-size",
       "list-size",
-      "ordered-map"
+      "ordered-map",
+      "iteration-continue"
     ],
     "https://tools.ietf.org/html/rfc6455": [
       "section-4.1",
@@ -86,8 +109,21 @@
       "section-7.4",
       "section-6.1"
     ],
+    "https://dom.spec.whatwg.org/": [
+      "concept-node",
+      "concept-element",
+      "boundary-point-node",
+      "concept-attribute",
+      "concept-tree-child",
+      "concept-element-attribute",
+      "concept-attribute-qualified-name",
+      "concept-attribute-value",
+      "concept-element-shadow-root",
+      "concept-document-url",
+      "concept-document",
+      "document"
+    ],
     "https://tc39.es/ecma262/": [
-      "sec-code-realms",
       "sec-ecmascript-data-types-and-values",
       "sec-tostring",
       "sec-isarray",
@@ -102,26 +138,27 @@
       "sec-ispromise",
       "sec-iscallable",
       "sec-enumerableownpropertynames",
-      "sec-createlistfromarraylike"
-    ],
-    "https://dom.spec.whatwg.org/": [
-      "concept-node",
-      "concept-element",
-      "boundary-point-node",
-      "concept-attribute",
-      "concept-tree-child",
-      "concept-element-attribute",
-      "concept-attribute-qualified-name",
-      "concept-attribute-value",
-      "concept-element-shadow-root",
-      "concept-document-url",
-      "document"
+      "sec-createlistfromarraylike",
+      "sec-code-realms"
     ],
     "https://url.spec.whatwg.org/": [
       "concept-url-serializer"
     ],
+    "https://w3c.github.io/ServiceWorker/": [
+      "serviceworkerglobalscope"
+    ],
+    "https://drafts.css-houdini.org/css-paint-api-1/": [
+      "paintworkletglobalscope"
+    ],
+    "https://webaudio.github.io/web-audio-api/": [
+      "audioworkletglobalscope"
+    ],
+    "https://www.w3.org/TR/worklets-1/": [
+      "set-up-a-worklet-environment-settings-object"
+    ],
     "https://tools.ietf.org/html/rfc4122": [],
     "https://tools.ietf.org/html/rfc8610": [],
+    "https://drafts.css-houdini.org/worklets/": [],
     "https://www.jsonrpc.org/specification": []
   }
 }

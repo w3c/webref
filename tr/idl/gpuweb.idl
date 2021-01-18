@@ -12,6 +12,10 @@ dictionary GPUObjectDescriptorBase {
 };
 
 interface GPUAdapterLimits {
+    readonly attribute GPUSize32 maxTextureDimension1D;
+    readonly attribute GPUSize32 maxTextureDimension2D;
+    readonly attribute GPUSize32 maxTextureDimension3D;
+    readonly attribute GPUSize32 maxTextureArrayLayers;
     readonly attribute GPUSize32 maxBindGroups;
     readonly attribute GPUSize32 maxDynamicUniformBuffersPerPipelineLayout;
     readonly attribute GPUSize32 maxDynamicStorageBuffersPerPipelineLayout;
@@ -64,8 +68,8 @@ interface GPUAdapter {
 };
 
 dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {
-    sequence<GPUFeatureName> features = [];
-    record<DOMString, GPUSize32> limits = {};
+    sequence<GPUFeatureName> nonGuaranteedFeatures = [];
+    record<DOMString, GPUSize32> nonGuaranteedLimits = {};
 };
 
 enum GPUFeatureName {
@@ -84,6 +88,8 @@ interface GPUDevice : EventTarget {
     readonly attribute object limits;
 
     [SameObject] readonly attribute GPUQueue defaultQueue;
+
+    undefined destroy();
 
     GPUBuffer createBuffer(GPUBufferDescriptor descriptor);
     GPUTexture createTexture(GPUTextureDescriptor descriptor);
@@ -162,7 +168,7 @@ dictionary GPUTextureDescriptor : GPUObjectDescriptorBase {
 enum GPUTextureDimension {
     "1d",
     "2d",
-    "3d"
+    "3d",
 };
 
 typedef [EnforceRange] unsigned long GPUTextureUsageFlags;
@@ -948,7 +954,12 @@ interface GPUSwapChain {
 };
 GPUSwapChain includes GPUObjectBase;
 
+enum GPUDeviceLostReason {
+    "destroyed",
+};
+
 interface GPUDeviceLostInfo {
+    readonly attribute (GPUDeviceLostReason or undefined) reason;
     readonly attribute DOMString message;
 };
 
