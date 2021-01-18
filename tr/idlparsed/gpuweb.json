@@ -82,6 +82,66 @@
         "members": [
           {
             "type": "attribute",
+            "name": "maxTextureDimension1D",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "maxTextureDimension2D",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "maxTextureDimension3D",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "maxTextureArrayLayers",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "maxBindGroups",
             "idlType": {
               "type": "attribute-type",
@@ -531,7 +591,7 @@
         "members": [
           {
             "type": "field",
-            "name": "features",
+            "name": "nonGuaranteedFeatures",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -558,7 +618,7 @@
           },
           {
             "type": "field",
-            "name": "limits",
+            "name": "nonGuaranteedLimits",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -712,6 +772,21 @@
             ],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "destroy",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
           },
           {
             "type": "operation",
@@ -8624,11 +8699,54 @@
         "extAttrs": [],
         "partial": false
       },
+      "GPUDeviceLostReason": {
+        "type": "enum",
+        "name": "GPUDeviceLostReason",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "destroyed"
+          }
+        ],
+        "extAttrs": []
+      },
       "GPUDeviceLostInfo": {
         "type": "interface",
         "name": "GPUDeviceLostInfo",
         "inheritance": null,
         "members": [
+          {
+            "type": "attribute",
+            "name": "reason",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUDeviceLostReason"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
           {
             "type": "attribute",
             "name": "message",
@@ -10280,7 +10398,9 @@
         "GPUTexture",
         "GPUObjectBase"
       ],
-      "GPUDeviceLostInfo": [],
+      "GPUDeviceLostInfo": [
+        "GPUDeviceLostReason"
+      ],
       "GPUOutOfMemoryError": [],
       "GPUValidationError": [],
       "GPUUncapturedErrorEvent": [
