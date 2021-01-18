@@ -6,9 +6,82 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "CustomStateSet"
+        ]
+      }
     },
-    "idlNames": {},
+    "idlNames": {
+      "CustomStateSet": {
+        "type": "interface",
+        "name": "CustomStateSet",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "setlike",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          },
+          {
+            "type": "operation",
+            "name": "add",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
     "idlExtendedNames": {
       "ElementInternals": [
         {
@@ -25,25 +98,9 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "DOMTokenList"
+                "idlType": "CustomStateSet"
               },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "SameObject",
-                  "rhs": null,
-                  "arguments": []
-                },
-                {
-                  "type": "extended-attribute",
-                  "name": "PutForwards",
-                  "rhs": {
-                    "type": "identifier",
-                    "value": "value"
-                  },
-                  "arguments": []
-                }
-              ],
+              "extAttrs": [],
               "special": "",
               "readonly": true
             }
@@ -54,15 +111,19 @@
       ]
     },
     "globals": {},
-    "exposed": {},
-    "dependencies": {
-      "ElementInternals": [
-        "DOMTokenList"
+    "exposed": {
+      "Window": [
+        "CustomStateSet"
       ]
     },
+    "dependencies": {
+      "ElementInternals": [
+        "CustomStateSet"
+      ],
+      "CustomStateSet": []
+    },
     "externalDependencies": [
-      "ElementInternals",
-      "DOMTokenList"
+      "ElementInternals"
     ],
     "hasObsoleteIdl": false
   }

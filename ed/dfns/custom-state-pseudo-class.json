@@ -5,10 +5,10 @@
   },
   "dfns": [
     {
-      "id": "states-token-list",
-      "href": "https://wicg.github.io/custom-state-pseudo-class/#states-token-list",
+      "id": "states-set",
+      "href": "https://wicg.github.io/custom-state-pseudo-class/#states-set",
       "linkingText": [
-        "states token list"
+        "states set"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -43,20 +43,61 @@
       "definedIn": "pre"
     },
     {
-      "id": "non-attribute-domtokenlist",
-      "href": "https://wicg.github.io/custom-state-pseudo-class/#non-attribute-domtokenlist",
+      "id": "customstateset",
+      "href": "https://wicg.github.io/custom-state-pseudo-class/#customstateset",
       "linkingText": [
-        "non-attribute DOMTokenList"
+        "CustomStateSet"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "interface",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "sec-non-attribute-domtokenlist",
-        "title": "Non-attribute DOMTokenList",
-        "number": "2.1"
+        "id": "exposing",
+        "title": "Exposing custom element states",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-customstateset-add-value-value",
+      "href": "https://wicg.github.io/custom-state-pseudo-class/#dom-customstateset-add-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CustomStateSet/add(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing",
+        "title": "Exposing custom element states",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-customstateset-add",
+      "href": "https://wicg.github.io/custom-state-pseudo-class/#dom-customstateset-add",
+      "linkingText": [
+        "add(value)",
+        "add"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CustomStateSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing",
+        "title": "Exposing custom element states",
+        "number": "2"
       },
       "definedIn": "prose"
     },
