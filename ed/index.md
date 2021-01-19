@@ -2277,7 +2277,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-easing-1/](https://www.w3.org/TR/css-easing-1/)
 - Crawled URL: [https://drafts.csswg.org/css-easing/](https://drafts.csswg.org/css-easing/)
-- Crawled version: 19 April 2020
+- Crawled version: 18 January 2021
 - Editor's Draft: [https://drafts.csswg.org/css-easing/](https://drafts.csswg.org/css-easing/)
 - Latest published version: [https://www.w3.org/TR/css-easing-1/](https://www.w3.org/TR/css-easing-1/)
 - Shortname: css-easing-1
@@ -10958,6 +10958,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 
 
