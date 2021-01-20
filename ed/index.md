@@ -6674,7 +6674,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 19 January 2021
+- Crawled version: 20 January 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -11526,7 +11526,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Crawled URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
-- Crawled version: 19 October 2020
+- Crawled version: 20 January 2021
 - Editor's Draft: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
 - Latest published version: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Shortname: web-share
