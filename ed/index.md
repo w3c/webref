@@ -6674,7 +6674,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 20 January 2021
+- Crawled version: 22 January 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -9252,7 +9252,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/referrer-policy/](https://www.w3.org/TR/referrer-policy/)
 - Crawled URL: [https://w3c.github.io/webappsec-referrer-policy/](https://w3c.github.io/webappsec-referrer-policy/)
-- Crawled version: 19 January 2021
+- Crawled version: 22 January 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-referrer-policy/](https://w3c.github.io/webappsec-referrer-policy/)
 - Latest published version: [https://www.w3.org/TR/referrer-policy/](https://www.w3.org/TR/referrer-policy/)
 - Shortname: referrer-policy
