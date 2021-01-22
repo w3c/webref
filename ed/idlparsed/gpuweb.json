@@ -3807,9 +3807,9 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUProgrammableStageDescriptor": {
+      "GPUProgrammableStage": {
         "type": "dictionary",
-        "name": "GPUProgrammableStageDescriptor",
+        "name": "GPUProgrammableStage",
         "inheritance": null,
         "members": [
           {
@@ -3868,7 +3868,7 @@
         "members": [
           {
             "type": "field",
-            "name": "computeStage",
+            "name": "compute",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -3876,7 +3876,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUProgrammableStageDescriptor"
+              "idlType": "GPUProgrammableStage"
             },
             "default": null,
             "required": true
@@ -3907,7 +3907,7 @@
         "members": [
           {
             "type": "field",
-            "name": "vertexStage",
+            "name": "vertex",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -3915,14 +3915,14 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUProgrammableStageDescriptor"
+              "idlType": "GPUVertexState"
             },
             "default": null,
             "required": true
           },
           {
             "type": "field",
-            "name": "fragmentStage",
+            "name": "primitive",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -3930,37 +3930,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUProgrammableStageDescriptor"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "primitiveTopology",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUPrimitiveTopology"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "rasterizationState",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPURasterizationStateDescriptor"
+              "idlType": "GPUPrimitiveState"
             },
             "default": {
               "type": "dictionary"
@@ -3969,31 +3939,7 @@
           },
           {
             "type": "field",
-            "name": "colorStates",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUColorStateDescriptor"
-                }
-              ]
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "depthStencilState",
+            "name": "depthStencil",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -4001,14 +3947,14 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUDepthStencilStateDescriptor"
+              "idlType": "GPUDepthStencilState"
             },
             "default": null,
             "required": false
           },
           {
             "type": "field",
-            "name": "vertexState",
+            "name": "multisample",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -4016,7 +3962,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUVertexStateDescriptor"
+              "idlType": "GPUMultisampleState"
             },
             "default": {
               "type": "dictionary"
@@ -4025,7 +3971,7 @@
           },
           {
             "type": "field",
-            "name": "sampleCount",
+            "name": "fragment",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -4033,48 +3979,9 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "GPUFragmentState"
             },
-            "default": {
-              "type": "number",
-              "value": "1"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "sampleMask",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUSampleMask"
-            },
-            "default": {
-              "type": "number",
-              "value": "0xFFFFFFFF"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "alphaToCoverageEnabled",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
+            "default": null,
             "required": false
           }
         ],
@@ -4108,11 +4015,44 @@
         ],
         "extAttrs": []
       },
-      "GPURasterizationStateDescriptor": {
+      "GPUPrimitiveState": {
         "type": "dictionary",
-        "name": "GPURasterizationStateDescriptor",
+        "name": "GPUPrimitiveState",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "topology",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUPrimitiveTopology"
+            },
+            "default": {
+              "type": "string",
+              "value": "triangle-list"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "stripIndexFormat",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUIndexFormat"
+            },
+            "default": null,
+            "required": false
+          },
           {
             "type": "field",
             "name": "frontFace",
@@ -4146,78 +4086,6 @@
             "default": {
               "type": "string",
               "value": "none"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "clampDepth",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "depthBias",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUDepthBias"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "depthBiasSlopeScale",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "float"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "depthBiasClamp",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "float"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
             },
             "required": false
           }
@@ -4259,9 +4127,105 @@
         ],
         "extAttrs": []
       },
-      "GPUColorStateDescriptor": {
+      "GPUMultisampleState": {
         "type": "dictionary",
-        "name": "GPUColorStateDescriptor",
+        "name": "GPUMultisampleState",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "count",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "default": {
+              "type": "number",
+              "value": "1"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "mask",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSampleMask"
+            },
+            "default": {
+              "type": "number",
+              "value": "0xFFFFFFFF"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "alphaToCoverageEnabled",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUFragmentState": {
+        "type": "dictionary",
+        "name": "GPUFragmentState",
+        "inheritance": "GPUProgrammableStage",
+        "members": [
+          {
+            "type": "field",
+            "name": "targets",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUColorTargetState"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUColorTargetState": {
+        "type": "dictionary",
+        "name": "GPUColorTargetState",
         "inheritance": null,
         "members": [
           {
@@ -4289,7 +4253,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUBlendDescriptor"
+              "idlType": "GPUBlendState"
             },
             "default": null,
             "required": false
@@ -4316,9 +4280,9 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUBlendDescriptor": {
+      "GPUBlendState": {
         "type": "dictionary",
-        "name": "GPUBlendDescriptor",
+        "name": "GPUBlendState",
         "inheritance": null,
         "members": [
           {
@@ -4618,9 +4582,9 @@
         ],
         "extAttrs": []
       },
-      "GPUDepthStencilStateDescriptor": {
+      "GPUDepthStencilState": {
         "type": "dictionary",
-        "name": "GPUDepthStencilStateDescriptor",
+        "name": "GPUDepthStencilState",
         "inheritance": null,
         "members": [
           {
@@ -4684,7 +4648,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUStencilStateFaceDescriptor"
+              "idlType": "GPUStencilFaceState"
             },
             "default": {
               "type": "dictionary"
@@ -4701,7 +4665,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUStencilStateFaceDescriptor"
+              "idlType": "GPUStencilFaceState"
             },
             "default": {
               "type": "dictionary"
@@ -4743,14 +4707,86 @@
               "value": "0xFFFFFFFF"
             },
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "depthBias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUDepthBias"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "depthBiasSlopeScale",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "depthBiasClamp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "clampDepth",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
-      "GPUStencilStateFaceDescriptor": {
+      "GPUStencilFaceState": {
         "type": "dictionary",
-        "name": "GPUStencilStateFaceDescriptor",
+        "name": "GPUStencilFaceState",
         "inheritance": null,
         "members": [
           {
@@ -5025,29 +5061,14 @@
         ],
         "extAttrs": []
       },
-      "GPUVertexStateDescriptor": {
+      "GPUVertexState": {
         "type": "dictionary",
-        "name": "GPUVertexStateDescriptor",
-        "inheritance": null,
+        "name": "GPUVertexState",
+        "inheritance": "GPUProgrammableStage",
         "members": [
           {
             "type": "field",
-            "name": "indexFormat",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUIndexFormat"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "vertexBuffers",
+            "name": "buffers",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -5062,7 +5083,7 @@
                   "generic": "",
                   "nullable": true,
                   "union": false,
-                  "idlType": "GPUVertexBufferLayoutDescriptor"
+                  "idlType": "GPUVertexBufferLayout"
                 }
               ]
             },
@@ -5076,9 +5097,9 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUVertexBufferLayoutDescriptor": {
+      "GPUVertexBufferLayout": {
         "type": "dictionary",
-        "name": "GPUVertexBufferLayoutDescriptor",
+        "name": "GPUVertexBufferLayout",
         "inheritance": null,
         "members": [
           {
@@ -5131,7 +5152,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUVertexAttributeDescriptor"
+                  "idlType": "GPUVertexAttribute"
                 }
               ]
             },
@@ -5142,9 +5163,9 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUVertexAttributeDescriptor": {
+      "GPUVertexAttribute": {
         "type": "dictionary",
-        "name": "GPUVertexAttributeDescriptor",
+        "name": "GPUVertexAttribute",
         "inheritance": null,
         "members": [
           {
@@ -7643,7 +7664,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPURenderPassColorAttachmentDescriptor"
+                  "idlType": "GPURenderPassColorAttachment"
                 }
               ]
             },
@@ -7660,7 +7681,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPURenderPassDepthStencilAttachmentDescriptor"
+              "idlType": "GPURenderPassDepthStencilAttachment"
             },
             "default": null,
             "required": false
@@ -7684,14 +7705,14 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPURenderPassColorAttachmentDescriptor": {
+      "GPURenderPassColorAttachment": {
         "type": "dictionary",
-        "name": "GPURenderPassColorAttachmentDescriptor",
+        "name": "GPURenderPassColorAttachment",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "attachment",
+            "name": "view",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -7773,14 +7794,14 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPURenderPassDepthStencilAttachmentDescriptor": {
+      "GPURenderPassDepthStencilAttachment": {
         "type": "dictionary",
-        "name": "GPURenderPassDepthStencilAttachmentDescriptor",
+        "name": "GPURenderPassDepthStencilAttachment",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "attachment",
+            "name": "view",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -10177,7 +10198,7 @@
       "GPUPipelineBase": [
         "GPUBindGroupLayout"
       ],
-      "GPUProgrammableStageDescriptor": [
+      "GPUProgrammableStage": [
         "GPUShaderModule"
       ],
       "GPUComputePipeline": [
@@ -10186,7 +10207,7 @@
       ],
       "GPUComputePipelineDescriptor": [
         "GPUPipelineDescriptorBase",
-        "GPUProgrammableStageDescriptor"
+        "GPUProgrammableStage"
       ],
       "GPURenderPipeline": [
         "GPUObjectBase",
@@ -10194,26 +10215,32 @@
       ],
       "GPURenderPipelineDescriptor": [
         "GPUPipelineDescriptorBase",
-        "GPUProgrammableStageDescriptor",
+        "GPUVertexState",
+        "GPUPrimitiveState",
+        "GPUDepthStencilState",
+        "GPUMultisampleState",
+        "GPUFragmentState"
+      ],
+      "GPUPrimitiveState": [
         "GPUPrimitiveTopology",
-        "GPURasterizationStateDescriptor",
-        "GPUColorStateDescriptor",
-        "GPUDepthStencilStateDescriptor",
-        "GPUVertexStateDescriptor",
+        "GPUIndexFormat",
+        "GPUFrontFace",
+        "GPUCullMode"
+      ],
+      "GPUMultisampleState": [
         "GPUSize32",
         "GPUSampleMask"
       ],
-      "GPURasterizationStateDescriptor": [
-        "GPUFrontFace",
-        "GPUCullMode",
-        "GPUDepthBias"
+      "GPUFragmentState": [
+        "GPUProgrammableStage",
+        "GPUColorTargetState"
       ],
-      "GPUColorStateDescriptor": [
+      "GPUColorTargetState": [
         "GPUTextureFormat",
-        "GPUBlendDescriptor",
+        "GPUBlendState",
         "GPUColorWriteFlags"
       ],
-      "GPUBlendDescriptor": [
+      "GPUBlendState": [
         "GPUBlendComponent"
       ],
       "GPUColorWrite": [],
@@ -10221,26 +10248,27 @@
         "GPUBlendFactor",
         "GPUBlendOperation"
       ],
-      "GPUDepthStencilStateDescriptor": [
+      "GPUDepthStencilState": [
         "GPUTextureFormat",
         "GPUCompareFunction",
-        "GPUStencilStateFaceDescriptor",
-        "GPUStencilValue"
+        "GPUStencilFaceState",
+        "GPUStencilValue",
+        "GPUDepthBias"
       ],
-      "GPUStencilStateFaceDescriptor": [
+      "GPUStencilFaceState": [
         "GPUCompareFunction",
         "GPUStencilOperation"
       ],
-      "GPUVertexStateDescriptor": [
-        "GPUIndexFormat",
-        "GPUVertexBufferLayoutDescriptor"
+      "GPUVertexState": [
+        "GPUProgrammableStage",
+        "GPUVertexBufferLayout"
       ],
-      "GPUVertexBufferLayoutDescriptor": [
+      "GPUVertexBufferLayout": [
         "GPUSize64",
         "GPUInputStepMode",
-        "GPUVertexAttributeDescriptor"
+        "GPUVertexAttribute"
       ],
-      "GPUVertexAttributeDescriptor": [
+      "GPUVertexAttribute": [
         "GPUVertexFormat",
         "GPUSize64",
         "GPUIndex32"
@@ -10329,17 +10357,17 @@
       ],
       "GPURenderPassDescriptor": [
         "GPUObjectDescriptorBase",
-        "GPURenderPassColorAttachmentDescriptor",
-        "GPURenderPassDepthStencilAttachmentDescriptor",
+        "GPURenderPassColorAttachment",
+        "GPURenderPassDepthStencilAttachment",
         "GPUQuerySet"
       ],
-      "GPURenderPassColorAttachmentDescriptor": [
+      "GPURenderPassColorAttachment": [
         "GPUTextureView",
         "GPULoadOp",
         "GPUColor",
         "GPUStoreOp"
       ],
-      "GPURenderPassDepthStencilAttachmentDescriptor": [
+      "GPURenderPassDepthStencilAttachment": [
         "GPUTextureView",
         "GPULoadOp",
         "GPUStoreOp",
