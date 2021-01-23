@@ -1,6 +1,30 @@
 % Reffy crawl
 % Reffy
-% January 22, 2021
+% January 23, 2021
+
+## 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
+- Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
+- Crawled version: 22 January 2021
+- Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
+- Latest published version: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
+- Shortname: webxrlayers-1
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
+
+No informative reference to this spec from other specs.
+
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-inconsistentRef=true}
 
@@ -525,7 +549,6 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 No informative reference to this spec from other specs.
 
@@ -5624,7 +5647,6 @@ Normative references to this spec from:
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
@@ -6458,7 +6480,6 @@ Normative references to this spec from:
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -6918,7 +6939,6 @@ Normative references to this spec from:
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -7747,7 +7767,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/media-capabilities/](https://www.w3.org/TR/media-capabilities/)
 - Crawled URL: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
-- Crawled version: 10 December 2020
+- Crawled version: 22 January 2021
 - Editor's Draft: [https://w3c.github.io/media-capabilities/](https://w3c.github.io/media-capabilities/)
 - Latest published version: [https://www.w3.org/TR/media-capabilities/](https://www.w3.org/TR/media-capabilities/)
 - Shortname: media-capabilities
@@ -9429,9 +9449,7 @@ Normative references to this spec from:
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
-Informative references to this spec from:
-
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+No informative reference to this spec from other specs.
 
 
 ## Resize Observer {data-spec=true data-anomaly=true data-missingLinkRef=true}
@@ -10967,7 +10985,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 19 January 2021
+- Crawled version: 22 January 2021
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest
@@ -11371,7 +11389,6 @@ Normative references to this spec from:
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -11765,7 +11782,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -12401,7 +12417,6 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
@@ -12417,7 +12432,6 @@ Although they do not, the following specs should also normatively reference this
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 Informative references to this spec from:
 
@@ -13045,7 +13059,6 @@ Normative references to this spec from:
 
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 Informative references to this spec from:
 
@@ -13090,7 +13103,6 @@ Normative references to this spec from:
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 No informative reference to this spec from other specs.
 
@@ -13185,32 +13197,6 @@ No normative reference to this spec from other specs.
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
-
-No informative reference to this spec from other specs.
-
-
-## WebXR Layers API Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
-- Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled version: 17 January 2021
-- Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Latest published version: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
-- Shortname: webxrlayers-1
-
-### Potential issue(s) {.anomalies}
-
-- Missing references for WebIDL names: 
-     * `WebGLTexture` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-     * `GLenum` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 No informative reference to this spec from other specs.
 

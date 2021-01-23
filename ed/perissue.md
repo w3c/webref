@@ -1,12 +1,13 @@
 % Reffy crawl
 % Reffy
-% January 22, 2021
+% January 23, 2021
 
 380 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
 
+- [500 Internal Server Error](https://immersive-web.github.io/layers/)
 - [Atomics.waitAsync](https://tc39.es/proposal-atomics-wait-async/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
 - [ECMAScript® 2021 Internationalization API Specification](https://tc39.es/ecma402/)
@@ -61,7 +62,7 @@
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 53 specifications found
+=> 54 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -239,11 +240,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLFramebuffer` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLContextAttributes` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLRenderingContextBase` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/) uses:
-    * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 49 missing references for IDL definitions found in 22 specifications
+=> 47 missing references for IDL definitions found in 21 specifications
 
 
 ## Missing references based on document links
