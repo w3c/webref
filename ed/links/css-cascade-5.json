@@ -1,7 +1,7 @@
 {
   "spec": {
-    "title": "CSS Cascading and Inheritance Level 5",
-    "url": "https://drafts.csswg.org/css-cascade-5/"
+    "title": "CSS Cascading and Inheritance Level 4",
+    "url": "https://drafts.csswg.org/css-cascade/"
   },
   "links": {
     "https://www.w3.org/TR/CSS/": [
@@ -53,15 +53,13 @@
       "ex",
       "vh",
       "vw",
-      "typedef-ident",
-      "mult-comma"
+      "ch",
+      "length-value"
     ],
     "https://drafts.csswg.org/css-syntax-3/": [
       "css-property-declarations",
       "at-ruledef-charset",
-      "environment-encoding",
-      "typedef-stylesheet",
-      "identifier"
+      "environment-encoding"
     ],
     "https://drafts.csswg.org/css2/": [
       "valdef-color-red",
@@ -76,31 +74,34 @@
     "https://drafts.csswg.org/css-display-3/": [
       "text-nodes",
       "elements",
+      "inline-box",
       "display-type"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/@import": [],
     "https://drafts.csswg.org/mediaqueries-4/": [
       "typedef-media-query-list",
       "media-query"
     ],
-    "https://www.w3.org/TR/css-conditional-3/": [
+    "https://www.w3.org/TR/css3-conditional/": [
       "support-definition"
     ],
     "https://www.w3.org/TR/CSS2/": [
       "media-types",
       "box-gen"
     ],
-    "https://www.w3.org/TR/mediaqueries-4/": [
+    "https://www.w3.org/TR/css3-mediaqueries/": [
       "width"
     ],
     "https://drafts.csswg.org/css-conditional-3/": [
       "at-ruledef-media",
       "at-ruledef-supports"
     ],
+    "https://www.w3.org/TR/css-conditional/": [],
     "https://html.spec.whatwg.org/": [
       "content-type",
       "same-origin",
+      "the-p-element",
       "the-css-user-agent-style-sheet-and-presentational-hints",
-      "audio",
       "the-s-element",
       "the-slot-element"
     ],
@@ -116,7 +117,7 @@
       "concept-response-url",
       "cors-protocol"
     ],
-    "https://www.w3.org/TR/css-values-3/": [
+    "https://www.w3.org/TR/css3-values/": [
       "common-keywords"
     ],
     "https://www.w3.org/TR/css-break-3/": [
@@ -129,6 +130,7 @@
     "https://www.w3.org/TR/cssom-1/": [
       "serializing-css-values"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/all": [],
     "https://www.w3.org/TR/css-values/": [
       "value-defs",
       "percentages"
@@ -148,7 +150,7 @@
     "https://drafts.csswg.org/css-variables-1/": [
       "custom-property"
     ],
-    "https://www.w3.org/TR/css-writing-modes-3/": [
+    "https://www.w3.org/TR/css3-writing-modes/": [
       "text-direction"
     ],
     "https://drafts.csswg.org/css-scoping-1/": [
@@ -172,6 +174,18 @@
       "propdef-flex",
       "flex-item"
     ],
+    "https://drafts.csswg.org/css-writing-modes-4/": [
+      "propdef-writing-mode",
+      "propdef-text-orientation"
+    ],
+    "https://drafts.csswg.org/css-text-3/": [
+      "propdef-text-transform",
+      "propdef-text-align",
+      "propdef-text-indent"
+    ],
+    "https://drafts.csswg.org/css-inline-3/": [
+      "root-inline-box"
+    ],
     "https://drafts.csswg.org/selectors-4/": [
       "pseudo-element"
     ],
@@ -179,29 +193,39 @@
       "selectordef-before",
       "selectordef-after"
     ],
-    "https://drafts.csswg.org/css-text-3/": [
-      "propdef-text-align",
-      "propdef-text-indent"
-    ],
     "https://drafts.csswg.org/css-lists-3/": [
       "propdef-list-style-position"
     ],
-    "https://www.w3.org/TR/css-style-attr/": [
-      "interpret"
+    "https://www.w3.org/TR/selectors-4/": [
+      "scoping"
     ],
     "https://www.w3.org/TR/selectors/": [
       "specificity"
     ],
-    "https://github.com/w3c/csswg-drafts/issues/5793": [],
-    "https://github.com/w3c/csswg-drafts/issues/5681": [],
-    "https://github.com/w3c/csswg-drafts/issues/5854": [],
-    "https://github.com/w3c/csswg-drafts/issues/5853": [],
-    "https://drafts.csswg.org/css-ui-4/": [
-      "valdef-cursor-default"
+    "https://www.w3.org/TR/css-style-attr/": [
+      "interpret"
     ],
-    "https://github.com/w3c/csswg-drafts/issues/5791": [],
-    "https://github.com/w3c/csswg-drafts/issues/5792": [],
-    "https://www.w3.org/TR/css-cascade-4/": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/initial": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/inherit": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/unset": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/revert": [],
+    "https://www.w3.org/TR/2020/WD-css-cascade-4-20200818/": [],
+    "https://github.com/w3c/csswg-drafts/issues/4839": [],
+    "https://github.com/w3c/csswg-drafts/issues/1861": [],
+    "https://github.com/w3c/csswg-drafts/issues/5565": [],
+    "https://github.com/w3c/csswg-drafts/issues/5633": [],
+    "https://github.com/w3c/csswg-drafts/issues/1964": [],
+    "https://github.com/w3c/csswg-drafts/issues/1548": [],
+    "https://github.com/w3c/csswg-drafts/issues/4838": [],
+    "https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/": [],
+    "https://github.com/w3c/csswg-drafts/issues/5372": [],
+    "https://www.w3.org/TR/2016/CR-css-cascade-4-20160114/": [],
+    "https://github.com/w3c/csswg-drafts/issues/866": [],
+    "https://github.com/w3c/csswg-drafts/issues/2518": [],
+    "https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/": [],
+    "https://github.com/w3c/csswg-drafts/issues/1385": [],
+    "https://drafts.csswg.org/css-cascade-3/issues-cr-2016": [],
+    "https://www.w3.org/TR/2015/WD-css-cascade-4-20150421/": [],
     "https://www.w3.org/TR/css-cascade-3/": [],
     "https://www.w3.org/TR/CSS21/": [
       "style-sheet",
@@ -226,18 +250,22 @@
     "https://www.w3.org/TR/css-scoping-1/": [],
     "https://www.w3.org/TR/css-syntax-3/": [],
     "https://www.w3.org/TR/css-transitions-1/": [],
+    "https://www.w3.org/TR/css-values-3/": [],
     "https://www.w3.org/TR/css-variables-1/": [],
+    "https://www.w3.org/TR/css-writing-modes-3/": [],
+    "https://www.w3.org/TR/css-conditional-3/": [],
+    "https://www.w3.org/TR/mediaqueries-4/": [],
     "https://tools.ietf.org/html/rfc2119": [],
     "https://www.w3.org/TR/selectors-3/": [],
-    "https://www.w3.org/TR/selectors-4/": [],
     "https://www.w3.org/TR/css-align-3/": [],
     "https://www.w3.org/TR/css-break-4/": [],
     "https://www.w3.org/TR/css-flexbox-1/": [],
+    "https://www.w3.org/TR/css-inline-3/": [],
     "https://www.w3.org/TR/css-lists-3/": [],
     "https://www.w3.org/TR/css-page-3/": [],
     "https://www.w3.org/TR/css-sizing-3/": [],
     "https://www.w3.org/TR/css-text-3/": [],
-    "https://www.w3.org/TR/css-ui-4/": [],
+    "https://www.w3.org/TR/css-writing-modes-4/": [],
     "https://www.w3.org/TR/SVG11/": []
   }
 }
