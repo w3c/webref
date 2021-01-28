@@ -380,11 +380,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `javaEnabled()` with type `method` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins)
     * `cancelAnimationFrame(handle)` with type `method` for [`AnimationFrameProvider`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider), but found [`cancelAnimationFrame(handle)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider-cancelanimationframe) with type `dfn`
     * `constructor(type, eventInitDict)` with type `constructor` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
-    * `data` with type `dict-member` for [`MessageEventInit`](https://html.spec.whatwg.org/multipage/comms.html#messageeventinit), but found [`data`](https://html.spec.whatwg.org/multipage/infrastructure.html#concept-cd-data) with type `dfn`
-    * `origin` with type `dict-member` for [`MessageEventInit`](https://html.spec.whatwg.org/multipage/comms.html#messageeventinit), but found [`origin`](https://html.spec.whatwg.org/multipage/infrastructure.html#concept-request-origin) with type `dfn`
-    * `lastEventId` with type `dict-member` for [`MessageEventInit`](https://html.spec.whatwg.org/multipage/comms.html#messageeventinit), but found [`lastEventId`](https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-lasteventid) with type `attribute` for `MessageEvent`
-    * `source` with type `dict-member` for [`MessageEventInit`](https://html.spec.whatwg.org/multipage/comms.html#messageeventinit), but found [`source`](https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element) with type `element`
-    * `ports` with type `dict-member` for [`MessageEventInit`](https://html.spec.whatwg.org/multipage/comms.html#messageeventinit), but found [`ports`](https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-ports) with type `attribute` for `MessageEvent`
     * `constructor(url, eventSourceInitDict)` with type `constructor` for [`EventSource`](https://html.spec.whatwg.org/multipage/server-sent-events.html#eventsource), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `constructor(url, protocols)` with type `constructor` for [`WebSocket`](https://html.spec.whatwg.org/multipage/web-sockets.html#websocket), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `constructor(type, eventInitDict)` with type `constructor` for [`CloseEvent`](https://html.spec.whatwg.org/multipage/web-sockets.html#closeevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
@@ -699,7 +694,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `multiDrawArraysInstancedBaseInstanceWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
     * `multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
 
-=> 392 properties without definition found in 44 specifications
+=> 387 properties without definition found in 44 specifications
 
 
 ## Possibly no definition for CSS properties

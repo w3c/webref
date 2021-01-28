@@ -17,6 +17,7 @@ enum XRLayerLayout {
   attribute boolean blendTextureSourceAlpha;
   attribute boolean? chromaticAberrationCorrection;
   attribute float? fixedFoveation;
+  readonly attribute unsigned long mipLevels;
 
   readonly attribute boolean needsRedraw;
 

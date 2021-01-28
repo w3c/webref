@@ -7512,7 +7512,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 27 January 2021
+- Crawled version: 28 January 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -7641,11 +7641,6 @@ No informative reference to this spec from other specs.
      * `javaEnabled()` with type `method` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins)
      * `cancelAnimationFrame(handle)` with type `method` for [`AnimationFrameProvider`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider), but found [`cancelAnimationFrame(handle)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider-cancelanimationframe) with type `dfn`
      * `constructor(type, eventInitDict)` with type `constructor` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
-     * `data` with type `dict-member` for [`MessageEventInit`](https://html.spec.whatwg.org/multipage/comms.html#messageeventinit), but found [`data`](https://html.spec.whatwg.org/multipage/infrastructure.html#concept-cd-data) with type `dfn`
-     * `origin` with type `dict-member` for [`MessageEventInit`](https://html.spec.whatwg.org/multipage/comms.html#messageeventinit), but found [`origin`](https://html.spec.whatwg.org/multipage/infrastructure.html#concept-request-origin) with type `dfn`
-     * `lastEventId` with type `dict-member` for [`MessageEventInit`](https://html.spec.whatwg.org/multipage/comms.html#messageeventinit), but found [`lastEventId`](https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-lasteventid) with type `attribute` for `MessageEvent`
-     * `source` with type `dict-member` for [`MessageEventInit`](https://html.spec.whatwg.org/multipage/comms.html#messageeventinit), but found [`source`](https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element) with type `element`
-     * `ports` with type `dict-member` for [`MessageEventInit`](https://html.spec.whatwg.org/multipage/comms.html#messageeventinit), but found [`ports`](https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-ports) with type `attribute` for `MessageEvent`
      * `constructor(url, eventSourceInitDict)` with type `constructor` for [`EventSource`](https://html.spec.whatwg.org/multipage/server-sent-events.html#eventsource), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
      * `constructor(url, protocols)` with type `constructor` for [`WebSocket`](https://html.spec.whatwg.org/multipage/web-sockets.html#websocket), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
      * `constructor(type, eventInitDict)` with type `constructor` for [`CloseEvent`](https://html.spec.whatwg.org/multipage/web-sockets.html#closeevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
@@ -9533,7 +9528,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Crawled URL: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
-- Crawled version: 21 January 2021
+- Crawled version: 28 January 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Shortname: mediacapture-streams
@@ -11743,7 +11738,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Crawled URL: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
-- Crawled version: 26 May 2020
+- Crawled version: 28 January 2021
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Shortname: SVG2
@@ -12545,7 +12540,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
 - Crawled URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
-- Crawled version: 26 May 2020
+- Crawled version: 28 January 2021
 - Editor's Draft: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
 - Shortname: svg-animations
 
@@ -12601,7 +12596,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/svg-integration/](https://www.w3.org/TR/svg-integration/)
 - Crawled URL: [https://svgwg.org/specs/integration/](https://svgwg.org/specs/integration/)
-- Crawled version: 26 May 2020
+- Crawled version: 28 January 2021
 - Editor's Draft: [https://svgwg.org/specs/integration/](https://svgwg.org/specs/integration/)
 - Latest published version: [https://www.w3.org/TR/svg-integration/](https://www.w3.org/TR/svg-integration/)
 - Shortname: svg-integration
@@ -12637,7 +12632,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/svg-markers/](https://www.w3.org/TR/svg-markers/)
 - Crawled URL: [https://svgwg.org/specs/markers/](https://svgwg.org/specs/markers/)
-- Crawled version: 26 May 2020
+- Crawled version: 28 January 2021
 - Editor's Draft: [https://svgwg.org/specs/markers/](https://svgwg.org/specs/markers/)
 - Latest published version: [https://www.w3.org/TR/svg-markers/](https://www.w3.org/TR/svg-markers/)
 - Shortname: svg-markers
@@ -12680,7 +12675,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/svg-paths/](https://www.w3.org/TR/svg-paths/)
 - Crawled URL: [https://svgwg.org/specs/paths/](https://svgwg.org/specs/paths/)
-- Crawled version: 26 May 2020
+- Crawled version: 28 January 2021
 - Editor's Draft: [https://svgwg.org/specs/paths/](https://svgwg.org/specs/paths/)
 - Latest published version: [https://www.w3.org/TR/svg-paths/](https://www.w3.org/TR/svg-paths/)
 - Shortname: svg-paths
@@ -12712,7 +12707,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/svg-strokes/](https://www.w3.org/TR/svg-strokes/)
 - Crawled URL: [https://svgwg.org/specs/strokes/](https://svgwg.org/specs/strokes/)
-- Crawled version: 26 May 2020
+- Crawled version: 28 January 2021
 - Editor's Draft: [https://svgwg.org/specs/strokes/](https://svgwg.org/specs/strokes/)
 - Latest published version: [https://www.w3.org/TR/svg-strokes/](https://www.w3.org/TR/svg-strokes/)
 - Shortname: svg-strokes
@@ -15930,7 +15925,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 27 January 2021
+- Crawled version: 28 January 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -16457,7 +16452,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
 - Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled version: 27 January 2021
+- Crawled version: 28 January 2021
 - Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Latest published version: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
 - Shortname: webxrlayers-1
