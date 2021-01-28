@@ -2285,7 +2285,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
-- [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 
@@ -2298,7 +2297,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 25 January 2021
+- Crawled version: 27 January 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -2315,6 +2314,7 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - Broken external links:
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
+     * [`https://drafts.csswg.org/css-color-5/#hue-interpolation`](https://drafts.csswg.org/css-color-5/#hue-interpolation)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2370,7 +2370,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 13 January 2021
+- Crawled version: 27 January 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Latest published version: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Shortname: css-color-5
@@ -5268,7 +5268,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
-- [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
+- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
@@ -5281,7 +5281,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
