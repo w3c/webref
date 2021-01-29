@@ -520,7 +520,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Crawled URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
-- Crawled version: 25 January 2021
+- Crawled version: 29 January 2021
 - Editor's Draft: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Shortname: client-hints-infrastructure
 
@@ -8260,6 +8260,7 @@ Normative references to this spec from:
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Portals](https://wicg.github.io/portals/)
 - [Preload](https://w3c.github.io/preload/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
@@ -8339,10 +8340,6 @@ Normative references to this spec from:
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
-
-Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
-
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 
 Informative references to this spec from:
 
@@ -10972,9 +10969,9 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#event-loop-processing-model`](https://html.spec.whatwg.org/#event-loop-processing-model)
      * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
 - Broken external links:
+     * [`https://www.w3.org/TR/uievents/#widl-UIEvent-detail`](https://www.w3.org/TR/uievents/#widl-UIEvent-detail)
      * [`https://www.w3.org/TR/pointerlock/#widl-MouseEvent-movementX`](https://www.w3.org/TR/pointerlock/#widl-MouseEvent-movementX)
      * [`https://www.w3.org/TR/pointerlock/#widl-MouseEvent-movementY`](https://www.w3.org/TR/pointerlock/#widl-MouseEvent-movementY)
-     * [`https://www.w3.org/TR/uievents/#widl-UIEvent-detail`](https://www.w3.org/TR/uievents/#widl-UIEvent-detail)
      * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
@@ -10991,7 +10988,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingWebIdlRef=true data-missingDfns=true data-inconsistentRef=true}
+## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -11004,9 +11001,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
-- Missing references for WebIDL names: 
-     * `EventHandler` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "ui-events" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 
@@ -13958,6 +13952,7 @@ Normative references to this spec from:
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Portals](https://wicg.github.io/portals/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Private Click Measurement](https://privacycg.github.io/private-click-measurement/)
