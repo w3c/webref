@@ -93,6 +93,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
 - [Frame Timing](https://wicg.github.io/frame-timing/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [SVG Markers](https://svgwg.org/specs/markers/)
@@ -141,7 +142,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - [WebRTC Priority Control API](https://w3c.github.io/webrtc-priority/)
 
-=> 49 specifications found
+=> 50 specifications found
 
 
 
@@ -193,6 +194,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) uses `Gamepad` but does not reference [Gamepad](https://w3c.github.io/gamepad/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/) uses `EventHandler` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [SVG Markers](https://svgwg.org/specs/markers/) uses:
     * `DOMPoint` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
     * `DOMPointReadOnly` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
@@ -248,7 +250,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 49 missing references for IDL definitions found in 22 specifications
+=> 50 missing references for IDL definitions found in 23 specifications
 
 
 ## No definition for CSS properties
@@ -4314,9 +4316,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webdriver/#dfn-session`](https://w3c.github.io/webdriver/#dfn-session)
      * [`https://w3c.github.io/webdriver/#dfn-local-end`](https://w3c.github.io/webdriver/#dfn-local-end)
 - [Pointer Events](https://w3c.github.io/pointerevents/):
-     * [`https://www.w3.org/TR/uievents/#widl-UIEvent-detail`](https://www.w3.org/TR/uievents/#widl-UIEvent-detail)
      * [`https://www.w3.org/TR/pointerlock/#widl-MouseEvent-movementX`](https://www.w3.org/TR/pointerlock/#widl-MouseEvent-movementX)
      * [`https://www.w3.org/TR/pointerlock/#widl-MouseEvent-movementY`](https://www.w3.org/TR/pointerlock/#widl-MouseEvent-movementY)
+     * [`https://www.w3.org/TR/uievents/#widl-UIEvent-detail`](https://www.w3.org/TR/uievents/#widl-UIEvent-detail)
      * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
 - [Preload](https://w3c.github.io/preload/):
      * [`https://mimesniff.spec.whatwg.org/#parsable-mime-type`](https://mimesniff.spec.whatwg.org/#parsable-mime-type)
