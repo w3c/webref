@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% January 28, 2021
+% January 29, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -8,7 +8,7 @@
 
 - Initial URL: [https://w3c.github.io/webappsec-change-password-url/](https://w3c.github.io/webappsec-change-password-url/)
 - Crawled URL: [https://w3c.github.io/webappsec-change-password-url/](https://w3c.github.io/webappsec-change-password-url/)
-- Crawled version: 23 September 2020
+- Crawled version: 28 January 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-change-password-url/](https://w3c.github.io/webappsec-change-password-url/)
 - Shortname: change-password-url
 
