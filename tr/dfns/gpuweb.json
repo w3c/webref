@@ -2071,10 +2071,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpudevice-defaultqueue",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-defaultqueue",
+      "id": "dom-gpudevice-queue",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-queue",
       "linkingText": [
-        "defaultQueue"
+        "queue"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -8344,10 +8344,10 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpudevice-createreadycomputepipeline",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadycomputepipeline",
+      "id": "dom-gpudevice-createcomputepipelineasync",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcomputepipelineasync",
       "linkingText": [
-        "createReadyComputePipeline(descriptor)"
+        "createComputePipelineAsync(descriptor)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -8364,15 +8364,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpudevice-createreadycomputepipeline-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadycomputepipeline-descriptor-descriptor",
+      "id": "dom-gpudevice-createcomputepipelineasync-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createcomputepipelineasync-descriptor-descriptor",
       "linkingText": [
         "descriptor"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUDevice/createReadyComputePipeline(descriptor)"
+        "GPUDevice/createComputePipelineAsync(descriptor)"
       ],
       "access": "public",
       "informative": false,
@@ -8400,6 +8400,24 @@
         "number": "10.3"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "render-stages",
+      "href": "https://gpuweb.github.io/gpuweb/#render-stages",
+      "linkingText": [
+        "render stages"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "render-pipeline",
+        "title": "GPURenderPipeline",
+        "number": "10.3"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-gpurenderpipeline-descriptor-slot",
@@ -8560,6 +8578,42 @@
       "definedIn": "pre"
     },
     {
+      "id": "abstract-opdef-render",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-render",
+      "linkingText": [
+        "render"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pipeline-creation",
+        "title": "Creation",
+        "number": "10.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-fetch-index",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-fetch-index",
+      "linkingText": [
+        "fetch index"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pipeline-creation",
+        "title": "Creation",
+        "number": "10.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "alpha-to-coverage-mask",
       "href": "https://gpuweb.github.io/gpuweb/#alpha-to-coverage-mask",
       "linkingText": [
@@ -8672,10 +8726,10 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpudevice-createreadyrenderpipeline",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadyrenderpipeline",
+      "id": "dom-gpudevice-createrenderpipelineasync",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderpipelineasync",
       "linkingText": [
-        "createReadyRenderPipeline(descriptor)"
+        "createRenderPipelineAsync(descriptor)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -8692,15 +8746,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpudevice-createreadyrenderpipeline-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createreadyrenderpipeline-descriptor-descriptor",
+      "id": "dom-gpudevice-createrenderpipelineasync-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-createrenderpipelineasync-descriptor-descriptor",
       "linkingText": [
         "descriptor"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUDevice/createReadyRenderPipeline(descriptor)"
+        "GPUDevice/createRenderPipelineAsync(descriptor)"
       ],
       "access": "public",
       "informative": false,
