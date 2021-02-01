@@ -12,15 +12,14 @@
           "ProgressEvent"
         ],
         "DedicatedWorker": [
-          "XMLHttpRequest",
-          "ProgressEvent"
+          "XMLHttpRequest"
         ],
         "SharedWorker": [
-          "XMLHttpRequest",
-          "ProgressEvent"
+          "XMLHttpRequest"
         ],
         "Worker": [
-          "FormData"
+          "FormData",
+          "ProgressEvent"
         ]
       },
       "functions": {
@@ -1455,10 +1454,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "DedicatedWorker"
-                },
-                {
-                  "value": "SharedWorker"
+                  "value": "Worker"
                 }
               ]
             },
@@ -1544,17 +1540,16 @@
       "DedicatedWorker": [
         "XMLHttpRequestEventTarget",
         "XMLHttpRequestUpload",
-        "XMLHttpRequest",
-        "ProgressEvent"
+        "XMLHttpRequest"
       ],
       "SharedWorker": [
         "XMLHttpRequestEventTarget",
         "XMLHttpRequestUpload",
-        "XMLHttpRequest",
-        "ProgressEvent"
+        "XMLHttpRequest"
       ],
       "Worker": [
-        "FormData"
+        "FormData",
+        "ProgressEvent"
       ]
     },
     "dependencies": {

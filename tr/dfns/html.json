@@ -875,6 +875,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "convert",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#convert",
+      "linkingText": [
+        "convert"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "space-characters",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#space-characters",
       "linkingText": [
@@ -5699,24 +5717,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "converting-to-a-sequence-of-unicode-scalar-values",
-      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#converting-to-a-sequence-of-unicode-scalar-values",
-      "linkingText": [
-        "converting to a sequence of Unicode scalar values"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "Dependencies",
-        "number": "2.1.9"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "overload-resolution-algorithm",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#overload-resolution-algorithm",
       "linkingText": [
@@ -6009,24 +6009,6 @@
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#idl-enumeration",
       "linkingText": [
         "enumeration"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "Dependencies",
-        "number": "2.1.9"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "idl-error",
-      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#idl-error",
-      "linkingText": [
-        "Error"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -78826,15 +78808,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "optionally-truncate-a-simple-dialog-string",
-      "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#optionally-truncate-a-simple-dialog-string",
+      "id": "dom-alert-noargs",
+      "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-alert-noargs",
       "linkingText": [
-        "optionally truncate a simple dialog string"
+        "alert()"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "method",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "simple-dialogs",
@@ -78895,6 +78879,42 @@
         "Window"
       ],
       "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-dialogs",
+        "title": "Simple dialogs",
+        "number": "8.8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "optionally-truncate-a-simple-dialog-string",
+      "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#optionally-truncate-a-simple-dialog-string",
+      "linkingText": [
+        "optionally truncate a simple dialog string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "simple-dialogs",
+        "title": "Simple dialogs",
+        "number": "8.8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cannot-show-simple-dialogs",
+      "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#cannot-show-simple-dialogs",
+      "linkingText": [
+        "cannot show simple dialogs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "simple-dialogs",
@@ -80834,6 +80854,106 @@
       "localLinkingText": [],
       "type": "dictionary",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-messageevent-interface",
+        "title": "The MessageEvent interface",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-messageeventinit-data",
+      "href": "https://html.spec.whatwg.org/multipage/comms.html#dom-messageeventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MessageEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-messageevent-interface",
+        "title": "The MessageEvent interface",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-messageeventinit-origin",
+      "href": "https://html.spec.whatwg.org/multipage/comms.html#dom-messageeventinit-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MessageEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-messageevent-interface",
+        "title": "The MessageEvent interface",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-messageeventinit-lasteventid",
+      "href": "https://html.spec.whatwg.org/multipage/comms.html#dom-messageeventinit-lasteventid",
+      "linkingText": [
+        "lastEventId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MessageEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-messageevent-interface",
+        "title": "The MessageEvent interface",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-messageeventinit-source",
+      "href": "https://html.spec.whatwg.org/multipage/comms.html#dom-messageeventinit-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MessageEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-messageevent-interface",
+        "title": "The MessageEvent interface",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-messageeventinit-ports",
+      "href": "https://html.spec.whatwg.org/multipage/comms.html#dom-messageeventinit-ports",
+      "linkingText": [
+        "ports"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MessageEventInit"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -94809,66 +94929,6 @@
         "number": "16.3.1"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "handler-marquee-onbounce",
-      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#handler-marquee-onbounce",
-      "linkingText": [
-        "onbounce"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "HTMLMarqueeElement"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-marquee-element",
-        "title": "The marquee element",
-        "number": "16.3.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "handler-marquee-onfinish",
-      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#handler-marquee-onfinish",
-      "linkingText": [
-        "onfinish"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "HTMLMarqueeElement"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-marquee-element",
-        "title": "The marquee element",
-        "number": "16.3.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "handler-marquee-onstart",
-      "href": "https://html.spec.whatwg.org/multipage/obsolete.html#handler-marquee-onstart",
-      "linkingText": [
-        "onstart"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "HTMLMarqueeElement"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-marquee-element",
-        "title": "The marquee element",
-        "number": "16.3.1"
-      },
-      "definedIn": "table"
     },
     {
       "id": "dom-marquee-behavior",
