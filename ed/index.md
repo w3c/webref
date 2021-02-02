@@ -533,11 +533,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
      * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
      * [`https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object)
-- Broken external links:
-     * [`https://wicg.github.io/ua-client-hints/#sec-ch-ua-mobile`](https://wicg.github.io/ua-client-hints/#sec-ch-ua-mobile)
-     * [`https://wicg.github.io/ua-client-hints/#sec-ch-ua-arch`](https://wicg.github.io/ua-client-hints/#sec-ch-ua-arch)
-     * [`https://wicg.github.io/ua-client-hints/#sec-ch-ua-model`](https://wicg.github.io/ua-client-hints/#sec-ch-ua-model)
-     * [`https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform`](https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3068,7 +3063,6 @@ Normative references to this spec from:
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
-- [WOFF File Format 2.0](https://w3c.github.io/woff/woff2/)
 
 Informative references to this spec from:
 
@@ -5809,7 +5803,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Crawled URL: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
-- Crawled version: 11 November 2020
+- Crawled version: 2 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
 - Latest published version: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Shortname: css-values-4
@@ -9979,7 +9973,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
-- Crawled version: 21 November 2020
+- Crawled version: 2 February 2021
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Shortname: mediaqueries-5
@@ -13586,7 +13580,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled version: 1 February 2021
+- Crawled version: 2 February 2021
 - Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Shortname: ua-client-hints
 
@@ -16271,7 +16265,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 31 January 2021
+- Crawled version: 2 February 2021
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -16689,21 +16683,31 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WOFF File Format 2.0 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+## WOFF File Format 2.0 {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/WOFF2/](https://www.w3.org/TR/WOFF2/)
-- Crawled URL: [https://w3c.github.io/woff/woff2/](https://w3c.github.io/woff/woff2/)
-- Crawled version: 11 January 2018
+- Crawled URL: [[object Object]]([object Object])
 - Editor's Draft: [https://w3c.github.io/woff/woff2/](https://w3c.github.io/woff/woff2/)
 - Latest published version: [https://www.w3.org/TR/WOFF2/](https://www.w3.org/TR/WOFF2/)
 - Shortname: WOFF2
 
 ### Potential issue(s) {.anomalies}
 
-- External links that use a dated URL:
-     * [`https://www.w3.org/TR/2012/REC-WOFF-20121213/`](https://www.w3.org/TR/2012/REC-WOFF-20121213/)
+The following network or parsing error occurred:
+`Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:170:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:357:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:78:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:233:24)
+    at async Promise.all (index 379)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:239:21)
+    at async Promise.all (index 0)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 

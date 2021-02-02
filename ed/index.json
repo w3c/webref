@@ -1,11 +1,11 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-02-02T13:04:25.640Z",
+  "date": "2021-02-02T19:03:50.787Z",
   "options": {},
   "stats": {
     "crawled": 381,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -4057,7 +4057,7 @@
         "https://wicg.github.io/ua-client-hints/"
       ],
       "crawled": "https://wicg.github.io/ua-client-hints/",
-      "date": "1 February 2021",
+      "date": "2 February 2021",
       "links": "links/ua-client-hints.json",
       "refs": "refs/ua-client-hints.json",
       "idl": "idl/ua-client-hints.idl",
@@ -4345,7 +4345,7 @@
         "https://wicg.github.io/webusb/"
       ],
       "crawled": "https://wicg.github.io/webusb/",
-      "date": "31 January 2021",
+      "date": "2 February 2021",
       "links": "links/webusb.json",
       "refs": "refs/webusb.json",
       "idl": "idl/webusb.idl",
@@ -9579,7 +9579,7 @@
         "https://drafts.csswg.org/css-values-4/"
       ],
       "crawled": "https://drafts.csswg.org/css-values-4/",
-      "date": "11 November 2020",
+      "date": "2 February 2021",
       "links": "links/css-values-4.json",
       "refs": "refs/css-values-4.json",
       "generator": "bikeshed",
@@ -11393,7 +11393,7 @@
         "https://drafts.csswg.org/mediaqueries-5/"
       ],
       "crawled": "https://drafts.csswg.org/mediaqueries-5/",
-      "date": "21 November 2020",
+      "date": "2 February 2021",
       "links": "links/mediaqueries-5.json",
       "refs": "refs/mediaqueries-5.json",
       "generator": "bikeshed",
@@ -14934,13 +14934,14 @@
         "https://www.w3.org/TR/WOFF2/",
         "https://w3c.github.io/woff/woff2/"
       ],
-      "crawled": "https://w3c.github.io/woff/woff2/",
-      "date": "11 January 2018",
-      "links": "links/WOFF2.json",
-      "refs": "refs/WOFF2.json",
-      "generator": null,
-      "headings": "headings/WOFF2.json",
-      "ids": "ids/WOFF2.json"
+      "crawled": {
+        "url": "https://w3c.github.io/woff/woff2/",
+        "sourcePath": "woff2/index.html",
+        "repository": "https://github.com/w3c/woff",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:170:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:357:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:78:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:233:24)\n    at async Promise.all (index 379)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:239:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://xhr.spec.whatwg.org/",

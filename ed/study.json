@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-02-02T13:04:25.640Z",
+  "date": "2021-02-02T19:03:50.787Z",
   "stats": {
     "crawled": 381,
-    "errors": 0,
+    "errors": 1,
     "studied": 381
   },
   "results": [
@@ -1127,12 +1127,7 @@
             "https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://wicg.github.io/ua-client-hints/#sec-ch-ua-mobile",
-            "https://wicg.github.io/ua-client-hints/#sec-ch-ua-arch",
-            "https://wicg.github.io/ua-client-hints/#sec-ch-ua-model",
-            "https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -8095,11 +8090,6 @@
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/"
-            },
-            {
-              "url": "https://www.w3.org/TR/WOFF2/",
-              "title": "WOFF File Format 2.0",
-              "crawled": "https://w3c.github.io/woff/woff2/"
             }
           ],
           "informative": [
@@ -15689,7 +15679,7 @@
     {
       "title": "CSS Values and Units Module Level 4",
       "shortname": "css-values-4",
-      "date": "11 November 2020",
+      "date": "2 February 2021",
       "url": "https://www.w3.org/TR/css-values-4/",
       "release": {
         "url": "https://www.w3.org/TR/css-values-4/",
@@ -35991,7 +35981,7 @@
     {
       "title": "Media Queries Level 5",
       "shortname": "mediaqueries-5",
-      "date": "21 November 2020",
+      "date": "2 February 2021",
       "url": "https://www.w3.org/TR/mediaqueries-5/",
       "release": {
         "url": "https://www.w3.org/TR/mediaqueries-5/",
@@ -44547,7 +44537,7 @@
     {
       "title": "User-Agent Client Hints",
       "shortname": "ua-client-hints",
-      "date": "1 February 2021",
+      "date": "2 February 2021",
       "url": "https://wicg.github.io/ua-client-hints/",
       "nightly": {
         "url": "https://wicg.github.io/ua-client-hints/",
@@ -53052,7 +53042,7 @@
     {
       "title": "WebUSB API",
       "shortname": "webusb",
-      "date": "31 January 2021",
+      "date": "2 February 2021",
       "url": "https://wicg.github.io/webusb/",
       "nightly": {
         "url": "https://wicg.github.io/webusb/",
@@ -53888,7 +53878,7 @@
     {
       "title": "WOFF File Format 2.0",
       "shortname": "WOFF2",
-      "date": "11 January 2018",
+      "date": "",
       "url": "https://www.w3.org/TR/WOFF2/",
       "release": {
         "url": "https://www.w3.org/TR/WOFF2/",
@@ -53900,9 +53890,15 @@
         "repository": "https://github.com/w3c/woff",
         "filename": "index.html"
       },
-      "crawled": "https://w3c.github.io/woff/woff2/",
+      "crawled": {
+        "url": "https://w3c.github.io/woff/woff2/",
+        "sourcePath": "woff2/index.html",
+        "repository": "https://github.com/w3c/woff",
+        "filename": "index.html"
+      },
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:170:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:357:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:78:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:233:24)\n    at async Promise.all (index 379)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:239:21)\n    at async Promise.all (index 0)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
         "unknownExposedNames": [],
@@ -53923,16 +53919,6 @@
               "title": "Local Font Access API",
               "crawled": "https://wicg.github.io/local-font-access/"
             }
-          ]
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": [
-            "https://www.w3.org/TR/2012/REC-WOFF-20121213/"
           ]
         },
         "ok": false
