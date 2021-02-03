@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 02, 2021
+% February 03, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -4646,6 +4646,8 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- External links to private terms:
+     * [`https://drafts.csswg.org/css-inline-3/#line-relative-shift-values`](https://drafts.csswg.org/css-inline-3/#line-relative-shift-values)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
@@ -6462,6 +6464,7 @@ Normative references to this spec from:
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
 - [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 
 Informative references to this spec from:
 
@@ -6705,6 +6708,7 @@ Normative references to this spec from:
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
+- [WebTransport](https://w3c.github.io/webtransport/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
@@ -7846,7 +7850,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 29 January 2021
+- Crawled version: 2 February 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -8870,7 +8874,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
 - Crawled URL: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
-- Crawled version: 07 October 2020
+- Crawled version: 03 February 2021
 - Editor's Draft: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
 - Latest published version: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
 - Shortname: image-resource
@@ -9279,18 +9283,20 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## JS Self-Profiling API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## JS Self-Profiling API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
 - Crawled URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
-- Crawled version: 01 February 2021
+- Crawled version: 02 February 2021
 - Editor's Draft: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
 - Shortname: js-self-profiling
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for WebIDL names: 
+     * `EventTarget` defined in [DOM Standard](https://dom.spec.whatwg.org/)
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html)
 - Broken external links:
@@ -12079,6 +12085,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Image Resource](https://w3c.github.io/image-resource/)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
@@ -13770,6 +13777,7 @@ Normative references to this spec from:
 - [Badging API](https://w3c.github.io/badging/)
 - [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Image Resource](https://w3c.github.io/image-resource/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
@@ -16243,7 +16251,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 9 December 2020
+- Crawled version: 3 February 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Shortname: webtransport
 

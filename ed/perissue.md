@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 02, 2021
+% February 03, 2021
 
 381 specifications were crawled in this report.
 
@@ -201,6 +201,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) uses `Gamepad` but does not reference [Gamepad](https://w3c.github.io/gamepad/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [SVG Markers](https://svgwg.org/specs/markers/) uses:
     * `DOMPoint` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
     * `DOMPointReadOnly` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
@@ -256,7 +257,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 49 missing references for IDL definitions found in 22 specifications
+=> 50 missing references for IDL definitions found in 23 specifications
 
 
 ## No definition for CSS properties
@@ -2171,6 +2172,8 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/):
      * [`https://drafts.csswg.org/css-syntax-3/#input-stream`](https://drafts.csswg.org/css-syntax-3/#input-stream)
      * [`https://drafts.csswg.org/css-syntax-3/#check-if-three-code-points-would-start-an-identifier`](https://drafts.csswg.org/css-syntax-3/#check-if-three-code-points-would-start-an-identifier)
+- [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/):
+     * [`https://drafts.csswg.org/css-inline-3/#line-relative-shift-values`](https://drafts.csswg.org/css-inline-3/#line-relative-shift-values)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/):
      * [`https://html.spec.whatwg.org/#dom-anchor`](https://html.spec.whatwg.org/#dom-anchor)
      * [`https://html.spec.whatwg.org/#focused-area-of-the-document`](https://html.spec.whatwg.org/#focused-area-of-the-document)
@@ -3263,7 +3266,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1180 problematic external links found in 190 specifications
+=> 1181 problematic external links found in 191 specifications
 
 
 ## External links that neither target definitions nor headings
