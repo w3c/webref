@@ -5,7 +5,15 @@
   },
   "idlparsed": {
     "jsNames": {
-      "constructors": {},
+      "constructors": {
+        "Window": [
+          "SFrameTransform",
+          "RTCRtpScriptTransform"
+        ],
+        "DedicatedWorker": [
+          "SFrameTransform"
+        ]
+      },
       "functions": {
         "Window": [
           "RTCEncodedVideoFrame",
@@ -409,6 +417,187 @@
           }
         ],
         "partial": false
+      },
+      "RTCRtpTransform": {
+        "type": "typedef",
+        "name": "RTCRtpTransform",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SFrameTransform"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RTCRtpScriptTransform"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "SFrameTransformRole": {
+        "type": "enum",
+        "name": "SFrameTransformRole",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "encrypt"
+          },
+          {
+            "type": "enum-value",
+            "value": "decrypt"
+          }
+        ],
+        "extAttrs": []
+      },
+      "SFrameTransformOptions": {
+        "type": "dictionary",
+        "name": "SFrameTransformOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "role",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SFrameTransformRole"
+            },
+            "default": {
+              "type": "string",
+              "value": "encrypt"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SFrameTransform": {
+        "type": "interface",
+        "name": "SFrameTransform",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SFrameTransformOptions"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "RTCRtpScriptTransform": {
+        "type": "interface",
+        "name": "RTCRtpScriptTransform",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "worker",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Worker"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "object"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -461,6 +650,21 @@
               "arguments": [],
               "extAttrs": [],
               "special": ""
+            },
+            {
+              "type": "attribute",
+              "name": "transform",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "RTCRtpTransform"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
             }
           ],
           "extAttrs": [],
@@ -487,10 +691,32 @@
               "arguments": [],
               "extAttrs": [],
               "special": ""
+            },
+            {
+              "type": "attribute",
+              "name": "transform",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "RTCRtpTransform"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
             }
           ],
           "extAttrs": [],
           "partial": true
+        }
+      ],
+      "SFrameTransform": [
+        {
+          "name": "SFrameTransform",
+          "type": "interface",
+          "includes": "GenericTransformStream"
         }
       ]
     },
@@ -498,7 +724,12 @@
     "exposed": {
       "Window": [
         "RTCEncodedVideoFrame",
-        "RTCEncodedAudioFrame"
+        "RTCEncodedAudioFrame",
+        "SFrameTransform",
+        "RTCRtpScriptTransform"
+      ],
+      "DedicatedWorker": [
+        "SFrameTransform"
       ]
     },
     "dependencies": {
@@ -517,10 +748,22 @@
       ],
       "RTCConfiguration": [],
       "RTCRtpSender": [
-        "RTCInsertableStreams"
+        "RTCInsertableStreams",
+        "RTCRtpTransform"
       ],
       "RTCRtpReceiver": [
-        "RTCInsertableStreams"
+        "RTCInsertableStreams",
+        "RTCRtpTransform"
+      ],
+      "SFrameTransformOptions": [
+        "SFrameTransformRole"
+      ],
+      "SFrameTransform": [
+        "SFrameTransformOptions",
+        "GenericTransformStream"
+      ],
+      "RTCRtpScriptTransform": [
+        "Worker"
       ]
     },
     "externalDependencies": [
@@ -528,7 +771,8 @@
       "WritableStream",
       "RTCConfiguration",
       "RTCRtpSender",
-      "RTCRtpReceiver"
+      "RTCRtpReceiver",
+      "Worker"
     ],
     "hasObsoleteIdl": false
   }
