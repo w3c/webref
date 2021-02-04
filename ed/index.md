@@ -6538,7 +6538,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
 - Crawled URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
-- Crawled version: 3 February 2021
+- Crawled version: 4 February 2021
 - Editor's Draft: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
 - Shortname: ecmascript
 
@@ -9905,7 +9905,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
 - Crawled URL: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
-- Crawled version: 18 January 2020
+- Crawled version: 04 February 2021
 - Editor's Draft: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
 - Shortname: media-playback-quality
 
