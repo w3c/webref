@@ -16,7 +16,6 @@ enum XRLayerLayout {
 
   attribute boolean blendTextureSourceAlpha;
   attribute boolean? chromaticAberrationCorrection;
-  attribute float? fixedFoveation;
   readonly attribute unsigned long mipLevels;
 
   readonly attribute boolean needsRedraw;
@@ -30,6 +29,7 @@ enum XRLayerLayout {
   readonly attribute unsigned long textureArrayLength;
 
   readonly attribute boolean ignoreDepthValues;
+  attribute float? fixedFoveation;
 };
 
 [Exposed=Window] interface XRQuadLayer : XRCompositionLayer {
