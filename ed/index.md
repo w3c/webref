@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 04, 2021
+% February 05, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -2002,7 +2002,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-sizing-4/](https://www.w3.org/TR/css-sizing-4/)
 - Crawled URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
-- Crawled version: 3 February 2021
+- Crawled version: 4 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
 - Latest published version: [https://www.w3.org/TR/css-sizing-4/](https://www.w3.org/TR/css-sizing-4/)
 - Shortname: css-sizing-4
@@ -7012,7 +7012,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/file-system-access/](https://wicg.github.io/file-system-access/)
 - Crawled URL: [https://wicg.github.io/file-system-access/](https://wicg.github.io/file-system-access/)
-- Crawled version: 26 January 2021
+- Crawled version: 4 February 2021
 - Editor's Draft: [https://wicg.github.io/file-system-access/](https://wicg.github.io/file-system-access/)
 - Shortname: file-system-access
 
@@ -10794,7 +10794,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Payment Request API](https://w3c.github.io/payment-request/)
 
 Informative references to this spec from:
 
@@ -10903,7 +10905,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Crawled URL: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
-- Crawled version: 01 December 2020
+- Crawled version: 04 February 2021
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
@@ -13077,7 +13079,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-top-level-await/](https://tc39.es/proposal-top-level-await/)
 - Crawled URL: [https://tc39.es/proposal-top-level-await/](https://tc39.es/proposal-top-level-await/)
-- Crawled version: 3 February 2021
+- Crawled version: 4 February 2021
 - Editor's Draft: [https://tc39.es/proposal-top-level-await/](https://tc39.es/proposal-top-level-await/)
 - Shortname: tc39-top-level-await
 
