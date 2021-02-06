@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 05, 2021
+% February 06, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -895,7 +895,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- [CORS and RFC1918](https://wicg.github.io/private-network-access/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -1064,7 +1064,7 @@ No informative reference to this spec from other specs.
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
-- Crawled URL: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
+- Crawled URL: [https://wicg.github.io/private-network-access/](https://wicg.github.io/private-network-access/)
 - Crawled version: 10 December 2020
 - Editor's Draft: [https://wicg.github.io/cors-rfc1918/](https://wicg.github.io/cors-rfc1918/)
 - Shortname: cors-rfc1918
@@ -6465,7 +6465,7 @@ Normative references to this spec from:
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- [CORS and RFC1918](https://wicg.github.io/private-network-access/)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 
 Informative references to this spec from:
@@ -6853,7 +6853,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- [CORS and RFC1918](https://wicg.github.io/private-network-access/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -8480,7 +8480,7 @@ Normative references to this spec from:
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- [CORS and RFC1918](https://wicg.github.io/private-network-access/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
@@ -10278,7 +10278,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- [CORS and RFC1918](https://wicg.github.io/private-network-access/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -13454,7 +13454,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- [CORS and RFC1918](https://wicg.github.io/private-network-access/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
