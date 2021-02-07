@@ -1,11 +1,11 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-02-07T12:53:15.085Z",
+  "date": "2021-02-07T18:53:49.833Z",
   "options": {},
   "stats": {
     "crawled": 381,
-    "errors": 1
+    "errors": 2
   },
   "results": [
     {
@@ -6441,15 +6441,14 @@
         "https://www.w3.org/TR/css-align-3/",
         "https://drafts.csswg.org/css-align/"
       ],
-      "crawled": "https://drafts.csswg.org/css-align/",
-      "date": "15 January 2021",
-      "links": "links/css-align-3.json",
-      "refs": "refs/css-align-3.json",
-      "generator": "bikeshed",
-      "css": "css/css-align.json",
-      "dfns": "dfns/css-align-3.json",
-      "headings": "headings/css-align-3.json",
-      "ids": "ids/css-align-3.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-align/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-align-3/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "date": "",
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://www.w3.org/TR/css-animation-worklet-1/",
