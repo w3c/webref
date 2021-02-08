@@ -21,7 +21,7 @@
       "Profiler": {
         "type": "interface",
         "name": "Profiler",
-        "inheritance": null,
+        "inheritance": "EventTarget",
         "members": [
           {
             "type": "attribute",
@@ -487,6 +487,7 @@
     },
     "dependencies": {
       "Profiler": [
+        "EventTarget",
         "DOMHighResTimeStamp",
         "ProfilerTrace"
       ],
@@ -510,6 +511,7 @@
       ]
     },
     "externalDependencies": [
+      "EventTarget",
       "DOMHighResTimeStamp",
       "Performance"
     ],

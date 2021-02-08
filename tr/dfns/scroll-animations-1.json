@@ -235,30 +235,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-scrolltimelineoptions-start",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimelineoptions-start",
+      "id": "dom-scrolltimelineoptions-scrolloffsets",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimelineoptions-scrolloffsets",
       "linkingText": [
-        "start"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ScrollTimelineOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "scrolltimeline-interface",
-        "title": "The ScrollTimeline interface",
-        "number": "3.1.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-scrolltimelineoptions-end",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimelineoptions-end",
-      "linkingText": [
-        "end"
+        "scrollOffsets"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -417,10 +397,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-scrolltimeline-start",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-start",
+      "id": "dom-scrolltimeline-scrolloffsets",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-scrolloffsets",
       "linkingText": [
-        "start"
+        "scrollOffsets"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -453,26 +433,6 @@
         "number": "3.1.2"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dom-scrolltimeline-end",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-end",
-      "linkingText": [
-        "end"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "ScrollTimeline"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "scrolltimeline-interface",
-        "title": "The ScrollTimeline interface",
-        "number": "3.1.2"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "dom-scrolltimeline-timerange",
@@ -811,10 +771,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "effective-scroll-range",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#effective-scroll-range",
+      "id": "effective-scroll-offsets",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#effective-scroll-offsets",
       "linkingText": [
-        "effective scroll range"
+        "effective scroll offsets"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -822,9 +782,63 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "effective-scroll-range-algorithm",
-        "title": "The effective scroll range of a ScrollTimeline",
+        "id": "effective-scroll-offsets-algorithm",
+        "title": "The effective scroll offsets of a ScrollTimeline",
         "number": "3.1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "resolve-scroll-timeline-offsets",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#resolve-scroll-timeline-offsets",
+      "linkingText": [
+        "resolve scroll timeline offsets"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "effective-scroll-offsets-algorithm",
+        "title": "The effective scroll offsets of a ScrollTimeline",
+        "number": "3.1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scroll-timeline-progress",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-progress",
+      "linkingText": [
+        "scroll timeline progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "progress-calculation-algorithm",
+        "title": "The progress of a ScrollTimeline",
+        "number": "3.1.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "calculate-scroll-timeline-progress",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#calculate-scroll-timeline-progress",
+      "linkingText": [
+        "calculate scroll timeline progress"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "progress-calculation-algorithm",
+        "title": "The progress of a ScrollTimeline",
+        "number": "3.1.6"
       },
       "definedIn": "prose"
     },
@@ -887,10 +901,10 @@
       "definedIn": "table"
     },
     {
-      "id": "descdef-scroll-timeline-start",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#descdef-scroll-timeline-start",
+      "id": "descdef-scroll-timeline-scroll-offsets",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#descdef-scroll-timeline-scroll-offsets",
       "linkingText": [
-        "start"
+        "scroll-offsets"
       ],
       "localLinkingText": [],
       "type": "descriptor",
@@ -959,26 +973,6 @@
         "number": "3.2.1"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "descdef-scroll-timeline-end",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#descdef-scroll-timeline-end",
-      "linkingText": [
-        "end"
-      ],
-      "localLinkingText": [],
-      "type": "descriptor",
-      "for": [
-        "@scroll-timeline"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "scroll-timeline-descriptors",
-        "title": "Scroll Timeline descriptors",
-        "number": "3.2.1"
-      },
-      "definedIn": "table"
     },
     {
       "id": "descdef-scroll-timeline-time-range",
@@ -1079,30 +1073,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-cssscrolltimelinerule-start",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-cssscrolltimelinerule-start",
+      "id": "dom-cssscrolltimelinerule-scrolloffsets",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-cssscrolltimelinerule-scrolloffsets",
       "linkingText": [
-        "start"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "CSSScrollTimelineRule"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-css-scroll-timeline-rule-interface",
-        "title": "The CSSScrollTimelineRule Interface",
-        "number": "3.2.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-cssscrolltimelinerule-end",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-cssscrolltimelinerule-end",
-      "linkingText": [
-        "end"
+        "scrollOffsets"
       ],
       "localLinkingText": [],
       "type": "attribute",

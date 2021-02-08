@@ -151,37 +151,28 @@
           },
           {
             "type": "field",
-            "name": "start",
+            "name": "scrollOffsets",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
-              "idlType": "ScrollTimelineOffset"
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ScrollTimelineOffset"
+                }
+              ]
             },
             "default": {
-              "type": "string",
-              "value": "auto"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "end",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ScrollTimelineOffset"
-            },
-            "default": {
-              "type": "string",
-              "value": "auto"
+              "type": "sequence",
+              "value": []
             },
             "required": false
           },
@@ -285,29 +276,23 @@
           },
           {
             "type": "attribute",
-            "name": "start",
+            "name": "scrollOffsets",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "FrozenArray",
               "nullable": false,
               "union": false,
-              "idlType": "ScrollTimelineOffset"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "end",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ScrollTimelineOffset"
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ScrollTimelineOffset"
+                }
+              ]
             },
             "extAttrs": [],
             "special": "",
@@ -486,22 +471,7 @@
           },
           {
             "type": "attribute",
-            "name": "start",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CSSOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "end",
+            "name": "scrollOffsets",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],

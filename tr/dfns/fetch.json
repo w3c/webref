@@ -1513,7 +1513,7 @@
       "id": "request-keepalive-flag",
       "href": "https://fetch.spec.whatwg.org/#request-keepalive-flag",
       "linkingText": [
-        "keepalive flag"
+        "keepalive"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2554,26 +2554,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "concept-response-location-url",
-      "href": "https://fetch.spec.whatwg.org/#concept-response-location-url",
-      "linkingText": [
-        "location URL"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "response"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "responses",
-        "title": "Responses",
-        "number": "2.2.6"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "concept-aborted-network-error",
       "href": "https://fetch.spec.whatwg.org/#concept-aborted-network-error",
       "linkingText": [
@@ -2636,7 +2616,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "internal"
+        "filtered response"
       ],
       "access": "public",
       "informative": false,
@@ -2784,6 +2764,26 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "responses",
+        "title": "Responses",
+        "number": "2.2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "concept-response-location-url",
+      "href": "https://fetch.spec.whatwg.org/#concept-response-location-url",
+      "linkingText": [
+        "location URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "response"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -4296,6 +4296,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "headers-guard",
+      "href": "https://fetch.spec.whatwg.org/#headers-guard",
+      "linkingText": [
+        "headers guard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "headers-class",
+        "title": "Headers class",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "concept-headers-append",
       "href": "https://fetch.spec.whatwg.org/#concept-headers-append",
       "linkingText": [
@@ -4562,8 +4580,10 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "BodyInit/extract"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "bodyinit-unions",
@@ -4631,30 +4651,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "concept-body-disturbed",
-      "href": "https://fetch.spec.whatwg.org/#concept-body-disturbed",
+      "id": "body-unusable",
+      "href": "https://fetch.spec.whatwg.org/#body-unusable",
       "linkingText": [
-        "disturbed"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "Body"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "body-mixin",
-        "title": "Body mixin",
-        "number": "5.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "concept-body-locked",
-      "href": "https://fetch.spec.whatwg.org/#concept-body-locked",
-      "linkingText": [
-        "locked"
+        "unusable"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -6081,6 +6081,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "request-create",
+      "href": "https://fetch.spec.whatwg.org/#request-create",
+      "linkingText": [
+        "create",
+        "creating"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-class",
+        "title": "Request class",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-request",
       "href": "https://fetch.spec.whatwg.org/#dom-request",
       "linkingText": [
@@ -6774,6 +6795,27 @@
       "href": "https://fetch.spec.whatwg.org/#response-headers",
       "linkingText": [
         "headers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Response"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "response-class",
+        "title": "Response class",
+        "number": "5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "response-create",
+      "href": "https://fetch.spec.whatwg.org/#response-create",
+      "linkingText": [
+        "create",
+        "creating"
       ],
       "localLinkingText": [],
       "type": "dfn",

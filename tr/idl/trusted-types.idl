@@ -6,16 +6,19 @@
 [Exposed=Window, SecureContext]
 interface TrustedHTML {
   stringifier;
+  DOMString toJSON();
 };
 
 [Exposed=Window, SecureContext]
 interface TrustedScript {
   stringifier;
+  DOMString toJSON();
 };
 
 [Exposed=Window, SecureContext]
 interface TrustedScriptURL {
   stringifier;
+  USVString toJSON();
 };
 
 [Exposed=Window, SecureContext] interface TrustedTypePolicyFactory {

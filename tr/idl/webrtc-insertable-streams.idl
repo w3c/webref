@@ -55,11 +55,37 @@ partial dictionary RTCConfiguration {
     boolean encodedInsertableStreams = false;
 };
 
+typedef (SFrameTransform or RTCRtpScriptTransform) RTCRtpTransform;
+
 // New methods for RTCRtpSender and RTCRtpReceiver
 partial interface RTCRtpSender {
     RTCInsertableStreams createEncodedStreams();
+    attribute RTCRtpTransform? transform;
 };
 
 partial interface RTCRtpReceiver {
     RTCInsertableStreams createEncodedStreams();
+    attribute RTCRtpTransform? transform;
+};
+
+enum SFrameTransformRole {
+    "encrypt",
+    "decrypt"
+};
+
+dictionary SFrameTransformOptions {
+    SFrameTransformRole role = "encrypt";
+};
+
+[Exposed=(Window,DedicatedWorker)]
+interface SFrameTransform {
+    constructor(optional SFrameTransformOptions options);
+    // FIXME: add key handling methods.
+};
+SFrameTransform includes GenericTransformStream;
+
+[Exposed=(Window)]
+interface RTCRtpScriptTransform {
+    constructor(Worker worker, optional object options);
+    // FIXME: add messaging methods.
 };
