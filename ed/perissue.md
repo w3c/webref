@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 07, 2021
+% February 08, 2021
 
 381 specifications were crawled in this report.
 
@@ -9,8 +9,6 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [CSS Box Alignment Module Level 3]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111`
 - [WOFF File Format 2.0]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
     at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:170:23)
     at runMicrotasks (<anonymous>)
@@ -22,7 +20,7 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:239:21)
     at async Promise.all (index 0)`
 
-=> 2 specifications found
+=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -871,6 +869,17 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/) but does not list it in its references
     * [`https://w3c.github.io/contentEditable/`](https://w3c.github.io/contentEditable/) but does not list it in its references
+- [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/) links to:
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
+    * [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-flexbox/`](https://www.w3.org/TR/css-flexbox/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-grid/`](https://www.w3.org/TR/css-grid/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-flexbox/`](https://www.w3.org/TR/css3-flexbox/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-grid-layout/`](https://www.w3.org/TR/css3-grid-layout/) but does not list it in its references
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/2018/WD-css3-box-20180731/`](https://www.w3.org/TR/2018/WD-css3-box-20180731/) but does not list it in its references
@@ -1484,7 +1493,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 581 missing references for links found in 166 specifications
+=> 591 missing references for links found in 167 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1552,6 +1561,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1877,7 +1887,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 316 inconsistent references for links found in 172 specifications
+=> 317 inconsistent references for links found in 173 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -2088,6 +2098,10 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/):
      * [`https://html.spec.whatwg.org/#concept-fe-mutable`](https://html.spec.whatwg.org/#concept-fe-mutable)
      * [`https://www.w3.org/TR/css-style-attr/#style-attribute`](https://www.w3.org/TR/css-style-attr/#style-attribute)
+- [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/):
+     * [`https://drafts.csswg.org/css2/#line-box`](https://drafts.csswg.org/css2/#line-box)
+     * [`https://drafts.csswg.org/css-grid-1/#collapsed-gutter`](https://drafts.csswg.org/css-grid-1/#collapsed-gutter)
+     * [`https://drafts.csswg.org/css-writing-modes-3/#dominant-baseline`](https://drafts.csswg.org/css-writing-modes-3/#dominant-baseline)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/):
      * [`https://html.spec.whatwg.org/#concept-textarea-raw-value`](https://html.spec.whatwg.org/#concept-textarea-raw-value)
      * [`https://html.spec.whatwg.org/#concept-fe-value`](https://html.spec.whatwg.org/#concept-fe-value)
@@ -3253,7 +3267,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1178 problematic external links found in 190 specifications
+=> 1181 problematic external links found in 191 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -3826,10 +3840,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#drag-data-item-type-string`](https://html.spec.whatwg.org/#drag-data-item-type-string)
      * [`https://w3c.github.io/FileAPI/#dfn-blobparts`](https://w3c.github.io/FileAPI/#dfn-blobparts)
 - [Compatibility Standard](https://compat.spec.whatwg.org/):
-     * [`https://drafts.csswg.org/css-align-3/#propdef-align-items`](https://drafts.csswg.org/css-align-3/#propdef-align-items)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-align-content`](https://drafts.csswg.org/css-align-3/#propdef-align-content)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-align-self`](https://drafts.csswg.org/css-align-3/#propdef-align-self)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-justify-content`](https://drafts.csswg.org/css-align-3/#propdef-justify-content)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-transitions/#animtype-color`](https://drafts.csswg.org/css-transitions/#animtype-color)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/):
@@ -3882,45 +3892,20 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://w3c.github.io/contentEditable/#dfn-editing-host`](https://w3c.github.io/contentEditable/#dfn-editing-host)
-- [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/):
-     * [`https://drafts.csswg.org/css-align-3/#gutter`](https://drafts.csswg.org/css-align-3/#gutter)
-- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/):
-     * [`https://drafts.csswg.org/css-align-3/#propdef-justify-self`](https://drafts.csswg.org/css-align-3/#propdef-justify-self)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-justify-self-stretch`](https://drafts.csswg.org/css-align-3/#valdef-justify-self-stretch)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-start`](https://drafts.csswg.org/css-align-3/#valdef-self-position-start)
-     * [`https://drafts.csswg.org/css-align-3/#self-alignment-properties`](https://drafts.csswg.org/css-align-3/#self-alignment-properties)
-     * [`https://drafts.csswg.org/css-align-3/#alignment-container`](https://drafts.csswg.org/css-align-3/#alignment-container)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-align-self-stretch`](https://drafts.csswg.org/css-align-3/#valdef-align-self-stretch)
-     * [`https://www.w3.org/TR/css-align-3/#justify-abspos`](https://www.w3.org/TR/css-align-3/#justify-abspos)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/):
-     * [`https://drafts.csswg.org/css-align-3/#valdef-justify-self-auto`](https://drafts.csswg.org/css-align-3/#valdef-justify-self-auto)
+- [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/):
+     * [`https://drafts.csswg.org/selectors-3/#first-formatted-line0`](https://drafts.csswg.org/selectors-3/#first-formatted-line0)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-justify-self-auto`](https://drafts.csswg.org/css-align-3/#valdef-justify-self-auto)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-justify-self-auto`](https://drafts.csswg.org/css-align-3/#valdef-justify-self-auto)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/):
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/):
      * [`https://www.w3.org/TR/css3-syntax/#property-defs`](https://www.w3.org/TR/css3-syntax/#property-defs)
-- [CSS Display Module Level 3](https://drafts.csswg.org/css-display/):
-     * [`https://drafts.csswg.org/css-align-3/#propdef-align-content`](https://drafts.csswg.org/css-align-3/#propdef-align-content)
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/):
      * [`https://www.w3.org/TR/css-color-3/#valuea-def-color`](https://www.w3.org/TR/css-color-3/#valuea-def-color)
-- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/):
-     * [`https://drafts.csswg.org/css-align-3/#alignment-container`](https://drafts.csswg.org/css-align-3/#alignment-container)
-     * [`https://drafts.csswg.org/css-align-3/#synthesize-baseline`](https://drafts.csswg.org/css-align-3/#synthesize-baseline)
-     * [`https://drafts.csswg.org/css-align-3/#generate-baselines`](https://drafts.csswg.org/css-align-3/#generate-baselines)
-     * [`https://drafts.csswg.org/css-align-3/#alignment-baseline`](https://drafts.csswg.org/css-align-3/#alignment-baseline)
-     * [`https://drafts.csswg.org/css-align-3/#baseline-set`](https://drafts.csswg.org/css-align-3/#baseline-set)
-     * [`https://drafts.csswg.org/css-align-3/#shared-alignment-context`](https://drafts.csswg.org/css-align-3/#shared-alignment-context)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-start`](https://drafts.csswg.org/css-align-3/#valdef-self-position-start)
-     * [`https://drafts.csswg.org/css-align-3/#last-baseline-alignment`](https://drafts.csswg.org/css-align-3/#last-baseline-alignment)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-justify-self`](https://drafts.csswg.org/css-align-3/#propdef-justify-self)
-     * [`https://www.w3.org/TR/css-align-3/#baseline-rules`](https://www.w3.org/TR/css-align-3/#baseline-rules)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/):
      * [`https://drafts.csswg.org/css-fonts-3/#descdef-src`](https://drafts.csswg.org/css-fonts-3/#descdef-src)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/):
@@ -3930,102 +3915,20 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-color/#cmyk-colors`](https://drafts.csswg.org/css-color/#cmyk-colors)
      * [`https://drafts.csswg.org/css-overflow-3/#paginated-overflow`](https://drafts.csswg.org/css-overflow-3/#paginated-overflow)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/):
-     * [`https://www.w3.org/TR/css-align-3/#gutter`](https://www.w3.org/TR/css-align-3/#gutter)
-     * [`https://www.w3.org/TR/css-align-3/#propdef-align-content`](https://www.w3.org/TR/css-align-3/#propdef-align-content)
-     * [`https://www.w3.org/TR/css-align-3/#propdef-justify-content`](https://www.w3.org/TR/css-align-3/#propdef-justify-content)
-     * [`https://www.w3.org/TR/css-align-3/#box-alignment-properties`](https://www.w3.org/TR/css-align-3/#box-alignment-properties)
-     * [`https://www.w3.org/TR/css-align-3/#valdef-align-self-stretch`](https://www.w3.org/TR/css-align-3/#valdef-align-self-stretch)
-     * [`https://www.w3.org/TR/css-align-3/#propdef-place-content`](https://www.w3.org/TR/css-align-3/#propdef-place-content)
-     * [`https://www.w3.org/TR/css-align-3/#self-alignment`](https://www.w3.org/TR/css-align-3/#self-alignment)
-     * [`https://www.w3.org/TR/css-align-3/#valdef-align-self-normal`](https://www.w3.org/TR/css-align-3/#valdef-align-self-normal)
-     * [`https://www.w3.org/TR/css-align-3/#propdef-align-self`](https://www.w3.org/TR/css-align-3/#propdef-align-self)
-     * [`https://www.w3.org/TR/css-align-3/#propdef-row-gap`](https://www.w3.org/TR/css-align-3/#propdef-row-gap)
-     * [`https://www.w3.org/TR/css-align-3/#propdef-column-gap`](https://www.w3.org/TR/css-align-3/#propdef-column-gap)
-     * [`https://www.w3.org/TR/css-align-3/#propdef-gap`](https://www.w3.org/TR/css-align-3/#propdef-gap)
-     * [`https://www.w3.org/TR/css-align-3/#distributed-alignment`](https://www.w3.org/TR/css-align-3/#distributed-alignment)
-     * [`https://www.w3.org/TR/css-align-3/#propdef-justify-self`](https://www.w3.org/TR/css-align-3/#propdef-justify-self)
-     * [`https://www.w3.org/TR/css-align-3/#valdef-row-gap-normal`](https://www.w3.org/TR/css-align-3/#valdef-row-gap-normal)
-     * [`https://www.w3.org/TR/css-align-3/#valdef-justify-self-stretch`](https://www.w3.org/TR/css-align-3/#valdef-justify-self-stretch)
-     * [`https://www.w3.org/TR/css-align-3/#gaps`](https://www.w3.org/TR/css-align-3/#gaps)
-     * [`https://www.w3.org/TR/css-align-3/#propdef-justify-items`](https://www.w3.org/TR/css-align-3/#propdef-justify-items)
-     * [`https://www.w3.org/TR/css-align-3/#baseline-alignment`](https://www.w3.org/TR/css-align-3/#baseline-alignment)
-     * [`https://www.w3.org/TR/css-align-3/#fallback-alignment`](https://www.w3.org/TR/css-align-3/#fallback-alignment)
-     * [`https://www.w3.org/TR/css-align-3/#propdef-align-items`](https://www.w3.org/TR/css-align-3/#propdef-align-items)
-     * [`https://www.w3.org/TR/css-align-3/#valdef-align-content-space-around`](https://www.w3.org/TR/css-align-3/#valdef-align-content-space-around)
-     * [`https://www.w3.org/TR/css-align-3/#valdef-align-content-space-between`](https://www.w3.org/TR/css-align-3/#valdef-align-content-space-between)
-     * [`https://www.w3.org/TR/css-align-3/#valdef-align-content-space-evenly`](https://www.w3.org/TR/css-align-3/#valdef-align-content-space-evenly)
-     * [`https://www.w3.org/TR/css-align-3/#valdef-align-content-stretch`](https://www.w3.org/TR/css-align-3/#valdef-align-content-stretch)
-     * [`https://www.w3.org/TR/css-align-3/#baseline-set`](https://www.w3.org/TR/css-align-3/#baseline-set)
-     * [`https://www.w3.org/TR/css-align-3/#generate-baselines`](https://www.w3.org/TR/css-align-3/#generate-baselines)
-     * [`https://www.w3.org/TR/css-align-3/#alignment-baseline`](https://www.w3.org/TR/css-align-3/#alignment-baseline)
-     * [`https://www.w3.org/TR/css-align-3/#synthesize-baseline`](https://www.w3.org/TR/css-align-3/#synthesize-baseline)
-     * [`https://www.w3.org/TR/css-align-3/#shared-alignment-context`](https://www.w3.org/TR/css-align-3/#shared-alignment-context)
-     * [`https://www.w3.org/TR/css-align-3/#baseline-rules`](https://www.w3.org/TR/css-align-3/#baseline-rules)
-     * [`https://www.w3.org/TR/css-align-3/#baseline-sharing-group`](https://www.w3.org/TR/css-align-3/#baseline-sharing-group)
-     * [`https://www.w3.org/TR/css-align-3/#baseline-values`](https://www.w3.org/TR/css-align-3/#baseline-values)
-     * [`https://www.w3.org/TR/css-align-3/#baseline-align-self`](https://www.w3.org/TR/css-align-3/#baseline-align-self)
-     * [`https://www.w3.org/TR/css-align-3/#baseline-align-content`](https://www.w3.org/TR/css-align-3/#baseline-align-content)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-start`](https://drafts.csswg.org/css-align-3/#valdef-self-position-start)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-center`](https://drafts.csswg.org/css-align-3/#valdef-self-position-center)
      * [`https://www.w3.org/TR/css-writing-modes-3/#start`](https://www.w3.org/TR/css-writing-modes-3/#start)
      * [`https://www.w3.org/TR/css-writing-modes-3/#end`](https://www.w3.org/TR/css-writing-modes-3/#end)
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/):
-     * [`https://drafts.csswg.org/css-align/#content-distribution`](https://drafts.csswg.org/css-align/#content-distribution)
-     * [`https://drafts.csswg.org/css-align-3/#alignment-subject`](https://drafts.csswg.org/css-align-3/#alignment-subject)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-align-content`](https://drafts.csswg.org/css-align-3/#propdef-align-content)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-justify-content`](https://drafts.csswg.org/css-align-3/#propdef-justify-content)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-start`](https://drafts.csswg.org/css-align-3/#valdef-self-position-start)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-center`](https://drafts.csswg.org/css-align-3/#valdef-self-position-center)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-end`](https://drafts.csswg.org/css-align-3/#valdef-self-position-end)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-align-content-stretch`](https://drafts.csswg.org/css-align-3/#valdef-align-content-stretch)
-     * [`https://drafts.csswg.org/css-align-3/#baseline-alignment`](https://drafts.csswg.org/css-align-3/#baseline-alignment)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-justify-content-normal`](https://drafts.csswg.org/css-align-3/#valdef-justify-content-normal)
-     * [`https://drafts.csswg.org/css-align-3/#typedef-baseline-position`](https://drafts.csswg.org/css-align-3/#typedef-baseline-position)
-     * [`https://drafts.csswg.org/css-align-3/#typedef-content-distribution`](https://drafts.csswg.org/css-align-3/#typedef-content-distribution)
-     * [`https://drafts.csswg.org/css-align-3/#typedef-overflow-position`](https://drafts.csswg.org/css-align-3/#typedef-overflow-position)
-     * [`https://drafts.csswg.org/css-align-3/#typedef-content-position`](https://drafts.csswg.org/css-align-3/#typedef-content-position)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-align-self-normal`](https://drafts.csswg.org/css-align-3/#valdef-align-self-normal)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-align-self-stretch`](https://drafts.csswg.org/css-align-3/#valdef-align-self-stretch)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-align-self`](https://drafts.csswg.org/css-align-3/#propdef-align-self)
-     * [`https://drafts.csswg.org/css-align-3/#baseline-sharing-group`](https://drafts.csswg.org/css-align-3/#baseline-sharing-group)
-     * [`https://drafts.csswg.org/css-align-3/#first-baseline-set`](https://drafts.csswg.org/css-align-3/#first-baseline-set)
-     * [`https://drafts.csswg.org/css-align-3/#last-baseline-set`](https://drafts.csswg.org/css-align-3/#last-baseline-set)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-center`](https://drafts.csswg.org/css-align-3/#valdef-self-position-center)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
-- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/):
-     * [`https://drafts.csswg.org/css-align-3/#propdef-align-content`](https://drafts.csswg.org/css-align-3/#propdef-align-content)
-     * [`https://drafts.csswg.org/css-align-3/#shared-alignment-context`](https://drafts.csswg.org/css-align-3/#shared-alignment-context)
-     * [`https://drafts.csswg.org/css-align-3/#synthesize-baseline`](https://drafts.csswg.org/css-align-3/#synthesize-baseline)
-     * [`https://drafts.csswg.org/css-align-3/#baseline-alignment`](https://drafts.csswg.org/css-align-3/#baseline-alignment)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-justify-content-normal`](https://drafts.csswg.org/css-align-3/#valdef-justify-content-normal)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-start`](https://drafts.csswg.org/css-align-3/#valdef-self-position-start)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-end`](https://drafts.csswg.org/css-align-3/#valdef-self-position-end)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-center`](https://drafts.csswg.org/css-align-3/#valdef-self-position-center)
-     * [`https://drafts.csswg.org/css-align-3/#first-baseline-set`](https://drafts.csswg.org/css-align-3/#first-baseline-set)
-     * [`https://drafts.csswg.org/css-align-3/#last-baseline-set`](https://drafts.csswg.org/css-align-3/#last-baseline-set)
-     * [`https://drafts.csswg.org/css-align-3/#last-baseline-alignment`](https://drafts.csswg.org/css-align-3/#last-baseline-alignment)
-     * [`https://drafts.csswg.org/css-align-3/#first-baseline-alignment`](https://drafts.csswg.org/css-align-3/#first-baseline-alignment)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-justify-self`](https://drafts.csswg.org/css-align-3/#propdef-justify-self)
-     * [`https://www.w3.org/TR/css-align-3/#distribution-block`](https://www.w3.org/TR/css-align-3/#distribution-block)
-     * [`https://www.w3.org/TR/css-align-3/#baseline-terms`](https://www.w3.org/TR/css-align-3/#baseline-terms)
-- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/):
-     * [`https://www.w3.org/TR/css-align-3/#baseline-export`](https://www.w3.org/TR/css-align-3/#baseline-export)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/):
      * [`https://drafts.csswg.org/css-inline/#central`](https://drafts.csswg.org/css-inline/#central)
-     * [`https://drafts.csswg.org/css-align-3/#typedef-content-position`](https://drafts.csswg.org/css-align-3/#typedef-content-position)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/):
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/):
-     * [`https://drafts.csswg.org/css-align-3/#propdef-column-gap`](https://drafts.csswg.org/css-align-3/#propdef-column-gap)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-row-gap-normal`](https://drafts.csswg.org/css-align-3/#valdef-row-gap-normal)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
-- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/):
-     * [`https://drafts.csswg.org/css-align-3/#propdef-column-gap`](https://drafts.csswg.org/css-align-3/#propdef-column-gap)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/):
      * [`https://drafts.csswg.org/selectors-3/#sel-before`](https://drafts.csswg.org/selectors-3/#sel-before)
      * [`https://drafts.csswg.org/selectors-3/#sel-after`](https://drafts.csswg.org/selectors-3/#sel-after)
@@ -4033,24 +3936,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesrule%E2%91%A0`](https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesrule%E2%91%A0)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-color-3/#alphavalue-def`](https://drafts.csswg.org/css-color-3/#alphavalue-def)
-- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/):
-     * [`https://drafts.csswg.org/css-align-3/#propdef-place-content`](https://drafts.csswg.org/css-align-3/#propdef-place-content)
-     * [`https://drafts.csswg.org/css-align-3/#content-distribution-properties`](https://drafts.csswg.org/css-align-3/#content-distribution-properties)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-align-content`](https://drafts.csswg.org/css-align-3/#propdef-align-content)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-justify-content`](https://drafts.csswg.org/css-align-3/#propdef-justify-content)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-justify-content-normal`](https://drafts.csswg.org/css-align-3/#valdef-justify-content-normal)
-     * [`https://www.w3.org/TR/css-align-3/#overflow-scroll-position`](https://www.w3.org/TR/css-align-3/#overflow-scroll-position)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/):
      * [`https://drafts.csswg.org/selectors-3/#subject`](https://drafts.csswg.org/selectors-3/#subject)
      * [`https://www.w3.org/TR/css3-transitions/#animatable-types`](https://www.w3.org/TR/css3-transitions/#animatable-types)
-- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/):
-     * [`https://drafts.csswg.org/css-align-3/#self-alignment-properties`](https://drafts.csswg.org/css-align-3/#self-alignment-properties)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-self-start`](https://drafts.csswg.org/css-align-3/#valdef-self-position-self-start)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-self-end`](https://drafts.csswg.org/css-align-3/#valdef-self-position-self-end)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-self-position-center`](https://drafts.csswg.org/css-align-3/#valdef-self-position-center)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-align-self-normal`](https://drafts.csswg.org/css-align-3/#valdef-align-self-normal)
-     * [`https://drafts.csswg.org/css-align-3/#valdef-align-self-stretch`](https://drafts.csswg.org/css-align-3/#valdef-align-self-stretch)
-     * [`https://drafts.csswg.org/css-align-3/#self-align`](https://drafts.csswg.org/css-align-3/#self-align)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/):
      * [`https://www.w3.org/TR/css-syntax-3/#consume-a-name`](https://www.w3.org/TR/css-syntax-3/#consume-a-name)
      * [`https://www.w3.org/TR/cssom-1/#css`](https://www.w3.org/TR/cssom-1/#css)
@@ -4059,13 +3947,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
      * [`https://www.w3.org/TR/css-color-3/#currentcolor-def`](https://www.w3.org/TR/css-color-3/#currentcolor-def)
-- [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/):
-     * [`https://drafts.csswg.org/css-align-3/#propdef-align-self`](https://drafts.csswg.org/css-align-3/#propdef-align-self)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/):
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
-- [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/):
-     * [`https://drafts.csswg.org/css-align-3/#alignment-subject`](https://drafts.csswg.org/css-align-3/#alignment-subject)
-     * [`https://drafts.csswg.org/css-align-3/#alignment-container`](https://drafts.csswg.org/css-align-3/#alignment-container)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/):
@@ -4102,23 +3985,6 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/):
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-align-content`](https://drafts.csswg.org/css-align-3/#propdef-align-content)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-align-items`](https://drafts.csswg.org/css-align-3/#propdef-align-items)
-     * [`https://drafts.csswg.org/css-align-3/#typedef-self-position`](https://drafts.csswg.org/css-align-3/#typedef-self-position)
-     * [`https://drafts.csswg.org/css-align-3/#typedef-overflow-position`](https://drafts.csswg.org/css-align-3/#typedef-overflow-position)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-align-self`](https://drafts.csswg.org/css-align-3/#propdef-align-self)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-column-gap`](https://drafts.csswg.org/css-align-3/#propdef-column-gap)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-gap`](https://drafts.csswg.org/css-align-3/#propdef-gap)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-grid-column-gap`](https://drafts.csswg.org/css-align-3/#propdef-grid-column-gap)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-grid-gap`](https://drafts.csswg.org/css-align-3/#propdef-grid-gap)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-grid-row-gap`](https://drafts.csswg.org/css-align-3/#propdef-grid-row-gap)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-justify-content`](https://drafts.csswg.org/css-align-3/#propdef-justify-content)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-justify-items`](https://drafts.csswg.org/css-align-3/#propdef-justify-items)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-justify-self`](https://drafts.csswg.org/css-align-3/#propdef-justify-self)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-place-content`](https://drafts.csswg.org/css-align-3/#propdef-place-content)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-place-items`](https://drafts.csswg.org/css-align-3/#propdef-place-items)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-place-self`](https://drafts.csswg.org/css-align-3/#propdef-place-self)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-row-gap`](https://drafts.csswg.org/css-align-3/#propdef-row-gap)
      * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
      * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/):
@@ -4127,8 +3993,6 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://www.w3.org/TR/css-values-3/#acknowledgements`](https://www.w3.org/TR/css-values-3/#acknowledgements)
-- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/):
-     * [`https://drafts.csswg.org/css-align-3/#propdef-column-gap`](https://drafts.csswg.org/css-align-3/#propdef-column-gap)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/):
      * [`https://html.spec.whatwg.org/#responsible-browsing-context`](https://html.spec.whatwg.org/#responsible-browsing-context)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/):
@@ -4365,10 +4229,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#DefinitionOfScheme`](https://w3c.github.io/FileAPI/#DefinitionOfScheme)
      * [`https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml`](https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml)
      * [`https://drafts.csswg.org/css-syntax/#conform-classes`](https://drafts.csswg.org/css-syntax/#conform-classes)
-     * [`https://drafts.csswg.org/css-align/#propdef-align-content`](https://drafts.csswg.org/css-align/#propdef-align-content)
-     * [`https://drafts.csswg.org/css-align/#propdef-align-items`](https://drafts.csswg.org/css-align/#propdef-align-items)
-     * [`https://drafts.csswg.org/css-align/#propdef-align-self`](https://drafts.csswg.org/css-align/#propdef-align-self)
-     * [`https://drafts.csswg.org/css-align/#propdef-justify-self`](https://drafts.csswg.org/css-align/#propdef-justify-self)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-content`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-content)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-items`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-items)
      * [`https://drafts.csswg.org/css-grid/#propdef-grid-column-gap`](https://drafts.csswg.org/css-grid/#propdef-grid-column-gap)
@@ -4408,8 +4268,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#event-handler-contentattributes`](https://html.spec.whatwg.org/#event-handler-contentattributes)
      * [`https://www.w3.org/TR/css-backgrounds-3/#padding-physical`](https://www.w3.org/TR/css-backgrounds-3/#padding-physical)
      * [`https://heycam.github.io/webidl/#DOMException`](https://heycam.github.io/webidl/#DOMException)
-     * [`https://www.w3.org/TR/css-align-3/#first-baseline-set`](https://www.w3.org/TR/css-align-3/#first-baseline-set)
-     * [`https://www.w3.org/TR/css-align-3/#last-baseline-set`](https://www.w3.org/TR/css-align-3/#last-baseline-set)
      * [`https://www.w3.org/TR/css-position-3/#pos-sch`](https://www.w3.org/TR/css-position-3/#pos-sch)
      * [`https://www.w3.org/TR/css-box-3/#the-border-width`](https://www.w3.org/TR/css-box-3/#the-border-width)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/):
@@ -4686,7 +4544,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#skip-whitespace`](https://html.spec.whatwg.org/#skip-whitespace)
      * [`https://html.spec.whatwg.org/#rules-for-extracting-the-chapter-title`](https://html.spec.whatwg.org/#rules-for-extracting-the-chapter-title)
      * [`https://dom.spec.whatwg.org/#dom-node-namespaceuri`](https://dom.spec.whatwg.org/#dom-node-namespaceuri)
-     * [`https://drafts.csswg.org/css-align-3/#propdef-justify-content`](https://drafts.csswg.org/css-align-3/#propdef-justify-content)
      * [`https://drafts.csswg.org/selectors-3/#sel-before`](https://drafts.csswg.org/selectors-3/#sel-before)
      * [`https://drafts.csswg.org/selectors-3/#sel-after`](https://drafts.csswg.org/selectors-3/#sel-after)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/):
@@ -4695,7 +4552,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/):
      * [`https://www.w3.org/TR/webxr/#animationframe`](https://www.w3.org/TR/webxr/#animationframe)
 
-=> 745 problematic external links found in 156 specifications
+=> 601 problematic external links found in 143 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
