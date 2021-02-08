@@ -5,24 +5,6 @@
 381 specifications were crawled in this report.
 
 
-## Specifications that could not be rendered
-
-Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
-
-- [WOFF File Format 2.0]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
-    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:170:23)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:357:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:78:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:233:24)
-    at async Promise.all (index 379)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:239:21)
-    at async Promise.all (index 0)`
-
-=> 1 specification found
-
-
 ## Specifications without normative dependencies
 
 - [Atomics.waitAsync](https://tc39.es/proposal-atomics-wait-async/)
@@ -4880,9 +4862,11 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2004/REC-xml-20040204/`](https://www.w3.org/TR/2004/REC-xml-20040204/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/):
      * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
+- [WOFF File Format 2.0](https://w3c.github.io/woff/woff2/):
+     * [`https://www.w3.org/TR/2012/REC-WOFF-20121213/`](https://www.w3.org/TR/2012/REC-WOFF-20121213/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
-=> 146 problematic external links found in 57 specifications
+=> 147 problematic external links found in 58 specifications
 
 
