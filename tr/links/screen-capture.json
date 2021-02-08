@@ -5,7 +5,7 @@
   },
   "links": {
     "https://www.w3.org/TR/": [],
-    "https://www.w3.org/2011/04/webrtc/": [],
+    "https://www.w3.org/groups/wg/webrtc": [],
     "https://github.com/w3c/mediacapture-screen-share/issues/": [],
     "https://lists.w3.org/Archives/Public/public-webrtc/": [],
     "https://www.w3.org/Consortium/Patent-Policy/": [
@@ -13,39 +13,15 @@
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/47318/status": [],
-    "https://www.w3.org/2019/Process-20190301/": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
     "https://tools.ietf.org/html/bcp14": [],
-    "https://w3c.github.io/mediacapture-main/": [
-      "mediastreamtrack",
-      "interface-definition",
-      "mediadevices-interface-extensions",
-      "dfn-applyconstraints-algorithm",
-      "local-content",
-      "widl-MediaDevices-enumerateDevices-Promise-sequence-MediaDeviceInfo",
-      "privacy-indicator-requirements"
-    ],
-    "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/": [
-      "dfn-throw",
-      "dfn-create-exception"
-    ],
-    "https://html.spec.whatwg.org/": [
-      "browsing-context",
-      "triggered-by-user-activation",
-      "concept-current-everything",
-      "responsible-document",
-      "concept-document-feature-policy",
-      "allowed-to-use"
-    ],
-    "https://heycam.github.io/webidl/": [
-      "idl-promise",
-      "dfn-present",
-      "idl-boolean",
-      "idl-DOMString"
-    ],
-    "https://www.w3.org/TR/html52/": [
-      "fully-active"
-    ],
     "https://www.w3.org/TR/mediacapture-streams/": [
+      "dom-mediastream",
+      "dom-mediastreamtrack",
+      "dom-mediastreamconstraints",
+      "dom-constrainablepattern",
+      "dom-mediadevices-getusermedia",
+      "dfn-applyconstraints-algorithm",
       "set-track-muted",
       "track-ended",
       "constrainable-properties",
@@ -53,19 +29,62 @@
       "dom-constraindouble",
       "dom-constraindomstring",
       "dom-videoresizemodeenum",
+      "idl-def-VideoResizeModeEnum.user",
+      "idl-def-VideoResizeModeEnum.right",
       "dom-constrainboolean",
       "event-mediastreamtrack-overconstrained",
       "dfn-selectsettings",
+      "dfn-settings-dictionary",
+      "dfn-fitness-distance",
       "dom-mediatrackconstraints",
-      "media-track-supported-constraints",
+      "dom-mediatracksupportedconstraints",
       "dom-mediatrackconstraintset",
-      "constrainable-interface",
-      "media-track-settings"
+      "dom-mediatracksettings",
+      "dom-mediastreamtrack-getsettings",
+      "dom-mediadevices-enumeratedevices",
+      "dom-mediatracksupportedconstraints-deviceid",
+      "dom-mediadeviceinfo-deviceid",
+      "privacy-indicator-requirements"
     ],
-    "https://w3c.github.io/mediacapture-main/getusermedia.html": [
-      "dfn-fitness-distance"
+    "https://html.spec.whatwg.org/": [
+      "browsing-context",
+      "concept-relevant-global",
+      "transient-activation",
+      "current-settings-object",
+      "responsible-document",
+      "fully-active",
+      "concept-document-permissions-policy",
+      "allowed-to-use"
     ],
-    "https://wicg.github.io/feature-policy/": [
+    "https://heycam.github.io/webidl/": [
+      "idl-promise",
+      "this",
+      "reject",
+      "idl-DOMException",
+      "dom-domexception-name",
+      "invalidstateerror",
+      "dfn-create-exception",
+      "exceptiondef-typeerror",
+      "notfounderror",
+      "notreadableerror",
+      "aborterror",
+      "resolve",
+      "notallowederror",
+      "idl-boolean",
+      "idl-DOMString"
+    ],
+    "https://www.w3.org/TR/permissions/": [
+      "dom-permissionstate-granted",
+      "permission-state",
+      "dom-permissionstate-denied",
+      "prompt-the-user-to-choose",
+      "dictdef-permissiondescriptor",
+      "dom-permissionname-display-capture"
+    ],
+    "https://infra.spec.whatwg.org/": [
+      "map-exists"
+    ],
+    "https://www.w3.org/TR/permissions-policy-1/": [
       "policy-controlled-feature",
       "default-allowlist"
     ],
@@ -74,10 +93,6 @@
     ],
     "https://www.w3.org/TR/2dcontext/": [],
     "https://tc39.es/ecma262/": [],
-    "https://www.ecma-international.org/ecma-262/6.0/": [],
-    "https://www.w3.org/TR/html5/": [],
-    "https://infra.spec.whatwg.org/": [],
-    "https://www.w3.org/TR/permissions/": [],
     "https://tools.ietf.org/html/rfc2119": [],
     "https://tools.ietf.org/html/rfc8174": [],
     "https://tools.ietf.org/html/draft-ietf-rtcweb-security": [],

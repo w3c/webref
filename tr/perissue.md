@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 01, 2021
+% February 08, 2021
 
 381 specifications were crawled in this report.
 
@@ -104,7 +104,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/csp-embedded-enforcement/)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)
+- [CORS and RFC1918](https://wicg.github.io/private-network-access/)
 - [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/)
 - [CSS Font Loading Module Level 3](https://www.w3.org/TR/css-font-loading-3/)
 - [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/)
@@ -239,7 +239,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html) uses `Point2D` but does not reference ["MediaStream Image Capture"](https://www.w3.org/TR/image-capture/)
 - [Battery Status API](https://www.w3.org/TR/battery-status/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Content Index](https://wicg.github.io/content-index/spec/) uses `ImageResource` but does not reference [Image Resource](https://www.w3.org/TR/image-resource/)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+- [CORS and RFC1918](https://wicg.github.io/private-network-access/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/) uses:
     * `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `Node` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
@@ -249,6 +249,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) uses `Gamepad` but does not reference [Gamepad](https://www.w3.org/TR/gamepad/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [Intersection Observer](https://www.w3.org/TR/intersection-observer/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://www.w3.org/TR/hr-time-3/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Media Source Extensions™](https://www.w3.org/TR/media-source/) uses:
     * `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `URL` but does not reference [URL Standard](https://url.spec.whatwg.org/)
@@ -316,7 +317,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 73 missing references for IDL definitions found in 31 specifications
+=> 74 missing references for IDL definitions found in 32 specifications
 
 
 ## No definition for CSS properties
@@ -717,7 +718,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `"application/xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`application/xml`](https://html.spec.whatwg.org/multipage/indices.html#application/xml) with type `dfn`
     * `"application/xhtml+xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`application/xhtml+xml`](https://html.spec.whatwg.org/multipage/iana.html#application/xhtml+xml) with type `dfn`
     * `"image/svg+xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`image/svg+xml`](https://html.spec.whatwg.org/multipage/indices.html#image/svg+xml) with type `dfn`
-    * `onLine` with type `attribute` for [`NavigatorOnLine`](https://html.spec.whatwg.org/multipage/system-state.html#navigatoronline)
     * `plugins` with type `attribute` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins), but found [`plugins`](https://html.spec.whatwg.org/multipage/dom.html#dom-document-plugins) with type `attribute` for `Document`
     * `mimeTypes` with type `attribute` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins)
     * `javaEnabled()` with type `method` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins)
@@ -743,7 +743,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `key` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`key(n)`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-key) with type `method` for `Storage`
     * `oldValue` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`oldValue`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-oldvalue) with type `attribute` for `StorageEvent`
     * `newValue` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`newValue`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-newvalue) with type `attribute` for `StorageEvent`
-    * `url` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`url`](https://html.spec.whatwg.org/multipage/infrastructure.html#concept-response-url) with type `dfn`
+    * `url` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`url`](https://html.spec.whatwg.org/multipage/infrastructure.html#basic-url-parser-url) with type `dfn`
     * `storageArea` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`storageArea`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-storagearea) with type `attribute` for `StorageEvent`
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/mediacapture-depth/):
     * `DistortionCoefficients` with type `dictionary`, but found [`DistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-distortioncoefficients) with type `dfn`
@@ -1188,7 +1188,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `multiDrawArraysInstancedBaseInstanceWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
     * `multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
 
-=> 646 properties without definition found in 58 specifications
+=> 645 properties without definition found in 58 specifications
 
 
 ## Possibly no definition for CSS properties
@@ -1996,7 +1996,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
     * [`https://www.w3.org/TR/2015/WD-svg-markers-20150407/`](https://www.w3.org/TR/2015/WD-svg-markers-20150407/) but does not list it in its references
     * [`https://www.w3.org/TR/2015/WD-svg-strokes-20150407/`](https://www.w3.org/TR/2015/WD-svg-strokes-20150407/) but does not list it in its references
-- [Screen Capture](https://www.w3.org/TR/screen-capture/) links to [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/) links to:
     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
@@ -2121,7 +2120,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 707 missing references for links found in 178 specifications
+=> 706 missing references for links found in 177 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -2179,7 +2178,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/csp-embedded-enforcement/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "Service-Workers" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
+- [CORS and RFC1918](https://wicg.github.io/private-network-access/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
 - [Crash Reporting](https://wicg.github.io/crash-reporting/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but related reference "REPORTING" uses URL [`https://www.w3.org/TR/reporting-1/`](https://www.w3.org/TR/reporting-1/)
 - [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/) links to [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -2451,9 +2450,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
     * [`https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/`](https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/) but related reference "UAAG20" uses URL [`https://www.w3.org/TR/UAAG20/`](https://www.w3.org/TR/UAAG20/)
     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/) but related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
-- [Screen Capture](https://www.w3.org/TR/screen-capture/) links to:
-    * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
-    * [`https://w3c.github.io/mediacapture-main/getusermedia.html`](https://w3c.github.io/mediacapture-main/getusermedia.html) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [Secure Contexts](https://www.w3.org/TR/secure-contexts/) links to [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIX" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 - [Selection API](https://www.w3.org/TR/selection-api/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -2504,7 +2500,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-- [WebCodecs](https://wicg.github.io/web-codecs/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "MEDIACAPTURE-STREAMS" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+- [WebCodecs](https://wicg.github.io/web-codecs/) links to:
+    * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "MEDIACAPTURE-STREAMS" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+    * [`https://w3c.github.io/media-capabilities/`](https://w3c.github.io/media-capabilities/) but related reference "MEDIA-CAPABILITIES" uses URL [`https://www.w3.org/TR/media-capabilities/`](https://www.w3.org/TR/media-capabilities/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/) links to:
     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but related reference "wai-aria-1.2" uses URL [`https://www.w3.org/TR/wai-aria-1.2/`](https://www.w3.org/TR/wai-aria-1.2/)
@@ -2530,7 +2528,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 321 inconsistent references for links found in 168 specifications
+=> 320 inconsistent references for links found in 167 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -2683,7 +2681,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/):
      * [`https://heycam.github.io/webidl/#dfn-conforming-implementation`](https://heycam.github.io/webidl/#dfn-conforming-implementation)
      * [`https://www.w3.org/TR/page-visibility/#dom-document-hidden`](https://www.w3.org/TR/page-visibility/#dom-document-hidden)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/):
+- [CORS and RFC1918](https://wicg.github.io/private-network-access/):
      * [`https://fetch.spec.whatwg.org/#concept-http-network-fetch`](https://fetch.spec.whatwg.org/#concept-http-network-fetch)
      * [`https://fetch.spec.whatwg.org/#cors-preflight-fetch-0`](https://fetch.spec.whatwg.org/#cors-preflight-fetch-0)
      * [`https://fetch.spec.whatwg.org/#concept-cache`](https://fetch.spec.whatwg.org/#concept-cache)
@@ -3089,7 +3087,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#notfounderror`](https://heycam.github.io/webidl/#notfounderror)
      * [`https://heycam.github.io/webidl/#invalidmodificationerror`](https://heycam.github.io/webidl/#invalidmodificationerror)
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
-     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-copy`](https://heycam.github.io/webidl/#dfn-get-buffer-source-copy)
      * [`https://w3c.github.io/permissions/#create-a-permissionstatus`](https://w3c.github.io/permissions/#create-a-permissionstatus)
      * [`https://storage.spec.whatwg.org/#storage-endpoint-identifier`](https://storage.spec.whatwg.org/#storage-endpoint-identifier)
@@ -3285,7 +3282,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/aria/#dfn-role`](https://w3c.github.io/aria/#dfn-role)
      * [`https://w3c.github.io/aria/#dfn-accessible-name`](https://w3c.github.io/aria/#dfn-accessible-name)
      * [`https://w3c.github.io/webappsec-csp/#can-compile-strings`](https://w3c.github.io/webappsec-csp/#can-compile-strings)
-     * [`https://w3c.github.io/webappsec-csp/#should-plugin-element-be-blocked-a-priori-by-content-security-policy`](https://w3c.github.io/webappsec-csp/#should-plugin-element-be-blocked-a-priori-by-content-security-policy)
      * [`https://w3c.github.io/ServiceWorker/#dfn-control`](https://w3c.github.io/ServiceWorker/#dfn-control)
      * [`https://w3c.github.io/ServiceWorker/#serviceworkercontainer-service-worker-client`](https://w3c.github.io/ServiceWorker/#serviceworkercontainer-service-worker-client)
      * [`https://w3c.github.io/webappsec-feature-policy/#permissions-policy`](https://w3c.github.io/webappsec-feature-policy/#permissions-policy)
@@ -3465,7 +3461,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webdriver2/#dfn-success`](https://www.w3.org/TR/webdriver2/#dfn-success)
      * [`https://www.w3.org/TR/webdriver2/#dfn-url-variables`](https://www.w3.org/TR/webdriver2/#dfn-url-variables)
      * [`https://www.w3.org/TR/webdriver2/#dfn-getting-properties`](https://www.w3.org/TR/webdriver2/#dfn-getting-properties)
-     * [`https://www.w3.org/TR/screen-capture/#prompt-the-user-to-choose`](https://www.w3.org/TR/screen-capture/#prompt-the-user-to-choose)
      * [`https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value`](https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/mediacapture-depth/):
      * [`https://www.w3.org/TR/mediacapture-streams/#dfn-capabilities`](https://www.w3.org/TR/mediacapture-streams/#dfn-capabilities)
@@ -3761,8 +3756,11 @@ Links in the body of a specification should be to the same document as that poin
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/webrtc-svc/):
      * [`https://heycam.github.io/webidl/#operationerror`](https://heycam.github.io/webidl/#operationerror)
 - [Screen Capture](https://www.w3.org/TR/screen-capture/):
-     * [`https://html.spec.whatwg.org/#concept-current-everything`](https://html.spec.whatwg.org/#concept-current-everything)
-     * [`https://heycam.github.io/webidl/#dfn-present`](https://heycam.github.io/webidl/#dfn-present)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#dfn-create-exception`](https://heycam.github.io/webidl/#dfn-create-exception)
+     * [`https://heycam.github.io/webidl/#notfounderror`](https://heycam.github.io/webidl/#notfounderror)
+     * [`https://heycam.github.io/webidl/#notreadableerror`](https://heycam.github.io/webidl/#notreadableerror)
+     * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
 - [Screen Wake Lock API](https://www.w3.org/TR/screen-wake-lock/):
      * [`https://www.w3.org/TR/page-visibility/#dom-document-hidden`](https://www.w3.org/TR/page-visibility/#dom-document-hidden)
      * [`https://www.w3.org/TR/page-visibility/#dfn-visibility-states`](https://www.w3.org/TR/page-visibility/#dfn-visibility-states)
@@ -4236,7 +4234,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#invalidcharactererror`](https://heycam.github.io/webidl/#invalidcharactererror)
      * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/):
-     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
      * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
 - [WebTransport](https://w3c.github.io/webtransport/):
      * [`https://html.spec.whatwg.org/#concept-request-origin`](https://html.spec.whatwg.org/#concept-request-origin)
@@ -4383,7 +4380,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
      * [`https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over`](https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over)
 
-=> 1623 problematic external links found in 222 specifications
+=> 1622 problematic external links found in 222 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4407,7 +4404,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-Uint8Array`](https://heycam.github.io/webidl/#idl-Uint8Array)
 - [Content Security Policy Level 3](https://www.w3.org/TR/CSP3/):
      * [`https://html.spec.whatwg.org/#case-sensitive`](https://html.spec.whatwg.org/#case-sensitive)
-- [CORS and RFC1918](https://wicg.github.io/cors-rfc1918/):
+- [CORS and RFC1918](https://wicg.github.io/private-network-access/):
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/):
      * [`https://html.spec.whatwg.org/#case-sensitive`](https://html.spec.whatwg.org/#case-sensitive)
@@ -4778,8 +4775,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css3-images/#intrinsic-width`](https://www.w3.org/TR/css3-images/#intrinsic-width)
      * [`https://www.w3.org/TR/css3-images/#intrinsic-height`](https://www.w3.org/TR/css3-images/#intrinsic-height)
      * [`https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio`](https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio)
-- [Screen Capture](https://www.w3.org/TR/screen-capture/):
-     * [`https://html.spec.whatwg.org/#concept-document-feature-policy`](https://html.spec.whatwg.org/#concept-document-feature-policy)
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/):
      * [`https://www.w3.org/TR/css-display-3/#css-box-tree`](https://www.w3.org/TR/css-display-3/#css-box-tree)
 - [Server Timing](https://www.w3.org/TR/server-timing/):
@@ -4918,7 +4913,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
 
-=> 422 problematic external links found in 107 specifications
+=> 421 problematic external links found in 106 specifications
 
 
 ## Broken external links
@@ -4985,11 +4980,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Clear Site Data](https://www.w3.org/TR/clear-site-data/):
      * [`https://html.spec.whatwg.org/#application-cache`](https://html.spec.whatwg.org/#application-cache)
      * [`https://html.spec.whatwg.org/#application-cache-group`](https://html.spec.whatwg.org/#application-cache-group)
-- [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/):
-     * [`https://wicg.github.io/ua-client-hints/#sec-ch-ua-mobile`](https://wicg.github.io/ua-client-hints/#sec-ch-ua-mobile)
-     * [`https://wicg.github.io/ua-client-hints/#sec-ch-ua-arch`](https://wicg.github.io/ua-client-hints/#sec-ch-ua-arch)
-     * [`https://wicg.github.io/ua-client-hints/#sec-ch-ua-model`](https://wicg.github.io/ua-client-hints/#sec-ch-ua-model)
-     * [`https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform`](https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform)
 - [Clipboard API and events](https://www.w3.org/TR/clipboard-apis/):
      * [`https://html.spec.whatwg.org/#drag-data-item-kind`](https://html.spec.whatwg.org/#drag-data-item-kind)
      * [`https://html.spec.whatwg.org/#drag-data-item-type-string`](https://html.spec.whatwg.org/#drag-data-item-type-string)
@@ -5484,6 +5474,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
      * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
+     * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
      * [`https://w3c.github.io/reporting/#reporting-queue`](https://w3c.github.io/reporting/#reporting-queue)
@@ -5749,7 +5740,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css2/#in-flow`](https://drafts.csswg.org/css2/#in-flow)
      * [`https://drafts.csswg.org/css2/#content%E2%91%A0`](https://drafts.csswg.org/css2/#content%E2%91%A0)
      * [`https://drafts.csswg.org/css2/#visuren`](https://drafts.csswg.org/css2/#visuren)
-     * [`https://url.spec.whatwg.org/#concept-url-object`](https://url.spec.whatwg.org/#concept-url-object)
      * [`https://w3c.github.io/FileAPI/#DefinitionOfScheme`](https://w3c.github.io/FileAPI/#DefinitionOfScheme)
      * [`https://w3c.github.io/webappsec-referrer-policy/#default-referrer-policy`](https://w3c.github.io/webappsec-referrer-policy/#default-referrer-policy)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
@@ -6022,6 +6012,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Media Capture Automation](https://w3c.github.io/mediacapture-automation/):
      * [`https://www.w3.org/TR/mediacapture-streams/#request-permission-to-use`](https://www.w3.org/TR/mediacapture-streams/#request-permission-to-use)
      * [`https://www.w3.org/TR/screen-capture/#dfn-getdisplaymedia`](https://www.w3.org/TR/screen-capture/#dfn-getdisplaymedia)
+     * [`https://www.w3.org/TR/screen-capture/#prompt-the-user-to-choose`](https://www.w3.org/TR/screen-capture/#prompt-the-user-to-choose)
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/mediacapture-depth/):
      * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaStream`](https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaStream)
      * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaStreamTrack`](https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaStreamTrack)
@@ -6247,9 +6238,13 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-color-3/#svg-color`](https://www.w3.org/TR/css-color-3/#svg-color)
      * [`https://www.w3.org/TR/selectors-3/#the-user-action-pseudo-classes-hover-act`](https://www.w3.org/TR/selectors-3/#the-user-action-pseudo-classes-hover-act)
 - [Screen Capture](https://www.w3.org/TR/screen-capture/):
-     * [`https://w3c.github.io/mediacapture-main/#widl-MediaDevices-enumerateDevices-Promise-sequence-MediaDeviceInfo`](https://w3c.github.io/mediacapture-main/#widl-MediaDevices-enumerateDevices-Promise-sequence-MediaDeviceInfo)
-     * [`https://html.spec.whatwg.org/#triggered-by-user-activation`](https://html.spec.whatwg.org/#triggered-by-user-activation)
      * [`https://www.w3.org/TR/mediacapture-streams/#event-mediastreamtrack-overconstrained`](https://www.w3.org/TR/mediacapture-streams/#event-mediastreamtrack-overconstrained)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
+     * [`https://heycam.github.io/webidl/#dom-domexception-name`](https://heycam.github.io/webidl/#dom-domexception-name)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
 - [Screen Wake Lock API](https://www.w3.org/TR/screen-wake-lock/):
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
@@ -6267,6 +6262,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.css-houdini.org/css-typed-om-1/#typedefdef-csskeywordish`](https://drafts.css-houdini.org/css-typed-om-1/#typedefdef-csskeywordish)
      * [`https://drafts.css-houdini.org/css-typed-om-1/#rectify-a-keywordish-value`](https://drafts.css-houdini.org/css-typed-om-1/#rectify-a-keywordish-value)
      * [`https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue-match-a-grammar`](https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue-match-a-grammar)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
      * [`https://drafts.csswg.org/cssom-1/#cssomstring`](https://drafts.csswg.org/cssom-1/#cssomstring)
 - [Secure Contexts](https://www.w3.org/TR/secure-contexts/):
      * [`https://html.spec.whatwg.org/#creator-context-security`](https://html.spec.whatwg.org/#creator-context-security)
@@ -6299,6 +6295,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#concept-construct-readablestream`](https://fetch.spec.whatwg.org/#concept-construct-readablestream)
      * [`https://fetch.spec.whatwg.org/#concept-readablestream-closed`](https://fetch.spec.whatwg.org/#concept-readablestream-closed)
      * [`https://fetch.spec.whatwg.org/#concept-enqueue-readablestream`](https://fetch.spec.whatwg.org/#concept-enqueue-readablestream)
+     * [`https://fetch.spec.whatwg.org/#concept-body-disturbed`](https://fetch.spec.whatwg.org/#concept-body-disturbed)
+     * [`https://fetch.spec.whatwg.org/#concept-body-locked`](https://fetch.spec.whatwg.org/#concept-body-locked)
      * [`https://fetch.spec.whatwg.org/#concept-empty-readablestream`](https://fetch.spec.whatwg.org/#concept-empty-readablestream)
      * [`https://fetch.spec.whatwg.org/#concept-readablestream`](https://fetch.spec.whatwg.org/#concept-readablestream)
      * [`https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream`](https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream)
@@ -6617,6 +6615,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#dfn-maplike`](https://heycam.github.io/webidl/#dfn-maplike)
      * [`https://heycam.github.io/webidl/#dom-domexception-name`](https://heycam.github.io/webidl/#dom-domexception-name)
      * [`https://heycam.github.io/webidl/#dom-domexception-code`](https://heycam.github.io/webidl/#dom-domexception-code)
+- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/):
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
 - [WebTransport](https://w3c.github.io/webtransport/):
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
@@ -6677,7 +6678,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1517 problematic external links found in 236 specifications
+=> 1523 problematic external links found in 236 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
@@ -6796,9 +6797,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Resource Hints](https://www.w3.org/TR/resource-hints/):
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [Screen Capture](https://www.w3.org/TR/screen-capture/):
-     * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/)
      * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/)
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [Secure Contexts](https://www.w3.org/TR/secure-contexts/):
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
      * [`https://www.w3.org/TR/workers/`](https://www.w3.org/TR/workers/)
@@ -6853,7 +6852,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/):
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 
-=> 94 problematic external links found in 70 specifications
+=> 92 problematic external links found in 70 specifications
 
 
 ## External links that use a dated URL
@@ -7115,8 +7114,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/)
      * [`https://www.w3.org/TR/2015/WD-svg-markers-20150407/`](https://www.w3.org/TR/2015/WD-svg-markers-20150407/)
      * [`https://www.w3.org/TR/2015/WD-svg-strokes-20150407/`](https://www.w3.org/TR/2015/WD-svg-strokes-20150407/)
-- [Screen Capture](https://www.w3.org/TR/screen-capture/):
-     * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 - [Selection API](https://www.w3.org/TR/selection-api/):
      * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/)
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/):
@@ -7175,6 +7172,6 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
-=> 248 problematic external links found in 68 specifications
+=> 247 problematic external links found in 67 specifications
 
 

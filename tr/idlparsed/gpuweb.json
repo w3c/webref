@@ -5447,7 +5447,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUBufferCopyView"
+                  "idlType": "GPUImageCopyBuffer"
                 },
                 "default": null,
                 "optional": false,
@@ -5463,7 +5463,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUTextureCopyView"
+                  "idlType": "GPUImageCopyTexture"
                 },
                 "default": null,
                 "optional": false,
@@ -5511,7 +5511,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUTextureCopyView"
+                  "idlType": "GPUImageCopyTexture"
                 },
                 "default": null,
                 "optional": false,
@@ -5527,7 +5527,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUBufferCopyView"
+                  "idlType": "GPUImageCopyBuffer"
                 },
                 "default": null,
                 "optional": false,
@@ -5575,7 +5575,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUTextureCopyView"
+                  "idlType": "GPUImageCopyTexture"
                 },
                 "default": null,
                 "optional": false,
@@ -5591,7 +5591,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUTextureCopyView"
+                  "idlType": "GPUImageCopyTexture"
                 },
                 "default": null,
                 "optional": false,
@@ -5905,9 +5905,9 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUTextureDataLayout": {
+      "GPUImageDataLayout": {
         "type": "dictionary",
-        "name": "GPUTextureDataLayout",
+        "name": "GPUImageDataLayout",
         "inheritance": null,
         "members": [
           {
@@ -5962,10 +5962,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUBufferCopyView": {
+      "GPUImageCopyBuffer": {
         "type": "dictionary",
-        "name": "GPUBufferCopyView",
-        "inheritance": "GPUTextureDataLayout",
+        "name": "GPUImageCopyBuffer",
+        "inheritance": "GPUImageDataLayout",
         "members": [
           {
             "type": "field",
@@ -5986,9 +5986,9 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUTextureCopyView": {
+      "GPUImageCopyTexture": {
         "type": "dictionary",
-        "name": "GPUTextureCopyView",
+        "name": "GPUImageCopyTexture",
         "inheritance": null,
         "members": [
           {
@@ -6063,9 +6063,9 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUImageBitmapCopyView": {
+      "GPUImageCopyImageBitmap": {
         "type": "dictionary",
-        "name": "GPUImageBitmapCopyView",
+        "name": "GPUImageCopyImageBitmap",
         "inheritance": null,
         "members": [
           {
@@ -8297,7 +8297,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUTextureCopyView"
+                  "idlType": "GPUImageCopyTexture"
                 },
                 "default": null,
                 "optional": false,
@@ -8336,7 +8336,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUTextureDataLayout"
+                  "idlType": "GPUImageDataLayout"
                 },
                 "default": null,
                 "optional": false,
@@ -8384,7 +8384,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageBitmapCopyView"
+                  "idlType": "GPUImageCopyImageBitmap"
                 },
                 "default": null,
                 "optional": false,
@@ -8400,7 +8400,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUTextureCopyView"
+                  "idlType": "GPUImageCopyTexture"
                 },
                 "default": null,
                 "optional": false,
@@ -10286,8 +10286,8 @@
         "GPUComputePassDescriptor",
         "GPUBuffer",
         "GPUSize64",
-        "GPUBufferCopyView",
-        "GPUTextureCopyView",
+        "GPUImageCopyBuffer",
+        "GPUImageCopyTexture",
         "GPUExtent3D",
         "GPUQuerySet",
         "GPUSize32",
@@ -10298,21 +10298,21 @@
       "GPUCommandEncoderDescriptor": [
         "GPUObjectDescriptorBase"
       ],
-      "GPUTextureDataLayout": [
+      "GPUImageDataLayout": [
         "GPUSize64",
         "GPUSize32"
       ],
-      "GPUBufferCopyView": [
-        "GPUTextureDataLayout",
+      "GPUImageCopyBuffer": [
+        "GPUImageDataLayout",
         "GPUBuffer"
       ],
-      "GPUTextureCopyView": [
+      "GPUImageCopyTexture": [
         "GPUTexture",
         "GPUIntegerCoordinate",
         "GPUOrigin3D",
         "GPUTextureAspect"
       ],
-      "GPUImageBitmapCopyView": [
+      "GPUImageCopyImageBitmap": [
         "ImageBitmap",
         "GPUOrigin2D"
       ],
@@ -10395,10 +10395,10 @@
         "GPUCommandBuffer",
         "GPUBuffer",
         "GPUSize64",
-        "GPUTextureCopyView",
-        "GPUTextureDataLayout",
+        "GPUImageCopyTexture",
+        "GPUImageDataLayout",
         "GPUExtent3D",
-        "GPUImageBitmapCopyView",
+        "GPUImageCopyImageBitmap",
         "GPUObjectBase"
       ],
       "GPUQuerySet": [

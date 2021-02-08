@@ -573,16 +573,14 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-rtcrtpsender-createencodedstreams",
-      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcrtpsender-createencodedstreams",
+      "id": "typedefdef-rtcrtptransform",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#typedefdef-rtcrtptransform",
       "linkingText": [
-        "createEncodedStreams()"
+        "RTCRtpTransform"
       ],
       "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "RTCRtpSender"
-      ],
+      "type": "typedef",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -611,6 +609,348 @@
         "number": "3"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-rtcrtpsender-createencodedstreams",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcrtpsender-createencodedstreams",
+      "linkingText": [
+        "createEncodedStreams()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "RTCRtpSender"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "stream-creation",
+        "title": "Stream creation",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "readencodeddata",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#readencodeddata",
+      "linkingText": [
+        "readEncodedData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "stream-processing",
+        "title": "Stream processing",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "writeencodeddata",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#writeencodeddata",
+      "linkingText": [
+        "writeEncodedData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "stream-processing",
+        "title": "Stream processing",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-rtcrtpsender-transform",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcrtpsender-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "RTCRtpSender",
+        "RTCRtpReceiver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attribute",
+        "title": "Extension attribute",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "chain-transform-algorithm",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#chain-transform-algorithm",
+      "linkingText": [
+        "chain transform algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribute",
+        "title": "Extension attribute",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-sframetransformrole",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#enumdef-sframetransformrole",
+      "linkingText": [
+        "SFrameTransformRole"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "title": "SFrameTransform",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sframetransformrole-encrypt",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-sframetransformrole-encrypt",
+      "linkingText": [
+        "\"encrypt\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SFrameTransformRole"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "title": "SFrameTransform",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sframetransformrole-decrypt",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-sframetransformrole-decrypt",
+      "linkingText": [
+        "\"decrypt\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SFrameTransformRole"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "title": "SFrameTransform",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-sframetransformoptions",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dictdef-sframetransformoptions",
+      "linkingText": [
+        "SFrameTransformOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "title": "SFrameTransform",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sframetransformoptions-role",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-sframetransformoptions-role",
+      "linkingText": [
+        "role"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SFrameTransformOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "title": "SFrameTransform",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "sframetransform",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#sframetransform",
+      "linkingText": [
+        "SFrameTransform"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "title": "SFrameTransform",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sframetransform-sframetransform-options-options",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-sframetransform-sframetransform-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SFrameTransform/SFrameTransform(options)",
+        "SFrameTransform/constructor(options)",
+        "SFrameTransform/SFrameTransform()",
+        "SFrameTransform/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "title": "SFrameTransform",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sframetransform-sframetransform",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-sframetransform-sframetransform",
+      "linkingText": [
+        "SFrameTransform(options)",
+        "constructor(options)",
+        "SFrameTransform()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SFrameTransform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "title": "SFrameTransform",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "rtcrtpscripttransform",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#rtcrtpscripttransform",
+      "linkingText": [
+        "RTCRtpScriptTransform"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scriptTransform",
+        "title": "RTCRtpScriptTransform",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rtcrtpscripttransform-rtcrtpscripttransform-worker-options-worker",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcrtpscripttransform-rtcrtpscripttransform-worker-options-worker",
+      "linkingText": [
+        "worker"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker, options)",
+        "RTCRtpScriptTransform/constructor(worker, options)",
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker)",
+        "RTCRtpScriptTransform/constructor(worker)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scriptTransform",
+        "title": "RTCRtpScriptTransform",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rtcrtpscripttransform-rtcrtpscripttransform-worker-options-options",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcrtpscripttransform-rtcrtpscripttransform-worker-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker, options)",
+        "RTCRtpScriptTransform/constructor(worker, options)",
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker)",
+        "RTCRtpScriptTransform/constructor(worker)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scriptTransform",
+        "title": "RTCRtpScriptTransform",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rtcrtpscripttransform-rtcrtpscripttransform",
+      "href": "https://w3c.github.io/webrtc-insertable-streams/#dom-rtcrtpscripttransform-rtcrtpscripttransform",
+      "linkingText": [
+        "RTCRtpScriptTransform(worker, options)",
+        "constructor(worker, options)",
+        "RTCRtpScriptTransform(worker)",
+        "constructor(worker)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "RTCRtpScriptTransform"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scriptTransform",
+        "title": "RTCRtpScriptTransform",
+        "number": "5"
+      },
+      "definedIn": "prose"
     }
   ]
 }
