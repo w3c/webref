@@ -1170,7 +1170,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/CSS21/](https://www.w3.org/TR/CSS21/)
 - Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Crawled version: 9 November 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
 - Latest published version: [https://www.w3.org/TR/CSS21/](https://www.w3.org/TR/CSS21/)
 - Shortname: CSS21
@@ -1272,6 +1272,7 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [CSS Typed OM Level 2](https://drafts.css-houdini.org/css-typed-om-2/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
@@ -1307,7 +1308,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
 - Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Crawled version: 9 November 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
 - Latest published version: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
 - Shortname: CSS22
@@ -1647,7 +1648,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
 - Crawled URL: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
-- Crawled version: 10 March 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
 - Shortname: css-backgrounds-4
 
@@ -2290,7 +2291,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 5 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -2905,7 +2906,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
 - Crawled URL: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
-- Crawled version: 6 November 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
 - Latest published version: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
 - Shortname: css-flexbox-1
@@ -3839,7 +3840,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
 - Crawled URL: [https://drafts.csswg.org/css-multicol/](https://drafts.csswg.org/css-multicol/)
-- Crawled version: 21 January 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-multicol/](https://drafts.csswg.org/css-multicol/)
 - Latest published version: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
 - Shortname: css-multicol-1
@@ -4572,7 +4573,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-rhythm-1/](https://www.w3.org/TR/css-rhythm-1/)
 - Crawled URL: [https://drafts.csswg.org/css-rhythm/](https://drafts.csswg.org/css-rhythm/)
-- Crawled version: 18 September 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-rhythm/](https://drafts.csswg.org/css-rhythm/)
 - Latest published version: [https://www.w3.org/TR/css-rhythm-1/](https://www.w3.org/TR/css-rhythm-1/)
 - Shortname: css-rhythm-1
@@ -4977,7 +4978,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-speech-1/](https://www.w3.org/TR/css-speech-1/)
 - Crawled URL: [https://drafts.csswg.org/css-speech-1/](https://drafts.csswg.org/css-speech-1/)
-- Crawled version: 7 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-speech-1/](https://drafts.csswg.org/css-speech-1/)
 - Latest published version: [https://www.w3.org/TR/css-speech-1/](https://www.w3.org/TR/css-speech-1/)
 - Shortname: css-speech-1
@@ -5654,7 +5655,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.css-houdini.org/css-typed-om-2/](https://drafts.css-houdini.org/css-typed-om-2/)
 - Crawled URL: [https://drafts.css-houdini.org/css-typed-om-2/](https://drafts.css-houdini.org/css-typed-om-2/)
-- Crawled version: 10 May 2018
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.css-houdini.org/css-typed-om-2/](https://drafts.css-houdini.org/css-typed-om-2/)
 - Shortname: css-typed-om-2
 
@@ -5777,6 +5778,7 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [CSS Typed OM Level 2](https://drafts.css-houdini.org/css-typed-om-2/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
@@ -6831,7 +6833,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 4 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -10176,9 +10178,7 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [WebCodecs](https://wicg.github.io/web-codecs/)
+No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
@@ -14558,7 +14558,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
 - Crawled URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
-- Crawled version: 5 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
 - Shortname: web-codecs
 
@@ -16282,7 +16282,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 6 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
