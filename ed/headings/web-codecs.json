@@ -42,6 +42,18 @@
       "number": "2"
     },
     {
+      "id": "processing-model-background",
+      "level": 3,
+      "title": "Background",
+      "number": "2.1"
+    },
+    {
+      "id": "control-thread-and-codec-thread",
+      "level": 3,
+      "title": "Control Thread and Codec Thread",
+      "number": "2.2"
+    },
+    {
       "id": "audiodecoder-interface",
       "level": 2,
       "title": "AudioDecoder Interface",
@@ -70,6 +82,12 @@
       "level": 3,
       "title": "Methods",
       "number": "3.4"
+    },
+    {
+      "id": "audiodecoder-algorithms",
+      "level": 3,
+      "title": "Algorithms",
+      "number": "3.5"
     },
     {
       "id": "videodecoder-interface",
@@ -102,6 +120,12 @@
       "number": "4.4"
     },
     {
+      "id": "videodecoder-algorithms",
+      "level": 3,
+      "title": "Algorithms",
+      "number": "4.5"
+    },
+    {
       "id": "audioencoder-interface",
       "level": 2,
       "title": "AudioEncoder Interface",
@@ -130,6 +154,12 @@
       "level": 3,
       "title": "Methods",
       "number": "5.4"
+    },
+    {
+      "id": "audioencoder-algorithms",
+      "level": 3,
+      "title": "Algorithms",
+      "number": "5.5"
     },
     {
       "id": "videoencoder-interface",
@@ -162,348 +192,277 @@
       "number": "6.4"
     },
     {
-      "id": "decoder-and-encoder-algorithms",
-      "level": 2,
-      "title": "Decoder and Encoder Algorithms",
-      "number": "7"
-    },
-    {
-      "id": "configure-decoder-algorithm",
+      "id": "videoencoder-algorithms",
       "level": 3,
-      "title": "Configure Decoder",
-      "number": "7.1"
-    },
-    {
-      "id": "decode-chunk-algorithm",
-      "level": 3,
-      "title": "Decode Chunk (with chunk and output algorithm)",
-      "number": "7.2"
-    },
-    {
-      "id": "flush-algorithm",
-      "level": 3,
-      "title": "Flush",
-      "number": "7.3"
-    },
-    {
-      "id": "codec-error-algorithm",
-      "level": 3,
-      "title": "Codec Error",
-      "number": "7.4"
-    },
-    {
-      "id": "audio-frame-output-algorithm",
-      "level": 3,
-      "title": "AudioFrame Output",
-      "number": "7.5"
-    },
-    {
-      "id": "video-frame-output-algorithm",
-      "level": 3,
-      "title": "VideoFrame Output",
-      "number": "7.6"
-    },
-    {
-      "id": "reset-algorithm",
-      "level": 3,
-      "title": "Reset",
-      "number": "7.7"
-    },
-    {
-      "id": "close-algorithm",
-      "level": 3,
-      "title": "Close (with error)",
-      "number": "7.8"
-    },
-    {
-      "id": "configure-encoder-algorithm",
-      "level": 3,
-      "title": "Configure Encoder (with config)",
-      "number": "7.9"
-    },
-    {
-      "id": "encode-frame-algorithm",
-      "level": 3,
-      "title": "Encode Frame (with frame, options, and output algorithm)",
-      "number": "7.10"
-    },
-    {
-      "id": "encodedaudiochunk-output-algorithm",
-      "level": 3,
-      "title": "EncodedAudioChunk Output",
-      "number": "7.11"
-    },
-    {
-      "id": "encodedvideochunk-output-algorithm",
-      "level": 3,
-      "title": "EncodedVideoChunk Output",
-      "number": "7.12"
+      "title": "Algorithms",
+      "number": "6.5"
     },
     {
       "id": "configurations",
       "level": 2,
       "title": "Configurations",
-      "number": "8"
+      "number": "7"
     },
     {
       "id": "config-codec-string",
       "level": 3,
       "title": "Codec String",
-      "number": "8.1"
+      "number": "7.1"
     },
     {
       "id": "audio-decoder-config",
       "level": 3,
       "title": "AudioDecoderConfig",
-      "number": "8.2"
+      "number": "7.2"
     },
     {
       "id": "video-decoder-config",
       "level": 3,
       "title": "VideoDecoderConfig",
-      "number": "8.3"
+      "number": "7.3"
     },
     {
       "id": "audio-encoder-config",
       "level": 3,
       "title": "AudioEncoderConfig",
-      "number": "8.4"
+      "number": "7.4"
     },
     {
       "id": "video-encoder-config",
       "level": 3,
       "title": "VideoEncoderConfig",
-      "number": "8.5"
+      "number": "7.5"
     },
     {
       "id": "video-encoder-options",
       "level": 3,
       "title": "VideoEncoderEncodeOptions",
-      "number": "8.6"
+      "number": "7.6"
     },
     {
       "id": "codec-state",
       "level": 3,
       "title": "CodecState",
-      "number": "8.7"
+      "number": "7.7"
     },
     {
       "id": "error-callback",
       "level": 3,
       "title": "WebCodecsErrorCallback",
-      "number": "8.8"
+      "number": "7.8"
     },
     {
       "id": "encoded-media-interfaces",
       "level": 2,
       "title": "Encoded Media Interfaces (Chunks)",
-      "number": "9"
+      "number": "8"
     },
     {
       "id": "encodedaudiochunk-interface",
       "level": 3,
       "title": "EncodedAudioChunk Interface",
-      "number": "9.1"
+      "number": "8.1"
     },
     {
       "id": "encodedaudiochunk-constructors",
       "level": 4,
       "title": "Constructors",
-      "number": "9.1.1"
+      "number": "8.1.1"
     },
     {
       "id": "encodedaudiochunk-attributes",
       "level": 4,
       "title": "Attributes",
-      "number": "9.1.2"
+      "number": "8.1.2"
     },
     {
       "id": "encodedvideochunk-interface",
       "level": 3,
       "title": "EncodedVideoChunk Interface",
-      "number": "9.2"
+      "number": "8.2"
     },
     {
       "id": "encodedvideochunk-constructors",
       "level": 4,
       "title": "Constructors",
-      "number": "9.2.1"
+      "number": "8.2.1"
     },
     {
       "id": "encodedvideochunk-attributes",
       "level": 4,
       "title": "Attributes",
-      "number": "9.2.2"
+      "number": "8.2.2"
     },
     {
       "id": "raw-media-interfaces",
       "level": 2,
-      "title": "10. Raw Media Interfaces (Frames)"
+      "title": "Raw Media Interfaces (Frames)",
+      "number": "9"
     },
     {
       "id": "audioframe-interface",
       "level": 3,
       "title": "AudioFrame Interface",
-      "number": "10.1"
+      "number": "9.1"
     },
     {
       "id": "audioframe-internal-slots",
       "level": 4,
       "title": "Internal Slots",
-      "number": "10.1.1"
+      "number": "9.1.1"
     },
     {
       "id": "audioframe-constructors",
       "level": 4,
       "title": "Constructors",
-      "number": "10.1.2"
+      "number": "9.1.2"
     },
     {
       "id": "audioframe-attributes",
       "level": 4,
       "title": "Attributes",
-      "number": "10.1.3"
+      "number": "9.1.3"
     },
     {
       "id": "audioframe-methods",
       "level": 4,
       "title": "Methods",
-      "number": "10.1.4"
+      "number": "9.1.4"
     },
     {
       "id": "videoframe-interface",
       "level": 3,
       "title": "VideoFrame Interface",
-      "number": "10.2"
+      "number": "9.2"
     },
     {
       "id": "videoframe-internal-slots",
       "level": 4,
       "title": "Internal Slots",
-      "number": "10.2.1"
+      "number": "9.2.1"
     },
     {
       "id": "videoframe-constructors",
       "level": 4,
       "title": "Constructors",
-      "number": "10.2.2"
+      "number": "9.2.2"
     },
     {
       "id": "videoframe-attributes",
       "level": 4,
       "title": "Attributes",
-      "number": "10.2.3"
+      "number": "9.2.3"
     },
     {
       "id": "videoframe-methods",
       "level": 4,
       "title": "Methods",
-      "number": "10.2.4"
+      "number": "9.2.4"
     },
     {
       "id": "videoframe-algorithms",
       "level": 4,
       "title": "Algorithms",
-      "number": "10.2.5"
+      "number": "9.2.5"
     },
     {
       "id": "plane-interface",
       "level": 3,
       "title": "Plane Interface",
-      "number": "10.3"
+      "number": "9.3"
     },
     {
       "id": "plane-internal-slots",
       "level": 4,
       "title": "Internal Slots",
-      "number": "10.3.1"
+      "number": "9.3.1"
     },
     {
       "id": "plane-attributes",
       "level": 4,
       "title": "Attributes",
-      "number": "10.3.2"
+      "number": "9.3.2"
     },
     {
       "id": "plane-methods",
       "level": 4,
       "title": "Methods",
-      "number": "10.3.3"
+      "number": "9.3.3"
     },
     {
       "id": "pixel-format",
       "level": 3,
       "title": "Pixel Format",
-      "number": "10.4"
+      "number": "9.4"
     },
     {
       "id": "raw-media-algorithms",
       "level": 3,
       "title": "Algorithms",
-      "number": "10.5"
+      "number": "9.5"
     },
     {
       "id": "clone-frame-algo",
       "level": 3,
       "title": "Clone Frame (with frame)",
-      "number": "10.6"
+      "number": "9.6"
     },
     {
       "id": "videotrackreader-interface",
       "level": 2,
-      "title": "11. VideoTrackReader Interface"
+      "title": "10. VideoTrackReader Interface"
     },
     {
       "id": "videotrackreaderreadystate",
       "level": 3,
       "title": "VideoTrackReaderState Values",
-      "number": "11.1"
+      "number": "10.1"
     },
     {
       "id": "videotrackreader-slots",
       "level": 3,
       "title": "Internal Slots",
-      "number": "11.2"
+      "number": "10.2"
     },
     {
       "id": "videotrackreader-constructors",
       "level": 3,
       "title": "Constructors",
-      "number": "11.3"
+      "number": "10.3"
     },
     {
       "id": "videotrackreader-attributes",
       "level": 3,
       "title": "Attributes",
-      "number": "11.4"
+      "number": "10.4"
     },
     {
       "id": "videotrackreader-events",
       "level": 3,
       "title": "Event Summary",
-      "number": "11.5"
+      "number": "10.5"
     },
     {
       "id": "videotrackreader-methods",
       "level": 3,
       "title": "Methods",
-      "number": "11.6"
+      "number": "10.6"
     },
     {
       "id": "mediastreamtrack-monitoring",
       "level": 3,
       "title": "MediaStreamTrack Monitoring",
-      "number": "11.7"
+      "number": "10.7"
     },
     {
       "id": "security-considerations",
       "level": 2,
-      "title": "12. Security Considerations"
+      "title": "11. Security Considerations"
     },
     {
       "id": "privacy-considerations",
       "level": 2,
-      "title": "13. Privacy Considerations"
+      "title": "12. Privacy Considerations"
     },
     {
       "id": "w3c-conformance",
