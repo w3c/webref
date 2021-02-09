@@ -3,6 +3,6 @@
 interface PluginArray {
   undefined refresh();
   readonly attribute unsigned long length;
-  object? item(unsigned long index);
+  getter object? item(unsigned long index);
   object? namedItem(DOMString name);
 };

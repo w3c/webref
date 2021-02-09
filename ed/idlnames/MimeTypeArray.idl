@@ -2,6 +2,6 @@
 [Exposed=Window]
 interface MimeTypeArray {
   readonly attribute unsigned long length;
-  object? item(unsigned long index);
+  getter object? item(unsigned long index);
   object? namedItem(DOMString name);
 };

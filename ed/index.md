@@ -539,10 +539,9 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Network Information API](https://wicg.github.io/netinfo/)
-
-Informative references to this spec from:
-
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
+
+No informative reference to this spec from other specs.
 
 
 ## Clipboard API and events {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -7855,7 +7854,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 8 February 2021
+- Crawled version: 9 February 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -13590,7 +13589,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled version: 3 February 2021
+- Crawled version: 9 February 2021
 - Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Shortname: ua-client-hints
 

@@ -5,6 +5,6 @@ interface Plugin {
   readonly attribute undefined description;
   readonly attribute undefined filename;
   readonly attribute undefined length;
-  undefined item(unsigned long index);
+  getter undefined item(unsigned long index);
   undefined namedItem(DOMString name);
 };
