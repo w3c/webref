@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 08, 2021
+% February 09, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -171,7 +171,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
-- Crawled version: 04 February 2021
+- Crawled version: 08 February 2021
 - Editor's Draft: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Shortname: wai-aria-1.2
@@ -1680,7 +1680,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Crawled URL: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
-- Crawled version: 20 January 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Shortname: css-ui-4
@@ -1736,7 +1736,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
 - Crawled URL: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
-- Crawled version: 15 January 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
 - Latest published version: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
 - Shortname: css-align-3
@@ -2085,7 +2085,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
-- Crawled version: 15 January 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
 - Latest published version: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
 - Shortname: css-cascade-4
@@ -2137,7 +2137,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-cascade-5/](https://www.w3.org/TR/css-cascade-5/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
-- Crawled version: 15 January 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
 - Latest published version: [https://www.w3.org/TR/css-cascade-5/](https://www.w3.org/TR/css-cascade-5/)
 - Shortname: css-cascade-5
@@ -2542,7 +2542,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-highlight-api-1/](https://www.w3.org/TR/css-highlight-api-1/)
 - Crawled URL: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
-- Crawled version: 8 December 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
 - Latest published version: [https://www.w3.org/TR/css-highlight-api-1/](https://www.w3.org/TR/css-highlight-api-1/)
 - Shortname: css-highlight-api-1
@@ -2566,7 +2566,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
 - Crawled URL: [https://drafts.csswg.org/css-variables/](https://drafts.csswg.org/css-variables/)
-- Crawled version: 18 September 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-variables/](https://drafts.csswg.org/css-variables/)
 - Latest published version: [https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
 - Shortname: css-variables-1
@@ -2615,7 +2615,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-device-adapt-1/](https://www.w3.org/TR/css-device-adapt-1/)
 - Crawled URL: [https://drafts.csswg.org/css-device-adapt/](https://drafts.csswg.org/css-device-adapt/)
-- Crawled version: 3 June 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-device-adapt/](https://drafts.csswg.org/css-device-adapt/)
 - Latest published version: [https://www.w3.org/TR/css-device-adapt-1/](https://www.w3.org/TR/css-device-adapt-1/)
 - Shortname: css-device-adapt-1
@@ -2652,7 +2652,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Crawled URL: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
-- Crawled version: 21 December 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
 - Latest published version: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Shortname: css-display-3
@@ -2813,7 +2813,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css3-exclusions/](https://www.w3.org/TR/css3-exclusions/)
 - Crawled URL: [https://drafts.csswg.org/css-exclusions/](https://drafts.csswg.org/css-exclusions/)
-- Crawled version: 18 September 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-exclusions/](https://drafts.csswg.org/css-exclusions/)
 - Latest published version: [https://www.w3.org/TR/css3-exclusions/](https://www.w3.org/TR/css3-exclusions/)
 - Shortname: css3-exclusions
@@ -3004,7 +3004,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Crawled URL: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
-- Crawled version: 7 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Shortname: css-fonts-4
@@ -3224,7 +3224,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-gcpm-3/](https://www.w3.org/TR/css-gcpm-3/)
 - Crawled URL: [https://drafts.csswg.org/css-gcpm/](https://drafts.csswg.org/css-gcpm/)
-- Crawled version: 11 November 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-gcpm/](https://drafts.csswg.org/css-gcpm/)
 - Latest published version: [https://www.w3.org/TR/css-gcpm-3/](https://www.w3.org/TR/css-gcpm-3/)
 - Shortname: css-gcpm-3
@@ -3391,7 +3391,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
 - Crawled URL: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
-- Crawled version: 7 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
 - Shortname: css-grid-3
 
@@ -3418,7 +3418,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
 - Crawled URL: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
-- Crawled version: 16 December 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
 - Latest published version: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
 - Shortname: css-images-3
@@ -3487,7 +3487,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Crawled URL: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
-- Crawled version: 13 January 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
 - Latest published version: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Shortname: css-images-4
@@ -3540,7 +3540,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Crawled URL: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
-- Crawled version: 31 January 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
 - Latest published version: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Shortname: css-inline-3
@@ -3663,7 +3663,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-lists-3/](https://www.w3.org/TR/css-lists-3/)
 - Crawled URL: [https://drafts.csswg.org/css-lists-3/](https://drafts.csswg.org/css-lists-3/)
-- Crawled version: 30 December 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-lists-3/](https://drafts.csswg.org/css-lists-3/)
 - Latest published version: [https://www.w3.org/TR/css-lists-3/](https://www.w3.org/TR/css-lists-3/)
 - Shortname: css-lists-3
@@ -4182,7 +4182,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-overscroll-1/](https://www.w3.org/TR/css-overscroll-1/)
 - Crawled URL: [https://drafts.csswg.org/css-overscroll-1/](https://drafts.csswg.org/css-overscroll-1/)
-- Crawled version: 18 September 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-overscroll-1/](https://drafts.csswg.org/css-overscroll-1/)
 - Latest published version: [https://www.w3.org/TR/css-overscroll-1/](https://www.w3.org/TR/css-overscroll-1/)
 - Shortname: css-overscroll-1
@@ -4214,7 +4214,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-page-floats-3/](https://www.w3.org/TR/css-page-floats-3/)
 - Crawled URL: [https://drafts.csswg.org/css-page-floats/](https://drafts.csswg.org/css-page-floats/)
-- Crawled version: 18 September 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-page-floats/](https://drafts.csswg.org/css-page-floats/)
 - Latest published version: [https://www.w3.org/TR/css-page-floats-3/](https://www.w3.org/TR/css-page-floats-3/)
 - Shortname: css-page-floats-3
@@ -4247,7 +4247,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-page-3/](https://www.w3.org/TR/css-page-3/)
 - Crawled URL: [https://drafts.csswg.org/css-page-3/](https://drafts.csswg.org/css-page-3/)
-- Crawled version: 18 September 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-page-3/](https://drafts.csswg.org/css-page-3/)
 - Latest published version: [https://www.w3.org/TR/css-page-3/](https://www.w3.org/TR/css-page-3/)
 - Shortname: css-page-3
@@ -4457,7 +4457,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-pseudo-4/](https://www.w3.org/TR/css-pseudo-4/)
 - Crawled URL: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
-- Crawled version: 3 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
 - Latest published version: [https://www.w3.org/TR/css-pseudo-4/](https://www.w3.org/TR/css-pseudo-4/)
 - Shortname: css-pseudo-4
@@ -4679,7 +4679,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-scoping-1/](https://www.w3.org/TR/css-scoping-1/)
 - Crawled URL: [https://drafts.csswg.org/css-scoping/](https://drafts.csswg.org/css-scoping/)
-- Crawled version: 11 November 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-scoping/](https://drafts.csswg.org/css-scoping/)
 - Latest published version: [https://www.w3.org/TR/css-scoping-1/](https://www.w3.org/TR/css-scoping-1/)
 - Shortname: css-scoping-1
@@ -5134,7 +5134,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-tables-3/](https://www.w3.org/TR/css-tables-3/)
 - Crawled URL: [https://drafts.csswg.org/css-tables-3/](https://drafts.csswg.org/css-tables-3/)
-- Crawled version: 6 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-tables-3/](https://drafts.csswg.org/css-tables-3/)
 - Latest published version: [https://www.w3.org/TR/css-tables-3/](https://www.w3.org/TR/css-tables-3/)
 - Shortname: css-tables-3
@@ -5174,7 +5174,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-text-decor-3/](https://www.w3.org/TR/css-text-decor-3/)
 - Crawled URL: [https://drafts.csswg.org/css-text-decor-3/](https://drafts.csswg.org/css-text-decor-3/)
-- Crawled version: 2 December 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-text-decor-3/](https://drafts.csswg.org/css-text-decor-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-decor-3/](https://www.w3.org/TR/css-text-decor-3/)
 - Shortname: css-text-decor-3
@@ -5227,7 +5227,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Crawled URL: [https://drafts.csswg.org/css-text-decor-4/](https://drafts.csswg.org/css-text-decor-4/)
-- Crawled version: 2 December 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-text-decor-4/](https://drafts.csswg.org/css-text-decor-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Shortname: css-text-decor-4
@@ -5282,7 +5282,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Crawled URL: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
-- Crawled version: 23 December 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Shortname: css-text-3
@@ -5354,7 +5354,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-4/](https://www.w3.org/TR/css-text-4/)
 - Crawled URL: [https://drafts.csswg.org/css-text-4/](https://drafts.csswg.org/css-text-4/)
-- Crawled version: 2 December 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-text-4/](https://drafts.csswg.org/css-text-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-4/](https://www.w3.org/TR/css-text-4/)
 - Shortname: css-text-4
@@ -5464,7 +5464,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Crawled URL: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
-- Crawled version: 18 September 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
 - Latest published version: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Shortname: css-transforms-2
@@ -5503,7 +5503,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-transitions-1/](https://www.w3.org/TR/css-transitions-1/)
 - Crawled URL: [https://drafts.csswg.org/css-transitions/](https://drafts.csswg.org/css-transitions/)
-- Crawled version: 9 October 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-transitions/](https://drafts.csswg.org/css-transitions/)
 - Latest published version: [https://www.w3.org/TR/css-transitions-1/](https://www.w3.org/TR/css-transitions-1/)
 - Shortname: css-transitions-1
@@ -5979,7 +5979,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-writing-modes-4/](https://www.w3.org/TR/css-writing-modes-4/)
 - Crawled URL: [https://drafts.csswg.org/css-writing-modes-4/](https://drafts.csswg.org/css-writing-modes-4/)
-- Crawled version: 9 December 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-4/](https://drafts.csswg.org/css-writing-modes-4/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-4/](https://www.w3.org/TR/css-writing-modes-4/)
 - Shortname: css-writing-modes-4
@@ -6066,7 +6066,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/cssom-view-1/](https://www.w3.org/TR/cssom-view-1/)
 - Crawled URL: [https://drafts.csswg.org/cssom-view/](https://drafts.csswg.org/cssom-view/)
-- Crawled version: 5 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/cssom-view/](https://drafts.csswg.org/cssom-view/)
 - Latest published version: [https://www.w3.org/TR/cssom-view-1/](https://www.w3.org/TR/cssom-view-1/)
 - Shortname: cssom-view-1
@@ -7978,9 +7978,6 @@ No informative reference to this spec from other specs.
      * `"application/xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`application/xml`](https://html.spec.whatwg.org/multipage/indices.html#application/xml) with type `dfn`
      * `"application/xhtml+xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`application/xhtml+xml`](https://html.spec.whatwg.org/multipage/iana.html#application/xhtml+xml) with type `dfn`
      * `"image/svg+xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`image/svg+xml`](https://html.spec.whatwg.org/multipage/indices.html#image/svg+xml) with type `dfn`
-     * `plugins` with type `attribute` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins), but found [`plugins`](https://html.spec.whatwg.org/multipage/dom.html#dom-document-plugins) with type `attribute` for `Document`
-     * `mimeTypes` with type `attribute` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins)
-     * `javaEnabled()` with type `method` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins)
      * `cancelAnimationFrame(handle)` with type `method` for [`AnimationFrameProvider`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider), but found [`cancelAnimationFrame(handle)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider-cancelanimationframe) with type `dfn`
      * `constructor(type, eventInitDict)` with type `constructor` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
      * `constructor(url, eventSourceInitDict)` with type `constructor` for [`EventSource`](https://html.spec.whatwg.org/multipage/server-sent-events.html#eventsource), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
@@ -8053,17 +8050,16 @@ No informative reference to this spec from other specs.
      * `setInterval(handler, timeout, ...arguments)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`setInterval()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval) with type `method` for `WindowOrWorkerGlobalScope`
      * `clearInterval(handle)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`clearInterval()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-clearinterval) with type `method` for `WindowOrWorkerGlobalScope`
      * `createImageBitmap(image, sx, sy, sw, sh, options)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`createImageBitmap(image, options)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-createimagebitmap) with type `method` for `WindowOrWorkerGlobalScope`
-     * `refresh(reload)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/system-state.html#pluginarray), but found [`refresh()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-refresh) with type `method` for `PluginArray`
-     * `item(index)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/system-state.html#pluginarray), but found [`item()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-item) with type `method` for `PluginArray`
-     * `namedItem(name)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/system-state.html#pluginarray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-nameditem) with type `method` for `PluginArray`
-     * `item(index)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/system-state.html#mimetypearray), but found [`item()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetypearray-item) with type `method` for `MimeTypeArray`
-     * `namedItem(name)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/system-state.html#mimetypearray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetypearray-nameditem) with type `method` for `MimeTypeArray`
-     * `item(index)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin), but found [`item()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin-item) with type `method` for `Plugin`
-     * `namedItem(name)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin-nameditem) with type `method` for `Plugin`
      * `initMessageEvent(type, bubbles, cancelable, data, origin, lastEventId, source, ports)` with type `method` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`initMessageEvent()`](https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-initmessageevent) with type `method` for `MessageEvent`
      * `importScripts(...urls)` with type `method` for [`WorkerGlobalScope`](https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope), but found [`importScripts(urls)`](https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-importscripts) with type `method` for `WorkerGlobalScope`
      * `key(index)` with type `method` for [`Storage`](https://html.spec.whatwg.org/multipage/webstorage.html#storage-2), but found [`key(n)`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-key) with type `method` for `Storage`
      * `initStorageEvent(type, bubbles, cancelable, key, oldValue, newValue, url, storageArea)` with type `method` for [`StorageEvent`](https://html.spec.whatwg.org/multipage/webstorage.html#storageevent), but found [`initStorageEvent()`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-initstorageevent) with type `method` for `StorageEvent`
+     * `item(index)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/obsolete.html#pluginarray), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-pluginarray-item) with type `method` for `PluginArray`
+     * `namedItem(name)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/obsolete.html#pluginarray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-pluginarray-nameditem) with type `method` for `PluginArray`
+     * `item(index)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-item) with type `method` for `MimeTypeArray`
+     * `namedItem(name)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-nameditem) with type `method` for `MimeTypeArray`
+     * `item(index)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-item) with type `method` for `Plugin`
+     * `namedItem(name)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-nameditem) with type `method` for `Plugin`
 - Missing references for links: 
      * [`https://spec.whatwg.org/`](https://spec.whatwg.org/)
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
@@ -9936,7 +9932,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
-- Crawled version: 30 July 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Shortname: mediaqueries-4
@@ -9984,7 +9980,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
-- Crawled version: 2 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Shortname: mediaqueries-5
@@ -11930,7 +11926,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Crawled URL: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
-- Crawled version: 28 January 2021
+- Crawled version: 08 February 2021
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Shortname: SVG2
@@ -12338,7 +12334,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Crawled URL: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
-- Crawled version: 19 January 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
 - Latest published version: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Shortname: selectors-4
@@ -12591,7 +12587,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 14 January 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -12731,7 +12727,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
 - Crawled URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
-- Crawled version: 28 January 2021
+- Crawled version: 08 February 2021
 - Editor's Draft: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
 - Shortname: svg-animations
 
@@ -12787,7 +12783,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/svg-integration/](https://www.w3.org/TR/svg-integration/)
 - Crawled URL: [https://svgwg.org/specs/integration/](https://svgwg.org/specs/integration/)
-- Crawled version: 28 January 2021
+- Crawled version: 08 February 2021
 - Editor's Draft: [https://svgwg.org/specs/integration/](https://svgwg.org/specs/integration/)
 - Latest published version: [https://www.w3.org/TR/svg-integration/](https://www.w3.org/TR/svg-integration/)
 - Shortname: svg-integration
@@ -12823,7 +12819,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/svg-markers/](https://www.w3.org/TR/svg-markers/)
 - Crawled URL: [https://svgwg.org/specs/markers/](https://svgwg.org/specs/markers/)
-- Crawled version: 28 January 2021
+- Crawled version: 08 February 2021
 - Editor's Draft: [https://svgwg.org/specs/markers/](https://svgwg.org/specs/markers/)
 - Latest published version: [https://www.w3.org/TR/svg-markers/](https://www.w3.org/TR/svg-markers/)
 - Shortname: svg-markers
@@ -12866,7 +12862,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/svg-paths/](https://www.w3.org/TR/svg-paths/)
 - Crawled URL: [https://svgwg.org/specs/paths/](https://svgwg.org/specs/paths/)
-- Crawled version: 28 January 2021
+- Crawled version: 08 February 2021
 - Editor's Draft: [https://svgwg.org/specs/paths/](https://svgwg.org/specs/paths/)
 - Latest published version: [https://www.w3.org/TR/svg-paths/](https://www.w3.org/TR/svg-paths/)
 - Shortname: svg-paths
@@ -12898,7 +12894,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/svg-strokes/](https://www.w3.org/TR/svg-strokes/)
 - Crawled URL: [https://svgwg.org/specs/strokes/](https://svgwg.org/specs/strokes/)
-- Crawled version: 28 January 2021
+- Crawled version: 08 February 2021
 - Editor's Draft: [https://svgwg.org/specs/strokes/](https://svgwg.org/specs/strokes/)
 - Latest published version: [https://www.w3.org/TR/svg-strokes/](https://www.w3.org/TR/svg-strokes/)
 - Shortname: svg-strokes
@@ -13705,7 +13701,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Crawled URL: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
-- Crawled version: 8 November 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
 - Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Shortname: web-animations-1
@@ -16123,7 +16119,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 6 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -16454,7 +16450,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 5 February 2021
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Shortname: webxr
