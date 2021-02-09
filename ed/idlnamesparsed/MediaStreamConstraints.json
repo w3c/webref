@@ -1,0 +1,22 @@
+{
+  "name": "MediaStreamConstraints",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams",
+      "url": "https://www.w3.org/TR/mediacapture-streams/"
+    },
+    "fragment": "dictionary MediaStreamConstraints {\n  (boolean or MediaTrackConstraints) video = false;\n  (boolean or MediaTrackConstraints) audio = false;\n};",
+    "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamconstraints"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Identity for WebRTC 1.0",
+        "url": "https://www.w3.org/TR/webrtc-identity/"
+      },
+      "fragment": "partial dictionary MediaStreamConstraints {\n             DOMString peerIdentity;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

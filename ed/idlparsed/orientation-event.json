@@ -20,6 +20,7 @@
     },
     "idlNames": {
       "DeviceOrientationEvent": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceOrientationEvent : Event {\n    constructor(DOMString type, optional DeviceOrientationEventInit eventInitDict = {});\n    readonly attribute double? alpha;\n    readonly attribute double? beta;\n    readonly attribute double? gamma;\n    readonly attribute boolean absolute;\n\n    static Promise<PermissionState> requestPermission();\n};",
         "type": "interface",
         "name": "DeviceOrientationEvent",
         "inheritance": "Event",
@@ -169,6 +170,7 @@
         "partial": false
       },
       "DeviceOrientationEventInit": {
+        "fragment": "dictionary DeviceOrientationEventInit : EventInit {\n    double? alpha = null;\n    double? beta = null;\n    double? gamma = null;\n    boolean absolute = false;\n};",
         "type": "dictionary",
         "name": "DeviceOrientationEventInit",
         "inheritance": "EventInit",
@@ -247,6 +249,7 @@
         "partial": false
       },
       "PermissionState": {
+        "fragment": "enum PermissionState {\n    \"granted\",\n    \"denied\",\n};",
         "type": "enum",
         "name": "PermissionState",
         "values": [
@@ -262,6 +265,7 @@
         "extAttrs": []
       },
       "DeviceMotionEventAcceleration": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceMotionEventAcceleration {\n    readonly attribute double? x;\n    readonly attribute double? y;\n    readonly attribute double? z;\n};",
         "type": "interface",
         "name": "DeviceMotionEventAcceleration",
         "inheritance": null,
@@ -332,6 +336,7 @@
         "partial": false
       },
       "DeviceMotionEventRotationRate": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceMotionEventRotationRate {\n    readonly attribute double? alpha;\n    readonly attribute double? beta;\n    readonly attribute double? gamma;\n};",
         "type": "interface",
         "name": "DeviceMotionEventRotationRate",
         "inheritance": null,
@@ -402,6 +407,7 @@
         "partial": false
       },
       "DeviceMotionEvent": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface DeviceMotionEvent : Event {\n    constructor(DOMString type, optional DeviceMotionEventInit eventInitDict = {});\n    readonly attribute DeviceMotionEventAcceleration? acceleration;\n    readonly attribute DeviceMotionEventAcceleration? accelerationIncludingGravity;\n    readonly attribute DeviceMotionEventRotationRate? rotationRate;\n    readonly attribute double interval;\n\n    static Promise<PermissionState> requestPermission();\n};",
         "type": "interface",
         "name": "DeviceMotionEvent",
         "inheritance": "Event",
@@ -551,6 +557,7 @@
         "partial": false
       },
       "DeviceMotionEventAccelerationInit": {
+        "fragment": "dictionary DeviceMotionEventAccelerationInit {\n    double? x = null;\n    double? y = null;\n    double? z = null;\n};",
         "type": "dictionary",
         "name": "DeviceMotionEventAccelerationInit",
         "inheritance": null,
@@ -611,6 +618,7 @@
         "partial": false
       },
       "DeviceMotionEventRotationRateInit": {
+        "fragment": "dictionary DeviceMotionEventRotationRateInit {\n    double? alpha = null;\n    double? beta = null;\n    double? gamma = null;\n};",
         "type": "dictionary",
         "name": "DeviceMotionEventRotationRateInit",
         "inheritance": null,
@@ -671,6 +679,7 @@
         "partial": false
       },
       "DeviceMotionEventInit": {
+        "fragment": "dictionary DeviceMotionEventInit : EventInit {\n    DeviceMotionEventAccelerationInit acceleration;\n    DeviceMotionEventAccelerationInit accelerationIncludingGravity;\n    DeviceMotionEventRotationRateInit rotationRate;\n    double interval = 0;\n};",
         "type": "dictionary",
         "name": "DeviceMotionEventInit",
         "inheritance": "EventInit",
@@ -746,6 +755,7 @@
     "idlExtendedNames": {
       "Window": [
         {
+          "fragment": "partial interface Window {\n    [SecureContext] attribute EventHandler ondeviceorientation;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -777,6 +787,7 @@
           "partial": true
         },
         {
+          "fragment": "partial interface Window {\n    [SecureContext] attribute EventHandler ondeviceorientationabsolute;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -808,6 +819,7 @@
           "partial": true
         },
         {
+          "fragment": "partial interface Window {\n    attribute EventHandler oncompassneedscalibration;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -832,6 +844,7 @@
           "partial": true
         },
         {
+          "fragment": "partial interface Window {\n    [SecureContext] attribute EventHandler ondevicemotion;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,

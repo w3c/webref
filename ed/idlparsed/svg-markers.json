@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "SVGMarkableElement": {
+        "fragment": "interface mixin SVGMarkableElement {\n  readonly attribute SVGMarkerList markers;\n\n  long getMarkerIndexFromPoint(DOMPoint point);\n};",
         "type": "interface mixin",
         "name": "SVGMarkableElement",
         "inheritance": null,
@@ -66,6 +67,7 @@
         "partial": false
       },
       "SVGMarkerElement": {
+        "fragment": "interface SVGMarkerElement : SVGElement {\n\n  // Marker Unit Types\n  const unsigned short SVG_MARKERUNITS_UNKNOWN = 0;\n  const unsigned short SVG_MARKERUNITS_USERSPACEONUSE = 1;\n  const unsigned short SVG_MARKERUNITS_STROKEWIDTH = 2;\n\n  // Marker Orientation Types\n  const unsigned short SVG_MARKER_ORIENT_UNKNOWN = 0;\n  const unsigned short SVG_MARKER_ORIENT_AUTO = 1;\n  const unsigned short SVG_MARKER_ORIENT_ANGLE = 2;\n\n  readonly attribute SVGAnimatedLength refX;\n  readonly attribute SVGAnimatedLength refY;\n  readonly attribute SVGAnimatedEnumeration markerUnits;\n  readonly attribute SVGAnimatedLength markerWidth;\n  readonly attribute SVGAnimatedLength markerHeight;\n  readonly attribute SVGAnimatedEnumeration orientType;\n  readonly attribute SVGAnimatedAngle orientAngle;\n           attribute DOMString orient;\n\n  void setOrientToAuto();\n  void setOrientToAngle(SVGAngle angle);\n};",
         "type": "interface",
         "name": "SVGMarkerElement",
         "inheritance": "SVGElement",
@@ -344,6 +346,7 @@
         "partial": false
       },
       "SVGMarkerInstance": {
+        "fragment": "interface SVGMarkerInstance {\n  readonly attribute SVGMarkerElement element;\n  readonly attribute float position;\n  readonly attribute DOMPointReadOnly point;\n  readonly attribute float angle;\n};",
         "type": "interface",
         "name": "SVGMarkerInstance",
         "inheritance": null,
@@ -413,6 +416,7 @@
         "partial": false
       },
       "SVGMarkerList": {
+        "fragment": "interface SVGMarkerList {\n  readonly attribute unsigned long length;\n  getter SVGMarkerInstance? item(unsigned long index);\n};",
         "type": "interface",
         "name": "SVGMarkerList",
         "inheritance": null,
@@ -472,36 +476,46 @@
     "idlExtendedNames": {
       "SVGLineElement": [
         {
-          "name": "SVGLineElement",
-          "type": "interface",
+          "fragment": "SVGLineElement includes SVGMarkableElement;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGLineElement",
           "includes": "SVGMarkableElement"
         }
       ],
       "SVGPathElement": [
         {
-          "name": "SVGPathElement",
-          "type": "interface",
+          "fragment": "SVGPathElement includes SVGMarkableElement;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGPathElement",
           "includes": "SVGMarkableElement"
         }
       ],
       "SVGPolygonElement": [
         {
-          "name": "SVGPolygonElement",
-          "type": "interface",
+          "fragment": "SVGPolygonElement includes SVGMarkableElement;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGPolygonElement",
           "includes": "SVGMarkableElement"
         }
       ],
       "SVGPolylineElement": [
         {
-          "name": "SVGPolylineElement",
-          "type": "interface",
+          "fragment": "SVGPolylineElement includes SVGMarkableElement;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGPolylineElement",
           "includes": "SVGMarkableElement"
         }
       ],
       "SVGMarkerElement": [
         {
-          "name": "SVGMarkerElement",
-          "type": "interface",
+          "fragment": "SVGMarkerElement includes SVGFitToViewBox;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGMarkerElement",
           "includes": "SVGFitToViewBox"
         }
       ]

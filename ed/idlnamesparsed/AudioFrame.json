@@ -1,0 +1,14 @@
+{
+  "name": "AudioFrame",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://wicg.github.io/web-codecs/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface AudioFrame {\n  constructor(AudioFrameInit init);\n  readonly attribute unsigned long long timestamp;\n  readonly attribute AudioBuffer? buffer;\n  undefined close();\n};",
+    "href": "https://wicg.github.io/web-codecs/#audioframe"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

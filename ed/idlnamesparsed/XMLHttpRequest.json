@@ -1,0 +1,40 @@
+{
+  "name": "XMLHttpRequest",
+  "defined": {
+    "spec": {
+      "title": "XMLHttpRequest Standard",
+      "url": "https://xhr.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface XMLHttpRequest : XMLHttpRequestEventTarget {\n  constructor();\n\n  // event handler\n  attribute EventHandler onreadystatechange;\n\n  // states\n  const unsigned short UNSENT = 0;\n  const unsigned short OPENED = 1;\n  const unsigned short HEADERS_RECEIVED = 2;\n  const unsigned short LOADING = 3;\n  const unsigned short DONE = 4;\n  readonly attribute unsigned short readyState;\n\n  // request\n  undefined open(ByteString method, USVString url);\n  undefined open(ByteString method, USVString url, boolean async, optional USVString? username = null, optional USVString? password = null);\n  undefined setRequestHeader(ByteString name, ByteString value);\n           attribute unsigned long timeout;\n           attribute boolean withCredentials;\n  [SameObject] readonly attribute XMLHttpRequestUpload upload;\n  undefined send(optional (Document or XMLHttpRequestBodyInit)? body = null);\n  undefined abort();\n\n  // response\n  readonly attribute USVString responseURL;\n  readonly attribute unsigned short status;\n  readonly attribute ByteString statusText;\n  ByteString? getResponseHeader(ByteString name);\n  ByteString getAllResponseHeaders();\n  undefined overrideMimeType(DOMString mime);\n           attribute XMLHttpRequestResponseType responseType;\n  readonly attribute any response;\n  readonly attribute USVString responseText;\n  [Exposed=Window] readonly attribute Document? responseXML;\n};",
+    "href": "https://xhr.spec.whatwg.org/#xmlhttprequest"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XMLHttpRequestEventTarget",
+    "defined": {
+      "spec": {
+        "title": "XMLHttpRequest Standard",
+        "url": "https://xhr.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface XMLHttpRequestEventTarget : EventTarget {\n  // event handlers\n  attribute EventHandler onloadstart;\n  attribute EventHandler onprogress;\n  attribute EventHandler onabort;\n  attribute EventHandler onerror;\n  attribute EventHandler onload;\n  attribute EventHandler ontimeout;\n  attribute EventHandler onloadend;\n};",
+      "href": "https://xhr.spec.whatwg.org/#xmlhttprequesteventtarget"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

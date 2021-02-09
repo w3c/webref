@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "VideoKindEnum": {
+        "fragment": "enum VideoKindEnum {\n    \"color\",\n    \"depth\"\n};",
         "type": "enum",
         "name": "VideoKindEnum",
         "values": [
@@ -28,6 +29,7 @@
     "idlExtendedNames": {
       "MediaTrackSupportedConstraints": [
         {
+          "fragment": "partial dictionary MediaTrackSupportedConstraints {\n    // Applies to both depth stream track and color stream track:\n    boolean videoKind = true;\n};",
           "type": "dictionary",
           "name": "MediaTrackSupportedConstraints",
           "inheritance": null,
@@ -57,6 +59,7 @@
       ],
       "MediaTrackCapabilities": [
         {
+          "fragment": "partial dictionary MediaTrackCapabilities {\n    // Applies to both depth stream track and color stream track:\n    DOMString videoKind;\n};",
           "type": "dictionary",
           "name": "MediaTrackCapabilities",
           "inheritance": null,
@@ -83,6 +86,7 @@
       ],
       "MediaTrackConstraintSet": [
         {
+          "fragment": "partial dictionary MediaTrackConstraintSet {\n    // Applies to both depth stream track and color stream track:\n    ConstrainDOMString videoKind;\n};",
           "type": "dictionary",
           "name": "MediaTrackConstraintSet",
           "inheritance": null,
@@ -109,6 +113,7 @@
       ],
       "MediaTrackSettings": [
         {
+          "fragment": "partial dictionary MediaTrackSettings {\n    // Applies to both depth stream track and color stream track:\n    DOMString           videoKind;\n};",
           "type": "dictionary",
           "name": "MediaTrackSettings",
           "inheritance": null,

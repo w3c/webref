@@ -1,0 +1,50 @@
+// Source: WebXR Device API (https://www.w3.org/TR/webxr/)
+[SecureContext, Exposed=Window] interface XRSession : EventTarget {
+  // Attributes
+  readonly attribute XRVisibilityState visibilityState;
+  [SameObject] readonly attribute XRRenderState renderState;
+  [SameObject] readonly attribute XRInputSourceArray inputSources;
+
+  // Methods
+  undefined updateRenderState(optional XRRenderStateInit state = {});
+  [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);
+
+  unsigned long requestAnimationFrame(XRFrameRequestCallback callback);
+  undefined cancelAnimationFrame(unsigned long handle);
+
+  Promise<undefined> end();
+
+  // Events
+  attribute EventHandler onend;
+  attribute EventHandler oninputsourceschange;
+  attribute EventHandler onselect;
+  attribute EventHandler onselectstart;
+  attribute EventHandler onselectend;
+  attribute EventHandler onsqueeze;
+  attribute EventHandler onsqueezestart;
+  attribute EventHandler onsqueezeend;
+  attribute EventHandler onvisibilitychange;
+};
+
+// Source: WebXR DOM Overlays Module (https://immersive-web.github.io/dom-overlays/)
+partial interface XRSession {
+  readonly attribute XRDOMOverlayState? domOverlayState;
+};
+
+// Source: WebXR Hit Test Module (https://immersive-web.github.io/hit-test/)
+partial interface XRSession {
+  Promise<XRHitTestSource> requestHitTestSource(XRHitTestOptionsInit options);
+  Promise<XRTransientInputHitTestSource> requestHitTestSourceForTransientInput(XRTransientInputHitTestOptionsInit options);
+};
+
+// Source: WebXR Augmented Reality Module - Level 1 (https://www.w3.org/TR/webxr-ar-module-1/)
+partial interface XRSession {
+  // Attributes
+  readonly attribute XREnvironmentBlendMode environmentBlendMode;
+};
+
+// Source: WebXR Augmented Reality Module - Level 1 (https://www.w3.org/TR/webxr-ar-module-1/)
+partial interface XRSession {
+  // Attributes
+  readonly attribute XRInteractionMode interactionMode;
+};

@@ -39,6 +39,7 @@
     },
     "idlNames": {
       "XMLHttpRequestEventTarget": {
+        "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface XMLHttpRequestEventTarget : EventTarget {\n  // event handlers\n  attribute EventHandler onloadstart;\n  attribute EventHandler onprogress;\n  attribute EventHandler onabort;\n  attribute EventHandler onerror;\n  attribute EventHandler onload;\n  attribute EventHandler ontimeout;\n  attribute EventHandler onloadend;\n};",
         "type": "interface",
         "name": "XMLHttpRequestEventTarget",
         "inheritance": "EventTarget",
@@ -173,6 +174,7 @@
         "partial": false
       },
       "XMLHttpRequestUpload": {
+        "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface XMLHttpRequestUpload : XMLHttpRequestEventTarget {\n};",
         "type": "interface",
         "name": "XMLHttpRequestUpload",
         "inheritance": "XMLHttpRequestEventTarget",
@@ -201,6 +203,7 @@
         "partial": false
       },
       "XMLHttpRequestResponseType": {
+        "fragment": "enum XMLHttpRequestResponseType {\n  \"\",\n  \"arraybuffer\",\n  \"blob\",\n  \"document\",\n  \"json\",\n  \"text\"\n};",
         "type": "enum",
         "name": "XMLHttpRequestResponseType",
         "values": [
@@ -232,6 +235,7 @@
         "extAttrs": []
       },
       "XMLHttpRequest": {
+        "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface XMLHttpRequest : XMLHttpRequestEventTarget {\n  constructor();\n\n  // event handler\n  attribute EventHandler onreadystatechange;\n\n  // states\n  const unsigned short UNSENT = 0;\n  const unsigned short OPENED = 1;\n  const unsigned short HEADERS_RECEIVED = 2;\n  const unsigned short LOADING = 3;\n  const unsigned short DONE = 4;\n  readonly attribute unsigned short readyState;\n\n  // request\n  undefined open(ByteString method, USVString url);\n  undefined open(ByteString method, USVString url, boolean async, optional USVString? username = null, optional USVString? password = null);\n  undefined setRequestHeader(ByteString name, ByteString value);\n           attribute unsigned long timeout;\n           attribute boolean withCredentials;\n  [SameObject] readonly attribute XMLHttpRequestUpload upload;\n  undefined send(optional (Document or XMLHttpRequestBodyInit)? body = null);\n  undefined abort();\n\n  // response\n  readonly attribute USVString responseURL;\n  readonly attribute unsigned short status;\n  readonly attribute ByteString statusText;\n  ByteString? getResponseHeader(ByteString name);\n  ByteString getAllResponseHeaders();\n  undefined overrideMimeType(DOMString mime);\n           attribute XMLHttpRequestResponseType responseType;\n  readonly attribute any response;\n  readonly attribute USVString responseText;\n  [Exposed=Window] readonly attribute Document? responseXML;\n};",
         "type": "interface",
         "name": "XMLHttpRequest",
         "inheritance": "XMLHttpRequestEventTarget",
@@ -889,6 +893,7 @@
         "partial": false
       },
       "FormDataEntryValue": {
+        "fragment": "typedef (File or USVString) FormDataEntryValue;",
         "type": "typedef",
         "name": "FormDataEntryValue",
         "idlType": {
@@ -919,6 +924,7 @@
         "extAttrs": []
       },
       "FormData": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FormData {\n  constructor(optional HTMLFormElement form);\n\n  undefined append(USVString name, USVString value);\n  undefined append(USVString name, Blob blobValue, optional USVString filename);\n  undefined delete(USVString name);\n  FormDataEntryValue? get(USVString name);\n  sequence<FormDataEntryValue> getAll(USVString name);\n  boolean has(USVString name);\n  undefined set(USVString name, USVString value);\n  undefined set(USVString name, Blob blobValue, optional USVString filename);\n  iterable<USVString, FormDataEntryValue>;\n};",
         "type": "interface",
         "name": "FormData",
         "inheritance": null,
@@ -1353,6 +1359,7 @@
         "partial": false
       },
       "ProgressEvent": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface ProgressEvent : Event {\n  constructor(DOMString type, optional ProgressEventInit eventInitDict = {});\n\n  readonly attribute boolean lengthComputable;\n  readonly attribute unsigned long long loaded;\n  readonly attribute unsigned long long total;\n};",
         "type": "interface",
         "name": "ProgressEvent",
         "inheritance": "Event",
@@ -1464,6 +1471,7 @@
         "partial": false
       },
       "ProgressEventInit": {
+        "fragment": "dictionary ProgressEventInit : EventInit {\n  boolean lengthComputable = false;\n  unsigned long long loaded = 0;\n  unsigned long long total = 0;\n};",
         "type": "dictionary",
         "name": "ProgressEventInit",
         "inheritance": "EventInit",

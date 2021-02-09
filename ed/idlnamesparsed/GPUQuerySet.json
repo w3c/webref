@@ -1,0 +1,37 @@
+{
+  "name": "GPUQuerySet",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://gpuweb.github.io/gpuweb/"
+    },
+    "fragment": "interface GPUQuerySet {\n    undefined destroy();\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpuqueryset"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://gpuweb.github.io/gpuweb/"
+      },
+      "fragment": "GPUQuerySet includes GPUObjectBase;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "GPUObjectBase",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        },
+        "fragment": "interface mixin GPUObjectBase {\n    attribute USVString? label;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

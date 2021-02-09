@@ -1,0 +1,40 @@
+{
+  "name": "VTTCue",
+  "defined": {
+    "spec": {
+      "title": "WebVTT: The Web Video Text Tracks Format",
+      "url": "https://www.w3.org/TR/webvtt1/"
+    },
+    "fragment": "[Exposed=Window,\n Constructor(double startTime, double endTime, DOMString text)]\ninterface VTTCue : TextTrackCue {\n  attribute VTTRegion? region;\n  attribute DirectionSetting vertical;\n  attribute boolean snapToLines;\n  attribute LineAndPositionSetting line;\n  attribute LineAlignSetting lineAlign;\n  attribute LineAndPositionSetting position;\n  attribute PositionAlignSetting positionAlign;\n  attribute double size;\n  attribute AlignSetting align;\n  attribute DOMString text;\n  DocumentFragment getCueAsHTML();\n};",
+    "href": "https://w3c.github.io/webvtt/#vttcue"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "TextTrackCue",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "[Exposed=Window]\ninterface TextTrackCue : EventTarget {\n  readonly attribute TextTrack? track;\n\n  attribute DOMString id;\n  attribute double startTime;\n  attribute double endTime;\n  attribute boolean pauseOnExit;\n\n  attribute EventHandler onenter;\n  attribute EventHandler onexit;\n};",
+      "href": "https://html.spec.whatwg.org/multipage/media.html#texttrackcue"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

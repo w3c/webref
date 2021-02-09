@@ -10102,7 +10102,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
 - Crawled URL: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
-- Crawled version: 19 January 2021
+- Crawled version: 9 February 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
 - Latest published version: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
 - Shortname: image-capture
@@ -12182,7 +12182,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
 - Crawled URL: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
-- Crawled version: 05 February 2021
+- Crawled version: 09 February 2021
 - Editor's Draft: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
 - Latest published version: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
 - Shortname: screen-wake-lock
@@ -12587,7 +12587,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 8 February 2021
+- Crawled version: 9 February 2021
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -16232,7 +16232,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
 - Crawled URL: [https://w3c.github.io/webrtc-priority/](https://w3c.github.io/webrtc-priority/)
-- Crawled version: 21 September 2020
+- Crawled version: 9 February 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-priority/](https://w3c.github.io/webrtc-priority/)
 - Latest published version: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
 - Shortname: webrtc-priority

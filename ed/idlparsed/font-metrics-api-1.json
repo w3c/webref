@@ -16,6 +16,7 @@
     },
     "idlNames": {
       "FontMetrics": {
+        "fragment": "[Exposed=Window]\ninterface FontMetrics {\n  readonly attribute double width;\n  readonly attribute FrozenArray<double> advances;\n\n  readonly attribute double boundingBoxLeft;\n  readonly attribute double boundingBoxRight;\n\n  readonly attribute double height;\n  readonly attribute double emHeightAscent;\n  readonly attribute double emHeightDescent;\n  readonly attribute double boundingBoxAscent;\n  readonly attribute double boundingBoxDescent;\n  readonly attribute double fontBoundingBoxAscent;\n  readonly attribute double fontBoundingBoxDescent;\n\n  readonly attribute Baseline dominantBaseline;\n  readonly attribute FrozenArray<Baseline> baselines;\n  readonly attribute FrozenArray<Font> fonts;\n};",
         "type": "interface",
         "name": "FontMetrics",
         "inheritance": null,
@@ -272,6 +273,7 @@
         "partial": false
       },
       "Baseline": {
+        "fragment": "[Exposed=Window]\ninterface Baseline {\n  readonly attribute DOMString name;\n  readonly attribute double value;\n};",
         "type": "interface",
         "name": "Baseline",
         "inheritance": null,
@@ -321,6 +323,7 @@
         "partial": false
       },
       "Font": {
+        "fragment": "[Exposed=Window]\ninterface Font {\n  readonly attribute DOMString name;\n  readonly attribute unsigned long glyphsRendered;\n};",
         "type": "interface",
         "name": "Font",
         "inheritance": null,
@@ -373,6 +376,7 @@
     "idlExtendedNames": {
       "Document": [
         {
+          "fragment": "partial interface Document {\n    FontMetrics measureElement(Element element);\n    FontMetrics measureText(DOMString text, StylePropertyMapReadOnly styleMap);\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,

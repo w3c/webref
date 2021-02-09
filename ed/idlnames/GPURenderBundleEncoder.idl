@@ -1,0 +1,13 @@
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+interface GPURenderBundleEncoder {
+    GPURenderBundle finish(optional GPURenderBundleDescriptor descriptor = {});
+};
+
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+GPURenderBundleEncoder includes GPUObjectBase;
+
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+GPURenderBundleEncoder includes GPUProgrammablePassEncoder;
+
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+GPURenderBundleEncoder includes GPURenderEncoderBase;

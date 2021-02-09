@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "HTMLPortalElement": {
+        "fragment": "[Exposed=Window, HTMLConstructor]\ninterface HTMLPortalElement : HTMLElement {\n    [CEReactions] attribute USVString src;\n    [CEReactions] attribute DOMString referrerPolicy;\n\n    [NewObject] Promise<undefined> activate(optional PortalActivateOptions options = {});\n    undefined postMessage(any message, optional PostMessageOptions options = {});\n\n    attribute EventHandler onmessage;\n    attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "HTMLPortalElement",
         "inheritance": "HTMLElement",
@@ -218,6 +219,7 @@
         "partial": false
       },
       "PortalActivateOptions": {
+        "fragment": "dictionary PortalActivateOptions : PostMessageOptions {\n    any data;\n};",
         "type": "dictionary",
         "name": "PortalActivateOptions",
         "inheritance": "PostMessageOptions",
@@ -242,6 +244,7 @@
         "partial": false
       },
       "PortalHost": {
+        "fragment": "[Exposed=Window]\ninterface PortalHost : EventTarget {\n    undefined postMessage(any message, optional PostMessageOptions options = {});\n\n    attribute EventHandler onmessage;\n    attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "PortalHost",
         "inheritance": "EventTarget",
@@ -341,6 +344,7 @@
         "partial": false
       },
       "PortalActivateEvent": {
+        "fragment": "[Exposed=Window]\ninterface PortalActivateEvent : Event {\n    constructor(DOMString type, optional PortalActivateEventInit eventInitDict = {});\n\n    readonly attribute any data;\n    HTMLPortalElement adoptPredecessor();\n};",
         "type": "interface",
         "name": "PortalActivateEvent",
         "inheritance": "Event",
@@ -430,6 +434,7 @@
         "partial": false
       },
       "PortalActivateEventInit": {
+        "fragment": "dictionary PortalActivateEventInit : EventInit {\n    any data = null;\n};",
         "type": "dictionary",
         "name": "PortalActivateEventInit",
         "inheritance": "EventInit",
@@ -456,6 +461,7 @@
         "partial": false
       },
       "MessageEventSource": {
+        "fragment": "typedef (WindowProxy or MessagePort or ServiceWorker or HTMLPortalElement or PortalHost) MessageEventSource;",
         "type": "typedef",
         "name": "MessageEventSource",
         "idlType": {
@@ -513,6 +519,7 @@
     "idlExtendedNames": {
       "Window": [
         {
+          "fragment": "partial interface Window {\n    readonly attribute PortalHost? portalHost;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -539,6 +546,7 @@
       ],
       "WindowEventHandlers": [
         {
+          "fragment": "partial interface mixin WindowEventHandlers {\n    attribute EventHandler onportalactivate;\n};",
           "type": "interface mixin",
           "name": "WindowEventHandlers",
           "inheritance": null,

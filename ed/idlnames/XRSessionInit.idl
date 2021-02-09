@@ -1,0 +1,10 @@
+// Source: WebXR Device API (https://www.w3.org/TR/webxr/)
+dictionary XRSessionInit {
+  sequence<any> requiredFeatures;
+  sequence<any> optionalFeatures;
+};
+
+// Source: WebXR DOM Overlays Module (https://immersive-web.github.io/dom-overlays/)
+partial dictionary XRSessionInit {
+  XRDOMOverlayInit? domOverlay;
+};

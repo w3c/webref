@@ -15,6 +15,7 @@
     },
     "idlNames": {
       "WakeLock": {
+        "fragment": "[SecureContext, Exposed=(Window)]\ninterface WakeLock {\n  Promise<WakeLockSentinel> request(optional WakeLockType type = \"screen\");\n};",
         "type": "interface",
         "name": "WakeLock",
         "inheritance": null,
@@ -88,6 +89,7 @@
         "partial": false
       },
       "WakeLockSentinel": {
+        "fragment": "[SecureContext, Exposed=(Window)]\ninterface WakeLockSentinel : EventTarget {\n  readonly attribute boolean released;\n  readonly attribute WakeLockType type;\n  Promise<undefined> release();\n  attribute EventHandler onrelease;\n};",
         "type": "interface",
         "name": "WakeLockSentinel",
         "inheritance": "EventTarget",
@@ -186,6 +188,7 @@
         "partial": false
       },
       "WakeLockType": {
+        "fragment": "enum WakeLockType { \"screen\" };",
         "type": "enum",
         "name": "WakeLockType",
         "values": [
@@ -200,6 +203,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "[SecureContext]\npartial interface Navigator {\n  [SameObject] readonly attribute WakeLock wakeLock;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

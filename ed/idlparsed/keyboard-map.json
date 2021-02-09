@@ -15,6 +15,7 @@
     },
     "idlNames": {
       "KeyboardLayoutMap": {
+        "fragment": "interface KeyboardLayoutMap {\n  readonly maplike<DOMString, DOMString>;\n};",
         "type": "interface",
         "name": "KeyboardLayoutMap",
         "inheritance": null,
@@ -49,6 +50,7 @@
         "partial": false
       },
       "Keyboard": {
+        "fragment": "[SecureContext, Exposed=Window] interface Keyboard {\n  Promise<KeyboardLayoutMap> getLayoutMap();\n};",
         "type": "interface",
         "name": "Keyboard",
         "inheritance": null,
@@ -101,6 +103,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext, SameObject] readonly attribute Keyboard keyboard;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

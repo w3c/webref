@@ -17,6 +17,7 @@
     },
     "idlNames": {
       "InterventionReportBody": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface InterventionReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString id;\n  readonly attribute DOMString message;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
         "type": "interface",
         "name": "InterventionReportBody",
         "inheritance": "ReportBody",

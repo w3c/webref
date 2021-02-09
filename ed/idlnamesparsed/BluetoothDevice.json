@@ -1,0 +1,92 @@
+{
+  "name": "BluetoothDevice",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothDevice : EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? name;\n  readonly attribute BluetoothRemoteGATTServer? gatt;\n\n  Promise<void> watchAdvertisements(\n      optional WatchAdvertisementsOptions options = {});\n  readonly attribute boolean watchingAdvertisements;\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Bluetooth",
+        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      },
+      "fragment": "BluetoothDevice includes BluetoothDeviceEventHandlers;"
+    },
+    {
+      "spec": {
+        "title": "Web Bluetooth",
+        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      },
+      "fragment": "BluetoothDevice includes CharacteristicEventHandlers;"
+    },
+    {
+      "spec": {
+        "title": "Web Bluetooth",
+        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      },
+      "fragment": "BluetoothDevice includes ServiceEventHandlers;"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [
+    {
+      "name": "BluetoothDeviceEventHandlers",
+      "defined": {
+        "spec": {
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin BluetoothDeviceEventHandlers {\n  attribute EventHandler onadvertisementreceived;\n  attribute EventHandler ongattserverdisconnected;\n};",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdeviceeventhandlers"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "CharacteristicEventHandlers",
+      "defined": {
+        "spec": {
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin CharacteristicEventHandlers {\n  attribute EventHandler oncharacteristicvaluechanged;\n};",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#characteristiceventhandlers"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "ServiceEventHandlers",
+      "defined": {
+        "spec": {
+          "title": "Web Bluetooth",
+          "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin ServiceEventHandlers {\n  attribute EventHandler onserviceadded;\n  attribute EventHandler onservicechanged;\n  attribute EventHandler onserviceremoved;\n};",
+        "href": "https://webbluetoothcg.github.io/web-bluetooth/#serviceeventhandlers"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

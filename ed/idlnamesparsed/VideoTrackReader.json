@@ -1,0 +1,14 @@
+{
+  "name": "VideoTrackReader",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://wicg.github.io/web-codecs/"
+    },
+    "fragment": "[Exposed=Window]\ninterface VideoTrackReader {\n  constructor(MediaStreamTrack track);\n\n  readonly attribute VideoTrackReaderState readyState;\n  attribute EventHandler onended;\n\n  undefined start(VideoFrameOutputCallback callback);\n  undefined stop();\n};",
+    "href": "https://wicg.github.io/web-codecs/#videotrackreader"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

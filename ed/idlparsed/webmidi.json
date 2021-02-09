@@ -24,6 +24,7 @@
     },
     "idlNames": {
       "MIDIOptions": {
+        "fragment": "dictionary MIDIOptions {\n  boolean sysex;\n  boolean software;\n};",
         "type": "dictionary",
         "name": "MIDIOptions",
         "inheritance": null,
@@ -63,6 +64,7 @@
         "partial": false
       },
       "MIDIInputMap": {
+        "fragment": "[SecureContext, Exposed=Window] interface MIDIInputMap {\n  readonly maplike <DOMString, MIDIInput>;\n};",
         "type": "interface",
         "name": "MIDIInputMap",
         "inheritance": null,
@@ -113,6 +115,7 @@
         "partial": false
       },
       "MIDIOutputMap": {
+        "fragment": "[SecureContext, Exposed=Window] interface MIDIOutputMap {\n  readonly maplike <DOMString, MIDIOutput>;\n};",
         "type": "interface",
         "name": "MIDIOutputMap",
         "inheritance": null,
@@ -163,6 +166,7 @@
         "partial": false
       },
       "MIDIAccess": {
+        "fragment": "[SecureContext, Exposed=Window] interface MIDIAccess: EventTarget {\n  readonly attribute MIDIInputMap inputs;\n  readonly attribute MIDIOutputMap outputs;\n  attribute EventHandler onstatechange;\n  readonly attribute boolean sysexEnabled;\n};",
         "type": "interface",
         "name": "MIDIAccess",
         "inheritance": "EventTarget",
@@ -248,6 +252,7 @@
         "partial": false
       },
       "MIDIPort": {
+        "fragment": "[SecureContext, Exposed=Window] interface MIDIPort: EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? manufacturer;\n  readonly attribute DOMString? name;\n  readonly attribute MIDIPortType type;\n  readonly attribute DOMString? version;\n  readonly attribute MIDIPortDeviceState state;\n  readonly attribute MIDIPortConnectionState connection;\n  attribute EventHandler onstatechange;\n  Promise <MIDIPort> open();\n  Promise <MIDIPort> close();\n};",
         "type": "interface",
         "name": "MIDIPort",
         "inheritance": "EventTarget",
@@ -441,6 +446,7 @@
         "partial": false
       },
       "MIDIInput": {
+        "fragment": "[SecureContext, Exposed=Window] interface MIDIInput: MIDIPort {\n  attribute EventHandler onmidimessage;\n};",
         "type": "interface",
         "name": "MIDIInput",
         "inheritance": "MIDIPort",
@@ -481,6 +487,7 @@
         "partial": false
       },
       "MIDIOutput": {
+        "fragment": "[SecureContext, Exposed=Window] interface MIDIOutput : MIDIPort {\n  undefined send(sequence<octet> data, optional DOMHighResTimeStamp timestamp = 0);\n  undefined clear();\n};",
         "type": "interface",
         "name": "MIDIOutput",
         "inheritance": "MIDIPort",
@@ -581,6 +588,7 @@
         "partial": false
       },
       "MIDIPortType": {
+        "fragment": "enum MIDIPortType {\n  \"input\",\n  \"output\",\n};",
         "type": "enum",
         "name": "MIDIPortType",
         "values": [
@@ -596,6 +604,7 @@
         "extAttrs": []
       },
       "MIDIPortDeviceState": {
+        "fragment": "enum MIDIPortDeviceState {\n  \"disconnected\",\n  \"connected\",\n};",
         "type": "enum",
         "name": "MIDIPortDeviceState",
         "values": [
@@ -611,6 +620,7 @@
         "extAttrs": []
       },
       "MIDIPortConnectionState": {
+        "fragment": "enum MIDIPortConnectionState {\n  \"open\",\n  \"closed\",\n  \"pending\",\n};",
         "type": "enum",
         "name": "MIDIPortConnectionState",
         "values": [
@@ -630,6 +640,7 @@
         "extAttrs": []
       },
       "MIDIMessageEvent": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface MIDIMessageEvent : Event {\n  constructor(DOMString type, optional MIDIMessageEventInit eventInitDict = {});\n  readonly attribute Uint8Array data;\n};",
         "type": "interface",
         "name": "MIDIMessageEvent",
         "inheritance": "Event",
@@ -710,6 +721,7 @@
         "partial": false
       },
       "MIDIMessageEventInit": {
+        "fragment": "dictionary MIDIMessageEventInit: EventInit {\n  Uint8Array data;\n};",
         "type": "dictionary",
         "name": "MIDIMessageEventInit",
         "inheritance": "EventInit",
@@ -734,6 +746,7 @@
         "partial": false
       },
       "MIDIConnectionEvent": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface MIDIConnectionEvent : Event {\n  constructor(DOMString type, optional MIDIConnectionEventInit eventInitDict = {});\n  readonly attribute MIDIPort port;\n};",
         "type": "interface",
         "name": "MIDIConnectionEvent",
         "inheritance": "Event",
@@ -814,6 +827,7 @@
         "partial": false
       },
       "MIDIConnectionEventInit": {
+        "fragment": "dictionary MIDIConnectionEventInit: EventInit {\n  MIDIPort port;\n};",
         "type": "dictionary",
         "name": "MIDIConnectionEventInit",
         "inheritance": "EventInit",
@@ -841,6 +855,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "partial interface Navigator {\n  [SecureContext]\n  Promise <MIDIAccess> requestMIDIAccess(optional MIDIOptions options = {});\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

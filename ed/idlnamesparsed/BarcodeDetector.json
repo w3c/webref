@@ -1,0 +1,14 @@
+{
+  "name": "BarcodeDetector",
+  "defined": {
+    "spec": {
+      "title": "Accelerated Shape Detection in Images",
+      "url": "https://wicg.github.io/shape-detection-api/"
+    },
+    "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface BarcodeDetector {\n  constructor(optional BarcodeDetectorOptions barcodeDetectorOptions = {});\n  static Promise<sequence<BarcodeFormat>> getSupportedFormats();\n\n  Promise<sequence<DetectedBarcode>> detect(ImageBitmapSource image);\n};",
+    "href": "https://wicg.github.io/shape-detection-api/#barcodedetector"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

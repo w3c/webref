@@ -23,6 +23,7 @@
     },
     "idlNames": {
       "PeriodicSyncManager": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PeriodicSyncManager {\n    Promise<void> register(DOMString tag, optional BackgroundSyncOptions options);\n    Promise<sequence<DOMString>> getTags();\n    Promise<void> unregister(DOMString tag);\n};",
         "type": "interface",
         "name": "PeriodicSyncManager",
         "inheritance": null,
@@ -180,6 +181,7 @@
         "partial": false
       },
       "BackgroundSyncOptions": {
+        "fragment": "dictionary BackgroundSyncOptions {\n    [EnforceRange] unsigned long long minInterval = 0;\n};",
         "type": "dictionary",
         "name": "BackgroundSyncOptions",
         "inheritance": null,
@@ -214,6 +216,7 @@
         "partial": false
       },
       "PeriodicSyncEventInit": {
+        "fragment": "dictionary PeriodicSyncEventInit : ExtendableEventInit {\n    required DOMString tag;\n};",
         "type": "dictionary",
         "name": "PeriodicSyncEventInit",
         "inheritance": "ExtendableEventInit",
@@ -238,6 +241,7 @@
         "partial": false
       },
       "PeriodicSyncEvent": {
+        "fragment": "[\n    Constructor(DOMString type, PeriodicSyncEventInit init),\n    Exposed=ServiceWorker\n] interface PeriodicSyncEvent : ExtendableEvent {\n    readonly attribute DOMString tag;\n  };",
         "type": "interface",
         "name": "PeriodicSyncEvent",
         "inheritance": "ExtendableEvent",
@@ -314,6 +318,7 @@
     "idlExtendedNames": {
       "ServiceWorkerGlobalScope": [
         {
+          "fragment": "partial interface ServiceWorkerGlobalScope {\n    attribute EventHandler onperiodicsync;\n};",
           "type": "interface",
           "name": "ServiceWorkerGlobalScope",
           "inheritance": null,
@@ -340,6 +345,7 @@
       ],
       "ServiceWorkerRegistration": [
         {
+          "fragment": "[Exposed=(Window,Worker)]\npartial interface ServiceWorkerRegistration {\n  readonly attribute PeriodicSyncManager periodicSync;\n};",
           "type": "interface",
           "name": "ServiceWorkerRegistration",
           "inheritance": null,

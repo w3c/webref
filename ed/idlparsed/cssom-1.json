@@ -26,6 +26,7 @@
     },
     "idlNames": {
       "MediaList": {
+        "fragment": "[Exposed=Window]\ninterface MediaList {\n  stringifier attribute [LegacyNullToEmptyString] CSSOMString mediaText;\n  readonly attribute unsigned long length;\n  getter CSSOMString? item(unsigned long index);\n  undefined appendMedium(CSSOMString medium);\n  undefined deleteMedium(CSSOMString medium);\n};",
         "type": "interface",
         "name": "MediaList",
         "inheritance": null,
@@ -178,6 +179,7 @@
         "partial": false
       },
       "StyleSheet": {
+        "fragment": "[Exposed=Window]\ninterface StyleSheet {\n  readonly attribute CSSOMString type;\n  readonly attribute USVString? href;\n  readonly attribute (Element or ProcessingInstruction)? ownerNode;\n  readonly attribute CSSStyleSheet? parentStyleSheet;\n  readonly attribute DOMString? title;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  attribute boolean disabled;\n};",
         "type": "interface",
         "name": "StyleSheet",
         "inheritance": null,
@@ -335,6 +337,7 @@
         "partial": false
       },
       "CSSStyleSheet": {
+        "fragment": "[Exposed=Window]\ninterface CSSStyleSheet : StyleSheet {\n  readonly attribute CSSRule? ownerRule;\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n};",
         "type": "interface",
         "name": "CSSStyleSheet",
         "inheritance": "StyleSheet",
@@ -474,6 +477,7 @@
         "partial": false
       },
       "StyleSheetList": {
+        "fragment": "[Exposed=Window]\ninterface StyleSheetList {\n  getter CSSStyleSheet? item(unsigned long index);\n  readonly attribute unsigned long length;\n};",
         "type": "interface",
         "name": "StyleSheetList",
         "inheritance": null,
@@ -540,6 +544,7 @@
         "partial": false
       },
       "LinkStyle": {
+        "fragment": "interface mixin LinkStyle {\n  readonly attribute CSSStyleSheet? sheet;\n};",
         "type": "interface mixin",
         "name": "LinkStyle",
         "inheritance": null,
@@ -564,6 +569,7 @@
         "partial": false
       },
       "CSSRuleList": {
+        "fragment": "[Exposed=Window]\ninterface CSSRuleList {\n  getter CSSRule? item(unsigned long index);\n  readonly attribute unsigned long length;\n};",
         "type": "interface",
         "name": "CSSRuleList",
         "inheritance": null,
@@ -630,6 +636,7 @@
         "partial": false
       },
       "CSSRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSRule {\n  attribute CSSOMString cssText;\n  readonly attribute CSSRule? parentRule;\n  readonly attribute CSSStyleSheet? parentStyleSheet;\n\n  // the following attribute and constants are historical\n  readonly attribute unsigned short type;\n  const unsigned short STYLE_RULE = 1;\n  const unsigned short CHARSET_RULE = 2;\n  const unsigned short IMPORT_RULE = 3;\n  const unsigned short MEDIA_RULE = 4;\n  const unsigned short FONT_FACE_RULE = 5;\n  const unsigned short PAGE_RULE = 6;\n  const unsigned short MARGIN_RULE = 9;\n  const unsigned short NAMESPACE_RULE = 10;\n};",
         "type": "interface",
         "name": "CSSRule",
         "inheritance": null,
@@ -845,6 +852,7 @@
         "partial": false
       },
       "CSSStyleRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSStyleRule : CSSRule {\n  attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
         "type": "interface",
         "name": "CSSStyleRule",
         "inheritance": "CSSRule",
@@ -910,6 +918,7 @@
         "partial": false
       },
       "CSSImportRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSImportRule : CSSRule {\n  readonly attribute USVString href;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  [SameObject] readonly attribute CSSStyleSheet styleSheet;\n};",
         "type": "interface",
         "name": "CSSImportRule",
         "inheritance": "CSSRule",
@@ -997,6 +1006,7 @@
         "partial": false
       },
       "CSSGroupingRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSGroupingRule : CSSRule {\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n};",
         "type": "interface",
         "name": "CSSGroupingRule",
         "inheritance": "CSSRule",
@@ -1121,6 +1131,7 @@
         "partial": false
       },
       "CSSPageRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSPageRule : CSSGroupingRule {\n           attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
         "type": "interface",
         "name": "CSSPageRule",
         "inheritance": "CSSGroupingRule",
@@ -1186,6 +1197,7 @@
         "partial": false
       },
       "CSSMarginRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSMarginRule : CSSRule {\n  readonly attribute CSSOMString name;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
         "type": "interface",
         "name": "CSSMarginRule",
         "inheritance": "CSSRule",
@@ -1251,6 +1263,7 @@
         "partial": false
       },
       "CSSNamespaceRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSNamespaceRule : CSSRule {\n  readonly attribute CSSOMString namespaceURI;\n  readonly attribute CSSOMString prefix;\n};",
         "type": "interface",
         "name": "CSSNamespaceRule",
         "inheritance": "CSSRule",
@@ -1300,6 +1313,7 @@
         "partial": false
       },
       "CSSStyleDeclaration": {
+        "fragment": "[Exposed=Window]\ninterface CSSStyleDeclaration {\n  [CEReactions] attribute CSSOMString cssText;\n  readonly attribute unsigned long length;\n  getter CSSOMString item(unsigned long index);\n  CSSOMString getPropertyValue(CSSOMString property);\n  CSSOMString getPropertyPriority(CSSOMString property);\n  [CEReactions] undefined setProperty(CSSOMString property, [LegacyNullToEmptyString] CSSOMString value, optional [LegacyNullToEmptyString] CSSOMString priority = \"\");\n  [CEReactions] CSSOMString removeProperty(CSSOMString property);\n  readonly attribute CSSRule? parentRule;\n  [CEReactions] attribute [LegacyNullToEmptyString] CSSOMString cssFloat;\n};",
         "type": "interface",
         "name": "CSSStyleDeclaration",
         "inheritance": null,
@@ -1623,6 +1637,7 @@
         "partial": false
       },
       "ElementCSSInlineStyle": {
+        "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
         "type": "interface mixin",
         "name": "ElementCSSInlineStyle",
         "inheritance": null,
@@ -1663,6 +1678,7 @@
         "partial": false
       },
       "CSS": {
+        "fragment": "[Exposed=Window]\nnamespace CSS {\n  CSSOMString escape(CSSOMString ident);\n};",
         "type": "namespace",
         "name": "CSS",
         "inheritance": null,
@@ -1717,6 +1733,7 @@
     "idlExtendedNames": {
       "CSSStyleSheet": [
         {
+          "fragment": "partial interface CSSStyleSheet {\n  [SameObject] readonly attribute CSSRuleList rules;\n  long addRule(optional DOMString selector = \"undefined\", optional DOMString style = \"undefined\", optional unsigned long index);\n  undefined removeRule(optional unsigned long index = 0);\n};",
           "type": "interface",
           "name": "CSSStyleSheet",
           "inheritance": null,
@@ -1855,6 +1872,7 @@
       ],
       "DocumentOrShadowRoot": [
         {
+          "fragment": "partial interface mixin DocumentOrShadowRoot {\n  [SameObject] readonly attribute StyleSheetList styleSheets;\n};",
           "type": "interface mixin",
           "name": "DocumentOrShadowRoot",
           "inheritance": null,
@@ -1888,34 +1906,43 @@
       ],
       "ProcessingInstruction": [
         {
-          "name": "ProcessingInstruction",
-          "type": "interface",
+          "fragment": "ProcessingInstruction includes LinkStyle;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "ProcessingInstruction",
           "includes": "LinkStyle"
         }
       ],
       "HTMLElement": [
         {
-          "name": "HTMLElement",
-          "type": "interface",
+          "fragment": "HTMLElement includes ElementCSSInlineStyle;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLElement",
           "includes": "ElementCSSInlineStyle"
         }
       ],
       "SVGElement": [
         {
-          "name": "SVGElement",
-          "type": "interface",
+          "fragment": "SVGElement includes ElementCSSInlineStyle;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGElement",
           "includes": "ElementCSSInlineStyle"
         }
       ],
       "MathMLElement": [
         {
-          "name": "MathMLElement",
-          "type": "interface",
+          "fragment": "MathMLElement includes ElementCSSInlineStyle;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "MathMLElement",
           "includes": "ElementCSSInlineStyle"
         }
       ],
       "Window": [
         {
+          "fragment": "partial interface Window {\n  [NewObject] CSSStyleDeclaration getComputedStyle(Element elt, optional CSSOMString? pseudoElt);\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,

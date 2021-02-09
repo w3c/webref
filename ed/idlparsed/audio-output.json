@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "AudioOutputOptions": {
+        "fragment": "dictionary AudioOutputOptions {\n  DOMString deviceId = \"\";\n};",
         "type": "dictionary",
         "name": "AudioOutputOptions",
         "inheritance": null,
@@ -40,6 +41,7 @@
     "idlExtendedNames": {
       "HTMLMediaElement": [
         {
+          "fragment": "partial interface HTMLMediaElement {\n  [SecureContext] readonly attribute DOMString sinkId;\n  [SecureContext] Promise<undefined> setSinkId (DOMString sinkId);\n};",
           "type": "interface",
           "name": "HTMLMediaElement",
           "inheritance": null,
@@ -121,6 +123,7 @@
       ],
       "MediaDevices": [
         {
+          "fragment": "partial interface MediaDevices {\n  Promise<MediaDeviceInfo> selectAudioOutput(optional AudioOutputOptions options = {});\n};",
           "type": "interface",
           "name": "MediaDevices",
           "inheritance": null,

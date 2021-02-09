@@ -1,0 +1,7 @@
+// Source: WebXR Anchors Module (https://immersive-web.github.io/anchors/)
+[SecureContext, Exposed=Window]
+interface XRAnchor {
+  readonly attribute XRSpace anchorSpace;
+
+  void delete();
+};

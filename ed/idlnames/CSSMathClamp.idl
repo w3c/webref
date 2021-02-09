@@ -1,0 +1,8 @@
+// Source: CSS Typed OM Level 1 (https://www.w3.org/TR/css-typed-om-1/)
+[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
+interface CSSMathClamp : CSSMathValue {
+    constructor(CSSNumberish min, CSSNumberish val, CSSNumberish max);
+    readonly attribute CSSNumericValue min;
+    readonly attribute CSSNumericValue val;
+    readonly attribute CSSNumericValue max;
+};

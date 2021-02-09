@@ -1,0 +1,29 @@
+{
+  "name": "Presentation",
+  "defined": {
+    "spec": {
+      "title": "Presentation API",
+      "url": "https://www.w3.org/TR/presentation-api/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface Presentation {\n};",
+    "href": "https://w3c.github.io/presentation-api/#dom-presentation"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Presentation API",
+        "url": "https://www.w3.org/TR/presentation-api/"
+      },
+      "fragment": "partial interface Presentation {\n  attribute PresentationRequest? defaultRequest;\n};"
+    },
+    {
+      "spec": {
+        "title": "Presentation API",
+        "url": "https://www.w3.org/TR/presentation-api/"
+      },
+      "fragment": "partial interface Presentation {\n  readonly attribute PresentationReceiver? receiver;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

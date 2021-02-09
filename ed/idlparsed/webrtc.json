@@ -36,6 +36,7 @@
     },
     "idlNames": {
       "RTCConfiguration": {
+        "fragment": "dictionary RTCConfiguration {\n  sequence<RTCIceServer> iceServers;\n  RTCIceTransportPolicy iceTransportPolicy;\n  RTCBundlePolicy bundlePolicy;\n  RTCRtcpMuxPolicy rtcpMuxPolicy;\n  sequence<RTCCertificate> certificates;\n  [EnforceRange] octet iceCandidatePoolSize = 0;\n};",
         "type": "dictionary",
         "name": "RTCConfiguration",
         "inheritance": null,
@@ -163,6 +164,7 @@
         "partial": false
       },
       "RTCIceCredentialType": {
+        "fragment": "enum RTCIceCredentialType {\n  \"password\"\n};",
         "type": "enum",
         "name": "RTCIceCredentialType",
         "values": [
@@ -174,6 +176,7 @@
         "extAttrs": []
       },
       "RTCIceServer": {
+        "fragment": "dictionary RTCIceServer {\n  required (DOMString or sequence<DOMString>) urls;\n  DOMString username;\n  DOMString credential;\n  RTCIceCredentialType credentialType = \"password\";\n};",
         "type": "dictionary",
         "name": "RTCIceServer",
         "inheritance": null,
@@ -272,6 +275,7 @@
         "partial": false
       },
       "RTCIceTransportPolicy": {
+        "fragment": "enum RTCIceTransportPolicy {\n  \"relay\",\n  \"all\"\n};",
         "type": "enum",
         "name": "RTCIceTransportPolicy",
         "values": [
@@ -287,6 +291,7 @@
         "extAttrs": []
       },
       "RTCBundlePolicy": {
+        "fragment": "enum RTCBundlePolicy {\n  \"balanced\",\n  \"max-compat\",\n  \"max-bundle\"\n};",
         "type": "enum",
         "name": "RTCBundlePolicy",
         "values": [
@@ -306,6 +311,7 @@
         "extAttrs": []
       },
       "RTCRtcpMuxPolicy": {
+        "fragment": "enum RTCRtcpMuxPolicy {\n  \"require\"\n};",
         "type": "enum",
         "name": "RTCRtcpMuxPolicy",
         "values": [
@@ -317,6 +323,7 @@
         "extAttrs": []
       },
       "RTCOfferAnswerOptions": {
+        "fragment": "dictionary RTCOfferAnswerOptions {};",
         "type": "dictionary",
         "name": "RTCOfferAnswerOptions",
         "inheritance": null,
@@ -325,6 +332,7 @@
         "partial": false
       },
       "RTCOfferOptions": {
+        "fragment": "dictionary RTCOfferOptions : RTCOfferAnswerOptions {\n  boolean iceRestart = false;\n};",
         "type": "dictionary",
         "name": "RTCOfferOptions",
         "inheritance": "RTCOfferAnswerOptions",
@@ -352,6 +360,7 @@
         "partial": false
       },
       "RTCAnswerOptions": {
+        "fragment": "dictionary RTCAnswerOptions : RTCOfferAnswerOptions {};",
         "type": "dictionary",
         "name": "RTCAnswerOptions",
         "inheritance": "RTCOfferAnswerOptions",
@@ -360,6 +369,7 @@
         "partial": false
       },
       "RTCSignalingState": {
+        "fragment": "enum RTCSignalingState {\n  \"stable\",\n  \"have-local-offer\",\n  \"have-remote-offer\",\n  \"have-local-pranswer\",\n  \"have-remote-pranswer\",\n  \"closed\"\n};",
         "type": "enum",
         "name": "RTCSignalingState",
         "values": [
@@ -391,6 +401,7 @@
         "extAttrs": []
       },
       "RTCIceGatheringState": {
+        "fragment": "enum RTCIceGatheringState {\n  \"new\",\n  \"gathering\",\n  \"complete\"\n};",
         "type": "enum",
         "name": "RTCIceGatheringState",
         "values": [
@@ -410,6 +421,7 @@
         "extAttrs": []
       },
       "RTCPeerConnectionState": {
+        "fragment": "enum RTCPeerConnectionState {\n  \"closed\",\n  \"failed\",\n  \"disconnected\",\n  \"new\",\n  \"connecting\",\n  \"connected\"\n};",
         "type": "enum",
         "name": "RTCPeerConnectionState",
         "values": [
@@ -441,6 +453,7 @@
         "extAttrs": []
       },
       "RTCIceConnectionState": {
+        "fragment": "enum RTCIceConnectionState {\n  \"closed\",\n  \"failed\",\n  \"disconnected\",\n  \"new\",\n  \"checking\",\n  \"completed\",\n  \"connected\"\n};",
         "type": "enum",
         "name": "RTCIceConnectionState",
         "values": [
@@ -476,6 +489,7 @@
         "extAttrs": []
       },
       "RTCPeerConnection": {
+        "fragment": "[Exposed=Window]\ninterface RTCPeerConnection : EventTarget  {\n  constructor(optional RTCConfiguration configuration = {});\n  Promise<RTCSessionDescriptionInit> createOffer(optional RTCOfferOptions options = {});\n  Promise<RTCSessionDescriptionInit> createAnswer(optional RTCAnswerOptions options = {});\n  Promise<undefined> setLocalDescription(optional RTCLocalSessionDescriptionInit description = {});\n  readonly attribute RTCSessionDescription? localDescription;\n  readonly attribute RTCSessionDescription? currentLocalDescription;\n  readonly attribute RTCSessionDescription? pendingLocalDescription;\n  Promise<undefined> setRemoteDescription(RTCSessionDescriptionInit description);\n  readonly attribute RTCSessionDescription? remoteDescription;\n  readonly attribute RTCSessionDescription? currentRemoteDescription;\n  readonly attribute RTCSessionDescription? pendingRemoteDescription;\n  Promise<undefined> addIceCandidate(optional RTCIceCandidateInit candidate = {});\n  readonly attribute RTCSignalingState signalingState;\n  readonly attribute RTCIceGatheringState iceGatheringState;\n  readonly attribute RTCIceConnectionState iceConnectionState;\n  readonly attribute RTCPeerConnectionState connectionState;\n  readonly attribute boolean? canTrickleIceCandidates;\n  undefined restartIce();\n  RTCConfiguration getConfiguration();\n  undefined setConfiguration(optional RTCConfiguration configuration = {});\n  undefined close();\n  attribute EventHandler onnegotiationneeded;\n  attribute EventHandler onicecandidate;\n  attribute EventHandler onicecandidateerror;\n  attribute EventHandler onsignalingstatechange;\n  attribute EventHandler oniceconnectionstatechange;\n  attribute EventHandler onicegatheringstatechange;\n  attribute EventHandler onconnectionstatechange;\n\n  // Legacy Interface Extensions\n  // Supporting the methods in this section is optional.\n  // If these methods are supported\n  // they must be implemented as defined\n  // in section \"Legacy Interface Extensions\"\n  Promise<undefined> createOffer(RTCSessionDescriptionCallback successCallback,\n                            RTCPeerConnectionErrorCallback failureCallback,\n                            optional RTCOfferOptions options = {});\n  Promise<undefined> setLocalDescription(RTCLocalSessionDescriptionInit description,\n                                    VoidFunction successCallback,\n                                    RTCPeerConnectionErrorCallback failureCallback);\n  Promise<undefined> createAnswer(RTCSessionDescriptionCallback successCallback,\n                             RTCPeerConnectionErrorCallback failureCallback);\n  Promise<undefined> setRemoteDescription(RTCSessionDescriptionInit description,\n                                     VoidFunction successCallback,\n                                     RTCPeerConnectionErrorCallback failureCallback);\n  Promise<undefined> addIceCandidate(RTCIceCandidateInit candidate,\n                                VoidFunction successCallback,\n                                RTCPeerConnectionErrorCallback failureCallback);\n};",
         "type": "interface",
         "name": "RTCPeerConnection",
         "inheritance": "EventTarget",
@@ -1432,6 +1446,7 @@
         "partial": false
       },
       "RTCPeerConnectionErrorCallback": {
+        "fragment": "callback RTCPeerConnectionErrorCallback = undefined (DOMException error);",
         "type": "callback",
         "name": "RTCPeerConnectionErrorCallback",
         "idlType": {
@@ -1463,6 +1478,7 @@
         "extAttrs": []
       },
       "RTCSessionDescriptionCallback": {
+        "fragment": "callback RTCSessionDescriptionCallback = undefined (RTCSessionDescriptionInit description);",
         "type": "callback",
         "name": "RTCSessionDescriptionCallback",
         "idlType": {
@@ -1494,6 +1510,7 @@
         "extAttrs": []
       },
       "RTCSdpType": {
+        "fragment": "enum RTCSdpType {\n  \"offer\",\n  \"pranswer\",\n  \"answer\",\n  \"rollback\"\n};",
         "type": "enum",
         "name": "RTCSdpType",
         "values": [
@@ -1517,6 +1534,7 @@
         "extAttrs": []
       },
       "RTCSessionDescription": {
+        "fragment": "[Exposed=Window]\ninterface RTCSessionDescription {\n  constructor(RTCSessionDescriptionInit descriptionInitDict);\n  readonly attribute RTCSdpType type;\n  readonly attribute DOMString sdp;\n  [Default] object toJSON();\n};",
         "type": "interface",
         "name": "RTCSessionDescription",
         "inheritance": null,
@@ -1610,6 +1628,7 @@
         "partial": false
       },
       "RTCSessionDescriptionInit": {
+        "fragment": "dictionary RTCSessionDescriptionInit {\n  required RTCSdpType type;\n  DOMString sdp = \"\";\n};",
         "type": "dictionary",
         "name": "RTCSessionDescriptionInit",
         "inheritance": null,
@@ -1652,6 +1671,7 @@
         "partial": false
       },
       "RTCLocalSessionDescriptionInit": {
+        "fragment": "dictionary RTCLocalSessionDescriptionInit {\n  RTCSdpType type;\n  DOMString sdp = \"\";\n};",
         "type": "dictionary",
         "name": "RTCLocalSessionDescriptionInit",
         "inheritance": null,
@@ -1694,6 +1714,7 @@
         "partial": false
       },
       "RTCIceCandidate": {
+        "fragment": "[Exposed=Window]\ninterface RTCIceCandidate {\n  constructor(optional RTCIceCandidateInit candidateInitDict = {});\n  readonly attribute DOMString candidate;\n  readonly attribute DOMString? sdpMid;\n  readonly attribute unsigned short? sdpMLineIndex;\n  readonly attribute DOMString? foundation;\n  readonly attribute RTCIceComponent? component;\n  readonly attribute unsigned long? priority;\n  readonly attribute DOMString? address;\n  readonly attribute RTCIceProtocol? protocol;\n  readonly attribute unsigned short? port;\n  readonly attribute RTCIceCandidateType? type;\n  readonly attribute RTCIceTcpCandidateType? tcpType;\n  readonly attribute DOMString? relatedAddress;\n  readonly attribute unsigned short? relatedPort;\n  readonly attribute DOMString? usernameFragment;\n  RTCIceCandidateInit toJSON();\n};",
         "type": "interface",
         "name": "RTCIceCandidate",
         "inheritance": null,
@@ -1962,6 +1983,7 @@
         "partial": false
       },
       "RTCIceCandidateInit": {
+        "fragment": "dictionary RTCIceCandidateInit {\n  DOMString candidate = \"\";\n  DOMString? sdpMid = null;\n  unsigned short? sdpMLineIndex = null;\n  DOMString? usernameFragment = null;\n};",
         "type": "dictionary",
         "name": "RTCIceCandidateInit",
         "inheritance": null,
@@ -2040,6 +2062,7 @@
         "partial": false
       },
       "RTCIceProtocol": {
+        "fragment": "enum RTCIceProtocol {\n  \"udp\",\n  \"tcp\"\n};",
         "type": "enum",
         "name": "RTCIceProtocol",
         "values": [
@@ -2055,6 +2078,7 @@
         "extAttrs": []
       },
       "RTCIceTcpCandidateType": {
+        "fragment": "enum RTCIceTcpCandidateType {\n  \"active\",\n  \"passive\",\n  \"so\"\n};",
         "type": "enum",
         "name": "RTCIceTcpCandidateType",
         "values": [
@@ -2074,6 +2098,7 @@
         "extAttrs": []
       },
       "RTCIceCandidateType": {
+        "fragment": "enum RTCIceCandidateType {\n  \"host\",\n  \"srflx\",\n  \"prflx\",\n  \"relay\"\n};",
         "type": "enum",
         "name": "RTCIceCandidateType",
         "values": [
@@ -2097,6 +2122,7 @@
         "extAttrs": []
       },
       "RTCPeerConnectionIceEvent": {
+        "fragment": "[Exposed=Window]\ninterface RTCPeerConnectionIceEvent : Event {\n  constructor(DOMString type, optional RTCPeerConnectionIceEventInit eventInitDict = {});\n  readonly attribute RTCIceCandidate? candidate;\n  readonly attribute DOMString? url;\n};",
         "type": "interface",
         "name": "RTCPeerConnectionIceEvent",
         "inheritance": "Event",
@@ -2186,6 +2212,7 @@
         "partial": false
       },
       "RTCPeerConnectionIceEventInit": {
+        "fragment": "dictionary RTCPeerConnectionIceEventInit : EventInit {\n  RTCIceCandidate? candidate;\n  DOMString? url;\n};",
         "type": "dictionary",
         "name": "RTCPeerConnectionIceEventInit",
         "inheritance": "EventInit",
@@ -2225,6 +2252,7 @@
         "partial": false
       },
       "RTCPeerConnectionIceErrorEvent": {
+        "fragment": "[Exposed=Window]\ninterface RTCPeerConnectionIceErrorEvent : Event {\n  constructor(DOMString type, RTCPeerConnectionIceErrorEventInit eventInitDict);\n  readonly attribute DOMString? address;\n  readonly attribute unsigned short? port;\n  readonly attribute DOMString url;\n  readonly attribute unsigned short errorCode;\n  readonly attribute USVString errorText;\n};",
         "type": "interface",
         "name": "RTCPeerConnectionIceErrorEvent",
         "inheritance": "Event",
@@ -2357,6 +2385,7 @@
         "partial": false
       },
       "RTCPeerConnectionIceErrorEventInit": {
+        "fragment": "dictionary RTCPeerConnectionIceErrorEventInit : EventInit {\n  DOMString? address;\n  unsigned short? port;\n  DOMString url;\n  required unsigned short errorCode;\n  USVString errorText;\n};",
         "type": "dictionary",
         "name": "RTCPeerConnectionIceErrorEventInit",
         "inheritance": "EventInit",
@@ -2441,6 +2470,7 @@
         "partial": false
       },
       "RTCCertificateExpiration": {
+        "fragment": "dictionary RTCCertificateExpiration {\n  [EnforceRange] DOMTimeStamp expires;\n};",
         "type": "dictionary",
         "name": "RTCCertificateExpiration",
         "inheritance": null,
@@ -2472,6 +2502,7 @@
         "partial": false
       },
       "RTCCertificate": {
+        "fragment": "[Exposed=Window, Serializable]\ninterface RTCCertificate {\n  readonly attribute DOMTimeStamp expires;\n  sequence<RTCDtlsFingerprint> getFingerprints();\n};",
         "type": "interface",
         "name": "RTCCertificate",
         "inheritance": null,
@@ -2536,6 +2567,7 @@
         "partial": false
       },
       "RTCRtpTransceiverInit": {
+        "fragment": "dictionary RTCRtpTransceiverInit {\n  RTCRtpTransceiverDirection direction = \"sendrecv\";\n  sequence<MediaStream> streams = [];\n  sequence<RTCRtpEncodingParameters> sendEncodings = [];\n};",
         "type": "dictionary",
         "name": "RTCRtpTransceiverInit",
         "inheritance": null,
@@ -2617,6 +2649,7 @@
         "partial": false
       },
       "RTCRtpTransceiverDirection": {
+        "fragment": "enum RTCRtpTransceiverDirection {\n  \"sendrecv\",\n  \"sendonly\",\n  \"recvonly\",\n  \"inactive\",\n  \"stopped\"\n};",
         "type": "enum",
         "name": "RTCRtpTransceiverDirection",
         "values": [
@@ -2644,6 +2677,7 @@
         "extAttrs": []
       },
       "RTCRtpSender": {
+        "fragment": "[Exposed=Window]\ninterface RTCRtpSender {\n  readonly attribute MediaStreamTrack? track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  Promise<undefined> setParameters(RTCRtpSendParameters parameters);\n  RTCRtpSendParameters getParameters();\n  Promise<undefined> replaceTrack(MediaStreamTrack? withTrack);\n  undefined setStreams(MediaStream... streams);\n  Promise<RTCStatsReport> getStats();\n};",
         "type": "interface",
         "name": "RTCRtpSender",
         "inheritance": null,
@@ -2878,6 +2912,7 @@
         "partial": false
       },
       "RTCRtpParameters": {
+        "fragment": "dictionary RTCRtpParameters {\n  required sequence<RTCRtpHeaderExtensionParameters> headerExtensions;\n  required RTCRtcpParameters rtcp;\n  required sequence<RTCRtpCodecParameters> codecs;\n};",
         "type": "dictionary",
         "name": "RTCRtpParameters",
         "inheritance": null,
@@ -2950,6 +2985,7 @@
         "partial": false
       },
       "RTCRtpSendParameters": {
+        "fragment": "dictionary RTCRtpSendParameters : RTCRtpParameters {\n  required DOMString transactionId;\n  required sequence<RTCRtpEncodingParameters> encodings;\n};",
         "type": "dictionary",
         "name": "RTCRtpSendParameters",
         "inheritance": "RTCRtpParameters",
@@ -2998,6 +3034,7 @@
         "partial": false
       },
       "RTCRtpReceiveParameters": {
+        "fragment": "dictionary RTCRtpReceiveParameters : RTCRtpParameters {\n};",
         "type": "dictionary",
         "name": "RTCRtpReceiveParameters",
         "inheritance": "RTCRtpParameters",
@@ -3006,6 +3043,7 @@
         "partial": false
       },
       "RTCRtpCodingParameters": {
+        "fragment": "dictionary RTCRtpCodingParameters {\n  DOMString rid;\n};",
         "type": "dictionary",
         "name": "RTCRtpCodingParameters",
         "inheritance": null,
@@ -3030,6 +3068,7 @@
         "partial": false
       },
       "RTCRtpDecodingParameters": {
+        "fragment": "dictionary RTCRtpDecodingParameters : RTCRtpCodingParameters {};",
         "type": "dictionary",
         "name": "RTCRtpDecodingParameters",
         "inheritance": "RTCRtpCodingParameters",
@@ -3038,6 +3077,7 @@
         "partial": false
       },
       "RTCRtpEncodingParameters": {
+        "fragment": "dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {\n  boolean active = true;\n  unsigned long maxBitrate;\n  double scaleResolutionDownBy;\n};",
         "type": "dictionary",
         "name": "RTCRtpEncodingParameters",
         "inheritance": "RTCRtpCodingParameters",
@@ -3095,6 +3135,7 @@
         "partial": false
       },
       "RTCRtcpParameters": {
+        "fragment": "dictionary RTCRtcpParameters {\n  DOMString cname;\n  boolean reducedSize;\n};",
         "type": "dictionary",
         "name": "RTCRtcpParameters",
         "inheritance": null,
@@ -3134,6 +3175,7 @@
         "partial": false
       },
       "RTCRtpHeaderExtensionParameters": {
+        "fragment": "dictionary RTCRtpHeaderExtensionParameters {\n  required DOMString uri;\n  required unsigned short id;\n  boolean encrypted = false;\n};",
         "type": "dictionary",
         "name": "RTCRtpHeaderExtensionParameters",
         "inheritance": null,
@@ -3191,6 +3233,7 @@
         "partial": false
       },
       "RTCRtpCodecParameters": {
+        "fragment": "dictionary RTCRtpCodecParameters {\n  required octet payloadType;\n  required DOMString mimeType;\n  required unsigned long clockRate;\n  unsigned short channels;\n  DOMString sdpFmtpLine;\n};",
         "type": "dictionary",
         "name": "RTCRtpCodecParameters",
         "inheritance": null,
@@ -3275,6 +3318,7 @@
         "partial": false
       },
       "RTCRtpCapabilities": {
+        "fragment": "dictionary RTCRtpCapabilities {\n  required sequence<RTCRtpCodecCapability> codecs;\n  required sequence<RTCRtpHeaderExtensionCapability> headerExtensions;\n};",
         "type": "dictionary",
         "name": "RTCRtpCapabilities",
         "inheritance": null,
@@ -3332,6 +3376,7 @@
         "partial": false
       },
       "RTCRtpCodecCapability": {
+        "fragment": "dictionary RTCRtpCodecCapability {\n  required DOMString mimeType;\n  required unsigned long clockRate;\n  unsigned short channels;\n  DOMString sdpFmtpLine;\n};",
         "type": "dictionary",
         "name": "RTCRtpCodecCapability",
         "inheritance": null,
@@ -3401,6 +3446,7 @@
         "partial": false
       },
       "RTCRtpHeaderExtensionCapability": {
+        "fragment": "dictionary RTCRtpHeaderExtensionCapability {\n  DOMString uri;\n};",
         "type": "dictionary",
         "name": "RTCRtpHeaderExtensionCapability",
         "inheritance": null,
@@ -3425,6 +3471,7 @@
         "partial": false
       },
       "RTCRtpReceiver": {
+        "fragment": "[Exposed=Window]\ninterface RTCRtpReceiver {\n  readonly attribute MediaStreamTrack track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  RTCRtpReceiveParameters getParameters();\n  sequence<RTCRtpContributingSource> getContributingSources();\n  sequence<RTCRtpSynchronizationSource> getSynchronizationSources();\n  Promise<RTCStatsReport> getStats();\n};",
         "type": "interface",
         "name": "RTCRtpReceiver",
         "inheritance": null,
@@ -3593,6 +3640,7 @@
         "partial": false
       },
       "RTCRtpContributingSource": {
+        "fragment": "dictionary RTCRtpContributingSource {\n  required DOMHighResTimeStamp timestamp;\n  required unsigned long source;\n  double audioLevel;\n  required unsigned long rtpTimestamp;\n};",
         "type": "dictionary",
         "name": "RTCRtpContributingSource",
         "inheritance": null,
@@ -3662,6 +3710,7 @@
         "partial": false
       },
       "RTCRtpSynchronizationSource": {
+        "fragment": "dictionary RTCRtpSynchronizationSource : RTCRtpContributingSource {\n};",
         "type": "dictionary",
         "name": "RTCRtpSynchronizationSource",
         "inheritance": "RTCRtpContributingSource",
@@ -3670,6 +3719,7 @@
         "partial": false
       },
       "RTCRtpTransceiver": {
+        "fragment": "[Exposed=Window]\ninterface RTCRtpTransceiver {\n  readonly attribute DOMString? mid;\n  [SameObject] readonly attribute RTCRtpSender sender;\n  [SameObject] readonly attribute RTCRtpReceiver receiver;\n  attribute RTCRtpTransceiverDirection direction;\n  readonly attribute RTCRtpTransceiverDirection? currentDirection;\n  undefined stop();\n  undefined setCodecPreferences(sequence<RTCRtpCodecCapability> codecs);\n};",
         "type": "interface",
         "name": "RTCRtpTransceiver",
         "inheritance": null,
@@ -3834,6 +3884,7 @@
         "partial": false
       },
       "RTCDtlsTransport": {
+        "fragment": "[Exposed=Window]\ninterface RTCDtlsTransport : EventTarget {\n  [SameObject] readonly attribute RTCIceTransport iceTransport;\n  readonly attribute RTCDtlsTransportState state;\n  sequence<ArrayBuffer> getRemoteCertificates();\n  attribute EventHandler onstatechange;\n  attribute EventHandler onerror;\n};",
         "type": "interface",
         "name": "RTCDtlsTransport",
         "inheritance": "EventTarget",
@@ -3944,6 +3995,7 @@
         "partial": false
       },
       "RTCDtlsTransportState": {
+        "fragment": "enum RTCDtlsTransportState {\n  \"new\",\n  \"connecting\",\n  \"connected\",\n  \"closed\",\n  \"failed\"\n};",
         "type": "enum",
         "name": "RTCDtlsTransportState",
         "values": [
@@ -3971,6 +4023,7 @@
         "extAttrs": []
       },
       "RTCDtlsFingerprint": {
+        "fragment": "dictionary RTCDtlsFingerprint {\n  DOMString algorithm;\n  DOMString value;\n};",
         "type": "dictionary",
         "name": "RTCDtlsFingerprint",
         "inheritance": null,
@@ -4010,6 +4063,7 @@
         "partial": false
       },
       "RTCIceTransport": {
+        "fragment": "[Exposed=Window]\ninterface RTCIceTransport : EventTarget {\n  readonly attribute RTCIceRole role;\n  readonly attribute RTCIceComponent component;\n  readonly attribute RTCIceTransportState state;\n  readonly attribute RTCIceGathererState gatheringState;\n  sequence<RTCIceCandidate> getLocalCandidates();\n  sequence<RTCIceCandidate> getRemoteCandidates();\n  RTCIceCandidatePair? getSelectedCandidatePair();\n  RTCIceParameters? getLocalParameters();\n  RTCIceParameters? getRemoteParameters();\n  attribute EventHandler onstatechange;\n  attribute EventHandler ongatheringstatechange;\n  attribute EventHandler onselectedcandidatepairchange;\n};",
         "type": "interface",
         "name": "RTCIceTransport",
         "inheritance": "EventTarget",
@@ -4227,6 +4281,7 @@
         "partial": false
       },
       "RTCIceParameters": {
+        "fragment": "dictionary RTCIceParameters {\n  DOMString usernameFragment;\n  DOMString password;\n};",
         "type": "dictionary",
         "name": "RTCIceParameters",
         "inheritance": null,
@@ -4266,6 +4321,7 @@
         "partial": false
       },
       "RTCIceCandidatePair": {
+        "fragment": "dictionary RTCIceCandidatePair {\n  RTCIceCandidate local;\n  RTCIceCandidate remote;\n};",
         "type": "dictionary",
         "name": "RTCIceCandidatePair",
         "inheritance": null,
@@ -4305,6 +4361,7 @@
         "partial": false
       },
       "RTCIceGathererState": {
+        "fragment": "enum RTCIceGathererState {\n  \"new\",\n  \"gathering\",\n  \"complete\"\n};",
         "type": "enum",
         "name": "RTCIceGathererState",
         "values": [
@@ -4324,6 +4381,7 @@
         "extAttrs": []
       },
       "RTCIceTransportState": {
+        "fragment": "enum RTCIceTransportState {\n  \"new\",\n  \"checking\",\n  \"connected\",\n  \"completed\",\n  \"disconnected\",\n  \"failed\",\n  \"closed\"\n};",
         "type": "enum",
         "name": "RTCIceTransportState",
         "values": [
@@ -4359,6 +4417,7 @@
         "extAttrs": []
       },
       "RTCIceRole": {
+        "fragment": "enum RTCIceRole {\n  \"unknown\",\n  \"controlling\",\n  \"controlled\"\n};",
         "type": "enum",
         "name": "RTCIceRole",
         "values": [
@@ -4378,6 +4437,7 @@
         "extAttrs": []
       },
       "RTCIceComponent": {
+        "fragment": "enum RTCIceComponent {\n  \"rtp\",\n  \"rtcp\"\n};",
         "type": "enum",
         "name": "RTCIceComponent",
         "values": [
@@ -4393,6 +4453,7 @@
         "extAttrs": []
       },
       "RTCTrackEvent": {
+        "fragment": "[Exposed=Window]\ninterface RTCTrackEvent : Event {\n  constructor(DOMString type, RTCTrackEventInit eventInitDict);\n  readonly attribute RTCRtpReceiver receiver;\n  readonly attribute MediaStreamTrack track;\n  [SameObject] readonly attribute FrozenArray<MediaStream> streams;\n  readonly attribute RTCRtpTransceiver transceiver;\n};",
         "type": "interface",
         "name": "RTCTrackEvent",
         "inheritance": "Event",
@@ -4526,6 +4587,7 @@
         "partial": false
       },
       "RTCTrackEventInit": {
+        "fragment": "dictionary RTCTrackEventInit : EventInit {\n  required RTCRtpReceiver receiver;\n  required MediaStreamTrack track;\n  sequence<MediaStream> streams = [];\n  required RTCRtpTransceiver transceiver;\n};",
         "type": "dictionary",
         "name": "RTCTrackEventInit",
         "inheritance": "EventInit",
@@ -4607,6 +4669,7 @@
         "partial": false
       },
       "RTCSctpTransport": {
+        "fragment": "[Exposed=Window]\ninterface RTCSctpTransport : EventTarget {\n  readonly attribute RTCDtlsTransport transport;\n  readonly attribute RTCSctpTransportState state;\n  readonly attribute unrestricted double maxMessageSize;\n  readonly attribute unsigned short? maxChannels;\n  attribute EventHandler onstatechange;\n};",
         "type": "interface",
         "name": "RTCSctpTransport",
         "inheritance": "EventTarget",
@@ -4701,6 +4764,7 @@
         "partial": false
       },
       "RTCSctpTransportState": {
+        "fragment": "enum RTCSctpTransportState {\n  \"connecting\",\n  \"connected\",\n  \"closed\"\n};",
         "type": "enum",
         "name": "RTCSctpTransportState",
         "values": [
@@ -4720,6 +4784,7 @@
         "extAttrs": []
       },
       "RTCDataChannel": {
+        "fragment": "[Exposed=Window]\ninterface RTCDataChannel : EventTarget {\n  readonly attribute USVString label;\n  readonly attribute boolean ordered;\n  readonly attribute unsigned short? maxPacketLifeTime;\n  readonly attribute unsigned short? maxRetransmits;\n  readonly attribute USVString protocol;\n  readonly attribute boolean negotiated;\n  readonly attribute unsigned short? id;\n  readonly attribute RTCDataChannelState readyState;\n  readonly attribute unsigned long bufferedAmount;\n  [EnforceRange] attribute unsigned long bufferedAmountLowThreshold;\n  attribute EventHandler onopen;\n  attribute EventHandler onbufferedamountlow;\n  attribute EventHandler onerror;\n  attribute EventHandler onclosing;\n  attribute EventHandler onclose;\n  undefined close();\n  attribute EventHandler onmessage;\n  attribute BinaryType binaryType;\n  undefined send(USVString data);\n  undefined send(Blob data);\n  undefined send(ArrayBuffer data);\n  undefined send(ArrayBufferView data);\n};",
         "type": "interface",
         "name": "RTCDataChannel",
         "inheritance": "EventTarget",
@@ -5144,6 +5209,7 @@
         "partial": false
       },
       "RTCDataChannelInit": {
+        "fragment": "dictionary RTCDataChannelInit {\n  boolean ordered = true;\n  [EnforceRange] unsigned short maxPacketLifeTime;\n  [EnforceRange] unsigned short maxRetransmits;\n  USVString protocol = \"\";\n  boolean negotiated = false;\n  [EnforceRange] unsigned short id;\n};",
         "type": "dictionary",
         "name": "RTCDataChannelInit",
         "inheritance": null,
@@ -5273,6 +5339,7 @@
         "partial": false
       },
       "RTCDataChannelState": {
+        "fragment": "enum RTCDataChannelState {\n  \"connecting\",\n  \"open\",\n  \"closing\",\n  \"closed\"\n};",
         "type": "enum",
         "name": "RTCDataChannelState",
         "values": [
@@ -5296,6 +5363,7 @@
         "extAttrs": []
       },
       "RTCDataChannelEvent": {
+        "fragment": "[Exposed=Window]\ninterface RTCDataChannelEvent : Event {\n  constructor(DOMString type, RTCDataChannelEventInit eventInitDict);\n  readonly attribute RTCDataChannel channel;\n};",
         "type": "interface",
         "name": "RTCDataChannelEvent",
         "inheritance": "Event",
@@ -5368,6 +5436,7 @@
         "partial": false
       },
       "RTCDataChannelEventInit": {
+        "fragment": "dictionary RTCDataChannelEventInit : EventInit {\n  required RTCDataChannel channel;\n};",
         "type": "dictionary",
         "name": "RTCDataChannelEventInit",
         "inheritance": "EventInit",
@@ -5392,6 +5461,7 @@
         "partial": false
       },
       "RTCDTMFSender": {
+        "fragment": "[Exposed=Window]\ninterface RTCDTMFSender : EventTarget {\n  undefined insertDTMF(DOMString tones, optional unsigned long duration = 100, optional unsigned long interToneGap = 70);\n  attribute EventHandler ontonechange;\n  readonly attribute boolean canInsertDTMF;\n  readonly attribute DOMString toneBuffer;\n};",
         "type": "interface",
         "name": "RTCDTMFSender",
         "inheritance": "EventTarget",
@@ -5526,6 +5596,7 @@
         "partial": false
       },
       "RTCDTMFToneChangeEvent": {
+        "fragment": "[Exposed=Window]\ninterface RTCDTMFToneChangeEvent : Event {\n  constructor(DOMString type, optional RTCDTMFToneChangeEventInit eventInitDict = {});\n  readonly attribute DOMString tone;\n};",
         "type": "interface",
         "name": "RTCDTMFToneChangeEvent",
         "inheritance": "Event",
@@ -5600,6 +5671,7 @@
         "partial": false
       },
       "RTCDTMFToneChangeEventInit": {
+        "fragment": "dictionary RTCDTMFToneChangeEventInit : EventInit {\n  DOMString tone = \"\";\n};",
         "type": "dictionary",
         "name": "RTCDTMFToneChangeEventInit",
         "inheritance": "EventInit",
@@ -5627,6 +5699,7 @@
         "partial": false
       },
       "RTCStatsReport": {
+        "fragment": "[Exposed=Window]\ninterface RTCStatsReport {\n  readonly maplike<DOMString, object>;\n};",
         "type": "interface",
         "name": "RTCStatsReport",
         "inheritance": null,
@@ -5671,6 +5744,7 @@
         "partial": false
       },
       "RTCStats": {
+        "fragment": "dictionary RTCStats {\n  required DOMHighResTimeStamp timestamp;\n  required RTCStatsType type;\n  required DOMString id;\n};",
         "type": "dictionary",
         "name": "RTCStats",
         "inheritance": null,
@@ -5725,6 +5799,7 @@
         "partial": false
       },
       "RTCError": {
+        "fragment": "[Exposed=Window]\ninterface RTCError : DOMException {\n  constructor(RTCErrorInit init, optional DOMString message = \"\");\n  readonly attribute RTCErrorDetailType errorDetail;\n  readonly attribute long? sdpLineNumber;\n  readonly attribute long? sctpCauseCode;\n  readonly attribute unsigned long? receivedAlert;\n  readonly attribute unsigned long? sentAlert;\n};",
         "type": "interface",
         "name": "RTCError",
         "inheritance": "DOMException",
@@ -5860,6 +5935,7 @@
         "partial": false
       },
       "RTCErrorInit": {
+        "fragment": "dictionary RTCErrorInit {\n  required RTCErrorDetailType errorDetail;\n  long sdpLineNumber;\n  long sctpCauseCode;\n  unsigned long receivedAlert;\n  unsigned long sentAlert;\n};",
         "type": "dictionary",
         "name": "RTCErrorInit",
         "inheritance": null,
@@ -5944,6 +6020,7 @@
         "partial": false
       },
       "RTCErrorDetailType": {
+        "fragment": "enum RTCErrorDetailType {\n  \"data-channel-failure\",\n  \"dtls-failure\",\n  \"fingerprint-failure\",\n  \"sctp-failure\",\n  \"sdp-syntax-error\",\n  \"hardware-encoder-not-available\",\n  \"hardware-encoder-error\"\n};",
         "type": "enum",
         "name": "RTCErrorDetailType",
         "values": [
@@ -5979,6 +6056,7 @@
         "extAttrs": []
       },
       "RTCErrorEvent": {
+        "fragment": "[Exposed=Window]\ninterface RTCErrorEvent : Event {\n  constructor(DOMString type, RTCErrorEventInit eventInitDict);\n  [SameObject] readonly attribute RTCError error;\n};",
         "type": "interface",
         "name": "RTCErrorEvent",
         "inheritance": "Event",
@@ -6058,6 +6136,7 @@
         "partial": false
       },
       "RTCErrorEventInit": {
+        "fragment": "dictionary RTCErrorEventInit : EventInit {\n  required RTCError error;\n};",
         "type": "dictionary",
         "name": "RTCErrorEventInit",
         "inheritance": "EventInit",
@@ -6085,6 +6164,7 @@
     "idlExtendedNames": {
       "RTCOfferOptions": [
         {
+          "fragment": "partial dictionary RTCOfferOptions {\n  boolean offerToReceiveAudio;\n  boolean offerToReceiveVideo;\n};",
           "type": "dictionary",
           "name": "RTCOfferOptions",
           "inheritance": null,
@@ -6126,6 +6206,7 @@
       ],
       "RTCPeerConnection": [
         {
+          "fragment": "partial interface RTCPeerConnection {\n  static Promise<RTCCertificate>\n      generateCertificate(AlgorithmIdentifier keygenAlgorithm);\n};",
           "type": "interface",
           "name": "RTCPeerConnection",
           "inheritance": null,
@@ -6176,6 +6257,7 @@
           "partial": true
         },
         {
+          "fragment": "partial interface RTCPeerConnection {\n  sequence<RTCRtpSender> getSenders();\n  sequence<RTCRtpReceiver> getReceivers();\n  sequence<RTCRtpTransceiver> getTransceivers();\n  RTCRtpSender addTrack(MediaStreamTrack track, MediaStream... streams);\n  undefined removeTrack(RTCRtpSender sender);\n  RTCRtpTransceiver addTransceiver((MediaStreamTrack or DOMString) trackOrKind,\n                                   optional RTCRtpTransceiverInit init = {});\n  attribute EventHandler ontrack;\n};",
           "type": "interface",
           "name": "RTCPeerConnection",
           "inheritance": null,
@@ -6419,6 +6501,7 @@
           "partial": true
         },
         {
+          "fragment": "partial interface RTCPeerConnection {\n  readonly attribute RTCSctpTransport? sctp;\n  RTCDataChannel createDataChannel(USVString label,\n                                   optional RTCDataChannelInit dataChannelDict = {});\n  attribute EventHandler ondatachannel;\n};",
           "type": "interface",
           "name": "RTCPeerConnection",
           "inheritance": null,
@@ -6508,6 +6591,7 @@
           "partial": true
         },
         {
+          "fragment": "partial interface RTCPeerConnection {\n  Promise<RTCStatsReport> getStats(optional MediaStreamTrack? selector = null);\n};",
           "type": "interface",
           "name": "RTCPeerConnection",
           "inheritance": null,
@@ -6562,6 +6646,7 @@
       ],
       "RTCRtpSender": [
         {
+          "fragment": "partial interface RTCRtpSender {\n  readonly attribute RTCDTMFSender? dtmf;\n};",
           "type": "interface",
           "name": "RTCRtpSender",
           "inheritance": null,

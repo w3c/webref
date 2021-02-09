@@ -1,0 +1,22 @@
+{
+  "name": "XRView",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute Float32Array projectionMatrix;\n  [SameObject] readonly attribute XRRigidTransform transform;\n  readonly attribute double? recommendedViewportScale;\n\n  undefined requestViewportScale(double? scale);\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrview"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR Augmented Reality Module - Level 1",
+        "url": "https://www.w3.org/TR/webxr-ar-module-1/"
+      },
+      "fragment": "partial interface XRView {\n  readonly attribute boolean isFirstPersonObserver;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

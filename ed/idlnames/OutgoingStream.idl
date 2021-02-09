@@ -1,0 +1,7 @@
+// Source: WebTransport (https://w3c.github.io/webtransport/)
+[ Exposed=(Window,Worker) ]
+interface mixin OutgoingStream {
+  readonly attribute WritableStream writable;
+  readonly attribute Promise<StreamAbortInfo> writingAborted;
+  undefined abortWriting(optional StreamAbortInfo abortInfo = {});
+};

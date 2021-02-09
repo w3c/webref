@@ -1,0 +1,27 @@
+{
+  "name": "MockMicrophoneConfiguration",
+  "defined": {
+    "spec": {
+      "title": "Media Capture Automation",
+      "url": "https://w3c.github.io/mediacapture-automation/"
+    },
+    "fragment": "dictionary MockMicrophoneConfiguration : MockCaptureDeviceConfiguration {\n  unsigned long defaultSampleRate = 44100;\n  // TODO: Add more capabilities parameters like:\n  // ULongRange sampleRate;\n  // sequence echoCancellation;\n};",
+    "href": "https://w3c.github.io/mediacapture-automation/#dom-mockmicrophoneconfiguration"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "MockCaptureDeviceConfiguration",
+    "defined": {
+      "spec": {
+        "title": "Media Capture Automation",
+        "url": "https://w3c.github.io/mediacapture-automation/"
+      },
+      "fragment": "dictionary MockCaptureDeviceConfiguration {\n  DOMString label;\n  DOMString deviceId;\n  DOMString groupId;\n};",
+      "href": "https://w3c.github.io/mediacapture-automation/#dom-mockcapturedeviceconfiguration"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

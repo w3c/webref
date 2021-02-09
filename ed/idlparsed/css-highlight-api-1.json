@@ -18,6 +18,7 @@
     },
     "idlNames": {
       "Highlight": {
+        "fragment": "[Exposed=Window]\ninterface Highlight {\n  constructor(CSSOMString name, AbstractRange... initialRanges);\n  setlike<AbstractRange>;\n  attribute double priority;\n  readonly attribute CSSOMString name;\n};",
         "type": "interface",
         "name": "Highlight",
         "inheritance": null,
@@ -122,6 +123,7 @@
         "partial": false
       },
       "HighlightsRegister": {
+        "fragment": "[Exposed=Window]\ninterface HighlightsRegister {\n  setlike<Highlight>;\n  HighlightsRegister add(Highlight value);\n};",
         "type": "interface",
         "name": "HighlightsRegister",
         "inheritance": null,
@@ -193,6 +195,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
+          "fragment": "partial namespace CSS {\n  readonly attribute HighlightsRegister highlights;\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,

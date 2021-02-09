@@ -1,0 +1,14 @@
+{
+  "name": "MutationRecord",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface MutationRecord {\n  readonly attribute DOMString type;\n  [SameObject] readonly attribute Node target;\n  [SameObject] readonly attribute NodeList addedNodes;\n  [SameObject] readonly attribute NodeList removedNodes;\n  readonly attribute Node? previousSibling;\n  readonly attribute Node? nextSibling;\n  readonly attribute DOMString? attributeName;\n  readonly attribute DOMString? attributeNamespace;\n  readonly attribute DOMString? oldValue;\n};",
+    "href": "https://dom.spec.whatwg.org/#mutationrecord"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

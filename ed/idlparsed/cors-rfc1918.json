@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "AddressSpace": {
+        "fragment": "enum AddressSpace { \"local\", \"private\", \"public\" };",
         "type": "enum",
         "name": "AddressSpace",
         "values": [
@@ -32,6 +33,7 @@
     "idlExtendedNames": {
       "Document": [
         {
+          "fragment": "partial interface Document {\n  readonly attribute AddressSpace addressSpace;\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -58,6 +60,7 @@
       ],
       "WorkerGlobalScope": [
         {
+          "fragment": "partial interface WorkerGlobalScope {\n  readonly attribute AddressSpace addressSpace;\n};",
           "type": "interface",
           "name": "WorkerGlobalScope",
           "inheritance": null,

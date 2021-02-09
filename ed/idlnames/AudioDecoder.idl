@@ -1,0 +1,14 @@
+// Source: WebCodecs (https://wicg.github.io/web-codecs/)
+[Exposed=(Window,Worker)]
+interface AudioDecoder {
+  constructor(AudioDecoderInit init);
+
+  readonly attribute CodecState state;
+  readonly attribute long decodeQueueSize;
+
+  undefined configure(AudioDecoderConfig config);
+  undefined decode(EncodedAudioChunk chunk);
+  Promise<undefined> flush();
+  undefined reset();
+  undefined close();
+};

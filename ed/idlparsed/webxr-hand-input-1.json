@@ -16,6 +16,7 @@
     },
     "idlNames": {
       "XRHandJoint": {
+        "fragment": "enum XRHandJoint {\n  \"wrist\",\n\n  \"thumb-metacarpal\",\n  \"thumb-phalanx-proximal\",\n  \"thumb-phalanx-distal\",\n  \"thumb-tip\",\n\n  \"index-finger-metacarpal\",\n  \"index-finger-phalanx-proximal\",\n  \"index-finger-phalanx-intermediate\",\n  \"index-finger-phalanx-distal\",\n  \"index-finger-tip\",\n\n  \"middle-finger-metacarpal\",\n  \"middle-finger-phalanx-proximal\",\n  \"middle-finger-phalanx-intermediate\",\n  \"middle-finger-phalanx-distal\",\n  \"middle-finger-tip\",\n\n  \"ring-finger-metacarpal\",\n  \"ring-finger-phalanx-proximal\",\n  \"ring-finger-phalanx-intermediate\",\n  \"ring-finger-phalanx-distal\",\n  \"ring-finger-tip\",\n\n  \"pinky-finger-metacarpal\",\n  \"pinky-finger-phalanx-proximal\",\n  \"pinky-finger-phalanx-intermediate\",\n  \"pinky-finger-phalanx-distal\",\n  \"pinky-finger-tip\"\n};",
         "type": "enum",
         "name": "XRHandJoint",
         "values": [
@@ -123,6 +124,7 @@
         "extAttrs": []
       },
       "XRHand": {
+        "fragment": "[Exposed=Window]\ninterface XRHand {\n    iterable<XRHandJoint, XRJointSpace>;\n\n    readonly attribute unsigned long size;\n    XRJointSpace get(XRHandJoint key);\n};",
         "type": "interface",
         "name": "XRHand",
         "inheritance": null,
@@ -214,6 +216,7 @@
         "partial": false
       },
       "XRJointSpace": {
+        "fragment": "[Exposed=Window]\ninterface XRJointSpace: XRSpace {\n  readonly attribute XRHandJoint jointName;\n};",
         "type": "interface",
         "name": "XRJointSpace",
         "inheritance": "XRSpace",
@@ -248,6 +251,7 @@
         "partial": false
       },
       "XRJointPose": {
+        "fragment": "[Exposed=Window]\ninterface XRJointPose: XRPose {\n    readonly attribute float radius;\n};",
         "type": "interface",
         "name": "XRJointPose",
         "inheritance": "XRPose",
@@ -285,6 +289,7 @@
     "idlExtendedNames": {
       "XRInputSource": [
         {
+          "fragment": "partial interface XRInputSource {\n   readonly attribute XRHand? hand;\n};",
           "type": "interface",
           "name": "XRInputSource",
           "inheritance": null,
@@ -311,6 +316,7 @@
       ],
       "XRFrame": [
         {
+          "fragment": "partial interface XRFrame {\n    XRJointPose? getJointPose(XRJointSpace joint, XRSpace baseSpace);\n    boolean fillJointRadii(sequence<XRJointSpace> jointSpaces, Float32Array radii);\n\n    boolean fillPoses(sequence<XRSpace> spaces, XRSpace baseSpace, Float32Array transforms);\n};",
           "type": "interface",
           "name": "XRFrame",
           "inheritance": null,

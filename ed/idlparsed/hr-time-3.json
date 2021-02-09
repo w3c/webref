@@ -17,6 +17,7 @@
     },
     "idlNames": {
       "DOMHighResTimeStamp": {
+        "fragment": "typedef double DOMHighResTimeStamp;",
         "type": "typedef",
         "name": "DOMHighResTimeStamp",
         "idlType": {
@@ -30,6 +31,7 @@
         "extAttrs": []
       },
       "Performance": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Performance : EventTarget {\n    DOMHighResTimeStamp now();\n    readonly attribute DOMHighResTimeStamp timeOrigin;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "Performance",
         "inheritance": "EventTarget",
@@ -111,6 +113,7 @@
     "idlExtendedNames": {
       "WindowOrWorkerGlobalScope": [
         {
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute Performance performance;\n};",
           "type": "interface mixin",
           "name": "WindowOrWorkerGlobalScope",
           "inheritance": null,

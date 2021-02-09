@@ -1,0 +1,27 @@
+{
+  "name": "FileSystemPermissionDescriptor",
+  "defined": {
+    "spec": {
+      "title": "File System Access",
+      "url": "https://wicg.github.io/file-system-access/"
+    },
+    "fragment": "dictionary FileSystemPermissionDescriptor : PermissionDescriptor {\n  required FileSystemHandle handle;\n  FileSystemPermissionMode mode = \"read\";\n};",
+    "href": "https://wicg.github.io/file-system-access/#dictdef-filesystempermissiondescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PermissionDescriptor",
+    "defined": {
+      "spec": {
+        "title": "Permissions",
+        "url": "https://www.w3.org/TR/permissions/"
+      },
+      "fragment": "dictionary PermissionDescriptor {\n  required PermissionName name;\n};",
+      "href": "https://w3c.github.io/permissions/#dictdef-permissiondescriptor"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

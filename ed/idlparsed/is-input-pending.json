@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "IsInputPendingOptions": {
+        "fragment": "dictionary IsInputPendingOptions {\n  boolean includeContinuous = false;\n};",
         "type": "dictionary",
         "name": "IsInputPendingOptions",
         "inheritance": null,
@@ -41,6 +42,7 @@
         "partial": false
       },
       "Scheduling": {
+        "fragment": "[Exposed=Window] interface Scheduling {\n   boolean isInputPending(optional IsInputPendingOptions isInputPendingOptions = {});\n};",
         "type": "interface",
         "name": "Scheduling",
         "inheritance": null,
@@ -97,6 +99,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "partial interface Navigator {\n  readonly attribute Scheduling scheduling;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

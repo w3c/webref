@@ -1,0 +1,27 @@
+{
+  "name": "PresentationConnection",
+  "defined": {
+    "spec": {
+      "title": "Presentation API",
+      "url": "https://www.w3.org/TR/presentation-api/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationConnection : EventTarget {\n  readonly attribute USVString id;\n  readonly attribute USVString url;\n  readonly attribute PresentationConnectionState state;\n  undefined close();\n  undefined terminate();\n  attribute EventHandler onconnect;\n  attribute EventHandler onclose;\n  attribute EventHandler onterminate;\n\n  // Communication\n  attribute BinaryType binaryType;\n  attribute EventHandler onmessage;\n  undefined send (DOMString message);\n  undefined send (Blob data);\n  undefined send (ArrayBuffer data);\n  undefined send (ArrayBufferView data);\n};",
+    "href": "https://w3c.github.io/presentation-api/#dom-presentationconnection"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

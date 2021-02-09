@@ -20,6 +20,7 @@
     },
     "idlNames": {
       "AnimationWorkletGlobalScope": {
+        "fragment": "[ Global=(Worklet,AnimationWorklet), Exposed=AnimationWorklet ]\ninterface AnimationWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerAnimator(DOMString name, AnimatorInstanceConstructor animatorCtor);\n};",
         "type": "interface",
         "name": "AnimationWorkletGlobalScope",
         "inheritance": "WorkletGlobalScope",
@@ -103,6 +104,7 @@
         "partial": false
       },
       "AnimatorInstanceConstructor": {
+        "fragment": "callback AnimatorInstanceConstructor = any (any options, optional any state);",
         "type": "callback",
         "name": "AnimatorInstanceConstructor",
         "idlType": {
@@ -150,6 +152,7 @@
         "extAttrs": []
       },
       "WorkletAnimationEffect": {
+        "fragment": "[ Exposed=AnimationWorklet ]\ninterface WorkletAnimationEffect {\n    EffectTiming         getTiming();\n    ComputedEffectTiming getComputedTiming();\n    attribute double? localTime;\n};",
         "type": "interface",
         "name": "WorkletAnimationEffect",
         "inheritance": null,
@@ -214,6 +217,7 @@
         "partial": false
       },
       "WorkletAnimation": {
+        "fragment": "[Exposed=Window]\ninterface WorkletAnimation : Animation {\n        constructor(DOMString animatorName,\n              optional (AnimationEffect or sequence<AnimationEffect>)? effects = null,\n              optional AnimationTimeline? timeline,\n              optional any options);\n        readonly attribute DOMString animatorName;\n};",
         "type": "interface",
         "name": "WorkletAnimation",
         "inheritance": "Animation",
@@ -346,6 +350,7 @@
         "partial": false
       },
       "WorkletGroupEffect": {
+        "fragment": "[Exposed=AnimationWorklet]\ninterface WorkletGroupEffect {\n  sequence<WorkletAnimationEffect> getChildren();\n};",
         "type": "interface",
         "name": "WorkletGroupEffect",
         "inheritance": null,
@@ -392,6 +397,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
+          "fragment": "[Exposed=Window]\npartial namespace CSS {\n    [SameObject] readonly attribute Worklet animationWorklet;\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,

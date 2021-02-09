@@ -1,0 +1,35 @@
+{
+  "name": "RTCRtpSendParameters",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCRtpSendParameters : RTCRtpParameters {\n  required DOMString transactionId;\n  required sequence<RTCRtpEncodingParameters> encodings;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsendparameters"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "MediaStreamTrack Content Hints",
+        "url": "https://www.w3.org/TR/mst-content-hint/"
+      },
+      "fragment": "partial dictionary RTCRtpSendParameters {\n RTCDegradationPreference degradationPreference;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "RTCRtpParameters",
+    "defined": {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "dictionary RTCRtpParameters {\n  required sequence<RTCRtpHeaderExtensionParameters> headerExtensions;\n  required RTCRtcpParameters rtcp;\n  required sequence<RTCRtpCodecParameters> codecs;\n};",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

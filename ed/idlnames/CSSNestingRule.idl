@@ -1,0 +1,8 @@
+// Source: CSS Nesting Module (https://drafts.csswg.org/css-nesting-1/)
+interface CSSNestingRule : CSSRule {
+  attribute CSSOMString selectorText;
+  [SameObject] readonly attribute CSSRuleList cssRules;
+  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
+  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);
+  undefined deleteRule(unsigned long index);
+};

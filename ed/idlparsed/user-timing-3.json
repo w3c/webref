@@ -24,6 +24,7 @@
     },
     "idlNames": {
       "PerformanceMarkOptions": {
+        "fragment": "dictionary PerformanceMarkOptions {\n    any detail;\n    DOMHighResTimeStamp startTime;\n};",
         "type": "dictionary",
         "name": "PerformanceMarkOptions",
         "inheritance": null,
@@ -63,6 +64,7 @@
         "partial": false
       },
       "PerformanceMeasureOptions": {
+        "fragment": "dictionary PerformanceMeasureOptions {\n    any detail;\n    (DOMString or DOMHighResTimeStamp) start;\n    DOMHighResTimeStamp duration;\n    (DOMString or DOMHighResTimeStamp) end;\n};",
         "type": "dictionary",
         "name": "PerformanceMeasureOptions",
         "inheritance": null,
@@ -166,6 +168,7 @@
         "partial": false
       },
       "PerformanceMark": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceMark : PerformanceEntry {\n  constructor(DOMString markName, optional PerformanceMarkOptions markOptions = {});\n  readonly attribute any detail;\n};",
         "type": "interface",
         "name": "PerformanceMark",
         "inheritance": "PerformanceEntry",
@@ -247,6 +250,7 @@
         "partial": false
       },
       "PerformanceMeasure": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceMeasure : PerformanceEntry {\n  readonly attribute any detail;\n};",
         "type": "interface",
         "name": "PerformanceMeasure",
         "inheritance": "PerformanceEntry",
@@ -291,6 +295,7 @@
     "idlExtendedNames": {
       "Performance": [
         {
+          "fragment": "partial interface Performance {\n    PerformanceMark mark(DOMString markName, optional PerformanceMarkOptions markOptions = {});\n    undefined clearMarks(optional DOMString markName);\n    PerformanceMeasure measure(DOMString measureName, optional (DOMString or PerformanceMeasureOptions) startOrMeasureOptions = {}, optional DOMString endMark);\n    undefined clearMeasures(optional DOMString measureName);\n};",
           "type": "interface",
           "name": "Performance",
           "inheritance": null,

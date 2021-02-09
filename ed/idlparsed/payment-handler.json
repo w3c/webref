@@ -24,6 +24,7 @@
     },
     "idlNames": {
       "PaymentManager": {
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface PaymentManager {\n  [SameObject] readonly attribute PaymentInstruments instruments;\n  attribute DOMString userHint;\n  Promise<void> enableDelegations(sequence<PaymentDelegation> delegations);\n};",
         "type": "interface",
         "name": "PaymentManager",
         "inheritance": null,
@@ -143,6 +144,7 @@
         "partial": false
       },
       "PaymentDelegation": {
+        "fragment": "enum PaymentDelegation {\n  \"shippingAddress\",\n  \"payerName\",\n  \"payerPhone\",\n  \"payerEmail\"\n};",
         "type": "enum",
         "name": "PaymentDelegation",
         "values": [
@@ -166,6 +168,7 @@
         "extAttrs": []
       },
       "PaymentInstruments": {
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface PaymentInstruments {\n  Promise<boolean> delete(DOMString instrumentKey);\n  Promise<any> get(DOMString instrumentKey);\n  Promise<sequence<DOMString>>  keys();\n  Promise<boolean> has(DOMString instrumentKey);\n  Promise<void> set(DOMString instrumentKey, PaymentInstrument details);\n  Promise<void> clear();\n};",
         "type": "interface",
         "name": "PaymentInstruments",
         "inheritance": null,
@@ -435,6 +438,7 @@
         "partial": false
       },
       "PaymentInstrument": {
+        "fragment": "dictionary PaymentInstrument {\n  required DOMString name;\n  sequence<ImageObject> icons;\n  DOMString method;\n  object capabilities;\n};",
         "type": "dictionary",
         "name": "PaymentInstrument",
         "inheritance": null,
@@ -513,6 +517,7 @@
         "partial": false
       },
       "ImageObject": {
+        "fragment": "dictionary ImageObject {\n    required USVString src;\n    DOMString sizes;\n    DOMString type;\n};",
         "type": "dictionary",
         "name": "ImageObject",
         "inheritance": null,
@@ -567,6 +572,7 @@
         "partial": false
       },
       "CanMakePaymentEvent": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface CanMakePaymentEvent : ExtendableEvent {\n  constructor(DOMString type, optional CanMakePaymentEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  void respondWith(Promise<boolean> canMakePaymentResponse);\n};",
         "type": "interface",
         "name": "CanMakePaymentEvent",
         "inheritance": "ExtendableEvent",
@@ -721,6 +727,7 @@
         "partial": false
       },
       "CanMakePaymentEventInit": {
+        "fragment": "dictionary CanMakePaymentEventInit : ExtendableEventInit {\n  USVString topOrigin;\n  USVString paymentRequestOrigin;\n  sequence<PaymentMethodData> methodData;\n};",
         "type": "dictionary",
         "name": "CanMakePaymentEventInit",
         "inheritance": "ExtendableEventInit",
@@ -784,6 +791,7 @@
         "partial": false
       },
       "PaymentRequestDetailsUpdate": {
+        "fragment": "dictionary PaymentRequestDetailsUpdate {\n  DOMString error;\n  PaymentCurrencyAmount total;\n  sequence<PaymentDetailsModifier> modifiers;\n  sequence<PaymentShippingOption> shippingOptions;\n  object paymentMethodErrors;\n  AddressErrors shippingAddressErrors;\n};",
         "type": "dictionary",
         "name": "PaymentRequestDetailsUpdate",
         "inheritance": null,
@@ -901,6 +909,7 @@
         "partial": false
       },
       "PaymentRequestEvent": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface PaymentRequestEvent : ExtendableEvent {\n  constructor(DOMString type, optional PaymentRequestEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute DOMString paymentRequestId;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  readonly attribute object total;\n  readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;\n  readonly attribute DOMString instrumentKey;\n  readonly attribute boolean requestBillingAddress;\n  readonly attribute object? paymentOptions;\n  readonly attribute FrozenArray<PaymentShippingOption>? shippingOptions;\n  Promise<WindowClient?> openWindow(USVString url);\n  Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);\n  Promise<PaymentRequestDetailsUpdate?> changeShippingAddress(optional AddressInit shippingAddress = {});\n  Promise<PaymentRequestDetailsUpdate?> changeShippingOption(DOMString shippingOption);\n  void respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);\n};",
         "type": "interface",
         "name": "PaymentRequestEvent",
         "inheritance": "ExtendableEvent",
@@ -1362,6 +1371,7 @@
         "partial": false
       },
       "PaymentRequestEventInit": {
+        "fragment": "dictionary PaymentRequestEventInit : ExtendableEventInit {\n  USVString topOrigin;\n  USVString paymentRequestOrigin;\n  DOMString paymentRequestId;\n  sequence<PaymentMethodData> methodData;\n  PaymentCurrencyAmount total;\n  sequence<PaymentDetailsModifier> modifiers;\n  DOMString instrumentKey;\n  PaymentOptions paymentOptions;\n  sequence<PaymentShippingOption> shippingOptions;\n};",
         "type": "dictionary",
         "name": "PaymentRequestEventInit",
         "inheritance": "ExtendableEventInit",
@@ -1533,6 +1543,7 @@
         "partial": false
       },
       "PaymentHandlerResponse": {
+        "fragment": "dictionary PaymentHandlerResponse {\nDOMString methodName;\nobject details;\nDOMString? payerName;\nDOMString? payerEmail;\nDOMString? payerPhone;\nAddressInit shippingAddress;\nDOMString? shippingOption;\n};",
         "type": "dictionary",
         "name": "PaymentHandlerResponse",
         "inheritance": null,
@@ -1650,6 +1661,7 @@
     "idlExtendedNames": {
       "ServiceWorkerRegistration": [
         {
+          "fragment": "partial interface ServiceWorkerRegistration {\n  [SameObject] readonly attribute PaymentManager paymentManager;\n};",
           "type": "interface",
           "name": "ServiceWorkerRegistration",
           "inheritance": null,
@@ -1683,6 +1695,7 @@
       ],
       "ServiceWorkerGlobalScope": [
         {
+          "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler oncanmakepayment;\n};",
           "type": "interface",
           "name": "ServiceWorkerGlobalScope",
           "inheritance": null,
@@ -1707,6 +1720,7 @@
           "partial": true
         },
         {
+          "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler onpaymentrequest;\n};",
           "type": "interface",
           "name": "ServiceWorkerGlobalScope",
           "inheritance": null,

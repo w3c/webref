@@ -1,0 +1,6 @@
+// Source: WebTransport (https://w3c.github.io/webtransport/)
+interface mixin UnidirectionalStreamsTransport {
+  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});
+  /* a ReadableStream of ReceiveStream objects */
+  readonly attribute ReadableStream incomingUnidirectionalStreams;
+};

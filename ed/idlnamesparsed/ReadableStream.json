@@ -1,0 +1,14 @@
+{
+  "name": "ReadableStream",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker,Worklet), Transferable]\ninterface ReadableStream {\n  constructor(optional object underlyingSource, optional QueuingStrategy strategy = {});\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> cancel(optional any reason);\n  ReadableStreamReader getReader(optional ReadableStreamGetReaderOptions options = {});\n  ReadableStream pipeThrough(ReadableWritablePair transform, optional StreamPipeOptions options = {});\n  Promise<undefined> pipeTo(WritableStream destination, optional StreamPipeOptions options = {});\n  sequence<ReadableStream> tee();\n\n  async iterable<any>(optional ReadableStreamIteratorOptions options = {});\n};",
+    "href": "https://streams.spec.whatwg.org/#readablestream"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

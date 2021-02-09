@@ -1,0 +1,20 @@
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+interface GPUAdapterLimits {
+    readonly attribute GPUSize32 maxTextureDimension1D;
+    readonly attribute GPUSize32 maxTextureDimension2D;
+    readonly attribute GPUSize32 maxTextureDimension3D;
+    readonly attribute GPUSize32 maxTextureArrayLayers;
+    readonly attribute GPUSize32 maxBindGroups;
+    readonly attribute GPUSize32 maxDynamicUniformBuffersPerPipelineLayout;
+    readonly attribute GPUSize32 maxDynamicStorageBuffersPerPipelineLayout;
+    readonly attribute GPUSize32 maxSampledTexturesPerShaderStage;
+    readonly attribute GPUSize32 maxSamplersPerShaderStage;
+    readonly attribute GPUSize32 maxStorageBuffersPerShaderStage;
+    readonly attribute GPUSize32 maxStorageTexturesPerShaderStage;
+    readonly attribute GPUSize32 maxUniformBuffersPerShaderStage;
+    readonly attribute GPUSize32 maxUniformBufferBindingSize;
+    readonly attribute GPUSize32 maxStorageBufferBindingSize;
+    readonly attribute GPUSize32 maxVertexBuffers;
+    readonly attribute GPUSize32 maxVertexAttributes;
+    readonly attribute GPUSize32 maxVertexBufferArrayStride;
+};

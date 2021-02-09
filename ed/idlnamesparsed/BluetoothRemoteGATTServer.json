@@ -1,0 +1,14 @@
+{
+  "name": "BluetoothRemoteGATTServer",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTServer {\n  [SameObject]\n  readonly attribute BluetoothDevice device;\n  readonly attribute boolean connected;\n  Promise<BluetoothRemoteGATTServer> connect();\n  void disconnect();\n  Promise<BluetoothRemoteGATTService> getPrimaryService(BluetoothServiceUUID service);\n  Promise<sequence<BluetoothRemoteGATTService>>\n    getPrimaryServices(optional BluetoothServiceUUID service);\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothremotegattserver"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

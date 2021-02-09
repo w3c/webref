@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "CustomStateSet": {
+        "fragment": "[Exposed=Window]\ninterface CustomStateSet {\n  setlike<DOMString>;\n  undefined add(DOMString value);\n};",
         "type": "interface",
         "name": "CustomStateSet",
         "inheritance": null,
@@ -85,6 +86,7 @@
     "idlExtendedNames": {
       "ElementInternals": [
         {
+          "fragment": "partial interface ElementInternals {\n  readonly attribute CustomStateSet states;\n};",
           "type": "interface",
           "name": "ElementInternals",
           "inheritance": null,

@@ -1,0 +1,5 @@
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+[Exposed=(Window, DedicatedWorker)]
+interface GPU {
+    Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});
+};

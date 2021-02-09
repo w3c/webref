@@ -21,6 +21,7 @@
     },
     "idlNames": {
       "Crypto": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Crypto {\n  [SecureContext] readonly attribute SubtleCrypto subtle;\n  ArrayBufferView getRandomValues(ArrayBufferView array);\n};",
         "type": "interface",
         "name": "Crypto",
         "inheritance": null,
@@ -101,6 +102,7 @@
         "partial": false
       },
       "AlgorithmIdentifier": {
+        "fragment": "typedef (object or DOMString) AlgorithmIdentifier;",
         "type": "typedef",
         "name": "AlgorithmIdentifier",
         "idlType": {
@@ -131,6 +133,7 @@
         "extAttrs": []
       },
       "HashAlgorithmIdentifier": {
+        "fragment": "typedef AlgorithmIdentifier HashAlgorithmIdentifier;",
         "type": "typedef",
         "name": "HashAlgorithmIdentifier",
         "idlType": {
@@ -144,6 +147,7 @@
         "extAttrs": []
       },
       "Algorithm": {
+        "fragment": "dictionary Algorithm {\n  required DOMString name;\n};",
         "type": "dictionary",
         "name": "Algorithm",
         "inheritance": null,
@@ -168,6 +172,7 @@
         "partial": false
       },
       "KeyAlgorithm": {
+        "fragment": "dictionary KeyAlgorithm {\n  required DOMString name;\n};",
         "type": "dictionary",
         "name": "KeyAlgorithm",
         "inheritance": null,
@@ -192,6 +197,7 @@
         "partial": false
       },
       "KeyType": {
+        "fragment": "enum KeyType { \"public\", \"private\", \"secret\" };",
         "type": "enum",
         "name": "KeyType",
         "values": [
@@ -211,6 +217,7 @@
         "extAttrs": []
       },
       "KeyUsage": {
+        "fragment": "enum KeyUsage { \"encrypt\", \"decrypt\", \"sign\", \"verify\", \"deriveKey\", \"deriveBits\", \"wrapKey\", \"unwrapKey\" };",
         "type": "enum",
         "name": "KeyUsage",
         "values": [
@@ -250,6 +257,7 @@
         "extAttrs": []
       },
       "CryptoKey": {
+        "fragment": "[SecureContext,Exposed=(Window,Worker)]\ninterface CryptoKey {\n  readonly attribute KeyType type;\n  readonly attribute boolean extractable;\n  readonly attribute object algorithm;\n  readonly attribute object usages;\n};",
         "type": "interface",
         "name": "CryptoKey",
         "inheritance": null,
@@ -342,6 +350,7 @@
         "partial": false
       },
       "KeyFormat": {
+        "fragment": "enum KeyFormat { \"raw\", \"spki\", \"pkcs8\", \"jwk\" };",
         "type": "enum",
         "name": "KeyFormat",
         "values": [
@@ -365,6 +374,7 @@
         "extAttrs": []
       },
       "SubtleCrypto": {
+        "fragment": "[SecureContext,Exposed=(Window,Worker)]\ninterface SubtleCrypto {\n  Promise<any> encrypt(AlgorithmIdentifier algorithm,\n                       CryptoKey key,\n                       BufferSource data);\n  Promise<any> decrypt(AlgorithmIdentifier algorithm,\n                       CryptoKey key,\n                       BufferSource data);\n  Promise<any> sign(AlgorithmIdentifier algorithm,\n                    CryptoKey key,\n                    BufferSource data);\n  Promise<any> verify(AlgorithmIdentifier algorithm,\n                      CryptoKey key,\n                      BufferSource signature,\n                      BufferSource data);\n  Promise<any> digest(AlgorithmIdentifier algorithm,\n                      BufferSource data);\n\n  Promise<any> generateKey(AlgorithmIdentifier algorithm,\n                          boolean extractable,\n                          sequence<KeyUsage> keyUsages );\n  Promise<any> deriveKey(AlgorithmIdentifier algorithm,\n                         CryptoKey baseKey,\n                         AlgorithmIdentifier derivedKeyType,\n                         boolean extractable,\n                         sequence<KeyUsage> keyUsages );\n  Promise<ArrayBuffer> deriveBits(AlgorithmIdentifier algorithm,\n                          CryptoKey baseKey,\n                          unsigned long length);\n\n  Promise<CryptoKey> importKey(KeyFormat format,\n                         (BufferSource or JsonWebKey) keyData,\n                         AlgorithmIdentifier algorithm,\n                         boolean extractable,\n                         sequence<KeyUsage> keyUsages );\n  Promise<any> exportKey(KeyFormat format, CryptoKey key);\n\n  Promise<any> wrapKey(KeyFormat format,\n                       CryptoKey key,\n                       CryptoKey wrappingKey,\n                       AlgorithmIdentifier wrapAlgorithm);\n  Promise<CryptoKey> unwrapKey(KeyFormat format,\n                         BufferSource wrappedKey,\n                         CryptoKey unwrappingKey,\n                         AlgorithmIdentifier unwrapAlgorithm,\n                         AlgorithmIdentifier unwrappedKeyAlgorithm,\n                         boolean extractable,\n                         sequence<KeyUsage> keyUsages );\n};",
         "type": "interface",
         "name": "SubtleCrypto",
         "inheritance": null,
@@ -1454,6 +1464,7 @@
         "partial": false
       },
       "RsaOtherPrimesInfo": {
+        "fragment": "dictionary RsaOtherPrimesInfo {\n  // The following fields are defined in Section 6.3.2.7 of JSON Web Algorithms\n  DOMString r;\n  DOMString d;\n  DOMString t;\n};",
         "type": "dictionary",
         "name": "RsaOtherPrimesInfo",
         "inheritance": null,
@@ -1508,6 +1519,7 @@
         "partial": false
       },
       "JsonWebKey": {
+        "fragment": "dictionary JsonWebKey {\n  // The following fields are defined in Section 3.1 of JSON Web Key\n  DOMString kty;\n  DOMString use;\n  sequence<DOMString> key_ops;\n  DOMString alg;\n\n  // The following fields are defined in JSON Web Key Parameters Registration\n  boolean ext;\n\n  // The following fields are defined in Section 6 of JSON Web Algorithms\n  DOMString crv;\n  DOMString x;\n  DOMString y;\n  DOMString d;\n  DOMString n;\n  DOMString e;\n  DOMString p;\n  DOMString q;\n  DOMString dp;\n  DOMString dq;\n  DOMString qi;\n  sequence<RsaOtherPrimesInfo> oth;\n  DOMString k;\n};",
         "type": "dictionary",
         "name": "JsonWebKey",
         "inheritance": null,
@@ -1805,6 +1817,7 @@
         "partial": false
       },
       "BigInteger": {
+        "fragment": "typedef Uint8Array BigInteger;",
         "type": "typedef",
         "name": "BigInteger",
         "idlType": {
@@ -1818,6 +1831,7 @@
         "extAttrs": []
       },
       "CryptoKeyPair": {
+        "fragment": "dictionary CryptoKeyPair {\n  CryptoKey publicKey;\n  CryptoKey privateKey;\n};",
         "type": "dictionary",
         "name": "CryptoKeyPair",
         "inheritance": null,
@@ -1857,6 +1871,7 @@
         "partial": false
       },
       "RsaKeyGenParams": {
+        "fragment": "dictionary RsaKeyGenParams : Algorithm {\n  required [EnforceRange] unsigned long modulusLength;\n  required BigInteger publicExponent;\n};",
         "type": "dictionary",
         "name": "RsaKeyGenParams",
         "inheritance": "Algorithm",
@@ -1903,6 +1918,7 @@
         "partial": false
       },
       "RsaHashedKeyGenParams": {
+        "fragment": "dictionary RsaHashedKeyGenParams : RsaKeyGenParams {\n  required HashAlgorithmIdentifier hash;\n};",
         "type": "dictionary",
         "name": "RsaHashedKeyGenParams",
         "inheritance": "RsaKeyGenParams",
@@ -1927,6 +1943,7 @@
         "partial": false
       },
       "RsaKeyAlgorithm": {
+        "fragment": "dictionary RsaKeyAlgorithm : KeyAlgorithm {\n  required unsigned long modulusLength;\n  required BigInteger publicExponent;\n};",
         "type": "dictionary",
         "name": "RsaKeyAlgorithm",
         "inheritance": "KeyAlgorithm",
@@ -1966,6 +1983,7 @@
         "partial": false
       },
       "RsaHashedKeyAlgorithm": {
+        "fragment": "dictionary RsaHashedKeyAlgorithm : RsaKeyAlgorithm {\n  required KeyAlgorithm hash;\n};",
         "type": "dictionary",
         "name": "RsaHashedKeyAlgorithm",
         "inheritance": "RsaKeyAlgorithm",
@@ -1990,6 +2008,7 @@
         "partial": false
       },
       "RsaHashedImportParams": {
+        "fragment": "dictionary RsaHashedImportParams : Algorithm {\n  required HashAlgorithmIdentifier hash;\n};",
         "type": "dictionary",
         "name": "RsaHashedImportParams",
         "inheritance": "Algorithm",
@@ -2014,6 +2033,7 @@
         "partial": false
       },
       "RsaPssParams": {
+        "fragment": "dictionary RsaPssParams : Algorithm {\n  required [EnforceRange] unsigned long saltLength;\n};",
         "type": "dictionary",
         "name": "RsaPssParams",
         "inheritance": "Algorithm",
@@ -2045,6 +2065,7 @@
         "partial": false
       },
       "RsaOaepParams": {
+        "fragment": "dictionary RsaOaepParams : Algorithm {\n  BufferSource label;\n};",
         "type": "dictionary",
         "name": "RsaOaepParams",
         "inheritance": "Algorithm",
@@ -2069,6 +2090,7 @@
         "partial": false
       },
       "EcdsaParams": {
+        "fragment": "dictionary EcdsaParams : Algorithm {\n  required HashAlgorithmIdentifier hash;\n};",
         "type": "dictionary",
         "name": "EcdsaParams",
         "inheritance": "Algorithm",
@@ -2093,6 +2115,7 @@
         "partial": false
       },
       "NamedCurve": {
+        "fragment": "typedef DOMString NamedCurve;",
         "type": "typedef",
         "name": "NamedCurve",
         "idlType": {
@@ -2106,6 +2129,7 @@
         "extAttrs": []
       },
       "EcKeyGenParams": {
+        "fragment": "dictionary EcKeyGenParams : Algorithm {\n  required NamedCurve namedCurve;\n};",
         "type": "dictionary",
         "name": "EcKeyGenParams",
         "inheritance": "Algorithm",
@@ -2130,6 +2154,7 @@
         "partial": false
       },
       "EcKeyAlgorithm": {
+        "fragment": "dictionary EcKeyAlgorithm : KeyAlgorithm {\n  required NamedCurve namedCurve;\n};",
         "type": "dictionary",
         "name": "EcKeyAlgorithm",
         "inheritance": "KeyAlgorithm",
@@ -2154,6 +2179,7 @@
         "partial": false
       },
       "EcKeyImportParams": {
+        "fragment": "dictionary EcKeyImportParams : Algorithm {\n  required NamedCurve namedCurve;\n};",
         "type": "dictionary",
         "name": "EcKeyImportParams",
         "inheritance": "Algorithm",
@@ -2178,6 +2204,7 @@
         "partial": false
       },
       "EcdhKeyDeriveParams": {
+        "fragment": "dictionary EcdhKeyDeriveParams : Algorithm {\n  required CryptoKey public;\n};",
         "type": "dictionary",
         "name": "EcdhKeyDeriveParams",
         "inheritance": "Algorithm",
@@ -2202,6 +2229,7 @@
         "partial": false
       },
       "AesCtrParams": {
+        "fragment": "dictionary AesCtrParams : Algorithm {\n  required BufferSource counter;\n  required [EnforceRange] octet length;\n};",
         "type": "dictionary",
         "name": "AesCtrParams",
         "inheritance": "Algorithm",
@@ -2248,6 +2276,7 @@
         "partial": false
       },
       "AesKeyAlgorithm": {
+        "fragment": "dictionary AesKeyAlgorithm : KeyAlgorithm {\n  required unsigned short length;\n};",
         "type": "dictionary",
         "name": "AesKeyAlgorithm",
         "inheritance": "KeyAlgorithm",
@@ -2272,6 +2301,7 @@
         "partial": false
       },
       "AesKeyGenParams": {
+        "fragment": "dictionary AesKeyGenParams : Algorithm {\n  required [EnforceRange] unsigned short length;\n};",
         "type": "dictionary",
         "name": "AesKeyGenParams",
         "inheritance": "Algorithm",
@@ -2303,6 +2333,7 @@
         "partial": false
       },
       "AesDerivedKeyParams": {
+        "fragment": "dictionary AesDerivedKeyParams : Algorithm {\n  required [EnforceRange] unsigned short length;\n};",
         "type": "dictionary",
         "name": "AesDerivedKeyParams",
         "inheritance": "Algorithm",
@@ -2334,6 +2365,7 @@
         "partial": false
       },
       "AesCbcParams": {
+        "fragment": "dictionary AesCbcParams : Algorithm {\n  required BufferSource iv;\n};",
         "type": "dictionary",
         "name": "AesCbcParams",
         "inheritance": "Algorithm",
@@ -2358,6 +2390,7 @@
         "partial": false
       },
       "AesGcmParams": {
+        "fragment": "dictionary AesGcmParams : Algorithm {\n  required BufferSource iv;\n  BufferSource additionalData;\n  [EnforceRange] octet tagLength;\n};",
         "type": "dictionary",
         "name": "AesGcmParams",
         "inheritance": "Algorithm",
@@ -2419,6 +2452,7 @@
         "partial": false
       },
       "HmacImportParams": {
+        "fragment": "dictionary HmacImportParams : Algorithm {\n  required HashAlgorithmIdentifier hash;\n  [EnforceRange] unsigned long length;\n};",
         "type": "dictionary",
         "name": "HmacImportParams",
         "inheritance": "Algorithm",
@@ -2465,6 +2499,7 @@
         "partial": false
       },
       "HmacKeyAlgorithm": {
+        "fragment": "dictionary HmacKeyAlgorithm : KeyAlgorithm {\n  required KeyAlgorithm hash;\n  required unsigned long length;\n};",
         "type": "dictionary",
         "name": "HmacKeyAlgorithm",
         "inheritance": "KeyAlgorithm",
@@ -2504,6 +2539,7 @@
         "partial": false
       },
       "HmacKeyGenParams": {
+        "fragment": "dictionary HmacKeyGenParams : Algorithm {\n  required HashAlgorithmIdentifier hash;\n  [EnforceRange] unsigned long length;\n};",
         "type": "dictionary",
         "name": "HmacKeyGenParams",
         "inheritance": "Algorithm",
@@ -2550,6 +2586,7 @@
         "partial": false
       },
       "HkdfParams": {
+        "fragment": "dictionary HkdfParams : Algorithm {\n  required HashAlgorithmIdentifier hash;\n  required BufferSource salt;\n  required BufferSource info;\n};",
         "type": "dictionary",
         "name": "HkdfParams",
         "inheritance": "Algorithm",
@@ -2604,6 +2641,7 @@
         "partial": false
       },
       "Pbkdf2Params": {
+        "fragment": "dictionary Pbkdf2Params : Algorithm {\n  required BufferSource salt;\n  required [EnforceRange] unsigned long iterations;\n  required HashAlgorithmIdentifier hash;\n};",
         "type": "dictionary",
         "name": "Pbkdf2Params",
         "inheritance": "Algorithm",
@@ -2668,6 +2706,7 @@
     "idlExtendedNames": {
       "WindowOrWorkerGlobalScope": [
         {
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute Crypto crypto;\n};",
           "type": "interface mixin",
           "name": "WindowOrWorkerGlobalScope",
           "inheritance": null,

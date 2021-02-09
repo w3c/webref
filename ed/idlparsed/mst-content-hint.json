@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "RTCDegradationPreference": {
+        "fragment": "enum RTCDegradationPreference {\n  \"maintain-framerate\",\n  \"maintain-resolution\",\n  \"balanced\"\n};",
         "type": "enum",
         "name": "RTCDegradationPreference",
         "values": [
@@ -32,6 +33,7 @@
     "idlExtendedNames": {
       "MediaStreamTrack": [
         {
+          "fragment": "partial interface MediaStreamTrack {\n  attribute DOMString contentHint;\n};",
           "type": "interface",
           "name": "MediaStreamTrack",
           "inheritance": null,
@@ -58,6 +60,7 @@
       ],
       "RTCRtpSendParameters": [
         {
+          "fragment": "partial dictionary RTCRtpSendParameters {\n RTCDegradationPreference degradationPreference;\n};",
           "type": "dictionary",
           "name": "RTCRtpSendParameters",
           "inheritance": null,

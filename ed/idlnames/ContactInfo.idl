@@ -1,0 +1,8 @@
+// Source: Contact Picker API (https://wicg.github.io/contact-api/spec/)
+dictionary ContactInfo {
+    sequence<ContactAddress> address;
+    sequence<DOMString> email;
+    sequence<Blob> icon;
+    sequence<DOMString> name;
+    sequence<DOMString> tel;
+};

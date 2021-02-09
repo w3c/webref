@@ -1,0 +1,14 @@
+{
+  "name": "Memory",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  readonly attribute ArrayBuffer buffer;\n};",
+    "href": "https://webassembly.github.io/spec/js-api/#memory"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

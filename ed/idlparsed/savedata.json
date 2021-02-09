@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "NetworkInformationSaveData": {
+        "fragment": "interface mixin NetworkInformationSaveData {\n  [SameObject] readonly attribute boolean saveData;\n};",
         "type": "interface mixin",
         "name": "NetworkInformationSaveData",
         "inheritance": null,
@@ -44,8 +45,10 @@
     "idlExtendedNames": {
       "NetworkInformation": [
         {
-          "name": "NetworkInformation",
-          "type": "interface",
+          "fragment": "NetworkInformation includes NetworkInformationSaveData;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "NetworkInformation",
           "includes": "NetworkInformationSaveData"
         }
       ]

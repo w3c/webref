@@ -1,0 +1,58 @@
+{
+  "name": "GPUComputePipeline",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://gpuweb.github.io/gpuweb/"
+    },
+    "fragment": "[Serializable]\ninterface GPUComputePipeline {\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpucomputepipeline"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://gpuweb.github.io/gpuweb/"
+      },
+      "fragment": "GPUComputePipeline includes GPUObjectBase;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://gpuweb.github.io/gpuweb/"
+      },
+      "fragment": "GPUComputePipeline includes GPUPipelineBase;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "GPUObjectBase",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        },
+        "fragment": "interface mixin GPUObjectBase {\n    attribute USVString? label;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPUPipelineBase",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        },
+        "fragment": "interface mixin GPUPipelineBase {\n    GPUBindGroupLayout getBindGroupLayout(unsigned long index);\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpupipelinebase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

@@ -199,6 +199,7 @@
     },
     "idlNames": {
       "HTMLAllCollection": {
+        "fragment": "[Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface HTMLAllCollection {\n  readonly attribute unsigned long length;\n  getter Element (unsigned long index);\n  getter (HTMLCollection or Element)? namedItem(DOMString name);\n  (HTMLCollection or Element)? item(optional DOMString nameOrIndex);\n\n  // Note: HTMLAllCollection objects have a custom [[Call]] internal method and an [[IsHTMLDDA]] internal slot.\n};",
         "type": "interface",
         "name": "HTMLAllCollection",
         "inheritance": null,
@@ -369,6 +370,7 @@
         "partial": false
       },
       "HTMLFormControlsCollection": {
+        "fragment": "[Exposed=Window]\ninterface HTMLFormControlsCollection : HTMLCollection {\n  // inherits length and item()\n  getter (RadioNodeList or Element)? namedItem(DOMString name); // shadows inherited namedItem()\n};",
         "type": "interface",
         "name": "HTMLFormControlsCollection",
         "inheritance": "HTMLCollection",
@@ -437,6 +439,7 @@
         "partial": false
       },
       "RadioNodeList": {
+        "fragment": "[Exposed=Window]\ninterface RadioNodeList : NodeList {\n  attribute DOMString value;\n};",
         "type": "interface",
         "name": "RadioNodeList",
         "inheritance": "NodeList",
@@ -471,6 +474,7 @@
         "partial": false
       },
       "HTMLOptionsCollection": {
+        "fragment": "[Exposed=Window]\ninterface HTMLOptionsCollection : HTMLCollection {\n  // inherits item(), namedItem()\n  [CEReactions] attribute unsigned long length; // shadows inherited length\n  [CEReactions] setter undefined (unsigned long index, HTMLOptionElement? option);\n  [CEReactions] undefined add((HTMLOptionElement or HTMLOptGroupElement) element, optional (HTMLElement or long)? before = null);\n  [CEReactions] undefined remove(long index);\n  attribute long selectedIndex;\n};",
         "type": "interface",
         "name": "HTMLOptionsCollection",
         "inheritance": "HTMLCollection",
@@ -712,6 +716,7 @@
         "partial": false
       },
       "DOMStringList": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface DOMStringList {\n  readonly attribute unsigned long length;\n  getter DOMString? item(unsigned long index);\n  boolean contains(DOMString string);\n};",
         "type": "interface",
         "name": "DOMStringList",
         "inheritance": null,
@@ -817,6 +822,7 @@
         "partial": false
       },
       "DocumentReadyState": {
+        "fragment": "enum DocumentReadyState { \"loading\", \"interactive\", \"complete\" };",
         "type": "enum",
         "name": "DocumentReadyState",
         "values": [
@@ -836,6 +842,7 @@
         "extAttrs": []
       },
       "HTMLOrSVGScriptElement": {
+        "fragment": "typedef (HTMLScriptElement or SVGScriptElement) HTMLOrSVGScriptElement;",
         "type": "typedef",
         "name": "HTMLOrSVGScriptElement",
         "idlType": {
@@ -866,6 +873,7 @@
         "extAttrs": []
       },
       "HTMLElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLElement : Element {\n  [HTMLConstructor] constructor();\n\n  // metadata attributes\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString lang;\n  [CEReactions] attribute boolean translate;\n  [CEReactions] attribute DOMString dir;\n\n  // user interaction\n  [CEReactions] attribute boolean hidden;\n  undefined click();\n  [CEReactions] attribute DOMString accessKey;\n  readonly attribute DOMString accessKeyLabel;\n  [CEReactions] attribute boolean draggable;\n  [CEReactions] attribute boolean spellcheck;\n  [CEReactions] attribute DOMString autocapitalize;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerText;\n\n  ElementInternals attachInternals();\n};",
         "type": "interface",
         "name": "HTMLElement",
         "inheritance": "Element",
@@ -1169,6 +1177,7 @@
         "partial": false
       },
       "HTMLUnknownElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLUnknownElement : HTMLElement {\n  // Note: intentionally no [HTMLConstructor]\n};",
         "type": "interface",
         "name": "HTMLUnknownElement",
         "inheritance": "HTMLElement",
@@ -1187,6 +1196,7 @@
         "partial": false
       },
       "HTMLOrSVGElement": {
+        "fragment": "interface mixin HTMLOrSVGElement {\n  [SameObject] readonly attribute DOMStringMap dataset;\n  attribute DOMString nonce; // intentionally no [CEReactions]\n\n  [CEReactions] attribute boolean autofocus;\n  [CEReactions] attribute long tabIndex;\n  undefined focus(optional FocusOptions options = {});\n  undefined blur();\n};",
         "type": "interface mixin",
         "name": "HTMLOrSVGElement",
         "inheritance": null,
@@ -1326,6 +1336,7 @@
         "partial": false
       },
       "DOMStringMap": {
+        "fragment": "[Exposed=Window,\n LegacyOverrideBuiltIns]\ninterface DOMStringMap {\n  getter DOMString (DOMString name);\n  [CEReactions] setter undefined (DOMString name, DOMString value);\n  [CEReactions] deleter undefined (DOMString name);\n};",
         "type": "interface",
         "name": "DOMStringMap",
         "inheritance": null,
@@ -1477,6 +1488,7 @@
         "partial": false
       },
       "HTMLHtmlElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLHtmlElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLHtmlElement",
         "inheritance": "HTMLElement",
@@ -1508,6 +1520,7 @@
         "partial": false
       },
       "HTMLHeadElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLHeadElement : HTMLElement {\n  [HTMLConstructor] constructor();\n};",
         "type": "interface",
         "name": "HTMLHeadElement",
         "inheritance": "HTMLElement",
@@ -1539,6 +1552,7 @@
         "partial": false
       },
       "HTMLTitleElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLTitleElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString text;\n};",
         "type": "interface",
         "name": "HTMLTitleElement",
         "inheritance": "HTMLElement",
@@ -1592,6 +1606,7 @@
         "partial": false
       },
       "HTMLBaseElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLBaseElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString href;\n  [CEReactions] attribute DOMString target;\n};",
         "type": "interface",
         "name": "HTMLBaseElement",
         "inheritance": "HTMLElement",
@@ -1667,6 +1682,7 @@
         "partial": false
       },
       "HTMLLinkElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLLinkElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString href;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString rel;\n  [CEReactions] attribute DOMString as; // (default \"\")\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  [CEReactions] attribute DOMString media;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString hreflang;\n  [CEReactions] attribute DOMString type;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sizes;\n  [CEReactions] attribute USVString imageSrcset;\n  [CEReactions] attribute DOMString imageSizes;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute boolean disabled;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLLinkElement",
         "inheritance": "HTMLElement",
@@ -2024,6 +2040,7 @@
         "partial": false
       },
       "HTMLMetaElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLMetaElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString httpEquiv;\n  [CEReactions] attribute DOMString content;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLMetaElement",
         "inheritance": "HTMLElement",
@@ -2121,6 +2138,7 @@
         "partial": false
       },
       "HTMLStyleElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLStyleElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString media;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLStyleElement",
         "inheritance": "HTMLElement",
@@ -2174,6 +2192,7 @@
         "partial": false
       },
       "HTMLBodyElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLBodyElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLBodyElement",
         "inheritance": "HTMLElement",
@@ -2205,6 +2224,7 @@
         "partial": false
       },
       "HTMLHeadingElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLHeadingElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLHeadingElement",
         "inheritance": "HTMLElement",
@@ -2236,6 +2256,7 @@
         "partial": false
       },
       "HTMLParagraphElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLParagraphElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLParagraphElement",
         "inheritance": "HTMLElement",
@@ -2267,6 +2288,7 @@
         "partial": false
       },
       "HTMLHRElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLHRElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLHRElement",
         "inheritance": "HTMLElement",
@@ -2298,6 +2320,7 @@
         "partial": false
       },
       "HTMLPreElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLPreElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLPreElement",
         "inheritance": "HTMLElement",
@@ -2329,6 +2352,7 @@
         "partial": false
       },
       "HTMLQuoteElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLQuoteElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString cite;\n};",
         "type": "interface",
         "name": "HTMLQuoteElement",
         "inheritance": "HTMLElement",
@@ -2382,6 +2406,7 @@
         "partial": false
       },
       "HTMLOListElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLOListElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute boolean reversed;\n  [CEReactions] attribute long start;\n  [CEReactions] attribute DOMString type;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLOListElement",
         "inheritance": "HTMLElement",
@@ -2479,6 +2504,7 @@
         "partial": false
       },
       "HTMLUListElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLUListElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLUListElement",
         "inheritance": "HTMLElement",
@@ -2510,6 +2536,7 @@
         "partial": false
       },
       "HTMLMenuElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLMenuElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLMenuElement",
         "inheritance": "HTMLElement",
@@ -2541,6 +2568,7 @@
         "partial": false
       },
       "HTMLLIElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLLIElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute long value;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLLIElement",
         "inheritance": "HTMLElement",
@@ -2594,6 +2622,7 @@
         "partial": false
       },
       "HTMLDListElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLDListElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLDListElement",
         "inheritance": "HTMLElement",
@@ -2625,6 +2654,7 @@
         "partial": false
       },
       "HTMLDivElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLDivElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLDivElement",
         "inheritance": "HTMLElement",
@@ -2656,6 +2686,7 @@
         "partial": false
       },
       "HTMLAnchorElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLAnchorElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString target;\n  [CEReactions] attribute DOMString download;\n  [CEReactions] attribute USVString ping;\n  [CEReactions] attribute DOMString rel;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  [CEReactions] attribute DOMString hreflang;\n  [CEReactions] attribute DOMString type;\n\n  [CEReactions] attribute DOMString text;\n\n  [CEReactions] attribute DOMString referrerPolicy;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLAnchorElement",
         "inheritance": "HTMLElement",
@@ -2894,6 +2925,7 @@
         "partial": false
       },
       "HTMLDataElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLDataElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString value;\n};",
         "type": "interface",
         "name": "HTMLDataElement",
         "inheritance": "HTMLElement",
@@ -2947,6 +2979,7 @@
         "partial": false
       },
       "HTMLTimeElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLTimeElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString dateTime;\n};",
         "type": "interface",
         "name": "HTMLTimeElement",
         "inheritance": "HTMLElement",
@@ -3000,6 +3033,7 @@
         "partial": false
       },
       "HTMLSpanElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLSpanElement : HTMLElement {\n  [HTMLConstructor] constructor();\n};",
         "type": "interface",
         "name": "HTMLSpanElement",
         "inheritance": "HTMLElement",
@@ -3031,6 +3065,7 @@
         "partial": false
       },
       "HTMLBRElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLBRElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLBRElement",
         "inheritance": "HTMLElement",
@@ -3062,6 +3097,7 @@
         "partial": false
       },
       "HTMLHyperlinkElementUtils": {
+        "fragment": "interface mixin HTMLHyperlinkElementUtils {\n  [CEReactions] stringifier attribute USVString href;\n  readonly attribute USVString origin;\n  [CEReactions] attribute USVString protocol;\n  [CEReactions] attribute USVString username;\n  [CEReactions] attribute USVString password;\n  [CEReactions] attribute USVString host;\n  [CEReactions] attribute USVString hostname;\n  [CEReactions] attribute USVString port;\n  [CEReactions] attribute USVString pathname;\n  [CEReactions] attribute USVString search;\n  [CEReactions] attribute USVString hash;\n};",
         "type": "interface mixin",
         "name": "HTMLHyperlinkElementUtils",
         "inheritance": null,
@@ -3306,6 +3342,7 @@
         "partial": false
       },
       "HTMLModElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLModElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString cite;\n  [CEReactions] attribute DOMString dateTime;\n};",
         "type": "interface",
         "name": "HTMLModElement",
         "inheritance": "HTMLElement",
@@ -3381,6 +3418,7 @@
         "partial": false
       },
       "HTMLPictureElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLPictureElement : HTMLElement {\n  [HTMLConstructor] constructor();\n};",
         "type": "interface",
         "name": "HTMLPictureElement",
         "inheritance": "HTMLElement",
@@ -3412,6 +3450,7 @@
         "partial": false
       },
       "HTMLSourceElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLSourceElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute USVString srcset;\n  [CEReactions] attribute DOMString sizes;\n  [CEReactions] attribute DOMString media;\n};",
         "type": "interface",
         "name": "HTMLSourceElement",
         "inheritance": "HTMLElement",
@@ -3553,6 +3592,7 @@
         "partial": false
       },
       "HTMLImageElement": {
+        "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Image(optional unsigned long width, optional unsigned long height)]\ninterface HTMLImageElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString alt;\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute USVString srcset;\n  [CEReactions] attribute DOMString sizes;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString useMap;\n  [CEReactions] attribute boolean isMap;\n  [CEReactions] attribute unsigned long width;\n  [CEReactions] attribute unsigned long height;\n  readonly attribute unsigned long naturalWidth;\n  readonly attribute unsigned long naturalHeight;\n  readonly attribute boolean complete;\n  readonly attribute USVString currentSrc;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString decoding;\n  [CEReactions] attribute DOMString loading;\n\n  Promise<undefined> decode();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLImageElement",
         "inheritance": "HTMLElement",
@@ -3974,6 +4014,7 @@
         "partial": false
       },
       "HTMLIFrameElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLIFrameElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString srcdoc;\n  [CEReactions] attribute DOMString name;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList sandbox;\n  [CEReactions] attribute DOMString allow;\n  [CEReactions] attribute boolean allowFullscreen;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString loading;\n  readonly attribute Document? contentDocument;\n  readonly attribute WindowProxy? contentWindow;\n  Document? getSVGDocument();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLIFrameElement",
         "inheritance": "HTMLElement",
@@ -4279,6 +4320,7 @@
         "partial": false
       },
       "HTMLEmbedElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLEmbedElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n  Document? getSVGDocument();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLEmbedElement",
         "inheritance": "HTMLElement",
@@ -4413,6 +4455,7 @@
         "partial": false
       },
       "HTMLObjectElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLObjectElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString data;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString useMap;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n  readonly attribute Document? contentDocument;\n  readonly attribute WindowProxy? contentWindow;\n  Document? getSVGDocument();\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLObjectElement",
         "inheritance": "HTMLElement",
@@ -4743,6 +4786,7 @@
         "partial": false
       },
       "HTMLParamElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLParamElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString value;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLParamElement",
         "inheritance": "HTMLElement",
@@ -4818,6 +4862,7 @@
         "partial": false
       },
       "HTMLVideoElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLVideoElement : HTMLMediaElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute unsigned long width;\n  [CEReactions] attribute unsigned long height;\n  readonly attribute unsigned long videoWidth;\n  readonly attribute unsigned long videoHeight;\n  [CEReactions] attribute USVString poster;\n  [CEReactions] attribute boolean playsInline;\n};",
         "type": "interface",
         "name": "HTMLVideoElement",
         "inheritance": "HTMLMediaElement",
@@ -4967,6 +5012,7 @@
         "partial": false
       },
       "HTMLAudioElement": {
+        "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Audio(optional DOMString src)]\ninterface HTMLAudioElement : HTMLMediaElement {\n  [HTMLConstructor] constructor();\n};",
         "type": "interface",
         "name": "HTMLAudioElement",
         "inheritance": "HTMLMediaElement",
@@ -5024,6 +5070,7 @@
         "partial": false
       },
       "HTMLTrackElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLTrackElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString kind;\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString srclang;\n  [CEReactions] attribute DOMString label;\n  [CEReactions] attribute boolean default;\n\n  const unsigned short NONE = 0;\n  const unsigned short LOADING = 1;\n  const unsigned short LOADED = 2;\n  const unsigned short ERROR = 3;\n  readonly attribute unsigned short readyState;\n\n  readonly attribute TextTrack track;\n};",
         "type": "interface",
         "name": "HTMLTrackElement",
         "inheritance": "HTMLElement",
@@ -5263,6 +5310,7 @@
         "partial": false
       },
       "CanPlayTypeResult": {
+        "fragment": "enum CanPlayTypeResult { \"\" /* empty string */, \"maybe\", \"probably\" };",
         "type": "enum",
         "name": "CanPlayTypeResult",
         "values": [
@@ -5282,6 +5330,7 @@
         "extAttrs": []
       },
       "MediaProvider": {
+        "fragment": "typedef (MediaStream or MediaSource or Blob) MediaProvider;",
         "type": "typedef",
         "name": "MediaProvider",
         "idlType": {
@@ -5320,6 +5369,7 @@
         "extAttrs": []
       },
       "HTMLMediaElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLMediaElement : HTMLElement {\n\n  // error state\n  readonly attribute MediaError? error;\n\n  // network state\n  [CEReactions] attribute USVString src;\n  attribute MediaProvider? srcObject;\n  readonly attribute USVString currentSrc;\n  [CEReactions] attribute DOMString? crossOrigin;\n  const unsigned short NETWORK_EMPTY = 0;\n  const unsigned short NETWORK_IDLE = 1;\n  const unsigned short NETWORK_LOADING = 2;\n  const unsigned short NETWORK_NO_SOURCE = 3;\n  readonly attribute unsigned short networkState;\n  [CEReactions] attribute DOMString preload;\n  readonly attribute TimeRanges buffered;\n  undefined load();\n  CanPlayTypeResult canPlayType(DOMString type);\n\n  // ready state\n  const unsigned short HAVE_NOTHING = 0;\n  const unsigned short HAVE_METADATA = 1;\n  const unsigned short HAVE_CURRENT_DATA = 2;\n  const unsigned short HAVE_FUTURE_DATA = 3;\n  const unsigned short HAVE_ENOUGH_DATA = 4;\n  readonly attribute unsigned short readyState;\n  readonly attribute boolean seeking;\n\n  // playback state\n  attribute double currentTime;\n  undefined fastSeek(double time);\n  readonly attribute unrestricted double duration;\n  object getStartDate();\n  readonly attribute boolean paused;\n  attribute double defaultPlaybackRate;\n  attribute double playbackRate;\n  attribute boolean preservesPitch;\n  readonly attribute TimeRanges played;\n  readonly attribute TimeRanges seekable;\n  readonly attribute boolean ended;\n  [CEReactions] attribute boolean autoplay;\n  [CEReactions] attribute boolean loop;\n  Promise<undefined> play();\n  undefined pause();\n\n  // controls\n  [CEReactions] attribute boolean controls;\n  attribute double volume;\n  attribute boolean muted;\n  [CEReactions] attribute boolean defaultMuted;\n\n  // tracks\n  [SameObject] readonly attribute AudioTrackList audioTracks;\n  [SameObject] readonly attribute VideoTrackList videoTracks;\n  [SameObject] readonly attribute TextTrackList textTracks;\n  TextTrack addTextTrack(TextTrackKind kind, optional DOMString label = \"\", optional DOMString language = \"\");\n};",
         "type": "interface",
         "name": "HTMLMediaElement",
         "inheritance": "HTMLElement",
@@ -6185,6 +6235,7 @@
         "partial": false
       },
       "MediaError": {
+        "fragment": "[Exposed=Window]\ninterface MediaError {\n  const unsigned short MEDIA_ERR_ABORTED = 1;\n  const unsigned short MEDIA_ERR_NETWORK = 2;\n  const unsigned short MEDIA_ERR_DECODE = 3;\n  const unsigned short MEDIA_ERR_SRC_NOT_SUPPORTED = 4;\n\n  readonly attribute unsigned short code;\n  readonly attribute DOMString message;\n};",
         "type": "interface",
         "name": "MediaError",
         "inheritance": null,
@@ -6302,6 +6353,7 @@
         "partial": false
       },
       "AudioTrackList": {
+        "fragment": "[Exposed=Window]\ninterface AudioTrackList : EventTarget {\n  readonly attribute unsigned long length;\n  getter AudioTrack (unsigned long index);\n  AudioTrack? getTrackById(DOMString id);\n\n  attribute EventHandler onchange;\n  attribute EventHandler onaddtrack;\n  attribute EventHandler onremovetrack;\n};",
         "type": "interface",
         "name": "AudioTrackList",
         "inheritance": "EventTarget",
@@ -6445,6 +6497,7 @@
         "partial": false
       },
       "AudioTrack": {
+        "fragment": "[Exposed=Window]\ninterface AudioTrack {\n  readonly attribute DOMString id;\n  readonly attribute DOMString kind;\n  readonly attribute DOMString label;\n  readonly attribute DOMString language;\n  attribute boolean enabled;\n};",
         "type": "interface",
         "name": "AudioTrack",
         "inheritance": null,
@@ -6539,6 +6592,7 @@
         "partial": false
       },
       "VideoTrackList": {
+        "fragment": "[Exposed=Window]\ninterface VideoTrackList : EventTarget {\n  readonly attribute unsigned long length;\n  getter VideoTrack (unsigned long index);\n  VideoTrack? getTrackById(DOMString id);\n  readonly attribute long selectedIndex;\n\n  attribute EventHandler onchange;\n  attribute EventHandler onaddtrack;\n  attribute EventHandler onremovetrack;\n};",
         "type": "interface",
         "name": "VideoTrackList",
         "inheritance": "EventTarget",
@@ -6697,6 +6751,7 @@
         "partial": false
       },
       "VideoTrack": {
+        "fragment": "[Exposed=Window]\ninterface VideoTrack {\n  readonly attribute DOMString id;\n  readonly attribute DOMString kind;\n  readonly attribute DOMString label;\n  readonly attribute DOMString language;\n  attribute boolean selected;\n};",
         "type": "interface",
         "name": "VideoTrack",
         "inheritance": null,
@@ -6791,6 +6846,7 @@
         "partial": false
       },
       "TextTrackList": {
+        "fragment": "[Exposed=Window]\ninterface TextTrackList : EventTarget {\n  readonly attribute unsigned long length;\n  getter TextTrack (unsigned long index);\n  TextTrack? getTrackById(DOMString id);\n\n  attribute EventHandler onchange;\n  attribute EventHandler onaddtrack;\n  attribute EventHandler onremovetrack;\n};",
         "type": "interface",
         "name": "TextTrackList",
         "inheritance": "EventTarget",
@@ -6934,6 +6990,7 @@
         "partial": false
       },
       "TextTrackMode": {
+        "fragment": "enum TextTrackMode { \"disabled\",  \"hidden\",  \"showing\" };",
         "type": "enum",
         "name": "TextTrackMode",
         "values": [
@@ -6953,6 +7010,7 @@
         "extAttrs": []
       },
       "TextTrackKind": {
+        "fragment": "enum TextTrackKind { \"subtitles\",  \"captions\",  \"descriptions\",  \"chapters\",  \"metadata\" };",
         "type": "enum",
         "name": "TextTrackKind",
         "values": [
@@ -6980,6 +7038,7 @@
         "extAttrs": []
       },
       "TextTrack": {
+        "fragment": "[Exposed=Window]\ninterface TextTrack : EventTarget {\n  readonly attribute TextTrackKind kind;\n  readonly attribute DOMString label;\n  readonly attribute DOMString language;\n\n  readonly attribute DOMString id;\n  readonly attribute DOMString inBandMetadataTrackDispatchType;\n\n  attribute TextTrackMode mode;\n\n  readonly attribute TextTrackCueList? cues;\n  readonly attribute TextTrackCueList? activeCues;\n\n  undefined addCue(TextTrackCue cue);\n  undefined removeCue(TextTrackCue cue);\n\n  attribute EventHandler oncuechange;\n};",
         "type": "interface",
         "name": "TextTrack",
         "inheritance": "EventTarget",
@@ -7198,6 +7257,7 @@
         "partial": false
       },
       "TextTrackCueList": {
+        "fragment": "[Exposed=Window]\ninterface TextTrackCueList {\n  readonly attribute unsigned long length;\n  getter TextTrackCue (unsigned long index);\n  TextTrackCue? getCueById(DOMString id);\n};",
         "type": "interface",
         "name": "TextTrackCueList",
         "inheritance": null,
@@ -7296,6 +7356,7 @@
         "partial": false
       },
       "TextTrackCue": {
+        "fragment": "[Exposed=Window]\ninterface TextTrackCue : EventTarget {\n  readonly attribute TextTrack? track;\n\n  attribute DOMString id;\n  attribute double startTime;\n  attribute double endTime;\n  attribute boolean pauseOnExit;\n\n  attribute EventHandler onenter;\n  attribute EventHandler onexit;\n};",
         "type": "interface",
         "name": "TextTrackCue",
         "inheritance": "EventTarget",
@@ -7420,6 +7481,7 @@
         "partial": false
       },
       "TimeRanges": {
+        "fragment": "[Exposed=Window]\ninterface TimeRanges {\n  readonly attribute unsigned long length;\n  double start(unsigned long index);\n  double end(unsigned long index);\n};",
         "type": "interface",
         "name": "TimeRanges",
         "inheritance": null,
@@ -7518,6 +7580,7 @@
         "partial": false
       },
       "TrackEvent": {
+        "fragment": "[Exposed=Window]\ninterface TrackEvent : Event {\n  constructor(DOMString type, optional TrackEventInit eventInitDict = {});\n\n  readonly attribute (VideoTrack or AudioTrack or TextTrack)? track;\n};",
         "type": "interface",
         "name": "TrackEvent",
         "inheritance": "Event",
@@ -7617,6 +7680,7 @@
         "partial": false
       },
       "TrackEventInit": {
+        "fragment": "dictionary TrackEventInit : EventInit {\n  (VideoTrack or AudioTrack or TextTrack)? track = null;\n};",
         "type": "dictionary",
         "name": "TrackEventInit",
         "inheritance": "EventInit",
@@ -7668,6 +7732,7 @@
         "partial": false
       },
       "HTMLMapElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLMapElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  [SameObject] readonly attribute HTMLCollection areas;\n};",
         "type": "interface",
         "name": "HTMLMapElement",
         "inheritance": "HTMLElement",
@@ -7743,6 +7808,7 @@
         "partial": false
       },
       "HTMLAreaElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLAreaElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString alt;\n  [CEReactions] attribute DOMString coords;\n  [CEReactions] attribute DOMString shape;\n  [CEReactions] attribute DOMString target;\n  [CEReactions] attribute DOMString download;\n  [CEReactions] attribute USVString ping;\n  [CEReactions] attribute DOMString rel;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  [CEReactions] attribute DOMString referrerPolicy;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLAreaElement",
         "inheritance": "HTMLElement",
@@ -7981,6 +8047,7 @@
         "partial": false
       },
       "HTMLTableElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLTableElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute HTMLTableCaptionElement? caption;\n  HTMLTableCaptionElement createCaption();\n  [CEReactions] undefined deleteCaption();\n\n  [CEReactions] attribute HTMLTableSectionElement? tHead;\n  HTMLTableSectionElement createTHead();\n  [CEReactions] undefined deleteTHead();\n\n  [CEReactions] attribute HTMLTableSectionElement? tFoot;\n  HTMLTableSectionElement createTFoot();\n  [CEReactions] undefined deleteTFoot();\n\n  [SameObject] readonly attribute HTMLCollection tBodies;\n  HTMLTableSectionElement createTBody();\n\n  [SameObject] readonly attribute HTMLCollection rows;\n  HTMLTableRowElement insertRow(optional long index = -1);\n  [CEReactions] undefined deleteRow(long index);\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLTableElement",
         "inheritance": "HTMLElement",
@@ -8322,6 +8389,7 @@
         "partial": false
       },
       "HTMLTableCaptionElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLTableCaptionElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLTableCaptionElement",
         "inheritance": "HTMLElement",
@@ -8353,6 +8421,7 @@
         "partial": false
       },
       "HTMLTableColElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLTableColElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute unsigned long span;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLTableColElement",
         "inheritance": "HTMLElement",
@@ -8406,6 +8475,7 @@
         "partial": false
       },
       "HTMLTableSectionElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLTableSectionElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [SameObject] readonly attribute HTMLCollection rows;\n  HTMLTableRowElement insertRow(optional long index = -1);\n  [CEReactions] undefined deleteRow(long index);\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLTableSectionElement",
         "inheritance": "HTMLElement",
@@ -8533,6 +8603,7 @@
         "partial": false
       },
       "HTMLTableRowElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLTableRowElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute long rowIndex;\n  readonly attribute long sectionRowIndex;\n  [SameObject] readonly attribute HTMLCollection cells;\n  HTMLTableCellElement insertCell(optional long index = -1);\n  [CEReactions] undefined deleteCell(long index);\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLTableRowElement",
         "inheritance": "HTMLElement",
@@ -8690,6 +8761,7 @@
         "partial": false
       },
       "HTMLTableCellElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLTableCellElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute unsigned long colSpan;\n  [CEReactions] attribute unsigned long rowSpan;\n  [CEReactions] attribute DOMString headers;\n  readonly attribute long cellIndex;\n\n  [CEReactions] attribute DOMString scope; // only conforming for th elements\n  [CEReactions] attribute DOMString abbr;  // only conforming for th elements\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLTableCellElement",
         "inheritance": "HTMLElement",
@@ -8846,6 +8918,7 @@
         "partial": false
       },
       "HTMLFormElement": {
+        "fragment": "[Exposed=Window,\n LegacyOverrideBuiltIns,\n LegacyUnenumerableNamedProperties]\ninterface HTMLFormElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString acceptCharset;\n  [CEReactions] attribute USVString action;\n  [CEReactions] attribute DOMString autocomplete;\n  [CEReactions] attribute DOMString enctype;\n  [CEReactions] attribute DOMString encoding;\n  [CEReactions] attribute DOMString method;\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute boolean noValidate;\n  [CEReactions] attribute DOMString target;\n  [CEReactions] attribute DOMString rel;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n\n  [SameObject] readonly attribute HTMLFormControlsCollection elements;\n  readonly attribute unsigned long length;\n  getter Element (unsigned long index);\n  getter (RadioNodeList or Element) (DOMString name);\n\n  undefined submit();\n  undefined requestSubmit(optional HTMLElement? submitter = null);\n  [CEReactions] undefined reset();\n  boolean checkValidity();\n  boolean reportValidity();\n};",
         "type": "interface",
         "name": "HTMLFormElement",
         "inheritance": "HTMLElement",
@@ -9359,6 +9432,7 @@
         "partial": false
       },
       "HTMLLabelElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLLabelElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute HTMLFormElement? form;\n  [CEReactions] attribute DOMString htmlFor;\n  readonly attribute HTMLElement? control;\n};",
         "type": "interface",
         "name": "HTMLLabelElement",
         "inheritance": "HTMLElement",
@@ -9442,6 +9516,7 @@
         "partial": false
       },
       "HTMLInputElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLInputElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString accept;\n  [CEReactions] attribute DOMString alt;\n  [CEReactions] attribute DOMString autocomplete;\n  [CEReactions] attribute boolean defaultChecked;\n  attribute boolean checked;\n  [CEReactions] attribute DOMString dirName;\n  [CEReactions] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  attribute FileList? files;\n  [CEReactions] attribute USVString formAction;\n  [CEReactions] attribute DOMString formEnctype;\n  [CEReactions] attribute DOMString formMethod;\n  [CEReactions] attribute boolean formNoValidate;\n  [CEReactions] attribute DOMString formTarget;\n  [CEReactions] attribute unsigned long height;\n  attribute boolean indeterminate;\n  readonly attribute HTMLElement? list;\n  [CEReactions] attribute DOMString max;\n  [CEReactions] attribute long maxLength;\n  [CEReactions] attribute DOMString min;\n  [CEReactions] attribute long minLength;\n  [CEReactions] attribute boolean multiple;\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString pattern;\n  [CEReactions] attribute DOMString placeholder;\n  [CEReactions] attribute boolean readOnly;\n  [CEReactions] attribute boolean required;\n  [CEReactions] attribute unsigned long size;\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString step;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute DOMString defaultValue;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString value;\n  attribute object? valueAsDate;\n  attribute unrestricted double valueAsNumber;\n  [CEReactions] attribute unsigned long width;\n\n  undefined stepUp(optional long n = 1);\n  undefined stepDown(optional long n = 1);\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  readonly attribute NodeList? labels;\n\n  undefined select();\n  attribute unsigned long? selectionStart;\n  attribute unsigned long? selectionEnd;\n  attribute DOMString? selectionDirection;\n  undefined setRangeText(DOMString replacement);\n  undefined setRangeText(DOMString replacement, unsigned long start, unsigned long end, optional SelectionMode selectionMode = \"preserve\");\n  undefined setSelectionRange(unsigned long start, unsigned long end, optional DOMString direction);\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLInputElement",
         "inheritance": "HTMLElement",
@@ -10654,6 +10729,7 @@
         "partial": false
       },
       "HTMLButtonElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLButtonElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions] attribute USVString formAction;\n  [CEReactions] attribute DOMString formEnctype;\n  [CEReactions] attribute DOMString formMethod;\n  [CEReactions] attribute boolean formNoValidate;\n  [CEReactions] attribute DOMString formTarget;\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute DOMString value;\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  readonly attribute NodeList labels;\n};",
         "type": "interface",
         "name": "HTMLButtonElement",
         "inheritance": "HTMLElement",
@@ -11020,6 +11096,7 @@
         "partial": false
       },
       "HTMLSelectElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLSelectElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString autocomplete;\n  [CEReactions] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions] attribute boolean multiple;\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute boolean required;\n  [CEReactions] attribute unsigned long size;\n\n  readonly attribute DOMString type;\n\n  [SameObject] readonly attribute HTMLOptionsCollection options;\n  [CEReactions] attribute unsigned long length;\n  getter Element? item(unsigned long index);\n  HTMLOptionElement? namedItem(DOMString name);\n  [CEReactions] undefined add((HTMLOptionElement or HTMLOptGroupElement) element, optional (HTMLElement or long)? before = null);\n  [CEReactions] undefined remove(); // ChildNode overload\n  [CEReactions] undefined remove(long index);\n  [CEReactions] setter undefined (unsigned long index, HTMLOptionElement? option);\n\n  [SameObject] readonly attribute HTMLCollection selectedOptions;\n  attribute long selectedIndex;\n  attribute DOMString value;\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  readonly attribute NodeList labels;\n};",
         "type": "interface",
         "name": "HTMLSelectElement",
         "inheritance": "HTMLElement",
@@ -11702,6 +11779,7 @@
         "partial": false
       },
       "HTMLDataListElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLDataListElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [SameObject] readonly attribute HTMLCollection options;\n};",
         "type": "interface",
         "name": "HTMLDataListElement",
         "inheritance": "HTMLElement",
@@ -11755,6 +11833,7 @@
         "partial": false
       },
       "HTMLOptGroupElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLOptGroupElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute boolean disabled;\n  [CEReactions] attribute DOMString label;\n};",
         "type": "interface",
         "name": "HTMLOptGroupElement",
         "inheritance": "HTMLElement",
@@ -11830,6 +11909,7 @@
         "partial": false
       },
       "HTMLOptionElement": {
+        "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Option(optional DOMString text = \"\", optional DOMString value, optional boolean defaultSelected = false, optional boolean selected = false)]\ninterface HTMLOptionElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions] attribute DOMString label;\n  [CEReactions] attribute boolean defaultSelected;\n  attribute boolean selected;\n  [CEReactions] attribute DOMString value;\n\n  [CEReactions] attribute DOMString text;\n  readonly attribute long index;\n};",
         "type": "interface",
         "name": "HTMLOptionElement",
         "inheritance": "HTMLElement",
@@ -12099,6 +12179,7 @@
         "partial": false
       },
       "HTMLTextAreaElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLTextAreaElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString autocomplete;\n  [CEReactions] attribute unsigned long cols;\n  [CEReactions] attribute DOMString dirName;\n  [CEReactions] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions] attribute long maxLength;\n  [CEReactions] attribute long minLength;\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString placeholder;\n  [CEReactions] attribute boolean readOnly;\n  [CEReactions] attribute boolean required;\n  [CEReactions] attribute unsigned long rows;\n  [CEReactions] attribute DOMString wrap;\n\n  readonly attribute DOMString type;\n  [CEReactions] attribute DOMString defaultValue;\n  attribute [LegacyNullToEmptyString] DOMString value;\n  readonly attribute unsigned long textLength;\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  readonly attribute NodeList labels;\n\n  undefined select();\n  attribute unsigned long selectionStart;\n  attribute unsigned long selectionEnd;\n  attribute DOMString selectionDirection;\n  undefined setRangeText(DOMString replacement);\n  undefined setRangeText(DOMString replacement, unsigned long start, unsigned long end, optional SelectionMode selectionMode = \"preserve\");\n  undefined setSelectionRange(unsigned long start, unsigned long end, optional DOMString direction);\n};",
         "type": "interface",
         "name": "HTMLTextAreaElement",
         "inheritance": "HTMLElement",
@@ -12844,6 +12925,7 @@
         "partial": false
       },
       "HTMLOutputElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLOutputElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList htmlFor;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions] attribute DOMString name;\n\n  readonly attribute DOMString type;\n  [CEReactions] attribute DOMString defaultValue;\n  [CEReactions] attribute DOMString value;\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  readonly attribute NodeList labels;\n};",
         "type": "interface",
         "name": "HTMLOutputElement",
         "inheritance": "HTMLElement",
@@ -13124,6 +13206,7 @@
         "partial": false
       },
       "HTMLProgressElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLProgressElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute double value;\n  [CEReactions] attribute double max;\n  readonly attribute double position;\n  readonly attribute NodeList labels;\n};",
         "type": "interface",
         "name": "HTMLProgressElement",
         "inheritance": "HTMLElement",
@@ -13229,6 +13312,7 @@
         "partial": false
       },
       "HTMLMeterElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLMeterElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute double value;\n  [CEReactions] attribute double min;\n  [CEReactions] attribute double max;\n  [CEReactions] attribute double low;\n  [CEReactions] attribute double high;\n  [CEReactions] attribute double optimum;\n  readonly attribute NodeList labels;\n};",
         "type": "interface",
         "name": "HTMLMeterElement",
         "inheritance": "HTMLElement",
@@ -13407,6 +13491,7 @@
         "partial": false
       },
       "HTMLFieldSetElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLFieldSetElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute boolean disabled;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions] attribute DOMString name;\n\n  readonly attribute DOMString type;\n\n  [SameObject] readonly attribute HTMLCollection elements;\n\n  readonly attribute boolean willValidate;\n  [SameObject] readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n};",
         "type": "interface",
         "name": "HTMLFieldSetElement",
         "inheritance": "HTMLElement",
@@ -13648,6 +13733,7 @@
         "partial": false
       },
       "HTMLLegendElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLLegendElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute HTMLFormElement? form;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLLegendElement",
         "inheritance": "HTMLElement",
@@ -13694,6 +13780,7 @@
         "partial": false
       },
       "SelectionMode": {
+        "fragment": "enum SelectionMode {\n  \"select\",\n  \"start\",\n  \"end\",\n  \"preserve\" // default\n};",
         "type": "enum",
         "name": "SelectionMode",
         "values": [
@@ -13717,6 +13804,7 @@
         "extAttrs": []
       },
       "ValidityState": {
+        "fragment": "[Exposed=Window]\ninterface ValidityState {\n  readonly attribute boolean valueMissing;\n  readonly attribute boolean typeMismatch;\n  readonly attribute boolean patternMismatch;\n  readonly attribute boolean tooLong;\n  readonly attribute boolean tooShort;\n  readonly attribute boolean rangeUnderflow;\n  readonly attribute boolean rangeOverflow;\n  readonly attribute boolean stepMismatch;\n  readonly attribute boolean badInput;\n  readonly attribute boolean customError;\n  readonly attribute boolean valid;\n};",
         "type": "interface",
         "name": "ValidityState",
         "inheritance": null,
@@ -13901,6 +13989,7 @@
         "partial": false
       },
       "SubmitEvent": {
+        "fragment": "[Exposed=Window]\ninterface SubmitEvent : Event {\n  constructor(DOMString type, optional SubmitEventInit eventInitDict = {});\n\n  readonly attribute HTMLElement? submitter;\n};",
         "type": "interface",
         "name": "SubmitEvent",
         "inheritance": "Event",
@@ -13975,6 +14064,7 @@
         "partial": false
       },
       "SubmitEventInit": {
+        "fragment": "dictionary SubmitEventInit : EventInit {\n  HTMLElement? submitter = null;\n};",
         "type": "dictionary",
         "name": "SubmitEventInit",
         "inheritance": "EventInit",
@@ -14001,6 +14091,7 @@
         "partial": false
       },
       "FormDataEvent": {
+        "fragment": "[Exposed=Window]\ninterface FormDataEvent : Event {\n  constructor(DOMString type, FormDataEventInit eventInitDict);\n\n  readonly attribute FormData formData;\n};",
         "type": "interface",
         "name": "FormDataEvent",
         "inheritance": "Event",
@@ -14073,6 +14164,7 @@
         "partial": false
       },
       "FormDataEventInit": {
+        "fragment": "dictionary FormDataEventInit : EventInit {\n  required FormData formData;\n};",
         "type": "dictionary",
         "name": "FormDataEventInit",
         "inheritance": "EventInit",
@@ -14097,6 +14189,7 @@
         "partial": false
       },
       "HTMLDetailsElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLDetailsElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute boolean open;\n};",
         "type": "interface",
         "name": "HTMLDetailsElement",
         "inheritance": "HTMLElement",
@@ -14150,6 +14243,7 @@
         "partial": false
       },
       "HTMLDialogElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLDialogElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute boolean open;\n  attribute DOMString returnValue;\n  [CEReactions] undefined show();\n  [CEReactions] undefined showModal();\n  [CEReactions] undefined close(optional DOMString returnValue);\n};",
         "type": "interface",
         "name": "HTMLDialogElement",
         "inheritance": "HTMLElement",
@@ -14301,6 +14395,7 @@
         "partial": false
       },
       "HTMLScriptElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLScriptElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute boolean noModule;\n  [CEReactions] attribute boolean async;\n  [CEReactions] attribute boolean defer;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString text;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString referrerPolicy;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLScriptElement",
         "inheritance": "HTMLElement",
@@ -14530,6 +14625,7 @@
         "partial": false
       },
       "HTMLTemplateElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLTemplateElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute DocumentFragment content;\n};",
         "type": "interface",
         "name": "HTMLTemplateElement",
         "inheritance": "HTMLElement",
@@ -14576,6 +14672,7 @@
         "partial": false
       },
       "HTMLSlotElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLSlotElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  sequence<Node> assignedNodes(optional AssignedNodesOptions options = {});\n  sequence<Element> assignedElements(optional AssignedNodesOptions options = {});\n};",
         "type": "interface",
         "name": "HTMLSlotElement",
         "inheritance": "HTMLElement",
@@ -14715,6 +14812,7 @@
         "partial": false
       },
       "AssignedNodesOptions": {
+        "fragment": "dictionary AssignedNodesOptions {\n  boolean flatten = false;\n};",
         "type": "dictionary",
         "name": "AssignedNodesOptions",
         "inheritance": null,
@@ -14742,6 +14840,7 @@
         "partial": false
       },
       "RenderingContext": {
+        "fragment": "typedef (CanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext) RenderingContext;",
         "type": "typedef",
         "name": "RenderingContext",
         "idlType": {
@@ -14788,6 +14887,7 @@
         "extAttrs": []
       },
       "HTMLCanvasElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLCanvasElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute unsigned long width;\n  [CEReactions] attribute unsigned long height;\n\n  RenderingContext? getContext(DOMString contextId, optional any options = null);\n\n  USVString toDataURL(optional DOMString type = \"image/png\", optional any quality);\n  undefined toBlob(BlobCallback _callback, optional DOMString type = \"image/png\", optional any quality);\n  OffscreenCanvas transferControlToOffscreen();\n};",
         "type": "interface",
         "name": "HTMLCanvasElement",
         "inheritance": "HTMLElement",
@@ -15046,6 +15146,7 @@
         "partial": false
       },
       "BlobCallback": {
+        "fragment": "callback BlobCallback = undefined (Blob? blob);",
         "type": "callback",
         "name": "BlobCallback",
         "idlType": {
@@ -15077,6 +15178,7 @@
         "extAttrs": []
       },
       "HTMLOrSVGImageElement": {
+        "fragment": "typedef (HTMLImageElement or\n         SVGImageElement) HTMLOrSVGImageElement;",
         "type": "typedef",
         "name": "HTMLOrSVGImageElement",
         "idlType": {
@@ -15107,6 +15209,7 @@
         "extAttrs": []
       },
       "CanvasImageSource": {
+        "fragment": "typedef (HTMLOrSVGImageElement or\n         HTMLVideoElement or\n         HTMLCanvasElement or\n         ImageBitmap or\n         OffscreenCanvas) CanvasImageSource;",
         "type": "typedef",
         "name": "CanvasImageSource",
         "idlType": {
@@ -15161,6 +15264,7 @@
         "extAttrs": []
       },
       "CanvasFillRule": {
+        "fragment": "enum CanvasFillRule { \"nonzero\", \"evenodd\" };",
         "type": "enum",
         "name": "CanvasFillRule",
         "values": [
@@ -15176,6 +15280,7 @@
         "extAttrs": []
       },
       "CanvasRenderingContext2DSettings": {
+        "fragment": "dictionary CanvasRenderingContext2DSettings {\n  boolean alpha = true;\n  boolean desynchronized = false;\n};",
         "type": "dictionary",
         "name": "CanvasRenderingContext2DSettings",
         "inheritance": null,
@@ -15221,6 +15326,7 @@
         "partial": false
       },
       "ImageSmoothingQuality": {
+        "fragment": "enum ImageSmoothingQuality { \"low\", \"medium\", \"high\" };",
         "type": "enum",
         "name": "ImageSmoothingQuality",
         "values": [
@@ -15240,6 +15346,7 @@
         "extAttrs": []
       },
       "CanvasRenderingContext2D": {
+        "fragment": "[Exposed=Window]\ninterface CanvasRenderingContext2D {\n  // back-reference to the canvas\n  readonly attribute HTMLCanvasElement canvas;\n\n  CanvasRenderingContext2DSettings getContextAttributes();\n};",
         "type": "interface",
         "name": "CanvasRenderingContext2D",
         "inheritance": null,
@@ -15289,6 +15396,7 @@
         "partial": false
       },
       "CanvasState": {
+        "fragment": "interface mixin CanvasState {\n  // state\n  undefined save(); // push state on state stack\n  undefined restore(); // pop state stack and restore state\n};",
         "type": "interface mixin",
         "name": "CanvasState",
         "inheritance": null,
@@ -15328,6 +15436,7 @@
         "partial": false
       },
       "CanvasTransform": {
+        "fragment": "interface mixin CanvasTransform {\n  // transformations (default transform is the identity matrix)\n  undefined scale(unrestricted double x, unrestricted double y);\n  undefined rotate(unrestricted double angle);\n  undefined translate(unrestricted double x, unrestricted double y);\n  undefined transform(unrestricted double a, unrestricted double b, unrestricted double c, unrestricted double d, unrestricted double e, unrestricted double f);\n\n  [NewObject] DOMMatrix getTransform();\n  undefined setTransform(unrestricted double a, unrestricted double b, unrestricted double c, unrestricted double d, unrestricted double e, unrestricted double f);\n  undefined setTransform(optional DOMMatrix2DInit transform = {});\n  undefined resetTransform();\n\n};",
         "type": "interface mixin",
         "name": "CanvasTransform",
         "inheritance": null,
@@ -15760,6 +15869,7 @@
         "partial": false
       },
       "CanvasCompositing": {
+        "fragment": "interface mixin CanvasCompositing {\n  // compositing\n  attribute unrestricted double globalAlpha; // (default 1.0)\n  attribute DOMString globalCompositeOperation; // (default source-over)\n};",
         "type": "interface mixin",
         "name": "CanvasCompositing",
         "inheritance": null,
@@ -15799,6 +15909,7 @@
         "partial": false
       },
       "CanvasImageSmoothing": {
+        "fragment": "interface mixin CanvasImageSmoothing {\n  // image smoothing\n  attribute boolean imageSmoothingEnabled; // (default true)\n  attribute ImageSmoothingQuality imageSmoothingQuality; // (default low)\n\n};",
         "type": "interface mixin",
         "name": "CanvasImageSmoothing",
         "inheritance": null,
@@ -15838,6 +15949,7 @@
         "partial": false
       },
       "CanvasFillStrokeStyles": {
+        "fragment": "interface mixin CanvasFillStrokeStyles {\n  // colors and styles (see also the CanvasPathDrawingStyles and CanvasTextDrawingStyles interfaces)\n  attribute (DOMString or CanvasGradient or CanvasPattern) strokeStyle; // (default black)\n  attribute (DOMString or CanvasGradient or CanvasPattern) fillStyle; // (default black)\n  CanvasGradient createLinearGradient(double x0, double y0, double x1, double y1);\n  CanvasGradient createRadialGradient(double x0, double y0, double r0, double x1, double y1, double r1);\n  CanvasPattern? createPattern(CanvasImageSource image, [LegacyNullToEmptyString] DOMString repetition);\n\n};",
         "type": "interface mixin",
         "name": "CanvasFillStrokeStyles",
         "inheritance": null,
@@ -16174,6 +16286,7 @@
         "partial": false
       },
       "CanvasShadowStyles": {
+        "fragment": "interface mixin CanvasShadowStyles {\n  // shadows\n  attribute unrestricted double shadowOffsetX; // (default 0)\n  attribute unrestricted double shadowOffsetY; // (default 0)\n  attribute unrestricted double shadowBlur; // (default 0)\n  attribute DOMString shadowColor; // (default transparent black)\n};",
         "type": "interface mixin",
         "name": "CanvasShadowStyles",
         "inheritance": null,
@@ -16243,6 +16356,7 @@
         "partial": false
       },
       "CanvasFilters": {
+        "fragment": "interface mixin CanvasFilters {\n  // filters\n  attribute DOMString filter; // (default \"none\")\n};",
         "type": "interface mixin",
         "name": "CanvasFilters",
         "inheritance": null,
@@ -16267,6 +16381,7 @@
         "partial": false
       },
       "CanvasRect": {
+        "fragment": "interface mixin CanvasRect {\n  // rects\n  undefined clearRect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h);\n  undefined fillRect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h);\n  undefined strokeRect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h);\n};",
         "type": "interface mixin",
         "name": "CanvasRect",
         "inheritance": null,
@@ -16516,6 +16631,7 @@
         "partial": false
       },
       "CanvasDrawPath": {
+        "fragment": "interface mixin CanvasDrawPath {\n  // path API (see also CanvasPath)\n  undefined beginPath();\n  undefined fill(optional CanvasFillRule fillRule = \"nonzero\");\n  undefined fill(Path2D path, optional CanvasFillRule fillRule = \"nonzero\");\n  undefined stroke();\n  undefined stroke(Path2D path);\n  undefined clip(optional CanvasFillRule fillRule = \"nonzero\");\n  undefined clip(Path2D path, optional CanvasFillRule fillRule = \"nonzero\");\n  boolean isPointInPath(unrestricted double x, unrestricted double y, optional CanvasFillRule fillRule = \"nonzero\");\n  boolean isPointInPath(Path2D path, unrestricted double x, unrestricted double y, optional CanvasFillRule fillRule = \"nonzero\");\n  boolean isPointInStroke(unrestricted double x, unrestricted double y);\n  boolean isPointInStroke(Path2D path, unrestricted double x, unrestricted double y);\n};",
         "type": "interface mixin",
         "name": "CanvasDrawPath",
         "inheritance": null,
@@ -17021,6 +17137,7 @@
         "partial": false
       },
       "CanvasUserInterface": {
+        "fragment": "interface mixin CanvasUserInterface {\n  undefined drawFocusIfNeeded(Element element);\n  undefined drawFocusIfNeeded(Path2D path, Element element);\n  undefined scrollPathIntoView();\n  undefined scrollPathIntoView(Path2D path);\n};",
         "type": "interface mixin",
         "name": "CanvasUserInterface",
         "inheritance": null,
@@ -17157,6 +17274,7 @@
         "partial": false
       },
       "CanvasText": {
+        "fragment": "interface mixin CanvasText {\n  // text (see also the CanvasPathDrawingStyles and CanvasTextDrawingStyles interfaces)\n  undefined fillText(DOMString text, unrestricted double x, unrestricted double y, optional unrestricted double maxWidth);\n  undefined strokeText(DOMString text, unrestricted double x, unrestricted double y, optional unrestricted double maxWidth);\n  TextMetrics measureText(DOMString text);\n};",
         "type": "interface mixin",
         "name": "CanvasText",
         "inheritance": null,
@@ -17358,6 +17476,7 @@
         "partial": false
       },
       "CanvasDrawImage": {
+        "fragment": "interface mixin CanvasDrawImage {\n  // drawing images\n  undefined drawImage(CanvasImageSource image, unrestricted double dx, unrestricted double dy);\n  undefined drawImage(CanvasImageSource image, unrestricted double dx, unrestricted double dy, unrestricted double dw, unrestricted double dh);\n  undefined drawImage(CanvasImageSource image, unrestricted double sx, unrestricted double sy, unrestricted double sw, unrestricted double sh, unrestricted double dx, unrestricted double dy, unrestricted double dw, unrestricted double dh);\n};",
         "type": "interface mixin",
         "name": "CanvasDrawImage",
         "inheritance": null,
@@ -17687,6 +17806,7 @@
         "partial": false
       },
       "CanvasImageData": {
+        "fragment": "interface mixin CanvasImageData {\n  // pixel manipulation\n  ImageData createImageData([EnforceRange] long sw, [EnforceRange] long sh);\n  ImageData createImageData(ImageData imagedata);\n  ImageData getImageData([EnforceRange] long sx, [EnforceRange] long sy, [EnforceRange] long sw, [EnforceRange] long sh);\n  undefined putImageData(ImageData imagedata, [EnforceRange] long dx, [EnforceRange] long dy);\n  undefined putImageData(ImageData imagedata, [EnforceRange] long dx, [EnforceRange] long dy, [EnforceRange] long dirtyX, [EnforceRange] long dirtyY, [EnforceRange] long dirtyWidth, [EnforceRange] long dirtyHeight);\n};",
         "type": "interface mixin",
         "name": "CanvasImageData",
         "inheritance": null,
@@ -18146,6 +18266,7 @@
         "partial": false
       },
       "CanvasLineCap": {
+        "fragment": "enum CanvasLineCap { \"butt\", \"round\", \"square\" };",
         "type": "enum",
         "name": "CanvasLineCap",
         "values": [
@@ -18165,6 +18286,7 @@
         "extAttrs": []
       },
       "CanvasLineJoin": {
+        "fragment": "enum CanvasLineJoin { \"round\", \"bevel\", \"miter\" };",
         "type": "enum",
         "name": "CanvasLineJoin",
         "values": [
@@ -18184,6 +18306,7 @@
         "extAttrs": []
       },
       "CanvasTextAlign": {
+        "fragment": "enum CanvasTextAlign { \"start\", \"end\", \"left\", \"right\", \"center\" };",
         "type": "enum",
         "name": "CanvasTextAlign",
         "values": [
@@ -18211,6 +18334,7 @@
         "extAttrs": []
       },
       "CanvasTextBaseline": {
+        "fragment": "enum CanvasTextBaseline { \"top\", \"hanging\", \"middle\", \"alphabetic\", \"ideographic\", \"bottom\" };",
         "type": "enum",
         "name": "CanvasTextBaseline",
         "values": [
@@ -18242,6 +18366,7 @@
         "extAttrs": []
       },
       "CanvasDirection": {
+        "fragment": "enum CanvasDirection { \"ltr\", \"rtl\", \"inherit\" };",
         "type": "enum",
         "name": "CanvasDirection",
         "values": [
@@ -18261,6 +18386,7 @@
         "extAttrs": []
       },
       "CanvasPathDrawingStyles": {
+        "fragment": "interface mixin CanvasPathDrawingStyles {\n  // line caps/joins\n  attribute unrestricted double lineWidth; // (default 1)\n  attribute CanvasLineCap lineCap; // (default \"butt\")\n  attribute CanvasLineJoin lineJoin; // (default \"miter\")\n  attribute unrestricted double miterLimit; // (default 10)\n\n  // dashed lines\n  undefined setLineDash(sequence<unrestricted double> segments); // default empty\n  sequence<unrestricted double> getLineDash();\n  attribute unrestricted double lineDashOffset;\n};",
         "type": "interface mixin",
         "name": "CanvasPathDrawingStyles",
         "inheritance": null,
@@ -18410,6 +18536,7 @@
         "partial": false
       },
       "CanvasTextDrawingStyles": {
+        "fragment": "interface mixin CanvasTextDrawingStyles {\n  // text\n  attribute DOMString font; // (default 10px sans-serif)\n  attribute CanvasTextAlign textAlign; // (default: \"start\")\n  attribute CanvasTextBaseline textBaseline; // (default: \"alphabetic\")\n  attribute CanvasDirection direction; // (default: \"inherit\")\n};",
         "type": "interface mixin",
         "name": "CanvasTextDrawingStyles",
         "inheritance": null,
@@ -18479,6 +18606,7 @@
         "partial": false
       },
       "CanvasPath": {
+        "fragment": "interface mixin CanvasPath {\n  // shared path API methods\n  undefined closePath();\n  undefined moveTo(unrestricted double x, unrestricted double y);\n  undefined lineTo(unrestricted double x, unrestricted double y);\n  undefined quadraticCurveTo(unrestricted double cpx, unrestricted double cpy, unrestricted double x, unrestricted double y);\n  undefined bezierCurveTo(unrestricted double cp1x, unrestricted double cp1y, unrestricted double cp2x, unrestricted double cp2y, unrestricted double x, unrestricted double y);\n  undefined arcTo(unrestricted double x1, unrestricted double y1, unrestricted double x2, unrestricted double y2, unrestricted double radius);\n  undefined rect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h);\n  undefined arc(unrestricted double x, unrestricted double y, unrestricted double radius, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n  undefined ellipse(unrestricted double x, unrestricted double y, unrestricted double radiusX, unrestricted double radiusY, unrestricted double rotation, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n};",
         "type": "interface mixin",
         "name": "CanvasPath",
         "inheritance": null,
@@ -19229,6 +19357,7 @@
         "partial": false
       },
       "CanvasGradient": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface CanvasGradient {\n  // opaque object\n  undefined addColorStop(double offset, DOMString color);\n};",
         "type": "interface",
         "name": "CanvasGradient",
         "inheritance": null,
@@ -19303,6 +19432,7 @@
         "partial": false
       },
       "CanvasPattern": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface CanvasPattern {\n  // opaque object\n  undefined setTransform(optional DOMMatrix2DInit transform = {});\n};",
         "type": "interface",
         "name": "CanvasPattern",
         "inheritance": null,
@@ -19363,6 +19493,7 @@
         "partial": false
       },
       "TextMetrics": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface TextMetrics {\n  // x-direction\n  readonly attribute double width; // advance width\n  readonly attribute double actualBoundingBoxLeft;\n  readonly attribute double actualBoundingBoxRight;\n\n  // y-direction\n  readonly attribute double fontBoundingBoxAscent;\n  readonly attribute double fontBoundingBoxDescent;\n  readonly attribute double actualBoundingBoxAscent;\n  readonly attribute double actualBoundingBoxDescent;\n  readonly attribute double emHeightAscent;\n  readonly attribute double emHeightDescent;\n  readonly attribute double hangingBaseline;\n  readonly attribute double alphabeticBaseline;\n  readonly attribute double ideographicBaseline;\n};",
         "type": "interface",
         "name": "TextMetrics",
         "inheritance": null,
@@ -19569,6 +19700,7 @@
         "partial": false
       },
       "ImageData": {
+        "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface ImageData {\n  constructor(unsigned long sw, unsigned long sh);\n  constructor(Uint8ClampedArray data, unsigned long sw, optional unsigned long sh);\n\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n  readonly attribute Uint8ClampedArray data;\n};",
         "type": "interface",
         "name": "ImageData",
         "inheritance": null,
@@ -19738,6 +19870,7 @@
         "partial": false
       },
       "Path2D": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Path2D {\n  constructor(optional (Path2D or DOMString) path);\n\n  undefined addPath(Path2D path, optional DOMMatrix2DInit transform = {});\n};",
         "type": "interface",
         "name": "Path2D",
         "inheritance": null,
@@ -19853,6 +19986,7 @@
         "partial": false
       },
       "ImageBitmapRenderingContext": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface ImageBitmapRenderingContext {\n  readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n  undefined transferFromImageBitmap(ImageBitmap? bitmap);\n};",
         "type": "interface",
         "name": "ImageBitmapRenderingContext",
         "inheritance": null,
@@ -19943,6 +20077,7 @@
         "partial": false
       },
       "ImageBitmapRenderingContextSettings": {
+        "fragment": "dictionary ImageBitmapRenderingContextSettings {\n  boolean alpha = true;\n};",
         "type": "dictionary",
         "name": "ImageBitmapRenderingContextSettings",
         "inheritance": null,
@@ -19970,6 +20105,7 @@
         "partial": false
       },
       "OffscreenRenderingContext": {
+        "fragment": "typedef (OffscreenCanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext) OffscreenRenderingContext;",
         "type": "typedef",
         "name": "OffscreenRenderingContext",
         "idlType": {
@@ -20016,6 +20152,7 @@
         "extAttrs": []
       },
       "ImageEncodeOptions": {
+        "fragment": "dictionary ImageEncodeOptions {\n  DOMString type = \"image/png\";\n  unrestricted double quality;\n};",
         "type": "dictionary",
         "name": "ImageEncodeOptions",
         "inheritance": null,
@@ -20058,6 +20195,7 @@
         "partial": false
       },
       "OffscreenRenderingContextId": {
+        "fragment": "enum OffscreenRenderingContextId { \"2d\", \"bitmaprenderer\", \"webgl\", \"webgl2\" };",
         "type": "enum",
         "name": "OffscreenRenderingContextId",
         "values": [
@@ -20081,6 +20219,7 @@
         "extAttrs": []
       },
       "OffscreenCanvas": {
+        "fragment": "[Exposed=(Window,Worker), Transferable]\ninterface OffscreenCanvas : EventTarget {\n  constructor([EnforceRange] unsigned long long width, [EnforceRange] unsigned long long height);\n\n  attribute [EnforceRange] unsigned long long width;\n  attribute [EnforceRange] unsigned long long height;\n\n  OffscreenRenderingContext? getContext(OffscreenRenderingContextId contextId, optional any options = null);\n  ImageBitmap transferToImageBitmap();\n  Promise<Blob> convertToBlob(optional ImageEncodeOptions options = {});\n};",
         "type": "interface",
         "name": "OffscreenCanvas",
         "inheritance": "EventTarget",
@@ -20317,6 +20456,7 @@
         "partial": false
       },
       "OffscreenCanvasRenderingContext2D": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface OffscreenCanvasRenderingContext2D {\n  undefined commit();\n  readonly attribute OffscreenCanvas canvas;\n};",
         "type": "interface",
         "name": "OffscreenCanvasRenderingContext2D",
         "inheritance": null,
@@ -20373,6 +20513,7 @@
         "partial": false
       },
       "CustomElementRegistry": {
+        "fragment": "[Exposed=Window]\ninterface CustomElementRegistry {\n  [CEReactions] undefined define(DOMString name, CustomElementConstructor constructor, optional ElementDefinitionOptions options = {});\n  (CustomElementConstructor or undefined) get(DOMString name);\n  Promise<CustomElementConstructor> whenDefined(DOMString name);\n  [CEReactions] undefined upgrade(Node root);\n};",
         "type": "interface",
         "name": "CustomElementRegistry",
         "inheritance": null,
@@ -20594,6 +20735,7 @@
         "partial": false
       },
       "CustomElementConstructor": {
+        "fragment": "callback CustomElementConstructor = HTMLElement ();",
         "type": "callback",
         "name": "CustomElementConstructor",
         "idlType": {
@@ -20608,6 +20750,7 @@
         "extAttrs": []
       },
       "ElementDefinitionOptions": {
+        "fragment": "dictionary ElementDefinitionOptions {\n  DOMString extends;\n};",
         "type": "dictionary",
         "name": "ElementDefinitionOptions",
         "inheritance": null,
@@ -20632,6 +20775,7 @@
         "partial": false
       },
       "ElementInternals": {
+        "fragment": "[Exposed=Window]\ninterface ElementInternals {\n  // Shadow root access\n  readonly attribute ShadowRoot? shadowRoot;\n\n  // Form-associated custom elements\n  undefined setFormValue((File or USVString or FormData)? value,\n                         optional (File or USVString or FormData)? state);\n\n  readonly attribute HTMLFormElement? form;\n\n  undefined setValidity(optional ValidityStateFlags flags = {},\n                        optional DOMString message,\n                        optional HTMLElement anchor);\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n\n  readonly attribute NodeList labels;\n};",
         "type": "interface",
         "name": "ElementInternals",
         "inheritance": null,
@@ -20935,6 +21079,7 @@
         "partial": false
       },
       "ValidityStateFlags": {
+        "fragment": "dictionary ValidityStateFlags {\n  boolean valueMissing = false;\n  boolean typeMismatch = false;\n  boolean patternMismatch = false;\n  boolean tooLong = false;\n  boolean tooShort = false;\n  boolean rangeUnderflow = false;\n  boolean rangeOverflow = false;\n  boolean stepMismatch = false;\n  boolean badInput = false;\n  boolean customError = false;\n};",
         "type": "dictionary",
         "name": "ValidityStateFlags",
         "inheritance": null,
@@ -21124,6 +21269,7 @@
         "partial": false
       },
       "FocusOptions": {
+        "fragment": "dictionary FocusOptions {\n  boolean preventScroll = false;\n};",
         "type": "dictionary",
         "name": "FocusOptions",
         "inheritance": null,
@@ -21151,6 +21297,7 @@
         "partial": false
       },
       "ElementContentEditable": {
+        "fragment": "interface mixin ElementContentEditable {\n  [CEReactions] attribute DOMString contentEditable;\n  [CEReactions] attribute DOMString enterKeyHint;\n  readonly attribute boolean isContentEditable;\n  [CEReactions] attribute DOMString inputMode;\n};",
         "type": "interface mixin",
         "name": "ElementContentEditable",
         "inheritance": null,
@@ -21241,6 +21388,7 @@
         "partial": false
       },
       "DataTransfer": {
+        "fragment": "[Exposed=Window]\ninterface DataTransfer {\n  constructor();\n\n  attribute DOMString dropEffect;\n  attribute DOMString effectAllowed;\n\n  [SameObject] readonly attribute DataTransferItemList items;\n\n  undefined setDragImage(Element image, long x, long y);\n\n  /* old interface */\n  readonly attribute FrozenArray<DOMString> types;\n  DOMString getData(DOMString format);\n  undefined setData(DOMString format, DOMString data);\n  undefined clearData(optional DOMString format);\n  [SameObject] readonly attribute FileList files;\n};",
         "type": "interface",
         "name": "DataTransfer",
         "inheritance": null,
@@ -21539,6 +21687,7 @@
         "partial": false
       },
       "DataTransferItemList": {
+        "fragment": "[Exposed=Window]\ninterface DataTransferItemList {\n  readonly attribute unsigned long length;\n  getter DataTransferItem (unsigned long index);\n  DataTransferItem? add(DOMString data, DOMString type);\n  DataTransferItem? add(File data);\n  undefined remove(unsigned long index);\n  undefined clear();\n};",
         "type": "interface",
         "name": "DataTransferItemList",
         "inheritance": null,
@@ -21732,6 +21881,7 @@
         "partial": false
       },
       "DataTransferItem": {
+        "fragment": "[Exposed=Window]\ninterface DataTransferItem {\n  readonly attribute DOMString kind;\n  readonly attribute DOMString type;\n  undefined getAsString(FunctionStringCallback? _callback);\n  File? getAsFile();\n};",
         "type": "interface",
         "name": "DataTransferItem",
         "inheritance": null,
@@ -21828,6 +21978,7 @@
         "partial": false
       },
       "FunctionStringCallback": {
+        "fragment": "callback FunctionStringCallback = undefined (DOMString data);",
         "type": "callback",
         "name": "FunctionStringCallback",
         "idlType": {
@@ -21859,6 +22010,7 @@
         "extAttrs": []
       },
       "DragEvent": {
+        "fragment": "[Exposed=Window]\ninterface DragEvent : MouseEvent {\n  constructor(DOMString type, optional DragEventInit eventInitDict = {});\n\n  readonly attribute DataTransfer? dataTransfer;\n};",
         "type": "interface",
         "name": "DragEvent",
         "inheritance": "MouseEvent",
@@ -21933,6 +22085,7 @@
         "partial": false
       },
       "DragEventInit": {
+        "fragment": "dictionary DragEventInit : MouseEventInit {\n  DataTransfer? dataTransfer = null;\n};",
         "type": "dictionary",
         "name": "DragEventInit",
         "inheritance": "MouseEventInit",
@@ -21959,6 +22112,7 @@
         "partial": false
       },
       "Window": {
+        "fragment": "[Global=Window,\n Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface Window : EventTarget {\n  // the current browsing context\n  [LegacyUnforgeable] readonly attribute WindowProxy window;\n  [Replaceable] readonly attribute WindowProxy self;\n  [LegacyUnforgeable] readonly attribute Document document;\n  attribute DOMString name;\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location location;\n  readonly attribute History history;\n  readonly attribute CustomElementRegistry customElements;\n  [Replaceable] readonly attribute BarProp locationbar;\n  [Replaceable] readonly attribute BarProp menubar;\n  [Replaceable] readonly attribute BarProp personalbar;\n  [Replaceable] readonly attribute BarProp scrollbars;\n  [Replaceable] readonly attribute BarProp statusbar;\n  [Replaceable] readonly attribute BarProp toolbar;\n  attribute DOMString status;\n  undefined close();\n  readonly attribute boolean closed;\n  undefined stop();\n  undefined focus();\n  undefined blur();\n\n  // other browsing contexts\n  [Replaceable] readonly attribute WindowProxy frames;\n  [Replaceable] readonly attribute unsigned long length;\n  [LegacyUnforgeable] readonly attribute WindowProxy? top;\n  attribute any opener;\n  [Replaceable] readonly attribute WindowProxy? parent;\n  readonly attribute Element? frameElement;\n  WindowProxy? open(optional USVString url = \"\", optional DOMString target = \"_blank\", optional [LegacyNullToEmptyString] DOMString features = \"\");\n  getter object (DOMString name);\n  // Since this is the global object, the IDL named getter adds a NamedPropertiesObject exotic\n  // object on the prototype chain. Indeed, this does not make the global object an exotic object.\n  // Indexed access is taken care of by the WindowProxy exotic object.\n\n  // the user agent\n  readonly attribute Navigator navigator;\n  readonly attribute boolean originAgentCluster;\n\n  // user prompts\n  undefined alert();\n  undefined alert(DOMString message);\n  boolean confirm(optional DOMString message = \"\");\n  DOMString? prompt(optional DOMString message = \"\", optional DOMString default = \"\");\n  undefined print();\n\n  undefined postMessage(any message, USVString targetOrigin, optional sequence<object> transfer = []);\n  undefined postMessage(any message, optional WindowPostMessageOptions options = {});\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "Window",
         "inheritance": "EventTarget",
@@ -22894,6 +23048,7 @@
         "partial": false
       },
       "WindowPostMessageOptions": {
+        "fragment": "dictionary WindowPostMessageOptions : PostMessageOptions {\n  USVString targetOrigin = \"/\";\n};",
         "type": "dictionary",
         "name": "WindowPostMessageOptions",
         "inheritance": "PostMessageOptions",
@@ -22921,6 +23076,7 @@
         "partial": false
       },
       "BarProp": {
+        "fragment": "[Exposed=Window]\ninterface BarProp {\n  readonly attribute boolean visible;\n};",
         "type": "interface",
         "name": "BarProp",
         "inheritance": null,
@@ -22955,6 +23111,7 @@
         "partial": false
       },
       "ScrollRestoration": {
+        "fragment": "enum ScrollRestoration { \"auto\", \"manual\" };",
         "type": "enum",
         "name": "ScrollRestoration",
         "values": [
@@ -22970,6 +23127,7 @@
         "extAttrs": []
       },
       "History": {
+        "fragment": "[Exposed=Window]\ninterface History {\n  readonly attribute unsigned long length;\n  attribute ScrollRestoration scrollRestoration;\n  readonly attribute any state;\n  undefined go(optional long delta = 0);\n  undefined back();\n  undefined forward();\n  undefined pushState(any data, DOMString title, optional USVString? url = null);\n  undefined replaceState(any data, DOMString title, optional USVString? url = null);\n};",
         "type": "interface",
         "name": "History",
         "inheritance": null,
@@ -23231,6 +23389,7 @@
         "partial": false
       },
       "Location": {
+        "fragment": "[Exposed=Window]\ninterface Location { // but see also additional creation steps and overridden internal methods\n  [LegacyUnforgeable] stringifier attribute USVString href;\n  [LegacyUnforgeable] readonly attribute USVString origin;\n  [LegacyUnforgeable] attribute USVString protocol;\n  [LegacyUnforgeable] attribute USVString host;\n  [LegacyUnforgeable] attribute USVString hostname;\n  [LegacyUnforgeable] attribute USVString port;\n  [LegacyUnforgeable] attribute USVString pathname;\n  [LegacyUnforgeable] attribute USVString search;\n  [LegacyUnforgeable] attribute USVString hash;\n\n  [LegacyUnforgeable] undefined assign(USVString url);\n  [LegacyUnforgeable] undefined replace(USVString url);\n  [LegacyUnforgeable] undefined reload();\n\n  [LegacyUnforgeable, SameObject] readonly attribute DOMStringList ancestorOrigins;\n};",
         "type": "interface",
         "name": "Location",
         "inheritance": null,
@@ -23576,6 +23735,7 @@
         "partial": false
       },
       "PopStateEvent": {
+        "fragment": "[Exposed=Window]\ninterface PopStateEvent : Event {\n  constructor(DOMString type, optional PopStateEventInit eventInitDict = {});\n\n  readonly attribute any state;\n};",
         "type": "interface",
         "name": "PopStateEvent",
         "inheritance": "Event",
@@ -23650,6 +23810,7 @@
         "partial": false
       },
       "PopStateEventInit": {
+        "fragment": "dictionary PopStateEventInit : EventInit {\n  any state = null;\n};",
         "type": "dictionary",
         "name": "PopStateEventInit",
         "inheritance": "EventInit",
@@ -23676,6 +23837,7 @@
         "partial": false
       },
       "HashChangeEvent": {
+        "fragment": "[Exposed=Window]\ninterface HashChangeEvent : Event {\n  constructor(DOMString type, optional HashChangeEventInit eventInitDict = {});\n\n  readonly attribute USVString oldURL;\n  readonly attribute USVString newURL;\n};",
         "type": "interface",
         "name": "HashChangeEvent",
         "inheritance": "Event",
@@ -23765,6 +23927,7 @@
         "partial": false
       },
       "HashChangeEventInit": {
+        "fragment": "dictionary HashChangeEventInit : EventInit {\n  USVString oldURL = \"\";\n  USVString newURL = \"\";\n};",
         "type": "dictionary",
         "name": "HashChangeEventInit",
         "inheritance": "EventInit",
@@ -23810,6 +23973,7 @@
         "partial": false
       },
       "PageTransitionEvent": {
+        "fragment": "[Exposed=Window]\ninterface PageTransitionEvent : Event {\n  constructor(DOMString type, optional PageTransitionEventInit eventInitDict = {});\n\n  readonly attribute boolean persisted;\n};",
         "type": "interface",
         "name": "PageTransitionEvent",
         "inheritance": "Event",
@@ -23884,6 +24048,7 @@
         "partial": false
       },
       "PageTransitionEventInit": {
+        "fragment": "dictionary PageTransitionEventInit : EventInit {\n  boolean persisted = false;\n};",
         "type": "dictionary",
         "name": "PageTransitionEventInit",
         "inheritance": "EventInit",
@@ -23911,6 +24076,7 @@
         "partial": false
       },
       "BeforeUnloadEvent": {
+        "fragment": "[Exposed=Window]\ninterface BeforeUnloadEvent : Event {\n  attribute DOMString returnValue;\n};",
         "type": "interface",
         "name": "BeforeUnloadEvent",
         "inheritance": "Event",
@@ -23945,6 +24111,7 @@
         "partial": false
       },
       "ErrorEvent": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface ErrorEvent : Event {\n  constructor(DOMString type, optional ErrorEventInit eventInitDict = {});\n\n  readonly attribute DOMString message;\n  readonly attribute USVString filename;\n  readonly attribute unsigned long lineno;\n  readonly attribute unsigned long colno;\n  readonly attribute any error;\n};",
         "type": "interface",
         "name": "ErrorEvent",
         "inheritance": "Event",
@@ -24086,6 +24253,7 @@
         "partial": false
       },
       "ErrorEventInit": {
+        "fragment": "dictionary ErrorEventInit : EventInit {\n  DOMString message = \"\";\n  USVString filename = \"\";\n  unsigned long lineno = 0;\n  unsigned long colno = 0;\n  any error = null;\n};",
         "type": "dictionary",
         "name": "ErrorEventInit",
         "inheritance": "EventInit",
@@ -24184,6 +24352,7 @@
         "partial": false
       },
       "PromiseRejectionEvent": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PromiseRejectionEvent : Event {\n  constructor(DOMString type, PromiseRejectionEventInit eventInitDict);\n\n  readonly attribute Promise<any> promise;\n  readonly attribute any reason;\n};",
         "type": "interface",
         "name": "PromiseRejectionEvent",
         "inheritance": "Event",
@@ -24287,6 +24456,7 @@
         "partial": false
       },
       "PromiseRejectionEventInit": {
+        "fragment": "dictionary PromiseRejectionEventInit : EventInit {\n  required Promise<any> promise;\n  any reason;\n};",
         "type": "dictionary",
         "name": "PromiseRejectionEventInit",
         "inheritance": "EventInit",
@@ -24335,6 +24505,7 @@
         "partial": false
       },
       "EventHandlerNonNull": {
+        "fragment": "[LegacyTreatNonObjectAsNull]\ncallback EventHandlerNonNull = any (Event event);",
         "type": "callback",
         "name": "EventHandlerNonNull",
         "idlType": {
@@ -24373,6 +24544,7 @@
         ]
       },
       "EventHandler": {
+        "fragment": "typedef EventHandlerNonNull? EventHandler;",
         "type": "typedef",
         "name": "EventHandler",
         "idlType": {
@@ -24386,6 +24558,7 @@
         "extAttrs": []
       },
       "OnErrorEventHandlerNonNull": {
+        "fragment": "[LegacyTreatNonObjectAsNull]\ncallback OnErrorEventHandlerNonNull = any ((Event or DOMString) event, optional DOMString source, optional unsigned long lineno, optional unsigned long colno, optional any error);",
         "type": "callback",
         "name": "OnErrorEventHandlerNonNull",
         "idlType": {
@@ -24505,6 +24678,7 @@
         ]
       },
       "OnErrorEventHandler": {
+        "fragment": "typedef OnErrorEventHandlerNonNull? OnErrorEventHandler;",
         "type": "typedef",
         "name": "OnErrorEventHandler",
         "idlType": {
@@ -24518,6 +24692,7 @@
         "extAttrs": []
       },
       "OnBeforeUnloadEventHandlerNonNull": {
+        "fragment": "[LegacyTreatNonObjectAsNull]\ncallback OnBeforeUnloadEventHandlerNonNull = DOMString? (Event event);",
         "type": "callback",
         "name": "OnBeforeUnloadEventHandlerNonNull",
         "idlType": {
@@ -24556,6 +24731,7 @@
         ]
       },
       "OnBeforeUnloadEventHandler": {
+        "fragment": "typedef OnBeforeUnloadEventHandlerNonNull? OnBeforeUnloadEventHandler;",
         "type": "typedef",
         "name": "OnBeforeUnloadEventHandler",
         "idlType": {
@@ -24569,6 +24745,7 @@
         "extAttrs": []
       },
       "GlobalEventHandlers": {
+        "fragment": "interface mixin GlobalEventHandlers {\n  attribute EventHandler onabort;\n  attribute EventHandler onauxclick;\n  attribute EventHandler onblur;\n  attribute EventHandler oncancel;\n  attribute EventHandler oncanplay;\n  attribute EventHandler oncanplaythrough;\n  attribute EventHandler onchange;\n  attribute EventHandler onclick;\n  attribute EventHandler onclose;\n  attribute EventHandler oncontextmenu;\n  attribute EventHandler oncuechange;\n  attribute EventHandler ondblclick;\n  attribute EventHandler ondrag;\n  attribute EventHandler ondragend;\n  attribute EventHandler ondragenter;\n  attribute EventHandler ondragleave;\n  attribute EventHandler ondragover;\n  attribute EventHandler ondragstart;\n  attribute EventHandler ondrop;\n  attribute EventHandler ondurationchange;\n  attribute EventHandler onemptied;\n  attribute EventHandler onended;\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onfocus;\n  attribute EventHandler onformdata;\n  attribute EventHandler oninput;\n  attribute EventHandler oninvalid;\n  attribute EventHandler onkeydown;\n  attribute EventHandler onkeypress;\n  attribute EventHandler onkeyup;\n  attribute EventHandler onload;\n  attribute EventHandler onloadeddata;\n  attribute EventHandler onloadedmetadata;\n  attribute EventHandler onloadstart;\n  attribute EventHandler onmousedown;\n  [LegacyLenientThis] attribute EventHandler onmouseenter;\n  [LegacyLenientThis] attribute EventHandler onmouseleave;\n  attribute EventHandler onmousemove;\n  attribute EventHandler onmouseout;\n  attribute EventHandler onmouseover;\n  attribute EventHandler onmouseup;\n  attribute EventHandler onpause;\n  attribute EventHandler onplay;\n  attribute EventHandler onplaying;\n  attribute EventHandler onprogress;\n  attribute EventHandler onratechange;\n  attribute EventHandler onreset;\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onsecuritypolicyviolation;\n  attribute EventHandler onseeked;\n  attribute EventHandler onseeking;\n  attribute EventHandler onselect;\n  attribute EventHandler onslotchange;\n  attribute EventHandler onstalled;\n  attribute EventHandler onsubmit;\n  attribute EventHandler onsuspend;\n  attribute EventHandler ontimeupdate;\n  attribute EventHandler ontoggle;\n  attribute EventHandler onvolumechange;\n  attribute EventHandler onwaiting;\n  attribute EventHandler onwebkitanimationend;\n  attribute EventHandler onwebkitanimationiteration;\n  attribute EventHandler onwebkitanimationstart;\n  attribute EventHandler onwebkittransitionend;\n  attribute EventHandler onwheel;\n};",
         "type": "interface mixin",
         "name": "GlobalEventHandlers",
         "inheritance": null,
@@ -25582,6 +25759,7 @@
         "partial": false
       },
       "WindowEventHandlers": {
+        "fragment": "interface mixin WindowEventHandlers {\n  attribute EventHandler onafterprint;\n  attribute EventHandler onbeforeprint;\n  attribute OnBeforeUnloadEventHandler onbeforeunload;\n  attribute EventHandler onhashchange;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onpagehide;\n  attribute EventHandler onpageshow;\n  attribute EventHandler onpopstate;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onstorage;\n  attribute EventHandler onunhandledrejection;\n  attribute EventHandler onunload;\n};",
         "type": "interface mixin",
         "name": "WindowEventHandlers",
         "inheritance": null,
@@ -25831,6 +26009,7 @@
         "partial": false
       },
       "DocumentAndElementEventHandlers": {
+        "fragment": "interface mixin DocumentAndElementEventHandlers {\n  attribute EventHandler oncopy;\n  attribute EventHandler oncut;\n  attribute EventHandler onpaste;\n};",
         "type": "interface mixin",
         "name": "DocumentAndElementEventHandlers",
         "inheritance": null,
@@ -25885,6 +26064,7 @@
         "partial": false
       },
       "TimerHandler": {
+        "fragment": "typedef (DOMString or Function) TimerHandler;",
         "type": "typedef",
         "name": "TimerHandler",
         "idlType": {
@@ -25915,6 +26095,7 @@
         "extAttrs": []
       },
       "WindowOrWorkerGlobalScope": {
+        "fragment": "interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute USVString origin;\n  readonly attribute boolean isSecureContext;\n  readonly attribute boolean crossOriginIsolated;\n\n  // base64 utility methods\n  DOMString btoa(DOMString data);\n  ByteString atob(DOMString data);\n\n  // timers\n  long setTimeout(TimerHandler handler, optional long timeout = 0, any... arguments);\n  undefined clearTimeout(optional long handle = 0);\n  long setInterval(TimerHandler handler, optional long timeout = 0, any... arguments);\n  undefined clearInterval(optional long handle = 0);\n\n  // microtask queuing\n  undefined queueMicrotask(VoidFunction callback);\n\n  // ImageBitmap\n  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, optional ImageBitmapOptions options = {});\n  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, long sx, long sy, long sw, long sh, optional ImageBitmapOptions options = {});\n};",
         "type": "interface mixin",
         "name": "WindowOrWorkerGlobalScope",
         "inheritance": null,
@@ -26458,6 +26639,7 @@
         "partial": false
       },
       "DOMParser": {
+        "fragment": "[Exposed=Window]\ninterface DOMParser {\n  constructor();\n\n  [NewObject] Document parseFromString(DOMString string, DOMParserSupportedType type);\n};",
         "type": "interface",
         "name": "DOMParser",
         "inheritance": null,
@@ -26537,6 +26719,7 @@
         "partial": false
       },
       "DOMParserSupportedType": {
+        "fragment": "enum DOMParserSupportedType {\n  \"text/html\",\n  \"text/xml\",\n  \"application/xml\",\n  \"application/xhtml+xml\",\n  \"image/svg+xml\"\n};",
         "type": "enum",
         "name": "DOMParserSupportedType",
         "values": [
@@ -26564,6 +26747,7 @@
         "extAttrs": []
       },
       "Navigator": {
+        "fragment": "[Exposed=Window]\ninterface Navigator {\n  // objects implementing this interface also implement the interfaces given below\n};",
         "type": "interface",
         "name": "Navigator",
         "inheritance": null,
@@ -26582,6 +26766,7 @@
         "partial": false
       },
       "NavigatorID": {
+        "fragment": "interface mixin NavigatorID {\n  readonly attribute DOMString appCodeName; // constant \"Mozilla\"\n  readonly attribute DOMString appName; // constant \"Netscape\"\n  readonly attribute DOMString appVersion;\n  readonly attribute DOMString platform;\n  readonly attribute DOMString product; // constant \"Gecko\"\n  [Exposed=Window] readonly attribute DOMString productSub;\n  readonly attribute DOMString userAgent;\n  [Exposed=Window] readonly attribute DOMString vendor;\n  [Exposed=Window] readonly attribute DOMString vendorSub; // constant \"\"\n};",
         "type": "interface mixin",
         "name": "NavigatorID",
         "inheritance": null,
@@ -26756,6 +26941,7 @@
         "partial": false
       },
       "NavigatorLanguage": {
+        "fragment": "interface mixin NavigatorLanguage {\n  readonly attribute DOMString language;\n  readonly attribute FrozenArray<DOMString> languages;\n};",
         "type": "interface mixin",
         "name": "NavigatorLanguage",
         "inheritance": null,
@@ -26804,6 +26990,7 @@
         "partial": false
       },
       "NavigatorOnLine": {
+        "fragment": "interface mixin NavigatorOnLine {\n  readonly attribute boolean onLine;\n};",
         "type": "interface mixin",
         "name": "NavigatorOnLine",
         "inheritance": null,
@@ -26828,6 +27015,7 @@
         "partial": false
       },
       "NavigatorContentUtils": {
+        "fragment": "interface mixin NavigatorContentUtils {\n  [SecureContext] undefined registerProtocolHandler(DOMString scheme, USVString url);\n  [SecureContext] undefined unregisterProtocolHandler(DOMString scheme, USVString url);\n};",
         "type": "interface mixin",
         "name": "NavigatorContentUtils",
         "inheritance": null,
@@ -26947,6 +27135,7 @@
         "partial": false
       },
       "NavigatorCookies": {
+        "fragment": "interface mixin NavigatorCookies {\n  readonly attribute boolean cookieEnabled;\n};",
         "type": "interface mixin",
         "name": "NavigatorCookies",
         "inheritance": null,
@@ -26971,6 +27160,7 @@
         "partial": false
       },
       "ImageBitmap": {
+        "fragment": "[Exposed=(Window,Worker), Serializable, Transferable]\ninterface ImageBitmap {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n  undefined close();\n};",
         "type": "interface",
         "name": "ImageBitmap",
         "inheritance": null,
@@ -27054,6 +27244,7 @@
         "partial": false
       },
       "ImageBitmapSource": {
+        "fragment": "typedef (CanvasImageSource or\n         Blob or\n         ImageData) ImageBitmapSource;",
         "type": "typedef",
         "name": "ImageBitmapSource",
         "idlType": {
@@ -27092,6 +27283,7 @@
         "extAttrs": []
       },
       "ImageOrientation": {
+        "fragment": "enum ImageOrientation { \"none\", \"flipY\" };",
         "type": "enum",
         "name": "ImageOrientation",
         "values": [
@@ -27107,6 +27299,7 @@
         "extAttrs": []
       },
       "PremultiplyAlpha": {
+        "fragment": "enum PremultiplyAlpha { \"none\", \"premultiply\", \"default\" };",
         "type": "enum",
         "name": "PremultiplyAlpha",
         "values": [
@@ -27126,6 +27319,7 @@
         "extAttrs": []
       },
       "ColorSpaceConversion": {
+        "fragment": "enum ColorSpaceConversion { \"none\", \"default\" };",
         "type": "enum",
         "name": "ColorSpaceConversion",
         "values": [
@@ -27141,6 +27335,7 @@
         "extAttrs": []
       },
       "ResizeQuality": {
+        "fragment": "enum ResizeQuality { \"pixelated\", \"low\", \"medium\", \"high\" };",
         "type": "enum",
         "name": "ResizeQuality",
         "values": [
@@ -27164,6 +27359,7 @@
         "extAttrs": []
       },
       "ImageBitmapOptions": {
+        "fragment": "dictionary ImageBitmapOptions {\n  ImageOrientation imageOrientation = \"none\";\n  PremultiplyAlpha premultiplyAlpha = \"default\";\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  [EnforceRange] unsigned long resizeWidth;\n  [EnforceRange] unsigned long resizeHeight;\n  ResizeQuality resizeQuality = \"low\";\n};",
         "type": "dictionary",
         "name": "ImageBitmapOptions",
         "inheritance": null,
@@ -27289,6 +27485,7 @@
         "partial": false
       },
       "FrameRequestCallback": {
+        "fragment": "callback FrameRequestCallback = undefined (DOMHighResTimeStamp time);",
         "type": "callback",
         "name": "FrameRequestCallback",
         "idlType": {
@@ -27320,6 +27517,7 @@
         "extAttrs": []
       },
       "AnimationFrameProvider": {
+        "fragment": "interface mixin AnimationFrameProvider {\n  unsigned long requestAnimationFrame(FrameRequestCallback callback);\n  undefined cancelAnimationFrame(unsigned long handle);\n};",
         "type": "interface mixin",
         "name": "AnimationFrameProvider",
         "inheritance": null,
@@ -27393,6 +27591,7 @@
         "partial": false
       },
       "MessageEvent": {
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface MessageEvent : Event {\n  constructor(DOMString type, optional MessageEventInit eventInitDict = {});\n\n  readonly attribute any data;\n  readonly attribute USVString origin;\n  readonly attribute DOMString lastEventId;\n  readonly attribute MessageEventSource? source;\n  readonly attribute FrozenArray<MessagePort> ports;\n\n  undefined initMessageEvent(DOMString type, optional boolean bubbles = false, optional boolean cancelable = false, optional any data = null, optional USVString origin = \"\", optional DOMString lastEventId = \"\", optional MessageEventSource? source = null, optional sequence<MessagePort> ports = []);\n};",
         "type": "interface",
         "name": "MessageEvent",
         "inheritance": "Event",
@@ -27718,6 +27917,7 @@
         "partial": false
       },
       "MessageEventInit": {
+        "fragment": "dictionary MessageEventInit : EventInit {\n  any data = null;\n  USVString origin = \"\";\n  DOMString lastEventId = \"\";\n  MessageEventSource? source = null;\n  sequence<MessagePort> ports = [];\n};",
         "type": "dictionary",
         "name": "MessageEventInit",
         "inheritance": "EventInit",
@@ -27824,6 +28024,7 @@
         "partial": false
       },
       "MessageEventSource": {
+        "fragment": "typedef (WindowProxy or MessagePort or ServiceWorker) MessageEventSource;",
         "type": "typedef",
         "name": "MessageEventSource",
         "idlType": {
@@ -27862,6 +28063,7 @@
         "extAttrs": []
       },
       "EventSource": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface EventSource : EventTarget {\n  constructor(USVString url, optional EventSourceInit eventSourceInitDict = {});\n\n  readonly attribute USVString url;\n  readonly attribute boolean withCredentials;\n\n  // ready state\n  const unsigned short CONNECTING = 0;\n  const unsigned short OPEN = 1;\n  const unsigned short CLOSED = 2;\n  readonly attribute unsigned short readyState;\n\n  // networking\n  attribute EventHandler onopen;\n  attribute EventHandler onmessage;\n  attribute EventHandler onerror;\n  undefined close();\n};",
         "type": "interface",
         "name": "EventSource",
         "inheritance": "EventTarget",
@@ -28084,6 +28286,7 @@
         "partial": false
       },
       "EventSourceInit": {
+        "fragment": "dictionary EventSourceInit {\n  boolean withCredentials = false;\n};",
         "type": "dictionary",
         "name": "EventSourceInit",
         "inheritance": null,
@@ -28111,6 +28314,7 @@
         "partial": false
       },
       "BinaryType": {
+        "fragment": "enum BinaryType { \"blob\", \"arraybuffer\" };",
         "type": "enum",
         "name": "BinaryType",
         "values": [
@@ -28126,6 +28330,7 @@
         "extAttrs": []
       },
       "WebSocket": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface WebSocket : EventTarget {\n  constructor(USVString url, optional (DOMString or sequence<DOMString>) protocols = []);\n\n  readonly attribute USVString url;\n\n  // ready state\n  const unsigned short CONNECTING = 0;\n  const unsigned short OPEN = 1;\n  const unsigned short CLOSING = 2;\n  const unsigned short CLOSED = 3;\n  readonly attribute unsigned short readyState;\n  readonly attribute unsigned long long bufferedAmount;\n\n  // networking\n  attribute EventHandler onopen;\n  attribute EventHandler onerror;\n  attribute EventHandler onclose;\n  readonly attribute DOMString extensions;\n  readonly attribute DOMString protocol;\n  undefined close(optional [Clamp] unsigned short code, optional USVString reason);\n\n  // messaging\n  attribute EventHandler onmessage;\n  attribute BinaryType binaryType;\n  undefined send(USVString data);\n  undefined send(Blob data);\n  undefined send(ArrayBuffer data);\n  undefined send(ArrayBufferView data);\n};",
         "type": "interface",
         "name": "WebSocket",
         "inheritance": "EventTarget",
@@ -28620,6 +28825,7 @@
         "partial": false
       },
       "CloseEvent": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface CloseEvent : Event {\n  constructor(DOMString type, optional CloseEventInit eventInitDict = {});\n\n  readonly attribute boolean wasClean;\n  readonly attribute unsigned short code;\n  readonly attribute USVString reason;\n};",
         "type": "interface",
         "name": "CloseEvent",
         "inheritance": "Event",
@@ -28731,6 +28937,7 @@
         "partial": false
       },
       "CloseEventInit": {
+        "fragment": "dictionary CloseEventInit : EventInit {\n  boolean wasClean = false;\n  unsigned short code = 0;\n  USVString reason = \"\";\n};",
         "type": "dictionary",
         "name": "CloseEventInit",
         "inheritance": "EventInit",
@@ -28794,6 +29001,7 @@
         "partial": false
       },
       "MessageChannel": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface MessageChannel {\n  constructor();\n\n  readonly attribute MessagePort port1;\n  readonly attribute MessagePort port2;\n};",
         "type": "interface",
         "name": "MessageChannel",
         "inheritance": null,
@@ -28855,6 +29063,7 @@
         "partial": false
       },
       "MessagePort": {
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet), Transferable]\ninterface MessagePort : EventTarget {\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional PostMessageOptions options = {});\n  undefined start();\n  undefined close();\n\n  // event handlers\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "MessagePort",
         "inheritance": "EventTarget",
@@ -29057,6 +29266,7 @@
         "partial": false
       },
       "PostMessageOptions": {
+        "fragment": "dictionary PostMessageOptions {\n  sequence<object> transfer = [];\n};",
         "type": "dictionary",
         "name": "PostMessageOptions",
         "inheritance": null,
@@ -29093,6 +29303,7 @@
         "partial": false
       },
       "BroadcastChannel": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface BroadcastChannel : EventTarget {\n  constructor(DOMString name);\n\n  readonly attribute DOMString name;\n  undefined postMessage(any message);\n  undefined close();\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "BroadcastChannel",
         "inheritance": "EventTarget",
@@ -29233,6 +29444,7 @@
         "partial": false
       },
       "WorkerGlobalScope": {
+        "fragment": "[Exposed=Worker]\ninterface WorkerGlobalScope : EventTarget {\n  readonly attribute WorkerGlobalScope self;\n  readonly attribute WorkerLocation location;\n  readonly attribute WorkerNavigator navigator;\n  undefined importScripts(USVString... urls);\n\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onunhandledrejection;\n};",
         "type": "interface",
         "name": "WorkerGlobalScope",
         "inheritance": "EventTarget",
@@ -29419,6 +29631,7 @@
         "partial": false
       },
       "DedicatedWorkerGlobalScope": {
+        "fragment": "[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface DedicatedWorkerGlobalScope : WorkerGlobalScope {\n  [Replaceable] readonly attribute DOMString name;\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional PostMessageOptions options = {});\n\n  undefined close();\n\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "DedicatedWorkerGlobalScope",
         "inheritance": "WorkerGlobalScope",
@@ -29628,6 +29841,7 @@
         "partial": false
       },
       "SharedWorkerGlobalScope": {
+        "fragment": "[Global=(Worker,SharedWorker),Exposed=SharedWorker]\ninterface SharedWorkerGlobalScope : WorkerGlobalScope {\n  [Replaceable] readonly attribute DOMString name;\n\n  undefined close();\n\n  attribute EventHandler onconnect;\n};",
         "type": "interface",
         "name": "SharedWorkerGlobalScope",
         "inheritance": "WorkerGlobalScope",
@@ -29715,6 +29929,7 @@
         "partial": false
       },
       "AbstractWorker": {
+        "fragment": "interface mixin AbstractWorker {\n  attribute EventHandler onerror;\n};",
         "type": "interface mixin",
         "name": "AbstractWorker",
         "inheritance": null,
@@ -29739,6 +29954,7 @@
         "partial": false
       },
       "Worker": {
+        "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface Worker : EventTarget {\n  constructor(USVString scriptURL, optional WorkerOptions options = {});\n\n  undefined terminate();\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional PostMessageOptions options = {});\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "Worker",
         "inheritance": "EventTarget",
@@ -29960,6 +30176,7 @@
         "partial": false
       },
       "WorkerOptions": {
+        "fragment": "dictionary WorkerOptions {\n  WorkerType type = \"classic\";\n  RequestCredentials credentials = \"same-origin\"; // credentials is only used if type is \"module\"\n  DOMString name = \"\";\n};",
         "type": "dictionary",
         "name": "WorkerOptions",
         "inheritance": null,
@@ -30023,6 +30240,7 @@
         "partial": false
       },
       "WorkerType": {
+        "fragment": "enum WorkerType { \"classic\", \"module\" };",
         "type": "enum",
         "name": "WorkerType",
         "values": [
@@ -30038,6 +30256,7 @@
         "extAttrs": []
       },
       "SharedWorker": {
+        "fragment": "[Exposed=Window]\ninterface SharedWorker : EventTarget {\n  constructor(USVString scriptURL, optional (DOMString or WorkerOptions) options = {});\n\n  readonly attribute MessagePort port;\n};",
         "type": "interface",
         "name": "SharedWorker",
         "inheritance": "EventTarget",
@@ -30129,6 +30348,7 @@
         "partial": false
       },
       "NavigatorConcurrentHardware": {
+        "fragment": "interface mixin NavigatorConcurrentHardware {\n  readonly attribute unsigned long long hardwareConcurrency;\n};",
         "type": "interface mixin",
         "name": "NavigatorConcurrentHardware",
         "inheritance": null,
@@ -30153,6 +30373,7 @@
         "partial": false
       },
       "WorkerNavigator": {
+        "fragment": "[Exposed=Worker]\ninterface WorkerNavigator {};",
         "type": "interface",
         "name": "WorkerNavigator",
         "inheritance": null,
@@ -30171,6 +30392,7 @@
         "partial": false
       },
       "WorkerLocation": {
+        "fragment": "[Exposed=Worker]\ninterface WorkerLocation {\n  stringifier readonly attribute USVString href;\n  readonly attribute USVString origin;\n  readonly attribute USVString protocol;\n  readonly attribute USVString host;\n  readonly attribute USVString hostname;\n  readonly attribute USVString port;\n  readonly attribute USVString pathname;\n  readonly attribute USVString search;\n  readonly attribute USVString hash;\n};",
         "type": "interface",
         "name": "WorkerLocation",
         "inheritance": null,
@@ -30325,6 +30547,7 @@
         "partial": false
       },
       "WorkletGlobalScope": {
+        "fragment": "[Exposed=Worklet, SecureContext]\ninterface WorkletGlobalScope {};",
         "type": "interface",
         "name": "WorkletGlobalScope",
         "inheritance": null,
@@ -30349,6 +30572,7 @@
         "partial": false
       },
       "Worklet": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface Worklet {\n  [NewObject] Promise<undefined> addModule(USVString moduleURL, optional WorkletOptions options = {});\n};",
         "type": "interface",
         "name": "Worklet",
         "inheritance": null,
@@ -30440,6 +30664,7 @@
         "partial": false
       },
       "WorkletOptions": {
+        "fragment": "dictionary WorkletOptions {\n  RequestCredentials credentials = \"same-origin\";\n};",
         "type": "dictionary",
         "name": "WorkletOptions",
         "inheritance": null,
@@ -30467,6 +30692,7 @@
         "partial": false
       },
       "Storage": {
+        "fragment": "[Exposed=Window]\ninterface Storage {\n  readonly attribute unsigned long length;\n  DOMString? key(unsigned long index);\n  getter DOMString? getItem(DOMString key);\n  setter undefined setItem(DOMString key, DOMString value);\n  deleter undefined removeItem(DOMString key);\n  undefined clear();\n};",
         "type": "interface",
         "name": "Storage",
         "inheritance": null,
@@ -30660,6 +30886,7 @@
         "partial": false
       },
       "WindowSessionStorage": {
+        "fragment": "interface mixin WindowSessionStorage {\n  readonly attribute Storage sessionStorage;\n};",
         "type": "interface mixin",
         "name": "WindowSessionStorage",
         "inheritance": null,
@@ -30684,6 +30911,7 @@
         "partial": false
       },
       "WindowLocalStorage": {
+        "fragment": "interface mixin WindowLocalStorage {\n  readonly attribute Storage localStorage;\n};",
         "type": "interface mixin",
         "name": "WindowLocalStorage",
         "inheritance": null,
@@ -30708,6 +30936,7 @@
         "partial": false
       },
       "StorageEvent": {
+        "fragment": "[Exposed=Window]\ninterface StorageEvent : Event {\n  constructor(DOMString type, optional StorageEventInit eventInitDict = {});\n\n  readonly attribute DOMString? key;\n  readonly attribute DOMString? oldValue;\n  readonly attribute DOMString? newValue;\n  readonly attribute USVString url;\n  readonly attribute Storage? storageArea;\n\n  undefined initStorageEvent(DOMString type, optional boolean bubbles = false, optional boolean cancelable = false, optional DOMString? key = null, optional DOMString? oldValue = null, optional DOMString? newValue = null, optional USVString url = \"\", optional Storage? storageArea = null);\n};",
         "type": "interface",
         "name": "StorageEvent",
         "inheritance": "Event",
@@ -31003,6 +31232,7 @@
         "partial": false
       },
       "StorageEventInit": {
+        "fragment": "dictionary StorageEventInit : EventInit {\n  DOMString? key = null;\n  DOMString? oldValue = null;\n  DOMString? newValue = null;\n  USVString url = \"\";\n  Storage? storageArea = null;\n};",
         "type": "dictionary",
         "name": "StorageEventInit",
         "inheritance": "EventInit",
@@ -31098,6 +31328,7 @@
         "partial": false
       },
       "HTMLMarqueeElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLMarqueeElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString behavior;\n  [CEReactions] attribute DOMString bgColor;\n  [CEReactions] attribute DOMString direction;\n  [CEReactions] attribute DOMString height;\n  [CEReactions] attribute unsigned long hspace;\n  [CEReactions] attribute long loop;\n  [CEReactions] attribute unsigned long scrollAmount;\n  [CEReactions] attribute unsigned long scrollDelay;\n  [CEReactions] attribute boolean trueSpeed;\n  [CEReactions] attribute unsigned long vspace;\n  [CEReactions] attribute DOMString width;\n\n  undefined start();\n  undefined stop();\n};",
         "type": "interface",
         "name": "HTMLMarqueeElement",
         "inheritance": "HTMLElement",
@@ -31401,6 +31632,7 @@
         "partial": false
       },
       "HTMLFrameSetElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLFrameSetElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString cols;\n  [CEReactions] attribute DOMString rows;\n};",
         "type": "interface",
         "name": "HTMLFrameSetElement",
         "inheritance": "HTMLElement",
@@ -31476,6 +31708,7 @@
         "partial": false
       },
       "HTMLFrameElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLFrameElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString scrolling;\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString frameBorder;\n  [CEReactions] attribute USVString longDesc;\n  [CEReactions] attribute boolean noResize;\n  readonly attribute Document? contentDocument;\n  readonly attribute WindowProxy? contentWindow;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString marginHeight;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString marginWidth;\n};",
         "type": "interface",
         "name": "HTMLFrameElement",
         "inheritance": "HTMLElement",
@@ -31727,6 +31960,7 @@
         "partial": false
       },
       "HTMLDirectoryElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLDirectoryElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute boolean compact;\n};",
         "type": "interface",
         "name": "HTMLDirectoryElement",
         "inheritance": "HTMLElement",
@@ -31780,6 +32014,7 @@
         "partial": false
       },
       "HTMLFontElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLFontElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString color;\n  [CEReactions] attribute DOMString face;\n  [CEReactions] attribute DOMString size;\n};",
         "type": "interface",
         "name": "HTMLFontElement",
         "inheritance": "HTMLElement",
@@ -31884,6 +32119,7 @@
         "partial": false
       },
       "External": {
+        "fragment": "[Exposed=Window]\ninterface External {\n  undefined AddSearchProvider();\n  undefined IsSearchProviderInstalled();\n};",
         "type": "interface",
         "name": "External",
         "inheritance": null,
@@ -31933,6 +32169,7 @@
         "partial": false
       },
       "NavigatorPlugins": {
+        "fragment": "interface mixin NavigatorPlugins {\n  [SameObject] readonly attribute PluginArray plugins;\n  [SameObject] readonly attribute MimeTypeArray mimeTypes;\n  boolean javaEnabled();\n};",
         "type": "interface mixin",
         "name": "NavigatorPlugins",
         "inheritance": null,
@@ -32001,6 +32238,7 @@
         "partial": false
       },
       "PluginArray": {
+        "fragment": "[Exposed=Window]\ninterface PluginArray {\n  undefined refresh();\n  readonly attribute unsigned long length;\n  object? item(unsigned long index);\n  object? namedItem(DOMString name);\n};",
         "type": "interface",
         "name": "PluginArray",
         "inheritance": null,
@@ -32114,6 +32352,7 @@
         "partial": false
       },
       "MimeTypeArray": {
+        "fragment": "[Exposed=Window]\ninterface MimeTypeArray {\n  readonly attribute unsigned long length;\n  object? item(unsigned long index);\n  object? namedItem(DOMString name);\n};",
         "type": "interface",
         "name": "MimeTypeArray",
         "inheritance": null,
@@ -32212,6 +32451,7 @@
         "partial": false
       },
       "Plugin": {
+        "fragment": "[Exposed=Window]\ninterface Plugin {\n  readonly attribute undefined name;\n  readonly attribute undefined description;\n  readonly attribute undefined filename;\n  readonly attribute undefined length;\n  undefined item(unsigned long index);\n  undefined namedItem(DOMString name);\n};",
         "type": "interface",
         "name": "Plugin",
         "inheritance": null,
@@ -32355,6 +32595,7 @@
         "partial": false
       },
       "MimeType": {
+        "fragment": "[Exposed=Window]\ninterface MimeType {\n  readonly attribute undefined type;\n  readonly attribute undefined description;\n  readonly attribute undefined suffixes;\n  readonly attribute undefined enabledPlugin;\n};",
         "type": "interface",
         "name": "MimeType",
         "inheritance": null,
@@ -32437,6 +32678,7 @@
     "idlExtendedNames": {
       "Document": [
         {
+          "fragment": "[LegacyOverrideBuiltIns]\npartial interface Document {\n  // resource metadata management\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location? location;\n  attribute USVString domain;\n  readonly attribute USVString referrer;\n  attribute USVString cookie;\n  readonly attribute DOMString lastModified;\n  readonly attribute DocumentReadyState readyState;\n\n  // DOM tree accessors\n  getter object (DOMString name);\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString dir;\n  [CEReactions] attribute HTMLElement? body;\n  readonly attribute HTMLHeadElement? head;\n  [SameObject] readonly attribute HTMLCollection images;\n  [SameObject] readonly attribute HTMLCollection embeds;\n  [SameObject] readonly attribute HTMLCollection plugins;\n  [SameObject] readonly attribute HTMLCollection links;\n  [SameObject] readonly attribute HTMLCollection forms;\n  [SameObject] readonly attribute HTMLCollection scripts;\n  NodeList getElementsByName(DOMString elementName);\n  readonly attribute HTMLOrSVGScriptElement? currentScript; // classic scripts in a document tree only\n\n  // dynamic markup insertion\n  [CEReactions] Document open(optional DOMString unused1, optional DOMString unused2); // both arguments are ignored\n  WindowProxy? open(USVString url, DOMString name, DOMString features);\n  [CEReactions] undefined close();\n  [CEReactions] undefined write(DOMString... text);\n  [CEReactions] undefined writeln(DOMString... text);\n\n  // user interaction\n  readonly attribute WindowProxy? defaultView;\n  boolean hasFocus();\n  [CEReactions] attribute DOMString designMode;\n  [CEReactions] boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = \"\");\n  boolean queryCommandEnabled(DOMString commandId);\n  boolean queryCommandIndeterm(DOMString commandId);\n  boolean queryCommandState(DOMString commandId);\n  boolean queryCommandSupported(DOMString commandId);\n  DOMString queryCommandValue(DOMString commandId);\n\n  // special event handler IDL attributes that only apply to Document objects\n  [LegacyLenientThis] attribute EventHandler onreadystatechange;\n\n  // also has obsolete members\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -33381,16 +33623,21 @@
           "partial": true
         },
         {
-          "name": "Document",
-          "type": "interface",
+          "fragment": "Document includes GlobalEventHandlers;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Document",
           "includes": "GlobalEventHandlers"
         },
         {
-          "name": "Document",
-          "type": "interface",
+          "fragment": "Document includes DocumentAndElementEventHandlers;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Document",
           "includes": "DocumentAndElementEventHandlers"
         },
         {
+          "fragment": "partial interface Document {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString fgColor;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString linkColor;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString vlinkColor;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString alinkColor;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString bgColor;\n\n  [SameObject] readonly attribute HTMLCollection anchors;\n  [SameObject] readonly attribute HTMLCollection applets;\n\n  undefined clear();\n  undefined captureEvents();\n  undefined releaseEvents();\n\n  [SameObject] readonly attribute HTMLAllCollection all;\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -33658,6 +33905,7 @@
       ],
       "DocumentOrShadowRoot": [
         {
+          "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element? activeElement;\n};",
           "type": "interface mixin",
           "name": "DocumentOrShadowRoot",
           "inheritance": null,
@@ -33684,33 +33932,44 @@
       ],
       "HTMLElement": [
         {
-          "name": "HTMLElement",
-          "type": "interface",
+          "fragment": "HTMLElement includes GlobalEventHandlers;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLElement",
           "includes": "GlobalEventHandlers"
         },
         {
-          "name": "HTMLElement",
-          "type": "interface",
+          "fragment": "HTMLElement includes DocumentAndElementEventHandlers;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLElement",
           "includes": "DocumentAndElementEventHandlers"
         },
         {
-          "name": "HTMLElement",
-          "type": "interface",
+          "fragment": "HTMLElement includes ElementContentEditable;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLElement",
           "includes": "ElementContentEditable"
         },
         {
-          "name": "HTMLElement",
-          "type": "interface",
+          "fragment": "HTMLElement includes HTMLOrSVGElement;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLElement",
           "includes": "HTMLOrSVGElement"
         }
       ],
       "HTMLLinkElement": [
         {
-          "name": "HTMLLinkElement",
-          "type": "interface",
+          "fragment": "HTMLLinkElement includes LinkStyle;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLLinkElement",
           "includes": "LinkStyle"
         },
         {
+          "fragment": "partial interface HTMLLinkElement {\n  [CEReactions] attribute DOMString charset;\n  [CEReactions] attribute DOMString rev;\n  [CEReactions] attribute DOMString target;\n};",
           "type": "interface",
           "name": "HTMLLinkElement",
           "inheritance": null,
@@ -33788,11 +34047,14 @@
       ],
       "HTMLStyleElement": [
         {
-          "name": "HTMLStyleElement",
-          "type": "interface",
+          "fragment": "HTMLStyleElement includes LinkStyle;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLStyleElement",
           "includes": "LinkStyle"
         },
         {
+          "fragment": "partial interface HTMLStyleElement {\n  [CEReactions] attribute DOMString type;\n};",
           "type": "interface",
           "name": "HTMLStyleElement",
           "inheritance": null,
@@ -33826,11 +34088,14 @@
       ],
       "HTMLBodyElement": [
         {
-          "name": "HTMLBodyElement",
-          "type": "interface",
+          "fragment": "HTMLBodyElement includes WindowEventHandlers;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLBodyElement",
           "includes": "WindowEventHandlers"
         },
         {
+          "fragment": "partial interface HTMLBodyElement {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString text;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString link;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString vLink;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString aLink;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString bgColor;\n  [CEReactions] attribute DOMString background;\n};",
           "type": "interface",
           "name": "HTMLBodyElement",
           "inheritance": null,
@@ -34009,11 +34274,14 @@
       ],
       "HTMLAnchorElement": [
         {
-          "name": "HTMLAnchorElement",
-          "type": "interface",
+          "fragment": "HTMLAnchorElement includes HTMLHyperlinkElementUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLAnchorElement",
           "includes": "HTMLHyperlinkElementUtils"
         },
         {
+          "fragment": "partial interface HTMLAnchorElement {\n  [CEReactions] attribute DOMString coords;\n  [CEReactions] attribute DOMString charset;\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString rev;\n  [CEReactions] attribute DOMString shape;\n};",
           "type": "interface",
           "name": "HTMLAnchorElement",
           "inheritance": null,
@@ -34135,11 +34403,14 @@
       ],
       "HTMLAreaElement": [
         {
-          "name": "HTMLAreaElement",
-          "type": "interface",
+          "fragment": "HTMLAreaElement includes HTMLHyperlinkElementUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLAreaElement",
           "includes": "HTMLHyperlinkElementUtils"
         },
         {
+          "fragment": "partial interface HTMLAreaElement {\n  [CEReactions] attribute boolean noHref;\n};",
           "type": "interface",
           "name": "HTMLAreaElement",
           "inheritance": null,
@@ -34173,209 +34444,288 @@
       ],
       "CanvasRenderingContext2D": [
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasState;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasState"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasTransform;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasTransform"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasCompositing;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasCompositing"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasImageSmoothing;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasImageSmoothing"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasFillStrokeStyles;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasFillStrokeStyles"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasShadowStyles;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasShadowStyles"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasFilters;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasFilters"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasRect;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasRect"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasDrawPath;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasDrawPath"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasUserInterface;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasUserInterface"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasText;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasText"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasDrawImage;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasDrawImage"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasImageData;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasImageData"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasPathDrawingStyles;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasPathDrawingStyles"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasTextDrawingStyles;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasTextDrawingStyles"
         },
         {
-          "name": "CanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "CanvasRenderingContext2D includes CanvasPath;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CanvasRenderingContext2D",
           "includes": "CanvasPath"
         }
       ],
       "Path2D": [
         {
-          "name": "Path2D",
-          "type": "interface",
+          "fragment": "Path2D includes CanvasPath;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Path2D",
           "includes": "CanvasPath"
         }
       ],
       "OffscreenCanvasRenderingContext2D": [
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasState;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasState"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasTransform;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasTransform"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasCompositing;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasCompositing"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasImageSmoothing;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasImageSmoothing"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasFillStrokeStyles;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasFillStrokeStyles"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasShadowStyles;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasShadowStyles"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasFilters;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasFilters"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasRect;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasRect"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasDrawPath;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasDrawPath"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasText;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasText"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasDrawImage;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasDrawImage"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasImageData;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasImageData"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasPathDrawingStyles;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasPathDrawingStyles"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasTextDrawingStyles;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasTextDrawingStyles"
         },
         {
-          "name": "OffscreenCanvasRenderingContext2D",
-          "type": "interface",
+          "fragment": "OffscreenCanvasRenderingContext2D includes CanvasPath;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "OffscreenCanvasRenderingContext2D",
           "includes": "CanvasPath"
         }
       ],
       "ElementInternals": [
         {
-          "name": "ElementInternals",
-          "type": "interface",
+          "fragment": "// Accessibility semantics\nElementInternals includes ARIAMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "ElementInternals",
           "includes": "ARIAMixin"
         }
       ],
       "Window": [
         {
-          "name": "Window",
-          "type": "interface",
+          "fragment": "Window includes GlobalEventHandlers;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Window",
           "includes": "GlobalEventHandlers"
         },
         {
-          "name": "Window",
-          "type": "interface",
+          "fragment": "Window includes WindowEventHandlers;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Window",
           "includes": "WindowEventHandlers"
         },
         {
-          "name": "Window",
-          "type": "interface",
+          "fragment": "Window includes WindowOrWorkerGlobalScope;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Window",
           "includes": "WindowOrWorkerGlobalScope"
         },
         {
-          "name": "Window",
-          "type": "interface",
+          "fragment": "Window includes AnimationFrameProvider;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Window",
           "includes": "AnimationFrameProvider"
         },
         {
-          "name": "Window",
-          "type": "interface",
+          "fragment": "Window includes WindowSessionStorage;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Window",
           "includes": "WindowSessionStorage"
         },
         {
-          "name": "Window",
-          "type": "interface",
+          "fragment": "Window includes WindowLocalStorage;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Window",
           "includes": "WindowLocalStorage"
         },
         {
+          "fragment": "partial interface Window {\n  undefined captureEvents();\n  undefined releaseEvents();\n\n  [Replaceable, SameObject] readonly attribute External external;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -34445,50 +34795,67 @@
       ],
       "WorkerGlobalScope": [
         {
-          "name": "WorkerGlobalScope",
-          "type": "interface",
+          "fragment": "WorkerGlobalScope includes WindowOrWorkerGlobalScope;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WorkerGlobalScope",
           "includes": "WindowOrWorkerGlobalScope"
         }
       ],
       "Navigator": [
         {
-          "name": "Navigator",
-          "type": "interface",
+          "fragment": "Navigator includes NavigatorID;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
           "includes": "NavigatorID"
         },
         {
-          "name": "Navigator",
-          "type": "interface",
+          "fragment": "Navigator includes NavigatorLanguage;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
           "includes": "NavigatorLanguage"
         },
         {
-          "name": "Navigator",
-          "type": "interface",
+          "fragment": "Navigator includes NavigatorOnLine;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
           "includes": "NavigatorOnLine"
         },
         {
-          "name": "Navigator",
-          "type": "interface",
+          "fragment": "Navigator includes NavigatorContentUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
           "includes": "NavigatorContentUtils"
         },
         {
-          "name": "Navigator",
-          "type": "interface",
+          "fragment": "Navigator includes NavigatorCookies;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
           "includes": "NavigatorCookies"
         },
         {
-          "name": "Navigator",
-          "type": "interface",
+          "fragment": "Navigator includes NavigatorPlugins;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
           "includes": "NavigatorPlugins"
         },
         {
-          "name": "Navigator",
-          "type": "interface",
+          "fragment": "Navigator includes NavigatorConcurrentHardware;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
           "includes": "NavigatorConcurrentHardware"
         }
       ],
       "NavigatorID": [
         {
+          "fragment": "partial interface mixin NavigatorID {\n  [Exposed=Window] boolean taintEnabled(); // constant false\n  [Exposed=Window] readonly attribute DOMString oscpu;\n};",
           "type": "interface mixin",
           "name": "NavigatorID",
           "inheritance": null,
@@ -34550,56 +34917,73 @@
       ],
       "DedicatedWorkerGlobalScope": [
         {
-          "name": "DedicatedWorkerGlobalScope",
-          "type": "interface",
+          "fragment": "DedicatedWorkerGlobalScope includes AnimationFrameProvider;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "DedicatedWorkerGlobalScope",
           "includes": "AnimationFrameProvider"
         }
       ],
       "Worker": [
         {
-          "name": "Worker",
-          "type": "interface",
+          "fragment": "Worker includes AbstractWorker;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Worker",
           "includes": "AbstractWorker"
         }
       ],
       "SharedWorker": [
         {
-          "name": "SharedWorker",
-          "type": "interface",
+          "fragment": "SharedWorker includes AbstractWorker;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SharedWorker",
           "includes": "AbstractWorker"
         }
       ],
       "WorkerNavigator": [
         {
-          "name": "WorkerNavigator",
-          "type": "interface",
+          "fragment": "WorkerNavigator includes NavigatorID;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WorkerNavigator",
           "includes": "NavigatorID"
         },
         {
-          "name": "WorkerNavigator",
-          "type": "interface",
+          "fragment": "WorkerNavigator includes NavigatorLanguage;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WorkerNavigator",
           "includes": "NavigatorLanguage"
         },
         {
-          "name": "WorkerNavigator",
-          "type": "interface",
+          "fragment": "WorkerNavigator includes NavigatorOnLine;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WorkerNavigator",
           "includes": "NavigatorOnLine"
         },
         {
-          "name": "WorkerNavigator",
-          "type": "interface",
+          "fragment": "WorkerNavigator includes NavigatorConcurrentHardware;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WorkerNavigator",
           "includes": "NavigatorConcurrentHardware"
         }
       ],
       "HTMLFrameSetElement": [
         {
-          "name": "HTMLFrameSetElement",
-          "type": "interface",
+          "fragment": "HTMLFrameSetElement includes WindowEventHandlers;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLFrameSetElement",
           "includes": "WindowEventHandlers"
         }
       ],
       "HTMLBRElement": [
         {
+          "fragment": "partial interface HTMLBRElement {\n  [CEReactions] attribute DOMString clear;\n};",
           "type": "interface",
           "name": "HTMLBRElement",
           "inheritance": null,
@@ -34633,6 +35017,7 @@
       ],
       "HTMLTableCaptionElement": [
         {
+          "fragment": "partial interface HTMLTableCaptionElement {\n  [CEReactions] attribute DOMString align;\n};",
           "type": "interface",
           "name": "HTMLTableCaptionElement",
           "inheritance": null,
@@ -34666,6 +35051,7 @@
       ],
       "HTMLTableColElement": [
         {
+          "fragment": "partial interface HTMLTableColElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString ch;\n  [CEReactions] attribute DOMString chOff;\n  [CEReactions] attribute DOMString vAlign;\n  [CEReactions] attribute DOMString width;\n};",
           "type": "interface",
           "name": "HTMLTableColElement",
           "inheritance": null,
@@ -34787,6 +35173,7 @@
       ],
       "HTMLDivElement": [
         {
+          "fragment": "partial interface HTMLDivElement {\n  [CEReactions] attribute DOMString align;\n};",
           "type": "interface",
           "name": "HTMLDivElement",
           "inheritance": null,
@@ -34820,6 +35207,7 @@
       ],
       "HTMLDListElement": [
         {
+          "fragment": "partial interface HTMLDListElement {\n  [CEReactions] attribute boolean compact;\n};",
           "type": "interface",
           "name": "HTMLDListElement",
           "inheritance": null,
@@ -34853,6 +35241,7 @@
       ],
       "HTMLEmbedElement": [
         {
+          "fragment": "partial interface HTMLEmbedElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString name;\n};",
           "type": "interface",
           "name": "HTMLEmbedElement",
           "inheritance": null,
@@ -34908,6 +35297,7 @@
       ],
       "HTMLHeadingElement": [
         {
+          "fragment": "partial interface HTMLHeadingElement {\n  [CEReactions] attribute DOMString align;\n};",
           "type": "interface",
           "name": "HTMLHeadingElement",
           "inheritance": null,
@@ -34941,6 +35331,7 @@
       ],
       "HTMLHRElement": [
         {
+          "fragment": "partial interface HTMLHRElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString color;\n  [CEReactions] attribute boolean noShade;\n  [CEReactions] attribute DOMString size;\n  [CEReactions] attribute DOMString width;\n};",
           "type": "interface",
           "name": "HTMLHRElement",
           "inheritance": null,
@@ -35062,6 +35453,7 @@
       ],
       "HTMLHtmlElement": [
         {
+          "fragment": "partial interface HTMLHtmlElement {\n  [CEReactions] attribute DOMString version;\n};",
           "type": "interface",
           "name": "HTMLHtmlElement",
           "inheritance": null,
@@ -35095,6 +35487,7 @@
       ],
       "HTMLIFrameElement": [
         {
+          "fragment": "partial interface HTMLIFrameElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString scrolling;\n  [CEReactions] attribute DOMString frameBorder;\n  [CEReactions] attribute USVString longDesc;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString marginHeight;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString marginWidth;\n};",
           "type": "interface",
           "name": "HTMLIFrameElement",
           "inheritance": null,
@@ -35252,6 +35645,7 @@
       ],
       "HTMLImageElement": [
         {
+          "fragment": "partial interface HTMLImageElement {\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute USVString lowsrc;\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute unsigned long hspace;\n  [CEReactions] attribute unsigned long vspace;\n  [CEReactions] attribute USVString longDesc;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString border;\n};",
           "type": "interface",
           "name": "HTMLImageElement",
           "inheritance": null,
@@ -35424,6 +35818,7 @@
       ],
       "HTMLInputElement": [
         {
+          "fragment": "partial interface HTMLInputElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString useMap;\n};",
           "type": "interface",
           "name": "HTMLInputElement",
           "inheritance": null,
@@ -35479,6 +35874,7 @@
       ],
       "HTMLLegendElement": [
         {
+          "fragment": "partial interface HTMLLegendElement {\n  [CEReactions] attribute DOMString align;\n};",
           "type": "interface",
           "name": "HTMLLegendElement",
           "inheritance": null,
@@ -35512,6 +35908,7 @@
       ],
       "HTMLLIElement": [
         {
+          "fragment": "partial interface HTMLLIElement {\n  [CEReactions] attribute DOMString type;\n};",
           "type": "interface",
           "name": "HTMLLIElement",
           "inheritance": null,
@@ -35545,6 +35942,7 @@
       ],
       "HTMLMenuElement": [
         {
+          "fragment": "partial interface HTMLMenuElement {\n  [CEReactions] attribute boolean compact;\n};",
           "type": "interface",
           "name": "HTMLMenuElement",
           "inheritance": null,
@@ -35578,6 +35976,7 @@
       ],
       "HTMLMetaElement": [
         {
+          "fragment": "partial interface HTMLMetaElement {\n  [CEReactions] attribute DOMString scheme;\n};",
           "type": "interface",
           "name": "HTMLMetaElement",
           "inheritance": null,
@@ -35611,6 +36010,7 @@
       ],
       "HTMLObjectElement": [
         {
+          "fragment": "partial interface HTMLObjectElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString archive;\n  [CEReactions] attribute DOMString code;\n  [CEReactions] attribute boolean declare;\n  [CEReactions] attribute unsigned long hspace;\n  [CEReactions] attribute DOMString standby;\n  [CEReactions] attribute unsigned long vspace;\n  [CEReactions] attribute DOMString codeBase;\n  [CEReactions] attribute DOMString codeType;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString border;\n};",
           "type": "interface",
           "name": "HTMLObjectElement",
           "inheritance": null,
@@ -35849,6 +36249,7 @@
       ],
       "HTMLOListElement": [
         {
+          "fragment": "partial interface HTMLOListElement {\n  [CEReactions] attribute boolean compact;\n};",
           "type": "interface",
           "name": "HTMLOListElement",
           "inheritance": null,
@@ -35882,6 +36283,7 @@
       ],
       "HTMLParagraphElement": [
         {
+          "fragment": "partial interface HTMLParagraphElement {\n  [CEReactions] attribute DOMString align;\n};",
           "type": "interface",
           "name": "HTMLParagraphElement",
           "inheritance": null,
@@ -35915,6 +36317,7 @@
       ],
       "HTMLParamElement": [
         {
+          "fragment": "partial interface HTMLParamElement {\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute DOMString valueType;\n};",
           "type": "interface",
           "name": "HTMLParamElement",
           "inheritance": null,
@@ -35970,6 +36373,7 @@
       ],
       "HTMLPreElement": [
         {
+          "fragment": "partial interface HTMLPreElement {\n  [CEReactions] attribute long width;\n};",
           "type": "interface",
           "name": "HTMLPreElement",
           "inheritance": null,
@@ -36003,6 +36407,7 @@
       ],
       "HTMLScriptElement": [
         {
+          "fragment": "partial interface HTMLScriptElement {\n  [CEReactions] attribute DOMString charset;\n  [CEReactions] attribute DOMString event;\n  [CEReactions] attribute DOMString htmlFor;\n};",
           "type": "interface",
           "name": "HTMLScriptElement",
           "inheritance": null,
@@ -36080,6 +36485,7 @@
       ],
       "HTMLTableElement": [
         {
+          "fragment": "partial interface HTMLTableElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString border;\n  [CEReactions] attribute DOMString frame;\n  [CEReactions] attribute DOMString rules;\n  [CEReactions] attribute DOMString summary;\n  [CEReactions] attribute DOMString width;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString bgColor;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString cellPadding;\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString cellSpacing;\n};",
           "type": "interface",
           "name": "HTMLTableElement",
           "inheritance": null,
@@ -36310,6 +36716,7 @@
       ],
       "HTMLTableSectionElement": [
         {
+          "fragment": "partial interface HTMLTableSectionElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString ch;\n  [CEReactions] attribute DOMString chOff;\n  [CEReactions] attribute DOMString vAlign;\n};",
           "type": "interface",
           "name": "HTMLTableSectionElement",
           "inheritance": null,
@@ -36409,6 +36816,7 @@
       ],
       "HTMLTableCellElement": [
         {
+          "fragment": "partial interface HTMLTableCellElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString axis;\n  [CEReactions] attribute DOMString height;\n  [CEReactions] attribute DOMString width;\n\n  [CEReactions] attribute DOMString ch;\n  [CEReactions] attribute DOMString chOff;\n  [CEReactions] attribute boolean noWrap;\n  [CEReactions] attribute DOMString vAlign;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString bgColor;\n};",
           "type": "interface",
           "name": "HTMLTableCellElement",
           "inheritance": null,
@@ -36625,6 +37033,7 @@
       ],
       "HTMLTableRowElement": [
         {
+          "fragment": "partial interface HTMLTableRowElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString ch;\n  [CEReactions] attribute DOMString chOff;\n  [CEReactions] attribute DOMString vAlign;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString bgColor;\n};",
           "type": "interface",
           "name": "HTMLTableRowElement",
           "inheritance": null,
@@ -36753,6 +37162,7 @@
       ],
       "HTMLUListElement": [
         {
+          "fragment": "partial interface HTMLUListElement {\n  [CEReactions] attribute boolean compact;\n  [CEReactions] attribute DOMString type;\n};",
           "type": "interface",
           "name": "HTMLUListElement",
           "inheritance": null,

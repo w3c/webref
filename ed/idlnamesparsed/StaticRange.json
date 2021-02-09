@@ -1,0 +1,27 @@
+{
+  "name": "StaticRange",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface StaticRange : AbstractRange {\n  constructor(StaticRangeInit init);\n};",
+    "href": "https://dom.spec.whatwg.org/#staticrange"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AbstractRange",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=Window]\ninterface AbstractRange {\n  readonly attribute Node startContainer;\n  readonly attribute unsigned long startOffset;\n  readonly attribute Node endContainer;\n  readonly attribute unsigned long endOffset;\n  readonly attribute boolean collapsed;\n};",
+      "href": "https://dom.spec.whatwg.org/#abstractrange"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

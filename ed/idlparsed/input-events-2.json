@@ -12,6 +12,7 @@
     "idlExtendedNames": {
       "InputEvent": [
         {
+          "fragment": "partial interface InputEvent {\n   readonly attribute DataTransfer? dataTransfer;\n   sequence<StaticRange> getTargetRanges();\n};",
           "type": "interface",
           "name": "InputEvent",
           "inheritance": null,
@@ -62,6 +63,7 @@
       ],
       "InputEventInit": [
         {
+          "fragment": "partial dictionary InputEventInit {\n   DataTransfer? dataTransfer = null;\n   sequence<StaticRange> targetRanges = [];\n};",
           "type": "dictionary",
           "name": "InputEventInit",
           "inheritance": null,

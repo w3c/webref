@@ -1,0 +1,37 @@
+{
+  "name": "TextDecoder",
+  "defined": {
+    "spec": {
+      "title": "Encoding Standard",
+      "url": "https://www.w3.org/TR/encoding/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface TextDecoder {\n  constructor(optional DOMString label = \"utf-8\", optional TextDecoderOptions options = {});\n\n  USVString decode(optional [AllowShared] BufferSource input, optional TextDecodeOptions options = {});\n};",
+    "href": "https://encoding.spec.whatwg.org/#textdecoder"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Encoding Standard",
+        "url": "https://www.w3.org/TR/encoding/"
+      },
+      "fragment": "TextDecoder includes TextDecoderCommon;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "TextDecoderCommon",
+      "defined": {
+        "spec": {
+          "title": "Encoding Standard",
+          "url": "https://www.w3.org/TR/encoding/"
+        },
+        "fragment": "interface mixin TextDecoderCommon {\n  readonly attribute DOMString encoding;\n  readonly attribute boolean fatal;\n  readonly attribute boolean ignoreBOM;\n};",
+        "href": "https://encoding.spec.whatwg.org/#textdecodercommon"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

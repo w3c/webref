@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "AmbientLightSensor": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface AmbientLightSensor : Sensor {\n  constructor(optional SensorOptions sensorOptions = {});\n  readonly attribute double? illuminance;\n};",
         "type": "interface",
         "name": "AmbientLightSensor",
         "inheritance": "Sensor",
@@ -78,6 +79,7 @@
         "partial": false
       },
       "AmbientLightReadingValues": {
+        "fragment": "dictionary AmbientLightReadingValues {\n  required double? illuminance;\n};",
         "type": "dictionary",
         "name": "AmbientLightReadingValues",
         "inheritance": null,

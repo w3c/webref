@@ -1,0 +1,37 @@
+{
+  "name": "GPUTextureView",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://gpuweb.github.io/gpuweb/"
+    },
+    "fragment": "interface GPUTextureView {\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gputextureview"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://gpuweb.github.io/gpuweb/"
+      },
+      "fragment": "GPUTextureView includes GPUObjectBase;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "GPUObjectBase",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        },
+        "fragment": "interface mixin GPUObjectBase {\n    attribute USVString? label;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

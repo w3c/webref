@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "ResizeObserverBoxOptions": {
+        "fragment": "enum ResizeObserverBoxOptions {\n    \"border-box\", \"content-box\", \"device-pixel-content-box\"\n};",
         "type": "enum",
         "name": "ResizeObserverBoxOptions",
         "values": [
@@ -38,6 +39,7 @@
         "extAttrs": []
       },
       "ResizeObserverOptions": {
+        "fragment": "dictionary ResizeObserverOptions {\n    ResizeObserverBoxOptions box = \"content-box\";\n};",
         "type": "dictionary",
         "name": "ResizeObserverOptions",
         "inheritance": null,
@@ -65,6 +67,7 @@
         "partial": false
       },
       "ResizeObserver": {
+        "fragment": "[Exposed=(Window)]\ninterface ResizeObserver {\n    constructor(ResizeObserverCallback callback);\n    undefined observe(Element target, optional ResizeObserverOptions options = {});\n    undefined unobserve(Element target);\n    undefined disconnect();\n};",
         "type": "interface",
         "name": "ResizeObserver",
         "inheritance": null,
@@ -207,6 +210,7 @@
         "partial": false
       },
       "ResizeObserverCallback": {
+        "fragment": "callback ResizeObserverCallback = undefined (sequence<ResizeObserverEntry> entries, ResizeObserver observer);",
         "type": "callback",
         "name": "ResizeObserverCallback",
         "idlType": {
@@ -263,6 +267,7 @@
         "extAttrs": []
       },
       "ResizeObserverEntry": {
+        "fragment": "[Exposed=Window]\ninterface ResizeObserverEntry {\n    readonly attribute Element target;\n    readonly attribute DOMRectReadOnly contentRect;\n    readonly attribute FrozenArray<ResizeObserverSize> borderBoxSize;\n    readonly attribute FrozenArray<ResizeObserverSize> contentBoxSize;\n    readonly attribute FrozenArray<ResizeObserverSize> devicePixelContentBoxSize;\n};",
         "type": "interface",
         "name": "ResizeObserverEntry",
         "inheritance": null,
@@ -384,6 +389,7 @@
         "partial": false
       },
       "ResizeObserverSize": {
+        "fragment": "[Exposed=Window]\ninterface ResizeObserverSize {\n    readonly attribute unrestricted double inlineSize;\n    readonly attribute unrestricted double blockSize;\n};",
         "type": "interface",
         "name": "ResizeObserverSize",
         "inheritance": null,

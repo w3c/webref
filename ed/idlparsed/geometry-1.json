@@ -33,6 +33,7 @@
     },
     "idlNames": {
       "DOMPointReadOnly": {
+        "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface DOMPointReadOnly {\n    constructor(optional unrestricted double x = 0, optional unrestricted double y = 0,\n            optional unrestricted double z = 0, optional unrestricted double w = 1);\n\n    [NewObject] static DOMPointReadOnly fromPoint(optional DOMPointInit other = {});\n\n    readonly attribute unrestricted double x;\n    readonly attribute unrestricted double y;\n    readonly attribute unrestricted double z;\n    readonly attribute unrestricted double w;\n\n    [NewObject] DOMPoint matrixTransform(optional DOMMatrixInit matrix = {});\n\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "DOMPointReadOnly",
         "inheritance": null,
@@ -311,6 +312,7 @@
         "partial": false
       },
       "DOMPoint": {
+        "fragment": "[Exposed=(Window,Worker),\n Serializable,\n LegacyWindowAlias=SVGPoint]\ninterface DOMPoint : DOMPointReadOnly {\n    constructor(optional unrestricted double x = 0, optional unrestricted double y = 0,\n            optional unrestricted double z = 0, optional unrestricted double w = 1);\n\n    [NewObject] static DOMPoint fromPoint(optional DOMPointInit other = {});\n\n    inherit attribute unrestricted double x;\n    inherit attribute unrestricted double y;\n    inherit attribute unrestricted double z;\n    inherit attribute unrestricted double w;\n};",
         "type": "interface",
         "name": "DOMPoint",
         "inheritance": "DOMPointReadOnly",
@@ -535,6 +537,7 @@
         "partial": false
       },
       "DOMPointInit": {
+        "fragment": "dictionary DOMPointInit {\n    unrestricted double x = 0;\n    unrestricted double y = 0;\n    unrestricted double z = 0;\n    unrestricted double w = 1;\n};",
         "type": "dictionary",
         "name": "DOMPointInit",
         "inheritance": null,
@@ -616,6 +619,7 @@
         "partial": false
       },
       "DOMRectReadOnly": {
+        "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface DOMRectReadOnly {\n    constructor(optional unrestricted double x = 0, optional unrestricted double y = 0,\n            optional unrestricted double width = 0, optional unrestricted double height = 0);\n\n    [NewObject] static DOMRectReadOnly fromRect(optional DOMRectInit other = {});\n\n    readonly attribute unrestricted double x;\n    readonly attribute unrestricted double y;\n    readonly attribute unrestricted double width;\n    readonly attribute unrestricted double height;\n    readonly attribute unrestricted double top;\n    readonly attribute unrestricted double right;\n    readonly attribute unrestricted double bottom;\n    readonly attribute unrestricted double left;\n\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "DOMRectReadOnly",
         "inheritance": null,
@@ -913,6 +917,7 @@
         "partial": false
       },
       "DOMRect": {
+        "fragment": "[Exposed=(Window,Worker),\n Serializable,\n LegacyWindowAlias=SVGRect]\ninterface DOMRect : DOMRectReadOnly {\n    constructor(optional unrestricted double x = 0, optional unrestricted double y = 0,\n            optional unrestricted double width = 0, optional unrestricted double height = 0);\n\n    [NewObject] static DOMRect fromRect(optional DOMRectInit other = {});\n\n    inherit attribute unrestricted double x;\n    inherit attribute unrestricted double y;\n    inherit attribute unrestricted double width;\n    inherit attribute unrestricted double height;\n};",
         "type": "interface",
         "name": "DOMRect",
         "inheritance": "DOMRectReadOnly",
@@ -1137,6 +1142,7 @@
         "partial": false
       },
       "DOMRectInit": {
+        "fragment": "dictionary DOMRectInit {\n    unrestricted double x = 0;\n    unrestricted double y = 0;\n    unrestricted double width = 0;\n    unrestricted double height = 0;\n};",
         "type": "dictionary",
         "name": "DOMRectInit",
         "inheritance": null,
@@ -1218,6 +1224,7 @@
         "partial": false
       },
       "DOMRectList": {
+        "fragment": "[Exposed=Window]\ninterface DOMRectList {\n    readonly attribute unsigned long length;\n    getter DOMRect? item(unsigned long index);\n};",
         "type": "interface",
         "name": "DOMRectList",
         "inheritance": null,
@@ -1284,6 +1291,7 @@
         "partial": false
       },
       "DOMQuad": {
+        "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface DOMQuad {\n    constructor(optional DOMPointInit p1 = {}, optional DOMPointInit p2 = {},\n            optional DOMPointInit p3 = {}, optional DOMPointInit p4 = {});\n\n    [NewObject] static DOMQuad fromRect(optional DOMRectInit other = {});\n    [NewObject] static DOMQuad fromQuad(optional DOMQuadInit other = {});\n\n    [SameObject] readonly attribute DOMPoint p1;\n    [SameObject] readonly attribute DOMPoint p2;\n    [SameObject] readonly attribute DOMPoint p3;\n    [SameObject] readonly attribute DOMPoint p4;\n    [NewObject] DOMRect getBounds();\n\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "DOMQuad",
         "inheritance": null,
@@ -1608,6 +1616,7 @@
         "partial": false
       },
       "DOMQuadInit": {
+        "fragment": "dictionary DOMQuadInit {\n  DOMPointInit p1;\n  DOMPointInit p2;\n  DOMPointInit p3;\n  DOMPointInit p4;\n};",
         "type": "dictionary",
         "name": "DOMQuadInit",
         "inheritance": null,
@@ -1677,6 +1686,7 @@
         "partial": false
       },
       "DOMMatrixReadOnly": {
+        "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface DOMMatrixReadOnly {\n    constructor(optional (DOMString or sequence<unrestricted double>) init);\n\n    [NewObject] static DOMMatrixReadOnly fromMatrix(optional DOMMatrixInit other = {});\n    [NewObject] static DOMMatrixReadOnly fromFloat32Array(Float32Array array32);\n    [NewObject] static DOMMatrixReadOnly fromFloat64Array(Float64Array array64);\n\n    // These attributes are simple aliases for certain elements of the 4x4 matrix\n    readonly attribute unrestricted double a;\n    readonly attribute unrestricted double b;\n    readonly attribute unrestricted double c;\n    readonly attribute unrestricted double d;\n    readonly attribute unrestricted double e;\n    readonly attribute unrestricted double f;\n\n    readonly attribute unrestricted double m11;\n    readonly attribute unrestricted double m12;\n    readonly attribute unrestricted double m13;\n    readonly attribute unrestricted double m14;\n    readonly attribute unrestricted double m21;\n    readonly attribute unrestricted double m22;\n    readonly attribute unrestricted double m23;\n    readonly attribute unrestricted double m24;\n    readonly attribute unrestricted double m31;\n    readonly attribute unrestricted double m32;\n    readonly attribute unrestricted double m33;\n    readonly attribute unrestricted double m34;\n    readonly attribute unrestricted double m41;\n    readonly attribute unrestricted double m42;\n    readonly attribute unrestricted double m43;\n    readonly attribute unrestricted double m44;\n\n    readonly attribute boolean is2D;\n    readonly attribute boolean isIdentity;\n\n    // Immutable transform methods\n    [NewObject] DOMMatrix translate(optional unrestricted double tx = 0,\n                                    optional unrestricted double ty = 0,\n                                    optional unrestricted double tz = 0);\n    [NewObject] DOMMatrix scale(optional unrestricted double scaleX = 1,\n                                optional unrestricted double scaleY,\n                                optional unrestricted double scaleZ = 1,\n                                optional unrestricted double originX = 0,\n                                optional unrestricted double originY = 0,\n                                optional unrestricted double originZ = 0);\n    [NewObject] DOMMatrix scaleNonUniform(optional unrestricted double scaleX = 1,\n                                          optional unrestricted double scaleY = 1);\n    [NewObject] DOMMatrix scale3d(optional unrestricted double scale = 1,\n                                  optional unrestricted double originX = 0,\n                                  optional unrestricted double originY = 0,\n                                  optional unrestricted double originZ = 0);\n    [NewObject] DOMMatrix rotate(optional unrestricted double rotX = 0,\n                                 optional unrestricted double rotY,\n                                 optional unrestricted double rotZ);\n    [NewObject] DOMMatrix rotateFromVector(optional unrestricted double x = 0,\n                                           optional unrestricted double y = 0);\n    [NewObject] DOMMatrix rotateAxisAngle(optional unrestricted double x = 0,\n                                          optional unrestricted double y = 0,\n                                          optional unrestricted double z = 0,\n                                          optional unrestricted double angle = 0);\n    [NewObject] DOMMatrix skewX(optional unrestricted double sx = 0);\n    [NewObject] DOMMatrix skewY(optional unrestricted double sy = 0);\n    [NewObject] DOMMatrix multiply(optional DOMMatrixInit other = {});\n    [NewObject] DOMMatrix flipX();\n    [NewObject] DOMMatrix flipY();\n    [NewObject] DOMMatrix inverse();\n\n    [NewObject] DOMPoint transformPoint(optional DOMPointInit point = {});\n    [NewObject] Float32Array toFloat32Array();\n    [NewObject] Float64Array toFloat64Array();\n\n    [Exposed=Window] stringifier;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "DOMMatrixReadOnly",
         "inheritance": null,
@@ -3159,6 +3169,7 @@
         "partial": false
       },
       "DOMMatrix": {
+        "fragment": "[Exposed=(Window,Worker),\n Serializable,\n LegacyWindowAlias=(SVGMatrix,WebKitCSSMatrix)]\ninterface DOMMatrix : DOMMatrixReadOnly {\n    constructor(optional (DOMString or sequence<unrestricted double>) init);\n\n    [NewObject] static DOMMatrix fromMatrix(optional DOMMatrixInit other = {});\n    [NewObject] static DOMMatrix fromFloat32Array(Float32Array array32);\n    [NewObject] static DOMMatrix fromFloat64Array(Float64Array array64);\n\n    // These attributes are simple aliases for certain elements of the 4x4 matrix\n    inherit attribute unrestricted double a;\n    inherit attribute unrestricted double b;\n    inherit attribute unrestricted double c;\n    inherit attribute unrestricted double d;\n    inherit attribute unrestricted double e;\n    inherit attribute unrestricted double f;\n\n    inherit attribute unrestricted double m11;\n    inherit attribute unrestricted double m12;\n    inherit attribute unrestricted double m13;\n    inherit attribute unrestricted double m14;\n    inherit attribute unrestricted double m21;\n    inherit attribute unrestricted double m22;\n    inherit attribute unrestricted double m23;\n    inherit attribute unrestricted double m24;\n    inherit attribute unrestricted double m31;\n    inherit attribute unrestricted double m32;\n    inherit attribute unrestricted double m33;\n    inherit attribute unrestricted double m34;\n    inherit attribute unrestricted double m41;\n    inherit attribute unrestricted double m42;\n    inherit attribute unrestricted double m43;\n    inherit attribute unrestricted double m44;\n\n    // Mutable transform methods\n    DOMMatrix multiplySelf(optional DOMMatrixInit other = {});\n    DOMMatrix preMultiplySelf(optional DOMMatrixInit other = {});\n    DOMMatrix translateSelf(optional unrestricted double tx = 0,\n                            optional unrestricted double ty = 0,\n                            optional unrestricted double tz = 0);\n    DOMMatrix scaleSelf(optional unrestricted double scaleX = 1,\n                        optional unrestricted double scaleY,\n                        optional unrestricted double scaleZ = 1,\n                        optional unrestricted double originX = 0,\n                        optional unrestricted double originY = 0,\n                        optional unrestricted double originZ = 0);\n    DOMMatrix scale3dSelf(optional unrestricted double scale = 1,\n                          optional unrestricted double originX = 0,\n                          optional unrestricted double originY = 0,\n                          optional unrestricted double originZ = 0);\n    DOMMatrix rotateSelf(optional unrestricted double rotX = 0,\n                         optional unrestricted double rotY,\n                         optional unrestricted double rotZ);\n    DOMMatrix rotateFromVectorSelf(optional unrestricted double x = 0,\n                                   optional unrestricted double y = 0);\n    DOMMatrix rotateAxisAngleSelf(optional unrestricted double x = 0,\n                                  optional unrestricted double y = 0,\n                                  optional unrestricted double z = 0,\n                                  optional unrestricted double angle = 0);\n    DOMMatrix skewXSelf(optional unrestricted double sx = 0);\n    DOMMatrix skewYSelf(optional unrestricted double sy = 0);\n    DOMMatrix invertSelf();\n\n    [Exposed=Window] DOMMatrix setMatrixValue(DOMString transformList);\n};",
         "type": "interface",
         "name": "DOMMatrix",
         "inheritance": "DOMMatrixReadOnly",
@@ -4404,6 +4415,7 @@
         "partial": false
       },
       "DOMMatrix2DInit": {
+        "fragment": "dictionary DOMMatrix2DInit {\n    unrestricted double a;\n    unrestricted double b;\n    unrestricted double c;\n    unrestricted double d;\n    unrestricted double e;\n    unrestricted double f;\n    unrestricted double m11;\n    unrestricted double m12;\n    unrestricted double m21;\n    unrestricted double m22;\n    unrestricted double m41;\n    unrestricted double m42;\n};",
         "type": "dictionary",
         "name": "DOMMatrix2DInit",
         "inheritance": null,
@@ -4593,6 +4605,7 @@
         "partial": false
       },
       "DOMMatrixInit": {
+        "fragment": "dictionary DOMMatrixInit : DOMMatrix2DInit {\n    unrestricted double m13 = 0;\n    unrestricted double m14 = 0;\n    unrestricted double m23 = 0;\n    unrestricted double m24 = 0;\n    unrestricted double m31 = 0;\n    unrestricted double m32 = 0;\n    unrestricted double m33 = 1;\n    unrestricted double m34 = 0;\n    unrestricted double m43 = 0;\n    unrestricted double m44 = 1;\n    boolean is2D;\n};",
         "type": "dictionary",
         "name": "DOMMatrixInit",
         "inheritance": "DOMMatrix2DInit",

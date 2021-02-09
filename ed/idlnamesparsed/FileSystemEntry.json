@@ -1,0 +1,14 @@
+{
+  "name": "FileSystemEntry",
+  "defined": {
+    "spec": {
+      "title": "File and Directory Entries API",
+      "url": "https://wicg.github.io/entries-api/"
+    },
+    "fragment": "[Exposed=Window]\ninterface FileSystemEntry {\n    readonly attribute boolean isFile;\n    readonly attribute boolean isDirectory;\n    readonly attribute USVString name;\n    readonly attribute USVString fullPath;\n    readonly attribute FileSystem filesystem;\n\n    undefined getParent(optional FileSystemEntryCallback successCallback,\n                   optional ErrorCallback errorCallback);\n};",
+    "href": "https://wicg.github.io/entries-api/#filesystementry"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

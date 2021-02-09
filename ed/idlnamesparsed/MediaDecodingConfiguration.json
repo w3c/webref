@@ -1,0 +1,27 @@
+{
+  "name": "MediaDecodingConfiguration",
+  "defined": {
+    "spec": {
+      "title": "Media Capabilities",
+      "url": "https://www.w3.org/TR/media-capabilities/"
+    },
+    "fragment": "dictionary MediaDecodingConfiguration : MediaConfiguration {\n  required MediaDecodingType type;\n  MediaCapabilitiesKeySystemConfiguration keySystemConfiguration;\n};",
+    "href": "https://w3c.github.io/media-capabilities/#dictdef-mediadecodingconfiguration"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "MediaConfiguration",
+    "defined": {
+      "spec": {
+        "title": "Media Capabilities",
+        "url": "https://www.w3.org/TR/media-capabilities/"
+      },
+      "fragment": "dictionary MediaConfiguration {\n  VideoConfiguration video;\n  AudioConfiguration audio;\n};",
+      "href": "https://w3c.github.io/media-capabilities/#dictdef-mediaconfiguration"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

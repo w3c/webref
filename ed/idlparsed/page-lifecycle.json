@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "ClientLifecycleState": {
+        "fragment": "enum ClientLifecycleState {\n    \"active\",\n    \"frozen\"\n};",
         "type": "enum",
         "name": "ClientLifecycleState",
         "values": [
@@ -28,6 +29,7 @@
     "idlExtendedNames": {
       "Document": [
         {
+          "fragment": "partial interface Document {\n    attribute EventHandler onfreeze;\n    attribute EventHandler onresume;\n    readonly attribute boolean wasDiscarded;\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -84,6 +86,7 @@
       ],
       "Client": [
         {
+          "fragment": "partial interface Client {\n    readonly attribute ClientLifecycleState lifecycleState;\n};",
           "type": "interface",
           "name": "Client",
           "inheritance": null,

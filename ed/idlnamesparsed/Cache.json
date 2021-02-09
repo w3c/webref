@@ -1,0 +1,14 @@
+{
+  "name": "Cache",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface Cache {\n  [NewObject] Promise<any> match(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Response>> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<undefined> add(RequestInfo request);\n  [NewObject] Promise<undefined> addAll(sequence<RequestInfo> requests);\n  [NewObject] Promise<undefined> put(RequestInfo request, Response response);\n  [NewObject] Promise<boolean> delete(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Request>> keys(optional RequestInfo request, optional CacheQueryOptions options = {});\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#cache"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

@@ -1,0 +1,9 @@
+// Source: CSS Parser API (https://wicg.github.io/css-parser-api/)
+[Constructor(DOMString name, sequence<CSSToken> prelude, optional sequence<CSSParserRule>? body)]
+interface CSSParserAtRule : CSSParserRule {
+  readonly attribute DOMString name;
+  readonly attribute FrozenArray<CSSParserValue> prelude;
+  readonly attribute FrozenArray<CSSParserRule>? body;
+  /* nullable to handle at-statements */
+  stringifier;
+};

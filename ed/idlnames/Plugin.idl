@@ -1,0 +1,10 @@
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+[Exposed=Window]
+interface Plugin {
+  readonly attribute undefined name;
+  readonly attribute undefined description;
+  readonly attribute undefined filename;
+  readonly attribute undefined length;
+  undefined item(unsigned long index);
+  undefined namedItem(DOMString name);
+};

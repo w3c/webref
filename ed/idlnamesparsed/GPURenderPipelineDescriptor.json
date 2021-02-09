@@ -1,0 +1,40 @@
+{
+  "name": "GPURenderPipelineDescriptor",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://gpuweb.github.io/gpuweb/"
+    },
+    "fragment": "dictionary GPURenderPipelineDescriptor : GPUPipelineDescriptorBase {\n    required GPUVertexState vertex;\n    GPUPrimitiveState primitive = {};\n    GPUDepthStencilState depthStencil;\n    GPUMultisampleState multisample = {};\n    GPUFragmentState fragment;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpipelinedescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GPUPipelineDescriptorBase",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://gpuweb.github.io/gpuweb/"
+      },
+      "fragment": "dictionary GPUPipelineDescriptorBase : GPUObjectDescriptorBase {\n    GPUPipelineLayout layout;\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpupipelinedescriptorbase"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "GPUObjectDescriptorBase",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        },
+        "fragment": "dictionary GPUObjectDescriptorBase {\n    USVString label;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

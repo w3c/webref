@@ -1,0 +1,7 @@
+// Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
+[Exposed=Window]
+interface AnimationEffect {
+    EffectTiming         getTiming();
+    ComputedEffectTiming getComputedTiming();
+    undefined            updateTiming(optional OptionalEffectTiming timing = {});
+};

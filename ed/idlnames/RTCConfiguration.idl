@@ -1,0 +1,20 @@
+// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+dictionary RTCConfiguration {
+  sequence<RTCIceServer> iceServers;
+  RTCIceTransportPolicy iceTransportPolicy;
+  RTCBundlePolicy bundlePolicy;
+  RTCRtcpMuxPolicy rtcpMuxPolicy;
+  sequence<RTCCertificate> certificates;
+  [EnforceRange] octet iceCandidatePoolSize = 0;
+};
+
+// Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)
+// New fields in RTCConfiguration
+partial dictionary RTCConfiguration {
+    boolean encodedInsertableStreams = false;
+};
+
+// Source: Identity for WebRTC 1.0 (https://www.w3.org/TR/webrtc-identity/)
+partial dictionary RTCConfiguration {
+    DOMString peerIdentity;
+};

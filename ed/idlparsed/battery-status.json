@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "BatteryManager": {
+        "fragment": "[Exposed=Window]\ninterface BatteryManager : EventTarget {\n    readonly        attribute boolean             charging;\n    readonly        attribute unrestricted double chargingTime;\n    readonly        attribute unrestricted double dischargingTime;\n    readonly        attribute double              level;\n                    attribute EventHandler        onchargingchange;\n                    attribute EventHandler        onchargingtimechange;\n                    attribute EventHandler        ondischargingtimechange;\n                    attribute EventHandler        onlevelchange;\n};",
         "type": "interface",
         "name": "BatteryManager",
         "inheritance": "EventTarget",
@@ -156,6 +157,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "partial interface Navigator {\n  Promise<BatteryManager> getBattery();\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

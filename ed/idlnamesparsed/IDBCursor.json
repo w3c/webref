@@ -1,0 +1,14 @@
+{
+  "name": "IDBCursor",
+  "defined": {
+    "spec": {
+      "title": "Indexed Database API 3.0",
+      "url": "https://www.w3.org/TR/IndexedDB-2/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface IDBCursor {\n  readonly attribute (IDBObjectStore or IDBIndex) source;\n  readonly attribute IDBCursorDirection direction;\n  readonly attribute any key;\n  readonly attribute any primaryKey;\n  [SameObject] readonly attribute IDBRequest request;\n\n  undefined advance([EnforceRange] unsigned long count);\n  undefined continue(optional any key);\n  undefined continuePrimaryKey(any key, any primaryKey);\n\n  [NewObject] IDBRequest update(any value);\n  [NewObject] IDBRequest delete();\n};",
+    "href": "https://w3c.github.io/IndexedDB/#idbcursor"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

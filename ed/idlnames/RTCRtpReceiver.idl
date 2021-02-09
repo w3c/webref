@@ -1,0 +1,17 @@
+// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+[Exposed=Window]
+interface RTCRtpReceiver {
+  readonly attribute MediaStreamTrack track;
+  readonly attribute RTCDtlsTransport? transport;
+  static RTCRtpCapabilities? getCapabilities(DOMString kind);
+  RTCRtpReceiveParameters getParameters();
+  sequence<RTCRtpContributingSource> getContributingSources();
+  sequence<RTCRtpSynchronizationSource> getSynchronizationSources();
+  Promise<RTCStatsReport> getStats();
+};
+
+// Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)
+partial interface RTCRtpReceiver {
+    RTCInsertableStreams createEncodedStreams();
+    attribute RTCRtpTransform? transform;
+};

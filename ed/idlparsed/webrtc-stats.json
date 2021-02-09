@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "RTCStatsType": {
+        "fragment": "enum RTCStatsType {\n\"codec\",\n\"inbound-rtp\",\n\"outbound-rtp\",\n\"remote-inbound-rtp\",\n\"remote-outbound-rtp\",\n\"media-source\",\n\"csrc\",\n\"peer-connection\",\n\"data-channel\",\n\"stream\",\n\"track\",\n\"transceiver\",\n\"sender\",\n\"receiver\",\n\"transport\",\n\"sctp-transport\",\n\"candidate-pair\",\n\"local-candidate\",\n\"remote-candidate\",\n\"certificate\",\n\"ice-server\"\n};",
         "type": "enum",
         "name": "RTCStatsType",
         "values": [
@@ -101,6 +102,7 @@
         "extAttrs": []
       },
       "RTCRtpStreamStats": {
+        "fragment": "dictionary RTCRtpStreamStats : RTCStats {\n             required unsigned long       ssrc;\n             required DOMString           kind;\n             DOMString           transportId;\n             DOMString           codecId;\n};",
         "type": "dictionary",
         "name": "RTCRtpStreamStats",
         "inheritance": "RTCStats",
@@ -170,6 +172,7 @@
         "partial": false
       },
       "RTCCodecStats": {
+        "fragment": "dictionary RTCCodecStats : RTCStats {\n             required unsigned long payloadType;\n             RTCCodecType  codecType;\n             required DOMString     transportId;\n             required DOMString     mimeType;\n             unsigned long clockRate;\n             unsigned long channels;\n             DOMString     sdpFmtpLine;\n};",
         "type": "dictionary",
         "name": "RTCCodecStats",
         "inheritance": "RTCStats",
@@ -284,6 +287,7 @@
         "partial": false
       },
       "RTCCodecType": {
+        "fragment": "enum RTCCodecType {\n    \"encode\",\n    \"decode\",\n};",
         "type": "enum",
         "name": "RTCCodecType",
         "values": [
@@ -299,6 +303,7 @@
         "extAttrs": []
       },
       "RTCReceivedRtpStreamStats": {
+        "fragment": "dictionary RTCReceivedRtpStreamStats : RTCRtpStreamStats {\n             unsigned long long   packetsReceived;\n             long long            packetsLost;\n             double               jitter;\n             unsigned long long   packetsDiscarded;\n             unsigned long long   packetsRepaired;\n             unsigned long long   burstPacketsLost;\n             unsigned long long   burstPacketsDiscarded;\n             unsigned long        burstLossCount;\n             unsigned long        burstDiscardCount;\n             double               burstLossRate;\n             double               burstDiscardRate;\n             double               gapLossRate;\n             double               gapDiscardRate;\n             unsigned long        framesDropped;\n             unsigned long        partialFramesLost;\n             unsigned long        fullFramesLost;\n\n};",
         "type": "dictionary",
         "name": "RTCReceivedRtpStreamStats",
         "inheritance": "RTCRtpStreamStats",
@@ -548,6 +553,7 @@
         "partial": false
       },
       "RTCInboundRtpStreamStats": {
+        "fragment": "dictionary RTCInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n required DOMString   receiverId;\n DOMString            remoteId;\n unsigned long        framesDecoded;\n unsigned long        keyFramesDecoded;\n unsigned long        frameWidth;\n unsigned long        frameHeight;\n unsigned long        frameBitDepth;\n double               framesPerSecond;\n unsigned long long   qpSum;\n double               totalDecodeTime;\n double               totalInterFrameDelay;\n double               totalSquaredInterFrameDelay;\n boolean              voiceActivityFlag;\n DOMHighResTimeStamp  lastPacketReceivedTimestamp;\n double               averageRtcpInterval;\n unsigned long long   headerBytesReceived;\n unsigned long long   fecPacketsReceived;\n unsigned long long   fecPacketsDiscarded;\n unsigned long long   bytesReceived;\n unsigned long long   packetsFailedDecryption;\n unsigned long long   packetsDuplicated;\n record<USVString, unsigned long long> perDscpPacketsReceived;\n unsigned long        nackCount;\n unsigned long        firCount;\n unsigned long        pliCount;\n unsigned long        sliCount;\n double               totalProcessingDelay;\n DOMHighResTimeStamp  estimatedPlayoutTimestamp;\n double               jitterBufferDelay;\n unsigned long long   jitterBufferEmittedCount;\n unsigned long long   totalSamplesReceived;\n unsigned long long   totalSamplesDecoded;\n unsigned long long   samplesDecodedWithSilk;\n unsigned long long   samplesDecodedWithCelt;\n unsigned long long   concealedSamples;\n unsigned long long   silentConcealedSamples;\n unsigned long long   concealmentEvents;\n unsigned long long   insertedSamplesForDeceleration;\n unsigned long long   removedSamplesForAcceleration;\n double               audioLevel;\n double               totalAudioEnergy;\n double               totalSamplesDuration;\n unsigned long        framesReceived;\n DOMString            decoderImplementation;\n};",
         "type": "dictionary",
         "name": "RTCInboundRtpStreamStats",
         "inheritance": "RTCReceivedRtpStreamStats",
@@ -1234,6 +1240,7 @@
         "partial": false
       },
       "RTCRemoteInboundRtpStreamStats": {
+        "fragment": "dictionary RTCRemoteInboundRtpStreamStats : RTCReceivedRtpStreamStats {\n             DOMString            localId;\n             double               roundTripTime;\n             double               totalRoundTripTime;\n             double               fractionLost;\n             unsigned long long   reportsReceived;\n             unsigned long long   roundTripTimeMeasurements;\n};",
         "type": "dictionary",
         "name": "RTCRemoteInboundRtpStreamStats",
         "inheritance": "RTCReceivedRtpStreamStats",
@@ -1333,6 +1340,7 @@
         "partial": false
       },
       "RTCSentRtpStreamStats": {
+        "fragment": "dictionary RTCSentRtpStreamStats : RTCRtpStreamStats {\n             unsigned long      packetsSent;\n             unsigned long long bytesSent;\n};",
         "type": "dictionary",
         "name": "RTCSentRtpStreamStats",
         "inheritance": "RTCRtpStreamStats",
@@ -1372,6 +1380,7 @@
         "partial": false
       },
       "RTCOutboundRtpStreamStats": {
+        "fragment": "dictionary RTCOutboundRtpStreamStats : RTCSentRtpStreamStats {\n             unsigned long        rtxSsrc;\n             DOMString            mediaSourceId;\n             DOMString            senderId;\n             DOMString            remoteId;\n             DOMString            rid;\n             DOMHighResTimeStamp  lastPacketSentTimestamp;\n             unsigned long long   headerBytesSent;\n             unsigned long        packetsDiscardedOnSend;\n             unsigned long long   bytesDiscardedOnSend;\n             unsigned long        fecPacketsSent;\n             unsigned long long   retransmittedPacketsSent;\n             unsigned long long   retransmittedBytesSent;\n             double               targetBitrate;\n             unsigned long long   totalEncodedBytesTarget;\n             unsigned long        frameWidth;\n             unsigned long        frameHeight;\n             unsigned long        frameBitDepth;\n             double               framesPerSecond;\n             unsigned long        framesSent;\n             unsigned long        hugeFramesSent;\n             unsigned long        framesEncoded;\n             unsigned long        keyFramesEncoded;\n             unsigned long        framesDiscardedOnSend;\n             unsigned long long   qpSum;\n             unsigned long long   totalSamplesSent;\n             unsigned long long   samplesEncodedWithSilk;\n             unsigned long long   samplesEncodedWithCelt;\n             boolean              voiceActivityFlag;\n             double               totalEncodeTime;\n             double               totalPacketSendDelay;\n             double               averageRtcpInterval;\n             RTCQualityLimitationReason                 qualityLimitationReason;\n             record<DOMString, double> qualityLimitationDurations;\n             unsigned long        qualityLimitationResolutionChanges;\n             record<USVString, unsigned long long> perDscpPacketsSent;\n             unsigned long        nackCount;\n             unsigned long        firCount;\n             unsigned long        pliCount;\n             unsigned long        sliCount;\n             DOMString            encoderImplementation;\n};",
         "type": "dictionary",
         "name": "RTCOutboundRtpStreamStats",
         "inheritance": "RTCSentRtpStreamStats",
@@ -2015,6 +2024,7 @@
         "partial": false
       },
       "RTCQualityLimitationReason": {
+        "fragment": "enum RTCQualityLimitationReason {\n  \"none\",\n  \"cpu\",\n  \"bandwidth\",\n  \"other\",\n};",
         "type": "enum",
         "name": "RTCQualityLimitationReason",
         "values": [
@@ -2038,6 +2048,7 @@
         "extAttrs": []
       },
       "RTCRemoteOutboundRtpStreamStats": {
+        "fragment": "dictionary RTCRemoteOutboundRtpStreamStats : RTCSentRtpStreamStats {\n             DOMString           localId;\n             DOMHighResTimeStamp remoteTimestamp;\n             unsigned long long  reportsSent;\n};",
         "type": "dictionary",
         "name": "RTCRemoteOutboundRtpStreamStats",
         "inheritance": "RTCSentRtpStreamStats",
@@ -2092,6 +2103,7 @@
         "partial": false
       },
       "RTCMediaSourceStats": {
+        "fragment": "dictionary RTCMediaSourceStats : RTCStats {\n             required DOMString       trackIdentifier;\n             required DOMString       kind;\n             boolean         relayedSource;\n};",
         "type": "dictionary",
         "name": "RTCMediaSourceStats",
         "inheritance": "RTCStats",
@@ -2146,6 +2158,7 @@
         "partial": false
       },
       "RTCAudioSourceStats": {
+        "fragment": "dictionary RTCAudioSourceStats : RTCMediaSourceStats {\n              double              audioLevel;\n              double              totalAudioEnergy;\n              double              totalSamplesDuration;\n              double              echoReturnLoss;\n              double              echoReturnLossEnhancement;\n};",
         "type": "dictionary",
         "name": "RTCAudioSourceStats",
         "inheritance": "RTCMediaSourceStats",
@@ -2230,6 +2243,7 @@
         "partial": false
       },
       "RTCVideoSourceStats": {
+        "fragment": "dictionary RTCVideoSourceStats : RTCMediaSourceStats {\n             unsigned long   width;\n             unsigned long   height;\n             unsigned long   bitDepth;\n             unsigned long   frames;\n             double          framesPerSecond;\n};",
         "type": "dictionary",
         "name": "RTCVideoSourceStats",
         "inheritance": "RTCMediaSourceStats",
@@ -2314,6 +2328,7 @@
         "partial": false
       },
       "RTCRtpContributingSourceStats": {
+        "fragment": "dictionary RTCRtpContributingSourceStats : RTCStats {\n             required unsigned long contributorSsrc;\n             required DOMString     inboundRtpStreamId;\n             unsigned long packetsContributedTo;\n             double        audioLevel;\n};",
         "type": "dictionary",
         "name": "RTCRtpContributingSourceStats",
         "inheritance": "RTCStats",
@@ -2383,6 +2398,7 @@
         "partial": false
       },
       "RTCPeerConnectionStats": {
+        "fragment": "dictionary RTCPeerConnectionStats : RTCStats {\n            unsigned long dataChannelsOpened;\n            unsigned long dataChannelsClosed;\n            unsigned long dataChannelsRequested;\n            unsigned long dataChannelsAccepted;\n};",
         "type": "dictionary",
         "name": "RTCPeerConnectionStats",
         "inheritance": "RTCStats",
@@ -2452,6 +2468,7 @@
         "partial": false
       },
       "RTCRtpTransceiverStats": {
+        "fragment": "dictionary RTCRtpTransceiverStats : RTCStats {\n    required DOMString senderId;\n    required DOMString receiverId;\n    DOMString mid;\n};",
         "type": "dictionary",
         "name": "RTCRtpTransceiverStats",
         "inheritance": "RTCStats",
@@ -2506,6 +2523,7 @@
         "partial": false
       },
       "RTCMediaHandlerStats": {
+        "fragment": "dictionary RTCMediaHandlerStats : RTCStats {\n             DOMString           trackIdentifier;\n             boolean             ended;\n             required DOMString  kind;\n};",
         "type": "dictionary",
         "name": "RTCMediaHandlerStats",
         "inheritance": "RTCStats",
@@ -2560,6 +2578,7 @@
         "partial": false
       },
       "RTCVideoHandlerStats": {
+        "fragment": "dictionary RTCVideoHandlerStats : RTCMediaHandlerStats {\n};",
         "type": "dictionary",
         "name": "RTCVideoHandlerStats",
         "inheritance": "RTCMediaHandlerStats",
@@ -2568,6 +2587,7 @@
         "partial": false
       },
       "RTCVideoSenderStats": {
+        "fragment": "dictionary RTCVideoSenderStats : RTCVideoHandlerStats {\n             DOMString           mediaSourceId;\n};",
         "type": "dictionary",
         "name": "RTCVideoSenderStats",
         "inheritance": "RTCVideoHandlerStats",
@@ -2592,6 +2612,7 @@
         "partial": false
       },
       "RTCVideoReceiverStats": {
+        "fragment": "dictionary RTCVideoReceiverStats : RTCVideoHandlerStats {\n};",
         "type": "dictionary",
         "name": "RTCVideoReceiverStats",
         "inheritance": "RTCVideoHandlerStats",
@@ -2600,6 +2621,7 @@
         "partial": false
       },
       "RTCAudioHandlerStats": {
+        "fragment": "dictionary RTCAudioHandlerStats : RTCMediaHandlerStats {\n};",
         "type": "dictionary",
         "name": "RTCAudioHandlerStats",
         "inheritance": "RTCMediaHandlerStats",
@@ -2608,6 +2630,7 @@
         "partial": false
       },
       "RTCAudioSenderStats": {
+        "fragment": "dictionary RTCAudioSenderStats : RTCAudioHandlerStats {\n             DOMString           mediaSourceId;\n};",
         "type": "dictionary",
         "name": "RTCAudioSenderStats",
         "inheritance": "RTCAudioHandlerStats",
@@ -2632,6 +2655,7 @@
         "partial": false
       },
       "RTCAudioReceiverStats": {
+        "fragment": "dictionary RTCAudioReceiverStats : RTCAudioHandlerStats {\n};",
         "type": "dictionary",
         "name": "RTCAudioReceiverStats",
         "inheritance": "RTCAudioHandlerStats",
@@ -2640,6 +2664,7 @@
         "partial": false
       },
       "RTCDataChannelStats": {
+        "fragment": "dictionary RTCDataChannelStats : RTCStats {\n             DOMString           label;\n             DOMString           protocol;\n             unsigned short      dataChannelIdentifier;\n             required RTCDataChannelState state;\n             unsigned long       messagesSent;\n             unsigned long long  bytesSent;\n             unsigned long       messagesReceived;\n             unsigned long long  bytesReceived;\n};",
         "type": "dictionary",
         "name": "RTCDataChannelStats",
         "inheritance": "RTCStats",
@@ -2769,6 +2794,7 @@
         "partial": false
       },
       "RTCTransportStats": {
+        "fragment": "dictionary RTCTransportStats : RTCStats {\n             unsigned long long    packetsSent;\n             unsigned long long    packetsReceived;\n             unsigned long long    bytesSent;\n             unsigned long long    bytesReceived;\n             DOMString             rtcpTransportStatsId;\n             RTCIceRole            iceRole;\n             DOMString             iceLocalUsernameFragment;\n             required RTCDtlsTransportState dtlsState;\n             RTCIceTransportState  iceState;\n             DOMString             selectedCandidatePairId;\n             DOMString             localCertificateId;\n             DOMString             remoteCertificateId;\n             DOMString             tlsVersion;\n             DOMString             dtlsCipher;\n             DOMString             srtpCipher;\n             DOMString             tlsGroup;\n             unsigned long         selectedCandidatePairChanges;\n};",
         "type": "dictionary",
         "name": "RTCTransportStats",
         "inheritance": "RTCStats",
@@ -3033,6 +3059,7 @@
         "partial": false
       },
       "RTCSctpTransportStats": {
+        "fragment": "dictionary RTCSctpTransportStats : RTCStats {\n            DOMString transportId;\n            double smoothedRoundTripTime;\n            unsigned long congestionWindow;\n            unsigned long receiverWindow;\n            unsigned long mtu;\n            unsigned long unackData;\n};",
         "type": "dictionary",
         "name": "RTCSctpTransportStats",
         "inheritance": "RTCStats",
@@ -3132,6 +3159,7 @@
         "partial": false
       },
       "RTCIceCandidateStats": {
+        "fragment": "dictionary RTCIceCandidateStats : RTCStats {\n             required DOMString       transportId;\n             DOMString?               address;\n             long                     port;\n             DOMString                protocol;\n             required RTCIceCandidateType candidateType;\n             long                     priority;\n             DOMString                url;\n             DOMString                relayProtocol;\n};",
         "type": "dictionary",
         "name": "RTCIceCandidateStats",
         "inheritance": "RTCStats",
@@ -3261,6 +3289,7 @@
         "partial": false
       },
       "RTCIceCandidatePairStats": {
+        "fragment": "dictionary RTCIceCandidatePairStats : RTCStats {\n             required DOMString            transportId;\n             required DOMString            localCandidateId;\n             required DOMString            remoteCandidateId;\n             required RTCStatsIceCandidatePairState state;\n             boolean                       nominated;\n             unsigned long long            packetsSent;\n             unsigned long long            packetsReceived;\n             unsigned long long            bytesSent;\n             unsigned long long            bytesReceived;\n             DOMHighResTimeStamp           lastPacketSentTimestamp;\n             DOMHighResTimeStamp           lastPacketReceivedTimestamp;\n             DOMHighResTimeStamp           firstRequestTimestamp;\n             DOMHighResTimeStamp           lastRequestTimestamp;\n             DOMHighResTimeStamp           lastResponseTimestamp;\n             double                        totalRoundTripTime;\n             double                        currentRoundTripTime;\n             double                        availableOutgoingBitrate;\n             double                        availableIncomingBitrate;\n             unsigned long                 circuitBreakerTriggerCount;\n             unsigned long long            requestsReceived;\n             unsigned long long            requestsSent;\n             unsigned long long            responsesReceived;\n             unsigned long long            responsesSent;\n             unsigned long long            retransmissionsReceived;\n             unsigned long long            retransmissionsSent;\n             unsigned long long            consentRequestsSent;\n             DOMHighResTimeStamp           consentExpiredTimestamp;\n             unsigned long                 packetsDiscardedOnSend;\n             unsigned long long            bytesDiscardedOnSend;\n             unsigned long long            requestBytesSent;\n             unsigned long long            consentRequestBytesSent;\n             unsigned long long            responseBytesSent;\n};",
         "type": "dictionary",
         "name": "RTCIceCandidatePairStats",
         "inheritance": "RTCStats",
@@ -3750,6 +3779,7 @@
         "partial": false
       },
       "RTCStatsIceCandidatePairState": {
+        "fragment": "enum RTCStatsIceCandidatePairState {\n    \"frozen\",\n    \"waiting\",\n    \"in-progress\",\n    \"failed\",\n    \"succeeded\"\n};",
         "type": "enum",
         "name": "RTCStatsIceCandidatePairState",
         "values": [
@@ -3777,6 +3807,7 @@
         "extAttrs": []
       },
       "RTCCertificateStats": {
+        "fragment": "dictionary RTCCertificateStats : RTCStats {\n             required DOMString fingerprint;\n             required DOMString fingerprintAlgorithm;\n             required DOMString base64Certificate;\n             DOMString issuerCertificateId;\n};",
         "type": "dictionary",
         "name": "RTCCertificateStats",
         "inheritance": "RTCStats",
@@ -3846,6 +3877,7 @@
         "partial": false
       },
       "RTCIceServerStats": {
+        "fragment": "dictionary RTCIceServerStats : RTCStats {\n           required DOMString url;\n           long port;\n           DOMString relayProtocol;\n           unsigned long totalRequestsSent;\n           unsigned long totalResponsesReceived;\n           double totalRoundTripTime;\n};",
         "type": "dictionary",
         "name": "RTCIceServerStats",
         "inheritance": "RTCStats",

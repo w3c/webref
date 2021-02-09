@@ -1,0 +1,7 @@
+// Source: CSS Parser API (https://wicg.github.io/css-parser-api/)
+[Constructor(DOMString name, sequence<sequence<CSSParserValue>> args)]
+interface CSSParserFunction : CSSParserValue {
+  readonly attribute DOMString name;
+  readonly attribute FrozenArray<FrozenArray<CSSParserValue>> args;
+  stringifier;
+};

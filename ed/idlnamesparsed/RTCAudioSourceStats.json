@@ -1,0 +1,40 @@
+{
+  "name": "RTCAudioSourceStats",
+  "defined": {
+    "spec": {
+      "title": "Identifiers for WebRTC's Statistics API",
+      "url": "https://www.w3.org/TR/webrtc-stats/"
+    },
+    "fragment": "dictionary RTCAudioSourceStats : RTCMediaSourceStats {\n              double              audioLevel;\n              double              totalAudioEnergy;\n              double              totalSamplesDuration;\n              double              echoReturnLoss;\n              double              echoReturnLossEnhancement;\n};",
+    "href": "https://w3c.github.io/webrtc-stats/#dom-rtcaudiosourcestats"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "RTCMediaSourceStats",
+    "defined": {
+      "spec": {
+        "title": "Identifiers for WebRTC's Statistics API",
+        "url": "https://www.w3.org/TR/webrtc-stats/"
+      },
+      "fragment": "dictionary RTCMediaSourceStats : RTCStats {\n             required DOMString       trackIdentifier;\n             required DOMString       kind;\n             boolean         relayedSource;\n};",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediasourcestats"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "RTCStats",
+      "defined": {
+        "spec": {
+          "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+          "url": "https://www.w3.org/TR/webrtc/"
+        },
+        "fragment": "dictionary RTCStats {\n  required DOMHighResTimeStamp timestamp;\n  required RTCStatsType type;\n  required DOMString id;\n};",
+        "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

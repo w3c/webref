@@ -41,6 +41,7 @@
     },
     "idlNames": {
       "Blob": {
+        "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface Blob {\n  constructor(optional sequence<BlobPart> blobParts,\n              optional BlobPropertyBag options = {});\n\n  readonly attribute unsigned long long size;\n  readonly attribute DOMString type;\n\n  // slice Blob into byte-ranged chunks\n  Blob slice(optional [Clamp] long long start,\n            optional [Clamp] long long end,\n            optional DOMString contentType);\n\n  // read from the Blob.\n  [NewObject] ReadableStream stream();\n  [NewObject] Promise<USVString> text();\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n};",
         "type": "interface",
         "name": "Blob",
         "inheritance": null,
@@ -314,6 +315,7 @@
         "partial": false
       },
       "EndingType": {
+        "fragment": "enum EndingType { \"transparent\", \"native\" };",
         "type": "enum",
         "name": "EndingType",
         "values": [
@@ -329,6 +331,7 @@
         "extAttrs": []
       },
       "BlobPropertyBag": {
+        "fragment": "dictionary BlobPropertyBag {\n  DOMString type = \"\";\n  EndingType endings = \"transparent\";\n};",
         "type": "dictionary",
         "name": "BlobPropertyBag",
         "inheritance": null,
@@ -374,6 +377,7 @@
         "partial": false
       },
       "BlobPart": {
+        "fragment": "typedef (BufferSource or Blob or USVString) BlobPart;",
         "type": "typedef",
         "name": "BlobPart",
         "idlType": {
@@ -412,6 +416,7 @@
         "extAttrs": []
       },
       "File": {
+        "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface File : Blob {\n  constructor(sequence<BlobPart> fileBits,\n              USVString fileName,\n              optional FilePropertyBag options = {});\n  readonly attribute DOMString name;\n  readonly attribute long long lastModified;\n};",
         "type": "interface",
         "name": "File",
         "inheritance": "Blob",
@@ -539,6 +544,7 @@
         "partial": false
       },
       "FilePropertyBag": {
+        "fragment": "dictionary FilePropertyBag : BlobPropertyBag {\n  long long lastModified;\n};",
         "type": "dictionary",
         "name": "FilePropertyBag",
         "inheritance": "BlobPropertyBag",
@@ -563,6 +569,7 @@
         "partial": false
       },
       "FileList": {
+        "fragment": "[Exposed=(Window,Worker), Serializable]\ninterface FileList {\n  getter File? item(unsigned long index);\n  readonly attribute unsigned long length;\n};",
         "type": "interface",
         "name": "FileList",
         "inheritance": null,
@@ -642,6 +649,7 @@
         "partial": false
       },
       "FileReader": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FileReader: EventTarget {\n  constructor();\n  // async read methods\n  undefined readAsArrayBuffer(Blob blob);\n  undefined readAsBinaryString(Blob blob);\n  undefined readAsText(Blob blob, optional DOMString encoding);\n  undefined readAsDataURL(Blob blob);\n\n  undefined abort();\n\n  // states\n  const unsigned short EMPTY = 0;\n  const unsigned short LOADING = 1;\n  const unsigned short DONE = 2;\n\n  readonly attribute unsigned short readyState;\n\n  // File or Blob data\n  readonly attribute (DOMString or ArrayBuffer)? result;\n\n  readonly attribute DOMException? error;\n\n  // event handler content attributes\n  attribute EventHandler onloadstart;\n  attribute EventHandler onprogress;\n  attribute EventHandler onload;\n  attribute EventHandler onabort;\n  attribute EventHandler onerror;\n  attribute EventHandler onloadend;\n};",
         "type": "interface",
         "name": "FileReader",
         "inheritance": "EventTarget",
@@ -1035,6 +1043,7 @@
         "partial": false
       },
       "FileReaderSync": {
+        "fragment": "[Exposed=(DedicatedWorker,SharedWorker)]\ninterface FileReaderSync {\n  constructor();\n  // Synchronously return strings\n\n  ArrayBuffer readAsArrayBuffer(Blob blob);\n  DOMString readAsBinaryString(Blob blob);\n  DOMString readAsText(Blob blob, optional DOMString encoding);\n  DOMString readAsDataURL(Blob blob);\n};",
         "type": "interface",
         "name": "FileReaderSync",
         "inheritance": null,
@@ -1213,6 +1222,7 @@
     "idlExtendedNames": {
       "URL": [
         {
+          "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\npartial interface URL {\n  static DOMString createObjectURL((Blob or MediaSource) obj);\n  static undefined revokeObjectURL(DOMString url);\n};",
           "type": "interface",
           "name": "URL",
           "inheritance": null,

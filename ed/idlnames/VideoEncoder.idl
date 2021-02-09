@@ -1,0 +1,14 @@
+// Source: WebCodecs (https://wicg.github.io/web-codecs/)
+[Exposed=(Window,Worker)]
+interface VideoEncoder {
+  constructor(VideoEncoderInit init);
+
+  readonly attribute CodecState state;
+  readonly attribute long encodeQueueSize;
+
+  undefined configure(VideoEncoderConfig config);
+  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});
+  Promise<undefined> flush();
+  undefined reset();
+  undefined close();
+};

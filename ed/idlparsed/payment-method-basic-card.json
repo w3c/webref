@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "BasicCardRequest": {
+        "fragment": "dictionary BasicCardRequest {\n  sequence<DOMString> supportedNetworks = [];\n  boolean requestSecurityCode = true;\n};",
         "type": "dictionary",
         "name": "BasicCardRequest",
         "inheritance": null,
@@ -64,6 +65,7 @@
         "partial": false
       },
       "BasicCardChangeDetails": {
+        "fragment": "dictionary BasicCardChangeDetails {\n  PaymentAddress? billingAddress = null;\n};",
         "type": "dictionary",
         "name": "BasicCardChangeDetails",
         "inheritance": null,
@@ -90,6 +92,7 @@
         "partial": false
       },
       "BasicCardResponse": {
+        "fragment": "dictionary BasicCardResponse {\n  required DOMString cardNumber;\n  DOMString cardholderName = \"\";\n  DOMString cardSecurityCode = \"\";\n  DOMString expiryMonth = \"\";\n  DOMString expiryYear = \"\";\n  PaymentAddress? billingAddress = null;\n};",
         "type": "dictionary",
         "name": "BasicCardResponse",
         "inheritance": null,
@@ -203,6 +206,7 @@
         "partial": false
       },
       "BasicCardErrors": {
+        "fragment": "dictionary BasicCardErrors {\n  DOMString cardNumber;\n  DOMString cardholderName;\n  DOMString cardSecurityCode;\n  DOMString expiryMonth;\n  DOMString expiryYear;\n  AddressErrors billingAddress;\n};",
         "type": "dictionary",
         "name": "BasicCardErrors",
         "inheritance": null,

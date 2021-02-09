@@ -1,0 +1,508 @@
+{
+  "name": "SVGFEDiffuseLightingElement",
+  "defined": {
+    "spec": {
+      "title": "Filter Effects Module Level 1",
+      "url": "https://www.w3.org/TR/filter-effects-1/"
+    },
+    "fragment": "interface SVGFEDiffuseLightingElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber surfaceScale;\n  readonly attribute SVGAnimatedNumber diffuseConstant;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthX;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthY;\n};",
+    "href": "https://drafts.fxtf.org/filter-effects-1/#svgfediffuselightingelement"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Filter Effects Module Level 1",
+        "url": "https://www.w3.org/TR/filter-effects-1/"
+      },
+      "fragment": "SVGFEDiffuseLightingElement includes SVGFilterPrimitiveStandardAttributes;"
+    }
+  ],
+  "inheritance": {
+    "name": "SVGElement",
+    "defined": {
+      "spec": {
+        "title": "Scalable Vector Graphics (SVG) 2",
+        "url": "https://www.w3.org/TR/SVG2/"
+      },
+      "fragment": "[Exposed=Window]\ninterface SVGElement : Element {\n\n  [SameObject] readonly attribute SVGAnimatedString className;\n\n  readonly attribute SVGSVGElement? ownerSVGElement;\n  readonly attribute SVGElement? viewportElement;\n};",
+      "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGElement"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "CSS Object Model (CSSOM)",
+          "url": "https://www.w3.org/TR/cssom-1/"
+        },
+        "fragment": "SVGElement includes ElementCSSInlineStyle;"
+      },
+      {
+        "spec": {
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://www.w3.org/TR/SVG2/"
+        },
+        "fragment": "SVGElement includes GlobalEventHandlers;"
+      },
+      {
+        "spec": {
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://www.w3.org/TR/SVG2/"
+        },
+        "fragment": "SVGElement includes DocumentAndElementEventHandlers;"
+      },
+      {
+        "spec": {
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://www.w3.org/TR/SVG2/"
+        },
+        "fragment": "SVGElement includes SVGElementInstance;"
+      },
+      {
+        "spec": {
+          "title": "Scalable Vector Graphics (SVG) 2",
+          "url": "https://www.w3.org/TR/SVG2/"
+        },
+        "fragment": "SVGElement includes HTMLOrSVGElement;"
+      }
+    ],
+    "inheritance": {
+      "name": "Element",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=Window]\ninterface Element : Node {\n  readonly attribute DOMString? namespaceURI;\n  readonly attribute DOMString? prefix;\n  readonly attribute DOMString localName;\n  readonly attribute DOMString tagName;\n\n  [CEReactions] attribute DOMString id;\n  [CEReactions] attribute DOMString className;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList classList;\n  [CEReactions, Unscopable] attribute DOMString slot;\n\n  boolean hasAttributes();\n  [SameObject] readonly attribute NamedNodeMap attributes;\n  sequence<DOMString> getAttributeNames();\n  DOMString? getAttribute(DOMString qualifiedName);\n  DOMString? getAttributeNS(DOMString? namespace, DOMString localName);\n  [CEReactions] undefined setAttribute(DOMString qualifiedName, DOMString value);\n  [CEReactions] undefined setAttributeNS(DOMString? namespace, DOMString qualifiedName, DOMString value);\n  [CEReactions] undefined removeAttribute(DOMString qualifiedName);\n  [CEReactions] undefined removeAttributeNS(DOMString? namespace, DOMString localName);\n  [CEReactions] boolean toggleAttribute(DOMString qualifiedName, optional boolean force);\n  boolean hasAttribute(DOMString qualifiedName);\n  boolean hasAttributeNS(DOMString? namespace, DOMString localName);\n\n  Attr? getAttributeNode(DOMString qualifiedName);\n  Attr? getAttributeNodeNS(DOMString? namespace, DOMString localName);\n  [CEReactions] Attr? setAttributeNode(Attr attr);\n  [CEReactions] Attr? setAttributeNodeNS(Attr attr);\n  [CEReactions] Attr removeAttributeNode(Attr attr);\n\n  ShadowRoot attachShadow(ShadowRootInit init);\n  readonly attribute ShadowRoot? shadowRoot;\n\n  Element? closest(DOMString selectors);\n  boolean matches(DOMString selectors);\n  boolean webkitMatchesSelector(DOMString selectors); // legacy alias of .matches\n\n  HTMLCollection getElementsByTagName(DOMString qualifiedName);\n  HTMLCollection getElementsByTagNameNS(DOMString? namespace, DOMString localName);\n  HTMLCollection getElementsByClassName(DOMString classNames);\n\n  [CEReactions] Element? insertAdjacentElement(DOMString where, Element element); // legacy\n  undefined insertAdjacentText(DOMString where, DOMString data); // legacy\n};",
+        "href": "https://dom.spec.whatwg.org/#element"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "DOM Standard",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          "fragment": "Element includes ParentNode;"
+        },
+        {
+          "spec": {
+            "title": "DOM Standard",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          "fragment": "Element includes NonDocumentTypeChildNode;"
+        },
+        {
+          "spec": {
+            "title": "DOM Standard",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          "fragment": "Element includes ChildNode;"
+        },
+        {
+          "spec": {
+            "title": "DOM Standard",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          "fragment": "Element includes Slottable;"
+        },
+        {
+          "spec": {
+            "title": "Fullscreen API Standard",
+            "url": "https://fullscreen.spec.whatwg.org/"
+          },
+          "fragment": "partial interface Element {\n  Promise<undefined> requestFullscreen(optional FullscreenOptions options = {});\n\n  attribute EventHandler onfullscreenchange;\n  attribute EventHandler onfullscreenerror;\n};"
+        },
+        {
+          "spec": {
+            "title": "Element Timing API",
+            "url": "https://wicg.github.io/element-timing/"
+          },
+          "fragment": "partial interface Element {\n    [CEReactions] attribute DOMString elementTiming;\n};"
+        },
+        {
+          "spec": {
+            "title": "CSS Spatial Navigation Level 1",
+            "url": "https://www.w3.org/TR/css-nav-1/"
+          },
+          "fragment": "partial interface Element {\n    Node getSpatialNavigationContainer();\n    sequence<Node> focusableAreas(optional FocusableAreasOption option = {});\n    Node? spatialNavigationSearch(SpatialNavigationDirection dir, optional SpatialNavigationSearchOptions options = {});\n};"
+        },
+        {
+          "spec": {
+            "title": "CSS Pseudo-Elements Module Level 4",
+            "url": "https://www.w3.org/TR/css-pseudo-4/"
+          },
+          "fragment": "partial interface Element {\n  CSSPseudoElement? pseudo(CSSOMString type);\n};"
+        },
+        {
+          "spec": {
+            "title": "CSS Regions Module Level 1",
+            "url": "https://www.w3.org/TR/css-regions-1/"
+          },
+          "fragment": "Element includes Region;"
+        },
+        {
+          "spec": {
+            "title": "CSS Shadow Parts",
+            "url": "https://www.w3.org/TR/css-shadow-parts-1/"
+          },
+          "fragment": "partial interface Element {\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList part;\n};"
+        },
+        {
+          "spec": {
+            "title": "CSS Typed OM Level 1",
+            "url": "https://www.w3.org/TR/css-typed-om-1/"
+          },
+          "fragment": "partial interface Element {\n    [SameObject] StylePropertyMapReadOnly computedStyleMap();\n};"
+        },
+        {
+          "spec": {
+            "title": "CSSOM View Module",
+            "url": "https://www.w3.org/TR/cssom-view-1/"
+          },
+          "fragment": "partial interface Element {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n  undefined scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});\n  undefined scroll(optional ScrollToOptions options = {});\n  undefined scroll(unrestricted double x, unrestricted double y);\n  undefined scrollTo(optional ScrollToOptions options = {});\n  undefined scrollTo(unrestricted double x, unrestricted double y);\n  undefined scrollBy(optional ScrollToOptions options = {});\n  undefined scrollBy(unrestricted double x, unrestricted double y);\n  attribute unrestricted double scrollTop;\n  attribute unrestricted double scrollLeft;\n  readonly attribute long scrollWidth;\n  readonly attribute long scrollHeight;\n  readonly attribute long clientTop;\n  readonly attribute long clientLeft;\n  readonly attribute long clientWidth;\n  readonly attribute long clientHeight;\n};"
+        },
+        {
+          "spec": {
+            "title": "CSSOM View Module",
+            "url": "https://www.w3.org/TR/cssom-view-1/"
+          },
+          "fragment": "// like Range\nElement includes GeometryUtils;"
+        },
+        {
+          "spec": {
+            "title": "DOM Parsing and Serialization",
+            "url": "https://www.w3.org/TR/DOM-Parsing/"
+          },
+          "fragment": "Element includes InnerHTML;"
+        },
+        {
+          "spec": {
+            "title": "DOM Parsing and Serialization",
+            "url": "https://www.w3.org/TR/DOM-Parsing/"
+          },
+          "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerHTML;\n  [CEReactions] void insertAdjacentHTML(DOMString position, DOMString text);\n};"
+        },
+        {
+          "spec": {
+            "title": "Pointer Events",
+            "url": "https://www.w3.org/TR/pointerevents3/"
+          },
+          "fragment": "partial interface Element {\n  undefined setPointerCapture (long pointerId);\n  undefined releasePointerCapture (long pointerId);\n  boolean hasPointerCapture (long pointerId);\n};"
+        },
+        {
+          "spec": {
+            "title": "Pointer Lock 2.0",
+            "url": "https://www.w3.org/TR/pointerlock-2/"
+          },
+          "fragment": "partial interface Element {\n  undefined requestPointerLock();\n};"
+        },
+        {
+          "spec": {
+            "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
+            "url": "https://www.w3.org/TR/wai-aria-1.2/"
+          },
+          "fragment": "Element includes ARIAMixin;"
+        },
+        {
+          "spec": {
+            "title": "Web Animations",
+            "url": "https://www.w3.org/TR/web-animations-1/"
+          },
+          "fragment": "Element includes Animatable;"
+        }
+      ],
+      "inheritance": {
+        "name": "Node",
+        "defined": {
+          "spec": {
+            "title": "DOM Standard",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          "fragment": "[Exposed=Window]\ninterface Node : EventTarget {\n  const unsigned short ELEMENT_NODE = 1;\n  const unsigned short ATTRIBUTE_NODE = 2;\n  const unsigned short TEXT_NODE = 3;\n  const unsigned short CDATA_SECTION_NODE = 4;\n  const unsigned short ENTITY_REFERENCE_NODE = 5; // legacy\n  const unsigned short ENTITY_NODE = 6; // legacy\n  const unsigned short PROCESSING_INSTRUCTION_NODE = 7;\n  const unsigned short COMMENT_NODE = 8;\n  const unsigned short DOCUMENT_NODE = 9;\n  const unsigned short DOCUMENT_TYPE_NODE = 10;\n  const unsigned short DOCUMENT_FRAGMENT_NODE = 11;\n  const unsigned short NOTATION_NODE = 12; // legacy\n  readonly attribute unsigned short nodeType;\n  readonly attribute DOMString nodeName;\n\n  readonly attribute USVString baseURI;\n\n  readonly attribute boolean isConnected;\n  readonly attribute Document? ownerDocument;\n  Node getRootNode(optional GetRootNodeOptions options = {});\n  readonly attribute Node? parentNode;\n  readonly attribute Element? parentElement;\n  boolean hasChildNodes();\n  [SameObject] readonly attribute NodeList childNodes;\n  readonly attribute Node? firstChild;\n  readonly attribute Node? lastChild;\n  readonly attribute Node? previousSibling;\n  readonly attribute Node? nextSibling;\n\n  [CEReactions] attribute DOMString? nodeValue;\n  [CEReactions] attribute DOMString? textContent;\n  [CEReactions] undefined normalize();\n\n  [CEReactions, NewObject] Node cloneNode(optional boolean deep = false);\n  boolean isEqualNode(Node? otherNode);\n  boolean isSameNode(Node? otherNode); // legacy alias of ===\n\n  const unsigned short DOCUMENT_POSITION_DISCONNECTED = 0x01;\n  const unsigned short DOCUMENT_POSITION_PRECEDING = 0x02;\n  const unsigned short DOCUMENT_POSITION_FOLLOWING = 0x04;\n  const unsigned short DOCUMENT_POSITION_CONTAINS = 0x08;\n  const unsigned short DOCUMENT_POSITION_CONTAINED_BY = 0x10;\n  const unsigned short DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC = 0x20;\n  unsigned short compareDocumentPosition(Node other);\n  boolean contains(Node? other);\n\n  DOMString? lookupPrefix(DOMString? namespace);\n  DOMString? lookupNamespaceURI(DOMString? prefix);\n  boolean isDefaultNamespace(DOMString? namespace);\n\n  [CEReactions] Node insertBefore(Node node, Node? child);\n  [CEReactions] Node appendChild(Node node);\n  [CEReactions] Node replaceChild(Node node, Node child);\n  [CEReactions] Node removeChild(Node child);\n};",
+          "href": "https://dom.spec.whatwg.org/#node"
+        },
+        "extended": [],
+        "inheritance": {
+          "name": "EventTarget",
+          "defined": {
+            "spec": {
+              "title": "DOM Standard",
+              "url": "https://dom.spec.whatwg.org/"
+            },
+            "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+            "href": "https://dom.spec.whatwg.org/#eventtarget"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        "includes": []
+      },
+      "includes": [
+        {
+          "name": "ParentNode",
+          "defined": {
+            "spec": {
+              "title": "DOM Standard",
+              "url": "https://dom.spec.whatwg.org/"
+            },
+            "fragment": "interface mixin ParentNode {\n  [SameObject] readonly attribute HTMLCollection children;\n  readonly attribute Element? firstElementChild;\n  readonly attribute Element? lastElementChild;\n  readonly attribute unsigned long childElementCount;\n\n  [CEReactions, Unscopable] undefined prepend((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined append((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceChildren((Node or DOMString)... nodes);\n\n  Element? querySelector(DOMString selectors);\n  [NewObject] NodeList querySelectorAll(DOMString selectors);\n};",
+            "href": "https://dom.spec.whatwg.org/#parentnode"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        {
+          "name": "NonDocumentTypeChildNode",
+          "defined": {
+            "spec": {
+              "title": "DOM Standard",
+              "url": "https://dom.spec.whatwg.org/"
+            },
+            "fragment": "interface mixin NonDocumentTypeChildNode {\n  readonly attribute Element? previousElementSibling;\n  readonly attribute Element? nextElementSibling;\n};",
+            "href": "https://dom.spec.whatwg.org/#nondocumenttypechildnode"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        {
+          "name": "ChildNode",
+          "defined": {
+            "spec": {
+              "title": "DOM Standard",
+              "url": "https://dom.spec.whatwg.org/"
+            },
+            "fragment": "interface mixin ChildNode {\n  [CEReactions, Unscopable] undefined before((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined after((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined replaceWith((Node or DOMString)... nodes);\n  [CEReactions, Unscopable] undefined remove();\n};",
+            "href": "https://dom.spec.whatwg.org/#childnode"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        {
+          "name": "Slottable",
+          "defined": {
+            "spec": {
+              "title": "DOM Standard",
+              "url": "https://dom.spec.whatwg.org/"
+            },
+            "fragment": "interface mixin Slottable {\n  readonly attribute HTMLSlotElement? assignedSlot;\n};",
+            "href": "https://dom.spec.whatwg.org/#slotable"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        {
+          "name": "Region",
+          "defined": {
+            "spec": {
+              "title": "CSS Regions Module Level 1",
+              "url": "https://www.w3.org/TR/css-regions-1/"
+            },
+            "fragment": "interface mixin Region {\n  readonly attribute CSSOMString regionOverset;\n  sequence<Range>? getRegionFlowRanges();\n};",
+            "href": "https://drafts.csswg.org/css-regions/#region"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        {
+          "name": "GeometryUtils",
+          "defined": {
+            "spec": {
+              "title": "CSSOM View Module",
+              "url": "https://www.w3.org/TR/cssom-view-1/"
+            },
+            "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
+            "href": "https://drafts.csswg.org/cssom-view/#geometryutils"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        {
+          "name": "InnerHTML",
+          "defined": {
+            "spec": {
+              "title": "DOM Parsing and Serialization",
+              "url": "https://www.w3.org/TR/DOM-Parsing/"
+            },
+            "fragment": "interface mixin InnerHTML {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerHTML;\n};",
+            "href": "https://w3c.github.io/DOM-Parsing/#dom-innerhtml"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        {
+          "name": "ARIAMixin",
+          "defined": {
+            "spec": {
+              "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
+              "url": "https://www.w3.org/TR/wai-aria-1.2/"
+            },
+            "fragment": "interface mixin ARIAMixin {\n\tattribute DOMString? role;\n\n\n\tattribute DOMString ariaAtomic;\n\tattribute DOMString ariaAutoComplete;\n\tattribute DOMString ariaBusy;\n\tattribute DOMString ariaChecked;\n\tattribute DOMString ariaColCount;\n\tattribute DOMString ariaColIndex;\n\tattribute DOMString ariaColIndexText;\n\tattribute DOMString ariaColSpan;\n\n\tattribute DOMString ariaCurrent;\n\n\tattribute DOMString ariaDescription;\n\n\tattribute DOMString ariaDisabled;\n\n\tattribute DOMString ariaExpanded;\n\n\tattribute DOMString ariaHasPopup;\n\tattribute DOMString ariaHidden;\n\tattribute DOMString ariaInvalid;\n\tattribute DOMString ariaKeyShortcuts;\n\tattribute DOMString ariaLabel;\n\n\tattribute DOMString ariaLevel;\n\tattribute DOMString ariaLive;\n\tattribute DOMString ariaModal;\n\tattribute DOMString ariaMultiLine;\n\tattribute DOMString ariaMultiSelectable;\n\tattribute DOMString ariaOrientation;\n\n\tattribute DOMString ariaPlaceholder;\n\tattribute DOMString ariaPosInSet;\n\tattribute DOMString ariaPressed;\n\tattribute DOMString ariaReadOnly;\n\n\tattribute DOMString ariaRequired;\n\tattribute DOMString ariaRoleDescription;\n\tattribute DOMString ariaRowCount;\n\tattribute DOMString ariaRowIndex;\n\tattribute DOMString ariaRowIndexText;\n\tattribute DOMString ariaRowSpan;\n\tattribute DOMString ariaSelected;\n\tattribute DOMString ariaSetSize;\n\tattribute DOMString ariaSort;\n\tattribute DOMString ariaValueMax;\n\tattribute DOMString ariaValueMin;\n\tattribute DOMString ariaValueNow;\n\tattribute DOMString ariaValueText;\n};",
+            "href": "https://w3c.github.io/aria/#dom-ariamixin"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        {
+          "name": "Animatable",
+          "defined": {
+            "spec": {
+              "title": "Web Animations",
+              "url": "https://www.w3.org/TR/web-animations-1/"
+            },
+            "fragment": "interface mixin Animatable {\n    Animation           animate(object? keyframes,\n                                optional (unrestricted double or KeyframeAnimationOptions) options = {});\n    sequence<Animation> getAnimations(optional GetAnimationsOptions options = {});\n};",
+            "href": "https://drafts.csswg.org/web-animations-1/#animatable"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        }
+      ]
+    },
+    "includes": [
+      {
+        "name": "ElementCSSInlineStyle",
+        "defined": {
+          "spec": {
+            "title": "CSS Object Model (CSSOM)",
+            "url": "https://www.w3.org/TR/cssom-1/"
+          },
+          "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+          "href": "https://drafts.csswg.org/cssom/#elementcssinlinestyle"
+        },
+        "extended": [
+          {
+            "spec": {
+              "title": "CSS Typed OM Level 1",
+              "url": "https://www.w3.org/TR/css-typed-om-1/"
+            },
+            "fragment": "partial interface mixin ElementCSSInlineStyle {\n    [SameObject] readonly attribute StylePropertyMap attributeStyleMap;\n};"
+          }
+        ],
+        "inheritance": null,
+        "includes": []
+      },
+      {
+        "name": "GlobalEventHandlers",
+        "defined": {
+          "spec": {
+            "title": "HTML Standard",
+            "url": "https://html.spec.whatwg.org/multipage/"
+          },
+          "fragment": "interface mixin GlobalEventHandlers {\n  attribute EventHandler onabort;\n  attribute EventHandler onauxclick;\n  attribute EventHandler onblur;\n  attribute EventHandler oncancel;\n  attribute EventHandler oncanplay;\n  attribute EventHandler oncanplaythrough;\n  attribute EventHandler onchange;\n  attribute EventHandler onclick;\n  attribute EventHandler onclose;\n  attribute EventHandler oncontextmenu;\n  attribute EventHandler oncuechange;\n  attribute EventHandler ondblclick;\n  attribute EventHandler ondrag;\n  attribute EventHandler ondragend;\n  attribute EventHandler ondragenter;\n  attribute EventHandler ondragleave;\n  attribute EventHandler ondragover;\n  attribute EventHandler ondragstart;\n  attribute EventHandler ondrop;\n  attribute EventHandler ondurationchange;\n  attribute EventHandler onemptied;\n  attribute EventHandler onended;\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onfocus;\n  attribute EventHandler onformdata;\n  attribute EventHandler oninput;\n  attribute EventHandler oninvalid;\n  attribute EventHandler onkeydown;\n  attribute EventHandler onkeypress;\n  attribute EventHandler onkeyup;\n  attribute EventHandler onload;\n  attribute EventHandler onloadeddata;\n  attribute EventHandler onloadedmetadata;\n  attribute EventHandler onloadstart;\n  attribute EventHandler onmousedown;\n  [LegacyLenientThis] attribute EventHandler onmouseenter;\n  [LegacyLenientThis] attribute EventHandler onmouseleave;\n  attribute EventHandler onmousemove;\n  attribute EventHandler onmouseout;\n  attribute EventHandler onmouseover;\n  attribute EventHandler onmouseup;\n  attribute EventHandler onpause;\n  attribute EventHandler onplay;\n  attribute EventHandler onplaying;\n  attribute EventHandler onprogress;\n  attribute EventHandler onratechange;\n  attribute EventHandler onreset;\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onsecuritypolicyviolation;\n  attribute EventHandler onseeked;\n  attribute EventHandler onseeking;\n  attribute EventHandler onselect;\n  attribute EventHandler onslotchange;\n  attribute EventHandler onstalled;\n  attribute EventHandler onsubmit;\n  attribute EventHandler onsuspend;\n  attribute EventHandler ontimeupdate;\n  attribute EventHandler ontoggle;\n  attribute EventHandler onvolumechange;\n  attribute EventHandler onwaiting;\n  attribute EventHandler onwebkitanimationend;\n  attribute EventHandler onwebkitanimationiteration;\n  attribute EventHandler onwebkitanimationstart;\n  attribute EventHandler onwebkittransitionend;\n  attribute EventHandler onwheel;\n};",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers"
+        },
+        "extended": [
+          {
+            "spec": {
+              "title": "WebXR DOM Overlays Module",
+              "url": "https://immersive-web.github.io/dom-overlays/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onbeforexrselect;\n};"
+          },
+          {
+            "spec": {
+              "title": "CSS Animations Level 1",
+              "url": "https://www.w3.org/TR/css-animations-1/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
+          },
+          {
+            "spec": {
+              "title": "CSS Transitions",
+              "url": "https://www.w3.org/TR/css-transitions-1/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};"
+          },
+          {
+            "spec": {
+              "title": "Pointer Events",
+              "url": "https://www.w3.org/TR/pointerevents3/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};"
+          },
+          {
+            "spec": {
+              "title": "Selection API",
+              "url": "https://www.w3.org/TR/selection-api/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};"
+          },
+          {
+            "spec": {
+              "title": "Touch Events - Level 2",
+              "url": "https://www.w3.org/TR/touch-events/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n                    attribute EventHandler ontouchstart;\n                    attribute EventHandler ontouchend;\n                    attribute EventHandler ontouchmove;\n                    attribute EventHandler ontouchcancel;\n};"
+          }
+        ],
+        "inheritance": null,
+        "includes": []
+      },
+      {
+        "name": "DocumentAndElementEventHandlers",
+        "defined": {
+          "spec": {
+            "title": "HTML Standard",
+            "url": "https://html.spec.whatwg.org/multipage/"
+          },
+          "fragment": "interface mixin DocumentAndElementEventHandlers {\n  attribute EventHandler oncopy;\n  attribute EventHandler oncut;\n  attribute EventHandler onpaste;\n};",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#documentandelementeventhandlers"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      },
+      {
+        "name": "SVGElementInstance",
+        "defined": {
+          "spec": {
+            "title": "Scalable Vector Graphics (SVG) 2",
+            "url": "https://www.w3.org/TR/SVG2/"
+          },
+          "fragment": "interface mixin SVGElementInstance {\n  [SameObject] readonly attribute SVGElement? correspondingElement;\n  [SameObject] readonly attribute SVGUseElement? correspondingUseElement;\n};",
+          "href": "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      },
+      {
+        "name": "HTMLOrSVGElement",
+        "defined": {
+          "spec": {
+            "title": "HTML Standard",
+            "url": "https://html.spec.whatwg.org/multipage/"
+          },
+          "fragment": "interface mixin HTMLOrSVGElement {\n  [SameObject] readonly attribute DOMStringMap dataset;\n  attribute DOMString nonce; // intentionally no [CEReactions]\n\n  [CEReactions] attribute boolean autofocus;\n  [CEReactions] attribute long tabIndex;\n  undefined focus(optional FocusOptions options = {});\n  undefined blur();\n};",
+          "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlorsvgelement"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      }
+    ]
+  },
+  "includes": [
+    {
+      "name": "SVGFilterPrimitiveStandardAttributes",
+      "defined": {
+        "spec": {
+          "title": "Filter Effects Module Level 1",
+          "url": "https://www.w3.org/TR/filter-effects-1/"
+        },
+        "fragment": "interface mixin SVGFilterPrimitiveStandardAttributes {\n  readonly attribute SVGAnimatedLength x;\n  readonly attribute SVGAnimatedLength y;\n  readonly attribute SVGAnimatedLength width;\n  readonly attribute SVGAnimatedLength height;\n  readonly attribute SVGAnimatedString result;\n};",
+        "href": "https://drafts.fxtf.org/filter-effects-1/#svgfilterprimitivestandardattributes"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "MathMLElement": {
+        "fragment": "[Exposed=Window]\ninterface MathMLElement : Element { };",
         "type": "interface",
         "name": "MathMLElement",
         "inheritance": "Element",
@@ -35,23 +36,31 @@
     "idlExtendedNames": {
       "MathMLElement": [
         {
-          "name": "MathMLElement",
-          "type": "interface",
+          "fragment": "MathMLElement includes GlobalEventHandlers;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "MathMLElement",
           "includes": "GlobalEventHandlers"
         },
         {
-          "name": "MathMLElement",
-          "type": "interface",
+          "fragment": "MathMLElement includes DocumentAndElementEventHandlers;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "MathMLElement",
           "includes": "DocumentAndElementEventHandlers"
         },
         {
-          "name": "MathMLElement",
-          "type": "interface",
+          "fragment": "MathMLElement includes HTMLOrForeignElement;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "MathMLElement",
           "includes": "HTMLOrForeignElement"
         },
         {
-          "name": "MathMLElement",
-          "type": "interface",
+          "fragment": "MathMLElement includes ElementCSSInlineStyle;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "MathMLElement",
           "includes": "ElementCSSInlineStyle"
         }
       ]

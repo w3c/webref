@@ -15,6 +15,7 @@
     },
     "idlNames": {
       "PermissionsPolicy": {
+        "fragment": "[Exposed=Window]\ninterface PermissionsPolicy {\n  boolean allowsFeature(DOMString feature, optional DOMString origin);\n  sequence<DOMString> features();\n  sequence<DOMString> allowedFeatures();\n  sequence<DOMString> getAllowlistForFeature(DOMString feature);\n};",
         "type": "interface",
         "name": "PermissionsPolicy",
         "inheritance": null,
@@ -171,6 +172,7 @@
         "partial": false
       },
       "PermissionsPolicyViolationReportBody": {
+        "fragment": "[Exposed=Window]\ninterface PermissionsPolicyViolationReportBody : ReportBody {\n  readonly attribute DOMString featureId;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute long? lineNumber;\n  readonly attribute long? columnNumber;\n  readonly attribute DOMString disposition;\n};",
         "type": "interface",
         "name": "PermissionsPolicyViolationReportBody",
         "inheritance": "ReportBody",
@@ -268,6 +270,7 @@
     "idlExtendedNames": {
       "Document": [
         {
+          "fragment": "partial interface Document {\n    [SameObject] readonly attribute PermissionsPolicy permissionsPolicy;\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -301,6 +304,7 @@
       ],
       "HTMLIFrameElement": [
         {
+          "fragment": "partial interface HTMLIFrameElement {\n    [SameObject] readonly attribute PermissionsPolicy permissionsPolicy;\n};",
           "type": "interface",
           "name": "HTMLIFrameElement",
           "inheritance": null,
