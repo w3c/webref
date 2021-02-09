@@ -32238,7 +32238,7 @@
         "partial": false
       },
       "PluginArray": {
-        "fragment": "[Exposed=Window]\ninterface PluginArray {\n  undefined refresh();\n  readonly attribute unsigned long length;\n  object? item(unsigned long index);\n  object? namedItem(DOMString name);\n};",
+        "fragment": "[Exposed=Window]\ninterface PluginArray {\n  undefined refresh();\n  readonly attribute unsigned long length;\n  getter object? item(unsigned long index);\n  object? namedItem(DOMString name);\n};",
         "type": "interface",
         "name": "PluginArray",
         "inheritance": null,
@@ -32303,7 +32303,7 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "getter"
           },
           {
             "type": "operation",
@@ -32352,7 +32352,7 @@
         "partial": false
       },
       "MimeTypeArray": {
-        "fragment": "[Exposed=Window]\ninterface MimeTypeArray {\n  readonly attribute unsigned long length;\n  object? item(unsigned long index);\n  object? namedItem(DOMString name);\n};",
+        "fragment": "[Exposed=Window]\ninterface MimeTypeArray {\n  readonly attribute unsigned long length;\n  getter object? item(unsigned long index);\n  object? namedItem(DOMString name);\n};",
         "type": "interface",
         "name": "MimeTypeArray",
         "inheritance": null,
@@ -32402,7 +32402,7 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "getter"
           },
           {
             "type": "operation",
@@ -32451,7 +32451,7 @@
         "partial": false
       },
       "Plugin": {
-        "fragment": "[Exposed=Window]\ninterface Plugin {\n  readonly attribute undefined name;\n  readonly attribute undefined description;\n  readonly attribute undefined filename;\n  readonly attribute undefined length;\n  undefined item(unsigned long index);\n  undefined namedItem(DOMString name);\n};",
+        "fragment": "[Exposed=Window]\ninterface Plugin {\n  readonly attribute undefined name;\n  readonly attribute undefined description;\n  readonly attribute undefined filename;\n  readonly attribute undefined length;\n  getter undefined item(unsigned long index);\n  undefined namedItem(DOMString name);\n};",
         "type": "interface",
         "name": "Plugin",
         "inheritance": null,
@@ -32546,7 +32546,7 @@
               }
             ],
             "extAttrs": [],
-            "special": ""
+            "special": "getter"
           },
           {
             "type": "operation",

@@ -2643,14 +2643,14 @@ interface mixin NavigatorPlugins {
 interface PluginArray {
   undefined refresh();
   readonly attribute unsigned long length;
-  object? item(unsigned long index);
+  getter object? item(unsigned long index);
   object? namedItem(DOMString name);
 };
 
 [Exposed=Window]
 interface MimeTypeArray {
   readonly attribute unsigned long length;
-  object? item(unsigned long index);
+  getter object? item(unsigned long index);
   object? namedItem(DOMString name);
 };
 
@@ -2660,7 +2660,7 @@ interface Plugin {
   readonly attribute undefined description;
   readonly attribute undefined filename;
   readonly attribute undefined length;
-  undefined item(unsigned long index);
+  getter undefined item(unsigned long index);
   undefined namedItem(DOMString name);
 };
 
