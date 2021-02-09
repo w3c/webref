@@ -1,0 +1,9 @@
+// Source: WebAssembly JavaScript Interface (https://www.w3.org/TR/wasm-js-api-1/)
+[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]
+interface Table {
+  constructor(TableDescriptor descriptor);
+  unsigned long grow([EnforceRange] unsigned long delta);
+  Function? get([EnforceRange] unsigned long index);
+  undefined set([EnforceRange] unsigned long index, Function? value);
+  readonly attribute unsigned long length;
+};

@@ -21,6 +21,7 @@
     },
     "idlNames": {
       "PermissionDescriptor": {
+        "fragment": "dictionary PermissionDescriptor {\n  required PermissionName name;\n};",
         "type": "dictionary",
         "name": "PermissionDescriptor",
         "inheritance": null,
@@ -45,6 +46,7 @@
         "partial": false
       },
       "PermissionState": {
+        "fragment": "enum PermissionState {\n  \"granted\",\n  \"denied\",\n  \"prompt\",\n};",
         "type": "enum",
         "name": "PermissionState",
         "values": [
@@ -64,6 +66,7 @@
         "extAttrs": []
       },
       "PermissionStatus": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PermissionStatus : EventTarget {\n  readonly attribute PermissionState state;\n  attribute EventHandler onchange;\n};",
         "type": "interface",
         "name": "PermissionStatus",
         "inheritance": "EventTarget",
@@ -120,6 +123,7 @@
         "partial": false
       },
       "Permissions": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Permissions {\n  Promise<PermissionStatus> query(object permissionDesc);\n};",
         "type": "interface",
         "name": "Permissions",
         "inheritance": null,
@@ -187,6 +191,7 @@
         "partial": false
       },
       "PushPermissionDescriptor": {
+        "fragment": "dictionary PushPermissionDescriptor : PermissionDescriptor {\n  boolean userVisibleOnly = false;\n};",
         "type": "dictionary",
         "name": "PushPermissionDescriptor",
         "inheritance": "PermissionDescriptor",
@@ -214,6 +219,7 @@
         "partial": false
       },
       "MidiPermissionDescriptor": {
+        "fragment": "dictionary MidiPermissionDescriptor : PermissionDescriptor {\n  boolean sysex = false;\n};",
         "type": "dictionary",
         "name": "MidiPermissionDescriptor",
         "inheritance": "PermissionDescriptor",
@@ -241,6 +247,7 @@
         "partial": false
       },
       "DevicePermissionDescriptor": {
+        "fragment": "dictionary DevicePermissionDescriptor : PermissionDescriptor {\n  DOMString deviceId;\n};",
         "type": "dictionary",
         "name": "DevicePermissionDescriptor",
         "inheritance": "PermissionDescriptor",
@@ -265,6 +272,7 @@
         "partial": false
       },
       "CameraDevicePermissionDescriptor": {
+        "fragment": "dictionary CameraDevicePermissionDescriptor : DevicePermissionDescriptor {\n  boolean panTiltZoom = false;\n};",
         "type": "dictionary",
         "name": "CameraDevicePermissionDescriptor",
         "inheritance": "DevicePermissionDescriptor",
@@ -292,6 +300,7 @@
         "partial": false
       },
       "PermissionSetParameters": {
+        "fragment": "dictionary PermissionSetParameters {\n  required PermissionDescriptor descriptor;\n  required PermissionState state;\n  boolean oneRealm = false;\n};",
         "type": "dictionary",
         "name": "PermissionSetParameters",
         "inheritance": null,
@@ -352,6 +361,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "[Exposed=(Window)]\npartial interface Navigator {\n  [SameObject] readonly attribute Permissions permissions;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -399,6 +409,7 @@
       ],
       "WorkerNavigator": [
         {
+          "fragment": "[Exposed=(Worker)]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute Permissions permissions;\n};",
           "type": "interface",
           "name": "WorkerNavigator",
           "inheritance": null,

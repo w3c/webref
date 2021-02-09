@@ -1,0 +1,14 @@
+{
+  "name": "Instance",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Instance {\n  constructor(Module module, optional object importObject);\n  readonly attribute object exports;\n};",
+    "href": "https://webassembly.github.io/spec/js-api/#instance"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

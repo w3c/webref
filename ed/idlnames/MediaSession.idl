@@ -1,0 +1,11 @@
+// Source: Media Session Standard (https://www.w3.org/TR/mediasession/)
+[Exposed=Window]
+interface MediaSession {
+  attribute MediaMetadata? metadata;
+
+  attribute MediaSessionPlaybackState playbackState;
+
+  undefined setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);
+
+  undefined setPositionState(optional MediaPositionState state = {});
+};

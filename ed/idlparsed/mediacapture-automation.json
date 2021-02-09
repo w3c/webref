@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "MockCapturePromptResult": {
+        "fragment": "enum MockCapturePromptResult {\n  \"granted\",\n  \"denied\"\n};",
         "type": "enum",
         "name": "MockCapturePromptResult",
         "values": [
@@ -25,6 +26,7 @@
         "extAttrs": []
       },
       "MockCapturePromptResultConfiguration": {
+        "fragment": "dictionary MockCapturePromptResultConfiguration {\n  MockCapturePromptResult getUserMedia;\n  MockCapturePromptResult getDisplayMedia;\n};",
         "type": "dictionary",
         "name": "MockCapturePromptResultConfiguration",
         "inheritance": null,
@@ -64,6 +66,7 @@
         "partial": false
       },
       "MockCaptureDeviceConfiguration": {
+        "fragment": "dictionary MockCaptureDeviceConfiguration {\n  DOMString label;\n  DOMString deviceId;\n  DOMString groupId;\n};",
         "type": "dictionary",
         "name": "MockCaptureDeviceConfiguration",
         "inheritance": null,
@@ -118,6 +121,7 @@
         "partial": false
       },
       "MockCameraConfiguration": {
+        "fragment": "dictionary MockCameraConfiguration : MockCaptureDeviceConfiguration {\n  double defaultFrameRate = 30;\n  DOMString facingMode = \"user\";\n  // TODO: Add more capabilities parameters like:\n  // ULongRange width;\n  // ULongRange height;\n  // DoubleRange frameRate;\n};",
         "type": "dictionary",
         "name": "MockCameraConfiguration",
         "inheritance": "MockCaptureDeviceConfiguration",
@@ -163,6 +167,7 @@
         "partial": false
       },
       "MockMicrophoneConfiguration": {
+        "fragment": "dictionary MockMicrophoneConfiguration : MockCaptureDeviceConfiguration {\n  unsigned long defaultSampleRate = 44100;\n  // TODO: Add more capabilities parameters like:\n  // ULongRange sampleRate;\n  // sequence echoCancellation;\n};",
         "type": "dictionary",
         "name": "MockMicrophoneConfiguration",
         "inheritance": "MockCaptureDeviceConfiguration",

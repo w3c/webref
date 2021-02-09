@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "CSSCounterStyleRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSCounterStyleRule : CSSRule {\n  attribute CSSOMString name;\n  attribute CSSOMString system;\n  attribute CSSOMString symbols;\n  attribute CSSOMString additiveSymbols;\n  attribute CSSOMString negative;\n  attribute CSSOMString prefix;\n  attribute CSSOMString suffix;\n  attribute CSSOMString range;\n  attribute CSSOMString pad;\n  attribute CSSOMString speakAs;\n  attribute CSSOMString fallback;\n};",
         "type": "interface",
         "name": "CSSCounterStyleRule",
         "inheritance": "CSSRule",
@@ -201,6 +202,7 @@
     "idlExtendedNames": {
       "CSSRule": [
         {
+          "fragment": "partial interface CSSRule {\n    const unsigned short COUNTER_STYLE_RULE = 11;\n};",
           "type": "interface",
           "name": "CSSRule",
           "inheritance": null,

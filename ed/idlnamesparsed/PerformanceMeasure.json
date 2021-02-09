@@ -1,0 +1,27 @@
+{
+  "name": "PerformanceMeasure",
+  "defined": {
+    "spec": {
+      "title": "User Timing Level 3",
+      "url": "https://www.w3.org/TR/user-timing-2/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceMeasure : PerformanceEntry {\n  readonly attribute any detail;\n};",
+    "href": "https://w3c.github.io/user-timing/#dom-performancemeasure"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PerformanceEntry",
+    "defined": {
+      "spec": {
+        "title": "Performance Timeline Level 2",
+        "url": "https://www.w3.org/TR/performance-timeline-2/"
+      },
+      "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceEntry {\n  readonly    attribute DOMString           name;\n  readonly    attribute DOMString           entryType;\n  readonly    attribute DOMHighResTimeStamp startTime;\n  readonly    attribute DOMHighResTimeStamp duration;\n  [Default] object toJSON();\n};",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

@@ -25,6 +25,7 @@
     },
     "idlNames": {
       "LayoutWorkletGlobalScope": {
+        "fragment": "[Global=(Worklet,LayoutWorklet),Exposed=LayoutWorklet]\ninterface LayoutWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerLayout(DOMString name, VoidFunction layoutCtor);\n};",
         "type": "interface",
         "name": "LayoutWorkletGlobalScope",
         "inheritance": "WorkletGlobalScope",
@@ -108,6 +109,7 @@
         "partial": false
       },
       "LayoutOptions": {
+        "fragment": "[Exposed=LayoutWorklet]\ndictionary LayoutOptions {\n  ChildDisplayType childDisplay = \"block\";\n  LayoutSizingMode sizing = \"block-like\";\n};",
         "type": "dictionary",
         "name": "LayoutOptions",
         "inheritance": null,
@@ -163,6 +165,7 @@
         "partial": false
       },
       "ChildDisplayType": {
+        "fragment": "[Exposed=LayoutWorklet]\nenum ChildDisplayType {\n    \"block\", // default - \"blockifies\" the child boxes.\n    \"normal\",\n};",
         "type": "enum",
         "name": "ChildDisplayType",
         "values": [
@@ -188,6 +191,7 @@
         ]
       },
       "LayoutSizingMode": {
+        "fragment": "[Exposed=LayoutWorklet]\nenum LayoutSizingMode {\n    \"block-like\", // default - Sizing behaves like block containers.\n    \"manual\", // Sizing is specified by the web developer.\n};",
         "type": "enum",
         "name": "LayoutSizingMode",
         "values": [
@@ -213,6 +217,7 @@
         ]
       },
       "LayoutChild": {
+        "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutChild {\n    readonly attribute StylePropertyMapReadOnly styleMap;\n\n    Promise<IntrinsicSizes> intrinsicSizes();\n    Promise<LayoutFragment> layoutNextFragment(LayoutConstraintsOptions constraints, ChildBreakToken breakToken);\n};",
         "type": "interface",
         "name": "LayoutChild",
         "inheritance": null,
@@ -328,6 +333,7 @@
         "partial": false
       },
       "LayoutFragment": {
+        "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutFragment {\n    readonly attribute double inlineSize;\n    readonly attribute double blockSize;\n\n    attribute double inlineOffset;\n    attribute double blockOffset;\n\n    readonly attribute any data;\n\n    readonly attribute ChildBreakToken? breakToken;\n};",
         "type": "interface",
         "name": "LayoutFragment",
         "inheritance": null,
@@ -437,6 +443,7 @@
         "partial": false
       },
       "IntrinsicSizes": {
+        "fragment": "[Exposed=LayoutWorklet]\ninterface IntrinsicSizes {\n  readonly attribute double minContentSize;\n  readonly attribute double maxContentSize;\n};",
         "type": "interface",
         "name": "IntrinsicSizes",
         "inheritance": null,
@@ -486,6 +493,7 @@
         "partial": false
       },
       "LayoutConstraints": {
+        "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutConstraints {\n    readonly attribute double availableInlineSize;\n    readonly attribute double availableBlockSize;\n\n    readonly attribute double? fixedInlineSize;\n    readonly attribute double? fixedBlockSize;\n\n    readonly attribute double percentageInlineSize;\n    readonly attribute double percentageBlockSize;\n\n    readonly attribute double? blockFragmentationOffset;\n    readonly attribute BlockFragmentationType blockFragmentationType;\n\n    readonly attribute any data;\n};",
         "type": "interface",
         "name": "LayoutConstraints",
         "inheritance": null,
@@ -640,6 +648,7 @@
         "partial": false
       },
       "BlockFragmentationType": {
+        "fragment": "enum BlockFragmentationType { \"none\", \"page\", \"column\", \"region\" };",
         "type": "enum",
         "name": "BlockFragmentationType",
         "values": [
@@ -663,6 +672,7 @@
         "extAttrs": []
       },
       "LayoutConstraintsOptions": {
+        "fragment": "dictionary LayoutConstraintsOptions {\n    double availableInlineSize;\n    double availableBlockSize;\n\n    double fixedInlineSize;\n    double fixedBlockSize;\n\n    double percentageInlineSize;\n    double percentageBlockSize;\n\n    double blockFragmentationOffset;\n    BlockFragmentationType blockFragmentationType = \"none\";\n\n    any data;\n};",
         "type": "dictionary",
         "name": "LayoutConstraintsOptions",
         "inheritance": null,
@@ -810,6 +820,7 @@
         "partial": false
       },
       "ChildBreakToken": {
+        "fragment": "[Exposed=LayoutWorklet]\ninterface ChildBreakToken {\n    readonly attribute BreakType breakType;\n    readonly attribute LayoutChild child;\n};",
         "type": "interface",
         "name": "ChildBreakToken",
         "inheritance": null,
@@ -859,6 +870,7 @@
         "partial": false
       },
       "BreakToken": {
+        "fragment": "[Exposed=LayoutWorklet]\ninterface BreakToken {\n    readonly attribute FrozenArray<ChildBreakToken> childBreakTokens;\n    readonly attribute any data;\n};",
         "type": "interface",
         "name": "BreakToken",
         "inheritance": null,
@@ -917,6 +929,7 @@
         "partial": false
       },
       "BreakTokenOptions": {
+        "fragment": "dictionary BreakTokenOptions {\n    sequence<ChildBreakToken> childBreakTokens;\n    any data = null;\n};",
         "type": "dictionary",
         "name": "BreakTokenOptions",
         "inheritance": null,
@@ -967,6 +980,7 @@
         "partial": false
       },
       "BreakType": {
+        "fragment": "enum BreakType { \"none\", \"line\", \"column\", \"page\", \"region\" };",
         "type": "enum",
         "name": "BreakType",
         "values": [
@@ -994,6 +1008,7 @@
         "extAttrs": []
       },
       "LayoutEdges": {
+        "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutEdges {\n  readonly attribute double inlineStart;\n  readonly attribute double inlineEnd;\n\n  readonly attribute double blockStart;\n  readonly attribute double blockEnd;\n\n  // Convenience attributes for the sum in one direction.\n  readonly attribute double inline;\n  readonly attribute double block;\n};",
         "type": "interface",
         "name": "LayoutEdges",
         "inheritance": null,
@@ -1103,6 +1118,7 @@
         "partial": false
       },
       "FragmentResultOptions": {
+        "fragment": "// This is the final return value from the author defined layout() method.\ndictionary FragmentResultOptions {\n    double inlineSize = 0;\n    double blockSize = 0;\n    double autoBlockSize = 0;\n    sequence<LayoutFragment> childFragments = [];\n    any data = null;\n    BreakTokenOptions breakToken = null;\n};",
         "type": "dictionary",
         "name": "FragmentResultOptions",
         "inheritance": null,
@@ -1227,6 +1243,7 @@
         "partial": false
       },
       "FragmentResult": {
+        "fragment": "[Exposed=LayoutWorklet]\ninterface FragmentResult {\n    constructor(optional FragmentResultOptions options = {});\n    readonly attribute double inlineSize;\n    readonly attribute double blockSize;\n};",
         "type": "interface",
         "name": "FragmentResult",
         "inheritance": null,
@@ -1300,6 +1317,7 @@
         "partial": false
       },
       "IntrinsicSizesResultOptions": {
+        "fragment": "dictionary IntrinsicSizesResultOptions {\n    double maxContentSize;\n    double minContentSize;\n};",
         "type": "dictionary",
         "name": "IntrinsicSizesResultOptions",
         "inheritance": null,
@@ -1342,6 +1360,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
+          "fragment": "partial namespace CSS {\n    [SameObject] readonly attribute Worklet layoutWorklet;\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,

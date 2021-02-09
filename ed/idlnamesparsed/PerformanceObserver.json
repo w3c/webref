@@ -1,0 +1,14 @@
+{
+  "name": "PerformanceObserver",
+  "defined": {
+    "spec": {
+      "title": "Performance Timeline Level 2",
+      "url": "https://www.w3.org/TR/performance-timeline-2/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceObserver {\n  constructor(PerformanceObserverCallback callback);\n  undefined observe (optional PerformanceObserverInit options = {});\n  undefined disconnect ();\n  PerformanceEntryList takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;\n};",
+    "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

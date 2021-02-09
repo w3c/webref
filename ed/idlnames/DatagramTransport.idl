@@ -1,0 +1,7 @@
+// Source: WebTransport (https://w3c.github.io/webtransport/)
+interface mixin DatagramTransport {
+    readonly attribute unsigned short maxDatagramSize;
+    /* both streams are streams of Uint8Array objects */
+    readonly attribute ReadableStream datagramReadable;
+    readonly attribute WritableStream datagramWritable;
+};

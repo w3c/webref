@@ -1,0 +1,40 @@
+{
+  "name": "CSSRGB",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSRGB : CSSColorValue {\n    constructor(CSSNumberish r, CSSNumberish g, CSSNumberish b, optional CSSNumberish alpha = 1);\n    attribute CSSNumberish r;\n    attribute CSSNumberish g;\n    attribute CSSNumberish b;\n    attribute CSSNumberish alpha;\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssrgb"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSColorValue",
+    "defined": {
+      "spec": {
+        "title": "CSS Typed OM Level 1",
+        "url": "https://www.w3.org/TR/css-typed-om-1/"
+      },
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    CSSRGB toRGB();\n    CSSHSL toHSL();\n    CSSHWB toHWB();\n    CSSGray toGray();\n    CSSLCH toLCH();\n    CSSLab toLab();\n    CSSColor toColor(CSSKeywordish colorspace);\n\n    [Exposed=Window] static CSSColorValue parse(USVString cssText);\n};",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#csscolorvalue"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "CSSStyleValue",
+      "defined": {
+        "spec": {
+          "title": "CSS Typed OM Level 1",
+          "url": "https://www.w3.org/TR/css-typed-om-1/"
+        },
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSStyleValue {\n    stringifier;\n    [Exposed=Window] static CSSStyleValue parse(USVString property, USVString cssText);\n    [Exposed=Window] static sequence<CSSStyleValue> parseAll(USVString property, USVString cssText);\n};",
+        "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

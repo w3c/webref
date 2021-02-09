@@ -1,0 +1,22 @@
+{
+  "name": "RTCErrorInit",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCErrorInit {\n  required RTCErrorDetailType errorDetail;\n  long sdpLineNumber;\n  long sctpCauseCode;\n  unsigned long receivedAlert;\n  unsigned long sentAlert;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcerrorinit"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Identity for WebRTC 1.0",
+        "url": "https://www.w3.org/TR/webrtc-identity/"
+      },
+      "fragment": "partial dictionary RTCErrorInit {\n  long httpRequestStatusCode;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

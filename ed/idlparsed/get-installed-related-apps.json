@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "RelatedApplication": {
+        "fragment": "dictionary RelatedApplication {\n    required USVString platform;\n    USVString url;\n    DOMString id;\n    USVString version;\n};",
         "type": "dictionary",
         "name": "RelatedApplication",
         "inheritance": null,
@@ -86,6 +87,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext] Promise<sequence<RelatedApplication>> getInstalledRelatedApps();\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

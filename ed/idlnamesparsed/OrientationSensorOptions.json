@@ -1,0 +1,27 @@
+{
+  "name": "OrientationSensorOptions",
+  "defined": {
+    "spec": {
+      "title": "Orientation Sensor",
+      "url": "https://www.w3.org/TR/orientation-sensor/"
+    },
+    "fragment": "dictionary OrientationSensorOptions : SensorOptions {\n  OrientationSensorLocalCoordinateSystem referenceFrame = \"device\";\n};",
+    "href": "https://w3c.github.io/orientation-sensor/#dictdef-orientationsensoroptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "SensorOptions",
+    "defined": {
+      "spec": {
+        "title": "Generic Sensor API",
+        "url": "https://www.w3.org/TR/generic-sensor/"
+      },
+      "fragment": "dictionary SensorOptions {\n  double frequency;\n};",
+      "href": "https://w3c.github.io/sensors/#dictdef-sensoroptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

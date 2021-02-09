@@ -1,0 +1,10 @@
+// Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
+dictionary BluetoothLEScanFilterInit {
+  sequence<BluetoothServiceUUID> services;
+  DOMString name;
+  DOMString namePrefix;
+  // Maps unsigned shorts to BluetoothDataFilters.
+  object manufacturerData;
+  // Maps BluetoothServiceUUIDs to BluetoothDataFilters.
+  object serviceData;
+};

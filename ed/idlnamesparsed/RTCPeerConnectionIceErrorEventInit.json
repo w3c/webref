@@ -1,0 +1,27 @@
+{
+  "name": "RTCPeerConnectionIceErrorEventInit",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCPeerConnectionIceErrorEventInit : EventInit {\n  DOMString? address;\n  unsigned short? port;\n  DOMString url;\n  required unsigned short errorCode;\n  USVString errorText;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnectioniceerroreventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

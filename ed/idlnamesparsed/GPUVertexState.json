@@ -1,0 +1,27 @@
+{
+  "name": "GPUVertexState",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://gpuweb.github.io/gpuweb/"
+    },
+    "fragment": "dictionary GPUVertexState: GPUProgrammableStage {\n    sequence<GPUVertexBufferLayout?> buffers = [];\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuvertexstate"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GPUProgrammableStage",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://gpuweb.github.io/gpuweb/"
+      },
+      "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    required USVString entryPoint;\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuprogrammablestage"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

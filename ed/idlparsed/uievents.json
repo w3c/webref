@@ -20,6 +20,7 @@
     },
     "idlNames": {
       "UIEvent": {
+        "fragment": "[Exposed=Window]\ninterface UIEvent : Event {\n  constructor(DOMString type, optional UIEventInit eventInitDict);\n  readonly attribute Window? view;\n  readonly attribute long detail;\n};",
         "type": "interface",
         "name": "UIEvent",
         "inheritance": "Event",
@@ -107,6 +108,7 @@
         "partial": false
       },
       "UIEventInit": {
+        "fragment": "dictionary UIEventInit : EventInit {\n  Window? view = null;\n  long detail = 0;\n};",
         "type": "dictionary",
         "name": "UIEventInit",
         "inheritance": "EventInit",
@@ -151,6 +153,7 @@
         "partial": false
       },
       "FocusEvent": {
+        "fragment": "[Exposed=Window]\ninterface FocusEvent : UIEvent {\n  constructor(DOMString type, optional FocusEventInit eventInitDict);\n  readonly attribute EventTarget? relatedTarget;\n};",
         "type": "interface",
         "name": "FocusEvent",
         "inheritance": "UIEvent",
@@ -223,6 +226,7 @@
         "partial": false
       },
       "FocusEventInit": {
+        "fragment": "dictionary FocusEventInit : UIEventInit {\n  EventTarget? relatedTarget = null;\n};",
         "type": "dictionary",
         "name": "FocusEventInit",
         "inheritance": "UIEventInit",
@@ -249,6 +253,7 @@
         "partial": false
       },
       "MouseEvent": {
+        "fragment": "[Exposed=Window]\ninterface MouseEvent : UIEvent {\n  constructor(DOMString type, optional MouseEventInit eventInitDict);\n  readonly attribute long screenX;\n  readonly attribute long screenY;\n  readonly attribute long clientX;\n  readonly attribute long clientY;\n\n  readonly attribute boolean ctrlKey;\n  readonly attribute boolean shiftKey;\n  readonly attribute boolean altKey;\n  readonly attribute boolean metaKey;\n\n  readonly attribute short button;\n  readonly attribute unsigned short buttons;\n\n  readonly attribute EventTarget? relatedTarget;\n\n  boolean getModifierState(DOMString keyArg);\n};",
         "type": "interface",
         "name": "MouseEvent",
         "inheritance": "UIEvent",
@@ -503,6 +508,7 @@
         "partial": false
       },
       "MouseEventInit": {
+        "fragment": "dictionary MouseEventInit : EventModifierInit {\n  long screenX = 0;\n  long screenY = 0;\n  long clientX = 0;\n  long clientY = 0;\n\n  short button = 0;\n  unsigned short buttons = 0;\n  EventTarget? relatedTarget = null;\n};",
         "type": "dictionary",
         "name": "MouseEventInit",
         "inheritance": "EventModifierInit",
@@ -637,6 +643,7 @@
         "partial": false
       },
       "EventModifierInit": {
+        "fragment": "dictionary EventModifierInit : UIEventInit {\n  boolean ctrlKey = false;\n  boolean shiftKey = false;\n  boolean altKey = false;\n  boolean metaKey = false;\n\n  boolean modifierAltGraph = false;\n  boolean modifierCapsLock = false;\n  boolean modifierFn = false;\n  boolean modifierFnLock = false;\n  boolean modifierHyper = false;\n  boolean modifierNumLock = false;\n  boolean modifierScrollLock = false;\n  boolean modifierSuper = false;\n  boolean modifierSymbol = false;\n  boolean modifierSymbolLock = false;\n};",
         "type": "dictionary",
         "name": "EventModifierInit",
         "inheritance": "UIEventInit",
@@ -898,6 +905,7 @@
         "partial": false
       },
       "WheelEvent": {
+        "fragment": "[Exposed=Window]\ninterface WheelEvent : MouseEvent {\n  constructor(DOMString type, optional WheelEventInit eventInitDict);\n  // DeltaModeCode\n  const unsigned long DOM_DELTA_PIXEL = 0x00;\n  const unsigned long DOM_DELTA_LINE  = 0x01;\n  const unsigned long DOM_DELTA_PAGE  = 0x02;\n\n  readonly attribute double deltaX;\n  readonly attribute double deltaY;\n  readonly attribute double deltaZ;\n  readonly attribute unsigned long deltaMode;\n};",
         "type": "interface",
         "name": "WheelEvent",
         "inheritance": "MouseEvent",
@@ -1066,6 +1074,7 @@
         "partial": false
       },
       "WheelEventInit": {
+        "fragment": "dictionary WheelEventInit : MouseEventInit {\n  double deltaX = 0.0;\n  double deltaY = 0.0;\n  double deltaZ = 0.0;\n  unsigned long deltaMode = 0;\n};",
         "type": "dictionary",
         "name": "WheelEventInit",
         "inheritance": "MouseEventInit",
@@ -1147,6 +1156,7 @@
         "partial": false
       },
       "InputEvent": {
+        "fragment": "[Exposed=Window]\ninterface InputEvent : UIEvent {\n  constructor(DOMString type, optional InputEventInit eventInitDict);\n  readonly attribute DOMString? data;\n  readonly attribute boolean isComposing;\n  readonly attribute DOMString inputType;\n};",
         "type": "interface",
         "name": "InputEvent",
         "inheritance": "UIEvent",
@@ -1249,6 +1259,7 @@
         "partial": false
       },
       "InputEventInit": {
+        "fragment": "dictionary InputEventInit : UIEventInit {\n  DOMString? data = \"\";\n  boolean isComposing = false;\n  DOMString inputType = \"\";\n};",
         "type": "dictionary",
         "name": "InputEventInit",
         "inheritance": "UIEventInit",
@@ -1312,6 +1323,7 @@
         "partial": false
       },
       "KeyboardEvent": {
+        "fragment": "[Exposed=Window]\ninterface KeyboardEvent : UIEvent {\n  constructor(DOMString type, optional KeyboardEventInit eventInitDict);\n  // KeyLocationCode\n  const unsigned long DOM_KEY_LOCATION_STANDARD = 0x00;\n  const unsigned long DOM_KEY_LOCATION_LEFT = 0x01;\n  const unsigned long DOM_KEY_LOCATION_RIGHT = 0x02;\n  const unsigned long DOM_KEY_LOCATION_NUMPAD = 0x03;\n\n  readonly attribute DOMString key;\n  readonly attribute DOMString code;\n  readonly attribute unsigned long location;\n\n  readonly attribute boolean ctrlKey;\n  readonly attribute boolean shiftKey;\n  readonly attribute boolean altKey;\n  readonly attribute boolean metaKey;\n\n  readonly attribute boolean repeat;\n  readonly attribute boolean isComposing;\n\n  boolean getModifierState(DOMString keyArg);\n};",
         "type": "interface",
         "name": "KeyboardEvent",
         "inheritance": "UIEvent",
@@ -1604,6 +1616,7 @@
         "partial": false
       },
       "KeyboardEventInit": {
+        "fragment": "dictionary KeyboardEventInit : EventModifierInit {\n  DOMString key = \"\";\n  DOMString code = \"\";\n  unsigned long location = 0;\n  boolean repeat = false;\n  boolean isComposing = false;\n};",
         "type": "dictionary",
         "name": "KeyboardEventInit",
         "inheritance": "EventModifierInit",
@@ -1703,6 +1716,7 @@
         "partial": false
       },
       "CompositionEvent": {
+        "fragment": "[Exposed=Window]\ninterface CompositionEvent : UIEvent {\n  constructor(DOMString type, optional CompositionEventInit eventInitDict);\n  readonly attribute DOMString data;\n};",
         "type": "interface",
         "name": "CompositionEvent",
         "inheritance": "UIEvent",
@@ -1775,6 +1789,7 @@
         "partial": false
       },
       "CompositionEventInit": {
+        "fragment": "dictionary CompositionEventInit : UIEventInit {\n  DOMString data = \"\";\n};",
         "type": "dictionary",
         "name": "CompositionEventInit",
         "inheritance": "UIEventInit",
@@ -1805,6 +1820,7 @@
     "idlExtendedNames": {
       "UIEvent": [
         {
+          "fragment": "partial interface UIEvent {\n  // The following support legacy user agents\n  readonly attribute unsigned long which;\n};",
           "type": "interface",
           "name": "UIEvent",
           "inheritance": null,
@@ -1831,6 +1847,7 @@
       ],
       "KeyboardEvent": [
         {
+          "fragment": "partial interface KeyboardEvent {\n  // The following support legacy user agents\n  readonly attribute unsigned long charCode;\n  readonly attribute unsigned long keyCode;\n};",
           "type": "interface",
           "name": "KeyboardEvent",
           "inheritance": null,
@@ -1872,6 +1889,7 @@
       ],
       "KeyboardEventInit": [
         {
+          "fragment": "partial dictionary KeyboardEventInit {\n  // The following support legacy user agents\n  unsigned long charCode = 0;\n  unsigned long keyCode = 0;\n};",
           "type": "dictionary",
           "name": "KeyboardEventInit",
           "inheritance": null,

@@ -21,6 +21,7 @@
     },
     "idlNames": {
       "HeadersInit": {
+        "fragment": "typedef (sequence<sequence<ByteString>> or record<ByteString, ByteString>) HeadersInit;",
         "type": "typedef",
         "name": "HeadersInit",
         "idlType": {
@@ -85,6 +86,7 @@
         "extAttrs": []
       },
       "Headers": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Headers {\n  constructor(optional HeadersInit init);\n\n  undefined append(ByteString name, ByteString value);\n  undefined delete(ByteString name);\n  ByteString? get(ByteString name);\n  boolean has(ByteString name);\n  undefined set(ByteString name, ByteString value);\n  iterable<ByteString, ByteString>;\n};",
         "type": "interface",
         "name": "Headers",
         "inheritance": null,
@@ -350,6 +352,7 @@
         "partial": false
       },
       "XMLHttpRequestBodyInit": {
+        "fragment": "typedef (Blob or BufferSource or FormData or URLSearchParams or USVString) XMLHttpRequestBodyInit;",
         "type": "typedef",
         "name": "XMLHttpRequestBodyInit",
         "idlType": {
@@ -404,6 +407,7 @@
         "extAttrs": []
       },
       "BodyInit": {
+        "fragment": "typedef (ReadableStream or XMLHttpRequestBodyInit) BodyInit;",
         "type": "typedef",
         "name": "BodyInit",
         "idlType": {
@@ -434,6 +438,7 @@
         "extAttrs": []
       },
       "Body": {
+        "fragment": "interface mixin Body {\n  readonly attribute ReadableStream? body;\n  readonly attribute boolean bodyUsed;\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n  [NewObject] Promise<Blob> blob();\n  [NewObject] Promise<FormData> formData();\n  [NewObject] Promise<any> json();\n  [NewObject] Promise<USVString> text();\n};",
         "type": "interface mixin",
         "name": "Body",
         "inheritance": null,
@@ -628,6 +633,7 @@
         "partial": false
       },
       "RequestInfo": {
+        "fragment": "typedef (Request or USVString) RequestInfo;",
         "type": "typedef",
         "name": "RequestInfo",
         "idlType": {
@@ -658,6 +664,7 @@
         "extAttrs": []
       },
       "Request": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Request {\n  constructor(RequestInfo input, optional RequestInit init = {});\n\n  readonly attribute ByteString method;\n  readonly attribute USVString url;\n  [SameObject] readonly attribute Headers headers;\n\n  readonly attribute RequestDestination destination;\n  readonly attribute USVString referrer;\n  readonly attribute ReferrerPolicy referrerPolicy;\n  readonly attribute RequestMode mode;\n  readonly attribute RequestCredentials credentials;\n  readonly attribute RequestCache cache;\n  readonly attribute RequestRedirect redirect;\n  readonly attribute DOMString integrity;\n  readonly attribute boolean keepalive;\n  readonly attribute boolean isReloadNavigation;\n  readonly attribute boolean isHistoryNavigation;\n  readonly attribute AbortSignal signal;\n\n  [NewObject] Request clone();\n};",
         "type": "interface",
         "name": "Request",
         "inheritance": null,
@@ -978,6 +985,7 @@
         "partial": false
       },
       "RequestInit": {
+        "fragment": "dictionary RequestInit {\n  ByteString method;\n  HeadersInit headers;\n  BodyInit? body;\n  USVString referrer;\n  ReferrerPolicy referrerPolicy;\n  RequestMode mode;\n  RequestCredentials credentials;\n  RequestCache cache;\n  RequestRedirect redirect;\n  DOMString integrity;\n  boolean keepalive;\n  AbortSignal? signal;\n  any window; // can only be set to null\n};",
         "type": "dictionary",
         "name": "RequestInit",
         "inheritance": null,
@@ -1182,6 +1190,7 @@
         "partial": false
       },
       "RequestDestination": {
+        "fragment": "enum RequestDestination { \"\", \"audio\", \"audioworklet\", \"document\", \"embed\", \"font\", \"frame\", \"iframe\", \"image\", \"manifest\", \"object\", \"paintworklet\", \"report\", \"script\", \"sharedworker\", \"style\",  \"track\", \"video\", \"worker\", \"xslt\" };",
         "type": "enum",
         "name": "RequestDestination",
         "values": [
@@ -1269,6 +1278,7 @@
         "extAttrs": []
       },
       "RequestMode": {
+        "fragment": "enum RequestMode { \"navigate\", \"same-origin\", \"no-cors\", \"cors\" };",
         "type": "enum",
         "name": "RequestMode",
         "values": [
@@ -1292,6 +1302,7 @@
         "extAttrs": []
       },
       "RequestCredentials": {
+        "fragment": "enum RequestCredentials { \"omit\", \"same-origin\", \"include\" };",
         "type": "enum",
         "name": "RequestCredentials",
         "values": [
@@ -1311,6 +1322,7 @@
         "extAttrs": []
       },
       "RequestCache": {
+        "fragment": "enum RequestCache { \"default\", \"no-store\", \"reload\", \"no-cache\", \"force-cache\", \"only-if-cached\" };",
         "type": "enum",
         "name": "RequestCache",
         "values": [
@@ -1342,6 +1354,7 @@
         "extAttrs": []
       },
       "RequestRedirect": {
+        "fragment": "enum RequestRedirect { \"follow\", \"error\", \"manual\" };",
         "type": "enum",
         "name": "RequestRedirect",
         "values": [
@@ -1361,6 +1374,7 @@
         "extAttrs": []
       },
       "Response": {
+        "fragment": "[Exposed=(Window,Worker)]interface Response {\n  constructor(optional BodyInit? body = null, optional ResponseInit init = {});\n\n  [NewObject] static Response error();\n  [NewObject] static Response redirect(USVString url, optional unsigned short status = 302);\n\n  readonly attribute ResponseType type;\n\n  readonly attribute USVString url;\n  readonly attribute boolean redirected;\n  readonly attribute unsigned short status;\n  readonly attribute boolean ok;\n  readonly attribute ByteString statusText;\n  [SameObject] readonly attribute Headers headers;\n\n  [NewObject] Response clone();\n};",
         "type": "interface",
         "name": "Response",
         "inheritance": null,
@@ -1643,6 +1657,7 @@
         "partial": false
       },
       "ResponseInit": {
+        "fragment": "dictionary ResponseInit {\n  unsigned short status = 200;\n  ByteString statusText = \"\";\n  HeadersInit headers;\n};",
         "type": "dictionary",
         "name": "ResponseInit",
         "inheritance": null,
@@ -1703,6 +1718,7 @@
         "partial": false
       },
       "ResponseType": {
+        "fragment": "enum ResponseType { \"basic\", \"cors\", \"default\", \"error\", \"opaque\", \"opaqueredirect\" };",
         "type": "enum",
         "name": "ResponseType",
         "values": [
@@ -1737,20 +1753,25 @@
     "idlExtendedNames": {
       "Request": [
         {
-          "name": "Request",
-          "type": "interface",
+          "fragment": "Request includes Body;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Request",
           "includes": "Body"
         }
       ],
       "Response": [
         {
-          "name": "Response",
-          "type": "interface",
+          "fragment": "Response includes Body;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Response",
           "includes": "Body"
         }
       ],
       "WindowOrWorkerGlobalScope": [
         {
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [NewObject] Promise<Response> fetch(RequestInfo input, optional RequestInit init = {});\n};",
           "type": "interface mixin",
           "name": "WindowOrWorkerGlobalScope",
           "inheritance": null,

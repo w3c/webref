@@ -17,6 +17,7 @@
     },
     "idlNames": {
       "CSSFontFaceRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSFontFaceRule : CSSRule {\n    readonly attribute CSSStyleDeclaration style;\n};",
         "type": "interface",
         "name": "CSSFontFaceRule",
         "inheritance": "CSSRule",
@@ -51,6 +52,7 @@
         "partial": false
       },
       "CSSFontFeatureValuesRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSFontFeatureValuesRule : CSSRule {\n  attribute CSSOMString fontFamily;\n  readonly attribute CSSFontFeatureValuesMap annotation;\n  readonly attribute CSSFontFeatureValuesMap ornaments;\n  readonly attribute CSSFontFeatureValuesMap stylistic;\n  readonly attribute CSSFontFeatureValuesMap swash;\n  readonly attribute CSSFontFeatureValuesMap characterVariant;\n  readonly attribute CSSFontFeatureValuesMap styleset;\n};",
         "type": "interface",
         "name": "CSSFontFeatureValuesRule",
         "inheritance": "CSSRule",
@@ -175,6 +177,7 @@
         "partial": false
       },
       "CSSFontFeatureValuesMap": {
+        "fragment": "[Exposed=Window]\ninterface CSSFontFeatureValuesMap {\n  maplike<CSSOMString, sequence<unsigned long>>;\n  undefined set(CSSOMString featureValueName,\n           (unsigned long or sequence<unsigned long>) values);\n};",
         "type": "interface",
         "name": "CSSFontFeatureValuesMap",
         "inheritance": null,
@@ -302,6 +305,7 @@
         "partial": false
       },
       "CSSFontPaletteValuesRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSFontPaletteValuesRule : CSSRule {\n  maplike<unsigned long, CSSOMString>;\n  attribute CSSOMString fontFamily;\n  attribute CSSOMString basePalette;\n};",
         "type": "interface",
         "name": "CSSFontPaletteValuesRule",
         "inheritance": "CSSRule",
@@ -379,6 +383,7 @@
     "idlExtendedNames": {
       "CSSRule": [
         {
+          "fragment": "partial interface CSSRule {  const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n};",
           "type": "interface",
           "name": "CSSRule",
           "inheritance": null,
@@ -405,6 +410,7 @@
           "partial": true
         },
         {
+          "fragment": "partial interface CSSRule {  const unsigned short FONT_PALETTE_VALUES_RULE = 15;\n};",
           "type": "interface",
           "name": "CSSRule",
           "inheritance": null,

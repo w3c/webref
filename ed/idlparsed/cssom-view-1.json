@@ -20,6 +20,7 @@
     },
     "idlNames": {
       "ScrollBehavior": {
+        "fragment": "enum ScrollBehavior { \"auto\", \"smooth\" };",
         "type": "enum",
         "name": "ScrollBehavior",
         "values": [
@@ -35,6 +36,7 @@
         "extAttrs": []
       },
       "ScrollOptions": {
+        "fragment": "dictionary ScrollOptions {\n    ScrollBehavior behavior = \"auto\";\n};",
         "type": "dictionary",
         "name": "ScrollOptions",
         "inheritance": null,
@@ -62,6 +64,7 @@
         "partial": false
       },
       "ScrollToOptions": {
+        "fragment": "dictionary ScrollToOptions : ScrollOptions {\n    unrestricted double left;\n    unrestricted double top;\n};",
         "type": "dictionary",
         "name": "ScrollToOptions",
         "inheritance": "ScrollOptions",
@@ -101,6 +104,7 @@
         "partial": false
       },
       "MediaQueryList": {
+        "fragment": "[Exposed=Window]\ninterface MediaQueryList : EventTarget {\n  readonly attribute CSSOMString media;\n  readonly attribute boolean matches;\n  undefined addListener(EventListener? callback);\n  undefined removeListener(EventListener? callback);\n           attribute EventHandler onchange;\n};",
         "type": "interface",
         "name": "MediaQueryList",
         "inheritance": "EventTarget",
@@ -229,6 +233,7 @@
         "partial": false
       },
       "MediaQueryListEvent": {
+        "fragment": "[Exposed=Window]\ninterface MediaQueryListEvent : Event {\n  constructor(CSSOMString type, optional MediaQueryListEventInit eventInitDict = {});\n  readonly attribute CSSOMString media;\n  readonly attribute boolean matches;\n};",
         "type": "interface",
         "name": "MediaQueryListEvent",
         "inheritance": "Event",
@@ -318,6 +323,7 @@
         "partial": false
       },
       "MediaQueryListEventInit": {
+        "fragment": "dictionary MediaQueryListEventInit : EventInit {\n  CSSOMString media = \"\";\n  boolean matches = false;\n};",
         "type": "dictionary",
         "name": "MediaQueryListEventInit",
         "inheritance": "EventInit",
@@ -363,6 +369,7 @@
         "partial": false
       },
       "Screen": {
+        "fragment": "[Exposed=Window]\ninterface Screen {\n  readonly attribute long availWidth;\n  readonly attribute long availHeight;\n  readonly attribute long width;\n  readonly attribute long height;\n  readonly attribute unsigned long colorDepth;\n  readonly attribute unsigned long pixelDepth;\n};",
         "type": "interface",
         "name": "Screen",
         "inheritance": null,
@@ -472,6 +479,7 @@
         "partial": false
       },
       "CaretPosition": {
+        "fragment": "[Exposed=Window]\ninterface CaretPosition {\n  readonly attribute Node offsetNode;\n  readonly attribute unsigned long offset;\n  [NewObject] DOMRect? getClientRect();\n};",
         "type": "interface",
         "name": "CaretPosition",
         "inheritance": null,
@@ -543,6 +551,7 @@
         "partial": false
       },
       "ScrollLogicalPosition": {
+        "fragment": "enum ScrollLogicalPosition { \"start\", \"center\", \"end\", \"nearest\" };",
         "type": "enum",
         "name": "ScrollLogicalPosition",
         "values": [
@@ -566,6 +575,7 @@
         "extAttrs": []
       },
       "ScrollIntoViewOptions": {
+        "fragment": "dictionary ScrollIntoViewOptions : ScrollOptions {\n  ScrollLogicalPosition block = \"start\";\n  ScrollLogicalPosition inline = \"nearest\";\n};",
         "type": "dictionary",
         "name": "ScrollIntoViewOptions",
         "inheritance": "ScrollOptions",
@@ -611,6 +621,7 @@
         "partial": false
       },
       "CSSBoxType": {
+        "fragment": "enum CSSBoxType { \"margin\", \"border\", \"padding\", \"content\" };",
         "type": "enum",
         "name": "CSSBoxType",
         "values": [
@@ -634,6 +645,7 @@
         "extAttrs": []
       },
       "BoxQuadOptions": {
+        "fragment": "dictionary BoxQuadOptions {\n  CSSBoxType box = \"border\";\n  GeometryNode relativeTo; // XXX default document (i.e. viewport)\n};",
         "type": "dictionary",
         "name": "BoxQuadOptions",
         "inheritance": null,
@@ -676,6 +688,7 @@
         "partial": false
       },
       "ConvertCoordinateOptions": {
+        "fragment": "dictionary ConvertCoordinateOptions {\n  CSSBoxType fromBox = \"border\";\n  CSSBoxType toBox = \"border\";\n};",
         "type": "dictionary",
         "name": "ConvertCoordinateOptions",
         "inheritance": null,
@@ -721,6 +734,7 @@
         "partial": false
       },
       "GeometryUtils": {
+        "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
         "type": "interface mixin",
         "name": "GeometryUtils",
         "inheritance": null,
@@ -971,6 +985,7 @@
         "partial": false
       },
       "GeometryNode": {
+        "fragment": "typedef (Text or Element or CSSPseudoElement or Document) GeometryNode;",
         "type": "typedef",
         "name": "GeometryNode",
         "idlType": {
@@ -1020,6 +1035,7 @@
     "idlExtendedNames": {
       "Window": [
         {
+          "fragment": "partial interface Window {\n    [NewObject] MediaQueryList matchMedia(CSSOMString query);\n    [SameObject, Replaceable] readonly attribute Screen screen;\n\n    // browsing context\n    undefined moveTo(long x, long y);\n    undefined moveBy(long x, long y);\n    undefined resizeTo(long width, long height);\n    undefined resizeBy(long x, long y);\n\n    // viewport\n    [Replaceable] readonly attribute long innerWidth;\n    [Replaceable] readonly attribute long innerHeight;\n\n    // viewport scrolling\n    [Replaceable] readonly attribute double scrollX;\n    [Replaceable] readonly attribute double pageXOffset;\n    [Replaceable] readonly attribute double scrollY;\n    [Replaceable] readonly attribute double pageYOffset;\n    undefined scroll(optional ScrollToOptions options = {});\n    undefined scroll(unrestricted double x, unrestricted double y);\n    undefined scrollTo(optional ScrollToOptions options = {});\n    undefined scrollTo(unrestricted double x, unrestricted double y);\n    undefined scrollBy(optional ScrollToOptions options = {});\n    undefined scrollBy(unrestricted double x, unrestricted double y);\n\n    // client\n    [Replaceable] readonly attribute long screenX;\n    [Replaceable] readonly attribute long screenLeft;\n    [Replaceable] readonly attribute long screenY;\n    [Replaceable] readonly attribute long screenTop;\n    [Replaceable] readonly attribute long outerWidth;\n    [Replaceable] readonly attribute long outerHeight;\n    [Replaceable] readonly attribute double devicePixelRatio;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -1822,6 +1838,7 @@
       ],
       "Document": [
         {
+          "fragment": "partial interface Document {\n  Element? elementFromPoint(double x, double y);\n  sequence<Element> elementsFromPoint(double x, double y);\n  CaretPosition? caretPositionFromPoint(double x, double y);\n  readonly attribute Element? scrollingElement;\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -1999,13 +2016,16 @@
           "partial": true
         },
         {
-          "name": "Document",
-          "type": "interface",
+          "fragment": "Document includes GeometryUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Document",
           "includes": "GeometryUtils"
         }
       ],
       "Element": [
         {
+          "fragment": "partial interface Element {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n  undefined scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});\n  undefined scroll(optional ScrollToOptions options = {});\n  undefined scroll(unrestricted double x, unrestricted double y);\n  undefined scrollTo(optional ScrollToOptions options = {});\n  undefined scrollTo(unrestricted double x, unrestricted double y);\n  undefined scrollBy(optional ScrollToOptions options = {});\n  undefined scrollBy(unrestricted double x, unrestricted double y);\n  attribute unrestricted double scrollTop;\n  attribute unrestricted double scrollLeft;\n  readonly attribute long scrollWidth;\n  readonly attribute long scrollHeight;\n  readonly attribute long clientTop;\n  readonly attribute long clientLeft;\n  readonly attribute long clientWidth;\n  readonly attribute long clientHeight;\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -2469,13 +2489,16 @@
           "partial": true
         },
         {
-          "name": "Element",
-          "type": "interface",
+          "fragment": "// like Range\nElement includes GeometryUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Element",
           "includes": "GeometryUtils"
         }
       ],
       "HTMLElement": [
         {
+          "fragment": "partial interface HTMLElement {\n  readonly attribute Element? offsetParent;\n  readonly attribute long offsetTop;\n  readonly attribute long offsetLeft;\n  readonly attribute long offsetWidth;\n  readonly attribute long offsetHeight;\n};",
           "type": "interface",
           "name": "HTMLElement",
           "inheritance": null,
@@ -2562,6 +2585,7 @@
       ],
       "HTMLImageElement": [
         {
+          "fragment": "partial interface HTMLImageElement {\n  readonly attribute long x;\n  readonly attribute long y;\n};",
           "type": "interface",
           "name": "HTMLImageElement",
           "inheritance": null,
@@ -2603,6 +2627,7 @@
       ],
       "Range": [
         {
+          "fragment": "partial interface Range {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n};",
           "type": "interface",
           "name": "Range",
           "inheritance": null,
@@ -2651,6 +2676,7 @@
       ],
       "MouseEvent": [
         {
+          "fragment": "partial interface MouseEvent {\n  readonly attribute double screenX;\n  readonly attribute double screenY;\n  readonly attribute double pageX;\n  readonly attribute double pageY;\n  readonly attribute double clientX;\n  readonly attribute double clientY;\n  readonly attribute double x;\n  readonly attribute double y;\n  readonly attribute double offsetX;\n  readonly attribute double offsetY;\n};",
           "type": "interface",
           "name": "MouseEvent",
           "inheritance": null,
@@ -2812,6 +2838,7 @@
       ],
       "MouseEventInit": [
         {
+          "fragment": "partial dictionary MouseEventInit {\n  double screenX = 0.0;\n  double screenY = 0.0;\n  double clientX = 0.0;\n  double clientY = 0.0;\n};",
           "type": "dictionary",
           "name": "MouseEventInit",
           "inheritance": null,
@@ -2895,15 +2922,19 @@
       ],
       "Text": [
         {
-          "name": "Text",
-          "type": "interface",
+          "fragment": "Text includes GeometryUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Text",
           "includes": "GeometryUtils"
         }
       ],
       "CSSPseudoElement": [
         {
-          "name": "CSSPseudoElement",
-          "type": "interface",
+          "fragment": "CSSPseudoElement includes GeometryUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CSSPseudoElement",
           "includes": "GeometryUtils"
         }
       ]

@@ -1,0 +1,29 @@
+{
+  "name": "Permissions",
+  "defined": {
+    "spec": {
+      "title": "Permissions",
+      "url": "https://www.w3.org/TR/permissions/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Permissions {\n  Promise<PermissionStatus> query(object permissionDesc);\n};",
+    "href": "https://w3c.github.io/permissions/#permissions"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Requesting Permissions",
+        "url": "https://wicg.github.io/permissions-request/"
+      },
+      "fragment": "partial interface Permissions {\n  Promise<PermissionStatus> request(object permissionDesc);\n};"
+    },
+    {
+      "spec": {
+        "title": "Relinquishing Permissions",
+        "url": "https://wicg.github.io/permissions-revoke/"
+      },
+      "fragment": "partial interface Permissions {\n  Promise<PermissionStatus> revoke(object permissionDesc);\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

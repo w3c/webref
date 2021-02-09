@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "SpatialNavigationDirection": {
+        "fragment": "enum SpatialNavigationDirection {\n    \"up\",\n    \"down\",\n    \"left\",\n    \"right\",\n};",
         "type": "enum",
         "name": "SpatialNavigationDirection",
         "values": [
@@ -37,6 +38,7 @@
         "extAttrs": []
       },
       "FocusableAreaSearchMode": {
+        "fragment": "enum FocusableAreaSearchMode {\n    \"visible\",\n    \"all\"\n};",
         "type": "enum",
         "name": "FocusableAreaSearchMode",
         "values": [
@@ -52,6 +54,7 @@
         "extAttrs": []
       },
       "FocusableAreasOption": {
+        "fragment": "dictionary FocusableAreasOption {\n    FocusableAreaSearchMode mode;\n};",
         "type": "dictionary",
         "name": "FocusableAreasOption",
         "inheritance": null,
@@ -76,6 +79,7 @@
         "partial": false
       },
       "SpatialNavigationSearchOptions": {
+        "fragment": "dictionary SpatialNavigationSearchOptions {\n    sequence<Node>? candidates;\n    Node? container;\n};",
         "type": "dictionary",
         "name": "SpatialNavigationSearchOptions",
         "inheritance": null,
@@ -124,6 +128,7 @@
         "partial": false
       },
       "NavigationEvent": {
+        "fragment": "[Exposed=Window]\ninterface NavigationEvent : UIEvent {\n    constructor(DOMString type,\n                optional NavigationEventInit eventInitDict = {});\n    readonly attribute SpatialNavigationDirection dir;\n    readonly attribute EventTarget? relatedTarget;\n};",
         "type": "interface",
         "name": "NavigationEvent",
         "inheritance": "UIEvent",
@@ -213,6 +218,7 @@
         "partial": false
       },
       "NavigationEventInit": {
+        "fragment": "dictionary NavigationEventInit : UIEventInit {\n    SpatialNavigationDirection dir;\n    EventTarget? relatedTarget = null;\n};",
         "type": "dictionary",
         "name": "NavigationEventInit",
         "inheritance": "UIEventInit",
@@ -257,6 +263,7 @@
     "idlExtendedNames": {
       "Window": [
         {
+          "fragment": "partial interface Window {\n    undefined navigate(SpatialNavigationDirection dir);\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -300,6 +307,7 @@
       ],
       "Element": [
         {
+          "fragment": "partial interface Element {\n    Node getSpatialNavigationContainer();\n    sequence<Node> focusableAreas(optional FocusableAreasOption option = {});\n    Node? spatialNavigationSearch(SpatialNavigationDirection dir, optional SpatialNavigationSearchOptions options = {});\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,

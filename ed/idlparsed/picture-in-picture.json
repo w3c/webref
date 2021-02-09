@@ -18,6 +18,7 @@
     },
     "idlNames": {
       "PictureInPictureWindow": {
+        "fragment": "[Exposed=Window]\ninterface PictureInPictureWindow : EventTarget {\n  readonly attribute long width;\n  readonly attribute long height;\n\n  attribute EventHandler onresize;\n};",
         "type": "interface",
         "name": "PictureInPictureWindow",
         "inheritance": "EventTarget",
@@ -82,6 +83,7 @@
         "partial": false
       },
       "PictureInPictureEvent": {
+        "fragment": "[Exposed=Window]\ninterface PictureInPictureEvent : Event {\n    constructor(DOMString type, PictureInPictureEventInit eventInitDict);\n    [SameObject] readonly attribute PictureInPictureWindow pictureInPictureWindow;\n};",
         "type": "interface",
         "name": "PictureInPictureEvent",
         "inheritance": "Event",
@@ -161,6 +163,7 @@
         "partial": false
       },
       "PictureInPictureEventInit": {
+        "fragment": "dictionary PictureInPictureEventInit : EventInit {\n    required PictureInPictureWindow pictureInPictureWindow;\n};",
         "type": "dictionary",
         "name": "PictureInPictureEventInit",
         "inheritance": "EventInit",
@@ -188,6 +191,7 @@
     "idlExtendedNames": {
       "HTMLVideoElement": [
         {
+          "fragment": "partial interface HTMLVideoElement {\n  [NewObject] Promise<PictureInPictureWindow> requestPictureInPicture();\n\n  attribute EventHandler onenterpictureinpicture;\n  attribute EventHandler onleavepictureinpicture;\n\n  [CEReactions] attribute boolean autoPictureInPicture;\n  [CEReactions] attribute boolean disablePictureInPicture;\n};",
           "type": "interface",
           "name": "HTMLVideoElement",
           "inheritance": null,
@@ -304,6 +308,7 @@
       ],
       "Document": [
         {
+          "fragment": "partial interface Document {\n  readonly attribute boolean pictureInPictureEnabled;\n\n  [NewObject] Promise<undefined> exitPictureInPicture();\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -361,6 +366,7 @@
       ],
       "DocumentOrShadowRoot": [
         {
+          "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element? pictureInPictureElement;\n};",
           "type": "interface mixin",
           "name": "DocumentOrShadowRoot",
           "inheritance": null,

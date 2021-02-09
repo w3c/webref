@@ -16,6 +16,7 @@
     },
     "idlNames": {
       "MediaRecorder": {
+        "fragment": "[Exposed=Window]\ninterface MediaRecorder : EventTarget {\n  constructor(MediaStream stream, optional MediaRecorderOptions options = {});\n  readonly attribute MediaStream stream;\n  readonly attribute DOMString mimeType;\n  readonly attribute RecordingState state;\n  attribute EventHandler onstart;\n  attribute EventHandler onstop;\n  attribute EventHandler ondataavailable;\n  attribute EventHandler onpause;\n  attribute EventHandler onresume;\n  attribute EventHandler onerror;\n  readonly attribute unsigned long videoBitsPerSecond;\n  readonly attribute unsigned long audioBitsPerSecond;\n  readonly attribute BitrateMode audioBitrateMode;\n\n  undefined start(optional unsigned long timeslice);\n  undefined stop();\n  undefined pause();\n  undefined resume();\n  undefined requestData();\n\n  static boolean isTypeSupported(DOMString type);\n};",
         "type": "interface",
         "name": "MediaRecorder",
         "inheritance": "EventTarget",
@@ -379,6 +380,7 @@
         "partial": false
       },
       "MediaRecorderOptions": {
+        "fragment": "dictionary MediaRecorderOptions {\n  DOMString mimeType = \"\";\n  unsigned long audioBitsPerSecond;\n  unsigned long videoBitsPerSecond;\n  unsigned long bitsPerSecond;\n  BitrateMode audioBitrateMode = \"variable\";\n};",
         "type": "dictionary",
         "name": "MediaRecorderOptions",
         "inheritance": null,
@@ -469,6 +471,7 @@
         "partial": false
       },
       "BitrateMode": {
+        "fragment": "enum BitrateMode {\n  \"constant\",\n  \"variable\"\n};",
         "type": "enum",
         "name": "BitrateMode",
         "values": [
@@ -484,6 +487,7 @@
         "extAttrs": []
       },
       "RecordingState": {
+        "fragment": "enum RecordingState {\n  \"inactive\",\n  \"recording\",\n  \"paused\"\n};",
         "type": "enum",
         "name": "RecordingState",
         "values": [
@@ -503,6 +507,7 @@
         "extAttrs": []
       },
       "BlobEvent": {
+        "fragment": "[Exposed=Window]\ninterface BlobEvent : Event {\n  constructor(DOMString type, BlobEventInit eventInitDict);\n  [SameObject] readonly attribute Blob data;\n  readonly attribute DOMHighResTimeStamp timecode;\n};",
         "type": "interface",
         "name": "BlobEvent",
         "inheritance": "Event",
@@ -597,6 +602,7 @@
         "partial": false
       },
       "BlobEventInit": {
+        "fragment": "dictionary BlobEventInit {\n  required Blob data;\n  DOMHighResTimeStamp timecode;\n};",
         "type": "dictionary",
         "name": "BlobEventInit",
         "inheritance": null,
@@ -636,6 +642,7 @@
         "partial": false
       },
       "MediaRecorderErrorEventInit": {
+        "fragment": "dictionary MediaRecorderErrorEventInit : EventInit {\n  required DOMException error;\n};",
         "type": "dictionary",
         "name": "MediaRecorderErrorEventInit",
         "inheritance": "EventInit",
@@ -660,6 +667,7 @@
         "partial": false
       },
       "MediaRecorderErrorEvent": {
+        "fragment": "[Exposed=Window]\ninterface MediaRecorderErrorEvent : Event {\n  constructor(DOMString type, MediaRecorderErrorEventInit eventInitDict);\n  [SameObject] readonly attribute DOMException error;\n};",
         "type": "interface",
         "name": "MediaRecorderErrorEvent",
         "inheritance": "Event",

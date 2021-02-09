@@ -17,6 +17,7 @@
     },
     "idlNames": {
       "PublicKeyCredential": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PublicKeyCredential : Credential {\n    [SameObject] readonly attribute ArrayBuffer              rawId;\n    [SameObject] readonly attribute AuthenticatorResponse    response;\n    AuthenticationExtensionsClientOutputs getClientExtensionResults();\n};",
         "type": "interface",
         "name": "PublicKeyCredential",
         "inheritance": "Credential",
@@ -101,6 +102,7 @@
         "partial": false
       },
       "AuthenticatorResponse": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      clientDataJSON;\n};",
         "type": "interface",
         "name": "AuthenticatorResponse",
         "inheritance": null,
@@ -148,6 +150,7 @@
         "partial": false
       },
       "AuthenticatorAttestationResponse": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorAttestationResponse : AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      attestationObject;\n    sequence<DOMString>                              getTransports();\n    ArrayBuffer                                      getAuthenticatorData();\n    ArrayBuffer?                                     getPublicKey();\n    COSEAlgorithmIdentifier                          getPublicKeyAlgorithm();\n};",
         "type": "interface",
         "name": "AuthenticatorAttestationResponse",
         "inheritance": "AuthenticatorResponse",
@@ -264,6 +267,7 @@
         "partial": false
       },
       "AuthenticatorAssertionResponse": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorAssertionResponse : AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      authenticatorData;\n    [SameObject] readonly attribute ArrayBuffer      signature;\n    [SameObject] readonly attribute ArrayBuffer?     userHandle;\n};",
         "type": "interface",
         "name": "AuthenticatorAssertionResponse",
         "inheritance": "AuthenticatorResponse",
@@ -355,6 +359,7 @@
         "partial": false
       },
       "PublicKeyCredentialParameters": {
+        "fragment": "dictionary PublicKeyCredentialParameters {\n    required DOMString                    type;\n    required COSEAlgorithmIdentifier      alg;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialParameters",
         "inheritance": null,
@@ -394,6 +399,7 @@
         "partial": false
       },
       "PublicKeyCredentialCreationOptions": {
+        "fragment": "dictionary PublicKeyCredentialCreationOptions {\n    required PublicKeyCredentialRpEntity         rp;\n    required PublicKeyCredentialUserEntity       user;\n\n    required BufferSource                             challenge;\n    required sequence<PublicKeyCredentialParameters>  pubKeyCredParams;\n\n    unsigned long                                timeout;\n    sequence<PublicKeyCredentialDescriptor>      excludeCredentials = [];\n    AuthenticatorSelectionCriteria               authenticatorSelection;\n    DOMString                                    attestation = \"none\";\n    AuthenticationExtensionsClientInputs         extensions;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialCreationOptions",
         "inheritance": null,
@@ -562,6 +568,7 @@
         "partial": false
       },
       "PublicKeyCredentialEntity": {
+        "fragment": "dictionary PublicKeyCredentialEntity {\n    required DOMString    name;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialEntity",
         "inheritance": null,
@@ -586,6 +593,7 @@
         "partial": false
       },
       "PublicKeyCredentialRpEntity": {
+        "fragment": "dictionary PublicKeyCredentialRpEntity : PublicKeyCredentialEntity {\n    DOMString      id;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialRpEntity",
         "inheritance": "PublicKeyCredentialEntity",
@@ -610,6 +618,7 @@
         "partial": false
       },
       "PublicKeyCredentialUserEntity": {
+        "fragment": "dictionary PublicKeyCredentialUserEntity : PublicKeyCredentialEntity {\n    required BufferSource   id;\n    required DOMString      displayName;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialUserEntity",
         "inheritance": "PublicKeyCredentialEntity",
@@ -649,6 +658,7 @@
         "partial": false
       },
       "AuthenticatorSelectionCriteria": {
+        "fragment": "dictionary AuthenticatorSelectionCriteria {\n    DOMString                    authenticatorAttachment;\n    DOMString                    residentKey;\n    boolean                      requireResidentKey = false;\n    DOMString                    userVerification = \"preferred\";\n};",
         "type": "dictionary",
         "name": "AuthenticatorSelectionCriteria",
         "inheritance": null,
@@ -724,6 +734,7 @@
         "partial": false
       },
       "AuthenticatorAttachment": {
+        "fragment": "enum AuthenticatorAttachment {\n    \"platform\",\n    \"cross-platform\"\n};",
         "type": "enum",
         "name": "AuthenticatorAttachment",
         "values": [
@@ -739,6 +750,7 @@
         "extAttrs": []
       },
       "ResidentKeyRequirement": {
+        "fragment": "enum ResidentKeyRequirement {\n    \"discouraged\",\n    \"preferred\",\n    \"required\"\n};",
         "type": "enum",
         "name": "ResidentKeyRequirement",
         "values": [
@@ -758,6 +770,7 @@
         "extAttrs": []
       },
       "AttestationConveyancePreference": {
+        "fragment": "enum AttestationConveyancePreference {\n    \"none\",\n    \"indirect\",\n    \"direct\",\n    \"enterprise\"\n};",
         "type": "enum",
         "name": "AttestationConveyancePreference",
         "values": [
@@ -781,6 +794,7 @@
         "extAttrs": []
       },
       "PublicKeyCredentialRequestOptions": {
+        "fragment": "dictionary PublicKeyCredentialRequestOptions {\n    required BufferSource                challenge;\n    unsigned long                        timeout;\n    USVString                            rpId;\n    sequence<PublicKeyCredentialDescriptor> allowCredentials = [];\n    DOMString                            userVerification = \"preferred\";\n    AuthenticationExtensionsClientInputs extensions;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialRequestOptions",
         "inheritance": null,
@@ -895,6 +909,7 @@
         "partial": false
       },
       "AuthenticationExtensionsClientInputs": {
+        "fragment": "dictionary AuthenticationExtensionsClientInputs {\n};",
         "type": "dictionary",
         "name": "AuthenticationExtensionsClientInputs",
         "inheritance": null,
@@ -903,6 +918,7 @@
         "partial": false
       },
       "AuthenticationExtensionsClientOutputs": {
+        "fragment": "dictionary AuthenticationExtensionsClientOutputs {\n};",
         "type": "dictionary",
         "name": "AuthenticationExtensionsClientOutputs",
         "inheritance": null,
@@ -911,6 +927,7 @@
         "partial": false
       },
       "CollectedClientData": {
+        "fragment": "dictionary CollectedClientData {\n    required DOMString           type;\n    required DOMString           challenge;\n    required DOMString           origin;\n    boolean                      crossOrigin;\n    TokenBinding                 tokenBinding;\n};",
         "type": "dictionary",
         "name": "CollectedClientData",
         "inheritance": null,
@@ -995,6 +1012,7 @@
         "partial": false
       },
       "TokenBinding": {
+        "fragment": "dictionary TokenBinding {\n    required DOMString status;\n    DOMString id;\n};",
         "type": "dictionary",
         "name": "TokenBinding",
         "inheritance": null,
@@ -1034,6 +1052,7 @@
         "partial": false
       },
       "TokenBindingStatus": {
+        "fragment": "enum TokenBindingStatus { \"present\", \"supported\" };",
         "type": "enum",
         "name": "TokenBindingStatus",
         "values": [
@@ -1049,6 +1068,7 @@
         "extAttrs": []
       },
       "PublicKeyCredentialType": {
+        "fragment": "enum PublicKeyCredentialType {\n    \"public-key\"\n};",
         "type": "enum",
         "name": "PublicKeyCredentialType",
         "values": [
@@ -1060,6 +1080,7 @@
         "extAttrs": []
       },
       "PublicKeyCredentialDescriptor": {
+        "fragment": "dictionary PublicKeyCredentialDescriptor {\n    required DOMString                    type;\n    required BufferSource                 id;\n    sequence<DOMString>                   transports;\n};",
         "type": "dictionary",
         "name": "PublicKeyCredentialDescriptor",
         "inheritance": null,
@@ -1123,6 +1144,7 @@
         "partial": false
       },
       "AuthenticatorTransport": {
+        "fragment": "enum AuthenticatorTransport {\n    \"usb\",\n    \"nfc\",\n    \"ble\",\n    \"internal\"\n};",
         "type": "enum",
         "name": "AuthenticatorTransport",
         "values": [
@@ -1146,6 +1168,7 @@
         "extAttrs": []
       },
       "COSEAlgorithmIdentifier": {
+        "fragment": "typedef long COSEAlgorithmIdentifier;",
         "type": "typedef",
         "name": "COSEAlgorithmIdentifier",
         "idlType": {
@@ -1159,6 +1182,7 @@
         "extAttrs": []
       },
       "UserVerificationRequirement": {
+        "fragment": "enum UserVerificationRequirement {\n    \"required\",\n    \"preferred\",\n    \"discouraged\"\n};",
         "type": "enum",
         "name": "UserVerificationRequirement",
         "values": [
@@ -1178,6 +1202,7 @@
         "extAttrs": []
       },
       "UvmEntry": {
+        "fragment": "typedef sequence<unsigned long> UvmEntry;",
         "type": "typedef",
         "name": "UvmEntry",
         "idlType": {
@@ -1200,6 +1225,7 @@
         "extAttrs": []
       },
       "UvmEntries": {
+        "fragment": "typedef sequence<UvmEntry> UvmEntries;",
         "type": "typedef",
         "name": "UvmEntries",
         "idlType": {
@@ -1222,6 +1248,7 @@
         "extAttrs": []
       },
       "CredentialPropertiesOutput": {
+        "fragment": "dictionary CredentialPropertiesOutput {\n    boolean rk;\n};",
         "type": "dictionary",
         "name": "CredentialPropertiesOutput",
         "inheritance": null,
@@ -1246,6 +1273,7 @@
         "partial": false
       },
       "LargeBlobSupport": {
+        "fragment": "enum LargeBlobSupport {\n  \"required\",\n  \"preferred\",\n};",
         "type": "enum",
         "name": "LargeBlobSupport",
         "values": [
@@ -1261,6 +1289,7 @@
         "extAttrs": []
       },
       "AuthenticationExtensionsLargeBlobInputs": {
+        "fragment": "dictionary AuthenticationExtensionsLargeBlobInputs {\n    DOMString support;\n    boolean read;\n    BufferSource write;\n};",
         "type": "dictionary",
         "name": "AuthenticationExtensionsLargeBlobInputs",
         "inheritance": null,
@@ -1315,6 +1344,7 @@
         "partial": false
       },
       "AuthenticationExtensionsLargeBlobOutputs": {
+        "fragment": "dictionary AuthenticationExtensionsLargeBlobOutputs {\n    boolean supported;\n    ArrayBuffer blob;\n    boolean written;\n};",
         "type": "dictionary",
         "name": "AuthenticationExtensionsLargeBlobOutputs",
         "inheritance": null,
@@ -1372,6 +1402,7 @@
     "idlExtendedNames": {
       "CredentialCreationOptions": [
         {
+          "fragment": "partial dictionary CredentialCreationOptions {\n    PublicKeyCredentialCreationOptions      publicKey;\n};",
           "type": "dictionary",
           "name": "CredentialCreationOptions",
           "inheritance": null,
@@ -1398,6 +1429,7 @@
       ],
       "CredentialRequestOptions": [
         {
+          "fragment": "partial dictionary CredentialRequestOptions {\n    PublicKeyCredentialRequestOptions      publicKey;\n};",
           "type": "dictionary",
           "name": "CredentialRequestOptions",
           "inheritance": null,
@@ -1424,6 +1456,7 @@
       ],
       "PublicKeyCredential": [
         {
+          "fragment": "partial interface PublicKeyCredential {\n    static Promise<boolean> isUserVerifyingPlatformAuthenticatorAvailable();\n};",
           "type": "interface",
           "name": "PublicKeyCredential",
           "inheritance": null,
@@ -1459,6 +1492,7 @@
       ],
       "AuthenticationExtensionsClientInputs": [
         {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  USVString appid;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientInputs",
           "inheritance": null,
@@ -1483,6 +1517,7 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  USVString appidExclude;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientInputs",
           "inheritance": null,
@@ -1507,6 +1542,7 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  boolean uvm;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientInputs",
           "inheritance": null,
@@ -1531,6 +1567,7 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    boolean credProps;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientInputs",
           "inheritance": null,
@@ -1555,6 +1592,7 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    AuthenticationExtensionsLargeBlobInputs largeBlob;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientInputs",
           "inheritance": null,
@@ -1581,6 +1619,7 @@
       ],
       "AuthenticationExtensionsClientOutputs": [
         {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  boolean appid;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientOutputs",
           "inheritance": null,
@@ -1605,6 +1644,7 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  boolean appidExclude;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientOutputs",
           "inheritance": null,
@@ -1629,6 +1669,7 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n  UvmEntries uvm;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientOutputs",
           "inheritance": null,
@@ -1653,6 +1694,7 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n    CredentialPropertiesOutput credProps;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientOutputs",
           "inheritance": null,
@@ -1677,6 +1719,7 @@
           "partial": true
         },
         {
+          "fragment": "partial dictionary AuthenticationExtensionsClientOutputs {\n    AuthenticationExtensionsLargeBlobOutputs largeBlob;\n};",
           "type": "dictionary",
           "name": "AuthenticationExtensionsClientOutputs",
           "inheritance": null,

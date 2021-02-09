@@ -24,6 +24,7 @@
     },
     "idlNames": {
       "Presentation": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface Presentation {\n};",
         "type": "interface",
         "name": "Presentation",
         "inheritance": null,
@@ -48,6 +49,7 @@
         "partial": false
       },
       "PresentationRequest": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationRequest : EventTarget {\n  constructor(USVString url);\n  constructor(sequence<USVString> urls);\n  Promise<PresentationConnection> start();\n  Promise<PresentationConnection> reconnect(USVString presentationId);\n  Promise<PresentationAvailability> getAvailability();\n\n  attribute EventHandler onconnectionavailable;\n};",
         "type": "interface",
         "name": "PresentationRequest",
         "inheritance": "EventTarget",
@@ -230,6 +232,7 @@
         "partial": false
       },
       "PresentationAvailability": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationAvailability : EventTarget {\n  readonly attribute boolean value;\n\n  attribute EventHandler onchange;\n};",
         "type": "interface",
         "name": "PresentationAvailability",
         "inheritance": "EventTarget",
@@ -285,6 +288,7 @@
         "partial": false
       },
       "PresentationConnectionAvailableEvent": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationConnectionAvailableEvent : Event {\n  constructor(DOMString type, PresentationConnectionAvailableEventInit eventInitDict);\n  [SameObject] readonly attribute PresentationConnection connection;\n};",
         "type": "interface",
         "name": "PresentationConnectionAvailableEvent",
         "inheritance": "Event",
@@ -370,6 +374,7 @@
         "partial": false
       },
       "PresentationConnectionAvailableEventInit": {
+        "fragment": "dictionary PresentationConnectionAvailableEventInit : EventInit {\n  required PresentationConnection connection;\n};",
         "type": "dictionary",
         "name": "PresentationConnectionAvailableEventInit",
         "inheritance": "EventInit",
@@ -394,6 +399,7 @@
         "partial": false
       },
       "PresentationConnectionState": {
+        "fragment": "enum PresentationConnectionState { \"connecting\", \"connected\", \"closed\", \"terminated\" };",
         "type": "enum",
         "name": "PresentationConnectionState",
         "values": [
@@ -417,6 +423,7 @@
         "extAttrs": []
       },
       "PresentationConnection": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationConnection : EventTarget {\n  readonly attribute USVString id;\n  readonly attribute USVString url;\n  readonly attribute PresentationConnectionState state;\n  undefined close();\n  undefined terminate();\n  attribute EventHandler onconnect;\n  attribute EventHandler onclose;\n  attribute EventHandler onterminate;\n\n  // Communication\n  attribute BinaryType binaryType;\n  attribute EventHandler onmessage;\n  undefined send (DOMString message);\n  undefined send (Blob data);\n  undefined send (ArrayBuffer data);\n  undefined send (ArrayBufferView data);\n};",
         "type": "interface",
         "name": "PresentationConnection",
         "inheritance": "EventTarget",
@@ -720,6 +727,7 @@
         "partial": false
       },
       "PresentationConnectionCloseReason": {
+        "fragment": "enum PresentationConnectionCloseReason { \"error\", \"closed\", \"wentaway\" };",
         "type": "enum",
         "name": "PresentationConnectionCloseReason",
         "values": [
@@ -739,6 +747,7 @@
         "extAttrs": []
       },
       "PresentationConnectionCloseEvent": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationConnectionCloseEvent : Event {\n  constructor(DOMString type, PresentationConnectionCloseEventInit eventInitDict);\n  readonly attribute PresentationConnectionCloseReason reason;\n  readonly attribute DOMString message;\n};",
         "type": "interface",
         "name": "PresentationConnectionCloseEvent",
         "inheritance": "Event",
@@ -832,6 +841,7 @@
         "partial": false
       },
       "PresentationConnectionCloseEventInit": {
+        "fragment": "dictionary PresentationConnectionCloseEventInit : EventInit {\n  required PresentationConnectionCloseReason reason;\n  DOMString message = \"\";\n};",
         "type": "dictionary",
         "name": "PresentationConnectionCloseEventInit",
         "inheritance": "EventInit",
@@ -874,6 +884,7 @@
         "partial": false
       },
       "PresentationReceiver": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationReceiver {\n  readonly attribute Promise<PresentationConnectionList> connectionList;\n};",
         "type": "interface",
         "name": "PresentationReceiver",
         "inheritance": null,
@@ -923,6 +934,7 @@
         "partial": false
       },
       "PresentationConnectionList": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationConnectionList : EventTarget {\n  readonly attribute FrozenArray<PresentationConnection> connections;\n  attribute EventHandler onconnectionavailable;\n};",
         "type": "interface",
         "name": "PresentationConnectionList",
         "inheritance": "EventTarget",
@@ -990,6 +1002,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute Presentation presentation;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -1029,6 +1042,7 @@
       ],
       "Presentation": [
         {
+          "fragment": "partial interface Presentation {\n  attribute PresentationRequest? defaultRequest;\n};",
           "type": "interface",
           "name": "Presentation",
           "inheritance": null,
@@ -1053,6 +1067,7 @@
           "partial": true
         },
         {
+          "fragment": "partial interface Presentation {\n  readonly attribute PresentationReceiver? receiver;\n};",
           "type": "interface",
           "name": "Presentation",
           "inheritance": null,

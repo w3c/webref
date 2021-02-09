@@ -15,6 +15,7 @@
     },
     "idlNames": {
       "NamedFlowMap": {
+        "fragment": "[Exposed=Window,\n MapClass=(CSSOMString, NamedFlow)] interface NamedFlowMap {\n  NamedFlow? get(CSSOMString flowName);\n  boolean has(CSSOMString flowName);\n  NamedFlowMap set(CSSOMString flowName, NamedFlow flowValue);\n  boolean delete(CSSOMString flowName);\n};",
         "type": "interface",
         "name": "NamedFlowMap",
         "inheritance": null,
@@ -194,6 +195,7 @@
         "partial": false
       },
       "NamedFlow": {
+        "fragment": "[Exposed=Window]\ninterface NamedFlow : EventTarget {\n  readonly attribute CSSOMString name;\n  readonly attribute boolean overset;\n  sequence<Region> getRegions();\n  readonly attribute short firstEmptyRegionIndex;\n  sequence<Node> getContent();\n  sequence<Region> getRegionsByContent(Node node);\n};",
         "type": "interface",
         "name": "NamedFlow",
         "inheritance": "EventTarget",
@@ -347,6 +349,7 @@
         "partial": false
       },
       "Region": {
+        "fragment": "interface mixin Region {\n  readonly attribute CSSOMString regionOverset;\n  sequence<Range>? getRegionFlowRanges();\n};",
         "type": "interface mixin",
         "name": "Region",
         "inheritance": null,
@@ -398,6 +401,7 @@
     "idlExtendedNames": {
       "Document": [
         {
+          "fragment": "partial interface Document {\n  readonly attribute NamedFlowMap namedFlows;\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -424,8 +428,10 @@
       ],
       "Element": [
         {
-          "name": "Element",
-          "type": "interface",
+          "fragment": "Element includes Region;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Element",
           "includes": "Region"
         }
       ]

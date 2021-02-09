@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "TransitionEvent": {
+        "fragment": "[Exposed=Window]\ninterface TransitionEvent : Event {\n  constructor(CSSOMString type, optional TransitionEventInit transitionEventInitDict = {});\n  readonly attribute CSSOMString propertyName;\n  readonly attribute double elapsedTime;\n  readonly attribute CSSOMString pseudoElement;\n};",
         "type": "interface",
         "name": "TransitionEvent",
         "inheritance": "Event",
@@ -118,6 +119,7 @@
         "partial": false
       },
       "TransitionEventInit": {
+        "fragment": "dictionary TransitionEventInit : EventInit {\n  CSSOMString propertyName = \"\";\n  double elapsedTime = 0.0;\n  CSSOMString pseudoElement = \"\";\n};",
         "type": "dictionary",
         "name": "TransitionEventInit",
         "inheritance": "EventInit",
@@ -184,6 +186,7 @@
     "idlExtendedNames": {
       "GlobalEventHandlers": [
         {
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};",
           "type": "interface mixin",
           "name": "GlobalEventHandlers",
           "inheritance": null,

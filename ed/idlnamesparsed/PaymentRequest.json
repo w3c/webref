@@ -1,0 +1,27 @@
+{
+  "name": "PaymentRequest",
+  "defined": {
+    "spec": {
+      "title": "Payment Request API",
+      "url": "https://www.w3.org/TR/payment-request/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentRequest : EventTarget {\n  constructor(\n    sequence<PaymentMethodData> methodData,\n    PaymentDetailsInit details,\n    optional PaymentOptions options = {}\n  );\n  [NewObject]\n  Promise<PaymentResponse> show(optional Promise<PaymentDetailsUpdate> detailsPromise);\n  [NewObject]\n  Promise<undefined> abort();\n  [NewObject]\n  Promise<boolean> canMakePayment();\n\n  readonly attribute DOMString id;\n  readonly attribute PaymentAddress? shippingAddress;\n  readonly attribute DOMString? shippingOption;\n  readonly attribute PaymentShippingType? shippingType;\n\n  attribute EventHandler onshippingaddresschange;\n  attribute EventHandler onshippingoptionchange;\n  attribute EventHandler onpaymentmethodchange;\n};",
+    "href": "https://w3c.github.io/payment-request/#dom-paymentrequest"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

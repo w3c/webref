@@ -12,6 +12,7 @@
     "idlExtendedNames": {
       "Window": [
         {
+          "fragment": "partial interface Window {\n    readonly attribute short orientation;\n    attribute EventHandler onorientationchange;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -53,6 +54,7 @@
       ],
       "HTMLBodyElement": [
         {
+          "fragment": "partial interface HTMLBodyElement {\n    attribute EventHandler onorientationchange;\n};",
           "type": "interface",
           "name": "HTMLBodyElement",
           "inheritance": null,

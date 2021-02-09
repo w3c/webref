@@ -21,6 +21,7 @@
     },
     "idlNames": {
       "BinaryData": {
+        "fragment": "typedef (ArrayBuffer or ArrayBufferView) BinaryData;",
         "type": "typedef",
         "name": "BinaryData",
         "idlType": {
@@ -51,6 +52,7 @@
         "extAttrs": []
       },
       "FontFaceDescriptors": {
+        "fragment": "dictionary FontFaceDescriptors {\n  CSSOMString style = \"normal\";\n  CSSOMString weight = \"normal\";\n  CSSOMString stretch = \"normal\";\n  CSSOMString unicodeRange = \"U+0-10FFFF\";\n  CSSOMString variant = \"normal\";\n  CSSOMString featureSettings = \"normal\";\n  CSSOMString variationSettings = \"normal\";\n  CSSOMString display = \"auto\";\n  CSSOMString ascentOverride = \"normal\";\n  CSSOMString descentOverride = \"normal\";\n  CSSOMString lineGapOverride = \"normal\";\n};",
         "type": "dictionary",
         "name": "FontFaceDescriptors",
         "inheritance": null,
@@ -258,6 +260,7 @@
         "partial": false
       },
       "FontFaceLoadStatus": {
+        "fragment": "enum FontFaceLoadStatus { \"unloaded\", \"loading\", \"loaded\", \"error\" };",
         "type": "enum",
         "name": "FontFaceLoadStatus",
         "values": [
@@ -281,6 +284,7 @@
         "extAttrs": []
       },
       "FontFace": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FontFace {\n  constructor(CSSOMString family, (CSSOMString or BinaryData) source,\n                optional FontFaceDescriptors descriptors = {});\n  attribute CSSOMString family;\n  attribute CSSOMString style;\n  attribute CSSOMString weight;\n  attribute CSSOMString stretch;\n  attribute CSSOMString unicodeRange;\n  attribute CSSOMString variant;\n  attribute CSSOMString featureSettings;\n  attribute CSSOMString variationSettings;\n  attribute CSSOMString display;\n  attribute CSSOMString ascentOverride;\n  attribute CSSOMString descentOverride;\n  attribute CSSOMString lineGapOverride;\n\n  readonly attribute FontFaceLoadStatus status;\n\n  Promise<FontFace> load();\n  readonly attribute Promise<FontFace> loaded;\n};",
         "type": "interface",
         "name": "FontFace",
         "inheritance": null,
@@ -623,6 +627,7 @@
         "partial": false
       },
       "FontFaceSetLoadEventInit": {
+        "fragment": "dictionary FontFaceSetLoadEventInit : EventInit {\n  sequence<FontFace> fontfaces = [];\n};",
         "type": "dictionary",
         "name": "FontFaceSetLoadEventInit",
         "inheritance": "EventInit",
@@ -659,6 +664,7 @@
         "partial": false
       },
       "FontFaceSetLoadEvent": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FontFaceSetLoadEvent : Event {\n  constructor(CSSOMString type, optional FontFaceSetLoadEventInit eventInitDict = {});\n  [SameObject] readonly attribute FrozenArray<FontFace> fontfaces;\n};",
         "type": "interface",
         "name": "FontFaceSetLoadEvent",
         "inheritance": "Event",
@@ -756,6 +762,7 @@
         "partial": false
       },
       "FontFaceSetLoadStatus": {
+        "fragment": "enum FontFaceSetLoadStatus { \"loading\", \"loaded\" };",
         "type": "enum",
         "name": "FontFaceSetLoadStatus",
         "values": [
@@ -771,6 +778,7 @@
         "extAttrs": []
       },
       "ForEachCallback": {
+        "fragment": "callback ForEachCallback = undefined (FontFace font, long index, FontFaceSet self);",
         "type": "callback",
         "name": "ForEachCallback",
         "idlType": {
@@ -834,6 +842,7 @@
         "extAttrs": []
       },
       "FontFaceSet": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FontFaceSet : EventTarget {\n  constructor(sequence<FontFace> initialFaces);\n\n  // FontFaceSet is Set-like!\n  setlike<FontFace>;\n  FontFaceSet add(FontFace font);\n  boolean delete(FontFace font);\n  undefined clear();\n\n  // events for when loading state changes\n  attribute EventHandler onloading;\n  attribute EventHandler onloadingdone;\n  attribute EventHandler onloadingerror;\n\n  // check and start loads if appropriate\n  // and fulfill promise when all loads complete\n  Promise<sequence<FontFace>> load(CSSOMString font, optional CSSOMString text = \" \");\n\n  // return whether all fonts in the fontlist are loaded\n  // (does not initiate load if not available)\n  boolean check(CSSOMString font, optional CSSOMString text = \" \");\n\n  // async notification that font loading and layout operations are done\n  readonly attribute Promise<FontFaceSet> ready;\n\n  // loading state, \"loading\" while one or more fonts loading, \"loaded\" otherwise\n  readonly attribute FontFaceSetLoadStatus status;\n};",
         "type": "interface",
         "name": "FontFaceSet",
         "inheritance": "EventTarget",
@@ -1191,6 +1200,7 @@
         "partial": false
       },
       "FontFaceSource": {
+        "fragment": "interface mixin FontFaceSource {\n  readonly attribute FontFaceSet fonts;\n};",
         "type": "interface mixin",
         "name": "FontFaceSource",
         "inheritance": null,
@@ -1218,15 +1228,19 @@
     "idlExtendedNames": {
       "Document": [
         {
-          "name": "Document",
-          "type": "interface",
+          "fragment": "Document includes FontFaceSource;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Document",
           "includes": "FontFaceSource"
         }
       ],
       "WorkerGlobalScope": [
         {
-          "name": "WorkerGlobalScope",
-          "type": "interface",
+          "fragment": "WorkerGlobalScope includes FontFaceSource;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WorkerGlobalScope",
           "includes": "FontFaceSource"
         }
       ]

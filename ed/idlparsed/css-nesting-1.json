@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "CSSNestingRule": {
+        "fragment": "interface CSSNestingRule : CSSRule {\n  attribute CSSOMString selectorText;\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n};",
         "type": "interface",
         "name": "CSSNestingRule",
         "inheritance": "CSSRule",

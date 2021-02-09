@@ -1,0 +1,7 @@
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+interface GPUCommandBuffer {
+    readonly attribute Promise<double> executionTime;
+};
+
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+GPUCommandBuffer includes GPUObjectBase;

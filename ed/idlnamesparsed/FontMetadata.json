@@ -1,0 +1,14 @@
+{
+  "name": "FontMetadata",
+  "defined": {
+    "spec": {
+      "title": "Local Font Access API",
+      "url": "https://wicg.github.io/local-font-access/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface FontMetadata {\n  Promise<Blob> blob();\n\n  readonly attribute USVString postscriptName;\n  readonly attribute USVString fullName;\n  readonly attribute USVString family;\n};",
+    "href": "https://wicg.github.io/local-font-access/#fontmetadata"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ReadableStreamBYOBRequest",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableStreamBYOBRequest {\n  readonly attribute ArrayBufferView? view;\n\n  undefined respond([EnforceRange] unsigned long long bytesWritten);\n  undefined respondWithNewView(ArrayBufferView view);\n};",
+    "href": "https://streams.spec.whatwg.org/#readablestreambyobrequest"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

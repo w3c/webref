@@ -26,6 +26,7 @@
     },
     "idlNames": {
       "ReportBody": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface ReportBody {\n  [Default] object toJSON();\n};",
         "type": "interface",
         "name": "ReportBody",
         "inheritance": null,
@@ -74,6 +75,7 @@
         "partial": false
       },
       "Report": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Report {\n  [Default] object toJSON();\n  readonly attribute DOMString type;\n  readonly attribute DOMString url;\n  readonly attribute ReportBody? body;\n};",
         "type": "interface",
         "name": "Report",
         "inheritance": null,
@@ -167,6 +169,7 @@
         "partial": false
       },
       "ReportingObserver": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface ReportingObserver {\n  constructor(ReportingObserverCallback callback, optional ReportingObserverOptions options = {});\n  undefined observe();\n  undefined disconnect();\n  ReportList takeRecords();\n};",
         "type": "interface",
         "name": "ReportingObserver",
         "inheritance": null,
@@ -278,6 +281,7 @@
         "partial": false
       },
       "ReportingObserverCallback": {
+        "fragment": "callback ReportingObserverCallback = undefined (sequence<Report> reports, ReportingObserver observer);",
         "type": "callback",
         "name": "ReportingObserverCallback",
         "idlType": {
@@ -334,6 +338,7 @@
         "extAttrs": []
       },
       "ReportingObserverOptions": {
+        "fragment": "dictionary ReportingObserverOptions {\n  sequence<DOMString> types;\n  boolean buffered = false;\n};",
         "type": "dictionary",
         "name": "ReportingObserverOptions",
         "inheritance": null,
@@ -385,6 +390,7 @@
         "partial": false
       },
       "ReportList": {
+        "fragment": "typedef sequence<Report> ReportList;",
         "type": "typedef",
         "name": "ReportList",
         "idlType": {
@@ -407,6 +413,7 @@
         "extAttrs": []
       },
       "GenerateTestReportParameters": {
+        "fragment": "dictionary GenerateTestReportParameters {\n  required DOMString message;\n  DOMString group = \"default\";\n};",
         "type": "dictionary",
         "name": "GenerateTestReportParameters",
         "inheritance": null,

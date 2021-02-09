@@ -1,0 +1,42 @@
+{
+  "name": "MediaStreamTrack",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams",
+      "url": "https://www.w3.org/TR/mediacapture-streams/"
+    },
+    "fragment": "[Exposed=Window]\ninterface MediaStreamTrack : EventTarget {\n  readonly attribute DOMString kind;\n  readonly attribute DOMString id;\n  readonly attribute DOMString label;\n  attribute boolean enabled;\n  readonly attribute boolean muted;\n  attribute EventHandler onmute;\n  attribute EventHandler onunmute;\n  readonly attribute MediaStreamTrackState readyState;\n  attribute EventHandler onended;\n  MediaStreamTrack clone();\n  undefined stop();\n  MediaTrackCapabilities getCapabilities();\n  MediaTrackConstraints getConstraints();\n  MediaTrackSettings getSettings();\n  Promise<undefined> applyConstraints(optional MediaTrackConstraints constraints = {});\n};",
+    "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "MediaStreamTrack Content Hints",
+        "url": "https://www.w3.org/TR/mst-content-hint/"
+      },
+      "fragment": "partial interface MediaStreamTrack {\n  attribute DOMString contentHint;\n};"
+    },
+    {
+      "spec": {
+        "title": "Identity for WebRTC 1.0",
+        "url": "https://www.w3.org/TR/webrtc-identity/"
+      },
+      "fragment": "partial interface MediaStreamTrack {\n    readonly        attribute boolean      isolated;\n                    attribute EventHandler onisolationchange;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

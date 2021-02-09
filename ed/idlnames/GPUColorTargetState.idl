@@ -1,0 +1,7 @@
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+dictionary GPUColorTargetState {
+    required GPUTextureFormat format;
+
+    GPUBlendState blend;
+    GPUColorWriteFlags writeMask = 0xF;  // GPUColorWrite.ALL
+};

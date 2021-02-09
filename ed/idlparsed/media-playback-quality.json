@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "VideoPlaybackQuality": {
+        "fragment": "[Exposed=Window]\ninterface VideoPlaybackQuality {\n  readonly attribute DOMHighResTimeStamp creationTime;\n  readonly attribute unsigned long droppedVideoFrames;\n  readonly attribute unsigned long totalVideoFrames;\n\n  // Deprecated!\n  readonly attribute unsigned long corruptedVideoFrames;\n};",
         "type": "interface",
         "name": "VideoPlaybackQuality",
         "inheritance": null,
@@ -96,6 +97,7 @@
     "idlExtendedNames": {
       "HTMLVideoElement": [
         {
+          "fragment": "partial interface HTMLVideoElement {\n  VideoPlaybackQuality getVideoPlaybackQuality();\n};",
           "type": "interface",
           "name": "HTMLVideoElement",
           "inheritance": null,

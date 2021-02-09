@@ -30,6 +30,7 @@
     },
     "idlNames": {
       "AudioDecoder": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
         "type": "interface",
         "name": "AudioDecoder",
         "inheritance": null,
@@ -226,6 +227,7 @@
         "partial": false
       },
       "AudioDecoderInit": {
+        "fragment": "dictionary AudioDecoderInit {\n  required AudioFrameOutputCallback output;\n  required WebCodecsErrorCallback error;\n};",
         "type": "dictionary",
         "name": "AudioDecoderInit",
         "inheritance": null,
@@ -265,6 +267,7 @@
         "partial": false
       },
       "AudioFrameOutputCallback": {
+        "fragment": "callback AudioFrameOutputCallback = undefined(AudioFrame output);",
         "type": "callback",
         "name": "AudioFrameOutputCallback",
         "idlType": {
@@ -296,6 +299,7 @@
         "extAttrs": []
       },
       "VideoDecoder": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface VideoDecoder {\n  constructor(VideoDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(VideoDecoderConfig config);\n  undefined decode(EncodedVideoChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoDecoder",
         "inheritance": null,
@@ -492,6 +496,7 @@
         "partial": false
       },
       "VideoDecoderInit": {
+        "fragment": "dictionary VideoDecoderInit {\n  required VideoFrameOutputCallback output;\n  required WebCodecsErrorCallback error;\n};",
         "type": "dictionary",
         "name": "VideoDecoderInit",
         "inheritance": null,
@@ -531,6 +536,7 @@
         "partial": false
       },
       "VideoFrameOutputCallback": {
+        "fragment": "callback VideoFrameOutputCallback = undefined(VideoFrame output);",
         "type": "callback",
         "name": "VideoFrameOutputCallback",
         "idlType": {
@@ -562,6 +568,7 @@
         "extAttrs": []
       },
       "AudioEncoder": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface AudioEncoder {\n  constructor(AudioEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(AudioEncoderConfig config);\n  undefined encode(AudioFrame frame);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
         "type": "interface",
         "name": "AudioEncoder",
         "inheritance": null,
@@ -758,6 +765,7 @@
         "partial": false
       },
       "AudioEncoderInit": {
+        "fragment": "dictionary AudioEncoderInit {\n  required EncodedAudioChunkOutputCallback output;\n  required WebCodecsErrorCallback error;\n};",
         "type": "dictionary",
         "name": "AudioEncoderInit",
         "inheritance": null,
@@ -797,6 +805,7 @@
         "partial": false
       },
       "EncodedAudioChunkOutputCallback": {
+        "fragment": "callback EncodedAudioChunkOutputCallback = undefined(EncodedAudioChunk output);",
         "type": "callback",
         "name": "EncodedAudioChunkOutputCallback",
         "idlType": {
@@ -828,6 +837,7 @@
         "extAttrs": []
       },
       "VideoEncoder": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoEncoder",
         "inheritance": null,
@@ -1042,6 +1052,7 @@
         "partial": false
       },
       "VideoEncoderInit": {
+        "fragment": "dictionary VideoEncoderInit {\n  required EncodedVideoChunkOutputCallback output;\n  required WebCodecsErrorCallback error;\n};",
         "type": "dictionary",
         "name": "VideoEncoderInit",
         "inheritance": null,
@@ -1081,6 +1092,7 @@
         "partial": false
       },
       "EncodedVideoChunkOutputCallback": {
+        "fragment": "callback EncodedVideoChunkOutputCallback = undefined(EncodedVideoChunk output);",
         "type": "callback",
         "name": "EncodedVideoChunkOutputCallback",
         "idlType": {
@@ -1112,6 +1124,7 @@
         "extAttrs": []
       },
       "AudioDecoderConfig": {
+        "fragment": "dictionary AudioDecoderConfig {\n  required DOMString codec;\n  required unsigned long sampleRate;\n  required unsigned long numberOfChannels;\n  BufferSource description;\n};",
         "type": "dictionary",
         "name": "AudioDecoderConfig",
         "inheritance": null,
@@ -1181,6 +1194,7 @@
         "partial": false
       },
       "VideoDecoderConfig": {
+        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  required unsigned long codedWidth;\n  required unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n};",
         "type": "dictionary",
         "name": "VideoDecoderConfig",
         "inheritance": null,
@@ -1340,6 +1354,7 @@
         "partial": false
       },
       "AudioEncoderConfig": {
+        "fragment": "dictionary AudioEncoderConfig {\n  required DOMString codec;\n  unsigned long sampleRate;\n  unsigned long numberOfChannels;\n};",
         "type": "dictionary",
         "name": "AudioEncoderConfig",
         "inheritance": null,
@@ -1394,6 +1409,7 @@
         "partial": false
       },
       "VideoEncoderConfig": {
+        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long width;\n  required unsigned long height;\n};",
         "type": "dictionary",
         "name": "VideoEncoderConfig",
         "inheritance": null,
@@ -1463,6 +1479,7 @@
         "partial": false
       },
       "VideoEncoderEncodeOptions": {
+        "fragment": "dictionary VideoEncoderEncodeOptions {\n  boolean keyFrame = false;\n};",
         "type": "dictionary",
         "name": "VideoEncoderEncodeOptions",
         "inheritance": null,
@@ -1490,6 +1507,7 @@
         "partial": false
       },
       "CodecState": {
+        "fragment": "enum CodecState {\n  \"unconfigured\",\n  \"configured\",\n  \"closed\"\n};",
         "type": "enum",
         "name": "CodecState",
         "values": [
@@ -1509,6 +1527,7 @@
         "extAttrs": []
       },
       "WebCodecsErrorCallback": {
+        "fragment": "callback WebCodecsErrorCallback = undefined(DOMException error);",
         "type": "callback",
         "name": "WebCodecsErrorCallback",
         "idlType": {
@@ -1540,6 +1559,7 @@
         "extAttrs": []
       },
       "EncodedAudioChunk": {
+        "fragment": "interface EncodedAudioChunk {\n  constructor(EncodedAudioChunkInit init);\n  readonly attribute EncodedAudioChunkType type;\n  readonly attribute unsigned long long timestamp;  // microseconds\n  readonly attribute ArrayBuffer data;\n};",
         "type": "interface",
         "name": "EncodedAudioChunk",
         "inheritance": null,
@@ -1616,6 +1636,7 @@
         "partial": false
       },
       "EncodedAudioChunkInit": {
+        "fragment": "dictionary EncodedAudioChunkInit {\n  required EncodedAudioChunkType type;\n  required unsigned long long timestamp;\n  required BufferSource data;\n};",
         "type": "dictionary",
         "name": "EncodedAudioChunkInit",
         "inheritance": null,
@@ -1670,6 +1691,7 @@
         "partial": false
       },
       "EncodedAudioChunkType": {
+        "fragment": "enum EncodedAudioChunkType {\n    \"key\",\n    \"delta\",\n};",
         "type": "enum",
         "name": "EncodedAudioChunkType",
         "values": [
@@ -1685,6 +1707,7 @@
         "extAttrs": []
       },
       "EncodedVideoChunk": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface EncodedVideoChunk {\n  constructor(EncodedVideoChunkInit init);\n  readonly attribute EncodedVideoChunkType type;\n  readonly attribute unsigned long long timestamp;  // microseconds\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute ArrayBuffer data;\n};",
         "type": "interface",
         "name": "EncodedVideoChunk",
         "inheritance": null,
@@ -1793,6 +1816,7 @@
         "partial": false
       },
       "EncodedVideoChunkInit": {
+        "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  required unsigned long long timestamp;\n  unsigned long long duration;\n  required BufferSource data;\n};",
         "type": "dictionary",
         "name": "EncodedVideoChunkInit",
         "inheritance": null,
@@ -1862,6 +1886,7 @@
         "partial": false
       },
       "EncodedVideoChunkType": {
+        "fragment": "enum EncodedVideoChunkType {\n    \"key\",\n    \"delta\",\n};",
         "type": "enum",
         "name": "EncodedVideoChunkType",
         "values": [
@@ -1877,6 +1902,7 @@
         "extAttrs": []
       },
       "AudioFrame": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface AudioFrame {\n  constructor(AudioFrameInit init);\n  readonly attribute unsigned long long timestamp;\n  readonly attribute AudioBuffer? buffer;\n  undefined close();\n};",
         "type": "interface",
         "name": "AudioFrame",
         "inheritance": null,
@@ -1970,6 +1996,7 @@
         "partial": false
       },
       "AudioFrameInit": {
+        "fragment": "dictionary AudioFrameInit {\n  required unsigned long long timestamp;\n  required AudioBuffer buffer;\n};",
         "type": "dictionary",
         "name": "AudioFrameInit",
         "inheritance": null,
@@ -2009,6 +2036,7 @@
         "partial": false
       },
       "VideoFrame": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface VideoFrame {\n  constructor(ImageBitmap imageBitmap, VideoFrameInit frameInit);\n  constructor(PixelFormat pixelFormat, sequence<(Plane or PlaneInit)> planes,\n              VideoFrameInit frameInit);\n\n  readonly attribute PixelFormat format;\n  readonly attribute FrozenArray<Plane> planes;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute unsigned long cropLeft;\n  readonly attribute unsigned long cropTop;\n  readonly attribute unsigned long cropWidth;\n  readonly attribute unsigned long cropHeight;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;\n  readonly attribute unsigned long long? timestamp;\n\n  undefined destroy();\n  VideoFrame clone();\n\n  Promise<ImageBitmap> createImageBitmap(\n    optional ImageBitmapOptions options = {});\n\n};",
         "type": "interface",
         "name": "VideoFrame",
         "inheritance": null,
@@ -2415,6 +2443,7 @@
         "partial": false
       },
       "VideoFrameInit": {
+        "fragment": "dictionary VideoFrameInit {\n  unsigned long codedWidth;\n  unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  unsigned long long duration;\n  unsigned long long timestamp;\n};",
         "type": "dictionary",
         "name": "VideoFrameInit",
         "inheritance": null,
@@ -2574,6 +2603,7 @@
         "partial": false
       },
       "Plane": {
+        "fragment": "interface Plane {\n  readonly attribute unsigned long stride;\n  readonly attribute unsigned long rows;\n  readonly attribute unsigned long length;\n\n  undefined readInto(ArrayBufferView dst);\n};",
         "type": "interface",
         "name": "Plane",
         "inheritance": null,
@@ -2660,6 +2690,7 @@
         "partial": false
       },
       "PlaneInit": {
+        "fragment": "dictionary PlaneInit {\n  required BufferSource src;\n  required unsigned long stride;\n  required unsigned long rows;\n};",
         "type": "dictionary",
         "name": "PlaneInit",
         "inheritance": null,
@@ -2714,6 +2745,7 @@
         "partial": false
       },
       "PixelFormat": {
+        "fragment": "enum PixelFormat {\n  \"I420\"\n};",
         "type": "enum",
         "name": "PixelFormat",
         "values": [
@@ -2725,6 +2757,7 @@
         "extAttrs": []
       },
       "VideoTrackReader": {
+        "fragment": "[Exposed=Window]\ninterface VideoTrackReader {\n  constructor(MediaStreamTrack track);\n\n  readonly attribute VideoTrackReaderState readyState;\n  attribute EventHandler onended;\n\n  undefined start(VideoFrameOutputCallback callback);\n  undefined stop();\n};",
         "type": "interface",
         "name": "VideoTrackReader",
         "inheritance": null,
@@ -2843,6 +2876,7 @@
         "partial": false
       },
       "VideoTrackReaderState": {
+        "fragment": "enum VideoTrackReaderState {\n  \"started\",\n  \"stopped\",\n  \"ended\"\n};",
         "type": "enum",
         "name": "VideoTrackReaderState",
         "values": [

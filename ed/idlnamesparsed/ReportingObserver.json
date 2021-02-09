@@ -1,0 +1,14 @@
+{
+  "name": "ReportingObserver",
+  "defined": {
+    "spec": {
+      "title": "Reporting API 1",
+      "url": "https://www.w3.org/TR/reporting-1/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface ReportingObserver {\n  constructor(ReportingObserverCallback callback, optional ReportingObserverOptions options = {});\n  undefined observe();\n  undefined disconnect();\n  ReportList takeRecords();\n};",
+    "href": "https://w3c.github.io/reporting/#reportingobserver"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

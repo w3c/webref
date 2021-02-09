@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "IdleRequestOptions": {
+        "fragment": "dictionary IdleRequestOptions {\n  unsigned long timeout;\n};",
         "type": "dictionary",
         "name": "IdleRequestOptions",
         "inheritance": null,
@@ -38,6 +39,7 @@
         "partial": false
       },
       "IdleDeadline": {
+        "fragment": "[Exposed=Window] interface IdleDeadline {\n  DOMHighResTimeStamp timeRemaining();\n  readonly attribute boolean didTimeout;\n};",
         "type": "interface",
         "name": "IdleDeadline",
         "inheritance": null,
@@ -87,6 +89,7 @@
         "partial": false
       },
       "IdleRequestCallback": {
+        "fragment": "callback IdleRequestCallback = undefined (IdleDeadline deadline);",
         "type": "callback",
         "name": "IdleRequestCallback",
         "idlType": {
@@ -121,6 +124,7 @@
     "idlExtendedNames": {
       "Window": [
         {
+          "fragment": "partial interface Window {\n  unsigned long requestIdleCallback(IdleRequestCallback callback, optional IdleRequestOptions options = {});\n  undefined cancelIdleCallback(unsigned long handle);\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,

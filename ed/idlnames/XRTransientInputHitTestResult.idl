@@ -1,0 +1,6 @@
+// Source: WebXR Hit Test Module (https://immersive-web.github.io/hit-test/)
+[SecureContext, Exposed=Window]
+interface XRTransientInputHitTestResult {
+  [SameObject] readonly attribute XRInputSource inputSource;
+  readonly attribute FrozenArray<XRHitTestResult> results;
+};

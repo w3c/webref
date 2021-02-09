@@ -1,0 +1,29 @@
+{
+  "name": "RTCConfiguration",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCConfiguration {\n  sequence<RTCIceServer> iceServers;\n  RTCIceTransportPolicy iceTransportPolicy;\n  RTCBundlePolicy bundlePolicy;\n  RTCRtcpMuxPolicy rtcpMuxPolicy;\n  sequence<RTCCertificate> certificates;\n  [EnforceRange] octet iceCandidatePoolSize = 0;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebRTC Insertable Media using Streams",
+        "url": "https://w3c.github.io/webrtc-insertable-streams/"
+      },
+      "fragment": "// New fields in RTCConfiguration\npartial dictionary RTCConfiguration {\n    boolean encodedInsertableStreams = false;\n};"
+    },
+    {
+      "spec": {
+        "title": "Identity for WebRTC 1.0",
+        "url": "https://www.w3.org/TR/webrtc-identity/"
+      },
+      "fragment": "partial dictionary RTCConfiguration {\n    DOMString peerIdentity;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

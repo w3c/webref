@@ -1,0 +1,14 @@
+{
+  "name": "LayoutChild",
+  "defined": {
+    "spec": {
+      "title": "CSS Layout API Level 1",
+      "url": "https://www.w3.org/TR/css-layout-api-1/"
+    },
+    "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutChild {\n    readonly attribute StylePropertyMapReadOnly styleMap;\n\n    Promise<IntrinsicSizes> intrinsicSizes();\n    Promise<LayoutFragment> layoutNextFragment(LayoutConstraintsOptions constraints, ChildBreakToken breakToken);\n};",
+    "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutchild"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "OTPCredential": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface OTPCredential : Credential {\n    readonly attribute DOMString code;\n};",
         "type": "interface",
         "name": "OTPCredential",
         "inheritance": "Credential",
@@ -54,6 +55,7 @@
         "partial": false
       },
       "OTPCredentialRequestOptions": {
+        "fragment": "dictionary OTPCredentialRequestOptions {\n  sequence<OTPCredentialTransportType> transport = [];\n};",
         "type": "dictionary",
         "name": "OTPCredentialRequestOptions",
         "inheritance": null,
@@ -90,6 +92,7 @@
         "partial": false
       },
       "OTPCredentialTransportType": {
+        "fragment": "enum OTPCredentialTransportType {\n    \"sms\",\n};",
         "type": "enum",
         "name": "OTPCredentialTransportType",
         "values": [
@@ -104,6 +107,7 @@
     "idlExtendedNames": {
       "CredentialRequestOptions": [
         {
+          "fragment": "partial dictionary CredentialRequestOptions {\n    OTPCredentialRequestOptions otp;\n};",
           "type": "dictionary",
           "name": "CredentialRequestOptions",
           "inheritance": null,

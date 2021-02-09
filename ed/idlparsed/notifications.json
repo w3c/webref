@@ -20,6 +20,7 @@
     },
     "idlNames": {
       "Notification": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Notification : EventTarget {\n  constructor(DOMString title, optional NotificationOptions options = {});\n\n  static readonly attribute NotificationPermission permission;\n  [Exposed=Window] static Promise<NotificationPermission> requestPermission(optional NotificationPermissionCallback deprecatedCallback);\n\n  static readonly attribute unsigned long maxActions;\n\n  attribute EventHandler onclick;\n  attribute EventHandler onshow;\n  attribute EventHandler onerror;\n  attribute EventHandler onclose;\n\n  readonly attribute DOMString title;\n  readonly attribute NotificationDirection dir;\n  readonly attribute DOMString lang;\n  readonly attribute DOMString body;\n  readonly attribute DOMString tag;\n  readonly attribute USVString image;\n  readonly attribute USVString icon;\n  readonly attribute USVString badge;\n  [SameObject] readonly attribute FrozenArray<unsigned long> vibrate;\n  readonly attribute DOMTimeStamp timestamp;\n  readonly attribute boolean renotify;\n  readonly attribute boolean silent;\n  readonly attribute boolean requireInteraction;\n  [SameObject] readonly attribute any data;\n  [SameObject] readonly attribute FrozenArray<NotificationAction> actions;\n\n  undefined close();\n};",
         "type": "interface",
         "name": "Notification",
         "inheritance": "EventTarget",
@@ -506,6 +507,7 @@
         "partial": false
       },
       "NotificationOptions": {
+        "fragment": "dictionary NotificationOptions {\n  NotificationDirection dir = \"auto\";\n  DOMString lang = \"\";\n  DOMString body = \"\";\n  DOMString tag = \"\";\n  USVString image;\n  USVString icon;\n  USVString badge;\n  VibratePattern vibrate;\n  DOMTimeStamp timestamp;\n  boolean renotify = false;\n  boolean silent = false;\n  boolean requireInteraction = false;\n  any data = null;\n  sequence<NotificationAction> actions = [];\n};",
         "type": "dictionary",
         "name": "NotificationOptions",
         "inheritance": null,
@@ -760,6 +762,7 @@
         "partial": false
       },
       "NotificationPermission": {
+        "fragment": "enum NotificationPermission {\n  \"default\",\n  \"denied\",\n  \"granted\"\n};",
         "type": "enum",
         "name": "NotificationPermission",
         "values": [
@@ -779,6 +782,7 @@
         "extAttrs": []
       },
       "NotificationDirection": {
+        "fragment": "enum NotificationDirection {\n  \"auto\",\n  \"ltr\",\n  \"rtl\"\n};",
         "type": "enum",
         "name": "NotificationDirection",
         "values": [
@@ -798,6 +802,7 @@
         "extAttrs": []
       },
       "NotificationAction": {
+        "fragment": "dictionary NotificationAction {\n  required DOMString action;\n  required DOMString title;\n  USVString icon;\n};",
         "type": "dictionary",
         "name": "NotificationAction",
         "inheritance": null,
@@ -852,6 +857,7 @@
         "partial": false
       },
       "NotificationPermissionCallback": {
+        "fragment": "callback NotificationPermissionCallback = undefined (NotificationPermission permission);",
         "type": "callback",
         "name": "NotificationPermissionCallback",
         "idlType": {
@@ -883,6 +889,7 @@
         "extAttrs": []
       },
       "GetNotificationOptions": {
+        "fragment": "dictionary GetNotificationOptions {\n  DOMString tag = \"\";\n};",
         "type": "dictionary",
         "name": "GetNotificationOptions",
         "inheritance": null,
@@ -910,6 +917,7 @@
         "partial": false
       },
       "NotificationEvent": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface NotificationEvent : ExtendableEvent {\n  constructor(DOMString type, NotificationEventInit eventInitDict);\n\n  readonly attribute Notification notification;\n  readonly attribute DOMString action;\n};",
         "type": "interface",
         "name": "NotificationEvent",
         "inheritance": "ExtendableEvent",
@@ -997,6 +1005,7 @@
         "partial": false
       },
       "NotificationEventInit": {
+        "fragment": "dictionary NotificationEventInit : ExtendableEventInit {\n  required Notification notification;\n  DOMString action = \"\";\n};",
         "type": "dictionary",
         "name": "NotificationEventInit",
         "inheritance": "ExtendableEventInit",
@@ -1042,6 +1051,7 @@
     "idlExtendedNames": {
       "ServiceWorkerRegistration": [
         {
+          "fragment": "partial interface ServiceWorkerRegistration {\n  Promise<undefined> showNotification(DOMString title, optional NotificationOptions options = {});\n  Promise<sequence<Notification>> getNotifications(optional GetNotificationOptions filter = {});\n};",
           "type": "interface",
           "name": "ServiceWorkerRegistration",
           "inheritance": null,
@@ -1164,6 +1174,7 @@
       ],
       "ServiceWorkerGlobalScope": [
         {
+          "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler onnotificationclick;\n  attribute EventHandler onnotificationclose;\n};",
           "type": "interface",
           "name": "ServiceWorkerGlobalScope",
           "inheritance": null,

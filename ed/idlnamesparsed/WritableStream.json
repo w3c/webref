@@ -1,0 +1,14 @@
+{
+  "name": "WritableStream",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker,Worklet), Transferable]\ninterface WritableStream {\n  constructor(optional object underlyingSink, optional QueuingStrategy strategy = {});\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  WritableStreamDefaultWriter getWriter();\n};",
+    "href": "https://streams.spec.whatwg.org/#writablestream"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

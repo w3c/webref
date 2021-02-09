@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "NavigatorLocks": {
+        "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
         "type": "interface mixin",
         "name": "NavigatorLocks",
         "inheritance": null,
@@ -50,6 +51,7 @@
         "partial": false
       },
       "LockManager": {
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface LockManager {\n  Promise<any> request(DOMString name,\n                       LockGrantedCallback callback);\n  Promise<any> request(DOMString name,\n                       LockOptions options,\n                       LockGrantedCallback callback);\n\n  Promise<LockManagerSnapshot> query();\n};",
         "type": "interface",
         "name": "LockManager",
         "inheritance": null,
@@ -236,6 +238,7 @@
         "partial": false
       },
       "LockGrantedCallback": {
+        "fragment": "callback LockGrantedCallback = Promise<any> (Lock? lock);",
         "type": "callback",
         "name": "LockGrantedCallback",
         "idlType": {
@@ -276,6 +279,7 @@
         "extAttrs": []
       },
       "LockMode": {
+        "fragment": "enum LockMode { \"shared\", \"exclusive\" };",
         "type": "enum",
         "name": "LockMode",
         "values": [
@@ -291,6 +295,7 @@
         "extAttrs": []
       },
       "LockOptions": {
+        "fragment": "dictionary LockOptions {\n  LockMode mode = \"exclusive\";\n  boolean ifAvailable = false;\n  boolean steal = false;\n  AbortSignal signal;\n};",
         "type": "dictionary",
         "name": "LockOptions",
         "inheritance": null,
@@ -369,6 +374,7 @@
         "partial": false
       },
       "LockManagerSnapshot": {
+        "fragment": "dictionary LockManagerSnapshot {\n  sequence<LockInfo> held;\n  sequence<LockInfo> pending;\n};",
         "type": "dictionary",
         "name": "LockManagerSnapshot",
         "inheritance": null,
@@ -426,6 +432,7 @@
         "partial": false
       },
       "LockInfo": {
+        "fragment": "dictionary LockInfo {\n  DOMString name;\n  LockMode mode;\n  DOMString clientId;\n};",
         "type": "dictionary",
         "name": "LockInfo",
         "inheritance": null,
@@ -480,6 +487,7 @@
         "partial": false
       },
       "Lock": {
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface Lock {\n  readonly attribute DOMString name;\n  readonly attribute LockMode mode;\n};",
         "type": "interface",
         "name": "Lock",
         "inheritance": null,
@@ -545,15 +553,19 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "name": "Navigator",
-          "type": "interface",
+          "fragment": "Navigator includes NavigatorLocks;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
           "includes": "NavigatorLocks"
         }
       ],
       "WorkerNavigator": [
         {
-          "name": "WorkerNavigator",
-          "type": "interface",
+          "fragment": "WorkerNavigator includes NavigatorLocks;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WorkerNavigator",
           "includes": "NavigatorLocks"
         }
       ]

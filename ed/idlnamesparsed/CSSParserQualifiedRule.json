@@ -1,0 +1,27 @@
+{
+  "name": "CSSParserQualifiedRule",
+  "defined": {
+    "spec": {
+      "title": "CSS Parser API",
+      "url": "https://wicg.github.io/css-parser-api/"
+    },
+    "fragment": "[Constructor(sequence<CSSToken> prelude, optional sequence<CSSParserRule>? body)]\ninterface CSSParserQualifiedRule : CSSParserRule {\n  readonly attribute FrozenArray<CSSParserValue> prelude;\n  readonly attribute FrozenArray<CSSParserRule> body;\n  stringifier;\n};",
+    "href": "https://wicg.github.io/css-parser-api/#cssparserqualifiedrule"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSParserRule",
+    "defined": {
+      "spec": {
+        "title": "CSS Parser API",
+        "url": "https://wicg.github.io/css-parser-api/"
+      },
+      "fragment": "interface CSSParserRule {\n  /* Just a superclass. */\n};",
+      "href": "https://wicg.github.io/css-parser-api/#cssparserrule"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "Selection": {
+        "fragment": "[Exposed=Window]\ninterface Selection {\n  readonly attribute Node? anchorNode;\n  readonly attribute unsigned long anchorOffset;\n  readonly attribute Node? focusNode;\n  readonly attribute unsigned long focusOffset;\n  readonly attribute boolean isCollapsed;\n  readonly attribute unsigned long rangeCount;\n  readonly attribute DOMString type;\n  Range getRangeAt(unsigned long index);\n  undefined addRange(Range range);\n  undefined removeRange(Range range);\n  undefined removeAllRanges();\n  undefined empty();\n  undefined collapse(Node? node, optional unsigned long offset = 0);\n  undefined setPosition(Node? node, optional unsigned long offset = 0);\n  undefined collapseToStart();\n  undefined collapseToEnd();\n  undefined extend(Node node, optional unsigned long offset = 0);\n  undefined setBaseAndExtent(Node anchorNode, unsigned long anchorOffset, Node focusNode, unsigned long focusOffset);\n  undefined selectAllChildren(Node node);\n  [CEReactions]\n  undefined deleteFromDocument();\n  boolean containsNode(Node node, optional boolean allowPartialContainment = false);\n  stringifier;\n};",
         "type": "interface",
         "name": "Selection",
         "inheritance": null,
@@ -642,6 +643,7 @@
     "idlExtendedNames": {
       "Document": [
         {
+          "fragment": "partial interface Document {\n  Selection? getSelection();\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -668,6 +670,7 @@
       ],
       "Window": [
         {
+          "fragment": "partial interface Window {\n  Selection? getSelection();\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -694,6 +697,7 @@
       ],
       "GlobalEventHandlers": [
         {
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};",
           "type": "interface mixin",
           "name": "GlobalEventHandlers",
           "inheritance": null,

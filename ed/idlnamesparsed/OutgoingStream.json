@@ -1,0 +1,14 @@
+{
+  "name": "OutgoingStream",
+  "defined": {
+    "spec": {
+      "title": "WebTransport",
+      "url": "https://w3c.github.io/webtransport/"
+    },
+    "fragment": "[ Exposed=(Window,Worker) ]\ninterface mixin OutgoingStream {\n  readonly attribute WritableStream writable;\n  readonly attribute Promise<StreamAbortInfo> writingAborted;\n  undefined abortWriting(optional StreamAbortInfo abortInfo = {});\n};",
+    "href": "https://w3c.github.io/webtransport/#outgoingstream"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

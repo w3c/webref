@@ -1,0 +1,20 @@
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+dictionary GPUDepthStencilState {
+    required GPUTextureFormat format;
+
+    boolean depthWriteEnabled = false;
+    GPUCompareFunction depthCompare = "always";
+
+    GPUStencilFaceState stencilFront = {};
+    GPUStencilFaceState stencilBack = {};
+
+    GPUStencilValue stencilReadMask = 0xFFFFFFFF;
+    GPUStencilValue stencilWriteMask = 0xFFFFFFFF;
+
+    GPUDepthBias depthBias = 0;
+    float depthBiasSlopeScale = 0;
+    float depthBiasClamp = 0;
+
+    // Enable depth clamping (requires "depth-clamping" feature)
+    boolean clampDepth = false;
+};

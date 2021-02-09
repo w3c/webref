@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "NavigatorDeviceMemory": {
+        "fragment": "[\n    SecureContext,\n    Exposed=(Window,Worker)\n] interface mixin NavigatorDeviceMemory {\n    readonly attribute double deviceMemory;\n};",
         "type": "interface mixin",
         "name": "NavigatorDeviceMemory",
         "inheritance": null,
@@ -60,15 +61,19 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "name": "Navigator",
-          "type": "interface",
+          "fragment": "Navigator includes NavigatorDeviceMemory;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
           "includes": "NavigatorDeviceMemory"
         }
       ],
       "WorkerNavigator": [
         {
-          "name": "WorkerNavigator",
-          "type": "interface",
+          "fragment": "WorkerNavigator includes NavigatorDeviceMemory;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WorkerNavigator",
           "includes": "NavigatorDeviceMemory"
         }
       ]

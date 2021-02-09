@@ -1,0 +1,14 @@
+{
+  "name": "PushManager",
+  "defined": {
+    "spec": {
+      "title": "Push API",
+      "url": "https://www.w3.org/TR/push-api/"
+    },
+    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushManager {\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedContentEncodings;\n\n  Promise<PushSubscription> subscribe(optional PushSubscriptionOptionsInit options = {});\n  Promise<PushSubscription?> getSubscription();\n  Promise<PushPermissionState> permissionState(optional PushSubscriptionOptionsInit options = {});\n};",
+    "href": "https://w3c.github.io/push-api/#dom-pushmanager"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

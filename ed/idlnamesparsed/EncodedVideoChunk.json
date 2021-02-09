@@ -1,0 +1,14 @@
+{
+  "name": "EncodedVideoChunk",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://wicg.github.io/web-codecs/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface EncodedVideoChunk {\n  constructor(EncodedVideoChunkInit init);\n  readonly attribute EncodedVideoChunkType type;\n  readonly attribute unsigned long long timestamp;  // microseconds\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute ArrayBuffer data;\n};",
+    "href": "https://wicg.github.io/web-codecs/#encodedvideochunk"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

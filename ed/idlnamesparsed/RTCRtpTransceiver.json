@@ -1,0 +1,14 @@
+{
+  "name": "RTCRtpTransceiver",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCRtpTransceiver {\n  readonly attribute DOMString? mid;\n  [SameObject] readonly attribute RTCRtpSender sender;\n  [SameObject] readonly attribute RTCRtpReceiver receiver;\n  attribute RTCRtpTransceiverDirection direction;\n  readonly attribute RTCRtpTransceiverDirection? currentDirection;\n  undefined stop();\n  undefined setCodecPreferences(sequence<RTCRtpCodecCapability> codecs);\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtptransceiver"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

@@ -1,0 +1,27 @@
+{
+  "name": "XRWebGLSubImage",
+  "defined": {
+    "spec": {
+      "title": "WebXR Layers API Level 1",
+      "url": "https://www.w3.org/TR/webxrlayers-1/"
+    },
+    "fragment": "[Exposed=Window] interface XRWebGLSubImage : XRSubImage {\n  [SameObject] readonly attribute WebGLTexture colorTexture;\n  [SameObject] readonly attribute WebGLTexture? depthStencilTexture;\n  readonly attribute unsigned long? imageIndex;\n  readonly attribute unsigned long textureWidth;\n  readonly attribute unsigned long textureHeight;\n};",
+    "href": "https://immersive-web.github.io/layers/#xrwebglsubimage"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRSubImage",
+    "defined": {
+      "spec": {
+        "title": "WebXR Layers API Level 1",
+        "url": "https://www.w3.org/TR/webxrlayers-1/"
+      },
+      "fragment": "[Exposed=Window] interface XRSubImage {\n  [SameObject] readonly attribute XRViewport viewport;\n};",
+      "href": "https://immersive-web.github.io/layers/#xrsubimage"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

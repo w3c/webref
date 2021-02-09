@@ -1,0 +1,50 @@
+{
+  "name": "AuthenticationExtensionsClientInputs",
+  "defined": {
+    "spec": {
+      "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
+      "url": "https://www.w3.org/TR/webauthn-2/"
+    },
+    "fragment": "dictionary AuthenticationExtensionsClientInputs {\n};",
+    "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientinputs"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
+        "url": "https://www.w3.org/TR/webauthn-2/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  USVString appid;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
+        "url": "https://www.w3.org/TR/webauthn-2/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  USVString appidExclude;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
+        "url": "https://www.w3.org/TR/webauthn-2/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  boolean uvm;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
+        "url": "https://www.w3.org/TR/webauthn-2/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    boolean credProps;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
+        "url": "https://www.w3.org/TR/webauthn-2/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    AuthenticationExtensionsLargeBlobInputs largeBlob;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

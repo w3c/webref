@@ -15,6 +15,7 @@
     },
     "idlNames": {
       "Magnetometer": {
+        "fragment": "[SecureContext,\n  Exposed=Window]\ninterface Magnetometer : Sensor {\n  constructor(optional MagnetometerSensorOptions sensorOptions = {});\n  readonly attribute double? x;\n  readonly attribute double? y;\n  readonly attribute double? z;\n};",
         "type": "interface",
         "name": "Magnetometer",
         "inheritance": "Sensor",
@@ -109,6 +110,7 @@
         "partial": false
       },
       "MagnetometerLocalCoordinateSystem": {
+        "fragment": "enum MagnetometerLocalCoordinateSystem { \"device\", \"screen\" };",
         "type": "enum",
         "name": "MagnetometerLocalCoordinateSystem",
         "values": [
@@ -124,6 +126,7 @@
         "extAttrs": []
       },
       "MagnetometerSensorOptions": {
+        "fragment": "dictionary MagnetometerSensorOptions : SensorOptions {\n  MagnetometerLocalCoordinateSystem referenceFrame = \"device\";\n};",
         "type": "dictionary",
         "name": "MagnetometerSensorOptions",
         "inheritance": "SensorOptions",
@@ -151,6 +154,7 @@
         "partial": false
       },
       "UncalibratedMagnetometer": {
+        "fragment": "[SecureContext,\n  Exposed=Window]\ninterface UncalibratedMagnetometer : Sensor {\n  constructor(optional MagnetometerSensorOptions sensorOptions = {});\n  readonly attribute double? x;\n  readonly attribute double? y;\n  readonly attribute double? z;\n  readonly attribute double? xBias;\n  readonly attribute double? yBias;\n  readonly attribute double? zBias;\n};",
         "type": "interface",
         "name": "UncalibratedMagnetometer",
         "inheritance": "Sensor",
@@ -290,6 +294,7 @@
         "partial": false
       },
       "MagnetometerReadingValues": {
+        "fragment": "dictionary MagnetometerReadingValues {\n  required double? x;\n  required double? y;\n  required double? z;\n};",
         "type": "dictionary",
         "name": "MagnetometerReadingValues",
         "inheritance": null,
@@ -344,6 +349,7 @@
         "partial": false
       },
       "UncalibratedMagnetometerReadingValues": {
+        "fragment": "dictionary UncalibratedMagnetometerReadingValues {\n  required double? x;\n  required double? y;\n  required double? z;\n  required double? xBias;\n  required double? yBias;\n  required double? zBias;\n};",
         "type": "dictionary",
         "name": "UncalibratedMagnetometerReadingValues",
         "inheritance": null,

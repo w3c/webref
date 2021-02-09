@@ -1,0 +1,14 @@
+{
+  "name": "Geolocation",
+  "defined": {
+    "spec": {
+      "title": "Geolocation API Specification",
+      "url": "https://www.w3.org/TR/geolocation-API/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Geolocation {\n  undefined getCurrentPosition(PositionCallback successCallback,\n                          optional PositionErrorCallback errorCallback,\n                          optional PositionOptions options = {});\n\n  long watchPosition(PositionCallback successCallback,\n                      optional PositionErrorCallback errorCallback,\n                      optional PositionOptions options = {});\n\n  undefined clearWatch(long watchId);\n};",
+    "href": "https://w3c.github.io/geolocation-api/#dom-geolocation"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

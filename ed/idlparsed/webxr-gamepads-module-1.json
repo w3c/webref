@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "GamepadMappingType": {
+        "fragment": "enum GamepadMappingType {\n  \"\",            // Defined in the Gamepad API\n  \"standard\",    // Defined in the Gamepad API\n  \"xr-standard\",\n};",
         "type": "enum",
         "name": "GamepadMappingType",
         "values": [
@@ -32,6 +33,7 @@
     "idlExtendedNames": {
       "XRInputSource": [
         {
+          "fragment": "partial interface XRInputSource {\n  [SameObject] readonly attribute Gamepad? gamepad;\n};",
           "type": "interface",
           "name": "XRInputSource",
           "inheritance": null,

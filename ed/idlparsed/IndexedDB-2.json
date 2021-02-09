@@ -42,6 +42,7 @@
     },
     "idlNames": {
       "IDBRequest": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBRequest : EventTarget {\n  readonly attribute any result;\n  readonly attribute DOMException? error;\n  readonly attribute (IDBObjectStore or IDBIndex or IDBCursor)? source;\n  readonly attribute IDBTransaction? transaction;\n  readonly attribute IDBRequestReadyState readyState;\n\n  // Event handlers:\n  attribute EventHandler onsuccess;\n  attribute EventHandler onerror;\n};",
         "type": "interface",
         "name": "IDBRequest",
         "inheritance": "EventTarget",
@@ -198,6 +199,7 @@
         "partial": false
       },
       "IDBRequestReadyState": {
+        "fragment": "enum IDBRequestReadyState {\n  \"pending\",\n  \"done\"\n};",
         "type": "enum",
         "name": "IDBRequestReadyState",
         "values": [
@@ -213,6 +215,7 @@
         "extAttrs": []
       },
       "IDBOpenDBRequest": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBOpenDBRequest : IDBRequest {\n  // Event handlers:\n  attribute EventHandler onblocked;\n  attribute EventHandler onupgradeneeded;\n};",
         "type": "interface",
         "name": "IDBOpenDBRequest",
         "inheritance": "IDBRequest",
@@ -269,6 +272,7 @@
         "partial": false
       },
       "IDBVersionChangeEvent": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBVersionChangeEvent : Event {\n  constructor(DOMString type, optional IDBVersionChangeEventInit eventInitDict = {});\n  readonly attribute unsigned long long oldVersion;\n  readonly attribute unsigned long long? newVersion;\n};",
         "type": "interface",
         "name": "IDBVersionChangeEvent",
         "inheritance": "Event",
@@ -365,6 +369,7 @@
         "partial": false
       },
       "IDBVersionChangeEventInit": {
+        "fragment": "dictionary IDBVersionChangeEventInit : EventInit {\n  unsigned long long oldVersion = 0;\n  unsigned long long? newVersion = null;\n};",
         "type": "dictionary",
         "name": "IDBVersionChangeEventInit",
         "inheritance": "EventInit",
@@ -409,6 +414,7 @@
         "partial": false
       },
       "IDBFactory": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBFactory {\n  [NewObject] IDBOpenDBRequest open(DOMString name,\n                                    optional [EnforceRange] unsigned long long version);\n  [NewObject] IDBOpenDBRequest deleteDatabase(DOMString name);\n\n  Promise<sequence<IDBDatabaseInfo>> databases();\n\n  short cmp(any first, any second);\n};",
         "type": "interface",
         "name": "IDBFactory",
         "inheritance": null,
@@ -617,6 +623,7 @@
         "partial": false
       },
       "IDBDatabaseInfo": {
+        "fragment": "dictionary IDBDatabaseInfo {\n  DOMString name;\n  unsigned long long version;\n};",
         "type": "dictionary",
         "name": "IDBDatabaseInfo",
         "inheritance": null,
@@ -656,6 +663,7 @@
         "partial": false
       },
       "IDBDatabase": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBDatabase : EventTarget {\n  readonly attribute DOMString name;\n  readonly attribute unsigned long long version;\n  readonly attribute DOMStringList objectStoreNames;\n\n  [NewObject] IDBTransaction transaction((DOMString or sequence<DOMString>) storeNames,\n                                         optional IDBTransactionMode mode = \"readonly\",\n                                         optional IDBTransactionOptions options = {});\n  undefined close();\n\n  [NewObject] IDBObjectStore createObjectStore(\n    DOMString name,\n    optional IDBObjectStoreParameters options = {});\n  undefined deleteObjectStore(DOMString name);\n\n  // Event handlers:\n  attribute EventHandler onabort;\n  attribute EventHandler onclose;\n  attribute EventHandler onerror;\n  attribute EventHandler onversionchange;\n};",
         "type": "interface",
         "name": "IDBDatabase",
         "inheritance": "EventTarget",
@@ -993,6 +1001,7 @@
         "partial": false
       },
       "IDBTransactionDurability": {
+        "fragment": "enum IDBTransactionDurability { \"default\", \"strict\", \"relaxed\" };",
         "type": "enum",
         "name": "IDBTransactionDurability",
         "values": [
@@ -1012,6 +1021,7 @@
         "extAttrs": []
       },
       "IDBTransactionOptions": {
+        "fragment": "dictionary IDBTransactionOptions {\n  IDBTransactionDurability durability = \"default\";\n};",
         "type": "dictionary",
         "name": "IDBTransactionOptions",
         "inheritance": null,
@@ -1039,6 +1049,7 @@
         "partial": false
       },
       "IDBObjectStoreParameters": {
+        "fragment": "dictionary IDBObjectStoreParameters {\n  (DOMString or sequence<DOMString>)? keyPath = null;\n  boolean autoIncrement = false;\n};",
         "type": "dictionary",
         "name": "IDBObjectStoreParameters",
         "inheritance": null,
@@ -1109,6 +1120,7 @@
         "partial": false
       },
       "IDBObjectStore": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBObjectStore {\n  attribute DOMString name;\n  readonly attribute any keyPath;\n  readonly attribute DOMStringList indexNames;\n  [SameObject] readonly attribute IDBTransaction transaction;\n  readonly attribute boolean autoIncrement;\n\n  [NewObject] IDBRequest put(any value, optional any key);\n  [NewObject] IDBRequest add(any value, optional any key);\n  [NewObject] IDBRequest delete(any query);\n  [NewObject] IDBRequest clear();\n  [NewObject] IDBRequest get(any query);\n  [NewObject] IDBRequest getKey(any query);\n  [NewObject] IDBRequest getAll(optional any query,\n                                optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest getAllKeys(optional any query,\n                                    optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest count(optional any query);\n\n  [NewObject] IDBRequest openCursor(optional any query,\n                                    optional IDBCursorDirection direction = \"next\");\n  [NewObject] IDBRequest openKeyCursor(optional any query,\n                                       optional IDBCursorDirection direction = \"next\");\n\n  IDBIndex index(DOMString name);\n\n  [NewObject] IDBIndex createIndex(DOMString name,\n                                   (DOMString or sequence<DOMString>) keyPath,\n                                   optional IDBIndexParameters options = {});\n  undefined deleteIndex(DOMString name);\n};",
         "type": "interface",
         "name": "IDBObjectStore",
         "inheritance": null,
@@ -1908,6 +1920,7 @@
         "partial": false
       },
       "IDBIndexParameters": {
+        "fragment": "dictionary IDBIndexParameters {\n  boolean unique = false;\n  boolean multiEntry = false;\n};",
         "type": "dictionary",
         "name": "IDBIndexParameters",
         "inheritance": null,
@@ -1953,6 +1966,7 @@
         "partial": false
       },
       "IDBIndex": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBIndex {\n  attribute DOMString name;\n  [SameObject] readonly attribute IDBObjectStore objectStore;\n  readonly attribute any keyPath;\n  readonly attribute boolean multiEntry;\n  readonly attribute boolean unique;\n\n  [NewObject] IDBRequest get(any query);\n  [NewObject] IDBRequest getKey(any query);\n  [NewObject] IDBRequest getAll(optional any query,\n                                optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest getAllKeys(optional any query,\n                                    optional [EnforceRange] unsigned long count);\n  [NewObject] IDBRequest count(optional any query);\n\n  [NewObject] IDBRequest openCursor(optional any query,\n                                    optional IDBCursorDirection direction = \"next\");\n  [NewObject] IDBRequest openKeyCursor(optional any query,\n                                       optional IDBCursorDirection direction = \"next\");\n};",
         "type": "interface",
         "name": "IDBIndex",
         "inheritance": null,
@@ -2418,6 +2432,7 @@
         "partial": false
       },
       "IDBKeyRange": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBKeyRange {\n  readonly attribute any lower;\n  readonly attribute any upper;\n  readonly attribute boolean lowerOpen;\n  readonly attribute boolean upperOpen;\n\n  // Static construction methods:\n  [NewObject] static IDBKeyRange only(any value);\n  [NewObject] static IDBKeyRange lowerBound(any lower, optional boolean open = false);\n  [NewObject] static IDBKeyRange upperBound(any upper, optional boolean open = false);\n  [NewObject] static IDBKeyRange bound(any lower,\n                                       any upper,\n                                       optional boolean lowerOpen = false,\n                                       optional boolean upperOpen = false);\n\n  boolean includes(any key);\n};",
         "type": "interface",
         "name": "IDBKeyRange",
         "inheritance": null,
@@ -2784,6 +2799,7 @@
         "partial": false
       },
       "IDBCursor": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBCursor {\n  readonly attribute (IDBObjectStore or IDBIndex) source;\n  readonly attribute IDBCursorDirection direction;\n  readonly attribute any key;\n  readonly attribute any primaryKey;\n  [SameObject] readonly attribute IDBRequest request;\n\n  undefined advance([EnforceRange] unsigned long count);\n  undefined continue(optional any key);\n  undefined continuePrimaryKey(any key, any primaryKey);\n\n  [NewObject] IDBRequest update(any value);\n  [NewObject] IDBRequest delete();\n};",
         "type": "interface",
         "name": "IDBCursor",
         "inheritance": null,
@@ -3089,6 +3105,7 @@
         "partial": false
       },
       "IDBCursorDirection": {
+        "fragment": "enum IDBCursorDirection {\n  \"next\",\n  \"nextunique\",\n  \"prev\",\n  \"prevunique\"\n};",
         "type": "enum",
         "name": "IDBCursorDirection",
         "values": [
@@ -3112,6 +3129,7 @@
         "extAttrs": []
       },
       "IDBCursorWithValue": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBCursorWithValue : IDBCursor {\n  readonly attribute any value;\n};",
         "type": "interface",
         "name": "IDBCursorWithValue",
         "inheritance": "IDBCursor",
@@ -3153,6 +3171,7 @@
         "partial": false
       },
       "IDBTransaction": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface IDBTransaction : EventTarget {\n  readonly attribute DOMStringList objectStoreNames;\n  readonly attribute IDBTransactionMode mode;\n  readonly attribute IDBTransactionDurability durability;\n  [SameObject] readonly attribute IDBDatabase db;\n  readonly attribute DOMException? error;\n\n  IDBObjectStore objectStore(DOMString name);\n  undefined commit();\n  undefined abort();\n\n  // Event handlers:\n  attribute EventHandler onabort;\n  attribute EventHandler oncomplete;\n  attribute EventHandler onerror;\n};",
         "type": "interface",
         "name": "IDBTransaction",
         "inheritance": "EventTarget",
@@ -3368,6 +3387,7 @@
         "partial": false
       },
       "IDBTransactionMode": {
+        "fragment": "enum IDBTransactionMode {\n  \"readonly\",\n  \"readwrite\",\n  \"versionchange\"\n};",
         "type": "enum",
         "name": "IDBTransactionMode",
         "values": [
@@ -3390,6 +3410,7 @@
     "idlExtendedNames": {
       "WindowOrWorkerGlobalScope": [
         {
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute IDBFactory indexedDB;\n};",
           "type": "interface mixin",
           "name": "WindowOrWorkerGlobalScope",
           "inheritance": null,

@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "RTCIdentityProviderGlobalScope": {
+        "fragment": "[Global,\n Exposed=RTCIdentityProviderGlobalScope]\ninterface RTCIdentityProviderGlobalScope : WorkerGlobalScope {\n    readonly attribute RTCIdentityProviderRegistrar rtcIdentityProvider;\n};",
         "type": "interface",
         "name": "RTCIdentityProviderGlobalScope",
         "inheritance": "WorkerGlobalScope",
@@ -59,6 +60,7 @@
         "partial": false
       },
       "RTCIdentityProviderRegistrar": {
+        "fragment": "[Exposed=RTCIdentityProviderGlobalScope]\ninterface RTCIdentityProviderRegistrar {\n    undefined register(RTCIdentityProvider idp);\n};",
         "type": "interface",
         "name": "RTCIdentityProviderRegistrar",
         "inheritance": null,
@@ -110,6 +112,7 @@
         "partial": false
       },
       "RTCIdentityProvider": {
+        "fragment": "dictionary RTCIdentityProvider {\n    required GenerateAssertionCallback generateAssertion;\n    required ValidateAssertionCallback validateAssertion;\n};",
         "type": "dictionary",
         "name": "RTCIdentityProvider",
         "inheritance": null,
@@ -149,6 +152,7 @@
         "partial": false
       },
       "GenerateAssertionCallback": {
+        "fragment": "callback GenerateAssertionCallback = Promise<RTCIdentityAssertionResult> (DOMString contents,\nDOMString origin,\nRTCIdentityProviderOptions options);",
         "type": "callback",
         "name": "GenerateAssertionCallback",
         "idlType": {
@@ -221,6 +225,7 @@
         "extAttrs": []
       },
       "ValidateAssertionCallback": {
+        "fragment": "callback ValidateAssertionCallback = Promise<RTCIdentityValidationResult> (DOMString assertion,\nDOMString origin);",
         "type": "callback",
         "name": "ValidateAssertionCallback",
         "idlType": {
@@ -277,6 +282,7 @@
         "extAttrs": []
       },
       "RTCIdentityAssertionResult": {
+        "fragment": "dictionary RTCIdentityAssertionResult {\n    required RTCIdentityProviderDetails idp;\n    required DOMString                  assertion;\n};",
         "type": "dictionary",
         "name": "RTCIdentityAssertionResult",
         "inheritance": null,
@@ -316,6 +322,7 @@
         "partial": false
       },
       "RTCIdentityProviderDetails": {
+        "fragment": "dictionary RTCIdentityProviderDetails {\n    required DOMString domain;\n             DOMString protocol = \"default\";\n};",
         "type": "dictionary",
         "name": "RTCIdentityProviderDetails",
         "inheritance": null,
@@ -358,6 +365,7 @@
         "partial": false
       },
       "RTCIdentityValidationResult": {
+        "fragment": "dictionary RTCIdentityValidationResult {\n    required DOMString identity;\n    required DOMString contents;\n};",
         "type": "dictionary",
         "name": "RTCIdentityValidationResult",
         "inheritance": null,
@@ -397,6 +405,7 @@
         "partial": false
       },
       "RTCIdentityProviderOptions": {
+        "fragment": "dictionary RTCIdentityProviderOptions {\n    DOMString protocol = \"default\";\n    DOMString usernameHint;\n    DOMString peerIdentity;\n};",
         "type": "dictionary",
         "name": "RTCIdentityProviderOptions",
         "inheritance": null,
@@ -454,6 +463,7 @@
         "partial": false
       },
       "RTCIdentityAssertion": {
+        "fragment": "[Exposed=Window]\ninterface RTCIdentityAssertion {\n    constructor(DOMString idp, DOMString name);\n    attribute DOMString idp;\n    attribute DOMString name;\n};",
         "type": "interface",
         "name": "RTCIdentityAssertion",
         "inheritance": null,
@@ -541,6 +551,7 @@
         "partial": false
       },
       "RTCErrorDetailTypeIdp": {
+        "fragment": "// This is an extension of RTCErrorDetailType from [[WEBRTC-PC]]\n// Unfortunately, WebIDL does not support partial enums (yet).\n//\n// partial enum RTCErrorDetailType {\nenum RTCErrorDetailTypeIdp {\n  \"idp-bad-script-failure\",\n  \"idp-execution-failure\",\n  \"idp-load-failure\",\n  \"idp-need-login\",\n  \"idp-timeout\",\n  \"idp-tls-failure\",\n  \"idp-token-expired\",\n  \"idp-token-invalid\",\n};",
         "type": "enum",
         "name": "RTCErrorDetailTypeIdp",
         "values": [
@@ -583,6 +594,7 @@
     "idlExtendedNames": {
       "RTCPeerConnection": [
         {
+          "fragment": "partial interface RTCPeerConnection {\n    undefined               setIdentityProvider (DOMString provider, optional RTCIdentityProviderOptions options = {});\n    Promise<DOMString> getIdentityAssertion ();\n    readonly        attribute Promise<RTCIdentityAssertion> peerIdentity;\n    readonly        attribute DOMString?                    idpLoginUrl;\n    readonly        attribute DOMString?                    idpErrorInfo;\n};",
           "type": "interface",
           "name": "RTCPeerConnection",
           "inheritance": null,
@@ -722,6 +734,7 @@
       ],
       "RTCConfiguration": [
         {
+          "fragment": "partial dictionary RTCConfiguration {\n    DOMString peerIdentity;\n};",
           "type": "dictionary",
           "name": "RTCConfiguration",
           "inheritance": null,
@@ -748,6 +761,7 @@
       ],
       "RTCError": [
         {
+          "fragment": "partial interface RTCError {\n  readonly attribute long? httpRequestStatusCode;\n};",
           "type": "interface",
           "name": "RTCError",
           "inheritance": null,
@@ -774,6 +788,7 @@
       ],
       "RTCErrorInit": [
         {
+          "fragment": "partial dictionary RTCErrorInit {\n  long httpRequestStatusCode;\n};",
           "type": "dictionary",
           "name": "RTCErrorInit",
           "inheritance": null,
@@ -800,6 +815,7 @@
       ],
       "MediaStreamConstraints": [
         {
+          "fragment": "partial dictionary MediaStreamConstraints {\n             DOMString peerIdentity;\n};",
           "type": "dictionary",
           "name": "MediaStreamConstraints",
           "inheritance": null,
@@ -826,6 +842,7 @@
       ],
       "MediaStreamTrack": [
         {
+          "fragment": "partial interface MediaStreamTrack {\n    readonly        attribute boolean      isolated;\n                    attribute EventHandler onisolationchange;\n};",
           "type": "interface",
           "name": "MediaStreamTrack",
           "inheritance": null,

@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "CanvasCaptureMediaStreamTrack": {
+        "fragment": "[Exposed=Window] interface CanvasCaptureMediaStreamTrack : MediaStreamTrack {\n    readonly        attribute HTMLCanvasElement canvas;\n    undefined requestFrame ();\n};",
         "type": "interface",
         "name": "CanvasCaptureMediaStreamTrack",
         "inheritance": "MediaStreamTrack",
@@ -66,6 +67,7 @@
     "idlExtendedNames": {
       "HTMLMediaElement": [
         {
+          "fragment": "partial interface HTMLMediaElement {\n    MediaStream captureStream ();\n};",
           "type": "interface",
           "name": "HTMLMediaElement",
           "inheritance": null,
@@ -92,6 +94,7 @@
       ],
       "HTMLCanvasElement": [
         {
+          "fragment": "partial interface HTMLCanvasElement {\n    MediaStream captureStream (optional double frameRequestRate);\n};",
           "type": "interface",
           "name": "HTMLCanvasElement",
           "inheritance": null,

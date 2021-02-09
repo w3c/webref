@@ -1,0 +1,27 @@
+{
+  "name": "CSSRotate",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSRotate : CSSTransformComponent {\n    constructor(CSSNumericValue angle);\n    constructor(CSSNumberish x, CSSNumberish y, CSSNumberish z, CSSNumericValue angle);\n    attribute CSSNumberish x;\n    attribute CSSNumberish y;\n    attribute CSSNumberish z;\n    attribute CSSNumericValue angle;\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssrotate"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSTransformComponent",
+    "defined": {
+      "spec": {
+        "title": "CSS Typed OM Level 1",
+        "url": "https://www.w3.org/TR/css-typed-om-1/"
+      },
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSTransformComponent {\n    stringifier;\n    attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#csstransformcomponent"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

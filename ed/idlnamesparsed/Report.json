@@ -1,0 +1,14 @@
+{
+  "name": "Report",
+  "defined": {
+    "spec": {
+      "title": "Reporting API 1",
+      "url": "https://www.w3.org/TR/reporting-1/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Report {\n  [Default] object toJSON();\n  readonly attribute DOMString type;\n  readonly attribute DOMString url;\n  readonly attribute ReportBody? body;\n};",
+    "href": "https://w3c.github.io/reporting/#dom-report"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

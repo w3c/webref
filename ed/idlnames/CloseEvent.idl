@@ -1,0 +1,9 @@
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+[Exposed=(Window,Worker)]
+interface CloseEvent : Event {
+  constructor(DOMString type, optional CloseEventInit eventInitDict = {});
+
+  readonly attribute boolean wasClean;
+  readonly attribute unsigned short code;
+  readonly attribute USVString reason;
+};

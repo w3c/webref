@@ -1,0 +1,27 @@
+{
+  "name": "AnimationWorkletGlobalScope",
+  "defined": {
+    "spec": {
+      "title": "CSS Animation Worklet API",
+      "url": "https://www.w3.org/TR/css-animation-worklet-1/"
+    },
+    "fragment": "[ Global=(Worklet,AnimationWorklet), Exposed=AnimationWorklet ]\ninterface AnimationWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerAnimator(DOMString name, AnimatorInstanceConstructor animatorCtor);\n};",
+    "href": "https://drafts.css-houdini.org/css-animationworklet-1/#animationworkletglobalscope"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "WorkletGlobalScope",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "[Exposed=Worklet, SecureContext]\ninterface WorkletGlobalScope {};",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

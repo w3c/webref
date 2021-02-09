@@ -1,0 +1,37 @@
+{
+  "name": "TextEncoder",
+  "defined": {
+    "spec": {
+      "title": "Encoding Standard",
+      "url": "https://www.w3.org/TR/encoding/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface TextEncoder {\n  constructor();\n\n  [NewObject] Uint8Array encode(optional USVString input = \"\");\n  TextEncoderEncodeIntoResult encodeInto(USVString source, [AllowShared] Uint8Array destination);\n};",
+    "href": "https://encoding.spec.whatwg.org/#textencoder"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Encoding Standard",
+        "url": "https://www.w3.org/TR/encoding/"
+      },
+      "fragment": "TextEncoder includes TextEncoderCommon;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "TextEncoderCommon",
+      "defined": {
+        "spec": {
+          "title": "Encoding Standard",
+          "url": "https://www.w3.org/TR/encoding/"
+        },
+        "fragment": "interface mixin TextEncoderCommon {\n  readonly attribute DOMString encoding;\n};",
+        "href": "https://encoding.spec.whatwg.org/#textencodercommon"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

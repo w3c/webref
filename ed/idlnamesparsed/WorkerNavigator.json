@@ -1,0 +1,297 @@
+{
+  "name": "WorkerNavigator",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Worker]\ninterface WorkerNavigator {};",
+    "href": "https://html.spec.whatwg.org/multipage/workers.html#workernavigator"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://gpuweb.github.io/gpuweb/"
+      },
+      "fragment": "[Exposed=DedicatedWorker]\npartial interface WorkerNavigator {\n    [SameObject] readonly attribute GPU gpu;\n};"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorID;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorLanguage;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorOnLine;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorConcurrentHardware;"
+    },
+    {
+      "spec": {
+        "title": "Storage Standard",
+        "url": "https://storage.spec.whatwg.org/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorStorage;"
+    },
+    {
+      "spec": {
+        "title": "Badging API",
+        "url": "https://w3c.github.io/badging/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorBadge;"
+    },
+    {
+      "spec": {
+        "title": "Local Font Access API",
+        "url": "https://wicg.github.io/local-font-access/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorFonts;"
+    },
+    {
+      "spec": {
+        "title": "Network Information API",
+        "url": "https://wicg.github.io/netinfo/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorNetworkInformation;"
+    },
+    {
+      "spec": {
+        "title": "Web Serial API",
+        "url": "https://wicg.github.io/serial/"
+      },
+      "fragment": "[Exposed=DedicatedWorker, SecureContext]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute Serial serial;\n};"
+    },
+    {
+      "spec": {
+        "title": "User-Agent Client Hints",
+        "url": "https://wicg.github.io/ua-client-hints/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorUA;"
+    },
+    {
+      "spec": {
+        "title": "Web Locks API",
+        "url": "https://wicg.github.io/web-locks/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorLocks;"
+    },
+    {
+      "spec": {
+        "title": "WebUSB API",
+        "url": "https://wicg.github.io/webusb/"
+      },
+      "fragment": "[Exposed=(DedicatedWorker,SharedWorker), SecureContext]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute USB usb;\n};"
+    },
+    {
+      "spec": {
+        "title": "Device Memory 1",
+        "url": "https://www.w3.org/TR/device-memory-1/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorDeviceMemory;"
+    },
+    {
+      "spec": {
+        "title": "Media Capabilities",
+        "url": "https://www.w3.org/TR/media-capabilities/"
+      },
+      "fragment": "[Exposed=Worker]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute MediaCapabilities mediaCapabilities;\n};"
+    },
+    {
+      "spec": {
+        "title": "Permissions",
+        "url": "https://www.w3.org/TR/permissions/"
+      },
+      "fragment": "[Exposed=(Worker)]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute Permissions permissions;\n};"
+    },
+    {
+      "spec": {
+        "title": "Service Workers Nightly",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "partial interface WorkerNavigator {\n  [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "NavigatorID",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorID {\n  readonly attribute DOMString appCodeName; // constant \"Mozilla\"\n  readonly attribute DOMString appName; // constant \"Netscape\"\n  readonly attribute DOMString appVersion;\n  readonly attribute DOMString platform;\n  readonly attribute DOMString product; // constant \"Gecko\"\n  [Exposed=Window] readonly attribute DOMString productSub;\n  readonly attribute DOMString userAgent;\n  [Exposed=Window] readonly attribute DOMString vendor;\n  [Exposed=Window] readonly attribute DOMString vendorSub; // constant \"\"\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorid"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "HTML Standard",
+            "url": "https://html.spec.whatwg.org/multipage/"
+          },
+          "fragment": "partial interface mixin NavigatorID {\n  [Exposed=Window] boolean taintEnabled(); // constant false\n  [Exposed=Window] readonly attribute DOMString oscpu;\n};"
+        }
+      ],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorLanguage",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorLanguage {\n  readonly attribute DOMString language;\n  readonly attribute FrozenArray<DOMString> languages;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorlanguage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorOnLine",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorOnLine {\n  readonly attribute boolean onLine;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatoronline"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorConcurrentHardware",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorConcurrentHardware {\n  readonly attribute unsigned long long hardwareConcurrency;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#navigatorconcurrenthardware"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorStorage",
+      "defined": {
+        "spec": {
+          "title": "Storage Standard",
+          "url": "https://storage.spec.whatwg.org/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorStorage {\n  [SameObject] readonly attribute StorageManager storage;\n};",
+        "href": "https://storage.spec.whatwg.org/#navigatorstorage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorBadge",
+      "defined": {
+        "spec": {
+          "title": "Badging API",
+          "url": "https://w3c.github.io/badging/"
+        },
+        "fragment": "// Methods exposed on both documents and service workers.\n[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearAppBadge();\n};",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorFonts",
+      "defined": {
+        "spec": {
+          "title": "Local Font Access API",
+          "url": "https://wicg.github.io/local-font-access/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorFonts {\n  [SameObject] readonly attribute FontManager fonts;\n};",
+        "href": "https://wicg.github.io/local-font-access/#navigatorfonts"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorNetworkInformation",
+      "defined": {
+        "spec": {
+          "title": "Network Information API",
+          "url": "https://wicg.github.io/netinfo/"
+        },
+        "fragment": "interface mixin NavigatorNetworkInformation {\n  [SameObject] readonly attribute NetworkInformation connection;\n};",
+        "href": "https://wicg.github.io/netinfo/#dom-navigatornetworkinformation"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorUA",
+      "defined": {
+        "spec": {
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        },
+        "fragment": "interface mixin NavigatorUA {\n  [SecureContext] readonly attribute NavigatorUAData userAgentData;\n};",
+        "href": "https://wicg.github.io/ua-client-hints/#navigatorua"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorLocks",
+      "defined": {
+        "spec": {
+          "title": "Web Locks API",
+          "url": "https://wicg.github.io/web-locks/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
+        "href": "https://wicg.github.io/web-locks/#navigatorlocks"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorDeviceMemory",
+      "defined": {
+        "spec": {
+          "title": "Device Memory 1",
+          "url": "https://www.w3.org/TR/device-memory-1/"
+        },
+        "fragment": "[\n    SecureContext,\n    Exposed=(Window,Worker)\n] interface mixin NavigatorDeviceMemory {\n    readonly attribute double deviceMemory;\n};",
+        "href": "https://w3c.github.io/device-memory/#navigatordevicememory"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

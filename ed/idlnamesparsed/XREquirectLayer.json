@@ -1,0 +1,53 @@
+{
+  "name": "XREquirectLayer",
+  "defined": {
+    "spec": {
+      "title": "WebXR Layers API Level 1",
+      "url": "https://www.w3.org/TR/webxrlayers-1/"
+    },
+    "fragment": "[Exposed=Window] interface XREquirectLayer : XRCompositionLayer {\n  attribute XRSpace space;\n  attribute XRRigidTransform transform;\n\n  attribute float radius;\n  attribute float centralHorizontalAngle;\n  attribute float upperVerticalAngle;\n  attribute float lowerVerticalAngle;\n\n  // Events\n  attribute EventHandler onredraw;\n};",
+    "href": "https://immersive-web.github.io/layers/#xrequirectlayer"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRCompositionLayer",
+    "defined": {
+      "spec": {
+        "title": "WebXR Layers API Level 1",
+        "url": "https://www.w3.org/TR/webxrlayers-1/"
+      },
+      "fragment": "[Exposed=Window] interface XRCompositionLayer : XRLayer {\n  readonly attribute XRLayerLayout layout;\n\n  attribute boolean blendTextureSourceAlpha;\n  attribute boolean? chromaticAberrationCorrection;\n  readonly attribute unsigned long mipLevels;\n\n  readonly attribute boolean needsRedraw;\n\n  undefined destroy();\n};",
+      "href": "https://immersive-web.github.io/layers/#xrcompositionlayer"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "XRLayer",
+      "defined": {
+        "spec": {
+          "title": "WebXR Device API",
+          "url": "https://www.w3.org/TR/webxr/"
+        },
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRLayer : EventTarget {};",
+        "href": "https://immersive-web.github.io/webxr/#xrlayer"
+      },
+      "extended": [],
+      "inheritance": {
+        "name": "EventTarget",
+        "defined": {
+          "spec": {
+            "title": "DOM Standard",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+          "href": "https://dom.spec.whatwg.org/#eventtarget"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      },
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

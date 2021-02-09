@@ -1,0 +1,14 @@
+{
+  "name": "ContentIndex",
+  "defined": {
+    "spec": {
+      "title": "Content Index",
+      "url": "https://wicg.github.io/content-index/spec/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface ContentIndex {\n  Promise<void> add(ContentDescription description);\n  Promise<void> delete(DOMString id);\n  Promise<sequence<ContentDescription>> getAll();\n};",
+    "href": "https://wicg.github.io/content-index/spec/#contentindex"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

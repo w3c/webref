@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "RTCIceGatherOptions": {
+        "fragment": "dictionary RTCIceGatherOptions {\n             RTCIceTransportPolicy     gatherPolicy = \"all\";\n             sequence<RTCIceServer> iceServers;\n};",
         "type": "dictionary",
         "name": "RTCIceGatherOptions",
         "inheritance": null,
@@ -68,6 +69,7 @@
     "idlExtendedNames": {
       "RTCIceParameters": [
         {
+          "fragment": "partial dictionary RTCIceParameters {\n             boolean   iceLite;\n};",
           "type": "dictionary",
           "name": "RTCIceParameters",
           "inheritance": null,
@@ -94,6 +96,7 @@
       ],
       "RTCIceTransport": [
         {
+          "fragment": "[Exposed=Window]\npartial interface RTCIceTransport {\n    constructor();\n    undefined                      gather (optional RTCIceGatherOptions options = {});\n    undefined                      start (RTCIceParameters remoteParameters, optional RTCIceRole role = \"controlled\");\n    undefined                      stop ();\n    undefined                      addRemoteCandidate (RTCIceCandidateInit remoteCandidate);\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onicecandidate;\n};",
           "type": "interface",
           "name": "RTCIceTransport",
           "inheritance": null,

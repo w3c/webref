@@ -16,6 +16,7 @@
     },
     "idlNames": {
       "GamepadHand": {
+        "fragment": "enum GamepadHand {\n  \"\",  /* unknown, both hands, or not applicable */\n  \"left\",\n  \"right\"\n};",
         "type": "enum",
         "name": "GamepadHand",
         "values": [
@@ -35,6 +36,7 @@
         "extAttrs": []
       },
       "GamepadHapticActuator": {
+        "fragment": "[Exposed=Window]\ninterface GamepadHapticActuator {\n  readonly attribute GamepadHapticActuatorType type;\n  Promise<boolean> pulse(double value, double duration);\n};",
         "type": "interface",
         "name": "GamepadHapticActuator",
         "inheritance": null,
@@ -126,6 +128,7 @@
         "partial": false
       },
       "GamepadHapticActuatorType": {
+        "fragment": "enum GamepadHapticActuatorType {\n  \"vibration\"\n};",
         "type": "enum",
         "name": "GamepadHapticActuatorType",
         "values": [
@@ -137,6 +140,7 @@
         "extAttrs": []
       },
       "GamepadPose": {
+        "fragment": "[Exposed=Window]\ninterface GamepadPose {\n  readonly attribute boolean hasOrientation;\n  readonly attribute boolean hasPosition;\n\n  readonly attribute Float32Array? position;\n  readonly attribute Float32Array? linearVelocity;\n  readonly attribute Float32Array? linearAcceleration;\n  readonly attribute Float32Array? orientation;\n  readonly attribute Float32Array? angularVelocity;\n  readonly attribute Float32Array? angularAcceleration;\n};",
         "type": "interface",
         "name": "GamepadPose",
         "inheritance": null,
@@ -276,6 +280,7 @@
         "partial": false
       },
       "GamepadTouch": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface GamepadTouch {\n  readonly attribute unsigned long touchId;\n  readonly attribute octet surfaceId;\n  readonly attribute Float32Array position;\n  readonly attribute Uint32Array? surfaceDimensions;\n};",
         "type": "interface",
         "name": "GamepadTouch",
         "inheritance": null,
@@ -364,6 +369,7 @@
     "idlExtendedNames": {
       "Gamepad": [
         {
+          "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n};",
           "type": "interface",
           "name": "Gamepad",
           "inheritance": null,

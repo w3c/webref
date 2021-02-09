@@ -1,0 +1,34 @@
+// Source: URL Standard (https://url.spec.whatwg.org/)
+[Exposed=(Window,Worker),
+ LegacyWindowAlias=webkitURL]
+interface URL {
+  constructor(USVString url, optional USVString base);
+
+  stringifier attribute USVString href;
+  readonly attribute USVString origin;
+           attribute USVString protocol;
+           attribute USVString username;
+           attribute USVString password;
+           attribute USVString host;
+           attribute USVString hostname;
+           attribute USVString port;
+           attribute USVString pathname;
+           attribute USVString search;
+  [SameObject] readonly attribute URLSearchParams searchParams;
+           attribute USVString hash;
+
+  USVString toJSON();
+};
+
+// Source: File API (https://www.w3.org/TR/FileAPI/)
+[Exposed=(Window,DedicatedWorker,SharedWorker)]
+partial interface URL {
+  static DOMString createObjectURL((Blob or MediaSource) obj);
+  static undefined revokeObjectURL(DOMString url);
+};
+
+// Source: Media Source Extensions™ (https://www.w3.org/TR/media-source/)
+[Exposed=Window]
+partial interface URL {
+    static DOMString createObjectURL (MediaSource mediaSource);
+};

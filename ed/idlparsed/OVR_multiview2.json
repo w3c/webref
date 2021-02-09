@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "OVR_multiview2": {
+        "fragment": "[NoInterfaceObject]\ninterface OVR_multiview2 {\n    const GLenum FRAMEBUFFER_ATTACHMENT_TEXTURE_NUM_VIEWS_OVR = 0x9630;\n    const GLenum FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR = 0x9632;\n    const GLenum MAX_VIEWS_OVR = 0x9631;\n    const GLenum FRAMEBUFFER_INCOMPLETE_VIEW_TARGETS_OVR = 0x9633;\n\n    void framebufferTextureMultiviewOVR(GLenum target, GLenum attachment, WebGLTexture? texture, GLint level, GLint baseViewIndex, GLsizei numViews);\n};",
         "type": "interface",
         "name": "OVR_multiview2",
         "inheritance": null,

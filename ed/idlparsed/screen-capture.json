@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "DisplayMediaStreamConstraints": {
+        "fragment": "dictionary DisplayMediaStreamConstraints {\n  (boolean or MediaTrackConstraints) video = true;\n  (boolean or MediaTrackConstraints) audio = false;\n};",
         "type": "dictionary",
         "name": "DisplayMediaStreamConstraints",
         "inheritance": null,
@@ -89,6 +90,7 @@
         "partial": false
       },
       "DisplayCaptureSurfaceType": {
+        "fragment": "enum DisplayCaptureSurfaceType {\n  \"monitor\",\n  \"window\",\n  \"application\",\n  \"browser\"\n};",
         "type": "enum",
         "name": "DisplayCaptureSurfaceType",
         "values": [
@@ -112,6 +114,7 @@
         "extAttrs": []
       },
       "CursorCaptureConstraint": {
+        "fragment": "enum CursorCaptureConstraint {\n  \"never\",\n  \"always\",\n  \"motion\"\n};",
         "type": "enum",
         "name": "CursorCaptureConstraint",
         "values": [
@@ -134,6 +137,7 @@
     "idlExtendedNames": {
       "MediaDevices": [
         {
+          "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getDisplayMedia(optional DisplayMediaStreamConstraints constraints = {});\n};",
           "type": "interface",
           "name": "MediaDevices",
           "inheritance": null,
@@ -188,6 +192,7 @@
       ],
       "MediaTrackSupportedConstraints": [
         {
+          "fragment": "partial dictionary MediaTrackSupportedConstraints {\n  boolean displaySurface = true;\n  boolean logicalSurface = true;\n  boolean cursor = true;\n  boolean restrictOwnAudio = true;\n};",
           "type": "dictionary",
           "name": "MediaTrackSupportedConstraints",
           "inheritance": null,
@@ -271,6 +276,7 @@
       ],
       "MediaTrackConstraintSet": [
         {
+          "fragment": "partial dictionary MediaTrackConstraintSet {\n  ConstrainDOMString displaySurface;\n  ConstrainBoolean logicalSurface;\n  ConstrainDOMString cursor;\n  ConstrainBoolean restrictOwnAudio;\n};",
           "type": "dictionary",
           "name": "MediaTrackConstraintSet",
           "inheritance": null,
@@ -342,6 +348,7 @@
       ],
       "MediaTrackSettings": [
         {
+          "fragment": "partial dictionary MediaTrackSettings {\n  DOMString displaySurface;\n  boolean logicalSurface;\n  DOMString cursor;\n};",
           "type": "dictionary",
           "name": "MediaTrackSettings",
           "inheritance": null,

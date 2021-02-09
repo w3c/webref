@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "XMLSerializer": {
+        "fragment": "[Exposed=Window]\ninterface XMLSerializer {\n  constructor();\n  DOMString serializeToString(Node root);\n};",
         "type": "interface",
         "name": "XMLSerializer",
         "inheritance": null,
@@ -70,6 +71,7 @@
         "partial": false
       },
       "InnerHTML": {
+        "fragment": "interface mixin InnerHTML {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerHTML;\n};",
         "type": "interface mixin",
         "name": "InnerHTML",
         "inheritance": null,
@@ -111,11 +113,14 @@
     "idlExtendedNames": {
       "Element": [
         {
-          "name": "Element",
-          "type": "interface",
+          "fragment": "Element includes InnerHTML;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Element",
           "includes": "InnerHTML"
         },
         {
+          "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerHTML;\n  [CEReactions] void insertAdjacentHTML(DOMString position, DOMString text);\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -211,13 +216,16 @@
       ],
       "ShadowRoot": [
         {
-          "name": "ShadowRoot",
-          "type": "interface",
+          "fragment": "ShadowRoot includes InnerHTML;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "ShadowRoot",
           "includes": "InnerHTML"
         }
       ],
       "Range": [
         {
+          "fragment": "partial interface Range {\n  [CEReactions, NewObject] DocumentFragment createContextualFragment(DOMString fragment);\n};",
           "type": "interface",
           "name": "Range",
           "inheritance": null,

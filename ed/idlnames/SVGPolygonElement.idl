@@ -1,0 +1,10 @@
+// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
+[Exposed=Window]
+interface SVGPolygonElement : SVGGeometryElement {
+};
+
+// Source: SVG Markers (https://www.w3.org/TR/svg-markers/)
+SVGPolygonElement includes SVGMarkableElement;
+
+// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
+SVGPolygonElement includes SVGAnimatedPoints;

@@ -1,0 +1,14 @@
+{
+  "name": "CanvasTransform",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin CanvasTransform {\n  // transformations (default transform is the identity matrix)\n  undefined scale(unrestricted double x, unrestricted double y);\n  undefined rotate(unrestricted double angle);\n  undefined translate(unrestricted double x, unrestricted double y);\n  undefined transform(unrestricted double a, unrestricted double b, unrestricted double c, unrestricted double d, unrestricted double e, unrestricted double f);\n\n  [NewObject] DOMMatrix getTransform();\n  undefined setTransform(unrestricted double a, unrestricted double b, unrestricted double c, unrestricted double d, unrestricted double e, unrestricted double f);\n  undefined setTransform(optional DOMMatrix2DInit transform = {});\n  undefined resetTransform();\n\n};",
+    "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvastransform"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

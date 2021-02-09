@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "ProximitySensor": {
+        "fragment": "[Constructor(optional SensorOptions sensorOptions = {}), SecureContext, Exposed=Window]\ninterface ProximitySensor : Sensor {\n  readonly attribute double? distance;\n  readonly attribute double? max;\n  readonly attribute boolean? near;\n};",
         "type": "interface",
         "name": "ProximitySensor",
         "inheritance": "Sensor",
@@ -109,6 +110,7 @@
         "partial": false
       },
       "ProximityReadingValues": {
+        "fragment": "dictionary ProximityReadingValues {\n  required double? distance;\n  required double? max;\n  required boolean? near;\n};",
         "type": "dictionary",
         "name": "ProximityReadingValues",
         "inheritance": null,

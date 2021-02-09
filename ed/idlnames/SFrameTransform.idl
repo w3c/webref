@@ -1,0 +1,9 @@
+// Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)
+[Exposed=(Window,DedicatedWorker)]
+interface SFrameTransform {
+    constructor(optional SFrameTransformOptions options);
+    // FIXME: add key handling methods.
+};
+
+// Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)
+SFrameTransform includes GenericTransformStream;

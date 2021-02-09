@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "MediaSessionPlaybackState": {
+        "fragment": "enum MediaSessionPlaybackState {\n  \"none\",\n  \"paused\",\n  \"playing\"\n};",
         "type": "enum",
         "name": "MediaSessionPlaybackState",
         "values": [
@@ -38,6 +39,7 @@
         "extAttrs": []
       },
       "MediaSessionAction": {
+        "fragment": "enum MediaSessionAction {\n  \"play\",\n  \"pause\",\n  \"seekbackward\",\n  \"seekforward\",\n  \"previoustrack\",\n  \"nexttrack\",\n  \"skipad\",\n  \"stop\",\n  \"seekto\"\n};",
         "type": "enum",
         "name": "MediaSessionAction",
         "values": [
@@ -81,6 +83,7 @@
         "extAttrs": []
       },
       "MediaSessionActionHandler": {
+        "fragment": "callback MediaSessionActionHandler = undefined(MediaSessionActionDetails details);",
         "type": "callback",
         "name": "MediaSessionActionHandler",
         "idlType": {
@@ -112,6 +115,7 @@
         "extAttrs": []
       },
       "MediaSession": {
+        "fragment": "[Exposed=Window]\ninterface MediaSession {\n  attribute MediaMetadata? metadata;\n\n  attribute MediaSessionPlaybackState playbackState;\n\n  undefined setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);\n\n  undefined setPositionState(optional MediaPositionState state = {});\n};",
         "type": "interface",
         "name": "MediaSession",
         "inheritance": null,
@@ -243,6 +247,7 @@
         "partial": false
       },
       "MediaMetadata": {
+        "fragment": "[Exposed=Window]\ninterface MediaMetadata {\n  constructor(optional MediaMetadataInit init = {});\n  attribute DOMString title;\n  attribute DOMString artist;\n  attribute DOMString album;\n  attribute FrozenArray<MediaImage> artwork;\n};",
         "type": "interface",
         "name": "MediaMetadata",
         "inheritance": null,
@@ -355,6 +360,7 @@
         "partial": false
       },
       "MediaMetadataInit": {
+        "fragment": "dictionary MediaMetadataInit {\n  DOMString title = \"\";\n  DOMString artist = \"\";\n  DOMString album = \"\";\n  sequence<MediaImage> artwork = [];\n};",
         "type": "dictionary",
         "name": "MediaMetadataInit",
         "inheritance": null,
@@ -445,6 +451,7 @@
         "partial": false
       },
       "MediaImage": {
+        "fragment": "dictionary MediaImage {\n  required USVString src;\n  DOMString sizes = \"\";\n  DOMString type = \"\";\n};",
         "type": "dictionary",
         "name": "MediaImage",
         "inheritance": null,
@@ -505,6 +512,7 @@
         "partial": false
       },
       "MediaPositionState": {
+        "fragment": "dictionary MediaPositionState {\n  double duration;\n  double playbackRate;\n  double position;\n};",
         "type": "dictionary",
         "name": "MediaPositionState",
         "inheritance": null,
@@ -559,6 +567,7 @@
         "partial": false
       },
       "MediaSessionActionDetails": {
+        "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n  double? seekOffset;\n  double? seekTime;\n  boolean? fastSeek;\n};",
         "type": "dictionary",
         "name": "MediaSessionActionDetails",
         "inheritance": null,
@@ -631,6 +640,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SameObject] readonly attribute MediaSession mediaSession;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

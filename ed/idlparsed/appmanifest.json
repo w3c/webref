@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "WebAppManifest": {
+        "fragment": "dictionary WebAppManifest {\n   TextDirectionType dir = \"auto\";\n   DOMString lang;\n   USVString name;\n   USVString short_name;\n   sequence<ManifestImageResource> icons;\n   USVString start_url;\n   DisplayModeType display = \"browser\";\n   OrientationLockType orientation;\n   USVString theme_color;\n   USVString background_color;\n   USVString scope;\n   sequence<ExternalApplicationResource> related_applications;\n   boolean prefer_related_applications = \"false\";\n   sequence<ShortcutItem> shortcuts;\n};",
         "type": "dictionary",
         "name": "WebAppManifest",
         "inheritance": null,
@@ -265,6 +266,7 @@
         "partial": false
       },
       "TextDirectionType": {
+        "fragment": "enum TextDirectionType { \"ltr\", \"rtl\", \"auto\" };",
         "type": "enum",
         "name": "TextDirectionType",
         "values": [
@@ -284,6 +286,7 @@
         "extAttrs": []
       },
       "DisplayModeType": {
+        "fragment": "enum DisplayModeType {\n  \"fullscreen\",\n  \"standalone\",\n  \"minimal-ui\",\n  \"browser\"\n};",
         "type": "enum",
         "name": "DisplayModeType",
         "values": [
@@ -307,6 +310,7 @@
         "extAttrs": []
       },
       "ManifestImageResource": {
+        "fragment": "dictionary ManifestImageResource : ImageResource {\n  USVString purpose;\n};",
         "type": "dictionary",
         "name": "ManifestImageResource",
         "inheritance": "ImageResource",
@@ -331,6 +335,7 @@
         "partial": false
       },
       "ShortcutItem": {
+        "fragment": "dictionary ShortcutItem {\n  required USVString name;\n  USVString short_name;\n  USVString description;\n  required USVString url;\n  sequence<ManifestImageResource> icons;\n};",
         "type": "dictionary",
         "name": "ShortcutItem",
         "inheritance": null,
@@ -424,6 +429,7 @@
         "partial": false
       },
       "ExternalApplicationResource": {
+        "fragment": "dictionary ExternalApplicationResource {\n  required USVString platform;\n  USVString url;\n  DOMString id;\n  USVString min_version;\n  sequence<Fingerprint> fingerprints;\n};",
         "type": "dictionary",
         "name": "ExternalApplicationResource",
         "inheritance": null,
@@ -517,6 +523,7 @@
         "partial": false
       },
       "Fingerprint": {
+        "fragment": "dictionary Fingerprint {\n  USVString type;\n  USVString value;\n};",
         "type": "dictionary",
         "name": "Fingerprint",
         "inheritance": null,

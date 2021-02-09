@@ -18,6 +18,7 @@
     },
     "idlNames": {
       "ScrollDirection": {
+        "fragment": "enum ScrollDirection {\n  \"block\",\n  \"inline\",\n  \"horizontal\",\n  \"vertical\"\n};",
         "type": "enum",
         "name": "ScrollDirection",
         "values": [
@@ -41,6 +42,7 @@
         "extAttrs": []
       },
       "ScrollTimelineAutoKeyword": {
+        "fragment": "enum ScrollTimelineAutoKeyword { \"auto\" };",
         "type": "enum",
         "name": "ScrollTimelineAutoKeyword",
         "values": [
@@ -52,6 +54,7 @@
         "extAttrs": []
       },
       "ContainerBasedOffset": {
+        "fragment": "typedef (CSSNumericValue or CSSKeywordish) ContainerBasedOffset;",
         "type": "typedef",
         "name": "ContainerBasedOffset",
         "idlType": {
@@ -82,6 +85,7 @@
         "extAttrs": []
       },
       "ScrollTimelineOffset": {
+        "fragment": "typedef (ContainerBasedOffset or ElementBasedOffset) ScrollTimelineOffset;",
         "type": "typedef",
         "name": "ScrollTimelineOffset",
         "idlType": {
@@ -112,6 +116,7 @@
         "extAttrs": []
       },
       "ScrollTimelineOptions": {
+        "fragment": "dictionary ScrollTimelineOptions {\n  Element? source;\n  ScrollDirection orientation = \"block\";\n  sequence<ScrollTimelineOffset> scrollOffsets = [];\n  (double or ScrollTimelineAutoKeyword) timeRange = \"auto\";\n};",
         "type": "dictionary",
         "name": "ScrollTimelineOptions",
         "inheritance": null,
@@ -216,6 +221,7 @@
         "partial": false
       },
       "ScrollTimeline": {
+        "fragment": "[Exposed=Window]\ninterface ScrollTimeline : AnimationTimeline {\n  constructor(optional ScrollTimelineOptions options = {});\n  readonly attribute Element? source;\n  readonly attribute ScrollDirection orientation;\n  readonly attribute FrozenArray<ScrollTimelineOffset> scrollOffsets;\n  readonly attribute (double or ScrollTimelineAutoKeyword) timeRange;\n};",
         "type": "interface",
         "name": "ScrollTimeline",
         "inheritance": "AnimationTimeline",
@@ -345,6 +351,7 @@
         "partial": false
       },
       "Edge": {
+        "fragment": "enum Edge { \"start\", \"end\" };",
         "type": "enum",
         "name": "Edge",
         "values": [
@@ -360,6 +367,7 @@
         "extAttrs": []
       },
       "ElementBasedOffset": {
+        "fragment": "dictionary ElementBasedOffset {\n  Element target;\n  Edge edge = \"start\";\n  double threshold = 0.0;\n};",
         "type": "dictionary",
         "name": "ElementBasedOffset",
         "inheritance": null,
@@ -420,6 +428,7 @@
         "partial": false
       },
       "CSSScrollTimelineRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSScrollTimelineRule : CSSRule {\n    readonly attribute CSSOMString name;\n    readonly attribute CSSOMString source;\n    readonly attribute CSSOMString orientation;\n    readonly attribute CSSOMString scrollOffsets;\n    readonly attribute CSSOMString timeRange;\n};",
         "type": "interface",
         "name": "CSSScrollTimelineRule",
         "inheritance": "CSSRule",

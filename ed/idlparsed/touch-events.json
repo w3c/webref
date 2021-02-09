@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "TouchType": {
+        "fragment": "enum TouchType {\n    \"direct\",\n    \"stylus\"\n};",
         "type": "enum",
         "name": "TouchType",
         "values": [
@@ -34,6 +35,7 @@
         "extAttrs": []
       },
       "TouchInit": {
+        "fragment": "dictionary TouchInit {\n    required long        identifier;\n    required EventTarget target;\n             double      clientX = 0;\n             double      clientY = 0;\n             double      screenX = 0;\n             double      screenY = 0;\n             double      pageX = 0;\n             double      pageY = 0;\n             float       radiusX = 0;\n             float       radiusY = 0;\n             float       rotationAngle = 0;\n             float       force = 0;\n             double      altitudeAngle = 0;\n             double      azimuthAngle = 0;\n             TouchType   touchType = \"direct\";\n};",
         "type": "dictionary",
         "name": "TouchInit",
         "inheritance": null,
@@ -307,6 +309,7 @@
         "partial": false
       },
       "Touch": {
+        "fragment": "[Exposed=Window]\ninterface Touch {\n    constructor(TouchInit touchInitDict);\n    readonly        attribute long        identifier;\n    readonly        attribute EventTarget target;\n    readonly        attribute double      screenX;\n    readonly        attribute double      screenY;\n    readonly        attribute double      clientX;\n    readonly        attribute double      clientY;\n    readonly        attribute double      pageX;\n    readonly        attribute double      pageY;\n    readonly        attribute float       radiusX;\n    readonly        attribute float       radiusY;\n    readonly        attribute float       rotationAngle;\n    readonly        attribute float       force;\n    readonly        attribute float       altitudeAngle;\n    readonly        attribute float       azimuthAngle;\n    readonly        attribute TouchType   touchType;\n};",
         "type": "interface",
         "name": "Touch",
         "inheritance": null,
@@ -573,6 +576,7 @@
         "partial": false
       },
       "TouchList": {
+        "fragment": "[Exposed=Window]\ninterface TouchList {\n    readonly        attribute unsigned long length;\n    getter Touch? item (unsigned long index);\n};",
         "type": "interface",
         "name": "TouchList",
         "inheritance": null,
@@ -639,6 +643,7 @@
         "partial": false
       },
       "TouchEventInit": {
+        "fragment": "dictionary TouchEventInit : EventModifierInit {\n             sequence<Touch> touches = [];\n             sequence<Touch> targetTouches = [];\n             sequence<Touch> changedTouches = [];\n};",
         "type": "dictionary",
         "name": "TouchEventInit",
         "inheritance": "EventModifierInit",
@@ -729,6 +734,7 @@
         "partial": false
       },
       "TouchEvent": {
+        "fragment": "[Exposed=Window]\ninterface TouchEvent : UIEvent {\n    constructor(DOMString type, optional TouchEventInit eventInitDict = {});\n    readonly        attribute TouchList touches;\n    readonly        attribute TouchList targetTouches;\n    readonly        attribute TouchList changedTouches;\n    readonly        attribute boolean   altKey;\n    readonly        attribute boolean   metaKey;\n    readonly        attribute boolean   ctrlKey;\n    readonly        attribute boolean   shiftKey;\n};",
         "type": "interface",
         "name": "TouchEvent",
         "inheritance": "UIEvent",
@@ -896,6 +902,7 @@
     "idlExtendedNames": {
       "GlobalEventHandlers": [
         {
+          "fragment": "partial interface mixin GlobalEventHandlers {\n                    attribute EventHandler ontouchstart;\n                    attribute EventHandler ontouchend;\n                    attribute EventHandler ontouchmove;\n                    attribute EventHandler ontouchcancel;\n};",
           "type": "interface mixin",
           "name": "GlobalEventHandlers",
           "inheritance": null,

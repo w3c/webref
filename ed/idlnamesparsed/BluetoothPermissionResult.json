@@ -1,0 +1,40 @@
+{
+  "name": "BluetoothPermissionResult",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "[Exposed=Window]\ninterface BluetoothPermissionResult : PermissionStatus {\n  attribute FrozenArray<BluetoothDevice> devices;\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothpermissionresult"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PermissionStatus",
+    "defined": {
+      "spec": {
+        "title": "Permissions",
+        "url": "https://www.w3.org/TR/permissions/"
+      },
+      "fragment": "[Exposed=(Window,Worker)]\ninterface PermissionStatus : EventTarget {\n  readonly attribute PermissionState state;\n  attribute EventHandler onchange;\n};",
+      "href": "https://w3c.github.io/permissions/#permissionstatus"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

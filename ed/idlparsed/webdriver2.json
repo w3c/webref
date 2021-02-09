@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "NavigatorAutomationInformation": {
+        "fragment": "interface mixin NavigatorAutomationInformation {\n  readonly attribute boolean webdriver;\n};",
         "type": "interface mixin",
         "name": "NavigatorAutomationInformation",
         "inheritance": null,
@@ -37,8 +38,10 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "name": "Navigator",
-          "type": "interface",
+          "fragment": "Navigator includes NavigatorAutomationInformation;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
           "includes": "NavigatorAutomationInformation"
         }
       ]

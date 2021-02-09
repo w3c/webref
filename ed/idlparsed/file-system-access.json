@@ -23,6 +23,7 @@
     },
     "idlNames": {
       "FileSystemPermissionMode": {
+        "fragment": "enum FileSystemPermissionMode {\n  \"read\",\n  \"readwrite\"\n};",
         "type": "enum",
         "name": "FileSystemPermissionMode",
         "values": [
@@ -38,6 +39,7 @@
         "extAttrs": []
       },
       "FileSystemPermissionDescriptor": {
+        "fragment": "dictionary FileSystemPermissionDescriptor : PermissionDescriptor {\n  required FileSystemHandle handle;\n  FileSystemPermissionMode mode = \"read\";\n};",
         "type": "dictionary",
         "name": "FileSystemPermissionDescriptor",
         "inheritance": "PermissionDescriptor",
@@ -80,6 +82,7 @@
         "partial": false
       },
       "FileSystemHandlePermissionDescriptor": {
+        "fragment": "dictionary FileSystemHandlePermissionDescriptor {\n  FileSystemPermissionMode mode = \"read\";\n};",
         "type": "dictionary",
         "name": "FileSystemHandlePermissionDescriptor",
         "inheritance": null,
@@ -107,6 +110,7 @@
         "partial": false
       },
       "FileSystemHandleKind": {
+        "fragment": "enum FileSystemHandleKind {\n  \"file\",\n  \"directory\",\n};",
         "type": "enum",
         "name": "FileSystemHandleKind",
         "values": [
@@ -122,6 +126,7 @@
         "extAttrs": []
       },
       "FileSystemHandle": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemHandle {\n  readonly attribute FileSystemHandleKind kind;\n  readonly attribute USVString name;\n\n  Promise<boolean> isSameEntry(FileSystemHandle other);\n\n  Promise<PermissionState> queryPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});\n  Promise<PermissionState> requestPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "FileSystemHandle",
         "inheritance": null,
@@ -317,6 +322,7 @@
         "partial": false
       },
       "FileSystemCreateWritableOptions": {
+        "fragment": "dictionary FileSystemCreateWritableOptions {\n  boolean keepExistingData = false;\n};",
         "type": "dictionary",
         "name": "FileSystemCreateWritableOptions",
         "inheritance": null,
@@ -344,6 +350,7 @@
         "partial": false
       },
       "FileSystemFileHandle": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemFileHandle : FileSystemHandle {\n  Promise<File> getFile();\n  Promise<FileSystemWritableFileStream> createWritable(optional FileSystemCreateWritableOptions options = {});\n};",
         "type": "interface",
         "name": "FileSystemFileHandle",
         "inheritance": "FileSystemHandle",
@@ -449,6 +456,7 @@
         "partial": false
       },
       "FileSystemGetFileOptions": {
+        "fragment": "dictionary FileSystemGetFileOptions {\n  boolean create = false;\n};",
         "type": "dictionary",
         "name": "FileSystemGetFileOptions",
         "inheritance": null,
@@ -476,6 +484,7 @@
         "partial": false
       },
       "FileSystemGetDirectoryOptions": {
+        "fragment": "dictionary FileSystemGetDirectoryOptions {\n  boolean create = false;\n};",
         "type": "dictionary",
         "name": "FileSystemGetDirectoryOptions",
         "inheritance": null,
@@ -503,6 +512,7 @@
         "partial": false
       },
       "FileSystemRemoveOptions": {
+        "fragment": "dictionary FileSystemRemoveOptions {\n  boolean recursive = false;\n};",
         "type": "dictionary",
         "name": "FileSystemRemoveOptions",
         "inheritance": null,
@@ -530,6 +540,7 @@
         "partial": false
       },
       "FileSystemDirectoryHandle": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemDirectoryHandle : FileSystemHandle {\n  async iterable<USVString, FileSystemHandle>;\n\n  Promise<FileSystemFileHandle> getFileHandle(USVString name, optional FileSystemGetFileOptions options = {});\n  Promise<FileSystemDirectoryHandle> getDirectoryHandle(USVString name, optional FileSystemGetDirectoryOptions options = {});\n\n  Promise<undefined> removeEntry(USVString name, optional FileSystemRemoveOptions options = {});\n\n  Promise<sequence<USVString>?> resolve(FileSystemHandle possibleDescendant);\n};",
         "type": "interface",
         "name": "FileSystemDirectoryHandle",
         "inheritance": "FileSystemHandle",
@@ -820,6 +831,7 @@
         "partial": false
       },
       "WriteCommandType": {
+        "fragment": "enum WriteCommandType {\n  \"write\",\n  \"seek\",\n  \"truncate\",\n};",
         "type": "enum",
         "name": "WriteCommandType",
         "values": [
@@ -839,6 +851,7 @@
         "extAttrs": []
       },
       "WriteParams": {
+        "fragment": "dictionary WriteParams {\n  required WriteCommandType type;\n  unsigned long long? size;\n  unsigned long long? position;\n  (BufferSource or Blob or USVString)? data;\n};",
         "type": "dictionary",
         "name": "WriteParams",
         "inheritance": null,
@@ -933,6 +946,7 @@
         "partial": false
       },
       "FileSystemWriteChunkType": {
+        "fragment": "typedef (BufferSource or Blob or USVString or WriteParams) FileSystemWriteChunkType;",
         "type": "typedef",
         "name": "FileSystemWriteChunkType",
         "idlType": {
@@ -979,6 +993,7 @@
         "extAttrs": []
       },
       "FileSystemWritableFileStream": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface FileSystemWritableFileStream : WritableStream {\n  Promise<undefined> write(FileSystemWriteChunkType data);\n  Promise<undefined> seek(unsigned long long position);\n  Promise<undefined> truncate(unsigned long long size);\n};",
         "type": "interface",
         "name": "FileSystemWritableFileStream",
         "inheritance": "WritableStream",
@@ -1134,6 +1149,7 @@
         "partial": false
       },
       "FilePickerAcceptType": {
+        "fragment": "dictionary FilePickerAcceptType {\n    USVString description;\n    record<USVString, (USVString or sequence<USVString>)> accept;\n};",
         "type": "dictionary",
         "name": "FilePickerAcceptType",
         "inheritance": null,
@@ -1216,6 +1232,7 @@
         "partial": false
       },
       "FilePickerOptions": {
+        "fragment": "dictionary FilePickerOptions {\n    sequence<FilePickerAcceptType> types;\n    boolean excludeAcceptAllOption = false;\n};",
         "type": "dictionary",
         "name": "FilePickerOptions",
         "inheritance": null,
@@ -1267,6 +1284,7 @@
         "partial": false
       },
       "OpenFilePickerOptions": {
+        "fragment": "dictionary OpenFilePickerOptions : FilePickerOptions {\n    boolean multiple = false;\n};",
         "type": "dictionary",
         "name": "OpenFilePickerOptions",
         "inheritance": "FilePickerOptions",
@@ -1294,6 +1312,7 @@
         "partial": false
       },
       "SaveFilePickerOptions": {
+        "fragment": "dictionary SaveFilePickerOptions : FilePickerOptions {\n};",
         "type": "dictionary",
         "name": "SaveFilePickerOptions",
         "inheritance": "FilePickerOptions",
@@ -1302,6 +1321,7 @@
         "partial": false
       },
       "DirectoryPickerOptions": {
+        "fragment": "dictionary DirectoryPickerOptions {\n};",
         "type": "dictionary",
         "name": "DirectoryPickerOptions",
         "inheritance": null,
@@ -1313,6 +1333,7 @@
     "idlExtendedNames": {
       "Window": [
         {
+          "fragment": "[SecureContext]\npartial interface Window {\n    Promise<sequence<FileSystemFileHandle>> showOpenFilePicker(optional OpenFilePickerOptions options = {});\n    Promise<FileSystemFileHandle> showSaveFilePicker(optional SaveFilePickerOptions options = {});\n    Promise<FileSystemDirectoryHandle> showDirectoryPicker(optional DirectoryPickerOptions options = {});\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -1469,6 +1490,7 @@
       ],
       "DataTransferItem": [
         {
+          "fragment": "partial interface DataTransferItem {\n    Promise<FileSystemHandle?> getAsFileSystemHandle();\n};",
           "type": "interface",
           "name": "DataTransferItem",
           "inheritance": null,
@@ -1504,6 +1526,7 @@
       ],
       "StorageManager": [
         {
+          "fragment": "[SecureContext]\npartial interface StorageManager {\n  Promise<FileSystemDirectoryHandle> getDirectory();\n};",
           "type": "interface",
           "name": "StorageManager",
           "inheritance": null,

@@ -1,0 +1,14 @@
+{
+  "name": "MediaDeviceInfo",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams",
+      "url": "https://www.w3.org/TR/mediacapture-streams/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface MediaDeviceInfo {\n  readonly attribute DOMString deviceId;\n  readonly attribute MediaDeviceKind kind;\n  readonly attribute DOMString label;\n  readonly attribute DOMString groupId;\n  [Default] object toJSON();\n};",
+    "href": "https://w3c.github.io/mediacapture-main/#dom-mediadeviceinfo"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}
