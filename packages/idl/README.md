@@ -4,7 +4,7 @@ This package contains Web IDL scraped from the latest versions of web platform s
 
 # API
 
-The async `listAll()` method resolves with an object where they keys are spec shortnames, and the values are objects with async `text()` and `parse()` methods to get the raw text and the result of parsing that with `WebIDL2.parse`, respectively. Example:
+The async `listAll()` method resolves with an object where the keys are spec shortnames, and the values are objects with async `text()` and `parse()` methods to get the raw text and the result of parsing that with `WebIDL2.parse`, respectively. Example:
 
 ```js
 const idl = require('@webref/idl');
