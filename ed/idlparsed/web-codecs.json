@@ -13,8 +13,7 @@
           "VideoEncoder",
           "EncodedVideoChunk",
           "AudioFrame",
-          "VideoFrame",
-          "VideoTrackReader"
+          "VideoFrame"
         ],
         "Worker": [
           "AudioDecoder",
@@ -2755,145 +2754,6 @@
           }
         ],
         "extAttrs": []
-      },
-      "VideoTrackReader": {
-        "fragment": "[Exposed=Window]\ninterface VideoTrackReader {\n  constructor(MediaStreamTrack track);\n\n  readonly attribute VideoTrackReaderState readyState;\n  attribute EventHandler onended;\n\n  undefined start(VideoFrameOutputCallback callback);\n  undefined stop();\n};",
-        "type": "interface",
-        "name": "VideoTrackReader",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "track",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "MediaStreamTrack"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "attribute",
-            "name": "readyState",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "VideoTrackReaderState"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "onended",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "operation",
-            "name": "start",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "callback",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "VideoFrameOutputCallback"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "stop",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "VideoTrackReaderState": {
-        "fragment": "enum VideoTrackReaderState {\n  \"started\",\n  \"stopped\",\n  \"ended\"\n};",
-        "type": "enum",
-        "name": "VideoTrackReaderState",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "started"
-          },
-          {
-            "type": "enum-value",
-            "value": "stopped"
-          },
-          {
-            "type": "enum-value",
-            "value": "ended"
-          }
-        ],
-        "extAttrs": []
       }
     },
     "idlExtendedNames": {},
@@ -2906,8 +2766,7 @@
         "VideoEncoder",
         "EncodedVideoChunk",
         "AudioFrame",
-        "VideoFrame",
-        "VideoTrackReader"
+        "VideoFrame"
       ],
       "Worker": [
         "AudioDecoder",
@@ -2998,20 +2857,12 @@
       ],
       "VideoFrameInit": [],
       "Plane": [],
-      "PlaneInit": [],
-      "VideoTrackReader": [
-        "MediaStreamTrack",
-        "VideoTrackReaderState",
-        "EventHandler",
-        "VideoFrameOutputCallback"
-      ]
+      "PlaneInit": []
     },
     "externalDependencies": [
       "AudioBuffer",
       "ImageBitmap",
-      "ImageBitmapOptions",
-      "MediaStreamTrack",
-      "EventHandler"
+      "ImageBitmapOptions"
     ],
     "hasObsoleteIdl": false
   }
