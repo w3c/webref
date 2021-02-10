@@ -241,20 +241,3 @@ dictionary PlaneInit {
 enum PixelFormat {
   "I420"
 };
-
-[Exposed=Window]
-interface VideoTrackReader {
-  constructor(MediaStreamTrack track);
-
-  readonly attribute VideoTrackReaderState readyState;
-  attribute EventHandler onended;
-
-  undefined start(VideoFrameOutputCallback callback);
-  undefined stop();
-};
-
-enum VideoTrackReaderState {
-  "started",
-  "stopped",
-  "ended"
-};
