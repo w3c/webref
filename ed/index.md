@@ -4634,7 +4634,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-ruby-1/](https://www.w3.org/TR/css-ruby-1/)
 - Crawled URL: [https://drafts.csswg.org/css-ruby-1/](https://drafts.csswg.org/css-ruby-1/)
-- Crawled version: 8 February 2021
+- Crawled version: 9 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-ruby-1/](https://drafts.csswg.org/css-ruby-1/)
 - Latest published version: [https://www.w3.org/TR/css-ruby-1/](https://www.w3.org/TR/css-ruby-1/)
 - Shortname: css-ruby-1
@@ -9314,6 +9314,29 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## JSON modules {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-json-modules/](https://tc39.es/proposal-json-modules/)
+- Crawled URL: [https://tc39.es/proposal-json-modules/](https://tc39.es/proposal-json-modules/)
+- Crawled version: 6 February 2021
+- Editor's Draft: [https://tc39.es/proposal-json-modules/](https://tc39.es/proposal-json-modules/)
+- Shortname: tc39-json-modules
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#synthetic-module-records`](https://heycam.github.io/webidl/#synthetic-module-records)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Keyboard Lock {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -11356,6 +11379,27 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Private Fields in `in` {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-private-fields-in-in/](https://tc39.es/proposal-private-fields-in-in/)
+- Crawled URL: [https://tc39.es/proposal-private-fields-in-in/](https://tc39.es/proposal-private-fields-in-in/)
+- Crawled version: 28 January 2021
+- Editor's Draft: [https://tc39.es/proposal-private-fields-in-in/](https://tc39.es/proposal-private-fields-in-in/)
+- Shortname: tc39-private-fields-in-in
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -16367,7 +16411,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
 - Crawled URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
-- Crawled version: 15 January 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
 - Shortname: anchors
 
@@ -16406,7 +16450,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr-ar-module-1/](https://www.w3.org/TR/webxr-ar-module-1/)
 - Crawled URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
-- Crawled version: 15 January 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
 - Latest published version: [https://www.w3.org/TR/webxr-ar-module-1/](https://www.w3.org/TR/webxr-ar-module-1/)
 - Shortname: webxr-ar-module-1
@@ -16445,7 +16489,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Crawled URL: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Crawled version: 8 February 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
 - Latest published version: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
 - Shortname: webxr
@@ -16493,7 +16537,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
 - Crawled URL: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
-- Crawled version: 15 January 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
 - Shortname: dom-overlays
 
@@ -16528,7 +16572,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr-gamepads-module-1/](https://www.w3.org/TR/webxr-gamepads-module-1/)
 - Crawled URL: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
-- Crawled version: 15 January 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
 - Latest published version: [https://www.w3.org/TR/webxr-gamepads-module-1/](https://www.w3.org/TR/webxr-gamepads-module-1/)
 - Shortname: webxr-gamepads-module-1
@@ -16562,7 +16606,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr-hand-input-1/](https://www.w3.org/TR/webxr-hand-input-1/)
 - Crawled URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
-- Crawled version: 4 February 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
 - Latest published version: [https://www.w3.org/TR/webxr-hand-input-1/](https://www.w3.org/TR/webxr-hand-input-1/)
 - Shortname: webxr-hand-input-1
@@ -16595,7 +16639,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
 - Crawled URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
-- Crawled version: 15 January 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
 - Shortname: hit-test
 
@@ -16642,7 +16686,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
 - Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled version: 5 February 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Latest published version: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
 - Shortname: webxrlayers-1
