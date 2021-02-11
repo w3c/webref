@@ -59,6 +59,62 @@
       "definedIn": "dt"
     },
     {
+      "id": "avc",
+      "href": "https://wicg.github.io/web-codecs/#avc",
+      "linkingText": [
+        "AVC"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "picture-parameter-set-pps",
+      "href": "https://wicg.github.io/web-codecs/#picture-parameter-set-pps",
+      "linkingText": [
+        "Picture Parameter Set (PPS)",
+        "PPS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "sequence-parameter-set-sps",
+      "href": "https://wicg.github.io/web-codecs/#sequence-parameter-set-sps",
+      "linkingText": [
+        "Sequence Parameter Set (SPS)",
+        "SPS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "control-thread",
       "href": "https://wicg.github.io/web-codecs/#control-thread",
       "linkingText": [
@@ -1770,6 +1826,26 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-encodedvideochunkoutputcallback-output_config",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunkoutputcallback-output_config",
+      "linkingText": [
+        "output_config"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "EncodedVideoChunkOutputCallback"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-interface",
+        "title": "VideoEncoder Interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-videoencoder-codec-implementation-slot",
       "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-codec-implementation-slot",
       "linkingText": [
@@ -1814,6 +1890,46 @@
       "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-error-callback-slot",
       "linkingText": [
         "[[error callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoder-active-encoder-config-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-active-encoder-config-slot",
+      "linkingText": [
+        "[[active encoder config]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoder-active-output-config-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-active-output-config-slot",
+      "linkingText": [
+        "[[active output config]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2548,6 +2664,24 @@
       "definedIn": "pre"
     },
     {
+      "id": "valid-videoencoderconfig",
+      "href": "https://wicg.github.io/web-codecs/#valid-videoencoderconfig",
+      "linkingText": [
+        "valid VideoEncoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-videoencoderconfig-codec",
       "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-codec",
       "linkingText": [
@@ -2565,7 +2699,7 @@
         "title": "VideoEncoderConfig",
         "number": "7.5"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-videoencoderconfig-bitrate",
@@ -2585,13 +2719,211 @@
         "title": "VideoEncoderConfig",
         "number": "7.5"
       },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-cropwidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-cropwidth",
+      "linkingText": [
+        "cropWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-cropheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-cropheight",
+      "linkingText": [
+        "cropHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-displaywidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-displaywidth",
+      "linkingText": [
+        "displayWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-displayheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-displayheight",
+      "linkingText": [
+        "displayHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-avc",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-avc",
+      "linkingText": [
+        "avc"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-avcencoderconfig",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-avcencoderconfig",
+      "linkingText": [
+        "AvcEncoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "avc-encoder-config",
+        "title": "AvcEncoderConfig",
+        "number": "7.5.1"
+      },
       "definedIn": "pre"
     },
     {
-      "id": "valid-videoencoderconfig",
-      "href": "https://wicg.github.io/web-codecs/#valid-videoencoderconfig",
+      "id": "dom-avcencoderconfig-format",
+      "href": "https://wicg.github.io/web-codecs/#dom-avcencoderconfig-format",
       "linkingText": [
-        "valid VideoEncoderConfig"
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AvcEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "avc-encoder-config",
+        "title": "AvcEncoderConfig",
+        "number": "7.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-avcbitstreamformat",
+      "href": "https://wicg.github.io/web-codecs/#enumdef-avcbitstreamformat",
+      "linkingText": [
+        "AvcBitstreamFormat"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "avc-bitstream-format",
+        "title": "AvcBitstreamFormat",
+        "number": "7.5.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-avcbitstreamformat-annexb",
+      "href": "https://wicg.github.io/web-codecs/#dom-avcbitstreamformat-annexb",
+      "linkingText": [
+        "\"annexb\"",
+        "annexb"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AvcBitstreamFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "avc-bitstream-format",
+        "title": "AvcBitstreamFormat",
+        "number": "7.5.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-avcbitstreamformat-avc",
+      "href": "https://wicg.github.io/web-codecs/#dom-avcbitstreamformat-avc",
+      "linkingText": [
+        "\"avc\"",
+        "avc"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AvcBitstreamFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "avc-bitstream-format",
+        "title": "AvcBitstreamFormat",
+        "number": "7.5.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "equal-dictionaries",
+      "href": "https://wicg.github.io/web-codecs/#equal-dictionaries",
+      "linkingText": [
+        "equal dictionaries"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2599,51 +2931,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "video-encoder-config",
-        "title": "VideoEncoderConfig",
-        "number": "7.5"
+        "id": "config-equivalence",
+        "title": "Configuration Equivalence",
+        "number": "7.6"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dom-videoencoderconfig-width",
-      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-width",
-      "linkingText": [
-        "width"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoEncoderConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "video-encoder-config",
-        "title": "VideoEncoderConfig",
-        "number": "7.5"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videoencoderconfig-height",
-      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-height",
-      "linkingText": [
-        "height"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoEncoderConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "video-encoder-config",
-        "title": "VideoEncoderConfig",
-        "number": "7.5"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "dictdef-videoencoderencodeoptions",
@@ -2659,7 +2951,7 @@
       "heading": {
         "id": "video-encoder-options",
         "title": "VideoEncoderEncodeOptions",
-        "number": "7.6"
+        "number": "7.7"
       },
       "definedIn": "pre"
     },
@@ -2679,7 +2971,7 @@
       "heading": {
         "id": "video-encoder-options",
         "title": "VideoEncoderEncodeOptions",
-        "number": "7.6"
+        "number": "7.7"
       },
       "definedIn": "dt"
     },
@@ -2697,7 +2989,7 @@
       "heading": {
         "id": "codec-state",
         "title": "CodecState",
-        "number": "7.7"
+        "number": "7.8"
       },
       "definedIn": "pre"
     },
@@ -2718,7 +3010,7 @@
       "heading": {
         "id": "codec-state",
         "title": "CodecState",
-        "number": "7.7"
+        "number": "7.8"
       },
       "definedIn": "dt"
     },
@@ -2739,7 +3031,7 @@
       "heading": {
         "id": "codec-state",
         "title": "CodecState",
-        "number": "7.7"
+        "number": "7.8"
       },
       "definedIn": "dt"
     },
@@ -2760,7 +3052,7 @@
       "heading": {
         "id": "codec-state",
         "title": "CodecState",
-        "number": "7.7"
+        "number": "7.8"
       },
       "definedIn": "dt"
     },
@@ -2778,7 +3070,7 @@
       "heading": {
         "id": "error-callback",
         "title": "WebCodecsErrorCallback",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "pre"
     },
@@ -2798,7 +3090,7 @@
       "heading": {
         "id": "error-callback",
         "title": "WebCodecsErrorCallback",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "pre"
     },
