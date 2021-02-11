@@ -1091,7 +1091,7 @@
         "partial": false
       },
       "EncodedVideoChunkOutputCallback": {
-        "fragment": "callback EncodedVideoChunkOutputCallback = undefined(EncodedVideoChunk output);",
+        "fragment": "callback EncodedVideoChunkOutputCallback = undefined(EncodedVideoChunk output, VideoDecoderConfig? output_config);",
         "type": "callback",
         "name": "EncodedVideoChunkOutputCallback",
         "idlType": {
@@ -1114,6 +1114,22 @@
               "nullable": false,
               "union": false,
               "idlType": "EncodedVideoChunk"
+            },
+            "default": null,
+            "optional": false,
+            "variadic": false
+          },
+          {
+            "type": "argument",
+            "name": "output_config",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "VideoDecoderConfig"
             },
             "default": null,
             "optional": false,
@@ -1408,7 +1424,7 @@
         "partial": false
       },
       "VideoEncoderConfig": {
-        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long width;\n  required unsigned long height;\n};",
+        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long cropWidth;\n  required unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n\n  AvcEncoderConfig avc;\n};",
         "type": "dictionary",
         "name": "VideoEncoderConfig",
         "inheritance": null,
@@ -1445,7 +1461,7 @@
           },
           {
             "type": "field",
-            "name": "width",
+            "name": "cropWidth",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1460,7 +1476,7 @@
           },
           {
             "type": "field",
-            "name": "height",
+            "name": "cropHeight",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1472,10 +1488,99 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "displayWidth",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "displayHeight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "avc",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AvcEncoderConfig"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "AvcEncoderConfig": {
+        "fragment": "dictionary AvcEncoderConfig {\n  AvcBitstreamFormat format = \"avc\";\n};",
+        "type": "dictionary",
+        "name": "AvcEncoderConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "format",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AvcBitstreamFormat"
+            },
+            "default": {
+              "type": "string",
+              "value": "avc"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AvcBitstreamFormat": {
+        "fragment": "enum AvcBitstreamFormat {\n  \"annexb\",\n  \"avc\",\n};",
+        "type": "enum",
+        "name": "AvcBitstreamFormat",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "annexb"
+          },
+          {
+            "type": "enum-value",
+            "value": "avc"
+          }
+        ],
+        "extAttrs": []
       },
       "VideoEncoderEncodeOptions": {
         "fragment": "dictionary VideoEncoderEncodeOptions {\n  boolean keyFrame = false;\n};",
@@ -2823,7 +2928,12 @@
       "AudioDecoderConfig": [],
       "VideoDecoderConfig": [],
       "AudioEncoderConfig": [],
-      "VideoEncoderConfig": [],
+      "VideoEncoderConfig": [
+        "AvcEncoderConfig"
+      ],
+      "AvcEncoderConfig": [
+        "AvcBitstreamFormat"
+      ],
       "VideoEncoderEncodeOptions": [],
       "EncodedAudioChunk": [
         "EncodedAudioChunkInit",
