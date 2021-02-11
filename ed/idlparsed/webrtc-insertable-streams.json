@@ -500,7 +500,7 @@
         "partial": false
       },
       "SFrameTransform": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options);\n    // FIXME: add key handling methods.\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options);\n\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);\n};",
         "type": "interface",
         "name": "SFrameTransform",
         "inheritance": null,
@@ -526,6 +526,63 @@
               }
             ],
             "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "setEncryptionKey",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "keyID",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long long"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -776,6 +833,7 @@
       ],
       "SFrameTransform": [
         "SFrameTransformOptions",
+        "CryptoKey",
         "GenericTransformStream"
       ],
       "RTCRtpScriptTransform": [
@@ -788,6 +846,7 @@
       "RTCConfiguration",
       "RTCRtpSender",
       "RTCRtpReceiver",
+      "CryptoKey",
       "Worker"
     ],
     "hasObsoleteIdl": false
