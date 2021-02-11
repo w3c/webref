@@ -9676,6 +9676,15 @@
   <li><code>newValue</code> with type <code>dict-member</code> for <a href="https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit"><code>StorageEventInit</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-newvalue"><code>newValue</code></a> with type <code>attribute</code> for <code>StorageEvent</code></li>
   <li><code>url</code> with type <code>dict-member</code> for <a href="https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit"><code>StorageEventInit</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/infrastructure.html#basic-url-parser-url"><code>url</code></a> with type <code>dfn</code></li>
   <li><code>storageArea</code> with type <code>dict-member</code> for <a href="https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit"><code>StorageEventInit</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-storagearea"><code>storageArea</code></a> with type <code>attribute</code> for <code>StorageEvent</code></li>
+  <li><code>write(...text)</code> with type <code>method</code></li>
+  <li><code>writeln(...text)</code> with type <code>method</code></li>
+  <li><code>designMode</code> with type <code>attribute</code>, but found <a href="https://html.spec.whatwg.org/multipage/interaction.html#designMode"><code>designMode</code></a> with type <code>dfn</code></li>
+  <li><code>execCommand(commandId, showUI, value)</code> with type <code>method</code>, but found <a href="https://html.spec.whatwg.org/multipage/interaction.html#execCommand"><code>execCommand()</code></a> with type <code>dfn</code></li>
+  <li><code>queryCommandEnabled(commandId)</code> with type <code>method</code>, but found <a href="https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandenabled"><code>queryCommandEnabled()</code></a> with type <code>dfn</code></li>
+  <li><code>queryCommandIndeterm(commandId)</code> with type <code>method</code>, but found <a href="https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandindeterm"><code>queryCommandIndeterm()</code></a> with type <code>dfn</code></li>
+  <li><code>queryCommandState(commandId)</code> with type <code>method</code>, but found <a href="https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandstate"><code>queryCommandState()</code></a> with type <code>dfn</code></li>
+  <li><code>queryCommandSupported(commandId)</code> with type <code>method</code>, but found <a href="https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandsupported"><code>queryCommandSupported()</code></a> with type <code>dfn</code></li>
+  <li><code>queryCommandValue(commandId)</code> with type <code>method</code>, but found <a href="https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandvalue"><code>queryCommandValue()</code></a> with type <code>dfn</code></li>
   </ul></li>
   <li>Possibly no definition for IDL properties:
   <ul>
@@ -9736,6 +9745,7 @@
   <li><code>namedItem(name)</code> with type <code>method</code> for <a href="https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray"><code>MimeTypeArray</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-nameditem"><code>namedItem()</code></a> with type <code>method</code> for <code>MimeTypeArray</code></li>
   <li><code>item(index)</code> with type <code>method</code> for <a href="https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin"><code>Plugin</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-item"><code>item()</code></a> with type <code>method</code> for <code>Plugin</code></li>
   <li><code>namedItem(name)</code> with type <code>method</code> for <a href="https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin"><code>Plugin</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-nameditem"><code>namedItem()</code></a> with type <code>method</code> for <code>Plugin</code></li>
+  <li><code>getElementsByName(elementName)</code> with type <code>method</code>, but found <a href="https://html.spec.whatwg.org/multipage/dom.html#dom-document-getelementsbyname"><code>getElementsByName(name)</code></a> with type <code>method</code> for <code>Document</code></li>
   </ul></li>
   <li>Missing references for links:
   <ul>
@@ -14684,7 +14694,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/screen-wake-lock/" class="uri">https://www.w3.org/TR/screen-wake-lock/</a></li>
   <li>Crawled URL: <a href="https://w3c.github.io/screen-wake-lock/" class="uri">https://w3c.github.io/screen-wake-lock/</a></li>
-  <li>Crawled version: 10 February 2021</li>
+  <li>Crawled version: 11 February 2021</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/screen-wake-lock/" class="uri">https://w3c.github.io/screen-wake-lock/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/screen-wake-lock/" class="uri">https://www.w3.org/TR/screen-wake-lock/</a></li>
   <li>Shortname: screen-wake-lock</li>
@@ -14869,7 +14879,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/selectors-4/" class="uri">https://www.w3.org/TR/selectors-4/</a></li>
   <li>Crawled URL: <a href="https://drafts.csswg.org/selectors/" class="uri">https://drafts.csswg.org/selectors/</a></li>
-  <li>Crawled version: 8 February 2021</li>
+  <li>Crawled version: 11 February 2021</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/selectors/" class="uri">https://drafts.csswg.org/selectors/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/selectors-4/" class="uri">https://www.w3.org/TR/selectors-4/</a></li>
   <li>Shortname: selectors-4</li>
@@ -19444,6 +19454,7 @@
   <li>Possibly no definition for IDL properties:
   <ul>
   <li><code>setStreams(...streams)</code> with type <code>method</code> for <a href="https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender"><code>RTCRtpSender</code></a>, but found <a href="https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-setstreams"><code>setStreams()</code></a> with type <code>method</code> for <code>RTCRtpSender</code></li>
+  <li><code>addTrack(track, ...streams)</code> with type <code>method</code> for <a href="https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection"><code>RTCPeerConnection</code></a>, but found <a href="https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addtrack"><code>addTrack()</code></a> with type <code>method</code> for <code>RTCPeerConnection</code></li>
   </ul></li>
   <li>Missing references for links:
   <ul>

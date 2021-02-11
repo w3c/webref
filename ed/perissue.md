@@ -391,6 +391,15 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `newValue` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`newValue`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-newvalue) with type `attribute` for `StorageEvent`
     * `url` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`url`](https://html.spec.whatwg.org/multipage/infrastructure.html#basic-url-parser-url) with type `dfn`
     * `storageArea` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`storageArea`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-storagearea) with type `attribute` for `StorageEvent`
+    * `write(...text)` with type `method`
+    * `writeln(...text)` with type `method`
+    * `designMode` with type `attribute`, but found [`designMode`](https://html.spec.whatwg.org/multipage/interaction.html#designMode) with type `dfn`
+    * `execCommand(commandId, showUI, value)` with type `method`, but found [`execCommand()`](https://html.spec.whatwg.org/multipage/interaction.html#execCommand) with type `dfn`
+    * `queryCommandEnabled(commandId)` with type `method`, but found [`queryCommandEnabled()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandenabled) with type `dfn`
+    * `queryCommandIndeterm(commandId)` with type `method`, but found [`queryCommandIndeterm()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandindeterm) with type `dfn`
+    * `queryCommandState(commandId)` with type `method`, but found [`queryCommandState()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandstate) with type `dfn`
+    * `queryCommandSupported(commandId)` with type `method`, but found [`queryCommandSupported()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandsupported) with type `dfn`
+    * `queryCommandValue(commandId)` with type `method`, but found [`queryCommandValue()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandvalue) with type `dfn`
 - [Selection API](https://w3c.github.io/selection-api/):
     * `stringification behavior` with type `dfn` for [`Selection`](https://w3c.github.io/selection-api/#dom-selection)
 - [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/):
@@ -683,7 +692,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `multiDrawArraysInstancedBaseInstanceWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
     * `multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
 
-=> 383 properties without definition found in 44 specifications
+=> 392 properties without definition found in 44 specifications
 
 
 ## Possibly no definition for CSS properties
@@ -752,10 +761,12 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `namedItem(name)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-nameditem) with type `method` for `MimeTypeArray`
     * `item(index)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-item) with type `method` for `Plugin`
     * `namedItem(name)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-nameditem) with type `method` for `Plugin`
+    * `getElementsByName(elementName)` with type `method`, but found [`getElementsByName(name)`](https://html.spec.whatwg.org/multipage/dom.html#dom-document-getelementsbyname) with type `method` for `Document`
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/):
     * `setStreams(...streams)` with type `method` for [`RTCRtpSender`](https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender), but found [`setStreams()`](https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-setstreams) with type `method` for `RTCRtpSender`
+    * `addTrack(track, ...streams)` with type `method` for [`RTCPeerConnection`](https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection), but found [`addTrack()`](https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addtrack) with type `method` for `RTCPeerConnection`
 
-=> 58 properties without definition found in 2 specifications
+=> 60 properties without definition found in 2 specifications
 
 
 ## Missing references based on document links
