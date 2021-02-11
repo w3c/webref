@@ -8003,6 +8003,15 @@ No informative reference to this spec from other specs.
      * `newValue` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`newValue`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-newvalue) with type `attribute` for `StorageEvent`
      * `url` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`url`](https://html.spec.whatwg.org/multipage/infrastructure.html#basic-url-parser-url) with type `dfn`
      * `storageArea` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`storageArea`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-storagearea) with type `attribute` for `StorageEvent`
+     * `write(...text)` with type `method`
+     * `writeln(...text)` with type `method`
+     * `designMode` with type `attribute`, but found [`designMode`](https://html.spec.whatwg.org/multipage/interaction.html#designMode) with type `dfn`
+     * `execCommand(commandId, showUI, value)` with type `method`, but found [`execCommand()`](https://html.spec.whatwg.org/multipage/interaction.html#execCommand) with type `dfn`
+     * `queryCommandEnabled(commandId)` with type `method`, but found [`queryCommandEnabled()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandenabled) with type `dfn`
+     * `queryCommandIndeterm(commandId)` with type `method`, but found [`queryCommandIndeterm()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandindeterm) with type `dfn`
+     * `queryCommandState(commandId)` with type `method`, but found [`queryCommandState()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandstate) with type `dfn`
+     * `queryCommandSupported(commandId)` with type `method`, but found [`queryCommandSupported()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandsupported) with type `dfn`
+     * `queryCommandValue(commandId)` with type `method`, but found [`queryCommandValue()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandvalue) with type `dfn`
 - Possibly no definition for IDL properties: 
      * `setCustomValidity(error)` with type `method` for [`HTMLObjectElement`](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmlobjectelement), but found [`setCustomValidity(message)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity) with type `method` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
      * `fastSeek(time)` with type `method` for [`HTMLMediaElement`](https://html.spec.whatwg.org/multipage/media.html#htmlmediaelement), but found [`fastSeek()`](https://html.spec.whatwg.org/multipage/media.html#dom-media-fastseek) with type `method` for `HTMLMediaElement`
@@ -8061,6 +8070,7 @@ No informative reference to this spec from other specs.
      * `namedItem(name)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-nameditem) with type `method` for `MimeTypeArray`
      * `item(index)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-item) with type `method` for `Plugin`
      * `namedItem(name)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-nameditem) with type `method` for `Plugin`
+     * `getElementsByName(elementName)` with type `method`, but found [`getElementsByName(name)`](https://html.spec.whatwg.org/multipage/dom.html#dom-document-getelementsbyname) with type `method` for `Document`
 - Missing references for links: 
      * [`https://spec.whatwg.org/`](https://spec.whatwg.org/)
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
@@ -12226,7 +12236,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
 - Crawled URL: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
-- Crawled version: 10 February 2021
+- Crawled version: 11 February 2021
 - Editor's Draft: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
 - Latest published version: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
 - Shortname: screen-wake-lock
@@ -12378,7 +12388,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Crawled URL: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
-- Crawled version: 8 February 2021
+- Crawled version: 11 February 2021
 - Editor's Draft: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
 - Latest published version: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Shortname: selectors-4
@@ -16214,6 +16224,7 @@ No informative reference to this spec from other specs.
 
 - Possibly no definition for IDL properties: 
      * `setStreams(...streams)` with type `method` for [`RTCRtpSender`](https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender), but found [`setStreams()`](https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-setstreams) with type `method` for `RTCRtpSender`
+     * `addTrack(track, ...streams)` with type `method` for [`RTCPeerConnection`](https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection), but found [`addTrack()`](https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addtrack) with type `method` for `RTCPeerConnection`
 - Missing references for links: 
      * [`https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html`](https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html)
 - Inconsistent references for links: 
