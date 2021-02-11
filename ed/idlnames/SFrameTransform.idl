@@ -2,7 +2,8 @@
 [Exposed=(Window,DedicatedWorker)]
 interface SFrameTransform {
     constructor(optional SFrameTransformOptions options);
-    // FIXME: add key handling methods.
+
+    Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);
 };
 
 // Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)

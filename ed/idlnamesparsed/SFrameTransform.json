@@ -5,7 +5,7 @@
       "title": "WebRTC Insertable Media using Streams",
       "url": "https://w3c.github.io/webrtc-insertable-streams/"
     },
-    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options);\n    // FIXME: add key handling methods.\n};",
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options);\n\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);\n};",
     "href": "https://w3c.github.io/webrtc-insertable-streams/#sframetransform"
   },
   "extended": [
