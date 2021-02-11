@@ -9,5 +9,7 @@ cp ed/idl/*.idl packages/idl/
 for p in ed/idlpatches/*.patch; do
     # The patches are against ed/idl/ and can be applied there using `git am`,
     # but apply them in packages/idl/ instead plain `patch`.
-    patch -d packages/idl/ -p3 <  "$p"
+    # (The --binary option disables the heuristic for transforming CRLF line
+    # endings into LF line endings on Windows machines)
+    patch --binary -d packages/idl/ -p3 <  "$p"
 done
