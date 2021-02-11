@@ -11,5 +11,5 @@ for p in ed/idlpatches/*.patch; do
     # but apply them in packages/idl/ instead plain `patch`.
     # (The --binary option disables the heuristic for transforming CRLF line
     # endings into LF line endings on Windows machines)
-    patch --binary -d packages/idl/ -p3 <  "$p"
+    patch --binary -d packages/idl/ -p3 < "$p"
 done
