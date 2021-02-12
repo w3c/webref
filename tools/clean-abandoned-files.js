@@ -23,25 +23,11 @@ function checkDir(path, index) {
 }
 
 function checkIdlNames(path, index) {
-  // Build the list of IDL names from idlparsed extracts
-  const idlFiles = new Set(index.results.map(spec => spec.idlparsed).filter(s => !!s));
-  let idlNames = new Set();
-  for (const idlFile of idlFiles) {
-    const idlparsed = require("../" + path + "/" + idlFile);
-    if (!idlparsed || !idlparsed.idlparsed) {
-      continue;
-    }
-    if (idlparsed.idlparsed.idlNames) {
-      for (const name of Object.keys(idlparsed.idlparsed.idlNames)) {
-        idlNames.add(name);
-      }
-    }
-    if (idlparsed.idlparsed.idlExtendedNames) {
-      for (const name of Object.keys(idlparsed.idlparsed.idlExtendedNames)) {
-        idlNames.add(name);
-      }
-    }
+  const indexFile = path + "/idlnames.json";
+  if (!fs.existsSync(indexFile)) {
+    return;
   }
+  const idlNames = require("../" + indexFile);
 
   // Parse subfolders that contain files named after IDL names
   for (const subdir of idlnamesSubdirs) {
@@ -51,7 +37,7 @@ function checkIdlNames(path, index) {
     const filenames = fs.readdirSync(path + "/" + subdir);
     for (const filename of filenames) {
       const name = filename.match(/(.+)\.[^\.]+$/)[1];
-      if (!idlNames.has(name)) {
+      if (!idlNames[name]) {
         fs.unlinkSync(path + "/" + subdir + "/" + filename);
       }
     }
