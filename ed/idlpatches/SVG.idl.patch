@@ -1,0 +1,62 @@
+From b613b767652effae7f44680cb08d895658460318 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Wed, 10 Feb 2021 13:13:29 +0100
+Subject: [PATCH] Remove duplicate SVG definitions
+
+---
+ ed/idl/SVG.idl | 32 --------------------------------
+ 1 file changed, 32 deletions(-)
+
+diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
+index f8d24c9c6..64ad64f8f 100644
+--- a/ed/idl/SVG.idl
++++ b/ed/idl/SVG.idl
+@@ -417,10 +417,6 @@ interface SVGAnimatedPreserveAspectRatio {
+   [SameObject] readonly attribute SVGPreserveAspectRatio animVal;
+ };
+ 
+-[Exposed=Window]
+-interface SVGPathElement : SVGGeometryElement {
+-};
+-
+ [Exposed=Window]
+ interface SVGRectElement : SVGGeometryElement {
+   [SameObject] readonly attribute SVGAnimatedLength x;
+@@ -566,34 +562,6 @@ interface SVGForeignObjectElement : SVGGraphicsElement {
+   [SameObject] readonly attribute SVGAnimatedLength height;
+ };
+ 
+-[Exposed=Window]
+-interface SVGMarkerElement : SVGElement {
+-
+-  // Marker Unit Types
+-  const unsigned short SVG_MARKERUNITS_UNKNOWN = 0;
+-  const unsigned short SVG_MARKERUNITS_USERSPACEONUSE = 1;
+-  const unsigned short SVG_MARKERUNITS_STROKEWIDTH = 2;
+-
+-  // Marker Orientation Types
+-  const unsigned short SVG_MARKER_ORIENT_UNKNOWN = 0;
+-  const unsigned short SVG_MARKER_ORIENT_AUTO = 1;
+-  const unsigned short SVG_MARKER_ORIENT_ANGLE = 2;
+-
+-  [SameObject] readonly attribute SVGAnimatedLength refX;
+-  [SameObject] readonly attribute SVGAnimatedLength refY;
+-  [SameObject] readonly attribute SVGAnimatedEnumeration markerUnits;
+-  [SameObject] readonly attribute SVGAnimatedLength markerWidth;
+-  [SameObject] readonly attribute SVGAnimatedLength markerHeight;
+-  [SameObject] readonly attribute SVGAnimatedEnumeration orientType;
+-  [SameObject] readonly attribute SVGAnimatedAngle orientAngle;
+-  attribute DOMString orient;
+-
+-  void setOrientToAuto();
+-  void setOrientToAngle(SVGAngle angle);
+-};
+-
+-SVGMarkerElement includes SVGFitToViewBox;
+-
+ [Exposed=Window]
+ interface SVGGradientElement : SVGElement {
+ 
+-- 
+2.30.0.365.g02bc693789-goog
+
