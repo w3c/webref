@@ -47,25 +47,26 @@
       "browsing-context",
       "shared-workers",
       "parent-browsing-context",
+      "settings-object",
+      "responsible-document",
+      "concept-document-bc",
+      "concept-realm-global",
+      "workerglobalscope",
+      "concept-WorkerGlobalScope-owner-set",
       "windowproxy",
       "active-document",
       "top-level-browsing-context",
       "child-browsing-context",
       "creating-a-new-browsing-context",
       "realm-execution-context",
-      "concept-realm-global",
       "dedicatedworkerglobalscope",
       "sharedworkerglobalscope",
-      "workerglobalscope",
       "workletglobalscope",
       "ascii-serialisation-of-an-origin",
       "environment-settings-object",
       "concept-environment-execution-ready-flag",
-      "responsible-document",
-      "concept-WorkerGlobalScope-owner-set",
       "set-up-a-window-environment-settings-object",
       "set-up-a-worker-environment-settings-object",
-      "concept-document-bc",
       "unloading-document-cleanup-steps",
       "concept-document-worklet-global-scopes",
       "concept-relevant-realm",
@@ -73,9 +74,12 @@
       "terminate-a-worker",
       "responsible-event-loop",
       "environment-settings-object's-realm",
+      "current-settings-object",
       "a-browsing-context-is-discarded",
       "session-history",
-      "bcg-remove"
+      "bcg-remove",
+      "report-the-error",
+      "concept-error-handled"
     ],
     "https://fetch.spec.whatwg.org/": [
       "header-list-contains",
@@ -110,6 +114,7 @@
       "section-6.1"
     ],
     "https://dom.spec.whatwg.org/": [
+      "concept-document",
       "concept-node",
       "concept-element",
       "boundary-point-node",
@@ -120,7 +125,6 @@
       "concept-attribute-value",
       "concept-element-shadow-root",
       "concept-document-url",
-      "concept-document",
       "document"
     ],
     "https://tc39.es/ecma262/": [
@@ -139,10 +143,15 @@
       "sec-iscallable",
       "sec-enumerableownpropertynames",
       "sec-createlistfromarraylike",
-      "sec-code-realms"
+      "sec-code-realms",
+      "running-execution-context",
+      "sec-time-values-and-time-range",
+      "sec-primitive-value",
+      "current-realm"
     ],
     "https://url.spec.whatwg.org/": [
-      "concept-url-serializer"
+      "concept-url-serializer",
+      "concept-url"
     ],
     "https://w3c.github.io/ServiceWorker/": [
       "serviceworkerglobalscope"
@@ -155,6 +164,12 @@
     ],
     "https://www.w3.org/TR/worklets-1/": [
       "set-up-a-worklet-environment-settings-object"
+    ],
+    "https://console.spec.whatwg.org/": [
+      "formatting-specifiers",
+      "formatter",
+      "namespacedef-console",
+      "printer"
     ],
     "https://tools.ietf.org/html/rfc4122": [],
     "https://tools.ietf.org/html/rfc8610": [],
