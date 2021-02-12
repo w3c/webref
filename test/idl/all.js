@@ -18,7 +18,7 @@ describe('@webidl/idl module', () => {
     assert(Object.keys(all).length > 0);
     for (const ast of Object.values(all)) {
       assert(Array.isArray(ast));
-      assert(ast.length);
+      assert(ast.length > 0);
     }
   });
 });
