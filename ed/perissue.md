@@ -4216,6 +4216,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/html/interactive-elements.html#element-attrdef-dialog-open`](https://w3c.github.io/html/interactive-elements.html#element-attrdef-dialog-open)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
      * [`https://dom.spec.whatwg.org/#dom-element-setAttribute`](https://dom.spec.whatwg.org/#dom-element-setAttribute)
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://drafts.csswg.org/css2/#block-boxes%E2%91%A0`](https://drafts.csswg.org/css2/#block-boxes%E2%91%A0)
      * [`https://drafts.csswg.org/css2/#content%E2%91%A0`](https://drafts.csswg.org/css2/#content%E2%91%A0)
      * [`https://w3c.github.io/FileAPI/#DefinitionOfScheme`](https://w3c.github.io/FileAPI/#DefinitionOfScheme)
@@ -4256,6 +4257,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
 - [Layout Instability API](https://wicg.github.io/layout-instability/):
      * [`https://www.w3.org/TR/css-values-4/#pixel-unit`](https://www.w3.org/TR/css-values-4/#pixel-unit)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html):
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/):
      * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
      * [`https://www.w3.org/TR/css-color-3/#foreground`](https://www.w3.org/TR/css-color-3/#foreground)
@@ -4430,6 +4433,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#application-cache`](https://html.spec.whatwg.org/#application-cache)
      * [`https://fetch.spec.whatwg.org/#concept-body-disturbed`](https://fetch.spec.whatwg.org/#concept-body-disturbed)
      * [`https://fetch.spec.whatwg.org/#concept-body-locked`](https://fetch.spec.whatwg.org/#concept-body-locked)
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://w3c.github.io/push-api/#h-the-push-event`](https://w3c.github.io/push-api/#h-the-push-event)
      * [`https://w3c.github.io/push-api/#dfn-push`](https://w3c.github.io/push-api/#dfn-push)
      * [`https://w3c.github.io/push-api/#dfn-fire-the-push-event`](https://w3c.github.io/push-api/#dfn-fire-the-push-event)
@@ -4545,8 +4549,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/):
      * [`https://www.w3.org/TR/webxr/#animationframe`](https://www.w3.org/TR/webxr/#animationframe)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
 
-=> 604 problematic external links found in 144 specifications
+=> 608 problematic external links found in 146 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

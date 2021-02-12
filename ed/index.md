@@ -6834,7 +6834,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 10 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -8447,6 +8447,7 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/html-aam/#el-autonomous-custom-element`](https://w3c.github.io/html-aam/#el-autonomous-custom-element)
 - Broken external links:
      * [`https://dom.spec.whatwg.org/#dom-element-setAttribute`](https://dom.spec.whatwg.org/#dom-element-setAttribute)
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://drafts.csswg.org/css2/#block-boxes%E2%91%A0`](https://drafts.csswg.org/css2/#block-boxes%E2%91%A0)
      * [`https://drafts.csswg.org/css2/#content%E2%91%A0`](https://drafts.csswg.org/css2/#content%E2%91%A0)
      * [`https://w3c.github.io/FileAPI/#DefinitionOfScheme`](https://w3c.github.io/FileAPI/#DefinitionOfScheme)
@@ -9518,6 +9519,8 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#attr-crossorigin-none`](https://html.spec.whatwg.org/#attr-crossorigin-none)
      * [`https://html.spec.whatwg.org/#navigation-params-response`](https://html.spec.whatwg.org/#navigation-params-response)
      * [`https://html.spec.whatwg.org/#cors-settings-attribute`](https://html.spec.whatwg.org/#cors-settings-attribute)
+- Broken external links:
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12537,6 +12540,7 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#application-cache`](https://html.spec.whatwg.org/#application-cache)
      * [`https://fetch.spec.whatwg.org/#concept-body-disturbed`](https://fetch.spec.whatwg.org/#concept-body-disturbed)
      * [`https://fetch.spec.whatwg.org/#concept-body-locked`](https://fetch.spec.whatwg.org/#concept-body-locked)
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://w3c.github.io/push-api/#h-the-push-event`](https://w3c.github.io/push-api/#h-the-push-event)
      * [`https://w3c.github.io/push-api/#dfn-push`](https://w3c.github.io/push-api/#dfn-push)
      * [`https://w3c.github.io/push-api/#dfn-fire-the-push-event`](https://w3c.github.io/push-api/#dfn-fire-the-push-event)
@@ -16792,6 +16796,8 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 - External links to private terms:
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
+- Broken external links:
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
