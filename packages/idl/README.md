@@ -17,7 +17,7 @@ for (const [shortname, file] of Object.entries(files)) {
 }
 ```
 
-As a shorthand, the async `parseAll()` method returns an object where the keys are spec shortnames and the values are the result of parsing the IDL with `WebIDL2.parse`. Example:
+As a shorthand, the async `parseAll()` method resolves with an object where the keys are spec shortnames and the values are the result of parsing the IDL with `WebIDL2.parse`. Example:
 
 ```js
 const idl = require('@webref/idl');
@@ -32,12 +32,12 @@ for (const [shortname, ast] of Object.entries(parsedFiles)) {
 
 The following guarantees are provided by this package:
 - All IDL files can be parsed by the version of [webidl2.js](https://github.com/w3c/webidl2.js/) used in `peerDependencies` in `package.json`.
-- No duplicate top-level definitions such as duplicate interface names.
+- No duplicate top-level definitions or members.
 - No missing or mismatched types in inheritance chains.
-- No dangling `includes` statements (missing mixins).
+- No conflicts when applying mixins and partials.
 
 The following guarantees are *not* provided:
 - `WebIDL2.validate` rules are not guaranteed to pass.
 - Extended attributes are not validated at all.
-- Duplicate members are not checked.
+- Some types referenced may not be defined.
 - Generally no other guarantees except the ones enforced by tests.
