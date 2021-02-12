@@ -1,21 +1,53 @@
-From a2a36c82e56b8956f32710c0b5d76db2e68d3544 Mon Sep 17 00:00:00 2001
+From cf5a5e1e6c7101eadbc9520a2aa65b3a687807f3 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
-Date: Wed, 10 Feb 2021 13:24:47 +0100
+Date: Fri, 12 Feb 2021 09:32:59 +0100
 Subject: [PATCH] Remove trusted-types.idl overloads
 
 https://github.com/w3c/webappsec-trusted-types/issues/283
 ---
- ed/idl/trusted-types.idl | 44 ----------------------------------------
- 1 file changed, 44 deletions(-)
+ ed/idl/trusted-types.idl | 76 ----------------------------------------
+ 1 file changed, 76 deletions(-)
 
 diff --git a/ed/idl/trusted-types.idl b/ed/idl/trusted-types.idl
-index ad6d1f998..665936739 100644
+index ad6d1f998..bd0109dce 100644
 --- a/ed/idl/trusted-types.idl
 +++ b/ed/idl/trusted-types.idl
-@@ -98,47 +98,3 @@ partial interface mixin WindowOrWorkerGlobalScope {
-   long setTimeout(TrustedTimerHandler handler, optional long timeout = 0, any... arguments);
-   long setInterval(TrustedTimerHandler handler, optional long timeout = 0, any... arguments);
+@@ -66,79 +66,3 @@ typedef (TrustedHTML or TrustedScript or TrustedScriptURL) TrustedType;
+ partial interface Window {
+   [SecureContext] readonly attribute TrustedTypePolicyFactory trustedTypes;
  };
+-
+-partial interface Document {
+-  [CEReactions] void write(HTMLString... text);
+-  [CEReactions] void writeln(HTMLString... text);
+-};
+-
+-partial interface HTMLScriptElement {
+- [CEReactions] attribute [TreatNullAs=EmptyString] ScriptString innerText;
+- [CEReactions] attribute ScriptString? textContent;
+- [CEReactions] attribute ScriptURLString src;
+- [CEReactions] attribute ScriptString text;
+-};
+-
+-partial interface HTMLIFrameElement {
+-  [CEReactions] attribute HTMLString srcdoc;
+-};
+-
+-partial interface HTMLEmbedElement {
+-  [CEReactions] attribute ScriptURLString src;
+-};
+-
+-partial interface HTMLObjectElement {
+-  [CEReactions] attribute ScriptURLString data;
+-  [CEReactions] attribute ScriptURLString codeBase; // obsolete
+-};
+-
+-typedef (ScriptString or Function) TrustedTimerHandler;
+-
+-partial interface mixin WindowOrWorkerGlobalScope {
+-  long setTimeout(TrustedTimerHandler handler, optional long timeout = 0, any... arguments);
+-  long setInterval(TrustedTimerHandler handler, optional long timeout = 0, any... arguments);
+-};
 -
 -[Exposed=(Window,Worker)]
 -partial interface Worker : EventTarget {
