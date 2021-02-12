@@ -1,0 +1,34 @@
+From 233474456ee5395ccde82eef47fc0b157798102c Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Tue, 21 Jul 2020 19:44:55 +0200
+Subject: [PATCH] Use partial interface Keyboard
+
+https://github.com/WICG/keyboard-map/issues/25
+---
+ ed/idl/keyboard-map.idl | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+
+diff --git a/ed/idl/keyboard-map.idl b/ed/idl/keyboard-map.idl
+index 8d95d8850..67c40333b 100644
+--- a/ed/idl/keyboard-map.idl
++++ b/ed/idl/keyboard-map.idl
+@@ -3,15 +3,10 @@
+ // (https://github.com/w3c/webref)
+ // Source: Keyboard Map (https://wicg.github.io/keyboard-map/)
+ 
+-[Exposed=Window]
+-partial interface Navigator {
+-  [SecureContext, SameObject] readonly attribute Keyboard keyboard;
+-};
+-
+ interface KeyboardLayoutMap {
+   readonly maplike<DOMString, DOMString>;
+ };
+ 
+-[SecureContext, Exposed=Window] interface Keyboard {
++partial interface Keyboard {
+   Promise<KeyboardLayoutMap> getLayoutMap();
+ };
+-- 
+2.30.0.365.g02bc693789-goog
+

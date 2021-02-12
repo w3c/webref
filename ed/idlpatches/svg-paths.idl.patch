@@ -1,0 +1,36 @@
+From c1893436732e2d22c2c59f1556b52df24c05c718 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Fri, 3 Jul 2020 23:00:39 +0200
+Subject: [PATCH] Fix svg-paths.idl
+
+https://github.com/w3c/svgwg/pull/802
+---
+ ed/idl/svg-paths.idl | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+
+diff --git a/ed/idl/svg-paths.idl b/ed/idl/svg-paths.idl
+index 84a067491..c3dd8249b 100644
+--- a/ed/idl/svg-paths.idl
++++ b/ed/idl/svg-paths.idl
+@@ -3,15 +3,14 @@
+ // (https://github.com/w3c/webref)
+ // Source: SVG Paths (https://svgwg.org/specs/paths/)
+ 
+-[NoInterfaceObject]
+ interface SVGPathSegment {
+-  DOMString type;
+-  sequence<float> values;
++  attribute DOMString type;
++  attribute FrozenArray<float> values;
+ };
+ 
+ dictionary SVGPathDataSettings {
+    boolean normalize = false;
+-}
++};
+ 
+ interface mixin SVGPathData {
+    sequence<SVGPathSegment> getPathData(optional SVGPathDataSettings settings);
+-- 
+2.30.0.365.g02bc693789-goog
+
