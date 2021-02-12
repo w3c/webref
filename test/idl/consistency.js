@@ -189,5 +189,22 @@ describe('Web IDL consistency', () => {
   // This test should remain the last one as it slightly modifies objects in dfns in place.
   it('merging in partials/mixins', () => {
     const merged = merge(dfns, partials, includes);
+    // To guard against new things being added to Web IDL which need special handling,
+    // such as dictionary mixins, check that the merged result has only known types.
+    // Also check that everything has a name and that no partials remain.
+    const knownTypes = new Set([
+      'callback interface',
+        'callback',
+        'dictionary',
+        'enum',
+        'interface',
+        'namespace',
+        'typedef'
+    ]);
+    for (const dfn of merged) {
+      assert(dfn.name, 'definition has a name');
+      assert(!dfn.partial, 'definition is not partial');
+      assert(knownTypes.has(dfn.type), `unknown definition type: ${dfn.type}`)
+    }
   });
 });
