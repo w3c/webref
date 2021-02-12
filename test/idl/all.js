@@ -8,7 +8,7 @@ describe('@webidl/idl module', () => {
     assert(Object.keys(files).length > 0);
     for (const [shortname, file] of Object.entries(files)) {
       assert.strictEqual(shortname, file.shortname);
-      assert(/^[a-z0-9-]+$/i.exec(shortname),
+      assert(/^[a-z0-9-_]+$/i.exec(shortname),
           `invalid shortname: ${shortname}`);
     }
   });

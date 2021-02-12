@@ -5,37 +5,32 @@ const idl = require('@webref/idl');
 
 idl.parseAll().then((all) => {
   describe('WebIDL2.validate', () => {
-    const globalIgnoreRules = ['replace-void'];
+    const globalIgnoreRules = [
+      'no-nointerfaceobject',
+      'renamed-legacy',
+      'replace-void',
+      'require-exposed',
+    ];
     const ignoreRules = {
-      'CSP': ['constructor-member', 'dict-arg-default', 'require-exposed'],
-      'SVG': ['constructor-member', 'require-exposed'],
-      'anchors': ['require-exposed'],
+      'SVG': ['constructor-member'],
       'background-fetch': ['dict-arg-optional'],
-      'contact-api': ['dict-arg-default', 'require-exposed'],
+      'contact-api': ['dict-arg-default'],
       'content-index': ['constructor-member'],
       'css-parser-api': [
-        'constructor-member', 'dict-arg-default', 'require-exposed',
+        'constructor-member', 'dict-arg-default',
       ],
-      'filter-effects': ['require-exposed'],
-      'frame-timing': ['require-exposed'],
-      'gpuweb': ['require-exposed'],
-      'keyboard-map': ['require-exposed'],
-      'layers': ['dict-arg-default', 'require-exposed'],
-      'mediastream-recording': ['constructor-member'],
+      'gpuweb': ['dict-arg-optional'],
+      'layers': ['dict-arg-default'],
       'periodic-background-sync': ['constructor-member', 'dict-arg-default'],
-      'portals': ['dict-arg-default'],
       'proximity': ['constructor-member'],
-      'resize-observer': ['dict-arg-default', 'require-exposed'],
-      'svg-animations': ['require-exposed'],
-      'svg-markers': ['require-exposed'],
-      'svg-paths': ['dict-arg-default', 'require-exposed'],
-      'text-detection-api': ['constructor-member'],
+      'svg-paths': ['dict-arg-default'],
       'trusted-types': ['dict-arg-default'],
       'uievents': ['dict-arg-default'],
+      'web-codecs': ['dict-arg-optional'],
       'webgl1': ['constructor-member'],
-      'webhid': ['constructor-member', 'require-exposed'],
-      'webrtc-insertable-streams': ['require-exposed'],
+      'webrtc-insertable-streams': ['dict-arg-default'],
       'webvtt': ['constructor-member'],
+      'webxrlayers': ['dict-arg-default'],
     };
 
     for (const [spec, ast] of Object.entries(all)) {
