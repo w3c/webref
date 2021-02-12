@@ -2,7 +2,7 @@ const assert = require('assert');
 
 const idl = require('@webref/idl');
 
-describe.only('Web IDL consistency', () => {
+describe('Web IDL consistency', () => {
   const dfns = new Map();
   const includes = [];
   const partials = [];
