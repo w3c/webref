@@ -186,6 +186,7 @@ describe('Web IDL consistency', () => {
     }
   });
 
+  // This test should remain the last one as it slightly modifies objects in dfns in place.
   it('merging in partials/mixins', () => {
     const merged = merge(dfns, partials, includes);
   });
