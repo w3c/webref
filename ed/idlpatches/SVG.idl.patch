@@ -1,14 +1,17 @@
-From b613b767652effae7f44680cb08d895658460318 Mon Sep 17 00:00:00 2001
+From 6eb87120654bf0c600dc61e7406f20f570d72ec5 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
-Date: Wed, 10 Feb 2021 13:13:29 +0100
-Subject: [PATCH] Remove duplicate SVG definitions
+Date: Fri, 12 Feb 2021 12:09:11 +0100
+Subject: [PATCH] Fix SVG.idl
 
+HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
+
+Duplicates: https://github.com/w3c/svgwg/issues/824
 ---
- ed/idl/SVG.idl | 32 --------------------------------
- 1 file changed, 32 deletions(-)
+ ed/idl/SVG.idl | 47 ++++++++++++++---------------------------------
+ 1 file changed, 14 insertions(+), 33 deletions(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index f8d24c9c6..64ad64f8f 100644
+index f8d24c9c6..5fc8b265d 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
 @@ -417,10 +417,6 @@ interface SVGAnimatedPreserveAspectRatio {
@@ -57,6 +60,28 @@ index f8d24c9c6..64ad64f8f 100644
  [Exposed=Window]
  interface SVGGradientElement : SVGElement {
  
+@@ -671,7 +639,20 @@ interface SVGAElement : SVGGraphicsElement {
+ };
+ 
+ SVGAElement includes SVGURIReference;
+-SVGAElement includes HTMLHyperlinkElementUtils;
++
++// Inline HTMLHyperlinkElementUtils except href, which conflicts.
++partial interface SVGAElement {
++  readonly attribute USVString origin;
++  [CEReactions] attribute USVString protocol;
++  [CEReactions] attribute USVString username;
++  [CEReactions] attribute USVString password;
++  [CEReactions] attribute USVString host;
++  [CEReactions] attribute USVString hostname;
++  [CEReactions] attribute USVString port;
++  [CEReactions] attribute USVString pathname;
++  [CEReactions] attribute USVString search;
++  [CEReactions] attribute USVString hash;
++};
+ 
+ [Exposed=Window]
+ interface SVGViewElement : SVGElement {};
 -- 
 2.30.0.365.g02bc693789-goog
 
