@@ -11745,7 +11745,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/reporting-1/](https://www.w3.org/TR/reporting-1/)
 - Crawled URL: [https://w3c.github.io/reporting/](https://w3c.github.io/reporting/)
-- Crawled version: 8 December 2020
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://w3c.github.io/reporting/](https://w3c.github.io/reporting/)
 - Latest published version: [https://www.w3.org/TR/reporting-1/](https://www.w3.org/TR/reporting-1/)
 - Shortname: reporting-1
