@@ -1,4 +1,4 @@
-const assert = require('assert');
+const assert = require('assert').strict;
 const WebIDL2 = require('webidl2');
 
 const idl = require('@webref/idl');

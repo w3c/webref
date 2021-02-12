@@ -1,4 +1,4 @@
-const assert = require('assert');
+const assert = require('assert').strict;
 
 const idl = require('@webref/idl');
 
@@ -7,7 +7,7 @@ describe('@webidl/idl module', () => {
     const files = await idl.listAll();
     assert(Object.keys(files).length > 0);
     for (const [shortname, file] of Object.entries(files)) {
-      assert.strictEqual(shortname, file.shortname);
+      assert.equal(shortname, file.shortname);
       assert(/^[a-z0-9-_]+$/i.exec(shortname),
           `invalid shortname: ${shortname}`);
     }
