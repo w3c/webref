@@ -41,100 +41,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "process-request-body",
-      "href": "https://fetch.spec.whatwg.org/#process-request-body",
+      "id": "fetch-params",
+      "href": "https://fetch.spec.whatwg.org/#fetch-params",
       "linkingText": [
-        "process request body"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "infrastructure",
-        "title": "Infrastructure",
-        "number": "2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "process-request-end-of-body",
-      "href": "https://fetch.spec.whatwg.org/#process-request-end-of-body",
-      "linkingText": [
-        "process request end-of-body"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "infrastructure",
-        "title": "Infrastructure",
-        "number": "2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "process-response",
-      "href": "https://fetch.spec.whatwg.org/#process-response",
-      "linkingText": [
-        "process response"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "infrastructure",
-        "title": "Infrastructure",
-        "number": "2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "process-response-end-of-body",
-      "href": "https://fetch.spec.whatwg.org/#process-response-end-of-body",
-      "linkingText": [
-        "process response end-of-body"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "infrastructure",
-        "title": "Infrastructure",
-        "number": "2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "process-response-done",
-      "href": "https://fetch.spec.whatwg.org/#process-response-done",
-      "linkingText": [
-        "process response done"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "infrastructure",
-        "title": "Infrastructure",
-        "number": "2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "queue-a-fetch-task",
-      "href": "https://fetch.spec.whatwg.org/#queue-a-fetch-task",
-      "linkingText": [
-        "queue a fetch task"
+        "fetch params"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -149,10 +59,130 @@
       "definedIn": "prose"
     },
     {
-      "id": "queue-a-fetch-request-done-task",
-      "href": "https://fetch.spec.whatwg.org/#queue-a-fetch-request-done-task",
+      "id": "fetch-params-request",
+      "href": "https://fetch.spec.whatwg.org/#fetch-params-request",
       "linkingText": [
-        "queue a fetch-request-done task"
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch params"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fetch-params-process-request-body",
+      "href": "https://fetch.spec.whatwg.org/#fetch-params-process-request-body",
+      "linkingText": [
+        "process request body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch params"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fetch-params-process-request-end-of-body",
+      "href": "https://fetch.spec.whatwg.org/#fetch-params-process-request-end-of-body",
+      "linkingText": [
+        "process request end-of-body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch params"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fetch-params-process-response",
+      "href": "https://fetch.spec.whatwg.org/#fetch-params-process-response",
+      "linkingText": [
+        "process response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch params"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fetch-params-process-response-end-of-body",
+      "href": "https://fetch.spec.whatwg.org/#fetch-params-process-response-end-of-body",
+      "linkingText": [
+        "process response end-of-body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch params"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fetch-params-task-destination",
+      "href": "https://fetch.spec.whatwg.org/#fetch-params-task-destination",
+      "linkingText": [
+        "task destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch params"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "title": "Infrastructure",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "queue-a-fetch-task",
+      "href": "https://fetch.spec.whatwg.org/#queue-a-fetch-task",
+      "linkingText": [
+        "queue a fetch task"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1672,26 +1702,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "synchronous-flag",
-      "href": "https://fetch.spec.whatwg.org/#synchronous-flag",
-      "linkingText": [
-        "synchronous flag"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "request"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "requests",
-        "title": "Requests",
-        "number": "2.2.5"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "concept-request-mode",
       "href": "https://fetch.spec.whatwg.org/#concept-request-mode",
       "linkingText": [
@@ -2185,14 +2195,12 @@
       "id": "concept-request-transmit-body",
       "href": "https://fetch.spec.whatwg.org/#concept-request-transmit-body",
       "linkingText": [
-        "transmit body"
+        "transmit request body"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "request"
-      ],
-      "access": "public",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "requests",
@@ -2202,10 +2210,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "transmit-body-loop",
-      "href": "https://fetch.spec.whatwg.org/#transmit-body-loop",
+      "id": "transmit-request-body-loop",
+      "href": "https://fetch.spec.whatwg.org/#transmit-request-body-loop",
       "linkingText": [
-        "transmit-body loop"
+        "transmit-request-body loop"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3549,6 +3557,106 @@
       "definedIn": "prose"
     },
     {
+      "id": "process-request-body",
+      "href": "https://fetch.spec.whatwg.org/#process-request-body",
+      "linkingText": [
+        "processRequestBody"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetching",
+        "title": "Fetching",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "process-request-end-of-body",
+      "href": "https://fetch.spec.whatwg.org/#process-request-end-of-body",
+      "linkingText": [
+        "processRequestEndOfBody"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetching",
+        "title": "Fetching",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "process-response",
+      "href": "https://fetch.spec.whatwg.org/#process-response",
+      "linkingText": [
+        "processResponse"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetching",
+        "title": "Fetching",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "process-response-end-of-body",
+      "href": "https://fetch.spec.whatwg.org/#process-response-end-of-body",
+      "linkingText": [
+        "processResponseEndOfBody"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetching",
+        "title": "Fetching",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-useparallelqueue",
+      "href": "https://fetch.spec.whatwg.org/#fetch-useparallelqueue",
+      "linkingText": [
+        "useParallelQueue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "fetch"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetching",
+        "title": "Fetching",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "concept-fetch-terminate",
       "href": "https://fetch.spec.whatwg.org/#concept-fetch-terminate",
       "linkingText": [
@@ -3616,9 +3724,7 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "main"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
@@ -3683,6 +3789,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "concept-navigate-redirect-fetch",
+      "href": "https://fetch.spec.whatwg.org/#concept-navigate-redirect-fetch",
+      "linkingText": [
+        "navigate-redirect fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigate-redirect-fetch",
+        "title": "Navigate-redirect fetch",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "concept-http-network-or-cache-fetch",
       "href": "https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch",
       "linkingText": [
@@ -3696,7 +3820,7 @@
       "heading": {
         "id": "http-network-or-cache-fetch",
         "title": "HTTP-network-or-cache fetch",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -3714,7 +3838,7 @@
       "heading": {
         "id": "http-network-fetch",
         "title": "HTTP-network fetch",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "prose"
     },
@@ -3732,7 +3856,7 @@
       "heading": {
         "id": "cors-preflight-fetch",
         "title": "CORS-preflight fetch",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -3750,7 +3874,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3768,7 +3892,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3788,7 +3912,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3808,7 +3932,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3828,7 +3952,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3848,7 +3972,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3868,7 +3992,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3888,7 +4012,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3908,7 +4032,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3926,7 +4050,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3944,7 +4068,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3962,7 +4086,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3980,7 +4104,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -3998,7 +4122,7 @@
       "heading": {
         "id": "cors-preflight-cache",
         "title": "CORS-preflight cache",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "prose"
     },
@@ -4016,7 +4140,7 @@
       "heading": {
         "id": "cors-check",
         "title": "CORS check",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "prose"
     },
@@ -4034,7 +4158,7 @@
       "heading": {
         "id": "tao-check",
         "title": "TAO check",
-        "number": "4.10"
+        "number": "4.11"
       },
       "definedIn": "prose"
     },
