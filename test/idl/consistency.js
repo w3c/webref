@@ -1,6 +1,19 @@
-const assert = require('assert');
+const assert = require('assert').strict;
 
 const idl = require('@webref/idl');
+
+// Helper to get a map of unique definitions in |dfns|, for convenience and to
+// avoid O(n^2) in the common `for (dfn of dfns) { dfns.find(...) }`.
+function nameMap(dfns) {
+  assert(Array.isArray(dfns));
+
+  const map = new Map();
+  for (const dfn of dfns) {
+    assert(!map.has(dfn.name), `duplicate definition of ${dfn.name}`);
+    map.set(dfn.name, dfn);
+  }
+  return map;
+}
 
 function getExtAttr(node, name) {
   return node.extAttrs && node.extAttrs.find((attr) => attr.name === name);
@@ -55,7 +68,7 @@ function mergeMembers(target, source) {
   for (const targetMember of target.members) {
     for (const sourceMember of source.members) {
       assert(!isOverloadedOperation(targetMember, sourceMember),
-          `Invalid overload of ${describeMember(targetMember)} from ${describeDfn(source)}`);
+          `invalid overload of ${describeMember(targetMember)} from ${describeDfn(source)}`);
     }
   }
   // Now merge members.
@@ -63,39 +76,44 @@ function mergeMembers(target, source) {
 }
 
 // This could be useful part of the public API, but for now just run the
-// flattening in order to find problems. Modifies the input in place, and
-// afterwards |dfns| is the only thing needed.
-function flatten(dfns, partials, includes) {
-  // merge partials
+// merging in order to find problems. Modifies some definitions in place,
+// and returns a list of only the merged definitions.
+function merge(dfns, partials, includes) {
+  assert(Array.isArray(dfns));
+  assert(Array.isArray(partials));
+  assert(Array.isArray(includes));
+
+  dfns = nameMap(dfns); // replace |dfns| to avoid using it
+
+  // merge partials (including partial mixins)
   for (const partial of partials) {
     const target = dfns.get(partial.name);
     assert(target, `target definition of partial ${partial.type} ${partial.name} not found`);
-    assert.strictEqual(partial.type, target.type, `${partial.name} inherits from wrong type: ${target.type}`);
+    assert.equal(partial.type, target.type, `${partial.name} inherits from wrong type: ${target.type}`);
     // TODO: account for extended attributes on the partial definition
     mergeMembers(target, partial);
   }
 
   // mix in the mixins
-  const mixinNames = new Set();
   for (const include of includes) {
     assert(include.target);
     const target = dfns.get(include.target);
     assert(target, `missing target of includes statement: ${include.target}`);
-    assert.strictEqual(target.type, 'interface');
+    assert.equal(target.type, 'interface');
 
     assert(include.includes);
     const mixin = dfns.get(include.includes);
     assert(mixin, `missing source of includes statement: ${include.includes}`);
-    assert.strictEqual(mixin.type, 'interface mixin');
+    assert.equal(mixin.type, 'interface mixin');
 
     mergeMembers(target, mixin);
-
-    mixinNames.add(mixin.name);
   }
 
-  // remove the mixins
-  for (const name of mixinNames.values()) {
-    dfns.delete(name);
+  // remove all mixins, whether used or not
+  for (const [name, dfn] of dfns) {
+    if (dfn.type === 'interface mixin') {
+      dfns.delete(name);
+    }
   }
 
   // now check for duplicate members
@@ -119,20 +137,23 @@ function flatten(dfns, partials, includes) {
         if (getExtAttr(firstMember, 'Exposed') || getExtAttr(member, 'Exposed')) {
           continue;
         }
-        throw new Error(`duplicate definition of ${dfn.name} member ${member.name}`);
+        assert.fail(`duplicate definition of ${dfn.name} member ${member.name}`);
       } else {
         namedMembers.set(member.name, member);
       }
     }
   }
+
+  // finally return a sorted list of merged definitions
+  return Array.from(dfns.values());
 }
 
 describe('Web IDL consistency', () => {
-  const dfns = new Map();
+  const dfns = [];
   const includes = [];
   const partials = [];
 
-  it('unique definitions', async () => {
+  before(async () => {
     const all = await idl.parseAll();
 
     for (const [spec, ast] of Object.entries(all)) {
@@ -141,26 +162,31 @@ describe('Web IDL consistency', () => {
           partials.push(dfn);
         } else if (dfn.type === 'includes') {
           includes.push(dfn);
+        } else if (dfn.name) {
+          dfns.push(dfn);
         } else {
-          assert(dfn.name, `definition with no name in ${spec}`);
-          assert(!dfns.has(dfn.name), `duplicate definition of ${dfn.type} ${dfn.name}`);
-          dfns.set(dfn.name, dfn);
+          assert.fail(`unknown definition in ${spec}: ${JSON.stringify(dfn)}`);
         }
       }
     }
   });
 
+  it('unique definitions', () => {
+    assert.equal(nameMap(dfns).size, dfns.length);
+  });
+
   it('inheritance', () => {
-    for (const dfn of dfns.values()) {
+    const map = nameMap(dfns);
+    for (const dfn of map.values()) {
       if (dfn.inheritance) {
-        const parent = dfns.get(dfn.inheritance);
+        const parent = map.get(dfn.inheritance);
         assert(parent, `${dfn.name} inherits from missing type: ${dfn.inheritance}`);
-        assert.strictEqual(dfn.type, parent.type, `${dfn.name} inherits from wrong type: ${parent.type}`);
+        assert.equal(dfn.type, parent.type, `${dfn.name} inherits from wrong type: ${parent.type}`);
       }
     }
   });
 
-  it('flattening partials/mixins', () => {
-    flatten(dfns, partials, includes);
+  it('merging in partials/mixins', () => {
+    const merged = merge(dfns, partials, includes);
   });
 });
