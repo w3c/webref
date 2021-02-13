@@ -252,7 +252,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
-- Crawled version: 15 January 2021
+- Crawled version: 13 February 2021
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -12596,7 +12596,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
 - Crawled URL: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
-- Crawled version: 9 February 2021
+- Crawled version: 13 February 2021
 - Editor's Draft: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
 - Shortname: tc39-static-class-features
 
