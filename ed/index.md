@@ -4637,7 +4637,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-ruby-1/](https://www.w3.org/TR/css-ruby-1/)
 - Crawled URL: [https://drafts.csswg.org/css-ruby-1/](https://drafts.csswg.org/css-ruby-1/)
-- Crawled version: 9 February 2021
+- Crawled version: 14 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-ruby-1/](https://drafts.csswg.org/css-ruby-1/)
 - Latest published version: [https://www.w3.org/TR/css-ruby-1/](https://www.w3.org/TR/css-ruby-1/)
 - Shortname: css-ruby-1
@@ -14456,7 +14456,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Crawled URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
-- Crawled version: 03 February 2021
+- Crawled version: 15 February 2021
 - Editor's Draft: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
 - Latest published version: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Shortname: web-share
@@ -16789,7 +16789,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
 - Crawled URL: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
-- Crawled version: 26 January 2021
+- Crawled version: 14 February 2021
 - Editor's Draft: [https://xhr.spec.whatwg.org/](https://xhr.spec.whatwg.org/)
 - Shortname: xhr
 
@@ -16799,8 +16799,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 - External links to private terms:
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
-- Broken external links:
-     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
