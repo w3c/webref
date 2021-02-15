@@ -1,0 +1,13 @@
+// Source: Filter Effects Module Level 1 (https://www.w3.org/TR/filter-effects-1/)
+interface SVGFEDropShadowElement : SVGElement {
+  readonly attribute SVGAnimatedString in1;
+  readonly attribute SVGAnimatedNumber dx;
+  readonly attribute SVGAnimatedNumber dy;
+  readonly attribute SVGAnimatedNumber stdDeviationX;
+  readonly attribute SVGAnimatedNumber stdDeviationY;
+
+  void setStdDeviation(float stdDeviationX, float stdDeviationY);
+};
+
+// Source: Filter Effects Module Level 1 (https://www.w3.org/TR/filter-effects-1/)
+SVGFEDropShadowElement includes SVGFilterPrimitiveStandardAttributes;

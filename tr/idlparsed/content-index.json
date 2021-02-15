@@ -21,6 +21,7 @@
     },
     "idlNames": {
       "ContentCategory": {
+        "fragment": "enum ContentCategory {\n  \"\",\n  \"homepage\",\n  \"article\",\n  \"video\",\n  \"audio\",\n};",
         "type": "enum",
         "name": "ContentCategory",
         "values": [
@@ -48,6 +49,7 @@
         "extAttrs": []
       },
       "ContentDescription": {
+        "fragment": "dictionary ContentDescription {\n  required DOMString id;\n  required DOMString title;\n  required DOMString description;\n  ContentCategory category = \"\";\n  sequence<ImageResource> icons = [];\n  required USVString url;\n};",
         "type": "dictionary",
         "name": "ContentDescription",
         "inheritance": null,
@@ -162,6 +164,7 @@
         "partial": false
       },
       "ContentIndex": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface ContentIndex {\n  Promise<void> add(ContentDescription description);\n  Promise<void> delete(DOMString id);\n  Promise<sequence<ContentDescription>> getAll();\n};",
         "type": "interface",
         "name": "ContentIndex",
         "inheritance": null,
@@ -303,6 +306,7 @@
         "partial": false
       },
       "ContentIndexEventInit": {
+        "fragment": "dictionary ContentIndexEventInit : ExtendableEventInit {\n  required DOMString id;\n};",
         "type": "dictionary",
         "name": "ContentIndexEventInit",
         "inheritance": "ExtendableEventInit",
@@ -327,6 +331,7 @@
         "partial": false
       },
       "ContentIndexEvent": {
+        "fragment": "[Constructor(DOMString type, ContentIndexEventInit init), Exposed=ServiceWorker]\ninterface ContentIndexEvent : ExtendableEvent {\n  readonly attribute DOMString id;\n};",
         "type": "interface",
         "name": "ContentIndexEvent",
         "inheritance": "ExtendableEvent",
@@ -403,6 +408,7 @@
     "idlExtendedNames": {
       "ServiceWorkerGlobalScope": [
         {
+          "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler oncontentdelete;\n};",
           "type": "interface",
           "name": "ServiceWorkerGlobalScope",
           "inheritance": null,
@@ -429,6 +435,7 @@
       ],
       "ServiceWorkerRegistration": [
         {
+          "fragment": "partial interface ServiceWorkerRegistration {\n  [SameObject] readonly attribute ContentIndex index;\n};",
           "type": "interface",
           "name": "ServiceWorkerRegistration",
           "inheritance": null,

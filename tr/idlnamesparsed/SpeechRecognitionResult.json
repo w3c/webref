@@ -1,0 +1,14 @@
+{
+  "name": "SpeechRecognitionResult",
+  "defined": {
+    "spec": {
+      "title": "Web Speech API",
+      "url": "https://wicg.github.io/speech-api/"
+    },
+    "fragment": "// A complete one-shot simple response\n[Exposed=Window]\ninterface SpeechRecognitionResult {\n    readonly attribute unsigned long length;\n    getter SpeechRecognitionAlternative item(unsigned long index);\n    readonly attribute boolean isFinal;\n};",
+    "href": "https://wicg.github.io/speech-api/#speechrecognitionresult"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

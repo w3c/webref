@@ -1,0 +1,14 @@
+{
+  "name": "AllowedBluetoothDevice",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "dictionary AllowedBluetoothDevice {\n  required DOMString deviceId;\n  required boolean mayUseGATT;\n  // An allowedServices of \"all\" means all services are allowed.\n  required (DOMString or sequence<UUID>) allowedServices;\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-allowedbluetoothdevice"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

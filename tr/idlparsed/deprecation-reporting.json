@@ -17,6 +17,7 @@
     },
     "idlNames": {
       "DeprecationReportBody": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface DeprecationReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString id;\n  readonly attribute object? anticipatedRemoval;\n  readonly attribute DOMString message;\n  readonly attribute DOMString? sourceFile;\n  readonly attribute unsigned long? lineNumber;\n  readonly attribute unsigned long? columnNumber;\n};",
         "type": "interface",
         "name": "DeprecationReportBody",
         "inheritance": "ReportBody",

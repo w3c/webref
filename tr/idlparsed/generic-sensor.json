@@ -24,6 +24,7 @@
     },
     "idlNames": {
       "Sensor": {
+        "fragment": "[SecureContext, Exposed=(DedicatedWorker, Window)]\ninterface Sensor : EventTarget {\n  readonly attribute boolean activated;\n  readonly attribute boolean hasReading;\n  readonly attribute DOMHighResTimeStamp? timestamp;\n  void start();\n  void stop();\n  attribute EventHandler onreading;\n  attribute EventHandler onactivate;\n  attribute EventHandler onerror;\n};",
         "type": "interface",
         "name": "Sensor",
         "inheritance": "EventTarget",
@@ -176,6 +177,7 @@
         "partial": false
       },
       "SensorOptions": {
+        "fragment": "dictionary SensorOptions {\n  double frequency;\n};",
         "type": "dictionary",
         "name": "SensorOptions",
         "inheritance": null,
@@ -200,6 +202,7 @@
         "partial": false
       },
       "SensorErrorEvent": {
+        "fragment": "[SecureContext, Exposed=(DedicatedWorker, Window)]\ninterface SensorErrorEvent : Event {\n  constructor(DOMString type, SensorErrorEventInit errorEventInitDict);\n  readonly attribute DOMException error;\n};",
         "type": "interface",
         "name": "SensorErrorEvent",
         "inheritance": "Event",
@@ -285,6 +288,7 @@
         "partial": false
       },
       "SensorErrorEventInit": {
+        "fragment": "dictionary SensorErrorEventInit : EventInit {\n  required DOMException error;\n};",
         "type": "dictionary",
         "name": "SensorErrorEventInit",
         "inheritance": "EventInit",
@@ -309,6 +313,7 @@
         "partial": false
       },
       "MockSensorConfiguration": {
+        "fragment": "dictionary MockSensorConfiguration {\n  required MockSensorType mockSensorType;\n  boolean connected = true;\n  double? maxSamplingFrequency;\n  double? minSamplingFrequency;\n};",
         "type": "dictionary",
         "name": "MockSensorConfiguration",
         "inheritance": null,
@@ -381,6 +386,7 @@
         "partial": false
       },
       "MockSensor": {
+        "fragment": "dictionary MockSensor {\n  double maxSamplingFrequency;\n  double minSamplingFrequency;\n  double requestedSamplingFrequency;\n};",
         "type": "dictionary",
         "name": "MockSensor",
         "inheritance": null,
@@ -435,6 +441,7 @@
         "partial": false
       },
       "MockSensorType": {
+        "fragment": "enum MockSensorType {\n  \"ambient-light\",\n  \"accelerometer\",\n  \"linear-acceleration\",\n  \"gravity\",\n  \"gyroscope\",\n  \"magnetometer\",\n  \"uncalibrated-magnetometer\",\n  \"absolute-orientation\",\n  \"relative-orientation\",\n  \"geolocation\",\n  \"proximity\",\n};",
         "type": "enum",
         "name": "MockSensorType",
         "values": [
@@ -486,6 +493,7 @@
         "extAttrs": []
       },
       "MockSensorReadingValues": {
+        "fragment": "dictionary MockSensorReadingValues {\n};",
         "type": "dictionary",
         "name": "MockSensorReadingValues",
         "inheritance": null,

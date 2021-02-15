@@ -1,0 +1,40 @@
+{
+  "name": "ExtendableMessageEventInit",
+  "defined": {
+    "spec": {
+      "title": "Service Workers 1",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "dictionary ExtendableMessageEventInit : ExtendableEventInit {\n  any data = null;\n  USVString origin = \"\";\n  DOMString lastEventId = \"\";\n  (Client or ServiceWorker or MessagePort)? source = null;\n  sequence<MessagePort> ports = [];\n};",
+    "href": "https://www.w3.org/TR/service-workers-1/#dictdef-extendablemessageeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ExtendableEventInit",
+    "defined": {
+      "spec": {
+        "title": "Service Workers 1",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "dictionary ExtendableEventInit : EventInit {\n  // Defined for the forward compatibility across the derived events\n};",
+      "href": "https://www.w3.org/TR/service-workers-1/#dictdef-extendableeventinit"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventInit",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

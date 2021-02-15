@@ -1,0 +1,36 @@
+{
+  "name": "MediaTrackSettings",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams",
+      "url": "https://www.w3.org/TR/mediacapture-streams/"
+    },
+    "fragment": "dictionary MediaTrackSettings {\n  long width;\n  long height;\n  double aspectRatio;\n  double frameRate;\n  DOMString facingMode;\n  DOMString resizeMode;\n  long sampleRate;\n  long sampleSize;\n  boolean echoCancellation;\n  boolean autoGainControl;\n  boolean noiseSuppression;\n  double latency;\n  long channelCount;\n  DOMString deviceId;\n  DOMString groupId;\n};",
+    "href": "https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksettings"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "\"MediaStream Image Capture\"",
+        "url": "https://www.w3.org/TR/image-capture/"
+      },
+      "fragment": "partial dictionary MediaTrackSettings {\n  DOMString         whiteBalanceMode;\n  DOMString         exposureMode;\n  DOMString         focusMode;\n  sequence<Point2D> pointsOfInterest;\n\n  double            exposureCompensation;\n  double            colorTemperature;\n  double            iso;\n\n  double            brightness;\n  double            contrast;\n  double            saturation;\n  double            sharpness;\n\n  double            focusDistance;\n  double            zoom;\n\n  boolean           torch;\n};"
+    },
+    {
+      "spec": {
+        "title": "Media Capture Depth Stream Extensions",
+        "url": "https://www.w3.org/TR/mediacapture-depth/"
+      },
+      "fragment": "partial dictionary MediaTrackSettings {\n    // Apply to both depth stream track and color stream track:\n    DOMString              videoKind;\n    double                 focalLengthX;\n    double                 focalLengthY;\n    double                 principalPointX;\n    double                 principalPointY;\n    DistortionCoefficients deprojectionDistortionCoefficients;\n    DistortionCoefficients projectionDistortionCoefficients;\n    // Apply to depth stream track:\n    double                 depthNear;\n    double                 depthFar;\n    Transformation         depthToVideoTransform;\n};"
+    },
+    {
+      "spec": {
+        "title": "Screen Capture",
+        "url": "https://www.w3.org/TR/screen-capture/"
+      },
+      "fragment": "partial dictionary MediaTrackSettings {\n  DOMString displaySurface;\n  boolean logicalSurface;\n  DOMString cursor;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

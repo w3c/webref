@@ -48,8 +48,10 @@ callback VideoFrameOutputCallback = undefined(VideoFrame output);
 [Exposed=(Window,Worker)]
 interface AudioEncoder {
   constructor(AudioEncoderInit init);
+
   readonly attribute CodecState state;
   readonly attribute long encodeQueueSize;
+
   undefined configure(AudioEncoderConfig config);
   undefined encode(AudioFrame frame);
   Promise<undefined> flush();
@@ -67,8 +69,10 @@ callback EncodedAudioChunkOutputCallback = undefined(EncodedAudioChunk output);
 [Exposed=(Window,Worker)]
 interface VideoEncoder {
   constructor(VideoEncoderInit init);
+
   readonly attribute CodecState state;
   readonly attribute long encodeQueueSize;
+
   undefined configure(VideoEncoderConfig config);
   undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});
   Promise<undefined> flush();
@@ -81,7 +85,7 @@ dictionary VideoEncoderInit {
   required WebCodecsErrorCallback error;
 };
 
-callback EncodedVideoChunkOutputCallback = undefined(EncodedVideoChunk output);
+callback EncodedVideoChunkOutputCallback = undefined(EncodedVideoChunk output, VideoDecoderConfig? output_config);
 
 dictionary AudioDecoderConfig {
   required DOMString codec;
@@ -112,8 +116,21 @@ dictionary AudioEncoderConfig {
 dictionary VideoEncoderConfig {
   required DOMString codec;
   unsigned long long bitrate;
-  required unsigned long width;
-  required unsigned long height;
+  required unsigned long cropWidth;
+  required unsigned long cropHeight;
+  unsigned long displayWidth;
+  unsigned long displayHeight;
+
+  AvcEncoderConfig avc;
+};
+
+dictionary AvcEncoderConfig {
+  AvcBitstreamFormat format = "avc";
+};
+
+enum AvcBitstreamFormat {
+  "annexb",
+  "avc",
 };
 
 dictionary VideoEncoderEncodeOptions {
@@ -236,21 +253,4 @@ dictionary PlaneInit {
 
 enum PixelFormat {
   "I420"
-};
-
-[Exposed=Window]
-interface VideoTrackReader {
-  constructor(MediaStreamTrack track);
-
-  readonly attribute VideoTrackReaderState readyState;
-  attribute EventHandler onended;
-
-  undefined start(VideoFrameOutputCallback callback);
-  undefined stop();
-};
-
-enum VideoTrackReaderState {
-  "started",
-  "stopped",
-  "ended"
 };

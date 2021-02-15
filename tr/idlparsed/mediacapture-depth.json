@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "DistortionCoefficients": {
+        "fragment": "dictionary DistortionCoefficients {\n    double k1;\n    double k2;\n    double p1;\n    double p2;\n    double k3;\n};",
         "type": "dictionary",
         "name": "DistortionCoefficients",
         "inheritance": null,
@@ -94,6 +95,7 @@
         "partial": false
       },
       "Transformation": {
+        "fragment": "dictionary Transformation {\n    Float32Array transformationMatrix;\n    DOMString    videoDeviceId;\n};",
         "type": "dictionary",
         "name": "Transformation",
         "inheritance": null,
@@ -133,6 +135,7 @@
         "partial": false
       },
       "VideoKindEnum": {
+        "fragment": "enum VideoKindEnum {\n    \"color\",\n    \"depth\"\n};",
         "type": "enum",
         "name": "VideoKindEnum",
         "values": [
@@ -151,6 +154,7 @@
     "idlExtendedNames": {
       "MediaTrackSupportedConstraints": [
         {
+          "fragment": "partial dictionary MediaTrackSupportedConstraints {\n    // Apply to both depth stream track and color stream track:\n    boolean videoKind = true;\n    boolean focalLengthX = false;\n    boolean focalLengthY = false;\n    boolean principalPointX = false;\n    boolean principalPointY = false;\n    boolean deprojectionDistortionCoefficients = false;\n    boolean projectionDistortionCoefficients = false;\n    // Apply to depth stream track:\n    boolean depthNear = false;\n    boolean depthFar = false;\n    boolean depthToVideoTransform = false;\n};",
           "type": "dictionary",
           "name": "MediaTrackSupportedConstraints",
           "inheritance": null,
@@ -342,6 +346,7 @@
       ],
       "MediaTrackCapabilities": [
         {
+          "fragment": "partial dictionary MediaTrackCapabilities {\n    // Apply to both depth stream track and color stream track:\n    DOMString               videoKind;\n    (double or DoubleRange) focalLengthX;\n    (double or DoubleRange) focalLengthY;\n    (double or DoubleRange) principalPointX;\n    (double or DoubleRange) principalPointY;\n    boolean                 deprojectionDistortionCoefficients;\n    boolean                 projectionDistortionCoefficients;\n    // Apply to depth stream track:\n    (double or DoubleRange) depthNear;\n    (double or DoubleRange) depthFar;\n    boolean                 depthToVideoTransform;\n};",
           "type": "dictionary",
           "name": "MediaTrackCapabilities",
           "inheritance": null,
@@ -605,6 +610,7 @@
       ],
       "MediaTrackConstraintSet": [
         {
+          "fragment": "partial dictionary MediaTrackConstraintSet {\n    // Apply to both depth stream track and color stream track:\n    ConstrainDOMString videoKind;\n    ConstrainDouble    focalLengthX;\n    ConstrainDouble    focalLengthY;\n    ConstrainDouble    principalPointX;\n    ConstrainDouble    principalPointY;\n    ConstrainBoolean   deprojectionDistortionCoefficients;\n    ConstrainBoolean   projectionDistortionCoefficients;\n    // Apply to depth stream track:\n    ConstrainDouble    depthNear;\n    ConstrainDouble    depthFar;\n    ConstrainBoolean   depthToVideoTransform;\n};",
           "type": "dictionary",
           "name": "MediaTrackConstraintSet",
           "inheritance": null,
@@ -766,6 +772,7 @@
       ],
       "MediaTrackSettings": [
         {
+          "fragment": "partial dictionary MediaTrackSettings {\n    // Apply to both depth stream track and color stream track:\n    DOMString              videoKind;\n    double                 focalLengthX;\n    double                 focalLengthY;\n    double                 principalPointX;\n    double                 principalPointY;\n    DistortionCoefficients deprojectionDistortionCoefficients;\n    DistortionCoefficients projectionDistortionCoefficients;\n    // Apply to depth stream track:\n    double                 depthNear;\n    double                 depthFar;\n    Transformation         depthToVideoTransform;\n};",
           "type": "dictionary",
           "name": "MediaTrackSettings",
           "inheritance": null,

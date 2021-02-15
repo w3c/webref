@@ -1,0 +1,14 @@
+{
+  "name": "NamedNodeMap",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface NamedNodeMap {\n  readonly attribute unsigned long length;\n  getter Attr? item(unsigned long index);\n  getter Attr? getNamedItem(DOMString qualifiedName);\n  Attr? getNamedItemNS(DOMString? namespace, DOMString localName);\n  [CEReactions] Attr? setNamedItem(Attr attr);\n  [CEReactions] Attr? setNamedItemNS(Attr attr);\n  [CEReactions] Attr removeNamedItem(DOMString qualifiedName);\n  [CEReactions] Attr removeNamedItemNS(DOMString? namespace, DOMString localName);\n};",
+    "href": "https://dom.spec.whatwg.org/#namednodemap"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

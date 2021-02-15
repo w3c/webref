@@ -36,27 +36,35 @@
       "value": "<move-command> | <line-command> | <hv-line-command> | <curve-command> | <smooth-command> | <arc-command> | close"
     },
     "<coordinate-pair>": {
+      "value": "<length-percentage>{2}",
       "prose": "Defines a pair of coordinates, representing a rightward and downward offset, respectively, from a specified reference point. Percentages are resolved against the width or height, respectively, of the reference box."
     },
     "<by-to>": {
+      "value": "by | to",
       "prose": "Every command can be specified in \"absolute\" or \"relative\" coordinates, determined by their <by-to> component. to indicates that any <coordinate-pair>s in the command are relative to the top-left corner of the reference box, while by indicates that the <coordinate-pair>s are relative to the command’s starting point. Note: In either case, <percentage> values in <coordinate-pair>s are always computed relative to the reference box’s size."
     },
     "<move-command>": {
+      "value": "move <by-to> <coordinate-pair>",
       "prose": "Adds a moveto command to the list of path data commands, with an ending point specified by the <coordinate-pair>. This draws nothing, and merely \"moves the pen\" for the next command. Note: This starts a new subpath, for the purpose of the close command."
     },
     "<line-command>": {
+      "value": "line <by-to> <coordinate-pair>",
       "prose": "Adds a lineto command to the list of path data commands, with an ending point specified by the <coordinate-pair>. This draws a straight line from the command’s starting point to its ending point."
     },
     "<hv-line-command>": {
+      "value": "[hline | vline] <by-to> <length-percentage>",
       "prose": "Adds a horizontal (for hline) or vertical (for vline) lineto command to the list of path data commands. This is equivalent to a line command with the <length-percentage> given as the horizontal or vertical component, respectively, of the <coordinate-pair>, and the other component specified appropriately to make the line horizontal or vertical."
     },
     "<curve-command>": {
+      "value": "curve <by-to> <coordinate-pair> via <coordinate-pair>{1,2}",
       "prose": "Adds a Bézier curve command to the list of path data commands, ending at the point specified by the first <coordinate-pair>. The via component specifies control points for the curve: if a single <coordinate-pair> is provided, the command specifies a quadratic curve; if two <coordinate-pair>s are provided, it specifies a cubic curve."
     },
     "<smooth-command>": {
+      "value": "smooth <by-to> <coordinate-pair> [via <coordinate-pair>]?",
       "prose": "Adds a smooth Bézier curve command to the list of path data commands, ending at the point specified by the first <coordinate-pair>. The via component specifies control points for the curve: if it’s omitted, the command specifies a smooth quadratic curve; if it’s provided, if specifies a smooth cubic curve. Note: A smooth command is equivalent to a curve command with the first control point automatically specified as the reflection of the previous curve’s second control point around the starting point, or as the starting point if the previous path data command wasn’t a curve. This ensures G1 continuity with the previous command, so the curve appears to smoothly continue from the previous command, rather than possibly making a sudden direction change."
     },
     "<arc-command>": {
+      "value": "arc <by-to> <coordinate-pair> of <length-percentage>{1,2} [ <arc-sweep> || <arc-size> || <angle> ]?",
       "prose": "Add an elliptical arc command to the list of path data commands, ending at the point specified by the <coordinate-pair>. The of component specifies the size of the ellipse that the arc is taken from. The first <length-percentage> provides the horizontal radius of the ellipse and the second provides the vertical radius. Like for <coordinate-pair>s, <percentage> values are resolved against the width or height of the reference box, as appropriate. If only one <length-percentage> is provided, both radiuses use the provided value. In that case, <percentage> values are resolved against the direction-agnostic size of the reference box (similar to the circle() function). Note that SVG has some specific error-handling for the ellipse radiuses: if the endpoint is the same as the starting point, the command does nothing if either radius is zero, the command is equivalent to a <line-command> to the ending point if either radius is negative, its absolute value is used instead if the radiuses don’t describe an ellipse large enough to intersect both the starting point and ending point (after rotation by the specified <angle>), they are scaled up uniformly until the ellipse is just large enough to reach. The ellipse described by the specified radiuses defaults to being axis-aligned, but can be rotated by specifying an <angle>. Similar to the rotate() transform function, positive angles specify a clockwise rotation, and negative angles specify a counterclockwise rotation. If omitted, this defaults to 0deg. The ending point, radiuses, and angle, taken together, usually define two possible ellipses that intersect the starting point and ending point, and each ellipse can be traced in either direction, for a total of four possible arcs. The <arc-sweep> and <arc-size> components specify which of these arcs is desired: <arc-sweep> can be cw or ccw, indicating that the arc that is traced around the ellipse clockwise or counter-clockwise from the center, respectively, must be chosen. If omitted, this defaults to ccw. Note: In the SVG arc command, cw corresponds to the value 1 for the sweep flag, and ccw to the value 0. <arc-size> can be large or small, indicating that the larger or smaller, respectively, of the two possible arcs must be chosen. If omitted, this defaults to small. Note: In the SVG arc command, large corresponds to the value 1 for the large flag, and small to the 0. Note: If the starting and ending points are on exactly opposite sides of the ellipse, both possible arcs are the same size, but also there is only one possible ellipse. In this case, the <arc-sweep> distinguishes which of the two possible arcs will be chosen, and <arc-size> has no effect. A depiction of the two possible ellipses, and four possible arcs, that can be chosen between."
     },
     "<arc-sweep>": {

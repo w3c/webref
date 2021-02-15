@@ -1,0 +1,27 @@
+{
+  "name": "AuthenticatorAssertionResponse",
+  "defined": {
+    "spec": {
+      "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
+      "url": "https://www.w3.org/TR/webauthn-2/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorAssertionResponse : AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      authenticatorData;\n    [SameObject] readonly attribute ArrayBuffer      signature;\n    [SameObject] readonly attribute ArrayBuffer?     userHandle;\n};",
+    "href": "https://www.w3.org/TR/webauthn-2/#authenticatorassertionresponse"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AuthenticatorResponse",
+    "defined": {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
+        "url": "https://www.w3.org/TR/webauthn-2/"
+      },
+      "fragment": "[SecureContext, Exposed=Window]\ninterface AuthenticatorResponse {\n    [SameObject] readonly attribute ArrayBuffer      clientDataJSON;\n};",
+      "href": "https://www.w3.org/TR/webauthn-2/#authenticatorresponse"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

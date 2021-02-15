@@ -16,6 +16,7 @@
     },
     "idlNames": {
       "PaintWorkletGlobalScope": {
+        "fragment": "[Global=(Worklet,PaintWorklet),Exposed=PaintWorklet]\ninterface PaintWorkletGlobalScope : WorkletGlobalScope {\n    void registerPaint(DOMString name, VoidFunction paintCtor);\n    readonly attribute unrestricted double devicePixelRatio;\n};",
         "type": "interface",
         "name": "PaintWorkletGlobalScope",
         "inheritance": "WorkletGlobalScope",
@@ -114,6 +115,7 @@
         "partial": false
       },
       "PaintRenderingContext2DSettings": {
+        "fragment": "dictionary PaintRenderingContext2DSettings {\n    boolean alpha = true;\n};",
         "type": "dictionary",
         "name": "PaintRenderingContext2DSettings",
         "inheritance": null,
@@ -141,6 +143,7 @@
         "partial": false
       },
       "PaintRenderingContext2D": {
+        "fragment": "[Exposed=PaintWorklet]\ninterface PaintRenderingContext2D {\n};",
         "type": "interface",
         "name": "PaintRenderingContext2D",
         "inheritance": null,
@@ -159,6 +162,7 @@
         "partial": false
       },
       "PaintSize": {
+        "fragment": "[Exposed=PaintWorklet]\ninterface PaintSize {\n    readonly attribute double width;\n    readonly attribute double height;\n};",
         "type": "interface",
         "name": "PaintSize",
         "inheritance": null,
@@ -211,6 +215,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
+          "fragment": "partial namespace CSS {\n    [SameObject] readonly attribute Worklet paintWorklet;\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,
@@ -244,58 +249,80 @@
       ],
       "PaintRenderingContext2D": [
         {
-          "name": "PaintRenderingContext2D",
-          "type": "interface",
+          "fragment": "PaintRenderingContext2D includes CanvasState;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PaintRenderingContext2D",
           "includes": "CanvasState"
         },
         {
-          "name": "PaintRenderingContext2D",
-          "type": "interface",
+          "fragment": "PaintRenderingContext2D includes CanvasTransform;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PaintRenderingContext2D",
           "includes": "CanvasTransform"
         },
         {
-          "name": "PaintRenderingContext2D",
-          "type": "interface",
+          "fragment": "PaintRenderingContext2D includes CanvasCompositing;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PaintRenderingContext2D",
           "includes": "CanvasCompositing"
         },
         {
-          "name": "PaintRenderingContext2D",
-          "type": "interface",
+          "fragment": "PaintRenderingContext2D includes CanvasImageSmoothing;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PaintRenderingContext2D",
           "includes": "CanvasImageSmoothing"
         },
         {
-          "name": "PaintRenderingContext2D",
-          "type": "interface",
+          "fragment": "PaintRenderingContext2D includes CanvasFillStrokeStyles;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PaintRenderingContext2D",
           "includes": "CanvasFillStrokeStyles"
         },
         {
-          "name": "PaintRenderingContext2D",
-          "type": "interface",
+          "fragment": "PaintRenderingContext2D includes CanvasShadowStyles;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PaintRenderingContext2D",
           "includes": "CanvasShadowStyles"
         },
         {
-          "name": "PaintRenderingContext2D",
-          "type": "interface",
+          "fragment": "PaintRenderingContext2D includes CanvasRect;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PaintRenderingContext2D",
           "includes": "CanvasRect"
         },
         {
-          "name": "PaintRenderingContext2D",
-          "type": "interface",
+          "fragment": "PaintRenderingContext2D includes CanvasDrawPath;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PaintRenderingContext2D",
           "includes": "CanvasDrawPath"
         },
         {
-          "name": "PaintRenderingContext2D",
-          "type": "interface",
+          "fragment": "PaintRenderingContext2D includes CanvasDrawImage;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PaintRenderingContext2D",
           "includes": "CanvasDrawImage"
         },
         {
-          "name": "PaintRenderingContext2D",
-          "type": "interface",
+          "fragment": "PaintRenderingContext2D includes CanvasPathDrawingStyles;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PaintRenderingContext2D",
           "includes": "CanvasPathDrawingStyles"
         },
         {
-          "name": "PaintRenderingContext2D",
-          "type": "interface",
+          "fragment": "PaintRenderingContext2D includes CanvasPath;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "PaintRenderingContext2D",
           "includes": "CanvasPath"
         }
       ]

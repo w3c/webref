@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "VibratePattern": {
+        "fragment": "typedef (unsigned long or sequence<unsigned long>) VibratePattern;",
         "type": "typedef",
         "name": "VibratePattern",
         "idlType": {
@@ -52,6 +53,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "partial interface Navigator {\n    boolean vibrate(VibratePattern pattern);\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

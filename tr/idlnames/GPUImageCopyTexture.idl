@@ -1,0 +1,7 @@
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+dictionary GPUImageCopyTexture {
+    required GPUTexture texture;
+    GPUIntegerCoordinate mipLevel = 0;
+    GPUOrigin3D origin = {};
+    GPUTextureAspect aspect = "all";
+};

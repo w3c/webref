@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "TimeEvent": {
+        "fragment": "interface TimeEvent : Event {\n\n  readonly attribute WindowProxy? view;\n  readonly attribute long detail;\n\n  void initTimeEvent(DOMString typeArg, Window? viewArg, long detailArg);\n};",
         "type": "interface",
         "name": "TimeEvent",
         "inheritance": "Event",
@@ -113,6 +114,7 @@
         "partial": false
       },
       "SVGAnimationElement": {
+        "fragment": "interface SVGAnimationElement : SVGElement {\n\n  readonly attribute SVGElement? targetElement;\n\n  attribute EventHandler onbegin;\n  attribute EventHandler onend;\n  attribute EventHandler onrepeat;\n\n  float getStartTime();\n  float getCurrentTime();\n  float getSimpleDuration();\n\n  void beginElement();\n  void beginElementAt(float offset);\n  void endElement();\n  void endElementAt(float offset);\n};",
         "type": "interface",
         "name": "SVGAnimationElement",
         "inheritance": "SVGElement",
@@ -321,6 +323,7 @@
         "partial": false
       },
       "SVGAnimateElement": {
+        "fragment": "interface SVGAnimateElement : SVGAnimationElement {\n};",
         "type": "interface",
         "name": "SVGAnimateElement",
         "inheritance": "SVGAnimationElement",
@@ -329,6 +332,7 @@
         "partial": false
       },
       "SVGSetElement": {
+        "fragment": "interface SVGSetElement : SVGAnimationElement {\n};",
         "type": "interface",
         "name": "SVGSetElement",
         "inheritance": "SVGAnimationElement",
@@ -337,6 +341,7 @@
         "partial": false
       },
       "SVGAnimateMotionElement": {
+        "fragment": "interface SVGAnimateMotionElement : SVGAnimationElement {\n};",
         "type": "interface",
         "name": "SVGAnimateMotionElement",
         "inheritance": "SVGAnimationElement",
@@ -345,6 +350,7 @@
         "partial": false
       },
       "SVGMPathElement": {
+        "fragment": "interface SVGMPathElement : SVGElement {\n};",
         "type": "interface",
         "name": "SVGMPathElement",
         "inheritance": "SVGElement",
@@ -353,6 +359,7 @@
         "partial": false
       },
       "SVGAnimateTransformElement": {
+        "fragment": "interface SVGAnimateTransformElement : SVGAnimationElement {\n};",
         "type": "interface",
         "name": "SVGAnimateTransformElement",
         "inheritance": "SVGAnimationElement",
@@ -361,6 +368,7 @@
         "partial": false
       },
       "SVGDiscardElement": {
+        "fragment": "interface SVGDiscardElement : SVGAnimationElement {\n};",
         "type": "interface",
         "name": "SVGDiscardElement",
         "inheritance": "SVGAnimationElement",
@@ -372,20 +380,25 @@
     "idlExtendedNames": {
       "SVGAnimationElement": [
         {
-          "name": "SVGAnimationElement",
-          "type": "interface",
+          "fragment": "SVGAnimationElement includes SVGTests;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGAnimationElement",
           "includes": "SVGTests"
         }
       ],
       "SVGMPathElement": [
         {
-          "name": "SVGMPathElement",
-          "type": "interface",
+          "fragment": "SVGMPathElement includes SVGURIReference;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SVGMPathElement",
           "includes": "SVGURIReference"
         }
       ],
       "SVGSVGElement": [
         {
+          "fragment": "partial interface SVGSVGElement {\n  void pauseAnimations();\n  void unpauseAnimations();\n  boolean animationsPaused();\n  float getCurrentTime();\n  void setCurrentTime(float seconds);\n};",
           "type": "interface",
           "name": "SVGSVGElement",
           "inheritance": null,

@@ -17,6 +17,7 @@
     },
     "idlNames": {
       "NDEFMessage": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFMessage {\n  constructor(NDEFMessageInit messageInit);\n  readonly attribute FrozenArray<NDEFRecord> records;\n};",
         "type": "interface",
         "name": "NDEFMessage",
         "inheritance": null,
@@ -88,6 +89,7 @@
         "partial": false
       },
       "NDEFMessageInit": {
+        "fragment": "dictionary NDEFMessageInit {\n  required sequence<NDEFRecordInit> records;\n};",
         "type": "dictionary",
         "name": "NDEFMessageInit",
         "inheritance": null,
@@ -121,6 +123,7 @@
         "partial": false
       },
       "NDEFRecordDataSource": {
+        "fragment": "typedef (DOMString or BufferSource or NDEFMessageInit) NDEFRecordDataSource;",
         "type": "typedef",
         "name": "NDEFRecordDataSource",
         "idlType": {
@@ -159,6 +162,7 @@
         "extAttrs": []
       },
       "NDEFRecord": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFRecord {\n  constructor(NDEFRecordInit recordInit);\n\n  readonly attribute USVString recordType;\n  readonly attribute USVString? mediaType;\n  readonly attribute USVString? id;\n  readonly attribute DataView? data;\n\n  readonly attribute USVString? encoding;\n  readonly attribute USVString? lang;\n\n  sequence<NDEFRecord>? toRecords();\n};",
         "type": "interface",
         "name": "NDEFRecord",
         "inheritance": null,
@@ -320,6 +324,7 @@
         "partial": false
       },
       "NDEFRecordInit": {
+        "fragment": "dictionary NDEFRecordInit {\n  required USVString recordType;\n  USVString mediaType;\n  USVString id;\n\n  USVString encoding;\n  USVString lang;\n\n  NDEFRecordDataSource data;\n};",
         "type": "dictionary",
         "name": "NDEFRecordInit",
         "inheritance": null,
@@ -419,6 +424,7 @@
         "partial": false
       },
       "NDEFMessageSource": {
+        "fragment": "typedef (DOMString or BufferSource or NDEFMessageInit) NDEFMessageSource;",
         "type": "typedef",
         "name": "NDEFMessageSource",
         "idlType": {
@@ -457,6 +463,7 @@
         "extAttrs": []
       },
       "NDEFReader": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFReader : EventTarget {\n  constructor();\n\n  attribute EventHandler onreading;\n  attribute EventHandler onreadingerror;\n\n  Promise<undefined> scan(optional NDEFScanOptions options={});\n  Promise<undefined> write(NDEFMessageSource message,\n                                 optional NDEFWriteOptions options={});\n};",
         "type": "interface",
         "name": "NDEFReader",
         "inheritance": "EventTarget",
@@ -619,6 +626,7 @@
         "partial": false
       },
       "NDEFReadingEvent": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFReadingEvent : Event {\n  constructor(DOMString type, NDEFReadingEventInit readingEventInitDict);\n\n  readonly attribute DOMString serialNumber;\n  [SameObject] readonly attribute NDEFMessage message;\n};",
         "type": "interface",
         "name": "NDEFReadingEvent",
         "inheritance": "Event",
@@ -719,6 +727,7 @@
         "partial": false
       },
       "NDEFReadingEventInit": {
+        "fragment": "dictionary NDEFReadingEventInit : EventInit {\n  DOMString? serialNumber = \"\";\n  required NDEFMessageInit message;\n};",
         "type": "dictionary",
         "name": "NDEFReadingEventInit",
         "inheritance": "EventInit",
@@ -761,6 +770,7 @@
         "partial": false
       },
       "NDEFWriteOptions": {
+        "fragment": "dictionary NDEFWriteOptions {\n  boolean overwrite = true;\n  AbortSignal? signal;\n};",
         "type": "dictionary",
         "name": "NDEFWriteOptions",
         "inheritance": null,
@@ -803,6 +813,7 @@
         "partial": false
       },
       "NDEFScanOptions": {
+        "fragment": "dictionary NDEFScanOptions {\n  AbortSignal signal;\n};",
         "type": "dictionary",
         "name": "NDEFScanOptions",
         "inheritance": null,

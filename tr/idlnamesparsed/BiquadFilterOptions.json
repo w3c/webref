@@ -1,0 +1,27 @@
+{
+  "name": "BiquadFilterOptions",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "dictionary BiquadFilterOptions : AudioNodeOptions {\n  BiquadFilterType type = \"lowpass\";\n  float Q = 1;\n  float detune = 0;\n  float frequency = 350;\n  float gain = 0;\n};",
+    "href": "https://www.w3.org/TR/webaudio/#dictdef-biquadfilteroptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AudioNodeOptions",
+    "defined": {
+      "spec": {
+        "title": "Web Audio API",
+        "url": "https://www.w3.org/TR/webaudio/"
+      },
+      "fragment": "dictionary AudioNodeOptions {\n  unsigned long channelCount;\n  ChannelCountMode channelCountMode;\n  ChannelInterpretation channelInterpretation;\n};",
+      "href": "https://www.w3.org/TR/webaudio/#dictdef-audionodeoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

@@ -1,0 +1,6 @@
+// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+dictionary RTCRtpParameters {
+  required sequence<RTCRtpHeaderExtensionParameters> headerExtensions;
+  required RTCRtcpParameters rtcp;
+  required sequence<RTCRtpCodecParameters> codecs;
+};

@@ -1,0 +1,27 @@
+{
+  "name": "InputDeviceInfo",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams",
+      "url": "https://www.w3.org/TR/mediacapture-streams/"
+    },
+    "fragment": "[Exposed=Window]\ninterface InputDeviceInfo : MediaDeviceInfo {\n  MediaTrackCapabilities getCapabilities();\n};",
+    "href": "https://www.w3.org/TR/mediacapture-streams/#dom-inputdeviceinfo"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "MediaDeviceInfo",
+    "defined": {
+      "spec": {
+        "title": "Media Capture and Streams",
+        "url": "https://www.w3.org/TR/mediacapture-streams/"
+      },
+      "fragment": "[Exposed=Window, SecureContext]\ninterface MediaDeviceInfo {\n  readonly attribute DOMString deviceId;\n  readonly attribute MediaDeviceKind kind;\n  readonly attribute DOMString label;\n  readonly attribute DOMString groupId;\n  [Default] object toJSON();\n};",
+      "href": "https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

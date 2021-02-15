@@ -1,0 +1,5 @@
+// Source: Web MIDI API (https://www.w3.org/TR/webmidi/)
+interface MIDIOutput : MIDIPort {
+    void send (sequence<octet> data, optional double timestamp);
+    void clear ();
+};

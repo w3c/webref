@@ -30,6 +30,7 @@
     },
     "idlNames": {
       "PushManager": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushManager {\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedContentEncodings;\n\n  Promise<PushSubscription> subscribe(optional PushSubscriptionOptionsInit options = {});\n  Promise<PushSubscription?> getSubscription();\n  Promise<PushPermissionState> permissionState(optional PushSubscriptionOptionsInit options = {});\n};",
         "type": "interface",
         "name": "PushManager",
         "inheritance": null,
@@ -203,6 +204,7 @@
         "partial": false
       },
       "PushSubscriptionOptions": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushSubscriptionOptions {\n  readonly attribute boolean userVisibleOnly;\n  [SameObject] readonly attribute ArrayBuffer? applicationServerKey;\n};",
         "type": "interface",
         "name": "PushSubscriptionOptions",
         "inheritance": null,
@@ -272,6 +274,7 @@
         "partial": false
       },
       "PushSubscriptionOptionsInit": {
+        "fragment": "dictionary PushSubscriptionOptionsInit {\n  boolean userVisibleOnly = false;\n  (BufferSource or DOMString)? applicationServerKey = null;\n};",
         "type": "dictionary",
         "name": "PushSubscriptionOptionsInit",
         "inheritance": null,
@@ -333,6 +336,7 @@
         "partial": false
       },
       "PushSubscription": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushSubscription {\n  readonly attribute USVString endpoint;\n  readonly attribute DOMTimeStamp? expirationTime;\n  [SameObject] readonly attribute PushSubscriptionOptions options;\n  ArrayBuffer? getKey(PushEncryptionKeyName name);\n  Promise<boolean> unsubscribe();\n\n  PushSubscriptionJSON toJSON();\n};",
         "type": "interface",
         "name": "PushSubscription",
         "inheritance": null,
@@ -488,6 +492,7 @@
         "partial": false
       },
       "PushSubscriptionJSON": {
+        "fragment": "dictionary PushSubscriptionJSON {\n  USVString endpoint;\n  DOMTimeStamp? expirationTime;\n  record<DOMString, USVString> keys;\n};",
         "type": "dictionary",
         "name": "PushSubscriptionJSON",
         "inheritance": null,
@@ -559,6 +564,7 @@
         "partial": false
       },
       "PushEncryptionKeyName": {
+        "fragment": "enum PushEncryptionKeyName {\n  \"p256dh\",\n  \"auth\"\n};",
         "type": "enum",
         "name": "PushEncryptionKeyName",
         "values": [
@@ -574,6 +580,7 @@
         "extAttrs": []
       },
       "PushMessageData": {
+        "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushMessageData {\n  ArrayBuffer arrayBuffer();\n  Blob blob();\n  any json();\n  USVString text();\n};",
         "type": "interface",
         "name": "PushMessageData",
         "inheritance": null,
@@ -659,6 +666,7 @@
         "partial": false
       },
       "PushEvent": {
+        "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushEvent : ExtendableEvent {\n  constructor(DOMString type, optional PushEventInit eventInitDict = {});\n  readonly attribute PushMessageData? data;\n};",
         "type": "interface",
         "name": "PushEvent",
         "inheritance": "ExtendableEvent",
@@ -739,6 +747,7 @@
         "partial": false
       },
       "PushMessageDataInit": {
+        "fragment": "typedef (BufferSource or USVString) PushMessageDataInit;",
         "type": "typedef",
         "name": "PushMessageDataInit",
         "idlType": {
@@ -769,6 +778,7 @@
         "extAttrs": []
       },
       "PushEventInit": {
+        "fragment": "dictionary PushEventInit : ExtendableEventInit {\n  PushMessageDataInit data;\n};",
         "type": "dictionary",
         "name": "PushEventInit",
         "inheritance": "ExtendableEventInit",
@@ -793,6 +803,7 @@
         "partial": false
       },
       "PushSubscriptionChangeEvent": {
+        "fragment": "[Exposed=ServiceWorker, SecureContext]\ninterface PushSubscriptionChangeEvent : ExtendableEvent {\n  constructor(DOMString type, optional PushSubscriptionChangeEventInit eventInitDict = {});\n  readonly attribute PushSubscription? newSubscription;\n  readonly attribute PushSubscription? oldSubscription;\n};",
         "type": "interface",
         "name": "PushSubscriptionChangeEvent",
         "inheritance": "ExtendableEvent",
@@ -888,6 +899,7 @@
         "partial": false
       },
       "PushSubscriptionChangeEventInit": {
+        "fragment": "dictionary PushSubscriptionChangeEventInit : ExtendableEventInit {\n  PushSubscription newSubscription = null;\n  PushSubscription oldSubscription = null;\n};",
         "type": "dictionary",
         "name": "PushSubscriptionChangeEventInit",
         "inheritance": "ExtendableEventInit",
@@ -931,6 +943,7 @@
         "partial": false
       },
       "PushPermissionState": {
+        "fragment": "enum PushPermissionState {\n  \"denied\",\n  \"granted\",\n  \"prompt\",\n};",
         "type": "enum",
         "name": "PushPermissionState",
         "values": [
@@ -953,6 +966,7 @@
     "idlExtendedNames": {
       "ServiceWorkerRegistration": [
         {
+          "fragment": "[SecureContext]\npartial interface ServiceWorkerRegistration {\n  readonly attribute PushManager pushManager;\n};",
           "type": "interface",
           "name": "ServiceWorkerRegistration",
           "inheritance": null,
@@ -986,6 +1000,7 @@
       ],
       "ServiceWorkerGlobalScope": [
         {
+          "fragment": "[Exposed=ServiceWorker, SecureContext]\npartial interface ServiceWorkerGlobalScope {\n  attribute EventHandler onpush;\n  attribute EventHandler onpushsubscriptionchange;\n};",
           "type": "interface",
           "name": "ServiceWorkerGlobalScope",
           "inheritance": null,

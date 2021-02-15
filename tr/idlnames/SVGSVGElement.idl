@@ -1,0 +1,55 @@
+// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
+[Exposed=Window]
+interface SVGSVGElement : SVGGraphicsElement {
+
+  [SameObject] readonly attribute SVGAnimatedLength x;
+  [SameObject] readonly attribute SVGAnimatedLength y;
+  [SameObject] readonly attribute SVGAnimatedLength width;
+  [SameObject] readonly attribute SVGAnimatedLength height;
+
+  attribute float currentScale;
+  [SameObject] readonly attribute DOMPointReadOnly currentTranslate;
+
+  NodeList getIntersectionList(DOMRectReadOnly rect, SVGElement? referenceElement);
+  NodeList getEnclosureList(DOMRectReadOnly rect, SVGElement? referenceElement);
+  boolean checkIntersection(SVGElement element, DOMRectReadOnly rect);
+  boolean checkEnclosure(SVGElement element, DOMRectReadOnly rect);
+
+  void deselectAll();
+
+  SVGNumber createSVGNumber();
+  SVGLength createSVGLength();
+  SVGAngle createSVGAngle();
+  DOMPoint createSVGPoint();
+  DOMMatrix createSVGMatrix();
+  DOMRect createSVGRect();
+  SVGTransform createSVGTransform();
+  SVGTransform createSVGTransformFromMatrix(DOMMatrixReadOnly matrix);
+
+  Element getElementById(DOMString elementId);
+
+  // Deprecated methods that have no effect when called,
+  // but which are kept for compatibility reasons.
+  unsigned long suspendRedraw(unsigned long maxWaitMilliseconds);
+  void unsuspendRedraw(unsigned long suspendHandleID);
+  void unsuspendRedrawAll();
+  void forceRedraw();
+};
+
+// Source: SVG Animations (https://svgwg.org/specs/animations/)
+partial interface SVGSVGElement {
+  void pauseAnimations();
+  void unpauseAnimations();
+  boolean animationsPaused();
+  float getCurrentTime();
+  void setCurrentTime(float seconds);
+};
+
+// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
+SVGSVGElement includes SVGFitToViewBox;
+
+// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
+SVGSVGElement includes SVGZoomAndPan;
+
+// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
+SVGSVGElement includes WindowEventHandlers;

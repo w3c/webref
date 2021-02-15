@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "DataCue": {
+        "fragment": "[Exposed=Window]\ninterface DataCue : TextTrackCue {\n  constructor(double startTime, unrestricted double endTime,\n              any value, optional DOMString type);\n  attribute any value;\n  readonly attribute DOMString type;\n};",
         "type": "interface",
         "name": "DataCue",
         "inheritance": "TextTrackCue",

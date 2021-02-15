@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "FullscreenNavigationUI": {
+        "fragment": "enum FullscreenNavigationUI {\n  \"auto\",\n  \"show\",\n  \"hide\"\n};",
         "type": "enum",
         "name": "FullscreenNavigationUI",
         "values": [
@@ -29,6 +30,7 @@
         "extAttrs": []
       },
       "FullscreenOptions": {
+        "fragment": "dictionary FullscreenOptions {\n  FullscreenNavigationUI navigationUI = \"auto\";\n};",
         "type": "dictionary",
         "name": "FullscreenOptions",
         "inheritance": null,
@@ -59,6 +61,7 @@
     "idlExtendedNames": {
       "Element": [
         {
+          "fragment": "partial interface Element {\n  Promise<undefined> requestFullscreen(optional FullscreenOptions options = {});\n\n  attribute EventHandler onfullscreenchange;\n  attribute EventHandler onfullscreenerror;\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -143,6 +146,7 @@
       ],
       "Document": [
         {
+          "fragment": "partial interface Document {\n  [LegacyLenientSetter] readonly attribute boolean fullscreenEnabled;\n  [LegacyLenientSetter, Unscopable] readonly attribute boolean fullscreen; // historical\n\n  Promise<undefined> exitFullscreen();\n\n  attribute EventHandler onfullscreenchange;\n  attribute EventHandler onfullscreenerror;\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -258,6 +262,7 @@
       ],
       "DocumentOrShadowRoot": [
         {
+          "fragment": "partial interface mixin DocumentOrShadowRoot {\n  [LegacyLenientSetter] readonly attribute Element? fullscreenElement;\n};",
           "type": "interface mixin",
           "name": "DocumentOrShadowRoot",
           "inheritance": null,

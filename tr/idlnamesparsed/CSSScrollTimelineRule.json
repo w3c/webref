@@ -1,0 +1,60 @@
+{
+  "name": "CSSScrollTimelineRule",
+  "defined": {
+    "spec": {
+      "title": "Scroll-linked Animations",
+      "url": "https://drafts.csswg.org/scroll-animations-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CSSScrollTimelineRule : CSSRule {\n    readonly attribute CSSOMString name;\n    readonly attribute CSSOMString source;\n    readonly attribute CSSOMString orientation;\n    readonly attribute CSSOMString scrollOffsets;\n    readonly attribute CSSOMString timeRange;\n};",
+    "href": "https://drafts.csswg.org/scroll-animations-1/#cssscrolltimelinerule"
+  },
+  "extended": [],
+  "inheritance": {
+    "extended": [
+      {
+        "spec": {
+          "title": "CSS Animations Level 1",
+          "url": "https://www.w3.org/TR/css-animations-1/"
+        },
+        "fragment": "partial interface CSSRule {\n    const unsigned short KEYFRAMES_RULE = 7;\n    const unsigned short KEYFRAME_RULE = 8;\n};"
+      },
+      {
+        "spec": {
+          "title": "CSS Conditional Rules Module Level 3",
+          "url": "https://www.w3.org/TR/css-conditional-3/"
+        },
+        "fragment": "partial interface CSSRule {\n    const unsigned short SUPPORTS_RULE = 12;\n};"
+      },
+      {
+        "spec": {
+          "title": "CSS Counter Styles Level 3",
+          "url": "https://www.w3.org/TR/css-counter-styles-3/"
+        },
+        "fragment": "partial interface CSSRule {\n    const unsigned short COUNTER_STYLE_RULE = 11;\n};"
+      },
+      {
+        "spec": {
+          "title": "CSS Device Adaptation Module Level 1",
+          "url": "https://www.w3.org/TR/css-device-adapt-1/"
+        },
+        "fragment": "partial interface CSSRule {\n    const unsigned short VIEWPORT_RULE = 15;\n};"
+      },
+      {
+        "spec": {
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://www.w3.org/TR/css-fonts-4/"
+        },
+        "fragment": "partial interface CSSRule {  const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n};"
+      },
+      {
+        "spec": {
+          "title": "CSS Fonts Module Level 4",
+          "url": "https://www.w3.org/TR/css-fonts-4/"
+        },
+        "fragment": "partial interface CSSRule {  const unsigned short FONT_PALETTE_VALUES_RULE = 15;\n};"
+      }
+    ],
+    "includes": []
+  },
+  "includes": []
+}

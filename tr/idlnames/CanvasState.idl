@@ -1,0 +1,6 @@
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+interface mixin CanvasState {
+  // state
+  undefined save(); // push state on state stack
+  undefined restore(); // pop state stack and restore state
+};

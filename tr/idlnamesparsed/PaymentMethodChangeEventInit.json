@@ -1,0 +1,40 @@
+{
+  "name": "PaymentMethodChangeEventInit",
+  "defined": {
+    "spec": {
+      "title": "Payment Request API",
+      "url": "https://www.w3.org/TR/payment-request/"
+    },
+    "fragment": "dictionary PaymentMethodChangeEventInit : PaymentRequestUpdateEventInit {\n  DOMString methodName = \"\";\n  object? methodDetails = null;\n};",
+    "href": "https://www.w3.org/TR/payment-request/#dom-paymentmethodchangeeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PaymentRequestUpdateEventInit",
+    "defined": {
+      "spec": {
+        "title": "Payment Request API",
+        "url": "https://www.w3.org/TR/payment-request/"
+      },
+      "fragment": "dictionary PaymentRequestUpdateEventInit : EventInit {};",
+      "href": "https://www.w3.org/TR/payment-request/#dom-paymentrequestupdateeventinit"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventInit",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

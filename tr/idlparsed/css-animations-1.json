@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "AnimationEvent": {
+        "fragment": "[Exposed=Window,\n Constructor(CSSOMString type, optional AnimationEventInit animationEventInitDict)]\ninterface AnimationEvent : Event {\n  readonly attribute CSSOMString animationName;\n  readonly attribute double elapsedTime;\n  readonly attribute CSSOMString pseudoElement;\n};",
         "type": "interface",
         "name": "AnimationEvent",
         "inheritance": "Event",
@@ -122,6 +123,7 @@
         "partial": false
       },
       "AnimationEventInit": {
+        "fragment": "dictionary AnimationEventInit : EventInit {\n  CSSOMString animationName = \"\";\n  double elapsedTime = 0.0;\n  CSSOMString pseudoElement = \"\";\n};",
         "type": "dictionary",
         "name": "AnimationEventInit",
         "inheritance": "EventInit",
@@ -185,6 +187,7 @@
         "partial": false
       },
       "CSSKeyframeRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSKeyframeRule : CSSRule {\n  attribute CSSOMString keyText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
         "type": "interface",
         "name": "CSSKeyframeRule",
         "inheritance": "CSSRule",
@@ -250,6 +253,7 @@
         "partial": false
       },
       "CSSKeyframesRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSKeyframesRule : CSSRule {\n           attribute CSSOMString name;\n  readonly attribute CSSRuleList cssRules;\n\n  void             appendRule(CSSOMString rule);\n  void             deleteRule(CSSOMString select);\n  CSSKeyframeRule? findRule(CSSOMString select);\n};",
         "type": "interface",
         "name": "CSSKeyframesRule",
         "inheritance": "CSSRule",
@@ -398,6 +402,7 @@
     "idlExtendedNames": {
       "CSSRule": [
         {
+          "fragment": "partial interface CSSRule {\n    const unsigned short KEYFRAMES_RULE = 7;\n    const unsigned short KEYFRAME_RULE = 8;\n};",
           "type": "interface",
           "name": "CSSRule",
           "inheritance": null,
@@ -443,6 +448,7 @@
       ],
       "GlobalEventHandlers": [
         {
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};",
           "type": "interface mixin",
           "name": "GlobalEventHandlers",
           "inheritance": null,

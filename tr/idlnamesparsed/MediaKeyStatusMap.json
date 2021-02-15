@@ -1,0 +1,13 @@
+{
+  "name": "MediaKeyStatusMap",
+  "defined": {
+    "spec": {
+      "title": "Encrypted Media Extensions",
+      "url": "https://www.w3.org/TR/encrypted-media/"
+    },
+    "fragment": "[SecureContext]\ninterface MediaKeyStatusMap {\n    iterable<BufferSource, MediaKeyStatus>;\n    readonly attribute unsigned long size;\n    boolean has(BufferSource keyId);\n    any     get(BufferSource keyId);\n};"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

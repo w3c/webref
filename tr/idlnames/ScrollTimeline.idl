@@ -1,0 +1,9 @@
+// Source: Scroll-linked Animations (https://drafts.csswg.org/scroll-animations-1/)
+[Exposed=Window]
+interface ScrollTimeline : AnimationTimeline {
+  constructor(optional ScrollTimelineOptions options = {});
+  readonly attribute Element? source;
+  readonly attribute ScrollDirection orientation;
+  readonly attribute FrozenArray<ScrollTimelineOffset> scrollOffsets;
+  readonly attribute (double or ScrollTimelineAutoKeyword) timeRange;
+};

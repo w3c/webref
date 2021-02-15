@@ -1,0 +1,14 @@
+{
+  "name": "NavigatorUAData",
+  "defined": {
+    "spec": {
+      "title": "User-Agent Client Hints",
+      "url": "https://wicg.github.io/ua-client-hints/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface NavigatorUAData {\n  readonly attribute FrozenArray<NavigatorUABrandVersion> brands;\n  readonly attribute boolean mobile;\n  Promise<UADataValues> getHighEntropyValues(sequence<DOMString> hints);\n};",
+    "href": "https://wicg.github.io/ua-client-hints/#navigatoruadata"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

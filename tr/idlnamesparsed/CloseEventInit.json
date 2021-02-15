@@ -1,0 +1,27 @@
+{
+  "name": "CloseEventInit",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "dictionary CloseEventInit : EventInit {\n  boolean wasClean = false;\n  unsigned short code = 0;\n  USVString reason = \"\";\n};",
+    "href": "https://html.spec.whatwg.org/multipage/web-sockets.html#closeeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

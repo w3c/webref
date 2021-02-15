@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "GeolocationSensor": {
+        "fragment": "[Constructor(optional GeolocationSensorOptions options), SecureContext, Exposed=Window]\ninterface GeolocationSensor : Sensor {\n  static Promise<GeolocationSensorReading> read(optional ReadOptions readOptions);\n  readonly attribute unrestricted double? latitude;\n  readonly attribute unrestricted double? longitude;\n  readonly attribute unrestricted double? altitude;\n  readonly attribute unrestricted double? accuracy;\n  readonly attribute unrestricted double? altitudeAccuracy;\n  readonly attribute unrestricted double? heading;\n  readonly attribute unrestricted double? speed;\n};",
         "type": "interface",
         "name": "GeolocationSensor",
         "inheritance": "Sensor",
@@ -208,6 +209,7 @@
         "partial": false
       },
       "GeolocationSensorOptions": {
+        "fragment": "dictionary GeolocationSensorOptions : SensorOptions {\n  // placeholder for GeolocationSensor-specific options\n};",
         "type": "dictionary",
         "name": "GeolocationSensorOptions",
         "inheritance": "SensorOptions",
@@ -216,6 +218,7 @@
         "partial": false
       },
       "ReadOptions": {
+        "fragment": "dictionary ReadOptions : GeolocationSensorOptions {\n  AbortSignal? signal;\n};",
         "type": "dictionary",
         "name": "ReadOptions",
         "inheritance": "GeolocationSensorOptions",
@@ -240,6 +243,7 @@
         "partial": false
       },
       "GeolocationSensorReading": {
+        "fragment": "dictionary GeolocationSensorReading {\n  DOMHighResTimeStamp? timestamp;\n  double? latitude;\n  double? longitude;\n  double? altitude;\n  double? accuracy;\n  double? altitudeAccuracy;\n  double? heading;\n  double? speed;\n};",
         "type": "dictionary",
         "name": "GeolocationSensorReading",
         "inheritance": null,

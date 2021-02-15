@@ -1,0 +1,21 @@
+{
+  "name": "WebGLContextAttributes",
+  "defined": {
+    "spec": {
+      "title": "WebGL Specification",
+      "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+    },
+    "fragment": "dictionary WebGLContextAttributes {\n    boolean alpha = true;\n    boolean depth = true;\n    boolean stencil = false;\n    boolean antialias = true;\n    boolean premultipliedAlpha = true;\n    boolean preserveDrawingBuffer = false;\n    WebGLPowerPreference powerPreference = \"default\";\n    boolean failIfMajorPerformanceCaveat = false;\n    boolean desynchronized = false;\n};"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR Device API",
+        "url": "https://www.w3.org/TR/webxr/"
+      },
+      "fragment": "partial dictionary WebGLContextAttributes {\n    boolean xrCompatible = false;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

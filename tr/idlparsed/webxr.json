@@ -37,6 +37,7 @@
     },
     "idlNames": {
       "XRSystem": {
+        "fragment": "[SecureContext, Exposed=Window] interface XRSystem : EventTarget {\n  // Methods\n  Promise<boolean> isSessionSupported(XRSessionMode mode);\n  [NewObject] Promise<XRSession> requestSession(XRSessionMode mode, optional XRSessionInit options = {});\n\n  // Events\n  attribute EventHandler ondevicechange;\n};",
         "type": "interface",
         "name": "XRSystem",
         "inheritance": "EventTarget",
@@ -184,6 +185,7 @@
         "partial": false
       },
       "XRSessionMode": {
+        "fragment": "enum XRSessionMode {\n  \"inline\",\n  \"immersive-vr\",\n  \"immersive-ar\"\n};",
         "type": "enum",
         "name": "XRSessionMode",
         "values": [
@@ -203,6 +205,7 @@
         "extAttrs": []
       },
       "XRSessionInit": {
+        "fragment": "dictionary XRSessionInit {\n  sequence<any> requiredFeatures;\n  sequence<any> optionalFeatures;\n};",
         "type": "dictionary",
         "name": "XRSessionInit",
         "inheritance": null,
@@ -260,6 +263,7 @@
         "partial": false
       },
       "XRVisibilityState": {
+        "fragment": "enum XRVisibilityState {\n  \"visible\",\n  \"visible-blurred\",\n  \"hidden\",\n};",
         "type": "enum",
         "name": "XRVisibilityState",
         "values": [
@@ -279,6 +283,7 @@
         "extAttrs": []
       },
       "XRSession": {
+        "fragment": "[SecureContext, Exposed=Window] interface XRSession : EventTarget {\n  // Attributes\n  readonly attribute XRVisibilityState visibilityState;\n  [SameObject] readonly attribute XRRenderState renderState;\n  [SameObject] readonly attribute XRInputSourceArray inputSources;\n\n  // Methods\n  void updateRenderState(optional XRRenderStateInit state = {});\n  [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);\n\n  unsigned long requestAnimationFrame(XRFrameRequestCallback callback);\n  void cancelAnimationFrame(unsigned long handle);\n\n  Promise<void> end();\n\n  // Events\n  attribute EventHandler onend;\n  attribute EventHandler oninputsourceschange;\n  attribute EventHandler onselect;\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectend;\n  attribute EventHandler onsqueeze;\n  attribute EventHandler onsqueezestart;\n  attribute EventHandler onsqueezeend;\n  attribute EventHandler onvisibilitychange;\n};",
         "type": "interface",
         "name": "XRSession",
         "inheritance": "EventTarget",
@@ -668,6 +673,7 @@
         "partial": false
       },
       "XRRenderStateInit": {
+        "fragment": "dictionary XRRenderStateInit {\n  double depthNear;\n  double depthFar;\n  double inlineVerticalFieldOfView;\n  XRWebGLLayer? baseLayer;\n  sequence<XRLayer>? layers;\n};",
         "type": "dictionary",
         "name": "XRRenderStateInit",
         "inheritance": null,
@@ -761,6 +767,7 @@
         "partial": false
       },
       "XRRenderState": {
+        "fragment": "[SecureContext, Exposed=Window] interface XRRenderState {\n  readonly attribute double depthNear;\n  readonly attribute double depthFar;\n  readonly attribute double? inlineVerticalFieldOfView;\n  readonly attribute XRWebGLLayer? baseLayer;\n};",
         "type": "interface",
         "name": "XRRenderState",
         "inheritance": null,
@@ -846,6 +853,7 @@
         "partial": false
       },
       "XRFrameRequestCallback": {
+        "fragment": "callback XRFrameRequestCallback = void (DOMHighResTimeStamp time, XRFrame frame);",
         "type": "callback",
         "name": "XRFrameRequestCallback",
         "idlType": {
@@ -893,6 +901,7 @@
         "extAttrs": []
       },
       "XRFrame": {
+        "fragment": "[SecureContext, Exposed=Window] interface XRFrame {\n  [SameObject] readonly attribute XRSession session;\n\n  XRViewerPose? getViewerPose(XRReferenceSpace referenceSpace);\n  XRPose? getPose(XRSpace space, XRSpace baseSpace);\n};",
         "type": "interface",
         "name": "XRFrame",
         "inheritance": null,
@@ -1020,6 +1029,7 @@
         "partial": false
       },
       "XRSpace": {
+        "fragment": "[SecureContext, Exposed=Window] interface XRSpace : EventTarget {\n\n};",
         "type": "interface",
         "name": "XRSpace",
         "inheritance": "EventTarget",
@@ -1044,6 +1054,7 @@
         "partial": false
       },
       "XRReferenceSpaceType": {
+        "fragment": "enum XRReferenceSpaceType {\n  \"viewer\",\n  \"local\",\n  \"local-floor\",\n  \"bounded-floor\",\n  \"unbounded\"\n};",
         "type": "enum",
         "name": "XRReferenceSpaceType",
         "values": [
@@ -1071,6 +1082,7 @@
         "extAttrs": []
       },
       "XRReferenceSpace": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRReferenceSpace : XRSpace {\n  [NewObject] XRReferenceSpace getOffsetReferenceSpace(XRRigidTransform originOffset);\n\n  attribute EventHandler onreset;\n};",
         "type": "interface",
         "name": "XRReferenceSpace",
         "inheritance": "XRSpace",
@@ -1150,6 +1162,7 @@
         "partial": false
       },
       "XRBoundedReferenceSpace": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRBoundedReferenceSpace : XRReferenceSpace {\n  readonly attribute FrozenArray<DOMPointReadOnly> boundsGeometry;\n};",
         "type": "interface",
         "name": "XRBoundedReferenceSpace",
         "inheritance": "XRReferenceSpace",
@@ -1199,6 +1212,7 @@
         "partial": false
       },
       "XREye": {
+        "fragment": "enum XREye {\n  \"none\",\n  \"left\",\n  \"right\"\n};",
         "type": "enum",
         "name": "XREye",
         "values": [
@@ -1218,6 +1232,7 @@
         "extAttrs": []
       },
       "XRView": {
+        "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute Float32Array projectionMatrix;\n  [SameObject] readonly attribute XRRigidTransform transform;\n};",
         "type": "interface",
         "name": "XRView",
         "inheritance": null,
@@ -1295,6 +1310,7 @@
         "partial": false
       },
       "XRViewport": {
+        "fragment": "[SecureContext, Exposed=Window] interface XRViewport {\n  readonly attribute long x;\n  readonly attribute long y;\n  readonly attribute long width;\n  readonly attribute long height;\n};",
         "type": "interface",
         "name": "XRViewport",
         "inheritance": null,
@@ -1380,6 +1396,7 @@
         "partial": false
       },
       "XRRigidTransform": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRRigidTransform {\n  constructor(optional DOMPointInit position = {}, optional DOMPointInit orientation = {});\n  [SameObject] readonly attribute DOMPointReadOnly position;\n  [SameObject] readonly attribute DOMPointReadOnly orientation;\n  readonly attribute Float32Array matrix;\n  [SameObject] readonly attribute XRRigidTransform inverse;\n};",
         "type": "interface",
         "name": "XRRigidTransform",
         "inheritance": null,
@@ -1528,6 +1545,7 @@
         "partial": false
       },
       "XRPose": {
+        "fragment": "[SecureContext, Exposed=Window] interface XRPose {\n  [SameObject] readonly attribute XRRigidTransform transform;\n  readonly attribute boolean emulatedPosition;\n};",
         "type": "interface",
         "name": "XRPose",
         "inheritance": null,
@@ -1590,6 +1608,7 @@
         "partial": false
       },
       "XRViewerPose": {
+        "fragment": "[SecureContext, Exposed=Window] interface XRViewerPose : XRPose {\n  [SameObject] readonly attribute FrozenArray<XRView> views;\n};",
         "type": "interface",
         "name": "XRViewerPose",
         "inheritance": "XRPose",
@@ -1646,6 +1665,7 @@
         "partial": false
       },
       "XRHandedness": {
+        "fragment": "enum XRHandedness {\n  \"none\",\n  \"left\",\n  \"right\"\n};",
         "type": "enum",
         "name": "XRHandedness",
         "values": [
@@ -1665,6 +1685,7 @@
         "extAttrs": []
       },
       "XRTargetRayMode": {
+        "fragment": "enum XRTargetRayMode {\n  \"gaze\",\n  \"tracked-pointer\",\n  \"screen\"\n};",
         "type": "enum",
         "name": "XRTargetRayMode",
         "values": [
@@ -1684,6 +1705,7 @@
         "extAttrs": []
       },
       "XRInputSource": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRInputSource {\n  readonly attribute XRHandedness handedness;\n  readonly attribute XRTargetRayMode targetRayMode;\n  [SameObject] readonly attribute XRSpace targetRaySpace;\n  [SameObject] readonly attribute XRSpace? gripSpace;\n  [SameObject] readonly attribute FrozenArray<DOMString> profiles;\n};",
         "type": "interface",
         "name": "XRInputSource",
         "inheritance": null,
@@ -1814,6 +1836,7 @@
         "partial": false
       },
       "XRInputSourceArray": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRInputSourceArray {\n  iterable<XRInputSource>;\n  readonly attribute unsigned long length;\n  getter XRInputSource(unsigned long index);\n};",
         "type": "interface",
         "name": "XRInputSourceArray",
         "inheritance": null,
@@ -1903,6 +1926,7 @@
         "partial": false
       },
       "XRLayer": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRLayer : EventTarget {};",
         "type": "interface",
         "name": "XRLayer",
         "inheritance": "EventTarget",
@@ -1927,6 +1951,7 @@
         "partial": false
       },
       "XRWebGLRenderingContext": {
+        "fragment": "typedef (WebGLRenderingContext or\n         WebGL2RenderingContext) XRWebGLRenderingContext;",
         "type": "typedef",
         "name": "XRWebGLRenderingContext",
         "idlType": {
@@ -1957,6 +1982,7 @@
         "extAttrs": []
       },
       "XRWebGLLayerInit": {
+        "fragment": "dictionary XRWebGLLayerInit {\n  boolean antialias = true;\n  boolean depth = true;\n  boolean stencil = false;\n  boolean alpha = true;\n  boolean ignoreDepthValues = false;\n  double framebufferScaleFactor = 1.0;\n};",
         "type": "dictionary",
         "name": "XRWebGLLayerInit",
         "inheritance": null,
@@ -2074,6 +2100,7 @@
         "partial": false
       },
       "XRWebGLLayer": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRWebGLLayer: XRLayer {\n  constructor(XRSession session,\n             XRWebGLRenderingContext context,\n             optional XRWebGLLayerInit layerInit = {});\n  // Attributes\n  readonly attribute boolean antialias;\n  readonly attribute boolean ignoreDepthValues;\n\n  [SameObject] readonly attribute WebGLFramebuffer? framebuffer;\n  readonly attribute unsigned long framebufferWidth;\n  readonly attribute unsigned long framebufferHeight;\n\n  // Methods\n  XRViewport? getViewport(XRView view);\n\n  // Static Methods\n  static double getNativeFramebufferScaleFactor(XRSession session);\n};",
         "type": "interface",
         "name": "XRWebGLLayer",
         "inheritance": "XRLayer",
@@ -2301,6 +2328,7 @@
         "partial": false
       },
       "XRSessionEvent": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRSessionEvent : Event {\n  constructor(DOMString type, XRSessionEventInit eventInitDict);\n  [SameObject] readonly attribute XRSession session;\n};",
         "type": "interface",
         "name": "XRSessionEvent",
         "inheritance": "Event",
@@ -2386,6 +2414,7 @@
         "partial": false
       },
       "XRSessionEventInit": {
+        "fragment": "dictionary XRSessionEventInit : EventInit {\n  required XRSession session;\n};",
         "type": "dictionary",
         "name": "XRSessionEventInit",
         "inheritance": "EventInit",
@@ -2410,6 +2439,7 @@
         "partial": false
       },
       "XRInputSourceEvent": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRInputSourceEvent : Event {\n  constructor(DOMString type, XRInputSourceEventInit eventInitDict);\n  [SameObject] readonly attribute XRFrame frame;\n  [SameObject] readonly attribute XRInputSource inputSource;\n};",
         "type": "interface",
         "name": "XRInputSourceEvent",
         "inheritance": "Event",
@@ -2517,6 +2547,7 @@
         "partial": false
       },
       "XRInputSourceEventInit": {
+        "fragment": "dictionary XRInputSourceEventInit : EventInit {\n  required XRFrame frame;\n  required XRInputSource inputSource;\n};",
         "type": "dictionary",
         "name": "XRInputSourceEventInit",
         "inheritance": "EventInit",
@@ -2556,6 +2587,7 @@
         "partial": false
       },
       "XRInputSourcesChangeEvent": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRInputSourcesChangeEvent : Event {\n  constructor(DOMString type, XRInputSourcesChangeEventInit eventInitDict);\n  [SameObject] readonly attribute XRSession session;\n  [SameObject] readonly attribute FrozenArray<XRInputSource> added;\n  [SameObject] readonly attribute FrozenArray<XRInputSource> removed;\n};",
         "type": "interface",
         "name": "XRInputSourcesChangeEvent",
         "inheritance": "Event",
@@ -2703,6 +2735,7 @@
         "partial": false
       },
       "XRInputSourcesChangeEventInit": {
+        "fragment": "dictionary XRInputSourcesChangeEventInit : EventInit {\n  required XRSession session;\n  required FrozenArray<XRInputSource> added;\n  required FrozenArray<XRInputSource> removed;\n\n};",
         "type": "dictionary",
         "name": "XRInputSourcesChangeEventInit",
         "inheritance": "EventInit",
@@ -2775,6 +2808,7 @@
         "partial": false
       },
       "XRReferenceSpaceEvent": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRReferenceSpaceEvent : Event {\n  constructor(DOMString type, XRReferenceSpaceEventInit eventInitDict);\n  [SameObject] readonly attribute XRReferenceSpace referenceSpace;\n  [SameObject] readonly attribute XRRigidTransform? transform;\n};",
         "type": "interface",
         "name": "XRReferenceSpaceEvent",
         "inheritance": "Event",
@@ -2882,6 +2916,7 @@
         "partial": false
       },
       "XRReferenceSpaceEventInit": {
+        "fragment": "dictionary XRReferenceSpaceEventInit : EventInit {\n  required XRReferenceSpace referenceSpace;\n  XRRigidTransform? transform = null;\n};",
         "type": "dictionary",
         "name": "XRReferenceSpaceEventInit",
         "inheritance": "EventInit",
@@ -2923,6 +2958,7 @@
         "partial": false
       },
       "XRPermissionDescriptor": {
+        "fragment": "dictionary XRPermissionDescriptor: PermissionDescriptor {\n  XRSessionMode mode;\n  sequence<any> requiredFeatures;\n  sequence<any> optionalFeatures;\n};",
         "type": "dictionary",
         "name": "XRPermissionDescriptor",
         "inheritance": "PermissionDescriptor",
@@ -2995,6 +3031,7 @@
         "partial": false
       },
       "XRPermissionStatus": {
+        "fragment": "[Exposed=Window]\ninterface XRPermissionStatus: PermissionStatus {\n  attribute FrozenArray<any> granted;\n};",
         "type": "interface",
         "name": "XRPermissionStatus",
         "inheritance": "PermissionStatus",
@@ -3041,6 +3078,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute XRSystem xr;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -3080,6 +3118,7 @@
       ],
       "WebGLContextAttributes": [
         {
+          "fragment": "partial dictionary WebGLContextAttributes {\n    boolean xrCompatible = false;\n};",
           "type": "dictionary",
           "name": "WebGLContextAttributes",
           "inheritance": null,
@@ -3109,6 +3148,7 @@
       ],
       "WebGLRenderingContextBase": [
         {
+          "fragment": "partial interface mixin WebGLRenderingContextBase {\n    [NewObject] Promise<void> makeXRCompatible();\n};",
           "type": "interface mixin",
           "name": "WebGLRenderingContextBase",
           "inheritance": null,

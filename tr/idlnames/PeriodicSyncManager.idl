@@ -1,0 +1,7 @@
+// Source: Web Periodic Background Synchronization (https://wicg.github.io/periodic-background-sync/)
+[Exposed=(Window,Worker)]
+interface PeriodicSyncManager {
+    Promise<void> register(DOMString tag, optional BackgroundSyncOptions options);
+    Promise<sequence<DOMString>> getTags();
+    Promise<void> unregister(DOMString tag);
+};

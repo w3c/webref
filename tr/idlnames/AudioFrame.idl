@@ -1,0 +1,8 @@
+// Source: WebCodecs (https://wicg.github.io/web-codecs/)
+[Exposed=(Window,Worker)]
+interface AudioFrame {
+  constructor(AudioFrameInit init);
+  readonly attribute unsigned long long timestamp;
+  readonly attribute AudioBuffer? buffer;
+  undefined close();
+};

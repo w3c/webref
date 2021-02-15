@@ -1,0 +1,35 @@
+{
+  "name": "TextTrack",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface TextTrack : EventTarget {\n  readonly attribute TextTrackKind kind;\n  readonly attribute DOMString label;\n  readonly attribute DOMString language;\n\n  readonly attribute DOMString id;\n  readonly attribute DOMString inBandMetadataTrackDispatchType;\n\n  attribute TextTrackMode mode;\n\n  readonly attribute TextTrackCueList? cues;\n  readonly attribute TextTrackCueList? activeCues;\n\n  undefined addCue(TextTrackCue cue);\n  undefined removeCue(TextTrackCue cue);\n\n  attribute EventHandler oncuechange;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/media.html#texttrack"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Media Source Extensions™",
+        "url": "https://www.w3.org/TR/media-source/"
+      },
+      "fragment": "partial interface TextTrack {\n    readonly attribute SourceBuffer? sourceBuffer;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

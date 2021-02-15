@@ -1,0 +1,14 @@
+{
+  "name": "PushSubscription",
+  "defined": {
+    "spec": {
+      "title": "Push API",
+      "url": "https://www.w3.org/TR/push-api/"
+    },
+    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushSubscription {\n  readonly attribute USVString endpoint;\n  readonly attribute DOMTimeStamp? expirationTime;\n  [SameObject] readonly attribute PushSubscriptionOptions options;\n  ArrayBuffer? getKey(PushEncryptionKeyName name);\n  Promise<boolean> unsubscribe();\n\n  PushSubscriptionJSON toJSON();\n};",
+    "href": "https://www.w3.org/TR/push-api/#dom-pushsubscription"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

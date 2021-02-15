@@ -1,0 +1,27 @@
+{
+  "name": "Clipboard",
+  "defined": {
+    "spec": {
+      "title": "Clipboard API and events",
+      "url": "https://www.w3.org/TR/clipboard-apis/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface Clipboard : EventTarget {\n  Promise<ClipboardItems> read();\n  Promise<DOMString> readText();\n  Promise<undefined> write(ClipboardItems data);\n  Promise<undefined> writeText(DOMString data);\n};",
+    "href": "https://www.w3.org/TR/clipboard-apis/#clipboard"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

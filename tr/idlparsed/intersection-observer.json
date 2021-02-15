@@ -15,6 +15,7 @@
     },
     "idlNames": {
       "IntersectionObserverCallback": {
+        "fragment": "callback IntersectionObserverCallback = undefined (sequence<IntersectionObserverEntry> entries, IntersectionObserver observer);",
         "type": "callback",
         "name": "IntersectionObserverCallback",
         "idlType": {
@@ -71,6 +72,7 @@
         "extAttrs": []
       },
       "IntersectionObserver": {
+        "fragment": "[Exposed=Window]\ninterface IntersectionObserver {\n  constructor(IntersectionObserverCallback callback, optional IntersectionObserverInit options = {});\n  readonly attribute (Element or Document)? root;\n  readonly attribute DOMString rootMargin;\n  readonly attribute FrozenArray<double> thresholds;\n  undefined observe(Element target);\n  undefined unobserve(Element target);\n  undefined disconnect();\n  sequence<IntersectionObserverEntry> takeRecords();\n};",
         "type": "interface",
         "name": "IntersectionObserver",
         "inheritance": null,
@@ -304,6 +306,7 @@
         "partial": false
       },
       "IntersectionObserverEntry": {
+        "fragment": "[Exposed=Window]\ninterface IntersectionObserverEntry {\n  constructor(IntersectionObserverEntryInit intersectionObserverEntryInit);\n  readonly attribute DOMHighResTimeStamp time;\n  readonly attribute DOMRectReadOnly? rootBounds;\n  readonly attribute DOMRectReadOnly boundingClientRect;\n  readonly attribute DOMRectReadOnly intersectionRect;\n  readonly attribute boolean isIntersecting;\n  readonly attribute double intersectionRatio;\n  readonly attribute Element target;\n};",
         "type": "interface",
         "name": "IntersectionObserverEntry",
         "inheritance": null,
@@ -450,6 +453,7 @@
         "partial": false
       },
       "IntersectionObserverEntryInit": {
+        "fragment": "dictionary IntersectionObserverEntryInit {\n  required DOMHighResTimeStamp time;\n  required DOMRectInit? rootBounds;\n  required DOMRectInit boundingClientRect;\n  required DOMRectInit intersectionRect;\n  required boolean isIntersecting;\n  required double intersectionRatio;\n  required Element target;\n};",
         "type": "dictionary",
         "name": "IntersectionObserverEntryInit",
         "inheritance": null,
@@ -564,6 +568,7 @@
         "partial": false
       },
       "IntersectionObserverInit": {
+        "fragment": "dictionary IntersectionObserverInit {\n  (Element or Document)?  root = null;\n  DOMString rootMargin = \"0px\";\n  (double or sequence<double>) threshold = 0;\n};",
         "type": "dictionary",
         "name": "IntersectionObserverInit",
         "inheritance": null,

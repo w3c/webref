@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "CSSStringSource": {
+        "fragment": "typedef (DOMString or ReadableStream) CSSStringSource;",
         "type": "typedef",
         "name": "CSSStringSource",
         "idlType": {
@@ -40,6 +41,7 @@
         "extAttrs": []
       },
       "CSSToken": {
+        "fragment": "typedef (DOMString or CSSStyleValue or CSSParserValue) CSSToken;",
         "type": "typedef",
         "name": "CSSToken",
         "idlType": {
@@ -78,6 +80,7 @@
         "extAttrs": []
       },
       "CSSParserOptions": {
+        "fragment": "dictionary CSSParserOptions {\n  object atRules;\n  /* dict of at-rule name => at-rule type\n     (contains decls or contains qualified rules) */\n};",
         "type": "dictionary",
         "name": "CSSParserOptions",
         "inheritance": null,
@@ -102,6 +105,7 @@
         "partial": false
       },
       "CSSParserRule": {
+        "fragment": "interface CSSParserRule {\n  /* Just a superclass. */\n};",
         "type": "interface",
         "name": "CSSParserRule",
         "inheritance": null,
@@ -110,6 +114,7 @@
         "partial": false
       },
       "CSSParserAtRule": {
+        "fragment": "[Constructor(DOMString name, sequence<CSSToken> prelude, optional sequence<CSSParserRule>? body)]\ninterface CSSParserAtRule : CSSParserRule {\n  readonly attribute DOMString name;\n  readonly attribute FrozenArray<CSSParserValue> prelude;\n  readonly attribute FrozenArray<CSSParserRule>? body;\n  /* nullable to handle at-statements */\n  stringifier;\n};",
         "type": "interface",
         "name": "CSSParserAtRule",
         "inheritance": "CSSParserRule",
@@ -263,6 +268,7 @@
         "partial": false
       },
       "CSSParserQualifiedRule": {
+        "fragment": "[Constructor(sequence<CSSToken> prelude, optional sequence<CSSParserRule>? body)]\ninterface CSSParserQualifiedRule : CSSParserRule {\n  readonly attribute FrozenArray<CSSParserValue> prelude;\n  readonly attribute FrozenArray<CSSParserRule> body;\n  stringifier;\n};",
         "type": "interface",
         "name": "CSSParserQualifiedRule",
         "inheritance": "CSSParserRule",
@@ -385,6 +391,7 @@
         "partial": false
       },
       "CSSParserDeclaration": {
+        "fragment": "[Constructor(DOMString name, optional sequence<CSSParserRule> body)]\ninterface CSSParserDeclaration : CSSParserRule {\n  readonly attribute DOMString name;\n  readonly attribute FrozenArray<CSSParserValue> body;\n  stringifier;\n};",
         "type": "interface",
         "name": "CSSParserDeclaration",
         "inheritance": "CSSParserRule",
@@ -489,6 +496,7 @@
         "partial": false
       },
       "CSSParserValue": {
+        "fragment": "interface CSSParserValue {\n  /* Just a superclass. */\n};",
         "type": "interface",
         "name": "CSSParserValue",
         "inheritance": null,
@@ -497,6 +505,7 @@
         "partial": false
       },
       "CSSParserBlock": {
+        "fragment": "[Constructor(DOMString name, sequence<CSSParserValue> body)]\ninterface CSSParserBlock : CSSParserValue {\n  readonly attribute DOMString name; /* \"[]\", \"{}\", or \"()\" */\n  readonly attribute FrozenArray<CSSParserValue> body;\n  stringifier;\n};",
         "type": "interface",
         "name": "CSSParserBlock",
         "inheritance": "CSSParserValue",
@@ -601,6 +610,7 @@
         "partial": false
       },
       "CSSParserFunction": {
+        "fragment": "[Constructor(DOMString name, sequence<sequence<CSSParserValue>> args)]\ninterface CSSParserFunction : CSSParserValue {\n  readonly attribute DOMString name;\n  readonly attribute FrozenArray<FrozenArray<CSSParserValue>> args;\n  stringifier;\n};",
         "type": "interface",
         "name": "CSSParserFunction",
         "inheritance": "CSSParserValue",
@@ -726,6 +736,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
+          "fragment": "partial namespace CSS {\n  Promise<sequence<CSSParserRule>> parseStylesheet(CSSStringSource css, optional CSSParserOptions options);\n  Promise<sequence<CSSParserRule>> parseRuleList(CSSStringSource css, optional CSSParserOptions options);\n  Promise<CSSParserRule> parseRule(CSSStringSource css, optional CSSParserOptions options);\n  Promise<sequence<CSSParserRule>> parseDeclarationList(CSSStringSource css, optional CSSParserOptions options);\n  CSSParserDeclaration parseDeclaration(DOMString css, optional CSSParserOptions options);\n  CSSToken parseValue(DOMString css);\n  sequence<CSSToken> parseValueList(DOMString css);\n  sequence<sequence<CSSToken>> parseCommaValueList(DOMString css);\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,

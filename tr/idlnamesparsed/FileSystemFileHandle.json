@@ -1,0 +1,27 @@
+{
+  "name": "FileSystemFileHandle",
+  "defined": {
+    "spec": {
+      "title": "File System Access",
+      "url": "https://wicg.github.io/file-system-access/"
+    },
+    "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemFileHandle : FileSystemHandle {\n  Promise<File> getFile();\n  Promise<FileSystemWritableFileStream> createWritable(optional FileSystemCreateWritableOptions options = {});\n};",
+    "href": "https://wicg.github.io/file-system-access/#filesystemfilehandle"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "FileSystemHandle",
+    "defined": {
+      "spec": {
+        "title": "File System Access",
+        "url": "https://wicg.github.io/file-system-access/"
+      },
+      "fragment": "[Exposed=(Window,Worker), SecureContext, Serializable]\ninterface FileSystemHandle {\n  readonly attribute FileSystemHandleKind kind;\n  readonly attribute USVString name;\n\n  Promise<boolean> isSameEntry(FileSystemHandle other);\n\n  Promise<PermissionState> queryPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});\n  Promise<PermissionState> requestPermission(optional FileSystemHandlePermissionDescriptor descriptor = {});\n};",
+      "href": "https://wicg.github.io/file-system-access/#filesystemhandle"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

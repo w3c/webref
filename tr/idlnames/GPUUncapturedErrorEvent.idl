@@ -1,0 +1,11 @@
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+[
+    Exposed=(Window, DedicatedWorker)
+]
+interface GPUUncapturedErrorEvent : Event {
+    constructor(
+        DOMString type,
+        GPUUncapturedErrorEventInit gpuUncapturedErrorEventInitDict
+    );
+    [SameObject] readonly attribute GPUError error;
+};

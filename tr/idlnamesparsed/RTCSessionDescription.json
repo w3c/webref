@@ -1,0 +1,14 @@
+{
+  "name": "RTCSessionDescription",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCSessionDescription {\n  constructor(RTCSessionDescriptionInit descriptionInitDict);\n  readonly attribute RTCSdpType type;\n  readonly attribute DOMString sdp;\n  [Default] object toJSON();\n};",
+    "href": "https://www.w3.org/TR/webrtc/#dom-rtcsessiondescription"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

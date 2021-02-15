@@ -1,0 +1,14 @@
+{
+  "name": "URLSearchParams",
+  "defined": {
+    "spec": {
+      "title": "URL Standard",
+      "url": "https://url.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface URLSearchParams {\n  constructor(optional (sequence<sequence<USVString>> or record<USVString, USVString> or USVString) init = \"\");\n\n  undefined append(USVString name, USVString value);\n  undefined delete(USVString name);\n  USVString? get(USVString name);\n  sequence<USVString> getAll(USVString name);\n  boolean has(USVString name);\n  undefined set(USVString name, USVString value);\n\n  undefined sort();\n\n  iterable<USVString, USVString>;\n  stringifier;\n};",
+    "href": "https://url.spec.whatwg.org/#urlsearchparams"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

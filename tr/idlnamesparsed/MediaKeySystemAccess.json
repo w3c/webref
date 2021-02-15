@@ -1,0 +1,13 @@
+{
+  "name": "MediaKeySystemAccess",
+  "defined": {
+    "spec": {
+      "title": "Encrypted Media Extensions",
+      "url": "https://www.w3.org/TR/encrypted-media/"
+    },
+    "fragment": "[SecureContext]\ninterface MediaKeySystemAccess {\n    readonly attribute DOMString keySystem;\n    MediaKeySystemConfiguration getConfiguration();\n    Promise<MediaKeys>          createMediaKeys();\n};"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

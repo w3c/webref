@@ -1,0 +1,27 @@
+{
+  "name": "GPUSamplerDescriptor",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://gpuweb.github.io/gpuweb/"
+    },
+    "fragment": "dictionary GPUSamplerDescriptor : GPUObjectDescriptorBase {\n    GPUAddressMode addressModeU = \"clamp-to-edge\";\n    GPUAddressMode addressModeV = \"clamp-to-edge\";\n    GPUAddressMode addressModeW = \"clamp-to-edge\";\n    GPUFilterMode magFilter = \"nearest\";\n    GPUFilterMode minFilter = \"nearest\";\n    GPUFilterMode mipmapFilter = \"nearest\";\n    float lodMinClamp = 0;\n    float lodMaxClamp = 0xffffffff; // TODO: What should this be? Was Number.MAX_VALUE.\n    GPUCompareFunction compare;\n    [Clamp] unsigned short maxAnisotropy = 1;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpusamplerdescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GPUObjectDescriptorBase",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://gpuweb.github.io/gpuweb/"
+      },
+      "fragment": "dictionary GPUObjectDescriptorBase {\n    USVString label;\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

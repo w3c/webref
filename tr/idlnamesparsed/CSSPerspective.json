@@ -1,0 +1,27 @@
+{
+  "name": "CSSPerspective",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "/* Note that skew(x,y) is *not* the same as skewX(x) skewY(y),\n   thus the separate interfaces for all three. */\n\n[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue length)]\ninterface CSSPerspective : CSSTransformComponent {\n    attribute CSSNumericValue length;\n};",
+    "href": "https://www.w3.org/TR/css-typed-om-1/#cssperspective"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSTransformComponent",
+    "defined": {
+      "spec": {
+        "title": "CSS Typed OM Level 1",
+        "url": "https://www.w3.org/TR/css-typed-om-1/"
+      },
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSTransformComponent {\n    stringifier;\n    attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#csstransformcomponent"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

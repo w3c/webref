@@ -18,6 +18,7 @@
     },
     "idlNames": {
       "ContactProperty": {
+        "fragment": "enum ContactProperty { \"address\", \"email\", \"icon\", \"name\", \"tel\" };",
         "type": "enum",
         "name": "ContactProperty",
         "values": [
@@ -45,6 +46,7 @@
         "extAttrs": []
       },
       "ContactAddress": {
+        "fragment": "interface ContactAddress : PaymentAddress {};",
         "type": "interface",
         "name": "ContactAddress",
         "inheritance": "PaymentAddress",
@@ -53,6 +55,7 @@
         "partial": false
       },
       "ContactInfo": {
+        "fragment": "dictionary ContactInfo {\n    sequence<ContactAddress> address;\n    sequence<DOMString> email;\n    sequence<Blob> icon;\n    sequence<DOMString> name;\n    sequence<DOMString> tel;\n};",
         "type": "dictionary",
         "name": "ContactInfo",
         "inheritance": null,
@@ -182,6 +185,7 @@
         "partial": false
       },
       "ContactsSelectOptions": {
+        "fragment": "dictionary ContactsSelectOptions {\n    boolean multiple = false;\n};",
         "type": "dictionary",
         "name": "ContactsSelectOptions",
         "inheritance": null,
@@ -209,6 +213,7 @@
         "partial": false
       },
       "ContactsManager": {
+        "fragment": "[Exposed=(Window,SecureContext)]\ninterface ContactsManager {\n    Promise<sequence<ContactProperty>> getProperties();\n    Promise<sequence<ContactInfo>> select(sequence<ContactProperty> properties, optional ContactsSelectOptions options);\n};",
         "type": "interface",
         "name": "ContactsManager",
         "inheritance": null,
@@ -346,6 +351,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext, SameObject] readonly attribute ContactsManager contacts;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

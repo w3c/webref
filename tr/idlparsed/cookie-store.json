@@ -28,6 +28,7 @@
     },
     "idlNames": {
       "CookieStore": {
+        "fragment": "[Exposed=(ServiceWorker,Window),\n SecureContext]\ninterface CookieStore : EventTarget {\n  Promise<CookieListItem?> get(USVString name);\n  Promise<CookieListItem?> get(optional CookieStoreGetOptions options = {});\n\n  Promise<CookieList> getAll(USVString name);\n  Promise<CookieList> getAll(optional CookieStoreGetOptions options = {});\n\n  Promise<undefined> set(USVString name, USVString value);\n  Promise<undefined> set(CookieInit options);\n\n  Promise<undefined> delete(USVString name);\n  Promise<undefined> delete(CookieStoreDeleteOptions options);\n\n  [Exposed=Window]\n  attribute EventHandler onchange;\n};",
         "type": "interface",
         "name": "CookieStore",
         "inheritance": "EventTarget",
@@ -433,6 +434,7 @@
         "partial": false
       },
       "CookieStoreGetOptions": {
+        "fragment": "dictionary CookieStoreGetOptions {\n  USVString name;\n  USVString url;\n};",
         "type": "dictionary",
         "name": "CookieStoreGetOptions",
         "inheritance": null,
@@ -472,6 +474,7 @@
         "partial": false
       },
       "CookieSameSite": {
+        "fragment": "enum CookieSameSite {\n  \"strict\",\n  \"lax\",\n  \"none\"\n};",
         "type": "enum",
         "name": "CookieSameSite",
         "values": [
@@ -491,6 +494,7 @@
         "extAttrs": []
       },
       "CookieInit": {
+        "fragment": "dictionary CookieInit {\n  required USVString name;\n  required USVString value;\n  DOMTimeStamp? expires = null;\n  USVString? domain = null;\n  USVString path = \"/\";\n  CookieSameSite sameSite = \"strict\";\n};",
         "type": "dictionary",
         "name": "CookieInit",
         "inheritance": null,
@@ -600,6 +604,7 @@
         "partial": false
       },
       "CookieStoreDeleteOptions": {
+        "fragment": "dictionary CookieStoreDeleteOptions {\n  required USVString name;\n  USVString? domain = null;\n  USVString path = \"/\";\n};",
         "type": "dictionary",
         "name": "CookieStoreDeleteOptions",
         "inheritance": null,
@@ -659,6 +664,7 @@
         "partial": false
       },
       "CookieListItem": {
+        "fragment": "dictionary CookieListItem {\n  USVString name;\n  USVString value;\n  USVString? domain;\n  USVString path;\n  DOMTimeStamp? expires;\n  boolean secure;\n  CookieSameSite sameSite;\n};",
         "type": "dictionary",
         "name": "CookieListItem",
         "inheritance": null,
@@ -773,6 +779,7 @@
         "partial": false
       },
       "CookieList": {
+        "fragment": "typedef sequence<CookieListItem> CookieList;",
         "type": "typedef",
         "name": "CookieList",
         "idlType": {
@@ -795,6 +802,7 @@
         "extAttrs": []
       },
       "CookieStoreManager": {
+        "fragment": "[Exposed=(ServiceWorker,Window),\n SecureContext]\ninterface CookieStoreManager {\n  Promise<undefined> subscribe(sequence<CookieStoreGetOptions> subscriptions);\n  Promise<sequence<CookieStoreGetOptions>> getSubscriptions();\n  Promise<undefined> unsubscribe(sequence<CookieStoreGetOptions> subscriptions);\n};",
         "type": "interface",
         "name": "CookieStoreManager",
         "inheritance": null,
@@ -960,6 +968,7 @@
         "partial": false
       },
       "CookieChangeEvent": {
+        "fragment": "[Exposed=Window,\n SecureContext]\ninterface CookieChangeEvent : Event {\n  constructor(DOMString type, optional CookieChangeEventInit eventInitDict = {});\n  [SameObject] readonly attribute FrozenArray<CookieListItem> changed;\n  [SameObject] readonly attribute FrozenArray<CookieListItem> deleted;\n};",
         "type": "interface",
         "name": "CookieChangeEvent",
         "inheritance": "Event",
@@ -1087,6 +1096,7 @@
         "partial": false
       },
       "CookieChangeEventInit": {
+        "fragment": "dictionary CookieChangeEventInit : EventInit {\n  CookieList changed;\n  CookieList deleted;\n};",
         "type": "dictionary",
         "name": "CookieChangeEventInit",
         "inheritance": "EventInit",
@@ -1126,6 +1136,7 @@
         "partial": false
       },
       "ExtendableCookieChangeEvent": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface ExtendableCookieChangeEvent : ExtendableEvent {\n  constructor(DOMString type, optional ExtendableCookieChangeEventInit eventInitDict = {});\n  [SameObject] readonly attribute FrozenArray<CookieListItem> changed;\n  [SameObject] readonly attribute FrozenArray<CookieListItem> deleted;\n};",
         "type": "interface",
         "name": "ExtendableCookieChangeEvent",
         "inheritance": "ExtendableEvent",
@@ -1247,6 +1258,7 @@
         "partial": false
       },
       "ExtendableCookieChangeEventInit": {
+        "fragment": "dictionary ExtendableCookieChangeEventInit : ExtendableEventInit {\n  CookieList changed;\n  CookieList deleted;\n};",
         "type": "dictionary",
         "name": "ExtendableCookieChangeEventInit",
         "inheritance": "ExtendableEventInit",
@@ -1289,6 +1301,7 @@
     "idlExtendedNames": {
       "ServiceWorkerRegistration": [
         {
+          "fragment": "[Exposed=(ServiceWorker,Window)]\npartial interface ServiceWorkerRegistration {\n  [SameObject] readonly attribute CookieStoreManager cookies;\n};",
           "type": "interface",
           "name": "ServiceWorkerRegistration",
           "inheritance": null,
@@ -1339,6 +1352,7 @@
       ],
       "Window": [
         {
+          "fragment": "[SecureContext]\npartial interface Window {\n  [SameObject] readonly attribute CookieStore cookieStore;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -1379,6 +1393,7 @@
       ],
       "ServiceWorkerGlobalScope": [
         {
+          "fragment": "partial interface ServiceWorkerGlobalScope {\n  [SameObject] readonly attribute CookieStore cookieStore;\n\n  attribute EventHandler oncookiechange;\n};",
           "type": "interface",
           "name": "ServiceWorkerGlobalScope",
           "inheritance": null,

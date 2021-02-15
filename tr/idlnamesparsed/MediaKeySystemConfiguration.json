@@ -1,0 +1,13 @@
+{
+  "name": "MediaKeySystemConfiguration",
+  "defined": {
+    "spec": {
+      "title": "Encrypted Media Extensions",
+      "url": "https://www.w3.org/TR/encrypted-media/"
+    },
+    "fragment": "dictionary MediaKeySystemConfiguration {\n    DOMString                               label = \"\";\n    sequence<DOMString>                     initDataTypes = [];\n    sequence<MediaKeySystemMediaCapability> audioCapabilities = [];\n    sequence<MediaKeySystemMediaCapability> videoCapabilities = [];\n    MediaKeysRequirement                    distinctiveIdentifier = \"optional\";\n    MediaKeysRequirement                    persistentState = \"optional\";\n    sequence<DOMString>                     sessionTypes;\n};"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

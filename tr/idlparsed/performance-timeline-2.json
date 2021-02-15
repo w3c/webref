@@ -26,6 +26,7 @@
     },
     "idlNames": {
       "PerformanceEntryList": {
+        "fragment": "typedef sequence<PerformanceEntry> PerformanceEntryList;",
         "type": "typedef",
         "name": "PerformanceEntryList",
         "idlType": {
@@ -48,6 +49,7 @@
         "extAttrs": []
       },
       "PerformanceEntry": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceEntry {\n  readonly    attribute DOMString           name;\n  readonly    attribute DOMString           entryType;\n  readonly    attribute DOMHighResTimeStamp startTime;\n  readonly    attribute DOMHighResTimeStamp duration;\n  [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceEntry",
         "inheritance": null,
@@ -156,6 +158,7 @@
         "partial": false
       },
       "PerformanceObserverCallback": {
+        "fragment": "callback PerformanceObserverCallback = void (PerformanceObserverEntryList entries,\n                                             PerformanceObserver observer);",
         "type": "callback",
         "name": "PerformanceObserverCallback",
         "idlType": {
@@ -203,6 +206,7 @@
         "extAttrs": []
       },
       "PerformanceObserver": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceObserver {\n  constructor(PerformanceObserverCallback callback);\n  void observe (optional PerformanceObserverInit options = {});\n  void disconnect ();\n  PerformanceEntryList takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;\n};",
         "type": "interface",
         "name": "PerformanceObserver",
         "inheritance": null,
@@ -346,6 +350,7 @@
         "partial": false
       },
       "PerformanceObserverInit": {
+        "fragment": "dictionary PerformanceObserverInit {\n  sequence<DOMString> entryTypes;\n  DOMString type;\n};",
         "type": "dictionary",
         "name": "PerformanceObserverInit",
         "inheritance": null,
@@ -394,6 +399,7 @@
         "partial": false
       },
       "PerformanceObserverEntryList": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceObserverEntryList {\n  PerformanceEntryList getEntries();\n  PerformanceEntryList getEntriesByType (DOMString type);\n  PerformanceEntryList getEntriesByName (DOMString name, optional DOMString type);\n};",
         "type": "interface",
         "name": "PerformanceObserverEntryList",
         "inheritance": null,
@@ -518,6 +524,7 @@
     "idlExtendedNames": {
       "Performance": [
         {
+          "fragment": "partial interface Performance {\n  PerformanceEntryList getEntries ();\n  PerformanceEntryList getEntriesByType (DOMString type);\n  PerformanceEntryList getEntriesByName (DOMString name, optional DOMString type);\n};",
           "type": "interface",
           "name": "Performance",
           "inheritance": null,

@@ -21,6 +21,7 @@
     },
     "idlNames": {
       "PaymentRequest": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentRequest : EventTarget {\n  constructor(\n    sequence<PaymentMethodData> methodData,\n    PaymentDetailsInit details,\n    optional PaymentOptions options = {}\n  );\n  [NewObject]\n  Promise<PaymentResponse> show(optional Promise<PaymentDetailsUpdate> detailsPromise);\n  [NewObject]\n  Promise<undefined> abort();\n  [NewObject]\n  Promise<boolean> canMakePayment();\n\n  readonly attribute DOMString id;\n  readonly attribute PaymentAddress? shippingAddress;\n  readonly attribute DOMString? shippingOption;\n  readonly attribute PaymentShippingType? shippingType;\n\n  attribute EventHandler onshippingaddresschange;\n  attribute EventHandler onshippingoptionchange;\n  attribute EventHandler onpaymentmethodchange;\n};",
         "type": "interface",
         "name": "PaymentRequest",
         "inheritance": "EventTarget",
@@ -335,6 +336,7 @@
         "partial": false
       },
       "PaymentMethodData": {
+        "fragment": "dictionary PaymentMethodData {\n  required DOMString supportedMethods;\n  object data;\n};",
         "type": "dictionary",
         "name": "PaymentMethodData",
         "inheritance": null,
@@ -374,6 +376,7 @@
         "partial": false
       },
       "PaymentCurrencyAmount": {
+        "fragment": "dictionary PaymentCurrencyAmount {\n  required DOMString currency;\n  required DOMString value;\n};",
         "type": "dictionary",
         "name": "PaymentCurrencyAmount",
         "inheritance": null,
@@ -413,6 +416,7 @@
         "partial": false
       },
       "PaymentDetailsBase": {
+        "fragment": "dictionary PaymentDetailsBase {\n  sequence<PaymentItem> displayItems;\n  sequence<PaymentShippingOption> shippingOptions;\n  sequence<PaymentDetailsModifier> modifiers;\n};",
         "type": "dictionary",
         "name": "PaymentDetailsBase",
         "inheritance": null,
@@ -494,6 +498,7 @@
         "partial": false
       },
       "PaymentDetailsInit": {
+        "fragment": "dictionary PaymentDetailsInit : PaymentDetailsBase {\n  DOMString id;\n  required PaymentItem total;\n};",
         "type": "dictionary",
         "name": "PaymentDetailsInit",
         "inheritance": "PaymentDetailsBase",
@@ -533,6 +538,7 @@
         "partial": false
       },
       "PaymentDetailsUpdate": {
+        "fragment": "dictionary PaymentDetailsUpdate : PaymentDetailsBase {\n  DOMString error;\n  PaymentItem total;\n  AddressErrors shippingAddressErrors;\n  PayerErrors payerErrors;\n  object paymentMethodErrors;\n};",
         "type": "dictionary",
         "name": "PaymentDetailsUpdate",
         "inheritance": "PaymentDetailsBase",
@@ -617,6 +623,7 @@
         "partial": false
       },
       "PaymentDetailsModifier": {
+        "fragment": "dictionary PaymentDetailsModifier {\n  required DOMString supportedMethods;\n  PaymentItem total;\n  sequence<PaymentItem> additionalDisplayItems;\n  object data;\n};",
         "type": "dictionary",
         "name": "PaymentDetailsModifier",
         "inheritance": null,
@@ -695,6 +702,7 @@
         "partial": false
       },
       "PaymentShippingType": {
+        "fragment": "enum PaymentShippingType {\n  \"shipping\",\n  \"delivery\",\n  \"pickup\"\n};",
         "type": "enum",
         "name": "PaymentShippingType",
         "values": [
@@ -714,6 +722,7 @@
         "extAttrs": []
       },
       "PaymentOptions": {
+        "fragment": "dictionary PaymentOptions {\n  boolean requestPayerName = false;\n  boolean requestBillingAddress = false;\n  boolean requestPayerEmail = false;\n  boolean requestPayerPhone = false;\n  boolean requestShipping = false;\n  PaymentShippingType shippingType = \"shipping\";\n};",
         "type": "dictionary",
         "name": "PaymentOptions",
         "inheritance": null,
@@ -831,6 +840,7 @@
         "partial": false
       },
       "PaymentItem": {
+        "fragment": "dictionary PaymentItem {\n  required DOMString label;\n  required PaymentCurrencyAmount amount;\n  boolean pending = false;\n};",
         "type": "dictionary",
         "name": "PaymentItem",
         "inheritance": null,
@@ -888,6 +898,7 @@
         "partial": false
       },
       "PaymentAddress": {
+        "fragment": "[SecureContext, Exposed=(Window)]\ninterface PaymentAddress {\n  [Default] object toJSON();\n  readonly attribute DOMString city;\n  readonly attribute DOMString country;\n  readonly attribute DOMString dependentLocality;\n  readonly attribute DOMString organization;\n  readonly attribute DOMString phone;\n  readonly attribute DOMString postalCode;\n  readonly attribute DOMString recipient;\n  readonly attribute DOMString region;\n  readonly attribute DOMString sortingCode;\n  readonly attribute FrozenArray<DOMString> addressLine;\n};",
         "type": "interface",
         "name": "PaymentAddress",
         "inheritance": null,
@@ -1098,6 +1109,7 @@
         "partial": false
       },
       "AddressInit": {
+        "fragment": "dictionary AddressInit {\n  DOMString country = \"\";\n  sequence<DOMString> addressLine = [];\n  DOMString region = \"\";\n  DOMString city = \"\";\n  DOMString dependentLocality = \"\";\n  DOMString postalCode = \"\";\n  DOMString sortingCode = \"\";\n  DOMString organization = \"\";\n  DOMString recipient = \"\";\n  DOMString phone = \"\";\n};",
         "type": "dictionary",
         "name": "AddressInit",
         "inheritance": null,
@@ -1296,6 +1308,7 @@
         "partial": false
       },
       "AddressErrors": {
+        "fragment": "dictionary AddressErrors {\n  DOMString addressLine;\n  DOMString city;\n  DOMString country;\n  DOMString dependentLocality;\n  DOMString organization;\n  DOMString phone;\n  DOMString postalCode;\n  DOMString recipient;\n  DOMString region;\n  DOMString sortingCode;\n};",
         "type": "dictionary",
         "name": "AddressErrors",
         "inheritance": null,
@@ -1455,6 +1468,7 @@
         "partial": false
       },
       "PaymentShippingOption": {
+        "fragment": "dictionary PaymentShippingOption {\n  required DOMString id;\n  required DOMString label;\n  required PaymentCurrencyAmount amount;\n  boolean selected = false;\n};",
         "type": "dictionary",
         "name": "PaymentShippingOption",
         "inheritance": null,
@@ -1527,6 +1541,7 @@
         "partial": false
       },
       "PaymentComplete": {
+        "fragment": "enum PaymentComplete {\n  \"fail\",\n  \"success\",\n  \"unknown\"\n};",
         "type": "enum",
         "name": "PaymentComplete",
         "values": [
@@ -1546,6 +1561,7 @@
         "extAttrs": []
       },
       "PaymentResponse": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentResponse : EventTarget  {\n  [Default] object toJSON();\n\n  readonly attribute DOMString requestId;\n  readonly attribute DOMString methodName;\n  readonly attribute object details;\n  readonly attribute PaymentAddress? shippingAddress;\n  readonly attribute DOMString? shippingOption;\n  readonly attribute DOMString? payerName;\n  readonly attribute DOMString? payerEmail;\n  readonly attribute DOMString? payerPhone;\n\n  [NewObject]\n  Promise<undefined> complete(optional PaymentComplete result = \"unknown\");\n  [NewObject]\n  Promise<undefined> retry(optional PaymentValidationErrors errorFields = {});\n\n  attribute EventHandler onpayerdetailchange;\n};",
         "type": "interface",
         "name": "PaymentResponse",
         "inheritance": "EventTarget",
@@ -1829,6 +1845,7 @@
         "partial": false
       },
       "PaymentValidationErrors": {
+        "fragment": "dictionary PaymentValidationErrors {\n  PayerErrors payer;\n  AddressErrors shippingAddress;\n  DOMString error;\n  object paymentMethod;\n};",
         "type": "dictionary",
         "name": "PaymentValidationErrors",
         "inheritance": null,
@@ -1898,6 +1915,7 @@
         "partial": false
       },
       "PayerErrors": {
+        "fragment": "dictionary PayerErrors {\n  DOMString email;\n  DOMString name;\n  DOMString phone;\n};",
         "type": "dictionary",
         "name": "PayerErrors",
         "inheritance": null,
@@ -1952,6 +1970,7 @@
         "partial": false
       },
       "PaymentMethodChangeEvent": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentMethodChangeEvent : PaymentRequestUpdateEvent {\n  constructor(DOMString type, optional PaymentMethodChangeEventInit eventInitDict = {});\n  readonly attribute DOMString methodName;\n  readonly attribute object? methodDetails;\n};",
         "type": "interface",
         "name": "PaymentMethodChangeEvent",
         "inheritance": "PaymentRequestUpdateEvent",
@@ -2047,6 +2066,7 @@
         "partial": false
       },
       "PaymentMethodChangeEventInit": {
+        "fragment": "dictionary PaymentMethodChangeEventInit : PaymentRequestUpdateEventInit {\n  DOMString methodName = \"\";\n  object? methodDetails = null;\n};",
         "type": "dictionary",
         "name": "PaymentMethodChangeEventInit",
         "inheritance": "PaymentRequestUpdateEventInit",
@@ -2091,6 +2111,7 @@
         "partial": false
       },
       "PaymentRequestUpdateEvent": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PaymentRequestUpdateEvent : Event {\n  constructor(DOMString type, optional PaymentRequestUpdateEventInit eventInitDict = {});\n  undefined updateWith(Promise<PaymentDetailsUpdate> detailsPromise);\n};",
         "type": "interface",
         "name": "PaymentRequestUpdateEvent",
         "inheritance": "Event",
@@ -2197,6 +2218,7 @@
         "partial": false
       },
       "PaymentRequestUpdateEventInit": {
+        "fragment": "dictionary PaymentRequestUpdateEventInit : EventInit {};",
         "type": "dictionary",
         "name": "PaymentRequestUpdateEventInit",
         "inheritance": "EventInit",

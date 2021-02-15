@@ -1,0 +1,10 @@
+// Source: DOM Standard (https://dom.spec.whatwg.org/)
+[Exposed=Window]
+interface ShadowRoot : DocumentFragment {
+  readonly attribute ShadowRootMode mode;
+  readonly attribute Element host;
+  attribute EventHandler onslotchange;
+};
+
+// Source: DOM Standard (https://dom.spec.whatwg.org/)
+ShadowRoot includes DocumentOrShadowRoot;

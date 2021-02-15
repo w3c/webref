@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "ScreenOrientation": {
+        "fragment": "[Exposed=Window]\ninterface ScreenOrientation : EventTarget {\n  Promise<undefined> lock(OrientationLockType orientation);\n  undefined unlock();\n  readonly attribute OrientationType type;\n  readonly attribute unsigned short angle;\n  attribute EventHandler onchange;\n};",
         "type": "interface",
         "name": "ScreenOrientation",
         "inheritance": "EventTarget",
@@ -134,6 +135,7 @@
         "partial": false
       },
       "OrientationLockType": {
+        "fragment": "enum OrientationLockType {\n  \"any\",\n  \"natural\",\n  \"landscape\",\n  \"portrait\",\n  \"portrait-primary\",\n  \"portrait-secondary\",\n  \"landscape-primary\",\n  \"landscape-secondary\"\n};",
         "type": "enum",
         "name": "OrientationLockType",
         "values": [
@@ -173,6 +175,7 @@
         "extAttrs": []
       },
       "OrientationType": {
+        "fragment": "enum OrientationType {\n  \"portrait-primary\",\n  \"portrait-secondary\",\n  \"landscape-primary\",\n  \"landscape-secondary\"\n};",
         "type": "enum",
         "name": "OrientationType",
         "values": [
@@ -199,6 +202,7 @@
     "idlExtendedNames": {
       "Screen": [
         {
+          "fragment": "partial interface Screen {\n  [SameObject] readonly attribute ScreenOrientation orientation;\n};",
           "type": "interface",
           "name": "Screen",
           "inheritance": null,

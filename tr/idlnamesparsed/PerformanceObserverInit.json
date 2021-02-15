@@ -1,0 +1,22 @@
+{
+  "name": "PerformanceObserverInit",
+  "defined": {
+    "spec": {
+      "title": "Performance Timeline Level 2",
+      "url": "https://www.w3.org/TR/performance-timeline-2/"
+    },
+    "fragment": "dictionary PerformanceObserverInit {\n  sequence<DOMString> entryTypes;\n  DOMString type;\n};",
+    "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverinit"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Event Timing API",
+        "url": "https://wicg.github.io/event-timing/"
+      },
+      "fragment": "partial dictionary PerformanceObserverInit {\n    DOMHighResTimeStamp durationThreshold;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

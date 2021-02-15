@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "URL": {
+        "fragment": "[Exposed=(Window,Worker),\n LegacyWindowAlias=webkitURL]\ninterface URL {\n  constructor(USVString url, optional USVString base);\n\n  stringifier attribute USVString href;\n  readonly attribute USVString origin;\n           attribute USVString protocol;\n           attribute USVString username;\n           attribute USVString password;\n           attribute USVString host;\n           attribute USVString hostname;\n           attribute USVString port;\n           attribute USVString pathname;\n           attribute USVString search;\n  [SameObject] readonly attribute URLSearchParams searchParams;\n           attribute USVString hash;\n\n  USVString toJSON();\n};",
         "type": "interface",
         "name": "URL",
         "inheritance": null,
@@ -294,6 +295,7 @@
         "partial": false
       },
       "URLSearchParams": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface URLSearchParams {\n  constructor(optional (sequence<sequence<USVString>> or record<USVString, USVString> or USVString) init = \"\");\n\n  undefined append(USVString name, USVString value);\n  undefined delete(USVString name);\n  USVString? get(USVString name);\n  sequence<USVString> getAll(USVString name);\n  boolean has(USVString name);\n  undefined set(USVString name, USVString value);\n\n  undefined sort();\n\n  iterable<USVString, USVString>;\n  stringifier;\n};",
         "type": "interface",
         "name": "URLSearchParams",
         "inheritance": null,

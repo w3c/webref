@@ -1,0 +1,14 @@
+{
+  "name": "CacheStorage",
+  "defined": {
+    "spec": {
+      "title": "Service Workers 1",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface CacheStorage {\n  [NewObject] Promise<any> match(RequestInfo request, optional MultiCacheQueryOptions options = {});\n  [NewObject] Promise<boolean> has(DOMString cacheName);\n  [NewObject] Promise<Cache> open(DOMString cacheName);\n  [NewObject] Promise<boolean> delete(DOMString cacheName);\n  [NewObject] Promise<sequence<DOMString>> keys();\n};",
+    "href": "https://www.w3.org/TR/service-workers-1/#cachestorage"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

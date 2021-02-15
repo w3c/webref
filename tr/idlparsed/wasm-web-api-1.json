@@ -12,6 +12,7 @@
     "idlExtendedNames": {
       "WebAssembly": [
         {
+          "fragment": "partial namespace WebAssembly {\n  Promise<Module> compileStreaming(Promise<Response> source);\n  Promise<WebAssemblyInstantiatedSource> instantiateStreaming(\n      Promise<Response> source, optional object importObject);\n};",
           "type": "namespace",
           "name": "WebAssembly",
           "inheritance": null,

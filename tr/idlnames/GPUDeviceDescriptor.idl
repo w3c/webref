@@ -1,0 +1,5 @@
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {
+    sequence<GPUFeatureName> nonGuaranteedFeatures = [];
+    record<DOMString, GPUSize32> nonGuaranteedLimits = {};
+};

@@ -1,0 +1,14 @@
+{
+  "name": "Clients",
+  "defined": {
+    "spec": {
+      "title": "Service Workers 1",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "[Exposed=ServiceWorker]\ninterface Clients {\n  // The objects returned will be new instances every time\n  [NewObject] Promise<any> get(DOMString id);\n  [NewObject] Promise<FrozenArray<Client>> matchAll(optional ClientQueryOptions options = {});\n  [NewObject] Promise<WindowClient?> openWindow(USVString url);\n  [NewObject] Promise<void> claim();\n};",
+    "href": "https://www.w3.org/TR/service-workers-1/#clients"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

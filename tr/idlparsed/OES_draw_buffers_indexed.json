@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "OES_draw_buffers_indexed": {
+        "fragment": "[NoInterfaceObject]\ninterface OES_draw_buffers_indexed {\n  void enableiOES(GLenum target, GLuint index);\n\n  void disableiOES(GLenum target, GLuint index);\n\n  void blendEquationiOES(GLuint buf, GLenum mode);\n\n  void blendEquationSeparateiOES(GLuint buf,\n                                 GLenum modeRGB, GLenum modeAlpha);\n\n  void blendFunciOES(GLuint buf,\n                     GLenum src, GLenum dst);\n\n  void blendFuncSeparateiOES(GLuint buf,\n                             GLenum srcRGB, GLenum dstRGB,\n                             GLenum srcAlpha, GLenum dstAlpha);\n\n  void colorMaskiOES(GLuint buf,\n                     GLboolean r, GLboolean g, GLboolean b, GLboolean a);\n};",
         "type": "interface",
         "name": "OES_draw_buffers_indexed",
         "inheritance": null,

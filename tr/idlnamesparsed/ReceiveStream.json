@@ -1,0 +1,37 @@
+{
+  "name": "ReceiveStream",
+  "defined": {
+    "spec": {
+      "title": "WebTransport",
+      "url": "https://w3c.github.io/webtransport/"
+    },
+    "fragment": "[ Exposed=(Window,Worker) ]\ninterface ReceiveStream {\n};",
+    "href": "https://w3c.github.io/webtransport/#receivestream"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebTransport",
+        "url": "https://w3c.github.io/webtransport/"
+      },
+      "fragment": "ReceiveStream includes IncomingStream;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "IncomingStream",
+      "defined": {
+        "spec": {
+          "title": "WebTransport",
+          "url": "https://w3c.github.io/webtransport/"
+        },
+        "fragment": "[ Exposed=(Window,Worker) ]\ninterface mixin IncomingStream {\n  /* a ReadableStream of Uint8Array */\n  readonly attribute ReadableStream readable;\n  readonly attribute Promise<StreamAbortInfo> readingAborted;\n  undefined abortReading(optional StreamAbortInfo abortInfo = {});\n};",
+        "href": "https://w3c.github.io/webtransport/#incomingstream"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

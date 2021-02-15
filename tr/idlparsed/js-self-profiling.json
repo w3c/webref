@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "Profiler": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Profiler : EventTarget {\n  readonly attribute DOMHighResTimeStamp sampleInterval;\n  readonly attribute boolean stopped;\n\n  Promise<ProfilerTrace> stop();\n};",
         "type": "interface",
         "name": "Profiler",
         "inheritance": "EventTarget",
@@ -99,6 +100,7 @@
         "partial": false
       },
       "ProfilerResource": {
+        "fragment": "typedef DOMString ProfilerResource;",
         "type": "typedef",
         "name": "ProfilerResource",
         "idlType": {
@@ -112,6 +114,7 @@
         "extAttrs": []
       },
       "ProfilerTrace": {
+        "fragment": "dictionary ProfilerTrace {\n  required sequence<ProfilerResource> resources;\n  required sequence<ProfilerFrame> frames;\n  required sequence<ProfilerStack> stacks;\n  required sequence<ProfilerSample> samples;\n};",
         "type": "dictionary",
         "name": "ProfilerTrace",
         "inheritance": null,
@@ -217,6 +220,7 @@
         "partial": false
       },
       "ProfilerSample": {
+        "fragment": "dictionary ProfilerSample {\n  required DOMHighResTimeStamp timestamp;\n  unsigned long long stackId;\n};",
         "type": "dictionary",
         "name": "ProfilerSample",
         "inheritance": null,
@@ -256,6 +260,7 @@
         "partial": false
       },
       "ProfilerStack": {
+        "fragment": "dictionary ProfilerStack {\n  unsigned long long parentId;\n  required unsigned long long frameId;\n};",
         "type": "dictionary",
         "name": "ProfilerStack",
         "inheritance": null,
@@ -295,6 +300,7 @@
         "partial": false
       },
       "ProfilerFrame": {
+        "fragment": "dictionary ProfilerFrame {\n  DOMString name;\n  required unsigned long long resourceId;\n  required unsigned long long line;\n  required unsigned long long column;\n};",
         "type": "dictionary",
         "name": "ProfilerFrame",
         "inheritance": null,
@@ -364,6 +370,7 @@
         "partial": false
       },
       "ProfilerInitOptions": {
+        "fragment": "dictionary ProfilerInitOptions {\n  required DOMHighResTimeStamp sampleInterval;\n  required unsigned long maxBufferSize;\n};",
         "type": "dictionary",
         "name": "ProfilerInitOptions",
         "inheritance": null,
@@ -406,6 +413,7 @@
     "idlExtendedNames": {
       "Performance": [
         {
+          "fragment": "[Exposed=(Window,Worker)]\npartial interface Performance {\n  Promise<Profiler> profile(ProfilerInitOptions options);\n};",
           "type": "interface",
           "name": "Performance",
           "inheritance": null,

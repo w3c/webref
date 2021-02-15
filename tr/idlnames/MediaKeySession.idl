@@ -1,0 +1,16 @@
+// Source: Encrypted Media Extensions (https://www.w3.org/TR/encrypted-media/)
+[SecureContext]
+interface MediaKeySession : EventTarget {
+    readonly attribute DOMString           sessionId;
+    readonly attribute unrestricted double expiration;
+    readonly attribute Promise<void>       closed;
+    readonly attribute MediaKeyStatusMap   keyStatuses;
+             attribute EventHandler        onkeystatuseschange;
+             attribute EventHandler        onmessage;
+    Promise<void>    generateRequest(DOMString initDataType,
+                                     BufferSource initData);
+    Promise<boolean> load(DOMString sessionId);
+    Promise<void>    update(BufferSource response);
+    Promise<void>    close();
+    Promise<void>    remove();
+};

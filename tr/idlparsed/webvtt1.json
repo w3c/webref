@@ -15,6 +15,7 @@
     },
     "idlNames": {
       "AutoKeyword": {
+        "fragment": "enum AutoKeyword { \"auto\" };",
         "type": "enum",
         "name": "AutoKeyword",
         "values": [
@@ -26,6 +27,7 @@
         "extAttrs": []
       },
       "LineAndPositionSetting": {
+        "fragment": "typedef (double or AutoKeyword) LineAndPositionSetting;",
         "type": "typedef",
         "name": "LineAndPositionSetting",
         "idlType": {
@@ -56,6 +58,7 @@
         "extAttrs": []
       },
       "DirectionSetting": {
+        "fragment": "enum DirectionSetting { \"\" /* horizontal */, \"rl\", \"lr\" };",
         "type": "enum",
         "name": "DirectionSetting",
         "values": [
@@ -75,6 +78,7 @@
         "extAttrs": []
       },
       "LineAlignSetting": {
+        "fragment": "enum LineAlignSetting { \"start\", \"center\", \"end\" };",
         "type": "enum",
         "name": "LineAlignSetting",
         "values": [
@@ -94,6 +98,7 @@
         "extAttrs": []
       },
       "PositionAlignSetting": {
+        "fragment": "enum PositionAlignSetting { \"line-left\", \"center\", \"line-right\", \"auto\" };",
         "type": "enum",
         "name": "PositionAlignSetting",
         "values": [
@@ -117,6 +122,7 @@
         "extAttrs": []
       },
       "AlignSetting": {
+        "fragment": "enum AlignSetting { \"start\", \"center\", \"end\", \"left\", \"right\" };",
         "type": "enum",
         "name": "AlignSetting",
         "values": [
@@ -144,6 +150,7 @@
         "extAttrs": []
       },
       "VTTCue": {
+        "fragment": "[Exposed=Window,\n Constructor(double startTime, double endTime, DOMString text)]\ninterface VTTCue : TextTrackCue {\n  attribute VTTRegion? region;\n  attribute DirectionSetting vertical;\n  attribute boolean snapToLines;\n  attribute LineAndPositionSetting line;\n  attribute LineAlignSetting lineAlign;\n  attribute LineAndPositionSetting position;\n  attribute PositionAlignSetting positionAlign;\n  attribute double size;\n  attribute AlignSetting align;\n  attribute DOMString text;\n  DocumentFragment getCueAsHTML();\n};",
         "type": "interface",
         "name": "VTTCue",
         "inheritance": "TextTrackCue",
@@ -383,6 +390,7 @@
         "partial": false
       },
       "ScrollSetting": {
+        "fragment": "enum ScrollSetting { \"\" /* none */, \"up\" };",
         "type": "enum",
         "name": "ScrollSetting",
         "values": [
@@ -398,6 +406,7 @@
         "extAttrs": []
       },
       "VTTRegion": {
+        "fragment": "[Exposed=Window,\n Constructor]\ninterface VTTRegion {\n  attribute DOMString id;\n  attribute double width;\n  attribute unsigned long lines;\n  attribute double regionAnchorX;\n  attribute double regionAnchorY;\n  attribute double viewportAnchorX;\n  attribute double viewportAnchorY;\n  attribute ScrollSetting scroll;\n};",
         "type": "interface",
         "name": "VTTRegion",
         "inheritance": null,

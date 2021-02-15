@@ -17,6 +17,7 @@
     },
     "idlNames": {
       "SecurityPolicyViolationEventDisposition": {
+        "fragment": "enum SecurityPolicyViolationEventDisposition {\n  \"enforce\", \"report\"\n};",
         "type": "enum",
         "name": "SecurityPolicyViolationEventDisposition",
         "values": [
@@ -32,6 +33,7 @@
         "extAttrs": []
       },
       "SecurityPolicyViolationEvent": {
+        "fragment": "[Constructor(DOMString type, optional SecurityPolicyViolationEventInit eventInitDict),\n Exposed=(Window,Worker)]\ninterface SecurityPolicyViolationEvent : Event {\n    readonly    attribute USVString      documentURI;\n    readonly    attribute USVString      referrer;\n    readonly    attribute USVString      blockedURI;\n    readonly    attribute DOMString      violatedDirective;\n    readonly    attribute DOMString      effectiveDirective;\n    readonly    attribute DOMString      originalPolicy;\n    readonly    attribute USVString      sourceFile;\n    readonly    attribute DOMString      sample;\n    readonly    attribute SecurityPolicyViolationEventDisposition      disposition;\n    readonly    attribute unsigned short statusCode;\n    readonly    attribute unsigned long  lineNumber;\n    readonly    attribute unsigned long  columnNumber;\n};",
         "type": "interface",
         "name": "SecurityPolicyViolationEvent",
         "inheritance": "Event",
@@ -277,6 +279,7 @@
         "partial": false
       },
       "SecurityPolicyViolationEventInit": {
+        "fragment": "dictionary SecurityPolicyViolationEventInit : EventInit {\n    required USVString      documentURI;\n             USVString      referrer = \"\";\n             USVString      blockedURI = \"\";\n    required DOMString      violatedDirective;\n    required DOMString      effectiveDirective;\n    required DOMString      originalPolicy;\n             USVString      sourceFile = \"\";\n             DOMString      sample = \"\";\n    required SecurityPolicyViolationEventDisposition disposition;\n    required unsigned short statusCode;\n             unsigned long  lineNumber = 0;\n             unsigned long  columnNumber = 0;\n};",
         "type": "dictionary",
         "name": "SecurityPolicyViolationEventInit",
         "inheritance": "EventInit",

@@ -21,6 +21,7 @@
     },
     "idlNames": {
       "XRHitTestTrackableType": {
+        "fragment": "enum XRHitTestTrackableType {\n  \"point\",\n  \"plane\",\n  \"mesh\"\n};",
         "type": "enum",
         "name": "XRHitTestTrackableType",
         "values": [
@@ -40,6 +41,7 @@
         "extAttrs": []
       },
       "XRHitTestOptionsInit": {
+        "fragment": "dictionary XRHitTestOptionsInit {\n  required XRSpace space;\n  FrozenArray<XRHitTestTrackableType> entityTypes;\n  XRRay offsetRay;\n};",
         "type": "dictionary",
         "name": "XRHitTestOptionsInit",
         "inheritance": null,
@@ -103,6 +105,7 @@
         "partial": false
       },
       "XRTransientInputHitTestOptionsInit": {
+        "fragment": "dictionary XRTransientInputHitTestOptionsInit {\n  required DOMString profile;\n  FrozenArray<XRHitTestTrackableType> entityTypes;\n  XRRay offsetRay;\n};",
         "type": "dictionary",
         "name": "XRTransientInputHitTestOptionsInit",
         "inheritance": null,
@@ -166,6 +169,7 @@
         "partial": false
       },
       "XRHitTestSource": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRHitTestSource {\n  void cancel();\n};",
         "type": "interface",
         "name": "XRHitTestSource",
         "inheritance": null,
@@ -206,6 +210,7 @@
         "partial": false
       },
       "XRTransientInputHitTestSource": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRTransientInputHitTestSource {\n  void cancel();\n};",
         "type": "interface",
         "name": "XRTransientInputHitTestSource",
         "inheritance": null,
@@ -246,6 +251,7 @@
         "partial": false
       },
       "XRHitTestResult": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRHitTestResult {\n  XRPose? getPose(XRSpace baseSpace);\n};",
         "type": "interface",
         "name": "XRHitTestResult",
         "inheritance": null,
@@ -303,6 +309,7 @@
         "partial": false
       },
       "XRTransientInputHitTestResult": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRTransientInputHitTestResult {\n  [SameObject] readonly attribute XRInputSource inputSource;\n  readonly attribute FrozenArray<XRHitTestResult> results;\n};",
         "type": "interface",
         "name": "XRTransientInputHitTestResult",
         "inheritance": null,
@@ -374,6 +381,7 @@
         "partial": false
       },
       "XRRayDirectionInit": {
+        "fragment": "dictionary XRRayDirectionInit {\n  double x = 0;\n  double y = 0;\n  double z = -1;\n  double w = 0;\n};",
         "type": "dictionary",
         "name": "XRRayDirectionInit",
         "inheritance": null,
@@ -455,6 +463,7 @@
         "partial": false
       },
       "XRRay": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRRay {\n  constructor(optional DOMPointInit origin = {}, optional XRRayDirectionInit direction = {});\n  constructor(XRRigidTransform transform);\n  [SameObject] readonly attribute DOMPointReadOnly origin;\n  [SameObject] readonly attribute DOMPointReadOnly direction;\n  [SameObject] readonly attribute Float32Array matrix;\n};",
         "type": "interface",
         "name": "XRRay",
         "inheritance": null,
@@ -613,6 +622,7 @@
     "idlExtendedNames": {
       "XRSession": [
         {
+          "fragment": "partial interface XRSession {\n  Promise<XRHitTestSource> requestHitTestSource(XRHitTestOptionsInit options);\n  Promise<XRTransientInputHitTestSource> requestHitTestSourceForTransientInput(XRTransientInputHitTestOptionsInit options);\n};",
           "type": "interface",
           "name": "XRSession",
           "inheritance": null,
@@ -706,6 +716,7 @@
       ],
       "XRFrame": [
         {
+          "fragment": "partial interface XRFrame {\n  FrozenArray<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);\n  FrozenArray<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);\n};",
           "type": "interface",
           "name": "XRFrame",
           "inheritance": null,

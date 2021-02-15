@@ -1,0 +1,53 @@
+{
+  "name": "LinearAccelerationSensor",
+  "defined": {
+    "spec": {
+      "title": "Accelerometer",
+      "url": "https://www.w3.org/TR/accelerometer/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface LinearAccelerationSensor : Accelerometer {\n  constructor(optional AccelerometerSensorOptions options = {});\n};",
+    "href": "https://www.w3.org/TR/accelerometer/#linearaccelerationsensor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "Accelerometer",
+    "defined": {
+      "spec": {
+        "title": "Accelerometer",
+        "url": "https://www.w3.org/TR/accelerometer/"
+      },
+      "fragment": "[SecureContext, Exposed=Window]\ninterface Accelerometer : Sensor {\n  constructor(optional AccelerometerSensorOptions options = {});\n  readonly attribute double? x;\n  readonly attribute double? y;\n  readonly attribute double? z;\n};",
+      "href": "https://www.w3.org/TR/accelerometer/#accelerometer"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "Sensor",
+      "defined": {
+        "spec": {
+          "title": "Generic Sensor API",
+          "url": "https://www.w3.org/TR/generic-sensor/"
+        },
+        "fragment": "[SecureContext, Exposed=(DedicatedWorker, Window)]\ninterface Sensor : EventTarget {\n  readonly attribute boolean activated;\n  readonly attribute boolean hasReading;\n  readonly attribute DOMHighResTimeStamp? timestamp;\n  void start();\n  void stop();\n  attribute EventHandler onreading;\n  attribute EventHandler onactivate;\n  attribute EventHandler onerror;\n};",
+        "href": "https://www.w3.org/TR/generic-sensor/#sensor"
+      },
+      "extended": [],
+      "inheritance": {
+        "name": "EventTarget",
+        "defined": {
+          "spec": {
+            "title": "DOM Standard",
+            "url": "https://dom.spec.whatwg.org/"
+          },
+          "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+          "href": "https://dom.spec.whatwg.org/#eventtarget"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      },
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

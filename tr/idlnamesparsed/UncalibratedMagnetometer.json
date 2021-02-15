@@ -1,0 +1,40 @@
+{
+  "name": "UncalibratedMagnetometer",
+  "defined": {
+    "spec": {
+      "title": "Magnetometer",
+      "url": "https://www.w3.org/TR/magnetometer/"
+    },
+    "fragment": "[Constructor(optional MagnetometerSensorOptions sensorOptions), SecureContext,\n  Exposed=Window]\ninterface UncalibratedMagnetometer : Sensor {\n  readonly attribute double? x;\n  readonly attribute double? y;\n  readonly attribute double? z;\n  readonly attribute double? xBias;\n  readonly attribute double? yBias;\n  readonly attribute double? zBias;\n};",
+    "href": "https://www.w3.org/TR/magnetometer/#uncalibratedmagnetometer"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "Sensor",
+    "defined": {
+      "spec": {
+        "title": "Generic Sensor API",
+        "url": "https://www.w3.org/TR/generic-sensor/"
+      },
+      "fragment": "[SecureContext, Exposed=(DedicatedWorker, Window)]\ninterface Sensor : EventTarget {\n  readonly attribute boolean activated;\n  readonly attribute boolean hasReading;\n  readonly attribute DOMHighResTimeStamp? timestamp;\n  void start();\n  void stop();\n  attribute EventHandler onreading;\n  attribute EventHandler onactivate;\n  attribute EventHandler onerror;\n};",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

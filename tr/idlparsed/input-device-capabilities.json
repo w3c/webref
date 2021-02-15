@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "InputDeviceCapabilities": {
+        "fragment": "[Exposed=Window]\ninterface InputDeviceCapabilities {\n  constructor(optional InputDeviceCapabilitiesInit deviceInitDict = {});\n  readonly attribute boolean firesTouchEvents;\n  readonly attribute boolean pointerMovementScrolls;\n};",
         "type": "interface",
         "name": "InputDeviceCapabilities",
         "inheritance": null,
@@ -87,6 +88,7 @@
         "partial": false
       },
       "InputDeviceCapabilitiesInit": {
+        "fragment": "dictionary InputDeviceCapabilitiesInit {\n  boolean firesTouchEvents = false;\n  boolean pointerMovementScrolls = false;\n};",
         "type": "dictionary",
         "name": "InputDeviceCapabilitiesInit",
         "inheritance": null,
@@ -135,6 +137,7 @@
     "idlExtendedNames": {
       "UIEvent": [
         {
+          "fragment": "partial interface UIEvent {\n  readonly attribute InputDeviceCapabilities? sourceCapabilities;\n};",
           "type": "interface",
           "name": "UIEvent",
           "inheritance": null,
@@ -161,6 +164,7 @@
       ],
       "UIEventInit": [
         {
+          "fragment": "partial dictionary UIEventInit {\n  InputDeviceCapabilities? sourceCapabilities = null;\n};",
           "type": "dictionary",
           "name": "UIEventInit",
           "inheritance": null,

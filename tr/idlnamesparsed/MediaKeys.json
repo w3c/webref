@@ -1,0 +1,13 @@
+{
+  "name": "MediaKeys",
+  "defined": {
+    "spec": {
+      "title": "Encrypted Media Extensions",
+      "url": "https://www.w3.org/TR/encrypted-media/"
+    },
+    "fragment": "[SecureContext]\ninterface MediaKeys {\n    MediaKeySession  createSession(optional MediaKeySessionType sessionType = \"temporary\");\n    Promise<boolean> setServerCertificate(BufferSource serverCertificate);\n};"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

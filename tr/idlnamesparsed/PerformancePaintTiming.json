@@ -1,0 +1,27 @@
+{
+  "name": "PerformancePaintTiming",
+  "defined": {
+    "spec": {
+      "title": "Paint Timing 1",
+      "url": "https://www.w3.org/TR/paint-timing/"
+    },
+    "fragment": "interface PerformancePaintTiming : PerformanceEntry {};",
+    "href": "https://www.w3.org/TR/paint-timing/#performancepainttiming"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PerformanceEntry",
+    "defined": {
+      "spec": {
+        "title": "Performance Timeline Level 2",
+        "url": "https://www.w3.org/TR/performance-timeline-2/"
+      },
+      "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceEntry {\n  readonly    attribute DOMString           name;\n  readonly    attribute DOMString           entryType;\n  readonly    attribute DOMHighResTimeStamp startTime;\n  readonly    attribute DOMHighResTimeStamp duration;\n  [Default] object toJSON();\n};",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

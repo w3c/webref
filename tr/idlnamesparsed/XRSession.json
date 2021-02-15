@@ -1,0 +1,49 @@
+{
+  "name": "XRSession",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface XRSession : EventTarget {\n  // Attributes\n  readonly attribute XRVisibilityState visibilityState;\n  [SameObject] readonly attribute XRRenderState renderState;\n  [SameObject] readonly attribute XRInputSourceArray inputSources;\n\n  // Methods\n  void updateRenderState(optional XRRenderStateInit state = {});\n  [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);\n\n  unsigned long requestAnimationFrame(XRFrameRequestCallback callback);\n  void cancelAnimationFrame(unsigned long handle);\n\n  Promise<void> end();\n\n  // Events\n  attribute EventHandler onend;\n  attribute EventHandler oninputsourceschange;\n  attribute EventHandler onselect;\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectend;\n  attribute EventHandler onsqueeze;\n  attribute EventHandler onsqueezestart;\n  attribute EventHandler onsqueezeend;\n  attribute EventHandler onvisibilitychange;\n};",
+    "href": "https://www.w3.org/TR/webxr/#xrsession"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR DOM Overlays Module",
+        "url": "https://immersive-web.github.io/dom-overlays/"
+      },
+      "fragment": "partial interface XRSession {\n  readonly attribute XRDOMOverlayState? domOverlayState;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Hit Test Module",
+        "url": "https://immersive-web.github.io/hit-test/"
+      },
+      "fragment": "partial interface XRSession {\n  Promise<XRHitTestSource> requestHitTestSource(XRHitTestOptionsInit options);\n  Promise<XRTransientInputHitTestSource> requestHitTestSourceForTransientInput(XRTransientInputHitTestOptionsInit options);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Augmented Reality Module - Level 1",
+        "url": "https://www.w3.org/TR/webxr-ar-module-1/"
+      },
+      "fragment": "partial interface XRSession {\n  // Attributes\n  readonly attribute XREnvironmentBlendMode environmentBlendMode;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

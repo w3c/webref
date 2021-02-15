@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "MemoryMeasurement": {
+        "fragment": "dictionary MemoryMeasurement {\n  unsigned long long bytes;\n  sequence<MemoryBreakdownEntry> breakdown;\n};",
         "type": "dictionary",
         "name": "MemoryMeasurement",
         "inheritance": null,
@@ -58,6 +59,7 @@
         "partial": false
       },
       "MemoryBreakdownEntry": {
+        "fragment": "dictionary MemoryBreakdownEntry {\n  unsigned long long bytes;\n  sequence<MemoryAttribution> attribution;\n  sequence<DOMString> types;\n};",
         "type": "dictionary",
         "name": "MemoryBreakdownEntry",
         "inheritance": null,
@@ -130,6 +132,7 @@
         "partial": false
       },
       "MemoryAttribution": {
+        "fragment": "dictionary MemoryAttribution {\n  USVString url;\n  MemoryAttributionContainer container;\n  DOMString scope;\n};",
         "type": "dictionary",
         "name": "MemoryAttribution",
         "inheritance": null,
@@ -184,6 +187,7 @@
         "partial": false
       },
       "MemoryAttributionContainer": {
+        "fragment": "dictionary MemoryAttributionContainer {\n  DOMString id;\n  USVString src;\n};",
         "type": "dictionary",
         "name": "MemoryAttributionContainer",
         "inheritance": null,
@@ -226,6 +230,7 @@
     "idlExtendedNames": {
       "Performance": [
         {
+          "fragment": "partial interface Performance {\n  [CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();\n};",
           "type": "interface",
           "name": "Performance",
           "inheritance": null,

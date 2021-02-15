@@ -17,6 +17,7 @@
     },
     "idlNames": {
       "NavigatorUABrandVersion": {
+        "fragment": "dictionary NavigatorUABrandVersion {\n  DOMString brand;\n  DOMString version;\n};",
         "type": "dictionary",
         "name": "NavigatorUABrandVersion",
         "inheritance": null,
@@ -56,6 +57,7 @@
         "partial": false
       },
       "UADataValues": {
+        "fragment": "dictionary UADataValues {\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString architecture;\n  DOMString model;\n  DOMString uaFullVersion;\n};",
         "type": "dictionary",
         "name": "UADataValues",
         "inheritance": null,
@@ -140,6 +142,7 @@
         "partial": false
       },
       "NavigatorUAData": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface NavigatorUAData {\n  readonly attribute FrozenArray<NavigatorUABrandVersion> brands;\n  readonly attribute boolean mobile;\n  Promise<UADataValues> getHighEntropyValues(sequence<DOMString> hints);\n};",
         "type": "interface",
         "name": "NavigatorUAData",
         "inheritance": null,
@@ -255,6 +258,7 @@
         "partial": false
       },
       "NavigatorUA": {
+        "fragment": "interface mixin NavigatorUA {\n  [SecureContext] readonly attribute NavigatorUAData userAgentData;\n};",
         "type": "interface mixin",
         "name": "NavigatorUA",
         "inheritance": null,
@@ -289,15 +293,19 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "name": "Navigator",
-          "type": "interface",
+          "fragment": "Navigator includes NavigatorUA;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
           "includes": "NavigatorUA"
         }
       ],
       "WorkerNavigator": [
         {
-          "name": "WorkerNavigator",
-          "type": "interface",
+          "fragment": "WorkerNavigator includes NavigatorUA;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WorkerNavigator",
           "includes": "NavigatorUA"
         }
       ]

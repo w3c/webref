@@ -1,0 +1,27 @@
+{
+  "name": "CSSPositionValue",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue x, CSSNumericValue y)]\ninterface CSSPositionValue : CSSStyleValue {\n    attribute CSSNumericValue x;\n    attribute CSSNumericValue y;\n};",
+    "href": "https://www.w3.org/TR/css-typed-om-1/#csspositionvalue"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSStyleValue",
+    "defined": {
+      "spec": {
+        "title": "CSS Typed OM Level 1",
+        "url": "https://www.w3.org/TR/css-typed-om-1/"
+      },
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSStyleValue {\n    stringifier;\n    [Exposed=Window] static CSSStyleValue parse(USVString property, USVString cssText);\n    [Exposed=Window] static sequence<CSSStyleValue> parseAll(USVString property, USVString cssText);\n};",
+      "href": "https://www.w3.org/TR/css-typed-om-1/#cssstylevalue"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

@@ -1,0 +1,14 @@
+{
+  "name": "TextMetrics",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface TextMetrics {\n  // x-direction\n  readonly attribute double width; // advance width\n  readonly attribute double actualBoundingBoxLeft;\n  readonly attribute double actualBoundingBoxRight;\n\n  // y-direction\n  readonly attribute double fontBoundingBoxAscent;\n  readonly attribute double fontBoundingBoxDescent;\n  readonly attribute double actualBoundingBoxAscent;\n  readonly attribute double actualBoundingBoxDescent;\n  readonly attribute double emHeightAscent;\n  readonly attribute double emHeightDescent;\n  readonly attribute double hangingBaseline;\n  readonly attribute double alphabeticBaseline;\n  readonly attribute double ideographicBaseline;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/canvas.html#textmetrics"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

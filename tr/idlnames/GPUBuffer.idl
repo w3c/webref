@@ -1,0 +1,12 @@
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+[Serializable]
+interface GPUBuffer {
+    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);
+    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);
+    undefined unmap();
+
+    undefined destroy();
+};
+
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+GPUBuffer includes GPUObjectBase;

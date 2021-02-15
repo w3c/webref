@@ -1,0 +1,9 @@
+// Source: Service Workers 1 (https://www.w3.org/TR/service-workers-1/)
+[Exposed=ServiceWorker]
+interface FetchEvent : ExtendableEvent {
+  constructor(DOMString type, FetchEventInit eventInitDict);
+  [SameObject] readonly attribute Request request;
+  readonly attribute DOMString clientId;
+
+  void respondWith(Promise<Response> r);
+};

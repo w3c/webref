@@ -1,0 +1,9 @@
+// Source: WebXR Hit Test Module (https://immersive-web.github.io/hit-test/)
+[SecureContext, Exposed=Window]
+interface XRRay {
+  constructor(optional DOMPointInit origin = {}, optional XRRayDirectionInit direction = {});
+  constructor(XRRigidTransform transform);
+  [SameObject] readonly attribute DOMPointReadOnly origin;
+  [SameObject] readonly attribute DOMPointReadOnly direction;
+  [SameObject] readonly attribute Float32Array matrix;
+};

@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "PerformanceLongTaskTiming": {
+        "fragment": "interface PerformanceLongTaskTiming : PerformanceEntry {\n    readonly attribute FrozenArray<TaskAttributionTiming> attribution;\n};",
         "type": "interface",
         "name": "PerformanceLongTaskTiming",
         "inheritance": "PerformanceEntry",
@@ -43,6 +44,7 @@
         "partial": false
       },
       "TaskAttributionTiming": {
+        "fragment": "interface TaskAttributionTiming : PerformanceEntry {\n    readonly attribute DOMString containerType;\n    readonly attribute DOMString containerSrc;\n    readonly attribute DOMString containerId;\n    readonly attribute DOMString containerName;\n};",
         "type": "interface",
         "name": "TaskAttributionTiming",
         "inheritance": "PerformanceEntry",

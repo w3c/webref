@@ -1,0 +1,26 @@
+{
+  "name": "CSSMediaRule",
+  "defined": {
+    "spec": {
+      "title": "CSS Conditional Rules Module Level 3",
+      "url": "https://www.w3.org/TR/css-conditional-3/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CSSMediaRule : CSSConditionRule {\n    [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n};",
+    "href": "https://www.w3.org/TR/css-conditional-3/#cssmediarule"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSConditionRule",
+    "defined": {
+      "spec": {
+        "title": "CSS Conditional Rules Module Level 3",
+        "url": "https://www.w3.org/TR/css-conditional-3/"
+      },
+      "fragment": "[Exposed=Window]\ninterface CSSConditionRule : CSSGroupingRule {\n    attribute CSSOMString conditionText;\n};",
+      "href": "https://www.w3.org/TR/css-conditional-3/#cssconditionrule"
+    },
+    "extended": [],
+    "includes": []
+  },
+  "includes": []
+}

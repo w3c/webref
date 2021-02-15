@@ -137,6 +137,7 @@
     },
     "idlNames": {
       "CSSStyleValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSStyleValue {\n    stringifier;\n    [Exposed=Window] static CSSStyleValue parse(USVString property, USVString cssText);\n    [Exposed=Window] static sequence<CSSStyleValue> parseAll(USVString property, USVString cssText);\n};",
         "type": "interface",
         "name": "CSSStyleValue",
         "inheritance": null,
@@ -301,6 +302,7 @@
         "partial": false
       },
       "StylePropertyMapReadOnly": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface StylePropertyMapReadOnly {\n    iterable<USVString, sequence<CSSStyleValue>>;\n    any get(USVString property);\n    /* 'any' means (undefined or CSSStyleValue) here,\n       see https://github.com/heycam/webidl/issues/60 */\n    sequence<CSSStyleValue> getAll(USVString property);\n    boolean has(USVString property);\n    readonly attribute unsigned long size;\n};",
         "type": "interface",
         "name": "StylePropertyMapReadOnly",
         "inheritance": null,
@@ -487,6 +489,7 @@
         "partial": false
       },
       "StylePropertyMap": {
+        "fragment": "[Exposed=Window]\ninterface StylePropertyMap : StylePropertyMapReadOnly {\n    void set(USVString property, (CSSStyleValue or USVString)... values);\n    void append(USVString property, (CSSStyleValue or USVString)... values);\n    void delete(USVString property);\n    void clear();\n};",
         "type": "interface",
         "name": "StylePropertyMap",
         "inheritance": "StylePropertyMapReadOnly",
@@ -683,6 +686,7 @@
         "partial": false
       },
       "CSSUnparsedValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(sequence<CSSUnparsedSegment> members)]\ninterface CSSUnparsedValue : CSSStyleValue {\n    iterable<CSSUnparsedSegment>;\n    readonly attribute unsigned long length;\n    getter CSSUnparsedSegment (unsigned long index);\n    setter CSSUnparsedSegment (unsigned long index, CSSUnparsedSegment val);\n};",
         "type": "interface",
         "name": "CSSUnparsedValue",
         "inheritance": "CSSStyleValue",
@@ -859,6 +863,7 @@
         "partial": false
       },
       "CSSUnparsedSegment": {
+        "fragment": "typedef (USVString or CSSVariableReferenceValue) CSSUnparsedSegment;",
         "type": "typedef",
         "name": "CSSUnparsedSegment",
         "idlType": {
@@ -889,6 +894,7 @@
         "extAttrs": []
       },
       "CSSVariableReferenceValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(USVString variable, optional CSSUnparsedValue? fallback = null)]\ninterface CSSVariableReferenceValue {\n    attribute USVString variable;\n    readonly attribute CSSUnparsedValue? fallback;\n};",
         "type": "interface",
         "name": "CSSVariableReferenceValue",
         "inheritance": null,
@@ -992,6 +998,7 @@
         "partial": false
       },
       "CSSKeywordValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(USVString value)]\ninterface CSSKeywordValue : CSSStyleValue {\n    attribute USVString value;\n};",
         "type": "interface",
         "name": "CSSKeywordValue",
         "inheritance": "CSSStyleValue",
@@ -1062,6 +1069,7 @@
         "partial": false
       },
       "CSSNumberish": {
+        "fragment": "typedef (double or CSSNumericValue) CSSNumberish;",
         "type": "typedef",
         "name": "CSSNumberish",
         "idlType": {
@@ -1092,6 +1100,7 @@
         "extAttrs": []
       },
       "CSSNumericBaseType": {
+        "fragment": "enum CSSNumericBaseType {\n    \"length\",\n    \"angle\",\n    \"time\",\n    \"frequency\",\n    \"resolution\",\n    \"flex\",\n    \"percent\",\n};",
         "type": "enum",
         "name": "CSSNumericBaseType",
         "values": [
@@ -1127,6 +1136,7 @@
         "extAttrs": []
       },
       "CSSNumericType": {
+        "fragment": "dictionary CSSNumericType {\n    long length;\n    long angle;\n    long time;\n    long frequency;\n    long resolution;\n    long flex;\n    long percent;\n    CSSNumericBaseType percentHint;\n};",
         "type": "dictionary",
         "name": "CSSNumericType",
         "inheritance": null,
@@ -1256,6 +1266,7 @@
         "partial": false
       },
       "CSSNumericValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSNumericValue : CSSStyleValue {\n    CSSNumericValue add(CSSNumberish... values);\n    CSSNumericValue sub(CSSNumberish... values);\n    CSSNumericValue mul(CSSNumberish... values);\n    CSSNumericValue div(CSSNumberish... values);\n    CSSNumericValue min(CSSNumberish... values);\n    CSSNumericValue max(CSSNumberish... values);\n\n    boolean equals(CSSNumberish... value);\n\n    CSSUnitValue to(USVString unit);\n    CSSMathSum toSum(USVString... units);\n    CSSNumericType type();\n\n    [Exposed=Window] static CSSNumericValue parse(USVString cssText);\n};",
         "type": "interface",
         "name": "CSSNumericValue",
         "inheritance": "CSSStyleValue",
@@ -1633,6 +1644,7 @@
         "partial": false
       },
       "CSSUnitValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(double value, USVString unit)]\ninterface CSSUnitValue : CSSNumericValue {\n    attribute double value;\n    readonly attribute USVString unit;\n};",
         "type": "interface",
         "name": "CSSUnitValue",
         "inheritance": "CSSNumericValue",
@@ -1734,6 +1746,7 @@
         "partial": false
       },
       "CSSMathValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSMathValue : CSSNumericValue {\n    readonly attribute CSSMathOperator operator;\n};",
         "type": "interface",
         "name": "CSSMathValue",
         "inheritance": "CSSNumericValue",
@@ -1781,6 +1794,7 @@
         "partial": false
       },
       "CSSMathSum": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish... args)]\ninterface CSSMathSum : CSSMathValue {\n    readonly attribute CSSNumericArray values;\n};",
         "type": "interface",
         "name": "CSSMathSum",
         "inheritance": "CSSMathValue",
@@ -1851,6 +1865,7 @@
         "partial": false
       },
       "CSSMathProduct": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish... args)]\ninterface CSSMathProduct : CSSMathValue {\n    readonly attribute CSSNumericArray values;\n};",
         "type": "interface",
         "name": "CSSMathProduct",
         "inheritance": "CSSMathValue",
@@ -1921,6 +1936,7 @@
         "partial": false
       },
       "CSSMathNegate": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish arg)]\ninterface CSSMathNegate : CSSMathValue {\n    readonly attribute CSSNumericValue value;\n};",
         "type": "interface",
         "name": "CSSMathNegate",
         "inheritance": "CSSMathValue",
@@ -1991,6 +2007,7 @@
         "partial": false
       },
       "CSSMathInvert": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish arg)]\ninterface CSSMathInvert : CSSMathValue {\n    readonly attribute CSSNumericValue value;\n};",
         "type": "interface",
         "name": "CSSMathInvert",
         "inheritance": "CSSMathValue",
@@ -2061,6 +2078,7 @@
         "partial": false
       },
       "CSSMathMin": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish... args)]\ninterface CSSMathMin : CSSMathValue {\n    readonly attribute CSSNumericArray values;\n};",
         "type": "interface",
         "name": "CSSMathMin",
         "inheritance": "CSSMathValue",
@@ -2131,6 +2149,7 @@
         "partial": false
       },
       "CSSMathMax": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish... args)]\ninterface CSSMathMax : CSSMathValue {\n    readonly attribute CSSNumericArray values;\n};",
         "type": "interface",
         "name": "CSSMathMax",
         "inheritance": "CSSMathValue",
@@ -2201,6 +2220,7 @@
         "partial": false
       },
       "CSSNumericArray": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSNumericArray {\n    iterable<CSSNumericValue>;\n    readonly attribute unsigned long length;\n    getter CSSNumericValue (unsigned long index);\n};",
         "type": "interface",
         "name": "CSSNumericArray",
         "inheritance": null,
@@ -2297,6 +2317,7 @@
         "partial": false
       },
       "CSSMathOperator": {
+        "fragment": "enum CSSMathOperator {\n    \"sum\",\n    \"product\",\n    \"negate\",\n    \"invert\",\n    \"min\",\n    \"max\",\n};",
         "type": "enum",
         "name": "CSSMathOperator",
         "values": [
@@ -2328,6 +2349,7 @@
         "extAttrs": []
       },
       "CSSTransformValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(sequence<CSSTransformComponent> transforms)]\ninterface CSSTransformValue : CSSStyleValue {\n    iterable<CSSTransformComponent>;\n    readonly attribute unsigned long length;\n    getter CSSTransformComponent (unsigned long index);\n    setter CSSTransformComponent (unsigned long index, CSSTransformComponent val);\n\n    readonly attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
         "type": "interface",
         "name": "CSSTransformValue",
         "inheritance": "CSSStyleValue",
@@ -2534,6 +2556,7 @@
         "partial": false
       },
       "CSSTransformComponent": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSTransformComponent {\n    stringifier;\n    attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
         "type": "interface",
         "name": "CSSTransformComponent",
         "inheritance": null,
@@ -2603,6 +2626,7 @@
         "partial": false
       },
       "CSSTranslate": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue x, CSSNumericValue y, optional CSSNumericValue z)]\ninterface CSSTranslate : CSSTransformComponent {\n    attribute CSSNumericValue x;\n    attribute CSSNumericValue y;\n    attribute CSSNumericValue z;\n};",
         "type": "interface",
         "name": "CSSTranslate",
         "inheritance": "CSSTransformComponent",
@@ -2735,6 +2759,7 @@
         "partial": false
       },
       "CSSRotate": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue angle),\n Constructor(CSSNumberish x, CSSNumberish y, CSSNumberish z, CSSNumericValue angle)]\ninterface CSSRotate : CSSTransformComponent {\n    attribute CSSNumberish x;\n    attribute CSSNumberish y;\n    attribute CSSNumberish z;\n    attribute CSSNumericValue angle;\n};",
         "type": "interface",
         "name": "CSSRotate",
         "inheritance": "CSSTransformComponent",
@@ -2921,6 +2946,7 @@
         "partial": false
       },
       "CSSScale": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumberish x, CSSNumberish y, optional CSSNumberish z)]\ninterface CSSScale : CSSTransformComponent {\n    attribute CSSNumberish x;\n    attribute CSSNumberish y;\n    attribute CSSNumberish z;\n};",
         "type": "interface",
         "name": "CSSScale",
         "inheritance": "CSSTransformComponent",
@@ -3053,6 +3079,7 @@
         "partial": false
       },
       "CSSSkew": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue ax, CSSNumericValue ay)]\ninterface CSSSkew : CSSTransformComponent {\n    attribute CSSNumericValue ax;\n    attribute CSSNumericValue ay;\n};",
         "type": "interface",
         "name": "CSSSkew",
         "inheritance": "CSSTransformComponent",
@@ -3154,6 +3181,7 @@
         "partial": false
       },
       "CSSSkewX": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue ax)]\ninterface CSSSkewX : CSSTransformComponent {\n    attribute CSSNumericValue ax;\n};",
         "type": "interface",
         "name": "CSSSkewX",
         "inheritance": "CSSTransformComponent",
@@ -3224,6 +3252,7 @@
         "partial": false
       },
       "CSSSkewY": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue ay)]\ninterface CSSSkewY : CSSTransformComponent {\n    attribute CSSNumericValue ay;\n};",
         "type": "interface",
         "name": "CSSSkewY",
         "inheritance": "CSSTransformComponent",
@@ -3294,6 +3323,7 @@
         "partial": false
       },
       "CSSPerspective": {
+        "fragment": "/* Note that skew(x,y) is *not* the same as skewX(x) skewY(y),\n   thus the separate interfaces for all three. */\n\n[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue length)]\ninterface CSSPerspective : CSSTransformComponent {\n    attribute CSSNumericValue length;\n};",
         "type": "interface",
         "name": "CSSPerspective",
         "inheritance": "CSSTransformComponent",
@@ -3364,6 +3394,7 @@
         "partial": false
       },
       "CSSMatrixComponent": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(DOMMatrixReadOnly matrix, optional CSSMatrixComponentOptions options)]\ninterface CSSMatrixComponent : CSSTransformComponent {\n    attribute DOMMatrix matrix;\n};",
         "type": "interface",
         "name": "CSSMatrixComponent",
         "inheritance": "CSSTransformComponent",
@@ -3450,6 +3481,7 @@
         "partial": false
       },
       "CSSMatrixComponentOptions": {
+        "fragment": "dictionary CSSMatrixComponentOptions {\n    boolean is2D;\n};",
         "type": "dictionary",
         "name": "CSSMatrixComponentOptions",
         "inheritance": null,
@@ -3474,6 +3506,7 @@
         "partial": false
       },
       "CSSPositionValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet),\n Constructor(CSSNumericValue x, CSSNumericValue y)]\ninterface CSSPositionValue : CSSStyleValue {\n    attribute CSSNumericValue x;\n    attribute CSSNumericValue y;\n};",
         "type": "interface",
         "name": "CSSPositionValue",
         "inheritance": "CSSStyleValue",
@@ -3575,6 +3608,7 @@
         "partial": false
       },
       "CSSImageValue": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSImageValue : CSSStyleValue {\n};",
         "type": "interface",
         "name": "CSSImageValue",
         "inheritance": "CSSStyleValue",
@@ -3609,6 +3643,7 @@
     "idlExtendedNames": {
       "Element": [
         {
+          "fragment": "partial interface Element {\n    [SameObject] StylePropertyMapReadOnly computedStyleMap();\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -3642,6 +3677,7 @@
       ],
       "CSSStyleRule": [
         {
+          "fragment": "partial interface CSSStyleRule {\n    [SameObject] readonly attribute StylePropertyMap styleMap;\n};",
           "type": "interface",
           "name": "CSSStyleRule",
           "inheritance": null,
@@ -3675,6 +3711,7 @@
       ],
       "ElementCSSInlineStyle": [
         {
+          "fragment": "partial interface ElementCSSInlineStyle {\n    [SameObject] readonly attribute StylePropertyMap attributeStyleMap;\n};",
           "type": "interface",
           "name": "ElementCSSInlineStyle",
           "inheritance": null,
@@ -3708,6 +3745,7 @@
       ],
       "CSS": [
         {
+          "fragment": "partial namespace CSS {\n    CSSUnitValue number(double value);\n    CSSUnitValue percent(double value);\n\n    // <length>\n    CSSUnitValue em(double value);\n    CSSUnitValue ex(double value);\n    CSSUnitValue ch(double value);\n    CSSUnitValue ic(double value);\n    CSSUnitValue rem(double value);\n    CSSUnitValue lh(double value);\n    CSSUnitValue rlh(double value);\n    CSSUnitValue vw(double value);\n    CSSUnitValue vh(double value);\n    CSSUnitValue vi(double value);\n    CSSUnitValue vb(double value);\n    CSSUnitValue vmin(double value);\n    CSSUnitValue vmax(double value);\n    CSSUnitValue cm(double value);\n    CSSUnitValue mm(double value);\n    CSSUnitValue Q(double value);\n    CSSUnitValue in(double value);\n    CSSUnitValue pt(double value);\n    CSSUnitValue pc(double value);\n    CSSUnitValue px(double value);\n\n    // <angle>\n    CSSUnitValue deg(double value);\n    CSSUnitValue grad(double value);\n    CSSUnitValue rad(double value);\n    CSSUnitValue turn(double value);\n\n    // <time>\n    CSSUnitValue s(double value);\n    CSSUnitValue ms(double value);\n\n    // <frequency>\n    CSSUnitValue Hz(double value);\n    CSSUnitValue kHz(double value);\n\n    // <resolution>\n    CSSUnitValue dpi(double value);\n    CSSUnitValue dpcm(double value);\n    CSSUnitValue dppx(double value);\n\n    // <flex>\n    CSSUnitValue fr(double value);\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,

@@ -5,6 +5,152 @@
   },
   "dfns": [
     {
+      "id": "codec",
+      "href": "https://wicg.github.io/web-codecs/#codec",
+      "linkingText": [
+        "Codec"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "internal-pending-output",
+      "href": "https://wicg.github.io/web-codecs/#internal-pending-output",
+      "linkingText": [
+        "Internal Pending Output"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "system-resources",
+      "href": "https://wicg.github.io/web-codecs/#system-resources",
+      "linkingText": [
+        "system resources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "avc",
+      "href": "https://wicg.github.io/web-codecs/#avc",
+      "linkingText": [
+        "AVC"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "picture-parameter-set-pps",
+      "href": "https://wicg.github.io/web-codecs/#picture-parameter-set-pps",
+      "linkingText": [
+        "Picture Parameter Set (PPS)",
+        "PPS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "sequence-parameter-set-sps",
+      "href": "https://wicg.github.io/web-codecs/#sequence-parameter-set-sps",
+      "linkingText": [
+        "Sequence Parameter Set (SPS)",
+        "SPS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "control-thread",
+      "href": "https://wicg.github.io/web-codecs/#control-thread",
+      "linkingText": [
+        "control thread"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "control-thread-and-codec-thread",
+        "title": "Control Thread and Codec Thread",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "codec-thread",
+      "href": "https://wicg.github.io/web-codecs/#codec-thread",
+      "linkingText": [
+        "codec thread"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "control-thread-and-codec-thread",
+        "title": "Control Thread and Codec Thread",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "control-message-queue",
       "href": "https://wicg.github.io/web-codecs/#control-message-queue",
       "linkingText": [
@@ -16,9 +162,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "codec-processing-model",
-        "title": "Codec Processing Model",
-        "number": "2"
+        "id": "control-thread-and-codec-thread",
+        "title": "Control Thread and Codec Thread",
+        "number": "2.2"
       },
       "definedIn": "prose"
     },
@@ -34,9 +180,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "codec-processing-model",
-        "title": "Codec Processing Model",
-        "number": "2"
+        "id": "control-thread-and-codec-thread",
+        "title": "Control Thread and Codec Thread",
+        "number": "2.2"
       },
       "definedIn": "prose"
     },
@@ -53,9 +199,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "codec-processing-model",
-        "title": "Codec Processing Model",
-        "number": "2"
+        "id": "control-thread-and-codec-thread",
+        "title": "Control Thread and Codec Thread",
+        "number": "2.2"
       },
       "definedIn": "prose"
     },
@@ -72,17 +218,17 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "codec-processing-model",
-        "title": "Codec Processing Model",
-        "number": "2"
+        "id": "control-thread-and-codec-thread",
+        "title": "Control Thread and Codec Thread",
+        "number": "2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "run-the-control-message-processing-loop",
-      "href": "https://wicg.github.io/web-codecs/#run-the-control-message-processing-loop",
+      "id": "injected-state",
+      "href": "https://wicg.github.io/web-codecs/#injected-state",
       "linkingText": [
-        "Run the control message processing loop"
+        "injected state"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -90,9 +236,45 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "codec-processing-model",
-        "title": "Codec Processing Model",
-        "number": "2"
+        "id": "control-thread-and-codec-thread",
+        "title": "Control Thread and Codec Thread",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "reset-the-control-message-queue",
+      "href": "https://wicg.github.io/web-codecs/#reset-the-control-message-queue",
+      "linkingText": [
+        "Reset the control message queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "control-thread-and-codec-thread",
+        "title": "Control Thread and Codec Thread",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "codec-processing-loop",
+      "href": "https://wicg.github.io/web-codecs/#codec-processing-loop",
+      "linkingText": [
+        "codec processing loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "control-thread-and-codec-thread",
+        "title": "Control Thread and Codec Thread",
+        "number": "2.2"
       },
       "definedIn": "prose"
     },
@@ -493,6 +675,60 @@
       "definedIn": "dt"
     },
     {
+      "id": "output-audioframes",
+      "href": "https://wicg.github.io/web-codecs/#output-audioframes",
+      "linkingText": [
+        "Output AudioFrames"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-algorithms",
+        "title": "Algorithms",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "reset-audiodecoder",
+      "href": "https://wicg.github.io/web-codecs/#reset-audiodecoder",
+      "linkingText": [
+        "Reset AudioDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-algorithms",
+        "title": "Algorithms",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "close-audiodecoder",
+      "href": "https://wicg.github.io/web-codecs/#close-audiodecoder",
+      "linkingText": [
+        "Close AudioDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-algorithms",
+        "title": "Algorithms",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "videodecoder",
       "href": "https://wicg.github.io/web-codecs/#videodecoder",
       "linkingText": [
@@ -885,6 +1121,60 @@
         "id": "videodecoder-methods",
         "title": "Methods",
         "number": "4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "output-videoframes",
+      "href": "https://wicg.github.io/web-codecs/#output-videoframes",
+      "linkingText": [
+        "Output VideoFrames"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-algorithms",
+        "title": "Algorithms",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "reset-videodecoder",
+      "href": "https://wicg.github.io/web-codecs/#reset-videodecoder",
+      "linkingText": [
+        "Reset VideoDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-algorithms",
+        "title": "Algorithms",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "close-videodecoder",
+      "href": "https://wicg.github.io/web-codecs/#close-videodecoder",
+      "linkingText": [
+        "Close VideoDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-algorithms",
+        "title": "Algorithms",
+        "number": "4.5"
       },
       "definedIn": "dt"
     },
@@ -1285,6 +1575,60 @@
       "definedIn": "dt"
     },
     {
+      "id": "output-encodedaudiochunks",
+      "href": "https://wicg.github.io/web-codecs/#output-encodedaudiochunks",
+      "linkingText": [
+        "Output EncodedAudioChunks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-algorithms",
+        "title": "Algorithms",
+        "number": "5.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "reset-audioencoder",
+      "href": "https://wicg.github.io/web-codecs/#reset-audioencoder",
+      "linkingText": [
+        "Reset AudioEncoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-algorithms",
+        "title": "Algorithms",
+        "number": "5.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "close-audioencoder",
+      "href": "https://wicg.github.io/web-codecs/#close-audioencoder",
+      "linkingText": [
+        "Close AudioEncoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-algorithms",
+        "title": "Algorithms",
+        "number": "5.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "videoencoder",
       "href": "https://wicg.github.io/web-codecs/#videoencoder",
       "linkingText": [
@@ -1482,6 +1826,26 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-encodedvideochunkoutputcallback-output_config",
+      "href": "https://wicg.github.io/web-codecs/#dom-encodedvideochunkoutputcallback-output_config",
+      "linkingText": [
+        "output_config"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "EncodedVideoChunkOutputCallback"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-interface",
+        "title": "VideoEncoder Interface",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-videoencoder-codec-implementation-slot",
       "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-codec-implementation-slot",
       "linkingText": [
@@ -1526,6 +1890,46 @@
       "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-error-callback-slot",
       "linkingText": [
         "[[error callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoder-active-encoder-config-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-active-encoder-config-slot",
+      "linkingText": [
+        "[[active encoder config]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoder-active-output-config-slot",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoder-active-output-config-slot",
+      "linkingText": [
+        "[[active output config]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1704,10 +2108,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "configure-decoder",
-      "href": "https://wicg.github.io/web-codecs/#configure-decoder",
+      "id": "output-encodedvideochunks",
+      "href": "https://wicg.github.io/web-codecs/#output-encodedvideochunks",
       "linkingText": [
-        "Configure Decoder"
+        "Output EncodedVideoChunks"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1715,17 +2119,17 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "configure-decoder-algorithm",
-        "title": "Configure Decoder",
-        "number": "7.1"
+        "id": "videoencoder-algorithms",
+        "title": "Algorithms",
+        "number": "6.5"
       },
-      "definedIn": "heading"
+      "definedIn": "dt"
     },
     {
-      "id": "decode-chunk",
-      "href": "https://wicg.github.io/web-codecs/#decode-chunk",
+      "id": "reset-videoencoder",
+      "href": "https://wicg.github.io/web-codecs/#reset-videoencoder",
       "linkingText": [
-        "Decode Chunk"
+        "Reset VideoEncoder"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1733,17 +2137,17 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "decode-chunk-algorithm",
-        "title": "Decode Chunk (with chunk and output algorithm)",
-        "number": "7.2"
+        "id": "videoencoder-algorithms",
+        "title": "Algorithms",
+        "number": "6.5"
       },
-      "definedIn": "heading"
+      "definedIn": "dt"
     },
     {
-      "id": "flush",
-      "href": "https://wicg.github.io/web-codecs/#flush",
+      "id": "close-videoencoder",
+      "href": "https://wicg.github.io/web-codecs/#close-videoencoder",
       "linkingText": [
-        "Flush"
+        "Close VideoEncoder"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1751,173 +2155,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "flush-algorithm",
-        "title": "Flush",
-        "number": "7.3"
+        "id": "videoencoder-algorithms",
+        "title": "Algorithms",
+        "number": "6.5"
       },
-      "definedIn": "heading"
-    },
-    {
-      "id": "codec-error",
-      "href": "https://wicg.github.io/web-codecs/#codec-error",
-      "linkingText": [
-        "Codec Error"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "codec-error-algorithm",
-        "title": "Codec Error",
-        "number": "7.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "audioframe-output",
-      "href": "https://wicg.github.io/web-codecs/#audioframe-output",
-      "linkingText": [
-        "AudioFrame Output"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "audio-frame-output-algorithm",
-        "title": "AudioFrame Output",
-        "number": "7.5"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "videoframe-output",
-      "href": "https://wicg.github.io/web-codecs/#videoframe-output",
-      "linkingText": [
-        "VideoFrame Output"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "video-frame-output-algorithm",
-        "title": "VideoFrame Output",
-        "number": "7.6"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "reset",
-      "href": "https://wicg.github.io/web-codecs/#reset",
-      "linkingText": [
-        "Reset"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "reset-algorithm",
-        "title": "Reset",
-        "number": "7.7"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "close",
-      "href": "https://wicg.github.io/web-codecs/#close",
-      "linkingText": [
-        "Close"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "close-algorithm",
-        "title": "Close (with error)",
-        "number": "7.8"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "configure-encoder",
-      "href": "https://wicg.github.io/web-codecs/#configure-encoder",
-      "linkingText": [
-        "Configure Encoder"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "configure-encoder-algorithm",
-        "title": "Configure Encoder (with config)",
-        "number": "7.9"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "encode-frame",
-      "href": "https://wicg.github.io/web-codecs/#encode-frame",
-      "linkingText": [
-        "Encode Frame"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "encode-frame-algorithm",
-        "title": "Encode Frame (with frame, options, and output algorithm)",
-        "number": "7.10"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "encodedaudiochunk-output",
-      "href": "https://wicg.github.io/web-codecs/#encodedaudiochunk-output",
-      "linkingText": [
-        "EncodedAudioChunk Output"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "encodedaudiochunk-output-algorithm",
-        "title": "EncodedAudioChunk Output",
-        "number": "7.11"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "encodedvideochunk-output",
-      "href": "https://wicg.github.io/web-codecs/#encodedvideochunk-output",
-      "linkingText": [
-        "EncodedVideoChunk Output"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "encodedvideochunk-output-algorithm",
-        "title": "EncodedVideoChunk Output",
-        "number": "7.12"
-      },
-      "definedIn": "heading"
+      "definedIn": "dt"
     },
     {
       "id": "codec-string",
@@ -1933,7 +2175,7 @@
       "heading": {
         "id": "config-codec-string",
         "title": "Codec String",
-        "number": "8.1"
+        "number": "7.1"
       },
       "definedIn": "heading"
     },
@@ -1951,7 +2193,7 @@
       "heading": {
         "id": "config-codec-string",
         "title": "Codec String",
-        "number": "8.1"
+        "number": "7.1"
       },
       "definedIn": "prose"
     },
@@ -1969,7 +2211,7 @@
       "heading": {
         "id": "audio-decoder-config",
         "title": "AudioDecoderConfig",
-        "number": "8.2"
+        "number": "7.2"
       },
       "definedIn": "pre"
     },
@@ -1987,7 +2229,7 @@
       "heading": {
         "id": "audio-decoder-config",
         "title": "AudioDecoderConfig",
-        "number": "8.2"
+        "number": "7.2"
       },
       "definedIn": "prose"
     },
@@ -2007,7 +2249,7 @@
       "heading": {
         "id": "audio-decoder-config",
         "title": "AudioDecoderConfig",
-        "number": "8.2"
+        "number": "7.2"
       },
       "definedIn": "dt"
     },
@@ -2027,7 +2269,7 @@
       "heading": {
         "id": "audio-decoder-config",
         "title": "AudioDecoderConfig",
-        "number": "8.2"
+        "number": "7.2"
       },
       "definedIn": "dt"
     },
@@ -2047,7 +2289,7 @@
       "heading": {
         "id": "audio-decoder-config",
         "title": "AudioDecoderConfig",
-        "number": "8.2"
+        "number": "7.2"
       },
       "definedIn": "dt"
     },
@@ -2067,7 +2309,7 @@
       "heading": {
         "id": "audio-decoder-config",
         "title": "AudioDecoderConfig",
-        "number": "8.2"
+        "number": "7.2"
       },
       "definedIn": "dt"
     },
@@ -2085,7 +2327,7 @@
       "heading": {
         "id": "video-decoder-config",
         "title": "VideoDecoderConfig",
-        "number": "8.3"
+        "number": "7.3"
       },
       "definedIn": "pre"
     },
@@ -2103,7 +2345,7 @@
       "heading": {
         "id": "video-decoder-config",
         "title": "VideoDecoderConfig",
-        "number": "8.3"
+        "number": "7.3"
       },
       "definedIn": "prose"
     },
@@ -2123,7 +2365,7 @@
       "heading": {
         "id": "video-decoder-config",
         "title": "VideoDecoderConfig",
-        "number": "8.3"
+        "number": "7.3"
       },
       "definedIn": "dt"
     },
@@ -2143,7 +2385,7 @@
       "heading": {
         "id": "video-decoder-config",
         "title": "VideoDecoderConfig",
-        "number": "8.3"
+        "number": "7.3"
       },
       "definedIn": "dt"
     },
@@ -2163,7 +2405,7 @@
       "heading": {
         "id": "video-decoder-config",
         "title": "VideoDecoderConfig",
-        "number": "8.3"
+        "number": "7.3"
       },
       "definedIn": "dt"
     },
@@ -2183,7 +2425,7 @@
       "heading": {
         "id": "video-decoder-config",
         "title": "VideoDecoderConfig",
-        "number": "8.3"
+        "number": "7.3"
       },
       "definedIn": "dt"
     },
@@ -2203,7 +2445,7 @@
       "heading": {
         "id": "video-decoder-config",
         "title": "VideoDecoderConfig",
-        "number": "8.3"
+        "number": "7.3"
       },
       "definedIn": "dt"
     },
@@ -2223,7 +2465,7 @@
       "heading": {
         "id": "video-decoder-config",
         "title": "VideoDecoderConfig",
-        "number": "8.3"
+        "number": "7.3"
       },
       "definedIn": "dt"
     },
@@ -2243,7 +2485,7 @@
       "heading": {
         "id": "video-decoder-config",
         "title": "VideoDecoderConfig",
-        "number": "8.3"
+        "number": "7.3"
       },
       "definedIn": "dt"
     },
@@ -2263,7 +2505,7 @@
       "heading": {
         "id": "video-decoder-config",
         "title": "VideoDecoderConfig",
-        "number": "8.3"
+        "number": "7.3"
       },
       "definedIn": "dt"
     },
@@ -2283,7 +2525,7 @@
       "heading": {
         "id": "video-decoder-config",
         "title": "VideoDecoderConfig",
-        "number": "8.3"
+        "number": "7.3"
       },
       "definedIn": "dt"
     },
@@ -2303,7 +2545,7 @@
       "heading": {
         "id": "video-decoder-config",
         "title": "VideoDecoderConfig",
-        "number": "8.3"
+        "number": "7.3"
       },
       "definedIn": "dt"
     },
@@ -2321,7 +2563,7 @@
       "heading": {
         "id": "audio-encoder-config",
         "title": "AudioEncoderConfig",
-        "number": "8.4"
+        "number": "7.4"
       },
       "definedIn": "pre"
     },
@@ -2339,7 +2581,7 @@
       "heading": {
         "id": "audio-encoder-config",
         "title": "AudioEncoderConfig",
-        "number": "8.4"
+        "number": "7.4"
       },
       "definedIn": "prose"
     },
@@ -2359,7 +2601,7 @@
       "heading": {
         "id": "audio-encoder-config",
         "title": "AudioEncoderConfig",
-        "number": "8.4"
+        "number": "7.4"
       },
       "definedIn": "dt"
     },
@@ -2379,7 +2621,7 @@
       "heading": {
         "id": "audio-encoder-config",
         "title": "AudioEncoderConfig",
-        "number": "8.4"
+        "number": "7.4"
       },
       "definedIn": "dt"
     },
@@ -2399,7 +2641,7 @@
       "heading": {
         "id": "audio-encoder-config",
         "title": "AudioEncoderConfig",
-        "number": "8.4"
+        "number": "7.4"
       },
       "definedIn": "dt"
     },
@@ -2417,47 +2659,7 @@
       "heading": {
         "id": "video-encoder-config",
         "title": "VideoEncoderConfig",
-        "number": "8.5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoencoderconfig-codec",
-      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-codec",
-      "linkingText": [
-        "codec"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoEncoderConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "video-encoder-config",
-        "title": "VideoEncoderConfig",
-        "number": "8.5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoencoderconfig-bitrate",
-      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-bitrate",
-      "linkingText": [
-        "bitrate"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoEncoderConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "video-encoder-config",
-        "title": "VideoEncoderConfig",
-        "number": "8.5"
+        "number": "7.5"
       },
       "definedIn": "pre"
     },
@@ -2475,15 +2677,15 @@
       "heading": {
         "id": "video-encoder-config",
         "title": "VideoEncoderConfig",
-        "number": "8.5"
+        "number": "7.5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-videoencoderconfig-width",
-      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-width",
+      "id": "dom-videoencoderconfig-codec",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-codec",
       "linkingText": [
-        "width"
+        "codec"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2495,15 +2697,15 @@
       "heading": {
         "id": "video-encoder-config",
         "title": "VideoEncoderConfig",
-        "number": "8.5"
+        "number": "7.5"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoencoderconfig-height",
-      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-height",
+      "id": "dom-videoencoderconfig-bitrate",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-bitrate",
       "linkingText": [
-        "height"
+        "bitrate"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2515,9 +2717,225 @@
       "heading": {
         "id": "video-encoder-config",
         "title": "VideoEncoderConfig",
-        "number": "8.5"
+        "number": "7.5"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-cropwidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-cropwidth",
+      "linkingText": [
+        "cropWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-cropheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-cropheight",
+      "linkingText": [
+        "cropHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-displaywidth",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-displaywidth",
+      "linkingText": [
+        "displayWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-displayheight",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-displayheight",
+      "linkingText": [
+        "displayHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-avc",
+      "href": "https://wicg.github.io/web-codecs/#dom-videoencoderconfig-avc",
+      "linkingText": [
+        "avc"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-avcencoderconfig",
+      "href": "https://wicg.github.io/web-codecs/#dictdef-avcencoderconfig",
+      "linkingText": [
+        "AvcEncoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "avc-encoder-config",
+        "title": "AvcEncoderConfig",
+        "number": "7.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-avcencoderconfig-format",
+      "href": "https://wicg.github.io/web-codecs/#dom-avcencoderconfig-format",
+      "linkingText": [
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AvcEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "avc-encoder-config",
+        "title": "AvcEncoderConfig",
+        "number": "7.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-avcbitstreamformat",
+      "href": "https://wicg.github.io/web-codecs/#enumdef-avcbitstreamformat",
+      "linkingText": [
+        "AvcBitstreamFormat"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "avc-bitstream-format",
+        "title": "AvcBitstreamFormat",
+        "number": "7.5.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-avcbitstreamformat-annexb",
+      "href": "https://wicg.github.io/web-codecs/#dom-avcbitstreamformat-annexb",
+      "linkingText": [
+        "\"annexb\"",
+        "annexb"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AvcBitstreamFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "avc-bitstream-format",
+        "title": "AvcBitstreamFormat",
+        "number": "7.5.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-avcbitstreamformat-avc",
+      "href": "https://wicg.github.io/web-codecs/#dom-avcbitstreamformat-avc",
+      "linkingText": [
+        "\"avc\"",
+        "avc"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AvcBitstreamFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "avc-bitstream-format",
+        "title": "AvcBitstreamFormat",
+        "number": "7.5.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "equal-dictionaries",
+      "href": "https://wicg.github.io/web-codecs/#equal-dictionaries",
+      "linkingText": [
+        "equal dictionaries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "config-equivalence",
+        "title": "Configuration Equivalence",
+        "number": "7.6"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dictdef-videoencoderencodeoptions",
@@ -2533,7 +2951,7 @@
       "heading": {
         "id": "video-encoder-options",
         "title": "VideoEncoderEncodeOptions",
-        "number": "8.6"
+        "number": "7.7"
       },
       "definedIn": "pre"
     },
@@ -2553,7 +2971,7 @@
       "heading": {
         "id": "video-encoder-options",
         "title": "VideoEncoderEncodeOptions",
-        "number": "8.6"
+        "number": "7.7"
       },
       "definedIn": "dt"
     },
@@ -2571,7 +2989,7 @@
       "heading": {
         "id": "codec-state",
         "title": "CodecState",
-        "number": "8.7"
+        "number": "7.8"
       },
       "definedIn": "pre"
     },
@@ -2592,7 +3010,7 @@
       "heading": {
         "id": "codec-state",
         "title": "CodecState",
-        "number": "8.7"
+        "number": "7.8"
       },
       "definedIn": "dt"
     },
@@ -2613,7 +3031,7 @@
       "heading": {
         "id": "codec-state",
         "title": "CodecState",
-        "number": "8.7"
+        "number": "7.8"
       },
       "definedIn": "dt"
     },
@@ -2634,7 +3052,7 @@
       "heading": {
         "id": "codec-state",
         "title": "CodecState",
-        "number": "8.7"
+        "number": "7.8"
       },
       "definedIn": "dt"
     },
@@ -2652,7 +3070,7 @@
       "heading": {
         "id": "error-callback",
         "title": "WebCodecsErrorCallback",
-        "number": "8.8"
+        "number": "7.9"
       },
       "definedIn": "pre"
     },
@@ -2672,7 +3090,7 @@
       "heading": {
         "id": "error-callback",
         "title": "WebCodecsErrorCallback",
-        "number": "8.8"
+        "number": "7.9"
       },
       "definedIn": "pre"
     },
@@ -2690,7 +3108,7 @@
       "heading": {
         "id": "encodedaudiochunk-interface",
         "title": "EncodedAudioChunk Interface",
-        "number": "9.1"
+        "number": "8.1"
       },
       "definedIn": "pre"
     },
@@ -2711,7 +3129,7 @@
       "heading": {
         "id": "encodedaudiochunk-interface",
         "title": "EncodedAudioChunk Interface",
-        "number": "9.1"
+        "number": "8.1"
       },
       "definedIn": "pre"
     },
@@ -2729,7 +3147,7 @@
       "heading": {
         "id": "encodedaudiochunk-interface",
         "title": "EncodedAudioChunk Interface",
-        "number": "9.1"
+        "number": "8.1"
       },
       "definedIn": "pre"
     },
@@ -2749,7 +3167,7 @@
       "heading": {
         "id": "encodedaudiochunk-interface",
         "title": "EncodedAudioChunk Interface",
-        "number": "9.1"
+        "number": "8.1"
       },
       "definedIn": "pre"
     },
@@ -2769,7 +3187,7 @@
       "heading": {
         "id": "encodedaudiochunk-interface",
         "title": "EncodedAudioChunk Interface",
-        "number": "9.1"
+        "number": "8.1"
       },
       "definedIn": "pre"
     },
@@ -2789,7 +3207,7 @@
       "heading": {
         "id": "encodedaudiochunk-interface",
         "title": "EncodedAudioChunk Interface",
-        "number": "9.1"
+        "number": "8.1"
       },
       "definedIn": "pre"
     },
@@ -2807,7 +3225,7 @@
       "heading": {
         "id": "encodedaudiochunk-interface",
         "title": "EncodedAudioChunk Interface",
-        "number": "9.1"
+        "number": "8.1"
       },
       "definedIn": "pre"
     },
@@ -2827,7 +3245,7 @@
       "heading": {
         "id": "encodedaudiochunk-interface",
         "title": "EncodedAudioChunk Interface",
-        "number": "9.1"
+        "number": "8.1"
       },
       "definedIn": "pre"
     },
@@ -2847,7 +3265,7 @@
       "heading": {
         "id": "encodedaudiochunk-interface",
         "title": "EncodedAudioChunk Interface",
-        "number": "9.1"
+        "number": "8.1"
       },
       "definedIn": "pre"
     },
@@ -2868,7 +3286,7 @@
       "heading": {
         "id": "encodedaudiochunk-constructors",
         "title": "Constructors",
-        "number": "9.1.1"
+        "number": "8.1.1"
       },
       "definedIn": "prose"
     },
@@ -2888,7 +3306,7 @@
       "heading": {
         "id": "encodedaudiochunk-attributes",
         "title": "Attributes",
-        "number": "9.1.2"
+        "number": "8.1.2"
       },
       "definedIn": "dt"
     },
@@ -2908,7 +3326,7 @@
       "heading": {
         "id": "encodedaudiochunk-attributes",
         "title": "Attributes",
-        "number": "9.1.2"
+        "number": "8.1.2"
       },
       "definedIn": "dt"
     },
@@ -2928,7 +3346,7 @@
       "heading": {
         "id": "encodedaudiochunk-attributes",
         "title": "Attributes",
-        "number": "9.1.2"
+        "number": "8.1.2"
       },
       "definedIn": "dt"
     },
@@ -2946,7 +3364,7 @@
       "heading": {
         "id": "encodedvideochunk-interface",
         "title": "EncodedVideoChunk Interface",
-        "number": "9.2"
+        "number": "8.2"
       },
       "definedIn": "pre"
     },
@@ -2967,7 +3385,7 @@
       "heading": {
         "id": "encodedvideochunk-interface",
         "title": "EncodedVideoChunk Interface",
-        "number": "9.2"
+        "number": "8.2"
       },
       "definedIn": "pre"
     },
@@ -2985,7 +3403,7 @@
       "heading": {
         "id": "encodedvideochunk-interface",
         "title": "EncodedVideoChunk Interface",
-        "number": "9.2"
+        "number": "8.2"
       },
       "definedIn": "pre"
     },
@@ -3005,7 +3423,7 @@
       "heading": {
         "id": "encodedvideochunk-interface",
         "title": "EncodedVideoChunk Interface",
-        "number": "9.2"
+        "number": "8.2"
       },
       "definedIn": "pre"
     },
@@ -3025,7 +3443,7 @@
       "heading": {
         "id": "encodedvideochunk-interface",
         "title": "EncodedVideoChunk Interface",
-        "number": "9.2"
+        "number": "8.2"
       },
       "definedIn": "pre"
     },
@@ -3045,7 +3463,7 @@
       "heading": {
         "id": "encodedvideochunk-interface",
         "title": "EncodedVideoChunk Interface",
-        "number": "9.2"
+        "number": "8.2"
       },
       "definedIn": "pre"
     },
@@ -3065,7 +3483,7 @@
       "heading": {
         "id": "encodedvideochunk-interface",
         "title": "EncodedVideoChunk Interface",
-        "number": "9.2"
+        "number": "8.2"
       },
       "definedIn": "pre"
     },
@@ -3083,7 +3501,7 @@
       "heading": {
         "id": "encodedvideochunk-interface",
         "title": "EncodedVideoChunk Interface",
-        "number": "9.2"
+        "number": "8.2"
       },
       "definedIn": "pre"
     },
@@ -3103,7 +3521,7 @@
       "heading": {
         "id": "encodedvideochunk-interface",
         "title": "EncodedVideoChunk Interface",
-        "number": "9.2"
+        "number": "8.2"
       },
       "definedIn": "pre"
     },
@@ -3123,7 +3541,7 @@
       "heading": {
         "id": "encodedvideochunk-interface",
         "title": "EncodedVideoChunk Interface",
-        "number": "9.2"
+        "number": "8.2"
       },
       "definedIn": "pre"
     },
@@ -3144,7 +3562,7 @@
       "heading": {
         "id": "encodedvideochunk-constructors",
         "title": "Constructors",
-        "number": "9.2.1"
+        "number": "8.2.1"
       },
       "definedIn": "prose"
     },
@@ -3164,7 +3582,7 @@
       "heading": {
         "id": "encodedvideochunk-attributes",
         "title": "Attributes",
-        "number": "9.2.2"
+        "number": "8.2.2"
       },
       "definedIn": "dt"
     },
@@ -3184,7 +3602,7 @@
       "heading": {
         "id": "encodedvideochunk-attributes",
         "title": "Attributes",
-        "number": "9.2.2"
+        "number": "8.2.2"
       },
       "definedIn": "dt"
     },
@@ -3204,7 +3622,7 @@
       "heading": {
         "id": "encodedvideochunk-attributes",
         "title": "Attributes",
-        "number": "9.2.2"
+        "number": "8.2.2"
       },
       "definedIn": "dt"
     },
@@ -3224,7 +3642,7 @@
       "heading": {
         "id": "encodedvideochunk-attributes",
         "title": "Attributes",
-        "number": "9.2.2"
+        "number": "8.2.2"
       },
       "definedIn": "dt"
     },
@@ -3242,7 +3660,7 @@
       "heading": {
         "id": "audioframe-interface",
         "title": "AudioFrame Interface",
-        "number": "10.1"
+        "number": "9.1"
       },
       "definedIn": "pre"
     },
@@ -3263,7 +3681,7 @@
       "heading": {
         "id": "audioframe-interface",
         "title": "AudioFrame Interface",
-        "number": "10.1"
+        "number": "9.1"
       },
       "definedIn": "pre"
     },
@@ -3281,7 +3699,7 @@
       "heading": {
         "id": "audioframe-interface",
         "title": "AudioFrame Interface",
-        "number": "10.1"
+        "number": "9.1"
       },
       "definedIn": "pre"
     },
@@ -3301,7 +3719,7 @@
       "heading": {
         "id": "audioframe-interface",
         "title": "AudioFrame Interface",
-        "number": "10.1"
+        "number": "9.1"
       },
       "definedIn": "pre"
     },
@@ -3321,7 +3739,7 @@
       "heading": {
         "id": "audioframe-interface",
         "title": "AudioFrame Interface",
-        "number": "10.1"
+        "number": "9.1"
       },
       "definedIn": "pre"
     },
@@ -3341,7 +3759,7 @@
       "heading": {
         "id": "audioframe-internal-slots",
         "title": "Internal Slots",
-        "number": "10.1.1"
+        "number": "9.1.1"
       },
       "definedIn": "dt"
     },
@@ -3362,7 +3780,7 @@
       "heading": {
         "id": "audioframe-constructors",
         "title": "Constructors",
-        "number": "10.1.2"
+        "number": "9.1.2"
       },
       "definedIn": "prose"
     },
@@ -3382,7 +3800,7 @@
       "heading": {
         "id": "audioframe-attributes",
         "title": "Attributes",
-        "number": "10.1.3"
+        "number": "9.1.3"
       },
       "definedIn": "dt"
     },
@@ -3402,7 +3820,7 @@
       "heading": {
         "id": "audioframe-attributes",
         "title": "Attributes",
-        "number": "10.1.3"
+        "number": "9.1.3"
       },
       "definedIn": "dt"
     },
@@ -3422,7 +3840,7 @@
       "heading": {
         "id": "audioframe-methods",
         "title": "Methods",
-        "number": "10.1.4"
+        "number": "9.1.4"
       },
       "definedIn": "dt"
     },
@@ -3440,7 +3858,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3461,7 +3879,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3482,7 +3900,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3503,7 +3921,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3524,7 +3942,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3545,7 +3963,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3566,7 +3984,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3584,7 +4002,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3604,7 +4022,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3624,7 +4042,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3644,7 +4062,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3664,7 +4082,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3684,7 +4102,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3704,7 +4122,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3724,7 +4142,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3744,7 +4162,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3764,7 +4182,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3784,7 +4202,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "10.2"
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
@@ -3804,7 +4222,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "10.2.1"
+        "number": "9.2.1"
       },
       "definedIn": "dt"
     },
@@ -3825,7 +4243,7 @@
       "heading": {
         "id": "videoframe-constructors",
         "title": "Constructors",
-        "number": "10.2.2"
+        "number": "9.2.2"
       },
       "definedIn": "prose"
     },
@@ -3846,7 +4264,7 @@
       "heading": {
         "id": "videoframe-constructors",
         "title": "Constructors",
-        "number": "10.2.2"
+        "number": "9.2.2"
       },
       "definedIn": "prose"
     },
@@ -3866,7 +4284,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "10.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
@@ -3886,7 +4304,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "10.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
@@ -3906,7 +4324,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "10.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
@@ -3926,7 +4344,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "10.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
@@ -3946,7 +4364,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "10.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
@@ -3966,7 +4384,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "10.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
@@ -3986,7 +4404,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "10.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
@@ -4006,7 +4424,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "10.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
@@ -4026,7 +4444,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "10.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
@@ -4046,7 +4464,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "10.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
@@ -4066,7 +4484,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "10.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
@@ -4086,7 +4504,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "10.2.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
@@ -4106,7 +4524,7 @@
       "heading": {
         "id": "videoframe-methods",
         "title": "Methods",
-        "number": "10.2.4"
+        "number": "9.2.4"
       },
       "definedIn": "prose"
     },
@@ -4126,7 +4544,7 @@
       "heading": {
         "id": "videoframe-methods",
         "title": "Methods",
-        "number": "10.2.4"
+        "number": "9.2.4"
       },
       "definedIn": "prose"
     },
@@ -4147,7 +4565,7 @@
       "heading": {
         "id": "videoframe-methods",
         "title": "Methods",
-        "number": "10.2.4"
+        "number": "9.2.4"
       },
       "definedIn": "prose"
     },
@@ -4165,7 +4583,7 @@
       "heading": {
         "id": "videoframe-algorithms",
         "title": "Algorithms",
-        "number": "10.2.5"
+        "number": "9.2.5"
       },
       "definedIn": "prose"
     },
@@ -4183,7 +4601,7 @@
       "heading": {
         "id": "plane-interface",
         "title": "Plane Interface",
-        "number": "10.3"
+        "number": "9.3"
       },
       "definedIn": "pre"
     },
@@ -4203,7 +4621,7 @@
       "heading": {
         "id": "plane-interface",
         "title": "Plane Interface",
-        "number": "10.3"
+        "number": "9.3"
       },
       "definedIn": "pre"
     },
@@ -4221,7 +4639,7 @@
       "heading": {
         "id": "plane-interface",
         "title": "Plane Interface",
-        "number": "10.3"
+        "number": "9.3"
       },
       "definedIn": "pre"
     },
@@ -4241,7 +4659,7 @@
       "heading": {
         "id": "plane-interface",
         "title": "Plane Interface",
-        "number": "10.3"
+        "number": "9.3"
       },
       "definedIn": "pre"
     },
@@ -4261,7 +4679,7 @@
       "heading": {
         "id": "plane-interface",
         "title": "Plane Interface",
-        "number": "10.3"
+        "number": "9.3"
       },
       "definedIn": "pre"
     },
@@ -4281,7 +4699,7 @@
       "heading": {
         "id": "plane-interface",
         "title": "Plane Interface",
-        "number": "10.3"
+        "number": "9.3"
       },
       "definedIn": "pre"
     },
@@ -4301,7 +4719,7 @@
       "heading": {
         "id": "plane-internal-slots",
         "title": "Internal Slots",
-        "number": "10.3.1"
+        "number": "9.3.1"
       },
       "definedIn": "dt"
     },
@@ -4321,7 +4739,7 @@
       "heading": {
         "id": "plane-internal-slots",
         "title": "Internal Slots",
-        "number": "10.3.1"
+        "number": "9.3.1"
       },
       "definedIn": "dt"
     },
@@ -4341,7 +4759,7 @@
       "heading": {
         "id": "plane-attributes",
         "title": "Attributes",
-        "number": "10.3.2"
+        "number": "9.3.2"
       },
       "definedIn": "dt"
     },
@@ -4361,7 +4779,7 @@
       "heading": {
         "id": "plane-attributes",
         "title": "Attributes",
-        "number": "10.3.2"
+        "number": "9.3.2"
       },
       "definedIn": "dt"
     },
@@ -4381,7 +4799,7 @@
       "heading": {
         "id": "plane-attributes",
         "title": "Attributes",
-        "number": "10.3.2"
+        "number": "9.3.2"
       },
       "definedIn": "dt"
     },
@@ -4401,7 +4819,7 @@
       "heading": {
         "id": "plane-methods",
         "title": "Methods",
-        "number": "10.3.3"
+        "number": "9.3.3"
       },
       "definedIn": "prose"
     },
@@ -4419,7 +4837,7 @@
       "heading": {
         "id": "pixel-format",
         "title": "Pixel Format",
-        "number": "10.4"
+        "number": "9.4"
       },
       "definedIn": "pre"
     },
@@ -4440,7 +4858,7 @@
       "heading": {
         "id": "pixel-format",
         "title": "Pixel Format",
-        "number": "10.4"
+        "number": "9.4"
       },
       "definedIn": "dt"
     },
@@ -4456,345 +4874,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "clone-frame-algo",
-        "title": "Clone Frame (with frame)",
-        "number": "10.6"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "videotrackreader",
-      "href": "https://wicg.github.io/web-codecs/#videotrackreader",
-      "linkingText": [
-        "VideoTrackReader"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreader-interface",
-        "title": "11. VideoTrackReader Interface"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videotrackreader-videotrackreader-track-track",
-      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-videotrackreader-track-track",
-      "linkingText": [
-        "track"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "VideoTrackReader/VideoTrackReader(track)",
-        "VideoTrackReader/constructor(track)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreader-interface",
-        "title": "11. VideoTrackReader Interface"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videotrackreader-start-callback-callback",
-      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-start-callback-callback",
-      "linkingText": [
-        "callback"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "VideoTrackReader/start(callback)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreader-interface",
-        "title": "11. VideoTrackReader Interface"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "enumdef-videotrackreaderstate",
-      "href": "https://wicg.github.io/web-codecs/#enumdef-videotrackreaderstate",
-      "linkingText": [
-        "VideoTrackReaderState"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreader-interface",
-        "title": "11. VideoTrackReader Interface"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videotrackreaderstate-started",
-      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreaderstate-started",
-      "linkingText": [
-        "\"started\"",
-        "started"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "VideoTrackReaderState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreaderreadystate",
-        "title": "VideoTrackReaderState Values",
-        "number": "11.1"
+        "id": "raw-media-algorithms",
+        "title": "Algorithms",
+        "number": "9.5"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "dom-videotrackreaderstate-stopped",
-      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreaderstate-stopped",
-      "linkingText": [
-        "\"stopped\"",
-        "stopped"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "VideoTrackReaderState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreaderreadystate",
-        "title": "VideoTrackReaderState Values",
-        "number": "11.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videotrackreaderstate-ended",
-      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreaderstate-ended",
-      "linkingText": [
-        "\"ended\"",
-        "ended"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "VideoTrackReaderState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreaderreadystate",
-        "title": "VideoTrackReaderState Values",
-        "number": "11.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videotrackreader-track-slot",
-      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-track-slot",
-      "linkingText": [
-        "[[track]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "VideoTrackReader"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreader-slots",
-        "title": "Internal Slots",
-        "number": "11.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videotrackreader-callback-slot",
-      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-callback-slot",
-      "linkingText": [
-        "[[callback]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "VideoTrackReader"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreader-slots",
-        "title": "Internal Slots",
-        "number": "11.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videotrackreader-videotrackreader",
-      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-videotrackreader",
-      "linkingText": [
-        "VideoTrackReader(track)",
-        "constructor(track)"
-      ],
-      "localLinkingText": [],
-      "type": "constructor",
-      "for": [
-        "VideoTrackReader"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreader-constructors",
-        "title": "Constructors",
-        "number": "11.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-videotrackreader-readystate",
-      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-readystate",
-      "linkingText": [
-        "readyState"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "VideoTrackReader"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreader-attributes",
-        "title": "Attributes",
-        "number": "11.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videotrackreader-onended",
-      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-onended",
-      "linkingText": [
-        "onended"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "VideoTrackReader"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreader-attributes",
-        "title": "Attributes",
-        "number": "11.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "eventdef-videotrackreader-ended",
-      "href": "https://wicg.github.io/web-codecs/#eventdef-videotrackreader-ended",
-      "linkingText": [
-        "ended"
-      ],
-      "localLinkingText": [],
-      "type": "event",
-      "for": [
-        "VideoTrackReader"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreader-events",
-        "title": "Event Summary",
-        "number": "11.5"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videotrackreader-start",
-      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-start",
-      "linkingText": [
-        "start(callback)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "VideoTrackReader"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreader-methods",
-        "title": "Methods",
-        "number": "11.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-videotrackreader-stop",
-      "href": "https://wicg.github.io/web-codecs/#dom-videotrackreader-stop",
-      "linkingText": [
-        "stop()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "VideoTrackReader"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videotrackreader-methods",
-        "title": "Methods",
-        "number": "11.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "track-monitor",
-      "href": "https://wicg.github.io/web-codecs/#track-monitor",
-      "linkingText": [
-        "track monitor"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "mediastreamtrack-monitoring",
-        "title": "MediaStreamTrack Monitoring",
-        "number": "11.7"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "running-the-track-monitor",
-      "href": "https://wicg.github.io/web-codecs/#running-the-track-monitor",
-      "linkingText": [
-        "running the track monitor",
-        "run the track monitor"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "mediastreamtrack-monitoring",
-        "title": "MediaStreamTrack Monitoring",
-        "number": "11.7"
-      },
-      "definedIn": "prose"
     }
   ]
 }

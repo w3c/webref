@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "MediaConfiguration": {
+        "fragment": "dictionary MediaConfiguration {\n  VideoConfiguration video;\n  AudioConfiguration audio;\n};",
         "type": "dictionary",
         "name": "MediaConfiguration",
         "inheritance": null,
@@ -58,6 +59,7 @@
         "partial": false
       },
       "MediaDecodingConfiguration": {
+        "fragment": "dictionary MediaDecodingConfiguration : MediaConfiguration {\n  required MediaDecodingType type;\n  MediaCapabilitiesKeySystemConfiguration keySystemConfiguration;\n};",
         "type": "dictionary",
         "name": "MediaDecodingConfiguration",
         "inheritance": "MediaConfiguration",
@@ -97,6 +99,7 @@
         "partial": false
       },
       "MediaEncodingConfiguration": {
+        "fragment": "dictionary MediaEncodingConfiguration : MediaConfiguration {\n  required MediaEncodingType type;\n};",
         "type": "dictionary",
         "name": "MediaEncodingConfiguration",
         "inheritance": "MediaConfiguration",
@@ -121,6 +124,7 @@
         "partial": false
       },
       "MediaDecodingType": {
+        "fragment": "enum MediaDecodingType {\n  \"file\",\n  \"media-source\",\n};",
         "type": "enum",
         "name": "MediaDecodingType",
         "values": [
@@ -136,6 +140,7 @@
         "extAttrs": []
       },
       "MediaEncodingType": {
+        "fragment": "enum MediaEncodingType {\n  \"record\",\n  \"transmission\"\n};",
         "type": "enum",
         "name": "MediaEncodingType",
         "values": [
@@ -151,6 +156,7 @@
         "extAttrs": []
       },
       "VideoConfiguration": {
+        "fragment": "dictionary VideoConfiguration {\n  required DOMString contentType;\n  required unsigned long width;\n  required unsigned long height;\n  required unsigned long long bitrate;\n  required double framerate;\n  boolean hasAlphaChannel;\n  HdrMetadataType hdrMetadataType;\n  ColorGamut colorGamut;\n  TransferFunction transferFunction;\n};",
         "type": "dictionary",
         "name": "VideoConfiguration",
         "inheritance": null,
@@ -295,6 +301,7 @@
         "partial": false
       },
       "HdrMetadataType": {
+        "fragment": "enum HdrMetadataType {\n  \"smpteSt2086\",\n  \"smpteSt2094-10\",\n  \"smpteSt2094-40\"\n};",
         "type": "enum",
         "name": "HdrMetadataType",
         "values": [
@@ -314,6 +321,7 @@
         "extAttrs": []
       },
       "ColorGamut": {
+        "fragment": "enum ColorGamut {\n  \"srgb\",\n  \"p3\",\n  \"rec2020\"\n};",
         "type": "enum",
         "name": "ColorGamut",
         "values": [
@@ -333,6 +341,7 @@
         "extAttrs": []
       },
       "TransferFunction": {
+        "fragment": "enum TransferFunction {\n  \"srgb\",\n  \"pq\",\n  \"hlg\"\n};",
         "type": "enum",
         "name": "TransferFunction",
         "values": [
@@ -352,6 +361,7 @@
         "extAttrs": []
       },
       "AudioConfiguration": {
+        "fragment": "dictionary AudioConfiguration {\n  required DOMString contentType;\n  DOMString channels;\n  unsigned long long bitrate;\n  unsigned long samplerate;\n  boolean spatialRendering;\n};",
         "type": "dictionary",
         "name": "AudioConfiguration",
         "inheritance": null,
@@ -436,6 +446,7 @@
         "partial": false
       },
       "MediaCapabilitiesKeySystemConfiguration": {
+        "fragment": "dictionary MediaCapabilitiesKeySystemConfiguration {\n    required DOMString keySystem;\n    DOMString initDataType = \"\";\n    MediaKeysRequirement distinctiveIdentifier = \"optional\";\n    MediaKeysRequirement persistentState = \"optional\";\n    sequence<DOMString> sessionTypes;\n    KeySystemTrackConfiguration audio;\n    KeySystemTrackConfiguration video;\n  };",
         "type": "dictionary",
         "name": "MediaCapabilitiesKeySystemConfiguration",
         "inheritance": null,
@@ -568,6 +579,7 @@
         "partial": false
       },
       "KeySystemTrackConfiguration": {
+        "fragment": "dictionary KeySystemTrackConfiguration {\n    DOMString robustness = \"\";\n    DOMString? encryptionScheme = null;\n  };",
         "type": "dictionary",
         "name": "KeySystemTrackConfiguration",
         "inheritance": null,
@@ -612,6 +624,7 @@
         "partial": false
       },
       "MediaCapabilitiesInfo": {
+        "fragment": "dictionary MediaCapabilitiesInfo {\n  required boolean supported;\n  required boolean smooth;\n  required boolean powerEfficient;\n};",
         "type": "dictionary",
         "name": "MediaCapabilitiesInfo",
         "inheritance": null,
@@ -666,6 +679,7 @@
         "partial": false
       },
       "MediaCapabilitiesDecodingInfo": {
+        "fragment": "dictionary MediaCapabilitiesDecodingInfo : MediaCapabilitiesInfo {\n  required MediaKeySystemAccess keySystemAccess;\n  MediaDecodingConfiguration configuration;\n};",
         "type": "dictionary",
         "name": "MediaCapabilitiesDecodingInfo",
         "inheritance": "MediaCapabilitiesInfo",
@@ -705,6 +719,7 @@
         "partial": false
       },
       "MediaCapabilitiesEncodingInfo": {
+        "fragment": "dictionary MediaCapabilitiesEncodingInfo : MediaCapabilitiesInfo {\n  MediaEncodingConfiguration configuration;\n};",
         "type": "dictionary",
         "name": "MediaCapabilitiesEncodingInfo",
         "inheritance": "MediaCapabilitiesInfo",
@@ -729,6 +744,7 @@
         "partial": false
       },
       "MediaCapabilities": {
+        "fragment": "[Exposed=(Window, Worker)]\ninterface MediaCapabilities {\n  [NewObject] Promise<MediaCapabilitiesDecodingInfo> decodingInfo(MediaDecodingConfiguration configuration);\n  [NewObject] Promise<MediaCapabilitiesInfo> encodingInfo(MediaEncodingConfiguration configuration);\n};",
         "type": "interface",
         "name": "MediaCapabilities",
         "inheritance": null,
@@ -854,6 +870,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SameObject] readonly attribute MediaCapabilities mediaCapabilities;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -897,6 +914,7 @@
       ],
       "WorkerNavigator": [
         {
+          "fragment": "[Exposed=Worker]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute MediaCapabilities mediaCapabilities;\n};",
           "type": "interface",
           "name": "WorkerNavigator",
           "inheritance": null,

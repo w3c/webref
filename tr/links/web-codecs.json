@@ -7,11 +7,23 @@
     "https://www.w3.org/community/wicg/": [],
     "https://www.w3.org/community/about/agreements/cla/": [],
     "https://www.w3.org/community/": [],
+    "https://html.spec.whatwg.org/": [
+      "global-object",
+      "dom-navigator-canplaytype",
+      "imagebitmap",
+      "imagebitmapoptions",
+      "detached",
+      "dom-imagebitmapoptions-resizewidth",
+      "dom-imagebitmapoptions-resizeheight",
+      "htmlmediaelement",
+      "dom-media-src"
+    ],
     "https://infra.spec.whatwg.org/": [
+      "queue-dequeue",
       "queues",
       "queue-enqueue",
-      "list-is-empty",
-      "queue-dequeue"
+      "iteration-continue",
+      "lists"
     ],
     "https://heycam.github.io/webidl/": [
       "Exposed",
@@ -22,35 +34,23 @@
       "invalidstateerror",
       "notsupportederror",
       "encodingerror",
+      "a-promise-rejected-with",
+      "idl-DOMException",
       "idl-DOMString",
       "idl-unsigned-long",
       "BufferSource",
       "idl-unsigned-long-long",
       "idl-boolean",
-      "idl-DOMException",
       "idl-ArrayBuffer",
       "idl-sequence",
       "idl-frozen-array",
       "this",
       "ArrayBufferView"
     ],
-    "https://html.spec.whatwg.org/": [
-      "parallel-queue",
-      "dom-navigator-canplaytype",
-      "imagebitmap",
-      "imagebitmapoptions",
-      "detached",
-      "dom-imagebitmapoptions-resizewidth",
-      "dom-imagebitmapoptions-resizeheight",
-      "eventhandler",
-      "queue-a-task",
-      "htmlmediaelement",
-      "dom-media-src",
-      "htmlcanvaselement"
-    ],
     "https://webaudio.github.io/web-audio-api/": [
       "audiobuffer"
     ],
+    "https://github.com/WICG/web-codecs/issues/138": [],
     "https://mimesniff.spec.whatwg.org/": [
       "mime-type"
     ],
@@ -65,20 +65,6 @@
       "codecsparam"
     ],
     "https://www.fourcc.org/pixel-format/yuv-i420/": [],
-    "https://www.w3.org/TR/mediacapture-streams/": [
-      "dom-mediastreamtrack",
-      "dom-mediadevices-getusermedia"
-    ],
-    "https://w3c.github.io/mediacapture-screen-share/": [
-      "dom-mediadevices-getdisplaymedia"
-    ],
-    "https://w3c.github.io/mediacapture-main/": [
-      "idl-def-MediaStreamTrackState.live",
-      "idl-def-MediaStreamTrackState.ended"
-    ],
-    "https://www.w3.org/TR/mediastream-recording/": [
-      "mediarecorder"
-    ],
     "https://github.com/WICG/web-codecs/issues/80": [],
     "https://w3c.github.io/media-capabilities/": [
       "dom-mediacapabilities-decodinginfo",
@@ -88,6 +74,7 @@
       "dom-rtcrtpsender-getcapabilities",
       "widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector"
     ],
+    "https://www.iso.org/standard/75400.html": [],
     "https://www.w3.org/TR/media-capabilities/": [],
     "https://tools.ietf.org/html/rfc2119": [],
     "https://www.w3.org/TR/webaudio/": [],

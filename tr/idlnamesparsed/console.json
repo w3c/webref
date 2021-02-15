@@ -1,0 +1,14 @@
+{
+  "name": "console",
+  "defined": {
+    "spec": {
+      "title": "Console Standard",
+      "url": "https://console.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker,Worklet)]\nnamespace console { // but see namespace object requirements below\n  // Logging\n  undefined assert(optional boolean condition = false, any... data);\n  undefined clear();\n  undefined debug(any... data);\n  undefined error(any... data);\n  undefined info(any... data);\n  undefined log(any... data);\n  undefined table(optional any tabularData, optional sequence<DOMString> properties);\n  undefined trace(any... data);\n  undefined warn(any... data);\n  undefined dir(optional any item, optional object? options);\n  undefined dirxml(any... data);\n\n  // Counting\n  undefined count(optional DOMString label = \"default\");\n  undefined countReset(optional DOMString label = \"default\");\n\n  // Grouping\n  undefined group(any... data);\n  undefined groupCollapsed(any... data);\n  undefined groupEnd();\n\n  // Timing\n  undefined time(optional DOMString label = \"default\");\n  undefined timeLog(optional DOMString label = \"default\", any... data);\n  undefined timeEnd(optional DOMString label = \"default\");\n};",
+    "href": "https://console.spec.whatwg.org/#namespacedef-console"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

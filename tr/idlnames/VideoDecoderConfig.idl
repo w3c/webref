@@ -1,0 +1,13 @@
+// Source: WebCodecs (https://wicg.github.io/web-codecs/)
+dictionary VideoDecoderConfig {
+  required DOMString codec;
+  BufferSource description;
+  required unsigned long codedWidth;
+  required unsigned long codedHeight;
+  unsigned long cropLeft;
+  unsigned long cropTop;
+  unsigned long cropWidth;
+  unsigned long cropHeight;
+  unsigned long displayWidth;
+  unsigned long displayHeight;
+};
