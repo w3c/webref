@@ -4551,10 +4551,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/):
      * [`https://www.w3.org/TR/webxr/#animationframe`](https://www.w3.org/TR/webxr/#animationframe)
-- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
-     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
 
-=> 608 problematic external links found in 146 specifications
+=> 607 problematic external links found in 145 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
