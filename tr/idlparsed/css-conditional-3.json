@@ -16,6 +16,7 @@
     },
     "idlNames": {
       "CSSConditionRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSConditionRule : CSSGroupingRule {\n    attribute CSSOMString conditionText;\n};",
         "type": "interface",
         "name": "CSSConditionRule",
         "inheritance": "CSSGroupingRule",
@@ -50,6 +51,7 @@
         "partial": false
       },
       "CSSMediaRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSMediaRule : CSSConditionRule {\n    [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n};",
         "type": "interface",
         "name": "CSSMediaRule",
         "inheritance": "CSSConditionRule",
@@ -100,6 +102,7 @@
         "partial": false
       },
       "CSSSupportsRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSSupportsRule : CSSConditionRule {\n};",
         "type": "interface",
         "name": "CSSSupportsRule",
         "inheritance": "CSSConditionRule",
@@ -121,6 +124,7 @@
     "idlExtendedNames": {
       "CSSRule": [
         {
+          "fragment": "partial interface CSSRule {\n    const unsigned short SUPPORTS_RULE = 12;\n};",
           "type": "interface",
           "name": "CSSRule",
           "inheritance": null,
@@ -149,6 +153,7 @@
       ],
       "CSS": [
         {
+          "fragment": "partial namespace CSS {\n  boolean supports(CSSOMString property, CSSOMString value);\n  boolean supports(CSSOMString conditionText);\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,

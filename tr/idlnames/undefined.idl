@@ -1,0 +1,103 @@
+// Source: The Screen Fold API (https://www.w3.org/TR/screen-fold/)
+[SecureContext]
+partial interface Screen {
+  [SameObject] readonly attribute ScreenFold fold;
+};
+
+// Source: The Screen Orientation API (https://www.w3.org/TR/screen-orientation/)
+partial interface Screen {
+  [SameObject] readonly attribute ScreenOrientation orientation;
+};UPPORTS_RULE = 12;
+};
+
+// Source: CSS Counter Styles Level 3 (https://www.w3.org/TR/css-counter-styles-3/)
+partial interface CSSRule {
+    const unsigned short COUNTER_STYLE_RULE = 11;
+};
+
+// Source: CSS Device Adaptation Module Level 1 (https://www.w3.org/TR/css-device-adapt-1/)
+partial interface CSSRule {
+    const unsigned short VIEWPORT_RULE = 15;
+};
+
+// Source: CSS Fonts Module Level 4 (https://www.w3.org/TR/css-fonts-4/)
+partial interface CSSRule {  const unsigned short FONT_FEATURE_VALUES_RULE = 14;
+};
+
+// Source: CSS Fonts Module Level 4 (https://www.w3.org/TR/css-fonts-4/)
+partial interface CSSRule {  const unsigned short FONT_PALETTE_VALUES_RULE = 15;
+};w.w3.org/TR/css-conditional-3/)
+partial namespace CSS {
+  boolean supports(CSSOMString property, CSSOMString value);
+  boolean supports(CSSOMString conditionText);
+};
+
+// Source: CSS Custom Highlight API Module Level 1 (https://www.w3.org/TR/css-highlight-api-1/)
+partial namespace CSS {
+  readonly attribute HighlightsRegister highlights;
+};
+
+// Source: CSS Image Values and Replaced Content Module Level 4 (https://www.w3.org/TR/css-images-4/)
+partial interface CSS {
+  [SameObject] readonly attribute Map elementSources;
+};
+
+// Source: CSS Painting API Level 1 (https://www.w3.org/TR/css-paint-api-1/)
+partial namespace CSS {
+    [SameObject] readonly attribute Worklet paintWorklet;
+};
+
+// Source: CSS Properties and Values API Level 1 (https://www.w3.org/TR/css-properties-values-api-1/)
+partial namespace CSS {
+  undefined registerProperty(PropertyDefinition definition);
+};
+
+// Source: CSS Typed OM Level 1 (https://www.w3.org/TR/css-typed-om-1/)
+partial namespace CSS {
+    CSSUnitValue number(double value);
+    CSSUnitValue percent(double value);
+
+    // <length>
+    CSSUnitValue em(double value);
+    CSSUnitValue ex(double value);
+    CSSUnitValue ch(double value);
+    CSSUnitValue ic(double value);
+    CSSUnitValue rem(double value);
+    CSSUnitValue lh(double value);
+    CSSUnitValue rlh(double value);
+    CSSUnitValue vw(double value);
+    CSSUnitValue vh(double value);
+    CSSUnitValue vi(double value);
+    CSSUnitValue vb(double value);
+    CSSUnitValue vmin(double value);
+    CSSUnitValue vmax(double value);
+    CSSUnitValue cm(double value);
+    CSSUnitValue mm(double value);
+    CSSUnitValue Q(double value);
+    CSSUnitValue in(double value);
+    CSSUnitValue pt(double value);
+    CSSUnitValue pc(double value);
+    CSSUnitValue px(double value);
+
+    // <angle>
+    CSSUnitValue deg(double value);
+    CSSUnitValue grad(double value);
+    CSSUnitValue rad(double value);
+    CSSUnitValue turn(double value);
+
+    // <time>
+    CSSUnitValue s(double value);
+    CSSUnitValue ms(double value);
+
+    // <frequency>
+    CSSUnitValue Hz(double value);
+    CSSUnitValue kHz(double value);
+
+    // <resolution>
+    CSSUnitValue dpi(double value);
+    CSSUnitValue dpcm(double value);
+    CSSUnitValue dppx(double value);
+
+    // <flex>
+    CSSUnitValue fr(double value);
+};

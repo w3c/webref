@@ -17,6 +17,7 @@
     },
     "idlNames": {
       "ConnectionType": {
+        "fragment": "enum ConnectionType {\n  \"bluetooth\",\n  \"cellular\",\n  \"ethernet\",\n  \"mixed\",\n  \"none\",\n  \"other\",\n  \"unknown\",\n  \"wifi\",\n  \"wimax\"\n};",
         "type": "enum",
         "name": "ConnectionType",
         "values": [
@@ -60,6 +61,7 @@
         "extAttrs": []
       },
       "EffectiveConnectionType": {
+        "fragment": "enum EffectiveConnectionType {\n  \"2g\",\n  \"3g\",\n  \"4g\",\n  \"slow-2g\"\n};",
         "type": "enum",
         "name": "EffectiveConnectionType",
         "values": [
@@ -83,6 +85,7 @@
         "extAttrs": []
       },
       "NavigatorNetworkInformation": {
+        "fragment": "interface mixin NavigatorNetworkInformation {\n  [SameObject] readonly attribute NetworkInformation connection;\n};",
         "type": "interface mixin",
         "name": "NavigatorNetworkInformation",
         "inheritance": null,
@@ -114,6 +117,7 @@
         "partial": false
       },
       "NetworkInformation": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface NetworkInformation : EventTarget {\n  readonly attribute ConnectionType type;\n  readonly attribute EffectiveConnectionType effectiveType;\n  readonly attribute Megabit downlinkMax;\n  readonly attribute Megabit downlink;\n  readonly attribute Millisecond rtt;\n  attribute EventHandler onchange;\n};",
         "type": "interface",
         "name": "NetworkInformation",
         "inheritance": "EventTarget",
@@ -230,6 +234,7 @@
         "partial": false
       },
       "Megabit": {
+        "fragment": "typedef unrestricted double Megabit;",
         "type": "typedef",
         "name": "Megabit",
         "idlType": {
@@ -243,6 +248,7 @@
         "extAttrs": []
       },
       "Millisecond": {
+        "fragment": "typedef unsigned long long Millisecond;",
         "type": "typedef",
         "name": "Millisecond",
         "idlType": {
@@ -259,15 +265,19 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "name": "Navigator",
-          "type": "interface",
+          "fragment": "Navigator includes NavigatorNetworkInformation;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
           "includes": "NavigatorNetworkInformation"
         }
       ],
       "WorkerNavigator": [
         {
-          "name": "WorkerNavigator",
-          "type": "interface",
+          "fragment": "WorkerNavigator includes NavigatorNetworkInformation;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WorkerNavigator",
           "includes": "NavigatorNetworkInformation"
         }
       ]

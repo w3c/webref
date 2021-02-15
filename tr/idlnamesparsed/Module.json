@@ -1,0 +1,14 @@
+{
+  "name": "Module",
+  "defined": {
+    "spec": {
+      "title": "WebAssembly JavaScript Interface",
+      "url": "https://www.w3.org/TR/wasm-js-api-1/"
+    },
+    "fragment": "[LegacyNamespace=WebAssembly, Constructor(BufferSource bytes), Exposed=(Window,Worker,Worklet)]\ninterface Module {\n  static sequence<ModuleExportDescriptor> exports(Module moduleObject);\n  static sequence<ModuleImportDescriptor> imports(Module moduleObject);\n  static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);\n};",
+    "href": "https://www.w3.org/TR/wasm-js-api-1/#module"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

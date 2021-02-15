@@ -1,0 +1,12 @@
+// Source: WebTransport (https://w3c.github.io/webtransport/)
+dictionary WebTransportStats {
+  DOMHighResTimeStamp timestamp;
+  unsigned long long bytesSent;
+  unsigned long long packetsSent;
+  unsigned long numOutgoingStreamsCreated;
+  unsigned long numIncomingStreamsCreated;
+  unsigned long long bytesReceived;
+  unsigned long long packetsReceived;
+  DOMHighResTimeStamp minRtt;
+  unsigned long numReceivedDatagramsDropped;
+};

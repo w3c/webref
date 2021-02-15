@@ -21,6 +21,7 @@
     },
     "idlNames": {
       "SyncManager": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface SyncManager {\n  Promise<void> register(DOMString tag);\n  Promise<sequence<DOMString>> getTags();\n};",
         "type": "interface",
         "name": "SyncManager",
         "inheritance": null,
@@ -121,6 +122,7 @@
         "partial": false
       },
       "SyncEvent": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface SyncEvent : ExtendableEvent {\n  constructor(DOMString type, SyncEventInit init);\n  readonly attribute DOMString tag;\n  readonly attribute boolean lastChance;\n};",
         "type": "interface",
         "name": "SyncEvent",
         "inheritance": "ExtendableEvent",
@@ -208,6 +210,7 @@
         "partial": false
       },
       "SyncEventInit": {
+        "fragment": "dictionary SyncEventInit : ExtendableEventInit {\n  required DOMString tag;\n  boolean lastChance = false;\n};",
         "type": "dictionary",
         "name": "SyncEventInit",
         "inheritance": "ExtendableEventInit",
@@ -253,6 +256,7 @@
     "idlExtendedNames": {
       "ServiceWorkerRegistration": [
         {
+          "fragment": "partial interface ServiceWorkerRegistration {\n  readonly attribute SyncManager sync;\n};",
           "type": "interface",
           "name": "ServiceWorkerRegistration",
           "inheritance": null,
@@ -279,6 +283,7 @@
       ],
       "ServiceWorkerGlobalScope": [
         {
+          "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler onsync;\n};",
           "type": "interface",
           "name": "ServiceWorkerGlobalScope",
           "inheritance": null,

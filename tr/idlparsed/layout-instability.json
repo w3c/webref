@@ -15,6 +15,7 @@
     },
     "idlNames": {
       "LayoutShift": {
+        "fragment": "[Exposed=Window]\ninterface LayoutShift : PerformanceEntry {\n  readonly attribute double value;\n  readonly attribute boolean hadRecentInput;\n  readonly attribute DOMHighResTimeStamp lastInputTime;\n  readonly attribute FrozenArray<LayoutShiftAttribution> sources;\n  [Default] object toJSON();\n};",
         "type": "interface",
         "name": "LayoutShift",
         "inheritance": "PerformanceEntry",
@@ -125,6 +126,7 @@
         "partial": false
       },
       "LayoutShiftAttribution": {
+        "fragment": "[Exposed=Window]\ninterface LayoutShiftAttribution {\n  readonly attribute Node? node;\n  readonly attribute DOMRectReadOnly previousRect;\n  readonly attribute DOMRectReadOnly currentRect;\n};",
         "type": "interface",
         "name": "LayoutShiftAttribution",
         "inheritance": null,

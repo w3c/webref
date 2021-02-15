@@ -1,0 +1,40 @@
+{
+  "name": "ShadowAnimation",
+  "defined": {
+    "spec": {
+      "title": "Scalable Vector Graphics (SVG) 2",
+      "url": "https://www.w3.org/TR/SVG2/"
+    },
+    "fragment": "[Constructor(Animation source, Animatable newTarget), Exposed=Window]\ninterface ShadowAnimation : Animation {\n  [SameObject] readonly attribute Animation sourceAnimation;\n};",
+    "href": "https://www.w3.org/TR/SVG2/struct.html#InterfaceShadowAnimation"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "Animation",
+    "defined": {
+      "spec": {
+        "title": "Web Animations",
+        "url": "https://www.w3.org/TR/web-animations-1/"
+      },
+      "fragment": "[Exposed=Window,\n Constructor (optional AnimationEffect? effect = null,\n              optional AnimationTimeline? timeline)]\ninterface Animation : EventTarget {\n             attribute DOMString                id;\n             attribute AnimationEffect?         effect;\n             attribute AnimationTimeline?       timeline;\n             attribute double?                  startTime;\n             attribute double?                  currentTime;\n             attribute double                   playbackRate;\n    readonly attribute AnimationPlayState       playState;\n    readonly attribute boolean                  pending;\n    readonly attribute Promise<Animation>       ready;\n    readonly attribute Promise<Animation>       finished;\n             attribute EventHandler             onfinish;\n             attribute EventHandler             oncancel;\n    void cancel ();\n    void finish ();\n    void play ();\n    void pause ();\n    void updatePlaybackRate (double playbackRate);\n    void reverse ();\n};",
+      "href": "https://www.w3.org/TR/web-animations-1/#animation"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

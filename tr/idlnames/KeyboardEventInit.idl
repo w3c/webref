@@ -1,0 +1,8 @@
+// Source: UI Events (https://www.w3.org/TR/uievents/)
+dictionary KeyboardEventInit : EventModifierInit {
+  DOMString key = "";
+  DOMString code = "";
+  unsigned long location = 0;
+  boolean repeat = false;
+  boolean isComposing = false;
+};

@@ -1,0 +1,27 @@
+{
+  "name": "ManifestImageResource",
+  "defined": {
+    "spec": {
+      "title": "Web App Manifest",
+      "url": "https://www.w3.org/TR/appmanifest/"
+    },
+    "fragment": "dictionary ManifestImageResource : ImageResource {\n  USVString purpose;\n};",
+    "href": "https://www.w3.org/TR/appmanifest/#dom-manifestimageresource"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ImageResource",
+    "defined": {
+      "spec": {
+        "title": "Image Resource",
+        "url": "https://www.w3.org/TR/image-resource/"
+      },
+      "fragment": "dictionary ImageResource {\n  required USVString src;\n  DOMString sizes;\n  DOMString type;\n};",
+      "href": "https://www.w3.org/TR/image-resource/#dom-imageresource"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

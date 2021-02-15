@@ -17,6 +17,7 @@
     },
     "idlNames": {
       "TextDetector": {
+        "fragment": "[\n    Exposed=(Window,Worker),\n    SecureContext\n] interface TextDetector {\n    constructor();\n    Promise<sequence<DetectedText>> detect(ImageBitmapSource image);\n};",
         "type": "interface",
         "name": "TextDetector",
         "inheritance": null,
@@ -104,6 +105,7 @@
         "partial": false
       },
       "DetectedText": {
+        "fragment": "dictionary DetectedText {\n  required DOMRectReadOnly boundingBox;\n  required DOMString rawValue;\n  required FrozenArray<Point2D> cornerPoints;\n};",
         "type": "dictionary",
         "name": "DetectedText",
         "inheritance": null,

@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "XRDOMOverlayInit": {
+        "fragment": "dictionary XRDOMOverlayInit {\n  required Element root;\n};",
         "type": "dictionary",
         "name": "XRDOMOverlayInit",
         "inheritance": null,
@@ -34,6 +35,7 @@
         "partial": false
       },
       "XRDOMOverlayType": {
+        "fragment": "enum XRDOMOverlayType {\n  \"screen\",\n  \"floating\",\n  \"head-locked\"\n};",
         "type": "enum",
         "name": "XRDOMOverlayType",
         "values": [
@@ -53,6 +55,7 @@
         "extAttrs": []
       },
       "XRDOMOverlayState": {
+        "fragment": "dictionary XRDOMOverlayState {\n  XRDOMOverlayType type; \n};",
         "type": "dictionary",
         "name": "XRDOMOverlayState",
         "inheritance": null,
@@ -80,6 +83,7 @@
     "idlExtendedNames": {
       "GlobalEventHandlers": [
         {
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onbeforexrselect;\n};",
           "type": "interface mixin",
           "name": "GlobalEventHandlers",
           "inheritance": null,
@@ -106,6 +110,7 @@
       ],
       "XRSessionInit": [
         {
+          "fragment": "partial dictionary XRSessionInit {\n  XRDOMOverlayInit? domOverlay;\n};",
           "type": "dictionary",
           "name": "XRSessionInit",
           "inheritance": null,
@@ -132,6 +137,7 @@
       ],
       "XRSession": [
         {
+          "fragment": "partial interface XRSession {\n  readonly attribute XRDOMOverlayState? domOverlayState;\n};",
           "type": "interface",
           "name": "XRSession",
           "inheritance": null,

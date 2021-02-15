@@ -1,0 +1,22 @@
+{
+  "name": "AnimationEffect",
+  "defined": {
+    "spec": {
+      "title": "Web Animations",
+      "url": "https://www.w3.org/TR/web-animations-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface AnimationEffect {\n    EffectTiming         getTiming();\n    ComputedEffectTiming getComputedTiming();\n    void                 updateTiming(optional OptionalEffectTiming timing);\n};",
+    "href": "https://www.w3.org/TR/web-animations-1/#animationeffect"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "CSS Animation Worklet API",
+        "url": "https://www.w3.org/TR/css-animation-worklet-1/"
+      },
+      "fragment": "[Exposed=AnimationWorklet]\npartial interface AnimationEffect {\n    // Intended for use inside Animation Worklet scope to drive the effect.\n    attribute double localTime;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

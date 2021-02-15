@@ -1,0 +1,12 @@
+{
+  "extended": [
+    {
+      "spec": {
+        "title": "Constructable Stylesheet Objects",
+        "url": "https://wicg.github.io/construct-stylesheets/"
+      },
+      "fragment": "partial interface CSSStyleSheet {\n  constructor(optional CSSStyleSheetInit options = {});\n  Promise<CSSStyleSheet> replace(USVString text);\n  void replaceSync(USVString text);\n};"
+    }
+  ],
+  "includes": []
+}

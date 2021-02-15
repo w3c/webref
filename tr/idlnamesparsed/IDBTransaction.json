@@ -1,0 +1,27 @@
+{
+  "name": "IDBTransaction",
+  "defined": {
+    "spec": {
+      "title": "Indexed Database API 2.0",
+      "url": "https://www.w3.org/TR/IndexedDB-2/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface IDBTransaction : EventTarget {\n  readonly attribute DOMStringList objectStoreNames;\n  readonly attribute IDBTransactionMode mode;\n  [SameObject] readonly attribute IDBDatabase db;\n  readonly attribute DOMException error;\n\n  IDBObjectStore objectStore(DOMString name);\n  void abort();\n\n  // Event handlers:\n  attribute EventHandler onabort;\n  attribute EventHandler oncomplete;\n  attribute EventHandler onerror;\n};",
+    "href": "https://www.w3.org/TR/IndexedDB-2/#idbtransaction"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

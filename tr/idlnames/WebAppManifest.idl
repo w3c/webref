@@ -1,0 +1,22 @@
+// Source: Web App Manifest (https://www.w3.org/TR/appmanifest/)
+dictionary WebAppManifest {
+   TextDirectionType dir = "auto";
+   DOMString lang;
+   USVString name;
+   USVString short_name;
+   sequence<ManifestImageResource> icons;
+   USVString start_url;
+   DisplayModeType display = "browser";
+   OrientationLockType orientation;
+   USVString theme_color;
+   USVString background_color;
+   USVString scope;
+   sequence<ExternalApplicationResource> related_applications;
+   boolean prefer_related_applications = "false";
+   sequence<ShortcutItem> shortcuts;
+};
+
+// Source: Web Share Target API (https://w3c.github.io/web-share-target/)
+partial dictionary WebAppManifest {
+  ShareTarget share_target;
+};

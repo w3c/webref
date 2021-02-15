@@ -1,0 +1,27 @@
+{
+  "name": "PaintWorkletGlobalScope",
+  "defined": {
+    "spec": {
+      "title": "CSS Painting API Level 1",
+      "url": "https://www.w3.org/TR/css-paint-api-1/"
+    },
+    "fragment": "[Global=(Worklet,PaintWorklet),Exposed=PaintWorklet]\ninterface PaintWorkletGlobalScope : WorkletGlobalScope {\n    void registerPaint(DOMString name, VoidFunction paintCtor);\n    readonly attribute unrestricted double devicePixelRatio;\n};",
+    "href": "https://www.w3.org/TR/css-paint-api-1/#paintworkletglobalscope"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "WorkletGlobalScope",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "[Exposed=Worklet, SecureContext]\ninterface WorkletGlobalScope {};",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

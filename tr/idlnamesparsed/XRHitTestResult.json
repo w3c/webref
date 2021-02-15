@@ -1,0 +1,22 @@
+{
+  "name": "XRHitTestResult",
+  "defined": {
+    "spec": {
+      "title": "WebXR Hit Test Module",
+      "url": "https://immersive-web.github.io/hit-test/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface XRHitTestResult {\n  XRPose? getPose(XRSpace baseSpace);\n};",
+    "href": "https://immersive-web.github.io/hit-test/#xrhittestresult"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR Anchors Module",
+        "url": "https://immersive-web.github.io/anchors/"
+      },
+      "fragment": "partial interface XRHitTestResult {\n  Promise<XRAnchor> createAnchor();\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

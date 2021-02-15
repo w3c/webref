@@ -1,0 +1,10 @@
+// Source: WebXR Hit Test Module (https://immersive-web.github.io/hit-test/)
+[SecureContext, Exposed=Window]
+interface XRHitTestResult {
+  XRPose? getPose(XRSpace baseSpace);
+};
+
+// Source: WebXR Anchors Module (https://immersive-web.github.io/anchors/)
+partial interface XRHitTestResult {
+  Promise<XRAnchor> createAnchor();
+};

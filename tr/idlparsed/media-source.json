@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "ReadyState": {
+        "fragment": "enum ReadyState {\n    \"closed\",\n    \"open\",\n    \"ended\"\n};",
         "type": "enum",
         "name": "ReadyState",
         "values": [
@@ -33,6 +34,7 @@
         "extAttrs": []
       },
       "EndOfStreamError": {
+        "fragment": "enum EndOfStreamError {\n    \"network\",\n    \"decode\"\n};",
         "type": "enum",
         "name": "EndOfStreamError",
         "values": [
@@ -48,6 +50,7 @@
         "extAttrs": []
       },
       "MediaSource": {
+        "fragment": "[Constructor]\ninterface MediaSource : EventTarget {\n    readonly attribute SourceBufferList    sourceBuffers;\n    readonly attribute SourceBufferList    activeSourceBuffers;\n    readonly attribute ReadyState          readyState;\n             attribute unrestricted double duration;\n             attribute EventHandler        onsourceopen;\n             attribute EventHandler        onsourceended;\n             attribute EventHandler        onsourceclose;\n    SourceBuffer addSourceBuffer(DOMString type);\n    void         removeSourceBuffer(SourceBuffer sourceBuffer);\n    void         endOfStream(optional EndOfStreamError error);\n    void         setLiveSeekableRange(double start, double end);\n    void         clearLiveSeekableRange();\n    static boolean isTypeSupported(DOMString type);\n};",
         "type": "interface",
         "name": "MediaSource",
         "inheritance": "EventTarget",
@@ -360,6 +363,7 @@
         "partial": false
       },
       "AppendMode": {
+        "fragment": "enum AppendMode {\n    \"segments\",\n    \"sequence\"\n};",
         "type": "enum",
         "name": "AppendMode",
         "values": [
@@ -375,6 +379,7 @@
         "extAttrs": []
       },
       "SourceBuffer": {
+        "fragment": "interface SourceBuffer : EventTarget {\n             attribute AppendMode          mode;\n    readonly attribute boolean             updating;\n    readonly attribute TimeRanges          buffered;\n             attribute double              timestampOffset;\n    readonly attribute AudioTrackList      audioTracks;\n    readonly attribute VideoTrackList      videoTracks;\n    readonly attribute TextTrackList       textTracks;\n             attribute double              appendWindowStart;\n             attribute unrestricted double appendWindowEnd;\n             attribute EventHandler        onupdatestart;\n             attribute EventHandler        onupdate;\n             attribute EventHandler        onupdateend;\n             attribute EventHandler        onerror;\n             attribute EventHandler        onabort;\n    void appendBuffer(BufferSource data);\n    void abort();\n    void remove(double start, unrestricted double end);\n};",
         "type": "interface",
         "name": "SourceBuffer",
         "inheritance": "EventTarget",
@@ -689,6 +694,7 @@
         "partial": false
       },
       "SourceBufferList": {
+        "fragment": "interface SourceBufferList : EventTarget {\n    readonly attribute unsigned long length;\n             attribute EventHandler  onaddsourcebuffer;\n             attribute EventHandler  onremovesourcebuffer;\n    getter SourceBuffer (unsigned long index);\n};",
         "type": "interface",
         "name": "SourceBufferList",
         "inheritance": "EventTarget",
@@ -778,6 +784,7 @@
     "idlExtendedNames": {
       "URL": [
         {
+          "fragment": "[Exposed=Window]\npartial interface URL {\n    static DOMString createObjectURL(MediaSource mediaSource);\n};",
           "type": "interface",
           "name": "URL",
           "inheritance": null,
@@ -831,6 +838,7 @@
       ],
       "AudioTrack": [
         {
+          "fragment": "partial interface AudioTrack {\n    readonly attribute SourceBuffer? sourceBuffer;\n};",
           "type": "interface",
           "name": "AudioTrack",
           "inheritance": null,
@@ -857,6 +865,7 @@
       ],
       "VideoTrack": [
         {
+          "fragment": "partial interface VideoTrack {\n    readonly attribute SourceBuffer? sourceBuffer;\n};",
           "type": "interface",
           "name": "VideoTrack",
           "inheritance": null,
@@ -883,6 +892,7 @@
       ],
       "TextTrack": [
         {
+          "fragment": "partial interface TextTrack {\n    readonly attribute SourceBuffer? sourceBuffer;\n};",
           "type": "interface",
           "name": "TextTrack",
           "inheritance": null,

@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "Keyboard": {
+        "fragment": "[SecureContext, Exposed=Window] interface Keyboard {\n  Promise<void> lock(optional sequence<DOMString> keyCodes = []);\n  void unlock();\n};",
         "type": "interface",
         "name": "Keyboard",
         "inheritance": null,
@@ -110,6 +111,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute Keyboard keyboard;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

@@ -21,6 +21,7 @@
     },
     "idlNames": {
       "Serial": {
+        "fragment": "[Exposed=(DedicatedWorker, Window), SecureContext]\ninterface Serial : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  Promise<sequence<SerialPort>> getPorts();\n  [Exposed=Window] Promise<SerialPort> requestPort(optional SerialPortRequestOptions options = {});\n};",
         "type": "interface",
         "name": "Serial",
         "inheritance": "EventTarget",
@@ -169,6 +170,7 @@
         "partial": false
       },
       "SerialPortRequestOptions": {
+        "fragment": "dictionary SerialPortRequestOptions {\n  sequence<SerialPortFilter> filters;\n};",
         "type": "dictionary",
         "name": "SerialPortRequestOptions",
         "inheritance": null,
@@ -202,6 +204,7 @@
         "partial": false
       },
       "SerialPortFilter": {
+        "fragment": "dictionary SerialPortFilter {\n  unsigned short usbVendorId;\n  unsigned short usbProductId;\n};",
         "type": "dictionary",
         "name": "SerialPortFilter",
         "inheritance": null,
@@ -241,6 +244,7 @@
         "partial": false
       },
       "SerialPort": {
+        "fragment": "[Exposed=(DedicatedWorker,Window), SecureContext]\ninterface SerialPort : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  SerialPortInfo getInfo();\n\n  Promise<undefined> open(SerialOptions options);\n  Promise<undefined> setSignals(optional SerialOutputSignals signals = {});\n  Promise<SerialInputSignals> getSignals();\n  Promise<undefined> close();\n};",
         "type": "interface",
         "name": "SerialPort",
         "inheritance": "EventTarget",
@@ -480,6 +484,7 @@
         "partial": false
       },
       "SerialPortInfo": {
+        "fragment": "dictionary SerialPortInfo {\n  unsigned short usbVendorId;\n  unsigned short usbProductId;\n};",
         "type": "dictionary",
         "name": "SerialPortInfo",
         "inheritance": null,
@@ -519,6 +524,7 @@
         "partial": false
       },
       "SerialOptions": {
+        "fragment": "dictionary SerialOptions {\n  required [EnforceRange] unsigned long baudRate;\n  [EnforceRange] octet dataBits = 8;\n  [EnforceRange] octet stopBits = 1;\n  ParityType parity = \"none\";\n  [EnforceRange] unsigned long bufferSize = 255;\n  FlowControlType flowControl = \"none\";\n};",
         "type": "dictionary",
         "name": "SerialOptions",
         "inheritance": null,
@@ -661,6 +667,7 @@
         "partial": false
       },
       "ParityType": {
+        "fragment": "enum ParityType {\n  \"none\",\n  \"even\",\n  \"odd\"\n};",
         "type": "enum",
         "name": "ParityType",
         "values": [
@@ -680,6 +687,7 @@
         "extAttrs": []
       },
       "FlowControlType": {
+        "fragment": "enum FlowControlType {\n  \"none\",\n  \"hardware\"\n};",
         "type": "enum",
         "name": "FlowControlType",
         "values": [
@@ -695,6 +703,7 @@
         "extAttrs": []
       },
       "SerialOutputSignals": {
+        "fragment": "dictionary SerialOutputSignals {\n  boolean dataTerminalReady;\n  boolean requestToSend;\n  boolean break;\n};",
         "type": "dictionary",
         "name": "SerialOutputSignals",
         "inheritance": null,
@@ -749,6 +758,7 @@
         "partial": false
       },
       "SerialInputSignals": {
+        "fragment": "dictionary SerialInputSignals {\n  required boolean dataCarrierDetect;\n  required boolean clearToSend;\n  required boolean ringIndicator;\n  required boolean dataSetReady;\n};",
         "type": "dictionary",
         "name": "SerialInputSignals",
         "inheritance": null,
@@ -821,6 +831,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "[Exposed=Window, SecureContext]\npartial interface Navigator {\n  [SameObject] readonly attribute Serial serial;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -870,6 +881,7 @@
       ],
       "WorkerNavigator": [
         {
+          "fragment": "[Exposed=DedicatedWorker, SecureContext]\npartial interface WorkerNavigator {\n  [SameObject] readonly attribute Serial serial;\n};",
           "type": "interface",
           "name": "WorkerNavigator",
           "inheritance": null,

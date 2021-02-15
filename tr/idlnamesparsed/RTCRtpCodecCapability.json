@@ -1,0 +1,22 @@
+{
+  "name": "RTCRtpCodecCapability",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCRtpCodecCapability {\n  required DOMString mimeType;\n  required unsigned long clockRate;\n  unsigned short channels;\n  DOMString sdpFmtpLine;\n};",
+    "href": "https://www.w3.org/TR/webrtc/#dom-rtcrtpcodeccapability"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+        "url": "https://www.w3.org/TR/webrtc-svc/"
+      },
+      "fragment": "partial dictionary RTCRtpCodecCapability {\n             sequence<DOMString> scalabilityModes;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

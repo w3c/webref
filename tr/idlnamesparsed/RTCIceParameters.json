@@ -1,0 +1,22 @@
+{
+  "name": "RTCIceParameters",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCIceParameters {\n  DOMString usernameFragment;\n  DOMString password;\n};",
+    "href": "https://www.w3.org/TR/webrtc/#dom-rtciceparameters"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "IceTransport Extensions for WebRTC",
+        "url": "https://w3c.github.io/webrtc-ice/"
+      },
+      "fragment": "partial dictionary RTCIceParameters {\n             boolean   iceLite;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

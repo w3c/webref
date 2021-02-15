@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "Geolocation": {
+        "fragment": "[NoInterfaceObject]\ninterface Geolocation {\n  void getCurrentPosition(PositionCallback successCallback,\n                          optional PositionErrorCallback errorCallback,\n                          optional PositionOptions options);\n\n  long watchPosition(PositionCallback successCallback,\n                     optional PositionErrorCallback errorCallback,\n                     optional PositionOptions options);\n\n  void clearWatch(long watchId);\n};",
         "type": "interface",
         "name": "Geolocation",
         "inheritance": null,
@@ -186,6 +187,7 @@
         "partial": false
       },
       "PositionCallback": {
+        "fragment": "callback PositionCallback = void (Position position);",
         "type": "callback",
         "name": "PositionCallback",
         "idlType": {
@@ -217,6 +219,7 @@
         "extAttrs": []
       },
       "PositionErrorCallback": {
+        "fragment": "callback PositionErrorCallback = void (PositionError positionError);",
         "type": "callback",
         "name": "PositionErrorCallback",
         "idlType": {
@@ -248,6 +251,7 @@
         "extAttrs": []
       },
       "PositionOptions": {
+        "fragment": "dictionary PositionOptions {\n  boolean enableHighAccuracy = false;\n  [Clamp] unsigned long timeout = 0xFFFFFFFF;\n  [Clamp] unsigned long maximumAge = 0;\n};",
         "type": "dictionary",
         "name": "PositionOptions",
         "inheritance": null,
@@ -325,6 +329,7 @@
         "partial": false
       },
       "Position": {
+        "fragment": "[NoInterfaceObject]\ninterface Position {\n  readonly attribute Coordinates coords;\n  readonly attribute DOMTimeStamp timestamp;\n};",
         "type": "interface",
         "name": "Position",
         "inheritance": null,
@@ -371,6 +376,7 @@
         "partial": false
       },
       "Coordinates": {
+        "fragment": "[NoInterfaceObject]\ninterface Coordinates {\n  readonly attribute double latitude;\n  readonly attribute double longitude;\n  readonly attribute double? altitude;\n  readonly attribute double accuracy;\n  readonly attribute double? altitudeAccuracy;\n  readonly attribute double? heading;\n  readonly attribute double? speed;\n};",
         "type": "interface",
         "name": "Coordinates",
         "inheritance": null,
@@ -492,6 +498,7 @@
         "partial": false
       },
       "PositionError": {
+        "fragment": "[NoInterfaceObject]\ninterface PositionError {\n  const unsigned short PERMISSION_DENIED = 1;\n  const unsigned short POSITION_UNAVAILABLE = 2;\n  const unsigned short TIMEOUT = 3;\n  readonly attribute unsigned short code;\n  readonly attribute DOMString message;\n};",
         "type": "interface",
         "name": "PositionError",
         "inheritance": null,
@@ -592,6 +599,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "partial interface Navigator {\n  readonly attribute Geolocation geolocation;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

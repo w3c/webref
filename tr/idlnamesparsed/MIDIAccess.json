@@ -1,0 +1,26 @@
+{
+  "name": "MIDIAccess",
+  "defined": {
+    "spec": {
+      "title": "Web MIDI API",
+      "url": "https://www.w3.org/TR/webmidi/"
+    },
+    "fragment": "interface MIDIAccess : EventTarget {\n    readonly    attribute MIDIInputMap  inputs;\n    readonly    attribute MIDIOutputMap outputs;\n                attribute EventHandler  onstatechange;\n    readonly    attribute boolean       sysexEnabled;\n};"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

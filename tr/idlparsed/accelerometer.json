@@ -16,6 +16,7 @@
     },
     "idlNames": {
       "Accelerometer": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface Accelerometer : Sensor {\n  constructor(optional AccelerometerSensorOptions options = {});\n  readonly attribute double? x;\n  readonly attribute double? y;\n  readonly attribute double? z;\n};",
         "type": "interface",
         "name": "Accelerometer",
         "inheritance": "Sensor",
@@ -110,6 +111,7 @@
         "partial": false
       },
       "AccelerometerLocalCoordinateSystem": {
+        "fragment": "enum AccelerometerLocalCoordinateSystem { \"device\", \"screen\" };",
         "type": "enum",
         "name": "AccelerometerLocalCoordinateSystem",
         "values": [
@@ -125,6 +127,7 @@
         "extAttrs": []
       },
       "AccelerometerSensorOptions": {
+        "fragment": "dictionary AccelerometerSensorOptions : SensorOptions {\n  AccelerometerLocalCoordinateSystem referenceFrame = \"device\";\n};",
         "type": "dictionary",
         "name": "AccelerometerSensorOptions",
         "inheritance": "SensorOptions",
@@ -152,6 +155,7 @@
         "partial": false
       },
       "LinearAccelerationSensor": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface LinearAccelerationSensor : Accelerometer {\n  constructor(optional AccelerometerSensorOptions options = {});\n};",
         "type": "interface",
         "name": "LinearAccelerationSensor",
         "inheritance": "Accelerometer",
@@ -201,6 +205,7 @@
         "partial": false
       },
       "GravitySensor": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface GravitySensor : Accelerometer {\n  constructor(optional AccelerometerSensorOptions options = {});\n};",
         "type": "interface",
         "name": "GravitySensor",
         "inheritance": "Accelerometer",
@@ -250,6 +255,7 @@
         "partial": false
       },
       "AccelerometerReadingValues": {
+        "fragment": "dictionary AccelerometerReadingValues {\n  required double? x;\n  required double? y;\n  required double? z;\n};",
         "type": "dictionary",
         "name": "AccelerometerReadingValues",
         "inheritance": null,
@@ -304,6 +310,7 @@
         "partial": false
       },
       "LinearAccelerationReadingValues": {
+        "fragment": "dictionary LinearAccelerationReadingValues : AccelerometerReadingValues {\n};",
         "type": "dictionary",
         "name": "LinearAccelerationReadingValues",
         "inheritance": "AccelerometerReadingValues",
@@ -312,6 +319,7 @@
         "partial": false
       },
       "GravityReadingValues": {
+        "fragment": "dictionary GravityReadingValues : AccelerometerReadingValues {\n};",
         "type": "dictionary",
         "name": "GravityReadingValues",
         "inheritance": "AccelerometerReadingValues",

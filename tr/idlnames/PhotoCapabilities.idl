@@ -1,0 +1,7 @@
+// Source: "MediaStream Image Capture" (https://www.w3.org/TR/image-capture/)
+interface PhotoCapabilities {
+  readonly attribute RedEyeReduction            redEyeReduction;
+  readonly attribute MediaSettingsRange         imageHeight;
+  readonly attribute MediaSettingsRange         imageWidth;
+  readonly attribute FrozenArray<FillLightMode> fillLightMode;
+};

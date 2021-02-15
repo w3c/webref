@@ -18,6 +18,7 @@
     },
     "idlNames": {
       "ErrorCallback": {
+        "fragment": "callback ErrorCallback = undefined (DOMException err);",
         "type": "callback",
         "name": "ErrorCallback",
         "idlType": {
@@ -49,6 +50,7 @@
         "extAttrs": []
       },
       "FileSystemEntry": {
+        "fragment": "[Exposed=Window]\ninterface FileSystemEntry {\n    readonly attribute boolean isFile;\n    readonly attribute boolean isDirectory;\n    readonly attribute USVString name;\n    readonly attribute USVString fullPath;\n    readonly attribute FileSystem filesystem;\n\n    undefined getParent(optional FileSystemEntryCallback successCallback,\n                   optional ErrorCallback errorCallback);\n};",
         "type": "interface",
         "name": "FileSystemEntry",
         "inheritance": null,
@@ -191,6 +193,7 @@
         "partial": false
       },
       "FileSystemDirectoryEntry": {
+        "fragment": "[Exposed=Window]\ninterface FileSystemDirectoryEntry : FileSystemEntry {\n    FileSystemDirectoryReader createReader();\n    undefined getFile(optional USVString? path,\n                 optional FileSystemFlags options = {},\n                 optional FileSystemEntryCallback successCallback,\n                 optional ErrorCallback errorCallback);\n    undefined getDirectory(optional USVString? path,\n                      optional FileSystemFlags options = {},\n                      optional FileSystemEntryCallback successCallback,\n                      optional ErrorCallback errorCallback);\n};",
         "type": "interface",
         "name": "FileSystemDirectoryEntry",
         "inheritance": "FileSystemEntry",
@@ -389,6 +392,7 @@
         "partial": false
       },
       "FileSystemFlags": {
+        "fragment": "dictionary FileSystemFlags {\n    boolean create = false;\n    boolean exclusive = false;\n};",
         "type": "dictionary",
         "name": "FileSystemFlags",
         "inheritance": null,
@@ -434,6 +438,7 @@
         "partial": false
       },
       "FileSystemEntryCallback": {
+        "fragment": "callback FileSystemEntryCallback = undefined (FileSystemEntry entry);",
         "type": "callback",
         "name": "FileSystemEntryCallback",
         "idlType": {
@@ -465,6 +470,7 @@
         "extAttrs": []
       },
       "FileSystemDirectoryReader": {
+        "fragment": "[Exposed=Window]\ninterface FileSystemDirectoryReader {\n    undefined readEntries(FileSystemEntriesCallback successCallback,\n                     optional ErrorCallback errorCallback);\n};",
         "type": "interface",
         "name": "FileSystemDirectoryReader",
         "inheritance": null,
@@ -532,6 +538,7 @@
         "partial": false
       },
       "FileSystemEntriesCallback": {
+        "fragment": "callback FileSystemEntriesCallback = undefined (sequence<FileSystemEntry> entries);",
         "type": "callback",
         "name": "FileSystemEntriesCallback",
         "idlType": {
@@ -572,6 +579,7 @@
         "extAttrs": []
       },
       "FileSystemFileEntry": {
+        "fragment": "[Exposed=Window]\ninterface FileSystemFileEntry : FileSystemEntry {\n    undefined file(FileCallback successCallback,\n              optional ErrorCallback errorCallback);\n};",
         "type": "interface",
         "name": "FileSystemFileEntry",
         "inheritance": "FileSystemEntry",
@@ -639,6 +647,7 @@
         "partial": false
       },
       "FileCallback": {
+        "fragment": "callback FileCallback = undefined (File file);",
         "type": "callback",
         "name": "FileCallback",
         "idlType": {
@@ -670,6 +679,7 @@
         "extAttrs": []
       },
       "FileSystem": {
+        "fragment": "[Exposed=Window]\ninterface FileSystem {\n    readonly attribute USVString name;\n    readonly attribute FileSystemDirectoryEntry root;\n};",
         "type": "interface",
         "name": "FileSystem",
         "inheritance": null,
@@ -722,6 +732,7 @@
     "idlExtendedNames": {
       "File": [
         {
+          "fragment": "partial interface File {\n    readonly attribute USVString webkitRelativePath;\n};",
           "type": "interface",
           "name": "File",
           "inheritance": null,
@@ -748,6 +759,7 @@
       ],
       "HTMLInputElement": [
         {
+          "fragment": "partial interface HTMLInputElement {\n    attribute boolean webkitdirectory;\n    readonly attribute FrozenArray<FileSystemEntry> webkitEntries;\n};",
           "type": "interface",
           "name": "HTMLInputElement",
           "inheritance": null,
@@ -798,6 +810,7 @@
       ],
       "DataTransferItem": [
         {
+          "fragment": "partial interface DataTransferItem {\n    FileSystemEntry? webkitGetAsEntry();\n};",
           "type": "interface",
           "name": "DataTransferItem",
           "inheritance": null,

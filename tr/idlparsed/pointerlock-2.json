@@ -12,6 +12,7 @@
     "idlExtendedNames": {
       "Element": [
         {
+          "fragment": "partial interface Element {\n  void requestPointerLock();\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -38,6 +39,7 @@
       ],
       "Document": [
         {
+          "fragment": "partial interface Document {\n  attribute EventHandler onpointerlockchange;\n  attribute EventHandler onpointerlockerror;\n  void exitPointerLock();\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -94,6 +96,7 @@
       ],
       "DocumentOrShadowRoot": [
         {
+          "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element ? pointerLockElement;\n};",
           "type": "interface mixin",
           "name": "DocumentOrShadowRoot",
           "inheritance": null,
@@ -120,6 +123,7 @@
       ],
       "MouseEvent": [
         {
+          "fragment": "partial interface MouseEvent {\n  readonly attribute long movementX;\n  readonly attribute long movementY;\n};",
           "type": "interface",
           "name": "MouseEvent",
           "inheritance": null,
@@ -161,6 +165,7 @@
       ],
       "MouseEventInit": [
         {
+          "fragment": "partial dictionary MouseEventInit {\n  long movementX = 0;\n  long movementY = 0;\n};",
           "type": "dictionary",
           "name": "MouseEventInit",
           "inheritance": null,

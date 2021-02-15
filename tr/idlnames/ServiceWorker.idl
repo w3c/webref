@@ -1,0 +1,13 @@
+// Source: Service Workers 1 (https://www.w3.org/TR/service-workers-1/)
+[SecureContext, Exposed=(Window,Worker)]
+interface ServiceWorker : EventTarget {
+  readonly attribute USVString scriptURL;
+  readonly attribute ServiceWorkerState state;
+  void postMessage(any message, optional sequence<object> transfer = []);
+
+  // event
+  attribute EventHandler onstatechange;
+};
+
+// Source: Service Workers 1 (https://www.w3.org/TR/service-workers-1/)
+ServiceWorker includes AbstractWorker;

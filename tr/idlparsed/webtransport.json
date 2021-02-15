@@ -28,6 +28,7 @@
     },
     "idlNames": {
       "UnidirectionalStreamsTransport": {
+        "fragment": "interface mixin UnidirectionalStreamsTransport {\n  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});\n  /* a ReadableStream of ReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
         "type": "interface mixin",
         "name": "UnidirectionalStreamsTransport",
         "inheritance": null,
@@ -95,6 +96,7 @@
         "partial": false
       },
       "SendStreamParameters": {
+        "fragment": "dictionary SendStreamParameters {\n};",
         "type": "dictionary",
         "name": "SendStreamParameters",
         "inheritance": null,
@@ -103,6 +105,7 @@
         "partial": false
       },
       "BidirectionalStreamsTransport": {
+        "fragment": "interface mixin BidirectionalStreamsTransport {\n    Promise<BidirectionalStream> createBidirectionalStream();\n    /* a ReadableStream of BidirectionalStream objects */\n    readonly attribute ReadableStream incomingBidirectionalStreams;\n};",
         "type": "interface mixin",
         "name": "BidirectionalStreamsTransport",
         "inheritance": null,
@@ -151,6 +154,7 @@
         "partial": false
       },
       "DatagramTransport": {
+        "fragment": "interface mixin DatagramTransport {\n    readonly attribute unsigned short maxDatagramSize;\n    /* both streams are streams of Uint8Array objects */\n    readonly attribute ReadableStream datagramReadable;\n    readonly attribute WritableStream datagramWritable;\n};",
         "type": "interface mixin",
         "name": "DatagramTransport",
         "inheritance": null,
@@ -205,6 +209,7 @@
         "partial": false
       },
       "WebTransport": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute WebTransportState state;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n  attribute EventHandler onstatechange;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -407,6 +412,7 @@
         "partial": false
       },
       "WebTransportOptions": {
+        "fragment": "dictionary WebTransportOptions {\n  sequence<RTCDtlsFingerprint> serverCertificateFingerprints;\n};",
         "type": "dictionary",
         "name": "WebTransportOptions",
         "inheritance": null,
@@ -440,6 +446,7 @@
         "partial": false
       },
       "WebTransportState": {
+        "fragment": "enum WebTransportState {\n  \"connecting\",\n  \"connected\",\n  \"closed\",\n  \"failed\"\n};",
         "type": "enum",
         "name": "WebTransportState",
         "values": [
@@ -463,6 +470,7 @@
         "extAttrs": []
       },
       "WebTransportCloseInfo": {
+        "fragment": "dictionary WebTransportCloseInfo {\n  unsigned long long errorCode = 0;\n  DOMString reason = \"\";\n};",
         "type": "dictionary",
         "name": "WebTransportCloseInfo",
         "inheritance": null,
@@ -508,6 +516,7 @@
         "partial": false
       },
       "WebTransportStats": {
+        "fragment": "dictionary WebTransportStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long numOutgoingStreamsCreated;\n  unsigned long numIncomingStreamsCreated;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp minRtt;\n  unsigned long numReceivedDatagramsDropped;\n};",
         "type": "dictionary",
         "name": "WebTransportStats",
         "inheritance": null,
@@ -652,6 +661,7 @@
         "partial": false
       },
       "OutgoingStream": {
+        "fragment": "[ Exposed=(Window,Worker) ]\ninterface mixin OutgoingStream {\n  readonly attribute WritableStream writable;\n  readonly attribute Promise<StreamAbortInfo> writingAborted;\n  undefined abortWriting(optional StreamAbortInfo abortInfo = {});\n};",
         "type": "interface mixin",
         "name": "OutgoingStream",
         "inheritance": null,
@@ -751,6 +761,7 @@
         "partial": false
       },
       "StreamAbortInfo": {
+        "fragment": "dictionary StreamAbortInfo {\n  unsigned long long errorCode = 0;\n};",
         "type": "dictionary",
         "name": "StreamAbortInfo",
         "inheritance": null,
@@ -778,6 +789,7 @@
         "partial": false
       },
       "IncomingStream": {
+        "fragment": "[ Exposed=(Window,Worker) ]\ninterface mixin IncomingStream {\n  /* a ReadableStream of Uint8Array */\n  readonly attribute ReadableStream readable;\n  readonly attribute Promise<StreamAbortInfo> readingAborted;\n  undefined abortReading(optional StreamAbortInfo abortInfo = {});\n};",
         "type": "interface mixin",
         "name": "IncomingStream",
         "inheritance": null,
@@ -877,6 +889,7 @@
         "partial": false
       },
       "BidirectionalStream": {
+        "fragment": "[ Exposed=(Window,Worker) ]\ninterface BidirectionalStream {\n};",
         "type": "interface",
         "name": "BidirectionalStream",
         "inheritance": null,
@@ -902,6 +915,7 @@
         "partial": false
       },
       "SendStream": {
+        "fragment": "[ Exposed=(Window,Worker) ]\ninterface SendStream {\n};",
         "type": "interface",
         "name": "SendStream",
         "inheritance": null,
@@ -927,6 +941,7 @@
         "partial": false
       },
       "ReceiveStream": {
+        "fragment": "[ Exposed=(Window,Worker) ]\ninterface ReceiveStream {\n};",
         "type": "interface",
         "name": "ReceiveStream",
         "inheritance": null,
@@ -955,44 +970,58 @@
     "idlExtendedNames": {
       "WebTransport": [
         {
-          "name": "WebTransport",
-          "type": "interface",
+          "fragment": "WebTransport includes UnidirectionalStreamsTransport;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WebTransport",
           "includes": "UnidirectionalStreamsTransport"
         },
         {
-          "name": "WebTransport",
-          "type": "interface",
+          "fragment": "WebTransport includes BidirectionalStreamsTransport;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WebTransport",
           "includes": "BidirectionalStreamsTransport"
         },
         {
-          "name": "WebTransport",
-          "type": "interface",
+          "fragment": "WebTransport includes DatagramTransport;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WebTransport",
           "includes": "DatagramTransport"
         }
       ],
       "BidirectionalStream": [
         {
-          "name": "BidirectionalStream",
-          "type": "interface",
+          "fragment": "BidirectionalStream includes OutgoingStream;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "BidirectionalStream",
           "includes": "OutgoingStream"
         },
         {
-          "name": "BidirectionalStream",
-          "type": "interface",
+          "fragment": "BidirectionalStream includes IncomingStream;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "BidirectionalStream",
           "includes": "IncomingStream"
         }
       ],
       "SendStream": [
         {
-          "name": "SendStream",
-          "type": "interface",
+          "fragment": "SendStream includes OutgoingStream;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SendStream",
           "includes": "OutgoingStream"
         }
       ],
       "ReceiveStream": [
         {
-          "name": "ReceiveStream",
-          "type": "interface",
+          "fragment": "ReceiveStream includes IncomingStream;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "ReceiveStream",
           "includes": "IncomingStream"
         }
       ]

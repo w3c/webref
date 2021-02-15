@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "PerformanceServerTiming": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceServerTiming {\n  readonly attribute DOMString name;\n  readonly attribute DOMHighResTimeStamp duration;\n  readonly attribute DOMString description;\n  [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceServerTiming",
         "inheritance": null,
@@ -115,6 +116,7 @@
     "idlExtendedNames": {
       "PerformanceResourceTiming": [
         {
+          "fragment": "[Exposed=(Window,Worker)]\npartial interface PerformanceResourceTiming {\n  readonly attribute FrozenArray<PerformanceServerTiming> serverTiming;\n};",
           "type": "interface",
           "name": "PerformanceResourceTiming",
           "inheritance": null,

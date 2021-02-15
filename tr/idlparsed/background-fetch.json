@@ -26,6 +26,7 @@
     },
     "idlNames": {
       "BackgroundFetchManager": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface BackgroundFetchManager {\n  Promise<BackgroundFetchRegistration> fetch(DOMString id, (RequestInfo or sequence<RequestInfo>) requests, optional BackgroundFetchOptions options = {});\n  Promise<BackgroundFetchRegistration?> get(DOMString id);\n  Promise<sequence<DOMString>> getIds();\n};",
         "type": "interface",
         "name": "BackgroundFetchManager",
         "inheritance": null,
@@ -227,6 +228,7 @@
         "partial": false
       },
       "BackgroundFetchUIOptions": {
+        "fragment": "dictionary BackgroundFetchUIOptions {\n  sequence<ImageResource> icons;\n  DOMString title;\n};",
         "type": "dictionary",
         "name": "BackgroundFetchUIOptions",
         "inheritance": null,
@@ -275,6 +277,7 @@
         "partial": false
       },
       "BackgroundFetchOptions": {
+        "fragment": "dictionary BackgroundFetchOptions : BackgroundFetchUIOptions {\n  unsigned long long downloadTotal = 0;\n};",
         "type": "dictionary",
         "name": "BackgroundFetchOptions",
         "inheritance": "BackgroundFetchUIOptions",
@@ -302,6 +305,7 @@
         "partial": false
       },
       "BackgroundFetchRegistration": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface BackgroundFetchRegistration : EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute unsigned long long uploadTotal;\n  readonly attribute unsigned long long uploaded;\n  readonly attribute unsigned long long downloadTotal;\n  readonly attribute unsigned long long downloaded;\n  readonly attribute BackgroundFetchResult result;\n  readonly attribute BackgroundFetchFailureReason failureReason;\n  readonly attribute boolean recordsAvailable;\n\n  attribute EventHandler onprogress;\n\n  Promise<boolean> abort();\n  Promise<BackgroundFetchRecord> match(RequestInfo request, optional CacheQueryOptions options = {});\n  Promise<sequence<BackgroundFetchRecord>> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});\n};",
         "type": "interface",
         "name": "BackgroundFetchRegistration",
         "inheritance": "EventTarget",
@@ -614,6 +618,7 @@
         "partial": false
       },
       "BackgroundFetchResult": {
+        "fragment": "enum BackgroundFetchResult { \"\", \"success\", \"failure\" };",
         "type": "enum",
         "name": "BackgroundFetchResult",
         "values": [
@@ -633,6 +638,7 @@
         "extAttrs": []
       },
       "BackgroundFetchFailureReason": {
+        "fragment": "enum BackgroundFetchFailureReason {\n  // The background fetch has not completed yet, or was successful.\n  \"\",\n  // The operation was aborted by the user, or abort() was called.\n  \"aborted\",\n  // A response had a not-ok-status.\n  \"bad-status\",\n  // A fetch failed for other reasons, e.g. CORS, MIX, an invalid partial response,\n  // or a general network failure for a fetch that cannot be retried.\n  \"fetch-error\",\n  // Storage quota was reached during the operation.\n  \"quota-exceeded\",\n  // The provided downloadTotal was exceeded.\n  \"download-total-exceeded\"\n};",
         "type": "enum",
         "name": "BackgroundFetchFailureReason",
         "values": [
@@ -664,6 +670,7 @@
         "extAttrs": []
       },
       "BackgroundFetchRecord": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface BackgroundFetchRecord {\n  readonly attribute Request request;\n  readonly attribute Promise<Response> responseReady;\n};",
         "type": "interface",
         "name": "BackgroundFetchRecord",
         "inheritance": null,
@@ -729,6 +736,7 @@
         "partial": false
       },
       "BackgroundFetchEvent": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface BackgroundFetchEvent : ExtendableEvent {\n  constructor(DOMString type, BackgroundFetchEventInit init);\n  readonly attribute BackgroundFetchRegistration registration;\n};",
         "type": "interface",
         "name": "BackgroundFetchEvent",
         "inheritance": "ExtendableEvent",
@@ -801,6 +809,7 @@
         "partial": false
       },
       "BackgroundFetchEventInit": {
+        "fragment": "dictionary BackgroundFetchEventInit : ExtendableEventInit {\n  required BackgroundFetchRegistration registration;\n};",
         "type": "dictionary",
         "name": "BackgroundFetchEventInit",
         "inheritance": "ExtendableEventInit",
@@ -825,6 +834,7 @@
         "partial": false
       },
       "BackgroundFetchUpdateUIEvent": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface BackgroundFetchUpdateUIEvent : BackgroundFetchEvent {\n  constructor(DOMString type, BackgroundFetchEventInit init);\n  Promise<void> updateUI(optional BackgroundFetchUIOptions options = {});\n};",
         "type": "interface",
         "name": "BackgroundFetchUpdateUIEvent",
         "inheritance": "BackgroundFetchEvent",
@@ -928,6 +938,7 @@
     "idlExtendedNames": {
       "ServiceWorkerGlobalScope": [
         {
+          "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler onbackgroundfetchsuccess;\n  attribute EventHandler onbackgroundfetchfail;\n  attribute EventHandler onbackgroundfetchabort;\n  attribute EventHandler onbackgroundfetchclick;\n};",
           "type": "interface",
           "name": "ServiceWorkerGlobalScope",
           "inheritance": null,
@@ -999,6 +1010,7 @@
       ],
       "ServiceWorkerRegistration": [
         {
+          "fragment": "partial interface ServiceWorkerRegistration {\n  readonly attribute BackgroundFetchManager backgroundFetch;\n};",
           "type": "interface",
           "name": "ServiceWorkerRegistration",
           "inheritance": null,

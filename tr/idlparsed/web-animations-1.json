@@ -22,6 +22,7 @@
     },
     "idlNames": {
       "AnimationTimeline": {
+        "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n    readonly attribute double? currentTime;\n};",
         "type": "interface",
         "name": "AnimationTimeline",
         "inheritance": null,
@@ -56,6 +57,7 @@
         "partial": false
       },
       "DocumentTimelineOptions": {
+        "fragment": "dictionary DocumentTimelineOptions {\n  DOMHighResTimeStamp originTime = 0;\n};",
         "type": "dictionary",
         "name": "DocumentTimelineOptions",
         "inheritance": null,
@@ -83,6 +85,7 @@
         "partial": false
       },
       "DocumentTimeline": {
+        "fragment": "[Exposed=Window,\n Constructor (optional DocumentTimelineOptions options)]\ninterface DocumentTimeline : AnimationTimeline {\n};",
         "type": "interface",
         "name": "DocumentTimeline",
         "inheritance": "AnimationTimeline",
@@ -124,6 +127,7 @@
         "partial": false
       },
       "Animation": {
+        "fragment": "[Exposed=Window,\n Constructor (optional AnimationEffect? effect = null,\n              optional AnimationTimeline? timeline)]\ninterface Animation : EventTarget {\n             attribute DOMString                id;\n             attribute AnimationEffect?         effect;\n             attribute AnimationTimeline?       timeline;\n             attribute double?                  startTime;\n             attribute double?                  currentTime;\n             attribute double                   playbackRate;\n    readonly attribute AnimationPlayState       playState;\n    readonly attribute boolean                  pending;\n    readonly attribute Promise<Animation>       ready;\n    readonly attribute Promise<Animation>       finished;\n             attribute EventHandler             onfinish;\n             attribute EventHandler             oncancel;\n    void cancel ();\n    void finish ();\n    void play ();\n    void pause ();\n    void updatePlaybackRate (double playbackRate);\n    void reverse ();\n};",
         "type": "interface",
         "name": "Animation",
         "inheritance": "EventTarget",
@@ -489,6 +493,7 @@
         "partial": false
       },
       "AnimationPlayState": {
+        "fragment": "enum AnimationPlayState { \"idle\", \"running\", \"paused\", \"finished\" };",
         "type": "enum",
         "name": "AnimationPlayState",
         "values": [
@@ -512,6 +517,7 @@
         "extAttrs": []
       },
       "AnimationEffect": {
+        "fragment": "[Exposed=Window]\ninterface AnimationEffect {\n    EffectTiming         getTiming();\n    ComputedEffectTiming getComputedTiming();\n    void                 updateTiming(optional OptionalEffectTiming timing);\n};",
         "type": "interface",
         "name": "AnimationEffect",
         "inheritance": null,
@@ -593,6 +599,7 @@
         "partial": false
       },
       "EffectTiming": {
+        "fragment": "dictionary EffectTiming {\n    double                             delay = 0;\n    double                             endDelay = 0;\n    FillMode                           fill = \"auto\";\n    double                             iterationStart = 0.0;\n    unrestricted double                iterations = 1.0;\n    (unrestricted double or DOMString) duration = \"auto\";\n    PlaybackDirection                  direction = \"normal\";\n    DOMString                          easing = \"linear\";\n};",
         "type": "dictionary",
         "name": "EffectTiming",
         "inheritance": null,
@@ -763,6 +770,7 @@
         "partial": false
       },
       "OptionalEffectTiming": {
+        "fragment": "dictionary OptionalEffectTiming {\n    double                             delay;\n    double                             endDelay;\n    FillMode                           fill;\n    double                             iterationStart;\n    unrestricted double                iterations;\n    (unrestricted double or DOMString) duration;\n    PlaybackDirection                  direction;\n    DOMString                          easing;\n};",
         "type": "dictionary",
         "name": "OptionalEffectTiming",
         "inheritance": null,
@@ -909,6 +917,7 @@
         "partial": false
       },
       "FillMode": {
+        "fragment": "enum FillMode { \"none\", \"forwards\", \"backwards\", \"both\", \"auto\" };",
         "type": "enum",
         "name": "FillMode",
         "values": [
@@ -936,6 +945,7 @@
         "extAttrs": []
       },
       "PlaybackDirection": {
+        "fragment": "enum PlaybackDirection { \"normal\", \"reverse\", \"alternate\", \"alternate-reverse\" };",
         "type": "enum",
         "name": "PlaybackDirection",
         "values": [
@@ -959,6 +969,7 @@
         "extAttrs": []
       },
       "ComputedEffectTiming": {
+        "fragment": "dictionary ComputedEffectTiming : EffectTiming {\n    unrestricted double  endTime;\n    unrestricted double  activeDuration;\n    double?              localTime;\n    double?              progress;\n    unrestricted double? currentIteration;\n};",
         "type": "dictionary",
         "name": "ComputedEffectTiming",
         "inheritance": "EffectTiming",
@@ -1043,6 +1054,7 @@
         "partial": false
       },
       "KeyframeEffect": {
+        "fragment": "[Exposed=Window,\n Constructor ((Element or CSSPseudoElement)? target,\n              object? keyframes,\n              optional (unrestricted double or KeyframeEffectOptions) options),\n Constructor (KeyframeEffect source)]\ninterface KeyframeEffect : AnimationEffect {\n    attribute (Element or CSSPseudoElement)? target;\n    attribute IterationCompositeOperation    iterationComposite;\n    attribute CompositeOperation             composite;\n    sequence<object> getKeyframes ();\n    void             setKeyframes (object? keyframes);\n};",
         "type": "interface",
         "name": "KeyframeEffect",
         "inheritance": "AnimationEffect",
@@ -1292,6 +1304,7 @@
         "partial": false
       },
       "BaseComputedKeyframe": {
+        "fragment": "dictionary BaseComputedKeyframe {\n     double?                  offset = null;\n     double                   computedOffset;\n     DOMString                easing = \"linear\";\n     CompositeOperationOrAuto composite = \"auto\";\n};",
         "type": "dictionary",
         "name": "BaseComputedKeyframe",
         "inheritance": null,
@@ -1369,6 +1382,7 @@
         "partial": false
       },
       "BasePropertyIndexedKeyframe": {
+        "fragment": "dictionary BasePropertyIndexedKeyframe {\n    (double? or sequence<double?>)                         offset = [];\n    (DOMString or sequence<DOMString>)                     easing = [];\n    (CompositeOperationOrAuto or sequence<CompositeOperationOrAuto>) composite = [];\n};",
         "type": "dictionary",
         "name": "BasePropertyIndexedKeyframe",
         "inheritance": null,
@@ -1510,6 +1524,7 @@
         "partial": false
       },
       "BaseKeyframe": {
+        "fragment": "dictionary BaseKeyframe {\n    double?                  offset = null;\n    DOMString                easing = \"linear\";\n    CompositeOperationOrAuto composite = \"auto\";\n};",
         "type": "dictionary",
         "name": "BaseKeyframe",
         "inheritance": null,
@@ -1572,6 +1587,7 @@
         "partial": false
       },
       "KeyframeEffectOptions": {
+        "fragment": "dictionary KeyframeEffectOptions : EffectTiming {\n    IterationCompositeOperation iterationComposite = \"replace\";\n    CompositeOperation          composite = \"replace\";\n};",
         "type": "dictionary",
         "name": "KeyframeEffectOptions",
         "inheritance": "EffectTiming",
@@ -1617,6 +1633,7 @@
         "partial": false
       },
       "IterationCompositeOperation": {
+        "fragment": "enum IterationCompositeOperation {\"replace\", \"accumulate\"};",
         "type": "enum",
         "name": "IterationCompositeOperation",
         "values": [
@@ -1632,6 +1649,7 @@
         "extAttrs": []
       },
       "CompositeOperation": {
+        "fragment": "enum CompositeOperation {\"replace\", \"add\", \"accumulate\"};",
         "type": "enum",
         "name": "CompositeOperation",
         "values": [
@@ -1651,6 +1669,7 @@
         "extAttrs": []
       },
       "CompositeOperationOrAuto": {
+        "fragment": "enum CompositeOperationOrAuto {\"replace\", \"add\", \"accumulate\", \"auto\"};",
         "type": "enum",
         "name": "CompositeOperationOrAuto",
         "values": [
@@ -1674,6 +1693,7 @@
         "extAttrs": []
       },
       "Animatable": {
+        "fragment": "interface mixin Animatable {\n    Animation           animate (object? keyframes,\n                                 optional (unrestricted double or KeyframeAnimationOptions) options);\n    sequence<Animation> getAnimations ();\n};",
         "type": "interface mixin",
         "name": "Animatable",
         "inheritance": null,
@@ -1772,6 +1792,7 @@
         "partial": false
       },
       "KeyframeAnimationOptions": {
+        "fragment": "dictionary KeyframeAnimationOptions : KeyframeEffectOptions {\n    DOMString id = \"\";\n};",
         "type": "dictionary",
         "name": "KeyframeAnimationOptions",
         "inheritance": "KeyframeEffectOptions",
@@ -1799,6 +1820,7 @@
         "partial": false
       },
       "AnimationPlaybackEvent": {
+        "fragment": "[Exposed=Window,\n Constructor (DOMString type, optional AnimationPlaybackEventInit eventInitDict)]\ninterface AnimationPlaybackEvent : Event {\n    readonly attribute double? currentTime;\n    readonly attribute double? timelineTime;\n};",
         "type": "interface",
         "name": "AnimationPlaybackEvent",
         "inheritance": "Event",
@@ -1887,6 +1909,7 @@
         "partial": false
       },
       "AnimationPlaybackEventInit": {
+        "fragment": "dictionary AnimationPlaybackEventInit : EventInit {\n    double? currentTime = null;\n    double? timelineTime = null;\n};",
         "type": "dictionary",
         "name": "AnimationPlaybackEventInit",
         "inheritance": "EventInit",
@@ -1933,6 +1956,7 @@
     "idlExtendedNames": {
       "Document": [
         {
+          "fragment": "partial interface Document {\n    readonly attribute DocumentTimeline timeline;\n    sequence<Animation> getAnimations();\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -1983,15 +2007,19 @@
       ],
       "Element": [
         {
-          "name": "Element",
-          "type": "interface",
+          "fragment": "Element includes Animatable;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Element",
           "includes": "Animatable"
         }
       ],
       "CSSPseudoElement": [
         {
-          "name": "CSSPseudoElement",
-          "type": "interface",
+          "fragment": "CSSPseudoElement includes Animatable;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "CSSPseudoElement",
           "includes": "Animatable"
         }
       ]

@@ -1,0 +1,14 @@
+{
+  "name": "Body",
+  "defined": {
+    "spec": {
+      "title": "Fetch Standard",
+      "url": "https://fetch.spec.whatwg.org/"
+    },
+    "fragment": "interface mixin Body {\n  readonly attribute ReadableStream? body;\n  readonly attribute boolean bodyUsed;\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n  [NewObject] Promise<Blob> blob();\n  [NewObject] Promise<FormData> formData();\n  [NewObject] Promise<any> json();\n  [NewObject] Promise<USVString> text();\n};",
+    "href": "https://fetch.spec.whatwg.org/#body"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

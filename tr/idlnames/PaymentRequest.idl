@@ -1,0 +1,24 @@
+// Source: Payment Request API (https://www.w3.org/TR/payment-request/)
+[SecureContext, Exposed=Window]
+interface PaymentRequest : EventTarget {
+  constructor(
+    sequence<PaymentMethodData> methodData,
+    PaymentDetailsInit details,
+    optional PaymentOptions options = {}
+  );
+  [NewObject]
+  Promise<PaymentResponse> show(optional Promise<PaymentDetailsUpdate> detailsPromise);
+  [NewObject]
+  Promise<undefined> abort();
+  [NewObject]
+  Promise<boolean> canMakePayment();
+
+  readonly attribute DOMString id;
+  readonly attribute PaymentAddress? shippingAddress;
+  readonly attribute DOMString? shippingOption;
+  readonly attribute PaymentShippingType? shippingType;
+
+  attribute EventHandler onshippingaddresschange;
+  attribute EventHandler onshippingoptionchange;
+  attribute EventHandler onpaymentmethodchange;
+};

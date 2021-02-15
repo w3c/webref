@@ -24,6 +24,7 @@
     },
     "idlNames": {
       "StatelessAnimator": {
+        "fragment": "[Exposed=AnimationWorklet, Global=AnimationWorklet, Constructor (optional any options)]\ninterface StatelessAnimator {\n};",
         "type": "interface",
         "name": "StatelessAnimator",
         "inheritance": null,
@@ -74,6 +75,7 @@
         "partial": false
       },
       "StatefulAnimator": {
+        "fragment": "[Exposed=AnimationWorklet, Global=AnimationWorklet,\nConstructor (optional any options, optional any state)]\ninterface StatefulAnimator {\n  any state();\n};",
         "type": "interface",
         "name": "StatefulAnimator",
         "inheritance": null,
@@ -156,6 +158,7 @@
         "partial": false
       },
       "AnimationWorkletGlobalScope": {
+        "fragment": "[ Exposed=AnimationWorklet, Global=AnimationWorklet ]\ninterface AnimationWorkletGlobalScope : WorkletGlobalScope {\n    void registerAnimator(DOMString name, AnimatorInstanceConstructor animatorCtor);\n};",
         "type": "interface",
         "name": "AnimationWorkletGlobalScope",
         "inheritance": "WorkletGlobalScope",
@@ -232,6 +235,7 @@
         "partial": false
       },
       "AnimatorInstanceConstructor": {
+        "fragment": "callback AnimatorInstanceConstructor = any (any options, optional any state);",
         "type": "callback",
         "name": "AnimatorInstanceConstructor",
         "idlType": {
@@ -279,6 +283,7 @@
         "extAttrs": []
       },
       "WorkletAnimation": {
+        "fragment": "[Exposed=Window,\n Constructor (DOMString animatorName,\n              optional (AnimationEffect or sequence<AnimationEffect>)? effects = null,\n              optional AnimationTimeline? timeline,\n              optional any options)]\ninterface WorkletAnimation : Animation {\n        readonly attribute DOMString animatorName;\n};",
         "type": "interface",
         "name": "WorkletAnimation",
         "inheritance": "Animation",
@@ -412,6 +417,7 @@
         "partial": false
       },
       "WorkletGroupEffect": {
+        "fragment": "[Exposed=AnimationWorklet]\ninterface WorkletGroupEffect {\n  sequence<AnimationEffect> getChildren();\n};",
         "type": "interface",
         "name": "WorkletGroupEffect",
         "inheritance": null,
@@ -458,6 +464,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
+          "fragment": "[Exposed=Window]\npartial namespace CSS {\n    [SameObject] readonly attribute Worklet animationWorklet;\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,
@@ -501,6 +508,7 @@
       ],
       "AnimationEffect": [
         {
+          "fragment": "[Exposed=AnimationWorklet]\npartial interface AnimationEffect {\n    // Intended for use inside Animation Worklet scope to drive the effect.\n    attribute double localTime;\n};",
           "type": "interface",
           "name": "AnimationEffect",
           "inheritance": null,

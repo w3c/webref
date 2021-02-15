@@ -1,0 +1,27 @@
+{
+  "name": "XRViewerPose",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface XRViewerPose : XRPose {\n  [SameObject] readonly attribute FrozenArray<XRView> views;\n};",
+    "href": "https://www.w3.org/TR/webxr/#xrviewerpose"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRPose",
+    "defined": {
+      "spec": {
+        "title": "WebXR Device API",
+        "url": "https://www.w3.org/TR/webxr/"
+      },
+      "fragment": "[SecureContext, Exposed=Window] interface XRPose {\n  [SameObject] readonly attribute XRRigidTransform transform;\n  readonly attribute boolean emulatedPosition;\n};",
+      "href": "https://www.w3.org/TR/webxr/#xrpose"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

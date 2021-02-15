@@ -1,0 +1,13 @@
+{
+  "name": "RTCError",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCError : DOMException {\n  constructor(RTCErrorInit init, optional DOMString message = \"\");\n  readonly attribute RTCErrorDetailType errorDetail;\n  readonly attribute long? sdpLineNumber;\n  readonly attribute long? sctpCauseCode;\n  readonly attribute unsigned long? receivedAlert;\n  readonly attribute unsigned long? sentAlert;\n};",
+    "href": "https://www.w3.org/TR/webrtc/#dom-rtcerror"
+  },
+  "extended": [],
+  "includes": []
+}

@@ -1,0 +1,10 @@
+// Source: DeviceOrientation Event Specification (https://www.w3.org/TR/orientation-event/)
+[Constructor(DOMString type, optional DeviceMotionEventInit eventInitDict), Exposed=Window, SecureContext]
+interface DeviceMotionEvent : Event {
+    readonly attribute DeviceMotionEventAcceleration? acceleration;
+    readonly attribute DeviceMotionEventAcceleration? accelerationIncludingGravity;
+    readonly attribute DeviceMotionEventRotationRate? rotationRate;
+    readonly attribute double interval;
+
+    static Promise<PermissionState> requestPermission();
+};

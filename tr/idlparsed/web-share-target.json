@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "ShareTargetParams": {
+        "fragment": "dictionary ShareTargetParams {\n  USVString title;\n  USVString text;\n  USVString url;\n};",
         "type": "dictionary",
         "name": "ShareTargetParams",
         "inheritance": null,
@@ -64,6 +65,7 @@
         "partial": false
       },
       "ShareTarget": {
+        "fragment": "dictionary ShareTarget {\n  required USVString action;\n  DOMString method = \"GET\";\n  DOMString enctype = \"application/x-www-form-urlencoded\";\n  required ShareTargetParams params;\n};",
         "type": "dictionary",
         "name": "ShareTarget",
         "inheritance": null,
@@ -142,6 +144,7 @@
     "idlExtendedNames": {
       "WebAppManifest": [
         {
+          "fragment": "partial dictionary WebAppManifest {\n  ShareTarget share_target;\n};",
           "type": "dictionary",
           "name": "WebAppManifest",
           "inheritance": null,

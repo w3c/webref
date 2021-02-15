@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "XRSessionMode": {
+        "fragment": "enum XRSessionMode {\n  \"inline\",\n  \"immersive-vr\",\n  \"immersive-ar\"\n};",
         "type": "enum",
         "name": "XRSessionMode",
         "values": [
@@ -29,6 +30,7 @@
         "extAttrs": []
       },
       "XREnvironmentBlendMode": {
+        "fragment": "enum XREnvironmentBlendMode {\n  \"opaque\",\n  \"alpha-blend\",\n  \"additive\"\n};",
         "type": "enum",
         "name": "XREnvironmentBlendMode",
         "values": [
@@ -51,6 +53,7 @@
     "idlExtendedNames": {
       "XRSession": [
         {
+          "fragment": "partial interface XRSession {\n  // Attributes\n  readonly attribute XREnvironmentBlendMode environmentBlendMode;\n};",
           "type": "interface",
           "name": "XRSession",
           "inheritance": null,

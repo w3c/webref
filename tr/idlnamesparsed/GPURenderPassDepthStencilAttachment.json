@@ -1,0 +1,14 @@
+{
+  "name": "GPURenderPassDepthStencilAttachment",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://gpuweb.github.io/gpuweb/"
+    },
+    "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required GPUTextureView view;\n\n    required (GPULoadOp or float) depthLoadValue;\n    required GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    required (GPULoadOp or GPUStencilValue) stencilLoadValue;\n    required GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpassdepthstencilattachment"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

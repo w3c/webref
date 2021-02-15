@@ -1,0 +1,40 @@
+{
+  "name": "FetchEventInit",
+  "defined": {
+    "spec": {
+      "title": "Service Workers 1",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "dictionary FetchEventInit : ExtendableEventInit {\n  required Request request;\n  DOMString clientId = \"\";\n};",
+    "href": "https://www.w3.org/TR/service-workers-1/#dictdef-fetcheventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ExtendableEventInit",
+    "defined": {
+      "spec": {
+        "title": "Service Workers 1",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "dictionary ExtendableEventInit : EventInit {\n  // Defined for the forward compatibility across the derived events\n};",
+      "href": "https://www.w3.org/TR/service-workers-1/#dictdef-extendableeventinit"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventInit",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+        "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

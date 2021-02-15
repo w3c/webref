@@ -20,6 +20,7 @@
     },
     "idlNames": {
       "HIDDeviceFilter": {
+        "fragment": "dictionary HIDDeviceFilter {\n    unsigned long vendorId;\n    unsigned short productId;\n    unsigned short usagePage;\n    unsigned short usage;\n};",
         "type": "dictionary",
         "name": "HIDDeviceFilter",
         "inheritance": null,
@@ -89,6 +90,7 @@
         "partial": false
       },
       "HIDDeviceRequestOptions": {
+        "fragment": "dictionary HIDDeviceRequestOptions {\n    required sequence<HIDDeviceFilter> filters;\n};",
         "type": "dictionary",
         "name": "HIDDeviceRequestOptions",
         "inheritance": null,
@@ -122,6 +124,7 @@
         "partial": false
       },
       "HID": {
+        "fragment": "[\n    Exposed=Window,\n    SecureContext\n]\ninterface HID : EventTarget {\n    attribute EventHandler onconnect;\n    attribute EventHandler ondisconnect;\n    Promise<sequence<HIDDevice>> getDevices();\n    Promise<sequence<HIDDevice>> requestDevice(\n        HIDDeviceRequestOptions options);\n};",
         "type": "interface",
         "name": "HID",
         "inheritance": "EventTarget",
@@ -260,6 +263,7 @@
         "partial": false
       },
       "HIDConnectionEventInit": {
+        "fragment": "dictionary HIDConnectionEventInit : EventInit {\n    required HIDDevice device;\n};",
         "type": "dictionary",
         "name": "HIDConnectionEventInit",
         "inheritance": "EventInit",
@@ -284,6 +288,7 @@
         "partial": false
       },
       "HIDConnectionEvent": {
+        "fragment": "[\n    Exposed=Window,\n    SecureContext\n] interface HIDConnectionEvent : Event {\n    constructor(DOMString type, HIDConnectionEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n};",
         "type": "interface",
         "name": "HIDConnectionEvent",
         "inheritance": "Event",
@@ -369,6 +374,7 @@
         "partial": false
       },
       "HIDInputReportEventInit": {
+        "fragment": "dictionary HIDInputReportEventInit : EventInit {\n    required HIDDevice device;\n    required octet reportId;\n    required DataView data;\n};",
         "type": "dictionary",
         "name": "HIDInputReportEventInit",
         "inheritance": "EventInit",
@@ -423,6 +429,7 @@
         "partial": false
       },
       "HIDInputReportEvent": {
+        "fragment": "[\n    Exposed=Window,\n    SecureContext\n] interface HIDInputReportEvent : Event {\n    constructor(DOMString type, HIDInputReportEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n    readonly attribute octet reportId;\n    readonly attribute DataView data;\n};",
         "type": "interface",
         "name": "HIDInputReportEvent",
         "inheritance": "Event",
@@ -538,6 +545,7 @@
         "partial": false
       },
       "HIDUnitSystem": {
+        "fragment": "enum HIDUnitSystem {\n    \"none\", \"si-linear\", \"si-rotation\", \"english-linear\",\n    \"english-rotation\", \"vendor-defined\", \"reserved\"\n};",
         "type": "enum",
         "name": "HIDUnitSystem",
         "values": [
@@ -573,6 +581,7 @@
         "extAttrs": []
       },
       "HIDReportItem": {
+        "fragment": "dictionary HIDReportItem {\n    boolean isAbsolute;\n    boolean isArray;\n    boolean isBufferedBytes;\n    boolean isConstant;\n    boolean isLinear;\n    boolean isRange;\n    boolean isVolatile;\n    boolean hasNull;\n    boolean hasPreferredState;\n    boolean wrap;\n    sequence<unsigned long> usages;\n    unsigned long usageMinimum;\n    unsigned long usageMaximum;\n    unsigned short reportSize;\n    unsigned short reportCount;\n    byte unitExponent;\n    HIDUnitSystem unitSystem;\n    byte unitFactorLengthExponent;\n    byte unitFactorMassExponent;\n    byte unitFactorTimeExponent;\n    byte unitFactorTemperatureExponent;\n    byte unitFactorCurrentExponent;\n    byte unitFactorLuminousIntensityExponent;\n    long logicalMinimum;\n    long logicalMaximum;\n    long physicalMinimum;\n    long physicalMaximum;\n    sequence<DOMString> strings;\n};",
         "type": "dictionary",
         "name": "HIDReportItem",
         "inheritance": null,
@@ -1020,6 +1029,7 @@
         "partial": false
       },
       "HIDReportInfo": {
+        "fragment": "dictionary HIDReportInfo {\n    octet reportId;\n    sequence<HIDReportItem> items;\n};",
         "type": "dictionary",
         "name": "HIDReportInfo",
         "inheritance": null,
@@ -1068,6 +1078,7 @@
         "partial": false
       },
       "HIDCollectionInfo": {
+        "fragment": "dictionary HIDCollectionInfo {\n    unsigned short usagePage;\n    unsigned short usage;\n    octet type;\n    sequence<HIDCollectionInfo> children;\n    sequence<HIDReportInfo> inputReports;\n    sequence<HIDReportInfo> outputReports;\n    sequence<HIDReportInfo> featureReports;\n};",
         "type": "dictionary",
         "name": "HIDCollectionInfo",
         "inheritance": null,
@@ -1218,6 +1229,7 @@
         "partial": false
       },
       "HIDDevice": {
+        "fragment": "[\n    Exposed=Window,\n    SecureContext\n] interface HIDDevice : EventTarget {\n    attribute EventHandler oninputreport;\n    readonly attribute boolean opened;\n    readonly attribute unsigned short vendorId;\n    readonly attribute unsigned short productId;\n    readonly attribute DOMString productName;\n    readonly attribute FrozenArray<HIDCollectionInfo> collections;\n    Promise<undefined> open();\n    Promise<undefined> close();\n    Promise<undefined> sendReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<undefined> sendFeatureReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<DataView> receiveFeatureReport([EnforceRange] octet reportId);\n};",
         "type": "interface",
         "name": "HIDDevice",
         "inheritance": "EventTarget",
@@ -1569,6 +1581,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "[SecureContext] partial interface Navigator {\n    [SameObject] readonly attribute HID hid;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

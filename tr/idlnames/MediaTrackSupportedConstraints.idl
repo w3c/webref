@@ -1,0 +1,62 @@
+// Source: Media Capture and Streams (https://www.w3.org/TR/mediacapture-streams/)
+dictionary MediaTrackSupportedConstraints {
+  boolean width = true;
+  boolean height = true;
+  boolean aspectRatio = true;
+  boolean frameRate = true;
+  boolean facingMode = true;
+  boolean resizeMode = true;
+  boolean sampleRate = true;
+  boolean sampleSize = true;
+  boolean echoCancellation = true;
+  boolean autoGainControl = true;
+  boolean noiseSuppression = true;
+  boolean latency = true;
+  boolean channelCount = true;
+  boolean deviceId = true;
+  boolean groupId = true;
+};
+
+// Source: "MediaStream Image Capture" (https://www.w3.org/TR/image-capture/)
+partial dictionary MediaTrackSupportedConstraints {
+  boolean whiteBalanceMode = true;
+  boolean exposureMode = true;
+  boolean focusMode = true;
+  boolean pointsOfInterest = true;
+
+  boolean exposureCompensation = true;
+  boolean colorTemperature = true;
+  boolean iso = true;
+
+  boolean brightness = true;
+  boolean contrast = true;
+  boolean saturation = true;
+  boolean sharpness = true;
+  boolean focusDistance = true;
+  boolean zoom = true;
+  boolean torch = true;
+};
+
+// Source: Media Capture Depth Stream Extensions (https://www.w3.org/TR/mediacapture-depth/)
+partial dictionary MediaTrackSupportedConstraints {
+    // Apply to both depth stream track and color stream track:
+    boolean videoKind = true;
+    boolean focalLengthX = false;
+    boolean focalLengthY = false;
+    boolean principalPointX = false;
+    boolean principalPointY = false;
+    boolean deprojectionDistortionCoefficients = false;
+    boolean projectionDistortionCoefficients = false;
+    // Apply to depth stream track:
+    boolean depthNear = false;
+    boolean depthFar = false;
+    boolean depthToVideoTransform = false;
+};
+
+// Source: Screen Capture (https://www.w3.org/TR/screen-capture/)
+partial dictionary MediaTrackSupportedConstraints {
+  boolean displaySurface = true;
+  boolean logicalSurface = true;
+  boolean cursor = true;
+  boolean restrictOwnAudio = true;
+};

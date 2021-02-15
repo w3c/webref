@@ -1,8 +1,8 @@
 % Reffy crawl
 % Reffy
-% February 08, 2021
+% February 15, 2021
 
-381 specifications were crawled in this report.
+383 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
@@ -20,6 +20,8 @@
 - [ECMAScript® 2021 Language Specification](https://tc39.es/ecma262/)
 - [import assertions](https://tc39.es/proposal-import-assertions/)
 - [Input Events Level 2](https://www.w3.org/TR/input-events-2/)
+- [JSON modules](https://tc39.es/proposal-json-modules/)
+- [Private Fields in `in`](https://tc39.es/proposal-private-fields-in-in/)
 - [Private Methods and Accessors Proposal](https://tc39.es/proposal-private-methods/)
 - [Public and private instance fields proposal](https://tc39.es/proposal-class-fields/)
 - [RegExp Match Indices](https://tc39.es/proposal-regexp-match-indices/)
@@ -70,7 +72,7 @@
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - [WebXR Augmented Reality Module - Level 1](https://www.w3.org/TR/webxr-ar-module-1/)
 
-=> 62 specifications found
+=> 64 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -190,6 +192,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `CSSStyleDeclaration` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/), [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - `CSSStyleRule` used in [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - `CSSStyleSheet` used in [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
+- `CryptoKey` used in [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 - `DOMException` used in [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/), [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - `Date` used in [Reporting API](https://www.w3.org/TR/reporting-1/)
 - `ElementCSSInlineStyle` used in [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
@@ -201,7 +204,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [Touch Events](https://www.w3.org/TR/touch-events/)
 - `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/), [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/), [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Spatial Navigation Level 1](https://www.w3.org/TR/css-nav-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/), [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/), [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/), [File API](https://www.w3.org/TR/FileAPI/), [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/), [Generic Sensor API](https://www.w3.org/TR/generic-sensor/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/), [Indexed Database API 2.0](https://www.w3.org/TR/IndexedDB-2/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Media Session Standard](https://www.w3.org/TR/mediasession/), [Media Source Extensions™](https://www.w3.org/TR/media-source/), [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/), [Payment Handler API](https://www.w3.org/TR/payment-handler/), [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/), [Picture-in-Picture](https://www.w3.org/TR/picture-in-picture/), [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/), [Remote Playback API](https://www.w3.org/TR/remote-playback/), [Reporting API](https://www.w3.org/TR/reporting-1/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/), [Service Workers 1](https://www.w3.org/TR/service-workers-1/), [SVG Animations](https://svgwg.org/specs/animations/), [User Timing Level 2](https://www.w3.org/TR/user-timing-2/), [Web Animations](https://www.w3.org/TR/web-animations-1/), [Web Background Synchronization](https://wicg.github.io/background-sync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](https://www.w3.org/TR/webmidi/), [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/), [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1/), [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/), [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/), [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/), [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/), [WebGL OES_draw_buffers_indexed Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/), [WebGL OES_vertex_array_object Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/), [WebGL OVR_multiview2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/), [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/), [WebGL WEBGL_lose_context Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/), [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/), [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/), [WebXR Anchors Module](https://immersive-web.github.io/anchors/), [WebXR Device API](https://www.w3.org/TR/webxr/), [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 
-=> 20 WebIDL names found
+=> 21 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -494,6 +497,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `onchargingtimechange` with type `attribute`
     * `ondischargingtimechange` with type `attribute`
     * `onlevelchange` with type `attribute`
+    * `getBattery()` with type `method`
+- [Beacon](https://www.w3.org/TR/beacon/):
+    * `sendBeacon(url, data)` with type `method`, but found [`sendBeacon`](https://www.w3.org/TR/beacon/#dom-navigator-sendbeacon) with type `dfn`
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/):
     * `IdleRequestOptions` with type `dictionary`, but found [`IdleRequestOptions`](https://www.w3.org/TR/requestidlecallback/#dom-idlerequestoptions) with type `dfn`
     * `timeout` with type `dict-member`, but found [`timeout`](https://www.w3.org/TR/requestidlecallback/#dom-idlerequestoptions-timeout) with type `dfn` for `idlerequestoptions`
@@ -501,11 +507,17 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `timeRemaining()` with type `method`, but found [`timeremaining()`](https://www.w3.org/TR/requestidlecallback/#dom-idledeadline-timeremaining) with type `dfn` for `idledeadline`
     * `didTimeout` with type `attribute`, but found [`didTimeout`](https://www.w3.org/TR/requestidlecallback/#dom-idledeadline-didtimeout) with type `dfn` for `idledeadline`
     * `IdleRequestCallback` with type `callback`, but found [`IdleRequestCallback`](https://www.w3.org/TR/requestidlecallback/#dom-idlerequestcallback) with type `dfn`
+    * `requestIdleCallback(callback, options)` with type `method`, but found [`requestidlecallback()`](https://www.w3.org/TR/requestidlecallback/#dom-window-requestidlecallback) with type `dfn` for `window`
+    * `cancelIdleCallback(handle)` with type `method`, but found [`cancelidlecallback()`](https://www.w3.org/TR/requestidlecallback/#dom-window-cancelidlecallback) with type `dfn` for `window`
 - [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/):
     * `DOMParser` with type `interface`
     * `parseFromString(str, type)` with type `method`
     * `XMLSerializer` with type `interface`
     * `serializeToString(root)` with type `method`
+    * `innerHTML` with type `attribute`
+    * `outerHTML` with type `attribute`
+    * `insertAdjacentHTML(position, text)` with type `method`
+    * `createContextualFragment(fragment)` with type `method`
 - [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/):
     * `MediaKeysRequirement` with type `enum`, but found [`MediaKeysRequirement`](https://www.w3.org/TR/encrypted-media/#dom-mediakeysrequirement) with type `dfn`
     * `"required"` with type `enum-value`, but found [`required`](https://www.w3.org/TR/encrypted-media/#dom-mediakeysrequirement-required) with type `dfn` for `mediakeysrequirement`
@@ -573,6 +585,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `MediaEncryptedEventInit` with type `dictionary`, but found [`MediaEncryptedEventInit`](https://www.w3.org/TR/encrypted-media/#dom-mediaencryptedeventinit) with type `dfn`
     * `initDataType` with type `dict-member`, but found [`initDataType`](https://www.w3.org/TR/encrypted-media/#dom-mediaencryptedevent-initdatatype) with type `dfn` for `mediaencryptedevent`
     * `initData` with type `dict-member`, but found [`initData`](https://www.w3.org/TR/encrypted-media/#dom-mediaencryptedevent-initdata) with type `dfn` for `mediaencryptedevent`
+    * `requestMediaKeySystemAccess(keySystem, supportedConfigurations)` with type `method`, but found [`requestmediakeysystemaccess()`](https://www.w3.org/TR/encrypted-media/#dom-navigator-requestmediakeysystemaccess) with type `dfn` for `navigator`
+    * `mediaKeys` with type `attribute`, but found [`mediaKeys`](https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-mediakeys) with type `dfn` for `htmlmediaelement`
+    * `onencrypted` with type `attribute`, but found [`onencrypted`](https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-onencrypted) with type `dfn` for `htmlmediaelement`
+    * `onwaitingforkey` with type `attribute`, but found [`onwaitingforkey`](https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-onwaitingforkey) with type `dfn` for `htmlmediaelement`
+    * `setMediaKeys(mediaKeys)` with type `method`, but found [`setmediakeys()`](https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-setmediakeys) with type `dfn` for `htmlmediaelement`
 - [File API](https://www.w3.org/TR/FileAPI/):
     * `constructor(blobParts, options)` with type `constructor` for [`Blob`](https://www.w3.org/TR/FileAPI/#dfn-Blob)
     * `constructor(fileBits, fileName, options)` with type `constructor` for [`File`](https://www.w3.org/TR/FileAPI/#dfn-file)
@@ -606,6 +623,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `TIMEOUT` with type `const`, but found [`TIMEOUT`](https://www.w3.org/TR/geolocation-API/#timeout_error) with type `dfn`
     * `code` with type `attribute`, but found [`code`](https://www.w3.org/TR/geolocation-API/#code) with type `dfn`
     * `message` with type `attribute`, but found [`message`](https://www.w3.org/TR/geolocation-API/#message) with type `dfn`
+    * `geolocation` with type `attribute`
+- [HTML Media Capture](https://www.w3.org/TR/html-media-capture/):
+    * `capture` with type `attribute`, but found [`capture`](https://www.w3.org/TR/html-media-capture/#dom-htmlinputelement-capture) with type `dfn` for `htmlinputelement`
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
     * `"loading"` with type `enum-value` for [`DocumentReadyState`](https://html.spec.whatwg.org/multipage/dom.html#documentreadystate), but found [`loading`](https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading) with type `element-attr` for `img`
     * `"interactive"` with type `enum-value` for [`DocumentReadyState`](https://html.spec.whatwg.org/multipage/dom.html#documentreadystate)
@@ -718,9 +738,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `"application/xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`application/xml`](https://html.spec.whatwg.org/multipage/indices.html#application/xml) with type `dfn`
     * `"application/xhtml+xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`application/xhtml+xml`](https://html.spec.whatwg.org/multipage/iana.html#application/xhtml+xml) with type `dfn`
     * `"image/svg+xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`image/svg+xml`](https://html.spec.whatwg.org/multipage/indices.html#image/svg+xml) with type `dfn`
-    * `plugins` with type `attribute` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins), but found [`plugins`](https://html.spec.whatwg.org/multipage/dom.html#dom-document-plugins) with type `attribute` for `Document`
-    * `mimeTypes` with type `attribute` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins)
-    * `javaEnabled()` with type `method` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins)
     * `cancelAnimationFrame(handle)` with type `method` for [`AnimationFrameProvider`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider), but found [`cancelAnimationFrame(handle)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider-cancelanimationframe) with type `dfn`
     * `constructor(type, eventInitDict)` with type `constructor` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `constructor(url, eventSourceInitDict)` with type `constructor` for [`EventSource`](https://html.spec.whatwg.org/multipage/server-sent-events.html#eventsource), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
@@ -745,6 +762,15 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `newValue` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`newValue`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-newvalue) with type `attribute` for `StorageEvent`
     * `url` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`url`](https://html.spec.whatwg.org/multipage/infrastructure.html#basic-url-parser-url) with type `dfn`
     * `storageArea` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`storageArea`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-storagearea) with type `attribute` for `StorageEvent`
+    * `write(...text)` with type `method`
+    * `writeln(...text)` with type `method`
+    * `designMode` with type `attribute`, but found [`designMode`](https://html.spec.whatwg.org/multipage/interaction.html#designMode) with type `dfn`
+    * `execCommand(commandId, showUI, value)` with type `method`, but found [`execCommand()`](https://html.spec.whatwg.org/multipage/interaction.html#execCommand) with type `dfn`
+    * `queryCommandEnabled(commandId)` with type `method`, but found [`queryCommandEnabled()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandenabled) with type `dfn`
+    * `queryCommandIndeterm(commandId)` with type `method`, but found [`queryCommandIndeterm()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandindeterm) with type `dfn`
+    * `queryCommandState(commandId)` with type `method`, but found [`queryCommandState()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandstate) with type `dfn`
+    * `queryCommandSupported(commandId)` with type `method`, but found [`queryCommandSupported()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandsupported) with type `dfn`
+    * `queryCommandValue(commandId)` with type `method`, but found [`queryCommandValue()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandvalue) with type `dfn`
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/mediacapture-depth/):
     * `DistortionCoefficients` with type `dictionary`, but found [`DistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-distortioncoefficients) with type `dfn`
     * `k1` with type `dict-member`, but found [`k1`](https://www.w3.org/TR/mediacapture-depth/#dom-distortioncoefficients-k1) with type `dfn` for `distortioncoefficients`
@@ -758,6 +784,46 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `VideoKindEnum` with type `enum`, but found [`VideoKindEnum`](https://www.w3.org/TR/mediacapture-depth/#dom-videokindenum) with type `dfn`
     * `"color"` with type `enum-value`, but found [`color`](https://www.w3.org/TR/mediacapture-depth/#dom-videokindenum-color) with type `dfn` for `videokindenum`
     * `"depth"` with type `enum-value`, but found [`depth`](https://www.w3.org/TR/mediacapture-depth/#dom-videokindenum-depth) with type `dfn` for `videokindenum`
+    * `videoKind` with type `dict-member`, but found [`videoKind`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-videokind) with type `dfn` for `mediatracksupportedconstraints`
+    * `focalLengthX` with type `dict-member`, but found [`focalLengthX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthx) with type `dfn` for `mediatracksupportedconstraints`
+    * `focalLengthY` with type `dict-member`, but found [`focalLengthY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthy) with type `dfn` for `mediatracksupportedconstraints`
+    * `principalPointX` with type `dict-member`, but found [`principalPointX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointx) with type `dfn` for `mediatracksupportedconstraints`
+    * `principalPointY` with type `dict-member`, but found [`principalPointY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointy) with type `dfn` for `mediatracksupportedconstraints`
+    * `deprojectionDistortionCoefficients` with type `dict-member`, but found [`deprojectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+    * `projectionDistortionCoefficients` with type `dict-member`, but found [`projectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+    * `depthNear` with type `dict-member`, but found [`depthNear`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthnear) with type `dfn` for `mediatracksupportedconstraints`
+    * `depthFar` with type `dict-member`, but found [`depthFar`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthfar) with type `dfn` for `mediatracksupportedconstraints`
+    * `depthToVideoTransform` with type `dict-member`, but found [`depthToVideoTransform`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthtovideotransform) with type `dfn` for `mediatracksupportedconstraints`
+    * `videoKind` with type `dict-member`, but found [`videoKind`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-videokind) with type `dfn` for `mediatracksupportedconstraints`
+    * `focalLengthX` with type `dict-member`, but found [`focalLengthX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthx) with type `dfn` for `mediatracksupportedconstraints`
+    * `focalLengthY` with type `dict-member`, but found [`focalLengthY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthy) with type `dfn` for `mediatracksupportedconstraints`
+    * `principalPointX` with type `dict-member`, but found [`principalPointX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointx) with type `dfn` for `mediatracksupportedconstraints`
+    * `principalPointY` with type `dict-member`, but found [`principalPointY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointy) with type `dfn` for `mediatracksupportedconstraints`
+    * `deprojectionDistortionCoefficients` with type `dict-member`, but found [`deprojectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+    * `projectionDistortionCoefficients` with type `dict-member`, but found [`projectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+    * `depthNear` with type `dict-member`, but found [`depthNear`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthnear) with type `dfn` for `mediatracksupportedconstraints`
+    * `depthFar` with type `dict-member`, but found [`depthFar`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthfar) with type `dfn` for `mediatracksupportedconstraints`
+    * `depthToVideoTransform` with type `dict-member`, but found [`depthToVideoTransform`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthtovideotransform) with type `dfn` for `mediatracksupportedconstraints`
+    * `videoKind` with type `dict-member`, but found [`videoKind`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-videokind) with type `dfn` for `mediatracksupportedconstraints`
+    * `focalLengthX` with type `dict-member`, but found [`focalLengthX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthx) with type `dfn` for `mediatracksupportedconstraints`
+    * `focalLengthY` with type `dict-member`, but found [`focalLengthY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthy) with type `dfn` for `mediatracksupportedconstraints`
+    * `principalPointX` with type `dict-member`, but found [`principalPointX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointx) with type `dfn` for `mediatracksupportedconstraints`
+    * `principalPointY` with type `dict-member`, but found [`principalPointY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointy) with type `dfn` for `mediatracksupportedconstraints`
+    * `deprojectionDistortionCoefficients` with type `dict-member`, but found [`deprojectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+    * `projectionDistortionCoefficients` with type `dict-member`, but found [`projectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+    * `depthNear` with type `dict-member`, but found [`depthNear`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthnear) with type `dfn` for `mediatracksupportedconstraints`
+    * `depthFar` with type `dict-member`, but found [`depthFar`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthfar) with type `dfn` for `mediatracksupportedconstraints`
+    * `depthToVideoTransform` with type `dict-member`, but found [`depthToVideoTransform`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthtovideotransform) with type `dfn` for `mediatracksupportedconstraints`
+    * `videoKind` with type `dict-member`, but found [`videoKind`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-videokind) with type `dfn` for `mediatracksupportedconstraints`
+    * `focalLengthX` with type `dict-member`, but found [`focalLengthX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthx) with type `dfn` for `mediatracksupportedconstraints`
+    * `focalLengthY` with type `dict-member`, but found [`focalLengthY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthy) with type `dfn` for `mediatracksupportedconstraints`
+    * `principalPointX` with type `dict-member`, but found [`principalPointX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointx) with type `dfn` for `mediatracksupportedconstraints`
+    * `principalPointY` with type `dict-member`, but found [`principalPointY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointy) with type `dfn` for `mediatracksupportedconstraints`
+    * `deprojectionDistortionCoefficients` with type `dict-member`, but found [`deprojectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+    * `projectionDistortionCoefficients` with type `dict-member`, but found [`projectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+    * `depthNear` with type `dict-member`, but found [`depthNear`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthnear) with type `dfn` for `mediatracksupportedconstraints`
+    * `depthFar` with type `dict-member`, but found [`depthFar`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthfar) with type `dfn` for `mediatracksupportedconstraints`
+    * `depthToVideoTransform` with type `dict-member`, but found [`depthToVideoTransform`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthtovideotransform) with type `dfn` for `mediatracksupportedconstraints`
 - [Media Source Extensions™](https://www.w3.org/TR/media-source/):
     * `ReadyState` with type `enum`
     * `"closed"` with type `enum-value`, but found [`closed`](https://www.w3.org/TR/media-source/#dom-readystate-closed) with type `dfn` for `readystate`
@@ -805,10 +871,27 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `length` with type `attribute`, but found [`length`](https://www.w3.org/TR/media-source/#dom-sourcebufferlist-length) with type `dfn` for `sourcebufferlist`
     * `onaddsourcebuffer` with type `attribute`, but found [`onaddsourcebuffer`](https://www.w3.org/TR/media-source/#dom-sourcebufferlist-onaddsourcebuffer) with type `dfn` for `sourcebufferlist`
     * `onremovesourcebuffer` with type `attribute`, but found [`onremovesourcebuffer`](https://www.w3.org/TR/media-source/#dom-sourcebufferlist-onremovesourcebuffer) with type `dfn` for `sourcebufferlist`
+    * `createObjectURL(mediaSource)` with type `method`, but found [`createObjectURL`](https://www.w3.org/TR/media-source/#dom-url-createobjecturl) with type `dfn` for `url`
+    * `sourceBuffer` with type `attribute`, but found [`sourceBuffer`](https://www.w3.org/TR/media-source/#dom-audiotrack-sourcebuffer) with type `dfn` for `audiotrack`
+    * `sourceBuffer` with type `attribute`, but found [`sourceBuffer`](https://www.w3.org/TR/media-source/#dom-audiotrack-sourcebuffer) with type `dfn` for `audiotrack`
+    * `sourceBuffer` with type `attribute`, but found [`sourceBuffer`](https://www.w3.org/TR/media-source/#dom-audiotrack-sourcebuffer) with type `dfn` for `audiotrack`
 - [Page Visibility Level 2](https://www.w3.org/TR/page-visibility-2/):
     * `VisibilityState` with type `enum`
     * `"hidden"` with type `enum-value`, but found [`hidden`](https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate-hidden) with type `dfn` for `visibilitystate`
     * `"visible"` with type `enum-value`, but found [`visible`](https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate-visible) with type `dfn` for `visibilitystate`
+    * `hidden` with type `attribute`, but found [`hidden`](https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate-hidden) with type `dfn` for `visibilitystate`
+    * `visibilityState` with type `attribute`, but found [`visibilityState`](https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate) with type `dfn`
+    * `onvisibilitychange` with type `attribute`, but found [`onvisibilitychange`](https://www.w3.org/TR/page-visibility-2/#dom-document-onvisibilitychange) with type `dfn` for `document`
+- [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/):
+    * `requestPointerLock()` with type `method`
+    * `onpointerlockchange` with type `attribute`, but found [`document.onpointerlockchange`](https://www.w3.org/TR/pointerlock-2/#dom-document-onpointerlockchange) with type `attribute` for `document`
+    * `onpointerlockerror` with type `attribute`, but found [`document.onpointerlockerror`](https://www.w3.org/TR/pointerlock-2/#dom-document-onpointerlockerror) with type `attribute` for `document`
+    * `exitPointerLock()` with type `method`
+    * `pointerLockElement` with type `attribute`
+    * `movementX` with type `attribute`, but found [`movementX`](https://www.w3.org/TR/pointerlock-2/#dom-mouseeventinit-movementx) with type `dict-member` for `mouseeventinit`
+    * `movementY` with type `attribute`, but found [`movementY`](https://www.w3.org/TR/pointerlock-2/#dom-mouseeventinit-movementy) with type `dict-member` for `mouseeventinit`
+    * `movementX` with type `dict-member`, but found [`movementX`](https://www.w3.org/TR/pointerlock-2/#dom-mouseeventinit-movementx) with type `dict-member` for `mouseeventinit`
+    * `movementY` with type `dict-member`, but found [`movementY`](https://www.w3.org/TR/pointerlock-2/#dom-mouseeventinit-movementy) with type `dict-member` for `mouseeventinit`
 - [Remote Playback API](https://www.w3.org/TR/remote-playback/):
     * `RemotePlayback` with type `interface`, but found [`RemotePlayback`](https://www.w3.org/TR/remote-playback/#dom-remoteplayback) with type `dfn`
     * `watchAvailability(callback)` with type `method`, but found [`watchAvailability`](https://www.w3.org/TR/remote-playback/#dom-remoteplayback-watchavailability) with type `dfn` for `remoteplayback`
@@ -823,8 +906,13 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `"connected"` with type `enum-value`, but found [`connected`](https://www.w3.org/TR/remote-playback/#dom-remoteplaybackstate-connected) with type `dfn` for `remoteplaybackstate`
     * `"disconnected"` with type `enum-value`, but found [`disconnected`](https://www.w3.org/TR/remote-playback/#dom-remoteplaybackstate-disconnected) with type `dfn` for `remoteplaybackstate`
     * `RemotePlaybackAvailabilityCallback` with type `callback`, but found [`RemotePlaybackAvailabilityCallback`](https://www.w3.org/TR/remote-playback/#dom-remoteplaybackavailabilitycallback) with type `dfn`
+    * `remote` with type `attribute`, but found [`remote`](https://www.w3.org/TR/remote-playback/#dom-htmlmediaelement-remote) with type `dfn` for `htmlmediaelement`
+    * `disableRemotePlayback` with type `attribute`, but found [`disableRemotePlayback`](https://www.w3.org/TR/remote-playback/#dom-htmlmediaelement-disableremoteplayback) with type `dfn` for `htmlmediaelement`
 - [Selection API](https://www.w3.org/TR/selection-api/):
     * `stringification behavior` with type `dfn` for [`Selection`](https://www.w3.org/TR/selection-api/#dom-selection)
+- [Subresource Integrity](https://www.w3.org/TR/SRI/):
+    * `integrity` with type `attribute`
+    * `integrity` with type `attribute`
 - [Touch Events](https://www.w3.org/TR/touch-events/):
     * `Touch` with type `interface`
     * `identifier` with type `attribute`
@@ -846,11 +934,18 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `metaKey` with type `attribute`
     * `ctrlKey` with type `attribute`
     * `shiftKey` with type `attribute`
+    * `createTouch(view, target, identifier, pageX, pageY, screenX, screenY)` with type `method`
+    * `createTouchList(...touches)` with type `method`
 - [User Timing Level 2](https://www.w3.org/TR/user-timing-2/):
     * `PerformanceMark` with type `interface`, but found [`PerformanceMark`](https://www.w3.org/TR/user-timing-2/#dom-performancemark) with type `dfn`
     * `PerformanceMeasure` with type `interface`, but found [`PerformanceMeasure`](https://www.w3.org/TR/user-timing-2/#dom-performancemeasure) with type `dfn`
+    * `mark(markName)` with type `method`, but found [`performance.mark()`](https://www.w3.org/TR/user-timing-2/#dom-performance-mark) with type `dfn` for `performance`
+    * `clearMarks(markName)` with type `method`
+    * `measure(measureName, startMark, endMark)` with type `method`, but found [`performance.measure()`](https://www.w3.org/TR/user-timing-2/#dom-performance-measure) with type `dfn` for `performance`
+    * `clearMeasures(measureName)` with type `method`
 - [Vibration API (Second Edition)](https://www.w3.org/TR/vibration/):
     * `VibratePattern` with type `typedef`
+    * `vibrate(pattern)` with type `method`
 - [Web MIDI API](https://www.w3.org/TR/webmidi/):
     * `MIDIOptions` with type `dictionary`
     * `sysex` with type `dict-member`
@@ -898,6 +993,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `port` with type `attribute`
     * `MIDIConnectionEventInit` with type `dictionary`
     * `port` with type `dict-member`
+    * `requestMIDIAccess(options)` with type `method`, but found [`requestMIDIAccess`](https://www.w3.org/TR/webmidi/#dom-navigator-requestmidiaccess) with type `dfn`
 - [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/):
     * `ANGLE_instanced_arrays` with type `interface`
     * `VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE` with type `const`
@@ -1188,7 +1284,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `multiDrawArraysInstancedBaseInstanceWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
     * `multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
 
-=> 645 properties without definition found in 58 specifications
+=> 734 properties without definition found in 62 specifications
 
 
 ## Possibly no definition for CSS properties
@@ -1258,17 +1354,17 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `setInterval(handler, timeout, ...arguments)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`setInterval()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval) with type `method` for `WindowOrWorkerGlobalScope`
     * `clearInterval(handle)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`clearInterval()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-clearinterval) with type `method` for `WindowOrWorkerGlobalScope`
     * `createImageBitmap(image, sx, sy, sw, sh, options)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`createImageBitmap(image, options)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-createimagebitmap) with type `method` for `WindowOrWorkerGlobalScope`
-    * `refresh(reload)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/system-state.html#pluginarray), but found [`refresh()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-refresh) with type `method` for `PluginArray`
-    * `item(index)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/system-state.html#pluginarray), but found [`item()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-item) with type `method` for `PluginArray`
-    * `namedItem(name)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/system-state.html#pluginarray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-nameditem) with type `method` for `PluginArray`
-    * `item(index)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/system-state.html#mimetypearray), but found [`item()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetypearray-item) with type `method` for `MimeTypeArray`
-    * `namedItem(name)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/system-state.html#mimetypearray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetypearray-nameditem) with type `method` for `MimeTypeArray`
-    * `item(index)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin), but found [`item()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin-item) with type `method` for `Plugin`
-    * `namedItem(name)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin-nameditem) with type `method` for `Plugin`
     * `initMessageEvent(type, bubbles, cancelable, data, origin, lastEventId, source, ports)` with type `method` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`initMessageEvent()`](https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-initmessageevent) with type `method` for `MessageEvent`
     * `importScripts(...urls)` with type `method` for [`WorkerGlobalScope`](https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope), but found [`importScripts(urls)`](https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-importscripts) with type `method` for `WorkerGlobalScope`
     * `key(index)` with type `method` for [`Storage`](https://html.spec.whatwg.org/multipage/webstorage.html#storage-2), but found [`key(n)`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-key) with type `method` for `Storage`
     * `initStorageEvent(type, bubbles, cancelable, key, oldValue, newValue, url, storageArea)` with type `method` for [`StorageEvent`](https://html.spec.whatwg.org/multipage/webstorage.html#storageevent), but found [`initStorageEvent()`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-initstorageevent) with type `method` for `StorageEvent`
+    * `item(index)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/obsolete.html#pluginarray), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-pluginarray-item) with type `method` for `PluginArray`
+    * `namedItem(name)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/obsolete.html#pluginarray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-pluginarray-nameditem) with type `method` for `PluginArray`
+    * `item(index)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-item) with type `method` for `MimeTypeArray`
+    * `namedItem(name)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-nameditem) with type `method` for `MimeTypeArray`
+    * `item(index)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-item) with type `method` for `Plugin`
+    * `namedItem(name)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-nameditem) with type `method` for `Plugin`
+    * `getElementsByName(elementName)` with type `method`, but found [`getElementsByName(name)`](https://html.spec.whatwg.org/multipage/dom.html#dom-document-getelementsbyname) with type `method` for `Document`
 - [Payment Handler API](https://www.w3.org/TR/payment-handler/):
     * `delete(instrumentKey)` with type `method` for [`PaymentInstruments`](https://www.w3.org/TR/payment-handler/#dom-paymentinstruments), but found [`PaymentInstruments.delete()`](https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-delete) with type `method` for `PaymentInstruments`
     * `get(instrumentKey)` with type `method` for [`PaymentInstruments`](https://www.w3.org/TR/payment-handler/#dom-paymentinstruments), but found [`PaymentInstruments.get()`](https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-get) with type `method` for `PaymentInstruments`
@@ -1283,10 +1379,13 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `observe(options)` with type `method` for [`PerformanceObserver`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver), but found [`PerformanceObserver.observe()`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver-observe) with type `method` for `PerformanceObserver`
     * `getEntriesByType(type)` with type `method` for [`PerformanceObserverEntryList`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist), but found [`PerformanceObserverEntryList.getEntriesByType()`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist-getentriesbytype) with type `method` for `PerformanceObserverEntryList`
     * `getEntriesByName(name, type)` with type `method` for [`PerformanceObserverEntryList`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist), but found [`PerformanceObserverEntryList.getEntriesByName()`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist-getentriesbyname) with type `method` for `PerformanceObserverEntryList`
+    * `getEntriesByType(type)` with type `method`, but found [`Performance.getEntriesByType()`](https://www.w3.org/TR/performance-timeline-2/#dom-performance-getentriesbytype) with type `method` for `Performance`
+    * `getEntriesByName(name, type)` with type `method`, but found [`Performance.getEntriesByName()`](https://www.w3.org/TR/performance-timeline-2/#dom-performance-getentriesbyname) with type `method` for `Performance`
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/):
     * `setStreams(...streams)` with type `method` for [`RTCRtpSender`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender), but found [`setStreams()`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-setstreams) with type `method` for `RTCRtpSender`
+    * `addTrack(track, ...streams)` with type `method` for [`RTCPeerConnection`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection), but found [`addTrack()`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-addtrack) with type `method` for `RTCPeerConnection`
 
-=> 79 properties without definition found in 7 specifications
+=> 82 properties without definition found in 7 specifications
 
 
 ## Missing references based on document links
@@ -1409,16 +1508,12 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/) links to:
-    * [`https://www.w3.org/TR/css3-conditional/`](https://www.w3.org/TR/css3-conditional/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
     * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/) but does not list it in its references
     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-inline-3/`](https://www.w3.org/TR/css-inline-3/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-writing-modes-4/`](https://www.w3.org/TR/css-writing-modes-4/) but does not list it in its references
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/) links to:
     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
     * [`https://www.w3.org/TR/css-conditional/`](https://www.w3.org/TR/css-conditional/) but does not list it in its references
@@ -1625,11 +1720,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/) links to:
-    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/2011/CR-css3-multicol-20110412/`](https://www.w3.org/TR/2011/CR-css3-multicol-20110412/) but does not list it in its references
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/) links to:
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
@@ -2096,7 +2188,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/) but does not list it in its references
     * [`https://www.w3.org/TR/wasm-js-api/`](https://www.w3.org/TR/wasm-js-api/) but does not list it in its references
     * [`https://www.w3.org/TR/wasm-web-api/`](https://www.w3.org/TR/wasm-web-api/) but does not list it in its references
-- [WebCodecs](https://wicg.github.io/web-codecs/) links to [`https://w3c.github.io/mediacapture-screen-share/`](https://w3c.github.io/mediacapture-screen-share/) but does not list it in its references
 - [WebDriver](https://www.w3.org/TR/webdriver2/) links to:
     * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
     * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html) but does not list it in its references
@@ -2120,7 +2211,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 706 missing references for links found in 177 specifications
+=> 698 missing references for links found in 176 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -2236,7 +2327,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/) links to [`https://www.w3.org/TR/mediaqueries-4/`](https://www.w3.org/TR/mediaqueries-4/) but related reference "MEDIAQUERIES-4" uses URL [`http://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/`](http://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/)
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/css-overflow-4/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -2500,9 +2591,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-- [WebCodecs](https://wicg.github.io/web-codecs/) links to:
-    * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "MEDIACAPTURE-STREAMS" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
-    * [`https://w3c.github.io/media-capabilities/`](https://w3c.github.io/media-capabilities/) but related reference "MEDIA-CAPABILITIES" uses URL [`https://www.w3.org/TR/media-capabilities/`](https://www.w3.org/TR/media-capabilities/)
+- [WebCodecs](https://wicg.github.io/web-codecs/) links to [`https://w3c.github.io/media-capabilities/`](https://w3c.github.io/media-capabilities/) but related reference "MEDIA-CAPABILITIES" uses URL [`https://www.w3.org/TR/media-capabilities/`](https://www.w3.org/TR/media-capabilities/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/) links to:
     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but related reference "wai-aria-1.2" uses URL [`https://www.w3.org/TR/wai-aria-1.2/`](https://www.w3.org/TR/wai-aria-1.2/)
@@ -2514,6 +2603,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/`](https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/) but related reference "DOM" uses URL [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/)
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
     * [`https://www.w3.org/TR/2011/WD-html5-20110525/`](https://www.w3.org/TR/2011/WD-html5-20110525/) but related reference "HTML5" uses URL [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/) links to:
+    * [`https://w3c.github.io/webcrypto/`](https://w3c.github.io/webcrypto/) but related reference "WebCryptoAPI" uses URL [`https://www.w3.org/TR/WebCryptoAPI/`](https://www.w3.org/TR/WebCryptoAPI/)
+    * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - [WebUSB API](https://wicg.github.io/webusb/) links to:
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/) but related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
@@ -2528,7 +2620,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 320 inconsistent references for links found in 167 specifications
+=> 321 inconsistent references for links found in 168 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -4127,7 +4219,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#missing-value-default`](https://html.spec.whatwg.org/#missing-value-default)
      * [`https://html.spec.whatwg.org/#concept-fe-mutable`](https://html.spec.whatwg.org/#concept-fe-mutable)
      * [`https://html.spec.whatwg.org/#concept-canvas-origin-clean`](https://html.spec.whatwg.org/#concept-canvas-origin-clean)
-     * [`https://html.spec.whatwg.org/#pause`](https://html.spec.whatwg.org/#pause)
      * [`https://html.spec.whatwg.org/#prompt-to-unload-a-document`](https://html.spec.whatwg.org/#prompt-to-unload-a-document)
      * [`https://html.spec.whatwg.org/#concept-textarea-raw-value`](https://html.spec.whatwg.org/#concept-textarea-raw-value)
      * [`https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh`](https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh)
@@ -4212,6 +4303,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#worker-event-loop-2`](https://html.spec.whatwg.org/#worker-event-loop-2)
      * [`https://html.spec.whatwg.org/#session-history`](https://html.spec.whatwg.org/#session-history)
      * [`https://html.spec.whatwg.org/#bcg-remove`](https://html.spec.whatwg.org/#bcg-remove)
+     * [`https://html.spec.whatwg.org/#report-the-error`](https://html.spec.whatwg.org/#report-the-error)
+     * [`https://html.spec.whatwg.org/#concept-error-handled`](https://html.spec.whatwg.org/#concept-error-handled)
 - [WebGPU](https://gpuweb.github.io/gpuweb/):
      * [`https://heycam.github.io/webidl/#operationerror`](https://heycam.github.io/webidl/#operationerror)
      * [`https://heycam.github.io/webidl/#datacloneerror`](https://heycam.github.io/webidl/#datacloneerror)
@@ -4235,6 +4328,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/):
      * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
+     * [`https://w3c.github.io/webcrypto/#dfn-CryptoKey`](https://w3c.github.io/webcrypto/#dfn-CryptoKey)
 - [WebTransport](https://w3c.github.io/webtransport/):
      * [`https://html.spec.whatwg.org/#concept-request-origin`](https://html.spec.whatwg.org/#concept-request-origin)
      * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
@@ -4380,7 +4474,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
      * [`https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over`](https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over)
 
-=> 1622 problematic external links found in 222 specifications
+=> 1624 problematic external links found in 222 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4478,6 +4572,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/):
      * [`https://www.w3.org/TR/compositing-1/#propdef-mix`](https://www.w3.org/TR/compositing-1/#propdef-mix)
+- [CSS Typed OM Level 2](https://drafts.css-houdini.org/css-typed-om-2/):
+     * [`https://drafts.csswg.org/css2/#value-def-identifier`](https://drafts.csswg.org/css2/#value-def-identifier)
+     * [`https://drafts.csswg.org/css2/#value-def-uri`](https://drafts.csswg.org/css2/#value-def-uri)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/):
      * [`https://drafts.csswg.org/css2/#value-def-disc`](https://drafts.csswg.org/css2/#value-def-disc)
      * [`https://drafts.csswg.org/css2/#value-def-circle`](https://drafts.csswg.org/css2/#value-def-circle)
@@ -4913,7 +5010,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
 
-=> 421 problematic external links found in 106 specifications
+=> 423 problematic external links found in 107 specifications
 
 
 ## Broken external links
@@ -5017,6 +5114,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/page-visibility/#dom-document-visibilitystate`](https://www.w3.org/TR/page-visibility/#dom-document-visibilitystate)
 - [Content Security Policy Level 3](https://www.w3.org/TR/CSP3/):
      * [`https://html.spec.whatwg.org/#browsing-context-nested-through`](https://html.spec.whatwg.org/#browsing-context-nested-through)
+     * [`https://fetch.spec.whatwg.org/#network-scheme`](https://fetch.spec.whatwg.org/#network-scheme)
      * [`https://fetch.spec.whatwg.org/#concept-request-target-browsing-context`](https://fetch.spec.whatwg.org/#concept-request-target-browsing-context)
      * [`https://w3c.github.io/reporting/#group`](https://w3c.github.io/reporting/#group)
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/csp-embedded-enforcement/):
@@ -5214,8 +5312,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css3-transitions/#animtype-lpcalc`](https://www.w3.org/TR/css3-transitions/#animtype-lpcalc)
      * [`https://www.w3.org/TR/css3-break/#box-decoration-break`](https://www.w3.org/TR/css3-break/#box-decoration-break)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/):
-     * [`https://www.w3.org/TR/css-display-3/#absolutely-positioned`](https://www.w3.org/TR/css-display-3/#absolutely-positioned)
-     * [`https://www.w3.org/TR/css3-color/#valuea-def-color`](https://www.w3.org/TR/css3-color/#valuea-def-color)
+     * [`https://www.w3.org/TR/css-color-3/#valuea-def-color`](https://www.w3.org/TR/css-color-3/#valuea-def-color)
 - [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/):
      * [`https://drafts.csswg.org/cssom-1/#cssomstring`](https://drafts.csswg.org/cssom-1/#cssomstring)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
@@ -5735,6 +5832,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/html/interactive-elements.html#element-attrdef-dialog-open`](https://w3c.github.io/html/interactive-elements.html#element-attrdef-dialog-open)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
      * [`https://dom.spec.whatwg.org/#dom-element-setAttribute`](https://dom.spec.whatwg.org/#dom-element-setAttribute)
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://drafts.csswg.org/css2/#block-boxes%E2%91%A0`](https://drafts.csswg.org/css2/#block-boxes%E2%91%A0)
      * [`https://drafts.csswg.org/css2/#out-of-flow`](https://drafts.csswg.org/css2/#out-of-flow)
      * [`https://drafts.csswg.org/css2/#in-flow`](https://drafts.csswg.org/css2/#in-flow)
@@ -5955,6 +6053,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value)
+- [JSON modules](https://tc39.es/proposal-json-modules/):
+     * [`https://heycam.github.io/webidl/#synthetic-module-records`](https://heycam.github.io/webidl/#synthetic-module-records)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/):
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://www.w3.org/TR/uievents-code/#code-keyw`](https://www.w3.org/TR/uievents-code/#code-keyw)
@@ -5975,6 +6075,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html):
      * [`https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-navigationpreload`](https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-navigationpreload)
      * [`https://w3c.github.io/ServiceWorker/#dom-fetchevent-preloadresponse`](https://w3c.github.io/ServiceWorker/#dom-fetchevent-preloadresponse)
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://w3c.github.io/network-error-logging/#deliver-a-network-report`](https://w3c.github.io/network-error-logging/#deliver-a-network-report)
      * [`https://heycam.github.io/webidl/#sequence-type`](https://heycam.github.io/webidl/#sequence-type)
 - [Local Font Access API](https://wicg.github.io/local-font-access/):
@@ -6302,6 +6403,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream`](https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream)
      * [`https://fetch.spec.whatwg.org/#potential-navigation-or-subresource-request`](https://fetch.spec.whatwg.org/#potential-navigation-or-subresource-request)
      * [`https://fetch.spec.whatwg.org/#concept-response-https-state`](https://fetch.spec.whatwg.org/#concept-response-https-state)
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://w3c.github.io/push-api/#h-the-push-event`](https://w3c.github.io/push-api/#h-the-push-event)
      * [`https://w3c.github.io/push-api/#dfn-push`](https://w3c.github.io/push-api/#dfn-push)
      * [`https://w3c.github.io/push-api/#dfn-fire-the-push-event`](https://w3c.github.io/push-api/#dfn-fire-the-push-event)
@@ -6556,6 +6658,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebCodecs](https://wicg.github.io/web-codecs/):
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
@@ -6618,6 +6721,8 @@ Links in the body of a specification should be to the same document as that poin
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/):
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
 - [WebTransport](https://w3c.github.io/webtransport/):
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
@@ -6673,12 +6778,13 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1523 problematic external links found in 236 specifications
+=> 1531 problematic external links found in 237 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

@@ -1,0 +1,27 @@
+{
+  "name": "SerialPort",
+  "defined": {
+    "spec": {
+      "title": "Web Serial API",
+      "url": "https://wicg.github.io/serial/"
+    },
+    "fragment": "[Exposed=(DedicatedWorker,Window), SecureContext]\ninterface SerialPort : EventTarget {\n  attribute EventHandler onconnect;\n  attribute EventHandler ondisconnect;\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  SerialPortInfo getInfo();\n\n  Promise<undefined> open(SerialOptions options);\n  Promise<undefined> setSignals(optional SerialOutputSignals signals = {});\n  Promise<SerialInputSignals> getSignals();\n  Promise<undefined> close();\n};",
+    "href": "https://wicg.github.io/serial/#dom-serialport"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

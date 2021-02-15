@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "Touch": {
+        "fragment": "interface Touch {\n    readonly    attribute long        identifier;\n    readonly    attribute EventTarget target;\n    readonly    attribute long        screenX;\n    readonly    attribute long        screenY;\n    readonly    attribute long        clientX;\n    readonly    attribute long        clientY;\n    readonly    attribute long        pageX;\n    readonly    attribute long        pageY;\n};",
         "type": "interface",
         "name": "Touch",
         "inheritance": null,
@@ -139,6 +140,7 @@
         "partial": false
       },
       "TouchList": {
+        "fragment": "interface TouchList {\n    readonly    attribute unsigned long length;\n    getter Touch? item (unsigned long index);\n};",
         "type": "interface",
         "name": "TouchList",
         "inheritance": null,
@@ -195,6 +197,7 @@
         "partial": false
       },
       "TouchEvent": {
+        "fragment": "interface TouchEvent : UIEvent {\n    readonly    attribute TouchList touches;\n    readonly    attribute TouchList targetTouches;\n    readonly    attribute TouchList changedTouches;\n    readonly    attribute boolean   altKey;\n    readonly    attribute boolean   metaKey;\n    readonly    attribute boolean   ctrlKey;\n    readonly    attribute boolean   shiftKey;\n};",
         "type": "interface",
         "name": "TouchEvent",
         "inheritance": "UIEvent",
@@ -312,6 +315,7 @@
     "idlExtendedNames": {
       "Document": [
         {
+          "fragment": "partial interface Document {\n    Touch     createTouch (WindowProxy view, EventTarget target, long identifier, long pageX, long pageY, long screenX, long screenY);\n    TouchList createTouchList (Touch... touches);\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,

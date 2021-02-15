@@ -1,0 +1,26 @@
+// Source: UI Events (https://www.w3.org/TR/uievents/)
+[Constructor(DOMString type, optional MouseEventInit eventInitDict), Exposed=Window]
+interface MouseEvent : UIEvent {
+  readonly attribute long screenX;
+  readonly attribute long screenY;
+  readonly attribute long clientX;
+  readonly attribute long clientY;
+
+  readonly attribute boolean ctrlKey;
+  readonly attribute boolean shiftKey;
+  readonly attribute boolean altKey;
+  readonly attribute boolean metaKey;
+
+  readonly attribute short button;
+  readonly attribute unsigned short buttons;
+
+  readonly attribute EventTarget? relatedTarget;
+
+  boolean getModifierState(DOMString keyArg);
+};
+
+// Source: Pointer Lock 2.0 (https://www.w3.org/TR/pointerlock-2/)
+partial interface MouseEvent {
+  readonly attribute long movementX;
+  readonly attribute long movementY;
+};

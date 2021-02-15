@@ -37,6 +37,7 @@
     },
     "idlNames": {
       "ServiceWorker": {
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorker : EventTarget {\n  readonly attribute USVString scriptURL;\n  readonly attribute ServiceWorkerState state;\n  void postMessage(any message, optional sequence<object> transfer = []);\n\n  // event\n  attribute EventHandler onstatechange;\n};",
         "type": "interface",
         "name": "ServiceWorker",
         "inheritance": "EventTarget",
@@ -174,6 +175,7 @@
         "partial": false
       },
       "ServiceWorkerState": {
+        "fragment": "enum ServiceWorkerState {\n  \"installing\",\n  \"installed\",\n  \"activating\",\n  \"activated\",\n  \"redundant\"\n};",
         "type": "enum",
         "name": "ServiceWorkerState",
         "values": [
@@ -201,6 +203,7 @@
         "extAttrs": []
       },
       "ServiceWorkerRegistration": {
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerRegistration : EventTarget {\n  readonly attribute ServiceWorker? installing;\n  readonly attribute ServiceWorker? waiting;\n  readonly attribute ServiceWorker? active;\n\n  readonly attribute USVString scope;\n  readonly attribute ServiceWorkerUpdateViaCache updateViaCache;\n\n  [NewObject] Promise<void> update();\n  [NewObject] Promise<boolean> unregister();\n\n  // event\n  attribute EventHandler onupdatefound;\n};",
         "type": "interface",
         "name": "ServiceWorkerRegistration",
         "inheritance": "EventTarget",
@@ -385,6 +388,7 @@
         "partial": false
       },
       "ServiceWorkerUpdateViaCache": {
+        "fragment": "enum ServiceWorkerUpdateViaCache {\n  \"imports\",\n  \"all\",\n  \"none\"\n};",
         "type": "enum",
         "name": "ServiceWorkerUpdateViaCache",
         "values": [
@@ -404,6 +408,7 @@
         "extAttrs": []
       },
       "ServiceWorkerContainer": {
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerContainer : EventTarget {\n  readonly attribute ServiceWorker? controller;\n  readonly attribute Promise<ServiceWorkerRegistration> ready;\n\n  [NewObject] Promise<ServiceWorkerRegistration> register(USVString scriptURL, optional RegistrationOptions options = {});\n\n  [NewObject] Promise<any> getRegistration(optional USVString clientURL = \"\");\n  [NewObject] Promise<FrozenArray<ServiceWorkerRegistration>> getRegistrations();\n\n  void startMessages();\n\n\n  // events\n  attribute EventHandler oncontrollerchange;\n  attribute EventHandler onmessage; // event.source of message events is ServiceWorker object\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "ServiceWorkerContainer",
         "inheritance": "EventTarget",
@@ -692,6 +697,7 @@
         "partial": false
       },
       "RegistrationOptions": {
+        "fragment": "dictionary RegistrationOptions {\n  USVString scope;\n  WorkerType type = \"classic\";\n  ServiceWorkerUpdateViaCache updateViaCache = \"imports\";\n};",
         "type": "dictionary",
         "name": "RegistrationOptions",
         "inheritance": null,
@@ -752,6 +758,7 @@
         "partial": false
       },
       "ServiceWorkerGlobalScope": {
+        "fragment": "[Global=(Worker,ServiceWorker), Exposed=ServiceWorker]\ninterface ServiceWorkerGlobalScope : WorkerGlobalScope {\n  [SameObject] readonly attribute Clients clients;\n  [SameObject] readonly attribute ServiceWorkerRegistration registration;\n\n  [NewObject] Promise<void> skipWaiting();\n\n  attribute EventHandler oninstall;\n  attribute EventHandler onactivate;\n  attribute EventHandler onfetch;\n\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "ServiceWorkerGlobalScope",
         "inheritance": "WorkerGlobalScope",
@@ -937,6 +944,7 @@
         "partial": false
       },
       "Client": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface Client {\n  readonly attribute USVString url;\n  readonly attribute FrameType frameType;\n  readonly attribute DOMString id;\n  readonly attribute ClientType type;\n  void postMessage(any message, optional sequence<object> transfer = []);\n};",
         "type": "interface",
         "name": "Client",
         "inheritance": null,
@@ -1076,6 +1084,7 @@
         "partial": false
       },
       "WindowClient": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface WindowClient : Client {\n  readonly attribute VisibilityState visibilityState;\n  readonly attribute boolean focused;\n  [SameObject] readonly attribute FrozenArray<USVString> ancestorOrigins;\n  [NewObject] Promise<WindowClient> focus();\n  [NewObject] Promise<WindowClient?> navigate(USVString url);\n};",
         "type": "interface",
         "name": "WindowClient",
         "inheritance": "Client",
@@ -1235,6 +1244,7 @@
         "partial": false
       },
       "FrameType": {
+        "fragment": "enum FrameType {\n  \"auxiliary\",\n  \"top-level\",\n  \"nested\",\n  \"none\"\n};",
         "type": "enum",
         "name": "FrameType",
         "values": [
@@ -1258,6 +1268,7 @@
         "extAttrs": []
       },
       "Clients": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface Clients {\n  // The objects returned will be new instances every time\n  [NewObject] Promise<any> get(DOMString id);\n  [NewObject] Promise<FrozenArray<Client>> matchAll(optional ClientQueryOptions options = {});\n  [NewObject] Promise<WindowClient?> openWindow(USVString url);\n  [NewObject] Promise<void> claim();\n};",
         "type": "interface",
         "name": "Clients",
         "inheritance": null,
@@ -1463,6 +1474,7 @@
         "partial": false
       },
       "ClientQueryOptions": {
+        "fragment": "dictionary ClientQueryOptions {\n  boolean includeUncontrolled = false;\n  ClientType type = \"window\";\n};",
         "type": "dictionary",
         "name": "ClientQueryOptions",
         "inheritance": null,
@@ -1508,6 +1520,7 @@
         "partial": false
       },
       "ClientType": {
+        "fragment": "enum ClientType {\n  \"window\",\n  \"worker\",\n  \"sharedworker\",\n  \"all\"\n};",
         "type": "enum",
         "name": "ClientType",
         "values": [
@@ -1531,6 +1544,7 @@
         "extAttrs": []
       },
       "ExtendableEvent": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface ExtendableEvent : Event {\n  constructor(DOMString type, optional ExtendableEventInit eventInitDict = {});\n  void waitUntil(Promise<any> f);\n};",
         "type": "interface",
         "name": "ExtendableEvent",
         "inheritance": "Event",
@@ -1631,6 +1645,7 @@
         "partial": false
       },
       "ExtendableEventInit": {
+        "fragment": "dictionary ExtendableEventInit : EventInit {\n  // Defined for the forward compatibility across the derived events\n};",
         "type": "dictionary",
         "name": "ExtendableEventInit",
         "inheritance": "EventInit",
@@ -1639,6 +1654,7 @@
         "partial": false
       },
       "FetchEvent": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface FetchEvent : ExtendableEvent {\n  constructor(DOMString type, FetchEventInit eventInitDict);\n  [SameObject] readonly attribute Request request;\n  readonly attribute DOMString clientId;\n\n  void respondWith(Promise<Response> r);\n};",
         "type": "interface",
         "name": "FetchEvent",
         "inheritance": "ExtendableEvent",
@@ -1774,6 +1790,7 @@
         "partial": false
       },
       "FetchEventInit": {
+        "fragment": "dictionary FetchEventInit : ExtendableEventInit {\n  required Request request;\n  DOMString clientId = \"\";\n};",
         "type": "dictionary",
         "name": "FetchEventInit",
         "inheritance": "ExtendableEventInit",
@@ -1816,6 +1833,7 @@
         "partial": false
       },
       "ExtendableMessageEvent": {
+        "fragment": "[Exposed=ServiceWorker]\ninterface ExtendableMessageEvent : ExtendableEvent {\n  constructor(DOMString type, optional ExtendableMessageEventInit eventInitDict = {});\n  readonly attribute any data;\n  readonly attribute USVString origin;\n  readonly attribute DOMString lastEventId;\n  [SameObject] readonly attribute (Client or ServiceWorker or MessagePort)? source;\n  readonly attribute FrozenArray<MessagePort> ports;\n};",
         "type": "interface",
         "name": "ExtendableMessageEvent",
         "inheritance": "ExtendableEvent",
@@ -1991,6 +2009,7 @@
         "partial": false
       },
       "ExtendableMessageEventInit": {
+        "fragment": "dictionary ExtendableMessageEventInit : ExtendableEventInit {\n  any data = null;\n  USVString origin = \"\";\n  DOMString lastEventId = \"\";\n  (Client or ServiceWorker or MessagePort)? source = null;\n  sequence<MessagePort> ports = [];\n};",
         "type": "dictionary",
         "name": "ExtendableMessageEventInit",
         "inheritance": "ExtendableEventInit",
@@ -2122,6 +2141,7 @@
         "partial": false
       },
       "Cache": {
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface Cache {\n  [NewObject] Promise<any> match(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Response>> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<void> add(RequestInfo request);\n  [NewObject] Promise<void> addAll(sequence<RequestInfo> requests);\n  [NewObject] Promise<void> put(RequestInfo request, Response response);\n  [NewObject] Promise<boolean> delete(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Request>> keys(optional RequestInfo request, optional CacheQueryOptions options = {});\n};",
         "type": "interface",
         "name": "Cache",
         "inheritance": null,
@@ -2605,6 +2625,7 @@
         "partial": false
       },
       "CacheQueryOptions": {
+        "fragment": "dictionary CacheQueryOptions {\n  boolean ignoreSearch = false;\n  boolean ignoreMethod = false;\n  boolean ignoreVary = false;\n};",
         "type": "dictionary",
         "name": "CacheQueryOptions",
         "inheritance": null,
@@ -2668,6 +2689,7 @@
         "partial": false
       },
       "CacheStorage": {
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface CacheStorage {\n  [NewObject] Promise<any> match(RequestInfo request, optional MultiCacheQueryOptions options = {});\n  [NewObject] Promise<boolean> has(DOMString cacheName);\n  [NewObject] Promise<Cache> open(DOMString cacheName);\n  [NewObject] Promise<boolean> delete(DOMString cacheName);\n  [NewObject] Promise<sequence<DOMString>> keys();\n};",
         "type": "interface",
         "name": "CacheStorage",
         "inheritance": null,
@@ -2950,6 +2972,7 @@
         "partial": false
       },
       "MultiCacheQueryOptions": {
+        "fragment": "dictionary MultiCacheQueryOptions : CacheQueryOptions {\n  DOMString cacheName;\n};",
         "type": "dictionary",
         "name": "MultiCacheQueryOptions",
         "inheritance": "CacheQueryOptions",
@@ -2977,13 +3000,16 @@
     "idlExtendedNames": {
       "ServiceWorker": [
         {
-          "name": "ServiceWorker",
-          "type": "interface",
+          "fragment": "ServiceWorker includes AbstractWorker;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "ServiceWorker",
           "includes": "AbstractWorker"
         }
       ],
       "Navigator": [
         {
+          "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -3023,6 +3049,7 @@
       ],
       "WorkerNavigator": [
         {
+          "fragment": "partial interface WorkerNavigator {\n  [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;\n};",
           "type": "interface",
           "name": "WorkerNavigator",
           "inheritance": null,
@@ -3062,6 +3089,7 @@
       ],
       "WindowOrWorkerGlobalScope": [
         {
+          "fragment": "partial interface WindowOrWorkerGlobalScope {\n  [SecureContext, SameObject] readonly attribute CacheStorage caches;\n};",
           "type": "interface",
           "name": "WindowOrWorkerGlobalScope",
           "inheritance": null,

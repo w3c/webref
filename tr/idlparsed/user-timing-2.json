@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "PerformanceMark": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceMark : PerformanceEntry {\n};",
         "type": "interface",
         "name": "PerformanceMark",
         "inheritance": "PerformanceEntry",
@@ -44,6 +45,7 @@
         "partial": false
       },
       "PerformanceMeasure": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceMeasure : PerformanceEntry {\n};",
         "type": "interface",
         "name": "PerformanceMeasure",
         "inheritance": "PerformanceEntry",
@@ -72,6 +74,7 @@
     "idlExtendedNames": {
       "Performance": [
         {
+          "fragment": "partial interface Performance {\n    void mark(DOMString markName);\n    void clearMarks(optional DOMString markName);\n    void measure(DOMString measureName, optional DOMString startMark, optional DOMString endMark);\n    void clearMeasures(optional DOMString measureName);\n};",
           "type": "interface",
           "name": "Performance",
           "inheritance": null,

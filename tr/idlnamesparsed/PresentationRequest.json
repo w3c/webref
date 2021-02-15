@@ -1,0 +1,27 @@
+{
+  "name": "PresentationRequest",
+  "defined": {
+    "spec": {
+      "title": "Presentation API",
+      "url": "https://www.w3.org/TR/presentation-api/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface PresentationRequest : EventTarget {\n  constructor(USVString url);\n  constructor(sequence<USVString> urls);\n  Promise<PresentationConnection> start();\n  Promise<PresentationConnection> reconnect(USVString presentationId);\n  Promise<PresentationAvailability> getAvailability();\n\n  attribute EventHandler onconnectionavailable;\n};",
+    "href": "https://www.w3.org/TR/presentation-api/#dom-presentationrequest"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

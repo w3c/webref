@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 08, 2021
+% February 15, 2021
 
 ## "MediaStream Image Capture" {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -319,7 +319,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
-- Crawled version: 15 January 2021
+- Crawled version: 14 February 2021
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -543,6 +543,7 @@ No informative reference to this spec from other specs.
      * `onchargingtimechange` with type `attribute`
      * `ondischargingtimechange` with type `attribute`
      * `onlevelchange` with type `attribute`
+     * `getBattery()` with type `method`
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
@@ -569,6 +570,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No definition for IDL properties: 
+     * `sendBeacon(url, data)` with type `method`, but found [`sendBeacon`](https://www.w3.org/TR/beacon/#dom-navigator-sendbeacon) with type `dfn`
 - Missing references for links: 
      * [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/)
 - Inconsistent references for links: 
@@ -647,11 +650,13 @@ Normative references to this spec from:
 - [CSS Images Module Level 3](https://www.w3.org/TR/css-images-3/)
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
+- [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
 - [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/)
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/css-scroll-anchoring-1/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/)
+- [CSS Typed OM Level 2](https://drafts.css-houdini.org/css-typed-om-2/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
@@ -877,7 +882,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Crawled URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Shortname: client-hints-infrastructure
 
@@ -896,10 +901,9 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Network Information API](https://wicg.github.io/netinfo/)
-
-Informative references to this spec from:
-
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
+
+No informative reference to this spec from other specs.
 
 
 ## Clipboard API and events {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -1121,6 +1125,7 @@ Normative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Import Maps](https://wicg.github.io/import-maps/)
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 
 No informative reference to this spec from other specs.
 
@@ -1266,6 +1271,7 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#case-sensitive`](https://html.spec.whatwg.org/#case-sensitive)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#browsing-context-nested-through`](https://html.spec.whatwg.org/#browsing-context-nested-through)
+     * [`https://fetch.spec.whatwg.org/#network-scheme`](https://fetch.spec.whatwg.org/#network-scheme)
      * [`https://fetch.spec.whatwg.org/#concept-request-target-browsing-context`](https://fetch.spec.whatwg.org/#concept-request-target-browsing-context)
      * [`https://w3c.github.io/reporting/#group`](https://w3c.github.io/reporting/#group)
 - External links to outdated specs:
@@ -1417,6 +1423,8 @@ No informative reference to this spec from other specs.
      * `timeRemaining()` with type `method`, but found [`timeremaining()`](https://www.w3.org/TR/requestidlecallback/#dom-idledeadline-timeremaining) with type `dfn` for `idledeadline`
      * `didTimeout` with type `attribute`, but found [`didTimeout`](https://www.w3.org/TR/requestidlecallback/#dom-idledeadline-didtimeout) with type `dfn` for `idledeadline`
      * `IdleRequestCallback` with type `callback`, but found [`IdleRequestCallback`](https://www.w3.org/TR/requestidlecallback/#dom-idlerequestcallback) with type `dfn`
+     * `requestIdleCallback(callback, options)` with type `method`, but found [`requestidlecallback()`](https://www.w3.org/TR/requestidlecallback/#dom-window-requestidlecallback) with type `dfn` for `window`
+     * `cancelIdleCallback(handle)` with type `method`, but found [`cancelidlecallback()`](https://www.w3.org/TR/requestidlecallback/#dom-window-cancelidlecallback) with type `dfn` for `window`
 - External links to private terms:
      * [`https://heycam.github.io/webidl/#dfn-conforming-implementation`](https://heycam.github.io/webidl/#dfn-conforming-implementation)
      * [`https://www.w3.org/TR/page-visibility/#dom-document-hidden`](https://www.w3.org/TR/page-visibility/#dom-document-hidden)
@@ -1891,7 +1899,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
 - Crawled URL: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
-- Crawled version: 10 March 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
 - Shortname: css-backgrounds-4
 
@@ -2191,6 +2199,7 @@ Normative references to this spec from:
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
+- [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)
@@ -2212,7 +2221,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 5](https://www.w3.org/TR/css-cascade-5/)
 - [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
-- [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
 
 
 ## CSS Box Sizing Module Level 4 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -2253,7 +2261,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-cascade-3/](https://www.w3.org/TR/css-cascade-3/)
 - Crawled URL: [https://www.w3.org/TR/css-cascade-3/](https://www.w3.org/TR/css-cascade-3/)
-- Crawled version: 22 December 2020
+- Crawled version: 11 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-cascade-3/](https://drafts.csswg.org/css-cascade-3/)
 - Latest published version: [https://www.w3.org/TR/css-cascade-3/](https://www.w3.org/TR/css-cascade-3/)
 - Shortname: css-cascade-3
@@ -2261,16 +2269,12 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://www.w3.org/TR/css3-conditional/`](https://www.w3.org/TR/css3-conditional/)
      * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/)
      * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
      * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/)
-     * [`https://www.w3.org/TR/css-inline-3/`](https://www.w3.org/TR/css-inline-3/)
-     * [`https://www.w3.org/TR/css-writing-modes-4/`](https://www.w3.org/TR/css-writing-modes-4/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -3614,6 +3618,7 @@ Normative references to this spec from:
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
+- [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 
 Informative references to this spec from:
@@ -3628,7 +3633,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
 - Crawled URL: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
-- Crawled version: 22 October 2020
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
 - Shortname: css-grid-3
 
@@ -3802,7 +3807,9 @@ Normative references to this spec from:
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 
 
 ## CSS Layout API Level 1 {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -4114,7 +4121,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
 - Crawled URL: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
-- Crawled version: 15 October 2019
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-multicol/](https://drafts.csswg.org/css-multicol/)
 - Latest published version: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
 - Shortname: css-multicol-1
@@ -4122,17 +4129,13 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
-     * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
-     * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/)
-     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
-     * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/)
+     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
      * [`https://www.w3.org/TR/2011/CR-css3-multicol-20110412/`](https://www.w3.org/TR/2011/CR-css3-multicol-20110412/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - Broken external links:
-     * [`https://www.w3.org/TR/css-display-3/#absolutely-positioned`](https://www.w3.org/TR/css-display-3/#absolutely-positioned)
-     * [`https://www.w3.org/TR/css3-color/#valuea-def-color`](https://www.w3.org/TR/css3-color/#valuea-def-color)
+     * [`https://www.w3.org/TR/css-color-3/#valuea-def-color`](https://www.w3.org/TR/css-color-3/#valuea-def-color)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2011/CR-css3-multicol-20110412/`](https://www.w3.org/TR/2011/CR-css3-multicol-20110412/)
 
@@ -6119,19 +6122,21 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Typed OM Level 2 {data-spec=true data-missingDfns=true data-ok=true}
+## CSS Typed OM Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://drafts.css-houdini.org/css-typed-om-2/](https://drafts.css-houdini.org/css-typed-om-2/)
 - Crawled URL: [https://drafts.css-houdini.org/css-typed-om-2/](https://drafts.css-houdini.org/css-typed-om-2/)
-- Crawled version: 10 May 2018
+- Crawled version: 8 February 2021
 - Editor's Draft: [https://drafts.css-houdini.org/css-typed-om-2/](https://drafts.css-houdini.org/css-typed-om-2/)
 - Shortname: css-typed-om-2
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- External links that neither target definitions nor headings:
+     * [`https://drafts.csswg.org/css2/#value-def-identifier`](https://drafts.csswg.org/css2/#value-def-identifier)
+     * [`https://drafts.csswg.org/css2/#value-def-uri`](https://drafts.csswg.org/css2/#value-def-uri)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6255,6 +6260,7 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
+- [CSS Typed OM Level 2](https://drafts.css-houdini.org/css-typed-om-2/)
 - [CSS Will Change Module Level 1](https://www.w3.org/TR/css-will-change-1/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
@@ -6516,7 +6522,9 @@ Normative references to this spec from:
 - [Web Animations](https://www.w3.org/TR/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [CSS Cascading and Inheritance Level 3](https://www.w3.org/TR/css-cascade-3/)
 
 
 ## CSSOM View Module {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
@@ -6773,6 +6781,10 @@ Informative references to this spec from:
      * `parseFromString(str, type)` with type `method`
      * `XMLSerializer` with type `interface`
      * `serializeToString(root)` with type `method`
+     * `innerHTML` with type `attribute`
+     * `outerHTML` with type `attribute`
+     * `insertAdjacentHTML(position, text)` with type `method`
+     * `createContextualFragment(fragment)` with type `method`
 - Missing references for links: 
      * [`https://domparsing.spec.whatwg.org/`](https://domparsing.spec.whatwg.org/)
 - Broken external links:
@@ -7053,7 +7065,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
 - Crawled URL: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
-- Crawled version: 14 January 2021
+- Crawled version: 11 February 2021
 - Editor's Draft: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
 - Shortname: ecma-402
 
@@ -7078,7 +7090,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
 - Crawled URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
-- Crawled version: 6 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
 - Shortname: ecmascript
 
@@ -7335,6 +7347,11 @@ No informative reference to this spec from other specs.
      * `MediaEncryptedEventInit` with type `dictionary`, but found [`MediaEncryptedEventInit`](https://www.w3.org/TR/encrypted-media/#dom-mediaencryptedeventinit) with type `dfn`
      * `initDataType` with type `dict-member`, but found [`initDataType`](https://www.w3.org/TR/encrypted-media/#dom-mediaencryptedevent-initdatatype) with type `dfn` for `mediaencryptedevent`
      * `initData` with type `dict-member`, but found [`initData`](https://www.w3.org/TR/encrypted-media/#dom-mediaencryptedevent-initdata) with type `dfn` for `mediaencryptedevent`
+     * `requestMediaKeySystemAccess(keySystem, supportedConfigurations)` with type `method`, but found [`requestmediakeysystemaccess()`](https://www.w3.org/TR/encrypted-media/#dom-navigator-requestmediakeysystemaccess) with type `dfn` for `navigator`
+     * `mediaKeys` with type `attribute`, but found [`mediaKeys`](https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-mediakeys) with type `dfn` for `htmlmediaelement`
+     * `onencrypted` with type `attribute`, but found [`onencrypted`](https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-onencrypted) with type `dfn` for `htmlmediaelement`
+     * `onwaitingforkey` with type `attribute`, but found [`onwaitingforkey`](https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-onwaitingforkey) with type `dfn` for `htmlmediaelement`
+     * `setMediaKeys(mediaKeys)` with type `method`, but found [`setmediakeys()`](https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-setmediakeys) with type `dfn` for `htmlmediaelement`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://www.w3.org/TR/2015/REC-dom-20151119/`](https://www.w3.org/TR/2015/REC-dom-20151119/)
      * [`https://www.w3.org/TR/encoding/`](https://www.w3.org/TR/encoding/), related reference "ENCODING" uses URL [`https://www.w3.org/TR/2017/CR-encoding-20170413/`](https://www.w3.org/TR/2017/CR-encoding-20170413/)
@@ -7440,7 +7457,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 4 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -7663,6 +7680,7 @@ Normative references to this spec from:
 - [Web Share API](https://www.w3.org/TR/web-share/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
+- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -8092,6 +8110,7 @@ Informative references to this spec from:
      * `TIMEOUT` with type `const`, but found [`TIMEOUT`](https://www.w3.org/TR/geolocation-API/#timeout_error) with type `dfn`
      * `code` with type `attribute`, but found [`code`](https://www.w3.org/TR/geolocation-API/#code) with type `dfn`
      * `message` with type `attribute`, but found [`message`](https://www.w3.org/TR/geolocation-API/#message) with type `dfn`
+     * `geolocation` with type `attribute`
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/)
      * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/)
@@ -8610,6 +8629,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- No definition for IDL properties: 
+     * `capture` with type `attribute`, but found [`capture`](https://www.w3.org/TR/html-media-capture/#dom-htmlinputelement-capture) with type `dfn` for `htmlinputelement`
 - External links that neither target definitions nor headings:
      * [`https://www.w3.org/TR/mediacapture-streams/#def-constraint-facingMode`](https://www.w3.org/TR/mediacapture-streams/#def-constraint-facingMode)
 - External links to outdated specs:
@@ -8631,7 +8652,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 5 February 2021
+- Crawled version: 11 February 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -8755,9 +8776,6 @@ No informative reference to this spec from other specs.
      * `"application/xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`application/xml`](https://html.spec.whatwg.org/multipage/indices.html#application/xml) with type `dfn`
      * `"application/xhtml+xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`application/xhtml+xml`](https://html.spec.whatwg.org/multipage/iana.html#application/xhtml+xml) with type `dfn`
      * `"image/svg+xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`image/svg+xml`](https://html.spec.whatwg.org/multipage/indices.html#image/svg+xml) with type `dfn`
-     * `plugins` with type `attribute` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins), but found [`plugins`](https://html.spec.whatwg.org/multipage/dom.html#dom-document-plugins) with type `attribute` for `Document`
-     * `mimeTypes` with type `attribute` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins)
-     * `javaEnabled()` with type `method` for [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins)
      * `cancelAnimationFrame(handle)` with type `method` for [`AnimationFrameProvider`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider), but found [`cancelAnimationFrame(handle)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider-cancelanimationframe) with type `dfn`
      * `constructor(type, eventInitDict)` with type `constructor` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
      * `constructor(url, eventSourceInitDict)` with type `constructor` for [`EventSource`](https://html.spec.whatwg.org/multipage/server-sent-events.html#eventsource), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
@@ -8782,6 +8800,15 @@ No informative reference to this spec from other specs.
      * `newValue` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`newValue`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-newvalue) with type `attribute` for `StorageEvent`
      * `url` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`url`](https://html.spec.whatwg.org/multipage/infrastructure.html#basic-url-parser-url) with type `dfn`
      * `storageArea` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`storageArea`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-storagearea) with type `attribute` for `StorageEvent`
+     * `write(...text)` with type `method`
+     * `writeln(...text)` with type `method`
+     * `designMode` with type `attribute`, but found [`designMode`](https://html.spec.whatwg.org/multipage/interaction.html#designMode) with type `dfn`
+     * `execCommand(commandId, showUI, value)` with type `method`, but found [`execCommand()`](https://html.spec.whatwg.org/multipage/interaction.html#execCommand) with type `dfn`
+     * `queryCommandEnabled(commandId)` with type `method`, but found [`queryCommandEnabled()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandenabled) with type `dfn`
+     * `queryCommandIndeterm(commandId)` with type `method`, but found [`queryCommandIndeterm()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandindeterm) with type `dfn`
+     * `queryCommandState(commandId)` with type `method`, but found [`queryCommandState()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandstate) with type `dfn`
+     * `queryCommandSupported(commandId)` with type `method`, but found [`queryCommandSupported()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandsupported) with type `dfn`
+     * `queryCommandValue(commandId)` with type `method`, but found [`queryCommandValue()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandvalue) with type `dfn`
 - Possibly no definition for IDL properties: 
      * `setCustomValidity(error)` with type `method` for [`HTMLObjectElement`](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmlobjectelement), but found [`setCustomValidity(message)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity) with type `method` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
      * `fastSeek(time)` with type `method` for [`HTMLMediaElement`](https://html.spec.whatwg.org/multipage/media.html#htmlmediaelement), but found [`fastSeek()`](https://html.spec.whatwg.org/multipage/media.html#dom-media-fastseek) with type `method` for `HTMLMediaElement`
@@ -8830,17 +8857,17 @@ No informative reference to this spec from other specs.
      * `setInterval(handler, timeout, ...arguments)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`setInterval()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval) with type `method` for `WindowOrWorkerGlobalScope`
      * `clearInterval(handle)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`clearInterval()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-clearinterval) with type `method` for `WindowOrWorkerGlobalScope`
      * `createImageBitmap(image, sx, sy, sw, sh, options)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`createImageBitmap(image, options)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-createimagebitmap) with type `method` for `WindowOrWorkerGlobalScope`
-     * `refresh(reload)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/system-state.html#pluginarray), but found [`refresh()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-refresh) with type `method` for `PluginArray`
-     * `item(index)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/system-state.html#pluginarray), but found [`item()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-item) with type `method` for `PluginArray`
-     * `namedItem(name)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/system-state.html#pluginarray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-nameditem) with type `method` for `PluginArray`
-     * `item(index)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/system-state.html#mimetypearray), but found [`item()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetypearray-item) with type `method` for `MimeTypeArray`
-     * `namedItem(name)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/system-state.html#mimetypearray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetypearray-nameditem) with type `method` for `MimeTypeArray`
-     * `item(index)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin), but found [`item()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin-item) with type `method` for `Plugin`
-     * `namedItem(name)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin-nameditem) with type `method` for `Plugin`
      * `initMessageEvent(type, bubbles, cancelable, data, origin, lastEventId, source, ports)` with type `method` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`initMessageEvent()`](https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-initmessageevent) with type `method` for `MessageEvent`
      * `importScripts(...urls)` with type `method` for [`WorkerGlobalScope`](https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope), but found [`importScripts(urls)`](https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-importscripts) with type `method` for `WorkerGlobalScope`
      * `key(index)` with type `method` for [`Storage`](https://html.spec.whatwg.org/multipage/webstorage.html#storage-2), but found [`key(n)`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-key) with type `method` for `Storage`
      * `initStorageEvent(type, bubbles, cancelable, key, oldValue, newValue, url, storageArea)` with type `method` for [`StorageEvent`](https://html.spec.whatwg.org/multipage/webstorage.html#storageevent), but found [`initStorageEvent()`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-initstorageevent) with type `method` for `StorageEvent`
+     * `item(index)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/obsolete.html#pluginarray), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-pluginarray-item) with type `method` for `PluginArray`
+     * `namedItem(name)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/obsolete.html#pluginarray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-pluginarray-nameditem) with type `method` for `PluginArray`
+     * `item(index)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-item) with type `method` for `MimeTypeArray`
+     * `namedItem(name)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-nameditem) with type `method` for `MimeTypeArray`
+     * `item(index)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-item) with type `method` for `Plugin`
+     * `namedItem(name)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-nameditem) with type `method` for `Plugin`
+     * `getElementsByName(elementName)` with type `method`, but found [`getElementsByName(name)`](https://html.spec.whatwg.org/multipage/dom.html#dom-document-getelementsbyname) with type `method` for `Document`
 - Missing references for links: 
      * [`https://spec.whatwg.org/`](https://spec.whatwg.org/)
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
@@ -9140,6 +9167,7 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/html-aria/#el-autonomous-custom-element`](https://w3c.github.io/html-aria/#el-autonomous-custom-element)
 - Broken external links:
      * [`https://dom.spec.whatwg.org/#dom-element-setAttribute`](https://dom.spec.whatwg.org/#dom-element-setAttribute)
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://drafts.csswg.org/css2/#block-boxes%E2%91%A0`](https://drafts.csswg.org/css2/#block-boxes%E2%91%A0)
      * [`https://drafts.csswg.org/css2/#out-of-flow`](https://drafts.csswg.org/css2/#out-of-flow)
      * [`https://drafts.csswg.org/css2/#in-flow`](https://drafts.csswg.org/css2/#in-flow)
@@ -10205,6 +10233,29 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## JSON modules {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-json-modules/](https://tc39.es/proposal-json-modules/)
+- Crawled URL: [https://tc39.es/proposal-json-modules/](https://tc39.es/proposal-json-modules/)
+- Crawled version: 6 February 2021
+- Editor's Draft: [https://tc39.es/proposal-json-modules/](https://tc39.es/proposal-json-modules/)
+- Shortname: tc39-json-modules
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#synthetic-module-records`](https://heycam.github.io/webidl/#synthetic-module-records)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Keyboard Lock {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -10316,7 +10367,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
 - Crawled URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
-- Crawled version: 27 January 2021
+- Crawled version: 11 February 2021
 - Editor's Draft: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
 - Shortname: layout-instability
 
@@ -10393,6 +10444,7 @@ No informative reference to this spec from other specs.
 - Broken external links:
      * [`https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-navigationpreload`](https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-navigationpreload)
      * [`https://w3c.github.io/ServiceWorker/#dom-fetchevent-preloadresponse`](https://w3c.github.io/ServiceWorker/#dom-fetchevent-preloadresponse)
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://w3c.github.io/network-error-logging/#deliver-a-network-report`](https://w3c.github.io/network-error-logging/#deliver-a-network-report)
      * [`https://heycam.github.io/webidl/#sequence-type`](https://heycam.github.io/webidl/#sequence-type)
 
@@ -10700,7 +10752,6 @@ Normative references to this spec from:
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/mst-content-hint/)
 - [Screen Capture](https://www.w3.org/TR/screen-capture/)
 - [Web Audio API](https://www.w3.org/TR/webaudio/)
-- [WebCodecs](https://wicg.github.io/web-codecs/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 
@@ -10787,6 +10838,46 @@ No informative reference to this spec from other specs.
      * `VideoKindEnum` with type `enum`, but found [`VideoKindEnum`](https://www.w3.org/TR/mediacapture-depth/#dom-videokindenum) with type `dfn`
      * `"color"` with type `enum-value`, but found [`color`](https://www.w3.org/TR/mediacapture-depth/#dom-videokindenum-color) with type `dfn` for `videokindenum`
      * `"depth"` with type `enum-value`, but found [`depth`](https://www.w3.org/TR/mediacapture-depth/#dom-videokindenum-depth) with type `dfn` for `videokindenum`
+     * `videoKind` with type `dict-member`, but found [`videoKind`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-videokind) with type `dfn` for `mediatracksupportedconstraints`
+     * `focalLengthX` with type `dict-member`, but found [`focalLengthX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthx) with type `dfn` for `mediatracksupportedconstraints`
+     * `focalLengthY` with type `dict-member`, but found [`focalLengthY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthy) with type `dfn` for `mediatracksupportedconstraints`
+     * `principalPointX` with type `dict-member`, but found [`principalPointX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointx) with type `dfn` for `mediatracksupportedconstraints`
+     * `principalPointY` with type `dict-member`, but found [`principalPointY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointy) with type `dfn` for `mediatracksupportedconstraints`
+     * `deprojectionDistortionCoefficients` with type `dict-member`, but found [`deprojectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+     * `projectionDistortionCoefficients` with type `dict-member`, but found [`projectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+     * `depthNear` with type `dict-member`, but found [`depthNear`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthnear) with type `dfn` for `mediatracksupportedconstraints`
+     * `depthFar` with type `dict-member`, but found [`depthFar`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthfar) with type `dfn` for `mediatracksupportedconstraints`
+     * `depthToVideoTransform` with type `dict-member`, but found [`depthToVideoTransform`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthtovideotransform) with type `dfn` for `mediatracksupportedconstraints`
+     * `videoKind` with type `dict-member`, but found [`videoKind`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-videokind) with type `dfn` for `mediatracksupportedconstraints`
+     * `focalLengthX` with type `dict-member`, but found [`focalLengthX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthx) with type `dfn` for `mediatracksupportedconstraints`
+     * `focalLengthY` with type `dict-member`, but found [`focalLengthY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthy) with type `dfn` for `mediatracksupportedconstraints`
+     * `principalPointX` with type `dict-member`, but found [`principalPointX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointx) with type `dfn` for `mediatracksupportedconstraints`
+     * `principalPointY` with type `dict-member`, but found [`principalPointY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointy) with type `dfn` for `mediatracksupportedconstraints`
+     * `deprojectionDistortionCoefficients` with type `dict-member`, but found [`deprojectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+     * `projectionDistortionCoefficients` with type `dict-member`, but found [`projectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+     * `depthNear` with type `dict-member`, but found [`depthNear`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthnear) with type `dfn` for `mediatracksupportedconstraints`
+     * `depthFar` with type `dict-member`, but found [`depthFar`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthfar) with type `dfn` for `mediatracksupportedconstraints`
+     * `depthToVideoTransform` with type `dict-member`, but found [`depthToVideoTransform`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthtovideotransform) with type `dfn` for `mediatracksupportedconstraints`
+     * `videoKind` with type `dict-member`, but found [`videoKind`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-videokind) with type `dfn` for `mediatracksupportedconstraints`
+     * `focalLengthX` with type `dict-member`, but found [`focalLengthX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthx) with type `dfn` for `mediatracksupportedconstraints`
+     * `focalLengthY` with type `dict-member`, but found [`focalLengthY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthy) with type `dfn` for `mediatracksupportedconstraints`
+     * `principalPointX` with type `dict-member`, but found [`principalPointX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointx) with type `dfn` for `mediatracksupportedconstraints`
+     * `principalPointY` with type `dict-member`, but found [`principalPointY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointy) with type `dfn` for `mediatracksupportedconstraints`
+     * `deprojectionDistortionCoefficients` with type `dict-member`, but found [`deprojectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+     * `projectionDistortionCoefficients` with type `dict-member`, but found [`projectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+     * `depthNear` with type `dict-member`, but found [`depthNear`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthnear) with type `dfn` for `mediatracksupportedconstraints`
+     * `depthFar` with type `dict-member`, but found [`depthFar`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthfar) with type `dfn` for `mediatracksupportedconstraints`
+     * `depthToVideoTransform` with type `dict-member`, but found [`depthToVideoTransform`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthtovideotransform) with type `dfn` for `mediatracksupportedconstraints`
+     * `videoKind` with type `dict-member`, but found [`videoKind`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-videokind) with type `dfn` for `mediatracksupportedconstraints`
+     * `focalLengthX` with type `dict-member`, but found [`focalLengthX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthx) with type `dfn` for `mediatracksupportedconstraints`
+     * `focalLengthY` with type `dict-member`, but found [`focalLengthY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthy) with type `dfn` for `mediatracksupportedconstraints`
+     * `principalPointX` with type `dict-member`, but found [`principalPointX`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointx) with type `dfn` for `mediatracksupportedconstraints`
+     * `principalPointY` with type `dict-member`, but found [`principalPointY`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointy) with type `dfn` for `mediatracksupportedconstraints`
+     * `deprojectionDistortionCoefficients` with type `dict-member`, but found [`deprojectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+     * `projectionDistortionCoefficients` with type `dict-member`, but found [`projectionDistortionCoefficients`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients) with type `dfn` for `mediatracksupportedconstraints`
+     * `depthNear` with type `dict-member`, but found [`depthNear`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthnear) with type `dfn` for `mediatracksupportedconstraints`
+     * `depthFar` with type `dict-member`, but found [`depthFar`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthfar) with type `dfn` for `mediatracksupportedconstraints`
+     * `depthToVideoTransform` with type `dict-member`, but found [`depthToVideoTransform`](https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthtovideotransform) with type `dfn` for `mediatracksupportedconstraints`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - External links to private terms:
@@ -10993,6 +11084,7 @@ Normative references to this spec from:
 - [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Grid Layout Module Level 2](https://www.w3.org/TR/css-grid-2/)
+- [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [Web App Manifest](https://www.w3.org/TR/appmanifest/)
@@ -11103,6 +11195,10 @@ Informative references to this spec from:
      * `length` with type `attribute`, but found [`length`](https://www.w3.org/TR/media-source/#dom-sourcebufferlist-length) with type `dfn` for `sourcebufferlist`
      * `onaddsourcebuffer` with type `attribute`, but found [`onaddsourcebuffer`](https://www.w3.org/TR/media-source/#dom-sourcebufferlist-onaddsourcebuffer) with type `dfn` for `sourcebufferlist`
      * `onremovesourcebuffer` with type `attribute`, but found [`onremovesourcebuffer`](https://www.w3.org/TR/media-source/#dom-sourcebufferlist-onremovesourcebuffer) with type `dfn` for `sourcebufferlist`
+     * `createObjectURL(mediaSource)` with type `method`, but found [`createObjectURL`](https://www.w3.org/TR/media-source/#dom-url-createobjecturl) with type `dfn` for `url`
+     * `sourceBuffer` with type `attribute`, but found [`sourceBuffer`](https://www.w3.org/TR/media-source/#dom-audiotrack-sourcebuffer) with type `dfn` for `audiotrack`
+     * `sourceBuffer` with type `attribute`, but found [`sourceBuffer`](https://www.w3.org/TR/media-source/#dom-audiotrack-sourcebuffer) with type `dfn` for `audiotrack`
+     * `sourceBuffer` with type `attribute`, but found [`sourceBuffer`](https://www.w3.org/TR/media-source/#dom-audiotrack-sourcebuffer) with type `dfn` for `audiotrack`
 - Missing references for links: 
      * [`https://w3c.github.io/encrypted-media/`](https://w3c.github.io/encrypted-media/)
 - External links to outdated specs:
@@ -11155,9 +11251,7 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [WebCodecs](https://wicg.github.io/web-codecs/)
+No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
@@ -11707,6 +11801,9 @@ No informative reference to this spec from other specs.
      * `VisibilityState` with type `enum`
      * `"hidden"` with type `enum-value`, but found [`hidden`](https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate-hidden) with type `dfn` for `visibilitystate`
      * `"visible"` with type `enum-value`, but found [`visible`](https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate-visible) with type `dfn` for `visibilitystate`
+     * `hidden` with type `attribute`, but found [`hidden`](https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate-hidden) with type `dfn` for `visibilitystate`
+     * `visibilityState` with type `attribute`, but found [`visibilityState`](https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate) with type `dfn`
+     * `onvisibilitychange` with type `attribute`, but found [`onvisibilitychange`](https://www.w3.org/TR/page-visibility-2/#dom-document-onvisibilitychange) with type `dfn` for `document`
 - Missing references for links: 
      * [`https://www.w3.org/TR/html/full`](https://www.w3.org/TR/html/full)
 - Inconsistent references for links: 
@@ -12021,6 +12118,8 @@ Informative references to this spec from:
      * `observe(options)` with type `method` for [`PerformanceObserver`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver), but found [`PerformanceObserver.observe()`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver-observe) with type `method` for `PerformanceObserver`
      * `getEntriesByType(type)` with type `method` for [`PerformanceObserverEntryList`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist), but found [`PerformanceObserverEntryList.getEntriesByType()`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist-getentriesbytype) with type `method` for `PerformanceObserverEntryList`
      * `getEntriesByName(name, type)` with type `method` for [`PerformanceObserverEntryList`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist), but found [`PerformanceObserverEntryList.getEntriesByName()`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist-getentriesbyname) with type `method` for `PerformanceObserverEntryList`
+     * `getEntriesByType(type)` with type `method`, but found [`Performance.getEntriesByType()`](https://www.w3.org/TR/performance-timeline-2/#dom-performance-getentriesbytype) with type `method` for `Performance`
+     * `getEntriesByName(name, type)` with type `method`, but found [`Performance.getEntriesByName()`](https://www.w3.org/TR/performance-timeline-2/#dom-performance-getentriesbyname) with type `method` for `Performance`
 - Missing references for links: 
      * [`https://w3c.github.io/timing-entrytypes-registry/`](https://w3c.github.io/timing-entrytypes-registry/)
 - External links to private terms:
@@ -12287,6 +12386,16 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `void`
+- No definition for IDL properties: 
+     * `requestPointerLock()` with type `method`
+     * `onpointerlockchange` with type `attribute`, but found [`document.onpointerlockchange`](https://www.w3.org/TR/pointerlock-2/#dom-document-onpointerlockchange) with type `attribute` for `document`
+     * `onpointerlockerror` with type `attribute`, but found [`document.onpointerlockerror`](https://www.w3.org/TR/pointerlock-2/#dom-document-onpointerlockerror) with type `attribute` for `document`
+     * `exitPointerLock()` with type `method`
+     * `pointerLockElement` with type `attribute`
+     * `movementX` with type `attribute`, but found [`movementX`](https://www.w3.org/TR/pointerlock-2/#dom-mouseeventinit-movementx) with type `dict-member` for `mouseeventinit`
+     * `movementY` with type `attribute`, but found [`movementY`](https://www.w3.org/TR/pointerlock-2/#dom-mouseeventinit-movementy) with type `dict-member` for `mouseeventinit`
+     * `movementX` with type `dict-member`, but found [`movementX`](https://www.w3.org/TR/pointerlock-2/#dom-mouseeventinit-movementx) with type `dict-member` for `mouseeventinit`
+     * `movementY` with type `dict-member`, but found [`movementY`](https://www.w3.org/TR/pointerlock-2/#dom-mouseeventinit-movementy) with type `dict-member` for `mouseeventinit`
 - External links that neither target definitions nor headings:
      * [`https://heycam.github.io/webidl/#idl-void`](https://heycam.github.io/webidl/#idl-void)
 - Broken external links:
@@ -12482,6 +12591,27 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Private Fields in `in` {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-private-fields-in-in/](https://tc39.es/proposal-private-fields-in-in/)
+- Crawled URL: [https://tc39.es/proposal-private-fields-in-in/](https://tc39.es/proposal-private-fields-in-in/)
+- Crawled version: 28 January 2021
+- Editor's Draft: [https://tc39.es/proposal-private-fields-in-in/](https://tc39.es/proposal-private-fields-in-in/)
+- Shortname: tc39-private-fields-in-in
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12831,6 +12961,8 @@ No informative reference to this spec from other specs.
      * `"connected"` with type `enum-value`, but found [`connected`](https://www.w3.org/TR/remote-playback/#dom-remoteplaybackstate-connected) with type `dfn` for `remoteplaybackstate`
      * `"disconnected"` with type `enum-value`, but found [`disconnected`](https://www.w3.org/TR/remote-playback/#dom-remoteplaybackstate-disconnected) with type `dfn` for `remoteplaybackstate`
      * `RemotePlaybackAvailabilityCallback` with type `callback`, but found [`RemotePlaybackAvailabilityCallback`](https://www.w3.org/TR/remote-playback/#dom-remoteplaybackavailabilitycallback) with type `dfn`
+     * `remote` with type `attribute`, but found [`remote`](https://www.w3.org/TR/remote-playback/#dom-htmlmediaelement-remote) with type `dfn` for `htmlmediaelement`
+     * `disableRemotePlayback` with type `attribute`, but found [`disableRemotePlayback`](https://www.w3.org/TR/remote-playback/#dom-htmlmediaelement-disableremoteplayback) with type `dfn` for `htmlmediaelement`
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
      * [`https://www.w3.org/TR/custom-elements/`](https://www.w3.org/TR/custom-elements/)
@@ -13744,6 +13876,7 @@ No informative reference to this spec from other specs.
      * [`https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream`](https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream)
      * [`https://fetch.spec.whatwg.org/#potential-navigation-or-subresource-request`](https://fetch.spec.whatwg.org/#potential-navigation-or-subresource-request)
      * [`https://fetch.spec.whatwg.org/#concept-response-https-state`](https://fetch.spec.whatwg.org/#concept-response-https-state)
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://w3c.github.io/push-api/#h-the-push-event`](https://w3c.github.io/push-api/#h-the-push-event)
      * [`https://w3c.github.io/push-api/#dfn-push`](https://w3c.github.io/push-api/#dfn-push)
      * [`https://w3c.github.io/push-api/#dfn-fire-the-push-event`](https://w3c.github.io/push-api/#dfn-fire-the-push-event)
@@ -13808,7 +13941,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
 - Crawled URL: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
-- Crawled version: 27 April 2020
+- Crawled version: 13 February 2021
 - Editor's Draft: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
 - Shortname: tc39-static-class-features
 
@@ -13861,7 +13994,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 14 January 2021
+- Crawled version: 9 February 2021
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -13942,6 +14075,9 @@ No informative reference to this spec from other specs.
 - Missing references for WebIDL names: 
      * `HTMLLinkElement` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
      * `HTMLScriptElement` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- No definition for IDL properties: 
+     * `integrity` with type `attribute`
+     * `integrity` with type `attribute`
 - Missing references for links: 
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
@@ -14039,7 +14175,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
 - Crawled URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
-- Crawled version: 28 January 2021
+- Crawled version: 08 February 2021
 - Editor's Draft: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
 - Shortname: svg-animations
 
@@ -14463,6 +14599,8 @@ No informative reference to this spec from other specs.
      * `metaKey` with type `attribute`
      * `ctrlKey` with type `attribute`
      * `shiftKey` with type `attribute`
+     * `createTouch(view, target, identifier, pageX, pageY, screenX, screenY)` with type `method`
+     * `createTouchList(...touches)` with type `method`
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
@@ -14915,6 +15053,10 @@ Informative references to this spec from:
 - No definition for IDL properties: 
      * `PerformanceMark` with type `interface`, but found [`PerformanceMark`](https://www.w3.org/TR/user-timing-2/#dom-performancemark) with type `dfn`
      * `PerformanceMeasure` with type `interface`, but found [`PerformanceMeasure`](https://www.w3.org/TR/user-timing-2/#dom-performancemeasure) with type `dfn`
+     * `mark(markName)` with type `method`, but found [`performance.mark()`](https://www.w3.org/TR/user-timing-2/#dom-performance-mark) with type `dfn` for `performance`
+     * `clearMarks(markName)` with type `method`
+     * `measure(measureName, startMark, endMark)` with type `method`, but found [`performance.measure()`](https://www.w3.org/TR/user-timing-2/#dom-performance-measure) with type `dfn` for `performance`
+     * `clearMeasures(measureName)` with type `method`
 - External links to private terms:
      * [`https://heycam.github.io/webidl/#dfn-read-only`](https://heycam.github.io/webidl/#dfn-read-only)
      * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
@@ -14991,7 +15133,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled version: 3 February 2021
+- Crawled version: 9 February 2021
 - Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Shortname: ua-client-hints
 
@@ -15032,6 +15174,7 @@ No informative reference to this spec from other specs.
 
 - No definition for IDL properties: 
      * `VibratePattern` with type `typedef`
+     * `vibrate(pattern)` with type `method`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/), related reference "PAGE-VISIBILITY-2" uses URL [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
 - External links to private terms:
@@ -15472,6 +15615,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
+- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 
 Informative references to this spec from:
 
@@ -15580,6 +15724,7 @@ No informative reference to this spec from other specs.
      * `port` with type `attribute`
      * `MIDIConnectionEventInit` with type `dictionary`
      * `port` with type `dict-member`
+     * `requestMIDIAccess(options)` with type `method`, but found [`requestMIDIAccess`](https://www.w3.org/TR/webmidi/#dom-navigator-requestmidiaccess) with type `dfn`
 - Inconsistent references for links: 
      * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/), related reference "DOM-LEVEL-3-CORE" uses URL [`http://www.w3.org/TR/DOM-Level-3-Core/`](http://www.w3.org/TR/DOM-Level-3-Core/)
 - Broken external links:
@@ -15719,7 +15864,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Crawled URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
-- Crawled version: 05 January 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Shortname: serial
 
@@ -15959,22 +16104,19 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebCodecs {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## WebCodecs {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
 - Crawled URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
-- Crawled version: 5 February 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
 - Shortname: web-codecs
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://w3c.github.io/mediacapture-screen-share/`](https://w3c.github.io/mediacapture-screen-share/)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "MEDIACAPTURE-STREAMS" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
      * [`https://w3c.github.io/media-capabilities/`](https://w3c.github.io/media-capabilities/), related reference "MEDIA-CAPABILITIES" uses URL [`https://www.w3.org/TR/media-capabilities/`](https://www.w3.org/TR/media-capabilities/)
 - External links to private terms:
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
@@ -15986,6 +16128,7 @@ No informative reference to this spec from other specs.
 - Broken external links:
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
@@ -16047,7 +16190,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#missing-value-default`](https://html.spec.whatwg.org/#missing-value-default)
      * [`https://html.spec.whatwg.org/#concept-fe-mutable`](https://html.spec.whatwg.org/#concept-fe-mutable)
      * [`https://html.spec.whatwg.org/#concept-canvas-origin-clean`](https://html.spec.whatwg.org/#concept-canvas-origin-clean)
-     * [`https://html.spec.whatwg.org/#pause`](https://html.spec.whatwg.org/#pause)
      * [`https://html.spec.whatwg.org/#prompt-to-unload-a-document`](https://html.spec.whatwg.org/#prompt-to-unload-a-document)
      * [`https://html.spec.whatwg.org/#concept-textarea-raw-value`](https://html.spec.whatwg.org/#concept-textarea-raw-value)
      * [`https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh`](https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh)
@@ -16141,7 +16283,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - Crawled URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
-- Crawled version: 26 January 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - Shortname: webdriver-bidi
 
@@ -16182,6 +16324,8 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#worker-event-loop-2`](https://html.spec.whatwg.org/#worker-event-loop-2)
      * [`https://html.spec.whatwg.org/#session-history`](https://html.spec.whatwg.org/#session-history)
      * [`https://html.spec.whatwg.org/#bcg-remove`](https://html.spec.whatwg.org/#bcg-remove)
+     * [`https://html.spec.whatwg.org/#report-the-error`](https://html.spec.whatwg.org/#report-the-error)
+     * [`https://html.spec.whatwg.org/#concept-error-handled`](https://html.spec.whatwg.org/#concept-error-handled)
 - Broken external links:
      * [`https://w3c.github.io/webdriver/#dfn-intermediary-node`](https://w3c.github.io/webdriver/#dfn-intermediary-node)
      * [`https://w3c.github.io/webdriver/#dfn-get-a-property`](https://w3c.github.io/webdriver/#dfn-get-a-property)
@@ -16235,7 +16379,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
 - Shortname: ANGLE_instanced_arrays
 
@@ -16270,7 +16414,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
 - Shortname: EXT_blend_minmax
 
@@ -16296,7 +16440,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
 - Shortname: EXT_clip_cull_distance
 
@@ -16331,7 +16475,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
 - Shortname: EXT_color_buffer_float
 
@@ -16355,7 +16499,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
 - Shortname: EXT_color_buffer_half_float
 
@@ -16383,7 +16527,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
 - Shortname: EXT_disjoint_timer_query
 
@@ -16428,7 +16572,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
 - Shortname: EXT_disjoint_timer_query_webgl2
 
@@ -16461,7 +16605,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
 - Shortname: EXT_float_blend
 
@@ -16485,7 +16629,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
 - Shortname: EXT_frag_depth
 
@@ -16509,7 +16653,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
 - Shortname: EXT_shader_texture_lod
 
@@ -16533,7 +16677,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
 - Shortname: EXT_sRGB
 
@@ -16561,7 +16705,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
 - Shortname: EXT_texture_compression_bptc
 
@@ -16589,7 +16733,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
 - Shortname: EXT_texture_compression_rgtc
 
@@ -16617,7 +16761,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
 - Shortname: EXT_texture_filter_anisotropic
 
@@ -16643,7 +16787,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
 - Shortname: EXT_texture_norm16
 
@@ -16675,7 +16819,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
 - Shortname: KHR_parallel_shader_compile
 
@@ -16700,7 +16844,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
 - Shortname: OES_draw_buffers_indexed
 
@@ -16736,7 +16880,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
 - Shortname: OES_element_index_uint
 
@@ -16760,7 +16904,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
 - Shortname: OES_fbo_render_mipmap
 
@@ -16784,7 +16928,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
 - Shortname: OES_standard_derivatives
 
@@ -16809,7 +16953,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
 - Shortname: OES_texture_float
 
@@ -16833,7 +16977,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
 - Shortname: OES_texture_float_linear
 
@@ -16857,7 +17001,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
 - Shortname: OES_texture_half_float
 
@@ -16882,7 +17026,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
 - Shortname: OES_texture_half_float_linear
 
@@ -16906,7 +17050,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
 - Shortname: OES_vertex_array_object
 
@@ -16940,7 +17084,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
 - Shortname: OVR_multiview2
 
@@ -17024,7 +17168,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
 - Shortname: WEBGL_blend_equation_advanced_coherent
 
@@ -17063,7 +17207,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
 - Shortname: WEBGL_color_buffer_float
 
@@ -17090,7 +17234,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
 - Shortname: WEBGL_compressed_texture_astc
 
@@ -17143,7 +17287,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
 - Shortname: WEBGL_compressed_texture_etc
 
@@ -17177,7 +17321,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
 - Shortname: WEBGL_compressed_texture_etc1
 
@@ -17202,7 +17346,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
 - Shortname: WEBGL_compressed_texture_pvrtc
 
@@ -17230,7 +17374,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
 - Shortname: WEBGL_compressed_texture_s3tc
 
@@ -17258,7 +17402,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
 - Shortname: WEBGL_compressed_texture_s3tc_srgb
 
@@ -17286,7 +17430,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
 - Shortname: WEBGL_debug_renderer_info
 
@@ -17312,7 +17456,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
 - Shortname: WEBGL_debug_shaders
 
@@ -17339,7 +17483,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/](https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/](https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/](https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/)
 - Shortname: WEBGL_depth_texture
 
@@ -17364,7 +17508,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
 - Shortname: WEBGL_draw_buffers
 
@@ -17426,7 +17570,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
 - Shortname: WEBGL_draw_instanced_base_vertex_base_instance
 
@@ -17459,7 +17603,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
 - Shortname: WEBGL_lose_context
 
@@ -17486,7 +17630,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - Shortname: WEBGL_multi_draw
 
@@ -17520,7 +17664,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
-- Crawled version: 3 February 2021
+- Crawled version: 12 February 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - Shortname: WEBGL_multi_draw_instanced_base_vertex_base_instance
 
@@ -17552,7 +17696,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 6 February 2021
+- Crawled version: 9 February 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -17869,6 +18013,7 @@ Informative references to this spec from:
 - Unknown WebIDL names used: `AlgorithmIdentifier`, `DOMException`
 - Possibly no definition for IDL properties: 
      * `setStreams(...streams)` with type `method` for [`RTCRtpSender`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender), but found [`setStreams()`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-setstreams) with type `method` for `RTCRtpSender`
+     * `addTrack(track, ...streams)` with type `method` for [`RTCPeerConnection`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection), but found [`addTrack()`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-addtrack) with type `method` for `RTCPeerConnection`
 - Missing references for links: 
      * [`https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html`](https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html)
 - External links to private terms:
@@ -17927,25 +18072,32 @@ Informative references to this spec from:
 - [Screen Capture](https://www.w3.org/TR/screen-capture/)
 
 
-## WebRTC Insertable Media using Streams {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+## WebRTC Insertable Media using Streams {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
 - Crawled URL: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
-- Crawled version: 4 February 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
 - Shortname: webrtc-insertable-streams
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `CryptoKey`
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webcrypto/`](https://w3c.github.io/webcrypto/), related reference "WebCryptoAPI" uses URL [`https://www.w3.org/TR/WebCryptoAPI/`](https://www.w3.org/TR/WebCryptoAPI/)
+     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - External links to private terms:
      * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
+     * [`https://w3c.github.io/webcrypto/#dfn-CryptoKey`](https://w3c.github.io/webcrypto/#dfn-CryptoKey)
 - External links that neither target definitions nor headings:
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
 - Broken external links:
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -18015,7 +18167,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 6 February 2021
+- Crawled version: 14 February 2021
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
@@ -18115,7 +18267,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
 - Crawled URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
-- Crawled version: 15 January 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
 - Shortname: anchors
 
@@ -18277,7 +18429,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
 - Crawled URL: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
-- Crawled version: 15 January 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
 - Shortname: dom-overlays
 
@@ -18386,7 +18538,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
 - Crawled URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
-- Crawled version: 15 January 2021
+- Crawled version: 10 February 2021
 - Editor's Draft: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
 - Shortname: hit-test
 
@@ -18552,6 +18704,7 @@ Informative references to this spec from:
 - External links that neither target definitions nor headings:
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
 - Broken external links:
+     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)

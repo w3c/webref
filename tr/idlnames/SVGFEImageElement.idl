@@ -1,0 +1,11 @@
+// Source: Filter Effects Module Level 1 (https://www.w3.org/TR/filter-effects-1/)
+interface SVGFEImageElement : SVGElement {
+  readonly attribute SVGAnimatedPreserveAspectRatio preserveAspectRatio;
+  readonly attribute SVGAnimatedString crossOrigin;
+};
+
+// Source: Filter Effects Module Level 1 (https://www.w3.org/TR/filter-effects-1/)
+SVGFEImageElement includes SVGFilterPrimitiveStandardAttributes;
+
+// Source: Filter Effects Module Level 1 (https://www.w3.org/TR/filter-effects-1/)
+SVGFEImageElement includes SVGURIReference;

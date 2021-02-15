@@ -1,0 +1,5 @@
+// Source: Ambient Light Sensor (https://www.w3.org/TR/ambient-light/)
+[Constructor(optional SensorOptions sensorOptions), SecureContext, Exposed=Window]
+interface AmbientLightSensor : Sensor {
+  readonly attribute double? illuminance;
+};

@@ -1,0 +1,5 @@
+// Source: CSS Animation Worklet API (https://www.w3.org/TR/css-animation-worklet-1/)
+[ Exposed=AnimationWorklet, Global=AnimationWorklet ]
+interface AnimationWorkletGlobalScope : WorkletGlobalScope {
+    void registerAnimator(DOMString name, AnimatorInstanceConstructor animatorCtor);
+};

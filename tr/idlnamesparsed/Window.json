@@ -1,0 +1,347 @@
+{
+  "name": "Window",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Global=Window,\n Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface Window : EventTarget {\n  // the current browsing context\n  [LegacyUnforgeable] readonly attribute WindowProxy window;\n  [Replaceable] readonly attribute WindowProxy self;\n  [LegacyUnforgeable] readonly attribute Document document;\n  attribute DOMString name;\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location location;\n  readonly attribute History history;\n  readonly attribute CustomElementRegistry customElements;\n  [Replaceable] readonly attribute BarProp locationbar;\n  [Replaceable] readonly attribute BarProp menubar;\n  [Replaceable] readonly attribute BarProp personalbar;\n  [Replaceable] readonly attribute BarProp scrollbars;\n  [Replaceable] readonly attribute BarProp statusbar;\n  [Replaceable] readonly attribute BarProp toolbar;\n  attribute DOMString status;\n  undefined close();\n  readonly attribute boolean closed;\n  undefined stop();\n  undefined focus();\n  undefined blur();\n\n  // other browsing contexts\n  [Replaceable] readonly attribute WindowProxy frames;\n  [Replaceable] readonly attribute unsigned long length;\n  [LegacyUnforgeable] readonly attribute WindowProxy? top;\n  attribute any opener;\n  [Replaceable] readonly attribute WindowProxy? parent;\n  readonly attribute Element? frameElement;\n  WindowProxy? open(optional USVString url = \"\", optional DOMString target = \"_blank\", optional [LegacyNullToEmptyString] DOMString features = \"\");\n  getter object (DOMString name);\n  // Since this is the global object, the IDL named getter adds a NamedPropertiesObject exotic\n  // object on the prototype chain. Indeed, this does not make the global object an exotic object.\n  // Indexed access is taken care of by the WindowProxy exotic object.\n\n  // the user agent\n  readonly attribute Navigator navigator;\n  readonly attribute boolean originAgentCluster;\n\n  // user prompts\n  undefined alert();\n  undefined alert(DOMString message);\n  boolean confirm(optional DOMString message = \"\");\n  DOMString? prompt(optional DOMString message = \"\", optional DOMString default = \"\");\n  undefined print();\n\n  undefined postMessage(any message, USVString targetOrigin, optional sequence<object> transfer = []);\n  undefined postMessage(any message, optional WindowPostMessageOptions options = {});\n\n  // also has obsolete members\n};",
+    "href": "https://html.spec.whatwg.org/multipage/window-object.html#window"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Compatibility Standard",
+        "url": "https://compat.spec.whatwg.org/"
+      },
+      "fragment": "partial interface Window {\n    readonly attribute short orientation;\n    attribute EventHandler onorientationchange;\n};"
+    },
+    {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "partial interface Window {\n  [Replaceable] readonly attribute (Event or undefined) event; // legacy\n};"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Window includes GlobalEventHandlers;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Window includes WindowEventHandlers;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Window includes WindowOrWorkerGlobalScope;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Window includes AnimationFrameProvider;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Window includes WindowSessionStorage;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Window includes WindowLocalStorage;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "partial interface Window {\n  undefined captureEvents();\n  undefined releaseEvents();\n\n  [Replaceable, SameObject] readonly attribute External external;\n};"
+    },
+    {
+      "spec": {
+        "title": "Cookie Store API",
+        "url": "https://wicg.github.io/cookie-store/"
+      },
+      "fragment": "[SecureContext]\npartial interface Window {\n  [SameObject] readonly attribute CookieStore cookieStore;\n};"
+    },
+    {
+      "spec": {
+        "title": "File System Access",
+        "url": "https://wicg.github.io/file-system-access/"
+      },
+      "fragment": "[SecureContext]\npartial interface Window {\n    Promise<sequence<FileSystemFileHandle>> showOpenFilePicker(optional OpenFilePickerOptions options = {});\n    Promise<FileSystemFileHandle> showSaveFilePicker(optional SaveFilePickerOptions options = {});\n    Promise<FileSystemDirectoryHandle> showDirectoryPicker(optional DirectoryPickerOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Portals",
+        "url": "https://wicg.github.io/portals/"
+      },
+      "fragment": "partial interface Window {\n    readonly attribute PortalHost? portalHost;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Speech API",
+        "url": "https://wicg.github.io/speech-api/"
+      },
+      "fragment": "partial interface Window {\n    [SameObject] readonly attribute SpeechSynthesis speechSynthesis;\n};"
+    },
+    {
+      "spec": {
+        "title": "Visual Viewport API",
+        "url": "https://wicg.github.io/visual-viewport/"
+      },
+      "fragment": "partial interface Window {\n  [SameObject, Replaceable] readonly attribute VisualViewport visualViewport;\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Spatial Navigation Level 1",
+        "url": "https://www.w3.org/TR/css-nav-1/"
+      },
+      "fragment": "partial interface Window {\n    void navigate(SpatialNavigationDirection dir);\n};"
+    },
+    {
+      "spec": {
+        "title": "DeviceOrientation Event Specification",
+        "url": "https://www.w3.org/TR/orientation-event/"
+      },
+      "fragment": "partial interface Window {\n    [SecureContext] attribute EventHandler ondeviceorientation;\n};"
+    },
+    {
+      "spec": {
+        "title": "DeviceOrientation Event Specification",
+        "url": "https://www.w3.org/TR/orientation-event/"
+      },
+      "fragment": "partial interface Window {\n    [SecureContext] attribute EventHandler ondeviceorientationabsolute;\n};"
+    },
+    {
+      "spec": {
+        "title": "DeviceOrientation Event Specification",
+        "url": "https://www.w3.org/TR/orientation-event/"
+      },
+      "fragment": "partial interface Window {\n    attribute EventHandler oncompassneedscalibration;\n};"
+    },
+    {
+      "spec": {
+        "title": "DeviceOrientation Event Specification",
+        "url": "https://www.w3.org/TR/orientation-event/"
+      },
+      "fragment": "partial interface Window {\n    [SecureContext] attribute EventHandler ondevicemotion;\n};"
+    },
+    {
+      "spec": {
+        "title": "Cooperative Scheduling of Background Tasks",
+        "url": "https://www.w3.org/TR/requestidlecallback/"
+      },
+      "fragment": "partial interface Window {\n    unsigned long requestIdleCallback(IdleRequestCallback callback,\n                                      optional IdleRequestOptions options);\n    void          cancelIdleCallback(unsigned long handle);\n};"
+    },
+    {
+      "spec": {
+        "title": "Selection API",
+        "url": "https://www.w3.org/TR/selection-api/"
+      },
+      "fragment": "partial interface Window {\n  Selection? getSelection();\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [
+    {
+      "name": "GlobalEventHandlers",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin GlobalEventHandlers {\n  attribute EventHandler onabort;\n  attribute EventHandler onauxclick;\n  attribute EventHandler onblur;\n  attribute EventHandler oncancel;\n  attribute EventHandler oncanplay;\n  attribute EventHandler oncanplaythrough;\n  attribute EventHandler onchange;\n  attribute EventHandler onclick;\n  attribute EventHandler onclose;\n  attribute EventHandler oncontextmenu;\n  attribute EventHandler oncuechange;\n  attribute EventHandler ondblclick;\n  attribute EventHandler ondrag;\n  attribute EventHandler ondragend;\n  attribute EventHandler ondragenter;\n  attribute EventHandler ondragleave;\n  attribute EventHandler ondragover;\n  attribute EventHandler ondragstart;\n  attribute EventHandler ondrop;\n  attribute EventHandler ondurationchange;\n  attribute EventHandler onemptied;\n  attribute EventHandler onended;\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onfocus;\n  attribute EventHandler onformdata;\n  attribute EventHandler oninput;\n  attribute EventHandler oninvalid;\n  attribute EventHandler onkeydown;\n  attribute EventHandler onkeypress;\n  attribute EventHandler onkeyup;\n  attribute EventHandler onload;\n  attribute EventHandler onloadeddata;\n  attribute EventHandler onloadedmetadata;\n  attribute EventHandler onloadstart;\n  attribute EventHandler onmousedown;\n  [LegacyLenientThis] attribute EventHandler onmouseenter;\n  [LegacyLenientThis] attribute EventHandler onmouseleave;\n  attribute EventHandler onmousemove;\n  attribute EventHandler onmouseout;\n  attribute EventHandler onmouseover;\n  attribute EventHandler onmouseup;\n  attribute EventHandler onpause;\n  attribute EventHandler onplay;\n  attribute EventHandler onplaying;\n  attribute EventHandler onprogress;\n  attribute EventHandler onratechange;\n  attribute EventHandler onreset;\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onsecuritypolicyviolation;\n  attribute EventHandler onseeked;\n  attribute EventHandler onseeking;\n  attribute EventHandler onselect;\n  attribute EventHandler onslotchange;\n  attribute EventHandler onstalled;\n  attribute EventHandler onsubmit;\n  attribute EventHandler onsuspend;\n  attribute EventHandler ontimeupdate;\n  attribute EventHandler ontoggle;\n  attribute EventHandler onvolumechange;\n  attribute EventHandler onwaiting;\n  attribute EventHandler onwebkitanimationend;\n  attribute EventHandler onwebkitanimationiteration;\n  attribute EventHandler onwebkitanimationstart;\n  attribute EventHandler onwebkittransitionend;\n  attribute EventHandler onwheel;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "WebXR DOM Overlays Module",
+            "url": "https://immersive-web.github.io/dom-overlays/"
+          },
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onbeforexrselect;\n};"
+        },
+        {
+          "spec": {
+            "title": "CSS Animations Level 1",
+            "url": "https://www.w3.org/TR/css-animations-1/"
+          },
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
+        },
+        {
+          "spec": {
+            "title": "CSS Transitions",
+            "url": "https://www.w3.org/TR/css-transitions-1/"
+          },
+          "fragment": "partial interface GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};"
+        },
+        {
+          "spec": {
+            "title": "Pointer Events",
+            "url": "https://www.w3.org/TR/pointerevents3/"
+          },
+          "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};"
+        },
+        {
+          "spec": {
+            "title": "Selection API",
+            "url": "https://www.w3.org/TR/selection-api/"
+          },
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};"
+        }
+      ],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "WindowEventHandlers",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin WindowEventHandlers {\n  attribute EventHandler onafterprint;\n  attribute EventHandler onbeforeprint;\n  attribute OnBeforeUnloadEventHandler onbeforeunload;\n  attribute EventHandler onhashchange;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onpagehide;\n  attribute EventHandler onpageshow;\n  attribute EventHandler onpopstate;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onstorage;\n  attribute EventHandler onunhandledrejection;\n  attribute EventHandler onunload;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "Portals",
+            "url": "https://wicg.github.io/portals/"
+          },
+          "fragment": "partial interface mixin WindowEventHandlers {\n    attribute EventHandler onportalactivate;\n};"
+        }
+      ],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "WindowOrWorkerGlobalScope",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute USVString origin;\n  readonly attribute boolean isSecureContext;\n  readonly attribute boolean crossOriginIsolated;\n\n  // base64 utility methods\n  DOMString btoa(DOMString data);\n  ByteString atob(DOMString data);\n\n  // timers\n  long setTimeout(TimerHandler handler, optional long timeout = 0, any... arguments);\n  undefined clearTimeout(optional long handle = 0);\n  long setInterval(TimerHandler handler, optional long timeout = 0, any... arguments);\n  undefined clearInterval(optional long handle = 0);\n\n  // microtask queuing\n  undefined queueMicrotask(VoidFunction callback);\n\n  // ImageBitmap\n  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, optional ImageBitmapOptions options = {});\n  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, long sx, long sy, long sw, long sh, optional ImageBitmapOptions options = {});\n};",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "Fetch Standard",
+            "url": "https://fetch.spec.whatwg.org/"
+          },
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [NewObject] Promise<Response> fetch(RequestInfo input, optional RequestInit init = {});\n};"
+        },
+        {
+          "spec": {
+            "title": "Origin Policy",
+            "url": "https://wicg.github.io/origin-policy/"
+          },
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute FrozenArray<DOMString> originPolicyIds;\n};"
+        },
+        {
+          "spec": {
+            "title": "High Resolution Time",
+            "url": "https://www.w3.org/TR/hr-time-3/"
+          },
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute Performance performance;\n};"
+        },
+        {
+          "spec": {
+            "title": "Indexed Database API 2.0",
+            "url": "https://www.w3.org/TR/IndexedDB-2/"
+          },
+          "fragment": "partial interface WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute IDBFactory indexedDB;\n};"
+        },
+        {
+          "spec": {
+            "title": "Secure Contexts",
+            "url": "https://www.w3.org/TR/secure-contexts/"
+          },
+          "fragment": "partial interface WindowOrWorkerGlobalScope {\n  readonly attribute boolean isSecureContext;\n};"
+        },
+        {
+          "spec": {
+            "title": "Service Workers 1",
+            "url": "https://www.w3.org/TR/service-workers-1/"
+          },
+          "fragment": "partial interface WindowOrWorkerGlobalScope {\n  [SecureContext, SameObject] readonly attribute CacheStorage caches;\n};"
+        }
+      ],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "AnimationFrameProvider",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin AnimationFrameProvider {\n  unsigned long requestAnimationFrame(FrameRequestCallback callback);\n  undefined cancelAnimationFrame(unsigned long handle);\n};",
+        "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "WindowSessionStorage",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin WindowSessionStorage {\n  readonly attribute Storage sessionStorage;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/webstorage.html#windowsessionstorage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "WindowLocalStorage",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin WindowLocalStorage {\n  readonly attribute Storage localStorage;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/webstorage.html#windowlocalstorage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

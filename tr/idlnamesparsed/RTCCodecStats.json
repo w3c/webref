@@ -1,0 +1,27 @@
+{
+  "name": "RTCCodecStats",
+  "defined": {
+    "spec": {
+      "title": "Identifiers for WebRTC's Statistics API",
+      "url": "https://www.w3.org/TR/webrtc-stats/"
+    },
+    "fragment": "dictionary RTCCodecStats : RTCStats {\n             required unsigned long payloadType;\n             RTCCodecType  codecType;\n             required DOMString     transportId;\n             required DOMString     mimeType;\n             unsigned long clockRate;\n             unsigned long channels;\n             DOMString     sdpFmtpLine;\n};",
+    "href": "https://www.w3.org/TR/webrtc-stats/#dom-rtccodecstats"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "RTCStats",
+    "defined": {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "dictionary RTCStats {\n  required DOMHighResTimeStamp timestamp;\n  required RTCStatsType type;\n  required DOMString id;\n};",
+      "href": "https://www.w3.org/TR/webrtc/#dom-rtcstats"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

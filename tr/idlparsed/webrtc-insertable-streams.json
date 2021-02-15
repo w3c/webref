@@ -23,6 +23,7 @@
     },
     "idlNames": {
       "RTCInsertableStreams": {
+        "fragment": "// New dictionary.\ndictionary RTCInsertableStreams {\n    ReadableStream readable;\n    WritableStream writable;\n};",
         "type": "dictionary",
         "name": "RTCInsertableStreams",
         "inheritance": null,
@@ -62,6 +63,7 @@
         "partial": false
       },
       "RTCEncodedVideoFrameType": {
+        "fragment": "// New enum for video frame types. Will eventually re-use the equivalent defined\n// by WebCodecs.\nenum RTCEncodedVideoFrameType {\n    \"empty\",\n    \"key\",\n    \"delta\",\n};",
         "type": "enum",
         "name": "RTCEncodedVideoFrameType",
         "values": [
@@ -81,6 +83,7 @@
         "extAttrs": []
       },
       "RTCEncodedVideoFrameMetadata": {
+        "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    long long frameId;\n    sequence<long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    long spatialIndex;\n    long temporalIndex;\n    long synchronizationSource;\n    sequence<long> contributingSources;\n};",
         "type": "dictionary",
         "name": "RTCEncodedVideoFrameMetadata",
         "inheritance": null,
@@ -228,6 +231,7 @@
         "partial": false
       },
       "RTCEncodedVideoFrame": {
+        "fragment": "// New interfaces to define encoded video and audio frames. Will eventually\n// re-use or extend the equivalent defined in WebCodecs.\n[Exposed=Window]\ninterface RTCEncodedVideoFrame {\n    readonly attribute RTCEncodedVideoFrameType type;\n    readonly attribute unsigned long long timestamp;\n    attribute ArrayBuffer data;\n    RTCEncodedVideoFrameMetadata getMetadata();\n};",
         "type": "interface",
         "name": "RTCEncodedVideoFrame",
         "inheritance": null,
@@ -307,6 +311,7 @@
         "partial": false
       },
       "RTCEncodedAudioFrameMetadata": {
+        "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    long synchronizationSource;\n    sequence<long> contributingSources;\n};",
         "type": "dictionary",
         "name": "RTCEncodedAudioFrameMetadata",
         "inheritance": null,
@@ -355,6 +360,7 @@
         "partial": false
       },
       "RTCEncodedAudioFrame": {
+        "fragment": "[Exposed=Window]\ninterface RTCEncodedAudioFrame {\n    readonly attribute unsigned long long timestamp;\n    attribute ArrayBuffer data;\n    RTCEncodedAudioFrameMetadata getMetadata();\n};",
         "type": "interface",
         "name": "RTCEncodedAudioFrame",
         "inheritance": null,
@@ -419,6 +425,7 @@
         "partial": false
       },
       "RTCRtpTransform": {
+        "fragment": "typedef (SFrameTransform or RTCRtpScriptTransform) RTCRtpTransform;",
         "type": "typedef",
         "name": "RTCRtpTransform",
         "idlType": {
@@ -449,6 +456,7 @@
         "extAttrs": []
       },
       "SFrameTransformRole": {
+        "fragment": "enum SFrameTransformRole {\n    \"encrypt\",\n    \"decrypt\"\n};",
         "type": "enum",
         "name": "SFrameTransformRole",
         "values": [
@@ -464,6 +472,7 @@
         "extAttrs": []
       },
       "SFrameTransformOptions": {
+        "fragment": "dictionary SFrameTransformOptions {\n    SFrameTransformRole role = \"encrypt\";\n};",
         "type": "dictionary",
         "name": "SFrameTransformOptions",
         "inheritance": null,
@@ -491,6 +500,7 @@
         "partial": false
       },
       "SFrameTransform": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options);\n\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);\n};",
         "type": "interface",
         "name": "SFrameTransform",
         "inheritance": null,
@@ -516,6 +526,63 @@
               }
             ],
             "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "setEncryptionKey",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "keyID",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long long"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -539,6 +606,7 @@
         "partial": false
       },
       "RTCRtpScriptTransform": {
+        "fragment": "[Exposed=(Window)]\ninterface RTCRtpScriptTransform {\n    constructor(Worker worker, optional object options);\n    // FIXME: add messaging methods.\n};",
         "type": "interface",
         "name": "RTCRtpScriptTransform",
         "inheritance": null,
@@ -603,6 +671,7 @@
     "idlExtendedNames": {
       "RTCConfiguration": [
         {
+          "fragment": "// New fields in RTCConfiguration\npartial dictionary RTCConfiguration {\n    boolean encodedInsertableStreams = false;\n};",
           "type": "dictionary",
           "name": "RTCConfiguration",
           "inheritance": null,
@@ -632,6 +701,7 @@
       ],
       "RTCRtpSender": [
         {
+          "fragment": "// New methods for RTCRtpSender and RTCRtpReceiver\npartial interface RTCRtpSender {\n    RTCInsertableStreams createEncodedStreams();\n    attribute RTCRtpTransform? transform;\n};",
           "type": "interface",
           "name": "RTCRtpSender",
           "inheritance": null,
@@ -673,6 +743,7 @@
       ],
       "RTCRtpReceiver": [
         {
+          "fragment": "partial interface RTCRtpReceiver {\n    RTCInsertableStreams createEncodedStreams();\n    attribute RTCRtpTransform? transform;\n};",
           "type": "interface",
           "name": "RTCRtpReceiver",
           "inheritance": null,
@@ -714,8 +785,10 @@
       ],
       "SFrameTransform": [
         {
-          "name": "SFrameTransform",
-          "type": "interface",
+          "fragment": "SFrameTransform includes GenericTransformStream;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SFrameTransform",
           "includes": "GenericTransformStream"
         }
       ]
@@ -760,6 +833,7 @@
       ],
       "SFrameTransform": [
         "SFrameTransformOptions",
+        "CryptoKey",
         "GenericTransformStream"
       ],
       "RTCRtpScriptTransform": [
@@ -772,6 +846,7 @@
       "RTCConfiguration",
       "RTCRtpSender",
       "RTCRtpReceiver",
+      "CryptoKey",
       "Worker"
     ],
     "hasObsoleteIdl": false

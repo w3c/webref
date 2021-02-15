@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "XRAnchor": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRAnchor {\n  readonly attribute XRSpace anchorSpace;\n\n  void delete();\n};",
         "type": "interface",
         "name": "XRAnchor",
         "inheritance": null,
@@ -69,6 +70,7 @@
         "partial": false
       },
       "XRAnchorSet": {
+        "fragment": "interface XRAnchorSet {\n  readonly setlike<XRAnchor>;\n};",
         "type": "interface",
         "name": "XRAnchorSet",
         "inheritance": null,
@@ -98,6 +100,7 @@
     "idlExtendedNames": {
       "XRFrame": [
         {
+          "fragment": "partial interface XRFrame {\n  Promise<XRAnchor> createAnchor(XRRigidTransform pose, XRSpace space);\n};",
           "type": "interface",
           "name": "XRFrame",
           "inheritance": null,
@@ -164,6 +167,7 @@
           "partial": true
         },
         {
+          "fragment": "partial interface XRFrame {\n  [SameObject] readonly attribute XRAnchorSet trackedAnchors;\n};",
           "type": "interface",
           "name": "XRFrame",
           "inheritance": null,
@@ -197,6 +201,7 @@
       ],
       "XRHitTestResult": [
         {
+          "fragment": "partial interface XRHitTestResult {\n  Promise<XRAnchor> createAnchor();\n};",
           "type": "interface",
           "name": "XRHitTestResult",
           "inheritance": null,

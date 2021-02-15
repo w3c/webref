@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "VideoFrameMetadata": {
+        "fragment": "dictionary VideoFrameMetadata {\n  required DOMHighResTimeStamp presentationTime;\n  required DOMHighResTimeStamp expectedDisplayTime;\n\n  required unsigned long width;\n  required unsigned long height;\n  required double mediaTime;\n\n  required unsigned long presentedFrames;\n  double processingDuration;\n\n  DOMHighResTimeStamp captureTime;\n  DOMHighResTimeStamp receiveTime;\n  unsigned long rtpTimestamp;\n};",
         "type": "dictionary",
         "name": "VideoFrameMetadata",
         "inheritance": null,
@@ -169,6 +170,7 @@
         "partial": false
       },
       "VideoFrameRequestCallback": {
+        "fragment": "callback VideoFrameRequestCallback = undefined(DOMHighResTimeStamp now, VideoFrameMetadata metadata);",
         "type": "callback",
         "name": "VideoFrameRequestCallback",
         "idlType": {
@@ -219,6 +221,7 @@
     "idlExtendedNames": {
       "HTMLVideoElement": [
         {
+          "fragment": "partial interface HTMLVideoElement {\n    unsigned long requestVideoFrameCallback(VideoFrameRequestCallback callback);\n    undefined cancelVideoFrameCallback(unsigned long handle);\n};",
           "type": "interface",
           "name": "HTMLVideoElement",
           "inheritance": null,

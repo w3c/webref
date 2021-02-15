@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "RTCPriorityType": {
+        "fragment": "enum RTCPriorityType {\n  \"very-low\",\n  \"low\",\n  \"medium\",\n  \"high\"\n};",
         "type": "enum",
         "name": "RTCPriorityType",
         "values": [
@@ -36,6 +37,7 @@
     "idlExtendedNames": {
       "RTCRtpEncodingParameters": [
         {
+          "fragment": "partial dictionary RTCRtpEncodingParameters {\n  RTCPriorityType priority = \"low\";\n  RTCPriorityType networkPriority;\n};",
           "type": "dictionary",
           "name": "RTCRtpEncodingParameters",
           "inheritance": null,
@@ -80,6 +82,7 @@
       ],
       "RTCDataChannel": [
         {
+          "fragment": "partial interface RTCDataChannel {\n  readonly attribute RTCPriorityType priority;\n};",
           "type": "interface",
           "name": "RTCDataChannel",
           "inheritance": null,
@@ -106,6 +109,7 @@
       ],
       "RTCDataChannelInit": [
         {
+          "fragment": "partial dictionary RTCDataChannelInit {\n  RTCPriorityType priority = \"low\";\n};",
           "type": "dictionary",
           "name": "RTCDataChannelInit",
           "inheritance": null,

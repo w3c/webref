@@ -1,0 +1,53 @@
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+interface mixin WindowOrWorkerGlobalScope {
+  [Replaceable] readonly attribute USVString origin;
+  readonly attribute boolean isSecureContext;
+  readonly attribute boolean crossOriginIsolated;
+
+  // base64 utility methods
+  DOMString btoa(DOMString data);
+  ByteString atob(DOMString data);
+
+  // timers
+  long setTimeout(TimerHandler handler, optional long timeout = 0, any... arguments);
+  undefined clearTimeout(optional long handle = 0);
+  long setInterval(TimerHandler handler, optional long timeout = 0, any... arguments);
+  undefined clearInterval(optional long handle = 0);
+
+  // microtask queuing
+  undefined queueMicrotask(VoidFunction callback);
+
+  // ImageBitmap
+  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, optional ImageBitmapOptions options = {});
+  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, long sx, long sy, long sw, long sh, optional ImageBitmapOptions options = {});
+};
+
+// Source: Fetch Standard (https://fetch.spec.whatwg.org/)
+partial interface mixin WindowOrWorkerGlobalScope {
+  [NewObject] Promise<Response> fetch(RequestInfo input, optional RequestInit init = {});
+};
+
+// Source: Origin Policy (https://wicg.github.io/origin-policy/)
+partial interface mixin WindowOrWorkerGlobalScope {
+  readonly attribute FrozenArray<DOMString> originPolicyIds;
+};
+
+// Source: High Resolution Time (https://www.w3.org/TR/hr-time-3/)
+partial interface mixin WindowOrWorkerGlobalScope {
+  [Replaceable] readonly attribute Performance performance;
+};
+
+// Source: Indexed Database API 2.0 (https://www.w3.org/TR/IndexedDB-2/)
+partial interface WindowOrWorkerGlobalScope {
+  [SameObject] readonly attribute IDBFactory indexedDB;
+};
+
+// Source: Secure Contexts (https://www.w3.org/TR/secure-contexts/)
+partial interface WindowOrWorkerGlobalScope {
+  readonly attribute boolean isSecureContext;
+};
+
+// Source: Service Workers 1 (https://www.w3.org/TR/service-workers-1/)
+partial interface WindowOrWorkerGlobalScope {
+  [SecureContext, SameObject] readonly attribute CacheStorage caches;
+};

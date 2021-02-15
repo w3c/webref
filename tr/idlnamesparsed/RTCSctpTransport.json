@@ -1,0 +1,27 @@
+{
+  "name": "RTCSctpTransport",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCSctpTransport : EventTarget {\n  readonly attribute RTCDtlsTransport transport;\n  readonly attribute RTCSctpTransportState state;\n  readonly attribute unrestricted double maxMessageSize;\n  readonly attribute unsigned short? maxChannels;\n  attribute EventHandler onstatechange;\n};",
+    "href": "https://www.w3.org/TR/webrtc/#dom-rtcsctptransport"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

@@ -1,0 +1,6 @@
+// Source: Reporting API (https://www.w3.org/TR/reporting-1/)
+interface Report {
+  readonly attribute DOMString type;
+  readonly attribute DOMString url;
+  readonly attribute ReportBody? body;
+};

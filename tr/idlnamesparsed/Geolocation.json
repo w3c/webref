@@ -1,0 +1,13 @@
+{
+  "name": "Geolocation",
+  "defined": {
+    "spec": {
+      "title": "Geolocation API Specification 2nd Edition",
+      "url": "https://www.w3.org/TR/geolocation-API/"
+    },
+    "fragment": "[NoInterfaceObject]\ninterface Geolocation {\n  void getCurrentPosition(PositionCallback successCallback,\n                          optional PositionErrorCallback errorCallback,\n                          optional PositionOptions options);\n\n  long watchPosition(PositionCallback successCallback,\n                     optional PositionErrorCallback errorCallback,\n                     optional PositionOptions options);\n\n  void clearWatch(long watchId);\n};"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

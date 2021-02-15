@@ -17,6 +17,7 @@
     },
     "idlNames": {
       "UserIdleState": {
+        "fragment": "enum UserIdleState {\n    \"active\",\n    \"idle\"\n};",
         "type": "enum",
         "name": "UserIdleState",
         "values": [
@@ -32,6 +33,7 @@
         "extAttrs": []
       },
       "ScreenIdleState": {
+        "fragment": "enum ScreenIdleState {\n    \"locked\",\n    \"unlocked\"\n};",
         "type": "enum",
         "name": "ScreenIdleState",
         "values": [
@@ -47,6 +49,7 @@
         "extAttrs": []
       },
       "IdleOptions": {
+        "fragment": "dictionary IdleOptions {\n  [EnforceRange] unsigned long long threshold;\n  AbortSignal signal;\n};",
         "type": "dictionary",
         "name": "IdleOptions",
         "inheritance": null,
@@ -93,6 +96,7 @@
         "partial": false
       },
       "IdleDetector": {
+        "fragment": "[\n  SecureContext,\n  Exposed=(Window,DedicatedWorker)\n] interface IdleDetector : EventTarget {\n  constructor();\n  readonly attribute UserIdleState? userState;\n  readonly attribute ScreenIdleState? screenState;\n  attribute EventHandler onchange;\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n  Promise<undefined> start(optional IdleOptions options = {});\n};",
         "type": "interface",
         "name": "IdleDetector",
         "inheritance": "EventTarget",

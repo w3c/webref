@@ -1,0 +1,27 @@
+{
+  "name": "MediaSessionSeekToActionDetails",
+  "defined": {
+    "spec": {
+      "title": "Media Session Standard",
+      "url": "https://www.w3.org/TR/mediasession/"
+    },
+    "fragment": "dictionary MediaSessionSeekToActionDetails : MediaSessionActionDetails {\n  required double seekTime;\n  boolean? fastSeek;\n};",
+    "href": "https://www.w3.org/TR/mediasession/#dictdef-mediasessionseektoactiondetails"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "MediaSessionActionDetails",
+    "defined": {
+      "spec": {
+        "title": "Media Session Standard",
+        "url": "https://www.w3.org/TR/mediasession/"
+      },
+      "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n};",
+      "href": "https://www.w3.org/TR/mediasession/#dictdef-mediasessionactiondetails"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

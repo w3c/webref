@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "Gyroscope": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface Gyroscope : Sensor {\n  constructor(optional GyroscopeSensorOptions sensorOptions = {});\n  readonly attribute double? x;\n  readonly attribute double? y;\n  readonly attribute double? z;\n};",
         "type": "interface",
         "name": "Gyroscope",
         "inheritance": "Sensor",
@@ -108,6 +109,7 @@
         "partial": false
       },
       "GyroscopeLocalCoordinateSystem": {
+        "fragment": "enum GyroscopeLocalCoordinateSystem { \"device\", \"screen\" };",
         "type": "enum",
         "name": "GyroscopeLocalCoordinateSystem",
         "values": [
@@ -123,6 +125,7 @@
         "extAttrs": []
       },
       "GyroscopeSensorOptions": {
+        "fragment": "dictionary GyroscopeSensorOptions : SensorOptions {\n  GyroscopeLocalCoordinateSystem referenceFrame = \"device\";\n};",
         "type": "dictionary",
         "name": "GyroscopeSensorOptions",
         "inheritance": "SensorOptions",
@@ -150,6 +153,7 @@
         "partial": false
       },
       "GyroscopeReadingValues": {
+        "fragment": "dictionary GyroscopeReadingValues {\n  required double? x;\n  required double? y;\n  required double? z;\n};",
         "type": "dictionary",
         "name": "GyroscopeReadingValues",
         "inheritance": null,

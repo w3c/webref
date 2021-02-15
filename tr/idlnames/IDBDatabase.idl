@@ -1,0 +1,21 @@
+// Source: Indexed Database API 2.0 (https://www.w3.org/TR/IndexedDB-2/)
+[Exposed=(Window,Worker)]
+interface IDBDatabase : EventTarget {
+  readonly attribute DOMString name;
+  readonly attribute unsigned long long version;
+  readonly attribute DOMStringList objectStoreNames;
+
+  [NewObject] IDBTransaction transaction((DOMString or sequence<DOMString>) storeNames,
+                                         optional IDBTransactionMode mode = "readonly");
+  void close();
+
+  [NewObject] IDBObjectStore createObjectStore(DOMString name,
+                                               optional IDBObjectStoreParameters options);
+  void deleteObjectStore(DOMString name);
+
+  // Event handlers:
+  attribute EventHandler onabort;
+  attribute EventHandler onclose;
+  attribute EventHandler onerror;
+  attribute EventHandler onversionchange;
+};

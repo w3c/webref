@@ -19,6 +19,7 @@
     },
     "idlNames": {
       "FaceDetector": {
+        "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface FaceDetector {\n  constructor(optional FaceDetectorOptions faceDetectorOptions = {});\n  Promise<sequence<DetectedFace>> detect(ImageBitmapSource image);\n};",
         "type": "interface",
         "name": "FaceDetector",
         "inheritance": null,
@@ -125,6 +126,7 @@
         "partial": false
       },
       "FaceDetectorOptions": {
+        "fragment": "dictionary FaceDetectorOptions {\n  unsigned short maxDetectedFaces;\n  boolean fastMode;\n};",
         "type": "dictionary",
         "name": "FaceDetectorOptions",
         "inheritance": null,
@@ -164,6 +166,7 @@
         "partial": false
       },
       "DetectedFace": {
+        "fragment": "dictionary DetectedFace {\n  required DOMRectReadOnly boundingBox;\n  required FrozenArray<Landmark>? landmarks;\n};",
         "type": "dictionary",
         "name": "DetectedFace",
         "inheritance": null,
@@ -212,6 +215,7 @@
         "partial": false
       },
       "Landmark": {
+        "fragment": "dictionary Landmark {\n  required FrozenArray<Point2D> locations;\n  LandmarkType type;\n};",
         "type": "dictionary",
         "name": "Landmark",
         "inheritance": null,
@@ -260,6 +264,7 @@
         "partial": false
       },
       "LandmarkType": {
+        "fragment": "enum LandmarkType {\n  \"mouth\",\n  \"eye\",\n  \"nose\"\n};",
         "type": "enum",
         "name": "LandmarkType",
         "values": [
@@ -279,6 +284,7 @@
         "extAttrs": []
       },
       "BarcodeDetector": {
+        "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface BarcodeDetector {\n  constructor(optional BarcodeDetectorOptions barcodeDetectorOptions = {});\n  static Promise<sequence<BarcodeFormat>> getSupportedFormats();\n\n  Promise<sequence<DetectedBarcode>> detect(ImageBitmapSource image);\n};",
         "type": "interface",
         "name": "BarcodeDetector",
         "inheritance": null,
@@ -418,6 +424,7 @@
         "partial": false
       },
       "BarcodeDetectorOptions": {
+        "fragment": "dictionary BarcodeDetectorOptions {\n  sequence<BarcodeFormat> formats;\n};",
         "type": "dictionary",
         "name": "BarcodeDetectorOptions",
         "inheritance": null,
@@ -451,6 +458,7 @@
         "partial": false
       },
       "DetectedBarcode": {
+        "fragment": "dictionary DetectedBarcode {\n  required DOMRectReadOnly boundingBox;\n  required DOMString rawValue;\n  required BarcodeFormat format;\n  required FrozenArray<Point2D> cornerPoints;\n};",
         "type": "dictionary",
         "name": "DetectedBarcode",
         "inheritance": null,
@@ -529,6 +537,7 @@
         "partial": false
       },
       "BarcodeFormat": {
+        "fragment": "enum BarcodeFormat {\n  \"aztec\",\n  \"code_128\",\n  \"code_39\",\n  \"code_93\",\n  \"codabar\",\n  \"data_matrix\",\n  \"ean_13\",\n  \"ean_8\",\n  \"itf\",\n  \"pdf417\",\n  \"qr_code\",\n  \"unknown\",\n  \"upc_a\",\n  \"upc_e\"\n};",
         "type": "enum",
         "name": "BarcodeFormat",
         "values": [

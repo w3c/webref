@@ -1,0 +1,23 @@
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+[Exposed=Worker]
+interface WorkerGlobalScope : EventTarget {
+  readonly attribute WorkerGlobalScope self;
+  readonly attribute WorkerLocation location;
+  readonly attribute WorkerNavigator navigator;
+  undefined importScripts(USVString... urls);
+
+  attribute OnErrorEventHandler onerror;
+  attribute EventHandler onlanguagechange;
+  attribute EventHandler onoffline;
+  attribute EventHandler ononline;
+  attribute EventHandler onrejectionhandled;
+  attribute EventHandler onunhandledrejection;
+};
+
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+WorkerGlobalScope includes WindowOrWorkerGlobalScope;
+
+// Source: CORS and RFC1918 (https://wicg.github.io/cors-rfc1918/)
+partial interface WorkerGlobalScope {
+  readonly attribute AddressSpace addressSpace;
+};

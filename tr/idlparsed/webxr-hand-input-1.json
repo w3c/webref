@@ -16,6 +16,7 @@
     },
     "idlNames": {
       "XRHand": {
+        "fragment": "[Exposed=Window]\ninterface XRHand {\n    iterable<XRJointSpace>;\n    readonly attribute unsigned long length;\n    getter XRJointSpace joint(unsigned long jointIndex);\n\n    const unsigned long WRIST = 0;\n\n    const unsigned long THUMB_METACARPAL = 1;\n    const unsigned long THUMB_PHALANX_PROXIMAL = 2;\n    const unsigned long THUMB_PHALANX_DISTAL = 3;\n    const unsigned long THUMB_PHALANX_TIP = 4;\n\n    const unsigned long INDEX_METACARPAL = 5;\n    const unsigned long INDEX_PHALANX_PROXIMAL = 6;\n    const unsigned long INDEX_PHALANX_INTERMEDIATE = 7;\n    const unsigned long INDEX_PHALANX_DISTAL = 8;\n    const unsigned long INDEX_PHALANX_TIP = 9;\n\n    const unsigned long MIDDLE_METACARPAL = 10;\n    const unsigned long MIDDLE_PHALANX_PROXIMAL = 11;\n    const unsigned long MIDDLE_PHALANX_INTERMEDIATE = 12;\n    const unsigned long MIDDLE_PHALANX_DISTAL = 13;\n    const unsigned long MIDDLE_PHALANX_TIP = 14;\n\n    const unsigned long RING_METACARPAL = 15;\n    const unsigned long RING_PHALANX_PROXIMAL = 16;\n    const unsigned long RING_PHALANX_INTERMEDIATE = 17;\n    const unsigned long RING_PHALANX_DISTAL = 18;\n    const unsigned long RING_PHALANX_TIP = 19;\n\n    const unsigned long LITTLE_METACARPAL = 20;\n    const unsigned long LITTLE_PHALANX_PROXIMAL = 21;\n    const unsigned long LITTLE_PHALANX_INTERMEDIATE = 22;\n    const unsigned long LITTLE_PHALANX_DISTAL = 23;\n    const unsigned long LITTLE_PHALANX_TIP = 24;\n};",
         "type": "interface",
         "name": "XRHand",
         "inheritance": null,
@@ -524,6 +525,7 @@
         "partial": false
       },
       "XRJointSpace": {
+        "fragment": "[Exposed=Window]\ninterface XRJointSpace: XRSpace {};",
         "type": "interface",
         "name": "XRJointSpace",
         "inheritance": "XRSpace",
@@ -542,6 +544,7 @@
         "partial": false
       },
       "XRJointPose": {
+        "fragment": "[Exposed=Window]\ninterface XRJointPose: XRPose {\n    readonly attribute float radius;\n};",
         "type": "interface",
         "name": "XRJointPose",
         "inheritance": "XRPose",
@@ -579,6 +582,7 @@
     "idlExtendedNames": {
       "XRInputSource": [
         {
+          "fragment": "partial interface XRInputSource {\n   readonly attribute XRHand? hand;\n};",
           "type": "interface",
           "name": "XRInputSource",
           "inheritance": null,
@@ -605,6 +609,7 @@
       ],
       "XRFrame": [
         {
+          "fragment": "partial interface XRFrame {\n    XRJointPose? getJointPose(XRJointSpace joint, XRSpace baseSpace);\n    boolean fillJointRadii(sequence<XRJointSpace> jointSpaces, Float32Array radii);\n\n    boolean fillPoses(sequence<XRSpace> spaces, XRSpace baseSpace, Float32Array transforms);\n};",
           "type": "interface",
           "name": "XRFrame",
           "inheritance": null,

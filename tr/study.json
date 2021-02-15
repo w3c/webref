@@ -2,11 +2,11 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-02-08T11:30:46.615Z",
+  "date": "2021-02-15T01:52:27.506Z",
   "stats": {
-    "crawled": 381,
+    "crawled": 383,
     "errors": 0,
-    "studied": 381
+    "studied": 383
   },
   "results": [
     {
@@ -709,7 +709,7 @@
     {
       "title": "ARIA in HTML",
       "shortname": "html-aria",
-      "date": "15 January 2021",
+      "date": "14 February 2021",
       "url": "https://www.w3.org/TR/html-aria/",
       "release": {
         "url": "https://www.w3.org/TR/html-aria/",
@@ -1209,6 +1209,19 @@
                 "access": "public",
                 "informative": false
               }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "getBattery()"
+                ],
+                "type": "method",
+                "for": [
+                  "Navigator"
+                ],
+                "access": "public",
+                "informative": false
+              }
             }
           ]
         },
@@ -1269,7 +1282,39 @@
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "sendBeacon(url, data)"
+                ],
+                "type": "method",
+                "for": [
+                  "Navigator"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-navigator-sendbeacon",
+                "href": "https://www.w3.org/TR/beacon/#dom-navigator-sendbeacon",
+                "linkingText": [
+                  "sendBeacon"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "sec-sendBeacon-method",
+                  "title": "sendBeacon Method",
+                  "number": "3.1"
+                },
+                "definedIn": "prose"
+              }
+            }
+          ]
         },
         "missingLinkRef": [
           "https://xhr.spec.whatwg.org/"
@@ -1481,6 +1526,11 @@
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/"
             },
             {
+              "url": "https://www.w3.org/TR/css-multicol-1/",
+              "title": "CSS Multi-column Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/css-multicol-1/"
+            },
+            {
               "url": "https://drafts.csswg.org/css-nesting-1/",
               "title": "CSS Nesting Module",
               "crawled": "https://drafts.csswg.org/css-nesting-1/"
@@ -1504,6 +1554,11 @@
               "url": "https://www.w3.org/TR/css-text-3/",
               "title": "CSS Text Module Level 3",
               "crawled": "https://www.w3.org/TR/css-text-3/"
+            },
+            {
+              "url": "https://drafts.css-houdini.org/css-typed-om-2/",
+              "title": "CSS Typed OM Level 2",
+              "crawled": "https://drafts.css-houdini.org/css-typed-om-2/"
             },
             {
               "url": "https://www.w3.org/TR/css-values-4/",
@@ -4925,7 +4980,7 @@
     {
       "title": "Client Hints Infrastructure",
       "shortname": "client-hints-infrastructure",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://wicg.github.io/client-hints-infrastructure/",
       "nightly": {
         "url": "https://wicg.github.io/client-hints-infrastructure/",
@@ -4956,15 +5011,14 @@
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/"
-            }
-          ],
-          "informative": [
+            },
             {
               "url": "https://wicg.github.io/ua-client-hints/",
               "title": "User-Agent Client Hints",
               "crawled": "https://wicg.github.io/ua-client-hints/"
             }
-          ]
+          ],
+          "informative": []
         },
         "xrefs": {
           "notExported": [
@@ -5453,6 +5507,11 @@
               "url": "https://wicg.github.io/import-maps/",
               "title": "Import Maps",
               "crawled": "https://wicg.github.io/import-maps/"
+            },
+            {
+              "url": "https://w3c.github.io/webdriver-bidi/",
+              "title": "WebDriver BiDi",
+              "crawled": "https://w3c.github.io/webdriver-bidi/"
             }
           ],
           "informative": []
@@ -5853,6 +5912,7 @@
           ],
           "brokenLinks": [
             "https://html.spec.whatwg.org/#browsing-context-nested-through",
+            "https://fetch.spec.whatwg.org/#network-scheme",
             "https://fetch.spec.whatwg.org/#concept-request-target-browsing-context",
             "https://w3c.github.io/reporting/#group"
           ],
@@ -6248,6 +6308,74 @@
                 "definedIn": "prose"
               },
               "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "requestIdleCallback(callback, options)"
+                ],
+                "type": "method",
+                "for": [
+                  "Window"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-window-requestidlecallback",
+                "href": "https://www.w3.org/TR/requestidlecallback/#dom-window-requestidlecallback",
+                "linkingText": [
+                  "requestidlecallback()",
+                  "requestIdleCallback"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "window"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "the-requestidlecallback-method",
+                  "title": "The requestIdleCallback method",
+                  "number": "5.1"
+                },
+                "definedIn": "heading"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "cancelIdleCallback(handle)"
+                ],
+                "type": "method",
+                "for": [
+                  "Window"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-window-cancelidlecallback",
+                "href": "https://www.w3.org/TR/requestidlecallback/#dom-window-cancelidlecallback",
+                "linkingText": [
+                  "cancelidlecallback()",
+                  "cancelIdleCallback"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "window"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "the-cancelidlecallback-method",
+                  "title": "The cancelIdleCallback method",
+                  "number": "5.2"
+                },
+                "definedIn": "heading"
+              }
             }
           ]
         },
@@ -7292,7 +7420,7 @@
     {
       "title": "CSS Backgrounds and Borders Module Level 4",
       "shortname": "css-backgrounds-4",
-      "date": "10 March 2020",
+      "date": "8 February 2021",
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-backgrounds-4/",
@@ -8044,6 +8172,11 @@
               "crawled": "https://drafts.csswg.org/css-size-adjust-1/"
             },
             {
+              "url": "https://www.w3.org/TR/css-multicol-1/",
+              "title": "CSS Multi-column Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/css-multicol-1/"
+            },
+            {
               "url": "https://drafts.csswg.org/css-multicol-2/",
               "title": "CSS Multi-column Layout Module Level 2",
               "crawled": "https://drafts.csswg.org/css-multicol-2/"
@@ -8134,11 +8267,6 @@
               "url": "https://www.w3.org/TR/css-conditional-3/",
               "title": "CSS Conditional Rules Module Level 3",
               "crawled": "https://www.w3.org/TR/css-conditional-3/"
-            },
-            {
-              "url": "https://www.w3.org/TR/css-multicol-1/",
-              "title": "CSS Multi-column Layout Module Level 1",
-              "crawled": "https://www.w3.org/TR/css-multicol-1/"
             }
           ]
         },
@@ -8229,7 +8357,7 @@
     {
       "title": "CSS Cascading and Inheritance Level 3",
       "shortname": "css-cascade-3",
-      "date": "22 December 2020",
+      "date": "11 February 2021",
       "url": "https://www.w3.org/TR/css-cascade-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-cascade-3/",
@@ -8255,16 +8383,12 @@
           "idl": []
         },
         "missingLinkRef": [
-          "https://www.w3.org/TR/css3-conditional/",
           "https://www.w3.org/TR/css3-mediaqueries/",
           "https://www.w3.org/TR/css-cascade/",
           "https://www.w3.org/TR/web-animations/",
-          "https://www.w3.org/TR/css3-writing-modes/",
           "https://www.w3.org/TR/selectors/",
           "https://www.w3.org/TR/css-style-attr/",
-          "https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/",
-          "https://www.w3.org/TR/css-inline-3/",
-          "https://www.w3.org/TR/css-writing-modes-4/"
+          "https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/"
         ],
         "inconsistentRef": [
           {
@@ -11955,6 +12079,11 @@
               "crawled": "https://drafts.csswg.org/css-grid-3/"
             },
             {
+              "url": "https://www.w3.org/TR/css-multicol-1/",
+              "title": "CSS Multi-column Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/css-multicol-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-values-4/",
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://www.w3.org/TR/css-values-4/"
@@ -11995,7 +12124,7 @@
     {
       "title": "CSS Grid Layout Module Level 3",
       "shortname": "css-grid-3",
-      "date": "22 October 2020",
+      "date": "8 February 2021",
       "url": "https://drafts.csswg.org/css-grid-3/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-grid-3/",
@@ -12444,7 +12573,13 @@
               "crawled": "https://www.w3.org/TR/SVG2/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-cascade-3/",
+              "title": "CSS Cascading and Inheritance Level 3",
+              "crawled": "https://www.w3.org/TR/css-cascade-3/"
+            }
+          ]
         },
         "xrefs": {
           "notExported": [
@@ -13081,7 +13216,7 @@
     {
       "title": "CSS Multi-column Layout Module Level 1",
       "shortname": "css-multicol-1",
-      "date": "15 October 2019",
+      "date": "12 February 2021",
       "url": "https://www.w3.org/TR/css-multicol-1/",
       "release": {
         "url": "https://www.w3.org/TR/css-multicol-1/",
@@ -13107,16 +13242,13 @@
           "idl": []
         },
         "missingLinkRef": [
-          "https://www.w3.org/TR/css3-background/",
-          "https://www.w3.org/TR/css3-positioning/",
-          "https://www.w3.org/TR/css3-align/",
-          "https://www.w3.org/TR/css3-color/",
-          "https://www.w3.org/TR/css3-break/",
+          "https://www.w3.org/TR/css-cascade/",
+          "https://www.w3.org/TR/web-animations/",
           "https://www.w3.org/TR/2011/CR-css3-multicol-20110412/"
         ],
         "inconsistentRef": [
           {
-            "link": "https://www.w3.org/TR/css3-values/",
+            "link": "https://www.w3.org/TR/css-values/",
             "ref": {
               "name": "CSS-VALUES-3",
               "url": "https://www.w3.org/TR/css-values-3/"
@@ -13218,8 +13350,7 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/css-display-3/#absolutely-positioned",
-            "https://www.w3.org/TR/css3-color/#valuea-def-color"
+            "https://www.w3.org/TR/css-color-3/#valuea-def-color"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -18502,7 +18633,7 @@
     {
       "title": "CSS Typed OM Level 2",
       "shortname": "css-typed-om-2",
-      "date": "10 May 2018",
+      "date": "8 February 2021",
       "url": "https://drafts.css-houdini.org/css-typed-om-2/",
       "nightly": {
         "url": "https://drafts.css-houdini.org/css-typed-om-2/",
@@ -18529,7 +18660,18 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "xrefs": {
+          "notExported": [],
+          "notDfn": [
+            "https://drafts.csswg.org/css2/#value-def-identifier",
+            "https://drafts.csswg.org/css2/#value-def-uri"
+          ],
+          "brokenLinks": [],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
+        },
+        "ok": false
       }
     },
     {
@@ -18909,6 +19051,11 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://www.w3.org/TR/css-typed-om-1/"
+            },
+            {
+              "url": "https://drafts.css-houdini.org/css-typed-om-2/",
+              "title": "CSS Typed OM Level 2",
+              "crawled": "https://drafts.css-houdini.org/css-typed-om-2/"
             },
             {
               "url": "https://www.w3.org/TR/css-will-change-1/",
@@ -19842,7 +19989,13 @@
               "crawled": "https://www.w3.org/TR/webvtt1/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-cascade-3/",
+              "title": "CSS Cascading and Inheritance Level 3",
+              "crawled": "https://www.w3.org/TR/css-cascade-3/"
+            }
+          ]
         },
         "xrefs": {
           "notExported": [],
@@ -20518,6 +20671,58 @@
                 "type": "method",
                 "for": [
                   "XMLSerializer"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "innerHTML"
+                ],
+                "type": "attribute",
+                "for": [
+                  "Element"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "outerHTML"
+                ],
+                "type": "attribute",
+                "for": [
+                  "Element"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "insertAdjacentHTML(position, text)"
+                ],
+                "type": "method",
+                "for": [
+                  "Element"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "createContextualFragment(fragment)"
+                ],
+                "type": "method",
+                "for": [
+                  "Range"
                 ],
                 "access": "public",
                 "informative": false
@@ -21468,7 +21673,7 @@
     {
       "title": "ECMAScript® 2021 Internationalization API Specification",
       "shortname": "ecma-402",
-      "date": "14 January 2021",
+      "date": "11 February 2021",
       "url": "https://tc39.es/ecma402/",
       "nightly": {
         "url": "https://tc39.es/ecma402/",
@@ -21517,7 +21722,7 @@
     {
       "title": "ECMAScript® 2021 Language Specification",
       "shortname": "ecmascript",
-      "date": "6 February 2021",
+      "date": "12 February 2021",
       "url": "https://tc39.es/ecma262/",
       "nightly": {
         "url": "https://tc39.es/ecma262/",
@@ -24267,6 +24472,168 @@
                 },
                 "definedIn": "dt"
               }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "requestMediaKeySystemAccess(keySystem, supportedConfigurations)"
+                ],
+                "type": "method",
+                "for": [
+                  "Navigator"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-navigator-requestmediakeysystemaccess",
+                "href": "https://www.w3.org/TR/encrypted-media/#dom-navigator-requestmediakeysystemaccess",
+                "linkingText": [
+                  "requestmediakeysystemaccess()",
+                  "requestMediaKeySystemAccess"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "navigator"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "methods",
+                  "title": "Methods"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "mediaKeys"
+                ],
+                "type": "attribute",
+                "for": [
+                  "HTMLMediaElement"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-htmlmediaelement-mediakeys",
+                "href": "https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-mediakeys",
+                "linkingText": [
+                  "mediaKeys"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "htmlmediaelement"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "attributes-3",
+                  "title": "Attributes"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "onencrypted"
+                ],
+                "type": "attribute",
+                "for": [
+                  "HTMLMediaElement"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-htmlmediaelement-onencrypted",
+                "href": "https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-onencrypted",
+                "linkingText": [
+                  "onencrypted"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "htmlmediaelement"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "attributes-3",
+                  "title": "Attributes"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "onwaitingforkey"
+                ],
+                "type": "attribute",
+                "for": [
+                  "HTMLMediaElement"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-htmlmediaelement-onwaitingforkey",
+                "href": "https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-onwaitingforkey",
+                "linkingText": [
+                  "onwaitingforkey"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "htmlmediaelement"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "attributes-3",
+                  "title": "Attributes"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "setMediaKeys(mediaKeys)"
+                ],
+                "type": "method",
+                "for": [
+                  "HTMLMediaElement"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-htmlmediaelement-setmediakeys",
+                "href": "https://www.w3.org/TR/encrypted-media/#dom-htmlmediaelement-setmediakeys",
+                "linkingText": [
+                  "setmediakeys()",
+                  "setMediaKeys"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "htmlmediaelement"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "methods-4",
+                  "title": "Methods"
+                },
+                "definedIn": "dt"
+              }
             }
           ]
         },
@@ -24499,7 +24866,7 @@
     {
       "title": "Fetch Standard",
       "shortname": "fetch",
-      "date": "4 February 2021",
+      "date": "12 February 2021",
       "url": "https://fetch.spec.whatwg.org/",
       "nightly": {
         "url": "https://fetch.spec.whatwg.org/",
@@ -25301,6 +25668,11 @@
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
               "crawled": "https://www.w3.org/TR/webrtc/"
+            },
+            {
+              "url": "https://w3c.github.io/webrtc-insertable-streams/",
+              "title": "WebRTC Insertable Media using Streams",
+              "crawled": "https://w3c.github.io/webrtc-insertable-streams/"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -26964,6 +27336,19 @@
                 },
                 "definedIn": "prose"
               }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "geolocation"
+                ],
+                "type": "attribute",
+                "for": [
+                  "Navigator"
+                ],
+                "access": "public",
+                "informative": false
+              }
             }
           ]
         },
@@ -28258,7 +28643,41 @@
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "capture"
+                ],
+                "type": "attribute",
+                "for": [
+                  "HTMLInputElement"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-htmlinputelement-capture",
+                "href": "https://www.w3.org/TR/html-media-capture/#dom-htmlinputelement-capture",
+                "linkingText": [
+                  "capture"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "htmlinputelement"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "the-capture-attribute",
+                  "title": "The capture attribute",
+                  "number": "5"
+                },
+                "definedIn": "heading"
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -28287,7 +28706,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "5 February 2021",
+      "date": "11 February 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -36338,483 +36757,6 @@
             {
               "expected": {
                 "linkingText": [
-                  "plugins"
-                ],
-                "type": "attribute",
-                "for": [
-                  "NavigatorPlugins"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-document-plugins",
-                "href": "https://html.spec.whatwg.org/multipage/dom.html#dom-document-plugins",
-                "linkingText": [
-                  "plugins"
-                ],
-                "localLinkingText": [],
-                "type": "attribute",
-                "for": [
-                  "Document"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "dom-tree-accessors",
-                  "title": "DOM tree accessors",
-                  "number": "3.1.4"
-                },
-                "definedIn": "prose"
-              },
-              "for": {
-                "id": "navigatorplugins",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins",
-                "linkingText": [
-                  "NavigatorPlugins"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "pre"
-              }
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "mimeTypes"
-                ],
-                "type": "attribute",
-                "for": [
-                  "NavigatorPlugins"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "for": {
-                "id": "navigatorplugins",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins",
-                "linkingText": [
-                  "NavigatorPlugins"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "pre"
-              }
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "javaEnabled()"
-                ],
-                "type": "method",
-                "for": [
-                  "NavigatorPlugins"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "for": {
-                "id": "navigatorplugins",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins",
-                "linkingText": [
-                  "NavigatorPlugins"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "pre"
-              }
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "refresh(reload)"
-                ],
-                "type": "method",
-                "for": [
-                  "PluginArray"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-pluginarray-refresh",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-refresh",
-                "linkingText": [
-                  "refresh()"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "PluginArray"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "prose"
-              },
-              "for": {
-                "id": "pluginarray",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#pluginarray",
-                "linkingText": [
-                  "PluginArray"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "pre"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "item(index)"
-                ],
-                "type": "method",
-                "for": [
-                  "PluginArray"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-pluginarray-item",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-item",
-                "linkingText": [
-                  "item()"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "PluginArray"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "prose"
-              },
-              "for": {
-                "id": "pluginarray",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#pluginarray",
-                "linkingText": [
-                  "PluginArray"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "pre"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "namedItem(name)"
-                ],
-                "type": "method",
-                "for": [
-                  "PluginArray"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-pluginarray-nameditem",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-pluginarray-nameditem",
-                "linkingText": [
-                  "namedItem()"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "PluginArray"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "prose"
-              },
-              "for": {
-                "id": "pluginarray",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#pluginarray",
-                "linkingText": [
-                  "PluginArray"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "pre"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "item(index)"
-                ],
-                "type": "method",
-                "for": [
-                  "MimeTypeArray"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-mimetypearray-item",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetypearray-item",
-                "linkingText": [
-                  "item()"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "MimeTypeArray"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "prose"
-              },
-              "for": {
-                "id": "mimetypearray",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#mimetypearray",
-                "linkingText": [
-                  "MimeTypeArray"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "pre"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "namedItem(name)"
-                ],
-                "type": "method",
-                "for": [
-                  "MimeTypeArray"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-mimetypearray-nameditem",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-mimetypearray-nameditem",
-                "linkingText": [
-                  "namedItem()"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "MimeTypeArray"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "prose"
-              },
-              "for": {
-                "id": "mimetypearray",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#mimetypearray",
-                "linkingText": [
-                  "MimeTypeArray"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "pre"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "item(index)"
-                ],
-                "type": "method",
-                "for": [
-                  "Plugin"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-plugin-item",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin-item",
-                "linkingText": [
-                  "item()"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "Plugin"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "prose"
-              },
-              "for": {
-                "id": "dom-plugin",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin",
-                "linkingText": [
-                  "Plugin"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "pre"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "namedItem(name)"
-                ],
-                "type": "method",
-                "for": [
-                  "Plugin"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-plugin-nameditem",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin-nameditem",
-                "linkingText": [
-                  "namedItem()"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "Plugin"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "prose"
-              },
-              "for": {
-                "id": "dom-plugin",
-                "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin",
-                "linkingText": [
-                  "Plugin"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "plugins-2",
-                  "title": "Plugins",
-                  "number": "8.9.1.6"
-                },
-                "definedIn": "pre"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
                   "cancelAnimationFrame(handle)"
                 ],
                 "type": "method",
@@ -38174,6 +38116,595 @@
                   "number": "12.2.4"
                 },
                 "definedIn": "pre"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "item(index)"
+                ],
+                "type": "method",
+                "for": [
+                  "PluginArray"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-pluginarray-item",
+                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-pluginarray-item",
+                "linkingText": [
+                  "item()"
+                ],
+                "localLinkingText": [],
+                "type": "method",
+                "for": [
+                  "PluginArray"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "other-elements,-attributes-and-apis",
+                  "title": "Other elements, attributes and APIs",
+                  "number": "16.3.3"
+                },
+                "definedIn": "prose"
+              },
+              "for": {
+                "id": "pluginarray",
+                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#pluginarray",
+                "linkingText": [
+                  "PluginArray"
+                ],
+                "localLinkingText": [],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "other-elements,-attributes-and-apis",
+                  "title": "Other elements, attributes and APIs",
+                  "number": "16.3.3"
+                },
+                "definedIn": "pre"
+              },
+              "warning": true
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "namedItem(name)"
+                ],
+                "type": "method",
+                "for": [
+                  "PluginArray"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-pluginarray-nameditem",
+                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-pluginarray-nameditem",
+                "linkingText": [
+                  "namedItem()"
+                ],
+                "localLinkingText": [],
+                "type": "method",
+                "for": [
+                  "PluginArray"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "other-elements,-attributes-and-apis",
+                  "title": "Other elements, attributes and APIs",
+                  "number": "16.3.3"
+                },
+                "definedIn": "prose"
+              },
+              "for": {
+                "id": "pluginarray",
+                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#pluginarray",
+                "linkingText": [
+                  "PluginArray"
+                ],
+                "localLinkingText": [],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "other-elements,-attributes-and-apis",
+                  "title": "Other elements, attributes and APIs",
+                  "number": "16.3.3"
+                },
+                "definedIn": "pre"
+              },
+              "warning": true
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "item(index)"
+                ],
+                "type": "method",
+                "for": [
+                  "MimeTypeArray"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mimetypearray-item",
+                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-item",
+                "linkingText": [
+                  "item()"
+                ],
+                "localLinkingText": [],
+                "type": "method",
+                "for": [
+                  "MimeTypeArray"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "other-elements,-attributes-and-apis",
+                  "title": "Other elements, attributes and APIs",
+                  "number": "16.3.3"
+                },
+                "definedIn": "prose"
+              },
+              "for": {
+                "id": "mimetypearray",
+                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray",
+                "linkingText": [
+                  "MimeTypeArray"
+                ],
+                "localLinkingText": [],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "other-elements,-attributes-and-apis",
+                  "title": "Other elements, attributes and APIs",
+                  "number": "16.3.3"
+                },
+                "definedIn": "pre"
+              },
+              "warning": true
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "namedItem(name)"
+                ],
+                "type": "method",
+                "for": [
+                  "MimeTypeArray"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mimetypearray-nameditem",
+                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-nameditem",
+                "linkingText": [
+                  "namedItem()"
+                ],
+                "localLinkingText": [],
+                "type": "method",
+                "for": [
+                  "MimeTypeArray"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "other-elements,-attributes-and-apis",
+                  "title": "Other elements, attributes and APIs",
+                  "number": "16.3.3"
+                },
+                "definedIn": "prose"
+              },
+              "for": {
+                "id": "mimetypearray",
+                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray",
+                "linkingText": [
+                  "MimeTypeArray"
+                ],
+                "localLinkingText": [],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "other-elements,-attributes-and-apis",
+                  "title": "Other elements, attributes and APIs",
+                  "number": "16.3.3"
+                },
+                "definedIn": "pre"
+              },
+              "warning": true
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "item(index)"
+                ],
+                "type": "method",
+                "for": [
+                  "Plugin"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-plugin-item",
+                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-item",
+                "linkingText": [
+                  "item()"
+                ],
+                "localLinkingText": [],
+                "type": "method",
+                "for": [
+                  "Plugin"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "other-elements,-attributes-and-apis",
+                  "title": "Other elements, attributes and APIs",
+                  "number": "16.3.3"
+                },
+                "definedIn": "prose"
+              },
+              "for": {
+                "id": "dom-plugin",
+                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin",
+                "linkingText": [
+                  "Plugin"
+                ],
+                "localLinkingText": [],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "other-elements,-attributes-and-apis",
+                  "title": "Other elements, attributes and APIs",
+                  "number": "16.3.3"
+                },
+                "definedIn": "pre"
+              },
+              "warning": true
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "namedItem(name)"
+                ],
+                "type": "method",
+                "for": [
+                  "Plugin"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-plugin-nameditem",
+                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-nameditem",
+                "linkingText": [
+                  "namedItem()"
+                ],
+                "localLinkingText": [],
+                "type": "method",
+                "for": [
+                  "Plugin"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "other-elements,-attributes-and-apis",
+                  "title": "Other elements, attributes and APIs",
+                  "number": "16.3.3"
+                },
+                "definedIn": "prose"
+              },
+              "for": {
+                "id": "dom-plugin",
+                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin",
+                "linkingText": [
+                  "Plugin"
+                ],
+                "localLinkingText": [],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "other-elements,-attributes-and-apis",
+                  "title": "Other elements, attributes and APIs",
+                  "number": "16.3.3"
+                },
+                "definedIn": "pre"
+              },
+              "warning": true
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "getElementsByName(elementName)"
+                ],
+                "type": "method",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-document-getelementsbyname",
+                "href": "https://html.spec.whatwg.org/multipage/dom.html#dom-document-getelementsbyname",
+                "linkingText": [
+                  "getElementsByName(name)"
+                ],
+                "localLinkingText": [],
+                "type": "method",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "dom-tree-accessors",
+                  "title": "DOM tree accessors",
+                  "number": "3.1.4"
+                },
+                "definedIn": "prose"
+              },
+              "warning": true
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "write(...text)"
+                ],
+                "type": "method",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "writeln(...text)"
+                ],
+                "type": "method",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "designMode"
+                ],
+                "type": "attribute",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "designMode",
+                "href": "https://html.spec.whatwg.org/multipage/interaction.html#designMode",
+                "linkingText": [
+                  "designMode"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "making-entire-documents-editable:-the-designmode-idl-attribute",
+                  "title": "Making entire documents editable: the designMode getter and setter",
+                  "number": "6.7.2"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "execCommand(commandId, showUI, value)"
+                ],
+                "type": "method",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "execCommand",
+                "href": "https://html.spec.whatwg.org/multipage/interaction.html#execCommand",
+                "linkingText": [
+                  "execCommand()"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "editing-apis",
+                  "title": "Editing APIs",
+                  "number": "6.7.4"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "queryCommandEnabled(commandId)"
+                ],
+                "type": "method",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-document-querycommandenabled",
+                "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandenabled",
+                "linkingText": [
+                  "queryCommandEnabled()"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "editing-apis",
+                  "title": "Editing APIs",
+                  "number": "6.7.4"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "queryCommandIndeterm(commandId)"
+                ],
+                "type": "method",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-document-querycommandindeterm",
+                "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandindeterm",
+                "linkingText": [
+                  "queryCommandIndeterm()"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "editing-apis",
+                  "title": "Editing APIs",
+                  "number": "6.7.4"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "queryCommandState(commandId)"
+                ],
+                "type": "method",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-document-querycommandstate",
+                "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandstate",
+                "linkingText": [
+                  "queryCommandState()"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "editing-apis",
+                  "title": "Editing APIs",
+                  "number": "6.7.4"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "queryCommandSupported(commandId)"
+                ],
+                "type": "method",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-document-querycommandsupported",
+                "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandsupported",
+                "linkingText": [
+                  "queryCommandSupported()"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "editing-apis",
+                  "title": "Editing APIs",
+                  "number": "6.7.4"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "queryCommandValue(commandId)"
+                ],
+                "type": "method",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-document-querycommandvalue",
+                "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandvalue",
+                "linkingText": [
+                  "queryCommandValue()"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "editing-apis",
+                  "title": "Editing APIs",
+                  "number": "6.7.4"
+                },
+                "definedIn": "prose"
               }
             }
           ]
@@ -39739,6 +40270,7 @@
           ],
           "brokenLinks": [
             "https://dom.spec.whatwg.org/#dom-element-setAttribute",
+            "https://fetch.spec.whatwg.org/#synchronous-flag",
             "https://drafts.csswg.org/css2/#block-boxes%E2%91%A0",
             "https://drafts.csswg.org/css2/#out-of-flow",
             "https://drafts.csswg.org/css2/#in-flow",
@@ -41512,6 +42044,49 @@
       }
     },
     {
+      "title": "JSON modules",
+      "shortname": "tc39-json-modules",
+      "date": "6 February 2021",
+      "url": "https://tc39.es/proposal-json-modules/",
+      "nightly": {
+        "url": "https://tc39.es/proposal-json-modules/",
+        "repository": "https://github.com/tc39/proposal-json-modules",
+        "sourcePath": "spec.html",
+        "filename": "index.html"
+      },
+      "crawled": "https://tc39.es/proposal-json-modules/",
+      "report": {
+        "noNormativeRefs": true,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingDfns": {
+          "css": [],
+          "idl": []
+        },
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "xrefs": {
+          "notExported": [],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://heycam.github.io/webidl/#synthetic-module-records"
+          ],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Keyboard Lock",
       "shortname": "keyboard-lock",
       "date": "27 May 2020",
@@ -41730,7 +42305,7 @@
     {
       "title": "Layout Instability API",
       "shortname": "layout-instability",
-      "date": "27 January 2021",
+      "date": "11 February 2021",
       "url": "https://wicg.github.io/layout-instability/",
       "nightly": {
         "url": "https://wicg.github.io/layout-instability/",
@@ -41905,6 +42480,7 @@
           "brokenLinks": [
             "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-navigationpreload",
             "https://w3c.github.io/ServiceWorker/#dom-fetchevent-preloadresponse",
+            "https://fetch.spec.whatwg.org/#synchronous-flag",
             "https://w3c.github.io/network-error-logging/#deliver-a-network-report",
             "https://heycam.github.io/webidl/#sequence-type"
           ],
@@ -42485,11 +43061,6 @@
               "crawled": "https://www.w3.org/TR/webaudio/"
             },
             {
-              "url": "https://wicg.github.io/web-codecs/",
-              "title": "WebCodecs",
-              "crawled": "https://wicg.github.io/web-codecs/"
-            },
-            {
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
               "crawled": "https://www.w3.org/TR/webrtc/"
@@ -43041,6 +43612,1326 @@
                 },
                 "definedIn": "prose"
               }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "videoKind"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSupportedConstraints"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-videokind",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-videokind",
+                "linkingText": [
+                  "videoKind"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-videoKind",
+                  "title": "videoKind",
+                  "number": "7.5.1"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "focalLengthX"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSupportedConstraints"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-focallengthx",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthx",
+                "linkingText": [
+                  "focalLengthX"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-focalLengthX",
+                  "title": "focalLengthX",
+                  "number": "7.5.2"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "focalLengthY"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSupportedConstraints"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-focallengthy",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthy",
+                "linkingText": [
+                  "focalLengthY"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-focalLengthY",
+                  "title": "focalLengthY",
+                  "number": "7.5.3"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "principalPointX"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSupportedConstraints"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-principalpointx",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointx",
+                "linkingText": [
+                  "principalPointX"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-principalPointX",
+                  "title": "principalPointX",
+                  "number": "7.5.4"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "principalPointY"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSupportedConstraints"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-principalpointy",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointy",
+                "linkingText": [
+                  "principalPointY"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-principalPointY",
+                  "title": "principalPointY",
+                  "number": "7.5.5"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "deprojectionDistortionCoefficients"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSupportedConstraints"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients",
+                "linkingText": [
+                  "deprojectionDistortionCoefficients"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-deprojectionDistortionCoefficients",
+                  "title": "deprojectionDistortionCoefficients",
+                  "number": "7.5.6"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "projectionDistortionCoefficients"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSupportedConstraints"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-projectiondistortioncoefficients",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients",
+                "linkingText": [
+                  "projectionDistortionCoefficients"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-projectionDistortionCoefficients",
+                  "title": "projectionDistortionCoefficients",
+                  "number": "7.5.7"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "depthNear"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSupportedConstraints"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-depthnear",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthnear",
+                "linkingText": [
+                  "depthNear"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-depthNear-depthFar",
+                  "title": "depthNear and depthFar",
+                  "number": "7.6.1"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "depthFar"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSupportedConstraints"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-depthfar",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthfar",
+                "linkingText": [
+                  "depthFar"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-depthNear-depthFar",
+                  "title": "depthNear and depthFar",
+                  "number": "7.6.1"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "depthToVideoTransform"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSupportedConstraints"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-depthtovideotransform",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthtovideotransform",
+                "linkingText": [
+                  "depthToVideoTransform"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-depthToVideoTransform",
+                  "title": "depthToVideoTransform",
+                  "number": "7.6.2"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "videoKind"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackCapabilities"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-videokind",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-videokind",
+                "linkingText": [
+                  "videoKind"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-videoKind",
+                  "title": "videoKind",
+                  "number": "7.5.1"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "focalLengthX"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackCapabilities"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-focallengthx",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthx",
+                "linkingText": [
+                  "focalLengthX"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-focalLengthX",
+                  "title": "focalLengthX",
+                  "number": "7.5.2"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "focalLengthY"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackCapabilities"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-focallengthy",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthy",
+                "linkingText": [
+                  "focalLengthY"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-focalLengthY",
+                  "title": "focalLengthY",
+                  "number": "7.5.3"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "principalPointX"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackCapabilities"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-principalpointx",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointx",
+                "linkingText": [
+                  "principalPointX"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-principalPointX",
+                  "title": "principalPointX",
+                  "number": "7.5.4"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "principalPointY"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackCapabilities"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-principalpointy",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointy",
+                "linkingText": [
+                  "principalPointY"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-principalPointY",
+                  "title": "principalPointY",
+                  "number": "7.5.5"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "deprojectionDistortionCoefficients"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackCapabilities"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients",
+                "linkingText": [
+                  "deprojectionDistortionCoefficients"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-deprojectionDistortionCoefficients",
+                  "title": "deprojectionDistortionCoefficients",
+                  "number": "7.5.6"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "projectionDistortionCoefficients"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackCapabilities"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-projectiondistortioncoefficients",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients",
+                "linkingText": [
+                  "projectionDistortionCoefficients"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-projectionDistortionCoefficients",
+                  "title": "projectionDistortionCoefficients",
+                  "number": "7.5.7"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "depthNear"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackCapabilities"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-depthnear",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthnear",
+                "linkingText": [
+                  "depthNear"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-depthNear-depthFar",
+                  "title": "depthNear and depthFar",
+                  "number": "7.6.1"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "depthFar"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackCapabilities"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-depthfar",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthfar",
+                "linkingText": [
+                  "depthFar"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-depthNear-depthFar",
+                  "title": "depthNear and depthFar",
+                  "number": "7.6.1"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "depthToVideoTransform"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackCapabilities"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-depthtovideotransform",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthtovideotransform",
+                "linkingText": [
+                  "depthToVideoTransform"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-depthToVideoTransform",
+                  "title": "depthToVideoTransform",
+                  "number": "7.6.2"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "videoKind"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackConstraintSet"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-videokind",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-videokind",
+                "linkingText": [
+                  "videoKind"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-videoKind",
+                  "title": "videoKind",
+                  "number": "7.5.1"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "focalLengthX"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackConstraintSet"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-focallengthx",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthx",
+                "linkingText": [
+                  "focalLengthX"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-focalLengthX",
+                  "title": "focalLengthX",
+                  "number": "7.5.2"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "focalLengthY"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackConstraintSet"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-focallengthy",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthy",
+                "linkingText": [
+                  "focalLengthY"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-focalLengthY",
+                  "title": "focalLengthY",
+                  "number": "7.5.3"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "principalPointX"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackConstraintSet"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-principalpointx",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointx",
+                "linkingText": [
+                  "principalPointX"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-principalPointX",
+                  "title": "principalPointX",
+                  "number": "7.5.4"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "principalPointY"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackConstraintSet"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-principalpointy",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointy",
+                "linkingText": [
+                  "principalPointY"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-principalPointY",
+                  "title": "principalPointY",
+                  "number": "7.5.5"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "deprojectionDistortionCoefficients"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackConstraintSet"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients",
+                "linkingText": [
+                  "deprojectionDistortionCoefficients"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-deprojectionDistortionCoefficients",
+                  "title": "deprojectionDistortionCoefficients",
+                  "number": "7.5.6"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "projectionDistortionCoefficients"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackConstraintSet"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-projectiondistortioncoefficients",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients",
+                "linkingText": [
+                  "projectionDistortionCoefficients"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-projectionDistortionCoefficients",
+                  "title": "projectionDistortionCoefficients",
+                  "number": "7.5.7"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "depthNear"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackConstraintSet"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-depthnear",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthnear",
+                "linkingText": [
+                  "depthNear"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-depthNear-depthFar",
+                  "title": "depthNear and depthFar",
+                  "number": "7.6.1"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "depthFar"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackConstraintSet"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-depthfar",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthfar",
+                "linkingText": [
+                  "depthFar"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-depthNear-depthFar",
+                  "title": "depthNear and depthFar",
+                  "number": "7.6.1"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "depthToVideoTransform"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackConstraintSet"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-depthtovideotransform",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthtovideotransform",
+                "linkingText": [
+                  "depthToVideoTransform"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-depthToVideoTransform",
+                  "title": "depthToVideoTransform",
+                  "number": "7.6.2"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "videoKind"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSettings"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-videokind",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-videokind",
+                "linkingText": [
+                  "videoKind"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-videoKind",
+                  "title": "videoKind",
+                  "number": "7.5.1"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "focalLengthX"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSettings"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-focallengthx",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthx",
+                "linkingText": [
+                  "focalLengthX"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-focalLengthX",
+                  "title": "focalLengthX",
+                  "number": "7.5.2"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "focalLengthY"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSettings"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-focallengthy",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-focallengthy",
+                "linkingText": [
+                  "focalLengthY"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-focalLengthY",
+                  "title": "focalLengthY",
+                  "number": "7.5.3"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "principalPointX"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSettings"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-principalpointx",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointx",
+                "linkingText": [
+                  "principalPointX"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-principalPointX",
+                  "title": "principalPointX",
+                  "number": "7.5.4"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "principalPointY"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSettings"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-principalpointy",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-principalpointy",
+                "linkingText": [
+                  "principalPointY"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-principalPointY",
+                  "title": "principalPointY",
+                  "number": "7.5.5"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "deprojectionDistortionCoefficients"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSettings"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-deprojectiondistortioncoefficients",
+                "linkingText": [
+                  "deprojectionDistortionCoefficients"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-deprojectionDistortionCoefficients",
+                  "title": "deprojectionDistortionCoefficients",
+                  "number": "7.5.6"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "projectionDistortionCoefficients"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSettings"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-projectiondistortioncoefficients",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-projectiondistortioncoefficients",
+                "linkingText": [
+                  "projectionDistortionCoefficients"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-projectionDistortionCoefficients",
+                  "title": "projectionDistortionCoefficients",
+                  "number": "7.5.7"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "depthNear"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSettings"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-depthnear",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthnear",
+                "linkingText": [
+                  "depthNear"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-depthNear-depthFar",
+                  "title": "depthNear and depthFar",
+                  "number": "7.6.1"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "depthFar"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSettings"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-depthfar",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthfar",
+                "linkingText": [
+                  "depthFar"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-depthNear-depthFar",
+                  "title": "depthNear and depthFar",
+                  "number": "7.6.1"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "depthToVideoTransform"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MediaTrackSettings"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mediatracksupportedconstraints-depthtovideotransform",
+                "href": "https://www.w3.org/TR/mediacapture-depth/#dom-mediatracksupportedconstraints-depthtovideotransform",
+                "linkingText": [
+                  "depthToVideoTransform"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "mediatracksupportedconstraints"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "def-constraint-depthToVideoTransform",
+                  "title": "depthToVideoTransform",
+                  "number": "7.6.2"
+                },
+                "definedIn": "prose"
+              }
             }
           ]
         },
@@ -43490,6 +45381,11 @@
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://www.w3.org/TR/css-grid-2/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-multicol-1/",
+              "title": "CSS Multi-column Layout Module Level 1",
+              "crawled": "https://www.w3.org/TR/css-multicol-1/"
             },
             {
               "url": "https://www.w3.org/TR/css-values-4/",
@@ -45046,6 +46942,135 @@
                 },
                 "definedIn": "dt"
               }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "createObjectURL(mediaSource)"
+                ],
+                "type": "method",
+                "for": [
+                  "URL"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-url-createobjecturl",
+                "href": "https://www.w3.org/TR/media-source/#dom-url-createobjecturl",
+                "linkingText": [
+                  "createObjectURL"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "url"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "methods-3",
+                  "title": "Methods",
+                  "number": "5.1"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "sourceBuffer"
+                ],
+                "type": "attribute",
+                "for": [
+                  "AudioTrack"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-audiotrack-sourcebuffer",
+                "href": "https://www.w3.org/TR/media-source/#dom-audiotrack-sourcebuffer",
+                "linkingText": [
+                  "sourceBuffer"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "audiotrack"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "attributes-3",
+                  "title": "Attributes"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "sourceBuffer"
+                ],
+                "type": "attribute",
+                "for": [
+                  "VideoTrack"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-audiotrack-sourcebuffer",
+                "href": "https://www.w3.org/TR/media-source/#dom-audiotrack-sourcebuffer",
+                "linkingText": [
+                  "sourceBuffer"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "audiotrack"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "attributes-3",
+                  "title": "Attributes"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "sourceBuffer"
+                ],
+                "type": "attribute",
+                "for": [
+                  "TextTrack"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-audiotrack-sourcebuffer",
+                "href": "https://www.w3.org/TR/media-source/#dom-audiotrack-sourcebuffer",
+                "linkingText": [
+                  "sourceBuffer"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "audiotrack"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "attributes-3",
+                  "title": "Attributes"
+                },
+                "definedIn": "dt"
+              }
             }
           ]
         },
@@ -45157,13 +47182,7 @@
           }
         ],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://wicg.github.io/web-codecs/",
-              "title": "WebCodecs",
-              "crawled": "https://wicg.github.io/web-codecs/"
-            }
-          ],
+          "normative": [],
           "informative": [
             {
               "url": "https://www.w3.org/TR/media-capabilities/",
@@ -46425,6 +48444,103 @@
                   "number": "4"
                 },
                 "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "hidden"
+                ],
+                "type": "attribute",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-visibilitystate-hidden",
+                "href": "https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate-hidden",
+                "linkingText": [
+                  "hidden"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "visibilitystate"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "visibility-states-and-the-visibilitystate-enum",
+                  "title": "Visibility states and the VisibilityState enum",
+                  "number": "4"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "visibilityState"
+                ],
+                "type": "attribute",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-visibilitystate",
+                "href": "https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate",
+                "linkingText": [
+                  "visibilityState"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "visibilitystate-attribute",
+                  "title": "visibilityState attribute",
+                  "number": "5.2"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "onvisibilitychange"
+                ],
+                "type": "attribute",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-document-onvisibilitychange",
+                "href": "https://www.w3.org/TR/page-visibility-2/#dom-document-onvisibilitychange",
+                "linkingText": [
+                  "onvisibilitychange"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "document"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "onvisiblitychange-event-handler",
+                  "title": "onvisiblitychange event handler",
+                  "number": "5.3"
+                },
+                "definedIn": "prose"
               }
             }
           ]
@@ -47747,6 +49863,80 @@
                 "definedIn": "heading"
               },
               "warning": true
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "getEntriesByType(type)"
+                ],
+                "type": "method",
+                "for": [
+                  "Performance"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-performance-getentriesbytype",
+                "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performance-getentriesbytype",
+                "linkingText": [
+                  "Performance.getEntriesByType()",
+                  "Performance.getEntriesByType",
+                  "getEntriesByType()",
+                  "getEntriesByType"
+                ],
+                "localLinkingText": [],
+                "type": "method",
+                "for": [
+                  "Performance"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "getentriesbytype-method",
+                  "title": "getEntriesByType() method",
+                  "number": "3.1.2"
+                },
+                "definedIn": "heading"
+              },
+              "warning": true
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "getEntriesByName(name, type)"
+                ],
+                "type": "method",
+                "for": [
+                  "Performance"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-performance-getentriesbyname",
+                "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performance-getentriesbyname",
+                "linkingText": [
+                  "Performance.getEntriesByName()",
+                  "Performance.getEntriesByName",
+                  "getEntriesByName()",
+                  "getEntriesByName"
+                ],
+                "localLinkingText": [],
+                "type": "method",
+                "for": [
+                  "Performance"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "getentriesbyname-method",
+                  "title": "getEntriesByName() method",
+                  "number": "3.1.3"
+                },
+                "definedIn": "heading"
+              },
+              "warning": true
             }
           ]
         },
@@ -48437,7 +50627,247 @@
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "requestPointerLock()"
+                ],
+                "type": "method",
+                "for": [
+                  "Element"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "onpointerlockchange"
+                ],
+                "type": "attribute",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-document-onpointerlockchange",
+                "href": "https://www.w3.org/TR/pointerlock-2/#dom-document-onpointerlockchange",
+                "linkingText": [
+                  "document.onpointerlockchange",
+                  "onpointerlockchange"
+                ],
+                "localLinkingText": [],
+                "type": "attribute",
+                "for": [
+                  "document"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "extensions-to-the-document-interface",
+                  "title": "Extensions to the Document Interface",
+                  "number": "5"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "onpointerlockerror"
+                ],
+                "type": "attribute",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-document-onpointerlockerror",
+                "href": "https://www.w3.org/TR/pointerlock-2/#dom-document-onpointerlockerror",
+                "linkingText": [
+                  "document.onpointerlockerror",
+                  "onpointerlockerror"
+                ],
+                "localLinkingText": [],
+                "type": "attribute",
+                "for": [
+                  "document"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "extensions-to-the-document-interface",
+                  "title": "Extensions to the Document Interface",
+                  "number": "5"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "exitPointerLock()"
+                ],
+                "type": "method",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "pointerLockElement"
+                ],
+                "type": "attribute",
+                "for": [
+                  "DocumentOrShadowRoot"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "movementX"
+                ],
+                "type": "attribute",
+                "for": [
+                  "MouseEvent"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mouseeventinit-movementx",
+                "href": "https://www.w3.org/TR/pointerlock-2/#dom-mouseeventinit-movementx",
+                "linkingText": [
+                  "movementX"
+                ],
+                "localLinkingText": [],
+                "type": "dict-member",
+                "for": [
+                  "mouseeventinit"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "extensions-to-the-mouseeventinit-dictionary",
+                  "title": "Extensions to the MouseEventInit Dictionary",
+                  "number": "8"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "movementY"
+                ],
+                "type": "attribute",
+                "for": [
+                  "MouseEvent"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mouseeventinit-movementy",
+                "href": "https://www.w3.org/TR/pointerlock-2/#dom-mouseeventinit-movementy",
+                "linkingText": [
+                  "movementY"
+                ],
+                "localLinkingText": [],
+                "type": "dict-member",
+                "for": [
+                  "mouseeventinit"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "extensions-to-the-mouseeventinit-dictionary",
+                  "title": "Extensions to the MouseEventInit Dictionary",
+                  "number": "8"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "movementX"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MouseEventInit"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mouseeventinit-movementx",
+                "href": "https://www.w3.org/TR/pointerlock-2/#dom-mouseeventinit-movementx",
+                "linkingText": [
+                  "movementX"
+                ],
+                "localLinkingText": [],
+                "type": "dict-member",
+                "for": [
+                  "mouseeventinit"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "extensions-to-the-mouseeventinit-dictionary",
+                  "title": "Extensions to the MouseEventInit Dictionary",
+                  "number": "8"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "movementY"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "MouseEventInit"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-mouseeventinit-movementy",
+                "href": "https://www.w3.org/TR/pointerlock-2/#dom-mouseeventinit-movementy",
+                "linkingText": [
+                  "movementY"
+                ],
+                "localLinkingText": [],
+                "type": "dict-member",
+                "for": [
+                  "mouseeventinit"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "extensions-to-the-mouseeventinit-dictionary",
+                  "title": "Extensions to the MouseEventInit Dictionary",
+                  "number": "8"
+                },
+                "definedIn": "dt"
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48818,6 +51248,39 @@
           "informative": []
         },
         "ok": true
+      }
+    },
+    {
+      "title": "Private Fields in `in`",
+      "shortname": "tc39-private-fields-in-in",
+      "date": "28 January 2021",
+      "url": "https://tc39.es/proposal-private-fields-in-in/",
+      "nightly": {
+        "url": "https://tc39.es/proposal-private-fields-in-in/",
+        "repository": "https://github.com/tc39/proposal-private-fields-in-in",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "crawled": "https://tc39.es/proposal-private-fields-in-in/",
+      "report": {
+        "noNormativeRefs": true,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingDfns": {
+          "css": [],
+          "idl": []
+        },
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
       }
     },
     {
@@ -49885,6 +52348,72 @@
                 "definedIn": "prose"
               },
               "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "remote"
+                ],
+                "type": "attribute",
+                "for": [
+                  "HTMLMediaElement"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-htmlmediaelement-remote",
+                "href": "https://www.w3.org/TR/remote-playback/#dom-htmlmediaelement-remote",
+                "linkingText": [
+                  "remote"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "htmlmediaelement"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "extensions-to-htmlmediaelement",
+                  "title": "Extensions to HTMLMediaElement",
+                  "number": "6.3"
+                },
+                "definedIn": "prose"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "disableRemotePlayback"
+                ],
+                "type": "attribute",
+                "for": [
+                  "HTMLMediaElement"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-htmlmediaelement-disableremoteplayback",
+                "href": "https://www.w3.org/TR/remote-playback/#dom-htmlmediaelement-disableremoteplayback",
+                "linkingText": [
+                  "disableRemotePlayback"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "htmlmediaelement"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "the-disableremoteplayback-attribute",
+                  "title": "The disableRemotePlayback attribute",
+                  "number": "6.3.1"
+                },
+                "definedIn": "heading"
+              }
             }
           ]
         },
@@ -52288,6 +54817,7 @@
             "https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream",
             "https://fetch.spec.whatwg.org/#potential-navigation-or-subresource-request",
             "https://fetch.spec.whatwg.org/#concept-response-https-state",
+            "https://fetch.spec.whatwg.org/#synchronous-flag",
             "https://w3c.github.io/push-api/#h-the-push-event",
             "https://w3c.github.io/push-api/#dfn-push",
             "https://w3c.github.io/push-api/#dfn-fire-the-push-event",
@@ -52315,7 +54845,7 @@
     {
       "title": "Static class features",
       "shortname": "tc39-static-class-features",
-      "date": "27 April 2020",
+      "date": "13 February 2021",
       "url": "https://tc39.es/proposal-static-class-features/",
       "nightly": {
         "url": "https://tc39.es/proposal-static-class-features/",
@@ -52434,7 +54964,7 @@
     {
       "title": "Streams Standard",
       "shortname": "streams",
-      "date": "14 January 2021",
+      "date": "9 February 2021",
       "url": "https://streams.spec.whatwg.org/",
       "nightly": {
         "url": "https://streams.spec.whatwg.org/",
@@ -52619,7 +55149,34 @@
         ],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "integrity"
+                ],
+                "type": "attribute",
+                "for": [
+                  "HTMLLinkElement"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "integrity"
+                ],
+                "type": "attribute",
+                "for": [
+                  "HTMLScriptElement"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [
           "https://www.w3.org/TR/html5/",
@@ -52800,7 +55357,7 @@
     {
       "title": "SVG Animations",
       "shortname": "svg-animations",
-      "date": "28 January 2021",
+      "date": "08 February 2021",
       "url": "https://svgwg.org/specs/animations/",
       "nightly": {
         "url": "https://svgwg.org/specs/animations/",
@@ -53815,6 +56372,32 @@
                 "type": "attribute",
                 "for": [
                   "TouchEvent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "createTouch(view, target, identifier, pageX, pageY, screenX, screenY)"
+                ],
+                "type": "method",
+                "for": [
+                  "Document"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "createTouchList(...touches)"
+                ],
+                "type": "method",
+                "for": [
+                  "Document"
                 ],
                 "access": "public",
                 "informative": false
@@ -54927,6 +57510,104 @@
                 "definedIn": "heading"
               },
               "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "mark(markName)"
+                ],
+                "type": "method",
+                "for": [
+                  "Performance"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-performance-mark",
+                "href": "https://www.w3.org/TR/user-timing-2/#dom-performance-mark",
+                "linkingText": [
+                  "performance.mark()",
+                  "performance.mark",
+                  "mark()",
+                  "mark"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "performance"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "mark-method",
+                  "title": "mark() method",
+                  "number": "3.1.1"
+                },
+                "definedIn": "heading"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "clearMarks(markName)"
+                ],
+                "type": "method",
+                "for": [
+                  "Performance"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "measure(measureName, startMark, endMark)"
+                ],
+                "type": "method",
+                "for": [
+                  "Performance"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-performance-measure",
+                "href": "https://www.w3.org/TR/user-timing-2/#dom-performance-measure",
+                "linkingText": [
+                  "performance.measure()",
+                  "performance.measure",
+                  "measure()",
+                  "measure"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "performance"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "measure-method",
+                  "title": "measure() method",
+                  "number": "3.1.3"
+                },
+                "definedIn": "heading"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "clearMeasures(measureName)"
+                ],
+                "type": "method",
+                "for": [
+                  "Performance"
+                ],
+                "access": "public",
+                "informative": false
+              }
             }
           ]
         },
@@ -55053,7 +57734,7 @@
     {
       "title": "User-Agent Client Hints",
       "shortname": "ua-client-hints",
-      "date": "3 February 2021",
+      "date": "9 February 2021",
       "url": "https://wicg.github.io/ua-client-hints/",
       "nightly": {
         "url": "https://wicg.github.io/ua-client-hints/",
@@ -55143,6 +57824,19 @@
                 "informative": false
               },
               "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "vibrate(pattern)"
+                ],
+                "type": "method",
+                "for": [
+                  "Navigator"
+                ],
+                "access": "public",
+                "informative": false
+              }
             }
           ]
         },
@@ -56001,6 +58695,11 @@
               "url": "https://www.w3.org/TR/webrtc/",
               "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
               "crawled": "https://www.w3.org/TR/webrtc/"
+            },
+            {
+              "url": "https://w3c.github.io/webrtc-insertable-streams/",
+              "title": "WebRTC Insertable Media using Streams",
+              "crawled": "https://w3c.github.io/webrtc-insertable-streams/"
             }
           ],
           "informative": [
@@ -56729,6 +59428,37 @@
                 "access": "public",
                 "informative": false
               }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "requestMIDIAccess(options)"
+                ],
+                "type": "method",
+                "for": [
+                  "Navigator"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-navigator-requestmidiaccess",
+                "href": "https://www.w3.org/TR/webmidi/#dom-navigator-requestmidiaccess",
+                "linkingText": [
+                  "requestMIDIAccess"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "methods",
+                  "title": "Methods",
+                  "number": "4.1.1"
+                },
+                "definedIn": "prose"
+              }
             }
           ]
         },
@@ -56982,7 +59712,7 @@
     {
       "title": "Web Serial API",
       "shortname": "serial",
-      "date": "05 January 2021",
+      "date": "10 February 2021",
       "url": "https://wicg.github.io/serial/",
       "nightly": {
         "url": "https://wicg.github.io/serial/",
@@ -57398,7 +60128,7 @@
     {
       "title": "WebCodecs",
       "shortname": "web-codecs",
-      "date": "5 February 2021",
+      "date": "10 February 2021",
       "url": "https://wicg.github.io/web-codecs/",
       "nightly": {
         "url": "https://wicg.github.io/web-codecs/",
@@ -57420,17 +60150,8 @@
           "css": [],
           "idl": []
         },
-        "missingLinkRef": [
-          "https://w3c.github.io/mediacapture-screen-share/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/mediacapture-main/",
-            "ref": {
-              "name": "MEDIACAPTURE-STREAMS",
-              "url": "https://www.w3.org/TR/mediacapture-streams/"
-            }
-          },
           {
             "link": "https://w3c.github.io/media-capabilities/",
             "ref": {
@@ -57456,6 +60177,7 @@
           "brokenLinks": [
             "https://heycam.github.io/webidl/#idl-undefined",
             "https://heycam.github.io/webidl/#exceptiondef-typeerror",
+            "https://heycam.github.io/webidl/#a-promise-rejected-with",
             "https://heycam.github.io/webidl/#BufferSource",
             "https://heycam.github.io/webidl/#idl-frozen-array",
             "https://heycam.github.io/webidl/#this",
@@ -57586,7 +60308,6 @@
             "https://html.spec.whatwg.org/#missing-value-default",
             "https://html.spec.whatwg.org/#concept-fe-mutable",
             "https://html.spec.whatwg.org/#concept-canvas-origin-clean",
-            "https://html.spec.whatwg.org/#pause",
             "https://html.spec.whatwg.org/#prompt-to-unload-a-document",
             "https://html.spec.whatwg.org/#concept-textarea-raw-value",
             "https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh",
@@ -57675,7 +60396,7 @@
     {
       "title": "WebDriver BiDi",
       "shortname": "webdriver-bidi",
-      "date": "26 January 2021",
+      "date": "12 February 2021",
       "url": "https://w3c.github.io/webdriver-bidi/",
       "nightly": {
         "url": "https://w3c.github.io/webdriver-bidi/",
@@ -57737,7 +60458,9 @@
             "https://html.spec.whatwg.org/#concept-document-worklet-global-scopes",
             "https://html.spec.whatwg.org/#worker-event-loop-2",
             "https://html.spec.whatwg.org/#session-history",
-            "https://html.spec.whatwg.org/#bcg-remove"
+            "https://html.spec.whatwg.org/#bcg-remove",
+            "https://html.spec.whatwg.org/#report-the-error",
+            "https://html.spec.whatwg.org/#concept-error-handled"
           ],
           "notDfn": [],
           "brokenLinks": [
@@ -57819,7 +60542,7 @@
     {
       "title": "WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification",
       "shortname": "ANGLE_instanced_arrays",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
@@ -57971,7 +60694,7 @@
     {
       "title": "WebGL EXT_blend_minmax Khronos Ratified Extension Specification",
       "shortname": "EXT_blend_minmax",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
@@ -58044,7 +60767,7 @@
     {
       "title": "WebGL EXT_clip_cull_distance Extension Draft Specification",
       "shortname": "EXT_clip_cull_distance",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
@@ -58234,7 +60957,7 @@
     {
       "title": "WebGL EXT_color_buffer_float Extension Specification",
       "shortname": "EXT_color_buffer_float",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
@@ -58281,7 +61004,7 @@
     {
       "title": "WebGL EXT_color_buffer_half_float Extension Specification",
       "shortname": "EXT_color_buffer_half_float",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
@@ -58380,7 +61103,7 @@
     {
       "title": "WebGL EXT_disjoint_timer_query Extension Specification",
       "shortname": "EXT_disjoint_timer_query",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
@@ -58669,7 +61392,7 @@
     {
       "title": "WebGL EXT_disjoint_timer_query_webgl2 Extension Specification",
       "shortname": "EXT_disjoint_timer_query_webgl2",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
@@ -58804,7 +61527,7 @@
     {
       "title": "WebGL EXT_float_blend Extension Specification",
       "shortname": "EXT_float_blend",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
@@ -58851,7 +61574,7 @@
     {
       "title": "WebGL EXT_frag_depth Khronos Ratified Extension Specification",
       "shortname": "EXT_frag_depth",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
@@ -58898,7 +61621,7 @@
     {
       "title": "WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification",
       "shortname": "EXT_shader_texture_lod",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
@@ -58945,7 +61668,7 @@
     {
       "title": "WebGL EXT_sRGB Extension Specification",
       "shortname": "EXT_sRGB",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
@@ -59044,7 +61767,7 @@
     {
       "title": "WebGL EXT_texture_compression_bptc Extension Specification",
       "shortname": "EXT_texture_compression_bptc",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
@@ -59143,7 +61866,7 @@
     {
       "title": "WebGL EXT_texture_compression_rgtc Extension Specification",
       "shortname": "EXT_texture_compression_rgtc",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
@@ -59242,7 +61965,7 @@
     {
       "title": "WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification",
       "shortname": "EXT_texture_filter_anisotropic",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
@@ -59315,7 +62038,7 @@
     {
       "title": "WebGL EXT_texture_norm16 Extension Specification",
       "shortname": "EXT_texture_norm16",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
@@ -59466,7 +62189,7 @@
     {
       "title": "WebGL KHR_parallel_shader_compile Extension Specification",
       "shortname": "KHR_parallel_shader_compile",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
@@ -59526,7 +62249,7 @@
     {
       "title": "WebGL OES_draw_buffers_indexed Extension Draft Specification",
       "shortname": "OES_draw_buffers_indexed",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
@@ -59697,7 +62420,7 @@
     {
       "title": "WebGL OES_element_index_uint Khronos Ratified Extension Specification",
       "shortname": "OES_element_index_uint",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
@@ -59744,7 +62467,7 @@
     {
       "title": "WebGL OES_fbo_render_mipmap Extension Specification",
       "shortname": "OES_fbo_render_mipmap",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
@@ -59791,7 +62514,7 @@
     {
       "title": "WebGL OES_standard_derivatives Khronos Ratified Extension Specification",
       "shortname": "OES_standard_derivatives",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
@@ -59851,7 +62574,7 @@
     {
       "title": "WebGL OES_texture_float Khronos Ratified Extension Specification",
       "shortname": "OES_texture_float",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
@@ -59898,7 +62621,7 @@
     {
       "title": "WebGL OES_texture_float_linear Khronos Ratified Extension Specification",
       "shortname": "OES_texture_float_linear",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
@@ -59945,7 +62668,7 @@
     {
       "title": "WebGL OES_texture_half_float Khronos Ratified Extension Specification",
       "shortname": "OES_texture_half_float",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
@@ -60005,7 +62728,7 @@
     {
       "title": "WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification",
       "shortname": "OES_texture_half_float_linear",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
@@ -60052,7 +62775,7 @@
     {
       "title": "WebGL OES_vertex_array_object Khronos Ratified Extension Specification",
       "shortname": "OES_vertex_array_object",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
@@ -60199,7 +62922,7 @@
     {
       "title": "WebGL OVR_multiview2 Extension Specification",
       "shortname": "OVR_multiview2",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
@@ -60433,7 +63156,7 @@
     {
       "title": "WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification",
       "shortname": "WEBGL_blend_equation_advanced_coherent",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
@@ -60675,7 +63398,7 @@
     {
       "title": "WebGL WEBGL_color_buffer_float Extension Specification",
       "shortname": "WEBGL_color_buffer_float",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
@@ -60761,7 +63484,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_astc Extension Specification",
       "shortname": "WEBGL_compressed_texture_astc",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
@@ -61185,7 +63908,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_etc Extension Specification",
       "shortname": "WEBGL_compressed_texture_etc",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
@@ -61362,7 +64085,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_etc1 Extension Specification",
       "shortname": "WEBGL_compressed_texture_etc1",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
@@ -61422,7 +64145,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_pvrtc Extension Specification",
       "shortname": "WEBGL_compressed_texture_pvrtc",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
@@ -61521,7 +64244,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification",
       "shortname": "WEBGL_compressed_texture_s3tc",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
@@ -61620,7 +64343,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_s3tc_srgb Extension Specification",
       "shortname": "WEBGL_compressed_texture_s3tc_srgb",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
@@ -61719,7 +64442,7 @@
     {
       "title": "WebGL WEBGL_debug_renderer_info Khronos Ratified Extension Specification",
       "shortname": "WEBGL_debug_renderer_info",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
@@ -61792,7 +64515,7 @@
     {
       "title": "WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification",
       "shortname": "WEBGL_debug_shaders",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
@@ -61863,7 +64586,7 @@
     {
       "title": "WebGL WEBGL_depth_texture Khronos Ratified Extension Specification",
       "shortname": "WEBGL_depth_texture",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
@@ -61923,7 +64646,7 @@
     {
       "title": "WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification",
       "shortname": "WEBGL_draw_buffers",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
@@ -62438,7 +65161,7 @@
     {
       "title": "WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification",
       "shortname": "WEBGL_draw_instanced_base_vertex_base_instance",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
@@ -62564,7 +65287,7 @@
     {
       "title": "WebGL WEBGL_lose_context Khronos Ratified Extension Specification",
       "shortname": "WEBGL_lose_context",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
@@ -62639,7 +65362,7 @@
     {
       "title": "WebGL WEBGL_multi_draw Extension Specification",
       "shortname": "WEBGL_multi_draw",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
@@ -62781,7 +65504,7 @@
     {
       "title": "WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification",
       "shortname": "WEBGL_multi_draw_instanced_base_vertex_base_instance",
-      "date": "3 February 2021",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
@@ -62897,7 +65620,7 @@
     {
       "title": "WebGPU",
       "shortname": "gpuweb",
-      "date": "6 February 2021",
+      "date": "9 February 2021",
       "url": "https://gpuweb.github.io/gpuweb/",
       "nightly": {
         "url": "https://gpuweb.github.io/gpuweb/",
@@ -64182,6 +66905,63 @@
                 "definedIn": "heading"
               },
               "warning": true
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "addTrack(track, ...streams)"
+                ],
+                "type": "method",
+                "for": [
+                  "RTCPeerConnection"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-rtcpeerconnection-addtrack",
+                "href": "https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-addtrack",
+                "linkingText": [
+                  "addTrack()",
+                  "addTrack(track)",
+                  "addTrack(track, streams)"
+                ],
+                "localLinkingText": [
+                  "RTCPeerConnection.addTrack",
+                  "RTCPeerConnection.addTrack()",
+                  "addTrack"
+                ],
+                "type": "method",
+                "for": [
+                  "RTCPeerConnection"
+                ],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "methods-5",
+                  "title": "Methods"
+                },
+                "definedIn": "dt"
+              },
+              "for": {
+                "id": "dom-rtcpeerconnection",
+                "href": "https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection",
+                "linkingText": [
+                  "RTCPeerConnection"
+                ],
+                "localLinkingText": [],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false,
+                "heading": {
+                  "id": "interface-definition",
+                  "title": "Interface Definition",
+                  "number": "4.4.2"
+                },
+                "definedIn": "prose"
+              },
+              "warning": true
             }
           ]
         },
@@ -64315,7 +67095,7 @@
     {
       "title": "WebRTC Insertable Media using Streams",
       "shortname": "webrtc-insertable-streams",
-      "date": "4 February 2021",
+      "date": "10 February 2021",
       "url": "https://w3c.github.io/webrtc-insertable-streams/",
       "nightly": {
         "url": "https://w3c.github.io/webrtc-insertable-streams/",
@@ -64330,7 +67110,9 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CryptoKey"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -64338,21 +67120,39 @@
           "idl": []
         },
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webcrypto/",
+            "ref": {
+              "name": "WebCryptoAPI",
+              "url": "https://www.w3.org/TR/WebCryptoAPI/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/FileAPI/",
+            "ref": {
+              "name": "FileAPI",
+              "url": "https://www.w3.org/TR/FileAPI/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
         },
         "xrefs": {
           "notExported": [
-            "https://heycam.github.io/webidl/#invalidaccesserror"
+            "https://heycam.github.io/webidl/#invalidaccesserror",
+            "https://w3c.github.io/webcrypto/#dfn-CryptoKey"
           ],
           "notDfn": [
             "https://heycam.github.io/webidl/#idl-ArrayBuffer"
           ],
           "brokenLinks": [
             "https://heycam.github.io/webidl/#this",
-            "https://heycam.github.io/webidl/#a-promise-resolved-with"
+            "https://heycam.github.io/webidl/#a-promise-resolved-with",
+            "https://heycam.github.io/webidl/#idl-undefined",
+            "https://heycam.github.io/webidl/#a-new-promise"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -64461,7 +67261,7 @@
     {
       "title": "WebUSB API",
       "shortname": "webusb",
-      "date": "6 February 2021",
+      "date": "14 February 2021",
       "url": "https://wicg.github.io/webusb/",
       "nightly": {
         "url": "https://wicg.github.io/webusb/",
@@ -64640,7 +67440,7 @@
     {
       "title": "WebXR Anchors Module",
       "shortname": "anchors",
-      "date": "15 January 2021",
+      "date": "10 February 2021",
       "url": "https://immersive-web.github.io/anchors/",
       "nightly": {
         "url": "https://immersive-web.github.io/anchors/",
@@ -64986,7 +67786,7 @@
     {
       "title": "WebXR DOM Overlays Module",
       "shortname": "dom-overlays",
-      "date": "15 January 2021",
+      "date": "10 February 2021",
       "url": "https://immersive-web.github.io/dom-overlays/",
       "nightly": {
         "url": "https://immersive-web.github.io/dom-overlays/",
@@ -65239,7 +68039,7 @@
     {
       "title": "WebXR Hit Test Module",
       "shortname": "hit-test",
-      "date": "15 January 2021",
+      "date": "10 February 2021",
       "url": "https://immersive-web.github.io/hit-test/",
       "nightly": {
         "url": "https://immersive-web.github.io/hit-test/",
@@ -65567,6 +68367,7 @@
             "https://heycam.github.io/webidl/#idl-ArrayBuffer"
           ],
           "brokenLinks": [
+            "https://fetch.spec.whatwg.org/#synchronous-flag",
             "https://heycam.github.io/webidl/#idl-undefined",
             "https://heycam.github.io/webidl/#this",
             "https://heycam.github.io/webidl/#new",

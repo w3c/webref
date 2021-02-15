@@ -1,0 +1,7 @@
+// Source: WebCodecs (https://wicg.github.io/web-codecs/)
+dictionary AudioDecoderConfig {
+  required DOMString codec;
+  required unsigned long sampleRate;
+  required unsigned long numberOfChannels;
+  BufferSource description;
+};

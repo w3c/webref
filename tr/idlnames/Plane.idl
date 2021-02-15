@@ -1,0 +1,8 @@
+// Source: WebCodecs (https://wicg.github.io/web-codecs/)
+interface Plane {
+  readonly attribute unsigned long stride;
+  readonly attribute unsigned long rows;
+  readonly attribute unsigned long length;
+
+  undefined readInto(ArrayBufferView dst);
+};

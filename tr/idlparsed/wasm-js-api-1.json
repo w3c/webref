@@ -32,6 +32,7 @@
     },
     "idlNames": {
       "WebAssemblyInstantiatedSource": {
+        "fragment": "dictionary WebAssemblyInstantiatedSource {\n    required Module module;\n    required Instance instance;\n};",
         "type": "dictionary",
         "name": "WebAssemblyInstantiatedSource",
         "inheritance": null,
@@ -71,6 +72,7 @@
         "partial": false
       },
       "WebAssembly": {
+        "fragment": "[Exposed=(Window,Worker,Worklet)]\nnamespace WebAssembly {\n    boolean validate(BufferSource bytes);\n    Promise<Module> compile(BufferSource bytes);\n\n    Promise<WebAssemblyInstantiatedSource> instantiate(\n        BufferSource bytes, optional object importObject);\n\n    Promise<Instance> instantiate(\n        Module moduleObject, optional object importObject);\n};",
         "type": "namespace",
         "name": "WebAssembly",
         "inheritance": null,
@@ -287,6 +289,7 @@
         "partial": false
       },
       "ImportExportKind": {
+        "fragment": "enum ImportExportKind {\n  \"function\",\n  \"table\",\n  \"memory\",\n  \"global\"\n};",
         "type": "enum",
         "name": "ImportExportKind",
         "values": [
@@ -310,6 +313,7 @@
         "extAttrs": []
       },
       "ModuleExportDescriptor": {
+        "fragment": "dictionary ModuleExportDescriptor {\n  required USVString name;\n  required ImportExportKind kind;\n  // Note: Other fields such as signature may be added in the future.\n};",
         "type": "dictionary",
         "name": "ModuleExportDescriptor",
         "inheritance": null,
@@ -349,6 +353,7 @@
         "partial": false
       },
       "ModuleImportDescriptor": {
+        "fragment": "dictionary ModuleImportDescriptor {\n  required USVString module;\n  required USVString name;\n  required ImportExportKind kind;\n};",
         "type": "dictionary",
         "name": "ModuleImportDescriptor",
         "inheritance": null,
@@ -403,6 +408,7 @@
         "partial": false
       },
       "Module": {
+        "fragment": "[LegacyNamespace=WebAssembly, Constructor(BufferSource bytes), Exposed=(Window,Worker,Worklet)]\ninterface Module {\n  static sequence<ModuleExportDescriptor> exports(Module moduleObject);\n  static sequence<ModuleImportDescriptor> imports(Module moduleObject);\n  static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);\n};",
         "type": "interface",
         "name": "Module",
         "inheritance": null,
@@ -603,6 +609,7 @@
         "partial": false
       },
       "Instance": {
+        "fragment": "[LegacyNamespace=WebAssembly, Constructor(Module module, optional object importObject), Exposed=(Window,Worker,Worklet)]\ninterface Instance {\n  readonly attribute object exports;\n};",
         "type": "interface",
         "name": "Instance",
         "inheritance": null,
@@ -695,6 +702,7 @@
         "partial": false
       },
       "MemoryDescriptor": {
+        "fragment": "dictionary MemoryDescriptor {\n  required [EnforceRange] unsigned long initial;\n  [EnforceRange] unsigned long maximum;\n};",
         "type": "dictionary",
         "name": "MemoryDescriptor",
         "inheritance": null,
@@ -748,6 +756,7 @@
         "partial": false
       },
       "Memory": {
+        "fragment": "[LegacyNamespace=WebAssembly, Constructor(MemoryDescriptor descriptor), Exposed=(Window,Worker,Worklet)]\ninterface Memory {\n  unsigned long grow([EnforceRange] unsigned long delta);\n  readonly attribute ArrayBuffer buffer;\n};",
         "type": "interface",
         "name": "Memory",
         "inheritance": null,
@@ -863,6 +872,7 @@
         "partial": false
       },
       "TableKind": {
+        "fragment": "enum TableKind {\n  \"anyfunc\",\n  // Note: More values may be added in future iterations,\n  // e.g., typed function references, typed GC references\n};",
         "type": "enum",
         "name": "TableKind",
         "values": [
@@ -874,6 +884,7 @@
         "extAttrs": []
       },
       "TableDescriptor": {
+        "fragment": "dictionary TableDescriptor {\n  required TableKind element;\n  required [EnforceRange] unsigned long initial;\n  [EnforceRange] unsigned long maximum;\n};",
         "type": "dictionary",
         "name": "TableDescriptor",
         "inheritance": null,
@@ -942,6 +953,7 @@
         "partial": false
       },
       "Table": {
+        "fragment": "[LegacyNamespace=WebAssembly, Constructor(TableDescriptor descriptor), Exposed=(Window,Worker,Worklet)]\ninterface Table {\n  unsigned long grow([EnforceRange] unsigned long delta);\n  Function? get([EnforceRange] unsigned long index);\n  void set([EnforceRange] unsigned long index, Function? value);\n  readonly attribute unsigned long length;\n};",
         "type": "interface",
         "name": "Table",
         "inheritance": null,
@@ -1151,6 +1163,7 @@
         "partial": false
       },
       "ValueType": {
+        "fragment": "enum ValueType {\n  \"i32\",\n  \"i64\",\n  \"f32\",\n  \"f64\"\n};",
         "type": "enum",
         "name": "ValueType",
         "values": [
@@ -1174,6 +1187,7 @@
         "extAttrs": []
       },
       "GlobalDescriptor": {
+        "fragment": "dictionary GlobalDescriptor {\n  required ValueType value;\n  boolean mutable = false;\n};",
         "type": "dictionary",
         "name": "GlobalDescriptor",
         "inheritance": null,
@@ -1216,6 +1230,7 @@
         "partial": false
       },
       "Global": {
+        "fragment": "[LegacyNamespace=WebAssembly, Constructor(GlobalDescriptor descriptor, optional any v), Exposed=(Window,Worker,Worklet)]\ninterface Global {\n  any valueOf();\n  attribute any value;\n};",
         "type": "interface",
         "name": "Global",
         "inheritance": null,
@@ -1323,6 +1338,7 @@
         "partial": false
       },
       "CompileError": {
+        "fragment": "[LegacyNamespace=WebAssembly]\ninterface CompileError { };",
         "type": "interface",
         "name": "CompileError",
         "inheritance": null,
@@ -1341,6 +1357,7 @@
         "partial": false
       },
       "LinkError": {
+        "fragment": "[LegacyNamespace=WebAssembly]\ninterface LinkError { };",
         "type": "interface",
         "name": "LinkError",
         "inheritance": null,
@@ -1359,6 +1376,7 @@
         "partial": false
       },
       "RuntimeError": {
+        "fragment": "[LegacyNamespace=WebAssembly]\ninterface RuntimeError { };",
         "type": "interface",
         "name": "RuntimeError",
         "inheritance": null,

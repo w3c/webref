@@ -1,0 +1,14 @@
+// Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
+[Exposed=Window]
+interface AnimationEffect {
+    EffectTiming         getTiming();
+    ComputedEffectTiming getComputedTiming();
+    void                 updateTiming(optional OptionalEffectTiming timing);
+};
+
+// Source: CSS Animation Worklet API (https://www.w3.org/TR/css-animation-worklet-1/)
+[Exposed=AnimationWorklet]
+partial interface AnimationEffect {
+    // Intended for use inside Animation Worklet scope to drive the effect.
+    attribute double localTime;
+};

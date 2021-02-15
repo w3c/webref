@@ -63,6 +63,7 @@
     },
     "idlNames": {
       "ReadableStream": {
+        "fragment": "[Exposed=(Window,Worker,Worklet), Transferable]\ninterface ReadableStream {\n  constructor(optional object underlyingSource, optional QueuingStrategy strategy = {});\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> cancel(optional any reason);\n  ReadableStreamReader getReader(optional ReadableStreamGetReaderOptions options = {});\n  ReadableStream pipeThrough(ReadableWritablePair transform, optional StreamPipeOptions options = {});\n  Promise<undefined> pipeTo(WritableStream destination, optional StreamPipeOptions options = {});\n  sequence<ReadableStream> tee();\n\n  async iterable<any>(optional ReadableStreamIteratorOptions options = {});\n};",
         "type": "interface",
         "name": "ReadableStream",
         "inheritance": null,
@@ -397,6 +398,7 @@
         "partial": false
       },
       "ReadableStreamReader": {
+        "fragment": "typedef (ReadableStreamDefaultReader or ReadableStreamBYOBReader) ReadableStreamReader;",
         "type": "typedef",
         "name": "ReadableStreamReader",
         "idlType": {
@@ -427,6 +429,7 @@
         "extAttrs": []
       },
       "ReadableStreamReaderMode": {
+        "fragment": "enum ReadableStreamReaderMode { \"byob\" };",
         "type": "enum",
         "name": "ReadableStreamReaderMode",
         "values": [
@@ -438,6 +441,7 @@
         "extAttrs": []
       },
       "ReadableStreamGetReaderOptions": {
+        "fragment": "dictionary ReadableStreamGetReaderOptions {\n  ReadableStreamReaderMode mode;\n};",
         "type": "dictionary",
         "name": "ReadableStreamGetReaderOptions",
         "inheritance": null,
@@ -462,6 +466,7 @@
         "partial": false
       },
       "ReadableStreamIteratorOptions": {
+        "fragment": "dictionary ReadableStreamIteratorOptions {\n  boolean preventCancel = false;\n};",
         "type": "dictionary",
         "name": "ReadableStreamIteratorOptions",
         "inheritance": null,
@@ -489,6 +494,7 @@
         "partial": false
       },
       "ReadableWritablePair": {
+        "fragment": "dictionary ReadableWritablePair {\n  required ReadableStream readable;\n  required WritableStream writable;\n};",
         "type": "dictionary",
         "name": "ReadableWritablePair",
         "inheritance": null,
@@ -528,6 +534,7 @@
         "partial": false
       },
       "StreamPipeOptions": {
+        "fragment": "dictionary StreamPipeOptions {\n  boolean preventClose = false;\n  boolean preventAbort = false;\n  boolean preventCancel = false;\n  AbortSignal signal;\n};",
         "type": "dictionary",
         "name": "StreamPipeOptions",
         "inheritance": null,
@@ -606,6 +613,7 @@
         "partial": false
       },
       "UnderlyingSource": {
+        "fragment": "dictionary UnderlyingSource {\n  UnderlyingSourceStartCallback start;\n  UnderlyingSourcePullCallback pull;\n  UnderlyingSourceCancelCallback cancel;\n  ReadableStreamType type;\n  [EnforceRange] unsigned long long autoAllocateChunkSize;\n};",
         "type": "dictionary",
         "name": "UnderlyingSource",
         "inheritance": null,
@@ -697,6 +705,7 @@
         "partial": false
       },
       "ReadableStreamController": {
+        "fragment": "typedef (ReadableStreamDefaultController or ReadableByteStreamController) ReadableStreamController;",
         "type": "typedef",
         "name": "ReadableStreamController",
         "idlType": {
@@ -727,6 +736,7 @@
         "extAttrs": []
       },
       "UnderlyingSourceStartCallback": {
+        "fragment": "callback UnderlyingSourceStartCallback = any (ReadableStreamController controller);",
         "type": "callback",
         "name": "UnderlyingSourceStartCallback",
         "idlType": {
@@ -758,6 +768,7 @@
         "extAttrs": []
       },
       "UnderlyingSourcePullCallback": {
+        "fragment": "callback UnderlyingSourcePullCallback = Promise<undefined> (ReadableStreamController controller);",
         "type": "callback",
         "name": "UnderlyingSourcePullCallback",
         "idlType": {
@@ -798,6 +809,7 @@
         "extAttrs": []
       },
       "UnderlyingSourceCancelCallback": {
+        "fragment": "callback UnderlyingSourceCancelCallback = Promise<undefined> (optional any reason);",
         "type": "callback",
         "name": "UnderlyingSourceCancelCallback",
         "idlType": {
@@ -838,6 +850,7 @@
         "extAttrs": []
       },
       "ReadableStreamType": {
+        "fragment": "enum ReadableStreamType { \"bytes\" };",
         "type": "enum",
         "name": "ReadableStreamType",
         "values": [
@@ -849,6 +862,7 @@
         "extAttrs": []
       },
       "ReadableStreamGenericReader": {
+        "fragment": "interface mixin ReadableStreamGenericReader {\n  readonly attribute Promise<undefined> closed;\n\n  Promise<undefined> cancel(optional any reason);\n};",
         "type": "interface mixin",
         "name": "ReadableStreamGenericReader",
         "inheritance": null,
@@ -923,6 +937,7 @@
         "partial": false
       },
       "ReadableStreamDefaultReader": {
+        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableStreamDefaultReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamDefaultReadResult> read();\n  undefined releaseLock();\n};",
         "type": "interface",
         "name": "ReadableStreamDefaultReader",
         "inheritance": null,
@@ -1013,6 +1028,7 @@
         "partial": false
       },
       "ReadableStreamDefaultReadResult": {
+        "fragment": "dictionary ReadableStreamDefaultReadResult {\n any value;\n boolean done;\n};",
         "type": "dictionary",
         "name": "ReadableStreamDefaultReadResult",
         "inheritance": null,
@@ -1052,6 +1068,7 @@
         "partial": false
       },
       "ReadableStreamBYOBReader": {
+        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableStreamBYOBReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamBYOBReadResult> read(ArrayBufferView view);\n  undefined releaseLock();\n};",
         "type": "interface",
         "name": "ReadableStreamBYOBReader",
         "inheritance": null,
@@ -1159,6 +1176,7 @@
         "partial": false
       },
       "ReadableStreamBYOBReadResult": {
+        "fragment": "dictionary ReadableStreamBYOBReadResult {\n ArrayBufferView value;\n boolean done;\n};",
         "type": "dictionary",
         "name": "ReadableStreamBYOBReadResult",
         "inheritance": null,
@@ -1198,6 +1216,7 @@
         "partial": false
       },
       "ReadableStreamDefaultController": {
+        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableStreamDefaultController {\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined close();\n  undefined enqueue(optional any chunk);\n  undefined error(optional any e);\n};",
         "type": "interface",
         "name": "ReadableStreamDefaultController",
         "inheritance": null,
@@ -1321,6 +1340,7 @@
         "partial": false
       },
       "ReadableByteStreamController": {
+        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableByteStreamController {\n  readonly attribute ReadableStreamBYOBRequest? byobRequest;\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined close();\n  undefined enqueue(ArrayBufferView chunk);\n  undefined error(optional any e);\n};",
         "type": "interface",
         "name": "ReadableByteStreamController",
         "inheritance": null,
@@ -1459,6 +1479,7 @@
         "partial": false
       },
       "ReadableStreamBYOBRequest": {
+        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableStreamBYOBRequest {\n  readonly attribute ArrayBufferView? view;\n\n  undefined respond([EnforceRange] unsigned long long bytesWritten);\n  undefined respondWithNewView(ArrayBufferView view);\n};",
         "type": "interface",
         "name": "ReadableStreamBYOBRequest",
         "inheritance": null,
@@ -1574,6 +1595,7 @@
         "partial": false
       },
       "WritableStream": {
+        "fragment": "[Exposed=(Window,Worker,Worklet), Transferable]\ninterface WritableStream {\n  constructor(optional object underlyingSink, optional QueuingStrategy strategy = {});\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  WritableStreamDefaultWriter getWriter();\n};",
         "type": "interface",
         "name": "WritableStream",
         "inheritance": null,
@@ -1744,6 +1766,7 @@
         "partial": false
       },
       "UnderlyingSink": {
+        "fragment": "dictionary UnderlyingSink {\n  UnderlyingSinkStartCallback start;\n  UnderlyingSinkWriteCallback write;\n  UnderlyingSinkCloseCallback close;\n  UnderlyingSinkAbortCallback abort;\n  any type;\n};",
         "type": "dictionary",
         "name": "UnderlyingSink",
         "inheritance": null,
@@ -1828,6 +1851,7 @@
         "partial": false
       },
       "UnderlyingSinkStartCallback": {
+        "fragment": "callback UnderlyingSinkStartCallback = any (WritableStreamDefaultController controller);",
         "type": "callback",
         "name": "UnderlyingSinkStartCallback",
         "idlType": {
@@ -1859,6 +1883,7 @@
         "extAttrs": []
       },
       "UnderlyingSinkWriteCallback": {
+        "fragment": "callback UnderlyingSinkWriteCallback = Promise<undefined> (any chunk, WritableStreamDefaultController controller);",
         "type": "callback",
         "name": "UnderlyingSinkWriteCallback",
         "idlType": {
@@ -1915,6 +1940,7 @@
         "extAttrs": []
       },
       "UnderlyingSinkCloseCallback": {
+        "fragment": "callback UnderlyingSinkCloseCallback = Promise<undefined> ();",
         "type": "callback",
         "name": "UnderlyingSinkCloseCallback",
         "idlType": {
@@ -1938,6 +1964,7 @@
         "extAttrs": []
       },
       "UnderlyingSinkAbortCallback": {
+        "fragment": "callback UnderlyingSinkAbortCallback = Promise<undefined> (optional any reason);",
         "type": "callback",
         "name": "UnderlyingSinkAbortCallback",
         "idlType": {
@@ -1978,6 +2005,7 @@
         "extAttrs": []
       },
       "WritableStreamDefaultWriter": {
+        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface WritableStreamDefaultWriter {\n  constructor(WritableStream stream);\n\n  readonly attribute Promise<undefined> closed;\n  readonly attribute unrestricted double? desiredSize;\n  readonly attribute Promise<undefined> ready;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  undefined releaseLock();\n  Promise<undefined> write(optional any chunk);\n};",
         "type": "interface",
         "name": "WritableStreamDefaultWriter",
         "inheritance": null,
@@ -2213,6 +2241,7 @@
         "partial": false
       },
       "WritableStreamDefaultController": {
+        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface WritableStreamDefaultController {\n  undefined error(optional any e);\n};",
         "type": "interface",
         "name": "WritableStreamDefaultController",
         "inheritance": null,
@@ -2274,6 +2303,7 @@
         "partial": false
       },
       "TransformStream": {
+        "fragment": "[Exposed=(Window,Worker,Worklet), Transferable]\ninterface TransformStream {\n  constructor(optional object transformer,\n              optional QueuingStrategy writableStrategy = {},\n              optional QueuingStrategy readableStrategy = {});\n\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
         "type": "interface",
         "name": "TransformStream",
         "inheritance": null,
@@ -2397,6 +2427,7 @@
         "partial": false
       },
       "Transformer": {
+        "fragment": "dictionary Transformer {\n  TransformerStartCallback start;\n  TransformerTransformCallback transform;\n  TransformerFlushCallback flush;\n  any readableType;\n  any writableType;\n};",
         "type": "dictionary",
         "name": "Transformer",
         "inheritance": null,
@@ -2481,6 +2512,7 @@
         "partial": false
       },
       "TransformerStartCallback": {
+        "fragment": "callback TransformerStartCallback = any (TransformStreamDefaultController controller);",
         "type": "callback",
         "name": "TransformerStartCallback",
         "idlType": {
@@ -2512,6 +2544,7 @@
         "extAttrs": []
       },
       "TransformerFlushCallback": {
+        "fragment": "callback TransformerFlushCallback = Promise<undefined> (TransformStreamDefaultController controller);",
         "type": "callback",
         "name": "TransformerFlushCallback",
         "idlType": {
@@ -2552,6 +2585,7 @@
         "extAttrs": []
       },
       "TransformerTransformCallback": {
+        "fragment": "callback TransformerTransformCallback = Promise<undefined> (any chunk, TransformStreamDefaultController controller);",
         "type": "callback",
         "name": "TransformerTransformCallback",
         "idlType": {
@@ -2608,6 +2642,7 @@
         "extAttrs": []
       },
       "TransformStreamDefaultController": {
+        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface TransformStreamDefaultController {\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined enqueue(optional any chunk);\n  undefined error(optional any reason);\n  undefined terminate();\n};",
         "type": "interface",
         "name": "TransformStreamDefaultController",
         "inheritance": null,
@@ -2731,6 +2766,7 @@
         "partial": false
       },
       "QueuingStrategy": {
+        "fragment": "dictionary QueuingStrategy {\n  unrestricted double highWaterMark;\n  QueuingStrategySize size;\n};",
         "type": "dictionary",
         "name": "QueuingStrategy",
         "inheritance": null,
@@ -2770,6 +2806,7 @@
         "partial": false
       },
       "QueuingStrategySize": {
+        "fragment": "callback QueuingStrategySize = unrestricted double (optional any chunk);",
         "type": "callback",
         "name": "QueuingStrategySize",
         "idlType": {
@@ -2801,6 +2838,7 @@
         "extAttrs": []
       },
       "QueuingStrategyInit": {
+        "fragment": "dictionary QueuingStrategyInit {\n  required unrestricted double highWaterMark;\n};",
         "type": "dictionary",
         "name": "QueuingStrategyInit",
         "inheritance": null,
@@ -2825,6 +2863,7 @@
         "partial": false
       },
       "ByteLengthQueuingStrategy": {
+        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ByteLengthQueuingStrategy {\n  constructor(QueuingStrategyInit init);\n\n  readonly attribute unrestricted double highWaterMark;\n  readonly attribute Function size;\n};",
         "type": "interface",
         "name": "ByteLengthQueuingStrategy",
         "inheritance": null,
@@ -2906,6 +2945,7 @@
         "partial": false
       },
       "CountQueuingStrategy": {
+        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface CountQueuingStrategy {\n  constructor(QueuingStrategyInit init);\n\n  readonly attribute unrestricted double highWaterMark;\n  readonly attribute Function size;\n};",
         "type": "interface",
         "name": "CountQueuingStrategy",
         "inheritance": null,
@@ -2987,6 +3027,7 @@
         "partial": false
       },
       "GenericTransformStream": {
+        "fragment": "interface mixin GenericTransformStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
         "type": "interface mixin",
         "name": "GenericTransformStream",
         "inheritance": null,
@@ -3029,15 +3070,19 @@
     "idlExtendedNames": {
       "ReadableStreamDefaultReader": [
         {
-          "name": "ReadableStreamDefaultReader",
-          "type": "interface",
+          "fragment": "ReadableStreamDefaultReader includes ReadableStreamGenericReader;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "ReadableStreamDefaultReader",
           "includes": "ReadableStreamGenericReader"
         }
       ],
       "ReadableStreamBYOBReader": [
         {
-          "name": "ReadableStreamBYOBReader",
-          "type": "interface",
+          "fragment": "ReadableStreamBYOBReader includes ReadableStreamGenericReader;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "ReadableStreamBYOBReader",
           "includes": "ReadableStreamGenericReader"
         }
       ]

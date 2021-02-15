@@ -1,0 +1,14 @@
+{
+  "name": "XPathResult",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface XPathResult {\n  const unsigned short ANY_TYPE = 0;\n  const unsigned short NUMBER_TYPE = 1;\n  const unsigned short STRING_TYPE = 2;\n  const unsigned short BOOLEAN_TYPE = 3;\n  const unsigned short UNORDERED_NODE_ITERATOR_TYPE = 4;\n  const unsigned short ORDERED_NODE_ITERATOR_TYPE = 5;\n  const unsigned short UNORDERED_NODE_SNAPSHOT_TYPE = 6;\n  const unsigned short ORDERED_NODE_SNAPSHOT_TYPE = 7;\n  const unsigned short ANY_UNORDERED_NODE_TYPE = 8;\n  const unsigned short FIRST_ORDERED_NODE_TYPE = 9;\n\n  readonly attribute unsigned short resultType;\n  readonly attribute unrestricted double numberValue;\n  readonly attribute DOMString stringValue;\n  readonly attribute boolean booleanValue;\n  readonly attribute Node? singleNodeValue;\n  readonly attribute boolean invalidIteratorState;\n  readonly attribute unsigned long snapshotLength;\n\n  Node? iterateNext();\n  Node? snapshotItem(unsigned long index);\n};",
+    "href": "https://dom.spec.whatwg.org/#xpathresult"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

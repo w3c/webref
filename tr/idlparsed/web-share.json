@@ -10,6 +10,7 @@
     },
     "idlNames": {
       "ShareData": {
+        "fragment": "dictionary ShareData {\n  sequence<File> files;\n  USVString title;\n  USVString text;\n  USVString url;\n};",
         "type": "dictionary",
         "name": "ShareData",
         "inheritance": null,
@@ -91,6 +92,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
+          "fragment": "partial interface Navigator {\n  [SecureContext] Promise<undefined> share(optional ShareData data = {});\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,

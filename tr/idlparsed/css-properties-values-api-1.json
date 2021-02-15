@@ -14,6 +14,7 @@
     },
     "idlNames": {
       "PropertyDefinition": {
+        "fragment": "dictionary PropertyDefinition {\n  required DOMString name;\n           DOMString syntax       = \"*\";\n  required boolean   inherits;\n           DOMString initialValue;\n};",
         "type": "dictionary",
         "name": "PropertyDefinition",
         "inheritance": null,
@@ -86,6 +87,7 @@
         "partial": false
       },
       "CSSPropertyRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSPropertyRule : CSSRule {\n    readonly attribute CSSOMString name;\n    readonly attribute CSSOMString syntax;\n    readonly attribute boolean inherits;\n    readonly attribute CSSOMString? initialValue;\n};",
         "type": "interface",
         "name": "CSSPropertyRule",
         "inheritance": "CSSRule",
@@ -168,6 +170,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
+          "fragment": "partial namespace CSS {\n  undefined registerProperty(PropertyDefinition definition);\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,

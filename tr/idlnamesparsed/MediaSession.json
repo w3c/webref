@@ -1,0 +1,14 @@
+{
+  "name": "MediaSession",
+  "defined": {
+    "spec": {
+      "title": "Media Session Standard",
+      "url": "https://www.w3.org/TR/mediasession/"
+    },
+    "fragment": "[Exposed=Window]\ninterface MediaSession {\n  attribute MediaMetadata? metadata;\n\n  attribute MediaSessionPlaybackState playbackState;\n\n  void setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);\n\n  void setPositionState(optional MediaPositionState state = {});\n};",
+    "href": "https://www.w3.org/TR/mediasession/#mediasession"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

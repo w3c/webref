@@ -1,0 +1,14 @@
+{
+  "name": "HIDReportItem",
+  "defined": {
+    "spec": {
+      "title": "WebHID API",
+      "url": "https://wicg.github.io/webhid/"
+    },
+    "fragment": "dictionary HIDReportItem {\n    boolean isAbsolute;\n    boolean isArray;\n    boolean isBufferedBytes;\n    boolean isConstant;\n    boolean isLinear;\n    boolean isRange;\n    boolean isVolatile;\n    boolean hasNull;\n    boolean hasPreferredState;\n    boolean wrap;\n    sequence<unsigned long> usages;\n    unsigned long usageMinimum;\n    unsigned long usageMaximum;\n    unsigned short reportSize;\n    unsigned short reportCount;\n    byte unitExponent;\n    HIDUnitSystem unitSystem;\n    byte unitFactorLengthExponent;\n    byte unitFactorMassExponent;\n    byte unitFactorTimeExponent;\n    byte unitFactorTemperatureExponent;\n    byte unitFactorCurrentExponent;\n    byte unitFactorLuminousIntensityExponent;\n    long logicalMinimum;\n    long logicalMaximum;\n    long physicalMinimum;\n    long physicalMaximum;\n    sequence<DOMString> strings;\n};",
+    "href": "https://wicg.github.io/webhid/#dom-hidreportitem"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

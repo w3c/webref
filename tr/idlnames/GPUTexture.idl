@@ -1,0 +1,10 @@
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+[Serializable]
+interface GPUTexture {
+    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});
+
+    undefined destroy();
+};
+
+// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+GPUTexture includes GPUObjectBase;
