@@ -28,7 +28,6 @@ idl.parseAll().then((all) => {
       'uievents': ['dict-arg-default'],
       'web-codecs': ['dict-arg-optional'],
       'webgl1': ['constructor-member'],
-      'webrtc-insertable-streams': ['dict-arg-default'],
       'webvtt': ['constructor-member'],
       'webxrlayers': ['dict-arg-default'],
     };
