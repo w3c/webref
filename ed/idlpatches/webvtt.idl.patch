@@ -1,0 +1,41 @@
+From db75d52b5b5df5657735c5716cf8a946e499309c Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Tue, 16 Feb 2021 13:58:57 +0100
+Subject: [PATCH] Fix WebVTT constructors
+
+https://github.com/w3c/webvtt/pull/492
+---
+ ed/idl/webvtt.idl | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/ed/idl/webvtt.idl b/ed/idl/webvtt.idl
+index eb8d5b5c2..0ba67c7fb 100644
+--- a/ed/idl/webvtt.idl
++++ b/ed/idl/webvtt.idl
+@@ -9,9 +9,9 @@ enum DirectionSetting { "" /* horizontal */, "rl", "lr" };
+ enum LineAlignSetting { "start", "center", "end" };
+ enum PositionAlignSetting { "line-left", "center", "line-right", "auto" };
+ enum AlignSetting { "start", "center", "end", "left", "right" };
+-[Exposed=Window,
+- Constructor(double startTime, double endTime, DOMString text)]
++[Exposed=Window]
+ interface VTTCue : TextTrackCue {
++  constructor(double startTime, double endTime, DOMString text);
+   attribute VTTRegion? region;
+   attribute DirectionSetting vertical;
+   attribute boolean snapToLines;
+@@ -26,9 +26,9 @@ interface VTTCue : TextTrackCue {
+ };
+ 
+ enum ScrollSetting { "" /* none */, "up" };
+-[Exposed=Window,
+- Constructor]
++[Exposed=Window]
+ interface VTTRegion {
++  constructor();
+   attribute DOMString id;
+   attribute double width;
+   attribute unsigned long lines;
+-- 
+2.30.0.365.g02bc693789-goog
+
