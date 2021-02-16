@@ -124,7 +124,7 @@
         "partial": false
       },
       "MediaDecodingType": {
-        "fragment": "enum MediaDecodingType {\n  \"file\",\n  \"media-source\",\n};",
+        "fragment": "enum MediaDecodingType {\n  \"file\",\n  \"media-source\",\n  \"webrtc\"\n};",
         "type": "enum",
         "name": "MediaDecodingType",
         "values": [
@@ -135,12 +135,16 @@
           {
             "type": "enum-value",
             "value": "media-source"
+          },
+          {
+            "type": "enum-value",
+            "value": "webrtc"
           }
         ],
         "extAttrs": []
       },
       "MediaEncodingType": {
-        "fragment": "enum MediaEncodingType {\n  \"record\",\n  \"transmission\"\n};",
+        "fragment": "enum MediaEncodingType {\n  \"record\",\n  \"webrtc\"\n};",
         "type": "enum",
         "name": "MediaEncodingType",
         "values": [
@@ -150,13 +154,13 @@
           },
           {
             "type": "enum-value",
-            "value": "transmission"
+            "value": "webrtc"
           }
         ],
         "extAttrs": []
       },
       "VideoConfiguration": {
-        "fragment": "dictionary VideoConfiguration {\n  required DOMString contentType;\n  required unsigned long width;\n  required unsigned long height;\n  required unsigned long long bitrate;\n  required double framerate;\n  boolean hasAlphaChannel;\n  HdrMetadataType hdrMetadataType;\n  ColorGamut colorGamut;\n  TransferFunction transferFunction;\n};",
+        "fragment": "dictionary VideoConfiguration {\n  required DOMString contentType;\n  required unsigned long width;\n  required unsigned long height;\n  required unsigned long long bitrate;\n  required double framerate;\n  boolean hasAlphaChannel;\n  HdrMetadataType hdrMetadataType;\n  ColorGamut colorGamut;\n  TransferFunction transferFunction;\n  DOMString scalabilityMode;\n};",
         "type": "dictionary",
         "name": "VideoConfiguration",
         "inheritance": null,
@@ -292,6 +296,21 @@
               "nullable": false,
               "union": false,
               "idlType": "TransferFunction"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "scalabilityMode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
             },
             "default": null,
             "required": false
