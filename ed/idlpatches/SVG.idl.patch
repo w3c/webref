@@ -1,4 +1,4 @@
-From 6eb87120654bf0c600dc61e7406f20f570d72ec5 Mon Sep 17 00:00:00 2001
+From 4e5f3980c2e042f7f2f5abeeba9a382b8d7e9fc0 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
 Date: Fri, 12 Feb 2021 12:09:11 +0100
 Subject: [PATCH] Fix SVG.idl
@@ -6,15 +6,28 @@ Subject: [PATCH] Fix SVG.idl
 HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
 
 Duplicates: https://github.com/w3c/svgwg/issues/824
+
+Constructor: https://github.com/w3c/svgwg/pull/825
 ---
- ed/idl/SVG.idl | 47 ++++++++++++++---------------------------------
- 1 file changed, 14 insertions(+), 33 deletions(-)
+ ed/idl/SVG.idl | 50 ++++++++++++++++----------------------------------
+ 1 file changed, 16 insertions(+), 34 deletions(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index f8d24c9c6..5fc8b265d 100644
+index f8d24c9c6..2e7d438fa 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
-@@ -417,10 +417,6 @@ interface SVGAnimatedPreserveAspectRatio {
+@@ -314,8 +314,9 @@ interface mixin SVGElementInstance {
+   [SameObject] readonly attribute SVGUseElement? correspondingUseElement;
+ };
+ 
+-[Constructor(Animation source, Animatable newTarget), Exposed=Window]
++[Exposed=Window]
+ interface ShadowAnimation : Animation {
++  constructor(Animation source, Animatable newTarget);
+   [SameObject] readonly attribute Animation sourceAnimation;
+ };
+ 
+@@ -417,10 +418,6 @@ interface SVGAnimatedPreserveAspectRatio {
    [SameObject] readonly attribute SVGPreserveAspectRatio animVal;
  };
  
@@ -25,7 +38,7 @@ index f8d24c9c6..5fc8b265d 100644
  [Exposed=Window]
  interface SVGRectElement : SVGGeometryElement {
    [SameObject] readonly attribute SVGAnimatedLength x;
-@@ -566,34 +562,6 @@ interface SVGForeignObjectElement : SVGGraphicsElement {
+@@ -566,34 +563,6 @@ interface SVGForeignObjectElement : SVGGraphicsElement {
    [SameObject] readonly attribute SVGAnimatedLength height;
  };
  
@@ -60,7 +73,7 @@ index f8d24c9c6..5fc8b265d 100644
  [Exposed=Window]
  interface SVGGradientElement : SVGElement {
  
-@@ -671,7 +639,20 @@ interface SVGAElement : SVGGraphicsElement {
+@@ -671,7 +640,20 @@ interface SVGAElement : SVGGraphicsElement {
  };
  
  SVGAElement includes SVGURIReference;

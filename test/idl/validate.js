@@ -12,23 +12,13 @@ idl.parseAll().then((all) => {
       'require-exposed',
     ];
     const ignoreRules = {
-      'SVG': ['constructor-member'],
       'background-fetch': ['dict-arg-optional'],
-      'contact-api': ['dict-arg-default'],
-      'content-index': ['constructor-member'],
-      'css-parser-api': [
-        'constructor-member', 'dict-arg-default',
-      ],
       'gpuweb': ['dict-arg-optional'],
       'layers': ['dict-arg-default'],
-      'periodic-background-sync': ['constructor-member', 'dict-arg-default'],
-      'proximity': ['constructor-member'],
       'svg-paths': ['dict-arg-default'],
       'trusted-types': ['dict-arg-default'],
       'uievents': ['dict-arg-default'],
       'web-codecs': ['dict-arg-optional'],
-      'webgl1': ['constructor-member'],
-      'webvtt': ['constructor-member'],
       'webxrlayers': ['dict-arg-default'],
     };
 

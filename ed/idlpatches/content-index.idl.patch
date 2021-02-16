@@ -1,0 +1,27 @@
+From 0fbf435049ba1bcc3bdc6390c686063c3f291ef4 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Tue, 16 Feb 2021 21:00:39 +0100
+Subject: [PATCH] Fix content-index.idl
+
+https://github.com/WICG/content-index/pull/29
+---
+ ed/idl/content-index.idl | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/ed/idl/content-index.idl b/ed/idl/content-index.idl
+index 4cd44f536..436f6d90e 100644
+--- a/ed/idl/content-index.idl
++++ b/ed/idl/content-index.idl
+@@ -39,7 +39,8 @@ dictionary ContentIndexEventInit : ExtendableEventInit {
+   required DOMString id;
+ };
+ 
+-[Constructor(DOMString type, ContentIndexEventInit init), Exposed=ServiceWorker]
++[Exposed=ServiceWorker]
+ interface ContentIndexEvent : ExtendableEvent {
++  constructor(DOMString type, ContentIndexEventInit init);
+   readonly attribute DOMString id;
+ };
+-- 
+2.30.0.365.g02bc693789-goog
+
