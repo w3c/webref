@@ -3,7 +3,7 @@
 // (https://github.com/w3c/webref)
 // Source: WebCodecs (https://wicg.github.io/web-codecs/)
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface AudioDecoder {
   constructor(AudioDecoderInit init);
 
@@ -24,7 +24,7 @@ dictionary AudioDecoderInit {
 
 callback AudioFrameOutputCallback = undefined(AudioFrame output);
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface VideoDecoder {
   constructor(VideoDecoderInit init);
 
@@ -45,7 +45,7 @@ dictionary VideoDecoderInit {
 
 callback VideoFrameOutputCallback = undefined(VideoFrame output);
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface AudioEncoder {
   constructor(AudioEncoderInit init);
 
@@ -66,7 +66,7 @@ dictionary AudioEncoderInit {
 
 callback EncodedAudioChunkOutputCallback = undefined(EncodedAudioChunk output);
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface VideoEncoder {
   constructor(VideoEncoderInit init);
 
@@ -145,16 +145,17 @@ enum CodecState {
 
 callback WebCodecsErrorCallback = undefined(DOMException error);
 
+[Exposed=(Window,DedicatedWorker)]
 interface EncodedAudioChunk {
   constructor(EncodedAudioChunkInit init);
   readonly attribute EncodedAudioChunkType type;
-  readonly attribute unsigned long long timestamp;  // microseconds
+  readonly attribute DOMHighResTimeStamp timestamp;
   readonly attribute ArrayBuffer data;
 };
 
 dictionary EncodedAudioChunkInit {
   required EncodedAudioChunkType type;
-  required unsigned long long timestamp;
+  required DOMHighResTimeStamp timestamp;
   required BufferSource data;
 };
 
@@ -163,19 +164,19 @@ enum EncodedAudioChunkType {
     "delta",
 };
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface EncodedVideoChunk {
   constructor(EncodedVideoChunkInit init);
   readonly attribute EncodedVideoChunkType type;
-  readonly attribute unsigned long long timestamp;  // microseconds
-  readonly attribute unsigned long long? duration;  // microseconds
+  readonly attribute DOMHighResTimeStamp timestamp;
+  readonly attribute DOMHighResTimeStamp? duration;
   readonly attribute ArrayBuffer data;
 };
 
 dictionary EncodedVideoChunkInit {
   required EncodedVideoChunkType type;
-  required unsigned long long timestamp;
-  unsigned long long duration;
+  required DOMHighResTimeStamp timestamp;
+  DOMHighResTimeStamp duration;
   required BufferSource data;
 };
 
@@ -184,20 +185,20 @@ enum EncodedVideoChunkType {
     "delta",
 };
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface AudioFrame {
   constructor(AudioFrameInit init);
-  readonly attribute unsigned long long timestamp;
+  readonly attribute DOMHighResTimeStamp timestamp;
   readonly attribute AudioBuffer? buffer;
   undefined close();
 };
 
 dictionary AudioFrameInit {
-  required unsigned long long timestamp;
+  required DOMHighResTimeStamp timestamp;
   required AudioBuffer buffer;
 };
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface VideoFrame {
   constructor(ImageBitmap imageBitmap, VideoFrameInit frameInit);
   constructor(PixelFormat pixelFormat, sequence<(Plane or PlaneInit)> planes,
@@ -213,8 +214,8 @@ interface VideoFrame {
   readonly attribute unsigned long cropHeight;
   readonly attribute unsigned long displayWidth;
   readonly attribute unsigned long displayHeight;
-  readonly attribute unsigned long long? duration;
-  readonly attribute unsigned long long? timestamp;
+  readonly attribute DOMHighResTimeStamp? duration;
+  readonly attribute DOMHighResTimeStamp? timestamp;
 
   undefined destroy();
   VideoFrame clone();
@@ -233,8 +234,8 @@ dictionary VideoFrameInit {
   unsigned long cropHeight;
   unsigned long displayWidth;
   unsigned long displayHeight;
-  unsigned long long duration;
-  unsigned long long timestamp;
+  DOMHighResTimeStamp duration;
+  DOMHighResTimeStamp timestamp;
 };
 
 interface Plane {

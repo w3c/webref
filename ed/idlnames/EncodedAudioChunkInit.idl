@@ -1,6 +1,6 @@
 // Source: WebCodecs (https://wicg.github.io/web-codecs/)
 dictionary EncodedAudioChunkInit {
   required EncodedAudioChunkType type;
-  required unsigned long long timestamp;
+  required DOMHighResTimeStamp timestamp;
   required BufferSource data;
 };

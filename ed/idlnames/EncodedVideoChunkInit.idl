@@ -1,7 +1,7 @@
 // Source: WebCodecs (https://wicg.github.io/web-codecs/)
 dictionary EncodedVideoChunkInit {
   required EncodedVideoChunkType type;
-  required unsigned long long timestamp;
-  unsigned long long duration;
+  required DOMHighResTimeStamp timestamp;
+  DOMHighResTimeStamp duration;
   required BufferSource data;
 };
