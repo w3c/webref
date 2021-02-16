@@ -5,7 +5,7 @@
       "title": "Proximity Sensor",
       "url": "https://www.w3.org/TR/proximity/"
     },
-    "fragment": "[Constructor(optional SensorOptions sensorOptions = {}), SecureContext, Exposed=Window]\ninterface ProximitySensor : Sensor {\n  readonly attribute double? distance;\n  readonly attribute double? max;\n  readonly attribute boolean? near;\n};",
+    "fragment": "[SecureContext, Exposed=Window]\ninterface ProximitySensor : Sensor {\n  constructor(optional SensorOptions sensorOptions = {});\n  readonly attribute double? distance;\n  readonly attribute double? max;\n  readonly attribute boolean? near;\n};",
     "href": "https://w3c.github.io/proximity/#proximitysensor"
   },
   "extended": [],
