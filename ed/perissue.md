@@ -5,6 +5,388 @@
 383 specifications were crawled in this report.
 
 
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 123)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL EXT_blend_minmax Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 124)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL EXT_clip_cull_distance Extension Draft Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 125)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL EXT_color_buffer_float Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 126)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL EXT_color_buffer_half_float Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at listOnTimeout (internal/timers.js:523:9)
+    at processTimers (internal/timers.js:497:7)
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)`
+- [WebGL EXT_disjoint_timer_query Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 129)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 128)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL EXT_float_blend Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 130)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL EXT_frag_depth Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 131)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 132)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL EXT_sRGB Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 133)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL EXT_texture_compression_bptc Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 134)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL EXT_texture_compression_rgtc Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at listOnTimeout (internal/timers.js:523:9)
+    at processTimers (internal/timers.js:497:7)
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)`
+- [WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at listOnTimeout (internal/timers.js:523:9)
+    at processTimers (internal/timers.js:497:7)
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)`
+- [WebGL EXT_texture_norm16 Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 137)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL KHR_parallel_shader_compile Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 138)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL OES_draw_buffers_indexed Extension Draft Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at listOnTimeout (internal/timers.js:523:9)
+    at processTimers (internal/timers.js:497:7)
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)`
+- [WebGL OES_element_index_uint Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at listOnTimeout (internal/timers.js:523:9)
+    at processTimers (internal/timers.js:497:7)
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)`
+- [WebGL OES_fbo_render_mipmap Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 141)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL OES_standard_derivatives Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 142)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL OES_texture_float Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 144)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL OES_texture_float_linear Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at listOnTimeout (internal/timers.js:523:9)
+    at processTimers (internal/timers.js:497:7)
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)`
+- [WebGL OES_texture_half_float Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 146)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at listOnTimeout (internal/timers.js:523:9)
+    at processTimers (internal/timers.js:497:7)
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)`
+- [WebGL OES_vertex_array_object Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at listOnTimeout (internal/timers.js:523:9)
+    at processTimers (internal/timers.js:497:7)
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)`
+- [WebGL OVR_multiview2 Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 148)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at listOnTimeout (internal/timers.js:523:9)
+    at processTimers (internal/timers.js:497:7)
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)`
+- [WebGL WEBGL_color_buffer_float Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 150)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL WEBGL_compressed_texture_astc Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at listOnTimeout (internal/timers.js:523:9)
+    at processTimers (internal/timers.js:497:7)
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)`
+- [WebGL WEBGL_compressed_texture_etc Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at listOnTimeout (internal/timers.js:523:9)
+    at processTimers (internal/timers.js:497:7)
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)`
+- [WebGL WEBGL_compressed_texture_etc1 Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 153)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL WEBGL_compressed_texture_pvrtc Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 154)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 156)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [WebGL WEBGL_multi_draw Extension Specification]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
+    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
+    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 164)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+
+=> 34 specifications found
+
+
 ## Specifications without normative dependencies
 
 - [Atomics.waitAsync](https://tc39.es/proposal-atomics-wait-async/)
@@ -20,39 +402,6 @@
 - [Relative Indexing Method](https://tc39.es/proposal-relative-indexing-method/)
 - [Static class features](https://tc39.es/proposal-static-class-features/)
 - [Top-Level Await](https://tc39.es/proposal-top-level-await/)
-- [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
-- [WebGL EXT_blend_minmax Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
-- [WebGL EXT_clip_cull_distance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
-- [WebGL EXT_color_buffer_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
-- [WebGL EXT_color_buffer_half_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
-- [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
-- [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
-- [WebGL EXT_float_blend Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
-- [WebGL EXT_frag_depth Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
-- [WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
-- [WebGL EXT_sRGB Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
-- [WebGL EXT_texture_compression_bptc Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
-- [WebGL EXT_texture_compression_rgtc Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
-- [WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
-- [WebGL EXT_texture_norm16 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
-- [WebGL KHR_parallel_shader_compile Extension Specification](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
-- [WebGL OES_draw_buffers_indexed Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
-- [WebGL OES_element_index_uint Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
-- [WebGL OES_fbo_render_mipmap Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
-- [WebGL OES_standard_derivatives Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
-- [WebGL OES_texture_float Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
-- [WebGL OES_texture_float_linear Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
-- [WebGL OES_texture_half_float Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
-- [WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
-- [WebGL OES_vertex_array_object Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
-- [WebGL OVR_multiview2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
-- [WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
-- [WebGL WEBGL_color_buffer_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
-- [WebGL WEBGL_compressed_texture_astc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
-- [WebGL WEBGL_compressed_texture_etc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
-- [WebGL WEBGL_compressed_texture_etc1 Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
-- [WebGL WEBGL_compressed_texture_pvrtc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
-- [WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
 - [WebGL WEBGL_compressed_texture_s3tc_srgb Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
 - [WebGL WEBGL_debug_renderer_info Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
 - [WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
@@ -60,10 +409,9 @@
 - [WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
 - [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
 - [WebGL WEBGL_lose_context Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
-- [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 55 specifications found
+=> 21 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -92,39 +440,6 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [SVG Markers](https://svgwg.org/specs/markers/)
 - [SVG Paths](https://svgwg.org/specs/paths/)
-- [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
-- [WebGL EXT_blend_minmax Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
-- [WebGL EXT_clip_cull_distance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
-- [WebGL EXT_color_buffer_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
-- [WebGL EXT_color_buffer_half_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
-- [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
-- [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
-- [WebGL EXT_float_blend Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
-- [WebGL EXT_frag_depth Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
-- [WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
-- [WebGL EXT_sRGB Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
-- [WebGL EXT_texture_compression_bptc Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
-- [WebGL EXT_texture_compression_rgtc Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
-- [WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
-- [WebGL EXT_texture_norm16 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
-- [WebGL KHR_parallel_shader_compile Extension Specification](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
-- [WebGL OES_draw_buffers_indexed Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
-- [WebGL OES_element_index_uint Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
-- [WebGL OES_fbo_render_mipmap Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
-- [WebGL OES_standard_derivatives Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
-- [WebGL OES_texture_float Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
-- [WebGL OES_texture_float_linear Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
-- [WebGL OES_texture_half_float Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
-- [WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
-- [WebGL OES_vertex_array_object Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
-- [WebGL OVR_multiview2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
-- [WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
-- [WebGL WEBGL_color_buffer_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
-- [WebGL WEBGL_compressed_texture_astc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
-- [WebGL WEBGL_compressed_texture_etc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
-- [WebGL WEBGL_compressed_texture_etc1 Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
-- [WebGL WEBGL_compressed_texture_pvrtc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
-- [WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
 - [WebGL WEBGL_compressed_texture_s3tc_srgb Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
 - [WebGL WEBGL_debug_renderer_info Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
 - [WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
@@ -132,11 +447,10 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
 - [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
 - [WebGL WEBGL_lose_context Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
-- [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - [WebRTC Priority Control API](https://w3c.github.io/webrtc-priority/)
 
-=> 49 specifications found
+=> 15 specifications found
 
 
 
@@ -155,7 +469,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - `PermissionName` used in [Permissions](https://w3c.github.io/permissions/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/)
-- `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [SVG Animations](https://svgwg.org/specs/animations/), [SVG Markers](https://svgwg.org/specs/markers/), [Web Background Synchronization](https://wicg.github.io/background-sync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/), [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/), [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/), [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/), [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/), [WebGL OES_draw_buffers_indexed Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/), [WebGL OES_vertex_array_object Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/), [WebGL OVR_multiview2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/), [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/), [WebGL WEBGL_lose_context Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/), [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/), [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/), [WebXR Anchors Module](https://immersive-web.github.io/anchors/), [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
+- `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [SVG Animations](https://svgwg.org/specs/animations/), [SVG Markers](https://svgwg.org/specs/markers/), [Web Background Synchronization](https://wicg.github.io/background-sync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/), [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/), [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/), [WebGL WEBGL_lose_context Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/), [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/), [WebXR Anchors Module](https://immersive-web.github.io/anchors/), [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 
 => 4 WebIDL names found
 
@@ -189,30 +503,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [SVG Markers](https://svgwg.org/specs/markers/) uses:
     * `DOMPoint` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
     * `DOMPointReadOnly` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/) uses:
-    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLsizei` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLintptr` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLuint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/) uses:
-    * `WebGLObject` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/) uses:
-    * `WebGLQuery` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
-    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebGL OES_draw_buffers_indexed Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/) uses:
-    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLuint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLboolean` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebGL OES_vertex_array_object Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/) uses:
-    * `WebGLObject` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLboolean` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebGL OVR_multiview2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/) uses:
-    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLsizei` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/) uses `WebGLShader` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/) uses `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/) uses:
@@ -221,11 +511,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `GLsizei` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `GLuint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `GLintptr` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/) uses:
-    * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLuint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-    * `GLsizei` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/) uses:
     * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `GLint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -241,7 +526,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 50 missing references for IDL definitions found in 23 specifications
+=> 28 missing references for IDL definitions found in 16 specifications
 
 
 ## No definition for CSS properties
@@ -402,224 +687,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `queryCommandValue(commandId)` with type `method`, but found [`queryCommandValue()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandvalue) with type `dfn`
 - [Selection API](https://w3c.github.io/selection-api/):
     * `stringification behavior` with type `dfn` for [`Selection`](https://w3c.github.io/selection-api/#dom-selection)
-- [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/):
-    * `ANGLE_instanced_arrays` with type `interface`
-    * `VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE` with type `const`
-    * `drawArraysInstancedANGLE(mode, first, count, primcount)` with type `method`
-    * `drawElementsInstancedANGLE(mode, count, type, offset, primcount)` with type `method`
-    * `vertexAttribDivisorANGLE(index, divisor)` with type `method`
-- [WebGL EXT_blend_minmax Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/):
-    * `EXT_blend_minmax` with type `interface`
-    * `MIN_EXT` with type `const`
-    * `MAX_EXT` with type `const`
-- [WebGL EXT_clip_cull_distance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/):
-    * `EXT_clip_cull_distance` with type `interface`
-    * `MAX_CLIP_DISTANCES_EXT` with type `const`
-    * `MAX_CULL_DISTANCES_EXT` with type `const`
-    * `MAX_COMBINED_CLIP_AND_CULL_DISTANCES_EXT` with type `const`
-    * `CLIP_DISTANCE0_EXT` with type `const`
-    * `CLIP_DISTANCE1_EXT` with type `const`
-    * `CLIP_DISTANCE2_EXT` with type `const`
-    * `CLIP_DISTANCE3_EXT` with type `const`
-    * `CLIP_DISTANCE4_EXT` with type `const`
-    * `CLIP_DISTANCE5_EXT` with type `const`
-    * `CLIP_DISTANCE6_EXT` with type `const`
-    * `CLIP_DISTANCE7_EXT` with type `const`
-- [WebGL EXT_color_buffer_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/):
-    * `EXT_color_buffer_float` with type `interface`
-- [WebGL EXT_color_buffer_half_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/):
-    * `EXT_color_buffer_half_float` with type `interface`
-    * `RGBA16F_EXT` with type `const`
-    * `RGB16F_EXT` with type `const`
-    * `FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT` with type `const`
-    * `UNSIGNED_NORMALIZED_EXT` with type `const`
-- [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/):
-    * `GLuint64EXT` with type `typedef`
-    * `WebGLTimerQueryEXT` with type `interface`
-    * `EXT_disjoint_timer_query` with type `interface`
-    * `QUERY_COUNTER_BITS_EXT` with type `const`
-    * `CURRENT_QUERY_EXT` with type `const`
-    * `QUERY_RESULT_EXT` with type `const`
-    * `QUERY_RESULT_AVAILABLE_EXT` with type `const`
-    * `TIME_ELAPSED_EXT` with type `const`
-    * `TIMESTAMP_EXT` with type `const`
-    * `GPU_DISJOINT_EXT` with type `const`
-    * `createQueryEXT()` with type `method`
-    * `deleteQueryEXT(query)` with type `method`
-    * `isQueryEXT(query)` with type `method`
-    * `beginQueryEXT(target, query)` with type `method`
-    * `endQueryEXT(target)` with type `method`
-    * `queryCounterEXT(query, target)` with type `method`
-    * `getQueryEXT(target, pname)` with type `method`
-    * `getQueryObjectEXT(query, pname)` with type `method`
-- [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/):
-    * `EXT_disjoint_timer_query_webgl2` with type `interface`
-    * `QUERY_COUNTER_BITS_EXT` with type `const`
-    * `TIME_ELAPSED_EXT` with type `const`
-    * `TIMESTAMP_EXT` with type `const`
-    * `GPU_DISJOINT_EXT` with type `const`
-    * `queryCounterEXT(query, target)` with type `method`
-- [WebGL EXT_float_blend Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/):
-    * `EXT_float_blend` with type `interface`
-- [WebGL EXT_frag_depth Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/):
-    * `EXT_frag_depth` with type `interface`
-- [WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/):
-    * `EXT_shader_texture_lod` with type `interface`
-- [WebGL EXT_sRGB Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/):
-    * `EXT_sRGB` with type `interface`
-    * `SRGB_EXT` with type `const`
-    * `SRGB_ALPHA_EXT` with type `const`
-    * `SRGB8_ALPHA8_EXT` with type `const`
-    * `FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT` with type `const`
-- [WebGL EXT_texture_compression_bptc Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/):
-    * `EXT_texture_compression_bptc` with type `interface`
-    * `COMPRESSED_RGBA_BPTC_UNORM_EXT` with type `const`
-    * `COMPRESSED_SRGB_ALPHA_BPTC_UNORM_EXT` with type `const`
-    * `COMPRESSED_RGB_BPTC_SIGNED_FLOAT_EXT` with type `const`
-    * `COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_EXT` with type `const`
-- [WebGL EXT_texture_compression_rgtc Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/):
-    * `EXT_texture_compression_rgtc` with type `interface`
-    * `COMPRESSED_RED_RGTC1_EXT` with type `const`
-    * `COMPRESSED_SIGNED_RED_RGTC1_EXT` with type `const`
-    * `COMPRESSED_RED_GREEN_RGTC2_EXT` with type `const`
-    * `COMPRESSED_SIGNED_RED_GREEN_RGTC2_EXT` with type `const`
-- [WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/):
-    * `EXT_texture_filter_anisotropic` with type `interface`
-    * `TEXTURE_MAX_ANISOTROPY_EXT` with type `const`
-    * `MAX_TEXTURE_MAX_ANISOTROPY_EXT` with type `const`
-- [WebGL EXT_texture_norm16 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/):
-    * `EXT_texture_norm16` with type `interface`
-    * `R16_EXT` with type `const`
-    * `RG16_EXT` with type `const`
-    * `RGB16_EXT` with type `const`
-    * `RGBA16_EXT` with type `const`
-    * `R16_SNORM_EXT` with type `const`
-    * `RG16_SNORM_EXT` with type `const`
-    * `RGB16_SNORM_EXT` with type `const`
-    * `RGBA16_SNORM_EXT` with type `const`
-- [WebGL KHR_parallel_shader_compile Extension Specification](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/):
-    * `KHR_parallel_shader_compile` with type `interface`
-    * `COMPLETION_STATUS_KHR` with type `const`
-- [WebGL OES_draw_buffers_indexed Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/):
-    * `OES_draw_buffers_indexed` with type `interface`
-    * `enableiOES(target, index)` with type `method`
-    * `disableiOES(target, index)` with type `method`
-    * `blendEquationiOES(buf, mode)` with type `method`
-    * `blendEquationSeparateiOES(buf, modeRGB, modeAlpha)` with type `method`
-    * `blendFunciOES(buf, src, dst)` with type `method`
-    * `blendFuncSeparateiOES(buf, srcRGB, dstRGB, srcAlpha, dstAlpha)` with type `method`
-    * `colorMaskiOES(buf, r, g, b, a)` with type `method`
-- [WebGL OES_element_index_uint Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/):
-    * `OES_element_index_uint` with type `interface`
-- [WebGL OES_fbo_render_mipmap Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/):
-    * `OES_fbo_render_mipmap` with type `interface`
-- [WebGL OES_standard_derivatives Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/):
-    * `OES_standard_derivatives` with type `interface`
-    * `FRAGMENT_SHADER_DERIVATIVE_HINT_OES` with type `const`
-- [WebGL OES_texture_float Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/):
-    * `OES_texture_float` with type `interface`
-- [WebGL OES_texture_float_linear Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/):
-    * `OES_texture_float_linear` with type `interface`
-- [WebGL OES_texture_half_float Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/):
-    * `OES_texture_half_float` with type `interface`
-    * `HALF_FLOAT_OES` with type `const`
-- [WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/):
-    * `OES_texture_half_float_linear` with type `interface`
-- [WebGL OES_vertex_array_object Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/):
-    * `WebGLVertexArrayObjectOES` with type `interface`
-    * `OES_vertex_array_object` with type `interface`
-    * `VERTEX_ARRAY_BINDING_OES` with type `const`
-    * `createVertexArrayOES()` with type `method`
-    * `deleteVertexArrayOES(arrayObject)` with type `method`
-    * `isVertexArrayOES(arrayObject)` with type `method`
-    * `bindVertexArrayOES(arrayObject)` with type `method`
-- [WebGL OVR_multiview2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/):
-    * `OVR_multiview2` with type `interface`
-    * `FRAMEBUFFER_ATTACHMENT_TEXTURE_NUM_VIEWS_OVR` with type `const`
-    * `FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR` with type `const`
-    * `MAX_VIEWS_OVR` with type `const`
-    * `FRAMEBUFFER_INCOMPLETE_VIEW_TARGETS_OVR` with type `const`
-    * `framebufferTextureMultiviewOVR(target, attachment, texture, level, baseViewIndex, numViews)` with type `method`
-- [WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/):
-    * `WEBGL_blend_equation_advanced_coherent` with type `interface`
-    * `MULTIPLY` with type `const`
-    * `SCREEN` with type `const`
-    * `OVERLAY` with type `const`
-    * `DARKEN` with type `const`
-    * `LIGHTEN` with type `const`
-    * `COLORDODGE` with type `const`
-    * `COLORBURN` with type `const`
-    * `HARDLIGHT` with type `const`
-    * `SOFTLIGHT` with type `const`
-    * `DIFFERENCE` with type `const`
-    * `EXCLUSION` with type `const`
-    * `HSL_HUE` with type `const`
-    * `HSL_SATURATION` with type `const`
-    * `HSL_COLOR` with type `const`
-    * `HSL_LUMINOSITY` with type `const`
-- [WebGL WEBGL_color_buffer_float Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/):
-    * `WEBGL_color_buffer_float` with type `interface`
-    * `RGBA32F_EXT` with type `const`
-    * `FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT` with type `const`
-    * `UNSIGNED_NORMALIZED_EXT` with type `const`
-- [WebGL WEBGL_compressed_texture_astc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/):
-    * `WEBGL_compressed_texture_astc` with type `interface`
-    * `COMPRESSED_RGBA_ASTC_4x4_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_5x4_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_5x5_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_6x5_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_6x6_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_8x5_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_8x6_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_8x8_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_10x5_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_10x6_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_10x8_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_10x10_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_12x10_KHR` with type `const`
-    * `COMPRESSED_RGBA_ASTC_12x12_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_4x4_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_5x4_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_5x5_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_6x5_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_6x6_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_8x5_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_8x6_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_8x8_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_10x5_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_10x6_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_10x8_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_10x10_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_12x10_KHR` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ASTC_12x12_KHR` with type `const`
-    * `getSupportedProfiles()` with type `method`
-- [WebGL WEBGL_compressed_texture_etc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/):
-    * `WEBGL_compressed_texture_etc` with type `interface`
-    * `COMPRESSED_R11_EAC` with type `const`
-    * `COMPRESSED_SIGNED_R11_EAC` with type `const`
-    * `COMPRESSED_RG11_EAC` with type `const`
-    * `COMPRESSED_SIGNED_RG11_EAC` with type `const`
-    * `COMPRESSED_RGB8_ETC2` with type `const`
-    * `COMPRESSED_SRGB8_ETC2` with type `const`
-    * `COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2` with type `const`
-    * `COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2` with type `const`
-    * `COMPRESSED_RGBA8_ETC2_EAC` with type `const`
-    * `COMPRESSED_SRGB8_ALPHA8_ETC2_EAC` with type `const`
-- [WebGL WEBGL_compressed_texture_etc1 Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/):
-    * `WEBGL_compressed_texture_etc1` with type `interface`
-    * `COMPRESSED_RGB_ETC1_WEBGL` with type `const`
-- [WebGL WEBGL_compressed_texture_pvrtc Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/):
-    * `WEBGL_compressed_texture_pvrtc` with type `interface`
-    * `COMPRESSED_RGB_PVRTC_4BPPV1_IMG` with type `const`
-    * `COMPRESSED_RGB_PVRTC_2BPPV1_IMG` with type `const`
-    * `COMPRESSED_RGBA_PVRTC_4BPPV1_IMG` with type `const`
-    * `COMPRESSED_RGBA_PVRTC_2BPPV1_IMG` with type `const`
-- [WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/):
-    * `WEBGL_compressed_texture_s3tc` with type `interface`
-    * `COMPRESSED_RGB_S3TC_DXT1_EXT` with type `const`
-    * `COMPRESSED_RGBA_S3TC_DXT1_EXT` with type `const`
-    * `COMPRESSED_RGBA_S3TC_DXT3_EXT` with type `const`
-    * `COMPRESSED_RGBA_S3TC_DXT5_EXT` with type `const`
 - [WebGL WEBGL_compressed_texture_s3tc_srgb Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/):
     * `WEBGL_compressed_texture_s3tc_srgb` with type `interface`
     * `COMPRESSED_SRGB_S3TC_DXT1_EXT` with type `const`
@@ -681,18 +748,12 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WEBGL_lose_context` with type `interface`
     * `loseContext()` with type `method`
     * `restoreContext()` with type `method`
-- [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/):
-    * `WEBGL_multi_draw` with type `interface`
-    * `multiDrawArraysWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, drawcount)` with type `method`
-    * `multiDrawElementsWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, drawcount)` with type `method`
-    * `multiDrawArraysInstancedWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, drawcount)` with type `method`
-    * `multiDrawElementsInstancedWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, drawcount)` with type `method`
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/):
     * `WEBGL_multi_draw_instanced_base_vertex_base_instance` with type `interface`
     * `multiDrawArraysInstancedBaseInstanceWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
     * `multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
 
-=> 392 properties without definition found in 44 specifications
+=> 202 properties without definition found in 10 specifications
 
 
 ## Possibly no definition for CSS properties

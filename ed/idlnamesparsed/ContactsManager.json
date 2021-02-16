@@ -5,7 +5,7 @@
       "title": "Contact Picker API",
       "url": "https://wicg.github.io/contact-api/spec/"
     },
-    "fragment": "[Exposed=(Window,SecureContext)]\ninterface ContactsManager {\n    Promise<sequence<ContactProperty>> getProperties();\n    Promise<sequence<ContactInfo>> select(sequence<ContactProperty> properties, optional ContactsSelectOptions options);\n};",
+    "fragment": "[Exposed=(Window,SecureContext)]\ninterface ContactsManager {\n    Promise<sequence<ContactProperty>> getProperties();\n    Promise<sequence<ContactInfo>> select(sequence<ContactProperty> properties, optional ContactsSelectOptions options = {});\n};",
     "href": "https://wicg.github.io/contact-api/spec/#contactsmanager"
   },
   "extended": [],
