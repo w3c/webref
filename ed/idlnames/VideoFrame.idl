@@ -1,5 +1,5 @@
 // Source: WebCodecs (https://wicg.github.io/web-codecs/)
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface VideoFrame {
   constructor(ImageBitmap imageBitmap, VideoFrameInit frameInit);
   constructor(PixelFormat pixelFormat, sequence<(Plane or PlaneInit)> planes,
@@ -15,8 +15,8 @@ interface VideoFrame {
   readonly attribute unsigned long cropHeight;
   readonly attribute unsigned long displayWidth;
   readonly attribute unsigned long displayHeight;
-  readonly attribute unsigned long long? duration;
-  readonly attribute unsigned long long? timestamp;
+  readonly attribute DOMHighResTimeStamp? duration;
+  readonly attribute DOMHighResTimeStamp? timestamp;
 
   undefined destroy();
   VideoFrame clone();

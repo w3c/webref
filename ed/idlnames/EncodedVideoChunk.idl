@@ -1,9 +1,9 @@
 // Source: WebCodecs (https://wicg.github.io/web-codecs/)
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface EncodedVideoChunk {
   constructor(EncodedVideoChunkInit init);
   readonly attribute EncodedVideoChunkType type;
-  readonly attribute unsigned long long timestamp;  // microseconds
-  readonly attribute unsigned long long? duration;  // microseconds
+  readonly attribute DOMHighResTimeStamp timestamp;
+  readonly attribute DOMHighResTimeStamp? duration;
   readonly attribute ArrayBuffer data;
 };

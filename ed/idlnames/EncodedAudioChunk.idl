@@ -1,7 +1,8 @@
 // Source: WebCodecs (https://wicg.github.io/web-codecs/)
+[Exposed=(Window,DedicatedWorker)]
 interface EncodedAudioChunk {
   constructor(EncodedAudioChunkInit init);
   readonly attribute EncodedAudioChunkType type;
-  readonly attribute unsigned long long timestamp;  // microseconds
+  readonly attribute DOMHighResTimeStamp timestamp;
   readonly attribute ArrayBuffer data;
 };
