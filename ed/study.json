@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-02-16T13:12:38.269Z",
+  "date": "2021-02-16T15:46:30.272Z",
   "stats": {
     "crawled": 383,
-    "errors": 34,
+    "errors": 0,
     "studied": 383
   },
   "results": [
@@ -7881,7 +7881,7 @@
     {
       "title": "CSS Fonts Module Level 4",
       "shortname": "css-fonts-4",
-      "date": "8 February 2021",
+      "date": "9 February 2021",
       "url": "https://www.w3.org/TR/css-fonts-4/",
       "release": {
         "url": "https://www.w3.org/TR/css-fonts-4/",
@@ -12422,7 +12422,7 @@
     {
       "title": "CSS Ruby Annotation Layout Module Level 1",
       "shortname": "css-ruby-1",
-      "date": "15 February 2021",
+      "date": "16 February 2021",
       "url": "https://www.w3.org/TR/css-ruby-1/",
       "release": {
         "url": "https://www.w3.org/TR/css-ruby-1/",
@@ -36520,7 +36520,7 @@
     {
       "title": "MediaStream Image Capture",
       "shortname": "image-capture",
-      "date": "15 February 2021",
+      "date": "16 February 2021",
       "url": "https://www.w3.org/TR/image-capture/",
       "release": {
         "url": "https://www.w3.org/TR/image-capture/",
@@ -36614,7 +36614,7 @@
     {
       "title": "MediaStream Recording",
       "shortname": "mediastream-recording",
-      "date": "15 February 2021",
+      "date": "16 February 2021",
       "url": "https://www.w3.org/TR/mediastream-recording/",
       "release": {
         "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -45249,7 +45249,7 @@
     {
       "title": "Web Audio API",
       "shortname": "webaudio",
-      "date": "11 February 2021",
+      "date": "16 February 2021",
       "url": "https://www.w3.org/TR/webaudio/",
       "release": {
         "url": "https://www.w3.org/TR/webaudio/",
@@ -47813,7 +47813,7 @@
     {
       "title": "WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification",
       "shortname": "ANGLE_instanced_arrays",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
@@ -47821,24 +47821,137 @@
         "sourcePath": "extensions/ANGLE_instanced_arrays/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/ANGLE_instanced_arrays/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 123)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "void"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "GLenum",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLint",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLsizei",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLintptr",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLuint",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          }
+        ],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "ANGLE_instanced_arrays"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE"
+                ],
+                "type": "const",
+                "for": [
+                  "ANGLE_instanced_arrays"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "drawArraysInstancedANGLE(mode, first, count, primcount)"
+                ],
+                "type": "method",
+                "for": [
+                  "ANGLE_instanced_arrays"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "drawElementsInstancedANGLE(mode, count, type, offset, primcount)"
+                ],
+                "type": "method",
+                "for": [
+                  "ANGLE_instanced_arrays"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "vertexAttribDivisorANGLE(index, divisor)"
+                ],
+                "type": "method",
+                "for": [
+                  "ANGLE_instanced_arrays"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -47852,7 +47965,7 @@
     {
       "title": "WebGL EXT_blend_minmax Khronos Ratified Extension Specification",
       "shortname": "EXT_blend_minmax",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
@@ -47860,24 +47973,58 @@
         "sourcePath": "extensions/EXT_blend_minmax/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_blend_minmax/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 124)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_blend_minmax"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "MIN_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_blend_minmax"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "MAX_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_blend_minmax"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -47891,7 +48038,7 @@
     {
       "title": "WebGL EXT_clip_cull_distance Extension Draft Specification",
       "shortname": "EXT_clip_cull_distance",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
@@ -47899,24 +48046,175 @@
         "sourcePath": "extensions/EXT_clip_cull_distance/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_clip_cull_distance/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 125)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_clip_cull_distance"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "MAX_CLIP_DISTANCES_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_clip_cull_distance"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "MAX_CULL_DISTANCES_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_clip_cull_distance"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "MAX_COMBINED_CLIP_AND_CULL_DISTANCES_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_clip_cull_distance"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "CLIP_DISTANCE0_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_clip_cull_distance"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "CLIP_DISTANCE1_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_clip_cull_distance"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "CLIP_DISTANCE2_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_clip_cull_distance"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "CLIP_DISTANCE3_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_clip_cull_distance"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "CLIP_DISTANCE4_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_clip_cull_distance"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "CLIP_DISTANCE5_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_clip_cull_distance"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "CLIP_DISTANCE6_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_clip_cull_distance"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "CLIP_DISTANCE7_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_clip_cull_distance"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -47930,7 +48228,7 @@
     {
       "title": "WebGL EXT_color_buffer_float Extension Specification",
       "shortname": "EXT_color_buffer_float",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
@@ -47938,24 +48236,32 @@
         "sourcePath": "extensions/EXT_color_buffer_float/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_color_buffer_float/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 126)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_color_buffer_float"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -47969,7 +48275,7 @@
     {
       "title": "WebGL EXT_color_buffer_half_float Extension Specification",
       "shortname": "EXT_color_buffer_half_float",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
@@ -47977,24 +48283,84 @@
         "sourcePath": "extensions/EXT_color_buffer_half_float/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_color_buffer_half_float/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at runNextTicks (internal/process/task_queues.js:58:5)\n    at listOnTimeout (internal/timers.js:523:9)\n    at processTimers (internal/timers.js:497:7)\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_color_buffer_half_float"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "RGBA16F_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_color_buffer_half_float"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "RGB16F_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_color_buffer_half_float"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_color_buffer_half_float"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "UNSIGNED_NORMALIZED_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_color_buffer_half_float"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48008,7 +48374,7 @@
     {
       "title": "WebGL EXT_disjoint_timer_query Extension Specification",
       "shortname": "EXT_disjoint_timer_query",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
@@ -48016,24 +48382,274 @@
         "sourcePath": "extensions/EXT_disjoint_timer_query/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_disjoint_timer_query/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 129)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "void"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "WebGLObject",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLenum",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          }
+        ],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "GLuint64EXT"
+                ],
+                "type": "typedef",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "WebGLTimerQueryEXT"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "QUERY_COUNTER_BITS_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "CURRENT_QUERY_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "QUERY_RESULT_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "QUERY_RESULT_AVAILABLE_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "TIME_ELAPSED_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "TIMESTAMP_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "GPU_DISJOINT_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "createQueryEXT()"
+                ],
+                "type": "method",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "deleteQueryEXT(query)"
+                ],
+                "type": "method",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "isQueryEXT(query)"
+                ],
+                "type": "method",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "beginQueryEXT(target, query)"
+                ],
+                "type": "method",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "endQueryEXT(target)"
+                ],
+                "type": "method",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "queryCounterEXT(query, target)"
+                ],
+                "type": "method",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "getQueryEXT(target, pname)"
+                ],
+                "type": "method",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "getQueryObjectEXT(query, pname)"
+                ],
+                "type": "method",
+                "for": [
+                  "EXT_disjoint_timer_query"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48047,7 +48663,7 @@
     {
       "title": "WebGL EXT_disjoint_timer_query_webgl2 Extension Specification",
       "shortname": "EXT_disjoint_timer_query_webgl2",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
@@ -48055,24 +48671,120 @@
         "sourcePath": "extensions/EXT_disjoint_timer_query_webgl2/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_disjoint_timer_query_webgl2/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 128)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "void"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "WebGLQuery",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
+                "title": "WebGL 2.0 Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLenum",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          }
+        ],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_disjoint_timer_query_webgl2"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "QUERY_COUNTER_BITS_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_disjoint_timer_query_webgl2"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "TIME_ELAPSED_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_disjoint_timer_query_webgl2"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "TIMESTAMP_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_disjoint_timer_query_webgl2"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "GPU_DISJOINT_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_disjoint_timer_query_webgl2"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "queryCounterEXT(query, target)"
+                ],
+                "type": "method",
+                "for": [
+                  "EXT_disjoint_timer_query_webgl2"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48086,7 +48798,7 @@
     {
       "title": "WebGL EXT_float_blend Extension Specification",
       "shortname": "EXT_float_blend",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
@@ -48094,24 +48806,32 @@
         "sourcePath": "extensions/EXT_float_blend/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_float_blend/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 130)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_float_blend"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48125,7 +48845,7 @@
     {
       "title": "WebGL EXT_frag_depth Khronos Ratified Extension Specification",
       "shortname": "EXT_frag_depth",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
@@ -48133,24 +48853,32 @@
         "sourcePath": "extensions/EXT_frag_depth/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_frag_depth/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 131)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_frag_depth"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48164,7 +48892,7 @@
     {
       "title": "WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification",
       "shortname": "EXT_shader_texture_lod",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
@@ -48172,24 +48900,32 @@
         "sourcePath": "extensions/EXT_shader_texture_lod/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_shader_texture_lod/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 132)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_shader_texture_lod"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48203,7 +48939,7 @@
     {
       "title": "WebGL EXT_sRGB Extension Specification",
       "shortname": "EXT_sRGB",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
@@ -48211,24 +48947,84 @@
         "sourcePath": "extensions/EXT_sRGB/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_sRGB/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 133)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_sRGB"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "SRGB_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_sRGB"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "SRGB_ALPHA_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_sRGB"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "SRGB8_ALPHA8_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_sRGB"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_sRGB"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48242,7 +49038,7 @@
     {
       "title": "WebGL EXT_texture_compression_bptc Extension Specification",
       "shortname": "EXT_texture_compression_bptc",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
@@ -48250,24 +49046,84 @@
         "sourcePath": "extensions/EXT_texture_compression_bptc/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_texture_compression_bptc/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 134)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_texture_compression_bptc"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_BPTC_UNORM_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_compression_bptc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB_ALPHA_BPTC_UNORM_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_compression_bptc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGB_BPTC_SIGNED_FLOAT_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_compression_bptc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_compression_bptc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48281,7 +49137,7 @@
     {
       "title": "WebGL EXT_texture_compression_rgtc Extension Specification",
       "shortname": "EXT_texture_compression_rgtc",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
@@ -48289,24 +49145,84 @@
         "sourcePath": "extensions/EXT_texture_compression_rgtc/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_texture_compression_rgtc/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at runNextTicks (internal/process/task_queues.js:58:5)\n    at listOnTimeout (internal/timers.js:523:9)\n    at processTimers (internal/timers.js:497:7)\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_texture_compression_rgtc"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RED_RGTC1_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_compression_rgtc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SIGNED_RED_RGTC1_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_compression_rgtc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RED_GREEN_RGTC2_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_compression_rgtc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SIGNED_RED_GREEN_RGTC2_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_compression_rgtc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48320,7 +49236,7 @@
     {
       "title": "WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification",
       "shortname": "EXT_texture_filter_anisotropic",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
@@ -48328,24 +49244,58 @@
         "sourcePath": "extensions/EXT_texture_filter_anisotropic/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_texture_filter_anisotropic/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at runNextTicks (internal/process/task_queues.js:58:5)\n    at listOnTimeout (internal/timers.js:523:9)\n    at processTimers (internal/timers.js:497:7)\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_texture_filter_anisotropic"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "TEXTURE_MAX_ANISOTROPY_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_filter_anisotropic"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "MAX_TEXTURE_MAX_ANISOTROPY_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_filter_anisotropic"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48359,7 +49309,7 @@
     {
       "title": "WebGL EXT_texture_norm16 Extension Specification",
       "shortname": "EXT_texture_norm16",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
@@ -48367,24 +49317,136 @@
         "sourcePath": "extensions/EXT_texture_norm16/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/EXT_texture_norm16/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 137)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "EXT_texture_norm16"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "R16_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_norm16"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "RG16_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_norm16"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "RGB16_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_norm16"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "RGBA16_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_norm16"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "R16_SNORM_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_norm16"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "RG16_SNORM_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_norm16"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "RGB16_SNORM_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_norm16"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "RGBA16_SNORM_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "EXT_texture_norm16"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48398,7 +49460,7 @@
     {
       "title": "WebGL KHR_parallel_shader_compile Extension Specification",
       "shortname": "KHR_parallel_shader_compile",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
@@ -48406,24 +49468,45 @@
         "sourcePath": "extensions/KHR_parallel_shader_compile/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/KHR_parallel_shader_compile/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 138)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "KHR_parallel_shader_compile"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPLETION_STATUS_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "KHR_parallel_shader_compile"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48437,7 +49520,7 @@
     {
       "title": "WebGL OES_draw_buffers_indexed Extension Draft Specification",
       "shortname": "OES_draw_buffers_indexed",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
@@ -48445,24 +49528,156 @@
         "sourcePath": "extensions/OES_draw_buffers_indexed/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/OES_draw_buffers_indexed/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at runNextTicks (internal/process/task_queues.js:58:5)\n    at listOnTimeout (internal/timers.js:523:9)\n    at processTimers (internal/timers.js:497:7)\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "void"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "GLenum",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLuint",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLboolean",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          }
+        ],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "OES_draw_buffers_indexed"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "enableiOES(target, index)"
+                ],
+                "type": "method",
+                "for": [
+                  "OES_draw_buffers_indexed"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "disableiOES(target, index)"
+                ],
+                "type": "method",
+                "for": [
+                  "OES_draw_buffers_indexed"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "blendEquationiOES(buf, mode)"
+                ],
+                "type": "method",
+                "for": [
+                  "OES_draw_buffers_indexed"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "blendEquationSeparateiOES(buf, modeRGB, modeAlpha)"
+                ],
+                "type": "method",
+                "for": [
+                  "OES_draw_buffers_indexed"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "blendFunciOES(buf, src, dst)"
+                ],
+                "type": "method",
+                "for": [
+                  "OES_draw_buffers_indexed"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "blendFuncSeparateiOES(buf, srcRGB, dstRGB, srcAlpha, dstAlpha)"
+                ],
+                "type": "method",
+                "for": [
+                  "OES_draw_buffers_indexed"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "colorMaskiOES(buf, r, g, b, a)"
+                ],
+                "type": "method",
+                "for": [
+                  "OES_draw_buffers_indexed"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48476,7 +49691,7 @@
     {
       "title": "WebGL OES_element_index_uint Khronos Ratified Extension Specification",
       "shortname": "OES_element_index_uint",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
@@ -48484,24 +49699,32 @@
         "sourcePath": "extensions/OES_element_index_uint/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/OES_element_index_uint/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at runNextTicks (internal/process/task_queues.js:58:5)\n    at listOnTimeout (internal/timers.js:523:9)\n    at processTimers (internal/timers.js:497:7)\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "OES_element_index_uint"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48515,7 +49738,7 @@
     {
       "title": "WebGL OES_fbo_render_mipmap Extension Specification",
       "shortname": "OES_fbo_render_mipmap",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
@@ -48523,24 +49746,32 @@
         "sourcePath": "extensions/OES_fbo_render_mipmap/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/OES_fbo_render_mipmap/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 141)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "OES_fbo_render_mipmap"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48554,7 +49785,7 @@
     {
       "title": "WebGL OES_standard_derivatives Khronos Ratified Extension Specification",
       "shortname": "OES_standard_derivatives",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
@@ -48562,24 +49793,45 @@
         "sourcePath": "extensions/OES_standard_derivatives/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/OES_standard_derivatives/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 142)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "OES_standard_derivatives"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "FRAGMENT_SHADER_DERIVATIVE_HINT_OES"
+                ],
+                "type": "const",
+                "for": [
+                  "OES_standard_derivatives"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48593,7 +49845,7 @@
     {
       "title": "WebGL OES_texture_float Khronos Ratified Extension Specification",
       "shortname": "OES_texture_float",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
@@ -48601,24 +49853,32 @@
         "sourcePath": "extensions/OES_texture_float/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/OES_texture_float/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 144)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "OES_texture_float"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48632,7 +49892,7 @@
     {
       "title": "WebGL OES_texture_float_linear Khronos Ratified Extension Specification",
       "shortname": "OES_texture_float_linear",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
@@ -48640,24 +49900,32 @@
         "sourcePath": "extensions/OES_texture_float_linear/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/OES_texture_float_linear/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at runNextTicks (internal/process/task_queues.js:58:5)\n    at listOnTimeout (internal/timers.js:523:9)\n    at processTimers (internal/timers.js:497:7)\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "OES_texture_float_linear"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48671,7 +49939,7 @@
     {
       "title": "WebGL OES_texture_half_float Khronos Ratified Extension Specification",
       "shortname": "OES_texture_half_float",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
@@ -48679,24 +49947,45 @@
         "sourcePath": "extensions/OES_texture_half_float/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/OES_texture_half_float/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 146)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "OES_texture_half_float"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "HALF_FLOAT_OES"
+                ],
+                "type": "const",
+                "for": [
+                  "OES_texture_half_float"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48710,7 +49999,7 @@
     {
       "title": "WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification",
       "shortname": "OES_texture_half_float_linear",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
@@ -48718,24 +50007,32 @@
         "sourcePath": "extensions/OES_texture_half_float_linear/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/OES_texture_half_float_linear/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at runNextTicks (internal/process/task_queues.js:58:5)\n    at listOnTimeout (internal/timers.js:523:9)\n    at processTimers (internal/timers.js:497:7)\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "OES_texture_half_float_linear"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48749,7 +50046,7 @@
     {
       "title": "WebGL OES_vertex_array_object Khronos Ratified Extension Specification",
       "shortname": "OES_vertex_array_object",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
@@ -48757,24 +50054,132 @@
         "sourcePath": "extensions/OES_vertex_array_object/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/OES_vertex_array_object/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at runNextTicks (internal/process/task_queues.js:58:5)\n    at listOnTimeout (internal/timers.js:523:9)\n    at processTimers (internal/timers.js:497:7)\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "void"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "WebGLObject",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLboolean",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          }
+        ],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "WebGLVertexArrayObjectOES"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "OES_vertex_array_object"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "VERTEX_ARRAY_BINDING_OES"
+                ],
+                "type": "const",
+                "for": [
+                  "OES_vertex_array_object"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "createVertexArrayOES()"
+                ],
+                "type": "method",
+                "for": [
+                  "OES_vertex_array_object"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "deleteVertexArrayOES(arrayObject)"
+                ],
+                "type": "method",
+                "for": [
+                  "OES_vertex_array_object"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "isVertexArrayOES(arrayObject)"
+                ],
+                "type": "method",
+                "for": [
+                  "OES_vertex_array_object"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "bindVertexArrayOES(arrayObject)"
+                ],
+                "type": "method",
+                "for": [
+                  "OES_vertex_array_object"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48788,7 +50193,7 @@
     {
       "title": "WebGL OVR_multiview2 Extension Specification",
       "shortname": "OVR_multiview2",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
@@ -48796,24 +50201,140 @@
         "sourcePath": "extensions/OVR_multiview2/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/OVR_multiview2/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 148)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "void"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "GLenum",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "WebGLTexture",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLint",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLsizei",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          }
+        ],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "OVR_multiview2"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_NUM_VIEWS_OVR"
+                ],
+                "type": "const",
+                "for": [
+                  "OVR_multiview2"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR"
+                ],
+                "type": "const",
+                "for": [
+                  "OVR_multiview2"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "MAX_VIEWS_OVR"
+                ],
+                "type": "const",
+                "for": [
+                  "OVR_multiview2"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "FRAMEBUFFER_INCOMPLETE_VIEW_TARGETS_OVR"
+                ],
+                "type": "const",
+                "for": [
+                  "OVR_multiview2"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "framebufferTextureMultiviewOVR(target, attachment, texture, level, baseViewIndex, numViews)"
+                ],
+                "type": "method",
+                "for": [
+                  "OVR_multiview2"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48906,7 +50427,7 @@
     {
       "title": "WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification",
       "shortname": "WEBGL_blend_equation_advanced_coherent",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
@@ -48914,24 +50435,227 @@
         "sourcePath": "extensions/WEBGL_blend_equation_advanced_coherent/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/WEBGL_blend_equation_advanced_coherent/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at runNextTicks (internal/process/task_queues.js:58:5)\n    at listOnTimeout (internal/timers.js:523:9)\n    at processTimers (internal/timers.js:497:7)\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "MULTIPLY"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "SCREEN"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "OVERLAY"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "DARKEN"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "LIGHTEN"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COLORDODGE"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COLORBURN"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "HARDLIGHT"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "SOFTLIGHT"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "DIFFERENCE"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "EXCLUSION"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "HSL_HUE"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "HSL_SATURATION"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "HSL_COLOR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "HSL_LUMINOSITY"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_blend_equation_advanced_coherent"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48945,7 +50669,7 @@
     {
       "title": "WebGL WEBGL_color_buffer_float Extension Specification",
       "shortname": "WEBGL_color_buffer_float",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
@@ -48953,24 +50677,71 @@
         "sourcePath": "extensions/WEBGL_color_buffer_float/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/WEBGL_color_buffer_float/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 150)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "WEBGL_color_buffer_float"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "RGBA32F_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_color_buffer_float"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_color_buffer_float"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "UNSIGNED_NORMALIZED_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_color_buffer_float"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -48984,7 +50755,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_astc Extension Specification",
       "shortname": "WEBGL_compressed_texture_astc",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
@@ -48992,24 +50763,409 @@
         "sourcePath": "extensions/WEBGL_compressed_texture_astc/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/WEBGL_compressed_texture_astc/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at runNextTicks (internal/process/task_queues.js:58:5)\n    at listOnTimeout (internal/timers.js:523:9)\n    at processTimers (internal/timers.js:497:7)\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_4x4_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_5x4_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_5x5_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_6x5_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_6x6_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_8x5_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_8x6_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_8x8_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_10x5_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_10x6_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_10x8_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_10x10_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_12x10_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_ASTC_12x12_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_4x4_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_5x4_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_5x5_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_6x5_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_6x6_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_8x5_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_8x6_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_8x8_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_10x5_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_10x6_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_10x8_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_10x10_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_12x10_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ASTC_12x12_KHR"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "getSupportedProfiles()"
+                ],
+                "type": "method",
+                "for": [
+                  "WEBGL_compressed_texture_astc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -49023,7 +51179,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_etc Extension Specification",
       "shortname": "WEBGL_compressed_texture_etc",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
@@ -49031,24 +51187,162 @@
         "sourcePath": "extensions/WEBGL_compressed_texture_etc/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/WEBGL_compressed_texture_etc/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at runNextTicks (internal/process/task_queues.js:58:5)\n    at listOnTimeout (internal/timers.js:523:9)\n    at processTimers (internal/timers.js:497:7)\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "WEBGL_compressed_texture_etc"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_R11_EAC"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_etc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SIGNED_R11_EAC"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_etc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RG11_EAC"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_etc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SIGNED_RG11_EAC"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_etc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGB8_ETC2"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_etc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ETC2"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_etc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_etc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_etc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA8_ETC2_EAC"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_etc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_SRGB8_ALPHA8_ETC2_EAC"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_etc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -49062,7 +51356,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_etc1 Extension Specification",
       "shortname": "WEBGL_compressed_texture_etc1",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
@@ -49070,24 +51364,45 @@
         "sourcePath": "extensions/WEBGL_compressed_texture_etc1/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/WEBGL_compressed_texture_etc1/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 153)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "WEBGL_compressed_texture_etc1"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGB_ETC1_WEBGL"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_etc1"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -49101,7 +51416,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_pvrtc Extension Specification",
       "shortname": "WEBGL_compressed_texture_pvrtc",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
@@ -49109,24 +51424,84 @@
         "sourcePath": "extensions/WEBGL_compressed_texture_pvrtc/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/WEBGL_compressed_texture_pvrtc/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 154)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "WEBGL_compressed_texture_pvrtc"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGB_PVRTC_4BPPV1_IMG"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_pvrtc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGB_PVRTC_2BPPV1_IMG"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_pvrtc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_PVRTC_4BPPV1_IMG"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_pvrtc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_PVRTC_2BPPV1_IMG"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_pvrtc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -49140,7 +51515,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification",
       "shortname": "WEBGL_compressed_texture_s3tc",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
@@ -49148,24 +51523,84 @@
         "sourcePath": "extensions/WEBGL_compressed_texture_s3tc/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/WEBGL_compressed_texture_s3tc/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 156)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "WEBGL_compressed_texture_s3tc"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGB_S3TC_DXT1_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_s3tc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_S3TC_DXT1_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_s3tc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_S3TC_DXT3_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_s3tc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "COMPRESSED_RGBA_S3TC_DXT5_EXT"
+                ],
+                "type": "const",
+                "for": [
+                  "WEBGL_compressed_texture_s3tc"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -50198,7 +52633,7 @@
     {
       "title": "WebGL WEBGL_multi_draw Extension Specification",
       "shortname": "WEBGL_multi_draw",
-      "date": "",
+      "date": "12 February 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
@@ -50206,24 +52641,127 @@
         "sourcePath": "extensions/WEBGL_multi_draw/extension.xml",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
-        "repository": "https://github.com/KhronosGroup/WebGL",
-        "sourcePath": "extensions/WEBGL_multi_draw/extension.xml",
-        "filename": "index.html"
-      },
+      "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:789:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:303:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 164)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
         "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "void"
+        ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "GLenum",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLint",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLuint",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          },
+          {
+            "name": "GLsizei",
+            "refs": [
+              {
+                "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+                "title": "WebGL Specification",
+                "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/"
+              }
+            ]
+          }
+        ],
         "missingDfns": {
           "css": [],
-          "idl": []
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "WEBGL_multi_draw"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "multiDrawArraysWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, drawcount)"
+                ],
+                "type": "method",
+                "for": [
+                  "WEBGL_multi_draw"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "multiDrawElementsWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, drawcount)"
+                ],
+                "type": "method",
+                "for": [
+                  "WEBGL_multi_draw"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "multiDrawArraysInstancedWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, drawcount)"
+                ],
+                "type": "method",
+                "for": [
+                  "WEBGL_multi_draw"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "multiDrawElementsInstancedWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, drawcount)"
+                ],
+                "type": "method",
+                "for": [
+                  "WEBGL_multi_draw"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -50776,7 +53314,7 @@
     {
       "title": "WebTransport",
       "shortname": "webtransport",
-      "date": "3 February 2021",
+      "date": "16 February 2021",
       "url": "https://w3c.github.io/webtransport/",
       "nightly": {
         "url": "https://w3c.github.io/webtransport/",
@@ -50804,17 +53342,7 @@
           "normative": [],
           "informative": []
         },
-        "xrefs": {
-          "notExported": [
-            "https://html.spec.whatwg.org/#concept-request-origin"
-          ],
-          "notDfn": [],
-          "brokenLinks": [],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
-        },
-        "ok": false
+        "ok": true
       }
     },
     {
