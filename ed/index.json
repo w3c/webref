@@ -1,11 +1,11 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-02-16T20:58:29.038Z",
+  "date": "2021-02-17T01:21:21.577Z",
   "options": {},
   "stats": {
     "crawled": 383,
-    "errors": 0
+    "errors": 2
   },
   "results": [
     {
@@ -1482,7 +1482,7 @@
         "https://tc39.es/ecma262/"
       ],
       "crawled": "https://tc39.es/ecma262/",
-      "date": "12 February 2021",
+      "date": "17 February 2021",
       "links": "links/ecmascript.json",
       "generator": null,
       "dfns": "dfns/ecmascript.json",
@@ -4362,7 +4362,7 @@
         "https://wicg.github.io/webpackage/loading.html"
       ],
       "crawled": "https://wicg.github.io/webpackage/loading.html",
-      "date": "27 January 2021",
+      "date": "17 February 2021",
       "links": "links/webpackage.json",
       "refs": "refs/webpackage.json",
       "generator": "bikeshed",
@@ -6195,14 +6195,14 @@
         "https://www.w3.org/TR/clear-site-data/",
         "https://w3c.github.io/webappsec-clear-site-data/"
       ],
-      "crawled": "https://w3c.github.io/webappsec-clear-site-data/",
-      "date": "13 November 2017",
-      "links": "links/clear-site-data.json",
-      "refs": "refs/clear-site-data.json",
-      "generator": "bikeshed",
-      "dfns": "dfns/clear-site-data.json",
-      "headings": "headings/clear-site-data.json",
-      "ids": "ids/clear-site-data.json"
+      "crawled": {
+        "url": "https://w3c.github.io/webappsec-clear-site-data/",
+        "repository": "https://github.com/w3c/webappsec-clear-site-data",
+        "sourcePath": "index.src.html",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 174)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://www.w3.org/TR/clipboard-apis/",
@@ -11556,7 +11556,7 @@
         "sourcePath": "index.src.html",
         "filename": "index.html"
       },
-      "title": "Mixed Content Level 2",
+      "title": "Mixed Content",
       "source": "w3c",
       "shortTitle": "Mixed Content",
       "tests": {
@@ -11569,14 +11569,14 @@
         "https://www.w3.org/TR/mixed-content/",
         "https://w3c.github.io/webappsec-mixed-content/"
       ],
-      "crawled": "https://w3c.github.io/webappsec-mixed-content/",
-      "date": "20 November 2020",
-      "links": "links/mixed-content.json",
-      "refs": "refs/mixed-content.json",
-      "generator": "bikeshed",
-      "dfns": "dfns/mixed-content.json",
-      "headings": "headings/mixed-content.json",
-      "ids": "ids/mixed-content.json"
+      "crawled": {
+        "url": "https://w3c.github.io/webappsec-mixed-content/",
+        "repository": "https://github.com/w3c/webappsec-mixed-content",
+        "sourcePath": "index.src.html",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 300)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://www.w3.org/TR/motion-1/",
