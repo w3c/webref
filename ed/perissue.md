@@ -19,18 +19,8 @@ Reffy could not fetch or render these specifications for some reason. This may h
     at async Promise.all (index 174)
     at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
     at async Promise.all (index 0)`
-- [Mixed Content]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
-    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
-    at async Promise.all (index 300)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
-    at async Promise.all (index 0)`
 
-=> 2 specifications found
+=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -1756,6 +1746,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/) links to:
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+- [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/) links to:
+    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+    * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/) but related reference "XML" uses URL [`https://www.w3.org/TR/xml/`](https://www.w3.org/TR/xml/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/) links to:
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/`](https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/) but related reference "CSS-ROUND-DISPLAY-1" uses URL [`https://www.w3.org/TR/css-round-display-1/`](https://www.w3.org/TR/css-round-display-1/)
@@ -1899,7 +1892,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 313 inconsistent references for links found in 172 specifications
+=> 315 inconsistent references for links found in 173 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -2600,6 +2593,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/mediacapture-streams/#stream-inactive`](https://www.w3.org/TR/mediacapture-streams/#stream-inactive)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/):
      * [`https://html.spec.whatwg.org/#script`](https://html.spec.whatwg.org/#script)
+- [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/):
+     * [`https://html.spec.whatwg.org/#bc-container-document`](https://html.spec.whatwg.org/#bc-container-document)
+     * [`https://html.spec.whatwg.org/#use-srcset-or-picture`](https://html.spec.whatwg.org/#use-srcset-or-picture)
+     * [`https://html.spec.whatwg.org/#plugin`](https://html.spec.whatwg.org/#plugin)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/):
      * [`https://html.spec.whatwg.org/#the-document's-address`](https://html.spec.whatwg.org/#the-document's-address)
      * [`https://html.spec.whatwg.org/#current-document-readiness`](https://html.spec.whatwg.org/#current-document-readiness)
@@ -3271,7 +3268,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1176 problematic external links found in 188 specifications
+=> 1179 problematic external links found in 189 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -3861,7 +3858,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#dom-window-requestanimationframe`](https://html.spec.whatwg.org/#dom-window-requestanimationframe)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/):
      * [`https://html.spec.whatwg.org/#responsible-browsing-context`](https://html.spec.whatwg.org/#responsible-browsing-context)
-     * [`https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url`](https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url)
      * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/):
      * [`https://drafts.csswg.org/web-animations#timing-function`](https://drafts.csswg.org/web-animations#timing-function)
@@ -4018,9 +4014,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Event Timing API](https://wicg.github.io/event-timing/):
      * [`https://w3c.github.io/hr-time/#dfn-performance`](https://w3c.github.io/hr-time/#dfn-performance)
      * [`https://html.spec.whatwg.org/#event-dnd-dragexit`](https://html.spec.whatwg.org/#event-dnd-dragexit)
-- [Fetch Standard](https://fetch.spec.whatwg.org/):
-     * [`https://w3c.github.io/webappsec-mixed-content/#should-block-fetch`](https://w3c.github.io/webappsec-mixed-content/#should-block-fetch)
-     * [`https://w3c.github.io/webappsec-mixed-content/#should-block-response`](https://w3c.github.io/webappsec-mixed-content/#should-block-response)
 - [File API](https://w3c.github.io/FileAPI/):
      * [`https://fetch.spec.whatwg.org/#concept-construct-readablestream`](https://fetch.spec.whatwg.org/#concept-construct-readablestream)
      * [`https://fetch.spec.whatwg.org/#concept-error-readablestream`](https://fetch.spec.whatwg.org/#concept-error-readablestream)
@@ -4235,7 +4228,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css2/#block-boxes%E2%91%A0`](https://drafts.csswg.org/css2/#block-boxes%E2%91%A0)
      * [`https://drafts.csswg.org/css2/#content%E2%91%A0`](https://drafts.csswg.org/css2/#content%E2%91%A0)
      * [`https://w3c.github.io/FileAPI/#DefinitionOfScheme`](https://w3c.github.io/FileAPI/#DefinitionOfScheme)
-     * [`https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url`](https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url)
      * [`https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml`](https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml)
      * [`https://drafts.csswg.org/css-syntax/#conform-classes`](https://drafts.csswg.org/css-syntax/#conform-classes)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-content`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-content)
@@ -4436,7 +4428,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/web-animations/#duration`](https://w3c.github.io/web-animations/#duration)
      * [`https://w3c.github.io/web-animations/#target-effect-end`](https://w3c.github.io/web-animations/#target-effect-end)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/):
-     * [`https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url`](https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url)
      * [`https://www.w3.org/TR/geolocation-API/#get-current-position`](https://www.w3.org/TR/geolocation-API/#get-current-position)
      * [`https://www.w3.org/TR/geolocation-API/#watch-position`](https://www.w3.org/TR/geolocation-API/#watch-position)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/):
@@ -4567,7 +4558,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/):
      * [`https://www.w3.org/TR/webxr/#animationframe`](https://www.w3.org/TR/webxr/#animationframe)
 
-=> 610 problematic external links found in 145 specifications
+=> 605 problematic external links found in 144 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
@@ -4821,6 +4812,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/):
      * [`https://www.w3.org/TR/2015/REC-IndexedDB-20150108/`](https://www.w3.org/TR/2015/REC-IndexedDB-20150108/)
+- [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/):
+     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/):
      * [`https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/`](https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/):
@@ -4898,6 +4891,6 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
-=> 146 problematic external links found in 57 specifications
+=> 147 problematic external links found in 58 specifications
 
 
