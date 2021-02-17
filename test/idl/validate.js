@@ -5,42 +5,25 @@ const idl = require('@webref/idl');
 
 idl.parseAll().then((all) => {
   describe('WebIDL2.validate', () => {
-    const globalIgnoreRules = [
+    const ignoreRules = [
       'no-nointerfaceobject',
       'renamed-legacy',
       'replace-void',
       'require-exposed',
     ];
-    const ignoreRules = {
-      'gpuweb': ['dict-arg-optional'],
-      'layers': ['dict-arg-default'],
-      'svg-paths': ['dict-arg-default'],
-      'trusted-types': ['dict-arg-default'],
-      'uievents': ['dict-arg-default'],
-      'web-codecs': ['dict-arg-optional'],
-      'webxrlayers': ['dict-arg-default'],
-    };
 
     for (const [spec, ast] of Object.entries(all)) {
       it(spec, () => {
-        const validations = WebIDL2.validate(ast);
-        const failedRules = new Set();
-        for (const {ruleName} of validations) {
-          if (!globalIgnoreRules.includes(ruleName)) {
-            failedRules.add(ruleName);
-          }
+        const validations = WebIDL2.validate(ast).filter(v => {
+          return !ignoreRules.includes(v.ruleName);
+        });
+        if (!validations.length) {
+          return;
         }
-        if (spec in ignoreRules) {
-          for (const rule of ignoreRules[spec]) {
-            assert(failedRules.has(rule), `unexpectedly passed ${rule}`);
-            failedRules.delete(rule);
-          }
-        }
-        if (failedRules.size) {
-          const sortedRules = Array.from(failedRules);
-          sortedRules.sort();
-          assert.fail(`failed rules: ${JSON.stringify(sortedRules)}`);
-        }
+        const message = validations.map(v => {
+          return `${v.message} [${v.ruleName}]`;
+        }).join('\n\n');
+        assert.fail(message);
       });
     }
   });
