@@ -12,7 +12,6 @@ idl.parseAll().then((all) => {
       'require-exposed',
     ];
     const ignoreRules = {
-      'background-fetch': ['dict-arg-optional'],
       'gpuweb': ['dict-arg-optional'],
       'layers': ['dict-arg-default'],
       'svg-paths': ['dict-arg-default'],
