@@ -1363,7 +1363,7 @@
         "partial": false
       },
       "XRWebGLBinding": {
-        "fragment": "[Exposed=Window] interface XRWebGLBinding {\n  constructor(XRSession session, XRWebGLRenderingContext context);\n\n  readonly attribute double nativeProjectionScaleFactor;\n\n  XRProjectionLayer createProjectionLayer(optional XRProjectionLayerInit init);\n  XRQuadLayer createQuadLayer(optional XRQuadLayerInit init);\n  XRCylinderLayer createCylinderLayer(optional XRCylinderLayerInit init);\n  XREquirectLayer createEquirectLayer(optional XREquirectLayerInit init);\n  XRCubeLayer createCubeLayer(optional XRCubeLayerInit init);\n\n  XRWebGLSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = \"none\");\n  XRWebGLSubImage getViewSubImage(XRProjectionLayer layer, XRView view);\n};",
+        "fragment": "[Exposed=Window] interface XRWebGLBinding {\n  constructor(XRSession session, XRWebGLRenderingContext context);\n\n  readonly attribute double nativeProjectionScaleFactor;\n\n  XRProjectionLayer createProjectionLayer(optional XRProjectionLayerInit init = {});\n  XRQuadLayer createQuadLayer(optional XRQuadLayerInit init = {});\n  XRCylinderLayer createCylinderLayer(optional XRCylinderLayerInit init = {});\n  XREquirectLayer createEquirectLayer(optional XREquirectLayerInit init = {});\n  XRCubeLayer createCubeLayer(optional XRCubeLayerInit init = {});\n\n  XRWebGLSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = \"none\");\n  XRWebGLSubImage getViewSubImage(XRProjectionLayer layer, XRView view);\n};",
         "type": "interface",
         "name": "XRWebGLBinding",
         "inheritance": null,
@@ -1445,7 +1445,9 @@
                   "union": false,
                   "idlType": "XRProjectionLayerInit"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -1477,7 +1479,9 @@
                   "union": false,
                   "idlType": "XRQuadLayerInit"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -1509,7 +1513,9 @@
                   "union": false,
                   "idlType": "XRCylinderLayerInit"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -1541,7 +1547,9 @@
                   "union": false,
                   "idlType": "XREquirectLayerInit"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -1573,7 +1581,9 @@
                   "union": false,
                   "idlType": "XRCubeLayerInit"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -2000,7 +2010,7 @@
         "partial": false
       },
       "XRMediaBinding": {
-        "fragment": "[Exposed=Window] interface XRMediaBinding {\n  constructor(XRSession session);\n\n  XRQuadLayer createQuadLayer(HTMLVideoElement video, optional XRMediaQuadLayerInit init);\n  XRCylinderLayer createCylinderLayer(HTMLVideoElement video, optional XRMediaCylinderLayerInit init);\n  XREquirectLayer createEquirectLayer(HTMLVideoElement video, optional XRMediaEquirectLayerInit init);\n};",
+        "fragment": "[Exposed=Window] interface XRMediaBinding {\n  constructor(XRSession session);\n\n  XRQuadLayer createQuadLayer(HTMLVideoElement video, optional XRMediaQuadLayerInit init = {});\n  XRCylinderLayer createCylinderLayer(HTMLVideoElement video, optional XRMediaCylinderLayerInit init = {});\n  XREquirectLayer createEquirectLayer(HTMLVideoElement video, optional XRMediaEquirectLayerInit init = {});\n};",
         "type": "interface",
         "name": "XRMediaBinding",
         "inheritance": null,
@@ -2067,7 +2077,9 @@
                   "union": false,
                   "idlType": "XRMediaQuadLayerInit"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -2115,7 +2127,9 @@
                   "union": false,
                   "idlType": "XRMediaCylinderLayerInit"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -2163,7 +2177,9 @@
                   "union": false,
                   "idlType": "XRMediaEquirectLayerInit"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }

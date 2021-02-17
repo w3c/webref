@@ -235,10 +235,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-datagramtransport-datagramwritable",
-      "href": "https://w3c.github.io/webtransport/#dom-datagramtransport-datagramwritable",
+      "id": "dom-datagramtransport-datagrams",
+      "href": "https://w3c.github.io/webtransport/#dom-datagramtransport-datagrams",
       "linkingText": [
-        "datagramWritable"
+        "datagrams"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -255,22 +255,157 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-datagramtransport-datagramreadable",
-      "href": "https://w3c.github.io/webtransport/#dom-datagramtransport-datagramreadable",
+      "id": "readdatagrams",
+      "href": "https://w3c.github.io/webtransport/#readdatagrams",
       "linkingText": [
-        "datagramReadable"
+        "readDatagrams"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagrams-transport-procedures",
+        "title": "Procedures",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "writedatagrams",
+      "href": "https://w3c.github.io/webtransport/#writedatagrams",
+      "linkingText": [
+        "writeDatagrams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagrams-transport-procedures",
+        "title": "Procedures",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "datagramduplexstream",
+      "href": "https://w3c.github.io/webtransport/#datagramduplexstream",
+      "linkingText": [
+        "DatagramDuplexStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "duplex-stream",
+        "title": "DatagramDuplexStream Interface",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "datagramduplexstream-create",
+      "href": "https://w3c.github.io/webtransport/#datagramduplexstream-create",
+      "linkingText": [
+        "create",
+        "creating"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
-        "DatagramTransport"
+        "DatagramDuplexStream"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "datagram-transport-attributes",
+        "id": "duplex-stream",
+        "title": "DatagramDuplexStream Interface",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "datagramduplexstream-create-readable",
+      "href": "https://w3c.github.io/webtransport/#datagramduplexstream-create-readable",
+      "linkingText": [
+        "readable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream/create"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "duplex-stream",
+        "title": "DatagramDuplexStream Interface",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "datagramduplexstream-create-writable",
+      "href": "https://w3c.github.io/webtransport/#datagramduplexstream-create-writable",
+      "linkingText": [
+        "writable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream/create"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "duplex-stream",
+        "title": "DatagramDuplexStream Interface",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-datagramduplexstream-readable",
+      "href": "https://w3c.github.io/webtransport/#dom-datagramduplexstream-readable",
+      "linkingText": [
+        "readable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "duplex-stream-attributes",
         "title": "Attributes",
-        "number": "6.1"
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-datagramduplexstream-writable",
+      "href": "https://w3c.github.io/webtransport/#dom-datagramduplexstream-writable",
+      "linkingText": [
+        "writable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "duplex-stream-attributes",
+        "title": "Attributes",
+        "number": "7.1"
       },
       "definedIn": "dt"
     },
@@ -288,7 +423,7 @@
       "heading": {
         "id": "web-transport",
         "title": "WebTransport Interface",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "pre"
     },
@@ -311,7 +446,7 @@
       "heading": {
         "id": "web-transport",
         "title": "WebTransport Interface",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "pre"
     },
@@ -334,7 +469,7 @@
       "heading": {
         "id": "web-transport",
         "title": "WebTransport Interface",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "pre"
     },
@@ -357,7 +492,7 @@
       "heading": {
         "id": "web-transport",
         "title": "WebTransport Interface",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "pre"
     },
@@ -378,7 +513,7 @@
       "heading": {
         "id": "web-transport",
         "title": "WebTransport Interface",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "pre"
     },
@@ -398,7 +533,7 @@
       "heading": {
         "id": "webtransport-constructor",
         "title": "Constructor",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -418,7 +553,7 @@
       "heading": {
         "id": "webtransport-constructor",
         "title": "Constructor",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -438,7 +573,7 @@
       "heading": {
         "id": "webtransport-constructor",
         "title": "Constructor",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -458,7 +593,7 @@
       "heading": {
         "id": "webtransport-constructor",
         "title": "Constructor",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -478,15 +613,15 @@
       "heading": {
         "id": "webtransport-constructor",
         "title": "Constructor",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-webtransport-sentdatagrams-slot",
-      "href": "https://w3c.github.io/webtransport/#dom-webtransport-sentdatagrams-slot",
+      "id": "dom-webtransport-outgoingdatagrams-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransport-outgoingdatagrams-slot",
       "linkingText": [
-        "[[SentDatagrams]]"
+        "[[OutgoingDatagrams]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -498,15 +633,15 @@
       "heading": {
         "id": "webtransport-constructor",
         "title": "Constructor",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-webtransport-receiveddatagrams-slot",
-      "href": "https://w3c.github.io/webtransport/#dom-webtransport-receiveddatagrams-slot",
+      "id": "dom-webtransport-incomingdatagrams-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransport-incomingdatagrams-slot",
       "linkingText": [
-        "[[ReceivedDatagrams]]"
+        "[[IncomingDatagrams]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -518,7 +653,27 @@
       "heading": {
         "id": "webtransport-constructor",
         "title": "Constructor",
-        "number": "7.1"
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webtransport-datagrams-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransport-datagrams-slot",
+      "linkingText": [
+        "[[Datagrams]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-constructor",
+        "title": "Constructor",
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -536,7 +691,7 @@
       "heading": {
         "id": "webtransport-constructor",
         "title": "Constructor",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -556,7 +711,7 @@
       "heading": {
         "id": "webtransport-attributes",
         "title": "Attributes",
-        "number": "7.2"
+        "number": "8.2"
       },
       "definedIn": "dt"
     },
@@ -576,7 +731,7 @@
       "heading": {
         "id": "webtransport-attributes",
         "title": "Attributes",
-        "number": "7.2"
+        "number": "8.2"
       },
       "definedIn": "dt"
     },
@@ -596,7 +751,7 @@
       "heading": {
         "id": "webtransport-attributes",
         "title": "Attributes",
-        "number": "7.2"
+        "number": "8.2"
       },
       "definedIn": "dt"
     },
@@ -616,7 +771,7 @@
       "heading": {
         "id": "webtransport-attributes",
         "title": "Attributes",
-        "number": "7.2"
+        "number": "8.2"
       },
       "definedIn": "dt"
     },
@@ -637,7 +792,7 @@
       "heading": {
         "id": "webtransport-methods",
         "title": "Methods",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "dt"
     },
@@ -655,7 +810,7 @@
       "heading": {
         "id": "webtransport-methods",
         "title": "Methods",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "prose"
     },
@@ -675,7 +830,7 @@
       "heading": {
         "id": "webtransport-methods",
         "title": "Methods",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "dt"
     },
@@ -693,7 +848,7 @@
       "heading": {
         "id": "web-transport-configuration",
         "title": "Configuration",
-        "number": "7.4"
+        "number": "8.4"
       },
       "definedIn": "prose"
     },
@@ -713,7 +868,7 @@
       "heading": {
         "id": "web-transport-configuration",
         "title": "Configuration",
-        "number": "7.4"
+        "number": "8.4"
       },
       "definedIn": "dt"
     },
@@ -731,7 +886,7 @@
       "heading": {
         "id": "web-transport-configuration",
         "title": "Configuration",
-        "number": "7.4"
+        "number": "8.4"
       },
       "definedIn": "prose"
     },
@@ -749,7 +904,7 @@
       "heading": {
         "id": "web-transport-configuration",
         "title": "Configuration",
-        "number": "7.4"
+        "number": "8.4"
       },
       "definedIn": "prose"
     },
@@ -767,7 +922,7 @@
       "heading": {
         "id": "web-transport-configuration",
         "title": "Configuration",
-        "number": "7.4"
+        "number": "8.4"
       },
       "definedIn": "prose"
     },
@@ -785,7 +940,7 @@
       "heading": {
         "id": "web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "7.5"
+        "number": "8.5"
       },
       "definedIn": "prose"
     },
@@ -805,7 +960,7 @@
       "heading": {
         "id": "web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "7.5"
+        "number": "8.5"
       },
       "definedIn": "dt"
     },
@@ -825,7 +980,7 @@
       "heading": {
         "id": "web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "7.5"
+        "number": "8.5"
       },
       "definedIn": "dt"
     },
@@ -845,7 +1000,7 @@
       "heading": {
         "id": "web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "7.5"
+        "number": "8.5"
       },
       "definedIn": "dt"
     },
@@ -865,7 +1020,7 @@
       "heading": {
         "id": "web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "7.5"
+        "number": "8.5"
       },
       "definedIn": "dt"
     },
@@ -883,7 +1038,7 @@
       "heading": {
         "id": "web-transport-close-info",
         "title": "WebTransportCloseInfo Dictionary",
-        "number": "7.6"
+        "number": "8.6"
       },
       "definedIn": "prose"
     },
@@ -903,7 +1058,7 @@
       "heading": {
         "id": "web-transport-close-info",
         "title": "WebTransportCloseInfo Dictionary",
-        "number": "7.6"
+        "number": "8.6"
       },
       "definedIn": "dt"
     },
@@ -923,7 +1078,7 @@
       "heading": {
         "id": "web-transport-close-info",
         "title": "WebTransportCloseInfo Dictionary",
-        "number": "7.6"
+        "number": "8.6"
       },
       "definedIn": "dt"
     },
@@ -941,7 +1096,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "prose"
     },
@@ -961,7 +1116,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "dt"
     },
@@ -981,7 +1136,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "dt"
     },
@@ -1001,7 +1156,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "dt"
     },
@@ -1021,7 +1176,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "dt"
     },
@@ -1041,7 +1196,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "dt"
     },
@@ -1061,7 +1216,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "dt"
     },
@@ -1081,7 +1236,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "dt"
     },
@@ -1101,7 +1256,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "dt"
     },
@@ -1121,7 +1276,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.7"
+        "number": "8.7"
       },
       "definedIn": "dt"
     },
@@ -1139,7 +1294,7 @@
       "heading": {
         "id": "outgoing-stream",
         "title": "Interface Mixin OutgoingStream",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "prose"
     },
@@ -1160,7 +1315,7 @@
       "heading": {
         "id": "outgoing-stream",
         "title": "Interface Mixin OutgoingStream",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "pre"
     },
@@ -1180,7 +1335,7 @@
       "heading": {
         "id": "outgoing-stream-overview",
         "title": "Overview",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "prose"
     },
@@ -1200,7 +1355,7 @@
       "heading": {
         "id": "outgoing-stream-attributes",
         "title": "Attributes",
-        "number": "8.2"
+        "number": "9.2"
       },
       "definedIn": "dt"
     },
@@ -1220,7 +1375,7 @@
       "heading": {
         "id": "outgoing-stream-attributes",
         "title": "Attributes",
-        "number": "8.2"
+        "number": "9.2"
       },
       "definedIn": "dt"
     },
@@ -1241,7 +1396,7 @@
       "heading": {
         "id": "outgoing-stream-methods",
         "title": "Methods",
-        "number": "8.3"
+        "number": "9.3"
       },
       "definedIn": "dt"
     },
@@ -1259,7 +1414,7 @@
       "heading": {
         "id": "stream-abort-info",
         "title": "StreamAbortInfo Dictionary",
-        "number": "8.4"
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -1279,7 +1434,7 @@
       "heading": {
         "id": "stream-abort-info",
         "title": "StreamAbortInfo Dictionary",
-        "number": "8.4"
+        "number": "9.4"
       },
       "definedIn": "dt"
     },
@@ -1296,8 +1451,7 @@
       "informative": false,
       "heading": {
         "id": "incoming-stream",
-        "title": "Interface Mixin IncomingStream",
-        "number": "9"
+        "title": "10. Interface Mixin IncomingStream"
       },
       "definedIn": "prose"
     },
@@ -1317,8 +1471,7 @@
       "informative": false,
       "heading": {
         "id": "incoming-stream",
-        "title": "Interface Mixin IncomingStream",
-        "number": "9"
+        "title": "10. Interface Mixin IncomingStream"
       },
       "definedIn": "pre"
     },
@@ -1338,7 +1491,7 @@
       "heading": {
         "id": "incoming-stream-overview",
         "title": "Overview",
-        "number": "9.1"
+        "number": "10.1"
       },
       "definedIn": "prose"
     },
@@ -1358,7 +1511,7 @@
       "heading": {
         "id": "incoming-stream-attributes",
         "title": "Attributes",
-        "number": "9.2"
+        "number": "10.2"
       },
       "definedIn": "dt"
     },
@@ -1378,7 +1531,7 @@
       "heading": {
         "id": "incoming-stream-attributes",
         "title": "Attributes",
-        "number": "9.2"
+        "number": "10.2"
       },
       "definedIn": "dt"
     },
@@ -1399,7 +1552,7 @@
       "heading": {
         "id": "incoming-stream-methods",
         "title": "Methods",
-        "number": "9.3"
+        "number": "10.3"
       },
       "definedIn": "dt"
     },
@@ -1416,7 +1569,7 @@
       "informative": false,
       "heading": {
         "id": "bidirectional-stream",
-        "title": "10. Interface BidirectionalStream"
+        "title": "11. Interface BidirectionalStream"
       },
       "definedIn": "pre"
     },
@@ -1433,7 +1586,7 @@
       "informative": false,
       "heading": {
         "id": "send-stream",
-        "title": "11. Interface SendStream"
+        "title": "12. Interface SendStream"
       },
       "definedIn": "pre"
     },
@@ -1450,7 +1603,7 @@
       "informative": false,
       "heading": {
         "id": "receive-stream",
-        "title": "12. Interface ReceiveStream"
+        "title": "13. Interface ReceiveStream"
       },
       "definedIn": "pre"
     }

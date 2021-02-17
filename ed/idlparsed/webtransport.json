@@ -154,7 +154,7 @@
         "partial": false
       },
       "DatagramTransport": {
-        "fragment": "interface mixin DatagramTransport {\n    readonly attribute unsigned short maxDatagramSize;\n    /* both streams are streams of Uint8Array objects */\n    readonly attribute ReadableStream datagramReadable;\n    readonly attribute WritableStream datagramWritable;\n};",
+        "fragment": "interface mixin DatagramTransport {\n    readonly attribute unsigned short maxDatagramSize;\n    readonly attribute DatagramDuplexStream datagrams;\n};",
         "type": "interface mixin",
         "name": "DatagramTransport",
         "inheritance": null,
@@ -176,7 +176,32 @@
           },
           {
             "type": "attribute",
-            "name": "datagramReadable",
+            "name": "datagrams",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DatagramDuplexStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "DatagramDuplexStream": {
+        "fragment": "interface DatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
+        "type": "interface",
+        "name": "DatagramDuplexStream",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "readable",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -191,7 +216,7 @@
           },
           {
             "type": "attribute",
-            "name": "datagramWritable",
+            "name": "writable",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -1057,6 +1082,9 @@
         "ReadableStream"
       ],
       "DatagramTransport": [
+        "DatagramDuplexStream"
+      ],
+      "DatagramDuplexStream": [
         "ReadableStream",
         "WritableStream"
       ],
