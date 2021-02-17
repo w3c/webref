@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-02-17T16:45:36.827Z",
+  "date": "2021-02-17T18:43:33.978Z",
   "stats": {
     "crawled": 383,
-    "errors": 1,
+    "errors": 0,
     "studied": 383
   },
   "results": [
@@ -1004,7 +1004,7 @@
     {
       "title": "Clear Site Data",
       "shortname": "clear-site-data",
-      "date": "",
+      "date": "18 February 2021",
       "url": "https://www.w3.org/TR/clear-site-data/",
       "release": {
         "url": "https://www.w3.org/TR/clear-site-data/",
@@ -1016,15 +1016,9 @@
         "sourcePath": "index.src.html",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://w3c.github.io/webappsec-clear-site-data/",
-        "repository": "https://github.com/w3c/webappsec-clear-site-data",
-        "sourcePath": "index.src.html",
-        "filename": "index.html"
-      },
+      "crawled": "https://w3c.github.io/webappsec-clear-site-data/",
       "report": {
-        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 174)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
         "unknownExposedNames": [],
@@ -1036,10 +1030,44 @@
           "idl": []
         },
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/ServiceWorker/",
+            "ref": {
+              "name": "SERVICE-WORKERS",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-mixed-content/",
+            "ref": {
+              "name": "MIXED-CONTENT",
+              "url": "https://www.w3.org/TR/mixed-content/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/IndexedDB/",
+            "ref": {
+              "name": "INDEXEDDB",
+              "url": "https://www.w3.org/TR/IndexedDB/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
+        },
+        "xrefs": {
+          "notExported": [
+            "https://fetch.spec.whatwg.org/#concept-http-network-fetch",
+            "https://w3c.github.io/IndexedDB/#database",
+            "https://w3c.github.io/IndexedDB/#delete-a-database"
+          ],
+          "notDfn": [],
+          "brokenLinks": [],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
         },
         "ok": false
       }
@@ -1908,6 +1936,11 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
+            },
             {
               "url": "https://www.w3.org/TR/preload/",
               "title": "Preload",
@@ -5822,7 +5855,7 @@
     {
       "title": "CSS Color Module Level 4",
       "shortname": "css-color-4",
-      "date": "8 February 2021",
+      "date": "17 February 2021",
       "url": "https://www.w3.org/TR/css-color-4/",
       "release": {
         "url": "https://www.w3.org/TR/css-color-4/",
@@ -8836,7 +8869,7 @@
     {
       "title": "CSS Grid Layout Module Level 2",
       "shortname": "css-grid-2",
-      "date": "7 January 2021",
+      "date": "17 February 2021",
       "url": "https://www.w3.org/TR/css-grid-2/",
       "release": {
         "url": "https://www.w3.org/TR/css-grid-2/",
@@ -18339,11 +18372,6 @@
               "crawled": "https://w3c.github.io/push-api/"
             },
             {
-              "url": "https://www.w3.org/TR/reporting-1/",
-              "title": "Reporting API 1",
-              "crawled": "https://w3c.github.io/reporting/"
-            },
-            {
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
               "crawled": "https://w3c.github.io/resource-timing/"
@@ -19106,6 +19134,11 @@
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://w3c.github.io/beacon/"
+            },
+            {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
             },
             {
               "url": "https://wicg.github.io/client-hints-infrastructure/",
@@ -31435,6 +31468,11 @@
               "crawled": "https://w3c.github.io/beacon/"
             },
             {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
+            },
+            {
               "url": "https://wicg.github.io/client-hints-infrastructure/",
               "title": "Client Hints Infrastructure",
               "crawled": "https://wicg.github.io/client-hints-infrastructure/"
@@ -33577,6 +33615,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
+            },
+            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
@@ -33688,6 +33731,11 @@
               "url": "https://w3c.github.io/badging/",
               "title": "Badging API",
               "crawled": "https://w3c.github.io/badging/"
+            },
+            {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
             },
             {
               "url": "https://wicg.github.io/client-hints-infrastructure/",
@@ -36885,6 +36933,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
+            },
+            {
               "url": "https://wicg.github.io/cors-rfc1918/",
               "title": "CORS and RFC1918",
               "crawled": "https://wicg.github.io/private-network-access/"
@@ -40051,7 +40104,7 @@
     {
       "title": "Reporting API 1",
       "shortname": "reporting-1",
-      "date": "12 February 2021",
+      "date": "17 February 2021",
       "url": "https://www.w3.org/TR/reporting-1/",
       "release": {
         "url": "https://www.w3.org/TR/reporting-1/",
@@ -42189,6 +42242,11 @@
               "crawled": "https://w3c.github.io/badging/"
             },
             {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
+            },
+            {
               "url": "https://wicg.github.io/content-index/spec/",
               "title": "Content Index",
               "crawled": "https://wicg.github.io/content-index/spec/"
@@ -42462,6 +42520,11 @@
             }
           ],
           "informative": [
+            {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
+            },
             {
               "url": "https://infra.spec.whatwg.org/",
               "title": "Infra Standard",
@@ -44261,6 +44324,11 @@
               "url": "https://www.w3.org/TR/beacon/",
               "title": "Beacon",
               "crawled": "https://w3c.github.io/beacon/"
+            },
+            {
+              "url": "https://www.w3.org/TR/clear-site-data/",
+              "title": "Clear Site Data",
+              "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
             },
             {
               "url": "https://wicg.github.io/content-index/spec/",
