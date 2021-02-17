@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-02-17T06:45:45.778Z",
+  "date": "2021-02-17T12:54:15.417Z",
   "stats": {
     "crawled": 383,
-    "errors": 2,
+    "errors": 1,
     "studied": 383
   },
   "results": [
@@ -1047,7 +1047,7 @@
     {
       "title": "Client Hints Infrastructure",
       "shortname": "client-hints-infrastructure",
-      "date": "12 February 2021",
+      "date": "17 February 2021",
       "url": "https://wicg.github.io/client-hints-infrastructure/",
       "nightly": {
         "url": "https://wicg.github.io/client-hints-infrastructure/",
@@ -2444,7 +2444,6 @@
           "notDfn": [],
           "brokenLinks": [
             "https://html.spec.whatwg.org/#responsible-browsing-context",
-            "https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url",
             "https://w3c.github.io/webappsec-secure-contexts/#secure-contexts"
           ],
           "evolvingLinks": [],
@@ -3918,6 +3917,11 @@
               "url": "https://www.w3.org/TR/css-will-change-1/",
               "title": "CSS Will Change Module Level 1",
               "crawled": "https://drafts.csswg.org/css-will-change/"
+            },
+            {
+              "url": "https://www.w3.org/TR/mixed-content/",
+              "title": "Mixed Content Level 2",
+              "crawled": "https://w3c.github.io/webappsec-mixed-content/"
             }
           ]
         },
@@ -17597,6 +17601,11 @@
               "crawled": "https://w3c.github.io/mediacapture-record/"
             },
             {
+              "url": "https://www.w3.org/TR/mixed-content/",
+              "title": "Mixed Content Level 2",
+              "crawled": "https://w3c.github.io/webappsec-mixed-content/"
+            },
+            {
               "url": "https://wicg.github.io/netinfo/",
               "title": "Network Information API",
               "crawled": "https://wicg.github.io/netinfo/"
@@ -19057,7 +19066,7 @@
     {
       "title": "Fetch Standard",
       "shortname": "fetch",
-      "date": "15 February 2021",
+      "date": "17 February 2021",
       "url": "https://fetch.spec.whatwg.org/",
       "nightly": {
         "url": "https://fetch.spec.whatwg.org/",
@@ -19227,6 +19236,11 @@
               "url": "https://mimesniff.spec.whatwg.org/",
               "title": "MIME Sniffing Standard",
               "crawled": "https://mimesniff.spec.whatwg.org/"
+            },
+            {
+              "url": "https://www.w3.org/TR/mixed-content/",
+              "title": "Mixed Content Level 2",
+              "crawled": "https://w3c.github.io/webappsec-mixed-content/"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -19422,10 +19436,7 @@
             "https://w3c.github.io/FileAPI/#readOperation"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://w3c.github.io/webappsec-mixed-content/#should-block-fetch",
-            "https://w3c.github.io/webappsec-mixed-content/#should-block-response"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -31999,6 +32010,11 @@
               "crawled": "https://w3c.github.io/mediacapture-record/"
             },
             {
+              "url": "https://www.w3.org/TR/mixed-content/",
+              "title": "Mixed Content Level 2",
+              "crawled": "https://w3c.github.io/webappsec-mixed-content/"
+            },
+            {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://w3c.github.io/navigation-timing/"
@@ -33044,7 +33060,6 @@
             "https://drafts.csswg.org/css2/#block-boxes%E2%91%A0",
             "https://drafts.csswg.org/css2/#content%E2%91%A0",
             "https://w3c.github.io/FileAPI/#DefinitionOfScheme",
-            "https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url",
             "https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml",
             "https://drafts.csswg.org/css-syntax/#conform-classes",
             "https://drafts.csswg.org/css-align/#propdef-propdef-justify-content",
@@ -36823,9 +36838,9 @@
       }
     },
     {
-      "title": "Mixed Content",
+      "title": "Mixed Content Level 2",
       "shortname": "mixed-content",
-      "date": "",
+      "date": "17 February 2021",
       "url": "https://www.w3.org/TR/mixed-content/",
       "release": {
         "url": "https://www.w3.org/TR/mixed-content/",
@@ -36837,15 +36852,9 @@
         "sourcePath": "index.src.html",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://w3c.github.io/webappsec-mixed-content/",
-        "repository": "https://github.com/w3c/webappsec-mixed-content",
-        "sourcePath": "index.src.html",
-        "filename": "index.html"
-      },
+      "crawled": "https://w3c.github.io/webappsec-mixed-content/",
       "report": {
-        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 300)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
         "unknownExposedNames": [],
@@ -36857,7 +36866,22 @@
           "idl": []
         },
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-secure-contexts/",
+            "ref": {
+              "name": "SECURE-CONTEXTS",
+              "url": "https://www.w3.org/TR/secure-contexts/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2008/REC-xml-20081126/",
+            "ref": {
+              "name": "XML",
+              "url": "https://www.w3.org/TR/xml/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -36886,6 +36910,11 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
+              "url": "https://www.w3.org/TR/mixed-content/",
+              "title": "Mixed Content Level 2",
+              "crawled": "https://w3c.github.io/webappsec-mixed-content/"
+            },
+            {
               "url": "https://www.w3.org/TR/resource-hints/",
               "title": "Resource Hints",
               "crawled": "https://w3c.github.io/resource-hints/"
@@ -36907,6 +36936,20 @@
               "title": "Secure Contexts",
               "crawled": "https://w3c.github.io/webappsec-secure-contexts/"
             }
+          ]
+        },
+        "xrefs": {
+          "notExported": [
+            "https://html.spec.whatwg.org/#bc-container-document",
+            "https://html.spec.whatwg.org/#use-srcset-or-picture",
+            "https://html.spec.whatwg.org/#plugin"
+          ],
+          "notDfn": [],
+          "brokenLinks": [],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": [
+            "https://www.w3.org/TR/2008/REC-xml-20081126/"
           ]
         },
         "ok": false
@@ -39396,7 +39439,7 @@
     {
       "title": "Private Methods and Accessors Proposal",
       "shortname": "tc39-private-methods",
-      "date": "24 April 2020",
+      "date": "17 February 2021",
       "url": "https://tc39.es/proposal-private-methods/",
       "nightly": {
         "url": "https://tc39.es/proposal-private-methods/",
@@ -41517,6 +41560,11 @@
               "crawled": "https://wicg.github.io/media-feeds/"
             },
             {
+              "url": "https://www.w3.org/TR/mixed-content/",
+              "title": "Mixed Content Level 2",
+              "crawled": "https://w3c.github.io/webappsec-mixed-content/"
+            },
+            {
               "url": "https://www.w3.org/TR/network-error-logging-1/",
               "title": "Network Error Logging",
               "crawled": "https://w3c.github.io/network-error-logging/"
@@ -41639,7 +41687,6 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url",
             "https://www.w3.org/TR/geolocation-API/#get-current-position",
             "https://www.w3.org/TR/geolocation-API/#watch-position"
           ],
@@ -43444,7 +43491,7 @@
     {
       "title": "Top-Level Await",
       "shortname": "tc39-top-level-await",
-      "date": "15 February 2021",
+      "date": "17 February 2021",
       "url": "https://tc39.es/proposal-top-level-await/",
       "nightly": {
         "url": "https://tc39.es/proposal-top-level-await/",
@@ -44147,6 +44194,11 @@
               "url": "https://www.w3.org/TR/CSP3/",
               "title": "Content Security Policy Level 3",
               "crawled": "https://w3c.github.io/webappsec-csp/"
+            },
+            {
+              "url": "https://www.w3.org/TR/mixed-content/",
+              "title": "Mixed Content Level 2",
+              "crawled": "https://w3c.github.io/webappsec-mixed-content/"
             }
           ]
         },
@@ -44324,6 +44376,11 @@
               "url": "https://www.w3.org/TR/media-source/",
               "title": "Media Source Extensions™",
               "crawled": "https://w3c.github.io/media-source/"
+            },
+            {
+              "url": "https://www.w3.org/TR/mixed-content/",
+              "title": "Mixed Content Level 2",
+              "crawled": "https://w3c.github.io/webappsec-mixed-content/"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -54163,6 +54220,11 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://www.w3.org/TR/mixed-content/",
+              "title": "Mixed Content Level 2",
+              "crawled": "https://w3c.github.io/webappsec-mixed-content/"
             },
             {
               "url": "https://www.w3.org/TR/resource-timing-2/",

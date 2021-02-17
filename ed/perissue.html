@@ -26,9 +26,8 @@
   <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
   <ul>
   <li><a href="%5Bobject%20Object%5D">Clear Site Data</a>: <code>Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23) at runMicrotasks (&lt;anonymous&gt;) at processTicksAndRejections (internal/process/task_queues.js:93:5) at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9) at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24) at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24) at async Promise.all (index 174) at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21) at async Promise.all (index 0)</code></li>
-  <li><a href="%5Bobject%20Object%5D">Mixed Content</a>: <code>Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23) at runMicrotasks (&lt;anonymous&gt;) at processTicksAndRejections (internal/process/task_queues.js:93:5) at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9) at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24) at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24) at async Promise.all (index 300) at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21) at async Promise.all (index 0)</code></li>
   </ul>
-  <p>=&gt; 2 specifications found</p>
+  <p>=&gt; 1 specification found</p>
   </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
@@ -2181,6 +2180,11 @@
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
   <li><a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a> but related reference &quot;HR-TIME&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content Level 2</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2008/REC-xml-20081126/"><code>https://www.w3.org/TR/2008/REC-xml-20081126/</code></a> but related reference &quot;XML&quot; uses URL <a href="https://www.w3.org/TR/xml/"><code>https://www.w3.org/TR/xml/</code></a></li>
+  </ul></li>
   <li><a href="https://drafts.fxtf.org/motion-1/">Motion Path Module Level 1</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS3VAL&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
@@ -2374,7 +2378,7 @@
   <li><a href="https://immersive-web.github.io/dom-overlays/">WebXR DOM Overlays Module</a> links to <a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;UIEVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
   <li><a href="https://immersive-web.github.io/webxr-gamepads-module/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   </ul>
-  <p>=&gt; 313 inconsistent references for links found in 172 specifications</p>
+  <p>=&gt; 315 inconsistent references for links found in 173 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   <section id="external-links-to-private-terms" class="level2">
@@ -3296,6 +3300,12 @@
   <ul>
   <li><a href="https://html.spec.whatwg.org/#script"><code>https://html.spec.whatwg.org/#script</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content Level 2</a>:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/#bc-container-document"><code>https://html.spec.whatwg.org/#bc-container-document</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#use-srcset-or-picture"><code>https://html.spec.whatwg.org/#use-srcset-or-picture</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#plugin"><code>https://html.spec.whatwg.org/#plugin</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a>:
   <ul>
   <li><a href="https://html.spec.whatwg.org/#the-document&#39;s-address"><code>https://html.spec.whatwg.org/#the-document's-address</code></a></li>
@@ -4121,7 +4131,7 @@
   <li><a href="https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm"><code>https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 1176 problematic external links found in 188 specifications</p>
+  <p>=&gt; 1179 problematic external links found in 189 specifications</p>
   </section>
   <section id="external-links-that-neither-target-definitions-nor-headings" class="level2">
   <h2>External links that neither target definitions nor headings</h2>
@@ -4876,7 +4886,6 @@
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a>:
   <ul>
   <li><a href="https://html.spec.whatwg.org/#responsible-browsing-context"><code>https://html.spec.whatwg.org/#responsible-browsing-context</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url"><code>https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/#secure-contexts"><code>https://w3c.github.io/webappsec-secure-contexts/#secure-contexts</code></a></li>
   </ul></li>
   <li><a href="https://drafts.css-houdini.org/css-animationworklet-1/">CSS Animation Worklet API</a>:
@@ -5134,11 +5143,6 @@
   <li><a href="https://w3c.github.io/hr-time/#dfn-performance"><code>https://w3c.github.io/hr-time/#dfn-performance</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#event-dnd-dragexit"><code>https://html.spec.whatwg.org/#event-dnd-dragexit</code></a></li>
   </ul></li>
-  <li><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a>:
-  <ul>
-  <li><a href="https://w3c.github.io/webappsec-mixed-content/#should-block-fetch"><code>https://w3c.github.io/webappsec-mixed-content/#should-block-fetch</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-mixed-content/#should-block-response"><code>https://w3c.github.io/webappsec-mixed-content/#should-block-response</code></a></li>
-  </ul></li>
   <li><a href="https://w3c.github.io/FileAPI/">File API</a>:
   <ul>
   <li><a href="https://fetch.spec.whatwg.org/#concept-construct-readablestream"><code>https://fetch.spec.whatwg.org/#concept-construct-readablestream</code></a></li>
@@ -5368,7 +5372,6 @@
   <li><a href="https://drafts.csswg.org/css2/#block-boxes%E2%91%A0"><code>https://drafts.csswg.org/css2/#block-boxes%E2%91%A0</code></a></li>
   <li><a href="https://drafts.csswg.org/css2/#content%E2%91%A0"><code>https://drafts.csswg.org/css2/#content%E2%91%A0</code></a></li>
   <li><a href="https://w3c.github.io/FileAPI/#DefinitionOfScheme"><code>https://w3c.github.io/FileAPI/#DefinitionOfScheme</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url"><code>https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url</code></a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml"><code>https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml</code></a></li>
   <li><a href="https://drafts.csswg.org/css-syntax/#conform-classes"><code>https://drafts.csswg.org/css-syntax/#conform-classes</code></a></li>
   <li><a href="https://drafts.csswg.org/css-align/#propdef-propdef-justify-content"><code>https://drafts.csswg.org/css-align/#propdef-propdef-justify-content</code></a></li>
@@ -5651,7 +5654,6 @@
   </ul></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a>:
   <ul>
-  <li><a href="https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url"><code>https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url</code></a></li>
   <li><a href="https://www.w3.org/TR/geolocation-API/#get-current-position"><code>https://www.w3.org/TR/geolocation-API/#get-current-position</code></a></li>
   <li><a href="https://www.w3.org/TR/geolocation-API/#watch-position"><code>https://www.w3.org/TR/geolocation-API/#watch-position</code></a></li>
   </ul></li>
@@ -5841,7 +5843,7 @@
   <li><a href="https://www.w3.org/TR/webxr/#animationframe"><code>https://www.w3.org/TR/webxr/#animationframe</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 610 problematic external links found in 145 specifications</p>
+  <p>=&gt; 605 problematic external links found in 144 specifications</p>
   </section>
   <section id="external-links-to-terms-that-no-longer-exist-in-the-latest-version-of-the-targeted-specification" class="level2">
   <h2>External links to terms that no longer exist in the latest version of the targeted specification</h2>
@@ -6271,6 +6273,10 @@
   <ul>
   <li><a href="https://www.w3.org/TR/2015/REC-IndexedDB-20150108/"><code>https://www.w3.org/TR/2015/REC-IndexedDB-20150108/</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content Level 2</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2008/REC-xml-20081126/"><code>https://www.w3.org/TR/2008/REC-xml-20081126/</code></a></li>
+  </ul></li>
   <li><a href="https://drafts.fxtf.org/motion-1/">Motion Path Module Level 1</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/"><code>https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/</code></a></li>
@@ -6382,7 +6388,7 @@
   <li><a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 146 problematic external links found in 57 specifications</p>
+  <p>=&gt; 147 problematic external links found in 58 specifications</p>
   </section>
   </body>
 </html>
