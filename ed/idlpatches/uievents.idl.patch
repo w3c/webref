@@ -1,0 +1,80 @@
+From a22ea16d7bca3b8db9945cd967714ea166c2357d Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Wed, 17 Feb 2021 14:13:10 +0100
+Subject: [PATCH] Fix uievents.idl
+
+https://github.com/w3c/uievents/pull/292
+---
+ ed/idl/uievents.idl | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/ed/idl/uievents.idl b/ed/idl/uievents.idl
+index d5506ef77..a0936da4f 100644
+--- a/ed/idl/uievents.idl
++++ b/ed/idl/uievents.idl
+@@ -5,7 +5,7 @@
+ 
+ [Exposed=Window]
+ interface UIEvent : Event {
+-  constructor(DOMString type, optional UIEventInit eventInitDict);
++  constructor(DOMString type, optional UIEventInit eventInitDict = {});
+   readonly attribute Window? view;
+   readonly attribute long detail;
+ };
+@@ -17,7 +17,7 @@ dictionary UIEventInit : EventInit {
+ 
+ [Exposed=Window]
+ interface FocusEvent : UIEvent {
+-  constructor(DOMString type, optional FocusEventInit eventInitDict);
++  constructor(DOMString type, optional FocusEventInit eventInitDict = {});
+   readonly attribute EventTarget? relatedTarget;
+ };
+ 
+@@ -27,7 +27,7 @@ dictionary FocusEventInit : UIEventInit {
+ 
+ [Exposed=Window]
+ interface MouseEvent : UIEvent {
+-  constructor(DOMString type, optional MouseEventInit eventInitDict);
++  constructor(DOMString type, optional MouseEventInit eventInitDict = {});
+   readonly attribute long screenX;
+   readonly attribute long screenY;
+   readonly attribute long clientX;
+@@ -77,7 +77,7 @@ dictionary EventModifierInit : UIEventInit {
+ 
+ [Exposed=Window]
+ interface WheelEvent : MouseEvent {
+-  constructor(DOMString type, optional WheelEventInit eventInitDict);
++  constructor(DOMString type, optional WheelEventInit eventInitDict = {});
+   // DeltaModeCode
+   const unsigned long DOM_DELTA_PIXEL = 0x00;
+   const unsigned long DOM_DELTA_LINE  = 0x01;
+@@ -98,7 +98,7 @@ dictionary WheelEventInit : MouseEventInit {
+ 
+ [Exposed=Window]
+ interface InputEvent : UIEvent {
+-  constructor(DOMString type, optional InputEventInit eventInitDict);
++  constructor(DOMString type, optional InputEventInit eventInitDict = {});
+   readonly attribute DOMString? data;
+   readonly attribute boolean isComposing;
+   readonly attribute DOMString inputType;
+@@ -112,7 +112,7 @@ dictionary InputEventInit : UIEventInit {
+ 
+ [Exposed=Window]
+ interface KeyboardEvent : UIEvent {
+-  constructor(DOMString type, optional KeyboardEventInit eventInitDict);
++  constructor(DOMString type, optional KeyboardEventInit eventInitDict = {});
+   // KeyLocationCode
+   const unsigned long DOM_KEY_LOCATION_STANDARD = 0x00;
+   const unsigned long DOM_KEY_LOCATION_LEFT = 0x01;
+@@ -144,7 +144,7 @@ dictionary KeyboardEventInit : EventModifierInit {
+ 
+ [Exposed=Window]
+ interface CompositionEvent : UIEvent {
+-  constructor(DOMString type, optional CompositionEventInit eventInitDict);
++  constructor(DOMString type, optional CompositionEventInit eventInitDict = {});
+   readonly attribute DOMString data;
+ };
+ 
+-- 
+2.30.0.365.g02bc693789-goog
+
