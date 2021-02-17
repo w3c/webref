@@ -649,13 +649,14 @@
   </ul>
   </section>
   </section>
-  <section id="clear-site-data" class="level2" data-spec="true" data-error="true">
+  <section id="clear-site-data" class="level2" data-spec="true" data-anomaly="true" data-missingDfns="true" data-inconsistentRef="true" data-xrefs="true">
   <h2>Clear Site Data</h2>
   <section id="spec-info-14" class="level3 info">
   <h3>Spec info</h3>
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/clear-site-data/" class="uri">https://www.w3.org/TR/clear-site-data/</a></li>
-  <li>Crawled URL: <a href="%5Bobject%20Object%5D">[object Object]</a></li>
+  <li>Crawled URL: <a href="https://w3c.github.io/webappsec-clear-site-data/" class="uri">https://w3c.github.io/webappsec-clear-site-data/</a></li>
+  <li>Crawled version: 18 February 2021</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/webappsec-clear-site-data/" class="uri">https://w3c.github.io/webappsec-clear-site-data/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/clear-site-data/" class="uri">https://www.w3.org/TR/clear-site-data/</a></li>
   <li>Shortname: clear-site-data</li>
@@ -663,8 +664,20 @@
   </section>
   <section id="potential-issues-14" class="level3 anomalies">
   <h3>Potential issue(s)</h3>
-  <p>The following network or parsing error occurred: <code>Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed     at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)     at runMicrotasks (&lt;anonymous&gt;)     at processTicksAndRejections (internal/process/task_queues.js:93:5)     at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)     at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)     at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)     at async Promise.all (index 174)     at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)     at async Promise.all (index 0)</code></p>
-  <p>Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.</p>
+  <ul>
+  <li>Inconsistent references for links:
+  <ul>
+  <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a>, related reference &quot;SERVICE-WORKERS&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-mixed-content/"><code>https://w3c.github.io/webappsec-mixed-content/</code></a>, related reference &quot;MIXED-CONTENT&quot; uses URL <a href="https://www.w3.org/TR/mixed-content/"><code>https://www.w3.org/TR/mixed-content/</code></a></li>
+  <li><a href="https://w3c.github.io/IndexedDB/"><code>https://w3c.github.io/IndexedDB/</code></a>, related reference &quot;INDEXEDDB&quot; uses URL <a href="https://www.w3.org/TR/IndexedDB/"><code>https://www.w3.org/TR/IndexedDB/</code></a></li>
+  </ul></li>
+  <li>External links to private terms:
+  <ul>
+  <li><a href="https://fetch.spec.whatwg.org/#concept-http-network-fetch"><code>https://fetch.spec.whatwg.org/#concept-http-network-fetch</code></a></li>
+  <li><a href="https://w3c.github.io/IndexedDB/#database"><code>https://w3c.github.io/IndexedDB/#database</code></a></li>
+  <li><a href="https://w3c.github.io/IndexedDB/#delete-a-database"><code>https://w3c.github.io/IndexedDB/#delete-a-database</code></a></li>
+  </ul></li>
+  </ul>
   </section>
   <section id="known-dependencies-on-this-specification-14" class="level3 dependencies">
   <h3>Known dependencies on this specification</h3>
@@ -1174,6 +1187,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
   <li><a href="https://w3c.github.io/preload/">Preload</a></li>
   <li><a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></li>
@@ -2823,7 +2837,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/css-color-4/" class="uri">https://www.w3.org/TR/css-color-4/</a></li>
   <li>Crawled URL: <a href="https://drafts.csswg.org/css-color/" class="uri">https://drafts.csswg.org/css-color/</a></li>
-  <li>Crawled version: 8 February 2021</li>
+  <li>Crawled version: 17 February 2021</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-color/" class="uri">https://drafts.csswg.org/css-color/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-color-4/" class="uri">https://www.w3.org/TR/css-color-4/</a></li>
   <li>Shortname: css-color-4</li>
@@ -4073,7 +4087,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/css-grid-2/" class="uri">https://www.w3.org/TR/css-grid-2/</a></li>
   <li>Crawled URL: <a href="https://drafts.csswg.org/css-grid-2/" class="uri">https://drafts.csswg.org/css-grid-2/</a></li>
-  <li>Crawled version: 7 January 2021</li>
+  <li>Crawled version: 17 February 2021</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/css-grid-2/" class="uri">https://drafts.csswg.org/css-grid-2/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/css-grid-2/" class="uri">https://www.w3.org/TR/css-grid-2/</a></li>
   <li>Shortname: css-grid-2</li>
@@ -8019,7 +8033,6 @@
   <li><a href="https://wicg.github.io/portals/">Portals</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   <li><a href="https://w3c.github.io/push-api/">Push API</a></li>
-  <li><a href="https://w3c.github.io/reporting/">Reporting API 1</a></li>
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 2</a></li>
   <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></li>
   <li><a href="https://w3c.github.io/screen-wake-lock/">Screen Wake Lock API</a></li>
@@ -8331,6 +8344,7 @@
   <li><a href="https://w3c.github.io/webappsec-change-password-url/">A Well-Known URL for Changing Passwords</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
+  <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
   <li><a href="https://wicg.github.io/client-hints-infrastructure/">Client Hints Infrastructure</a></li>
   <li><a href="https://wicg.github.io/construct-stylesheets/">Constructable Stylesheet Objects</a></li>
   <li><a href="https://wicg.github.io/content-index/spec/">Content Index</a></li>
@@ -10150,6 +10164,7 @@
   <li><a href="https://w3c.github.io/badging/">Badging API</a></li>
   <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
+  <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
   <li><a href="https://wicg.github.io/client-hints-infrastructure/">Client Hints Infrastructure</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://compat.spec.whatwg.org/">Compatibility Standard</a></li>
@@ -10742,6 +10757,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
   <li><a href="https://w3c.github.io/presentation-api/">Presentation API</a></li>
   </ul>
@@ -10780,6 +10796,7 @@
   <li><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
   <li><a href="https://w3c.github.io/badging/">Badging API</a></li>
+  <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
   <li><a href="https://wicg.github.io/client-hints-infrastructure/">Client Hints Infrastructure</a></li>
   <li><a href="https://console.spec.whatwg.org/">Console Standard</a></li>
   <li><a href="https://wicg.github.io/contact-api/spec/">Contact Picker API</a></li>
@@ -12334,6 +12351,7 @@
   <h3>Known dependencies on this specification</h3>
   <p>Normative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
   <li><a href="https://wicg.github.io/private-network-access/">CORS and RFC1918</a></li>
   <li><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></li>
   <li><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></li>
@@ -14086,7 +14104,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/reporting-1/" class="uri">https://www.w3.org/TR/reporting-1/</a></li>
   <li>Crawled URL: <a href="https://w3c.github.io/reporting/" class="uri">https://w3c.github.io/reporting/</a></li>
-  <li>Crawled version: 12 February 2021</li>
+  <li>Crawled version: 17 February 2021</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/reporting/" class="uri">https://w3c.github.io/reporting/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/reporting-1/" class="uri">https://www.w3.org/TR/reporting-1/</a></li>
   <li>Shortname: reporting-1</li>
@@ -15064,6 +15082,7 @@
   <ul>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
   <li><a href="https://w3c.github.io/badging/">Badging API</a></li>
+  <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
   <li><a href="https://wicg.github.io/content-index/spec/">Content Index</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://wicg.github.io/cookie-store/">Cookie Store API</a></li>
@@ -15150,6 +15169,7 @@
   </ul>
   <p>Informative references to this spec from:</p>
   <ul>
+  <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
   <li><a href="https://infra.spec.whatwg.org/">Infra Standard</a></li>
   <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a></li>
   </ul>
@@ -16217,6 +16237,7 @@
   <li><a href="https://w3c.github.io/webappsec-change-password-url/">A Well-Known URL for Changing Passwords</a></li>
   <li><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></li>
   <li><a href="https://w3c.github.io/beacon/">Beacon</a></li>
+  <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a></li>
   <li><a href="https://wicg.github.io/content-index/spec/">Content Index</a></li>
   <li><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></li>
   <li><a href="https://w3c.github.io/webappsec-cspee/">Content Security Policy: Embedded Enforcement</a></li>
