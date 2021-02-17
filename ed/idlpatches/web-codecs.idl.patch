@@ -1,0 +1,29 @@
+From dc9418532e47240771ad32784c47c713aded301f Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Wed, 17 Feb 2021 14:26:09 +0100
+Subject: [PATCH] Fix web-codecs.idl
+
+https://github.com/WICG/web-codecs/pull/142
+---
+ ed/idl/web-codecs.idl | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/ed/idl/web-codecs.idl b/ed/idl/web-codecs.idl
+index 9502f9a79..45d16cbd2 100644
+--- a/ed/idl/web-codecs.idl
++++ b/ed/idl/web-codecs.idl
+@@ -200,9 +200,9 @@ dictionary AudioFrameInit {
+ 
+ [Exposed=(Window,DedicatedWorker)]
+ interface VideoFrame {
+-  constructor(ImageBitmap imageBitmap, VideoFrameInit frameInit);
++  constructor(ImageBitmap imageBitmap, optional VideoFrameInit frameInit = {});
+   constructor(PixelFormat pixelFormat, sequence<(Plane or PlaneInit)> planes,
+-              VideoFrameInit frameInit);
++              optional VideoFrameInit frameInit = {});
+ 
+   readonly attribute PixelFormat format;
+   readonly attribute FrozenArray<Plane> planes;
+-- 
+2.30.0.365.g02bc693789-goog
+

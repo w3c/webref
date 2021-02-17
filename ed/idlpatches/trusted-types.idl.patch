@@ -1,17 +1,26 @@
-From cf5a5e1e6c7101eadbc9520a2aa65b3a687807f3 Mon Sep 17 00:00:00 2001
+From bee7e0b3179eed98477520c2058b465ac42cdd52 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
-Date: Fri, 12 Feb 2021 09:32:59 +0100
-Subject: [PATCH] Remove trusted-types.idl overloads
+Date: Wed, 17 Feb 2021 14:48:32 +0100
+Subject: [PATCH] Fix trusted-types.idl
 
-https://github.com/w3c/webappsec-trusted-types/issues/283
+https://github.com/w3c/webappsec-trusted-types/pull/308
 ---
- ed/idl/trusted-types.idl | 76 ----------------------------------------
- 1 file changed, 76 deletions(-)
+ ed/idl/trusted-types.idl | 78 +---------------------------------------
+ 1 file changed, 1 insertion(+), 77 deletions(-)
 
 diff --git a/ed/idl/trusted-types.idl b/ed/idl/trusted-types.idl
-index ad6d1f998..bd0109dce 100644
+index ad6d1f998..cd5e5eec1 100644
 --- a/ed/idl/trusted-types.idl
 +++ b/ed/idl/trusted-types.idl
+@@ -23,7 +23,7 @@ interface TrustedScriptURL {
+ 
+ [Exposed=Window, SecureContext] interface TrustedTypePolicyFactory {
+     TrustedTypePolicy createPolicy(
+-        DOMString policyName, optional TrustedTypePolicyOptions policyOptions);
++        DOMString policyName, optional TrustedTypePolicyOptions policyOptions = {});
+     boolean isHTML(any value);
+     boolean isScript(any value);
+     boolean isScriptURL(any value);
 @@ -66,79 +66,3 @@ typedef (TrustedHTML or TrustedScript or TrustedScriptURL) TrustedType;
  partial interface Window {
    [SecureContext] readonly attribute TrustedTypePolicyFactory trustedTypes;
