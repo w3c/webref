@@ -171,7 +171,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
-- Crawled version: 11 February 2021
+- Crawled version: 18 February 2021
 - Editor's Draft: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Shortname: wai-aria-1.2
@@ -5463,7 +5463,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Crawled URL: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
-- Crawled version: 8 February 2021
+- Crawled version: 17 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
 - Latest published version: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Shortname: css-transforms-2
@@ -7015,7 +7015,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/file-system-access/](https://wicg.github.io/file-system-access/)
 - Crawled URL: [https://wicg.github.io/file-system-access/](https://wicg.github.io/file-system-access/)
-- Crawled version: 4 February 2021
+- Crawled version: 18 February 2021
 - Editor's Draft: [https://wicg.github.io/file-system-access/](https://wicg.github.io/file-system-access/)
 - Shortname: file-system-access
 
@@ -13819,7 +13819,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 15 February 2021
+- Crawled version: 18 February 2021
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest
@@ -14610,7 +14610,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
 - Crawled URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
-- Crawled version: 16 February 2021
+- Crawled version: 17 February 2021
 - Editor's Draft: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
 - Shortname: web-codecs
 
