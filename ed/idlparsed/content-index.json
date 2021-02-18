@@ -331,32 +331,13 @@
         "partial": false
       },
       "ContentIndexEvent": {
-        "fragment": "[Constructor(DOMString type, ContentIndexEventInit init), Exposed=ServiceWorker]\ninterface ContentIndexEvent : ExtendableEvent {\n  readonly attribute DOMString id;\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface ContentIndexEvent : ExtendableEvent {\n  constructor(DOMString type, ContentIndexEventInit init);\n  readonly attribute DOMString id;\n};",
         "type": "interface",
         "name": "ContentIndexEvent",
         "inheritance": "ExtendableEvent",
         "members": [
           {
-            "type": "attribute",
-            "name": "id",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
+            "type": "constructor",
             "arguments": [
               {
                 "type": "argument",
@@ -390,8 +371,26 @@
                 "optional": false,
                 "variadic": false
               }
-            ]
+            ],
+            "extAttrs": []
           },
+          {
+            "type": "attribute",
+            "name": "id",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
           {
             "type": "extended-attribute",
             "name": "Exposed",
