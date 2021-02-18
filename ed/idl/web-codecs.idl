@@ -149,13 +149,13 @@ callback WebCodecsErrorCallback = undefined(DOMException error);
 interface EncodedAudioChunk {
   constructor(EncodedAudioChunkInit init);
   readonly attribute EncodedAudioChunkType type;
-  readonly attribute DOMHighResTimeStamp timestamp;
+  readonly attribute unsigned long long timestamp;  // microseconds
   readonly attribute ArrayBuffer data;
 };
 
 dictionary EncodedAudioChunkInit {
   required EncodedAudioChunkType type;
-  required DOMHighResTimeStamp timestamp;
+  required unsigned long long timestamp;
   required BufferSource data;
 };
 
@@ -168,15 +168,15 @@ enum EncodedAudioChunkType {
 interface EncodedVideoChunk {
   constructor(EncodedVideoChunkInit init);
   readonly attribute EncodedVideoChunkType type;
-  readonly attribute DOMHighResTimeStamp timestamp;
-  readonly attribute DOMHighResTimeStamp? duration;
+  readonly attribute unsigned long long timestamp;  // microseconds
+  readonly attribute unsigned long long? duration;  // microseconds
   readonly attribute ArrayBuffer data;
 };
 
 dictionary EncodedVideoChunkInit {
   required EncodedVideoChunkType type;
-  required DOMHighResTimeStamp timestamp;
-  DOMHighResTimeStamp duration;
+  required unsigned long long timestamp;
+  unsigned long long duration;
   required BufferSource data;
 };
 
@@ -188,13 +188,13 @@ enum EncodedVideoChunkType {
 [Exposed=(Window,DedicatedWorker)]
 interface AudioFrame {
   constructor(AudioFrameInit init);
-  readonly attribute DOMHighResTimeStamp timestamp;
+  readonly attribute unsigned long long timestamp;
   readonly attribute AudioBuffer? buffer;
   undefined close();
 };
 
 dictionary AudioFrameInit {
-  required DOMHighResTimeStamp timestamp;
+  required unsigned long long timestamp;
   required AudioBuffer buffer;
 };
 
@@ -214,8 +214,8 @@ interface VideoFrame {
   readonly attribute unsigned long cropHeight;
   readonly attribute unsigned long displayWidth;
   readonly attribute unsigned long displayHeight;
-  readonly attribute DOMHighResTimeStamp? duration;
-  readonly attribute DOMHighResTimeStamp? timestamp;
+  readonly attribute unsigned long long? duration;
+  readonly attribute unsigned long long? timestamp;
 
   undefined destroy();
   VideoFrame clone();
@@ -234,8 +234,8 @@ dictionary VideoFrameInit {
   unsigned long cropHeight;
   unsigned long displayWidth;
   unsigned long displayHeight;
-  DOMHighResTimeStamp duration;
-  DOMHighResTimeStamp timestamp;
+  unsigned long long duration;
+  unsigned long long timestamp;
 };
 
 interface Plane {

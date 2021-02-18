@@ -2,7 +2,7 @@
 [Exposed=(Window,DedicatedWorker)]
 interface AudioFrame {
   constructor(AudioFrameInit init);
-  readonly attribute DOMHighResTimeStamp timestamp;
+  readonly attribute unsigned long long timestamp;
   readonly attribute AudioBuffer? buffer;
   undefined close();
 };

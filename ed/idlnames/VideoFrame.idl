@@ -15,8 +15,8 @@ interface VideoFrame {
   readonly attribute unsigned long cropHeight;
   readonly attribute unsigned long displayWidth;
   readonly attribute unsigned long displayHeight;
-  readonly attribute DOMHighResTimeStamp? duration;
-  readonly attribute DOMHighResTimeStamp? timestamp;
+  readonly attribute unsigned long long? duration;
+  readonly attribute unsigned long long? timestamp;
 
   undefined destroy();
   VideoFrame clone();
