@@ -823,7 +823,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/content-index/spec/](https://wicg.github.io/content-index/spec/)
 - Crawled URL: [https://wicg.github.io/content-index/spec/](https://wicg.github.io/content-index/spec/)
-- Crawled version: 13 May 2020
+- Crawled version: 18 February 2021
 - Editor's Draft: [https://wicg.github.io/content-index/spec/](https://wicg.github.io/content-index/spec/)
 - Shortname: content-index
 
@@ -832,6 +832,8 @@ No informative reference to this spec from other specs.
 - Unknown WebIDL names used: `void`
 - Missing references for WebIDL names: 
      * `ImageResource` defined in [Image Resource](https://w3c.github.io/image-resource/)
+- No definition for IDL properties: 
+     * `constructor(type, init)` with type `constructor` for [`ContentIndexEvent`](https://wicg.github.io/content-index/spec/#contentindexevent)
 - Missing references for links: 
      * [`https://w3c.github.io/image-resource/`](https://w3c.github.io/image-resource/)
 - Inconsistent references for links: 
@@ -12683,7 +12685,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/SRI/](https://www.w3.org/TR/SRI/)
 - Crawled URL: [https://w3c.github.io/webappsec-subresource-integrity/](https://w3c.github.io/webappsec-subresource-integrity/)
-- Crawled version: 4 January 2020
+- Crawled version: 18 February 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-subresource-integrity/](https://w3c.github.io/webappsec-subresource-integrity/)
 - Latest published version: [https://www.w3.org/TR/SRI/](https://www.w3.org/TR/SRI/)
 - Shortname: SRI
@@ -12692,7 +12694,6 @@ No informative reference to this spec from other specs.
 
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
-     * [`https://www.w3.org/TR/cors/`](https://www.w3.org/TR/cors/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -14523,7 +14524,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wasm-core-1/](https://www.w3.org/TR/wasm-core-1/)
 - Crawled URL: [https://webassembly.github.io/spec/core/bikeshed/](https://webassembly.github.io/spec/core/bikeshed/)
-- Crawled version: 9 February 2021
+- Crawled version: 18 February 2021
 - Editor's Draft: [https://webassembly.github.io/spec/core/bikeshed/](https://webassembly.github.io/spec/core/bikeshed/)
 - Latest published version: [https://www.w3.org/TR/wasm-core-1/](https://www.w3.org/TR/wasm-core-1/)
 - Shortname: wasm-core-1
@@ -14548,7 +14549,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Crawled URL: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
-- Crawled version: 9 February 2021
+- Crawled version: 18 February 2021
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Shortname: wasm-js-api-1
@@ -14579,7 +14580,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Crawled URL: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
-- Crawled version: 9 February 2021
+- Crawled version: 18 February 2021
 - Editor's Draft: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Shortname: wasm-web-api-1

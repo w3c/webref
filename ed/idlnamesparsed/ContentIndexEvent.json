@@ -5,7 +5,7 @@
       "title": "Content Index",
       "url": "https://wicg.github.io/content-index/spec/"
     },
-    "fragment": "[Constructor(DOMString type, ContentIndexEventInit init), Exposed=ServiceWorker]\ninterface ContentIndexEvent : ExtendableEvent {\n  readonly attribute DOMString id;\n};",
+    "fragment": "[Exposed=ServiceWorker]\ninterface ContentIndexEvent : ExtendableEvent {\n  constructor(DOMString type, ContentIndexEventInit init);\n  readonly attribute DOMString id;\n};",
     "href": "https://wicg.github.io/content-index/spec/#contentindexevent"
   },
   "extended": [],
