@@ -186,6 +186,79 @@ describe('Web IDL consistency', () => {
     }
   });
 
+  // Validate that there are no unknown types.
+  it('all used types are defined', () => {
+    // There are types in lots of places in the AST (interface members,
+    // arguments, return types) and rather than trying to cover them all, walk
+    // the whole AST looking for "idlType".
+    const usedTypes = new Set();
+
+    // Serialize and reparse the ast to not have to worry about own properties
+    // vs enumerable properties on the prototypes, etc.
+    const pending = [JSON.parse(JSON.stringify([...dfns, ...partials]))];
+    while (pending.length) {
+      const node = pending.pop();
+      for (const [key, value] of Object.entries(node)) {
+        if (key === 'idlType' && typeof value === 'string') {
+          usedTypes.add(value);
+        } else if (typeof value === 'object' && value !== null) {
+          pending.push(value);
+        }
+      }
+    }
+
+    const knownTypes = new Set([
+      // Types defined by Web IDL itself:
+      'any', // https://heycam.github.io/webidl/#idl-any
+      'ArrayBuffer', // https://heycam.github.io/webidl/#idl-ArrayBuffer
+      'boolean', // https://heycam.github.io/webidl/#idl-boolean
+      'byte', // https://heycam.github.io/webidl/#idl-byte
+      'ByteString', // https://heycam.github.io/webidl/#idl-ByteString
+      'DataView', // https://heycam.github.io/webidl/#idl-DataView
+      'DOMString', // https://heycam.github.io/webidl/#idl-DOMString
+      'double', // https://heycam.github.io/webidl/#idl-double
+      'float', // https://heycam.github.io/webidl/#idl-float
+      'Float32Array', // https://heycam.github.io/webidl/#idl-Float32Array
+      'Float64Array', // https://heycam.github.io/webidl/#idl-Float64Array
+      'Int16Array', // https://heycam.github.io/webidl/#idl-Int16Array
+      'Int32Array', // https://heycam.github.io/webidl/#idl-Int32Array
+      'Int8Array', // https://heycam.github.io/webidl/#idl-Int8Array
+      'long long', // https://heycam.github.io/webidl/#idl-long-long
+      'long', // https://heycam.github.io/webidl/#idl-long
+      'object', // https://heycam.github.io/webidl/#idl-object
+      'octet', // https://heycam.github.io/webidl/#idl-octet
+      'short', // https://heycam.github.io/webidl/#idl-short
+      'symbol', // https://heycam.github.io/webidl/#idl-symbol
+      'Uint16Array', // https://heycam.github.io/webidl/#idl-Uint16Array
+      'Uint32Array', // https://heycam.github.io/webidl/#idl-Uint32Array
+      'Uint8Array', // https://heycam.github.io/webidl/#idl-Uint8Array
+      'Uint8ClampedArray', // https://heycam.github.io/webidl/#idl-Uint8ClampedArray
+      'unrestricted double', // https://heycam.github.io/webidl/#idl-unrestricted-double
+      'unrestricted float', // https://heycam.github.io/webidl/#idl-unrestricted-float
+      'unsigned long long', // https://heycam.github.io/webidl/#idl-unsigned-long-long
+      'unsigned long', // https://heycam.github.io/webidl/#idl-unsigned-long
+      'unsigned short', // https://heycam.github.io/webidl/#idl-unsigned-short
+      'USVString', // https://heycam.github.io/webidl/#idl-USVString
+      'undefined', // https://heycam.github.io/webidl/#idl-undefined
+
+      // TODO: drop void when it has been removed from all specs
+      'void',
+
+      // Types defined by other specs:
+      'CSSOMString', // https://drafts.csswg.org/cssom/#cssomstring-type
+      'WindowProxy' // https://html.spec.whatwg.org/multipage/window-object.html#windowproxy
+    ]);
+
+    // Add any types defined by the parsed IDL.
+    for (const dfn of dfns) {
+      knownTypes.add(dfn.name);
+    }
+
+    for (const usedType of usedTypes) {
+      assert(knownTypes.has(usedType), `type ${usedType} is used but never defined`);
+    }
+  });
+
   // This test should remain the last one as it slightly modifies objects in dfns in place.
   it('merging in partials/mixins', () => {
     const merged = merge(dfns, partials, includes);
