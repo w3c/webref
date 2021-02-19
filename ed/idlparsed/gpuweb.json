@@ -9630,7 +9630,7 @@
         "extAttrs": []
       },
       "GPUExtent3DDict": {
-        "fragment": "dictionary GPUExtent3DDict {\n    GPUIntegerCoordinate width = 1;\n    GPUIntegerCoordinate height = 1;\n    GPUIntegerCoordinate depthOrArrayLayers = 1;\n};",
+        "fragment": "dictionary GPUExtent3DDict {\n    required GPUIntegerCoordinate width;\n    GPUIntegerCoordinate height = 1;\n    GPUIntegerCoordinate depthOrArrayLayers = 1;\n};",
         "type": "dictionary",
         "name": "GPUExtent3DDict",
         "inheritance": null,
@@ -9647,11 +9647,8 @@
               "union": false,
               "idlType": "GPUIntegerCoordinate"
             },
-            "default": {
-              "type": "number",
-              "value": "1"
-            },
-            "required": false
+            "default": null,
+            "required": true
           },
           {
             "type": "field",
