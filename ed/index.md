@@ -858,7 +858,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Crawled URL: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
-- Crawled version: 18 February 2021
+- Crawled version: 19 February 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
 - Latest published version: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Shortname: CSP3
