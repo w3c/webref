@@ -3842,6 +3842,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/reporting/#group`](https://w3c.github.io/reporting/#group)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/):
      * [`https://html.spec.whatwg.org/#responsible-browsing-context`](https://html.spec.whatwg.org/#responsible-browsing-context)
+     * [`https://w3c.github.io/webappsec-csp/#grammardef-media-type`](https://w3c.github.io/webappsec-csp/#grammardef-media-type)
      * [`https://w3c.github.io/webappsec-csp/#port-part-match`](https://w3c.github.io/webappsec-csp/#port-part-match)
      * [`https://fetch.spec.whatwg.org/#network-scheme`](https://fetch.spec.whatwg.org/#network-scheme)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/):
@@ -4546,7 +4547,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/):
      * [`https://www.w3.org/TR/webxr/#animationframe`](https://www.w3.org/TR/webxr/#animationframe)
 
-=> 602 problematic external links found in 144 specifications
+=> 603 problematic external links found in 144 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
