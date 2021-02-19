@@ -1,19 +1,19 @@
-From 4e5f3980c2e042f7f2f5abeeba9a382b8d7e9fc0 Mon Sep 17 00:00:00 2001
+From 50c80eeaf5eaf5a22ec14ee5a97e1438e17ce172 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
 Date: Fri, 12 Feb 2021 12:09:11 +0100
 Subject: [PATCH] Fix SVG.idl
 
 HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
 
-Duplicates: https://github.com/w3c/svgwg/issues/824
+SVGMarkerElement: https://github.com/w3c/svgwg/issues/824
 
-Constructor: https://github.com/w3c/svgwg/pull/825
+ShadowAnimation: https://github.com/w3c/svgwg/pull/825
 ---
- ed/idl/SVG.idl | 50 ++++++++++++++++----------------------------------
- 1 file changed, 16 insertions(+), 34 deletions(-)
+ ed/idl/SVG.idl | 46 ++++++++++++++++------------------------------
+ 1 file changed, 16 insertions(+), 30 deletions(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index f8d24c9c6..2e7d438fa 100644
+index f8d24c9c6..0bf7d418a 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
 @@ -314,8 +314,9 @@ interface mixin SVGElementInstance {
@@ -27,18 +27,7 @@ index f8d24c9c6..2e7d438fa 100644
    [SameObject] readonly attribute Animation sourceAnimation;
  };
  
-@@ -417,10 +418,6 @@ interface SVGAnimatedPreserveAspectRatio {
-   [SameObject] readonly attribute SVGPreserveAspectRatio animVal;
- };
- 
--[Exposed=Window]
--interface SVGPathElement : SVGGeometryElement {
--};
--
- [Exposed=Window]
- interface SVGRectElement : SVGGeometryElement {
-   [SameObject] readonly attribute SVGAnimatedLength x;
-@@ -566,34 +563,6 @@ interface SVGForeignObjectElement : SVGGraphicsElement {
+@@ -566,34 +567,6 @@ interface SVGForeignObjectElement : SVGGraphicsElement {
    [SameObject] readonly attribute SVGAnimatedLength height;
  };
  
@@ -73,7 +62,7 @@ index f8d24c9c6..2e7d438fa 100644
  [Exposed=Window]
  interface SVGGradientElement : SVGElement {
  
-@@ -671,7 +640,20 @@ interface SVGAElement : SVGGraphicsElement {
+@@ -671,7 +644,20 @@ interface SVGAElement : SVGGraphicsElement {
  };
  
  SVGAElement includes SVGURIReference;
@@ -96,5 +85,5 @@ index f8d24c9c6..2e7d438fa 100644
  [Exposed=Window]
  interface SVGViewElement : SVGElement {};
 -- 
-2.30.0.365.g02bc693789-goog
+2.30.1.669.gdc6e27a789-goog
 
