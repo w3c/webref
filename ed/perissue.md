@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 19, 2021
+% February 20, 2021
 
 383 specifications were crawled in this report.
 
@@ -3353,7 +3353,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/mediacapture-main/getusermedia.html#idl-def-mediastream`](https://w3c.github.io/mediacapture-main/getusermedia.html#idl-def-mediastream)
      * [`https://w3c.github.io/battery/#widl-Navigator-getBattery-Promise-BatteryManager`](https://w3c.github.io/battery/#widl-Navigator-getBattery-Promise-BatteryManager)
      * [`https://drafts.csswg.org/css-images/#intrinsic-dimensions`](https://drafts.csswg.org/css-images/#intrinsic-dimensions)
-     * [`https://drafts.csswg.org/css-images/#intrinsic-aspect-ratio`](https://drafts.csswg.org/css-images/#intrinsic-aspect-ratio)
      * [`https://drafts.csswg.org/css-images/#intrinsic-height`](https://drafts.csswg.org/css-images/#intrinsic-height)
      * [`https://drafts.csswg.org/css-images/#intrinsic-width`](https://drafts.csswg.org/css-images/#intrinsic-width)
      * [`https://drafts.csswg.org/css-backgrounds/#the-background-color`](https://drafts.csswg.org/css-backgrounds/#the-background-color)
@@ -3798,7 +3797,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/):
      * [`https://html.spec.whatwg.org/#case-sensitive`](https://html.spec.whatwg.org/#case-sensitive)
 
-=> 463 problematic external links found in 67 specifications
+=> 462 problematic external links found in 67 specifications
 
 
 ## Broken external links
