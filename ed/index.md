@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 21, 2021
+% February 22, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -138,7 +138,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/accname-1.2/](https://www.w3.org/TR/accname-1.2/)
 - Crawled URL: [https://w3c.github.io/accname/](https://w3c.github.io/accname/)
-- Crawled version: 03 February 2021
+- Crawled version: 22 February 2021
 - Editor's Draft: [https://w3c.github.io/accname/](https://w3c.github.io/accname/)
 - Latest published version: [https://www.w3.org/TR/accname-1.2/](https://www.w3.org/TR/accname-1.2/)
 - Shortname: accname-1.2
@@ -165,19 +165,20 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Accessible Rich Internet Applications (WAI-ARIA) 1.2 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Accessible Rich Internet Applications (WAI-ARIA) 1.2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
-- Crawled version: 18 February 2021
+- Crawled version: 22 February 2021
 - Editor's Draft: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Shortname: wai-aria-1.2
 
 ### Potential issue(s) {.anomalies}
 
+- Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
      * [`https://w3c.github.io/aria-practices/`](https://w3c.github.io/aria-practices/)
      * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/)
@@ -1035,7 +1036,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/core-aam-1.2/](https://www.w3.org/TR/core-aam-1.2/)
 - Crawled URL: [https://w3c.github.io/core-aam/](https://w3c.github.io/core-aam/)
-- Crawled version: 20 January 2021
+- Crawled version: 22 February 2021
 - Editor's Draft: [https://w3c.github.io/core-aam/](https://w3c.github.io/core-aam/)
 - Latest published version: [https://www.w3.org/TR/core-aam-1.2/](https://www.w3.org/TR/core-aam-1.2/)
 - Shortname: core-aam-1.2
@@ -7466,7 +7467,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/graphics-aam-1.0/](https://www.w3.org/TR/graphics-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/graphics-aam/](https://w3c.github.io/graphics-aam/)
-- Crawled version: 20 January 2021
+- Crawled version: 22 February 2021
 - Editor's Draft: [https://w3c.github.io/graphics-aam/](https://w3c.github.io/graphics-aam/)
 - Latest published version: [https://www.w3.org/TR/graphics-aam-1.0/](https://www.w3.org/TR/graphics-aam-1.0/)
 - Shortname: graphics-aam-1.0
@@ -9627,7 +9628,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
 - Crawled URL: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
-- Crawled version: 20 January 2021
+- Crawled version: 22 February 2021
 - Editor's Draft: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
 - Shortname: mathml-aam
 
@@ -12708,7 +12709,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/svg-aam-1.0/](https://www.w3.org/TR/svg-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/svg-aam/](https://w3c.github.io/svg-aam/)
-- Crawled version: 20 January 2021
+- Crawled version: 22 February 2021
 - Editor's Draft: [https://w3c.github.io/svg-aam/](https://w3c.github.io/svg-aam/)
 - Latest published version: [https://www.w3.org/TR/svg-aam-1.0/](https://www.w3.org/TR/svg-aam-1.0/)
 - Shortname: svg-aam-1.0
@@ -13722,7 +13723,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/graphics-aria-1.0/](https://www.w3.org/TR/graphics-aria-1.0/)
 - Crawled URL: [https://w3c.github.io/graphics-aria/](https://w3c.github.io/graphics-aria/)
-- Crawled version: 20 January 2021
+- Crawled version: 22 February 2021
 - Editor's Draft: [https://w3c.github.io/graphics-aria/](https://w3c.github.io/graphics-aria/)
 - Latest published version: [https://www.w3.org/TR/graphics-aria-1.0/](https://www.w3.org/TR/graphics-aria-1.0/)
 - Shortname: graphics-aria-1.0
@@ -14071,7 +14072,6 @@ Normative references to this spec from:
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html)
 - [Accelerometer](https://w3c.github.io/accelerometer/)
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)

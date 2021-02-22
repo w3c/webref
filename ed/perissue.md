@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 21, 2021
+% February 22, 2021
 
 383 specifications were crawled in this report.
 
@@ -86,6 +86,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [CORS and RFC1918](https://wicg.github.io/private-network-access/)
 - [Frame Timing](https://wicg.github.io/frame-timing/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
@@ -136,7 +137,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - [WebRTC Priority Control API](https://w3c.github.io/webrtc-priority/)
 
-=> 49 specifications found
+=> 50 specifications found
 
 
 
