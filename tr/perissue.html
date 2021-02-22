@@ -237,19 +237,8 @@
   <section id="missing-references-for-webidl-names" class="level2">
   <h2>Missing references for WebIDL names</h2>
   <ul>
-  <li><a href="https://www.w3.org/TR/image-capture/">&quot;MediaStream Image Capture&quot;</a> uses:
-  <ul>
-  <li><code>MediaStreamTrack</code> but does not reference <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a></li>
-  <li><code>MediaTrackSupportedConstraints</code> but does not reference <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a></li>
-  <li><code>MediaTrackCapabilities</code> but does not reference <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a></li>
-  <li><code>MediaTrackConstraintSet</code> but does not reference <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a></li>
-  <li><code>ConstrainDOMString</code> but does not reference <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a></li>
-  <li><code>ConstrainDouble</code> but does not reference <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a></li>
-  <li><code>ConstrainBoolean</code> but does not reference <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a></li>
-  <li><code>MediaTrackSettings</code> but does not reference <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a></li>
-  </ul></li>
-  <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a> uses <code>Point2D</code> but does not reference <a href="https://www.w3.org/TR/image-capture/">&quot;MediaStream Image Capture&quot;</a></li>
-  <li><a href="https://wicg.github.io/shape-detection-api/text.html">Accelerated Text Detection in Images</a> uses <code>Point2D</code> but does not reference <a href="https://www.w3.org/TR/image-capture/">&quot;MediaStream Image Capture&quot;</a></li>
+  <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a> uses <code>Point2D</code> but does not reference <a href="https://www.w3.org/TR/image-capture/">MediaStream Image Capture</a></li>
+  <li><a href="https://wicg.github.io/shape-detection-api/text.html">Accelerated Text Detection in Images</a> uses <code>Point2D</code> but does not reference <a href="https://www.w3.org/TR/image-capture/">MediaStream Image Capture</a></li>
   <li><a href="https://www.w3.org/TR/battery-status/">Battery Status API</a> uses <code>EventTarget</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://wicg.github.io/content-index/spec/">Content Index</a> uses <code>ImageResource</code> but does not reference <a href="https://www.w3.org/TR/image-resource/">Image Resource</a></li>
   <li><a href="https://wicg.github.io/private-network-access/">CORS and RFC1918</a> uses <code>Document</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
@@ -360,7 +349,7 @@
   <li><code>GLenum</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 74 missing references for IDL definitions found in 32 specifications</p>
+  <p>=&gt; 66 missing references for IDL definitions found in 31 specifications</p>
   </section>
   <section id="no-definition-for-css-properties" class="level2">
   <h2>No definition for CSS properties</h2>
@@ -553,6 +542,10 @@
   <li><a href="https://www.w3.org/TR/beacon/">Beacon</a>:
   <ul>
   <li><code>sendBeacon(url, data)</code> with type <code>method</code>, but found <a href="https://www.w3.org/TR/beacon/#dom-navigator-sendbeacon"><code>sendBeacon</code></a> with type <code>dfn</code></li>
+  </ul></li>
+  <li><a href="https://wicg.github.io/content-index/spec/">Content Index</a>:
+  <ul>
+  <li><code>constructor(type, init)</code> with type <code>constructor</code> for <a href="https://wicg.github.io/content-index/spec/#contentindexevent"><code>ContentIndexEvent</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/requestidlecallback/">Cooperative Scheduling of Background Tasks</a>:
   <ul>
@@ -1458,7 +1451,7 @@
   <li><code>multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)</code> with type <code>method</code></li>
   </ul></li>
   </ul>
-  <p>=&gt; 734 properties without definition found in 62 specifications</p>
+  <p>=&gt; 735 properties without definition found in 63 specifications</p>
   </section>
   <section id="possibly-no-definition-for-css-properties" class="level2">
   <h2>Possibly no definition for CSS properties</h2>
@@ -2371,6 +2364,7 @@
   <li><a href="https://w3c.github.io/mathml-aam/">MathML Accessiblity API Mappings 1.0</a> links to <a href="https://w3c.github.io/aria/"><code>https://w3c.github.io/aria/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/mediaqueries-4/">Media Queries Level 4</a> links to <a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/media-source/">Media Source Extensions™</a> links to <a href="https://w3c.github.io/encrypted-media/"><code>https://w3c.github.io/encrypted-media/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/image-capture/">MediaStream Image Capture</a> links to <a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/mediastream-recording/">MediaStream Recording</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/webrtc-identity/"><code>https://www.w3.org/TR/webrtc-identity/</code></a> but does not list it in its references</li>
@@ -2641,18 +2635,13 @@
   <li><a href="https://www.w3.org/TR/webxr-hand-input-1/">WebXR Hand Input Module - Level 1</a> links to <a href="https://www.w3.org/TR/webxr/"><code>https://www.w3.org/TR/webxr/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 698 missing references for links found in 176 specifications</p>
+  <p>=&gt; 699 missing references for links found in 177 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
   <section id="reference-url-is-inconsistent-with-url-used-in-document-links" class="level2">
   <h2>Reference URL is inconsistent with URL used in document links</h2>
   <ul>
-  <li><a href="https://www.w3.org/TR/image-capture/">&quot;MediaStream Image Capture&quot;</a> links to:
-  <ul>
-  <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
-  <li><a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a> but related reference &quot;GETUSERMEDIA&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
-  </ul></li>
   <li><a href="https://w3c.github.io/webappsec-change-password-url/">A Well-Known URL for Changing Passwords</a> links to <a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a> links to <a href="https://www.w3.org/TR/2dcontext/"><code>https://www.w3.org/TR/2dcontext/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   <li><a href="https://www.w3.org/TR/accelerometer/">Accelerometer</a> links to <a href="https://www.w3.org/TR/screen-orientation/"><code>https://www.w3.org/TR/screen-orientation/</code></a> but related reference &quot;SCREEN-ORIENTATION&quot; uses URL <a href="https://w3c.github.io/screen-orientation/"><code>https://w3c.github.io/screen-orientation/</code></a></li>
@@ -2997,6 +2986,11 @@
   <li><a href="https://www.w3.org/TR/mediacapture-fromelement/">Media Capture from DOM Elements</a> links to <a href="https://w3c.github.io/mediacapture-main/"><code>https://w3c.github.io/mediacapture-main/</code></a> but related reference &quot;mediacapture-streams&quot; uses URL <a href="https://www.w3.org/TR/mediacapture-streams/"><code>https://www.w3.org/TR/mediacapture-streams/</code></a></li>
   <li><a href="https://www.w3.org/TR/mediaqueries-4/">Media Queries Level 4</a> links to <a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a> but related reference &quot;CSSOM-VIEW-1&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
   <li><a href="https://www.w3.org/TR/mediaqueries-5/">Media Queries Level 5</a> links to <a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a> but related reference &quot;CSSOM-VIEW-1&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
+  <li><a href="https://www.w3.org/TR/image-capture/">MediaStream Image Capture</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
+  <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/mediastream-recording/">MediaStream Recording</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -3210,13 +3204,6 @@
   <section id="external-links-to-private-terms" class="level2">
   <h2>External links to private terms</h2>
   <ul>
-  <li><a href="https://www.w3.org/TR/image-capture/">&quot;MediaStream Image Capture&quot;</a>:
-  <ul>
-  <li><a href="https://heycam.github.io/webidl/#notsupportederror"><code>https://heycam.github.io/webidl/#notsupportederror</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#invalidstateerror"><code>https://heycam.github.io/webidl/#invalidstateerror</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#unknownerror"><code>https://heycam.github.io/webidl/#unknownerror</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#operationerror"><code>https://heycam.github.io/webidl/#operationerror</code></a></li>
-  </ul></li>
   <li><a href="https://w3c.github.io/webappsec-change-password-url/">A Well-Known URL for Changing Passwords</a>:
   <ul>
   <li><a href="https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh"><code>https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh</code></a></li>
@@ -3938,6 +3925,7 @@
   <li><a href="https://heycam.github.io/webidl/#invalidmodificationerror"><code>https://heycam.github.io/webidl/#invalidmodificationerror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#aborterror"><code>https://heycam.github.io/webidl/#aborterror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#dfn-get-buffer-source-copy"><code>https://heycam.github.io/webidl/#dfn-get-buffer-source-copy</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#quotaexceedederror"><code>https://heycam.github.io/webidl/#quotaexceedederror</code></a></li>
   <li><a href="https://w3c.github.io/permissions/#create-a-permissionstatus"><code>https://w3c.github.io/permissions/#create-a-permissionstatus</code></a></li>
   <li><a href="https://storage.spec.whatwg.org/#storage-endpoint-identifier"><code>https://storage.spec.whatwg.org/#storage-endpoint-identifier</code></a></li>
   <li><a href="https://storage.spec.whatwg.org/#storage-endpoint-types"><code>https://storage.spec.whatwg.org/#storage-endpoint-types</code></a></li>
@@ -4422,6 +4410,15 @@
   <li><a href="https://html.spec.whatwg.org/#entry-settings-object"><code>https://html.spec.whatwg.org/#entry-settings-object</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#media-element"><code>https://html.spec.whatwg.org/#media-element</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#dfn-dictionary-member"><code>https://heycam.github.io/webidl/#dfn-dictionary-member</code></a></li>
+  </ul></li>
+  <li><a href="https://www.w3.org/TR/image-capture/">MediaStream Image Capture</a>:
+  <ul>
+  <li><a href="https://heycam.github.io/webidl/#notsupportederror"><code>https://heycam.github.io/webidl/#notsupportederror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#invalidstateerror"><code>https://heycam.github.io/webidl/#invalidstateerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#unknownerror"><code>https://heycam.github.io/webidl/#unknownerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#operationerror"><code>https://heycam.github.io/webidl/#operationerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#securityerror"><code>https://heycam.github.io/webidl/#securityerror</code></a></li>
+  <li><a href="https://www.w3.org/TR/page-visibility/#dom-visibilitystate"><code>https://www.w3.org/TR/page-visibility/#dom-visibilitystate</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/mediastream-recording/">MediaStream Recording</a>:
   <ul>
@@ -5330,11 +5327,11 @@
   <li><a href="https://w3c.github.io/webrtc-insertable-streams/">WebRTC Insertable Media using Streams</a>:
   <ul>
   <li><a href="https://heycam.github.io/webidl/#invalidaccesserror"><code>https://heycam.github.io/webidl/#invalidaccesserror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#invalidmodificationerror"><code>https://heycam.github.io/webidl/#invalidmodificationerror</code></a></li>
   <li><a href="https://w3c.github.io/webcrypto/#dfn-CryptoKey"><code>https://w3c.github.io/webcrypto/#dfn-CryptoKey</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/webtransport/">WebTransport</a>:
   <ul>
-  <li><a href="https://html.spec.whatwg.org/#concept-request-origin"><code>https://html.spec.whatwg.org/#concept-request-origin</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#dfn-throw"><code>https://heycam.github.io/webidl/#dfn-throw</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#invalidstateerror"><code>https://heycam.github.io/webidl/#invalidstateerror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#syntaxerror"><code>https://heycam.github.io/webidl/#syntaxerror</code></a></li>
@@ -5501,15 +5498,11 @@
   <li><a href="https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over"><code>https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 1624 problematic external links found in 222 specifications</p>
+  <p>=&gt; 1627 problematic external links found in 222 specifications</p>
   </section>
   <section id="external-links-that-neither-target-definitions-nor-headings" class="level2">
   <h2>External links that neither target definitions nor headings</h2>
   <ul>
-  <li><a href="https://www.w3.org/TR/image-capture/">&quot;MediaStream Image Capture&quot;</a>:
-  <ul>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindomstring"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindomstring</code></a></li>
-  </ul></li>
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a>:
   <ul>
   <li><a href="https://drafts.csswg.org/css2/conform.html#intrinsic"><code>https://drafts.csswg.org/css2/conform.html#intrinsic</code></a></li>
@@ -5518,6 +5511,7 @@
   <ul>
   <li><a href="https://html.spec.whatwg.org/#unknown-images"><code>https://html.spec.whatwg.org/#unknown-images</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#e-mail-state-(type=email)"><code>https://html.spec.whatwg.org/#e-mail-state-(type=email)</code></a></li>
+  <li><a href="https://www.w3.org/TR/svg-aam-1.0/#details-id-66"><code>https://www.w3.org/TR/svg-aam-1.0/#details-id-66</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/audio-output/">Audio Output Devices API</a>:
   <ul>
@@ -5770,7 +5764,6 @@
   <li><a href="https://w3c.github.io/mediacapture-main/getusermedia.html#idl-def-mediastream"><code>https://w3c.github.io/mediacapture-main/getusermedia.html#idl-def-mediastream</code></a></li>
   <li><a href="https://w3c.github.io/battery/#widl-Navigator-getBattery-Promise-BatteryManager"><code>https://w3c.github.io/battery/#widl-Navigator-getBattery-Promise-BatteryManager</code></a></li>
   <li><a href="https://drafts.csswg.org/css-images/#intrinsic-dimensions"><code>https://drafts.csswg.org/css-images/#intrinsic-dimensions</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-images/#intrinsic-aspect-ratio"><code>https://drafts.csswg.org/css-images/#intrinsic-aspect-ratio</code></a></li>
   <li><a href="https://drafts.csswg.org/css-images/#intrinsic-height"><code>https://drafts.csswg.org/css-images/#intrinsic-height</code></a></li>
   <li><a href="https://drafts.csswg.org/css-images/#intrinsic-width"><code>https://drafts.csswg.org/css-images/#intrinsic-width</code></a></li>
   <li><a href="https://drafts.csswg.org/css-backgrounds/#the-background-color"><code>https://drafts.csswg.org/css-backgrounds/#the-background-color</code></a></li>
@@ -6224,10 +6217,6 @@
   <ul>
   <li><a href="https://heycam.github.io/webidl/#idl-ArrayBuffer"><code>https://heycam.github.io/webidl/#idl-ArrayBuffer</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/webtransport/">WebTransport</a>:
-  <ul>
-  <li><a href="https://heycam.github.io/webidl/#idl-Uint8Array"><code>https://heycam.github.io/webidl/#idl-Uint8Array</code></a></li>
-  </ul></li>
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a>:
   <ul>
   <li><a href="https://heycam.github.io/webidl/#idl-ArrayBuffer"><code>https://heycam.github.io/webidl/#idl-ArrayBuffer</code></a></li>
@@ -6251,30 +6240,11 @@
   <li><a href="https://heycam.github.io/webidl/#idl-ArrayBuffer"><code>https://heycam.github.io/webidl/#idl-ArrayBuffer</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 423 problematic external links found in 107 specifications</p>
+  <p>=&gt; 421 problematic external links found in 105 specifications</p>
   </section>
   <section id="broken-external-links" class="level2">
   <h2>Broken external links</h2>
   <ul>
-  <li><a href="https://www.w3.org/TR/image-capture/">&quot;MediaStream Image Capture&quot;</a>:
-  <ul>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-kind"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-kind</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-readyState"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-readyState</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-onmute"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-onmute</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-onunmute"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-onunmute</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-getCapabilities-MediaTrackCapabilities"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-getCapabilities-MediaTrackCapabilities</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-ConstrainablePattern-getSettings-Settings"><code>https://www.w3.org/TR/mediacapture-streams/#widl-ConstrainablePattern-getSettings-Settings</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-getConstraints-MediaTrackConstraints"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-getConstraints-MediaTrackConstraints</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-applyConstraints-Promise-void--MediaTrackConstraints-constraints"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-applyConstraints-Promise-void--MediaTrackConstraints-constraints</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackSupportedConstraints"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackSupportedConstraints</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaDevices-getSupportedConstraints-MediaTrackSupportedConstraints"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaDevices-getSupportedConstraints-MediaTrackSupportedConstraints</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackCapabilities"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackCapabilities</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraintSet"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraintSet</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackSettings"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackSettings</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraints"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraints</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-ConstrainDouble"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-ConstrainDouble</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-ConstrainBoolean"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-ConstrainBoolean</code></a></li>
-  </ul></li>
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a>:
   <ul>
   <li><a href="https://heycam.github.io/webidl/#SecureContext"><code>https://heycam.github.io/webidl/#SecureContext</code></a></li>
@@ -7679,6 +7649,11 @@
   <li><a href="https://heycam.github.io/webidl/#dfn-create-frozen-array"><code>https://heycam.github.io/webidl/#dfn-create-frozen-array</code></a></li>
   <li><a href="https://www.w3.org/TR/appmanifest/#dom-imageresource"><code>https://www.w3.org/TR/appmanifest/#dom-imageresource</code></a></li>
   </ul></li>
+  <li><a href="https://www.w3.org/TR/image-capture/">MediaStream Image Capture</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#dom-constrainablepattern-getsettings-settings"><code>https://www.w3.org/TR/mediacapture-streams/#dom-constrainablepattern-getsettings-settings</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#a-promise-rejected-with"><code>https://heycam.github.io/webidl/#a-promise-rejected-with</code></a></li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/mediastream-recording/">MediaStream Recording</a>:
   <ul>
   <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
@@ -8414,10 +8389,15 @@
   <li><a href="https://heycam.github.io/webidl/#this"><code>https://heycam.github.io/webidl/#this</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#a-promise-resolved-with"><code>https://heycam.github.io/webidl/#a-promise-resolved-with</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#BufferSource"><code>https://heycam.github.io/webidl/#BufferSource</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#a-new-promise"><code>https://heycam.github.io/webidl/#a-new-promise</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#reject"><code>https://heycam.github.io/webidl/#reject</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/webtransport/">WebTransport</a>:
   <ul>
+  <li><a href="https://heycam.github.io/webidl/#a-promise-resolved-with"><code>https://heycam.github.io/webidl/#a-promise-resolved-with</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#new"><code>https://heycam.github.io/webidl/#new</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#this"><code>https://heycam.github.io/webidl/#this</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#exceptiondef-typeerror"><code>https://heycam.github.io/webidl/#exceptiondef-typeerror</code></a></li>
   </ul></li>
@@ -8492,14 +8472,13 @@
   </ul></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a>:
   <ul>
-  <li><a href="https://fetch.spec.whatwg.org/#synchronous-flag"><code>https://fetch.spec.whatwg.org/#synchronous-flag</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#this"><code>https://heycam.github.io/webidl/#this</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#new"><code>https://heycam.github.io/webidl/#new</code></a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm"><code>https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 1531 problematic external links found in 237 specifications</p>
+  <p>=&gt; 1521 problematic external links found in 237 specifications</p>
   </section>
   <section id="external-links-to-terms-that-no-longer-exist-in-the-latest-version-of-the-targeted-specification" class="level2">
   <h2>External links to terms that no longer exist in the latest version of the targeted specification</h2>

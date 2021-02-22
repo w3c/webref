@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 15, 2021
+% February 22, 2021
 
 383 specifications were crawled in this report.
 
@@ -229,17 +229,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 ## Missing references for WebIDL names
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/image-capture/) uses:
-    * `MediaStreamTrack` but does not reference [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
-    * `MediaTrackSupportedConstraints` but does not reference [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
-    * `MediaTrackCapabilities` but does not reference [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
-    * `MediaTrackConstraintSet` but does not reference [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
-    * `ConstrainDOMString` but does not reference [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
-    * `ConstrainDouble` but does not reference [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
-    * `ConstrainBoolean` but does not reference [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
-    * `MediaTrackSettings` but does not reference [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
-- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/) uses `Point2D` but does not reference ["MediaStream Image Capture"](https://www.w3.org/TR/image-capture/)
-- [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html) uses `Point2D` but does not reference ["MediaStream Image Capture"](https://www.w3.org/TR/image-capture/)
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/) uses `Point2D` but does not reference [MediaStream Image Capture](https://www.w3.org/TR/image-capture/)
+- [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html) uses `Point2D` but does not reference [MediaStream Image Capture](https://www.w3.org/TR/image-capture/)
 - [Battery Status API](https://www.w3.org/TR/battery-status/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Content Index](https://wicg.github.io/content-index/spec/) uses `ImageResource` but does not reference [Image Resource](https://www.w3.org/TR/image-resource/)
 - [CORS and RFC1918](https://wicg.github.io/private-network-access/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
@@ -320,7 +311,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 74 missing references for IDL definitions found in 32 specifications
+=> 66 missing references for IDL definitions found in 31 specifications
 
 
 ## No definition for CSS properties
@@ -500,6 +491,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `getBattery()` with type `method`
 - [Beacon](https://www.w3.org/TR/beacon/):
     * `sendBeacon(url, data)` with type `method`, but found [`sendBeacon`](https://www.w3.org/TR/beacon/#dom-navigator-sendbeacon) with type `dfn`
+- [Content Index](https://wicg.github.io/content-index/spec/):
+    * `constructor(type, init)` with type `constructor` for [`ContentIndexEvent`](https://wicg.github.io/content-index/spec/#contentindexevent)
 - [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/):
     * `IdleRequestOptions` with type `dictionary`, but found [`IdleRequestOptions`](https://www.w3.org/TR/requestidlecallback/#dom-idlerequestoptions) with type `dfn`
     * `timeout` with type `dict-member`, but found [`timeout`](https://www.w3.org/TR/requestidlecallback/#dom-idlerequestoptions-timeout) with type `dfn` for `idlerequestoptions`
@@ -1284,7 +1277,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `multiDrawArraysInstancedBaseInstanceWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
     * `multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
 
-=> 734 properties without definition found in 62 specifications
+=> 735 properties without definition found in 63 specifications
 
 
 ## Possibly no definition for CSS properties
@@ -2009,6 +2002,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/) links to [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but does not list it in its references
 - [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/) links to [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [Media Source Extensions™](https://www.w3.org/TR/media-source/) links to [`https://w3c.github.io/encrypted-media/`](https://w3c.github.io/encrypted-media/) but does not list it in its references
+- [MediaStream Image Capture](https://www.w3.org/TR/image-capture/) links to [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/) but does not list it in its references
 - [MediaStream Recording](https://www.w3.org/TR/mediastream-recording/) links to:
     * [`https://www.w3.org/TR/webrtc-identity/`](https://www.w3.org/TR/webrtc-identity/) but does not list it in its references
     * [`https://www.w3.org/TR/fingerprinting-guidance/`](https://www.w3.org/TR/fingerprinting-guidance/) but does not list it in its references
@@ -2211,7 +2205,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 698 missing references for links found in 176 specifications
+=> 699 missing references for links found in 177 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -2220,9 +2214,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 
 ## Reference URL is inconsistent with URL used in document links
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/image-capture/) links to:
-    * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
-    * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/) links to [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/) links to [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [Accelerometer](https://www.w3.org/TR/accelerometer/) links to [`https://www.w3.org/TR/screen-orientation/`](https://www.w3.org/TR/screen-orientation/) but related reference "SCREEN-ORIENTATION" uses URL [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/)
@@ -2467,6 +2458,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Media Capture from DOM Elements](https://www.w3.org/TR/mediacapture-fromelement/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "mediacapture-streams" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/) links to [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
 - [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/) links to [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
+- [MediaStream Image Capture](https://www.w3.org/TR/image-capture/) links to:
+    * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
+    * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 - [MediaStream Recording](https://www.w3.org/TR/mediastream-recording/) links to:
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
@@ -2627,11 +2621,6 @@ Links in the body of a specification should be to the same document as that poin
 
 ## External links to private terms
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/image-capture/):
-     * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
-     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
-     * [`https://heycam.github.io/webidl/#unknownerror`](https://heycam.github.io/webidl/#unknownerror)
-     * [`https://heycam.github.io/webidl/#operationerror`](https://heycam.github.io/webidl/#operationerror)
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/):
      * [`https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh`](https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/):
@@ -3180,6 +3169,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#invalidmodificationerror`](https://heycam.github.io/webidl/#invalidmodificationerror)
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-copy`](https://heycam.github.io/webidl/#dfn-get-buffer-source-copy)
+     * [`https://heycam.github.io/webidl/#quotaexceedederror`](https://heycam.github.io/webidl/#quotaexceedederror)
      * [`https://w3c.github.io/permissions/#create-a-permissionstatus`](https://w3c.github.io/permissions/#create-a-permissionstatus)
      * [`https://storage.spec.whatwg.org/#storage-endpoint-identifier`](https://storage.spec.whatwg.org/#storage-endpoint-identifier)
      * [`https://storage.spec.whatwg.org/#storage-endpoint-types`](https://storage.spec.whatwg.org/#storage-endpoint-types)
@@ -3586,6 +3576,13 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#entry-settings-object`](https://html.spec.whatwg.org/#entry-settings-object)
      * [`https://html.spec.whatwg.org/#media-element`](https://html.spec.whatwg.org/#media-element)
      * [`https://heycam.github.io/webidl/#dfn-dictionary-member`](https://heycam.github.io/webidl/#dfn-dictionary-member)
+- [MediaStream Image Capture](https://www.w3.org/TR/image-capture/):
+     * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#unknownerror`](https://heycam.github.io/webidl/#unknownerror)
+     * [`https://heycam.github.io/webidl/#operationerror`](https://heycam.github.io/webidl/#operationerror)
+     * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
+     * [`https://www.w3.org/TR/page-visibility/#dom-visibilitystate`](https://www.w3.org/TR/page-visibility/#dom-visibilitystate)
 - [MediaStream Recording](https://www.w3.org/TR/mediastream-recording/):
      * [`https://www.w3.org/TR/mediacapture-streams/#stream-inactive`](https://www.w3.org/TR/mediacapture-streams/#stream-inactive)
      * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
@@ -4328,9 +4325,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/):
      * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
+     * [`https://heycam.github.io/webidl/#invalidmodificationerror`](https://heycam.github.io/webidl/#invalidmodificationerror)
      * [`https://w3c.github.io/webcrypto/#dfn-CryptoKey`](https://w3c.github.io/webcrypto/#dfn-CryptoKey)
 - [WebTransport](https://w3c.github.io/webtransport/):
-     * [`https://html.spec.whatwg.org/#concept-request-origin`](https://html.spec.whatwg.org/#concept-request-origin)
      * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
      * [`https://heycam.github.io/webidl/#syntaxerror`](https://heycam.github.io/webidl/#syntaxerror)
@@ -4474,18 +4471,17 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
      * [`https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over`](https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over)
 
-=> 1624 problematic external links found in 222 specifications
+=> 1627 problematic external links found in 222 specifications
 
 
 ## External links that neither target definitions nor headings
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/image-capture/):
-     * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindomstring`](https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindomstring)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/):
      * [`https://drafts.csswg.org/css2/conform.html#intrinsic`](https://drafts.csswg.org/css2/conform.html#intrinsic)
 - [ARIA in HTML](https://www.w3.org/TR/html-aria/):
      * [`https://html.spec.whatwg.org/#unknown-images`](https://html.spec.whatwg.org/#unknown-images)
      * [`https://html.spec.whatwg.org/#e-mail-state-(type=email)`](https://html.spec.whatwg.org/#e-mail-state-(type=email))
+     * [`https://www.w3.org/TR/svg-aam-1.0/#details-id-66`](https://www.w3.org/TR/svg-aam-1.0/#details-id-66)
 - [Audio Output Devices API](https://www.w3.org/TR/audio-output/):
      * [`https://www.w3.org/TR/mediacapture-streams/#def-mediadeviceinfo-groupId`](https://www.w3.org/TR/mediacapture-streams/#def-mediadeviceinfo-groupId)
 - [Background Fetch](https://wicg.github.io/background-fetch/):
@@ -4644,7 +4640,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/mediacapture-main/getusermedia.html#idl-def-mediastream`](https://w3c.github.io/mediacapture-main/getusermedia.html#idl-def-mediastream)
      * [`https://w3c.github.io/battery/#widl-Navigator-getBattery-Promise-BatteryManager`](https://w3c.github.io/battery/#widl-Navigator-getBattery-Promise-BatteryManager)
      * [`https://drafts.csswg.org/css-images/#intrinsic-dimensions`](https://drafts.csswg.org/css-images/#intrinsic-dimensions)
-     * [`https://drafts.csswg.org/css-images/#intrinsic-aspect-ratio`](https://drafts.csswg.org/css-images/#intrinsic-aspect-ratio)
      * [`https://drafts.csswg.org/css-images/#intrinsic-height`](https://drafts.csswg.org/css-images/#intrinsic-height)
      * [`https://drafts.csswg.org/css-images/#intrinsic-width`](https://drafts.csswg.org/css-images/#intrinsic-width)
      * [`https://drafts.csswg.org/css-backgrounds/#the-background-color`](https://drafts.csswg.org/css-backgrounds/#the-background-color)
@@ -4995,8 +4990,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
 - [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/):
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
-- [WebTransport](https://w3c.github.io/webtransport/):
-     * [`https://heycam.github.io/webidl/#idl-Uint8Array`](https://heycam.github.io/webidl/#idl-Uint8Array)
 - [WebUSB API](https://wicg.github.io/webusb/):
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
      * [`https://heycam.github.io/webidl/#idl-DataView`](https://heycam.github.io/webidl/#idl-DataView)
@@ -5010,28 +5003,11 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
 
-=> 423 problematic external links found in 107 specifications
+=> 421 problematic external links found in 105 specifications
 
 
 ## Broken external links
 
-- ["MediaStream Image Capture"](https://www.w3.org/TR/image-capture/):
-     * [`https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-kind`](https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-kind)
-     * [`https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-readyState`](https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-readyState)
-     * [`https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-onmute`](https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-onmute)
-     * [`https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-onunmute`](https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-onunmute)
-     * [`https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-getCapabilities-MediaTrackCapabilities`](https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-getCapabilities-MediaTrackCapabilities)
-     * [`https://www.w3.org/TR/mediacapture-streams/#widl-ConstrainablePattern-getSettings-Settings`](https://www.w3.org/TR/mediacapture-streams/#widl-ConstrainablePattern-getSettings-Settings)
-     * [`https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-getConstraints-MediaTrackConstraints`](https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-getConstraints-MediaTrackConstraints)
-     * [`https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-applyConstraints-Promise-void--MediaTrackConstraints-constraints`](https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-applyConstraints-Promise-void--MediaTrackConstraints-constraints)
-     * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackSupportedConstraints`](https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackSupportedConstraints)
-     * [`https://www.w3.org/TR/mediacapture-streams/#widl-MediaDevices-getSupportedConstraints-MediaTrackSupportedConstraints`](https://www.w3.org/TR/mediacapture-streams/#widl-MediaDevices-getSupportedConstraints-MediaTrackSupportedConstraints)
-     * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackCapabilities`](https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackCapabilities)
-     * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraintSet`](https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraintSet)
-     * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackSettings`](https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackSettings)
-     * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraints`](https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraints)
-     * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-ConstrainDouble`](https://www.w3.org/TR/mediacapture-streams/#idl-def-ConstrainDouble)
-     * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-ConstrainBoolean`](https://www.w3.org/TR/mediacapture-streams/#idl-def-ConstrainBoolean)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/):
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://w3c.github.io/mediacapture-image/#Point2D`](https://w3c.github.io/mediacapture-image/#Point2D)
@@ -6144,6 +6120,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#dfn-create-frozen-array`](https://heycam.github.io/webidl/#dfn-create-frozen-array)
      * [`https://www.w3.org/TR/appmanifest/#dom-imageresource`](https://www.w3.org/TR/appmanifest/#dom-imageresource)
+- [MediaStream Image Capture](https://www.w3.org/TR/image-capture/):
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-constrainablepattern-getsettings-settings`](https://www.w3.org/TR/mediacapture-streams/#dom-constrainablepattern-getsettings-settings)
+     * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
 - [MediaStream Recording](https://www.w3.org/TR/mediastream-recording/):
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
 - [Mixed Content](https://www.w3.org/TR/mixed-content/):
@@ -6722,8 +6701,13 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
 - [WebTransport](https://w3c.github.io/webtransport/):
+     * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
+     * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
 - [WebUSB API](https://wicg.github.io/webusb/):
@@ -6778,13 +6762,12 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
-     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1531 problematic external links found in 237 specifications
+=> 1521 problematic external links found in 237 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

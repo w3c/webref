@@ -11,10 +11,10 @@
   "extended": [
     {
       "spec": {
-        "title": "\"MediaStream Image Capture\"",
+        "title": "MediaStream Image Capture",
         "url": "https://www.w3.org/TR/image-capture/"
       },
-      "fragment": "partial dictionary MediaTrackCapabilities {\n  sequence<DOMString>  whiteBalanceMode;\n  sequence<DOMString>  exposureMode;\n  sequence<DOMString>  focusMode;\n\n  MediaSettingsRange   exposureCompensation;\n  MediaSettingsRange   colorTemperature;\n  MediaSettingsRange   iso;\n\n  MediaSettingsRange   brightness;\n  MediaSettingsRange   contrast;\n  MediaSettingsRange   saturation;\n  MediaSettingsRange   sharpness;\n\n  MediaSettingsRange   focusDistance;\n  MediaSettingsRange   zoom;\n\n  boolean              torch;\n};"
+      "fragment": "partial dictionary MediaTrackCapabilities {\n  sequence<DOMString>  whiteBalanceMode;\n  sequence<DOMString>  exposureMode;\n  sequence<DOMString>  focusMode;\n\n  MediaSettingsRange   exposureCompensation;\n  MediaSettingsRange   exposureTime;\n  MediaSettingsRange   colorTemperature;\n  MediaSettingsRange   iso;\n\n  MediaSettingsRange   brightness;\n  MediaSettingsRange   contrast;\n  MediaSettingsRange   saturation;\n  MediaSettingsRange   sharpness;\n\n  MediaSettingsRange   focusDistance;\n  MediaSettingsRange   pan;\n  MediaSettingsRange   tilt;\n  MediaSettingsRange   zoom;\n\n  boolean              torch;\n};"
     },
     {
       "spec": {

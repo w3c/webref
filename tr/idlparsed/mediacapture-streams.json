@@ -2765,67 +2765,6 @@
           ]
         },
         "extAttrs": []
-      },
-      "Capabilities": {
-        "fragment": "dictionary Capabilities {};",
-        "type": "dictionary",
-        "name": "Capabilities",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [],
-        "partial": false
-      },
-      "Settings": {
-        "fragment": "dictionary Settings {};",
-        "type": "dictionary",
-        "name": "Settings",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [],
-        "partial": false
-      },
-      "ConstraintSet": {
-        "fragment": "dictionary ConstraintSet {};",
-        "type": "dictionary",
-        "name": "ConstraintSet",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [],
-        "partial": false
-      },
-      "Constraints": {
-        "fragment": "dictionary Constraints : ConstraintSet {\n  sequence<ConstraintSet> advanced;\n};",
-        "type": "dictionary",
-        "name": "Constraints",
-        "inheritance": "ConstraintSet",
-        "members": [
-          {
-            "type": "field",
-            "name": "advanced",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ConstraintSet"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -3109,13 +3048,7 @@
         "ULongRange"
       ],
       "ConstrainBooleanParameters": [],
-      "ConstrainDOMStringParameters": [],
-      "Capabilities": [],
-      "Settings": [],
-      "ConstraintSet": [],
-      "Constraints": [
-        "ConstraintSet"
-      ]
+      "ConstrainDOMStringParameters": []
     },
     "externalDependencies": [
       "EventTarget",

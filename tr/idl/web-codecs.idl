@@ -3,7 +3,7 @@
 // (https://github.com/w3c/webref)
 // Source: WebCodecs (https://wicg.github.io/web-codecs/)
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface AudioDecoder {
   constructor(AudioDecoderInit init);
 
@@ -24,7 +24,7 @@ dictionary AudioDecoderInit {
 
 callback AudioFrameOutputCallback = undefined(AudioFrame output);
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface VideoDecoder {
   constructor(VideoDecoderInit init);
 
@@ -45,7 +45,7 @@ dictionary VideoDecoderInit {
 
 callback VideoFrameOutputCallback = undefined(VideoFrame output);
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface AudioEncoder {
   constructor(AudioEncoderInit init);
 
@@ -66,7 +66,7 @@ dictionary AudioEncoderInit {
 
 callback EncodedAudioChunkOutputCallback = undefined(EncodedAudioChunk output);
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface VideoEncoder {
   constructor(VideoEncoderInit init);
 
@@ -145,6 +145,7 @@ enum CodecState {
 
 callback WebCodecsErrorCallback = undefined(DOMException error);
 
+[Exposed=(Window,DedicatedWorker)]
 interface EncodedAudioChunk {
   constructor(EncodedAudioChunkInit init);
   readonly attribute EncodedAudioChunkType type;
@@ -163,7 +164,7 @@ enum EncodedAudioChunkType {
     "delta",
 };
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface EncodedVideoChunk {
   constructor(EncodedVideoChunkInit init);
   readonly attribute EncodedVideoChunkType type;
@@ -184,7 +185,7 @@ enum EncodedVideoChunkType {
     "delta",
 };
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface AudioFrame {
   constructor(AudioFrameInit init);
   readonly attribute unsigned long long timestamp;
@@ -197,11 +198,11 @@ dictionary AudioFrameInit {
   required AudioBuffer buffer;
 };
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface VideoFrame {
-  constructor(ImageBitmap imageBitmap, VideoFrameInit frameInit);
+  constructor(ImageBitmap imageBitmap, optional VideoFrameInit frameInit = {});
   constructor(PixelFormat pixelFormat, sequence<(Plane or PlaneInit)> planes,
-              VideoFrameInit frameInit);
+              optional VideoFrameInit frameInit = {});
 
   readonly attribute PixelFormat format;
   readonly attribute FrozenArray<Plane> planes;

@@ -79,8 +79,7 @@ dictionary SFrameTransformOptions {
 
 [Exposed=(Window,DedicatedWorker)]
 interface SFrameTransform {
-    constructor(optional SFrameTransformOptions options);
-
+    constructor(optional SFrameTransformOptions options = {});
     Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);
 };
 SFrameTransform includes GenericTransformStream;
