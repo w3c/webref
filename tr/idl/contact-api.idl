@@ -27,5 +27,5 @@ dictionary ContactsSelectOptions {
 [Exposed=(Window,SecureContext)]
 interface ContactsManager {
     Promise<sequence<ContactProperty>> getProperties();
-    Promise<sequence<ContactInfo>> select(sequence<ContactProperty> properties, optional ContactsSelectOptions options);
+    Promise<sequence<ContactInfo>> select(sequence<ContactProperty> properties, optional ContactsSelectOptions options = {});
 };

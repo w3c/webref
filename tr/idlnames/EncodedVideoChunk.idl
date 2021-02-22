@@ -1,5 +1,5 @@
 // Source: WebCodecs (https://wicg.github.io/web-codecs/)
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface EncodedVideoChunk {
   constructor(EncodedVideoChunkInit init);
   readonly attribute EncodedVideoChunkType type;

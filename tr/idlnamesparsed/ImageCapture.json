@@ -2,10 +2,10 @@
   "name": "ImageCapture",
   "defined": {
     "spec": {
-      "title": "\"MediaStream Image Capture\"",
+      "title": "MediaStream Image Capture",
       "url": "https://www.w3.org/TR/image-capture/"
     },
-    "fragment": "[Constructor(MediaStreamTrack videoTrack)]\ninterface ImageCapture {\n   Promise<Blob>              takePhoto(optional PhotoSettings photoSettings);\n   Promise<PhotoCapabilities> getPhotoCapabilities();\n   Promise<PhotoSettings>     getPhotoSettings();\n\n   Promise<ImageBitmap>       grabFrame();\n\n   readonly attribute MediaStreamTrack track;\n};",
+    "fragment": "[Exposed=Window]\ninterface ImageCapture {\n   constructor(MediaStreamTrack videoTrack);\n   Promise<Blob>              takePhoto(optional PhotoSettings photoSettings = {});\n   Promise<PhotoCapabilities> getPhotoCapabilities();\n   Promise<PhotoSettings>     getPhotoSettings();\n\n   Promise<ImageBitmap>       grabFrame();\n\n   readonly attribute MediaStreamTrack track;\n};",
     "href": "https://www.w3.org/TR/image-capture/#imagecapture"
   },
   "extended": [],

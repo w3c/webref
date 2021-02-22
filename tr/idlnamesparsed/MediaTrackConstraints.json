@@ -22,10 +22,10 @@
     "extended": [
       {
         "spec": {
-          "title": "\"MediaStream Image Capture\"",
+          "title": "MediaStream Image Capture",
           "url": "https://www.w3.org/TR/image-capture/"
         },
-        "fragment": "partial dictionary MediaTrackConstraintSet {\n  ConstrainDOMString whiteBalanceMode;\n  ConstrainDOMString exposureMode;\n  ConstrainDOMString focusMode;\n  ConstrainPoint2D   pointsOfInterest;\n\n  ConstrainDouble    exposureCompensation;\n  ConstrainDouble    colorTemperature;\n  ConstrainDouble    iso;\n\n  ConstrainDouble    brightness;\n  ConstrainDouble    contrast;\n  ConstrainDouble    saturation;\n  ConstrainDouble    sharpness;\n\n  ConstrainDouble    focusDistance;\n  ConstrainDouble    zoom;\n\n  ConstrainBoolean   torch;\n};"
+        "fragment": "partial dictionary MediaTrackConstraintSet {\n  ConstrainDOMString           whiteBalanceMode;\n  ConstrainDOMString           exposureMode;\n  ConstrainDOMString           focusMode;\n  ConstrainPoint2D             pointsOfInterest;\n\n  ConstrainDouble              exposureCompensation;\n  ConstrainDouble              exposureTime;\n  ConstrainDouble              colorTemperature;\n  ConstrainDouble              iso;\n\n  ConstrainDouble              brightness;\n  ConstrainDouble              contrast;\n  ConstrainDouble              saturation;\n  ConstrainDouble              sharpness;\n\n  ConstrainDouble              focusDistance;\n  (boolean or ConstrainDouble) pan;\n  (boolean or ConstrainDouble) tilt;\n  (boolean or ConstrainDouble) zoom;\n\n  ConstrainBoolean             torch;\n};"
       },
       {
         "spec": {

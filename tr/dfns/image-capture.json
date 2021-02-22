@@ -1,20 +1,18 @@
 {
   "spec": {
-    "title": "\"MediaStream Image Capture\"",
+    "title": "MediaStream Image Capture",
     "url": "https://www.w3.org/TR/image-capture/"
   },
   "dfns": [
     {
-      "id": "dom-imagecapture-imagecapture-videotrack-videotrack",
-      "href": "https://www.w3.org/TR/image-capture/#dom-imagecapture-imagecapture-videotrack-videotrack",
+      "id": "imagecapture",
+      "href": "https://www.w3.org/TR/image-capture/#imagecapture",
       "linkingText": [
-        "videoTrack"
+        "ImageCapture"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "ImageCapture/ImageCapture(videoTrack)"
-      ],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -25,14 +23,17 @@
       "definedIn": "pre"
     },
     {
-      "id": "imagecapture",
-      "href": "https://www.w3.org/TR/image-capture/#imagecapture",
+      "id": "dom-imagecapture-imagecapture-videotrack-videotrack",
+      "href": "https://www.w3.org/TR/image-capture/#dom-imagecapture-imagecapture-videotrack-videotrack",
       "linkingText": [
-        "ImageCapture"
+        "videoTrack"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "ImageCapture/ImageCapture(videoTrack)",
+        "ImageCapture/constructor(videoTrack)"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -87,7 +88,8 @@
       "id": "dom-imagecapture-imagecapture",
       "href": "https://www.w3.org/TR/image-capture/#dom-imagecapture-imagecapture",
       "linkingText": [
-        "ImageCapture(videoTrack)"
+        "ImageCapture(videoTrack)",
+        "constructor(videoTrack)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -185,13 +187,13 @@
       "definedIn": "dt"
     },
     {
-      "id": "photocapabilities",
-      "href": "https://www.w3.org/TR/image-capture/#photocapabilities",
+      "id": "dictdef-photocapabilities",
+      "href": "https://www.w3.org/TR/image-capture/#dictdef-photocapabilities",
       "linkingText": [
         "PhotoCapabilities"
       ],
       "localLinkingText": [],
-      "type": "interface",
+      "type": "dictionary",
       "for": [],
       "access": "public",
       "informative": false,
@@ -209,15 +211,15 @@
         "redEyeReduction"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dict-member",
       "for": [
         "PhotoCapabilities"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "photocapabilities-attributes",
-        "title": "Attributes",
+        "id": "photocapabilities-members",
+        "title": "Members",
         "number": "4.1"
       },
       "definedIn": "dt"
@@ -229,15 +231,15 @@
         "imageHeight"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dict-member",
       "for": [
         "PhotoCapabilities"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "photocapabilities-attributes",
-        "title": "Attributes",
+        "id": "photocapabilities-members",
+        "title": "Members",
         "number": "4.1"
       },
       "definedIn": "dt"
@@ -249,15 +251,15 @@
         "imageWidth"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dict-member",
       "for": [
         "PhotoCapabilities"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "photocapabilities-attributes",
-        "title": "Attributes",
+        "id": "photocapabilities-members",
+        "title": "Members",
         "number": "4.1"
       },
       "definedIn": "dt"
@@ -269,15 +271,15 @@
         "fillLightMode"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dict-member",
       "for": [
         "PhotoCapabilities"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "photocapabilities-attributes",
-        "title": "Attributes",
+        "id": "photocapabilities-members",
+        "title": "Members",
         "number": "4.1"
       },
       "definedIn": "dt"
@@ -321,10 +323,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-photosettings-imagewidth",
-      "href": "https://www.w3.org/TR/image-capture/#dom-photosettings-imagewidth",
+      "id": "dom-photosettings-imageheight",
+      "href": "https://www.w3.org/TR/image-capture/#dom-photosettings-imageheight",
       "linkingText": [
-        "imageWidth"
+        "imageHeight"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -341,10 +343,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-photosettings-imageheight",
-      "href": "https://www.w3.org/TR/image-capture/#dom-photosettings-imageheight",
+      "id": "dom-photosettings-imagewidth",
+      "href": "https://www.w3.org/TR/image-capture/#dom-photosettings-imagewidth",
       "linkingText": [
-        "imageHeight"
+        "imageWidth"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -381,13 +383,13 @@
       "definedIn": "dt"
     },
     {
-      "id": "mediasettingsrange",
-      "href": "https://www.w3.org/TR/image-capture/#mediasettingsrange",
+      "id": "dictdef-mediasettingsrange",
+      "href": "https://www.w3.org/TR/image-capture/#dictdef-mediasettingsrange",
       "linkingText": [
         "MediaSettingsRange"
       ],
       "localLinkingText": [],
-      "type": "interface",
+      "type": "dictionary",
       "for": [],
       "access": "public",
       "informative": false,
@@ -405,15 +407,15 @@
         "max"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dict-member",
       "for": [
         "MediaSettingsRange"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "mediasettingsrange-attributes",
-        "title": "Attributes",
+        "id": "mediasettingsrange-members",
+        "title": "Members",
         "number": "6.1"
       },
       "definedIn": "dt"
@@ -425,15 +427,15 @@
         "min"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dict-member",
       "for": [
         "MediaSettingsRange"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "mediasettingsrange-attributes",
-        "title": "Attributes",
+        "id": "mediasettingsrange-members",
+        "title": "Members",
         "number": "6.1"
       },
       "definedIn": "dt"
@@ -445,15 +447,15 @@
         "step"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dict-member",
       "for": [
         "MediaSettingsRange"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "mediasettingsrange-attributes",
-        "title": "Attributes",
+        "id": "mediasettingsrange-members",
+        "title": "Members",
         "number": "6.1"
       },
       "definedIn": "dt"
@@ -480,6 +482,7 @@
       "id": "dom-redeyereduction-never",
       "href": "https://www.w3.org/TR/image-capture/#dom-redeyereduction-never",
       "linkingText": [
+        "\"never\"",
         "never"
       ],
       "localLinkingText": [],
@@ -500,6 +503,7 @@
       "id": "dom-redeyereduction-always",
       "href": "https://www.w3.org/TR/image-capture/#dom-redeyereduction-always",
       "linkingText": [
+        "\"always\"",
         "always"
       ],
       "localLinkingText": [],
@@ -520,6 +524,7 @@
       "id": "dom-redeyereduction-controllable",
       "href": "https://www.w3.org/TR/image-capture/#dom-redeyereduction-controllable",
       "linkingText": [
+        "\"controllable\"",
         "controllable"
       ],
       "localLinkingText": [],
@@ -558,6 +563,7 @@
       "id": "dom-filllightmode-auto",
       "href": "https://www.w3.org/TR/image-capture/#dom-filllightmode-auto",
       "linkingText": [
+        "\"auto\"",
         "auto"
       ],
       "localLinkingText": [],
@@ -578,6 +584,7 @@
       "id": "dom-filllightmode-off",
       "href": "https://www.w3.org/TR/image-capture/#dom-filllightmode-off",
       "linkingText": [
+        "\"off\"",
         "off"
       ],
       "localLinkingText": [],
@@ -598,6 +605,7 @@
       "id": "dom-filllightmode-flash",
       "href": "https://www.w3.org/TR/image-capture/#dom-filllightmode-flash",
       "linkingText": [
+        "\"flash\"",
         "flash"
       ],
       "localLinkingText": [],
@@ -679,6 +687,26 @@
       "href": "https://www.w3.org/TR/image-capture/#dom-mediatracksupportedconstraints-exposurecompensation",
       "linkingText": [
         "exposureCompensation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-exposuretime",
+      "href": "https://www.w3.org/TR/image-capture/#dom-mediatracksupportedconstraints-exposuretime",
+      "linkingText": [
+        "exposureTime"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -795,6 +823,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-mediatracksupportedconstraints-pan",
+      "href": "https://www.w3.org/TR/image-capture/#dom-mediatracksupportedconstraints-pan",
+      "linkingText": [
+        "pan"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-mediatracksupportedconstraints-saturation",
       "href": "https://www.w3.org/TR/image-capture/#dom-mediatracksupportedconstraints-saturation",
       "linkingText": [
@@ -839,6 +887,26 @@
       "href": "https://www.w3.org/TR/image-capture/#dom-mediatracksupportedconstraints-focusdistance",
       "linkingText": [
         "focusDistance"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-tilt",
+      "href": "https://www.w3.org/TR/image-capture/#dom-mediatracksupportedconstraints-tilt",
+      "linkingText": [
+        "tilt"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -975,6 +1043,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-mediatrackcapabilities-exposuretime",
+      "href": "https://www.w3.org/TR/image-capture/#dom-mediatrackcapabilities-exposuretime",
+      "linkingText": [
+        "exposureTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-mediatrackcapabilities-iso",
       "href": "https://www.w3.org/TR/image-capture/#dom-mediatrackcapabilities-iso",
       "linkingText": [
@@ -1055,6 +1143,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-mediatrackcapabilities-pan",
+      "href": "https://www.w3.org/TR/image-capture/#dom-mediatrackcapabilities-pan",
+      "linkingText": [
+        "pan"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-mediatrackcapabilities-saturation",
       "href": "https://www.w3.org/TR/image-capture/#dom-mediatrackcapabilities-saturation",
       "linkingText": [
@@ -1099,6 +1207,26 @@
       "href": "https://www.w3.org/TR/image-capture/#dom-mediatrackcapabilities-focusdistance",
       "linkingText": [
         "focusDistance"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-tilt",
+      "href": "https://www.w3.org/TR/image-capture/#dom-mediatrackcapabilities-tilt",
+      "linkingText": [
+        "tilt"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1255,6 +1383,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-mediatrackconstraintset-exposuretime",
+      "href": "https://www.w3.org/TR/image-capture/#dom-mediatrackconstraintset-exposuretime",
+      "linkingText": [
+        "exposureTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-mediatrackconstraintset-iso",
       "href": "https://www.w3.org/TR/image-capture/#dom-mediatrackconstraintset-iso",
       "linkingText": [
@@ -1335,6 +1483,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-mediatrackconstraintset-pan",
+      "href": "https://www.w3.org/TR/image-capture/#dom-mediatrackconstraintset-pan",
+      "linkingText": [
+        "pan"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-mediatrackconstraintset-saturation",
       "href": "https://www.w3.org/TR/image-capture/#dom-mediatrackconstraintset-saturation",
       "linkingText": [
@@ -1379,6 +1547,26 @@
       "href": "https://www.w3.org/TR/image-capture/#dom-mediatrackconstraintset-focusdistance",
       "linkingText": [
         "focusDistance"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-tilt",
+      "href": "https://www.w3.org/TR/image-capture/#dom-mediatrackconstraintset-tilt",
+      "linkingText": [
+        "tilt"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1515,6 +1703,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-mediatracksettings-exposuretime",
+      "href": "https://www.w3.org/TR/image-capture/#dom-mediatracksettings-exposuretime",
+      "linkingText": [
+        "exposureTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-mediatracksettings-iso",
       "href": "https://www.w3.org/TR/image-capture/#dom-mediatracksettings-iso",
       "linkingText": [
@@ -1615,6 +1823,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-mediatracksettings-pan",
+      "href": "https://www.w3.org/TR/image-capture/#dom-mediatracksettings-pan",
+      "linkingText": [
+        "pan"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-mediatracksettings-saturation",
       "href": "https://www.w3.org/TR/image-capture/#dom-mediatracksettings-saturation",
       "linkingText": [
@@ -1659,6 +1887,26 @@
       "href": "https://www.w3.org/TR/image-capture/#dom-mediatracksettings-focusdistance",
       "linkingText": [
         "focusDistance"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-tilt",
+      "href": "https://www.w3.org/TR/image-capture/#dom-mediatracksettings-tilt",
+      "linkingText": [
+        "tilt"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1893,6 +2141,23 @@
       "definedIn": "prose"
     },
     {
+      "id": "exposure-time",
+      "href": "https://www.w3.org/TR/image-capture/#exposure-time",
+      "linkingText": [
+        "Exposure Time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "iso",
       "href": "https://www.w3.org/TR/image-capture/#iso",
       "linkingText": [
@@ -2046,6 +2311,40 @@
       "definedIn": "prose"
     },
     {
+      "id": "pan",
+      "href": "https://www.w3.org/TR/image-capture/#pan",
+      "linkingText": [
+        "Pan"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tilt",
+      "href": "https://www.w3.org/TR/image-capture/#tilt",
+      "linkingText": [
+        "Tilt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "zoom",
       "href": "https://www.w3.org/TR/image-capture/#zoom",
       "linkingText": [
@@ -2117,6 +2416,7 @@
       "id": "dom-meteringmode-none",
       "href": "https://www.w3.org/TR/image-capture/#dom-meteringmode-none",
       "linkingText": [
+        "\"none\"",
         "none"
       ],
       "localLinkingText": [],
@@ -2137,6 +2437,7 @@
       "id": "dom-meteringmode-manual",
       "href": "https://www.w3.org/TR/image-capture/#dom-meteringmode-manual",
       "linkingText": [
+        "\"manual\"",
         "manual"
       ],
       "localLinkingText": [],
@@ -2157,6 +2458,7 @@
       "id": "dom-meteringmode-single-shot",
       "href": "https://www.w3.org/TR/image-capture/#dom-meteringmode-single-shot",
       "linkingText": [
+        "\"single-shot\"",
         "single-shot"
       ],
       "localLinkingText": [],
@@ -2177,6 +2479,7 @@
       "id": "dom-meteringmode-continuous",
       "href": "https://www.w3.org/TR/image-capture/#dom-meteringmode-continuous",
       "linkingText": [
+        "\"continuous\"",
         "continuous"
       ],
       "localLinkingText": [],
@@ -2249,40 +2552,6 @@
         "number": "12.1"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "conformant-user-agent",
-      "href": "https://www.w3.org/TR/image-capture/#conformant-user-agent",
-      "linkingText": [
-        "conformant user agent"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "conformance-classes",
-        "title": "Conformance Classes"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "conformant-server",
-      "href": "https://www.w3.org/TR/image-capture/#conformant-server",
-      "linkingText": [
-        "conformant server"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "conformance-classes",
-        "title": "Conformance Classes"
-      },
-      "definedIn": "prose"
     }
   ]
 }

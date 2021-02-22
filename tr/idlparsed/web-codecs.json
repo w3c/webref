@@ -11,15 +11,17 @@
           "VideoDecoder",
           "AudioEncoder",
           "VideoEncoder",
+          "EncodedAudioChunk",
           "EncodedVideoChunk",
           "AudioFrame",
           "VideoFrame"
         ],
-        "Worker": [
+        "DedicatedWorker": [
           "AudioDecoder",
           "VideoDecoder",
           "AudioEncoder",
           "VideoEncoder",
+          "EncodedAudioChunk",
           "EncodedVideoChunk",
           "AudioFrame",
           "VideoFrame"
@@ -29,7 +31,7 @@
     },
     "idlNames": {
       "AudioDecoder": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
         "type": "interface",
         "name": "AudioDecoder",
         "inheritance": null,
@@ -216,7 +218,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "Worker"
+                  "value": "DedicatedWorker"
                 }
               ]
             },
@@ -298,7 +300,7 @@
         "extAttrs": []
       },
       "VideoDecoder": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface VideoDecoder {\n  constructor(VideoDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(VideoDecoderConfig config);\n  undefined decode(EncodedVideoChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoDecoder {\n  constructor(VideoDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(VideoDecoderConfig config);\n  undefined decode(EncodedVideoChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoDecoder",
         "inheritance": null,
@@ -485,7 +487,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "Worker"
+                  "value": "DedicatedWorker"
                 }
               ]
             },
@@ -567,7 +569,7 @@
         "extAttrs": []
       },
       "AudioEncoder": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface AudioEncoder {\n  constructor(AudioEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(AudioEncoderConfig config);\n  undefined encode(AudioFrame frame);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioEncoder {\n  constructor(AudioEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(AudioEncoderConfig config);\n  undefined encode(AudioFrame frame);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
         "type": "interface",
         "name": "AudioEncoder",
         "inheritance": null,
@@ -754,7 +756,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "Worker"
+                  "value": "DedicatedWorker"
                 }
               ]
             },
@@ -836,7 +838,7 @@
         "extAttrs": []
       },
       "VideoEncoder": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoEncoder",
         "inheritance": null,
@@ -1041,7 +1043,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "Worker"
+                  "value": "DedicatedWorker"
                 }
               ]
             },
@@ -1663,7 +1665,7 @@
         "extAttrs": []
       },
       "EncodedAudioChunk": {
-        "fragment": "interface EncodedAudioChunk {\n  constructor(EncodedAudioChunkInit init);\n  readonly attribute EncodedAudioChunkType type;\n  readonly attribute unsigned long long timestamp;  // microseconds\n  readonly attribute ArrayBuffer data;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedAudioChunk {\n  constructor(EncodedAudioChunkInit init);\n  readonly attribute EncodedAudioChunkType type;\n  readonly attribute unsigned long long timestamp;  // microseconds\n  readonly attribute ArrayBuffer data;\n};",
         "type": "interface",
         "name": "EncodedAudioChunk",
         "inheritance": null,
@@ -1736,7 +1738,24 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "EncodedAudioChunkInit": {
@@ -1811,7 +1830,7 @@
         "extAttrs": []
       },
       "EncodedVideoChunk": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface EncodedVideoChunk {\n  constructor(EncodedVideoChunkInit init);\n  readonly attribute EncodedVideoChunkType type;\n  readonly attribute unsigned long long timestamp;  // microseconds\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute ArrayBuffer data;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedVideoChunk {\n  constructor(EncodedVideoChunkInit init);\n  readonly attribute EncodedVideoChunkType type;\n  readonly attribute unsigned long long timestamp;  // microseconds\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute ArrayBuffer data;\n};",
         "type": "interface",
         "name": "EncodedVideoChunk",
         "inheritance": null,
@@ -1910,7 +1929,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "Worker"
+                  "value": "DedicatedWorker"
                 }
               ]
             },
@@ -2006,7 +2025,7 @@
         "extAttrs": []
       },
       "AudioFrame": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface AudioFrame {\n  constructor(AudioFrameInit init);\n  readonly attribute unsigned long long timestamp;\n  readonly attribute AudioBuffer? buffer;\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioFrame {\n  constructor(AudioFrameInit init);\n  readonly attribute unsigned long long timestamp;\n  readonly attribute AudioBuffer? buffer;\n  undefined close();\n};",
         "type": "interface",
         "name": "AudioFrame",
         "inheritance": null,
@@ -2090,7 +2109,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "Worker"
+                  "value": "DedicatedWorker"
                 }
               ]
             },
@@ -2140,7 +2159,7 @@
         "partial": false
       },
       "VideoFrame": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface VideoFrame {\n  constructor(ImageBitmap imageBitmap, VideoFrameInit frameInit);\n  constructor(PixelFormat pixelFormat, sequence<(Plane or PlaneInit)> planes,\n              VideoFrameInit frameInit);\n\n  readonly attribute PixelFormat format;\n  readonly attribute FrozenArray<Plane> planes;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute unsigned long cropLeft;\n  readonly attribute unsigned long cropTop;\n  readonly attribute unsigned long cropWidth;\n  readonly attribute unsigned long cropHeight;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;\n  readonly attribute unsigned long long? timestamp;\n\n  undefined destroy();\n  VideoFrame clone();\n\n  Promise<ImageBitmap> createImageBitmap(\n    optional ImageBitmapOptions options = {});\n\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoFrame {\n  constructor(ImageBitmap imageBitmap, optional VideoFrameInit frameInit = {});\n  constructor(PixelFormat pixelFormat, sequence<(Plane or PlaneInit)> planes,\n              optional VideoFrameInit frameInit = {});\n\n  readonly attribute PixelFormat format;\n  readonly attribute FrozenArray<Plane> planes;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute unsigned long cropLeft;\n  readonly attribute unsigned long cropTop;\n  readonly attribute unsigned long cropWidth;\n  readonly attribute unsigned long cropHeight;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;\n  readonly attribute unsigned long long? timestamp;\n\n  undefined destroy();\n  VideoFrame clone();\n\n  Promise<ImageBitmap> createImageBitmap(\n    optional ImageBitmapOptions options = {});\n\n};",
         "type": "interface",
         "name": "VideoFrame",
         "inheritance": null,
@@ -2176,8 +2195,10 @@
                   "union": false,
                   "idlType": "VideoFrameInit"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -2256,8 +2277,10 @@
                   "union": false,
                   "idlType": "VideoFrameInit"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -2537,7 +2560,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "Worker"
+                  "value": "DedicatedWorker"
                 }
               ]
             },
@@ -2869,15 +2892,17 @@
         "VideoDecoder",
         "AudioEncoder",
         "VideoEncoder",
+        "EncodedAudioChunk",
         "EncodedVideoChunk",
         "AudioFrame",
         "VideoFrame"
       ],
-      "Worker": [
+      "DedicatedWorker": [
         "AudioDecoder",
         "VideoDecoder",
         "AudioEncoder",
         "VideoEncoder",
+        "EncodedAudioChunk",
         "EncodedVideoChunk",
         "AudioFrame",
         "VideoFrame"

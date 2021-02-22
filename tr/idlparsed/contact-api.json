@@ -213,7 +213,7 @@
         "partial": false
       },
       "ContactsManager": {
-        "fragment": "[Exposed=(Window,SecureContext)]\ninterface ContactsManager {\n    Promise<sequence<ContactProperty>> getProperties();\n    Promise<sequence<ContactInfo>> select(sequence<ContactProperty> properties, optional ContactsSelectOptions options);\n};",
+        "fragment": "[Exposed=(Window,SecureContext)]\ninterface ContactsManager {\n    Promise<sequence<ContactProperty>> getProperties();\n    Promise<sequence<ContactInfo>> select(sequence<ContactProperty> properties, optional ContactsSelectOptions options = {});\n};",
         "type": "interface",
         "name": "ContactsManager",
         "inheritance": null,
@@ -318,7 +318,9 @@
                   "union": false,
                   "idlType": "ContactsSelectOptions"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
