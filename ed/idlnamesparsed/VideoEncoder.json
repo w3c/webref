@@ -5,7 +5,7 @@
       "title": "WebCodecs",
       "url": "https://wicg.github.io/web-codecs/"
     },
-    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<boolean> isConfigSupported(VideoEncoderConfig config);\n};",
     "href": "https://wicg.github.io/web-codecs/#videoencoder"
   },
   "extended": [],

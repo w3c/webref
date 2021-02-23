@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 22, 2021
+% February 23, 2021
 
 383 specifications were crawled in this report.
 
@@ -4257,8 +4257,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
 - [Layout Instability API](https://wicg.github.io/layout-instability/):
      * [`https://www.w3.org/TR/css-values-4/#pixel-unit`](https://www.w3.org/TR/css-values-4/#pixel-unit)
-- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html):
-     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/):
      * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
      * [`https://www.w3.org/TR/css-color-3/#foreground`](https://www.w3.org/TR/css-color-3/#foreground)
@@ -4548,7 +4546,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/):
      * [`https://www.w3.org/TR/webxr/#animationframe`](https://www.w3.org/TR/webxr/#animationframe)
 
-=> 601 problematic external links found in 143 specifications
+=> 600 problematic external links found in 142 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
