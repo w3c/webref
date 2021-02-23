@@ -31,7 +31,7 @@
     },
     "idlNames": {
       "AudioDecoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioDecoderSupport> isConfigSupported(AudioDecoderConfig config);\n};",
         "type": "interface",
         "name": "AudioDecoder",
         "inheritance": null,
@@ -205,6 +205,47 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "isConfigSupported",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AudioDecoderSupport"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "config",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AudioDecoderConfig"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
           }
         ],
         "extAttrs": [
@@ -300,7 +341,7 @@
         "extAttrs": []
       },
       "VideoDecoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoDecoder {\n  constructor(VideoDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(VideoDecoderConfig config);\n  undefined decode(EncodedVideoChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoDecoder {\n  constructor(VideoDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(VideoDecoderConfig config);\n  undefined decode(EncodedVideoChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<VideoDecoderSupport> isConfigSupported(VideoDecoderConfig config);\n};",
         "type": "interface",
         "name": "VideoDecoder",
         "inheritance": null,
@@ -474,6 +515,47 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "isConfigSupported",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "VideoDecoderSupport"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "config",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "VideoDecoderConfig"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
           }
         ],
         "extAttrs": [
@@ -569,7 +651,7 @@
         "extAttrs": []
       },
       "AudioEncoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioEncoder {\n  constructor(AudioEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(AudioEncoderConfig config);\n  undefined encode(AudioFrame frame);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioEncoder {\n  constructor(AudioEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(AudioEncoderConfig config);\n  undefined encode(AudioFrame frame);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioEncoderSupport> isConfigSupported(AudioEncoderConfig config);\n};",
         "type": "interface",
         "name": "AudioEncoder",
         "inheritance": null,
@@ -743,6 +825,47 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "isConfigSupported",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AudioEncoderSupport"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "config",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AudioEncoderConfig"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
           }
         ],
         "extAttrs": [
@@ -838,7 +961,7 @@
         "extAttrs": []
       },
       "VideoEncoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<boolean> isConfigSupported(VideoEncoderConfig config);\n};",
         "type": "interface",
         "name": "VideoEncoder",
         "inheritance": null,
@@ -1030,6 +1153,47 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "isConfigSupported",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "config",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "VideoEncoderConfig"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
           }
         ],
         "extAttrs": [
@@ -1140,6 +1304,166 @@
         ],
         "extAttrs": []
       },
+      "AudioDecoderSupport": {
+        "fragment": "dictionary AudioDecoderSupport {\n  boolean supported;\n  AudioDecoderConfig config;\n};",
+        "type": "dictionary",
+        "name": "AudioDecoderSupport",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "supported",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "config",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioDecoderConfig"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "VideoDecoderSupport": {
+        "fragment": "dictionary VideoDecoderSupport {\n  boolean supported;\n  VideoDecoderConfig config;\n};",
+        "type": "dictionary",
+        "name": "VideoDecoderSupport",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "supported",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "config",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "VideoDecoderConfig"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AudioEncoderSupport": {
+        "fragment": "dictionary AudioEncoderSupport {\n  boolean supported;\n  AudioEncoderConfig config;\n};",
+        "type": "dictionary",
+        "name": "AudioEncoderSupport",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "supported",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "config",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioEncoderConfig"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "VideoEncoderSupport": {
+        "fragment": "dictionary VideoEncoderSupport {\n  boolean supported;\n  VideoEncoderConfig config;\n};",
+        "type": "dictionary",
+        "name": "VideoEncoderSupport",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "supported",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "config",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "VideoEncoderConfig"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "AudioDecoderConfig": {
         "fragment": "dictionary AudioDecoderConfig {\n  required DOMString codec;\n  required unsigned long sampleRate;\n  required unsigned long numberOfChannels;\n  BufferSource description;\n};",
         "type": "dictionary",
@@ -1211,7 +1535,7 @@
         "partial": false
       },
       "VideoDecoderConfig": {
-        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  required unsigned long codedWidth;\n  required unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n};",
+        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  required unsigned long codedWidth;\n  required unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
         "type": "dictionary",
         "name": "VideoDecoderConfig",
         "inheritance": null,
@@ -1365,6 +1689,24 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "hardwareAcceleration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HardwareAcceleration"
+            },
+            "default": {
+              "type": "string",
+              "value": "allow"
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -1426,7 +1768,7 @@
         "partial": false
       },
       "VideoEncoderConfig": {
-        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long cropWidth;\n  required unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n\n  AvcEncoderConfig avc;\n};",
+        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long cropWidth;\n  required unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n\n  AvcEncoderConfig avc;\n};",
         "type": "dictionary",
         "name": "VideoEncoderConfig",
         "inheritance": null,
@@ -1523,6 +1865,24 @@
           },
           {
             "type": "field",
+            "name": "hardwareAcceleration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HardwareAcceleration"
+            },
+            "default": {
+              "type": "string",
+              "value": "allow"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "avc",
             "extAttrs": [],
             "idlType": {
@@ -1580,6 +1940,26 @@
           {
             "type": "enum-value",
             "value": "avc"
+          }
+        ],
+        "extAttrs": []
+      },
+      "HardwareAcceleration": {
+        "fragment": "enum HardwareAcceleration {\n  \"allow\",\n  \"deny\",\n  \"require\",\n};",
+        "type": "enum",
+        "name": "HardwareAcceleration",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "allow"
+          },
+          {
+            "type": "enum-value",
+            "value": "deny"
+          },
+          {
+            "type": "enum-value",
+            "value": "require"
           }
         ],
         "extAttrs": []
@@ -2913,7 +3293,8 @@
         "AudioDecoderInit",
         "CodecState",
         "AudioDecoderConfig",
-        "EncodedAudioChunk"
+        "EncodedAudioChunk",
+        "AudioDecoderSupport"
       ],
       "AudioDecoderInit": [
         "AudioFrameOutputCallback",
@@ -2923,7 +3304,8 @@
         "VideoDecoderInit",
         "CodecState",
         "VideoDecoderConfig",
-        "EncodedVideoChunk"
+        "EncodedVideoChunk",
+        "VideoDecoderSupport"
       ],
       "VideoDecoderInit": [
         "VideoFrameOutputCallback",
@@ -2933,7 +3315,8 @@
         "AudioEncoderInit",
         "CodecState",
         "AudioEncoderConfig",
-        "AudioFrame"
+        "AudioFrame",
+        "AudioEncoderSupport"
       ],
       "AudioEncoderInit": [
         "EncodedAudioChunkOutputCallback",
@@ -2950,10 +3333,25 @@
         "EncodedVideoChunkOutputCallback",
         "WebCodecsErrorCallback"
       ],
+      "AudioDecoderSupport": [
+        "AudioDecoderConfig"
+      ],
+      "VideoDecoderSupport": [
+        "VideoDecoderConfig"
+      ],
+      "AudioEncoderSupport": [
+        "AudioEncoderConfig"
+      ],
+      "VideoEncoderSupport": [
+        "VideoEncoderConfig"
+      ],
       "AudioDecoderConfig": [],
-      "VideoDecoderConfig": [],
+      "VideoDecoderConfig": [
+        "HardwareAcceleration"
+      ],
       "AudioEncoderConfig": [],
       "VideoEncoderConfig": [
+        "HardwareAcceleration",
         "AvcEncoderConfig"
       ],
       "AvcEncoderConfig": [
