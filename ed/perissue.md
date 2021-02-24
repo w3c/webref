@@ -3816,13 +3816,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#triggered-by-user-activation`](https://html.spec.whatwg.org/#triggered-by-user-activation)
 - [Background Fetch](https://wicg.github.io/background-fetch/):
      * [`https://fetch.spec.whatwg.org/#concept-body-transmitted`](https://fetch.spec.whatwg.org/#concept-body-transmitted)
-     * [`https://fetch.spec.whatwg.org/#concept-cancel-readablestream`](https://fetch.spec.whatwg.org/#concept-cancel-readablestream)
-     * [`https://fetch.spec.whatwg.org/#concept-readablestream-errored`](https://fetch.spec.whatwg.org/#concept-readablestream-errored)
-     * [`https://fetch.spec.whatwg.org/#concept-construct-readablestream`](https://fetch.spec.whatwg.org/#concept-construct-readablestream)
-     * [`https://fetch.spec.whatwg.org/#concept-enqueue-readablestream`](https://fetch.spec.whatwg.org/#concept-enqueue-readablestream)
-     * [`https://fetch.spec.whatwg.org/#concept-readablestream-closed`](https://fetch.spec.whatwg.org/#concept-readablestream-closed)
      * [`https://fetch.spec.whatwg.org/#concept-body-wait`](https://fetch.spec.whatwg.org/#concept-body-wait)
-     * [`https://fetch.spec.whatwg.org/#concept-readablestream-readable`](https://fetch.spec.whatwg.org/#concept-readablestream-readable)
 - [Badging API](https://w3c.github.io/badging/):
      * [`https://www.w3.org/TR/appmanifest/#dfn-within-scope-manifest`](https://www.w3.org/TR/appmanifest/#dfn-within-scope-manifest)
 - [Battery Status API](https://w3c.github.io/battery/):
@@ -4552,7 +4546,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://fetch.spec.whatwg.org/#concept-body-transmitted`](https://fetch.spec.whatwg.org/#concept-body-transmitted)
 
-=> 604 problematic external links found in 143 specifications
+=> 598 problematic external links found in 143 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

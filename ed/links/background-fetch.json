@@ -88,7 +88,6 @@
       "concept-request",
       "concept-request-url",
       "concept-request-client",
-      "request-keepalive-flag",
       "request-service-workers-mode",
       "concept-request-destination",
       "concept-request-mode",
@@ -96,19 +95,15 @@
       "concept-request-method",
       "concept-response",
       "concept-request-add-range-header",
-      "process-request-body",
       "concept-request-body",
       "concept-body-transmitted",
-      "process-response",
       "concept-network-error",
       "concept-aborted-network-error",
       "concept-response-status",
       "concept-fetch-terminate",
       "concept-response-body",
       "concept-body-stream",
-      "concept-cancel-readablestream",
       "ok-status",
-      "concept-readablestream-errored",
       "concept-response-header-list",
       "header-list-contains",
       "concept-header-list-combine",
@@ -120,9 +115,6 @@
       "request-headers",
       "headers",
       "concept-request-header-list",
-      "concept-construct-readablestream",
-      "concept-enqueue-readablestream",
-      "concept-readablestream-closed",
       "concept-header-list-delete",
       "concept-body",
       "response",
@@ -130,7 +122,6 @@
       "response-headers",
       "requestinfo",
       "concept-body-wait",
-      "concept-readablestream-readable",
       "concept-body-total-bytes"
     ],
     "https://github.com/w3c/manifest/pull/710": [],
@@ -143,6 +134,14 @@
     "https://github.com/w3c/ServiceWorker/pull/1348": [],
     "https://github.com/whatwg/fetch/issues/536": [
       "issuecomment-330184276"
+    ],
+    "https://streams.spec.whatwg.org/": [
+      "readablestream-cancel",
+      "readablestream-errored",
+      "readablestream-enqueue",
+      "readablestream-close",
+      "readablestream-error",
+      "readablestream-readable"
     ],
     "https://tc39.github.io/ecma262/": [
       "realm"
@@ -158,15 +157,16 @@
       "resolve",
       "reject",
       "Exposed",
+      "idl-promise",
       "idl-DOMString",
+      "idl-sequence",
       "idl-unsigned-long-long",
       "a-promise-rejected-with",
       "notallowederror",
       "quotaexceedederror",
       "idl-boolean",
       "dfn-perform-steps-once-promise-is-settled",
-      "invalidstateerror",
-      "idl-promise"
+      "invalidstateerror"
     ],
     "https://tools.ietf.org/html/rfc7230": [
       "section-7"

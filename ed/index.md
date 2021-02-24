@@ -359,7 +359,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
 - Crawled URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
-- Crawled version: 3 June 2020
+- Crawled version: 24 February 2021
 - Editor's Draft: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
 - Shortname: background-fetch
 
@@ -387,13 +387,7 @@ Informative references to this spec from:
      * [`https://w3c.github.io/webdriver/#dfn-success`](https://w3c.github.io/webdriver/#dfn-success)
 - Broken external links:
      * [`https://fetch.spec.whatwg.org/#concept-body-transmitted`](https://fetch.spec.whatwg.org/#concept-body-transmitted)
-     * [`https://fetch.spec.whatwg.org/#concept-cancel-readablestream`](https://fetch.spec.whatwg.org/#concept-cancel-readablestream)
-     * [`https://fetch.spec.whatwg.org/#concept-readablestream-errored`](https://fetch.spec.whatwg.org/#concept-readablestream-errored)
-     * [`https://fetch.spec.whatwg.org/#concept-construct-readablestream`](https://fetch.spec.whatwg.org/#concept-construct-readablestream)
-     * [`https://fetch.spec.whatwg.org/#concept-enqueue-readablestream`](https://fetch.spec.whatwg.org/#concept-enqueue-readablestream)
-     * [`https://fetch.spec.whatwg.org/#concept-readablestream-closed`](https://fetch.spec.whatwg.org/#concept-readablestream-closed)
      * [`https://fetch.spec.whatwg.org/#concept-body-wait`](https://fetch.spec.whatwg.org/#concept-body-wait)
-     * [`https://fetch.spec.whatwg.org/#concept-readablestream-readable`](https://fetch.spec.whatwg.org/#concept-readablestream-readable)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7822,7 +7816,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 23 February 2021
+- Crawled version: 24 February 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -9418,7 +9412,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
 - Crawled URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
-- Crawled version: 11 February 2021
+- Crawled version: 24 February 2021
 - Editor's Draft: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
 - Shortname: layout-instability
 
@@ -11740,7 +11734,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/reporting-1/](https://www.w3.org/TR/reporting-1/)
 - Crawled URL: [https://w3c.github.io/reporting/](https://w3c.github.io/reporting/)
-- Crawled version: 17 February 2021
+- Crawled version: 24 February 2021
 - Editor's Draft: [https://w3c.github.io/reporting/](https://w3c.github.io/reporting/)
 - Latest published version: [https://www.w3.org/TR/reporting-1/](https://www.w3.org/TR/reporting-1/)
 - Shortname: reporting-1
@@ -12659,6 +12653,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Compression Streams](https://wicg.github.io/compression/)
 - [CSS Parser API](https://wicg.github.io/css-parser-api/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -16333,7 +16328,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Crawled URL: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
-- Crawled version: 22 February 2021
+- Crawled version: 24 February 2021
 - Editor's Draft: [https://wicg.github.io/webusb/](https://wicg.github.io/webusb/)
 - Shortname: webusb
 
