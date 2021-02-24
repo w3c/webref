@@ -3815,11 +3815,13 @@ Links in the body of a specification should be to the same document as that poin
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/):
      * [`https://html.spec.whatwg.org/#triggered-by-user-activation`](https://html.spec.whatwg.org/#triggered-by-user-activation)
 - [Background Fetch](https://wicg.github.io/background-fetch/):
+     * [`https://fetch.spec.whatwg.org/#concept-body-transmitted`](https://fetch.spec.whatwg.org/#concept-body-transmitted)
      * [`https://fetch.spec.whatwg.org/#concept-cancel-readablestream`](https://fetch.spec.whatwg.org/#concept-cancel-readablestream)
      * [`https://fetch.spec.whatwg.org/#concept-readablestream-errored`](https://fetch.spec.whatwg.org/#concept-readablestream-errored)
      * [`https://fetch.spec.whatwg.org/#concept-construct-readablestream`](https://fetch.spec.whatwg.org/#concept-construct-readablestream)
      * [`https://fetch.spec.whatwg.org/#concept-enqueue-readablestream`](https://fetch.spec.whatwg.org/#concept-enqueue-readablestream)
      * [`https://fetch.spec.whatwg.org/#concept-readablestream-closed`](https://fetch.spec.whatwg.org/#concept-readablestream-closed)
+     * [`https://fetch.spec.whatwg.org/#concept-body-wait`](https://fetch.spec.whatwg.org/#concept-body-wait)
      * [`https://fetch.spec.whatwg.org/#concept-readablestream-readable`](https://fetch.spec.whatwg.org/#concept-readablestream-readable)
 - [Badging API](https://w3c.github.io/badging/):
      * [`https://www.w3.org/TR/appmanifest/#dfn-within-scope-manifest`](https://www.w3.org/TR/appmanifest/#dfn-within-scope-manifest)
@@ -4318,6 +4320,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/reporting-1/#visible-to-reporting-observers`](https://www.w3.org/TR/reporting-1/#visible-to-reporting-observers)
      * [`https://url.spec.whatwg.org/#concept-URL`](https://url.spec.whatwg.org/#concept-URL)
 - [Origin Policy](https://wicg.github.io/origin-policy/):
+     * [`https://fetch.spec.whatwg.org/#concept-body-wait`](https://fetch.spec.whatwg.org/#concept-body-wait)
      * [`https://wicg.github.io/feature-policy/#serialized-feature-policy`](https://wicg.github.io/feature-policy/#serialized-feature-policy)
      * [`https://wicg.github.io/feature-policy/#feature-policy-header`](https://wicg.github.io/feature-policy/#feature-policy-header)
      * [`https://infra.spec.whatwg.org/#parse-json-into-infra-values`](https://infra.spec.whatwg.org/#parse-json-into-infra-values)
@@ -4546,8 +4549,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/):
      * [`https://www.w3.org/TR/webxr/#animationframe`](https://www.w3.org/TR/webxr/#animationframe)
+- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
+     * [`https://fetch.spec.whatwg.org/#concept-body-transmitted`](https://fetch.spec.whatwg.org/#concept-body-transmitted)
 
-=> 600 problematic external links found in 142 specifications
+=> 604 problematic external links found in 143 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
