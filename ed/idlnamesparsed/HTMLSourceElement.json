@@ -5,7 +5,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Exposed=Window]\ninterface HTMLSourceElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute USVString srcset;\n  [CEReactions] attribute DOMString sizes;\n  [CEReactions] attribute DOMString media;\n};",
+    "fragment": "[Exposed=Window]\ninterface HTMLSourceElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute USVString srcset;\n  [CEReactions] attribute DOMString sizes;\n  [CEReactions] attribute DOMString media;\n  [CEReactions] attribute unsigned long width;\n  [CEReactions] attribute unsigned long height;\n};",
     "href": "https://html.spec.whatwg.org/multipage/embedded-content.html#htmlsourceelement"
   },
   "extended": [],
