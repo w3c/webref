@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 25, 2021
+% February 26, 2021
 
 383 specifications were crawled in this report.
 
@@ -3948,6 +3948,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css3-transitions/#animtype-simple-list`](https://www.w3.org/TR/css3-transitions/#animtype-simple-list)
      * [`https://www.w3.org/TR/css3-transitions/#animtype-lpcalc`](https://www.w3.org/TR/css3-transitions/#animtype-lpcalc)
      * [`https://www.w3.org/TR/css-box-3/#the-css-box-model`](https://www.w3.org/TR/css-box-3/#the-css-box-model)
+     * [`https://drafts.csswg.org/css-color-5/#typedef-alpha-value`](https://drafts.csswg.org/css-color-5/#typedef-alpha-value)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/):
      * [`https://www.w3.org/TR/css-shapes-1/#typedef-fill-rule`](https://www.w3.org/TR/css-shapes-1/#typedef-fill-rule)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/):
@@ -4547,7 +4548,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://fetch.spec.whatwg.org/#concept-body-transmitted`](https://fetch.spec.whatwg.org/#concept-body-transmitted)
 
-=> 598 problematic external links found in 143 specifications
+=> 599 problematic external links found in 143 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
