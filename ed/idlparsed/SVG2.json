@@ -3856,39 +3856,13 @@
         "partial": false
       },
       "ShadowAnimation": {
-        "fragment": "[Constructor(Animation source, Animatable newTarget), Exposed=Window]\ninterface ShadowAnimation : Animation {\n  [SameObject] readonly attribute Animation sourceAnimation;\n};",
+        "fragment": "[Exposed=Window]\ninterface ShadowAnimation : Animation {\n  constructor(Animation source, Animatable newTarget);\n  [SameObject] readonly attribute Animation sourceAnimation;\n};",
         "type": "interface",
         "name": "ShadowAnimation",
         "inheritance": "Animation",
         "members": [
           {
-            "type": "attribute",
-            "name": "sourceAnimation",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "Animation"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
+            "type": "constructor",
             "arguments": [
               {
                 "type": "argument",
@@ -3922,8 +3896,33 @@
                 "optional": false,
                 "variadic": false
               }
-            ]
+            ],
+            "extAttrs": []
           },
+          {
+            "type": "attribute",
+            "name": "sourceAnimation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Animation"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
           {
             "type": "extended-attribute",
             "name": "Exposed",
