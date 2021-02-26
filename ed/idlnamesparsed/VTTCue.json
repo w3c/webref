@@ -5,7 +5,7 @@
       "title": "WebVTT: The Web Video Text Tracks Format",
       "url": "https://www.w3.org/TR/webvtt1/"
     },
-    "fragment": "[Exposed=Window,\n Constructor(double startTime, double endTime, DOMString text)]\ninterface VTTCue : TextTrackCue {\n  attribute VTTRegion? region;\n  attribute DirectionSetting vertical;\n  attribute boolean snapToLines;\n  attribute LineAndPositionSetting line;\n  attribute LineAlignSetting lineAlign;\n  attribute LineAndPositionSetting position;\n  attribute PositionAlignSetting positionAlign;\n  attribute double size;\n  attribute AlignSetting align;\n  attribute DOMString text;\n  DocumentFragment getCueAsHTML();\n};",
+    "fragment": "[Exposed=Window]\ninterface VTTCue : TextTrackCue {\n  constructor(double startTime, double endTime, DOMString text);\n  attribute VTTRegion? region;\n  attribute DirectionSetting vertical;\n  attribute boolean snapToLines;\n  attribute LineAndPositionSetting line;\n  attribute LineAlignSetting lineAlign;\n  attribute LineAndPositionSetting position;\n  attribute PositionAlignSetting positionAlign;\n  attribute double size;\n  attribute AlignSetting align;\n  attribute DOMString text;\n  DocumentFragment getCueAsHTML();\n};",
     "href": "https://w3c.github.io/webvtt/#vttcue"
   },
   "extended": [],
