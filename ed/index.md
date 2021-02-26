@@ -2289,6 +2289,7 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
+- [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
@@ -2315,6 +2316,7 @@ Informative references to this spec from:
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
+- [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
@@ -2337,13 +2339,16 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
+- [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 
 Informative references to this spec from:
 
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 
 ## CSS Conditional Rules Module Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
@@ -2912,6 +2917,7 @@ Normative references to this spec from:
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
 
@@ -3293,7 +3299,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Crawled URL: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
-- Crawled version: 17 February 2021
+- Crawled version: 25 February 2021
 - Editor's Draft: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
 - Latest published version: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Shortname: css-grid-2
@@ -4089,6 +4095,7 @@ Normative references to this spec from:
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
 
@@ -4827,7 +4834,6 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css3-transitions/#animtype-simple-list`](https://www.w3.org/TR/css3-transitions/#animtype-simple-list)
      * [`https://www.w3.org/TR/css3-transitions/#animtype-lpcalc`](https://www.w3.org/TR/css3-transitions/#animtype-lpcalc)
      * [`https://www.w3.org/TR/css-box-3/#the-css-box-model`](https://www.w3.org/TR/css-box-3/#the-css-box-model)
-     * [`https://drafts.csswg.org/css-color-5/#typedef-alpha-value`](https://drafts.csswg.org/css-color-5/#typedef-alpha-value)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - External links that use a dated URL:
@@ -5172,7 +5178,6 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
 
@@ -5230,6 +5235,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
 
@@ -5759,6 +5765,7 @@ Normative references to this spec from:
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebDriver](https://w3c.github.io/webdriver/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
 
@@ -5898,6 +5905,7 @@ Normative references to this spec from:
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
 
@@ -9974,7 +9982,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
-- Crawled version: 21 February 2021
+- Crawled version: 25 February 2021
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Shortname: mediaqueries-5
@@ -9985,6 +9993,7 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-values-4/#relative-length`](https://drafts.csswg.org/css-values-4/#relative-length)
      * [`https://drafts.csswg.org/cssom-view-1/#page-zoom`](https://drafts.csswg.org/cssom-view-1/#page-zoom)
      * [`https://drafts.csswg.org/cssom-view-1/#pinch-zoom`](https://drafts.csswg.org/cssom-view-1/#pinch-zoom)
+     * [`https://drafts.csswg.org/css-color-4/#css-system-colors`](https://drafts.csswg.org/css-color-4/#css-system-colors)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12455,6 +12464,7 @@ Normative references to this spec from:
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
 
 Informative references to this spec from:
@@ -16355,7 +16365,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webvtt1/](https://www.w3.org/TR/webvtt1/)
 - Crawled URL: [https://w3c.github.io/webvtt/](https://w3c.github.io/webvtt/)
-- Crawled version: 30 March 2018
+- Crawled version: 25 February 2021
 - Editor's Draft: [https://w3c.github.io/webvtt/](https://w3c.github.io/webvtt/)
 - Latest published version: [https://www.w3.org/TR/webvtt1/](https://www.w3.org/TR/webvtt1/)
 - Shortname: webvtt1
@@ -16398,12 +16408,9 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-alternate-flag`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-alternate-flag)
      * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag)
      * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-css-rules`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-css-rules)
-- External links that neither target definitions nor headings:
-     * [`https://html.spec.whatwg.org/#case-sensitive`](https://html.spec.whatwg.org/#case-sensitive)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#skip-whitespace`](https://html.spec.whatwg.org/#skip-whitespace)
      * [`https://html.spec.whatwg.org/#rules-for-extracting-the-chapter-title`](https://html.spec.whatwg.org/#rules-for-extracting-the-chapter-title)
-     * [`https://dom.spec.whatwg.org/#dom-node-namespaceuri`](https://dom.spec.whatwg.org/#dom-node-namespaceuri)
      * [`https://drafts.csswg.org/selectors-3/#sel-before`](https://drafts.csswg.org/selectors-3/#sel-before)
      * [`https://drafts.csswg.org/selectors-3/#sel-after`](https://drafts.csswg.org/selectors-3/#sel-after)
 
@@ -16636,6 +16643,8 @@ No informative reference to this spec from other specs.
      * [`https://immersive-web.github.io/webxr/#xrsession-animation-frame`](https://immersive-web.github.io/webxr/#xrsession-animation-frame)
      * [`https://immersive-web.github.io/webxr/#explicit-consent`](https://immersive-web.github.io/webxr/#explicit-consent)
      * [`https://heycam.github.io/webidl/#value-pair`](https://heycam.github.io/webidl/#value-pair)
+- Broken external links:
+     * [`https://drafts.csswg.org/mediaqueries-5/#media-prefers-color-scheme-active`](https://drafts.csswg.org/mediaqueries-5/#media-prefers-color-scheme-active)
 
 ### Known dependencies on this specification {.dependencies}
 
