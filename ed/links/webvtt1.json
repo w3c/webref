@@ -31,7 +31,6 @@
       "text-track-cue-identifier",
       "text-track-cue-pause-on-exit-flag",
       "split-a-string-on-spaces",
-      "case-sensitive",
       "rules-for-parsing-floating-point-number-values",
       "skip-whitespace",
       "text-track-cue-start-time",
@@ -86,7 +85,7 @@
       "propdef-background",
       "propdef-background-image"
     ],
-    "https://drafts.csswg.org/css-cascade-4/": [
+    "https://drafts.csswg.org/css-cascade-5/": [
       "cascade",
       "at-ruledef-import"
     ],
@@ -117,7 +116,6 @@
       "dom-characterdata-data",
       "processinginstruction",
       "dom-processinginstruction-target",
-      "dom-node-namespaceuri",
       "dom-node-ownerdocument"
     ],
     "https://drafts.csswg.org/css-values-4/": [
@@ -129,7 +127,9 @@
       "propdef-transition-duration"
     ],
     "https://drafts.csswg.org/css-sizing-3/": [
-      "valdef-width-auto"
+      "valdef-width-auto",
+      "propdef-width",
+      "propdef-height"
     ],
     "https://drafts.csswg.org/selectors-4/": [
       "originating-element",
@@ -138,8 +138,7 @@
       "id-selector",
       "type-selector",
       "class-selector",
-      "attribute-selector",
-      "lang-pseudo"
+      "attribute-selector"
     ],
     "https://drafts.csswg.org/css-display-3/": [
       "propdef-display",
@@ -158,13 +157,6 @@
       "propdef-left",
       "valdef-position-relative"
     ],
-    "https://drafts.csswg.org/css2/visudet.html": [
-      "propdef-width",
-      "propdef-height",
-      "propdef-min-height",
-      "propdef-max-height",
-      "propdef-line-height"
-    ],
     "https://drafts.csswg.org/css-text-3/": [
       "propdef-overflow-wrap",
       "valdef-overflow-wrap-break-word",
@@ -174,8 +166,12 @@
       "valdef-text-align-end",
       "valdef-text-align-left",
       "valdef-text-align-right",
-      "propdef-white-space",
       "valdef-white-space-pre-line"
+    ],
+    "https://drafts.csswg.org/css-text-4/": [
+      "propdef-text-wrap",
+      "valdef-text-wrap-balance",
+      "propdef-white-space"
     ],
     "https://drafts.csswg.org/css-fonts-3/": [
       "propdef-font",
@@ -186,9 +182,15 @@
       "valdef-font-style-italic",
       "valdef-font-weight-bold"
     ],
-    "https://drafts.csswg.org/css-text-decor-3/": [
+    "https://drafts.csswg.org/css-text-decor-4/": [
       "propdef-text-decoration",
       "propdef-text-shadow"
+    ],
+    "https://drafts.csswg.org/css2/": [
+      "valdef-text-decoration-underline",
+      "selectordef-lang",
+      "propdef-line-height",
+      "propdef-visibility"
     ],
     "https://drafts.csswg.org/css-overflow-3/": [
       "propdef-overflow",
@@ -196,14 +198,11 @@
     ],
     "https://drafts.csswg.org/css-flexbox-1/": [
       "valdef-display-inline-flex",
-      "propdef-flex-flow",
-      "valdef-justify-content-flex-end"
+      "propdef-flex-flow"
     ],
     "https://drafts.csswg.org/css-align-3/": [
-      "propdef-justify-content"
-    ],
-    "https://drafts.csswg.org/css2/visufx.html": [
-      "propdef-visibility"
+      "propdef-justify-content",
+      "valdef-self-position-flex-end"
     ],
     "https://drafts.csswg.org/css-ui-4/": [
       "propdef-outline"
@@ -221,26 +220,21 @@
       "sel-after"
     ],
     "https://tools.ietf.org/html/bcp47": [],
-    "https://www.unicode.org/reports/tr9/tr9-37.html": [],
+    "https://www.unicode.org/reports/tr9/tr9-42.html": [],
     "https://drafts.csswg.org/css-align/": [],
     "https://drafts.csswg.org/css-backgrounds/": [],
     "https://drafts.csswg.org/css-cascade/": [],
     "https://drafts.csswg.org/css-color/": [],
     "https://drafts.csswg.org/css-display/": [],
-    "https://drafts.csswg.org/css-flexbox/": [],
-    "https://drafts.csswg.org/css-fonts/": [],
-    "https://drafts.csswg.org/css-overflow/": [],
     "https://drafts.csswg.org/css-position/": [],
     "https://drafts.csswg.org/css-syntax/": [],
-    "https://drafts.csswg.org/css-text-4/": [],
     "https://drafts.csswg.org/css-transitions/": [],
-    "https://drafts.csswg.org/css-values/": [],
-    "https://drafts.csswg.org/css2/": [],
-    "https://www.w3.org/TR/css-color-3/": [],
+    "https://drafts.csswg.org/css-values-3/": [],
+    "https://drafts.csswg.org/css-color-3/": [],
     "https://drafts.csswg.org/cssom/": [],
     "https://tools.ietf.org/html/rfc2119": [],
     "https://tools.ietf.org/html/rfc3629": [],
-    "https://drafts.csswg.org/selectors": [],
+    "https://drafts.csswg.org/selectors/": [],
     "https://www.w3.org/TR/media-accessibility-reqs/": [],
     "https://www.w3.org/TR/WCAG20/": []
   }
