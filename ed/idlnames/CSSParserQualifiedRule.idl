@@ -1,6 +1,7 @@
 // Source: CSS Parser API (https://wicg.github.io/css-parser-api/)
-[Constructor(sequence<CSSToken> prelude, optional sequence<CSSParserRule>? body)]
+[Exposed=Window]
 interface CSSParserQualifiedRule : CSSParserRule {
+  constructor(sequence<CSSToken> prelude, optional sequence<CSSParserRule>? body);
   readonly attribute FrozenArray<CSSParserValue> prelude;
   readonly attribute FrozenArray<CSSParserRule> body;
   stringifier;

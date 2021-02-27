@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-02-26T18:51:11.356Z",
+  "date": "2021-02-27T01:24:05.309Z",
   "stats": {
     "crawled": 383,
     "errors": 0,
@@ -559,7 +559,7 @@
     {
       "title": "ARIA in HTML",
       "shortname": "html-aria",
-      "date": "24 February 2021",
+      "date": "26 February 2021",
       "url": "https://www.w3.org/TR/html-aria/",
       "release": {
         "url": "https://www.w3.org/TR/html-aria/",
@@ -878,7 +878,7 @@
     {
       "title": "Battery Status API",
       "shortname": "battery-status",
-      "date": "25 September 2019",
+      "date": "26 February 2021",
       "url": "https://www.w3.org/TR/battery-status/",
       "release": {
         "url": "https://www.w3.org/TR/battery-status/",
@@ -905,7 +905,15 @@
           "idl": []
         },
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-permissions-policy/",
+            "ref": {
+              "name": "PERMISSIONS-POLICY",
+              "url": "https://www.w3.org/TR/permissions-policy-1/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": [
@@ -924,10 +932,7 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/secure-contexts/#secure-context",
-            "https://wicg.github.io/feature-policy/#feature-name"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -5806,7 +5811,7 @@
     {
       "title": "CSS Color Module Level 4",
       "shortname": "css-color-4",
-      "date": "25 February 2021",
+      "date": "26 February 2021",
       "url": "https://www.w3.org/TR/css-color-4/",
       "release": {
         "url": "https://www.w3.org/TR/css-color-4/",
@@ -6608,7 +6613,7 @@
     {
       "title": "CSS Custom Properties for Cascading Variables Module Level 1",
       "shortname": "css-variables-1",
-      "date": "8 February 2021",
+      "date": "26 February 2021",
       "url": "https://www.w3.org/TR/css-variables-1/",
       "release": {
         "url": "https://www.w3.org/TR/css-variables-1/",
@@ -7384,7 +7389,7 @@
     {
       "title": "CSS Exclusions Module Level 1",
       "shortname": "css3-exclusions",
-      "date": "21 February 2021",
+      "date": "26 February 2021",
       "url": "https://www.w3.org/TR/css3-exclusions/",
       "release": {
         "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -8850,7 +8855,7 @@
     {
       "title": "CSS Grid Layout Module Level 2",
       "shortname": "css-grid-2",
-      "date": "25 February 2021",
+      "date": "26 February 2021",
       "url": "https://www.w3.org/TR/css-grid-2/",
       "release": {
         "url": "https://www.w3.org/TR/css-grid-2/",
@@ -11619,7 +11624,7 @@
     {
       "title": "CSS Parser API",
       "shortname": "css-parser-api",
-      "date": "27 July 2018",
+      "date": "26 February 2021",
       "url": "https://wicg.github.io/css-parser-api/",
       "nightly": {
         "url": "https://wicg.github.io/css-parser-api/",
@@ -11883,7 +11888,7 @@
     {
       "title": "CSS Properties and Values API Level 1",
       "shortname": "css-properties-values-api-1",
-      "date": "13 October 2020",
+      "date": "26 February 2021",
       "url": "https://www.w3.org/TR/css-properties-values-api-1/",
       "release": {
         "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -11917,6 +11922,11 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://www.w3.org/TR/css-variables-1/",
+              "title": "CSS Custom Properties for Cascading Variables Module Level 1",
+              "crawled": "https://drafts.csswg.org/css-variables/"
+            },
             {
               "url": "https://www.w3.org/TR/css-paint-api-1/",
               "title": "CSS Painting API Level 1",
@@ -18121,7 +18131,7 @@
     {
       "title": "ECMAScript® 2021 Internationalization API Specification",
       "shortname": "ecma-402",
-      "date": "20 February 2021",
+      "date": "26 February 2021",
       "url": "https://tc39.es/ecma402/",
       "nightly": {
         "url": "https://tc39.es/ecma402/",
@@ -21400,7 +21410,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "25 February 2021",
+      "date": "26 February 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -38753,6 +38763,11 @@
               "crawled": "https://w3c.github.io/mediacapture-output/"
             },
             {
+              "url": "https://www.w3.org/TR/battery-status/",
+              "title": "Battery Status API",
+              "crawled": "https://w3c.github.io/battery/"
+            },
+            {
               "url": "https://wicg.github.io/client-hints-infrastructure/",
               "title": "Client Hints Infrastructure",
               "crawled": "https://wicg.github.io/client-hints-infrastructure/"
@@ -41604,11 +41619,6 @@
               "crawled": "https://w3c.github.io/webappsec-change-password-url/"
             },
             {
-              "url": "https://www.w3.org/TR/battery-status/",
-              "title": "Battery Status API",
-              "crawled": "https://w3c.github.io/battery/"
-            },
-            {
               "url": "https://wicg.github.io/contact-api/spec/",
               "title": "Contact Picker API",
               "crawled": "https://wicg.github.io/contact-api/spec/"
@@ -42508,7 +42518,7 @@
     {
       "title": "Storage Standard",
       "shortname": "storage",
-      "date": "25 February 2021",
+      "date": "26 February 2021",
       "url": "https://storage.spec.whatwg.org/",
       "nightly": {
         "url": "https://storage.spec.whatwg.org/",
@@ -45172,7 +45182,6 @@
             "https://html.spec.whatwg.org/#session-history-entry",
             "https://drafts.csswg.org/css-easing-1/#input-progress-value",
             "https://drafts.csswg.org/css-easing-1/#before-flag",
-            "https://drafts.css-houdini.org/css-properties-values-api-1/#universal-syntax-definition",
             "https://drafts.csswg.org/css-animations-2/#owning-element",
             "https://drafts.csswg.org/css-transitions-2/#owning-element",
             "https://drafts.csswg.org/css-style-attr/#style-attribute"
