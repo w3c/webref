@@ -14,7 +14,7 @@
         "title": "CSS Parser API",
         "url": "https://wicg.github.io/css-parser-api/"
       },
-      "fragment": "partial namespace CSS {\n  Promise<sequence<CSSParserRule>> parseStylesheet(CSSStringSource css, optional CSSParserOptions options);\n  Promise<sequence<CSSParserRule>> parseRuleList(CSSStringSource css, optional CSSParserOptions options);\n  Promise<CSSParserRule> parseRule(CSSStringSource css, optional CSSParserOptions options);\n  Promise<sequence<CSSParserRule>> parseDeclarationList(CSSStringSource css, optional CSSParserOptions options);\n  CSSParserDeclaration parseDeclaration(DOMString css, optional CSSParserOptions options);\n  CSSToken parseValue(DOMString css);\n  sequence<CSSToken> parseValueList(DOMString css);\n  sequence<sequence<CSSToken>> parseCommaValueList(DOMString css);\n};"
+      "fragment": "partial namespace CSS {\n  Promise<sequence<CSSParserRule>> parseStylesheet(CSSStringSource css, optional CSSParserOptions options = {});\n  Promise<sequence<CSSParserRule>> parseRuleList(CSSStringSource css, optional CSSParserOptions options = {});\n  Promise<CSSParserRule> parseRule(CSSStringSource css, optional CSSParserOptions options = {});\n  Promise<sequence<CSSParserRule>> parseDeclarationList(CSSStringSource css, optional CSSParserOptions options = {});\n  CSSParserDeclaration parseDeclaration(DOMString css, optional CSSParserOptions options = {});\n  CSSToken parseValue(DOMString css);\n  sequence<CSSToken> parseValueList(DOMString css);\n  sequence<sequence<CSSToken>> parseCommaValueList(DOMString css);\n};"
     },
     {
       "spec": {
