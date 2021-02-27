@@ -12,11 +12,11 @@ interface Highlight {
 };
 
 partial namespace CSS {
-  readonly attribute HighlightRegistry highlights;
+  readonly attribute HighlightsRegister highlights;
 };
 
 [Exposed=Window]
-interface HighlightRegistry {
+interface HighlightsRegister {
   setlike<Highlight>;
-  HighlightRegistry add(Highlight value);
+  HighlightsRegister add(Highlight value);
 };

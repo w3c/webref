@@ -12,7 +12,7 @@
       },
       "functions": {
         "Window": [
-          "HighlightRegistry"
+          "HighlightsRegister"
         ]
       }
     },
@@ -122,10 +122,10 @@
         ],
         "partial": false
       },
-      "HighlightRegistry": {
-        "fragment": "[Exposed=Window]\ninterface HighlightRegistry {\n  setlike<Highlight>;\n  HighlightRegistry add(Highlight value);\n};",
+      "HighlightsRegister": {
+        "fragment": "[Exposed=Window]\ninterface HighlightsRegister {\n  setlike<Highlight>;\n  HighlightsRegister add(Highlight value);\n};",
         "type": "interface",
-        "name": "HighlightRegistry",
+        "name": "HighlightsRegister",
         "inheritance": null,
         "members": [
           {
@@ -154,7 +154,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "HighlightRegistry"
+              "idlType": "HighlightsRegister"
             },
             "arguments": [
               {
@@ -195,7 +195,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
-          "fragment": "partial namespace CSS {\n  readonly attribute HighlightRegistry highlights;\n};",
+          "fragment": "partial namespace CSS {\n  readonly attribute HighlightsRegister highlights;\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,
@@ -209,7 +209,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "HighlightRegistry"
+                "idlType": "HighlightsRegister"
               },
               "extAttrs": [],
               "special": "",
@@ -225,7 +225,7 @@
     "exposed": {
       "Window": [
         "Highlight",
-        "HighlightRegistry"
+        "HighlightsRegister"
       ]
     },
     "dependencies": {
@@ -234,11 +234,11 @@
         "AbstractRange"
       ],
       "CSS": [
-        "HighlightRegistry"
+        "HighlightsRegister"
       ],
-      "HighlightRegistry": [
+      "HighlightsRegister": [
         "Highlight",
-        "HighlightRegistry"
+        "HighlightsRegister"
       ]
     },
     "externalDependencies": [
