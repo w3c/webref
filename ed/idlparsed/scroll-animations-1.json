@@ -116,7 +116,7 @@
         "extAttrs": []
       },
       "ScrollTimelineOptions": {
-        "fragment": "dictionary ScrollTimelineOptions {\n  Element? source;\n  ScrollDirection orientation = \"block\";\n  sequence<ScrollTimelineOffset> scrollOffsets = [];\n  (double or ScrollTimelineAutoKeyword) timeRange = \"auto\";\n};",
+        "fragment": "dictionary ScrollTimelineOptions {\n  Element? source;\n  ScrollDirection orientation = \"block\";\n  ScrollTimelineOffset start = \"auto\";\n  ScrollTimelineOffset end = \"auto\";\n  (double or ScrollTimelineAutoKeyword) timeRange = \"auto\";\n};",
         "type": "dictionary",
         "name": "ScrollTimelineOptions",
         "inheritance": null,
@@ -156,28 +156,37 @@
           },
           {
             "type": "field",
-            "name": "scrollOffsets",
+            "name": "start",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "sequence",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ScrollTimelineOffset"
-                }
-              ]
+              "idlType": "ScrollTimelineOffset"
             },
             "default": {
-              "type": "sequence",
-              "value": []
+              "type": "string",
+              "value": "auto"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "end",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ScrollTimelineOffset"
+            },
+            "default": {
+              "type": "string",
+              "value": "auto"
             },
             "required": false
           },
@@ -221,7 +230,7 @@
         "partial": false
       },
       "ScrollTimeline": {
-        "fragment": "[Exposed=Window]\ninterface ScrollTimeline : AnimationTimeline {\n  constructor(optional ScrollTimelineOptions options = {});\n  readonly attribute Element? source;\n  readonly attribute ScrollDirection orientation;\n  readonly attribute FrozenArray<ScrollTimelineOffset> scrollOffsets;\n  readonly attribute (double or ScrollTimelineAutoKeyword) timeRange;\n};",
+        "fragment": "[Exposed=Window]\ninterface ScrollTimeline : AnimationTimeline {\n  constructor(optional ScrollTimelineOptions options = {});\n  readonly attribute Element? source;\n  readonly attribute ScrollDirection orientation;\n  readonly attribute ScrollTimelineOffset start;\n  readonly attribute ScrollTimelineOffset end;\n  readonly attribute (double or ScrollTimelineAutoKeyword) timeRange;\n};",
         "type": "interface",
         "name": "ScrollTimeline",
         "inheritance": "AnimationTimeline",
@@ -282,23 +291,29 @@
           },
           {
             "type": "attribute",
-            "name": "scrollOffsets",
+            "name": "start",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ScrollTimelineOffset"
-                }
-              ]
+              "idlType": "ScrollTimelineOffset"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "end",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ScrollTimelineOffset"
             },
             "extAttrs": [],
             "special": "",
@@ -428,7 +443,7 @@
         "partial": false
       },
       "CSSScrollTimelineRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSScrollTimelineRule : CSSRule {\n    readonly attribute CSSOMString name;\n    readonly attribute CSSOMString source;\n    readonly attribute CSSOMString orientation;\n    readonly attribute CSSOMString scrollOffsets;\n    readonly attribute CSSOMString timeRange;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSScrollTimelineRule : CSSRule {\n    readonly attribute CSSOMString name;\n    readonly attribute CSSOMString source;\n    readonly attribute CSSOMString orientation;\n    readonly attribute CSSOMString start;\n    readonly attribute CSSOMString end;\n    readonly attribute CSSOMString timeRange;\n};",
         "type": "interface",
         "name": "CSSScrollTimelineRule",
         "inheritance": "CSSRule",
@@ -480,7 +495,22 @@
           },
           {
             "type": "attribute",
-            "name": "scrollOffsets",
+            "name": "start",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "end",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],

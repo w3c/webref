@@ -201,10 +201,7 @@
       "value": "[<age>? <gender> <integer>?]"
     },
     "<age>": {
-      "prose": "Possible values are child, young and old, indicating the preferred age category to match during voice selection. Note: A recommended mapping with [SSML] ages is: child = 6 y/o, young = 24 y/o, old = 75 y/o. More flexible age ranges may be used by the processor-dependent voice-matching algorithm."
-    },
-    "<gender>": {
-      "prose": "One of the keywords male, female, or neutral, specifying a male, female, or neutral voice, respectively. Note: The interpretation of the relationship between a person’s age or gender, and a recognizable type of voice, cannot realistically be defined in a universal manner as it effectively depends on numerous criteria (cultural, linguistic, biological, etc.). The functionality provided by this specification therefore represent a simplified model that can be reasonably applied to a broad variety of speech contexts, albeit at the cost of a certain degree of approximation. Future versions of this specification may refine the level of precision of the voice-matching algorithm, as speech processor implementations become more standardized."
+      "prose": "Possible values are child, young and old, indicating the preferred age category to match during voice selection. Note: A recommended mapping with [SSML] ages is: child = 6 y/o, young = 24 y/o, old = 75 y/o. More flexible age ranges may be used by the processor-dependent voice-matching algorithm. <gender>"
     }
   }
 }

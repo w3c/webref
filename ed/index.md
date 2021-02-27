@@ -1131,7 +1131,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/CSS21/](https://www.w3.org/TR/CSS21/)
 - Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Crawled version: 21 February 2021
+- Crawled version: 9 November 2020
 - Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
 - Latest published version: [https://www.w3.org/TR/CSS21/](https://www.w3.org/TR/CSS21/)
 - Shortname: CSS21
@@ -1147,6 +1147,8 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/), related reference "CSS20" uses URL [`https://www.w3.org/TR/1998/REC-CSS2-19980512/`](https://www.w3.org/TR/1998/REC-CSS2-19980512/)
      * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/), related reference "CSS20" uses URL [`https://www.w3.org/TR/1998/REC-CSS2-19980512/`](https://www.w3.org/TR/1998/REC-CSS2-19980512/)
      * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/), related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
+- Broken external links:
+     * [`https://drafts.csswg.org/css-color-5/#valdef-rgb-b`](https://drafts.csswg.org/css-color-5/#valdef-rgb-b)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/)
      * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/)
@@ -1269,7 +1271,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
 - Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Crawled version: 21 February 2021
+- Crawled version: 9 November 2020
 - Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
 - Latest published version: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
 - Shortname: CSS22
@@ -1285,6 +1287,8 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/), related reference "CSS20" uses URL [`https://www.w3.org/TR/1998/REC-CSS2-19980512/`](https://www.w3.org/TR/1998/REC-CSS2-19980512/)
      * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/), related reference "CSS20" uses URL [`https://www.w3.org/TR/1998/REC-CSS2-19980512/`](https://www.w3.org/TR/1998/REC-CSS2-19980512/)
      * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/), related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
+- Broken external links:
+     * [`https://drafts.csswg.org/css-color-5/#valdef-rgb-b`](https://drafts.csswg.org/css-color-5/#valdef-rgb-b)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/)
      * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/)
@@ -1372,7 +1376,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-animations-1/](https://www.w3.org/TR/css-animations-1/)
 - Crawled URL: [https://drafts.csswg.org/css-animations/](https://drafts.csswg.org/css-animations/)
-- Crawled version: 7 January 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-animations/](https://drafts.csswg.org/css-animations/)
 - Latest published version: [https://www.w3.org/TR/css-animations-1/](https://www.w3.org/TR/css-animations-1/)
 - Shortname: css-animations-1
@@ -1393,6 +1397,7 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-easing-1/#output-progress-value`](https://drafts.csswg.org/css-easing-1/#output-progress-value)
      * [`https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order`](https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order)
 - Broken external links:
+     * [`https://drafts.csswg.org/css-shapes-2/#valdef-shape-to`](https://drafts.csswg.org/css-shapes-2/#valdef-shape-to)
      * [`https://www.w3.org/TR/cssom-1/#cssstyledeclaration-readonly-flag`](https://www.w3.org/TR/cssom-1/#cssstyledeclaration-readonly-flag)
 
 ### Known dependencies on this specification {.dependencies}
@@ -1433,7 +1438,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
 - Crawled URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
-- Crawled version: 21 February 2021
+- Crawled version: 16 July 2020
 - Editor's Draft: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
 - Shortname: css-animations-2
 
@@ -1545,8 +1550,6 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
@@ -1565,6 +1568,7 @@ Normative references to this spec from:
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
+- [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
@@ -1595,6 +1599,8 @@ Informative references to this spec from:
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
@@ -1609,7 +1615,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
 - Crawled URL: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
-- Crawled version: 8 February 2021
+- Crawled version: 10 March 2020
 - Editor's Draft: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
 - Shortname: css-backgrounds-4
 
@@ -1641,7 +1647,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Crawled URL: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Shortname: css-ui-4
@@ -1697,7 +1703,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
 - Crawled URL: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
-- Crawled version: 12 February 2021
+- Crawled version: 17 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-align/](https://drafts.csswg.org/css-align/)
 - Latest published version: [https://www.w3.org/TR/css-align-3/](https://www.w3.org/TR/css-align-3/)
 - Shortname: css-align-3
@@ -1735,6 +1741,7 @@ Normative references to this spec from:
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
+- [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
@@ -1886,7 +1893,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Crawled URL: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
-- Crawled version: 21 February 2021
+- Crawled version: 21 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
 - Latest published version: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Shortname: css-sizing-3
@@ -1935,7 +1942,6 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
-- [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
@@ -1964,7 +1970,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-sizing-4/](https://www.w3.org/TR/css-sizing-4/)
 - Crawled URL: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-sizing-4/](https://drafts.csswg.org/css-sizing-4/)
 - Latest published version: [https://www.w3.org/TR/css-sizing-4/](https://www.w3.org/TR/css-sizing-4/)
 - Shortname: css-sizing-4
@@ -1973,8 +1979,8 @@ Informative references to this spec from:
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
      * [`https://www.w3.org/TR/css-flexbox-1/`](https://www.w3.org/TR/css-flexbox-1/)
+     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - External links that neither target definitions nor headings:
@@ -1996,7 +2002,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-cascade-3/](https://www.w3.org/TR/css-cascade-3/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade-3/](https://drafts.csswg.org/css-cascade-3/)
-- Crawled version: 28 January 2021
+- Crawled version: 21 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-cascade-3/](https://drafts.csswg.org/css-cascade-3/)
 - Latest published version: [https://www.w3.org/TR/css-cascade-3/](https://www.w3.org/TR/css-cascade-3/)
 - Shortname: css-cascade-3
@@ -2045,7 +2051,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
-- Crawled version: 21 February 2021
+- Crawled version: 21 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
 - Latest published version: [https://www.w3.org/TR/css-cascade-4/](https://www.w3.org/TR/css-cascade-4/)
 - Shortname: css-cascade-4
@@ -2068,8 +2074,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - External links to private terms:
      * [`https://html.spec.whatwg.org/#content-type`](https://html.spec.whatwg.org/#content-type)
-- Broken external links:
-     * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
+     * [`https://html.spec.whatwg.org/#quirks-mode`](https://html.spec.whatwg.org/#quirks-mode)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/)
 
@@ -2097,7 +2102,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-cascade-5/](https://www.w3.org/TR/css-cascade-5/)
 - Crawled URL: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
-- Crawled version: 21 February 2021
+- Crawled version: 21 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-cascade/](https://drafts.csswg.org/css-cascade/)
 - Latest published version: [https://www.w3.org/TR/css-cascade-5/](https://www.w3.org/TR/css-cascade-5/)
 - Shortname: css-cascade-5
@@ -2124,8 +2129,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - External links to private terms:
      * [`https://html.spec.whatwg.org/#content-type`](https://html.spec.whatwg.org/#content-type)
-- Broken external links:
-     * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
+     * [`https://html.spec.whatwg.org/#quirks-mode`](https://html.spec.whatwg.org/#quirks-mode)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2020/WD-css-cascade-4-20200818/`](https://www.w3.org/TR/2020/WD-css-cascade-4-20200818/)
      * [`https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/`](https://www.w3.org/TR/2018/CR-css-cascade-4-20180828/)
@@ -2213,7 +2217,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-color-adjust-1/](https://www.w3.org/TR/css-color-adjust-1/)
 - Crawled URL: [https://drafts.csswg.org/css-color-adjust-1/](https://drafts.csswg.org/css-color-adjust-1/)
-- Crawled version: 21 February 2021
+- Crawled version: 16 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color-adjust-1/](https://drafts.csswg.org/css-color-adjust-1/)
 - Latest published version: [https://www.w3.org/TR/css-color-adjust-1/](https://www.w3.org/TR/css-color-adjust-1/)
 - Shortname: css-color-adjust-1
@@ -2239,6 +2243,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
+- [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 
@@ -2251,7 +2256,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 26 February 2021
+- Crawled version: 19 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -2276,8 +2281,6 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
@@ -2315,7 +2318,6 @@ Informative references to this spec from:
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
-- [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
@@ -2325,7 +2327,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 25 February 2021
+- Crawled version: 5 January 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Latest published version: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Shortname: css-color-5
@@ -2356,7 +2358,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-conditional-3/](https://www.w3.org/TR/css-conditional-3/)
 - Crawled URL: [https://drafts.csswg.org/css-conditional-3/](https://drafts.csswg.org/css-conditional-3/)
-- Crawled version: 21 February 2021
+- Crawled version: 9 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-conditional-3/](https://drafts.csswg.org/css-conditional-3/)
 - Latest published version: [https://www.w3.org/TR/css-conditional-3/](https://www.w3.org/TR/css-conditional-3/)
 - Shortname: css-conditional-3
@@ -2426,7 +2428,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Crawled URL: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
-- Crawled version: 21 February 2021
+- Crawled version: 16 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
 - Latest published version: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Shortname: css-contain-2
@@ -2473,7 +2475,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-counter-styles-3/](https://www.w3.org/TR/css-counter-styles-3/)
 - Crawled URL: [https://drafts.csswg.org/css-counter-styles/](https://drafts.csswg.org/css-counter-styles/)
-- Crawled version: 21 February 2021
+- Crawled version: 10 March 2020
 - Editor's Draft: [https://drafts.csswg.org/css-counter-styles/](https://drafts.csswg.org/css-counter-styles/)
 - Latest published version: [https://www.w3.org/TR/css-counter-styles-3/](https://www.w3.org/TR/css-counter-styles-3/)
 - Shortname: css-counter-styles-3
@@ -2494,7 +2496,6 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
-- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 
@@ -2507,7 +2508,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-highlight-api-1/](https://www.w3.org/TR/css-highlight-api-1/)
 - Crawled URL: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
-- Crawled version: 22 February 2021
+- Crawled version: 8 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
 - Latest published version: [https://www.w3.org/TR/css-highlight-api-1/](https://www.w3.org/TR/css-highlight-api-1/)
 - Shortname: css-highlight-api-1
@@ -2531,7 +2532,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
 - Crawled URL: [https://drafts.csswg.org/css-variables/](https://drafts.csswg.org/css-variables/)
-- Crawled version: 26 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-variables/](https://drafts.csswg.org/css-variables/)
 - Latest published version: [https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
 - Shortname: css-variables-1
@@ -2563,7 +2564,6 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -2580,7 +2580,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-device-adapt-1/](https://www.w3.org/TR/css-device-adapt-1/)
 - Crawled URL: [https://drafts.csswg.org/css-device-adapt/](https://drafts.csswg.org/css-device-adapt/)
-- Crawled version: 21 February 2021
+- Crawled version: 3 June 2020
 - Editor's Draft: [https://drafts.csswg.org/css-device-adapt/](https://drafts.csswg.org/css-device-adapt/)
 - Latest published version: [https://www.w3.org/TR/css-device-adapt-1/](https://www.w3.org/TR/css-device-adapt-1/)
 - Shortname: css-device-adapt-1
@@ -2617,7 +2617,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Crawled URL: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
-- Crawled version: 8 February 2021
+- Crawled version: 21 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
 - Latest published version: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Shortname: css-display-3
@@ -2724,7 +2724,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-easing-1/](https://www.w3.org/TR/css-easing-1/)
 - Crawled URL: [https://drafts.csswg.org/css-easing/](https://drafts.csswg.org/css-easing/)
-- Crawled version: 18 January 2021
+- Crawled version: 19 April 2020
 - Editor's Draft: [https://drafts.csswg.org/css-easing/](https://drafts.csswg.org/css-easing/)
 - Latest published version: [https://www.w3.org/TR/css-easing-1/](https://www.w3.org/TR/css-easing-1/)
 - Shortname: css-easing-1
@@ -2757,7 +2757,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
 - Crawled URL: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
-- Crawled version: 21 February 2021
+- Crawled version: 3 August 2018
 - Editor's Draft: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
 - Shortname: css-env-1
 
@@ -2778,7 +2778,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css3-exclusions/](https://www.w3.org/TR/css3-exclusions/)
 - Crawled URL: [https://drafts.csswg.org/css-exclusions/](https://drafts.csswg.org/css-exclusions/)
-- Crawled version: 26 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-exclusions/](https://drafts.csswg.org/css-exclusions/)
 - Latest published version: [https://www.w3.org/TR/css3-exclusions/](https://www.w3.org/TR/css3-exclusions/)
 - Shortname: css3-exclusions
@@ -2798,7 +2798,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Page Floats](https://drafts.csswg.org/css-page-floats/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [Proposals for the future of CSS Paged Media](https://drafts.csswg.org/css-page-4/)
 
 Informative references to this spec from:
@@ -2822,6 +2821,7 @@ Informative references to this spec from:
 
 - Broken external links:
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
+     * [`https://drafts.csswg.org/css-color-5/#valdef-lab-a`](https://drafts.csswg.org/css-color-5/#valdef-lab-a)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2871,7 +2871,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
 - Crawled URL: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
-- Crawled version: 21 February 2021
+- Crawled version: 6 November 2020
 - Editor's Draft: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
 - Latest published version: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
 - Shortname: css-flexbox-1
@@ -2970,7 +2970,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Crawled URL: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 5 January 2021
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Shortname: css-fonts-4
@@ -2985,7 +2985,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
      * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
-     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
      * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -2994,10 +2993,12 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/`](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/), related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
      * [`https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/`](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/), related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
 - External links to private terms:
+     * [`https://html.spec.whatwg.org/#create-a-potential-cors-request`](https://html.spec.whatwg.org/#create-a-potential-cors-request)
      * [`https://drafts.csswg.org/css-inline-3/#ascent-metric`](https://drafts.csswg.org/css-inline-3/#ascent-metric)
      * [`https://drafts.csswg.org/css-inline-3/#descent-metric`](https://drafts.csswg.org/css-inline-3/#descent-metric)
      * [`https://drafts.csswg.org/css-inline-3/#line-gap-metric`](https://drafts.csswg.org/css-inline-3/#line-gap-metric)
 - Broken external links:
+     * [`https://drafts.csswg.org/css-shapes-2/#valdef-shape-large`](https://drafts.csswg.org/css-shapes-2/#valdef-shape-large)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 
 ### Known dependencies on this specification {.dependencies}
@@ -3005,8 +3006,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
@@ -3036,6 +3035,8 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
@@ -3053,7 +3054,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-break-3/](https://www.w3.org/TR/css-break-3/)
 - Crawled URL: [https://drafts.csswg.org/css-break/](https://drafts.csswg.org/css-break/)
-- Crawled version: 6 February 2021
+- Crawled version: 7 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-break/](https://drafts.csswg.org/css-break/)
 - Latest published version: [https://www.w3.org/TR/css-break-3/](https://www.w3.org/TR/css-break-3/)
 - Shortname: css-break-3
@@ -3190,7 +3191,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-gcpm-3/](https://www.w3.org/TR/css-gcpm-3/)
 - Crawled URL: [https://drafts.csswg.org/css-gcpm/](https://drafts.csswg.org/css-gcpm/)
-- Crawled version: 8 February 2021
+- Crawled version: 11 November 2020
 - Editor's Draft: [https://drafts.csswg.org/css-gcpm/](https://drafts.csswg.org/css-gcpm/)
 - Latest published version: [https://www.w3.org/TR/css-gcpm-3/](https://www.w3.org/TR/css-gcpm-3/)
 - Shortname: css-gcpm-3
@@ -3298,7 +3299,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Crawled URL: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
-- Crawled version: 26 February 2021
+- Crawled version: 21 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
 - Latest published version: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Shortname: css-grid-2
@@ -3357,7 +3358,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
 - Crawled URL: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
-- Crawled version: 21 February 2021
+- Crawled version: 22 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
 - Shortname: css-grid-3
 
@@ -3384,7 +3385,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
 - Crawled URL: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
-- Crawled version: 25 February 2021
+- Crawled version: 16 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-images-3/](https://drafts.csswg.org/css-images-3/)
 - Latest published version: [https://www.w3.org/TR/css-images-3/](https://www.w3.org/TR/css-images-3/)
 - Shortname: css-images-3
@@ -3453,7 +3454,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Crawled URL: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 15 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
 - Latest published version: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Shortname: css-images-4
@@ -3506,7 +3507,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Crawled URL: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
-- Crawled version: 21 February 2021
+- Crawled version: 28 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
 - Latest published version: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Shortname: css-inline-3
@@ -3629,7 +3630,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-lists-3/](https://www.w3.org/TR/css-lists-3/)
 - Crawled URL: [https://drafts.csswg.org/css-lists-3/](https://drafts.csswg.org/css-lists-3/)
-- Crawled version: 8 February 2021
+- Crawled version: 30 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-lists-3/](https://drafts.csswg.org/css-lists-3/)
 - Latest published version: [https://www.w3.org/TR/css-lists-3/](https://www.w3.org/TR/css-lists-3/)
 - Shortname: css-lists-3
@@ -3676,7 +3677,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-logical-1/](https://www.w3.org/TR/css-logical-1/)
 - Crawled URL: [https://drafts.csswg.org/css-logical-1/](https://drafts.csswg.org/css-logical-1/)
-- Crawled version: 21 February 2021
+- Crawled version: 23 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-logical-1/](https://drafts.csswg.org/css-logical-1/)
 - Latest published version: [https://www.w3.org/TR/css-logical-1/](https://www.w3.org/TR/css-logical-1/)
 - Shortname: css-logical-1
@@ -3777,7 +3778,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-size-adjust-1/](https://drafts.csswg.org/css-size-adjust-1/)
 - Crawled URL: [https://drafts.csswg.org/css-size-adjust-1/](https://drafts.csswg.org/css-size-adjust-1/)
-- Crawled version: 21 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-size-adjust-1/](https://drafts.csswg.org/css-size-adjust-1/)
 - Shortname: css-size-adjust-1
 
@@ -3806,7 +3807,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
 - Crawled URL: [https://drafts.csswg.org/css-multicol/](https://drafts.csswg.org/css-multicol/)
-- Crawled version: 12 February 2021
+- Crawled version: 16 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-multicol/](https://drafts.csswg.org/css-multicol/)
 - Latest published version: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
 - Shortname: css-multicol-1
@@ -3939,7 +3940,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
 - Crawled URL: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
-- Crawled version: 18 January 2021
+- Crawled version: 8 November 2020
 - Editor's Draft: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
 - Latest published version: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
 - Shortname: cssom-1
@@ -4033,7 +4034,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Crawled URL: [https://drafts.csswg.org/css-overflow-3/](https://drafts.csswg.org/css-overflow-3/)
-- Crawled version: 21 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-overflow-3/](https://drafts.csswg.org/css-overflow-3/)
 - Latest published version: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Shortname: css-overflow-3
@@ -4109,7 +4110,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-overflow-4/](https://www.w3.org/TR/css-overflow-4/)
 - Crawled URL: [https://drafts.csswg.org/css-overflow-4/](https://drafts.csswg.org/css-overflow-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-overflow-4/](https://drafts.csswg.org/css-overflow-4/)
 - Latest published version: [https://www.w3.org/TR/css-overflow-4/](https://www.w3.org/TR/css-overflow-4/)
 - Shortname: css-overflow-4
@@ -4149,7 +4150,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-overscroll-1/](https://www.w3.org/TR/css-overscroll-1/)
 - Crawled URL: [https://drafts.csswg.org/css-overscroll-1/](https://drafts.csswg.org/css-overscroll-1/)
-- Crawled version: 8 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-overscroll-1/](https://drafts.csswg.org/css-overscroll-1/)
 - Latest published version: [https://www.w3.org/TR/css-overscroll-1/](https://www.w3.org/TR/css-overscroll-1/)
 - Shortname: css-overscroll-1
@@ -4181,7 +4182,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-page-floats-3/](https://www.w3.org/TR/css-page-floats-3/)
 - Crawled URL: [https://drafts.csswg.org/css-page-floats/](https://drafts.csswg.org/css-page-floats/)
-- Crawled version: 8 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-page-floats/](https://drafts.csswg.org/css-page-floats/)
 - Latest published version: [https://www.w3.org/TR/css-page-floats-3/](https://www.w3.org/TR/css-page-floats-3/)
 - Shortname: css-page-floats-3
@@ -4214,7 +4215,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-page-3/](https://www.w3.org/TR/css-page-3/)
 - Crawled URL: [https://drafts.csswg.org/css-page-3/](https://drafts.csswg.org/css-page-3/)
-- Crawled version: 21 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-page-3/](https://drafts.csswg.org/css-page-3/)
 - Latest published version: [https://www.w3.org/TR/css-page-3/](https://www.w3.org/TR/css-page-3/)
 - Shortname: css-page-3
@@ -4326,7 +4327,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-position-3/](https://www.w3.org/TR/css-position-3/)
 - Crawled URL: [https://drafts.csswg.org/css-position/](https://drafts.csswg.org/css-position/)
-- Crawled version: 21 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-position/](https://drafts.csswg.org/css-position/)
 - Latest published version: [https://www.w3.org/TR/css-position-3/](https://www.w3.org/TR/css-position-3/)
 - Shortname: css-position-3
@@ -4412,7 +4413,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 
@@ -4425,7 +4425,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-pseudo-4/](https://www.w3.org/TR/css-pseudo-4/)
 - Crawled URL: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 31 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
 - Latest published version: [https://www.w3.org/TR/css-pseudo-4/](https://www.w3.org/TR/css-pseudo-4/)
 - Shortname: css-pseudo-4
@@ -4483,7 +4483,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-regions-1/](https://www.w3.org/TR/css-regions-1/)
 - Crawled URL: [https://drafts.csswg.org/css-regions/](https://drafts.csswg.org/css-regions/)
-- Crawled version: 21 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-regions/](https://drafts.csswg.org/css-regions/)
 - Latest published version: [https://www.w3.org/TR/css-regions-1/](https://www.w3.org/TR/css-regions-1/)
 - Shortname: css-regions-1
@@ -4541,7 +4541,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-rhythm-1/](https://www.w3.org/TR/css-rhythm-1/)
 - Crawled URL: [https://drafts.csswg.org/css-rhythm/](https://drafts.csswg.org/css-rhythm/)
-- Crawled version: 21 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-rhythm/](https://drafts.csswg.org/css-rhythm/)
 - Latest published version: [https://www.w3.org/TR/css-rhythm-1/](https://www.w3.org/TR/css-rhythm-1/)
 - Shortname: css-rhythm-1
@@ -4572,7 +4572,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-round-display-1/](https://www.w3.org/TR/css-round-display-1/)
 - Crawled URL: [https://drafts.csswg.org/css-round-display/](https://drafts.csswg.org/css-round-display/)
-- Crawled version: 21 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-round-display/](https://drafts.csswg.org/css-round-display/)
 - Latest published version: [https://www.w3.org/TR/css-round-display-1/](https://www.w3.org/TR/css-round-display-1/)
 - Shortname: css-round-display-1
@@ -4603,7 +4603,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-ruby-1/](https://www.w3.org/TR/css-ruby-1/)
 - Crawled URL: [https://drafts.csswg.org/css-ruby-1/](https://drafts.csswg.org/css-ruby-1/)
-- Crawled version: 24 February 2021
+- Crawled version: 22 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-ruby-1/](https://drafts.csswg.org/css-ruby-1/)
 - Latest published version: [https://www.w3.org/TR/css-ruby-1/](https://www.w3.org/TR/css-ruby-1/)
 - Shortname: css-ruby-1
@@ -4617,8 +4617,6 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- External links to private terms:
-     * [`https://drafts.csswg.org/css-inline-3/#line-relative-shift-values`](https://drafts.csswg.org/css-inline-3/#line-relative-shift-values)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
@@ -4647,7 +4645,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-scoping-1/](https://www.w3.org/TR/css-scoping-1/)
 - Crawled URL: [https://drafts.csswg.org/css-scoping/](https://drafts.csswg.org/css-scoping/)
-- Crawled version: 8 February 2021
+- Crawled version: 11 November 2020
 - Editor's Draft: [https://drafts.csswg.org/css-scoping/](https://drafts.csswg.org/css-scoping/)
 - Latest published version: [https://www.w3.org/TR/css-scoping-1/](https://www.w3.org/TR/css-scoping-1/)
 - Shortname: css-scoping-1
@@ -4720,7 +4718,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-scroll-snap-1/](https://www.w3.org/TR/css-scroll-snap-1/)
 - Crawled URL: [https://drafts.csswg.org/css-scroll-snap-1/](https://drafts.csswg.org/css-scroll-snap-1/)
-- Crawled version: 21 February 2021
+- Crawled version: 16 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-scroll-snap-1/](https://drafts.csswg.org/css-scroll-snap-1/)
 - Latest published version: [https://www.w3.org/TR/css-scroll-snap-1/](https://www.w3.org/TR/css-scroll-snap-1/)
 - Shortname: css-scroll-snap-1
@@ -4865,7 +4863,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
 - Crawled URL: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
-- Crawled version: 21 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
 - Shortname: css-shapes-2
 
@@ -4877,8 +4875,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- External links to private terms:
-     * [`https://drafts.csswg.org/css-shapes-1/#reference-box`](https://drafts.csswg.org/css-shapes-1/#reference-box)
 - Broken external links:
      * [`https://www.w3.org/TR/css-shapes-1/#typedef-fill-rule`](https://www.w3.org/TR/css-shapes-1/#typedef-fill-rule)
 
@@ -4946,7 +4942,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-speech-1/](https://www.w3.org/TR/css-speech-1/)
 - Crawled URL: [https://drafts.csswg.org/css-speech-1/](https://drafts.csswg.org/css-speech-1/)
-- Crawled version: 21 February 2021
+- Crawled version: 30 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-speech-1/](https://drafts.csswg.org/css-speech-1/)
 - Latest published version: [https://www.w3.org/TR/css-speech-1/](https://www.w3.org/TR/css-speech-1/)
 - Shortname: css-speech-1
@@ -5017,7 +5013,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-syntax-3/](https://www.w3.org/TR/css-syntax-3/)
 - Crawled URL: [https://drafts.csswg.org/css-syntax/](https://drafts.csswg.org/css-syntax/)
-- Crawled version: 21 February 2021
+- Crawled version: 6 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-syntax/](https://drafts.csswg.org/css-syntax/)
 - Latest published version: [https://www.w3.org/TR/css-syntax-3/](https://www.w3.org/TR/css-syntax-3/)
 - Shortname: css-syntax-3
@@ -5102,7 +5098,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-tables-3/](https://www.w3.org/TR/css-tables-3/)
 - Crawled URL: [https://drafts.csswg.org/css-tables-3/](https://drafts.csswg.org/css-tables-3/)
-- Crawled version: 21 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-tables-3/](https://drafts.csswg.org/css-tables-3/)
 - Latest published version: [https://www.w3.org/TR/css-tables-3/](https://www.w3.org/TR/css-tables-3/)
 - Shortname: css-tables-3
@@ -5142,7 +5138,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-text-decor-3/](https://www.w3.org/TR/css-text-decor-3/)
 - Crawled URL: [https://drafts.csswg.org/css-text-decor-3/](https://drafts.csswg.org/css-text-decor-3/)
-- Crawled version: 8 February 2021
+- Crawled version: 2 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-text-decor-3/](https://drafts.csswg.org/css-text-decor-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-decor-3/](https://www.w3.org/TR/css-text-decor-3/)
 - Shortname: css-text-decor-3
@@ -5194,7 +5190,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Crawled URL: [https://drafts.csswg.org/css-text-decor-4/](https://drafts.csswg.org/css-text-decor-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 2 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-text-decor-4/](https://drafts.csswg.org/css-text-decor-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Shortname: css-text-decor-4
@@ -5225,7 +5221,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
-- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
+- [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
@@ -5239,6 +5235,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
@@ -5250,7 +5247,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Crawled URL: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
-- Crawled version: 21 February 2021
+- Crawled version: 23 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Shortname: css-text-3
@@ -5322,7 +5319,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-4/](https://www.w3.org/TR/css-text-4/)
 - Crawled URL: [https://drafts.csswg.org/css-text-4/](https://drafts.csswg.org/css-text-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 2 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-text-4/](https://drafts.csswg.org/css-text-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-4/](https://www.w3.org/TR/css-text-4/)
 - Shortname: css-text-4
@@ -5363,7 +5360,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-transforms-1/](https://www.w3.org/TR/css-transforms-1/)
 - Crawled URL: [https://drafts.csswg.org/css-transforms/](https://drafts.csswg.org/css-transforms/)
-- Crawled version: 21 February 2021
+- Crawled version: 30 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-transforms/](https://drafts.csswg.org/css-transforms/)
 - Latest published version: [https://www.w3.org/TR/css-transforms-1/](https://www.w3.org/TR/css-transforms-1/)
 - Shortname: css-transforms-1
@@ -5402,7 +5399,6 @@ Normative references to this spec from:
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
@@ -5432,7 +5428,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Crawled URL: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
-- Crawled version: 21 February 2021
+- Crawled version: 18 September 2020
 - Editor's Draft: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
 - Latest published version: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Shortname: css-transforms-2
@@ -5471,7 +5467,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-transitions-1/](https://www.w3.org/TR/css-transitions-1/)
 - Crawled URL: [https://drafts.csswg.org/css-transitions/](https://drafts.csswg.org/css-transitions/)
-- Crawled version: 8 February 2021
+- Crawled version: 9 October 2020
 - Editor's Draft: [https://drafts.csswg.org/css-transitions/](https://drafts.csswg.org/css-transitions/)
 - Latest published version: [https://www.w3.org/TR/css-transitions-1/](https://www.w3.org/TR/css-transitions-1/)
 - Shortname: css-transitions-1
@@ -5595,6 +5591,9 @@ No informative reference to this spec from other specs.
      * [`https://drafts.fxtf.org/compositing-2/#propdef-mix`](https://drafts.fxtf.org/compositing-2/#propdef-mix)
 - Broken external links:
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
+     * [`https://drafts.csswg.org/css-transforms-2/#funcdef-scale`](https://drafts.csswg.org/css-transforms-2/#funcdef-scale)
+     * [`https://drafts.csswg.org/css-transforms-2/#funcdef-scalex`](https://drafts.csswg.org/css-transforms-2/#funcdef-scalex)
+     * [`https://drafts.csswg.org/css-transforms-2/#funcdef-scaley`](https://drafts.csswg.org/css-transforms-2/#funcdef-scaley)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
      * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
@@ -5778,7 +5777,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Crawled URL: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
-- Crawled version: 2 February 2021
+- Crawled version: 11 November 2020
 - Editor's Draft: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
 - Latest published version: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Shortname: css-values-4
@@ -5949,7 +5948,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-writing-modes-4/](https://www.w3.org/TR/css-writing-modes-4/)
 - Crawled URL: [https://drafts.csswg.org/css-writing-modes-4/](https://drafts.csswg.org/css-writing-modes-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 9 December 2020
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-4/](https://drafts.csswg.org/css-writing-modes-4/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-4/](https://www.w3.org/TR/css-writing-modes-4/)
 - Shortname: css-writing-modes-4
@@ -6036,7 +6035,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/cssom-view-1/](https://www.w3.org/TR/cssom-view-1/)
 - Crawled URL: [https://drafts.csswg.org/cssom-view/](https://drafts.csswg.org/cssom-view/)
-- Crawled version: 8 February 2021
+- Crawled version: 8 November 2020
 - Editor's Draft: [https://drafts.csswg.org/cssom-view/](https://drafts.csswg.org/cssom-view/)
 - Latest published version: [https://www.w3.org/TR/cssom-view-1/](https://www.w3.org/TR/cssom-view-1/)
 - Shortname: cssom-view-1
@@ -6323,7 +6322,6 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
-- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -6642,7 +6640,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
-- Crawled version: 14 January 2021
+- Crawled version: 26 February 2021
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Shortname: encoding
@@ -8424,7 +8422,6 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-items`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-items)
      * [`https://drafts.csswg.org/css-grid/#propdef-grid-column-gap`](https://drafts.csswg.org/css-grid/#propdef-grid-column-gap)
      * [`https://drafts.csswg.org/css-grid/#propdef-grid-row-gap`](https://drafts.csswg.org/css-grid/#propdef-grid-row-gap)
-     * [`https://drafts.csswg.org/css-multicol/#propdef-column-gap`](https://drafts.csswg.org/css-multicol/#propdef-column-gap)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-cue-text`](https://w3c.github.io/webvtt/#webvtt-file-using-cue-text)
      * [`https://w3c.github.io/manifest/#dfn-manifest`](https://w3c.github.io/manifest/#dfn-manifest)
      * [`https://www.w3.org/TR/css3-color/#css2-system`](https://www.w3.org/TR/css3-color/#css2-system)
@@ -9934,7 +9931,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 30 July 2020
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Shortname: mediaqueries-4
@@ -9982,7 +9979,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
-- Crawled version: 25 February 2021
+- Crawled version: 21 November 2020
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Shortname: mediaqueries-5
@@ -9993,7 +9990,6 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-values-4/#relative-length`](https://drafts.csswg.org/css-values-4/#relative-length)
      * [`https://drafts.csswg.org/cssom-view-1/#page-zoom`](https://drafts.csswg.org/cssom-view-1/#page-zoom)
      * [`https://drafts.csswg.org/cssom-view-1/#pinch-zoom`](https://drafts.csswg.org/cssom-view-1/#pinch-zoom)
-     * [`https://drafts.csswg.org/css-color-4/#css-system-colors`](https://drafts.csswg.org/css-color-4/#css-system-colors)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -10453,7 +10449,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/selectors-nonelement-1/](https://www.w3.org/TR/selectors-nonelement-1/)
 - Crawled URL: [https://drafts.csswg.org/selectors-nonelement/](https://drafts.csswg.org/selectors-nonelement/)
-- Crawled version: 6 February 2021
+- Crawled version: 28 March 2019
 - Editor's Draft: [https://drafts.csswg.org/selectors-nonelement/](https://drafts.csswg.org/selectors-nonelement/)
 - Latest published version: [https://www.w3.org/TR/selectors-nonelement-1/](https://www.w3.org/TR/selectors-nonelement-1/)
 - Shortname: selectors-nonelement-1
@@ -12124,6 +12120,7 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
+- [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
@@ -12170,7 +12167,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Style Attributes](https://drafts.csswg.org/css-style-attr/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
@@ -12263,7 +12259,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
 - Crawled URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
-- Crawled version: 1 February 2021
+- Crawled version: 11 November 2020
 - Editor's Draft: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
 - Shortname: scroll-animations-1
 
@@ -12390,7 +12386,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Crawled URL: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
-- Crawled version: 22 February 2021
+- Crawled version: 30 August 2019
 - Editor's Draft: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
 - Latest published version: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Shortname: selectors-4
@@ -12417,6 +12413,7 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#selector-indeterminate`](https://html.spec.whatwg.org/#selector-indeterminate)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#a-form-control%E2%80%99s-value`](https://html.spec.whatwg.org/#a-form-control%E2%80%99s-value)
+     * [`https://drafts.csswg.org/css-color-5/#valdef-lab-a`](https://drafts.csswg.org/css-color-5/#valdef-lab-a)
      * [`https://www.w3.org/TR/css-scoping-1/#selectordef-shadow`](https://www.w3.org/TR/css-scoping-1/#selectordef-shadow)
      * [`https://www.w3.org/TR/css-scoping-1/#selectordef-content`](https://www.w3.org/TR/css-scoping-1/#selectordef-content)
 - External links to outdated specs:
@@ -13762,7 +13759,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Crawled URL: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
-- Crawled version: 21 February 2021
+- Crawled version: 8 November 2020
 - Editor's Draft: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
 - Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Shortname: web-animations-1
@@ -13813,7 +13810,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 
 
@@ -16642,8 +16638,6 @@ No informative reference to this spec from other specs.
      * [`https://immersive-web.github.io/webxr/#xrsession-animation-frame`](https://immersive-web.github.io/webxr/#xrsession-animation-frame)
      * [`https://immersive-web.github.io/webxr/#explicit-consent`](https://immersive-web.github.io/webxr/#explicit-consent)
      * [`https://heycam.github.io/webidl/#value-pair`](https://heycam.github.io/webidl/#value-pair)
-- Broken external links:
-     * [`https://drafts.csswg.org/mediaqueries-5/#media-prefers-color-scheme-active`](https://drafts.csswg.org/mediaqueries-5/#media-prefers-color-scheme-active)
 
 ### Known dependencies on this specification {.dependencies}
 
