@@ -13,6 +13,14 @@
     "https://lists.w3.org/Archives/Public/public-css-archive/": [],
     "https://lists.w3.org/Archives/Public/www-style/": [],
     "https://www.w3.org/2020/Process-20200915/": [],
+    "https://www.w3.org/TR/jlreq/": [
+      "ruby_and_emphasis_dots",
+      "positioning_of_jukugoruby_with_respect_to_base_characters",
+      "positioning_of_monoruby_with_respect_to_base_characters"
+    ],
+    "https://www.w3.org/TR/clreq/": [
+      "interlinear_annotations"
+    ],
     "https://drafts.csswg.org/css-pseudo-4/": [
       "selectordef-first-line",
       "selectordef-first-letter"
@@ -20,15 +28,15 @@
     "https://drafts.csswg.org/css-ruby-1/issues-wd-2014": [],
     "https://www.w3.org/TR/CSS2/": [
       "property-defs",
-      "anonymous-boxes",
-      "line-height"
+      "anonymous-boxes"
     ],
     "https://www.w3.org/TR/css-values-3/": [
       "value-defs"
     ],
     "https://drafts.csswg.org/css-values-4/": [
       "css-wide-keywords",
-      "comb-one"
+      "comb-one",
+      "comb-any"
     ],
     "https://www.w3.org/TR/html5/": [
       "the-ruby-element"
@@ -36,6 +44,13 @@
     "https://www.w3.org/TR/ruby/": [],
     "https://drafts.csswg.org/css-display-3/": [
       "propdef-display",
+      "inline-level",
+      "inline-box",
+      "containing-block",
+      "block-container",
+      "inline-formatting-context",
+      "formatting-context",
+      "independent-formatting-context",
       "internal-table-element",
       "inner-display-type",
       "outer-display-type",
@@ -43,13 +58,18 @@
       "valdef-display-block",
       "inlinify",
       "valdef-display-inline-block",
-      "inline-level",
-      "in-flow"
+      "in-flow",
+      "atomic-inline",
+      "inline-block"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/CSS/display": [],
     "https://www.w3.org/TR/css-values/": [
       "value-defs",
       "percentages"
+    ],
+    "https://www.w3.org/TR/css-inline-3/": [
+      "model",
+      "line-height"
     ],
     "https://drafts.csswg.org/css-text-3/": [
       "white-space",
@@ -70,24 +90,27 @@
       "propdef-white-space"
     ],
     "https://www.w3.org/TR/css-text-3/": [
-      "line-break-transform"
+      "line-break-transform",
+      "line-breaking",
+      "white-space-rules",
+      "boundary-shaping"
     ],
-    "https://lists.w3.org/Archives/Public/www-archive/2014Jun/att-0027/PastedGraphic-1.png": [],
     "https://www.w3.org/TR/css3-text/": [
       "white-space-rules",
       "line-break-transform"
     ],
     "https://drafts.csswg.org/css-inline-3/": [
-      "propdef-vertical-align"
+      "line-box",
+      "propdef-vertical-align",
+      "line-relative-shift-values",
+      "valdef-baseline-shift-top",
+      "valdef-baseline-shift-bottom"
     ],
-    "https://drafts.csswg.org/css-box-4/": [
-      "propdef-margin",
-      "propdef-padding"
-    ],
-    "https://drafts.csswg.org/css-backgrounds-3/": [
-      "propdef-border"
-    ],
+    "https://github.com/w3c/csswg-drafts/issues/4987": [],
     "https://drafts.csswg.org/css-writing-modes-4/": [
+      "valdef-writing-mode-vertical-rl",
+      "propdef-writing-mode",
+      "horizontal-writing-mode",
       "valdef-unicode-bidi-normal",
       "valdef-unicode-bidi-embed",
       "valdef-unicode-bidi-isolate",
@@ -96,15 +119,28 @@
       "inline-base-direction",
       "line-over",
       "line-under",
-      "propdef-writing-mode",
-      "valdef-writing-mode-vertical-rl"
+      "writing-mode",
+      "vertical-writing-mode",
+      "bidi-isolate"
+    ],
+    "https://drafts.csswg.org/css-box-4/": [
+      "margin-box",
+      "content-area",
+      "content-box",
+      "margin",
+      "padding",
+      "border",
+      "propdef-padding"
+    ],
+    "https://drafts.csswg.org/css-sizing-3/": [
+      "automatic-size"
+    ],
+    "https://drafts.csswg.org/css2/": [
+      "propdef-line-height"
     ],
     "https://drafts.csswg.org/css-writing-modes-3/": [
       "propdef-unicode-bidi",
       "propdef-direction"
-    ],
-    "https://drafts.csswg.org/css2/": [
-      "propdef-line-height"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/CSS/ruby-position": [],
     "https://www.w3.org/TR/css-cascade/": [
@@ -115,9 +151,16 @@
     "https://www.w3.org/TR/web-animations/": [
       "animation-type"
     ],
-    "https://www.w3.org/Search/Mail/Public/advanced_search?keywords=&hdr-1-name=subject&hdr-1-query=ruby-position%3A+undesirable+default+value+%27before%27+for+complex+ruby&hdr-2-name=from&hdr-2-query=&hdr-3-name=message-id&hdr-3-query=&period_month=&period_year=&index-grp=Public__FULL&index-type=t&type-index=www-style&resultsperpage=20&sortby=date": [],
-    "https://www.w3.org/Search/Mail/Public/advanced_search?keywords=&hdr-1-name=subject&hdr-1-query=Styling+of+complex+Ruby&hdr-2-name=from&hdr-2-query=&hdr-3-name=message-id&hdr-3-query=&period_month=&period_year=&index-grp=Public__FULL&index-type=t&type-index=public-i18n-core&resultsperpage=20&sortby=date": [],
+    "https://www.w3.org/International/questions/qa-ruby": [
+      "jukugo"
+    ],
+    "https://www.w3.org/TR/simple-ruby/": [
+      "placement-of-jukugo-ruby"
+    ],
     "https://developer.mozilla.org/en-US/docs/Web/CSS/ruby-align": [],
+    "https://www.w3.org/TR/css-values-4/": [
+      "ic"
+    ],
     "https://www.w3.org/TR/css-display-3/": [],
     "https://html.spec.whatwg.org/": [
       "rtc",
@@ -135,20 +178,17 @@
     ],
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
-    "https://www.w3.org/TR/css-backgrounds-3/": [],
     "https://www.w3.org/TR/css-box-4/": [],
-    "https://www.w3.org/TR/css-inline-3/": [],
     "https://www.w3.org/TR/css-pseudo-4/": [],
+    "https://www.w3.org/TR/css-sizing-3/": [],
     "https://www.w3.org/TR/css-tables-3/": [],
     "https://www.w3.org/TR/css-text-4/": [],
     "https://www.w3.org/TR/css-text-decor-4/": [],
-    "https://www.w3.org/TR/css-values-4/": [],
     "https://www.w3.org/TR/css-writing-modes-4/": [],
     "https://www.w3.org/TR/css-text-decor-3/": [],
     "https://www.w3.org/TR/css-writing-modes-3/": [],
     "https://tools.ietf.org/html/rfc2119": [],
     "https://www.w3.org/TR/css-align-3/": [],
-    "https://www.w3.org/TR/css-flexbox-1/": [],
-    "https://www.w3.org/TR/jlreq/": []
+    "https://www.w3.org/TR/css-flexbox-1/": []
   }
 }

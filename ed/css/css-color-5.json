@@ -46,16 +46,10 @@
       "value": "color-adjust( <color> [ color-adjuster <colorspace>? ]? )"
     },
     "<rgb()>": {
-      "value": "rgb([from <color>]? <percentage>{3} [ / <alpha-value> ]? ) | rgb([from <color>]? <number>{3} [ / <alpha-value> ]? )"
-    },
-    "<alpha-value>": {
-      "value": "<number> | <percentage>"
+      "value": "rgb( <percentage>{3} [ / <alpha-value> ]? ) | rgb( <number>{3} [ / <alpha-value> ]? ) | rgb( [ from <color> ]? [ <number> | <percentage> ]{3} [ / <alpha-value> ]? )"
     },
     "<hsl()>": {
       "value": "hsl([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
-    },
-    "<hue>": {
-      "value": "<number> | <angle>"
     },
     "<hwb()>": {
       "value": "hwb([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
