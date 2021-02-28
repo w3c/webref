@@ -2,7 +2,6 @@
 dictionary ScrollTimelineOptions {
   Element? source;
   ScrollDirection orientation = "block";
-  ScrollTimelineOffset start = "auto";
-  ScrollTimelineOffset end = "auto";
+  sequence<ScrollTimelineOffset> scrollOffsets = [];
   (double or ScrollTimelineAutoKeyword) timeRange = "auto";
 };
