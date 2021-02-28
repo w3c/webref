@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% February 27, 2021
+% February 28, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -1147,8 +1147,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/), related reference "CSS20" uses URL [`https://www.w3.org/TR/1998/REC-CSS2-19980512/`](https://www.w3.org/TR/1998/REC-CSS2-19980512/)
      * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/), related reference "CSS20" uses URL [`https://www.w3.org/TR/1998/REC-CSS2-19980512/`](https://www.w3.org/TR/1998/REC-CSS2-19980512/)
      * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/), related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
-- Broken external links:
-     * [`https://drafts.csswg.org/css-color-5/#valdef-rgb-b`](https://drafts.csswg.org/css-color-5/#valdef-rgb-b)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/)
      * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/)
@@ -1287,8 +1285,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/), related reference "CSS20" uses URL [`https://www.w3.org/TR/1998/REC-CSS2-19980512/`](https://www.w3.org/TR/1998/REC-CSS2-19980512/)
      * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/), related reference "CSS20" uses URL [`https://www.w3.org/TR/1998/REC-CSS2-19980512/`](https://www.w3.org/TR/1998/REC-CSS2-19980512/)
      * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/), related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
-- Broken external links:
-     * [`https://drafts.csswg.org/css-color-5/#valdef-rgb-b`](https://drafts.csswg.org/css-color-5/#valdef-rgb-b)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/)
      * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/)
@@ -1397,7 +1393,6 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-easing-1/#output-progress-value`](https://drafts.csswg.org/css-easing-1/#output-progress-value)
      * [`https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order`](https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order)
 - Broken external links:
-     * [`https://drafts.csswg.org/css-shapes-2/#valdef-shape-to`](https://drafts.csswg.org/css-shapes-2/#valdef-shape-to)
      * [`https://www.w3.org/TR/cssom-1/#cssstyledeclaration-readonly-flag`](https://www.w3.org/TR/cssom-1/#cssstyledeclaration-readonly-flag)
 
 ### Known dependencies on this specification {.dependencies}
@@ -2291,7 +2286,6 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
-- [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
@@ -2340,16 +2334,13 @@ This specification looks good!
 
 Normative references to this spec from:
 
-- [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
+- [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 
 Informative references to this spec from:
 
-- [CSS 2](https://drafts.csswg.org/css2/)
-- [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
-- [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 
 ## CSS Conditional Rules Module Level 3 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
@@ -2821,7 +2812,6 @@ Informative references to this spec from:
 
 - Broken external links:
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
-     * [`https://drafts.csswg.org/css-color-5/#valdef-lab-a`](https://drafts.csswg.org/css-color-5/#valdef-lab-a)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2998,7 +2988,6 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-inline-3/#descent-metric`](https://drafts.csswg.org/css-inline-3/#descent-metric)
      * [`https://drafts.csswg.org/css-inline-3/#line-gap-metric`](https://drafts.csswg.org/css-inline-3/#line-gap-metric)
 - Broken external links:
-     * [`https://drafts.csswg.org/css-shapes-2/#valdef-shape-large`](https://drafts.csswg.org/css-shapes-2/#valdef-shape-large)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 
 ### Known dependencies on this specification {.dependencies}
@@ -4882,8 +4871,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 
 Informative references to this spec from:
@@ -5591,9 +5579,6 @@ No informative reference to this spec from other specs.
      * [`https://drafts.fxtf.org/compositing-2/#propdef-mix`](https://drafts.fxtf.org/compositing-2/#propdef-mix)
 - Broken external links:
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
-     * [`https://drafts.csswg.org/css-transforms-2/#funcdef-scale`](https://drafts.csswg.org/css-transforms-2/#funcdef-scale)
-     * [`https://drafts.csswg.org/css-transforms-2/#funcdef-scalex`](https://drafts.csswg.org/css-transforms-2/#funcdef-scalex)
-     * [`https://drafts.csswg.org/css-transforms-2/#funcdef-scaley`](https://drafts.csswg.org/css-transforms-2/#funcdef-scaley)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
      * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
@@ -12237,7 +12222,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
 - Crawled URL: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
-- Crawled version: 24 February 2021
+- Crawled version: 27 February 2021
 - Editor's Draft: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
 - Latest published version: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
 - Shortname: screen-wake-lock
@@ -12413,7 +12398,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#selector-indeterminate`](https://html.spec.whatwg.org/#selector-indeterminate)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#a-form-control%E2%80%99s-value`](https://html.spec.whatwg.org/#a-form-control%E2%80%99s-value)
-     * [`https://drafts.csswg.org/css-color-5/#valdef-lab-a`](https://drafts.csswg.org/css-color-5/#valdef-lab-a)
      * [`https://www.w3.org/TR/css-scoping-1/#selectordef-shadow`](https://www.w3.org/TR/css-scoping-1/#selectordef-shadow)
      * [`https://www.w3.org/TR/css-scoping-1/#selectordef-content`](https://www.w3.org/TR/css-scoping-1/#selectordef-content)
 - External links to outdated specs:
