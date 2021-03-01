@@ -532,11 +532,31 @@
       "definedIn": "pre"
     },
     {
+      "id": "cssparseratrule",
+      "href": "https://wicg.github.io/css-parser-api/#cssparseratrule",
+      "linkingText": [
+        "CSSParserAtRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parser-values",
+        "title": "Parser Values",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-cssparseratrule-cssparseratrule",
       "href": "https://wicg.github.io/css-parser-api/#dom-cssparseratrule-cssparseratrule",
       "linkingText": [
         "CSSParserAtRule(name, prelude, body)",
-        "CSSParserAtRule(name, prelude)"
+        "constructor(name, prelude, body)",
+        "CSSParserAtRule(name, prelude)",
+        "constructor(name, prelude)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -561,7 +581,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSParserAtRule/CSSParserAtRule(name, prelude, body)"
+        "CSSParserAtRule/CSSParserAtRule(name, prelude, body)",
+        "CSSParserAtRule/constructor(name, prelude, body)",
+        "CSSParserAtRule/CSSParserAtRule(name, prelude)",
+        "CSSParserAtRule/constructor(name, prelude)"
       ],
       "access": "public",
       "informative": false,
@@ -581,7 +604,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSParserAtRule/CSSParserAtRule(name, prelude, body)"
+        "CSSParserAtRule/CSSParserAtRule(name, prelude, body)",
+        "CSSParserAtRule/constructor(name, prelude, body)",
+        "CSSParserAtRule/CSSParserAtRule(name, prelude)",
+        "CSSParserAtRule/constructor(name, prelude)"
       ],
       "access": "public",
       "informative": false,
@@ -601,26 +627,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSParserAtRule/CSSParserAtRule(name, prelude, body)"
+        "CSSParserAtRule/CSSParserAtRule(name, prelude, body)",
+        "CSSParserAtRule/constructor(name, prelude, body)",
+        "CSSParserAtRule/CSSParserAtRule(name, prelude)",
+        "CSSParserAtRule/constructor(name, prelude)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "parser-values",
-        "title": "Parser Values",
-        "number": "3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "cssparseratrule",
-      "href": "https://wicg.github.io/css-parser-api/#cssparseratrule",
-      "linkingText": [
-        "CSSParserAtRule"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -701,7 +712,25 @@
       "for": [
         "CSSParserAtRule"
       ],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parser-values",
+        "title": "Parser Values",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cssparserqualifiedrule",
+      "href": "https://wicg.github.io/css-parser-api/#cssparserqualifiedrule",
+      "linkingText": [
+        "CSSParserQualifiedRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "parser-values",
@@ -715,7 +744,9 @@
       "href": "https://wicg.github.io/css-parser-api/#dom-cssparserqualifiedrule-cssparserqualifiedrule",
       "linkingText": [
         "CSSParserQualifiedRule(prelude, body)",
-        "CSSParserQualifiedRule(prelude)"
+        "constructor(prelude, body)",
+        "CSSParserQualifiedRule(prelude)",
+        "constructor(prelude)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -740,7 +771,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSParserQualifiedRule/CSSParserQualifiedRule(prelude, body)"
+        "CSSParserQualifiedRule/CSSParserQualifiedRule(prelude, body)",
+        "CSSParserQualifiedRule/constructor(prelude, body)",
+        "CSSParserQualifiedRule/CSSParserQualifiedRule(prelude)",
+        "CSSParserQualifiedRule/constructor(prelude)"
       ],
       "access": "public",
       "informative": false,
@@ -760,26 +794,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSParserQualifiedRule/CSSParserQualifiedRule(prelude, body)"
+        "CSSParserQualifiedRule/CSSParserQualifiedRule(prelude, body)",
+        "CSSParserQualifiedRule/constructor(prelude, body)",
+        "CSSParserQualifiedRule/CSSParserQualifiedRule(prelude)",
+        "CSSParserQualifiedRule/constructor(prelude)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "parser-values",
-        "title": "Parser Values",
-        "number": "3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "cssparserqualifiedrule",
-      "href": "https://wicg.github.io/css-parser-api/#cssparserqualifiedrule",
-      "linkingText": [
-        "CSSParserQualifiedRule"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -840,7 +859,25 @@
       "for": [
         "CSSParserQualifiedRule"
       ],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parser-values",
+        "title": "Parser Values",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cssparserdeclaration",
+      "href": "https://wicg.github.io/css-parser-api/#cssparserdeclaration",
+      "linkingText": [
+        "CSSParserDeclaration"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "parser-values",
@@ -854,7 +891,9 @@
       "href": "https://wicg.github.io/css-parser-api/#dom-cssparserdeclaration-cssparserdeclaration",
       "linkingText": [
         "CSSParserDeclaration(name, body)",
-        "CSSParserDeclaration(name)"
+        "constructor(name, body)",
+        "CSSParserDeclaration(name)",
+        "constructor(name)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -879,7 +918,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSParserDeclaration/CSSParserDeclaration(name, body)"
+        "CSSParserDeclaration/CSSParserDeclaration(name, body)",
+        "CSSParserDeclaration/constructor(name, body)",
+        "CSSParserDeclaration/CSSParserDeclaration(name)",
+        "CSSParserDeclaration/constructor(name)"
       ],
       "access": "public",
       "informative": false,
@@ -899,26 +941,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSParserDeclaration/CSSParserDeclaration(name, body)"
+        "CSSParserDeclaration/CSSParserDeclaration(name, body)",
+        "CSSParserDeclaration/constructor(name, body)",
+        "CSSParserDeclaration/CSSParserDeclaration(name)",
+        "CSSParserDeclaration/constructor(name)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "parser-values",
-        "title": "Parser Values",
-        "number": "3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "cssparserdeclaration",
-      "href": "https://wicg.github.io/css-parser-api/#cssparserdeclaration",
-      "linkingText": [
-        "CSSParserDeclaration"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -979,7 +1006,7 @@
       "for": [
         "CSSParserDeclaration"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "parser-values",
@@ -1007,10 +1034,29 @@
       "definedIn": "pre"
     },
     {
+      "id": "cssparserblock",
+      "href": "https://wicg.github.io/css-parser-api/#cssparserblock",
+      "linkingText": [
+        "CSSParserBlock"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parser-values",
+        "title": "Parser Values",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-cssparserblock-cssparserblock",
       "href": "https://wicg.github.io/css-parser-api/#dom-cssparserblock-cssparserblock",
       "linkingText": [
-        "CSSParserBlock(name, body)"
+        "CSSParserBlock(name, body)",
+        "constructor(name, body)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -1035,7 +1081,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSParserBlock/CSSParserBlock(name, body)"
+        "CSSParserBlock/CSSParserBlock(name, body)",
+        "CSSParserBlock/constructor(name, body)"
       ],
       "access": "public",
       "informative": false,
@@ -1055,26 +1102,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSParserBlock/CSSParserBlock(name, body)"
+        "CSSParserBlock/CSSParserBlock(name, body)",
+        "CSSParserBlock/constructor(name, body)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "parser-values",
-        "title": "Parser Values",
-        "number": "3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "cssparserblock",
-      "href": "https://wicg.github.io/css-parser-api/#cssparserblock",
-      "linkingText": [
-        "CSSParserBlock"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -1135,7 +1165,25 @@
       "for": [
         "CSSParserBlock"
       ],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parser-values",
+        "title": "Parser Values",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cssparserfunction",
+      "href": "https://wicg.github.io/css-parser-api/#cssparserfunction",
+      "linkingText": [
+        "CSSParserFunction"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "parser-values",
@@ -1148,7 +1196,8 @@
       "id": "dom-cssparserfunction-cssparserfunction",
       "href": "https://wicg.github.io/css-parser-api/#dom-cssparserfunction-cssparserfunction",
       "linkingText": [
-        "CSSParserFunction(name, args)"
+        "CSSParserFunction(name, args)",
+        "constructor(name, args)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -1173,7 +1222,8 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSParserFunction/CSSParserFunction(name, args)"
+        "CSSParserFunction/CSSParserFunction(name, args)",
+        "CSSParserFunction/constructor(name, args)"
       ],
       "access": "public",
       "informative": false,
@@ -1193,26 +1243,9 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSParserFunction/CSSParserFunction(name, args)"
+        "CSSParserFunction/CSSParserFunction(name, args)",
+        "CSSParserFunction/constructor(name, args)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "parser-values",
-        "title": "Parser Values",
-        "number": "3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "cssparserfunction",
-      "href": "https://wicg.github.io/css-parser-api/#cssparserfunction",
-      "linkingText": [
-        "CSSParserFunction"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -1273,7 +1306,7 @@
       "for": [
         "CSSParserFunction"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "parser-values",

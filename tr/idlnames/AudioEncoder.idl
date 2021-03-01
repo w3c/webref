@@ -11,4 +11,6 @@ interface AudioEncoder {
   Promise<undefined> flush();
   undefined reset();
   undefined close();
+
+  static Promise<AudioEncoderSupport> isConfigSupported(AudioEncoderConfig config);
 };

@@ -287,24 +287,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "response-url",
-      "href": "https://fetch.spec.whatwg.org/#response-url",
-      "linkingText": [
-        "response URL"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "url",
-        "title": "URL",
-        "number": "2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "http-tab-or-space",
       "href": "https://fetch.spec.whatwg.org/#http-tab-or-space",
       "linkingText": [
@@ -1168,26 +1150,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "concept-body-transmitted",
-      "href": "https://fetch.spec.whatwg.org/#concept-body-transmitted",
-      "linkingText": [
-        "transmitted bytes"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "body"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bodies",
-        "title": "Bodies",
-        "number": "2.2.4"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "concept-body-total-bytes",
       "href": "https://fetch.spec.whatwg.org/#concept-body-total-bytes",
       "linkingText": [
@@ -1228,46 +1190,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "concept-body-done",
-      "href": "https://fetch.spec.whatwg.org/#concept-body-done",
-      "linkingText": [
-        "done"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "body"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bodies",
-        "title": "Bodies",
-        "number": "2.2.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "concept-body-wait",
-      "href": "https://fetch.spec.whatwg.org/#concept-body-wait",
-      "linkingText": [
-        "wait"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "body"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bodies",
-        "title": "Bodies",
-        "number": "2.2.4"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "concept-body-clone",
       "href": "https://fetch.spec.whatwg.org/#concept-body-clone",
       "linkingText": [
@@ -1278,6 +1200,82 @@
       "for": [
         "body"
       ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bodies",
+        "title": "Bodies",
+        "number": "2.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "body-incrementally-read",
+      "href": "https://fetch.spec.whatwg.org/#body-incrementally-read",
+      "linkingText": [
+        "incrementally read"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "body"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bodies",
+        "title": "Bodies",
+        "number": "2.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "incrementally-read-loop",
+      "href": "https://fetch.spec.whatwg.org/#incrementally-read-loop",
+      "linkingText": [
+        "incrementally-read loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bodies",
+        "title": "Bodies",
+        "number": "2.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "body-fully-read",
+      "href": "https://fetch.spec.whatwg.org/#body-fully-read",
+      "linkingText": [
+        "fully read"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "body"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bodies",
+        "title": "Bodies",
+        "number": "2.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fully-reading-body-as-promise",
+      "href": "https://fetch.spec.whatwg.org/#fully-reading-body-as-promise",
+      "linkingText": [
+        "fully reading body as promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2183,42 +2181,6 @@
         "request"
       ],
       "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "requests",
-        "title": "Requests",
-        "number": "2.2.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "concept-request-transmit-body",
-      "href": "https://fetch.spec.whatwg.org/#concept-request-transmit-body",
-      "linkingText": [
-        "transmit request body"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "requests",
-        "title": "Requests",
-        "number": "2.2.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "transmit-request-body-loop",
-      "href": "https://fetch.spec.whatwg.org/#transmit-request-body-loop",
-      "linkingText": [
-        "transmit-request-body loop"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
       "informative": false,
       "heading": {
         "id": "requests",
@@ -3721,6 +3683,24 @@
       "href": "https://fetch.spec.whatwg.org/#concept-main-fetch",
       "linkingText": [
         "main fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "main-fetch",
+        "title": "Main fetch",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fetch-finale",
+      "href": "https://fetch.spec.whatwg.org/#fetch-finale",
+      "linkingText": [
+        "fetch finale"
       ],
       "localLinkingText": [],
       "type": "dfn",

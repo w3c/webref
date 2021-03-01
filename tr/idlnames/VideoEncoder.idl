@@ -11,4 +11,6 @@ interface VideoEncoder {
   Promise<undefined> flush();
   undefined reset();
   undefined close();
+
+  static Promise<boolean> isConfigSupported(VideoEncoderConfig config);
 };

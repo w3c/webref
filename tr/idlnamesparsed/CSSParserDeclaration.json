@@ -5,7 +5,7 @@
       "title": "CSS Parser API",
       "url": "https://wicg.github.io/css-parser-api/"
     },
-    "fragment": "[Constructor(DOMString name, optional sequence<CSSParserRule> body)]\ninterface CSSParserDeclaration : CSSParserRule {\n  readonly attribute DOMString name;\n  readonly attribute FrozenArray<CSSParserValue> body;\n  stringifier;\n};",
+    "fragment": "[Exposed=Window]\ninterface CSSParserDeclaration : CSSParserRule {\n  constructor(DOMString name, optional sequence<CSSParserRule> body);\n  readonly attribute DOMString name;\n  readonly attribute FrozenArray<CSSParserValue> body;\n  stringifier;\n};",
     "href": "https://wicg.github.io/css-parser-api/#cssparserdeclaration"
   },
   "extended": [],
@@ -16,7 +16,7 @@
         "title": "CSS Parser API",
         "url": "https://wicg.github.io/css-parser-api/"
       },
-      "fragment": "interface CSSParserRule {\n  /* Just a superclass. */\n};",
+      "fragment": "[Exposed=Window]\ninterface CSSParserRule {\n  /* Just a superclass. */\n};",
       "href": "https://wicg.github.io/css-parser-api/#cssparserrule"
     },
     "extended": [],

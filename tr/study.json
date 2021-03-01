@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-02-22T01:55:33.385Z",
+  "date": "2021-03-01T01:58:55.460Z",
   "stats": {
     "crawled": 383,
     "errors": 0,
@@ -537,7 +537,7 @@
     {
       "title": "ARIA in HTML",
       "shortname": "html-aria",
-      "date": "20 February 2021",
+      "date": "01 March 2021",
       "url": "https://www.w3.org/TR/html-aria/",
       "release": {
         "url": "https://www.w3.org/TR/html-aria/",
@@ -601,6 +601,7 @@
             "https://html.spec.whatwg.org/#url-state-(type=url)",
             "https://html.spec.whatwg.org/#time-state-(type=time)",
             "https://html.spec.whatwg.org/#week-state-(type=week)",
+            "https://html.spec.whatwg.org/#concept-fe-checked",
             "https://html.spec.whatwg.org/#candidate-for-constraint-validation",
             "https://html.spec.whatwg.org/#concept-fv-valid",
             "https://html.spec.whatwg.org/#category-submit",
@@ -724,7 +725,7 @@
     {
       "title": "Background Fetch",
       "shortname": "background-fetch",
-      "date": "3 June 2020",
+      "date": "24 February 2021",
       "url": "https://wicg.github.io/background-fetch/",
       "nightly": {
         "url": "https://wicg.github.io/background-fetch/",
@@ -814,12 +815,8 @@
             "https://heycam.github.io/webidl/#idl-ArrayBuffer"
           ],
           "brokenLinks": [
-            "https://fetch.spec.whatwg.org/#concept-cancel-readablestream",
-            "https://fetch.spec.whatwg.org/#concept-readablestream-errored",
-            "https://fetch.spec.whatwg.org/#concept-construct-readablestream",
-            "https://fetch.spec.whatwg.org/#concept-enqueue-readablestream",
-            "https://fetch.spec.whatwg.org/#concept-readablestream-closed",
-            "https://fetch.spec.whatwg.org/#concept-readablestream-readable",
+            "https://fetch.spec.whatwg.org/#concept-body-transmitted",
+            "https://fetch.spec.whatwg.org/#concept-body-wait",
             "https://heycam.github.io/webidl/#a-new-promise",
             "https://heycam.github.io/webidl/#exceptiondef-typeerror",
             "https://heycam.github.io/webidl/#resolve",
@@ -5648,11 +5645,6 @@
               "crawled": "https://www.w3.org/TR/csp-embedded-enforcement/"
             },
             {
-              "url": "https://wicg.github.io/cors-rfc1918/",
-              "title": "CORS and RFC1918",
-              "crawled": "https://wicg.github.io/private-network-access/"
-            },
-            {
               "url": "https://www.w3.org/TR/credential-management-1/",
               "title": "Credential Management Level 1",
               "crawled": "https://www.w3.org/TR/credential-management-1/"
@@ -5691,6 +5683,11 @@
               "url": "https://wicg.github.io/portals/",
               "title": "Portals",
               "crawled": "https://wicg.github.io/portals/"
+            },
+            {
+              "url": "https://wicg.github.io/cors-rfc1918/",
+              "title": "Private Network Access",
+              "crawled": "https://wicg.github.io/private-network-access/"
             },
             {
               "url": "https://www.w3.org/TR/resource-hints/",
@@ -6341,77 +6338,6 @@
       }
     },
     {
-      "title": "CORS and RFC1918",
-      "shortname": "cors-rfc1918",
-      "date": "10 December 2020",
-      "url": "https://wicg.github.io/cors-rfc1918/",
-      "nightly": {
-        "url": "https://wicg.github.io/cors-rfc1918/",
-        "repository": "https://github.com/WICG/cors-rfc1918",
-        "sourcePath": "index.src.html",
-        "filename": "index.html"
-      },
-      "crawled": "https://wicg.github.io/private-network-access/",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": true,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "Document",
-            "refs": [
-              {
-                "url": "https://dom.spec.whatwg.org/",
-                "title": "DOM Standard",
-                "crawled": "https://dom.spec.whatwg.org/"
-              }
-            ]
-          }
-        ],
-        "missingDfns": {
-          "css": [],
-          "idl": []
-        },
-        "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/webappsec-csp/",
-            "ref": {
-              "name": "CSP3",
-              "url": "https://www.w3.org/TR/CSP3/"
-            }
-          }
-        ],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "xrefs": {
-          "notExported": [
-            "https://fetch.spec.whatwg.org/#concept-http-network-fetch",
-            "https://fetch.spec.whatwg.org/#cors-preflight-fetch-0",
-            "https://fetch.spec.whatwg.org/#concept-cache",
-            "https://fetch.spec.whatwg.org/#concept-websocket-establish",
-            "https://html.spec.whatwg.org/#meta",
-            "https://html.spec.whatwg.org/#creating-a-new-browsing-context",
-            "https://html.spec.whatwg.org/#initialise-the-document-object"
-          ],
-          "notDfn": [
-            "https://html.spec.whatwg.org/#document"
-          ],
-          "brokenLinks": [],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "Crash Reporting",
       "shortname": "crash-reporting",
       "date": "24 June 2020",
@@ -6852,7 +6778,7 @@
     {
       "title": "CSS Animations Level 2",
       "shortname": "css-animations-2",
-      "date": "16 July 2020",
+      "date": "21 February 2021",
       "url": "https://drafts.csswg.org/css-animations-2/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-animations-2/",
@@ -9170,7 +9096,13 @@
         ],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://drafts.csswg.org/css-extensions-1/",
+              "title": "CSS Extensions",
+              "crawled": "https://drafts.csswg.org/css-extensions-1/"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/css-color-adjust-1/",
@@ -10415,7 +10347,7 @@
     {
       "title": "CSS Environment Variables Module Level 1",
       "shortname": "css-env-1",
-      "date": "3 August 2018",
+      "date": "21 February 2021",
       "url": "https://drafts.csswg.org/css-env-1/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-env-1/",
@@ -10582,7 +10514,8 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://drafts.csswg.org/css-color-3/#valuea-def-color"
+            "https://drafts.csswg.org/css-color-3/#valuea-def-color",
+            "https://drafts.csswg.org/css-color-5/#valdef-lab-a"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -11985,7 +11918,7 @@
     {
       "title": "CSS Grid Layout Module Level 3",
       "shortname": "css-grid-3",
-      "date": "8 February 2021",
+      "date": "21 February 2021",
       "url": "https://drafts.csswg.org/css-grid-3/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-grid-3/",
@@ -13021,7 +12954,7 @@
     {
       "title": "CSS Mobile Text Size Adjustment Module Level 1",
       "shortname": "css-size-adjust-1",
-      "date": "18 September 2020",
+      "date": "21 February 2021",
       "url": "https://drafts.csswg.org/css-size-adjust-1/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-size-adjust-1/",
@@ -14465,7 +14398,7 @@
     {
       "title": "CSS Parser API",
       "shortname": "css-parser-api",
-      "date": "27 July 2018",
+      "date": "26 February 2021",
       "url": "https://wicg.github.io/css-parser-api/",
       "nightly": {
         "url": "https://wicg.github.io/css-parser-api/",
@@ -14499,6 +14432,7 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
+            "https://heycam.github.io/webidl/#idl-frozen-array",
             "https://drafts.csswg.org/cssom-1/#namespacedef-css"
           ],
           "evolvingLinks": [],
@@ -15911,7 +15845,7 @@
     {
       "title": "CSS Shapes Module Level 2",
       "shortname": "css-shapes-2",
-      "date": "8 January 2021",
+      "date": "21 February 2021",
       "url": "https://drafts.csswg.org/css-shapes-2/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-shapes-2/",
@@ -20649,7 +20583,7 @@
     {
       "title": "DOM Standard",
       "shortname": "dom",
-      "date": "27 January 2021",
+      "date": "27 February 2021",
       "url": "https://dom.spec.whatwg.org/",
       "nightly": {
         "url": "https://dom.spec.whatwg.org/",
@@ -21534,7 +21468,7 @@
     {
       "title": "ECMAScript® 2021 Internationalization API Specification",
       "shortname": "ecma-402",
-      "date": "20 February 2021",
+      "date": "26 February 2021",
       "url": "https://tc39.es/ecma402/",
       "nightly": {
         "url": "https://tc39.es/ecma402/",
@@ -21583,7 +21517,7 @@
     {
       "title": "ECMAScript® 2021 Language Specification",
       "shortname": "ecmascript",
-      "date": "20 February 2021",
+      "date": "28 February 2021",
       "url": "https://tc39.es/ecma262/",
       "nightly": {
         "url": "https://tc39.es/ecma262/",
@@ -21974,7 +21908,7 @@
     {
       "title": "Encoding Standard",
       "shortname": "encoding",
-      "date": "14 January 2021",
+      "date": "26 February 2021",
       "url": "https://www.w3.org/TR/encoding/",
       "release": {
         "url": "https://www.w3.org/TR/encoding/",
@@ -24727,7 +24661,7 @@
     {
       "title": "Fetch Standard",
       "shortname": "fetch",
-      "date": "19 February 2021",
+      "date": "26 February 2021",
       "url": "https://fetch.spec.whatwg.org/",
       "nightly": {
         "url": "https://fetch.spec.whatwg.org/",
@@ -24802,11 +24736,6 @@
               "url": "https://wicg.github.io/cookie-store/",
               "title": "Cookie Store API",
               "crawled": "https://wicg.github.io/cookie-store/"
-            },
-            {
-              "url": "https://wicg.github.io/cors-rfc1918/",
-              "title": "CORS and RFC1918",
-              "crawled": "https://wicg.github.io/private-network-access/"
             },
             {
               "url": "https://www.w3.org/TR/credential-management-1/",
@@ -24954,6 +24883,11 @@
               "crawled": "https://wicg.github.io/priority-hints/"
             },
             {
+              "url": "https://wicg.github.io/cors-rfc1918/",
+              "title": "Private Network Access",
+              "crawled": "https://wicg.github.io/private-network-access/"
+            },
+            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://www.w3.org/TR/referrer-policy/"
@@ -25084,10 +25018,11 @@
         },
         "xrefs": {
           "notExported": [
+            "https://heycam.github.io/webidl/#dfn-get-buffer-source-copy",
+            "https://heycam.github.io/webidl/#dfn-perform-steps-once-promise-is-settled",
             "https://heycam.github.io/webidl/#aborterror",
             "https://heycam.github.io/webidl/#dfn-throw",
             "https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over",
-            "https://heycam.github.io/webidl/#dfn-get-buffer-source-copy",
             "https://w3c.github.io/FileAPI/#readOperation"
           ],
           "notDfn": [
@@ -25095,19 +25030,19 @@
             "https://heycam.github.io/webidl/#idl-ArrayBuffer"
           ],
           "brokenLinks": [
-            "https://w3c.github.io/webappsec-referrer-policy/#default-referrer-policy",
             "https://heycam.github.io/webidl/#exceptiondef-typeerror",
+            "https://heycam.github.io/webidl/#a-promise-rejected-with",
             "https://heycam.github.io/webidl/#idl-record",
             "https://heycam.github.io/webidl/#idl-undefined",
             "https://heycam.github.io/webidl/#this",
             "https://heycam.github.io/webidl/#BufferSource",
             "https://heycam.github.io/webidl/#exceptiondef-rangeerror",
-            "https://heycam.github.io/webidl/#a-promise-rejected-with",
             "https://heycam.github.io/webidl/#a-promise-resolved-with",
             "https://heycam.github.io/webidl/#upon-fulfillment",
             "https://heycam.github.io/webidl/#new",
             "https://heycam.github.io/webidl/#reject",
             "https://heycam.github.io/webidl/#resolve",
+            "https://w3c.github.io/webappsec-referrer-policy/#default-referrer-policy",
             "https://w3c.github.io/reporting/#reporting-queue"
           ],
           "evolvingLinks": [],
@@ -28568,7 +28503,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "19 February 2021",
+      "date": "26 February 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -38702,11 +38637,6 @@
               "crawled": "https://www.w3.org/TR/requestidlecallback/"
             },
             {
-              "url": "https://wicg.github.io/cors-rfc1918/",
-              "title": "CORS and RFC1918",
-              "crawled": "https://wicg.github.io/private-network-access/"
-            },
-            {
               "url": "https://www.w3.org/TR/credential-management-1/",
               "title": "Credential Management Level 1",
               "crawled": "https://www.w3.org/TR/credential-management-1/"
@@ -39280,6 +39210,11 @@
               "url": "https://privacycg.github.io/private-click-measurement/",
               "title": "Private Click Measurement",
               "crawled": "https://privacycg.github.io/private-click-measurement/"
+            },
+            {
+              "url": "https://wicg.github.io/cors-rfc1918/",
+              "title": "Private Network Access",
+              "crawled": "https://wicg.github.io/private-network-access/"
             },
             {
               "url": "https://www.w3.org/TR/push-api/",
@@ -40590,7 +40525,7 @@
     {
       "title": "Idle Detection API",
       "shortname": "idle-detection",
-      "date": "19 January 2021",
+      "date": "24 February 2021",
       "url": "https://wicg.github.io/idle-detection/",
       "nightly": {
         "url": "https://wicg.github.io/idle-detection/",
@@ -40722,7 +40657,7 @@
     {
       "title": "import assertions",
       "shortname": "tc39-import-assertions",
-      "date": "3 December 2020",
+      "date": "23 February 2021",
       "url": "https://tc39.es/proposal-import-assertions/",
       "nightly": {
         "url": "https://tc39.es/proposal-import-assertions/",
@@ -42166,7 +42101,7 @@
     {
       "title": "Layout Instability API",
       "shortname": "layout-instability",
-      "date": "11 February 2021",
+      "date": "24 February 2021",
       "url": "https://wicg.github.io/layout-instability/",
       "nightly": {
         "url": "https://wicg.github.io/layout-instability/",
@@ -42264,7 +42199,7 @@
     {
       "title": "Loading Signed Exchanges",
       "shortname": "webpackage",
-      "date": "19 February 2021",
+      "date": "25 February 2021",
       "url": "https://wicg.github.io/webpackage/loading.html",
       "nightly": {
         "url": "https://wicg.github.io/webpackage/loading.html",
@@ -42341,7 +42276,6 @@
           "brokenLinks": [
             "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-navigationpreload",
             "https://w3c.github.io/ServiceWorker/#dom-fetchevent-preloadresponse",
-            "https://fetch.spec.whatwg.org/#synchronous-flag",
             "https://w3c.github.io/network-error-logging/#deliver-a-network-report",
             "https://heycam.github.io/webidl/#sequence-type"
           ],
@@ -47414,11 +47348,6 @@
               "crawled": "https://www.w3.org/TR/clear-site-data/"
             },
             {
-              "url": "https://wicg.github.io/cors-rfc1918/",
-              "title": "CORS and RFC1918",
-              "crawled": "https://wicg.github.io/private-network-access/"
-            },
-            {
               "url": "https://www.w3.org/TR/credential-management-1/",
               "title": "Credential Management Level 1",
               "crawled": "https://www.w3.org/TR/credential-management-1/"
@@ -47442,6 +47371,11 @@
               "url": "https://www.w3.org/TR/presentation-api/",
               "title": "Presentation API",
               "crawled": "https://www.w3.org/TR/presentation-api/"
+            },
+            {
+              "url": "https://wicg.github.io/cors-rfc1918/",
+              "title": "Private Network Access",
+              "crawled": "https://wicg.github.io/private-network-access/"
             },
             {
               "url": "https://www.w3.org/TR/resource-hints/",
@@ -48093,6 +48027,7 @@
             "https://html.spec.whatwg.org/#concept-document-feature-policy"
           ],
           "brokenLinks": [
+            "https://fetch.spec.whatwg.org/#concept-body-wait",
             "https://wicg.github.io/feature-policy/#serialized-feature-policy",
             "https://wicg.github.io/feature-policy/#feature-policy-header",
             "https://infra.spec.whatwg.org/#parse-json-into-infra-values",
@@ -50220,6 +50155,7 @@
             "https://w3c.github.io/mediacapture-main/#deviceid",
             "https://w3c.github.io/mediacapture-main/#devicechange",
             "https://heycam.github.io/webidl/#a-promise-rejected-with",
+            "https://storage.spec.whatwg.org/#dom-permissionname-persistent-storage",
             "https://w3c.github.io/webappsec-secure-contexts/#secure-contexts",
             "https://w3c.github.io/webappsec-secure-contexts/#non-secure-contexts",
             "https://w3c.github.io/webdriver/#dfn-extension-commands",
@@ -51261,6 +51197,77 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [],
+          "brokenLinks": [],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Private Network Access",
+      "shortname": "cors-rfc1918",
+      "date": "22 February 2021",
+      "url": "https://wicg.github.io/cors-rfc1918/",
+      "nightly": {
+        "url": "https://wicg.github.io/cors-rfc1918/",
+        "repository": "https://github.com/WICG/cors-rfc1918",
+        "sourcePath": "index.src.html",
+        "filename": "index.html"
+      },
+      "crawled": "https://wicg.github.io/private-network-access/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Document",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
+        "missingDfns": {
+          "css": [],
+          "idl": []
+        },
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-csp/",
+            "ref": {
+              "name": "CSP3",
+              "url": "https://www.w3.org/TR/CSP3/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "xrefs": {
+          "notExported": [
+            "https://fetch.spec.whatwg.org/#concept-http-network-fetch",
+            "https://fetch.spec.whatwg.org/#cors-preflight-fetch-0",
+            "https://fetch.spec.whatwg.org/#concept-cache",
+            "https://fetch.spec.whatwg.org/#concept-websocket-establish",
+            "https://html.spec.whatwg.org/#meta",
+            "https://html.spec.whatwg.org/#creating-a-new-browsing-context",
+            "https://html.spec.whatwg.org/#initialise-the-document-object"
+          ],
+          "notDfn": [
+            "https://html.spec.whatwg.org/#document"
+          ],
           "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -54831,7 +54838,7 @@
     {
       "title": "Storage Standard",
       "shortname": "storage",
-      "date": "15 February 2021",
+      "date": "26 February 2021",
       "url": "https://storage.spec.whatwg.org/",
       "nightly": {
         "url": "https://storage.spec.whatwg.org/",
@@ -54895,6 +54902,7 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
+            "https://w3c.github.io/permissions/#dom-permissionname-persistent-storage",
             "https://heycam.github.io/webidl/#SecureContext",
             "https://heycam.github.io/webidl/#this",
             "https://heycam.github.io/webidl/#exceptiondef-typeerror"
@@ -54935,6 +54943,11 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://wicg.github.io/background-fetch/",
+              "title": "Background Fetch",
+              "crawled": "https://wicg.github.io/background-fetch/"
+            },
             {
               "url": "https://wicg.github.io/compression/",
               "title": "Compression Streams",
@@ -55307,7 +55320,7 @@
     {
       "title": "SVG Animations",
       "shortname": "svg-animations",
-      "date": "17 February 2021",
+      "date": "26 February 2021",
       "url": "https://svgwg.org/specs/animations/",
       "nightly": {
         "url": "https://svgwg.org/specs/animations/",
@@ -55993,7 +56006,7 @@
     {
       "title": "Top-Level Await",
       "shortname": "tc39-top-level-await",
-      "date": "17 February 2021",
+      "date": "22 February 2021",
       "url": "https://tc39.es/proposal-top-level-await/",
       "nightly": {
         "url": "https://tc39.es/proposal-top-level-await/",
@@ -57088,11 +57101,6 @@
               "crawled": "https://wicg.github.io/cookie-store/"
             },
             {
-              "url": "https://wicg.github.io/cors-rfc1918/",
-              "title": "CORS and RFC1918",
-              "crawled": "https://wicg.github.io/private-network-access/"
-            },
-            {
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://www.w3.org/TR/cssom-1/"
@@ -57236,6 +57244,11 @@
               "url": "https://privacycg.github.io/private-click-measurement/",
               "title": "Private Click Measurement",
               "crawled": "https://privacycg.github.io/private-click-measurement/"
+            },
+            {
+              "url": "https://wicg.github.io/cors-rfc1918/",
+              "title": "Private Network Access",
+              "crawled": "https://wicg.github.io/private-network-access/"
             },
             {
               "url": "https://www.w3.org/TR/referrer-policy/",
@@ -57684,7 +57697,7 @@
     {
       "title": "User-Agent Client Hints",
       "shortname": "ua-client-hints",
-      "date": "9 February 2021",
+      "date": "23 February 2021",
       "url": "https://wicg.github.io/ua-client-hints/",
       "nightly": {
         "url": "https://wicg.github.io/ua-client-hints/",
@@ -58095,7 +58108,7 @@
     {
       "title": "Web App Manifest",
       "shortname": "appmanifest",
-      "date": "18 February 2021",
+      "date": "24 February 2021",
       "url": "https://www.w3.org/TR/appmanifest/",
       "release": {
         "url": "https://www.w3.org/TR/appmanifest/",
@@ -58314,7 +58327,7 @@
     {
       "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
       "shortname": "webauthn-2",
-      "date": "22 December 2020",
+      "date": "25 February 2021",
       "url": "https://www.w3.org/TR/webauthn-2/",
       "release": {
         "url": "https://www.w3.org/TR/webauthn-2/",
@@ -58341,7 +58354,6 @@
           "idl": []
         },
         "missingLinkRef": [
-          "https://www.w3.org/TR/permissions-policy/",
           "https://www.w3.org/TR/string-meta/",
           "https://w3c.github.io/webdriver/",
           "https://w3c.github.io/IntersectionObserver/v2/"
@@ -58359,6 +58371,13 @@
             "ref": {
               "name": "SECURE-CONTEXTS",
               "url": "https://www.w3.org/TR/secure-contexts/"
+            }
+          },
+          {
+            "link": "https://w3c.github.io/webappsec-permissions-policy/",
+            "ref": {
+              "name": "Permissions-Policy",
+              "url": "https://www.w3.org/TR/permissions-policy-1/"
             }
           },
           {
@@ -58410,7 +58429,6 @@
             "https://heycam.github.io/webidl/#notallowederror",
             "https://heycam.github.io/webidl/#exceptiondef-typeerror",
             "https://url.spec.whatwg.org/#host-same-site",
-            "https://infra.spec.whatwg.org/#serialize-json-to-bytes",
             "https://w3c.github.io/webappsec-secure-contexts/#secure-contexts",
             "https://www.w3.org/TR/page-visibility/#visibility-states",
             "https://w3c.github.io/webdriver/#dfn-error"
@@ -60078,7 +60096,7 @@
     {
       "title": "WebCodecs",
       "shortname": "web-codecs",
-      "date": "18 February 2021",
+      "date": "25 February 2021",
       "url": "https://wicg.github.io/web-codecs/",
       "nightly": {
         "url": "https://wicg.github.io/web-codecs/",
@@ -65570,7 +65588,7 @@
     {
       "title": "WebGPU",
       "shortname": "gpuweb",
-      "date": "20 February 2021",
+      "date": "24 February 2021",
       "url": "https://gpuweb.github.io/gpuweb/",
       "nightly": {
         "url": "https://gpuweb.github.io/gpuweb/",
@@ -67161,7 +67179,7 @@
     {
       "title": "WebTransport",
       "shortname": "webtransport",
-      "date": "19 February 2021",
+      "date": "27 February 2021",
       "url": "https://w3c.github.io/webtransport/",
       "nightly": {
         "url": "https://w3c.github.io/webtransport/",
@@ -67214,7 +67232,7 @@
     {
       "title": "WebUSB API",
       "shortname": "webusb",
-      "date": "20 February 2021",
+      "date": "28 February 2021",
       "url": "https://wicg.github.io/webusb/",
       "nightly": {
         "url": "https://wicg.github.io/webusb/",
@@ -68227,7 +68245,7 @@
     {
       "title": "XMLHttpRequest Standard",
       "shortname": "xhr",
-      "date": "15 February 2021",
+      "date": "26 February 2021",
       "url": "https://xhr.spec.whatwg.org/",
       "nightly": {
         "url": "https://xhr.spec.whatwg.org/",

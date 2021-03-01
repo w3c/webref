@@ -11,4 +11,6 @@ interface AudioDecoder {
   Promise<undefined> flush();
   undefined reset();
   undefined close();
+
+  static Promise<AudioDecoderSupport> isConfigSupported(AudioDecoderConfig config);
 };
