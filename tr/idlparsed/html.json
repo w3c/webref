@@ -3450,7 +3450,7 @@
         "partial": false
       },
       "HTMLSourceElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLSourceElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute USVString srcset;\n  [CEReactions] attribute DOMString sizes;\n  [CEReactions] attribute DOMString media;\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLSourceElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute USVString srcset;\n  [CEReactions] attribute DOMString sizes;\n  [CEReactions] attribute DOMString media;\n  [CEReactions] attribute unsigned long width;\n  [CEReactions] attribute unsigned long height;\n};",
         "type": "interface",
         "name": "HTMLSourceElement",
         "inheritance": "HTMLElement",
@@ -3565,6 +3565,50 @@
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "width",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "height",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
             },
             "extAttrs": [
               {

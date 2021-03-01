@@ -11,4 +11,6 @@ interface VideoDecoder {
   Promise<undefined> flush();
   undefined reset();
   undefined close();
+
+  static Promise<VideoDecoderSupport> isConfigSupported(VideoDecoderConfig config);
 };

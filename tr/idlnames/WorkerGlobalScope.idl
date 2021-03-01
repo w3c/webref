@@ -17,7 +17,7 @@ interface WorkerGlobalScope : EventTarget {
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 WorkerGlobalScope includes WindowOrWorkerGlobalScope;
 
-// Source: CORS and RFC1918 (https://wicg.github.io/cors-rfc1918/)
+// Source: Private Network Access (https://wicg.github.io/cors-rfc1918/)
 partial interface WorkerGlobalScope {
   readonly attribute AddressSpace addressSpace;
 };
