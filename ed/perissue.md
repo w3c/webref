@@ -71,9 +71,8 @@ Basically all specifications have normative dependencies on some other specifica
 ## List of specifications with invalid WebIDL content
 
 - [SVG Paths](https://svgwg.org/specs/paths/)
-- [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 
-=> 2 specifications found
+=> 1 specification found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -999,7 +998,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
-    * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/) links to:
     * [`https://www.w3.org/TR/css3-regions/`](https://www.w3.org/TR/css3-regions/) but does not list it in its references
@@ -1487,7 +1485,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 592 missing references for links found in 167 specifications
+=> 591 missing references for links found in 167 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -2260,8 +2258,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry`](https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry)
      * [`https://wicg.github.io/element-timing/#get-an-element`](https://wicg.github.io/element-timing/#get-an-element)
      * [`https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry`](https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry)
-- [Fetch Metadata Request Headers](https://w3c.github.io/webappsec-fetch-metadata/):
-     * [`https://fetch.spec.whatwg.org/#concept-main-fetch`](https://fetch.spec.whatwg.org/#concept-main-fetch)
 - [Fetch Standard](https://fetch.spec.whatwg.org/):
      * [`https://w3c.github.io/FileAPI/#readOperation`](https://w3c.github.io/FileAPI/#readOperation)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/):
@@ -2862,7 +2858,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#serializes-as-void`](https://html.spec.whatwg.org/#serializes-as-void)
      * [`https://html.spec.whatwg.org/#being-rendered`](https://html.spec.whatwg.org/#being-rendered)
      * [`https://html.spec.whatwg.org/#restore-persisted-state`](https://html.spec.whatwg.org/#restore-persisted-state)
-     * [`https://w3c.github.io/webappsec-fetch-metadata/#request-user-activation-flag`](https://w3c.github.io/webappsec-fetch-metadata/#request-user-activation-flag)
      * [`https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view`](https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view)
      * [`https://w3c.github.io/selection-api/#dfn-selection`](https://w3c.github.io/selection-api/#dfn-selection)
 - [The Screen Fold API](https://w3c.github.io/screen-fold/):
@@ -3266,7 +3261,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1186 problematic external links found in 190 specifications
+=> 1184 problematic external links found in 189 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4450,6 +4445,7 @@ Links in the body of a specification should be to the same document as that poin
 - [SVG Paths](https://svgwg.org/specs/paths/):
      * [`https://www.w3.org/TR/geometry-1/#dom-dompoint`](https://www.w3.org/TR/geometry-1/#dom-dompoint)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/):
+     * [`https://w3c.github.io/webappsec-fetch-metadata/#request-user-activation-flag`](https://w3c.github.io/webappsec-fetch-metadata/#request-user-activation-flag)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type)
@@ -4542,7 +4538,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/):
      * [`https://www.w3.org/TR/webxr/#animationframe`](https://www.w3.org/TR/webxr/#animationframe)
 
-=> 595 problematic external links found in 142 specifications
+=> 596 problematic external links found in 142 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
