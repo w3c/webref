@@ -481,7 +481,7 @@
         "extAttrs": []
       },
       "GPUAdapter": {
-        "fragment": "interface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUAdapterFeatures features;\n    [SameObject] readonly attribute GPUAdapterLimits limits;\n\n    Promise<GPUDevice?> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+        "fragment": "interface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUAdapterFeatures features;\n    [SameObject] readonly attribute GPUAdapterLimits limits;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
@@ -559,7 +559,7 @@
                   "type": "return-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": true,
+                  "nullable": false,
                   "union": false,
                   "idlType": "GPUDevice"
                 }
