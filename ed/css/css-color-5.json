@@ -10,40 +10,13 @@
       "value": "srgb | hsl | hwb | xyz | lab | lch"
     },
     "<color-mix()>": {
-      "value": "color-mix(<colorspace>?, <mix-component>#{2})"
-    },
-    "<mix-component>": {
-      "value": "<color> [ <percentage> | <color-adjuster>+ ]?"
-    },
-    "<color-adjuster>": {
-      "value": "[ [ <srgb-adjuster> | <hsl-adjuster> | <hwb-adjuster> | <xyz-adjuster> | <lab-adjuster> | <lch-adjuster> ] | alpha ] <percentage>?"
-    },
-    "<srgb-adjuster>": {
-      "value": "red || green || blue"
-    },
-    "<hsl-adjuster>": {
-      "value": "<hue-adjuster> || saturation || lightness"
-    },
-    "<hwb-adjuster>": {
-      "value": "<hue-adjuster> || whiteness || blackness"
-    },
-    "<xyz-adjuster>": {
-      "value": "x || y || z"
-    },
-    "<lab-adjuster>": {
-      "value": "lightness || a || b"
-    },
-    "<lch-adjuster>": {
-      "value": "lightness || chroma || <hue-adjuster>"
-    },
-    "<hue-adjuster>": {
-      "value": "hue [shorter | longer | increasing | decreasing | specified ]?"
+      "value": "color-mix([ in <colorspace> ]? <color>{2} && [ <percentage> ]?)"
     },
     "<color-contrast()>": {
-      "value": "color-contrast( <color> vs <color># )"
+      "value": "color-contrast( <color> vs <color>#{2,} )"
     },
     "<color-adjust()>": {
-      "value": "color-adjust( <color> [ color-adjuster <colorspace>? ]? )"
+      "value": "color-adjust( <color> [ color-adjuster [ in <colorspace> ]? ]? )"
     },
     "<rgb()>": {
       "value": "rgb( <percentage>{3} [ / <alpha-value> ]? ) | rgb( <number>{3} [ / <alpha-value> ]? ) | rgb( [ from <color> ]? [ <number> | <percentage> ]{3} [ / <alpha-value> ]? )"
