@@ -2251,7 +2251,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 26 February 2021
+- Crawled version: 1 March 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -6513,7 +6513,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
 - Crawled URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
-- Crawled version: 28 February 2021
+- Crawled version: 2 March 2021
 - Editor's Draft: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
 - Shortname: ecmascript
 
@@ -8853,7 +8853,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
 - Crawled URL: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
-- Crawled version: 01 March 2021
+- Crawled version: 02 March 2021
 - Editor's Draft: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
 - Latest published version: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
 - Shortname: image-resource
