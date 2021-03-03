@@ -4499,7 +4499,7 @@
         "partial": false
       },
       "HTMLObjectElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLObjectElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString data;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString useMap;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n  readonly attribute Document? contentDocument;\n  readonly attribute WindowProxy? contentWindow;\n  Document? getSVGDocument();\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLObjectElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString data;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute DOMString name;\n  readonly attribute HTMLFormElement? form;\n  [CEReactions] attribute DOMString width;\n  [CEReactions] attribute DOMString height;\n  readonly attribute Document? contentDocument;\n  readonly attribute WindowProxy? contentWindow;\n  Document? getSVGDocument();\n\n  readonly attribute boolean willValidate;\n  readonly attribute ValidityState validity;\n  readonly attribute DOMString validationMessage;\n  boolean checkValidity();\n  boolean reportValidity();\n  undefined setCustomValidity(DOMString error);\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLObjectElement",
         "inheritance": "HTMLElement",
@@ -4563,28 +4563,6 @@
           {
             "type": "attribute",
             "name": "name",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "useMap",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -36054,7 +36032,7 @@
       ],
       "HTMLObjectElement": [
         {
-          "fragment": "partial interface HTMLObjectElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString archive;\n  [CEReactions] attribute DOMString code;\n  [CEReactions] attribute boolean declare;\n  [CEReactions] attribute unsigned long hspace;\n  [CEReactions] attribute DOMString standby;\n  [CEReactions] attribute unsigned long vspace;\n  [CEReactions] attribute DOMString codeBase;\n  [CEReactions] attribute DOMString codeType;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString border;\n};",
+          "fragment": "partial interface HTMLObjectElement {\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute DOMString archive;\n  [CEReactions] attribute DOMString code;\n  [CEReactions] attribute boolean declare;\n  [CEReactions] attribute unsigned long hspace;\n  [CEReactions] attribute DOMString standby;\n  [CEReactions] attribute unsigned long vspace;\n  [CEReactions] attribute DOMString codeBase;\n  [CEReactions] attribute DOMString codeType;\n  [CEReactions] attribute DOMString useMap;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString border;\n};",
           "type": "interface",
           "name": "HTMLObjectElement",
           "inheritance": null,
@@ -36238,6 +36216,28 @@
             {
               "type": "attribute",
               "name": "codeType",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "useMap",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
