@@ -6773,7 +6773,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/fetch-metadata/](https://www.w3.org/TR/fetch-metadata/)
 - Crawled URL: [https://w3c.github.io/webappsec-fetch-metadata/](https://w3c.github.io/webappsec-fetch-metadata/)
-- Crawled version: 2 March 2021
+- Crawled version: 3 March 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-fetch-metadata/](https://w3c.github.io/webappsec-fetch-metadata/)
 - Latest published version: [https://www.w3.org/TR/fetch-metadata/](https://www.w3.org/TR/fetch-metadata/)
 - Shortname: fetch-metadata
