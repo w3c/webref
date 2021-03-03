@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Web App Manifest",
+    "title": "Web Application Manifest",
     "url": "https://w3c.github.io/manifest/"
   },
   "links": {
@@ -13,87 +13,43 @@
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/114929/status": [],
-    "https://www.w3.org/2020/Process-20200915/": [],
+    "https://www.w3.org/2020/Process-20200915/": [
+      "at-risk"
+    ],
     "https://html.spec.whatwg.org/": [
       "the-meta-element",
       "the-link-element",
       "top-level-browsing-context",
       "navigate",
       "same-origin",
+      "attr-meta-name",
+      "unordered-set-of-unique-space-separated-tokens",
       "active-document",
-      "concept-origin",
-      "unordered-set-of-unique-space-separated-tokens"
+      "concept-origin"
     ],
     "https://mimesniff.spec.whatwg.org/": [
       "mime-type",
       "json-mime-type",
       "computed-mime-type"
     ],
-    "https://dom.spec.whatwg.org/": [
-      "concept-document",
-      "document",
-      "concept-document-url",
-      "concept-node-append"
-    ],
-    "https://url.spec.whatwg.org/": [
-      "concept-url",
-      "concept-url-path",
-      "concept-url-parser"
-    ],
-    "https://infra.spec.whatwg.org/": [
-      "string-concatenate",
-      "boolean",
-      "list-iterate",
-      "assert",
-      "parse-json-bytes-to-a-javascript-value",
-      "ordered-map",
-      "user-agent",
-      "list-append",
-      "iteration-continue",
-      "ascii-case-insensitive",
-      "ordered-set",
-      "ascii-whitespace",
-      "split-on-ascii-whitespace",
-      "ascii-lowercase",
-      "list-contain",
-      "set-append",
-      "list-is-empty",
-      "list"
-    ],
-    "https://www.w3.org/TR/service-workers-1/": [
-      "scope-match-algorithm"
-    ],
-    "https://github.com/w3c/manifest/issues/646": [],
-    "https://fullscreen.spec.whatwg.org/": [],
-    "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode": [],
-    "https://annevankesteren.nl/2014/02/monkey-patch": [],
-    "https://fetch.spec.whatwg.org/": [
-      "concept-response",
-      "concept-response-body",
-      "concept-fetch"
-    ],
-    "https://github.com/w3c/manifest/issues/446": [],
-    "https://heycam.github.io/webidl/": [
-      "idl-USVString",
-      "idl-DOMString",
-      "idl-sequence",
-      "idl-boolean"
-    ],
-    "https://www.w3.org/TR/css-syntax-3/": [
-      "css-parse-something-according-to-a-css-grammar"
-    ],
-    "https://www.w3.org/TR/css-color-4/": [
-      "sRGB",
-      "alpha-channel"
-    ],
-    "https://www.w3.org/TR/screen-orientation/": [
-      "dom-orientationlocktype",
-      "dfn-default-screen-orientation"
-    ],
     "https://developer.mozilla.org/en-US/docs/Web/Manifest/dir": [],
     "https://www.unicode.org/reports/tr9/tr9-42.html": [
       "P3",
       "P1"
+    ],
+    "https://infra.spec.whatwg.org/": [
+      "ordered-map",
+      "user-agent",
+      "list",
+      "list-iterate",
+      "list-append",
+      "parse-json-bytes-to-a-javascript-value",
+      "ordered-set",
+      "split-on-ascii-whitespace",
+      "iteration-continue",
+      "set-append",
+      "list-is-empty",
+      "string-concatenate"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/Manifest/lang": [],
     "https://www.iana.org/assignments/language-subtag-registry": [],
@@ -114,25 +70,64 @@
     "https://github.com/pwa-builder/PWABuilder-CLI/issues/42": [
       "issuecomment-100335570"
     ],
+    "https://url.spec.whatwg.org/": [
+      "concept-url-parser",
+      "concept-url",
+      "concept-url-path"
+    ],
     "https://developer.mozilla.org/en-US/docs/Web/Manifest/icons": [],
     "https://developer.mozilla.org/en-US/docs/Web/Manifest/display": [],
     "https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation": [],
+    "https://www.w3.org/TR/screen-orientation/": [
+      "dfn-default-screen-orientation",
+      "dom-orientationlocktype"
+    ],
     "https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url": [],
     "https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color": [],
+    "https://www.w3.org/TR/css-color-4/": [
+      "alpha-channel",
+      "sRGB"
+    ],
     "https://www.w3.org/TR/mediaqueries-5/": [
       "descdef-media-prefers-color-scheme"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/Manifest/related_applications": [],
+    "https://github.com/w3c/manifest/issues/956": [],
     "https://developer.mozilla.org/en-US/docs/Web/Manifest/prefer_related_applications": [],
+    "https://github.com/w3c/manifest/issues/957": [],
     "https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color": [],
     "https://developer.mozilla.org/en-US/docs/Web/Manifest/shortcuts": [],
+    "https://annevankesteren.nl/2014/02/monkey-patch": [],
+    "https://fetch.spec.whatwg.org/": [
+      "concept-response",
+      "concept-response-body",
+      "concept-fetch"
+    ],
+    "https://dom.spec.whatwg.org/": [
+      "concept-document",
+      "document",
+      "concept-document-url"
+    ],
+    "https://www.w3.org/TR/css-syntax-3/": [
+      "css-parse-something-according-to-a-css-grammar"
+    ],
+    "https://github.com/w3c/manifest/issues/446": [],
     "https://www.w3.org/TR/image-resource/": [
-      "dom-imageresource",
+      "dfn-image-resource",
       "dfn-process-an-image-resource-from-json"
     ],
     "https://github.com/w3c/manifest/issues/905": [],
     "https://developer.mozilla.org/en-US/docs/Web/Manifest/description": [],
     "https://github.com/w3c/manifest/wiki/Platforms": [],
+    "https://www.w3.org/TR/service-workers-1/": [
+      "scope-match-algorithm"
+    ],
+    "https://github.com/w3c/manifest/issues/646": [],
+    "https://fullscreen.spec.whatwg.org/": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/display-mode": [],
+    "https://www.w3.org/TR/css-conditional-3/": [
+      "at-ruledef-media"
+    ],
     "https://www.ietf.org/iesg/": [],
     "https://www.iana.org/": [],
     "https://lists.w3.org/Archives/Public/public-webapps/": [],
@@ -154,9 +149,6 @@
     "https://github.com/SchemaStore/schemastore/issues/": [],
     "https://github.com/SchemaStore/schemastore": [],
     "https://en.wikipedia.org/wiki/Geotargeting": [],
-    "https://tc39.es/ecma262/": [
-      "sec-ecmascript-data-types-and-values"
-    ],
     "https://github.com/w3c/manifest/commit/10c255d": [],
     "https://github.com/w3c/manifest/pull/900": [],
     "https://github.com/w3c/manifest/commit/72ba21c": [],
@@ -186,12 +178,13 @@
     "https://github.com/w3c/manifest/pull/811": [],
     "https://github.com/w3c/manifest/commit/f8f227e": [],
     "https://github.com/w3c/manifest/pull/790": [],
+    "https://github.com/w3c/manifest/commit/32b497c": [],
     "https://tools.ietf.org/html/bcp47": [],
     "https://www.w3.org/TR/CSP3/": [],
     "https://tools.ietf.org/html/rfc2318": [],
     "https://www.w3.org/TR/cssom-view-1/": [],
-    "https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf": [],
     "https://tools.ietf.org/html/rfc4329": [],
+    "https://tools.ietf.org/html/rfc8259": [],
     "https://www.w3.org/TR/mediaqueries-4/": [],
     "https://tools.ietf.org/html/rfc2046": [],
     "https://tools.ietf.org/html/rfc2119": [],
