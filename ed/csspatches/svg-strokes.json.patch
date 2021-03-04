@@ -1,0 +1,27 @@
+From b77110ebdb8648d67ec74076465c08d93a0a4784 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 4 Mar 2021 17:02:08 +0100
+Subject: [PATCH] Separate stacked combinators
+
+The parser does not support stacked combinators, see discussion in:
+https://github.com/w3c/reffy/issues/494#issuecomment-790713119
+---
+ ed/css/svg-strokes.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/css/svg-strokes.json b/ed/css/svg-strokes.json
+index e4fffd6d3..59c4f4376 100644
+--- a/ed/css/svg-strokes.json
++++ b/ed/css/svg-strokes.json
+@@ -129,7 +129,7 @@
+   "descriptors": {},
+   "valuespaces": {
+     "<dasharray>": {
+-      "value": "[ <length> | <percentage> | <number> ]#*"
++      "value": "[ [ <length> | <percentage> | <number> ]# ]*"
+     }
+   }
+ }
+-- 
+2.30.1.windows.1
+

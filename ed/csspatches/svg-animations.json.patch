@@ -1,0 +1,27 @@
+From 9768945ec90dbe34c0fda1ec2a9518fed0481fc9 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 4 Mar 2021 16:49:28 +0100
+Subject: [PATCH] Enclose comma into quotes for use with quantifier
+
+Parser does not accept the syntax, see discussion in:
+https://github.com/w3c/reffy/issues/494#issuecomment-790713119
+---
+ ed/css/svg-animations.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/css/svg-animations.json b/ed/css/svg-animations.json
+index 36762e588..53acfc5b7 100644
+--- a/ed/css/svg-animations.json
++++ b/ed/css/svg-animations.json
+@@ -7,7 +7,7 @@
+   "descriptors": {},
+   "valuespaces": {
+     "<control-point>": {
+-      "value": "<number> ,? <number> ,? <number> ,? <number>"
++      "value": "<number> ','? <number> ','? <number> ','? <number>"
+     }
+   }
+ }
+-- 
+2.30.1.windows.1
+
