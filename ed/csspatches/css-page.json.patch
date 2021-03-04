@@ -1,0 +1,25 @@
+From b03e6c9108b37d5888980765afb2844b8f7cec99 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 4 Mar 2021 16:09:10 +0100
+Subject: [PATCH] Drop invalid comment in value definition
+
+---
+ ed/css/css-page.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/css/css-page.json b/ed/css/css-page.json
+index bfcaef74d..759e0cae0 100644
+--- a/ed/css/css-page.json
++++ b/ed/css/css-page.json
+@@ -54,7 +54,7 @@
+       "value": "[ <ident-token>? <pseudo-page>* ]!"
+     },
+     "<pseudo-page>": {
+-      "value": "':' [ left | right | first | blank ] /* Margin rules */"
++      "value": "':' [ left | right | first | blank ]"
+     },
+     "<page-size>": {
+       "prose": "A page size can be specified using one of the following media names. This is the equivalent of specifying size using length values. The definition of the media names comes from Media Standardized Names [PWGMSN]. A5 Equivalent to the size of ISO A5 media: 148mm wide and 210 mm high. A4 Equivalent to the size of ISO A4 media: 210 mm wide and 297 mm high. A3 Equivalent to the size of ISO A3 media: 297mm wide and 420mm high. B5 Equivalent to the size of ISO B5 media: 176mm wide by 250mm high. B4 Equivalent to the size of ISO B4 media: 250mm wide by 353mm high. JIS-B5 Equivalent to the size of JIS B5 media: 182mm wide by 257mm high. JIS-B4 Equivalent to the size of JIS B4 media: 257mm wide by 364mm high. letter Equivalent to the size of North American letter media: 8.5 inches wide and 11 inches high legal Equivalent to the size of North American legal: 8.5 inches wide by 14 inches high. ledger Equivalent to the size of North American ledger: 11 inches wide by 17 inches high."
+-- 
+2.30.1.windows.1
+
