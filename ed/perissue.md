@@ -71,8 +71,9 @@ Basically all specifications have normative dependencies on some other specifica
 ## List of specifications with invalid WebIDL content
 
 - [SVG Paths](https://svgwg.org/specs/paths/)
+- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 
-=> 1 specification found
+=> 2 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
