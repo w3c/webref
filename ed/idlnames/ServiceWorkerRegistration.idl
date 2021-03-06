@@ -27,26 +27,10 @@ partial interface ServiceWorkerRegistration {
   readonly attribute BackgroundFetchManager backgroundFetch;
 };
 
-// Source: Web Background Synchronization (https://wicg.github.io/background-sync/spec/)
-partial interface ServiceWorkerRegistration {
-  readonly attribute SyncManager sync;
-};
-
-// Source: Content Index (https://wicg.github.io/content-index/spec/)
-partial interface ServiceWorkerRegistration {
-  [SameObject] readonly attribute ContentIndex index;
-};
-
 // Source: Cookie Store API (https://wicg.github.io/cookie-store/)
 [Exposed=(ServiceWorker,Window)]
 partial interface ServiceWorkerRegistration {
   [SameObject] readonly attribute CookieStoreManager cookies;
-};
-
-// Source: Web Periodic Background Synchronization (https://wicg.github.io/periodic-background-sync/)
-[Exposed=(Window,Worker)]
-partial interface ServiceWorkerRegistration {
-  readonly attribute PeriodicSyncManager periodicSync;
 };
 
 // Source: Payment Handler API (https://www.w3.org/TR/payment-handler/)

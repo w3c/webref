@@ -1,8 +1,166 @@
 % Reffy crawl
 % Reffy
-% March 05, 2021
+% March 06, 2021
 
 383 specifications were crawled in this report.
+
+
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [Compression Streams]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 68)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [Contact Picker API]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 70)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [Content Index]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 71)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [CORS and RFC1918]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 73)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [DataCue API]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 77)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [Get Installed Related Apps API]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 84)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [isInputPending]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 89)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [JS Self-Profiling API]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 90)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [Keyboard Map]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 92)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [Media Feeds]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 96)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [Save Data API]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 107)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [Text Fragments]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 108)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [Web Background Synchronization]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 66)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [Web OTP API]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 119)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+- [Web Periodic Background Synchronization]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 102)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+
+=> 15 specifications found
 
 
 ## Specifications without normative dependencies
@@ -88,7 +246,6 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [Frame Timing](https://wicg.github.io/frame-timing/)
-- [Private Network Access](https://wicg.github.io/private-network-access/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [SVG Markers](https://svgwg.org/specs/markers/)
@@ -137,16 +294,15 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - [WebRTC Priority Control API](https://w3c.github.io/webrtc-priority/)
 
-=> 50 specifications found
+=> 49 specifications found
 
 
 
 ## List of [Exposed] names not defined in the specifications crawled
 
 - `RTCIdentityProviderGlobalScope` used in [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
-- `SecureContext` used in [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 
-=> 2 [Exposed] names found
+=> 1 [Exposed] name found
 
 Please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
 
@@ -156,7 +312,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/)
-- `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [SVG Animations](https://svgwg.org/specs/animations/), [SVG Markers](https://svgwg.org/specs/markers/), [Web Background Synchronization](https://wicg.github.io/background-sync/spec/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/), [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/), [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/), [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/), [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/), [WebGL OES_draw_buffers_indexed Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/), [WebGL OES_vertex_array_object Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/), [WebGL OVR_multiview2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/), [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/), [WebGL WEBGL_lose_context Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/), [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/), [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/), [WebXR Anchors Module](https://immersive-web.github.io/anchors/), [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
+- `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [SVG Animations](https://svgwg.org/specs/animations/), [SVG Markers](https://svgwg.org/specs/markers/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/), [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/), [WebGL EXT_disjoint_timer_query Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/), [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/), [WebGL OES_draw_buffers_indexed Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/), [WebGL OES_vertex_array_object Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/), [WebGL OVR_multiview2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/), [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/), [WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/), [WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/), [WebGL WEBGL_lose_context Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/), [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/), [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/), [WebXR Anchors Module](https://immersive-web.github.io/anchors/), [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 
 => 4 WebIDL names found
 
@@ -167,12 +323,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 ## List of WebIDL names defined in more than one spec
 
 - `GamepadMappingType` defined in [Gamepad](https://w3c.github.io/gamepad/) and [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
-- `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - `MessageEventSource` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/) and [Portals](https://wicg.github.io/portals/)
 - `PermissionState` defined in [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/) and [Permissions](https://w3c.github.io/permissions/)
 - `SVGMarkerElement` defined in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) and [SVG Markers](https://svgwg.org/specs/markers/)
 
-=> 5 WebIDL names found
+=> 4 WebIDL names found
 
 "There can be only one"...
 
@@ -181,12 +336,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/) uses `Point2D` but does not reference [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html) uses `Point2D` but does not reference [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
-- [Content Index](https://wicg.github.io/content-index/spec/) uses `ImageResource` but does not reference [Image Resource](https://w3c.github.io/image-resource/)
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) uses `Gamepad` but does not reference [Gamepad](https://w3c.github.io/gamepad/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
-- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
-- [Private Network Access](https://wicg.github.io/private-network-access/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [SVG Markers](https://svgwg.org/specs/markers/) uses:
     * `DOMPoint` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
     * `DOMPointReadOnly` but does not reference [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
@@ -242,7 +394,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 50 missing references for IDL definitions found in 23 specifications
+=> 47 missing references for IDL definitions found in 20 specifications
 
 
 ## No definition for CSS properties
@@ -256,8 +408,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 ## No definition for IDL properties
 
-- [Content Index](https://wicg.github.io/content-index/spec/):
-    * `constructor(type, init)` with type `constructor` for [`ContentIndexEvent`](https://wicg.github.io/content-index/spec/#contentindexevent)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
     * `"loading"` with type `enum-value` for [`DocumentReadyState`](https://html.spec.whatwg.org/multipage/dom.html#documentreadystate), but found [`loading`](https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading) with type `element-attr` for `img`
     * `"interactive"` with type `enum-value` for [`DocumentReadyState`](https://html.spec.whatwg.org/multipage/dom.html#documentreadystate)
@@ -695,7 +845,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `multiDrawArraysInstancedBaseInstanceWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
     * `multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
 
-=> 393 properties without definition found in 45 specifications
+=> 392 properties without definition found in 44 specifications
 
 
 ## Possibly no definition for CSS properties
@@ -808,7 +958,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2014/CR-compositing-1-20140220/`](https://www.w3.org/TR/2014/CR-compositing-1-20140220/) but does not list it in its references
     * [`https://www.w3.org/TR/2013/WD-compositing-1-20131010/`](https://www.w3.org/TR/2013/WD-compositing-1-20131010/) but does not list it in its references
     * [`https://www.w3.org/TR/2013/WD-compositing-1-20130625/`](https://www.w3.org/TR/2013/WD-compositing-1-20130625/) but does not list it in its references
-- [Content Index](https://wicg.github.io/content-index/spec/) links to [`https://w3c.github.io/image-resource/`](https://w3c.github.io/image-resource/) but does not list it in its references
 - [Core Accessibility API Mappings 1.2](https://w3c.github.io/core-aam/) links to:
     * [`https://www.w3.org/TR/wai-aria-practices/`](https://www.w3.org/TR/wai-aria-practices/) but does not list it in its references
     * [`https://www.w3.org/TR/wai-aria-implementation/`](https://www.w3.org/TR/wai-aria-implementation/) but does not list it in its references
@@ -1305,8 +1454,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/) links to:
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
     * [`https://www.w3.org/TR/css-masking-1/`](https://www.w3.org/TR/css-masking-1/) but does not list it in its references
-- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/) links to [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html) but does not list it in its references
-- [Keyboard Map](https://wicg.github.io/keyboard-map/) links to [`https://w3c.github.io/keyboard-lock/`](https://w3c.github.io/keyboard-lock/) but does not list it in its references
 - [Layout Instability API](https://wicg.github.io/layout-instability/) links to:
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
     * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/) but does not list it in its references
@@ -1358,7 +1505,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
     * [`https://w3c.github.io/webappsec/specs/CSP2/`](https://w3c.github.io/webappsec/specs/CSP2/) but does not list it in its references
     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
-- [Save Data API](https://wicg.github.io/savedata/) links to [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/) but does not list it in its references
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) links to:
     * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/) but does not list it in its references
@@ -1441,7 +1587,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but does not list it in its references
     * [`https://www.w3.org/TR/geometry-1/`](https://www.w3.org/TR/geometry-1/) but does not list it in its references
 - [SVG Strokes](https://svgwg.org/specs/strokes/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but does not list it in its references
-- [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/) links to [`https://w3c.github.io/selection-api/`](https://w3c.github.io/selection-api/) but does not list it in its references
 - [The Storage Access API](https://privacycg.github.io/storage-access/) links to [`https://w3c.github.io/webdriver/webdriver-spec.html`](https://w3c.github.io/webdriver/webdriver-spec.html) but does not list it in its references
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/) links to [`https://www.w3.org/TR/touch-events-extensions/`](https://www.w3.org/TR/touch-events-extensions/) but does not list it in its references
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/) links to:
@@ -1458,9 +1603,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/string-meta/`](https://www.w3.org/TR/string-meta/) but does not list it in its references
     * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/) but does not list it in its references
     * [`https://w3c.github.io/IntersectionObserver/v2/`](https://w3c.github.io/IntersectionObserver/v2/) but does not list it in its references
-- [Web Background Synchronization](https://wicg.github.io/background-sync/spec/) links to:
-    * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/) but does not list it in its references
-    * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/) but does not list it in its references
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/) links to [`https://w3c.github.io/fingerprinting-guidance/`](https://w3c.github.io/fingerprinting-guidance/) but does not list it in its references
 - [Web Locks API](https://wicg.github.io/web-locks/) links to [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [Web Share API](https://w3c.github.io/web-share/) links to [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/) but does not list it in its references
@@ -1488,7 +1630,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 592 missing references for links found in 167 specifications
+=> 585 missing references for links found in 161 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1529,12 +1671,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/) but related reference "SVG" uses URL [`https://www.w3.org/TR/SVG/`](https://www.w3.org/TR/SVG/)
     * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG" uses URL [`https://www.w3.org/TR/SVG/`](https://www.w3.org/TR/SVG/)
     * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
-- [Contact Picker API](https://wicg.github.io/contact-api/spec/) links to:
-    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
-    * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
-- [Content Index](https://wicg.github.io/content-index/spec/) links to:
-    * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
-    * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) links to:
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but related reference "REPORTING-1" uses URL [`https://www.w3.org/TR/reporting-1/`](https://www.w3.org/TR/reporting-1/)
@@ -1702,7 +1838,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/) links to [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - [Input Events Level 2](https://w3c.github.io/input-events/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [Intervention Reporting](https://wicg.github.io/intervention-reporting/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but related reference "REPORTING-1" uses URL [`https://www.w3.org/TR/reporting-1/`](https://www.w3.org/TR/reporting-1/)
-- [Keyboard Map](https://wicg.github.io/keyboard-map/) links to [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/) links to:
     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/) but related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
@@ -1770,7 +1905,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/) but related reference "REFERRER-POLICY" uses URL [`https://www.w3.org/TR/referrer-policy/`](https://www.w3.org/TR/referrer-policy/)
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
-- [Private Network Access](https://wicg.github.io/private-network-access/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/) links to [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/) but related reference "CSSOM" uses URL [`https://drafts.csswg.org/cssom/`](https://drafts.csswg.org/cssom/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/) links to [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 - [Relinquishing Permissions](https://wicg.github.io/permissions-revoke/) links to [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
@@ -1848,7 +1982,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/) but related reference "Permissions-Policy" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
-- [Web Background Synchronization](https://wicg.github.io/background-sync/spec/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/) links to:
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
@@ -1856,11 +1989,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Web Locks API](https://wicg.github.io/web-locks/) links to:
     * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/) but related reference "IndexedDB-2" uses URL [`https://www.w3.org/TR/IndexedDB-2/`](https://www.w3.org/TR/IndexedDB-2/)
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "Service-Workers" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
-- [Web OTP API](https://wicg.github.io/web-otp/) links to [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/) but related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
-- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/) links to:
-    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
-    * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
-    * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
 - [WebCodecs](https://wicg.github.io/web-codecs/) links to [`https://w3c.github.io/media-capabilities/`](https://w3c.github.io/media-capabilities/) but related reference "MEDIA-CAPABILITIES" uses URL [`https://www.w3.org/TR/media-capabilities/`](https://www.w3.org/TR/media-capabilities/)
 - [WebDriver](https://w3c.github.io/webdriver/) links to:
     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
@@ -1884,7 +2012,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 319 inconsistent references for links found in 176 specifications
+=> 308 inconsistent references for links found in 169 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -1991,11 +2119,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag)
      * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-media`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-media)
      * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag)
-- [Contact Picker API](https://wicg.github.io/contact-api/spec/):
-     * [`https://html.spec.whatwg.org/#valid-e-mail-address`](https://html.spec.whatwg.org/#valid-e-mail-address)
-- [Content Index](https://wicg.github.io/content-index/spec/):
-     * [`https://html.spec.whatwg.org/#concept-location-ancestor-origins-list`](https://html.spec.whatwg.org/#concept-location-ancestor-origins-list)
-     * [`https://w3c.github.io/image-resource/#dfn-src`](https://w3c.github.io/image-resource/#dfn-src)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/):
      * [`https://html.spec.whatwg.org/#script`](https://html.spec.whatwg.org/#script)
      * [`https://html.spec.whatwg.org/#concept-request-origin`](https://html.spec.whatwg.org/#concept-request-origin)
@@ -2248,8 +2371,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://compat.spec.whatwg.org/#event-orientationchange`](https://compat.spec.whatwg.org/#event-orientationchange)
 - [DOM Standard](https://dom.spec.whatwg.org/):
      * [`https://html.spec.whatwg.org/#script`](https://html.spec.whatwg.org/#script)
-- [Early detection of input events](https://wicg.github.io/is-input-pending/):
-     * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
 - [Element Timing API](https://wicg.github.io/element-timing/):
      * [`https://html.spec.whatwg.org/#image-request`](https://html.spec.whatwg.org/#image-request)
      * [`https://html.spec.whatwg.org/#list-of-available-images`](https://html.spec.whatwg.org/#list-of-available-images)
@@ -2477,10 +2598,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/):
      * [`https://html.spec.whatwg.org/#currently-focused-area-of-a-top-level-browsing-context`](https://html.spec.whatwg.org/#currently-focused-area-of-a-top-level-browsing-context)
      * [`https://www.w3.org/TR/uievents-code/#key-code-attribute-value`](https://www.w3.org/TR/uievents-code/#key-code-attribute-value)
-- [Keyboard Map](https://wicg.github.io/keyboard-map/):
-     * [`https://www.w3.org/TR/uievents/#dead-key`](https://www.w3.org/TR/uievents/#dead-key)
-     * [`https://www.w3.org/TR/uievents-key/#key-attribute-value`](https://www.w3.org/TR/uievents-key/#key-attribute-value)
-     * [`https://www.w3.org/TR/uievents-code/#writing-system-keys`](https://www.w3.org/TR/uievents-code/#writing-system-keys)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/):
      * [`https://wicg.github.io/element-timing/#get-an-element`](https://wicg.github.io/element-timing/#get-an-element)
      * [`https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry`](https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry)
@@ -2559,8 +2676,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/):
      * [`https://html.spec.whatwg.org/#ended-playback`](https://html.spec.whatwg.org/#ended-playback)
      * [`https://html.spec.whatwg.org/#concept-canvas-origin-clean`](https://html.spec.whatwg.org/#concept-canvas-origin-clean)
-- [Media Feeds](https://wicg.github.io/media-feeds/):
-     * [`https://html.spec.whatwg.org/#ready-for-post-load-tasks`](https://html.spec.whatwg.org/#ready-for-post-load-tasks)
 - [Media Playback Quality](https://w3c.github.io/media-playback-quality/):
      * [`https://html.spec.whatwg.org/#media-element-load-algorithm`](https://html.spec.whatwg.org/#media-element-load-algorithm)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/):
@@ -2717,14 +2832,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#enumerated-attribute`](https://html.spec.whatwg.org/#enumerated-attribute)
      * [`https://html.spec.whatwg.org/#invalid-value-default`](https://html.spec.whatwg.org/#invalid-value-default)
      * [`https://html.spec.whatwg.org/#missing-value-default`](https://html.spec.whatwg.org/#missing-value-default)
-- [Private Network Access](https://wicg.github.io/private-network-access/):
-     * [`https://fetch.spec.whatwg.org/#concept-http-network-fetch`](https://fetch.spec.whatwg.org/#concept-http-network-fetch)
-     * [`https://fetch.spec.whatwg.org/#cors-preflight-fetch-0`](https://fetch.spec.whatwg.org/#cors-preflight-fetch-0)
-     * [`https://fetch.spec.whatwg.org/#concept-cache`](https://fetch.spec.whatwg.org/#concept-cache)
-     * [`https://fetch.spec.whatwg.org/#concept-websocket-establish`](https://fetch.spec.whatwg.org/#concept-websocket-establish)
-     * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
-     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
-     * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
 - [Proximity Sensor](https://w3c.github.io/proximity/):
      * [`https://w3c.github.io/sensors/#reduce-accuracy`](https://w3c.github.io/sensors/#reduce-accuracy)
      * [`https://w3c.github.io/sensors/#limit-max-frequency`](https://w3c.github.io/sensors/#limit-max-frequency)
@@ -2838,7 +2945,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
      * [`https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object)
      * [`https://html.spec.whatwg.org/#concept-location-ancestor-origins-list`](https://html.spec.whatwg.org/#concept-location-ancestor-origins-list)
-     * [`https://wicg.github.io/BackgroundSync/spec/#fire-a-sync-event`](https://wicg.github.io/BackgroundSync/spec/#fire-a-sync-event)
      * [`https://w3c.github.io/payment-handler/#dfn-handling-a-canmakepaymentevent`](https://w3c.github.io/payment-handler/#dfn-handling-a-canmakepaymentevent)
      * [`https://w3c.github.io/payment-handler/#dfn-handling-a-paymentrequestevent`](https://w3c.github.io/payment-handler/#dfn-handling-a-paymentrequestevent)
 - [Streams Standard](https://streams.spec.whatwg.org/):
@@ -2848,22 +2954,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#message-port-post-message-steps`](https://html.spec.whatwg.org/#message-port-post-message-steps)
      * [`https://html.spec.whatwg.org/#port-message-queue`](https://html.spec.whatwg.org/#port-message-queue)
      * [`https://heycam.github.io/webidl/#idl-constructors`](https://heycam.github.io/webidl/#idl-constructors)
-- [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/):
-     * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
-     * [`https://html.spec.whatwg.org/#traverse-the-history`](https://html.spec.whatwg.org/#traverse-the-history)
-     * [`https://html.spec.whatwg.org/#scroll-to-the-fragment-identifier`](https://html.spec.whatwg.org/#scroll-to-the-fragment-identifier)
-     * [`https://html.spec.whatwg.org/#navigation-params-request`](https://html.spec.whatwg.org/#navigation-params-request)
-     * [`https://html.spec.whatwg.org/#latest-entry`](https://html.spec.whatwg.org/#latest-entry)
-     * [`https://html.spec.whatwg.org/#session-history`](https://html.spec.whatwg.org/#session-history)
-     * [`https://html.spec.whatwg.org/#tlbc-group`](https://html.spec.whatwg.org/#tlbc-group)
-     * [`https://html.spec.whatwg.org/#browsing-context-set`](https://html.spec.whatwg.org/#browsing-context-set)
-     * [`https://html.spec.whatwg.org/#try-to-scroll-to-the-fragment`](https://html.spec.whatwg.org/#try-to-scroll-to-the-fragment)
-     * [`https://html.spec.whatwg.org/#the-indicated-part-of-the-document`](https://html.spec.whatwg.org/#the-indicated-part-of-the-document)
-     * [`https://html.spec.whatwg.org/#serializes-as-void`](https://html.spec.whatwg.org/#serializes-as-void)
-     * [`https://html.spec.whatwg.org/#being-rendered`](https://html.spec.whatwg.org/#being-rendered)
-     * [`https://html.spec.whatwg.org/#restore-persisted-state`](https://html.spec.whatwg.org/#restore-persisted-state)
-     * [`https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view`](https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view)
-     * [`https://w3c.github.io/selection-api/#dfn-selection`](https://w3c.github.io/selection-api/#dfn-selection)
 - [The Screen Fold API](https://w3c.github.io/screen-fold/):
      * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/):
@@ -2969,9 +3059,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webdriver/#dfn-set-a-property`](https://w3c.github.io/webdriver/#dfn-set-a-property)
      * [`https://w3c.github.io/webdriver/#dfn-unsupported-operation`](https://w3c.github.io/webdriver/#dfn-unsupported-operation)
      * [`https://w3c.github.io/webdriver/#dfn-success`](https://w3c.github.io/webdriver/#dfn-success)
-- [Web Background Synchronization](https://wicg.github.io/background-sync/spec/):
-     * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#dfn-service-worker-client-frame-type`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#dfn-service-worker-client-frame-type)
-     * [`https://notifications.spec.whatwg.org/#concept-notification`](https://notifications.spec.whatwg.org/#concept-notification)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/):
      * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
 - [Web IDL](https://heycam.github.io/webidl/):
@@ -2983,12 +3070,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://dom.spec.whatwg.org/#abortsignal-abort-algorithms`](https://dom.spec.whatwg.org/#abortsignal-abort-algorithms)
      * [`https://encoding.spec.whatwg.org/#decoder`](https://encoding.spec.whatwg.org/#decoder)
      * [`https://encoding.spec.whatwg.org/#encoder`](https://encoding.spec.whatwg.org/#encoder)
-- [Web OTP API](https://wicg.github.io/web-otp/):
-     * [`https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors`](https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors)
-- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/):
-     * [`https://w3c.github.io/ServiceWorker/#dfn-service-worker-client-frame-type`](https://w3c.github.io/ServiceWorker/#dfn-service-worker-client-frame-type)
-     * [`https://wicg.github.io/background-fetch/#background-fetch`](https://wicg.github.io/background-fetch/#background-fetch)
-     * [`https://wicg.github.io/BackgroundSync/spec/#online`](https://wicg.github.io/BackgroundSync/spec/#online)
 - [Web Serial API](https://wicg.github.io/serial/):
      * [`https://streams.spec.whatwg.org/#desired-size-to-fill-a-streams-internal-queue`](https://streams.spec.whatwg.org/#desired-size-to-fill-a-streams-internal-queue)
      * [`https://streams.spec.whatwg.org/#internal-queues`](https://streams.spec.whatwg.org/#internal-queues)
@@ -3264,7 +3345,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1183 problematic external links found in 189 specifications
+=> 1146 problematic external links found in 179 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -3293,7 +3374,6 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/):
      * [`https://www.w3.org/TR/css-page-3/#left-right-first`](https://www.w3.org/TR/css-page-3/#left-right-first)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/):
-     * [`https://www.w3.org/TR/css-syntax-3/#name-code-point`](https://www.w3.org/TR/css-syntax-3/#name-code-point)
      * [`https://www.w3.org/TR/css3-break/#btw-blocks`](https://www.w3.org/TR/css3-break/#btw-blocks)
      * [`https://www.w3.org/TR/css3-break/#end-block`](https://www.w3.org/TR/css3-break/#end-block)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/):
@@ -3634,8 +3714,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/):
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
-- [Keyboard Map](https://wicg.github.io/keyboard-map/):
-     * [`https://www.w3.org/TR/uievents-code/#figure-keyboard-codes-alphanum1`](https://www.w3.org/TR/uievents-code/#figure-keyboard-codes-alphanum1)
 - [Layout Instability API](https://wicg.github.io/layout-instability/):
      * [`https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp`](https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/):
@@ -3649,9 +3727,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Media Capture Automation](https://w3c.github.io/mediacapture-automation/):
      * [`https://www.w3.org/TR/mediacapture-streams/#def-constraint-frameRate`](https://www.w3.org/TR/mediacapture-streams/#def-constraint-frameRate)
      * [`https://www.w3.org/TR/mediacapture-streams/#def-constraint-sampleRate`](https://www.w3.org/TR/mediacapture-streams/#def-constraint-sampleRate)
-- [Media Feeds](https://wicg.github.io/media-feeds/):
-     * [`https://html.spec.whatwg.org/#case-sensitive`](https://html.spec.whatwg.org/#case-sensitive)
-     * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/):
      * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindomstring`](https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindomstring)
      * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindouble`](https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindouble)
@@ -3672,8 +3747,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Preload](https://w3c.github.io/preload/):
      * [`https://html.spec.whatwg.org/#resolve-a-url`](https://html.spec.whatwg.org/#resolve-a-url)
      * [`https://html.spec.whatwg.org/#origin-2`](https://html.spec.whatwg.org/#origin-2)
-- [Private Network Access](https://wicg.github.io/private-network-access/):
-     * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/):
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/):
@@ -3786,8 +3859,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-errorevent-interface`](https://html.spec.whatwg.org/#the-errorevent-interface)
      * [`https://heycam.github.io/webidl/#es-to-sequence`](https://heycam.github.io/webidl/#es-to-sequence)
      * [`https://heycam.github.io/webidl/#dictionary-to-es`](https://heycam.github.io/webidl/#dictionary-to-es)
-- [Web Background Synchronization](https://wicg.github.io/background-sync/spec/):
-     * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#extendable-event-init-dictionary`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#extendable-event-init-dictionary)
 - [WebDriver](https://w3c.github.io/webdriver/):
      * [`https://html.spec.whatwg.org/#dom-document-activeelement`](https://html.spec.whatwg.org/#dom-document-activeelement)
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
@@ -3797,7 +3868,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
      * [`https://heycam.github.io/webidl/#dfn-DOMException`](https://heycam.github.io/webidl/#dfn-DOMException)
 
-=> 461 problematic external links found in 66 specifications
+=> 455 problematic external links found in 62 specifications
 
 
 ## Broken external links
@@ -3820,6 +3891,8 @@ Links in the body of a specification should be to the same document as that poin
 - [Beacon](https://w3c.github.io/beacon/):
      * [`https://www.w3.org/TR/page-visibility-2/#dfn-visibilitychange`](https://www.w3.org/TR/page-visibility-2/#dfn-visibilitychange)
      * [`https://www.w3.org/TR/page-visibility-2/#dfn-unload`](https://www.w3.org/TR/page-visibility-2/#dfn-unload)
+- [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/):
+     * [`https://wicg.github.io/savedata/#save-data-request-header-field`](https://wicg.github.io/savedata/#save-data-request-header-field)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/):
      * [`https://html.spec.whatwg.org/#drag-data-item-kind`](https://html.spec.whatwg.org/#drag-data-item-kind)
      * [`https://html.spec.whatwg.org/#drag-data-item-type-string`](https://html.spec.whatwg.org/#drag-data-item-type-string)
@@ -3827,12 +3900,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Compatibility Standard](https://compat.spec.whatwg.org/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-transitions/#animtype-color`](https://drafts.csswg.org/css-transitions/#animtype-color)
-- [Contact Picker API](https://wicg.github.io/contact-api/spec/):
-     * [`https://html.spec.whatwg.org/#responsible-browsing-context`](https://html.spec.whatwg.org/#responsible-browsing-context)
-     * [`https://html.spec.whatwg.org/#triggered-by-user-activation`](https://html.spec.whatwg.org/#triggered-by-user-activation)
-     * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
-- [Content Index](https://wicg.github.io/content-index/spec/):
-     * [`https://html.spec.whatwg.org/#replacement-enabled`](https://html.spec.whatwg.org/#replacement-enabled)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/):
      * [`https://fetch.spec.whatwg.org/#concept-request-target-browsing-context`](https://fetch.spec.whatwg.org/#concept-request-target-browsing-context)
      * [`https://w3c.github.io/reporting/#group`](https://w3c.github.io/reporting/#group)
@@ -3898,9 +3965,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css3-selectors/#first-letter`](https://www.w3.org/TR/css3-selectors/#first-letter)
      * [`https://drafts.csswg.org/css-color/#cmyk-colors`](https://drafts.csswg.org/css-color/#cmyk-colors)
      * [`https://drafts.csswg.org/css-overflow-3/#paginated-overflow`](https://drafts.csswg.org/css-overflow-3/#paginated-overflow)
-- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/):
-     * [`https://www.w3.org/TR/css-writing-modes-3/#start`](https://www.w3.org/TR/css-writing-modes-3/#start)
-     * [`https://www.w3.org/TR/css-writing-modes-3/#end`](https://www.w3.org/TR/css-writing-modes-3/#end)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/):
@@ -3990,8 +4054,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/dom/#syntaxerror`](https://www.w3.org/TR/dom/#syntaxerror)
 - [DOM Standard](https://dom.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-createcontextualfragment-fragment`](https://w3c.github.io/DOM-Parsing/#dfn-createcontextualfragment-fragment)
-- [Early detection of input events](https://wicg.github.io/is-input-pending/):
-     * [`https://heycam.github.io/webidl/#idl-Exposed`](https://heycam.github.io/webidl/#idl-Exposed)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/):
      * [`https://heycam.github.io/webidl/#dfn-present`](https://heycam.github.io/webidl/#dfn-present)
      * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
@@ -4021,18 +4083,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webdriver/#dfn-session`](https://w3c.github.io/webdriver/#dfn-session)
      * [`https://w3c.github.io/webdriver/#dfn-local-end`](https://w3c.github.io/webdriver/#dfn-local-end)
      * [`https://w3c.github.io/webdriver/#handling-errors`](https://w3c.github.io/webdriver/#handling-errors)
-- [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/):
-     * [`https://www.w3.org/TR/appmanifest/#dom-fingerprint`](https://www.w3.org/TR/appmanifest/#dom-fingerprint)
-     * [`https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource`](https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource)
-     * [`https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-platform`](https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-platform)
-     * [`https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-id`](https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-id)
-     * [`https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-url`](https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-url)
-     * [`https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-min_version`](https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-min_version)
-     * [`https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-fingerprints`](https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-fingerprints)
-     * [`https://www.w3.org/TR/appmanifest/#dom-webappmanifest`](https://www.w3.org/TR/appmanifest/#dom-webappmanifest)
-     * [`https://www.w3.org/TR/appmanifest/#obtaining`](https://www.w3.org/TR/appmanifest/#obtaining)
-     * [`https://www.w3.org/TR/appmanifest/#dom-webappmanifest-related_applications`](https://www.w3.org/TR/appmanifest/#dom-webappmanifest-related_applications)
-     * [`https://html.spec.whatwg.org/#responsible-browsing-context`](https://html.spec.whatwg.org/#responsible-browsing-context)
 - [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/):
      * [`https://w3c.github.io/graphics-aria/#graphics-document`](https://w3c.github.io/graphics-aria/#graphics-document)
      * [`https://w3c.github.io/graphics-aria/#graphics-object`](https://w3c.github.io/graphics-aria/#graphics-object)
@@ -4239,23 +4289,15 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-box/#containing-block`](https://drafts.csswg.org/css-box/#containing-block)
      * [`https://www.w3.org/TR/hr-time/#domhighrestimestamp`](https://www.w3.org/TR/hr-time/#domhighrestimestamp)
      * [`https://www.w3.org/TR/hr-time/#time-origin`](https://www.w3.org/TR/hr-time/#time-origin)
-- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/):
-     * [`https://www.w3.org/TR/hr-time-2/#dfn-performance`](https://www.w3.org/TR/hr-time-2/#dfn-performance)
-     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value)
-     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point)
-     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type)
-     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value)
 - [JSON modules](https://tc39.es/proposal-json-modules/):
      * [`https://heycam.github.io/webidl/#synthetic-module-records`](https://heycam.github.io/webidl/#synthetic-module-records)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/):
+     * [`https://wicg.github.io/keyboard-map/#navigator-interface`](https://wicg.github.io/keyboard-map/#navigator-interface)
      * [`https://www.w3.org/TR/uievents-code/#code-keyw`](https://www.w3.org/TR/uievents-code/#code-keyw)
      * [`https://www.w3.org/TR/uievents-code/#code-keya`](https://www.w3.org/TR/uievents-code/#code-keya)
      * [`https://www.w3.org/TR/uievents-code/#code-keys`](https://www.w3.org/TR/uievents-code/#code-keys)
      * [`https://www.w3.org/TR/uievents-code/#code-keyd`](https://www.w3.org/TR/uievents-code/#code-keyd)
      * [`https://www.w3.org/TR/uievents-code/#code-delete`](https://www.w3.org/TR/uievents-code/#code-delete)
-- [Keyboard Map](https://wicg.github.io/keyboard-map/):
-     * [`https://www.w3.org/TR/uievents-code/#code-quote`](https://www.w3.org/TR/uievents-code/#code-quote)
-     * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
 - [Layout Instability API](https://wicg.github.io/layout-instability/):
      * [`https://www.w3.org/TR/css-values-4/#pixel-unit`](https://www.w3.org/TR/css-values-4/#pixel-unit)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/):
@@ -4285,9 +4327,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraintSet`](https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraintSet)
      * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaDeviceKind`](https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaDeviceKind)
      * [`https://heycam.github.io/webidl/#dfn-present`](https://heycam.github.io/webidl/#dfn-present)
-- [Media Feeds](https://wicg.github.io/media-feeds/):
-     * [`https://html.spec.whatwg.org/#link`](https://html.spec.whatwg.org/#link)
-     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 - [Media Session Standard](https://w3c.github.io/mediasession/):
      * [`https://www.w3.org/TR/appmanifest/#dom-imageresource`](https://www.w3.org/TR/appmanifest/#dom-imageresource)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/):
@@ -4396,8 +4435,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#relevant-settings=object`](https://html.spec.whatwg.org/#relevant-settings=object)
      * [`https://heycam.github.io/webidl/#default-tojson-operation`](https://heycam.github.io/webidl/#default-tojson-operation)
      * [`https://www.w3.org/TR/beacon/#sec-sendBeacon-method`](https://www.w3.org/TR/beacon/#sec-sendBeacon-method)
-- [Save Data API](https://wicg.github.io/savedata/):
-     * [`https://wicg.github.io/netinfo/#network-information`](https://wicg.github.io/netinfo/#network-information)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
      * [`https://html.spec.whatwg.org/#specially-focusable`](https://html.spec.whatwg.org/#specially-focusable)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompoint`](https://www.w3.org/TR/geometry-1/#dom-dompoint)
@@ -4437,6 +4474,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/push-api/#dfn-fire-the-push-event`](https://w3c.github.io/push-api/#dfn-fire-the-push-event)
      * [`https://www.w3.org/TR/page-visibility/#VisibilityState`](https://www.w3.org/TR/page-visibility/#VisibilityState)
      * [`https://wicg.github.io/BackgroundSync/spec/#sync`](https://wicg.github.io/BackgroundSync/spec/#sync)
+     * [`https://wicg.github.io/BackgroundSync/spec/#syncevent`](https://wicg.github.io/BackgroundSync/spec/#syncevent)
+     * [`https://wicg.github.io/BackgroundSync/spec/#fire-a-sync-event`](https://wicg.github.io/BackgroundSync/spec/#fire-a-sync-event)
      * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/):
      * [`https://w3c.github.io/core-aam/#exclude_elements2`](https://w3c.github.io/core-aam/#exclude_elements2)
@@ -4456,12 +4495,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly)
 - [SVG Paths](https://svgwg.org/specs/paths/):
      * [`https://www.w3.org/TR/geometry-1/#dom-dompoint`](https://www.w3.org/TR/geometry-1/#dom-dompoint)
-- [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/):
-     * [`https://w3c.github.io/webappsec-fetch-metadata/#request-user-activation-flag`](https://w3c.github.io/webappsec-fetch-metadata/#request-user-activation-flag)
-     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value)
-     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point)
-     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type)
-     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value)
 - [The Storage Access API](https://privacycg.github.io/storage-access/):
      * [`https://w3c.github.io/webdriver/webdriver-spec.html#dfn-extension-commands`](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-extension-commands)
      * [`https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error`](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error)
@@ -4503,18 +4536,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#host-same-site`](https://url.spec.whatwg.org/#host-same-site)
      * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
      * [`https://w3c.github.io/webdriver/#dfn-error`](https://w3c.github.io/webdriver/#dfn-error)
-- [Web Background Synchronization](https://wicg.github.io/background-sync/spec/):
-     * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#service-worker-registration-interface`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#service-worker-registration-interface)
-     * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#service-worker-global-scope-interface`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#service-worker-global-scope-interface)
-     * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#extendable-event-interface`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#extendable-event-interface)
-     * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#dfn-extend-lifetime-promises`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#dfn-extend-lifetime-promises)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/):
      * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
      * [`https://w3c.github.io/webappsec-secure-contexts/#non-secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#non-secure-contexts)
-- [Web OTP API](https://wicg.github.io/web-otp/):
-     * [`https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors`](https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors)
-- [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/):
-     * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
 - [Web Share Target API](https://w3c.github.io/web-share-target/):
      * [`https://www.w3.org/TR/appmanifest/#dom-webappmanifest`](https://www.w3.org/TR/appmanifest/#dom-webappmanifest)
      * [`https://www.w3.org/TR/appmanifest/#dom-webappmanifest-scope`](https://www.w3.org/TR/appmanifest/#dom-webappmanifest-scope)
@@ -4551,7 +4575,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/):
      * [`https://www.w3.org/TR/webxr/#animationframe`](https://www.w3.org/TR/webxr/#animationframe)
 
-=> 607 problematic external links found in 141 specifications
+=> 572 problematic external links found in 129 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
@@ -4593,8 +4617,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/):
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
-- [Early detection of input events](https://wicg.github.io/is-input-pending/):
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/):
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 - [File API](https://w3c.github.io/FileAPI/):
@@ -4614,8 +4636,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/workers/`](https://www.w3.org/TR/workers/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/):
      * [`https://www.w3.org/TR/webstorage/`](https://www.w3.org/TR/webstorage/)
-- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/):
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/):
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/):
@@ -4670,7 +4690,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebUSB API](https://wicg.github.io/webusb/):
      * [`https://www.w3.org/TR/cors/`](https://www.w3.org/TR/cors/)
 
-=> 59 problematic external links found in 48 specifications
+=> 57 problematic external links found in 46 specifications
 
 
 ## External links that use a dated URL
