@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "WEBGL_compressed_texture_pvrtc"
+        ],
+        "Worker": [
+          "WEBGL_compressed_texture_pvrtc"
+        ]
+      }
     },
     "idlNames": {
       "WEBGL_compressed_texture_pvrtc": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface WEBGL_compressed_texture_pvrtc {\n    /* Compressed Texture Formats */\n    const GLenum COMPRESSED_RGB_PVRTC_4BPPV1_IMG      = 0x8C00;\n    const GLenum COMPRESSED_RGB_PVRTC_2BPPV1_IMG      = 0x8C01;\n    const GLenum COMPRESSED_RGBA_PVRTC_4BPPV1_IMG     = 0x8C02;\n    const GLenum COMPRESSED_RGBA_PVRTC_2BPPV1_IMG     = 0x8C03;\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_compressed_texture_pvrtc {\n    /* Compressed Texture Formats */\n    const GLenum COMPRESSED_RGB_PVRTC_4BPPV1_IMG      = 0x8C00;\n    const GLenum COMPRESSED_RGB_PVRTC_2BPPV1_IMG      = 0x8C01;\n    const GLenum COMPRESSED_RGBA_PVRTC_4BPPV1_IMG     = 0x8C02;\n    const GLenum COMPRESSED_RGBA_PVRTC_2BPPV1_IMG     = 0x8C03;\n};",
         "type": "interface",
         "name": "WEBGL_compressed_texture_pvrtc",
         "inheritance": null,
@@ -87,6 +94,22 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
@@ -97,7 +120,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "WEBGL_compressed_texture_pvrtc"
+      ],
+      "Worker": [
+        "WEBGL_compressed_texture_pvrtc"
+      ]
+    },
     "dependencies": {
       "WEBGL_compressed_texture_pvrtc": []
     },

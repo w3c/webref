@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "WEBGL_lose_context"
+        ],
+        "Worker": [
+          "WEBGL_lose_context"
+        ]
+      }
     },
     "idlNames": {
       "WEBGL_lose_context": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface WEBGL_lose_context {\n      void loseContext();\n      void restoreContext();\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_lose_context {\n      undefined loseContext();\n      undefined restoreContext();\n};",
         "type": "interface",
         "name": "WEBGL_lose_context",
         "inheritance": null,
@@ -24,7 +31,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -39,7 +46,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -47,6 +54,22 @@
           }
         ],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
@@ -59,15 +82,18 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
-    "dependencies": {
-      "WEBGL_lose_context": [
-        "void"
+    "exposed": {
+      "Window": [
+        "WEBGL_lose_context"
+      ],
+      "Worker": [
+        "WEBGL_lose_context"
       ]
     },
-    "externalDependencies": [
-      "void"
-    ],
+    "dependencies": {
+      "WEBGL_lose_context": []
+    },
+    "externalDependencies": [],
     "hasObsoleteIdl": false
   }
 }

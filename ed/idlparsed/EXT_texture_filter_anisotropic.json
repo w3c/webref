@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "EXT_texture_filter_anisotropic"
+        ],
+        "Worker": [
+          "EXT_texture_filter_anisotropic"
+        ]
+      }
     },
     "idlNames": {
       "EXT_texture_filter_anisotropic": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface EXT_texture_filter_anisotropic {\n  const GLenum TEXTURE_MAX_ANISOTROPY_EXT       = 0x84FE;\n  const GLenum MAX_TEXTURE_MAX_ANISOTROPY_EXT   = 0x84FF;\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface EXT_texture_filter_anisotropic {\n  const GLenum TEXTURE_MAX_ANISOTROPY_EXT       = 0x84FE;\n  const GLenum MAX_TEXTURE_MAX_ANISOTROPY_EXT   = 0x84FF;\n};",
         "type": "interface",
         "name": "EXT_texture_filter_anisotropic",
         "inheritance": null,
@@ -53,6 +60,22 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
@@ -63,7 +86,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "EXT_texture_filter_anisotropic"
+      ],
+      "Worker": [
+        "EXT_texture_filter_anisotropic"
+      ]
+    },
     "dependencies": {
       "EXT_texture_filter_anisotropic": []
     },

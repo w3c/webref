@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "WEBGL_multi_draw": {
-        "fragment": "[NoInterfaceObject]\ninterface WEBGL_multi_draw {\n  void multiDrawArraysWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,\n      (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      GLsizei drawcount);\n  void multiDrawElementsWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) countsList, GLuint countsOffset,\n      GLenum type,\n      (Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,\n      GLsizei drawcount);\n  void multiDrawArraysInstancedWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,\n      (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      (Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      GLsizei drawcount);\n  void multiDrawElementsInstancedWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) countsList, GLuint countsOffset,\n      GLenum type,\n      (Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,\n      (Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      GLsizei drawcount);\n};",
+        "fragment": "[NoInterfaceObject]\ninterface WEBGL_multi_draw {\n  undefined multiDrawArraysWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,\n      (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      GLsizei drawcount);\n  undefined multiDrawElementsWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) countsList, GLuint countsOffset,\n      GLenum type,\n      (Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,\n      GLsizei drawcount);\n  undefined multiDrawArraysInstancedWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,\n      (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      (Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      GLsizei drawcount);\n  undefined multiDrawElementsInstancedWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) countsList, GLuint countsOffset,\n      GLenum type,\n      (Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,\n      (Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      GLsizei drawcount);\n};",
         "type": "interface",
         "name": "WEBGL_multi_draw",
         "inheritance": null,
@@ -24,7 +24,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -188,7 +188,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -368,7 +368,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -590,7 +590,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -836,7 +836,6 @@
     "exposed": {},
     "dependencies": {
       "WEBGL_multi_draw": [
-        "void",
         "GLenum",
         "GLint",
         "GLuint",
@@ -844,7 +843,6 @@
       ]
     },
     "externalDependencies": [
-      "void",
       "GLenum",
       "GLint",
       "GLuint",

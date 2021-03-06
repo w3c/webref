@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "WEBGL_compressed_texture_etc1"
+        ],
+        "Worker": [
+          "WEBGL_compressed_texture_etc1"
+        ]
+      }
     },
     "idlNames": {
       "WEBGL_compressed_texture_etc1": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface WEBGL_compressed_texture_etc1 {\n    /* Compressed Texture Format */\n    const GLenum COMPRESSED_RGB_ETC1_WEBGL = 0x8D64;\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_compressed_texture_etc1 {\n    /* Compressed Texture Format */\n    const GLenum COMPRESSED_RGB_ETC1_WEBGL = 0x8D64;\n};",
         "type": "interface",
         "name": "WEBGL_compressed_texture_etc1",
         "inheritance": null,
@@ -36,6 +43,22 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
@@ -46,7 +69,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "WEBGL_compressed_texture_etc1"
+      ],
+      "Worker": [
+        "WEBGL_compressed_texture_etc1"
+      ]
+    },
     "dependencies": {
       "WEBGL_compressed_texture_etc1": []
     },

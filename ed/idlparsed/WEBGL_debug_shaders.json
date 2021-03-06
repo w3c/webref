@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "WEBGL_debug_shaders"
+        ],
+        "Worker": [
+          "WEBGL_debug_shaders"
+        ]
+      }
     },
     "idlNames": {
       "WEBGL_debug_shaders": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface WEBGL_debug_shaders {\n\n      DOMString getTranslatedShaderSource(WebGLShader shader);\n\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_debug_shaders {\n\n      DOMString getTranslatedShaderSource(WebGLShader shader);\n\n};",
         "type": "interface",
         "name": "WEBGL_debug_shaders",
         "inheritance": null,
@@ -51,6 +58,22 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
@@ -61,7 +84,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "WEBGL_debug_shaders"
+      ],
+      "Worker": [
+        "WEBGL_debug_shaders"
+      ]
+    },
     "dependencies": {
       "WEBGL_debug_shaders": [
         "WebGLShader"
