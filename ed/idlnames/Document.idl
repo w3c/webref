@@ -150,21 +150,11 @@ partial interface Document {
   Promise<undefined> requestStorageAccess();
 };
 
-// Source: Private Network Access (https://wicg.github.io/cors-rfc1918/)
-partial interface Document {
-  readonly attribute AddressSpace addressSpace;
-};
-
 // Source: Page Lifecycle (https://wicg.github.io/page-lifecycle/)
 partial interface Document {
     attribute EventHandler onfreeze;
     attribute EventHandler onresume;
     readonly attribute boolean wasDiscarded;
-};
-
-// Source: Text Fragments (https://wicg.github.io/scroll-to-text-fragment/)
-partial interface Document {
-    [SameObject] readonly attribute FragmentDirective fragmentDirective;
 };
 
 // Source: CSS Font Loading Module Level 3 (https://www.w3.org/TR/css-font-loading-3/)
