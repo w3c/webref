@@ -6,16 +6,39 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "EXT_float_blend"
+        ],
+        "Worker": [
+          "EXT_float_blend"
+        ]
+      }
     },
     "idlNames": {
       "EXT_float_blend": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface EXT_float_blend {\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface EXT_float_blend {\n};",
         "type": "interface",
         "name": "EXT_float_blend",
         "inheritance": null,
         "members": [],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
@@ -28,7 +51,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "EXT_float_blend"
+      ],
+      "Worker": [
+        "EXT_float_blend"
+      ]
+    },
     "dependencies": {
       "EXT_float_blend": []
     },
