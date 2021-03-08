@@ -3,25 +3,25 @@
 // (https://github.com/w3c/webref)
 // Source: Trusted Types (https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 
-[Exposed=Window, SecureContext]
+[Exposed=Window]
 interface TrustedHTML {
   stringifier;
   DOMString toJSON();
 };
 
-[Exposed=Window, SecureContext]
+[Exposed=Window]
 interface TrustedScript {
   stringifier;
   DOMString toJSON();
 };
 
-[Exposed=Window, SecureContext]
+[Exposed=Window]
 interface TrustedScriptURL {
   stringifier;
   USVString toJSON();
 };
 
-[Exposed=Window, SecureContext] interface TrustedTypePolicyFactory {
+[Exposed=Window] interface TrustedTypePolicyFactory {
     TrustedTypePolicy createPolicy(
         DOMString policyName, optional TrustedTypePolicyOptions policyOptions = {});
     boolean isHTML(any value);
@@ -41,7 +41,7 @@ interface TrustedScriptURL {
     readonly attribute TrustedTypePolicy? defaultPolicy;
 };
 
-[Exposed=Window, SecureContext]
+[Exposed=Window]
 interface TrustedTypePolicy {
   readonly attribute DOMString name;
   TrustedHTML createHTML(DOMString input, any... arguments);
@@ -64,5 +64,5 @@ typedef [StringContext=TrustedScriptURL] USVString ScriptURLString;
 typedef (TrustedHTML or TrustedScript or TrustedScriptURL) TrustedType;
 
 partial interface Window {
-  [SecureContext] readonly attribute TrustedTypePolicyFactory trustedTypes;
+  readonly attribute TrustedTypePolicyFactory trustedTypes;
 };
