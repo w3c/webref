@@ -28,26 +28,11 @@ partial interface ServiceWorkerGlobalScope {
   attribute EventHandler onbackgroundfetchclick;
 };
 
-// Source: Web Background Synchronization (https://wicg.github.io/background-sync/spec/)
-partial interface ServiceWorkerGlobalScope {
-  attribute EventHandler onsync;
-};
-
-// Source: Content Index (https://wicg.github.io/content-index/spec/)
-partial interface ServiceWorkerGlobalScope {
-  attribute EventHandler oncontentdelete;
-};
-
 // Source: Cookie Store API (https://wicg.github.io/cookie-store/)
 partial interface ServiceWorkerGlobalScope {
   [SameObject] readonly attribute CookieStore cookieStore;
 
   attribute EventHandler oncookiechange;
-};
-
-// Source: Web Periodic Background Synchronization (https://wicg.github.io/periodic-background-sync/)
-partial interface ServiceWorkerGlobalScope {
-    attribute EventHandler onperiodicsync;
 };
 
 // Source: Payment Handler API (https://www.w3.org/TR/payment-handler/)

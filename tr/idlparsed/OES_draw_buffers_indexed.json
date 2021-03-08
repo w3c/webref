@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "OES_draw_buffers_indexed": {
-        "fragment": "[NoInterfaceObject]\ninterface OES_draw_buffers_indexed {\n  void enableiOES(GLenum target, GLuint index);\n\n  void disableiOES(GLenum target, GLuint index);\n\n  void blendEquationiOES(GLuint buf, GLenum mode);\n\n  void blendEquationSeparateiOES(GLuint buf,\n                                 GLenum modeRGB, GLenum modeAlpha);\n\n  void blendFunciOES(GLuint buf,\n                     GLenum src, GLenum dst);\n\n  void blendFuncSeparateiOES(GLuint buf,\n                             GLenum srcRGB, GLenum dstRGB,\n                             GLenum srcAlpha, GLenum dstAlpha);\n\n  void colorMaskiOES(GLuint buf,\n                     GLboolean r, GLboolean g, GLboolean b, GLboolean a);\n};",
+        "fragment": "[NoInterfaceObject]\ninterface OES_draw_buffers_indexed {\n  undefined enableiOES(GLenum target, GLuint index);\n\n  undefined disableiOES(GLenum target, GLuint index);\n\n  undefined blendEquationiOES(GLuint buf, GLenum mode);\n\n  undefined blendEquationSeparateiOES(GLuint buf,\n                                 GLenum modeRGB, GLenum modeAlpha);\n\n  undefined blendFunciOES(GLuint buf,\n                     GLenum src, GLenum dst);\n\n  undefined blendFuncSeparateiOES(GLuint buf,\n                             GLenum srcRGB, GLenum dstRGB,\n                             GLenum srcAlpha, GLenum dstAlpha);\n\n  undefined colorMaskiOES(GLuint buf,\n                     GLboolean r, GLboolean g, GLboolean b, GLboolean a);\n};",
         "type": "interface",
         "name": "OES_draw_buffers_indexed",
         "inheritance": null,
@@ -24,7 +24,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -72,7 +72,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -120,7 +120,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -168,7 +168,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -232,7 +232,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -296,7 +296,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -392,7 +392,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -496,14 +496,12 @@
     "exposed": {},
     "dependencies": {
       "OES_draw_buffers_indexed": [
-        "void",
         "GLenum",
         "GLuint",
         "GLboolean"
       ]
     },
     "externalDependencies": [
-      "void",
       "GLenum",
       "GLuint",
       "GLboolean"

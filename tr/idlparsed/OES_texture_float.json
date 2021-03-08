@@ -6,16 +6,39 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "OES_texture_float"
+        ],
+        "Worker": [
+          "OES_texture_float"
+        ]
+      }
     },
     "idlNames": {
       "OES_texture_float": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface OES_texture_float { };",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface OES_texture_float { };",
         "type": "interface",
         "name": "OES_texture_float",
         "inheritance": null,
         "members": [],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
@@ -28,7 +51,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "OES_texture_float"
+      ],
+      "Worker": [
+        "OES_texture_float"
+      ]
+    },
     "dependencies": {
       "OES_texture_float": []
     },

@@ -1,0 +1,14 @@
+{
+  "name": "TrustedTypePolicyFactory",
+  "defined": {
+    "spec": {
+      "title": "Trusted Types",
+      "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+    },
+    "fragment": "[Exposed=Window, SecureContext] interface TrustedTypePolicyFactory {\n    TrustedTypePolicy createPolicy(\n        DOMString policyName, optional TrustedTypePolicyOptions policyOptions = {});\n    boolean isHTML(any value);\n    boolean isScript(any value);\n    boolean isScriptURL(any value);\n    readonly attribute TrustedHTML emptyHTML;\n    readonly attribute TrustedScript emptyScript;\n    DOMString? getAttributeType(\n        DOMString tagName,\n        DOMString attribute,\n        optional DOMString elementNs = \"\",\n        optional DOMString attrNs = \"\");\n    DOMString? getPropertyType(\n        DOMString tagName,\n        DOMString property,\n        optional DOMString elementNs = \"\");\n    readonly attribute TrustedTypePolicy? defaultPolicy;\n};",
+    "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedtypepolicyfactory"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}
