@@ -1,10 +1,10 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-03-08T12:57:09.265Z",
+  "date": "2021-03-08T18:52:24.917Z",
   "options": {},
   "stats": {
-    "crawled": 383,
+    "crawled": 384,
     "errors": 0
   },
   "results": [
@@ -776,7 +776,8 @@
           "fetch"
         ],
         "excludePaths": [
-          "fetch/metadata"
+          "fetch/metadata",
+          "fetch/private-network-access"
         ]
       },
       "versions": [
@@ -857,7 +858,7 @@
         "https://gpuweb.github.io/gpuweb/"
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
-      "date": "5 March 2021",
+      "date": "8 March 2021",
       "links": "links/gpuweb.json",
       "refs": "refs/gpuweb.json",
       "idl": "idl/gpuweb.idl",
@@ -959,6 +960,10 @@
           "worklets",
           "x-frame-options",
           "xslt"
+        ],
+        "excludePaths": [
+          "html/cross-origin-embedder-policy/credentialless",
+          "html/cross-origin-embedder-policy/credentialless"
         ]
       },
       "versions": [
@@ -1027,6 +1032,37 @@
       "headings": "headings/anchors.json",
       "ids": "ids/anchors.json",
       "idlparsed": "idlparsed/anchors.json"
+    },
+    {
+      "url": "https://immersive-web.github.io/depth-sensing/",
+      "seriesComposition": "full",
+      "shortname": "depth-sensing",
+      "series": {
+        "shortname": "depth-sensing",
+        "currentSpecification": "depth-sensing"
+      },
+      "nightly": {
+        "url": "https://immersive-web.github.io/depth-sensing/",
+        "repository": "https://github.com/immersive-web/depth-sensing",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebXR Depth Sensing Module",
+      "source": "spec",
+      "shortTitle": "WebXR Depth Sensing",
+      "versions": [
+        "https://immersive-web.github.io/depth-sensing/"
+      ],
+      "crawled": "https://immersive-web.github.io/depth-sensing/",
+      "date": "16 February 2021",
+      "links": "links/depth-sensing.json",
+      "refs": "refs/depth-sensing.json",
+      "idl": "idl/depth-sensing.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/depth-sensing.json",
+      "headings": "headings/depth-sensing.json",
+      "ids": "ids/depth-sensing.json",
+      "idlparsed": "idlparsed/depth-sensing.json"
     },
     {
       "url": "https://immersive-web.github.io/dom-overlays/",
@@ -1101,6 +1137,37 @@
       "headings": "headings/hit-test.json",
       "ids": "ids/hit-test.json",
       "idlparsed": "idlparsed/hit-test.json"
+    },
+    {
+      "url": "https://immersive-web.github.io/lighting-estimation/",
+      "seriesComposition": "full",
+      "shortname": "lighting-estimation",
+      "series": {
+        "shortname": "lighting-estimation",
+        "currentSpecification": "lighting-estimation"
+      },
+      "nightly": {
+        "url": "https://immersive-web.github.io/lighting-estimation/",
+        "repository": "https://github.com/immersive-web/lighting-estimation",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebXR Lighting Estimation API Level 1",
+      "source": "spec",
+      "shortTitle": "WebXR Lighting Estimation API 1",
+      "versions": [
+        "https://immersive-web.github.io/lighting-estimation/"
+      ],
+      "crawled": "https://immersive-web.github.io/lighting-estimation/",
+      "date": "18 February 2021",
+      "links": "links/lighting-estimation.json",
+      "refs": "refs/lighting-estimation.json",
+      "idl": "idl/lighting-estimation.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/lighting-estimation.json",
+      "headings": "headings/lighting-estimation.json",
+      "ids": "ids/lighting-estimation.json",
+      "idlparsed": "idlparsed/lighting-estimation.json"
     },
     {
       "url": "https://infra.spec.whatwg.org/",
@@ -2198,6 +2265,12 @@
       "title": "IceTransport Extensions for WebRTC",
       "source": "spec",
       "shortTitle": "IceTransport Extensions for WebRTC",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webrtc-ice"
+        ]
+      },
       "versions": [
         "https://w3c.github.io/webrtc-ice/"
       ],
@@ -2618,43 +2691,6 @@
       "idlparsed": "idlparsed/cookie-store.json"
     },
     {
-      "url": "https://wicg.github.io/cors-rfc1918/",
-      "seriesComposition": "full",
-      "shortname": "cors-rfc1918",
-      "series": {
-        "shortname": "cors-rfc1918",
-        "currentSpecification": "cors-rfc1918"
-      },
-      "nightly": {
-        "url": "https://wicg.github.io/cors-rfc1918/",
-        "repository": "https://github.com/WICG/cors-rfc1918",
-        "sourcePath": "index.src.html",
-        "filename": "index.html"
-      },
-      "title": "Private Network Access",
-      "source": "specref",
-      "shortTitle": "CORS and RFC1918",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "cors-rfc1918"
-        ]
-      },
-      "versions": [
-        "https://wicg.github.io/cors-rfc1918/"
-      ],
-      "crawled": "https://wicg.github.io/private-network-access/",
-      "date": "8 March 2021",
-      "links": "links/cors-rfc1918.json",
-      "refs": "refs/cors-rfc1918.json",
-      "idl": "idl/cors-rfc1918.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/cors-rfc1918.json",
-      "headings": "headings/cors-rfc1918.json",
-      "ids": "ids/cors-rfc1918.json",
-      "idlparsed": "idlparsed/cors-rfc1918.json"
-    },
-    {
       "url": "https://wicg.github.io/crash-reporting/",
       "seriesComposition": "full",
       "shortname": "crash-reporting",
@@ -2976,6 +3012,37 @@
       "idlparsed": "idlparsed/file-system-access.json"
     },
     {
+      "url": "https://wicg.github.io/floc/",
+      "seriesComposition": "full",
+      "shortname": "floc",
+      "series": {
+        "shortname": "floc",
+        "currentSpecification": "floc"
+      },
+      "nightly": {
+        "url": "https://wicg.github.io/floc/",
+        "repository": "https://github.com/WICG/floc",
+        "sourcePath": "floc.bs",
+        "filename": "index.html"
+      },
+      "title": "Federated Learning of Cohorts",
+      "source": "spec",
+      "shortTitle": "Federated Learning of Cohorts",
+      "versions": [
+        "https://wicg.github.io/floc/"
+      ],
+      "crawled": "https://wicg.github.io/floc/",
+      "date": "3 March 2021",
+      "links": "links/floc.json",
+      "refs": "refs/floc.json",
+      "idl": "idl/floc.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/floc.json",
+      "headings": "headings/floc.json",
+      "ids": "ids/floc.json",
+      "idlparsed": "idlparsed/floc.json"
+    },
+    {
       "url": "https://wicg.github.io/frame-timing/",
       "seriesComposition": "full",
       "shortname": "frame-timing",
@@ -3058,7 +3125,7 @@
         "filename": "index.html"
       },
       "title": "Idle Detection API",
-      "source": "spec",
+      "source": "specref",
       "shortTitle": "Idle Detection API",
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
@@ -3836,6 +3903,43 @@
       "generator": "bikeshed",
       "headings": "headings/priority-hints.json",
       "ids": "ids/priority-hints.json"
+    },
+    {
+      "url": "https://wicg.github.io/private-network-access/",
+      "seriesComposition": "full",
+      "shortname": "private-network-access",
+      "series": {
+        "shortname": "private-network-access",
+        "currentSpecification": "private-network-access"
+      },
+      "nightly": {
+        "url": "https://wicg.github.io/private-network-access/",
+        "repository": "https://github.com/WICG/private-network-access",
+        "sourcePath": "index.src.html",
+        "filename": "index.html"
+      },
+      "title": "Private Network Access",
+      "source": "spec",
+      "shortTitle": "Private Network Access",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "fetch/private-network-access"
+        ]
+      },
+      "versions": [
+        "https://wicg.github.io/private-network-access/"
+      ],
+      "crawled": "https://wicg.github.io/private-network-access/",
+      "date": "8 March 2021",
+      "links": "links/private-network-access.json",
+      "refs": "refs/private-network-access.json",
+      "idl": "idl/private-network-access.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/private-network-access.json",
+      "headings": "headings/private-network-access.json",
+      "ids": "ids/private-network-access.json",
+      "idlparsed": "idlparsed/private-network-access.json"
     },
     {
       "url": "https://wicg.github.io/savedata/",
@@ -6016,7 +6120,7 @@
       },
       "title": "Web Application Manifest",
       "source": "w3c",
-      "shortTitle": "Web App Manifest",
+      "shortTitle": "Web Application Manifest",
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
@@ -6345,7 +6449,7 @@
       "nightly": {
         "url": "https://w3c.github.io/webappsec-credential-management/",
         "repository": "https://github.com/w3c/webappsec-credential-management",
-        "sourcePath": "index.src.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Credential Management Level 1",
@@ -6430,7 +6534,7 @@
       "nightly": {
         "url": "https://w3c.github.io/webappsec-csp/",
         "repository": "https://github.com/w3c/webappsec-csp",
-        "sourcePath": "index.src.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Content Security Policy Level 3",
@@ -7008,7 +7112,7 @@
         "https://drafts.csswg.org/css-color-5/"
       ],
       "crawled": "https://drafts.csswg.org/css-color-5/",
-      "date": "3 March 2021",
+      "date": "8 March 2021",
       "links": "links/css-color-5.json",
       "refs": "refs/css-color-5.json",
       "generator": "bikeshed",
@@ -10883,7 +10987,7 @@
       },
       "title": "MediaStream Image Capture",
       "source": "w3c",
-      "shortTitle": "\"MediaStream Image Capture\"",
+      "shortTitle": "MediaStream Image Capture",
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
@@ -11695,7 +11799,7 @@
         "https://www.w3.org/TR/navigation-timing/"
       ],
       "crawled": "https://w3c.github.io/navigation-timing/",
-      "date": "15 September 2020",
+      "date": "08 March 2021",
       "links": "links/navigation-timing-2.json",
       "refs": "refs/navigation-timing-2.json",
       "idl": "idl/navigation-timing.idl",
@@ -12150,7 +12254,7 @@
         "https://www.w3.org/TR/performance-timeline/"
       ],
       "crawled": "https://w3c.github.io/performance-timeline/",
-      "date": "15 September 2020",
+      "date": "08 March 2021",
       "links": "links/performance-timeline-2.json",
       "refs": "refs/performance-timeline-2.json",
       "idl": "idl/performance-timeline.idl",
@@ -12841,7 +12945,7 @@
       },
       "release": {
         "url": "https://www.w3.org/TR/screen-capture/",
-        "filename": "index.html"
+        "filename": "Overview.html"
       },
       "nightly": {
         "url": "https://w3c.github.io/mediacapture-screen-share/",
@@ -13353,79 +13457,6 @@
       "dfns": "dfns/svg-integration.json",
       "headings": "headings/svg-integration.json",
       "ids": "ids/svg-integration.json"
-    },
-    {
-      "url": "https://www.w3.org/TR/svg-markers/",
-      "seriesComposition": "full",
-      "shortname": "svg-markers",
-      "series": {
-        "shortname": "svg-markers",
-        "currentSpecification": "svg-markers"
-      },
-      "release": {
-        "url": "https://www.w3.org/TR/svg-markers/",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://svgwg.org/specs/markers/",
-        "repository": "https://github.com/w3c/svgwg",
-        "sourcePath": "specs/markers/master/Overview.html",
-        "filename": "Overview.html"
-      },
-      "title": "SVG Markers",
-      "source": "w3c",
-      "shortTitle": "SVG Markers",
-      "versions": [
-        "https://www.w3.org/TR/svg-markers/",
-        "https://svgwg.org/specs/markers/"
-      ],
-      "crawled": "https://svgwg.org/specs/markers/",
-      "date": "26 February 2021",
-      "links": "links/svg-markers.json",
-      "refs": "refs/svg-markers.json",
-      "idl": "idl/svg-markers.idl",
-      "generator": null,
-      "css": "css/svg-markers.json",
-      "dfns": "dfns/svg-markers.json",
-      "headings": "headings/svg-markers.json",
-      "ids": "ids/svg-markers.json",
-      "idlparsed": "idlparsed/svg-markers.json"
-    },
-    {
-      "url": "https://www.w3.org/TR/svg-paths/",
-      "seriesComposition": "full",
-      "shortname": "svg-paths",
-      "series": {
-        "shortname": "svg-paths",
-        "currentSpecification": "svg-paths"
-      },
-      "release": {
-        "url": "https://www.w3.org/TR/svg-paths/",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://svgwg.org/specs/paths/",
-        "repository": "https://github.com/w3c/svgwg",
-        "sourcePath": "specs/paths/master/Overview.html",
-        "filename": "Overview.html"
-      },
-      "title": "SVG Paths",
-      "source": "w3c",
-      "shortTitle": "SVG Paths",
-      "versions": [
-        "https://www.w3.org/TR/svg-paths/",
-        "https://svgwg.org/specs/paths/"
-      ],
-      "crawled": "https://svgwg.org/specs/paths/",
-      "date": "26 February 2021",
-      "links": "links/svg-paths.json",
-      "refs": "refs/svg-paths.json",
-      "idl": "idl/svg-paths.idl",
-      "generator": null,
-      "dfns": "dfns/svg-paths.json",
-      "headings": "headings/svg-paths.json",
-      "ids": "ids/svg-paths.json",
-      "idlparsed": "idlparsed/svg-paths.json"
     },
     {
       "url": "https://www.w3.org/TR/svg-strokes/",
@@ -14251,7 +14282,7 @@
         "https://webaudio.github.io/web-audio-api/"
       ],
       "crawled": "https://webaudio.github.io/web-audio-api/",
-      "date": "23 February 2021",
+      "date": "8 March 2021",
       "links": "links/webaudio.json",
       "refs": "refs/webaudio.json",
       "idl": "idl/webaudio.idl",

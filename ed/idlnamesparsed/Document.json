@@ -88,10 +88,10 @@
     },
     {
       "spec": {
-        "title": "Private Network Access",
-        "url": "https://wicg.github.io/cors-rfc1918/"
+        "title": "Federated Learning of Cohorts",
+        "url": "https://wicg.github.io/floc/"
       },
-      "fragment": "partial interface Document {\n  readonly attribute AddressSpace addressSpace;\n};"
+      "fragment": "partial interface Document {\n    Promise<InterestCohort> interestCohort();\n};"
     },
     {
       "spec": {
@@ -99,6 +99,13 @@
         "url": "https://wicg.github.io/page-lifecycle/"
       },
       "fragment": "partial interface Document {\n    attribute EventHandler onfreeze;\n    attribute EventHandler onresume;\n    readonly attribute boolean wasDiscarded;\n};"
+    },
+    {
+      "spec": {
+        "title": "Private Network Access",
+        "url": "https://wicg.github.io/private-network-access/"
+      },
+      "fragment": "partial interface Document {\n  readonly attribute AddressSpace addressSpace;\n};"
     },
     {
       "spec": {

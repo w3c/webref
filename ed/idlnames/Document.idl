@@ -150,9 +150,9 @@ partial interface Document {
   Promise<undefined> requestStorageAccess();
 };
 
-// Source: Private Network Access (https://wicg.github.io/cors-rfc1918/)
+// Source: Federated Learning of Cohorts (https://wicg.github.io/floc/)
 partial interface Document {
-  readonly attribute AddressSpace addressSpace;
+    Promise<InterestCohort> interestCohort();
 };
 
 // Source: Page Lifecycle (https://wicg.github.io/page-lifecycle/)
@@ -160,6 +160,11 @@ partial interface Document {
     attribute EventHandler onfreeze;
     attribute EventHandler onresume;
     readonly attribute boolean wasDiscarded;
+};
+
+// Source: Private Network Access (https://wicg.github.io/private-network-access/)
+partial interface Document {
+  readonly attribute AddressSpace addressSpace;
 };
 
 // Source: Text Fragments (https://wicg.github.io/scroll-to-text-fragment/)

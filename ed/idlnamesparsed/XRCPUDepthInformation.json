@@ -1,0 +1,27 @@
+{
+  "name": "XRCPUDepthInformation",
+  "defined": {
+    "spec": {
+      "title": "WebXR Depth Sensing Module",
+      "url": "https://immersive-web.github.io/depth-sensing/"
+    },
+    "fragment": "interface XRCPUDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute ArrayBuffer data;\n\n  float getDepthInMeters(float x, float y);\n};",
+    "href": "https://immersive-web.github.io/depth-sensing/#xrcpudepthinformation"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRDepthInformation",
+    "defined": {
+      "spec": {
+        "title": "WebXR Depth Sensing Module",
+        "url": "https://immersive-web.github.io/depth-sensing/"
+      },
+      "fragment": "[SecureContext, Exposed=Window]\ninterface XRDepthInformation {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n\n  [SameObject] readonly attribute XRRigidTransform normDepthBufferFromNormView;\n  readonly attribute float rawValueToMeters;\n};",
+      "href": "https://immersive-web.github.io/depth-sensing/#xrdepthinformation"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

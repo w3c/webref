@@ -13,12 +13,19 @@
           "TrustedScriptURL",
           "TrustedTypePolicyFactory",
           "TrustedTypePolicy"
+        ],
+        "Worker": [
+          "TrustedHTML",
+          "TrustedScript",
+          "TrustedScriptURL",
+          "TrustedTypePolicyFactory",
+          "TrustedTypePolicy"
         ]
       }
     },
     "idlNames": {
       "TrustedHTML": {
-        "fragment": "[Exposed=Window]\ninterface TrustedHTML {\n  stringifier;\n  DOMString toJSON();\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedHTML {\n  stringifier;\n  DOMString toJSON();\n};",
         "type": "interface",
         "name": "TrustedHTML",
         "inheritance": null,
@@ -51,8 +58,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
             },
             "arguments": []
           }
@@ -60,7 +74,7 @@
         "partial": false
       },
       "TrustedScript": {
-        "fragment": "[Exposed=Window]\ninterface TrustedScript {\n  stringifier;\n  DOMString toJSON();\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedScript {\n  stringifier;\n  DOMString toJSON();\n};",
         "type": "interface",
         "name": "TrustedScript",
         "inheritance": null,
@@ -93,8 +107,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
             },
             "arguments": []
           }
@@ -102,7 +123,7 @@
         "partial": false
       },
       "TrustedScriptURL": {
-        "fragment": "[Exposed=Window]\ninterface TrustedScriptURL {\n  stringifier;\n  USVString toJSON();\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedScriptURL {\n  stringifier;\n  USVString toJSON();\n};",
         "type": "interface",
         "name": "TrustedScriptURL",
         "inheritance": null,
@@ -135,8 +156,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
             },
             "arguments": []
           }
@@ -144,7 +172,7 @@
         "partial": false
       },
       "TrustedTypePolicyFactory": {
-        "fragment": "[Exposed=Window] interface TrustedTypePolicyFactory {\n    TrustedTypePolicy createPolicy(\n        DOMString policyName, optional TrustedTypePolicyOptions policyOptions = {});\n    boolean isHTML(any value);\n    boolean isScript(any value);\n    boolean isScriptURL(any value);\n    readonly attribute TrustedHTML emptyHTML;\n    readonly attribute TrustedScript emptyScript;\n    DOMString? getAttributeType(\n        DOMString tagName,\n        DOMString attribute,\n        optional DOMString elementNs = \"\",\n        optional DOMString attrNs = \"\");\n    DOMString? getPropertyType(\n        DOMString tagName,\n        DOMString property,\n        optional DOMString elementNs = \"\");\n    readonly attribute TrustedTypePolicy? defaultPolicy;\n};",
+        "fragment": "[Exposed=(Window,Worker)] interface TrustedTypePolicyFactory {\n    TrustedTypePolicy createPolicy(\n        DOMString policyName, optional TrustedTypePolicyOptions policyOptions = {});\n    boolean isHTML(any value);\n    boolean isScript(any value);\n    boolean isScriptURL(any value);\n    readonly attribute TrustedHTML emptyHTML;\n    readonly attribute TrustedScript emptyScript;\n    DOMString? getAttributeType(\n        DOMString tagName,\n        DOMString attribute,\n        optional DOMString elementNs = \"\",\n        optional DOMString attrNs = \"\");\n    DOMString? getPropertyType(\n        DOMString tagName,\n        DOMString property,\n        optional DOMString elementNs = \"\");\n    readonly attribute TrustedTypePolicy? defaultPolicy;\n};",
         "type": "interface",
         "name": "TrustedTypePolicyFactory",
         "inheritance": null,
@@ -499,8 +527,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
             },
             "arguments": []
           }
@@ -508,7 +543,7 @@
         "partial": false
       },
       "TrustedTypePolicy": {
-        "fragment": "[Exposed=Window]\ninterface TrustedTypePolicy {\n  readonly attribute DOMString name;\n  TrustedHTML createHTML(DOMString input, any... arguments);\n  TrustedScript createScript(DOMString input, any... arguments);\n  TrustedScriptURL createScriptURL(DOMString input, any... arguments);\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedTypePolicy {\n  readonly attribute DOMString name;\n  TrustedHTML createHTML(DOMString input, any... arguments);\n  TrustedScript createScript(DOMString input, any... arguments);\n  TrustedScriptURL createScriptURL(DOMString input, any... arguments);\n};",
         "type": "interface",
         "name": "TrustedTypePolicy",
         "inheritance": null,
@@ -678,8 +713,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
             },
             "arguments": []
           }
@@ -998,11 +1040,11 @@
       }
     },
     "idlExtendedNames": {
-      "Window": [
+      "WindowOrWorkerGlobalScope": [
         {
-          "fragment": "partial interface Window {\n  readonly attribute TrustedTypePolicyFactory trustedTypes;\n};",
+          "fragment": "partial interface WindowOrWorkerGlobalScope {\n  readonly attribute TrustedTypePolicyFactory trustedTypes;\n};",
           "type": "interface",
-          "name": "Window",
+          "name": "WindowOrWorkerGlobalScope",
           "inheritance": null,
           "members": [
             {
@@ -1034,6 +1076,13 @@
         "TrustedScriptURL",
         "TrustedTypePolicyFactory",
         "TrustedTypePolicy"
+      ],
+      "Worker": [
+        "TrustedHTML",
+        "TrustedScript",
+        "TrustedScriptURL",
+        "TrustedTypePolicyFactory",
+        "TrustedTypePolicy"
       ]
     },
     "dependencies": {
@@ -1056,12 +1105,12 @@
         "CreateScriptCallback",
         "CreateScriptURLCallback"
       ],
-      "Window": [
+      "WindowOrWorkerGlobalScope": [
         "TrustedTypePolicyFactory"
       ]
     },
     "externalDependencies": [
-      "Window"
+      "WindowOrWorkerGlobalScope"
     ],
     "hasObsoleteIdl": false
   }

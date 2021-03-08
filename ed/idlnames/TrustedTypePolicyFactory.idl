@@ -1,5 +1,5 @@
 // Source: Trusted Types (https://w3c.github.io/webappsec-trusted-types/dist/spec/)
-[Exposed=Window] interface TrustedTypePolicyFactory {
+[Exposed=(Window,Worker)] interface TrustedTypePolicyFactory {
     TrustedTypePolicy createPolicy(
         DOMString policyName, optional TrustedTypePolicyOptions policyOptions = {});
     boolean isHTML(any value);
