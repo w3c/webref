@@ -21,7 +21,7 @@
     },
     "idlNames": {
       "SyncManager": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface SyncManager {\n  Promise<void> register(DOMString tag);\n  Promise<sequence<DOMString>> getTags();\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface SyncManager {\n  Promise<undefined> register(DOMString tag);\n  Promise<sequence<DOMString>> getTags();\n};",
         "type": "interface",
         "name": "SyncManager",
         "inheritance": null,
@@ -42,7 +42,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -325,9 +325,7 @@
       "ServiceWorkerRegistration": [
         "SyncManager"
       ],
-      "SyncManager": [
-        "void"
-      ],
+      "SyncManager": [],
       "ServiceWorkerGlobalScope": [
         "EventHandler"
       ],
@@ -341,7 +339,6 @@
     },
     "externalDependencies": [
       "ServiceWorkerRegistration",
-      "void",
       "ServiceWorkerGlobalScope",
       "EventHandler",
       "ExtendableEvent",
