@@ -1,4 +1,5 @@
-// Source: SVG Markers (https://www.w3.org/TR/svg-markers/)
+// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
+[Exposed=Window]
 interface SVGMarkerElement : SVGElement {
 
   // Marker Unit Types
@@ -11,21 +12,18 @@ interface SVGMarkerElement : SVGElement {
   const unsigned short SVG_MARKER_ORIENT_AUTO = 1;
   const unsigned short SVG_MARKER_ORIENT_ANGLE = 2;
 
-  readonly attribute SVGAnimatedLength refX;
-  readonly attribute SVGAnimatedLength refY;
-  readonly attribute SVGAnimatedEnumeration markerUnits;
-  readonly attribute SVGAnimatedLength markerWidth;
-  readonly attribute SVGAnimatedLength markerHeight;
-  readonly attribute SVGAnimatedEnumeration orientType;
-  readonly attribute SVGAnimatedAngle orientAngle;
-           attribute DOMString orient;
+  [SameObject] readonly attribute SVGAnimatedLength refX;
+  [SameObject] readonly attribute SVGAnimatedLength refY;
+  [SameObject] readonly attribute SVGAnimatedEnumeration markerUnits;
+  [SameObject] readonly attribute SVGAnimatedLength markerWidth;
+  [SameObject] readonly attribute SVGAnimatedLength markerHeight;
+  [SameObject] readonly attribute SVGAnimatedEnumeration orientType;
+  [SameObject] readonly attribute SVGAnimatedAngle orientAngle;
+  attribute DOMString orient;
 
   void setOrientToAuto();
   void setOrientToAngle(SVGAngle angle);
 };
-
-// Source: SVG Markers (https://www.w3.org/TR/svg-markers/)
-SVGMarkerElement includes SVGFitToViewBox;
 
 // Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
 SVGMarkerElement includes SVGFitToViewBox;

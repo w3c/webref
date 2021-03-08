@@ -11,6 +11,13 @@
   "extended": [
     {
       "spec": {
+        "title": "WebXR Depth Sensing Module",
+        "url": "https://immersive-web.github.io/depth-sensing/"
+      },
+      "fragment": "partial interface XRSession {\n  readonly attribute XRDepthUsage depthUsage;\n  readonly attribute XRDepthDataFormat depthDataFormat;\n};"
+    },
+    {
+      "spec": {
         "title": "WebXR DOM Overlays Module",
         "url": "https://immersive-web.github.io/dom-overlays/"
       },
@@ -22,6 +29,13 @@
         "url": "https://immersive-web.github.io/hit-test/"
       },
       "fragment": "partial interface XRSession {\n  Promise<XRHitTestSource> requestHitTestSource(XRHitTestOptionsInit options);\n  Promise<XRTransientInputHitTestSource> requestHitTestSourceForTransientInput(XRTransientInputHitTestOptionsInit options);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Lighting Estimation API Level 1",
+        "url": "https://immersive-web.github.io/lighting-estimation/"
+      },
+      "fragment": "partial interface XRSession {\n  Promise<XRLightProbe> requestLightProbe(optional XRLightProbeInit options = {});\n  readonly attribute XRReflectionFormat preferredReflectionFormat;\n};"
     },
     {
       "spec": {

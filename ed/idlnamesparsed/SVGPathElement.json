@@ -8,15 +8,7 @@
     "fragment": "[Exposed=Window]\ninterface SVGPathElement : SVGGeometryElement {\n};",
     "href": "https://svgwg.org/svg2-draft/paths.html#InterfaceSVGPathElement"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "SVG Markers",
-        "url": "https://www.w3.org/TR/svg-markers/"
-      },
-      "fragment": "SVGPathElement includes SVGMarkableElement;"
-    }
-  ],
+  "extended": [],
   "inheritance": {
     "name": "SVGGeometryElement",
     "defined": {
@@ -538,20 +530,5 @@
     },
     "includes": []
   },
-  "includes": [
-    {
-      "name": "SVGMarkableElement",
-      "defined": {
-        "spec": {
-          "title": "SVG Markers",
-          "url": "https://www.w3.org/TR/svg-markers/"
-        },
-        "fragment": "interface mixin SVGMarkableElement {\n  readonly attribute SVGMarkerList markers;\n\n  long getMarkerIndexFromPoint(DOMPoint point);\n};",
-        "href": "https://svgwg.org/specs/markers/#InterfaceSVGMarkableElement"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    }
-  ]
+  "includes": []
 }

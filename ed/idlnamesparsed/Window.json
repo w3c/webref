@@ -74,13 +74,6 @@
     },
     {
       "spec": {
-        "title": "Trusted Types",
-        "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
-      },
-      "fragment": "partial interface Window {\n  readonly attribute TrustedTypePolicyFactory trustedTypes;\n};"
-    },
-    {
-      "spec": {
         "title": "Cookie Store API",
         "url": "https://wicg.github.io/cookie-store/"
       },
@@ -289,6 +282,13 @@
             "url": "https://fetch.spec.whatwg.org/"
           },
           "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [NewObject] Promise<Response> fetch(RequestInfo input, optional RequestInit init = {});\n};"
+        },
+        {
+          "spec": {
+            "title": "Trusted Types",
+            "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+          },
+          "fragment": "partial interface WindowOrWorkerGlobalScope {\n  readonly attribute TrustedTypePolicyFactory trustedTypes;\n};"
         },
         {
           "spec": {

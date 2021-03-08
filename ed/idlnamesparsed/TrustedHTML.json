@@ -5,7 +5,7 @@
       "title": "Trusted Types",
       "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
     },
-    "fragment": "[Exposed=Window]\ninterface TrustedHTML {\n  stringifier;\n  DOMString toJSON();\n};",
+    "fragment": "[Exposed=(Window,Worker)]\ninterface TrustedHTML {\n  stringifier;\n  DOMString toJSON();\n};",
     "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedhtml"
   },
   "extended": [],
