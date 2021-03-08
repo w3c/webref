@@ -27,6 +27,7 @@ async function main() {
 
   // The patches are against ed/idl/ and can be applied there using `git am`,
   // but apply them in packages/idl/ instead using `git apply`.
+  // See ed/idlpatches/README.md for how to maintain these patches.
   const patchFiles = await fs.readdir(patchDir);
   for (const file of patchFiles) {
     if (file.endsWith('.patch')) {
