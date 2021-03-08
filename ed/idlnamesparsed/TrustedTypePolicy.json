@@ -5,7 +5,7 @@
       "title": "Trusted Types",
       "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface TrustedTypePolicy {\n  readonly attribute DOMString name;\n  TrustedHTML createHTML(DOMString input, any... arguments);\n  TrustedScript createScript(DOMString input, any... arguments);\n  TrustedScriptURL createScriptURL(DOMString input, any... arguments);\n};",
+    "fragment": "[Exposed=Window]\ninterface TrustedTypePolicy {\n  readonly attribute DOMString name;\n  TrustedHTML createHTML(DOMString input, any... arguments);\n  TrustedScript createScript(DOMString input, any... arguments);\n  TrustedScriptURL createScriptURL(DOMString input, any... arguments);\n};",
     "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#trustedtypepolicy"
   },
   "extended": [],
