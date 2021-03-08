@@ -99,10 +99,24 @@
       },
       {
         "spec": {
+          "title": "Private Network Access",
+          "url": "https://wicg.github.io/cors-rfc1918/"
+        },
+        "fragment": "partial interface Document {\n  readonly attribute AddressSpace addressSpace;\n};"
+      },
+      {
+        "spec": {
           "title": "Page Lifecycle",
           "url": "https://wicg.github.io/page-lifecycle/"
         },
         "fragment": "partial interface Document {\n    attribute EventHandler onfreeze;\n    attribute EventHandler onresume;\n    readonly attribute boolean wasDiscarded;\n};"
+      },
+      {
+        "spec": {
+          "title": "Text Fragments",
+          "url": "https://wicg.github.io/scroll-to-text-fragment/"
+        },
+        "fragment": "partial interface Document {\n    [SameObject] readonly attribute FragmentDirective fragmentDirective;\n};"
       },
       {
         "spec": {
