@@ -102,6 +102,20 @@
     },
     {
       "spec": {
+        "title": "Get Installed Related Apps API",
+        "url": "https://wicg.github.io/get-installed-related-apps/spec/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext] Promise<sequence<RelatedApplication>> getInstalledRelatedApps();\n};"
+    },
+    {
+      "spec": {
+        "title": "Early detection of input events",
+        "url": "https://wicg.github.io/is-input-pending/"
+      },
+      "fragment": "partial interface Navigator {\n  readonly attribute Scheduling scheduling;\n};"
+    },
+    {
+      "spec": {
         "title": "Keyboard Lock",
         "url": "https://wicg.github.io/keyboard-lock/"
       },

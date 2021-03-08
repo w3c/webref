@@ -85,8 +85,7 @@ interface RTCTransformEvent : Event {
     readonly attribute RTCRtpScriptTransformer transformer;
 };
 
-[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]
-partial interface DedicatedWorkerGlobalScope : WorkerGlobalScope {
+partial interface DedicatedWorkerGlobalScope {
     attribute EventHandler onrtctransform;
 };
 

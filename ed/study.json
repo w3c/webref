@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-03-08T06:50:02.283Z",
+  "date": "2021-03-08T10:15:48.286Z",
   "stats": {
     "crawled": 383,
-    "errors": 9,
+    "errors": 0,
     "studied": 383
   },
   "results": [
@@ -1525,7 +1525,7 @@
     {
       "title": "Compression Streams",
       "shortname": "compression",
-      "date": "",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/compression/",
       "nightly": {
         "url": "https://wicg.github.io/compression/",
@@ -1533,17 +1533,12 @@
         "sourcePath": "index.bs",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://wicg.github.io/compression/",
-        "repository": "https://github.com/WICG/compression",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
+      "crawled": "https://wicg.github.io/compression/",
       "report": {
-        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 68)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -1558,7 +1553,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -1893,6 +1888,11 @@
               "url": "https://wicg.github.io/portals/",
               "title": "Portals",
               "crawled": "https://wicg.github.io/portals/"
+            },
+            {
+              "url": "https://wicg.github.io/cors-rfc1918/",
+              "title": "Private Network Access",
+              "crawled": "https://wicg.github.io/private-network-access/"
             },
             {
               "url": "https://www.w3.org/TR/resource-hints/",
@@ -2263,45 +2263,6 @@
       }
     },
     {
-      "title": "CORS and RFC1918",
-      "shortname": "cors-rfc1918",
-      "date": "",
-      "url": "https://wicg.github.io/cors-rfc1918/",
-      "nightly": {
-        "url": "https://wicg.github.io/cors-rfc1918/",
-        "repository": "https://github.com/WICG/cors-rfc1918",
-        "sourcePath": "index.src.html",
-        "filename": "index.html"
-      },
-      "crawled": {
-        "url": "https://wicg.github.io/cors-rfc1918/",
-        "repository": "https://github.com/WICG/cors-rfc1918",
-        "sourcePath": "index.src.html",
-        "filename": "index.html"
-      },
-      "report": {
-        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 73)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingDfns": {
-          "css": [],
-          "idl": []
-        },
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "Crash Reporting",
       "shortname": "crash-reporting",
       "date": "24 June 2020",
@@ -2400,6 +2361,11 @@
               "url": "https://www.w3.org/TR/webauthn-2/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
               "crawled": "https://w3c.github.io/webauthn/"
+            },
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
             }
           ],
           "informative": [
@@ -2989,6 +2955,11 @@
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://drafts.csswg.org/selectors/"
+            },
+            {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -5669,6 +5640,11 @@
               "crawled": "https://drafts.fxtf.org/motion-1/"
             },
             {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
+            },
+            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
@@ -7193,6 +7169,11 @@
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://drafts.csswg.org/selectors/"
+            },
+            {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://wicg.github.io/visual-viewport/",
@@ -16758,6 +16739,11 @@
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
             },
             {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
+            },
+            {
               "url": "https://www.w3.org/TR/screen-fold/",
               "title": "The Screen Fold API",
               "crawled": "https://w3c.github.io/screen-fold/"
@@ -16889,7 +16875,7 @@
     {
       "title": "DataCue API",
       "shortname": "datacue",
-      "date": "",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/datacue/",
       "nightly": {
         "url": "https://wicg.github.io/datacue/",
@@ -16897,17 +16883,12 @@
         "sourcePath": "index.bs",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://wicg.github.io/datacue/",
-        "repository": "https://github.com/WICG/datacue",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
+      "crawled": "https://wicg.github.io/datacue/",
       "report": {
-        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 77)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -16922,7 +16903,7 @@
           "normative": [],
           "informative": []
         },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -17454,6 +17435,11 @@
               "crawled": "https://w3c.github.io/DOM-Parsing/"
             },
             {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
+            },
+            {
               "url": "https://wicg.github.io/element-timing/",
               "title": "Element Timing API",
               "crawled": "https://wicg.github.io/element-timing/"
@@ -17502,6 +17488,11 @@
               "url": "https://www.w3.org/TR/geolocation-sensor/",
               "title": "Geolocation Sensor",
               "crawled": "https://w3c.github.io/geolocation-sensor/"
+            },
+            {
+              "url": "https://wicg.github.io/get-installed-related-apps/spec/",
+              "title": "Get Installed Related Apps API",
+              "crawled": "https://wicg.github.io/get-installed-related-apps/spec/"
             },
             {
               "url": "https://www.w3.org/TR/hr-time-3/",
@@ -17774,6 +17765,11 @@
               "crawled": "https://svgwg.org/specs/animations/"
             },
             {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
+            },
+            {
               "url": "https://www.w3.org/TR/screen-fold/",
               "title": "The Screen Fold API",
               "crawled": "https://w3c.github.io/screen-fold/"
@@ -17867,6 +17863,11 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC",
               "crawled": "https://w3c.github.io/web-nfc/"
+            },
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
             },
             {
               "url": "https://wicg.github.io/periodic-background-sync/",
@@ -18030,6 +18031,54 @@
       }
     },
     {
+      "title": "Early detection of input events",
+      "shortname": "is-input-pending",
+      "date": "08 March 2021",
+      "url": "https://wicg.github.io/is-input-pending/",
+      "nightly": {
+        "url": "https://wicg.github.io/is-input-pending/",
+        "repository": "https://github.com/WICG/is-input-pending",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "crawled": "https://wicg.github.io/is-input-pending/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingDfns": {
+          "css": [],
+          "idl": []
+        },
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "xrefs": {
+          "notExported": [
+            "https://html.spec.whatwg.org/#task-queue"
+          ],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://heycam.github.io/webidl/#idl-Exposed"
+          ],
+          "evolvingLinks": [],
+          "outdatedSpecs": [
+            "https://www.w3.org/TR/html5/"
+          ],
+          "datedUrls": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "ECMAScript® 2021 Internationalization API Specification",
       "shortname": "ecma-402",
       "date": "26 February 2021",
@@ -18149,6 +18198,11 @@
               "crawled": "https://dom.spec.whatwg.org/"
             },
             {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
+            },
+            {
               "url": "https://www.w3.org/TR/encrypted-media/",
               "title": "Encrypted Media Extensions",
               "crawled": "https://w3c.github.io/encrypted-media/"
@@ -18192,6 +18246,11 @@
               "url": "https://infra.spec.whatwg.org/",
               "title": "Infra Standard",
               "crawled": "https://infra.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/js-self-profiling/",
+              "title": "JS Self-Profiling API",
+              "crawled": "https://wicg.github.io/js-self-profiling/"
             },
             {
               "url": "https://wicg.github.io/keyboard-lock/",
@@ -18968,6 +19027,11 @@
               "url": "https://wicg.github.io/portals/",
               "title": "Portals",
               "crawled": "https://wicg.github.io/portals/"
+            },
+            {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             }
           ]
         },
@@ -19134,6 +19198,11 @@
               "crawled": "https://wicg.github.io/webpackage/loading.html"
             },
             {
+              "url": "https://wicg.github.io/media-feeds/",
+              "title": "Media Feeds",
+              "crawled": "https://wicg.github.io/media-feeds/"
+            },
+            {
               "url": "https://www.w3.org/TR/mediasession/",
               "title": "Media Session Standard",
               "crawled": "https://w3c.github.io/mediasession/"
@@ -19209,6 +19278,11 @@
               "crawled": "https://wicg.github.io/priority-hints/"
             },
             {
+              "url": "https://wicg.github.io/cors-rfc1918/",
+              "title": "Private Network Access",
+              "crawled": "https://wicg.github.io/private-network-access/"
+            },
+            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://w3c.github.io/webappsec-referrer-policy/"
@@ -19244,6 +19318,11 @@
               "crawled": "https://w3c.github.io/webappsec-subresource-integrity/"
             },
             {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
+            },
+            {
               "url": "https://www.w3.org/TR/trace-context-1/",
               "title": "Trace Context Level 2",
               "crawled": "https://w3c.github.io/trace-context/"
@@ -19272,6 +19351,11 @@
               "url": "https://www.w3.org/TR/webauthn-2/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
               "crawled": "https://w3c.github.io/webauthn/"
+            },
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
             },
             {
               "url": "https://w3c.github.io/web-share-target/",
@@ -20489,6 +20573,11 @@
               "crawled": "https://svgwg.org/svg2-draft/"
             },
             {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
+            },
+            {
               "url": "https://www.w3.org/TR/webdriver2/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/"
@@ -20540,7 +20629,7 @@
     {
       "title": "Get Installed Related Apps API",
       "shortname": "get-installed-related-apps",
-      "date": "",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/get-installed-related-apps/spec/",
       "nightly": {
         "url": "https://wicg.github.io/get-installed-related-apps/spec/",
@@ -20548,17 +20637,12 @@
         "sourcePath": "spec/index.bs",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://wicg.github.io/get-installed-related-apps/spec/",
-        "repository": "https://github.com/WICG/get-installed-related-apps",
-        "sourcePath": "spec/index.bs",
-        "filename": "index.html"
-      },
+      "crawled": "https://wicg.github.io/get-installed-related-apps/spec/",
       "report": {
-        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 84)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -20572,6 +20656,25 @@
         "referencedBy": {
           "normative": [],
           "informative": []
+        },
+        "xrefs": {
+          "notExported": [],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://www.w3.org/TR/appmanifest/#dom-fingerprint",
+            "https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource",
+            "https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-platform",
+            "https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-id",
+            "https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-url",
+            "https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-min_version",
+            "https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-fingerprints",
+            "https://www.w3.org/TR/appmanifest/#dom-webappmanifest",
+            "https://www.w3.org/TR/appmanifest/#obtaining",
+            "https://www.w3.org/TR/appmanifest/#dom-webappmanifest-related_applications"
+          ],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
         },
         "ok": false
       }
@@ -20811,6 +20914,11 @@
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
             },
             {
+              "url": "https://wicg.github.io/js-self-profiling/",
+              "title": "JS Self-Profiling API",
+              "crawled": "https://wicg.github.io/js-self-profiling/"
+            },
+            {
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/"
@@ -20911,7 +21019,13 @@
               "crawled": "https://immersive-web.github.io/webxr/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://wicg.github.io/js-self-profiling/",
+              "title": "JS Self-Profiling API",
+              "crawled": "https://wicg.github.io/js-self-profiling/"
+            }
+          ]
         },
         "xrefs": {
           "notExported": [
@@ -31589,6 +31703,11 @@
               "crawled": "https://wicg.github.io/custom-state-pseudo-class/"
             },
             {
+              "url": "https://wicg.github.io/datacue/",
+              "title": "DataCue API",
+              "crawled": "https://wicg.github.io/datacue/"
+            },
+            {
               "url": "https://www.w3.org/TR/device-memory-1/",
               "title": "Device Memory 1",
               "crawled": "https://w3c.github.io/device-memory/"
@@ -31607,6 +31726,11 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
             },
             {
               "url": "https://wicg.github.io/element-timing/",
@@ -31699,6 +31823,11 @@
               "crawled": "https://drafts.fxtf.org/geometry/"
             },
             {
+              "url": "https://wicg.github.io/get-installed-related-apps/spec/",
+              "title": "Get Installed Related Apps API",
+              "crawled": "https://wicg.github.io/get-installed-related-apps/spec/"
+            },
+            {
               "url": "https://www.w3.org/TR/hr-time-3/",
               "title": "High Resolution Time",
               "crawled": "https://w3c.github.io/hr-time/"
@@ -31762,6 +31891,11 @@
               "url": "https://www.w3.org/TR/intersection-observer/",
               "title": "Intersection Observer",
               "crawled": "https://w3c.github.io/IntersectionObserver/"
+            },
+            {
+              "url": "https://wicg.github.io/js-self-profiling/",
+              "title": "JS Self-Profiling API",
+              "crawled": "https://wicg.github.io/js-self-profiling/"
             },
             {
               "url": "https://wicg.github.io/keyboard-lock/",
@@ -31832,6 +31966,11 @@
               "url": "https://www.w3.org/TR/mediacapture-fromelement/",
               "title": "Media Capture from DOM Elements",
               "crawled": "https://w3c.github.io/mediacapture-fromelement/"
+            },
+            {
+              "url": "https://wicg.github.io/media-feeds/",
+              "title": "Media Feeds",
+              "crawled": "https://wicg.github.io/media-feeds/"
             },
             {
               "url": "https://w3c.github.io/media-playback-quality/",
@@ -31989,6 +32128,11 @@
               "crawled": "https://privacycg.github.io/private-click-measurement/"
             },
             {
+              "url": "https://wicg.github.io/cors-rfc1918/",
+              "title": "Private Network Access",
+              "crawled": "https://wicg.github.io/private-network-access/"
+            },
+            {
               "url": "https://www.w3.org/TR/push-api/",
               "title": "Push API",
               "crawled": "https://w3c.github.io/push-api/"
@@ -32109,6 +32253,11 @@
               "crawled": "https://svgwg.org/specs/animations/"
             },
             {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
+            },
+            {
               "url": "https://www.w3.org/TR/screen-fold/",
               "title": "The Screen Fold API",
               "crawled": "https://w3c.github.io/screen-fold/"
@@ -32227,6 +32376,11 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC",
               "crawled": "https://w3c.github.io/web-nfc/"
+            },
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
             },
             {
               "url": "https://wicg.github.io/periodic-background-sync/",
@@ -33763,6 +33917,11 @@
               "crawled": "https://w3c.github.io/geolocation-sensor/"
             },
             {
+              "url": "https://wicg.github.io/get-installed-related-apps/spec/",
+              "title": "Get Installed Related Apps API",
+              "crawled": "https://wicg.github.io/get-installed-related-apps/spec/"
+            },
+            {
               "url": "https://www.w3.org/TR/gyroscope/",
               "title": "Gyroscope",
               "crawled": "https://w3c.github.io/gyroscope/"
@@ -33981,6 +34140,11 @@
               "url": "https://www.w3.org/TR/SRI/",
               "title": "Subresource Integrity",
               "crawled": "https://w3c.github.io/webappsec-subresource-integrity/"
+            },
+            {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://www.w3.org/TR/screen-fold/",
@@ -34410,48 +34574,9 @@
       }
     },
     {
-      "title": "isInputPending",
-      "shortname": "is-input-pending",
-      "date": "",
-      "url": "https://wicg.github.io/is-input-pending/",
-      "nightly": {
-        "url": "https://wicg.github.io/is-input-pending/",
-        "repository": "https://github.com/WICG/is-input-pending",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "crawled": {
-        "url": "https://wicg.github.io/is-input-pending/",
-        "repository": "https://github.com/WICG/is-input-pending",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "report": {
-        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 89)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
-        "noNormativeRefs": true,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingDfns": {
-          "css": [],
-          "idl": []
-        },
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "JS Self-Profiling API",
       "shortname": "js-self-profiling",
-      "date": "",
+      "date": "08 March 2021",
       "url": "https://wicg.github.io/js-self-profiling/",
       "nightly": {
         "url": "https://wicg.github.io/js-self-profiling/",
@@ -34459,30 +34584,54 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://wicg.github.io/js-self-profiling/",
-        "repository": "https://github.com/WICG/js-self-profiling",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
+      "crawled": "https://wicg.github.io/js-self-profiling/",
       "report": {
-        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 90)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "EventTarget",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
         "missingDfns": {
           "css": [],
           "idl": []
         },
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/webappsec-permissions-policy/document-policy.html"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
+        },
+        "xrefs": {
+          "notExported": [],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://www.w3.org/TR/hr-time-2/#dfn-performance",
+            "https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value",
+            "https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point",
+            "https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type",
+            "https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value"
+          ],
+          "evolvingLinks": [],
+          "outdatedSpecs": [
+            "https://www.w3.org/TR/html5/"
+          ],
+          "datedUrls": []
         },
         "ok": false
       }
@@ -35710,7 +35859,7 @@
     {
       "title": "Media Feeds",
       "shortname": "media-feeds",
-      "date": "",
+      "date": "08 March 2021",
       "url": "https://wicg.github.io/media-feeds/",
       "nightly": {
         "url": "https://wicg.github.io/media-feeds/",
@@ -35718,15 +35867,9 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://wicg.github.io/media-feeds/",
-        "repository": "https://github.com/WICG/media-feeds",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
+      "crawled": "https://wicg.github.io/media-feeds/",
       "report": {
-        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 96)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
         "unknownExposedNames": [],
@@ -35742,6 +35885,22 @@
         "referencedBy": {
           "normative": [],
           "informative": []
+        },
+        "xrefs": {
+          "notExported": [
+            "https://html.spec.whatwg.org/#ready-for-post-load-tasks"
+          ],
+          "notDfn": [
+            "https://html.spec.whatwg.org/#case-sensitive",
+            "https://html.spec.whatwg.org/#document"
+          ],
+          "brokenLinks": [
+            "https://html.spec.whatwg.org/#link",
+            "https://www.w3.org/TR/secure-contexts/#secure-context"
+          ],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
         },
         "ok": false
       }
@@ -36743,6 +36902,11 @@
               "crawled": "https://w3c.github.io/webappsec-mixed-content/"
             },
             {
+              "url": "https://wicg.github.io/cors-rfc1918/",
+              "title": "Private Network Access",
+              "crawled": "https://wicg.github.io/private-network-access/"
+            },
+            {
               "url": "https://www.w3.org/TR/resource-hints/",
               "title": "Resource Hints",
               "crawled": "https://w3c.github.io/resource-hints/"
@@ -37411,7 +37575,13 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
+            }
+          ],
           "informative": []
         },
         "xrefs": {
@@ -38608,6 +38778,11 @@
               "crawled": "https://w3c.github.io/screen-wake-lock/"
             },
             {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
+            },
+            {
               "url": "https://www.w3.org/TR/webauthn-2/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 2",
               "crawled": "https://w3c.github.io/webauthn/"
@@ -38794,6 +38969,11 @@
               "url": "https://compat.spec.whatwg.org/",
               "title": "Compatibility Standard",
               "crawled": "https://compat.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
             },
             {
               "url": "https://html.spec.whatwg.org/multipage/",
@@ -39277,6 +39457,77 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [],
+          "brokenLinks": [],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Private Network Access",
+      "shortname": "cors-rfc1918",
+      "date": "8 March 2021",
+      "url": "https://wicg.github.io/cors-rfc1918/",
+      "nightly": {
+        "url": "https://wicg.github.io/cors-rfc1918/",
+        "repository": "https://github.com/WICG/cors-rfc1918",
+        "sourcePath": "index.src.html",
+        "filename": "index.html"
+      },
+      "crawled": "https://wicg.github.io/private-network-access/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [
+          {
+            "name": "Document",
+            "refs": [
+              {
+                "url": "https://dom.spec.whatwg.org/",
+                "title": "DOM Standard",
+                "crawled": "https://dom.spec.whatwg.org/"
+              }
+            ]
+          }
+        ],
+        "missingDfns": {
+          "css": [],
+          "idl": []
+        },
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-csp/",
+            "ref": {
+              "name": "CSP3",
+              "url": "https://www.w3.org/TR/CSP3/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "xrefs": {
+          "notExported": [
+            "https://fetch.spec.whatwg.org/#concept-http-network-fetch",
+            "https://fetch.spec.whatwg.org/#cors-preflight-fetch-0",
+            "https://fetch.spec.whatwg.org/#concept-cache",
+            "https://fetch.spec.whatwg.org/#concept-websocket-establish",
+            "https://html.spec.whatwg.org/#meta",
+            "https://html.spec.whatwg.org/#creating-a-new-browsing-context",
+            "https://html.spec.whatwg.org/#initialise-the-document-object"
+          ],
+          "notDfn": [
+            "https://html.spec.whatwg.org/#document"
+          ],
           "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -41338,6 +41589,11 @@
               "crawled": "https://w3c.github.io/media-capabilities/"
             },
             {
+              "url": "https://wicg.github.io/media-feeds/",
+              "title": "Media Feeds",
+              "crawled": "https://wicg.github.io/media-feeds/"
+            },
+            {
               "url": "https://www.w3.org/TR/mixed-content/",
               "title": "Mixed Content Level 2",
               "crawled": "https://w3c.github.io/webappsec-mixed-content/"
@@ -42308,6 +42564,11 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
+              "url": "https://wicg.github.io/compression/",
+              "title": "Compression Streams",
+              "crawled": "https://wicg.github.io/compression/"
+            },
+            {
               "url": "https://wicg.github.io/css-parser-api/",
               "title": "CSS Parser API",
               "crawled": "https://wicg.github.io/css-parser-api/"
@@ -42975,7 +43236,7 @@
     {
       "title": "Text Fragments",
       "shortname": "scroll-to-text-fragment",
-      "date": "",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/scroll-to-text-fragment/",
       "nightly": {
         "url": "https://wicg.github.io/scroll-to-text-fragment/",
@@ -42983,17 +43244,12 @@
         "sourcePath": "index.bs",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://wicg.github.io/scroll-to-text-fragment/",
-        "repository": "https://github.com/WICG/scroll-to-text-fragment",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
+      "crawled": "https://wicg.github.io/scroll-to-text-fragment/",
       "report": {
-        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 108)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -43002,11 +43258,43 @@
           "css": [],
           "idl": []
         },
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/selection-api/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
+        },
+        "xrefs": {
+          "notExported": [
+            "https://html.spec.whatwg.org/#initialise-the-document-object",
+            "https://html.spec.whatwg.org/#traverse-the-history",
+            "https://html.spec.whatwg.org/#scroll-to-the-fragment-identifier",
+            "https://html.spec.whatwg.org/#navigation-params-request",
+            "https://html.spec.whatwg.org/#latest-entry",
+            "https://html.spec.whatwg.org/#session-history",
+            "https://html.spec.whatwg.org/#tlbc-group",
+            "https://html.spec.whatwg.org/#browsing-context-set",
+            "https://html.spec.whatwg.org/#try-to-scroll-to-the-fragment",
+            "https://html.spec.whatwg.org/#the-indicated-part-of-the-document",
+            "https://html.spec.whatwg.org/#serializes-as-void",
+            "https://html.spec.whatwg.org/#being-rendered",
+            "https://html.spec.whatwg.org/#restore-persisted-state",
+            "https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view",
+            "https://w3c.github.io/selection-api/#dfn-selection"
+          ],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://w3c.github.io/webappsec-fetch-metadata/#request-user-activation-flag",
+            "https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value",
+            "https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point",
+            "https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type",
+            "https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value"
+          ],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
         },
         "ok": false
       }
@@ -43329,6 +43617,11 @@
               "crawled": "https://dom.spec.whatwg.org/"
             },
             {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
+            },
+            {
               "url": "https://wicg.github.io/event-timing/",
               "title": "Event Timing API",
               "crawled": "https://wicg.github.io/event-timing/"
@@ -43589,6 +43882,11 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
             },
             {
               "url": "https://wicg.github.io/event-timing/",
@@ -44090,6 +44388,11 @@
               "crawled": "https://w3c.github.io/geolocation-api/"
             },
             {
+              "url": "https://wicg.github.io/get-installed-related-apps/spec/",
+              "title": "Get Installed Related Apps API",
+              "crawled": "https://wicg.github.io/get-installed-related-apps/spec/"
+            },
+            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
@@ -44108,6 +44411,11 @@
               "url": "https://wicg.github.io/webpackage/loading.html",
               "title": "Loading Signed Exchanges",
               "crawled": "https://wicg.github.io/webpackage/loading.html"
+            },
+            {
+              "url": "https://wicg.github.io/media-feeds/",
+              "title": "Media Feeds",
+              "crawled": "https://wicg.github.io/media-feeds/"
             },
             {
               "url": "https://www.w3.org/TR/mediasession/",
@@ -44190,6 +44498,11 @@
               "crawled": "https://privacycg.github.io/private-click-measurement/"
             },
             {
+              "url": "https://wicg.github.io/cors-rfc1918/",
+              "title": "Private Network Access",
+              "crawled": "https://wicg.github.io/private-network-access/"
+            },
+            {
               "url": "https://www.w3.org/TR/referrer-policy/",
               "title": "Referrer Policy",
               "crawled": "https://w3c.github.io/webappsec-referrer-policy/"
@@ -44218,6 +44531,11 @@
               "url": "https://www.w3.org/TR/service-workers-1/",
               "title": "Service Workers Nightly",
               "crawled": "https://w3c.github.io/ServiceWorker/"
+            },
+            {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
               "url": "https://privacycg.github.io/storage-access/",
@@ -44290,6 +44608,11 @@
               "url": "https://www.w3.org/TR/remote-playback/",
               "title": "Remote Playback API",
               "crawled": "https://w3c.github.io/remote-playback/"
+            },
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
             }
           ]
         },
@@ -44849,6 +45172,11 @@
               "url": "https://w3c.github.io/badging/",
               "title": "Badging API",
               "crawled": "https://w3c.github.io/badging/"
+            },
+            {
+              "url": "https://wicg.github.io/get-installed-related-apps/spec/",
+              "title": "Get Installed Related Apps API",
+              "crawled": "https://wicg.github.io/get-installed-related-apps/spec/"
             },
             {
               "url": "https://html.spec.whatwg.org/multipage/",
@@ -45430,6 +45758,11 @@
               "crawled": "https://compat.spec.whatwg.org/"
             },
             {
+              "url": "https://wicg.github.io/compression/",
+              "title": "Compression Streams",
+              "crawled": "https://wicg.github.io/compression/"
+            },
+            {
               "url": "https://console.spec.whatwg.org/",
               "title": "Console Standard",
               "crawled": "https://console.spec.whatwg.org/"
@@ -45610,6 +45943,11 @@
               "crawled": "https://wicg.github.io/custom-state-pseudo-class/"
             },
             {
+              "url": "https://wicg.github.io/datacue/",
+              "title": "DataCue API",
+              "crawled": "https://wicg.github.io/datacue/"
+            },
+            {
               "url": "https://wicg.github.io/deprecation-reporting/",
               "title": "Deprecation Reporting",
               "crawled": "https://wicg.github.io/deprecation-reporting/"
@@ -45633,6 +45971,11 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
+            },
+            {
+              "url": "https://wicg.github.io/is-input-pending/",
+              "title": "Early detection of input events",
+              "crawled": "https://wicg.github.io/is-input-pending/"
             },
             {
               "url": "https://wicg.github.io/element-timing/",
@@ -45720,6 +46063,11 @@
               "crawled": "https://drafts.fxtf.org/geometry/"
             },
             {
+              "url": "https://wicg.github.io/get-installed-related-apps/spec/",
+              "title": "Get Installed Related Apps API",
+              "crawled": "https://wicg.github.io/get-installed-related-apps/spec/"
+            },
+            {
               "url": "https://www.w3.org/TR/gyroscope/",
               "title": "Gyroscope",
               "crawled": "https://w3c.github.io/gyroscope/"
@@ -45803,6 +46151,11 @@
               "url": "https://wicg.github.io/intervention-reporting/",
               "title": "Intervention Reporting",
               "crawled": "https://wicg.github.io/intervention-reporting/"
+            },
+            {
+              "url": "https://wicg.github.io/js-self-profiling/",
+              "title": "JS Self-Profiling API",
+              "crawled": "https://wicg.github.io/js-self-profiling/"
             },
             {
               "url": "https://wicg.github.io/keyboard-lock/",
@@ -46115,6 +46468,11 @@
               "crawled": "https://streams.spec.whatwg.org/"
             },
             {
+              "url": "https://wicg.github.io/scroll-to-text-fragment/",
+              "title": "Text Fragments",
+              "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
+            },
+            {
               "url": "https://www.w3.org/TR/screen-fold/",
               "title": "The Screen Fold API",
               "crawled": "https://w3c.github.io/screen-fold/"
@@ -46223,6 +46581,11 @@
               "url": "https://w3c.github.io/web-nfc/",
               "title": "Web NFC",
               "crawled": "https://w3c.github.io/web-nfc/"
+            },
+            {
+              "url": "https://wicg.github.io/web-otp/",
+              "title": "Web OTP API",
+              "crawled": "https://wicg.github.io/web-otp/"
             },
             {
               "url": "https://wicg.github.io/periodic-background-sync/",
@@ -46552,7 +46915,7 @@
     {
       "title": "Web OTP API",
       "shortname": "web-otp",
-      "date": "",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/web-otp/",
       "nightly": {
         "url": "https://wicg.github.io/web-otp/",
@@ -46560,17 +46923,12 @@
         "sourcePath": "index.bs",
         "filename": "index.html"
       },
-      "crawled": {
-        "url": "https://wicg.github.io/web-otp/",
-        "repository": "https://github.com/WICG/web-otp",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
+      "crawled": "https://wicg.github.io/web-otp/",
       "report": {
-        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 119)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -46580,10 +46938,30 @@
           "idl": []
         },
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/webappsec-credential-management/",
+            "ref": {
+              "name": "CREDENTIAL-MANAGEMENT-1",
+              "url": "https://www.w3.org/TR/credential-management-1/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
+        },
+        "xrefs": {
+          "notExported": [
+            "https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors"
+          ],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors"
+          ],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
         },
         "ok": false
       }
@@ -52535,7 +52913,7 @@
     {
       "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
       "shortname": "webrtc",
-      "date": "01 March 2021",
+      "date": "08 March 2021",
       "url": "https://www.w3.org/TR/webrtc/",
       "release": {
         "url": "https://www.w3.org/TR/webrtc/",
@@ -52785,7 +53163,7 @@
     {
       "title": "WebRTC Insertable Media using Streams",
       "shortname": "webrtc-insertable-streams",
-      "date": "4 March 2021",
+      "date": "8 March 2021",
       "url": "https://w3c.github.io/webrtc-insertable-streams/",
       "nightly": {
         "url": "https://w3c.github.io/webrtc-insertable-streams/",
@@ -52797,9 +53175,12 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "hasInvalidIdl": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "RTCInsertableStreams"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {

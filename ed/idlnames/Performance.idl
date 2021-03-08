@@ -12,6 +12,12 @@ partial interface Performance {
     [SameObject] readonly attribute EventCounts eventCounts;
 };
 
+// Source: JS Self-Profiling API (https://wicg.github.io/js-self-profiling/)
+[Exposed=(Window,Worker)]
+partial interface Performance {
+  Promise<Profiler> profile(ProfilerInitOptions options);
+};
+
 // Source: Measure Memory API (https://wicg.github.io/performance-measure-memory/)
 partial interface Performance {
   [CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();
