@@ -6,16 +6,39 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "OES_fbo_render_mipmap"
+        ],
+        "Worker": [
+          "OES_fbo_render_mipmap"
+        ]
+      }
     },
     "idlNames": {
       "OES_fbo_render_mipmap": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface OES_fbo_render_mipmap {\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface OES_fbo_render_mipmap {\n};",
         "type": "interface",
         "name": "OES_fbo_render_mipmap",
         "inheritance": null,
         "members": [],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
@@ -28,7 +51,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "OES_fbo_render_mipmap"
+      ],
+      "Worker": [
+        "OES_fbo_render_mipmap"
+      ]
+    },
     "dependencies": {
       "OES_fbo_render_mipmap": []
     },

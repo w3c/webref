@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "WEBGL_depth_texture"
+        ],
+        "Worker": [
+          "WEBGL_depth_texture"
+        ]
+      }
     },
     "idlNames": {
       "WEBGL_depth_texture": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface WEBGL_depth_texture {\n  const GLenum UNSIGNED_INT_24_8_WEBGL = 0x84FA;\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_depth_texture {\n  const GLenum UNSIGNED_INT_24_8_WEBGL = 0x84FA;\n};",
         "type": "interface",
         "name": "WEBGL_depth_texture",
         "inheritance": null,
@@ -36,6 +43,22 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
@@ -46,7 +69,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "WEBGL_depth_texture"
+      ],
+      "Worker": [
+        "WEBGL_depth_texture"
+      ]
+    },
     "dependencies": {
       "WEBGL_depth_texture": []
     },

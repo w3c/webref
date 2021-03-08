@@ -1,7 +1,7 @@
 // Source: WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification (https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 [NoInterfaceObject]
 interface WEBGL_multi_draw_instanced_base_vertex_base_instance {
-  void multiDrawArraysInstancedBaseInstanceWEBGL(
+  undefined multiDrawArraysInstancedBaseInstanceWEBGL(
       GLenum mode,
       (Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,
       (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,
@@ -9,7 +9,7 @@ interface WEBGL_multi_draw_instanced_base_vertex_base_instance {
       (Uint32Array or sequence<GLuint>) baseInstancesList, GLuint baseInstancesOffset,
       GLsizei drawCount
   );
-  void multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(
+  undefined multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(
       GLenum mode,
       (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,
       GLenum type,

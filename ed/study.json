@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-03-03T12:57:25.863Z",
+  "date": "2021-03-08T10:31:30.444Z",
   "stats": {
     "crawled": 383,
     "errors": 0,
@@ -301,7 +301,7 @@
     {
       "title": "Accessible Name and Description Computation 1.2",
       "shortname": "accname-1.2",
-      "date": "25 February 2021",
+      "date": "07 March 2021",
       "url": "https://www.w3.org/TR/accname-1.2/",
       "release": {
         "url": "https://www.w3.org/TR/accname-1.2/",
@@ -372,7 +372,7 @@
     {
       "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
       "shortname": "wai-aria-1.2",
-      "date": "22 February 2021",
+      "date": "07 March 2021",
       "url": "https://www.w3.org/TR/wai-aria-1.2/",
       "release": {
         "url": "https://www.w3.org/TR/wai-aria-1.2/",
@@ -559,7 +559,7 @@
     {
       "title": "ARIA in HTML",
       "shortname": "html-aria",
-      "date": "01 March 2021",
+      "date": "08 March 2021",
       "url": "https://www.w3.org/TR/html-aria/",
       "release": {
         "url": "https://www.w3.org/TR/html-aria/",
@@ -878,7 +878,7 @@
     {
       "title": "Battery Status API",
       "shortname": "battery-status",
-      "date": "26 February 2021",
+      "date": "04 March 2021",
       "url": "https://www.w3.org/TR/battery-status/",
       "release": {
         "url": "https://www.w3.org/TR/battery-status/",
@@ -1525,7 +1525,7 @@
     {
       "title": "Compression Streams",
       "shortname": "compression",
-      "date": "15 September 2020",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/compression/",
       "nightly": {
         "url": "https://wicg.github.io/compression/",
@@ -1671,7 +1671,7 @@
     {
       "title": "Contact Picker API",
       "shortname": "contact-api",
-      "date": "16 February 2021",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/contact-api/spec/",
       "nightly": {
         "url": "https://wicg.github.io/contact-api/spec/",
@@ -1698,13 +1698,6 @@
         "missingLinkRef": [],
         "inconsistentRef": [
           {
-            "link": "https://w3c.github.io/webappsec-secure-contexts/",
-            "ref": {
-              "name": "SECURE-CONTEXTS",
-              "url": "https://www.w3.org/TR/secure-contexts/"
-            }
-          },
-          {
             "link": "https://w3c.github.io/FileAPI/",
             "ref": {
               "name": "FileAPI",
@@ -1718,14 +1711,10 @@
         },
         "xrefs": {
           "notExported": [
-            "https://html.spec.whatwg.org/#valid-e-mail-address"
+            "https://html.spec.whatwg.org/#concept-request-origin"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://html.spec.whatwg.org/#responsible-browsing-context",
-            "https://html.spec.whatwg.org/#triggered-by-user-activation",
-            "https://w3c.github.io/webappsec-secure-contexts/#secure-contexts"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -1736,7 +1725,7 @@
     {
       "title": "Content Index",
       "shortname": "content-index",
-      "date": "18 February 2021",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/content-index/spec/",
       "nightly": {
         "url": "https://wicg.github.io/content-index/spec/",
@@ -1755,57 +1744,12 @@
           "void"
         ],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [
-          {
-            "name": "ImageResource",
-            "refs": [
-              {
-                "url": "https://www.w3.org/TR/image-resource/",
-                "title": "Image Resource",
-                "crawled": "https://w3c.github.io/image-resource/"
-              }
-            ]
-          }
-        ],
+        "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": [
-            {
-              "expected": {
-                "linkingText": [
-                  "constructor(type, init)"
-                ],
-                "type": "constructor",
-                "for": [
-                  "ContentIndexEvent"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "for": {
-                "id": "contentindexevent",
-                "href": "https://wicg.github.io/content-index/spec/#contentindexevent",
-                "linkingText": [
-                  "ContentIndexEvent"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "content-index-event",
-                  "title": "ContentIndexEvent",
-                  "number": "5.4"
-                },
-                "definedIn": "pre"
-              }
-            }
-          ]
+          "idl": []
         },
-        "missingLinkRef": [
-          "https://w3c.github.io/image-resource/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [
           {
             "link": "https://w3c.github.io/ServiceWorker/",
@@ -1820,6 +1764,13 @@
               "name": "SERVICE-WORKERS-1",
               "url": "https://www.w3.org/TR/service-workers-1/"
             }
+          },
+          {
+            "link": "https://w3c.github.io/image-resource/",
+            "ref": {
+              "name": "IMAGE-RESOURCE",
+              "url": "https://www.w3.org/TR/image-resource/"
+            }
           }
         ],
         "referencedBy": {
@@ -1832,9 +1783,7 @@
             "https://w3c.github.io/image-resource/#dfn-src"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://html.spec.whatwg.org/#replacement-enabled"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -2246,7 +2195,7 @@
     {
       "title": "Core Accessibility API Mappings 1.2",
       "shortname": "core-aam-1.2",
-      "date": "22 February 2021",
+      "date": "07 March 2021",
       "url": "https://www.w3.org/TR/core-aam-1.2/",
       "release": {
         "url": "https://www.w3.org/TR/core-aam-1.2/",
@@ -4720,7 +4669,7 @@
     {
       "title": "CSS Box Sizing Module Level 3",
       "shortname": "css-sizing-3",
-      "date": "21 February 2021",
+      "date": "5 March 2021",
       "url": "https://www.w3.org/TR/css-sizing-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-sizing-3/",
@@ -4746,6 +4695,7 @@
           "idl": []
         },
         "missingLinkRef": [
+          "https://www.w3.org/TR/css-writing-modes-3/",
           "https://www.w3.org/TR/css2/",
           "https://www.w3.org/TR/css3-multicol/",
           "https://www.w3.org/TR/css-cascade/",
@@ -6079,7 +6029,7 @@
     {
       "title": "CSS Color Module Level 5",
       "shortname": "css-color-5",
-      "date": "2 March 2021",
+      "date": "3 March 2021",
       "url": "https://www.w3.org/TR/css-color-5/",
       "release": {
         "url": "https://www.w3.org/TR/css-color-5/",
@@ -7604,7 +7554,7 @@
     {
       "title": "CSS Flexible Box Layout Module Level 1",
       "shortname": "css-flexbox-1",
-      "date": "21 February 2021",
+      "date": "5 March 2021",
       "url": "https://www.w3.org/TR/css-flexbox-1/",
       "release": {
         "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -8859,7 +8809,7 @@
     {
       "title": "CSS Grid Layout Module Level 2",
       "shortname": "css-grid-2",
-      "date": "26 February 2021",
+      "date": "5 March 2021",
       "url": "https://www.w3.org/TR/css-grid-2/",
       "release": {
         "url": "https://www.w3.org/TR/css-grid-2/",
@@ -8994,14 +8944,10 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [
-            "https://www.w3.org/TR/css-syntax-3/#name-code-point",
             "https://www.w3.org/TR/css3-break/#btw-blocks",
             "https://www.w3.org/TR/css3-break/#end-block"
           ],
-          "brokenLinks": [
-            "https://www.w3.org/TR/css-writing-modes-3/#start",
-            "https://www.w3.org/TR/css-writing-modes-3/#end"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -13707,7 +13653,7 @@
     {
       "title": "CSS Table Module Level 3",
       "shortname": "css-tables-3",
-      "date": "21 February 2021",
+      "date": "4 March 2021",
       "url": "https://www.w3.org/TR/css-tables-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-tables-3/",
@@ -14150,11 +14096,6 @@
               "crawled": "https://drafts.csswg.org/css-content-3/"
             },
             {
-              "url": "https://www.w3.org/TR/css-grid-2/",
-              "title": "CSS Grid Layout Module Level 2",
-              "crawled": "https://drafts.csswg.org/css-grid-2/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-inline-3/",
               "title": "CSS Inline Layout Module Level 3",
               "crawled": "https://drafts.csswg.org/css-inline-3/"
@@ -14381,6 +14322,11 @@
               "url": "https://www.w3.org/TR/css-flexbox-1/",
               "title": "CSS Flexible Box Layout Module Level 1",
               "crawled": "https://drafts.csswg.org/css-flexbox-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-grid-2/",
+              "title": "CSS Grid Layout Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-grid-2/"
             },
             {
               "url": "https://www.w3.org/TR/css-lists-3/",
@@ -16362,7 +16308,7 @@
     {
       "title": "CSS Writing Modes Level 4",
       "shortname": "css-writing-modes-4",
-      "date": "21 February 2021",
+      "date": "3 March 2021",
       "url": "https://www.w3.org/TR/css-writing-modes-4/",
       "release": {
         "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -16929,7 +16875,7 @@
     {
       "title": "DataCue API",
       "shortname": "datacue",
-      "date": "13 October 2020",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/datacue/",
       "nightly": {
         "url": "https://wicg.github.io/datacue/",
@@ -18087,7 +18033,7 @@
     {
       "title": "Early detection of input events",
       "shortname": "is-input-pending",
-      "date": "13 October 2020",
+      "date": "08 March 2021",
       "url": "https://wicg.github.io/is-input-pending/",
       "nightly": {
         "url": "https://wicg.github.io/is-input-pending/",
@@ -18184,7 +18130,7 @@
     {
       "title": "ECMAScript® 2021 Language Specification",
       "shortname": "ecmascript",
-      "date": "2 March 2021",
+      "date": "6 March 2021",
       "url": "https://tc39.es/ecma262/",
       "nightly": {
         "url": "https://tc39.es/ecma262/",
@@ -19069,7 +19015,13 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/"
+            }
+          ],
           "informative": [
             {
               "url": "https://wicg.github.io/portals/",
@@ -19089,7 +19041,7 @@
     {
       "title": "Fetch Standard",
       "shortname": "fetch",
-      "date": "28 February 2021",
+      "date": "5 March 2021",
       "url": "https://fetch.spec.whatwg.org/",
       "nightly": {
         "url": "https://fetch.spec.whatwg.org/",
@@ -20677,7 +20629,7 @@
     {
       "title": "Get Installed Related Apps API",
       "shortname": "get-installed-related-apps",
-      "date": "14 April 2020",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/get-installed-related-apps/spec/",
       "nightly": {
         "url": "https://wicg.github.io/get-installed-related-apps/spec/",
@@ -20718,8 +20670,7 @@
             "https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource-fingerprints",
             "https://www.w3.org/TR/appmanifest/#dom-webappmanifest",
             "https://www.w3.org/TR/appmanifest/#obtaining",
-            "https://www.w3.org/TR/appmanifest/#dom-webappmanifest-related_applications",
-            "https://html.spec.whatwg.org/#responsible-browsing-context"
+            "https://www.w3.org/TR/appmanifest/#dom-webappmanifest-related_applications"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -20731,7 +20682,7 @@
     {
       "title": "Graphics Accessibility API Mappings",
       "shortname": "graphics-aam-1.0",
-      "date": "22 February 2021",
+      "date": "07 March 2021",
       "url": "https://www.w3.org/TR/graphics-aam-1.0/",
       "release": {
         "url": "https://www.w3.org/TR/graphics-aam-1.0/",
@@ -20872,7 +20823,7 @@
     {
       "title": "High Resolution Time",
       "shortname": "hr-time-3",
-      "date": "18 February 2021",
+      "date": "04 March 2021",
       "url": "https://www.w3.org/TR/hr-time-3/",
       "release": {
         "url": "https://www.w3.org/TR/hr-time-3/",
@@ -21413,7 +21364,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "2 March 2021",
+      "date": "4 March 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -33454,6 +33405,11 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
+              "url": "https://wicg.github.io/content-index/spec/",
+              "title": "Content Index",
+              "crawled": "https://wicg.github.io/content-index/spec/"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web Application Manifest",
               "crawled": "https://w3c.github.io/manifest/"
@@ -33461,18 +33417,7 @@
           ],
           "informative": []
         },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/appmanifest/#dom-webappmanifest-name",
-            "https://www.w3.org/TR/appmanifest/#dom-webappmanifest-icons"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
-        },
-        "ok": false
+        "ok": true
       }
     },
     {
@@ -34389,7 +34334,7 @@
     {
       "title": "Input Device Capabilities",
       "shortname": "input-device-capabilities",
-      "date": "15 July 2020",
+      "date": "08 March 2021",
       "url": "https://wicg.github.io/input-device-capabilities/",
       "nightly": {
         "url": "https://wicg.github.io/input-device-capabilities/",
@@ -34631,7 +34576,7 @@
     {
       "title": "JS Self-Profiling API",
       "shortname": "js-self-profiling",
-      "date": "02 February 2021",
+      "date": "08 March 2021",
       "url": "https://wicg.github.io/js-self-profiling/",
       "nightly": {
         "url": "https://wicg.github.io/js-self-profiling/",
@@ -34801,7 +34746,7 @@
     {
       "title": "Keyboard Map",
       "shortname": "keyboard-map",
-      "date": "22 April 2019",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/keyboard-map/",
       "nightly": {
         "url": "https://wicg.github.io/keyboard-map/",
@@ -34837,15 +34782,7 @@
         "missingLinkRef": [
           "https://w3c.github.io/keyboard-lock/"
         ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/webappsec-secure-contexts/",
-            "ref": {
-              "name": "SECURE-CONTEXTS",
-              "url": "https://www.w3.org/TR/secure-contexts/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -34860,8 +34797,7 @@
             "https://www.w3.org/TR/uievents-code/#figure-keyboard-codes-alphanum1"
           ],
           "brokenLinks": [
-            "https://www.w3.org/TR/uievents-code/#code-quote",
-            "https://w3c.github.io/webappsec-secure-contexts/#secure-contexts"
+            "https://www.w3.org/TR/uievents-code/#code-quote"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -35039,7 +34975,7 @@
     {
       "title": "Loading Signed Exchanges",
       "shortname": "webpackage",
-      "date": "25 February 2021",
+      "date": "5 March 2021",
       "url": "https://wicg.github.io/webpackage/loading.html",
       "nightly": {
         "url": "https://wicg.github.io/webpackage/loading.html",
@@ -35342,7 +35278,7 @@
     {
       "title": "MathML Accessiblity API Mappings 1.0",
       "shortname": "mathml-aam",
-      "date": "22 February 2021",
+      "date": "07 March 2021",
       "url": "https://w3c.github.io/mathml-aam/",
       "nightly": {
         "url": "https://w3c.github.io/mathml-aam/",
@@ -35923,7 +35859,7 @@
     {
       "title": "Media Feeds",
       "shortname": "media-feeds",
-      "date": "27 July 2020",
+      "date": "08 March 2021",
       "url": "https://wicg.github.io/media-feeds/",
       "nightly": {
         "url": "https://wicg.github.io/media-feeds/",
@@ -37639,14 +37575,14 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
-          "informative": [
+          "normative": [
             {
               "url": "https://wicg.github.io/web-otp/",
               "title": "Web OTP API",
               "crawled": "https://wicg.github.io/web-otp/"
             }
-          ]
+          ],
+          "informative": []
         },
         "xrefs": {
           "notExported": [
@@ -39532,7 +39468,7 @@
     {
       "title": "Private Network Access",
       "shortname": "cors-rfc1918",
-      "date": "22 February 2021",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/cors-rfc1918/",
       "nightly": {
         "url": "https://wicg.github.io/cors-rfc1918/",
@@ -40656,7 +40592,7 @@
     {
       "title": "Save Data API",
       "shortname": "savedata",
-      "date": "30 June 2020",
+      "date": "08 March 2021",
       "url": "https://wicg.github.io/savedata/",
       "nightly": {
         "url": "https://wicg.github.io/savedata/",
@@ -41628,11 +41564,6 @@
               "crawled": "https://w3c.github.io/webappsec-change-password-url/"
             },
             {
-              "url": "https://wicg.github.io/contact-api/spec/",
-              "title": "Contact Picker API",
-              "crawled": "https://wicg.github.io/contact-api/spec/"
-            },
-            {
               "url": "https://www.w3.org/TR/orientation-event/",
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/"
@@ -41646,11 +41577,6 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
-            },
-            {
-              "url": "https://wicg.github.io/keyboard-map/",
-              "title": "Keyboard Map",
-              "crawled": "https://wicg.github.io/keyboard-map/"
             },
             {
               "url": "https://wicg.github.io/webpackage/loading.html",
@@ -41736,11 +41662,6 @@
               "url": "https://webbluetoothcg.github.io/web-bluetooth/",
               "title": "Web Bluetooth",
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
-            },
-            {
-              "url": "https://wicg.github.io/periodic-background-sync/",
-              "title": "Web Periodic Background Synchronization",
-              "crawled": "https://wicg.github.io/periodic-background-sync/"
             },
             {
               "url": "https://w3c.github.io/web-share-target/",
@@ -42797,7 +42718,7 @@
     {
       "title": "SVG Accessibility API Mappings",
       "shortname": "svg-aam-1.0",
-      "date": "22 February 2021",
+      "date": "07 March 2021",
       "url": "https://www.w3.org/TR/svg-aam-1.0/",
       "release": {
         "url": "https://www.w3.org/TR/svg-aam-1.0/",
@@ -43315,7 +43236,7 @@
     {
       "title": "Text Fragments",
       "shortname": "scroll-to-text-fragment",
-      "date": "27 January 2021",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/scroll-to-text-fragment/",
       "nightly": {
         "url": "https://wicg.github.io/scroll-to-text-fragment/",
@@ -44350,7 +44271,7 @@
     {
       "title": "URL Standard",
       "shortname": "url",
-      "date": "2 March 2021",
+      "date": "3 March 2021",
       "url": "https://url.spec.whatwg.org/",
       "nightly": {
         "url": "https://url.spec.whatwg.org/",
@@ -45001,7 +44922,7 @@
     {
       "title": "WAI-ARIA Graphics Module",
       "shortname": "graphics-aria-1.0",
-      "date": "22 February 2021",
+      "date": "07 March 2021",
       "url": "https://www.w3.org/TR/graphics-aria-1.0/",
       "release": {
         "url": "https://www.w3.org/TR/graphics-aria-1.0/",
@@ -45218,7 +45139,7 @@
     {
       "title": "Web Application Manifest",
       "shortname": "appmanifest",
-      "date": "03 March 2021",
+      "date": "05 March 2021",
       "url": "https://www.w3.org/TR/appmanifest/",
       "release": {
         "url": "https://www.w3.org/TR/appmanifest/",
@@ -45261,11 +45182,6 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
-            },
-            {
-              "url": "https://www.w3.org/TR/image-resource/",
-              "title": "Image Resource",
-              "crawled": "https://w3c.github.io/image-resource/"
             },
             {
               "url": "https://www.w3.org/TR/payment-handler/",
@@ -45522,7 +45438,7 @@
     {
       "title": "Web Background Synchronization",
       "shortname": "background-sync",
-      "date": "28 May 2020",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/background-sync/spec/",
       "nightly": {
         "url": "https://wicg.github.io/background-sync/spec/",
@@ -45537,9 +45453,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -45560,7 +45474,13 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://wicg.github.io/periodic-background-sync/",
+              "title": "Web Periodic Background Synchronization",
+              "crawled": "https://wicg.github.io/periodic-background-sync/"
+            }
+          ],
           "informative": [
             {
               "url": "https://www.w3.org/TR/permissions/",
@@ -46995,7 +46915,7 @@
     {
       "title": "Web OTP API",
       "shortname": "web-otp",
-      "date": "6 April 2020",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/web-otp/",
       "nightly": {
         "url": "https://wicg.github.io/web-otp/",
@@ -47049,7 +46969,7 @@
     {
       "title": "Web Periodic Background Synchronization",
       "shortname": "periodic-background-sync",
-      "date": "21 January 2020",
+      "date": "8 March 2021",
       "url": "https://wicg.github.io/periodic-background-sync/",
       "nightly": {
         "url": "https://wicg.github.io/periodic-background-sync/",
@@ -47076,13 +46996,6 @@
         "missingLinkRef": [],
         "inconsistentRef": [
           {
-            "link": "https://w3c.github.io/webappsec-secure-contexts/",
-            "ref": {
-              "name": "SECURE-CONTEXTS",
-              "url": "https://www.w3.org/TR/secure-contexts/"
-            }
-          },
-          {
             "link": "https://w3c.github.io/ServiceWorker/",
             "ref": {
               "name": "SERVICE-WORKERS-1",
@@ -47105,12 +47018,10 @@
           "notExported": [
             "https://w3c.github.io/ServiceWorker/#dfn-service-worker-client-frame-type",
             "https://wicg.github.io/background-fetch/#background-fetch",
-            "https://wicg.github.io/BackgroundSync/spec/#online"
+            "https://wicg.github.io/background-sync/spec/#online"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://w3c.github.io/webappsec-secure-contexts/#secure-contexts"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -47306,7 +47217,7 @@
     {
       "title": "WebAssembly Core Specification",
       "shortname": "wasm-core-1",
-      "date": "2 March 2021",
+      "date": "4 March 2021",
       "url": "https://www.w3.org/TR/wasm-core-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-core-1/",
@@ -47355,7 +47266,7 @@
     {
       "title": "WebAssembly JavaScript Interface",
       "shortname": "wasm-js-api-1",
-      "date": "2 March 2021",
+      "date": "4 March 2021",
       "url": "https://www.w3.org/TR/wasm-js-api-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -47419,7 +47330,7 @@
     {
       "title": "WebAssembly Web API",
       "shortname": "wasm-web-api-1",
-      "date": "2 March 2021",
+      "date": "4 March 2021",
       "url": "https://www.w3.org/TR/wasm-web-api-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-web-api-1/",
@@ -47803,7 +47714,7 @@
     {
       "title": "WebGL 2.0 Specification",
       "shortname": "webgl2",
-      "date": "4 December 2020",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
@@ -47818,9 +47729,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -47870,7 +47779,7 @@
     {
       "title": "WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification",
       "shortname": "ANGLE_instanced_arrays",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
@@ -47885,9 +47794,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
           {
@@ -48022,7 +47929,7 @@
     {
       "title": "WebGL EXT_blend_minmax Khronos Ratified Extension Specification",
       "shortname": "EXT_blend_minmax",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
@@ -48095,7 +48002,7 @@
     {
       "title": "WebGL EXT_clip_cull_distance Extension Draft Specification",
       "shortname": "EXT_clip_cull_distance",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
@@ -48285,7 +48192,7 @@
     {
       "title": "WebGL EXT_color_buffer_float Extension Specification",
       "shortname": "EXT_color_buffer_float",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
@@ -48332,7 +48239,7 @@
     {
       "title": "WebGL EXT_color_buffer_half_float Extension Specification",
       "shortname": "EXT_color_buffer_half_float",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
@@ -48431,7 +48338,7 @@
     {
       "title": "WebGL EXT_disjoint_timer_query Extension Specification",
       "shortname": "EXT_disjoint_timer_query",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
@@ -48446,9 +48353,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
           {
@@ -48720,7 +48625,7 @@
     {
       "title": "WebGL EXT_disjoint_timer_query_webgl2 Extension Specification",
       "shortname": "EXT_disjoint_timer_query_webgl2",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
@@ -48735,9 +48640,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
           {
@@ -48855,7 +48758,7 @@
     {
       "title": "WebGL EXT_float_blend Extension Specification",
       "shortname": "EXT_float_blend",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
@@ -48902,7 +48805,7 @@
     {
       "title": "WebGL EXT_frag_depth Khronos Ratified Extension Specification",
       "shortname": "EXT_frag_depth",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
@@ -48949,7 +48852,7 @@
     {
       "title": "WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification",
       "shortname": "EXT_shader_texture_lod",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
@@ -48996,7 +48899,7 @@
     {
       "title": "WebGL EXT_sRGB Extension Specification",
       "shortname": "EXT_sRGB",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
@@ -49095,7 +48998,7 @@
     {
       "title": "WebGL EXT_texture_compression_bptc Extension Specification",
       "shortname": "EXT_texture_compression_bptc",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
@@ -49194,7 +49097,7 @@
     {
       "title": "WebGL EXT_texture_compression_rgtc Extension Specification",
       "shortname": "EXT_texture_compression_rgtc",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
@@ -49293,7 +49196,7 @@
     {
       "title": "WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification",
       "shortname": "EXT_texture_filter_anisotropic",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
@@ -49366,7 +49269,7 @@
     {
       "title": "WebGL EXT_texture_norm16 Extension Specification",
       "shortname": "EXT_texture_norm16",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
@@ -49517,7 +49420,7 @@
     {
       "title": "WebGL KHR_parallel_shader_compile Extension Specification",
       "shortname": "KHR_parallel_shader_compile",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
@@ -49577,7 +49480,7 @@
     {
       "title": "WebGL OES_draw_buffers_indexed Extension Draft Specification",
       "shortname": "OES_draw_buffers_indexed",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
@@ -49592,9 +49495,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
           {
@@ -49748,7 +49649,7 @@
     {
       "title": "WebGL OES_element_index_uint Khronos Ratified Extension Specification",
       "shortname": "OES_element_index_uint",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
@@ -49795,7 +49696,7 @@
     {
       "title": "WebGL OES_fbo_render_mipmap Extension Specification",
       "shortname": "OES_fbo_render_mipmap",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
@@ -49842,7 +49743,7 @@
     {
       "title": "WebGL OES_standard_derivatives Khronos Ratified Extension Specification",
       "shortname": "OES_standard_derivatives",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
@@ -49902,7 +49803,7 @@
     {
       "title": "WebGL OES_texture_float Khronos Ratified Extension Specification",
       "shortname": "OES_texture_float",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
@@ -49949,7 +49850,7 @@
     {
       "title": "WebGL OES_texture_float_linear Khronos Ratified Extension Specification",
       "shortname": "OES_texture_float_linear",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
@@ -49996,7 +49897,7 @@
     {
       "title": "WebGL OES_texture_half_float Khronos Ratified Extension Specification",
       "shortname": "OES_texture_half_float",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
@@ -50056,7 +49957,7 @@
     {
       "title": "WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification",
       "shortname": "OES_texture_half_float_linear",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
@@ -50103,7 +50004,7 @@
     {
       "title": "WebGL OES_vertex_array_object Khronos Ratified Extension Specification",
       "shortname": "OES_vertex_array_object",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
@@ -50118,9 +50019,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
           {
@@ -50250,7 +50149,7 @@
     {
       "title": "WebGL OVR_multiview2 Extension Specification",
       "shortname": "OVR_multiview2",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
@@ -50265,9 +50164,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
           {
@@ -50405,7 +50302,7 @@
     {
       "title": "WebGL Specification",
       "shortname": "webgl1",
-      "date": "29 January 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
@@ -50420,9 +50317,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -50484,7 +50379,7 @@
     {
       "title": "WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification",
       "shortname": "WEBGL_blend_equation_advanced_coherent",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
@@ -50726,7 +50621,7 @@
     {
       "title": "WebGL WEBGL_color_buffer_float Extension Specification",
       "shortname": "WEBGL_color_buffer_float",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
@@ -50812,7 +50707,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_astc Extension Specification",
       "shortname": "WEBGL_compressed_texture_astc",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
@@ -51236,7 +51131,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_etc Extension Specification",
       "shortname": "WEBGL_compressed_texture_etc",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
@@ -51413,7 +51308,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_etc1 Extension Specification",
       "shortname": "WEBGL_compressed_texture_etc1",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
@@ -51473,7 +51368,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_pvrtc Extension Specification",
       "shortname": "WEBGL_compressed_texture_pvrtc",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
@@ -51572,7 +51467,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification",
       "shortname": "WEBGL_compressed_texture_s3tc",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
@@ -51671,7 +51566,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_s3tc_srgb Extension Specification",
       "shortname": "WEBGL_compressed_texture_s3tc_srgb",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
@@ -51770,7 +51665,7 @@
     {
       "title": "WebGL WEBGL_debug_renderer_info Khronos Ratified Extension Specification",
       "shortname": "WEBGL_debug_renderer_info",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
@@ -51843,7 +51738,7 @@
     {
       "title": "WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification",
       "shortname": "WEBGL_debug_shaders",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
@@ -51914,7 +51809,7 @@
     {
       "title": "WebGL WEBGL_depth_texture Khronos Ratified Extension Specification",
       "shortname": "WEBGL_depth_texture",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
@@ -51974,7 +51869,7 @@
     {
       "title": "WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification",
       "shortname": "WEBGL_draw_buffers",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
@@ -51989,9 +51884,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
           {
@@ -52489,7 +52382,7 @@
     {
       "title": "WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification",
       "shortname": "WEBGL_draw_instanced_base_vertex_base_instance",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
@@ -52504,9 +52397,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
           {
@@ -52615,7 +52506,7 @@
     {
       "title": "WebGL WEBGL_lose_context Khronos Ratified Extension Specification",
       "shortname": "WEBGL_lose_context",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
@@ -52630,9 +52521,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -52690,7 +52579,7 @@
     {
       "title": "WebGL WEBGL_multi_draw Extension Specification",
       "shortname": "WEBGL_multi_draw",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
@@ -52705,9 +52594,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
           {
@@ -52832,7 +52719,7 @@
     {
       "title": "WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification",
       "shortname": "WEBGL_multi_draw_instanced_base_vertex_base_instance",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
@@ -52847,9 +52734,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [
           {
@@ -52948,7 +52833,7 @@
     {
       "title": "WebGPU",
       "shortname": "gpuweb",
-      "date": "1 March 2021",
+      "date": "5 March 2021",
       "url": "https://gpuweb.github.io/gpuweb/",
       "nightly": {
         "url": "https://gpuweb.github.io/gpuweb/",
@@ -53028,7 +52913,7 @@
     {
       "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
       "shortname": "webrtc",
-      "date": "01 March 2021",
+      "date": "08 March 2021",
       "url": "https://www.w3.org/TR/webrtc/",
       "release": {
         "url": "https://www.w3.org/TR/webrtc/",
@@ -53278,7 +53163,7 @@
     {
       "title": "WebRTC Insertable Media using Streams",
       "shortname": "webrtc-insertable-streams",
-      "date": "18 February 2021",
+      "date": "8 March 2021",
       "url": "https://w3c.github.io/webrtc-insertable-streams/",
       "nightly": {
         "url": "https://w3c.github.io/webrtc-insertable-streams/",
@@ -53293,7 +53178,9 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "RTCInsertableStreams"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -53405,7 +53292,7 @@
     {
       "title": "WebUSB API",
       "shortname": "webusb",
-      "date": "2 March 2021",
+      "date": "4 March 2021",
       "url": "https://wicg.github.io/webusb/",
       "nightly": {
         "url": "https://wicg.github.io/webusb/",
@@ -54144,7 +54031,7 @@
     {
       "title": "WebXR Layers API Level 1",
       "shortname": "webxrlayers-1",
-      "date": "25 February 2021",
+      "date": "5 March 2021",
       "url": "https://www.w3.org/TR/webxrlayers-1/",
       "release": {
         "url": "https://www.w3.org/TR/webxrlayers-1/",

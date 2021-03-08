@@ -8,6 +8,3 @@ interface NetworkInformation : EventTarget {
   readonly attribute Millisecond rtt;
   attribute EventHandler onchange;
 };
-
-// Source: Save Data API (https://wicg.github.io/savedata/)
-NetworkInformation includes NetworkInformationSaveData;

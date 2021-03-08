@@ -43,6 +43,7 @@ async function main() {
 
     // The patches are against srcDir and can be applied there using `git am`,
     // but apply them in dstDir instead using `git apply`.
+    // See ed/idlpatches/README.md for how to maintain these patches.
     if (patchDir) {
       const patchFiles = await fs.readdir(patchDir);
       for (const file of patchFiles) {

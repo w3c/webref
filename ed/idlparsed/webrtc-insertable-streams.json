@@ -18,19 +18,70 @@
         "Window": [
           "RTCEncodedVideoFrame",
           "RTCEncodedAudioFrame"
+        ],
+        "DedicatedWorker": [
+          "RTCTransformEvent",
+          "RTCRtpScriptTransformer"
         ]
       }
     },
     "idlNames": {
-      "RTCInsertableStreams": {
-        "fragment": "// New dictionary.\ndictionary RTCInsertableStreams {\n    ReadableStream readable;\n    WritableStream writable;\n};",
+      "RTCRtpTransform": {
+        "fragment": "typedef (SFrameTransform or RTCRtpScriptTransform) RTCRtpTransform;",
+        "type": "typedef",
+        "name": "RTCRtpTransform",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SFrameTransform"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RTCRtpScriptTransform"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "SFrameTransformRole": {
+        "fragment": "enum SFrameTransformRole {\n    \"encrypt\",\n    \"decrypt\"\n};",
+        "type": "enum",
+        "name": "SFrameTransformRole",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "encrypt"
+          },
+          {
+            "type": "enum-value",
+            "value": "decrypt"
+          }
+        ],
+        "extAttrs": []
+      },
+      "SFrameTransformOptions": {
+        "fragment": "dictionary SFrameTransformOptions {\n    SFrameTransformRole role = \"encrypt\";\n};",
         "type": "dictionary",
-        "name": "RTCInsertableStreams",
+        "name": "SFrameTransformOptions",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "readable",
+            "name": "role",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -38,28 +89,124 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ReadableStream"
+              "idlType": "SFrameTransformRole"
             },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "writable",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "WritableStream"
+            "default": {
+              "type": "string",
+              "value": "encrypt"
             },
-            "default": null,
             "required": false
           }
         ],
         "extAttrs": [],
+        "partial": false
+      },
+      "SFrameTransform": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);\n};",
+        "type": "interface",
+        "name": "SFrameTransform",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SFrameTransformOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "setEncryptionKey",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "keyID",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long long"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "RTCEncodedVideoFrameType": {
@@ -424,178 +571,37 @@
         ],
         "partial": false
       },
-      "RTCRtpTransform": {
-        "fragment": "typedef (SFrameTransform or RTCRtpScriptTransform) RTCRtpTransform;",
-        "type": "typedef",
-        "name": "RTCRtpTransform",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "",
-          "nullable": false,
-          "union": true,
-          "idlType": [
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "SFrameTransform"
-            },
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "RTCRtpScriptTransform"
-            }
-          ]
-        },
-        "extAttrs": []
-      },
-      "SFrameTransformRole": {
-        "fragment": "enum SFrameTransformRole {\n    \"encrypt\",\n    \"decrypt\"\n};",
-        "type": "enum",
-        "name": "SFrameTransformRole",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "encrypt"
-          },
-          {
-            "type": "enum-value",
-            "value": "decrypt"
-          }
-        ],
-        "extAttrs": []
-      },
-      "SFrameTransformOptions": {
-        "fragment": "dictionary SFrameTransformOptions {\n    SFrameTransformRole role = \"encrypt\";\n};",
-        "type": "dictionary",
-        "name": "SFrameTransformOptions",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "role",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "SFrameTransformRole"
-            },
-            "default": {
-              "type": "string",
-              "value": "encrypt"
-            },
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "SFrameTransform": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);\n};",
+      "RTCTransformEvent": {
+        "fragment": "// New interfaces to expose JavaScript-based transforms.\n\n[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface RTCTransformEvent : Event {\n    readonly attribute RTCRtpScriptTransformer transformer;\n};",
         "type": "interface",
-        "name": "SFrameTransform",
-        "inheritance": null,
+        "name": "RTCTransformEvent",
+        "inheritance": "Event",
         "members": [
           {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "SFrameTransformOptions"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": []
-          },
-          {
-            "type": "operation",
-            "name": "setEncryptionKey",
+            "type": "attribute",
+            "name": "transformer",
             "idlType": {
-              "type": "return-type",
+              "type": "attribute-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
+              "idlType": "RTCRtpScriptTransformer"
             },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "key",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CryptoKey"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "keyID",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long long"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "Exposed",
+            "name": "Global",
             "rhs": {
               "type": "identifier-list",
               "value": [
                 {
-                  "value": "Window"
+                  "value": "Worker"
                 },
                 {
                   "value": "DedicatedWorker"
@@ -603,12 +609,102 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "DedicatedWorker"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "RTCRtpScriptTransformer": {
+        "fragment": "[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer {\n    readonly attribute ReadableStream readable;\n    readonly attribute WritableStream writable;\n    readonly attribute any options;\n};",
+        "type": "interface",
+        "name": "RTCRtpScriptTransformer",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "readable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ReadableStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "writable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WritableStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "options",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Global",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "DedicatedWorker"
+            },
+            "arguments": []
           }
         ],
         "partial": false
       },
       "RTCRtpScriptTransform": {
-        "fragment": "[Exposed=(Window)]\ninterface RTCRtpScriptTransform {\n    constructor(Worker worker, optional object options);\n    // FIXME: add messaging methods.\n};",
+        "fragment": "[Exposed=(Window)]\ninterface RTCRtpScriptTransform {\n    constructor(Worker worker, optional any options);\n    // FIXME: add messaging methods.\n};",
         "type": "interface",
         "name": "RTCRtpScriptTransform",
         "inheritance": null,
@@ -642,7 +738,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "object"
+                  "idlType": "any"
                 },
                 "default": null,
                 "optional": true,
@@ -793,34 +889,59 @@
           "target": "SFrameTransform",
           "includes": "GenericTransformStream"
         }
+      ],
+      "DedicatedWorkerGlobalScope": [
+        {
+          "fragment": "partial interface DedicatedWorkerGlobalScope {\n    attribute EventHandler onrtctransform;\n};",
+          "type": "interface",
+          "name": "DedicatedWorkerGlobalScope",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "onrtctransform",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
-    "globals": {},
+    "globals": {
+      "Worker": [
+        "RTCTransformEvent",
+        "RTCRtpScriptTransformer"
+      ],
+      "DedicatedWorker": [
+        "RTCTransformEvent",
+        "RTCRtpScriptTransformer"
+      ]
+    },
     "exposed": {
       "Window": [
+        "SFrameTransform",
         "RTCEncodedVideoFrame",
         "RTCEncodedAudioFrame",
-        "SFrameTransform",
         "RTCRtpScriptTransform"
       ],
       "DedicatedWorker": [
-        "SFrameTransform"
+        "SFrameTransform",
+        "RTCTransformEvent",
+        "RTCRtpScriptTransformer"
       ]
     },
     "dependencies": {
-      "RTCInsertableStreams": [
-        "ReadableStream",
-        "WritableStream"
-      ],
-      "RTCEncodedVideoFrameMetadata": [],
-      "RTCEncodedVideoFrame": [
-        "RTCEncodedVideoFrameType",
-        "RTCEncodedVideoFrameMetadata"
-      ],
-      "RTCEncodedAudioFrameMetadata": [],
-      "RTCEncodedAudioFrame": [
-        "RTCEncodedAudioFrameMetadata"
-      ],
       "RTCConfiguration": [],
       "RTCRtpSender": [
         "RTCInsertableStreams",
@@ -838,17 +959,41 @@
         "CryptoKey",
         "GenericTransformStream"
       ],
+      "RTCEncodedVideoFrameMetadata": [],
+      "RTCEncodedVideoFrame": [
+        "RTCEncodedVideoFrameType",
+        "RTCEncodedVideoFrameMetadata"
+      ],
+      "RTCEncodedAudioFrameMetadata": [],
+      "RTCEncodedAudioFrame": [
+        "RTCEncodedAudioFrameMetadata"
+      ],
+      "RTCTransformEvent": [
+        "Event",
+        "RTCRtpScriptTransformer"
+      ],
+      "DedicatedWorkerGlobalScope": [
+        "EventHandler"
+      ],
+      "RTCRtpScriptTransformer": [
+        "ReadableStream",
+        "WritableStream"
+      ],
       "RTCRtpScriptTransform": [
         "Worker"
       ]
     },
     "externalDependencies": [
-      "ReadableStream",
-      "WritableStream",
       "RTCConfiguration",
       "RTCRtpSender",
+      "RTCInsertableStreams",
       "RTCRtpReceiver",
       "CryptoKey",
+      "Event",
+      "DedicatedWorkerGlobalScope",
+      "EventHandler",
+      "ReadableStream",
+      "WritableStream",
       "Worker"
     ],
     "hasObsoleteIdl": false

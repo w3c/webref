@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "EXT_disjoint_timer_query_webgl2"
+        ],
+        "Worker": [
+          "EXT_disjoint_timer_query_webgl2"
+        ]
+      }
     },
     "idlNames": {
       "EXT_disjoint_timer_query_webgl2": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface EXT_disjoint_timer_query_webgl2 {\n  const GLenum QUERY_COUNTER_BITS_EXT      = 0x8864;\n  const GLenum TIME_ELAPSED_EXT            = 0x88BF;\n  const GLenum TIMESTAMP_EXT               = 0x8E28;\n  const GLenum GPU_DISJOINT_EXT            = 0x8FBB;\n\n  void queryCounterEXT(WebGLQuery query, GLenum target);\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface EXT_disjoint_timer_query_webgl2 {\n  const GLenum QUERY_COUNTER_BITS_EXT      = 0x8864;\n  const GLenum TIME_ELAPSED_EXT            = 0x88BF;\n  const GLenum TIMESTAMP_EXT               = 0x8E28;\n  const GLenum GPU_DISJOINT_EXT            = 0x8FBB;\n\n  undefined queryCounterEXT(WebGLQuery query, GLenum target);\n};",
         "type": "interface",
         "name": "EXT_disjoint_timer_query_webgl2",
         "inheritance": null,
@@ -92,7 +99,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -135,6 +142,22 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
@@ -145,16 +168,21 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "EXT_disjoint_timer_query_webgl2"
+      ],
+      "Worker": [
+        "EXT_disjoint_timer_query_webgl2"
+      ]
+    },
     "dependencies": {
       "EXT_disjoint_timer_query_webgl2": [
-        "void",
         "WebGLQuery",
         "GLenum"
       ]
     },
     "externalDependencies": [
-      "void",
       "WebGLQuery",
       "GLenum"
     ],

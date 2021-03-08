@@ -78,7 +78,7 @@
         "partial": false
       },
       "GPUAdapterLimits": {
-        "fragment": "interface GPUAdapterLimits {\n    readonly attribute GPUSize32 maxTextureDimension1D;\n    readonly attribute GPUSize32 maxTextureDimension2D;\n    readonly attribute GPUSize32 maxTextureDimension3D;\n    readonly attribute GPUSize32 maxTextureArrayLayers;\n    readonly attribute GPUSize32 maxBindGroups;\n    readonly attribute GPUSize32 maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute GPUSize32 maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute GPUSize32 maxSampledTexturesPerShaderStage;\n    readonly attribute GPUSize32 maxSamplersPerShaderStage;\n    readonly attribute GPUSize32 maxStorageBuffersPerShaderStage;\n    readonly attribute GPUSize32 maxStorageTexturesPerShaderStage;\n    readonly attribute GPUSize32 maxUniformBuffersPerShaderStage;\n    readonly attribute GPUSize32 maxUniformBufferBindingSize;\n    readonly attribute GPUSize32 maxStorageBufferBindingSize;\n    readonly attribute GPUSize32 maxVertexBuffers;\n    readonly attribute GPUSize32 maxVertexAttributes;\n    readonly attribute GPUSize32 maxVertexBufferArrayStride;\n};",
+        "fragment": "interface GPUAdapterLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long maxUniformBufferBindingSize;\n    readonly attribute unsigned long maxStorageBufferBindingSize;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n};",
         "type": "interface",
         "name": "GPUAdapterLimits",
         "inheritance": null,
@@ -92,7 +92,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -107,7 +107,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -122,7 +122,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -137,7 +137,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -152,7 +152,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -167,7 +167,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -182,7 +182,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -197,7 +197,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -212,7 +212,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -227,7 +227,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -242,7 +242,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -257,7 +257,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -272,7 +272,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -287,7 +287,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -302,7 +302,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -317,7 +317,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -332,7 +332,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -481,7 +481,7 @@
         "extAttrs": []
       },
       "GPUAdapter": {
-        "fragment": "interface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUAdapterFeatures features;\n    [SameObject] readonly attribute GPUAdapterLimits limits;\n\n    Promise<GPUDevice?> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+        "fragment": "interface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUAdapterFeatures features;\n    [SameObject] readonly attribute GPUAdapterLimits limits;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
@@ -559,7 +559,7 @@
                   "type": "return-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": true,
+                  "nullable": false,
                   "union": false,
                   "idlType": "GPUDevice"
                 }
@@ -10210,9 +10210,7 @@
     "dependencies": {
       "GPUObjectBase": [],
       "GPUObjectDescriptorBase": [],
-      "GPUAdapterLimits": [
-        "GPUSize32"
-      ],
+      "GPUAdapterLimits": [],
       "GPUAdapterFeatures": [
         "GPUFeatureName"
       ],

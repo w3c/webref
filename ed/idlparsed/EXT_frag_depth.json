@@ -6,16 +6,39 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "EXT_frag_depth"
+        ],
+        "Worker": [
+          "EXT_frag_depth"
+        ]
+      }
     },
     "idlNames": {
       "EXT_frag_depth": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface EXT_frag_depth {\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface EXT_frag_depth {\n};",
         "type": "interface",
         "name": "EXT_frag_depth",
         "inheritance": null,
         "members": [],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
@@ -28,7 +51,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "EXT_frag_depth"
+      ],
+      "Worker": [
+        "EXT_frag_depth"
+      ]
+    },
     "dependencies": {
       "EXT_frag_depth": []
     },

@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "AccessibilityRole": {
-        "fragment": "interface mixin AccessibilityRole {\n\tattribute DOMString? role;\n};",
+        "fragment": "interface mixin AccessibilityRole {\n\tattribute DOMString role;\n};",
         "type": "interface mixin",
         "name": "AccessibilityRole",
         "inheritance": null,
@@ -22,7 +22,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -35,26 +35,11 @@
         "partial": false
       },
       "AriaAttributes": {
-        "fragment": "interface mixin AriaAttributes {\n\tattribute DOMString? ariaActiveDescendant;\n\tattribute DOMString? ariaAtomic;\n\tattribute DOMString? ariaAutoComplete;\n\tattribute DOMString? ariaBusy;\n\tattribute DOMString? ariaChecked;\n\tattribute DOMString? ariaColCount;\n\tattribute DOMString? ariaColIndex;\n\tattribute DOMString? ariaColSpan;\n\tattribute DOMString? ariaControls;\n\tattribute DOMString? ariaCurrent;\n\tattribute DOMString? ariaDescribedBy;\n\tattribute DOMString? ariaDetails;\n\tattribute DOMString? ariaDisabled;\n\tattribute DOMString? ariaErrorMessage;\n\tattribute DOMString? ariaExpanded;\n\tattribute DOMString? ariaFlowTo;\n\tattribute DOMString? ariaHasPopup;\n\tattribute DOMString? ariaHidden;\n\tattribute DOMString? ariaInvalid;\n\tattribute DOMString? ariaKeyShortcuts;\n\tattribute DOMString? ariaLabel;\n\tattribute DOMString? ariaLabelledBy;\n\tattribute DOMString? ariaLevel;\n\tattribute DOMString? ariaLive;\n\tattribute DOMString? ariaModal;\n\tattribute DOMString? ariaMultiLine;\n\tattribute DOMString? ariaMultiSelectable;\n\tattribute DOMString? ariaOrientation;\n\tattribute DOMString? ariaOwns;\n\tattribute DOMString? ariaPlaceholder;\n\tattribute DOMString? ariaPosInSet;\n\tattribute DOMString? ariaPressed;\n\tattribute DOMString? ariaReadOnly;\n\tattribute DOMString? ariaRelevant;\n\tattribute DOMString? ariaRequired;\n\tattribute DOMString? ariaRoleDescription;\n\tattribute DOMString? ariaRowCount;\n\tattribute DOMString? ariaRowIndex;\n\tattribute DOMString? ariaRowSpan;\n\tattribute DOMString? ariaSelected;\n\tattribute DOMString? ariaSetSize;\n\tattribute DOMString? ariaSort;\n\tattribute DOMString? ariaValueMax;\n\tattribute DOMString? ariaValueMin;\n\tattribute DOMString? ariaValueNow;\n\tattribute DOMString? ariaValueText;\n};",
+        "fragment": "interface mixin AriaAttributes {\n\n\tattribute DOMString ariaAtomic;\n\tattribute DOMString ariaAutoComplete;\n\tattribute DOMString ariaBusy;\n\tattribute DOMString ariaChecked;\n\tattribute DOMString ariaColCount;\n\tattribute DOMString ariaColIndex;\n\n\tattribute DOMString ariaColSpan;\n\n\tattribute DOMString ariaCurrent;\n\n\tattribute DOMString ariaDescription;\n\n\tattribute DOMString ariaDisabled;\n\n\tattribute DOMString ariaExpanded;\n\n\tattribute DOMString ariaHasPopup;\n\tattribute DOMString ariaHidden;\n\tattribute DOMString ariaInvalid;\n\tattribute DOMString ariaKeyShortcuts;\n\tattribute DOMString ariaLabel;\n\n\tattribute DOMString ariaLevel;\n\tattribute DOMString ariaLive;\n\tattribute DOMString ariaModal;\n\tattribute DOMString ariaMultiLine;\n\tattribute DOMString ariaMultiSelectable;\n\tattribute DOMString ariaOrientation;\n\n\tattribute DOMString ariaPlaceholder;\n\tattribute DOMString ariaPosInSet;\n\tattribute DOMString ariaPressed;\n\tattribute DOMString ariaReadOnly;\n\n\tattribute DOMString ariaRequired;\n\tattribute DOMString ariaRoleDescription;\n\tattribute DOMString ariaRowCount;\n\tattribute DOMString ariaRowIndex;\n\n\tattribute DOMString ariaRowSpan;\n\tattribute DOMString ariaSelected;\n\tattribute DOMString ariaSetSize;\n\tattribute DOMString ariaSort;\n\tattribute DOMString ariaValueMax;\n\tattribute DOMString ariaValueMin;\n\tattribute DOMString ariaValueNow;\n\tattribute DOMString ariaValueText;\n};",
         "type": "interface mixin",
         "name": "AriaAttributes",
         "inheritance": null,
         "members": [
-          {
-            "type": "attribute",
-            "name": "ariaActiveDescendant",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
           {
             "type": "attribute",
             "name": "ariaAtomic",
@@ -62,7 +47,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -77,7 +62,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -92,7 +77,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -107,7 +92,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -122,7 +107,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -137,7 +122,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -152,22 +137,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "ariaControls",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -182,7 +152,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -192,27 +162,12 @@
           },
           {
             "type": "attribute",
-            "name": "ariaDescribedBy",
+            "name": "ariaDescription",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "ariaDetails",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -227,22 +182,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "ariaErrorMessage",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -257,22 +197,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "ariaFlowTo",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -287,7 +212,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -302,7 +227,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -317,7 +242,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -332,7 +257,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -347,22 +272,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "ariaLabelledBy",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -377,7 +287,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -392,7 +302,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -407,7 +317,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -422,7 +332,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -437,7 +347,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -452,22 +362,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "ariaOwns",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -482,7 +377,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -497,7 +392,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -512,7 +407,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -527,22 +422,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "ariaRelevant",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -557,7 +437,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -572,7 +452,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -587,7 +467,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -602,7 +482,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -617,7 +497,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -632,7 +512,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -647,7 +527,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -662,7 +542,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -677,7 +557,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -692,7 +572,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -707,7 +587,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },
@@ -722,7 +602,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "DOMString"
             },

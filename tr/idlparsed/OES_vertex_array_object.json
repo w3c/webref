@@ -6,16 +6,41 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "WebGLVertexArrayObjectOES",
+          "OES_vertex_array_object"
+        ],
+        "Worker": [
+          "WebGLVertexArrayObjectOES",
+          "OES_vertex_array_object"
+        ]
+      }
     },
     "idlNames": {
       "WebGLVertexArrayObjectOES": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface WebGLVertexArrayObjectOES : WebGLObject {\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WebGLVertexArrayObjectOES : WebGLObject {\n};",
         "type": "interface",
         "name": "WebGLVertexArrayObjectOES",
         "inheritance": "WebGLObject",
         "members": [],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
@@ -26,7 +51,7 @@
         "partial": false
       },
       "OES_vertex_array_object": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface OES_vertex_array_object {\n    const GLenum VERTEX_ARRAY_BINDING_OES = 0x85B5;\n\n    WebGLVertexArrayObjectOES? createVertexArrayOES();\n    void deleteVertexArrayOES(WebGLVertexArrayObjectOES? arrayObject);\n    [WebGLHandlesContextLoss] GLboolean isVertexArrayOES(WebGLVertexArrayObjectOES? arrayObject);\n    void bindVertexArrayOES(WebGLVertexArrayObjectOES? arrayObject);\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface OES_vertex_array_object {\n    const GLenum VERTEX_ARRAY_BINDING_OES = 0x85B5;\n\n    WebGLVertexArrayObjectOES? createVertexArrayOES();\n    undefined deleteVertexArrayOES(WebGLVertexArrayObjectOES? arrayObject);\n    [WebGLHandlesContextLoss] GLboolean isVertexArrayOES(WebGLVertexArrayObjectOES? arrayObject);\n    undefined bindVertexArrayOES(WebGLVertexArrayObjectOES? arrayObject);\n};",
         "type": "interface",
         "name": "OES_vertex_array_object",
         "inheritance": null,
@@ -72,7 +97,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -143,7 +168,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -170,6 +195,22 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
@@ -180,20 +221,27 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "WebGLVertexArrayObjectOES",
+        "OES_vertex_array_object"
+      ],
+      "Worker": [
+        "WebGLVertexArrayObjectOES",
+        "OES_vertex_array_object"
+      ]
+    },
     "dependencies": {
       "WebGLVertexArrayObjectOES": [
         "WebGLObject"
       ],
       "OES_vertex_array_object": [
         "WebGLVertexArrayObjectOES",
-        "void",
         "GLboolean"
       ]
     },
     "externalDependencies": [
       "WebGLObject",
-      "void",
       "GLboolean"
     ],
     "hasObsoleteIdl": false

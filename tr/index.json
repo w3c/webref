@@ -1,13 +1,13 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-03-01T01:58:55.460Z",
+  "date": "2021-03-08T01:59:56.137Z",
   "options": {
     "publishedVersion": true
   },
   "stats": {
     "crawled": 383,
-    "errors": 0
+    "errors": 15
   },
   "results": [
     {
@@ -785,7 +785,7 @@
         "https://fetch.spec.whatwg.org/"
       ],
       "crawled": "https://fetch.spec.whatwg.org/",
-      "date": "26 February 2021",
+      "date": "5 March 2021",
       "links": "links/fetch.json",
       "refs": "refs/fetch.json",
       "idl": "idl/fetch.idl",
@@ -859,7 +859,7 @@
         "https://gpuweb.github.io/gpuweb/"
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
-      "date": "24 February 2021",
+      "date": "5 March 2021",
       "links": "links/gpuweb.json",
       "refs": "refs/gpuweb.json",
       "idl": "idl/gpuweb.idl",
@@ -982,7 +982,7 @@
         "https://www.w3.org/html/wg/drafts/html/master/webappapis.html"
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
-      "date": "26 February 2021",
+      "date": "4 March 2021",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -1484,7 +1484,7 @@
         "https://tc39.es/ecma262/"
       ],
       "crawled": "https://tc39.es/ecma262/",
-      "date": "28 February 2021",
+      "date": "6 March 2021",
       "links": "links/ecmascript.json",
       "generator": null,
       "dfns": "dfns/ecmascript.json",
@@ -1811,7 +1811,7 @@
         "https://url.spec.whatwg.org/"
       ],
       "crawled": "https://url.spec.whatwg.org/",
-      "date": "15 February 2021",
+      "date": "3 March 2021",
       "links": "links/url.json",
       "refs": "refs/url.json",
       "idl": "idl/url.idl",
@@ -1944,7 +1944,7 @@
         "https://w3c.github.io/mathml-aam/"
       ],
       "crawled": "https://w3c.github.io/mathml-aam/",
-      "date": "22 February 2021",
+      "date": "07 March 2021",
       "links": "links/mathml-aam.json",
       "refs": "refs/mathml-aam.json",
       "generator": "respec",
@@ -2144,7 +2144,7 @@
         "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
       ],
       "crawled": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
-      "date": "3 February 2021",
+      "date": "2 March 2021",
       "links": "links/trusted-types.json",
       "refs": "refs/trusted-types.json",
       "idl": "idl/trusted-types.idl",
@@ -2204,7 +2204,7 @@
         "https://w3c.github.io/webrtc-ice/"
       ],
       "crawled": "https://w3c.github.io/webrtc-ice/",
-      "date": "15 February 2021",
+      "date": "01 March 2021",
       "links": "links/webrtc-ice.json",
       "refs": "refs/webrtc-ice.json",
       "idl": "idl/webrtc-ice.idl",
@@ -2241,7 +2241,7 @@
         "https://w3c.github.io/webrtc-insertable-streams/"
       ],
       "crawled": "https://w3c.github.io/webrtc-insertable-streams/",
-      "date": "18 February 2021",
+      "date": "4 March 2021",
       "links": "links/webrtc-insertable-streams.json",
       "refs": "refs/webrtc-insertable-streams.json",
       "idl": "idl/webrtc-insertable-streams.idl",
@@ -2278,7 +2278,7 @@
         "https://w3c.github.io/webtransport/"
       ],
       "crawled": "https://w3c.github.io/webtransport/",
-      "date": "27 February 2021",
+      "date": "3 March 2021",
       "links": "links/webtransport.json",
       "refs": "refs/webtransport.json",
       "idl": "idl/webtransport.idl",
@@ -2388,16 +2388,14 @@
       "versions": [
         "https://wicg.github.io/background-sync/spec/"
       ],
-      "crawled": "https://wicg.github.io/background-sync/spec/",
-      "date": "28 May 2020",
-      "links": "links/background-sync.json",
-      "refs": "refs/background-sync.json",
-      "idl": "idl/background-sync.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/background-sync.json",
-      "headings": "headings/background-sync.json",
-      "ids": "ids/background-sync.json",
-      "idlparsed": "idlparsed/background-sync.json"
+      "crawled": {
+        "url": "https://wicg.github.io/background-sync/spec/",
+        "repository": "https://github.com/WICG/background-sync",
+        "sourcePath": "spec/index.bs",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 66)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/client-hints-infrastructure/",
@@ -2460,16 +2458,14 @@
       "versions": [
         "https://wicg.github.io/compression/"
       ],
-      "crawled": "https://wicg.github.io/compression/",
-      "date": "15 September 2020",
-      "links": "links/compression.json",
-      "refs": "refs/compression.json",
-      "idl": "idl/compression.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/compression.json",
-      "headings": "headings/compression.json",
-      "ids": "ids/compression.json",
-      "idlparsed": "idlparsed/compression.json"
+      "crawled": {
+        "url": "https://wicg.github.io/compression/",
+        "repository": "https://github.com/WICG/compression",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 68)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/construct-stylesheets/",
@@ -2534,16 +2530,14 @@
       "versions": [
         "https://wicg.github.io/contact-api/spec/"
       ],
-      "crawled": "https://wicg.github.io/contact-api/spec/",
-      "date": "16 February 2021",
-      "links": "links/contact-api.json",
-      "refs": "refs/contact-api.json",
-      "idl": "idl/contact-api.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/contact-api.json",
-      "headings": "headings/contact-api.json",
-      "ids": "ids/contact-api.json",
-      "idlparsed": "idlparsed/contact-api.json"
+      "crawled": {
+        "url": "https://wicg.github.io/contact-api/spec/",
+        "repository": "https://github.com/WICG/contact-api",
+        "sourcePath": "spec/index.bs",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 70)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/content-index/spec/",
@@ -2571,16 +2565,14 @@
       "versions": [
         "https://wicg.github.io/content-index/spec/"
       ],
-      "crawled": "https://wicg.github.io/content-index/spec/",
-      "date": "18 February 2021",
-      "links": "links/content-index.json",
-      "refs": "refs/content-index.json",
-      "idl": "idl/content-index.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/content-index.json",
-      "headings": "headings/content-index.json",
-      "ids": "ids/content-index.json",
-      "idlparsed": "idlparsed/content-index.json"
+      "crawled": {
+        "url": "https://wicg.github.io/content-index/spec/",
+        "repository": "https://github.com/WICG/content-index",
+        "sourcePath": "spec/index.bs",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 71)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/cookie-store/",
@@ -2633,7 +2625,7 @@
         "sourcePath": "index.src.html",
         "filename": "index.html"
       },
-      "title": "Private Network Access",
+      "title": "CORS and RFC1918",
       "source": "specref",
       "shortTitle": "CORS and RFC1918",
       "tests": {
@@ -2645,16 +2637,14 @@
       "versions": [
         "https://wicg.github.io/cors-rfc1918/"
       ],
-      "crawled": "https://wicg.github.io/private-network-access/",
-      "date": "22 February 2021",
-      "links": "links/cors-rfc1918.json",
-      "refs": "refs/cors-rfc1918.json",
-      "idl": "idl/cors-rfc1918.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/cors-rfc1918.json",
-      "headings": "headings/cors-rfc1918.json",
-      "ids": "ids/cors-rfc1918.json",
-      "idlparsed": "idlparsed/cors-rfc1918.json"
+      "crawled": {
+        "url": "https://wicg.github.io/cors-rfc1918/",
+        "repository": "https://github.com/WICG/cors-rfc1918",
+        "sourcePath": "index.src.html",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 73)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/crash-reporting/",
@@ -2781,16 +2771,14 @@
       "versions": [
         "https://wicg.github.io/datacue/"
       ],
-      "crawled": "https://wicg.github.io/datacue/",
-      "date": "13 October 2020",
-      "links": "links/datacue.json",
-      "refs": "refs/datacue.json",
-      "idl": "idl/datacue.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/datacue.json",
-      "headings": "headings/datacue.json",
-      "ids": "ids/datacue.json",
-      "idlparsed": "idlparsed/datacue.json"
+      "crawled": {
+        "url": "https://wicg.github.io/datacue/",
+        "repository": "https://github.com/WICG/datacue",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 77)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/deprecation-reporting/",
@@ -3034,16 +3022,14 @@
       "versions": [
         "https://wicg.github.io/get-installed-related-apps/spec/"
       ],
-      "crawled": "https://wicg.github.io/get-installed-related-apps/spec/",
-      "date": "14 April 2020",
-      "links": "links/get-installed-related-apps.json",
-      "refs": "refs/get-installed-related-apps.json",
-      "idl": "idl/get-installed-related-apps.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/get-installed-related-apps.json",
-      "headings": "headings/get-installed-related-apps.json",
-      "ids": "ids/get-installed-related-apps.json",
-      "idlparsed": "idlparsed/get-installed-related-apps.json"
+      "crawled": {
+        "url": "https://wicg.github.io/get-installed-related-apps/spec/",
+        "repository": "https://github.com/WICG/get-installed-related-apps",
+        "sourcePath": "spec/index.bs",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 84)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/idle-detection/",
@@ -3205,7 +3191,7 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "title": "Early detection of input events",
+      "title": "isInputPending",
       "source": "spec",
       "shortTitle": "isInputPending",
       "tests": {
@@ -3217,16 +3203,14 @@
       "versions": [
         "https://wicg.github.io/is-input-pending/"
       ],
-      "crawled": "https://wicg.github.io/is-input-pending/",
-      "date": "13 October 2020",
-      "links": "links/is-input-pending.json",
-      "refs": "refs/is-input-pending.json",
-      "idl": "idl/is-input-pending.idl",
-      "generator": "respec",
-      "dfns": "dfns/is-input-pending.json",
-      "headings": "headings/is-input-pending.json",
-      "ids": "ids/is-input-pending.json",
-      "idlparsed": "idlparsed/is-input-pending.json"
+      "crawled": {
+        "url": "https://wicg.github.io/is-input-pending/",
+        "repository": "https://github.com/WICG/is-input-pending",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 89)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/js-self-profiling/",
@@ -3254,16 +3238,14 @@
       "versions": [
         "https://wicg.github.io/js-self-profiling/"
       ],
-      "crawled": "https://wicg.github.io/js-self-profiling/",
-      "date": "02 February 2021",
-      "links": "links/js-self-profiling.json",
-      "refs": "refs/js-self-profiling.json",
-      "idl": "idl/js-self-profiling.idl",
-      "generator": "respec",
-      "dfns": "dfns/js-self-profiling.json",
-      "headings": "headings/js-self-profiling.json",
-      "ids": "ids/js-self-profiling.json",
-      "idlparsed": "idlparsed/js-self-profiling.json"
+      "crawled": {
+        "url": "https://wicg.github.io/js-self-profiling/",
+        "repository": "https://github.com/WICG/js-self-profiling",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 90)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/keyboard-lock/",
@@ -3328,16 +3310,14 @@
       "versions": [
         "https://wicg.github.io/keyboard-map/"
       ],
-      "crawled": "https://wicg.github.io/keyboard-map/",
-      "date": "22 April 2019",
-      "links": "links/keyboard-map.json",
-      "refs": "refs/keyboard-map.json",
-      "idl": "idl/keyboard-map.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/keyboard-map.json",
-      "headings": "headings/keyboard-map.json",
-      "ids": "ids/keyboard-map.json",
-      "idlparsed": "idlparsed/keyboard-map.json"
+      "crawled": {
+        "url": "https://wicg.github.io/keyboard-map/",
+        "repository": "https://github.com/WICG/keyboard-map",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 92)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/largest-contentful-paint/",
@@ -3403,7 +3383,7 @@
         "https://wicg.github.io/layout-instability/"
       ],
       "crawled": "https://wicg.github.io/layout-instability/",
-      "date": "24 February 2021",
+      "date": "1 March 2021",
       "links": "links/layout-instability.json",
       "refs": "refs/layout-instability.json",
       "idl": "idl/layout-instability.idl",
@@ -3470,14 +3450,14 @@
       "versions": [
         "https://wicg.github.io/media-feeds/"
       ],
-      "crawled": "https://wicg.github.io/media-feeds/",
-      "date": "27 July 2020",
-      "links": "links/media-feeds.json",
-      "refs": "refs/media-feeds.json",
-      "generator": "respec",
-      "dfns": "dfns/media-feeds.json",
-      "headings": "headings/media-feeds.json",
-      "ids": "ids/media-feeds.json"
+      "crawled": {
+        "url": "https://wicg.github.io/media-feeds/",
+        "repository": "https://github.com/WICG/media-feeds",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 96)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/netinfo/",
@@ -3683,16 +3663,14 @@
       "versions": [
         "https://wicg.github.io/periodic-background-sync/"
       ],
-      "crawled": "https://wicg.github.io/periodic-background-sync/",
-      "date": "21 January 2020",
-      "links": "links/periodic-background-sync.json",
-      "refs": "refs/periodic-background-sync.json",
-      "idl": "idl/periodic-background-sync.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/periodic-background-sync.json",
-      "headings": "headings/periodic-background-sync.json",
-      "ids": "ids/periodic-background-sync.json",
-      "idlparsed": "idlparsed/periodic-background-sync.json"
+      "crawled": {
+        "url": "https://wicg.github.io/periodic-background-sync/",
+        "repository": "https://github.com/WICG/periodic-background-sync",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 102)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/permissions-request/",
@@ -3865,16 +3843,14 @@
       "versions": [
         "https://wicg.github.io/savedata/"
       ],
-      "crawled": "https://wicg.github.io/savedata/",
-      "date": "30 June 2020",
-      "links": "links/savedata.json",
-      "refs": "refs/savedata.json",
-      "idl": "idl/savedata.idl",
-      "generator": "respec",
-      "dfns": "dfns/savedata.json",
-      "headings": "headings/savedata.json",
-      "ids": "ids/savedata.json",
-      "idlparsed": "idlparsed/savedata.json"
+      "crawled": {
+        "url": "https://wicg.github.io/savedata/",
+        "repository": "https://github.com/WICG/savedata",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 107)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/scroll-to-text-fragment/",
@@ -3902,16 +3878,14 @@
       "versions": [
         "https://wicg.github.io/scroll-to-text-fragment/"
       ],
-      "crawled": "https://wicg.github.io/scroll-to-text-fragment/",
-      "date": "27 January 2021",
-      "links": "links/scroll-to-text-fragment.json",
-      "refs": "refs/scroll-to-text-fragment.json",
-      "idl": "idl/scroll-to-text-fragment.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/scroll-to-text-fragment.json",
-      "headings": "headings/scroll-to-text-fragment.json",
-      "ids": "ids/scroll-to-text-fragment.json",
-      "idlparsed": "idlparsed/scroll-to-text-fragment.json"
+      "crawled": {
+        "url": "https://wicg.github.io/scroll-to-text-fragment/",
+        "repository": "https://github.com/WICG/scroll-to-text-fragment",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 108)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/serial/",
@@ -4295,16 +4269,14 @@
       "versions": [
         "https://wicg.github.io/web-otp/"
       ],
-      "crawled": "https://wicg.github.io/web-otp/",
-      "date": "6 April 2020",
-      "links": "links/web-otp.json",
-      "refs": "refs/web-otp.json",
-      "idl": "idl/web-otp.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/web-otp.json",
-      "headings": "headings/web-otp.json",
-      "ids": "ids/web-otp.json",
-      "idlparsed": "idlparsed/web-otp.json"
+      "crawled": {
+        "url": "https://wicg.github.io/web-otp/",
+        "repository": "https://github.com/WICG/web-otp",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 119)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/webhid/",
@@ -4364,7 +4336,7 @@
         "https://wicg.github.io/webpackage/loading.html"
       ],
       "crawled": "https://wicg.github.io/webpackage/loading.html",
-      "date": "25 February 2021",
+      "date": "5 March 2021",
       "links": "links/webpackage.json",
       "refs": "refs/webpackage.json",
       "generator": "bikeshed",
@@ -4399,7 +4371,7 @@
         "https://wicg.github.io/webusb/"
       ],
       "crawled": "https://wicg.github.io/webusb/",
-      "date": "28 February 2021",
+      "date": "4 March 2021",
       "links": "links/webusb.json",
       "refs": "refs/webusb.json",
       "idl": "idl/webusb.idl",
@@ -4436,7 +4408,7 @@
         "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/ANGLE_instanced_arrays.json",
       "idl": "idl/ANGLE_instanced_arrays.idl",
       "generator": null,
@@ -4469,7 +4441,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_blend_minmax.json",
       "idl": "idl/EXT_blend_minmax.idl",
       "generator": null,
@@ -4502,7 +4474,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_clip_cull_distance.json",
       "idl": "idl/EXT_clip_cull_distance.idl",
       "generator": null,
@@ -4535,7 +4507,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_color_buffer_float.json",
       "idl": "idl/EXT_color_buffer_float.idl",
       "generator": null,
@@ -4568,7 +4540,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_color_buffer_half_float.json",
       "idl": "idl/EXT_color_buffer_half_float.idl",
       "generator": null,
@@ -4601,7 +4573,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_disjoint_timer_query_webgl2.json",
       "idl": "idl/EXT_disjoint_timer_query_webgl2.idl",
       "generator": null,
@@ -4634,7 +4606,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_disjoint_timer_query.json",
       "idl": "idl/EXT_disjoint_timer_query.idl",
       "generator": null,
@@ -4667,7 +4639,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_float_blend.json",
       "idl": "idl/EXT_float_blend.idl",
       "generator": null,
@@ -4700,7 +4672,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_frag_depth.json",
       "idl": "idl/EXT_frag_depth.idl",
       "generator": null,
@@ -4733,7 +4705,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_shader_texture_lod.json",
       "idl": "idl/EXT_shader_texture_lod.idl",
       "generator": null,
@@ -4766,7 +4738,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_sRGB.json",
       "idl": "idl/EXT_sRGB.idl",
       "generator": null,
@@ -4799,7 +4771,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_texture_compression_bptc.json",
       "idl": "idl/EXT_texture_compression_bptc.idl",
       "generator": null,
@@ -4832,7 +4804,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_texture_compression_rgtc.json",
       "idl": "idl/EXT_texture_compression_rgtc.idl",
       "generator": null,
@@ -4865,7 +4837,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_texture_filter_anisotropic.json",
       "idl": "idl/EXT_texture_filter_anisotropic.idl",
       "generator": null,
@@ -4898,7 +4870,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/EXT_texture_norm16.json",
       "idl": "idl/EXT_texture_norm16.idl",
       "generator": null,
@@ -4931,7 +4903,7 @@
         "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/KHR_parallel_shader_compile.json",
       "idl": "idl/KHR_parallel_shader_compile.idl",
       "generator": null,
@@ -4964,7 +4936,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/OES_draw_buffers_indexed.json",
       "idl": "idl/OES_draw_buffers_indexed.idl",
       "generator": null,
@@ -4997,7 +4969,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/OES_element_index_uint.json",
       "idl": "idl/OES_element_index_uint.idl",
       "generator": null,
@@ -5030,7 +5002,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/OES_fbo_render_mipmap.json",
       "idl": "idl/OES_fbo_render_mipmap.idl",
       "generator": null,
@@ -5063,7 +5035,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/OES_standard_derivatives.json",
       "idl": "idl/OES_standard_derivatives.idl",
       "generator": null,
@@ -5096,7 +5068,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/OES_texture_float_linear.json",
       "idl": "idl/OES_texture_float_linear.idl",
       "generator": null,
@@ -5129,7 +5101,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/OES_texture_float.json",
       "idl": "idl/OES_texture_float.idl",
       "generator": null,
@@ -5162,7 +5134,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/OES_texture_half_float_linear.json",
       "idl": "idl/OES_texture_half_float_linear.idl",
       "generator": null,
@@ -5195,7 +5167,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/OES_texture_half_float.json",
       "idl": "idl/OES_texture_half_float.idl",
       "generator": null,
@@ -5228,7 +5200,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/OES_vertex_array_object.json",
       "idl": "idl/OES_vertex_array_object.idl",
       "generator": null,
@@ -5261,7 +5233,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/OVR_multiview2.json",
       "idl": "idl/OVR_multiview2.idl",
       "generator": null,
@@ -5294,7 +5266,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_blend_equation_advanced_coherent.json",
       "idl": "idl/WEBGL_blend_equation_advanced_coherent.idl",
       "generator": null,
@@ -5327,7 +5299,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_color_buffer_float.json",
       "idl": "idl/WEBGL_color_buffer_float.idl",
       "generator": null,
@@ -5360,7 +5332,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_compressed_texture_astc.json",
       "idl": "idl/WEBGL_compressed_texture_astc.idl",
       "generator": null,
@@ -5393,7 +5365,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_compressed_texture_etc.json",
       "idl": "idl/WEBGL_compressed_texture_etc.idl",
       "generator": null,
@@ -5426,7 +5398,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_compressed_texture_etc1.json",
       "idl": "idl/WEBGL_compressed_texture_etc1.idl",
       "generator": null,
@@ -5459,7 +5431,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_compressed_texture_pvrtc.json",
       "idl": "idl/WEBGL_compressed_texture_pvrtc.idl",
       "generator": null,
@@ -5492,7 +5464,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_compressed_texture_s3tc_srgb.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc_srgb.idl",
       "generator": null,
@@ -5525,7 +5497,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_compressed_texture_s3tc.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc.idl",
       "generator": null,
@@ -5558,7 +5530,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_debug_renderer_info.json",
       "idl": "idl/WEBGL_debug_renderer_info.idl",
       "generator": null,
@@ -5591,7 +5563,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_debug_shaders.json",
       "idl": "idl/WEBGL_debug_shaders.idl",
       "generator": null,
@@ -5624,7 +5596,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl",
       "generator": null,
@@ -5657,7 +5629,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_draw_buffers.json",
       "idl": "idl/WEBGL_draw_buffers.idl",
       "generator": null,
@@ -5690,7 +5662,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_draw_instanced_base_vertex_base_instance.idl",
       "generator": null,
@@ -5723,7 +5695,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_lose_context.json",
       "idl": "idl/WEBGL_lose_context.idl",
       "generator": null,
@@ -5756,7 +5728,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_multi_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_multi_draw_instanced_base_vertex_base_instance.idl",
       "generator": null,
@@ -5789,7 +5761,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
-      "date": "16 February 2021",
+      "date": "6 March 2021",
       "links": "links/WEBGL_multi_draw.json",
       "idl": "idl/WEBGL_multi_draw.idl",
       "generator": null,
@@ -5825,7 +5797,7 @@
         "https://www.khronos.org/registry/webgl/specs/latest/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "29 January 2021",
+      "date": "6 March 2021",
       "links": "links/webgl1.json",
       "refs": "refs/webgl1.json",
       "idl": "idl/webgl1.idl",
@@ -5863,7 +5835,7 @@
         "https://www.khronos.org/registry/webgl/specs/latest/2.0/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-      "date": "4 December 2020",
+      "date": "6 March 2021",
       "links": "links/webgl2.json",
       "refs": "refs/webgl2.json",
       "idl": "idl/webgl2.idl",
@@ -6016,7 +5988,7 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "title": "Web App Manifest",
+      "title": "Web Application Manifest",
       "source": "w3c",
       "shortTitle": "Web App Manifest",
       "tests": {
@@ -6030,15 +6002,14 @@
         "https://w3c.github.io/manifest/"
       ],
       "crawled": "https://www.w3.org/TR/appmanifest/",
-      "date": "24 February 2021",
+      "date": "05 March 2021",
       "links": "links/appmanifest.json",
       "refs": "refs/appmanifest.json",
-      "idl": "idl/appmanifest.idl",
       "generator": "respec",
+      "css": "css/appmanifest.json",
       "dfns": "dfns/appmanifest.json",
       "headings": "headings/appmanifest.json",
-      "ids": "ids/appmanifest.json",
-      "idlparsed": "idlparsed/appmanifest.json"
+      "ids": "ids/appmanifest.json"
     },
     {
       "url": "https://www.w3.org/TR/audio-output/",
@@ -10150,7 +10121,7 @@
         "https://encoding.spec.whatwg.org/"
       ],
       "crawled": "https://www.w3.org/TR/encoding/",
-      "date": "26 February 2021",
+      "date": "2 March 2021",
       "links": "links/encoding.json",
       "refs": "refs/encoding.json",
       "idl": "idl/encoding.idl",
@@ -10807,7 +10778,7 @@
         "https://w3c.github.io/html-aria/"
       ],
       "crawled": "https://www.w3.org/TR/html-aria/",
-      "date": "01 March 2021",
+      "date": "08 March 2021",
       "links": "links/html-aria.json",
       "refs": "refs/html-aria.json",
       "generator": "respec",
@@ -12814,7 +12785,7 @@
         "https://www.w3.org/TR/resource-timing/"
       ],
       "crawled": "https://www.w3.org/TR/resource-timing-2/",
-      "date": "18 August 2020",
+      "date": "01 March 2021",
       "links": "links/resource-timing-2.json",
       "refs": "refs/resource-timing-2.json",
       "idl": "idl/resource-timing.idl",
@@ -13995,7 +13966,7 @@
         "https://w3c.github.io/aria/"
       ],
       "crawled": "https://www.w3.org/TR/wai-aria-1.2/",
-      "date": "18 December 2019",
+      "date": "02 March 2021",
       "links": "links/wai-aria-1.2.json",
       "refs": "refs/wai-aria-1.2.json",
       "idl": "idl/wai-aria.idl",
@@ -15014,7 +14985,7 @@
         "https://xhr.spec.whatwg.org/"
       ],
       "crawled": "https://xhr.spec.whatwg.org/",
-      "date": "26 February 2021",
+      "date": "3 March 2021",
       "links": "links/xhr.json",
       "refs": "refs/xhr.json",
       "idl": "idl/xhr.idl",
