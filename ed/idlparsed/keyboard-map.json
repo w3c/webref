@@ -9,13 +9,14 @@
       "functions": {
         "Window": [
           "Navigator",
+          "KeyboardLayoutMap",
           "Keyboard"
         ]
       }
     },
     "idlNames": {
       "KeyboardLayoutMap": {
-        "fragment": "interface KeyboardLayoutMap {\n  readonly maplike<DOMString, DOMString>;\n};",
+        "fragment": "[Exposed=Window]\ninterface KeyboardLayoutMap {\n  readonly maplike<DOMString, DOMString>;\n};",
         "type": "interface",
         "name": "KeyboardLayoutMap",
         "inheritance": null,
@@ -46,7 +47,17 @@
             "async": false
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "Keyboard": {
@@ -156,6 +167,7 @@
     "exposed": {
       "Window": [
         "Navigator",
+        "KeyboardLayoutMap",
         "Keyboard"
       ]
     },
