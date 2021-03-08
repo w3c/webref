@@ -1,0 +1,41 @@
+From 9bc93b3efecaeffe41fa0d4fd778388d6af2a50c Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Mon, 8 Mar 2021 10:35:58 +0100
+Subject: [PATCH] Fix webrtc-insertable-streams.idl
+
+https://github.com/w3c/webrtc-insertable-streams/pull/70
+https://github.com/w3c/webrtc-insertable-streams/issues/72
+---
+ ed/idl/webrtc-insertable-streams.idl | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+
+diff --git a/ed/idl/webrtc-insertable-streams.idl b/ed/idl/webrtc-insertable-streams.idl
+index 7a9ad67d8..7bf34a974 100644
+--- a/ed/idl/webrtc-insertable-streams.idl
++++ b/ed/idl/webrtc-insertable-streams.idl
+@@ -3,6 +3,12 @@
+ // (https://github.com/w3c/webref)
+ // Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)
+ 
++// New dictionary.
++dictionary RTCInsertableStreams {
++    ReadableStream readable;
++    WritableStream writable;
++};
++
+ // New fields in RTCConfiguration
+ partial dictionary RTCConfiguration {
+     boolean encodedInsertableStreams = false;
+@@ -85,8 +91,7 @@ interface RTCTransformEvent : Event {
+     readonly attribute RTCRtpScriptTransformer transformer;
+ };
+ 
+-[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]
+-partial interface DedicatedWorkerGlobalScope : WorkerGlobalScope {
++partial interface DedicatedWorkerGlobalScope {
+     attribute EventHandler onrtctransform;
+ };
+ 
+-- 
+2.30.1.766.gb4fecdf3b7-goog
+
