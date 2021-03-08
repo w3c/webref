@@ -1,10 +1,10 @@
 // Source: WebGL EXT_disjoint_timer_query_webgl2 Extension Specification (https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
-[LegacyNoInterfaceObject]
+[Exposed=(Window,Worker), LegacyNoInterfaceObject]
 interface EXT_disjoint_timer_query_webgl2 {
   const GLenum QUERY_COUNTER_BITS_EXT      = 0x8864;
   const GLenum TIME_ELAPSED_EXT            = 0x88BF;
   const GLenum TIMESTAMP_EXT               = 0x8E28;
   const GLenum GPU_DISJOINT_EXT            = 0x8FBB;
 
-  void queryCounterEXT(WebGLQuery query, GLenum target);
+  undefined queryCounterEXT(WebGLQuery query, GLenum target);
 };

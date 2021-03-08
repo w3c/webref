@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "EXT_sRGB"
+        ],
+        "Worker": [
+          "EXT_sRGB"
+        ]
+      }
     },
     "idlNames": {
       "EXT_sRGB": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface EXT_sRGB {\n  const GLenum SRGB_EXT                                     = 0x8C40;\n  const GLenum SRGB_ALPHA_EXT                               = 0x8C42;\n  const GLenum SRGB8_ALPHA8_EXT                             = 0x8C43;\n  const GLenum FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT    = 0x8210;\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface EXT_sRGB {\n  const GLenum SRGB_EXT                                     = 0x8C40;\n  const GLenum SRGB_ALPHA_EXT                               = 0x8C42;\n  const GLenum SRGB8_ALPHA8_EXT                             = 0x8C43;\n  const GLenum FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING_EXT    = 0x8210;\n};",
         "type": "interface",
         "name": "EXT_sRGB",
         "inheritance": null,
@@ -87,6 +94,22 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
@@ -97,7 +120,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "EXT_sRGB"
+      ],
+      "Worker": [
+        "EXT_sRGB"
+      ]
+    },
     "dependencies": {
       "EXT_sRGB": []
     },

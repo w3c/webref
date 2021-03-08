@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "OES_texture_half_float"
+        ],
+        "Worker": [
+          "OES_texture_half_float"
+        ]
+      }
     },
     "idlNames": {
       "OES_texture_half_float": {
-        "fragment": "[LegacyNoInterfaceObject]\ninterface OES_texture_half_float {\n  const GLenum HALF_FLOAT_OES = 0x8D61;\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface OES_texture_half_float {\n  const GLenum HALF_FLOAT_OES = 0x8D61;\n};",
         "type": "interface",
         "name": "OES_texture_half_float",
         "inheritance": null,
@@ -36,6 +43,22 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
@@ -46,7 +69,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "OES_texture_half_float"
+      ],
+      "Worker": [
+        "OES_texture_half_float"
+      ]
+    },
     "dependencies": {
       "OES_texture_half_float": []
     },

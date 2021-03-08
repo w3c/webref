@@ -1,24 +1,24 @@
 // Source: WebGL WEBGL_multi_draw Extension Specification (https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 [NoInterfaceObject]
 interface WEBGL_multi_draw {
-  void multiDrawArraysWEBGL(
+  undefined multiDrawArraysWEBGL(
       GLenum mode,
       (Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,
       (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,
       GLsizei drawcount);
-  void multiDrawElementsWEBGL(
+  undefined multiDrawElementsWEBGL(
       GLenum mode,
       (Int32Array or sequence<GLint>) countsList, GLuint countsOffset,
       GLenum type,
       (Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,
       GLsizei drawcount);
-  void multiDrawArraysInstancedWEBGL(
+  undefined multiDrawArraysInstancedWEBGL(
       GLenum mode,
       (Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,
       (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,
       (Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,
       GLsizei drawcount);
-  void multiDrawElementsInstancedWEBGL(
+  undefined multiDrawElementsInstancedWEBGL(
       GLenum mode,
       (Int32Array or sequence<GLint>) countsList, GLuint countsOffset,
       GLenum type,

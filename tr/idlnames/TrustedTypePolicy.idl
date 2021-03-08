@@ -1,0 +1,8 @@
+// Source: Trusted Types (https://w3c.github.io/webappsec-trusted-types/dist/spec/)
+[Exposed=Window, SecureContext]
+interface TrustedTypePolicy {
+  readonly attribute DOMString name;
+  TrustedHTML createHTML(DOMString input, any... arguments);
+  TrustedScript createScript(DOMString input, any... arguments);
+  TrustedScriptURL createScriptURL(DOMString input, any... arguments);
+};
