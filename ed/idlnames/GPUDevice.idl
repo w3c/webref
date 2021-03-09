@@ -1,7 +1,6 @@
 // Source: WebGPU (https://gpuweb.github.io/gpuweb/)
 [Exposed=(Window, DedicatedWorker), Serializable]
 interface GPUDevice : EventTarget {
-    [SameObject] readonly attribute GPUAdapter adapter;
     readonly attribute FrozenArray<GPUFeatureName> features;
     readonly attribute object limits;
 
