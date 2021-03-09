@@ -10,7 +10,6 @@ partial interface Screen {
 
 [SecureContext, Exposed=(Window)]
 interface ScreenFold : EventTarget {
-  readonly attribute unsigned short angle;
   readonly attribute ScreenFoldPosture posture;
   attribute EventHandler onchange;
 };

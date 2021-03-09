@@ -14,26 +14,11 @@
     },
     "idlNames": {
       "ScreenFold": {
-        "fragment": "[SecureContext, Exposed=(Window)]\ninterface ScreenFold : EventTarget {\n  readonly attribute unsigned short angle;\n  readonly attribute ScreenFoldPosture posture;\n  attribute EventHandler onchange;\n};",
+        "fragment": "[SecureContext, Exposed=(Window)]\ninterface ScreenFold : EventTarget {\n  readonly attribute ScreenFoldPosture posture;\n  attribute EventHandler onchange;\n};",
         "type": "interface",
         "name": "ScreenFold",
         "inheritance": "EventTarget",
         "members": [
-          {
-            "type": "attribute",
-            "name": "angle",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
           {
             "type": "attribute",
             "name": "posture",
