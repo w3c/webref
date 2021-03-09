@@ -25,10 +25,24 @@
     },
     {
       "spec": {
+        "title": "WebXR Depth Sensing Module",
+        "url": "https://immersive-web.github.io/depth-sensing/"
+      },
+      "fragment": "partial interface XRFrame {\n  XRCPUDepthInformation? getDepthInformation(XRView view);\n};"
+    },
+    {
+      "spec": {
         "title": "WebXR Hit Test Module",
         "url": "https://immersive-web.github.io/hit-test/"
       },
       "fragment": "partial interface XRFrame {\n  FrozenArray<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);\n  FrozenArray<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Lighting Estimation API Level 1",
+        "url": "https://immersive-web.github.io/lighting-estimation/"
+      },
+      "fragment": "partial interface XRFrame {\n  XRLightEstimate? getLightEstimate(XRLightProbe lightProbe);\n};"
     },
     {
       "spec": {

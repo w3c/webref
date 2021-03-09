@@ -1,13 +1,13 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-03-08T01:59:56.137Z",
+  "date": "2021-03-09T12:40:02.965Z",
   "options": {
     "publishedVersion": true
   },
   "stats": {
-    "crawled": 383,
-    "errors": 15
+    "crawled": 384,
+    "errors": 0
   },
   "results": [
     {
@@ -778,14 +778,15 @@
           "fetch"
         ],
         "excludePaths": [
-          "fetch/metadata"
+          "fetch/metadata",
+          "fetch/private-network-access"
         ]
       },
       "versions": [
         "https://fetch.spec.whatwg.org/"
       ],
       "crawled": "https://fetch.spec.whatwg.org/",
-      "date": "5 March 2021",
+      "date": "9 March 2021",
       "links": "links/fetch.json",
       "refs": "refs/fetch.json",
       "idl": "idl/fetch.idl",
@@ -859,7 +860,7 @@
         "https://gpuweb.github.io/gpuweb/"
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
-      "date": "5 March 2021",
+      "date": "8 March 2021",
       "links": "links/gpuweb.json",
       "refs": "refs/gpuweb.json",
       "idl": "idl/gpuweb.idl",
@@ -961,6 +962,10 @@
           "worklets",
           "x-frame-options",
           "xslt"
+        ],
+        "excludePaths": [
+          "html/cross-origin-embedder-policy/credentialless",
+          "html/cross-origin-embedder-policy/credentialless"
         ]
       },
       "versions": [
@@ -1029,6 +1034,37 @@
       "headings": "headings/anchors.json",
       "ids": "ids/anchors.json",
       "idlparsed": "idlparsed/anchors.json"
+    },
+    {
+      "url": "https://immersive-web.github.io/depth-sensing/",
+      "seriesComposition": "full",
+      "shortname": "depth-sensing",
+      "series": {
+        "shortname": "depth-sensing",
+        "currentSpecification": "depth-sensing"
+      },
+      "nightly": {
+        "url": "https://immersive-web.github.io/depth-sensing/",
+        "repository": "https://github.com/immersive-web/depth-sensing",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebXR Depth Sensing Module",
+      "source": "spec",
+      "shortTitle": "WebXR Depth Sensing",
+      "versions": [
+        "https://immersive-web.github.io/depth-sensing/"
+      ],
+      "crawled": "https://immersive-web.github.io/depth-sensing/",
+      "date": "16 February 2021",
+      "links": "links/depth-sensing.json",
+      "refs": "refs/depth-sensing.json",
+      "idl": "idl/depth-sensing.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/depth-sensing.json",
+      "headings": "headings/depth-sensing.json",
+      "ids": "ids/depth-sensing.json",
+      "idlparsed": "idlparsed/depth-sensing.json"
     },
     {
       "url": "https://immersive-web.github.io/dom-overlays/",
@@ -1103,6 +1139,37 @@
       "headings": "headings/hit-test.json",
       "ids": "ids/hit-test.json",
       "idlparsed": "idlparsed/hit-test.json"
+    },
+    {
+      "url": "https://immersive-web.github.io/lighting-estimation/",
+      "seriesComposition": "full",
+      "shortname": "lighting-estimation",
+      "series": {
+        "shortname": "lighting-estimation",
+        "currentSpecification": "lighting-estimation"
+      },
+      "nightly": {
+        "url": "https://immersive-web.github.io/lighting-estimation/",
+        "repository": "https://github.com/immersive-web/lighting-estimation",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebXR Lighting Estimation API Level 1",
+      "source": "spec",
+      "shortTitle": "WebXR Lighting Estimation API 1",
+      "versions": [
+        "https://immersive-web.github.io/lighting-estimation/"
+      ],
+      "crawled": "https://immersive-web.github.io/lighting-estimation/",
+      "date": "18 February 2021",
+      "links": "links/lighting-estimation.json",
+      "refs": "refs/lighting-estimation.json",
+      "idl": "idl/lighting-estimation.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/lighting-estimation.json",
+      "headings": "headings/lighting-estimation.json",
+      "ids": "ids/lighting-estimation.json",
+      "idlparsed": "idlparsed/lighting-estimation.json"
     },
     {
       "url": "https://infra.spec.whatwg.org/",
@@ -1478,13 +1545,13 @@
         "sourcePath": "spec.html",
         "filename": "index.html"
       },
-      "title": "ECMAScript® 2021 Language Specification",
+      "title": "ECMAScript® 2022 Language Specification",
       "source": "specref",
       "versions": [
         "https://tc39.es/ecma262/"
       ],
       "crawled": "https://tc39.es/ecma262/",
-      "date": "6 March 2021",
+      "date": "9 March 2021",
       "links": "links/ecmascript.json",
       "generator": null,
       "dfns": "dfns/ecmascript.json",
@@ -1510,14 +1577,14 @@
         "sourcePath": "spec/index.html",
         "filename": "index.html"
       },
-      "title": "ECMAScript® 2021 Internationalization API Specification",
+      "title": "ECMAScript® 2022 Internationalization API Specification",
       "source": "specref",
       "shortTitle": "ECMAScript Internationalization API",
       "versions": [
         "https://tc39.es/ecma402/"
       ],
       "crawled": "https://tc39.es/ecma402/",
-      "date": "26 February 2021",
+      "date": "9 March 2021",
       "links": "links/ecma-402.json",
       "generator": null,
       "ids": "ids/ecma-402.json"
@@ -2144,7 +2211,7 @@
         "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
       ],
       "crawled": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
-      "date": "2 March 2021",
+      "date": "8 March 2021",
       "links": "links/trusted-types.json",
       "refs": "refs/trusted-types.json",
       "idl": "idl/trusted-types.idl",
@@ -2200,6 +2267,12 @@
       "title": "IceTransport Extensions for WebRTC",
       "source": "spec",
       "shortTitle": "IceTransport Extensions for WebRTC",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webrtc-ice"
+        ]
+      },
       "versions": [
         "https://w3c.github.io/webrtc-ice/"
       ],
@@ -2241,7 +2314,7 @@
         "https://w3c.github.io/webrtc-insertable-streams/"
       ],
       "crawled": "https://w3c.github.io/webrtc-insertable-streams/",
-      "date": "4 March 2021",
+      "date": "8 March 2021",
       "links": "links/webrtc-insertable-streams.json",
       "refs": "refs/webrtc-insertable-streams.json",
       "idl": "idl/webrtc-insertable-streams.idl",
@@ -2388,14 +2461,16 @@
       "versions": [
         "https://wicg.github.io/background-sync/spec/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/background-sync/spec/",
-        "repository": "https://github.com/WICG/background-sync",
-        "sourcePath": "spec/index.bs",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 66)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/background-sync/spec/",
+      "date": "8 March 2021",
+      "links": "links/background-sync.json",
+      "refs": "refs/background-sync.json",
+      "idl": "idl/background-sync.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/background-sync.json",
+      "headings": "headings/background-sync.json",
+      "ids": "ids/background-sync.json",
+      "idlparsed": "idlparsed/background-sync.json"
     },
     {
       "url": "https://wicg.github.io/client-hints-infrastructure/",
@@ -2458,14 +2533,16 @@
       "versions": [
         "https://wicg.github.io/compression/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/compression/",
-        "repository": "https://github.com/WICG/compression",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 68)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/compression/",
+      "date": "8 March 2021",
+      "links": "links/compression.json",
+      "refs": "refs/compression.json",
+      "idl": "idl/compression.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/compression.json",
+      "headings": "headings/compression.json",
+      "ids": "ids/compression.json",
+      "idlparsed": "idlparsed/compression.json"
     },
     {
       "url": "https://wicg.github.io/construct-stylesheets/",
@@ -2530,14 +2607,16 @@
       "versions": [
         "https://wicg.github.io/contact-api/spec/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/contact-api/spec/",
-        "repository": "https://github.com/WICG/contact-api",
-        "sourcePath": "spec/index.bs",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 70)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/contact-api/spec/",
+      "date": "8 March 2021",
+      "links": "links/contact-api.json",
+      "refs": "refs/contact-api.json",
+      "idl": "idl/contact-api.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/contact-api.json",
+      "headings": "headings/contact-api.json",
+      "ids": "ids/contact-api.json",
+      "idlparsed": "idlparsed/contact-api.json"
     },
     {
       "url": "https://wicg.github.io/content-index/spec/",
@@ -2565,14 +2644,16 @@
       "versions": [
         "https://wicg.github.io/content-index/spec/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/content-index/spec/",
-        "repository": "https://github.com/WICG/content-index",
-        "sourcePath": "spec/index.bs",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 71)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/content-index/spec/",
+      "date": "8 March 2021",
+      "links": "links/content-index.json",
+      "refs": "refs/content-index.json",
+      "idl": "idl/content-index.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/content-index.json",
+      "headings": "headings/content-index.json",
+      "ids": "ids/content-index.json",
+      "idlparsed": "idlparsed/content-index.json"
     },
     {
       "url": "https://wicg.github.io/cookie-store/",
@@ -2610,41 +2691,6 @@
       "headings": "headings/cookie-store.json",
       "ids": "ids/cookie-store.json",
       "idlparsed": "idlparsed/cookie-store.json"
-    },
-    {
-      "url": "https://wicg.github.io/cors-rfc1918/",
-      "seriesComposition": "full",
-      "shortname": "cors-rfc1918",
-      "series": {
-        "shortname": "cors-rfc1918",
-        "currentSpecification": "cors-rfc1918"
-      },
-      "nightly": {
-        "url": "https://wicg.github.io/cors-rfc1918/",
-        "repository": "https://github.com/WICG/cors-rfc1918",
-        "sourcePath": "index.src.html",
-        "filename": "index.html"
-      },
-      "title": "CORS and RFC1918",
-      "source": "specref",
-      "shortTitle": "CORS and RFC1918",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "cors-rfc1918"
-        ]
-      },
-      "versions": [
-        "https://wicg.github.io/cors-rfc1918/"
-      ],
-      "crawled": {
-        "url": "https://wicg.github.io/cors-rfc1918/",
-        "repository": "https://github.com/WICG/cors-rfc1918",
-        "sourcePath": "index.src.html",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 73)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/crash-reporting/",
@@ -2771,14 +2817,16 @@
       "versions": [
         "https://wicg.github.io/datacue/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/datacue/",
-        "repository": "https://github.com/WICG/datacue",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 77)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/datacue/",
+      "date": "8 March 2021",
+      "links": "links/datacue.json",
+      "refs": "refs/datacue.json",
+      "idl": "idl/datacue.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/datacue.json",
+      "headings": "headings/datacue.json",
+      "ids": "ids/datacue.json",
+      "idlparsed": "idlparsed/datacue.json"
     },
     {
       "url": "https://wicg.github.io/deprecation-reporting/",
@@ -2966,6 +3014,37 @@
       "idlparsed": "idlparsed/file-system-access.json"
     },
     {
+      "url": "https://wicg.github.io/floc/",
+      "seriesComposition": "full",
+      "shortname": "floc",
+      "series": {
+        "shortname": "floc",
+        "currentSpecification": "floc"
+      },
+      "nightly": {
+        "url": "https://wicg.github.io/floc/",
+        "repository": "https://github.com/WICG/floc",
+        "sourcePath": "floc.bs",
+        "filename": "index.html"
+      },
+      "title": "Federated Learning of Cohorts",
+      "source": "spec",
+      "shortTitle": "Federated Learning of Cohorts",
+      "versions": [
+        "https://wicg.github.io/floc/"
+      ],
+      "crawled": "https://wicg.github.io/floc/",
+      "date": "3 March 2021",
+      "links": "links/floc.json",
+      "refs": "refs/floc.json",
+      "idl": "idl/floc.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/floc.json",
+      "headings": "headings/floc.json",
+      "ids": "ids/floc.json",
+      "idlparsed": "idlparsed/floc.json"
+    },
+    {
       "url": "https://wicg.github.io/frame-timing/",
       "seriesComposition": "full",
       "shortname": "frame-timing",
@@ -3022,14 +3101,16 @@
       "versions": [
         "https://wicg.github.io/get-installed-related-apps/spec/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/get-installed-related-apps/spec/",
-        "repository": "https://github.com/WICG/get-installed-related-apps",
-        "sourcePath": "spec/index.bs",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 84)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/get-installed-related-apps/spec/",
+      "date": "8 March 2021",
+      "links": "links/get-installed-related-apps.json",
+      "refs": "refs/get-installed-related-apps.json",
+      "idl": "idl/get-installed-related-apps.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/get-installed-related-apps.json",
+      "headings": "headings/get-installed-related-apps.json",
+      "ids": "ids/get-installed-related-apps.json",
+      "idlparsed": "idlparsed/get-installed-related-apps.json"
     },
     {
       "url": "https://wicg.github.io/idle-detection/",
@@ -3046,7 +3127,7 @@
         "filename": "index.html"
       },
       "title": "Idle Detection API",
-      "source": "spec",
+      "source": "specref",
       "shortTitle": "Idle Detection API",
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
@@ -3130,7 +3211,7 @@
         "https://wicg.github.io/input-device-capabilities/"
       ],
       "crawled": "https://wicg.github.io/input-device-capabilities/",
-      "date": "15 July 2020",
+      "date": "08 March 2021",
       "links": "links/input-device-capabilities.json",
       "refs": "refs/input-device-capabilities.json",
       "idl": "idl/input-device-capabilities.idl",
@@ -3191,7 +3272,7 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "title": "isInputPending",
+      "title": "Early detection of input events",
       "source": "spec",
       "shortTitle": "isInputPending",
       "tests": {
@@ -3203,14 +3284,16 @@
       "versions": [
         "https://wicg.github.io/is-input-pending/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/is-input-pending/",
-        "repository": "https://github.com/WICG/is-input-pending",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 89)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/is-input-pending/",
+      "date": "08 March 2021",
+      "links": "links/is-input-pending.json",
+      "refs": "refs/is-input-pending.json",
+      "idl": "idl/is-input-pending.idl",
+      "generator": "respec",
+      "dfns": "dfns/is-input-pending.json",
+      "headings": "headings/is-input-pending.json",
+      "ids": "ids/is-input-pending.json",
+      "idlparsed": "idlparsed/is-input-pending.json"
     },
     {
       "url": "https://wicg.github.io/js-self-profiling/",
@@ -3238,14 +3321,16 @@
       "versions": [
         "https://wicg.github.io/js-self-profiling/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/js-self-profiling/",
-        "repository": "https://github.com/WICG/js-self-profiling",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 90)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/js-self-profiling/",
+      "date": "08 March 2021",
+      "links": "links/js-self-profiling.json",
+      "refs": "refs/js-self-profiling.json",
+      "idl": "idl/js-self-profiling.idl",
+      "generator": "respec",
+      "dfns": "dfns/js-self-profiling.json",
+      "headings": "headings/js-self-profiling.json",
+      "ids": "ids/js-self-profiling.json",
+      "idlparsed": "idlparsed/js-self-profiling.json"
     },
     {
       "url": "https://wicg.github.io/keyboard-lock/",
@@ -3310,14 +3395,16 @@
       "versions": [
         "https://wicg.github.io/keyboard-map/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/keyboard-map/",
-        "repository": "https://github.com/WICG/keyboard-map",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 92)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/keyboard-map/",
+      "date": "8 March 2021",
+      "links": "links/keyboard-map.json",
+      "refs": "refs/keyboard-map.json",
+      "idl": "idl/keyboard-map.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/keyboard-map.json",
+      "headings": "headings/keyboard-map.json",
+      "ids": "ids/keyboard-map.json",
+      "idlparsed": "idlparsed/keyboard-map.json"
     },
     {
       "url": "https://wicg.github.io/largest-contentful-paint/",
@@ -3450,14 +3537,14 @@
       "versions": [
         "https://wicg.github.io/media-feeds/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/media-feeds/",
-        "repository": "https://github.com/WICG/media-feeds",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 96)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/media-feeds/",
+      "date": "08 March 2021",
+      "links": "links/media-feeds.json",
+      "refs": "refs/media-feeds.json",
+      "generator": "respec",
+      "dfns": "dfns/media-feeds.json",
+      "headings": "headings/media-feeds.json",
+      "ids": "ids/media-feeds.json"
     },
     {
       "url": "https://wicg.github.io/netinfo/",
@@ -3663,14 +3750,16 @@
       "versions": [
         "https://wicg.github.io/periodic-background-sync/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/periodic-background-sync/",
-        "repository": "https://github.com/WICG/periodic-background-sync",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 102)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/periodic-background-sync/",
+      "date": "8 March 2021",
+      "links": "links/periodic-background-sync.json",
+      "refs": "refs/periodic-background-sync.json",
+      "idl": "idl/periodic-background-sync.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/periodic-background-sync.json",
+      "headings": "headings/periodic-background-sync.json",
+      "ids": "ids/periodic-background-sync.json",
+      "idlparsed": "idlparsed/periodic-background-sync.json"
     },
     {
       "url": "https://wicg.github.io/permissions-request/",
@@ -3818,6 +3907,43 @@
       "ids": "ids/priority-hints.json"
     },
     {
+      "url": "https://wicg.github.io/private-network-access/",
+      "seriesComposition": "full",
+      "shortname": "private-network-access",
+      "series": {
+        "shortname": "private-network-access",
+        "currentSpecification": "private-network-access"
+      },
+      "nightly": {
+        "url": "https://wicg.github.io/private-network-access/",
+        "repository": "https://github.com/WICG/private-network-access",
+        "sourcePath": "index.src.html",
+        "filename": "index.html"
+      },
+      "title": "Private Network Access",
+      "source": "spec",
+      "shortTitle": "Private Network Access",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "fetch/private-network-access"
+        ]
+      },
+      "versions": [
+        "https://wicg.github.io/private-network-access/"
+      ],
+      "crawled": "https://wicg.github.io/private-network-access/",
+      "date": "8 March 2021",
+      "links": "links/private-network-access.json",
+      "refs": "refs/private-network-access.json",
+      "idl": "idl/private-network-access.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/private-network-access.json",
+      "headings": "headings/private-network-access.json",
+      "ids": "ids/private-network-access.json",
+      "idlparsed": "idlparsed/private-network-access.json"
+    },
+    {
       "url": "https://wicg.github.io/savedata/",
       "seriesComposition": "full",
       "shortname": "savedata",
@@ -3843,14 +3969,16 @@
       "versions": [
         "https://wicg.github.io/savedata/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/savedata/",
-        "repository": "https://github.com/WICG/savedata",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 107)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/savedata/",
+      "date": "08 March 2021",
+      "links": "links/savedata.json",
+      "refs": "refs/savedata.json",
+      "idl": "idl/savedata.idl",
+      "generator": "respec",
+      "dfns": "dfns/savedata.json",
+      "headings": "headings/savedata.json",
+      "ids": "ids/savedata.json",
+      "idlparsed": "idlparsed/savedata.json"
     },
     {
       "url": "https://wicg.github.io/scroll-to-text-fragment/",
@@ -3878,14 +4006,16 @@
       "versions": [
         "https://wicg.github.io/scroll-to-text-fragment/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/scroll-to-text-fragment/",
-        "repository": "https://github.com/WICG/scroll-to-text-fragment",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 108)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/scroll-to-text-fragment/",
+      "date": "8 March 2021",
+      "links": "links/scroll-to-text-fragment.json",
+      "refs": "refs/scroll-to-text-fragment.json",
+      "idl": "idl/scroll-to-text-fragment.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/scroll-to-text-fragment.json",
+      "headings": "headings/scroll-to-text-fragment.json",
+      "ids": "ids/scroll-to-text-fragment.json",
+      "idlparsed": "idlparsed/scroll-to-text-fragment.json"
     },
     {
       "url": "https://wicg.github.io/serial/",
@@ -4269,14 +4399,16 @@
       "versions": [
         "https://wicg.github.io/web-otp/"
       ],
-      "crawled": {
-        "url": "https://wicg.github.io/web-otp/",
-        "repository": "https://github.com/WICG/web-otp",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 119)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
+      "crawled": "https://wicg.github.io/web-otp/",
+      "date": "8 March 2021",
+      "links": "links/web-otp.json",
+      "refs": "refs/web-otp.json",
+      "idl": "idl/web-otp.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/web-otp.json",
+      "headings": "headings/web-otp.json",
+      "ids": "ids/web-otp.json",
+      "idlparsed": "idlparsed/web-otp.json"
     },
     {
       "url": "https://wicg.github.io/webhid/",
@@ -5990,7 +6122,7 @@
       },
       "title": "Web Application Manifest",
       "source": "w3c",
-      "shortTitle": "Web App Manifest",
+      "shortTitle": "Web Application Manifest",
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
@@ -6002,7 +6134,7 @@
         "https://w3c.github.io/manifest/"
       ],
       "crawled": "https://www.w3.org/TR/appmanifest/",
-      "date": "05 March 2021",
+      "date": "09 March 2021",
       "links": "links/appmanifest.json",
       "refs": "refs/appmanifest.json",
       "generator": "respec",
@@ -6319,7 +6451,7 @@
       "nightly": {
         "url": "https://w3c.github.io/webappsec-credential-management/",
         "repository": "https://github.com/w3c/webappsec-credential-management",
-        "sourcePath": "index.src.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Credential Management Level 1",
@@ -6404,7 +6536,7 @@
       "nightly": {
         "url": "https://w3c.github.io/webappsec-csp/",
         "repository": "https://github.com/w3c/webappsec-csp",
-        "sourcePath": "index.src.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Content Security Policy Level 3",
@@ -10849,7 +10981,7 @@
       },
       "title": "MediaStream Image Capture",
       "source": "w3c",
-      "shortTitle": "\"MediaStream Image Capture\"",
+      "shortTitle": "MediaStream Image Capture",
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
@@ -10897,7 +11029,7 @@
         "https://w3c.github.io/image-resource/"
       ],
       "crawled": "https://www.w3.org/TR/image-resource/",
-      "date": "20 May 2020",
+      "date": "09 March 2021",
       "links": "links/image-resource.json",
       "refs": "refs/image-resource.json",
       "idl": "idl/image-resource.idl",
@@ -11659,7 +11791,7 @@
         "https://www.w3.org/TR/navigation-timing/"
       ],
       "crawled": "https://www.w3.org/TR/navigation-timing-2/",
-      "date": "15 September 2020",
+      "date": "08 March 2021",
       "links": "links/navigation-timing-2.json",
       "refs": "refs/navigation-timing-2.json",
       "idl": "idl/navigation-timing.idl",
@@ -12805,7 +12937,7 @@
       },
       "release": {
         "url": "https://www.w3.org/TR/screen-capture/",
-        "filename": "index.html"
+        "filename": "Overview.html"
       },
       "nightly": {
         "url": "https://w3c.github.io/mediacapture-screen-share/",
@@ -13323,79 +13455,6 @@
       "ids": "ids/svg-integration.json"
     },
     {
-      "url": "https://www.w3.org/TR/svg-markers/",
-      "seriesComposition": "full",
-      "shortname": "svg-markers",
-      "series": {
-        "shortname": "svg-markers",
-        "currentSpecification": "svg-markers"
-      },
-      "release": {
-        "url": "https://www.w3.org/TR/svg-markers/",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://svgwg.org/specs/markers/",
-        "repository": "https://github.com/w3c/svgwg",
-        "sourcePath": "specs/markers/master/Overview.html",
-        "filename": "Overview.html"
-      },
-      "title": "SVG Markers",
-      "source": "w3c",
-      "shortTitle": "SVG Markers",
-      "versions": [
-        "https://www.w3.org/TR/svg-markers/",
-        "https://svgwg.org/specs/markers/"
-      ],
-      "crawled": "https://www.w3.org/TR/svg-markers/",
-      "date": "09 April 2015",
-      "links": "links/svg-markers.json",
-      "refs": "refs/svg-markers.json",
-      "idl": "idl/svg-markers.idl",
-      "generator": null,
-      "css": "css/svg-markers.json",
-      "dfns": "dfns/svg-markers.json",
-      "headings": "headings/svg-markers.json",
-      "ids": "ids/svg-markers.json",
-      "idlparsed": "idlparsed/svg-markers.json"
-    },
-    {
-      "url": "https://www.w3.org/TR/svg-paths/",
-      "seriesComposition": "full",
-      "shortname": "svg-paths",
-      "series": {
-        "shortname": "svg-paths",
-        "currentSpecification": "svg-paths"
-      },
-      "release": {
-        "url": "https://www.w3.org/TR/svg-paths/",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://svgwg.org/specs/paths/",
-        "repository": "https://github.com/w3c/svgwg",
-        "sourcePath": "specs/paths/master/Overview.html",
-        "filename": "Overview.html"
-      },
-      "title": "SVG Paths",
-      "source": "w3c",
-      "shortTitle": "SVG Paths",
-      "versions": [
-        "https://www.w3.org/TR/svg-paths/",
-        "https://svgwg.org/specs/paths/"
-      ],
-      "crawled": "https://www.w3.org/TR/svg-paths/",
-      "date": "09 July 2015",
-      "links": "links/svg-paths.json",
-      "refs": "refs/svg-paths.json",
-      "idl": "idl/svg-paths.idl",
-      "generator": null,
-      "dfns": "dfns/svg-paths.json",
-      "headings": "headings/svg-paths.json",
-      "ids": "ids/svg-paths.json",
-      "idlparsed": "idlparsed/svg-paths.json"
-    },
-    {
       "url": "https://www.w3.org/TR/svg-strokes/",
       "seriesComposition": "full",
       "shortname": "svg-strokes",
@@ -13880,7 +13939,7 @@
         "https://w3c.github.io/user-timing/"
       ],
       "crawled": "https://www.w3.org/TR/user-timing-3/",
-      "date": "18 August 2020",
+      "date": "08 March 2021",
       "links": "links/user-timing-3.json",
       "refs": "refs/user-timing-3.json",
       "idl": "idl/user-timing.idl",

@@ -27,6 +27,11 @@ partial interface mixin WindowOrWorkerGlobalScope {
   [NewObject] Promise<Response> fetch(RequestInfo input, optional RequestInit init = {});
 };
 
+// Source: Trusted Types (https://w3c.github.io/webappsec-trusted-types/dist/spec/)
+partial interface WindowOrWorkerGlobalScope {
+  readonly attribute TrustedTypePolicyFactory trustedTypes;
+};
+
 // Source: Origin Policy (https://wicg.github.io/origin-policy/)
 partial interface mixin WindowOrWorkerGlobalScope {
   readonly attribute FrozenArray<DOMString> originPolicyIds;
