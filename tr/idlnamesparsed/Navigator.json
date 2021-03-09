@@ -95,10 +95,38 @@
     },
     {
       "spec": {
+        "title": "Contact Picker API",
+        "url": "https://wicg.github.io/contact-api/spec/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext, SameObject] readonly attribute ContactsManager contacts;\n};"
+    },
+    {
+      "spec": {
+        "title": "Get Installed Related Apps API",
+        "url": "https://wicg.github.io/get-installed-related-apps/spec/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext] Promise<sequence<RelatedApplication>> getInstalledRelatedApps();\n};"
+    },
+    {
+      "spec": {
+        "title": "Early detection of input events",
+        "url": "https://wicg.github.io/is-input-pending/"
+      },
+      "fragment": "partial interface Navigator {\n  readonly attribute Scheduling scheduling;\n};"
+    },
+    {
+      "spec": {
         "title": "Keyboard Lock",
         "url": "https://wicg.github.io/keyboard-lock/"
       },
       "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute Keyboard keyboard;\n};"
+    },
+    {
+      "spec": {
+        "title": "Keyboard Map",
+        "url": "https://wicg.github.io/keyboard-map/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext, SameObject] readonly attribute Keyboard keyboard;\n};"
     },
     {
       "spec": {

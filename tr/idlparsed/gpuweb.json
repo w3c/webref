@@ -696,33 +696,11 @@
         "extAttrs": []
       },
       "GPUDevice": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), Serializable]\ninterface GPUDevice : EventTarget {\n    [SameObject] readonly attribute GPUAdapter adapter;\n    readonly attribute FrozenArray<GPUFeatureName> features;\n    readonly attribute object limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), Serializable]\ninterface GPUDevice : EventTarget {\n    readonly attribute FrozenArray<GPUFeatureName> features;\n    readonly attribute object limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
         "type": "interface",
         "name": "GPUDevice",
         "inheritance": "EventTarget",
         "members": [
-          {
-            "type": "attribute",
-            "name": "adapter",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUAdapter"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true
-          },
           {
             "type": "attribute",
             "name": "features",
@@ -10240,7 +10218,6 @@
       ],
       "GPUDevice": [
         "EventTarget",
-        "GPUAdapter",
         "GPUFeatureName",
         "GPUQueue",
         "GPUBuffer",

@@ -7,3 +7,9 @@ dictionary RTCConfiguration {
   sequence<RTCCertificate> certificates;
   [EnforceRange] octet iceCandidatePoolSize = 0;
 };
+
+// Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)
+// New fields in RTCConfiguration
+partial dictionary RTCConfiguration {
+    boolean encodedInsertableStreams = false;
+};

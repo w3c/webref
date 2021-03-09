@@ -1,0 +1,6 @@
+// Source: WebXR Depth Sensing Module (https://immersive-web.github.io/depth-sensing/)
+interface XRCPUDepthInformation : XRDepthInformation {
+  [SameObject] readonly attribute ArrayBuffer data;
+
+  float getDepthInMeters(float x, float y);
+};

@@ -1,0 +1,105 @@
+{
+  "spec": {
+    "title": "Private Network Access",
+    "url": "https://wicg.github.io/private-network-access/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "AddressSpace": {
+        "fragment": "enum AddressSpace { \"local\", \"private\", \"public\" };",
+        "type": "enum",
+        "name": "AddressSpace",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "local"
+          },
+          {
+            "type": "enum-value",
+            "value": "private"
+          },
+          {
+            "type": "enum-value",
+            "value": "public"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "Document": [
+        {
+          "fragment": "partial interface Document {\n  readonly attribute AddressSpace addressSpace;\n};",
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "addressSpace",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AddressSpace"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "WorkerGlobalScope": [
+        {
+          "fragment": "partial interface WorkerGlobalScope {\n  readonly attribute AddressSpace addressSpace;\n};",
+          "type": "interface",
+          "name": "WorkerGlobalScope",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "addressSpace",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AddressSpace"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "Document": [
+        "AddressSpace"
+      ],
+      "WorkerGlobalScope": [
+        "AddressSpace"
+      ]
+    },
+    "externalDependencies": [
+      "Document",
+      "WorkerGlobalScope"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

@@ -25,10 +25,31 @@
     },
     {
       "spec": {
+        "title": "Web Background Synchronization",
+        "url": "https://wicg.github.io/background-sync/spec/"
+      },
+      "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler onsync;\n};"
+    },
+    {
+      "spec": {
+        "title": "Content Index",
+        "url": "https://wicg.github.io/content-index/spec/"
+      },
+      "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler oncontentdelete;\n};"
+    },
+    {
+      "spec": {
         "title": "Cookie Store API",
         "url": "https://wicg.github.io/cookie-store/"
       },
       "fragment": "partial interface ServiceWorkerGlobalScope {\n  [SameObject] readonly attribute CookieStore cookieStore;\n\n  attribute EventHandler oncookiechange;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Periodic Background Synchronization",
+        "url": "https://wicg.github.io/periodic-background-sync/"
+      },
+      "fragment": "partial interface ServiceWorkerGlobalScope {\n    attribute EventHandler onperiodicsync;\n};"
     },
     {
       "spec": {
@@ -69,6 +90,13 @@
           "url": "https://html.spec.whatwg.org/multipage/"
         },
         "fragment": "WorkerGlobalScope includes WindowOrWorkerGlobalScope;"
+      },
+      {
+        "spec": {
+          "title": "Private Network Access",
+          "url": "https://wicg.github.io/private-network-access/"
+        },
+        "fragment": "partial interface WorkerGlobalScope {\n  readonly attribute AddressSpace addressSpace;\n};"
       }
     ],
     "inheritance": {
@@ -103,6 +131,13 @@
               "url": "https://fetch.spec.whatwg.org/"
             },
             "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [NewObject] Promise<Response> fetch(RequestInfo input, optional RequestInit init = {});\n};"
+          },
+          {
+            "spec": {
+              "title": "Trusted Types",
+              "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+            },
+            "fragment": "partial interface WindowOrWorkerGlobalScope {\n  readonly attribute TrustedTypePolicyFactory trustedTypes;\n};"
           },
           {
             "spec": {
