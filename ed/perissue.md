@@ -9,8 +9,8 @@
 
 - [Atomics.waitAsync](https://tc39.es/proposal-atomics-wait-async/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
-- [ECMAScript® 2021 Internationalization API Specification](https://tc39.es/ecma402/)
-- [ECMAScript® 2021 Language Specification](https://tc39.es/ecma262/)
+- [ECMAScript® 2022 Internationalization API Specification](https://tc39.es/ecma402/)
+- [ECMAScript® 2022 Language Specification](https://tc39.es/ecma262/)
 - [import assertions](https://tc39.es/proposal-import-assertions/)
 - [JSON modules](https://tc39.es/proposal-json-modules/)
 - [Private Fields in `in`](https://tc39.es/proposal-private-fields-in-in/)
@@ -84,6 +84,7 @@ Basically all specifications have normative dependencies on some other specifica
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
 - [Frame Timing](https://wicg.github.io/frame-timing/)
+- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
 - [Private Network Access](https://wicg.github.io/private-network-access/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
@@ -131,7 +132,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - [WebRTC Priority Control API](https://w3c.github.io/webrtc-priority/)
 
-=> 48 specifications found
+=> 49 specifications found
 
 
 
@@ -1256,7 +1257,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://compat.spec.whatwg.org/`](https://compat.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/css-transforms-2/`](https://www.w3.org/TR/css-transforms-2/) but does not list it in its references
 - [DOM Standard](https://dom.spec.whatwg.org/) links to [`https://w3c.github.io/deviceorientation/spec-source-orientation.html`](https://w3c.github.io/deviceorientation/spec-source-orientation.html) but does not list it in its references
-- [ECMAScript® 2021 Language Specification](https://tc39.es/ecma262/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
+- [ECMAScript® 2022 Language Specification](https://tc39.es/ecma262/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [Event Timing API](https://wicg.github.io/event-timing/) links to:
     * [`https://w3c.github.io/pointerevents/`](https://w3c.github.io/pointerevents/) but does not list it in its references
     * [`https://w3c.github.io/timing-entrytypes-registry/`](https://w3c.github.io/timing-entrytypes-registry/) but does not list it in its references
