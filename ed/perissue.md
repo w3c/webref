@@ -7,6 +7,10 @@
 
 ## Specifications without normative dependencies
 
+- [500 Internal Server Error](https://drafts.csswg.org/css-contain-2/)
+- [500 Internal Server Error](https://drafts.csswg.org/css-content-3/)
+- [500 Internal Server Error](https://drafts.csswg.org/css-counter-styles/)
+- [500 Internal Server Error](https://drafts.csswg.org/css-device-adapt/)
 - [Atomics.waitAsync](https://tc39.es/proposal-atomics-wait-async/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
 - [ECMAScript® 2022 Internationalization API Specification](https://tc39.es/ecma402/)
@@ -63,7 +67,7 @@
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 55 specifications found
+=> 59 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -147,7 +151,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 
 ## List of WebIDL names not defined in the specifications crawled
 
-- `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - `RTCInsertableStreams` used in [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/)
@@ -945,18 +949,10 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/) links to:
     * [`https://www.w3.org/TR/2013/CR-css3-conditional-20130404/`](https://www.w3.org/TR/2013/CR-css3-conditional-20130404/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/) links to:
-    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
-    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
-    * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
-- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/) links to:
-    * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
-    * [`https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/`](https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/) but does not list it in its references
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/) but does not list it in its references
@@ -1018,10 +1014,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2011/WD-css3-gcpm-20111129/`](https://www.w3.org/TR/2011/WD-css3-gcpm-20111129/) but does not list it in its references
     * [`https://books.spec.whatwg.org/`](https://books.spec.whatwg.org/) but does not list it in its references
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/) links to [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
-- [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/) links to:
-    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
-    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/) links to:
     * [`https://www.w3.org/TR/css-grid-1/`](https://www.w3.org/TR/css-grid-1/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
@@ -1467,7 +1459,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 581 missing references for links found in 164 specifications
+=> 572 missing references for links found in 161 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1550,9 +1542,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/) links to:
-    * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-    * [`https://w3c.github.io/IntersectionObserver/`](https://w3c.github.io/IntersectionObserver/) but related reference "INTERSECTION-OBSERVER" uses URL [`https://www.w3.org/TR/intersection-observer/`](https://www.w3.org/TR/intersection-observer/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1571,7 +1560,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/2014/WD-dpub-latinreq-20140313/`](https://www.w3.org/TR/2014/WD-dpub-latinreq-20140313/) but related reference "DPUB-LATINREQ" uses URL [`https://www.w3.org/TR/dpub-latinreq/`](https://www.w3.org/TR/dpub-latinreq/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1861,7 +1849,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 318 inconsistent references for links found in 176 specifications
+=> 315 inconsistent references for links found in 174 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -2086,12 +2074,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-color-4/#css-system-colors`](https://www.w3.org/TR/css-color-4/#css-system-colors)
      * [`https://html.spec.whatwg.org/#meta-color-scheme`](https://html.spec.whatwg.org/#meta-color-scheme)
      * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/):
-     * [`https://drafts.csswg.org/css-break-3/#monolithic`](https://drafts.csswg.org/css-break-3/#monolithic)
-     * [`https://drafts.csswg.org/css2/#stacking-context`](https://drafts.csswg.org/css2/#stacking-context)
-     * [`https://w3c.github.io/IntersectionObserver/#intersectionobserver-intersection-root`](https://w3c.github.io/IntersectionObserver/#intersectionobserver-intersection-root)
-- [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/):
-     * [`https://drafts.csswg.org/css-text-3/#grapheme-cluster`](https://drafts.csswg.org/css-text-3/#grapheme-cluster)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/):
      * [`https://drafts.csswg.org/css-pseudo-4/#highlight-overlay`](https://drafts.csswg.org/css-pseudo-4/#highlight-overlay)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/):
@@ -3051,7 +3033,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fullscreen.spec.whatwg.org/#fullscreen-is-supported`](https://fullscreen.spec.whatwg.org/#fullscreen-is-supported)
      * [`https://fullscreen.spec.whatwg.org/#fully-exit-fullscreen`](https://fullscreen.spec.whatwg.org/#fully-exit-fullscreen)
      * [`https://fullscreen.spec.whatwg.org/#unfullscreen-a-document`](https://fullscreen.spec.whatwg.org/#unfullscreen-a-document)
-     * [`https://drafts.csswg.org/css-device-adapt/#initial-viewport`](https://drafts.csswg.org/css-device-adapt/#initial-viewport)
      * [`https://url.spec.whatwg.org/#default-port`](https://url.spec.whatwg.org/#default-port)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/):
      * [`https://w3c.github.io/webdriver/#dfn-local-ends`](https://w3c.github.io/webdriver/#dfn-local-ends)
@@ -3260,7 +3241,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1200 problematic external links found in 191 specifications
+=> 1195 problematic external links found in 189 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -3279,8 +3260,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-ui-3/#box-sizing`](https://www.w3.org/TR/css-ui-3/#box-sizing)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/):
      * [`https://www.w3.org/TR/css-flexbox-1/#algo-main-item`](https://www.w3.org/TR/css-flexbox-1/#algo-main-item)
-- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/):
-     * [`https://drafts.csswg.org/css-ui-3/#propdef-text-overflow`](https://drafts.csswg.org/css-ui-3/#propdef-text-overflow)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/):
      * [`https://www.w3.org/TR/css3-break/#btw-blocks`](https://www.w3.org/TR/css3-break/#btw-blocks)
      * [`https://www.w3.org/TR/css3-break/#end-block`](https://www.w3.org/TR/css3-break/#end-block)
@@ -3790,7 +3769,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
      * [`https://heycam.github.io/webidl/#dfn-DOMException`](https://heycam.github.io/webidl/#dfn-DOMException)
 
-=> 459 problematic external links found in 65 specifications
+=> 458 problematic external links found in 64 specifications
 
 
 ## Broken external links
@@ -3865,14 +3844,18 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/contentEditable/#dfn-editing-host`](https://w3c.github.io/contentEditable/#dfn-editing-host)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/):
      * [`https://drafts.csswg.org/selectors-3/#first-formatted-line0`](https://drafts.csswg.org/selectors-3/#first-formatted-line0)
+- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/):
+     * [`https://drafts.csswg.org/css-contain-2/#size-containment`](https://drafts.csswg.org/css-contain-2/#size-containment)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/):
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
-- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/):
-     * [`https://www.w3.org/TR/css3-syntax/#property-defs`](https://www.w3.org/TR/css3-syntax/#property-defs)
+- [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/):
+     * [`https://drafts.csswg.org/css-contain-2/#style-containment`](https://drafts.csswg.org/css-contain-2/#style-containment)
+- [CSS Display Module Level 3](https://drafts.csswg.org/css-display/):
+     * [`https://drafts.csswg.org/css-contain-2/#propdef-contain`](https://drafts.csswg.org/css-contain-2/#propdef-contain)
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/):
@@ -3882,18 +3865,39 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/):
+     * [`https://drafts.csswg.org/css-content-3/#typedef-content-content-list`](https://drafts.csswg.org/css-content-3/#typedef-content-content-list)
+     * [`https://drafts.csswg.org/css-content-3/#propdef-content`](https://drafts.csswg.org/css-content-3/#propdef-content)
+     * [`https://drafts.csswg.org/css-content-3/#propdef-bookmark-level`](https://drafts.csswg.org/css-content-3/#propdef-bookmark-level)
+     * [`https://drafts.csswg.org/css-content-3/#propdef-bookmark-label`](https://drafts.csswg.org/css-content-3/#propdef-bookmark-label)
      * [`https://www.w3.org/TR/css3-selectors/#first-letter`](https://www.w3.org/TR/css3-selectors/#first-letter)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#counter-style`](https://drafts.csswg.org/css-counter-styles-3/#counter-style)
      * [`https://drafts.csswg.org/css-color/#cmyk-colors`](https://drafts.csswg.org/css-color/#cmyk-colors)
      * [`https://drafts.csswg.org/css-overflow-3/#paginated-overflow`](https://drafts.csswg.org/css-overflow-3/#paginated-overflow)
+- [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/):
+     * [`https://drafts.csswg.org/css-content-3/#propdef-content`](https://drafts.csswg.org/css-content-3/#propdef-content)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/):
+     * [`https://drafts.csswg.org/css-content-3/#propdef-content`](https://drafts.csswg.org/css-content-3/#propdef-content)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
+- [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/):
+     * [`https://drafts.csswg.org/css-counter-styles-3/#hebrew`](https://drafts.csswg.org/css-counter-styles-3/#hebrew)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/):
      * [`https://drafts.csswg.org/css-inline/#central`](https://drafts.csswg.org/css-inline/#central)
+- [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/):
+     * [`https://drafts.csswg.org/css-content-3/#propdef-content`](https://drafts.csswg.org/css-content-3/#propdef-content)
+     * [`https://drafts.csswg.org/css-content-3/#valdef-content-none`](https://drafts.csswg.org/css-content-3/#valdef-content-none)
+     * [`https://drafts.csswg.org/css-content-3/#valdef-content-normal`](https://drafts.csswg.org/css-content-3/#valdef-content-normal)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style`](https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#generate-a-counter`](https://drafts.csswg.org/css-counter-styles-3/#generate-a-counter)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-prefix`](https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-prefix)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-suffix`](https://drafts.csswg.org/css-counter-styles-3/#descdef-counter-style-suffix)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#decimal`](https://drafts.csswg.org/css-counter-styles-3/#decimal)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#counter-style`](https://drafts.csswg.org/css-counter-styles-3/#counter-style)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/):
+     * [`https://drafts.csswg.org/css-contain-2/#valdef-content-visibility-visible`](https://drafts.csswg.org/css-contain-2/#valdef-content-visibility-visible)
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
@@ -3902,11 +3906,24 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/selectors-3/#sel-after`](https://drafts.csswg.org/selectors-3/#sel-after)
      * [`https://html.spec.whatwg.org/#style-sheet-ready`](https://html.spec.whatwg.org/#style-sheet-ready)
      * [`https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesrule%E2%91%A0`](https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesrule%E2%91%A0)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#csscounterstylerule`](https://drafts.csswg.org/css-counter-styles-3/#csscounterstylerule)
+     * [`https://drafts.csswg.org/css-device-adapt-1/#cssviewportrule`](https://drafts.csswg.org/css-device-adapt-1/#cssviewportrule)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-color-3/#alphavalue-def`](https://drafts.csswg.org/css-color-3/#alphavalue-def)
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/):
+     * [`https://drafts.csswg.org/css-contain-2/#propdef-contain`](https://drafts.csswg.org/css-contain-2/#propdef-contain)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/):
+     * [`https://drafts.csswg.org/css-contain-2/#layout-containment`](https://drafts.csswg.org/css-contain-2/#layout-containment)
      * [`https://drafts.csswg.org/selectors-3/#subject`](https://drafts.csswg.org/selectors-3/#subject)
+     * [`https://drafts.csswg.org/css-content-3/#propdef-content`](https://drafts.csswg.org/css-content-3/#propdef-content)
      * [`https://www.w3.org/TR/css3-transitions/#animatable-types`](https://www.w3.org/TR/css3-transitions/#animatable-types)
+- [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/):
+     * [`https://drafts.csswg.org/css-content-3/#propdef-content`](https://drafts.csswg.org/css-content-3/#propdef-content)
+     * [`https://drafts.csswg.org/css-content-3/#valdef-content-none`](https://drafts.csswg.org/css-content-3/#valdef-content-none)
+     * [`https://drafts.csswg.org/css-content-3/#valdef-content-normal`](https://drafts.csswg.org/css-content-3/#valdef-content-normal)
+     * [`https://drafts.csswg.org/css-device-adapt-1/#at-ruledef-viewport`](https://drafts.csswg.org/css-device-adapt-1/#at-ruledef-viewport)
+- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/):
+     * [`https://drafts.csswg.org/css-contain-2/#propdef-contain`](https://drafts.csswg.org/css-contain-2/#propdef-contain)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/):
      * [`https://www.w3.org/TR/css-syntax-3/#consume-a-name`](https://www.w3.org/TR/css-syntax-3/#consume-a-name)
      * [`https://www.w3.org/TR/cssom-1/#css`](https://www.w3.org/TR/cssom-1/#css)
@@ -3915,8 +3932,20 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
      * [`https://www.w3.org/TR/css-color-3/#currentcolor-def`](https://www.w3.org/TR/css-color-3/#currentcolor-def)
+     * [`https://drafts.csswg.org/css-content-3/#propdef-content`](https://drafts.csswg.org/css-content-3/#propdef-content)
+     * [`https://drafts.csswg.org/css-content-3/#valdef-content-none`](https://drafts.csswg.org/css-content-3/#valdef-content-none)
+- [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/):
+     * [`https://drafts.csswg.org/css-contain-2/#layout-containment`](https://drafts.csswg.org/css-contain-2/#layout-containment)
+     * [`https://drafts.csswg.org/css-contain-2/#style-containment`](https://drafts.csswg.org/css-contain-2/#style-containment)
+     * [`https://drafts.csswg.org/css-contain-2/#property-scoped`](https://drafts.csswg.org/css-contain-2/#property-scoped)
+     * [`https://drafts.csswg.org/css-content-3/#propdef-content`](https://drafts.csswg.org/css-content-3/#propdef-content)
+     * [`https://drafts.csswg.org/css-content-3/#valdef-content-normal`](https://drafts.csswg.org/css-content-3/#valdef-content-normal)
+     * [`https://drafts.csswg.org/css-content-3/#valdef-content-none`](https://drafts.csswg.org/css-content-3/#valdef-content-none)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/):
+     * [`https://drafts.csswg.org/css-device-adapt-1/#at-ruledef-viewport`](https://drafts.csswg.org/css-device-adapt-1/#at-ruledef-viewport)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/):
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#at-ruledef-counter-style`](https://drafts.csswg.org/css-counter-styles-3/#at-ruledef-counter-style)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/):
@@ -3930,9 +3959,23 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-shapes-1/#typedef-fill-rule`](https://www.w3.org/TR/css-shapes-1/#typedef-fill-rule)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/):
      * [`https://drafts.csswg.org/css2/box.html#x14`](https://drafts.csswg.org/css2/box.html#x14)
+- [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/):
+     * [`https://drafts.csswg.org/css-content-3/#propdef-content`](https://drafts.csswg.org/css-content-3/#propdef-content)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#decimal`](https://drafts.csswg.org/css-counter-styles-3/#decimal)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#decimal-leading-zero`](https://drafts.csswg.org/css-counter-styles-3/#decimal-leading-zero)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#lower-roman`](https://drafts.csswg.org/css-counter-styles-3/#lower-roman)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#upper-roman`](https://drafts.csswg.org/css-counter-styles-3/#upper-roman)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#georgian`](https://drafts.csswg.org/css-counter-styles-3/#georgian)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#armenian`](https://drafts.csswg.org/css-counter-styles-3/#armenian)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#lower-latin`](https://drafts.csswg.org/css-counter-styles-3/#lower-latin)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#lower-alpha`](https://drafts.csswg.org/css-counter-styles-3/#lower-alpha)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#upper-latin`](https://drafts.csswg.org/css-counter-styles-3/#upper-latin)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#upper-alpha`](https://drafts.csswg.org/css-counter-styles-3/#upper-alpha)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#lower-greek`](https://drafts.csswg.org/css-counter-styles-3/#lower-greek)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/):
      * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
+     * [`https://drafts.csswg.org/css-counter-styles-3/#counter-style`](https://drafts.csswg.org/css-counter-styles-3/#counter-style)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/):
      * [`https://drafts.csswg.org/css-transforms/#grouping-property-values`](https://drafts.csswg.org/css-transforms/#grouping-property-values)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/):
@@ -3953,12 +3996,20 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/):
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
+     * [`https://drafts.csswg.org/css-content-3/#propdef-bookmark-label`](https://drafts.csswg.org/css-content-3/#propdef-bookmark-label)
+     * [`https://drafts.csswg.org/css-content-3/#propdef-bookmark-level`](https://drafts.csswg.org/css-content-3/#propdef-bookmark-level)
+     * [`https://drafts.csswg.org/css-content-3/#propdef-bookmark-state`](https://drafts.csswg.org/css-content-3/#propdef-bookmark-state)
+     * [`https://drafts.csswg.org/css-content-3/#propdef-content`](https://drafts.csswg.org/css-content-3/#propdef-content)
+     * [`https://drafts.csswg.org/css-content-3/#propdef-quotes`](https://drafts.csswg.org/css-content-3/#propdef-quotes)
+     * [`https://drafts.csswg.org/css-contain-2/#propdef-contain`](https://drafts.csswg.org/css-contain-2/#propdef-contain)
      * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
      * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/):
+     * [`https://drafts.csswg.org/css-counter-styles-3/#disc`](https://drafts.csswg.org/css-counter-styles-3/#disc)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/):
+     * [`https://drafts.csswg.org/css-counter-styles-3/#disc`](https://drafts.csswg.org/css-counter-styles-3/#disc)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://www.w3.org/TR/css-values-3/#acknowledgements`](https://www.w3.org/TR/css-values-3/#acknowledgements)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/):
@@ -4222,6 +4273,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-box/#containing-block`](https://drafts.csswg.org/css-box/#containing-block)
      * [`https://www.w3.org/TR/hr-time/#domhighrestimestamp`](https://www.w3.org/TR/hr-time/#domhighrestimestamp)
      * [`https://www.w3.org/TR/hr-time/#time-origin`](https://www.w3.org/TR/hr-time/#time-origin)
+     * [`https://drafts.csswg.org/css-contain-2/#content-visibility`](https://drafts.csswg.org/css-contain-2/#content-visibility)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/):
      * [`https://www.w3.org/TR/hr-time-2/#dfn-performance`](https://www.w3.org/TR/hr-time-2/#dfn-performance)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value)
@@ -4289,6 +4341,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-ConstrainBoolean`](https://www.w3.org/TR/mediacapture-streams/#idl-def-ConstrainBoolean)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/):
      * [`https://www.w3.org/TR/css-masking-1/#valuedef-margin-box0`](https://www.w3.org/TR/css-masking-1/#valuedef-margin-box0)
+     * [`https://drafts.csswg.org/css-contain-2/#propdef-contain`](https://drafts.csswg.org/css-contain-2/#propdef-contain)
      * [`https://drafts.csswg.org/css-position-3/#normal-flow`](https://drafts.csswg.org/css-position-3/#normal-flow)
      * [`https://drafts.csswg.org/css-position/#normal-flow`](https://drafts.csswg.org/css-position/#normal-flow)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/):
@@ -4391,6 +4444,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/web-animations/#animation-interpolation`](https://drafts.csswg.org/web-animations/#animation-interpolation)
      * [`https://drafts.csswg.org/web-animations/#discrete-animation-type-section`](https://drafts.csswg.org/web-animations/#discrete-animation-type-section)
      * [`https://drafts.csswg.org/web-animations/#real-number-animation-type`](https://drafts.csswg.org/web-animations/#real-number-animation-type)
+     * [`https://www.w3.org/TR/css-content-3/#propdef-content`](https://www.w3.org/TR/css-content-3/#propdef-content)
      * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
      * [`https://www.w3.org/TR/css-color-3/#svg-color`](https://www.w3.org/TR/css-color-3/#svg-color)
      * [`https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act`](https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act)
@@ -4508,6 +4562,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#concept-output-mode`](https://html.spec.whatwg.org/#concept-output-mode)
      * [`https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum`](https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum)
      * [`https://drafts.csswg.org/css-box/#visibility-prop`](https://drafts.csswg.org/css-box/#visibility-prop)
+     * [`https://drafts.csswg.org/css-device-adapt/#initial-viewport`](https://drafts.csswg.org/css-device-adapt/#initial-viewport)
      * [`https://www.w3.org/TR/geometry-1/#dom-domrect`](https://www.w3.org/TR/geometry-1/#dom-domrect)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/):
      * [`https://w3c.github.io/webdriver/#dfn-intermediary-node`](https://w3c.github.io/webdriver/#dfn-intermediary-node)
@@ -4531,7 +4586,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 598 problematic external links found in 137 specifications
+=> 663 problematic external links found in 148 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
@@ -4707,8 +4762,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2015/WD-css-cascade-4-20150421/`](https://www.w3.org/TR/2015/WD-css-cascade-4-20150421/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/):
      * [`https://www.w3.org/TR/2013/CR-css3-conditional-20130404/`](https://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
-- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/):
-     * [`https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/`](https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/):
      * [`https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/`](https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/):
@@ -4856,6 +4909,6 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
-=> 144 problematic external links found in 56 specifications
+=> 143 problematic external links found in 55 specifications
 
 
