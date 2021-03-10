@@ -18,7 +18,7 @@ async function listAll() {
   const all = {};
   const files = await fs.readdir(__dirname);
   for (const f of files) {
-    if (f.endsWith('.json') && (f !== 'package.json')) {
+    if (f.endsWith('.json') && f !== 'package.json') {
       const cssFile = new CSSFile(__dirname, f);
       all[cssFile.shortname] = cssFile;
     }
