@@ -1,12 +1,12 @@
 {
   "spec": {
-    "title": "The Screen Fold API",
-    "url": "https://w3c.github.io/screen-fold/"
+    "title": "Device Posture API",
+    "url": "https://w3c.github.io/device-posture/"
   },
   "dfns": [
     {
       "id": "dom-screen",
-      "href": "https://w3c.github.io/screen-fold/#dom-screen",
+      "href": "https://w3c.github.io/device-posture/#dom-screen",
       "linkingText": [
         "Screen"
       ],
@@ -23,13 +23,13 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-screen-fold",
-      "href": "https://w3c.github.io/screen-fold/#dom-screen-fold",
+      "id": "dom-screen-posture",
+      "href": "https://w3c.github.io/device-posture/#dom-screen-posture",
       "linkingText": [
-        "fold"
+        "posture"
       ],
       "localLinkingText": [
-        "Screen.fold"
+        "Screen.posture"
       ],
       "type": "attribute",
       "for": [
@@ -45,210 +45,164 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-screenfold",
-      "href": "https://w3c.github.io/screen-fold/#dom-screenfold",
+      "id": "dom-deviceposture",
+      "href": "https://w3c.github.io/device-posture/#dom-deviceposture",
       "linkingText": [
-        "ScreenFold"
+        "DevicePosture"
       ],
       "localLinkingText": [],
-      "type": "interface",
+      "type": "enum",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-screenfold-interface",
-        "title": "The ScreenFold interface",
+        "id": "the-deviceposture-attribute",
+        "title": "The DevicePosture attribute",
         "number": "3"
       },
       "definedIn": "heading"
     },
     {
-      "id": "dom-screenfoldposture",
-      "href": "https://w3c.github.io/screen-fold/#dom-screenfoldposture",
-      "linkingText": [
-        "ScreenFoldPosture"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [
-        "ScreenFoldPosture"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-screenfold-interface",
-        "title": "The ScreenFold interface",
-        "number": "3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-screenfoldposture-no-fold",
-      "href": "https://w3c.github.io/screen-fold/#dom-screenfoldposture-no-fold",
+      "id": "dom-deviceposture-no-fold",
+      "href": "https://w3c.github.io/device-posture/#dom-deviceposture-no-fold",
       "linkingText": [
         "no-fold"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScreenFoldPosture"
+        "DevicePosture"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-screenfold-interface",
-        "title": "The ScreenFold interface",
+        "id": "the-deviceposture-attribute",
+        "title": "The DevicePosture attribute",
         "number": "3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-screenfoldposture-laptop",
-      "href": "https://w3c.github.io/screen-fold/#dom-screenfoldposture-laptop",
+      "id": "dom-deviceposture-laptop",
+      "href": "https://w3c.github.io/device-posture/#dom-deviceposture-laptop",
       "linkingText": [
         "laptop"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScreenFoldPosture"
+        "DevicePosture"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-screenfold-interface",
-        "title": "The ScreenFold interface",
+        "id": "the-deviceposture-attribute",
+        "title": "The DevicePosture attribute",
         "number": "3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-screenfoldposture-flat",
-      "href": "https://w3c.github.io/screen-fold/#dom-screenfoldposture-flat",
+      "id": "dom-deviceposture-flat",
+      "href": "https://w3c.github.io/device-posture/#dom-deviceposture-flat",
       "linkingText": [
         "flat"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScreenFoldPosture"
+        "DevicePosture"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-screenfold-interface",
-        "title": "The ScreenFold interface",
+        "id": "the-deviceposture-attribute",
+        "title": "The DevicePosture attribute",
         "number": "3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-screenfoldposture-tent",
-      "href": "https://w3c.github.io/screen-fold/#dom-screenfoldposture-tent",
+      "id": "dom-deviceposture-tent",
+      "href": "https://w3c.github.io/device-posture/#dom-deviceposture-tent",
       "linkingText": [
         "tent"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScreenFoldPosture"
+        "DevicePosture"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-screenfold-interface",
-        "title": "The ScreenFold interface",
+        "id": "the-deviceposture-attribute",
+        "title": "The DevicePosture attribute",
         "number": "3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-screenfoldposture-tablet",
-      "href": "https://w3c.github.io/screen-fold/#dom-screenfoldposture-tablet",
+      "id": "dom-deviceposture-tablet",
+      "href": "https://w3c.github.io/device-posture/#dom-deviceposture-tablet",
       "linkingText": [
         "tablet"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScreenFoldPosture"
+        "DevicePosture"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-screenfold-interface",
-        "title": "The ScreenFold interface",
+        "id": "the-deviceposture-attribute",
+        "title": "The DevicePosture attribute",
         "number": "3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-screenfoldposture-book",
-      "href": "https://w3c.github.io/screen-fold/#dom-screenfoldposture-book",
+      "id": "dom-deviceposture-book",
+      "href": "https://w3c.github.io/device-posture/#dom-deviceposture-book",
       "linkingText": [
         "book"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "ScreenFoldPosture"
+        "DevicePosture"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-screenfold-interface",
-        "title": "The ScreenFold interface",
+        "id": "the-deviceposture-attribute",
+        "title": "The DevicePosture attribute",
         "number": "3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-screenfold-posture",
-      "href": "https://w3c.github.io/screen-fold/#dom-screenfold-posture",
+      "id": "dfn-onchange",
+      "href": "https://w3c.github.io/device-posture/#dfn-onchange",
       "linkingText": [
-        "posture"
+        "onchange"
       ],
-      "localLinkingText": [
-        "ScreenFold.posture"
-      ],
-      "type": "attribute",
-      "for": [
-        "ScreenFold"
-      ],
-      "access": "public",
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "the-posture-attribute-get-current-device-posture",
-        "title": "The posture attribute: Get current device posture",
+        "id": "the-onchange-attribute-handle-posture-changes",
+        "title": "The onchange attribute: Handle posture changes",
         "number": "3.1"
       },
       "definedIn": "heading"
     },
     {
-      "id": "dom-screenfold-onchange",
-      "href": "https://w3c.github.io/screen-fold/#dom-screenfold-onchange",
-      "linkingText": [
-        "onchange"
-      ],
-      "localLinkingText": [
-        "ScreenFold.onchange"
-      ],
-      "type": "attribute",
-      "for": [
-        "ScreenFold"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-onchange-attribute-handle-posture-changes",
-        "title": "The onchange attribute: Handle posture changes",
-        "number": "3.2"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "dfn-posture",
-      "href": "https://w3c.github.io/screen-fold/#dfn-posture",
+      "href": "https://w3c.github.io/device-posture/#dfn-posture",
       "linkingText": [
         "posture"
       ],
@@ -265,10 +219,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-screen-fold-posture",
-      "href": "https://w3c.github.io/screen-fold/#dfn-screen-fold-posture",
+      "id": "dfn-device-posture",
+      "href": "https://w3c.github.io/device-posture/#dfn-device-posture",
       "linkingText": [
-        "screen-fold-posture"
+        "device-posture"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -276,14 +230,14 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "the-screen-fold-posture-media-feature",
-        "title": "The 'screen-fold-posture' media feature"
+        "id": "the-device-posture-media-feature",
+        "title": "The 'device-posture' media feature"
       },
       "definedIn": "prose"
     },
     {
       "id": "dfn-current-posture",
-      "href": "https://w3c.github.io/screen-fold/#dfn-current-posture",
+      "href": "https://w3c.github.io/device-posture/#dfn-current-posture",
       "linkingText": [
         "current posture"
       ],
@@ -301,7 +255,7 @@
     },
     {
       "id": "dfn-posture-values-table",
-      "href": "https://w3c.github.io/screen-fold/#dfn-posture-values-table",
+      "href": "https://w3c.github.io/device-posture/#dfn-posture-values-table",
       "linkingText": [
         "Posture values table"
       ],
@@ -317,10 +271,10 @@
       "definedIn": "heading"
     },
     {
-      "id": "dfn-update-the-screen-fold-information",
-      "href": "https://w3c.github.io/screen-fold/#dfn-update-the-screen-fold-information",
+      "id": "dfn-update-the-device-posture-information",
+      "href": "https://w3c.github.io/device-posture/#dfn-update-the-device-posture-information",
       "linkingText": [
-        "update the screen fold information"
+        "update the device posture information"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -328,15 +282,15 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "updating-the-screen-fold-information",
-        "title": "Updating the screen fold information",
+        "id": "updating-the-device-posture-information",
+        "title": "Updating the device posture information",
         "number": "7.1"
       },
       "definedIn": "prose"
     },
     {
       "id": "dfn-current-screen-orientation",
-      "href": "https://w3c.github.io/screen-fold/#dfn-current-screen-orientation",
+      "href": "https://w3c.github.io/device-posture/#dfn-current-screen-orientation",
       "linkingText": [
         "current screen orientation"
       ],
@@ -353,7 +307,7 @@
     },
     {
       "id": "dfn-evaluating-media-features-in-a-boolean-context",
-      "href": "https://w3c.github.io/screen-fold/#dfn-evaluating-media-features-in-a-boolean-context",
+      "href": "https://w3c.github.io/device-posture/#dfn-evaluating-media-features-in-a-boolean-context",
       "linkingText": [
         "Evaluating Media Features in a Boolean Context"
       ],
@@ -370,7 +324,7 @@
     },
     {
       "id": "dfn-list-of-the-descendant-browsing-contexts",
-      "href": "https://w3c.github.io/screen-fold/#dfn-list-of-the-descendant-browsing-contexts",
+      "href": "https://w3c.github.io/device-posture/#dfn-list-of-the-descendant-browsing-contexts",
       "linkingText": [
         "list of the descendant browsing contexts"
       ],
@@ -387,7 +341,7 @@
     },
     {
       "id": "dfn-now-visible-algorithm",
-      "href": "https://w3c.github.io/screen-fold/#dfn-now-visible-algorithm",
+      "href": "https://w3c.github.io/device-posture/#dfn-now-visible-algorithm",
       "linkingText": [
         "now visible algorithm"
       ],
@@ -404,7 +358,7 @@
     },
     {
       "id": "dfn-animation-frame-task",
-      "href": "https://w3c.github.io/screen-fold/#dfn-animation-frame-task",
+      "href": "https://w3c.github.io/device-posture/#dfn-animation-frame-task",
       "linkingText": [
         "animation frame task"
       ],
@@ -421,7 +375,7 @@
     },
     {
       "id": "dfn-user-agent",
-      "href": "https://w3c.github.io/screen-fold/#dfn-user-agent",
+      "href": "https://w3c.github.io/device-posture/#dfn-user-agent",
       "linkingText": [
         "user agent"
       ],
