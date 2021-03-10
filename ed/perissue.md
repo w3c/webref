@@ -1513,9 +1513,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/image-resource/`](https://w3c.github.io/image-resource/) but related reference "IMAGE-RESOURCE" uses URL [`https://www.w3.org/TR/image-resource/`](https://www.w3.org/TR/image-resource/)
-- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) links to:
-    * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
-    * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but related reference "REPORTING-1" uses URL [`https://www.w3.org/TR/reporting-1/`](https://www.w3.org/TR/reporting-1/)
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/) links to [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/) but related reference "REPORTING-1" uses URL [`https://www.w3.org/TR/reporting-1/`](https://www.w3.org/TR/reporting-1/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/) links to [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "Service-Workers" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 - [Core Accessibility API Mappings 1.2](https://w3c.github.io/core-aam/) links to [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but related reference "WAI-ARIA-1.2" uses URL [`https://www.w3.org/TR/wai-aria-1.2/`](https://www.w3.org/TR/wai-aria-1.2/)
@@ -1861,7 +1859,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 318 inconsistent references for links found in 176 specifications
+=> 317 inconsistent references for links found in 176 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -3230,12 +3228,12 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://immersive-web.github.io/webxr/#secondary-view`](https://immersive-web.github.io/webxr/#secondary-view)
      * [`https://immersive-web.github.io/webxr/#view`](https://immersive-web.github.io/webxr/#view)
      * [`https://immersive-web.github.io/webxr/#secondary-view-secondary-views`](https://immersive-web.github.io/webxr/#secondary-view-secondary-views)
-     * [`https://immersive-web.github.io/webxr/#xr-device`](https://immersive-web.github.io/webxr/#xr-device)
      * [`https://immersive-web.github.io/webxr/#xrframe-active`](https://immersive-web.github.io/webxr/#xrframe-active)
      * [`https://immersive-web.github.io/webxr/#view-active`](https://immersive-web.github.io/webxr/#view-active)
      * [`https://immersive-web.github.io/webxr/#primary-view`](https://immersive-web.github.io/webxr/#primary-view)
      * [`https://immersive-web.github.io/webxr/#immersive-xr-device`](https://immersive-web.github.io/webxr/#immersive-xr-device)
      * [`https://immersive-web.github.io/webxr/#opaque-framebuffer`](https://immersive-web.github.io/webxr/#opaque-framebuffer)
+     * [`https://immersive-web.github.io/webxr/#xr-device`](https://immersive-web.github.io/webxr/#xr-device)
      * [`https://immersive-web.github.io/webxr/#active-render-state`](https://immersive-web.github.io/webxr/#active-render-state)
      * [`https://immersive-web.github.io/webxr/#pending-render-state`](https://immersive-web.github.io/webxr/#pending-render-state)
      * [`https://immersive-web.github.io/webxr/#xrwebgllayer-session`](https://immersive-web.github.io/webxr/#xrwebgllayer-session)

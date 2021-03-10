@@ -28,7 +28,7 @@ partial interface mixin WindowOrWorkerGlobalScope {
 };
 
 // Source: Trusted Types (https://w3c.github.io/webappsec-trusted-types/dist/spec/)
-partial interface WindowOrWorkerGlobalScope {
+partial interface mixin WindowOrWorkerGlobalScope {
   readonly attribute TrustedTypePolicyFactory trustedTypes;
 };
 
