@@ -4,7 +4,7 @@ This package contains CSS property definitions scraped from the latest versions 
 
 # API
 
-The async `listAll()` method resolves with an object where the keys are spec shortnames, and the values are the result of parsing the CSS files as JSON. Example:
+The async `listAll()` method resolves with an object where the keys are spec shortnames, and the values are the data for that spec. Example:
 
 ```js
 const css = require('@webref/css');
