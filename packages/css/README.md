@@ -15,7 +15,7 @@ for (const [shortname, data] of Object.entries(parsedFiles)) {
 }
 ```
 
-CSS fragments that appear in the JSON objects, in other words the contents of the `properties[].value`, `properties[].newValues`, `descriptors[].value` and `valuespaces[].value` properties can be parsed with the [CSSTree Value Definition Syntax parser](https://github.com/csstree/csstree/blob/master/docs/definition-syntax.md#value-definition-syntax). Example:
+CSS fragments that appear in the objects, in other words the contents of the `properties[].value`, `properties[].newValues`, `descriptors[].value` and `valuespaces[].value` properties can be parsed with the [CSSTree Value Definition Syntax parser](https://github.com/csstree/csstree/blob/master/docs/definition-syntax.md#value-definition-syntax). Example:
 
 ```js
 const css = require('@webref/css');
