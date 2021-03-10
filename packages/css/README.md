@@ -4,24 +4,12 @@ This package contains CSS property definitions scraped from the latest versions 
 
 # API
 
-The async `listAll()` method resolves with an object where the keys are spec shortnames, and the values are objects with an async `json()` method to get the contents of the file as a JSON object. Example:
+The async `listAll()` method resolves with an object where the keys are spec shortnames, and the values are the result of parsing the CSS files as JSON. Example:
 
 ```js
 const css = require('@webref/css');
 
-const files = await css.listAll();
-for (const [shortname, file] of Object.entries(files)) {
-  const json = await file.json();
-  // do something with json object
-}
-```
-
-As a shorthand, the async `parseAll()` method resolves with an object where the keys are spec shortnames and the values are the result of parsing the CSS files as JSON. Example:
-
-```js
-const css = require('@webref/css');
-
-const parsedFiles = await css.parseAll();
+const parsedFiles = await css.listAll();
 for (const [shortname, json] of Object.entries(parsedFiles)) {
   // do something with the json object
 }
@@ -33,7 +21,7 @@ CSS fragments that appear in the JSON objects, in other words the contents of th
 const css = require('@webref/css');
 const { definitionSyntax } = require('css-tree');
 
-const parsedFiles = await css.parseAll();
+const parsedFiles = await css.listAll();
 for (const [shortname, data] of Object.entries(parsedFiles)) {
   for (const [name, desc] of Object.entries(data.properties)) {
     if (desc.value) {

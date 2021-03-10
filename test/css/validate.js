@@ -10,11 +10,11 @@ const cssValues = [
   { type: 'value space', prop: 'valuespaces', value: 'value' }
 ];
 
-css.parseAll().then(all => {
+css.listAll().then(all => {
   for (const [shortname, data] of Object.entries(all)) {
     describe(`The ${shortname} entry in @webidl/css`, () => {
       for (const { type, prop, value } of cssValues) {
-        if (!json[prop]) {
+        if (!data[prop]) {
           continue;
         }
         for (const [name, desc] of Object.entries(data[prop])) {
@@ -29,4 +29,4 @@ css.parseAll().then(all => {
       }
     });
   }
-});
+}).then(run);
