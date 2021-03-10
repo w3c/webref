@@ -34,13 +34,11 @@ const css = require('@webref/css');
 const { definitionSyntax } = require('css-tree');
 
 const parsedFiles = await css.parseAll();
-for (const [shortname, json] of Object.entries(parsedFiles)) {
-  if (json.properties) {
-    for (const [name, desc] of json.properties) {
-      if (desc.value) {
-        const ast = definitionSyntax.parse(desc.value);
-        // do something with the ast
-      }
+for (const [shortname, data] of Object.entries(parsedFiles)) {
+  for (const [name, desc] of Object.entries(data.properties)) {
+    if (desc.value) {
+      const ast = definitionSyntax.parse(desc.value);
+      // do something with the ast
     }
   }
 }
