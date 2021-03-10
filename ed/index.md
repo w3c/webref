@@ -844,7 +844,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Crawled URL: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
-- Crawled version: 9 March 2021
+- Crawled version: 10 March 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
 - Latest published version: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Shortname: CSP3
@@ -852,7 +852,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
      * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/), related reference "REPORTING-1" uses URL [`https://www.w3.org/TR/reporting-1/`](https://www.w3.org/TR/reporting-1/)
 - External links to private terms:
      * [`https://html.spec.whatwg.org/#script`](https://html.spec.whatwg.org/#script)
@@ -7863,7 +7862,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 9 March 2021
+- Crawled version: 10 March 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -16672,7 +16671,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
 - Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled version: 9 March 2021
+- Crawled version: 10 March 2021
 - Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Latest published version: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
 - Shortname: webxrlayers-1
@@ -16692,12 +16691,12 @@ No informative reference to this spec from other specs.
      * [`https://immersive-web.github.io/webxr/#secondary-view`](https://immersive-web.github.io/webxr/#secondary-view)
      * [`https://immersive-web.github.io/webxr/#view`](https://immersive-web.github.io/webxr/#view)
      * [`https://immersive-web.github.io/webxr/#secondary-view-secondary-views`](https://immersive-web.github.io/webxr/#secondary-view-secondary-views)
-     * [`https://immersive-web.github.io/webxr/#xr-device`](https://immersive-web.github.io/webxr/#xr-device)
      * [`https://immersive-web.github.io/webxr/#xrframe-active`](https://immersive-web.github.io/webxr/#xrframe-active)
      * [`https://immersive-web.github.io/webxr/#view-active`](https://immersive-web.github.io/webxr/#view-active)
      * [`https://immersive-web.github.io/webxr/#primary-view`](https://immersive-web.github.io/webxr/#primary-view)
      * [`https://immersive-web.github.io/webxr/#immersive-xr-device`](https://immersive-web.github.io/webxr/#immersive-xr-device)
      * [`https://immersive-web.github.io/webxr/#opaque-framebuffer`](https://immersive-web.github.io/webxr/#opaque-framebuffer)
+     * [`https://immersive-web.github.io/webxr/#xr-device`](https://immersive-web.github.io/webxr/#xr-device)
      * [`https://immersive-web.github.io/webxr/#active-render-state`](https://immersive-web.github.io/webxr/#active-render-state)
      * [`https://immersive-web.github.io/webxr/#pending-render-state`](https://immersive-web.github.io/webxr/#pending-render-state)
      * [`https://immersive-web.github.io/webxr/#xrwebgllayer-session`](https://immersive-web.github.io/webxr/#xrwebgllayer-session)

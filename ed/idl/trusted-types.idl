@@ -63,6 +63,6 @@ typedef [StringContext=TrustedScript] DOMString ScriptString;
 typedef [StringContext=TrustedScriptURL] USVString ScriptURLString;
 typedef (TrustedHTML or TrustedScript or TrustedScriptURL) TrustedType;
 
-partial interface WindowOrWorkerGlobalScope {
+partial interface mixin WindowOrWorkerGlobalScope {
   readonly attribute TrustedTypePolicyFactory trustedTypes;
 };
