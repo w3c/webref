@@ -1,6 +1,6 @@
 # CSS definitions of the web platform
 
-This package contains CSS property definitions scraped from the latest versions of web platform specifications in [webref](https://github.com/w3c/webref), with fixes applied to ensure all CSS value definitions can be parsed with [CSSTree](https://github.com/csstree/csstree).
+This package contains CSS property definitions scraped from the latest versions of web platform specifications in [webref](https://github.com/w3c/webref), with fixes applied to ensure ([almost](#guarantees)) all CSS value definitions can be parsed with [CSSTree](https://github.com/csstree/csstree).
 
 # API
 
@@ -25,8 +25,13 @@ const parsedFiles = await css.listAll();
 for (const [shortname, data] of Object.entries(parsedFiles)) {
   for (const [name, desc] of Object.entries(data.properties)) {
     if (desc.value) {
-      const ast = definitionSyntax.parse(desc.value);
-      // do something with the ast
+      try {
+        const ast = definitionSyntax.parse(desc.value);
+        // do something with the ast
+      }
+      catch {
+        // one of the few value definitions that cannot yet be parsed by CSSTree
+      }
     }
   }
 }
@@ -35,4 +40,4 @@ for (const [shortname, data] of Object.entries(parsedFiles)) {
 # Guarantees
 
 The following guarantees are provided by this package:
-- All CSS files can be parsed by the version of [CSSTree](https://github.com/csstree/csstree) used in `peerDependencies` in `package.json`.
+- All CSS files can be parsed by the version of [CSSTree](https://github.com/csstree/csstree) used in `peerDependencies` in `package.json`, with the exception of a handful CSS value definitions that, although valid, are not yet supported by CSSTree.
