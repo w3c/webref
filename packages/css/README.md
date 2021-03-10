@@ -32,7 +32,6 @@ for (const [shortname, data] of Object.entries(parsedFiles)) {
 }
 ```
 
-
 # Guarantees
 
 The following guarantees are provided by this package:
