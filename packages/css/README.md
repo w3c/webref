@@ -10,7 +10,7 @@ The async `listAll()` method resolves with an object where the keys are spec sho
 const css = require('@webref/css');
 
 const parsedFiles = await css.listAll();
-for (const [shortname, json] of Object.entries(parsedFiles)) {
+for (const [shortname, data] of Object.entries(parsedFiles)) {
   // do something with the json object
 }
 ```
