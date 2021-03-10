@@ -1,6 +1,6 @@
 # CSS definitions of the web platform
 
-This package contains CSS property definitions scraped from the latest versions of web platform specifications in [webref](https://github.com/w3c/webref), with fixes applied to ensure all CSS value definitions can be parsed and are internally consistent.
+This package contains CSS property definitions scraped from the latest versions of web platform specifications in [webref](https://github.com/w3c/webref), with fixes applied to ensure all CSS value definitions can be parsed with [CSSTree](https://github.com/csstree/csstree).
 
 # API
 
