@@ -5,7 +5,7 @@ const css = require('@webref/css');
 
 const cssValues = [
   { type: 'property', prop: 'properties', value: 'value' },
-  { type: 'extended property', prop: 'properties', value: 'newValue' },
+  { type: 'extended property', prop: 'properties', value: 'newValues' },
   { type: 'descriptor', prop: 'descriptors', value: 'value' },
   { type: 'value space', prop: 'valuespaces', value: 'value' }
 ];
