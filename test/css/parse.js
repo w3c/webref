@@ -15,6 +15,7 @@ const cssValues = [
 const tempIgnore = [
   { shortname: 'css-extensions', prop: 'valuespaces', name: '<custom-selector>' },
   { shortname: 'fill-stroke', prop: 'properties', name: 'stroke-dasharray' },
+  { shortname: 'svg-animations', prop: 'valuespaces', name: '<control-point>' },
   { shortname: 'svg-markers', prop: 'properties', name: 'marker' },
   { shortname: 'svg-strokes', prop: 'valuespaces', name: '<dasharray>' }
 ];
