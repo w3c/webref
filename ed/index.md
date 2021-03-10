@@ -6056,6 +6056,7 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
@@ -6065,7 +6066,6 @@ Normative references to this spec from:
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
@@ -6161,6 +6161,29 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## Device Posture API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
+- Crawled URL: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
+- Crawled version: 10 March 2021
+- Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
+- Latest published version: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
+- Shortname: screen-fold
+
+### Potential issue(s) {.anomalies}
+
+- External links to private terms:
+     * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6315,6 +6338,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Early detection of input events](https://wicg.github.io/is-input-pending/)
@@ -6385,7 +6409,6 @@ Normative references to this spec from:
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
@@ -6501,7 +6524,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
 - Crawled URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
-- Crawled version: 9 March 2021
+- Crawled version: 10 March 2021
 - Editor's Draft: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
 - Shortname: ecmascript
 
@@ -7173,12 +7196,12 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
@@ -7523,7 +7546,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Crawled URL: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
-- Crawled version: 09 March 2021
+- Crawled version: 10 March 2021
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
 - Latest published version: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Shortname: hr-time-3
@@ -8520,6 +8543,7 @@ Normative references to this spec from:
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [DataCue API](https://wicg.github.io/datacue/)
 - [Device Memory 1](https://w3c.github.io/device-memory/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
@@ -8630,7 +8654,6 @@ Normative references to this spec from:
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
@@ -8963,7 +8986,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Crawled URL: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
-- Crawled version: 3 December 2020
+- Crawled version: 10 March 2021
 - Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
 - Latest published version: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
 - Shortname: IndexedDB-2
@@ -9058,6 +9081,7 @@ Normative references to this spec from:
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -9116,7 +9140,6 @@ Normative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
@@ -9974,8 +9997,8 @@ Normative references to this spec from:
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
@@ -10713,6 +10736,7 @@ Normative references to this spec from:
 - [Beacon](https://w3c.github.io/beacon/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
@@ -10720,7 +10744,6 @@ Normative references to this spec from:
 - [Resource Hints](https://w3c.github.io/resource-hints/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
@@ -12950,29 +12973,6 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## The Screen Fold API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
-- Crawled URL: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- Crawled version: 09 March 2021
-- Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- Latest published version: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
-- Shortname: screen-fold
-
-### Potential issue(s) {.anomalies}
-
-- External links to private terms:
-     * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## The Screen Orientation API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -12995,8 +12995,8 @@ Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
@@ -14060,6 +14060,7 @@ Normative references to this spec from:
 - [DataCue API](https://wicg.github.io/datacue/)
 - [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
 - [Device Memory 1](https://w3c.github.io/device-memory/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
@@ -14164,7 +14165,6 @@ Normative references to this spec from:
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)

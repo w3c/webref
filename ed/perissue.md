@@ -2219,6 +2219,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://dom.spec.whatwg.org/#event-listener-capture`](https://dom.spec.whatwg.org/#event-listener-capture)
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/):
      * [`https://html.spec.whatwg.org/#internals-target`](https://html.spec.whatwg.org/#internals-target)
+- [Device Posture API](https://w3c.github.io/device-posture/):
+     * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/):
      * [`https://compat.spec.whatwg.org/#event-orientationchange`](https://compat.spec.whatwg.org/#event-orientationchange)
 - [DOM Standard](https://dom.spec.whatwg.org/):
@@ -2838,8 +2840,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#restore-persisted-state`](https://html.spec.whatwg.org/#restore-persisted-state)
      * [`https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view`](https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view)
      * [`https://w3c.github.io/selection-api/#dfn-selection`](https://w3c.github.io/selection-api/#dfn-selection)
-- [The Screen Fold API](https://w3c.github.io/screen-fold/):
-     * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/):
      * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
 - [The Storage Access API](https://privacycg.github.io/storage-access/):
