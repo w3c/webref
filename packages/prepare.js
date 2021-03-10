@@ -28,7 +28,7 @@ async function main() {
     // rm dstDir/*.${fileExt}
     const dstFiles = await fs.readdir(dstDir);
     for (const file of dstFiles) {
-      if (file.endsWith('.' + fileExt) && (file !== 'package.json')) {
+      if (file.endsWith(`.${fileExt}`) && file !== 'package.json') {
         await fs.unlink(path.join(dstDir, file));
       }
     }
