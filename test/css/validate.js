@@ -11,7 +11,7 @@ const cssValues = [
 ];
 
 css.parseAll().then(all => {
-  for (const [shortname, json] of Object.entries(all)) {
+  for (const [shortname, data] of Object.entries(all)) {
     describe(`The ${shortname} entry in @webidl/css`, () => {
       for (const { type, prop, value } of cssValues) {
         if (!json[prop]) {
