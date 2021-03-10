@@ -17,7 +17,7 @@ css.parseAll().then(all => {
         if (!json[prop]) {
           continue;
         }
-        for (const [name, desc] of Object.entries(json[prop])) {
+        for (const [name, desc] of Object.entries(data[prop])) {
           if (!desc[value]) {
             continue;
           }
