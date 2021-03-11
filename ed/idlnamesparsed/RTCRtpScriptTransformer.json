@@ -5,7 +5,7 @@
       "title": "WebRTC Insertable Media using Streams",
       "url": "https://w3c.github.io/webrtc-insertable-streams/"
     },
-    "fragment": "[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer {\n    readonly attribute ReadableStream readable;\n    readonly attribute WritableStream writable;\n    readonly attribute any options;\n};",
+    "fragment": "// FIXME: We want to expose only in dedicated worker scopes.\n[Exposed=Worker]\ninterface RTCRtpScriptTransformer {\n    readonly attribute ReadableStream readable;\n    readonly attribute WritableStream writable;\n    readonly attribute any options;\n};",
     "href": "https://w3c.github.io/webrtc-insertable-streams/#rtcrtpscripttransformer"
   },
   "extended": [],

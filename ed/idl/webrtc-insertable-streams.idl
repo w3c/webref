@@ -3,6 +3,12 @@
 // (https://github.com/w3c/webref)
 // Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)
 
+// New dictionary
+dictionary RTCInsertableStreams {
+    ReadableStream readable;
+    WritableStream writable;
+};
+
 // New fields in RTCConfiguration
 partial dictionary RTCConfiguration {
     boolean encodedInsertableStreams = false;
@@ -30,7 +36,8 @@ dictionary SFrameTransformOptions {
     SFrameTransformRole role = "encrypt";
 };
 
-[Exposed=(Window,DedicatedWorker)]
+// FIXME: We plan to expose only in dedicated worker scopes, but may want to discuss extending it in other contexts.
+[Exposed=(Window,Worker)]
 interface SFrameTransform {
     constructor(optional SFrameTransformOptions options = {});
     Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);
@@ -80,7 +87,8 @@ interface RTCEncodedAudioFrame {
 
 // New interfaces to expose JavaScript-based transforms.
 
-[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]
+// FIXME: We want to expose only in dedicated worker scopes.
+[Exposed=Worker]
 interface RTCTransformEvent : Event {
     readonly attribute RTCRtpScriptTransformer transformer;
 };
@@ -89,14 +97,15 @@ partial interface DedicatedWorkerGlobalScope {
     attribute EventHandler onrtctransform;
 };
 
-[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]
+// FIXME: We want to expose only in dedicated worker scopes.
+[Exposed=Worker]
 interface RTCRtpScriptTransformer {
     readonly attribute ReadableStream readable;
     readonly attribute WritableStream writable;
     readonly attribute any options;
 };
 
-[Exposed=(Window)]
+[Exposed=Window]
 interface RTCRtpScriptTransform {
     constructor(Worker worker, optional any options);
     // FIXME: add messaging methods.
