@@ -123,7 +123,7 @@
         "partial": false
       },
       "HighlightRegistry": {
-        "fragment": "[Exposed=Window]\ninterface HighlightRegistry {\n  setlike<Highlight>;\n  HighlightRegistry add(Highlight value);\n};",
+        "fragment": "[Exposed=Window]\ninterface HighlightRegistry {\n  setlike<Highlight>;\n};",
         "type": "interface",
         "name": "HighlightRegistry",
         "inheritance": null,
@@ -144,38 +144,6 @@
             "extAttrs": [],
             "readonly": false,
             "async": false
-          },
-          {
-            "type": "operation",
-            "name": "add",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "HighlightRegistry"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "value",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Highlight"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
           }
         ],
         "extAttrs": [
@@ -237,8 +205,7 @@
         "HighlightRegistry"
       ],
       "HighlightRegistry": [
-        "Highlight",
-        "HighlightRegistry"
+        "Highlight"
       ]
     },
     "externalDependencies": [

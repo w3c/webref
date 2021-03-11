@@ -869,10 +869,14 @@
         "partial": false
       },
       "TableKind": {
-        "fragment": "enum TableKind {\n  \"anyfunc\",\n  // Note: More values may be added in future iterations,\n  // e.g., typed function references, typed GC references\n};",
+        "fragment": "enum TableKind {\n  \"externref\",\n  \"anyfunc\",\n  // Note: More values may be added in future iterations,\n  // e.g., typed function references, typed GC references\n};",
         "type": "enum",
         "name": "TableKind",
         "values": [
+          {
+            "type": "enum-value",
+            "value": "externref"
+          },
           {
             "type": "enum-value",
             "value": "anyfunc"
@@ -950,7 +954,7 @@
         "partial": false
       },
       "Table": {
-        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Table {\n  constructor(TableDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  Function? get([EnforceRange] unsigned long index);\n  undefined set([EnforceRange] unsigned long index, Function? value);\n  readonly attribute unsigned long length;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Table {\n  constructor(TableDescriptor descriptor, optional any value);\n  unsigned long grow([EnforceRange] unsigned long delta, optional any value);\n  any get([EnforceRange] unsigned long index);\n  undefined set([EnforceRange] unsigned long index, optional any value);\n  readonly attribute unsigned long length;\n};",
         "type": "interface",
         "name": "Table",
         "inheritance": null,
@@ -972,6 +976,22 @@
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -1011,6 +1031,22 @@
                 "default": null,
                 "optional": false,
                 "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
               }
             ],
             "extAttrs": [],
@@ -1023,9 +1059,9 @@
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
-              "idlType": "Function"
+              "idlType": "any"
             },
             "arguments": [
               {
@@ -1098,12 +1134,12 @@
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": true,
+                  "nullable": false,
                   "union": false,
-                  "idlType": "Function"
+                  "idlType": "any"
                 },
                 "default": null,
-                "optional": false,
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -1159,7 +1195,7 @@
         "partial": false
       },
       "ValueType": {
-        "fragment": "enum ValueType {\n  \"i32\",\n  \"i64\",\n  \"f32\",\n  \"f64\"\n};",
+        "fragment": "enum ValueType {\n  \"i32\",\n  \"i64\",\n  \"f32\",\n  \"f64\",\n  \"externref\",\n  \"anyfunc\",\n};",
         "type": "enum",
         "name": "ValueType",
         "values": [
@@ -1178,6 +1214,14 @@
           {
             "type": "enum-value",
             "value": "f64"
+          },
+          {
+            "type": "enum-value",
+            "value": "externref"
+          },
+          {
+            "type": "enum-value",
+            "value": "anyfunc"
           }
         ],
         "extAttrs": []

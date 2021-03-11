@@ -16,7 +16,7 @@
     ],
     "https://www.w3.org/2004/01/pp-impl/101196/status": [],
     "https://www.w3.org/2020/Process-20200915/": [],
-    "https://webassembly.github.io/spec/core/syntax/conventions.html": [
+    "https://webassembly.github.io/reference-types/core/syntax/conventions.html": [
       "grammar-notation"
     ],
     "https://infra.spec.whatwg.org/": [
@@ -29,7 +29,7 @@
       "map-set",
       "list-size"
     ],
-    "https://webassembly.github.io/spec/core/exec/runtime.html": [
+    "https://webassembly.github.io/reference-types/core/exec/runtime.html": [
       "syntax-store",
       "memory-instances",
       "addresses",
@@ -37,6 +37,7 @@
       "syntax-tableaddr",
       "syntax-funcaddr",
       "syntax-globaladdr",
+      "syntax-externaddr",
       "syntax-externval",
       "values",
       "syntax-frame",
@@ -81,7 +82,7 @@
       "sec-nativeerror-object-structure",
       "sec-createmethodproperty"
     ],
-    "https://webassembly.github.io/spec/core/appendix/embedding.html": [
+    "https://webassembly.github.io/reference-types/core/appendix/embedding.html": [
       "embed-store-init",
       "embed-module-decode",
       "embed-error",
@@ -96,6 +97,7 @@
       "embed-mem-grow",
       "embed-table-alloc",
       "embed-table-size",
+      "embed-table-type",
       "embed-table-grow",
       "embed-table-read",
       "embed-table-write",
@@ -126,15 +128,14 @@
       "idl-DOMString",
       "EnforceRange",
       "idl-unsigned-long",
-      "Function",
-      "idl-undefined",
       "idl-any",
+      "idl-undefined",
       "dfn-throw",
       "dfn-associated-realm",
       "dfn-namespace-object",
       "create-a-namespace-object"
     ],
-    "https://webassembly.github.io/spec/core/syntax/modules.html": [
+    "https://webassembly.github.io/reference-types/core/syntax/modules.html": [
       "syntax-module",
       "syntax-import"
     ],
@@ -149,17 +150,18 @@
       "clean-up-after-running-a-callback",
       "clean-up-after-running-script"
     ],
-    "https://webassembly.github.io/spec/core/syntax/types.html": [
+    "https://webassembly.github.io/reference-types/core/syntax/types.html": [
       "external-types",
-      "syntax-valtype",
+      "syntax-numtype",
       "syntax-mut",
+      "syntax-reftype",
       "syntax-tabletype"
     ],
-    "https://webassembly.github.io/spec/core/valid/modules.html": [
+    "https://webassembly.github.io/reference-types/core/valid/modules.html": [
       "valid-module"
     ],
     "https://webassembly.github.io/spec/web-api/": [],
-    "https://webassembly.github.io/spec/core/binary/modules.html": [
+    "https://webassembly.github.io/reference-types/core/binary/modules.html": [
       "custom-section",
       "binary-module",
       "binary-customsec"
@@ -167,13 +169,13 @@
     "https://encoding.spec.whatwg.org/": [
       "utf-8-decode-without-bom-or-fail"
     ],
-    "https://webassembly.github.io/spec/core/exec/instructions.html": [
+    "https://webassembly.github.io/reference-types/core/exec/instructions.html": [
       "exec-memory-grow"
     ],
-    "https://webassembly.github.io/spec/core/exec/conventions.html": [
+    "https://webassembly.github.io/reference-types/core/exec/conventions.html": [
       "exec-notation-textual"
     ],
-    "https://webassembly.github.io/spec/core/exec/numerics.html": [
+    "https://webassembly.github.io/reference-types/core/exec/numerics.html": [
       "aux-signed"
     ],
     "https://github.com/WebAssembly/spec/issues/879": [],
