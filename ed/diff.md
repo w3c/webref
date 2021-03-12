@@ -1,12 +1,13 @@
-% Diff between report from "March 12, 2021" and reference report from "March 11, 2021"
+% Diff between report from "March 12, 2021" and reference report from "March 12, 2021"
 % Reffy
 % March 12, 2021
 
-## JS Self-Profiling API
+## Upgrade Insecure Requests
 
-- Initial URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
+- Initial URL: [https://www.w3.org/TR/upgrade-insecure-requests/](https://www.w3.org/TR/upgrade-insecure-requests/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
-- Missing references for WebIDL names: *DEL* EventTarget
+- Editor's Draft: [https://w3c.github.io/webappsec-upgrade-insecure-requests/](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
+- Missing references for links: *INS* https://w3c.github.io/webappsec/specs/mixedcontent/
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/html5/
 
 

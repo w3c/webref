@@ -8738,7 +8738,6 @@ Informative references to this spec from:
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
-- [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - [WAI-ARIA Graphics Module](https://w3c.github.io/graphics-aria/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
@@ -8922,7 +8921,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-import-assertions/](https://tc39.es/proposal-import-assertions/)
 - Crawled URL: [https://tc39.es/proposal-import-assertions/](https://tc39.es/proposal-import-assertions/)
-- Crawled version: 23 February 2021
+- Crawled version: 12 March 2021
 - Editor's Draft: [https://tc39.es/proposal-import-assertions/](https://tc39.es/proposal-import-assertions/)
 - Shortname: tc39-import-assertions
 
@@ -9503,7 +9502,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Crawled URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
-- Crawled version: 5 March 2021
+- Crawled version: 12 March 2021
 - Editor's Draft: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Shortname: webpackage
 
@@ -10324,6 +10323,7 @@ Normative references to this spec from:
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/)
 - [Private Network Access](https://wicg.github.io/private-network-access/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
+- [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 
 Informative references to this spec from:
 
@@ -13390,7 +13390,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/upgrade-insecure-requests/](https://www.w3.org/TR/upgrade-insecure-requests/)
 - Crawled URL: [https://w3c.github.io/webappsec-upgrade-insecure-requests/](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
-- Crawled version: 11 May 2016
+- Crawled version: 12 March 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-upgrade-insecure-requests/](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - Latest published version: [https://www.w3.org/TR/upgrade-insecure-requests/](https://www.w3.org/TR/upgrade-insecure-requests/)
 - Shortname: upgrade-insecure-requests
@@ -13399,13 +13399,15 @@ No informative reference to this spec from other specs.
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/url/`](https://www.w3.org/TR/url/)
+     * [`https://w3c.github.io/webappsec/specs/mixedcontent/`](https://w3c.github.io/webappsec/specs/mixedcontent/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "WORKERS" uses URL [`http://www.w3.org/TR/workers/`](http://www.w3.org/TR/workers/)
-     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "WHATWG-DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
 - Broken external links:
      * [`https://fetch.spec.whatwg.org/#concept-request-target-browsing-context`](https://fetch.spec.whatwg.org/#concept-request-target-browsing-context)
+     * [`https://html.spec.whatwg.org/#create-a-document-object`](https://html.spec.whatwg.org/#create-a-document-object)
+     * [`https://html.spec.whatwg.org/#responsible-browsing-context`](https://html.spec.whatwg.org/#responsible-browsing-context)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object-for-a-script`](https://html.spec.whatwg.org/#relevant-settings-object-for-a-script)
 - External links to outdated specs:
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
      * [`https://www.w3.org/TR/workers/`](https://www.w3.org/TR/workers/)
 
 ### Known dependencies on this specification {.dependencies}
