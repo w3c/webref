@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% March 11, 2021
+% March 12, 2021
 
 384 specifications were crawled in this report.
 
@@ -177,7 +177,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) uses `Gamepad` but does not reference [Gamepad](https://w3c.github.io/gamepad/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
-- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [Private Network Access](https://wicg.github.io/private-network-access/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
 - [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/) uses:
     * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -235,7 +234,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `XRWebGLBinding` but does not reference [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
     * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 50 missing references for IDL definitions found in 23 specifications
+=> 49 missing references for IDL definitions found in 22 specifications
 
 
 ## No definition for CSS properties
