@@ -8,14 +8,16 @@
     "https://www.w3.org/sw/": [],
     "https://w3c.github.io/ServiceWorker/v1/": [],
     "https://lists.w3.org/Archives/Public/public-webapps/": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/101220/status": [],
     "https://www.w3.org/2020/Process-20200915/": [],
+    "https://alistapart.com/article/application-cache-is-a-douchebag": [
+      "section6"
+    ],
     "https://html.spec.whatwg.org/": [
-      "application-cache",
       "shared-workers",
       "workers",
       "concept-origin",
@@ -132,9 +134,6 @@
       "nested-browsing-context",
       "auxiliary-browsing-context"
     ],
-    "https://alistapart.com/article/application-cache-is-a-douchebag": [
-      "section6"
-    ],
     "https://developer.chrome.com/extensions/background_pages": [],
     "https://developer.chrome.com/extensions/event_pages": [],
     "https://url.spec.whatwg.org/": [
@@ -204,7 +203,6 @@
       "concept-request-method",
       "concept-response-type",
       "cross-origin-resource-policy-check",
-      "concept-internal-response",
       "headers",
       "concept-headers-guard",
       "concept-fetch-terminate",
@@ -212,16 +210,12 @@
       "request-service-workers-mode",
       "concept-request-initiator",
       "concept-request-destination",
-      "process-response",
       "concept-response-status",
       "ok-status",
       "concept-response-header-list",
       "concept-header",
       "concept-header-name",
-      "process-response-end-of-body",
       "concept-response-aborted",
-      "concept-body-disturbed",
-      "concept-body-locked",
       "concept-response-clone",
       "concept-request-cache-mode",
       "concept-response-cache-state",
@@ -233,7 +227,6 @@
       "concept-request-redirect-mode",
       "extract-header-list-values",
       "concept-request-parser-metadata",
-      "synchronous-flag",
       "concept-request-use-url-credentials-flag",
       "concept-request-reserved-client",
       "non-subresource-request",
@@ -244,6 +237,8 @@
       "concept-header-value",
       "subresource-request",
       "concept-request-replaces-client-id",
+      "concept-request-body",
+      "body-unusable",
       "dom-request-signal",
       "header-list-contains",
       "concept-header-list-combine"
@@ -294,16 +289,20 @@
       "Exposed",
       "idl-USVString",
       "idl-undefined",
+      "idl-any",
+      "idl-sequence",
       "idl-object",
       "this",
       "dfn-frozen-array-type",
       "SameObject",
       "NewObject",
+      "idl-promise",
       "idl-boolean",
       "a-promise-rejected-with",
       "invalidstateerror",
       "idl-DOMException",
       "a-new-promise",
+      "idl-frozen-array",
       "securityerror",
       "dfn-create-frozen-array",
       "idl-ByteString",
@@ -410,7 +409,8 @@
       "readablestream-errored",
       "readablestream-close",
       "readablestream-enqueue",
-      "readablestreamdefaultreader-read-all-bytes"
+      "readablestreamdefaultreader-read-all-bytes",
+      "readablestream-cancel"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/ExtendableMessageEvent/ExtendableMessageEvent": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ExtendableMessageEvent": [],
@@ -465,7 +465,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/delete": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage/keys": [],
     "https://w3c.github.io/webappsec-secure-contexts/": [
-      "secure-contexts",
       "localhost",
       "threat-risks",
       "potentially-trustworthy-origin",

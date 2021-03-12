@@ -483,7 +483,7 @@
         "extAttrs": []
       },
       "ServiceWorkerContainer": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerContainer : EventTarget {\n  readonly attribute ServiceWorker? controller;\n  readonly attribute Promise<ServiceWorkerRegistration> ready;\n\n  [NewObject] Promise<ServiceWorkerRegistration> register(USVString scriptURL, optional RegistrationOptions options = {});\n\n  [NewObject] Promise<any> getRegistration(optional USVString clientURL = \"\");\n  [NewObject] Promise<FrozenArray<ServiceWorkerRegistration>> getRegistrations();\n\n  undefined startMessages();\n\n\n  // events\n  attribute EventHandler oncontrollerchange;\n  attribute EventHandler onmessage; // event.source of message events is ServiceWorker object\n  attribute EventHandler onmessageerror;\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorkerContainer : EventTarget {\n  readonly attribute ServiceWorker? controller;\n  readonly attribute Promise<ServiceWorkerRegistration> ready;\n\n  [NewObject] Promise<ServiceWorkerRegistration> register(USVString scriptURL, optional RegistrationOptions options = {});\n\n  [NewObject] Promise<(ServiceWorkerRegistration or undefined)> getRegistration(optional USVString clientURL = \"\");\n  [NewObject] Promise<FrozenArray<ServiceWorkerRegistration>> getRegistrations();\n\n  undefined startMessages();\n\n\n  // events\n  attribute EventHandler oncontrollerchange;\n  attribute EventHandler onmessage; // event.source of message events is ServiceWorker object\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "ServiceWorkerContainer",
         "inheritance": "EventTarget",
@@ -608,8 +608,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "any"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "ServiceWorkerRegistration"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "undefined"
+                    }
+                  ]
                 }
               ]
             },
@@ -1601,7 +1618,7 @@
         "extAttrs": []
       },
       "Clients": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface Clients {\n  // The objects returned will be new instances every time\n  [NewObject] Promise<any> get(DOMString id);\n  [NewObject] Promise<FrozenArray<Client>> matchAll(optional ClientQueryOptions options = {});\n  [NewObject] Promise<WindowClient?> openWindow(USVString url);\n  [NewObject] Promise<undefined> claim();\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface Clients {\n  // The objects returned will be new instances every time\n  [NewObject] Promise<(Client or undefined)> get(DOMString id);\n  [NewObject] Promise<FrozenArray<Client>> matchAll(optional ClientQueryOptions options = {});\n  [NewObject] Promise<WindowClient?> openWindow(USVString url);\n  [NewObject] Promise<undefined> claim();\n};",
         "type": "interface",
         "name": "Clients",
         "inheritance": null,
@@ -1621,8 +1638,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "any"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Client"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "undefined"
+                    }
+                  ]
                 }
               ]
             },
@@ -2636,7 +2670,7 @@
         "partial": false
       },
       "Cache": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface Cache {\n  [NewObject] Promise<any> match(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Response>> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<undefined> add(RequestInfo request);\n  [NewObject] Promise<undefined> addAll(sequence<RequestInfo> requests);\n  [NewObject] Promise<undefined> put(RequestInfo request, Response response);\n  [NewObject] Promise<boolean> delete(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Request>> keys(optional RequestInfo request, optional CacheQueryOptions options = {});\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface Cache {\n  [NewObject] Promise<(Response or undefined)> match(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Response>> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<undefined> add(RequestInfo request);\n  [NewObject] Promise<undefined> addAll(sequence<RequestInfo> requests);\n  [NewObject] Promise<undefined> put(RequestInfo request, Response response);\n  [NewObject] Promise<boolean> delete(RequestInfo request, optional CacheQueryOptions options = {});\n  [NewObject] Promise<FrozenArray<Request>> keys(optional RequestInfo request, optional CacheQueryOptions options = {});\n};",
         "type": "interface",
         "name": "Cache",
         "inheritance": null,
@@ -2656,8 +2690,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "any"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Response"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "undefined"
+                    }
+                  ]
                 }
               ]
             },
@@ -3184,7 +3235,7 @@
         "partial": false
       },
       "CacheStorage": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface CacheStorage {\n  [NewObject] Promise<any> match(RequestInfo request, optional MultiCacheQueryOptions options = {});\n  [NewObject] Promise<boolean> has(DOMString cacheName);\n  [NewObject] Promise<Cache> open(DOMString cacheName);\n  [NewObject] Promise<boolean> delete(DOMString cacheName);\n  [NewObject] Promise<sequence<DOMString>> keys();\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface CacheStorage {\n  [NewObject] Promise<(Response or undefined)> match(RequestInfo request, optional MultiCacheQueryOptions options = {});\n  [NewObject] Promise<boolean> has(DOMString cacheName);\n  [NewObject] Promise<Cache> open(DOMString cacheName);\n  [NewObject] Promise<boolean> delete(DOMString cacheName);\n  [NewObject] Promise<sequence<DOMString>> keys();\n};",
         "type": "interface",
         "name": "CacheStorage",
         "inheritance": null,
@@ -3204,8 +3255,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "any"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Response"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "undefined"
+                    }
+                  ]
                 }
               ]
             },
@@ -3753,13 +3821,14 @@
         "CacheStorage"
       ],
       "Cache": [
+        "Response",
         "RequestInfo",
         "CacheQueryOptions",
-        "Response",
         "Request"
       ],
       "CacheQueryOptions": [],
       "CacheStorage": [
+        "Response",
         "RequestInfo",
         "MultiCacheQueryOptions",
         "Cache"

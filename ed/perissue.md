@@ -4405,16 +4405,11 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/resource-timing-2/#performanceresourcetiming`](https://www.w3.org/TR/resource-timing-2/#performanceresourcetiming)
      * [`https://www.w3.org/TR/resource-timing-2/#step-create-object`](https://www.w3.org/TR/resource-timing-2/#step-create-object)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/):
-     * [`https://html.spec.whatwg.org/#application-cache`](https://html.spec.whatwg.org/#application-cache)
-     * [`https://fetch.spec.whatwg.org/#concept-body-disturbed`](https://fetch.spec.whatwg.org/#concept-body-disturbed)
-     * [`https://fetch.spec.whatwg.org/#concept-body-locked`](https://fetch.spec.whatwg.org/#concept-body-locked)
-     * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://w3c.github.io/push-api/#h-the-push-event`](https://w3c.github.io/push-api/#h-the-push-event)
      * [`https://w3c.github.io/push-api/#dfn-push`](https://w3c.github.io/push-api/#dfn-push)
      * [`https://w3c.github.io/push-api/#dfn-fire-the-push-event`](https://w3c.github.io/push-api/#dfn-fire-the-push-event)
      * [`https://www.w3.org/TR/page-visibility/#VisibilityState`](https://www.w3.org/TR/page-visibility/#VisibilityState)
      * [`https://wicg.github.io/BackgroundSync/spec/#sync`](https://wicg.github.io/BackgroundSync/spec/#sync)
-     * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/):
      * [`https://w3c.github.io/core-aam/#exclude_elements2`](https://w3c.github.io/core-aam/#exclude_elements2)
      * [`https://w3c.github.io/core-aam/#include_elements`](https://w3c.github.io/core-aam/#include_elements)
@@ -4531,7 +4526,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 603 problematic external links found in 138 specifications
+=> 598 problematic external links found in 138 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
