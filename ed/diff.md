@@ -1,13 +1,12 @@
-% Diff between report from "March 11, 2021" and reference report from "March 11, 2021"
+% Diff between report from "March 12, 2021" and reference report from "March 11, 2021"
 % Reffy
-% March 11, 2021
+% March 12, 2021
 
-## WebRTC Insertable Media using Streams
+## JS Self-Profiling API
 
-- Initial URL: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
+- Initial URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
-- Unknown WebIDL names used: *DEL* RTCInsertableStreams
-- Inconsistent references for links: *DEL* https://w3c.github.io/FileAPI/
+- Editor's Draft: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
+- Missing references for WebIDL names: *DEL* EventTarget
 
 
