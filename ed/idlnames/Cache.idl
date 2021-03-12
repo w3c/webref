@@ -1,7 +1,7 @@
 // Source: Service Workers Nightly (https://www.w3.org/TR/service-workers-1/)
 [SecureContext, Exposed=(Window,Worker)]
 interface Cache {
-  [NewObject] Promise<any> match(RequestInfo request, optional CacheQueryOptions options = {});
+  [NewObject] Promise<(Response or undefined)> match(RequestInfo request, optional CacheQueryOptions options = {});
   [NewObject] Promise<FrozenArray<Response>> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});
   [NewObject] Promise<undefined> add(RequestInfo request);
   [NewObject] Promise<undefined> addAll(sequence<RequestInfo> requests);
