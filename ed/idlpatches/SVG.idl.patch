@@ -1,55 +1,18 @@
-From 50c80eeaf5eaf5a22ec14ee5a97e1438e17ce172 Mon Sep 17 00:00:00 2001
-From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
-Date: Fri, 12 Feb 2021 12:09:11 +0100
+From 28b67fca45cca9a2029a5c1321d74ce9b0a31a93 Mon Sep 17 00:00:00 2001
+From: Kagami Sascha Rosylight <saschanaz@outlook.com>
+Date: Fri, 12 Mar 2021 06:48:07 +0100
 Subject: [PATCH] Fix SVG.idl
 
 HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
-
-SVGMarkerElement: https://github.com/w3c/svgwg/issues/824
 ---
- ed/idl/SVG.idl | 46 ++++++++++++++++------------------------------
- 1 file changed, 16 insertions(+), 30 deletions(-)
+ ed/idl/SVG.idl | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index f8d24c9c6..0bf7d418a 100644
+index e0b013bfa..69d47018e 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
-@@ -566,34 +567,6 @@ interface SVGForeignObjectElement : SVGGraphicsElement {
-   [SameObject] readonly attribute SVGAnimatedLength height;
- };
- 
--[Exposed=Window]
--interface SVGMarkerElement : SVGElement {
--
--  // Marker Unit Types
--  const unsigned short SVG_MARKERUNITS_UNKNOWN = 0;
--  const unsigned short SVG_MARKERUNITS_USERSPACEONUSE = 1;
--  const unsigned short SVG_MARKERUNITS_STROKEWIDTH = 2;
--
--  // Marker Orientation Types
--  const unsigned short SVG_MARKER_ORIENT_UNKNOWN = 0;
--  const unsigned short SVG_MARKER_ORIENT_AUTO = 1;
--  const unsigned short SVG_MARKER_ORIENT_ANGLE = 2;
--
--  [SameObject] readonly attribute SVGAnimatedLength refX;
--  [SameObject] readonly attribute SVGAnimatedLength refY;
--  [SameObject] readonly attribute SVGAnimatedEnumeration markerUnits;
--  [SameObject] readonly attribute SVGAnimatedLength markerWidth;
--  [SameObject] readonly attribute SVGAnimatedLength markerHeight;
--  [SameObject] readonly attribute SVGAnimatedEnumeration orientType;
--  [SameObject] readonly attribute SVGAnimatedAngle orientAngle;
--  attribute DOMString orient;
--
--  void setOrientToAuto();
--  void setOrientToAngle(SVGAngle angle);
--};
--
--SVGMarkerElement includes SVGFitToViewBox;
--
- [Exposed=Window]
- interface SVGGradientElement : SVGElement {
- 
-@@ -671,7 +644,20 @@ interface SVGAElement : SVGGraphicsElement {
+@@ -672,7 +672,20 @@ interface SVGAElement : SVGGraphicsElement {
  };
  
  SVGAElement includes SVGURIReference;
@@ -72,5 +35,5 @@ index f8d24c9c6..0bf7d418a 100644
  [Exposed=Window]
  interface SVGViewElement : SVGElement {};
 -- 
-2.30.1.669.gdc6e27a789-goog
+2.30.0.windows.1
 
