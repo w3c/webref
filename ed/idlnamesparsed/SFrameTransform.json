@@ -5,7 +5,7 @@
       "title": "WebRTC Insertable Media using Streams",
       "url": "https://w3c.github.io/webrtc-insertable-streams/"
     },
-    "fragment": "// FIXME: We plan to expose only in dedicated worker scopes, but may want to discuss extending it in other contexts.\n[Exposed=(Window,Worker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);\n};",
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);\n};",
     "href": "https://w3c.github.io/webrtc-insertable-streams/#sframetransform"
   },
   "extended": [
