@@ -5,7 +5,7 @@
       "title": "WebRTC Insertable Media using Streams",
       "url": "https://w3c.github.io/webrtc-insertable-streams/"
     },
-    "fragment": "// New interfaces to expose JavaScript-based transforms.\n\n// FIXME: We want to expose only in dedicated worker scopes.\n[Exposed=Worker]\ninterface RTCTransformEvent : Event {\n    readonly attribute RTCRtpScriptTransformer transformer;\n};",
+    "fragment": "// New interfaces to expose JavaScript-based transforms.\n\n[Exposed=DedicatedWorker]\ninterface RTCTransformEvent : Event {\n    readonly attribute RTCRtpScriptTransformer transformer;\n};",
     "href": "https://w3c.github.io/webrtc-insertable-streams/#rtctransformevent"
   },
   "extended": [],

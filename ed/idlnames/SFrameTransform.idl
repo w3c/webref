@@ -1,6 +1,5 @@
 // Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)
-// FIXME: We plan to expose only in dedicated worker scopes, but may want to discuss extending it in other contexts.
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface SFrameTransform {
     constructor(optional SFrameTransformOptions options = {});
     Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);

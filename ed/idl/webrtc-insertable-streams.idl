@@ -36,8 +36,7 @@ dictionary SFrameTransformOptions {
     SFrameTransformRole role = "encrypt";
 };
 
-// FIXME: We plan to expose only in dedicated worker scopes, but may want to discuss extending it in other contexts.
-[Exposed=(Window,Worker)]
+[Exposed=(Window,DedicatedWorker)]
 interface SFrameTransform {
     constructor(optional SFrameTransformOptions options = {});
     Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);
@@ -87,8 +86,7 @@ interface RTCEncodedAudioFrame {
 
 // New interfaces to expose JavaScript-based transforms.
 
-// FIXME: We want to expose only in dedicated worker scopes.
-[Exposed=Worker]
+[Exposed=DedicatedWorker]
 interface RTCTransformEvent : Event {
     readonly attribute RTCRtpScriptTransformer transformer;
 };
@@ -97,8 +95,7 @@ partial interface DedicatedWorkerGlobalScope {
     attribute EventHandler onrtctransform;
 };
 
-// FIXME: We want to expose only in dedicated worker scopes.
-[Exposed=Worker]
+[Exposed=DedicatedWorker]
 interface RTCRtpScriptTransformer {
     readonly attribute ReadableStream readable;
     readonly attribute WritableStream writable;

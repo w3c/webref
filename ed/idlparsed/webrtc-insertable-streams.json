@@ -10,7 +10,7 @@
           "SFrameTransform",
           "RTCRtpScriptTransform"
         ],
-        "Worker": [
+        "DedicatedWorker": [
           "SFrameTransform"
         ]
       },
@@ -19,7 +19,7 @@
           "RTCEncodedVideoFrame",
           "RTCEncodedAudioFrame"
         ],
-        "Worker": [
+        "DedicatedWorker": [
           "RTCTransformEvent",
           "RTCRtpScriptTransformer"
         ]
@@ -142,7 +142,7 @@
         "partial": false
       },
       "SFrameTransform": {
-        "fragment": "// FIXME: We plan to expose only in dedicated worker scopes, but may want to discuss extending it in other contexts.\n[Exposed=(Window,Worker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);\n};",
         "type": "interface",
         "name": "SFrameTransform",
         "inheritance": null,
@@ -240,7 +240,7 @@
                   "value": "Window"
                 },
                 {
-                  "value": "Worker"
+                  "value": "DedicatedWorker"
                 }
               ]
             },
@@ -612,7 +612,7 @@
         "partial": false
       },
       "RTCTransformEvent": {
-        "fragment": "// New interfaces to expose JavaScript-based transforms.\n\n// FIXME: We want to expose only in dedicated worker scopes.\n[Exposed=Worker]\ninterface RTCTransformEvent : Event {\n    readonly attribute RTCRtpScriptTransformer transformer;\n};",
+        "fragment": "// New interfaces to expose JavaScript-based transforms.\n\n[Exposed=DedicatedWorker]\ninterface RTCTransformEvent : Event {\n    readonly attribute RTCRtpScriptTransformer transformer;\n};",
         "type": "interface",
         "name": "RTCTransformEvent",
         "inheritance": "Event",
@@ -639,7 +639,7 @@
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
-              "value": "Worker"
+              "value": "DedicatedWorker"
             },
             "arguments": []
           }
@@ -647,7 +647,7 @@
         "partial": false
       },
       "RTCRtpScriptTransformer": {
-        "fragment": "// FIXME: We want to expose only in dedicated worker scopes.\n[Exposed=Worker]\ninterface RTCRtpScriptTransformer {\n    readonly attribute ReadableStream readable;\n    readonly attribute WritableStream writable;\n    readonly attribute any options;\n};",
+        "fragment": "[Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer {\n    readonly attribute ReadableStream readable;\n    readonly attribute WritableStream writable;\n    readonly attribute any options;\n};",
         "type": "interface",
         "name": "RTCRtpScriptTransformer",
         "inheritance": null,
@@ -704,7 +704,7 @@
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
-              "value": "Worker"
+              "value": "DedicatedWorker"
             },
             "arguments": []
           }
@@ -930,7 +930,7 @@
         "RTCEncodedAudioFrame",
         "RTCRtpScriptTransform"
       ],
-      "Worker": [
+      "DedicatedWorker": [
         "SFrameTransform",
         "RTCTransformEvent",
         "RTCRtpScriptTransformer"
