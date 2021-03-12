@@ -5,7 +5,7 @@
       "title": "DOM Standard",
       "url": "https://dom.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface AbortSignal : EventTarget {\n  readonly attribute boolean aborted;\n\n  attribute EventHandler onabort;\n};",
+    "fragment": "[Exposed=(Window,Worker)]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort();\n\n  readonly attribute boolean aborted;\n\n  attribute EventHandler onabort;\n};",
     "href": "https://dom.spec.whatwg.org/#abortsignal"
   },
   "extended": [],
