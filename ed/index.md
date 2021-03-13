@@ -13379,7 +13379,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/upgrade-insecure-requests/](https://www.w3.org/TR/upgrade-insecure-requests/)
 - Crawled URL: [https://w3c.github.io/webappsec-upgrade-insecure-requests/](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
-- Crawled version: 12 March 2021
+- Crawled version: 13 March 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-upgrade-insecure-requests/](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - Latest published version: [https://www.w3.org/TR/upgrade-insecure-requests/](https://www.w3.org/TR/upgrade-insecure-requests/)
 - Shortname: upgrade-insecure-requests
