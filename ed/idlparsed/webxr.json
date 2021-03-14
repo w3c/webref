@@ -1592,7 +1592,7 @@
         "partial": false
       },
       "XRPose": {
-        "fragment": "[SecureContext, Exposed=Window] interface XRPose {\n  [SameObject] readonly attribute XRRigidTransform transform;\n  readonly attribute boolean emulatedPosition;\n};",
+        "fragment": "[SecureContext, Exposed=Window] interface XRPose {\n  [SameObject] readonly attribute XRRigidTransform transform;\n  [SameObject] readonly attribute DOMPointReadOnly? linearVelocity;\n  [SameObject] readonly attribute DOMPointReadOnly? angularVelocity;\n\n  readonly attribute boolean emulatedPosition;\n};",
         "type": "interface",
         "name": "XRPose",
         "inheritance": null,
@@ -1607,6 +1607,50 @@
               "nullable": false,
               "union": false,
               "idlType": "XRRigidTransform"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "linearVelocity",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMPointReadOnly"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "angularVelocity",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMPointReadOnly"
             },
             "extAttrs": [
               {
@@ -3349,7 +3393,8 @@
         "XRRigidTransform"
       ],
       "XRPose": [
-        "XRRigidTransform"
+        "XRRigidTransform",
+        "DOMPointReadOnly"
       ],
       "XRViewerPose": [
         "XRPose",

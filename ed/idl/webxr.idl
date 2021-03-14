@@ -141,6 +141,9 @@ interface XRRigidTransform {
 
 [SecureContext, Exposed=Window] interface XRPose {
   [SameObject] readonly attribute XRRigidTransform transform;
+  [SameObject] readonly attribute DOMPointReadOnly? linearVelocity;
+  [SameObject] readonly attribute DOMPointReadOnly? angularVelocity;
+
   readonly attribute boolean emulatedPosition;
 };
 
