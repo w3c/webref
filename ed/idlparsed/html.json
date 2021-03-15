@@ -23149,7 +23149,7 @@
         "extAttrs": []
       },
       "History": {
-        "fragment": "[Exposed=Window]\ninterface History {\n  readonly attribute unsigned long length;\n  attribute ScrollRestoration scrollRestoration;\n  readonly attribute any state;\n  undefined go(optional long delta = 0);\n  undefined back();\n  undefined forward();\n  undefined pushState(any data, DOMString title, optional USVString? url = null);\n  undefined replaceState(any data, DOMString title, optional USVString? url = null);\n};",
+        "fragment": "[Exposed=Window]\ninterface History {\n  readonly attribute unsigned long length;\n  attribute ScrollRestoration scrollRestoration;\n  readonly attribute any state;\n  undefined go(optional long delta = 0);\n  undefined back();\n  undefined forward();\n  undefined pushState(any data, DOMString unused, optional USVString? url = null);\n  undefined replaceState(any data, DOMString unused, optional USVString? url = null);\n};",
         "type": "interface",
         "name": "History",
         "inheritance": null,
@@ -23294,7 +23294,7 @@
               },
               {
                 "type": "argument",
-                "name": "title",
+                "name": "unused",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -23360,7 +23360,7 @@
               },
               {
                 "type": "argument",
-                "name": "title",
+                "name": "unused",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",

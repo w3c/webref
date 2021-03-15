@@ -158,7 +158,7 @@
         "partial": false
       },
       "PerformanceObserverCallback": {
-        "fragment": "callback PerformanceObserverCallback = undefined (PerformanceObserverEntryList entries,\n                                             PerformanceObserver observer,\n                                             optional boolean hasDroppedEntry = false);",
+        "fragment": "callback PerformanceObserverCallback = undefined (PerformanceObserverEntryList entries,\n                                             PerformanceObserver observer,\n                                             optional PerformanceObserverCallbackOptions options = {});",
         "type": "callback",
         "name": "PerformanceObserverCallback",
         "idlType": {
@@ -204,7 +204,7 @@
           },
           {
             "type": "argument",
-            "name": "hasDroppedEntry",
+            "name": "options",
             "extAttrs": [],
             "idlType": {
               "type": "argument-type",
@@ -212,11 +212,10 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "boolean"
+              "idlType": "PerformanceObserverCallbackOptions"
             },
             "default": {
-              "type": "boolean",
-              "value": false
+              "type": "dictionary"
             },
             "optional": true,
             "variadic": false
@@ -366,6 +365,31 @@
             "arguments": []
           }
         ],
+        "partial": false
+      },
+      "PerformanceObserverCallbackOptions": {
+        "fragment": "dictionary PerformanceObserverCallbackOptions {\n  unsigned long long droppedEntriesCount;\n};",
+        "type": "dictionary",
+        "name": "PerformanceObserverCallbackOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "droppedEntriesCount",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
         "partial": false
       },
       "PerformanceObserverInit": {
@@ -689,6 +713,7 @@
         "PerformanceObserverInit",
         "PerformanceEntryList"
       ],
+      "PerformanceObserverCallbackOptions": [],
       "PerformanceObserverInit": [],
       "PerformanceObserverEntryList": [
         "PerformanceEntryList"
