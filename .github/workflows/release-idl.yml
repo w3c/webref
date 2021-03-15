@@ -43,10 +43,14 @@ jobs:
         package: ./packages/idl/package.json
         access: public
 
-    - name: Create GitHub release
-      uses: softprops/action-gh-release@v1
+    - name: Create version tag
       if: steps.publish.outputs.type != 'none'
+      run: |
+        git tag -a "@webref/idl@${{ steps.publish.outputs.version }}" -m "Publish @webref/idl@${{ steps.publish.outputs.version }}"
+
+    - name: Push version tag
+      if: steps.publish.outputs.type != 'none'
+      uses: ad-m/github-push-action@master
       with:
-        name: '@webref/idl@${{ steps.publish.outputs.version }}'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        tags: true
