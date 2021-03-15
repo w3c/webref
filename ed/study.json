@@ -2,11 +2,11 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-03-15T07:59:22.813Z",
+  "date": "2021-03-15T12:57:57.928Z",
   "stats": {
-    "crawled": 384,
+    "crawled": 386,
     "errors": 0,
-    "studied": 384
+    "studied": 386
   },
   "results": [
     {
@@ -1036,7 +1036,9 @@
           "css": [],
           "idl": []
         },
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://w3c.github.io/IndexedDB/"
+        ],
         "inconsistentRef": [
           {
             "link": "https://w3c.github.io/ServiceWorker/",
@@ -1050,13 +1052,6 @@
             "ref": {
               "name": "MIXED-CONTENT",
               "url": "https://www.w3.org/TR/mixed-content/"
-            }
-          },
-          {
-            "link": "https://w3c.github.io/IndexedDB/",
-            "ref": {
-              "name": "INDEXEDDB",
-              "url": "https://www.w3.org/TR/IndexedDB/"
             }
           }
         ],
@@ -17574,7 +17569,7 @@
               "crawled": "https://wicg.github.io/import-maps/"
             },
             {
-              "url": "https://www.w3.org/TR/IndexedDB-2/",
+              "url": "https://www.w3.org/TR/IndexedDB-3/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
@@ -18292,7 +18287,7 @@
               "crawled": "https://wicg.github.io/idle-detection/"
             },
             {
-              "url": "https://www.w3.org/TR/IndexedDB-2/",
+              "url": "https://www.w3.org/TR/IndexedDB-3/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
@@ -18929,6 +18924,39 @@
             "https://www.w3.org/TR/html51/"
           ],
           "datedUrls": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Error Cause",
+      "shortname": "tc39-error-cause",
+      "date": "10 March 2021",
+      "url": "https://tc39.es/proposal-error-cause/",
+      "nightly": {
+        "url": "https://tc39.es/proposal-error-cause/",
+        "repository": "https://github.com/tc39/proposal-error-cause",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "crawled": "https://tc39.es/proposal-error-cause/",
+      "report": {
+        "noNormativeRefs": true,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingDfns": {
+          "css": [],
+          "idl": []
+        },
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
         },
         "ok": false
       }
@@ -19676,7 +19704,7 @@
               "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
             },
             {
-              "url": "https://www.w3.org/TR/IndexedDB-2/",
+              "url": "https://www.w3.org/TR/IndexedDB-3/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
@@ -31989,7 +32017,7 @@
               "crawled": "https://wicg.github.io/import-maps/"
             },
             {
-              "url": "https://www.w3.org/TR/IndexedDB-2/",
+              "url": "https://www.w3.org/TR/IndexedDB-3/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
@@ -32726,7 +32754,7 @@
               "crawled": "https://w3c.github.io/html-aam/"
             },
             {
-              "url": "https://www.w3.org/TR/IndexedDB-2/",
+              "url": "https://www.w3.org/TR/IndexedDB-3/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
@@ -33641,11 +33669,11 @@
     },
     {
       "title": "Indexed Database API 3.0",
-      "shortname": "IndexedDB-2",
+      "shortname": "IndexedDB-3",
       "date": "11 March 2021",
-      "url": "https://www.w3.org/TR/IndexedDB-2/",
+      "url": "https://www.w3.org/TR/IndexedDB-3/",
       "release": {
-        "url": "https://www.w3.org/TR/IndexedDB-2/",
+        "url": "https://www.w3.org/TR/IndexedDB-3/",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -33668,7 +33696,10 @@
           "css": [],
           "idl": []
         },
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/2015/REC-IndexedDB-20150108/",
+          "https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/"
+        ],
         "inconsistentRef": [
           {
             "link": "https://w3c.github.io/FileAPI/",
@@ -33681,19 +33712,9 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/clear-site-data/",
-              "title": "Clear Site Data",
-              "crawled": "https://w3c.github.io/webappsec-clear-site-data/"
-            },
-            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
-            },
-            {
-              "url": "https://www.w3.org/TR/presentation-api/",
-              "title": "Presentation API",
-              "crawled": "https://w3c.github.io/presentation-api/"
             }
           ],
           "informative": [
@@ -33701,31 +33722,6 @@
               "url": "https://dom.spec.whatwg.org/",
               "title": "DOM Standard",
               "crawled": "https://dom.spec.whatwg.org/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc-identity/",
-              "title": "Identity for WebRTC 1.0",
-              "crawled": "https://w3c.github.io/webrtc-identity/identity.html"
-            },
-            {
-              "url": "https://www.w3.org/TR/secure-contexts/",
-              "title": "Secure Contexts",
-              "crawled": "https://w3c.github.io/webappsec-secure-contexts/"
-            },
-            {
-              "url": "https://www.w3.org/TR/WebCryptoAPI/",
-              "title": "Web Cryptography API",
-              "crawled": "https://w3c.github.io/webcrypto/"
-            },
-            {
-              "url": "https://wicg.github.io/web-locks/",
-              "title": "Web Locks API",
-              "crawled": "https://wicg.github.io/web-locks/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webrtc/",
-              "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
-              "crawled": "https://w3c.github.io/webrtc-pc/"
             }
           ]
         },
@@ -33744,7 +33740,8 @@
             "https://www.w3.org/TR/webstorage/"
           ],
           "datedUrls": [
-            "https://www.w3.org/TR/2015/REC-IndexedDB-20150108/"
+            "https://www.w3.org/TR/2015/REC-IndexedDB-20150108/",
+            "https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/"
           ]
         },
         "ok": false
@@ -34084,7 +34081,7 @@
               "crawled": "https://wicg.github.io/import-maps/"
             },
             {
-              "url": "https://www.w3.org/TR/IndexedDB-2/",
+              "url": "https://www.w3.org/TR/IndexedDB-3/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
@@ -36951,7 +36948,7 @@
       "nightly": {
         "url": "https://w3c.github.io/webappsec-mixed-content/",
         "repository": "https://github.com/w3c/webappsec-mixed-content",
-        "sourcePath": "index.src.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "crawled": "https://w3c.github.io/webappsec-mixed-content/",
@@ -38969,7 +38966,7 @@
     {
       "title": "Picture-in-Picture",
       "shortname": "picture-in-picture",
-      "date": "15 October 2020",
+      "date": "15 March 2021",
       "url": "https://www.w3.org/TR/picture-in-picture/",
       "release": {
         "url": "https://www.w3.org/TR/picture-in-picture/",
@@ -42589,7 +42586,7 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
-              "url": "https://www.w3.org/TR/IndexedDB-2/",
+              "url": "https://www.w3.org/TR/IndexedDB-3/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
@@ -43180,6 +43177,39 @@
           "datedUrls": [
             "https://www.w3.org/TR/2015/WD-SVG2-20150409/"
           ]
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Temporal proposal",
+      "shortname": "tc39-temporal",
+      "date": "14 March 2021",
+      "url": "https://tc39.es/proposal-temporal/",
+      "nightly": {
+        "url": "https://tc39.es/proposal-temporal/",
+        "repository": "https://github.com/tc39/proposal-temporal",
+        "sourcePath": "spec.html",
+        "filename": "index.html"
+      },
+      "crawled": "https://tc39.es/proposal-temporal/",
+      "report": {
+        "noNormativeRefs": true,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingDfns": {
+          "css": [],
+          "idl": []
+        },
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
         },
         "ok": false
       }
@@ -44100,7 +44130,7 @@
       "nightly": {
         "url": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
         "repository": "https://github.com/w3c/webappsec-upgrade-insecure-requests",
-        "sourcePath": "index.src.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "crawled": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
@@ -46038,7 +46068,7 @@
               "crawled": "https://wicg.github.io/import-maps/"
             },
             {
-              "url": "https://www.w3.org/TR/IndexedDB-2/",
+              "url": "https://www.w3.org/TR/IndexedDB-3/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
@@ -46700,16 +46730,10 @@
           "idl": []
         },
         "missingLinkRef": [
+          "https://w3c.github.io/IndexedDB/",
           "https://www.w3.org/TR/security-privacy-questionnaire/"
         ],
         "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/IndexedDB/",
-            "ref": {
-              "name": "IndexedDB-2",
-              "url": "https://www.w3.org/TR/IndexedDB-2/"
-            }
-          },
           {
             "link": "https://w3c.github.io/ServiceWorker/",
             "ref": {

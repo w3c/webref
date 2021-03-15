@@ -3,7 +3,7 @@
   "defined": {
     "spec": {
       "title": "Indexed Database API 3.0",
-      "url": "https://www.w3.org/TR/IndexedDB-2/"
+      "url": "https://www.w3.org/TR/IndexedDB-3/"
     },
     "fragment": "[Exposed=(Window,Worker)]\ninterface IDBDatabase : EventTarget {\n  readonly attribute DOMString name;\n  readonly attribute unsigned long long version;\n  readonly attribute DOMStringList objectStoreNames;\n\n  [NewObject] IDBTransaction transaction((DOMString or sequence<DOMString>) storeNames,\n                                         optional IDBTransactionMode mode = \"readonly\",\n                                         optional IDBTransactionOptions options = {});\n  undefined close();\n\n  [NewObject] IDBObjectStore createObjectStore(\n    DOMString name,\n    optional IDBObjectStoreParameters options = {});\n  undefined deleteObjectStore(DOMString name);\n\n  // Event handlers:\n  attribute EventHandler onabort;\n  attribute EventHandler onclose;\n  attribute EventHandler onerror;\n  attribute EventHandler onversionchange;\n};",
     "href": "https://w3c.github.io/IndexedDB/#idbdatabase"
