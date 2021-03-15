@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "CSS Ruby Layout Module Level 1",
+    "title": "CSS Ruby Annotation Layout Module Level 1",
     "url": "https://www.w3.org/TR/css-ruby-1/"
   },
   "properties": {
@@ -10,8 +10,8 @@
     },
     "ruby-position": {
       "name": "ruby-position",
-      "value": "over | under | inter-character",
-      "initial": "over",
+      "value": "[ alternate || [ over | under ] ] | inter-character",
+      "initial": "alternate",
       "appliesTo": "ruby annotation containers",
       "inherited": "yes",
       "percentages": "n/a",
@@ -21,9 +21,9 @@
     },
     "ruby-merge": {
       "name": "ruby-merge",
-      "value": "separate | collapse | auto",
+      "value": "separate | merge | auto",
       "initial": "separate",
-      "appliesTo": "ruby annotation containers",
+      "appliesTo": "interlinear ruby annotation containers",
       "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "specified keyword",

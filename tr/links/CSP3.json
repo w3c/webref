@@ -8,12 +8,12 @@
     "https://www.w3.org/2011/webappsec/": [],
     "https://lists.w3.org/Archives/Public/public-webappsec/": [],
     "https://www.w3.org/Mail/Request": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/49309/status": [],
-    "https://www.w3.org/2018/Process-20180201/": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
     "https://dom.spec.whatwg.org/": [
       "document",
       "element",
@@ -25,14 +25,17 @@
       "dom-event-bubbles",
       "dom-event-composed",
       "dom-event-target",
-      "concept-node-document",
       "concept-document"
     ],
     "https://html.spec.whatwg.org/": [
       "worker",
-      "parser-inserted",
       "script",
       "workerglobalscope",
+      "workletglobalscope",
+      "concept-request-origin",
+      "concept-origin-opaque",
+      "environment-settings-object",
+      "concept-settings-object-origin",
       "global-object",
       "browsing-context",
       "window",
@@ -41,74 +44,61 @@
       "concept-settings-object-global",
       "meta",
       "attr-meta-http-equiv",
-      "attr-meta-http-equiv-content-security-policy",
       "the-link-element",
       "attr-meta-content",
       "run-a-worker",
-      "initialise-the-document-object",
       "prepare-a-script",
       "update-a-style-block",
-      "browsing-context-nested-through",
       "the-base-element",
       "set-the-frozen-base-url",
       "attr-base-href",
-      "the-object-element",
-      "the-embed-element",
-      "applet",
       "process-a-navigate-fetch",
       "process-a-navigate-response",
       "concept-document-csp-list",
-      "opener-browsing-context",
-      "active-document",
       "an-iframe-srcdoc-document",
+      "process-the-iframe-attributes",
+      "source-browsing-context",
       "dedicatedworkerglobalscope",
       "concept-WorkerGlobalScope-owner-set",
       "sharedworkerglobalscope",
       "concept-document-window",
       "current-settings-object",
-      "concept-relevant-global",
       "concept-realm-global",
       "queue-a-task",
       "relevant-settings-object",
-      "concept-settings-object-origin",
       "nested-browsing-context",
       "the-iframe-element",
       "frame",
       "sharedworker",
       "the-a-element",
       "dom-a-ping",
+      "the-object-element",
       "attr-object-data",
+      "the-embed-element",
       "plugin-document",
       "top-level-browsing-context",
       "dom-settimeout",
       "dom-setinterval",
       "the-style-element",
-      "fallback-base-url",
-      "attr-embed-type",
       "attr-iframe-sandbox",
       "parse-a-sandboxing-directive",
       "sandboxed-scripts-browsing-context-flag",
       "sandboxed-origin-browsing-context-flag",
       "forced-sandboxing-flag-set",
-      "parent-browsing-context",
       "ascii-serialisation-of-an-origin",
       "the-form-element",
-      "case-sensitive",
-      "concept-origin",
       "concept-origin-scheme",
       "parse-error-duplicate-attribute",
-      "concept-script-parse-error",
+      "parse-errors",
       "attr-nonce"
     ],
     "https://tc39.github.io/ecma262": [
       "sec-eval-x",
       "sec-hostensurecancompilestrings",
       "realm",
-      "sec-json.stringify",
       "sec-function-objects"
     ],
     "https://fetch.spec.whatwg.org/": [
-      "network-scheme",
       "local-scheme",
       "concept-request",
       "concept-response",
@@ -122,16 +112,15 @@
       "concept-http-fetch",
       "concept-http-network-fetch",
       "extract-header-list-values",
+      "concept-response-url",
       "concept-request-nonce-metadata",
       "concept-request-parser-metadata",
-      "concept-response-url",
       "concept-request-method",
       "concept-request-origin",
       "concept-request-window",
       "concept-request-destination",
       "concept-request-initiator",
       "concept-request-credentials-mode",
-      "request-keepalive-flag",
       "concept-request-header-list",
       "concept-request-body",
       "concept-request-redirect-mode",
@@ -139,7 +128,6 @@
       "concept-fetch",
       "concept-request-target-browsing-context",
       "request-destination-script-like",
-      "concept-header-extract-mime-type",
       "concept-response-status",
       "redirect-status",
       "concept-request-integrity-metadata",
@@ -168,10 +156,9 @@
       "string",
       "list-is-empty",
       "ascii-case-insensitive",
+      "ordered-map",
+      "serialize-an-infra-value-to-json-bytes",
       "javascript-string-convert"
-    ],
-    "https://www.w3.org/TR/worklets-1/": [
-      "workletglobalscope"
     ],
     "https://tools.ietf.org/html/rfc5234": [
       "appendix-B.1"
@@ -188,11 +175,11 @@
     ],
     "https://url.spec.whatwg.org/": [
       "url",
+      "concept-url-origin",
       "concept-url-scheme",
       "concept-url-serializer",
       "concept-url-parser",
       "concept-base-url",
-      "concept-url-origin",
       "dom-url-host",
       "concept-url-port",
       "concept-url-path",
@@ -200,41 +187,36 @@
       "default-port",
       "concept-url-host",
       "concept-ipv6",
-      "percent-decode"
+      "string-percent-decode"
     ],
     "https://tools.ietf.org/html/rfc7231": [
       "section-3"
     ],
-    "https://www.w3.org/TR/CSP3/": [
-      "parse-serialized-policy",
-      "header-content-security-policy"
-    ],
-    "https://github.com/w3c/html/issues/187": [],
-    "https://github.com/whatwg/html/issues/198": [],
     "https://github.com/whatwg/html/issues/968": [],
-    "https://github.com/w3c/html/issues/547": [],
-    "https://github.com/w3c/html/issues/548": [],
     "https://www.w3.org/TR/service-workers-1/": [
       "serviceworkerglobalscope",
       "serviceworker"
     ],
-    "https://drafts.css-houdini.org/worklets/": [
+    "https://www.w3.org/TR/worklets-1/": [
       "workletglobalscope-owner-document"
     ],
     "https://github.com/tc39/ecma262/issues/938": [],
-    "https://heycam.github.io/webidl/": [
-      "idl-DOMString",
-      "Exposed",
-      "idl-USVString",
-      "idl-unsigned-short",
-      "idl-unsigned-long"
-    ],
     "https://w3c.github.io/reporting/": [
+      "report-type",
+      "visible-to-reportingobservers",
+      "reportbody",
       "queue-report",
       "group"
     ],
+    "https://heycam.github.io/webidl/": [
+      "Exposed",
+      "idl-USVString",
+      "idl-DOMString",
+      "idl-unsigned-short",
+      "idl-unsigned-long"
+    ],
     "https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/": [],
-    "https://www.w3.org/TR/css-cascade-4/": [
+    "https://www.w3.org/TR/css-cascade-5/": [
       "at-ruledef-import"
     ],
     "https://www.w3.org/TR/cssom-1/": [
@@ -244,12 +226,6 @@
       "parse-a-group-of-selectors"
     ],
     "https://github.com/w3c/webappsec-csp/issues/212": [],
-    "https://tools.ietf.org/html/rfc2045": [
-      "section-5.1"
-    ],
-    "https://mimesniff.spec.whatwg.org/": [
-      "valid-mime-type"
-    ],
     "https://github.com/whatwg/html/issues/1230": [],
     "https://www.w3.org/TR/SRI/": [
       "parse-metadata"
@@ -268,12 +244,15 @@
     ],
     "https://tc39.github.io/ecma262/": [],
     "https://wicg.github.io/reporting/": [],
+    "https://www.w3.org/TR/reporting-1/": [],
     "https://tools.ietf.org/html/rfc2119": [],
     "https://tools.ietf.org/html/rfc3492": [],
     "https://tools.ietf.org/html/rfc3864": [],
     "https://tools.ietf.org/html/rfc7034": [],
+    "https://httpwg.org/specs/rfc7230.html": [],
+    "https://httpwg.org/specs/rfc7231.html": [],
     "https://tools.ietf.org/html/rfc7762": [],
-    "https://tools.ietf.org/html/rfc8288": [],
+    "https://httpwg.org/specs/rfc8288.html": [],
     "https://www.w3.org/TR/appmanifest/": [],
     "https://www.w3.org/TR/beacon/": [],
     "https://www.w3.org/TR/CSP2/": [],

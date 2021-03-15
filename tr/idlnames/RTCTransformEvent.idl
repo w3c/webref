@@ -1,7 +1,7 @@
 // Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)
 // New interfaces to expose JavaScript-based transforms.
 
-[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]
+[Exposed=DedicatedWorker]
 interface RTCTransformEvent : Event {
     readonly attribute RTCRtpScriptTransformer transformer;
 };

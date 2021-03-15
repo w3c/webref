@@ -1493,6 +1493,24 @@
       "definedIn": "pre"
     },
     {
+      "id": "StringContext",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#StringContext",
+      "linkingText": [
+        "StringContext"
+      ],
+      "localLinkingText": [],
+      "type": "extended-attribute",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "StringContext",
+        "title": "[StringContext]",
+        "number": "4.2"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "related-construct",
       "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#related-construct",
       "linkingText": [
@@ -1504,9 +1522,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "webidl-string-context-xattr",
+        "id": "StringContext",
         "title": "[StringContext]",
-        "number": "4.1.1"
+        "number": "4.2"
       },
       "definedIn": "prose"
     },
@@ -1526,7 +1544,7 @@
       "heading": {
         "id": "webidl-applicable-to-types",
         "title": "Extended attributes applicable to types",
-        "number": "4.1.2"
+        "number": "4.2.1"
       },
       "definedIn": "prose"
     },
@@ -1544,7 +1562,7 @@
       "heading": {
         "id": "webidl-validate-the-string-in-context",
         "title": "Validate the string in context",
-        "number": "4.1.4"
+        "number": "4.2.3"
       },
       "definedIn": "prose"
     },
@@ -1564,7 +1582,7 @@
       "heading": {
         "id": "integration-with-html",
         "title": "Integration with HTML",
-        "number": "4.2"
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -1584,7 +1602,7 @@
       "heading": {
         "id": "extensions-to-the-windoworworkerglobalscope-interface",
         "title": "Extensions to the WindowOrWorkerGlobalScope interface",
-        "number": "4.2.1"
+        "number": "4.3.1"
       },
       "definedIn": "pre"
     },
@@ -1605,7 +1623,7 @@
       "heading": {
         "id": "extensions-to-the-document-interface",
         "title": "Extensions to the Document interface",
-        "number": "4.2.2"
+        "number": "4.3.2"
       },
       "definedIn": "pre"
     },
@@ -1626,7 +1644,7 @@
       "heading": {
         "id": "extensions-to-the-document-interface",
         "title": "Extensions to the Document interface",
-        "number": "4.2.2"
+        "number": "4.3.2"
       },
       "definedIn": "pre"
     },
@@ -1647,7 +1665,7 @@
       "heading": {
         "id": "extensions-to-the-document-interface",
         "title": "Extensions to the Document interface",
-        "number": "4.2.2"
+        "number": "4.3.2"
       },
       "definedIn": "pre"
     },
@@ -1668,47 +1686,47 @@
       "heading": {
         "id": "extensions-to-the-document-interface",
         "title": "Extensions to the Document interface",
-        "number": "4.2.2"
+        "number": "4.3.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "script-scripturl",
-      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#script-scripturl",
+      "id": "dom-htmlscriptelement-scripturl-slot",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-htmlscriptelement-scripturl-slot",
       "linkingText": [
         "[[ScriptURL]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attribute",
       "for": [
-        "script"
+        "HTMLScriptElement"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "slots-with-trusted-values",
         "title": "Slots with trusted values",
-        "number": "4.2.3.1"
+        "number": "4.3.3.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "script-scripttext",
-      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#script-scripttext",
+      "id": "dom-htmlscriptelement-scripttext-slot",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/#dom-htmlscriptelement-scripttext-slot",
       "linkingText": [
         "[[ScriptText]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attribute",
       "for": [
-        "script"
+        "HTMLScriptElement"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "slots-with-trusted-values",
         "title": "Slots with trusted values",
-        "number": "4.2.3.1"
+        "number": "4.3.3.1"
       },
       "definedIn": "dt"
     },
@@ -1728,7 +1746,7 @@
       "heading": {
         "id": "setting-slot-values",
         "title": "Setting slot values",
-        "number": "4.2.3.2"
+        "number": "4.3.3.2"
       },
       "definedIn": "pre"
     },
@@ -1748,7 +1766,7 @@
       "heading": {
         "id": "setting-slot-values",
         "title": "Setting slot values",
-        "number": "4.2.3.2"
+        "number": "4.3.3.2"
       },
       "definedIn": "pre"
     },
@@ -1768,7 +1786,7 @@
       "heading": {
         "id": "setting-slot-values",
         "title": "Setting slot values",
-        "number": "4.2.3.2"
+        "number": "4.3.3.2"
       },
       "definedIn": "pre"
     },
@@ -1788,7 +1806,7 @@
       "heading": {
         "id": "setting-slot-values",
         "title": "Setting slot values",
-        "number": "4.2.3.2"
+        "number": "4.3.3.2"
       },
       "definedIn": "pre"
     },
@@ -1806,7 +1824,7 @@
       "heading": {
         "id": "slot-value-verification",
         "title": "Slot value verification",
-        "number": "4.2.3.3"
+        "number": "4.3.3.3"
       },
       "definedIn": "prose"
     },
@@ -1824,7 +1842,7 @@
       "heading": {
         "id": "slot-value-verification",
         "title": "Slot value verification",
-        "number": "4.2.3.3"
+        "number": "4.3.3.3"
       },
       "definedIn": "prose"
     },
@@ -1842,7 +1860,7 @@
       "heading": {
         "id": "slot-value-verification",
         "title": "Slot value verification",
-        "number": "4.2.3.3"
+        "number": "4.3.3.3"
       },
       "definedIn": "prose"
     },
@@ -1862,7 +1880,7 @@
       "heading": {
         "id": "enforcement-in-sinks",
         "title": "Enforcement in element attributes",
-        "number": "4.2.4"
+        "number": "4.3.4"
       },
       "definedIn": "pre"
     },
@@ -1882,7 +1900,7 @@
       "heading": {
         "id": "enforcement-in-sinks",
         "title": "Enforcement in element attributes",
-        "number": "4.2.4"
+        "number": "4.3.4"
       },
       "definedIn": "pre"
     },
@@ -1902,7 +1920,7 @@
       "heading": {
         "id": "enforcement-in-sinks",
         "title": "Enforcement in element attributes",
-        "number": "4.2.4"
+        "number": "4.3.4"
       },
       "definedIn": "pre"
     },
@@ -1922,7 +1940,7 @@
       "heading": {
         "id": "enforcement-in-sinks",
         "title": "Enforcement in element attributes",
-        "number": "4.2.4"
+        "number": "4.3.4"
       },
       "definedIn": "pre"
     },
@@ -1940,7 +1958,7 @@
       "heading": {
         "id": "enforcement-in-timer-functions",
         "title": "Enforcement in timer functions",
-        "number": "4.2.5"
+        "number": "4.3.5"
       },
       "definedIn": "pre"
     },
@@ -1962,7 +1980,7 @@
       "heading": {
         "id": "enforcement-in-timer-functions",
         "title": "Enforcement in timer functions",
-        "number": "4.2.5"
+        "number": "4.3.5"
       },
       "definedIn": "pre"
     },
@@ -1984,7 +2002,7 @@
       "heading": {
         "id": "enforcement-in-timer-functions",
         "title": "Enforcement in timer functions",
-        "number": "4.2.5"
+        "number": "4.3.5"
       },
       "definedIn": "pre"
     },
@@ -2006,7 +2024,7 @@
       "heading": {
         "id": "enforcement-in-timer-functions",
         "title": "Enforcement in timer functions",
-        "number": "4.2.5"
+        "number": "4.3.5"
       },
       "definedIn": "pre"
     },
@@ -2028,7 +2046,7 @@
       "heading": {
         "id": "enforcement-in-timer-functions",
         "title": "Enforcement in timer functions",
-        "number": "4.2.5"
+        "number": "4.3.5"
       },
       "definedIn": "pre"
     },
@@ -2050,7 +2068,7 @@
       "heading": {
         "id": "enforcement-in-timer-functions",
         "title": "Enforcement in timer functions",
-        "number": "4.2.5"
+        "number": "4.3.5"
       },
       "definedIn": "pre"
     },
@@ -2072,7 +2090,7 @@
       "heading": {
         "id": "enforcement-in-timer-functions",
         "title": "Enforcement in timer functions",
-        "number": "4.2.5"
+        "number": "4.3.5"
       },
       "definedIn": "pre"
     },
@@ -2094,7 +2112,7 @@
       "heading": {
         "id": "enforcement-in-timer-functions",
         "title": "Enforcement in timer functions",
-        "number": "4.2.5"
+        "number": "4.3.5"
       },
       "definedIn": "pre"
     },
@@ -2116,7 +2134,7 @@
       "heading": {
         "id": "enforcement-in-timer-functions",
         "title": "Enforcement in timer functions",
-        "number": "4.2.5"
+        "number": "4.3.5"
       },
       "definedIn": "pre"
     },
@@ -2139,7 +2157,7 @@
       "heading": {
         "id": "html-workers",
         "title": "Web Workers",
-        "number": "4.2.8"
+        "number": "4.3.8"
       },
       "definedIn": "pre"
     },
@@ -2162,7 +2180,7 @@
       "heading": {
         "id": "html-workers",
         "title": "Web Workers",
-        "number": "4.2.8"
+        "number": "4.3.8"
       },
       "definedIn": "pre"
     },
@@ -2185,7 +2203,7 @@
       "heading": {
         "id": "html-workers",
         "title": "Web Workers",
-        "number": "4.2.8"
+        "number": "4.3.8"
       },
       "definedIn": "pre"
     },
@@ -2208,7 +2226,7 @@
       "heading": {
         "id": "html-workers",
         "title": "Web Workers",
-        "number": "4.2.8"
+        "number": "4.3.8"
       },
       "definedIn": "pre"
     },
@@ -2231,7 +2249,7 @@
       "heading": {
         "id": "html-workers",
         "title": "Web Workers",
-        "number": "4.2.8"
+        "number": "4.3.8"
       },
       "definedIn": "pre"
     },
@@ -2254,7 +2272,7 @@
       "heading": {
         "id": "html-workers",
         "title": "Web Workers",
-        "number": "4.2.8"
+        "number": "4.3.8"
       },
       "definedIn": "pre"
     },
@@ -2275,7 +2293,7 @@
       "heading": {
         "id": "html-workers",
         "title": "Web Workers",
-        "number": "4.2.8"
+        "number": "4.3.8"
       },
       "definedIn": "pre"
     },
@@ -2296,7 +2314,7 @@
       "heading": {
         "id": "html-workers",
         "title": "Web Workers",
-        "number": "4.2.8"
+        "number": "4.3.8"
       },
       "definedIn": "pre"
     },
@@ -2317,7 +2335,7 @@
       "heading": {
         "id": "sw-integration",
         "title": "Integration with Service Workers",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "pre"
     },
@@ -2338,7 +2356,7 @@
       "heading": {
         "id": "sw-integration",
         "title": "Integration with Service Workers",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "pre"
     },
@@ -2359,7 +2377,7 @@
       "heading": {
         "id": "sw-integration",
         "title": "Integration with Service Workers",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "pre"
     },
@@ -2379,7 +2397,7 @@
       "heading": {
         "id": "integration-with-svg",
         "title": "Integration with SVG",
-        "number": "4.4"
+        "number": "4.5"
       },
       "definedIn": "pre"
     },
@@ -2397,7 +2415,7 @@
       "heading": {
         "id": "integration-with-dom",
         "title": "Integration with DOM",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -2415,7 +2433,7 @@
       "heading": {
         "id": "integration-with-dom",
         "title": "Integration with DOM",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "prose"
     },
@@ -2435,7 +2453,7 @@
       "heading": {
         "id": "integration-with-dom-parsing",
         "title": "Integration with DOM Parsing",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -2455,7 +2473,7 @@
       "heading": {
         "id": "integration-with-dom-parsing",
         "title": "Integration with DOM Parsing",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -2475,7 +2493,7 @@
       "heading": {
         "id": "integration-with-dom-parsing",
         "title": "Integration with DOM Parsing",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -2495,7 +2513,7 @@
       "heading": {
         "id": "integration-with-dom-parsing",
         "title": "Integration with DOM Parsing",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -2515,7 +2533,7 @@
       "heading": {
         "id": "integration-with-dom-parsing",
         "title": "Integration with DOM Parsing",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -2535,7 +2553,7 @@
       "heading": {
         "id": "integration-with-dom-parsing",
         "title": "Integration with DOM Parsing",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -2555,7 +2573,7 @@
       "heading": {
         "id": "integration-with-dom-parsing",
         "title": "Integration with DOM Parsing",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -2573,7 +2591,7 @@
       "heading": {
         "id": "integration-with-dom-parsing",
         "title": "Integration with DOM Parsing",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -2594,7 +2612,7 @@
       "heading": {
         "id": "integration-with-dom-parsing",
         "title": "Integration with DOM Parsing",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -2614,7 +2632,7 @@
       "heading": {
         "id": "integration-with-dom-parsing",
         "title": "Integration with DOM Parsing",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -2634,7 +2652,7 @@
       "heading": {
         "id": "integration-with-dom-parsing",
         "title": "Integration with DOM Parsing",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -2654,7 +2672,7 @@
       "heading": {
         "id": "integration-with-dom-parsing",
         "title": "Integration with DOM Parsing",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "pre"
     },
@@ -2672,7 +2690,7 @@
       "heading": {
         "id": "require-trusted-types-for-csp-directive",
         "title": "require-trusted-types-for directive",
-        "number": "4.7.1"
+        "number": "4.8.1"
       },
       "definedIn": "heading"
     },
@@ -2690,7 +2708,7 @@
       "heading": {
         "id": "require-trusted-types-for-csp-directive",
         "title": "require-trusted-types-for directive",
-        "number": "4.7.1"
+        "number": "4.8.1"
       },
       "definedIn": "pre"
     },
@@ -2708,7 +2726,7 @@
       "heading": {
         "id": "trusted-types-csp-directive",
         "title": "trusted-types directive",
-        "number": "4.7.2"
+        "number": "4.8.2"
       },
       "definedIn": "heading"
     },
@@ -2726,7 +2744,7 @@
       "heading": {
         "id": "trusted-types-csp-directive",
         "title": "trusted-types directive",
-        "number": "4.7.2"
+        "number": "4.8.2"
       },
       "definedIn": "pre"
     },
@@ -2744,7 +2762,7 @@
       "heading": {
         "id": "trusted-types-csp-directive",
         "title": "trusted-types directive",
-        "number": "4.7.2"
+        "number": "4.8.2"
       },
       "definedIn": "pre"
     },
@@ -2762,7 +2780,7 @@
       "heading": {
         "id": "trusted-types-csp-directive",
         "title": "trusted-types directive",
-        "number": "4.7.2"
+        "number": "4.8.2"
       },
       "definedIn": "pre"
     },
@@ -2780,7 +2798,7 @@
       "heading": {
         "id": "trusted-types-csp-directive",
         "title": "trusted-types directive",
-        "number": "4.7.2"
+        "number": "4.8.2"
       },
       "definedIn": "pre"
     },
@@ -2798,7 +2816,7 @@
       "heading": {
         "id": "trusted-types-csp-directive",
         "title": "trusted-types directive",
-        "number": "4.7.2"
+        "number": "4.8.2"
       },
       "definedIn": "pre"
     },
@@ -2816,7 +2834,7 @@
       "heading": {
         "id": "should-block-sink-type-mismatch",
         "title": "Should sink type mismatch violation be blocked by Content Security Policy?",
-        "number": "4.7.3"
+        "number": "4.8.3"
       },
       "definedIn": "heading"
     },
@@ -2834,7 +2852,7 @@
       "heading": {
         "id": "should-block-create-policy",
         "title": "Should Trusted Type policy creation be blocked by Content Security Policy?",
-        "number": "4.7.4"
+        "number": "4.8.4"
       },
       "definedIn": "heading"
     }
