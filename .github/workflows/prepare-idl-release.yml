@@ -1,0 +1,89 @@
+# Create a PR that bumps the version of packages/idl/package.json when changes
+# are detected compared with the latest version of the package published on NPM.
+#
+# Typical weekly schedule:
+# - New browser-specs release on Monday,
+# - Integration of new version of browser-specs in Reffy on Tuesday
+# - Cleanup job on Wednesday
+# - (This job) New @webref/idl package release on Thursday
+
+name: Prepare new @webref/idl release PR if needed
+
+on:
+  schedule:
+    - cron: '0 4 * * 4'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14.x
+
+    # Checkout webref and prepare new release in a separate folder so that we
+    # may also install the current version of @webref/idl for comparison.
+    - name: Checkout webref
+      uses: actions/checkout@v2
+      with:
+        path: webref
+
+    - name: Prepare new release
+      run: |
+        npm ci
+        npm run prepare
+      working-directory: webref
+
+    - name: Test new release
+      run: npm test
+      working-directory: webref
+
+    - name: Install current @webref/idl package for comparison
+      run: |
+        mkdir idl
+        cd idl
+        npm install @webref/idl
+
+    - name: Compute diff between new release and current package
+      # For details on syntax to use to export a multiline string to an
+      # environment variable, see:
+      # https://github.com/actions/toolkit/blob/main/docs/commands.md#set-an-environment-variable
+      # The diff does not take the package.json file into account because
+      # "npm install" adds properties that start with "_" to that file which do
+      # not exist in the repo version of the file.
+      run: |
+        echo 'IDL_DIFF<<EOF' >> $GITHUB_ENV
+        diff idl/node_modules/@webref/idl webref/packages/idl --ignore-trailing-space --exclude=package.json >> $GITHUB_ENV
+        echo 'EOF' >> $GITHUB_ENV
+
+    - name: Bump version number in packages/idl/package.json
+      if: ${{ env.IDL_DIFF }}
+      run: echo "RELEASE_VERSION=$(npm version patch)" >> $GITHUB_ENV
+      working-directory: webref/packages/idl
+
+    - name: Create pull request
+      uses: peter-evans/create-pull-request@v3
+      if: ${{ env.IDL_DIFF }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        path: webref
+        title: Release version ${{ env.RELEASE_VERSION }} of @webref/idl
+        commit-message: "Release version ${{ env.RELEASE_VERSION }} of @webref/idl"
+        body: |
+          Some changes were detected in the IDL since last time the `@webref/idl` package was released. Please review the IDL changes below.
+
+          If the IDL changes look good, a new version of the `@webref/idl` package should be released. This pull request bumps the patch part of the version number in `packages/idl/package.json`.
+
+          Please make sure that the changes to be released do not warrant bumping the major or minor part of the version number.
+
+          If all looks good (and if all goes well) merging this pull request will trigger the release of the package to npm.
+
+          ```diff
+          {{ env.IDL_DIFF }}
+          ```
+        assignees: dontcallmedom, foolip, tidoust
+        branch: release-idl
+        branch-suffix: timestamp
