@@ -139,6 +139,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "policy-self-origin",
+      "href": "https://www.w3.org/TR/CSP3/#policy-self-origin",
+      "linkingText": [
+        "self-origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "framework-policy",
+        "title": "Policies",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "csp-list",
       "href": "https://www.w3.org/TR/CSP3/#csp-list",
       "linkingText": [
@@ -1317,6 +1337,78 @@
       "definedIn": "prose"
     },
     {
+      "id": "set-response-csp-list",
+      "href": "https://www.w3.org/TR/CSP3/#set-response-csp-list",
+      "linkingText": [
+        "Set response’s CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "set-response-csp-list",
+        "title": "Set response’s CSP list",
+        "number": "4.1.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "report-for-request",
+      "href": "https://www.w3.org/TR/CSP3/#report-for-request",
+      "linkingText": [
+        "Report Content Security Policy violations for request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "report-for-request",
+        "title": "Report Content Security Policy violations for request",
+        "number": "4.1.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "should-block-request",
+      "href": "https://www.w3.org/TR/CSP3/#should-block-request",
+      "linkingText": [
+        "Should request be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-request",
+        "title": "Should request be blocked by Content Security Policy?",
+        "number": "4.1.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "should-block-response",
+      "href": "https://www.w3.org/TR/CSP3/#should-block-response",
+      "linkingText": [
+        "Should response to request be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-response",
+        "title": "Should response to request be blocked by Content Security Policy?",
+        "number": "4.1.4"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "global-object-csp-list",
       "href": "https://www.w3.org/TR/CSP3/#global-object-csp-list",
       "linkingText": [
@@ -1391,6 +1483,96 @@
       "definedIn": "prose"
     },
     {
+      "id": "initialize-document-csp",
+      "href": "https://www.w3.org/TR/CSP3/#initialize-document-csp",
+      "linkingText": [
+        "Initialize a Document's CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "initialize-document-csp",
+        "title": "Initialize a Document's CSP list",
+        "number": "4.2.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "initialize-global-object-csp",
+      "href": "https://www.w3.org/TR/CSP3/#initialize-global-object-csp",
+      "linkingText": [
+        "Initialize a global object’s CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "initialize-global-object-csp",
+        "title": "Initialize a global object’s CSP list",
+        "number": "4.2.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "should-block-inline",
+      "href": "https://www.w3.org/TR/CSP3/#should-block-inline",
+      "linkingText": [
+        "Should element’s inline type behavior be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-inline",
+        "title": "Should element’s inline type behavior be blocked by Content Security Policy?",
+        "number": "4.2.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "should-block-navigation-request",
+      "href": "https://www.w3.org/TR/CSP3/#should-block-navigation-request",
+      "linkingText": [
+        "Should navigation request of type be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-navigation-request",
+        "title": "Should navigation request of type be blocked by Content Security Policy?",
+        "number": "4.2.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "should-block-navigation-response",
+      "href": "https://www.w3.org/TR/CSP3/#should-block-navigation-response",
+      "linkingText": [
+        "Should navigation response to navigation request of type in target be blocked by Content Security Policy?"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "should-block-navigation-response",
+        "title": "Should navigation response to navigation request of type in target be blocked by Content Security Policy?",
+        "number": "4.2.6"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "can-compile-strings",
       "href": "https://www.w3.org/TR/CSP3/#can-compile-strings",
       "linkingText": [
@@ -1399,7 +1581,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "can-compile-strings",
@@ -1409,10 +1591,10 @@
       "definedIn": "heading"
     },
     {
-      "id": "violation-report",
-      "href": "https://www.w3.org/TR/CSP3/#violation-report",
+      "id": "csp-violation-report",
+      "href": "https://www.w3.org/TR/CSP3/#csp-violation-report",
       "linkingText": [
-        "violation report"
+        "csp violation report"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1425,6 +1607,244 @@
         "number": "5"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "cspviolationreportbody",
+      "href": "https://www.w3.org/TR/CSP3/#cspviolationreportbody",
+      "linkingText": [
+        "CSPViolationReportBody"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-documenturl",
+      "href": "https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-documenturl",
+      "linkingText": [
+        "documentURL"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-referrer",
+      "href": "https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-referrer",
+      "linkingText": [
+        "referrer"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-blockedurl",
+      "href": "https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-blockedurl",
+      "linkingText": [
+        "blockedURL"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-effectivedirective",
+      "href": "https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-effectivedirective",
+      "linkingText": [
+        "effectiveDirective"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-originalpolicy",
+      "href": "https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-originalpolicy",
+      "linkingText": [
+        "originalPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-sourcefile",
+      "href": "https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-sourcefile",
+      "linkingText": [
+        "sourceFile"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-sample",
+      "href": "https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-sample",
+      "linkingText": [
+        "sample"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-disposition",
+      "href": "https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-disposition",
+      "linkingText": [
+        "disposition"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-statuscode",
+      "href": "https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-statuscode",
+      "linkingText": [
+        "statusCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-linenumber",
+      "href": "https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cspviolationreportbody-columnnumber",
+      "href": "https://www.w3.org/TR/CSP3/#dom-cspviolationreportbody-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSPViolationReportBody"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reporting",
+        "title": "Reporting",
+        "number": "5"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "enumdef-securitypolicyviolationeventdisposition",
@@ -1485,11 +1905,31 @@
       "definedIn": "pre"
     },
     {
+      "id": "securitypolicyviolationevent",
+      "href": "https://www.w3.org/TR/CSP3/#securitypolicyviolationevent",
+      "linkingText": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-securitypolicyviolationevent-securitypolicyviolationevent",
       "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-securitypolicyviolationevent",
       "linkingText": [
         "SecurityPolicyViolationEvent(type, eventInitDict)",
-        "SecurityPolicyViolationEvent(type)"
+        "constructor(type, eventInitDict)",
+        "SecurityPolicyViolationEvent(type)",
+        "constructor(type)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -1514,7 +1954,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type, eventInitDict)"
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type, eventInitDict)",
+        "SecurityPolicyViolationEvent/constructor(type, eventInitDict)",
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type)",
+        "SecurityPolicyViolationEvent/constructor(type)"
       ],
       "access": "public",
       "informative": false,
@@ -1534,7 +1977,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type, eventInitDict)"
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type, eventInitDict)",
+        "SecurityPolicyViolationEvent/constructor(type, eventInitDict)",
+        "SecurityPolicyViolationEvent/SecurityPolicyViolationEvent(type)",
+        "SecurityPolicyViolationEvent/constructor(type)"
       ],
       "access": "public",
       "informative": false,
@@ -1546,28 +1992,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "securitypolicyviolationevent",
-      "href": "https://www.w3.org/TR/CSP3/#securitypolicyviolationevent",
+      "id": "dom-securitypolicyviolationevent-documenturl",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-documenturl",
       "linkingText": [
-        "SecurityPolicyViolationEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "violation-events",
-        "title": "Violation DOM Events",
-        "number": "5.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-securitypolicyviolationevent-documenturi",
-      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-documenturi",
-      "linkingText": [
-        "documentURI"
+        "documentURL"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1604,30 +2032,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationevent-blockeduri",
-      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-blockeduri",
+      "id": "dom-securitypolicyviolationevent-blockedurl",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-blockedurl",
       "linkingText": [
-        "blockedURI"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "SecurityPolicyViolationEvent"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "violation-events",
-        "title": "Violation DOM Events",
-        "number": "5.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-securitypolicyviolationevent-violateddirective",
-      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-violateddirective",
-      "linkingText": [
-        "violatedDirective"
+        "blockedURL"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1764,10 +2172,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationevent-linenumber",
-      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-linenumber",
+      "id": "dom-securitypolicyviolationevent-lineno",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-lineno",
       "linkingText": [
-        "lineNumber"
+        "lineno"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1784,10 +2192,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationevent-columnnumber",
-      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-columnnumber",
+      "id": "dom-securitypolicyviolationevent-colno",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-colno",
       "linkingText": [
-        "columnNumber"
+        "colno"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1822,10 +2230,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationeventinit-documenturi",
-      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-documenturi",
+      "id": "dom-securitypolicyviolationeventinit-documenturl",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-documenturl",
       "linkingText": [
-        "documentURI"
+        "documentURL"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1862,30 +2270,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationeventinit-blockeduri",
-      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-blockeduri",
+      "id": "dom-securitypolicyviolationeventinit-blockedurl",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-blockedurl",
       "linkingText": [
-        "blockedURI"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "SecurityPolicyViolationEventInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "violation-events",
-        "title": "Violation DOM Events",
-        "number": "5.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-securitypolicyviolationeventinit-violateddirective",
-      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-violateddirective",
-      "linkingText": [
-        "violatedDirective"
+        "blockedURL"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2022,10 +2410,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationeventinit-linenumber",
-      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-linenumber",
+      "id": "dom-securitypolicyviolationeventinit-lineno",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-lineno",
       "linkingText": [
-        "lineNumber"
+        "lineno"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2042,10 +2430,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationeventinit-columnnumber",
-      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-columnnumber",
+      "id": "dom-securitypolicyviolationeventinit-colno",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationeventinit-colno",
       "linkingText": [
-        "columnNumber"
+        "colno"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2060,6 +2448,106 @@
         "number": "5.1"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-documenturi",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-documenturi",
+      "linkingText": [
+        "documentURI"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-blockeduri",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-blockeduri",
+      "linkingText": [
+        "blockedURI"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-violateddirective",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-violateddirective",
+      "linkingText": [
+        "violatedDirective"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-linenumber",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-linenumber",
+      "linkingText": [
+        "lineNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-columnnumber",
+      "href": "https://www.w3.org/TR/CSP3/#dom-securitypolicyviolationevent-columnnumber",
+      "linkingText": [
+        "columnNumber"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "fetch-directives",
@@ -2224,24 +2712,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "prefetch-src",
-      "href": "https://www.w3.org/TR/CSP3/#prefetch-src",
-      "linkingText": [
-        "prefetch-src"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "directive-prefetch-src",
-        "title": "prefetch-src",
-        "number": "6.1.9"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "object-src",
       "href": "https://www.w3.org/TR/CSP3/#object-src",
       "linkingText": [
@@ -2255,6 +2725,24 @@
       "heading": {
         "id": "directive-object-src",
         "title": "object-src",
+        "number": "6.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "prefetch-src",
+      "href": "https://www.w3.org/TR/CSP3/#prefetch-src",
+      "linkingText": [
+        "prefetch-src"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "directive-prefetch-src",
+        "title": "prefetch-src",
         "number": "6.1.10"
       },
       "definedIn": "prose"
@@ -2404,10 +2892,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "plugin-types",
-      "href": "https://www.w3.org/TR/CSP3/#plugin-types",
+      "id": "allow-base-for-document",
+      "href": "https://www.w3.org/TR/CSP3/#allow-base-for-document",
       "linkingText": [
-        "plugin-types"
+        "Is base allowed for document?"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2415,81 +2903,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "directive-plugin-types",
-        "title": "plugin-types",
-        "number": "6.2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "grammardef-media-type-list",
-      "href": "https://www.w3.org/TR/CSP3/#grammardef-media-type-list",
-      "linkingText": [
-        "media-type-list"
-      ],
-      "localLinkingText": [],
-      "type": "grammar",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "directive-plugin-types",
-        "title": "plugin-types",
-        "number": "6.2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "grammardef-media-type",
-      "href": "https://www.w3.org/TR/CSP3/#grammardef-media-type",
-      "linkingText": [
-        "media-type"
-      ],
-      "localLinkingText": [],
-      "type": "grammar",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "directive-plugin-types",
-        "title": "plugin-types",
-        "number": "6.2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "plugin-types-post-request-check",
-      "href": "https://www.w3.org/TR/CSP3/#plugin-types-post-request-check",
-      "linkingText": [
-        "plugin-types Post-Request Check"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "plugin-types-post-request-check",
-        "title": "plugin-types Post-Request Check",
-        "number": "6.2.2.1"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "should-plugin-element-be-blocked-a-priori-by-content-security-policy",
-      "href": "https://www.w3.org/TR/CSP3/#should-plugin-element-be-blocked-a-priori-by-content-security-policy",
-      "linkingText": [
-        "Should plugin element be blocked a priori by Content Security Policy?:"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "should-plugin-element-be-blocked-a-priori-by-content-security-policy",
-        "title": "Should plugin element be blocked a priori by Content Security Policy?:",
-        "number": "6.2.2.2"
+        "id": "allow-base-for-document",
+        "title": "Is base allowed for document?",
+        "number": "6.2.1.1"
       },
       "definedIn": "heading"
     },
@@ -2507,7 +2923,7 @@
       "heading": {
         "id": "directive-sandbox",
         "title": "sandbox",
-        "number": "6.2.3"
+        "number": "6.2.2"
       },
       "definedIn": "prose"
     },

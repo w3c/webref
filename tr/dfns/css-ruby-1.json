@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "CSS Ruby Layout Module Level 1",
+    "title": "CSS Ruby Annotation Layout Module Level 1",
     "url": "https://www.w3.org/TR/css-ruby-1/"
   },
   "dfns": [
@@ -18,7 +18,7 @@
       "heading": {
         "id": "ruby-def",
         "title": "What is ruby?",
-        "number": "1.4"
+        "number": "1.1"
       },
       "definedIn": "prose"
     },
@@ -86,7 +86,9 @@
       "href": "https://www.w3.org/TR/css-ruby-1/#ruby-base-box",
       "linkingText": [
         "ruby base box",
-        "ruby base"
+        "ruby base",
+        "base",
+        "base box"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -126,7 +128,8 @@
       "linkingText": [
         "ruby annotation box",
         "ruby annotation",
-        "annotation"
+        "annotation",
+        "annotation box"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -167,7 +170,9 @@
         "ruby base container box",
         "ruby base container"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "base container"
+      ],
       "type": "dfn",
       "for": [],
       "access": "public",
@@ -206,7 +211,9 @@
         "ruby annotation container box",
         "ruby annotation container"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "annotation container"
+      ],
       "type": "dfn",
       "for": [],
       "access": "public",
@@ -418,6 +425,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "ruby-columns",
+      "href": "https://www.w3.org/TR/css-ruby-1/#ruby-columns",
+      "linkingText": [
+        "ruby columns"
+      ],
+      "localLinkingText": [
+        "column"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ruby-pairing",
+        "title": "Annotation Pairing",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "ruby-segments",
       "href": "https://www.w3.org/TR/css-ruby-1/#ruby-segments",
       "linkingText": [
@@ -474,29 +501,33 @@
       "definedIn": "prose"
     },
     {
-      "id": "nested-ruby",
-      "href": "https://www.w3.org/TR/css-ruby-1/#nested-ruby",
+      "id": "hidden-annotation",
+      "href": "https://www.w3.org/TR/css-ruby-1/#hidden-annotation",
       "linkingText": [
-        "nested ruby"
+        "hidden annotation",
+        "hidden ruby annotation",
+        "hide"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "hidden"
+      ],
       "type": "dfn",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "nested-pairing",
-        "title": "Complex Spanning with Nested Ruby",
-        "number": "2.3.3"
+        "id": "hiding",
+        "title": "Hiding Annotations: visibility: collapse and auto-hidden ruby",
+        "number": "2.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "hidden-ruby-annotation",
-      "href": "https://www.w3.org/TR/css-ruby-1/#hidden-ruby-annotation",
+      "id": "auto-hidden",
+      "href": "https://www.w3.org/TR/css-ruby-1/#auto-hidden",
       "linkingText": [
-        "hidden ruby annotation",
-        "hidden annotation"
+        "auto-hidden",
+        "auto-hide"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -504,8 +535,8 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "autohide",
-        "title": "Autohiding Base-identical Annotations",
+        "id": "hiding",
+        "title": "Hiding Annotations: visibility: collapse and auto-hidden ruby",
         "number": "2.4"
       },
       "definedIn": "prose"
@@ -527,6 +558,26 @@
         "number": "4.1"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "valdef-ruby-position-alternate",
+      "href": "https://www.w3.org/TR/css-ruby-1/#valdef-ruby-position-alternate",
+      "linkingText": [
+        "alternate"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ruby-position"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rubypos",
+        "title": "Ruby Positioning: the ruby-position property",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "valdef-ruby-position-over",
@@ -589,6 +640,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "ruby-position-inter-character-annotation",
+      "href": "https://www.w3.org/TR/css-ruby-1/#ruby-position-inter-character-annotation",
+      "linkingText": [
+        "inter-character annotation"
+      ],
+      "localLinkingText": [
+        "inter-character"
+      ],
+      "type": "dfn",
+      "for": [
+        "ruby-position"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rubypos",
+        "title": "Ruby Positioning: the ruby-position property",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interlinear-annotations",
+      "href": "https://www.w3.org/TR/css-ruby-1/#interlinear-annotations",
+      "linkingText": [
+        "interlinear annotations"
+      ],
+      "localLinkingText": [
+        "interlinear"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rubypos",
+        "title": "Ruby Positioning: the ruby-position property",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "propdef-ruby-merge",
       "href": "https://www.w3.org/TR/css-ruby-1/#propdef-ruby-merge",
       "linkingText": [
@@ -607,10 +700,11 @@
       "definedIn": "table"
     },
     {
-      "id": "collapsed-annotation",
-      "href": "https://www.w3.org/TR/css-ruby-1/#collapsed-annotation",
+      "id": "merged-annotation",
+      "href": "https://www.w3.org/TR/css-ruby-1/#merged-annotation",
       "linkingText": [
-        "collapsed annotation"
+        "merged annotation",
+        "merged"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -645,10 +739,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "valdef-ruby-merge-collapse",
-      "href": "https://www.w3.org/TR/css-ruby-1/#valdef-ruby-merge-collapse",
+      "id": "valdef-ruby-merge-merge",
+      "href": "https://www.w3.org/TR/css-ruby-1/#valdef-ruby-merge-merge",
       "linkingText": [
-        "collapse"
+        "merge"
       ],
       "localLinkingText": [],
       "type": "value",

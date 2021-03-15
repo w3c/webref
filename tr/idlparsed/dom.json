@@ -1235,11 +1235,33 @@
         "partial": false
       },
       "AbortSignal": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface AbortSignal : EventTarget {\n  readonly attribute boolean aborted;\n\n  attribute EventHandler onabort;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort();\n\n  readonly attribute boolean aborted;\n\n  attribute EventHandler onabort;\n};",
         "type": "interface",
         "name": "AbortSignal",
         "inheritance": "EventTarget",
         "members": [
+          {
+            "type": "operation",
+            "name": "abort",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AbortSignal"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "static"
+          },
           {
             "type": "attribute",
             "name": "aborted",
@@ -10510,6 +10532,7 @@
       ],
       "AbortSignal": [
         "EventTarget",
+        "AbortSignal",
         "EventHandler"
       ],
       "NonElementParentNode": [

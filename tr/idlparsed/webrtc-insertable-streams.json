@@ -26,6 +26,46 @@
       }
     },
     "idlNames": {
+      "RTCInsertableStreams": {
+        "fragment": "// New dictionary\ndictionary RTCInsertableStreams {\n    ReadableStream readable;\n    WritableStream writable;\n};",
+        "type": "dictionary",
+        "name": "RTCInsertableStreams",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "readable",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ReadableStream"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "writable",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WritableStream"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "RTCRtpTransform": {
         "fragment": "typedef (SFrameTransform or RTCRtpScriptTransform) RTCRtpTransform;",
         "type": "typedef",
@@ -572,7 +612,7 @@
         "partial": false
       },
       "RTCTransformEvent": {
-        "fragment": "// New interfaces to expose JavaScript-based transforms.\n\n[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface RTCTransformEvent : Event {\n    readonly attribute RTCRtpScriptTransformer transformer;\n};",
+        "fragment": "// New interfaces to expose JavaScript-based transforms.\n\n[Exposed=DedicatedWorker]\ninterface RTCTransformEvent : Event {\n    readonly attribute RTCRtpScriptTransformer transformer;\n};",
         "type": "interface",
         "name": "RTCTransformEvent",
         "inheritance": "Event",
@@ -596,22 +636,6 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "Global",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "DedicatedWorker"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
@@ -623,7 +647,7 @@
         "partial": false
       },
       "RTCRtpScriptTransformer": {
-        "fragment": "[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer {\n    readonly attribute ReadableStream readable;\n    readonly attribute WritableStream writable;\n    readonly attribute any options;\n};",
+        "fragment": "[Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer {\n    readonly attribute ReadableStream readable;\n    readonly attribute WritableStream writable;\n    readonly attribute any options;\n};",
         "type": "interface",
         "name": "RTCRtpScriptTransformer",
         "inheritance": null,
@@ -677,22 +701,6 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "Global",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "DedicatedWorker"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
@@ -704,7 +712,7 @@
         "partial": false
       },
       "RTCRtpScriptTransform": {
-        "fragment": "[Exposed=(Window)]\ninterface RTCRtpScriptTransform {\n    constructor(Worker worker, optional any options);\n    // FIXME: add messaging methods.\n};",
+        "fragment": "[Exposed=Window]\ninterface RTCRtpScriptTransform {\n    constructor(Worker worker, optional any options);\n    // FIXME: add messaging methods.\n};",
         "type": "interface",
         "name": "RTCRtpScriptTransform",
         "inheritance": null,
@@ -753,12 +761,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                }
-              ]
+              "type": "identifier",
+              "value": "Window"
             },
             "arguments": []
           }
@@ -918,16 +922,7 @@
         }
       ]
     },
-    "globals": {
-      "Worker": [
-        "RTCTransformEvent",
-        "RTCRtpScriptTransformer"
-      ],
-      "DedicatedWorker": [
-        "RTCTransformEvent",
-        "RTCRtpScriptTransformer"
-      ]
-    },
+    "globals": {},
     "exposed": {
       "Window": [
         "SFrameTransform",
@@ -942,6 +937,10 @@
       ]
     },
     "dependencies": {
+      "RTCInsertableStreams": [
+        "ReadableStream",
+        "WritableStream"
+      ],
       "RTCConfiguration": [],
       "RTCRtpSender": [
         "RTCInsertableStreams",
@@ -984,16 +983,15 @@
       ]
     },
     "externalDependencies": [
+      "ReadableStream",
+      "WritableStream",
       "RTCConfiguration",
       "RTCRtpSender",
-      "RTCInsertableStreams",
       "RTCRtpReceiver",
       "CryptoKey",
       "Event",
       "DedicatedWorkerGlobalScope",
       "EventHandler",
-      "ReadableStream",
-      "WritableStream",
       "Worker"
     ],
     "hasObsoleteIdl": false

@@ -7,7 +7,7 @@
     {
       "id": "subtitle",
       "level": 2,
-      "title": "W3C Working Draft, 15 October 2018"
+      "title": "W3C Working Draft, 13 March 2021"
     },
     {
       "id": "abstract",
@@ -207,13 +207,13 @@
     {
       "id": "should-block-navigation-request",
       "level": 4,
-      "title": "Should navigation request of type from source in target be blocked by Content Security Policy?",
+      "title": "Should navigation request of type be blocked by Content Security Policy?",
       "number": "4.2.5"
     },
     {
       "id": "should-block-navigation-response",
       "level": 4,
-      "title": "Should navigation response to navigation request of type from source in target be blocked by Content Security Policy?",
+      "title": "Should navigation response to navigation request of type in target be blocked by Content Security Policy?",
       "number": "4.2.6"
     },
     {
@@ -415,39 +415,39 @@
       "number": "6.1.8.2"
     },
     {
-      "id": "directive-prefetch-src",
-      "level": 4,
-      "title": "prefetch-src",
-      "number": "6.1.9"
-    },
-    {
-      "id": "prefetch-src-pre-request",
-      "level": 5,
-      "title": "prefetch-src Pre-request check",
-      "number": "6.1.9.1"
-    },
-    {
-      "id": "prefetch-src-post-request",
-      "level": 5,
-      "title": "prefetch-src Post-request check",
-      "number": "6.1.9.2"
-    },
-    {
       "id": "directive-object-src",
       "level": 4,
       "title": "object-src",
-      "number": "6.1.10"
+      "number": "6.1.9"
     },
     {
       "id": "object-src-pre-request",
       "level": 5,
       "title": "object-src Pre-request check",
-      "number": "6.1.10.1"
+      "number": "6.1.9.1"
     },
     {
       "id": "object-src-post-request",
       "level": 5,
       "title": "object-src Post-request check",
+      "number": "6.1.9.2"
+    },
+    {
+      "id": "directive-prefetch-src",
+      "level": 4,
+      "title": "prefetch-src",
+      "number": "6.1.10"
+    },
+    {
+      "id": "prefetch-src-pre-request",
+      "level": 5,
+      "title": "prefetch-src Pre-request check",
+      "number": "6.1.10.1"
+    },
+    {
+      "id": "prefetch-src-post-request",
+      "level": 5,
+      "title": "prefetch-src Post-request check",
       "number": "6.1.10.2"
     },
     {
@@ -607,40 +607,22 @@
       "number": "6.2.1.1"
     },
     {
-      "id": "directive-plugin-types",
-      "level": 4,
-      "title": "plugin-types",
-      "number": "6.2.2"
-    },
-    {
-      "id": "plugin-types-post-request-check",
-      "level": 5,
-      "title": "plugin-types Post-Request Check",
-      "number": "6.2.2.1"
-    },
-    {
-      "id": "should-plugin-element-be-blocked-a-priori-by-content-security-policy",
-      "level": 5,
-      "title": "Should plugin element be blocked a priori by Content Security Policy?:",
-      "number": "6.2.2.2"
-    },
-    {
       "id": "directive-sandbox",
       "level": 4,
       "title": "sandbox",
-      "number": "6.2.3"
+      "number": "6.2.2"
     },
     {
       "id": "sandbox-response",
       "level": 5,
       "title": "sandbox Response Check",
-      "number": "6.2.3.1"
+      "number": "6.2.2.1"
     },
     {
       "id": "sandbox-init",
       "level": 5,
       "title": "sandbox Initialization",
-      "number": "6.2.3.2"
+      "number": "6.2.2.2"
     },
     {
       "id": "directives-navigation",
@@ -877,10 +859,22 @@
       "number": "7.1"
     },
     {
-      "id": "security-nonce-stealing",
+      "id": "security-nonce-hijacking",
       "level": 3,
-      "title": "Nonce Stealing",
+      "title": "Nonce Hijacking",
       "number": "7.2"
+    },
+    {
+      "id": "dangling-markup-attacks",
+      "level": 4,
+      "title": "Dangling markup attacks",
+      "number": "7.2.1"
+    },
+    {
+      "id": "nonce-exfiltration-content-attributes",
+      "level": 4,
+      "title": "Nonce exfiltration via content attributes",
+      "number": "7.2.2"
     },
     {
       "id": "security-nonce-retargeting",
