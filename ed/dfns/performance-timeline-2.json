@@ -131,10 +131,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-has-dropped-entry",
-      "href": "https://w3c.github.io/performance-timeline/#dfn-has-dropped-entry",
+      "id": "dfn-dropped-entries-count",
+      "href": "https://w3c.github.io/performance-timeline/#dfn-dropped-entries-count",
       "linkingText": [
-        "has dropped entry"
+        "dropped entries count"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -577,6 +577,44 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-performanceobservercallbackoptions",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobservercallbackoptions",
+      "linkingText": [
+        "PerformanceObserverCallbackOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performanceobservercallbackoptions-dictionary",
+        "title": "PerformanceObserverCallbackOptions dictionary",
+        "number": "5.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-performanceobservercallbackoptions-droppedentriescount",
+      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobservercallbackoptions-droppedentriescount",
+      "linkingText": [
+        "droppedEntriesCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceObserverCallbackOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performanceobservercallbackoptions-dictionary",
+        "title": "PerformanceObserverCallbackOptions dictionary",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-performanceobserver-observe",
       "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-observe",
       "linkingText": [
@@ -597,7 +635,7 @@
       "heading": {
         "id": "observe-method",
         "title": "observe() method",
-        "number": "5.1"
+        "number": "5.2"
       },
       "definedIn": "heading"
     },
@@ -615,7 +653,7 @@
       "heading": {
         "id": "observe-method",
         "title": "observe() method",
-        "number": "5.1"
+        "number": "5.2"
       },
       "definedIn": "prose"
     },
@@ -633,7 +671,7 @@
       "heading": {
         "id": "performanceobserverinit-dictionary",
         "title": "PerformanceObserverInit dictionary",
-        "number": "5.1.1"
+        "number": "5.2.1"
       },
       "definedIn": "heading"
     },
@@ -653,7 +691,7 @@
       "heading": {
         "id": "performanceobserverinit-dictionary",
         "title": "PerformanceObserverInit dictionary",
-        "number": "5.1.1"
+        "number": "5.2.1"
       },
       "definedIn": "dt"
     },
@@ -673,7 +711,7 @@
       "heading": {
         "id": "performanceobserverinit-dictionary",
         "title": "PerformanceObserverInit dictionary",
-        "number": "5.1.1"
+        "number": "5.2.1"
       },
       "definedIn": "dt"
     },
@@ -693,7 +731,7 @@
       "heading": {
         "id": "performanceobserverinit-dictionary",
         "title": "PerformanceObserverInit dictionary",
-        "number": "5.1.1"
+        "number": "5.2.1"
       },
       "definedIn": "dt"
     },
@@ -711,7 +749,7 @@
       "heading": {
         "id": "performanceobserverentrylist-interface",
         "title": "PerformanceObserverEntryList interface",
-        "number": "5.1.2"
+        "number": "5.2.2"
       },
       "definedIn": "heading"
     },
@@ -729,7 +767,7 @@
       "heading": {
         "id": "performanceobserverentrylist-interface",
         "title": "PerformanceObserverEntryList interface",
-        "number": "5.1.2"
+        "number": "5.2.2"
       },
       "definedIn": "prose"
     },
@@ -753,7 +791,7 @@
       "heading": {
         "id": "getentries-method-0",
         "title": "getEntries() method",
-        "number": "5.1.2.1"
+        "number": "5.2.2.1"
       },
       "definedIn": "heading"
     },
@@ -778,7 +816,7 @@
       "heading": {
         "id": "getentriesbytype-method-0",
         "title": "getEntriesByType() method",
-        "number": "5.1.2.2"
+        "number": "5.2.2.2"
       },
       "definedIn": "heading"
     },
@@ -804,7 +842,7 @@
       "heading": {
         "id": "getentriesbyname-method-0",
         "title": "getEntriesByName() method",
-        "number": "5.1.2.3"
+        "number": "5.2.2.3"
       },
       "definedIn": "heading"
     },
@@ -828,7 +866,7 @@
       "heading": {
         "id": "takerecords-method",
         "title": "takeRecords() method",
-        "number": "5.2"
+        "number": "5.3"
       },
       "definedIn": "heading"
     },
@@ -852,7 +890,7 @@
       "heading": {
         "id": "disconnect-method",
         "title": "disconnect() method",
-        "number": "5.3"
+        "number": "5.4"
       },
       "definedIn": "heading"
     },
@@ -870,7 +908,7 @@
       "heading": {
         "id": "supportedentrytypes-attribute",
         "title": "supportedEntryTypes attribute",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "prose"
     },
@@ -892,7 +930,7 @@
       "heading": {
         "id": "supportedentrytypes-attribute",
         "title": "supportedEntryTypes attribute",
-        "number": "5.4"
+        "number": "5.5"
       },
       "definedIn": "prose"
     },
