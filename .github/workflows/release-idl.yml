@@ -47,6 +47,6 @@ jobs:
       uses: softprops/action-gh-release@v1
       if: steps.publish.outputs.type != 'none'
       with:
-        name: @webref/idl@${{ steps.publish.outputs.version }}
+        name: '@webref/idl@${{ steps.publish.outputs.version }}'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
