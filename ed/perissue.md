@@ -2,7 +2,7 @@
 % Reffy
 % March 15, 2021
 
-384 specifications were crawled in this report.
+386 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
@@ -11,6 +11,7 @@
 - [ContentEditable](https://w3c.github.io/contentEditable/)
 - [ECMAScript® 2022 Internationalization API Specification](https://tc39.es/ecma402/)
 - [ECMAScript® 2022 Language Specification](https://tc39.es/ecma262/)
+- [Error Cause](https://tc39.es/proposal-error-cause/)
 - [import assertions](https://tc39.es/proposal-import-assertions/)
 - [JSON modules](https://tc39.es/proposal-json-modules/)
 - [Private Fields in `in`](https://tc39.es/proposal-private-fields-in-in/)
@@ -19,6 +20,7 @@
 - [RegExp Match Indices](https://tc39.es/proposal-regexp-match-indices/)
 - [Relative Indexing Method](https://tc39.es/proposal-relative-indexing-method/)
 - [Static class features](https://tc39.es/proposal-static-class-features/)
+- [Temporal proposal](https://tc39.es/proposal-temporal/)
 - [Top-Level Await](https://tc39.es/proposal-top-level-await/)
 - [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
 - [WebGL EXT_blend_minmax Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
@@ -63,7 +65,7 @@
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 55 specifications found
+=> 57 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -780,6 +782,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Background Fetch](https://wicg.github.io/background-fetch/) links to:
     * [`https://storage.spec.whatwg.org/`](https://storage.spec.whatwg.org/) but does not list it in its references
     * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/) but does not list it in its references
+- [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/) links to [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/) but does not list it in its references
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/) links to [`https://w3c.github.io/device-memory/`](https://w3c.github.io/device-memory/) but does not list it in its references
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
 - [Compatibility Standard](https://compat.spec.whatwg.org/) links to:
@@ -1285,6 +1288,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/) links to [`https://w3c.github.io/webrtc-extensions/`](https://w3c.github.io/webrtc-extensions/) but does not list it in its references
 - [import assertions](https://tc39.es/proposal-import-assertions/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
+- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/) links to:
+    * [`https://www.w3.org/TR/2015/REC-IndexedDB-20150108/`](https://www.w3.org/TR/2015/REC-IndexedDB-20150108/) but does not list it in its references
+    * [`https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/`](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/) but does not list it in its references
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/) links to:
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but does not list it in its references
     * [`https://www.w3.org/TR/css-masking-1/`](https://www.w3.org/TR/css-masking-1/) but does not list it in its references
@@ -1435,7 +1441,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/webappsec/specs/powerfulfeatures/`](https://w3c.github.io/webappsec/specs/powerfulfeatures/) but does not list it in its references
     * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/) but does not list it in its references
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/) links to [`https://w3c.github.io/fingerprinting-guidance/`](https://w3c.github.io/fingerprinting-guidance/) but does not list it in its references
-- [Web Locks API](https://wicg.github.io/web-locks/) links to [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
+- [Web Locks API](https://wicg.github.io/web-locks/) links to:
+    * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/) but does not list it in its references
+    * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [Web Share API](https://w3c.github.io/web-share/) links to [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/) but does not list it in its references
 - [WebAssembly Core Specification](https://webassembly.github.io/spec/core/bikeshed/) links to:
     * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/) but does not list it in its references
@@ -1461,7 +1469,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 576 missing references for links found in 164 specifications
+=> 580 missing references for links found in 166 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1489,7 +1497,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/) links to:
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
-    * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/) but related reference "INDEXEDDB" uses URL [`https://www.w3.org/TR/IndexedDB/`](https://www.w3.org/TR/IndexedDB/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/) links to:
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
@@ -1815,9 +1822,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
-- [Web Locks API](https://wicg.github.io/web-locks/) links to:
-    * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/) but related reference "IndexedDB-2" uses URL [`https://www.w3.org/TR/IndexedDB-2/`](https://www.w3.org/TR/IndexedDB-2/)
-    * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "Service-Workers" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
+- [Web Locks API](https://wicg.github.io/web-locks/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "Service-Workers" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 - [Web OTP API](https://wicg.github.io/web-otp/) links to [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/) but related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/) links to:
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
@@ -1843,7 +1848,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 312 inconsistent references for links found in 176 specifications
+=> 310 inconsistent references for links found in 176 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -4764,6 +4769,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/):
      * [`https://www.w3.org/TR/2015/REC-IndexedDB-20150108/`](https://www.w3.org/TR/2015/REC-IndexedDB-20150108/)
+     * [`https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/`](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/):
      * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/):
@@ -4836,6 +4842,6 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
-=> 142 problematic external links found in 54 specifications
+=> 143 problematic external links found in 54 specifications
 
 

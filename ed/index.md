@@ -480,7 +480,7 @@ Informative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 
 
-## Clear Site Data {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## Clear Site Data {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -493,10 +493,11 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for links: 
+     * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
      * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
-     * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/), related reference "INDEXEDDB" uses URL [`https://www.w3.org/TR/IndexedDB/`](https://www.w3.org/TR/IndexedDB/)
 - External links to private terms:
      * [`https://fetch.spec.whatwg.org/#concept-http-network-fetch`](https://fetch.spec.whatwg.org/#concept-http-network-fetch)
      * [`https://w3c.github.io/IndexedDB/#database`](https://w3c.github.io/IndexedDB/#database)
@@ -6731,6 +6732,27 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
+## Error Cause {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-error-cause/](https://tc39.es/proposal-error-cause/)
+- Crawled URL: [https://tc39.es/proposal-error-cause/](https://tc39.es/proposal-error-cause/)
+- Crawled version: 10 March 2021
+- Editor's Draft: [https://tc39.es/proposal-error-cause/](https://tc39.es/proposal-error-cause/)
+- Shortname: tc39-error-cause
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Event Timing API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -8974,19 +8996,22 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Indexed Database API 3.0 {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## Indexed Database API 3.0 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
-- Initial URL: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
+- Initial URL: [https://www.w3.org/TR/IndexedDB-3/](https://www.w3.org/TR/IndexedDB-3/)
 - Crawled URL: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
 - Crawled version: 11 March 2021
 - Editor's Draft: [https://w3c.github.io/IndexedDB/](https://w3c.github.io/IndexedDB/)
-- Latest published version: [https://www.w3.org/TR/IndexedDB-2/](https://www.w3.org/TR/IndexedDB-2/)
-- Shortname: IndexedDB-2
+- Latest published version: [https://www.w3.org/TR/IndexedDB-3/](https://www.w3.org/TR/IndexedDB-3/)
+- Shortname: IndexedDB-3
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2015/REC-IndexedDB-20150108/`](https://www.w3.org/TR/2015/REC-IndexedDB-20150108/)
+     * [`https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/`](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - External links to private terms:
@@ -8999,23 +9024,17 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/webstorage/`](https://www.w3.org/TR/webstorage/)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2015/REC-IndexedDB-20150108/`](https://www.w3.org/TR/2015/REC-IndexedDB-20150108/)
+     * [`https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/`](https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Presentation API](https://w3c.github.io/presentation-api/)
 
 Informative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
-- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
-- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
-- [Web Cryptography API](https://w3c.github.io/webcrypto/)
-- [Web Locks API](https://wicg.github.io/web-locks/)
-- [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 
 
 ## Infra Standard {data-spec=true data-missingDfns=true data-xrefs=true data-ok=true}
@@ -11142,7 +11161,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/picture-in-picture/](https://www.w3.org/TR/picture-in-picture/)
 - Crawled URL: [https://w3c.github.io/picture-in-picture/](https://w3c.github.io/picture-in-picture/)
-- Crawled version: 15 October 2020
+- Crawled version: 15 March 2021
 - Editor's Draft: [https://w3c.github.io/picture-in-picture/](https://w3c.github.io/picture-in-picture/)
 - Latest published version: [https://www.w3.org/TR/picture-in-picture/](https://www.w3.org/TR/picture-in-picture/)
 - Shortname: picture-in-picture
@@ -12917,6 +12936,27 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Temporal proposal {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
+- Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
+- Crawled version: 14 March 2021
+- Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
+- Shortname: tc39-temporal
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Text Fragments {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -14228,9 +14268,9 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
+     * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/)
      * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/), related reference "IndexedDB-2" uses URL [`https://www.w3.org/TR/IndexedDB-2/`](https://www.w3.org/TR/IndexedDB-2/)
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "Service-Workers" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 - External links to private terms:
      * [`https://storage.spec.whatwg.org/#storage-shelf`](https://storage.spec.whatwg.org/#storage-shelf)

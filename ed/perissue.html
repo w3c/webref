@@ -20,7 +20,7 @@
 <body>
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/w3c/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
-  <p>384 specifications were crawled in this report.</p>
+  <p>386 specifications were crawled in this report.</p>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -28,6 +28,7 @@
   <li><a href="https://w3c.github.io/contentEditable/">ContentEditable</a></li>
   <li><a href="https://tc39.es/ecma402/">ECMAScript® 2022 Internationalization API Specification</a></li>
   <li><a href="https://tc39.es/ecma262/">ECMAScript® 2022 Language Specification</a></li>
+  <li><a href="https://tc39.es/proposal-error-cause/">Error Cause</a></li>
   <li><a href="https://tc39.es/proposal-import-assertions/">import assertions</a></li>
   <li><a href="https://tc39.es/proposal-json-modules/">JSON modules</a></li>
   <li><a href="https://tc39.es/proposal-private-fields-in-in/">Private Fields in <code>in</code></a></li>
@@ -36,6 +37,7 @@
   <li><a href="https://tc39.es/proposal-regexp-match-indices/">RegExp Match Indices</a></li>
   <li><a href="https://tc39.es/proposal-relative-indexing-method/">Relative Indexing Method</a></li>
   <li><a href="https://tc39.es/proposal-static-class-features/">Static class features</a></li>
+  <li><a href="https://tc39.es/proposal-temporal/">Temporal proposal</a></li>
   <li><a href="https://tc39.es/proposal-top-level-await/">Top-Level Await</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/">WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/">WebGL EXT_blend_minmax Khronos Ratified Extension Specification</a></li>
@@ -80,7 +82,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/">WebGL WEBGL_multi_draw Extension Specification</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/">WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification</a></li>
   </ul>
-  <p>=&gt; 55 specifications found</p>
+  <p>=&gt; 57 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
   </section>
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
@@ -911,6 +913,7 @@
   <li><a href="https://storage.spec.whatwg.org/"><code>https://storage.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/webdriver/"><code>https://w3c.github.io/webdriver/</code></a> but does not list it in its references</li>
   </ul></li>
+  <li><a href="https://w3c.github.io/webappsec-clear-site-data/">Clear Site Data</a> links to <a href="https://w3c.github.io/IndexedDB/"><code>https://w3c.github.io/IndexedDB/</code></a> but does not list it in its references</li>
   <li><a href="https://wicg.github.io/client-hints-infrastructure/">Client Hints Infrastructure</a> links to <a href="https://w3c.github.io/device-memory/"><code>https://w3c.github.io/device-memory/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a> links to <a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a> but does not list it in its references</li>
   <li><a href="https://compat.spec.whatwg.org/">Compatibility Standard</a> links to:
@@ -1592,6 +1595,11 @@
   </ul></li>
   <li><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> links to <a href="https://w3c.github.io/webrtc-extensions/"><code>https://w3c.github.io/webrtc-extensions/</code></a> but does not list it in its references</li>
   <li><a href="https://tc39.es/proposal-import-assertions/">import assertions</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 3.0</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2015/REC-IndexedDB-20150108/"><code>https://www.w3.org/TR/2015/REC-IndexedDB-20150108/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/"><code>https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a> but does not list it in its references</li>
@@ -1788,7 +1796,11 @@
   <li><a href="https://notifications.spec.whatwg.org/"><code>https://notifications.spec.whatwg.org/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a> links to <a href="https://w3c.github.io/fingerprinting-guidance/"><code>https://w3c.github.io/fingerprinting-guidance/</code></a> but does not list it in its references</li>
-  <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a> links to <a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
+  <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/IndexedDB/"><code>https://w3c.github.io/IndexedDB/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://w3c.github.io/web-share/">Web Share API</a> links to <a href="https://www.w3.org/TR/web-intents/"><code>https://www.w3.org/TR/web-intents/</code></a> but does not list it in its references</li>
   <li><a href="https://webassembly.github.io/spec/core/bikeshed/">WebAssembly Core Specification</a> links to:
   <ul>
@@ -1824,7 +1836,7 @@
   </ul></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 576 missing references for links found in 164 specifications</p>
+  <p>=&gt; 580 missing references for links found in 166 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -1855,7 +1867,6 @@
   <ul>
   <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/"><code>https://w3c.github.io/webappsec-mixed-content/</code></a> but related reference &quot;MIXED-CONTENT&quot; uses URL <a href="https://www.w3.org/TR/mixed-content/"><code>https://www.w3.org/TR/mixed-content/</code></a></li>
-  <li><a href="https://w3c.github.io/IndexedDB/"><code>https://w3c.github.io/IndexedDB/</code></a> but related reference &quot;INDEXEDDB&quot; uses URL <a href="https://www.w3.org/TR/IndexedDB/"><code>https://www.w3.org/TR/IndexedDB/</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a> links to:
   <ul>
@@ -2286,11 +2297,7 @@
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   <li><a href="https://www.w3.org/TR/page-visibility-2/"><code>https://www.w3.org/TR/page-visibility-2/</code></a> but related reference &quot;PAGE-VISIBILITY&quot; uses URL <a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a></li>
   </ul></li>
-  <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a> links to:
-  <ul>
-  <li><a href="https://w3c.github.io/IndexedDB/"><code>https://w3c.github.io/IndexedDB/</code></a> but related reference &quot;IndexedDB-2&quot; uses URL <a href="https://www.w3.org/TR/IndexedDB-2/"><code>https://www.w3.org/TR/IndexedDB-2/</code></a></li>
-  <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;Service-Workers&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
-  </ul></li>
+  <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;Service-Workers&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   <li><a href="https://wicg.github.io/web-otp/">Web OTP API</a> links to <a href="https://w3c.github.io/webappsec-credential-management/"><code>https://w3c.github.io/webappsec-credential-management/</code></a> but related reference &quot;CREDENTIAL-MANAGEMENT-1&quot; uses URL <a href="https://www.w3.org/TR/credential-management-1/"><code>https://www.w3.org/TR/credential-management-1/</code></a></li>
   <li><a href="https://wicg.github.io/periodic-background-sync/">Web Periodic Background Synchronization</a> links to:
   <ul>
@@ -2324,7 +2331,7 @@
   <li><a href="https://immersive-web.github.io/webxr-gamepads-module/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   <li><a href="https://immersive-web.github.io/webxr-hand-input/">WebXR Hand Input Module - Level 1</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   </ul>
-  <p>=&gt; 312 inconsistent references for links found in 176 specifications</p>
+  <p>=&gt; 310 inconsistent references for links found in 176 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   <section id="external-links-to-private-terms" class="level2">
@@ -6205,6 +6212,7 @@
   <li><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 3.0</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/2015/REC-IndexedDB-20150108/"><code>https://www.w3.org/TR/2015/REC-IndexedDB-20150108/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/"><code>https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content Level 2</a>:
   <ul>
@@ -6308,7 +6316,7 @@
   <li><a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 142 problematic external links found in 54 specifications</p>
+  <p>=&gt; 143 problematic external links found in 54 specifications</p>
   </section>
   </body>
 </html>
