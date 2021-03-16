@@ -437,11 +437,26 @@
         "partial": false
       },
       "WebTransportOptions": {
-        "fragment": "dictionary WebTransportOptions {\n  sequence<RTCDtlsFingerprint> serverCertificateFingerprints;\n};",
+        "fragment": "dictionary WebTransportOptions {\n  bool allowPooling;\n  sequence<RTCDtlsFingerprint> serverCertificateFingerprints;\n};",
         "type": "dictionary",
         "name": "WebTransportOptions",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "allowPooling",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "bool"
+            },
+            "default": null,
+            "required": false
+          },
           {
             "type": "field",
             "name": "serverCertificateFingerprints",
@@ -1099,6 +1114,7 @@
         "DatagramTransport"
       ],
       "WebTransportOptions": [
+        "bool",
         "RTCDtlsFingerprint"
       ],
       "WebTransportCloseInfo": [],
@@ -1129,6 +1145,7 @@
       "ReadableStream",
       "WritableStream",
       "EventHandler",
+      "bool",
       "RTCDtlsFingerprint",
       "DOMHighResTimeStamp"
     ],
