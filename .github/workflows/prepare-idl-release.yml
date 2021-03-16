@@ -50,7 +50,7 @@ jobs:
       run: |
         echo 'TEST_VAR<<EOF' >> $GITHUB_ENV
         echo 'test' >> $GITHUB_ENV
-        echo 'EOF' >> $ GITHUB_ENV
+        echo 'EOF' >> $GITHUB_ENV
 
     - name: Test diff command
       run: |
