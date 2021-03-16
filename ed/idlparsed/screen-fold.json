@@ -6,13 +6,77 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "DevicePosture"
+        ]
+      }
     },
     "idlNames": {
       "DevicePosture": {
-        "fragment": "enum DevicePosture {\n  \"no-fold\",\n  \"laptop\",\n  \"flat\",\n  \"tent\",\n  \"tablet\",\n  \"book\"\n};",
-        "type": "enum",
+        "fragment": "[SecureContext, Exposed=(Window)]\ninterface DevicePosture : EventTarget {\n  readonly attribute DevicePostureType type;\n  attribute EventHandler onchange;\n};",
+        "type": "interface",
         "name": "DevicePosture",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DevicePostureType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "onchange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "DevicePostureType": {
+        "fragment": "enum DevicePostureType {\n  \"no-fold\",\n  \"laptop\",\n  \"flat\",\n  \"tent\",\n  \"tablet\",\n  \"book\"\n};",
+        "type": "enum",
+        "name": "DevicePostureType",
         "values": [
           {
             "type": "enum-value",
@@ -86,14 +150,25 @@
       ]
     },
     "globals": {},
-    "exposed": {},
-    "dependencies": {
-      "Screen": [
+    "exposed": {
+      "Window": [
         "DevicePosture"
       ]
     },
+    "dependencies": {
+      "Screen": [
+        "DevicePosture"
+      ],
+      "DevicePosture": [
+        "EventTarget",
+        "DevicePostureType",
+        "EventHandler"
+      ]
+    },
     "externalDependencies": [
-      "Screen"
+      "Screen",
+      "EventTarget",
+      "EventHandler"
     ],
     "hasObsoleteIdl": false
   }

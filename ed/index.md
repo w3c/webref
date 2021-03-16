@@ -1628,7 +1628,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Crawled URL: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 15 March 2021
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Shortname: css-ui-4
@@ -4405,7 +4405,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-pseudo-4/](https://www.w3.org/TR/css-pseudo-4/)
 - Crawled URL: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 16 March 2021
 - Editor's Draft: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
 - Latest published version: [https://www.w3.org/TR/css-pseudo-4/](https://www.w3.org/TR/css-pseudo-4/)
 - Shortname: css-pseudo-4
@@ -6170,7 +6170,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
 - Crawled URL: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
-- Crawled version: 10 March 2021
+- Crawled version: 16 March 2021
 - Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Latest published version: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
 - Shortname: screen-fold
@@ -16266,7 +16266,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebTransport {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true}
+## WebTransport {data-spec=true data-missingDfns=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -16278,7 +16278,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `bool`
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 

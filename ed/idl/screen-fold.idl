@@ -8,7 +8,13 @@ partial interface Screen {
   [SameObject] readonly attribute DevicePosture posture;
 };
 
-enum DevicePosture {
+[SecureContext, Exposed=(Window)]
+interface DevicePosture : EventTarget {
+  readonly attribute DevicePostureType type;
+  attribute EventHandler onchange;
+};
+
+enum DevicePostureType {
   "no-fold",
   "laptop",
   "flat",
