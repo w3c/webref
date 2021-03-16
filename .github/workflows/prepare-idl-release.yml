@@ -7,7 +7,7 @@
 # - Cleanup job on Wednesday
 # - (This job) New @webref/idl package release on Thursday
 
-name: Prepare new @webref/idl release PR if needed
+name: "@webref/idl: Prepare release PR if needed"
 
 on:
   schedule:
@@ -70,8 +70,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         path: webref
-        title: Release version ${{ env.RELEASE_VERSION }} of @webref/idl
-        commit-message: "Release version ${{ env.RELEASE_VERSION }} of @webref/idl"
+        title: "Release @webref/idl@${{ env.RELEASE_VERSION }}"
+        commit-message: "Release @webref/idl@${{ env.RELEASE_VERSION }}"
         body: |
           Some changes were detected in the IDL since last time the `@webref/idl` package was released. Please review the IDL changes below.
 

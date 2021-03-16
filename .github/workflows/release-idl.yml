@@ -5,7 +5,7 @@
 # The job will not do anything if the version number in package.json does not
 # differ from the one published on npm.
 
-name: Create and publish new @webref/idl release
+name: "@webref/idl: Publish npm package"
 
 on:
   push:
@@ -46,6 +46,8 @@ jobs:
     - name: Create version tag
       if: steps.publish.outputs.type != 'none'
       run: |
+        git config user.name "webref-release-bot"
+        git config user.email "<>"
         git tag -a "@webref/idl@${{ steps.publish.outputs.version }}" -m "Publish @webref/idl@${{ steps.publish.outputs.version }}"
 
     - name: Push version tag
