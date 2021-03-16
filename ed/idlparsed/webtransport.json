@@ -15,11 +15,13 @@
       },
       "functions": {
         "Window": [
+          "DatagramDuplexStream",
           "BidirectionalStream",
           "SendStream",
           "ReceiveStream"
         ],
         "Worker": [
+          "DatagramDuplexStream",
           "BidirectionalStream",
           "SendStream",
           "ReceiveStream"
@@ -194,7 +196,7 @@
         "partial": false
       },
       "DatagramDuplexStream": {
-        "fragment": "interface DatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface DatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
         "type": "interface",
         "name": "DatagramDuplexStream",
         "inheritance": null,
@@ -230,7 +232,24 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "WebTransport": {
@@ -1069,6 +1088,7 @@
     "globals": {},
     "exposed": {
       "Window": [
+        "DatagramDuplexStream",
         "WebTransport",
         "OutgoingStream",
         "IncomingStream",
@@ -1077,6 +1097,7 @@
         "ReceiveStream"
       ],
       "Worker": [
+        "DatagramDuplexStream",
         "WebTransport",
         "OutgoingStream",
         "IncomingStream",
