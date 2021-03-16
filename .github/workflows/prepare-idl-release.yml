@@ -55,7 +55,7 @@ jobs:
       # not exist in the repo version of the file.
       run: |
         echo 'IDL_DIFF<<EOF' >> $GITHUB_ENV
-        diff idl/node_modules/@webref/idl webref/packages/idl --ignore-trailing-space --exclude=package.json >> $GITHUB_ENV || echo -n
+        diff idl/node_modules/@webref/idl webref/packages/idl --ignore-trailing-space --exclude=package.json --unified=3 >> $GITHUB_ENV || echo -n
         echo 'EOF' >> $GITHUB_ENV
 
     - name: Bump version number in packages/idl/package.json
