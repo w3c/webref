@@ -46,15 +46,9 @@ jobs:
         cd idl
         npm install @webref/idl
 
-    - name: Test multiline env variables
-      run: |
-        echo 'TEST_VAR<<EOF' >> $GITHUB_ENV
-        echo 'test' >> $GITHUB_ENV
-        echo 'EOF' >> $GITHUB_ENV
-
     - name: Test diff command
       run: |
-        diff idl/node_modules/@webref/idl webref/packages/idl --ignore-trailing-space --exclude=package.json
+        diff idl/node_modules/@webref/idl webref/packages/idl --ignore-trailing-space --exclude=package.json || echo -n
 
     - name: Compute diff between new release and current package
       # For details on syntax to use to export a multiline string to an
@@ -65,7 +59,7 @@ jobs:
       # not exist in the repo version of the file.
       run: |
         echo 'IDL_DIFF<<EOF' >> $GITHUB_ENV
-        diff idl/node_modules/@webref/idl webref/packages/idl --ignore-trailing-space --exclude=package.json >> $GITHUB_ENV
+        diff idl/node_modules/@webref/idl webref/packages/idl --ignore-trailing-space --exclude=package.json >> $GITHUB_ENV || echo -n
         echo 'EOF' >> $GITHUB_ENV
 
     - name: Bump version number in packages/idl/package.json
