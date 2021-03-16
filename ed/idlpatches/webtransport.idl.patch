@@ -1,0 +1,26 @@
+From 8224ac5bcddf872bd4b0841a595fd14adcdb24c1 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Tue, 16 Mar 2021 09:55:43 +0100
+Subject: [PATCH] Use proper boolean type
+
+https://github.com/w3c/webtransport/pull/227
+---
+ ed/idl/webtransport.idl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/idl/webtransport.idl b/ed/idl/webtransport.idl
+index 4c4530b22..a5fff8dbf 100644
+--- a/ed/idl/webtransport.idl
++++ b/ed/idl/webtransport.idl
+@@ -45,7 +45,7 @@ WebTransport includes BidirectionalStreamsTransport;
+ WebTransport includes DatagramTransport;
+ 
+ dictionary WebTransportOptions {
+-  bool allowPooling;
++  boolean allowPooling;
+   sequence<RTCDtlsFingerprint> serverCertificateFingerprints;
+ };
+ 
+-- 
+2.30.2.windows.1
+
