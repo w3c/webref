@@ -46,10 +46,6 @@ jobs:
         cd idl
         npm install @webref/idl
 
-    - name: Test diff command
-      run: |
-        diff idl/node_modules/@webref/idl webref/packages/idl --ignore-trailing-space --exclude=package.json || echo -n
-
     - name: Compute diff between new release and current package
       # For details on syntax to use to export a multiline string to an
       # environment variable, see:
@@ -86,7 +82,7 @@ jobs:
           If all looks good (and if all goes well) merging this pull request will trigger the release of the package to npm.
 
           ```diff
-          {{ env.IDL_DIFF }}
+          ${{ env.IDL_DIFF }}
           ```
         assignees: dontcallmedom, foolip, tidoust
         branch: release-idl
