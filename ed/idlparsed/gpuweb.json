@@ -15,12 +15,10 @@
       },
       "functions": {
         "Window": [
-          "Navigator",
           "GPU",
           "GPUDevice"
         ],
         "DedicatedWorker": [
-          "WorkerNavigator",
           "GPU",
           "GPUDevice"
         ]
@@ -364,6 +362,38 @@
             "extAttrs": [],
             "readonly": true,
             "async": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "NavigatorGPU": {
+        "fragment": "interface mixin NavigatorGPU {\n    [SameObject] readonly attribute GPU gpu;\n};",
+        "type": "interface mixin",
+        "name": "NavigatorGPU",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "gpu",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPU"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [],
@@ -7784,7 +7814,7 @@
         "partial": false
       },
       "GPURenderPassColorAttachment": {
-        "fragment": "dictionary GPURenderPassColorAttachment {\n    required GPUTextureView view;\n    GPUTextureView resolveTarget;\n\n    required (GPULoadOp or GPUColor) loadValue;\n    GPUStoreOp storeOp = \"store\";\n};",
+        "fragment": "dictionary GPURenderPassColorAttachment {\n    required GPUTextureView view;\n    GPUTextureView resolveTarget;\n\n    required (GPULoadOp or GPUColor) loadValue;\n    required GPUStoreOp storeOp;\n};",
         "type": "dictionary",
         "name": "GPURenderPassColorAttachment",
         "inheritance": null,
@@ -7863,11 +7893,8 @@
               "union": false,
               "idlType": "GPUStoreOp"
             },
-            "default": {
-              "type": "string",
-              "value": "store"
-            },
-            "required": false
+            "default": null,
+            "required": true
           }
         ],
         "extAttrs": [],
@@ -9712,90 +9739,20 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "[Exposed=Window]\npartial interface Navigator {\n    [SameObject] readonly attribute GPU gpu;\n};",
-          "type": "interface",
-          "name": "Navigator",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "attribute",
-              "name": "gpu",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "GPU"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "SameObject",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": true
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            }
-          ],
-          "partial": true
+          "fragment": "Navigator includes NavigatorGPU;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Navigator",
+          "includes": "NavigatorGPU"
         }
       ],
       "WorkerNavigator": [
         {
-          "fragment": "[Exposed=DedicatedWorker]\npartial interface WorkerNavigator {\n    [SameObject] readonly attribute GPU gpu;\n};",
-          "type": "interface",
-          "name": "WorkerNavigator",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "attribute",
-              "name": "gpu",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "GPU"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "SameObject",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": true
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "DedicatedWorker"
-              },
-              "arguments": []
-            }
-          ],
-          "partial": true
+          "fragment": "WorkerNavigator includes NavigatorGPU;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WorkerNavigator",
+          "includes": "NavigatorGPU"
         }
       ],
       "GPUDevice": [
@@ -10173,13 +10130,11 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "Navigator",
         "GPU",
         "GPUDevice",
         "GPUUncapturedErrorEvent"
       ],
       "DedicatedWorker": [
-        "WorkerNavigator",
         "GPU",
         "GPUDevice",
         "GPUUncapturedErrorEvent"
@@ -10192,11 +10147,14 @@
       "GPUAdapterFeatures": [
         "GPUFeatureName"
       ],
-      "Navigator": [
+      "NavigatorGPU": [
         "GPU"
       ],
+      "Navigator": [
+        "NavigatorGPU"
+      ],
       "WorkerNavigator": [
-        "GPU"
+        "NavigatorGPU"
       ],
       "GPU": [
         "GPUAdapter",
@@ -10625,8 +10583,6 @@
       ]
     },
     "externalDependencies": [
-      "Navigator",
-      "WorkerNavigator",
       "EventTarget",
       "ImageBitmap",
       "Event",
