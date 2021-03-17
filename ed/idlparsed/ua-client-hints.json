@@ -57,11 +57,56 @@
         "partial": false
       },
       "UADataValues": {
-        "fragment": "dictionary UADataValues {\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString architecture;\n  DOMString model;\n  DOMString uaFullVersion;\n};",
+        "fragment": "dictionary UADataValues {\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion;\n};",
         "type": "dictionary",
         "name": "UADataValues",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "architecture",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bitness",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "model",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
           {
             "type": "field",
             "name": "platform",
@@ -80,36 +125,6 @@
           {
             "type": "field",
             "name": "platformVersion",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "architecture",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "model",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
