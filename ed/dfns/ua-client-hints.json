@@ -125,6 +125,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "user-agent-platform-bitness",
+      "href": "https://wicg.github.io/ua-client-hints/#user-agent-platform-bitness",
+      "linkingText": [
+        "platform bitness"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "user agent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "http-ua-hints",
+        "title": "User Agent Hints",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "user-agent-model",
       "href": "https://wicg.github.io/ua-client-hints/#user-agent-model",
       "linkingText": [
@@ -183,6 +203,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "http-headerdef-sec-ch-ua-bitness",
+      "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-bitness",
+      "linkingText": [
+        "Sec-CH-UA-Bitness"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-ch-ua-bitness",
+        "title": "The 'Sec-CH-UA-Bitness' Header Field",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "http-headerdef-sec-ch-ua-model",
       "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-model",
       "linkingText": [
@@ -196,7 +234,7 @@
       "heading": {
         "id": "sec-ch-ua-model",
         "title": "The 'Sec-CH-UA-Model' Header Field",
-        "number": "3.2"
+        "number": "3.3"
       },
       "definedIn": "prose"
     },
@@ -214,7 +252,7 @@
       "heading": {
         "id": "sec-ch-ua-platform",
         "title": "The 'Sec-CH-UA-Platform' Header Field",
-        "number": "3.3"
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -232,7 +270,7 @@
       "heading": {
         "id": "sec-ch-ua-platform-version",
         "title": "The 'Sec-CH-UA-Platform-Version' Header Field",
-        "number": "3.4"
+        "number": "3.5"
       },
       "definedIn": "prose"
     },
@@ -250,7 +288,7 @@
       "heading": {
         "id": "sec-ch-ua",
         "title": "The 'Sec-CH-UA' Header Field",
-        "number": "3.5"
+        "number": "3.6"
       },
       "definedIn": "prose"
     },
@@ -270,7 +308,7 @@
       "heading": {
         "id": "sec-ch-ua",
         "title": "The 'Sec-CH-UA' Header Field",
-        "number": "3.5"
+        "number": "3.6"
       },
       "definedIn": "prose"
     },
@@ -288,7 +326,7 @@
       "heading": {
         "id": "sec-ch-ua-full-version",
         "title": "The 'Sec-CH-UA-Full-Version' Header Field",
-        "number": "3.6"
+        "number": "3.7"
       },
       "definedIn": "prose"
     },
@@ -306,7 +344,7 @@
       "heading": {
         "id": "sec-ch-ua-mobile",
         "title": "The 'Sec-CH-UA-Mobile' Header Field",
-        "number": "3.7"
+        "number": "3.8"
       },
       "definedIn": "prose"
     },
@@ -387,6 +425,66 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-uadatavalues-architecture",
+      "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-architecture",
+      "linkingText": [
+        "architecture"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UADataValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface",
+        "title": "Interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-uadatavalues-bitness",
+      "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-bitness",
+      "linkingText": [
+        "bitness"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UADataValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface",
+        "title": "Interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-uadatavalues-model",
+      "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-model",
+      "linkingText": [
+        "model"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UADataValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface",
+        "title": "Interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-uadatavalues-platform",
       "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-platform",
       "linkingText": [
@@ -411,46 +509,6 @@
       "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-platformversion",
       "linkingText": [
         "platformVersion"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "UADataValues"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "interface",
-        "title": "Interface",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-uadatavalues-architecture",
-      "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-architecture",
-      "linkingText": [
-        "architecture"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "UADataValues"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "interface",
-        "title": "Interface",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-uadatavalues-model",
-      "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-model",
-      "linkingText": [
-        "model"
       ],
       "localLinkingText": [],
       "type": "dict-member",
