@@ -1,11 +1,11 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-03-18T12:57:36.216Z",
+  "date": "2021-03-18T18:51:32.796Z",
   "options": {},
   "stats": {
     "crawled": 386,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -858,7 +858,7 @@
         "https://gpuweb.github.io/gpuweb/"
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
-      "date": "17 March 2021",
+      "date": "18 March 2021",
       "links": "links/gpuweb.json",
       "refs": "refs/gpuweb.json",
       "idl": "idl/gpuweb.idl",
@@ -985,7 +985,7 @@
         "https://www.w3.org/html/wg/drafts/html/master/webappapis.html"
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
-      "date": "17 March 2021",
+      "date": "18 March 2021",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -2363,16 +2363,14 @@
       "versions": [
         "https://w3c.github.io/webrtc-insertable-streams/"
       ],
-      "crawled": "https://w3c.github.io/webrtc-insertable-streams/",
-      "date": "12 March 2021",
-      "links": "links/webrtc-insertable-streams.json",
-      "refs": "refs/webrtc-insertable-streams.json",
-      "idl": "idl/webrtc-insertable-streams.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/webrtc-insertable-streams.json",
-      "headings": "headings/webrtc-insertable-streams.json",
-      "ids": "ids/webrtc-insertable-streams.json",
-      "idlparsed": "idlparsed/webrtc-insertable-streams.json"
+      "crawled": {
+        "url": "https://w3c.github.io/webrtc-insertable-streams/",
+        "repository": "https://github.com/w3c/webrtc-insertable-streams",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 66)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://w3c.github.io/webtransport/",
@@ -10934,7 +10932,7 @@
         "https://w3c.github.io/html-aam/"
       ],
       "crawled": "https://w3c.github.io/html-aam/",
-      "date": "20 October 2020",
+      "date": "18 March 2021",
       "links": "links/html-aam-1.0.json",
       "refs": "refs/html-aam-1.0.json",
       "generator": "respec",
