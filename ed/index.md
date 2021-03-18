@@ -6434,7 +6434,6 @@ Normative references to this spec from:
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebHID API](https://wicg.github.io/webhid/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 - [WebTransport](https://w3c.github.io/webtransport/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -7626,7 +7625,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
-- Crawled version: 20 October 2020
+- Crawled version: 18 March 2021
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
 - Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Shortname: html-aam-1.0
@@ -7879,7 +7878,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 17 March 2021
+- Crawled version: 18 March 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -8709,7 +8708,6 @@ Normative references to this spec from:
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebHID API](https://wicg.github.io/webhid/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 - [WebTransport](https://w3c.github.io/webtransport/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -8875,9 +8873,7 @@ Normative references to this spec from:
 
 - [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 
-Informative references to this spec from:
-
-- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
+No informative reference to this spec from other specs.
 
 
 ## Idle Detection API {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -9797,7 +9793,6 @@ Normative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 
 Informative references to this spec from:
 
@@ -12711,7 +12706,6 @@ Normative references to this spec from:
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web Serial API](https://wicg.github.io/serial/)
-- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 - [WebTransport](https://w3c.github.io/webtransport/)
 
 No informative reference to this spec from other specs.
@@ -14010,7 +14004,6 @@ This specification looks good!
 Normative references to this spec from:
 
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 
 Informative references to this spec from:
 
@@ -14232,7 +14225,6 @@ Normative references to this spec from:
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebHID API](https://wicg.github.io/webhid/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
-- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 - [WebTransport](https://w3c.github.io/webtransport/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -16133,7 +16125,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 17 March 2021
+- Crawled version: 18 March 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -16210,7 +16202,6 @@ Normative references to this spec from:
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebCodecs](https://wicg.github.io/web-codecs/)
-- [WebRTC Insertable Media using Streams](https://w3c.github.io/webrtc-insertable-streams/)
 - [WebRTC Priority Control API](https://w3c.github.io/webrtc-priority/)
 - [WebTransport](https://w3c.github.io/webtransport/)
 
@@ -16220,20 +16211,30 @@ Informative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
-## WebRTC Insertable Media using Streams {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true}
+## WebRTC Insertable Media using Streams {data-spec=true data-error=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
-- Crawled URL: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
-- Crawled version: 12 March 2021
+- Crawled URL: [[object Object]]([object Object])
 - Editor's Draft: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
 - Shortname: webrtc-insertable-streams
 
 ### Potential issue(s) {.anomalies}
 
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webcrypto/`](https://w3c.github.io/webcrypto/), related reference "WebCryptoAPI" uses URL [`https://www.w3.org/TR/WebCryptoAPI/`](https://www.w3.org/TR/WebCryptoAPI/)
+The following network or parsing error occurred:
+`Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 66)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+
+Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
 
 ### Known dependencies on this specification {.dependencies}
 
