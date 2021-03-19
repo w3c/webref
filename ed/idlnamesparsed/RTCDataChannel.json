@@ -8,15 +8,7 @@
     "fragment": "[Exposed=Window]\ninterface RTCDataChannel : EventTarget {\n  readonly attribute USVString label;\n  readonly attribute boolean ordered;\n  readonly attribute unsigned short? maxPacketLifeTime;\n  readonly attribute unsigned short? maxRetransmits;\n  readonly attribute USVString protocol;\n  readonly attribute boolean negotiated;\n  readonly attribute unsigned short? id;\n  readonly attribute RTCDataChannelState readyState;\n  readonly attribute unsigned long bufferedAmount;\n  [EnforceRange] attribute unsigned long bufferedAmountLowThreshold;\n  attribute EventHandler onopen;\n  attribute EventHandler onbufferedamountlow;\n  attribute EventHandler onerror;\n  attribute EventHandler onclosing;\n  attribute EventHandler onclose;\n  undefined close();\n  attribute EventHandler onmessage;\n  attribute BinaryType binaryType;\n  undefined send(USVString data);\n  undefined send(Blob data);\n  undefined send(ArrayBuffer data);\n  undefined send(ArrayBufferView data);\n};",
     "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "WebRTC Priority Control API",
-        "url": "https://www.w3.org/TR/webrtc-priority/"
-      },
-      "fragment": "partial interface RTCDataChannel {\n  readonly attribute RTCPriorityType priority;\n};"
-    }
-  ],
+  "extended": [],
   "inheritance": {
     "name": "EventTarget",
     "defined": {

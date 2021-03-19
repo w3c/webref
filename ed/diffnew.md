@@ -2,12 +2,14 @@
 % Reffy
 % March 19, 2021
 
-## Web Animations
+## WebRTC Priority Control API | webrtc-priority
 
-- Initial URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
+- Initial URL: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+- Editor's Draft: [https://w3c.github.io/webrtc-priority/](https://w3c.github.io/webrtc-priority/)
+- Spec title: *INS* WebRTC Priority Control API | webrtc-priority / *DEL* WebRTC Priority Control API
+- No normative references found: *INS* true / *DEL* false
+- Obsolete WebIDL constructs found: *DEL* false
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
 
 
