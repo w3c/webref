@@ -14,7 +14,7 @@
         "title": "IceTransport Extensions for WebRTC",
         "url": "https://w3c.github.io/webrtc-ice/"
       },
-      "fragment": "[Exposed=Window]\npartial interface RTCIceTransport {\n    constructor();\n    undefined                      gather (optional RTCIceGatherOptions options = {});\n    undefined                      start (RTCIceParameters remoteParameters, optional RTCIceRole role = \"controlled\");\n    undefined                      stop ();\n    undefined                      addRemoteCandidate (RTCIceCandidateInit remoteCandidate);\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onicecandidate;\n};"
+      "fragment": "[Exposed=Window]\npartial interface RTCIceTransport {\n    constructor();\n    undefined                      gather (optional RTCIceGatherOptions options = {});\n    undefined                      start (optional RTCIceParameters remoteParameters = {}, optional RTCIceRole role = \"controlled\");\n    undefined                      stop ();\n    undefined                      addRemoteCandidate (optional RTCIceCandidateInit remoteCandidate = {});\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onicecandidate;\n};"
     }
   ],
   "inheritance": {

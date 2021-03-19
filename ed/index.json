@@ -1,11 +1,11 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-03-18T18:51:32.796Z",
+  "date": "2021-03-19T01:34:45.493Z",
   "options": {},
   "stats": {
     "crawled": 386,
-    "errors": 1
+    "errors": 2
   },
   "results": [
     {
@@ -476,7 +476,7 @@
         "https://drafts.csswg.org/css-nesting-1/"
       ],
       "crawled": "https://drafts.csswg.org/css-nesting-1/",
-      "date": "15 March 2021",
+      "date": "18 March 2021",
       "links": "links/css-nesting-1.json",
       "refs": "refs/css-nesting-1.json",
       "idl": "idl/css-nesting.idl",
@@ -1328,7 +1328,7 @@
         "https://privacycg.github.io/private-click-measurement/"
       ],
       "crawled": "https://privacycg.github.io/private-click-measurement/",
-      "date": "8 June 2020",
+      "date": "18 March 2021",
       "links": "links/private-click-measurement.json",
       "refs": "refs/private-click-measurement.json",
       "idl": "idl/private-click-measurement.idl",
@@ -1549,7 +1549,7 @@
         "https://tc39.es/ecma262/"
       ],
       "crawled": "https://tc39.es/ecma262/",
-      "date": "17 March 2021",
+      "date": "18 March 2021",
       "links": "links/ecmascript.json",
       "generator": null,
       "dfns": "dfns/ecmascript.json",
@@ -2327,7 +2327,7 @@
         "https://w3c.github.io/webrtc-ice/"
       ],
       "crawled": "https://w3c.github.io/webrtc-ice/",
-      "date": "16 March 2021",
+      "date": "18 March 2021",
       "links": "links/webrtc-ice.json",
       "refs": "refs/webrtc-ice.json",
       "idl": "idl/webrtc-ice.idl",
@@ -9784,7 +9784,7 @@
         "https://drafts.csswg.org/css-values-4/"
       ],
       "crawled": "https://drafts.csswg.org/css-values-4/",
-      "date": "15 March 2021",
+      "date": "18 March 2021",
       "links": "links/css-values-4.json",
       "refs": "refs/css-values-4.json",
       "generator": "bikeshed",
@@ -12259,7 +12259,7 @@
         "https://w3c.github.io/payment-request/"
       ],
       "crawled": "https://w3c.github.io/payment-request/",
-      "date": "17 March 2021",
+      "date": "18 March 2021",
       "links": "links/payment-request.json",
       "refs": "refs/payment-request.json",
       "idl": "idl/payment-request.idl",
@@ -14246,16 +14246,14 @@
         "https://www.w3.org/TR/web-animations-1/",
         "https://drafts.csswg.org/web-animations-1/"
       ],
-      "crawled": "https://drafts.csswg.org/web-animations-1/",
-      "date": "21 February 2021",
-      "links": "links/web-animations-1.json",
-      "refs": "refs/web-animations-1.json",
-      "idl": "idl/web-animations.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/web-animations-1.json",
-      "headings": "headings/web-animations-1.json",
-      "ids": "ids/web-animations-1.json",
-      "idlparsed": "idlparsed/web-animations-1.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/web-animations-1/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "web-animations-1/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "date": "",
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://www.w3.org/TR/web-share/",

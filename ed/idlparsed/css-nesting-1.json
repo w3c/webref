@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "CSSNestingRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSNestingRule : CSSRule {\n  attribute CSSOMString selectorText;\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSNestingRule : CSSRule {\n  attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n};",
         "type": "interface",
         "name": "CSSNestingRule",
         "inheritance": "CSSRule",
@@ -33,28 +33,6 @@
             "extAttrs": [],
             "special": "",
             "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "cssRules",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CSSRuleList"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true
           },
           {
             "type": "attribute",
@@ -81,6 +59,28 @@
                   "type": "identifier",
                   "value": "cssText"
                 },
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "cssRules",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSRuleList"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
                 "arguments": []
               }
             ],
@@ -185,7 +185,125 @@
         "partial": false
       }
     },
-    "idlExtendedNames": {},
+    "idlExtendedNames": {
+      "CSSStyleRule": [
+        {
+          "fragment": "partial interface CSSStyleRule {\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n};",
+          "type": "interface",
+          "name": "CSSStyleRule",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "cssRules",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSRuleList"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "operation",
+              "name": "insertRule",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "unsigned long"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "rule",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "CSSOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "index",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "unsigned long"
+                  },
+                  "default": {
+                    "type": "number",
+                    "value": "0"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "deleteRule",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "index",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "unsigned long"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
     "globals": {},
     "exposed": {
       "Window": [
@@ -193,17 +311,22 @@
       ]
     },
     "dependencies": {
+      "CSSStyleRule": [
+        "CSSRuleList",
+        "CSSOMString"
+      ],
       "CSSNestingRule": [
         "CSSRule",
         "CSSOMString",
-        "CSSRuleList",
-        "CSSStyleDeclaration"
+        "CSSStyleDeclaration",
+        "CSSRuleList"
       ]
     },
     "externalDependencies": [
-      "CSSRule",
-      "CSSOMString",
+      "CSSStyleRule",
       "CSSRuleList",
+      "CSSOMString",
+      "CSSRule",
       "CSSStyleDeclaration"
     ],
     "hasObsoleteIdl": false

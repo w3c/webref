@@ -5,7 +5,7 @@
       "title": "CSS Nesting Module",
       "url": "https://drafts.csswg.org/css-nesting-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface CSSNestingRule : CSSRule {\n  attribute CSSOMString selectorText;\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n};",
+    "fragment": "[Exposed=Window]\ninterface CSSNestingRule : CSSRule {\n  attribute CSSOMString selectorText;\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n};",
     "href": "https://drafts.csswg.org/css-nesting-1/#cssnestingrule"
   },
   "extended": [],

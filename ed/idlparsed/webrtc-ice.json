@@ -96,7 +96,7 @@
       ],
       "RTCIceTransport": [
         {
-          "fragment": "[Exposed=Window]\npartial interface RTCIceTransport {\n    constructor();\n    undefined                      gather (optional RTCIceGatherOptions options = {});\n    undefined                      start (RTCIceParameters remoteParameters, optional RTCIceRole role = \"controlled\");\n    undefined                      stop ();\n    undefined                      addRemoteCandidate (RTCIceCandidateInit remoteCandidate);\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onicecandidate;\n};",
+          "fragment": "[Exposed=Window]\npartial interface RTCIceTransport {\n    constructor();\n    undefined                      gather (optional RTCIceGatherOptions options = {});\n    undefined                      start (optional RTCIceParameters remoteParameters = {}, optional RTCIceRole role = \"controlled\");\n    undefined                      stop ();\n    undefined                      addRemoteCandidate (optional RTCIceCandidateInit remoteCandidate = {});\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onicecandidate;\n};",
           "type": "interface",
           "name": "RTCIceTransport",
           "inheritance": null,
@@ -164,8 +164,10 @@
                     "union": false,
                     "idlType": "RTCIceParameters"
                   },
-                  "default": null,
-                  "optional": false,
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
                   "variadic": false
                 },
                 {
@@ -230,8 +232,10 @@
                     "union": false,
                     "idlType": "RTCIceCandidateInit"
                   },
-                  "default": null,
-                  "optional": false,
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
                   "variadic": false
                 }
               ],

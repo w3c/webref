@@ -12,21 +12,21 @@
     "idlExtendedNames": {
       "HTMLAnchorElement": [
         {
-          "fragment": "partial interface HTMLAnchorElement {\n    [CEReactions] attribute DOMString adCampaignId;\n    [CEReactions] attribute USVString adDestination;\n};",
+          "fragment": "partial interface HTMLAnchorElement {\n    [CEReactions] attribute unsigned long attributionSourceId;\n    [CEReactions] attribute DOMString attributionDestination;\n};",
           "type": "interface",
           "name": "HTMLAnchorElement",
           "inheritance": null,
           "members": [
             {
               "type": "attribute",
-              "name": "adCampaignId",
+              "name": "attributionSourceId",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "DOMString"
+                "idlType": "unsigned long"
               },
               "extAttrs": [
                 {
@@ -41,14 +41,14 @@
             },
             {
               "type": "attribute",
-              "name": "adDestination",
+              "name": "attributionDestination",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "USVString"
+                "idlType": "DOMString"
               },
               "extAttrs": [
                 {
