@@ -5,6 +5,13 @@ interface CSSStyleRule : CSSRule {
   [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
 };
 
+// Source: CSS Nesting Module (https://drafts.csswg.org/css-nesting-1/)
+partial interface CSSStyleRule {
+  [SameObject] readonly attribute CSSRuleList cssRules;
+  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);
+  undefined deleteRule(unsigned long index);
+};
+
 // Source: CSS Typed OM Level 1 (https://www.w3.org/TR/css-typed-om-1/)
 partial interface CSSStyleRule {
     [SameObject] readonly attribute StylePropertyMap styleMap;
