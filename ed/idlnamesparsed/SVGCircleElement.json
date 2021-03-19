@@ -222,6 +222,13 @@
                 "url": "https://www.w3.org/TR/wai-aria-1.2/"
               },
               "fragment": "Element includes ARIAMixin;"
+            },
+            {
+              "spec": {
+                "title": "Web Animations",
+                "url": "https://www.w3.org/TR/web-animations-1/"
+              },
+              "fragment": "Element includes Animatable;"
             }
           ],
           "inheritance": {
@@ -359,6 +366,20 @@
                 },
                 "fragment": "interface mixin ARIAMixin {\n\tattribute DOMString? role;\n\n\n\tattribute DOMString ariaAtomic;\n\tattribute DOMString ariaAutoComplete;\n\tattribute DOMString ariaBusy;\n\tattribute DOMString ariaChecked;\n\tattribute DOMString ariaColCount;\n\tattribute DOMString ariaColIndex;\n\tattribute DOMString ariaColIndexText;\n\tattribute DOMString ariaColSpan;\n\n\tattribute DOMString ariaCurrent;\n\n\tattribute DOMString ariaDescription;\n\n\tattribute DOMString ariaDisabled;\n\n\tattribute DOMString ariaExpanded;\n\n\tattribute DOMString ariaHasPopup;\n\tattribute DOMString ariaHidden;\n\tattribute DOMString ariaInvalid;\n\tattribute DOMString ariaKeyShortcuts;\n\tattribute DOMString ariaLabel;\n\n\tattribute DOMString ariaLevel;\n\tattribute DOMString ariaLive;\n\tattribute DOMString ariaModal;\n\tattribute DOMString ariaMultiLine;\n\tattribute DOMString ariaMultiSelectable;\n\tattribute DOMString ariaOrientation;\n\n\tattribute DOMString ariaPlaceholder;\n\tattribute DOMString ariaPosInSet;\n\tattribute DOMString ariaPressed;\n\tattribute DOMString ariaReadOnly;\n\n\tattribute DOMString ariaRequired;\n\tattribute DOMString ariaRoleDescription;\n\tattribute DOMString ariaRowCount;\n\tattribute DOMString ariaRowIndex;\n\tattribute DOMString ariaRowIndexText;\n\tattribute DOMString ariaRowSpan;\n\tattribute DOMString ariaSelected;\n\tattribute DOMString ariaSetSize;\n\tattribute DOMString ariaSort;\n\tattribute DOMString ariaValueMax;\n\tattribute DOMString ariaValueMin;\n\tattribute DOMString ariaValueNow;\n\tattribute DOMString ariaValueText;\n};",
                 "href": "https://w3c.github.io/aria/#dom-ariamixin"
+              },
+              "extended": [],
+              "inheritance": null,
+              "includes": []
+            },
+            {
+              "name": "Animatable",
+              "defined": {
+                "spec": {
+                  "title": "Web Animations",
+                  "url": "https://www.w3.org/TR/web-animations-1/"
+                },
+                "fragment": "interface mixin Animatable {\n    Animation           animate(object? keyframes,\n                                optional (unrestricted double or KeyframeAnimationOptions) options = {});\n    sequence<Animation> getAnimations(optional GetAnimationsOptions options = {});\n};",
+                "href": "https://drafts.csswg.org/web-animations-1/#animatable"
               },
               "extended": [],
               "inheritance": null,

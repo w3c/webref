@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-03-19T01:34:45.493Z",
+  "date": "2021-03-19T06:50:41.058Z",
   "stats": {
     "crawled": 386,
-    "errors": 2,
+    "errors": 1,
     "studied": 386
   },
   "results": [
@@ -1287,7 +1287,6 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://drafts.csswg.org/css-color-3/#valuea-def-color",
             "https://drafts.csswg.org/css-transitions/#animtype-color"
           ],
@@ -1390,9 +1389,7 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": [
@@ -1795,7 +1792,7 @@
     {
       "title": "Content Security Policy Level 3",
       "shortname": "CSP3",
-      "date": "13 March 2021",
+      "date": "19 March 2021",
       "url": "https://www.w3.org/TR/CSP3/",
       "release": {
         "url": "https://www.w3.org/TR/CSP3/",
@@ -2956,6 +2953,11 @@
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/webdriver2/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/"
@@ -3154,13 +3156,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "Animation",
-          "AnimationEffect",
-          "AnimationTimeline",
-          "ComputedEffectTiming",
-          "EffectTiming"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -3178,10 +3174,6 @@
         },
         "xrefs": {
           "notExported": [
-            "https://html.spec.whatwg.org/#run-the-animation-frame-callbacks"
-          ],
-          "notDfn": [],
-          "brokenLinks": [
             "https://drafts.csswg.org/web-animations#animation-effect",
             "https://drafts.csswg.org/web-animations#concept-animation",
             "https://drafts.csswg.org/web-animations#local-time",
@@ -3192,39 +3184,33 @@
             "https://drafts.csswg.org/web-animations#iteration-count",
             "https://drafts.csswg.org/web-animations#iteration-duration",
             "https://drafts.csswg.org/web-animations#playback-direction",
-            "https://drafts.csswg.org/web-animations#timing-function",
-            "https://drafts.csswg.org/web-animations#timeline",
             "https://drafts.csswg.org/web-animations#current-time",
-            "https://drafts.csswg.org/web-animations#inherited-time",
             "https://drafts.csswg.org/web-animations#play-state",
             "https://drafts.csswg.org/web-animations#set-the-timeline-of-an-animation",
-            "https://drafts.csswg.org/web-animations#the-documents-default-timeline",
-            "https://drafts.csswg.org/web-animations#set-the-target-effect-of-an-animation",
             "https://drafts.csswg.org/web-animations#playback-rate",
             "https://drafts.csswg.org/web-animations#effect-value",
             "https://drafts.csswg.org/web-animations#target-property",
             "https://drafts.csswg.org/web-animations#ready",
-            "https://drafts.csswg.org/web-animations#idle",
-            "https://drafts.csswg.org/web-animations#finished",
-            "https://drafts.csswg.org/web-animations#running",
-            "https://drafts.csswg.org/web-animations#paused",
             "https://drafts.csswg.org/web-animations#replace-state",
-            "https://drafts.csswg.org/web-animations#active",
-            "https://drafts.csswg.org/web-animations#persisted",
-            "https://drafts.csswg.org/web-animations#removed",
             "https://drafts.csswg.org/web-animations#set-the-current-time",
             "https://drafts.csswg.org/web-animations#set-the-start-time",
             "https://drafts.csswg.org/web-animations#update-the-timing-properties-of-an-animation-effect",
             "https://drafts.csswg.org/web-animations#effect-stack",
             "https://drafts.csswg.org/web-animations#animation-class",
-            "https://drafts.csswg.org/web-animations-1/#animation",
-            "https://drafts.csswg.org/web-animations-1/#dictdef-effecttiming",
-            "https://drafts.csswg.org/web-animations-1/#dictdef-computedeffecttiming",
-            "https://drafts.csswg.org/web-animations-1/#animationeffect",
-            "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-updatetiming",
-            "https://drafts.csswg.org/web-animations-1/#animationtimeline",
-            "https://drafts.csswg.org/web-animations-1/#dom-animation-finish",
-            "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-getcomputedtiming",
+            "https://html.spec.whatwg.org/#run-the-animation-frame-callbacks"
+          ],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://drafts.csswg.org/web-animations#timing-function",
+            "https://drafts.csswg.org/web-animations#inherited-time",
+            "https://drafts.csswg.org/web-animations#set-the-target-effect-of-an-animation",
+            "https://drafts.csswg.org/web-animations#idle",
+            "https://drafts.csswg.org/web-animations#finished",
+            "https://drafts.csswg.org/web-animations#running",
+            "https://drafts.csswg.org/web-animations#paused",
+            "https://drafts.csswg.org/web-animations#active",
+            "https://drafts.csswg.org/web-animations#persisted",
+            "https://drafts.csswg.org/web-animations#removed",
             "https://w3c.github.io/web-animations/level-2/#group-effect",
             "https://w3c.github.io/web-animations/level-2/#child-effect"
           ],
@@ -3346,6 +3332,11 @@
               "url": "https://drafts.csswg.org/scroll-animations-1/",
               "title": "Scroll-linked Animations",
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
           "informative": [
@@ -3406,7 +3397,6 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://www.w3.org/TR/cssom-1/#cssstyledeclaration-readonly-flag"
           ],
           "evolvingLinks": [],
@@ -3435,7 +3425,6 @@
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [
-          "Animation",
           "CSSOMString"
         ],
         "redefinedIdlNames": [],
@@ -3469,29 +3458,20 @@
               "url": "https://drafts.csswg.org/scroll-animations-1/",
               "title": "Scroll-linked Animations",
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
           "informative": []
         },
         "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-setkeyframes",
-            "https://drafts.csswg.org/web-animations-1/#keyframeeffect",
-            "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-updatetiming",
-            "https://drafts.csswg.org/web-animations-1/#dom-animationeffect-updatetiming-timing-timing",
-            "https://drafts.csswg.org/web-animations-1/#dom-animation-play",
-            "https://drafts.csswg.org/web-animations-1/#dom-animation-pause",
-            "https://drafts.csswg.org/web-animations-1/#dom-animation-reverse",
-            "https://drafts.csswg.org/web-animations-1/#dom-animation-starttime",
+          "notExported": [
             "https://drafts.csswg.org/web-animations-1/#play-state",
             "https://drafts.csswg.org/web-animations-1/#paused-play-state",
-            "https://drafts.csswg.org/web-animations-1/#dom-animation-effect",
-            "https://drafts.csswg.org/web-animations-1/#animationeffect",
             "https://drafts.csswg.org/web-animations-1/#target-element",
-            "https://drafts.csswg.org/web-animations-1/#target-effect",
-            "https://drafts.csswg.org/web-animations-1/#animation",
             "https://drafts.csswg.org/web-animations-1/#animation-class",
             "https://drafts.csswg.org/web-animations-1/#global-animation-list",
             "https://drafts.csswg.org/web-animations-1/#idle-play-state",
@@ -3505,9 +3485,6 @@
             "https://drafts.csswg.org/web-animations-1/#start-delay",
             "https://drafts.csswg.org/web-animations-1/#fill-mode",
             "https://drafts.csswg.org/web-animations-1/#composite-operation",
-            "https://drafts.csswg.org/web-animations-1/#timeline",
-            "https://drafts.csswg.org/web-animations-1/#documenttimeline",
-            "https://drafts.csswg.org/web-animations-1/#default-document-timeline",
             "https://drafts.csswg.org/web-animations-1/#before-phase",
             "https://drafts.csswg.org/web-animations-1/#idle-phase",
             "https://drafts.csswg.org/web-animations-1/#current-time",
@@ -3516,15 +3493,15 @@
             "https://drafts.csswg.org/web-animations-1/#active-duration",
             "https://drafts.csswg.org/web-animations-1/#current-iteration",
             "https://drafts.csswg.org/web-animations-1/#iteration-start",
+            "https://drafts.csswg.org/web-animations-1/#active-phase",
+            "https://drafts.csswg.org/web-animations-1/#active-time"
+          ],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://drafts.csswg.org/web-animations-1/#target-effect",
             "https://drafts.csswg.org/web-animations-1/#target-effect-end",
             "https://drafts.csswg.org/web-animations-1/#sampling",
-            "https://drafts.csswg.org/web-animations-1/#pending-play-state",
-            "https://drafts.csswg.org/web-animations-1/#active-phase",
-            "https://drafts.csswg.org/web-animations-1/#active-time",
-            "https://drafts.csswg.org/web-animations-1/#dom-animatable-getanimations",
-            "https://drafts.csswg.org/web-animations-1/#dom-animation-playstate",
-            "https://www.w3.org/TR/web-animations/#animation-type",
-            "https://www.w3.org/TR/web-animations-1/#animation-effect-phases-and-states"
+            "https://drafts.csswg.org/web-animations-1/#pending-play-state"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -3829,6 +3806,11 @@
               "crawled": "https://quirks.spec.whatwg.org/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/"
@@ -3952,7 +3934,6 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://drafts.csswg.org/css-color-3/#valuea-def-color",
             "https://www.w3.org/TR/css3-transitions/#animtype-color"
           ],
@@ -4091,7 +4072,6 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://drafts.csswg.org/css-color-3/#valuea-def-color",
             "https://w3c.github.io/contentEditable/#dfn-editing-host"
           ],
@@ -4289,7 +4269,6 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://drafts.csswg.org/selectors-3/#first-formatted-line0"
           ],
           "evolvingLinks": [],
@@ -4405,9 +4384,7 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": [
@@ -4670,9 +4647,7 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": [
@@ -4951,9 +4926,7 @@
           "notDfn": [
             "https://www.w3.org/TR/css-ui-3/#box-sizing"
           ],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -5029,9 +5002,7 @@
           "notDfn": [
             "https://www.w3.org/TR/css-flexbox-1/#algo-main-item"
           ],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -5124,6 +5095,11 @@
               "url": "https://www.w3.org/TR/css-values-4/",
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://drafts.csswg.org/css-values-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
           "informative": [
@@ -5141,8 +5117,7 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://drafts.csswg.org/css-color-3/#valuea-def-color",
-            "https://www.w3.org/TR/web-animations/#animation-type"
+            "https://drafts.csswg.org/css-color-3/#valuea-def-color"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -5255,8 +5230,7 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://drafts.csswg.org/css-color-3/#valuea-def-color",
-            "https://www.w3.org/TR/web-animations/#animation-type"
+            "https://drafts.csswg.org/css-color-3/#valuea-def-color"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -5646,6 +5620,11 @@
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/"
@@ -5659,8 +5638,7 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://drafts.csswg.org/css-color-3/#valuea-def-color",
-            "https://www.w3.org/TR/web-animations/#animation-type"
+            "https://drafts.csswg.org/css-color-3/#valuea-def-color"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -5747,9 +5725,7 @@
             "https://html.spec.whatwg.org/#meta"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -5944,6 +5920,11 @@
               "crawled": "https://quirks.spec.whatwg.org/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web Application Manifest",
               "crawled": "https://w3c.github.io/manifest/"
@@ -6016,8 +5997,7 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/css-values-3/#typedef-number-percentage",
-            "https://www.w3.org/TR/web-animations/#animation-type"
+            "https://www.w3.org/TR/css-values-3/#typedef-number-percentage"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -6416,9 +6396,7 @@
           "notDfn": [
             "https://drafts.csswg.org/css-ui-3/#propdef-text-overflow"
           ],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -6690,6 +6668,11 @@
               "url": "https://www.w3.org/TR/css-values-4/",
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://drafts.csswg.org/css-values-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
           "informative": [
@@ -6710,9 +6693,7 @@
             "https://drafts.csswg.org/cssom-1/#css-declaration-case-sensitive-flag"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -7185,6 +7166,11 @@
               "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/webdriver2/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/"
@@ -7218,9 +7204,7 @@
             "https://html.spec.whatwg.org/#rendered-legend"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -7291,6 +7275,11 @@
               "url": "https://www.w3.org/TR/css-values-4/",
               "title": "CSS Values and Units Module Level 4",
               "crawled": "https://drafts.csswg.org/css-values-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
           "informative": [
@@ -7538,9 +7527,7 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/css-color-3/#valuea-def-color",
-            "https://www.w3.org/TR/web-animations/#animation-type",
-            "https://www.w3.org/TR/web-animations-1/#repeatable-list"
+            "https://www.w3.org/TR/css-color-3/#valuea-def-color"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -7727,9 +7714,7 @@
             "https://www.w3.org/TR/css3-break/#btw-blocks",
             "https://www.w3.org/TR/css3-break/#end-block"
           ],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": [
@@ -8040,6 +8025,11 @@
               "crawled": "https://svgwg.org/svg2-draft/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/"
@@ -8090,6 +8080,11 @@
               "url": "https://www.w3.org/TR/mediaqueries-5/",
               "title": "Media Queries Level 5",
               "crawled": "https://drafts.csswg.org/mediaqueries-5/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ]
         },
@@ -8101,7 +8096,6 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://drafts.csswg.org/css-color-3/#valuea-def-color"
           ],
           "evolvingLinks": [],
@@ -8323,9 +8317,7 @@
           "notDfn": [
             "https://www.w3.org/TR/css3-page/#left-right-first"
           ],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": [
@@ -8532,9 +8524,7 @@
           "notDfn": [
             "https://www.w3.org/TR/css-page-3/#left-right-first"
           ],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": [
@@ -8798,16 +8788,6 @@
             }
           ]
         },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
-        },
         "ok": false
       }
     },
@@ -8957,11 +8937,7 @@
             "https://www.w3.org/TR/css3-break/#btw-blocks",
             "https://www.w3.org/TR/css3-break/#end-block"
           ],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
-            "https://drafts.csswg.org/web-animations-1/#by-computed-value",
-            "https://drafts.csswg.org/web-animations-1/#discrete"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -9015,9 +8991,7 @@
             "https://drafts.csswg.org/css-grid-2/#computed-track-list"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -9212,8 +9186,7 @@
             "https://www.w3.org/TR/css3-background/#the-border-image-slice"
           ],
           "brokenLinks": [
-            "https://drafts.csswg.org/css-color-3/#valuea-def-color",
-            "https://www.w3.org/TR/web-animations/#animation-type"
+            "https://drafts.csswg.org/css-color-3/#valuea-def-color"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -9344,8 +9317,7 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://drafts.csswg.org/css-color-3/#valuea-def-color",
-            "https://www.w3.org/TR/web-animations/#animation-type"
+            "https://drafts.csswg.org/css-color-3/#valuea-def-color"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -9539,9 +9511,7 @@
             "https://drafts.csswg.org/css-text-3/#word-separator"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -9683,7 +9653,6 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://drafts.csswg.org/css-inline/#central"
           ],
           "evolvingLinks": [],
@@ -9831,16 +9800,6 @@
             }
           ]
         },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
-        },
         "ok": false
       }
     },
@@ -9922,6 +9881,11 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
           "informative": [
@@ -9941,7 +9905,6 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://drafts.csswg.org/css-color-3/#valuea-def-color"
           ],
           "evolvingLinks": [],
@@ -10103,7 +10066,6 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://www.w3.org/TR/css-values-3/#typedef-number-percentage"
           ],
           "evolvingLinks": [],
@@ -10169,16 +10131,6 @@
             }
           ],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -10330,7 +10282,6 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://drafts.csswg.org/css-color-3/#valuea-def-color"
           ],
           "evolvingLinks": [],
@@ -10389,16 +10340,6 @@
             }
           ],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -10782,6 +10723,11 @@
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/webdriver2/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/"
@@ -11123,9 +11069,7 @@
             "https://drafts.csswg.org/css-transforms-2/#3d-rendering-context"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -11217,7 +11161,6 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://drafts.csswg.org/selectors-3/#subject",
             "https://www.w3.org/TR/css3-transitions/#animatable-types"
           ],
@@ -11282,9 +11225,7 @@
             "https://drafts.csswg.org/cssom-view/#viewport"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -11371,9 +11312,7 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -11561,9 +11500,7 @@
           "notDfn": [
             "https://www.w3.org/TR/css3-break/#btw-blocks"
           ],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": [
@@ -11896,16 +11833,6 @@
             }
           ]
         },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
-        },
         "ok": false
       }
     },
@@ -11955,6 +11882,11 @@
               "url": "https://www.w3.org/TR/css-paint-api-1/",
               "title": "CSS Painting API Level 1",
               "crawled": "https://drafts.css-houdini.org/css-paint-api-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
           "informative": []
@@ -11966,7 +11898,6 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://drafts.csswg.org/web-animations-1/#by-computed-value",
             "https://www.w3.org/TR/css-syntax-3/#consume-a-name",
             "https://www.w3.org/TR/cssom-1/#css",
             "https://drafts.csswg.org/css-color-3/#valuea-def-color"
@@ -12291,9 +12222,7 @@
           "notDfn": [
             "https://drafts.csswg.org/css3-multicol/#multi-column-element"
           ],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": [
@@ -12370,16 +12299,6 @@
             }
           ]
         },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
-        },
         "ok": false
       }
     },
@@ -12440,16 +12359,6 @@
               "crawled": "https://drafts.fxtf.org/motion-1/"
             }
           ]
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -12568,9 +12477,7 @@
             "https://drafts.csswg.org/css-inline-3/#line-relative-shift-values"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [
             "https://www.w3.org/TR/html5/"
@@ -12741,9 +12648,7 @@
           "notDfn": [
             "https://html.spec.whatwg.org/#processing-model-8"
           ],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -12823,16 +12728,6 @@
           ],
           "informative": []
         },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
-        },
         "ok": false
       }
     },
@@ -12892,8 +12787,7 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://drafts.csswg.org/css-color-3/#valuea-def-color",
-            "https://www.w3.org/TR/web-animations/#animation-type"
+            "https://drafts.csswg.org/css-color-3/#valuea-def-color"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -12939,6 +12833,11 @@
               "url": "https://www.w3.org/TR/cssom-1/",
               "title": "CSS Object Model (CSSOM)",
               "crawled": "https://drafts.csswg.org/cssom/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
           "informative": []
@@ -13085,8 +12984,7 @@
             "https://www.w3.org/TR/css3-transitions/#animatable-types",
             "https://www.w3.org/TR/css3-transitions/#animtype-simple-list",
             "https://www.w3.org/TR/css3-transitions/#animtype-lpcalc",
-            "https://www.w3.org/TR/css-box-3/#the-css-box-model",
-            "https://www.w3.org/TR/web-animations/#animation-type"
+            "https://www.w3.org/TR/css-box-3/#the-css-box-model"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [
@@ -13170,8 +13068,7 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/css-shapes-1/#typedef-fill-rule",
-            "https://www.w3.org/TR/web-animations/#animation-type"
+            "https://www.w3.org/TR/css-shapes-1/#typedef-fill-rule"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -13409,6 +13306,11 @@
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
           "informative": [
@@ -13831,7 +13733,6 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://drafts.csswg.org/css-transforms/#grouping-property-values"
           ],
           "evolvingLinks": [],
@@ -13958,7 +13859,6 @@
             "https://www.w3.org/TR/css-backgrounds-3/#the-border-style"
           ],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://www.w3.org/TR/css-color-3/#valuea-def-color",
             "https://www.w3.org/TR/css-color-3/#color0"
           ],
@@ -14106,7 +14006,6 @@
             "https://www.w3.org/TR/css-ruby-1/#autohide"
           ],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://drafts.csswg.org/css-color-3/#color0",
             "https://drafts.csswg.org/css-color-3/#valuea-def-color"
           ],
@@ -14359,8 +14258,7 @@
             "https://www.w3.org/TR/css-writing-modes-3/#text-combine-horizontal"
           ],
           "brokenLinks": [
-            "https://www.w3.org/TR/css-fonts-3/#feature-precedence",
-            "https://www.w3.org/TR/web-animations/#animation-type"
+            "https://www.w3.org/TR/css-fonts-3/#feature-precedence"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -14477,9 +14375,7 @@
             "https://drafts.csswg.org/css-text-3/#other-space-separators"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -14662,6 +14558,11 @@
               "url": "https://www.w3.org/TR/SVG2/",
               "title": "Scalable Vector Graphics (SVG) 2",
               "crawled": "https://svgwg.org/svg2-draft/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
           "informative": [
@@ -14705,9 +14606,7 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": [
@@ -14812,9 +14711,7 @@
             "https://drafts.csswg.org/css2/#stacking-context"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -14909,6 +14806,11 @@
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/"
@@ -14972,12 +14874,7 @@
             "https://html.spec.whatwg.org/#document"
           ],
           "brokenLinks": [
-            "https://drafts.csswg.org/css-color-3/#opacity",
-            "https://www.w3.org/TR/web-animations/#animation-type",
-            "https://drafts.csswg.org/web-animations-1/#animation-type",
-            "https://drafts.csswg.org/web-animations-1/#not-animatable",
-            "https://drafts.csswg.org/web-animations-1/#discrete",
-            "https://drafts.csswg.org/web-animations-1/#combining-shadow-lists"
+            "https://drafts.csswg.org/css-color-3/#opacity"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -15008,7 +14905,6 @@
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [
-          "Animation",
           "CSSOMString"
         ],
         "redefinedIdlNames": [],
@@ -15020,40 +14916,39 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            }
+          ],
           "informative": []
         },
         "xrefs": {
           "notExported": [
-            "https://html.spec.whatwg.org/#being-rendered"
-          ],
-          "notDfn": [],
-          "brokenLinks": [
             "https://drafts.csswg.org/web-animations/#iteration-duration",
             "https://drafts.csswg.org/web-animations/#animation-effect",
             "https://drafts.csswg.org/web-animations/#start-delay",
             "https://drafts.csswg.org/web-animations/#cancel-an-animation",
-            "https://drafts.csswg.org/web-animations/#animation",
             "https://drafts.csswg.org/web-animations/#animation-class",
             "https://drafts.csswg.org/web-animations/#global-animation-list",
             "https://drafts.csswg.org/web-animations/#idle-play-state",
-            "https://drafts.csswg.org/web-animations/#sampling",
-            "https://drafts.csswg.org/web-animations/#target-effect",
             "https://drafts.csswg.org/web-animations/#unresolved",
             "https://drafts.csswg.org/web-animations/#current-time",
-            "https://drafts.csswg.org/web-animations/#pending-play-state",
             "https://drafts.csswg.org/web-animations/#active-duration",
-            "https://drafts.csswg.org/web-animations/#target-effect-end",
             "https://drafts.csswg.org/web-animations/#current-iteration",
             "https://drafts.csswg.org/web-animations/#iteration-start",
             "https://drafts.csswg.org/web-animations/#active-time",
             "https://drafts.csswg.org/web-animations/#fill-mode",
-            "https://www.w3.org/TR/web-animations-1/#time-transformations",
-            "https://www.w3.org/TR/web-animations-1/#applying-the-composited-result",
-            "https://www.w3.org/TR/web-animations-1/#animation-effect-phases-and-states",
-            "https://drafts.csswg.org/web-animations-1/#transformed-progress",
-            "https://drafts.csswg.org/web-animations-1/#dom-animation-cancel",
-            "https://drafts.csswg.org/web-animations-1/#dom-animatable-getanimations"
+            "https://html.spec.whatwg.org/#being-rendered"
+          ],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://drafts.csswg.org/web-animations/#sampling",
+            "https://drafts.csswg.org/web-animations/#target-effect",
+            "https://drafts.csswg.org/web-animations/#pending-play-state",
+            "https://drafts.csswg.org/web-animations/#target-effect-end"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -15712,6 +15607,11 @@
               "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/webdriver2/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/"
@@ -16298,6 +16198,11 @@
               "crawled": "https://drafts.csswg.org/selectors/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://gpuweb.github.io/gpuweb/",
               "title": "WebGPU",
               "crawled": "https://gpuweb.github.io/gpuweb/"
@@ -16317,7 +16222,6 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://drafts.csswg.org/web-animations-1/#discrete",
             "https://drafts.csswg.org/css-color-3/#valuea-def-color",
             "https://www.w3.org/TR/css-values-3/#acknowledgements"
           ],
@@ -16381,6 +16285,11 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
           "informative": [
@@ -16390,16 +16299,6 @@
               "crawled": "https://drafts.csswg.org/css-position/"
             }
           ]
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -16685,6 +16584,11 @@
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/"
@@ -16706,9 +16610,7 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": [
@@ -16915,8 +16817,7 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://html.spec.whatwg.org/#responsible-browsing-context",
-            "https://www.w3.org/TR/web-animations/#animation-type"
+            "https://html.spec.whatwg.org/#responsible-browsing-context"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -17975,6 +17876,11 @@
               "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web Application Manifest",
               "crawled": "https://w3c.github.io/manifest/"
@@ -18521,6 +18427,11 @@
               "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
               "title": "Trusted Types",
               "crawled": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -20069,18 +19980,18 @@
           "informative": []
         },
         "xrefs": {
-          "notExported": [],
+          "notExported": [
+            "https://drafts.csswg.org/web-animations-1/#composite-operation-replace"
+          ],
           "notDfn": [],
           "brokenLinks": [
             "https://drafts.csswg.org/css-position-3/#stacking-context",
-            "https://drafts.csswg.org/web-animations/#animation-type",
             "https://drafts.csswg.org/css-values-3/#typedef-number-percentage",
             "https://drafts.csswg.org/css-color-3/#valuea-def-color",
             "https://drafts.csswg.org/css-color-3/#color0",
             "https://www.w3.org/TR/css-transitions-1/#animtype-length",
             "https://www.w3.org/TR/css-transitions-1/#animtype-number",
-            "https://www.w3.org/TR/css-transitions-1/#animtype-shadow-list",
-            "https://drafts.csswg.org/web-animations-1/#composite-operation-replace"
+            "https://www.w3.org/TR/css-transitions-1/#animtype-shadow-list"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -20138,16 +20049,6 @@
             }
           ],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -21221,6 +21122,11 @@
               "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://w3c.github.io/user-timing/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
@@ -32557,6 +32463,11 @@
               "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web Application Manifest",
               "crawled": "https://w3c.github.io/manifest/"
@@ -33279,7 +33190,6 @@
             "https://drafts.csswg.org/css-grid/#propdef-grid-column-gap",
             "https://drafts.csswg.org/css-grid/#propdef-grid-row-gap",
             "https://drafts.csswg.org/css-multicol/#propdef-column-gap",
-            "https://drafts.csswg.org/web-animations/#update-animations-and-send-events",
             "https://w3c.github.io/webvtt/#webvtt-file-using-cue-text",
             "https://w3c.github.io/manifest/#dfn-manifest",
             "https://www.w3.org/TR/css3-color/#css2-system"
@@ -34379,6 +34289,11 @@
               "url": "https://wicg.github.io/ua-client-hints/",
               "title": "User-Agent Client Hints",
               "crawled": "https://wicg.github.io/ua-client-hints/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             },
             {
               "url": "https://www.w3.org/TR/appmanifest/",
@@ -37193,6 +37108,11 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/",
               "title": "CSS Typed OM Level 1",
               "crawled": "https://drafts.css-houdini.org/css-typed-om-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             }
           ],
           "informative": []
@@ -37201,7 +37121,6 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/web-animations/#animation-type",
             "https://www.w3.org/TR/css-masking-1/#valuedef-margin-box0",
             "https://drafts.csswg.org/css-position-3/#normal-flow",
             "https://drafts.csswg.org/css-position/#normal-flow"
@@ -40902,8 +40821,6 @@
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [
-          "Animatable",
-          "Animation",
           "void"
         ],
         "redefinedIdlNames": [],
@@ -41298,6 +41215,11 @@
               "crawled": "https://w3c.github.io/uievents/"
             },
             {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
               "url": "https://immersive-web.github.io/dom-overlays/",
               "title": "WebXR DOM Overlays Module",
               "crawled": "https://immersive-web.github.io/dom-overlays/"
@@ -41425,11 +41347,8 @@
             "https://html.spec.whatwg.org/#specially-focusable",
             "https://www.w3.org/TR/geometry-1/#dom-dompoint",
             "https://www.w3.org/TR/geometry-1/#dom-dompointreadonly",
-            "https://www.w3.org/TR/web-animations-1/#the-animation-interface",
-            "https://www.w3.org/TR/web-animations-1/#dom-animation-effect",
             "https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly",
             "https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target",
-            "https://www.w3.org/TR/web-animations-1/#animation-type",
             "https://www.w3.org/TR/css3-mediaqueries/#syntax",
             "https://www.w3.org/TR/css-position-3/#vp",
             "https://drafts.csswg.org/web-animations/#animation-interpolation",
@@ -41639,7 +41558,6 @@
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [
-          "AnimationTimeline",
           "CSSOMString"
         ],
         "redefinedIdlNames": [],
@@ -41659,23 +41577,16 @@
         },
         "xrefs": {
           "notExported": [
+            "https://w3c.github.io/web-animations/#concept-animation",
+            "https://w3c.github.io/web-animations/#start-delay",
+            "https://w3c.github.io/web-animations/#current-time",
             "https://drafts.csswg.org/cssom-view/#css-layout-box",
             "https://drafts.csswg.org/cssom-view/#overflow-directions"
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://w3c.github.io/web-animations/#concept-animation",
-            "https://w3c.github.io/web-animations/#timeline",
             "https://w3c.github.io/web-animations/#duration",
-            "https://w3c.github.io/web-animations/#start-delay",
-            "https://w3c.github.io/web-animations/#target-effect-end",
-            "https://w3c.github.io/web-animations/#current-time",
-            "https://w3c.github.io/web-animations/#timeline-phase",
-            "https://w3c.github.io/web-animations/#timeline-inactive-phase",
-            "https://w3c.github.io/web-animations/#timeline-before-phase",
-            "https://w3c.github.io/web-animations/#timeline-after-phase",
-            "https://w3c.github.io/web-animations/#timeline-active-phase",
-            "https://drafts.csswg.org/web-animations-1/#animationtimeline"
+            "https://w3c.github.io/web-animations/#target-effect-end"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -42202,6 +42113,11 @@
               "url": "https://drafts.csswg.org/scroll-animations-1/",
               "title": "Scroll-linked Animations",
               "crawled": "https://drafts.csswg.org/scroll-animations-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             },
             {
               "url": "https://www.w3.org/TR/webvtt1/",
@@ -44996,7 +44912,7 @@
     {
       "title": "Web Animations",
       "shortname": "web-animations-1",
-      "date": "",
+      "date": "21 February 2021",
       "url": "https://www.w3.org/TR/web-animations-1/",
       "release": {
         "url": "https://www.w3.org/TR/web-animations-1/",
@@ -45008,19 +44924,16 @@
         "sourcePath": "web-animations-1/Overview.bs",
         "filename": "Overview.html"
       },
-      "crawled": {
-        "url": "https://drafts.csswg.org/web-animations-1/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "web-animations-1/Overview.bs",
-        "filename": "Overview.html"
-      },
+      "crawled": "https://drafts.csswg.org/web-animations-1/",
       "report": {
-        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
-        "noNormativeRefs": true,
+        "noNormativeRefs": false,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSSOMString"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -45028,7 +44941,22 @@
           "idl": []
         },
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://w3c.github.io/hr-time/",
+            "ref": {
+              "name": "HR-TIME",
+              "url": "https://www.w3.org/TR/hr-time-2/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/hr-time/",
+            "ref": {
+              "name": "HR-TIME",
+              "url": "https://www.w3.org/TR/hr-time-2/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [
             {
@@ -45099,6 +45027,35 @@
               "crawled": "https://drafts.csswg.org/css-pseudo-4/"
             }
           ]
+        },
+        "xrefs": {
+          "notExported": [
+            "https://html.spec.whatwg.org/#media-element",
+            "https://html.spec.whatwg.org/#being-rendered",
+            "https://html.spec.whatwg.org/#event-loop-processing-model",
+            "https://html.spec.whatwg.org/#run-the-animation-frame-callbacks",
+            "https://html.spec.whatwg.org/#session-history-entry",
+            "https://drafts.csswg.org/css-easing-1/#input-progress-value",
+            "https://drafts.csswg.org/css-easing-1/#before-flag",
+            "https://drafts.csswg.org/css-animations-2/#owning-element",
+            "https://drafts.csswg.org/css-transitions-2/#owning-element",
+            "https://drafts.csswg.org/css-style-attr/#style-attribute"
+          ],
+          "notDfn": [
+            "https://html.spec.whatwg.org/#document",
+            "https://html.spec.whatwg.org/#an-entry-with-persisted-user-state",
+            "https://heycam.github.io/webidl/#DOMString-to-es",
+            "https://heycam.github.io/webidl/#es-to-dictionary",
+            "https://heycam.github.io/webidl/#es-to-DOMString"
+          ],
+          "brokenLinks": [
+            "https://w3c.github.io/hr-time/#time-origin",
+            "https://w3c.github.io/hr-time/#domhighrestimestamp",
+            "https://heycam.github.io/webidl/#dfn-present"
+          ],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
         },
         "ok": false
       }
@@ -46503,6 +46460,11 @@
               "url": "https://wicg.github.io/visual-viewport/",
               "title": "Visual Viewport API",
               "crawled": "https://wicg.github.io/visual-viewport/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://drafts.csswg.org/web-animations-1/"
             },
             {
               "url": "https://www.w3.org/TR/webaudio/",
