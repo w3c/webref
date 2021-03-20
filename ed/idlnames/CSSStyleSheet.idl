@@ -7,6 +7,13 @@ interface CSSStyleSheet : StyleSheet {
   undefined deleteRule(unsigned long index);
 };
 
+// Source: Constructable Stylesheet Objects (https://wicg.github.io/construct-stylesheets/)
+partial interface CSSStyleSheet {
+  constructor(optional CSSStyleSheetInit options = {});
+  Promise<CSSStyleSheet> replace(USVString text);
+  void replaceSync(USVString text);
+};
+
 // Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
 partial interface CSSStyleSheet {
   [SameObject] readonly attribute CSSRuleList rules;

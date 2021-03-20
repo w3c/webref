@@ -587,3 +587,8 @@ interface mixin WebGLRenderingContextBase
 
     undefined viewport(GLint x, GLint y, GLsizei width, GLsizei height);
 };
+
+// Source: WebXR Device API (https://www.w3.org/TR/webxr/)
+partial interface mixin WebGLRenderingContextBase {
+    [NewObject] Promise<undefined> makeXRCompatible();
+};

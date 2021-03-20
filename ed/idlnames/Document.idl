@@ -144,6 +144,34 @@ partial interface Document {
   [SameObject] readonly attribute HTMLAllCollection all;
 };
 
+// Source: The Storage Access API (https://privacycg.github.io/storage-access/)
+partial interface Document {
+  Promise<boolean> hasStorageAccess();
+  Promise<undefined> requestStorageAccess();
+};
+
+// Source: Federated Learning of Cohorts (https://wicg.github.io/floc/)
+partial interface Document {
+    Promise<InterestCohort> interestCohort();
+};
+
+// Source: Page Lifecycle (https://wicg.github.io/page-lifecycle/)
+partial interface Document {
+    attribute EventHandler onfreeze;
+    attribute EventHandler onresume;
+    readonly attribute boolean wasDiscarded;
+};
+
+// Source: Private Network Access (https://wicg.github.io/private-network-access/)
+partial interface Document {
+  readonly attribute AddressSpace addressSpace;
+};
+
+// Source: Text Fragments (https://wicg.github.io/scroll-to-text-fragment/)
+partial interface Document {
+    [SameObject] readonly attribute FragmentDirective fragmentDirective;
+};
+
 // Source: CSS Font Loading Module Level 3 (https://www.w3.org/TR/css-font-loading-3/)
 Document includes FontFaceSource;
 
@@ -187,6 +215,11 @@ partial interface Document {
   attribute EventHandler onpointerlockchange;
   attribute EventHandler onpointerlockerror;
   undefined exitPointerLock();
+};
+
+// Source: Selection API (https://www.w3.org/TR/selection-api/)
+partial interface Document {
+  Selection? getSelection();
 };
 
 // Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)

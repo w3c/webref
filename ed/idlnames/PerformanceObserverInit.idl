@@ -4,3 +4,8 @@ dictionary PerformanceObserverInit {
   DOMString type;
   boolean buffered;
 };
+
+// Source: Event Timing API (https://wicg.github.io/event-timing/)
+partial dictionary PerformanceObserverInit {
+    DOMHighResTimeStamp durationThreshold;
+};

@@ -8,7 +8,22 @@
     "fragment": "[Exposed=Window]\ninterface DataTransferItem {\n  readonly attribute DOMString kind;\n  readonly attribute DOMString type;\n  undefined getAsString(FunctionStringCallback? _callback);\n  File? getAsFile();\n};",
     "href": "https://html.spec.whatwg.org/multipage/dnd.html#datatransferitem"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "File and Directory Entries API",
+        "url": "https://wicg.github.io/entries-api/"
+      },
+      "fragment": "partial interface DataTransferItem {\n    FileSystemEntry? webkitGetAsEntry();\n};"
+    },
+    {
+      "spec": {
+        "title": "File System Access",
+        "url": "https://wicg.github.io/file-system-access/"
+      },
+      "fragment": "partial interface DataTransferItem {\n    Promise<FileSystemHandle?> getAsFileSystemHandle();\n};"
+    }
+  ],
   "inheritance": null,
   "includes": []
 }

@@ -103,3 +103,17 @@ partial interface mixin GlobalEventHandlers {
     attribute EventHandler onpointerenter;
     attribute EventHandler onpointerleave;
 };
+
+// Source: Selection API (https://www.w3.org/TR/selection-api/)
+partial interface mixin GlobalEventHandlers {
+  attribute EventHandler onselectstart;
+  attribute EventHandler onselectionchange;
+};
+
+// Source: Touch Events - Level 2 (https://www.w3.org/TR/touch-events/)
+partial interface mixin GlobalEventHandlers {
+                    attribute EventHandler ontouchstart;
+                    attribute EventHandler ontouchend;
+                    attribute EventHandler ontouchmove;
+                    attribute EventHandler ontouchcancel;
+};

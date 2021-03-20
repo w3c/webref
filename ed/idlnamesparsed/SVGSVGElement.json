@@ -145,6 +145,13 @@
           },
           {
             "spec": {
+              "title": "Element Timing API",
+              "url": "https://wicg.github.io/element-timing/"
+            },
+            "fragment": "partial interface Element {\n    [CEReactions] attribute DOMString elementTiming;\n};"
+          },
+          {
+            "spec": {
               "title": "CSS Spatial Navigation Level 1",
               "url": "https://www.w3.org/TR/css-nav-1/"
             },
@@ -219,6 +226,13 @@
               "url": "https://www.w3.org/TR/pointerlock-2/"
             },
             "fragment": "partial interface Element {\n  undefined requestPointerLock();\n};"
+          },
+          {
+            "spec": {
+              "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
+              "url": "https://www.w3.org/TR/wai-aria-1.2/"
+            },
+            "fragment": "Element includes ARIAMixin;"
           },
           {
             "spec": {
@@ -355,6 +369,20 @@
             "includes": []
           },
           {
+            "name": "ARIAMixin",
+            "defined": {
+              "spec": {
+                "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
+                "url": "https://www.w3.org/TR/wai-aria-1.2/"
+              },
+              "fragment": "interface mixin ARIAMixin {\n\tattribute DOMString? role;\n\n\n\tattribute DOMString ariaAtomic;\n\tattribute DOMString ariaAutoComplete;\n\tattribute DOMString ariaBusy;\n\tattribute DOMString ariaChecked;\n\tattribute DOMString ariaColCount;\n\tattribute DOMString ariaColIndex;\n\tattribute DOMString ariaColIndexText;\n\tattribute DOMString ariaColSpan;\n\n\tattribute DOMString ariaCurrent;\n\n\tattribute DOMString ariaDescription;\n\n\tattribute DOMString ariaDisabled;\n\n\tattribute DOMString ariaExpanded;\n\n\tattribute DOMString ariaHasPopup;\n\tattribute DOMString ariaHidden;\n\tattribute DOMString ariaInvalid;\n\tattribute DOMString ariaKeyShortcuts;\n\tattribute DOMString ariaLabel;\n\n\tattribute DOMString ariaLevel;\n\tattribute DOMString ariaLive;\n\tattribute DOMString ariaModal;\n\tattribute DOMString ariaMultiLine;\n\tattribute DOMString ariaMultiSelectable;\n\tattribute DOMString ariaOrientation;\n\n\tattribute DOMString ariaPlaceholder;\n\tattribute DOMString ariaPosInSet;\n\tattribute DOMString ariaPressed;\n\tattribute DOMString ariaReadOnly;\n\n\tattribute DOMString ariaRequired;\n\tattribute DOMString ariaRoleDescription;\n\tattribute DOMString ariaRowCount;\n\tattribute DOMString ariaRowIndex;\n\tattribute DOMString ariaRowIndexText;\n\tattribute DOMString ariaRowSpan;\n\tattribute DOMString ariaSelected;\n\tattribute DOMString ariaSetSize;\n\tattribute DOMString ariaSort;\n\tattribute DOMString ariaValueMax;\n\tattribute DOMString ariaValueMin;\n\tattribute DOMString ariaValueNow;\n\tattribute DOMString ariaValueText;\n};",
+              "href": "https://w3c.github.io/aria/#dom-ariamixin"
+            },
+            "extended": [],
+            "inheritance": null,
+            "includes": []
+          },
+          {
             "name": "Animatable",
             "defined": {
               "spec": {
@@ -431,6 +459,20 @@
                 "url": "https://www.w3.org/TR/pointerevents3/"
               },
               "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};"
+            },
+            {
+              "spec": {
+                "title": "Selection API",
+                "url": "https://www.w3.org/TR/selection-api/"
+              },
+              "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};"
+            },
+            {
+              "spec": {
+                "title": "Touch Events - Level 2",
+                "url": "https://www.w3.org/TR/touch-events/"
+              },
+              "fragment": "partial interface mixin GlobalEventHandlers {\n                    attribute EventHandler ontouchstart;\n                    attribute EventHandler ontouchend;\n                    attribute EventHandler ontouchmove;\n                    attribute EventHandler ontouchcancel;\n};"
             }
           ],
           "inheritance": null,
@@ -522,7 +564,15 @@
         "fragment": "interface mixin WindowEventHandlers {\n  attribute EventHandler onafterprint;\n  attribute EventHandler onbeforeprint;\n  attribute OnBeforeUnloadEventHandler onbeforeunload;\n  attribute EventHandler onhashchange;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onpagehide;\n  attribute EventHandler onpageshow;\n  attribute EventHandler onpopstate;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onstorage;\n  attribute EventHandler onunhandledrejection;\n  attribute EventHandler onunload;\n};",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers"
       },
-      "extended": [],
+      "extended": [
+        {
+          "spec": {
+            "title": "Portals",
+            "url": "https://wicg.github.io/portals/"
+          },
+          "fragment": "partial interface mixin WindowEventHandlers {\n    attribute EventHandler onportalactivate;\n};"
+        }
+      ],
       "inheritance": null,
       "includes": []
     }
