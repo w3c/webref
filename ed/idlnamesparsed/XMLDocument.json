@@ -92,6 +92,41 @@
       },
       {
         "spec": {
+          "title": "The Storage Access API",
+          "url": "https://privacycg.github.io/storage-access/"
+        },
+        "fragment": "partial interface Document {\n  Promise<boolean> hasStorageAccess();\n  Promise<undefined> requestStorageAccess();\n};"
+      },
+      {
+        "spec": {
+          "title": "Federated Learning of Cohorts",
+          "url": "https://wicg.github.io/floc/"
+        },
+        "fragment": "partial interface Document {\n    Promise<InterestCohort> interestCohort();\n};"
+      },
+      {
+        "spec": {
+          "title": "Page Lifecycle",
+          "url": "https://wicg.github.io/page-lifecycle/"
+        },
+        "fragment": "partial interface Document {\n    attribute EventHandler onfreeze;\n    attribute EventHandler onresume;\n    readonly attribute boolean wasDiscarded;\n};"
+      },
+      {
+        "spec": {
+          "title": "Private Network Access",
+          "url": "https://wicg.github.io/private-network-access/"
+        },
+        "fragment": "partial interface Document {\n  readonly attribute AddressSpace addressSpace;\n};"
+      },
+      {
+        "spec": {
+          "title": "Text Fragments",
+          "url": "https://wicg.github.io/scroll-to-text-fragment/"
+        },
+        "fragment": "partial interface Document {\n    [SameObject] readonly attribute FragmentDirective fragmentDirective;\n};"
+      },
+      {
+        "spec": {
           "title": "CSS Font Loading Module Level 3",
           "url": "https://www.w3.org/TR/css-font-loading-3/"
         },
@@ -145,6 +180,13 @@
           "url": "https://www.w3.org/TR/pointerlock-2/"
         },
         "fragment": "partial interface Document {\n  attribute EventHandler onpointerlockchange;\n  attribute EventHandler onpointerlockerror;\n  undefined exitPointerLock();\n};"
+      },
+      {
+        "spec": {
+          "title": "Selection API",
+          "url": "https://www.w3.org/TR/selection-api/"
+        },
+        "fragment": "partial interface Document {\n  Selection? getSelection();\n};"
       },
       {
         "spec": {
@@ -227,6 +269,13 @@
               "url": "https://html.spec.whatwg.org/multipage/"
             },
             "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element? activeElement;\n};"
+          },
+          {
+            "spec": {
+              "title": "Constructable Stylesheet Objects",
+              "url": "https://wicg.github.io/construct-stylesheets/"
+            },
+            "fragment": "partial interface mixin DocumentOrShadowRoot {\n  attribute FrozenArray<CSSStyleSheet> adoptedStyleSheets;\n};"
           },
           {
             "spec": {
@@ -326,6 +375,20 @@
               "url": "https://www.w3.org/TR/pointerevents3/"
             },
             "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};"
+          },
+          {
+            "spec": {
+              "title": "Selection API",
+              "url": "https://www.w3.org/TR/selection-api/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};"
+          },
+          {
+            "spec": {
+              "title": "Touch Events - Level 2",
+              "url": "https://www.w3.org/TR/touch-events/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n                    attribute EventHandler ontouchstart;\n                    attribute EventHandler ontouchend;\n                    attribute EventHandler ontouchmove;\n                    attribute EventHandler ontouchcancel;\n};"
           }
         ],
         "inheritance": null,

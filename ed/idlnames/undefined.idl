@@ -1,29 +1,4 @@
-// Source: Input Events Level 2 (https://www.w3.org/TR/input-events-2/)
-partial dictionary InputEventInit {
-   DataTransfer? dataTransfer = null;
-   sequence<StaticRange> targetRanges = [];
-};s();
-};};
-
-// Source: Pointer Lock 2.0 (https://www.w3.org/TR/pointerlock-2/)
-partial dictionary MouseEventInit {
-  long movementX = 0;
-  long movementY = 0;
-};donly attribute double y;
-  readonly attribute double offsetX;
-  readonly attribute double offsetY;
-};
-
-// Source: Pointer Lock 2.0 (https://www.w3.org/TR/pointerlock-2/)
-partial interface MouseEvent {
-  readonly attribute long movementX;
-  readonly attribute long movementY;
-};estHitTestSourceForTransientInput(XRTransientInputHitTestOptionsInit options);
-};
-
-// Source: WebXR Lighting Estimation API Level 1 (https://immersive-web.github.io/lighting-estimation/)
-partial interface XRSession {
-  Promise<XRLightProbe> requestLightProbe(optional XRLightProbeInit options = {});
-  readonly attribute XRReflectionFormat preferredReflectionFormat;
-};htEstimate(XRLightProbe lightProbe);
+// Source: Web Share Target API (https://w3c.github.io/web-share-target/)
+partial dictionary WebAppManifest {
+  ShareTarget share_target;
 };

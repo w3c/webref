@@ -69,6 +69,12 @@ partial interface HTMLInputElement {
   [CEReactions] attribute DOMString useMap;
 };
 
+// Source: File and Directory Entries API (https://wicg.github.io/entries-api/)
+partial interface HTMLInputElement {
+    attribute boolean webkitdirectory;
+    readonly attribute FrozenArray<FileSystemEntry> webkitEntries;
+};
+
 // Source: HTML Media Capture (https://www.w3.org/TR/html-media-capture/)
 partial interface HTMLInputElement {
     [CEReactions] attribute DOMString capture;

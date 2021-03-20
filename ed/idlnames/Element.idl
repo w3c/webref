@@ -65,6 +65,11 @@ partial interface Element {
   attribute EventHandler onfullscreenerror;
 };
 
+// Source: Element Timing API (https://wicg.github.io/element-timing/)
+partial interface Element {
+    [CEReactions] attribute DOMString elementTiming;
+};
+
 // Source: CSS Spatial Navigation Level 1 (https://www.w3.org/TR/css-nav-1/)
 partial interface Element {
     Node getSpatialNavigationContainer();
@@ -135,6 +140,9 @@ partial interface Element {
 partial interface Element {
   undefined requestPointerLock();
 };
+
+// Source: Accessible Rich Internet Applications (WAI-ARIA) 1.2 (https://www.w3.org/TR/wai-aria-1.2/)
+Element includes ARIAMixin;
 
 // Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
 Element includes Animatable;

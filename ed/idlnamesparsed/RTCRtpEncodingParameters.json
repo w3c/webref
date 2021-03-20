@@ -8,7 +8,15 @@
     "fragment": "dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {\n  boolean active = true;\n  unsigned long maxBitrate;\n  double scaleResolutionDownBy;\n};",
     "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpencodingparameters"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Scalable Video Coding (SVC) Extension for WebRTC",
+        "url": "https://www.w3.org/TR/webrtc-svc/"
+      },
+      "fragment": "partial dictionary RTCRtpEncodingParameters {\n             DOMString scalabilityMode;\n};"
+    }
+  ],
   "inheritance": {
     "name": "RTCRtpCodingParameters",
     "defined": {

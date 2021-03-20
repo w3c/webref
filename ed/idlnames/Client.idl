@@ -8,3 +8,8 @@ interface Client {
   undefined postMessage(any message, sequence<object> transfer);
   undefined postMessage(any message, optional PostMessageOptions options = {});
 };
+
+// Source: Page Lifecycle (https://wicg.github.io/page-lifecycle/)
+partial interface Client {
+    readonly attribute ClientLifecycleState lifecycleState;
+};

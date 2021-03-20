@@ -4,3 +4,8 @@ dictionary RTCRtpEncodingParameters : RTCRtpCodingParameters {
   unsigned long maxBitrate;
   double scaleResolutionDownBy;
 };
+
+// Source: Scalable Video Coding (SVC) Extension for WebRTC (https://www.w3.org/TR/webrtc-svc/)
+partial dictionary RTCRtpEncodingParameters {
+             DOMString scalabilityMode;
+};

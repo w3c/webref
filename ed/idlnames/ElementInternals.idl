@@ -25,3 +25,8 @@ interface ElementInternals {
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 // Accessibility semantics
 ElementInternals includes ARIAMixin;
+
+// Source: Custom State Pseudo Class (https://wicg.github.io/custom-state-pseudo-class/)
+partial interface ElementInternals {
+  readonly attribute CustomStateSet states;
+};

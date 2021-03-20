@@ -18,6 +18,13 @@
     },
     {
       "spec": {
+        "title": "Private Network Access",
+        "url": "https://wicg.github.io/private-network-access/"
+      },
+      "fragment": "partial interface WorkerGlobalScope {\n  readonly attribute AddressSpace addressSpace;\n};"
+    },
+    {
+      "spec": {
         "title": "CSS Font Loading Module Level 3",
         "url": "https://www.w3.org/TR/css-font-loading-3/"
       },
@@ -59,6 +66,20 @@
         },
         {
           "spec": {
+            "title": "Trusted Types",
+            "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+          },
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute TrustedTypePolicyFactory trustedTypes;\n};"
+        },
+        {
+          "spec": {
+            "title": "Origin Policy",
+            "url": "https://wicg.github.io/origin-policy/"
+          },
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute FrozenArray<DOMString> originPolicyIds;\n};"
+        },
+        {
+          "spec": {
             "title": "High Resolution Time",
             "url": "https://www.w3.org/TR/hr-time-3/"
           },
@@ -77,6 +98,13 @@
             "url": "https://www.w3.org/TR/service-workers-1/"
           },
           "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SecureContext, SameObject] readonly attribute CacheStorage caches;\n};"
+        },
+        {
+          "spec": {
+            "title": "Web Cryptography API",
+            "url": "https://www.w3.org/TR/WebCryptoAPI/"
+          },
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute Crypto crypto;\n};"
         }
       ],
       "inheritance": null,

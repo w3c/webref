@@ -4,6 +4,18 @@ namespace CSS {
   CSSOMString escape(CSSOMString ident);
 };
 
+// Source: CSS Parser API (https://wicg.github.io/css-parser-api/)
+partial namespace CSS {
+  Promise<sequence<CSSParserRule>> parseStylesheet(CSSStringSource css, optional CSSParserOptions options = {});
+  Promise<sequence<CSSParserRule>> parseRuleList(CSSStringSource css, optional CSSParserOptions options = {});
+  Promise<CSSParserRule> parseRule(CSSStringSource css, optional CSSParserOptions options = {});
+  Promise<sequence<CSSParserRule>> parseDeclarationList(CSSStringSource css, optional CSSParserOptions options = {});
+  CSSParserDeclaration parseDeclaration(DOMString css, optional CSSParserOptions options = {});
+  CSSToken parseValue(DOMString css);
+  sequence<CSSToken> parseValueList(DOMString css);
+  sequence<sequence<CSSToken>> parseCommaValueList(DOMString css);
+};
+
 // Source: CSS Animation Worklet API (https://www.w3.org/TR/css-animation-worklet-1/)
 [Exposed=Window]
 partial namespace CSS {

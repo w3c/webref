@@ -91,6 +91,25 @@ partial interface Window {
   [Replaceable, SameObject] readonly attribute External external;
 };
 
+// Source: Cookie Store API (https://wicg.github.io/cookie-store/)
+[SecureContext]
+partial interface Window {
+  [SameObject] readonly attribute CookieStore cookieStore;
+};
+
+// Source: File System Access (https://wicg.github.io/file-system-access/)
+[SecureContext]
+partial interface Window {
+    Promise<sequence<FileSystemFileHandle>> showOpenFilePicker(optional OpenFilePickerOptions options = {});
+    Promise<FileSystemFileHandle> showSaveFilePicker(optional SaveFilePickerOptions options = {});
+    Promise<FileSystemDirectoryHandle> showDirectoryPicker(optional DirectoryPickerOptions options = {});
+};
+
+// Source: Portals (https://wicg.github.io/portals/)
+partial interface Window {
+    readonly attribute PortalHost? portalHost;
+};
+
 // Source: Web Speech API (https://wicg.github.io/speech-api/)
 partial interface Window {
     [SameObject] readonly attribute SpeechSynthesis speechSynthesis;
@@ -172,4 +191,9 @@ partial interface Window {
 partial interface Window {
   unsigned long requestIdleCallback(IdleRequestCallback callback, optional IdleRequestOptions options = {});
   undefined cancelIdleCallback(unsigned long handle);
+};
+
+// Source: Selection API (https://www.w3.org/TR/selection-api/)
+partial interface Window {
+  Selection? getSelection();
 };

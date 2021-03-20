@@ -1,4 +1,13 @@
 {
+  "name": "XRFrame",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface XRFrame {\n  [SameObject] readonly attribute XRSession session;\n\n  XRViewerPose? getViewerPose(XRReferenceSpace referenceSpace);\n  XRPose? getPose(XRSpace space, XRSpace baseSpace);\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrframe"
+  },
   "extended": [
     {
       "spec": {
@@ -34,7 +43,15 @@
         "url": "https://immersive-web.github.io/lighting-estimation/"
       },
       "fragment": "partial interface XRFrame {\n  XRLightEstimate? getLightEstimate(XRLightProbe lightProbe);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Hand Input Module - Level 1",
+        "url": "https://www.w3.org/TR/webxr-hand-input-1/"
+      },
+      "fragment": "partial interface XRFrame {\n    XRJointPose? getJointPose(XRJointSpace joint, XRSpace baseSpace);\n    boolean fillJointRadii(sequence<XRJointSpace> jointSpaces, Float32Array radii);\n\n    boolean fillPoses(sequence<XRSpace> spaces, XRSpace baseSpace, Float32Array transforms);\n};"
     }
   ],
+  "inheritance": null,
   "includes": []
 }

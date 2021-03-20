@@ -8,7 +8,15 @@
     "fragment": "dictionary PerformanceObserverInit {\n  sequence<DOMString> entryTypes;\n  DOMString type;\n  boolean buffered;\n};",
     "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Event Timing API",
+        "url": "https://wicg.github.io/event-timing/"
+      },
+      "fragment": "partial dictionary PerformanceObserverInit {\n    DOMHighResTimeStamp durationThreshold;\n};"
+    }
+  ],
   "inheritance": null,
   "includes": []
 }
