@@ -7629,7 +7629,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
-- Crawled version: 18 March 2021
+- Crawled version: 20 March 2021
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
 - Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Shortname: html-aam-1.0
@@ -7825,10 +7825,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/html/#element-attrdef-object-type`](https://www.w3.org/TR/html/#element-attrdef-object-type)
      * [`https://www.w3.org/TR/html/#element-attrdef-script-type`](https://www.w3.org/TR/html/#element-attrdef-script-type)
      * [`https://www.w3.org/TR/html/#element-attrdef-ol-type`](https://www.w3.org/TR/html/#element-attrdef-ol-type)
-     * [`https://www.w3.org/TR/html/#element-attrdef-button-value`](https://www.w3.org/TR/html/#element-attrdef-button-value)
-     * [`https://www.w3.org/TR/html/#element-attrdef-option-value`](https://www.w3.org/TR/html/#element-attrdef-option-value)
-     * [`https://www.w3.org/TR/html/#element-attrdef-li-value`](https://www.w3.org/TR/html/#element-attrdef-li-value)
-     * [`https://www.w3.org/TR/html/#element-attrdef-param-value`](https://www.w3.org/TR/html/#element-attrdef-param-value)
      * [`https://www.w3.org/TR/html/#element-attrdef-canvas-width`](https://www.w3.org/TR/html/#element-attrdef-canvas-width)
      * [`https://www.w3.org/TR/html/#element-attrdef-media-width`](https://www.w3.org/TR/html/#element-attrdef-media-width)
      * [`https://www.w3.org/TR/html/#tabular-data`](https://www.w3.org/TR/html/#tabular-data)

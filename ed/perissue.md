@@ -4198,10 +4198,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html/#element-attrdef-object-type`](https://www.w3.org/TR/html/#element-attrdef-object-type)
      * [`https://www.w3.org/TR/html/#element-attrdef-script-type`](https://www.w3.org/TR/html/#element-attrdef-script-type)
      * [`https://www.w3.org/TR/html/#element-attrdef-ol-type`](https://www.w3.org/TR/html/#element-attrdef-ol-type)
-     * [`https://www.w3.org/TR/html/#element-attrdef-button-value`](https://www.w3.org/TR/html/#element-attrdef-button-value)
-     * [`https://www.w3.org/TR/html/#element-attrdef-option-value`](https://www.w3.org/TR/html/#element-attrdef-option-value)
-     * [`https://www.w3.org/TR/html/#element-attrdef-li-value`](https://www.w3.org/TR/html/#element-attrdef-li-value)
-     * [`https://www.w3.org/TR/html/#element-attrdef-param-value`](https://www.w3.org/TR/html/#element-attrdef-param-value)
      * [`https://www.w3.org/TR/html/#element-attrdef-canvas-width`](https://www.w3.org/TR/html/#element-attrdef-canvas-width)
      * [`https://www.w3.org/TR/html/#element-attrdef-media-width`](https://www.w3.org/TR/html/#element-attrdef-media-width)
      * [`https://www.w3.org/TR/html/#tabular-data`](https://www.w3.org/TR/html/#tabular-data)
@@ -4539,7 +4535,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 597 problematic external links found in 139 specifications
+=> 593 problematic external links found in 139 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
