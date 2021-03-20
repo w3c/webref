@@ -7,8 +7,3 @@ interface File : Blob {
   readonly attribute DOMString name;
   readonly attribute long long lastModified;
 };
-
-// Source: File and Directory Entries API (https://wicg.github.io/entries-api/)
-partial interface File {
-    readonly attribute USVString webkitRelativePath;
-};

@@ -27,16 +27,6 @@ partial interface mixin WindowOrWorkerGlobalScope {
   [NewObject] Promise<Response> fetch(RequestInfo input, optional RequestInit init = {});
 };
 
-// Source: Trusted Types (https://w3c.github.io/webappsec-trusted-types/dist/spec/)
-partial interface mixin WindowOrWorkerGlobalScope {
-  readonly attribute TrustedTypePolicyFactory trustedTypes;
-};
-
-// Source: Origin Policy (https://wicg.github.io/origin-policy/)
-partial interface mixin WindowOrWorkerGlobalScope {
-  readonly attribute FrozenArray<DOMString> originPolicyIds;
-};
-
 // Source: High Resolution Time (https://www.w3.org/TR/hr-time-3/)
 partial interface mixin WindowOrWorkerGlobalScope {
   [Replaceable] readonly attribute Performance performance;
@@ -50,9 +40,4 @@ partial interface mixin WindowOrWorkerGlobalScope {
 // Source: Service Workers Nightly (https://www.w3.org/TR/service-workers-1/)
 partial interface mixin WindowOrWorkerGlobalScope {
   [SecureContext, SameObject] readonly attribute CacheStorage caches;
-};
-
-// Source: Web Cryptography API (https://www.w3.org/TR/WebCryptoAPI/)
-partial interface mixin WindowOrWorkerGlobalScope {
-  [SameObject] readonly attribute Crypto crypto;
 };

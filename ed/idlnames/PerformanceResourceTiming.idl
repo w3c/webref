@@ -20,9 +20,3 @@ interface PerformanceResourceTiming : PerformanceEntry {
     readonly        attribute unsigned long long  decodedBodySize;
     [Default] object toJSON();
 };
-
-// Source: Server Timing (https://www.w3.org/TR/server-timing/)
-[Exposed=(Window,Worker)]
-partial interface PerformanceResourceTiming {
-  readonly attribute FrozenArray<PerformanceServerTiming> serverTiming;
-};

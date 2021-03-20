@@ -5,11 +5,6 @@ interface MediaDevices : EventTarget {
   Promise<sequence<MediaDeviceInfo>> enumerateDevices();
 };
 
-// Source: Audio Output Devices API (https://www.w3.org/TR/audio-output/)
-partial interface MediaDevices {
-  Promise<MediaDeviceInfo> selectAudioOutput(optional AudioOutputOptions options = {});
-};
-
 // Source: Media Capture and Streams (https://www.w3.org/TR/mediacapture-streams/)
 partial interface MediaDevices {
   MediaTrackSupportedConstraints getSupportedConstraints();

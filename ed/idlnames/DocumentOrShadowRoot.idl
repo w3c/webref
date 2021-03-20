@@ -12,11 +12,6 @@ partial interface mixin DocumentOrShadowRoot {
   readonly attribute Element? activeElement;
 };
 
-// Source: Constructable Stylesheet Objects (https://wicg.github.io/construct-stylesheets/)
-partial interface mixin DocumentOrShadowRoot {
-  attribute FrozenArray<CSSStyleSheet> adoptedStyleSheets;
-};
-
 // Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
 partial interface mixin DocumentOrShadowRoot {
   [SameObject] readonly attribute StyleSheetList styleSheets;

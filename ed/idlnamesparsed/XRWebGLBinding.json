@@ -1,13 +1,4 @@
 {
-  "name": "XRWebGLBinding",
-  "defined": {
-    "spec": {
-      "title": "WebXR Layers API Level 1",
-      "url": "https://www.w3.org/TR/webxrlayers-1/"
-    },
-    "fragment": "[Exposed=Window] interface XRWebGLBinding {\n  constructor(XRSession session, XRWebGLRenderingContext context);\n\n  readonly attribute double nativeProjectionScaleFactor;\n\n  XRProjectionLayer createProjectionLayer(optional XRProjectionLayerInit init = {});\n  XRQuadLayer createQuadLayer(optional XRQuadLayerInit init = {});\n  XRCylinderLayer createCylinderLayer(optional XRCylinderLayerInit init = {});\n  XREquirectLayer createEquirectLayer(optional XREquirectLayerInit init = {});\n  XRCubeLayer createCubeLayer(optional XRCubeLayerInit init = {});\n\n  XRWebGLSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = \"none\");\n  XRWebGLSubImage getViewSubImage(XRProjectionLayer layer, XRView view);\n};",
-    "href": "https://immersive-web.github.io/layers/#xrwebglbinding"
-  },
   "extended": [
     {
       "spec": {
@@ -24,6 +15,5 @@
       "fragment": "partial interface XRWebGLBinding {\n  WebGLTexture? getReflectionCubeMap(XRLightProbe lightProbe);\n};"
     }
   ],
-  "inheritance": null,
   "includes": []
 }

@@ -17,8 +17,3 @@ interface mixin WindowEventHandlers {
   attribute EventHandler onunhandledrejection;
   attribute EventHandler onunload;
 };
-
-// Source: Portals (https://wicg.github.io/portals/)
-partial interface mixin WindowEventHandlers {
-    attribute EventHandler onportalactivate;
-};
