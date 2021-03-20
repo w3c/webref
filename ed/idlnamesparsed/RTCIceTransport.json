@@ -8,15 +8,7 @@
     "fragment": "[Exposed=Window]\ninterface RTCIceTransport : EventTarget {\n  readonly attribute RTCIceRole role;\n  readonly attribute RTCIceComponent component;\n  readonly attribute RTCIceTransportState state;\n  readonly attribute RTCIceGathererState gatheringState;\n  sequence<RTCIceCandidate> getLocalCandidates();\n  sequence<RTCIceCandidate> getRemoteCandidates();\n  RTCIceCandidatePair? getSelectedCandidatePair();\n  RTCIceParameters? getLocalParameters();\n  RTCIceParameters? getRemoteParameters();\n  attribute EventHandler onstatechange;\n  attribute EventHandler ongatheringstatechange;\n  attribute EventHandler onselectedcandidatepairchange;\n};",
     "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "IceTransport Extensions for WebRTC",
-        "url": "https://w3c.github.io/webrtc-ice/"
-      },
-      "fragment": "[Exposed=Window]\npartial interface RTCIceTransport {\n    constructor();\n    undefined                      gather (optional RTCIceGatherOptions options = {});\n    undefined                      start (optional RTCIceParameters remoteParameters = {}, optional RTCIceRole role = \"controlled\");\n    undefined                      stop ();\n    undefined                      addRemoteCandidate (optional RTCIceCandidateInit remoteCandidate = {});\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onicecandidate;\n};"
-    }
-  ],
+  "extended": [],
   "inheritance": {
     "name": "EventTarget",
     "defined": {

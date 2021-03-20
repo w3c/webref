@@ -14,15 +14,3 @@ interface RTCIceTransport : EventTarget {
   attribute EventHandler ongatheringstatechange;
   attribute EventHandler onselectedcandidatepairchange;
 };
-
-// Source: IceTransport Extensions for WebRTC (https://w3c.github.io/webrtc-ice/)
-[Exposed=Window]
-partial interface RTCIceTransport {
-    constructor();
-    undefined                      gather (optional RTCIceGatherOptions options = {});
-    undefined                      start (optional RTCIceParameters remoteParameters = {}, optional RTCIceRole role = "controlled");
-    undefined                      stop ();
-    undefined                      addRemoteCandidate (optional RTCIceCandidateInit remoteCandidate = {});
-                    attribute EventHandler        onerror;
-                    attribute EventHandler        onicecandidate;
-};

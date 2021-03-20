@@ -8,15 +8,7 @@
     "fragment": "[Exposed=Window, SecureContext]\ninterface Gamepad {\n  readonly attribute DOMString id;\n  readonly attribute long index;\n  readonly attribute boolean connected;\n  readonly attribute DOMHighResTimeStamp timestamp;\n  readonly attribute GamepadMappingType mapping;\n  readonly attribute FrozenArray<double> axes;\n  readonly attribute FrozenArray<GamepadButton> buttons;\n};",
     "href": "https://w3c.github.io/gamepad/#dom-gamepad"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "Gamepad Extensions",
-        "url": "https://w3c.github.io/gamepad/extensions.html"
-      },
-      "fragment": "partial interface Gamepad {\n  readonly attribute GamepadHand hand;\n  readonly attribute FrozenArray<GamepadHapticActuator> hapticActuators;\n  readonly attribute GamepadPose? pose;\n  readonly attribute FrozenArray<GamepadTouch>? touchEvents;\n};"
-    }
-  ],
+  "extended": [],
   "inheritance": null,
   "includes": []
 }

@@ -74,27 +74,6 @@
     },
     {
       "spec": {
-        "title": "Cookie Store API",
-        "url": "https://wicg.github.io/cookie-store/"
-      },
-      "fragment": "[SecureContext]\npartial interface Window {\n  [SameObject] readonly attribute CookieStore cookieStore;\n};"
-    },
-    {
-      "spec": {
-        "title": "File System Access",
-        "url": "https://wicg.github.io/file-system-access/"
-      },
-      "fragment": "[SecureContext]\npartial interface Window {\n    Promise<sequence<FileSystemFileHandle>> showOpenFilePicker(optional OpenFilePickerOptions options = {});\n    Promise<FileSystemFileHandle> showSaveFilePicker(optional SaveFilePickerOptions options = {});\n    Promise<FileSystemDirectoryHandle> showDirectoryPicker(optional DirectoryPickerOptions options = {});\n};"
-    },
-    {
-      "spec": {
-        "title": "Portals",
-        "url": "https://wicg.github.io/portals/"
-      },
-      "fragment": "partial interface Window {\n    readonly attribute PortalHost? portalHost;\n};"
-    },
-    {
-      "spec": {
         "title": "Web Speech API",
         "url": "https://wicg.github.io/speech-api/"
       },
@@ -162,13 +141,6 @@
         "url": "https://www.w3.org/TR/requestidlecallback/"
       },
       "fragment": "partial interface Window {\n  unsigned long requestIdleCallback(IdleRequestCallback callback, optional IdleRequestOptions options = {});\n  undefined cancelIdleCallback(unsigned long handle);\n};"
-    },
-    {
-      "spec": {
-        "title": "Selection API",
-        "url": "https://www.w3.org/TR/selection-api/"
-      },
-      "fragment": "partial interface Window {\n  Selection? getSelection();\n};"
     }
   ],
   "inheritance": {
@@ -224,20 +196,6 @@
             "url": "https://www.w3.org/TR/pointerevents3/"
           },
           "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};"
-        },
-        {
-          "spec": {
-            "title": "Selection API",
-            "url": "https://www.w3.org/TR/selection-api/"
-          },
-          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};"
-        },
-        {
-          "spec": {
-            "title": "Touch Events - Level 2",
-            "url": "https://www.w3.org/TR/touch-events/"
-          },
-          "fragment": "partial interface mixin GlobalEventHandlers {\n                    attribute EventHandler ontouchstart;\n                    attribute EventHandler ontouchend;\n                    attribute EventHandler ontouchmove;\n                    attribute EventHandler ontouchcancel;\n};"
         }
       ],
       "inheritance": null,
@@ -253,15 +211,7 @@
         "fragment": "interface mixin WindowEventHandlers {\n  attribute EventHandler onafterprint;\n  attribute EventHandler onbeforeprint;\n  attribute OnBeforeUnloadEventHandler onbeforeunload;\n  attribute EventHandler onhashchange;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onpagehide;\n  attribute EventHandler onpageshow;\n  attribute EventHandler onpopstate;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onstorage;\n  attribute EventHandler onunhandledrejection;\n  attribute EventHandler onunload;\n};",
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers"
       },
-      "extended": [
-        {
-          "spec": {
-            "title": "Portals",
-            "url": "https://wicg.github.io/portals/"
-          },
-          "fragment": "partial interface mixin WindowEventHandlers {\n    attribute EventHandler onportalactivate;\n};"
-        }
-      ],
+      "extended": [],
       "inheritance": null,
       "includes": []
     },
@@ -285,20 +235,6 @@
         },
         {
           "spec": {
-            "title": "Trusted Types",
-            "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
-          },
-          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute TrustedTypePolicyFactory trustedTypes;\n};"
-        },
-        {
-          "spec": {
-            "title": "Origin Policy",
-            "url": "https://wicg.github.io/origin-policy/"
-          },
-          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute FrozenArray<DOMString> originPolicyIds;\n};"
-        },
-        {
-          "spec": {
             "title": "High Resolution Time",
             "url": "https://www.w3.org/TR/hr-time-3/"
           },
@@ -317,13 +253,6 @@
             "url": "https://www.w3.org/TR/service-workers-1/"
           },
           "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SecureContext, SameObject] readonly attribute CacheStorage caches;\n};"
-        },
-        {
-          "spec": {
-            "title": "Web Cryptography API",
-            "url": "https://www.w3.org/TR/WebCryptoAPI/"
-          },
-          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute Crypto crypto;\n};"
         }
       ],
       "inheritance": null,

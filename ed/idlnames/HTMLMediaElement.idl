@@ -59,12 +59,6 @@ interface HTMLMediaElement : HTMLElement {
   TextTrack addTextTrack(TextTrackKind kind, optional DOMString label = "", optional DOMString language = "");
 };
 
-// Source: Audio Output Devices API (https://www.w3.org/TR/audio-output/)
-partial interface HTMLMediaElement {
-  [SecureContext] readonly attribute DOMString sinkId;
-  [SecureContext] Promise<undefined> setSinkId (DOMString sinkId);
-};
-
 // Source: Encrypted Media Extensions (https://www.w3.org/TR/encrypted-media/)
 [Exposed=Window] partial interface HTMLMediaElement {
     [SecureContext] readonly        attribute MediaKeys?   mediaKeys;

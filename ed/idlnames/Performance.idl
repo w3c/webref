@@ -6,23 +6,6 @@ interface Performance : EventTarget {
     [Default] object toJSON();
 };
 
-// Source: Event Timing API (https://wicg.github.io/event-timing/)
-[Exposed=Window]
-partial interface Performance {
-    [SameObject] readonly attribute EventCounts eventCounts;
-};
-
-// Source: JS Self-Profiling API (https://wicg.github.io/js-self-profiling/)
-[Exposed=(Window,Worker)]
-partial interface Performance {
-  Promise<Profiler> profile(ProfilerInitOptions options);
-};
-
-// Source: Measure Memory API (https://wicg.github.io/performance-measure-memory/)
-partial interface Performance {
-  [CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();
-};
-
 // Source: Navigation Timing Level 2 (https://www.w3.org/TR/navigation-timing-2/)
 [Exposed=Window]
 partial interface Performance {
@@ -44,20 +27,4 @@ partial interface Performance {
   undefined clearResourceTimings ();
   undefined setResourceTimingBufferSize (unsigned long maxSize);
               attribute EventHandler onresourcetimingbufferfull;
-};
-
-// Source: User Timing Level 3 (https://www.w3.org/TR/user-timing-2/)
-partial interface Performance {
-    PerformanceMark mark(DOMString markName, optional PerformanceMarkOptions markOptions = {});
-    undefined clearMarks(optional DOMString markName);
-    PerformanceMeasure measure(DOMString measureName, optional (DOMString or PerformanceMeasureOptions) startOrMeasureOptions = {}, optional DOMString endMark);
-    undefined clearMeasures(optional DOMString measureName);
-};
-
-// Source: User Timing Level 3 (https://www.w3.org/TR/user-timing-3/)
-partial interface Performance {
-    PerformanceMark mark(DOMString markName, optional PerformanceMarkOptions markOptions = {});
-    undefined clearMarks(optional DOMString markName);
-    PerformanceMeasure measure(DOMString measureName, optional (DOMString or PerformanceMeasureOptions) startOrMeasureOptions = {}, optional DOMString endMark);
-    undefined clearMeasures(optional DOMString measureName);
 };

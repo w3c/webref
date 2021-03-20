@@ -22,9 +22,3 @@ interface MediaStreamTrack : EventTarget {
 partial interface MediaStreamTrack {
   attribute DOMString contentHint;
 };
-
-// Source: Identity for WebRTC 1.0 (https://www.w3.org/TR/webrtc-identity/)
-partial interface MediaStreamTrack {
-    readonly        attribute boolean      isolated;
-                    attribute EventHandler onisolationchange;
-};
