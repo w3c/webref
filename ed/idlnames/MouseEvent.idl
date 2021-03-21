@@ -39,3 +39,9 @@ partial interface MouseEvent {
   readonly attribute long movementX;
   readonly attribute long movementY;
 };
+
+// Source: UI Events (https://www.w3.org/TR/uievents/)
+partial interface MouseEvent {
+  // Deprecated in this specification
+  undefined initMouseEvent();
+};

@@ -13,6 +13,12 @@ partial interface UIEvent {
 
 // Source: UI Events (https://www.w3.org/TR/uievents/)
 partial interface UIEvent {
+  // Deprecated in this specification
+  undefined initUIEvent();
+};
+
+// Source: UI Events (https://www.w3.org/TR/uievents/)
+partial interface UIEvent {
   // The following support legacy user agents
   readonly attribute unsigned long which;
 };
