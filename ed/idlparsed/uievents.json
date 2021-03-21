@@ -1815,10 +1815,186 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "MutationEvent": {
+        "fragment": "interface MutationEvent : Event {\n  // attrChangeType\n  const unsigned short MODIFICATION = 1;\n  const unsigned short ADDITION = 2;\n  const unsigned short REMOVAL = 3;\n\n  readonly attribute Node? relatedNode;\n  readonly attribute DOMString prevValue;\n  readonly attribute DOMString newValue;\n  readonly attribute DOMString attrName;\n  readonly attribute unsigned short attrChange;\n\n  undefined initMutationEvent();\n};",
+        "type": "interface",
+        "name": "MutationEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "const",
+            "name": "MODIFICATION",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "1"
+            }
+          },
+          {
+            "type": "const",
+            "name": "ADDITION",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "2"
+            }
+          },
+          {
+            "type": "const",
+            "name": "REMOVAL",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "3"
+            }
+          },
+          {
+            "type": "attribute",
+            "name": "relatedNode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Node"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "prevValue",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "newValue",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "attrName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "attrChange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "initMutationEvent",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {
       "UIEvent": [
+        {
+          "fragment": "partial interface UIEvent {\n  // Deprecated in this specification\n  undefined initUIEvent();\n};",
+          "type": "interface",
+          "name": "UIEvent",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "initUIEvent",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
         {
           "fragment": "partial interface UIEvent {\n  // The following support legacy user agents\n  readonly attribute unsigned long which;\n};",
           "type": "interface",
@@ -1845,7 +2021,273 @@
           "partial": true
         }
       ],
+      "MouseEvent": [
+        {
+          "fragment": "partial interface MouseEvent {\n  // Deprecated in this specification\n  undefined initMouseEvent();\n};",
+          "type": "interface",
+          "name": "MouseEvent",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "initMouseEvent",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "WheelEvent": [
+        {
+          "fragment": "partial interface WheelEvent {\n  // Originally introduced (and deprecated) in this specification\n  undefined initWheelEvent();\n};",
+          "type": "interface",
+          "name": "WheelEvent",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "initWheelEvent",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
       "KeyboardEvent": [
+        {
+          "fragment": "partial interface KeyboardEvent {\n  // Originally introduced (and deprecated) in this specification\n  undefined initKeyboardEvent(DOMString typeArg,\n                              optional boolean bubblesArg = false,\n                              optional boolean cancelableArg = false,\n                              optional Window? viewArg = null,\n                              optional DOMString keyArg = \"\",\n                              optional unsigned long locationArg = 0,\n                              optional boolean ctrlKey = false,\n                              optional boolean altKey = false,\n                              optional boolean shiftKey = false,\n                              optional boolean metaKey = false);\n};",
+          "type": "interface",
+          "name": "KeyboardEvent",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "initKeyboardEvent",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "typeArg",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "bubblesArg",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "default": {
+                    "type": "boolean",
+                    "value": false
+                  },
+                  "optional": true,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "cancelableArg",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "default": {
+                    "type": "boolean",
+                    "value": false
+                  },
+                  "optional": true,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "viewArg",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": true,
+                    "union": false,
+                    "idlType": "Window"
+                  },
+                  "default": {
+                    "type": "null"
+                  },
+                  "optional": true,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "keyArg",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": {
+                    "type": "string",
+                    "value": ""
+                  },
+                  "optional": true,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "locationArg",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "unsigned long"
+                  },
+                  "default": {
+                    "type": "number",
+                    "value": "0"
+                  },
+                  "optional": true,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "ctrlKey",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "default": {
+                    "type": "boolean",
+                    "value": false
+                  },
+                  "optional": true,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "altKey",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "default": {
+                    "type": "boolean",
+                    "value": false
+                  },
+                  "optional": true,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "shiftKey",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "default": {
+                    "type": "boolean",
+                    "value": false
+                  },
+                  "optional": true,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "metaKey",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "boolean"
+                  },
+                  "default": {
+                    "type": "boolean",
+                    "value": false
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
         {
           "fragment": "partial interface KeyboardEvent {\n  // The following support legacy user agents\n  readonly attribute unsigned long charCode;\n  readonly attribute unsigned long keyCode;\n};",
           "type": "interface",
@@ -1881,6 +2323,63 @@
               "extAttrs": [],
               "special": "",
               "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "CompositionEvent": [
+        {
+          "fragment": "partial interface CompositionEvent {\n  // Originally introduced (and deprecated) in this specification\n  undefined initCompositionEvent();\n};",
+          "type": "interface",
+          "name": "CompositionEvent",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "initCompositionEvent",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "UIEventInit": [
+        {
+          "fragment": "partial dictionary UIEventInit {\n  unsigned long which = 0;\n};",
+          "type": "dictionary",
+          "name": "UIEventInit",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "which",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "unsigned long"
+              },
+              "default": {
+                "type": "number",
+                "value": "0"
+              },
+              "required": false
             }
           ],
           "extAttrs": [],
@@ -1995,7 +2494,8 @@
       ],
       "KeyboardEvent": [
         "UIEvent",
-        "KeyboardEventInit"
+        "KeyboardEventInit",
+        "Window"
       ],
       "KeyboardEventInit": [
         "EventModifierInit"
@@ -2006,13 +2506,18 @@
       ],
       "CompositionEventInit": [
         "UIEventInit"
+      ],
+      "MutationEvent": [
+        "Event",
+        "Node"
       ]
     },
     "externalDependencies": [
       "Event",
       "Window",
       "EventInit",
-      "EventTarget"
+      "EventTarget",
+      "Node"
     ],
     "hasObsoleteIdl": false
   }

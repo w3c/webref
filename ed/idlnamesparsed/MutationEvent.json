@@ -1,36 +1,14 @@
 {
-  "name": "UIEvent",
+  "name": "MutationEvent",
   "defined": {
     "spec": {
       "title": "UI Events",
       "url": "https://www.w3.org/TR/uievents/"
     },
-    "fragment": "[Exposed=Window]\ninterface UIEvent : Event {\n  constructor(DOMString type, optional UIEventInit eventInitDict);\n  readonly attribute Window? view;\n  readonly attribute long detail;\n};",
-    "href": "https://w3c.github.io/uievents/#uievent"
+    "fragment": "interface MutationEvent : Event {\n  // attrChangeType\n  const unsigned short MODIFICATION = 1;\n  const unsigned short ADDITION = 2;\n  const unsigned short REMOVAL = 3;\n\n  readonly attribute Node? relatedNode;\n  readonly attribute DOMString prevValue;\n  readonly attribute DOMString newValue;\n  readonly attribute DOMString attrName;\n  readonly attribute unsigned short attrChange;\n\n  undefined initMutationEvent();\n};",
+    "href": "https://w3c.github.io/uievents/#mutationevent"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "Input Device Capabilities",
-        "url": "https://wicg.github.io/input-device-capabilities/"
-      },
-      "fragment": "partial interface UIEvent {\n  readonly attribute InputDeviceCapabilities? sourceCapabilities;\n};"
-    },
-    {
-      "spec": {
-        "title": "UI Events",
-        "url": "https://www.w3.org/TR/uievents/"
-      },
-      "fragment": "partial interface UIEvent {\n  // Deprecated in this specification\n  undefined initUIEvent();\n};"
-    },
-    {
-      "spec": {
-        "title": "UI Events",
-        "url": "https://www.w3.org/TR/uievents/"
-      },
-      "fragment": "partial interface UIEvent {\n  // The following support legacy user agents\n  readonly attribute unsigned long which;\n};"
-    }
-  ],
+  "extended": [],
   "inheritance": {
     "name": "Event",
     "defined": {

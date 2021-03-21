@@ -12,3 +12,9 @@ interface WheelEvent : MouseEvent {
   readonly attribute double deltaZ;
   readonly attribute unsigned long deltaMode;
 };
+
+// Source: UI Events (https://www.w3.org/TR/uievents/)
+partial interface WheelEvent {
+  // Originally introduced (and deprecated) in this specification
+  undefined initWheelEvent();
+};
