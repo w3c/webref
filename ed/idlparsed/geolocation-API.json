@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "Geolocation": {
-        "fragment": "[Exposed=Window]\ninterface Geolocation {\n  undefined getCurrentPosition(PositionCallback successCallback,\n                          optional PositionErrorCallback errorCallback,\n                          optional PositionOptions options = {});\n\n  long watchPosition(PositionCallback successCallback,\n                      optional PositionErrorCallback errorCallback,\n                      optional PositionOptions options = {});\n\n  undefined clearWatch(long watchId);\n};",
+        "fragment": "[Exposed=Window]\ninterface Geolocation {\n  undefined getCurrentPosition(PositionCallback successCallback,\n                          optional PositionErrorCallback? errorCallback = null,\n                          optional PositionOptions options = {});\n\n  long watchPosition(PositionCallback successCallback,\n                      optional PositionErrorCallback? errorCallback = null,\n                      optional PositionOptions options = {});\n\n  undefined clearWatch(long watchId);\n};",
         "type": "interface",
         "name": "Geolocation",
         "inheritance": null,
@@ -58,11 +58,13 @@
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "PositionErrorCallback"
                 },
-                "default": null,
+                "default": {
+                  "type": "null"
+                },
                 "optional": true,
                 "variadic": false
               },
@@ -124,11 +126,13 @@
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "PositionErrorCallback"
                 },
-                "default": null,
+                "default": {
+                  "type": "null"
+                },
                 "optional": true,
                 "variadic": false
               },
