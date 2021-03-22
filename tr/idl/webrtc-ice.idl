@@ -16,9 +16,9 @@ dictionary RTCIceGatherOptions {
 partial interface RTCIceTransport {
     constructor();
     undefined                      gather (optional RTCIceGatherOptions options = {});
-    undefined                      start (RTCIceParameters remoteParameters, optional RTCIceRole role = "controlled");
+    undefined                      start (optional RTCIceParameters remoteParameters = {}, optional RTCIceRole role = "controlled");
     undefined                      stop ();
-    undefined                      addRemoteCandidate (RTCIceCandidateInit remoteCandidate);
+    undefined                      addRemoteCandidate (optional RTCIceCandidateInit remoteCandidate = {});
                     attribute EventHandler        onerror;
                     attribute EventHandler        onicecandidate;
 };

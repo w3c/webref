@@ -15,13 +15,6 @@
         "url": "https://html.spec.whatwg.org/multipage/"
       },
       "fragment": "DedicatedWorkerGlobalScope includes AnimationFrameProvider;"
-    },
-    {
-      "spec": {
-        "title": "WebRTC Insertable Media using Streams",
-        "url": "https://w3c.github.io/webrtc-insertable-streams/"
-      },
-      "fragment": "partial interface DedicatedWorkerGlobalScope {\n    attribute EventHandler onrtctransform;\n};"
     }
   ],
   "inheritance": {
@@ -106,10 +99,10 @@
           },
           {
             "spec": {
-              "title": "Indexed Database API 2.0",
-              "url": "https://www.w3.org/TR/IndexedDB-2/"
+              "title": "Indexed Database API 3.0",
+              "url": "https://www.w3.org/TR/IndexedDB-3/"
             },
-            "fragment": "partial interface WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute IDBFactory indexedDB;\n};"
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute IDBFactory indexedDB;\n};"
           },
           {
             "spec": {

@@ -8,15 +8,7 @@
     "fragment": "[Exposed=Window]\ninterface RTCRtpReceiver {\n  readonly attribute MediaStreamTrack track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  RTCRtpReceiveParameters getParameters();\n  sequence<RTCRtpContributingSource> getContributingSources();\n  sequence<RTCRtpSynchronizationSource> getSynchronizationSources();\n  Promise<RTCStatsReport> getStats();\n};",
     "href": "https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "WebRTC Insertable Media using Streams",
-        "url": "https://w3c.github.io/webrtc-insertable-streams/"
-      },
-      "fragment": "partial interface RTCRtpReceiver {\n    RTCInsertableStreams createEncodedStreams();\n    attribute RTCRtpTransform? transform;\n};"
-    }
-  ],
+  "extended": [],
   "inheritance": null,
   "includes": []
 }

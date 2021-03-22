@@ -3,10 +3,7 @@
 interface WorkerNavigator {};
 
 // Source: WebGPU (https://gpuweb.github.io/gpuweb/)
-[Exposed=DedicatedWorker]
-partial interface WorkerNavigator {
-    [SameObject] readonly attribute GPU gpu;
-};
+WorkerNavigator includes NavigatorGPU;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 WorkerNavigator includes NavigatorID;

@@ -1,13 +1,15 @@
-// Source: Indexed Database API 2.0 (https://www.w3.org/TR/IndexedDB-2/)
+// Source: Indexed Database API 3.0 (https://www.w3.org/TR/IndexedDB-3/)
 [Exposed=(Window,Worker)]
 interface IDBTransaction : EventTarget {
   readonly attribute DOMStringList objectStoreNames;
   readonly attribute IDBTransactionMode mode;
+  readonly attribute IDBTransactionDurability durability;
   [SameObject] readonly attribute IDBDatabase db;
-  readonly attribute DOMException error;
+  readonly attribute DOMException? error;
 
   IDBObjectStore objectStore(DOMString name);
-  void abort();
+  undefined commit();
+  undefined abort();
 
   // Event handlers:
   attribute EventHandler onabort;

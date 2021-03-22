@@ -1,0 +1,6756 @@
+{
+  "spec": {
+    "title": "Indexed Database API 3.0",
+    "url": "https://www.w3.org/TR/IndexedDB-3/"
+  },
+  "dfns": [
+    {
+      "id": "name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constructs",
+        "title": "Constructs",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sorted-name-list",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#sorted-name-list",
+      "linkingText": [
+        "sorted name list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "database",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#database",
+      "linkingText": [
+        "database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "database-construct",
+        "title": "Database",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "database-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#database-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "database-construct",
+        "title": "Database",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "database-version",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#database-version",
+      "linkingText": [
+        "version"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "database-construct",
+        "title": "Database",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "database-upgrade-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#database-upgrade-transaction",
+      "linkingText": [
+        "upgrade transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "database"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "connection",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#connection",
+      "linkingText": [
+        "connection",
+        "connected"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "database-connection",
+        "title": "Database connection",
+        "number": "2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "connection-version",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#connection-version",
+      "linkingText": [
+        "version"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "connection"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "connection-close-pending-flag",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#connection-close-pending-flag",
+      "linkingText": [
+        "close pending flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "connection"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "connection-closed",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#connection-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "connection"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "connection-object-store-set",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#connection-object-store-set",
+      "linkingText": [
+        "object store set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "connection"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-connection-versionchange",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-connection-versionchange",
+      "linkingText": [
+        "versionchange"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "connection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-store",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#object-store",
+      "linkingText": [
+        "object store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-construct",
+        "title": "Object store",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-store-list-of-records",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#object-store-list-of-records",
+      "linkingText": [
+        "list of records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "object-store"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-construct",
+        "title": "Object store",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-store-record",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#object-store-record",
+      "linkingText": [
+        "record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "object-store"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-construct",
+        "title": "Object store",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-store-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#object-store-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "object-store"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-construct",
+        "title": "Object store",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-store-key-path",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#object-store-key-path",
+      "linkingText": [
+        "key path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "object-store"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-construct",
+        "title": "Object store",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-store-in-line-keys",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#object-store-in-line-keys",
+      "linkingText": [
+        "in-line keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "object-store"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-construct",
+        "title": "Object store",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-store-out-of-line-keys",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#object-store-out-of-line-keys",
+      "linkingText": [
+        "out-of-line keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "object-store"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-construct",
+        "title": "Object store",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-store-handle",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#object-store-handle",
+      "linkingText": [
+        "object store handle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-handle-construct",
+        "title": "Object store handle",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-store-handle-object-store",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#object-store-handle-object-store",
+      "linkingText": [
+        "object store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "object-store-handle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-handle-construct",
+        "title": "Object store handle",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-store-handle-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#object-store-handle-transaction",
+      "linkingText": [
+        "transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "object-store-handle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-handle-construct",
+        "title": "Object store handle",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-store-handle-index-set",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#object-store-handle-index-set",
+      "linkingText": [
+        "index set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "object-store-handle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-handle-construct",
+        "title": "Object store handle",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "object-store-handle-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#object-store-handle-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "object-store-handle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-handle-construct",
+        "title": "Object store handle",
+        "number": "2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "value",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "value-construct",
+        "title": "Values",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "key-construct",
+        "title": "Keys",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-type",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#key-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "key"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "key-construct",
+        "title": "Keys",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-value",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#key-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "key"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "key-construct",
+        "title": "Keys",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "array-key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#array-key",
+      "linkingText": [
+        "array key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subkeys",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#subkeys",
+      "linkingText": [
+        "subkeys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compare-two-keys",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#compare-two-keys",
+      "linkingText": [
+        "compare two keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "greater-than",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#greater-than",
+      "linkingText": [
+        "greater than",
+        "ascending"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "less-than",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#less-than",
+      "linkingText": [
+        "less than"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "equal-to",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#equal-to",
+      "linkingText": [
+        "equal to"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-path",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#key-path",
+      "linkingText": [
+        "key path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "key-path-construct",
+        "title": "Key path",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-key-path",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#valid-key-path",
+      "linkingText": [
+        "valid key path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "key-path-construct",
+        "title": "Key path",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "identifier",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#identifier",
+      "linkingText": [
+        "identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "key-path-construct",
+        "title": "Key path",
+        "number": "2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-concept",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-concept",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-construct",
+        "title": "Index",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-referenced",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-referenced",
+      "linkingText": [
+        "referenced",
+        "references"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-construct",
+        "title": "Index",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-list-of-records",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-list-of-records",
+      "linkingText": [
+        "list of records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-construct",
+        "title": "Index",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-records",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-records",
+      "linkingText": [
+        "records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-construct",
+        "title": "Index",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-values",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-values",
+      "linkingText": [
+        "values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-construct",
+        "title": "Index",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-keys",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-keys",
+      "linkingText": [
+        "keys"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-construct",
+        "title": "Index",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-key-path",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-key-path",
+      "linkingText": [
+        "key path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-construct",
+        "title": "Index",
+        "number": "2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-referenced-value",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-referenced-value",
+      "linkingText": [
+        "referenced value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-unique-flag",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-unique-flag",
+      "linkingText": [
+        "unique flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-multientry-flag",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-multientry-flag",
+      "linkingText": [
+        "multiEntry flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-handle",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-handle",
+      "linkingText": [
+        "index handle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-handle-construct",
+        "title": "Index handle",
+        "number": "2.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-handle-index",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-handle-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index-handle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-handle-construct",
+        "title": "Index handle",
+        "number": "2.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-handle-object-store-handle",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-handle-object-store-handle",
+      "linkingText": [
+        "object store handle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index-handle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-handle-construct",
+        "title": "Index handle",
+        "number": "2.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-handle-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-handle-transaction",
+      "linkingText": [
+        "transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index-handle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-handle-construct",
+        "title": "Index handle",
+        "number": "2.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "index-handle-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#index-handle-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "index-handle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-handle-construct",
+        "title": "Index handle",
+        "number": "2.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-concept",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-concept",
+      "linkingText": [
+        "transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transaction-construct",
+        "title": "Transactions",
+        "number": "2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-connection",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-connection",
+      "linkingText": [
+        "connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transaction-construct",
+        "title": "Transactions",
+        "number": "2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-scope",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-scope",
+      "linkingText": [
+        "scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transaction-construct",
+        "title": "Transactions",
+        "number": "2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-overlap",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-overlap",
+      "linkingText": [
+        "overlap",
+        "overlapping scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transaction-construct",
+        "title": "Transactions",
+        "number": "2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-mode",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transaction-construct",
+        "title": "Transactions",
+        "number": "2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-durability-hint",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-durability-hint",
+      "linkingText": [
+        "durability hint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transaction-construct",
+        "title": "Transactions",
+        "number": "2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-cleanup-event-loop",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-cleanup-event-loop",
+      "linkingText": [
+        "cleanup event loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-request-list",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-request-list",
+      "linkingText": [
+        "request list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-error",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-read-only-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-read-only-transaction",
+      "linkingText": [
+        "read-only transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-read-write-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-read-write-transaction",
+      "linkingText": [
+        "read/write transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-state",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transaction-lifecycle",
+        "title": "Transaction lifecycle",
+        "number": "2.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-active",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-active",
+      "linkingText": [
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transaction-lifecycle",
+        "title": "Transaction lifecycle",
+        "number": "2.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "transaction-inactive",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-inactive",
+      "linkingText": [
+        "inactive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transaction-lifecycle",
+        "title": "Transaction lifecycle",
+        "number": "2.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "transaction-committing",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-committing",
+      "linkingText": [
+        "committing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transaction-lifecycle",
+        "title": "Transaction lifecycle",
+        "number": "2.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "transaction-finished",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-finished",
+      "linkingText": [
+        "finished"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transaction-lifecycle",
+        "title": "Transaction lifecycle",
+        "number": "2.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "transaction-lifetime",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-lifetime",
+      "linkingText": [
+        "lifetime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-created",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-created",
+      "linkingText": [
+        "created"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-start",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-start",
+      "linkingText": [
+        "start",
+        "started"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-abort",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-abort",
+      "linkingText": [
+        "abort",
+        "aborting",
+        "aborted"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transaction-commit",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#transaction-commit",
+      "linkingText": [
+        "commit",
+        "committed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cleanup-indexed-database-transactions",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cleanup-indexed-database-transactions",
+      "linkingText": [
+        "cleanup Indexed Database transactions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "transaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-transaction-complete",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-transaction-complete",
+      "linkingText": [
+        "complete"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "transaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-transaction-abort",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-transaction-abort",
+      "linkingText": [
+        "abort"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "transaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "upgrade-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#upgrade-transaction",
+      "linkingText": [
+        "upgrade transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "upgrade-transaction-construct",
+        "title": "Upgrade transactions",
+        "number": "2.7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-construct",
+        "title": "Requests",
+        "number": "2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-processed-flag",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#request-processed-flag",
+      "linkingText": [
+        "processed flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-construct",
+        "title": "Requests",
+        "number": "2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-processed",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#request-processed",
+      "linkingText": [
+        "processed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-construct",
+        "title": "Requests",
+        "number": "2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-done-flag",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#request-done-flag",
+      "linkingText": [
+        "done flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-construct",
+        "title": "Requests",
+        "number": "2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-source",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#request-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-construct",
+        "title": "Requests",
+        "number": "2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-result",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#request-result",
+      "linkingText": [
+        "result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-construct",
+        "title": "Requests",
+        "number": "2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-error",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#request-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-construct",
+        "title": "Requests",
+        "number": "2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#request-transaction",
+      "linkingText": [
+        "transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-construct",
+        "title": "Requests",
+        "number": "2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-placed",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#request-placed",
+      "linkingText": [
+        "placed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-construct",
+        "title": "Requests",
+        "number": "2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-request-success",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-request-success",
+      "linkingText": [
+        "success"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-construct",
+        "title": "Requests",
+        "number": "2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-request-error",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-request-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-construct",
+        "title": "Requests",
+        "number": "2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-open-request",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#request-open-request",
+      "linkingText": [
+        "open request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "open-requests",
+        "title": "Open requests",
+        "number": "2.8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-request-blocked",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-request-blocked",
+      "linkingText": [
+        "blocked"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "open-requests",
+        "title": "Open requests",
+        "number": "2.8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-request-upgradeneeded",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#eventdef-request-upgradeneeded",
+      "linkingText": [
+        "upgradeneeded"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "open-requests",
+        "title": "Open requests",
+        "number": "2.8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-connection-queue",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#request-connection-queue",
+      "linkingText": [
+        "connection queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "open-requests",
+        "title": "Open requests",
+        "number": "2.8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-range",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#key-range",
+      "linkingText": [
+        "key range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "range-construct",
+        "title": "Key range",
+        "number": "2.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-range-lower-bound",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#key-range-lower-bound",
+      "linkingText": [
+        "lower bound"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "key range"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "range-construct",
+        "title": "Key range",
+        "number": "2.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-range-upper-bound",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#key-range-upper-bound",
+      "linkingText": [
+        "upper bound"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "key range"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "range-construct",
+        "title": "Key range",
+        "number": "2.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-range-lower-open-flag",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#key-range-lower-open-flag",
+      "linkingText": [
+        "lower open flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "key range"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "range-construct",
+        "title": "Key range",
+        "number": "2.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-range-upper-open-flag",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#key-range-upper-open-flag",
+      "linkingText": [
+        "upper open flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "key range"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "range-construct",
+        "title": "Key range",
+        "number": "2.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "containing-only",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#containing-only",
+      "linkingText": [
+        "containing only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "range-construct",
+        "title": "Key range",
+        "number": "2.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "in",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#in",
+      "linkingText": [
+        "in"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "range-construct",
+        "title": "Key range",
+        "number": "2.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "unbounded-key-range",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#unbounded-key-range",
+      "linkingText": [
+        "unbounded key range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "convert-a-value-to-a-key-range",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#convert-a-value-to-a-key-range",
+      "linkingText": [
+        "convert a value to a key range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor",
+      "linkingText": [
+        "cursor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-transaction",
+      "linkingText": [
+        "transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-range",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-range",
+      "linkingText": [
+        "range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-source",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-direction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-position",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-object-store-position",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-object-store-position",
+      "linkingText": [
+        "object store position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-value",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-got-value-flag",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-got-value-flag",
+      "linkingText": [
+        "got value flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-effective-object-store",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-effective-object-store",
+      "linkingText": [
+        "effective object store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-effective-key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-effective-key",
+      "linkingText": [
+        "effective key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-request",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cursor-key-only-flag",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#cursor-key-only-flag",
+      "linkingText": [
+        "key only flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "cursor"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-construct",
+        "title": "Cursor",
+        "number": "2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-generator",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#key-generator",
+      "linkingText": [
+        "key generator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "key-generator-construct",
+        "title": "Key generators",
+        "number": "2.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-generator-current-number",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#key-generator-current-number",
+      "linkingText": [
+        "current number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "key generator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "key-generator-construct",
+        "title": "Key generators",
+        "number": "2.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-a-key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#generate-a-key",
+      "linkingText": [
+        "generate a key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "possibly-update-the-key-generator",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#possibly-update-the-key-generator",
+      "linkingText": [
+        "possibly update the key generator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "database-access-task-source",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#database-access-task-source",
+      "linkingText": [
+        "database access task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "async-api",
+        "title": "API",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idbrequest",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#idbrequest",
+      "linkingText": [
+        "IDBRequest"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-idbrequestreadystate",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#enumdef-idbrequestreadystate",
+      "linkingText": [
+        "IDBRequestReadyState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbrequestreadystate-pending",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbrequestreadystate-pending",
+      "linkingText": [
+        "\"pending\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IDBRequestReadyState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbrequestreadystate-done",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbrequestreadystate-done",
+      "linkingText": [
+        "\"done\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IDBRequestReadyState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbrequest-result",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbrequest-result",
+      "linkingText": [
+        "result"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbrequest-error",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbrequest-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbrequest-source",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbrequest-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbrequest-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbrequest-transaction",
+      "linkingText": [
+        "transaction"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbrequest-readystate",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbrequest-readystate",
+      "linkingText": [
+        "readyState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbrequest-onsuccess",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbrequest-onsuccess",
+      "linkingText": [
+        "onsuccess"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbrequest-onerror",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbrequest-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idbopendbrequest",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#idbopendbrequest",
+      "linkingText": [
+        "IDBOpenDBRequest"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbopendbrequest-onblocked",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbopendbrequest-onblocked",
+      "linkingText": [
+        "onblocked"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBOpenDBRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbopendbrequest-onupgradeneeded",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbopendbrequest-onupgradeneeded",
+      "linkingText": [
+        "onupgradeneeded"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBOpenDBRequest"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idbversionchangeevent",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#idbversionchangeevent",
+      "linkingText": [
+        "IDBVersionChangeEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "title": "Event interfaces",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbversionchangeevent-idbversionchangeevent",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeevent-idbversionchangeevent",
+      "linkingText": [
+        "IDBVersionChangeEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "IDBVersionChangeEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "IDBVersionChangeEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "title": "Event interfaces",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbversionchangeevent-idbversionchangeevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeevent-idbversionchangeevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBVersionChangeEvent/IDBVersionChangeEvent(type, eventInitDict)",
+        "IDBVersionChangeEvent/constructor(type, eventInitDict)",
+        "IDBVersionChangeEvent/IDBVersionChangeEvent(type)",
+        "IDBVersionChangeEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "title": "Event interfaces",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbversionchangeevent-idbversionchangeevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeevent-idbversionchangeevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBVersionChangeEvent/IDBVersionChangeEvent(type, eventInitDict)",
+        "IDBVersionChangeEvent/constructor(type, eventInitDict)",
+        "IDBVersionChangeEvent/IDBVersionChangeEvent(type)",
+        "IDBVersionChangeEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "title": "Event interfaces",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-idbversionchangeeventinit",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dictdef-idbversionchangeeventinit",
+      "linkingText": [
+        "IDBVersionChangeEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "title": "Event interfaces",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbversionchangeeventinit-oldversion",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeeventinit-oldversion",
+      "linkingText": [
+        "oldVersion"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IDBVersionChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "title": "Event interfaces",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbversionchangeeventinit-newversion",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeeventinit-newversion",
+      "linkingText": [
+        "newVersion"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IDBVersionChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "title": "Event interfaces",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbversionchangeevent-oldversion",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeevent-oldversion",
+      "linkingText": [
+        "oldVersion"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBVersionChangeEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "title": "Event interfaces",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbversionchangeevent-newversion",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbversionchangeevent-newversion",
+      "linkingText": [
+        "newVersion"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBVersionChangeEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "title": "Event interfaces",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fire-a-version-change-event",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#fire-a-version-change-event",
+      "linkingText": [
+        "fire a version change event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "events",
+        "title": "Event interfaces",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-windoworworkerglobalscope-indexeddb",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-windoworworkerglobalscope-indexeddb",
+      "linkingText": [
+        "indexedDB"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "factory-interface",
+        "title": "The IDBFactory interface",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idbfactory",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#idbfactory",
+      "linkingText": [
+        "IDBFactory"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "factory-interface",
+        "title": "The IDBFactory interface",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbfactory-open-name-version-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-open-name-version-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBFactory/open(name, version)",
+        "IDBFactory/open(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "factory-interface",
+        "title": "The IDBFactory interface",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbfactory-open-name-version-version",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-open-name-version-version",
+      "linkingText": [
+        "version"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBFactory/open(name, version)",
+        "IDBFactory/open(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "factory-interface",
+        "title": "The IDBFactory interface",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbfactory-deletedatabase-name-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-deletedatabase-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBFactory/deleteDatabase(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "factory-interface",
+        "title": "The IDBFactory interface",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbfactory-cmp-first-second-first",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-cmp-first-second-first",
+      "linkingText": [
+        "first"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBFactory/cmp(first, second)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "factory-interface",
+        "title": "The IDBFactory interface",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbfactory-cmp-first-second-second",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-cmp-first-second-second",
+      "linkingText": [
+        "second"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBFactory/cmp(first, second)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "factory-interface",
+        "title": "The IDBFactory interface",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-idbdatabaseinfo",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dictdef-idbdatabaseinfo",
+      "linkingText": [
+        "IDBDatabaseInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "factory-interface",
+        "title": "The IDBFactory interface",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbdatabaseinfo-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabaseinfo-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IDBDatabaseInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "factory-interface",
+        "title": "The IDBFactory interface",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbdatabaseinfo-version",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabaseinfo-version",
+      "linkingText": [
+        "version"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IDBDatabaseInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "factory-interface",
+        "title": "The IDBFactory interface",
+        "number": "4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbfactory-open",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-open",
+      "linkingText": [
+        "open(name, version)",
+        "open(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBFactory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "factory-interface",
+        "title": "The IDBFactory interface",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbfactory-deletedatabase",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-deletedatabase",
+      "linkingText": [
+        "deleteDatabase(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBFactory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbfactory-databases",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-databases",
+      "linkingText": [
+        "databases()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBFactory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbfactory-cmp",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbfactory-cmp",
+      "linkingText": [
+        "cmp(first, second)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBFactory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idbdatabase",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#idbdatabase",
+      "linkingText": [
+        "IDBDatabase"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbdatabase-transaction-storenames-mode-options-storenames",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-transaction-storenames-mode-options-storenames",
+      "linkingText": [
+        "storeNames"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBDatabase/transaction(storeNames, mode, options)",
+        "IDBDatabase/transaction(storeNames, mode)",
+        "IDBDatabase/transaction(storeNames)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbdatabase-transaction-storenames-mode-options-mode",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-transaction-storenames-mode-options-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBDatabase/transaction(storeNames, mode, options)",
+        "IDBDatabase/transaction(storeNames, mode)",
+        "IDBDatabase/transaction(storeNames)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbdatabase-transaction-storenames-mode-options-options",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-transaction-storenames-mode-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBDatabase/transaction(storeNames, mode, options)",
+        "IDBDatabase/transaction(storeNames, mode)",
+        "IDBDatabase/transaction(storeNames)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbdatabase-createobjectstore-name-options-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-createobjectstore-name-options-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBDatabase/createObjectStore(name, options)",
+        "IDBDatabase/createObjectStore(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbdatabase-createobjectstore-name-options-options",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-createobjectstore-name-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBDatabase/createObjectStore(name, options)",
+        "IDBDatabase/createObjectStore(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbdatabase-deleteobjectstore-name-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-deleteobjectstore-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBDatabase/deleteObjectStore(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-idbtransactiondurability",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#enumdef-idbtransactiondurability",
+      "linkingText": [
+        "IDBTransactionDurability"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbtransactiondurability-default",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransactiondurability-default",
+      "linkingText": [
+        "\"default\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IDBTransactionDurability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbtransactiondurability-strict",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransactiondurability-strict",
+      "linkingText": [
+        "\"strict\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IDBTransactionDurability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbtransactiondurability-relaxed",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransactiondurability-relaxed",
+      "linkingText": [
+        "\"relaxed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IDBTransactionDurability"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-idbtransactionoptions",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dictdef-idbtransactionoptions",
+      "linkingText": [
+        "IDBTransactionOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbtransactionoptions-durability",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransactionoptions-durability",
+      "linkingText": [
+        "durability"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IDBTransactionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-idbobjectstoreparameters",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dictdef-idbobjectstoreparameters",
+      "linkingText": [
+        "IDBObjectStoreParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstoreparameters-keypath",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstoreparameters-keypath",
+      "linkingText": [
+        "keyPath"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IDBObjectStoreParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstoreparameters-autoincrement",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstoreparameters-autoincrement",
+      "linkingText": [
+        "autoIncrement"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IDBObjectStoreParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbdatabase-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBDatabase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "database-interface",
+        "title": "The IDBDatabase interface",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbdatabase-version",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-version",
+      "linkingText": [
+        "version"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBDatabase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbdatabase-objectstorenames",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-objectstorenames",
+      "linkingText": [
+        "objectStoreNames"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBDatabase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbdatabase-createobjectstore",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-createobjectstore",
+      "linkingText": [
+        "createObjectStore(name, options)",
+        "createObjectStore(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBDatabase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbdatabase-deleteobjectstore",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-deleteobjectstore",
+      "linkingText": [
+        "deleteObjectStore(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBDatabase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbdatabase-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-transaction",
+      "linkingText": [
+        "transaction(storeNames, mode, options)",
+        "transaction(storeNames, mode)",
+        "transaction(storeNames)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBDatabase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbdatabase-close",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBDatabase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbdatabase-onabort",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-onabort",
+      "linkingText": [
+        "onabort"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBDatabase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbdatabase-onclose",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-onclose",
+      "linkingText": [
+        "onclose"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBDatabase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbdatabase-onerror",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBDatabase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbdatabase-onversionchange",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbdatabase-onversionchange",
+      "linkingText": [
+        "onversionchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBDatabase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idbobjectstore",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#idbobjectstore",
+      "linkingText": [
+        "IDBObjectStore"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-put-value-key-value",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-put-value-key-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/put(value, key)",
+        "IDBObjectStore/put(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-put-value-key-key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-put-value-key-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/put(value, key)",
+        "IDBObjectStore/put(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-add-value-key-value",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-add-value-key-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/add(value, key)",
+        "IDBObjectStore/add(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-add-value-key-key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-add-value-key-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/add(value, key)",
+        "IDBObjectStore/add(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-delete-query-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-delete-query-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/delete(query)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-get-query-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-get-query-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/get(query)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-getkey-query-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-getkey-query-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/getKey(query)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-getall-query-count-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-getall-query-count-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/getAll(query, count)",
+        "IDBObjectStore/getAll(query)",
+        "IDBObjectStore/getAll()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-getall-query-count-count",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-getall-query-count-count",
+      "linkingText": [
+        "count"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/getAll(query, count)",
+        "IDBObjectStore/getAll(query)",
+        "IDBObjectStore/getAll()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-getallkeys-query-count-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-getallkeys-query-count-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/getAllKeys(query, count)",
+        "IDBObjectStore/getAllKeys(query)",
+        "IDBObjectStore/getAllKeys()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-getallkeys-query-count-count",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-getallkeys-query-count-count",
+      "linkingText": [
+        "count"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/getAllKeys(query, count)",
+        "IDBObjectStore/getAllKeys(query)",
+        "IDBObjectStore/getAllKeys()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-count-query-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-count-query-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/count(query)",
+        "IDBObjectStore/count()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-opencursor-query-direction-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-opencursor-query-direction-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/openCursor(query, direction)",
+        "IDBObjectStore/openCursor(query)",
+        "IDBObjectStore/openCursor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-opencursor-query-direction-direction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-opencursor-query-direction-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/openCursor(query, direction)",
+        "IDBObjectStore/openCursor(query)",
+        "IDBObjectStore/openCursor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-openkeycursor-query-direction-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-openkeycursor-query-direction-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/openKeyCursor(query, direction)",
+        "IDBObjectStore/openKeyCursor(query)",
+        "IDBObjectStore/openKeyCursor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-openkeycursor-query-direction-direction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-openkeycursor-query-direction-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/openKeyCursor(query, direction)",
+        "IDBObjectStore/openKeyCursor(query)",
+        "IDBObjectStore/openKeyCursor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-index-name-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-index-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/index(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-createindex-name-keypath-options-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-createindex-name-keypath-options-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/createIndex(name, keyPath, options)",
+        "IDBObjectStore/createIndex(name, keyPath)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-createindex-name-keypath-options-keypath",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-createindex-name-keypath-options-keypath",
+      "linkingText": [
+        "keyPath"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/createIndex(name, keyPath, options)",
+        "IDBObjectStore/createIndex(name, keyPath)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-createindex-name-keypath-options-options",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-createindex-name-keypath-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/createIndex(name, keyPath, options)",
+        "IDBObjectStore/createIndex(name, keyPath)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-deleteindex-name-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-deleteindex-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBObjectStore/deleteIndex(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-idbindexparameters",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dictdef-idbindexparameters",
+      "linkingText": [
+        "IDBIndexParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindexparameters-unique",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindexparameters-unique",
+      "linkingText": [
+        "unique"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IDBIndexParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindexparameters-multientry",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindexparameters-multientry",
+      "linkingText": [
+        "multiEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "IDBIndexParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbobjectstore-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-keypath",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-keypath",
+      "linkingText": [
+        "keyPath"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "object-store-interface",
+        "title": "The IDBObjectStore interface",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-indexnames",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-indexnames",
+      "linkingText": [
+        "indexNames"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-transaction",
+      "linkingText": [
+        "transaction"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-autoincrement",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-autoincrement",
+      "linkingText": [
+        "autoIncrement"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-put",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-put",
+      "linkingText": [
+        "put(value, key)",
+        "put(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-add",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-add",
+      "linkingText": [
+        "add(value, key)",
+        "add(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "add-or-put",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#add-or-put",
+      "linkingText": [
+        "add or put"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-delete",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-delete",
+      "linkingText": [
+        "delete(query)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-clear",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-clear",
+      "linkingText": [
+        "clear()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-get",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-get",
+      "linkingText": [
+        "get(query)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-getkey",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-getkey",
+      "linkingText": [
+        "getKey(query)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-getall",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-getall",
+      "linkingText": [
+        "getAll(query, count)",
+        "getAll(query)",
+        "getAll()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-getallkeys",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-getallkeys",
+      "linkingText": [
+        "getAllKeys(query, count)",
+        "getAllKeys(query)",
+        "getAllKeys()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-count",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-count",
+      "linkingText": [
+        "count(query)",
+        "count()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-opencursor",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-opencursor",
+      "linkingText": [
+        "openCursor(query, direction)",
+        "openCursor(query)",
+        "openCursor()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-openkeycursor",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-openkeycursor",
+      "linkingText": [
+        "openKeyCursor(query, direction)",
+        "openKeyCursor(query)",
+        "openKeyCursor()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-createindex",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-createindex",
+      "linkingText": [
+        "createIndex(name, keyPath, options)",
+        "createIndex(name, keyPath)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-index",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-index",
+      "linkingText": [
+        "index(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbobjectstore-deleteindex",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbobjectstore-deleteindex",
+      "linkingText": [
+        "deleteIndex(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBObjectStore"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idbindex",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#idbindex",
+      "linkingText": [
+        "IDBIndex"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindex-get-query-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-get-query-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBIndex/get(query)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindex-getkey-query-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-getkey-query-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBIndex/getKey(query)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindex-getall-query-count-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-getall-query-count-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBIndex/getAll(query, count)",
+        "IDBIndex/getAll(query)",
+        "IDBIndex/getAll()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindex-getall-query-count-count",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-getall-query-count-count",
+      "linkingText": [
+        "count"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBIndex/getAll(query, count)",
+        "IDBIndex/getAll(query)",
+        "IDBIndex/getAll()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindex-getallkeys-query-count-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-getallkeys-query-count-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBIndex/getAllKeys(query, count)",
+        "IDBIndex/getAllKeys(query)",
+        "IDBIndex/getAllKeys()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindex-getallkeys-query-count-count",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-getallkeys-query-count-count",
+      "linkingText": [
+        "count"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBIndex/getAllKeys(query, count)",
+        "IDBIndex/getAllKeys(query)",
+        "IDBIndex/getAllKeys()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindex-count-query-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-count-query-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBIndex/count(query)",
+        "IDBIndex/count()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindex-opencursor-query-direction-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-opencursor-query-direction-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBIndex/openCursor(query, direction)",
+        "IDBIndex/openCursor(query)",
+        "IDBIndex/openCursor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindex-opencursor-query-direction-direction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-opencursor-query-direction-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBIndex/openCursor(query, direction)",
+        "IDBIndex/openCursor(query)",
+        "IDBIndex/openCursor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindex-openkeycursor-query-direction-query",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-openkeycursor-query-direction-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBIndex/openKeyCursor(query, direction)",
+        "IDBIndex/openKeyCursor(query)",
+        "IDBIndex/openKeyCursor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindex-openkeycursor-query-direction-direction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-openkeycursor-query-direction-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBIndex/openKeyCursor(query, direction)",
+        "IDBIndex/openKeyCursor(query)",
+        "IDBIndex/openKeyCursor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbindex-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbindex-objectstore",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-objectstore",
+      "linkingText": [
+        "objectStore"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbindex-keypath",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-keypath",
+      "linkingText": [
+        "keyPath"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "index-interface",
+        "title": "The IDBIndex interface",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbindex-multientry",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-multientry",
+      "linkingText": [
+        "multiEntry"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbindex-unique",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-unique",
+      "linkingText": [
+        "unique"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbindex-get",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-get",
+      "linkingText": [
+        "get(query)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbindex-getkey",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-getkey",
+      "linkingText": [
+        "getKey(query)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbindex-getall",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-getall",
+      "linkingText": [
+        "getAll(query, count)",
+        "getAll(query)",
+        "getAll()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbindex-getallkeys",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-getallkeys",
+      "linkingText": [
+        "getAllKeys(query, count)",
+        "getAllKeys(query)",
+        "getAllKeys()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbindex-count",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-count",
+      "linkingText": [
+        "count(query)",
+        "count()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbindex-opencursor",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-opencursor",
+      "linkingText": [
+        "openCursor(query, direction)",
+        "openCursor(query)",
+        "openCursor()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbindex-openkeycursor",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbindex-openkeycursor",
+      "linkingText": [
+        "openKeyCursor(query, direction)",
+        "openKeyCursor(query)",
+        "openKeyCursor()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBIndex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idbkeyrange",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#idbkeyrange",
+      "linkingText": [
+        "IDBKeyRange"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbkeyrange-only-value-value",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-only-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBKeyRange/only(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbkeyrange-lowerbound-lower-open-lower",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-lowerbound-lower-open-lower",
+      "linkingText": [
+        "lower"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBKeyRange/lowerBound(lower, open)",
+        "IDBKeyRange/lowerBound(lower)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbkeyrange-lowerbound-lower-open-open",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-lowerbound-lower-open-open",
+      "linkingText": [
+        "open"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBKeyRange/lowerBound(lower, open)",
+        "IDBKeyRange/lowerBound(lower)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbkeyrange-upperbound-upper-open-upper",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-upperbound-upper-open-upper",
+      "linkingText": [
+        "upper"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBKeyRange/upperBound(upper, open)",
+        "IDBKeyRange/upperBound(upper)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbkeyrange-upperbound-upper-open-open",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-upperbound-upper-open-open",
+      "linkingText": [
+        "open"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBKeyRange/upperBound(upper, open)",
+        "IDBKeyRange/upperBound(upper)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbkeyrange-bound-lower-upper-loweropen-upperopen-lower",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-bound-lower-upper-loweropen-upperopen-lower",
+      "linkingText": [
+        "lower"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBKeyRange/bound(lower, upper, lowerOpen, upperOpen)",
+        "IDBKeyRange/bound(lower, upper, lowerOpen)",
+        "IDBKeyRange/bound(lower, upper)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbkeyrange-bound-lower-upper-loweropen-upperopen-upper",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-bound-lower-upper-loweropen-upperopen-upper",
+      "linkingText": [
+        "upper"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBKeyRange/bound(lower, upper, lowerOpen, upperOpen)",
+        "IDBKeyRange/bound(lower, upper, lowerOpen)",
+        "IDBKeyRange/bound(lower, upper)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbkeyrange-bound-lower-upper-loweropen-upperopen-loweropen",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-bound-lower-upper-loweropen-upperopen-loweropen",
+      "linkingText": [
+        "lowerOpen"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBKeyRange/bound(lower, upper, lowerOpen, upperOpen)",
+        "IDBKeyRange/bound(lower, upper, lowerOpen)",
+        "IDBKeyRange/bound(lower, upper)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbkeyrange-bound-lower-upper-loweropen-upperopen-upperopen",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-bound-lower-upper-loweropen-upperopen-upperopen",
+      "linkingText": [
+        "upperOpen"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBKeyRange/bound(lower, upper, lowerOpen, upperOpen)",
+        "IDBKeyRange/bound(lower, upper, lowerOpen)",
+        "IDBKeyRange/bound(lower, upper)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbkeyrange-includes-key-key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-includes-key-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBKeyRange/includes(key)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbkeyrange-lower",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-lower",
+      "linkingText": [
+        "lower"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBKeyRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbkeyrange-upper",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-upper",
+      "linkingText": [
+        "upper"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBKeyRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbkeyrange-loweropen",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-loweropen",
+      "linkingText": [
+        "lowerOpen"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBKeyRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbkeyrange-upperopen",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-upperopen",
+      "linkingText": [
+        "upperOpen"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBKeyRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbkeyrange-only",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-only",
+      "linkingText": [
+        "only(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBKeyRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbkeyrange-lowerbound",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-lowerbound",
+      "linkingText": [
+        "lowerBound(lower, open)",
+        "lowerBound(lower)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBKeyRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbkeyrange-upperbound",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-upperbound",
+      "linkingText": [
+        "upperBound(upper, open)",
+        "upperBound(upper)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBKeyRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbkeyrange-bound",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-bound",
+      "linkingText": [
+        "bound(lower, upper, lowerOpen, upperOpen)",
+        "bound(lower, upper, lowerOpen)",
+        "bound(lower, upper)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBKeyRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbkeyrange-includes",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbkeyrange-includes",
+      "linkingText": [
+        "includes(key)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBKeyRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "keyrange",
+        "title": "The IDBKeyRange interface",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idbcursor",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#idbcursor",
+      "linkingText": [
+        "IDBCursor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cursor-interface",
+        "title": "The IDBCursor interface",
+        "number": "4.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbcursor-advance-count-count",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-advance-count-count",
+      "linkingText": [
+        "count"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBCursor/advance(count)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cursor-interface",
+        "title": "The IDBCursor interface",
+        "number": "4.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbcursor-continue-key-key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-continue-key-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBCursor/continue(key)",
+        "IDBCursor/continue()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cursor-interface",
+        "title": "The IDBCursor interface",
+        "number": "4.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbcursor-continueprimarykey-key-primarykey-key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-continueprimarykey-key-primarykey-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBCursor/continuePrimaryKey(key, primaryKey)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cursor-interface",
+        "title": "The IDBCursor interface",
+        "number": "4.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbcursor-continueprimarykey-key-primarykey-primarykey",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-continueprimarykey-key-primarykey-primarykey",
+      "linkingText": [
+        "primaryKey"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBCursor/continuePrimaryKey(key, primaryKey)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cursor-interface",
+        "title": "The IDBCursor interface",
+        "number": "4.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbcursor-update-value-value",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-update-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBCursor/update(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cursor-interface",
+        "title": "The IDBCursor interface",
+        "number": "4.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-idbcursordirection",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#enumdef-idbcursordirection",
+      "linkingText": [
+        "IDBCursorDirection"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cursor-interface",
+        "title": "The IDBCursor interface",
+        "number": "4.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbcursordirection-next",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursordirection-next",
+      "linkingText": [
+        "\"next\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IDBCursorDirection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cursor-interface",
+        "title": "The IDBCursor interface",
+        "number": "4.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbcursordirection-nextunique",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursordirection-nextunique",
+      "linkingText": [
+        "\"nextunique\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IDBCursorDirection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cursor-interface",
+        "title": "The IDBCursor interface",
+        "number": "4.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbcursordirection-prev",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursordirection-prev",
+      "linkingText": [
+        "\"prev\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IDBCursorDirection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cursor-interface",
+        "title": "The IDBCursor interface",
+        "number": "4.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbcursordirection-prevunique",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursordirection-prevunique",
+      "linkingText": [
+        "\"prevunique\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IDBCursorDirection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cursor-interface",
+        "title": "The IDBCursor interface",
+        "number": "4.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbcursor-source",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBCursor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cursor-interface",
+        "title": "The IDBCursor interface",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbcursor-direction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBCursor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbcursor-key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBCursor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbcursor-primarykey",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-primarykey",
+      "linkingText": [
+        "primaryKey"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBCursor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbcursor-request",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-request",
+      "linkingText": [
+        "request"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBCursor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbcursor-advance",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-advance",
+      "linkingText": [
+        "advance(count)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBCursor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbcursor-continue",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-continue",
+      "linkingText": [
+        "continue(key)",
+        "continue()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBCursor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbcursor-continueprimarykey",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-continueprimarykey",
+      "linkingText": [
+        "continuePrimaryKey(key, primaryKey)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBCursor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbcursor-update",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-update",
+      "linkingText": [
+        "update(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBCursor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbcursor-delete",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursor-delete",
+      "linkingText": [
+        "delete()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBCursor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idbcursorwithvalue",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#idbcursorwithvalue",
+      "linkingText": [
+        "IDBCursorWithValue"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbcursorwithvalue-value",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbcursorwithvalue-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBCursorWithValue"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idbtransaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#idbtransaction",
+      "linkingText": [
+        "IDBTransaction"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transaction",
+        "title": "The IDBTransaction interface",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbtransaction-objectstore-name-name",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-objectstore-name-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "IDBTransaction/objectStore(name)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transaction",
+        "title": "The IDBTransaction interface",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-idbtransactionmode",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#enumdef-idbtransactionmode",
+      "linkingText": [
+        "IDBTransactionMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transaction",
+        "title": "The IDBTransaction interface",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbtransactionmode-readonly",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransactionmode-readonly",
+      "linkingText": [
+        "\"readonly\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IDBTransactionMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transaction",
+        "title": "The IDBTransaction interface",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbtransactionmode-readwrite",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransactionmode-readwrite",
+      "linkingText": [
+        "\"readwrite\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IDBTransactionMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transaction",
+        "title": "The IDBTransaction interface",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbtransactionmode-versionchange",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransactionmode-versionchange",
+      "linkingText": [
+        "\"versionchange\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IDBTransactionMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transaction",
+        "title": "The IDBTransaction interface",
+        "number": "4.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-idbtransaction-objectstorenames",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-objectstorenames",
+      "linkingText": [
+        "objectStoreNames"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBTransaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transaction",
+        "title": "The IDBTransaction interface",
+        "number": "4.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbtransaction-mode",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBTransaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbtransaction-durability",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-durability",
+      "linkingText": [
+        "durability"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBTransaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbtransaction-db",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-db",
+      "linkingText": [
+        "db"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBTransaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbtransaction-error",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBTransaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbtransaction-objectstore",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-objectstore",
+      "linkingText": [
+        "objectStore(name)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBTransaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbtransaction-abort",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-abort",
+      "linkingText": [
+        "abort()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBTransaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbtransaction-commit",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-commit",
+      "linkingText": [
+        "commit()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "IDBTransaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbtransaction-onabort",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-onabort",
+      "linkingText": [
+        "onabort"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBTransaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbtransaction-oncomplete",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-oncomplete",
+      "linkingText": [
+        "oncomplete"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBTransaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-idbtransaction-onerror",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#dom-idbtransaction-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "IDBTransaction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "open-a-database",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#open-a-database",
+      "linkingText": [
+        "open a database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "opening",
+        "title": "Opening a database",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-a-database-connection",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#close-a-database-connection",
+      "linkingText": [
+        "close a database connection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "closing-connection",
+        "title": "Closing a database",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "delete-a-database",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#delete-a-database",
+      "linkingText": [
+        "delete a database"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "deleting-a-database",
+        "title": "Deleting a database",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commit-a-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#commit-a-transaction",
+      "linkingText": [
+        "commit a transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "commit-transaction",
+        "title": "Committing a transaction",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abort-a-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#abort-a-transaction",
+      "linkingText": [
+        "abort a transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "abort-transaction",
+        "title": "Aborting a transaction",
+        "number": "5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "asynchronously-execute-a-request",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#asynchronously-execute-a-request",
+      "linkingText": [
+        "asynchronously execute a request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "async-execute-request",
+        "title": "Asynchronously executing a request",
+        "number": "5.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "run-an-upgrade-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#run-an-upgrade-transaction",
+      "linkingText": [
+        "run an upgrade transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "upgrade-transaction-steps",
+        "title": "Running an upgrade transaction",
+        "number": "5.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abort-an-upgrade-transaction",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#abort-an-upgrade-transaction",
+      "linkingText": [
+        "abort an upgrade transaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "abort-upgrade-transaction",
+        "title": "Aborting an upgrade transaction",
+        "number": "5.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fire-a-success-event",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#fire-a-success-event",
+      "linkingText": [
+        "fire a success event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fire-success-event",
+        "title": "Firing a success event",
+        "number": "5.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fire-an-error-event",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#fire-an-error-event",
+      "linkingText": [
+        "fire an error event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fire-error-event",
+        "title": "Firing an error event",
+        "number": "5.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "clone",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#clone",
+      "linkingText": [
+        "clone"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "clone-value",
+        "title": "Clone a value",
+        "number": "5.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "store-a-record-into-an-object-store",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#store-a-record-into-an-object-store",
+      "linkingText": [
+        "store a record into an object store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-storage-operation",
+        "title": "Object store storage operation",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "retrieve-a-value-from-an-object-store",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#retrieve-a-value-from-an-object-store",
+      "linkingText": [
+        "retrieve a value from an object store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-retrieval-operation",
+        "title": "Object store retrieval operations",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "retrieve-multiple-values-from-an-object-store",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#retrieve-multiple-values-from-an-object-store",
+      "linkingText": [
+        "retrieve multiple values from an object store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-retrieval-operation",
+        "title": "Object store retrieval operations",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "retrieve-a-key-from-an-object-store",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#retrieve-a-key-from-an-object-store",
+      "linkingText": [
+        "retrieve a key from an object store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-retrieval-operation",
+        "title": "Object store retrieval operations",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "retrieve-multiple-keys-from-an-object-store",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#retrieve-multiple-keys-from-an-object-store",
+      "linkingText": [
+        "retrieve multiple keys from an object store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-retrieval-operation",
+        "title": "Object store retrieval operations",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "retrieve-a-referenced-value-from-an-index",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#retrieve-a-referenced-value-from-an-index",
+      "linkingText": [
+        "retrieve a referenced value from an index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-retrieval-operation",
+        "title": "Index retrieval operations",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "retrieve-multiple-referenced-values-from-an-index",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#retrieve-multiple-referenced-values-from-an-index",
+      "linkingText": [
+        "retrieve multiple referenced values from an index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index-retrieval-operation",
+        "title": "Index retrieval operations",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "retrieve-a-value-from-an-index",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#retrieve-a-value-from-an-index",
+      "linkingText": [
+        "retrieve a value from an index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "retrieve-multiple-values-from-an-index",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#retrieve-multiple-values-from-an-index",
+      "linkingText": [
+        "retrieve multiple values from an index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "delete-records-from-an-object-store",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#delete-records-from-an-object-store",
+      "linkingText": [
+        "delete records from an object store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-deletion-operation",
+        "title": "Object store deletion operation",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "count-the-records-in-a-range",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#count-the-records-in-a-range",
+      "linkingText": [
+        "count the records in a range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "record-counting-operation",
+        "title": "Record counting operation",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "clear-an-object-store",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#clear-an-object-store",
+      "linkingText": [
+        "clear an object store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "object-store-clear-operation",
+        "title": "Object store clear operation",
+        "number": "6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "iterate-a-cursor",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#iterate-a-cursor",
+      "linkingText": [
+        "iterate a cursor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cursor-iteration-operation",
+        "title": "Cursor iteration operation",
+        "number": "6.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-a-key-from-a-value-using-a-key-path",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#extract-a-key-from-a-value-using-a-key-path",
+      "linkingText": [
+        "extract a key from a value using a key path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extract-key-from-value",
+        "title": "Extract a key from a value",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "evaluate-a-key-path-on-a-value",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#evaluate-a-key-path-on-a-value",
+      "linkingText": [
+        "evaluate a key path on a value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extract-key-from-value",
+        "title": "Extract a key from a value",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "check-that-a-key-could-be-injected-into-a-value",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#check-that-a-key-could-be-injected-into-a-value",
+      "linkingText": [
+        "check that a key could be injected into a value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "inject-a-key-into-a-value-using-a-key-path",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#inject-a-key-into-a-value-using-a-key-path",
+      "linkingText": [
+        "inject a key into a value using a key path"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "title": "Indexed Database API 3.0"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "convert-a-key-to-a-value",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#convert-a-key-to-a-value",
+      "linkingText": [
+        "convert a key to a value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "convert-key-to-value",
+        "title": "Convert a key to a value",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "convert-a-value-to-a-key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#convert-a-value-to-a-key",
+      "linkingText": [
+        "convert a value to a key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "convert-value-to-key",
+        "title": "Convert a value to a key",
+        "number": "7.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "convert-a-value-to-a-multientry-key",
+      "href": "https://www.w3.org/TR/IndexedDB-3/#convert-a-value-to-a-multientry-key",
+      "linkingText": [
+        "convert a value to a multiEntry key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "convert-value-to-key",
+        "title": "Convert a value to a key",
+        "number": "7.4"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

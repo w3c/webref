@@ -1599,6 +1599,14 @@
     "fragment": "idlnames/DevicePermissionDescriptor.idl",
     "parsed": "idlnamesparsed/DevicePermissionDescriptor.json"
   },
+  "DevicePosture": {
+    "fragment": "idlnames/DevicePosture.idl",
+    "parsed": "idlnamesparsed/DevicePosture.json"
+  },
+  "DevicePostureType": {
+    "fragment": "idlnames/DevicePostureType.idl",
+    "parsed": "idlnamesparsed/DevicePostureType.json"
+  },
   "DirectionSetting": {
     "fragment": "idlnames/DirectionSetting.idl",
     "parsed": "idlnamesparsed/DirectionSetting.json"
@@ -1810,14 +1818,6 @@
   "EndingType": {
     "fragment": "idlnames/EndingType.idl",
     "parsed": "idlnamesparsed/EndingType.json"
-  },
-  "EnterPictureInPictureEvent": {
-    "fragment": "idlnames/EnterPictureInPictureEvent.idl",
-    "parsed": "idlnamesparsed/EnterPictureInPictureEvent.json"
-  },
-  "EnterPictureInPictureEventInit": {
-    "fragment": "idlnames/EnterPictureInPictureEventInit.idl",
-    "parsed": "idlnamesparsed/EnterPictureInPictureEventInit.json"
   },
   "ErrorCallback": {
     "fragment": "idlnames/ErrorCallback.idl",
@@ -3327,6 +3327,10 @@
     "fragment": "idlnames/IDBDatabase.idl",
     "parsed": "idlnamesparsed/IDBDatabase.json"
   },
+  "IDBDatabaseInfo": {
+    "fragment": "idlnames/IDBDatabaseInfo.idl",
+    "parsed": "idlnamesparsed/IDBDatabaseInfo.json"
+  },
   "IDBFactory": {
     "fragment": "idlnames/IDBFactory.idl",
     "parsed": "idlnamesparsed/IDBFactory.json"
@@ -3367,9 +3371,17 @@
     "fragment": "idlnames/IDBTransaction.idl",
     "parsed": "idlnamesparsed/IDBTransaction.json"
   },
+  "IDBTransactionDurability": {
+    "fragment": "idlnames/IDBTransactionDurability.idl",
+    "parsed": "idlnamesparsed/IDBTransactionDurability.json"
+  },
   "IDBTransactionMode": {
     "fragment": "idlnames/IDBTransactionMode.idl",
     "parsed": "idlnamesparsed/IDBTransactionMode.json"
+  },
+  "IDBTransactionOptions": {
+    "fragment": "idlnames/IDBTransactionOptions.idl",
+    "parsed": "idlnamesparsed/IDBTransactionOptions.json"
   },
   "IDBVersionChangeEvent": {
     "fragment": "idlnames/IDBVersionChangeEvent.idl",
@@ -4211,6 +4223,10 @@
     "fragment": "idlnames/NavigatorFonts.idl",
     "parsed": "idlnamesparsed/NavigatorFonts.json"
   },
+  "NavigatorGPU": {
+    "fragment": "idlnames/NavigatorGPU.idl",
+    "parsed": "idlnamesparsed/NavigatorGPU.json"
+  },
   "NavigatorID": {
     "fragment": "idlnames/NavigatorID.idl",
     "parsed": "idlnamesparsed/NavigatorID.json"
@@ -4787,6 +4803,14 @@
     "fragment": "idlnames/PhotoSettings.idl",
     "parsed": "idlnamesparsed/PhotoSettings.json"
   },
+  "PictureInPictureEvent": {
+    "fragment": "idlnames/PictureInPictureEvent.idl",
+    "parsed": "idlnamesparsed/PictureInPictureEvent.json"
+  },
+  "PictureInPictureEventInit": {
+    "fragment": "idlnames/PictureInPictureEventInit.idl",
+    "parsed": "idlnamesparsed/PictureInPictureEventInit.json"
+  },
   "PictureInPictureWindow": {
     "fragment": "idlnames/PictureInPictureWindow.idl",
     "parsed": "idlnamesparsed/PictureInPictureWindow.json"
@@ -5199,26 +5223,6 @@
     "fragment": "idlnames/RTCDtlsTransportState.idl",
     "parsed": "idlnamesparsed/RTCDtlsTransportState.json"
   },
-  "RTCEncodedAudioFrame": {
-    "fragment": "idlnames/RTCEncodedAudioFrame.idl",
-    "parsed": "idlnamesparsed/RTCEncodedAudioFrame.json"
-  },
-  "RTCEncodedAudioFrameMetadata": {
-    "fragment": "idlnames/RTCEncodedAudioFrameMetadata.idl",
-    "parsed": "idlnamesparsed/RTCEncodedAudioFrameMetadata.json"
-  },
-  "RTCEncodedVideoFrame": {
-    "fragment": "idlnames/RTCEncodedVideoFrame.idl",
-    "parsed": "idlnamesparsed/RTCEncodedVideoFrame.json"
-  },
-  "RTCEncodedVideoFrameMetadata": {
-    "fragment": "idlnames/RTCEncodedVideoFrameMetadata.idl",
-    "parsed": "idlnamesparsed/RTCEncodedVideoFrameMetadata.json"
-  },
-  "RTCEncodedVideoFrameType": {
-    "fragment": "idlnames/RTCEncodedVideoFrameType.idl",
-    "parsed": "idlnamesparsed/RTCEncodedVideoFrameType.json"
-  },
   "RTCError": {
     "fragment": "idlnames/RTCError.idl",
     "parsed": "idlnamesparsed/RTCError.json"
@@ -5359,10 +5363,6 @@
     "fragment": "idlnames/RTCInboundRtpStreamStats.idl",
     "parsed": "idlnamesparsed/RTCInboundRtpStreamStats.json"
   },
-  "RTCInsertableStreams": {
-    "fragment": "idlnames/RTCInsertableStreams.idl",
-    "parsed": "idlnamesparsed/RTCInsertableStreams.json"
-  },
   "RTCLocalSessionDescriptionInit": {
     "fragment": "idlnames/RTCLocalSessionDescriptionInit.idl",
     "parsed": "idlnamesparsed/RTCLocalSessionDescriptionInit.json"
@@ -5499,14 +5499,6 @@
     "fragment": "idlnames/RTCRtpReceiver.idl",
     "parsed": "idlnamesparsed/RTCRtpReceiver.json"
   },
-  "RTCRtpScriptTransform": {
-    "fragment": "idlnames/RTCRtpScriptTransform.idl",
-    "parsed": "idlnamesparsed/RTCRtpScriptTransform.json"
-  },
-  "RTCRtpScriptTransformer": {
-    "fragment": "idlnames/RTCRtpScriptTransformer.idl",
-    "parsed": "idlnamesparsed/RTCRtpScriptTransformer.json"
-  },
   "RTCRtpSendParameters": {
     "fragment": "idlnames/RTCRtpSendParameters.idl",
     "parsed": "idlnamesparsed/RTCRtpSendParameters.json"
@@ -5538,10 +5530,6 @@
   "RTCRtpTransceiverStats": {
     "fragment": "idlnames/RTCRtpTransceiverStats.idl",
     "parsed": "idlnamesparsed/RTCRtpTransceiverStats.json"
-  },
-  "RTCRtpTransform": {
-    "fragment": "idlnames/RTCRtpTransform.idl",
-    "parsed": "idlnamesparsed/RTCRtpTransform.json"
   },
   "RTCSctpTransport": {
     "fragment": "idlnames/RTCSctpTransport.idl",
@@ -5602,10 +5590,6 @@
   "RTCTrackEventInit": {
     "fragment": "idlnames/RTCTrackEventInit.idl",
     "parsed": "idlnamesparsed/RTCTrackEventInit.json"
-  },
-  "RTCTransformEvent": {
-    "fragment": "idlnames/RTCTransformEvent.idl",
-    "parsed": "idlnamesparsed/RTCTransformEvent.json"
   },
   "RTCTransportStats": {
     "fragment": "idlnames/RTCTransportStats.idl",
@@ -5842,18 +5826,6 @@
   "RuntimeError": {
     "fragment": "idlnames/RuntimeError.idl",
     "parsed": "idlnamesparsed/RuntimeError.json"
-  },
-  "SFrameTransform": {
-    "fragment": "idlnames/SFrameTransform.idl",
-    "parsed": "idlnamesparsed/SFrameTransform.json"
-  },
-  "SFrameTransformOptions": {
-    "fragment": "idlnames/SFrameTransformOptions.idl",
-    "parsed": "idlnamesparsed/SFrameTransformOptions.json"
-  },
-  "SFrameTransformRole": {
-    "fragment": "idlnames/SFrameTransformRole.idl",
-    "parsed": "idlnamesparsed/SFrameTransformRole.json"
   },
   "SVGAElement": {
     "fragment": "idlnames/SVGAElement.idl",
@@ -6278,14 +6250,6 @@
   "Screen": {
     "fragment": "idlnames/Screen.idl",
     "parsed": "idlnamesparsed/Screen.json"
-  },
-  "ScreenFold": {
-    "fragment": "idlnames/ScreenFold.idl",
-    "parsed": "idlnamesparsed/ScreenFold.json"
-  },
-  "ScreenFoldPosture": {
-    "fragment": "idlnames/ScreenFoldPosture.idl",
-    "parsed": "idlnamesparsed/ScreenFoldPosture.json"
   },
   "ScreenIdleState": {
     "fragment": "idlnames/ScreenIdleState.idl",

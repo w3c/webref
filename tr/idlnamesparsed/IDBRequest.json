@@ -2,11 +2,11 @@
   "name": "IDBRequest",
   "defined": {
     "spec": {
-      "title": "Indexed Database API 2.0",
-      "url": "https://www.w3.org/TR/IndexedDB-2/"
+      "title": "Indexed Database API 3.0",
+      "url": "https://www.w3.org/TR/IndexedDB-3/"
     },
     "fragment": "[Exposed=(Window,Worker)]\ninterface IDBRequest : EventTarget {\n  readonly attribute any result;\n  readonly attribute DOMException? error;\n  readonly attribute (IDBObjectStore or IDBIndex or IDBCursor)? source;\n  readonly attribute IDBTransaction? transaction;\n  readonly attribute IDBRequestReadyState readyState;\n\n  // Event handlers:\n  attribute EventHandler onsuccess;\n  attribute EventHandler onerror;\n};",
-    "href": "https://www.w3.org/TR/IndexedDB-2/#idbrequest"
+    "href": "https://www.w3.org/TR/IndexedDB-3/#idbrequest"
   },
   "extended": [],
   "inheritance": {

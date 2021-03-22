@@ -1,21 +1,20 @@
 // GENERATED CONTENT - DO NOT EDIT
 // Content was automatically extracted by Reffy into webref
 // (https://github.com/w3c/webref)
-// Source: The Screen Fold API (https://www.w3.org/TR/screen-fold/)
+// Source: Device Posture API (https://www.w3.org/TR/screen-fold/)
 
 [SecureContext]
 partial interface Screen {
-  [SameObject] readonly attribute ScreenFold fold;
+  [SameObject] readonly attribute DevicePosture posture;
 };
 
 [SecureContext, Exposed=(Window)]
-interface ScreenFold : EventTarget {
-  readonly attribute unsigned short angle;
-  readonly attribute ScreenFoldPosture posture;
+interface DevicePosture : EventTarget {
+  readonly attribute DevicePostureType type;
   attribute EventHandler onchange;
 };
 
-enum ScreenFoldPosture {
+enum DevicePostureType {
   "no-fold",
   "laptop",
   "flat",

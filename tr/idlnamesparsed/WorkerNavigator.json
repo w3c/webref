@@ -14,7 +14,7 @@
         "title": "WebGPU",
         "url": "https://gpuweb.github.io/gpuweb/"
       },
-      "fragment": "[Exposed=DedicatedWorker]\npartial interface WorkerNavigator {\n    [SameObject] readonly attribute GPU gpu;\n};"
+      "fragment": "WorkerNavigator includes NavigatorGPU;"
     },
     {
       "spec": {
@@ -124,6 +124,20 @@
   ],
   "inheritance": null,
   "includes": [
+    {
+      "name": "NavigatorGPU",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://gpuweb.github.io/gpuweb/"
+        },
+        "fragment": "interface mixin NavigatorGPU {\n    [SameObject] readonly attribute GPU gpu;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#navigatorgpu"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
     {
       "name": "NavigatorID",
       "defined": {

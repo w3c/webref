@@ -188,7 +188,7 @@ partial interface Document {
 partial interface Document {
   readonly attribute boolean pictureInPictureEnabled;
 
-  [NewObject] Promise<void> exitPictureInPicture();
+  [NewObject] Promise<undefined> exitPictureInPicture();
 };
 
 // Source: Pointer Lock 2.0 (https://www.w3.org/TR/pointerlock-2/)

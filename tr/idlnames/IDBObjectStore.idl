@@ -1,4 +1,4 @@
-// Source: Indexed Database API 2.0 (https://www.w3.org/TR/IndexedDB-2/)
+// Source: Indexed Database API 3.0 (https://www.w3.org/TR/IndexedDB-3/)
 [Exposed=(Window,Worker)]
 interface IDBObjectStore {
   attribute DOMString name;
@@ -28,6 +28,6 @@ interface IDBObjectStore {
 
   [NewObject] IDBIndex createIndex(DOMString name,
                                    (DOMString or sequence<DOMString>) keyPath,
-                                   optional IDBIndexParameters options);
-  void deleteIndex(DOMString name);
+                                   optional IDBIndexParameters options = {});
+  undefined deleteIndex(DOMString name);
 };
