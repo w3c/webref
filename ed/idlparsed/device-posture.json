@@ -1,0 +1,175 @@
+{
+  "spec": {
+    "title": "Device Posture API",
+    "url": "https://w3c.github.io/device-posture/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "DevicePosture"
+        ]
+      }
+    },
+    "idlNames": {
+      "DevicePosture": {
+        "fragment": "[SecureContext, Exposed=(Window)]\ninterface DevicePosture : EventTarget {\n  readonly attribute DevicePostureType type;\n  attribute EventHandler onchange;\n};",
+        "type": "interface",
+        "name": "DevicePosture",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DevicePostureType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "onchange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "DevicePostureType": {
+        "fragment": "enum DevicePostureType {\n  \"no-fold\",\n  \"laptop\",\n  \"flat\",\n  \"tent\",\n  \"tablet\",\n  \"book\"\n};",
+        "type": "enum",
+        "name": "DevicePostureType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "no-fold"
+          },
+          {
+            "type": "enum-value",
+            "value": "laptop"
+          },
+          {
+            "type": "enum-value",
+            "value": "flat"
+          },
+          {
+            "type": "enum-value",
+            "value": "tent"
+          },
+          {
+            "type": "enum-value",
+            "value": "tablet"
+          },
+          {
+            "type": "enum-value",
+            "value": "book"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "Screen": [
+        {
+          "fragment": "[SecureContext]\npartial interface Screen {\n  [SameObject] readonly attribute DevicePosture posture;\n};",
+          "type": "interface",
+          "name": "Screen",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "posture",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DevicePosture"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "DevicePosture"
+      ]
+    },
+    "dependencies": {
+      "Screen": [
+        "DevicePosture"
+      ],
+      "DevicePosture": [
+        "EventTarget",
+        "DevicePostureType",
+        "EventHandler"
+      ]
+    },
+    "externalDependencies": [
+      "Screen",
+      "EventTarget",
+      "EventHandler"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

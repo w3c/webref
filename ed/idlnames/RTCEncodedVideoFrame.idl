@@ -1,7 +1,7 @@
-// Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)
+// Source: WebRTC Encoded Transform (https://w3c.github.io/webrtc-encoded-transform/)
 // New interfaces to define encoded video and audio frames. Will eventually
 // re-use or extend the equivalent defined in WebCodecs.
-[Exposed=Window]
+[Exposed=(Window,DedicatedWorker)]
 interface RTCEncodedVideoFrame {
     readonly attribute RTCEncodedVideoFrameType type;
     readonly attribute unsigned long long timestamp;

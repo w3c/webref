@@ -1,11 +1,11 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-03-22T06:50:42.094Z",
+  "date": "2021-03-22T13:09:21.957Z",
   "options": {},
   "stats": {
-    "crawled": 386,
-    "errors": 1
+    "crawled": 387,
+    "errors": 0
   },
   "results": [
     {
@@ -1640,6 +1640,32 @@
       "ids": "ids/tc39-class-fields.json"
     },
     {
+      "url": "https://tc39.es/proposal-class-static-block/",
+      "seriesComposition": "full",
+      "shortname": "tc39-class-static-block",
+      "series": {
+        "shortname": "tc39-class-static-block",
+        "currentSpecification": "tc39-class-static-block"
+      },
+      "nightly": {
+        "url": "https://tc39.es/proposal-class-static-block/",
+        "repository": "https://github.com/tc39/proposal-class-static-block",
+        "sourcePath": "spec/index.html",
+        "filename": "index.html"
+      },
+      "title": "ECMAScript class static initialization blocks",
+      "source": "spec",
+      "shortTitle": "ECMAScript class static initialization blocks",
+      "versions": [
+        "https://tc39.es/proposal-class-static-block/"
+      ],
+      "crawled": "https://tc39.es/proposal-class-static-block/",
+      "date": "19 March 2021",
+      "links": "links/tc39-class-static-block.json",
+      "generator": null,
+      "ids": "ids/tc39-class-static-block.json"
+    },
+    {
       "url": "https://tc39.es/proposal-error-cause/",
       "seriesComposition": "full",
       "shortname": "tc39-error-cause",
@@ -1928,7 +1954,7 @@
         "https://url.spec.whatwg.org/"
       ],
       "crawled": "https://url.spec.whatwg.org/",
-      "date": "3 March 2021",
+      "date": "22 March 2021",
       "links": "links/url.json",
       "refs": "refs/url.json",
       "idl": "idl/url.idl",
@@ -2301,6 +2327,37 @@
       "ids": "ids/webdriver-bidi.json"
     },
     {
+      "url": "https://w3c.github.io/webrtc-encoded-transform/",
+      "seriesComposition": "full",
+      "shortname": "webrtc-encoded-transform",
+      "series": {
+        "shortname": "webrtc-encoded-transform",
+        "currentSpecification": "webrtc-encoded-transform"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/webrtc-encoded-transform/",
+        "repository": "https://github.com/w3c/webrtc-encoded-transform",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebRTC Encoded Transform",
+      "source": "spec",
+      "shortTitle": "WebRTC Encoded Transform",
+      "versions": [
+        "https://w3c.github.io/webrtc-encoded-transform/"
+      ],
+      "crawled": "https://w3c.github.io/webrtc-encoded-transform/",
+      "date": "19 March 2021",
+      "links": "links/webrtc-encoded-transform.json",
+      "refs": "refs/webrtc-encoded-transform.json",
+      "idl": "idl/webrtc-encoded-transform.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/webrtc-encoded-transform.json",
+      "headings": "headings/webrtc-encoded-transform.json",
+      "ids": "ids/webrtc-encoded-transform.json",
+      "idlparsed": "idlparsed/webrtc-encoded-transform.json"
+    },
+    {
       "url": "https://w3c.github.io/webrtc-ice/",
       "seriesComposition": "full",
       "shortname": "webrtc-ice",
@@ -2336,41 +2393,6 @@
       "headings": "headings/webrtc-ice.json",
       "ids": "ids/webrtc-ice.json",
       "idlparsed": "idlparsed/webrtc-ice.json"
-    },
-    {
-      "url": "https://w3c.github.io/webrtc-insertable-streams/",
-      "seriesComposition": "full",
-      "shortname": "webrtc-insertable-streams",
-      "series": {
-        "shortname": "webrtc-insertable-streams",
-        "currentSpecification": "webrtc-insertable-streams"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/webrtc-insertable-streams/",
-        "repository": "https://github.com/w3c/webrtc-insertable-streams",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "title": "WebRTC Insertable Media using Streams",
-      "source": "specref",
-      "shortTitle": "WebRTC Insertable Media using Streams",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "webrtc-insertable-streams"
-        ]
-      },
-      "versions": [
-        "https://w3c.github.io/webrtc-insertable-streams/"
-      ],
-      "crawled": {
-        "url": "https://w3c.github.io/webrtc-insertable-streams/",
-        "repository": "https://github.com/w3c/webrtc-insertable-streams",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "date": "",
-      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 66)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://w3c.github.io/webtransport/",
@@ -10236,6 +10258,42 @@
       "idlparsed": "idlparsed/device-memory-1.json"
     },
     {
+      "url": "https://www.w3.org/TR/device-posture/",
+      "seriesComposition": "full",
+      "shortname": "device-posture",
+      "series": {
+        "shortname": "device-posture",
+        "currentSpecification": "device-posture"
+      },
+      "release": {
+        "url": "https://www.w3.org/TR/device-posture/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/screen-fold/",
+        "repository": "https://github.com/w3c/screen-fold",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Device Posture API",
+      "source": "w3c",
+      "shortTitle": "Device Posture API",
+      "versions": [
+        "https://www.w3.org/TR/device-posture/",
+        "https://w3c.github.io/screen-fold/"
+      ],
+      "crawled": "https://w3c.github.io/device-posture/",
+      "date": "16 March 2021",
+      "links": "links/device-posture.json",
+      "refs": "refs/device-posture.json",
+      "idl": "idl/device-posture.idl",
+      "generator": "respec",
+      "dfns": "dfns/device-posture.json",
+      "headings": "headings/device-posture.json",
+      "ids": "ids/device-posture.json",
+      "idlparsed": "idlparsed/device-posture.json"
+    },
+    {
       "url": "https://www.w3.org/TR/DOM-Parsing/",
       "seriesComposition": "full",
       "shortname": "DOM-Parsing",
@@ -10370,15 +10428,15 @@
         "currentSpecification": "fetch-metadata"
       },
       "shortTitle": "Fetch Metadata",
+      "release": {
+        "url": "https://www.w3.org/TR/fetch-metadata/",
+        "filename": "Overview.html"
+      },
       "nightly": {
         "url": "https://w3c.github.io/webappsec-fetch-metadata/",
         "repository": "https://github.com/w3c/webappsec-fetch-metadata",
         "sourcePath": "index.bs",
         "filename": "index.html"
-      },
-      "release": {
-        "url": "https://www.w3.org/TR/fetch-metadata/",
-        "filename": "Overview.html"
       },
       "title": "Fetch Metadata Request Headers",
       "source": "w3c",
@@ -11510,7 +11568,7 @@
         "https://w3c.github.io/mediacapture-main/getusermedia.html"
       ],
       "crawled": "https://w3c.github.io/mediacapture-main/",
-      "date": "15 March 2021",
+      "date": "22 March 2021",
       "links": "links/mediacapture-streams.json",
       "refs": "refs/mediacapture-streams.json",
       "idl": "idl/mediacapture-streams.idl",
@@ -13027,42 +13085,6 @@
       "idlparsed": "idlparsed/screen-capture.json"
     },
     {
-      "url": "https://www.w3.org/TR/screen-fold/",
-      "seriesComposition": "full",
-      "shortname": "screen-fold",
-      "series": {
-        "shortname": "screen-fold",
-        "currentSpecification": "screen-fold"
-      },
-      "release": {
-        "url": "https://www.w3.org/TR/screen-fold/",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/screen-fold/",
-        "repository": "https://github.com/w3c/screen-fold",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "Device Posture API",
-      "source": "w3c",
-      "shortTitle": "The Screen Fold API",
-      "versions": [
-        "https://www.w3.org/TR/screen-fold/",
-        "https://w3c.github.io/screen-fold/"
-      ],
-      "crawled": "https://w3c.github.io/device-posture/",
-      "date": "16 March 2021",
-      "links": "links/screen-fold.json",
-      "refs": "refs/screen-fold.json",
-      "idl": "idl/screen-fold.idl",
-      "generator": "respec",
-      "dfns": "dfns/screen-fold.json",
-      "headings": "headings/screen-fold.json",
-      "ids": "ids/screen-fold.json",
-      "idlparsed": "idlparsed/screen-fold.json"
-    },
-    {
       "url": "https://www.w3.org/TR/screen-orientation/",
       "seriesComposition": "full",
       "shortname": "screen-orientation",
@@ -13136,7 +13158,7 @@
         "https://w3c.github.io/screen-wake-lock/"
       ],
       "crawled": "https://w3c.github.io/screen-wake-lock/",
-      "date": "27 February 2021",
+      "date": "22 March 2021",
       "links": "links/screen-wake-lock.json",
       "refs": "refs/screen-wake-lock.json",
       "idl": "idl/screen-wake-lock.idl",
