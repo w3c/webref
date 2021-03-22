@@ -1,13 +1,13 @@
 {
   "spec": {
-    "title": "The Screen Fold API",
+    "title": "Device Posture API",
     "url": "https://www.w3.org/TR/screen-fold/"
   },
   "headings": [
     {
       "id": "title",
       "level": 1,
-      "title": "The Screen Fold API"
+      "title": "Device Posture API"
     },
     {
       "id": "toc",
@@ -27,28 +27,22 @@
       "number": "2"
     },
     {
-      "id": "the-screenfold-interface",
+      "id": "the-deviceposture-interface",
       "level": 2,
-      "title": "The ScreenFold interface",
+      "title": "The DevicePosture interface",
       "number": "3"
     },
     {
-      "id": "the-angle-attribute-get-current-screen-fold-angle",
+      "id": "the-type-attribute-get-current-device-posture",
       "level": 3,
-      "title": "The angle attribute: Get current screen fold angle",
+      "title": "The type attribute: Get current device posture",
       "number": "3.1"
     },
     {
-      "id": "the-posture-attribute-get-current-screen-fold-posture",
+      "id": "the-onchange-attribute-handle-posture-changes",
       "level": 3,
-      "title": "The posture attribute: Get current screen fold posture",
+      "title": "The onchange attribute: Handle posture changes",
       "number": "3.2"
-    },
-    {
-      "id": "the-onchange-attribute-handle-angle-posture-changes",
-      "level": 3,
-      "title": "The onchange attribute: Handle angle/posture changes",
-      "number": "3.3"
     },
     {
       "id": "posture-modes",
@@ -57,20 +51,15 @@
       "number": "4"
     },
     {
-      "id": "screen-fold-media-queries",
+      "id": "device-posture-media-queries",
       "level": 2,
-      "title": "Screen Fold Media Queries",
+      "title": "Device Posture Media Queries",
       "number": "5"
     },
     {
-      "id": "the-screen-fold-posture-media-feature",
+      "id": "the-device-posture-media-feature",
       "level": 3,
-      "title": "The 'screen-fold-posture' media feature"
-    },
-    {
-      "id": "the-screen-fold-angle-media-feature",
-      "level": 3,
-      "title": "The 'screen-fold-angle' media feature"
+      "title": "The 'device-posture' media feature"
     },
     {
       "id": "reading-the-posture",
@@ -100,15 +89,15 @@
       "number": "7"
     },
     {
-      "id": "updating-the-screen-fold-information",
+      "id": "updating-the-device-posture-information",
       "level": 3,
-      "title": "Updating the screen fold information",
+      "title": "Updating the device posture information",
       "number": "7.1"
     },
     {
-      "id": "screen-fold-angle-change",
+      "id": "device-posture-change",
       "level": 3,
-      "title": "Screen fold angle change",
+      "title": "Device Posture change",
       "number": "7.2"
     },
     {
@@ -122,12 +111,6 @@
       "level": 3,
       "title": "Types of security and privacy threats",
       "number": "8.1"
-    },
-    {
-      "id": "device-fingerprinting",
-      "level": 4,
-      "title": "Device Fingerprinting",
-      "number": "8.1.1"
     },
     {
       "id": "mitigation-strategies",
@@ -154,65 +137,25 @@
       "number": "8.2.3"
     },
     {
-      "id": "mitigation-strategies-applied-on-a-case-by-case-basis",
-      "level": 3,
-      "title": "Mitigation strategies applied on a case by case basis",
-      "number": "8.3"
-    },
-    {
-      "id": "limit-maximum-sampling-frequency",
-      "level": 4,
-      "title": "Limit maximum sampling frequency",
-      "number": "8.3.1"
-    },
-    {
-      "id": "limit-number-of-delivered-readings",
-      "level": 4,
-      "title": "Limit number of delivered readings",
-      "number": "8.3.2"
-    },
-    {
-      "id": "reduce-accuracy",
-      "level": 4,
-      "title": "Reduce accuracy",
-      "number": "8.3.3"
-    },
-    {
-      "id": "applying-fuzziness-to-the-angle-value",
-      "level": 4,
-      "title": "Applying fuzziness to the angle value",
-      "number": "8.3.4"
-    },
-    {
       "id": "examples",
       "level": 2,
       "title": "Examples",
       "number": "9"
     },
     {
-      "id": "example-1-screen-fold-data",
+      "id": "example-1-posture-data",
       "level": 3,
-      "title": "Example 1: screen.fold data"
+      "title": "Example 1: Posture data"
     },
     {
-      "id": "example-2-screen-fold-posture",
+      "id": "example-2-device-posture",
       "level": 3,
-      "title": "Example 2: screen-fold-posture"
+      "title": "Example 2: device-posture"
     },
     {
-      "id": "example-3-screen-fold-angle",
+      "id": "example-3-feature-detection-of-device-posture-media-feature",
       "level": 3,
-      "title": "Example 3: screen-fold-angle"
-    },
-    {
-      "id": "example-4-5-animation",
-      "level": 3,
-      "title": "Example 4 & 5: Animation"
-    },
-    {
-      "id": "example-6-feature-detection-of-screen-fold-posture-media-feature",
-      "level": 3,
-      "title": "Example 6: Feature detection of screen-fold-posture media feature"
+      "title": "Example 3: Feature detection of device-posture media feature"
     },
     {
       "id": "dependencies",

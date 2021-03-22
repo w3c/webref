@@ -23,6 +23,7 @@ interface mixin DatagramTransport {
     readonly attribute DatagramDuplexStream datagrams;
 };
 
+[Exposed=(Window,Worker)]
 interface DatagramDuplexStream {
   readonly attribute ReadableStream readable;
   readonly attribute WritableStream writable;
@@ -45,6 +46,7 @@ WebTransport includes BidirectionalStreamsTransport;
 WebTransport includes DatagramTransport;
 
 dictionary WebTransportOptions {
+  boolean allowPooling;
   sequence<RTCDtlsFingerprint> serverCertificateFingerprints;
 };
 

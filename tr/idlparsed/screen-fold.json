@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "The Screen Fold API",
+    "title": "Device Posture API",
     "url": "https://www.w3.org/TR/screen-fold/"
   },
   "idlparsed": {
@@ -8,42 +8,27 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "ScreenFold"
+          "DevicePosture"
         ]
       }
     },
     "idlNames": {
-      "ScreenFold": {
-        "fragment": "[SecureContext, Exposed=(Window)]\ninterface ScreenFold : EventTarget {\n  readonly attribute unsigned short angle;\n  readonly attribute ScreenFoldPosture posture;\n  attribute EventHandler onchange;\n};",
+      "DevicePosture": {
+        "fragment": "[SecureContext, Exposed=(Window)]\ninterface DevicePosture : EventTarget {\n  readonly attribute DevicePostureType type;\n  attribute EventHandler onchange;\n};",
         "type": "interface",
-        "name": "ScreenFold",
+        "name": "DevicePosture",
         "inheritance": "EventTarget",
         "members": [
           {
             "type": "attribute",
-            "name": "angle",
+            "name": "type",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "posture",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ScreenFoldPosture"
+              "idlType": "DevicePostureType"
             },
             "extAttrs": [],
             "special": "",
@@ -88,10 +73,10 @@
         ],
         "partial": false
       },
-      "ScreenFoldPosture": {
-        "fragment": "enum ScreenFoldPosture {\n  \"no-fold\",\n  \"laptop\",\n  \"flat\",\n  \"tent\",\n  \"tablet\",\n  \"book\"\n};",
+      "DevicePostureType": {
+        "fragment": "enum DevicePostureType {\n  \"no-fold\",\n  \"laptop\",\n  \"flat\",\n  \"tent\",\n  \"tablet\",\n  \"book\"\n};",
         "type": "enum",
-        "name": "ScreenFoldPosture",
+        "name": "DevicePostureType",
         "values": [
           {
             "type": "enum-value",
@@ -124,21 +109,21 @@
     "idlExtendedNames": {
       "Screen": [
         {
-          "fragment": "[SecureContext]\npartial interface Screen {\n  [SameObject] readonly attribute ScreenFold fold;\n};",
+          "fragment": "[SecureContext]\npartial interface Screen {\n  [SameObject] readonly attribute DevicePosture posture;\n};",
           "type": "interface",
           "name": "Screen",
           "inheritance": null,
           "members": [
             {
               "type": "attribute",
-              "name": "fold",
+              "name": "posture",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "ScreenFold"
+                "idlType": "DevicePosture"
               },
               "extAttrs": [
                 {
@@ -167,16 +152,16 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "ScreenFold"
+        "DevicePosture"
       ]
     },
     "dependencies": {
       "Screen": [
-        "ScreenFold"
+        "DevicePosture"
       ],
-      "ScreenFold": [
+      "DevicePosture": [
         "EventTarget",
-        "ScreenFoldPosture",
+        "DevicePostureType",
         "EventHandler"
       ]
     },

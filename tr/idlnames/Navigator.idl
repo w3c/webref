@@ -5,10 +5,7 @@ interface Navigator {
 };
 
 // Source: WebGPU (https://gpuweb.github.io/gpuweb/)
-[Exposed=Window]
-partial interface Navigator {
-    [SameObject] readonly attribute GPU gpu;
-};
+Navigator includes NavigatorGPU;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 Navigator includes NavigatorID;

@@ -2,11 +2,11 @@
   "name": "IDBKeyRange",
   "defined": {
     "spec": {
-      "title": "Indexed Database API 2.0",
-      "url": "https://www.w3.org/TR/IndexedDB-2/"
+      "title": "Indexed Database API 3.0",
+      "url": "https://www.w3.org/TR/IndexedDB-3/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface IDBKeyRange {\n  readonly attribute any lower;\n  readonly attribute any upper;\n  readonly attribute boolean lowerOpen;\n  readonly attribute boolean upperOpen;\n\n  // Static construction methods:\n  [NewObject] static IDBKeyRange only(any value);\n  [NewObject] static IDBKeyRange lowerBound(any lower, optional boolean open = false);\n  [NewObject] static IDBKeyRange upperBound(any upper, optional boolean open = false);\n  [NewObject] static IDBKeyRange bound(any lower,\n                                       any upper,\n                                       optional boolean lowerOpen = false,\n                                       optional boolean upperOpen = false);\n\n  boolean _includes(any key);\n};",
-    "href": "https://www.w3.org/TR/IndexedDB-2/#idbkeyrange"
+    "fragment": "[Exposed=(Window,Worker)]\ninterface IDBKeyRange {\n  readonly attribute any lower;\n  readonly attribute any upper;\n  readonly attribute boolean lowerOpen;\n  readonly attribute boolean upperOpen;\n\n  // Static construction methods:\n  [NewObject] static IDBKeyRange only(any value);\n  [NewObject] static IDBKeyRange lowerBound(any lower, optional boolean open = false);\n  [NewObject] static IDBKeyRange upperBound(any upper, optional boolean open = false);\n  [NewObject] static IDBKeyRange bound(any lower,\n                                       any upper,\n                                       optional boolean lowerOpen = false,\n                                       optional boolean upperOpen = false);\n\n  boolean includes(any key);\n};",
+    "href": "https://www.w3.org/TR/IndexedDB-3/#idbkeyrange"
   },
   "extended": [],
   "inheritance": null,

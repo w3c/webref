@@ -20,7 +20,15 @@
 <body>
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/w3c/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
-  <p>384 specifications were crawled in this report.</p>
+  <p>386 specifications were crawled in this report.</p>
+  <section id="specifications-that-could-not-be-rendered" class="level2">
+  <h2>Specifications that could not be rendered</h2>
+  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
+  <ul>
+  <li><a href="%5Bobject%20Object%5D">WebRTC Insertable Media using Streams</a>: <code>Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23) at runMicrotasks (&lt;anonymous&gt;) at processTicksAndRejections (internal/process/task_queues.js:93:5) at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9) at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24) at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24) at async Promise.all (index 66) at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21) at async Promise.all (index 0)</code></li>
+  </ul>
+  <p>=&gt; 1 specification found</p>
+  </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -35,6 +43,7 @@
   <li><a href="https://www.w3.org/TR/css-shapes-1/">CSS Shapes Module Level 1</a></li>
   <li><a href="https://tc39.es/ecma402/">ECMAScript® 2022 Internationalization API Specification</a></li>
   <li><a href="https://tc39.es/ecma262/">ECMAScript® 2022 Language Specification</a></li>
+  <li><a href="https://tc39.es/proposal-error-cause/">Error Cause</a></li>
   <li><a href="https://tc39.es/proposal-import-assertions/">import assertions</a></li>
   <li><a href="https://www.w3.org/TR/input-events-2/">Input Events Level 2</a></li>
   <li><a href="https://tc39.es/proposal-json-modules/">JSON modules</a></li>
@@ -44,6 +53,7 @@
   <li><a href="https://tc39.es/proposal-regexp-match-indices/">RegExp Match Indices</a></li>
   <li><a href="https://tc39.es/proposal-relative-indexing-method/">Relative Indexing Method</a></li>
   <li><a href="https://tc39.es/proposal-static-class-features/">Static class features</a></li>
+  <li><a href="https://tc39.es/proposal-temporal/">Temporal proposal</a></li>
   <li><a href="https://tc39.es/proposal-top-level-await/">Top-Level Await</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/">WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/">WebGL EXT_blend_minmax Khronos Ratified Extension Specification</a></li>
@@ -89,7 +99,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/">WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification</a></li>
   <li><a href="https://www.w3.org/TR/webxr-ar-module-1/">WebXR Augmented Reality Module - Level 1</a></li>
   </ul>
-  <p>=&gt; 64 specifications found</p>
+  <p>=&gt; 66 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
   </section>
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
@@ -197,22 +207,21 @@
   <li><code>CSSRule</code> used in <a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a>, <a href="https://www.w3.org/TR/css-conditional-3/">CSS Conditional Rules Module Level 3</a>, <a href="https://www.w3.org/TR/css-counter-styles-3/">CSS Counter Styles Level 3</a>, <a href="https://www.w3.org/TR/css-device-adapt-1/">CSS Device Adaptation Module Level 1</a>, <a href="https://www.w3.org/TR/css-fonts-4/">CSS Fonts Module Level 4</a>, <a href="https://drafts.csswg.org/css-nesting-1/">CSS Nesting Module</a>, <a href="https://www.w3.org/TR/css-properties-values-api-1/">CSS Properties and Values API Level 1</a>, <a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a></li>
   <li><code>CSSRuleList</code> used in <a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a>, <a href="https://drafts.csswg.org/css-nesting-1/">CSS Nesting Module</a></li>
   <li><code>CSSStyleDeclaration</code> used in <a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a>, <a href="https://www.w3.org/TR/css-device-adapt-1/">CSS Device Adaptation Module Level 1</a>, <a href="https://www.w3.org/TR/css-fonts-4/">CSS Fonts Module Level 4</a>, <a href="https://drafts.csswg.org/css-nesting-1/">CSS Nesting Module</a></li>
-  <li><code>CSSStyleRule</code> used in <a href="https://www.w3.org/TR/css-typed-om-1/">CSS Typed OM Level 1</a></li>
+  <li><code>CSSStyleRule</code> used in <a href="https://drafts.csswg.org/css-nesting-1/">CSS Nesting Module</a>, <a href="https://www.w3.org/TR/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><code>CSSStyleSheet</code> used in <a href="https://wicg.github.io/construct-stylesheets/">Constructable Stylesheet Objects</a></li>
-  <li><code>CryptoKey</code> used in <a href="https://w3c.github.io/webrtc-insertable-streams/">WebRTC Insertable Media using Streams</a></li>
   <li><code>DOMException</code> used in <a href="https://www.w3.org/TR/mediacapture-streams/">Media Capture and Streams</a>, <a href="https://www.w3.org/TR/webrtc/">WebRTC 1.0: Real-Time Communication Between Browsers</a></li>
   <li><code>Date</code> used in <a href="https://www.w3.org/TR/reporting-1/">Reporting API</a></li>
   <li><code>ElementCSSInlineStyle</code> used in <a href="https://www.w3.org/TR/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><code>Map</code> used in <a href="https://www.w3.org/TR/css-images-4/">CSS Image Values and Replaced Content Module Level 4</a></li>
   <li><code>MediaList</code> used in <a href="https://wicg.github.io/construct-stylesheets/">Constructable Stylesheet Objects</a>, <a href="https://www.w3.org/TR/css-conditional-3/">CSS Conditional Rules Module Level 3</a></li>
   <li><code>PermissionName</code> used in <a href="https://www.w3.org/TR/permissions/">Permissions</a></li>
-  <li><code>Screen</code> used in <a href="https://www.w3.org/TR/screen-fold/">The Screen Fold API</a>, <a href="https://www.w3.org/TR/screen-orientation/">The Screen Orientation API</a></li>
+  <li><code>Screen</code> used in <a href="https://www.w3.org/TR/screen-fold/">Device Posture API</a>, <a href="https://www.w3.org/TR/screen-orientation/">The Screen Orientation API</a></li>
   <li><code>SupportedType</code> used in <a href="https://www.w3.org/TR/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><code>WebAppManifest</code> used in <a href="https://w3c.github.io/web-share-target/">Web Share Target API</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>, <a href="https://wicg.github.io/portals/">Portals</a>, <a href="https://svgwg.org/specs/animations/">SVG Animations</a>, <a href="https://www.w3.org/TR/touch-events/">Touch Events</a></li>
-  <li><code>void</code> used in <a href="https://wicg.github.io/background-fetch/">Background Fetch</a>, <a href="https://wicg.github.io/construct-stylesheets/">Constructable Stylesheet Objects</a>, <a href="https://wicg.github.io/content-index/spec/">Content Index</a>, <a href="https://www.w3.org/TR/requestidlecallback/">Cooperative Scheduling of Background Tasks</a>, <a href="https://www.w3.org/TR/credential-management-1/">Credential Management Level 1</a>, <a href="https://www.w3.org/TR/css-animation-worklet-1/">CSS Animation Worklet API</a>, <a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a>, <a href="https://www.w3.org/TR/css-paint-api-1/">CSS Painting API Level 1</a>, <a href="https://www.w3.org/TR/css-nav-1/">CSS Spatial Navigation Level 1</a>, <a href="https://www.w3.org/TR/css-typed-om-1/">CSS Typed OM Level 1</a>, <a href="https://www.w3.org/TR/DOM-Parsing/">DOM Parsing and Serialization</a>, <a href="https://www.w3.org/TR/encrypted-media/">Encrypted Media Extensions</a>, <a href="https://www.w3.org/TR/FileAPI/">File API</a>, <a href="https://www.w3.org/TR/filter-effects-1/">Filter Effects Module Level 1</a>, <a href="https://www.w3.org/TR/generic-sensor/">Generic Sensor API</a>, <a href="https://www.w3.org/TR/geolocation-API/">Geolocation API Specification 2nd Edition</a>, <a href="https://www.w3.org/TR/webrtc-identity/">Identity for WebRTC 1.0</a>, <a href="https://www.w3.org/TR/IndexedDB-2/">Indexed Database API 2.0</a>, <a href="https://wicg.github.io/keyboard-lock/">Keyboard Lock</a>, <a href="https://www.w3.org/TR/mediasession/">Media Session Standard</a>, <a href="https://www.w3.org/TR/media-source/">Media Source Extensions™</a>, <a href="https://www.w3.org/TR/orientation-sensor/">Orientation Sensor</a>, <a href="https://www.w3.org/TR/payment-handler/">Payment Handler API</a>, <a href="https://www.w3.org/TR/performance-timeline-2/">Performance Timeline Level 2</a>, <a href="https://www.w3.org/TR/picture-in-picture/">Picture-in-Picture</a>, <a href="https://www.w3.org/TR/pointerlock-2/">Pointer Lock 2.0</a>, <a href="https://www.w3.org/TR/remote-playback/">Remote Playback API</a>, <a href="https://www.w3.org/TR/reporting-1/">Reporting API</a>, <a href="https://www.w3.org/TR/SVG2/">Scalable Vector Graphics (SVG) 2</a>, <a href="https://www.w3.org/TR/service-workers-1/">Service Workers 1</a>, <a href="https://svgwg.org/specs/animations/">SVG Animations</a>, <a href="https://www.w3.org/TR/user-timing-2/">User Timing Level 2</a>, <a href="https://www.w3.org/TR/web-animations-1/">Web Animations</a>, <a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a>, <a href="https://www.w3.org/TR/webmidi/">Web MIDI API</a>, <a href="https://wicg.github.io/periodic-background-sync/">Web Periodic Background Synchronization</a>, <a href="https://www.w3.org/TR/wasm-js-api-1/">WebAssembly JavaScript Interface</a>, <a href="https://immersive-web.github.io/anchors/">WebXR Anchors Module</a>, <a href="https://www.w3.org/TR/webxr/">WebXR Device API</a>, <a href="https://immersive-web.github.io/hit-test/">WebXR Hit Test Module</a></li>
+  <li><code>void</code> used in <a href="https://wicg.github.io/background-fetch/">Background Fetch</a>, <a href="https://wicg.github.io/construct-stylesheets/">Constructable Stylesheet Objects</a>, <a href="https://wicg.github.io/content-index/spec/">Content Index</a>, <a href="https://www.w3.org/TR/requestidlecallback/">Cooperative Scheduling of Background Tasks</a>, <a href="https://www.w3.org/TR/credential-management-1/">Credential Management Level 1</a>, <a href="https://www.w3.org/TR/css-animation-worklet-1/">CSS Animation Worklet API</a>, <a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a>, <a href="https://www.w3.org/TR/css-paint-api-1/">CSS Painting API Level 1</a>, <a href="https://www.w3.org/TR/css-nav-1/">CSS Spatial Navigation Level 1</a>, <a href="https://www.w3.org/TR/css-typed-om-1/">CSS Typed OM Level 1</a>, <a href="https://www.w3.org/TR/DOM-Parsing/">DOM Parsing and Serialization</a>, <a href="https://www.w3.org/TR/encrypted-media/">Encrypted Media Extensions</a>, <a href="https://www.w3.org/TR/FileAPI/">File API</a>, <a href="https://www.w3.org/TR/filter-effects-1/">Filter Effects Module Level 1</a>, <a href="https://www.w3.org/TR/generic-sensor/">Generic Sensor API</a>, <a href="https://www.w3.org/TR/geolocation-API/">Geolocation API Specification 2nd Edition</a>, <a href="https://www.w3.org/TR/webrtc-identity/">Identity for WebRTC 1.0</a>, <a href="https://wicg.github.io/keyboard-lock/">Keyboard Lock</a>, <a href="https://www.w3.org/TR/mediasession/">Media Session Standard</a>, <a href="https://www.w3.org/TR/media-source/">Media Source Extensions™</a>, <a href="https://www.w3.org/TR/orientation-sensor/">Orientation Sensor</a>, <a href="https://www.w3.org/TR/payment-handler/">Payment Handler API</a>, <a href="https://www.w3.org/TR/performance-timeline-2/">Performance Timeline Level 2</a>, <a href="https://www.w3.org/TR/pointerlock-2/">Pointer Lock 2.0</a>, <a href="https://www.w3.org/TR/remote-playback/">Remote Playback API</a>, <a href="https://www.w3.org/TR/reporting-1/">Reporting API</a>, <a href="https://www.w3.org/TR/SVG2/">Scalable Vector Graphics (SVG) 2</a>, <a href="https://www.w3.org/TR/service-workers-1/">Service Workers 1</a>, <a href="https://svgwg.org/specs/animations/">SVG Animations</a>, <a href="https://www.w3.org/TR/user-timing-2/">User Timing Level 2</a>, <a href="https://www.w3.org/TR/web-animations-1/">Web Animations</a>, <a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a>, <a href="https://www.w3.org/TR/webmidi/">Web MIDI API</a>, <a href="https://wicg.github.io/periodic-background-sync/">Web Periodic Background Synchronization</a>, <a href="https://www.w3.org/TR/wasm-js-api-1/">WebAssembly JavaScript Interface</a>, <a href="https://immersive-web.github.io/anchors/">WebXR Anchors Module</a>, <a href="https://www.w3.org/TR/webxr/">WebXR Device API</a>, <a href="https://immersive-web.github.io/hit-test/">WebXR Hit Test Module</a></li>
   </ul>
-  <p>=&gt; 22 WebIDL names found</p>
+  <p>=&gt; 21 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -1589,6 +1598,7 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/beacon/">Beacon</a> links to <a href="https://xhr.spec.whatwg.org/"><code>https://xhr.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/CSS22/">Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification</a> links to <a href="https://www.w3.org/TR/css3-box/"><code>https://www.w3.org/TR/css3-box/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/clear-site-data/">Clear Site Data</a> links to <a href="https://w3c.github.io/IndexedDB/"><code>https://w3c.github.io/IndexedDB/</code></a> but does not list it in its references</li>
   <li><a href="https://wicg.github.io/client-hints-infrastructure/">Client Hints Infrastructure</a> links to <a href="https://w3c.github.io/device-memory/"><code>https://w3c.github.io/device-memory/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/clipboard-apis/">Clipboard API and events</a> links to <a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a> but does not list it in its references</li>
   <li><a href="https://compat.spec.whatwg.org/">Compatibility Standard</a> links to:
@@ -1655,16 +1665,11 @@
   <li><a href="https://www.w3.org/TR/css-ui-4/">CSS Basic User Interface Module Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/2000/WD-css3-userint-20000216"><code>https://www.w3.org/TR/2000/WD-css3-userint-20000216</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-color/"><code>https://www.w3.org/TR/css3-color/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-style-attr/"><code>https://www.w3.org/TR/css-style-attr/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-images/"><code>https://www.w3.org/TR/css3-images/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-ui/"><code>https://www.w3.org/TR/css3-ui/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-page/"><code>https://www.w3.org/TR/css3-page/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/contentEditable/"><code>https://w3c.github.io/contentEditable/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/selectors4/"><code>https://www.w3.org/TR/selectors4/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/css-align-3/">CSS Box Alignment Module Level 3</a> links to:
   <ul>
@@ -1706,6 +1711,7 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/css-sizing-3/">CSS Box Sizing Module Level 3</a> links to:
   <ul>
+  <li><a href="https://www.w3.org/TR/css-writing-modes-3/"><code>https://www.w3.org/TR/css-writing-modes-3/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css2/"><code>https://www.w3.org/TR/css2/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-multicol/"><code>https://www.w3.org/TR/css3-multicol/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
@@ -1728,11 +1734,11 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a> links to:
   <ul>
-  <li><a href="https://www.w3.org/TR/css3-mediaqueries/"><code>https://www.w3.org/TR/css3-mediaqueries/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-conditional/"><code>https://www.w3.org/TR/css3-conditional/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/mediaqueries/"><code>https://www.w3.org/TR/mediaqueries/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-conditional/"><code>https://www.w3.org/TR/css-conditional/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css3-writing-modes/"><code>https://www.w3.org/TR/css3-writing-modes/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-style-attr/"><code>https://www.w3.org/TR/css-style-attr/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/"><code>https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/</code></a> but does not list it in its references</li>
@@ -1741,6 +1747,8 @@
   <li><a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-conditional/"><code>https://www.w3.org/TR/css3-conditional/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/mediaqueries/"><code>https://www.w3.org/TR/mediaqueries/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-conditional/"><code>https://www.w3.org/TR/css-conditional/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-style-attr/"><code>https://www.w3.org/TR/css-style-attr/</code></a> but does not list it in its references</li>
@@ -2344,6 +2352,11 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/webrtc-stats/">Identifiers for WebRTC's Statistics API</a> links to <a href="https://w3c.github.io/webrtc-extensions/"><code>https://w3c.github.io/webrtc-extensions/</code></a> but does not list it in its references</li>
   <li><a href="https://tc39.es/proposal-import-assertions/">import assertions</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/IndexedDB-3/">Indexed Database API 3.0</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2015/REC-IndexedDB-20150108/"><code>https://www.w3.org/TR/2015/REC-IndexedDB-20150108/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/"><code>https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/intersection-observer/">Intersection Observer</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a> but does not list it in its references</li>
@@ -2412,6 +2425,7 @@
   <li><a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/webdriver/"><code>https://w3c.github.io/webdriver/</code></a> but does not list it in its references</li>
   </ul></li>
+  <li><a href="https://www.w3.org/TR/picture-in-picture/">Picture-in-Picture</a> links to <a href="https://www.w3.org/TR/permissions-policy/"><code>https://www.w3.org/TR/permissions-policy/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/pointerevents3/">Pointer Events</a> links to <a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/preload/">Preload</a> links to <a href="https://w3c.github.io/webappsec/specs/content-security-policy/"><code>https://w3c.github.io/webappsec/specs/content-security-policy/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/reporting-1/">Reporting API</a> links to <a href="https://w3c.github.io/webdriver/webdriver-spec.html"><code>https://w3c.github.io/webdriver/webdriver-spec.html</code></a> but does not list it in its references</li>
@@ -2564,7 +2578,11 @@
   <li><a href="https://notifications.spec.whatwg.org/"><code>https://notifications.spec.whatwg.org/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a> links to <a href="https://w3c.github.io/fingerprinting-guidance/"><code>https://w3c.github.io/fingerprinting-guidance/</code></a> but does not list it in its references</li>
-  <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a> links to <a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
+  <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/IndexedDB/"><code>https://w3c.github.io/IndexedDB/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/web-share/">Web Share API</a> links to <a href="https://www.w3.org/TR/web-intents/"><code>https://www.w3.org/TR/web-intents/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/wasm-core-1/">WebAssembly Core Specification</a> links to:
   <ul>
@@ -2615,7 +2633,7 @@
   <li><a href="https://www.w3.org/TR/webxr-hand-input-1/">WebXR Hand Input Module - Level 1</a> links to <a href="https://www.w3.org/TR/webxr/"><code>https://www.w3.org/TR/webxr/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 688 missing references for links found in 173 specifications</p>
+  <p>=&gt; 691 missing references for links found in 176 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -2649,11 +2667,7 @@
   <li><a href="https://www.w3.org/TR/2003/REC-SVG11-20030114/"><code>https://www.w3.org/TR/2003/REC-SVG11-20030114/</code></a> but related reference &quot;SVG11&quot; uses URL <a href="http://www.w3.org/TR/2011/REC-SVG11-20110816/"><code>http://www.w3.org/TR/2011/REC-SVG11-20110816/</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-color/"><code>https://www.w3.org/TR/css3-color/</code></a> but related reference &quot;CSS3COLOR&quot; uses URL <a href="http://www.w3.org/TR/2011/REC-css3-color-20110607/"><code>http://www.w3.org/TR/2011/REC-css3-color-20110607/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/clear-site-data/">Clear Site Data</a> links to:
-  <ul>
-  <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
-  <li><a href="https://w3c.github.io/IndexedDB/"><code>https://w3c.github.io/IndexedDB/</code></a> but related reference &quot;INDEXEDDB&quot; uses URL <a href="https://www.w3.org/TR/IndexedDB/"><code>https://www.w3.org/TR/IndexedDB/</code></a></li>
-  </ul></li>
+  <li><a href="https://www.w3.org/TR/clear-site-data/">Clear Site Data</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   <li><a href="https://www.w3.org/TR/clipboard-apis/">Clipboard API and events</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
@@ -2690,6 +2704,7 @@
   <li><a href="https://www.w3.org/TR/credential-management-1/">Credential Management Level 1</a> links to <a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-ui-4/">CSS Basic User Interface Module Level 4</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-box-3/">CSS Box Model Module Level 3</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-sizing-3/">CSS Box Sizing Module Level 3</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-sizing-4/">CSS Box Sizing Module Level 4</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
@@ -2698,11 +2713,7 @@
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
-  </ul></li>
+  <li><a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
@@ -2917,13 +2928,7 @@
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-permissions-policy/"><code>https://w3c.github.io/webappsec-permissions-policy/</code></a> but related reference &quot;PERMISSIONS-POLICY&quot; uses URL <a href="https://www.w3.org/TR/permissions-policy-1/"><code>https://www.w3.org/TR/permissions-policy-1/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/IndexedDB-2/">Indexed Database API 2.0</a> links to:
-  <ul>
-  <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but related reference &quot;HTML52&quot; uses URL <a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a></li>
-  <li><a href="https://www.w3.org/TR/domcore/"><code>https://www.w3.org/TR/domcore/</code></a> but related reference &quot;DOM41&quot; uses URL <a href="https://www.w3.org/TR/dom41/"><code>https://www.w3.org/TR/dom41/</code></a></li>
-  <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but related reference &quot;DOM41&quot; uses URL <a href="https://www.w3.org/TR/dom41/"><code>https://www.w3.org/TR/dom41/</code></a></li>
-  </ul></li>
+  <li><a href="https://www.w3.org/TR/IndexedDB-3/">Indexed Database API 3.0</a> links to <a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
   <li><a href="https://www.w3.org/TR/input-events-2/">Input Events Level 2</a> links to <a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;UI-EVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
   <li><a href="https://www.w3.org/TR/intersection-observer/">Intersection Observer</a> links to <a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a> but related reference &quot;CSSOM-VIEW-1&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
   <li><a href="https://wicg.github.io/intervention-reporting/">Intervention Reporting</a> links to <a href="https://w3c.github.io/reporting/"><code>https://w3c.github.io/reporting/</code></a> but related reference &quot;REPORTING-1&quot; uses URL <a href="https://www.w3.org/TR/reporting-1/"><code>https://www.w3.org/TR/reporting-1/</code></a></li>
@@ -3128,11 +3133,7 @@
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   <li><a href="https://www.w3.org/TR/page-visibility-2/"><code>https://www.w3.org/TR/page-visibility-2/</code></a> but related reference &quot;PAGE-VISIBILITY&quot; uses URL <a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a></li>
   </ul></li>
-  <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a> links to:
-  <ul>
-  <li><a href="https://w3c.github.io/IndexedDB/"><code>https://w3c.github.io/IndexedDB/</code></a> but related reference &quot;IndexedDB-2&quot; uses URL <a href="https://www.w3.org/TR/IndexedDB-2/"><code>https://www.w3.org/TR/IndexedDB-2/</code></a></li>
-  <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;Service-Workers&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
-  </ul></li>
+  <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;Service-Workers&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   <li><a href="https://www.w3.org/TR/webmidi/">Web MIDI API</a> links to <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but related reference &quot;DOM-LEVEL-3-CORE&quot; uses URL <a href="http://www.w3.org/TR/DOM-Level-3-Core/"><code>http://www.w3.org/TR/DOM-Level-3-Core/</code></a></li>
   <li><a href="https://wicg.github.io/web-otp/">Web OTP API</a> links to <a href="https://w3c.github.io/webappsec-credential-management/"><code>https://w3c.github.io/webappsec-credential-management/</code></a> but related reference &quot;CREDENTIAL-MANAGEMENT-1&quot; uses URL <a href="https://www.w3.org/TR/credential-management-1/"><code>https://www.w3.org/TR/credential-management-1/</code></a></li>
   <li><a href="https://wicg.github.io/periodic-background-sync/">Web Periodic Background Synchronization</a> links to:
@@ -3156,7 +3157,6 @@
   <li><a href="https://www.w3.org/TR/html/"><code>https://www.w3.org/TR/html/</code></a> but related reference &quot;HTML5&quot; uses URL <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
   <li><a href="https://www.w3.org/TR/2011/WD-html5-20110525/"><code>https://www.w3.org/TR/2011/WD-html5-20110525/</code></a> but related reference &quot;HTML5&quot; uses URL <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/webrtc-insertable-streams/">WebRTC Insertable Media using Streams</a> links to <a href="https://w3c.github.io/webcrypto/"><code>https://w3c.github.io/webcrypto/</code></a> but related reference &quot;WebCryptoAPI&quot; uses URL <a href="https://www.w3.org/TR/WebCryptoAPI/"><code>https://www.w3.org/TR/WebCryptoAPI/</code></a></li>
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
@@ -3177,7 +3177,7 @@
   <li><a href="https://www.w3.org/TR/webxr-gamepads-module-1/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   <li><a href="https://www.w3.org/TR/webxr-hand-input-1/">WebXR Hand Input Module - Level 1</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   </ul>
-  <p>=&gt; 323 inconsistent references for links found in 170 specifications</p>
+  <p>=&gt; 317 inconsistent references for links found in 170 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   <section id="external-links-to-private-terms" class="level2">
@@ -3481,7 +3481,6 @@
   <li><a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>:
   <ul>
   <li><a href="https://html.spec.whatwg.org/#content-type"><code>https://html.spec.whatwg.org/#content-type</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#quirks-mode"><code>https://html.spec.whatwg.org/#quirks-mode</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>:
   <ul>
@@ -3581,6 +3580,18 @@
   <li><a href="https://drafts.csswg.org/css-multicol-2/">CSS Multi-column Layout Module Level 2</a>:
   <ul>
   <li><a href="https://drafts.csswg.org/css-regions-1/#css-region"><code>https://drafts.csswg.org/css-regions-1/#css-region</code></a></li>
+  </ul></li>
+  <li><a href="https://drafts.csswg.org/css-nesting-1/">CSS Nesting Module</a>:
+  <ul>
+  <li><a href="https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules"><code>https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules</code></a></li>
+  <li><a href="https://drafts.csswg.org/cssom-1/#insert-a-css-rule"><code>https://drafts.csswg.org/cssom-1/#insert-a-css-rule</code></a></li>
+  <li><a href="https://drafts.csswg.org/cssom-1/#remove-a-css-rule"><code>https://drafts.csswg.org/cssom-1/#remove-a-css-rule</code></a></li>
+  <li><a href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations"><code>https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations</code></a></li>
+  <li><a href="https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order"><code>https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order</code></a></li>
+  <li><a href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule"><code>https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule</code></a></li>
+  <li><a href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node"><code>https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node</code></a></li>
+  <li><a href="https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration-block"><code>https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration-block</code></a></li>
+  <li><a href="https://drafts.csswg.org/cssom-1/#serialize-a-css-rule"><code>https://drafts.csswg.org/cssom-1/#serialize-a-css-rule</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/cssom-1/">CSS Object Model (CSSOM)</a>:
   <ul>
@@ -3788,6 +3799,11 @@
   <li><a href="https://wicg.github.io/deprecation-reporting/">Deprecation Reporting</a>:
   <ul>
   <li><a href="https://w3c.github.io/reporting/#report-type"><code>https://w3c.github.io/reporting/#report-type</code></a></li>
+  </ul></li>
+  <li><a href="https://www.w3.org/TR/screen-fold/">Device Posture API</a>:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts"><code>https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts</code></a></li>
+  <li><a href="https://www.w3.org/TR/page-visibility/#dfn-now-visible-algorithm"><code>https://www.w3.org/TR/page-visibility/#dfn-now-visible-algorithm</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/orientation-event/">DeviceOrientation Event Specification</a>:
   <ul>
@@ -4169,6 +4185,30 @@
   <li><a href="https://html.spec.whatwg.org/#js-hostresolveimportedmodule"><code>https://html.spec.whatwg.org/#js-hostresolveimportedmodule</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#js-hostimportmoduledynamically"><code>https://html.spec.whatwg.org/#js-hostimportmoduledynamically</code></a></li>
   </ul></li>
+  <li><a href="https://www.w3.org/TR/IndexedDB-3/">Indexed Database API 3.0</a>:
+  <ul>
+  <li><a href="https://heycam.github.io/webidl/#dfn-throw"><code>https://heycam.github.io/webidl/#dfn-throw</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#dataerror"><code>https://heycam.github.io/webidl/#dataerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#constrainterror"><code>https://heycam.github.io/webidl/#constrainterror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#aborterror"><code>https://heycam.github.io/webidl/#aborterror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#datacloneerror"><code>https://heycam.github.io/webidl/#datacloneerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#invalidaccesserror"><code>https://heycam.github.io/webidl/#invalidaccesserror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#invalidstateerror"><code>https://heycam.github.io/webidl/#invalidstateerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#notfounderror"><code>https://heycam.github.io/webidl/#notfounderror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#quotaexceedederror"><code>https://heycam.github.io/webidl/#quotaexceedederror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#syntaxerror"><code>https://heycam.github.io/webidl/#syntaxerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#readonlyerror"><code>https://heycam.github.io/webidl/#readonlyerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#transactioninactiveerror"><code>https://heycam.github.io/webidl/#transactioninactiveerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#unknownerror"><code>https://heycam.github.io/webidl/#unknownerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#versionerror"><code>https://heycam.github.io/webidl/#versionerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#securityerror"><code>https://heycam.github.io/webidl/#securityerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#dfn-create-exception"><code>https://heycam.github.io/webidl/#dfn-create-exception</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#dfn-buffer-source-type"><code>https://heycam.github.io/webidl/#dfn-buffer-source-type</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#dfn-get-buffer-source-copy"><code>https://heycam.github.io/webidl/#dfn-get-buffer-source-copy</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#serializable-objects"><code>https://html.spec.whatwg.org/#serializable-objects</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#task-queue"><code>https://html.spec.whatwg.org/#task-queue</code></a></li>
+  <li><a href="https://storage.spec.whatwg.org/#storage-bucket"><code>https://storage.spec.whatwg.org/#storage-bucket</code></a></li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/input-events-2/">Input Events Level 2</a>:
   <ul>
   <li><a href="https://w3c.github.io/uievents/#beforeinput"><code>https://w3c.github.io/uievents/#beforeinput</code></a></li>
@@ -4284,7 +4324,6 @@
   <li><a href="https://www.w3.org/TR/media-capabilities/">Media Capabilities</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/media-source/#dom-mediasource-istypesupported"><code>https://www.w3.org/TR/media-source/#dom-mediasource-istypesupported</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#dfn-present"><code>https://heycam.github.io/webidl/#dfn-present</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#invalidstateerror"><code>https://heycam.github.io/webidl/#invalidstateerror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#securityerror"><code>https://heycam.github.io/webidl/#securityerror</code></a></li>
   <li><a href="https://www.w3.org/TR/encrypted-media/#dom-mediakeysrequirement"><code>https://www.w3.org/TR/encrypted-media/#dom-mediakeysrequirement</code></a></li>
@@ -4546,6 +4585,8 @@
   <li><a href="https://heycam.github.io/webidl/#notsupportederror"><code>https://heycam.github.io/webidl/#notsupportederror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#securityerror"><code>https://heycam.github.io/webidl/#securityerror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#invalidstateerror"><code>https://heycam.github.io/webidl/#invalidstateerror</code></a></li>
+  <li><a href="https://fullscreen.spec.whatwg.org/#fully-exit-fullscreen"><code>https://fullscreen.spec.whatwg.org/#fully-exit-fullscreen</code></a></li>
+  <li><a href="https://fullscreen.spec.whatwg.org/#fullscreen-flag"><code>https://fullscreen.spec.whatwg.org/#fullscreen-flag</code></a></li>
   <li><a href="https://w3c.github.io/remote-playback/#dfn-local-playback-device"><code>https://w3c.github.io/remote-playback/#dfn-local-playback-device</code></a></li>
   <li><a href="https://w3c.github.io/remote-playback/#dfn-local-playback-state"><code>https://w3c.github.io/remote-playback/#dfn-local-playback-state</code></a></li>
   <li><a href="https://www.w3.org/TR/page-visibility/#dom-visibilitystate"><code>https://www.w3.org/TR/page-visibility/#dom-visibilitystate</code></a></li>
@@ -4844,11 +4885,6 @@
   <li><a href="https://html.spec.whatwg.org/#restore-persisted-state"><code>https://html.spec.whatwg.org/#restore-persisted-state</code></a></li>
   <li><a href="https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view"><code>https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view</code></a></li>
   <li><a href="https://w3c.github.io/selection-api/#dfn-selection"><code>https://w3c.github.io/selection-api/#dfn-selection</code></a></li>
-  </ul></li>
-  <li><a href="https://www.w3.org/TR/screen-fold/">The Screen Fold API</a>:
-  <ul>
-  <li><a href="https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts"><code>https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts</code></a></li>
-  <li><a href="https://www.w3.org/TR/page-visibility/#dfn-now-visible-algorithm"><code>https://www.w3.org/TR/page-visibility/#dfn-now-visible-algorithm</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/screen-orientation/">The Screen Orientation API</a>:
   <ul>
@@ -5294,12 +5330,6 @@
   <li><a href="https://heycam.github.io/webidl/#invalidcharactererror"><code>https://heycam.github.io/webidl/#invalidcharactererror</code></a></li>
   <li><a href="https://fetch.spec.whatwg.org/#concept-cors-check"><code>https://fetch.spec.whatwg.org/#concept-cors-check</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/webrtc-insertable-streams/">WebRTC Insertable Media using Streams</a>:
-  <ul>
-  <li><a href="https://heycam.github.io/webidl/#invalidaccesserror"><code>https://heycam.github.io/webidl/#invalidaccesserror</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#invalidmodificationerror"><code>https://heycam.github.io/webidl/#invalidmodificationerror</code></a></li>
-  <li><a href="https://w3c.github.io/webcrypto/#dfn-CryptoKey"><code>https://w3c.github.io/webcrypto/#dfn-CryptoKey</code></a></li>
-  </ul></li>
   <li><a href="https://w3c.github.io/webtransport/">WebTransport</a>:
   <ul>
   <li><a href="https://heycam.github.io/webidl/#dfn-throw"><code>https://heycam.github.io/webidl/#dfn-throw</code></a></li>
@@ -5495,7 +5525,7 @@
   <li><a href="https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over"><code>https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 1648 problematic external links found in 221 specifications</p>
+  <p>=&gt; 1675 problematic external links found in 222 specifications</p>
   </section>
   <section id="external-links-that-neither-target-definitions-nor-headings" class="level2">
   <h2>External links that neither target definitions nor headings</h2>
@@ -5539,12 +5569,6 @@
   <li><a href="https://drafts.csswg.org/css-backgrounds-4/">CSS Backgrounds and Borders Module Level 4</a>:
   <ul>
   <li><a href="https://drafts.csswg.org/css2/#propdef-border-collapse"><code>https://drafts.csswg.org/css2/#propdef-border-collapse</code></a></li>
-  </ul></li>
-  <li><a href="https://www.w3.org/TR/css-ui-4/">CSS Basic User Interface Module Level 4</a>:
-  <ul>
-  <li><a href="https://www.w3.org/TR/css3-background/#the-border-width"><code>https://www.w3.org/TR/css3-background/#the-border-width</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-background/#the-border-style"><code>https://www.w3.org/TR/css3-background/#the-border-style</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-background/#the-border-radius"><code>https://www.w3.org/TR/css3-background/#the-border-radius</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/css-sizing-3/">CSS Box Sizing Module Level 3</a>:
   <ul>
@@ -5899,6 +5923,10 @@
   <ul>
   <li><a href="https://www.w3.org/TR/webrtc/#sec.stats-model"><code>https://www.w3.org/TR/webrtc/#sec.stats-model</code></a></li>
   </ul></li>
+  <li><a href="https://www.w3.org/TR/IndexedDB-3/">Indexed Database API 3.0</a>:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/#document"><code>https://html.spec.whatwg.org/#document</code></a></li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/intersection-observer/">Intersection Observer</a>:
   <ul>
   <li><a href="https://drafts.csswg.org/css2/visuren.html#viewport"><code>https://drafts.csswg.org/css2/visuren.html#viewport</code></a></li>
@@ -5940,6 +5968,11 @@
   <li><a href="https://www.w3.org/TR/mediasession/">Media Session Standard</a>:
   <ul>
   <li><a href="https://html.spec.whatwg.org/#case-sensitive"><code>https://html.spec.whatwg.org/#case-sensitive</code></a></li>
+  </ul></li>
+  <li><a href="https://www.w3.org/TR/image-capture/">MediaStream Image Capture</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindomstring"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindomstring</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindouble"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindouble</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/navigation-timing-2/">Navigation Timing Level 2</a>:
   <ul>
@@ -6204,10 +6237,6 @@
   <ul>
   <li><a href="https://heycam.github.io/webidl/#idl-ArrayBuffer"><code>https://heycam.github.io/webidl/#idl-ArrayBuffer</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/webrtc-insertable-streams/">WebRTC Insertable Media using Streams</a>:
-  <ul>
-  <li><a href="https://heycam.github.io/webidl/#idl-ArrayBuffer"><code>https://heycam.github.io/webidl/#idl-ArrayBuffer</code></a></li>
-  </ul></li>
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a>:
   <ul>
   <li><a href="https://heycam.github.io/webidl/#idl-ArrayBuffer"><code>https://heycam.github.io/webidl/#idl-ArrayBuffer</code></a></li>
@@ -6241,7 +6270,7 @@
   <li><a href="https://heycam.github.io/webidl/#idl-ArrayBuffer"><code>https://heycam.github.io/webidl/#idl-ArrayBuffer</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 425 problematic external links found in 105 specifications</p>
+  <p>=&gt; 424 problematic external links found in 105 specifications</p>
   </section>
   <section id="broken-external-links" class="level2">
   <h2>Broken external links</h2>
@@ -6452,8 +6481,7 @@
   <li><a href="https://www.w3.org/TR/css-ui-4/">CSS Basic User Interface Module Level 4</a>:
   <ul>
   <li><a href="https://drafts.csswg.org/css-overflow-4/#propdef-text-overflow"><code>https://drafts.csswg.org/css-overflow-4/#propdef-text-overflow</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-color/#valuea-def-color"><code>https://www.w3.org/TR/css3-color/#valuea-def-color</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-cascade-4/#bang-important"><code>https://www.w3.org/TR/css-cascade-4/#bang-important</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-color-3/#valuea-def-color"><code>https://www.w3.org/TR/css-color-3/#valuea-def-color</code></a></li>
   <li><a href="https://w3c.github.io/contentEditable/#dfn-editing-host"><code>https://w3c.github.io/contentEditable/#dfn-editing-host</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/css-align-3/">CSS Box Alignment Module Level 3</a>:
@@ -6469,12 +6497,6 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/css-cascade-4/">CSS Cascading and Inheritance Level 4</a>:
   <ul>
-  <li><a href="https://drafts.csswg.org/css2/#valdef-media-all"><code>https://drafts.csswg.org/css2/#valdef-media-all</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-scoping-1/#tree-context"><code>https://drafts.csswg.org/css-scoping-1/#tree-context</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-scoping-1/#flat-tree"><code>https://drafts.csswg.org/css-scoping-1/#flat-tree</code></a></li>
-  </ul></li>
-  <li><a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>:
-  <ul>
   <li><a href="https://www.w3.org/TR/css-color-3/#valuea-def-color"><code>https://www.w3.org/TR/css-color-3/#valuea-def-color</code></a></li>
   <li><a href="https://drafts.csswg.org/css-syntax-3/#css-property-declarations"><code>https://drafts.csswg.org/css-syntax-3/#css-property-declarations</code></a></li>
   <li><a href="https://drafts.csswg.org/css2/#valdef-color-red"><code>https://drafts.csswg.org/css2/#valdef-color-red</code></a></li>
@@ -6483,6 +6505,16 @@
   <li><a href="https://drafts.csswg.org/css2/#valdef-generic-family-sans-serif"><code>https://drafts.csswg.org/css2/#valdef-generic-family-sans-serif</code></a></li>
   <li><a href="https://drafts.csswg.org/css-scoping-1/#flat-tree"><code>https://drafts.csswg.org/css-scoping-1/#flat-tree</code></a></li>
   <li><a href="https://drafts.csswg.org/css-scoping-1/#tree-context"><code>https://drafts.csswg.org/css-scoping-1/#tree-context</code></a></li>
+  </ul></li>
+  <li><a href="https://www.w3.org/TR/css-cascade-5/">CSS Cascading and Inheritance Level 5</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/css-color-3/#valuea-def-color"><code>https://www.w3.org/TR/css-color-3/#valuea-def-color</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-syntax-3/#css-property-declarations"><code>https://drafts.csswg.org/css-syntax-3/#css-property-declarations</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-scoping-1/#flat-tree"><code>https://drafts.csswg.org/css-scoping-1/#flat-tree</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-scoping-1/#tree-context"><code>https://drafts.csswg.org/css-scoping-1/#tree-context</code></a></li>
+  <li><a href="https://drafts.csswg.org/css2/#valdef-font-weight-bolder"><code>https://drafts.csswg.org/css2/#valdef-font-weight-bolder</code></a></li>
+  <li><a href="https://drafts.csswg.org/css2/#valdef-font-style-italic"><code>https://drafts.csswg.org/css2/#valdef-font-style-italic</code></a></li>
+  <li><a href="https://drafts.csswg.org/css2/#valdef-generic-family-sans-serif"><code>https://drafts.csswg.org/css2/#valdef-generic-family-sans-serif</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/css-color-4/">CSS Color Module Level 4</a>:
   <ul>
@@ -6639,6 +6671,7 @@
   <li><a href="https://drafts.csswg.org/css-nesting-1/">CSS Nesting Module</a>:
   <ul>
   <li><a href="https://drafts.csswg.org/cssom-1/#cssomstring"><code>https://drafts.csswg.org/cssom-1/#cssomstring</code></a></li>
+  <li><a href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag"><code>https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/cssom-1/">CSS Object Model (CSSOM)</a>:
@@ -6901,6 +6934,10 @@
   <li><a href="https://heycam.github.io/webidl/#Default"><code>https://heycam.github.io/webidl/#Default</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/device-memory-1/">Device Memory</a>:
+  <ul>
+  <li><a href="https://heycam.github.io/webidl/#SecureContext"><code>https://heycam.github.io/webidl/#SecureContext</code></a></li>
+  </ul></li>
+  <li><a href="https://www.w3.org/TR/screen-fold/">Device Posture API</a>:
   <ul>
   <li><a href="https://heycam.github.io/webidl/#SecureContext"><code>https://heycam.github.io/webidl/#SecureContext</code></a></li>
   </ul></li>
@@ -7509,6 +7546,16 @@
   <ul>
   <li><a href="https://heycam.github.io/webidl/#exceptiondef-typeerror"><code>https://heycam.github.io/webidl/#exceptiondef-typeerror</code></a></li>
   </ul></li>
+  <li><a href="https://www.w3.org/TR/IndexedDB-3/">Indexed Database API 3.0</a>:
+  <ul>
+  <li><a href="https://heycam.github.io/webidl/#this"><code>https://heycam.github.io/webidl/#this</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#a-promise-rejected-with"><code>https://heycam.github.io/webidl/#a-promise-rejected-with</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#a-new-promise"><code>https://heycam.github.io/webidl/#a-new-promise</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#reject"><code>https://heycam.github.io/webidl/#reject</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#resolve"><code>https://heycam.github.io/webidl/#resolve</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#the-given-value"><code>https://heycam.github.io/webidl/#the-given-value</code></a></li>
+  </ul></li>
   <li><a href="https://infra.spec.whatwg.org/">Infra Standard</a>:
   <ul>
   <li><a href="https://heycam.github.io/webidl/#exceptiondef-typeerror"><code>https://heycam.github.io/webidl/#exceptiondef-typeerror</code></a></li>
@@ -7666,7 +7713,20 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/image-capture/">MediaStream Image Capture</a>:
   <ul>
-  <li><a href="https://www.w3.org/TR/mediacapture-streams/#dom-constrainablepattern-getsettings-settings"><code>https://www.w3.org/TR/mediacapture-streams/#dom-constrainablepattern-getsettings-settings</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-kind"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-kind</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-readyState"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-readyState</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-onmute"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-onmute</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-onunmute"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-onunmute</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-getCapabilities-MediaTrackCapabilities"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-getCapabilities-MediaTrackCapabilities</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-ConstrainablePattern-getSettings-Settings"><code>https://www.w3.org/TR/mediacapture-streams/#widl-ConstrainablePattern-getSettings-Settings</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-getConstraints-MediaTrackConstraints"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-getConstraints-MediaTrackConstraints</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackSupportedConstraints"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackSupportedConstraints</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#widl-MediaDevices-getSupportedConstraints-MediaTrackSupportedConstraints"><code>https://www.w3.org/TR/mediacapture-streams/#widl-MediaDevices-getSupportedConstraints-MediaTrackSupportedConstraints</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackCapabilities"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackCapabilities</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraintSet"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraintSet</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackSettings"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackSettings</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraints"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaTrackConstraints</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#idl-def-ConstrainBoolean"><code>https://www.w3.org/TR/mediacapture-streams/#idl-def-ConstrainBoolean</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#a-promise-rejected-with"><code>https://heycam.github.io/webidl/#a-promise-rejected-with</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/mediastream-recording/">MediaStream Recording</a>:
@@ -7813,6 +7873,7 @@
   <li><a href="https://heycam.github.io/webidl/#this"><code>https://heycam.github.io/webidl/#this</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#notallowederror"><code>https://heycam.github.io/webidl/#notallowederror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#a-new-promise"><code>https://heycam.github.io/webidl/#a-new-promise</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/pointerevents3/">Pointer Events</a>:
   <ul>
@@ -8088,10 +8149,6 @@
   <li><a href="https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type"><code>https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value"><code>https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value</code></a></li>
   <li><a href="https://drafts.csswg.org/css2/#valdef-visibility-visible"><code>https://drafts.csswg.org/css2/#valdef-visibility-visible</code></a></li>
-  </ul></li>
-  <li><a href="https://www.w3.org/TR/screen-fold/">The Screen Fold API</a>:
-  <ul>
-  <li><a href="https://heycam.github.io/webidl/#SecureContext"><code>https://heycam.github.io/webidl/#SecureContext</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/screen-orientation/">The Screen Orientation API</a>:
   <ul>
@@ -8405,16 +8462,6 @@
   <li><a href="https://heycam.github.io/webidl/#dom-domexception-name"><code>https://heycam.github.io/webidl/#dom-domexception-name</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#dom-domexception-code"><code>https://heycam.github.io/webidl/#dom-domexception-code</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/webrtc-insertable-streams/">WebRTC Insertable Media using Streams</a>:
-  <ul>
-  <li><a href="https://heycam.github.io/webidl/#this"><code>https://heycam.github.io/webidl/#this</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#a-promise-resolved-with"><code>https://heycam.github.io/webidl/#a-promise-resolved-with</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#BufferSource"><code>https://heycam.github.io/webidl/#BufferSource</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#a-new-promise"><code>https://heycam.github.io/webidl/#a-new-promise</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#reject"><code>https://heycam.github.io/webidl/#reject</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#resolve"><code>https://heycam.github.io/webidl/#resolve</code></a></li>
-  </ul></li>
   <li><a href="https://w3c.github.io/webtransport/">WebTransport</a>:
   <ul>
   <li><a href="https://heycam.github.io/webidl/#a-promise-resolved-with"><code>https://heycam.github.io/webidl/#a-promise-resolved-with</code></a></li>
@@ -8422,6 +8469,8 @@
   <li><a href="https://heycam.github.io/webidl/#this"><code>https://heycam.github.io/webidl/#this</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#exceptiondef-typeerror"><code>https://heycam.github.io/webidl/#exceptiondef-typeerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#upon-fulfillment"><code>https://heycam.github.io/webidl/#upon-fulfillment</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#upon-rejection"><code>https://heycam.github.io/webidl/#upon-rejection</code></a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/webusb/">WebUSB API</a>:
   <ul>
@@ -8515,7 +8564,7 @@
   <li><a href="https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm"><code>https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 1551 problematic external links found in 239 specifications</p>
+  <p>=&gt; 1571 problematic external links found in 239 specifications</p>
   </section>
   <section id="external-links-to-terms-that-no-longer-exist-in-the-latest-version-of-the-targeted-specification" class="level2">
   <h2>External links to terms that no longer exist in the latest version of the targeted specification</h2>
@@ -8664,10 +8713,8 @@
   <li><a href="https://www.w3.org/TR/webmessaging/"><code>https://www.w3.org/TR/webmessaging/</code></a></li>
   <li><a href="https://www.w3.org/TR/workers/"><code>https://www.w3.org/TR/workers/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/IndexedDB-2/">Indexed Database API 2.0</a>:
+  <li><a href="https://www.w3.org/TR/IndexedDB-3/">Indexed Database API 3.0</a>:
   <ul>
-  <li><a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a></li>
-  <li><a href="https://www.w3.org/TR/domcore/"><code>https://www.w3.org/TR/domcore/</code></a></li>
   <li><a href="https://www.w3.org/TR/webstorage/"><code>https://www.w3.org/TR/webstorage/</code></a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/js-self-profiling/">JS Self-Profiling API</a>:
@@ -8827,7 +8874,7 @@
   <li><a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 92 problematic external links found in 70 specifications</p>
+  <p>=&gt; 90 problematic external links found in 70 specifications</p>
   </section>
   <section id="external-links-that-use-a-dated-url" class="level2">
   <h2>External links that use a dated URL</h2>
@@ -9136,9 +9183,10 @@
   <li><a href="https://www.w3.org/TR/2018/CR-webrtc-20180621/"><code>https://www.w3.org/TR/2018/CR-webrtc-20180621/</code></a></li>
   <li><a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/"><code>https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/IndexedDB-2/">Indexed Database API 2.0</a>:
+  <li><a href="https://www.w3.org/TR/IndexedDB-3/">Indexed Database API 3.0</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/2015/REC-IndexedDB-20150108/"><code>https://www.w3.org/TR/2015/REC-IndexedDB-20150108/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/"><code>https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/mixed-content/">Mixed Content</a>:
   <ul>
@@ -9261,7 +9309,7 @@
   <li><a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 236 problematic external links found in 64 specifications</p>
+  <p>=&gt; 237 problematic external links found in 64 specifications</p>
   </section>
   </body>
 </html>

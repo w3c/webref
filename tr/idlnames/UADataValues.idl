@@ -1,8 +1,9 @@
 // Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 dictionary UADataValues {
+  DOMString architecture;
+  DOMString bitness;
+  DOMString model;
   DOMString platform;
   DOMString platformVersion;
-  DOMString architecture;
-  DOMString model;
   DOMString uaFullVersion;
 };

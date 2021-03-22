@@ -7,7 +7,7 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "EnterPictureInPictureEvent"
+          "PictureInPictureEvent"
         ]
       },
       "functions": {
@@ -82,10 +82,10 @@
         ],
         "partial": false
       },
-      "EnterPictureInPictureEvent": {
-        "fragment": "[Exposed=Window]\ninterface EnterPictureInPictureEvent : Event {\n    constructor(DOMString type, EnterPictureInPictureEventInit eventInitDict);\n    [SameObject] readonly attribute PictureInPictureWindow pictureInPictureWindow;\n};",
+      "PictureInPictureEvent": {
+        "fragment": "[Exposed=Window]\ninterface PictureInPictureEvent : Event {\n    constructor(DOMString type, PictureInPictureEventInit eventInitDict);\n    [SameObject] readonly attribute PictureInPictureWindow pictureInPictureWindow;\n};",
         "type": "interface",
-        "name": "EnterPictureInPictureEvent",
+        "name": "PictureInPictureEvent",
         "inheritance": "Event",
         "members": [
           {
@@ -117,7 +117,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "EnterPictureInPictureEventInit"
+                  "idlType": "PictureInPictureEventInit"
                 },
                 "default": null,
                 "optional": false,
@@ -162,10 +162,10 @@
         ],
         "partial": false
       },
-      "EnterPictureInPictureEventInit": {
-        "fragment": "dictionary EnterPictureInPictureEventInit : EventInit {\n    required PictureInPictureWindow pictureInPictureWindow;\n};",
+      "PictureInPictureEventInit": {
+        "fragment": "dictionary PictureInPictureEventInit : EventInit {\n    required PictureInPictureWindow pictureInPictureWindow;\n};",
         "type": "dictionary",
-        "name": "EnterPictureInPictureEventInit",
+        "name": "PictureInPictureEventInit",
         "inheritance": "EventInit",
         "members": [
           {
@@ -308,7 +308,7 @@
       ],
       "Document": [
         {
-          "fragment": "partial interface Document {\n  readonly attribute boolean pictureInPictureEnabled;\n\n  [NewObject] Promise<void> exitPictureInPicture();\n};",
+          "fragment": "partial interface Document {\n  readonly attribute boolean pictureInPictureEnabled;\n\n  [NewObject] Promise<undefined> exitPictureInPicture();\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -344,7 +344,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "void"
+                    "idlType": "undefined"
                   }
                 ]
               },
@@ -396,7 +396,7 @@
     "exposed": {
       "Window": [
         "PictureInPictureWindow",
-        "EnterPictureInPictureEvent"
+        "PictureInPictureEvent"
       ]
     },
     "dependencies": {
@@ -404,9 +404,7 @@
         "PictureInPictureWindow",
         "EventHandler"
       ],
-      "Document": [
-        "void"
-      ],
+      "Document": [],
       "DocumentOrShadowRoot": [
         "Element"
       ],
@@ -414,12 +412,12 @@
         "EventTarget",
         "EventHandler"
       ],
-      "EnterPictureInPictureEvent": [
+      "PictureInPictureEvent": [
         "Event",
-        "EnterPictureInPictureEventInit",
+        "PictureInPictureEventInit",
         "PictureInPictureWindow"
       ],
-      "EnterPictureInPictureEventInit": [
+      "PictureInPictureEventInit": [
         "EventInit",
         "PictureInPictureWindow"
       ]
@@ -428,7 +426,6 @@
       "HTMLVideoElement",
       "EventHandler",
       "Document",
-      "void",
       "DocumentOrShadowRoot",
       "Element",
       "EventTarget",

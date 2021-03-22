@@ -255,6 +255,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-mediadecodingtype-webrtc",
+      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediadecodingtype-webrtc",
+      "linkingText": [
+        "\"webrtc\"",
+        "webrtc"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MediaDecodingType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediadecodingtype",
+        "title": "MediaDecodingType",
+        "number": "2.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "enumdef-mediaencodingtype",
       "href": "https://www.w3.org/TR/media-capabilities/#enumdef-mediaencodingtype",
       "linkingText": [
@@ -294,11 +315,11 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mediaencodingtype-transmission",
-      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediaencodingtype-transmission",
+      "id": "dom-mediaencodingtype-webrtc",
+      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediaencodingtype-webrtc",
       "linkingText": [
-        "\"transmission\"",
-        "transmission"
+        "\"webrtc\"",
+        "webrtc"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -569,6 +590,26 @@
       "href": "https://www.w3.org/TR/media-capabilities/#dom-videoconfiguration-transferfunction",
       "linkingText": [
         "transferFunction"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoConfiguration"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoconfiguration",
+        "title": "VideoConfiguration",
+        "number": "2.1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-videoconfiguration-scalabilitymode",
+      "href": "https://www.w3.org/TR/media-capabilities/#dom-videoconfiguration-scalabilitymode",
+      "linkingText": [
+        "scalabilityMode"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1198,66 +1239,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-mediacapabilitiesinfo-supported",
-      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-supported",
-      "linkingText": [
-        "supported"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MediaCapabilitiesInfo"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "media-capabilities-info",
-        "title": "Media Capabilities Information",
-        "number": "2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mediacapabilitiesinfo-smooth",
-      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-smooth",
-      "linkingText": [
-        "smooth"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MediaCapabilitiesInfo"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "media-capabilities-info",
-        "title": "Media Capabilities Information",
-        "number": "2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mediacapabilitiesinfo-powerefficient",
-      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-powerefficient",
-      "linkingText": [
-        "powerEfficient"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MediaCapabilitiesInfo"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "media-capabilities-info",
-        "title": "Media Capabilities Information",
-        "number": "2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dictdef-mediacapabilitiesdecodinginfo",
       "href": "https://www.w3.org/TR/media-capabilities/#dictdef-mediacapabilitiesdecodinginfo",
       "linkingText": [
@@ -1266,46 +1247,6 @@
       "localLinkingText": [],
       "type": "dictionary",
       "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "media-capabilities-info",
-        "title": "Media Capabilities Information",
-        "number": "2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mediacapabilitiesdecodinginfo-keysystemaccess",
-      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesdecodinginfo-keysystemaccess",
-      "linkingText": [
-        "keySystemAccess"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MediaCapabilitiesDecodingInfo"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "media-capabilities-info",
-        "title": "Media Capabilities Information",
-        "number": "2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-mediacapabilitiesdecodinginfo-configuration",
-      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesdecodinginfo-configuration",
-      "linkingText": [
-        "configuration"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "MediaCapabilitiesDecodingInfo"
-      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -1334,6 +1275,106 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-mediacapabilitiesinfo-supported",
+      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-supported",
+      "linkingText": [
+        "supported"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "media-capabilities-info",
+        "title": "Media Capabilities Information",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mediacapabilitiesinfo-smooth",
+      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-smooth",
+      "linkingText": [
+        "smooth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "media-capabilities-info",
+        "title": "Media Capabilities Information",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mediacapabilitiesinfo-powerefficient",
+      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesinfo-powerefficient",
+      "linkingText": [
+        "powerEfficient"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "media-capabilities-info",
+        "title": "Media Capabilities Information",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mediacapabilitiesdecodinginfo-keysystemaccess",
+      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesdecodinginfo-keysystemaccess",
+      "linkingText": [
+        "keySystemAccess"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesDecodingInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "media-capabilities-info",
+        "title": "Media Capabilities Information",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-mediacapabilitiesdecodinginfo-configuration",
+      "href": "https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesdecodinginfo-configuration",
+      "linkingText": [
+        "configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaCapabilitiesDecodingInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "media-capabilities-info",
+        "title": "Media Capabilities Information",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-mediacapabilitiesencodinginfo-configuration",
       "href": "https://www.w3.org/TR/media-capabilities/#dom-mediacapabilitiesencodinginfo-configuration",
       "linkingText": [
@@ -1345,126 +1386,6 @@
         "MediaCapabilitiesEncodingInfo"
       ],
       "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "media-capabilities-info",
-        "title": "Media Capabilities Information",
-        "number": "2.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "mediacapabilitiesinfo-supported",
-      "href": "https://www.w3.org/TR/media-capabilities/#mediacapabilitiesinfo-supported",
-      "linkingText": [
-        "supported"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "MediaCapabilitiesInfo"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "media-capabilities-info",
-        "title": "Media Capabilities Information",
-        "number": "2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "mediacapabilitiesinfo-smooth",
-      "href": "https://www.w3.org/TR/media-capabilities/#mediacapabilitiesinfo-smooth",
-      "linkingText": [
-        "smooth"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "MediaCapabilitiesInfo"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "media-capabilities-info",
-        "title": "Media Capabilities Information",
-        "number": "2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "mediacapabilitiesinfo-powerefficient",
-      "href": "https://www.w3.org/TR/media-capabilities/#mediacapabilitiesinfo-powerefficient",
-      "linkingText": [
-        "powerEfficient"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "MediaCapabilitiesInfo"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "media-capabilities-info",
-        "title": "Media Capabilities Information",
-        "number": "2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "mediacapabilitiesdecodinginfo-keysystemaccess",
-      "href": "https://www.w3.org/TR/media-capabilities/#mediacapabilitiesdecodinginfo-keysystemaccess",
-      "linkingText": [
-        "keySystemAccess"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "MediaCapabilitiesDecodingInfo"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "media-capabilities-info",
-        "title": "Media Capabilities Information",
-        "number": "2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "mediacapabilitiesdecodinginfo-configuration",
-      "href": "https://www.w3.org/TR/media-capabilities/#mediacapabilitiesdecodinginfo-configuration",
-      "linkingText": [
-        "configuration"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "MediaCapabilitiesDecodingInfo"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "media-capabilities-info",
-        "title": "Media Capabilities Information",
-        "number": "2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "mediacapabilitiesencodinginfo-configuration",
-      "href": "https://www.w3.org/TR/media-capabilities/#mediacapabilitiesencodinginfo-configuration",
-      "linkingText": [
-        "configuration"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "MediaCapabilitiesEncodingInfo"
-      ],
-      "access": "private",
       "informative": false,
       "heading": {
         "id": "media-capabilities-info",
