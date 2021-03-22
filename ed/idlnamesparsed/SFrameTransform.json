@@ -2,17 +2,17 @@
   "name": "SFrameTransform",
   "defined": {
     "spec": {
-      "title": "WebRTC Insertable Media using Streams",
-      "url": "https://w3c.github.io/webrtc-insertable-streams/"
+      "title": "WebRTC Encoded Transform",
+      "url": "https://w3c.github.io/webrtc-encoded-transform/"
     },
-    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);\n};",
-    "href": "https://w3c.github.io/webrtc-insertable-streams/#sframetransform"
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#sframetransform"
   },
   "extended": [
     {
       "spec": {
-        "title": "WebRTC Insertable Media using Streams",
-        "url": "https://w3c.github.io/webrtc-insertable-streams/"
+        "title": "WebRTC Encoded Transform",
+        "url": "https://w3c.github.io/webrtc-encoded-transform/"
       },
       "fragment": "SFrameTransform includes GenericTransformStream;"
     }

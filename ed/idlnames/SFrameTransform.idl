@@ -1,9 +1,9 @@
-// Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)
+// Source: WebRTC Encoded Transform (https://w3c.github.io/webrtc-encoded-transform/)
 [Exposed=(Window,DedicatedWorker)]
 interface SFrameTransform {
     constructor(optional SFrameTransformOptions options = {});
-    Promise<undefined> setEncryptionKey(CryptoKey key, optional unsigned long long keyID);
+    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);
 };
 
-// Source: WebRTC Insertable Media using Streams (https://w3c.github.io/webrtc-insertable-streams/)
+// Source: WebRTC Encoded Transform (https://w3c.github.io/webrtc-encoded-transform/)
 SFrameTransform includes GenericTransformStream;
