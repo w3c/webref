@@ -2,27 +2,3 @@
 % Reffy
 % March 22, 2021
 
-## Device Posture API
-
-- Initial URL: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- This specification was not in the reference crawl report.
-
-
-## ECMAScript class static initialization blocks
-
-- Initial URL: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
-- This specification was not in the reference crawl report.
-
-
-## WebRTC Encoded Transform
-
-- Initial URL: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
-- This specification was not in the reference crawl report.
-
-
