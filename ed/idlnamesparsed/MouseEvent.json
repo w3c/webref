@@ -5,7 +5,7 @@
       "title": "UI Events",
       "url": "https://www.w3.org/TR/uievents/"
     },
-    "fragment": "[Exposed=Window]\ninterface MouseEvent : UIEvent {\n  constructor(DOMString type, optional MouseEventInit eventInitDict);\n  readonly attribute long screenX;\n  readonly attribute long screenY;\n  readonly attribute long clientX;\n  readonly attribute long clientY;\n\n  readonly attribute boolean ctrlKey;\n  readonly attribute boolean shiftKey;\n  readonly attribute boolean altKey;\n  readonly attribute boolean metaKey;\n\n  readonly attribute short button;\n  readonly attribute unsigned short buttons;\n\n  readonly attribute EventTarget? relatedTarget;\n\n  boolean getModifierState(DOMString keyArg);\n};",
+    "fragment": "[Exposed=Window]\ninterface MouseEvent : UIEvent {\n  constructor(DOMString type, optional MouseEventInit eventInitDict = {});\n  readonly attribute long screenX;\n  readonly attribute long screenY;\n  readonly attribute long clientX;\n  readonly attribute long clientY;\n\n  readonly attribute boolean ctrlKey;\n  readonly attribute boolean shiftKey;\n  readonly attribute boolean altKey;\n  readonly attribute boolean metaKey;\n\n  readonly attribute short button;\n  readonly attribute unsigned short buttons;\n\n  readonly attribute EventTarget? relatedTarget;\n\n  boolean getModifierState(DOMString keyArg);\n};",
     "href": "https://w3c.github.io/uievents/#mouseevent"
   },
   "extended": [
@@ -38,7 +38,7 @@
         "title": "UI Events",
         "url": "https://www.w3.org/TR/uievents/"
       },
-      "fragment": "[Exposed=Window]\ninterface UIEvent : Event {\n  constructor(DOMString type, optional UIEventInit eventInitDict);\n  readonly attribute Window? view;\n  readonly attribute long detail;\n};",
+      "fragment": "[Exposed=Window]\ninterface UIEvent : Event {\n  constructor(DOMString type, optional UIEventInit eventInitDict = {});\n  readonly attribute Window? view;\n  readonly attribute long detail;\n};",
       "href": "https://w3c.github.io/uievents/#uievent"
     },
     "extended": [

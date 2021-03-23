@@ -5,7 +5,7 @@
       "title": "UI Events",
       "url": "https://www.w3.org/TR/uievents/"
     },
-    "fragment": "[Exposed=Window]\ninterface FocusEvent : UIEvent {\n  constructor(DOMString type, optional FocusEventInit eventInitDict);\n  readonly attribute EventTarget? relatedTarget;\n};",
+    "fragment": "[Exposed=Window]\ninterface FocusEvent : UIEvent {\n  constructor(DOMString type, optional FocusEventInit eventInitDict = {});\n  readonly attribute EventTarget? relatedTarget;\n};",
     "href": "https://w3c.github.io/uievents/#focusevent"
   },
   "extended": [],
@@ -16,7 +16,7 @@
         "title": "UI Events",
         "url": "https://www.w3.org/TR/uievents/"
       },
-      "fragment": "[Exposed=Window]\ninterface UIEvent : Event {\n  constructor(DOMString type, optional UIEventInit eventInitDict);\n  readonly attribute Window? view;\n  readonly attribute long detail;\n};",
+      "fragment": "[Exposed=Window]\ninterface UIEvent : Event {\n  constructor(DOMString type, optional UIEventInit eventInitDict = {});\n  readonly attribute Window? view;\n  readonly attribute long detail;\n};",
       "href": "https://w3c.github.io/uievents/#uievent"
     },
     "extended": [
