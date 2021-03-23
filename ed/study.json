@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-03-23T06:51:30.193Z",
+  "date": "2021-03-23T13:01:10.528Z",
   "stats": {
     "crawled": 387,
     "errors": 0,
@@ -21541,7 +21541,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "19 March 2021",
+      "date": "23 March 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -38408,7 +38408,9 @@
           "css": [],
           "idl": []
         },
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/secure-contexts/TR/secure-contexts/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -38446,7 +38448,15 @@
             }
           ]
         },
-        "ok": true
+        "xrefs": {
+          "notExported": [],
+          "notDfn": [],
+          "brokenLinks": [],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
+        },
+        "ok": false
       }
     },
     {
@@ -41851,6 +41861,11 @@
               "url": "https://www.w3.org/TR/remote-playback/",
               "title": "Remote Playback API",
               "crawled": "https://w3c.github.io/remote-playback/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-share/",
+              "title": "Web Share API",
+              "crawled": "https://w3c.github.io/web-share/"
             },
             {
               "url": "https://wicg.github.io/webusb/",
@@ -47117,6 +47132,7 @@
           "idl": []
         },
         "missingLinkRef": [
+          "https://www.w3.org/TR/secure-contexts/TR/secure-contexts/",
           "https://www.w3.org/TR/web-intents/"
         ],
         "inconsistentRef": [],
@@ -47129,6 +47145,14 @@
             }
           ],
           "informative": []
+        },
+        "xrefs": {
+          "notExported": [],
+          "notDfn": [],
+          "brokenLinks": [],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
         },
         "ok": false
       }
@@ -53156,6 +53180,11 @@
               "crawled": "https://w3c.github.io/webrtc-encoded-transform/"
             },
             {
+              "url": "https://www.w3.org/TR/webrtc-priority/",
+              "title": "WebRTC Priority Control API",
+              "crawled": "https://w3c.github.io/webrtc-priority/"
+            },
+            {
               "url": "https://w3c.github.io/webtransport/",
               "title": "WebTransport",
               "crawled": "https://w3c.github.io/webtransport/"
@@ -53191,7 +53220,7 @@
     {
       "title": "WebRTC Encoded Transform",
       "shortname": "webrtc-encoded-transform",
-      "date": "19 March 2021",
+      "date": "23 March 2021",
       "url": "https://w3c.github.io/webrtc-encoded-transform/",
       "nightly": {
         "url": "https://w3c.github.io/webrtc-encoded-transform/",
@@ -53207,7 +53236,7 @@
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [
-          "BigInt"
+          "bigint"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -53233,9 +53262,9 @@
       }
     },
     {
-      "title": "WebRTC Priority Control API | webrtc-priority",
+      "title": "WebRTC Priority Control API",
       "shortname": "webrtc-priority",
-      "date": "19 March 2021",
+      "date": "9 February 2021",
       "url": "https://www.w3.org/TR/webrtc-priority/",
       "release": {
         "url": "https://www.w3.org/TR/webrtc-priority/",
@@ -53249,9 +53278,10 @@
       },
       "crawled": "https://w3c.github.io/webrtc-priority/",
       "report": {
-        "noNormativeRefs": true,
-        "noRefToWebIDL": false,
+        "noNormativeRefs": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
