@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% March 22, 2021
+% March 23, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -589,7 +589,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
 - Crawled URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
-- Crawled version: 14 January 2021
+- Crawled version: 22 March 2021
 - Editor's Draft: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
 - Shortname: compat
 
@@ -911,7 +911,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/csp-embedded-enforcement/](https://www.w3.org/TR/csp-embedded-enforcement/)
 - Crawled URL: [https://w3c.github.io/webappsec-cspee/](https://w3c.github.io/webappsec-cspee/)
-- Crawled version: 15 October 2018
+- Crawled version: 23 March 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-cspee/](https://w3c.github.io/webappsec-cspee/)
 - Latest published version: [https://www.w3.org/TR/csp-embedded-enforcement/](https://www.w3.org/TR/csp-embedded-enforcement/)
 - Shortname: csp-embedded-enforcement
@@ -922,13 +922,8 @@ Informative references to this spec from:
      * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/), related reference "CSP" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
 - External links to private terms:
      * [`https://html.spec.whatwg.org/#concept-element-attributes`](https://html.spec.whatwg.org/#concept-element-attributes)
-- External links that neither target definitions nor headings:
-     * [`https://html.spec.whatwg.org/#case-sensitive`](https://html.spec.whatwg.org/#case-sensitive)
 - Broken external links:
-     * [`https://html.spec.whatwg.org/#responsible-browsing-context`](https://html.spec.whatwg.org/#responsible-browsing-context)
-     * [`https://w3c.github.io/webappsec-csp/#grammardef-media-type`](https://w3c.github.io/webappsec-csp/#grammardef-media-type)
      * [`https://w3c.github.io/webappsec-csp/#port-part-match`](https://w3c.github.io/webappsec-csp/#port-part-match)
-     * [`https://fetch.spec.whatwg.org/#network-scheme`](https://fetch.spec.whatwg.org/#network-scheme)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -10977,7 +10972,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Crawled URL: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
-- Crawled version: 18 March 2021
+- Crawled version: 23 March 2021
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
@@ -11166,6 +11161,7 @@ Normative references to this spec from:
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
+- [Web OTP API](https://wicg.github.io/web-otp/)
 - [Web Serial API](https://wicg.github.io/serial/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [WebHID API](https://wicg.github.io/webhid/)
@@ -14360,7 +14356,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
 - Crawled URL: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
-- Crawled version: 8 March 2021
+- Crawled version: 22 March 2021
 - Editor's Draft: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
 - Shortname: web-otp
 
@@ -14368,6 +14364,7 @@ Informative references to this spec from:
 
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/), related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
+     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "Permissions-Policy" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
 - External links to private terms:
      * [`https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors`](https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors)
 - Broken external links:
