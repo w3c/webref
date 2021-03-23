@@ -7896,7 +7896,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 19 March 2021
+- Crawled version: 23 March 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -10966,7 +10966,7 @@ Informative references to this spec from:
 - [Payment Request API](https://w3c.github.io/payment-request/)
 
 
-## Payment Request API {data-spec=true data-missingDfns=true data-ok=true}
+## Payment Request API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -10979,7 +10979,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Missing references for links: 
+     * [`https://www.w3.org/TR/secure-contexts/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/TR/secure-contexts/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12408,6 +12409,7 @@ Informative references to this spec from:
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
+- [Web Share API](https://w3c.github.io/web-share/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 
 
@@ -14428,7 +14430,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web Share API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true}
+## Web Share API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -14442,6 +14444,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
+     * [`https://www.w3.org/TR/secure-contexts/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/TR/secure-contexts/)
      * [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/)
 
 ### Known dependencies on this specification {.dependencies}
@@ -16230,6 +16233,7 @@ Normative references to this spec from:
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebCodecs](https://wicg.github.io/web-codecs/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
+- [WebRTC Priority Control API](https://w3c.github.io/webrtc-priority/)
 - [WebTransport](https://w3c.github.io/webtransport/)
 
 Informative references to this spec from:
@@ -16244,13 +16248,13 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
 - Crawled URL: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
-- Crawled version: 19 March 2021
+- Crawled version: 23 March 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
 - Shortname: webrtc-encoded-transform
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `BigInt`
+- Unknown WebIDL names used: `bigint`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webcrypto/`](https://w3c.github.io/webcrypto/), related reference "WebCryptoAPI" uses URL [`https://www.w3.org/TR/WebCryptoAPI/`](https://www.w3.org/TR/WebCryptoAPI/)
 
@@ -16261,20 +16265,20 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebRTC Priority Control API | webrtc-priority {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+## WebRTC Priority Control API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingDfns=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
 - Crawled URL: [https://w3c.github.io/webrtc-priority/](https://w3c.github.io/webrtc-priority/)
-- Crawled version: 19 March 2021
+- Crawled version: 9 February 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-priority/](https://w3c.github.io/webrtc-priority/)
 - Latest published version: [https://www.w3.org/TR/webrtc-priority/](https://www.w3.org/TR/webrtc-priority/)
 - Shortname: webrtc-priority
 
 ### Potential issue(s) {.anomalies}
 
-- No normative references found
+- Spec uses WebIDL but does not reference it normatively
 
 ### Known dependencies on this specification {.dependencies}
 

@@ -37,7 +37,7 @@ dictionary SFrameTransformOptions {
 };
 
 typedef [EnforceRange] unsigned long long SmallCryptoKeyID;
-typedef (SmallCryptoKeyID or BigInt) CryptoKeyID;
+typedef (SmallCryptoKeyID or bigint) CryptoKeyID;
 
 [Exposed=(Window,DedicatedWorker)]
 interface SFrameTransform {
