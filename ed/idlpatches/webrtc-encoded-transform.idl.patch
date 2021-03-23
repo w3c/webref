@@ -1,0 +1,26 @@
+From f92496af49b2aaca2a79d150ee6fa4f583ab32a1 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Tue, 23 Mar 2021 09:33:49 +0100
+Subject: [PATCH] Fix webrtc-encoded-transform.idl
+
+https://github.com/w3c/webrtc-encoded-transform/pull/92
+---
+ ed/idl/webrtc-encoded-transform.idl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/idl/webrtc-encoded-transform.idl b/ed/idl/webrtc-encoded-transform.idl
+index 0c491f416..f66cad58f 100644
+--- a/ed/idl/webrtc-encoded-transform.idl
++++ b/ed/idl/webrtc-encoded-transform.idl
+@@ -37,7 +37,7 @@ dictionary SFrameTransformOptions {
+ };
+ 
+ typedef [EnforceRange] unsigned long long SmallCryptoKeyID;
+-typedef (SmallCryptoKeyID or BigInt) CryptoKeyID;
++typedef (SmallCryptoKeyID or bigint) CryptoKeyID;
+ 
+ [Exposed=(Window,DedicatedWorker)]
+ interface SFrameTransform {
+-- 
+2.31.0.rc2.261.g7f71774620-goog
+
