@@ -1,7 +1,7 @@
 // Source: UI Events (https://www.w3.org/TR/uievents/)
 [Exposed=Window]
 interface MouseEvent : UIEvent {
-  constructor(DOMString type, optional MouseEventInit eventInitDict);
+  constructor(DOMString type, optional MouseEventInit eventInitDict = {});
   readonly attribute long screenX;
   readonly attribute long screenY;
   readonly attribute long clientX;
