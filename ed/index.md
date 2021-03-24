@@ -845,7 +845,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Crawled URL: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
-- Crawled version: 19 March 2021
+- Crawled version: 24 March 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
 - Latest published version: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Shortname: CSP3
@@ -7586,7 +7586,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Crawled URL: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
-- Crawled version: 19 March 2021
+- Crawled version: 24 March 2021
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
 - Latest published version: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Shortname: hr-time-3
