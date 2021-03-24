@@ -23,24 +23,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "active-origin",
-      "href": "https://wicg.github.io/sms-one-time-codes/#active-origin",
-      "linkingText": [
-        "active origin"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "usage",
-        "title": "Usage",
-        "number": "2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "origin-bound-one-time-code-message",
       "href": "https://wicg.github.io/sms-one-time-codes/#origin-bound-one-time-code-message",
       "linkingText": [
@@ -79,10 +61,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "origin-bound-one-time-code-message-host",
-      "href": "https://wicg.github.io/sms-one-time-codes/#origin-bound-one-time-code-message-host",
+      "id": "origin-bound-one-time-code-message-top-level-host",
+      "href": "https://wicg.github.io/sms-one-time-codes/#origin-bound-one-time-code-message-top-level-host",
       "linkingText": [
-        "host"
+        "top-level host"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -119,6 +101,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "origin-bound-one-time-code-message-embedded-host",
+      "href": "https://wicg.github.io/sms-one-time-codes/#origin-bound-one-time-code-message-embedded-host",
+      "linkingText": [
+        "embedded host"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "origin-bound one-time code message"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "authoring",
+        "title": "Authoring",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "parse-an-origin-bound-one-time-code-message",
       "href": "https://wicg.github.io/sms-one-time-codes/#parse-an-origin-bound-one-time-code-message",
       "linkingText": [
@@ -128,6 +130,24 @@
       "type": "dfn",
       "for": [],
       "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "title": "Parsing",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-a-marked-token",
+      "href": "https://wicg.github.io/sms-one-time-codes/#extract-a-marked-token",
+      "linkingText": [
+        "extract a marked token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "parsing",
