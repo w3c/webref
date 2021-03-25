@@ -14,7 +14,7 @@
         "title": "UI Events",
         "url": "https://www.w3.org/TR/uievents/"
       },
-      "fragment": "partial interface KeyboardEvent {\n  // Originally introduced (and deprecated) in this specification\n  undefined initKeyboardEvent(DOMString typeArg,\n                              optional boolean bubblesArg = false,\n                              optional boolean cancelableArg = false,\n                              optional Window? viewArg = null,\n                              optional DOMString keyArg = \"\",\n                              optional unsigned long locationArg = 0,\n                              optional boolean ctrlKey = false,\n                              optional boolean altKey = false,\n                              optional boolean shiftKey = false,\n                              optional boolean metaKey = false);\n};"
+      "fragment": "partial interface KeyboardEvent {\n  // Originally introduced (and deprecated) in this specification\n  undefined initKeyboardEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Window? viewArg = null,\n    optional DOMString keyArg = \"\",\n    optional unsigned long locationArg = 0,\n    optional boolean ctrlKey = false,\n    optional boolean altKey = false,\n    optional boolean shiftKey = false,\n    optional boolean metaKey = false);\n};"
     },
     {
       "spec": {
@@ -47,7 +47,7 @@
           "title": "UI Events",
           "url": "https://www.w3.org/TR/uievents/"
         },
-        "fragment": "partial interface UIEvent {\n  // Deprecated in this specification\n  undefined initUIEvent();\n};"
+        "fragment": "partial interface UIEvent {\n  // Deprecated in this specification\n  undefined initUIEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Window? viewArg = null,\n    optional long detailArg = 0);\n};"
       },
       {
         "spec": {

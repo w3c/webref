@@ -8,15 +8,7 @@
     "fragment": "[Exposed=Window]\ninterface WheelEvent : MouseEvent {\n  constructor(DOMString type, optional WheelEventInit eventInitDict = {});\n  // DeltaModeCode\n  const unsigned long DOM_DELTA_PIXEL = 0x00;\n  const unsigned long DOM_DELTA_LINE  = 0x01;\n  const unsigned long DOM_DELTA_PAGE  = 0x02;\n\n  readonly attribute double deltaX;\n  readonly attribute double deltaY;\n  readonly attribute double deltaZ;\n  readonly attribute unsigned long deltaMode;\n};",
     "href": "https://w3c.github.io/uievents/#wheelevent"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "UI Events",
-        "url": "https://www.w3.org/TR/uievents/"
-      },
-      "fragment": "partial interface WheelEvent {\n  // Originally introduced (and deprecated) in this specification\n  undefined initWheelEvent();\n};"
-    }
-  ],
+  "extended": [],
   "inheritance": {
     "name": "MouseEvent",
     "defined": {
@@ -47,7 +39,7 @@
           "title": "UI Events",
           "url": "https://www.w3.org/TR/uievents/"
         },
-        "fragment": "partial interface MouseEvent {\n  // Deprecated in this specification\n  undefined initMouseEvent();\n};"
+        "fragment": "partial interface MouseEvent {\n  // Deprecated in this specification\n  undefined initMouseEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Window? viewArg = null,\n    optional long detailArg = 0,\n    optional long screenXArg = 0,\n    optional long screenYArg = 0,\n    optional long clientXArg = 0,\n    optional long clientYArg = 0,\n    optional boolean ctrlKeyArg = false,\n    optional boolean altKeyArg = false,\n    optional boolean shiftKeyArg = false,\n    optional boolean metaKeyArg = false,\n    optional short buttonArg = 0,\n    optional EventTarget? relatedTargetArg = null);\n};"
       }
     ],
     "inheritance": {
@@ -73,7 +65,7 @@
             "title": "UI Events",
             "url": "https://www.w3.org/TR/uievents/"
           },
-          "fragment": "partial interface UIEvent {\n  // Deprecated in this specification\n  undefined initUIEvent();\n};"
+          "fragment": "partial interface UIEvent {\n  // Deprecated in this specification\n  undefined initUIEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Window? viewArg = null,\n    optional long detailArg = 0);\n};"
         },
         {
           "spec": {

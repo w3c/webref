@@ -11,5 +11,12 @@ interface MutationEvent : Event {
   readonly attribute DOMString attrName;
   readonly attribute unsigned short attrChange;
 
-  undefined initMutationEvent();
+  undefined initMutationEvent(DOMString typeArg,
+    optional boolean bubblesArg = false,
+    optional boolean cancelableArg = false,
+    optional Node? relatedNodeArg = null,
+    optional DOMString prevValueArg = "",
+    optional DOMString newValueArg = "",
+    optional DOMString attrNameArg = "",
+    optional unsigned short attrChangeArg = 0);
 };
