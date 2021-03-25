@@ -1768,7 +1768,7 @@
         "partial": false
       },
       "VideoEncoderConfig": {
-        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long cropWidth;\n  required unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n\n  AvcEncoderConfig avc;\n};",
+        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long cropWidth;\n  required unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
         "type": "dictionary",
         "name": "VideoEncoderConfig",
         "inheritance": null,
@@ -1880,69 +1880,10 @@
               "value": "allow"
             },
             "required": false
-          },
-          {
-            "type": "field",
-            "name": "avc",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "AvcEncoderConfig"
-            },
-            "default": null,
-            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
-      },
-      "AvcEncoderConfig": {
-        "fragment": "dictionary AvcEncoderConfig {\n  AvcBitstreamFormat format = \"avc\";\n};",
-        "type": "dictionary",
-        "name": "AvcEncoderConfig",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "format",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "AvcBitstreamFormat"
-            },
-            "default": {
-              "type": "string",
-              "value": "avc"
-            },
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "AvcBitstreamFormat": {
-        "fragment": "enum AvcBitstreamFormat {\n  \"annexb\",\n  \"avc\",\n};",
-        "type": "enum",
-        "name": "AvcBitstreamFormat",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "annexb"
-          },
-          {
-            "type": "enum-value",
-            "value": "avc"
-          }
-        ],
-        "extAttrs": []
       },
       "HardwareAcceleration": {
         "fragment": "enum HardwareAcceleration {\n  \"allow\",\n  \"deny\",\n  \"require\",\n};",
@@ -3351,11 +3292,7 @@
       ],
       "AudioEncoderConfig": [],
       "VideoEncoderConfig": [
-        "HardwareAcceleration",
-        "AvcEncoderConfig"
-      ],
-      "AvcEncoderConfig": [
-        "AvcBitstreamFormat"
+        "HardwareAcceleration"
       ],
       "VideoEncoderEncodeOptions": [],
       "EncodedAudioChunk": [
