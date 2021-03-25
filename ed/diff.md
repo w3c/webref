@@ -1,12 +1,13 @@
-% Diff between report from "March 25, 2021" and reference report from "March 24, 2021"
+% Diff between report from "March 25, 2021" and reference report from "March 25, 2021"
 % Reffy
 % March 25, 2021
 
-## Origin-bound one-time codes delivered via SMS
+## Geolocation API Specification
 
-- Initial URL: [https://wicg.github.io/sms-one-time-codes/](https://wicg.github.io/sms-one-time-codes/)
+- Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/sms-one-time-codes/](https://wicg.github.io/sms-one-time-codes/)
-- Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-secure-contexts/
+- Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
+- Spec is OK: *INS* false / *DEL* true
+- Missing references for links: *INS* https://www.w3.org/TR/secure-contexts/TR/secure-contexts/
 
 
