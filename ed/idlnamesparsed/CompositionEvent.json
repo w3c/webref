@@ -14,7 +14,7 @@
         "title": "UI Events",
         "url": "https://www.w3.org/TR/uievents/"
       },
-      "fragment": "partial interface CompositionEvent {\n  // Originally introduced (and deprecated) in this specification\n  undefined initCompositionEvent();\n};"
+      "fragment": "partial interface CompositionEvent {\n  // Originally introduced (and deprecated) in this specification\n  undefined initCompositionEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional WindowProxy? viewArg = null,\n    optional DOMString dataArg = \"\");\n};"
     }
   ],
   "inheritance": {
@@ -40,7 +40,7 @@
           "title": "UI Events",
           "url": "https://www.w3.org/TR/uievents/"
         },
-        "fragment": "partial interface UIEvent {\n  // Deprecated in this specification\n  undefined initUIEvent();\n};"
+        "fragment": "partial interface UIEvent {\n  // Deprecated in this specification\n  undefined initUIEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Window? viewArg = null,\n    optional long detailArg = 0);\n};"
       },
       {
         "spec": {
