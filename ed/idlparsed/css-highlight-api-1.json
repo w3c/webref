@@ -18,7 +18,7 @@
     },
     "idlNames": {
       "Highlight": {
-        "fragment": "[Exposed=Window]\ninterface Highlight {\n  constructor(CSSOMString name, AbstractRange... initialRanges);\n  setlike<AbstractRange>;\n  attribute double priority;\n  readonly attribute CSSOMString name;\n};",
+        "fragment": "[Exposed=Window]\ninterface Highlight {\n  constructor(CSSOMString name, AbstractRange... initialRanges);\n  setlike<AbstractRange>;\n  attribute long priority;\n  readonly attribute CSSOMString name;\n};",
         "type": "interface",
         "name": "Highlight",
         "inheritance": null,
@@ -87,7 +87,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "long"
             },
             "extAttrs": [],
             "special": "",

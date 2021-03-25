@@ -150,17 +150,6 @@ dictionary VideoEncoderConfig {
   unsigned long displayWidth;
   unsigned long displayHeight;
   HardwareAcceleration hardwareAcceleration = "allow";
-
-  AvcEncoderConfig avc;
-};
-
-dictionary AvcEncoderConfig {
-  AvcBitstreamFormat format = "avc";
-};
-
-enum AvcBitstreamFormat {
-  "annexb",
-  "avc",
 };
 
 enum HardwareAcceleration {
