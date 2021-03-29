@@ -2167,6 +2167,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#link-type-stylesheet`](https://html.spec.whatwg.org/#link-type-stylesheet)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/):
      * [`https://www.w3.org/TR/css-text-3/#grapheme-cluster`](https://www.w3.org/TR/css-text-3/#grapheme-cluster)
+     * [`https://www.w3.org/TR/css-text-3/#letter`](https://www.w3.org/TR/css-text-3/#letter)
      * [`https://www.w3.org/TR/css-text-3/#word-separator`](https://www.w3.org/TR/css-text-3/#word-separator)
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/):
      * [`https://www.w3.org/TR/css-text-3/#word-separator`](https://www.w3.org/TR/css-text-3/#word-separator)
@@ -3256,7 +3257,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1200 problematic external links found in 192 specifications
+=> 1201 problematic external links found in 192 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -3929,7 +3930,6 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/):
      * [`https://drafts.csswg.org/css-transforms/#grouping-property-values`](https://drafts.csswg.org/css-transforms/#grouping-property-values)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/):
-     * [`https://www.w3.org/TR/css-text-3/#letter`](https://www.w3.org/TR/css-text-3/#letter)
      * [`https://www.w3.org/TR/css-color-3/#valuea-def-color`](https://www.w3.org/TR/css-color-3/#valuea-def-color)
      * [`https://www.w3.org/TR/css-color-3/#color0`](https://www.w3.org/TR/css-color-3/#color0)
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/):
@@ -4519,7 +4519,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 591 problematic external links found in 138 specifications
+=> 590 problematic external links found in 138 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

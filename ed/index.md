@@ -4450,6 +4450,7 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
+- [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
@@ -5139,12 +5140,12 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - External links to private terms:
      * [`https://www.w3.org/TR/css-text-3/#grapheme-cluster`](https://www.w3.org/TR/css-text-3/#grapheme-cluster)
+     * [`https://www.w3.org/TR/css-text-3/#letter`](https://www.w3.org/TR/css-text-3/#letter)
      * [`https://www.w3.org/TR/css-text-3/#word-separator`](https://www.w3.org/TR/css-text-3/#word-separator)
 - External links that neither target definitions nor headings:
      * [`https://www.w3.org/TR/css-ruby-1/#autohide`](https://www.w3.org/TR/css-ruby-1/#autohide)
      * [`https://www.w3.org/TR/css-backgrounds-3/#the-border-style`](https://www.w3.org/TR/css-backgrounds-3/#the-border-style)
 - Broken external links:
-     * [`https://www.w3.org/TR/css-text-3/#letter`](https://www.w3.org/TR/css-text-3/#letter)
      * [`https://www.w3.org/TR/css-color-3/#valuea-def-color`](https://www.w3.org/TR/css-color-3/#valuea-def-color)
      * [`https://www.w3.org/TR/css-color-3/#color0`](https://www.w3.org/TR/css-color-3/#color0)
 - External links that use a dated URL:
@@ -5233,7 +5234,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Crawled URL: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
-- Crawled version: 26 March 2021
+- Crawled version: 28 March 2021
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Shortname: css-text-3
@@ -14602,7 +14603,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
 - Crawled URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
-- Crawled version: 24 March 2021
+- Crawled version: 28 March 2021
 - Editor's Draft: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
 - Shortname: web-codecs
 
