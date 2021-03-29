@@ -1,0 +1,7 @@
+// Source: WebRTC Encoded Transform (https://w3c.github.io/webrtc-encoded-transform/)
+// New interfaces to expose JavaScript-based transforms.
+
+[Exposed=DedicatedWorker]
+interface RTCTransformEvent : Event {
+    readonly attribute RTCRtpScriptTransformer transformer;
+};
