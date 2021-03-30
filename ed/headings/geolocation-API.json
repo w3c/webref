@@ -1,13 +1,13 @@
 {
   "spec": {
-    "title": "Geolocation API Specification",
+    "title": "Geolocation API",
     "url": "https://w3c.github.io/geolocation-api/"
   },
   "headings": [
     {
       "id": "title",
       "level": 1,
-      "title": "Geolocation API Specification"
+      "title": "Geolocation API"
     },
     {
       "id": "toc",
@@ -19,6 +19,12 @@
       "level": 2,
       "title": "Introduction",
       "number": "1"
+    },
+    {
+      "id": "changes-since-second-edition",
+      "level": 3,
+      "title": "Changes since Second Edition",
+      "number": "1.1"
     },
     {
       "id": "examples",
@@ -39,9 +45,9 @@
       "number": "2.2"
     },
     {
-      "id": "requesting-position-and-handling-errors",
+      "id": "handling-errors",
       "level": 3,
-      "title": "Requesting position and handling errors",
+      "title": "Handling errors",
       "number": "2.3"
     },
     {
@@ -63,310 +69,316 @@
       "number": "2.6"
     },
     {
-      "id": "scope",
-      "level": 2,
-      "title": "Scope",
-      "number": "3"
+      "id": "enabling-the-api-in-third-party-contexts",
+      "level": 3,
+      "title": "Enabling the API in third-party contexts",
+      "number": "2.7"
     },
     {
       "id": "security",
       "level": 2,
-      "title": "Security and privacy considerations",
-      "number": "4"
+      "title": "Privacy and security considerations",
+      "number": "3"
     },
     {
       "id": "privacy_for_recipients",
       "level": 3,
       "title": "Privacy considerations for recipients of location information",
-      "number": "4.1"
+      "number": "3.1"
     },
     {
       "id": "implementation_considerations",
       "level": 3,
       "title": "Additional implementation considerations",
-      "number": "4.2"
+      "number": "3.2"
     },
     {
       "id": "api_description",
       "level": 2,
       "title": "API Description",
-      "number": "5"
+      "number": "4"
     },
     {
       "id": "navigator_interface",
       "level": 3,
       "title": "Navigator interface extensions",
-      "number": "5.1"
+      "number": "4.1"
     },
     {
       "id": "geolocation-attribute",
       "level": 4,
       "title": "geolocation attribute",
-      "number": "5.1.1"
+      "number": "4.1.1"
     },
     {
       "id": "geolocation_interface",
       "level": 3,
       "title": "Geolocation interface",
-      "number": "5.2"
+      "number": "4.2"
     },
     {
       "id": "getcurrentposition-method",
       "level": 4,
       "title": "getCurrentPosition() method",
-      "number": "5.2.1"
+      "number": "4.2.1"
     },
     {
       "id": "watchposition-method",
       "level": 4,
       "title": "watchPosition() method",
-      "number": "5.2.2"
+      "number": "4.2.2"
     },
     {
       "id": "clearwatch-method",
       "level": 4,
       "title": "clearWatch() method",
-      "number": "5.2.3"
+      "number": "4.2.3"
     },
     {
       "id": "callback-with-error",
       "level": 4,
       "title": "Callback with error",
-      "number": "5.2.4"
+      "number": "4.2.4"
     },
     {
       "id": "positioncallback-callback",
       "level": 4,
       "title": "PositionCallBack callback",
-      "number": "5.2.5"
+      "number": "4.2.5"
     },
     {
       "id": "positionerrorcallback-callback",
       "level": 4,
       "title": "PositionErrorCallBack callback",
-      "number": "5.2.6"
+      "number": "4.2.6"
     },
     {
       "id": "position_options_interface",
       "level": 3,
       "title": "PositionOptions dictionary",
-      "number": "5.3"
+      "number": "4.3"
     },
     {
       "id": "enablehighaccuracy-member",
       "level": 4,
       "title": "enableHighAccuracy member",
-      "number": "5.3.1"
+      "number": "4.3.1"
     },
     {
       "id": "timeout-member",
       "level": 4,
       "title": "timeout member",
-      "number": "5.3.2"
+      "number": "4.3.2"
     },
     {
       "id": "maximumage-member",
       "level": 4,
       "title": "maximumAge member",
-      "number": "5.3.3"
+      "number": "4.3.3"
     },
     {
       "id": "position_interface",
       "level": 3,
       "title": "GeolocationPosition interface",
-      "number": "5.4"
+      "number": "4.4"
     },
     {
       "id": "coords-attribute",
       "level": 4,
       "title": "coords attribute",
-      "number": "5.4.1"
+      "number": "4.4.1"
     },
     {
       "id": "timestamp-attribute",
       "level": 4,
       "title": "timestamp attribute",
-      "number": "5.4.2"
+      "number": "4.4.2"
     },
     {
       "id": "coordinates_interface",
       "level": 3,
       "title": "GeolocationCoordinates interface",
-      "number": "5.5"
+      "number": "4.5"
     },
     {
       "id": "latitude-attribute",
       "level": 4,
       "title": "latitude attribute",
-      "number": "5.5.1"
+      "number": "4.5.1"
     },
     {
       "id": "altitude-attribute",
       "level": 4,
       "title": "altitude attribute",
-      "number": "5.5.2"
+      "number": "4.5.2"
     },
     {
       "id": "accuracy-attribute",
       "level": 4,
       "title": "accuracy attribute",
-      "number": "5.5.3"
+      "number": "4.5.3"
     },
     {
       "id": "altitudeaccuracy-attribute",
       "level": 4,
       "title": "altitudeAccuracy attribute",
-      "number": "5.5.4"
+      "number": "4.5.4"
     },
     {
       "id": "heading-attribute",
       "level": 4,
       "title": "heading attribute",
-      "number": "5.5.5"
+      "number": "4.5.5"
     },
     {
       "id": "speed-attribute",
       "level": 4,
       "title": "speed attribute",
-      "number": "5.5.6"
+      "number": "4.5.6"
     },
     {
       "id": "position_error_interface",
       "level": 3,
       "title": "GeolocationPositionError interface",
-      "number": "5.6"
+      "number": "4.6"
     },
     {
       "id": "code-attribute",
       "level": 4,
       "title": "code attribute",
-      "number": "5.6.1"
+      "number": "4.6.1"
     },
     {
       "id": "message-attribute",
       "level": 4,
       "title": "message attribute",
-      "number": "5.6.2"
+      "number": "4.6.2"
     },
     {
       "id": "permissions-policy",
       "level": 2,
       "title": "Permissions policy",
-      "number": "6"
+      "number": "5"
     },
     {
       "id": "usecases",
       "level": 2,
-      "title": "Use-Cases and Requirements",
-      "number": "7"
+      "title": "Scope, use cases, and requirements",
+      "number": "A"
+    },
+    {
+      "id": "scope",
+      "level": 3,
+      "title": "Scope",
+      "number": "A.1"
     },
     {
       "id": "usecases_section",
       "level": 3,
-      "title": "Use-Cases",
-      "number": "7.1"
+      "title": "Use cases",
+      "number": "A.2"
     },
     {
       "id": "usecase_find_poi",
       "level": 4,
       "title": "Find points of interest in the user's area",
-      "number": "7.1.1"
+      "number": "A.2.1"
     },
     {
       "id": "usecase_content_annotation",
       "level": 4,
       "title": "Annotating content with location information",
-      "number": "7.1.2"
+      "number": "A.2.2"
     },
     {
       "id": "usecase_show_position",
       "level": 4,
       "title": "Show the user's position on a map",
-      "number": "7.1.3"
+      "number": "A.2.3"
     },
     {
       "id": "usecase_turn_by_turn",
       "level": 4,
       "title": "Turn-by-turn route navigation",
-      "number": "7.1.4"
+      "number": "A.2.4"
     },
     {
       "id": "usecase_poi_alert",
       "level": 4,
       "title": "Alerts when points of interest are in the user's vicinity",
-      "number": "7.1.5"
+      "number": "A.2.5"
     },
     {
       "id": "usecase_local_info",
       "level": 4,
       "title": "Up-to-date local information",
-      "number": "7.1.6"
+      "number": "A.2.6"
     },
     {
       "id": "usecase_social_networking",
       "level": 4,
       "title": "Location-tagged status updates in social networking applications",
-      "number": "7.1.7"
+      "number": "A.2.7"
     },
     {
       "id": "requirements_section",
       "level": 3,
       "title": "Requirements",
-      "number": "7.2"
+      "number": "A.3"
     },
     {
       "id": "conformance",
       "level": 2,
       "title": "Conformance",
-      "number": "8"
+      "number": "B"
     },
     {
       "id": "idl-index",
       "level": 2,
       "title": "IDL Index",
-      "number": "A"
+      "number": "C"
     },
     {
       "id": "index",
       "level": 2,
       "title": "Index",
-      "number": "B"
+      "number": "D"
     },
     {
       "id": "index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification",
-      "number": "B.1"
+      "number": "D.1"
     },
     {
       "id": "index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference",
-      "number": "B.2"
+      "number": "D.2"
     },
     {
       "id": "acknowledgments",
       "level": 2,
       "title": "Acknowledgments",
-      "number": "C"
+      "number": "E"
     },
     {
       "id": "references",
       "level": 2,
       "title": "References",
-      "number": "D"
+      "number": "F"
     },
     {
       "id": "normative-references",
       "level": 3,
       "title": "Normative references",
-      "number": "D.1"
+      "number": "F.1"
     },
     {
       "id": "informative-references",
       "level": 3,
       "title": "Informative references",
-      "number": "D.2"
+      "number": "F.2"
     }
   ]
 }

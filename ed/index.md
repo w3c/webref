@@ -7369,13 +7369,13 @@ Informative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 
 
-## Geolocation API Specification {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## Geolocation API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
-- Crawled version: 25 March 2021
+- Crawled version: 30 March 2021
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Shortname: geolocation-API
@@ -8603,7 +8603,7 @@ Normative references to this spec from:
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/)
@@ -11094,7 +11094,7 @@ Normative references to this spec from:
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
@@ -11155,7 +11155,7 @@ Normative references to this spec from:
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
@@ -12384,7 +12384,7 @@ Normative references to this spec from:
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Fetch Metadata Request Headers](https://w3c.github.io/webappsec-fetch-metadata/)
-- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
@@ -13551,7 +13551,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
-- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Web OTP API](https://wicg.github.io/web-otp/)
@@ -14136,7 +14136,7 @@ Normative references to this spec from:
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Geolocation API Specification](https://w3c.github.io/geolocation-api/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/)
