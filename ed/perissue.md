@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% March 29, 2021
+% March 30, 2021
 
 387 specifications were crawled in this report.
 
@@ -2922,6 +2922,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Web Application Manifest](https://w3c.github.io/manifest/):
      * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-name)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/):
+     * [`https://html.spec.whatwg.org/#media-element-event-task-source`](https://html.spec.whatwg.org/#media-element-event-task-source)
      * [`https://html.spec.whatwg.org/#concept-current-everything`](https://html.spec.whatwg.org/#concept-current-everything)
      * [`https://html.spec.whatwg.org/#event`](https://html.spec.whatwg.org/#event)
      * [`https://html.spec.whatwg.org/#cors-cross-origin`](https://html.spec.whatwg.org/#cors-cross-origin)
@@ -3257,7 +3258,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1201 problematic external links found in 192 specifications
+=> 1202 problematic external links found in 192 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -3265,7 +3266,6 @@ Links in the body of a specification should be to the same document as that poin
 - [ARIA in HTML](https://w3c.github.io/html-aria/):
      * [`https://html.spec.whatwg.org/#unknown-images`](https://html.spec.whatwg.org/#unknown-images)
      * [`https://html.spec.whatwg.org/#e-mail-state-(type=email)`](https://html.spec.whatwg.org/#e-mail-state-(type=email))
-     * [`https://www.w3.org/TR/svg-aam-1.0/#details-id-66`](https://www.w3.org/TR/svg-aam-1.0/#details-id-66)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/):
      * [`https://www.w3.org/TR/mediacapture-streams/#def-mediadeviceinfo-groupId`](https://www.w3.org/TR/mediacapture-streams/#def-mediadeviceinfo-groupId)
 - [Beacon](https://w3c.github.io/beacon/):
@@ -3678,7 +3678,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://dom.spec.whatwg.org/#ref-for-dom-event-type`](https://dom.spec.whatwg.org/#ref-for-dom-event-type)
      * [`https://www.w3.org/TR/css3-background/#the-background-position`](https://www.w3.org/TR/css3-background/#the-background-position)
      * [`https://www.w3.org/TR/css-text-3/#hyphens-property`](https://www.w3.org/TR/css-text-3/#hyphens-property)
-     * [`https://w3c.github.io/svg-aam/#details-id-69`](https://w3c.github.io/svg-aam/#details-id-69)
      * [`https://www.w3.org/TR/css3-images/#intrinsic-dimensions`](https://www.w3.org/TR/css3-images/#intrinsic-dimensions)
      * [`https://www.w3.org/TR/css3-images/#intrinsic-width`](https://www.w3.org/TR/css3-images/#intrinsic-width)
      * [`https://www.w3.org/TR/css3-images/#intrinsic-height`](https://www.w3.org/TR/css3-images/#intrinsic-height)
@@ -3785,7 +3784,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
      * [`https://heycam.github.io/webidl/#dfn-DOMException`](https://heycam.github.io/webidl/#dfn-DOMException)
 
-=> 459 problematic external links found in 63 specifications
+=> 457 problematic external links found in 63 specifications
 
 
 ## Broken external links
@@ -3798,6 +3797,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/core-aam/#ariaLabel`](https://w3c.github.io/core-aam/#ariaLabel)
      * [`https://w3c.github.io/core-aam/#ariaLabelledBy`](https://w3c.github.io/core-aam/#ariaLabelledBy)
      * [`https://w3c.github.io/core-aam/#ariaDescribedBy`](https://w3c.github.io/core-aam/#ariaDescribedBy)
+- [ARIA in HTML](https://w3c.github.io/html-aria/):
+     * [`https://www.w3.org/TR/svg-aam-1.0/#details-id-66`](https://www.w3.org/TR/svg-aam-1.0/#details-id-66)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/):
      * [`https://html.spec.whatwg.org/#triggered-by-user-activation`](https://html.spec.whatwg.org/#triggered-by-user-activation)
 - [Background Fetch](https://wicg.github.io/background-fetch/):
@@ -4376,6 +4377,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly)
      * [`https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly`](https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly)
      * [`https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target`](https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target)
+     * [`https://w3c.github.io/svg-aam/#details-id-69`](https://w3c.github.io/svg-aam/#details-id-69)
      * [`https://www.w3.org/TR/css3-mediaqueries/#syntax`](https://www.w3.org/TR/css3-mediaqueries/#syntax)
      * [`https://www.w3.org/TR/css-position-3/#vp`](https://www.w3.org/TR/css-position-3/#vp)
      * [`https://drafts.csswg.org/web-animations/#animation-interpolation`](https://drafts.csswg.org/web-animations/#animation-interpolation)
@@ -4519,7 +4521,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 590 problematic external links found in 138 specifications
+=> 592 problematic external links found in 139 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
