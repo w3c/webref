@@ -1268,7 +1268,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/) but does not list it in its references
     * [`https://www.w3.org/TR/permissions-policy/`](https://www.w3.org/TR/permissions-policy/) but does not list it in its references
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but does not list it in its references
-- [Geolocation API Specification](https://w3c.github.io/geolocation-api/) links to [`https://www.w3.org/TR/secure-contexts/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/TR/secure-contexts/) but does not list it in its references
+- [Geolocation API](https://w3c.github.io/geolocation-api/) links to [`https://www.w3.org/TR/secure-contexts/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/TR/secure-contexts/) but does not list it in its references
 - [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/) links to:
     * [`https://w3c.github.io/core-aam/`](https://w3c.github.io/core-aam/) but does not list it in its references
     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but does not list it in its references
