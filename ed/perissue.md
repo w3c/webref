@@ -1835,7 +1835,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/) links to:
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-- [WebCodecs](https://wicg.github.io/web-codecs/) links to [`https://w3c.github.io/media-capabilities/`](https://w3c.github.io/media-capabilities/) but related reference "MEDIA-CAPABILITIES" uses URL [`https://www.w3.org/TR/media-capabilities/`](https://www.w3.org/TR/media-capabilities/)
+- [WebCodecs](https://w3c.github.io/webcodecs/) links to [`https://w3c.github.io/media-capabilities/`](https://w3c.github.io/media-capabilities/) but related reference "MEDIA-CAPABILITIES" uses URL [`https://www.w3.org/TR/media-capabilities/`](https://www.w3.org/TR/media-capabilities/)
 - [WebDriver](https://w3c.github.io/webdriver/) links to:
     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but related reference "wai-aria-1.2" uses URL [`https://www.w3.org/TR/wai-aria-1.2/`](https://www.w3.org/TR/wai-aria-1.2/)
