@@ -5,7 +5,7 @@
       "title": "Web Bluetooth",
       "url": "https://webbluetoothcg.github.io/web-bluetooth/"
     },
-    "fragment": "dictionary AllowedBluetoothDevice {\n  required DOMString deviceId;\n  required boolean mayUseGATT;\n  // An allowedServices of \"all\" means all services are allowed.\n  required (DOMString or sequence<UUID>) allowedServices;\n};",
+    "fragment": "dictionary AllowedBluetoothDevice {\n  required DOMString deviceId;\n  required boolean mayUseGATT;\n  // An allowedServices of \"all\" means all services are allowed.\n  required (DOMString or sequence<UUID>) allowedServices;\n  required sequence<unsigned short> allowedManufacturerData;\n};",
     "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-allowedbluetoothdevice"
   },
   "extended": [],

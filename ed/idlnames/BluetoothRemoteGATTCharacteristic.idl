@@ -10,9 +10,9 @@ interface BluetoothRemoteGATTCharacteristic : EventTarget {
   Promise<sequence<BluetoothRemoteGATTDescriptor>>
     getDescriptors(optional BluetoothDescriptorUUID descriptor);
   Promise<DataView> readValue();
-  Promise<void> writeValue(BufferSource value);
-  Promise<void> writeValueWithResponse(BufferSource value);
-  Promise<void> writeValueWithoutResponse(BufferSource value);
+  Promise<undefined> writeValue(BufferSource value);
+  Promise<undefined> writeValueWithResponse(BufferSource value);
+  Promise<undefined> writeValueWithoutResponse(BufferSource value);
   Promise<BluetoothRemoteGATTCharacteristic> startNotifications();
   Promise<BluetoothRemoteGATTCharacteristic> stopNotifications();
 };
