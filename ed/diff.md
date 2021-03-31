@@ -2,21 +2,12 @@
 % Reffy
 % March 31, 2021
 
-## Web Bluetooth
-
-- Initial URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
-- Unknown WebIDL names used: *DEL* void
-- Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-secure-contexts/
-
-
 ## Web Serial API
 
 - Initial URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
-- Spec could not be rendered: *INS* Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+- Spec could not be rendered: *DEL* Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
     at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
     at runMicrotasks (<anonymous>)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)

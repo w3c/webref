@@ -29,6 +29,12 @@ WorkerNavigator includes NavigatorFonts;
 // Source: Network Information API (https://wicg.github.io/netinfo/)
 WorkerNavigator includes NavigatorNetworkInformation;
 
+// Source: Web Serial API (https://wicg.github.io/serial/)
+[Exposed=DedicatedWorker, SecureContext]
+partial interface WorkerNavigator {
+  [SameObject] readonly attribute Serial serial;
+};
+
 // Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 WorkerNavigator includes NavigatorUA;
 
