@@ -1,11 +1,11 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-03-31T00:53:52.823Z",
+  "date": "2021-03-31T06:47:21.356Z",
   "options": {},
   "stats": {
     "crawled": 387,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -2458,7 +2458,7 @@
         "https://webbluetoothcg.github.io/web-bluetooth/"
       ],
       "crawled": "https://webbluetoothcg.github.io/web-bluetooth/",
-      "date": "1 July 2020",
+      "date": "31 March 2021",
       "links": "links/web-bluetooth.json",
       "refs": "refs/web-bluetooth.json",
       "idl": "idl/web-bluetooth.idl",
@@ -4113,16 +4113,14 @@
       "versions": [
         "https://wicg.github.io/serial/"
       ],
-      "crawled": "https://wicg.github.io/serial/",
-      "date": "19 February 2021",
-      "links": "links/serial.json",
-      "refs": "refs/serial.json",
-      "idl": "idl/serial.idl",
-      "generator": "respec",
-      "dfns": "dfns/serial.json",
-      "headings": "headings/serial.json",
-      "ids": "ids/serial.json",
-      "idlparsed": "idlparsed/serial.json"
+      "crawled": {
+        "url": "https://wicg.github.io/serial/",
+        "repository": "https://github.com/WICG/serial",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 115)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://wicg.github.io/shape-detection-api/",

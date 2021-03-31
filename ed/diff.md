@@ -1,30 +1,30 @@
-% Diff between report from "March 31, 2021" and reference report from "March 30, 2021"
+% Diff between report from "March 31, 2021" and reference report from "March 31, 2021"
 % Reffy
 % March 31, 2021
 
-## Compression Streams
+## Web Bluetooth
 
-- Initial URL: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
+- Initial URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
-- Spec is OK: *INS* false / *DEL* true
+- Editor's Draft: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
+- Unknown WebIDL names used: *DEL* void
+- Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-secure-contexts/
 
 
-## Encoding Standard
+## Web Serial API
 
-- Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
+- Initial URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
-- Spec is OK: *INS* false / *DEL* true
-
-
-## WebTransport
-
-- Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Spec is OK: *INS* false / *DEL* true
-- Invalid WebIDL content found: *INS* true / *DEL* false
-- Obsolete WebIDL constructs found: *DEL* false
+- Editor's Draft: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
+- Spec could not be rendered: *INS* Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 115)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)
 
 

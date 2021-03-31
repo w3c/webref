@@ -5,6 +5,24 @@
 387 specifications were crawled in this report.
 
 
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [Web Serial API]([object Object]): `Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)
+    at async Promise.all (index 115)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
+    at async Promise.all (index 0)`
+
+=> 1 specification found
+
+
 ## Specifications without normative dependencies
 
 - [Atomics.waitAsync](https://tc39.es/proposal-atomics-wait-async/)
@@ -157,7 +175,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [UI Events](https://w3c.github.io/uievents/)
 - `bigint` used in [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
-- `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [SVG Animations](https://svgwg.org/specs/animations/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/), [WebXR Anchors Module](https://immersive-web.github.io/anchors/), [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
+- `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [SVG Animations](https://svgwg.org/specs/animations/), [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/), [WebXR Anchors Module](https://immersive-web.github.io/anchors/), [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 
 => 5 WebIDL names found
 
@@ -1828,7 +1846,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/) links to:
-    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
 - [Web Locks API](https://wicg.github.io/web-locks/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "Service-Workers" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
@@ -1859,7 +1876,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 312 inconsistent references for links found in 175 specifications
+=> 311 inconsistent references for links found in 175 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -2967,9 +2984,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/ServiceWorker/#dfn-service-worker-client-frame-type`](https://w3c.github.io/ServiceWorker/#dfn-service-worker-client-frame-type)
      * [`https://wicg.github.io/background-fetch/#background-fetch`](https://wicg.github.io/background-fetch/#background-fetch)
      * [`https://wicg.github.io/background-sync/spec/#online`](https://wicg.github.io/background-sync/spec/#online)
-- [Web Serial API](https://wicg.github.io/serial/):
-     * [`https://streams.spec.whatwg.org/#desired-size-to-fill-a-streams-internal-queue`](https://streams.spec.whatwg.org/#desired-size-to-fill-a-streams-internal-queue)
-     * [`https://streams.spec.whatwg.org/#internal-queues`](https://streams.spec.whatwg.org/#internal-queues)
 - [Web Share Target API](https://w3c.github.io/web-share-target/):
      * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
      * [`https://www.w3.org/TR/appmanifest/#dfn-extension-point`](https://www.w3.org/TR/appmanifest/#dfn-extension-point)
@@ -3261,7 +3275,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1202 problematic external links found in 192 specifications
+=> 1200 problematic external links found in 191 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4500,9 +4514,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#service-worker-global-scope-interface`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#service-worker-global-scope-interface)
      * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#extendable-event-interface`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#extendable-event-interface)
      * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#dfn-extend-lifetime-promises`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#dfn-extend-lifetime-promises)
-- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/):
-     * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
-     * [`https://w3c.github.io/webappsec-secure-contexts/#non-secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#non-secure-contexts)
 - [Web OTP API](https://wicg.github.io/web-otp/):
      * [`https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors`](https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors)
 - [Web Share Target API](https://w3c.github.io/web-share-target/):
@@ -4556,7 +4567,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 618 problematic external links found in 145 specifications
+=> 616 problematic external links found in 144 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

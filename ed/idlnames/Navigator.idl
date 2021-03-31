@@ -83,12 +83,6 @@ Navigator includes NavigatorFonts;
 // Source: Network Information API (https://wicg.github.io/netinfo/)
 Navigator includes NavigatorNetworkInformation;
 
-// Source: Web Serial API (https://wicg.github.io/serial/)
-[Exposed=Window, SecureContext]
-partial interface Navigator {
-  [SameObject] readonly attribute Serial serial;
-};
-
 // Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 Navigator includes NavigatorUA;
 

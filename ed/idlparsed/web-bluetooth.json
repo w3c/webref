@@ -163,7 +163,7 @@
         "partial": false
       },
       "RequestDeviceOptions": {
-        "fragment": "dictionary RequestDeviceOptions {\n  sequence<BluetoothLEScanFilterInit> filters;\n  sequence<BluetoothServiceUUID> optionalServices = [];\n  boolean acceptAllDevices = false;\n};",
+        "fragment": "dictionary RequestDeviceOptions {\n  sequence<BluetoothLEScanFilterInit> filters;\n  sequence<BluetoothServiceUUID> optionalServices = [];\n  sequence<unsigned short> optionalManufacturerData = [];\n  boolean acceptAllDevices = false;\n};",
         "type": "dictionary",
         "name": "RequestDeviceOptions",
         "inheritance": null,
@@ -210,6 +210,33 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "BluetoothServiceUUID"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "optionalManufacturerData",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned short"
                 }
               ]
             },
@@ -405,7 +432,7 @@
         "partial": false
       },
       "BluetoothPermissionDescriptor": {
-        "fragment": "dictionary BluetoothPermissionDescriptor : PermissionDescriptor {\n  DOMString deviceId;\n  // These match RequestDeviceOptions.\n  sequence<BluetoothLEScanFilterInit> filters;\n  sequence<BluetoothServiceUUID> optionalServices = [];\n  boolean acceptAllDevices = false;\n};",
+        "fragment": "dictionary BluetoothPermissionDescriptor : PermissionDescriptor {\n  DOMString deviceId;\n  // These match RequestDeviceOptions.\n  sequence<BluetoothLEScanFilterInit> filters;\n  sequence<BluetoothServiceUUID> optionalServices = [];\n  sequence<unsigned short> optionalManufacturerData = [];\n  boolean acceptAllDevices = false;\n};",
         "type": "dictionary",
         "name": "BluetoothPermissionDescriptor",
         "inheritance": "PermissionDescriptor",
@@ -478,6 +505,33 @@
           },
           {
             "type": "field",
+            "name": "optionalManufacturerData",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned short"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "acceptAllDevices",
             "extAttrs": [],
             "idlType": {
@@ -499,7 +553,7 @@
         "partial": false
       },
       "AllowedBluetoothDevice": {
-        "fragment": "dictionary AllowedBluetoothDevice {\n  required DOMString deviceId;\n  required boolean mayUseGATT;\n  // An allowedServices of \"all\" means all services are allowed.\n  required (DOMString or sequence<UUID>) allowedServices;\n};",
+        "fragment": "dictionary AllowedBluetoothDevice {\n  required DOMString deviceId;\n  required boolean mayUseGATT;\n  // An allowedServices of \"all\" means all services are allowed.\n  required (DOMString or sequence<UUID>) allowedServices;\n  required sequence<unsigned short> allowedManufacturerData;\n};",
         "type": "dictionary",
         "name": "AllowedBluetoothDevice",
         "inheritance": null,
@@ -569,6 +623,30 @@
                       "idlType": "UUID"
                     }
                   ]
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "allowedManufacturerData",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned short"
                 }
               ]
             },
@@ -766,7 +844,7 @@
         "partial": false
       },
       "BluetoothDevice": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothDevice : EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? name;\n  readonly attribute BluetoothRemoteGATTServer? gatt;\n\n  Promise<void> watchAdvertisements(\n      optional WatchAdvertisementsOptions options = {});\n  readonly attribute boolean watchingAdvertisements;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothDevice : EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? name;\n  readonly attribute BluetoothRemoteGATTServer? gatt;\n\n  Promise<undefined> watchAdvertisements(\n      optional WatchAdvertisementsOptions options = {});\n  readonly attribute boolean watchingAdvertisements;\n};",
         "type": "interface",
         "name": "BluetoothDevice",
         "inheritance": "EventTarget",
@@ -832,7 +910,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -1392,7 +1470,7 @@
         "partial": false
       },
       "BluetoothRemoteGATTServer": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTServer {\n  [SameObject]\n  readonly attribute BluetoothDevice device;\n  readonly attribute boolean connected;\n  Promise<BluetoothRemoteGATTServer> connect();\n  void disconnect();\n  Promise<BluetoothRemoteGATTService> getPrimaryService(BluetoothServiceUUID service);\n  Promise<sequence<BluetoothRemoteGATTService>>\n    getPrimaryServices(optional BluetoothServiceUUID service);\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTServer {\n  [SameObject]\n  readonly attribute BluetoothDevice device;\n  readonly attribute boolean connected;\n  Promise<BluetoothRemoteGATTServer> connect();\n  undefined disconnect();\n  Promise<BluetoothRemoteGATTService> getPrimaryService(BluetoothServiceUUID service);\n  Promise<sequence<BluetoothRemoteGATTService>>\n    getPrimaryServices(optional BluetoothServiceUUID service);\n};",
         "type": "interface",
         "name": "BluetoothRemoteGATTServer",
         "inheritance": null,
@@ -1467,7 +1545,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -1845,7 +1923,7 @@
         "partial": false
       },
       "BluetoothRemoteGATTCharacteristic": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTCharacteristic : EventTarget {\n  [SameObject]\n  readonly attribute BluetoothRemoteGATTService service;\n  readonly attribute UUID uuid;\n  readonly attribute BluetoothCharacteristicProperties properties;\n  readonly attribute DataView? value;\n  Promise<BluetoothRemoteGATTDescriptor> getDescriptor(BluetoothDescriptorUUID descriptor);\n  Promise<sequence<BluetoothRemoteGATTDescriptor>>\n    getDescriptors(optional BluetoothDescriptorUUID descriptor);\n  Promise<DataView> readValue();\n  Promise<void> writeValue(BufferSource value);\n  Promise<void> writeValueWithResponse(BufferSource value);\n  Promise<void> writeValueWithoutResponse(BufferSource value);\n  Promise<BluetoothRemoteGATTCharacteristic> startNotifications();\n  Promise<BluetoothRemoteGATTCharacteristic> stopNotifications();\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTCharacteristic : EventTarget {\n  [SameObject]\n  readonly attribute BluetoothRemoteGATTService service;\n  readonly attribute UUID uuid;\n  readonly attribute BluetoothCharacteristicProperties properties;\n  readonly attribute DataView? value;\n  Promise<BluetoothRemoteGATTDescriptor> getDescriptor(BluetoothDescriptorUUID descriptor);\n  Promise<sequence<BluetoothRemoteGATTDescriptor>>\n    getDescriptors(optional BluetoothDescriptorUUID descriptor);\n  Promise<DataView> readValue();\n  Promise<undefined> writeValue(BufferSource value);\n  Promise<undefined> writeValueWithResponse(BufferSource value);\n  Promise<undefined> writeValueWithoutResponse(BufferSource value);\n  Promise<BluetoothRemoteGATTCharacteristic> startNotifications();\n  Promise<BluetoothRemoteGATTCharacteristic> stopNotifications();\n};",
         "type": "interface",
         "name": "BluetoothRemoteGATTCharacteristic",
         "inheritance": "EventTarget",
@@ -2048,7 +2126,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -2089,7 +2167,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -2130,7 +2208,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -2385,7 +2463,7 @@
         "partial": false
       },
       "BluetoothRemoteGATTDescriptor": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTDescriptor {\n  [SameObject]\n  readonly attribute BluetoothRemoteGATTCharacteristic characteristic;\n  readonly attribute UUID uuid;\n  readonly attribute DataView? value;\n  Promise<DataView> readValue();\n  Promise<void> writeValue(BufferSource value);\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothRemoteGATTDescriptor {\n  [SameObject]\n  readonly attribute BluetoothRemoteGATTCharacteristic characteristic;\n  readonly attribute UUID uuid;\n  readonly attribute DataView? value;\n  Promise<DataView> readValue();\n  Promise<undefined> writeValue(BufferSource value);\n};",
         "type": "interface",
         "name": "BluetoothRemoteGATTDescriptor",
         "inheritance": null,
@@ -2482,7 +2560,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -3157,7 +3235,6 @@
       "BluetoothDevice": [
         "EventTarget",
         "BluetoothRemoteGATTServer",
-        "void",
         "WatchAdvertisementsOptions",
         "BluetoothDeviceEventHandlers",
         "CharacteristicEventHandlers",
@@ -3187,7 +3264,6 @@
       "BluetoothRemoteGATTServer": [
         "BluetoothDevice",
         "BluetoothRemoteGATTServer",
-        "void",
         "BluetoothRemoteGATTService",
         "BluetoothServiceUUID"
       ],
@@ -3209,15 +3285,13 @@
         "BluetoothCharacteristicProperties",
         "BluetoothRemoteGATTDescriptor",
         "BluetoothDescriptorUUID",
-        "void",
         "BluetoothRemoteGATTCharacteristic",
         "CharacteristicEventHandlers"
       ],
       "BluetoothCharacteristicProperties": [],
       "BluetoothRemoteGATTDescriptor": [
         "BluetoothRemoteGATTCharacteristic",
-        "UUID",
-        "void"
+        "UUID"
       ],
       "CharacteristicEventHandlers": [
         "EventHandler"
@@ -3242,7 +3316,6 @@
       "PermissionStatus",
       "Event",
       "EventInit",
-      "void",
       "AbortSignal",
       "Navigator"
     ],
