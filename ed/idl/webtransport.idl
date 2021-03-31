@@ -75,8 +75,7 @@ dictionary WebTransportStats {
 };
 
 [ Exposed=(Window,Worker) ]
-interface mixin OutgoingStream {
-  readonly attribute WritableStream writable;
+interface mixin OutgoingStream : WritableStream /* of Uint8Array */ {
   readonly attribute Promise<StreamAbortInfo> writingAborted;
   undefined abortWriting(optional StreamAbortInfo abortInfo = {});
 };
@@ -86,18 +85,16 @@ dictionary StreamAbortInfo {
 };
 
 [ Exposed=(Window,Worker) ]
-interface mixin IncomingStream {
-  /* a ReadableStream of Uint8Array */
-  readonly attribute ReadableStream readable;
+interface mixin IncomingStream : ReadableStream /* of Uint8Array */ {
   readonly attribute Promise<StreamAbortInfo> readingAborted;
   undefined abortReading(optional StreamAbortInfo abortInfo = {});
 };
 
 [ Exposed=(Window,Worker) ]
 interface BidirectionalStream {
+  readonly attribute ReceiveStream readable;
+  readonly attribute SendStream writable;
 };
-BidirectionalStream includes OutgoingStream;
-BidirectionalStream includes IncomingStream;
 
 [ Exposed=(Window,Worker) ]
 interface SendStream {

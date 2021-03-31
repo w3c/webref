@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-03-30T18:55:17.887Z",
+  "date": "2021-03-31T00:53:52.823Z",
   "stats": {
     "crawled": 387,
     "errors": 0,
@@ -1549,10 +1549,28 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://streams.spec.whatwg.org/",
+              "title": "Streams Standard",
+              "crawled": "https://streams.spec.whatwg.org/"
+            }
+          ],
           "informative": []
         },
-        "ok": true
+        "xrefs": {
+          "notExported": [],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://streams.spec.whatwg.org/#transformstream-create",
+            "https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm",
+            "https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm"
+          ],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
+        },
+        "ok": false
       }
     },
     {
@@ -5747,7 +5765,7 @@
     {
       "title": "CSS Color Module Level 4",
       "shortname": "css-color-4",
-      "date": "17 March 2021",
+      "date": "30 March 2021",
       "url": "https://www.w3.org/TR/css-color-4/",
       "release": {
         "url": "https://www.w3.org/TR/css-color-4/",
@@ -6020,7 +6038,7 @@
     {
       "title": "CSS Color Module Level 5",
       "shortname": "css-color-5",
-      "date": "24 March 2021",
+      "date": "30 March 2021",
       "url": "https://www.w3.org/TR/css-color-5/",
       "release": {
         "url": "https://www.w3.org/TR/css-color-5/",
@@ -6801,7 +6819,7 @@
     {
       "title": "CSS Display Module Level 3",
       "shortname": "css-display-3",
-      "date": "8 February 2021",
+      "date": "30 March 2021",
       "url": "https://www.w3.org/TR/css-display-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-display-3/",
@@ -18898,12 +18916,16 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [],
-          "brokenLinks": [],
+          "brokenLinks": [
+            "https://streams.spec.whatwg.org/#transformstream-create",
+            "https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm",
+            "https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm"
+          ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
         },
-        "ok": true
+        "ok": false
       }
     },
     {
@@ -19640,7 +19662,13 @@
             "https://w3c.github.io/FileAPI/#readOperation"
           ],
           "notDfn": [],
-          "brokenLinks": [],
+          "brokenLinks": [
+            "https://streams.spec.whatwg.org/#readablestream-create",
+            "https://streams.spec.whatwg.org/#readablestream-create-pullalgorithm",
+            "https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm",
+            "https://streams.spec.whatwg.org/#readablestream-create-highwatermark",
+            "https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm"
+          ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -34476,6 +34504,11 @@
               "crawled": "https://w3c.github.io/webrtc-pc/"
             },
             {
+              "url": "https://w3c.github.io/webtransport/",
+              "title": "WebTransport",
+              "crawled": "https://w3c.github.io/webtransport/"
+            },
+            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://w3c.github.io/webvtt/"
@@ -35247,7 +35280,10 @@
             "https://html.spec.whatwg.org/#cors-settings-attribute"
           ],
           "notDfn": [],
-          "brokenLinks": [],
+          "brokenLinks": [
+            "https://streams.spec.whatwg.org/#readablestream-create",
+            "https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm"
+          ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -42609,6 +42645,11 @@
             "https://w3c.github.io/push-api/#dfn-push",
             "https://w3c.github.io/push-api/#dfn-fire-the-push-event",
             "https://www.w3.org/TR/page-visibility/#VisibilityState",
+            "https://streams.spec.whatwg.org/#readablestream-create",
+            "https://streams.spec.whatwg.org/#readablestream-create-pullalgorithm",
+            "https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm",
+            "https://streams.spec.whatwg.org/#readablestream-create-highwatermark",
+            "https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm",
             "https://wicg.github.io/BackgroundSync/spec/#sync"
           ],
           "evolvingLinks": [],
@@ -42741,7 +42782,7 @@
     {
       "title": "Streams Standard",
       "shortname": "streams",
-      "date": "23 March 2021",
+      "date": "30 March 2021",
       "url": "https://streams.spec.whatwg.org/",
       "nightly": {
         "url": "https://streams.spec.whatwg.org/",
@@ -53302,6 +53343,20 @@
           "normative": [],
           "informative": []
         },
+        "xrefs": {
+          "notExported": [],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://streams.spec.whatwg.org/#readablestream-create",
+            "https://streams.spec.whatwg.org/#writablestream-create",
+            "https://streams.spec.whatwg.org/#writablestream-create-writealgorithm",
+            "https://streams.spec.whatwg.org/#transformstream-create",
+            "https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm"
+          ],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
+        },
         "ok": false
       }
     },
@@ -53352,7 +53407,7 @@
     {
       "title": "WebTransport",
       "shortname": "webtransport",
-      "date": "16 March 2021",
+      "date": "30 March 2021",
       "url": "https://w3c.github.io/webtransport/",
       "nightly": {
         "url": "https://w3c.github.io/webtransport/",
@@ -53364,8 +53419,7 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
+        "hasInvalidIdl": true,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -53380,7 +53434,19 @@
           "normative": [],
           "informative": []
         },
-        "ok": true
+        "xrefs": {
+          "notExported": [],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://streams.spec.whatwg.org/#writablestream-create",
+            "https://streams.spec.whatwg.org/#writablestream-create-writealgorithm",
+            "https://streams.spec.whatwg.org/#readablestream-create"
+          ],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
+        },
+        "ok": false
       }
     },
     {

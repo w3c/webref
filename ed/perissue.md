@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% March 30, 2021
+% March 31, 2021
 
 387 specifications were crawled in this report.
 
@@ -73,8 +73,11 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## List of specifications with invalid WebIDL content
 
+- [WebTransport](https://w3c.github.io/webtransport/)
 
-=> 0 specification found
+=> 1 specification found
+
+WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
 
 ## List of specifications with obsolete WebIDL constructs
@@ -3816,6 +3819,10 @@ Links in the body of a specification should be to the same document as that poin
 - [Compatibility Standard](https://compat.spec.whatwg.org/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-transitions/#animtype-color`](https://drafts.csswg.org/css-transitions/#animtype-color)
+- [Compression Streams](https://wicg.github.io/compression/):
+     * [`https://streams.spec.whatwg.org/#transformstream-create`](https://streams.spec.whatwg.org/#transformstream-create)
+     * [`https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm)
+     * [`https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/):
      * [`https://fetch.spec.whatwg.org/#concept-request-target-browsing-context`](https://fetch.spec.whatwg.org/#concept-request-target-browsing-context)
      * [`https://w3c.github.io/reporting/#group`](https://w3c.github.io/reporting/#group)
@@ -3971,12 +3978,22 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/DOM-Parsing/#dfn-createcontextualfragment-fragment`](https://w3c.github.io/DOM-Parsing/#dfn-createcontextualfragment-fragment)
 - [Early detection of input events](https://wicg.github.io/is-input-pending/):
      * [`https://heycam.github.io/webidl/#idl-Exposed`](https://heycam.github.io/webidl/#idl-Exposed)
+- [Encoding Standard](https://encoding.spec.whatwg.org/):
+     * [`https://streams.spec.whatwg.org/#transformstream-create`](https://streams.spec.whatwg.org/#transformstream-create)
+     * [`https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm)
+     * [`https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/):
      * [`https://heycam.github.io/webidl/#dfn-present`](https://heycam.github.io/webidl/#dfn-present)
      * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 - [Event Timing API](https://wicg.github.io/event-timing/):
      * [`https://w3c.github.io/hr-time/#dfn-performance`](https://w3c.github.io/hr-time/#dfn-performance)
      * [`https://html.spec.whatwg.org/#event-dnd-dragexit`](https://html.spec.whatwg.org/#event-dnd-dragexit)
+- [Fetch Standard](https://fetch.spec.whatwg.org/):
+     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
+     * [`https://streams.spec.whatwg.org/#readablestream-create-pullalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-pullalgorithm)
+     * [`https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm)
+     * [`https://streams.spec.whatwg.org/#readablestream-create-highwatermark`](https://streams.spec.whatwg.org/#readablestream-create-highwatermark)
+     * [`https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm`](https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm)
 - [File API](https://w3c.github.io/FileAPI/):
      * [`https://fetch.spec.whatwg.org/#concept-construct-readablestream`](https://fetch.spec.whatwg.org/#concept-construct-readablestream)
      * [`https://fetch.spec.whatwg.org/#concept-error-readablestream`](https://fetch.spec.whatwg.org/#concept-error-readablestream)
@@ -4232,6 +4249,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/uievents-code/#code-quote`](https://www.w3.org/TR/uievents-code/#code-quote)
 - [Layout Instability API](https://wicg.github.io/layout-instability/):
      * [`https://www.w3.org/TR/css-values-4/#pixel-unit`](https://www.w3.org/TR/css-values-4/#pixel-unit)
+- [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html):
+     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
+     * [`https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/):
      * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
      * [`https://www.w3.org/TR/css-color-3/#foreground`](https://www.w3.org/TR/css-color-3/#foreground)
@@ -4406,6 +4426,11 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/push-api/#dfn-push`](https://w3c.github.io/push-api/#dfn-push)
      * [`https://w3c.github.io/push-api/#dfn-fire-the-push-event`](https://w3c.github.io/push-api/#dfn-fire-the-push-event)
      * [`https://www.w3.org/TR/page-visibility/#VisibilityState`](https://www.w3.org/TR/page-visibility/#VisibilityState)
+     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
+     * [`https://streams.spec.whatwg.org/#readablestream-create-pullalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-pullalgorithm)
+     * [`https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm)
+     * [`https://streams.spec.whatwg.org/#readablestream-create-highwatermark`](https://streams.spec.whatwg.org/#readablestream-create-highwatermark)
+     * [`https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm`](https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm)
      * [`https://wicg.github.io/BackgroundSync/spec/#sync`](https://wicg.github.io/BackgroundSync/spec/#sync)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/):
      * [`https://w3c.github.io/core-aam/#exclude_elements2`](https://w3c.github.io/core-aam/#exclude_elements2)
@@ -4505,6 +4530,16 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webdriver/#dfn-window-handle`](https://w3c.github.io/webdriver/#dfn-window-handle)
 - [WebGPU](https://gpuweb.github.io/gpuweb/):
      * [`https://html.spec.whatwg.org/#cross-origin-isolated`](https://html.spec.whatwg.org/#cross-origin-isolated)
+- [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/):
+     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
+     * [`https://streams.spec.whatwg.org/#writablestream-create`](https://streams.spec.whatwg.org/#writablestream-create)
+     * [`https://streams.spec.whatwg.org/#writablestream-create-writealgorithm`](https://streams.spec.whatwg.org/#writablestream-create-writealgorithm)
+     * [`https://streams.spec.whatwg.org/#transformstream-create`](https://streams.spec.whatwg.org/#transformstream-create)
+     * [`https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm)
+- [WebTransport](https://w3c.github.io/webtransport/):
+     * [`https://streams.spec.whatwg.org/#writablestream-create`](https://streams.spec.whatwg.org/#writablestream-create)
+     * [`https://streams.spec.whatwg.org/#writablestream-create-writealgorithm`](https://streams.spec.whatwg.org/#writablestream-create-writealgorithm)
+     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/):
      * [`https://html.spec.whatwg.org/#skip-whitespace`](https://html.spec.whatwg.org/#skip-whitespace)
      * [`https://html.spec.whatwg.org/#rules-for-extracting-the-chapter-title`](https://html.spec.whatwg.org/#rules-for-extracting-the-chapter-title)
@@ -4521,7 +4556,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 592 problematic external links found in 139 specifications
+=> 618 problematic external links found in 145 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
