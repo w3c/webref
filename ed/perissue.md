@@ -3987,12 +3987,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Event Timing API](https://wicg.github.io/event-timing/):
      * [`https://w3c.github.io/hr-time/#dfn-performance`](https://w3c.github.io/hr-time/#dfn-performance)
      * [`https://html.spec.whatwg.org/#event-dnd-dragexit`](https://html.spec.whatwg.org/#event-dnd-dragexit)
-- [Fetch Standard](https://fetch.spec.whatwg.org/):
-     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-pullalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-pullalgorithm)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-highwatermark`](https://streams.spec.whatwg.org/#readablestream-create-highwatermark)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm`](https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm)
 - [File API](https://w3c.github.io/FileAPI/):
      * [`https://fetch.spec.whatwg.org/#concept-construct-readablestream`](https://fetch.spec.whatwg.org/#concept-construct-readablestream)
      * [`https://fetch.spec.whatwg.org/#concept-error-readablestream`](https://fetch.spec.whatwg.org/#concept-error-readablestream)
@@ -4552,7 +4546,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 616 problematic external links found in 144 specifications
+=> 611 problematic external links found in 143 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
