@@ -157,7 +157,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [UI Events](https://w3c.github.io/uievents/)
 - `bigint` used in [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
-- `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [SVG Animations](https://svgwg.org/specs/animations/), [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/), [WebXR Anchors Module](https://immersive-web.github.io/anchors/), [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
+- `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/), [Payment Handler API](https://w3c.github.io/payment-handler/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [SVG Animations](https://svgwg.org/specs/animations/), [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
 => 5 WebIDL names found
 
@@ -1921,6 +1921,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#lowercase-ascii-letters`](https://html.spec.whatwg.org/#lowercase-ascii-letters)
      * [`https://html.spec.whatwg.org/#sectioning-root`](https://html.spec.whatwg.org/#sectioning-root)
      * [`https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name`](https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/):
+     * [`https://html.spec.whatwg.org/#allowed-to-play`](https://html.spec.whatwg.org/#allowed-to-play)
+     * [`https://www.w3.org/TR/webaudio/#allowed-to-start`](https://www.w3.org/TR/webaudio/#allowed-to-start)
 - [Background Fetch](https://wicg.github.io/background-fetch/):
      * [`https://w3c.github.io/image-resource/#dfn-src`](https://w3c.github.io/image-resource/#dfn-src)
      * [`https://w3c.github.io/webdriver/#dfn-extension-command`](https://w3c.github.io/webdriver/#dfn-extension-command)
@@ -3256,7 +3259,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1199 problematic external links found in 191 specifications
+=> 1201 problematic external links found in 192 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4224,8 +4227,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/core-aam/#ariaDescribedBy`](https://w3c.github.io/core-aam/#ariaDescribedBy)
 - [ARIA in HTML](https://w3c.github.io/html-aria/):
      * [`https://www.w3.org/TR/svg-aam-1.0/#details-id-66`](https://www.w3.org/TR/svg-aam-1.0/#details-id-66)
-- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/):
-     * [`https://html.spec.whatwg.org/#triggered-by-user-activation`](https://html.spec.whatwg.org/#triggered-by-user-activation)
 - [Background Fetch](https://wicg.github.io/background-fetch/):
      * [`https://fetch.spec.whatwg.org/#concept-body-transmitted`](https://fetch.spec.whatwg.org/#concept-body-transmitted)
      * [`https://fetch.spec.whatwg.org/#concept-body-wait`](https://fetch.spec.whatwg.org/#concept-body-wait)
@@ -4965,7 +4966,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 608 problematic external links found in 142 specifications
+=> 607 problematic external links found in 141 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

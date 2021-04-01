@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "Keyboard": {
-        "fragment": "[SecureContext, Exposed=Window] interface Keyboard {\n  Promise<void> lock(optional sequence<DOMString> keyCodes = []);\n  void unlock();\n};",
+        "fragment": "[SecureContext, Exposed=Window] interface Keyboard {\n  Promise<undefined> lock(optional sequence<DOMString> keyCodes = []);\n  undefined unlock();\n};",
         "type": "interface",
         "name": "Keyboard",
         "inheritance": null,
@@ -35,7 +35,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -81,7 +81,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -160,13 +160,10 @@
       "Navigator": [
         "Keyboard"
       ],
-      "Keyboard": [
-        "void"
-      ]
+      "Keyboard": []
     },
     "externalDependencies": [
-      "Navigator",
-      "void"
+      "Navigator"
     ],
     "hasObsoleteIdl": false
   }
