@@ -20,11 +20,11 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "geolocation-attribute",
-        "title": "geolocation attribute",
-        "number": "4.1.1"
+        "id": "navigator_interface",
+        "title": "Extensions to the Navigator interface",
+        "number": "4"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
       "id": "dom-geolocation",
@@ -34,15 +34,17 @@
       ],
       "localLinkingText": [],
       "type": "interface",
-      "for": [],
+      "for": [
+        "Geolocation"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "geolocation_interface",
-        "title": "Geolocation interface",
-        "number": "4.2"
+        "title": "Geolocation interface and callbacks",
+        "number": "5"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
       "id": "dom-geolocation-getcurrentposition",
@@ -66,8 +68,8 @@
       "informative": false,
       "heading": {
         "id": "geolocation_interface",
-        "title": "Geolocation interface",
-        "number": "4.2"
+        "title": "Geolocation interface and callbacks",
+        "number": "5"
       },
       "definedIn": "pre"
     },
@@ -86,8 +88,8 @@
       "informative": false,
       "heading": {
         "id": "geolocation_interface",
-        "title": "Geolocation interface",
-        "number": "4.2"
+        "title": "Geolocation interface and callbacks",
+        "number": "5"
       },
       "definedIn": "pre"
     },
@@ -106,10 +108,50 @@
       "informative": false,
       "heading": {
         "id": "geolocation_interface",
-        "title": "Geolocation interface",
-        "number": "4.2"
+        "title": "Geolocation interface and callbacks",
+        "number": "5"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dfn-cache",
+      "href": "https://w3c.github.io/geolocation-api/#dfn-cache",
+      "linkingText": [
+        "[[cache]]"
+      ],
+      "localLinkingText": [],
+      "type": "idl",
+      "for": [
+        "Geolocation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "title": "Internal Slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-watchtasks",
+      "href": "https://w3c.github.io/geolocation-api/#dfn-watchtasks",
+      "linkingText": [
+        "[[watchTasks]]"
+      ],
+      "localLinkingText": [],
+      "type": "idl",
+      "for": [
+        "Geolocation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "title": "Internal Slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
     },
     {
       "id": "dom-geolocation-watchposition",
@@ -134,100 +176,9 @@
       "heading": {
         "id": "watchposition-method",
         "title": "watchPosition() method",
-        "number": "4.2.2"
+        "number": "5.3"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dfn-watch-process",
-      "href": "https://w3c.github.io/geolocation-api/#dfn-watch-process",
-      "linkingText": [
-        "watch process"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "watchposition-method",
-        "title": "watchPosition() method",
-        "number": "4.2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-acquisition-steps",
-      "href": "https://w3c.github.io/geolocation-api/#dfn-acquisition-steps",
-      "linkingText": [
-        "acquisition steps"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "watchposition-method",
-        "title": "watchPosition() method",
-        "number": "4.2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-new-position-differs-significantly-from-the-previous-position",
-      "href": "https://w3c.github.io/geolocation-api/#dfn-new-position-differs-significantly-from-the-previous-position",
-      "linkingText": [
-        "new position differs significantly from the previous position"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "watchposition-method",
-        "title": "watchPosition() method",
-        "number": "4.2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-wait-for-a-system-event-to-be-received",
-      "href": "https://w3c.github.io/geolocation-api/#dfn-wait-for-a-system-event-to-be-received",
-      "linkingText": [
-        "Wait for a system event to be received"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "watchposition-method",
-        "title": "watchPosition() method",
-        "number": "4.2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-rate-limitation",
-      "href": "https://w3c.github.io/geolocation-api/#dfn-rate-limitation",
-      "linkingText": [
-        "rate limitation",
-        "rate limit"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "watchposition-method",
-        "title": "watchPosition() method",
-        "number": "4.2.2"
-      },
-      "definedIn": "note"
     },
     {
       "id": "dom-geolocation-clearwatch",
@@ -250,15 +201,15 @@
       "heading": {
         "id": "clearwatch-method",
         "title": "clearWatch() method",
-        "number": "4.2.3"
+        "number": "5.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-watchid",
-      "href": "https://w3c.github.io/geolocation-api/#dfn-watchid",
+      "id": "dfn-request-position",
+      "href": "https://w3c.github.io/geolocation-api/#dfn-request-position",
       "linkingText": [
-        "watchId"
+        "Request position"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -266,9 +217,27 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "clearwatch-method",
-        "title": "clearWatch() method",
-        "number": "4.2.3"
+        "id": "request-position",
+        "title": "Request position",
+        "number": "5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-do-security-and-permissions-checks",
+      "href": "https://w3c.github.io/geolocation-api/#dfn-do-security-and-permissions-checks",
+      "linkingText": [
+        "do security and permissions checks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "security-and-permissions-checks",
+        "title": "Security and permissions checks",
+        "number": "5.6"
       },
       "definedIn": "prose"
     },
@@ -284,81 +253,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "callback-with-error",
-        "title": "Callback with error",
-        "number": "4.2.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-positioncallback",
-      "href": "https://w3c.github.io/geolocation-api/#dfn-positioncallback",
-      "linkingText": [
-        "PositionCallBack"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "positioncallback-callback",
-        "title": "PositionCallBack callback",
-        "number": "4.2.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-successcallback",
-      "href": "https://w3c.github.io/geolocation-api/#dfn-successcallback",
-      "linkingText": [
-        "successCallback"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "positioncallback-callback",
-        "title": "PositionCallBack callback",
-        "number": "4.2.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-positionerrorcallback",
-      "href": "https://w3c.github.io/geolocation-api/#dfn-positionerrorcallback",
-      "linkingText": [
-        "PositionErrorCallBack"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "positionerrorcallback-callback",
-        "title": "PositionErrorCallBack callback",
-        "number": "4.2.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-errorcallback",
-      "href": "https://w3c.github.io/geolocation-api/#dfn-errorcallback",
-      "linkingText": [
-        "errorCallback"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "positionerrorcallback-callback",
-        "title": "PositionErrorCallBack callback",
-        "number": "4.2.6"
+        "id": "call-back-with-error",
+        "title": "Call back with error",
+        "number": "5.7"
       },
       "definedIn": "prose"
     },
@@ -376,7 +273,7 @@
       "heading": {
         "id": "position_options_interface",
         "title": "PositionOptions dictionary",
-        "number": "4.3"
+        "number": "6"
       },
       "definedIn": "heading"
     },
@@ -396,7 +293,7 @@
       "heading": {
         "id": "enablehighaccuracy-member",
         "title": "enableHighAccuracy member",
-        "number": "4.3.1"
+        "number": "6.1"
       },
       "definedIn": "prose"
     },
@@ -416,7 +313,7 @@
       "heading": {
         "id": "timeout-member",
         "title": "timeout member",
-        "number": "4.3.2"
+        "number": "6.2"
       },
       "definedIn": "prose"
     },
@@ -436,7 +333,7 @@
       "heading": {
         "id": "maximumage-member",
         "title": "maximumAge member",
-        "number": "4.3.3"
+        "number": "6.3"
       },
       "definedIn": "prose"
     },
@@ -448,15 +345,17 @@
       ],
       "localLinkingText": [],
       "type": "interface",
-      "for": [],
+      "for": [
+        "GeolocationPosition"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "position_interface",
         "title": "GeolocationPosition interface",
-        "number": "4.4"
+        "number": "7"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
       "id": "dom-geolocationposition-coords",
@@ -476,7 +375,7 @@
       "heading": {
         "id": "coords-attribute",
         "title": "coords attribute",
-        "number": "4.4.1"
+        "number": "7.1"
       },
       "definedIn": "prose"
     },
@@ -498,7 +397,7 @@
       "heading": {
         "id": "timestamp-attribute",
         "title": "timestamp attribute",
-        "number": "4.4.2"
+        "number": "7.2"
       },
       "definedIn": "prose"
     },
@@ -516,7 +415,7 @@
       "heading": {
         "id": "coordinates_interface",
         "title": "GeolocationCoordinates interface",
-        "number": "4.5"
+        "number": "8"
       },
       "definedIn": "heading"
     },
@@ -536,9 +435,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "latitude-attribute",
-        "title": "latitude attribute",
-        "number": "4.5.1"
+        "id": "latitude-and-longitude-and-accuracy-attributes",
+        "title": "latitude and longitude, and accuracy attributes",
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -558,31 +457,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "latitude-attribute",
-        "title": "latitude attribute",
-        "number": "4.5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-geolocationcoordinates-altitude",
-      "href": "https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-altitude",
-      "linkingText": [
-        "altitude"
-      ],
-      "localLinkingText": [
-        "GeolocationCoordinates.altitude"
-      ],
-      "type": "attribute",
-      "for": [
-        "GeolocationCoordinates"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "altitude-attribute",
-        "title": "altitude attribute",
-        "number": "4.5.2"
+        "id": "latitude-and-longitude-and-accuracy-attributes",
+        "title": "latitude and longitude, and accuracy attributes",
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -602,9 +479,31 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "accuracy-attribute",
-        "title": "accuracy attribute",
-        "number": "4.5.3"
+        "id": "latitude-and-longitude-and-accuracy-attributes",
+        "title": "latitude and longitude, and accuracy attributes",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-geolocationcoordinates-altitude",
+      "href": "https://w3c.github.io/geolocation-api/#dom-geolocationcoordinates-altitude",
+      "linkingText": [
+        "altitude"
+      ],
+      "localLinkingText": [
+        "GeolocationCoordinates.altitude"
+      ],
+      "type": "attribute",
+      "for": [
+        "GeolocationCoordinates"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "altitude-and-altitudeaccuracy-attributes",
+        "title": "altitude and altitudeAccuracy attributes",
+        "number": "8.2"
       },
       "definedIn": "prose"
     },
@@ -624,9 +523,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "altitudeaccuracy-attribute",
-        "title": "altitudeAccuracy attribute",
-        "number": "4.5.4"
+        "id": "altitude-and-altitudeaccuracy-attributes",
+        "title": "altitude and altitudeAccuracy attributes",
+        "number": "8.2"
       },
       "definedIn": "prose"
     },
@@ -648,7 +547,7 @@
       "heading": {
         "id": "heading-attribute",
         "title": "heading attribute",
-        "number": "4.5.5"
+        "number": "8.3"
       },
       "definedIn": "prose"
     },
@@ -670,7 +569,25 @@
       "heading": {
         "id": "speed-attribute",
         "title": "speed attribute",
-        "number": "4.5.6"
+        "number": "8.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-a-new-geolocationposition",
+      "href": "https://w3c.github.io/geolocation-api/#dfn-a-new-geolocationposition",
+      "linkingText": [
+        "A new GeolocationPosition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constructing-a-geolocationposition",
+        "title": "Constructing a GeolocationPosition",
+        "number": "8.5"
       },
       "definedIn": "prose"
     },
@@ -688,9 +605,69 @@
       "heading": {
         "id": "position_error_interface",
         "title": "GeolocationPositionError interface",
-        "number": "4.6"
+        "number": "9"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "dom-geolocationpositionerror-permission_denied",
+      "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-permission_denied",
+      "linkingText": [
+        "PERMISSION_DENIED"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "GeolocationPositionError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "constants",
+        "title": "Constants",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-geolocationpositionerror-position_unavailable",
+      "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-position_unavailable",
+      "linkingText": [
+        "POSITION_UNAVAILABLE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "GeolocationPositionError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "constants",
+        "title": "Constants",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-geolocationpositionerror-timeout",
+      "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-timeout",
+      "linkingText": [
+        "TIMEOUT"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "GeolocationPositionError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "constants",
+        "title": "Constants",
+        "number": "9.1"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dom-geolocationpositionerror-code",
@@ -710,69 +687,9 @@
       "heading": {
         "id": "code-attribute",
         "title": "code attribute",
-        "number": "4.6.1"
+        "number": "9.2"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dom-geolocationpositionerror-permission_denied",
-      "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-permission_denied",
-      "linkingText": [
-        "PERMISSION_DENIED"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "GeolocationPositionError"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "code-attribute",
-        "title": "code attribute",
-        "number": "4.6.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-geolocationpositionerror-position_unavailable",
-      "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-position_unavailable",
-      "linkingText": [
-        "POSITION_UNAVAILABLE"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "GeolocationPositionError"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "code-attribute",
-        "title": "code attribute",
-        "number": "4.6.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-geolocationpositionerror-timeout",
-      "href": "https://w3c.github.io/geolocation-api/#dom-geolocationpositionerror-timeout",
-      "linkingText": [
-        "TIMEOUT"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "GeolocationPositionError"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "code-attribute",
-        "title": "code attribute",
-        "number": "4.6.1"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "dom-geolocationpositionerror-message",
@@ -792,7 +709,7 @@
       "heading": {
         "id": "message-attribute",
         "title": "message attribute",
-        "number": "4.6.2"
+        "number": "9.3"
       },
       "definedIn": "prose"
     }

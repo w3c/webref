@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "Geolocation": {
-        "fragment": "[Exposed=Window]\ninterface Geolocation {\n  undefined getCurrentPosition(PositionCallback successCallback,\n                          optional PositionErrorCallback? errorCallback = null,\n                          optional PositionOptions options = {});\n\n  long watchPosition(PositionCallback successCallback,\n                      optional PositionErrorCallback? errorCallback = null,\n                      optional PositionOptions options = {});\n\n  undefined clearWatch(long watchId);\n};",
+        "fragment": "[Exposed=Window]\ninterface Geolocation {\n  undefined getCurrentPosition (\n    PositionCallback successCallback,\n    optional PositionErrorCallback? errorCallback = null,\n    optional PositionOptions options = {}\n  );\n\n  long watchPosition (\n    PositionCallback successCallback,\n    optional PositionErrorCallback? errorCallback = null,\n    optional PositionOptions options = {}\n  );\n\n  undefined clearWatch (long watchId);\n};",
         "type": "interface",
         "name": "Geolocation",
         "inheritance": null,
@@ -205,7 +205,7 @@
         "partial": false
       },
       "PositionCallback": {
-        "fragment": "callback PositionCallback = undefined (GeolocationPosition position);",
+        "fragment": "callback PositionCallback = undefined (\n  GeolocationPosition position\n);",
         "type": "callback",
         "name": "PositionCallback",
         "idlType": {
@@ -237,7 +237,7 @@
         "extAttrs": []
       },
       "PositionErrorCallback": {
-        "fragment": "callback PositionErrorCallback = undefined (GeolocationPositionError positionError);",
+        "fragment": "callback PositionErrorCallback = undefined (\n  GeolocationPositionError positionError\n);",
         "type": "callback",
         "name": "PositionErrorCallback",
         "idlType": {
@@ -403,11 +403,26 @@
         "partial": false
       },
       "GeolocationCoordinates": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationCoordinates {\n  readonly attribute double latitude;\n  readonly attribute double longitude;\n  readonly attribute double? altitude;\n  readonly attribute double accuracy;\n  readonly attribute double? altitudeAccuracy;\n  readonly attribute double? heading;\n  readonly attribute double? speed;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationCoordinates {\n  readonly attribute double accuracy;\n  readonly attribute double latitude;\n  readonly attribute double longitude;\n  readonly attribute double? altitude;\n  readonly attribute double? altitudeAccuracy;\n  readonly attribute double? heading;\n  readonly attribute double? speed;\n};",
         "type": "interface",
         "name": "GeolocationCoordinates",
         "inheritance": null,
         "members": [
+          {
+            "type": "attribute",
+            "name": "accuracy",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
           {
             "type": "attribute",
             "name": "latitude",
@@ -446,21 +461,6 @@
               "extAttrs": [],
               "generic": "",
               "nullable": true,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "accuracy",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
               "union": false,
               "idlType": "double"
             },
