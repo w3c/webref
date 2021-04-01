@@ -467,17 +467,18 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Crawled URL: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
-- Crawled version: 15 February 2021
+- Crawled version: 01 April 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
 - Latest published version: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Shortname: audio-output
 
 ### Potential issue(s) {.anomalies}
 
+- External links to private terms:
+     * [`https://html.spec.whatwg.org/#allowed-to-play`](https://html.spec.whatwg.org/#allowed-to-play)
+     * [`https://www.w3.org/TR/webaudio/#allowed-to-start`](https://www.w3.org/TR/webaudio/#allowed-to-start)
 - External links that neither target definitions nor headings:
      * [`https://www.w3.org/TR/mediacapture-streams/#def-mediadeviceinfo-groupId`](https://www.w3.org/TR/mediacapture-streams/#def-mediadeviceinfo-groupId)
-- Broken external links:
-     * [`https://html.spec.whatwg.org/#triggered-by-user-activation`](https://html.spec.whatwg.org/#triggered-by-user-activation)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9694,19 +9695,18 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Keyboard Lock {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingDfns=true data-xrefs=true}
+## Keyboard Lock {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/keyboard-lock/](https://wicg.github.io/keyboard-lock/)
 - Crawled URL: [https://wicg.github.io/keyboard-lock/](https://wicg.github.io/keyboard-lock/)
-- Crawled version: 27 May 2020
+- Crawled version: 1 April 2021
 - Editor's Draft: [https://wicg.github.io/keyboard-lock/](https://wicg.github.io/keyboard-lock/)
 - Shortname: keyboard-lock
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `void`
 - WebIDL names also defined elsewhere: 
     * `Keyboard` also defined in [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - External links to private terms:
@@ -14314,6 +14314,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
@@ -16593,7 +16594,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 31 March 2021
+- Crawled version: 1 April 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -16638,7 +16639,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled URL: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- Crawled version: 30 March 2021
+- Crawled version: 01 April 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Shortname: webrtc
@@ -16849,19 +16850,18 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebXR Anchors Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingDfns=true data-xrefs=true}
+## WebXR Anchors Module {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
 - Crawled URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
-- Crawled version: 10 February 2021
+- Crawled version: 1 April 2021
 - Editor's Draft: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
 - Shortname: anchors
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `void`
 - Missing references for WebIDL names: 
      * `XRHitTestResult` defined in [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 - External links to private terms:
@@ -17118,19 +17118,18 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebXR Hit Test Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
+## WebXR Hit Test Module {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
 - Crawled URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
-- Crawled version: 10 February 2021
+- Crawled version: 1 April 2021
 - Editor's Draft: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
 - Shortname: hit-test
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `void`
 - External links to private terms:
      * [`https://www.w3.org/TR/webxr/#feature-descriptor`](https://www.w3.org/TR/webxr/#feature-descriptor)
      * [`https://www.w3.org/TR/webxr/#capable-of-supporting`](https://www.w3.org/TR/webxr/#capable-of-supporting)

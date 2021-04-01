@@ -169,7 +169,7 @@
         "partial": false
       },
       "XRHitTestSource": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface XRHitTestSource {\n  void cancel();\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRHitTestSource {\n  undefined cancel();\n};",
         "type": "interface",
         "name": "XRHitTestSource",
         "inheritance": null,
@@ -183,7 +183,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -210,7 +210,7 @@
         "partial": false
       },
       "XRTransientInputHitTestSource": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface XRTransientInputHitTestSource {\n  void cancel();\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRTransientInputHitTestSource {\n  undefined cancel();\n};",
         "type": "interface",
         "name": "XRTransientInputHitTestSource",
         "inheritance": null,
@@ -224,7 +224,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -829,12 +829,8 @@
         "XRHitTestTrackableType",
         "XRRay"
       ],
-      "XRHitTestSource": [
-        "void"
-      ],
-      "XRTransientInputHitTestSource": [
-        "void"
-      ],
+      "XRHitTestSource": [],
+      "XRTransientInputHitTestSource": [],
       "XRHitTestResult": [
         "XRPose",
         "XRSpace"
@@ -865,7 +861,6 @@
     },
     "externalDependencies": [
       "XRSpace",
-      "void",
       "XRPose",
       "XRInputSource",
       "XRSession",
