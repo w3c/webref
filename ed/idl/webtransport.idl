@@ -81,7 +81,7 @@ interface mixin OutgoingStream : WritableStream /* of Uint8Array */ {
 };
 
 dictionary StreamAbortInfo {
-  unsigned long long errorCode = 0;
+  [EnforceRange] octet errorCode = 0;
 };
 
 [ Exposed=(Window,Worker) ]

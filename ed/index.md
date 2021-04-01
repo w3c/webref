@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% March 31, 2021
+% April 01, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -151,6 +151,23 @@ Informative references to this spec from:
      * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/core-aam/`](https://w3c.github.io/core-aam/), related reference "CORE-AAM-1.2" uses URL [`https://www.w3.org/TR/core-aam-1.2/`](https://www.w3.org/TR/core-aam-1.2/)
+- External links that neither target definitions nor headings:
+     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
+     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
+     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
+     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
+     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
+     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
+     * [`https://w3c.github.io/aria/#aria-describedby`](https://w3c.github.io/aria/#aria-describedby)
+     * [`https://w3c.github.io/aria/#textbox`](https://w3c.github.io/aria/#textbox)
+     * [`https://w3c.github.io/aria/#button`](https://w3c.github.io/aria/#button)
+     * [`https://w3c.github.io/aria/#combobox`](https://w3c.github.io/aria/#combobox)
+     * [`https://w3c.github.io/aria/#listbox`](https://w3c.github.io/aria/#listbox)
+     * [`https://w3c.github.io/aria/#option`](https://w3c.github.io/aria/#option)
+     * [`https://w3c.github.io/aria/#range`](https://w3c.github.io/aria/#range)
+     * [`https://w3c.github.io/aria/#spinbutton`](https://w3c.github.io/aria/#spinbutton)
+     * [`https://w3c.github.io/aria/#slider`](https://w3c.github.io/aria/#slider)
+     * [`https://w3c.github.io/aria/#checkbox`](https://w3c.github.io/aria/#checkbox)
 - Broken external links:
      * [`https://w3c.github.io/core-aam/#ariaLabel`](https://w3c.github.io/core-aam/#ariaLabel)
      * [`https://w3c.github.io/core-aam/#ariaLabelledBy`](https://w3c.github.io/core-aam/#ariaLabelledBy)
@@ -160,19 +177,19 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
 
 
-## Accessible Rich Internet Applications (WAI-ARIA) 1.2 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Accessible Rich Internet Applications (WAI-ARIA) 1.3 {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
-- Crawled version: 29 March 2021
+- Crawled version: 31 March 2021
 - Editor's Draft: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Shortname: wai-aria-1.2
@@ -290,6 +307,123 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#sectioning-root`](https://html.spec.whatwg.org/#sectioning-root)
      * [`https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name`](https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name)
 - External links that neither target definitions nor headings:
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-checked`](https://www.w3.org/TR/wai-aria-1.1/#aria-checked)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-disabled`](https://www.w3.org/TR/wai-aria-1.1/#aria-disabled)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder`](https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-readonly`](https://www.w3.org/TR/wai-aria-1.1/#aria-readonly)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-required`](https://www.w3.org/TR/wai-aria-1.1/#aria-required)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-colspan)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-atomic`](https://www.w3.org/TR/wai-aria-1.1/#aria-atomic)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-busy`](https://www.w3.org/TR/wai-aria-1.1/#aria-busy)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-controls`](https://www.w3.org/TR/wai-aria-1.1/#aria-controls)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-current`](https://www.w3.org/TR/wai-aria-1.1/#aria-current)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-details`](https://www.w3.org/TR/wai-aria-1.1/#aria-details)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect`](https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage`](https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-flowto`](https://www.w3.org/TR/wai-aria-1.1/#aria-flowto)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed`](https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup`](https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-hidden`](https://www.w3.org/TR/wai-aria-1.1/#aria-hidden)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-invalid`](https://www.w3.org/TR/wai-aria-1.1/#aria-invalid)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-keyshortcuts`](https://www.w3.org/TR/wai-aria-1.1/#aria-keyshortcuts)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-label`](https://www.w3.org/TR/wai-aria-1.1/#aria-label)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-live`](https://www.w3.org/TR/wai-aria-1.1/#aria-live)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-owns`](https://www.w3.org/TR/wai-aria-1.1/#aria-owns)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-relevant`](https://www.w3.org/TR/wai-aria-1.1/#aria-relevant)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription`](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#alert`](https://www.w3.org/TR/wai-aria-1.1/#alert)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-expanded`](https://www.w3.org/TR/wai-aria-1.1/#aria-expanded)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#alertdialog`](https://www.w3.org/TR/wai-aria-1.1/#alertdialog)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-modal`](https://www.w3.org/TR/wai-aria-1.1/#aria-modal)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#application`](https://www.w3.org/TR/wai-aria-1.1/#application)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant`](https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#article`](https://www.w3.org/TR/wai-aria-1.1/#article)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#banner`](https://www.w3.org/TR/wai-aria-1.1/#banner)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#button`](https://www.w3.org/TR/wai-aria-1.1/#button)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-pressed`](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#checkbox`](https://www.w3.org/TR/wai-aria-1.1/#checkbox)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#cell`](https://www.w3.org/TR/wai-aria-1.1/#cell)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-colindex)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#columnheader`](https://www.w3.org/TR/wai-aria-1.1/#columnheader)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-sort`](https://www.w3.org/TR/wai-aria-1.1/#aria-sort)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-selected`](https://www.w3.org/TR/wai-aria-1.1/#aria-selected)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#combobox`](https://www.w3.org/TR/wai-aria-1.1/#combobox)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete`](https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-orientation`](https://www.w3.org/TR/wai-aria-1.1/#aria-orientation)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#complementary`](https://www.w3.org/TR/wai-aria-1.1/#complementary)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#contentinfo`](https://www.w3.org/TR/wai-aria-1.1/#contentinfo)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#definition`](https://www.w3.org/TR/wai-aria-1.1/#definition)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#dialog`](https://www.w3.org/TR/wai-aria-1.1/#dialog)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#directory`](https://www.w3.org/TR/wai-aria-1.1/#directory)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#document`](https://www.w3.org/TR/wai-aria-1.1/#document)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#feed`](https://www.w3.org/TR/wai-aria-1.1/#feed)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#figure`](https://www.w3.org/TR/wai-aria-1.1/#figure)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#form`](https://www.w3.org/TR/wai-aria-1.1/#form)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#grid`](https://www.w3.org/TR/wai-aria-1.1/#grid)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-level`](https://www.w3.org/TR/wai-aria-1.1/#aria-level)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-colcount)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#gridcell`](https://www.w3.org/TR/wai-aria-1.1/#gridcell)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#group`](https://www.w3.org/TR/wai-aria-1.1/#group)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#heading`](https://www.w3.org/TR/wai-aria-1.1/#heading)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#img`](https://www.w3.org/TR/wai-aria-1.1/#img)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#link`](https://www.w3.org/TR/wai-aria-1.1/#link)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#list`](https://www.w3.org/TR/wai-aria-1.1/#list)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#listbox`](https://www.w3.org/TR/wai-aria-1.1/#listbox)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#listitem`](https://www.w3.org/TR/wai-aria-1.1/#listitem)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-posinset`](https://www.w3.org/TR/wai-aria-1.1/#aria-posinset)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-setsize`](https://www.w3.org/TR/wai-aria-1.1/#aria-setsize)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#log`](https://www.w3.org/TR/wai-aria-1.1/#log)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#main`](https://www.w3.org/TR/wai-aria-1.1/#main)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#marquee`](https://www.w3.org/TR/wai-aria-1.1/#marquee)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#math`](https://www.w3.org/TR/wai-aria-1.1/#math)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#menu`](https://www.w3.org/TR/wai-aria-1.1/#menu)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#menubar`](https://www.w3.org/TR/wai-aria-1.1/#menubar)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#menuitem`](https://www.w3.org/TR/wai-aria-1.1/#menuitem)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#menuitemcheckbox`](https://www.w3.org/TR/wai-aria-1.1/#menuitemcheckbox)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#menuitemradio`](https://www.w3.org/TR/wai-aria-1.1/#menuitemradio)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#navigation`](https://www.w3.org/TR/wai-aria-1.1/#navigation)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#none`](https://www.w3.org/TR/wai-aria-1.1/#none)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#note`](https://www.w3.org/TR/wai-aria-1.1/#note)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#option`](https://www.w3.org/TR/wai-aria-1.1/#option)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#presentation`](https://www.w3.org/TR/wai-aria-1.1/#presentation)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#progressbar`](https://www.w3.org/TR/wai-aria-1.1/#progressbar)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#radio`](https://www.w3.org/TR/wai-aria-1.1/#radio)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#radiogroup`](https://www.w3.org/TR/wai-aria-1.1/#radiogroup)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#region`](https://www.w3.org/TR/wai-aria-1.1/#region)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#row`](https://www.w3.org/TR/wai-aria-1.1/#row)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#rowgroup`](https://www.w3.org/TR/wai-aria-1.1/#rowgroup)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#rowheader`](https://www.w3.org/TR/wai-aria-1.1/#rowheader)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#scrollbar`](https://www.w3.org/TR/wai-aria-1.1/#scrollbar)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#search`](https://www.w3.org/TR/wai-aria-1.1/#search)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#searchbox`](https://www.w3.org/TR/wai-aria-1.1/#searchbox)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiline`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiline)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#separator`](https://www.w3.org/TR/wai-aria-1.1/#separator)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#slider`](https://www.w3.org/TR/wai-aria-1.1/#slider)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#spinbutton`](https://www.w3.org/TR/wai-aria-1.1/#spinbutton)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#status`](https://www.w3.org/TR/wai-aria-1.1/#status)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#switch`](https://www.w3.org/TR/wai-aria-1.1/#switch)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#tab`](https://www.w3.org/TR/wai-aria-1.1/#tab)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#table`](https://www.w3.org/TR/wai-aria-1.1/#table)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#tablist`](https://www.w3.org/TR/wai-aria-1.1/#tablist)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#tabpanel`](https://www.w3.org/TR/wai-aria-1.1/#tabpanel)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#term`](https://www.w3.org/TR/wai-aria-1.1/#term)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#textbox`](https://www.w3.org/TR/wai-aria-1.1/#textbox)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#timer`](https://www.w3.org/TR/wai-aria-1.1/#timer)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#toolbar`](https://www.w3.org/TR/wai-aria-1.1/#toolbar)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#tooltip`](https://www.w3.org/TR/wai-aria-1.1/#tooltip)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#tree`](https://www.w3.org/TR/wai-aria-1.1/#tree)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#treeitem`](https://www.w3.org/TR/wai-aria-1.1/#treeitem)
      * [`https://html.spec.whatwg.org/#unknown-images`](https://html.spec.whatwg.org/#unknown-images)
      * [`https://html.spec.whatwg.org/#e-mail-state-(type=email)`](https://html.spec.whatwg.org/#e-mail-state-(type=email))
 - Broken external links:
@@ -303,7 +437,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
 
 
 ## Atomics.waitAsync {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
@@ -312,7 +446,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://tc39.es/proposal-atomics-wait-async/](https://tc39.es/proposal-atomics-wait-async/)
 - Crawled URL: [https://tc39.es/proposal-atomics-wait-async/](https://tc39.es/proposal-atomics-wait-async/)
-- Crawled version: 25 September 2020
+- Crawled version: 31 March 2021
 - Editor's Draft: [https://tc39.es/proposal-atomics-wait-async/](https://tc39.es/proposal-atomics-wait-async/)
 - Shortname: tc39-atomics-wait-async
 
@@ -710,22 +844,19 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Compression Streams {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+## Compression Streams {data-spec=true data-missingDfns=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
 - Crawled URL: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
-- Crawled version: 8 March 2021
+- Crawled version: 31 March 2021
 - Editor's Draft: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
 - Shortname: compression
 
 ### Potential issue(s) {.anomalies}
 
-- Broken external links:
-     * [`https://streams.spec.whatwg.org/#transformstream-create`](https://streams.spec.whatwg.org/#transformstream-create)
-     * [`https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm)
-     * [`https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1015,7 +1146,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Core Accessibility API Mappings 1.2 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true}
+## Core Accessibility API Mappings 1.2 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -1034,13 +1165,152 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/accname/`](https://w3c.github.io/accname/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/), related reference "WAI-ARIA-1.2" uses URL [`https://www.w3.org/TR/wai-aria-1.2/`](https://www.w3.org/TR/wai-aria-1.2/)
+- External links that neither target definitions nor headings:
+     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
+     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
+     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
+     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
+     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
+     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
+     * [`https://w3c.github.io/aria/#aria-live`](https://w3c.github.io/aria/#aria-live)
+     * [`https://w3c.github.io/aria/#alert`](https://w3c.github.io/aria/#alert)
+     * [`https://w3c.github.io/aria/#alertdialog`](https://w3c.github.io/aria/#alertdialog)
+     * [`https://w3c.github.io/aria/#application`](https://w3c.github.io/aria/#application)
+     * [`https://w3c.github.io/aria/#article`](https://w3c.github.io/aria/#article)
+     * [`https://w3c.github.io/aria/#banner`](https://w3c.github.io/aria/#banner)
+     * [`https://w3c.github.io/aria/#blockquote`](https://w3c.github.io/aria/#blockquote)
+     * [`https://w3c.github.io/aria/#button`](https://w3c.github.io/aria/#button)
+     * [`https://w3c.github.io/aria/#aria-pressed`](https://w3c.github.io/aria/#aria-pressed)
+     * [`https://w3c.github.io/aria/#aria-haspopup`](https://w3c.github.io/aria/#aria-haspopup)
+     * [`https://w3c.github.io/aria/#caption`](https://w3c.github.io/aria/#caption)
+     * [`https://w3c.github.io/aria/#cell`](https://w3c.github.io/aria/#cell)
+     * [`https://w3c.github.io/aria/#checkbox`](https://w3c.github.io/aria/#checkbox)
+     * [`https://w3c.github.io/aria/#code`](https://w3c.github.io/aria/#code)
+     * [`https://w3c.github.io/aria/#columnheader`](https://w3c.github.io/aria/#columnheader)
+     * [`https://w3c.github.io/aria/#combobox`](https://w3c.github.io/aria/#combobox)
+     * [`https://w3c.github.io/aria/#aria-expanded`](https://w3c.github.io/aria/#aria-expanded)
+     * [`https://w3c.github.io/aria/#comment`](https://w3c.github.io/aria/#comment)
+     * [`https://w3c.github.io/aria/#complementary`](https://w3c.github.io/aria/#complementary)
+     * [`https://w3c.github.io/aria/#contentinfo`](https://w3c.github.io/aria/#contentinfo)
+     * [`https://w3c.github.io/aria/#definition`](https://w3c.github.io/aria/#definition)
+     * [`https://w3c.github.io/aria/#deletion`](https://w3c.github.io/aria/#deletion)
+     * [`https://w3c.github.io/aria/#dialog`](https://w3c.github.io/aria/#dialog)
+     * [`https://w3c.github.io/aria/#directory`](https://w3c.github.io/aria/#directory)
+     * [`https://w3c.github.io/aria/#document`](https://w3c.github.io/aria/#document)
+     * [`https://w3c.github.io/aria/#emphasis`](https://w3c.github.io/aria/#emphasis)
+     * [`https://w3c.github.io/aria/#feed`](https://w3c.github.io/aria/#feed)
+     * [`https://w3c.github.io/aria/#figure`](https://w3c.github.io/aria/#figure)
+     * [`https://w3c.github.io/aria/#form`](https://w3c.github.io/aria/#form)
+     * [`https://w3c.github.io/aria/#generic`](https://w3c.github.io/aria/#generic)
+     * [`https://w3c.github.io/aria/#grid`](https://w3c.github.io/aria/#grid)
+     * [`https://w3c.github.io/aria/#gridcell`](https://w3c.github.io/aria/#gridcell)
+     * [`https://w3c.github.io/aria/#group`](https://w3c.github.io/aria/#group)
+     * [`https://w3c.github.io/aria/#heading`](https://w3c.github.io/aria/#heading)
+     * [`https://w3c.github.io/aria/#img`](https://w3c.github.io/aria/#img)
+     * [`https://w3c.github.io/aria/#insertion`](https://w3c.github.io/aria/#insertion)
+     * [`https://w3c.github.io/aria/#label`](https://w3c.github.io/aria/#label)
+     * [`https://w3c.github.io/aria/#legend`](https://w3c.github.io/aria/#legend)
+     * [`https://w3c.github.io/aria/#link`](https://w3c.github.io/aria/#link)
+     * [`https://w3c.github.io/aria/#list`](https://w3c.github.io/aria/#list)
+     * [`https://w3c.github.io/aria/#listbox`](https://w3c.github.io/aria/#listbox)
+     * [`https://w3c.github.io/aria/#listitem`](https://w3c.github.io/aria/#listitem)
+     * [`https://w3c.github.io/aria/#log`](https://w3c.github.io/aria/#log)
+     * [`https://w3c.github.io/aria/#main`](https://w3c.github.io/aria/#main)
+     * [`https://w3c.github.io/aria/#mark`](https://w3c.github.io/aria/#mark)
+     * [`https://w3c.github.io/aria/#marquee`](https://w3c.github.io/aria/#marquee)
+     * [`https://w3c.github.io/aria/#math`](https://w3c.github.io/aria/#math)
+     * [`https://w3c.github.io/aria/#menu`](https://w3c.github.io/aria/#menu)
+     * [`https://w3c.github.io/aria/#menubar`](https://w3c.github.io/aria/#menubar)
+     * [`https://w3c.github.io/aria/#menuitem`](https://w3c.github.io/aria/#menuitem)
+     * [`https://w3c.github.io/aria/#menuitemcheckbox`](https://w3c.github.io/aria/#menuitemcheckbox)
+     * [`https://w3c.github.io/aria/#menuitemradio`](https://w3c.github.io/aria/#menuitemradio)
+     * [`https://w3c.github.io/aria/#meter`](https://w3c.github.io/aria/#meter)
+     * [`https://w3c.github.io/aria/#navigation`](https://w3c.github.io/aria/#navigation)
+     * [`https://w3c.github.io/aria/#none`](https://w3c.github.io/aria/#none)
+     * [`https://w3c.github.io/aria/#note`](https://w3c.github.io/aria/#note)
+     * [`https://w3c.github.io/aria/#option`](https://w3c.github.io/aria/#option)
+     * [`https://w3c.github.io/aria/#paragraph`](https://w3c.github.io/aria/#paragraph)
+     * [`https://w3c.github.io/aria/#presentation`](https://w3c.github.io/aria/#presentation)
+     * [`https://w3c.github.io/aria/#progressbar`](https://w3c.github.io/aria/#progressbar)
+     * [`https://w3c.github.io/aria/#radio`](https://w3c.github.io/aria/#radio)
+     * [`https://w3c.github.io/aria/#radiogroup`](https://w3c.github.io/aria/#radiogroup)
+     * [`https://w3c.github.io/aria/#region`](https://w3c.github.io/aria/#region)
+     * [`https://w3c.github.io/aria/#row`](https://w3c.github.io/aria/#row)
+     * [`https://w3c.github.io/aria/#rowgroup`](https://w3c.github.io/aria/#rowgroup)
+     * [`https://w3c.github.io/aria/#rowheader`](https://w3c.github.io/aria/#rowheader)
+     * [`https://w3c.github.io/aria/#scrollbar`](https://w3c.github.io/aria/#scrollbar)
+     * [`https://w3c.github.io/aria/#search`](https://w3c.github.io/aria/#search)
+     * [`https://w3c.github.io/aria/#searchbox`](https://w3c.github.io/aria/#searchbox)
+     * [`https://w3c.github.io/aria/#aria-readonly`](https://w3c.github.io/aria/#aria-readonly)
+     * [`https://w3c.github.io/aria/#separator`](https://w3c.github.io/aria/#separator)
+     * [`https://w3c.github.io/aria/#slider`](https://w3c.github.io/aria/#slider)
+     * [`https://w3c.github.io/aria/#spinbutton`](https://w3c.github.io/aria/#spinbutton)
+     * [`https://w3c.github.io/aria/#status`](https://w3c.github.io/aria/#status)
+     * [`https://w3c.github.io/aria/#strong`](https://w3c.github.io/aria/#strong)
+     * [`https://w3c.github.io/aria/#subscript`](https://w3c.github.io/aria/#subscript)
+     * [`https://w3c.github.io/aria/#suggestion`](https://w3c.github.io/aria/#suggestion)
+     * [`https://w3c.github.io/aria/#superscript`](https://w3c.github.io/aria/#superscript)
+     * [`https://w3c.github.io/aria/#switch`](https://w3c.github.io/aria/#switch)
+     * [`https://w3c.github.io/aria/#tab`](https://w3c.github.io/aria/#tab)
+     * [`https://w3c.github.io/aria/#tabpanel`](https://w3c.github.io/aria/#tabpanel)
+     * [`https://w3c.github.io/aria/#aria-labelledby`](https://w3c.github.io/aria/#aria-labelledby)
+     * [`https://w3c.github.io/aria/#table`](https://w3c.github.io/aria/#table)
+     * [`https://w3c.github.io/aria/#tablist`](https://w3c.github.io/aria/#tablist)
+     * [`https://w3c.github.io/aria/#term`](https://w3c.github.io/aria/#term)
+     * [`https://w3c.github.io/aria/#textbox`](https://w3c.github.io/aria/#textbox)
+     * [`https://w3c.github.io/aria/#time`](https://w3c.github.io/aria/#time)
+     * [`https://w3c.github.io/aria/#timer`](https://w3c.github.io/aria/#timer)
+     * [`https://w3c.github.io/aria/#toolbar`](https://w3c.github.io/aria/#toolbar)
+     * [`https://w3c.github.io/aria/#tooltip`](https://w3c.github.io/aria/#tooltip)
+     * [`https://w3c.github.io/aria/#tree`](https://w3c.github.io/aria/#tree)
+     * [`https://w3c.github.io/aria/#treegrid`](https://w3c.github.io/aria/#treegrid)
+     * [`https://w3c.github.io/aria/#treeitem`](https://w3c.github.io/aria/#treeitem)
+     * [`https://w3c.github.io/aria/#aria-grabbed`](https://w3c.github.io/aria/#aria-grabbed)
+     * [`https://w3c.github.io/aria/#aria-atomic`](https://w3c.github.io/aria/#aria-atomic)
+     * [`https://w3c.github.io/aria/#aria-autocomplete`](https://w3c.github.io/aria/#aria-autocomplete)
+     * [`https://w3c.github.io/aria/#aria-busy`](https://w3c.github.io/aria/#aria-busy)
+     * [`https://w3c.github.io/aria/#aria-checked`](https://w3c.github.io/aria/#aria-checked)
+     * [`https://w3c.github.io/aria/#aria-colcount`](https://w3c.github.io/aria/#aria-colcount)
+     * [`https://w3c.github.io/aria/#aria-colindex`](https://w3c.github.io/aria/#aria-colindex)
+     * [`https://w3c.github.io/aria/#aria-colindextext`](https://w3c.github.io/aria/#aria-colindextext)
+     * [`https://w3c.github.io/aria/#aria-colspan`](https://w3c.github.io/aria/#aria-colspan)
+     * [`https://w3c.github.io/aria/#aria-controls`](https://w3c.github.io/aria/#aria-controls)
+     * [`https://w3c.github.io/aria/#aria-current`](https://w3c.github.io/aria/#aria-current)
+     * [`https://w3c.github.io/aria/#aria-describedby`](https://w3c.github.io/aria/#aria-describedby)
+     * [`https://w3c.github.io/aria/#aria-description`](https://w3c.github.io/aria/#aria-description)
+     * [`https://w3c.github.io/aria/#aria-details`](https://w3c.github.io/aria/#aria-details)
+     * [`https://w3c.github.io/aria/#aria-disabled`](https://w3c.github.io/aria/#aria-disabled)
+     * [`https://w3c.github.io/aria/#aria-dropeffect`](https://w3c.github.io/aria/#aria-dropeffect)
+     * [`https://w3c.github.io/aria/#aria-errormessage`](https://w3c.github.io/aria/#aria-errormessage)
+     * [`https://w3c.github.io/aria/#aria-hidden`](https://w3c.github.io/aria/#aria-hidden)
+     * [`https://w3c.github.io/aria/#aria-invalid`](https://w3c.github.io/aria/#aria-invalid)
+     * [`https://w3c.github.io/aria/#aria-keyshortcuts`](https://w3c.github.io/aria/#aria-keyshortcuts)
+     * [`https://w3c.github.io/aria/#aria-label`](https://w3c.github.io/aria/#aria-label)
+     * [`https://w3c.github.io/aria/#aria-level`](https://w3c.github.io/aria/#aria-level)
+     * [`https://w3c.github.io/aria/#aria-modal`](https://w3c.github.io/aria/#aria-modal)
+     * [`https://w3c.github.io/aria/#aria-multiselectable`](https://w3c.github.io/aria/#aria-multiselectable)
+     * [`https://w3c.github.io/aria/#aria-orientation`](https://w3c.github.io/aria/#aria-orientation)
+     * [`https://w3c.github.io/aria/#aria-placeholder`](https://w3c.github.io/aria/#aria-placeholder)
+     * [`https://w3c.github.io/aria/#aria-posinset`](https://w3c.github.io/aria/#aria-posinset)
+     * [`https://w3c.github.io/aria/#aria-relevant`](https://w3c.github.io/aria/#aria-relevant)
+     * [`https://w3c.github.io/aria/#aria-required`](https://w3c.github.io/aria/#aria-required)
+     * [`https://w3c.github.io/aria/#aria-roledescription`](https://w3c.github.io/aria/#aria-roledescription)
+     * [`https://w3c.github.io/aria/#aria-rowcount`](https://w3c.github.io/aria/#aria-rowcount)
+     * [`https://w3c.github.io/aria/#aria-rowindex`](https://w3c.github.io/aria/#aria-rowindex)
+     * [`https://w3c.github.io/aria/#aria-rowindextext`](https://w3c.github.io/aria/#aria-rowindextext)
+     * [`https://w3c.github.io/aria/#aria-rowspan`](https://w3c.github.io/aria/#aria-rowspan)
+     * [`https://w3c.github.io/aria/#aria-selected`](https://w3c.github.io/aria/#aria-selected)
+     * [`https://w3c.github.io/aria/#aria-setsize`](https://w3c.github.io/aria/#aria-setsize)
+     * [`https://w3c.github.io/aria/#aria-sort`](https://w3c.github.io/aria/#aria-sort)
+     * [`https://w3c.github.io/aria/#aria-valuemax`](https://w3c.github.io/aria/#aria-valuemax)
+     * [`https://w3c.github.io/aria/#aria-valuemin`](https://w3c.github.io/aria/#aria-valuemin)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
 - [HTML Accessibility API Mappings 1.0](https://w3c.github.io/html-aam/)
 - [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/)
 
@@ -2713,7 +2983,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-easing-1/](https://www.w3.org/TR/css-easing-1/)
 - Crawled URL: [https://drafts.csswg.org/css-easing/](https://drafts.csswg.org/css-easing/)
-- Crawled version: 18 January 2021
+- Crawled version: 31 March 2021
 - Editor's Draft: [https://drafts.csswg.org/css-easing/](https://drafts.csswg.org/css-easing/)
 - Latest published version: [https://www.w3.org/TR/css-easing-1/](https://www.w3.org/TR/css-easing-1/)
 - Shortname: css-easing-1
@@ -3791,7 +4061,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
 - Crawled URL: [https://drafts.csswg.org/css-multicol/](https://drafts.csswg.org/css-multicol/)
-- Crawled version: 12 February 2021
+- Crawled version: 31 March 2021
 - Editor's Draft: [https://drafts.csswg.org/css-multicol/](https://drafts.csswg.org/css-multicol/)
 - Latest published version: [https://www.w3.org/TR/css-multicol-1/](https://www.w3.org/TR/css-multicol-1/)
 - Shortname: css-multicol-1
@@ -5418,7 +5688,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Crawled URL: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
-- Crawled version: 25 March 2021
+- Crawled version: 31 March 2021
 - Editor's Draft: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
 - Latest published version: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Shortname: css-transforms-2
@@ -6297,7 +6567,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://w3c.github.io/badging/)
 - [Battery Status API](https://w3c.github.io/battery/)
@@ -6547,7 +6817,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
 - Crawled URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
-- Crawled version: 24 March 2021
+- Crawled version: 31 March 2021
 - Editor's Draft: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
 - Shortname: ecmascript
 
@@ -7540,6 +7810,13 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/wai-aria-practices/`](https://www.w3.org/TR/wai-aria-practices/)
 - Inconsistent references for links: 
      * [`https://w3c.github.io/graphics-aria/`](https://w3c.github.io/graphics-aria/), related reference "GRAPHICS-ARIA-1.0" uses URL [`https://www.w3.org/TR/graphics-aria-1.0/`](https://www.w3.org/TR/graphics-aria-1.0/)
+- External links that neither target definitions nor headings:
+     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
+     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
+     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
+     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
+     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
+     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
 - Broken external links:
      * [`https://w3c.github.io/graphics-aria/#graphics-document`](https://w3c.github.io/graphics-aria/#graphics-document)
      * [`https://w3c.github.io/graphics-aria/#graphics-object`](https://w3c.github.io/graphics-aria/#graphics-object)
@@ -7688,6 +7965,17 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#row-header`](https://html.spec.whatwg.org/#row-header)
      * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
      * [`https://www.w3.org/TR/html/#radio-button-group`](https://www.w3.org/TR/html/#radio-button-group)
+- External links that neither target definitions nor headings:
+     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
+     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
+     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
+     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
+     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
+     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-label`](https://www.w3.org/TR/wai-aria-1.1/#aria-label)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)
 - Broken external links:
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaRoleDescription`](https://www.w3.org/TR/core-aam-1.1/#ariaRoleDescription)
      * [`https://www.w3.org/TR/core-aam-1.1/#role-map-link`](https://www.w3.org/TR/core-aam-1.1/#role-map-link)
@@ -8196,8 +8484,6 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/webvtt/#webvtt-parser`](https://w3c.github.io/webvtt/#webvtt-parser)
      * [`https://w3c.github.io/webvtt/#rules-for-updating-the-display-of-webvtt-text-tracks`](https://w3c.github.io/webvtt/#rules-for-updating-the-display-of-webvtt-text-tracks)
      * [`https://w3c.github.io/webvtt/#webvtt-cue-writing-direction`](https://w3c.github.io/webvtt/#webvtt-cue-writing-direction)
-     * [`https://w3c.github.io/aria/#dfn-role`](https://w3c.github.io/aria/#dfn-role)
-     * [`https://w3c.github.io/aria/#dfn-accessible-name`](https://w3c.github.io/aria/#dfn-accessible-name)
      * [`https://w3c.github.io/aria/#dfn-ariamixin-getter-steps`](https://w3c.github.io/aria/#dfn-ariamixin-getter-steps)
      * [`https://w3c.github.io/aria/#dfn-ariamixin-setter-steps`](https://w3c.github.io/aria/#dfn-ariamixin-setter-steps)
      * [`https://w3c.github.io/ServiceWorker/#dfn-control`](https://w3c.github.io/ServiceWorker/#dfn-control)
@@ -8227,6 +8513,12 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-backgrounds/#the-background-color`](https://drafts.csswg.org/css-backgrounds/#the-background-color)
      * [`https://drafts.csswg.org/css-backgrounds/#the-background-image`](https://drafts.csswg.org/css-backgrounds/#the-background-image)
      * [`https://drafts.csswg.org/css-display/#css-box`](https://drafts.csswg.org/css-display/#css-box)
+     * [`https://w3c.github.io/aria/#button`](https://w3c.github.io/aria/#button)
+     * [`https://w3c.github.io/aria/#presentation`](https://w3c.github.io/aria/#presentation)
+     * [`https://w3c.github.io/aria/#aria-checked`](https://w3c.github.io/aria/#aria-checked)
+     * [`https://w3c.github.io/aria/#aria-describedby`](https://w3c.github.io/aria/#aria-describedby)
+     * [`https://w3c.github.io/aria/#aria-disabled`](https://w3c.github.io/aria/#aria-disabled)
+     * [`https://w3c.github.io/aria/#aria-label`](https://w3c.github.io/aria/#aria-label)
      * [`https://w3c.github.io/html-aria/#el-html`](https://w3c.github.io/html-aria/#el-html)
      * [`https://w3c.github.io/html-aria/#el-head`](https://w3c.github.io/html-aria/#el-head)
      * [`https://w3c.github.io/html-aria/#el-title`](https://w3c.github.io/html-aria/#el-title)
@@ -8525,7 +8817,7 @@ Normative references to this spec from:
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/)
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html)
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
 - [ARIA in HTML](https://w3c.github.io/html-aria/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
@@ -9674,7 +9966,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## MathML Accessiblity API Mappings 1.0 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true}
+## MathML Accessiblity API Mappings 1.0 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -9688,6 +9980,13 @@ Informative references to this spec from:
 
 - Missing references for links: 
      * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/)
+- External links that neither target definitions nor headings:
+     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
+     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
+     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
+     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
+     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
+     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12149,6 +12448,57 @@ No informative reference to this spec from other specs.
      * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
 - External links that neither target definitions nor headings:
      * [`https://dom.spec.whatwg.org/#ref-for-dom-event-type`](https://dom.spec.whatwg.org/#ref-for-dom-event-type)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant`](https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-atomic`](https://www.w3.org/TR/wai-aria-1.1/#aria-atomic)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete`](https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-busy`](https://www.w3.org/TR/wai-aria-1.1/#aria-busy)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-checked`](https://www.w3.org/TR/wai-aria-1.1/#aria-checked)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-colcount)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-colindex)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-colspan)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-controls`](https://www.w3.org/TR/wai-aria-1.1/#aria-controls)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-current`](https://www.w3.org/TR/wai-aria-1.1/#aria-current)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-details`](https://www.w3.org/TR/wai-aria-1.1/#aria-details)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-disabled`](https://www.w3.org/TR/wai-aria-1.1/#aria-disabled)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect`](https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage`](https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-expanded`](https://www.w3.org/TR/wai-aria-1.1/#aria-expanded)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-flowto`](https://www.w3.org/TR/wai-aria-1.1/#aria-flowto)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed`](https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup`](https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-hidden`](https://www.w3.org/TR/wai-aria-1.1/#aria-hidden)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-invalid`](https://www.w3.org/TR/wai-aria-1.1/#aria-invalid)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-keyshortcuts`](https://www.w3.org/TR/wai-aria-1.1/#aria-keyshortcuts)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-label`](https://www.w3.org/TR/wai-aria-1.1/#aria-label)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-level`](https://www.w3.org/TR/wai-aria-1.1/#aria-level)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-live`](https://www.w3.org/TR/wai-aria-1.1/#aria-live)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-modal`](https://www.w3.org/TR/wai-aria-1.1/#aria-modal)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiline`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiline)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-orientation`](https://www.w3.org/TR/wai-aria-1.1/#aria-orientation)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-owns`](https://www.w3.org/TR/wai-aria-1.1/#aria-owns)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder`](https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-posinset`](https://www.w3.org/TR/wai-aria-1.1/#aria-posinset)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-pressed`](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-readonly`](https://www.w3.org/TR/wai-aria-1.1/#aria-readonly)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-relevant`](https://www.w3.org/TR/wai-aria-1.1/#aria-relevant)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-required`](https://www.w3.org/TR/wai-aria-1.1/#aria-required)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription`](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-selected`](https://www.w3.org/TR/wai-aria-1.1/#aria-selected)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-setsize`](https://www.w3.org/TR/wai-aria-1.1/#aria-setsize)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-sort`](https://www.w3.org/TR/wai-aria-1.1/#aria-sort)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#group`](https://www.w3.org/TR/wai-aria-1.1/#group)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#radiogroup`](https://www.w3.org/TR/wai-aria-1.1/#radiogroup)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#heading`](https://www.w3.org/TR/wai-aria-1.1/#heading)
      * [`https://www.w3.org/TR/css3-background/#the-background-position`](https://www.w3.org/TR/css3-background/#the-background-position)
      * [`https://www.w3.org/TR/css-text-3/#hyphens-property`](https://www.w3.org/TR/css-text-3/#hyphens-property)
      * [`https://www.w3.org/TR/css3-images/#intrinsic-dimensions`](https://www.w3.org/TR/css3-images/#intrinsic-dimensions)
@@ -12197,7 +12547,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
@@ -12818,6 +13168,22 @@ Informative references to this spec from:
      * [`https://w3c.github.io/accname/#step2F`](https://w3c.github.io/accname/#step2F)
      * [`https://w3c.github.io/accname/#step2F.ii`](https://w3c.github.io/accname/#step2F.ii)
      * [`https://w3c.github.io/accname/#step2H`](https://w3c.github.io/accname/#step2H)
+     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
+     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
+     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
+     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
+     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
+     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
+     * [`https://w3c.github.io/aria/#none`](https://w3c.github.io/aria/#none)
+     * [`https://w3c.github.io/aria/#presentation`](https://w3c.github.io/aria/#presentation)
+     * [`https://w3c.github.io/aria/#aria-hidden`](https://w3c.github.io/aria/#aria-hidden)
+     * [`https://w3c.github.io/aria/#button`](https://w3c.github.io/aria/#button)
+     * [`https://w3c.github.io/aria/#img`](https://w3c.github.io/aria/#img)
+     * [`https://w3c.github.io/aria/#aria-label`](https://w3c.github.io/aria/#aria-label)
+     * [`https://w3c.github.io/aria/#aria-roledescription`](https://w3c.github.io/aria/#aria-roledescription)
+     * [`https://w3c.github.io/aria/#aria-labelledby`](https://w3c.github.io/aria/#aria-labelledby)
+     * [`https://w3c.github.io/aria/#aria-describedby`](https://w3c.github.io/aria/#aria-describedby)
+     * [`https://w3c.github.io/aria/#aria-controls`](https://w3c.github.io/aria/#aria-controls)
      * [`https://w3c.github.io/html-aam/#el-audio`](https://w3c.github.io/html-aam/#el-audio)
      * [`https://w3c.github.io/html-aam/#el-canvas`](https://w3c.github.io/html-aam/#el-canvas)
      * [`https://w3c.github.io/html-aam/#el-iframe`](https://w3c.github.io/html-aam/#el-iframe)
@@ -12892,6 +13258,55 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/2014/REC-html5-20141028/`](https://www.w3.org/TR/2014/REC-html5-20141028/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
      * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
      * [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/), related reference "SMILANIM" uses URL [`http://www.w3.org/TR/2001/REC-smil-animation-20010904/`](http://www.w3.org/TR/2001/REC-smil-animation-20010904/)
+- External links that neither target definitions nor headings:
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant`](https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-atomic`](https://www.w3.org/TR/wai-aria-1.1/#aria-atomic)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete`](https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-busy`](https://www.w3.org/TR/wai-aria-1.1/#aria-busy)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-checked`](https://www.w3.org/TR/wai-aria-1.1/#aria-checked)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-colcount)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-colindex)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-colspan)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-controls`](https://www.w3.org/TR/wai-aria-1.1/#aria-controls)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-current`](https://www.w3.org/TR/wai-aria-1.1/#aria-current)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-details`](https://www.w3.org/TR/wai-aria-1.1/#aria-details)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-disabled`](https://www.w3.org/TR/wai-aria-1.1/#aria-disabled)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect`](https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage`](https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-expanded`](https://www.w3.org/TR/wai-aria-1.1/#aria-expanded)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-flowto`](https://www.w3.org/TR/wai-aria-1.1/#aria-flowto)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed`](https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup`](https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-hidden`](https://www.w3.org/TR/wai-aria-1.1/#aria-hidden)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-invalid`](https://www.w3.org/TR/wai-aria-1.1/#aria-invalid)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-keyshortcuts`](https://www.w3.org/TR/wai-aria-1.1/#aria-keyshortcuts)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-label`](https://www.w3.org/TR/wai-aria-1.1/#aria-label)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-level`](https://www.w3.org/TR/wai-aria-1.1/#aria-level)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-live`](https://www.w3.org/TR/wai-aria-1.1/#aria-live)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-modal`](https://www.w3.org/TR/wai-aria-1.1/#aria-modal)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiline`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiline)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-orientation`](https://www.w3.org/TR/wai-aria-1.1/#aria-orientation)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-owns`](https://www.w3.org/TR/wai-aria-1.1/#aria-owns)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder`](https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-posinset`](https://www.w3.org/TR/wai-aria-1.1/#aria-posinset)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-pressed`](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-readonly`](https://www.w3.org/TR/wai-aria-1.1/#aria-readonly)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-relevant`](https://www.w3.org/TR/wai-aria-1.1/#aria-relevant)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-required`](https://www.w3.org/TR/wai-aria-1.1/#aria-required)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription`](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-selected`](https://www.w3.org/TR/wai-aria-1.1/#aria-selected)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-setsize`](https://www.w3.org/TR/wai-aria-1.1/#aria-setsize)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-sort`](https://www.w3.org/TR/wai-aria-1.1/#aria-sort)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - External links that use a dated URL:
@@ -12981,7 +13396,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 30 March 2021
+- Crawled version: 31 March 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
@@ -13440,7 +13855,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://w3c.github.io/aria/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
@@ -13740,6 +14155,13 @@ No informative reference to this spec from other specs.
 
 - Missing references for links: 
      * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/)
+- External links that neither target definitions nor headings:
+     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
+     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
+     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
+     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
+     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
+     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/)
 
@@ -16317,7 +16739,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 30 March 2021
+- Crawled version: 31 March 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Shortname: webtransport
 
