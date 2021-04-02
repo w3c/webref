@@ -3299,6 +3299,24 @@
       "definedIn": "dt"
     },
     {
+      "id": "abstract-opdef-compute-render-extent",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-compute-render-extent",
+      "linkingText": [
+        "compute render extent"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-interface",
+        "title": "GPUTexture",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dictdef-gputexturedescriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gputexturedescriptor",
       "linkingText": [
@@ -3753,6 +3771,26 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureview-descriptor-slot",
       "linkingText": [
         "[[descriptor]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUTextureView"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-textureview",
+        "title": "GPUTextureView",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gputextureview-renderextent-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureview-renderextent-slot",
+      "linkingText": [
+        "[[renderExtent]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -8628,6 +8666,168 @@
       "definedIn": "prose"
     },
     {
+      "id": "clip-position",
+      "href": "https://gpuweb.github.io/gpuweb/#clip-position",
+      "linkingText": [
+        "clip position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "primitive-clipping",
+        "title": "Primitive clipping",
+        "number": "10.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "clip-volume",
+      "href": "https://gpuweb.github.io/gpuweb/#clip-volume",
+      "linkingText": [
+        "clip volume"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "primitive-clipping",
+        "title": "Primitive clipping",
+        "number": "10.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "depth-clipping",
+      "href": "https://gpuweb.github.io/gpuweb/#depth-clipping",
+      "linkingText": [
+        "depth clipping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "primitive-clipping",
+        "title": "Primitive clipping",
+        "number": "10.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "provoking-vertex",
+      "href": "https://gpuweb.github.io/gpuweb/#provoking-vertex",
+      "linkingText": [
+        "provoking vertex"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "primitive-clipping",
+        "title": "Primitive clipping",
+        "number": "10.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "framebuffer",
+      "href": "https://gpuweb.github.io/gpuweb/#framebuffer",
+      "linkingText": [
+        "framebuffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "title": "Rasterization",
+        "number": "10.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ndc",
+      "href": "https://gpuweb.github.io/gpuweb/#ndc",
+      "linkingText": [
+        "NDC"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "title": "Rasterization",
+        "number": "10.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "front-facing",
+      "href": "https://gpuweb.github.io/gpuweb/#front-facing",
+      "linkingText": [
+        "front-facing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "polygon-rasterization",
+        "title": "Polygon Rasterization",
+        "number": "10.3.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "back-facing",
+      "href": "https://gpuweb.github.io/gpuweb/#back-facing",
+      "linkingText": [
+        "back-facing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "polygon-rasterization",
+        "title": "Polygon Rasterization",
+        "number": "10.3.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragments",
+      "href": "https://gpuweb.github.io/gpuweb/#fragments",
+      "linkingText": [
+        "fragments"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "polygon-rasterization",
+        "title": "Polygon Rasterization",
+        "number": "10.3.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "alpha-to-coverage-mask",
       "href": "https://gpuweb.github.io/gpuweb/#alpha-to-coverage-mask",
       "linkingText": [
@@ -8641,7 +8841,7 @@
       "heading": {
         "id": "alpha-to-coverage",
         "title": "Alpha to Coverage",
-        "number": "10.3.3"
+        "number": "10.3.5"
       },
       "definedIn": "prose"
     },
@@ -8659,7 +8859,7 @@
       "heading": {
         "id": "sample-masking",
         "title": "Sample Masking",
-        "number": "10.3.4"
+        "number": "10.3.6"
       },
       "definedIn": "prose"
     },
@@ -8677,7 +8877,7 @@
       "heading": {
         "id": "sample-masking",
         "title": "Sample Masking",
-        "number": "10.3.4"
+        "number": "10.3.6"
       },
       "definedIn": "prose"
     },
@@ -8695,7 +8895,7 @@
       "heading": {
         "id": "sample-masking",
         "title": "Sample Masking",
-        "number": "10.3.4"
+        "number": "10.3.6"
       },
       "definedIn": "prose"
     },
@@ -8715,7 +8915,7 @@
       "heading": {
         "id": "sample-masking",
         "title": "Sample Masking",
-        "number": "10.3.4"
+        "number": "10.3.6"
       },
       "definedIn": "dt"
     },
@@ -8735,7 +8935,7 @@
       "heading": {
         "id": "sample-masking",
         "title": "Sample Masking",
-        "number": "10.3.4"
+        "number": "10.3.6"
       },
       "definedIn": "table"
     },
@@ -8755,7 +8955,7 @@
       "heading": {
         "id": "sample-masking",
         "title": "Sample Masking",
-        "number": "10.3.4"
+        "number": "10.3.6"
       },
       "definedIn": "dt"
     },
@@ -8775,7 +8975,7 @@
       "heading": {
         "id": "sample-masking",
         "title": "Sample Masking",
-        "number": "10.3.4"
+        "number": "10.3.6"
       },
       "definedIn": "table"
     },
@@ -8793,7 +8993,7 @@
       "heading": {
         "id": "sample-masking",
         "title": "Sample Masking",
-        "number": "10.3.4"
+        "number": "10.3.6"
       },
       "definedIn": "prose"
     },
@@ -8811,7 +9011,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -8831,7 +9031,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -8851,7 +9051,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -8871,7 +9071,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -8891,7 +9091,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -8911,7 +9111,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -8929,7 +9129,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -8949,7 +9149,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -8969,7 +9169,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -8989,7 +9189,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -9009,7 +9209,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -9027,7 +9227,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "prose"
     },
@@ -9045,7 +9245,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -9065,7 +9265,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -9085,7 +9285,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -9103,7 +9303,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -9123,7 +9323,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -9143,7 +9343,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -9163,7 +9363,7 @@
       "heading": {
         "id": "primitive-state",
         "title": "Primitive State",
-        "number": "10.3.5"
+        "number": "10.3.7"
       },
       "definedIn": "pre"
     },
@@ -9181,7 +9381,7 @@
       "heading": {
         "id": "multisample-state",
         "title": "Multisample State",
-        "number": "10.3.6"
+        "number": "10.3.8"
       },
       "definedIn": "pre"
     },
@@ -9201,7 +9401,7 @@
       "heading": {
         "id": "multisample-state",
         "title": "Multisample State",
-        "number": "10.3.6"
+        "number": "10.3.8"
       },
       "definedIn": "pre"
     },
@@ -9221,7 +9421,7 @@
       "heading": {
         "id": "multisample-state",
         "title": "Multisample State",
-        "number": "10.3.6"
+        "number": "10.3.8"
       },
       "definedIn": "pre"
     },
@@ -9241,7 +9441,7 @@
       "heading": {
         "id": "multisample-state",
         "title": "Multisample State",
-        "number": "10.3.6"
+        "number": "10.3.8"
       },
       "definedIn": "pre"
     },
@@ -9259,7 +9459,7 @@
       "heading": {
         "id": "multisample-state",
         "title": "Multisample State",
-        "number": "10.3.6"
+        "number": "10.3.8"
       },
       "definedIn": "prose"
     },
@@ -9277,7 +9477,7 @@
       "heading": {
         "id": "fragment-state",
         "title": "Fragment State",
-        "number": "10.3.7"
+        "number": "10.3.9"
       },
       "definedIn": "pre"
     },
@@ -9297,7 +9497,7 @@
       "heading": {
         "id": "fragment-state",
         "title": "Fragment State",
-        "number": "10.3.7"
+        "number": "10.3.9"
       },
       "definedIn": "pre"
     },
@@ -9315,7 +9515,7 @@
       "heading": {
         "id": "fragment-state",
         "title": "Fragment State",
-        "number": "10.3.7"
+        "number": "10.3.9"
       },
       "definedIn": "prose"
     },
@@ -9333,7 +9533,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9353,7 +9553,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9373,7 +9573,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9393,7 +9593,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9411,7 +9611,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9431,7 +9631,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9451,7 +9651,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9469,7 +9669,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9487,7 +9687,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9507,7 +9707,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9527,7 +9727,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9547,7 +9747,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9567,7 +9767,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9587,7 +9787,7 @@
       "heading": {
         "id": "color-target-state",
         "title": "Color Target State",
-        "number": "10.3.8"
+        "number": "10.3.10"
       },
       "definedIn": "pre"
     },
@@ -9605,7 +9805,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9625,7 +9825,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9645,7 +9845,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9665,7 +9865,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9683,7 +9883,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9703,7 +9903,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9723,7 +9923,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9743,7 +9943,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9763,7 +9963,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9783,7 +9983,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9803,7 +10003,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9823,7 +10023,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9843,7 +10043,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9863,7 +10063,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9883,7 +10083,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9903,7 +10103,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9923,7 +10123,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9943,7 +10143,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9961,7 +10161,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -9981,7 +10181,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -10001,7 +10201,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -10021,7 +10221,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -10041,7 +10241,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -10061,7 +10261,7 @@
       "heading": {
         "id": "blend-state",
         "title": "Blend State",
-        "number": "10.3.8.1"
+        "number": "10.3.10.1"
       },
       "definedIn": "pre"
     },
@@ -10079,7 +10279,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10099,7 +10299,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10119,7 +10319,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10139,7 +10339,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10159,7 +10359,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10179,7 +10379,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10199,7 +10399,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10219,7 +10419,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10239,7 +10439,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10259,7 +10459,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10279,7 +10479,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10299,7 +10499,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10317,7 +10517,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10337,7 +10537,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10357,7 +10557,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10377,7 +10577,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10397,7 +10597,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10415,7 +10615,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10435,7 +10635,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10455,7 +10655,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10475,7 +10675,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10495,7 +10695,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10515,7 +10715,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10535,7 +10735,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10555,7 +10755,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10575,7 +10775,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "pre"
     },
@@ -10593,7 +10793,7 @@
       "heading": {
         "id": "depth-stencil-state",
         "title": "Depth/Stencil State",
-        "number": "10.3.9"
+        "number": "10.3.11"
       },
       "definedIn": "prose"
     },
@@ -10611,7 +10811,7 @@
       "heading": {
         "id": "vertex-state",
         "title": "Vertex State",
-        "number": "10.3.10"
+        "number": "10.3.12"
       },
       "definedIn": "pre"
     },
@@ -10631,7 +10831,7 @@
       "heading": {
         "id": "vertex-state",
         "title": "Vertex State",
-        "number": "10.3.10"
+        "number": "10.3.12"
       },
       "definedIn": "pre"
     },
@@ -10651,7 +10851,7 @@
       "heading": {
         "id": "vertex-state",
         "title": "Vertex State",
-        "number": "10.3.10"
+        "number": "10.3.12"
       },
       "definedIn": "pre"
     },
@@ -10669,7 +10869,7 @@
       "heading": {
         "id": "vertex-state",
         "title": "Vertex State",
-        "number": "10.3.10"
+        "number": "10.3.12"
       },
       "definedIn": "prose"
     },
@@ -10687,7 +10887,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10707,7 +10907,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10727,7 +10927,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10747,7 +10947,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10767,7 +10967,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10787,7 +10987,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10807,7 +11007,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10827,7 +11027,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10847,7 +11047,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10867,7 +11067,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10887,7 +11087,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10907,7 +11107,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10927,7 +11127,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10947,7 +11147,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10967,7 +11167,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -10987,7 +11187,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11007,7 +11207,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11027,7 +11227,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11047,7 +11247,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11067,7 +11267,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11087,7 +11287,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11107,7 +11307,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11127,7 +11327,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11147,7 +11347,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11167,7 +11367,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11187,7 +11387,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11207,7 +11407,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11227,7 +11427,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11247,7 +11447,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11267,7 +11467,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11287,7 +11487,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11305,7 +11505,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11325,7 +11525,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11345,7 +11545,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11363,7 +11563,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11383,7 +11583,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11401,7 +11601,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "prose"
     },
@@ -11419,7 +11619,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11439,7 +11639,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11459,7 +11659,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11479,7 +11679,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11497,7 +11697,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11517,7 +11717,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11537,7 +11737,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11557,7 +11757,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "pre"
     },
@@ -11575,7 +11775,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "prose"
     },
@@ -11593,7 +11793,7 @@
       "heading": {
         "id": "vertex-formats",
         "title": "Vertex Formats",
-        "number": "10.3.10.1"
+        "number": "10.3.12.1"
       },
       "definedIn": "prose"
     },
@@ -14127,6 +14327,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpurenderpassencoder-viewport-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-viewport-slot",
+      "linkingText": [
+        "[[viewport]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderPassEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-encoder",
+        "title": "GPURenderPassEncoder",
+        "number": "15.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dictdef-gpurenderpassdescriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpassdescriptor",
       "linkingText": [
@@ -14205,10 +14425,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "abstract-opdef-gpurenderpassdescriptor-gpurenderpassdescriptor-valid-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpurenderpassdescriptor-gpurenderpassdescriptor-valid-usage",
+      "id": "abstract-opdef-gpurenderpassdescriptor-valid-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-gpurenderpassdescriptor-valid-usage",
       "linkingText": [
-        "GPURenderPassDescriptor Valid Usage"
+        "Valid Usage"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -14235,6 +14455,26 @@
       "for": [],
       "access": "private",
       "informative": true,
+      "heading": {
+        "id": "render-pass-encoder-creation",
+        "title": "Creation",
+        "number": "15.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "renderpassdescriptor-renderextent",
+      "href": "https://gpuweb.github.io/gpuweb/#renderpassdescriptor-renderextent",
+      "linkingText": [
+        "renderExtent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RenderPassDescriptor"
+      ],
+      "access": "private",
+      "informative": false,
       "heading": {
         "id": "render-pass-encoder-creation",
         "title": "Creation",
