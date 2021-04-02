@@ -3,7 +3,7 @@
   "defined": {
     "spec": {
       "title": "WebCodecs",
-      "url": "https://wicg.github.io/web-codecs/"
+      "url": "https://w3c.github.io/webcodecs/"
     },
     "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoFrame {\n  constructor(ImageBitmap imageBitmap, optional VideoFrameInit frameInit = {});\n  constructor(PixelFormat pixelFormat, sequence<(Plane or PlaneInit)> planes,\n              optional VideoFrameInit frameInit = {});\n\n  readonly attribute PixelFormat format;\n  readonly attribute FrozenArray<Plane> planes;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute unsigned long cropLeft;\n  readonly attribute unsigned long cropTop;\n  readonly attribute unsigned long cropWidth;\n  readonly attribute unsigned long cropHeight;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;\n  readonly attribute unsigned long long? timestamp;\n\n  undefined destroy();\n  VideoFrame clone();\n\n  Promise<ImageBitmap> createImageBitmap(\n    optional ImageBitmapOptions options = {});\n\n};",
     "href": "https://w3c.github.io/webcodecs/#videoframe"
