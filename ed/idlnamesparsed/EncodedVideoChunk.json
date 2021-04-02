@@ -3,7 +3,7 @@
   "defined": {
     "spec": {
       "title": "WebCodecs",
-      "url": "https://wicg.github.io/web-codecs/"
+      "url": "https://w3c.github.io/webcodecs/"
     },
     "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedVideoChunk {\n  constructor(EncodedVideoChunkInit init);\n  readonly attribute EncodedVideoChunkType type;\n  readonly attribute unsigned long long timestamp;  // microseconds\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute ArrayBuffer data;\n};",
     "href": "https://w3c.github.io/webcodecs/#encodedvideochunk"

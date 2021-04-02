@@ -2,3 +2,11 @@
 % Reffy
 % April 02, 2021
 
+## WebCodecs
+
+- Initial URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
+- This specification was not in the reference crawl report.
+
+

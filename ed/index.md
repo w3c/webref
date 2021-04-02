@@ -2581,7 +2581,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 30 March 2021
+- Crawled version: 2 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Latest published version: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Shortname: css-color-5
@@ -10485,7 +10485,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
 - Crawled URL: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
-- Crawled version: 29 March 2021
+- Crawled version: 2 April 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-image/](https://w3c.github.io/mediacapture-image/)
 - Latest published version: [https://www.w3.org/TR/image-capture/](https://www.w3.org/TR/image-capture/)
 - Shortname: image-capture
@@ -10497,6 +10497,11 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/), related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+- External links to private terms:
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-allowed-required-constraints-for-device-selection`](https://www.w3.org/TR/mediacapture-streams/#dfn-allowed-required-constraints-for-device-selection)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-optional-basic-constraints`](https://www.w3.org/TR/mediacapture-streams/#dfn-optional-basic-constraints)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-advanced-constraints`](https://www.w3.org/TR/mediacapture-streams/#dfn-advanced-constraints)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-required-constraints`](https://www.w3.org/TR/mediacapture-streams/#dfn-required-constraints)
 - External links that neither target definitions nor headings:
      * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindomstring`](https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindomstring)
      * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindouble`](https://www.w3.org/TR/mediacapture-streams/#idl-def-constraindouble)
@@ -15023,15 +15028,15 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebCodecs {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## WebCodecs {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
-- Initial URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
+- Initial URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Crawled version: 30 March 2021
-- Editor's Draft: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
-- Shortname: web-codecs
+- Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
+- Shortname: webcodecs
 
 ### Potential issue(s) {.anomalies}
 
@@ -15042,7 +15047,9 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [WebCodecs](https://w3c.github.io/webcodecs/)
 
 
 ## WebDriver {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
