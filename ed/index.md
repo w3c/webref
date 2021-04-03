@@ -12738,7 +12738,6 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
      * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIX" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 - Broken external links:
-     * [`https://www.w3.org/TR/geolocation-API/#get-current-position`](https://www.w3.org/TR/geolocation-API/#get-current-position)
      * [`https://www.w3.org/TR/geolocation-API/#watch-position`](https://www.w3.org/TR/geolocation-API/#watch-position)
 
 ### Known dependencies on this specification {.dependencies}
