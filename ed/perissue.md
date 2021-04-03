@@ -4825,7 +4825,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/web-animations/#duration`](https://w3c.github.io/web-animations/#duration)
      * [`https://w3c.github.io/web-animations/#target-effect-end`](https://w3c.github.io/web-animations/#target-effect-end)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/):
-     * [`https://www.w3.org/TR/geolocation-API/#get-current-position`](https://www.w3.org/TR/geolocation-API/#get-current-position)
      * [`https://www.w3.org/TR/geolocation-API/#watch-position`](https://www.w3.org/TR/geolocation-API/#watch-position)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/):
      * [`https://html.spec.whatwg.org/#a-form-control%E2%80%99s-value`](https://html.spec.whatwg.org/#a-form-control%E2%80%99s-value)
@@ -4967,7 +4966,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 607 problematic external links found in 142 specifications
+=> 606 problematic external links found in 142 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

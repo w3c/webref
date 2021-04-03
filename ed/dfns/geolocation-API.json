@@ -47,33 +47,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-geolocation-getcurrentposition",
-      "href": "https://w3c.github.io/geolocation-api/#dom-geolocation-getcurrentposition",
-      "linkingText": [
-        "getCurrentPosition()",
-        "getCurrentPosition(successCallback)",
-        "getCurrentPosition(successCallback, errorCallback)",
-        "getCurrentPosition(successCallback, errorCallback, options)"
-      ],
-      "localLinkingText": [
-        "Geolocation.getCurrentPosition",
-        "Geolocation.getCurrentPosition()",
-        "getCurrentPosition"
-      ],
-      "type": "method",
-      "for": [
-        "Geolocation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "geolocation_interface",
-        "title": "Geolocation interface and callbacks",
-        "number": "5"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-positioncallback",
       "href": "https://w3c.github.io/geolocation-api/#dom-positioncallback",
       "linkingText": [
@@ -128,7 +101,7 @@
       "informative": false,
       "heading": {
         "id": "internal-slots",
-        "title": "Internal Slots",
+        "title": "Internal slots",
         "number": "5.1"
       },
       "definedIn": "table"
@@ -148,10 +121,37 @@
       "informative": false,
       "heading": {
         "id": "internal-slots",
-        "title": "Internal Slots",
+        "title": "Internal slots",
         "number": "5.1"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "dom-geolocation-getcurrentposition",
+      "href": "https://w3c.github.io/geolocation-api/#dom-geolocation-getcurrentposition",
+      "linkingText": [
+        "getCurrentPosition()",
+        "getCurrentPosition(successCallback)",
+        "getCurrentPosition(successCallback, errorCallback)",
+        "getCurrentPosition(successCallback, errorCallback, options)"
+      ],
+      "localLinkingText": [
+        "Geolocation.getCurrentPosition",
+        "Geolocation.getCurrentPosition()",
+        "getCurrentPosition"
+      ],
+      "type": "method",
+      "for": [
+        "Geolocation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getcurrentposition-method",
+        "title": "getCurrentPosition() method",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-geolocation-watchposition",
@@ -224,10 +224,33 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-do-permissions-check",
-      "href": "https://w3c.github.io/geolocation-api/#dfn-do-permissions-check",
+      "id": "dfn-acquire-position",
+      "href": "https://w3c.github.io/geolocation-api/#dfn-acquire-position",
       "linkingText": [
-        "do permissions check"
+        "Acquire position",
+        "acquiring a position",
+        "acquire a position"
+      ],
+      "localLinkingText": [
+        "acquiring a position",
+        "acquire a position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-position",
+        "title": "Request position",
+        "number": "5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-check-permission",
+      "href": "https://w3c.github.io/geolocation-api/#dfn-check-permission",
+      "linkingText": [
+        "check permission"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -235,8 +258,8 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "permissions-check",
-        "title": "Permissions check",
+        "id": "check-permission",
+        "title": "Check permission",
         "number": "5.6"
       },
       "definedIn": "prose"
@@ -416,7 +439,7 @@
       "informative": false,
       "heading": {
         "id": "internal-slots-0",
-        "title": "Internal Slots",
+        "title": "Internal slots",
         "number": "7.3"
       },
       "definedIn": "table"
