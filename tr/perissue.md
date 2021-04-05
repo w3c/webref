@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% March 29, 2021
+% April 05, 2021
 
 387 specifications were crawled in this report.
 
@@ -91,8 +91,9 @@ Basically all specifications have normative dependencies on some other specifica
 - [Resize Observer](https://www.w3.org/TR/resize-observer-1/)
 - [Web Cryptography API](https://www.w3.org/TR/WebCryptoAPI/)
 - [WebIDL Level 1](https://www.w3.org/TR/WebIDL-1/)
+- [WebTransport](https://w3c.github.io/webtransport/)
 
-=> 9 specifications found
+=> 10 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -203,7 +204,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [Touch Events](https://www.w3.org/TR/touch-events/)
 - `bigint` used in [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
-- `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/), [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/), [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Spatial Navigation Level 1](https://www.w3.org/TR/css-nav-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/), [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/), [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/), [File API](https://www.w3.org/TR/FileAPI/), [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/), [Generic Sensor API](https://www.w3.org/TR/generic-sensor/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/), [Keyboard Lock](https://wicg.github.io/keyboard-lock/), [Media Session Standard](https://www.w3.org/TR/mediasession/), [Media Source Extensions™](https://www.w3.org/TR/media-source/), [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/), [Payment Handler API](https://www.w3.org/TR/payment-handler/), [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/), [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/), [Remote Playback API](https://www.w3.org/TR/remote-playback/), [Reporting API](https://www.w3.org/TR/reporting-1/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/), [Service Workers 1](https://www.w3.org/TR/service-workers-1/), [SVG Animations](https://svgwg.org/specs/animations/), [User Timing Level 2](https://www.w3.org/TR/user-timing-2/), [Web Animations](https://www.w3.org/TR/web-animations-1/), [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/), [Web MIDI API](https://www.w3.org/TR/webmidi/), [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/), [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1/), [WebXR Anchors Module](https://immersive-web.github.io/anchors/), [WebXR Device API](https://www.w3.org/TR/webxr/), [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
+- `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/), [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/), [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Spatial Navigation Level 1](https://www.w3.org/TR/css-nav-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/), [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/), [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/), [File API](https://www.w3.org/TR/FileAPI/), [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/), [Generic Sensor API](https://www.w3.org/TR/generic-sensor/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/), [Media Session Standard](https://www.w3.org/TR/mediasession/), [Media Source Extensions™](https://www.w3.org/TR/media-source/), [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/), [Payment Handler API](https://www.w3.org/TR/payment-handler/), [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/), [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/), [Remote Playback API](https://www.w3.org/TR/remote-playback/), [Reporting API](https://www.w3.org/TR/reporting-1/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/), [Service Workers 1](https://www.w3.org/TR/service-workers-1/), [SVG Animations](https://svgwg.org/specs/animations/), [User Timing Level 2](https://www.w3.org/TR/user-timing-2/), [Web Animations](https://www.w3.org/TR/web-animations-1/), [Web MIDI API](https://www.w3.org/TR/webmidi/), [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/), [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1/), [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 => 23 WebIDL names found
 
@@ -2276,7 +2277,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES" uses URL [`http://www.w3.org/TR/css-values/`](http://www.w3.org/TR/css-values/)
 - [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/) links to [`https://www.w3.org/TR/cssom-1/`](https://www.w3.org/TR/cssom-1/) but related reference "CSSOM-1" uses URL [`https://drafts.csswg.org/cssom/`](https://drafts.csswg.org/cssom/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Easing Functions Level 1](https://www.w3.org/TR/css-easing-1/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Exclusions Module Level 1](https://www.w3.org/TR/css3-exclusions/) links to:
     * [`https://www.w3.org/TR/css3-box/`](https://www.w3.org/TR/css3-box/) but related reference "CSS3BOX" uses URL [`http://www.w3.org/TR/2007/WD-css3-box-20070809`](http://www.w3.org/TR/2007/WD-css3-box-20070809)
     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but related reference "CSS3-WRITING-MODES" uses URL [`http://www.w3.org/TR/2012/WD-css3-writing-modes-20121115/`](http://www.w3.org/TR/2012/WD-css3-writing-modes-20121115/)
@@ -2566,7 +2566,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/) links to:
-    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
 - [Web Locks API](https://wicg.github.io/web-locks/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "Service-Workers" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
@@ -2577,7 +2576,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/) links to:
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-- [WebCodecs](https://wicg.github.io/web-codecs/) links to [`https://w3c.github.io/media-capabilities/`](https://w3c.github.io/media-capabilities/) but related reference "MEDIA-CAPABILITIES" uses URL [`https://www.w3.org/TR/media-capabilities/`](https://www.w3.org/TR/media-capabilities/)
+- [WebCodecs](https://w3c.github.io/webcodecs/) links to [`https://w3c.github.io/media-capabilities/`](https://w3c.github.io/media-capabilities/) but related reference "MEDIA-CAPABILITIES" uses URL [`https://www.w3.org/TR/media-capabilities/`](https://www.w3.org/TR/media-capabilities/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/) links to:
     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but related reference "wai-aria-1.2" uses URL [`https://www.w3.org/TR/wai-aria-1.2/`](https://www.w3.org/TR/wai-aria-1.2/)
@@ -2604,7 +2603,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 320 inconsistent references for links found in 171 specifications
+=> 318 inconsistent references for links found in 170 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -4051,7 +4050,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
      * [`https://html.spec.whatwg.org/#concept-current-everything`](https://html.spec.whatwg.org/#concept-current-everything)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/):
-     * [`https://wicg.github.io/client-hints-infrastructure/#client-hints-token`](https://wicg.github.io/client-hints-infrastructure/#client-hints-token)
      * [`https://heycam.github.io/webidl/#dfn-dictionary`](https://heycam.github.io/webidl/#dfn-dictionary)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/vibration/):
      * [`https://w3c.github.io/page-visibility/#dfn-steps-to-determine-the-visibility-state`](https://w3c.github.io/page-visibility/#dfn-steps-to-determine-the-visibility-state)
@@ -4119,6 +4117,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
      * [`https://notifications.spec.whatwg.org/#concept-notification`](https://notifications.spec.whatwg.org/#concept-notification)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/):
+     * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-copy`](https://heycam.github.io/webidl/#dfn-get-buffer-source-copy)
      * [`https://heycam.github.io/webidl/#notfounderror`](https://heycam.github.io/webidl/#notfounderror)
      * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
@@ -4131,7 +4130,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#networkerror`](https://heycam.github.io/webidl/#networkerror)
      * [`https://heycam.github.io/webidl/#dfn-perform-steps-once-promise-is-settled`](https://heycam.github.io/webidl/#dfn-perform-steps-once-promise-is-settled)
      * [`https://heycam.github.io/webidl/#invalidmodificationerror`](https://heycam.github.io/webidl/#invalidmodificationerror)
-     * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
      * [`https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate`](https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate)
 - [Web Cryptography API](https://www.w3.org/TR/WebCryptoAPI/):
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-copy`](https://heycam.github.io/webidl/#dfn-get-buffer-source-copy)
@@ -4202,7 +4200,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#concept-body-consume-body`](https://fetch.spec.whatwg.org/#concept-body-consume-body)
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-copy`](https://heycam.github.io/webidl/#dfn-get-buffer-source-copy)
      * [`https://heycam.github.io/webidl/#datacloneerror`](https://heycam.github.io/webidl/#datacloneerror)
-- [WebCodecs](https://wicg.github.io/web-codecs/):
+- [WebCodecs](https://w3c.github.io/webcodecs/):
      * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
      * [`https://heycam.github.io/webidl/#encodingerror`](https://heycam.github.io/webidl/#encodingerror)
@@ -4512,7 +4510,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#networkerror`](https://heycam.github.io/webidl/#networkerror)
      * [`https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over`](https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over)
 
-=> 1677 problematic external links found in 223 specifications
+=> 1676 problematic external links found in 223 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -5011,7 +5009,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Web Serial API](https://wicg.github.io/serial/):
      * [`https://heycam.github.io/webidl/#idl-Uint8Array`](https://heycam.github.io/webidl/#idl-Uint8Array)
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
-- [WebCodecs](https://wicg.github.io/web-codecs/):
+- [WebCodecs](https://w3c.github.io/webcodecs/):
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
 - [WebDriver](https://www.w3.org/TR/webdriver2/):
      * [`https://html.spec.whatwg.org/#dom-document-activeelement`](https://html.spec.whatwg.org/#dom-document-activeelement)
@@ -5030,6 +5028,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/):
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
+- [WebTransport](https://w3c.github.io/webtransport/):
+     * [`https://heycam.github.io/webidl/#idl-Uint8Array`](https://heycam.github.io/webidl/#idl-Uint8Array)
 - [WebUSB API](https://wicg.github.io/webusb/):
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
      * [`https://heycam.github.io/webidl/#idl-DataView`](https://heycam.github.io/webidl/#idl-DataView)
@@ -5049,7 +5049,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
 
-=> 425 problematic external links found in 106 specifications
+=> 426 problematic external links found in 107 specifications
 
 
 ## Broken external links
@@ -5113,6 +5113,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
 - [Console Standard](https://console.spec.whatwg.org/):
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#dfn-namespace-object`](https://heycam.github.io/webidl/#dfn-namespace-object)
@@ -5575,6 +5576,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
      * [`https://heycam.github.io/webidl/#exceptiondef-rangeerror`](https://heycam.github.io/webidl/#exceptiondef-rangeerror)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://streams.spec.whatwg.org/#transformstream-create`](https://streams.spec.whatwg.org/#transformstream-create)
+     * [`https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm)
+     * [`https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm)
 - [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/):
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
 - [Event Timing API](https://wicg.github.io/event-timing/):
@@ -5594,6 +5598,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Fetch Standard](https://fetch.spec.whatwg.org/):
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
+     * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
@@ -5601,7 +5606,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#exceptiondef-rangeerror`](https://heycam.github.io/webidl/#exceptiondef-rangeerror)
      * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
      * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
-     * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
      * [`https://w3c.github.io/webappsec-referrer-policy/#default-referrer-policy`](https://w3c.github.io/webappsec-referrer-policy/#default-referrer-policy)
@@ -6107,6 +6111,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#synthetic-module-records`](https://heycam.github.io/webidl/#synthetic-module-records)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/):
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://www.w3.org/TR/uievents-code/#code-keyw`](https://www.w3.org/TR/uievents-code/#code-keyw)
      * [`https://www.w3.org/TR/uievents-code/#code-keya`](https://www.w3.org/TR/uievents-code/#code-keya)
      * [`https://www.w3.org/TR/uievents-code/#code-keys`](https://www.w3.org/TR/uievents-code/#code-keys)
@@ -6124,6 +6129,8 @@ Links in the body of a specification should be to the same document as that poin
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html):
      * [`https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-navigationpreload`](https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-navigationpreload)
      * [`https://w3c.github.io/ServiceWorker/#dom-fetchevent-preloadresponse`](https://w3c.github.io/ServiceWorker/#dom-fetchevent-preloadresponse)
+     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
+     * [`https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm)
      * [`https://w3c.github.io/network-error-logging/#deliver-a-network-report`](https://w3c.github.io/network-error-logging/#deliver-a-network-report)
      * [`https://heycam.github.io/webidl/#sequence-type`](https://heycam.github.io/webidl/#sequence-type)
 - [Local Font Access API](https://wicg.github.io/local-font-access/):
@@ -6302,6 +6309,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#dfn-create-frozen-array`](https://heycam.github.io/webidl/#dfn-create-frozen-array)
 - [Permissions](https://www.w3.org/TR/permissions/):
      * [`https://w3c.github.io/manifest/#dfn-install`](https://w3c.github.io/manifest/#dfn-install)
+     * [`https://webbluetoothcg.github.io/web-bluetooth/#dom-permissionname-bluetooth`](https://webbluetoothcg.github.io/web-bluetooth/#dom-permissionname-bluetooth)
      * [`https://w3c.github.io/mediacapture-main/#deviceid`](https://w3c.github.io/mediacapture-main/#deviceid)
      * [`https://w3c.github.io/mediacapture-main/#devicechange`](https://w3c.github.io/mediacapture-main/#devicechange)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
@@ -6513,8 +6521,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
      * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
      * [`https://heycam.github.io/webidl/#Function`](https://heycam.github.io/webidl/#Function)
-     * [`https://heycam.github.io/webidl/#idl-constructors`](https://heycam.github.io/webidl/#idl-constructors)
      * [`https://heycam.github.io/webidl/#include`](https://heycam.github.io/webidl/#include)
+     * [`https://heycam.github.io/webidl/#idl-constructors`](https://heycam.github.io/webidl/#idl-constructors)
 - [SVG Accessibility API Mappings](https://www.w3.org/TR/svg-aam-1.0/):
      * [`https://w3c.github.io/core-aam/#keyboard-focus`](https://w3c.github.io/core-aam/#keyboard-focus)
      * [`https://w3c.github.io/core-aam/#exclude_elements2`](https://w3c.github.io/core-aam/#exclude_elements2)
@@ -6638,18 +6646,18 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/):
-     * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
-     * [`https://w3c.github.io/webappsec-secure-contexts/#non-secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#non-secure-contexts)
      * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#dfn-maplike`](https://heycam.github.io/webidl/#dfn-maplike)
      * [`https://heycam.github.io/webidl/#wait-for-all`](https://heycam.github.io/webidl/#wait-for-all)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
+     * [`https://w3c.github.io/permissions/#dom-permissionname-bluetooth`](https://w3c.github.io/permissions/#dom-permissionname-bluetooth)
 - [Web Locks API](https://wicg.github.io/web-locks/):
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
@@ -6725,7 +6733,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
      * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
-- [WebCodecs](https://wicg.github.io/web-codecs/):
+- [WebCodecs](https://w3c.github.io/webcodecs/):
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
@@ -6789,6 +6797,11 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#dom-domexception-name`](https://heycam.github.io/webidl/#dom-domexception-name)
      * [`https://heycam.github.io/webidl/#dom-domexception-code`](https://heycam.github.io/webidl/#dom-domexception-code)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/):
+     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
+     * [`https://streams.spec.whatwg.org/#writablestream-create`](https://streams.spec.whatwg.org/#writablestream-create)
+     * [`https://streams.spec.whatwg.org/#writablestream-create-writealgorithm`](https://streams.spec.whatwg.org/#writablestream-create-writealgorithm)
+     * [`https://streams.spec.whatwg.org/#transformstream-create`](https://streams.spec.whatwg.org/#transformstream-create)
+     * [`https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
      * [`https://heycam.github.io/webidl/#idl-bigint`](https://heycam.github.io/webidl/#idl-bigint)
@@ -6799,13 +6812,16 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#exceptiondef-rangeerror`](https://heycam.github.io/webidl/#exceptiondef-rangeerror)
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
 - [WebTransport](https://w3c.github.io/webtransport/):
-     * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
+     * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
-     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
      * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
+     * [`https://streams.spec.whatwg.org/#writablestream-create`](https://streams.spec.whatwg.org/#writablestream-create)
+     * [`https://streams.spec.whatwg.org/#writablestream-create-writealgorithm`](https://streams.spec.whatwg.org/#writablestream-create-writealgorithm)
+     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
 - [WebUSB API](https://wicg.github.io/webusb/):
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
@@ -6820,6 +6836,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css3-selectors/#sel-after`](https://www.w3.org/TR/css3-selectors/#sel-after)
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/):
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
@@ -6849,6 +6866,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
      * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
@@ -6874,7 +6892,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1580 problematic external links found in 239 specifications
+=> 1598 problematic external links found in 239 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

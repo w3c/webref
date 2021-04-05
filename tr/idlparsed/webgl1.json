@@ -13703,48 +13703,13 @@
         "partial": false
       },
       "WebGLContextEvent": {
-        "fragment": "[Exposed=(Window,Worker),\n Constructor(DOMString type,\n optional WebGLContextEventInit eventInit = {})]\ninterface WebGLContextEvent : Event {\n    readonly attribute DOMString statusMessage;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface WebGLContextEvent : Event {\n    constructor(DOMString type, optional WebGLContextEventInit eventInit = {});\n    readonly attribute DOMString statusMessage;\n};",
         "type": "interface",
         "name": "WebGLContextEvent",
         "inheritance": "Event",
         "members": [
           {
-            "type": "attribute",
-            "name": "statusMessage",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
+            "type": "constructor",
             "arguments": [
               {
                 "type": "argument",
@@ -13780,7 +13745,41 @@
                 "optional": true,
                 "variadic": false
               }
-            ]
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "statusMessage",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
           }
         ],
         "partial": false

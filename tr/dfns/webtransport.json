@@ -297,6 +297,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "senddatagrams",
+      "href": "https://w3c.github.io/webtransport/#senddatagrams",
+      "linkingText": [
+        "sendDatagrams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagrams-transport-procedures",
+        "title": "Procedures",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "datagramduplexstream",
       "href": "https://w3c.github.io/webtransport/#datagramduplexstream",
       "linkingText": [
@@ -664,6 +682,46 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-webtransport-outgoingdatagramsqueue-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransport-outgoingdatagramsqueue-slot",
+      "linkingText": [
+        "[[OutgoingDatagramsQueue]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-constructor",
+        "title": "Constructor",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webtransport-outgoingdatagramshighwatermark-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransport-outgoingdatagramshighwatermark-slot",
+      "linkingText": [
+        "[[OutgoingDatagramsHighWaterMark]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-constructor",
+        "title": "Constructor",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-webtransport-incomingdatagrams-slot",
       "href": "https://w3c.github.io/webtransport/#dom-webtransport-incomingdatagrams-slot",
       "linkingText": [
@@ -688,6 +746,26 @@
       "href": "https://w3c.github.io/webtransport/#dom-webtransport-datagrams-slot",
       "linkingText": [
         "[[Datagrams]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-constructor",
+        "title": "Constructor",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webtransport-outgoingdatagramsexpirationduration-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransport-outgoingdatagramsexpirationduration-slot",
+      "linkingText": [
+        "[[OutgoingDatagramsExpirationDuration]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1386,46 +1464,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-outgoingstream-writable-slot",
-      "href": "https://w3c.github.io/webtransport/#dom-outgoingstream-writable-slot",
-      "linkingText": [
-        "[[Writable]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "OutgoingStream"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "outgoing-stream-overview",
-        "title": "Overview",
-        "number": "9.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-outgoingstream-writable",
-      "href": "https://w3c.github.io/webtransport/#dom-outgoingstream-writable",
-      "linkingText": [
-        "writable"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "OutgoingStream"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "outgoing-stream-attributes",
-        "title": "Attributes",
-        "number": "9.2"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-outgoingstream-writingaborted",
       "href": "https://w3c.github.io/webtransport/#dom-outgoingstream-writingaborted",
       "linkingText": [
@@ -1542,46 +1580,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-incomingstream-readable-slot",
-      "href": "https://w3c.github.io/webtransport/#dom-incomingstream-readable-slot",
-      "linkingText": [
-        "[[Readable]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "IncomingStream"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "incoming-stream-overview",
-        "title": "Overview",
-        "number": "10.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-incomingstream-readable",
-      "href": "https://w3c.github.io/webtransport/#dom-incomingstream-readable",
-      "linkingText": [
-        "readable"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "IncomingStream"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "incoming-stream-attributes",
-        "title": "Attributes",
-        "number": "10.2"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-incomingstream-readingaborted",
       "href": "https://w3c.github.io/webtransport/#dom-incomingstream-readingaborted",
       "linkingText": [
@@ -1638,6 +1636,82 @@
         "title": "11. Interface BidirectionalStream"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-bidirectionalstream-readable",
+      "href": "https://w3c.github.io/webtransport/#dom-bidirectionalstream-readable",
+      "linkingText": [
+        "readable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BidirectionalStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bidirectional-stream",
+        "title": "11. Interface BidirectionalStream"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bidirectionalstream-writable",
+      "href": "https://w3c.github.io/webtransport/#dom-bidirectionalstream-writable",
+      "linkingText": [
+        "writable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BidirectionalStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bidirectional-stream",
+        "title": "11. Interface BidirectionalStream"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bidirectionalstream-readable-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-bidirectionalstream-readable-slot",
+      "linkingText": [
+        "[[Readable]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BidirectionalStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bidirectional-stream",
+        "title": "11. Interface BidirectionalStream"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-bidirectionalstream-writable-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-bidirectionalstream-writable-slot",
+      "linkingText": [
+        "[[Writable]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BidirectionalStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bidirectional-stream",
+        "title": "11. Interface BidirectionalStream"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "sendstream",

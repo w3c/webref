@@ -3,10 +3,10 @@
   "defined": {
     "spec": {
       "title": "WebCodecs",
-      "url": "https://wicg.github.io/web-codecs/"
+      "url": "https://w3c.github.io/webcodecs/"
     },
     "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioDecoder {\n  constructor(AudioDecoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long decodeQueueSize;\n\n  undefined configure(AudioDecoderConfig config);\n  undefined decode(EncodedAudioChunk chunk);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioDecoderSupport> isConfigSupported(AudioDecoderConfig config);\n};",
-    "href": "https://wicg.github.io/web-codecs/#audiodecoder"
+    "href": "https://w3c.github.io/webcodecs/#audiodecoder"
   },
   "extended": [],
   "inheritance": null,

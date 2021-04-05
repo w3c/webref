@@ -5,7 +5,7 @@
       "title": "Web Bluetooth",
       "url": "https://webbluetoothcg.github.io/web-bluetooth/"
     },
-    "fragment": "dictionary BluetoothPermissionDescriptor : PermissionDescriptor {\n  DOMString deviceId;\n  // These match RequestDeviceOptions.\n  sequence<BluetoothLEScanFilterInit> filters;\n  sequence<BluetoothServiceUUID> optionalServices = [];\n  boolean acceptAllDevices = false;\n};",
+    "fragment": "dictionary BluetoothPermissionDescriptor : PermissionDescriptor {\n  DOMString deviceId;\n  // These match RequestDeviceOptions.\n  sequence<BluetoothLEScanFilterInit> filters;\n  sequence<BluetoothServiceUUID> optionalServices = [];\n  sequence<unsigned short> optionalManufacturerData = [];\n  boolean acceptAllDevices = false;\n};",
     "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothpermissiondescriptor"
   },
   "extended": [],
