@@ -1,5 +1,5 @@
 // Source: WebGPU (https://gpuweb.github.io/gpuweb/)
-[Serializable]
+[Exposed=Window, Serializable]
 interface GPUShaderModule {
     Promise<GPUCompilationInfo> compilationInfo();
 };

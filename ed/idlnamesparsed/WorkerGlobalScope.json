@@ -22,13 +22,6 @@
         "url": "https://wicg.github.io/private-network-access/"
       },
       "fragment": "partial interface WorkerGlobalScope {\n  readonly attribute AddressSpace addressSpace;\n};"
-    },
-    {
-      "spec": {
-        "title": "CSS Font Loading Module Level 3",
-        "url": "https://www.w3.org/TR/css-font-loading-3/"
-      },
-      "fragment": "WorkerGlobalScope includes FontFaceSource;"
     }
   ],
   "inheritance": {
@@ -107,20 +100,6 @@
           "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute Crypto crypto;\n};"
         }
       ],
-      "inheritance": null,
-      "includes": []
-    },
-    {
-      "name": "FontFaceSource",
-      "defined": {
-        "spec": {
-          "title": "CSS Font Loading Module Level 3",
-          "url": "https://www.w3.org/TR/css-font-loading-3/"
-        },
-        "fragment": "interface mixin FontFaceSource {\n  readonly attribute FontFaceSet fonts;\n};",
-        "href": "https://drafts.csswg.org/css-font-loading/#fontfacesource"
-      },
-      "extended": [],
       "inheritance": null,
       "includes": []
     }

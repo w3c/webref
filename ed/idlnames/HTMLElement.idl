@@ -34,15 +34,3 @@ HTMLElement includes ElementContentEditable;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 HTMLElement includes HTMLOrSVGElement;
-
-// Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
-HTMLElement includes ElementCSSInlineStyle;
-
-// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
-partial interface HTMLElement {
-  readonly attribute Element? offsetParent;
-  readonly attribute long offsetTop;
-  readonly attribute long offsetLeft;
-  readonly attribute long offsetWidth;
-  readonly attribute long offsetHeight;
-};
