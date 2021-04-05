@@ -1,76 +1,69 @@
-% Diff between report from "March 29, 2021" and reference report from "March 22, 2021"
+% Diff between report from "April 05, 2021" and reference report from "March 29, 2021"
 % Reffy
-% March 29, 2021
+% April 05, 2021
 
-## Device Posture API
+## CSS Easing Functions Level 1
 
-- Initial URL: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
+- Initial URL: [https://www.w3.org/TR/css-easing-1/](https://www.w3.org/TR/css-easing-1/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- This specification was not in the reference crawl report.
+- Editor's Draft: [https://drafts.csswg.org/css-easing/](https://drafts.csswg.org/css-easing/)
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/css3-values/
 
 
-## Device Posture API
+## Keyboard Lock
 
-- Initial URL: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
-- Crawled URL: [https://www.w3.org/TR/screen-fold/](https://www.w3.org/TR/screen-fold/)
-- Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- This specification is not in the new crawl report.
-
-
-## ECMAScript class static initialization blocks
-
-- Initial URL: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
+- Initial URL: [https://wicg.github.io/keyboard-lock/](https://wicg.github.io/keyboard-lock/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
-- This specification was not in the reference crawl report.
+- Editor's Draft: [https://wicg.github.io/keyboard-lock/](https://wicg.github.io/keyboard-lock/)
+- Unknown WebIDL names used: *DEL* void
 
 
-## Fetch Standard
+## Web Bluetooth
 
-- Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
+- Initial URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Inconsistent references for links: *INS* https://www.w3.org/TR/hr-time-2/, https://www.w3.org/TR/hr-time-3/
-
-
-## Origin-bound one-time codes delivered via SMS
-
-- Initial URL: [https://wicg.github.io/sms-one-time-codes/](https://wicg.github.io/sms-one-time-codes/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/sms-one-time-codes/](https://wicg.github.io/sms-one-time-codes/)
+- Editor's Draft: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
+- Unknown WebIDL names used: *DEL* void
 - Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-secure-contexts/
 
 
-## User-Agent Client Hints
+## WebCodecs
 
-- Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
+- Initial URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Missing references for links: *INS* https://w3c.github.io/fingerprinting-guidance/
-
-
-## Web OTP API
-
-- Initial URL: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
-- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-permissions-policy/
-
-
-## WebRTC Encoded Transform
-
-- Initial URL: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
+- Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - This specification was not in the reference crawl report.
 
 
-## WebRTC Insertable Media using Streams
+## WebCodecs
 
-- Initial URL: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
-- Crawled URL: [[object Object]]([object Object])
-- Editor's Draft: [https://w3c.github.io/webrtc-insertable-streams/](https://w3c.github.io/webrtc-insertable-streams/)
+- Initial URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
+- Crawled URL: [https://wicg.github.io/web-codecs/](https://wicg.github.io/web-codecs/)
 - This specification is not in the new crawl report.
+
+
+## WebTransport
+
+- Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
+- Invalid WebIDL content found: *INS* true / *DEL* false
+- Obsolete WebIDL constructs found: *DEL* false
+
+
+## WebXR Anchors Module
+
+- Initial URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
+- Unknown WebIDL names used: *DEL* void
+
+
+## WebXR Hit Test Module
+
+- Initial URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
+- Unknown WebIDL names used: *DEL* void
 
 

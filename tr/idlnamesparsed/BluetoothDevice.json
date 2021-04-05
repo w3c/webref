@@ -5,7 +5,7 @@
       "title": "Web Bluetooth",
       "url": "https://webbluetoothcg.github.io/web-bluetooth/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothDevice : EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? name;\n  readonly attribute BluetoothRemoteGATTServer? gatt;\n\n  Promise<void> watchAdvertisements(\n      optional WatchAdvertisementsOptions options = {});\n  readonly attribute boolean watchingAdvertisements;\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface BluetoothDevice : EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute DOMString? name;\n  readonly attribute BluetoothRemoteGATTServer? gatt;\n\n  Promise<undefined> watchAdvertisements(\n      optional WatchAdvertisementsOptions options = {});\n  readonly attribute boolean watchingAdvertisements;\n};",
     "href": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice"
   },
   "extended": [

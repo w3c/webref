@@ -318,6 +318,26 @@
       "definedIn": "note"
     },
     {
+      "id": "dom-requestdeviceoptions-optionalmanufacturerdata",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-requestdeviceoptions-optionalmanufacturerdata",
+      "linkingText": [
+        "optionalManufacturerData"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RequestDeviceOptions"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "device-discovery",
+        "title": "Device Discovery",
+        "number": "3"
+      },
+      "definedIn": "note"
+    },
+    {
       "id": "dom-bluetooth-deviceinstancemap-slot",
       "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetooth-deviceinstancemap-slot",
       "linkingText": [
@@ -574,26 +594,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-permissionname-bluetooth",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-permissionname-bluetooth",
-      "linkingText": [
-        "\"bluetooth\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "PermissionName"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "permission-api-integration",
-        "title": "Permission API Integration",
-        "number": "3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dictdef-bluetoothpermissiondescriptor",
       "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothpermissiondescriptor",
       "linkingText": [
@@ -656,6 +656,26 @@
       "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothpermissiondescriptor-optionalservices",
       "linkingText": [
         "optionalServices"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "BluetoothPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission-api-integration",
+        "title": "Permission API Integration",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-bluetoothpermissiondescriptor-optionalmanufacturerdata",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothpermissiondescriptor-optionalmanufacturerdata",
+      "linkingText": [
+        "optionalManufacturerData"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -770,6 +790,26 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-allowedbluetoothdevice-allowedmanufacturerdata",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-allowedbluetoothdevice-allowedmanufacturerdata",
+      "linkingText": [
+        "allowedManufacturerData"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AllowedBluetoothDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission-api-integration",
+        "title": "Permission API Integration",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-bluetoothpermissionstorage",
       "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothpermissionstorage",
       "linkingText": [
@@ -864,24 +904,6 @@
         "number": "3.1"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "request-the-bluetooth-permission",
-      "href": "https://webbluetoothcg.github.io/web-bluetooth/#request-the-bluetooth-permission",
-      "linkingText": [
-        "request the \"bluetooth\" permission"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "permission-api-integration",
-        "title": "Permission API Integration",
-        "number": "3.1"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "query-the-bluetooth-permission",
@@ -1342,6 +1364,26 @@
       "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-allowedservices-slot",
       "linkingText": [
         "[[allowedServices]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BluetoothDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bluetoothdevice-interface",
+        "title": "BluetoothDevice",
+        "number": "4.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-bluetoothdevice-allowedmanufacturerdata-slot",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothdevice-allowedmanufacturerdata-slot",
+      "linkingText": [
+        "[[allowedManufacturerData]]"
       ],
       "localLinkingText": [],
       "type": "attribute",

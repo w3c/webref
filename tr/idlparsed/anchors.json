@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "XRAnchor": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface XRAnchor {\n  readonly attribute XRSpace anchorSpace;\n\n  void delete();\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRAnchor {\n  readonly attribute XRSpace anchorSpace;\n\n  undefined delete();\n};",
         "type": "interface",
         "name": "XRAnchor",
         "inheritance": null,
@@ -43,7 +43,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -244,8 +244,7 @@
     },
     "dependencies": {
       "XRAnchor": [
-        "XRSpace",
-        "void"
+        "XRSpace"
       ],
       "XRFrame": [
         "XRAnchor",
@@ -262,7 +261,6 @@
     },
     "externalDependencies": [
       "XRSpace",
-      "void",
       "XRFrame",
       "XRRigidTransform",
       "XRHitTestResult"
