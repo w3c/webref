@@ -17,6 +17,11 @@ partial interface mixin DocumentOrShadowRoot {
   attribute FrozenArray<CSSStyleSheet> adoptedStyleSheets;
 };
 
+// Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
+partial interface mixin DocumentOrShadowRoot {
+  [SameObject] readonly attribute StyleSheetList styleSheets;
+};
+
 // Source: Picture-in-Picture (https://www.w3.org/TR/picture-in-picture/)
 partial interface mixin DocumentOrShadowRoot {
   readonly attribute Element? pictureInPictureElement;
@@ -25,4 +30,9 @@ partial interface mixin DocumentOrShadowRoot {
 // Source: Pointer Lock 2.0 (https://www.w3.org/TR/pointerlock-2/)
 partial interface mixin DocumentOrShadowRoot {
   readonly attribute Element ? pointerLockElement;
+};
+
+// Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
+partial interface mixin DocumentOrShadowRoot {
+    sequence<Animation> getAnimations();
 };

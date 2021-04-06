@@ -21,3 +21,6 @@ WorkerGlobalScope includes WindowOrWorkerGlobalScope;
 partial interface WorkerGlobalScope {
   readonly attribute AddressSpace addressSpace;
 };
+
+// Source: CSS Font Loading Module Level 3 (https://www.w3.org/TR/css-font-loading-3/)
+WorkerGlobalScope includes FontFaceSource;

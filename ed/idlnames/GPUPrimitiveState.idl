@@ -4,4 +4,7 @@ dictionary GPUPrimitiveState {
     GPUIndexFormat stripIndexFormat;
     GPUFrontFace frontFace = "ccw";
     GPUCullMode cullMode = "none";
+
+    // Enable depth clamping (requires "depth-clamping" feature)
+    boolean clampDepth = false;
 };
