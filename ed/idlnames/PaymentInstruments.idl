@@ -5,6 +5,6 @@ interface PaymentInstruments {
   Promise<any> get(DOMString instrumentKey);
   Promise<sequence<DOMString>>  keys();
   Promise<boolean> has(DOMString instrumentKey);
-  Promise<void> set(DOMString instrumentKey, PaymentInstrument details);
-  Promise<void> clear();
+  Promise<undefined> set(DOMString instrumentKey, PaymentInstrument details);
+  Promise<undefined> clear();
 };

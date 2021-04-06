@@ -3,5 +3,5 @@
 interface PaymentManager {
   [SameObject] readonly attribute PaymentInstruments instruments;
   attribute DOMString userHint;
-  Promise<void> enableDelegations(sequence<PaymentDelegation> delegations);
+  Promise<undefined> enableDelegations(sequence<PaymentDelegation> delegations);
 };
