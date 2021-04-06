@@ -24,7 +24,7 @@
     },
     "idlNames": {
       "PaymentManager": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface PaymentManager {\n  [SameObject] readonly attribute PaymentInstruments instruments;\n  attribute DOMString userHint;\n  Promise<void> enableDelegations(sequence<PaymentDelegation> delegations);\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface PaymentManager {\n  [SameObject] readonly attribute PaymentInstruments instruments;\n  attribute DOMString userHint;\n  Promise<undefined> enableDelegations(sequence<PaymentDelegation> delegations);\n};",
         "type": "interface",
         "name": "PaymentManager",
         "inheritance": null,
@@ -82,7 +82,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -168,7 +168,7 @@
         "extAttrs": []
       },
       "PaymentInstruments": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface PaymentInstruments {\n  Promise<boolean> delete(DOMString instrumentKey);\n  Promise<any> get(DOMString instrumentKey);\n  Promise<sequence<DOMString>>  keys();\n  Promise<boolean> has(DOMString instrumentKey);\n  Promise<void> set(DOMString instrumentKey, PaymentInstrument details);\n  Promise<void> clear();\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface PaymentInstruments {\n  Promise<boolean> delete(DOMString instrumentKey);\n  Promise<any> get(DOMString instrumentKey);\n  Promise<sequence<DOMString>>  keys();\n  Promise<boolean> has(DOMString instrumentKey);\n  Promise<undefined> set(DOMString instrumentKey, PaymentInstrument details);\n  Promise<undefined> clear();\n};",
         "type": "interface",
         "name": "PaymentInstruments",
         "inheritance": null,
@@ -345,7 +345,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -402,7 +402,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -572,7 +572,7 @@
         "partial": false
       },
       "CanMakePaymentEvent": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface CanMakePaymentEvent : ExtendableEvent {\n  constructor(DOMString type, optional CanMakePaymentEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  void respondWith(Promise<boolean> canMakePaymentResponse);\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface CanMakePaymentEvent : ExtendableEvent {\n  constructor(DOMString type, optional CanMakePaymentEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  undefined respondWith(Promise<boolean> canMakePaymentResponse);\n};",
         "type": "interface",
         "name": "CanMakePaymentEvent",
         "inheritance": "ExtendableEvent",
@@ -680,7 +680,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -909,7 +909,7 @@
         "partial": false
       },
       "PaymentRequestEvent": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface PaymentRequestEvent : ExtendableEvent {\n  constructor(DOMString type, optional PaymentRequestEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute DOMString paymentRequestId;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  readonly attribute object total;\n  readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;\n  readonly attribute DOMString instrumentKey;\n  readonly attribute boolean requestBillingAddress;\n  readonly attribute object? paymentOptions;\n  readonly attribute FrozenArray<PaymentShippingOption>? shippingOptions;\n  Promise<WindowClient?> openWindow(USVString url);\n  Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);\n  Promise<PaymentRequestDetailsUpdate?> changeShippingAddress(optional AddressInit shippingAddress = {});\n  Promise<PaymentRequestDetailsUpdate?> changeShippingOption(DOMString shippingOption);\n  void respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface PaymentRequestEvent : ExtendableEvent {\n  constructor(DOMString type, optional PaymentRequestEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute DOMString paymentRequestId;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  readonly attribute object total;\n  readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;\n  readonly attribute DOMString instrumentKey;\n  readonly attribute boolean requestBillingAddress;\n  readonly attribute object? paymentOptions;\n  readonly attribute FrozenArray<PaymentShippingOption>? shippingOptions;\n  Promise<WindowClient?> openWindow(USVString url);\n  Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);\n  Promise<PaymentRequestDetailsUpdate?> changeShippingAddress(optional AddressInit shippingAddress = {});\n  Promise<PaymentRequestDetailsUpdate?> changeShippingOption(DOMString shippingOption);\n  undefined respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);\n};",
         "type": "interface",
         "name": "PaymentRequestEvent",
         "inheritance": "ExtendableEvent",
@@ -1324,7 +1324,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -1767,11 +1767,9 @@
       ],
       "PaymentManager": [
         "PaymentInstruments",
-        "void",
         "PaymentDelegation"
       ],
       "PaymentInstruments": [
-        "void",
         "PaymentInstrument"
       ],
       "PaymentInstrument": [
@@ -1784,8 +1782,7 @@
       "CanMakePaymentEvent": [
         "ExtendableEvent",
         "CanMakePaymentEventInit",
-        "PaymentMethodData",
-        "void"
+        "PaymentMethodData"
       ],
       "CanMakePaymentEventInit": [
         "ExtendableEventInit",
@@ -1806,7 +1803,6 @@
         "WindowClient",
         "PaymentRequestDetailsUpdate",
         "AddressInit",
-        "void",
         "PaymentHandlerResponse"
       ],
       "PaymentRequestEventInit": [
@@ -1823,7 +1819,6 @@
     },
     "externalDependencies": [
       "ServiceWorkerRegistration",
-      "void",
       "ServiceWorkerGlobalScope",
       "EventHandler",
       "ExtendableEvent",

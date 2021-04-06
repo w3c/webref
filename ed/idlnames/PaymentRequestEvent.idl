@@ -16,5 +16,5 @@ interface PaymentRequestEvent : ExtendableEvent {
   Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);
   Promise<PaymentRequestDetailsUpdate?> changeShippingAddress(optional AddressInit shippingAddress = {});
   Promise<PaymentRequestDetailsUpdate?> changeShippingOption(DOMString shippingOption);
-  void respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);
+  undefined respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);
 };
