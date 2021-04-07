@@ -8211,7 +8211,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 5 April 2021
+- Crawled version: 7 April 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -8437,6 +8437,7 @@ No informative reference to this spec from other specs.
      * [`https://dom.spec.whatwg.org/#event-listener-type`](https://dom.spec.whatwg.org/#event-listener-type)
      * [`https://dom.spec.whatwg.org/#event-listener-callback`](https://dom.spec.whatwg.org/#event-listener-callback)
      * [`https://fetch.spec.whatwg.org/#abnf`](https://fetch.spec.whatwg.org/#abnf)
+     * [`https://fetch.spec.whatwg.org/#concept-response-timing-info`](https://fetch.spec.whatwg.org/#concept-response-timing-info)
      * [`https://fetch.spec.whatwg.org/#concept-websocket-establish`](https://fetch.spec.whatwg.org/#concept-websocket-establish)
      * [`https://drafts.csswg.org/css2/#inline-box`](https://drafts.csswg.org/css2/#inline-box)
      * [`https://drafts.csswg.org/css2/#line-box`](https://drafts.csswg.org/css2/#line-box)
@@ -8809,6 +8810,8 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css2/#block-boxes%E2%91%A0`](https://drafts.csswg.org/css2/#block-boxes%E2%91%A0)
      * [`https://drafts.csswg.org/css2/#content%E2%91%A0`](https://drafts.csswg.org/css2/#content%E2%91%A0)
      * [`https://w3c.github.io/FileAPI/#DefinitionOfScheme`](https://w3c.github.io/FileAPI/#DefinitionOfScheme)
+     * [`https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry`](https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry)
+     * [`https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry`](https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry)
      * [`https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml`](https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml)
      * [`https://drafts.csswg.org/css-syntax/#conform-classes`](https://drafts.csswg.org/css-syntax/#conform-classes)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-content`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-content)
@@ -10462,7 +10465,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
 - Crawled URL: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
-- Crawled version: 25 November 2020
+- Crawled version: 07 April 2021
 - Editor's Draft: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
 - Latest published version: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
 - Shortname: media-source
@@ -10774,6 +10777,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Gamepad](https://w3c.github.io/gamepad/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Server Timing](https://w3c.github.io/server-timing/)
@@ -14071,7 +14075,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled version: 6 April 2021
+- Crawled version: 7 April 2021
 - Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Shortname: ua-client-hints
 
@@ -15044,7 +15048,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- Crawled version: 30 March 2021
+- Crawled version: 7 April 2021
 - Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Shortname: webcodecs
 
@@ -16602,7 +16606,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 6 April 2021
+- Crawled version: 7 April 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
