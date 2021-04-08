@@ -18,13 +18,9 @@
       "dom-performanceresourcetiming-requeststart",
       "dom-performanceresourcetiming-responsestart",
       "dom-performanceresourcetiming-responseend",
-      "dom-performanceresourcetiming-fetchstart",
-      "dom-performanceresourcetiming-domainlookupstart",
-      "dom-performanceresourcetiming-domainlookupend",
+      "dfn-setup-the-resource-timing-entry",
       "dom-performanceresourcetiming-connectstart",
-      "dom-performanceresourcetiming-connectend",
-      "dom-performanceresourcetiming-redirectstart",
-      "dom-performanceresourcetiming-redirectend"
+      "dom-performanceresourcetiming-connectend"
     ],
     "https://www.w3.org/webperf/": [],
     "https://github.com/w3c/navigation-timing/issues/": [],
@@ -45,11 +41,18 @@
       "navigate",
       "concept-document-window",
       "the-document's-address",
+      "document-load-timing-info",
+      "document-unload-timing-info",
+      "unload-event-start-time",
       "unloading-documents",
+      "unload-event-end-time",
+      "dom-interactive-time",
       "current-document-readiness",
-      "the-end:current-document-readiness",
+      "dom-content-loaded-event-end-time",
       "the-end:event-domcontentloaded",
-      "the-end:current-document-readiness-2",
+      "dom-complete-time",
+      "load-event-start-time",
+      "load-event-end-time",
       "attr-meta-http-equiv-refresh",
       "history-handling-behavior",
       "hh-default",
@@ -57,19 +60,18 @@
       "hh-reload",
       "hh-entry-update",
       "concept-origin",
-      "sandboxed-navigation-browsing-context-flag",
-      "sandboxed-top-level-navigation-without-user-activation-browsing-context-flag",
-      "sandboxed-top-level-navigation-with-user-activation-browsing-context-flag",
-      "browsing-context",
-      "navigate-fragid-step",
-      "refused-to-allow-the-document-to-be-unloaded",
-      "relevant-application-cache",
-      "the-end",
+      "concept-relevant-global",
+      "concept-global-object-realm",
+      "load-timing-info",
+      "previous-document-unload-timing",
       "same-origin",
+      "update-the-session-history-with-the-new-page",
       "relaxing-the-same-origin-restriction",
       "prompt-to-unload-a-document",
       "unload-a-document",
       "fetching-resources",
+      "relevant-application-cache",
+      "the-end",
       "document"
     ],
     "https://www.w3.org/TR/performance-timeline-2/": [
@@ -93,9 +95,7 @@
       "run-service-worker",
       "dfn-containing-service-worker-registration",
       "fetchevent",
-      "dfn-active-worker",
-      "on-fetch-request-algorithm",
-      "dfn-service-worker-registration"
+      "dfn-active-worker"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/unloadEventStart": [],
@@ -113,13 +113,12 @@
     "https://fetch.spec.whatwg.org/": [
       "concept-fetch",
       "redirect-status",
-      "concept-request-method",
-      "concept-request",
-      "concept-request-redirect-count"
+      "fetch-timing-info",
+      "concept-request-method"
     ],
-    "https://tools.ietf.org/html/rfc7230": [
-      "section-6.3",
-      "section-6.5"
+    "https://dom.spec.whatwg.org/": [
+      "concept-document",
+      "document"
     ],
     "https://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html": [
       "sec8.1"
@@ -133,12 +132,10 @@
     "https://datatracker.ietf.org/doc/html/bcp14": [],
     "https://tc39.es/ecma262/": [],
     "https://www.w3.org/TR/navigation-timing/": [],
-    "https://www.w3.org/TR/resource-timing-1/": [],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
     "https://datatracker.ietf.org/doc/html/rfc2616": [],
-    "https://httpwg.org/specs/rfc7234.html": [],
     "https://datatracker.ietf.org/doc/html/rfc8174": [],
     "https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.7329&rep=rep1&type=pdf": [],
-    "https://httpwg.org/specs/rfc7230.html": []
+    "https://httpwg.org/specs/rfc7234.html": []
   }
 }

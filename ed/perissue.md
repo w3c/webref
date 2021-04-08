@@ -2351,6 +2351,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#serialize-an-integer`](https://url.spec.whatwg.org/#serialize-an-integer)
      * [`https://w3c.github.io/FileAPI/#snapshot-state`](https://w3c.github.io/FileAPI/#snapshot-state)
      * [`https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-header-dfn`](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-header-dfn)
+     * [`https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry`](https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry)
+     * [`https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry`](https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry)
      * [`https://heycam.github.io/webidl/#idl-constructors`](https://heycam.github.io/webidl/#idl-constructors)
      * [`https://heycam.github.io/webidl/#internally-create-a-new-object-implementing-the-interface`](https://heycam.github.io/webidl/#internally-create-a-new-object-implementing-the-interface)
      * [`https://w3c.github.io/touch-events/#dfn-touch-point`](https://w3c.github.io/touch-events/#dfn-touch-point)
@@ -2569,6 +2571,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#use-srcset-or-picture`](https://html.spec.whatwg.org/#use-srcset-or-picture)
      * [`https://html.spec.whatwg.org/#plugin`](https://html.spec.whatwg.org/#plugin)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/):
+     * [`https://www.w3.org/TR/resource-timing-2/#dfn-setup-the-resource-timing-entry`](https://www.w3.org/TR/resource-timing-2/#dfn-setup-the-resource-timing-entry)
      * [`https://html.spec.whatwg.org/#the-document's-address`](https://html.spec.whatwg.org/#the-document's-address)
      * [`https://html.spec.whatwg.org/#current-document-readiness`](https://html.spec.whatwg.org/#current-document-readiness)
      * [`https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh`](https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh)
@@ -2577,7 +2580,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#hh-replace`](https://html.spec.whatwg.org/#hh-replace)
      * [`https://html.spec.whatwg.org/#hh-reload`](https://html.spec.whatwg.org/#hh-reload)
      * [`https://html.spec.whatwg.org/#hh-entry-update`](https://html.spec.whatwg.org/#hh-entry-update)
-     * [`https://html.spec.whatwg.org/#refused-to-allow-the-document-to-be-unloaded`](https://html.spec.whatwg.org/#refused-to-allow-the-document-to-be-unloaded)
+     * [`https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page`](https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page)
      * [`https://html.spec.whatwg.org/#prompt-to-unload-a-document`](https://html.spec.whatwg.org/#prompt-to-unload-a-document)
      * [`https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer`](https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer)
      * [`https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry)
@@ -3261,7 +3264,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1202 problematic external links found in 193 specifications
+=> 1205 problematic external links found in 193 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -3955,10 +3958,7 @@ Links in the body of a specification should be to the same document as that poin
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/):
      * [`https://heycam.github.io/webidl/#es-DOMException-constructor-object`](https://heycam.github.io/webidl/#es-DOMException-constructor-object)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/):
-     * [`https://html.spec.whatwg.org/#the-end:current-document-readiness`](https://html.spec.whatwg.org/#the-end:current-document-readiness)
      * [`https://html.spec.whatwg.org/#the-end:event-domcontentloaded`](https://html.spec.whatwg.org/#the-end:event-domcontentloaded)
-     * [`https://html.spec.whatwg.org/#the-end:current-document-readiness-2`](https://html.spec.whatwg.org/#the-end:current-document-readiness-2)
-     * [`https://html.spec.whatwg.org/#navigate-fragid-step`](https://html.spec.whatwg.org/#navigate-fragid-step)
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/):
      * [`https://w3c.github.io/vibration/#idl-def-vibratepattern`](https://w3c.github.io/vibration/#idl-def-vibratepattern)
@@ -4039,8 +4039,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css3-images/#intrinsic-width`](https://www.w3.org/TR/css3-images/#intrinsic-width)
      * [`https://www.w3.org/TR/css3-images/#intrinsic-height`](https://www.w3.org/TR/css3-images/#intrinsic-height)
      * [`https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio`](https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio)
-- [Server Timing](https://w3c.github.io/server-timing/):
-     * [`https://www.w3.org/TR/navigation-timing-2/#step-create-object`](https://www.w3.org/TR/navigation-timing-2/#step-create-object)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/):
      * [`https://w3c.github.io/core-aam/#keyboard-focus`](https://w3c.github.io/core-aam/#keyboard-focus)
      * [`https://w3c.github.io/accname/#step2A`](https://w3c.github.io/accname/#step2A)
@@ -4213,7 +4211,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
      * [`https://heycam.github.io/webidl/#dfn-DOMException`](https://heycam.github.io/webidl/#dfn-DOMException)
 
-=> 876 problematic external links found in 70 specifications
+=> 872 problematic external links found in 69 specifications
 
 
 ## Broken external links
@@ -4637,8 +4635,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css2/#block-boxes%E2%91%A0`](https://drafts.csswg.org/css2/#block-boxes%E2%91%A0)
      * [`https://drafts.csswg.org/css2/#content%E2%91%A0`](https://drafts.csswg.org/css2/#content%E2%91%A0)
      * [`https://w3c.github.io/FileAPI/#DefinitionOfScheme`](https://w3c.github.io/FileAPI/#DefinitionOfScheme)
-     * [`https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry`](https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry)
-     * [`https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry`](https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry)
      * [`https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml`](https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml)
      * [`https://drafts.csswg.org/css-syntax/#conform-classes`](https://drafts.csswg.org/css-syntax/#conform-classes)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-content`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-content)
@@ -4841,6 +4837,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Server Timing](https://w3c.github.io/server-timing/):
      * [`https://www.w3.org/TR/resource-timing-2/#performanceresourcetiming`](https://www.w3.org/TR/resource-timing-2/#performanceresourcetiming)
      * [`https://www.w3.org/TR/resource-timing-2/#step-create-object`](https://www.w3.org/TR/resource-timing-2/#step-create-object)
+     * [`https://www.w3.org/TR/navigation-timing-2/#step-create-object`](https://www.w3.org/TR/navigation-timing-2/#step-create-object)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/):
      * [`https://w3c.github.io/push-api/#h-the-push-event`](https://w3c.github.io/push-api/#h-the-push-event)
      * [`https://w3c.github.io/push-api/#dfn-push`](https://w3c.github.io/push-api/#dfn-push)
@@ -4974,7 +4971,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 612 problematic external links found in 143 specifications
+=> 611 problematic external links found in 143 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
