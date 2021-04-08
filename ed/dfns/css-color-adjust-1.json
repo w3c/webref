@@ -5,15 +5,73 @@
   },
   "dfns": [
     {
-      "id": "color-schemes",
-      "href": "https://drafts.csswg.org/css-color-adjust-1/#color-schemes",
+      "id": "preferred-color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#preferred-color-scheme",
       "linkingText": [
-        "color schemes"
+        "preferred color scheme"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preferred",
+        "title": "Preferred Color Schemes",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#color-scheme",
+      "linkingText": [
+        "color scheme"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preferred",
+        "title": "Preferred Color Schemes",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "light-color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#light-color-scheme",
+      "linkingText": [
+        "light color scheme"
+      ],
+      "localLinkingText": [
+        "light"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preferred",
+        "title": "Preferred Color Schemes",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dark-color-scheme",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#dark-color-scheme",
+      "linkingText": [
+        "dark color scheme"
+      ],
+      "localLinkingText": [
+        "dark"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "preferred",
@@ -49,7 +107,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "color-scheme-prop",
@@ -82,8 +140,47 @@
       "id": "valdef-color-scheme-light",
       "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-color-scheme-light",
       "linkingText": [
-        "light",
+        "light"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color-scheme"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-scheme-prop",
+        "title": "Opting Into a Preferred Color Scheme: the color-scheme property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-color-scheme-dark",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-color-scheme-dark",
+      "linkingText": [
         "dark"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color-scheme"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-scheme-prop",
+        "title": "Opting Into a Preferred Color Scheme: the color-scheme property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-color-scheme-custom-ident",
+      "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-color-scheme-custom-ident",
+      "linkingText": [
+        "<custom-ident>"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -188,7 +285,7 @@
       "informative": false,
       "heading": {
         "id": "perf",
-        "title": "Performance-based Color Schemes: the color-adjust property",
+        "title": "Performance-based Color Adjustments: the color-adjust property",
         "number": "4"
       },
       "definedIn": "table"
@@ -208,7 +305,7 @@
       "informative": false,
       "heading": {
         "id": "perf",
-        "title": "Performance-based Color Schemes: the color-adjust property",
+        "title": "Performance-based Color Adjustments: the color-adjust property",
         "number": "4"
       },
       "definedIn": "dt"
@@ -228,7 +325,7 @@
       "informative": false,
       "heading": {
         "id": "perf",
-        "title": "Performance-based Color Schemes: the color-adjust property",
+        "title": "Performance-based Color Adjustments: the color-adjust property",
         "number": "4"
       },
       "definedIn": "dt"
