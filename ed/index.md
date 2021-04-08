@@ -4298,7 +4298,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Crawled URL: [https://drafts.csswg.org/css-overflow-3/](https://drafts.csswg.org/css-overflow-3/)
-- Crawled version: 22 December 2020
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-overflow-3/](https://drafts.csswg.org/css-overflow-3/)
 - Latest published version: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Shortname: css-overflow-3
@@ -6215,7 +6215,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-writing-modes-4/](https://www.w3.org/TR/css-writing-modes-4/)
 - Crawled URL: [https://drafts.csswg.org/css-writing-modes-4/](https://drafts.csswg.org/css-writing-modes-4/)
-- Crawled version: 3 March 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-writing-modes-4/](https://drafts.csswg.org/css-writing-modes-4/)
 - Latest published version: [https://www.w3.org/TR/css-writing-modes-4/](https://www.w3.org/TR/css-writing-modes-4/)
 - Shortname: css-writing-modes-4
@@ -6656,6 +6656,7 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Network Information API](https://wicg.github.io/netinfo/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/)
@@ -8463,6 +8464,8 @@ No informative reference to this spec from other specs.
      * [`https://url.spec.whatwg.org/#serialize-an-integer`](https://url.spec.whatwg.org/#serialize-an-integer)
      * [`https://w3c.github.io/FileAPI/#snapshot-state`](https://w3c.github.io/FileAPI/#snapshot-state)
      * [`https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-header-dfn`](https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-header-dfn)
+     * [`https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry`](https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry)
+     * [`https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry`](https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry)
      * [`https://heycam.github.io/webidl/#idl-constructors`](https://heycam.github.io/webidl/#idl-constructors)
      * [`https://heycam.github.io/webidl/#internally-create-a-new-object-implementing-the-interface`](https://heycam.github.io/webidl/#internally-create-a-new-object-implementing-the-interface)
      * [`https://w3c.github.io/touch-events/#dfn-touch-point`](https://w3c.github.io/touch-events/#dfn-touch-point)
@@ -8808,8 +8811,6 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css2/#block-boxes%E2%91%A0`](https://drafts.csswg.org/css2/#block-boxes%E2%91%A0)
      * [`https://drafts.csswg.org/css2/#content%E2%91%A0`](https://drafts.csswg.org/css2/#content%E2%91%A0)
      * [`https://w3c.github.io/FileAPI/#DefinitionOfScheme`](https://w3c.github.io/FileAPI/#DefinitionOfScheme)
-     * [`https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry`](https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry)
-     * [`https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry`](https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry)
      * [`https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml`](https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml)
      * [`https://drafts.csswg.org/css-syntax/#conform-classes`](https://drafts.csswg.org/css-syntax/#conform-classes)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-content`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-content)
@@ -9145,7 +9146,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Crawled URL: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
-- Crawled version: 15 February 2021
+- Crawled version: 08 April 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Shortname: webrtc-stats
@@ -10739,7 +10740,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Crawled URL: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
-- Crawled version: 08 March 2021
+- Crawled version: 08 April 2021
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Shortname: navigation-timing-2
@@ -10747,6 +10748,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - External links to private terms:
+     * [`https://www.w3.org/TR/resource-timing-2/#dfn-setup-the-resource-timing-entry`](https://www.w3.org/TR/resource-timing-2/#dfn-setup-the-resource-timing-entry)
      * [`https://html.spec.whatwg.org/#the-document's-address`](https://html.spec.whatwg.org/#the-document's-address)
      * [`https://html.spec.whatwg.org/#current-document-readiness`](https://html.spec.whatwg.org/#current-document-readiness)
      * [`https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh`](https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh)
@@ -10755,16 +10757,13 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#hh-replace`](https://html.spec.whatwg.org/#hh-replace)
      * [`https://html.spec.whatwg.org/#hh-reload`](https://html.spec.whatwg.org/#hh-reload)
      * [`https://html.spec.whatwg.org/#hh-entry-update`](https://html.spec.whatwg.org/#hh-entry-update)
-     * [`https://html.spec.whatwg.org/#refused-to-allow-the-document-to-be-unloaded`](https://html.spec.whatwg.org/#refused-to-allow-the-document-to-be-unloaded)
+     * [`https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page`](https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page)
      * [`https://html.spec.whatwg.org/#prompt-to-unload-a-document`](https://html.spec.whatwg.org/#prompt-to-unload-a-document)
      * [`https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer`](https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer)
      * [`https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry)
      * [`https://www.w3.org/TR/service-workers-1/#run-service-worker`](https://www.w3.org/TR/service-workers-1/#run-service-worker)
 - External links that neither target definitions nor headings:
-     * [`https://html.spec.whatwg.org/#the-end:current-document-readiness`](https://html.spec.whatwg.org/#the-end:current-document-readiness)
      * [`https://html.spec.whatwg.org/#the-end:event-domcontentloaded`](https://html.spec.whatwg.org/#the-end:event-domcontentloaded)
-     * [`https://html.spec.whatwg.org/#the-end:current-document-readiness-2`](https://html.spec.whatwg.org/#the-end:current-document-readiness-2)
-     * [`https://html.spec.whatwg.org/#navigate-fragid-step`](https://html.spec.whatwg.org/#navigate-fragid-step)
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#relevant-application-cache`](https://html.spec.whatwg.org/#relevant-application-cache)
@@ -12307,7 +12306,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Crawled URL: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
-- Crawled version: 02 April 2021
+- Crawled version: 08 April 2021
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Shortname: resource-timing-2
@@ -12927,11 +12926,10 @@ Informative references to this spec from:
 - External links to private terms:
      * [`https://www.w3.org/TR/resource-timing-2/#dfn-current-document`](https://www.w3.org/TR/resource-timing-2/#dfn-current-document)
      * [`https://www.w3.org/TR/navigation-timing-2/#dfn-current-document`](https://www.w3.org/TR/navigation-timing-2/#dfn-current-document)
-- External links that neither target definitions nor headings:
-     * [`https://www.w3.org/TR/navigation-timing-2/#step-create-object`](https://www.w3.org/TR/navigation-timing-2/#step-create-object)
 - Broken external links:
      * [`https://www.w3.org/TR/resource-timing-2/#performanceresourcetiming`](https://www.w3.org/TR/resource-timing-2/#performanceresourcetiming)
      * [`https://www.w3.org/TR/resource-timing-2/#step-create-object`](https://www.w3.org/TR/resource-timing-2/#step-create-object)
+     * [`https://www.w3.org/TR/navigation-timing-2/#step-create-object`](https://www.w3.org/TR/navigation-timing-2/#step-create-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -14958,7 +14956,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wasm-core-1/](https://www.w3.org/TR/wasm-core-1/)
 - Crawled URL: [https://webassembly.github.io/spec/core/bikeshed/](https://webassembly.github.io/spec/core/bikeshed/)
-- Crawled version: 6 April 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://webassembly.github.io/spec/core/bikeshed/](https://webassembly.github.io/spec/core/bikeshed/)
 - Latest published version: [https://www.w3.org/TR/wasm-core-1/](https://www.w3.org/TR/wasm-core-1/)
 - Shortname: wasm-core-1
@@ -14983,7 +14981,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Crawled URL: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
-- Crawled version: 6 April 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Shortname: wasm-js-api-1
@@ -15014,7 +15012,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Crawled URL: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
-- Crawled version: 6 April 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Shortname: wasm-web-api-1

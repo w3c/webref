@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-04-08T06:45:15.610Z",
+  "date": "2021-04-08T12:33:09.960Z",
   "stats": {
     "crawled": 387,
     "errors": 0,
@@ -11123,7 +11123,7 @@
     {
       "title": "CSS Overflow Module Level 3",
       "shortname": "css-overflow-3",
-      "date": "22 December 2020",
+      "date": "8 April 2021",
       "url": "https://www.w3.org/TR/css-overflow-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-overflow-3/",
@@ -16619,7 +16619,7 @@
     {
       "title": "CSS Writing Modes Level 4",
       "shortname": "css-writing-modes-4",
-      "date": "3 March 2021",
+      "date": "8 April 2021",
       "url": "https://www.w3.org/TR/css-writing-modes-4/",
       "release": {
         "url": "https://www.w3.org/TR/css-writing-modes-4/",
@@ -17972,6 +17972,11 @@
               "url": "https://www.w3.org/TR/mixed-content/",
               "title": "Mixed Content Level 2",
               "crawled": "https://w3c.github.io/webappsec-mixed-content/"
+            },
+            {
+              "url": "https://www.w3.org/TR/navigation-timing-2/",
+              "title": "Navigation Timing Level 2",
+              "crawled": "https://w3c.github.io/navigation-timing/"
             },
             {
               "url": "https://wicg.github.io/netinfo/",
@@ -33259,6 +33264,8 @@
             "https://url.spec.whatwg.org/#serialize-an-integer",
             "https://w3c.github.io/FileAPI/#snapshot-state",
             "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-header-dfn",
+            "https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry",
+            "https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry",
             "https://heycam.github.io/webidl/#idl-constructors",
             "https://heycam.github.io/webidl/#internally-create-a-new-object-implementing-the-interface",
             "https://w3c.github.io/touch-events/#dfn-touch-point",
@@ -33606,8 +33613,6 @@
             "https://drafts.csswg.org/css2/#block-boxes%E2%91%A0",
             "https://drafts.csswg.org/css2/#content%E2%91%A0",
             "https://w3c.github.io/FileAPI/#DefinitionOfScheme",
-            "https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry",
-            "https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry",
             "https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml",
             "https://drafts.csswg.org/css-syntax/#conform-classes",
             "https://drafts.csswg.org/css-align/#propdef-propdef-justify-content",
@@ -33719,7 +33724,7 @@
     {
       "title": "Identifiers for WebRTC's Statistics API",
       "shortname": "webrtc-stats",
-      "date": "15 February 2021",
+      "date": "08 April 2021",
       "url": "https://www.w3.org/TR/webrtc-stats/",
       "release": {
         "url": "https://www.w3.org/TR/webrtc-stats/",
@@ -37606,7 +37611,7 @@
     {
       "title": "Navigation Timing Level 2",
       "shortname": "navigation-timing-2",
-      "date": "08 March 2021",
+      "date": "08 April 2021",
       "url": "https://www.w3.org/TR/navigation-timing-2/",
       "release": {
         "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -37702,6 +37707,7 @@
         },
         "xrefs": {
           "notExported": [
+            "https://www.w3.org/TR/resource-timing-2/#dfn-setup-the-resource-timing-entry",
             "https://html.spec.whatwg.org/#the-document's-address",
             "https://html.spec.whatwg.org/#current-document-readiness",
             "https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh",
@@ -37710,17 +37716,14 @@
             "https://html.spec.whatwg.org/#hh-replace",
             "https://html.spec.whatwg.org/#hh-reload",
             "https://html.spec.whatwg.org/#hh-entry-update",
-            "https://html.spec.whatwg.org/#refused-to-allow-the-document-to-be-unloaded",
+            "https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page",
             "https://html.spec.whatwg.org/#prompt-to-unload-a-document",
             "https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer",
             "https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry",
             "https://www.w3.org/TR/service-workers-1/#run-service-worker"
           ],
           "notDfn": [
-            "https://html.spec.whatwg.org/#the-end:current-document-readiness",
             "https://html.spec.whatwg.org/#the-end:event-domcontentloaded",
-            "https://html.spec.whatwg.org/#the-end:current-document-readiness-2",
-            "https://html.spec.whatwg.org/#navigate-fragid-step",
             "https://html.spec.whatwg.org/#document"
           ],
           "brokenLinks": [
@@ -41069,7 +41072,7 @@
     {
       "title": "Resource Timing Level 2",
       "shortname": "resource-timing-2",
-      "date": "02 April 2021",
+      "date": "08 April 2021",
       "url": "https://www.w3.org/TR/resource-timing-2/",
       "release": {
         "url": "https://www.w3.org/TR/resource-timing-2/",
@@ -42748,12 +42751,11 @@
             "https://www.w3.org/TR/resource-timing-2/#dfn-current-document",
             "https://www.w3.org/TR/navigation-timing-2/#dfn-current-document"
           ],
-          "notDfn": [
-            "https://www.w3.org/TR/navigation-timing-2/#step-create-object"
-          ],
+          "notDfn": [],
           "brokenLinks": [
             "https://www.w3.org/TR/resource-timing-2/#performanceresourcetiming",
-            "https://www.w3.org/TR/resource-timing-2/#step-create-object"
+            "https://www.w3.org/TR/resource-timing-2/#step-create-object",
+            "https://www.w3.org/TR/navigation-timing-2/#step-create-object"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -47750,7 +47752,7 @@
     {
       "title": "WebAssembly Core Specification",
       "shortname": "wasm-core-1",
-      "date": "6 April 2021",
+      "date": "8 April 2021",
       "url": "https://www.w3.org/TR/wasm-core-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-core-1/",
@@ -47799,7 +47801,7 @@
     {
       "title": "WebAssembly JavaScript Interface",
       "shortname": "wasm-js-api-1",
-      "date": "6 April 2021",
+      "date": "8 April 2021",
       "url": "https://www.w3.org/TR/wasm-js-api-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -47863,7 +47865,7 @@
     {
       "title": "WebAssembly Web API",
       "shortname": "wasm-web-api-1",
-      "date": "6 April 2021",
+      "date": "8 April 2021",
       "url": "https://www.w3.org/TR/wasm-web-api-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-web-api-1/",
