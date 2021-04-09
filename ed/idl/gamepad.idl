@@ -42,3 +42,8 @@ interface GamepadEvent: Event {
 dictionary GamepadEventInit : EventInit {
   required Gamepad gamepad;
 };
+
+partial interface mixin WindowEventHandlers {
+  attribute EventHandler ongamepadconnected;
+  attribute EventHandler ongamepaddisconnected;
+};

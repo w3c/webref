@@ -5,7 +5,7 @@
       "title": "WebXR Depth Sensing Module",
       "url": "https://immersive-web.github.io/depth-sensing/"
     },
-    "fragment": "interface XRWebGLDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute WebGLTexture texture;\n};",
+    "fragment": "[Exposed=Window]\ninterface XRWebGLDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute WebGLTexture texture;\n};",
     "href": "https://immersive-web.github.io/depth-sensing/#xrwebgldepthinformation"
   },
   "extended": [],

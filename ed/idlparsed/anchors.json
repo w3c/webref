@@ -8,7 +8,8 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "XRAnchor"
+          "XRAnchor",
+          "XRAnchorSet"
         ]
       }
     },
@@ -70,7 +71,7 @@
         "partial": false
       },
       "XRAnchorSet": {
-        "fragment": "interface XRAnchorSet {\n  readonly setlike<XRAnchor>;\n};",
+        "fragment": "[Exposed=Window]\ninterface XRAnchorSet {\n  readonly setlike<XRAnchor>;\n};",
         "type": "interface",
         "name": "XRAnchorSet",
         "inheritance": null,
@@ -93,7 +94,17 @@
             "async": false
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       }
     },
@@ -239,7 +250,8 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "XRAnchor"
+        "XRAnchor",
+        "XRAnchorSet"
       ]
     },
     "dependencies": {

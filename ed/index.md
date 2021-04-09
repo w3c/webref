@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% April 08, 2021
+% April 09, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -7552,7 +7552,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Crawled URL: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
-- Crawled version: 25 March 2021
+- Crawled version: 08 April 2021
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Shortname: gamepad
@@ -7581,7 +7581,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
 - Crawled URL: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
-- Crawled version: 25 March 2021
+- Crawled version: 08 April 2021
 - Editor's Draft: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
 - Shortname: gamepad-extensions
 
@@ -13403,7 +13403,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 31 March 2021
+- Crawled version: 9 April 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
@@ -14187,7 +14187,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Crawled URL: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
-- Crawled version: 21 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
 - Latest published version: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
 - Shortname: web-animations-1
@@ -14947,7 +14947,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebAssembly Core Specification {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## WebAssembly Core Specification {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -16854,7 +16854,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
 - Crawled URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
-- Crawled version: 1 April 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
 - Shortname: anchors
 
@@ -16932,7 +16932,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://immersive-web.github.io/depth-sensing/](https://immersive-web.github.io/depth-sensing/)
 - Crawled URL: [https://immersive-web.github.io/depth-sensing/](https://immersive-web.github.io/depth-sensing/)
-- Crawled version: 23 March 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://immersive-web.github.io/depth-sensing/](https://immersive-web.github.io/depth-sensing/)
 - Shortname: depth-sensing
 
