@@ -1388,7 +1388,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/CSS21/](https://www.w3.org/TR/CSS21/)
 - Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Crawled version: 21 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
 - Latest published version: [https://www.w3.org/TR/CSS21/](https://www.w3.org/TR/CSS21/)
 - Shortname: CSS21
@@ -1500,7 +1500,6 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
@@ -1527,7 +1526,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
 - Crawled URL: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Crawled version: 21 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
 - Latest published version: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
 - Shortname: CSS22
@@ -1843,7 +1842,6 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
@@ -1900,7 +1898,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Crawled URL: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
-- Crawled version: 8 March 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-ui-4/](https://drafts.csswg.org/css-ui-4/)
 - Latest published version: [https://www.w3.org/TR/css-ui-4/](https://www.w3.org/TR/css-ui-4/)
 - Shortname: css-ui-4
@@ -2005,7 +2003,6 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -2053,7 +2050,6 @@ Normative references to this spec from:
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
@@ -2205,7 +2201,6 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -2685,7 +2680,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Crawled URL: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
-- Crawled version: 2 April 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
 - Latest published version: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Shortname: css-contain-2
@@ -2732,7 +2727,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-counter-styles-3/](https://www.w3.org/TR/css-counter-styles-3/)
 - Crawled URL: [https://drafts.csswg.org/css-counter-styles/](https://drafts.csswg.org/css-counter-styles/)
-- Crawled version: 21 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-counter-styles/](https://drafts.csswg.org/css-counter-styles/)
 - Latest published version: [https://www.w3.org/TR/css-counter-styles-3/](https://www.w3.org/TR/css-counter-styles-3/)
 - Shortname: css-counter-styles-3
@@ -2766,7 +2761,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-highlight-api-1/](https://www.w3.org/TR/css-highlight-api-1/)
 - Crawled URL: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
-- Crawled version: 25 March 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
 - Latest published version: [https://www.w3.org/TR/css-highlight-api-1/](https://www.w3.org/TR/css-highlight-api-1/)
 - Shortname: css-highlight-api-1
@@ -2790,7 +2785,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
 - Crawled URL: [https://drafts.csswg.org/css-variables/](https://drafts.csswg.org/css-variables/)
-- Crawled version: 26 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-variables/](https://drafts.csswg.org/css-variables/)
 - Latest published version: [https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
 - Shortname: css-variables-1
@@ -2876,7 +2871,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Crawled URL: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
-- Crawled version: 30 March 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
 - Latest published version: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Shortname: css-display-3
@@ -2960,7 +2955,6 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
@@ -3016,7 +3010,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
 - Crawled URL: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
-- Crawled version: 21 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
 - Shortname: css-env-1
 
@@ -3130,7 +3124,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
 - Crawled URL: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
-- Crawled version: 25 March 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
 - Latest published version: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
 - Shortname: css-flexbox-1
@@ -3229,7 +3223,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Crawled URL: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
-- Crawled version: 6 April 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Shortname: css-fonts-4
@@ -3286,7 +3280,6 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -3311,7 +3304,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-break-3/](https://www.w3.org/TR/css-break-3/)
 - Crawled URL: [https://drafts.csswg.org/css-break/](https://drafts.csswg.org/css-break/)
-- Crawled version: 6 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-break/](https://drafts.csswg.org/css-break/)
 - Latest published version: [https://www.w3.org/TR/css-break-3/](https://www.w3.org/TR/css-break-3/)
 - Shortname: css-break-3
@@ -3386,7 +3379,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-break-4/](https://www.w3.org/TR/css-break-4/)
 - Crawled URL: [https://drafts.csswg.org/css-break-4/](https://drafts.csswg.org/css-break-4/)
-- Crawled version: 18 September 2020
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-break-4/](https://drafts.csswg.org/css-break-4/)
 - Latest published version: [https://www.w3.org/TR/css-break-4/](https://www.w3.org/TR/css-break-4/)
 - Shortname: css-break-4
@@ -3452,7 +3445,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-gcpm-3/](https://www.w3.org/TR/css-gcpm-3/)
 - Crawled URL: [https://drafts.csswg.org/css-gcpm/](https://drafts.csswg.org/css-gcpm/)
-- Crawled version: 8 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-gcpm/](https://drafts.csswg.org/css-gcpm/)
 - Latest published version: [https://www.w3.org/TR/css-gcpm-3/](https://www.w3.org/TR/css-gcpm-3/)
 - Shortname: css-gcpm-3
@@ -3526,7 +3519,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-content-3/](https://www.w3.org/TR/css-content-3/)
 - Crawled URL: [https://drafts.csswg.org/css-content-3/](https://drafts.csswg.org/css-content-3/)
-- Crawled version: 15 December 2020
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-content-3/](https://drafts.csswg.org/css-content-3/)
 - Latest published version: [https://www.w3.org/TR/css-content-3/](https://www.w3.org/TR/css-content-3/)
 - Shortname: css-content-3
@@ -3846,7 +3839,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 
 
 ## CSS Line Grid Module Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -3892,7 +3884,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-lists-3/](https://www.w3.org/TR/css-lists-3/)
 - Crawled URL: [https://drafts.csswg.org/css-lists-3/](https://drafts.csswg.org/css-lists-3/)
-- Crawled version: 8 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-lists-3/](https://drafts.csswg.org/css-lists-3/)
 - Latest published version: [https://www.w3.org/TR/css-lists-3/](https://www.w3.org/TR/css-lists-3/)
 - Shortname: css-lists-3
@@ -4205,7 +4197,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
 - Crawled URL: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
-- Crawled version: 18 January 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
 - Latest published version: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
 - Shortname: cssom-1
@@ -4634,7 +4626,6 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -4689,7 +4680,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-pseudo-4/](https://www.w3.org/TR/css-pseudo-4/)
 - Crawled URL: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
-- Crawled version: 19 March 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-pseudo-4/](https://drafts.csswg.org/css-pseudo-4/)
 - Latest published version: [https://www.w3.org/TR/css-pseudo-4/](https://www.w3.org/TR/css-pseudo-4/)
 - Shortname: css-pseudo-4
@@ -4868,7 +4859,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-ruby-1/](https://www.w3.org/TR/css-ruby-1/)
 - Crawled URL: [https://drafts.csswg.org/css-ruby-1/](https://drafts.csswg.org/css-ruby-1/)
-- Crawled version: 22 March 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-ruby-1/](https://drafts.csswg.org/css-ruby-1/)
 - Latest published version: [https://www.w3.org/TR/css-ruby-1/](https://www.w3.org/TR/css-ruby-1/)
 - Shortname: css-ruby-1
@@ -5166,7 +5157,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-nav-1/](https://www.w3.org/TR/css-nav-1/)
 - Crawled URL: [https://drafts.csswg.org/css-nav-1/](https://drafts.csswg.org/css-nav-1/)
-- Crawled version: 9 November 2020
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-nav-1/](https://drafts.csswg.org/css-nav-1/)
 - Latest published version: [https://www.w3.org/TR/css-nav-1/](https://www.w3.org/TR/css-nav-1/)
 - Shortname: css-nav-1
@@ -5211,7 +5202,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-speech-1/](https://www.w3.org/TR/css-speech-1/)
 - Crawled URL: [https://drafts.csswg.org/css-speech-1/](https://drafts.csswg.org/css-speech-1/)
-- Crawled version: 21 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-speech-1/](https://drafts.csswg.org/css-speech-1/)
 - Latest published version: [https://www.w3.org/TR/css-speech-1/](https://www.w3.org/TR/css-speech-1/)
 - Shortname: css-speech-1
@@ -5458,7 +5449,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Crawled URL: [https://drafts.csswg.org/css-text-decor-4/](https://drafts.csswg.org/css-text-decor-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-text-decor-4/](https://drafts.csswg.org/css-text-decor-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-decor-4/](https://www.w3.org/TR/css-text-decor-4/)
 - Shortname: css-text-decor-4
@@ -5515,7 +5506,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Crawled URL: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
-- Crawled version: 30 March 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Shortname: css-text-3
@@ -5557,7 +5548,6 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -5582,7 +5572,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-text-4/](https://www.w3.org/TR/css-text-4/)
 - Crawled URL: [https://drafts.csswg.org/css-text-4/](https://drafts.csswg.org/css-text-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-text-4/](https://drafts.csswg.org/css-text-4/)
 - Latest published version: [https://www.w3.org/TR/css-text-4/](https://www.w3.org/TR/css-text-4/)
 - Shortname: css-text-4
@@ -9460,7 +9450,6 @@ Normative references to this spec from:
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -10008,7 +9997,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## MathML Core {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+## MathML Core {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -10020,6 +10009,18 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Missing references for links: 
+     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/css-fonts-4/`](https://www.w3.org/TR/css-fonts-4/)
+     * [`https://www.w3.org/TR/css-backgrounds-3/`](https://www.w3.org/TR/css-backgrounds-3/)
+     * [`https://www.w3.org/TR/css-display-3/`](https://www.w3.org/TR/css-display-3/)
+     * [`https://www.w3.org/TR/selectors-3/`](https://www.w3.org/TR/selectors-3/)
+     * [`https://www.w3.org/TR/css-sizing-3/`](https://www.w3.org/TR/css-sizing-3/)
+     * [`https://www.w3.org/TR/css-align-3/`](https://www.w3.org/TR/css-align-3/)
+     * [`https://www.w3.org/TR/css-position-3/`](https://www.w3.org/TR/css-position-3/)
+     * [`https://www.w3.org/TR/css-box-3/`](https://www.w3.org/TR/css-box-3/)
+     * [`https://www.w3.org/TR/css-text-3/`](https://www.w3.org/TR/css-text-3/)
+     * [`https://www.w3.org/TR/css-layout-api-1/`](https://www.w3.org/TR/css-layout-api-1/)
 - External links to private terms:
      * [`https://html.spec.whatwg.org/#embedding-custom-non-visible-data-with-the-data-*-attributes`](https://html.spec.whatwg.org/#embedding-custom-non-visible-data-with-the-data-*-attributes)
      * [`https://html.spec.whatwg.org/#presentational-hints`](https://html.spec.whatwg.org/#presentational-hints)
@@ -10328,7 +10329,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Shortname: mediaqueries-4
@@ -10376,7 +10377,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Crawled URL: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
-- Crawled version: 20 March 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-5/](https://drafts.csswg.org/mediaqueries-5/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-5/](https://www.w3.org/TR/mediaqueries-5/)
 - Shortname: mediaqueries-5
@@ -12588,7 +12589,6 @@ Normative references to this spec from:
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Image Resource](https://w3c.github.io/image-resource/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
@@ -12826,7 +12826,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Crawled URL: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
-- Crawled version: 22 February 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
 - Latest published version: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Shortname: selectors-4
@@ -14601,7 +14601,6 @@ Normative references to this spec from:
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -15034,13 +15033,13 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebCodecs {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true}
+## WebCodecs {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- Crawled version: 7 April 2021
+- Crawled version: 8 April 2021
 - Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Shortname: webcodecs
 
@@ -15053,9 +15052,7 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-Informative references to this spec from:
-
-- [WebCodecs](https://w3c.github.io/webcodecs/)
+No informative reference to this spec from other specs.
 
 
 ## WebDriver {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
