@@ -417,6 +417,48 @@
           ],
           "partial": true
         }
+      ],
+      "WindowEventHandlers": [
+        {
+          "fragment": "partial interface mixin WindowEventHandlers {\n  attribute EventHandler ongamepadconnected;\n  attribute EventHandler ongamepaddisconnected;\n};",
+          "type": "interface mixin",
+          "name": "WindowEventHandlers",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "ongamepadconnected",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "ongamepaddisconnected",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -446,13 +488,18 @@
       "GamepadEventInit": [
         "EventInit",
         "Gamepad"
+      ],
+      "WindowEventHandlers": [
+        "EventHandler"
       ]
     },
     "externalDependencies": [
       "DOMHighResTimeStamp",
       "Navigator",
       "Event",
-      "EventInit"
+      "EventInit",
+      "WindowEventHandlers",
+      "EventHandler"
     ],
     "hasObsoleteIdl": false
   }

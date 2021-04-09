@@ -5,7 +5,7 @@
       "title": "WebXR Depth Sensing Module",
       "url": "https://immersive-web.github.io/depth-sensing/"
     },
-    "fragment": "interface XRCPUDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute ArrayBuffer data;\n\n  float getDepthInMeters(float x, float y);\n};",
+    "fragment": "[Exposed=Window]\ninterface XRCPUDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute ArrayBuffer data;\n\n  float getDepthInMeters(float x, float y);\n};",
     "href": "https://immersive-web.github.io/depth-sensing/#xrcpudepthinformation"
   },
   "extended": [],
