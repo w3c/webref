@@ -1,6 +1,5 @@
 // Source: WebRTC Encoded Transform (https://w3c.github.io/webrtc-encoded-transform/)
 [Exposed=Window]
 interface RTCRtpScriptTransform {
-    constructor(Worker worker, optional any options);
-    // FIXME: add messaging methods.
+    constructor(Worker worker, optional any options, optional sequence<object> transfer);
 };
