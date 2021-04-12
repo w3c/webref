@@ -23,7 +23,7 @@
     },
     "idlNames": {
       "PeriodicSyncManager": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface PeriodicSyncManager {\n    Promise<undefined> register(DOMString tag, optional BackgroundSyncOptions options);\n    Promise<sequence<DOMString>> getTags();\n    Promise<undefined> unregister(DOMString tag);\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PeriodicSyncManager {\n    Promise<undefined> register(DOMString tag, optional BackgroundSyncOptions options = {});\n    Promise<sequence<DOMString>> getTags();\n    Promise<undefined> unregister(DOMString tag);\n};",
         "type": "interface",
         "name": "PeriodicSyncManager",
         "inheritance": null,
@@ -77,7 +77,9 @@
                   "union": false,
                   "idlType": "BackgroundSyncOptions"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }

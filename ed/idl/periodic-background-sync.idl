@@ -14,7 +14,7 @@ partial interface ServiceWorkerRegistration {
 
 [Exposed=(Window,Worker)]
 interface PeriodicSyncManager {
-    Promise<undefined> register(DOMString tag, optional BackgroundSyncOptions options);
+    Promise<undefined> register(DOMString tag, optional BackgroundSyncOptions options = {});
     Promise<sequence<DOMString>> getTags();
     Promise<undefined> unregister(DOMString tag);
 };
