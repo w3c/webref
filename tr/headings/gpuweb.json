@@ -12,7 +12,7 @@
     {
       "id": "subtitle",
       "level": 2,
-      "title": "Editor’s Draft, 1 April 2021"
+      "title": "Editor’s Draft, 9 April 2021"
     },
     {
       "id": "abstract",
@@ -557,88 +557,52 @@
       "number": "10.3.1"
     },
     {
-      "id": "primitive-clipping",
-      "level": 4,
-      "title": "Primitive clipping",
-      "number": "10.3.2"
-    },
-    {
-      "id": "rasterization",
-      "level": 4,
-      "title": "Rasterization",
-      "number": "10.3.3"
-    },
-    {
-      "id": "polygon-rasterization",
-      "level": 5,
-      "title": "Polygon Rasterization",
-      "number": "10.3.3.1"
-    },
-    {
-      "id": "no-color-output",
-      "level": 4,
-      "title": "No Color Output",
-      "number": "10.3.4"
-    },
-    {
-      "id": "alpha-to-coverage",
-      "level": 4,
-      "title": "Alpha to Coverage",
-      "number": "10.3.5"
-    },
-    {
-      "id": "sample-masking",
-      "level": 4,
-      "title": "Sample Masking",
-      "number": "10.3.6"
-    },
-    {
       "id": "primitive-state",
       "level": 4,
       "title": "Primitive State",
-      "number": "10.3.7"
+      "number": "10.3.2"
     },
     {
       "id": "multisample-state",
       "level": 4,
       "title": "Multisample State",
-      "number": "10.3.8"
+      "number": "10.3.3"
     },
     {
       "id": "fragment-state",
       "level": 4,
       "title": "Fragment State",
-      "number": "10.3.9"
+      "number": "10.3.4"
     },
     {
       "id": "color-target-state",
       "level": 4,
       "title": "Color Target State",
-      "number": "10.3.10"
+      "number": "10.3.5"
     },
     {
       "id": "blend-state",
       "level": 5,
       "title": "Blend State",
-      "number": "10.3.10.1"
+      "number": "10.3.5.1"
     },
     {
       "id": "depth-stencil-state",
       "level": 4,
       "title": "Depth/Stencil State",
-      "number": "10.3.11"
+      "number": "10.3.6"
     },
     {
       "id": "vertex-state",
       "level": 4,
       "title": "Vertex State",
-      "number": "10.3.12"
+      "number": "10.3.7"
     },
     {
       "id": "vertex-formats",
       "level": 5,
       "title": "Vertex Formats",
-      "number": "10.3.12.1"
+      "number": "10.3.7.1"
     },
     {
       "id": "command-buffers",
@@ -899,13 +863,13 @@
     {
       "id": "queryset-creation",
       "level": 4,
-      "title": "Creation",
+      "title": "QuerySet Creation",
       "number": "18.1.1"
     },
     {
-      "id": "queryset-finalization",
+      "id": "queryset-destruction",
       "level": 4,
-      "title": "Finalization",
+      "title": "QuerySet Destruction",
       "number": "18.1.2"
     },
     {
@@ -985,91 +949,192 @@
       "number": "20.3"
     },
     {
+      "id": "detailed-operations",
+      "level": 2,
+      "title": "21. Detailed Operations"
+    },
+    {
+      "id": "transfer-operations",
+      "level": 3,
+      "title": "Transfer",
+      "number": "21.1"
+    },
+    {
+      "id": "computing-operations",
+      "level": 3,
+      "title": "Computing",
+      "number": "21.2"
+    },
+    {
+      "id": "rendering-operations",
+      "level": 3,
+      "title": "Rendering",
+      "number": "21.3"
+    },
+    {
+      "id": "index-resolution",
+      "level": 4,
+      "title": "Index Resolution",
+      "number": "21.3.1"
+    },
+    {
+      "id": "vertex-processing",
+      "level": 4,
+      "title": "Vertex Processing",
+      "number": "21.3.2"
+    },
+    {
+      "id": "primitive-assembly",
+      "level": 4,
+      "title": "Primitive Assembly",
+      "number": "21.3.3"
+    },
+    {
+      "id": "primitive-clipping",
+      "level": 4,
+      "title": "Primitive Clipping",
+      "number": "21.3.4"
+    },
+    {
+      "id": "rasterization",
+      "level": 4,
+      "title": "Rasterization",
+      "number": "21.3.5"
+    },
+    {
+      "id": "point-rasterization",
+      "level": 5,
+      "title": "Point Rasterization",
+      "number": "21.3.5.1"
+    },
+    {
+      "id": "line-rasterization",
+      "level": 5,
+      "title": "Line Rasterization",
+      "number": "21.3.5.2"
+    },
+    {
+      "id": "polygon-rasterization",
+      "level": 5,
+      "title": "Polygon Rasterization",
+      "number": "21.3.5.3"
+    },
+    {
+      "id": "fragment-processing",
+      "level": 4,
+      "title": "Fragment Processing",
+      "number": "21.3.6"
+    },
+    {
+      "id": "no-color-output",
+      "level": 4,
+      "title": "No Color Output",
+      "number": "21.3.7"
+    },
+    {
+      "id": "alpha-to-coverage",
+      "level": 4,
+      "title": "Alpha to Coverage",
+      "number": "21.3.8"
+    },
+    {
+      "id": "sample-frequency-shading",
+      "level": 4,
+      "title": "Sample frequency shading",
+      "number": "21.3.9"
+    },
+    {
+      "id": "sample-masking",
+      "level": 4,
+      "title": "Sample Masking",
+      "number": "21.3.10"
+    },
+    {
       "id": "type-definitions",
       "level": 2,
-      "title": "21. Type Definitions"
+      "title": "22. Type Definitions"
     },
     {
       "id": "colors-and-vectors",
       "level": 3,
       "title": "Colors & Vectors",
-      "number": "21.1"
+      "number": "22.1"
     },
     {
       "id": "feature-index",
       "level": 2,
-      "title": "22. Feature Index"
+      "title": "23. Feature Index"
     },
     {
       "id": "depth-clamping",
       "level": 3,
       "title": "depth-clamping",
-      "number": "22.1"
+      "number": "23.1"
     },
     {
       "id": "depth24unorm-stencil8",
       "level": 3,
       "title": "depth24unorm-stencil8",
-      "number": "22.2"
+      "number": "23.2"
     },
     {
       "id": "depth32float-stencil8",
       "level": 3,
       "title": "depth32float-stencil8",
-      "number": "22.3"
+      "number": "23.3"
     },
     {
       "id": "pipeline-statistics-query",
       "level": 3,
       "title": "pipeline-statistics-query",
-      "number": "22.4"
+      "number": "23.4"
     },
     {
       "id": "texture-compression-bc",
       "level": 3,
       "title": "texture-compression-bc",
-      "number": "22.5"
+      "number": "23.5"
     },
     {
       "id": "timestamp-query",
       "level": 3,
       "title": "timestamp-query",
-      "number": "22.6"
+      "number": "23.6"
     },
     {
       "id": "appendices",
       "level": 2,
-      "title": "23. Appendices"
+      "title": "24. Appendices"
     },
     {
       "id": "texture-format-caps",
       "level": 3,
       "title": "Texture Format Capabilities",
-      "number": "23.1"
+      "number": "24.1"
     },
     {
       "id": "plain-color-formats",
       "level": 4,
       "title": "Plain color formats",
-      "number": "23.1.1"
+      "number": "24.1.1"
     },
     {
       "id": "depth-formats",
       "level": 4,
       "title": "Depth/stencil formats",
-      "number": "23.1.2"
+      "number": "24.1.2"
     },
     {
       "id": "packed-formats",
       "level": 4,
       "title": "Packed formats",
-      "number": "23.1.3"
+      "number": "24.1.3"
     },
     {
       "id": "temp-dfn-usages",
       "level": 3,
       "title": "Temporary usages of non-exported dfns",
-      "number": "23.2"
+      "number": "24.2"
     },
     {
       "id": "conformance",

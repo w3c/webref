@@ -23,7 +23,7 @@
     },
     "idlNames": {
       "PeriodicSyncManager": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface PeriodicSyncManager {\n    Promise<void> register(DOMString tag, optional BackgroundSyncOptions options);\n    Promise<sequence<DOMString>> getTags();\n    Promise<void> unregister(DOMString tag);\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PeriodicSyncManager {\n    Promise<undefined> register(DOMString tag, optional BackgroundSyncOptions options);\n    Promise<sequence<DOMString>> getTags();\n    Promise<undefined> unregister(DOMString tag);\n};",
         "type": "interface",
         "name": "PeriodicSyncManager",
         "inheritance": null,
@@ -44,7 +44,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -134,7 +134,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -241,32 +241,13 @@
         "partial": false
       },
       "PeriodicSyncEvent": {
-        "fragment": "[\n    Constructor(DOMString type, PeriodicSyncEventInit init),\n    Exposed=ServiceWorker\n] interface PeriodicSyncEvent : ExtendableEvent {\n    readonly attribute DOMString tag;\n  };",
+        "fragment": "[Exposed=ServiceWorker]\ninterface PeriodicSyncEvent : ExtendableEvent {\n    constructor(DOMString type, PeriodicSyncEventInit init);\n    readonly attribute DOMString tag;\n};",
         "type": "interface",
         "name": "PeriodicSyncEvent",
         "inheritance": "ExtendableEvent",
         "members": [
           {
-            "type": "attribute",
-            "name": "tag",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
+            "type": "constructor",
             "arguments": [
               {
                 "type": "argument",
@@ -300,8 +281,26 @@
                 "optional": false,
                 "variadic": false
               }
-            ]
+            ],
+            "extAttrs": []
           },
+          {
+            "type": "attribute",
+            "name": "tag",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
           {
             "type": "extended-attribute",
             "name": "Exposed",
@@ -410,7 +409,6 @@
         "PeriodicSyncManager"
       ],
       "PeriodicSyncManager": [
-        "void",
         "BackgroundSyncOptions"
       ],
       "BackgroundSyncOptions": [],
@@ -426,7 +424,6 @@
       "ServiceWorkerGlobalScope",
       "EventHandler",
       "ServiceWorkerRegistration",
-      "void",
       "ExtendableEventInit",
       "ExtendableEvent"
     ],

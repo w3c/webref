@@ -422,6 +422,13 @@
             "url": "https://wicg.github.io/portals/"
           },
           "fragment": "partial interface mixin WindowEventHandlers {\n    attribute EventHandler onportalactivate;\n};"
+        },
+        {
+          "spec": {
+            "title": "Gamepad",
+            "url": "https://www.w3.org/TR/gamepad/"
+          },
+          "fragment": "partial interface mixin WindowEventHandlers {\n  attribute EventHandler ongamepadconnected;\n  attribute EventHandler ongamepaddisconnected;\n};"
         }
       ],
       "inheritance": null,

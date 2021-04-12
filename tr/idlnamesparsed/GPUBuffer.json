@@ -5,7 +5,7 @@
       "title": "WebGPU",
       "url": "https://gpuweb.github.io/gpuweb/"
     },
-    "fragment": "[Serializable]\ninterface GPUBuffer {\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
+    "fragment": "[Exposed=Window, Serializable]\ninterface GPUBuffer {\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpubuffer"
   },
   "extended": [

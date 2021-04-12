@@ -27,7 +27,14 @@
           "VideoFrame"
         ]
       },
-      "functions": {}
+      "functions": {
+        "Window": [
+          "Plane"
+        ],
+        "DedicatedWorker": [
+          "Plane"
+        ]
+      }
     },
     "idlNames": {
       "AudioDecoder": {
@@ -3051,7 +3058,7 @@
         "partial": false
       },
       "Plane": {
-        "fragment": "interface Plane {\n  readonly attribute unsigned long stride;\n  readonly attribute unsigned long rows;\n  readonly attribute unsigned long length;\n\n  undefined readInto(ArrayBufferView dst);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface Plane {\n  readonly attribute unsigned long stride;\n  readonly attribute unsigned long rows;\n  readonly attribute unsigned long length;\n\n  undefined readInto(ArrayBufferView dst);\n};",
         "type": "interface",
         "name": "Plane",
         "inheritance": null,
@@ -3134,7 +3141,24 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "PlaneInit": {
@@ -3216,7 +3240,8 @@
         "EncodedAudioChunk",
         "EncodedVideoChunk",
         "AudioFrame",
-        "VideoFrame"
+        "VideoFrame",
+        "Plane"
       ],
       "DedicatedWorker": [
         "AudioDecoder",
@@ -3226,7 +3251,8 @@
         "EncodedAudioChunk",
         "EncodedVideoChunk",
         "AudioFrame",
-        "VideoFrame"
+        "VideoFrame",
+        "Plane"
       ]
     },
     "dependencies": {

@@ -263,6 +263,7 @@ dictionary VideoFrameInit {
   unsigned long long timestamp;
 };
 
+[Exposed=(Window,DedicatedWorker)]
 interface Plane {
   readonly attribute unsigned long stride;
   readonly attribute unsigned long rows;

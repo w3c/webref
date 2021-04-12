@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% April 05, 2021
+% April 12, 2021
 
 387 specifications were crawled in this report.
 
@@ -204,7 +204,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [Touch Events](https://www.w3.org/TR/touch-events/)
 - `bigint` used in [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
-- `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/), [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/), [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Spatial Navigation Level 1](https://www.w3.org/TR/css-nav-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/), [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/), [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/), [File API](https://www.w3.org/TR/FileAPI/), [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/), [Generic Sensor API](https://www.w3.org/TR/generic-sensor/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/), [Media Session Standard](https://www.w3.org/TR/mediasession/), [Media Source Extensions™](https://www.w3.org/TR/media-source/), [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/), [Payment Handler API](https://www.w3.org/TR/payment-handler/), [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/), [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/), [Remote Playback API](https://www.w3.org/TR/remote-playback/), [Reporting API](https://www.w3.org/TR/reporting-1/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/), [Service Workers 1](https://www.w3.org/TR/service-workers-1/), [SVG Animations](https://svgwg.org/specs/animations/), [User Timing Level 2](https://www.w3.org/TR/user-timing-2/), [Web Animations](https://www.w3.org/TR/web-animations-1/), [Web MIDI API](https://www.w3.org/TR/webmidi/), [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/), [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1/), [WebXR Device API](https://www.w3.org/TR/webxr/)
+- `void` used in [Background Fetch](https://wicg.github.io/background-fetch/), [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Content Index](https://wicg.github.io/content-index/spec/), [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/), [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/), [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Spatial Navigation Level 1](https://www.w3.org/TR/css-nav-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/), [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/), [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/), [File API](https://www.w3.org/TR/FileAPI/), [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/), [Generic Sensor API](https://www.w3.org/TR/generic-sensor/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/), [Media Session Standard](https://www.w3.org/TR/mediasession/), [Media Source Extensions™](https://www.w3.org/TR/media-source/), [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/), [Payment Handler API](https://www.w3.org/TR/payment-handler/), [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/), [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/), [Remote Playback API](https://www.w3.org/TR/remote-playback/), [Reporting API](https://www.w3.org/TR/reporting-1/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/), [Service Workers 1](https://www.w3.org/TR/service-workers-1/), [SVG Animations](https://svgwg.org/specs/animations/), [User Timing Level 2](https://www.w3.org/TR/user-timing-2/), [Web Animations](https://www.w3.org/TR/web-animations-1/), [Web MIDI API](https://www.w3.org/TR/webmidi/), [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1/), [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 => 23 WebIDL names found
 
@@ -3253,6 +3253,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://dom.spec.whatwg.org/#event-listener-type`](https://dom.spec.whatwg.org/#event-listener-type)
      * [`https://dom.spec.whatwg.org/#event-listener-callback`](https://dom.spec.whatwg.org/#event-listener-callback)
      * [`https://fetch.spec.whatwg.org/#abnf`](https://fetch.spec.whatwg.org/#abnf)
+     * [`https://fetch.spec.whatwg.org/#concept-response-timing-info`](https://fetch.spec.whatwg.org/#concept-response-timing-info)
      * [`https://fetch.spec.whatwg.org/#concept-websocket-establish`](https://fetch.spec.whatwg.org/#concept-websocket-establish)
      * [`https://drafts.csswg.org/cssom/#create-a-css-style-sheet`](https://drafts.csswg.org/cssom/#create-a-css-style-sheet)
      * [`https://drafts.csswg.org/cssom/#remove-a-css-style-sheet`](https://drafts.csswg.org/cssom/#remove-a-css-style-sheet)
@@ -3590,6 +3591,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#media-element`](https://html.spec.whatwg.org/#media-element)
      * [`https://heycam.github.io/webidl/#dfn-dictionary-member`](https://heycam.github.io/webidl/#dfn-dictionary-member)
 - [MediaStream Image Capture](https://www.w3.org/TR/image-capture/):
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-allowed-required-constraints-for-device-selection`](https://www.w3.org/TR/mediacapture-streams/#dfn-allowed-required-constraints-for-device-selection)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-optional-basic-constraints`](https://www.w3.org/TR/mediacapture-streams/#dfn-optional-basic-constraints)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-advanced-constraints`](https://www.w3.org/TR/mediacapture-streams/#dfn-advanced-constraints)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-required-constraints`](https://www.w3.org/TR/mediacapture-streams/#dfn-required-constraints)
      * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
      * [`https://heycam.github.io/webidl/#unknownerror`](https://heycam.github.io/webidl/#unknownerror)
@@ -4510,7 +4515,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#networkerror`](https://heycam.github.io/webidl/#networkerror)
      * [`https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over`](https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over)
 
-=> 1676 problematic external links found in 223 specifications
+=> 1681 problematic external links found in 223 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -5886,6 +5891,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css2/#visuren`](https://drafts.csswg.org/css2/#visuren)
      * [`https://w3c.github.io/FileAPI/#DefinitionOfScheme`](https://w3c.github.io/FileAPI/#DefinitionOfScheme)
      * [`https://w3c.github.io/webappsec-referrer-policy/#default-referrer-policy`](https://w3c.github.io/webappsec-referrer-policy/#default-referrer-policy)
+     * [`https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry`](https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry)
+     * [`https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry`](https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#idl-constructors`](https://heycam.github.io/webidl/#idl-constructors)
      * [`https://heycam.github.io/webidl/#overridden-constructor-steps`](https://heycam.github.io/webidl/#overridden-constructor-steps)
@@ -6129,8 +6136,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html):
      * [`https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-navigationpreload`](https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-navigationpreload)
      * [`https://w3c.github.io/ServiceWorker/#dom-fetchevent-preloadresponse`](https://w3c.github.io/ServiceWorker/#dom-fetchevent-preloadresponse)
-     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm)
      * [`https://w3c.github.io/network-error-logging/#deliver-a-network-report`](https://w3c.github.io/network-error-logging/#deliver-a-network-report)
      * [`https://heycam.github.io/webidl/#sequence-type`](https://heycam.github.io/webidl/#sequence-type)
 - [Local Font Access API](https://wicg.github.io/local-font-access/):
@@ -6680,6 +6685,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/):
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
      * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
@@ -6797,11 +6803,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#dom-domexception-name`](https://heycam.github.io/webidl/#dom-domexception-name)
      * [`https://heycam.github.io/webidl/#dom-domexception-code`](https://heycam.github.io/webidl/#dom-domexception-code)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/):
-     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
-     * [`https://streams.spec.whatwg.org/#writablestream-create`](https://streams.spec.whatwg.org/#writablestream-create)
-     * [`https://streams.spec.whatwg.org/#writablestream-create-writealgorithm`](https://streams.spec.whatwg.org/#writablestream-create-writealgorithm)
-     * [`https://streams.spec.whatwg.org/#transformstream-create`](https://streams.spec.whatwg.org/#transformstream-create)
-     * [`https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
      * [`https://heycam.github.io/webidl/#idl-bigint`](https://heycam.github.io/webidl/#idl-bigint)
@@ -6892,7 +6893,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1598 problematic external links found in 239 specifications
+=> 1594 problematic external links found in 239 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

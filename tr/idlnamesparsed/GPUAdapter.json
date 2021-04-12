@@ -5,7 +5,7 @@
       "title": "WebGPU",
       "url": "https://gpuweb.github.io/gpuweb/"
     },
-    "fragment": "interface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUAdapterFeatures features;\n    [SameObject] readonly attribute GPUAdapterLimits limits;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+    "fragment": "[Exposed=Window]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUAdapterFeatures features;\n    [SameObject] readonly attribute GPUAdapterLimits limits;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuadapter"
   },
   "extended": [],
