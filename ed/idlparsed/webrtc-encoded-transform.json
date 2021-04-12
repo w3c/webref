@@ -780,7 +780,7 @@
         "partial": false
       },
       "RTCRtpScriptTransform": {
-        "fragment": "[Exposed=Window]\ninterface RTCRtpScriptTransform {\n    constructor(Worker worker, optional any options);\n    // FIXME: add messaging methods.\n};",
+        "fragment": "[Exposed=Window]\ninterface RTCRtpScriptTransform {\n    constructor(Worker worker, optional any options, optional sequence<object> transfer);\n};",
         "type": "interface",
         "name": "RTCRtpScriptTransform",
         "inheritance": null,
@@ -815,6 +815,31 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "any"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "transfer",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "object"
+                    }
+                  ]
                 },
                 "default": null,
                 "optional": true,
