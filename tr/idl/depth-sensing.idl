@@ -36,6 +36,7 @@ interface XRDepthInformation {
   readonly attribute float rawValueToMeters;
 };
 
+[Exposed=Window]
 interface XRCPUDepthInformation : XRDepthInformation {
   [SameObject] readonly attribute ArrayBuffer data;
 
@@ -46,6 +47,7 @@ partial interface XRFrame {
   XRCPUDepthInformation? getDepthInformation(XRView view);
 };
 
+[Exposed=Window]
 interface XRWebGLDepthInformation : XRDepthInformation {
   [SameObject] readonly attribute WebGLTexture texture;
 };

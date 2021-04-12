@@ -18,6 +18,7 @@ partial interface XRHitTestResult {
   Promise<XRAnchor> createAnchor();
 };
 
+[Exposed=Window]
 interface XRAnchorSet {
   readonly setlike<XRAnchor>;
 };

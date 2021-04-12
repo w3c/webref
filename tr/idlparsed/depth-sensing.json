@@ -8,7 +8,9 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "XRDepthInformation"
+          "XRDepthInformation",
+          "XRCPUDepthInformation",
+          "XRWebGLDepthInformation"
         ]
       }
     },
@@ -197,7 +199,7 @@
         "partial": false
       },
       "XRCPUDepthInformation": {
-        "fragment": "interface XRCPUDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute ArrayBuffer data;\n\n  float getDepthInMeters(float x, float y);\n};",
+        "fragment": "[Exposed=Window]\ninterface XRCPUDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute ArrayBuffer data;\n\n  float getDepthInMeters(float x, float y);\n};",
         "type": "interface",
         "name": "XRCPUDepthInformation",
         "inheritance": "XRDepthInformation",
@@ -273,11 +275,21 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "XRWebGLDepthInformation": {
-        "fragment": "interface XRWebGLDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute WebGLTexture texture;\n};",
+        "fragment": "[Exposed=Window]\ninterface XRWebGLDepthInformation : XRDepthInformation {\n  [SameObject] readonly attribute WebGLTexture texture;\n};",
         "type": "interface",
         "name": "XRWebGLDepthInformation",
         "inheritance": "XRDepthInformation",
@@ -305,7 +317,17 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       }
     },
@@ -471,7 +493,9 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "XRDepthInformation"
+        "XRDepthInformation",
+        "XRCPUDepthInformation",
+        "XRWebGLDepthInformation"
       ]
     },
     "dependencies": {

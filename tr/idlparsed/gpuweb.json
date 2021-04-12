@@ -7,6 +7,8 @@
     "jsNames": {
       "constructors": {
         "Window": [
+          "GPUOutOfMemoryError",
+          "GPUValidationError",
           "GPUUncapturedErrorEvent"
         ],
         "DedicatedWorker": [
@@ -15,8 +17,39 @@
       },
       "functions": {
         "Window": [
+          "GPUAdapterLimits",
+          "GPUAdapterFeatures",
           "GPU",
-          "GPUDevice"
+          "GPUAdapter",
+          "GPUDevice",
+          "GPUBuffer",
+          "GPUBufferUsage",
+          "GPUMapMode",
+          "GPUTexture",
+          "GPUTextureUsage",
+          "GPUTextureView",
+          "GPUSampler",
+          "GPUBindGroupLayout",
+          "GPUShaderStage",
+          "GPUBindGroup",
+          "GPUPipelineLayout",
+          "GPUCompilationMessage",
+          "GPUCompilationInfo",
+          "GPUShaderModule",
+          "GPUComputePipeline",
+          "GPURenderPipeline",
+          "GPUColorWrite",
+          "GPUCommandBuffer",
+          "GPUCommandEncoder",
+          "GPUComputePassEncoder",
+          "GPURenderPassEncoder",
+          "GPURenderBundle",
+          "GPURenderBundleEncoder",
+          "GPUQueue",
+          "GPUQuerySet",
+          "GPUCanvasContext",
+          "GPUSwapChain",
+          "GPUDeviceLostInfo"
         ],
         "DedicatedWorker": [
           "GPU",
@@ -76,7 +109,7 @@
         "partial": false
       },
       "GPUAdapterLimits": {
-        "fragment": "interface GPUAdapterLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long maxUniformBufferBindingSize;\n    readonly attribute unsigned long maxStorageBufferBindingSize;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUAdapterLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long maxUniformBufferBindingSize;\n    readonly attribute unsigned long maxStorageBufferBindingSize;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n};",
         "type": "interface",
         "name": "GPUAdapterLimits",
         "inheritance": null,
@@ -337,11 +370,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUAdapterFeatures": {
-        "fragment": "interface GPUAdapterFeatures {\n    readonly setlike<GPUFeatureName>;\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUAdapterFeatures {\n    readonly setlike<GPUFeatureName>;\n};",
         "type": "interface",
         "name": "GPUAdapterFeatures",
         "inheritance": null,
@@ -364,7 +407,17 @@
             "async": false
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "NavigatorGPU": {
@@ -511,7 +564,7 @@
         "extAttrs": []
       },
       "GPUAdapter": {
-        "fragment": "interface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUAdapterFeatures features;\n    [SameObject] readonly attribute GPUAdapterLimits limits;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUAdapterFeatures features;\n    [SameObject] readonly attribute GPUAdapterLimits limits;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
@@ -619,7 +672,17 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUDeviceDescriptor": {
@@ -1305,7 +1368,7 @@
         "partial": false
       },
       "GPUBuffer": {
-        "fragment": "[Serializable]\ninterface GPUBuffer {\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
+        "fragment": "[Exposed=Window, Serializable]\ninterface GPUBuffer {\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
         "type": "interface",
         "name": "GPUBuffer",
         "inheritance": null,
@@ -1471,6 +1534,15 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "Serializable",
             "rhs": null,
             "arguments": []
@@ -1558,7 +1630,7 @@
         "extAttrs": []
       },
       "GPUBufferUsage": {
-        "fragment": "interface GPUBufferUsage {\n    const GPUFlagsConstant MAP_READ      = 0x0001;\n    const GPUFlagsConstant MAP_WRITE     = 0x0002;\n    const GPUFlagsConstant COPY_SRC      = 0x0004;\n    const GPUFlagsConstant COPY_DST      = 0x0008;\n    const GPUFlagsConstant INDEX         = 0x0010;\n    const GPUFlagsConstant VERTEX        = 0x0020;\n    const GPUFlagsConstant UNIFORM       = 0x0040;\n    const GPUFlagsConstant STORAGE       = 0x0080;\n    const GPUFlagsConstant INDIRECT      = 0x0100;\n    const GPUFlagsConstant QUERY_RESOLVE = 0x0200;\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUBufferUsage {\n    const GPUFlagsConstant MAP_READ      = 0x0001;\n    const GPUFlagsConstant MAP_WRITE     = 0x0002;\n    const GPUFlagsConstant COPY_SRC      = 0x0004;\n    const GPUFlagsConstant COPY_DST      = 0x0008;\n    const GPUFlagsConstant INDEX         = 0x0010;\n    const GPUFlagsConstant VERTEX        = 0x0020;\n    const GPUFlagsConstant UNIFORM       = 0x0040;\n    const GPUFlagsConstant STORAGE       = 0x0080;\n    const GPUFlagsConstant INDIRECT      = 0x0100;\n    const GPUFlagsConstant QUERY_RESOLVE = 0x0200;\n};",
         "type": "interface",
         "name": "GPUBufferUsage",
         "inheritance": null,
@@ -1734,7 +1806,17 @@
             }
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUMapModeFlags": {
@@ -1759,7 +1841,7 @@
         "extAttrs": []
       },
       "GPUMapMode": {
-        "fragment": "interface GPUMapMode {\n    const GPUFlagsConstant READ  = 0x0001;\n    const GPUFlagsConstant WRITE = 0x0002;\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUMapMode {\n    const GPUFlagsConstant READ  = 0x0001;\n    const GPUFlagsConstant WRITE = 0x0002;\n};",
         "type": "interface",
         "name": "GPUMapMode",
         "inheritance": null,
@@ -1799,11 +1881,21 @@
             }
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUTexture": {
-        "fragment": "[Serializable]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n};",
+        "fragment": "[Exposed=Window, Serializable]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n};",
         "type": "interface",
         "name": "GPUTexture",
         "inheritance": null,
@@ -1859,6 +1951,15 @@
           }
         ],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "Serializable",
@@ -2019,7 +2120,7 @@
         "extAttrs": []
       },
       "GPUTextureUsage": {
-        "fragment": "interface GPUTextureUsage {\n    const GPUFlagsConstant COPY_SRC          = 0x01;\n    const GPUFlagsConstant COPY_DST          = 0x02;\n    const GPUFlagsConstant SAMPLED           = 0x04;\n    const GPUFlagsConstant STORAGE           = 0x08;\n    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUTextureUsage {\n    const GPUFlagsConstant COPY_SRC          = 0x01;\n    const GPUFlagsConstant COPY_DST          = 0x02;\n    const GPUFlagsConstant SAMPLED           = 0x04;\n    const GPUFlagsConstant STORAGE           = 0x08;\n    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;\n};",
         "type": "interface",
         "name": "GPUTextureUsage",
         "inheritance": null,
@@ -2110,16 +2211,36 @@
             }
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUTextureView": {
-        "fragment": "interface GPUTextureView {\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUTextureView {\n};",
         "type": "interface",
         "name": "GPUTextureView",
         "inheritance": null,
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUTextureViewDescriptor": {
@@ -2535,12 +2656,22 @@
         "extAttrs": []
       },
       "GPUSampler": {
-        "fragment": "interface GPUSampler {\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUSampler {\n};",
         "type": "interface",
         "name": "GPUSampler",
         "inheritance": null,
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUSamplerDescriptor": {
@@ -2814,12 +2945,21 @@
         "extAttrs": []
       },
       "GPUBindGroupLayout": {
-        "fragment": "[Serializable]\ninterface GPUBindGroupLayout {\n};",
+        "fragment": "[Exposed=Window, Serializable]\ninterface GPUBindGroupLayout {\n};",
         "type": "interface",
         "name": "GPUBindGroupLayout",
         "inheritance": null,
         "members": [],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "Serializable",
@@ -2885,7 +3025,7 @@
         "extAttrs": []
       },
       "GPUShaderStage": {
-        "fragment": "interface GPUShaderStage {\n    const GPUFlagsConstant VERTEX   = 0x1;\n    const GPUFlagsConstant FRAGMENT = 0x2;\n    const GPUFlagsConstant COMPUTE  = 0x4;\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUShaderStage {\n    const GPUFlagsConstant VERTEX   = 0x1;\n    const GPUFlagsConstant FRAGMENT = 0x2;\n    const GPUFlagsConstant COMPUTE  = 0x4;\n};",
         "type": "interface",
         "name": "GPUShaderStage",
         "inheritance": null,
@@ -2942,7 +3082,17 @@
             }
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUBindGroupLayoutEntry": {
@@ -3344,12 +3494,22 @@
         "partial": false
       },
       "GPUBindGroup": {
-        "fragment": "interface GPUBindGroup {\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUBindGroup {\n};",
         "type": "interface",
         "name": "GPUBindGroup",
         "inheritance": null,
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUBindGroupDescriptor": {
@@ -3539,12 +3699,21 @@
         "partial": false
       },
       "GPUPipelineLayout": {
-        "fragment": "[Serializable]\ninterface GPUPipelineLayout {\n};",
+        "fragment": "[Exposed=Window, Serializable]\ninterface GPUPipelineLayout {\n};",
         "type": "interface",
         "name": "GPUPipelineLayout",
         "inheritance": null,
         "members": [],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "Serializable",
@@ -3609,7 +3778,7 @@
         "extAttrs": []
       },
       "GPUCompilationMessage": {
-        "fragment": "[Serializable]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n};",
+        "fragment": "[Exposed=Window, Serializable]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n};",
         "type": "interface",
         "name": "GPUCompilationMessage",
         "inheritance": null,
@@ -3678,6 +3847,15 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "Serializable",
             "rhs": null,
             "arguments": []
@@ -3686,7 +3864,7 @@
         "partial": false
       },
       "GPUCompilationInfo": {
-        "fragment": "[Serializable]\ninterface GPUCompilationInfo {\n    readonly attribute FrozenArray<GPUCompilationMessage> messages;\n};",
+        "fragment": "[Exposed=Window, Serializable]\ninterface GPUCompilationInfo {\n    readonly attribute FrozenArray<GPUCompilationMessage> messages;\n};",
         "type": "interface",
         "name": "GPUCompilationInfo",
         "inheritance": null,
@@ -3719,6 +3897,15 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
             "name": "Serializable",
             "rhs": null,
             "arguments": []
@@ -3727,7 +3914,7 @@
         "partial": false
       },
       "GPUShaderModule": {
-        "fragment": "[Serializable]\ninterface GPUShaderModule {\n    Promise<GPUCompilationInfo> compilationInfo();\n};",
+        "fragment": "[Exposed=Window, Serializable]\ninterface GPUShaderModule {\n    Promise<GPUCompilationInfo> compilationInfo();\n};",
         "type": "interface",
         "name": "GPUShaderModule",
         "inheritance": null,
@@ -3758,6 +3945,15 @@
           }
         ],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "Serializable",
@@ -3915,12 +4111,21 @@
         "partial": false
       },
       "GPUComputePipeline": {
-        "fragment": "[Serializable]\ninterface GPUComputePipeline {\n};",
+        "fragment": "[Exposed=Window, Serializable]\ninterface GPUComputePipeline {\n};",
         "type": "interface",
         "name": "GPUComputePipeline",
         "inheritance": null,
         "members": [],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "Serializable",
@@ -3956,12 +4161,21 @@
         "partial": false
       },
       "GPURenderPipeline": {
-        "fragment": "[Serializable]\ninterface GPURenderPipeline {\n};",
+        "fragment": "[Exposed=Window, Serializable]\ninterface GPURenderPipeline {\n};",
         "type": "interface",
         "name": "GPURenderPipeline",
         "inheritance": null,
         "members": [],
         "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
           {
             "type": "extended-attribute",
             "name": "Serializable",
@@ -4089,7 +4303,7 @@
         "extAttrs": []
       },
       "GPUPrimitiveState": {
-        "fragment": "dictionary GPUPrimitiveState {\n    GPUPrimitiveTopology topology = \"triangle-list\";\n    GPUIndexFormat stripIndexFormat;\n    GPUFrontFace frontFace = \"ccw\";\n    GPUCullMode cullMode = \"none\";\n};",
+        "fragment": "dictionary GPUPrimitiveState {\n    GPUPrimitiveTopology topology = \"triangle-list\";\n    GPUIndexFormat stripIndexFormat;\n    GPUFrontFace frontFace = \"ccw\";\n    GPUCullMode cullMode = \"none\";\n\n    // Enable depth clamping (requires \"depth-clamping\" feature)\n    boolean clampDepth = false;\n};",
         "type": "dictionary",
         "name": "GPUPrimitiveState",
         "inheritance": null,
@@ -4160,6 +4374,24 @@
             "default": {
               "type": "string",
               "value": "none"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "clampDepth",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
             },
             "required": false
           }
@@ -4421,7 +4653,7 @@
         "extAttrs": []
       },
       "GPUColorWrite": {
-        "fragment": "interface GPUColorWrite {\n    const GPUFlagsConstant RED   = 0x1;\n    const GPUFlagsConstant GREEN = 0x2;\n    const GPUFlagsConstant BLUE  = 0x4;\n    const GPUFlagsConstant ALPHA = 0x8;\n    const GPUFlagsConstant ALL   = 0xF;\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUColorWrite {\n    const GPUFlagsConstant RED   = 0x1;\n    const GPUFlagsConstant GREEN = 0x2;\n    const GPUFlagsConstant BLUE  = 0x4;\n    const GPUFlagsConstant ALPHA = 0x8;\n    const GPUFlagsConstant ALL   = 0xF;\n};",
         "type": "interface",
         "name": "GPUColorWrite",
         "inheritance": null,
@@ -4512,7 +4744,17 @@
             }
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUBlendComponent": {
@@ -4668,7 +4910,7 @@
         "extAttrs": []
       },
       "GPUDepthStencilState": {
-        "fragment": "dictionary GPUDepthStencilState {\n    required GPUTextureFormat format;\n\n    boolean depthWriteEnabled = false;\n    GPUCompareFunction depthCompare = \"always\";\n\n    GPUStencilFaceState stencilFront = {};\n    GPUStencilFaceState stencilBack = {};\n\n    GPUStencilValue stencilReadMask = 0xFFFFFFFF;\n    GPUStencilValue stencilWriteMask = 0xFFFFFFFF;\n\n    GPUDepthBias depthBias = 0;\n    float depthBiasSlopeScale = 0;\n    float depthBiasClamp = 0;\n\n    // Enable depth clamping (requires \"depth-clamping\" feature)\n    boolean clampDepth = false;\n};",
+        "fragment": "dictionary GPUDepthStencilState {\n    required GPUTextureFormat format;\n\n    boolean depthWriteEnabled = false;\n    GPUCompareFunction depthCompare = \"always\";\n\n    GPUStencilFaceState stencilFront = {};\n    GPUStencilFaceState stencilBack = {};\n\n    GPUStencilValue stencilReadMask = 0xFFFFFFFF;\n    GPUStencilValue stencilWriteMask = 0xFFFFFFFF;\n\n    GPUDepthBias depthBias = 0;\n    float depthBiasSlopeScale = 0;\n    float depthBiasClamp = 0;\n};",
         "type": "dictionary",
         "name": "GPUDepthStencilState",
         "inheritance": null,
@@ -4845,24 +5087,6 @@
             "default": {
               "type": "number",
               "value": "0"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "clampDepth",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
             },
             "required": false
           }
@@ -5312,7 +5536,7 @@
         "partial": false
       },
       "GPUCommandBuffer": {
-        "fragment": "interface GPUCommandBuffer {\n    readonly attribute Promise<double> executionTime;\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUCommandBuffer {\n    readonly attribute Promise<double> executionTime;\n};",
         "type": "interface",
         "name": "GPUCommandBuffer",
         "inheritance": null,
@@ -5342,7 +5566,17 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUCommandBufferDescriptor": {
@@ -5355,7 +5589,7 @@
         "partial": false
       },
       "GPUCommandEncoder": {
-        "fragment": "interface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUCommandEncoder",
         "inheritance": null,
@@ -5972,7 +6206,17 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUCommandEncoderDescriptor": {
@@ -6468,7 +6712,7 @@
         "partial": false
       },
       "GPUComputePassEncoder": {
-        "fragment": "interface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 x, optional GPUSize32 y = 1, optional GPUSize32 z = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined endPass();\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 x, optional GPUSize32 y = 1, optional GPUSize32 z = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined endPass();\n};",
         "type": "interface",
         "name": "GPUComputePassEncoder",
         "inheritance": null,
@@ -6750,7 +6994,17 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUComputePassDescriptor": {
@@ -7270,7 +7524,7 @@
         "partial": false
       },
       "GPURenderPassEncoder": {
-        "fragment": "interface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n                     float width, float height,\n                     float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendColor(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined endPass();\n};",
+        "fragment": "[Exposed=Window]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n                     float width, float height,\n                     float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendColor(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined endPass();\n};",
         "type": "interface",
         "name": "GPURenderPassEncoder",
         "inheritance": null,
@@ -7746,7 +8000,17 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPURenderPassDescriptor": {
@@ -8084,12 +8348,22 @@
         "extAttrs": []
       },
       "GPURenderBundle": {
-        "fragment": "interface GPURenderBundle {\n};",
+        "fragment": "[Exposed=Window]\ninterface GPURenderBundle {\n};",
         "type": "interface",
         "name": "GPURenderBundle",
         "inheritance": null,
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPURenderBundleDescriptor": {
@@ -8102,7 +8376,7 @@
         "partial": false
       },
       "GPURenderBundleEncoder": {
-        "fragment": "interface GPURenderBundleEncoder {\n    GPURenderBundle finish(optional GPURenderBundleDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface GPURenderBundleEncoder {\n    GPURenderBundle finish(optional GPURenderBundleDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPURenderBundleEncoder",
         "inheritance": null,
@@ -8142,7 +8416,17 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPURenderBundleEncoderDescriptor": {
@@ -8213,7 +8497,7 @@
         "partial": false
       },
       "GPUQueue": {
-        "fragment": "interface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n      GPUImageCopyTexture destination,\n      [AllowShared] BufferSource data,\n      GPUImageDataLayout dataLayout,\n      GPUExtent3D size);\n\n    undefined copyImageBitmapToTexture(\n        GPUImageCopyImageBitmap source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n      GPUImageCopyTexture destination,\n      [AllowShared] BufferSource data,\n      GPUImageDataLayout dataLayout,\n      GPUExtent3D size);\n\n    undefined copyImageBitmapToTexture(\n        GPUImageCopyImageBitmap source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n};",
         "type": "interface",
         "name": "GPUQueue",
         "inheritance": null,
@@ -8541,11 +8825,21 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUQuerySet": {
-        "fragment": "interface GPUQuerySet {\n    undefined destroy();\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUQuerySet {\n    undefined destroy();\n};",
         "type": "interface",
         "name": "GPUQuerySet",
         "inheritance": null,
@@ -8566,7 +8860,17 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUQuerySetDescriptor": {
@@ -8685,7 +8989,7 @@
         "extAttrs": []
       },
       "GPUCanvasContext": {
-        "fragment": "interface GPUCanvasContext {\n    GPUSwapChain configureSwapChain(GPUSwapChainDescriptor descriptor);\n\n    GPUTextureFormat getSwapChainPreferredFormat(GPUAdapter adapter);\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUCanvasContext {\n    GPUSwapChain configureSwapChain(GPUSwapChainDescriptor descriptor);\n\n    GPUTextureFormat getSwapChainPreferredFormat(GPUAdapter adapter);\n};",
         "type": "interface",
         "name": "GPUCanvasContext",
         "inheritance": null,
@@ -8755,7 +9059,17 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUSwapChainDescriptor": {
@@ -8817,7 +9131,7 @@
         "partial": false
       },
       "GPUSwapChain": {
-        "fragment": "interface GPUSwapChain {\n    GPUTexture getCurrentTexture();\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUSwapChain {\n    GPUTexture getCurrentTexture();\n};",
         "type": "interface",
         "name": "GPUSwapChain",
         "inheritance": null,
@@ -8838,7 +9152,17 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUDeviceLostReason": {
@@ -8854,7 +9178,7 @@
         "extAttrs": []
       },
       "GPUDeviceLostInfo": {
-        "fragment": "interface GPUDeviceLostInfo {\n    readonly attribute (GPUDeviceLostReason or undefined) reason;\n    readonly attribute DOMString message;\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUDeviceLostInfo {\n    readonly attribute (GPUDeviceLostReason or undefined) reason;\n    readonly attribute DOMString message;\n};",
         "type": "interface",
         "name": "GPUDeviceLostInfo",
         "inheritance": null,
@@ -8907,7 +9231,17 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUErrorFilter": {
@@ -8927,7 +9261,7 @@
         "extAttrs": []
       },
       "GPUOutOfMemoryError": {
-        "fragment": "interface GPUOutOfMemoryError {\n    constructor();\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUOutOfMemoryError {\n    constructor();\n};",
         "type": "interface",
         "name": "GPUOutOfMemoryError",
         "inheritance": null,
@@ -8938,11 +9272,21 @@
             "extAttrs": []
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUValidationError": {
-        "fragment": "interface GPUValidationError {\n    constructor(DOMString message);\n    readonly attribute DOMString message;\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUValidationError {\n    constructor(DOMString message);\n    readonly attribute DOMString message;\n};",
         "type": "interface",
         "name": "GPUValidationError",
         "inheritance": null,
@@ -8985,7 +9329,17 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUError": {
@@ -10130,8 +10484,41 @@
     "globals": {},
     "exposed": {
       "Window": [
+        "GPUAdapterLimits",
+        "GPUAdapterFeatures",
         "GPU",
+        "GPUAdapter",
         "GPUDevice",
+        "GPUBuffer",
+        "GPUBufferUsage",
+        "GPUMapMode",
+        "GPUTexture",
+        "GPUTextureUsage",
+        "GPUTextureView",
+        "GPUSampler",
+        "GPUBindGroupLayout",
+        "GPUShaderStage",
+        "GPUBindGroup",
+        "GPUPipelineLayout",
+        "GPUCompilationMessage",
+        "GPUCompilationInfo",
+        "GPUShaderModule",
+        "GPUComputePipeline",
+        "GPURenderPipeline",
+        "GPUColorWrite",
+        "GPUCommandBuffer",
+        "GPUCommandEncoder",
+        "GPUComputePassEncoder",
+        "GPURenderPassEncoder",
+        "GPURenderBundle",
+        "GPURenderBundleEncoder",
+        "GPUQueue",
+        "GPUQuerySet",
+        "GPUCanvasContext",
+        "GPUSwapChain",
+        "GPUDeviceLostInfo",
+        "GPUOutOfMemoryError",
+        "GPUValidationError",
         "GPUUncapturedErrorEvent"
       ],
       "DedicatedWorker": [

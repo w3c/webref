@@ -5,7 +5,7 @@
       "title": "WebGPU",
       "url": "https://gpuweb.github.io/gpuweb/"
     },
-    "fragment": "[Serializable]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n};",
+    "fragment": "[Exposed=Window, Serializable]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpucompilationmessage"
   },
   "extended": [],

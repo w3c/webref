@@ -22,3 +22,9 @@ interface mixin WindowEventHandlers {
 partial interface mixin WindowEventHandlers {
     attribute EventHandler onportalactivate;
 };
+
+// Source: Gamepad (https://www.w3.org/TR/gamepad/)
+partial interface mixin WindowEventHandlers {
+  attribute EventHandler ongamepadconnected;
+  attribute EventHandler ongamepaddisconnected;
+};
