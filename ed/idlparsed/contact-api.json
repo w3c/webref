@@ -9,6 +9,7 @@
       "functions": {
         "Window": [
           "Navigator",
+          "ContactAddress",
           "ContactsManager"
         ],
         "SecureContext": [
@@ -46,12 +47,22 @@
         "extAttrs": []
       },
       "ContactAddress": {
-        "fragment": "interface ContactAddress : PaymentAddress {};",
+        "fragment": "[Exposed=Window]\ninterface ContactAddress : PaymentAddress {};",
         "type": "interface",
         "name": "ContactAddress",
         "inheritance": "PaymentAddress",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "ContactInfo": {
@@ -406,6 +417,7 @@
     "exposed": {
       "Window": [
         "Navigator",
+        "ContactAddress",
         "ContactsManager"
       ],
       "SecureContext": [
