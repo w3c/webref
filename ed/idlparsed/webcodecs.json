@@ -1720,7 +1720,7 @@
         "partial": false
       },
       "AudioEncoderConfig": {
-        "fragment": "dictionary AudioEncoderConfig {\n  required DOMString codec;\n  unsigned long sampleRate;\n  unsigned long numberOfChannels;\n};",
+        "fragment": "dictionary AudioEncoderConfig {\n  required DOMString codec;\n  unsigned long sampleRate;\n  unsigned long numberOfChannels;\n  unsigned long long bitrate;\n};",
         "type": "dictionary",
         "name": "AudioEncoderConfig",
         "inheritance": null,
@@ -1766,6 +1766,21 @@
               "nullable": false,
               "union": false,
               "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bitrate",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
             },
             "default": null,
             "required": false
