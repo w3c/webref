@@ -164,7 +164,7 @@
         "partial": false
       },
       "ContentIndex": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface ContentIndex {\n  Promise<void> add(ContentDescription description);\n  Promise<void> delete(DOMString id);\n  Promise<sequence<ContentDescription>> getAll();\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface ContentIndex {\n  Promise<undefined> add(ContentDescription description);\n  Promise<undefined> delete(DOMString id);\n  Promise<sequence<ContentDescription>> getAll();\n};",
         "type": "interface",
         "name": "ContentIndex",
         "inheritance": null,
@@ -185,7 +185,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -226,7 +226,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -491,7 +491,6 @@
         "ImageResource"
       ],
       "ContentIndex": [
-        "void",
         "ContentDescription"
       ],
       "ContentIndexEventInit": [
@@ -507,7 +506,6 @@
       "EventHandler",
       "ServiceWorkerRegistration",
       "ImageResource",
-      "void",
       "ExtendableEventInit",
       "ExtendableEvent"
     ],
