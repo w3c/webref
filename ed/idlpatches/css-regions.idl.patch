@@ -1,0 +1,32 @@
+From 68be238d59dd7241c9e697ccf329ec1f33b54a55 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Tue, 13 Apr 2021 09:39:53 +0200
+Subject: [PATCH] Fix css-regions.idl
+
+https://github.com/w3c/csswg-drafts/pull/6208
+---
+ ed/idl/css-regions.idl | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+
+diff --git a/ed/idl/css-regions.idl b/ed/idl/css-regions.idl
+index 5bda2e276..b1ed80baf 100644
+--- a/ed/idl/css-regions.idl
++++ b/ed/idl/css-regions.idl
+@@ -7,12 +7,8 @@ partial interface Document {
+   readonly attribute NamedFlowMap namedFlows;
+ };
+ 
+-[Exposed=Window,
+- MapClass=(CSSOMString, NamedFlow)] interface NamedFlowMap {
+-  NamedFlow? get(CSSOMString flowName);
+-  boolean has(CSSOMString flowName);
+-  NamedFlowMap set(CSSOMString flowName, NamedFlow flowValue);
+-  boolean delete(CSSOMString flowName);
++[Exposed=Window] interface NamedFlowMap {
++  maplike<CSSOMString, NamedFlow>;
+ };
+ 
+ [Exposed=Window]
+-- 
+2.31.1.295.g9ea45b61b8-goog
+
