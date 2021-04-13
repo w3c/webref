@@ -186,12 +186,13 @@ describe('Web IDL consistency', () => {
     }
   });
 
-  // Validate that there are no unknown types.
-  it('all used types are defined', () => {
+  // Validate that there are no unknown types or extended attributes.
+  it('all used types and extended attributes are defined', () => {
     // There are types in lots of places in the AST (interface members,
     // arguments, return types) and rather than trying to cover them all, walk
     // the whole AST looking for "idlType".
     const usedTypes = new Set();
+    const usedExtAttrs = new Set();
 
     // Serialize and reparse the ast to not have to worry about own properties
     // vs enumerable properties on the prototypes, etc.
@@ -201,6 +202,10 @@ describe('Web IDL consistency', () => {
       for (const [key, value] of Object.entries(node)) {
         if (key === 'idlType' && typeof value === 'string') {
           usedTypes.add(value);
+        } else if (key === 'extAttrs' && Array.isArray(value)) {
+          for (const extAttr of value) {
+            usedExtAttrs.add(extAttr.name);
+          }
         } else if (typeof value === 'object' && value !== null) {
           pending.push(value);
         }
@@ -250,6 +255,45 @@ describe('Web IDL consistency', () => {
       'WindowProxy' // https://html.spec.whatwg.org/multipage/window-object.html#windowproxy
     ]);
 
+    const knownExtAttrs = new Set([
+      // Extended attributes defined by Web IDL itself:
+      'AllowShared', // https://heycam.github.io/webidl/#AllowShared
+      'Clamp', // https://heycam.github.io/webidl/#Clamp
+      'CrossOriginIsolated', // https://heycam.github.io/webidl/#CrossOriginIsolated
+      'Default', // https://heycam.github.io/webidl/#Default
+      'EnforceRange', // https://heycam.github.io/webidl/#EnforceRange
+      'Exposed', // https://heycam.github.io/webidl/#Exposed
+      'Global', // https://heycam.github.io/webidl/#Global
+      'LegacyFactoryFunction', // https://heycam.github.io/webidl/#LegacyFactoryFunction
+      'LegacyLenientSetter', // https://heycam.github.io/webidl/#LegacyLenientSetter
+      'LegacyLenientThis', // https://heycam.github.io/webidl/#LegacyLenientThis
+      'LegacyNamespace', // https://heycam.github.io/webidl/#LegacyNamespace
+      'LegacyNoInterfaceObject', // https://heycam.github.io/webidl/#LegacyNoInterfaceObject
+      'LegacyNullToEmptyString', // https://heycam.github.io/webidl/#LegacyNullToEmptyString
+      'LegacyOverrideBuiltIns', // https://heycam.github.io/webidl/#LegacyOverrideBuiltIns
+      'LegacyTreatNonObjectAsNull', // https://heycam.github.io/webidl/#LegacyTreatNonObjectAsNull
+      'LegacyUnenumerableNamedProperties', // https://heycam.github.io/webidl/#LegacyUnenumerableNamedProperties
+      'LegacyUnforgeable', // https://heycam.github.io/webidl/#LegacyUnforgeable
+      'LegacyWindowAlias', // https://heycam.github.io/webidl/#LegacyWindowAlias
+      'NewObject', // https://heycam.github.io/webidl/#NewObject
+      'PutForwards', // https://heycam.github.io/webidl/#PutForwards
+      'Replaceable', // https://heycam.github.io/webidl/#Replaceable
+      'SameObject', // https://heycam.github.io/webidl/#SameObject
+      'SecureContext', // https://heycam.github.io/webidl/#SecureContext
+      'Unscopable', // https://heycam.github.io/webidl/#Unscopable
+
+      // TODO: drop NoInterfaceObject when it has been removed from all specs
+      'NoInterfaceObject',
+
+      // Extended attributes defined by other specs:
+      'CEReactions', // https://html.spec.whatwg.org/multipage/custom-elements.html#cereactions
+      'HTMLConstructor', // https://html.spec.whatwg.org/multipage/dom.html#htmlconstructor
+      'Serializable', // https://html.spec.whatwg.org/multipage/structured-data.html#serializable
+      'StringContext', // https://w3c.github.io/webappsec-trusted-types/dist/spec/#webidl-string-context-xattr
+      'Transferable', // https://html.spec.whatwg.org/multipage/structured-data.html#transferable
+      'WebGLHandlesContextLoss' // https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.14
+    ]);
+
     // Add any types defined by the parsed IDL.
     for (const dfn of dfns) {
       knownTypes.add(dfn.name);
@@ -257,6 +301,10 @@ describe('Web IDL consistency', () => {
 
     for (const usedType of usedTypes) {
       assert(knownTypes.has(usedType), `type ${usedType} is used but never defined`);
+    }
+
+    for (const attr of usedExtAttrs) {
+      assert(knownExtAttrs.has(attr), `extended attribute ${attr} is used but never defined`);
     }
   });
 
