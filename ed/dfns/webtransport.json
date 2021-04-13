@@ -1425,10 +1425,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "outgoingstream",
-      "href": "https://w3c.github.io/webtransport/#outgoingstream",
+      "id": "sendstream",
+      "href": "https://w3c.github.io/webtransport/#sendstream",
       "linkingText": [
-        "OutgoingStream"
+        "SendStream"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -1436,43 +1436,43 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "outgoing-stream",
-        "title": "Interface Mixin OutgoingStream",
+        "id": "send-stream",
+        "title": "Interface SendStream",
         "number": "9"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-outgoingstream-abortwriting-abortinfo-abortinfo",
-      "href": "https://w3c.github.io/webtransport/#dom-outgoingstream-abortwriting-abortinfo-abortinfo",
+      "id": "dom-sendstream-abortwriting-abortinfo-abortinfo",
+      "href": "https://w3c.github.io/webtransport/#dom-sendstream-abortwriting-abortinfo-abortinfo",
       "linkingText": [
         "abortInfo"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "OutgoingStream/abortWriting(abortInfo)",
-        "OutgoingStream/abortWriting()"
+        "SendStream/abortWriting(abortInfo)",
+        "SendStream/abortWriting()"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "outgoing-stream",
-        "title": "Interface Mixin OutgoingStream",
+        "id": "send-stream",
+        "title": "Interface SendStream",
         "number": "9"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-outgoingstream-writingaborted",
-      "href": "https://w3c.github.io/webtransport/#dom-outgoingstream-writingaborted",
+      "id": "dom-sendstream-writingaborted",
+      "href": "https://w3c.github.io/webtransport/#dom-sendstream-writingaborted",
       "linkingText": [
         "writingAborted"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "OutgoingStream"
+        "SendStream"
       ],
       "access": "public",
       "informative": false,
@@ -1484,8 +1484,8 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-outgoingstream-abortwriting",
-      "href": "https://w3c.github.io/webtransport/#dom-outgoingstream-abortwriting",
+      "id": "dom-sendstream-abortwriting",
+      "href": "https://w3c.github.io/webtransport/#dom-sendstream-abortwriting",
       "linkingText": [
         "abortWriting(abortInfo)",
         "abortWriting()"
@@ -1493,7 +1493,7 @@
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "OutgoingStream"
+        "SendStream"
       ],
       "access": "public",
       "informative": false,
@@ -1543,10 +1543,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "incomingstream",
-      "href": "https://w3c.github.io/webtransport/#incomingstream",
+      "id": "receivestream",
+      "href": "https://w3c.github.io/webtransport/#receivestream",
       "linkingText": [
-        "IncomingStream"
+        "ReceiveStream"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -1554,41 +1554,41 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "incoming-stream",
-        "title": "10. Interface Mixin IncomingStream"
+        "id": "receive-stream",
+        "title": "10. Interface ReceiveStream"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-incomingstream-abortreading-abortinfo-abortinfo",
-      "href": "https://w3c.github.io/webtransport/#dom-incomingstream-abortreading-abortinfo-abortinfo",
+      "id": "dom-receivestream-abortreading-abortinfo-abortinfo",
+      "href": "https://w3c.github.io/webtransport/#dom-receivestream-abortreading-abortinfo-abortinfo",
       "linkingText": [
         "abortInfo"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "IncomingStream/abortReading(abortInfo)",
-        "IncomingStream/abortReading()"
+        "ReceiveStream/abortReading(abortInfo)",
+        "ReceiveStream/abortReading()"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "incoming-stream",
-        "title": "10. Interface Mixin IncomingStream"
+        "id": "receive-stream",
+        "title": "10. Interface ReceiveStream"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-incomingstream-readingaborted",
-      "href": "https://w3c.github.io/webtransport/#dom-incomingstream-readingaborted",
+      "id": "dom-receivestream-readingaborted",
+      "href": "https://w3c.github.io/webtransport/#dom-receivestream-readingaborted",
       "linkingText": [
         "readingAborted"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "IncomingStream"
+        "ReceiveStream"
       ],
       "access": "public",
       "informative": false,
@@ -1600,8 +1600,8 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-incomingstream-abortreading",
-      "href": "https://w3c.github.io/webtransport/#dom-incomingstream-abortreading",
+      "id": "dom-receivestream-abortreading",
+      "href": "https://w3c.github.io/webtransport/#dom-receivestream-abortreading",
       "linkingText": [
         "abortReading(abortInfo)",
         "abortReading()"
@@ -1609,7 +1609,7 @@
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "IncomingStream"
+        "ReceiveStream"
       ],
       "access": "public",
       "informative": false,
@@ -1712,40 +1712,6 @@
         "title": "11. Interface BidirectionalStream"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "sendstream",
-      "href": "https://w3c.github.io/webtransport/#sendstream",
-      "linkingText": [
-        "SendStream"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "send-stream",
-        "title": "12. Interface SendStream"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "receivestream",
-      "href": "https://w3c.github.io/webtransport/#receivestream",
-      "linkingText": [
-        "ReceiveStream"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "receive-stream",
-        "title": "13. Interface ReceiveStream"
-      },
-      "definedIn": "pre"
     }
   ]
 }

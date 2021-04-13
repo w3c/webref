@@ -1337,20 +1337,19 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Credential Management Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Credential Management Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/credential-management-1/](https://www.w3.org/TR/credential-management-1/)
 - Crawled URL: [https://w3c.github.io/webappsec-credential-management/](https://w3c.github.io/webappsec-credential-management/)
-- Crawled version: 20 February 2021
+- Crawled version: 13 April 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-credential-management/](https://w3c.github.io/webappsec-credential-management/)
 - Latest published version: [https://www.w3.org/TR/credential-management-1/](https://www.w3.org/TR/credential-management-1/)
 - Shortname: credential-management-1
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `void`
 - Missing references for links: 
      * [`https://w3c.github.io/webappsec/usecases/credentialmanagement/`](https://w3c.github.io/webappsec/usecases/credentialmanagement/)
      * [`https://w3c.github.io/webauthn/`](https://w3c.github.io/webauthn/)
@@ -1374,7 +1373,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
-- [Web OTP API](https://wicg.github.io/web-otp/)
+- [WebOTP API](https://wicg.github.io/web-otp/)
 
 Informative references to this spec from:
 
@@ -6710,7 +6709,6 @@ Normative references to this spec from:
 - [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
-- [Web OTP API](https://wicg.github.io/web-otp/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Serial API](https://wicg.github.io/serial/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
@@ -6719,6 +6717,7 @@ Normative references to this spec from:
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebHID API](https://wicg.github.io/webhid/)
+- [WebOTP API](https://wicg.github.io/web-otp/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 - [WebTransport](https://w3c.github.io/webtransport/)
@@ -7236,11 +7235,11 @@ Normative references to this spec from:
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
-- [Web OTP API](https://wicg.github.io/web-otp/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
+- [WebOTP API](https://wicg.github.io/web-otp/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebTransport](https://w3c.github.io/webtransport/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -9030,7 +9029,6 @@ Normative references to this spec from:
 - [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
-- [Web OTP API](https://wicg.github.io/web-otp/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Serial API](https://wicg.github.io/serial/)
 - [Web Share API](https://w3c.github.io/web-share/)
@@ -9045,6 +9043,7 @@ Normative references to this spec from:
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebHID API](https://wicg.github.io/webhid/)
+- [WebOTP API](https://wicg.github.io/web-otp/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 - [WebTransport](https://w3c.github.io/webtransport/)
@@ -11001,7 +11000,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Web OTP API](https://wicg.github.io/web-otp/)
+- [WebOTP API](https://wicg.github.io/web-otp/)
 
 No informative reference to this spec from other specs.
 
@@ -11493,10 +11492,10 @@ Normative references to this spec from:
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
-- [Web OTP API](https://wicg.github.io/web-otp/)
 - [Web Serial API](https://wicg.github.io/serial/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [WebHID API](https://wicg.github.io/webhid/)
+- [WebOTP API](https://wicg.github.io/web-otp/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
@@ -13989,7 +13988,7 @@ Informative references to this spec from:
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
-- [Web OTP API](https://wicg.github.io/web-otp/)
+- [WebOTP API](https://wicg.github.io/web-otp/)
 
 
 ## User Timing Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
@@ -14676,7 +14675,6 @@ Normative references to this spec from:
 - [Web Locks API](https://wicg.github.io/web-locks/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
-- [Web OTP API](https://wicg.github.io/web-otp/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Serial API](https://wicg.github.io/serial/)
 - [Web Share API](https://w3c.github.io/web-share/)
@@ -14691,6 +14689,7 @@ Normative references to this spec from:
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebHID API](https://wicg.github.io/webhid/)
+- [WebOTP API](https://wicg.github.io/web-otp/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 - [WebTransport](https://w3c.github.io/webtransport/)
@@ -14790,33 +14789,6 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
-
-
-## Web OTP API {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
-- Crawled URL: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
-- Crawled version: 22 March 2021
-- Editor's Draft: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
-- Shortname: web-otp
-
-### Potential issue(s) {.anomalies}
-
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/), related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
-     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "Permissions-Policy" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
-- External links to private terms:
-     * [`https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors`](https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors)
-- Broken external links:
-     * [`https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors`](https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ## Web Periodic Background Synchronization {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -16633,6 +16605,33 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## WebOTP API {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
+- Crawled URL: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
+- Crawled version: 13 April 2021
+- Editor's Draft: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
+- Shortname: web-otp
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/), related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
+     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "Permissions-Policy" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
+- External links to private terms:
+     * [`https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors`](https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors)
+- Broken external links:
+     * [`https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors`](https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## WebRTC 1.0: Real-Time Communication Between Browsers {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -16728,23 +16727,19 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebTransport {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingDfns=true data-xrefs=true}
+## WebTransport {data-spec=true data-missingDfns=true data-ok=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 31 March 2021
+- Crawled version: 13 April 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Shortname: webtransport
 
 ### Potential issue(s) {.anomalies}
 
-- Invalid WebIDL content found
-- Broken external links:
-     * [`https://streams.spec.whatwg.org/#writablestream-create`](https://streams.spec.whatwg.org/#writablestream-create)
-     * [`https://streams.spec.whatwg.org/#writablestream-create-writealgorithm`](https://streams.spec.whatwg.org/#writablestream-create-writealgorithm)
-     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 

@@ -4,47 +4,1082 @@
     "url": "https://w3c.github.io/webtransport/"
   },
   "idlparsed": {
-    "name": "WebIDLParseError",
-    "bareMessage": "Bodyless interface mixin",
-    "context": "Syntax error at line 73, since `interface mixin OutgoingStream`:\ninterface mixin OutgoingStream : WritableStream /* of Uint8Array */ {\n                               ^",
-    "line": 73,
-    "input": ": WritableStream /* of Uint8Array */ {\n  readonly attribute",
-    "tokens": [
-      {
-        "type": ":",
-        "value": ":",
-        "trivia": " ",
-        "line": 73,
-        "index": 271
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "WebTransport"
+        ],
+        "Worker": [
+          "WebTransport"
+        ]
       },
-      {
-        "type": "identifier",
-        "value": "WritableStream",
-        "trivia": " ",
-        "line": 73,
-        "index": 272
-      },
-      {
-        "type": "{",
-        "value": "{",
-        "trivia": " /* of Uint8Array */ ",
-        "line": 73,
-        "index": 273
-      },
-      {
-        "type": "readonly",
-        "value": "readonly",
-        "trivia": "\n  ",
-        "line": 74,
-        "index": 274
-      },
-      {
-        "type": "attribute",
-        "value": "attribute",
-        "trivia": " ",
-        "line": 74,
-        "index": 275
+      "functions": {
+        "Window": [
+          "DatagramDuplexStream",
+          "SendStream",
+          "ReceiveStream",
+          "BidirectionalStream"
+        ],
+        "Worker": [
+          "DatagramDuplexStream",
+          "SendStream",
+          "ReceiveStream",
+          "BidirectionalStream"
+        ]
       }
-    ]
+    },
+    "idlNames": {
+      "UnidirectionalStreamsTransport": {
+        "fragment": "interface mixin UnidirectionalStreamsTransport {\n  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});\n  /* a ReadableStream of ReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
+        "type": "interface mixin",
+        "name": "UnidirectionalStreamsTransport",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "createUnidirectionalStream",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SendStream"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "parameters",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SendStreamParameters"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "incomingUnidirectionalStreams",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ReadableStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SendStreamParameters": {
+        "fragment": "dictionary SendStreamParameters {\n};",
+        "type": "dictionary",
+        "name": "SendStreamParameters",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      },
+      "BidirectionalStreamsTransport": {
+        "fragment": "interface mixin BidirectionalStreamsTransport {\n    Promise<BidirectionalStream> createBidirectionalStream();\n    /* a ReadableStream of BidirectionalStream objects */\n    readonly attribute ReadableStream incomingBidirectionalStreams;\n};",
+        "type": "interface mixin",
+        "name": "BidirectionalStreamsTransport",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "createBidirectionalStream",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BidirectionalStream"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "incomingBidirectionalStreams",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ReadableStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "DatagramTransport": {
+        "fragment": "interface mixin DatagramTransport {\n    readonly attribute unsigned short maxDatagramSize;\n    readonly attribute DatagramDuplexStream datagrams;\n};",
+        "type": "interface mixin",
+        "name": "DatagramTransport",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "maxDatagramSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "datagrams",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DatagramDuplexStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "DatagramDuplexStream": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface DatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
+        "type": "interface",
+        "name": "DatagramDuplexStream",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "readable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ReadableStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "writable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WritableStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "WebTransport": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute WebTransportState state;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n  attribute EventHandler onstatechange;\n};",
+        "type": "interface",
+        "name": "WebTransport",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "url",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebTransportOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "getStats",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebTransportStats"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "state",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WebTransportState"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "ready",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "closed",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebTransportCloseInfo"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "close",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "closeInfo",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebTransportCloseInfo"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "onstatechange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "WebTransportOptions": {
+        "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling;\n  sequence<RTCDtlsFingerprint> serverCertificateFingerprints;\n};",
+        "type": "dictionary",
+        "name": "WebTransportOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "allowPooling",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "serverCertificateFingerprints",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RTCDtlsFingerprint"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "WebTransportState": {
+        "fragment": "enum WebTransportState {\n  \"connecting\",\n  \"connected\",\n  \"closed\",\n  \"failed\"\n};",
+        "type": "enum",
+        "name": "WebTransportState",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "connecting"
+          },
+          {
+            "type": "enum-value",
+            "value": "connected"
+          },
+          {
+            "type": "enum-value",
+            "value": "closed"
+          },
+          {
+            "type": "enum-value",
+            "value": "failed"
+          }
+        ],
+        "extAttrs": []
+      },
+      "WebTransportCloseInfo": {
+        "fragment": "dictionary WebTransportCloseInfo {\n  unsigned long long errorCode = 0;\n  DOMString reason = \"\";\n};",
+        "type": "dictionary",
+        "name": "WebTransportCloseInfo",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "errorCode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "reason",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": ""
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "WebTransportStats": {
+        "fragment": "dictionary WebTransportStats {\n  DOMHighResTimeStamp timestamp;\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long numOutgoingStreamsCreated;\n  unsigned long numIncomingStreamsCreated;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp minRtt;\n  unsigned long numReceivedDatagramsDropped;\n};",
+        "type": "dictionary",
+        "name": "WebTransportStats",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "timestamp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bytesSent",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "packetsSent",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "numOutgoingStreamsCreated",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "numIncomingStreamsCreated",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bytesReceived",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "packetsReceived",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "minRtt",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "numReceivedDatagramsDropped",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SendStream": {
+        "fragment": "[ Exposed=(Window,Worker) ]\ninterface SendStream : WritableStream /* of Uint8Array */ {\n  readonly attribute Promise<StreamAbortInfo> writingAborted;\n  undefined abortWriting(optional StreamAbortInfo abortInfo = {});\n};",
+        "type": "interface",
+        "name": "SendStream",
+        "inheritance": "WritableStream",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "writingAborted",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "StreamAbortInfo"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "abortWriting",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "abortInfo",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "StreamAbortInfo"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "StreamAbortInfo": {
+        "fragment": "dictionary StreamAbortInfo {\n  [EnforceRange] octet errorCode = 0;\n};",
+        "type": "dictionary",
+        "name": "StreamAbortInfo",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "errorCode",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ReceiveStream": {
+        "fragment": "[ Exposed=(Window,Worker) ]\ninterface ReceiveStream : ReadableStream /* of Uint8Array */ {\n  readonly attribute Promise<StreamAbortInfo> readingAborted;\n  undefined abortReading(optional StreamAbortInfo abortInfo = {});\n};",
+        "type": "interface",
+        "name": "ReceiveStream",
+        "inheritance": "ReadableStream",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "readingAborted",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "StreamAbortInfo"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "abortReading",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "abortInfo",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "StreamAbortInfo"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "BidirectionalStream": {
+        "fragment": "[ Exposed=(Window,Worker) ]\ninterface BidirectionalStream {\n  readonly attribute ReceiveStream readable;\n  readonly attribute SendStream writable;\n};",
+        "type": "interface",
+        "name": "BidirectionalStream",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "readable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ReceiveStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "writable",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SendStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "WebTransport": [
+        {
+          "fragment": "WebTransport includes UnidirectionalStreamsTransport;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WebTransport",
+          "includes": "UnidirectionalStreamsTransport"
+        },
+        {
+          "fragment": "WebTransport includes BidirectionalStreamsTransport;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WebTransport",
+          "includes": "BidirectionalStreamsTransport"
+        },
+        {
+          "fragment": "WebTransport includes DatagramTransport;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "WebTransport",
+          "includes": "DatagramTransport"
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "DatagramDuplexStream",
+        "WebTransport",
+        "SendStream",
+        "ReceiveStream",
+        "BidirectionalStream"
+      ],
+      "Worker": [
+        "DatagramDuplexStream",
+        "WebTransport",
+        "SendStream",
+        "ReceiveStream",
+        "BidirectionalStream"
+      ]
+    },
+    "dependencies": {
+      "UnidirectionalStreamsTransport": [
+        "SendStream",
+        "SendStreamParameters",
+        "ReadableStream"
+      ],
+      "SendStreamParameters": [],
+      "BidirectionalStreamsTransport": [
+        "BidirectionalStream",
+        "ReadableStream"
+      ],
+      "DatagramTransport": [
+        "DatagramDuplexStream"
+      ],
+      "DatagramDuplexStream": [
+        "ReadableStream",
+        "WritableStream"
+      ],
+      "WebTransport": [
+        "WebTransportOptions",
+        "WebTransportStats",
+        "WebTransportState",
+        "WebTransportCloseInfo",
+        "EventHandler",
+        "UnidirectionalStreamsTransport",
+        "BidirectionalStreamsTransport",
+        "DatagramTransport"
+      ],
+      "WebTransportOptions": [
+        "RTCDtlsFingerprint"
+      ],
+      "WebTransportCloseInfo": [],
+      "WebTransportStats": [
+        "DOMHighResTimeStamp"
+      ],
+      "SendStream": [
+        "WritableStream",
+        "StreamAbortInfo"
+      ],
+      "StreamAbortInfo": [],
+      "ReceiveStream": [
+        "ReadableStream",
+        "StreamAbortInfo"
+      ],
+      "BidirectionalStream": [
+        "ReceiveStream",
+        "SendStream"
+      ]
+    },
+    "externalDependencies": [
+      "ReadableStream",
+      "WritableStream",
+      "EventHandler",
+      "RTCDtlsFingerprint",
+      "DOMHighResTimeStamp"
+    ],
+    "hasObsoleteIdl": false
   }
 }
