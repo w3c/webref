@@ -4820,7 +4820,7 @@
         "partial": false
       },
       "GPUBlendFactor": {
-        "fragment": "enum GPUBlendFactor {\n    \"zero\",\n    \"one\",\n    \"src-component\",\n    \"one-minus-src-component\",\n    \"src-alpha\",\n    \"one-minus-src-alpha\",\n    \"dst-component\",\n    \"one-minus-dst-component\",\n    \"dst-alpha\",\n    \"one-minus-dst-alpha\",\n    \"src-alpha-saturated\",\n    \"blendcolor-component\",\n    \"one-minus-blendcolor-component\"\n};",
+        "fragment": "enum GPUBlendFactor {\n    \"zero\",\n    \"one\",\n    \"src-component\",\n    \"one-minus-src-component\",\n    \"src-alpha\",\n    \"one-minus-src-alpha\",\n    \"dst-component\",\n    \"one-minus-dst-component\",\n    \"dst-alpha\",\n    \"one-minus-dst-alpha\",\n    \"src-alpha-saturated\",\n    \"constant-component\",\n    \"one-minus-constant-component\"\n};",
         "type": "enum",
         "name": "GPUBlendFactor",
         "values": [
@@ -4870,11 +4870,11 @@
           },
           {
             "type": "enum-value",
-            "value": "blendcolor-component"
+            "value": "constant-component"
           },
           {
             "type": "enum-value",
-            "value": "one-minus-blendcolor-component"
+            "value": "one-minus-constant-component"
           }
         ],
         "extAttrs": []
@@ -7522,7 +7522,7 @@
         "partial": false
       },
       "GPURenderPassEncoder": {
-        "fragment": "[Exposed=Window]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n                     float width, float height,\n                     float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendColor(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined endPass();\n};",
+        "fragment": "[Exposed=Window]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n                     float width, float height,\n                     float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendConstant(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined endPass();\n};",
         "type": "interface",
         "name": "GPURenderPassEncoder",
         "inheritance": null,
@@ -7721,7 +7721,7 @@
           },
           {
             "type": "operation",
-            "name": "setBlendColor",
+            "name": "setBlendConstant",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
