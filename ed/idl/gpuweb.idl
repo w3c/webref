@@ -33,7 +33,7 @@ interface GPUAdapterLimits {
 };
 
 [Exposed=Window]
-interface GPUAdapterFeatures {
+interface GPUSupportedFeatures {
     readonly setlike<GPUFeatureName>;
 };
 
@@ -60,7 +60,7 @@ enum GPUPowerPreference {
 [Exposed=Window]
 interface GPUAdapter {
     readonly attribute DOMString name;
-    [SameObject] readonly attribute GPUAdapterFeatures features;
+    [SameObject] readonly attribute GPUSupportedFeatures features;
     [SameObject] readonly attribute GPUAdapterLimits limits;
 
     Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});
@@ -82,7 +82,7 @@ enum GPUFeatureName {
 
 [Exposed=(Window, DedicatedWorker), Serializable]
 interface GPUDevice : EventTarget {
-    readonly attribute FrozenArray<GPUFeatureName> features;
+    [SameObject] readonly attribute GPUSupportedFeatures features;
     readonly attribute object limits;
 
     [SameObject] readonly attribute GPUQueue queue;
@@ -573,17 +573,17 @@ dictionary GPUBlendComponent {
 enum GPUBlendFactor {
     "zero",
     "one",
-    "src-color",
-    "one-minus-src-color",
+    "src-component",
+    "one-minus-src-component",
     "src-alpha",
     "one-minus-src-alpha",
-    "dst-color",
-    "one-minus-dst-color",
+    "dst-component",
+    "one-minus-dst-component",
     "dst-alpha",
     "one-minus-dst-alpha",
     "src-alpha-saturated",
-    "blend-color",
-    "one-minus-blend-color"
+    "blendcolor-component",
+    "one-minus-blendcolor-component"
 };
 
 enum GPUBlendOperation {
