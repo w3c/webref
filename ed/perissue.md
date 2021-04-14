@@ -292,7 +292,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `submitter` with type `dict-member` for [`SubmitEventInit`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#submiteventinit), but found [`submitter`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-submitevent-submitter) with type `attribute` for `SubmitEvent`
     * `constructor(type, eventInitDict)` with type `constructor` for [`FormDataEvent`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#formdataevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `formData` with type `dict-member` for [`FormDataEventInit`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#formdataeventinit), but found [`formData`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-formdataevent-formdata) with type `attribute` for `FormDataEvent`
-    * `flatten` with type `dict-member` for [`AssignedNodesOptions`](https://html.spec.whatwg.org/multipage/scripting.html#assignednodesoptions)
+    * `flatten` with type `dict-member` for [`AssignedNodesOptions`](https://html.spec.whatwg.org/multipage/scripting.html#assignednodesoptions), but found [`flatten`](https://html.spec.whatwg.org/multipage/scripting.html#dom-assignednodesoptions-flatten) with type `dict-member` for `AssignedNodeOptions`
     * `"butt"` with type `enum-value` for [`CanvasLineCap`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinecap)
     * `"round"` with type `enum-value` for [`CanvasLineCap`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinecap)
     * `"square"` with type `enum-value` for [`CanvasLineCap`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinecap)
@@ -2315,6 +2315,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html/#radio-button-group`](https://www.w3.org/TR/html/#radio-button-group)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
      * [`https://mimesniff.spec.whatwg.org/#rules-for-text-or-binary`](https://mimesniff.spec.whatwg.org/#rules-for-text-or-binary)
+     * [`https://dom.spec.whatwg.org/#assign-slotables-for-a-tree`](https://dom.spec.whatwg.org/#assign-slotables-for-a-tree)
      * [`https://dom.spec.whatwg.org/#assign-a-slot`](https://dom.spec.whatwg.org/#assign-a-slot)
      * [`https://dom.spec.whatwg.org/#event-listener-type`](https://dom.spec.whatwg.org/#event-listener-type)
      * [`https://dom.spec.whatwg.org/#event-listener-callback`](https://dom.spec.whatwg.org/#event-listener-callback)
@@ -3259,7 +3260,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1204 problematic external links found in 193 specifications
+=> 1205 problematic external links found in 193 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4625,6 +4626,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/html/interactive-elements.html#element-attrdef-dialog-open`](https://w3c.github.io/html/interactive-elements.html#element-attrdef-dialog-open)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
      * [`https://dom.spec.whatwg.org/#dom-element-setAttribute`](https://dom.spec.whatwg.org/#dom-element-setAttribute)
+     * [`https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment`](https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment)
+     * [`https://dom.spec.whatwg.org/#slottable-manual-slot-assignment`](https://dom.spec.whatwg.org/#slottable-manual-slot-assignment)
      * [`https://dom.spec.whatwg.org/#concept-event-target`](https://dom.spec.whatwg.org/#concept-event-target)
      * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://drafts.csswg.org/css2/#block-boxes%E2%91%A0`](https://drafts.csswg.org/css2/#block-boxes%E2%91%A0)
@@ -4955,7 +4958,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 602 problematic external links found in 141 specifications
+=> 604 problematic external links found in 141 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

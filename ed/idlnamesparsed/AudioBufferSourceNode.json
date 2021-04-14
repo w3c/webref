@@ -6,7 +6,7 @@
       "url": "https://www.w3.org/TR/webaudio/"
     },
     "fragment": "[Exposed=Window]\ninterface AudioBufferSourceNode : AudioScheduledSourceNode {\n  constructor (BaseAudioContext context,\n               optional AudioBufferSourceOptions options = {});\n  attribute AudioBuffer? buffer;\n  readonly attribute AudioParam playbackRate;\n  readonly attribute AudioParam detune;\n  attribute boolean loop;\n  attribute double loopStart;\n  attribute double loopEnd;\n  undefined start (optional double when = 0,\n                   optional double offset,\n                   optional double duration);\n};",
-    "href": "https://webaudio.github.io/web-audio-api/#AudioBufferSourceNode"
+    "href": "https://webaudio.github.io/web-audio-api/#audiobuffersourcenode"
   },
   "extended": [],
   "inheritance": {
@@ -17,7 +17,7 @@
         "url": "https://www.w3.org/TR/webaudio/"
       },
       "fragment": "[Exposed=Window]\ninterface AudioScheduledSourceNode : AudioNode {\n  attribute EventHandler onended;\n  undefined start(optional double when = 0);\n  undefined stop(optional double when = 0);\n};",
-      "href": "https://webaudio.github.io/web-audio-api/#AudioScheduledSourceNode"
+      "href": "https://webaudio.github.io/web-audio-api/#audioscheduledsourcenode"
     },
     "extended": [],
     "inheritance": {
