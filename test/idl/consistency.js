@@ -282,9 +282,6 @@ describe('Web IDL consistency', () => {
       'SecureContext', // https://heycam.github.io/webidl/#SecureContext
       'Unscopable', // https://heycam.github.io/webidl/#Unscopable
 
-      // TODO: drop NoInterfaceObject when it has been removed from all specs
-      'NoInterfaceObject',
-
       // Extended attributes defined by other specs:
       'CEReactions', // https://html.spec.whatwg.org/multipage/custom-elements.html#cereactions
       'HTMLConstructor', // https://html.spec.whatwg.org/multipage/dom.html#htmlconstructor
