@@ -7,7 +7,6 @@ idl.parseAll().then((all) => {
   describe('WebIDL2.validate', () => {
     const ignoreRules = [
       'no-nointerfaceobject',
-      'renamed-legacy',
       'require-exposed',
     ];
 
