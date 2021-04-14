@@ -2567,7 +2567,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#use-srcset-or-picture`](https://html.spec.whatwg.org/#use-srcset-or-picture)
      * [`https://html.spec.whatwg.org/#plugin`](https://html.spec.whatwg.org/#plugin)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/):
-     * [`https://www.w3.org/TR/resource-timing-2/#dfn-setup-the-resource-timing-entry`](https://www.w3.org/TR/resource-timing-2/#dfn-setup-the-resource-timing-entry)
      * [`https://html.spec.whatwg.org/#the-document's-address`](https://html.spec.whatwg.org/#the-document's-address)
      * [`https://html.spec.whatwg.org/#current-document-readiness`](https://html.spec.whatwg.org/#current-document-readiness)
      * [`https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh`](https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh)
@@ -3260,7 +3259,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1205 problematic external links found in 193 specifications
+=> 1204 problematic external links found in 193 specifications
 
 
 ## External links that neither target definitions nor headings
