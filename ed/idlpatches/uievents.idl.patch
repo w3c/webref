@@ -1,0 +1,25 @@
+From 4579906a66b40e25f22b2a5e92b0049eb58fc9dc Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Wed, 14 Apr 2021 10:11:02 +0200
+Subject: [PATCH] Add [Exposed=Window] to uievents.idl
+
+https://github.com/w3c/uievents/pull/304
+---
+ ed/idl/uievents.idl | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/ed/idl/uievents.idl b/ed/idl/uievents.idl
+index b74336ba0..5fdc812e7 100644
+--- a/ed/idl/uievents.idl
++++ b/ed/idl/uievents.idl
+@@ -224,6 +224,7 @@ partial dictionary KeyboardEventInit {
+   unsigned long keyCode = 0;
+ };
+ 
++[Exposed=Window]
+ interface MutationEvent : Event {
+   // attrChangeType
+   const unsigned short MODIFICATION = 1;
+-- 
+2.31.1.295.g9ea45b61b8-goog
+

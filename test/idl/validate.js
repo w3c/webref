@@ -5,15 +5,11 @@ const idl = require('@webref/idl');
 
 idl.parseAll().then((all) => {
   describe('WebIDL2.validate', () => {
-    const ignoreRules = [
-      'no-nointerfaceobject',
-      'require-exposed',
-    ];
-
     for (const [spec, ast] of Object.entries(all)) {
       it(spec, () => {
         const validations = WebIDL2.validate(ast).filter(v => {
-          return !ignoreRules.includes(v.ruleName);
+          // Ignore the [LegacyNoInterfaceObject] rule.
+          return v.ruleName !== 'no-nointerfaceobject';
         });
         if (!validations.length) {
           return;

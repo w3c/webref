@@ -32,6 +32,7 @@ for (const [shortname, ast] of Object.entries(parsedFiles)) {
 
 The following guarantees are provided by this package:
 - All IDL files can be parsed by the version of [webidl2.js](https://github.com/w3c/webidl2.js/) used in `peerDependencies` in `package.json`.
+- `WebIDL2.validate` passes with the exception of the "no-nointerfaceobject" rule about `[LegacyNoInterfaceObject]`, which is in wide use.
 - All types are defined by some specification.
 - All extended attributes are defined by some specification.
 - No duplicate top-level definitions or members.
@@ -39,6 +40,5 @@ The following guarantees are provided by this package:
 - No conflicts when applying mixins and partials.
 
 The following guarantees are *not* provided:
-- `WebIDL2.validate` rules are not guaranteed to pass.
 - Extended attribute *values* are not validated.
 - Generally no other guarantees except the ones enforced by tests.

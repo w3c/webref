@@ -1,0 +1,25 @@
+From a540fe0344b7ccd34cca89a17dcd9b5b5d9cd3d8 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Wed, 14 Apr 2021 09:47:16 +0200
+Subject: [PATCH] Add [Exposed=Window] to SVG.idl
+
+https://github.com/w3c/svgwg/pull/836
+---
+ ed/idl/SVG.idl | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
+index e0b013bfa..897045250 100644
+--- a/ed/idl/SVG.idl
++++ b/ed/idl/SVG.idl
+@@ -24,6 +24,7 @@ dictionary SVGBoundingBoxOptions {
+   boolean clipped = false;
+ };
+ 
++[Exposed=Window]
+ interface SVGGraphicsElement : SVGElement {
+   [SameObject] readonly attribute SVGAnimatedTransformList transform;
+ 
+-- 
+2.31.1.295.g9ea45b61b8-goog
+
