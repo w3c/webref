@@ -1,0 +1,35 @@
+From d63180d957007dd1d822bd864d11bc7de407830a Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Wed, 14 Apr 2021 09:24:11 +0200
+Subject: [PATCH] Fix void in filter-effects.idl
+
+https://github.com/w3c/fxtf-drafts/pull/421
+---
+ ed/idl/filter-effects.idl | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/ed/idl/filter-effects.idl b/ed/idl/filter-effects.idl
+index b17ebf678..bb0fa571f 100644
+--- a/ed/idl/filter-effects.idl
++++ b/ed/idl/filter-effects.idl
+@@ -206,7 +206,7 @@ interface SVGFEDropShadowElement : SVGElement {
+   readonly attribute SVGAnimatedNumber stdDeviationX;
+   readonly attribute SVGAnimatedNumber stdDeviationY;
+ 
+-  void setStdDeviation(float stdDeviationX, float stdDeviationY);
++  undefined setStdDeviation(float stdDeviationX, float stdDeviationY);
+ };
+ 
+ SVGFEDropShadowElement includes SVGFilterPrimitiveStandardAttributes;
+@@ -229,7 +229,7 @@ interface SVGFEGaussianBlurElement : SVGElement {
+   readonly attribute SVGAnimatedNumber stdDeviationY;
+   readonly attribute SVGAnimatedEnumeration edgeMode;
+ 
+-  void setStdDeviation(float stdDeviationX, float stdDeviationY);
++  undefined setStdDeviation(float stdDeviationX, float stdDeviationY);
+ };
+ 
+ SVGFEGaussianBlurElement includes SVGFilterPrimitiveStandardAttributes;
+-- 
+2.31.1.295.g9ea45b61b8-goog
+
