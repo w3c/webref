@@ -8,7 +8,6 @@ idl.parseAll().then((all) => {
     const ignoreRules = [
       'no-nointerfaceobject',
       'renamed-legacy',
-      'replace-void',
       'require-exposed',
     ];
 

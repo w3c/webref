@@ -247,9 +247,6 @@ describe('Web IDL consistency', () => {
       'USVString', // https://heycam.github.io/webidl/#idl-USVString
       'undefined', // https://heycam.github.io/webidl/#idl-undefined
 
-      // TODO: drop void when it has been removed from all specs
-      'void',
-
       // Types defined by other specs:
       'CSSOMString', // https://drafts.csswg.org/cssom/#cssomstring-type
       'WindowProxy' // https://html.spec.whatwg.org/multipage/window-object.html#windowproxy
