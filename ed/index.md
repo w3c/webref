@@ -272,7 +272,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
-- Crawled version: 08 April 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -8208,7 +8208,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 13 April 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -8260,7 +8260,7 @@ No informative reference to this spec from other specs.
      * `submitter` with type `dict-member` for [`SubmitEventInit`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#submiteventinit), but found [`submitter`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-submitevent-submitter) with type `attribute` for `SubmitEvent`
      * `constructor(type, eventInitDict)` with type `constructor` for [`FormDataEvent`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#formdataevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
      * `formData` with type `dict-member` for [`FormDataEventInit`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#formdataeventinit), but found [`formData`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-formdataevent-formdata) with type `attribute` for `FormDataEvent`
-     * `flatten` with type `dict-member` for [`AssignedNodesOptions`](https://html.spec.whatwg.org/multipage/scripting.html#assignednodesoptions)
+     * `flatten` with type `dict-member` for [`AssignedNodesOptions`](https://html.spec.whatwg.org/multipage/scripting.html#assignednodesoptions), but found [`flatten`](https://html.spec.whatwg.org/multipage/scripting.html#dom-assignednodesoptions-flatten) with type `dict-member` for `AssignedNodeOptions`
      * `"butt"` with type `enum-value` for [`CanvasLineCap`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinecap)
      * `"round"` with type `enum-value` for [`CanvasLineCap`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinecap)
      * `"square"` with type `enum-value` for [`CanvasLineCap`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinecap)
@@ -8430,6 +8430,7 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/), related reference "MANIFEST" uses URL [`https://www.w3.org/TR/appmanifest/`](https://www.w3.org/TR/appmanifest/)
 - External links to private terms:
      * [`https://mimesniff.spec.whatwg.org/#rules-for-text-or-binary`](https://mimesniff.spec.whatwg.org/#rules-for-text-or-binary)
+     * [`https://dom.spec.whatwg.org/#assign-slotables-for-a-tree`](https://dom.spec.whatwg.org/#assign-slotables-for-a-tree)
      * [`https://dom.spec.whatwg.org/#assign-a-slot`](https://dom.spec.whatwg.org/#assign-a-slot)
      * [`https://dom.spec.whatwg.org/#event-listener-type`](https://dom.spec.whatwg.org/#event-listener-type)
      * [`https://dom.spec.whatwg.org/#event-listener-callback`](https://dom.spec.whatwg.org/#event-listener-callback)
@@ -8804,6 +8805,8 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/html-aam/#el-autonomous-custom-element`](https://w3c.github.io/html-aam/#el-autonomous-custom-element)
 - Broken external links:
      * [`https://dom.spec.whatwg.org/#dom-element-setAttribute`](https://dom.spec.whatwg.org/#dom-element-setAttribute)
+     * [`https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment`](https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment)
+     * [`https://dom.spec.whatwg.org/#slottable-manual-slot-assignment`](https://dom.spec.whatwg.org/#slottable-manual-slot-assignment)
      * [`https://dom.spec.whatwg.org/#concept-event-target`](https://dom.spec.whatwg.org/#concept-event-target)
      * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://drafts.csswg.org/css2/#block-boxes%E2%91%A0`](https://drafts.csswg.org/css2/#block-boxes%E2%91%A0)
@@ -11790,7 +11793,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-private-methods/](https://tc39.es/proposal-private-methods/)
 - Crawled URL: [https://tc39.es/proposal-private-methods/](https://tc39.es/proposal-private-methods/)
-- Crawled version: 17 February 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://tc39.es/proposal-private-methods/](https://tc39.es/proposal-private-methods/)
 - Shortname: tc39-private-methods
 
@@ -11905,7 +11908,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-class-fields/](https://tc39.es/proposal-class-fields/)
 - Crawled URL: [https://tc39.es/proposal-class-fields/](https://tc39.es/proposal-class-fields/)
-- Crawled version: 13 April 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://tc39.es/proposal-class-fields/](https://tc39.es/proposal-class-fields/)
 - Shortname: tc39-class-fields
 
@@ -12374,7 +12377,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Crawled URL: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
-- Crawled version: 01 April 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Shortname: SVG2
@@ -13025,7 +13028,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
 - Crawled URL: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
-- Crawled version: 13 February 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://tc39.es/proposal-static-class-features/](https://tc39.es/proposal-static-class-features/)
 - Shortname: tc39-static-class-features
 
@@ -13234,7 +13237,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
 - Crawled URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
-- Crawled version: 01 April 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
 - Shortname: svg-animations
 
@@ -13339,7 +13342,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/svg-integration/](https://www.w3.org/TR/svg-integration/)
 - Crawled URL: [https://svgwg.org/specs/integration/](https://svgwg.org/specs/integration/)
-- Crawled version: 01 April 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://svgwg.org/specs/integration/](https://svgwg.org/specs/integration/)
 - Latest published version: [https://www.w3.org/TR/svg-integration/](https://www.w3.org/TR/svg-integration/)
 - Shortname: svg-integration
@@ -13375,7 +13378,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/svg-strokes/](https://www.w3.org/TR/svg-strokes/)
 - Crawled URL: [https://svgwg.org/specs/strokes/](https://svgwg.org/specs/strokes/)
-- Crawled version: 01 April 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://svgwg.org/specs/strokes/](https://svgwg.org/specs/strokes/)
 - Latest published version: [https://www.w3.org/TR/svg-strokes/](https://www.w3.org/TR/svg-strokes/)
 - Shortname: svg-strokes
@@ -14066,7 +14069,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled version: 12 April 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Shortname: ua-client-hints
 
@@ -14280,7 +14283,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Crawled URL: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
-- Crawled version: 4 April 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Shortname: webaudio
@@ -16565,7 +16568,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 13 April 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 

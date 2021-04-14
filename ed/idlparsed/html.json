@@ -14694,7 +14694,7 @@
         "partial": false
       },
       "HTMLSlotElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLSlotElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  sequence<Node> assignedNodes(optional AssignedNodesOptions options = {});\n  sequence<Element> assignedElements(optional AssignedNodesOptions options = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLSlotElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  sequence<Node> assignedNodes(optional AssignedNodesOptions options = {});\n  sequence<Element> assignedElements(optional AssignedNodesOptions options = {});\n  undefined assign((Element or Text)... nodes);\n};",
         "type": "interface",
         "name": "HTMLSlotElement",
         "inheritance": "HTMLElement",
@@ -14814,6 +14814,55 @@
                 },
                 "optional": true,
                 "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "assign",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "nodes",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Element"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Text"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": true
               }
             ],
             "extAttrs": [],
@@ -37840,7 +37889,8 @@
         "HTMLElement",
         "Node",
         "AssignedNodesOptions",
-        "Element"
+        "Element",
+        "Text"
       ],
       "AssignedNodesOptions": [],
       "HTMLCanvasElement": [
@@ -38272,6 +38322,7 @@
       "FormData",
       "DocumentFragment",
       "Node",
+      "Text",
       "WebGLRenderingContext",
       "WebGL2RenderingContext",
       "SVGImageElement",

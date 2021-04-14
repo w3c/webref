@@ -5,7 +5,7 @@
       "title": "User-Agent Client Hints",
       "url": "https://wicg.github.io/ua-client-hints/"
     },
-    "fragment": "dictionary UADataValues {\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platformVersion;\n  DOMString uaFullVersion;\n};",
+    "fragment": "dictionary UADataValues {\n  FrozenArray<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString platform;\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platformVersion;\n  DOMString uaFullVersion;\n};",
     "href": "https://wicg.github.io/ua-client-hints/#dictdef-uadatavalues"
   },
   "extended": [],

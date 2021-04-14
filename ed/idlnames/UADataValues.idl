@@ -1,5 +1,8 @@
 // Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 dictionary UADataValues {
+  FrozenArray<NavigatorUABrandVersion> brands;
+  boolean mobile;
+  DOMString platform;
   DOMString architecture;
   DOMString bitness;
   DOMString model;
