@@ -1,0 +1,24 @@
+From 0e5625762df6bb0e0ae130e0ffaa0593a29b78ad Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Wed, 14 Apr 2021 09:14:10 +0200
+Subject: [PATCH] Fix void in background-fetch.idl
+
+https://github.com/WICG/background-fetch/pull/159
+---
+ ed/idl/background-fetch.idl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/idl/background-fetch.idl b/ed/idl/background-fetch.idl
+index 1a0ed0e43..993bd8bc2 100644
+--- a/ed/idl/background-fetch.idl
++++ b/ed/idl/background-fetch.idl
+@@ -85,5 +85,5 @@ dictionary BackgroundFetchEventInit : ExtendableEventInit {
+ [Exposed=ServiceWorker]
+ interface BackgroundFetchUpdateUIEvent : BackgroundFetchEvent {
+   constructor(DOMString type, BackgroundFetchEventInit init);
+-  Promise<void> updateUI(optional BackgroundFetchUIOptions options = {});
++  Promise<undefined> updateUI(optional BackgroundFetchUIOptions options = {});
+ };
+-- 
+2.31.1.295.g9ea45b61b8-goog
+
