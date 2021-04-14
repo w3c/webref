@@ -224,6 +224,7 @@ partial dictionary KeyboardEventInit {
   unsigned long keyCode = 0;
 };
 
+[Exposed=Window]
 interface MutationEvent : Event {
   // attrChangeType
   const unsigned short MODIFICATION = 1;

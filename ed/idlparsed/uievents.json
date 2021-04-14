@@ -16,7 +16,11 @@
           "CompositionEvent"
         ]
       },
-      "functions": {}
+      "functions": {
+        "Window": [
+          "MutationEvent"
+        ]
+      }
     },
     "idlNames": {
       "UIEvent": {
@@ -1830,7 +1834,7 @@
         "partial": false
       },
       "MutationEvent": {
-        "fragment": "interface MutationEvent : Event {\n  // attrChangeType\n  const unsigned short MODIFICATION = 1;\n  const unsigned short ADDITION = 2;\n  const unsigned short REMOVAL = 3;\n\n  readonly attribute Node? relatedNode;\n  readonly attribute DOMString prevValue;\n  readonly attribute DOMString newValue;\n  readonly attribute DOMString attrName;\n  readonly attribute unsigned short attrChange;\n\n  undefined initMutationEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Node? relatedNodeArg = null,\n    optional DOMString prevValueArg = \"\",\n    optional DOMString newValueArg = \"\",\n    optional DOMString attrNameArg = \"\",\n    optional unsigned short attrChangeArg = 0);\n};",
+        "fragment": "[Exposed=Window]\ninterface MutationEvent : Event {\n  // attrChangeType\n  const unsigned short MODIFICATION = 1;\n  const unsigned short ADDITION = 2;\n  const unsigned short REMOVAL = 3;\n\n  readonly attribute Node? relatedNode;\n  readonly attribute DOMString prevValue;\n  readonly attribute DOMString newValue;\n  readonly attribute DOMString attrName;\n  readonly attribute unsigned short attrChange;\n\n  undefined initMutationEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Node? relatedNodeArg = null,\n    optional DOMString prevValueArg = \"\",\n    optional DOMString newValueArg = \"\",\n    optional DOMString attrNameArg = \"\",\n    optional unsigned short attrChangeArg = 0);\n};",
         "type": "interface",
         "name": "MutationEvent",
         "inheritance": "Event",
@@ -2126,7 +2130,17 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       }
     },
@@ -3044,7 +3058,8 @@
         "WheelEvent",
         "InputEvent",
         "KeyboardEvent",
-        "CompositionEvent"
+        "CompositionEvent",
+        "MutationEvent"
       ]
     },
     "dependencies": {
