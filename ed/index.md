@@ -2634,7 +2634,6 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Conditional Rules Module Level 4](https://drafts.csswg.org/css-conditional-4/)
-- [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
@@ -2758,20 +2757,19 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Custom Highlight API Module Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
+## CSS Custom Highlight API Module Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css-highlight-api-1/](https://www.w3.org/TR/css-highlight-api-1/)
 - Crawled URL: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
-- Crawled version: 8 April 2021
+- Crawled version: 14 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-highlight-api-1/](https://drafts.csswg.org/css-highlight-api-1/)
 - Latest published version: [https://www.w3.org/TR/css-highlight-api-1/](https://www.w3.org/TR/css-highlight-api-1/)
 - Shortname: css-highlight-api-1
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CSSOMString`
 - External links to private terms:
      * [`https://drafts.csswg.org/css-pseudo-4/#highlight-overlay`](https://drafts.csswg.org/css-pseudo-4/#highlight-overlay)
 
@@ -12307,7 +12305,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Crawled URL: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
-- Crawled version: 14 April 2021
+- Crawled version: 15 April 2021
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Shortname: resource-timing-2
