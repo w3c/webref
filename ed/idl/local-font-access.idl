@@ -13,13 +13,12 @@ WorkerNavigator includes NavigatorFonts;
 [SecureContext,
  Exposed=(Window,Worker)]
 interface FontManager {
-  FontIterator query();
+  Promise<sequence<FontMetadata>> query(QueryOptions options);
 };
 
-[SecureContext,
- Exposed=(Window,Worker)]
-interface FontIterator {
-  async iterable<FontMetadata>;
+dictionary QueryOptions {
+  boolean persistentAccess = false;
+  sequence<DOMString> select = [];
 };
 
 [Exposed=(Window,Worker)]
@@ -29,4 +28,5 @@ interface FontMetadata {
   readonly attribute USVString postscriptName;
   readonly attribute USVString fullName;
   readonly attribute USVString family;
+  readonly attribute USVString style;
 };
