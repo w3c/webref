@@ -14,7 +14,6 @@ jobs:
       with:
         node-version: 14.x
     - run: npm ci
-    - run: npx lerna bootstrap
     - run: npm test
 env:
   FORCE_COLOR: 3
