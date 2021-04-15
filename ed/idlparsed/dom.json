@@ -5220,7 +5220,7 @@
         "partial": false
       },
       "ShadowRoot": {
-        "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute Element host;\n  attribute EventHandler onslotchange;\n};",
+        "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute Element host;\n  attribute EventHandler onslotchange;\n};",
         "type": "interface",
         "name": "ShadowRoot",
         "inheritance": "DocumentFragment",
@@ -5235,6 +5235,21 @@
               "nullable": false,
               "union": false,
               "idlType": "ShadowRootMode"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "slotAssignment",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SlotAssignmentMode"
             },
             "extAttrs": [],
             "special": "",
@@ -5296,6 +5311,22 @@
           {
             "type": "enum-value",
             "value": "closed"
+          }
+        ],
+        "extAttrs": []
+      },
+      "SlotAssignmentMode": {
+        "fragment": "enum SlotAssignmentMode { \"manual\", \"named\" };",
+        "type": "enum",
+        "name": "SlotAssignmentMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "manual"
+          },
+          {
+            "type": "enum-value",
+            "value": "named"
           }
         ],
         "extAttrs": []
@@ -6535,7 +6566,7 @@
         "partial": false
       },
       "ShadowRootInit": {
-        "fragment": "dictionary ShadowRootInit {\n  required ShadowRootMode mode;\n  boolean delegatesFocus = false;\n};",
+        "fragment": "dictionary ShadowRootInit {\n  required ShadowRootMode mode;\n  boolean delegatesFocus = false;\n  SlotAssignmentMode slotAssignment = \"named\";\n};",
         "type": "dictionary",
         "name": "ShadowRootInit",
         "inheritance": null,
@@ -6570,6 +6601,24 @@
             "default": {
               "type": "boolean",
               "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "slotAssignment",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SlotAssignmentMode"
+            },
+            "default": {
+              "type": "string",
+              "value": "named"
             },
             "required": false
           }
@@ -10571,6 +10620,7 @@
         "DocumentOrShadowRoot",
         "DocumentFragment",
         "ShadowRootMode",
+        "SlotAssignmentMode",
         "Element",
         "EventHandler"
       ],
@@ -10653,7 +10703,8 @@
         "Document"
       ],
       "ShadowRootInit": [
-        "ShadowRootMode"
+        "ShadowRootMode",
+        "SlotAssignmentMode"
       ],
       "NamedNodeMap": [
         "Attr"

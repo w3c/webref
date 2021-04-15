@@ -6552,7 +6552,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 23 March 2021
+- Crawled version: 15 April 2021
 - Editor's Draft: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Shortname: dom
 
@@ -7160,7 +7160,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 14 April 2021
+- Crawled version: 15 April 2021
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -8207,7 +8207,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 14 April 2021
+- Crawled version: 15 April 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -8805,7 +8805,6 @@ No informative reference to this spec from other specs.
 - Broken external links:
      * [`https://dom.spec.whatwg.org/#dom-element-setAttribute`](https://dom.spec.whatwg.org/#dom-element-setAttribute)
      * [`https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment`](https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment)
-     * [`https://dom.spec.whatwg.org/#slottable-manual-slot-assignment`](https://dom.spec.whatwg.org/#slottable-manual-slot-assignment)
      * [`https://dom.spec.whatwg.org/#concept-event-target`](https://dom.spec.whatwg.org/#concept-event-target)
      * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://drafts.csswg.org/css2/#block-boxes%E2%91%A0`](https://drafts.csswg.org/css2/#block-boxes%E2%91%A0)
@@ -10667,7 +10666,6 @@ Informative references to this spec from:
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
      * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/), related reference "XML" uses URL [`https://www.w3.org/TR/xml/`](https://www.w3.org/TR/xml/)
 - External links to private terms:
-     * [`https://html.spec.whatwg.org/#bc-container-document`](https://html.spec.whatwg.org/#bc-container-document)
      * [`https://html.spec.whatwg.org/#use-srcset-or-picture`](https://html.spec.whatwg.org/#use-srcset-or-picture)
      * [`https://html.spec.whatwg.org/#plugin`](https://html.spec.whatwg.org/#plugin)
 - External links that use a dated URL:
@@ -12009,7 +12007,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#meta-referrer`](https://html.spec.whatwg.org/#meta-referrer)
      * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
      * [`https://html.spec.whatwg.org/#script`](https://html.spec.whatwg.org/#script)
-     * [`https://html.spec.whatwg.org/#bc-container-document`](https://html.spec.whatwg.org/#bc-container-document)
      * [`https://html.spec.whatwg.org/#javascript-protocol`](https://html.spec.whatwg.org/#javascript-protocol)
      * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
      * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)

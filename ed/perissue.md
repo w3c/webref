@@ -2564,7 +2564,6 @@ Links in the body of a specification should be to the same document as that poin
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/):
      * [`https://html.spec.whatwg.org/#script`](https://html.spec.whatwg.org/#script)
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/):
-     * [`https://html.spec.whatwg.org/#bc-container-document`](https://html.spec.whatwg.org/#bc-container-document)
      * [`https://html.spec.whatwg.org/#use-srcset-or-picture`](https://html.spec.whatwg.org/#use-srcset-or-picture)
      * [`https://html.spec.whatwg.org/#plugin`](https://html.spec.whatwg.org/#plugin)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/):
@@ -2726,7 +2725,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#meta-referrer`](https://html.spec.whatwg.org/#meta-referrer)
      * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
      * [`https://html.spec.whatwg.org/#script`](https://html.spec.whatwg.org/#script)
-     * [`https://html.spec.whatwg.org/#bc-container-document`](https://html.spec.whatwg.org/#bc-container-document)
      * [`https://html.spec.whatwg.org/#javascript-protocol`](https://html.spec.whatwg.org/#javascript-protocol)
      * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
      * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
@@ -3260,7 +3258,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1205 problematic external links found in 193 specifications
+=> 1203 problematic external links found in 193 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4627,7 +4625,6 @@ Links in the body of a specification should be to the same document as that poin
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
      * [`https://dom.spec.whatwg.org/#dom-element-setAttribute`](https://dom.spec.whatwg.org/#dom-element-setAttribute)
      * [`https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment`](https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment)
-     * [`https://dom.spec.whatwg.org/#slottable-manual-slot-assignment`](https://dom.spec.whatwg.org/#slottable-manual-slot-assignment)
      * [`https://dom.spec.whatwg.org/#concept-event-target`](https://dom.spec.whatwg.org/#concept-event-target)
      * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
      * [`https://drafts.csswg.org/css2/#block-boxes%E2%91%A0`](https://drafts.csswg.org/css2/#block-boxes%E2%91%A0)
@@ -4958,7 +4955,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 604 problematic external links found in 141 specifications
+=> 603 problematic external links found in 141 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
