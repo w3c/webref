@@ -18,7 +18,7 @@
     },
     "idlNames": {
       "Highlight": {
-        "fragment": "[Exposed=Window]\ninterface Highlight {\n  constructor(CSSOMString name, AbstractRange... initialRanges);\n  setlike<AbstractRange>;\n  attribute long priority;\n  readonly attribute CSSOMString name;\n};",
+        "fragment": "[Exposed=Window]\ninterface Highlight {\n  constructor(AbstractRange... initialRanges);\n  setlike<AbstractRange>;\n  attribute long priority;\n};",
         "type": "interface",
         "name": "Highlight",
         "inheritance": null,
@@ -26,22 +26,6 @@
           {
             "type": "constructor",
             "arguments": [
-              {
-                "type": "argument",
-                "name": "name",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CSSOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
               {
                 "type": "argument",
                 "name": "initialRanges",
@@ -92,21 +76,6 @@
             "extAttrs": [],
             "special": "",
             "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "name",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CSSOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
           }
         ],
         "extAttrs": [
@@ -123,14 +92,22 @@
         "partial": false
       },
       "HighlightRegistry": {
-        "fragment": "[Exposed=Window]\ninterface HighlightRegistry {\n  setlike<Highlight>;\n};",
+        "fragment": "[Exposed=Window]\ninterface HighlightRegistry {\n  maplike<DOMString, Highlight>;\n};",
         "type": "interface",
         "name": "HighlightRegistry",
         "inheritance": null,
         "members": [
           {
-            "type": "setlike",
+            "type": "maplike",
             "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
               {
                 "type": null,
                 "extAttrs": [],
@@ -198,7 +175,6 @@
     },
     "dependencies": {
       "Highlight": [
-        "CSSOMString",
         "AbstractRange"
       ],
       "CSS": [
@@ -209,7 +185,6 @@
       ]
     },
     "externalDependencies": [
-      "CSSOMString",
       "AbstractRange",
       "CSS"
     ],
