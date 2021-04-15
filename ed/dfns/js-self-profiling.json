@@ -115,10 +115,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-time-origin",
-      "href": "https://wicg.github.io/js-self-profiling/#dfn-time-origin",
+      "id": "dfn-agent",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-agent",
       "linkingText": [
-        "time origin"
+        "agent"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -133,10 +133,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-sample-buffer",
-      "href": "https://wicg.github.io/js-self-profiling/#dfn-sample-buffer",
+      "id": "dfn-time-origin",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-time-origin",
       "linkingText": [
-        "sample buffer"
+        "time origin"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -169,6 +169,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-take-a-sample",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-take-a-sample",
+      "linkingText": [
+        "take a sample"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "title": "Processing Model",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-samplebufferfull",
       "href": "https://wicg.github.io/js-self-profiling/#dfn-samplebufferfull",
       "linkingText": [
@@ -180,35 +198,17 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "states",
-        "title": "States",
-        "number": "4.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-sampling-algorithm",
-      "href": "https://wicg.github.io/js-self-profiling/#dfn-sampling-algorithm",
-      "linkingText": [
-        "sampling algorithm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sampling-algorithm",
-        "title": "Sampling Algorithm",
+        "id": "processing-model",
+        "title": "Processing Model",
         "number": "5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-execution-contexts",
-      "href": "https://wicg.github.io/js-self-profiling/#dfn-execution-contexts",
+      "id": "dfn-current-high-resolution-time",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-current-high-resolution-time",
       "linkingText": [
-        "execution contexts"
+        "current high resolution time"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -216,8 +216,188 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "sampling-algorithm",
-        "title": "Sampling Algorithm",
+        "id": "processing-model",
+        "title": "Processing Model",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-execution-context-stack",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-execution-context-stack",
+      "linkingText": [
+        "execution context stack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "title": "Processing Model",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-get-a-stack-id",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-get-a-stack-id",
+      "linkingText": [
+        "get a stack ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "title": "Processing Model",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-get-a-frame-id",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-get-a-frame-id",
+      "linkingText": [
+        "get a frame ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "title": "Processing Model",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-execution-context",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-execution-context",
+      "linkingText": [
+        "execution context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "title": "Processing Model",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-realm",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-realm",
+      "linkingText": [
+        "realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "title": "Processing Model",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-response",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-response",
+      "linkingText": [
+        "response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "title": "Processing Model",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-cors-same-origin",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-cors-same-origin",
+      "linkingText": [
+        "CORS-same-origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "title": "Processing Model",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-function-instance",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-function-instance",
+      "linkingText": [
+        "function instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "title": "Processing Model",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-function-instance-name",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-function-instance-name",
+      "linkingText": [
+        "function instance name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "title": "Processing Model",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-get-an-element-id",
+      "href": "https://wicg.github.io/js-self-profiling/#dfn-get-an-element-id",
+      "linkingText": [
+        "get an element ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "title": "Processing Model",
         "number": "5"
       },
       "definedIn": "prose"
@@ -463,24 +643,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-current-high-resolution-time",
-      "href": "https://wicg.github.io/js-self-profiling/#dfn-current-high-resolution-time",
-      "linkingText": [
-        "current high resolution time"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-profilersample-dictionary",
-        "title": "The ProfilerSample Dictionary",
-        "number": "7.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-profilersample-stackid",
       "href": "https://wicg.github.io/js-self-profiling/#dom-profilersample-stackid",
       "linkingText": [
@@ -577,24 +739,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "dfn-function-instance",
-      "href": "https://wicg.github.io/js-self-profiling/#dfn-function-instance",
-      "linkingText": [
-        "function instance"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-profilerframe-dictionary",
-        "title": "The ProfilerFrame Dictionary",
-        "number": "7.3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-profilerframe-name",
       "href": "https://wicg.github.io/js-self-profiling/#dom-profilerframe-name",
       "linkingText": [
@@ -606,24 +750,6 @@
         "ProfilerFrame"
       ],
       "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-profilerframe-dictionary",
-        "title": "The ProfilerFrame Dictionary",
-        "number": "7.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-function-instance-name",
-      "href": "https://wicg.github.io/js-self-profiling/#dfn-function-instance-name",
-      "linkingText": [
-        "function instance name"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
       "informative": false,
       "heading": {
         "id": "the-profilerframe-dictionary",

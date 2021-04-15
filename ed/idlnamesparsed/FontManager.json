@@ -5,7 +5,7 @@
       "title": "Local Font Access API",
       "url": "https://wicg.github.io/local-font-access/"
     },
-    "fragment": "[SecureContext,\n Exposed=(Window,Worker)]\ninterface FontManager {\n  FontIterator query();\n};",
+    "fragment": "[SecureContext,\n Exposed=(Window,Worker)]\ninterface FontManager {\n  Promise<sequence<FontMetadata>> query(QueryOptions options);\n};",
     "href": "https://wicg.github.io/local-font-access/#fontmanager"
   },
   "extended": [],

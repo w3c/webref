@@ -5,7 +5,7 @@
       "title": "Local Font Access API",
       "url": "https://wicg.github.io/local-font-access/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface FontMetadata {\n  Promise<Blob> blob();\n\n  readonly attribute USVString postscriptName;\n  readonly attribute USVString fullName;\n  readonly attribute USVString family;\n};",
+    "fragment": "[Exposed=(Window,Worker)]\ninterface FontMetadata {\n  Promise<Blob> blob();\n\n  readonly attribute USVString postscriptName;\n  readonly attribute USVString fullName;\n  readonly attribute USVString family;\n  readonly attribute USVString style;\n};",
     "href": "https://wicg.github.io/local-font-access/#fontmetadata"
   },
   "extended": [],
