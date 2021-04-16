@@ -3561,7 +3561,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Crawled URL: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
-- Crawled version: 11 March 2021
+- Crawled version: 16 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-grid-2/](https://drafts.csswg.org/css-grid-2/)
 - Latest published version: [https://www.w3.org/TR/css-grid-2/](https://www.w3.org/TR/css-grid-2/)
 - Shortname: css-grid-2
@@ -3764,7 +3764,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Crawled URL: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
-- Crawled version: 21 February 2021
+- Crawled version: 16 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-inline-3/](https://drafts.csswg.org/css-inline-3/)
 - Latest published version: [https://www.w3.org/TR/css-inline-3/](https://www.w3.org/TR/css-inline-3/)
 - Shortname: css-inline-3
@@ -4508,6 +4508,7 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
+- [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
@@ -4521,7 +4522,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
-- [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
@@ -4743,7 +4743,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-regions-1/](https://www.w3.org/TR/css-regions-1/)
 - Crawled URL: [https://drafts.csswg.org/css-regions/](https://drafts.csswg.org/css-regions/)
-- Crawled version: 21 February 2021
+- Crawled version: 16 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-regions/](https://drafts.csswg.org/css-regions/)
 - Latest published version: [https://www.w3.org/TR/css-regions-1/](https://www.w3.org/TR/css-regions-1/)
 - Shortname: css-regions-1
@@ -5277,7 +5277,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-syntax-3/](https://www.w3.org/TR/css-syntax-3/)
 - Crawled URL: [https://drafts.csswg.org/css-syntax/](https://drafts.csswg.org/css-syntax/)
-- Crawled version: 21 February 2021
+- Crawled version: 16 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-syntax/](https://drafts.csswg.org/css-syntax/)
 - Latest published version: [https://www.w3.org/TR/css-syntax-3/](https://www.w3.org/TR/css-syntax-3/)
 - Shortname: css-syntax-3
@@ -7946,7 +7946,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
-- Crawled version: 12 April 2021
+- Crawled version: 16 April 2021
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
 - Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Shortname: html-aam-1.0
@@ -7971,6 +7971,8 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#concept-option-selectedness`](https://html.spec.whatwg.org/#concept-option-selectedness)
      * [`https://html.spec.whatwg.org/#column-header`](https://html.spec.whatwg.org/#column-header)
      * [`https://html.spec.whatwg.org/#row-header`](https://html.spec.whatwg.org/#row-header)
+     * [`https://html.spec.whatwg.org/#column-group-header`](https://html.spec.whatwg.org/#column-group-header)
+     * [`https://html.spec.whatwg.org/#row-group-header`](https://html.spec.whatwg.org/#row-group-header)
      * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
      * [`https://www.w3.org/TR/html/#radio-button-group`](https://www.w3.org/TR/html/#radio-button-group)
 - External links that neither target definitions nor headings:

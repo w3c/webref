@@ -2311,6 +2311,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#concept-option-selectedness`](https://html.spec.whatwg.org/#concept-option-selectedness)
      * [`https://html.spec.whatwg.org/#column-header`](https://html.spec.whatwg.org/#column-header)
      * [`https://html.spec.whatwg.org/#row-header`](https://html.spec.whatwg.org/#row-header)
+     * [`https://html.spec.whatwg.org/#column-group-header`](https://html.spec.whatwg.org/#column-group-header)
+     * [`https://html.spec.whatwg.org/#row-group-header`](https://html.spec.whatwg.org/#row-group-header)
      * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
      * [`https://www.w3.org/TR/html/#radio-button-group`](https://www.w3.org/TR/html/#radio-button-group)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
@@ -3258,7 +3260,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1203 problematic external links found in 193 specifications
+=> 1205 problematic external links found in 193 specifications
 
 
 ## External links that neither target definitions nor headings

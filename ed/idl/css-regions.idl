@@ -7,12 +7,8 @@ partial interface Document {
   readonly attribute NamedFlowMap namedFlows;
 };
 
-[Exposed=Window,
- MapClass=(CSSOMString, NamedFlow)] interface NamedFlowMap {
-  NamedFlow? get(CSSOMString flowName);
-  boolean has(CSSOMString flowName);
-  NamedFlowMap set(CSSOMString flowName, NamedFlow flowValue);
-  boolean delete(CSSOMString flowName);
+[Exposed=Window] interface NamedFlowMap {
+  maplike<CSSOMString, NamedFlow>;
 };
 
 [Exposed=Window]

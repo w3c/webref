@@ -15,154 +15,35 @@
     },
     "idlNames": {
       "NamedFlowMap": {
-        "fragment": "[Exposed=Window,\n MapClass=(CSSOMString, NamedFlow)] interface NamedFlowMap {\n  NamedFlow? get(CSSOMString flowName);\n  boolean has(CSSOMString flowName);\n  NamedFlowMap set(CSSOMString flowName, NamedFlow flowValue);\n  boolean delete(CSSOMString flowName);\n};",
+        "fragment": "[Exposed=Window] interface NamedFlowMap {\n  maplike<CSSOMString, NamedFlow>;\n};",
         "type": "interface",
         "name": "NamedFlowMap",
         "inheritance": null,
         "members": [
           {
-            "type": "operation",
-            "name": "get",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "NamedFlow"
-            },
-            "arguments": [
+            "type": "maplike",
+            "idlType": [
               {
-                "type": "argument",
-                "name": "flowName",
+                "type": null,
                 "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CSSOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "has",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "flowName",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CSSOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "set",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "NamedFlowMap"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "flowName",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CSSOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSOMString"
               },
               {
-                "type": "argument",
-                "name": "flowValue",
+                "type": null,
                 "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "NamedFlow"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "NamedFlow"
               }
             ],
+            "arguments": [],
             "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "delete",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "flowName",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CSSOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
+            "readonly": false,
+            "async": false
           }
         ],
         "extAttrs": [
@@ -172,22 +53,6 @@
             "rhs": {
               "type": "identifier",
               "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "MapClass",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "CSSOMString"
-                },
-                {
-                  "value": "NamedFlow"
-                }
-              ]
             },
             "arguments": []
           }
@@ -448,9 +313,8 @@
         "NamedFlowMap"
       ],
       "NamedFlowMap": [
-        "NamedFlow",
         "CSSOMString",
-        "NamedFlowMap"
+        "NamedFlow"
       ],
       "NamedFlow": [
         "EventTarget",
