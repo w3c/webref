@@ -1969,8 +1969,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/image-resource/#dfn-src`](https://w3c.github.io/image-resource/#dfn-src)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/):
      * [`https://html.spec.whatwg.org/#script`](https://html.spec.whatwg.org/#script)
-     * [`https://html.spec.whatwg.org/#concept-request-origin`](https://html.spec.whatwg.org/#concept-request-origin)
      * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
+     * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
      * [`https://html.spec.whatwg.org/#process-the-iframe-attributes`](https://html.spec.whatwg.org/#process-the-iframe-attributes)
      * [`https://html.spec.whatwg.org/#plugin-document`](https://html.spec.whatwg.org/#plugin-document)
      * [`https://html.spec.whatwg.org/#parse-error-duplicate-attribute`](https://html.spec.whatwg.org/#parse-error-duplicate-attribute)
@@ -4976,7 +4976,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/)
      * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/):
-     * [`https://www.w3.org/TR/worklets-1/`](https://www.w3.org/TR/worklets-1/)
      * [`https://www.w3.org/TR/eventsource/`](https://www.w3.org/TR/eventsource/)
      * [`https://www.w3.org/TR/websockets/`](https://www.w3.org/TR/websockets/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/):
@@ -5073,7 +5072,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebUSB API](https://wicg.github.io/webusb/):
      * [`https://www.w3.org/TR/cors/`](https://www.w3.org/TR/cors/)
 
-=> 58 problematic external links found in 48 specifications
+=> 57 problematic external links found in 48 specifications
 
 
 ## External links that use a dated URL
