@@ -5,7 +5,7 @@
       "title": "WebGPU",
       "url": "https://gpuweb.github.io/gpuweb/"
     },
-    "fragment": "dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n};",
+    "fragment": "dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n};",
     "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuswapchaindescriptor"
   },
   "extended": [],

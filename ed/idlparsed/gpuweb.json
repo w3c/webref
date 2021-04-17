@@ -9070,8 +9070,24 @@
         ],
         "partial": false
       },
+      "GPUCanvasCompositingAlphaMode": {
+        "fragment": "enum GPUCanvasCompositingAlphaMode {\n    \"opaque\",\n    \"premultiplied\",\n};",
+        "type": "enum",
+        "name": "GPUCanvasCompositingAlphaMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "opaque"
+          },
+          {
+            "type": "enum-value",
+            "value": "premultiplied"
+          }
+        ],
+        "extAttrs": []
+      },
       "GPUSwapChainDescriptor": {
-        "fragment": "dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n};",
+        "fragment": "dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n};",
         "type": "dictionary",
         "name": "GPUSwapChainDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -9121,6 +9137,24 @@
             "default": {
               "type": "number",
               "value": "0x10"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "compositingAlphaMode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUCanvasCompositingAlphaMode"
+            },
+            "default": {
+              "type": "string",
+              "value": "opaque"
             },
             "required": false
           }
@@ -10936,7 +10970,8 @@
         "GPUObjectDescriptorBase",
         "GPUDevice",
         "GPUTextureFormat",
-        "GPUTextureUsageFlags"
+        "GPUTextureUsageFlags",
+        "GPUCanvasCompositingAlphaMode"
       ],
       "GPUSwapChain": [
         "GPUTexture",
