@@ -4296,10 +4296,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-fonts-3/#descdef-src`](https://drafts.csswg.org/css-fonts-3/#descdef-src)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
-- [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/):
-     * [`https://drafts.csswg.org/css-gcpm-3/2009-06-10.html#page`](https://drafts.csswg.org/css-gcpm-3/2009-06-10.html#page)
-- [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/):
-     * [`https://drafts.csswg.org/css-gcpm-3/2009-06-10.html#page`](https://drafts.csswg.org/css-gcpm-3/2009-06-10.html#page)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/):
      * [`https://www.w3.org/TR/css3-selectors/#first-letter`](https://www.w3.org/TR/css3-selectors/#first-letter)
      * [`https://drafts.csswg.org/css-color/#cmyk-colors`](https://drafts.csswg.org/css-color/#cmyk-colors)
@@ -4374,14 +4370,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
      * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
-     * [`https://drafts.csswg.org/css-gcpm-3/2009-06-10.html#image-resolution0`](https://drafts.csswg.org/css-gcpm-3/2009-06-10.html#image-resolution0)
-     * [`https://drafts.csswg.org/css-gcpm-3/2009-06-10.html#page`](https://drafts.csswg.org/css-gcpm-3/2009-06-10.html#page)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/):
-     * [`https://drafts.csswg.org/css-gcpm-3/2009-06-10.html#image-resolution0`](https://drafts.csswg.org/css-gcpm-3/2009-06-10.html#image-resolution0)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/):
-     * [`https://drafts.csswg.org/css-gcpm-3/2009-06-10.html#image-resolution0`](https://drafts.csswg.org/css-gcpm-3/2009-06-10.html#image-resolution0)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://www.w3.org/TR/css-values-3/#acknowledgements`](https://www.w3.org/TR/css-values-3/#acknowledgements)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/):
@@ -4956,7 +4948,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 603 problematic external links found in 141 specifications
+=> 597 problematic external links found in 139 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
