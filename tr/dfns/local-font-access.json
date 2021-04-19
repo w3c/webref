@@ -101,26 +101,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "font-table-table-bytes",
-      "href": "https://wicg.github.io/local-font-access/#font-table-table-bytes",
-      "linkingText": [
-        "table bytes"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "font table"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "concept-font-table",
-        "title": "Font Table",
-        "number": "4.2"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "font-representation-name-table",
       "href": "https://wicg.github.io/local-font-access/#font-representation-name-table",
       "linkingText": [
@@ -293,15 +273,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-fontmanager-query",
-      "href": "https://wicg.github.io/local-font-access/#dom-fontmanager-query",
+      "id": "dom-fontmanager-query-options-options",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontmanager-query-options-options",
       "linkingText": [
-        "query()"
+        "options"
       ],
       "localLinkingText": [],
-      "type": "method",
+      "type": "argument",
       "for": [
-        "FontManager"
+        "FontManager/query(options)"
       ],
       "access": "public",
       "informative": false,
@@ -310,16 +290,16 @@
         "title": "Font manager",
         "number": "6.1"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
-      "id": "fontiterator",
-      "href": "https://wicg.github.io/local-font-access/#fontiterator",
+      "id": "dictdef-queryoptions",
+      "href": "https://wicg.github.io/local-font-access/#dictdef-queryoptions",
       "linkingText": [
-        "FontIterator"
+        "QueryOptions"
       ],
       "localLinkingText": [],
-      "type": "interface",
+      "type": "dictionary",
       "for": [],
       "access": "public",
       "informative": false,
@@ -331,15 +311,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-fontiterator-fontlist-slot",
-      "href": "https://wicg.github.io/local-font-access/#dom-fontiterator-fontlist-slot",
+      "id": "dom-queryoptions-persistentaccess",
+      "href": "https://wicg.github.io/local-font-access/#dom-queryoptions-persistentaccess",
       "linkingText": [
-        "[[FontList]]"
+        "persistentAccess"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dict-member",
       "for": [
-        "FontIterator"
+        "QueryOptions"
       ],
       "access": "public",
       "informative": false,
@@ -348,18 +328,18 @@
         "title": "Font manager",
         "number": "6.1"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
-      "id": "dom-fontiterator-asynchronous-iterator-initialization-steps",
-      "href": "https://wicg.github.io/local-font-access/#dom-fontiterator-asynchronous-iterator-initialization-steps",
+      "id": "dom-queryoptions-select",
+      "href": "https://wicg.github.io/local-font-access/#dom-queryoptions-select",
       "linkingText": [
-        "asynchronous iterator initialization steps"
+        "select"
       ],
       "localLinkingText": [],
-      "type": "iterator",
+      "type": "dict-member",
       "for": [
-        "FontIterator"
+        "QueryOptions"
       ],
       "access": "public",
       "informative": false,
@@ -368,18 +348,18 @@
         "title": "Font manager",
         "number": "6.1"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
-      "id": "dom-fontiterator-get-the-next-iteration-result",
-      "href": "https://wicg.github.io/local-font-access/#dom-fontiterator-get-the-next-iteration-result",
+      "id": "dom-fontmanager-query",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontmanager-query",
       "linkingText": [
-        "get the next iteration result"
+        "query(options)"
       ],
       "localLinkingText": [],
-      "type": "iterator",
+      "type": "method",
       "for": [
-        "FontIterator"
+        "FontManager"
       ],
       "access": "public",
       "informative": false,
@@ -453,6 +433,26 @@
       "href": "https://wicg.github.io/local-font-access/#dom-fontmetadata-family",
       "linkingText": [
         "family"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "FontMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fontmetadata-interface",
+        "title": "The FontMetadata interface",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-fontmetadata-style",
+      "href": "https://wicg.github.io/local-font-access/#dom-fontmetadata-style",
+      "linkingText": [
+        "style"
       ],
       "localLinkingText": [],
       "type": "attribute",

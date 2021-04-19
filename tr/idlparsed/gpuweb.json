@@ -18,7 +18,7 @@
       "functions": {
         "Window": [
           "GPUAdapterLimits",
-          "GPUAdapterFeatures",
+          "GPUSupportedFeatures",
           "GPU",
           "GPUAdapter",
           "GPUDevice",
@@ -383,10 +383,10 @@
         ],
         "partial": false
       },
-      "GPUAdapterFeatures": {
-        "fragment": "[Exposed=Window]\ninterface GPUAdapterFeatures {\n    readonly setlike<GPUFeatureName>;\n};",
+      "GPUSupportedFeatures": {
+        "fragment": "[Exposed=Window]\ninterface GPUSupportedFeatures {\n    readonly setlike<GPUFeatureName>;\n};",
         "type": "interface",
-        "name": "GPUAdapterFeatures",
+        "name": "GPUSupportedFeatures",
         "inheritance": null,
         "members": [
           {
@@ -564,7 +564,7 @@
         "extAttrs": []
       },
       "GPUAdapter": {
-        "fragment": "[Exposed=Window]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUAdapterFeatures features;\n    [SameObject] readonly attribute GPUAdapterLimits limits;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUAdapterLimits limits;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
@@ -593,7 +593,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUAdapterFeatures"
+              "idlType": "GPUSupportedFeatures"
             },
             "extAttrs": [
               {
@@ -789,7 +789,7 @@
         "extAttrs": []
       },
       "GPUDevice": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), Serializable]\ninterface GPUDevice : EventTarget {\n    readonly attribute FrozenArray<GPUFeatureName> features;\n    readonly attribute object limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), Serializable]\ninterface GPUDevice : EventTarget {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    readonly attribute object limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
         "type": "interface",
         "name": "GPUDevice",
         "inheritance": "EventTarget",
@@ -800,21 +800,19 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUFeatureName"
-                }
-              ]
+              "idlType": "GPUSupportedFeatures"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -4822,7 +4820,7 @@
         "partial": false
       },
       "GPUBlendFactor": {
-        "fragment": "enum GPUBlendFactor {\n    \"zero\",\n    \"one\",\n    \"src-color\",\n    \"one-minus-src-color\",\n    \"src-alpha\",\n    \"one-minus-src-alpha\",\n    \"dst-color\",\n    \"one-minus-dst-color\",\n    \"dst-alpha\",\n    \"one-minus-dst-alpha\",\n    \"src-alpha-saturated\",\n    \"blend-color\",\n    \"one-minus-blend-color\"\n};",
+        "fragment": "enum GPUBlendFactor {\n    \"zero\",\n    \"one\",\n    \"src\",\n    \"one-minus-src\",\n    \"src-alpha\",\n    \"one-minus-src-alpha\",\n    \"dst\",\n    \"one-minus-dst\",\n    \"dst-alpha\",\n    \"one-minus-dst-alpha\",\n    \"src-alpha-saturated\",\n    \"constant\",\n    \"one-minus-constant\"\n};",
         "type": "enum",
         "name": "GPUBlendFactor",
         "values": [
@@ -4836,11 +4834,11 @@
           },
           {
             "type": "enum-value",
-            "value": "src-color"
+            "value": "src"
           },
           {
             "type": "enum-value",
-            "value": "one-minus-src-color"
+            "value": "one-minus-src"
           },
           {
             "type": "enum-value",
@@ -4852,11 +4850,11 @@
           },
           {
             "type": "enum-value",
-            "value": "dst-color"
+            "value": "dst"
           },
           {
             "type": "enum-value",
-            "value": "one-minus-dst-color"
+            "value": "one-minus-dst"
           },
           {
             "type": "enum-value",
@@ -4872,11 +4870,11 @@
           },
           {
             "type": "enum-value",
-            "value": "blend-color"
+            "value": "constant"
           },
           {
             "type": "enum-value",
-            "value": "one-minus-blend-color"
+            "value": "one-minus-constant"
           }
         ],
         "extAttrs": []
@@ -7524,7 +7522,7 @@
         "partial": false
       },
       "GPURenderPassEncoder": {
-        "fragment": "[Exposed=Window]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n                     float width, float height,\n                     float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendColor(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined endPass();\n};",
+        "fragment": "[Exposed=Window]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n                     float width, float height,\n                     float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendConstant(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined endPass();\n};",
         "type": "interface",
         "name": "GPURenderPassEncoder",
         "inheritance": null,
@@ -7723,7 +7721,7 @@
           },
           {
             "type": "operation",
-            "name": "setBlendColor",
+            "name": "setBlendConstant",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -9072,8 +9070,24 @@
         ],
         "partial": false
       },
+      "GPUCanvasCompositingAlphaMode": {
+        "fragment": "enum GPUCanvasCompositingAlphaMode {\n    \"opaque\",\n    \"premultiplied\",\n};",
+        "type": "enum",
+        "name": "GPUCanvasCompositingAlphaMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "opaque"
+          },
+          {
+            "type": "enum-value",
+            "value": "premultiplied"
+          }
+        ],
+        "extAttrs": []
+      },
       "GPUSwapChainDescriptor": {
-        "fragment": "dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n};",
+        "fragment": "dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n};",
         "type": "dictionary",
         "name": "GPUSwapChainDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -9123,6 +9137,24 @@
             "default": {
               "type": "number",
               "value": "0x10"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "compositingAlphaMode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUCanvasCompositingAlphaMode"
+            },
+            "default": {
+              "type": "string",
+              "value": "opaque"
             },
             "required": false
           }
@@ -10485,7 +10517,7 @@
     "exposed": {
       "Window": [
         "GPUAdapterLimits",
-        "GPUAdapterFeatures",
+        "GPUSupportedFeatures",
         "GPU",
         "GPUAdapter",
         "GPUDevice",
@@ -10531,7 +10563,7 @@
       "GPUObjectBase": [],
       "GPUObjectDescriptorBase": [],
       "GPUAdapterLimits": [],
-      "GPUAdapterFeatures": [
+      "GPUSupportedFeatures": [
         "GPUFeatureName"
       ],
       "NavigatorGPU": [
@@ -10551,7 +10583,7 @@
         "GPUPowerPreference"
       ],
       "GPUAdapter": [
-        "GPUAdapterFeatures",
+        "GPUSupportedFeatures",
         "GPUAdapterLimits",
         "GPUDevice",
         "GPUDeviceDescriptor"
@@ -10563,7 +10595,7 @@
       ],
       "GPUDevice": [
         "EventTarget",
-        "GPUFeatureName",
+        "GPUSupportedFeatures",
         "GPUQueue",
         "GPUBuffer",
         "GPUBufferDescriptor",
@@ -10938,7 +10970,8 @@
         "GPUObjectDescriptorBase",
         "GPUDevice",
         "GPUTextureFormat",
-        "GPUTextureUsageFlags"
+        "GPUTextureUsageFlags",
+        "GPUCanvasCompositingAlphaMode"
       ],
       "GPUSwapChain": [
         "GPUTexture",

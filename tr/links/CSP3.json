@@ -25,14 +25,16 @@
       "dom-event-bubbles",
       "dom-event-composed",
       "dom-event-target",
+      "concept-document-origin",
       "concept-document"
     ],
     "https://html.spec.whatwg.org/": [
       "worker",
+      "parser-inserted",
       "script",
       "workerglobalscope",
       "workletglobalscope",
-      "concept-request-origin",
+      "concept-origin",
       "concept-origin-opaque",
       "environment-settings-object",
       "concept-settings-object-origin",
@@ -44,11 +46,14 @@
       "concept-settings-object-global",
       "meta",
       "attr-meta-http-equiv",
+      "attr-meta-http-equiv-content-security-policy",
       "the-link-element",
       "attr-meta-content",
       "run-a-worker",
+      "initialise-the-document-object",
       "prepare-a-script",
       "update-a-style-block",
+      "bc-container-document",
       "the-base-element",
       "set-the-frozen-base-url",
       "attr-base-href",
@@ -163,6 +168,7 @@
       "ascii-case-insensitive",
       "ordered-map",
       "serialize-an-infra-value-to-json-bytes",
+      "string-is",
       "javascript-string-convert"
     ],
     "https://tools.ietf.org/html/rfc5234": [
@@ -201,9 +207,6 @@
     "https://www.w3.org/TR/service-workers-1/": [
       "serviceworkerglobalscope",
       "serviceworker"
-    ],
-    "https://www.w3.org/TR/worklets-1/": [
-      "workletglobalscope-owner-document"
     ],
     "https://github.com/tc39/ecma262/issues/938": [],
     "https://w3c.github.io/reporting/": [

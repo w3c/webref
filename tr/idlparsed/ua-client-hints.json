@@ -57,11 +57,65 @@
         "partial": false
       },
       "UADataValues": {
-        "fragment": "dictionary UADataValues {\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion;\n};",
+        "fragment": "dictionary UADataValues {\n  FrozenArray<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString platform;\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platformVersion;\n  DOMString uaFullVersion;\n};",
         "type": "dictionary",
         "name": "UADataValues",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "brands",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NavigatorUABrandVersion"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "mobile",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "platform",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
           {
             "type": "field",
             "name": "architecture",
@@ -109,21 +163,6 @@
           },
           {
             "type": "field",
-            "name": "platform",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "platformVersion",
             "extAttrs": [],
             "idlType": {
@@ -157,7 +196,7 @@
         "partial": false
       },
       "NavigatorUAData": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface NavigatorUAData {\n  readonly attribute FrozenArray<NavigatorUABrandVersion> brands;\n  readonly attribute boolean mobile;\n  Promise<UADataValues> getHighEntropyValues(sequence<DOMString> hints);\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface NavigatorUAData {\n  readonly attribute FrozenArray<NavigatorUABrandVersion> brands;\n  readonly attribute boolean mobile;\n  readonly attribute DOMString platform;\n  Promise<UADataValues> getHighEntropyValues(sequence<DOMString> hints);\n};",
         "type": "interface",
         "name": "NavigatorUAData",
         "inheritance": null,
@@ -196,6 +235,21 @@
               "nullable": false,
               "union": false,
               "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "platform",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
             },
             "extAttrs": [],
             "special": "",
@@ -336,7 +390,9 @@
     },
     "dependencies": {
       "NavigatorUABrandVersion": [],
-      "UADataValues": [],
+      "UADataValues": [
+        "NavigatorUABrandVersion"
+      ],
       "NavigatorUAData": [
         "NavigatorUABrandVersion",
         "UADataValues"

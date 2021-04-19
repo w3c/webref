@@ -1,0 +1,6 @@
+// Source: WebTransport (https://w3c.github.io/webtransport/)
+interface mixin BidirectionalStreamsTransport {
+    Promise<BidirectionalStream> createBidirectionalStream();
+    /* a ReadableStream of BidirectionalStream objects */
+    readonly attribute ReadableStream incomingBidirectionalStreams;
+};

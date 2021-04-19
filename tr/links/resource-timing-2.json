@@ -14,13 +14,10 @@
     ],
     "https://www.w3.org/2004/01/pp-impl/45211/status": [],
     "https://www.w3.org/2020/Process-20200915/": [],
-    "https://tools.ietf.org/html/bcp14": [],
+    "https://datatracker.ietf.org/doc/html/bcp14": [],
     "https://dom.spec.whatwg.org/": [
       "document",
       "node",
-      "concept-element-local-name",
-      "concept-element",
-      "context-object",
       "concept-event-fire"
     ],
     "https://html.spec.whatwg.org/": [
@@ -35,16 +32,12 @@
       "link-type-stylesheet",
       "concept-settings-object-global",
       "relevant-application-cache",
-      "resolve-a-url",
-      "or-equivalent",
       "window",
       "workerglobalscope",
-      "concept-environment-active-service-worker",
-      "relevant-settings=object",
+      "concept-relevant-global",
       "eventhandler",
       "queue-a-task",
-      "process-the-iframe-attributes",
-      "process-the-frame-attributes"
+      "concept-global-object-realm"
     ],
     "https://www.w3.org/TR/navigation-timing-2/": [
       "dom-PerformanceNavigationTiming-startTime"
@@ -59,13 +52,27 @@
       "concept-request",
       "concept-fetch",
       "concept-request-client",
-      "navigation-request",
-      "fetch-method",
-      "concept-request-destination",
-      "http-network-fetch",
-      "http-network-or-cache-fetch",
-      "concept-response",
-      "concept-response-timing-allow-passed"
+      "fetch-timing-info",
+      "fetch-timing-info-start-time",
+      "fetch-timing-info-end-time",
+      "fetch-timing-info-final-service-worker-start-time",
+      "concept-http-fetch",
+      "fetch-timing-info-redirect-start-time",
+      "concept-http-redirect-fetch",
+      "fetch-timing-info-redirect-end-time",
+      "fetch-timing-info-post-redirect-start-time",
+      "fetch-timing-info-final-connection-timing-info",
+      "connection-timing-info-domain-lookup-start-time",
+      "record-connection-timing-info",
+      "connection-timing-info-domain-lookup-end-time",
+      "connection-timing-info-connection-start-time",
+      "connection-timing-info-connection-end-time",
+      "connection-timing-info-secure-connection-start-time",
+      "connection-timing-info-alpn-negotiated-protocol",
+      "fetch-timing-info-final-network-request-start-time",
+      "fetch-timing-info-final-network-response-start-time",
+      "concept-tao-check",
+      "tao-check"
     ],
     "https://www.w3.org/TR/performance-timeline-2/": [
       "performance-timeline",
@@ -76,63 +83,33 @@
       "dfn-queue-a-performanceentry"
     ],
     "https://tools.ietf.org/html/rfc2397": [],
-    "https://www.w3.org/TR/hr-time-2/": [
-      "dom-domhighrestimestamp",
-      "dfn-time-origin",
-      "idl-def-performance"
-    ],
     "https://heycam.github.io/webidl/": [
       "Exposed",
       "idl-DOMString",
       "idl-unsigned-long-long",
       "Default",
       "idl-object",
+      "this",
       "default-tojson-operation",
       "es-environment",
       "idl-undefined",
       "idl-unsigned-long"
     ],
-    "https://www.w3.org/TR/css-syntax-3/": [
-      "consume-a-url-token"
+    "https://www.w3.org/TR/hr-time-3/": [
+      "dom-domhighrestimestamp"
     ],
-    "https://www.w3.org/TR/beacon/": [
-      "sec-sendBeacon-method"
+    "https://infra.spec.whatwg.org/": [
+      "isomorphic-decode"
     ],
-    "https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml": [
-      "alpn-protocol-ids"
-    ],
-    "https://tools.ietf.org/html/draft-ietf-quic-http-17": [
-      "section-10.1"
-    ],
-    "https://www.w3.org/TR/service-workers-1/": [
-      "on-fetch-request-algorithm",
-      "dfn-active-worker",
-      "service-worker-concept",
-      "dfn-containing-service-worker-registration",
-      "dfn-service-worker-registration"
-    ],
-    "https://w3c.github.io/ServiceWorker/": [
-      "dom-serviceworkerregistration-navigationpreload"
-    ],
-    "https://tools.ietf.org/html/RFC7230": [
-      "section-6.3"
-    ],
-    "https://httpwg.org/specs/rfc7230.html": [
-      "section-6.3",
-      "section-3.3",
-      "section-7",
-      "section-6.5"
-    ],
-    "https://httpwg.org/specs/rfc7231.html": [
-      "section-6.2",
-      "section-3.1.2.1",
-      "section-6",
-      "section-6.3.5",
-      "section-6.4"
-    ],
-    "https://tools.ietf.org/html/draft-ietf-httpbis-http2-16": [],
     "https://w3c.github.io/performance-timeline/": [
       "dfn-performance-timeline-task-source"
+    ],
+    "https://www.w3.org/TR/hr-time-2/": [
+      "idl-def-performance",
+      "relative-high-resolution-coarse-time"
+    ],
+    "https://httpwg.org/specs/rfc7230.html": [
+      "section-7"
     ],
     "https://tools.ietf.org/html/rfc7234": [
       "section-4.3.4"
@@ -141,22 +118,10 @@
       "section-4.2.2"
     ],
     "https://www.w3.org/": [],
-    "https://wpt.fyi/results/resource-timing/no-entries-for-cross-origin-css-fetched.sub.html?label=experimental": [],
-    "https://github.com/w3c/resource-timing/issues/82": [],
-    "https://github.com/w3c/resource-timing/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Clarification%22": [],
-    "https://github.com/w3c/resource-timing/issues/?q=is%3Aissue+is%3Aopen+label%3A%22needs+tests%22": [],
-    "https://github.com/w3c/resource-timing/issues/?q=is%3Aissue+is%3Aopen+label%3A%22requires+Fetch+integration%22": [],
-    "https://www.w3.org/2016/11/30-webperf-minutes.html": [],
-    "https://github.com/w3c/resource-timing/issues/55": [],
-    "https://github.com/w3c/resource-timing/pull/79": [],
     "https://tc39.es/ecma262/": [],
     "https://tools.ietf.org/html/rfc2119": [],
-    "https://tools.ietf.org/html/rfc5234": [],
-    "https://tools.ietf.org/html/rfc5246": [],
-    "https://httpwg.org/specs/rfc7234.html": [],
-    "https://tools.ietf.org/html/rfc7301": [],
-    "https://tools.ietf.org/html/rfc7918": [],
-    "https://tools.ietf.org/html/rfc8174": [],
-    "https://httpwg.org/specs/rfc8470.html": []
+    "https://datatracker.ietf.org/doc/html/rfc2397": [],
+    "https://datatracker.ietf.org/doc/html/rfc5234": [],
+    "https://tools.ietf.org/html/rfc8174": []
   }
 }

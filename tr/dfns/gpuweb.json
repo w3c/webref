@@ -659,6 +659,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-adapter-current-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-adapter-current-slot",
+      "linkingText": [
+        "[[current]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "adapter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapters",
+        "title": "Adapters",
+        "number": "3.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "device",
       "href": "https://gpuweb.github.io/gpuweb/#device",
       "linkingText": [
@@ -741,6 +761,24 @@
       "href": "https://gpuweb.github.io/gpuweb/#a-new-device",
       "linkingText": [
         "a new device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "devices",
+        "title": "Devices",
+        "number": "3.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lose-the-device",
+      "href": "https://gpuweb.github.io/gpuweb/#lose-the-device",
+      "linkingText": [
+        "lose the device"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1565,10 +1603,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "gpuadapterfeatures",
-      "href": "https://gpuweb.github.io/gpuweb/#gpuadapterfeatures",
+      "id": "gpusupportedfeatures",
+      "href": "https://gpuweb.github.io/gpuweb/#gpusupportedfeatures",
       "linkingText": [
-        "GPUAdapterFeatures"
+        "GPUSupportedFeatures"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -1576,8 +1614,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "gpu-adapterfeatures",
-        "title": "GPUAdapterFeatures",
+        "id": "gpu-supportedfeatures",
+        "title": "GPUSupportedFeatures",
         "number": "3.6.2.2"
       },
       "definedIn": "heading"
@@ -1678,6 +1716,44 @@
         "number": "4.3"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "dom-gpu-previously_returned_adapters-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpu-previously_returned_adapters-slot",
+      "linkingText": [
+        "[[previously_returned_adapters]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPU"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-interface",
+        "title": "GPU",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "mark-adapters-stale",
+      "href": "https://gpuweb.github.io/gpuweb/#mark-adapters-stale",
+      "linkingText": [
+        "mark adapters stale"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gpu-interface",
+        "title": "GPU",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dictdef-gpurequestadapteroptions",
@@ -9270,6 +9346,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "valid-gpublendcomponent",
+      "href": "https://gpuweb.github.io/gpuweb/#valid-gpublendcomponent",
+      "linkingText": [
+        "valid GPUBlendComponent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fragment-state",
+        "title": "Fragment State",
+        "number": "10.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dictdef-gpucolortargetstate",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucolortargetstate",
       "linkingText": [
@@ -9678,10 +9772,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpublendfactor-src-color",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendfactor-src-color",
+      "id": "dom-gpublendfactor-src",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendfactor-src",
       "linkingText": [
-        "\"src-color\""
+        "\"src\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -9698,10 +9792,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpublendfactor-one-minus-src-color",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendfactor-one-minus-src-color",
+      "id": "dom-gpublendfactor-one-minus-src",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendfactor-one-minus-src",
       "linkingText": [
-        "\"one-minus-src-color\""
+        "\"one-minus-src\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -9758,10 +9852,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpublendfactor-dst-color",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendfactor-dst-color",
+      "id": "dom-gpublendfactor-dst",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendfactor-dst",
       "linkingText": [
-        "\"dst-color\""
+        "\"dst\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -9778,10 +9872,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpublendfactor-one-minus-dst-color",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendfactor-one-minus-dst-color",
+      "id": "dom-gpublendfactor-one-minus-dst",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendfactor-one-minus-dst",
       "linkingText": [
-        "\"one-minus-dst-color\""
+        "\"one-minus-dst\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -9858,10 +9952,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpublendfactor-blend-color",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendfactor-blend-color",
+      "id": "dom-gpublendfactor-constant",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendfactor-constant",
       "linkingText": [
-        "\"blend-color\""
+        "\"constant\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -9878,10 +9972,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpublendfactor-one-minus-blend-color",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendfactor-one-minus-blend-color",
+      "id": "dom-gpublendfactor-one-minus-constant",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpublendfactor-one-minus-constant",
       "linkingText": [
-        "\"one-minus-blend-color\""
+        "\"one-minus-constant\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -15508,10 +15602,10 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpurenderpassencoder-setblendcolor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setblendcolor",
+      "id": "dom-gpurenderpassencoder-setblendconstant",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setblendconstant",
       "linkingText": [
-        "setBlendColor(color)"
+        "setBlendConstant(color)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -15528,15 +15622,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpurenderpassencoder-setblendcolor-color-color",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setblendcolor-color-color",
+      "id": "dom-gpurenderpassencoder-setblendconstant-color-color",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassencoder-setblendconstant-color-color",
       "linkingText": [
         "color"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPURenderPassEncoder/setBlendColor(color)"
+        "GPURenderPassEncoder/setBlendConstant(color)"
       ],
       "access": "public",
       "informative": false,
@@ -17008,6 +17102,64 @@
       "definedIn": "prose"
     },
     {
+      "id": "enumdef-gpucanvascompositingalphamode",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpucanvascompositingalphamode",
+      "linkingText": [
+        "GPUCanvasCompositingAlphaMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "swapchain-descriptor",
+        "title": "GPUSwapChainDescriptor",
+        "number": "19.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucanvascompositingalphamode-opaque",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascompositingalphamode-opaque",
+      "linkingText": [
+        "\"opaque\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUCanvasCompositingAlphaMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "swapchain-descriptor",
+        "title": "GPUSwapChainDescriptor",
+        "number": "19.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucanvascompositingalphamode-premultiplied",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascompositingalphamode-premultiplied",
+      "linkingText": [
+        "\"premultiplied\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUCanvasCompositingAlphaMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "swapchain-descriptor",
+        "title": "GPUSwapChainDescriptor",
+        "number": "19.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-gpuswapchaindescriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuswapchaindescriptor",
       "linkingText": [
@@ -17070,6 +17222,26 @@
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpuswapchaindescriptor-usage",
       "linkingText": [
         "usage"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUSwapChainDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "swapchain-descriptor",
+        "title": "GPUSwapChainDescriptor",
+        "number": "19.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuswapchaindescriptor-compositingalphamode",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuswapchaindescriptor-compositingalphamode",
+      "linkingText": [
+        "compositingAlphaMode"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -17218,6 +17390,26 @@
         "number": "19.4"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "dom-gpucanvascompositingalphamode-gpucanvascompositingalphamode",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascompositingalphamode-gpucanvascompositingalphamode",
+      "linkingText": [
+        "GPUCanvasCompositingAlphaMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUCanvasCompositingAlphaMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "GPUCanvasCompositingAlphaMode",
+        "title": "GPUCanvasCompositingAlphaMode",
+        "number": "19.5"
+      },
+      "definedIn": "heading"
     },
     {
       "id": "enumdef-gpudevicelostreason",

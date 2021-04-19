@@ -10,6 +10,7 @@ partial interface Navigator {
 
 enum ContactProperty { "address", "email", "icon", "name", "tel" };
 
+[Exposed=Window]
 interface ContactAddress : PaymentAddress {};
 
 dictionary ContactInfo {
