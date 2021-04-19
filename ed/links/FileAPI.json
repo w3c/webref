@@ -36,6 +36,7 @@
       "relevant-settings-object",
       "same-origin",
       "the-iframe-element",
+      "attr-hyperlink-download",
       "the-a-element"
     ],
     "https://www.w3.org/TR/": [],
@@ -45,12 +46,12 @@
     "https://www.w3.org/wiki/Webapps/LCWD-FileAPI-20130912": [],
     "https://wpt.fyi/results/FileAPI": [],
     "https://github.com/w3c/FileAPI/issues": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20200915/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/114929/status": [],
-    "https://www.w3.org/2019/Process-20190301/": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
     "https://developers.google.com/gears/?csw=1": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Blob": [],
     "https://infra.spec.whatwg.org/": [
@@ -73,11 +74,13 @@
     ],
     "https://heycam.github.io/webidl/": [
       "Exposed",
+      "idl-sequence",
       "idl-unsigned-long-long",
       "idl-DOMString",
       "Clamp",
       "idl-long-long",
       "NewObject",
+      "idl-promise",
       "idl-USVString",
       "idl-ArrayBuffer",
       "BufferSource",
@@ -93,19 +96,12 @@
       "securityerror",
       "dfn-throw"
     ],
-    "https://fetch.spec.whatwg.org/": [
-      "concept-construct-readablestream",
-      "concept-error-readablestream",
-      "concept-enqueue-readablestream",
-      "concept-fetch",
-      "concept-get-reader",
-      "concept-read-all-bytes-from-readablestream",
-      "dom-body-text",
-      "concept-read-chunk-from-readablestream",
-      "concept-network-error"
-    ],
     "https://streams.spec.whatwg.org/": [
-      "chunk"
+      "chunk",
+      "readablestream-enqueue",
+      "readablestream-get-a-reader",
+      "readablestreamdefaultreader-read-all-bytes",
+      "readablestreamdefaultreader-read-a-chunk"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/Blob/Blob": [],
     "https://encoding.spec.whatwg.org/": [
@@ -122,6 +118,11 @@
       "parsable-mime-type",
       "parse-a-mime-type",
       "parameters"
+    ],
+    "https://fetch.spec.whatwg.org/": [
+      "concept-fetch",
+      "dom-body-text",
+      "concept-network-error"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/Blob/slice": [],
     "https://dom.spec.whatwg.org/": [
@@ -162,7 +163,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync/readAsText": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync/readAsDataURL": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync/readAsArrayBuffer": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync/readAsBinaryString": [],
     "https://url.spec.whatwg.org/": [
       "concept-url-scheme",
       "concept-url",
@@ -180,15 +180,11 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/URL": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/URL/revokeObjectURL": [],
-    "https://svgwg.org/svg2-draft/linking.html": [
-      "AElementDownloadAttribute"
-    ],
     "https://tc39.es/ecma262/": [],
     "https://www.w3.org/TR/media-source/": [],
     "https://tools.ietf.org/html/rfc2119": [],
-    "https://tools.ietf.org/html/rfc2397": [],
-    "https://tools.ietf.org/html/rfc4122": [],
-    "https://www.w3.org/TR/SVG2/": [],
+    "https://datatracker.ietf.org/doc/html/rfc2397": [],
+    "https://datatracker.ietf.org/doc/html/rfc4122": [],
     "https://www.w3.org/TR/workers/": []
   }
 }
