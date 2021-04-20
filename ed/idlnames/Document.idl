@@ -222,11 +222,6 @@ partial interface Document {
   Selection? getSelection();
 };
 
-// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
-partial interface Document {
-  readonly attribute SVGSVGElement? rootElement;
-};
-
 // Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
 partial interface Document {
     readonly attribute DocumentTimeline timeline;

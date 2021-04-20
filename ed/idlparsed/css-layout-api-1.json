@@ -109,7 +109,7 @@
         "partial": false
       },
       "LayoutOptions": {
-        "fragment": "[Exposed=LayoutWorklet]\ndictionary LayoutOptions {\n  ChildDisplayType childDisplay = \"block\";\n  LayoutSizingMode sizing = \"block-like\";\n};",
+        "fragment": "dictionary LayoutOptions {\n  ChildDisplayType childDisplay = \"block\";\n  LayoutSizingMode sizing = \"block-like\";\n};",
         "type": "dictionary",
         "name": "LayoutOptions",
         "inheritance": null,
@@ -151,21 +151,11 @@
             "required": false
           }
         ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "LayoutWorklet"
-            },
-            "arguments": []
-          }
-        ],
+        "extAttrs": [],
         "partial": false
       },
       "ChildDisplayType": {
-        "fragment": "[Exposed=LayoutWorklet]\nenum ChildDisplayType {\n    \"block\", // default - \"blockifies\" the child boxes.\n    \"normal\",\n};",
+        "fragment": "enum ChildDisplayType {\n    \"block\", // default - \"blockifies\" the child boxes.\n    \"normal\",\n};",
         "type": "enum",
         "name": "ChildDisplayType",
         "values": [
@@ -178,20 +168,10 @@
             "value": "normal"
           }
         ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "LayoutWorklet"
-            },
-            "arguments": []
-          }
-        ]
+        "extAttrs": []
       },
       "LayoutSizingMode": {
-        "fragment": "[Exposed=LayoutWorklet]\nenum LayoutSizingMode {\n    \"block-like\", // default - Sizing behaves like block containers.\n    \"manual\", // Sizing is specified by the web developer.\n};",
+        "fragment": "enum LayoutSizingMode {\n    \"block-like\", // default - Sizing behaves like block containers.\n    \"manual\", // Sizing is specified by the web developer.\n};",
         "type": "enum",
         "name": "LayoutSizingMode",
         "values": [
@@ -204,17 +184,7 @@
             "value": "manual"
           }
         ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "LayoutWorklet"
-            },
-            "arguments": []
-          }
-        ]
+        "extAttrs": []
       },
       "LayoutChild": {
         "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutChild {\n    readonly attribute StylePropertyMapReadOnly styleMap;\n\n    Promise<IntrinsicSizes> intrinsicSizes();\n    Promise<LayoutFragment> layoutNextFragment(LayoutConstraintsOptions constraints, ChildBreakToken breakToken);\n};",
@@ -1404,7 +1374,6 @@
     "exposed": {
       "LayoutWorklet": [
         "LayoutWorkletGlobalScope",
-        "LayoutOptions",
         "LayoutChild",
         "LayoutFragment",
         "IntrinsicSizes",
