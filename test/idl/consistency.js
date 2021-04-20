@@ -288,12 +288,20 @@ describe('Web IDL consistency', () => {
       'WebGLHandlesContextLoss' // https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.14
     ]);
 
-    // Add any types defined by the parsed IDL.
+    // Add any types defined by the parsed IDL, while also forbidding some that
+    // can be used mistakenly. Should match https://heycam.github.io/webidl/#idl-types.
+    const knownInvalidTypes = new Map();
     for (const dfn of dfns) {
-      knownTypes.add(dfn.name);
+      if (dfn.type === 'interface mixin' || dfn.type === 'namespace') {
+        knownInvalidTypes.set(dfn.name, dfn.type);
+      } else {
+        knownTypes.add(dfn.name);
+      }
     }
 
     for (const usedType of usedTypes) {
+      assert(!knownInvalidTypes.has(usedType),
+          `${knownInvalidTypes.get(usedType)} ${usedType} cannot be used as a type`);
       assert(knownTypes.has(usedType), `type ${usedType} is used but never defined`);
     }
 
@@ -310,12 +318,12 @@ describe('Web IDL consistency', () => {
     // Also check that everything has a name and that no partials remain.
     const knownTypes = new Set([
       'callback interface',
-        'callback',
-        'dictionary',
-        'enum',
-        'interface',
-        'namespace',
-        'typedef'
+      'callback',
+      'dictionary',
+      'enum',
+      'interface',
+      'namespace',
+      'typedef'
     ]);
     for (const dfn of merged) {
       assert(dfn.name, 'definition has a name');
