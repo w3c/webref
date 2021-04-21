@@ -834,7 +834,7 @@
         "partial": false
       },
       "BackgroundFetchUpdateUIEvent": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface BackgroundFetchUpdateUIEvent : BackgroundFetchEvent {\n  constructor(DOMString type, BackgroundFetchEventInit init);\n  Promise<void> updateUI(optional BackgroundFetchUIOptions options = {});\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface BackgroundFetchUpdateUIEvent : BackgroundFetchEvent {\n  constructor(DOMString type, BackgroundFetchEventInit init);\n  Promise<undefined> updateUI(optional BackgroundFetchUIOptions options = {});\n};",
         "type": "interface",
         "name": "BackgroundFetchUpdateUIEvent",
         "inheritance": "BackgroundFetchEvent",
@@ -893,7 +893,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -1096,7 +1096,6 @@
       "BackgroundFetchUpdateUIEvent": [
         "BackgroundFetchEvent",
         "BackgroundFetchEventInit",
-        "void",
         "BackgroundFetchUIOptions"
       ]
     },
@@ -1111,8 +1110,7 @@
       "Request",
       "Response",
       "ExtendableEvent",
-      "ExtendableEventInit",
-      "void"
+      "ExtendableEventInit"
     ],
     "hasObsoleteIdl": false
   }

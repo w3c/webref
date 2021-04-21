@@ -489,19 +489,18 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Background Fetch {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Background Fetch {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
 - Crawled URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
-- Crawled version: 24 February 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
 - Shortname: background-fetch
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `void`
 - Missing references for links: 
      * [`https://storage.spec.whatwg.org/`](https://storage.spec.whatwg.org/)
      * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/)
@@ -521,10 +520,6 @@ Informative references to this spec from:
      * [`https://w3c.github.io/webdriver/#dfn-no-such-window`](https://w3c.github.io/webdriver/#dfn-no-such-window)
      * [`https://w3c.github.io/webdriver/#dfn-url-variables`](https://w3c.github.io/webdriver/#dfn-url-variables)
      * [`https://w3c.github.io/webdriver/#dfn-success`](https://w3c.github.io/webdriver/#dfn-success)
-- Broken external links:
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
-     * [`https://fetch.spec.whatwg.org/#concept-body-transmitted`](https://fetch.spec.whatwg.org/#concept-body-transmitted)
-     * [`https://fetch.spec.whatwg.org/#concept-body-wait`](https://fetch.spec.whatwg.org/#concept-body-wait)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7159,7 +7154,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 19 April 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -7168,6 +7163,7 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/), related reference "HR-TIME-2" uses URL [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/)
      * [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/), related reference "HR-TIME-2" uses URL [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/)
+     * [`https://www.w3.org/TR/resource-timing-2/`](https://www.w3.org/TR/resource-timing-2/), related reference "RESOURCE-TIMING-2" uses URL [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/)
 - External links to private terms:
      * [`https://w3c.github.io/FileAPI/#readOperation`](https://w3c.github.io/FileAPI/#readOperation)
 
@@ -11549,7 +11545,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Crawled URL: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
-- Crawled version: 20 April 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Shortname: pointerevents3
@@ -12346,6 +12342,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
