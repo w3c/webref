@@ -32,13 +32,6 @@
     },
     {
       "spec": {
-        "title": "MathML Core",
-        "url": "https://mathml-refresh.github.io/mathml-core/"
-      },
-      "fragment": "MathMLElement includes ElementCSSInlineStyle;"
-    },
-    {
-      "spec": {
         "title": "CSS Object Model (CSSOM)",
         "url": "https://www.w3.org/TR/cssom-1/"
       },
@@ -415,28 +408,6 @@
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#documentandelementeventhandlers"
       },
       "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
-      "name": "ElementCSSInlineStyle",
-      "defined": {
-        "spec": {
-          "title": "CSS Object Model (CSSOM)",
-          "url": "https://www.w3.org/TR/cssom-1/"
-        },
-        "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
-        "href": "https://drafts.csswg.org/cssom/#elementcssinlinestyle"
-      },
-      "extended": [
-        {
-          "spec": {
-            "title": "CSS Typed OM Level 1",
-            "url": "https://www.w3.org/TR/css-typed-om-1/"
-          },
-          "fragment": "partial interface mixin ElementCSSInlineStyle {\n    [SameObject] readonly attribute StylePropertyMap attributeStyleMap;\n};"
-        }
-      ],
       "inheritance": null,
       "includes": []
     },

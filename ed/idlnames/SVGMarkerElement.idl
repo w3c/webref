@@ -21,8 +21,8 @@ interface SVGMarkerElement : SVGElement {
   [SameObject] readonly attribute SVGAnimatedAngle orientAngle;
   attribute DOMString orient;
 
-  void setOrientToAuto();
-  void setOrientToAngle(SVGAngle angle);
+  undefined setOrientToAuto();
+  undefined setOrientToAngle(SVGAngle angle);
 };
 
 // Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)

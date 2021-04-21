@@ -1,4 +1,5 @@
 // Source: SVG Animations (https://svgwg.org/specs/animations/)
+[Exposed=Window]
 interface SVGAnimationElement : SVGElement {
 
   readonly attribute SVGElement? targetElement;
@@ -11,10 +12,10 @@ interface SVGAnimationElement : SVGElement {
   float getCurrentTime();
   float getSimpleDuration();
 
-  void beginElement();
-  void beginElementAt(float offset);
-  void endElement();
-  void endElementAt(float offset);
+  undefined beginElement();
+  undefined beginElementAt(float offset);
+  undefined endElement();
+  undefined endElementAt(float offset);
 };
 
 // Source: SVG Animations (https://svgwg.org/specs/animations/)

@@ -27,7 +27,7 @@
           "title": "Scalable Vector Graphics (SVG) 2",
           "url": "https://www.w3.org/TR/SVG2/"
         },
-        "fragment": "[Exposed=Window]\ninterface SVGTextContentElement : SVGGraphicsElement {\n\n  // lengthAdjust Types\n  const unsigned short LENGTHADJUST_UNKNOWN = 0;\n  const unsigned short LENGTHADJUST_SPACING = 1;\n  const unsigned short LENGTHADJUST_SPACINGANDGLYPHS = 2;\n\n  [SameObject] readonly attribute SVGAnimatedLength textLength;\n  [SameObject] readonly attribute SVGAnimatedEnumeration lengthAdjust;\n\n  long getNumberOfChars();\n  float getComputedTextLength();\n  float getSubStringLength(unsigned long charnum, unsigned long nchars);\n  DOMPoint getStartPositionOfChar(unsigned long charnum);\n  DOMPoint getEndPositionOfChar(unsigned long charnum);\n  DOMRect getExtentOfChar(unsigned long charnum);\n  float getRotationOfChar(unsigned long charnum);\n  long getCharNumAtPosition(optional DOMPointInit point = {});\n  void selectSubString(unsigned long charnum, unsigned long nchars);\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGTextContentElement : SVGGraphicsElement {\n\n  // lengthAdjust Types\n  const unsigned short LENGTHADJUST_UNKNOWN = 0;\n  const unsigned short LENGTHADJUST_SPACING = 1;\n  const unsigned short LENGTHADJUST_SPACINGANDGLYPHS = 2;\n\n  [SameObject] readonly attribute SVGAnimatedLength textLength;\n  [SameObject] readonly attribute SVGAnimatedEnumeration lengthAdjust;\n\n  long getNumberOfChars();\n  float getComputedTextLength();\n  float getSubStringLength(unsigned long charnum, unsigned long nchars);\n  DOMPoint getStartPositionOfChar(unsigned long charnum);\n  DOMPoint getEndPositionOfChar(unsigned long charnum);\n  DOMRect getExtentOfChar(unsigned long charnum);\n  float getRotationOfChar(unsigned long charnum);\n  long getCharNumAtPosition(optional DOMPointInit point = {});\n  undefined selectSubString(unsigned long charnum, unsigned long nchars);\n};",
         "href": "https://svgwg.org/svg2-draft/text.html#InterfaceSVGTextContentElement"
       },
       "extended": [],
@@ -38,7 +38,7 @@
             "title": "Scalable Vector Graphics (SVG) 2",
             "url": "https://www.w3.org/TR/SVG2/"
           },
-          "fragment": "interface SVGGraphicsElement : SVGElement {\n  [SameObject] readonly attribute SVGAnimatedTransformList transform;\n\n  DOMRect getBBox(optional SVGBoundingBoxOptions options = {});\n  DOMMatrix? getCTM();\n  DOMMatrix? getScreenCTM();\n};",
+          "fragment": "[Exposed=Window]\ninterface SVGGraphicsElement : SVGElement {\n  [SameObject] readonly attribute SVGAnimatedTransformList transform;\n\n  DOMRect getBBox(optional SVGBoundingBoxOptions options = {});\n  DOMMatrix? getCTM();\n  DOMMatrix? getScreenCTM();\n};",
           "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGGraphicsElement"
         },
         "extended": [

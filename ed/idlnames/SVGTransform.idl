@@ -15,10 +15,10 @@ interface SVGTransform {
   [SameObject] readonly attribute DOMMatrix matrix;
   readonly attribute float angle;
 
-  void setMatrix(optional DOMMatrix2DInit matrix);
-  void setTranslate(float tx, float ty);
-  void setScale(float sx, float sy);
-  void setRotate(float angle, float cx, float cy);
-  void setSkewX(float angle);
-  void setSkewY(float angle);
+  undefined setMatrix(optional DOMMatrix2DInit matrix);
+  undefined setTranslate(float tx, float ty);
+  undefined setScale(float sx, float sy);
+  undefined setRotate(float angle, float cx, float cy);
+  undefined setSkewX(float angle);
+  undefined setSkewY(float angle);
 };

@@ -27,7 +27,7 @@
           "title": "Scalable Vector Graphics (SVG) 2",
           "url": "https://www.w3.org/TR/SVG2/"
         },
-        "fragment": "interface SVGGraphicsElement : SVGElement {\n  [SameObject] readonly attribute SVGAnimatedTransformList transform;\n\n  DOMRect getBBox(optional SVGBoundingBoxOptions options = {});\n  DOMMatrix? getCTM();\n  DOMMatrix? getScreenCTM();\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGGraphicsElement : SVGElement {\n  [SameObject] readonly attribute SVGAnimatedTransformList transform;\n\n  DOMRect getBBox(optional SVGBoundingBoxOptions options = {});\n  DOMMatrix? getCTM();\n  DOMMatrix? getScreenCTM();\n};",
         "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGGraphicsElement"
       },
       "extended": [

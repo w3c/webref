@@ -18,7 +18,8 @@
           "Comment",
           "StaticRange",
           "Range",
-          "XPathEvaluator"
+          "XPathEvaluator",
+          "XSLTProcessor"
         ],
         "Worker": [
           "Event",
@@ -5220,7 +5221,7 @@
         "partial": false
       },
       "ShadowRoot": {
-        "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute Element host;\n  attribute EventHandler onslotchange;\n};",
+        "fragment": "[Exposed=Window]\ninterface ShadowRoot : DocumentFragment {\n  readonly attribute ShadowRootMode mode;\n  readonly attribute boolean delegatesFocus;\n  readonly attribute SlotAssignmentMode slotAssignment;\n  readonly attribute Element host;\n  attribute EventHandler onslotchange;\n};",
         "type": "interface",
         "name": "ShadowRoot",
         "inheritance": "DocumentFragment",
@@ -5235,6 +5236,21 @@
               "nullable": false,
               "union": false,
               "idlType": "ShadowRootMode"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "delegatesFocus",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "extAttrs": [],
             "special": "",
@@ -10312,6 +10328,368 @@
           }
         ],
         "partial": false
+      },
+      "XSLTProcessor": {
+        "fragment": "[Exposed=Window]\ninterface XSLTProcessor {\n  constructor();\n  undefined importStylesheet(Node style);\n  [CEReactions] DocumentFragment transformToFragment(Node source, Document output);\n  [CEReactions] Document transformToDocument(Node source);\n  undefined setParameter([LegacyNullToEmptyString] DOMString namespaceURI, DOMString localName, any value);\n  any getParameter([LegacyNullToEmptyString] DOMString namespaceURI, DOMString localName);\n  undefined removeParameter([LegacyNullToEmptyString] DOMString namespaceURI, DOMString localName);\n  undefined clearParameters();\n  undefined reset();\n};",
+        "type": "interface",
+        "name": "XSLTProcessor",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "importStylesheet",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "style",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Node"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "transformToFragment",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DocumentFragment"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "source",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Node"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "output",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Document"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "transformToDocument",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Document"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "source",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Node"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setParameter",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "namespaceURI",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "LegacyNullToEmptyString",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "localName",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getParameter",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "namespaceURI",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "LegacyNullToEmptyString",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "localName",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "removeParameter",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "namespaceURI",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "LegacyNullToEmptyString",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "localName",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "clearParameters",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "reset",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -10531,7 +10909,8 @@
         "DOMTokenList",
         "XPathResult",
         "XPathExpression",
-        "XPathEvaluator"
+        "XPathEvaluator",
+        "XSLTProcessor"
       ],
       "Worker": [
         "Event",
@@ -10766,6 +11145,11 @@
       ],
       "XPathEvaluator": [
         "XPathEvaluatorBase"
+      ],
+      "XSLTProcessor": [
+        "Node",
+        "DocumentFragment",
+        "Document"
       ]
     },
     "externalDependencies": [
