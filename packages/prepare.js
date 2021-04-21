@@ -48,7 +48,7 @@ async function main() {
     for (const file of patchFiles) {
       if (file.endsWith('.patch')) {
         const patch = path.join(patchDir, file);
-        console.log(`Applying ${patch}`);
+        console.log(`Applying ${path.relative(rootDir, patch)}`);
         await execFile('git', ['apply', `--directory=packages/${name}`, '-p3', patch], {
           cwd: rootDir
         });
