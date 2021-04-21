@@ -13,8 +13,7 @@
       "functions": {
         "Window": [
           "SourceBuffer",
-          "SourceBufferList",
-          "URL"
+          "SourceBufferList"
         ]
       }
     },
@@ -816,60 +815,6 @@
       }
     },
     "idlExtendedNames": {
-      "URL": [
-        {
-          "fragment": "[Exposed=Window]\npartial interface URL {\n    static DOMString createObjectURL (MediaSource mediaSource);\n};",
-          "type": "interface",
-          "name": "URL",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "createObjectURL",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "DOMString"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "mediaSource",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "MediaSource"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": "static"
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            }
-          ],
-          "partial": true
-        }
-      ],
       "AudioTrack": [
         {
           "fragment": "partial interface AudioTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};",
@@ -957,8 +902,7 @@
       "Window": [
         "MediaSource",
         "SourceBuffer",
-        "SourceBufferList",
-        "URL"
+        "SourceBufferList"
       ]
     },
     "dependencies": {
@@ -984,9 +928,6 @@
         "EventHandler",
         "SourceBuffer"
       ],
-      "URL": [
-        "MediaSource"
-      ],
       "AudioTrack": [
         "SourceBuffer"
       ],
@@ -1004,7 +945,6 @@
       "AudioTrackList",
       "VideoTrackList",
       "TextTrackList",
-      "URL",
       "AudioTrack",
       "VideoTrack",
       "TextTrack"

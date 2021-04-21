@@ -7295,7 +7295,6 @@ Normative references to this spec from:
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
-- [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
@@ -7310,7 +7309,9 @@ Normative references to this spec from:
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Media Source Extensions™](https://w3c.github.io/media-source/)
 
 
 ## File System Access {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -7920,7 +7921,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
-- Crawled version: 16 April 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
 - Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Shortname: html-aam-1.0
@@ -10440,7 +10441,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
 - Crawled URL: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
-- Crawled version: 07 April 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
 - Latest published version: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
 - Shortname: media-source
@@ -11281,7 +11282,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Crawled URL: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
-- Crawled version: 20 April 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
@@ -13799,7 +13800,6 @@ Normative references to this spec from:
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Media Feeds](https://wicg.github.io/media-feeds/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
-- [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
@@ -16418,7 +16418,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 16 April 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 

@@ -26,9 +26,3 @@ partial interface URL {
   static DOMString createObjectURL((Blob or MediaSource) obj);
   static undefined revokeObjectURL(DOMString url);
 };
-
-// Source: Media Source Extensions™ (https://www.w3.org/TR/media-source/)
-[Exposed=Window]
-partial interface URL {
-    static DOMString createObjectURL (MediaSource mediaSource);
-};
