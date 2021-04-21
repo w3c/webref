@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "OES_draw_buffers_indexed"
+        ],
+        "Worker": [
+          "OES_draw_buffers_indexed"
+        ]
+      }
     },
     "idlNames": {
       "OES_draw_buffers_indexed": {
-        "fragment": "[NoInterfaceObject]\ninterface OES_draw_buffers_indexed {\n  undefined enableiOES(GLenum target, GLuint index);\n\n  undefined disableiOES(GLenum target, GLuint index);\n\n  undefined blendEquationiOES(GLuint buf, GLenum mode);\n\n  undefined blendEquationSeparateiOES(GLuint buf,\n                                 GLenum modeRGB, GLenum modeAlpha);\n\n  undefined blendFunciOES(GLuint buf,\n                     GLenum src, GLenum dst);\n\n  undefined blendFuncSeparateiOES(GLuint buf,\n                             GLenum srcRGB, GLenum dstRGB,\n                             GLenum srcAlpha, GLenum dstAlpha);\n\n  undefined colorMaskiOES(GLuint buf,\n                     GLboolean r, GLboolean g, GLboolean b, GLboolean a);\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface OES_draw_buffers_indexed {\n  undefined enableiOES(GLenum target, GLuint index);\n\n  undefined disableiOES(GLenum target, GLuint index);\n\n  undefined blendEquationiOES(GLuint buf, GLenum mode);\n\n  undefined blendEquationSeparateiOES(GLuint buf,\n                                 GLenum modeRGB, GLenum modeAlpha);\n\n  undefined blendFunciOES(GLuint buf,\n                     GLenum src, GLenum dst);\n\n  undefined blendFuncSeparateiOES(GLuint buf,\n                             GLenum srcRGB, GLenum dstRGB,\n                             GLenum srcAlpha, GLenum dstAlpha);\n\n  undefined colorMaskiOES(GLuint buf,\n                     GLboolean r, GLboolean g, GLboolean b, GLboolean a);\n};",
         "type": "interface",
         "name": "OES_draw_buffers_indexed",
         "inheritance": null,
@@ -483,7 +490,23 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "NoInterfaceObject",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
           }
@@ -493,7 +516,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "OES_draw_buffers_indexed"
+      ],
+      "Worker": [
+        "OES_draw_buffers_indexed"
+      ]
+    },
     "dependencies": {
       "OES_draw_buffers_indexed": [
         "GLenum",

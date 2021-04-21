@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% April 20, 2021
+% April 21, 2021
 
 387 specifications were crawled in this report.
 
@@ -4339,7 +4339,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#event-dnd-dragexit`](https://html.spec.whatwg.org/#event-dnd-dragexit)
 - [File API](https://w3c.github.io/FileAPI/):
      * [`https://mimesniff.spec.whatwg.org/#parsable-mime-type`](https://mimesniff.spec.whatwg.org/#parsable-mime-type)
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/):
      * [`https://drafts.csswg.org/css-position-3/#stacking-context`](https://drafts.csswg.org/css-position-3/#stacking-context)
      * [`https://drafts.csswg.org/css-values-3/#typedef-number-percentage`](https://drafts.csswg.org/css-values-3/#typedef-number-percentage)
@@ -4892,7 +4891,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 603 problematic external links found in 153 specifications
+=> 602 problematic external links found in 153 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

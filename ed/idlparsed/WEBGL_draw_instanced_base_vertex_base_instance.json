@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "WEBGL_draw_instanced_base_vertex_base_instance"
+        ],
+        "Worker": [
+          "WEBGL_draw_instanced_base_vertex_base_instance"
+        ]
+      }
     },
     "idlNames": {
       "WEBGL_draw_instanced_base_vertex_base_instance": {
-        "fragment": "[NoInterfaceObject]\ninterface WEBGL_draw_instanced_base_vertex_base_instance {\n  undefined drawArraysInstancedBaseInstanceWEBGL(\n      GLenum mode, GLint first, GLsizei count,\n      GLsizei instanceCount, GLuint baseInstance);\n  undefined drawElementsInstancedBaseVertexBaseInstanceWEBGL(\n      GLenum mode, GLsizei count, GLenum type, GLintptr offset,\n      GLsizei instanceCount, GLint baseVertex, GLuint baseInstance);\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_draw_instanced_base_vertex_base_instance {\n  undefined drawArraysInstancedBaseInstanceWEBGL(\n      GLenum mode, GLint first, GLsizei count,\n      GLsizei instanceCount, GLuint baseInstance);\n  undefined drawElementsInstancedBaseVertexBaseInstanceWEBGL(\n      GLenum mode, GLsizei count, GLenum type, GLintptr offset,\n      GLsizei instanceCount, GLint baseVertex, GLuint baseInstance);\n};",
         "type": "interface",
         "name": "WEBGL_draw_instanced_base_vertex_base_instance",
         "inheritance": null,
@@ -243,7 +250,23 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "NoInterfaceObject",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
           }
@@ -253,7 +276,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "WEBGL_draw_instanced_base_vertex_base_instance"
+      ],
+      "Worker": [
+        "WEBGL_draw_instanced_base_vertex_base_instance"
+      ]
+    },
     "dependencies": {
       "WEBGL_draw_instanced_base_vertex_base_instance": [
         "GLenum",

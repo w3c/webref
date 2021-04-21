@@ -17,7 +17,10 @@
       "serializable-objects",
       "serialization-steps",
       "deserialization-steps",
+      "concept-relevant-realm",
       "in-parallel",
+      "queue-a-global-task",
+      "concept-relevant-global",
       "sub-serialization",
       "sub-deserialization",
       "htmlinputelement",
@@ -84,6 +87,8 @@
       "idl-USVString",
       "idl-ArrayBuffer",
       "BufferSource",
+      "new",
+      "idl-Uint8Array",
       "dfn-get-buffer-source-copy",
       "notfounderror",
       "idl-unsigned-long",
@@ -97,7 +102,10 @@
       "dfn-throw"
     ],
     "https://streams.spec.whatwg.org/": [
+      "readablestream",
+      "readablestream-set-up",
       "chunk",
+      "readablestream-error",
       "readablestream-enqueue",
       "readablestream-get-a-reader",
       "readablestreamdefaultreader-read-all-bytes",
@@ -125,12 +133,6 @@
       "concept-network-error"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/Blob/slice": [],
-    "https://dom.spec.whatwg.org/": [
-      "context-object",
-      "eventtarget",
-      "concept-event-fire",
-      "document"
-    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/Blob/stream": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Blob/text": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Blob/arrayBuffer": [],
@@ -143,6 +145,11 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/File/name": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/FileList": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/FileReader": [],
+    "https://dom.spec.whatwg.org/": [
+      "eventtarget",
+      "concept-event-fire",
+      "document"
+    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readyState": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/result": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/error": [],

@@ -5,7 +5,7 @@
       "title": "CSS Regions Module Level 1",
       "url": "https://www.w3.org/TR/css-regions-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface NamedFlow : EventTarget {\n  readonly attribute CSSOMString name;\n  readonly attribute boolean overset;\n  sequence<Region> getRegions();\n  readonly attribute short firstEmptyRegionIndex;\n  sequence<Node> getContent();\n  sequence<Region> getRegionsByContent(Node node);\n};",
+    "fragment": "[Exposed=Window]\ninterface NamedFlow : EventTarget {\n  readonly attribute CSSOMString name;\n  readonly attribute boolean overset;\n  sequence<Element> getRegions();\n  readonly attribute short firstEmptyRegionIndex;\n  sequence<Node> getContent();\n  sequence<Element> getRegionsByContent(Node node);\n};",
     "href": "https://drafts.csswg.org/css-regions/#namedflow"
   },
   "extended": [],

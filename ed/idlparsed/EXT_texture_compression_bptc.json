@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "EXT_texture_compression_bptc"
+        ],
+        "Worker": [
+          "EXT_texture_compression_bptc"
+        ]
+      }
     },
     "idlNames": {
       "EXT_texture_compression_bptc": {
-        "fragment": "[NoInterfaceObject]\ninterface EXT_texture_compression_bptc {\n    const GLenum COMPRESSED_RGBA_BPTC_UNORM_EXT = 0x8E8C;\n    const GLenum COMPRESSED_SRGB_ALPHA_BPTC_UNORM_EXT = 0x8E8D;\n    const GLenum COMPRESSED_RGB_BPTC_SIGNED_FLOAT_EXT = 0x8E8E;\n    const GLenum COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_EXT = 0x8E8F;\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface EXT_texture_compression_bptc {\n    const GLenum COMPRESSED_RGBA_BPTC_UNORM_EXT = 0x8E8C;\n    const GLenum COMPRESSED_SRGB_ALPHA_BPTC_UNORM_EXT = 0x8E8D;\n    const GLenum COMPRESSED_RGB_BPTC_SIGNED_FLOAT_EXT = 0x8E8E;\n    const GLenum COMPRESSED_RGB_BPTC_UNSIGNED_FLOAT_EXT = 0x8E8F;\n};",
         "type": "interface",
         "name": "EXT_texture_compression_bptc",
         "inheritance": null,
@@ -87,7 +94,23 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "NoInterfaceObject",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
           }
@@ -97,7 +120,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "EXT_texture_compression_bptc"
+      ],
+      "Worker": [
+        "EXT_texture_compression_bptc"
+      ]
+    },
     "dependencies": {
       "EXT_texture_compression_bptc": []
     },

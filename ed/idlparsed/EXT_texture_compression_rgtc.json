@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "EXT_texture_compression_rgtc"
+        ],
+        "Worker": [
+          "EXT_texture_compression_rgtc"
+        ]
+      }
     },
     "idlNames": {
       "EXT_texture_compression_rgtc": {
-        "fragment": "[NoInterfaceObject]\ninterface EXT_texture_compression_rgtc {\n    const GLenum COMPRESSED_RED_RGTC1_EXT = 0x8DBB;\n    const GLenum COMPRESSED_SIGNED_RED_RGTC1_EXT = 0x8DBC;\n    const GLenum COMPRESSED_RED_GREEN_RGTC2_EXT = 0x8DBD;\n    const GLenum COMPRESSED_SIGNED_RED_GREEN_RGTC2_EXT = 0x8DBE;\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface EXT_texture_compression_rgtc {\n    const GLenum COMPRESSED_RED_RGTC1_EXT = 0x8DBB;\n    const GLenum COMPRESSED_SIGNED_RED_RGTC1_EXT = 0x8DBC;\n    const GLenum COMPRESSED_RED_GREEN_RGTC2_EXT = 0x8DBD;\n    const GLenum COMPRESSED_SIGNED_RED_GREEN_RGTC2_EXT = 0x8DBE;\n};",
         "type": "interface",
         "name": "EXT_texture_compression_rgtc",
         "inheritance": null,
@@ -87,7 +94,23 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "NoInterfaceObject",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
           }
@@ -97,7 +120,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "EXT_texture_compression_rgtc"
+      ],
+      "Worker": [
+        "EXT_texture_compression_rgtc"
+      ]
+    },
     "dependencies": {
       "EXT_texture_compression_rgtc": []
     },
