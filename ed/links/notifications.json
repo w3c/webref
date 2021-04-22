@@ -8,6 +8,7 @@
     "https://heycam.github.io/webidl/": [
       "DOMTimeStamp",
       "dfn-throw",
+      "exceptiondef-typeerror",
       "Exposed",
       "idl-DOMString",
       "idl-promise",
@@ -19,9 +20,24 @@
       "idl-any",
       "idl-undefined",
       "idl-sequence",
-      "dfn-create-frozen-array"
+      "this",
+      "a-new-promise",
+      "invoke-a-callback-function",
+      "resolve",
+      "dfn-create-frozen-array",
+      "reject",
+      "new"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/Notification/image": [],
+    "https://infra.spec.whatwg.org/": [
+      "map-exists",
+      "list",
+      "list-replace",
+      "list-remove",
+      "list-append",
+      "list-contain",
+      "list-iterate"
+    ],
     "https://html.spec.whatwg.org/": [
       "structuredserializeforstorage",
       "entry-settings-object",
@@ -35,11 +51,15 @@
       "browsing-context",
       "eventhandler",
       "current-global-object",
+      "concept-relevant-global",
+      "relevant-settings-object",
+      "concept-relevant-realm",
+      "queue-a-global-task",
+      "dom-manipulation-task-source",
       "report-the-exception",
       "event-handlers",
       "event-handler-event-type",
-      "structureddeserialize",
-      "concept-relevant-realm"
+      "structureddeserialize"
     ],
     "https://url.spec.whatwg.org/": [
       "concept-url-parser",
@@ -49,14 +69,6 @@
       "dfn-validate-and-normalize",
       "dfn-perform-vibration",
       "idl-def-vibratepattern"
-    ],
-    "https://infra.spec.whatwg.org/": [
-      "list",
-      "list-replace",
-      "list-remove",
-      "list-append",
-      "list-contain",
-      "list-iterate"
     ],
     "https://fetch.spec.whatwg.org/": [
       "concept-fetch",
@@ -69,8 +81,7 @@
       "concept-event-fire",
       "dom-event-cancelable",
       "eventtarget",
-      "concept-event-listener",
-      "context-object"
+      "concept-event-listener"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/Notification/Notification": [],
     "https://w3c.github.io/ServiceWorker/": [

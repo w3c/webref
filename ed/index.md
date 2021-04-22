@@ -10140,6 +10140,7 @@ Normative references to this spec from:
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
@@ -10870,7 +10871,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
 - Crawled URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
-- Crawled version: 23 March 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
 - Shortname: notifications
 
@@ -10883,8 +10884,6 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/vibration/#dfn-perform-vibration`](https://w3c.github.io/vibration/#dfn-perform-vibration)
 - External links that neither target definitions nor headings:
      * [`https://w3c.github.io/vibration/#idl-def-vibratepattern`](https://w3c.github.io/vibration/#idl-def-vibratepattern)
-- Broken external links:
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12384,7 +12383,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Crawled URL: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
-- Crawled version: 21 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
 - Latest published version: [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
 - Shortname: SVG2
@@ -12829,13 +12828,13 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Selectors Level 4 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## Selectors Level 4 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Crawled URL: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
-- Crawled version: 16 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://drafts.csswg.org/selectors/](https://drafts.csswg.org/selectors/)
 - Latest published version: [https://www.w3.org/TR/selectors-4/](https://www.w3.org/TR/selectors-4/)
 - Shortname: selectors-4
@@ -12847,6 +12846,8 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/2013/WD-selectors4-20130502/`](https://www.w3.org/TR/2013/WD-selectors4-20130502/)
      * [`https://www.w3.org/TR/2012/WD-selectors4-20120823/`](https://www.w3.org/TR/2012/WD-selectors4-20120823/)
      * [`https://www.w3.org/TR/2011/WD-selectors4-20110929/`](https://www.w3.org/TR/2011/WD-selectors4-20110929/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "MEDIACAPTURE-STREAMS" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - External links to private terms:
      * [`https://html.spec.whatwg.org/#element-definition`](https://html.spec.whatwg.org/#element-definition)
      * [`https://html.spec.whatwg.org/#the-directionality`](https://html.spec.whatwg.org/#the-directionality)
@@ -13245,7 +13246,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
 - Crawled URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
-- Crawled version: 21 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
 - Shortname: svg-animations
 
@@ -13350,7 +13351,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/svg-integration/](https://www.w3.org/TR/svg-integration/)
 - Crawled URL: [https://svgwg.org/specs/integration/](https://svgwg.org/specs/integration/)
-- Crawled version: 21 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://svgwg.org/specs/integration/](https://svgwg.org/specs/integration/)
 - Latest published version: [https://www.w3.org/TR/svg-integration/](https://www.w3.org/TR/svg-integration/)
 - Shortname: svg-integration
@@ -13386,7 +13387,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/svg-strokes/](https://www.w3.org/TR/svg-strokes/)
 - Crawled URL: [https://svgwg.org/specs/strokes/](https://svgwg.org/specs/strokes/)
-- Crawled version: 21 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://svgwg.org/specs/strokes/](https://svgwg.org/specs/strokes/)
 - Latest published version: [https://www.w3.org/TR/svg-strokes/](https://www.w3.org/TR/svg-strokes/)
 - Shortname: svg-strokes
@@ -14838,7 +14839,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Crawled URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
-- Crawled version: 01 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Shortname: serial
 
@@ -16581,7 +16582,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 21 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -16701,7 +16702,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
 - Crawled URL: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
-- Crawled version: 15 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
 - Shortname: webrtc-encoded-transform
 
@@ -17174,7 +17175,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
 - Crawled URL: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
-- Crawled version: 24 March 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://immersive-web.github.io/layers/](https://immersive-web.github.io/layers/)
 - Latest published version: [https://www.w3.org/TR/webxrlayers-1/](https://www.w3.org/TR/webxrlayers-1/)
 - Shortname: webxrlayers-1
