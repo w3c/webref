@@ -154,7 +154,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [UI Events](https://w3c.github.io/uievents/)
 - `bigint` used in [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
-- `void` used in [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/), [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- `void` used in [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 
 => 5 WebIDL names found
 

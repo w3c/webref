@@ -120,7 +120,7 @@
           "includes": "InnerHTML"
         },
         {
-          "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerHTML;\n  [CEReactions] void insertAdjacentHTML(DOMString position, DOMString text);\n};",
+          "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, DOMString text);\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -163,7 +163,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -293,8 +293,7 @@
       ],
       "InnerHTML": [],
       "Element": [
-        "InnerHTML",
-        "void"
+        "InnerHTML"
       ],
       "ShadowRoot": [
         "InnerHTML"
@@ -306,7 +305,6 @@
     "externalDependencies": [
       "Node",
       "Element",
-      "void",
       "Range",
       "DocumentFragment"
     ],
