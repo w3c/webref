@@ -1,0 +1,44 @@
+From 5e39e69ce9e6db4dfb7b0fecee9904868d90c697 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
+Date: Thu, 22 Apr 2021 12:05:55 +0200
+Subject: [PATCH] Fix SVG.idl
+
+https://github.com/w3c/svgwg/pull/844
+---
+ ed/idl/SVG.idl | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
+index 3b530cb69..9ce619d1e 100644
+--- a/ed/idl/SVG.idl
++++ b/ed/idl/SVG.idl
+@@ -253,7 +253,7 @@ interface SVGSVGElement : SVGGraphicsElement {
+   DOMMatrix createSVGMatrix();
+   DOMRect createSVGRect();
+   SVGTransform createSVGTransform();
+-  SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix);
++  SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix = {});
+ 
+   Element getElementById(DOMString elementId);
+ 
+@@ -354,7 +354,7 @@ interface SVGTransform {
+   [SameObject] readonly attribute DOMMatrix matrix;
+   readonly attribute float angle;
+ 
+-  undefined setMatrix(optional DOMMatrix2DInit matrix);
++  undefined setMatrix(optional DOMMatrix2DInit matrix = {});
+   undefined setTranslate(float tx, float ty);
+   undefined setScale(float sx, float sy);
+   undefined setRotate(float angle, float cx, float cy);
+@@ -378,7 +378,7 @@ interface SVGTransformList {
+   setter undefined (unsigned long index, SVGTransform newItem);
+ 
+   // Additional methods not common to other list interfaces.
+-  SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix);
++  SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix = {});
+   SVGTransform? consolidate();
+ };
+ 
+-- 
+2.31.1.368.gbe11c130af-goog
+
