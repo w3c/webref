@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% April 21, 2021
+% April 22, 2021
 
 387 specifications were crawled in this report.
 
@@ -1434,7 +1434,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Web Audio API](https://webaudio.github.io/web-audio-api/) links to:
     * [`https://w3c.github.io/mediacapture-fromelement/`](https://w3c.github.io/mediacapture-fromelement/) but does not list it in its references
     * [`https://www.w3.org/TR/html50/`](https://www.w3.org/TR/html50/) but does not list it in its references
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/) links to:
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/) links to:
     * [`https://www.w3.org/TR/string-meta/`](https://www.w3.org/TR/string-meta/) but does not list it in its references
     * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/) but does not list it in its references
     * [`https://w3c.github.io/IntersectionObserver/v2/`](https://w3c.github.io/IntersectionObserver/v2/) but does not list it in its references
@@ -1819,7 +1819,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/) links to [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/) links to:
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/) links to:
     * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/) but related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/) but related reference "Permissions-Policy" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
@@ -2933,7 +2933,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
      * [`https://heycam.github.io/webidl/#web-idl-arguments-list`](https://heycam.github.io/webidl/#web-idl-arguments-list)
      * [`https://heycam.github.io/webidl/#web-idl-arguments-list-converting`](https://heycam.github.io/webidl/#web-idl-arguments-list-converting)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/):
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/):
      * [`https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors`](https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors)
      * [`https://url.spec.whatwg.org/#valid-domain`](https://url.spec.whatwg.org/#valid-domain)
      * [`https://w3c.github.io/webdriver/#dfn-extension-command`](https://w3c.github.io/webdriver/#dfn-extension-command)
@@ -4918,7 +4918,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Web Audio API](https://webaudio.github.io/web-audio-api/):
      * [`https://heycam.github.io/webidl/#dfn-present`](https://heycam.github.io/webidl/#dfn-present)
      * [`https://w3c.github.io/mediacapture-fromelement/#dom-htmlmediaelement-capturestream()`](https://w3c.github.io/mediacapture-fromelement/#dom-htmlmediaelement-capturestream())
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/):
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/):
      * [`https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors`](https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors)
      * [`https://w3c.github.io/webappsec-credential-management/#store-credential-sameoriginwithancestors`](https://w3c.github.io/webappsec-credential-management/#store-credential-sameoriginwithancestors)
      * [`https://w3c.github.io/webappsec-credential-management/#create-origin-options-sameoriginwithancestors`](https://w3c.github.io/webappsec-credential-management/#create-origin-options-sameoriginwithancestors)

@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% April 21, 2021
+% April 22, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -1373,7 +1373,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [WebOTP API](https://wicg.github.io/web-otp/)
 
 Informative references to this spec from:
@@ -4353,7 +4353,7 @@ Informative references to this spec from:
 
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 
 
 ## CSS Overflow Module Level 4 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -6692,7 +6692,7 @@ Normative references to this spec from:
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/)
 - [Web IDL](https://heycam.github.io/webidl/)
@@ -6874,7 +6874,7 @@ Normative references to this spec from:
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/)
@@ -6984,7 +6984,7 @@ Normative references to this spec from:
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
@@ -7228,7 +7228,7 @@ Normative references to this spec from:
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -7284,7 +7284,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
 - Crawled URL: [https://w3c.github.io/FileAPI/](https://w3c.github.io/FileAPI/)
-- Crawled version: 20 April 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://w3c.github.io/FileAPI/](https://w3c.github.io/FileAPI/)
 - Latest published version: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
 - Shortname: FileAPI
@@ -7322,7 +7322,7 @@ Normative references to this spec from:
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [URL Standard](https://url.spec.whatwg.org/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -8204,7 +8204,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 20 April 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -9019,7 +9019,7 @@ Normative references to this spec from:
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/)
@@ -9499,7 +9499,7 @@ Normative references to this spec from:
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
@@ -11105,7 +11105,7 @@ Normative references to this spec from:
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -11304,7 +11304,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Crawled URL: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
-- Crawled version: 21 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
@@ -11495,7 +11495,7 @@ Normative references to this spec from:
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [Web Serial API](https://wicg.github.io/serial/)
 - [Web Share API](https://w3c.github.io/web-share/)
@@ -13985,7 +13985,7 @@ Normative references to this spec from:
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://w3c.github.io/web-share/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
@@ -14339,13 +14339,13 @@ Informative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 
-## Web Authentication: An API for accessing Public Key Credentials - Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Web Authentication: An API for accessing Public Key Credentials - Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Crawled URL: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Crawled version: 8 April 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
 - Shortname: webauthn-2
@@ -14680,7 +14680,7 @@ Normative references to this spec from:
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 2](https://w3c.github.io/webauthn/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/)
