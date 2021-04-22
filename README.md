@@ -40,5 +40,4 @@ Feel free to raise [issues in this repository](https://github.com/w3c/webref/iss
 
 ## Development notes
 
-- The huge (~27MB) `ed/crawl.json` and `tr/crawl.json` files are still generated but do not contain more info than `index.json` and individual files per specification. They should be considered obsolete and will be dropped from the repository in the future.
 - Data update tasks are defined as GitHub Actions. A typical crawl takes about **10mn** to complete. Tasks fail from time to time due to network glitches or temporarily unreachable specs. Well, they also fail from time to time due to bugs, of course...
