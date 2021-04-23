@@ -15,6 +15,6 @@ interface SVGTransformList {
   setter undefined (unsigned long index, SVGTransform newItem);
 
   // Additional methods not common to other list interfaces.
-  SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix);
+  SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix = {});
   SVGTransform? consolidate();
 };
