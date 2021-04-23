@@ -86,7 +86,6 @@ Basically all specifications have normative dependencies on some other specifica
 ## Specifications that use WebIDL but do not reference the WebIDL spec
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
-- [Frame Timing](https://wicg.github.io/frame-timing/)
 - [Private Network Access](https://wicg.github.io/private-network-access/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
@@ -134,7 +133,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - [WebRTC Priority Control API](https://w3c.github.io/webrtc-priority/)
 
-=> 48 specifications found
+=> 47 specifications found
 
 
 
