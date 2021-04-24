@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% April 23, 2021
+% April 24, 2021
 
 387 specifications were crawled in this report.
 
@@ -3408,12 +3408,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Beacon](https://w3c.github.io/beacon/):
      * [`https://fetch.spec.whatwg.org/#keep-alive-flag`](https://fetch.spec.whatwg.org/#keep-alive-flag)
 - [Core Accessibility API Mappings 1.2](https://w3c.github.io/core-aam/):
-     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
-     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
-     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
-     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
-     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
-     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
      * [`https://w3c.github.io/aria/#aria-live`](https://w3c.github.io/aria/#aria-live)
      * [`https://w3c.github.io/aria/#alert`](https://w3c.github.io/aria/#alert)
      * [`https://w3c.github.io/aria/#alertdialog`](https://w3c.github.io/aria/#alertdialog)
@@ -3507,6 +3501,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/aria/#tree`](https://w3c.github.io/aria/#tree)
      * [`https://w3c.github.io/aria/#treegrid`](https://w3c.github.io/aria/#treegrid)
      * [`https://w3c.github.io/aria/#treeitem`](https://w3c.github.io/aria/#treeitem)
+     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
      * [`https://w3c.github.io/aria/#aria-grabbed`](https://w3c.github.io/aria/#aria-grabbed)
      * [`https://w3c.github.io/aria/#aria-atomic`](https://w3c.github.io/aria/#aria-atomic)
      * [`https://w3c.github.io/aria/#aria-autocomplete`](https://w3c.github.io/aria/#aria-autocomplete)
@@ -3524,14 +3519,17 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/aria/#aria-disabled`](https://w3c.github.io/aria/#aria-disabled)
      * [`https://w3c.github.io/aria/#aria-dropeffect`](https://w3c.github.io/aria/#aria-dropeffect)
      * [`https://w3c.github.io/aria/#aria-errormessage`](https://w3c.github.io/aria/#aria-errormessage)
+     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
      * [`https://w3c.github.io/aria/#aria-hidden`](https://w3c.github.io/aria/#aria-hidden)
      * [`https://w3c.github.io/aria/#aria-invalid`](https://w3c.github.io/aria/#aria-invalid)
      * [`https://w3c.github.io/aria/#aria-keyshortcuts`](https://w3c.github.io/aria/#aria-keyshortcuts)
      * [`https://w3c.github.io/aria/#aria-label`](https://w3c.github.io/aria/#aria-label)
      * [`https://w3c.github.io/aria/#aria-level`](https://w3c.github.io/aria/#aria-level)
      * [`https://w3c.github.io/aria/#aria-modal`](https://w3c.github.io/aria/#aria-modal)
+     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
      * [`https://w3c.github.io/aria/#aria-multiselectable`](https://w3c.github.io/aria/#aria-multiselectable)
      * [`https://w3c.github.io/aria/#aria-orientation`](https://w3c.github.io/aria/#aria-orientation)
+     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
      * [`https://w3c.github.io/aria/#aria-placeholder`](https://w3c.github.io/aria/#aria-placeholder)
      * [`https://w3c.github.io/aria/#aria-posinset`](https://w3c.github.io/aria/#aria-posinset)
      * [`https://w3c.github.io/aria/#aria-relevant`](https://w3c.github.io/aria/#aria-relevant)
@@ -3546,6 +3544,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/aria/#aria-sort`](https://w3c.github.io/aria/#aria-sort)
      * [`https://w3c.github.io/aria/#aria-valuemax`](https://w3c.github.io/aria/#aria-valuemax)
      * [`https://w3c.github.io/aria/#aria-valuemin`](https://w3c.github.io/aria/#aria-valuemin)
+     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
+     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/):
      * [`https://www.w3.org/TR/css-ui-3/#box-sizing`](https://www.w3.org/TR/css-ui-3/#box-sizing)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/):
@@ -4037,7 +4037,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css3-images/#intrinsic-height`](https://www.w3.org/TR/css3-images/#intrinsic-height)
      * [`https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio`](https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/):
-     * [`https://w3c.github.io/core-aam/#keyboard-focus`](https://w3c.github.io/core-aam/#keyboard-focus)
      * [`https://w3c.github.io/accname/#step2A`](https://w3c.github.io/accname/#step2A)
      * [`https://w3c.github.io/accname/#step2D`](https://w3c.github.io/accname/#step2D)
      * [`https://w3c.github.io/accname/#step2F`](https://w3c.github.io/accname/#step2F)
@@ -4208,7 +4207,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
      * [`https://heycam.github.io/webidl/#dfn-DOMException`](https://heycam.github.io/webidl/#dfn-DOMException)
 
-=> 872 problematic external links found in 69 specifications
+=> 871 problematic external links found in 69 specifications
 
 
 ## Broken external links
@@ -4860,6 +4859,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm`](https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm)
      * [`https://wicg.github.io/BackgroundSync/spec/#sync`](https://wicg.github.io/BackgroundSync/spec/#sync)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/):
+     * [`https://w3c.github.io/core-aam/#keyboard-focus`](https://w3c.github.io/core-aam/#keyboard-focus)
      * [`https://w3c.github.io/core-aam/#exclude_elements2`](https://w3c.github.io/core-aam/#exclude_elements2)
      * [`https://w3c.github.io/core-aam/#include_elements`](https://w3c.github.io/core-aam/#include_elements)
      * [`https://w3c.github.io/core-aam/#role-map-link`](https://w3c.github.io/core-aam/#role-map-link)
@@ -4976,7 +4976,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 611 problematic external links found in 151 specifications
+=> 612 problematic external links found in 151 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

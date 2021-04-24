@@ -2,8 +2,8 @@
 dictionary VideoEncoderConfig {
   required DOMString codec;
   unsigned long long bitrate;
-  required unsigned long cropWidth;
-  required unsigned long cropHeight;
+  required unsigned long width;
+  required unsigned long height;
   unsigned long displayWidth;
   unsigned long displayHeight;
   HardwareAcceleration hardwareAcceleration = "allow";

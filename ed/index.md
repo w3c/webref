@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% April 23, 2021
+% April 24, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -139,7 +139,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/accname-1.2/](https://www.w3.org/TR/accname-1.2/)
 - Crawled URL: [https://w3c.github.io/accname/](https://w3c.github.io/accname/)
-- Crawled version: 12 April 2021
+- Crawled version: 23 April 2021
 - Editor's Draft: [https://w3c.github.io/accname/](https://w3c.github.io/accname/)
 - Latest published version: [https://www.w3.org/TR/accname-1.2/](https://www.w3.org/TR/accname-1.2/)
 - Shortname: accname-1.2
@@ -189,7 +189,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
-- Crawled version: 31 March 2021
+- Crawled version: 23 April 2021
 - Editor's Draft: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Shortname: wai-aria-1.2
@@ -1149,7 +1149,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/core-aam-1.2/](https://www.w3.org/TR/core-aam-1.2/)
 - Crawled URL: [https://w3c.github.io/core-aam/](https://w3c.github.io/core-aam/)
-- Crawled version: 05 April 2021
+- Crawled version: 24 April 2021
 - Editor's Draft: [https://w3c.github.io/core-aam/](https://w3c.github.io/core-aam/)
 - Latest published version: [https://www.w3.org/TR/core-aam-1.2/](https://www.w3.org/TR/core-aam-1.2/)
 - Shortname: core-aam-1.2
@@ -1163,12 +1163,6 @@ No informative reference to this spec from other specs.
 - Inconsistent references for links: 
      * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/), related reference "WAI-ARIA-1.2" uses URL [`https://www.w3.org/TR/wai-aria-1.2/`](https://www.w3.org/TR/wai-aria-1.2/)
 - External links that neither target definitions nor headings:
-     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
-     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
-     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
-     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
-     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
-     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
      * [`https://w3c.github.io/aria/#aria-live`](https://w3c.github.io/aria/#aria-live)
      * [`https://w3c.github.io/aria/#alert`](https://w3c.github.io/aria/#alert)
      * [`https://w3c.github.io/aria/#alertdialog`](https://w3c.github.io/aria/#alertdialog)
@@ -1262,6 +1256,7 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/aria/#tree`](https://w3c.github.io/aria/#tree)
      * [`https://w3c.github.io/aria/#treegrid`](https://w3c.github.io/aria/#treegrid)
      * [`https://w3c.github.io/aria/#treeitem`](https://w3c.github.io/aria/#treeitem)
+     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
      * [`https://w3c.github.io/aria/#aria-grabbed`](https://w3c.github.io/aria/#aria-grabbed)
      * [`https://w3c.github.io/aria/#aria-atomic`](https://w3c.github.io/aria/#aria-atomic)
      * [`https://w3c.github.io/aria/#aria-autocomplete`](https://w3c.github.io/aria/#aria-autocomplete)
@@ -1279,14 +1274,17 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/aria/#aria-disabled`](https://w3c.github.io/aria/#aria-disabled)
      * [`https://w3c.github.io/aria/#aria-dropeffect`](https://w3c.github.io/aria/#aria-dropeffect)
      * [`https://w3c.github.io/aria/#aria-errormessage`](https://w3c.github.io/aria/#aria-errormessage)
+     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
      * [`https://w3c.github.io/aria/#aria-hidden`](https://w3c.github.io/aria/#aria-hidden)
      * [`https://w3c.github.io/aria/#aria-invalid`](https://w3c.github.io/aria/#aria-invalid)
      * [`https://w3c.github.io/aria/#aria-keyshortcuts`](https://w3c.github.io/aria/#aria-keyshortcuts)
      * [`https://w3c.github.io/aria/#aria-label`](https://w3c.github.io/aria/#aria-label)
      * [`https://w3c.github.io/aria/#aria-level`](https://w3c.github.io/aria/#aria-level)
      * [`https://w3c.github.io/aria/#aria-modal`](https://w3c.github.io/aria/#aria-modal)
+     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
      * [`https://w3c.github.io/aria/#aria-multiselectable`](https://w3c.github.io/aria/#aria-multiselectable)
      * [`https://w3c.github.io/aria/#aria-orientation`](https://w3c.github.io/aria/#aria-orientation)
+     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
      * [`https://w3c.github.io/aria/#aria-placeholder`](https://w3c.github.io/aria/#aria-placeholder)
      * [`https://w3c.github.io/aria/#aria-posinset`](https://w3c.github.io/aria/#aria-posinset)
      * [`https://w3c.github.io/aria/#aria-relevant`](https://w3c.github.io/aria/#aria-relevant)
@@ -1301,6 +1299,8 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/aria/#aria-sort`](https://w3c.github.io/aria/#aria-sort)
      * [`https://w3c.github.io/aria/#aria-valuemax`](https://w3c.github.io/aria/#aria-valuemax)
      * [`https://w3c.github.io/aria/#aria-valuemin`](https://w3c.github.io/aria/#aria-valuemin)
+     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
+     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7796,7 +7796,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/graphics-aam-1.0/](https://www.w3.org/TR/graphics-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/graphics-aam/](https://w3c.github.io/graphics-aam/)
-- Crawled version: 30 March 2021
+- Crawled version: 23 April 2021
 - Editor's Draft: [https://w3c.github.io/graphics-aam/](https://w3c.github.io/graphics-aam/)
 - Latest published version: [https://www.w3.org/TR/graphics-aam-1.0/](https://www.w3.org/TR/graphics-aam-1.0/)
 - Shortname: graphics-aam-1.0
@@ -9982,7 +9982,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
 - Crawled URL: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
-- Crawled version: 29 March 2021
+- Crawled version: 23 April 2021
 - Editor's Draft: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
 - Shortname: mathml-aam
 
@@ -13159,7 +13159,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/svg-aam-1.0/](https://www.w3.org/TR/svg-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/svg-aam/](https://w3c.github.io/svg-aam/)
-- Crawled version: 30 March 2021
+- Crawled version: 23 April 2021
 - Editor's Draft: [https://w3c.github.io/svg-aam/](https://w3c.github.io/svg-aam/)
 - Latest published version: [https://www.w3.org/TR/svg-aam-1.0/](https://www.w3.org/TR/svg-aam-1.0/)
 - Shortname: svg-aam-1.0
@@ -13177,7 +13177,6 @@ Informative references to this spec from:
      * [`https://w3c.github.io/graphics-aam/`](https://w3c.github.io/graphics-aam/), related reference "GRAPHICS-AAM" uses URL [`https://www.w3.org/TR/graphics-aam-1.0/`](https://www.w3.org/TR/graphics-aam-1.0/)
      * [`https://w3c.github.io/html-aam/`](https://w3c.github.io/html-aam/), related reference "HTML-AAM" uses URL [`https://www.w3.org/TR/html-aam-1.0/`](https://www.w3.org/TR/html-aam-1.0/)
 - External links that neither target definitions nor headings:
-     * [`https://w3c.github.io/core-aam/#keyboard-focus`](https://w3c.github.io/core-aam/#keyboard-focus)
      * [`https://w3c.github.io/accname/#step2A`](https://w3c.github.io/accname/#step2A)
      * [`https://w3c.github.io/accname/#step2D`](https://w3c.github.io/accname/#step2D)
      * [`https://w3c.github.io/accname/#step2F`](https://w3c.github.io/accname/#step2F)
@@ -13207,6 +13206,7 @@ Informative references to this spec from:
      * [`https://w3c.github.io/html-aam/#el-track`](https://w3c.github.io/html-aam/#el-track)
      * [`https://w3c.github.io/html-aam/#el-video`](https://w3c.github.io/html-aam/#el-video)
 - Broken external links:
+     * [`https://w3c.github.io/core-aam/#keyboard-focus`](https://w3c.github.io/core-aam/#keyboard-focus)
      * [`https://w3c.github.io/core-aam/#exclude_elements2`](https://w3c.github.io/core-aam/#exclude_elements2)
      * [`https://w3c.github.io/core-aam/#include_elements`](https://w3c.github.io/core-aam/#include_elements)
      * [`https://w3c.github.io/core-aam/#role-map-link`](https://w3c.github.io/core-aam/#role-map-link)
@@ -14158,7 +14158,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/graphics-aria-1.0/](https://www.w3.org/TR/graphics-aria-1.0/)
 - Crawled URL: [https://w3c.github.io/graphics-aria/](https://w3c.github.io/graphics-aria/)
-- Crawled version: 30 March 2021
+- Crawled version: 23 April 2021
 - Editor's Draft: [https://w3c.github.io/graphics-aria/](https://w3c.github.io/graphics-aria/)
 - Latest published version: [https://www.w3.org/TR/graphics-aria-1.0/](https://www.w3.org/TR/graphics-aria-1.0/)
 - Shortname: graphics-aria-1.0
@@ -15025,7 +15025,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- Crawled version: 20 April 2021
+- Crawled version: 23 April 2021
 - Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Shortname: webcodecs
 
