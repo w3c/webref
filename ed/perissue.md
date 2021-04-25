@@ -4552,7 +4552,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html/#elementdef-area`](https://www.w3.org/TR/html/#elementdef-area)
      * [`https://www.w3.org/TR/html/#element-attrdef-link-hreflang`](https://www.w3.org/TR/html/#element-attrdef-link-hreflang)
      * [`https://www.w3.org/TR/html/#element-attrdef-meta-http-equiv`](https://www.w3.org/TR/html/#element-attrdef-meta-http-equiv)
-     * [`https://www.w3.org/TR/html/#element-attrdef-global-id`](https://www.w3.org/TR/html/#element-attrdef-global-id)
      * [`https://www.w3.org/TR/html/#element-attrdef-input-checked`](https://www.w3.org/TR/html/#element-attrdef-input-checked)
      * [`https://www.w3.org/TR/html/#element-attrdef-img-ismap`](https://www.w3.org/TR/html/#element-attrdef-img-ismap)
      * [`https://www.w3.org/TR/html/#element-attrdef-global-lang`](https://www.w3.org/TR/html/#element-attrdef-global-lang)
@@ -4940,7 +4939,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 562 problematic external links found in 151 specifications
+=> 561 problematic external links found in 151 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
