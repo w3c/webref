@@ -10832,7 +10832,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
 - Crawled URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
-- Crawled version: 22 April 2021
+- Crawled version: 25 April 2021
 - Editor's Draft: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
 - Shortname: notifications
 
