@@ -7,10 +7,6 @@ jobs:
   update:
     runs-on: ubuntu-18.04
     steps:
-    - name: Checkout webref
-      uses: actions/checkout@master
-      with:
-        path: webref
     - name: Checkout reffy
       uses: actions/checkout@master
       with:
@@ -31,6 +27,10 @@ jobs:
     - name: Run Reffy's crawler
       run: npm run tr
       working-directory: reffy
+    - name: Checkout webref
+      uses: actions/checkout@master
+      with:
+        path: webref
     - name: Copy reports
       run: rsync -av --exclude=README.md reffy/reports/ webref/
     - name: Push updates to git
