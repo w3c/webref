@@ -7936,7 +7936,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
-- Crawled version: 25 April 2021
+- Crawled version: 26 April 2021
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
 - Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Shortname: html-aam-1.0
@@ -7950,7 +7950,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/graphics-aam-1.0/`](https://www.w3.org/TR/graphics-aam-1.0/)
      * [`https://w3c.github.io/accname/`](https://w3c.github.io/accname/)
      * [`https://www.w3.org/TR/html4/present/`](https://www.w3.org/TR/html4/present/)
-     * [`https://w3c.github.io/html/interactive-elements.html`](https://w3c.github.io/html/interactive-elements.html)
      * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
      * [`https://w3c.github.io/aria/core-aam/core-aam.html`](https://w3c.github.io/aria/core-aam/core-aam.html)
 - Inconsistent references for links: 
@@ -8053,6 +8052,9 @@ Informative references to this spec from:
      * [`https://w3c.github.io/core-aam/#ariaDisabledTrue`](https://w3c.github.io/core-aam/#ariaDisabledTrue)
      * [`https://w3c.github.io/core-aam/#ariaHiddenTrue`](https://w3c.github.io/core-aam/#ariaHiddenTrue)
      * [`https://w3c.github.io/core-aam/#ariaExpandedTrue`](https://w3c.github.io/core-aam/#ariaExpandedTrue)
+     * [`https://w3c.github.io/core-aam/#ariaModalTrue`](https://w3c.github.io/core-aam/#ariaModalTrue)
+     * [`https://w3c.github.io/core-aam/#ariaHiddenFalse`](https://w3c.github.io/core-aam/#ariaHiddenFalse)
+     * [`https://w3c.github.io/core-aam/#ariaModalFalse`](https://w3c.github.io/core-aam/#ariaModalFalse)
      * [`https://w3c.github.io/core-aam/#ariaPlaceholder`](https://w3c.github.io/core-aam/#ariaPlaceholder)
      * [`https://w3c.github.io/core-aam/#ariaReadonlyTrue`](https://w3c.github.io/core-aam/#ariaReadonlyTrue)
      * [`https://w3c.github.io/core-aam/#ariaRequiredTrue`](https://w3c.github.io/core-aam/#ariaRequiredTrue)
@@ -8111,7 +8113,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaSetsize`](https://www.w3.org/TR/core-aam-1.1/#ariaSetsize)
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaPosinset`](https://www.w3.org/TR/core-aam-1.1/#ariaPosinset)
      * [`https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document`](https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document)
-     * [`https://w3c.github.io/html/interactive-elements.html#element-attrdef-dialog-open`](https://w3c.github.io/html/interactive-elements.html#element-attrdef-dialog-open)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
@@ -9199,7 +9200,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
 - Crawled URL: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
-- Crawled version: 29 March 2021
+- Crawled version: 26 April 2021
 - Editor's Draft: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
 - Latest published version: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
 - Shortname: image-resource
@@ -14022,7 +14023,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled version: 14 April 2021
+- Crawled version: 26 April 2021
 - Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Shortname: ua-client-hints
 
@@ -16527,7 +16528,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 24 April 2021
+- Crawled version: 26 April 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 

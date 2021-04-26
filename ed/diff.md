@@ -2,11 +2,11 @@
 % Reffy
 % April 26, 2021
 
-## Image Resource
+## HTML Accessibility API Mappings 1.0
 
-- Initial URL: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
+- Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
-- Spec is OK: *INS* true / *DEL* false
+- Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
+- Missing references for links: *DEL* https://w3c.github.io/html/interactive-elements.html
 
 

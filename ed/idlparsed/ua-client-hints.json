@@ -195,8 +195,72 @@
         "extAttrs": [],
         "partial": false
       },
+      "UALowEntropyJSON": {
+        "fragment": "dictionary UALowEntropyJSON {\n  FrozenArray<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString platform;\n};",
+        "type": "dictionary",
+        "name": "UALowEntropyJSON",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "brands",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NavigatorUABrandVersion"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "mobile",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "platform",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "NavigatorUAData": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface NavigatorUAData {\n  readonly attribute FrozenArray<NavigatorUABrandVersion> brands;\n  readonly attribute boolean mobile;\n  readonly attribute DOMString platform;\n  Promise<UADataValues> getHighEntropyValues(sequence<DOMString> hints);\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface NavigatorUAData {\n  readonly attribute FrozenArray<NavigatorUABrandVersion> brands;\n  readonly attribute boolean mobile;\n  readonly attribute DOMString platform;\n  Promise<UADataValues> getHighEntropyValues(sequence<DOMString> hints);\n  UALowEntropyJSON toJSON();\n};",
         "type": "interface",
         "name": "NavigatorUAData",
         "inheritance": null,
@@ -304,6 +368,21 @@
             ],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "UALowEntropyJSON"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -393,9 +472,13 @@
       "UADataValues": [
         "NavigatorUABrandVersion"
       ],
+      "UALowEntropyJSON": [
+        "NavigatorUABrandVersion"
+      ],
       "NavigatorUAData": [
         "NavigatorUABrandVersion",
-        "UADataValues"
+        "UADataValues",
+        "UALowEntropyJSON"
       ],
       "NavigatorUA": [
         "NavigatorUAData"

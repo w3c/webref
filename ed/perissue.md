@@ -1282,7 +1282,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/graphics-aam-1.0/`](https://www.w3.org/TR/graphics-aam-1.0/) but does not list it in its references
     * [`https://w3c.github.io/accname/`](https://w3c.github.io/accname/) but does not list it in its references
     * [`https://www.w3.org/TR/html4/present/`](https://www.w3.org/TR/html4/present/) but does not list it in its references
-    * [`https://w3c.github.io/html/interactive-elements.html`](https://w3c.github.io/html/interactive-elements.html) but does not list it in its references
     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
     * [`https://w3c.github.io/aria/core-aam/core-aam.html`](https://w3c.github.io/aria/core-aam/core-aam.html) but does not list it in its references
 - [HTML Standard](https://html.spec.whatwg.org/multipage/) links to:
@@ -1472,7 +1471,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 582 missing references for links found in 169 specifications
+=> 581 missing references for links found in 169 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -4523,6 +4522,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/core-aam/#ariaDisabledTrue`](https://w3c.github.io/core-aam/#ariaDisabledTrue)
      * [`https://w3c.github.io/core-aam/#ariaHiddenTrue`](https://w3c.github.io/core-aam/#ariaHiddenTrue)
      * [`https://w3c.github.io/core-aam/#ariaExpandedTrue`](https://w3c.github.io/core-aam/#ariaExpandedTrue)
+     * [`https://w3c.github.io/core-aam/#ariaModalTrue`](https://w3c.github.io/core-aam/#ariaModalTrue)
+     * [`https://w3c.github.io/core-aam/#ariaHiddenFalse`](https://w3c.github.io/core-aam/#ariaHiddenFalse)
+     * [`https://w3c.github.io/core-aam/#ariaModalFalse`](https://w3c.github.io/core-aam/#ariaModalFalse)
      * [`https://w3c.github.io/core-aam/#ariaPlaceholder`](https://w3c.github.io/core-aam/#ariaPlaceholder)
      * [`https://w3c.github.io/core-aam/#ariaReadonlyTrue`](https://w3c.github.io/core-aam/#ariaReadonlyTrue)
      * [`https://w3c.github.io/core-aam/#ariaRequiredTrue`](https://w3c.github.io/core-aam/#ariaRequiredTrue)
@@ -4581,7 +4583,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaSetsize`](https://www.w3.org/TR/core-aam-1.1/#ariaSetsize)
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaPosinset`](https://www.w3.org/TR/core-aam-1.1/#ariaPosinset)
      * [`https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document`](https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document)
-     * [`https://w3c.github.io/html/interactive-elements.html#element-attrdef-dialog-open`](https://w3c.github.io/html/interactive-elements.html#element-attrdef-dialog-open)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
      * [`https://dom.spec.whatwg.org/#dom-element-setAttribute`](https://dom.spec.whatwg.org/#dom-element-setAttribute)
      * [`https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment`](https://dom.spec.whatwg.org/#dom-shadowroot-slot-assignment)
@@ -4923,7 +4924,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 550 problematic external links found in 146 specifications
+=> 552 problematic external links found in 146 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
