@@ -1,21 +1,20 @@
-% Diff between report from "April 19, 2021" and reference report from "April 12, 2021"
+% Diff between report from "April 26, 2021" and reference report from "April 19, 2021"
 % Reffy
-% April 19, 2021
+% April 26, 2021
 
-## WebOTP API
+## Fetch Standard
 
-- Initial URL: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
+- Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/web-otp/](https://wicg.github.io/web-otp/)
-- Spec title: *INS* WebOTP API / *DEL* Web OTP API
+- Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
+- Inconsistent references for links: *INS* https://www.w3.org/TR/resource-timing-2/
 
 
-## WebTransport
+## Frame Timing
 
-- Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
+- Initial URL: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Invalid WebIDL content found: *INS* false / *DEL* true
-- Obsolete WebIDL constructs found: *INS* false
+- Editor's Draft: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
 
 

@@ -3,14 +3,16 @@
 // (https://github.com/w3c/webref)
 // Source: SVG Animations (https://svgwg.org/specs/animations/)
 
+[Exposed=Window]
 interface TimeEvent : Event {
 
   readonly attribute WindowProxy? view;
   readonly attribute long detail;
 
-  void initTimeEvent(DOMString typeArg, Window? viewArg, long detailArg);
+  undefined initTimeEvent(DOMString typeArg, Window? viewArg, long detailArg);
 };
 
+[Exposed=Window]
 interface SVGAnimationElement : SVGElement {
 
   readonly attribute SVGElement? targetElement;
@@ -23,38 +25,44 @@ interface SVGAnimationElement : SVGElement {
   float getCurrentTime();
   float getSimpleDuration();
 
-  void beginElement();
-  void beginElementAt(float offset);
-  void endElement();
-  void endElementAt(float offset);
+  undefined beginElement();
+  undefined beginElementAt(float offset);
+  undefined endElement();
+  undefined endElementAt(float offset);
 };
 
 SVGAnimationElement includes SVGTests;
 
+[Exposed=Window]
 interface SVGAnimateElement : SVGAnimationElement {
 };
 
+[Exposed=Window]
 interface SVGSetElement : SVGAnimationElement {
 };
 
+[Exposed=Window]
 interface SVGAnimateMotionElement : SVGAnimationElement {
 };
 
+[Exposed=Window]
 interface SVGMPathElement : SVGElement {
 };
 
 SVGMPathElement includes SVGURIReference;
 
+[Exposed=Window]
 interface SVGAnimateTransformElement : SVGAnimationElement {
 };
 
+[Exposed=Window]
 interface SVGDiscardElement : SVGAnimationElement {
 };
 
 partial interface SVGSVGElement {
-  void pauseAnimations();
-  void unpauseAnimations();
+  undefined pauseAnimations();
+  undefined unpauseAnimations();
   boolean animationsPaused();
   float getCurrentTime();
-  void setCurrentTime(float seconds);
+  undefined setCurrentTime(float seconds);
 };

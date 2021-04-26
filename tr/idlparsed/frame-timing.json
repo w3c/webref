@@ -6,22 +6,40 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "PerformanceFrameTiming"
+        ]
+      }
     },
     "idlNames": {
       "PerformanceFrameTiming": {
-        "fragment": "interface PerformanceFrameTiming : PerformanceEntry {\n};",
+        "fragment": "[Exposed=Window]\ninterface PerformanceFrameTiming : PerformanceEntry {\n};",
         "type": "interface",
         "name": "PerformanceFrameTiming",
         "inheritance": "PerformanceEntry",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       }
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "PerformanceFrameTiming"
+      ]
+    },
     "dependencies": {
       "PerformanceFrameTiming": [
         "PerformanceEntry"

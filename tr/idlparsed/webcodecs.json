@@ -1542,7 +1542,7 @@
         "partial": false
       },
       "VideoDecoderConfig": {
-        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  required unsigned long codedWidth;\n  required unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
+        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  unsigned long codedWidth;\n  unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
         "type": "dictionary",
         "name": "VideoDecoderConfig",
         "inheritance": null,
@@ -1590,7 +1590,7 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -1605,7 +1605,7 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -1790,7 +1790,7 @@
         "partial": false
       },
       "VideoEncoderConfig": {
-        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long cropWidth;\n  required unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
+        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long width;\n  required unsigned long height;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
         "type": "dictionary",
         "name": "VideoEncoderConfig",
         "inheritance": null,
@@ -1827,7 +1827,7 @@
           },
           {
             "type": "field",
-            "name": "cropWidth",
+            "name": "width",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1842,7 +1842,7 @@
           },
           {
             "type": "field",
-            "name": "cropHeight",
+            "name": "height",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",

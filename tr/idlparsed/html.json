@@ -7378,7 +7378,7 @@
         "partial": false
       },
       "TextTrackCue": {
-        "fragment": "[Exposed=Window]\ninterface TextTrackCue : EventTarget {\n  readonly attribute TextTrack? track;\n\n  attribute DOMString id;\n  attribute double startTime;\n  attribute double endTime;\n  attribute boolean pauseOnExit;\n\n  attribute EventHandler onenter;\n  attribute EventHandler onexit;\n};",
+        "fragment": "[Exposed=Window]\ninterface TextTrackCue : EventTarget {\n  readonly attribute TextTrack? track;\n\n  attribute DOMString id;\n  attribute double startTime;\n  attribute unrestricted double endTime;\n  attribute boolean pauseOnExit;\n\n  attribute EventHandler onenter;\n  attribute EventHandler onexit;\n};",
         "type": "interface",
         "name": "TextTrackCue",
         "inheritance": "EventTarget",
@@ -7437,7 +7437,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "unrestricted double"
             },
             "extAttrs": [],
             "special": "",

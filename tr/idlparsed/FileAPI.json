@@ -649,7 +649,7 @@
         "partial": false
       },
       "FileReader": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface FileReader: EventTarget {\n  constructor();\n  // async read methods\n  void readAsArrayBuffer(Blob blob);\n  void readAsBinaryString(Blob blob);\n  void readAsText(Blob blob, optional DOMString encoding);\n  void readAsDataURL(Blob blob);\n\n  void abort();\n\n  // states\n  const unsigned short EMPTY = 0;\n  const unsigned short LOADING = 1;\n  const unsigned short DONE = 2;\n\n  readonly attribute unsigned short readyState;\n\n  // File or Blob data\n  readonly attribute (DOMString or ArrayBuffer)? result;\n\n  readonly attribute DOMException? error;\n\n  // event handler content attributes\n  attribute EventHandler onloadstart;\n  attribute EventHandler onprogress;\n  attribute EventHandler onload;\n  attribute EventHandler onabort;\n  attribute EventHandler onerror;\n  attribute EventHandler onloadend;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FileReader: EventTarget {\n  constructor();\n  // async read methods\n  undefined readAsArrayBuffer(Blob blob);\n  undefined readAsBinaryString(Blob blob);\n  undefined readAsText(Blob blob, optional DOMString encoding);\n  undefined readAsDataURL(Blob blob);\n\n  undefined abort();\n\n  // states\n  const unsigned short EMPTY = 0;\n  const unsigned short LOADING = 1;\n  const unsigned short DONE = 2;\n\n  readonly attribute unsigned short readyState;\n\n  // File or Blob data\n  readonly attribute (DOMString or ArrayBuffer)? result;\n\n  readonly attribute DOMException? error;\n\n  // event handler content attributes\n  attribute EventHandler onloadstart;\n  attribute EventHandler onprogress;\n  attribute EventHandler onload;\n  attribute EventHandler onabort;\n  attribute EventHandler onerror;\n  attribute EventHandler onloadend;\n};",
         "type": "interface",
         "name": "FileReader",
         "inheritance": "EventTarget",
@@ -668,7 +668,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -700,7 +700,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -732,7 +732,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -780,7 +780,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -812,7 +812,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -1222,7 +1222,7 @@
     "idlExtendedNames": {
       "URL": [
         {
-          "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\npartial interface URL {\n  static DOMString createObjectURL((Blob or MediaSource) obj);\n  static void revokeObjectURL(DOMString url);\n};",
+          "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\npartial interface URL {\n  static DOMString createObjectURL((Blob or MediaSource) obj);\n  static undefined revokeObjectURL(DOMString url);\n};",
           "type": "interface",
           "name": "URL",
           "inheritance": null,
@@ -1285,7 +1285,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -1381,7 +1381,6 @@
       ],
       "FileReader": [
         "EventTarget",
-        "void",
         "Blob",
         "EventHandler"
       ],
@@ -1390,14 +1389,12 @@
       ],
       "URL": [
         "Blob",
-        "MediaSource",
-        "void"
+        "MediaSource"
       ]
     },
     "externalDependencies": [
       "ReadableStream",
       "EventTarget",
-      "void",
       "EventHandler",
       "URL",
       "MediaSource"

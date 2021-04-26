@@ -5,24 +5,6 @@
   },
   "dfns": [
     {
-      "id": "context-object",
-      "href": "https://dom.spec.whatwg.org/#context-object",
-      "linkingText": [
-        "context object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "infrastructure",
-        "title": "Infrastructure",
-        "number": "1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "other-applicable-specifications",
       "href": "https://dom.spec.whatwg.org/#other-applicable-specifications",
       "linkingText": [
@@ -9447,6 +9429,46 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-shadowroot-delegatesfocus",
+      "href": "https://dom.spec.whatwg.org/#dom-shadowroot-delegatesfocus",
+      "linkingText": [
+        "delegatesFocus"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ShadowRoot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-shadowroot",
+        "title": "Interface ShadowRoot",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-shadowroot-slotassignment",
+      "href": "https://dom.spec.whatwg.org/#dom-shadowroot-slotassignment",
+      "linkingText": [
+        "slotAssignment"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ShadowRoot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-shadowroot",
+        "title": "Interface ShadowRoot",
+        "number": "4.8"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-shadowroot-host",
       "href": "https://dom.spec.whatwg.org/#dom-shadowroot-host",
       "linkingText": [
@@ -9494,26 +9516,6 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "ShadowRoot"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "interface-shadowroot",
-        "title": "Interface ShadowRoot",
-        "number": "4.8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-shadowroot-slotassignment",
-      "href": "https://dom.spec.whatwg.org/#dom-shadowroot-slotassignment",
-      "linkingText": [
-        "slotAssignment"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
       "for": [
         "ShadowRoot"
       ],
@@ -17483,6 +17485,425 @@
       "definedIn": "pre"
     },
     {
+      "id": "xsltprocessor",
+      "href": "https://dom.spec.whatwg.org/#xsltprocessor",
+      "linkingText": [
+        "XSLTProcessor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-xsltprocessor",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-xsltprocessor",
+      "linkingText": [
+        "XSLTProcessor()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "XSLTProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-importstylesheet",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-importstylesheet",
+      "linkingText": [
+        "importStylesheet(style)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XSLTProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-importstylesheet-style-style",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-importstylesheet-style-style",
+      "linkingText": [
+        "style"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XSLTProcessor/importStylesheet(style)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-transformtofragment",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-transformtofragment",
+      "linkingText": [
+        "transformToFragment(source, output)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XSLTProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-transformtofragment-source-output-source",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-transformtofragment-source-output-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XSLTProcessor/transformToFragment(source, output)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-transformtofragment-source-output-output",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-transformtofragment-source-output-output",
+      "linkingText": [
+        "output"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XSLTProcessor/transformToFragment(source, output)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-transformtodocument",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-transformtodocument",
+      "linkingText": [
+        "transformToDocument(source)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XSLTProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-transformtodocument-source-source",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-transformtodocument-source-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XSLTProcessor/transformToDocument(source)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-setparameter",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-setparameter",
+      "linkingText": [
+        "setParameter(namespaceURI, localName, value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XSLTProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-setparameter-namespaceuri-localname-value-namespaceuri",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-setparameter-namespaceuri-localname-value-namespaceuri",
+      "linkingText": [
+        "namespaceURI"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XSLTProcessor/setParameter(namespaceURI, localName, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-setparameter-namespaceuri-localname-value-localname",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-setparameter-namespaceuri-localname-value-localname",
+      "linkingText": [
+        "localName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XSLTProcessor/setParameter(namespaceURI, localName, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-setparameter-namespaceuri-localname-value-value",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-setparameter-namespaceuri-localname-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XSLTProcessor/setParameter(namespaceURI, localName, value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-getparameter",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-getparameter",
+      "linkingText": [
+        "getParameter(namespaceURI, localName)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XSLTProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-getparameter-namespaceuri-localname-namespaceuri",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-getparameter-namespaceuri-localname-namespaceuri",
+      "linkingText": [
+        "namespaceURI"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XSLTProcessor/getParameter(namespaceURI, localName)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-getparameter-namespaceuri-localname-localname",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-getparameter-namespaceuri-localname-localname",
+      "linkingText": [
+        "localName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XSLTProcessor/getParameter(namespaceURI, localName)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-removeparameter",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-removeparameter",
+      "linkingText": [
+        "removeParameter(namespaceURI, localName)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XSLTProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-removeparameter-namespaceuri-localname-namespaceuri",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-removeparameter-namespaceuri-localname-namespaceuri",
+      "linkingText": [
+        "namespaceURI"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XSLTProcessor/removeParameter(namespaceURI, localName)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-removeparameter-namespaceuri-localname-localname",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-removeparameter-namespaceuri-localname-localname",
+      "linkingText": [
+        "localName"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XSLTProcessor/removeParameter(namespaceURI, localName)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-clearparameters",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-clearparameters",
+      "linkingText": [
+        "clearParameters()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XSLTProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xsltprocessor-reset",
+      "href": "https://dom.spec.whatwg.org/#dom-xsltprocessor-reset",
+      "linkingText": [
+        "reset()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XSLTProcessor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-xsltprocessor",
+        "title": "Interface XSLTProcessor",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "domconfiguration",
       "href": "https://dom.spec.whatwg.org/#domconfiguration",
       "linkingText": [
@@ -17495,8 +17916,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17513,8 +17933,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17531,8 +17950,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17549,8 +17967,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17567,8 +17984,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17585,8 +18001,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17603,8 +18018,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17621,8 +18035,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17639,8 +18052,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17657,8 +18069,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17675,8 +18086,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17693,8 +18103,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17711,8 +18120,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17729,8 +18137,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17747,8 +18154,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17765,8 +18171,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17783,8 +18188,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17803,8 +18207,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17823,8 +18226,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17843,8 +18245,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17863,8 +18264,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17883,8 +18283,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17903,8 +18302,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17923,8 +18321,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17943,8 +18340,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17963,8 +18359,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -17983,8 +18378,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18003,8 +18397,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18023,8 +18416,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18043,8 +18435,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18063,8 +18454,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18083,8 +18473,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18103,8 +18492,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18123,8 +18511,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18143,8 +18530,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18163,8 +18549,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18183,8 +18568,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18203,8 +18587,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18223,8 +18606,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18243,8 +18625,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18263,8 +18644,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18283,8 +18663,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     },
@@ -18303,8 +18682,7 @@
       "informative": false,
       "heading": {
         "id": "historical",
-        "title": "Historical",
-        "number": "9"
+        "title": "10. Historical"
       },
       "definedIn": "prose"
     }

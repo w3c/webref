@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "WEBGL_multi_draw"
+        ],
+        "Worker": [
+          "WEBGL_multi_draw"
+        ]
+      }
     },
     "idlNames": {
       "WEBGL_multi_draw": {
-        "fragment": "[NoInterfaceObject]\ninterface WEBGL_multi_draw {\n  undefined multiDrawArraysWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,\n      (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      GLsizei drawcount);\n  undefined multiDrawElementsWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) countsList, GLuint countsOffset,\n      GLenum type,\n      (Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,\n      GLsizei drawcount);\n  undefined multiDrawArraysInstancedWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,\n      (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      (Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      GLsizei drawcount);\n  undefined multiDrawElementsInstancedWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) countsList, GLuint countsOffset,\n      GLenum type,\n      (Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,\n      (Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      GLsizei drawcount);\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_multi_draw {\n  undefined multiDrawArraysWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,\n      (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      GLsizei drawcount);\n  undefined multiDrawElementsWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) countsList, GLuint countsOffset,\n      GLenum type,\n      (Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,\n      GLsizei drawcount);\n  undefined multiDrawArraysInstancedWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,\n      (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      (Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      GLsizei drawcount);\n  undefined multiDrawElementsInstancedWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) countsList, GLuint countsOffset,\n      GLenum type,\n      (Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,\n      (Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      GLsizei drawcount);\n};",
         "type": "interface",
         "name": "WEBGL_multi_draw",
         "inheritance": null,
@@ -823,7 +830,23 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "NoInterfaceObject",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
           }
@@ -833,7 +856,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "WEBGL_multi_draw"
+      ],
+      "Worker": [
+        "WEBGL_multi_draw"
+      ]
+    },
     "dependencies": {
       "WEBGL_multi_draw": [
         "GLenum",

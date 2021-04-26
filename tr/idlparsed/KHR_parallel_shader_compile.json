@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "KHR_parallel_shader_compile"
+        ],
+        "Worker": [
+          "KHR_parallel_shader_compile"
+        ]
+      }
     },
     "idlNames": {
       "KHR_parallel_shader_compile": {
-        "fragment": "[NoInterfaceObject]\ninterface KHR_parallel_shader_compile {\n  const GLenum COMPLETION_STATUS_KHR                = 0x91B1;\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface KHR_parallel_shader_compile {\n  const GLenum COMPLETION_STATUS_KHR                = 0x91B1;\n};",
         "type": "interface",
         "name": "KHR_parallel_shader_compile",
         "inheritance": null,
@@ -36,7 +43,23 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "NoInterfaceObject",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
           }
@@ -46,7 +69,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "KHR_parallel_shader_compile"
+      ],
+      "Worker": [
+        "KHR_parallel_shader_compile"
+      ]
+    },
     "dependencies": {
       "KHR_parallel_shader_compile": []
     },

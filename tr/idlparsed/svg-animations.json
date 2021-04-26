@@ -6,11 +6,22 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "TimeEvent",
+          "SVGAnimationElement",
+          "SVGAnimateElement",
+          "SVGSetElement",
+          "SVGAnimateMotionElement",
+          "SVGMPathElement",
+          "SVGAnimateTransformElement",
+          "SVGDiscardElement"
+        ]
+      }
     },
     "idlNames": {
       "TimeEvent": {
-        "fragment": "interface TimeEvent : Event {\n\n  readonly attribute WindowProxy? view;\n  readonly attribute long detail;\n\n  void initTimeEvent(DOMString typeArg, Window? viewArg, long detailArg);\n};",
+        "fragment": "[Exposed=Window]\ninterface TimeEvent : Event {\n\n  readonly attribute WindowProxy? view;\n  readonly attribute long detail;\n\n  undefined initTimeEvent(DOMString typeArg, Window? viewArg, long detailArg);\n};",
         "type": "interface",
         "name": "TimeEvent",
         "inheritance": "Event",
@@ -54,7 +65,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -110,11 +121,21 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGAnimationElement": {
-        "fragment": "interface SVGAnimationElement : SVGElement {\n\n  readonly attribute SVGElement? targetElement;\n\n  attribute EventHandler onbegin;\n  attribute EventHandler onend;\n  attribute EventHandler onrepeat;\n\n  float getStartTime();\n  float getCurrentTime();\n  float getSimpleDuration();\n\n  void beginElement();\n  void beginElementAt(float offset);\n  void endElement();\n  void endElementAt(float offset);\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGAnimationElement : SVGElement {\n\n  readonly attribute SVGElement? targetElement;\n\n  attribute EventHandler onbegin;\n  attribute EventHandler onend;\n  attribute EventHandler onrepeat;\n\n  float getStartTime();\n  float getCurrentTime();\n  float getSimpleDuration();\n\n  undefined beginElement();\n  undefined beginElementAt(float offset);\n  undefined endElement();\n  undefined endElementAt(float offset);\n};",
         "type": "interface",
         "name": "SVGAnimationElement",
         "inheritance": "SVGElement",
@@ -233,7 +254,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -248,7 +269,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -280,7 +301,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -295,7 +316,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -319,61 +340,131 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGAnimateElement": {
-        "fragment": "interface SVGAnimateElement : SVGAnimationElement {\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGAnimateElement : SVGAnimationElement {\n};",
         "type": "interface",
         "name": "SVGAnimateElement",
         "inheritance": "SVGAnimationElement",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGSetElement": {
-        "fragment": "interface SVGSetElement : SVGAnimationElement {\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGSetElement : SVGAnimationElement {\n};",
         "type": "interface",
         "name": "SVGSetElement",
         "inheritance": "SVGAnimationElement",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGAnimateMotionElement": {
-        "fragment": "interface SVGAnimateMotionElement : SVGAnimationElement {\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGAnimateMotionElement : SVGAnimationElement {\n};",
         "type": "interface",
         "name": "SVGAnimateMotionElement",
         "inheritance": "SVGAnimationElement",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGMPathElement": {
-        "fragment": "interface SVGMPathElement : SVGElement {\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGMPathElement : SVGElement {\n};",
         "type": "interface",
         "name": "SVGMPathElement",
         "inheritance": "SVGElement",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGAnimateTransformElement": {
-        "fragment": "interface SVGAnimateTransformElement : SVGAnimationElement {\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGAnimateTransformElement : SVGAnimationElement {\n};",
         "type": "interface",
         "name": "SVGAnimateTransformElement",
         "inheritance": "SVGAnimationElement",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGDiscardElement": {
-        "fragment": "interface SVGDiscardElement : SVGAnimationElement {\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGDiscardElement : SVGAnimationElement {\n};",
         "type": "interface",
         "name": "SVGDiscardElement",
         "inheritance": "SVGAnimationElement",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       }
     },
@@ -398,7 +489,7 @@
       ],
       "SVGSVGElement": [
         {
-          "fragment": "partial interface SVGSVGElement {\n  void pauseAnimations();\n  void unpauseAnimations();\n  boolean animationsPaused();\n  float getCurrentTime();\n  void setCurrentTime(float seconds);\n};",
+          "fragment": "partial interface SVGSVGElement {\n  undefined pauseAnimations();\n  undefined unpauseAnimations();\n  boolean animationsPaused();\n  float getCurrentTime();\n  undefined setCurrentTime(float seconds);\n};",
           "type": "interface",
           "name": "SVGSVGElement",
           "inheritance": null,
@@ -412,7 +503,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [],
               "extAttrs": [],
@@ -427,7 +518,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [],
               "extAttrs": [],
@@ -472,7 +563,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -502,18 +593,27 @@
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "TimeEvent",
+        "SVGAnimationElement",
+        "SVGAnimateElement",
+        "SVGSetElement",
+        "SVGAnimateMotionElement",
+        "SVGMPathElement",
+        "SVGAnimateTransformElement",
+        "SVGDiscardElement"
+      ]
+    },
     "dependencies": {
       "TimeEvent": [
         "Event",
         "WindowProxy",
-        "void",
         "Window"
       ],
       "SVGAnimationElement": [
         "SVGElement",
         "EventHandler",
-        "void",
         "SVGTests"
       ],
       "SVGAnimateElement": [
@@ -535,14 +635,11 @@
       "SVGDiscardElement": [
         "SVGAnimationElement"
       ],
-      "SVGSVGElement": [
-        "void"
-      ]
+      "SVGSVGElement": []
     },
     "externalDependencies": [
       "Event",
       "WindowProxy",
-      "void",
       "Window",
       "SVGElement",
       "EventHandler",

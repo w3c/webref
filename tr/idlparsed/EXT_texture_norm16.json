@@ -6,11 +6,18 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "EXT_texture_norm16"
+        ],
+        "Worker": [
+          "EXT_texture_norm16"
+        ]
+      }
     },
     "idlNames": {
       "EXT_texture_norm16": {
-        "fragment": "[NoInterfaceObject]\ninterface EXT_texture_norm16 {\n  const GLenum R16_EXT = 0x822A;\n  const GLenum RG16_EXT = 0x822C;\n  const GLenum RGB16_EXT = 0x8054;\n  const GLenum RGBA16_EXT = 0x805B;\n  const GLenum R16_SNORM_EXT = 0x8F98;\n  const GLenum RG16_SNORM_EXT = 0x8F99;\n  const GLenum RGB16_SNORM_EXT = 0x8F9A;\n  const GLenum RGBA16_SNORM_EXT = 0x8F9B;\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface EXT_texture_norm16 {\n  const GLenum R16_EXT = 0x822A;\n  const GLenum RG16_EXT = 0x822C;\n  const GLenum RGB16_EXT = 0x8054;\n  const GLenum RGBA16_EXT = 0x805B;\n  const GLenum R16_SNORM_EXT = 0x8F98;\n  const GLenum RG16_SNORM_EXT = 0x8F99;\n  const GLenum RGB16_SNORM_EXT = 0x8F9A;\n  const GLenum RGBA16_SNORM_EXT = 0x8F9B;\n};",
         "type": "interface",
         "name": "EXT_texture_norm16",
         "inheritance": null,
@@ -155,7 +162,23 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "NoInterfaceObject",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNoInterfaceObject",
             "rhs": null,
             "arguments": []
           }
@@ -165,7 +188,14 @@
     },
     "idlExtendedNames": {},
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "EXT_texture_norm16"
+      ],
+      "Worker": [
+        "EXT_texture_norm16"
+      ]
+    },
     "dependencies": {
       "EXT_texture_norm16": []
     },

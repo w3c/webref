@@ -384,7 +384,7 @@
         "partial": false
       },
       "GPUSupportedFeatures": {
-        "fragment": "[Exposed=Window]\ninterface GPUSupportedFeatures {\n    readonly setlike<GPUFeatureName>;\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUSupportedFeatures {\n    readonly setlike<DOMString>;\n};",
         "type": "interface",
         "name": "GPUSupportedFeatures",
         "inheritance": null,
@@ -398,7 +398,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "GPUFeatureName"
+                "idlType": "DOMString"
               }
             ],
             "arguments": [],
@@ -10563,9 +10563,7 @@
       "GPUObjectBase": [],
       "GPUObjectDescriptorBase": [],
       "GPUAdapterLimits": [],
-      "GPUSupportedFeatures": [
-        "GPUFeatureName"
-      ],
+      "GPUSupportedFeatures": [],
       "NavigatorGPU": [
         "GPU"
       ],

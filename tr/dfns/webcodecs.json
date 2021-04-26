@@ -3134,10 +3134,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoencoderconfig-cropwidth",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-cropwidth",
+      "id": "dom-videoencoderconfig-width",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-width",
       "linkingText": [
-        "cropWidth"
+        "width"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -3154,10 +3154,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoencoderconfig-cropheight",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-cropheight",
+      "id": "dom-videoencoderconfig-height",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-height",
       "linkingText": [
-        "cropHeight"
+        "height"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -4632,6 +4632,246 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videoframe-format-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-format-slot",
+      "linkingText": [
+        "[[format]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-planes-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-planes-slot",
+      "linkingText": [
+        "[[planes]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-coded-width-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-coded-width-slot",
+      "linkingText": [
+        "[[coded width]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-coded-height-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-coded-height-slot",
+      "linkingText": [
+        "[[coded height]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-crop-left-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-crop-left-slot",
+      "linkingText": [
+        "[[crop left]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-crop-top-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-crop-top-slot",
+      "linkingText": [
+        "[[crop top]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-crop-width-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-crop-width-slot",
+      "linkingText": [
+        "[[crop width]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-crop-height-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-crop-height-slot",
+      "linkingText": [
+        "[[crop height]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-display-width-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-display-width-slot",
+      "linkingText": [
+        "[[display width]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-display-height-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-display-height-slot",
+      "linkingText": [
+        "[[display height]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-duration-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-duration-slot",
+      "linkingText": [
+        "[[duration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-timestamp-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-timestamp-slot",
+      "linkingText": [
+        "[[timestamp]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videoframe-videoframe",
       "href": "https://w3c.github.io/webcodecs/#dom-videoframe-videoframe",
       "linkingText": [
@@ -4676,46 +4916,6 @@
         "number": "9.2.2"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dom-videoframe-timestamp",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-timestamp",
-      "linkingText": [
-        "timestamp"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "VideoFrame"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-attributes",
-        "title": "Attributes",
-        "number": "9.2.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videoframe-duration",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-duration",
-      "linkingText": [
-        "duration"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "VideoFrame"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-attributes",
-        "title": "Attributes",
-        "number": "9.2.3"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "dom-videoframe-format",
@@ -4902,6 +5102,46 @@
       "href": "https://w3c.github.io/webcodecs/#dom-videoframe-displayheight",
       "linkingText": [
         "displayHeight"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-attributes",
+        "title": "Attributes",
+        "number": "9.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-timestamp",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-attributes",
+        "title": "Attributes",
+        "number": "9.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-duration",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-duration",
+      "linkingText": [
+        "duration"
       ],
       "localLinkingText": [],
       "type": "attribute",

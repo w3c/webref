@@ -7,23 +7,35 @@
     "jsNames": {
       "constructors": {
         "Window": [
+          "HTMLPortalElement",
           "PortalActivateEvent"
         ]
       },
       "functions": {
         "Window": [
-          "HTMLPortalElement",
           "PortalHost"
         ]
       }
     },
     "idlNames": {
       "HTMLPortalElement": {
-        "fragment": "[Exposed=Window, HTMLConstructor]\ninterface HTMLPortalElement : HTMLElement {\n    [CEReactions] attribute USVString src;\n    [CEReactions] attribute DOMString referrerPolicy;\n\n    [NewObject] Promise<undefined> activate(optional PortalActivateOptions options = {});\n    undefined postMessage(any message, optional PostMessageOptions options = {});\n\n    attribute EventHandler onmessage;\n    attribute EventHandler onmessageerror;\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLPortalElement : HTMLElement {\n    [HTMLConstructor] constructor();\n\n    [CEReactions] attribute USVString src;\n    [CEReactions] attribute DOMString referrerPolicy;\n\n    [NewObject] Promise<undefined> activate(optional PortalActivateOptions options = {});\n    undefined postMessage(any message, optional PostMessageOptions options = {});\n\n    attribute EventHandler onmessage;\n    attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "HTMLPortalElement",
         "inheritance": "HTMLElement",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "HTMLConstructor",
+                "rhs": null,
+                "arguments": []
+              }
+            ]
+          },
           {
             "type": "attribute",
             "name": "src",
@@ -207,12 +219,6 @@
               "type": "identifier",
               "value": "Window"
             },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "HTMLConstructor",
-            "rhs": null,
             "arguments": []
           }
         ],

@@ -2,5 +2,5 @@
 [Exposed=ServiceWorker]
 interface BackgroundFetchUpdateUIEvent : BackgroundFetchEvent {
   constructor(DOMString type, BackgroundFetchEventInit init);
-  Promise<void> updateUI(optional BackgroundFetchUIOptions options = {});
+  Promise<undefined> updateUI(optional BackgroundFetchUIOptions options = {});
 };

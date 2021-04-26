@@ -38,11 +38,11 @@ interface SVGSVGElement : SVGGraphicsElement {
 
 // Source: SVG Animations (https://svgwg.org/specs/animations/)
 partial interface SVGSVGElement {
-  void pauseAnimations();
-  void unpauseAnimations();
+  undefined pauseAnimations();
+  undefined unpauseAnimations();
   boolean animationsPaused();
   float getCurrentTime();
-  void setCurrentTime(float seconds);
+  undefined setCurrentTime(float seconds);
 };
 
 // Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)

@@ -80,13 +80,18 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-blob-blobparts",
-      "href": "https://www.w3.org/TR/FileAPI/#dom-blob-blobparts",
+      "id": "dom-blob-blob",
+      "href": "https://www.w3.org/TR/FileAPI/#dom-blob-blob",
       "linkingText": [
-        "blobParts"
+        "Blob(blobParts, options)",
+        "constructor(blobParts, options)",
+        "Blob(blobParts)",
+        "constructor(blobParts)",
+        "Blob()",
+        "constructor()"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "constructor",
       "for": [
         "Blob"
       ],
@@ -100,15 +105,20 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-blob-options",
-      "href": "https://www.w3.org/TR/FileAPI/#dom-blob-options",
+      "id": "dom-blob-blob-blobparts-options-options",
+      "href": "https://www.w3.org/TR/FileAPI/#dom-blob-blob-blobparts-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Blob"
+        "Blob/Blob(blobParts, options)",
+        "Blob/constructor(blobParts, options)",
+        "Blob/Blob(blobParts)",
+        "Blob/constructor(blobParts)",
+        "Blob/Blob()",
+        "Blob/constructor()"
       ],
       "access": "public",
       "informative": false,
@@ -375,6 +385,10 @@
       "id": "dfn-slice",
       "href": "https://www.w3.org/TR/FileAPI/#dfn-slice",
       "linkingText": [
+        "slice(start, end, contentType)",
+        "slice(start, end)",
+        "slice(start)",
+        "slice()",
         "slice(start, end, contentType), slice(start, end), slice(start), slice()"
       ],
       "localLinkingText": [],
@@ -548,13 +562,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-file-filebits",
-      "href": "https://www.w3.org/TR/FileAPI/#dom-file-filebits",
+      "id": "dom-file-file",
+      "href": "https://www.w3.org/TR/FileAPI/#dom-file-file",
       "linkingText": [
-        "fileBits"
+        "File(fileBits, fileName, options)",
+        "constructor(fileBits, fileName, options)",
+        "File(fileBits, fileName)",
+        "constructor(fileBits, fileName)"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "constructor",
       "for": [
         "File"
       ],
@@ -568,35 +585,18 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-file-filename",
-      "href": "https://www.w3.org/TR/FileAPI/#dom-file-filename",
-      "linkingText": [
-        "fileName"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "File"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "file-section",
-        "title": "The File Interface",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-file-options",
-      "href": "https://www.w3.org/TR/FileAPI/#dom-file-options",
+      "id": "dom-file-file-filebits-filename-options-options",
+      "href": "https://www.w3.org/TR/FileAPI/#dom-file-file-filebits-filename-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "File"
+        "File/File(fileBits, fileName, options)",
+        "File/constructor(fileBits, fileName, options)",
+        "File/File(fileBits, fileName)",
+        "File/constructor(fileBits, fileName)"
       ],
       "access": "public",
       "informative": false,
@@ -1065,7 +1065,8 @@
       "id": "filereaderConstrctr",
       "href": "https://www.w3.org/TR/FileAPI/#filereaderConstrctr",
       "linkingText": [
-        "FileReader()"
+        "FileReader()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -1601,6 +1602,27 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "FileReaderSync",
+        "title": "The FileReaderSync API",
+        "number": "6.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-filereadersync-filereadersync",
+      "href": "https://www.w3.org/TR/FileAPI/#dom-filereadersync-filereadersync",
+      "linkingText": [
+        "FileReaderSync()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "FileReaderSync"
+      ],
       "access": "public",
       "informative": false,
       "heading": {

@@ -24,7 +24,7 @@ interface URL {
 [Exposed=(Window,DedicatedWorker,SharedWorker)]
 partial interface URL {
   static DOMString createObjectURL((Blob or MediaSource) obj);
-  static void revokeObjectURL(DOMString url);
+  static undefined revokeObjectURL(DOMString url);
 };
 
 // Source: Media Source Extensions™ (https://www.w3.org/TR/media-source/)

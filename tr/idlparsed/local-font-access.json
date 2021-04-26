@@ -58,7 +58,7 @@
         "partial": false
       },
       "FontManager": {
-        "fragment": "[SecureContext,\n Exposed=(Window,Worker)]\ninterface FontManager {\n  Promise<sequence<FontMetadata>> query(QueryOptions options);\n};",
+        "fragment": "[SecureContext,\n Exposed=(Window,Worker)]\ninterface FontManager {\n  Promise<sequence<FontMetadata>> query(optional QueryOptions options = {});\n};",
         "type": "interface",
         "name": "FontManager",
         "inheritance": null,
@@ -105,8 +105,10 @@
                   "union": false,
                   "idlType": "QueryOptions"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],

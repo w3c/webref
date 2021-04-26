@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% April 19, 2021
+% April 26, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -263,7 +263,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
-- Crawled version: 16 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -370,19 +370,18 @@ Informative references to this spec from:
 - [Permissions](https://www.w3.org/TR/permissions/)
 
 
-## Background Fetch {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Background Fetch {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
 - Crawled URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
-- Crawled version: 24 February 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
 - Shortname: background-fetch
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `void`
 - Missing references for links: 
      * [`https://storage.spec.whatwg.org/`](https://storage.spec.whatwg.org/)
      * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/)
@@ -410,14 +409,13 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#idl-Uint8Array`](https://heycam.github.io/webidl/#idl-Uint8Array)
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
 - Broken external links:
-     * [`https://fetch.spec.whatwg.org/#concept-body-transmitted`](https://fetch.spec.whatwg.org/#concept-body-transmitted)
-     * [`https://fetch.spec.whatwg.org/#concept-body-wait`](https://fetch.spec.whatwg.org/#concept-body-wait)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1133,6 +1131,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
      * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
 - Broken external links:
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
@@ -1171,6 +1170,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://www.w3.org/TR/page-visibility/#dom-document-visibilitystate`](https://www.w3.org/TR/page-visibility/#dom-document-visibilitystate)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1479,6 +1479,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/webmessaging/`](https://www.w3.org/TR/webmessaging/)
@@ -1595,6 +1596,7 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css-easing-1/#valdef-cubic-bezier-timing-function-ease-in`](https://www.w3.org/TR/css-easing-1/#valdef-cubic-bezier-timing-function-ease-in)
      * [`https://www.w3.org/TR/css-easing-1/#valdef-cubic-bezier-timing-function-ease-out`](https://www.w3.org/TR/css-easing-1/#valdef-cubic-bezier-timing-function-ease-out)
      * [`https://drafts.csswg.org/cssom-1/#cssomstring`](https://drafts.csswg.org/cssom-1/#cssomstring)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2665,6 +2667,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#operationerror`](https://heycam.github.io/webidl/#operationerror)
 - Broken external links:
      * [`https://www.w3.org/TR/css-pseudo-4/#selectordef-inactive-selection`](https://www.w3.org/TR/css-pseudo-4/#selectordef-inactive-selection)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://heycam.github.io/webidl/#dfn-setlike`](https://heycam.github.io/webidl/#dfn-setlike)
      * [`https://heycam.github.io/webidl/#dfn-set-entries`](https://heycam.github.io/webidl/#dfn-set-entries)
      * [`https://heycam.github.io/webidl/#es-add-delete`](https://heycam.github.io/webidl/#es-add-delete)
@@ -4149,7 +4152,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
 - Crawled URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
-- Crawled version: 18 March 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
 - Shortname: css-nesting-1
 
@@ -4215,6 +4218,7 @@ No informative reference to this spec from other specs.
      * [`https://dom.spec.whatwg.org/#case-sensitive`](https://dom.spec.whatwg.org/#case-sensitive)
      * [`https://dom.spec.whatwg.org/#converted-to-ascii-lowercase`](https://dom.spec.whatwg.org/#converted-to-ascii-lowercase)
      * [`https://dom.spec.whatwg.org/#ascii-case-insensitive`](https://dom.spec.whatwg.org/#ascii-case-insensitive)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://dom.spec.whatwg.org/#converted-to-ascii-uppercase`](https://dom.spec.whatwg.org/#converted-to-ascii-uppercase)
      * [`https://html.spec.whatwg.org/#style-sheet-ready`](https://html.spec.whatwg.org/#style-sheet-ready)
      * [`https://www.w3.org/TR/css3-color/#valuea-def-color`](https://www.w3.org/TR/css3-color/#valuea-def-color)
@@ -4259,7 +4263,6 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Referrer Policy](https://www.w3.org/TR/referrer-policy/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
@@ -4748,6 +4751,7 @@ Normative references to this spec from:
 - [CSS Ruby Annotation Layout Module Level 1](https://www.w3.org/TR/css-ruby-1/)
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/css-scroll-snap-1/)
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/css-text-decor-4/)
+- [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/)
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/)
 - [Web Animations](https://www.w3.org/TR/web-animations-1/)
 
@@ -5597,7 +5601,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Crawled URL: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
-- Crawled version: 16 March 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
 - Latest published version: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
 - Shortname: css-text-3
@@ -5607,14 +5611,10 @@ No informative reference to this spec from other specs.
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/css-writing-modes/`](https://www.w3.org/TR/css-writing-modes/)
-     * [`https://www.w3.org/TR/css-fonts/`](https://www.w3.org/TR/css-fonts/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - External links to private terms:
      * [`https://drafts.csswg.org/cssom-1/#resolved-value`](https://drafts.csswg.org/cssom-1/#resolved-value)
-- External links that neither target definitions nor headings:
-     * [`https://www.w3.org/TR/css-writing-modes-3/#text-combine-horizontal`](https://www.w3.org/TR/css-writing-modes-3/#text-combine-horizontal)
 - Broken external links:
      * [`https://www.w3.org/TR/css-fonts-3/#feature-precedence`](https://www.w3.org/TR/css-fonts-3/#feature-precedence)
 
@@ -6501,6 +6501,7 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-overflow-4/#propdef-overflow`](https://drafts.csswg.org/css-overflow-4/#propdef-overflow)
      * [`https://drafts.csswg.org/css-overflow-4/#valdef-overflow-auto`](https://drafts.csswg.org/css-overflow-4/#valdef-overflow-auto)
      * [`https://dom.spec.whatwg.org/#case-sensitive`](https://dom.spec.whatwg.org/#case-sensitive)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://www.w3.org/TR/geometry-1/#dom-domrect`](https://www.w3.org/TR/geometry-1/#dom-domrect)
      * [`https://www.w3.org/TR/geometry-1/#dom-domquad`](https://www.w3.org/TR/geometry-1/#dom-domquad)
      * [`https://www.w3.org/TR/geometry-1/#dom-domrectreadonly`](https://www.w3.org/TR/geometry-1/#dom-domrectreadonly)
@@ -6774,7 +6775,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 15 April 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Shortname: dom
 
@@ -6806,9 +6807,10 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#script`](https://html.spec.whatwg.org/#script)
      * [`https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope-service-worker`](https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope-service-worker)
 - Broken external links:
-     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://drafts.csswg.org/selectors-4/#defined-pseudo`](https://drafts.csswg.org/selectors-4/#defined-pseudo)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#LegacyUnforgeable`](https://heycam.github.io/webidl/#LegacyUnforgeable)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#dfn-associated-realm`](https://heycam.github.io/webidl/#dfn-associated-realm)
      * [`https://heycam.github.io/webidl/#call-a-user-objects-operation`](https://heycam.github.io/webidl/#call-a-user-objects-operation)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
@@ -6819,7 +6821,6 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#invoke-a-callback-function`](https://heycam.github.io/webidl/#invoke-a-callback-function)
      * [`https://heycam.github.io/webidl/#LegacyNullToEmptyString`](https://heycam.github.io/webidl/#LegacyNullToEmptyString)
      * [`https://heycam.github.io/webidl/#construct-a-callback-function`](https://heycam.github.io/webidl/#construct-a-callback-function)
-     * [`https://drafts.csswg.org/selectors-4/#defined-pseudo`](https://drafts.csswg.org/selectors-4/#defined-pseudo)
      * [`https://w3c.github.io/touch-events/#idl-def-touchevent`](https://w3c.github.io/touch-events/#idl-def-touchevent)
      * [`https://w3c.github.io/DOM-Parsing/#dfn-createcontextualfragment-fragment`](https://w3c.github.io/DOM-Parsing/#dfn-createcontextualfragment-fragment)
 
@@ -6852,7 +6853,6 @@ Normative references to this spec from:
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/)
-- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/)
@@ -7047,7 +7047,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
 - Crawled URL: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
-- Crawled version: 18 April 2021
+- Crawled version: 23 April 2021
 - Editor's Draft: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
 - Shortname: ecma-402
 
@@ -7093,6 +7093,7 @@ Normative references to this spec from:
 - [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Early detection of input events](https://wicg.github.io/is-input-pending/)
+- [File API](https://www.w3.org/TR/FileAPI/)
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [High Resolution Time](https://www.w3.org/TR/hr-time-3/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -7171,6 +7172,7 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css2/z#painting-order`](https://drafts.csswg.org/css2/z#painting-order)
 - Broken external links:
      * [`https://heycam.github.io/webidl/#Default`](https://heycam.github.io/webidl/#Default)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://w3c.github.io/resource-timing/#dfn-timing-allow-check`](https://w3c.github.io/resource-timing/#dfn-timing-allow-check)
 
 ### Known dependencies on this specification {.dependencies}
@@ -7411,6 +7413,7 @@ No informative reference to this spec from other specs.
 - External links that neither target definitions nor headings:
      * [`https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp`](https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp)
 - Broken external links:
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://w3c.github.io/hr-time/#dfn-performance`](https://w3c.github.io/hr-time/#dfn-performance)
      * [`https://html.spec.whatwg.org/#event-dnd-dragexit`](https://html.spec.whatwg.org/#event-dnd-dragexit)
      * [`https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-buffered`](https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-buffered)
@@ -7491,7 +7494,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 15 April 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -7500,6 +7503,7 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/), related reference "HR-TIME-2" uses URL [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/)
      * [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/), related reference "HR-TIME-2" uses URL [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/)
+     * [`https://www.w3.org/TR/resource-timing-2/`](https://www.w3.org/TR/resource-timing-2/), related reference "RESOURCE-TIMING-2" uses URL [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/)
 - External links to private terms:
      * [`https://w3c.github.io/FileAPI/#readOperation`](https://w3c.github.io/FileAPI/#readOperation)
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-copy`](https://heycam.github.io/webidl/#dfn-get-buffer-source-copy)
@@ -7643,31 +7647,20 @@ Informative references to this spec from:
 - [File System Access](https://wicg.github.io/file-system-access/)
 
 
-## File API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## File API {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
 - Crawled URL: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
-- Crawled version: 11 September 2019
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://w3c.github.io/FileAPI/](https://w3c.github.io/FileAPI/)
 - Latest published version: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
 - Shortname: FileAPI
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `void`
-- No definition for IDL properties: 
-     * `constructor(blobParts, options)` with type `constructor` for [`Blob`](https://www.w3.org/TR/FileAPI/#dfn-Blob)
-     * `constructor(fileBits, fileName, options)` with type `constructor` for [`File`](https://www.w3.org/TR/FileAPI/#dfn-file)
-     * `constructor()` with type `constructor` for [`FileReader`](https://www.w3.org/TR/FileAPI/#dfn-filereader)
-     * `constructor()` with type `constructor` for [`FileReaderSync`](https://www.w3.org/TR/FileAPI/#dfn-FileReaderSync)
-- Possibly no definition for IDL properties: 
-     * `slice(start, end, contentType)` with type `method` for [`Blob`](https://www.w3.org/TR/FileAPI/#dfn-Blob), but found [`slice(start, end, contentType), slice(start, end), slice(start), slice()`](https://www.w3.org/TR/FileAPI/#dfn-slice) with type `method` for `Blob`
-- Missing references for links: 
-     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
      * [`https://w3c.github.io/media-source/`](https://w3c.github.io/media-source/), related reference "MEDIA-SOURCE" uses URL [`https://www.w3.org/TR/media-source/`](https://www.w3.org/TR/media-source/)
 - External links to private terms:
      * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
@@ -7680,15 +7673,12 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
 - External links that neither target definitions nor headings:
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
+     * [`https://heycam.github.io/webidl/#idl-Uint8Array`](https://heycam.github.io/webidl/#idl-Uint8Array)
 - Broken external links:
      * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
-     * [`https://fetch.spec.whatwg.org/#concept-readablestream`](https://fetch.spec.whatwg.org/#concept-readablestream)
-     * [`https://fetch.spec.whatwg.org/#concept-construct-readablestream`](https://fetch.spec.whatwg.org/#concept-construct-readablestream)
-     * [`https://fetch.spec.whatwg.org/#concept-error-readablestream`](https://fetch.spec.whatwg.org/#concept-error-readablestream)
-     * [`https://fetch.spec.whatwg.org/#concept-enqueue-readablestream`](https://fetch.spec.whatwg.org/#concept-enqueue-readablestream)
-     * [`https://fetch.spec.whatwg.org/#concept-get-reader`](https://fetch.spec.whatwg.org/#concept-get-reader)
-     * [`https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream`](https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream)
-     * [`https://fetch.spec.whatwg.org/#concept-read-chunk-from-readablestream`](https://fetch.spec.whatwg.org/#concept-read-chunk-from-readablestream)
+     * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://mimesniff.spec.whatwg.org/#parsable-mime-type`](https://mimesniff.spec.whatwg.org/#parsable-mime-type)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/workers/`](https://www.w3.org/TR/workers/)
@@ -7702,7 +7692,6 @@ Normative references to this spec from:
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
-- [File API](https://www.w3.org/TR/FileAPI/)
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/)
@@ -7897,19 +7886,18 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Frame Timing {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingDfns=true data-xrefs=true}
+## Frame Timing {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
 - Crawled URL: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
-- Crawled version: 27 September 2019
+- Crawled version: 23 April 2021
 - Editor's Draft: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
 - Shortname: frame-timing
 
 ### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
@@ -7938,6 +7926,7 @@ No informative reference to this spec from other specs.
 - External links to private terms:
      * [`https://w3c.github.io/screen-orientation/#dfn-triggered-by-a-user-generated-orientation-change`](https://w3c.github.io/screen-orientation/#dfn-triggered-by-a-user-generated-orientation-change)
 - Broken external links:
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#LegacyLenientSetter`](https://heycam.github.io/webidl/#LegacyLenientSetter)
      * [`https://heycam.github.io/webidl/#Unscopable`](https://heycam.github.io/webidl/#Unscopable)
@@ -8300,6 +8289,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8393,6 +8383,7 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#DOMTimeStamp`](https://heycam.github.io/webidl/#DOMTimeStamp)
      * [`https://heycam.github.io/webidl/#Default`](https://heycam.github.io/webidl/#Default)
      * [`https://heycam.github.io/webidl/#default-tojson-steps`](https://heycam.github.io/webidl/#default-tojson-steps)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -8704,7 +8695,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 16 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -9855,6 +9846,7 @@ No informative reference to this spec from other specs.
 
 - Broken external links:
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9873,7 +9865,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-import-assertions/](https://tc39.es/proposal-import-assertions/)
 - Crawled URL: [https://tc39.es/proposal-import-assertions/](https://tc39.es/proposal-import-assertions/)
-- Crawled version: 14 March 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://tc39.es/proposal-import-assertions/](https://tc39.es/proposal-import-assertions/)
 - Shortname: tc39-import-assertions
 
@@ -10428,6 +10420,7 @@ No informative reference to this spec from other specs.
      * [`https://wicg.github.io/event-timing#has-dispatched-input-event`](https://wicg.github.io/event-timing#has-dispatched-input-event)
 - Broken external links:
      * [`https://heycam.github.io/webidl/#Default`](https://heycam.github.io/webidl/#Default)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -10538,7 +10531,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/local-font-access/](https://wicg.github.io/local-font-access/)
 - Crawled URL: [https://wicg.github.io/local-font-access/](https://wicg.github.io/local-font-access/)
-- Crawled version: 15 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://wicg.github.io/local-font-access/](https://wicg.github.io/local-font-access/)
 - Shortname: local-font-access
 
@@ -10646,7 +10639,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
 - Crawled URL: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
-- Crawled version: 29 March 2021
+- Crawled version: 23 April 2021
 - Editor's Draft: [https://w3c.github.io/mathml-aam/](https://w3c.github.io/mathml-aam/)
 - Shortname: mathml-aam
 
@@ -10668,7 +10661,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Crawled URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
-- Crawled version: 03 February 2021
+- Crawled version: 21 April 2021
 - Editor's Draft: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Shortname: mathml-core
 
@@ -11698,7 +11691,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
 - Crawled URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
-- Crawled version: 23 March 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
 - Shortname: notifications
 
@@ -11714,9 +11707,16 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/vibration/#idl-def-vibratepattern`](https://w3c.github.io/vibration/#idl-def-vibratepattern)
 - Broken external links:
      * [`https://heycam.github.io/webidl/#DOMTimeStamp`](https://heycam.github.io/webidl/#DOMTimeStamp)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://heycam.github.io/webidl/#invoke-a-callback-function`](https://heycam.github.io/webidl/#invoke-a-callback-function)
+     * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
      * [`https://heycam.github.io/webidl/#dfn-create-frozen-array`](https://heycam.github.io/webidl/#dfn-create-frozen-array)
+     * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
+     * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -11906,6 +11906,8 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#media-element`](https://html.spec.whatwg.org/#media-element)
      * [`https://html.spec.whatwg.org/#internal-pause-steps`](https://html.spec.whatwg.org/#internal-pause-steps)
      * [`https://html.spec.whatwg.org/#internal-play-steps`](https://html.spec.whatwg.org/#internal-play-steps)
+- Broken external links:
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12268,6 +12270,7 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
      * [`https://heycam.github.io/webidl/#es-frozen-array`](https://heycam.github.io/webidl/#es-frozen-array)
      * [`https://heycam.github.io/webidl/#dfn-create-frozen-array`](https://heycam.github.io/webidl/#dfn-create-frozen-array)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/workers/`](https://www.w3.org/TR/workers/)
 
@@ -12463,6 +12466,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12541,6 +12545,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#idl-void`](https://heycam.github.io/webidl/#idl-void)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#triggered-by-user-activation`](https://html.spec.whatwg.org/#triggered-by-user-activation)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12561,7 +12566,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Crawled URL: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
-- Crawled version: 19 November 2020
+- Crawled version: 19 April 2021
 - Editor's Draft: [https://wicg.github.io/portals/](https://wicg.github.io/portals/)
 - Shortname: portals
 
@@ -12725,7 +12730,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://privacycg.github.io/private-click-measurement/](https://privacycg.github.io/private-click-measurement/)
 - Crawled URL: [https://privacycg.github.io/private-click-measurement/](https://privacycg.github.io/private-click-measurement/)
-- Crawled version: 18 March 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://privacycg.github.io/private-click-measurement/](https://privacycg.github.io/private-click-measurement/)
 - Shortname: private-click-measurement
 
@@ -13188,6 +13193,7 @@ No informative reference to this spec from other specs.
      * [`https://fetch.spec.whatwg.org/#concept-response-https-state`](https://fetch.spec.whatwg.org/#concept-response-https-state)
      * [`https://fetch.spec.whatwg.org/#wait-for-a-response`](https://fetch.spec.whatwg.org/#wait-for-a-response)
      * [`https://heycam.github.io/webidl/#invoke-a-callback-function`](https://heycam.github.io/webidl/#invoke-a-callback-function)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://w3c.github.io/webdriver/webdriver-spec.html#dfn-extension-commands`](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-extension-commands)
      * [`https://w3c.github.io/webdriver/webdriver-spec.html#dfn-extension-command-prefix`](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-extension-command-prefix)
      * [`https://w3c.github.io/webdriver/webdriver-spec.html#dfn-extension-command-name`](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-extension-command-name)
@@ -13362,6 +13368,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Navigation Timing Level 2](https://www.w3.org/TR/navigation-timing-2/)
 - [Network Error Logging](https://www.w3.org/TR/network-error-logging-1/)
@@ -13604,7 +13611,6 @@ Informative references to this spec from:
 - [CSS Style Attributes](https://www.w3.org/TR/css-style-attr/)
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 - [CSSOM View Module](https://www.w3.org/TR/cssom-view-1/)
-- [File API](https://www.w3.org/TR/FileAPI/)
 - [Geometry Interfaces Module Level 1](https://www.w3.org/TR/geometry-1/)
 - [Graphics Accessibility API Mappings](https://www.w3.org/TR/graphics-aam-1.0/)
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/)
@@ -13843,6 +13849,7 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#notfounderror`](https://heycam.github.io/webidl/#notfounderror)
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
 - Broken external links:
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
@@ -14049,6 +14056,7 @@ No informative reference to this spec from other specs.
      * [`https://fetch.spec.whatwg.org/#potential-navigation-or-subresource-request`](https://fetch.spec.whatwg.org/#potential-navigation-or-subresource-request)
      * [`https://fetch.spec.whatwg.org/#concept-response-https-state`](https://fetch.spec.whatwg.org/#concept-response-https-state)
      * [`https://fetch.spec.whatwg.org/#synchronous-flag`](https://fetch.spec.whatwg.org/#synchronous-flag)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://w3c.github.io/push-api/#h-the-push-event`](https://w3c.github.io/push-api/#h-the-push-event)
      * [`https://w3c.github.io/push-api/#dfn-push`](https://w3c.github.io/push-api/#dfn-push)
      * [`https://w3c.github.io/push-api/#dfn-fire-the-push-event`](https://w3c.github.io/push-api/#dfn-fire-the-push-event)
@@ -14348,14 +14356,14 @@ Informative references to this spec from:
 
 - Initial URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
 - Crawled URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
-- Crawled version: 14 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
 - Shortname: svg-animations
 
 ### Potential issue(s) {.anomalies}
 
 - Spec uses WebIDL but does not reference it normatively
-- Unknown WebIDL names used: `WindowProxy`, `void`
+- Unknown WebIDL names used: `WindowProxy`
 - Missing references for links: 
      * [`https://www.w3.org/TR/2012/WD-css-animations-1-20120403/`](https://www.w3.org/TR/2012/WD-css-animations-1-20120403/)
      * [`https://www.w3.org/TR/2012/WD-css-transitions-1-20120403/`](https://www.w3.org/TR/2012/WD-css-transitions-1-20120403/)
@@ -14467,7 +14475,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 17 April 2021
+- Crawled version: 19 April 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
@@ -14569,7 +14577,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://privacycg.github.io/storage-access/](https://privacycg.github.io/storage-access/)
 - Crawled URL: [https://privacycg.github.io/storage-access/](https://privacycg.github.io/storage-access/)
-- Crawled version: 18 August 2020
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://privacycg.github.io/storage-access/](https://privacycg.github.io/storage-access/)
 - Shortname: storage-access
 
@@ -14804,6 +14812,7 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#refsCSP`](https://html.spec.whatwg.org/#refsCSP)
      * [`https://html.spec.whatwg.org/#module-script-credentials-mode`](https://html.spec.whatwg.org/#module-script-credentials-mode)
 - Broken external links:
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://heycam.github.io/webidl/#interface-mixin`](https://heycam.github.io/webidl/#interface-mixin)
      * [`https://heycam.github.io/webidl/#include`](https://heycam.github.io/webidl/#include)
      * [`https://heycam.github.io/webidl/#AllowShared`](https://heycam.github.io/webidl/#AllowShared)
@@ -15670,6 +15679,7 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#wait-for-all`](https://heycam.github.io/webidl/#wait-for-all)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://w3c.github.io/permissions/#dom-permissionname-bluetooth`](https://w3c.github.io/permissions/#dom-permissionname-bluetooth)
 
 ### Known dependencies on this specification {.dependencies}
@@ -15911,6 +15921,7 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#wait-for-all`](https://heycam.github.io/webidl/#wait-for-all)
      * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
      * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -15925,7 +15936,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Crawled URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
-- Crawled version: 01 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Shortname: serial
 
@@ -16174,7 +16185,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- Crawled version: 12 April 2021
+- Crawled version: 23 April 2021
 - Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Shortname: webcodecs
 
@@ -16323,6 +16334,7 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#radio-button-state-%28type=radio%29`](https://html.spec.whatwg.org/#radio-button-state-%28type=radio%29)
      * [`https://html.spec.whatwg.org/#submit-button-state-%28type=submit%29`](https://html.spec.whatwg.org/#submit-button-state-%28type=submit%29)
      * [`https://html.spec.whatwg.org/#concept-output-mode`](https://html.spec.whatwg.org/#concept-output-mode)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
      * [`https://w3c.github.io/DOM-Parsing/#dom-innerhtml-innerhtml`](https://w3c.github.io/DOM-Parsing/#dom-innerhtml-innerhtml)
      * [`https://w3c.github.io/DOM-Parsing/#dom-element-outerhtml`](https://w3c.github.io/DOM-Parsing/#dom-element-outerhtml)
@@ -16444,7 +16456,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
 - Shortname: ANGLE_instanced_arrays
 
@@ -16478,7 +16490,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
 - Shortname: EXT_blend_minmax
 
@@ -16504,7 +16516,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
 - Shortname: EXT_clip_cull_distance
 
@@ -16539,7 +16551,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
 - Shortname: EXT_color_buffer_float
 
@@ -16563,7 +16575,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
 - Shortname: EXT_color_buffer_half_float
 
@@ -16591,7 +16603,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
 - Shortname: EXT_disjoint_timer_query
 
@@ -16635,7 +16647,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
 - Shortname: EXT_disjoint_timer_query_webgl2
 
@@ -16667,7 +16679,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
 - Shortname: EXT_float_blend
 
@@ -16691,7 +16703,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
 - Shortname: EXT_frag_depth
 
@@ -16715,7 +16727,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
 - Shortname: EXT_shader_texture_lod
 
@@ -16739,7 +16751,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
 - Shortname: EXT_sRGB
 
@@ -16767,7 +16779,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
 - Shortname: EXT_texture_compression_bptc
 
@@ -16795,7 +16807,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
 - Shortname: EXT_texture_compression_rgtc
 
@@ -16823,7 +16835,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
 - Shortname: EXT_texture_filter_anisotropic
 
@@ -16849,7 +16861,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
 - Shortname: EXT_texture_norm16
 
@@ -16881,7 +16893,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
 - Shortname: KHR_parallel_shader_compile
 
@@ -16906,7 +16918,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
 - Shortname: OES_draw_buffers_indexed
 
@@ -16941,7 +16953,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
 - Shortname: OES_element_index_uint
 
@@ -16965,7 +16977,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
 - Shortname: OES_fbo_render_mipmap
 
@@ -16989,7 +17001,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
 - Shortname: OES_standard_derivatives
 
@@ -17014,7 +17026,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
 - Shortname: OES_texture_float
 
@@ -17038,7 +17050,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
 - Shortname: OES_texture_float_linear
 
@@ -17062,7 +17074,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
 - Shortname: OES_texture_half_float
 
@@ -17087,7 +17099,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
 - Shortname: OES_texture_half_float_linear
 
@@ -17111,7 +17123,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
 - Shortname: OES_vertex_array_object
 
@@ -17144,7 +17156,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
 - Shortname: OVR_multiview2
 
@@ -17230,7 +17242,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
 - Shortname: WEBGL_blend_equation_advanced_coherent
 
@@ -17269,7 +17281,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
 - Shortname: WEBGL_color_buffer_float
 
@@ -17296,7 +17308,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
 - Shortname: WEBGL_compressed_texture_astc
 
@@ -17349,7 +17361,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
 - Shortname: WEBGL_compressed_texture_etc
 
@@ -17383,7 +17395,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
 - Shortname: WEBGL_compressed_texture_etc1
 
@@ -17408,7 +17420,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
 - Shortname: WEBGL_compressed_texture_pvrtc
 
@@ -17436,7 +17448,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
 - Shortname: WEBGL_compressed_texture_s3tc
 
@@ -17464,7 +17476,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
 - Shortname: WEBGL_compressed_texture_s3tc_srgb
 
@@ -17492,7 +17504,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
 - Shortname: WEBGL_debug_renderer_info
 
@@ -17518,7 +17530,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
 - Shortname: WEBGL_debug_shaders
 
@@ -17545,7 +17557,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/](https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/](https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/](https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/)
 - Shortname: WEBGL_depth_texture
 
@@ -17570,7 +17582,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
 - Shortname: WEBGL_draw_buffers
 
@@ -17631,7 +17643,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
 - Shortname: WEBGL_draw_instanced_base_vertex_base_instance
 
@@ -17663,7 +17675,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
 - Shortname: WEBGL_lose_context
 
@@ -17689,7 +17701,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - Shortname: WEBGL_multi_draw
 
@@ -17722,7 +17734,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
-- Crawled version: 6 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - Shortname: WEBGL_multi_draw_instanced_base_vertex_base_instance
 
@@ -17753,7 +17765,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 16 April 2021
+- Crawled version: 24 April 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -17773,9 +17785,9 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
      * [`https://heycam.github.io/webidl/#dfn-setlike`](https://heycam.github.io/webidl/#dfn-setlike)
      * [`https://heycam.github.io/webidl/#dfn-set-entries`](https://heycam.github.io/webidl/#dfn-set-entries)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
-     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
@@ -17909,6 +17921,7 @@ Normative references to this spec from:
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api-1/)
+- [Frame Timing](https://wicg.github.io/frame-timing/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://www.w3.org/TR/gamepad/)
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
@@ -18168,7 +18181,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
 - Crawled URL: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
-- Crawled version: 15 April 2021
+- Crawled version: 22 April 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
 - Shortname: webrtc-encoded-transform
 
@@ -18231,7 +18244,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 14 April 2021
+- Crawled version: 20 April 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Shortname: webtransport
 
@@ -18547,6 +18560,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#dfn-frozen-array-type`](https://heycam.github.io/webidl/#dfn-frozen-array-type)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://immersive-web.github.io/webxr-ar-module/#first-person-observer-view`](https://immersive-web.github.io/webxr-ar-module/#first-person-observer-view)
 
 ### Known dependencies on this specification {.dependencies}

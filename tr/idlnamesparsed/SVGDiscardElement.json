@@ -5,7 +5,7 @@
       "title": "SVG Animations",
       "url": "https://svgwg.org/specs/animations/"
     },
-    "fragment": "interface SVGDiscardElement : SVGAnimationElement {\n};"
+    "fragment": "[Exposed=Window]\ninterface SVGDiscardElement : SVGAnimationElement {\n};"
   },
   "extended": [],
   "inheritance": {
@@ -15,7 +15,7 @@
         "title": "SVG Animations",
         "url": "https://svgwg.org/specs/animations/"
       },
-      "fragment": "interface SVGAnimationElement : SVGElement {\n\n  readonly attribute SVGElement? targetElement;\n\n  attribute EventHandler onbegin;\n  attribute EventHandler onend;\n  attribute EventHandler onrepeat;\n\n  float getStartTime();\n  float getCurrentTime();\n  float getSimpleDuration();\n\n  void beginElement();\n  void beginElementAt(float offset);\n  void endElement();\n  void endElementAt(float offset);\n};"
+      "fragment": "[Exposed=Window]\ninterface SVGAnimationElement : SVGElement {\n\n  readonly attribute SVGElement? targetElement;\n\n  attribute EventHandler onbegin;\n  attribute EventHandler onend;\n  attribute EventHandler onrepeat;\n\n  float getStartTime();\n  float getCurrentTime();\n  float getSimpleDuration();\n\n  undefined beginElement();\n  undefined beginElementAt(float offset);\n  undefined endElement();\n  undefined endElementAt(float offset);\n};"
     },
     "extended": [
       {
