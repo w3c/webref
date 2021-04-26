@@ -4460,8 +4460,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/graphics-aria/#graphics-document`](https://w3c.github.io/graphics-aria/#graphics-document)
      * [`https://w3c.github.io/graphics-aria/#graphics-object`](https://w3c.github.io/graphics-aria/#graphics-object)
      * [`https://w3c.github.io/graphics-aria/#graphics-symbol`](https://w3c.github.io/graphics-aria/#graphics-symbol)
-- [High Resolution Time](https://w3c.github.io/hr-time/):
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [HTML Accessibility API Mappings 1.0](https://w3c.github.io/html-aam/):
      * [`https://w3c.github.io/core-aam/#ariaRoleDescription`](https://w3c.github.io/core-aam/#ariaRoleDescription)
      * [`https://w3c.github.io/core-aam/#role-map-link`](https://w3c.github.io/core-aam/#role-map-link)
@@ -4606,8 +4604,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webrtc/#dom-rtcconfiguration-peeridentity`](https://www.w3.org/TR/webrtc/#dom-rtcconfiguration-peeridentity)
      * [`https://w3c.github.io/webrtc-pc/#dfn-create-an-offer`](https://w3c.github.io/webrtc-pc/#dfn-create-an-offer)
      * [`https://w3c.github.io/webrtc-pc/#dfn-create-an-answer`](https://w3c.github.io/webrtc-pc/#dfn-create-an-answer)
-- [Image Resource](https://w3c.github.io/image-resource/):
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/):
      * [`https://drafts.csswg.org/css-box/#containing-block`](https://drafts.csswg.org/css-box/#containing-block)
      * [`https://www.w3.org/TR/hr-time/#domhighrestimestamp`](https://www.w3.org/TR/hr-time/#domhighrestimestamp)
@@ -4717,7 +4713,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#context-object`](https://html.spec.whatwg.org/#context-object)
      * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes)
      * [`https://www.w3.org/TR/appmanifest/#fetching-image-resources`](https://www.w3.org/TR/appmanifest/#fetching-image-resources)
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/):
      * [`https://w3c.github.io/payment-request/#dfn-payment-apps`](https://w3c.github.io/payment-request/#dfn-payment-apps)
      * [`https://w3c.github.io/payment-method-id/#dfn-payment-method-identifiers`](https://w3c.github.io/payment-method-id/#dfn-payment-method-identifiers)
@@ -4728,8 +4723,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://infra.spec.whatwg.org/#parse-json-into-infra-values`](https://infra.spec.whatwg.org/#parse-json-into-infra-values)
      * [`https://fetch.spec.whatwg.org/#concept-get-reader`](https://fetch.spec.whatwg.org/#concept-get-reader)
      * [`https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream`](https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/):
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [Permissions](https://w3c.github.io/permissions/):
      * [`https://w3c.github.io/manifest/#dfn-install`](https://w3c.github.io/manifest/#dfn-install)
      * [`https://w3c.github.io/mediacapture-main/#deviceid`](https://w3c.github.io/mediacapture-main/#deviceid)
@@ -4745,8 +4738,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/pointerlock/#widl-MouseEvent-movementX`](https://www.w3.org/TR/pointerlock/#widl-MouseEvent-movementX)
      * [`https://www.w3.org/TR/pointerlock/#widl-MouseEvent-movementY`](https://www.w3.org/TR/pointerlock/#widl-MouseEvent-movementY)
      * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
-- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/):
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [Preload](https://w3c.github.io/preload/):
      * [`https://mimesniff.spec.whatwg.org/#parsable-mime-type`](https://mimesniff.spec.whatwg.org/#parsable-mime-type)
 - [Proximity Sensor](https://w3c.github.io/proximity/):
@@ -4800,8 +4791,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/web-animations/#target-effect-end`](https://w3c.github.io/web-animations/#target-effect-end)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/):
      * [`https://www.w3.org/TR/geolocation-API/#watch-position`](https://www.w3.org/TR/geolocation-API/#watch-position)
-- [Selection API](https://w3c.github.io/selection-api/):
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/):
      * [`https://html.spec.whatwg.org/#a-form-control%E2%80%99s-value`](https://html.spec.whatwg.org/#a-form-control%E2%80%99s-value)
      * [`https://www.w3.org/TR/css-scoping-1/#selectordef-shadow`](https://www.w3.org/TR/css-scoping-1/#selectordef-shadow)
@@ -4815,11 +4804,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/push-api/#dfn-push`](https://w3c.github.io/push-api/#dfn-push)
      * [`https://w3c.github.io/push-api/#dfn-fire-the-push-event`](https://w3c.github.io/push-api/#dfn-fire-the-push-event)
      * [`https://www.w3.org/TR/page-visibility/#VisibilityState`](https://www.w3.org/TR/page-visibility/#VisibilityState)
-     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-pullalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-pullalgorithm)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-highwatermark`](https://streams.spec.whatwg.org/#readablestream-create-highwatermark)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm`](https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm)
      * [`https://wicg.github.io/BackgroundSync/spec/#sync`](https://wicg.github.io/BackgroundSync/spec/#sync)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/):
      * [`https://w3c.github.io/core-aam/#keyboard-focus`](https://w3c.github.io/core-aam/#keyboard-focus)
@@ -4939,7 +4923,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 561 problematic external links found in 151 specifications
+=> 550 problematic external links found in 146 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

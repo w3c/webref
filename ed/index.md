@@ -6626,7 +6626,6 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
-- [Image Resource](https://w3c.github.io/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
@@ -6652,7 +6651,6 @@ Normative references to this spec from:
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
-- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
@@ -7883,8 +7881,6 @@ Informative references to this spec from:
 - External links to private terms:
      * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
      * [`https://html.spec.whatwg.org/#prompt-to-unload-a-document`](https://html.spec.whatwg.org/#prompt-to-unload-a-document)
-- Broken external links:
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9130,7 +9126,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webrtc-identity/](https://www.w3.org/TR/webrtc-identity/)
 - Crawled URL: [https://w3c.github.io/webrtc-identity/identity.html](https://w3c.github.io/webrtc-identity/identity.html)
-- Crawled version: 15 February 2021
+- Crawled version: 26 April 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-identity/identity.html](https://w3c.github.io/webrtc-identity/identity.html)
 - Latest published version: [https://www.w3.org/TR/webrtc-identity/](https://www.w3.org/TR/webrtc-identity/)
 - Shortname: webrtc-identity
@@ -9197,7 +9193,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Image Resource {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+## Image Resource {data-spec=true data-missingDfns=true data-ok=true}
 
 ### Spec info {.info}
 
@@ -9210,8 +9206,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Broken external links:
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
+This specification looks good!
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -11148,7 +11143,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#context-object`](https://html.spec.whatwg.org/#context-object)
      * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes)
      * [`https://www.w3.org/TR/appmanifest/#fetching-image-resources`](https://www.w3.org/TR/appmanifest/#fetching-image-resources)
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -11305,8 +11299,6 @@ Informative references to this spec from:
      * [`https://w3c.github.io/timing-entrytypes-registry/`](https://w3c.github.io/timing-entrytypes-registry/)
 - External links to private terms:
      * [`https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry`](https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry)
-- Broken external links:
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/workers/`](https://www.w3.org/TR/workers/)
 
@@ -11540,7 +11532,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true}
 
 ### Spec info {.info}
 
@@ -11555,8 +11547,6 @@ No informative reference to this spec from other specs.
 
 - Inconsistent references for links: 
      * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "ui-events" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
-- Broken external links:
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12773,8 +12763,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
-- Broken external links:
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - External links that use a dated URL:
@@ -12913,7 +12901,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Crawled URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
-- Crawled version: 24 March 2021
+- Crawled version: 26 April 2021
 - Editor's Draft: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
 - Latest published version: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Shortname: service-workers-1
@@ -12945,11 +12933,6 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/push-api/#dfn-push`](https://w3c.github.io/push-api/#dfn-push)
      * [`https://w3c.github.io/push-api/#dfn-fire-the-push-event`](https://w3c.github.io/push-api/#dfn-fire-the-push-event)
      * [`https://www.w3.org/TR/page-visibility/#VisibilityState`](https://www.w3.org/TR/page-visibility/#VisibilityState)
-     * [`https://streams.spec.whatwg.org/#readablestream-create`](https://streams.spec.whatwg.org/#readablestream-create)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-pullalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-pullalgorithm)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm`](https://streams.spec.whatwg.org/#readablestream-create-cancelalgorithm)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-highwatermark`](https://streams.spec.whatwg.org/#readablestream-create-highwatermark)
-     * [`https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm`](https://streams.spec.whatwg.org/#readablestream-create-sizealgorithm)
      * [`https://wicg.github.io/BackgroundSync/spec/#sync`](https://wicg.github.io/BackgroundSync/spec/#sync)
 
 ### Known dependencies on this specification {.dependencies}
@@ -13467,7 +13450,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://privacycg.github.io/storage-access/](https://privacycg.github.io/storage-access/)
 - Crawled URL: [https://privacycg.github.io/storage-access/](https://privacycg.github.io/storage-access/)
-- Crawled version: 22 April 2021
+- Crawled version: 26 April 2021
 - Editor's Draft: [https://privacycg.github.io/storage-access/](https://privacycg.github.io/storage-access/)
 - Shortname: storage-access
 
