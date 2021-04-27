@@ -2586,7 +2586,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 20 April 2021
+- Crawled version: 27 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Latest published version: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Shortname: css-color-5
@@ -7303,7 +7303,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
 - Crawled URL: [https://w3c.github.io/FileAPI/](https://w3c.github.io/FileAPI/)
-- Crawled version: 22 April 2021
+- Crawled version: 27 April 2021
 - Editor's Draft: [https://w3c.github.io/FileAPI/](https://w3c.github.io/FileAPI/)
 - Latest published version: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
 - Shortname: FileAPI
@@ -7935,6 +7935,7 @@ Normative references to this spec from:
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Server Timing](https://w3c.github.io/server-timing/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
@@ -10760,6 +10761,7 @@ Normative references to this spec from:
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Server Timing](https://w3c.github.io/server-timing/)
+- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
@@ -12312,7 +12314,7 @@ No informative reference to this spec from other specs.
 - Broken external links:
      * [`https://html.spec.whatwg.org/#relevant-application-cache`](https://html.spec.whatwg.org/#relevant-application-cache)
      * [`https://heycam.github.io/webidl/#default-tojson-operation`](https://heycam.github.io/webidl/#default-tojson-operation)
-     * [`https://www.w3.org/TR/hr-time-2/#relative-high-resolution-coarse-time`](https://www.w3.org/TR/hr-time-2/#relative-high-resolution-coarse-time)
+     * [`https://www.w3.org/TR/hr-time-3/#relative-high-resolution-coarse-time`](https://www.w3.org/TR/hr-time-3/#relative-high-resolution-coarse-time)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -13522,7 +13524,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Crawled URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
-- Crawled version: 26 April 2021
+- Crawled version: 27 April 2021
 - Editor's Draft: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
 - Latest published version: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Shortname: service-workers-1
@@ -14802,8 +14804,8 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `CSSOMString`
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
-     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/)
+     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/)
 - External links to private terms:
      * [`https://html.spec.whatwg.org/#media-element`](https://html.spec.whatwg.org/#media-element)
      * [`https://html.spec.whatwg.org/#being-rendered`](https://html.spec.whatwg.org/#being-rendered)
@@ -15654,7 +15656,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- Crawled version: 23 April 2021
+- Crawled version: 27 April 2021
 - Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Latest published version: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Shortname: webcodecs

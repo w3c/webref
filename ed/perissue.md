@@ -2244,8 +2244,8 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIX" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/) links to [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY-2" uses URL [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/) links to:
-    * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
-    * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
+    * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/)
+    * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/) links to [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/) links to:
     * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/) but related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
@@ -5273,7 +5273,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/):
      * [`https://html.spec.whatwg.org/#relevant-application-cache`](https://html.spec.whatwg.org/#relevant-application-cache)
      * [`https://heycam.github.io/webidl/#default-tojson-operation`](https://heycam.github.io/webidl/#default-tojson-operation)
-     * [`https://www.w3.org/TR/hr-time-2/#relative-high-resolution-coarse-time`](https://www.w3.org/TR/hr-time-2/#relative-high-resolution-coarse-time)
+     * [`https://www.w3.org/TR/hr-time-3/#relative-high-resolution-coarse-time`](https://www.w3.org/TR/hr-time-3/#relative-high-resolution-coarse-time)
 - [Save Data API](https://wicg.github.io/savedata/):
      * [`https://wicg.github.io/netinfo/#network-information`](https://wicg.github.io/netinfo/#network-information)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
