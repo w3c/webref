@@ -2,7 +2,7 @@
 % Reffy
 % April 27, 2021
 
-387 specifications were crawled in this report.
+390 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
@@ -139,7 +139,7 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## List of [Exposed] names not defined in the specifications crawled
 
-- `RTCIdentityProviderGlobalScope` used in [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html)
+- `RTCIdentityProviderGlobalScope` used in [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/)
 - `SecureContext` used in [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 
 => 2 [Exposed] names found
@@ -180,6 +180,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [HTML Standard](https://html.spec.whatwg.org/multipage/) uses `WebGL2RenderingContext` but does not reference [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/) uses `DOMHighResTimeStamp` but does not reference [High Resolution Time](https://w3c.github.io/hr-time/)
 - [Private Network Access](https://wicg.github.io/private-network-access/) uses `Document` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) uses `CSSPseudoElement` but does not reference [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) uses `CSSPseudoElement` but does not reference [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/) uses:
     * `GLenum` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -237,7 +238,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `XRWebGLBinding` but does not reference [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
     * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 50 missing references for IDL definitions found in 23 specifications
+=> 51 missing references for IDL definitions found in 24 specifications
 
 
 ## No definition for CSS properties
@@ -396,6 +397,373 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `queryCommandState(commandId)` with type `method`, but found [`queryCommandState()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandstate) with type `dfn`
     * `queryCommandSupported(commandId)` with type `method`, but found [`queryCommandSupported()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandsupported) with type `dfn`
     * `queryCommandValue(commandId)` with type `method`, but found [`queryCommandValue()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandvalue) with type `dfn`
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
+    * `SVGElement` with type `interface`
+    * `className` with type `attribute`
+    * `ownerSVGElement` with type `attribute`
+    * `viewportElement` with type `attribute`
+    * `SVGBoundingBoxOptions` with type `dictionary`
+    * `fill` with type `dict-member`, but found [`fill`](https://svgwg.org/svg2-draft/painting.html#TermFill) with type `dfn`
+    * `stroke` with type `dict-member`, but found [`stroke`](https://svgwg.org/svg2-draft/painting.html#TermStroke) with type `dfn`
+    * `markers` with type `dict-member`
+    * `clipped` with type `dict-member`
+    * `SVGGraphicsElement` with type `interface`
+    * `transform` with type `attribute`
+    * `getBBox(options)` with type `method`
+    * `getCTM()` with type `method`
+    * `getScreenCTM()` with type `method`
+    * `SVGGeometryElement` with type `interface`
+    * `pathLength` with type `attribute`
+    * `isPointInFill(point)` with type `method`
+    * `isPointInStroke(point)` with type `method`
+    * `getTotalLength()` with type `method`
+    * `getPointAtLength(distance)` with type `method`
+    * `SVGNumber` with type `interface`
+    * `value` with type `attribute`, but found [`value`](https://svgwg.org/svg2-draft/types.html#NumberValue) with type `dfn`
+    * `SVGLength` with type `interface`
+    * `SVG_LENGTHTYPE_UNKNOWN` with type `const`
+    * `SVG_LENGTHTYPE_NUMBER` with type `const`
+    * `SVG_LENGTHTYPE_PERCENTAGE` with type `const`
+    * `SVG_LENGTHTYPE_EMS` with type `const`
+    * `SVG_LENGTHTYPE_EXS` with type `const`
+    * `SVG_LENGTHTYPE_PX` with type `const`
+    * `SVG_LENGTHTYPE_CM` with type `const`
+    * `SVG_LENGTHTYPE_MM` with type `const`
+    * `SVG_LENGTHTYPE_IN` with type `const`
+    * `SVG_LENGTHTYPE_PT` with type `const`
+    * `SVG_LENGTHTYPE_PC` with type `const`
+    * `unitType` with type `attribute`
+    * `value` with type `attribute`, but found [`value`](https://svgwg.org/svg2-draft/types.html#NumberValue) with type `dfn`
+    * `valueInSpecifiedUnits` with type `attribute`
+    * `valueAsString` with type `attribute`
+    * `newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)` with type `method`
+    * `convertToSpecifiedUnits(unitType)` with type `method`
+    * `SVGAngle` with type `interface`
+    * `SVG_ANGLETYPE_UNKNOWN` with type `const`
+    * `SVG_ANGLETYPE_UNSPECIFIED` with type `const`
+    * `SVG_ANGLETYPE_DEG` with type `const`
+    * `SVG_ANGLETYPE_RAD` with type `const`
+    * `SVG_ANGLETYPE_GRAD` with type `const`
+    * `unitType` with type `attribute`
+    * `value` with type `attribute`, but found [`value`](https://svgwg.org/svg2-draft/types.html#NumberValue) with type `dfn`
+    * `valueInSpecifiedUnits` with type `attribute`
+    * `valueAsString` with type `attribute`
+    * `newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)` with type `method`
+    * `convertToSpecifiedUnits(unitType)` with type `method`
+    * `SVGNumberList` with type `interface`
+    * `length` with type `attribute`
+    * `numberOfItems` with type `attribute`
+    * `clear()` with type `method`
+    * `initialize(newItem)` with type `method`
+    * `getItem(index)` with type `method`
+    * `insertItemBefore(newItem, index)` with type `method`
+    * `replaceItem(newItem, index)` with type `method`
+    * `removeItem(index)` with type `method`
+    * `appendItem(newItem)` with type `method`
+    * `SVGLengthList` with type `interface`
+    * `length` with type `attribute`
+    * `numberOfItems` with type `attribute`
+    * `clear()` with type `method`
+    * `initialize(newItem)` with type `method`
+    * `getItem(index)` with type `method`
+    * `insertItemBefore(newItem, index)` with type `method`
+    * `replaceItem(newItem, index)` with type `method`
+    * `removeItem(index)` with type `method`
+    * `appendItem(newItem)` with type `method`
+    * `SVGStringList` with type `interface`
+    * `length` with type `attribute`
+    * `numberOfItems` with type `attribute`
+    * `clear()` with type `method`
+    * `initialize(newItem)` with type `method`
+    * `getItem(index)` with type `method`
+    * `insertItemBefore(newItem, index)` with type `method`
+    * `replaceItem(newItem, index)` with type `method`
+    * `removeItem(index)` with type `method`
+    * `appendItem(newItem)` with type `method`
+    * `SVGAnimatedBoolean` with type `interface`
+    * `baseVal` with type `attribute`
+    * `animVal` with type `attribute`
+    * `SVGAnimatedEnumeration` with type `interface`
+    * `baseVal` with type `attribute`
+    * `animVal` with type `attribute`
+    * `SVGAnimatedInteger` with type `interface`
+    * `baseVal` with type `attribute`
+    * `animVal` with type `attribute`
+    * `SVGAnimatedNumber` with type `interface`
+    * `baseVal` with type `attribute`
+    * `animVal` with type `attribute`
+    * `SVGAnimatedLength` with type `interface`
+    * `baseVal` with type `attribute`
+    * `animVal` with type `attribute`
+    * `SVGAnimatedAngle` with type `interface`
+    * `baseVal` with type `attribute`
+    * `animVal` with type `attribute`
+    * `SVGAnimatedString` with type `interface`
+    * `baseVal` with type `attribute`
+    * `animVal` with type `attribute`
+    * `SVGAnimatedRect` with type `interface`
+    * `baseVal` with type `attribute`
+    * `animVal` with type `attribute`
+    * `SVGAnimatedNumberList` with type `interface`
+    * `baseVal` with type `attribute`
+    * `animVal` with type `attribute`
+    * `SVGAnimatedLengthList` with type `interface`
+    * `baseVal` with type `attribute`
+    * `animVal` with type `attribute`
+    * `SVGUnitTypes` with type `interface`
+    * `SVG_UNIT_TYPE_UNKNOWN` with type `const`
+    * `SVG_UNIT_TYPE_USERSPACEONUSE` with type `const`
+    * `SVG_UNIT_TYPE_OBJECTBOUNDINGBOX` with type `const`
+    * `requiredExtensions` with type `attribute` for [`SVGTests`](https://svgwg.org/svg2-draft/types.html#InterfaceSVGTests), but found [`requiredExtensions`](https://svgwg.org/svg2-draft/struct.html#RequiredExtensionsAttribute) with type `dfn`
+    * `systemLanguage` with type `attribute` for [`SVGTests`](https://svgwg.org/svg2-draft/types.html#InterfaceSVGTests), but found [`systemLanguage`](https://svgwg.org/svg2-draft/struct.html#SystemLanguageAttribute) with type `dfn`
+    * `viewBox` with type `attribute` for [`SVGFitToViewBox`](https://svgwg.org/svg2-draft/types.html#InterfaceSVGFitToViewBox), but found [`viewBox`](https://svgwg.org/svg2-draft/coords.html#TermViewBox) with type `element-attr` for `svg`
+    * `preserveAspectRatio` with type `attribute` for [`SVGFitToViewBox`](https://svgwg.org/svg2-draft/types.html#InterfaceSVGFitToViewBox), but found [`preserveAspectRatio`](https://svgwg.org/svg2-draft/coords.html#TermPreserveAspectRatio) with type `element-attr` for `svg`
+    * `href` with type `attribute` for [`SVGURIReference`](https://svgwg.org/svg2-draft/types.html#InterfaceSVGURIReference), but found [`href`](https://svgwg.org/svg2-draft/struct.html#UseElementHrefAttribute) with type `dfn`
+    * `SVGSVGElement` with type `interface`
+    * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
+    * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
+    * `width` with type `attribute`
+    * `height` with type `attribute`
+    * `currentScale` with type `attribute`
+    * `currentTranslate` with type `attribute`
+    * `getIntersectionList(rect, referenceElement)` with type `method`
+    * `getEnclosureList(rect, referenceElement)` with type `method`
+    * `checkIntersection(element, rect)` with type `method`
+    * `checkEnclosure(element, rect)` with type `method`
+    * `deselectAll()` with type `method`
+    * `createSVGNumber()` with type `method`
+    * `createSVGLength()` with type `method`
+    * `createSVGAngle()` with type `method`
+    * `createSVGPoint()` with type `method`
+    * `createSVGMatrix()` with type `method`
+    * `createSVGRect()` with type `method`
+    * `createSVGTransform()` with type `method`
+    * `createSVGTransformFromMatrix(matrix)` with type `method`
+    * `getElementById(elementId)` with type `method`
+    * `suspendRedraw(maxWaitMilliseconds)` with type `method`
+    * `unsuspendRedraw(suspendHandleID)` with type `method`
+    * `unsuspendRedrawAll()` with type `method`
+    * `forceRedraw()` with type `method`
+    * `SVGGElement` with type `interface`
+    * `SVGDefsElement` with type `interface`
+    * `SVGDescElement` with type `interface`
+    * `SVGMetadataElement` with type `interface`
+    * `SVGTitleElement` with type `interface`
+    * `SVGSymbolElement` with type `interface`
+    * `SVGUseElement` with type `interface`
+    * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
+    * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
+    * `width` with type `attribute`
+    * `height` with type `attribute`
+    * `instanceRoot` with type `attribute`
+    * `animatedInstanceRoot` with type `attribute`
+    * `SVGUseElementShadowRoot` with type `interface`
+    * `correspondingElement` with type `attribute` for [`SVGElementInstance`](https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance)
+    * `correspondingUseElement` with type `attribute` for [`SVGElementInstance`](https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance)
+    * `ShadowAnimation` with type `interface`
+    * `constructor(source, newTarget)` with type `constructor`
+    * `sourceAnimation` with type `attribute`
+    * `SVGSwitchElement` with type `interface`
+    * `getSVGDocument()` with type `method` for [`GetSVGDocument`](https://svgwg.org/svg2-draft/struct.html#InterfaceGetSVGDocument)
+    * `SVGStyleElement` with type `interface`
+    * `type` with type `attribute`, but found [`type`](https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute) with type `element-attr` for `style`
+    * `media` with type `attribute`, but found [`media`](https://svgwg.org/svg2-draft/styling.html#StyleElementMediaAttribute) with type `element-attr` for `style`
+    * `title` with type `attribute`, but found [`title`](https://svgwg.org/svg2-draft/struct.html#elementdef-title) with type `element`
+    * `SVGTransform` with type `interface`
+    * `SVG_TRANSFORM_UNKNOWN` with type `const`
+    * `SVG_TRANSFORM_MATRIX` with type `const`
+    * `SVG_TRANSFORM_TRANSLATE` with type `const`
+    * `SVG_TRANSFORM_SCALE` with type `const`
+    * `SVG_TRANSFORM_ROTATE` with type `const`
+    * `SVG_TRANSFORM_SKEWX` with type `const`
+    * `SVG_TRANSFORM_SKEWY` with type `const`
+    * `type` with type `attribute`, but found [`type`](https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute) with type `element-attr` for `style`
+    * `matrix` with type `attribute`
+    * `angle` with type `attribute`
+    * `setMatrix(matrix)` with type `method`
+    * `setTranslate(tx, ty)` with type `method`
+    * `setScale(sx, sy)` with type `method`
+    * `setRotate(angle, cx, cy)` with type `method`
+    * `setSkewX(angle)` with type `method`
+    * `setSkewY(angle)` with type `method`
+    * `SVGTransformList` with type `interface`
+    * `length` with type `attribute`
+    * `numberOfItems` with type `attribute`
+    * `clear()` with type `method`
+    * `initialize(newItem)` with type `method`
+    * `getItem(index)` with type `method`
+    * `insertItemBefore(newItem, index)` with type `method`
+    * `replaceItem(newItem, index)` with type `method`
+    * `removeItem(index)` with type `method`
+    * `appendItem(newItem)` with type `method`
+    * `createSVGTransformFromMatrix(matrix)` with type `method`
+    * `consolidate()` with type `method`
+    * `SVGAnimatedTransformList` with type `interface`
+    * `baseVal` with type `attribute`
+    * `animVal` with type `attribute`
+    * `SVGPreserveAspectRatio` with type `interface`
+    * `SVG_PRESERVEASPECTRATIO_UNKNOWN` with type `const`
+    * `SVG_PRESERVEASPECTRATIO_NONE` with type `const`
+    * `SVG_PRESERVEASPECTRATIO_XMINYMIN` with type `const`
+    * `SVG_PRESERVEASPECTRATIO_XMIDYMIN` with type `const`
+    * `SVG_PRESERVEASPECTRATIO_XMAXYMIN` with type `const`
+    * `SVG_PRESERVEASPECTRATIO_XMINYMID` with type `const`
+    * `SVG_PRESERVEASPECTRATIO_XMIDYMID` with type `const`
+    * `SVG_PRESERVEASPECTRATIO_XMAXYMID` with type `const`
+    * `SVG_PRESERVEASPECTRATIO_XMINYMAX` with type `const`
+    * `SVG_PRESERVEASPECTRATIO_XMIDYMAX` with type `const`
+    * `SVG_PRESERVEASPECTRATIO_XMAXYMAX` with type `const`
+    * `SVG_MEETORSLICE_UNKNOWN` with type `const`
+    * `SVG_MEETORSLICE_MEET` with type `const`
+    * `SVG_MEETORSLICE_SLICE` with type `const`
+    * `align` with type `attribute`
+    * `meetOrSlice` with type `attribute`
+    * `SVGAnimatedPreserveAspectRatio` with type `interface`
+    * `baseVal` with type `attribute`
+    * `animVal` with type `attribute`
+    * `SVGPathElement` with type `interface`
+    * `SVGRectElement` with type `interface`
+    * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
+    * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
+    * `width` with type `attribute`
+    * `height` with type `attribute`
+    * `rx` with type `attribute`, but found [`rx`](https://svgwg.org/svg2-draft/geometry.html#RxProperty) with type `property`
+    * `ry` with type `attribute`, but found [`ry`](https://svgwg.org/svg2-draft/geometry.html#RyProperty) with type `property`
+    * `SVGCircleElement` with type `interface`
+    * `cx` with type `attribute`, but found [`cx`](https://svgwg.org/svg2-draft/geometry.html#CxProperty) with type `property`
+    * `cy` with type `attribute`, but found [`cy`](https://svgwg.org/svg2-draft/geometry.html#CyProperty) with type `property`
+    * `r` with type `attribute`, but found [`r`](https://svgwg.org/svg2-draft/geometry.html#RProperty) with type `property`
+    * `SVGEllipseElement` with type `interface`
+    * `cx` with type `attribute`, but found [`cx`](https://svgwg.org/svg2-draft/geometry.html#CxProperty) with type `property`
+    * `cy` with type `attribute`, but found [`cy`](https://svgwg.org/svg2-draft/geometry.html#CyProperty) with type `property`
+    * `rx` with type `attribute`, but found [`rx`](https://svgwg.org/svg2-draft/geometry.html#RxProperty) with type `property`
+    * `ry` with type `attribute`, but found [`ry`](https://svgwg.org/svg2-draft/geometry.html#RyProperty) with type `property`
+    * `SVGLineElement` with type `interface`
+    * `x1` with type `attribute`, but found [`x1`](https://svgwg.org/svg2-draft/shapes.html#LineElementX1Attribute) with type `element-attr` for `line`
+    * `y1` with type `attribute`, but found [`y1`](https://svgwg.org/svg2-draft/shapes.html#LineElementY1Attribute) with type `element-attr` for `line`
+    * `x2` with type `attribute`, but found [`x2`](https://svgwg.org/svg2-draft/shapes.html#LineElementX2Attribute) with type `element-attr` for `line`
+    * `y2` with type `attribute`, but found [`y2`](https://svgwg.org/svg2-draft/shapes.html#LineElementY2Attribute) with type `element-attr` for `line`
+    * `points` with type `attribute` for [`SVGAnimatedPoints`](https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGAnimatedPoints), but found [`points`](https://svgwg.org/svg2-draft/shapes.html#PolylineElementPointsAttribute) with type `element-attr` for `polyline`
+    * `animatedPoints` with type `attribute` for [`SVGAnimatedPoints`](https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGAnimatedPoints)
+    * `SVGPointList` with type `interface`
+    * `length` with type `attribute`
+    * `numberOfItems` with type `attribute`
+    * `clear()` with type `method`
+    * `initialize(newItem)` with type `method`
+    * `getItem(index)` with type `method`
+    * `insertItemBefore(newItem, index)` with type `method`
+    * `replaceItem(newItem, index)` with type `method`
+    * `removeItem(index)` with type `method`
+    * `appendItem(newItem)` with type `method`
+    * `SVGPolylineElement` with type `interface`
+    * `SVGPolygonElement` with type `interface`
+    * `SVGTextContentElement` with type `interface`
+    * `LENGTHADJUST_UNKNOWN` with type `const`
+    * `LENGTHADJUST_SPACING` with type `const`
+    * `LENGTHADJUST_SPACINGANDGLYPHS` with type `const`
+    * `textLength` with type `attribute`, but found [`textLength`](https://svgwg.org/svg2-draft/text.html#TextElementTextLengthAttribute) with type `element-attr` for `text`
+    * `lengthAdjust` with type `attribute`, but found [`lengthAdjust`](https://svgwg.org/svg2-draft/text.html#TextElementLengthAdjustAttribute) with type `element-attr` for `text`
+    * `getNumberOfChars()` with type `method`
+    * `getComputedTextLength()` with type `method`
+    * `getSubStringLength(charnum, nchars)` with type `method`
+    * `getStartPositionOfChar(charnum)` with type `method`
+    * `getEndPositionOfChar(charnum)` with type `method`
+    * `getExtentOfChar(charnum)` with type `method`
+    * `getRotationOfChar(charnum)` with type `method`
+    * `getCharNumAtPosition(point)` with type `method`
+    * `selectSubString(charnum, nchars)` with type `method`
+    * `SVGTextPositioningElement` with type `interface`
+    * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
+    * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
+    * `dx` with type `attribute`, but found [`dx`](https://svgwg.org/svg2-draft/text.html#TextElementDXAttribute) with type `element-attr` for `text`
+    * `dy` with type `attribute`, but found [`dy`](https://svgwg.org/svg2-draft/text.html#TextElementDYAttribute) with type `element-attr` for `text`
+    * `rotate` with type `attribute`, but found [`rotate`](https://svgwg.org/svg2-draft/text.html#TextElementRotateAttribute) with type `element-attr` for `text`
+    * `SVGTextElement` with type `interface`
+    * `SVGTSpanElement` with type `interface`
+    * `SVGTextPathElement` with type `interface`
+    * `TEXTPATH_METHODTYPE_UNKNOWN` with type `const`
+    * `TEXTPATH_METHODTYPE_ALIGN` with type `const`
+    * `TEXTPATH_METHODTYPE_STRETCH` with type `const`
+    * `TEXTPATH_SPACINGTYPE_UNKNOWN` with type `const`
+    * `TEXTPATH_SPACINGTYPE_AUTO` with type `const`
+    * `TEXTPATH_SPACINGTYPE_EXACT` with type `const`
+    * `startOffset` with type `attribute`
+    * `method` with type `attribute`
+    * `spacing` with type `attribute`
+    * `SVGImageElement` with type `interface`
+    * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
+    * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
+    * `width` with type `attribute`
+    * `height` with type `attribute`
+    * `preserveAspectRatio` with type `attribute`, but found [`preserveAspectRatio`](https://svgwg.org/svg2-draft/coords.html#TermPreserveAspectRatio) with type `element-attr` for `svg`
+    * `crossOrigin` with type `attribute`
+    * `SVGForeignObjectElement` with type `interface`
+    * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
+    * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
+    * `width` with type `attribute`
+    * `height` with type `attribute`
+    * `SVGMarkerElement` with type `interface`
+    * `SVG_MARKERUNITS_UNKNOWN` with type `const`
+    * `SVG_MARKERUNITS_USERSPACEONUSE` with type `const`
+    * `SVG_MARKERUNITS_STROKEWIDTH` with type `const`
+    * `SVG_MARKER_ORIENT_UNKNOWN` with type `const`
+    * `SVG_MARKER_ORIENT_AUTO` with type `const`
+    * `SVG_MARKER_ORIENT_ANGLE` with type `const`
+    * `refX` with type `attribute`, but found [`refX`](https://svgwg.org/svg2-draft/struct.html#SymbolElementRefXAttribute) with type `element-attr` for `symbol`
+    * `refY` with type `attribute`, but found [`refY`](https://svgwg.org/svg2-draft/struct.html#SymbolElementRefYAttribute) with type `element-attr` for `symbol`
+    * `markerUnits` with type `attribute`, but found [`markerUnits`](https://svgwg.org/svg2-draft/painting.html#MarkerUnitsAttribute) with type `element-attr` for `marker`
+    * `markerWidth` with type `attribute`, but found [`markerWidth`](https://svgwg.org/svg2-draft/painting.html#MarkerWidthAttribute) with type `element-attr` for `marker`
+    * `markerHeight` with type `attribute`, but found [`markerHeight`](https://svgwg.org/svg2-draft/painting.html#MarkerHeightAttribute) with type `element-attr` for `marker`
+    * `orientType` with type `attribute`
+    * `orientAngle` with type `attribute`
+    * `orient` with type `attribute`, but found [`orient`](https://svgwg.org/svg2-draft/painting.html#OrientAttribute) with type `element-attr` for `marker`
+    * `setOrientToAuto()` with type `method`
+    * `setOrientToAngle(angle)` with type `method`
+    * `SVGGradientElement` with type `interface`
+    * `SVG_SPREADMETHOD_UNKNOWN` with type `const`
+    * `SVG_SPREADMETHOD_PAD` with type `const`
+    * `SVG_SPREADMETHOD_REFLECT` with type `const`
+    * `SVG_SPREADMETHOD_REPEAT` with type `const`
+    * `gradientUnits` with type `attribute`
+    * `gradientTransform` with type `attribute`
+    * `spreadMethod` with type `attribute`
+    * `SVGLinearGradientElement` with type `interface`
+    * `x1` with type `attribute`, but found [`x1`](https://svgwg.org/svg2-draft/shapes.html#LineElementX1Attribute) with type `element-attr` for `line`
+    * `y1` with type `attribute`, but found [`y1`](https://svgwg.org/svg2-draft/shapes.html#LineElementY1Attribute) with type `element-attr` for `line`
+    * `x2` with type `attribute`, but found [`x2`](https://svgwg.org/svg2-draft/shapes.html#LineElementX2Attribute) with type `element-attr` for `line`
+    * `y2` with type `attribute`, but found [`y2`](https://svgwg.org/svg2-draft/shapes.html#LineElementY2Attribute) with type `element-attr` for `line`
+    * `SVGRadialGradientElement` with type `interface`
+    * `cx` with type `attribute`, but found [`cx`](https://svgwg.org/svg2-draft/geometry.html#CxProperty) with type `property`
+    * `cy` with type `attribute`, but found [`cy`](https://svgwg.org/svg2-draft/geometry.html#CyProperty) with type `property`
+    * `r` with type `attribute`, but found [`r`](https://svgwg.org/svg2-draft/geometry.html#RProperty) with type `property`
+    * `fx` with type `attribute`
+    * `fy` with type `attribute`
+    * `fr` with type `attribute`
+    * `SVGStopElement` with type `interface`
+    * `offset` with type `attribute`
+    * `SVGPatternElement` with type `interface`
+    * `patternUnits` with type `attribute`
+    * `patternContentUnits` with type `attribute`
+    * `patternTransform` with type `attribute`
+    * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
+    * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
+    * `width` with type `attribute`
+    * `height` with type `attribute`
+    * `SVGScriptElement` with type `interface`
+    * `type` with type `attribute`, but found [`type`](https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute) with type `element-attr` for `style`
+    * `crossOrigin` with type `attribute`
+    * `SVGAElement` with type `interface`
+    * `target` with type `attribute`, but found [`target`](https://svgwg.org/svg2-draft/linking.html#AElementTargetAttribute) with type `element-attr` for `a`
+    * `download` with type `attribute`, but found [`download`](https://svgwg.org/svg2-draft/linking.html#AElementDownloadAttribute) with type `element-attr` for `a`
+    * `ping` with type `attribute`, but found [`ping`](https://svgwg.org/svg2-draft/linking.html#AElementPingAttribute) with type `element-attr` for `a`
+    * `rel` with type `attribute`, but found [`rel`](https://svgwg.org/svg2-draft/linking.html#AElementRelAttribute) with type `element-attr` for `a`
+    * `relList` with type `attribute`
+    * `hreflang` with type `attribute`, but found [`hreflang`](https://svgwg.org/svg2-draft/linking.html#AElementHreflangAttribute) with type `element-attr` for `a`
+    * `type` with type `attribute`, but found [`type`](https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute) with type `element-attr` for `style`
+    * `text` with type `attribute`, but found [`text`](https://svgwg.org/svg2-draft/text.html#elementdef-text) with type `element`
+    * `referrerPolicy` with type `attribute`
+    * `SVGViewElement` with type `interface`
+    * `rootElement` with type `attribute`
 - [Selection API](https://w3c.github.io/selection-api/):
     * `stringification behavior` with type `dfn` for [`Selection`](https://w3c.github.io/selection-api/#dom-selection)
 - [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/):
@@ -688,7 +1056,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `multiDrawArraysInstancedBaseInstanceWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
     * `multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
 
-=> 392 properties without definition found in 44 specifications
+=> 758 properties without definition found in 45 specifications
 
 
 ## Possibly no definition for CSS properties
@@ -1381,6 +1749,39 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/smil/`](https://www.w3.org/TR/smil/) but does not list it in its references
     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
+    * [`https://www.w3.org/TR/2016/CR-SVG2-20160915/`](https://www.w3.org/TR/2016/CR-SVG2-20160915/) but does not list it in its references
+    * [`https://www.w3.org/TR/2015/WD-svg-markers-20150407/`](https://www.w3.org/TR/2015/WD-svg-markers-20150407/) but does not list it in its references
+    * [`https://www.w3.org/TR/2015/WD-svg-strokes-20150407/`](https://www.w3.org/TR/2015/WD-svg-strokes-20150407/) but does not list it in its references
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) links to:
+    * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/) but does not list it in its references
+    * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/) but does not list it in its references
+    * [`https://www.w3.org/TR/filter-effects/`](https://www.w3.org/TR/filter-effects/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/) but does not list it in its references
+    * [`https://www.w3.org/TR/wai-aria/`](https://www.w3.org/TR/wai-aria/) but does not list it in its references
+    * [`https://w3c.github.io/selection-api/`](https://w3c.github.io/selection-api/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
+    * [`https://www.w3.org/TR/2013/REC-css-style-attr-20131107/`](https://www.w3.org/TR/2013/REC-css-style-attr-20131107/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-position-3/`](https://www.w3.org/TR/css-position-3/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-exclusions/`](https://www.w3.org/TR/css3-exclusions/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-backgrounds-3/`](https://www.w3.org/TR/css-backgrounds-3/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-box-3/`](https://www.w3.org/TR/css-box-3/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-content-3/`](https://www.w3.org/TR/css-content-3/) but does not list it in its references
+    * [`https://www.w3.org/TR/resource-hints/`](https://www.w3.org/TR/resource-hints/) but does not list it in its references
+    * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/) but does not list it in its references
+    * [`https://www.w3.org/TR/orientation-event/`](https://www.w3.org/TR/orientation-event/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-selectors-3/`](https://www.w3.org/TR/css-selectors-3/) but does not list it in its references
+    * [`https://www.w3.org/TR/xlink/`](https://www.w3.org/TR/xlink/) but does not list it in its references
+    * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-transforms/`](https://www.w3.org/TR/css3-transforms/) but does not list it in its references
+    * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/) but does not list it in its references
+    * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/) but does not list it in its references
+    * [`https://www.w3.org/TR/accname-aam-1.1/`](https://www.w3.org/TR/accname-aam-1.1/) but does not list it in its references
+    * [`https://www.w3.org/TR/smil/`](https://www.w3.org/TR/smil/) but does not list it in its references
+    * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
     * [`https://www.w3.org/TR/2015/WD-svg-markers-20150407/`](https://www.w3.org/TR/2015/WD-svg-markers-20150407/) but does not list it in its references
     * [`https://www.w3.org/TR/2015/WD-svg-strokes-20150407/`](https://www.w3.org/TR/2015/WD-svg-strokes-20150407/) but does not list it in its references
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/) links to:
@@ -1472,7 +1873,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 582 missing references for links found in 170 specifications
+=> 614 missing references for links found in 171 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1509,8 +1910,8 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/) links to:
     * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
-    * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/) but related reference "SVG" uses URL [`https://www.w3.org/TR/SVG/`](https://www.w3.org/TR/SVG/)
-    * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG" uses URL [`https://www.w3.org/TR/SVG/`](https://www.w3.org/TR/SVG/)
+    * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/) but related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
+    * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
     * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/) links to [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - [Content Index](https://wicg.github.io/content-index/spec/) links to:
@@ -1676,7 +2077,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/) links to [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/) but related reference "MANIFEST" uses URL [`https://www.w3.org/TR/appmanifest/`](https://www.w3.org/TR/appmanifest/)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/) links to [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
-- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html) links to [`https://w3c.github.io/webrtc-pc/`](https://w3c.github.io/webrtc-pc/) but related reference "WEBRTC" uses URL [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/)
+- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/) links to [`https://w3c.github.io/webrtc-pc/`](https://w3c.github.io/webrtc-pc/) but related reference "WEBRTC" uses URL [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/) links to:
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/) but related reference "PERMISSIONS-POLICY" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
@@ -1784,6 +2185,29 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
     * [`https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/`](https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/) but related reference "UAAG20" uses URL [`https://www.w3.org/TR/UAAG20/`](https://www.w3.org/TR/UAAG20/)
     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/) but related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/) links to:
+    * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/) but related reference "xml" uses URL [`https://www.w3.org/TR/xml`](https://www.w3.org/TR/xml)
+    * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/) but related reference "xml-names" uses URL [`https://www.w3.org/TR/xml-names`](https://www.w3.org/TR/xml-names)
+    * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "dom" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "css-values" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+    * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/) but related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
+    * [`https://www.w3.org/TR/compositing/`](https://www.w3.org/TR/compositing/) but related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+    * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113/`](https://www.w3.org/TR/2015/CR-compositing-1-20150113/) but related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+    * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113`](https://www.w3.org/TR/2015/CR-compositing-1-20150113) but related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
+    * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "css-values" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+    * [`https://www.w3.org/TR/2014/CR-geometry-1-20141125/`](https://www.w3.org/TR/2014/CR-geometry-1-20141125/) but related reference "geometry-1" uses URL [`https://www.w3.org/TR/geometry-1/`](https://www.w3.org/TR/geometry-1/)
+    * [`https://www.w3.org/TR/2014/WD-geometry-1-20140522/`](https://www.w3.org/TR/2014/WD-geometry-1-20140522/) but related reference "geometry-1" uses URL [`https://www.w3.org/TR/geometry-1/`](https://www.w3.org/TR/geometry-1/)
+    * [`https://www.w3.org/TR/2014/CR-html5-20140204/`](https://www.w3.org/TR/2014/CR-html5-20140204/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+    * [`https://w3c.github.io/svg-aam/`](https://w3c.github.io/svg-aam/) but related reference "svg-aam-1.0" uses URL [`https://www.w3.org/TR/svg-aam-1.0/`](https://www.w3.org/TR/svg-aam-1.0/)
+    * [`https://www.w3.org/TR/2014/WD-dom-20140204/`](https://www.w3.org/TR/2014/WD-dom-20140204/) but related reference "dom" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+    * [`https://www.w3.org/TR/2011/WD-css3-fonts-20111004/`](https://www.w3.org/TR/2011/WD-css3-fonts-20111004/) but related reference "css-fonts-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+    * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/) but related reference "smil-animation" uses URL [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/)
+    * [`https://w3c.github.io/clipboard-apis/`](https://w3c.github.io/clipboard-apis/) but related reference "clipboard-apis" uses URL [`https://www.w3.org/TR/clipboard-apis/`](https://www.w3.org/TR/clipboard-apis/)
+    * [`https://w3c.github.io/graphics-aria/`](https://w3c.github.io/graphics-aria/) but related reference "graphics-aria-1.0" uses URL [`https://www.w3.org/TR/graphics-aria-1.0/`](https://www.w3.org/TR/graphics-aria-1.0/)
+    * [`https://www.w3.org/TR/referrer-policy/`](https://www.w3.org/TR/referrer-policy/) but related reference "ReferrerPolicy" uses URL [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/)
+    * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+    * [`https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/`](https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/) but related reference "UAAG20" uses URL [`https://www.w3.org/TR/UAAG20/`](https://www.w3.org/TR/UAAG20/)
+    * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/) but related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/) links to:
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIX" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
@@ -1808,6 +2232,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
     * [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/) but related reference "SMILANIM" uses URL [`http://www.w3.org/TR/2001/REC-smil-animation-20010904/`](http://www.w3.org/TR/2001/REC-smil-animation-20010904/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/) links to [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+- [Tracking Preference Expression (DNT)](https://w3c.github.io/dnt/drafts/tracking-dnt.html) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/) links to:
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
     * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/) but related reference "DOM-Parsing" uses URL [`https://www.w3.org/TR/DOM-Parsing/`](https://www.w3.org/TR/DOM-Parsing/)
@@ -1858,7 +2283,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 313 inconsistent references for links found in 176 specifications
+=> 336 inconsistent references for links found in 178 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -2418,7 +2843,7 @@ Links in the body of a specification should be to the same document as that poin
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/):
      * [`https://html.spec.whatwg.org/#event-loop-processing-model`](https://html.spec.whatwg.org/#event-loop-processing-model)
      * [`https://html.spec.whatwg.org/#run-the-animation-frame-callbacks`](https://html.spec.whatwg.org/#run-the-animation-frame-callbacks)
-- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html):
+- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/):
      * [`https://www.w3.org/TR/webrtc/#set-pc-configuration`](https://www.w3.org/TR/webrtc/#set-pc-configuration)
      * [`https://w3c.github.io/webrtc-pc/#dfn-offerer-s-system-state`](https://w3c.github.io/webrtc-pc/#dfn-offerer-s-system-state)
      * [`https://w3c.github.io/webrtc-pc/#dfn-signaling-state`](https://w3c.github.io/webrtc-pc/#dfn-signaling-state)
@@ -2807,6 +3232,24 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/selection-api/#dfn-direction`](https://w3c.github.io/selection-api/#dfn-direction)
      * [`https://w3c.github.io/selection-api/#dfn-selection`](https://w3c.github.io/selection-api/#dfn-selection)
      * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
+     * [`https://html.spec.whatwg.org/#reflect`](https://html.spec.whatwg.org/#reflect)
+     * [`https://html.spec.whatwg.org/#set-of-comma-separated-tokens`](https://html.spec.whatwg.org/#set-of-comma-separated-tokens)
+     * [`https://html.spec.whatwg.org/#valid-integer`](https://html.spec.whatwg.org/#valid-integer)
+     * [`https://html.spec.whatwg.org/#boolean-attribute`](https://html.spec.whatwg.org/#boolean-attribute)
+     * [`https://html.spec.whatwg.org/#global-attributes`](https://html.spec.whatwg.org/#global-attributes)
+     * [`https://html.spec.whatwg.org/#cors-settings-attribute`](https://html.spec.whatwg.org/#cors-settings-attribute)
+     * [`https://html.spec.whatwg.org/#focused`](https://html.spec.whatwg.org/#focused)
+     * [`https://html.spec.whatwg.org/#focusable`](https://html.spec.whatwg.org/#focusable)
+     * [`https://html.spec.whatwg.org/#create-a-potential-cors-request`](https://html.spec.whatwg.org/#create-a-potential-cors-request)
+     * [`https://html.spec.whatwg.org/#valid-browsing-context-name`](https://html.spec.whatwg.org/#valid-browsing-context-name)
+     * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
+     * [`https://html.spec.whatwg.org/#mime-type`](https://html.spec.whatwg.org/#mime-type)
+     * [`https://html.spec.whatwg.org/#limited-to-only-known-values`](https://html.spec.whatwg.org/#limited-to-only-known-values)
+     * [`https://drafts.fxtf.org/filter-effects/#operating-coordinate-space`](https://drafts.fxtf.org/filter-effects/#operating-coordinate-space)
+     * [`https://w3c.github.io/selection-api/#dfn-direction`](https://w3c.github.io/selection-api/#dfn-direction)
+     * [`https://w3c.github.io/selection-api/#dfn-selection`](https://w3c.github.io/selection-api/#dfn-selection)
+     * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/):
      * [`https://w3c.github.io/web-animations/#concept-animation`](https://w3c.github.io/web-animations/#concept-animation)
      * [`https://w3c.github.io/web-animations/#start-delay`](https://w3c.github.io/web-animations/#start-delay)
@@ -2942,6 +3385,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-animations-2/#owning-element`](https://drafts.csswg.org/css-animations-2/#owning-element)
      * [`https://drafts.csswg.org/css-transitions-2/#owning-element`](https://drafts.csswg.org/css-transitions-2/#owning-element)
      * [`https://drafts.csswg.org/css-style-attr/#style-attribute`](https://drafts.csswg.org/css-style-attr/#style-attribute)
+- [Web App Manifest - Application Information](https://w3c.github.io/manifest-app-info/):
+     * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-description`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-description)
+     * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-name)
 - [Web Application Manifest](https://w3c.github.io/manifest/):
      * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-name)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/):
@@ -3282,7 +3728,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1223 problematic external links found in 193 specifications
+=> 1242 problematic external links found in 195 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -3933,7 +4379,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/html-aam/#el-canvas`](https://w3c.github.io/html-aam/#el-canvas)
      * [`https://w3c.github.io/html-aam/#el-form-associated-custom-element`](https://w3c.github.io/html-aam/#el-form-associated-custom-element)
      * [`https://w3c.github.io/html-aam/#el-autonomous-custom-element`](https://w3c.github.io/html-aam/#el-autonomous-custom-element)
-- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html):
+- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/):
      * [`https://www.w3.org/TR/webrtc/#sec.stats-model`](https://www.w3.org/TR/webrtc/#sec.stats-model)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/):
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
@@ -3992,6 +4438,65 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#origin-2`](https://html.spec.whatwg.org/#origin-2)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/):
      * [`https://www.w3.org/TR/hr-time-2/#idl-def-performance`](https://www.w3.org/TR/hr-time-2/#idl-def-performance)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
+     * [`https://dom.spec.whatwg.org/#ref-for-dom-event-type`](https://dom.spec.whatwg.org/#ref-for-dom-event-type)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant`](https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-atomic`](https://www.w3.org/TR/wai-aria-1.1/#aria-atomic)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete`](https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-busy`](https://www.w3.org/TR/wai-aria-1.1/#aria-busy)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-checked`](https://www.w3.org/TR/wai-aria-1.1/#aria-checked)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-colcount)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-colindex)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-colspan)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-controls`](https://www.w3.org/TR/wai-aria-1.1/#aria-controls)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-current`](https://www.w3.org/TR/wai-aria-1.1/#aria-current)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-details`](https://www.w3.org/TR/wai-aria-1.1/#aria-details)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-disabled`](https://www.w3.org/TR/wai-aria-1.1/#aria-disabled)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect`](https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage`](https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-expanded`](https://www.w3.org/TR/wai-aria-1.1/#aria-expanded)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-flowto`](https://www.w3.org/TR/wai-aria-1.1/#aria-flowto)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed`](https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup`](https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-hidden`](https://www.w3.org/TR/wai-aria-1.1/#aria-hidden)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-invalid`](https://www.w3.org/TR/wai-aria-1.1/#aria-invalid)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-keyshortcuts`](https://www.w3.org/TR/wai-aria-1.1/#aria-keyshortcuts)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-label`](https://www.w3.org/TR/wai-aria-1.1/#aria-label)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-level`](https://www.w3.org/TR/wai-aria-1.1/#aria-level)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-live`](https://www.w3.org/TR/wai-aria-1.1/#aria-live)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-modal`](https://www.w3.org/TR/wai-aria-1.1/#aria-modal)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiline`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiline)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-orientation`](https://www.w3.org/TR/wai-aria-1.1/#aria-orientation)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-owns`](https://www.w3.org/TR/wai-aria-1.1/#aria-owns)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder`](https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-posinset`](https://www.w3.org/TR/wai-aria-1.1/#aria-posinset)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-pressed`](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-readonly`](https://www.w3.org/TR/wai-aria-1.1/#aria-readonly)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-relevant`](https://www.w3.org/TR/wai-aria-1.1/#aria-relevant)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-required`](https://www.w3.org/TR/wai-aria-1.1/#aria-required)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription`](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-selected`](https://www.w3.org/TR/wai-aria-1.1/#aria-selected)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-setsize`](https://www.w3.org/TR/wai-aria-1.1/#aria-setsize)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-sort`](https://www.w3.org/TR/wai-aria-1.1/#aria-sort)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#group`](https://www.w3.org/TR/wai-aria-1.1/#group)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#radiogroup`](https://www.w3.org/TR/wai-aria-1.1/#radiogroup)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#heading`](https://www.w3.org/TR/wai-aria-1.1/#heading)
+     * [`https://www.w3.org/TR/css3-background/#the-background-position`](https://www.w3.org/TR/css3-background/#the-background-position)
+     * [`https://www.w3.org/TR/css-text-3/#hyphens-property`](https://www.w3.org/TR/css-text-3/#hyphens-property)
+     * [`https://www.w3.org/TR/css3-images/#intrinsic-dimensions`](https://www.w3.org/TR/css3-images/#intrinsic-dimensions)
+     * [`https://www.w3.org/TR/css3-images/#intrinsic-width`](https://www.w3.org/TR/css3-images/#intrinsic-width)
+     * [`https://www.w3.org/TR/css3-images/#intrinsic-height`](https://www.w3.org/TR/css3-images/#intrinsic-height)
+     * [`https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio`](https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
      * [`https://dom.spec.whatwg.org/#ref-for-dom-event-type`](https://dom.spec.whatwg.org/#ref-for-dom-event-type)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant`](https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant)
@@ -4222,7 +4727,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
      * [`https://heycam.github.io/webidl/#dfn-DOMException`](https://heycam.github.io/webidl/#dfn-DOMException)
 
-=> 865 problematic external links found in 69 specifications
+=> 923 problematic external links found in 70 specifications
 
 
 ## Broken external links
@@ -4603,7 +5108,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-cue-text`](https://w3c.github.io/webvtt/#webvtt-file-using-cue-text)
      * [`https://w3c.github.io/manifest/#dfn-manifest`](https://w3c.github.io/manifest/#dfn-manifest)
      * [`https://www.w3.org/TR/css3-color/#css2-system`](https://www.w3.org/TR/css3-color/#css2-system)
-- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html):
+- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/):
      * [`https://www.w3.org/TR/webrtc/#dom-rtcconfiguration-peeridentity`](https://www.w3.org/TR/webrtc/#dom-rtcconfiguration-peeridentity)
      * [`https://w3c.github.io/webrtc-pc/#dfn-create-an-offer`](https://w3c.github.io/webrtc-pc/#dfn-create-an-offer)
      * [`https://w3c.github.io/webrtc-pc/#dfn-create-an-answer`](https://w3c.github.io/webrtc-pc/#dfn-create-an-answer)
@@ -4786,6 +5291,21 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
      * [`https://www.w3.org/TR/css-color-3/#svg-color`](https://www.w3.org/TR/css-color-3/#svg-color)
      * [`https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act`](https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
+     * [`https://html.spec.whatwg.org/#specially-focusable`](https://html.spec.whatwg.org/#specially-focusable)
+     * [`https://www.w3.org/TR/geometry-1/#dom-dompoint`](https://www.w3.org/TR/geometry-1/#dom-dompoint)
+     * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly)
+     * [`https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly`](https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly)
+     * [`https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target`](https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target)
+     * [`https://w3c.github.io/svg-aam/#details-id-69`](https://w3c.github.io/svg-aam/#details-id-69)
+     * [`https://www.w3.org/TR/css3-mediaqueries/#syntax`](https://www.w3.org/TR/css3-mediaqueries/#syntax)
+     * [`https://www.w3.org/TR/css-position-3/#vp`](https://www.w3.org/TR/css-position-3/#vp)
+     * [`https://drafts.csswg.org/web-animations/#animation-interpolation`](https://drafts.csswg.org/web-animations/#animation-interpolation)
+     * [`https://drafts.csswg.org/web-animations/#discrete-animation-type-section`](https://drafts.csswg.org/web-animations/#discrete-animation-type-section)
+     * [`https://drafts.csswg.org/web-animations/#real-number-animation-type`](https://drafts.csswg.org/web-animations/#real-number-animation-type)
+     * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
+     * [`https://www.w3.org/TR/css-color-3/#svg-color`](https://www.w3.org/TR/css-color-3/#svg-color)
+     * [`https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act`](https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/):
      * [`https://www.w3.org/TR/mediacapture-streams/#event-mediastreamtrack-overconstrained`](https://www.w3.org/TR/mediacapture-streams/#event-mediastreamtrack-overconstrained)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/):
@@ -4925,7 +5445,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 551 problematic external links found in 146 specifications
+=> 565 problematic external links found in 147 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
@@ -4981,7 +5501,7 @@ Links in the body of a specification should be to the same document as that poin
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/):
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
      * [`https://www.w3.org/TR/custom-elements/`](https://www.w3.org/TR/custom-elements/)
-- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html):
+- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/):
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
      * [`https://www.w3.org/TR/webmessaging/`](https://www.w3.org/TR/webmessaging/)
      * [`https://www.w3.org/TR/workers/`](https://www.w3.org/TR/workers/)
@@ -5020,6 +5540,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/):
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+- [Tracking Preference Expression (DNT)](https://w3c.github.io/dnt/drafts/tracking-dnt.html):
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/):
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [UI Events](https://w3c.github.io/uievents/):
@@ -5042,7 +5565,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebUSB API](https://wicg.github.io/webusb/):
      * [`https://www.w3.org/TR/cors/`](https://www.w3.org/TR/cors/)
 
-=> 57 problematic external links found in 48 specifications
+=> 59 problematic external links found in 49 specifications
 
 
 ## External links that use a dated URL
@@ -5168,7 +5691,7 @@ Links in the body of a specification should be to the same document as that poin
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
      * [`https://www.w3.org/TR/1999/REC-xpath-19991116/`](https://www.w3.org/TR/1999/REC-xpath-19991116/)
      * [`https://www.w3.org/TR/1999/REC-xslt-19991116`](https://www.w3.org/TR/1999/REC-xslt-19991116)
-- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/identity.html):
+- [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/):
      * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/):
      * [`https://www.w3.org/TR/2015/REC-IndexedDB-20150108/`](https://www.w3.org/TR/2015/REC-IndexedDB-20150108/)
@@ -5186,6 +5709,28 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2012/WD-css3-regions-20120823/`](https://www.w3.org/TR/2012/WD-css3-regions-20120823/)
      * [`https://www.w3.org/TR/2011/WD-css3-gcpm-20111129/`](https://www.w3.org/TR/2011/WD-css3-gcpm-20111129/)
      * [`https://www.w3.org/TR/2006/WD-css3-page-20061010`](https://www.w3.org/TR/2006/WD-css3-page-20061010)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
+     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/)
+     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/)
+     * [`https://www.w3.org/TR/2008/REC-SMIL3-20081201/`](https://www.w3.org/TR/2008/REC-SMIL3-20081201/)
+     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/)
+     * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/)
+     * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113/`](https://www.w3.org/TR/2015/CR-compositing-1-20150113/)
+     * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113`](https://www.w3.org/TR/2015/CR-compositing-1-20150113)
+     * [`https://www.w3.org/TR/2014/CR-geometry-1-20141125/`](https://www.w3.org/TR/2014/CR-geometry-1-20141125/)
+     * [`https://www.w3.org/TR/2014/WD-geometry-1-20140522/`](https://www.w3.org/TR/2014/WD-geometry-1-20140522/)
+     * [`https://www.w3.org/TR/2014/CR-html5-20140204/`](https://www.w3.org/TR/2014/CR-html5-20140204/)
+     * [`https://www.w3.org/TR/2014/WD-dom-20140204/`](https://www.w3.org/TR/2014/WD-dom-20140204/)
+     * [`https://www.w3.org/TR/2013/REC-css-style-attr-20131107/`](https://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
+     * [`https://www.w3.org/TR/2011/WD-css3-fonts-20111004/`](https://www.w3.org/TR/2011/WD-css3-fonts-20111004/)
+     * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/)
+     * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/)
+     * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/)
+     * [`https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/`](https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/)
+     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/)
+     * [`https://www.w3.org/TR/2016/CR-SVG2-20160915/`](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
+     * [`https://www.w3.org/TR/2015/WD-svg-markers-20150407/`](https://www.w3.org/TR/2015/WD-svg-markers-20150407/)
+     * [`https://www.w3.org/TR/2015/WD-svg-strokes-20150407/`](https://www.w3.org/TR/2015/WD-svg-strokes-20150407/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
      * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/)
      * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/)
@@ -5236,6 +5781,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2014/WD-SVG2-20140211/`](https://www.w3.org/TR/2014/WD-SVG2-20140211/)
 - [SVG Strokes](https://svgwg.org/specs/strokes/):
      * [`https://www.w3.org/TR/2015/WD-SVG2-20150409/`](https://www.w3.org/TR/2015/WD-SVG2-20150409/)
+- [Tracking Preference Expression (DNT)](https://w3c.github.io/dnt/drafts/tracking-dnt.html):
+     * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/):
      * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 - [WOFF File Format 2.0](https://w3c.github.io/woff/woff2/):
@@ -5243,6 +5790,6 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
-=> 142 problematic external links found in 53 specifications
+=> 164 problematic external links found in 55 specifications
 
 

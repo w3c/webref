@@ -1,4 +1,4 @@
-// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
+// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG11/)
 [Exposed=Window]
 interface SVGGraphicsElement : SVGElement {
   [SameObject] readonly attribute SVGAnimatedTransformList transform;
@@ -7,6 +7,9 @@ interface SVGGraphicsElement : SVGElement {
   DOMMatrix? getCTM();
   DOMMatrix? getScreenCTM();
 };
+
+// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG11/)
+SVGGraphicsElement includes SVGTests;
 
 // Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
 SVGGraphicsElement includes SVGTests;

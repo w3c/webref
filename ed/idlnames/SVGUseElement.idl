@@ -1,4 +1,4 @@
-// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
+// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG11/)
 [Exposed=Window]
 interface SVGUseElement : SVGGraphicsElement {
   [SameObject] readonly attribute SVGAnimatedLength x;
@@ -8,6 +8,9 @@ interface SVGUseElement : SVGGraphicsElement {
   [SameObject] readonly attribute SVGElement? instanceRoot;
   [SameObject] readonly attribute SVGElement? animatedInstanceRoot;
 };
+
+// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG11/)
+SVGUseElement includes SVGURIReference;
 
 // Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
 SVGUseElement includes SVGURIReference;

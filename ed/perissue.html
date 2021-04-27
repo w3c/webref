@@ -20,7 +20,7 @@
 <body>
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/w3c/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
-  <p>387 specifications were crawled in this report.</p>
+  <p>390 specifications were crawled in this report.</p>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -150,7 +150,7 @@
   <section id="list-of-exposed-names-not-defined-in-the-specifications-crawled" class="level2">
   <h2>List of [Exposed] names not defined in the specifications crawled</h2>
   <ul>
-  <li><code>RTCIdentityProviderGlobalScope</code> used in <a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a></li>
+  <li><code>RTCIdentityProviderGlobalScope</code> used in <a href="https://w3c.github.io/webrtc-identity/">Identity for WebRTC 1.0</a></li>
   <li><code>SecureContext</code> used in <a href="https://wicg.github.io/contact-api/spec/">Contact Picker API</a></li>
   </ul>
   <p>=&gt; 2 [Exposed] names found</p>
@@ -187,6 +187,7 @@
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a> uses <code>WebGL2RenderingContext</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">WebGL 2.0 Specification</a></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a> uses <code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time</a></li>
   <li><a href="https://wicg.github.io/private-network-access/">Private Network Access</a> uses <code>Document</code> but does not reference <a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
+  <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a> uses <code>CSSPseudoElement</code> but does not reference <a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a> uses <code>CSSPseudoElement</code> but does not reference <a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/">WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification</a> uses:
   <ul>
@@ -268,7 +269,7 @@
   <li><code>WebGLTexture</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 50 missing references for IDL definitions found in 23 specifications</p>
+  <p>=&gt; 51 missing references for IDL definitions found in 24 specifications</p>
   </section>
   <section id="no-definition-for-css-properties" class="level2">
   <h2>No definition for CSS properties</h2>
@@ -430,6 +431,375 @@
   <li><code>queryCommandState(commandId)</code> with type <code>method</code>, but found <a href="https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandstate"><code>queryCommandState()</code></a> with type <code>dfn</code></li>
   <li><code>queryCommandSupported(commandId)</code> with type <code>method</code>, but found <a href="https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandsupported"><code>queryCommandSupported()</code></a> with type <code>dfn</code></li>
   <li><code>queryCommandValue(commandId)</code> with type <code>method</code>, but found <a href="https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandvalue"><code>queryCommandValue()</code></a> with type <code>dfn</code></li>
+  </ul></li>
+  <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a>:
+  <ul>
+  <li><code>SVGElement</code> with type <code>interface</code></li>
+  <li><code>className</code> with type <code>attribute</code></li>
+  <li><code>ownerSVGElement</code> with type <code>attribute</code></li>
+  <li><code>viewportElement</code> with type <code>attribute</code></li>
+  <li><code>SVGBoundingBoxOptions</code> with type <code>dictionary</code></li>
+  <li><code>fill</code> with type <code>dict-member</code>, but found <a href="https://svgwg.org/svg2-draft/painting.html#TermFill"><code>fill</code></a> with type <code>dfn</code></li>
+  <li><code>stroke</code> with type <code>dict-member</code>, but found <a href="https://svgwg.org/svg2-draft/painting.html#TermStroke"><code>stroke</code></a> with type <code>dfn</code></li>
+  <li><code>markers</code> with type <code>dict-member</code></li>
+  <li><code>clipped</code> with type <code>dict-member</code></li>
+  <li><code>SVGGraphicsElement</code> with type <code>interface</code></li>
+  <li><code>transform</code> with type <code>attribute</code></li>
+  <li><code>getBBox(options)</code> with type <code>method</code></li>
+  <li><code>getCTM()</code> with type <code>method</code></li>
+  <li><code>getScreenCTM()</code> with type <code>method</code></li>
+  <li><code>SVGGeometryElement</code> with type <code>interface</code></li>
+  <li><code>pathLength</code> with type <code>attribute</code></li>
+  <li><code>isPointInFill(point)</code> with type <code>method</code></li>
+  <li><code>isPointInStroke(point)</code> with type <code>method</code></li>
+  <li><code>getTotalLength()</code> with type <code>method</code></li>
+  <li><code>getPointAtLength(distance)</code> with type <code>method</code></li>
+  <li><code>SVGNumber</code> with type <code>interface</code></li>
+  <li><code>value</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/types.html#NumberValue"><code>value</code></a> with type <code>dfn</code></li>
+  <li><code>SVGLength</code> with type <code>interface</code></li>
+  <li><code>SVG_LENGTHTYPE_UNKNOWN</code> with type <code>const</code></li>
+  <li><code>SVG_LENGTHTYPE_NUMBER</code> with type <code>const</code></li>
+  <li><code>SVG_LENGTHTYPE_PERCENTAGE</code> with type <code>const</code></li>
+  <li><code>SVG_LENGTHTYPE_EMS</code> with type <code>const</code></li>
+  <li><code>SVG_LENGTHTYPE_EXS</code> with type <code>const</code></li>
+  <li><code>SVG_LENGTHTYPE_PX</code> with type <code>const</code></li>
+  <li><code>SVG_LENGTHTYPE_CM</code> with type <code>const</code></li>
+  <li><code>SVG_LENGTHTYPE_MM</code> with type <code>const</code></li>
+  <li><code>SVG_LENGTHTYPE_IN</code> with type <code>const</code></li>
+  <li><code>SVG_LENGTHTYPE_PT</code> with type <code>const</code></li>
+  <li><code>SVG_LENGTHTYPE_PC</code> with type <code>const</code></li>
+  <li><code>unitType</code> with type <code>attribute</code></li>
+  <li><code>value</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/types.html#NumberValue"><code>value</code></a> with type <code>dfn</code></li>
+  <li><code>valueInSpecifiedUnits</code> with type <code>attribute</code></li>
+  <li><code>valueAsString</code> with type <code>attribute</code></li>
+  <li><code>newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)</code> with type <code>method</code></li>
+  <li><code>convertToSpecifiedUnits(unitType)</code> with type <code>method</code></li>
+  <li><code>SVGAngle</code> with type <code>interface</code></li>
+  <li><code>SVG_ANGLETYPE_UNKNOWN</code> with type <code>const</code></li>
+  <li><code>SVG_ANGLETYPE_UNSPECIFIED</code> with type <code>const</code></li>
+  <li><code>SVG_ANGLETYPE_DEG</code> with type <code>const</code></li>
+  <li><code>SVG_ANGLETYPE_RAD</code> with type <code>const</code></li>
+  <li><code>SVG_ANGLETYPE_GRAD</code> with type <code>const</code></li>
+  <li><code>unitType</code> with type <code>attribute</code></li>
+  <li><code>value</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/types.html#NumberValue"><code>value</code></a> with type <code>dfn</code></li>
+  <li><code>valueInSpecifiedUnits</code> with type <code>attribute</code></li>
+  <li><code>valueAsString</code> with type <code>attribute</code></li>
+  <li><code>newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)</code> with type <code>method</code></li>
+  <li><code>convertToSpecifiedUnits(unitType)</code> with type <code>method</code></li>
+  <li><code>SVGNumberList</code> with type <code>interface</code></li>
+  <li><code>length</code> with type <code>attribute</code></li>
+  <li><code>numberOfItems</code> with type <code>attribute</code></li>
+  <li><code>clear()</code> with type <code>method</code></li>
+  <li><code>initialize(newItem)</code> with type <code>method</code></li>
+  <li><code>getItem(index)</code> with type <code>method</code></li>
+  <li><code>insertItemBefore(newItem, index)</code> with type <code>method</code></li>
+  <li><code>replaceItem(newItem, index)</code> with type <code>method</code></li>
+  <li><code>removeItem(index)</code> with type <code>method</code></li>
+  <li><code>appendItem(newItem)</code> with type <code>method</code></li>
+  <li><code>SVGLengthList</code> with type <code>interface</code></li>
+  <li><code>length</code> with type <code>attribute</code></li>
+  <li><code>numberOfItems</code> with type <code>attribute</code></li>
+  <li><code>clear()</code> with type <code>method</code></li>
+  <li><code>initialize(newItem)</code> with type <code>method</code></li>
+  <li><code>getItem(index)</code> with type <code>method</code></li>
+  <li><code>insertItemBefore(newItem, index)</code> with type <code>method</code></li>
+  <li><code>replaceItem(newItem, index)</code> with type <code>method</code></li>
+  <li><code>removeItem(index)</code> with type <code>method</code></li>
+  <li><code>appendItem(newItem)</code> with type <code>method</code></li>
+  <li><code>SVGStringList</code> with type <code>interface</code></li>
+  <li><code>length</code> with type <code>attribute</code></li>
+  <li><code>numberOfItems</code> with type <code>attribute</code></li>
+  <li><code>clear()</code> with type <code>method</code></li>
+  <li><code>initialize(newItem)</code> with type <code>method</code></li>
+  <li><code>getItem(index)</code> with type <code>method</code></li>
+  <li><code>insertItemBefore(newItem, index)</code> with type <code>method</code></li>
+  <li><code>replaceItem(newItem, index)</code> with type <code>method</code></li>
+  <li><code>removeItem(index)</code> with type <code>method</code></li>
+  <li><code>appendItem(newItem)</code> with type <code>method</code></li>
+  <li><code>SVGAnimatedBoolean</code> with type <code>interface</code></li>
+  <li><code>baseVal</code> with type <code>attribute</code></li>
+  <li><code>animVal</code> with type <code>attribute</code></li>
+  <li><code>SVGAnimatedEnumeration</code> with type <code>interface</code></li>
+  <li><code>baseVal</code> with type <code>attribute</code></li>
+  <li><code>animVal</code> with type <code>attribute</code></li>
+  <li><code>SVGAnimatedInteger</code> with type <code>interface</code></li>
+  <li><code>baseVal</code> with type <code>attribute</code></li>
+  <li><code>animVal</code> with type <code>attribute</code></li>
+  <li><code>SVGAnimatedNumber</code> with type <code>interface</code></li>
+  <li><code>baseVal</code> with type <code>attribute</code></li>
+  <li><code>animVal</code> with type <code>attribute</code></li>
+  <li><code>SVGAnimatedLength</code> with type <code>interface</code></li>
+  <li><code>baseVal</code> with type <code>attribute</code></li>
+  <li><code>animVal</code> with type <code>attribute</code></li>
+  <li><code>SVGAnimatedAngle</code> with type <code>interface</code></li>
+  <li><code>baseVal</code> with type <code>attribute</code></li>
+  <li><code>animVal</code> with type <code>attribute</code></li>
+  <li><code>SVGAnimatedString</code> with type <code>interface</code></li>
+  <li><code>baseVal</code> with type <code>attribute</code></li>
+  <li><code>animVal</code> with type <code>attribute</code></li>
+  <li><code>SVGAnimatedRect</code> with type <code>interface</code></li>
+  <li><code>baseVal</code> with type <code>attribute</code></li>
+  <li><code>animVal</code> with type <code>attribute</code></li>
+  <li><code>SVGAnimatedNumberList</code> with type <code>interface</code></li>
+  <li><code>baseVal</code> with type <code>attribute</code></li>
+  <li><code>animVal</code> with type <code>attribute</code></li>
+  <li><code>SVGAnimatedLengthList</code> with type <code>interface</code></li>
+  <li><code>baseVal</code> with type <code>attribute</code></li>
+  <li><code>animVal</code> with type <code>attribute</code></li>
+  <li><code>SVGUnitTypes</code> with type <code>interface</code></li>
+  <li><code>SVG_UNIT_TYPE_UNKNOWN</code> with type <code>const</code></li>
+  <li><code>SVG_UNIT_TYPE_USERSPACEONUSE</code> with type <code>const</code></li>
+  <li><code>SVG_UNIT_TYPE_OBJECTBOUNDINGBOX</code> with type <code>const</code></li>
+  <li><code>requiredExtensions</code> with type <code>attribute</code> for <a href="https://svgwg.org/svg2-draft/types.html#InterfaceSVGTests"><code>SVGTests</code></a>, but found <a href="https://svgwg.org/svg2-draft/struct.html#RequiredExtensionsAttribute"><code>requiredExtensions</code></a> with type <code>dfn</code></li>
+  <li><code>systemLanguage</code> with type <code>attribute</code> for <a href="https://svgwg.org/svg2-draft/types.html#InterfaceSVGTests"><code>SVGTests</code></a>, but found <a href="https://svgwg.org/svg2-draft/struct.html#SystemLanguageAttribute"><code>systemLanguage</code></a> with type <code>dfn</code></li>
+  <li><code>viewBox</code> with type <code>attribute</code> for <a href="https://svgwg.org/svg2-draft/types.html#InterfaceSVGFitToViewBox"><code>SVGFitToViewBox</code></a>, but found <a href="https://svgwg.org/svg2-draft/coords.html#TermViewBox"><code>viewBox</code></a> with type <code>element-attr</code> for <code>svg</code></li>
+  <li><code>preserveAspectRatio</code> with type <code>attribute</code> for <a href="https://svgwg.org/svg2-draft/types.html#InterfaceSVGFitToViewBox"><code>SVGFitToViewBox</code></a>, but found <a href="https://svgwg.org/svg2-draft/coords.html#TermPreserveAspectRatio"><code>preserveAspectRatio</code></a> with type <code>element-attr</code> for <code>svg</code></li>
+  <li><code>href</code> with type <code>attribute</code> for <a href="https://svgwg.org/svg2-draft/types.html#InterfaceSVGURIReference"><code>SVGURIReference</code></a>, but found <a href="https://svgwg.org/svg2-draft/struct.html#UseElementHrefAttribute"><code>href</code></a> with type <code>dfn</code></li>
+  <li><code>SVGSVGElement</code> with type <code>interface</code></li>
+  <li><code>x</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#XProperty"><code>x</code></a> with type <code>property</code></li>
+  <li><code>y</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#YProperty"><code>y</code></a> with type <code>property</code></li>
+  <li><code>width</code> with type <code>attribute</code></li>
+  <li><code>height</code> with type <code>attribute</code></li>
+  <li><code>currentScale</code> with type <code>attribute</code></li>
+  <li><code>currentTranslate</code> with type <code>attribute</code></li>
+  <li><code>getIntersectionList(rect, referenceElement)</code> with type <code>method</code></li>
+  <li><code>getEnclosureList(rect, referenceElement)</code> with type <code>method</code></li>
+  <li><code>checkIntersection(element, rect)</code> with type <code>method</code></li>
+  <li><code>checkEnclosure(element, rect)</code> with type <code>method</code></li>
+  <li><code>deselectAll()</code> with type <code>method</code></li>
+  <li><code>createSVGNumber()</code> with type <code>method</code></li>
+  <li><code>createSVGLength()</code> with type <code>method</code></li>
+  <li><code>createSVGAngle()</code> with type <code>method</code></li>
+  <li><code>createSVGPoint()</code> with type <code>method</code></li>
+  <li><code>createSVGMatrix()</code> with type <code>method</code></li>
+  <li><code>createSVGRect()</code> with type <code>method</code></li>
+  <li><code>createSVGTransform()</code> with type <code>method</code></li>
+  <li><code>createSVGTransformFromMatrix(matrix)</code> with type <code>method</code></li>
+  <li><code>getElementById(elementId)</code> with type <code>method</code></li>
+  <li><code>suspendRedraw(maxWaitMilliseconds)</code> with type <code>method</code></li>
+  <li><code>unsuspendRedraw(suspendHandleID)</code> with type <code>method</code></li>
+  <li><code>unsuspendRedrawAll()</code> with type <code>method</code></li>
+  <li><code>forceRedraw()</code> with type <code>method</code></li>
+  <li><code>SVGGElement</code> with type <code>interface</code></li>
+  <li><code>SVGDefsElement</code> with type <code>interface</code></li>
+  <li><code>SVGDescElement</code> with type <code>interface</code></li>
+  <li><code>SVGMetadataElement</code> with type <code>interface</code></li>
+  <li><code>SVGTitleElement</code> with type <code>interface</code></li>
+  <li><code>SVGSymbolElement</code> with type <code>interface</code></li>
+  <li><code>SVGUseElement</code> with type <code>interface</code></li>
+  <li><code>x</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#XProperty"><code>x</code></a> with type <code>property</code></li>
+  <li><code>y</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#YProperty"><code>y</code></a> with type <code>property</code></li>
+  <li><code>width</code> with type <code>attribute</code></li>
+  <li><code>height</code> with type <code>attribute</code></li>
+  <li><code>instanceRoot</code> with type <code>attribute</code></li>
+  <li><code>animatedInstanceRoot</code> with type <code>attribute</code></li>
+  <li><code>SVGUseElementShadowRoot</code> with type <code>interface</code></li>
+  <li><code>correspondingElement</code> with type <code>attribute</code> for <a href="https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance"><code>SVGElementInstance</code></a></li>
+  <li><code>correspondingUseElement</code> with type <code>attribute</code> for <a href="https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance"><code>SVGElementInstance</code></a></li>
+  <li><code>ShadowAnimation</code> with type <code>interface</code></li>
+  <li><code>constructor(source, newTarget)</code> with type <code>constructor</code></li>
+  <li><code>sourceAnimation</code> with type <code>attribute</code></li>
+  <li><code>SVGSwitchElement</code> with type <code>interface</code></li>
+  <li><code>getSVGDocument()</code> with type <code>method</code> for <a href="https://svgwg.org/svg2-draft/struct.html#InterfaceGetSVGDocument"><code>GetSVGDocument</code></a></li>
+  <li><code>SVGStyleElement</code> with type <code>interface</code></li>
+  <li><code>type</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute"><code>type</code></a> with type <code>element-attr</code> for <code>style</code></li>
+  <li><code>media</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/styling.html#StyleElementMediaAttribute"><code>media</code></a> with type <code>element-attr</code> for <code>style</code></li>
+  <li><code>title</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/struct.html#elementdef-title"><code>title</code></a> with type <code>element</code></li>
+  <li><code>SVGTransform</code> with type <code>interface</code></li>
+  <li><code>SVG_TRANSFORM_UNKNOWN</code> with type <code>const</code></li>
+  <li><code>SVG_TRANSFORM_MATRIX</code> with type <code>const</code></li>
+  <li><code>SVG_TRANSFORM_TRANSLATE</code> with type <code>const</code></li>
+  <li><code>SVG_TRANSFORM_SCALE</code> with type <code>const</code></li>
+  <li><code>SVG_TRANSFORM_ROTATE</code> with type <code>const</code></li>
+  <li><code>SVG_TRANSFORM_SKEWX</code> with type <code>const</code></li>
+  <li><code>SVG_TRANSFORM_SKEWY</code> with type <code>const</code></li>
+  <li><code>type</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute"><code>type</code></a> with type <code>element-attr</code> for <code>style</code></li>
+  <li><code>matrix</code> with type <code>attribute</code></li>
+  <li><code>angle</code> with type <code>attribute</code></li>
+  <li><code>setMatrix(matrix)</code> with type <code>method</code></li>
+  <li><code>setTranslate(tx, ty)</code> with type <code>method</code></li>
+  <li><code>setScale(sx, sy)</code> with type <code>method</code></li>
+  <li><code>setRotate(angle, cx, cy)</code> with type <code>method</code></li>
+  <li><code>setSkewX(angle)</code> with type <code>method</code></li>
+  <li><code>setSkewY(angle)</code> with type <code>method</code></li>
+  <li><code>SVGTransformList</code> with type <code>interface</code></li>
+  <li><code>length</code> with type <code>attribute</code></li>
+  <li><code>numberOfItems</code> with type <code>attribute</code></li>
+  <li><code>clear()</code> with type <code>method</code></li>
+  <li><code>initialize(newItem)</code> with type <code>method</code></li>
+  <li><code>getItem(index)</code> with type <code>method</code></li>
+  <li><code>insertItemBefore(newItem, index)</code> with type <code>method</code></li>
+  <li><code>replaceItem(newItem, index)</code> with type <code>method</code></li>
+  <li><code>removeItem(index)</code> with type <code>method</code></li>
+  <li><code>appendItem(newItem)</code> with type <code>method</code></li>
+  <li><code>createSVGTransformFromMatrix(matrix)</code> with type <code>method</code></li>
+  <li><code>consolidate()</code> with type <code>method</code></li>
+  <li><code>SVGAnimatedTransformList</code> with type <code>interface</code></li>
+  <li><code>baseVal</code> with type <code>attribute</code></li>
+  <li><code>animVal</code> with type <code>attribute</code></li>
+  <li><code>SVGPreserveAspectRatio</code> with type <code>interface</code></li>
+  <li><code>SVG_PRESERVEASPECTRATIO_UNKNOWN</code> with type <code>const</code></li>
+  <li><code>SVG_PRESERVEASPECTRATIO_NONE</code> with type <code>const</code></li>
+  <li><code>SVG_PRESERVEASPECTRATIO_XMINYMIN</code> with type <code>const</code></li>
+  <li><code>SVG_PRESERVEASPECTRATIO_XMIDYMIN</code> with type <code>const</code></li>
+  <li><code>SVG_PRESERVEASPECTRATIO_XMAXYMIN</code> with type <code>const</code></li>
+  <li><code>SVG_PRESERVEASPECTRATIO_XMINYMID</code> with type <code>const</code></li>
+  <li><code>SVG_PRESERVEASPECTRATIO_XMIDYMID</code> with type <code>const</code></li>
+  <li><code>SVG_PRESERVEASPECTRATIO_XMAXYMID</code> with type <code>const</code></li>
+  <li><code>SVG_PRESERVEASPECTRATIO_XMINYMAX</code> with type <code>const</code></li>
+  <li><code>SVG_PRESERVEASPECTRATIO_XMIDYMAX</code> with type <code>const</code></li>
+  <li><code>SVG_PRESERVEASPECTRATIO_XMAXYMAX</code> with type <code>const</code></li>
+  <li><code>SVG_MEETORSLICE_UNKNOWN</code> with type <code>const</code></li>
+  <li><code>SVG_MEETORSLICE_MEET</code> with type <code>const</code></li>
+  <li><code>SVG_MEETORSLICE_SLICE</code> with type <code>const</code></li>
+  <li><code>align</code> with type <code>attribute</code></li>
+  <li><code>meetOrSlice</code> with type <code>attribute</code></li>
+  <li><code>SVGAnimatedPreserveAspectRatio</code> with type <code>interface</code></li>
+  <li><code>baseVal</code> with type <code>attribute</code></li>
+  <li><code>animVal</code> with type <code>attribute</code></li>
+  <li><code>SVGPathElement</code> with type <code>interface</code></li>
+  <li><code>SVGRectElement</code> with type <code>interface</code></li>
+  <li><code>x</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#XProperty"><code>x</code></a> with type <code>property</code></li>
+  <li><code>y</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#YProperty"><code>y</code></a> with type <code>property</code></li>
+  <li><code>width</code> with type <code>attribute</code></li>
+  <li><code>height</code> with type <code>attribute</code></li>
+  <li><code>rx</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#RxProperty"><code>rx</code></a> with type <code>property</code></li>
+  <li><code>ry</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#RyProperty"><code>ry</code></a> with type <code>property</code></li>
+  <li><code>SVGCircleElement</code> with type <code>interface</code></li>
+  <li><code>cx</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#CxProperty"><code>cx</code></a> with type <code>property</code></li>
+  <li><code>cy</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#CyProperty"><code>cy</code></a> with type <code>property</code></li>
+  <li><code>r</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#RProperty"><code>r</code></a> with type <code>property</code></li>
+  <li><code>SVGEllipseElement</code> with type <code>interface</code></li>
+  <li><code>cx</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#CxProperty"><code>cx</code></a> with type <code>property</code></li>
+  <li><code>cy</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#CyProperty"><code>cy</code></a> with type <code>property</code></li>
+  <li><code>rx</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#RxProperty"><code>rx</code></a> with type <code>property</code></li>
+  <li><code>ry</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#RyProperty"><code>ry</code></a> with type <code>property</code></li>
+  <li><code>SVGLineElement</code> with type <code>interface</code></li>
+  <li><code>x1</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/shapes.html#LineElementX1Attribute"><code>x1</code></a> with type <code>element-attr</code> for <code>line</code></li>
+  <li><code>y1</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/shapes.html#LineElementY1Attribute"><code>y1</code></a> with type <code>element-attr</code> for <code>line</code></li>
+  <li><code>x2</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/shapes.html#LineElementX2Attribute"><code>x2</code></a> with type <code>element-attr</code> for <code>line</code></li>
+  <li><code>y2</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/shapes.html#LineElementY2Attribute"><code>y2</code></a> with type <code>element-attr</code> for <code>line</code></li>
+  <li><code>points</code> with type <code>attribute</code> for <a href="https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGAnimatedPoints"><code>SVGAnimatedPoints</code></a>, but found <a href="https://svgwg.org/svg2-draft/shapes.html#PolylineElementPointsAttribute"><code>points</code></a> with type <code>element-attr</code> for <code>polyline</code></li>
+  <li><code>animatedPoints</code> with type <code>attribute</code> for <a href="https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGAnimatedPoints"><code>SVGAnimatedPoints</code></a></li>
+  <li><code>SVGPointList</code> with type <code>interface</code></li>
+  <li><code>length</code> with type <code>attribute</code></li>
+  <li><code>numberOfItems</code> with type <code>attribute</code></li>
+  <li><code>clear()</code> with type <code>method</code></li>
+  <li><code>initialize(newItem)</code> with type <code>method</code></li>
+  <li><code>getItem(index)</code> with type <code>method</code></li>
+  <li><code>insertItemBefore(newItem, index)</code> with type <code>method</code></li>
+  <li><code>replaceItem(newItem, index)</code> with type <code>method</code></li>
+  <li><code>removeItem(index)</code> with type <code>method</code></li>
+  <li><code>appendItem(newItem)</code> with type <code>method</code></li>
+  <li><code>SVGPolylineElement</code> with type <code>interface</code></li>
+  <li><code>SVGPolygonElement</code> with type <code>interface</code></li>
+  <li><code>SVGTextContentElement</code> with type <code>interface</code></li>
+  <li><code>LENGTHADJUST_UNKNOWN</code> with type <code>const</code></li>
+  <li><code>LENGTHADJUST_SPACING</code> with type <code>const</code></li>
+  <li><code>LENGTHADJUST_SPACINGANDGLYPHS</code> with type <code>const</code></li>
+  <li><code>textLength</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/text.html#TextElementTextLengthAttribute"><code>textLength</code></a> with type <code>element-attr</code> for <code>text</code></li>
+  <li><code>lengthAdjust</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/text.html#TextElementLengthAdjustAttribute"><code>lengthAdjust</code></a> with type <code>element-attr</code> for <code>text</code></li>
+  <li><code>getNumberOfChars()</code> with type <code>method</code></li>
+  <li><code>getComputedTextLength()</code> with type <code>method</code></li>
+  <li><code>getSubStringLength(charnum, nchars)</code> with type <code>method</code></li>
+  <li><code>getStartPositionOfChar(charnum)</code> with type <code>method</code></li>
+  <li><code>getEndPositionOfChar(charnum)</code> with type <code>method</code></li>
+  <li><code>getExtentOfChar(charnum)</code> with type <code>method</code></li>
+  <li><code>getRotationOfChar(charnum)</code> with type <code>method</code></li>
+  <li><code>getCharNumAtPosition(point)</code> with type <code>method</code></li>
+  <li><code>selectSubString(charnum, nchars)</code> with type <code>method</code></li>
+  <li><code>SVGTextPositioningElement</code> with type <code>interface</code></li>
+  <li><code>x</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#XProperty"><code>x</code></a> with type <code>property</code></li>
+  <li><code>y</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#YProperty"><code>y</code></a> with type <code>property</code></li>
+  <li><code>dx</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/text.html#TextElementDXAttribute"><code>dx</code></a> with type <code>element-attr</code> for <code>text</code></li>
+  <li><code>dy</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/text.html#TextElementDYAttribute"><code>dy</code></a> with type <code>element-attr</code> for <code>text</code></li>
+  <li><code>rotate</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/text.html#TextElementRotateAttribute"><code>rotate</code></a> with type <code>element-attr</code> for <code>text</code></li>
+  <li><code>SVGTextElement</code> with type <code>interface</code></li>
+  <li><code>SVGTSpanElement</code> with type <code>interface</code></li>
+  <li><code>SVGTextPathElement</code> with type <code>interface</code></li>
+  <li><code>TEXTPATH_METHODTYPE_UNKNOWN</code> with type <code>const</code></li>
+  <li><code>TEXTPATH_METHODTYPE_ALIGN</code> with type <code>const</code></li>
+  <li><code>TEXTPATH_METHODTYPE_STRETCH</code> with type <code>const</code></li>
+  <li><code>TEXTPATH_SPACINGTYPE_UNKNOWN</code> with type <code>const</code></li>
+  <li><code>TEXTPATH_SPACINGTYPE_AUTO</code> with type <code>const</code></li>
+  <li><code>TEXTPATH_SPACINGTYPE_EXACT</code> with type <code>const</code></li>
+  <li><code>startOffset</code> with type <code>attribute</code></li>
+  <li><code>method</code> with type <code>attribute</code></li>
+  <li><code>spacing</code> with type <code>attribute</code></li>
+  <li><code>SVGImageElement</code> with type <code>interface</code></li>
+  <li><code>x</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#XProperty"><code>x</code></a> with type <code>property</code></li>
+  <li><code>y</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#YProperty"><code>y</code></a> with type <code>property</code></li>
+  <li><code>width</code> with type <code>attribute</code></li>
+  <li><code>height</code> with type <code>attribute</code></li>
+  <li><code>preserveAspectRatio</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/coords.html#TermPreserveAspectRatio"><code>preserveAspectRatio</code></a> with type <code>element-attr</code> for <code>svg</code></li>
+  <li><code>crossOrigin</code> with type <code>attribute</code></li>
+  <li><code>SVGForeignObjectElement</code> with type <code>interface</code></li>
+  <li><code>x</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#XProperty"><code>x</code></a> with type <code>property</code></li>
+  <li><code>y</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#YProperty"><code>y</code></a> with type <code>property</code></li>
+  <li><code>width</code> with type <code>attribute</code></li>
+  <li><code>height</code> with type <code>attribute</code></li>
+  <li><code>SVGMarkerElement</code> with type <code>interface</code></li>
+  <li><code>SVG_MARKERUNITS_UNKNOWN</code> with type <code>const</code></li>
+  <li><code>SVG_MARKERUNITS_USERSPACEONUSE</code> with type <code>const</code></li>
+  <li><code>SVG_MARKERUNITS_STROKEWIDTH</code> with type <code>const</code></li>
+  <li><code>SVG_MARKER_ORIENT_UNKNOWN</code> with type <code>const</code></li>
+  <li><code>SVG_MARKER_ORIENT_AUTO</code> with type <code>const</code></li>
+  <li><code>SVG_MARKER_ORIENT_ANGLE</code> with type <code>const</code></li>
+  <li><code>refX</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/struct.html#SymbolElementRefXAttribute"><code>refX</code></a> with type <code>element-attr</code> for <code>symbol</code></li>
+  <li><code>refY</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/struct.html#SymbolElementRefYAttribute"><code>refY</code></a> with type <code>element-attr</code> for <code>symbol</code></li>
+  <li><code>markerUnits</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/painting.html#MarkerUnitsAttribute"><code>markerUnits</code></a> with type <code>element-attr</code> for <code>marker</code></li>
+  <li><code>markerWidth</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/painting.html#MarkerWidthAttribute"><code>markerWidth</code></a> with type <code>element-attr</code> for <code>marker</code></li>
+  <li><code>markerHeight</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/painting.html#MarkerHeightAttribute"><code>markerHeight</code></a> with type <code>element-attr</code> for <code>marker</code></li>
+  <li><code>orientType</code> with type <code>attribute</code></li>
+  <li><code>orientAngle</code> with type <code>attribute</code></li>
+  <li><code>orient</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/painting.html#OrientAttribute"><code>orient</code></a> with type <code>element-attr</code> for <code>marker</code></li>
+  <li><code>setOrientToAuto()</code> with type <code>method</code></li>
+  <li><code>setOrientToAngle(angle)</code> with type <code>method</code></li>
+  <li><code>SVGGradientElement</code> with type <code>interface</code></li>
+  <li><code>SVG_SPREADMETHOD_UNKNOWN</code> with type <code>const</code></li>
+  <li><code>SVG_SPREADMETHOD_PAD</code> with type <code>const</code></li>
+  <li><code>SVG_SPREADMETHOD_REFLECT</code> with type <code>const</code></li>
+  <li><code>SVG_SPREADMETHOD_REPEAT</code> with type <code>const</code></li>
+  <li><code>gradientUnits</code> with type <code>attribute</code></li>
+  <li><code>gradientTransform</code> with type <code>attribute</code></li>
+  <li><code>spreadMethod</code> with type <code>attribute</code></li>
+  <li><code>SVGLinearGradientElement</code> with type <code>interface</code></li>
+  <li><code>x1</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/shapes.html#LineElementX1Attribute"><code>x1</code></a> with type <code>element-attr</code> for <code>line</code></li>
+  <li><code>y1</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/shapes.html#LineElementY1Attribute"><code>y1</code></a> with type <code>element-attr</code> for <code>line</code></li>
+  <li><code>x2</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/shapes.html#LineElementX2Attribute"><code>x2</code></a> with type <code>element-attr</code> for <code>line</code></li>
+  <li><code>y2</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/shapes.html#LineElementY2Attribute"><code>y2</code></a> with type <code>element-attr</code> for <code>line</code></li>
+  <li><code>SVGRadialGradientElement</code> with type <code>interface</code></li>
+  <li><code>cx</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#CxProperty"><code>cx</code></a> with type <code>property</code></li>
+  <li><code>cy</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#CyProperty"><code>cy</code></a> with type <code>property</code></li>
+  <li><code>r</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#RProperty"><code>r</code></a> with type <code>property</code></li>
+  <li><code>fx</code> with type <code>attribute</code></li>
+  <li><code>fy</code> with type <code>attribute</code></li>
+  <li><code>fr</code> with type <code>attribute</code></li>
+  <li><code>SVGStopElement</code> with type <code>interface</code></li>
+  <li><code>offset</code> with type <code>attribute</code></li>
+  <li><code>SVGPatternElement</code> with type <code>interface</code></li>
+  <li><code>patternUnits</code> with type <code>attribute</code></li>
+  <li><code>patternContentUnits</code> with type <code>attribute</code></li>
+  <li><code>patternTransform</code> with type <code>attribute</code></li>
+  <li><code>x</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#XProperty"><code>x</code></a> with type <code>property</code></li>
+  <li><code>y</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/geometry.html#YProperty"><code>y</code></a> with type <code>property</code></li>
+  <li><code>width</code> with type <code>attribute</code></li>
+  <li><code>height</code> with type <code>attribute</code></li>
+  <li><code>SVGScriptElement</code> with type <code>interface</code></li>
+  <li><code>type</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute"><code>type</code></a> with type <code>element-attr</code> for <code>style</code></li>
+  <li><code>crossOrigin</code> with type <code>attribute</code></li>
+  <li><code>SVGAElement</code> with type <code>interface</code></li>
+  <li><code>target</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/linking.html#AElementTargetAttribute"><code>target</code></a> with type <code>element-attr</code> for <code>a</code></li>
+  <li><code>download</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/linking.html#AElementDownloadAttribute"><code>download</code></a> with type <code>element-attr</code> for <code>a</code></li>
+  <li><code>ping</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/linking.html#AElementPingAttribute"><code>ping</code></a> with type <code>element-attr</code> for <code>a</code></li>
+  <li><code>rel</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/linking.html#AElementRelAttribute"><code>rel</code></a> with type <code>element-attr</code> for <code>a</code></li>
+  <li><code>relList</code> with type <code>attribute</code></li>
+  <li><code>hreflang</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/linking.html#AElementHreflangAttribute"><code>hreflang</code></a> with type <code>element-attr</code> for <code>a</code></li>
+  <li><code>type</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute"><code>type</code></a> with type <code>element-attr</code> for <code>style</code></li>
+  <li><code>text</code> with type <code>attribute</code>, but found <a href="https://svgwg.org/svg2-draft/text.html#elementdef-text"><code>text</code></a> with type <code>element</code></li>
+  <li><code>referrerPolicy</code> with type <code>attribute</code></li>
+  <li><code>SVGViewElement</code> with type <code>interface</code></li>
+  <li><code>rootElement</code> with type <code>attribute</code></li>
   </ul></li>
   <li><a href="https://w3c.github.io/selection-api/">Selection API</a>:
   <ul>
@@ -809,7 +1179,7 @@
   <li><code>multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)</code> with type <code>method</code></li>
   </ul></li>
   </ul>
-  <p>=&gt; 392 properties without definition found in 44 specifications</p>
+  <p>=&gt; 758 properties without definition found in 45 specifications</p>
   </section>
   <section id="possibly-no-definition-for-css-properties" class="level2">
   <h2>Possibly no definition for CSS properties</h2>
@@ -1713,6 +2083,41 @@
   <li><a href="https://www.w3.org/TR/smil/"><code>https://www.w3.org/TR/smil/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/web-animations/"><code>https://w3c.github.io/web-animations/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2016/CR-SVG2-20160915/"><code>https://www.w3.org/TR/2016/CR-SVG2-20160915/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2015/WD-svg-markers-20150407/"><code>https://www.w3.org/TR/2015/WD-svg-markers-20150407/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2015/WD-svg-strokes-20150407/"><code>https://www.w3.org/TR/2015/WD-svg-strokes-20150407/</code></a> but does not list it in its references</li>
+  </ul></li>
+  <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/svg-integration/"><code>https://www.w3.org/TR/svg-integration/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2012/CR-WebIDL-20120419/"><code>https://www.w3.org/TR/2012/CR-WebIDL-20120419/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/filter-effects/"><code>https://www.w3.org/TR/filter-effects/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-cascade-3/"><code>https://www.w3.org/TR/css-cascade-3/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/wai-aria/"><code>https://www.w3.org/TR/wai-aria/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/selection-api/"><code>https://w3c.github.io/selection-api/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-mediaqueries/"><code>https://www.w3.org/TR/css3-mediaqueries/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2013/REC-css-style-attr-20131107/"><code>https://www.w3.org/TR/2013/REC-css-style-attr-20131107/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-writing-modes/"><code>https://www.w3.org/TR/css3-writing-modes/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-position-3/"><code>https://www.w3.org/TR/css-position-3/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-exclusions/"><code>https://www.w3.org/TR/css3-exclusions/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-shapes/"><code>https://www.w3.org/TR/css-shapes/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-backgrounds-3/"><code>https://www.w3.org/TR/css-backgrounds-3/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-box-3/"><code>https://www.w3.org/TR/css-box-3/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-content-3/"><code>https://www.w3.org/TR/css-content-3/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/resource-hints/"><code>https://www.w3.org/TR/resource-hints/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2003/REC-MathML2-20031021/"><code>https://www.w3.org/TR/2003/REC-MathML2-20031021/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/orientation-event/"><code>https://www.w3.org/TR/orientation-event/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-selectors-3/"><code>https://www.w3.org/TR/css-selectors-3/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/xlink/"><code>https://www.w3.org/TR/xlink/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2001/REC-xlink-20010627/"><code>https://www.w3.org/TR/2001/REC-xlink-20010627/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css3-transforms/"><code>https://www.w3.org/TR/css3-transforms/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/cssom/"><code>https://www.w3.org/TR/cssom/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/core-aam-1.1/"><code>https://www.w3.org/TR/core-aam-1.1/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/accname-aam-1.1/"><code>https://www.w3.org/TR/accname-aam-1.1/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/smil/"><code>https://www.w3.org/TR/smil/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/web-animations/"><code>https://w3c.github.io/web-animations/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2015/WD-svg-markers-20150407/"><code>https://www.w3.org/TR/2015/WD-svg-markers-20150407/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2015/WD-svg-strokes-20150407/"><code>https://www.w3.org/TR/2015/WD-svg-strokes-20150407/</code></a> but does not list it in its references</li>
   </ul></li>
@@ -1839,7 +2244,7 @@
   </ul></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 582 missing references for links found in 170 specifications</p>
+  <p>=&gt; 614 missing references for links found in 171 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -1885,8 +2290,8 @@
   <li><a href="https://drafts.fxtf.org/compositing-2/">Compositing and Blending Level 2</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/2dcontext2/"><code>https://www.w3.org/TR/2dcontext2/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
-  <li><a href="https://www.w3.org/TR/2003/REC-SVG11-20030114/"><code>https://www.w3.org/TR/2003/REC-SVG11-20030114/</code></a> but related reference &quot;SVG&quot; uses URL <a href="https://www.w3.org/TR/SVG/"><code>https://www.w3.org/TR/SVG/</code></a></li>
-  <li><a href="https://www.w3.org/TR/2011/REC-SVG11-20110816/"><code>https://www.w3.org/TR/2011/REC-SVG11-20110816/</code></a> but related reference &quot;SVG&quot; uses URL <a href="https://www.w3.org/TR/SVG/"><code>https://www.w3.org/TR/SVG/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2003/REC-SVG11-20030114/"><code>https://www.w3.org/TR/2003/REC-SVG11-20030114/</code></a> but related reference &quot;SVG11&quot; uses URL <a href="https://www.w3.org/TR/SVG11/"><code>https://www.w3.org/TR/SVG11/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2011/REC-SVG11-20110816/"><code>https://www.w3.org/TR/2011/REC-SVG11-20110816/</code></a> but related reference &quot;SVG11&quot; uses URL <a href="https://www.w3.org/TR/SVG11/"><code>https://www.w3.org/TR/SVG11/</code></a></li>
   <li><a href="https://www.w3.org/TR/2dcontext/"><code>https://www.w3.org/TR/2dcontext/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/contact-api/spec/">Contact Picker API</a> links to <a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -2099,7 +2504,7 @@
   </ul></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a> links to <a href="https://w3c.github.io/manifest/"><code>https://w3c.github.io/manifest/</code></a> but related reference &quot;MANIFEST&quot; uses URL <a href="https://www.w3.org/TR/appmanifest/"><code>https://www.w3.org/TR/appmanifest/</code></a></li>
   <li><a href="https://wicg.github.io/video-rvfc/">HTMLVideoElement.requestVideoFrameCallback()</a> links to <a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
-  <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a> links to <a href="https://w3c.github.io/webrtc-pc/"><code>https://w3c.github.io/webrtc-pc/</code></a> but related reference &quot;WEBRTC&quot; uses URL <a href="https://www.w3.org/TR/webrtc/"><code>https://www.w3.org/TR/webrtc/</code></a></li>
+  <li><a href="https://w3c.github.io/webrtc-identity/">Identity for WebRTC 1.0</a> links to <a href="https://w3c.github.io/webrtc-pc/"><code>https://w3c.github.io/webrtc-pc/</code></a> but related reference &quot;WEBRTC&quot; uses URL <a href="https://www.w3.org/TR/webrtc/"><code>https://www.w3.org/TR/webrtc/</code></a></li>
   <li><a href="https://wicg.github.io/idle-detection/">Idle Detection API</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
@@ -2247,6 +2652,31 @@
   <li><a href="https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/"><code>https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/</code></a> but related reference &quot;UAAG20&quot; uses URL <a href="https://www.w3.org/TR/UAAG20/"><code>https://www.w3.org/TR/UAAG20/</code></a></li>
   <li><a href="https://www.w3.org/TR/2008/REC-CSS2-20080411/"><code>https://www.w3.org/TR/2008/REC-CSS2-20080411/</code></a> but related reference &quot;CSS2&quot; uses URL <a href="https://www.w3.org/TR/CSS2"><code>https://www.w3.org/TR/CSS2</code></a></li>
   </ul></li>
+  <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2008/REC-xml-20081126/"><code>https://www.w3.org/TR/2008/REC-xml-20081126/</code></a> but related reference &quot;xml&quot; uses URL <a href="https://www.w3.org/TR/xml"><code>https://www.w3.org/TR/xml</code></a></li>
+  <li><a href="https://www.w3.org/TR/2006/REC-xml-names-20060816/"><code>https://www.w3.org/TR/2006/REC-xml-names-20060816/</code></a> but related reference &quot;xml-names&quot; uses URL <a href="https://www.w3.org/TR/xml-names"><code>https://www.w3.org/TR/xml-names</code></a></li>
+  <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;dom&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;css-values&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2011/REC-CSS2-20110607/"><code>https://www.w3.org/TR/2011/REC-CSS2-20110607/</code></a> but related reference &quot;CSS2&quot; uses URL <a href="https://www.w3.org/TR/CSS2"><code>https://www.w3.org/TR/CSS2</code></a></li>
+  <li><a href="https://www.w3.org/TR/compositing/"><code>https://www.w3.org/TR/compositing/</code></a> but related reference &quot;compositing-1&quot; uses URL <a href="https://www.w3.org/TR/compositing-1/"><code>https://www.w3.org/TR/compositing-1/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2015/CR-compositing-1-20150113/"><code>https://www.w3.org/TR/2015/CR-compositing-1-20150113/</code></a> but related reference &quot;compositing-1&quot; uses URL <a href="https://www.w3.org/TR/compositing-1/"><code>https://www.w3.org/TR/compositing-1/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2015/CR-compositing-1-20150113"><code>https://www.w3.org/TR/2015/CR-compositing-1-20150113</code></a> but related reference &quot;compositing-1&quot; uses URL <a href="https://www.w3.org/TR/compositing-1/"><code>https://www.w3.org/TR/compositing-1/</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;css-values&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2014/CR-geometry-1-20141125/"><code>https://www.w3.org/TR/2014/CR-geometry-1-20141125/</code></a> but related reference &quot;geometry-1&quot; uses URL <a href="https://www.w3.org/TR/geometry-1/"><code>https://www.w3.org/TR/geometry-1/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2014/WD-geometry-1-20140522/"><code>https://www.w3.org/TR/2014/WD-geometry-1-20140522/</code></a> but related reference &quot;geometry-1&quot; uses URL <a href="https://www.w3.org/TR/geometry-1/"><code>https://www.w3.org/TR/geometry-1/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2014/CR-html5-20140204/"><code>https://www.w3.org/TR/2014/CR-html5-20140204/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
+  <li><a href="https://w3c.github.io/svg-aam/"><code>https://w3c.github.io/svg-aam/</code></a> but related reference &quot;svg-aam-1.0&quot; uses URL <a href="https://www.w3.org/TR/svg-aam-1.0/"><code>https://www.w3.org/TR/svg-aam-1.0/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2014/WD-dom-20140204/"><code>https://www.w3.org/TR/2014/WD-dom-20140204/</code></a> but related reference &quot;dom&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2011/WD-css3-fonts-20111004/"><code>https://www.w3.org/TR/2011/WD-css3-fonts-20111004/</code></a> but related reference &quot;css-fonts-3&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2001/REC-smil-animation-20010904/"><code>https://www.w3.org/TR/2001/REC-smil-animation-20010904/</code></a> but related reference &quot;smil-animation&quot; uses URL <a href="https://www.w3.org/TR/smil-animation/"><code>https://www.w3.org/TR/smil-animation/</code></a></li>
+  <li><a href="https://w3c.github.io/clipboard-apis/"><code>https://w3c.github.io/clipboard-apis/</code></a> but related reference &quot;clipboard-apis&quot; uses URL <a href="https://www.w3.org/TR/clipboard-apis/"><code>https://www.w3.org/TR/clipboard-apis/</code></a></li>
+  <li><a href="https://w3c.github.io/graphics-aria/"><code>https://w3c.github.io/graphics-aria/</code></a> but related reference &quot;graphics-aria-1.0&quot; uses URL <a href="https://www.w3.org/TR/graphics-aria-1.0/"><code>https://www.w3.org/TR/graphics-aria-1.0/</code></a></li>
+  <li><a href="https://www.w3.org/TR/referrer-policy/"><code>https://www.w3.org/TR/referrer-policy/</code></a> but related reference &quot;ReferrerPolicy&quot; uses URL <a href="https://w3c.github.io/webappsec-referrer-policy/"><code>https://w3c.github.io/webappsec-referrer-policy/</code></a></li>
+  <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;uievents&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/"><code>https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/</code></a> but related reference &quot;UAAG20&quot; uses URL <a href="https://www.w3.org/TR/UAAG20/"><code>https://www.w3.org/TR/UAAG20/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2008/REC-CSS2-20080411/"><code>https://www.w3.org/TR/2008/REC-CSS2-20080411/</code></a> but related reference &quot;CSS2&quot; uses URL <a href="https://www.w3.org/TR/CSS2"><code>https://www.w3.org/TR/CSS2</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
@@ -2279,6 +2709,7 @@
   <li><a href="https://www.w3.org/TR/smil-animation/"><code>https://www.w3.org/TR/smil-animation/</code></a> but related reference &quot;SMILANIM&quot; uses URL <a href="http://www.w3.org/TR/2001/REC-smil-animation-20010904/"><code>http://www.w3.org/TR/2001/REC-smil-animation-20010904/</code></a></li>
   </ul></li>
   <li><a href="https://privacycg.github.io/storage-access/">The Storage Access API</a> links to <a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
+  <li><a href="https://w3c.github.io/dnt/drafts/tracking-dnt.html">Tracking Preference Expression (DNT)</a> links to <a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">Trusted Types</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
@@ -2349,7 +2780,7 @@
   <li><a href="https://immersive-web.github.io/webxr-gamepads-module/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   <li><a href="https://immersive-web.github.io/webxr-hand-input/">WebXR Hand Input Module - Level 1</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   </ul>
-  <p>=&gt; 313 inconsistent references for links found in 176 specifications</p>
+  <p>=&gt; 336 inconsistent references for links found in 178 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   <section id="external-links-to-private-terms" class="level2">
@@ -3082,7 +3513,7 @@
   <li><a href="https://html.spec.whatwg.org/#event-loop-processing-model"><code>https://html.spec.whatwg.org/#event-loop-processing-model</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#run-the-animation-frame-callbacks"><code>https://html.spec.whatwg.org/#run-the-animation-frame-callbacks</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a>:
+  <li><a href="https://w3c.github.io/webrtc-identity/">Identity for WebRTC 1.0</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/webrtc/#set-pc-configuration"><code>https://www.w3.org/TR/webrtc/#set-pc-configuration</code></a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/#dfn-offerer-s-system-state"><code>https://w3c.github.io/webrtc-pc/#dfn-offerer-s-system-state</code></a></li>
@@ -3589,6 +4020,26 @@
   <li><a href="https://w3c.github.io/selection-api/#dfn-selection"><code>https://w3c.github.io/selection-api/#dfn-selection</code></a></li>
   <li><a href="https://fetch.spec.whatwg.org/#concept-cors-check"><code>https://fetch.spec.whatwg.org/#concept-cors-check</code></a></li>
   </ul></li>
+  <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a>:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/#reflect"><code>https://html.spec.whatwg.org/#reflect</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#set-of-comma-separated-tokens"><code>https://html.spec.whatwg.org/#set-of-comma-separated-tokens</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#valid-integer"><code>https://html.spec.whatwg.org/#valid-integer</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#boolean-attribute"><code>https://html.spec.whatwg.org/#boolean-attribute</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#global-attributes"><code>https://html.spec.whatwg.org/#global-attributes</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#cors-settings-attribute"><code>https://html.spec.whatwg.org/#cors-settings-attribute</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#focused"><code>https://html.spec.whatwg.org/#focused</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#focusable"><code>https://html.spec.whatwg.org/#focusable</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#create-a-potential-cors-request"><code>https://html.spec.whatwg.org/#create-a-potential-cors-request</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#valid-browsing-context-name"><code>https://html.spec.whatwg.org/#valid-browsing-context-name</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#ping"><code>https://html.spec.whatwg.org/#ping</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#mime-type"><code>https://html.spec.whatwg.org/#mime-type</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#limited-to-only-known-values"><code>https://html.spec.whatwg.org/#limited-to-only-known-values</code></a></li>
+  <li><a href="https://drafts.fxtf.org/filter-effects/#operating-coordinate-space"><code>https://drafts.fxtf.org/filter-effects/#operating-coordinate-space</code></a></li>
+  <li><a href="https://w3c.github.io/selection-api/#dfn-direction"><code>https://w3c.github.io/selection-api/#dfn-direction</code></a></li>
+  <li><a href="https://w3c.github.io/selection-api/#dfn-selection"><code>https://w3c.github.io/selection-api/#dfn-selection</code></a></li>
+  <li><a href="https://fetch.spec.whatwg.org/#concept-cors-check"><code>https://fetch.spec.whatwg.org/#concept-cors-check</code></a></li>
+  </ul></li>
   <li><a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a>:
   <ul>
   <li><a href="https://w3c.github.io/web-animations/#concept-animation"><code>https://w3c.github.io/web-animations/#concept-animation</code></a></li>
@@ -3757,6 +4208,11 @@
   <li><a href="https://drafts.csswg.org/css-animations-2/#owning-element"><code>https://drafts.csswg.org/css-animations-2/#owning-element</code></a></li>
   <li><a href="https://drafts.csswg.org/css-transitions-2/#owning-element"><code>https://drafts.csswg.org/css-transitions-2/#owning-element</code></a></li>
   <li><a href="https://drafts.csswg.org/css-style-attr/#style-attribute"><code>https://drafts.csswg.org/css-style-attr/#style-attribute</code></a></li>
+  </ul></li>
+  <li><a href="https://w3c.github.io/manifest-app-info/">Web App Manifest - Application Information</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/accname-1.2/#dfn-accessible-description"><code>https://www.w3.org/TR/accname-1.2/#dfn-accessible-description</code></a></li>
+  <li><a href="https://www.w3.org/TR/accname-1.2/#dfn-accessible-name"><code>https://www.w3.org/TR/accname-1.2/#dfn-accessible-name</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/manifest/">Web Application Manifest</a>:
   <ul>
@@ -4158,7 +4614,7 @@
   <li><a href="https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm"><code>https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 1223 problematic external links found in 193 specifications</p>
+  <p>=&gt; 1242 problematic external links found in 195 specifications</p>
   </section>
   <section id="external-links-that-neither-target-definitions-nor-headings" class="level2">
   <h2>External links that neither target definitions nor headings</h2>
@@ -4873,7 +5329,7 @@
   <li><a href="https://w3c.github.io/html-aam/#el-form-associated-custom-element"><code>https://w3c.github.io/html-aam/#el-form-associated-custom-element</code></a></li>
   <li><a href="https://w3c.github.io/html-aam/#el-autonomous-custom-element"><code>https://w3c.github.io/html-aam/#el-autonomous-custom-element</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a>:
+  <li><a href="https://w3c.github.io/webrtc-identity/">Identity for WebRTC 1.0</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/webrtc/#sec.stats-model"><code>https://www.w3.org/TR/webrtc/#sec.stats-model</code></a></li>
   </ul></li>
@@ -4977,6 +5433,67 @@
   <li><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 2</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/hr-time-2/#idl-def-performance"><code>https://www.w3.org/TR/hr-time-2/#idl-def-performance</code></a></li>
+  </ul></li>
+  <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a>:
+  <ul>
+  <li><a href="https://dom.spec.whatwg.org/#ref-for-dom-event-type"><code>https://dom.spec.whatwg.org/#ref-for-dom-event-type</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-atomic"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-atomic</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-busy"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-busy</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-checked"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-checked</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-colcount"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-colcount</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-colindex"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-colindex</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-colspan"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-colspan</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-controls"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-controls</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-current"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-current</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-describedby"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-describedby</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-details"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-details</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-disabled"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-disabled</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-expanded"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-expanded</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-flowto"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-flowto</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-hidden"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-hidden</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-invalid"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-invalid</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-keyshortcuts"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-keyshortcuts</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-label"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-label</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-level"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-level</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-live"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-live</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-modal"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-modal</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-multiline"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-multiline</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-orientation"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-orientation</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-owns"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-owns</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-posinset"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-posinset</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-pressed"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-pressed</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-readonly"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-readonly</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-relevant"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-relevant</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-required"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-required</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-selected"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-selected</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-setsize"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-setsize</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-sort"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-sort</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext"><code>https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#group"><code>https://www.w3.org/TR/wai-aria-1.1/#group</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#radiogroup"><code>https://www.w3.org/TR/wai-aria-1.1/#radiogroup</code></a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#heading"><code>https://www.w3.org/TR/wai-aria-1.1/#heading</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-background/#the-background-position"><code>https://www.w3.org/TR/css3-background/#the-background-position</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-text-3/#hyphens-property"><code>https://www.w3.org/TR/css-text-3/#hyphens-property</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-images/#intrinsic-dimensions"><code>https://www.w3.org/TR/css3-images/#intrinsic-dimensions</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-images/#intrinsic-width"><code>https://www.w3.org/TR/css3-images/#intrinsic-width</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-images/#intrinsic-height"><code>https://www.w3.org/TR/css3-images/#intrinsic-height</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio"><code>https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio</code></a></li>
   </ul></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a>:
   <ul>
@@ -5236,7 +5753,7 @@
   <li><a href="https://heycam.github.io/webidl/#dfn-DOMException"><code>https://heycam.github.io/webidl/#dfn-DOMException</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 865 problematic external links found in 69 specifications</p>
+  <p>=&gt; 923 problematic external links found in 70 specifications</p>
   </section>
   <section id="broken-external-links" class="level2">
   <h2>Broken external links</h2>
@@ -5767,7 +6284,7 @@
   <li><a href="https://w3c.github.io/manifest/#dfn-manifest"><code>https://w3c.github.io/manifest/#dfn-manifest</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-color/#css2-system"><code>https://www.w3.org/TR/css3-color/#css2-system</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a>:
+  <li><a href="https://w3c.github.io/webrtc-identity/">Identity for WebRTC 1.0</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/webrtc/#dom-rtcconfiguration-peeridentity"><code>https://www.w3.org/TR/webrtc/#dom-rtcconfiguration-peeridentity</code></a></li>
   <li><a href="https://w3c.github.io/webrtc-pc/#dfn-create-an-offer"><code>https://w3c.github.io/webrtc-pc/#dfn-create-an-offer</code></a></li>
@@ -6026,6 +6543,23 @@
   <li><a href="https://www.w3.org/TR/css-color-3/#svg-color"><code>https://www.w3.org/TR/css-color-3/#svg-color</code></a></li>
   <li><a href="https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act"><code>https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act</code></a></li>
   </ul></li>
+  <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a>:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/#specially-focusable"><code>https://html.spec.whatwg.org/#specially-focusable</code></a></li>
+  <li><a href="https://www.w3.org/TR/geometry-1/#dom-dompoint"><code>https://www.w3.org/TR/geometry-1/#dom-dompoint</code></a></li>
+  <li><a href="https://www.w3.org/TR/geometry-1/#dom-dompointreadonly"><code>https://www.w3.org/TR/geometry-1/#dom-dompointreadonly</code></a></li>
+  <li><a href="https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly"><code>https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly</code></a></li>
+  <li><a href="https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target"><code>https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target</code></a></li>
+  <li><a href="https://w3c.github.io/svg-aam/#details-id-69"><code>https://w3c.github.io/svg-aam/#details-id-69</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-mediaqueries/#syntax"><code>https://www.w3.org/TR/css3-mediaqueries/#syntax</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-position-3/#vp"><code>https://www.w3.org/TR/css-position-3/#vp</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations/#animation-interpolation"><code>https://drafts.csswg.org/web-animations/#animation-interpolation</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations/#discrete-animation-type-section"><code>https://drafts.csswg.org/web-animations/#discrete-animation-type-section</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations/#real-number-animation-type"><code>https://drafts.csswg.org/web-animations/#real-number-animation-type</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-color-3/#colorunits"><code>https://www.w3.org/TR/css-color-3/#colorunits</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-color-3/#svg-color"><code>https://www.w3.org/TR/css-color-3/#svg-color</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act"><code>https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/mediacapture-streams/#event-mediastreamtrack-overconstrained"><code>https://www.w3.org/TR/mediacapture-streams/#event-mediastreamtrack-overconstrained</code></a></li>
@@ -6231,7 +6765,7 @@
   <li><a href="https://immersive-web.github.io/layers/#session"><code>https://immersive-web.github.io/layers/#session</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 551 problematic external links found in 146 specifications</p>
+  <p>=&gt; 565 problematic external links found in 147 specifications</p>
   </section>
   <section id="external-links-to-terms-that-no-longer-exist-in-the-latest-version-of-the-targeted-specification" class="level2">
   <h2>External links to terms that no longer exist in the latest version of the targeted specification</h2>
@@ -6327,7 +6861,7 @@
   <li><a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
   <li><a href="https://www.w3.org/TR/custom-elements/"><code>https://www.w3.org/TR/custom-elements/</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a>:
+  <li><a href="https://w3c.github.io/webrtc-identity/">Identity for WebRTC 1.0</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
   <li><a href="https://www.w3.org/TR/webmessaging/"><code>https://www.w3.org/TR/webmessaging/</code></a></li>
@@ -6402,6 +6936,11 @@
   <ul>
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/dnt/drafts/tracking-dnt.html">Tracking Preference Expression (DNT)</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
+  <li><a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/">Trusted Types</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
@@ -6442,7 +6981,7 @@
   <li><a href="https://www.w3.org/TR/cors/"><code>https://www.w3.org/TR/cors/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 57 problematic external links found in 48 specifications</p>
+  <p>=&gt; 59 problematic external links found in 49 specifications</p>
   </section>
   <section id="external-links-that-use-a-dated-url" class="level2">
   <h2>External links that use a dated URL</h2>
@@ -6642,7 +7181,7 @@
   <li><a href="https://www.w3.org/TR/1999/REC-xpath-19991116/"><code>https://www.w3.org/TR/1999/REC-xpath-19991116/</code></a></li>
   <li><a href="https://www.w3.org/TR/1999/REC-xslt-19991116"><code>https://www.w3.org/TR/1999/REC-xslt-19991116</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/webrtc-identity/identity.html">Identity for WebRTC 1.0</a>:
+  <li><a href="https://w3c.github.io/webrtc-identity/">Identity for WebRTC 1.0</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/"><code>https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</code></a></li>
   </ul></li>
@@ -6671,6 +7210,30 @@
   <li><a href="https://www.w3.org/TR/2012/WD-css3-regions-20120823/"><code>https://www.w3.org/TR/2012/WD-css3-regions-20120823/</code></a></li>
   <li><a href="https://www.w3.org/TR/2011/WD-css3-gcpm-20111129/"><code>https://www.w3.org/TR/2011/WD-css3-gcpm-20111129/</code></a></li>
   <li><a href="https://www.w3.org/TR/2006/WD-css3-page-20061010"><code>https://www.w3.org/TR/2006/WD-css3-page-20061010</code></a></li>
+  </ul></li>
+  <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2008/REC-xml-20081126/"><code>https://www.w3.org/TR/2008/REC-xml-20081126/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2006/REC-xml-names-20060816/"><code>https://www.w3.org/TR/2006/REC-xml-names-20060816/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2008/REC-SMIL3-20081201/"><code>https://www.w3.org/TR/2008/REC-SMIL3-20081201/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2011/REC-CSS2-20110607/"><code>https://www.w3.org/TR/2011/REC-CSS2-20110607/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2012/CR-WebIDL-20120419/"><code>https://www.w3.org/TR/2012/CR-WebIDL-20120419/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2015/CR-compositing-1-20150113/"><code>https://www.w3.org/TR/2015/CR-compositing-1-20150113/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2015/CR-compositing-1-20150113"><code>https://www.w3.org/TR/2015/CR-compositing-1-20150113</code></a></li>
+  <li><a href="https://www.w3.org/TR/2014/CR-geometry-1-20141125/"><code>https://www.w3.org/TR/2014/CR-geometry-1-20141125/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2014/WD-geometry-1-20140522/"><code>https://www.w3.org/TR/2014/WD-geometry-1-20140522/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2014/CR-html5-20140204/"><code>https://www.w3.org/TR/2014/CR-html5-20140204/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2014/WD-dom-20140204/"><code>https://www.w3.org/TR/2014/WD-dom-20140204/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2013/REC-css-style-attr-20131107/"><code>https://www.w3.org/TR/2013/REC-css-style-attr-20131107/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2011/WD-css3-fonts-20111004/"><code>https://www.w3.org/TR/2011/WD-css3-fonts-20111004/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2003/REC-MathML2-20031021/"><code>https://www.w3.org/TR/2003/REC-MathML2-20031021/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2001/REC-smil-animation-20010904/"><code>https://www.w3.org/TR/2001/REC-smil-animation-20010904/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2001/REC-xlink-20010627/"><code>https://www.w3.org/TR/2001/REC-xlink-20010627/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/"><code>https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2008/REC-CSS2-20080411/"><code>https://www.w3.org/TR/2008/REC-CSS2-20080411/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2016/CR-SVG2-20160915/"><code>https://www.w3.org/TR/2016/CR-SVG2-20160915/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2015/WD-svg-markers-20150407/"><code>https://www.w3.org/TR/2015/WD-svg-markers-20150407/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2015/WD-svg-strokes-20150407/"><code>https://www.w3.org/TR/2015/WD-svg-strokes-20150407/</code></a></li>
   </ul></li>
   <li><a href="https://svgwg.org/svg2-draft/">Scalable Vector Graphics (SVG) 2</a>:
   <ul>
@@ -6736,6 +7299,10 @@
   <ul>
   <li><a href="https://www.w3.org/TR/2015/WD-SVG2-20150409/"><code>https://www.w3.org/TR/2015/WD-SVG2-20150409/</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/dnt/drafts/tracking-dnt.html">Tracking Preference Expression (DNT)</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/"><code>https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/vibration/">Vibration API (Second Edition)</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/"><code>https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</code></a></li>
@@ -6749,7 +7316,7 @@
   <li><a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 142 problematic external links found in 53 specifications</p>
+  <p>=&gt; 164 problematic external links found in 55 specifications</p>
   </section>
   </body>
 </html>
