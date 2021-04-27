@@ -5,4 +5,6 @@ interface GPUCompilationMessage {
     readonly attribute GPUCompilationMessageType type;
     readonly attribute unsigned long long lineNum;
     readonly attribute unsigned long long linePos;
+    readonly attribute unsigned long long offset;
+    readonly attribute unsigned long long length;
 };

@@ -18,8 +18,8 @@ interface GPUQueue {
       GPUImageDataLayout dataLayout,
       GPUExtent3D size);
 
-    undefined copyImageBitmapToTexture(
-        GPUImageCopyImageBitmap source,
+    undefined copyExternalImageToTexture(
+        GPUImageCopyExternalImage source,
         GPUImageCopyTexture destination,
         GPUExtent3D copySize);
 };

@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% April 26, 2021
+% April 27, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -9194,7 +9194,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Image Resource {data-spec=true data-missingDfns=true data-ok=true}
+## Image Resource {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true}
 
 ### Spec info {.info}
 
@@ -9207,7 +9207,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Missing references for links: 
+     * [`https://www.w3.org/TR/wai-aria/`](https://www.w3.org/TR/wai-aria/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -16528,13 +16529,15 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 26 April 2021
+- Crawled version: 27 April 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
 ### Potential issue(s) {.anomalies}
 
 - External links to private terms:
+     * [`https://html.spec.whatwg.org/#the-image-argument-is-not-origin-clean`](https://html.spec.whatwg.org/#the-image-argument-is-not-origin-clean)
+     * [`https://html.spec.whatwg.org/#concept-canvas-origin-clean`](https://html.spec.whatwg.org/#concept-canvas-origin-clean)
      * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#cross-origin-isolated`](https://html.spec.whatwg.org/#cross-origin-isolated)
