@@ -11,7 +11,7 @@ interface CSSStyleSheet : StyleSheet {
 partial interface CSSStyleSheet {
   constructor(optional CSSStyleSheetInit options = {});
   Promise<CSSStyleSheet> replace(USVString text);
-  void replaceSync(USVString text);
+  undefined replaceSync(USVString text);
 };
 
 // Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)

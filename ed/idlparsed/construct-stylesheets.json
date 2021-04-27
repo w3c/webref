@@ -112,7 +112,7 @@
     "idlExtendedNames": {
       "CSSStyleSheet": [
         {
-          "fragment": "partial interface CSSStyleSheet {\n  constructor(optional CSSStyleSheetInit options = {});\n  Promise<CSSStyleSheet> replace(USVString text);\n  void replaceSync(USVString text);\n};",
+          "fragment": "partial interface CSSStyleSheet {\n  constructor(optional CSSStyleSheetInit options = {});\n  Promise<CSSStyleSheet> replace(USVString text);\n  undefined replaceSync(USVString text);\n};",
           "type": "interface",
           "name": "CSSStyleSheet",
           "inheritance": null,
@@ -191,7 +191,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -261,8 +261,7 @@
     "dependencies": {
       "CSSStyleSheet": [
         "CSSStyleSheetInit",
-        "CSSStyleSheet",
-        "void"
+        "CSSStyleSheet"
       ],
       "CSSStyleSheetInit": [
         "MediaList"
@@ -273,7 +272,6 @@
     },
     "externalDependencies": [
       "CSSStyleSheet",
-      "void",
       "MediaList",
       "DocumentOrShadowRoot"
     ],
