@@ -261,10 +261,28 @@
       "definedIn": "dt"
     },
     {
-      "id": "readdatagrams",
-      "href": "https://w3c.github.io/webtransport/#readdatagrams",
+      "id": "pulldatagrams",
+      "href": "https://w3c.github.io/webtransport/#pulldatagrams",
       "linkingText": [
-        "readDatagrams"
+        "pullDatagrams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagrams-transport-procedures",
+        "title": "Procedures",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "receivedatagrams",
+      "href": "https://w3c.github.io/webtransport/#receivedatagrams",
+      "linkingText": [
+        "receiveDatagrams"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -333,6 +351,46 @@
       "definedIn": "prose"
     },
     {
+      "id": "datagramduplexstream-readable",
+      "href": "https://w3c.github.io/webtransport/#datagramduplexstream-readable",
+      "linkingText": [
+        "[[Readable]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "7.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "datagramduplexstream-writable",
+      "href": "https://w3c.github.io/webtransport/#datagramduplexstream-writable",
+      "linkingText": [
+        "[[Writable]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "7.1"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "datagramduplexstream-create",
       "href": "https://w3c.github.io/webtransport/#datagramduplexstream-create",
       "linkingText": [
@@ -347,9 +405,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "duplex-stream",
-        "title": "DatagramDuplexStream Interface",
-        "number": "7"
+        "id": "datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "7.1"
       },
       "definedIn": "prose"
     },
@@ -367,9 +425,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "duplex-stream",
-        "title": "DatagramDuplexStream Interface",
-        "number": "7"
+        "id": "datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "7.1"
       },
       "definedIn": "prose"
     },
@@ -387,9 +445,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "duplex-stream",
-        "title": "DatagramDuplexStream Interface",
-        "number": "7"
+        "id": "datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "7.1"
       },
       "definedIn": "prose"
     },
@@ -409,7 +467,7 @@
       "heading": {
         "id": "duplex-stream-attributes",
         "title": "Attributes",
-        "number": "7.1"
+        "number": "7.2"
       },
       "definedIn": "dt"
     },
@@ -429,7 +487,7 @@
       "heading": {
         "id": "duplex-stream-attributes",
         "title": "Attributes",
-        "number": "7.1"
+        "number": "7.2"
       },
       "definedIn": "dt"
     },
@@ -666,6 +724,86 @@
       "href": "https://w3c.github.io/webtransport/#webtransport-datagrams",
       "linkingText": [
         "[[Datagrams]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-internal-slots",
+        "title": "Internal slots",
+        "number": "8.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "webtransport-incomingdatagramsqueue",
+      "href": "https://w3c.github.io/webtransport/#webtransport-incomingdatagramsqueue",
+      "linkingText": [
+        "[[IncomingDatagramsQueue]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-internal-slots",
+        "title": "Internal slots",
+        "number": "8.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "webtransport-incomingdatagramspullpromise",
+      "href": "https://w3c.github.io/webtransport/#webtransport-incomingdatagramspullpromise",
+      "linkingText": [
+        "[[IncomingDatagramsPullPromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-internal-slots",
+        "title": "Internal slots",
+        "number": "8.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "webtransport-incomingdatagramshighwatermark",
+      "href": "https://w3c.github.io/webtransport/#webtransport-incomingdatagramshighwatermark",
+      "linkingText": [
+        "[[IncomingDatagramsHighWaterMark]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-internal-slots",
+        "title": "Internal slots",
+        "number": "8.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "webtransport-incomingdatagramsexpirationduration",
+      "href": "https://w3c.github.io/webtransport/#webtransport-incomingdatagramsexpirationduration",
+      "linkingText": [
+        "[[IncomingDatagramsExpirationDuration]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
