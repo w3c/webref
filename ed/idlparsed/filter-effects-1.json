@@ -6,11 +6,41 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "SVGFilterElement",
+          "SVGFEBlendElement",
+          "SVGFEColorMatrixElement",
+          "SVGFEComponentTransferElement",
+          "SVGComponentTransferFunctionElement",
+          "SVGFEFuncRElement",
+          "SVGFEFuncGElement",
+          "SVGFEFuncBElement",
+          "SVGFEFuncAElement",
+          "SVGFECompositeElement",
+          "SVGFEConvolveMatrixElement",
+          "SVGFEDiffuseLightingElement",
+          "SVGFEDistantLightElement",
+          "SVGFEPointLightElement",
+          "SVGFESpotLightElement",
+          "SVGFEDisplacementMapElement",
+          "SVGFEDropShadowElement",
+          "SVGFEFloodElement",
+          "SVGFEGaussianBlurElement",
+          "SVGFEImageElement",
+          "SVGFEMergeElement",
+          "SVGFEMergeNodeElement",
+          "SVGFEMorphologyElement",
+          "SVGFEOffsetElement",
+          "SVGFESpecularLightingElement",
+          "SVGFETileElement",
+          "SVGFETurbulenceElement"
+        ]
+      }
     },
     "idlNames": {
       "SVGFilterElement": {
-        "fragment": "interface SVGFilterElement : SVGElement {\n  readonly attribute SVGAnimatedEnumeration filterUnits;\n  readonly attribute SVGAnimatedEnumeration primitiveUnits;\n  readonly attribute SVGAnimatedLength x;\n  readonly attribute SVGAnimatedLength y;\n  readonly attribute SVGAnimatedLength width;\n  readonly attribute SVGAnimatedLength height;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFilterElement : SVGElement {\n  readonly attribute SVGAnimatedEnumeration filterUnits;\n  readonly attribute SVGAnimatedEnumeration primitiveUnits;\n  readonly attribute SVGAnimatedLength x;\n  readonly attribute SVGAnimatedLength y;\n  readonly attribute SVGAnimatedLength width;\n  readonly attribute SVGAnimatedLength height;\n};",
         "type": "interface",
         "name": "SVGFilterElement",
         "inheritance": "SVGElement",
@@ -106,7 +136,17 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFilterPrimitiveStandardAttributes": {
@@ -195,7 +235,7 @@
         "partial": false
       },
       "SVGFEBlendElement": {
-        "fragment": "interface SVGFEBlendElement : SVGElement {\n\n  // Blend Mode Types\n  const unsigned short SVG_FEBLEND_MODE_UNKNOWN = 0;\n  const unsigned short SVG_FEBLEND_MODE_NORMAL = 1;\n  const unsigned short SVG_FEBLEND_MODE_MULTIPLY = 2;\n  const unsigned short SVG_FEBLEND_MODE_SCREEN = 3;\n  const unsigned short SVG_FEBLEND_MODE_DARKEN = 4;\n  const unsigned short SVG_FEBLEND_MODE_LIGHTEN = 5;\n  const unsigned short SVG_FEBLEND_MODE_OVERLAY = 6;\n  const unsigned short SVG_FEBLEND_MODE_COLOR_DODGE = 7;\n  const unsigned short SVG_FEBLEND_MODE_COLOR_BURN = 8;\n  const unsigned short SVG_FEBLEND_MODE_HARD_LIGHT = 9;\n  const unsigned short SVG_FEBLEND_MODE_SOFT_LIGHT = 10;\n  const unsigned short SVG_FEBLEND_MODE_DIFFERENCE = 11;\n  const unsigned short SVG_FEBLEND_MODE_EXCLUSION = 12;\n  const unsigned short SVG_FEBLEND_MODE_HUE = 13;\n  const unsigned short SVG_FEBLEND_MODE_SATURATION = 14;\n  const unsigned short SVG_FEBLEND_MODE_COLOR = 15;\n  const unsigned short SVG_FEBLEND_MODE_LUMINOSITY = 16;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedString in2;\n  readonly attribute SVGAnimatedEnumeration mode;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEBlendElement : SVGElement {\n\n  // Blend Mode Types\n  const unsigned short SVG_FEBLEND_MODE_UNKNOWN = 0;\n  const unsigned short SVG_FEBLEND_MODE_NORMAL = 1;\n  const unsigned short SVG_FEBLEND_MODE_MULTIPLY = 2;\n  const unsigned short SVG_FEBLEND_MODE_SCREEN = 3;\n  const unsigned short SVG_FEBLEND_MODE_DARKEN = 4;\n  const unsigned short SVG_FEBLEND_MODE_LIGHTEN = 5;\n  const unsigned short SVG_FEBLEND_MODE_OVERLAY = 6;\n  const unsigned short SVG_FEBLEND_MODE_COLOR_DODGE = 7;\n  const unsigned short SVG_FEBLEND_MODE_COLOR_BURN = 8;\n  const unsigned short SVG_FEBLEND_MODE_HARD_LIGHT = 9;\n  const unsigned short SVG_FEBLEND_MODE_SOFT_LIGHT = 10;\n  const unsigned short SVG_FEBLEND_MODE_DIFFERENCE = 11;\n  const unsigned short SVG_FEBLEND_MODE_EXCLUSION = 12;\n  const unsigned short SVG_FEBLEND_MODE_HUE = 13;\n  const unsigned short SVG_FEBLEND_MODE_SATURATION = 14;\n  const unsigned short SVG_FEBLEND_MODE_COLOR = 15;\n  const unsigned short SVG_FEBLEND_MODE_LUMINOSITY = 16;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedString in2;\n  readonly attribute SVGAnimatedEnumeration mode;\n};",
         "type": "interface",
         "name": "SVGFEBlendElement",
         "inheritance": "SVGElement",
@@ -535,11 +575,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEColorMatrixElement": {
-        "fragment": "interface SVGFEColorMatrixElement : SVGElement {\n\n  // Color Matrix Types\n  const unsigned short SVG_FECOLORMATRIX_TYPE_UNKNOWN = 0;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_MATRIX = 1;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_SATURATE = 2;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_HUEROTATE = 3;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA = 4;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedEnumeration type;\n  readonly attribute SVGAnimatedNumberList values;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEColorMatrixElement : SVGElement {\n\n  // Color Matrix Types\n  const unsigned short SVG_FECOLORMATRIX_TYPE_UNKNOWN = 0;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_MATRIX = 1;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_SATURATE = 2;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_HUEROTATE = 3;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA = 4;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedEnumeration type;\n  readonly attribute SVGAnimatedNumberList values;\n};",
         "type": "interface",
         "name": "SVGFEColorMatrixElement",
         "inheritance": "SVGElement",
@@ -675,11 +725,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEComponentTransferElement": {
-        "fragment": "interface SVGFEComponentTransferElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEComponentTransferElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n};",
         "type": "interface",
         "name": "SVGFEComponentTransferElement",
         "inheritance": "SVGElement",
@@ -700,11 +760,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGComponentTransferFunctionElement": {
-        "fragment": "interface SVGComponentTransferFunctionElement : SVGElement {\n\n  // Component Transfer Types\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN = 0;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY = 1;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_TABLE = 2;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE = 3;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_LINEAR = 4;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_GAMMA = 5;\n\n  readonly attribute SVGAnimatedEnumeration type;\n  readonly attribute SVGAnimatedNumberList tableValues;\n  readonly attribute SVGAnimatedNumber slope;\n  readonly attribute SVGAnimatedNumber intercept;\n  readonly attribute SVGAnimatedNumber amplitude;\n  readonly attribute SVGAnimatedNumber exponent;\n  readonly attribute SVGAnimatedNumber offset;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGComponentTransferFunctionElement : SVGElement {\n\n  // Component Transfer Types\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN = 0;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY = 1;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_TABLE = 2;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE = 3;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_LINEAR = 4;\n  const unsigned short SVG_FECOMPONENTTRANSFER_TYPE_GAMMA = 5;\n\n  readonly attribute SVGAnimatedEnumeration type;\n  readonly attribute SVGAnimatedNumberList tableValues;\n  readonly attribute SVGAnimatedNumber slope;\n  readonly attribute SVGAnimatedNumber intercept;\n  readonly attribute SVGAnimatedNumber amplitude;\n  readonly attribute SVGAnimatedNumber exponent;\n  readonly attribute SVGAnimatedNumber offset;\n};",
         "type": "interface",
         "name": "SVGComponentTransferFunctionElement",
         "inheritance": "SVGElement",
@@ -917,47 +987,97 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEFuncRElement": {
-        "fragment": "interface SVGFEFuncRElement : SVGComponentTransferFunctionElement {\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEFuncRElement : SVGComponentTransferFunctionElement {\n};",
         "type": "interface",
         "name": "SVGFEFuncRElement",
         "inheritance": "SVGComponentTransferFunctionElement",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEFuncGElement": {
-        "fragment": "interface SVGFEFuncGElement : SVGComponentTransferFunctionElement {\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEFuncGElement : SVGComponentTransferFunctionElement {\n};",
         "type": "interface",
         "name": "SVGFEFuncGElement",
         "inheritance": "SVGComponentTransferFunctionElement",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEFuncBElement": {
-        "fragment": "interface SVGFEFuncBElement : SVGComponentTransferFunctionElement {\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEFuncBElement : SVGComponentTransferFunctionElement {\n};",
         "type": "interface",
         "name": "SVGFEFuncBElement",
         "inheritance": "SVGComponentTransferFunctionElement",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEFuncAElement": {
-        "fragment": "interface SVGFEFuncAElement : SVGComponentTransferFunctionElement {\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEFuncAElement : SVGComponentTransferFunctionElement {\n};",
         "type": "interface",
         "name": "SVGFEFuncAElement",
         "inheritance": "SVGComponentTransferFunctionElement",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFECompositeElement": {
-        "fragment": "interface SVGFECompositeElement : SVGElement {\n\n  // Composite Operators\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_UNKNOWN = 0;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_OVER = 1;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_IN = 2;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_OUT = 3;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_ATOP = 4;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_XOR = 5;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_ARITHMETIC = 6;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedString in2;\n  readonly attribute SVGAnimatedEnumeration operator;\n  readonly attribute SVGAnimatedNumber k1;\n  readonly attribute SVGAnimatedNumber k2;\n  readonly attribute SVGAnimatedNumber k3;\n  readonly attribute SVGAnimatedNumber k4;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFECompositeElement : SVGElement {\n\n  // Composite Operators\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_UNKNOWN = 0;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_OVER = 1;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_IN = 2;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_OUT = 3;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_ATOP = 4;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_XOR = 5;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_ARITHMETIC = 6;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedString in2;\n  readonly attribute SVGAnimatedEnumeration operator;\n  readonly attribute SVGAnimatedNumber k1;\n  readonly attribute SVGAnimatedNumber k2;\n  readonly attribute SVGAnimatedNumber k3;\n  readonly attribute SVGAnimatedNumber k4;\n};",
         "type": "interface",
         "name": "SVGFECompositeElement",
         "inheritance": "SVGElement",
@@ -1187,11 +1307,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEConvolveMatrixElement": {
-        "fragment": "interface SVGFEConvolveMatrixElement : SVGElement {\n\n  // Edge Mode Values\n  const unsigned short SVG_EDGEMODE_UNKNOWN = 0;\n  const unsigned short SVG_EDGEMODE_DUPLICATE = 1;\n  const unsigned short SVG_EDGEMODE_WRAP = 2;\n  const unsigned short SVG_EDGEMODE_NONE = 3;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedInteger orderX;\n  readonly attribute SVGAnimatedInteger orderY;\n  readonly attribute SVGAnimatedNumberList kernelMatrix;\n  readonly attribute SVGAnimatedNumber divisor;\n  readonly attribute SVGAnimatedNumber bias;\n  readonly attribute SVGAnimatedInteger targetX;\n  readonly attribute SVGAnimatedInteger targetY;\n  readonly attribute SVGAnimatedEnumeration edgeMode;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthX;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthY;\n  readonly attribute SVGAnimatedBoolean preserveAlpha;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEConvolveMatrixElement : SVGElement {\n\n  // Edge Mode Values\n  const unsigned short SVG_EDGEMODE_UNKNOWN = 0;\n  const unsigned short SVG_EDGEMODE_DUPLICATE = 1;\n  const unsigned short SVG_EDGEMODE_WRAP = 2;\n  const unsigned short SVG_EDGEMODE_NONE = 3;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedInteger orderX;\n  readonly attribute SVGAnimatedInteger orderY;\n  readonly attribute SVGAnimatedNumberList kernelMatrix;\n  readonly attribute SVGAnimatedNumber divisor;\n  readonly attribute SVGAnimatedNumber bias;\n  readonly attribute SVGAnimatedInteger targetX;\n  readonly attribute SVGAnimatedInteger targetY;\n  readonly attribute SVGAnimatedEnumeration edgeMode;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthX;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthY;\n  readonly attribute SVGAnimatedBoolean preserveAlpha;\n};",
         "type": "interface",
         "name": "SVGFEConvolveMatrixElement",
         "inheritance": "SVGElement",
@@ -1445,11 +1575,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEDiffuseLightingElement": {
-        "fragment": "interface SVGFEDiffuseLightingElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber surfaceScale;\n  readonly attribute SVGAnimatedNumber diffuseConstant;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthX;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthY;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEDiffuseLightingElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber surfaceScale;\n  readonly attribute SVGAnimatedNumber diffuseConstant;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthX;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthY;\n};",
         "type": "interface",
         "name": "SVGFEDiffuseLightingElement",
         "inheritance": "SVGElement",
@@ -1530,11 +1670,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEDistantLightElement": {
-        "fragment": "interface SVGFEDistantLightElement : SVGElement {\n  readonly attribute SVGAnimatedNumber azimuth;\n  readonly attribute SVGAnimatedNumber elevation;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEDistantLightElement : SVGElement {\n  readonly attribute SVGAnimatedNumber azimuth;\n  readonly attribute SVGAnimatedNumber elevation;\n};",
         "type": "interface",
         "name": "SVGFEDistantLightElement",
         "inheritance": "SVGElement",
@@ -1570,11 +1720,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEPointLightElement": {
-        "fragment": "interface SVGFEPointLightElement : SVGElement {\n  readonly attribute SVGAnimatedNumber x;\n  readonly attribute SVGAnimatedNumber y;\n  readonly attribute SVGAnimatedNumber z;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEPointLightElement : SVGElement {\n  readonly attribute SVGAnimatedNumber x;\n  readonly attribute SVGAnimatedNumber y;\n  readonly attribute SVGAnimatedNumber z;\n};",
         "type": "interface",
         "name": "SVGFEPointLightElement",
         "inheritance": "SVGElement",
@@ -1625,11 +1785,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFESpotLightElement": {
-        "fragment": "interface SVGFESpotLightElement : SVGElement {\n  readonly attribute SVGAnimatedNumber x;\n  readonly attribute SVGAnimatedNumber y;\n  readonly attribute SVGAnimatedNumber z;\n  readonly attribute SVGAnimatedNumber pointsAtX;\n  readonly attribute SVGAnimatedNumber pointsAtY;\n  readonly attribute SVGAnimatedNumber pointsAtZ;\n  readonly attribute SVGAnimatedNumber specularExponent;\n  readonly attribute SVGAnimatedNumber limitingConeAngle;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFESpotLightElement : SVGElement {\n  readonly attribute SVGAnimatedNumber x;\n  readonly attribute SVGAnimatedNumber y;\n  readonly attribute SVGAnimatedNumber z;\n  readonly attribute SVGAnimatedNumber pointsAtX;\n  readonly attribute SVGAnimatedNumber pointsAtY;\n  readonly attribute SVGAnimatedNumber pointsAtZ;\n  readonly attribute SVGAnimatedNumber specularExponent;\n  readonly attribute SVGAnimatedNumber limitingConeAngle;\n};",
         "type": "interface",
         "name": "SVGFESpotLightElement",
         "inheritance": "SVGElement",
@@ -1755,11 +1925,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEDisplacementMapElement": {
-        "fragment": "interface SVGFEDisplacementMapElement : SVGElement {\n\n  // Channel Selectors\n  const unsigned short SVG_CHANNEL_UNKNOWN = 0;\n  const unsigned short SVG_CHANNEL_R = 1;\n  const unsigned short SVG_CHANNEL_G = 2;\n  const unsigned short SVG_CHANNEL_B = 3;\n  const unsigned short SVG_CHANNEL_A = 4;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedString in2;\n  readonly attribute SVGAnimatedNumber scale;\n  readonly attribute SVGAnimatedEnumeration xChannelSelector;\n  readonly attribute SVGAnimatedEnumeration yChannelSelector;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEDisplacementMapElement : SVGElement {\n\n  // Channel Selectors\n  const unsigned short SVG_CHANNEL_UNKNOWN = 0;\n  const unsigned short SVG_CHANNEL_R = 1;\n  const unsigned short SVG_CHANNEL_G = 2;\n  const unsigned short SVG_CHANNEL_B = 3;\n  const unsigned short SVG_CHANNEL_A = 4;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedString in2;\n  readonly attribute SVGAnimatedNumber scale;\n  readonly attribute SVGAnimatedEnumeration xChannelSelector;\n  readonly attribute SVGAnimatedEnumeration yChannelSelector;\n};",
         "type": "interface",
         "name": "SVGFEDisplacementMapElement",
         "inheritance": "SVGElement",
@@ -1925,11 +2105,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEDropShadowElement": {
-        "fragment": "interface SVGFEDropShadowElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber dx;\n  readonly attribute SVGAnimatedNumber dy;\n  readonly attribute SVGAnimatedNumber stdDeviationX;\n  readonly attribute SVGAnimatedNumber stdDeviationY;\n\n  void setStdDeviation(float stdDeviationX, float stdDeviationY);\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEDropShadowElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber dx;\n  readonly attribute SVGAnimatedNumber dy;\n  readonly attribute SVGAnimatedNumber stdDeviationX;\n  readonly attribute SVGAnimatedNumber stdDeviationY;\n\n  undefined setStdDeviation(float stdDeviationX, float stdDeviationY);\n};",
         "type": "interface",
         "name": "SVGFEDropShadowElement",
         "inheritance": "SVGElement",
@@ -2018,7 +2208,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -2058,20 +2248,40 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEFloodElement": {
-        "fragment": "interface SVGFEFloodElement : SVGElement {\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEFloodElement : SVGElement {\n};",
         "type": "interface",
         "name": "SVGFEFloodElement",
         "inheritance": "SVGElement",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEGaussianBlurElement": {
-        "fragment": "interface SVGFEGaussianBlurElement : SVGElement {\n\n  // Edge Mode Values\n  const unsigned short SVG_EDGEMODE_UNKNOWN = 0;\n  const unsigned short SVG_EDGEMODE_DUPLICATE = 1;\n  const unsigned short SVG_EDGEMODE_WRAP = 2;\n  const unsigned short SVG_EDGEMODE_NONE = 3;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber stdDeviationX;\n  readonly attribute SVGAnimatedNumber stdDeviationY;\n  readonly attribute SVGAnimatedEnumeration edgeMode;\n\n  void setStdDeviation(float stdDeviationX, float stdDeviationY);\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEGaussianBlurElement : SVGElement {\n\n  // Edge Mode Values\n  const unsigned short SVG_EDGEMODE_UNKNOWN = 0;\n  const unsigned short SVG_EDGEMODE_DUPLICATE = 1;\n  const unsigned short SVG_EDGEMODE_WRAP = 2;\n  const unsigned short SVG_EDGEMODE_NONE = 3;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber stdDeviationX;\n  readonly attribute SVGAnimatedNumber stdDeviationY;\n  readonly attribute SVGAnimatedEnumeration edgeMode;\n\n  undefined setStdDeviation(float stdDeviationX, float stdDeviationY);\n};",
         "type": "interface",
         "name": "SVGFEGaussianBlurElement",
         "inheritance": "SVGElement",
@@ -2213,7 +2423,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -2253,11 +2463,21 @@
             "special": ""
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEImageElement": {
-        "fragment": "interface SVGFEImageElement : SVGElement {\n  readonly attribute SVGAnimatedPreserveAspectRatio preserveAspectRatio;\n  readonly attribute SVGAnimatedString crossOrigin;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEImageElement : SVGElement {\n  readonly attribute SVGAnimatedPreserveAspectRatio preserveAspectRatio;\n  readonly attribute SVGAnimatedString crossOrigin;\n};",
         "type": "interface",
         "name": "SVGFEImageElement",
         "inheritance": "SVGElement",
@@ -2293,20 +2513,40 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEMergeElement": {
-        "fragment": "interface SVGFEMergeElement : SVGElement {\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEMergeElement : SVGElement {\n};",
         "type": "interface",
         "name": "SVGFEMergeElement",
         "inheritance": "SVGElement",
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEMergeNodeElement": {
-        "fragment": "interface SVGFEMergeNodeElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEMergeNodeElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n};",
         "type": "interface",
         "name": "SVGFEMergeNodeElement",
         "inheritance": "SVGElement",
@@ -2327,11 +2567,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEMorphologyElement": {
-        "fragment": "interface SVGFEMorphologyElement : SVGElement {\n\n  // Morphology Operators\n  const unsigned short SVG_MORPHOLOGY_OPERATOR_UNKNOWN = 0;\n  const unsigned short SVG_MORPHOLOGY_OPERATOR_ERODE = 1;\n  const unsigned short SVG_MORPHOLOGY_OPERATOR_DILATE = 2;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedEnumeration operator;\n  readonly attribute SVGAnimatedNumber radiusX;\n  readonly attribute SVGAnimatedNumber radiusY;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEMorphologyElement : SVGElement {\n\n  // Morphology Operators\n  const unsigned short SVG_MORPHOLOGY_OPERATOR_UNKNOWN = 0;\n  const unsigned short SVG_MORPHOLOGY_OPERATOR_ERODE = 1;\n  const unsigned short SVG_MORPHOLOGY_OPERATOR_DILATE = 2;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedEnumeration operator;\n  readonly attribute SVGAnimatedNumber radiusX;\n  readonly attribute SVGAnimatedNumber radiusY;\n};",
         "type": "interface",
         "name": "SVGFEMorphologyElement",
         "inheritance": "SVGElement",
@@ -2448,11 +2698,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFEOffsetElement": {
-        "fragment": "interface SVGFEOffsetElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber dx;\n  readonly attribute SVGAnimatedNumber dy;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFEOffsetElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber dx;\n  readonly attribute SVGAnimatedNumber dy;\n};",
         "type": "interface",
         "name": "SVGFEOffsetElement",
         "inheritance": "SVGElement",
@@ -2503,11 +2763,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFESpecularLightingElement": {
-        "fragment": "interface SVGFESpecularLightingElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber surfaceScale;\n  readonly attribute SVGAnimatedNumber specularConstant;\n  readonly attribute SVGAnimatedNumber specularExponent;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthX;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthY;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFESpecularLightingElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber surfaceScale;\n  readonly attribute SVGAnimatedNumber specularConstant;\n  readonly attribute SVGAnimatedNumber specularExponent;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthX;\n  readonly attribute SVGAnimatedNumber kernelUnitLengthY;\n};",
         "type": "interface",
         "name": "SVGFESpecularLightingElement",
         "inheritance": "SVGElement",
@@ -2603,11 +2873,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFETileElement": {
-        "fragment": "interface SVGFETileElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFETileElement : SVGElement {\n  readonly attribute SVGAnimatedString in1;\n};",
         "type": "interface",
         "name": "SVGFETileElement",
         "inheritance": "SVGElement",
@@ -2628,11 +2908,21 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "SVGFETurbulenceElement": {
-        "fragment": "interface SVGFETurbulenceElement : SVGElement {\n\n  // Turbulence Types\n  const unsigned short SVG_TURBULENCE_TYPE_UNKNOWN = 0;\n  const unsigned short SVG_TURBULENCE_TYPE_FRACTALNOISE = 1;\n  const unsigned short SVG_TURBULENCE_TYPE_TURBULENCE = 2;\n\n  // Stitch Options\n  const unsigned short SVG_STITCHTYPE_UNKNOWN = 0;\n  const unsigned short SVG_STITCHTYPE_STITCH = 1;\n  const unsigned short SVG_STITCHTYPE_NOSTITCH = 2;\n\n  readonly attribute SVGAnimatedNumber baseFrequencyX;\n  readonly attribute SVGAnimatedNumber baseFrequencyY;\n  readonly attribute SVGAnimatedInteger numOctaves;\n  readonly attribute SVGAnimatedNumber seed;\n  readonly attribute SVGAnimatedEnumeration stitchTiles;\n  readonly attribute SVGAnimatedEnumeration type;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGFETurbulenceElement : SVGElement {\n\n  // Turbulence Types\n  const unsigned short SVG_TURBULENCE_TYPE_UNKNOWN = 0;\n  const unsigned short SVG_TURBULENCE_TYPE_FRACTALNOISE = 1;\n  const unsigned short SVG_TURBULENCE_TYPE_TURBULENCE = 2;\n\n  // Stitch Options\n  const unsigned short SVG_STITCHTYPE_UNKNOWN = 0;\n  const unsigned short SVG_STITCHTYPE_STITCH = 1;\n  const unsigned short SVG_STITCHTYPE_NOSTITCH = 2;\n\n  readonly attribute SVGAnimatedNumber baseFrequencyX;\n  readonly attribute SVGAnimatedNumber baseFrequencyY;\n  readonly attribute SVGAnimatedInteger numOctaves;\n  readonly attribute SVGAnimatedNumber seed;\n  readonly attribute SVGAnimatedEnumeration stitchTiles;\n  readonly attribute SVGAnimatedEnumeration type;\n};",
         "type": "interface",
         "name": "SVGFETurbulenceElement",
         "inheritance": "SVGElement",
@@ -2830,7 +3120,17 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       }
     },
@@ -3006,7 +3306,37 @@
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "SVGFilterElement",
+        "SVGFEBlendElement",
+        "SVGFEColorMatrixElement",
+        "SVGFEComponentTransferElement",
+        "SVGComponentTransferFunctionElement",
+        "SVGFEFuncRElement",
+        "SVGFEFuncGElement",
+        "SVGFEFuncBElement",
+        "SVGFEFuncAElement",
+        "SVGFECompositeElement",
+        "SVGFEConvolveMatrixElement",
+        "SVGFEDiffuseLightingElement",
+        "SVGFEDistantLightElement",
+        "SVGFEPointLightElement",
+        "SVGFESpotLightElement",
+        "SVGFEDisplacementMapElement",
+        "SVGFEDropShadowElement",
+        "SVGFEFloodElement",
+        "SVGFEGaussianBlurElement",
+        "SVGFEImageElement",
+        "SVGFEMergeElement",
+        "SVGFEMergeNodeElement",
+        "SVGFEMorphologyElement",
+        "SVGFEOffsetElement",
+        "SVGFESpecularLightingElement",
+        "SVGFETileElement",
+        "SVGFETurbulenceElement"
+      ]
+    },
     "dependencies": {
       "SVGFilterElement": [
         "SVGElement",
@@ -3100,7 +3430,6 @@
         "SVGElement",
         "SVGAnimatedString",
         "SVGAnimatedNumber",
-        "void",
         "SVGFilterPrimitiveStandardAttributes"
       ],
       "SVGFEFloodElement": [
@@ -3112,7 +3441,6 @@
         "SVGAnimatedString",
         "SVGAnimatedNumber",
         "SVGAnimatedEnumeration",
-        "void",
         "SVGFilterPrimitiveStandardAttributes"
       ],
       "SVGFEImageElement": [
@@ -3171,7 +3499,6 @@
       "SVGAnimatedNumber",
       "SVGAnimatedInteger",
       "SVGAnimatedBoolean",
-      "void",
       "SVGAnimatedPreserveAspectRatio"
     ],
     "hasObsoleteIdl": false

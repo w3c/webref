@@ -5,7 +5,7 @@
       "title": "Filter Effects Module Level 1",
       "url": "https://www.w3.org/TR/filter-effects-1/"
     },
-    "fragment": "interface SVGFEColorMatrixElement : SVGElement {\n\n  // Color Matrix Types\n  const unsigned short SVG_FECOLORMATRIX_TYPE_UNKNOWN = 0;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_MATRIX = 1;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_SATURATE = 2;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_HUEROTATE = 3;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA = 4;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedEnumeration type;\n  readonly attribute SVGAnimatedNumberList values;\n};",
+    "fragment": "[Exposed=Window]\ninterface SVGFEColorMatrixElement : SVGElement {\n\n  // Color Matrix Types\n  const unsigned short SVG_FECOLORMATRIX_TYPE_UNKNOWN = 0;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_MATRIX = 1;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_SATURATE = 2;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_HUEROTATE = 3;\n  const unsigned short SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA = 4;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedEnumeration type;\n  readonly attribute SVGAnimatedNumberList values;\n};",
     "href": "https://drafts.fxtf.org/filter-effects-1/#svgfecolormatrixelement"
   },
   "extended": [

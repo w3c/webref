@@ -1,4 +1,5 @@
 // Source: Filter Effects Module Level 1 (https://www.w3.org/TR/filter-effects-1/)
+[Exposed=Window]
 interface SVGFEGaussianBlurElement : SVGElement {
 
   // Edge Mode Values
@@ -12,7 +13,7 @@ interface SVGFEGaussianBlurElement : SVGElement {
   readonly attribute SVGAnimatedNumber stdDeviationY;
   readonly attribute SVGAnimatedEnumeration edgeMode;
 
-  void setStdDeviation(float stdDeviationX, float stdDeviationY);
+  undefined setStdDeviation(float stdDeviationX, float stdDeviationY);
 };
 
 // Source: Filter Effects Module Level 1 (https://www.w3.org/TR/filter-effects-1/)
