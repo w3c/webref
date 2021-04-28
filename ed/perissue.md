@@ -5398,8 +5398,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#service-worker-global-scope-interface`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#service-worker-global-scope-interface)
      * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#extendable-event-interface`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#extendable-event-interface)
      * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#dfn-extend-lifetime-promises`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#dfn-extend-lifetime-promises)
-- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/):
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/):
      * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [Web Share Target API](https://w3c.github.io/web-share-target/):
@@ -5447,7 +5445,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 564 problematic external links found in 147 specifications
+=> 563 problematic external links found in 146 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
