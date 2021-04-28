@@ -2,3 +2,12 @@
 % Reffy
 % April 28, 2021
 
+## Accessible Name and Description Computation 1.2
+
+- Initial URL: [https://www.w3.org/TR/accname-1.2/](https://www.w3.org/TR/accname-1.2/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/accname/](https://w3c.github.io/accname/)
+- Missing references for links: *DEL* https://www.w3.org/TR/wai-aria-1.2/, https://w3c.github.io/aria/
+- Inconsistent references for links: *INS* https://w3c.github.io/aria/
+
+
