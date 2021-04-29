@@ -1,0 +1,27 @@
+{
+  "name": "BluetoothManufacturerDataFilterInit",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "dictionary BluetoothManufacturerDataFilterInit : BluetoothDataFilterInit {\n  required [EnforceRange] unsigned short companyIdentifier;\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothmanufacturerdatafilterinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "BluetoothDataFilterInit",
+    "defined": {
+      "spec": {
+        "title": "Web Bluetooth",
+        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      },
+      "fragment": "dictionary BluetoothDataFilterInit {\n  BufferSource dataPrefix;\n  BufferSource mask;\n};",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothdatafilterinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

@@ -11357,7 +11357,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled URL: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
-- Crawled version: 21 April 2021
+- Crawled version: 29 April 2021
 - Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
 - Latest published version: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Shortname: permissions
@@ -11367,7 +11367,6 @@ Informative references to this spec from:
 - WebIDL names also defined elsewhere: 
     * `PermissionState` also defined in [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - Missing references for links: 
-     * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/)
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
      * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/)
 - Inconsistent references for links: 
@@ -11383,7 +11382,6 @@ Informative references to this spec from:
      * [`https://w3c.github.io/webdriver/#dfn-current-browsing-context`](https://w3c.github.io/webdriver/#dfn-current-browsing-context)
      * [`https://w3c.github.io/webdriver/#dfn-success`](https://w3c.github.io/webdriver/#dfn-success)
 - Broken external links:
-     * [`https://w3c.github.io/manifest/#dfn-install`](https://w3c.github.io/manifest/#dfn-install)
      * [`https://w3c.github.io/mediacapture-main/#deviceid`](https://w3c.github.io/mediacapture-main/#deviceid)
      * [`https://w3c.github.io/mediacapture-main/#devicechange`](https://w3c.github.io/mediacapture-main/#devicechange)
      * [`https://w3c.github.io/webdriver/#dfn-extension-commands`](https://w3c.github.io/webdriver/#dfn-extension-commands)
@@ -13521,7 +13519,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Crawled URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
-- Crawled version: 27 April 2021
+- Crawled version: 29 April 2021
 - Editor's Draft: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
 - Latest published version: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Shortname: service-workers-1
@@ -14907,6 +14905,7 @@ Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
+- [Permissions](https://w3c.github.io/permissions/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 
@@ -15059,7 +15058,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
 - Crawled URL: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
-- Crawled version: 28 April 2021
+- Crawled version: 29 April 2021
 - Editor's Draft: [https://webbluetoothcg.github.io/web-bluetooth/](https://webbluetoothcg.github.io/web-bluetooth/)
 - Shortname: web-bluetooth
 

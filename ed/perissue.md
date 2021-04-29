@@ -1700,7 +1700,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Payment Request API](https://w3c.github.io/payment-request/) links to [`https://www.w3.org/TR/secure-contexts/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/TR/secure-contexts/) but does not list it in its references
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/) links to [`https://w3c.github.io/timing-entrytypes-registry/`](https://w3c.github.io/timing-entrytypes-registry/) but does not list it in its references
 - [Permissions](https://w3c.github.io/permissions/) links to:
-    * [`https://w3c.github.io/manifest/`](https://w3c.github.io/manifest/) but does not list it in its references
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but does not list it in its references
     * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/) but does not list it in its references
 - [Pointer Events](https://w3c.github.io/pointerevents/) links to [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but does not list it in its references
@@ -1871,7 +1870,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 614 missing references for links found in 170 specifications
+=> 613 missing references for links found in 170 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -5220,7 +5219,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#concept-get-reader`](https://fetch.spec.whatwg.org/#concept-get-reader)
      * [`https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream`](https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream)
 - [Permissions](https://w3c.github.io/permissions/):
-     * [`https://w3c.github.io/manifest/#dfn-install`](https://w3c.github.io/manifest/#dfn-install)
      * [`https://w3c.github.io/mediacapture-main/#deviceid`](https://w3c.github.io/mediacapture-main/#deviceid)
      * [`https://w3c.github.io/mediacapture-main/#devicechange`](https://w3c.github.io/mediacapture-main/#devicechange)
      * [`https://w3c.github.io/webdriver/#dfn-extension-commands`](https://w3c.github.io/webdriver/#dfn-extension-commands)
@@ -5438,7 +5436,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 567 problematic external links found in 148 specifications
+=> 566 problematic external links found in 148 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
