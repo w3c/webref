@@ -12,6 +12,5 @@ interface RTCRtpReceiver {
 
 // Source: WebRTC Encoded Transform (https://w3c.github.io/webrtc-encoded-transform/)
 partial interface RTCRtpReceiver {
-    RTCInsertableStreams createEncodedStreams();
     attribute RTCRtpTransform? transform;
 };

@@ -2,11 +2,11 @@
 % Reffy
 % April 29, 2021
 
-## Permissions
+## Client Hints Infrastructure
 
-- Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
+- Initial URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
-- Missing references for links: *DEL* https://w3c.github.io/manifest/
+- Editor's Draft: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
+- Missing references for links: *INS* https://www.w3.org/TR/permissions-policy/
 
 

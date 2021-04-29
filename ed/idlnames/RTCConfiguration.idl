@@ -8,12 +8,6 @@ dictionary RTCConfiguration {
   [EnforceRange] octet iceCandidatePoolSize = 0;
 };
 
-// Source: WebRTC Encoded Transform (https://w3c.github.io/webrtc-encoded-transform/)
-// New fields in RTCConfiguration
-partial dictionary RTCConfiguration {
-    boolean encodedInsertableStreams = false;
-};
-
 // Source: Identity for WebRTC 1.0 (https://www.w3.org/TR/webrtc-identity/)
 partial dictionary RTCConfiguration {
     DOMString peerIdentity;
