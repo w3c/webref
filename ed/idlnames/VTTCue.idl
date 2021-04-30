@@ -1,7 +1,7 @@
 // Source: WebVTT: The Web Video Text Tracks Format (https://www.w3.org/TR/webvtt1/)
 [Exposed=Window]
 interface VTTCue : TextTrackCue {
-  constructor(double startTime, double endTime, DOMString text);
+  constructor(double startTime, unrestricted double endTime, DOMString text);
   attribute VTTRegion? region;
   attribute DirectionSetting vertical;
   attribute boolean snapToLines;
