@@ -8,4 +8,8 @@ interface MediaSession {
   undefined setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);
 
   undefined setPositionState(optional MediaPositionState state = {});
+
+  undefined setMicrophoneActive(boolean active);
+
+  undefined setCameraActive(boolean active);
 };
