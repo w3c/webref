@@ -2506,7 +2506,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 16 April 2021
+- Crawled version: 29 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -3709,7 +3709,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Crawled URL: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
-- Crawled version: 21 February 2021
+- Crawled version: 30 April 2021
 - Editor's Draft: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
 - Latest published version: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Shortname: css-images-4
@@ -8184,7 +8184,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 28 April 2021
+- Crawled version: 30 April 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -15652,7 +15652,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- Crawled version: 27 April 2021
+- Crawled version: 30 April 2021
 - Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Latest published version: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Shortname: webcodecs
