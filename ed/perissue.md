@@ -1636,7 +1636,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/screen-orientation/`](https://w3c.github.io/screen-orientation/) but does not list it in its references
     * [`https://www.w3.org/TR/permissions-policy/`](https://www.w3.org/TR/permissions-policy/) but does not list it in its references
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but does not list it in its references
-- [Geolocation API](https://w3c.github.io/geolocation-api/) links to [`https://www.w3.org/TR/secure-contexts/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/TR/secure-contexts/) but does not list it in its references
 - [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/) links to:
     * [`https://w3c.github.io/core-aam/`](https://w3c.github.io/core-aam/) but does not list it in its references
     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but does not list it in its references
@@ -1699,7 +1698,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but does not list it in its references
     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but does not list it in its references
     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/) but does not list it in its references
-- [Payment Request API](https://w3c.github.io/payment-request/) links to [`https://www.w3.org/TR/secure-contexts/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/TR/secure-contexts/) but does not list it in its references
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/) links to [`https://w3c.github.io/timing-entrytypes-registry/`](https://w3c.github.io/timing-entrytypes-registry/) but does not list it in its references
 - [Permissions](https://w3c.github.io/permissions/) links to:
     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/) but does not list it in its references
@@ -1845,9 +1843,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Web Locks API](https://wicg.github.io/web-locks/) links to:
     * [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/) but does not list it in its references
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
-- [Web Share API](https://w3c.github.io/web-share/) links to:
-    * [`https://www.w3.org/TR/secure-contexts/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/TR/secure-contexts/) but does not list it in its references
-    * [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/) but does not list it in its references
+- [Web Share API](https://w3c.github.io/web-share/) links to [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/) but does not list it in its references
 - [WebAssembly Core Specification](https://webassembly.github.io/spec/core/bikeshed/) links to:
     * [`https://www.w3.org/TR/wasm-core/`](https://www.w3.org/TR/wasm-core/) but does not list it in its references
     * [`https://www.w3.org/TR/wasm-js-api/`](https://www.w3.org/TR/wasm-js-api/) but does not list it in its references
@@ -1872,7 +1868,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 614 missing references for links found in 170 specifications
+=> 611 missing references for links found in 168 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -4941,6 +4937,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webdriver/#dfn-session`](https://w3c.github.io/webdriver/#dfn-session)
      * [`https://w3c.github.io/webdriver/#dfn-local-end`](https://w3c.github.io/webdriver/#dfn-local-end)
      * [`https://w3c.github.io/webdriver/#handling-errors`](https://w3c.github.io/webdriver/#handling-errors)
+- [Geolocation API](https://w3c.github.io/geolocation-api/):
+     * [`https://www.w3.org/TR/secure-contexts/#non-secure-context`](https://www.w3.org/TR/secure-contexts/#non-secure-context)
 - [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/):
      * [`https://www.w3.org/TR/appmanifest/#dom-fingerprint`](https://www.w3.org/TR/appmanifest/#dom-fingerprint)
      * [`https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource`](https://www.w3.org/TR/appmanifest/#dom-externalapplicationresource)
@@ -5221,6 +5219,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://infra.spec.whatwg.org/#parse-json-into-infra-values`](https://infra.spec.whatwg.org/#parse-json-into-infra-values)
      * [`https://fetch.spec.whatwg.org/#concept-get-reader`](https://fetch.spec.whatwg.org/#concept-get-reader)
      * [`https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream`](https://fetch.spec.whatwg.org/#concept-read-all-bytes-from-readablestream)
+- [Payment Request API](https://w3c.github.io/payment-request/):
+     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 - [Permissions](https://w3c.github.io/permissions/):
      * [`https://w3c.github.io/mediacapture-main/#deviceid`](https://w3c.github.io/mediacapture-main/#deviceid)
      * [`https://w3c.github.io/mediacapture-main/#devicechange`](https://w3c.github.io/mediacapture-main/#devicechange)
@@ -5393,6 +5393,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#dfn-extend-lifetime-promises`](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#dfn-extend-lifetime-promises)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/):
      * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
+- [Web Share API](https://w3c.github.io/web-share/):
+     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 - [Web Share Target API](https://w3c.github.io/web-share-target/):
      * [`https://www.w3.org/TR/appmanifest/#dom-webappmanifest`](https://www.w3.org/TR/appmanifest/#dom-webappmanifest)
      * [`https://www.w3.org/TR/appmanifest/#dom-webappmanifest-scope`](https://www.w3.org/TR/appmanifest/#dom-webappmanifest-scope)
@@ -5439,7 +5441,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 566 problematic external links found in 148 specifications
+=> 569 problematic external links found in 151 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

@@ -7665,7 +7665,7 @@ Informative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 
 
-## Geolocation API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## Geolocation API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -7678,8 +7678,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://www.w3.org/TR/secure-contexts/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/TR/secure-contexts/)
+- Broken external links:
+     * [`https://www.w3.org/TR/secure-contexts/#non-secure-context`](https://www.w3.org/TR/secure-contexts/#non-secure-context)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -11278,7 +11278,7 @@ Informative references to this spec from:
 - [Payment Request API](https://w3c.github.io/payment-request/)
 
 
-## Payment Request API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## Payment Request API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -11291,8 +11291,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://www.w3.org/TR/secure-contexts/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/TR/secure-contexts/)
+- Broken external links:
+     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -15496,8 +15496,9 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
-     * [`https://www.w3.org/TR/secure-contexts/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/TR/secure-contexts/)
      * [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/)
+- Broken external links:
+     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 
 ### Known dependencies on this specification {.dependencies}
 
