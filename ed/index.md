@@ -6521,7 +6521,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/DOM-Parsing/](https://www.w3.org/TR/DOM-Parsing/)
 - Crawled URL: [https://w3c.github.io/DOM-Parsing/](https://w3c.github.io/DOM-Parsing/)
-- Crawled version: 22 April 2021
+- Crawled version: 02 May 2021
 - Editor's Draft: [https://w3c.github.io/DOM-Parsing/](https://w3c.github.io/DOM-Parsing/)
 - Latest published version: [https://www.w3.org/TR/DOM-Parsing/](https://www.w3.org/TR/DOM-Parsing/)
 - Shortname: DOM-Parsing
