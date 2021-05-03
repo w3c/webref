@@ -1,0 +1,9 @@
+// Source: Tracking Preference Expression (DNT) (https://www.w3.org/TR/tracking-dnt/)
+dictionary TrackingExData {
+   DOMString? site;
+   sequence<DOMString>? targets;
+   DOMString? name;
+   DOMString? explanation;
+   DOMString? details;
+   long?      maxAge;
+};

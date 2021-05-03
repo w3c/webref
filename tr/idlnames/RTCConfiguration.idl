@@ -7,9 +7,3 @@ dictionary RTCConfiguration {
   sequence<RTCCertificate> certificates;
   [EnforceRange] octet iceCandidatePoolSize = 0;
 };
-
-// Source: WebRTC Encoded Transform (https://w3c.github.io/webrtc-encoded-transform/)
-// New fields in RTCConfiguration
-partial dictionary RTCConfiguration {
-    boolean encodedInsertableStreams = false;
-};

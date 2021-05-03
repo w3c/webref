@@ -5,45 +5,45 @@
   },
   "idlparsed": {
     "name": "WebIDLParseError",
-    "bareMessage": "Attributes cannot accept sequence types",
-    "context": "Syntax error at line 37, since `interface CSSFontFaceLoadEvent`:\n attribute sequence<CSSFontFaceRule> fontfaces;\n                                     ^",
-    "line": 37,
-    "input": "fontfaces;\n};\n\nenum",
+    "bareMessage": "Unexpected token in extended attribute argument list",
+    "context": "Syntax error at line 42, since `enum FontFaceSetLoadStatus`:\n[SetClass(FontFace)]\n          ^",
+    "line": 42,
+    "input": "FontFace)]\ninterface FontFaceSet",
     "tokens": [
       {
         "type": "identifier",
-        "value": "fontfaces",
-        "trivia": " ",
-        "line": 37,
-        "index": 162
-      },
-      {
-        "type": ";",
-        "value": ";",
+        "value": "FontFace",
         "trivia": "",
-        "line": 37,
-        "index": 163
+        "line": 42,
+        "index": 177
       },
       {
-        "type": "}",
-        "value": "}",
+        "type": ")",
+        "value": ")",
+        "trivia": "",
+        "line": 42,
+        "index": 178
+      },
+      {
+        "type": "]",
+        "value": "]",
+        "trivia": "",
+        "line": 42,
+        "index": 179
+      },
+      {
+        "type": "interface",
+        "value": "interface",
         "trivia": "\n",
-        "line": 38,
-        "index": 164
+        "line": 43,
+        "index": 180
       },
       {
-        "type": ";",
-        "value": ";",
-        "trivia": "",
-        "line": 38,
-        "index": 165
-      },
-      {
-        "type": "enum",
-        "value": "enum",
-        "trivia": "\n\n",
-        "line": 40,
-        "index": 166
+        "type": "identifier",
+        "value": "FontFaceSet",
+        "trivia": " ",
+        "line": 43,
+        "index": 181
       }
     ]
   }

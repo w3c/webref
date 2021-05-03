@@ -33,9 +33,9 @@
           "GPUShaderStage",
           "GPUBindGroup",
           "GPUPipelineLayout",
+          "GPUShaderModule",
           "GPUCompilationMessage",
           "GPUCompilationInfo",
-          "GPUShaderModule",
           "GPUComputePipeline",
           "GPURenderPipeline",
           "GPUColorWrite",
@@ -3755,162 +3755,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUCompilationMessageType": {
-        "fragment": "enum GPUCompilationMessageType {\n    \"error\",\n    \"warning\",\n    \"info\"\n};",
-        "type": "enum",
-        "name": "GPUCompilationMessageType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "error"
-          },
-          {
-            "type": "enum-value",
-            "value": "warning"
-          },
-          {
-            "type": "enum-value",
-            "value": "info"
-          }
-        ],
-        "extAttrs": []
-      },
-      "GPUCompilationMessage": {
-        "fragment": "[Exposed=Window, Serializable]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n};",
-        "type": "interface",
-        "name": "GPUCompilationMessage",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "message",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "type",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUCompilationMessageType"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "lineNum",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "linePos",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Serializable",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "GPUCompilationInfo": {
-        "fragment": "[Exposed=Window, Serializable]\ninterface GPUCompilationInfo {\n    readonly attribute FrozenArray<GPUCompilationMessage> messages;\n};",
-        "type": "interface",
-        "name": "GPUCompilationInfo",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "messages",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "FrozenArray",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUCompilationMessage"
-                }
-              ]
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Serializable",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
       "GPUShaderModule": {
         "fragment": "[Exposed=Window, Serializable]\ninterface GPUShaderModule {\n    Promise<GPUCompilationInfo> compilationInfo();\n};",
         "type": "interface",
@@ -3999,6 +3843,192 @@
           }
         ],
         "extAttrs": [],
+        "partial": false
+      },
+      "GPUCompilationMessageType": {
+        "fragment": "enum GPUCompilationMessageType {\n    \"error\",\n    \"warning\",\n    \"info\"\n};",
+        "type": "enum",
+        "name": "GPUCompilationMessageType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "error"
+          },
+          {
+            "type": "enum-value",
+            "value": "warning"
+          },
+          {
+            "type": "enum-value",
+            "value": "info"
+          }
+        ],
+        "extAttrs": []
+      },
+      "GPUCompilationMessage": {
+        "fragment": "[Exposed=Window, Serializable]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n    readonly attribute unsigned long long offset;\n    readonly attribute unsigned long long length;\n};",
+        "type": "interface",
+        "name": "GPUCompilationMessage",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "message",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUCompilationMessageType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "lineNum",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "linePos",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "offset",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Serializable",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "GPUCompilationInfo": {
+        "fragment": "[Exposed=Window, Serializable]\ninterface GPUCompilationInfo {\n    readonly attribute FrozenArray<GPUCompilationMessage> messages;\n};",
+        "type": "interface",
+        "name": "GPUCompilationInfo",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "messages",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUCompilationMessage"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Serializable",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "GPUPipelineDescriptorBase": {
@@ -6406,23 +6436,48 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUImageCopyImageBitmap": {
-        "fragment": "dictionary GPUImageCopyImageBitmap {\n    required ImageBitmap imageBitmap;\n    GPUOrigin2D origin = {};\n};",
+      "GPUImageCopyExternalImage": {
+        "fragment": "dictionary GPUImageCopyExternalImage {\n    required (ImageBitmap or HTMLCanvasElement or OffscreenCanvas) source;\n    GPUOrigin2D origin = {};\n};",
         "type": "dictionary",
-        "name": "GPUImageCopyImageBitmap",
+        "name": "GPUImageCopyExternalImage",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "imageBitmap",
+            "name": "source",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "ImageBitmap"
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ImageBitmap"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HTMLCanvasElement"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "OffscreenCanvas"
+                }
+              ]
             },
             "default": null,
             "required": true
@@ -8495,7 +8550,7 @@
         "partial": false
       },
       "GPUQueue": {
-        "fragment": "[Exposed=Window]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n      GPUImageCopyTexture destination,\n      [AllowShared] BufferSource data,\n      GPUImageDataLayout dataLayout,\n      GPUExtent3D size);\n\n    undefined copyImageBitmapToTexture(\n        GPUImageCopyImageBitmap source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n      GPUImageCopyTexture destination,\n      [AllowShared] BufferSource data,\n      GPUImageDataLayout dataLayout,\n      GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n};",
         "type": "interface",
         "name": "GPUQueue",
         "inheritance": null,
@@ -8760,7 +8815,7 @@
           },
           {
             "type": "operation",
-            "name": "copyImageBitmapToTexture",
+            "name": "copyExternalImageToTexture",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -8780,7 +8835,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageCopyImageBitmap"
+                  "idlType": "GPUImageCopyExternalImage"
                 },
                 "default": null,
                 "optional": false,
@@ -10532,9 +10587,9 @@
         "GPUShaderStage",
         "GPUBindGroup",
         "GPUPipelineLayout",
+        "GPUShaderModule",
         "GPUCompilationMessage",
         "GPUCompilationInfo",
-        "GPUShaderModule",
         "GPUComputePipeline",
         "GPURenderPipeline",
         "GPUColorWrite",
@@ -10726,18 +10781,18 @@
         "GPUObjectDescriptorBase",
         "GPUBindGroupLayout"
       ],
-      "GPUCompilationMessage": [
-        "GPUCompilationMessageType"
-      ],
-      "GPUCompilationInfo": [
-        "GPUCompilationMessage"
-      ],
       "GPUShaderModule": [
         "GPUCompilationInfo",
         "GPUObjectBase"
       ],
       "GPUShaderModuleDescriptor": [
         "GPUObjectDescriptorBase"
+      ],
+      "GPUCompilationMessage": [
+        "GPUCompilationMessageType"
+      ],
+      "GPUCompilationInfo": [
+        "GPUCompilationMessage"
       ],
       "GPUPipelineDescriptorBase": [
         "GPUObjectDescriptorBase",
@@ -10860,8 +10915,10 @@
         "GPUOrigin3D",
         "GPUTextureAspect"
       ],
-      "GPUImageCopyImageBitmap": [
+      "GPUImageCopyExternalImage": [
         "ImageBitmap",
+        "HTMLCanvasElement",
+        "OffscreenCanvas",
         "GPUOrigin2D"
       ],
       "GPUProgrammablePassEncoder": [
@@ -10946,7 +11003,7 @@
         "GPUImageCopyTexture",
         "GPUImageDataLayout",
         "GPUExtent3D",
-        "GPUImageCopyImageBitmap",
+        "GPUImageCopyExternalImage",
         "GPUObjectBase"
       ],
       "GPUQuerySet": [
@@ -11003,6 +11060,8 @@
     "externalDependencies": [
       "EventTarget",
       "ImageBitmap",
+      "HTMLCanvasElement",
+      "OffscreenCanvas",
       "Event",
       "EventInit",
       "EventHandler"

@@ -5,7 +5,7 @@
       "title": "Payment Handler API",
       "url": "https://www.w3.org/TR/payment-handler/"
     },
-    "fragment": "[Exposed=ServiceWorker]\ninterface CanMakePaymentEvent : ExtendableEvent {\n  constructor(DOMString type, CanMakePaymentEventInit eventInitDict);\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  void respondWith(Promise<boolean> canMakePaymentResponse);\n};",
+    "fragment": "[Exposed=ServiceWorker]\ninterface CanMakePaymentEvent : ExtendableEvent {\n  constructor(DOMString type, optional CanMakePaymentEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  undefined respondWith(Promise<boolean> canMakePaymentResponse);\n};",
     "href": "https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent"
   },
   "extended": [],

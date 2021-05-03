@@ -32,6 +32,11 @@ partial interface CSS {
   [SameObject] readonly attribute Map elementSources;
 };
 
+// Source: CSS Layout API Level 1 (https://www.w3.org/TR/css-layout-api-1/)
+partial interface CSS {
+    [SameObject] readonly attribute Worklet layoutWorklet;
+};
+
 // Source: CSS Painting API Level 1 (https://www.w3.org/TR/css-paint-api-1/)
 partial namespace CSS {
     [SameObject] readonly attribute Worklet paintWorklet;

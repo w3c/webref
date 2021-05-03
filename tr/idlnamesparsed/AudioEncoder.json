@@ -3,10 +3,10 @@
   "defined": {
     "spec": {
       "title": "WebCodecs",
-      "url": "https://w3c.github.io/webcodecs/"
+      "url": "https://www.w3.org/TR/webcodecs/"
     },
     "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioEncoder {\n  constructor(AudioEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(AudioEncoderConfig config);\n  undefined encode(AudioFrame frame);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioEncoderSupport> isConfigSupported(AudioEncoderConfig config);\n};",
-    "href": "https://w3c.github.io/webcodecs/#audioencoder"
+    "href": "https://www.w3.org/TR/webcodecs/#audioencoder"
   },
   "extended": [],
   "inheritance": null,

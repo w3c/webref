@@ -1,7 +1,7 @@
 // Source: Payment Handler API (https://www.w3.org/TR/payment-handler/)
 [Exposed=ServiceWorker]
 interface PaymentRequestEvent : ExtendableEvent {
-  constructor(DOMString type, PaymentRequestEventInit eventInitDict);
+  constructor(DOMString type, optional PaymentRequestEventInit eventInitDict = {});
   readonly attribute USVString topOrigin;
   readonly attribute USVString paymentRequestOrigin;
   readonly attribute DOMString paymentRequestId;
@@ -10,7 +10,11 @@ interface PaymentRequestEvent : ExtendableEvent {
   readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;
   readonly attribute DOMString instrumentKey;
   readonly attribute boolean requestBillingAddress;
+  readonly attribute object? paymentOptions;
+  readonly attribute FrozenArray<PaymentShippingOption>? shippingOptions;
   Promise<WindowClient?> openWindow(USVString url);
-  Promise<PaymentMethodChangeResponse?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);
-  void respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);
+  Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);
+  Promise<PaymentRequestDetailsUpdate?> changeShippingAddress(optional AddressInit shippingAddress = {});
+  Promise<PaymentRequestDetailsUpdate?> changeShippingOption(DOMString shippingOption);
+  undefined respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);
 };

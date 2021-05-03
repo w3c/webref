@@ -5,7 +5,7 @@
       "title": "Web Bluetooth",
       "url": "https://webbluetoothcg.github.io/web-bluetooth/"
     },
-    "fragment": "dictionary BluetoothLEScanFilterInit {\n  sequence<BluetoothServiceUUID> services;\n  DOMString name;\n  DOMString namePrefix;\n  // Maps unsigned shorts to BluetoothDataFilters.\n  object manufacturerData;\n  // Maps BluetoothServiceUUIDs to BluetoothDataFilters.\n  object serviceData;\n};",
+    "fragment": "dictionary BluetoothLEScanFilterInit {\n  sequence<BluetoothServiceUUID> services;\n  DOMString name;\n  DOMString namePrefix;\n  sequence<BluetoothManufacturerDataFilterInit> manufacturerData;\n  sequence<BluetoothServiceDataFilterInit> serviceData;\n};",
     "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothlescanfilterinit"
   },
   "extended": [],

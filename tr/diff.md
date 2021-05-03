@@ -1,54 +1,103 @@
-% Diff between report from "April 26, 2021" and reference report from "April 19, 2021"
+% Diff between report from "May 03, 2021" and reference report from "April 26, 2021"
 % Reffy
-% April 26, 2021
+% May 03, 2021
 
-## Background Fetch
+## Client Hints Infrastructure
 
-- Initial URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
+- Initial URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
+- Editor's Draft: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
+- Missing references for links: *INS* https://www.w3.org/TR/permissions-policy/
+
+
+## Constructable Stylesheet Objects
+
+- Initial URL: [https://wicg.github.io/construct-stylesheets/](https://wicg.github.io/construct-stylesheets/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://wicg.github.io/construct-stylesheets/](https://wicg.github.io/construct-stylesheets/)
 - Unknown WebIDL names used: *DEL* void
 
 
-## CSS Text Module Level 3
+## CSS Layout API Level 1
 
-- Initial URL: [https://www.w3.org/TR/css-text-3/](https://www.w3.org/TR/css-text-3/)
+- Initial URL: [https://www.w3.org/TR/css-layout-api-1/](https://www.w3.org/TR/css-layout-api-1/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-text-3/](https://drafts.csswg.org/css-text-3/)
-- Missing references for links: *DEL* https://www.w3.org/TR/css-writing-modes/, https://www.w3.org/TR/css-fonts/
+- Editor's Draft: [https://drafts.css-houdini.org/css-layout-api-1/](https://drafts.css-houdini.org/css-layout-api-1/)
+- Invalid WebIDL content found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* CSS, void
 
 
-## Fetch Standard
+## CSS Typed OM Level 1
 
-- Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
+- Initial URL: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Inconsistent references for links: *INS* https://www.w3.org/TR/resource-timing-2/
+- Editor's Draft: [https://drafts.css-houdini.org/css-typed-om-1/](https://drafts.css-houdini.org/css-typed-om-1/)
+- Unknown [Exposed] names used: *DEL* LayoutWorklet
 
 
-## File API
+## Image Resource
 
-- Initial URL: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
+- Initial URL: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/FileAPI/](https://w3c.github.io/FileAPI/)
+- Editor's Draft: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
+- Missing references for links: *INS* https://www.w3.org/TR/wai-aria/
+
+
+## Payment Handler API
+
+- Initial URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Unknown WebIDL names used: *DEL* void
-- Missing references for links: *DEL* https://www.w3.org/TR/svg2/
-- Inconsistent references for links: *DEL* https://w3c.github.io/FileAPI/
 
 
-## Frame Timing
+## Resize Observer
 
-- Initial URL: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
+- Initial URL: [https://www.w3.org/TR/resize-observer-1/](https://www.w3.org/TR/resize-observer-1/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+- Editor's Draft: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
+- Invalid WebIDL content found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
+- Unknown WebIDL names used: *INS* void
 
 
-## SVG Animations
+## Scalable Vector Graphics (SVG) 1.1 (Second Edition)
 
-- Initial URL: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
+- Initial URL: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://svgwg.org/specs/animations/](https://svgwg.org/specs/animations/)
-- Unknown WebIDL names used: *DEL* void
+- Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
+- This specification was not in the reference crawl report.
+
+
+## Tracking Preference Expression (DNT)
+
+- Initial URL: [https://www.w3.org/TR/tracking-dnt/](https://www.w3.org/TR/tracking-dnt/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/dnt/drafts/tracking-dnt.html](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
+- This specification was not in the reference crawl report.
+
+
+## Web App Manifest - Application Information
+
+- Initial URL: [https://www.w3.org/TR/manifest-app-info/](https://www.w3.org/TR/manifest-app-info/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/manifest-app-info/](https://w3c.github.io/manifest-app-info/)
+- This specification was not in the reference crawl report.
+
+
+## WebCodecs
+
+- Initial URL: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
+- This specification was not in the reference crawl report.
+
+
+## WebCodecs
+
+- Initial URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
+- Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
+- This specification is not in the new crawl report.
 
 

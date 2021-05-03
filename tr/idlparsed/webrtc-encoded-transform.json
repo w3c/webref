@@ -864,58 +864,13 @@
       }
     },
     "idlExtendedNames": {
-      "RTCConfiguration": [
-        {
-          "fragment": "// New fields in RTCConfiguration\npartial dictionary RTCConfiguration {\n    boolean encodedInsertableStreams = false;\n};",
-          "type": "dictionary",
-          "name": "RTCConfiguration",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "field",
-              "name": "encodedInsertableStreams",
-              "extAttrs": [],
-              "idlType": {
-                "type": "dictionary-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "boolean"
-              },
-              "default": {
-                "type": "boolean",
-                "value": false
-              },
-              "required": false
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ],
       "RTCRtpSender": [
         {
-          "fragment": "// New methods for RTCRtpSender and RTCRtpReceiver\npartial interface RTCRtpSender {\n    RTCInsertableStreams createEncodedStreams();\n    attribute RTCRtpTransform? transform;\n};",
+          "fragment": "// New methods for RTCRtpSender and RTCRtpReceiver\npartial interface RTCRtpSender {\n    attribute RTCRtpTransform? transform;\n};",
           "type": "interface",
           "name": "RTCRtpSender",
           "inheritance": null,
           "members": [
-            {
-              "type": "operation",
-              "name": "createEncodedStreams",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "RTCInsertableStreams"
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": ""
-            },
             {
               "type": "attribute",
               "name": "transform",
@@ -938,26 +893,11 @@
       ],
       "RTCRtpReceiver": [
         {
-          "fragment": "partial interface RTCRtpReceiver {\n    RTCInsertableStreams createEncodedStreams();\n    attribute RTCRtpTransform? transform;\n};",
+          "fragment": "partial interface RTCRtpReceiver {\n    attribute RTCRtpTransform? transform;\n};",
           "type": "interface",
           "name": "RTCRtpReceiver",
           "inheritance": null,
           "members": [
-            {
-              "type": "operation",
-              "name": "createEncodedStreams",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "RTCInsertableStreams"
-              },
-              "arguments": [],
-              "extAttrs": [],
-              "special": ""
-            },
             {
               "type": "attribute",
               "name": "transform",
@@ -1036,13 +976,10 @@
         "ReadableStream",
         "WritableStream"
       ],
-      "RTCConfiguration": [],
       "RTCRtpSender": [
-        "RTCInsertableStreams",
         "RTCRtpTransform"
       ],
       "RTCRtpReceiver": [
-        "RTCInsertableStreams",
         "RTCRtpTransform"
       ],
       "SFrameTransformOptions": [
@@ -1081,7 +1018,6 @@
     "externalDependencies": [
       "ReadableStream",
       "WritableStream",
-      "RTCConfiguration",
       "RTCRtpSender",
       "RTCRtpReceiver",
       "bigint",

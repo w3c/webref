@@ -68,8 +68,65 @@
         "extAttrs": [],
         "partial": false
       },
+      "BluetoothManufacturerDataFilterInit": {
+        "fragment": "dictionary BluetoothManufacturerDataFilterInit : BluetoothDataFilterInit {\n  required [EnforceRange] unsigned short companyIdentifier;\n};",
+        "type": "dictionary",
+        "name": "BluetoothManufacturerDataFilterInit",
+        "inheritance": "BluetoothDataFilterInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "companyIdentifier",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "BluetoothServiceDataFilterInit": {
+        "fragment": "dictionary BluetoothServiceDataFilterInit : BluetoothDataFilterInit {\n  required BluetoothServiceUUID service;\n};",
+        "type": "dictionary",
+        "name": "BluetoothServiceDataFilterInit",
+        "inheritance": "BluetoothDataFilterInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "service",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BluetoothServiceUUID"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "BluetoothLEScanFilterInit": {
-        "fragment": "dictionary BluetoothLEScanFilterInit {\n  sequence<BluetoothServiceUUID> services;\n  DOMString name;\n  DOMString namePrefix;\n  // Maps unsigned shorts to BluetoothDataFilters.\n  object manufacturerData;\n  // Maps BluetoothServiceUUIDs to BluetoothDataFilters.\n  object serviceData;\n};",
+        "fragment": "dictionary BluetoothLEScanFilterInit {\n  sequence<BluetoothServiceUUID> services;\n  DOMString name;\n  DOMString namePrefix;\n  sequence<BluetoothManufacturerDataFilterInit> manufacturerData;\n  sequence<BluetoothServiceDataFilterInit> serviceData;\n};",
         "type": "dictionary",
         "name": "BluetoothLEScanFilterInit",
         "inheritance": null,
@@ -135,10 +192,19 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
-              "idlType": "object"
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BluetoothManufacturerDataFilterInit"
+                }
+              ]
             },
             "default": null,
             "required": false
@@ -150,10 +216,19 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
-              "idlType": "object"
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BluetoothServiceDataFilterInit"
+                }
+              ]
             },
             "default": null,
             "required": false
@@ -3194,8 +3269,17 @@
     },
     "dependencies": {
       "BluetoothDataFilterInit": [],
-      "BluetoothLEScanFilterInit": [
+      "BluetoothManufacturerDataFilterInit": [
+        "BluetoothDataFilterInit"
+      ],
+      "BluetoothServiceDataFilterInit": [
+        "BluetoothDataFilterInit",
         "BluetoothServiceUUID"
+      ],
+      "BluetoothLEScanFilterInit": [
+        "BluetoothServiceUUID",
+        "BluetoothManufacturerDataFilterInit",
+        "BluetoothServiceDataFilterInit"
       ],
       "RequestDeviceOptions": [
         "BluetoothLEScanFilterInit",

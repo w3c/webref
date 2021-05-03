@@ -2,11 +2,11 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-04-26T01:35:20.187Z",
+  "date": "2021-05-03T01:36:12.370Z",
   "stats": {
-    "crawled": 387,
+    "crawled": 390,
     "errors": 0,
-    "studied": 387
+    "studied": 390
   },
   "results": [
     {
@@ -347,6 +347,11 @@
               "crawled": "https://www.w3.org/TR/wai-aria-1.2/"
             },
             {
+              "url": "https://www.w3.org/TR/manifest-app-info/",
+              "title": "Web App Manifest - Application Information",
+              "crawled": "https://www.w3.org/TR/manifest-app-info/"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web Application Manifest",
               "crawled": "https://www.w3.org/TR/appmanifest/"
@@ -552,7 +557,7 @@
     {
       "title": "ARIA in HTML",
       "shortname": "html-aria",
-      "date": "20 April 2021",
+      "date": "01 May 2021",
       "url": "https://www.w3.org/TR/html-aria/",
       "release": {
         "url": "https://www.w3.org/TR/html-aria/",
@@ -4825,7 +4830,7 @@
     {
       "title": "Client Hints Infrastructure",
       "shortname": "client-hints-infrastructure",
-      "date": "12 April 2021",
+      "date": "29 April 2021",
       "url": "https://wicg.github.io/client-hints-infrastructure/",
       "nightly": {
         "url": "https://wicg.github.io/client-hints-infrastructure/",
@@ -4847,6 +4852,7 @@
           "idl": []
         },
         "missingLinkRef": [
+          "https://www.w3.org/TR/permissions-policy/",
           "https://w3c.github.io/device-memory/"
         ],
         "inconsistentRef": [],
@@ -5217,15 +5223,15 @@
           {
             "link": "https://www.w3.org/TR/2003/REC-SVG11-20030114/",
             "ref": {
-              "name": "SVG",
-              "url": "https://www.w3.org/TR/SVG/"
+              "name": "SVG11",
+              "url": "https://www.w3.org/TR/SVG11/"
             }
           },
           {
             "link": "https://www.w3.org/TR/2011/REC-SVG11-20110816/",
             "ref": {
-              "name": "SVG",
-              "url": "https://www.w3.org/TR/SVG/"
+              "name": "SVG11",
+              "url": "https://www.w3.org/TR/SVG11/"
             }
           },
           {
@@ -5385,7 +5391,7 @@
     {
       "title": "Constructable Stylesheet Objects",
       "shortname": "construct-stylesheets",
-      "date": "3 March 2020",
+      "date": "27 April 2021",
       "url": "https://wicg.github.io/construct-stylesheets/",
       "nightly": {
         "url": "https://wicg.github.io/construct-stylesheets/",
@@ -5402,8 +5408,7 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [
           "CSSStyleSheet",
-          "MediaList",
-          "void"
+          "MediaList"
         ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
@@ -5435,7 +5440,9 @@
           "brokenLinks": [
             "https://drafts.csswg.org/cssom-1/#documentorshadowroot-document-or-shadow-root-css-style-sheets",
             "https://drafts.csswg.org/cssom-1/#dom-documentorshadowroot-stylesheets",
-            "https://heycam.github.io/webidl/#notallowederror"
+            "https://heycam.github.io/webidl/#idl-undefined",
+            "https://heycam.github.io/webidl/#notallowederror",
+            "https://heycam.github.io/webidl/#idl-frozen-array"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -8317,11 +8324,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/construct-stylesheets/",
-              "title": "Constructable Stylesheet Objects",
-              "crawled": "https://wicg.github.io/construct-stylesheets/"
-            },
-            {
               "url": "https://www.w3.org/TR/css-align-3/",
               "title": "CSS Box Alignment Module Level 3",
               "crawled": "https://www.w3.org/TR/css-align-3/"
@@ -8669,6 +8671,11 @@
         ],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://wicg.github.io/construct-stylesheets/",
+              "title": "Constructable Stylesheet Objects",
+              "crawled": "https://wicg.github.io/construct-stylesheets/"
+            },
             {
               "url": "https://www.w3.org/TR/CSP3/",
               "title": "Content Security Policy Level 3",
@@ -12426,9 +12433,13 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "hasInvalidIdl": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "CSS",
+          "void"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -18222,9 +18233,7 @@
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
-        "unknownExposedNames": [
-          "LayoutWorklet"
-        ],
+        "unknownExposedNames": [],
         "unknownIdlNames": [
           "CSS",
           "CSSStyleRule",
@@ -20999,11 +21008,6 @@
               "crawled": "https://wicg.github.io/idle-detection/"
             },
             {
-              "url": "https://www.w3.org/TR/image-resource/",
-              "title": "Image Resource",
-              "crawled": "https://www.w3.org/TR/image-resource/"
-            },
-            {
               "url": "https://wicg.github.io/import-maps/",
               "title": "Import Maps",
               "crawled": "https://wicg.github.io/import-maps/"
@@ -21466,6 +21470,11 @@
               "crawled": "https://wicg.github.io/origin-policy/"
             },
             {
+              "url": "https://www.w3.org/TR/SVG11/",
+              "title": "Scalable Vector Graphics (SVG) 1.1 (Second Edition)",
+              "crawled": "https://www.w3.org/TR/SVG11/"
+            },
+            {
               "url": "https://www.w3.org/TR/screen-capture/",
               "title": "Screen Capture",
               "crawled": "https://www.w3.org/TR/screen-capture/"
@@ -21672,7 +21681,7 @@
     {
       "title": "ECMAScript® 2022 Language Specification",
       "shortname": "ecmascript",
-      "date": "6 April 2021",
+      "date": "28 April 2021",
       "url": "https://tc39.es/ecma262/",
       "nightly": {
         "url": "https://tc39.es/ecma262/",
@@ -24801,7 +24810,7 @@
     {
       "title": "Federated Learning of Cohorts",
       "shortname": "floc",
-      "date": "13 April 2021",
+      "date": "29 April 2021",
       "url": "https://wicg.github.io/floc/",
       "nightly": {
         "url": "https://wicg.github.io/floc/",
@@ -25414,7 +25423,7 @@
     {
       "title": "File API",
       "shortname": "FileAPI",
-      "date": "22 April 2021",
+      "date": "27 April 2021",
       "url": "https://www.w3.org/TR/FileAPI/",
       "release": {
         "url": "https://www.w3.org/TR/FileAPI/",
@@ -28615,7 +28624,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "22 April 2021",
+      "date": "30 April 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -39499,6 +39508,11 @@
               "crawled": "https://www.w3.org/TR/touch-events/"
             },
             {
+              "url": "https://www.w3.org/TR/tracking-dnt/",
+              "title": "Tracking Preference Expression (DNT)",
+              "crawled": "https://www.w3.org/TR/tracking-dnt/"
+            },
+            {
               "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
               "title": "Trusted Types",
               "crawled": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
@@ -39629,9 +39643,9 @@
               "crawled": "https://www.w3.org/TR/wasm-web-api-1/"
             },
             {
-              "url": "https://w3c.github.io/webcodecs/",
+              "url": "https://www.w3.org/TR/webcodecs/",
               "title": "WebCodecs",
-              "crawled": "https://w3c.github.io/webcodecs/"
+              "crawled": "https://www.w3.org/TR/webcodecs/"
             },
             {
               "url": "https://www.w3.org/TR/webdriver2/",
@@ -40589,10 +40603,10 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/webrtc-identity/identity.html",
+        "url": "https://w3c.github.io/webrtc-identity/",
         "repository": "https://github.com/w3c/webrtc-identity",
         "sourcePath": "identity.html",
-        "filename": "identity.html"
+        "filename": "index.html"
       },
       "crawled": "https://www.w3.org/TR/webrtc-identity/",
       "report": {
@@ -40743,7 +40757,7 @@
     {
       "title": "Image Resource",
       "shortname": "image-resource",
-      "date": "29 March 2021",
+      "date": "26 April 2021",
       "url": "https://www.w3.org/TR/image-resource/",
       "release": {
         "url": "https://www.w3.org/TR/image-resource/",
@@ -40769,7 +40783,9 @@
           "css": [],
           "idl": []
         },
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/wai-aria/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -40784,6 +40800,11 @@
               "crawled": "https://wicg.github.io/content-index/spec/"
             },
             {
+              "url": "https://www.w3.org/TR/manifest-app-info/",
+              "title": "Web App Manifest - Application Information",
+              "crawled": "https://www.w3.org/TR/manifest-app-info/"
+            },
+            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web Application Manifest",
               "crawled": "https://www.w3.org/TR/appmanifest/"
@@ -40792,11 +40813,12 @@
           "informative": []
         },
         "xrefs": {
-          "notExported": [],
+          "notExported": [
+            "https://www.w3.org/TR/wai-aria/#dfn-accessible-name"
+          ],
           "notDfn": [],
           "brokenLinks": [
-            "https://heycam.github.io/webidl/#exceptiondef-typeerror",
-            "https://dom.spec.whatwg.org/#context-object"
+            "https://heycam.github.io/webidl/#exceptiondef-typeerror"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -40808,7 +40830,7 @@
     {
       "title": "import assertions",
       "shortname": "tc39-import-assertions",
-      "date": "22 April 2021",
+      "date": "30 April 2021",
       "url": "https://tc39.es/proposal-import-assertions/",
       "nightly": {
         "url": "https://tc39.es/proposal-import-assertions/",
@@ -41394,6 +41416,11 @@
               "crawled": "https://wicg.github.io/page-lifecycle/"
             },
             {
+              "url": "https://www.w3.org/TR/payment-handler/",
+              "title": "Payment Handler API",
+              "crawled": "https://www.w3.org/TR/payment-handler/"
+            },
+            {
               "url": "https://www.w3.org/TR/payment-method-manifest/",
               "title": "Payment Method Manifest",
               "crawled": "https://www.w3.org/TR/payment-method-manifest/"
@@ -41564,9 +41591,9 @@
               "crawled": "https://www.w3.org/TR/wasm-js-api-1/"
             },
             {
-              "url": "https://w3c.github.io/webcodecs/",
+              "url": "https://www.w3.org/TR/webcodecs/",
               "title": "WebCodecs",
-              "crawled": "https://w3c.github.io/webcodecs/"
+              "crawled": "https://www.w3.org/TR/webcodecs/"
             },
             {
               "url": "https://www.w3.org/TR/webdriver2/",
@@ -42865,9 +42892,9 @@
               "crawled": "https://wicg.github.io/video-rvfc/"
             },
             {
-              "url": "https://w3c.github.io/webcodecs/",
+              "url": "https://www.w3.org/TR/webcodecs/",
               "title": "WebCodecs",
-              "crawled": "https://w3c.github.io/webcodecs/"
+              "crawled": "https://www.w3.org/TR/webcodecs/"
             }
           ],
           "informative": []
@@ -47043,9 +47070,9 @@
               "crawled": "https://w3c.github.io/media-playback-quality/"
             },
             {
-              "url": "https://w3c.github.io/webcodecs/",
+              "url": "https://www.w3.org/TR/webcodecs/",
               "title": "WebCodecs",
-              "crawled": "https://w3c.github.io/webcodecs/"
+              "crawled": "https://www.w3.org/TR/webcodecs/"
             }
           ]
         },
@@ -47409,9 +47436,9 @@
               "crawled": "https://www.w3.org/TR/webaudio/"
             },
             {
-              "url": "https://w3c.github.io/webcodecs/",
+              "url": "https://www.w3.org/TR/webcodecs/",
               "title": "WebCodecs",
-              "crawled": "https://w3c.github.io/webcodecs/"
+              "crawled": "https://www.w3.org/TR/webcodecs/"
             }
           ]
         },
@@ -47956,7 +47983,7 @@
     {
       "title": "Notifications API Standard",
       "shortname": "notifications",
-      "date": "22 April 2021",
+      "date": "26 April 2021",
       "url": "https://notifications.spec.whatwg.org/",
       "nightly": {
         "url": "https://notifications.spec.whatwg.org/",
@@ -48008,8 +48035,8 @@
         },
         "xrefs": {
           "notExported": [
+            "https://heycam.github.io/webidl/#dfn-dictionary",
             "https://heycam.github.io/webidl/#dfn-throw",
-            "https://html.spec.whatwg.org/#entry-settings-object",
             "https://html.spec.whatwg.org/#update-the-image-data",
             "https://w3c.github.io/vibration/#dfn-validate-and-normalize",
             "https://w3c.github.io/vibration/#dfn-perform-vibration"
@@ -48810,7 +48837,7 @@
     {
       "title": "Payment Handler API",
       "shortname": "payment-handler",
-      "date": "21 October 2019",
+      "date": "28 April 2021",
       "url": "https://www.w3.org/TR/payment-handler/",
       "release": {
         "url": "https://www.w3.org/TR/payment-handler/",
@@ -48829,455 +48856,12 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
           "css": [],
-          "idl": [
-            {
-              "expected": {
-                "linkingText": [
-                  "delete(instrumentKey)"
-                ],
-                "type": "method",
-                "for": [
-                  "PaymentInstruments"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-paymentinstruments-delete",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-delete",
-                "linkingText": [
-                  "PaymentInstruments.delete()",
-                  "PaymentInstruments.delete",
-                  "delete()",
-                  "delete"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "PaymentInstruments"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "delete-method",
-                  "title": "delete() method",
-                  "number": "3.3.1"
-                },
-                "definedIn": "heading"
-              },
-              "for": {
-                "id": "dom-paymentinstruments",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments",
-                "linkingText": [
-                  "PaymentInstruments"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "paymentinstruments-interface",
-                  "title": "PaymentInstruments interface",
-                  "number": "3.3"
-                },
-                "definedIn": "heading"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "get(instrumentKey)"
-                ],
-                "type": "method",
-                "for": [
-                  "PaymentInstruments"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-paymentinstruments-get",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-get",
-                "linkingText": [
-                  "PaymentInstruments.get()",
-                  "PaymentInstruments.get",
-                  "get()",
-                  "get"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "PaymentInstruments"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "get-method",
-                  "title": "get() method",
-                  "number": "3.3.2"
-                },
-                "definedIn": "heading"
-              },
-              "for": {
-                "id": "dom-paymentinstruments",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments",
-                "linkingText": [
-                  "PaymentInstruments"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "paymentinstruments-interface",
-                  "title": "PaymentInstruments interface",
-                  "number": "3.3"
-                },
-                "definedIn": "heading"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "has(instrumentKey)"
-                ],
-                "type": "method",
-                "for": [
-                  "PaymentInstruments"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-paymentinstruments-has",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-has",
-                "linkingText": [
-                  "PaymentInstruments.has()",
-                  "PaymentInstruments.has",
-                  "has()",
-                  "has"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "PaymentInstruments"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "has-method",
-                  "title": "has() method",
-                  "number": "3.3.4"
-                },
-                "definedIn": "heading"
-              },
-              "for": {
-                "id": "dom-paymentinstruments",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments",
-                "linkingText": [
-                  "PaymentInstruments"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "paymentinstruments-interface",
-                  "title": "PaymentInstruments interface",
-                  "number": "3.3"
-                },
-                "definedIn": "heading"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "set(instrumentKey, details)"
-                ],
-                "type": "method",
-                "for": [
-                  "PaymentInstruments"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-paymentinstruments-set",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-set",
-                "linkingText": [
-                  "PaymentInstruments.set()",
-                  "PaymentInstruments.set",
-                  "set()",
-                  "set"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "PaymentInstruments"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "set-method",
-                  "title": "set() method",
-                  "number": "3.3.5"
-                },
-                "definedIn": "heading"
-              },
-              "for": {
-                "id": "dom-paymentinstruments",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments",
-                "linkingText": [
-                  "PaymentInstruments"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "paymentinstruments-interface",
-                  "title": "PaymentInstruments interface",
-                  "number": "3.3"
-                },
-                "definedIn": "heading"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "constructor(type, eventInitDict)"
-                ],
-                "type": "constructor",
-                "for": [
-                  "CanMakePaymentEvent"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-canmakepaymentevent-constructor",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent-constructor",
-                "linkingText": [
-                  "CanMakePaymentEvent.constructor()",
-                  "CanMakePaymentEvent.constructor",
-                  "constructor()",
-                  "constructor"
-                ],
-                "localLinkingText": [],
-                "type": "constructor",
-                "for": [
-                  "CanMakePaymentEvent"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "the-canmakepaymentevent",
-                  "title": "The CanMakePaymentEvent",
-                  "number": "4.2"
-                },
-                "definedIn": "pre"
-              },
-              "for": {
-                "id": "dom-canmakepaymentevent",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent",
-                "linkingText": [
-                  "CanMakePaymentEvent"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "the-canmakepaymentevent",
-                  "title": "The CanMakePaymentEvent",
-                  "number": "4.2"
-                },
-                "definedIn": "heading"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "respondWith(canMakePaymentResponse)"
-                ],
-                "type": "method",
-                "for": [
-                  "CanMakePaymentEvent"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-canmakepaymentevent-respondwith",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent-respondwith",
-                "linkingText": [
-                  "CanMakePaymentEvent.respondWith()",
-                  "CanMakePaymentEvent.respondWith",
-                  "respondWith()",
-                  "respondWith"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "CanMakePaymentEvent"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "respondwith-method",
-                  "title": "respondWith() method",
-                  "number": "4.2.1"
-                },
-                "definedIn": "heading"
-              },
-              "for": {
-                "id": "dom-canmakepaymentevent",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent",
-                "linkingText": [
-                  "CanMakePaymentEvent"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "the-canmakepaymentevent",
-                  "title": "The CanMakePaymentEvent",
-                  "number": "4.2"
-                },
-                "definedIn": "heading"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "constructor(type, eventInitDict)"
-                ],
-                "type": "constructor",
-                "for": [
-                  "PaymentRequestEvent"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-paymentrequestevent-constructor",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-constructor",
-                "linkingText": [
-                  "PaymentRequestEvent.constructor()",
-                  "PaymentRequestEvent.constructor",
-                  "constructor()",
-                  "constructor"
-                ],
-                "localLinkingText": [],
-                "type": "constructor",
-                "for": [
-                  "PaymentRequestEvent"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "the-paymentrequestevent",
-                  "title": "The PaymentRequestEvent",
-                  "number": "5.3"
-                },
-                "definedIn": "pre"
-              },
-              "for": {
-                "id": "dom-paymentrequestevent",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent",
-                "linkingText": [
-                  "PaymentRequestEvent"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "the-paymentrequestevent",
-                  "title": "The PaymentRequestEvent",
-                  "number": "5.3"
-                },
-                "definedIn": "heading"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "openWindow(url)"
-                ],
-                "type": "method",
-                "for": [
-                  "PaymentRequestEvent"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-paymentrequestevent-openwindow",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-openwindow",
-                "linkingText": [
-                  "PaymentRequestEvent.openWindow()",
-                  "PaymentRequestEvent.openWindow",
-                  "openWindow()",
-                  "openWindow"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "PaymentRequestEvent"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "openwindow-method",
-                  "title": "openWindow() method",
-                  "number": "5.3.9"
-                },
-                "definedIn": "heading"
-              },
-              "for": {
-                "id": "dom-paymentrequestevent",
-                "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent",
-                "linkingText": [
-                  "PaymentRequestEvent"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "the-paymentrequestevent",
-                  "title": "The PaymentRequestEvent",
-                  "number": "5.3"
-                },
-                "definedIn": "heading"
-              },
-              "warning": true
-            }
-          ]
+          "idl": []
         },
         "missingLinkRef": [],
         "inconsistentRef": [],
@@ -49294,18 +48878,11 @@
         "xrefs": {
           "notExported": [
             "https://www.w3.org/TR/payment-request/#dfn-payment-method",
-            "https://html.spec.whatwg.org/#ascii-case-insensitive",
-            "https://html.spec.whatwg.org/#concept-url-scheme",
             "https://heycam.github.io/webidl/#invalidstateerror",
-            "https://heycam.github.io/webidl/#dfn-DOMException",
             "https://heycam.github.io/webidl/#operationerror",
-            "https://heycam.github.io/webidl/#dfn-throw",
-            "https://heycam.github.io/webidl/#dfn-convert-idl-to-ecmascript-value"
+            "https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value"
           ],
-          "notDfn": [
-            "https://html.spec.whatwg.org/#structured-clone",
-            "https://heycam.github.io/webidl/#idl-void"
-          ],
+          "notDfn": [],
           "brokenLinks": [
             "https://www.w3.org/TR/service-workers-1/#service-worker-global-scope",
             "https://www.w3.org/TR/service-workers-1/#dfn-extend-lifetime-promises",
@@ -49315,15 +48892,17 @@
             "https://www.w3.org/TR/payment-request/#canmakepayment()-method",
             "https://www.w3.org/TR/payment-request/#show()-method",
             "https://www.w3.org/TR/payment-request/#dfn-json-serialize",
-            "https://html.spec.whatwg.org/#context-object",
-            "https://html.spec.whatwg.org/#triggered-by-user-activation",
-            "https://html.spec.whatwg.org/#concept-events-trusted",
             "https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes",
             "https://heycam.github.io/webidl/#SecureContext",
+            "https://heycam.github.io/webidl/#idl-undefined",
+            "https://heycam.github.io/webidl/#a-new-promise",
             "https://heycam.github.io/webidl/#notallowederror",
+            "https://heycam.github.io/webidl/#exceptiondef-typeerror",
+            "https://heycam.github.io/webidl/#this",
             "https://heycam.github.io/webidl/#idl-frozen-array",
-            "https://www.w3.org/TR/appmanifest/#fetching-image-resources",
-            "https://www.w3.org/TR/payment-method-id/#payment-method-identifiers-(pmis)"
+            "https://heycam.github.io/webidl/#upon-rejection",
+            "https://heycam.github.io/webidl/#upon-fulfillment",
+            "https://www.w3.org/TR/appmanifest/#fetching-image-resources"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -52825,9 +52404,12 @@
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
-        "hasInvalidIdl": true,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "void"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -53136,6 +52718,418 @@
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
+        },
+        "ok": false
+      }
+    },
+    {
+      "title": "Scalable Vector Graphics (SVG) 1.1 (Second Edition)",
+      "shortname": "SVG11",
+      "date": "16 August 2011",
+      "url": "https://www.w3.org/TR/SVG11/",
+      "release": {
+        "url": "https://www.w3.org/TR/SVG11/",
+        "pages": [
+          "https://www.w3.org/TR/SVG11/expanded-toc.html",
+          "https://www.w3.org/TR/SVG11/intro.html",
+          "https://www.w3.org/TR/SVG11/concepts.html",
+          "https://www.w3.org/TR/SVG11/render.html",
+          "https://www.w3.org/TR/SVG11/types.html",
+          "https://www.w3.org/TR/SVG11/struct.html",
+          "https://www.w3.org/TR/SVG11/styling.html",
+          "https://www.w3.org/TR/SVG11/coords.html",
+          "https://www.w3.org/TR/SVG11/paths.html",
+          "https://www.w3.org/TR/SVG11/shapes.html",
+          "https://www.w3.org/TR/SVG11/text.html",
+          "https://www.w3.org/TR/SVG11/painting.html",
+          "https://www.w3.org/TR/SVG11/color.html",
+          "https://www.w3.org/TR/SVG11/pservers.html",
+          "https://www.w3.org/TR/SVG11/masking.html",
+          "https://www.w3.org/TR/SVG11/filters.html",
+          "https://www.w3.org/TR/SVG11/interact.html",
+          "https://www.w3.org/TR/SVG11/linking.html",
+          "https://www.w3.org/TR/SVG11/script.html",
+          "https://www.w3.org/TR/SVG11/animate.html",
+          "https://www.w3.org/TR/SVG11/fonts.html",
+          "https://www.w3.org/TR/SVG11/metadata.html",
+          "https://www.w3.org/TR/SVG11/backward.html",
+          "https://www.w3.org/TR/SVG11/extend.html",
+          "https://www.w3.org/TR/SVG11/svgdtd.html",
+          "https://www.w3.org/TR/SVG11/svgdom.html",
+          "https://www.w3.org/TR/SVG11/idl.html",
+          "https://www.w3.org/TR/SVG11/java.html",
+          "https://www.w3.org/TR/SVG11/escript.html",
+          "https://www.w3.org/TR/SVG11/implnote.html",
+          "https://www.w3.org/TR/SVG11/conform.html",
+          "https://www.w3.org/TR/SVG11/access.html",
+          "https://www.w3.org/TR/SVG11/i18n.html",
+          "https://www.w3.org/TR/SVG11/minimize.html",
+          "https://www.w3.org/TR/SVG11/refs.html",
+          "https://www.w3.org/TR/SVG11/eltindex.html",
+          "https://www.w3.org/TR/SVG11/attindex.html",
+          "https://www.w3.org/TR/SVG11/propidx.html",
+          "https://www.w3.org/TR/SVG11/feature.html",
+          "https://www.w3.org/TR/SVG11/mimereg.html",
+          "https://www.w3.org/TR/SVG11/changes.html"
+        ],
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://svgwg.org/svg2-draft/",
+        "repository": "https://github.com/w3c/svgwg",
+        "sourcePath": "master/Overview.html",
+        "pages": [
+          "https://svgwg.org/svg2-draft/intro.html",
+          "https://svgwg.org/svg2-draft/conform.html",
+          "https://svgwg.org/svg2-draft/render.html",
+          "https://svgwg.org/svg2-draft/types.html",
+          "https://svgwg.org/svg2-draft/struct.html",
+          "https://svgwg.org/svg2-draft/styling.html",
+          "https://svgwg.org/svg2-draft/geometry.html",
+          "https://svgwg.org/svg2-draft/coords.html",
+          "https://svgwg.org/svg2-draft/paths.html",
+          "https://svgwg.org/svg2-draft/shapes.html",
+          "https://svgwg.org/svg2-draft/text.html",
+          "https://svgwg.org/svg2-draft/embedded.html",
+          "https://svgwg.org/svg2-draft/painting.html",
+          "https://svgwg.org/svg2-draft/pservers.html",
+          "https://svgwg.org/svg2-draft/interact.html",
+          "https://svgwg.org/svg2-draft/linking.html",
+          "https://svgwg.org/svg2-draft/idl.html",
+          "https://svgwg.org/svg2-draft/implnote.html",
+          "https://svgwg.org/svg2-draft/access.html",
+          "https://svgwg.org/svg2-draft/animate.html",
+          "https://svgwg.org/svg2-draft/refs.html",
+          "https://svgwg.org/svg2-draft/eltindex.html",
+          "https://svgwg.org/svg2-draft/attindex.html",
+          "https://svgwg.org/svg2-draft/propidx.html",
+          "https://svgwg.org/svg2-draft/idlindex.html",
+          "https://svgwg.org/svg2-draft/mimereg.html",
+          "https://svgwg.org/svg2-draft/changes.html"
+        ],
+        "filename": "Overview.html"
+      },
+      "crawled": "https://www.w3.org/TR/SVG11/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": true,
+        "hasInvalidIdl": true,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingDfns": {
+          "css": [],
+          "idl": []
+        },
+        "missingLinkRef": [
+          "https://www.w3.org/TR/2001/REC-xlink-20010627/",
+          "https://www.w3.org/TR/2001/REC-MathML2-20010221/",
+          "https://www.w3.org/TR/1999/REC-html401-19991224/present/",
+          "https://www.w3.org/TR/xlink/",
+          "https://www.w3.org/TR/xml-names11/",
+          "https://www.w3.org/TR/1999/REC-html401-19991224/struct/",
+          "https://www.w3.org/TR/2003/REC-MathML2-20031021/",
+          "https://www.w3.org/TR/xml-stylesheet/",
+          "https://www.w3.org/TR/xsl/",
+          "https://www.w3.org/TR/html4/",
+          "https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/",
+          "https://www.w3.org/TR/smil/"
+        ],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/2006/REC-xml-names-20060816/",
+            "ref": {
+              "name": "XML-NS",
+              "url": "http://www.w3.org/TR/2009/REC-xml-names-20091208/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/2006/REC-xml-20060816/",
+            "ref": {
+              "name": "XML10",
+              "url": "http://www.w3.org/TR/2008/REC-xml-20081126/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/xmlbase/",
+            "ref": {
+              "name": "XML-BASE",
+              "url": "http://www.w3.org/TR/2009/REC-xmlbase-20090128/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/smil-animation/",
+            "ref": {
+              "name": "SMILANIM",
+              "url": "http://www.w3.org/TR/2001/REC-smil-animation-20010904/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/xlink11/",
+            "ref": {
+              "name": "XLINK",
+              "url": "http://www.w3.org/TR/2010/REC-xlink11-20100506/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/xml/",
+            "ref": {
+              "name": "XML10",
+              "url": "http://www.w3.org/TR/2008/REC-xml-20081126/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/xml-names/",
+            "ref": {
+              "name": "XML-NS",
+              "url": "http://www.w3.org/TR/2009/REC-xml-names-20091208/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/charmod/",
+            "ref": {
+              "name": "CHARMOD",
+              "url": "http://www.w3.org/TR/2005/REC-charmod-20050215/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/rdf-primer/",
+            "ref": {
+              "name": "RDF-PRIMER",
+              "url": "http://www.w3.org/TR/2004/REC-rdf-primer-20040210/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/xmlschema-2/",
+            "ref": {
+              "name": "SCHEMA2",
+              "url": "http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/css3-selectors/",
+            "ref": {
+              "name": "SELECTORS",
+              "url": "http://www.w3.org/TR/2009/PR-css3-selectors-20091215/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/xhtml1/",
+            "ref": {
+              "name": "XHTML",
+              "url": "http://www.w3.org/TR/2002/REC-xhtml1-20020801/"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/xslt/",
+            "ref": {
+              "name": "XSLT",
+              "url": "http://www.w3.org/TR/1999/REC-xslt-19991116"
+            }
+          },
+          {
+            "link": "https://www.w3.org/TR/xslt20/",
+            "ref": {
+              "name": "XSLT2",
+              "url": "http://www.w3.org/TR/2007/REC-xslt20-20070123/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/compositing-1/",
+              "title": "Compositing and Blending Level 1",
+              "crawled": "https://www.w3.org/TR/compositing-1/"
+            },
+            {
+              "url": "https://drafts.fxtf.org/compositing-2/",
+              "title": "Compositing and Blending Level 2",
+              "crawled": "https://drafts.fxtf.org/compositing-2/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-ui-4/",
+              "title": "CSS Basic User Interface Module Level 4",
+              "crawled": "https://www.w3.org/TR/css-ui-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-color-4/",
+              "title": "CSS Color Module Level 4",
+              "crawled": "https://www.w3.org/TR/css-color-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-images-4/",
+              "title": "CSS Image Values and Replaced Content Module Level 4",
+              "crawled": "https://www.w3.org/TR/css-images-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-images-3/",
+              "title": "CSS Images Module Level 3",
+              "crawled": "https://www.w3.org/TR/css-images-3/"
+            },
+            {
+              "url": "https://www.w3.org/TR/cssom-1/",
+              "title": "CSS Object Model (CSSOM)",
+              "crawled": "https://www.w3.org/TR/cssom-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-transforms-1/",
+              "title": "CSS Transforms Module Level 1",
+              "crawled": "https://www.w3.org/TR/css-transforms-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-transforms-2/",
+              "title": "CSS Transforms Module Level 2",
+              "crawled": "https://www.w3.org/TR/css-transforms-2/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-writing-modes-4/",
+              "title": "CSS Writing Modes Level 4",
+              "crawled": "https://www.w3.org/TR/css-writing-modes-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/filter-effects-1/",
+              "title": "Filter Effects Module Level 1",
+              "crawled": "https://www.w3.org/TR/filter-effects-1/"
+            },
+            {
+              "url": "https://fullscreen.spec.whatwg.org/",
+              "title": "Fullscreen API Standard",
+              "crawled": "https://fullscreen.spec.whatwg.org/"
+            },
+            {
+              "url": "https://html.spec.whatwg.org/multipage/",
+              "title": "HTML Standard",
+              "crawled": "https://html.spec.whatwg.org/multipage/"
+            },
+            {
+              "url": "https://www.w3.org/TR/motion-1/",
+              "title": "Motion Path Module Level 1",
+              "crawled": "https://www.w3.org/TR/motion-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/resource-timing-2/",
+              "title": "Resource Timing Level 2",
+              "crawled": "https://www.w3.org/TR/resource-timing-2/"
+            },
+            {
+              "url": "https://www.w3.org/TR/svg-integration/",
+              "title": "SVG Integration",
+              "crawled": "https://www.w3.org/TR/svg-integration/"
+            },
+            {
+              "url": "https://www.w3.org/TR/web-animations-1/",
+              "title": "Web Animations",
+              "crawled": "https://www.w3.org/TR/web-animations-1/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/CSS21/",
+              "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
+              "crawled": "https://www.w3.org/TR/CSS21/"
+            },
+            {
+              "url": "https://www.w3.org/TR/CSS22/",
+              "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
+              "crawled": "https://www.w3.org/TR/CSS22/"
+            },
+            {
+              "url": "https://www.w3.org/TR/clipboard-apis/",
+              "title": "Clipboard API and events",
+              "crawled": "https://www.w3.org/TR/clipboard-apis/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-cascade-3/",
+              "title": "CSS Cascading and Inheritance Level 3",
+              "crawled": "https://www.w3.org/TR/css-cascade-3/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-cascade-4/",
+              "title": "CSS Cascading and Inheritance Level 4",
+              "crawled": "https://www.w3.org/TR/css-cascade-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-cascade-5/",
+              "title": "CSS Cascading and Inheritance Level 5",
+              "crawled": "https://www.w3.org/TR/css-cascade-5/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-style-attr/",
+              "title": "CSS Style Attributes",
+              "crawled": "https://www.w3.org/TR/css-style-attr/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-transitions-1/",
+              "title": "CSS Transitions",
+              "crawled": "https://www.w3.org/TR/css-transitions-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/geometry-1/",
+              "title": "Geometry Interfaces Module Level 1",
+              "crawled": "https://www.w3.org/TR/geometry-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/selectors-4/",
+              "title": "Selectors Level 4",
+              "crawled": "https://www.w3.org/TR/selectors-4/"
+            },
+            {
+              "url": "https://www.w3.org/TR/svg-aam-1.0/",
+              "title": "SVG Accessibility API Mappings",
+              "crawled": "https://www.w3.org/TR/svg-aam-1.0/"
+            }
+          ]
+        },
+        "xrefs": {
+          "notExported": [],
+          "notDfn": [],
+          "brokenLinks": [],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": [
+            "https://www.w3.org/TR/2001/REC-SVG-20010904/",
+            "https://www.w3.org/TR/2008/REC-xml-20081126/",
+            "https://www.w3.org/TR/2006/REC-xml-names-20060816/",
+            "https://www.w3.org/TR/2001/REC-xlink-20010627/",
+            "https://www.w3.org/TR/2009/REC-xmlbase-20090128/",
+            "https://www.w3.org/TR/2008/REC-CSS2-20080411/",
+            "https://www.w3.org/TR/1999/REC-xslt-19991116",
+            "https://www.w3.org/TR/2007/REC-xslt20-20070123/",
+            "https://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/",
+            "https://www.w3.org/TR/2008/REC-SMIL3-20081201/",
+            "https://www.w3.org/TR/2001/REC-smil-animation-20010904/",
+            "https://www.w3.org/TR/1999/REC-html401-19991224/",
+            "https://www.w3.org/TR/2002/REC-xhtml1-20020801/",
+            "https://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/",
+            "https://www.w3.org/TR/2001/REC-MathML2-20010221/",
+            "https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/",
+            "https://www.w3.org/TR/2006/REC-xml-20060816/",
+            "https://www.w3.org/TR/1999/REC-html401-19991224/present/",
+            "https://www.w3.org/TR/2006/REC-xsl11-20061205/",
+            "https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/",
+            "https://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/",
+            "https://www.w3.org/TR/1999/REC-html401-19991224/struct/",
+            "https://www.w3.org/TR/2004/REC-rdf-primer-20040210/",
+            "https://www.w3.org/TR/2003/REC-MathML2-20031021/",
+            "https://www.w3.org/TR/2002/WD-XHTMLplusMathMLplusSVG-20020809/",
+            "https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/",
+            "https://www.w3.org/TR/2000/REC-ATAG10-20000203/",
+            "https://www.w3.org/TR/2002/REC-UAAG10-20021217/",
+            "https://www.w3.org/TR/2008/REC-WCAG20-20081211/",
+            "https://www.w3.org/TR/2000/NOTE-SVG-access-20000807/",
+            "https://www.w3.org/TR/2005/REC-charmod-20050215/",
+            "https://www.w3.org/TR/2003/REC-PNG-20031110/",
+            "https://www.w3.org/TR/2010/REC-xlink11-20100506/",
+            "https://www.w3.org/TR/2009/REC-xml-names-20091208/",
+            "https://www.w3.org/TR/2010/REC-MathML3-20101021/",
+            "https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/",
+            "https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/",
+            "https://www.w3.org/TR/2009/PR-css3-selectors-20091215/",
+            "https://www.w3.org/TR/2009/WD-SVGCompositing-20090430/",
+            "https://www.w3.org/TR/2006/WD-Window-20060407/"
+          ]
         },
         "ok": false
       }
@@ -53692,6 +53686,11 @@
               "url": "https://www.w3.org/TR/graphics-aam-1.0/",
               "title": "Graphics Accessibility API Mappings",
               "crawled": "https://www.w3.org/TR/graphics-aam-1.0/"
+            },
+            {
+              "url": "https://www.w3.org/TR/SVG11/",
+              "title": "Scalable Vector Graphics (SVG) 1.1 (Second Edition)",
+              "crawled": "https://www.w3.org/TR/SVG11/"
             },
             {
               "url": "https://www.w3.org/TR/selectors-4/",
@@ -55725,7 +55724,7 @@
     {
       "title": "Temporal proposal",
       "shortname": "tc39-temporal",
-      "date": "19 April 2021",
+      "date": "28 April 2021",
       "url": "https://tc39.es/proposal-temporal/",
       "nightly": {
         "url": "https://tc39.es/proposal-temporal/",
@@ -55911,7 +55910,7 @@
     {
       "title": "The Storage Access API",
       "shortname": "storage-access",
-      "date": "22 April 2021",
+      "date": "26 April 2021",
       "url": "https://privacycg.github.io/storage-access/",
       "nightly": {
         "url": "https://privacycg.github.io/storage-access/",
@@ -56485,6 +56484,418 @@
           "datedUrls": []
         },
         "ok": true
+      }
+    },
+    {
+      "title": "Tracking Preference Expression (DNT)",
+      "shortname": "tracking-dnt",
+      "date": "17 January 2019",
+      "url": "https://www.w3.org/TR/tracking-dnt/",
+      "release": {
+        "url": "https://www.w3.org/TR/tracking-dnt/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
+        "repository": "https://github.com/w3c/dnt",
+        "sourcePath": "index.html",
+        "filename": "tracking-dnt.html"
+      },
+      "crawled": "https://www.w3.org/TR/tracking-dnt/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "hasObsoleteIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [
+          "void"
+        ],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingDfns": {
+          "css": [],
+          "idl": [
+            {
+              "expected": {
+                "linkingText": [
+                  "TrackingExData"
+                ],
+                "type": "dictionary",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-trackingexdata",
+                "href": "https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata",
+                "linkingText": [
+                  "TrackingExData"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "exception-javascript-api-store",
+                  "title": "API to Store a Tracking Exception",
+                  "number": "6.6.1"
+                },
+                "definedIn": "prose"
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "site"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "TrackingExData"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-trackingexdata-site",
+                "href": "https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata-site",
+                "linkingText": [
+                  "site"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "trackingexdata"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "exception-javascript-api-store",
+                  "title": "API to Store a Tracking Exception",
+                  "number": "6.6.1"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "targets"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "TrackingExData"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-trackingexdata-targets",
+                "href": "https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata-targets",
+                "linkingText": [
+                  "targets"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "trackingexdata"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "exception-javascript-api-store",
+                  "title": "API to Store a Tracking Exception",
+                  "number": "6.6.1"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "name"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "TrackingExData"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-trackingexdata-name",
+                "href": "https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata-name",
+                "linkingText": [
+                  "name"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "trackingexdata"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "exception-javascript-api-store",
+                  "title": "API to Store a Tracking Exception",
+                  "number": "6.6.1"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "explanation"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "TrackingExData"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-trackingexdata-explanation",
+                "href": "https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata-explanation",
+                "linkingText": [
+                  "explanation"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "trackingexdata"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "exception-javascript-api-store",
+                  "title": "API to Store a Tracking Exception",
+                  "number": "6.6.1"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "details"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "TrackingExData"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-trackingexdata-details",
+                "href": "https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata-details",
+                "linkingText": [
+                  "details"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "trackingexdata"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "exception-javascript-api-store",
+                  "title": "API to Store a Tracking Exception",
+                  "number": "6.6.1"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "maxAge"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "TrackingExData"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-trackingexdata-maxage",
+                "href": "https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata-maxage",
+                "linkingText": [
+                  "maxAge"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "trackingexdata"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "exception-javascript-api-store",
+                  "title": "API to Store a Tracking Exception",
+                  "number": "6.6.1"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "TrackingExResult"
+                ],
+                "type": "dictionary",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-trackingexresult",
+                "href": "https://www.w3.org/TR/tracking-dnt/#dom-trackingexresult",
+                "linkingText": [
+                  "TrackingExResult"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "exception-javascript-api-store",
+                  "title": "API to Store a Tracking Exception",
+                  "number": "6.6.1"
+                },
+                "definedIn": "prose"
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "isSiteWide"
+                ],
+                "type": "dict-member",
+                "for": [
+                  "TrackingExResult"
+                ],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-trackingexresult-issitewide",
+                "href": "https://www.w3.org/TR/tracking-dnt/#dom-trackingexresult-issitewide",
+                "linkingText": [
+                  "isSiteWide"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [
+                  "trackingexresult"
+                ],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "exception-javascript-api-store",
+                  "title": "API to Store a Tracking Exception",
+                  "number": "6.6.1"
+                },
+                "definedIn": "dt"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "doNotTrack"
+                ],
+                "type": "attribute",
+                "for": [
+                  "Navigator"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "storeTrackingException(properties)"
+                ],
+                "type": "method",
+                "for": [
+                  "Navigator"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "removeTrackingException(properties)"
+                ],
+                "type": "method",
+                "for": [
+                  "Navigator"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "trackingExceptionExists(properties)"
+                ],
+                "type": "method",
+                "for": [
+                  "Navigator"
+                ],
+                "access": "public",
+                "informative": false
+              }
+            }
+          ]
+        },
+        "missingLinkRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/html5/",
+            "ref": {
+              "name": "HTML51",
+              "url": "https://www.w3.org/TR/html51/"
+            }
+          },
+          {
+            "link": "https://html.spec.whatwg.org/",
+            "ref": {
+              "name": "HTML51",
+              "url": "https://www.w3.org/TR/html51/"
+            }
+          }
+        ],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "xrefs": {
+          "notExported": [],
+          "notDfn": [],
+          "brokenLinks": [],
+          "evolvingLinks": [],
+          "outdatedSpecs": [
+            "https://www.w3.org/TR/html5/",
+            "https://www.w3.org/TR/html51/"
+          ],
+          "datedUrls": [
+            "https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/"
+          ]
+        },
+        "ok": false
       }
     },
     {
@@ -57725,7 +58136,7 @@
     {
       "title": "User-Agent Client Hints",
       "shortname": "ua-client-hints",
-      "date": "14 April 2021",
+      "date": "26 April 2021",
       "url": "https://wicg.github.io/ua-client-hints/",
       "nightly": {
         "url": "https://wicg.github.io/ua-client-hints/",
@@ -58140,6 +58551,60 @@
       }
     },
     {
+      "title": "Web App Manifest - Application Information",
+      "shortname": "manifest-app-info",
+      "date": "24 March 2021",
+      "url": "https://www.w3.org/TR/manifest-app-info/",
+      "release": {
+        "url": "https://www.w3.org/TR/manifest-app-info/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/manifest-app-info/",
+        "repository": "https://github.com/w3c/manifest-app-info",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "crawled": "https://www.w3.org/TR/manifest-app-info/",
+      "report": {
+        "noNormativeRefs": false,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingDfns": {
+          "css": [],
+          "idl": []
+        },
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/appmanifest/",
+              "title": "Web Application Manifest",
+              "crawled": "https://www.w3.org/TR/appmanifest/"
+            }
+          ]
+        },
+        "xrefs": {
+          "notExported": [
+            "https://www.w3.org/TR/accname-1.2/#dfn-accessible-description",
+            "https://www.w3.org/TR/accname-1.2/#dfn-accessible-name"
+          ],
+          "notDfn": [],
+          "brokenLinks": [],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Web Application Manifest",
       "shortname": "appmanifest",
       "date": "07 April 2021",
@@ -58200,6 +58665,11 @@
               "url": "https://www.w3.org/TR/payment-method-manifest/",
               "title": "Payment Method Manifest",
               "crawled": "https://www.w3.org/TR/payment-method-manifest/"
+            },
+            {
+              "url": "https://www.w3.org/TR/manifest-app-info/",
+              "title": "Web App Manifest - Application Information",
+              "crawled": "https://www.w3.org/TR/manifest-app-info/"
             },
             {
               "url": "https://w3c.github.io/web-share-target/",
@@ -58298,9 +58768,9 @@
               "crawled": "https://www.w3.org/TR/webmidi/"
             },
             {
-              "url": "https://w3c.github.io/webcodecs/",
+              "url": "https://www.w3.org/TR/webcodecs/",
               "title": "WebCodecs",
-              "crawled": "https://w3c.github.io/webcodecs/"
+              "crawled": "https://www.w3.org/TR/webcodecs/"
             },
             {
               "url": "https://w3c.github.io/webdriver-bidi/",
@@ -58560,7 +59030,7 @@
     {
       "title": "Web Bluetooth",
       "shortname": "web-bluetooth",
-      "date": "31 March 2021",
+      "date": "29 April 2021",
       "url": "https://webbluetoothcg.github.io/web-bluetooth/",
       "nightly": {
         "url": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -58628,7 +59098,6 @@
             "https://heycam.github.io/webidl/#dfn-get-buffer-source-copy",
             "https://heycam.github.io/webidl/#notfounderror",
             "https://heycam.github.io/webidl/#securityerror",
-            "https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value",
             "https://heycam.github.io/webidl/#dfn-convert-idl-to-ecmascript-value",
             "https://heycam.github.io/webidl/#aborterror",
             "https://heycam.github.io/webidl/#notsupportederror",
@@ -58646,13 +59115,13 @@
             "https://heycam.github.io/webidl/#a-new-promise",
             "https://heycam.github.io/webidl/#resolve",
             "https://heycam.github.io/webidl/#reject",
+            "https://heycam.github.io/webidl/#this",
             "https://heycam.github.io/webidl/#idl-frozen-array",
             "https://heycam.github.io/webidl/#idl-undefined",
             "https://heycam.github.io/webidl/#dfn-maplike",
             "https://heycam.github.io/webidl/#wait-for-all",
             "https://heycam.github.io/webidl/#a-promise-rejected-with",
             "https://heycam.github.io/webidl/#upon-fulfillment",
-            "https://dom.spec.whatwg.org/#context-object",
             "https://w3c.github.io/permissions/#dom-permissionname-bluetooth"
           ],
           "evolvingLinks": [],
@@ -60062,15 +60531,19 @@
     {
       "title": "WebCodecs",
       "shortname": "webcodecs",
-      "date": "23 April 2021",
-      "url": "https://w3c.github.io/webcodecs/",
+      "date": "30 April 2021",
+      "url": "https://www.w3.org/TR/webcodecs/",
+      "release": {
+        "url": "https://www.w3.org/TR/webcodecs/",
+        "filename": "Overview.html"
+      },
       "nightly": {
         "url": "https://w3c.github.io/webcodecs/",
         "repository": "https://github.com/w3c/webcodecs",
         "sourcePath": "index.src.html",
         "filename": "index.html"
       },
-      "crawled": "https://w3c.github.io/webcodecs/",
+      "crawled": "https://www.w3.org/TR/webcodecs/",
       "report": {
         "noNormativeRefs": false,
         "noRefToWebIDL": false,
@@ -65549,7 +66022,7 @@
     {
       "title": "WebGPU",
       "shortname": "gpuweb",
-      "date": "24 April 2021",
+      "date": "1 May 2021",
       "url": "https://gpuweb.github.io/gpuweb/",
       "nightly": {
         "url": "https://gpuweb.github.io/gpuweb/",
@@ -65583,6 +66056,9 @@
             "https://heycam.github.io/webidl/#datacloneerror",
             "https://heycam.github.io/webidl/#aborterror",
             "https://heycam.github.io/webidl/#dfn-get-buffer-source-copy",
+            "https://heycam.github.io/webidl/#securityerror",
+            "https://html.spec.whatwg.org/#the-image-argument-is-not-origin-clean",
+            "https://html.spec.whatwg.org/#concept-canvas-origin-clean",
             "https://html.spec.whatwg.org/#serializable-objects"
           ],
           "notDfn": [
@@ -66464,6 +66940,11 @@
               "crawled": "https://privacycg.github.io/storage-access/"
             },
             {
+              "url": "https://www.w3.org/TR/tracking-dnt/",
+              "title": "Tracking Preference Expression (DNT)",
+              "crawled": "https://www.w3.org/TR/tracking-dnt/"
+            },
+            {
               "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
               "title": "Trusted Types",
               "crawled": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
@@ -66579,9 +67060,9 @@
               "crawled": "https://www.w3.org/TR/wasm-web-api-1/"
             },
             {
-              "url": "https://w3c.github.io/webcodecs/",
+              "url": "https://www.w3.org/TR/webcodecs/",
               "title": "WebCodecs",
-              "crawled": "https://w3c.github.io/webcodecs/"
+              "crawled": "https://www.w3.org/TR/webcodecs/"
             },
             {
               "url": "https://www.w3.org/TR/webdriver2/",
@@ -67022,9 +67503,9 @@
               "crawled": "https://www.w3.org/TR/webaudio/"
             },
             {
-              "url": "https://w3c.github.io/webcodecs/",
+              "url": "https://www.w3.org/TR/webcodecs/",
               "title": "WebCodecs",
-              "crawled": "https://w3c.github.io/webcodecs/"
+              "crawled": "https://www.w3.org/TR/webcodecs/"
             },
             {
               "url": "https://w3c.github.io/webrtc-encoded-transform/",
@@ -67100,7 +67581,7 @@
     {
       "title": "WebRTC Encoded Transform",
       "shortname": "webrtc-encoded-transform",
-      "date": "22 April 2021",
+      "date": "29 April 2021",
       "url": "https://w3c.github.io/webrtc-encoded-transform/",
       "nightly": {
         "url": "https://w3c.github.io/webrtc-encoded-transform/",
@@ -67141,7 +67622,6 @@
         },
         "xrefs": {
           "notExported": [
-            "https://heycam.github.io/webidl/#invalidaccesserror",
             "https://heycam.github.io/webidl/#invalidmodificationerror",
             "https://w3c.github.io/webcrypto/#dfn-CryptoKey"
           ],
@@ -67213,7 +67693,7 @@
     {
       "title": "WebTransport",
       "shortname": "webtransport",
-      "date": "20 April 2021",
+      "date": "28 April 2021",
       "url": "https://w3c.github.io/webtransport/",
       "nightly": {
         "url": "https://w3c.github.io/webtransport/",
@@ -67253,6 +67733,7 @@
           ],
           "brokenLinks": [
             "https://heycam.github.io/webidl/#this",
+            "https://heycam.github.io/webidl/#a-promise-resolved-with",
             "https://heycam.github.io/webidl/#a-promise-rejected-with",
             "https://heycam.github.io/webidl/#exceptiondef-typeerror",
             "https://heycam.github.io/webidl/#new",

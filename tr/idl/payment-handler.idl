@@ -11,16 +11,24 @@ partial interface ServiceWorkerRegistration {
 interface PaymentManager {
   [SameObject] readonly attribute PaymentInstruments instruments;
   attribute DOMString userHint;
+  Promise<undefined> enableDelegations(sequence<PaymentDelegation> delegations);
+};
+
+enum PaymentDelegation {
+  "shippingAddress",
+  "payerName",
+  "payerPhone",
+  "payerEmail"
 };
 
 [SecureContext, Exposed=(Window,Worker)]
 interface PaymentInstruments {
-    Promise<boolean>           delete(DOMString instrumentKey);
-    Promise<any> get(DOMString instrumentKey);
-    Promise<sequence<DOMString>>  keys();
-    Promise<boolean>           has(DOMString instrumentKey);
-    Promise<void>              set(DOMString instrumentKey, PaymentInstrument details);
-    Promise<void>           clear();
+  Promise<boolean> delete(DOMString instrumentKey);
+  Promise<any> get(DOMString instrumentKey);
+  Promise<sequence<DOMString>>  keys();
+  Promise<boolean> has(DOMString instrumentKey);
+  Promise<undefined> set(DOMString instrumentKey, PaymentInstrument details);
+  Promise<undefined> clear();
 };
 
 dictionary PaymentInstrument {
@@ -42,11 +50,11 @@ partial interface ServiceWorkerGlobalScope {
 
 [Exposed=ServiceWorker]
 interface CanMakePaymentEvent : ExtendableEvent {
-  constructor(DOMString type, CanMakePaymentEventInit eventInitDict);
+  constructor(DOMString type, optional CanMakePaymentEventInit eventInitDict = {});
   readonly attribute USVString topOrigin;
   readonly attribute USVString paymentRequestOrigin;
   readonly attribute FrozenArray<PaymentMethodData> methodData;
-  void respondWith(Promise<boolean> canMakePaymentResponse);
+  undefined respondWith(Promise<boolean> canMakePaymentResponse);
 };
 
 dictionary CanMakePaymentEventInit : ExtendableEventInit {
@@ -59,16 +67,18 @@ partial interface ServiceWorkerGlobalScope {
   attribute EventHandler onpaymentrequest;
 };
 
-dictionary PaymentMethodChangeResponse {
+dictionary PaymentRequestDetailsUpdate {
   DOMString error;
   PaymentCurrencyAmount total;
-  FrozenArray<PaymentDetailsModifier> modifiers;
+  sequence<PaymentDetailsModifier> modifiers;
+  sequence<PaymentShippingOption> shippingOptions;
   object paymentMethodErrors;
+  AddressErrors shippingAddressErrors;
 };
 
 [Exposed=ServiceWorker]
 interface PaymentRequestEvent : ExtendableEvent {
-  constructor(DOMString type, PaymentRequestEventInit eventInitDict);
+  constructor(DOMString type, optional PaymentRequestEventInit eventInitDict = {});
   readonly attribute USVString topOrigin;
   readonly attribute USVString paymentRequestOrigin;
   readonly attribute DOMString paymentRequestId;
@@ -77,9 +87,13 @@ interface PaymentRequestEvent : ExtendableEvent {
   readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;
   readonly attribute DOMString instrumentKey;
   readonly attribute boolean requestBillingAddress;
+  readonly attribute object? paymentOptions;
+  readonly attribute FrozenArray<PaymentShippingOption>? shippingOptions;
   Promise<WindowClient?> openWindow(USVString url);
-  Promise<PaymentMethodChangeResponse?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);
-  void respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);
+  Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);
+  Promise<PaymentRequestDetailsUpdate?> changeShippingAddress(optional AddressInit shippingAddress = {});
+  Promise<PaymentRequestDetailsUpdate?> changeShippingOption(DOMString shippingOption);
+  undefined respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);
 };
 
 dictionary PaymentRequestEventInit : ExtendableEventInit {
@@ -90,9 +104,16 @@ dictionary PaymentRequestEventInit : ExtendableEventInit {
   PaymentCurrencyAmount total;
   sequence<PaymentDetailsModifier> modifiers;
   DOMString instrumentKey;
+  PaymentOptions paymentOptions;
+  sequence<PaymentShippingOption> shippingOptions;
 };
 
 dictionary PaymentHandlerResponse {
 DOMString methodName;
 object details;
+DOMString? payerName;
+DOMString? payerEmail;
+DOMString? payerPhone;
+AddressInit shippingAddress;
+DOMString? shippingOption;
 };

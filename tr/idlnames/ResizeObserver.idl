@@ -1,0 +1,8 @@
+// Source: Resize Observer (https://www.w3.org/TR/resize-observer-1/)
+[Exposed=(Window),
+ Constructor(ResizeObserverCallback callback)]
+interface ResizeObserver {
+    void observe(Element target, optional ResizeObserverOptions options);
+    void unobserve(Element target);
+    void disconnect();
+};

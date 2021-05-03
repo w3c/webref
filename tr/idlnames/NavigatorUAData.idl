@@ -5,4 +5,5 @@ interface NavigatorUAData {
   readonly attribute boolean mobile;
   readonly attribute DOMString platform;
   Promise<UADataValues> getHighEntropyValues(sequence<DOMString> hints);
+  UALowEntropyJSON toJSON();
 };

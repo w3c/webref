@@ -18456,6 +18456,130 @@
         ],
         "extAttrs": []
       },
+      "CanvasFontKerning": {
+        "fragment": "enum CanvasFontKerning { \"auto\", \"normal\", \"none\" };",
+        "type": "enum",
+        "name": "CanvasFontKerning",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "auto"
+          },
+          {
+            "type": "enum-value",
+            "value": "normal"
+          },
+          {
+            "type": "enum-value",
+            "value": "none"
+          }
+        ],
+        "extAttrs": []
+      },
+      "CanvasFontStretch": {
+        "fragment": "enum CanvasFontStretch { \"ultra-condensed\", \"extra-condensed\", \"condensed\", \"semi-condensed\", \"normal\", \"semi-expanded\", \"expanded\", \"extra-expanded\", \"ultra-expanded\" };",
+        "type": "enum",
+        "name": "CanvasFontStretch",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "ultra-condensed"
+          },
+          {
+            "type": "enum-value",
+            "value": "extra-condensed"
+          },
+          {
+            "type": "enum-value",
+            "value": "condensed"
+          },
+          {
+            "type": "enum-value",
+            "value": "semi-condensed"
+          },
+          {
+            "type": "enum-value",
+            "value": "normal"
+          },
+          {
+            "type": "enum-value",
+            "value": "semi-expanded"
+          },
+          {
+            "type": "enum-value",
+            "value": "expanded"
+          },
+          {
+            "type": "enum-value",
+            "value": "extra-expanded"
+          },
+          {
+            "type": "enum-value",
+            "value": "ultra-expanded"
+          }
+        ],
+        "extAttrs": []
+      },
+      "CanvasFontVariantCaps": {
+        "fragment": "enum CanvasFontVariantCaps { \"normal\", \"small-caps\", \"all-small-caps\", \"petite-caps\", \"all-petite-caps\", \"unicase\", \"titling-caps\" };",
+        "type": "enum",
+        "name": "CanvasFontVariantCaps",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "normal"
+          },
+          {
+            "type": "enum-value",
+            "value": "small-caps"
+          },
+          {
+            "type": "enum-value",
+            "value": "all-small-caps"
+          },
+          {
+            "type": "enum-value",
+            "value": "petite-caps"
+          },
+          {
+            "type": "enum-value",
+            "value": "all-petite-caps"
+          },
+          {
+            "type": "enum-value",
+            "value": "unicase"
+          },
+          {
+            "type": "enum-value",
+            "value": "titling-caps"
+          }
+        ],
+        "extAttrs": []
+      },
+      "CanvasTextRendering": {
+        "fragment": "enum CanvasTextRendering { \"auto\", \"optimizeSpeed\", \"optimizeLegibility\", \"geometricPrecision\" };",
+        "type": "enum",
+        "name": "CanvasTextRendering",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "auto"
+          },
+          {
+            "type": "enum-value",
+            "value": "optimizeSpeed"
+          },
+          {
+            "type": "enum-value",
+            "value": "optimizeLegibility"
+          },
+          {
+            "type": "enum-value",
+            "value": "geometricPrecision"
+          }
+        ],
+        "extAttrs": []
+      },
       "CanvasPathDrawingStyles": {
         "fragment": "interface mixin CanvasPathDrawingStyles {\n  // line caps/joins\n  attribute unrestricted double lineWidth; // (default 1)\n  attribute CanvasLineCap lineCap; // (default \"butt\")\n  attribute CanvasLineJoin lineJoin; // (default \"miter\")\n  attribute unrestricted double miterLimit; // (default 10)\n\n  // dashed lines\n  undefined setLineDash(sequence<unrestricted double> segments); // default empty\n  sequence<unrestricted double> getLineDash();\n  attribute unrestricted double lineDashOffset;\n};",
         "type": "interface mixin",
@@ -18607,7 +18731,7 @@
         "partial": false
       },
       "CanvasTextDrawingStyles": {
-        "fragment": "interface mixin CanvasTextDrawingStyles {\n  // text\n  attribute DOMString font; // (default 10px sans-serif)\n  attribute CanvasTextAlign textAlign; // (default: \"start\")\n  attribute CanvasTextBaseline textBaseline; // (default: \"alphabetic\")\n  attribute CanvasDirection direction; // (default: \"inherit\")\n};",
+        "fragment": "interface mixin CanvasTextDrawingStyles {\n  // text\n  attribute DOMString font; // (default 10px sans-serif)\n  attribute CanvasTextAlign textAlign; // (default: \"start\")\n  attribute CanvasTextBaseline textBaseline; // (default: \"alphabetic\")\n  attribute CanvasDirection direction; // (default: \"inherit\")\n  attribute double textLetterSpacing; // (default: 0)\n  attribute double textWordSpacing; // (default: 0)\n  attribute CanvasFontKerning fontKerning; // (default: \"auto\")\n  attribute CanvasFontStretch fontStretch; // (default: \"normal\")\n  attribute CanvasFontVariantCaps fontVariantCaps; // (default: \"normal\")\n  attribute CanvasTextRendering textRendering; // (default: \"normal\")\n};",
         "type": "interface mixin",
         "name": "CanvasTextDrawingStyles",
         "inheritance": null,
@@ -18667,6 +18791,96 @@
               "nullable": false,
               "union": false,
               "idlType": "CanvasDirection"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "textLetterSpacing",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "textWordSpacing",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "fontKerning",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CanvasFontKerning"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "fontStretch",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CanvasFontStretch"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "fontVariantCaps",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CanvasFontVariantCaps"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "textRendering",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CanvasTextRendering"
             },
             "extAttrs": [],
             "special": "",
@@ -37961,7 +38175,11 @@
       "CanvasTextDrawingStyles": [
         "CanvasTextAlign",
         "CanvasTextBaseline",
-        "CanvasDirection"
+        "CanvasDirection",
+        "CanvasFontKerning",
+        "CanvasFontStretch",
+        "CanvasFontVariantCaps",
+        "CanvasTextRendering"
       ],
       "CanvasPath": [],
       "CanvasGradient": [],

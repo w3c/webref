@@ -1,8 +1,8 @@
 % Reffy crawl
 % Reffy
-% April 26, 2021
+% May 03, 2021
 
-387 specifications were crawled in this report.
+390 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
@@ -83,16 +83,15 @@ Basically all specifications have normative dependencies on some other specifica
 ## List of specifications with invalid WebIDL content
 
 - [CSS Font Loading Module Level 3](https://www.w3.org/TR/css-font-loading-3/)
-- [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 - [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
 - [CSS Regions Module Level 1](https://www.w3.org/TR/css-regions-1/)
 - [CSSOM View Module](https://www.w3.org/TR/cssom-view-1/)
-- [Resize Observer](https://www.w3.org/TR/resize-observer-1/)
+- [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/)
 - [Web Cryptography API](https://www.w3.org/TR/WebCryptoAPI/)
 - [WebIDL Level 1](https://www.w3.org/TR/WebIDL-1/)
 
-=> 9 specifications found
+=> 8 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -115,6 +114,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [Page Visibility Level 2](https://www.w3.org/TR/page-visibility-2/)
 - [Private Network Access](https://wicg.github.io/private-network-access/)
 - [Referrer Policy](https://www.w3.org/TR/referrer-policy/)
+- [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/)
 - [Secure Contexts](https://www.w3.org/TR/secure-contexts/)
 - [Subresource Integrity](https://www.w3.org/TR/SRI/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
@@ -163,17 +163,16 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [WebRTC Priority Control API](https://www.w3.org/TR/webrtc-priority/)
 - [WebXR Augmented Reality Module - Level 1](https://www.w3.org/TR/webxr-ar-module-1/)
 
-=> 57 specifications found
+=> 58 specifications found
 
 
 
 ## List of [Exposed] names not defined in the specifications crawled
 
-- `LayoutWorklet` used in [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - `RTCIdentityProviderGlobalScope` used in [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/)
 - `SecureContext` used in [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 
-=> 3 [Exposed] names found
+=> 2 [Exposed] names found
 
 Please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
 
@@ -181,7 +180,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 ## List of WebIDL names not defined in the specifications crawled
 
 - `AlgorithmIdentifier` used in [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
-- `CSS` used in [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/), [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/), [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Parser API](https://wicg.github.io/css-parser-api/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
+- `CSS` used in [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/), [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/), [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/), [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Parser API](https://wicg.github.io/css-parser-api/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - `CSSGroupingRule` used in [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
 - `CSSKeywordish` used in [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - `CSSOMString` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/), [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/), [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/), [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/), [CSS Transitions](https://www.w3.org/TR/css-transitions-1/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
@@ -202,7 +201,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [Touch Events](https://www.w3.org/TR/touch-events/)
 - `bigint` used in [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
-- `void` used in [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/), [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/), [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Spatial Navigation Level 1](https://www.w3.org/TR/css-nav-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/), [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/), [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/), [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/), [Generic Sensor API](https://www.w3.org/TR/generic-sensor/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/), [Media Session Standard](https://www.w3.org/TR/mediasession/), [Media Source Extensions™](https://www.w3.org/TR/media-source/), [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/), [Payment Handler API](https://www.w3.org/TR/payment-handler/), [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/), [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/), [Remote Playback API](https://www.w3.org/TR/remote-playback/), [Reporting API](https://www.w3.org/TR/reporting-1/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/), [Service Workers 1](https://www.w3.org/TR/service-workers-1/), [User Timing Level 2](https://www.w3.org/TR/user-timing-2/), [Web Animations](https://www.w3.org/TR/web-animations-1/), [Web MIDI API](https://www.w3.org/TR/webmidi/), [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1/), [WebXR Device API](https://www.w3.org/TR/webxr/)
+- `void` used in [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/), [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/), [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Spatial Navigation Level 1](https://www.w3.org/TR/css-nav-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/), [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/), [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/), [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/), [Generic Sensor API](https://www.w3.org/TR/generic-sensor/), [Geolocation API Specification 2nd Edition](https://www.w3.org/TR/geolocation-API/), [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/), [Media Session Standard](https://www.w3.org/TR/mediasession/), [Media Source Extensions™](https://www.w3.org/TR/media-source/), [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/), [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/), [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/), [Remote Playback API](https://www.w3.org/TR/remote-playback/), [Reporting API](https://www.w3.org/TR/reporting-1/), [Resize Observer](https://www.w3.org/TR/resize-observer-1/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/), [Service Workers 1](https://www.w3.org/TR/service-workers-1/), [Tracking Preference Expression (DNT)](https://www.w3.org/TR/tracking-dnt/), [User Timing Level 2](https://www.w3.org/TR/user-timing-2/), [Web Animations](https://www.w3.org/TR/web-animations-1/), [Web MIDI API](https://www.w3.org/TR/webmidi/), [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1/), [WebXR Device API](https://www.w3.org/TR/webxr/)
 
 => 23 WebIDL names found
 
@@ -924,6 +923,20 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `shiftKey` with type `attribute`
     * `createTouch(view, target, identifier, pageX, pageY, screenX, screenY)` with type `method`
     * `createTouchList(...touches)` with type `method`
+- [Tracking Preference Expression (DNT)](https://www.w3.org/TR/tracking-dnt/):
+    * `TrackingExData` with type `dictionary`, but found [`TrackingExData`](https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata) with type `dfn`
+    * `site` with type `dict-member`, but found [`site`](https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata-site) with type `dfn` for `trackingexdata`
+    * `targets` with type `dict-member`, but found [`targets`](https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata-targets) with type `dfn` for `trackingexdata`
+    * `name` with type `dict-member`, but found [`name`](https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata-name) with type `dfn` for `trackingexdata`
+    * `explanation` with type `dict-member`, but found [`explanation`](https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata-explanation) with type `dfn` for `trackingexdata`
+    * `details` with type `dict-member`, but found [`details`](https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata-details) with type `dfn` for `trackingexdata`
+    * `maxAge` with type `dict-member`, but found [`maxAge`](https://www.w3.org/TR/tracking-dnt/#dom-trackingexdata-maxage) with type `dfn` for `trackingexdata`
+    * `TrackingExResult` with type `dictionary`, but found [`TrackingExResult`](https://www.w3.org/TR/tracking-dnt/#dom-trackingexresult) with type `dfn`
+    * `isSiteWide` with type `dict-member`, but found [`isSiteWide`](https://www.w3.org/TR/tracking-dnt/#dom-trackingexresult-issitewide) with type `dfn` for `trackingexresult`
+    * `doNotTrack` with type `attribute`
+    * `storeTrackingException(properties)` with type `method`
+    * `removeTrackingException(properties)` with type `method`
+    * `trackingExceptionExists(properties)` with type `method`
 - [User Timing Level 2](https://www.w3.org/TR/user-timing-2/):
     * `PerformanceMark` with type `interface`, but found [`PerformanceMark`](https://www.w3.org/TR/user-timing-2/#dom-performancemark) with type `dfn`
     * `PerformanceMeasure` with type `interface`, but found [`PerformanceMeasure`](https://www.w3.org/TR/user-timing-2/#dom-performancemeasure) with type `dfn`
@@ -1272,7 +1285,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `multiDrawArraysInstancedBaseInstanceWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
     * `multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
 
-=> 730 properties without definition found in 61 specifications
+=> 743 properties without definition found in 62 specifications
 
 
 ## Possibly no definition for CSS properties
@@ -1351,15 +1364,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `item(index)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-item) with type `method` for `Plugin`
     * `namedItem(name)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-nameditem) with type `method` for `Plugin`
     * `getElementsByName(elementName)` with type `method`, but found [`getElementsByName(name)`](https://html.spec.whatwg.org/multipage/dom.html#dom-document-getelementsbyname) with type `method` for `Document`
-- [Payment Handler API](https://www.w3.org/TR/payment-handler/):
-    * `delete(instrumentKey)` with type `method` for [`PaymentInstruments`](https://www.w3.org/TR/payment-handler/#dom-paymentinstruments), but found [`PaymentInstruments.delete()`](https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-delete) with type `method` for `PaymentInstruments`
-    * `get(instrumentKey)` with type `method` for [`PaymentInstruments`](https://www.w3.org/TR/payment-handler/#dom-paymentinstruments), but found [`PaymentInstruments.get()`](https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-get) with type `method` for `PaymentInstruments`
-    * `has(instrumentKey)` with type `method` for [`PaymentInstruments`](https://www.w3.org/TR/payment-handler/#dom-paymentinstruments), but found [`PaymentInstruments.has()`](https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-has) with type `method` for `PaymentInstruments`
-    * `set(instrumentKey, details)` with type `method` for [`PaymentInstruments`](https://www.w3.org/TR/payment-handler/#dom-paymentinstruments), but found [`PaymentInstruments.set()`](https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-set) with type `method` for `PaymentInstruments`
-    * `constructor(type, eventInitDict)` with type `constructor` for [`CanMakePaymentEvent`](https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent), but found [`CanMakePaymentEvent.constructor()`](https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent-constructor) with type `constructor` for `CanMakePaymentEvent`
-    * `respondWith(canMakePaymentResponse)` with type `method` for [`CanMakePaymentEvent`](https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent), but found [`CanMakePaymentEvent.respondWith()`](https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent-respondwith) with type `method` for `CanMakePaymentEvent`
-    * `constructor(type, eventInitDict)` with type `constructor` for [`PaymentRequestEvent`](https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent), but found [`PaymentRequestEvent.constructor()`](https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-constructor) with type `constructor` for `PaymentRequestEvent`
-    * `openWindow(url)` with type `method` for [`PaymentRequestEvent`](https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent), but found [`PaymentRequestEvent.openWindow()`](https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-openwindow) with type `method` for `PaymentRequestEvent`
 - [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/):
     * `constructor(callback)` with type `constructor` for [`PerformanceObserver`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver), but found [`PerformanceObserver.constructor()`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver-constructor) with type `constructor` for `PerformanceObserver`
     * `observe(options)` with type `method` for [`PerformanceObserver`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver), but found [`PerformanceObserver.observe()`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver-observe) with type `method` for `PerformanceObserver`
@@ -1371,7 +1375,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `setStreams(...streams)` with type `method` for [`RTCRtpSender`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender), but found [`setStreams()`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-setstreams) with type `method` for `RTCRtpSender`
     * `addTrack(track, ...streams)` with type `method` for [`RTCPeerConnection`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection), but found [`addTrack()`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-addtrack) with type `method` for `RTCPeerConnection`
 
-=> 81 properties without definition found in 6 specifications
+=> 73 properties without definition found in 5 specifications
 
 
 ## Missing references based on document links
@@ -1394,7 +1398,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Beacon](https://www.w3.org/TR/beacon/) links to [`https://xhr.spec.whatwg.org/`](https://xhr.spec.whatwg.org/) but does not list it in its references
 - [Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification](https://www.w3.org/TR/CSS22/) links to [`https://www.w3.org/TR/css3-box/`](https://www.w3.org/TR/css3-box/) but does not list it in its references
 - [Clear Site Data](https://www.w3.org/TR/clear-site-data/) links to [`https://w3c.github.io/IndexedDB/`](https://w3c.github.io/IndexedDB/) but does not list it in its references
-- [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/) links to [`https://w3c.github.io/device-memory/`](https://w3c.github.io/device-memory/) but does not list it in its references
+- [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/) links to:
+    * [`https://www.w3.org/TR/permissions-policy/`](https://www.w3.org/TR/permissions-policy/) but does not list it in its references
+    * [`https://w3c.github.io/device-memory/`](https://w3c.github.io/device-memory/) but does not list it in its references
 - [Clipboard API and events](https://www.w3.org/TR/clipboard-apis/) links to [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
 - [Compatibility Standard](https://compat.spec.whatwg.org/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
@@ -1977,6 +1983,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://spec.whatwg.org/`](https://spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
 - [Identifiers for WebRTC's Statistics API](https://www.w3.org/TR/webrtc-stats/) links to [`https://w3c.github.io/webrtc-extensions/`](https://w3c.github.io/webrtc-extensions/) but does not list it in its references
+- [Image Resource](https://www.w3.org/TR/image-resource/) links to [`https://www.w3.org/TR/wai-aria/`](https://www.w3.org/TR/wai-aria/) but does not list it in its references
 - [import assertions](https://tc39.es/proposal-import-assertions/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [Indexed Database API 3.0](https://www.w3.org/TR/IndexedDB-3/) links to:
     * [`https://www.w3.org/TR/2015/REC-IndexedDB-20150108/`](https://www.w3.org/TR/2015/REC-IndexedDB-20150108/) but does not list it in its references
@@ -2045,6 +2052,19 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/webappsec/specs/CSP2/`](https://w3c.github.io/webappsec/specs/CSP2/) but does not list it in its references
     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
 - [Save Data API](https://wicg.github.io/savedata/) links to [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/) but does not list it in its references
+- [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/) links to:
+    * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/) but does not list it in its references
+    * [`https://www.w3.org/TR/2001/REC-MathML2-20010221/`](https://www.w3.org/TR/2001/REC-MathML2-20010221/) but does not list it in its references
+    * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/) but does not list it in its references
+    * [`https://www.w3.org/TR/xlink/`](https://www.w3.org/TR/xlink/) but does not list it in its references
+    * [`https://www.w3.org/TR/xml-names11/`](https://www.w3.org/TR/xml-names11/) but does not list it in its references
+    * [`https://www.w3.org/TR/1999/REC-html401-19991224/struct/`](https://www.w3.org/TR/1999/REC-html401-19991224/struct/) but does not list it in its references
+    * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/) but does not list it in its references
+    * [`https://www.w3.org/TR/xml-stylesheet/`](https://www.w3.org/TR/xml-stylesheet/) but does not list it in its references
+    * [`https://www.w3.org/TR/xsl/`](https://www.w3.org/TR/xsl/) but does not list it in its references
+    * [`https://www.w3.org/TR/html4/`](https://www.w3.org/TR/html4/) but does not list it in its references
+    * [`https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/`](https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/) but does not list it in its references
+    * [`https://www.w3.org/TR/smil/`](https://www.w3.org/TR/smil/) but does not list it in its references
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/) links to:
     * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/) but does not list it in its references
@@ -2188,7 +2208,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 689 missing references for links found in 176 specifications
+=> 703 missing references for links found in 178 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -2230,8 +2250,8 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/) but related reference "2dcontext2" uses URL [`http://www.w3.org/TR/2dcontext2/`](http://www.w3.org/TR/2dcontext2/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/) links to:
     * [`https://www.w3.org/TR/2dcontext2/`](https://www.w3.org/TR/2dcontext2/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
-    * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/) but related reference "SVG" uses URL [`https://www.w3.org/TR/SVG/`](https://www.w3.org/TR/SVG/)
-    * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG" uses URL [`https://www.w3.org/TR/SVG/`](https://www.w3.org/TR/SVG/)
+    * [`https://www.w3.org/TR/2003/REC-SVG11-20030114/`](https://www.w3.org/TR/2003/REC-SVG11-20030114/) but related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
+    * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
     * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/) links to [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - [Content Index](https://wicg.github.io/content-index/spec/) links to:
@@ -2490,6 +2510,21 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 - [Resource Timing Level 2](https://www.w3.org/TR/resource-timing-2/) links to [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/) but related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
+- [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/) links to:
+    * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/) but related reference "XML-NS" uses URL [`http://www.w3.org/TR/2009/REC-xml-names-20091208/`](http://www.w3.org/TR/2009/REC-xml-names-20091208/)
+    * [`https://www.w3.org/TR/2006/REC-xml-20060816/`](https://www.w3.org/TR/2006/REC-xml-20060816/) but related reference "XML10" uses URL [`http://www.w3.org/TR/2008/REC-xml-20081126/`](http://www.w3.org/TR/2008/REC-xml-20081126/)
+    * [`https://www.w3.org/TR/xmlbase/`](https://www.w3.org/TR/xmlbase/) but related reference "XML-BASE" uses URL [`http://www.w3.org/TR/2009/REC-xmlbase-20090128/`](http://www.w3.org/TR/2009/REC-xmlbase-20090128/)
+    * [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/) but related reference "SMILANIM" uses URL [`http://www.w3.org/TR/2001/REC-smil-animation-20010904/`](http://www.w3.org/TR/2001/REC-smil-animation-20010904/)
+    * [`https://www.w3.org/TR/xlink11/`](https://www.w3.org/TR/xlink11/) but related reference "XLINK" uses URL [`http://www.w3.org/TR/2010/REC-xlink11-20100506/`](http://www.w3.org/TR/2010/REC-xlink11-20100506/)
+    * [`https://www.w3.org/TR/xml/`](https://www.w3.org/TR/xml/) but related reference "XML10" uses URL [`http://www.w3.org/TR/2008/REC-xml-20081126/`](http://www.w3.org/TR/2008/REC-xml-20081126/)
+    * [`https://www.w3.org/TR/xml-names/`](https://www.w3.org/TR/xml-names/) but related reference "XML-NS" uses URL [`http://www.w3.org/TR/2009/REC-xml-names-20091208/`](http://www.w3.org/TR/2009/REC-xml-names-20091208/)
+    * [`https://www.w3.org/TR/charmod/`](https://www.w3.org/TR/charmod/) but related reference "CHARMOD" uses URL [`http://www.w3.org/TR/2005/REC-charmod-20050215/`](http://www.w3.org/TR/2005/REC-charmod-20050215/)
+    * [`https://www.w3.org/TR/rdf-primer/`](https://www.w3.org/TR/rdf-primer/) but related reference "RDF-PRIMER" uses URL [`http://www.w3.org/TR/2004/REC-rdf-primer-20040210/`](http://www.w3.org/TR/2004/REC-rdf-primer-20040210/)
+    * [`https://www.w3.org/TR/xmlschema-2/`](https://www.w3.org/TR/xmlschema-2/) but related reference "SCHEMA2" uses URL [`http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/`](http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/)
+    * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/) but related reference "SELECTORS" uses URL [`http://www.w3.org/TR/2009/PR-css3-selectors-20091215/`](http://www.w3.org/TR/2009/PR-css3-selectors-20091215/)
+    * [`https://www.w3.org/TR/xhtml1/`](https://www.w3.org/TR/xhtml1/) but related reference "XHTML" uses URL [`http://www.w3.org/TR/2002/REC-xhtml1-20020801/`](http://www.w3.org/TR/2002/REC-xhtml1-20020801/)
+    * [`https://www.w3.org/TR/xslt/`](https://www.w3.org/TR/xslt/) but related reference "XSLT" uses URL [`http://www.w3.org/TR/1999/REC-xslt-19991116`](http://www.w3.org/TR/1999/REC-xslt-19991116)
+    * [`https://www.w3.org/TR/xslt20/`](https://www.w3.org/TR/xslt20/) but related reference "XSLT2" uses URL [`http://www.w3.org/TR/2007/REC-xslt20-20070123/`](http://www.w3.org/TR/2007/REC-xslt20-20070123/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/) links to:
     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/) but related reference "xml" uses URL [`https://www.w3.org/TR/xml`](https://www.w3.org/TR/xml)
     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/) but related reference "xml-names" uses URL [`https://www.w3.org/TR/xml-names`](https://www.w3.org/TR/xml-names)
@@ -2535,6 +2570,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`http://www.w3.org/TR/html5/`](http://www.w3.org/TR/html5/)
     * [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/) but related reference "SMILANIM" uses URL [`http://www.w3.org/TR/2001/REC-smil-animation-20010904/`](http://www.w3.org/TR/2001/REC-smil-animation-20010904/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/) links to [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+- [Tracking Preference Expression (DNT)](https://www.w3.org/TR/tracking-dnt/) links to:
+    * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/) links to:
     * [`https://w3c.github.io/webappsec-csp/`](https://w3c.github.io/webappsec-csp/) but related reference "CSP3" uses URL [`https://www.w3.org/TR/CSP3/`](https://www.w3.org/TR/CSP3/)
     * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/) but related reference "DOM-Parsing" uses URL [`https://www.w3.org/TR/DOM-Parsing/`](https://www.w3.org/TR/DOM-Parsing/)
@@ -2560,7 +2598,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/) links to:
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
-- [WebCodecs](https://w3c.github.io/webcodecs/) links to [`https://w3c.github.io/media-capabilities/`](https://w3c.github.io/media-capabilities/) but related reference "MEDIA-CAPABILITIES" uses URL [`https://www.w3.org/TR/media-capabilities/`](https://www.w3.org/TR/media-capabilities/)
+- [WebCodecs](https://www.w3.org/TR/webcodecs/) links to [`https://w3c.github.io/media-capabilities/`](https://w3c.github.io/media-capabilities/) but related reference "MEDIA-CAPABILITIES" uses URL [`https://www.w3.org/TR/media-capabilities/`](https://www.w3.org/TR/media-capabilities/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/) links to:
     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
     * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but related reference "wai-aria-1.2" uses URL [`https://www.w3.org/TR/wai-aria-1.2/`](https://www.w3.org/TR/wai-aria-1.2/)
@@ -2590,7 +2628,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 318 inconsistent references for links found in 170 specifications
+=> 334 inconsistent references for links found in 172 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -3371,6 +3409,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/page-visibility-2/#dom-document-onvisibilitychange`](https://www.w3.org/TR/page-visibility-2/#dom-document-onvisibilitychange)
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
+- [Image Resource](https://www.w3.org/TR/image-resource/):
+     * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-name`](https://www.w3.org/TR/wai-aria/#dfn-accessible-name)
 - [import assertions](https://tc39.es/proposal-import-assertions/):
      * [`https://html.spec.whatwg.org/#fetch-a-single-module-script`](https://html.spec.whatwg.org/#fetch-a-single-module-script)
      * [`https://html.spec.whatwg.org/#fetch-the-descendants-of-a-module-script`](https://html.spec.whatwg.org/#fetch-the-descendants-of-a-module-script)
@@ -3614,8 +3654,8 @@ Links in the body of a specification should be to the same document as that poin
 - [Network Error Logging](https://www.w3.org/TR/network-error-logging-1/):
      * [`https://wicg.github.io/reporting/#report-type`](https://wicg.github.io/reporting/#report-type)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/):
+     * [`https://heycam.github.io/webidl/#dfn-dictionary`](https://heycam.github.io/webidl/#dfn-dictionary)
      * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
-     * [`https://html.spec.whatwg.org/#entry-settings-object`](https://html.spec.whatwg.org/#entry-settings-object)
      * [`https://html.spec.whatwg.org/#update-the-image-data`](https://html.spec.whatwg.org/#update-the-image-data)
      * [`https://w3c.github.io/vibration/#dfn-validate-and-normalize`](https://w3c.github.io/vibration/#dfn-validate-and-normalize)
      * [`https://w3c.github.io/vibration/#dfn-perform-vibration`](https://w3c.github.io/vibration/#dfn-perform-vibration)
@@ -3665,13 +3705,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry`](https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry)
 - [Payment Handler API](https://www.w3.org/TR/payment-handler/):
      * [`https://www.w3.org/TR/payment-request/#dfn-payment-method`](https://www.w3.org/TR/payment-request/#dfn-payment-method)
-     * [`https://html.spec.whatwg.org/#ascii-case-insensitive`](https://html.spec.whatwg.org/#ascii-case-insensitive)
-     * [`https://html.spec.whatwg.org/#concept-url-scheme`](https://html.spec.whatwg.org/#concept-url-scheme)
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
-     * [`https://heycam.github.io/webidl/#dfn-DOMException`](https://heycam.github.io/webidl/#dfn-DOMException)
      * [`https://heycam.github.io/webidl/#operationerror`](https://heycam.github.io/webidl/#operationerror)
-     * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
-     * [`https://heycam.github.io/webidl/#dfn-convert-idl-to-ecmascript-value`](https://heycam.github.io/webidl/#dfn-convert-idl-to-ecmascript-value)
+     * [`https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value`](https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value)
 - [Payment Method Manifest](https://www.w3.org/TR/payment-method-manifest/):
      * [`https://w3c.github.io/payment-request/#dfn-payment-method`](https://w3c.github.io/payment-request/#dfn-payment-method)
      * [`https://w3c.github.io/payment-request/#dfn-paymentrequest-paymentrequest`](https://w3c.github.io/payment-request/#dfn-paymentrequest-paymentrequest)
@@ -4062,6 +4098,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/cssom/#css-property-to-idl-attribute`](https://drafts.csswg.org/cssom/#css-property-to-idl-attribute)
      * [`https://drafts.csswg.org/cssom/#serialize-a-css-value`](https://drafts.csswg.org/cssom/#serialize-a-css-value)
      * [`https://drafts.csswg.org/cssom/#idl-attribute-to-css-property`](https://drafts.csswg.org/cssom/#idl-attribute-to-css-property)
+- [Web App Manifest - Application Information](https://www.w3.org/TR/manifest-app-info/):
+     * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-description`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-description)
+     * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-name)
 - [Web Application Manifest](https://www.w3.org/TR/appmanifest/):
      * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-name)
 - [Web Audio API](https://www.w3.org/TR/webaudio/):
@@ -4111,7 +4150,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-copy`](https://heycam.github.io/webidl/#dfn-get-buffer-source-copy)
      * [`https://heycam.github.io/webidl/#notfounderror`](https://heycam.github.io/webidl/#notfounderror)
      * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
-     * [`https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value`](https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value)
      * [`https://heycam.github.io/webidl/#dfn-convert-idl-to-ecmascript-value`](https://heycam.github.io/webidl/#dfn-convert-idl-to-ecmascript-value)
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
      * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
@@ -4185,7 +4223,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#concept-body-consume-body`](https://fetch.spec.whatwg.org/#concept-body-consume-body)
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-copy`](https://heycam.github.io/webidl/#dfn-get-buffer-source-copy)
      * [`https://heycam.github.io/webidl/#datacloneerror`](https://heycam.github.io/webidl/#datacloneerror)
-- [WebCodecs](https://w3c.github.io/webcodecs/):
+- [WebCodecs](https://www.w3.org/TR/webcodecs/):
      * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
      * [`https://heycam.github.io/webidl/#encodingerror`](https://heycam.github.io/webidl/#encodingerror)
@@ -4308,6 +4346,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#datacloneerror`](https://heycam.github.io/webidl/#datacloneerror)
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-copy`](https://heycam.github.io/webidl/#dfn-get-buffer-source-copy)
+     * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
+     * [`https://html.spec.whatwg.org/#the-image-argument-is-not-origin-clean`](https://html.spec.whatwg.org/#the-image-argument-is-not-origin-clean)
+     * [`https://html.spec.whatwg.org/#concept-canvas-origin-clean`](https://html.spec.whatwg.org/#concept-canvas-origin-clean)
      * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
 - [WebOTP API](https://wicg.github.io/web-otp/):
      * [`https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors`](https://w3c.github.io/webappsec-credential-management/#same-origin-with-its-ancestors)
@@ -4330,7 +4371,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#invalidcharactererror`](https://heycam.github.io/webidl/#invalidcharactererror)
      * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/):
-     * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
      * [`https://heycam.github.io/webidl/#invalidmodificationerror`](https://heycam.github.io/webidl/#invalidmodificationerror)
      * [`https://w3c.github.io/webcrypto/#dfn-CryptoKey`](https://w3c.github.io/webcrypto/#dfn-CryptoKey)
 - [WebTransport](https://w3c.github.io/webtransport/):
@@ -4500,7 +4540,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#networkerror`](https://heycam.github.io/webidl/#networkerror)
      * [`https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over`](https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over)
 
-=> 1679 problematic external links found in 223 specifications
+=> 1679 problematic external links found in 225 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4845,9 +4885,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-Float64Array`](https://heycam.github.io/webidl/#idl-Float64Array)
 - [Origin Policy](https://wicg.github.io/origin-policy/):
      * [`https://html.spec.whatwg.org/#concept-document-feature-policy`](https://html.spec.whatwg.org/#concept-document-feature-policy)
-- [Payment Handler API](https://www.w3.org/TR/payment-handler/):
-     * [`https://html.spec.whatwg.org/#structured-clone`](https://html.spec.whatwg.org/#structured-clone)
-     * [`https://heycam.github.io/webidl/#idl-void`](https://heycam.github.io/webidl/#idl-void)
 - [Payment Method Identifiers](https://www.w3.org/TR/payment-method-id/):
      * [`https://html.spec.whatwg.org/#case-sensitive`](https://html.spec.whatwg.org/#case-sensitive)
 - [Payment Method Manifest](https://www.w3.org/TR/payment-method-manifest/):
@@ -4997,7 +5034,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Web Serial API](https://wicg.github.io/serial/):
      * [`https://heycam.github.io/webidl/#idl-Uint8Array`](https://heycam.github.io/webidl/#idl-Uint8Array)
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
-- [WebCodecs](https://w3c.github.io/webcodecs/):
+- [WebCodecs](https://www.w3.org/TR/webcodecs/):
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
 - [WebDriver](https://www.w3.org/TR/webdriver2/):
      * [`https://html.spec.whatwg.org/#dom-document-activeelement`](https://html.spec.whatwg.org/#dom-document-activeelement)
@@ -5037,7 +5074,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
 
-=> 425 problematic external links found in 106 specifications
+=> 423 problematic external links found in 105 specifications
 
 
 ## Broken external links
@@ -5107,7 +5144,9 @@ Links in the body of a specification should be to the same document as that poin
 - [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/):
      * [`https://drafts.csswg.org/cssom-1/#documentorshadowroot-document-or-shadow-root-css-style-sheets`](https://drafts.csswg.org/cssom-1/#documentorshadowroot-document-or-shadow-root-css-style-sheets)
      * [`https://drafts.csswg.org/cssom-1/#dom-documentorshadowroot-stylesheets`](https://drafts.csswg.org/cssom-1/#dom-documentorshadowroot-stylesheets)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/):
      * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
@@ -6079,7 +6118,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
 - [Image Resource](https://www.w3.org/TR/image-resource/):
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [Import Maps](https://wicg.github.io/import-maps/):
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
 - [Indexed Database API 3.0](https://www.w3.org/TR/IndexedDB-3/):
@@ -6277,15 +6315,17 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/payment-request/#canmakepayment()-method`](https://www.w3.org/TR/payment-request/#canmakepayment()-method)
      * [`https://www.w3.org/TR/payment-request/#show()-method`](https://www.w3.org/TR/payment-request/#show()-method)
      * [`https://www.w3.org/TR/payment-request/#dfn-json-serialize`](https://www.w3.org/TR/payment-request/#dfn-json-serialize)
-     * [`https://html.spec.whatwg.org/#context-object`](https://html.spec.whatwg.org/#context-object)
-     * [`https://html.spec.whatwg.org/#triggered-by-user-activation`](https://html.spec.whatwg.org/#triggered-by-user-activation)
-     * [`https://html.spec.whatwg.org/#concept-events-trusted`](https://html.spec.whatwg.org/#concept-events-trusted)
      * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
+     * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
      * [`https://www.w3.org/TR/appmanifest/#fetching-image-resources`](https://www.w3.org/TR/appmanifest/#fetching-image-resources)
-     * [`https://www.w3.org/TR/payment-method-id/#payment-method-identifiers-(pmis)`](https://www.w3.org/TR/payment-method-id/#payment-method-identifiers-(pmis))
 - [Payment Method Manifest](https://www.w3.org/TR/payment-method-manifest/):
      * [`https://w3c.github.io/payment-request/#dfn-payment-apps`](https://w3c.github.io/payment-request/#dfn-payment-apps)
      * [`https://w3c.github.io/payment-method-id/#dfn-payment-method-identifiers`](https://w3c.github.io/payment-method-id/#dfn-payment-method-identifiers)
@@ -6666,13 +6706,13 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#dfn-maplike`](https://heycam.github.io/webidl/#dfn-maplike)
      * [`https://heycam.github.io/webidl/#wait-for-all`](https://heycam.github.io/webidl/#wait-for-all)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://w3c.github.io/permissions/#dom-permissionname-bluetooth`](https://w3c.github.io/permissions/#dom-permissionname-bluetooth)
 - [Web Locks API](https://wicg.github.io/web-locks/):
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
@@ -6747,7 +6787,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
      * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
-- [WebCodecs](https://w3c.github.io/webcodecs/):
+- [WebCodecs](https://www.w3.org/TR/webcodecs/):
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
@@ -6827,6 +6867,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
 - [WebTransport](https://w3c.github.io/webtransport/):
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
@@ -6904,7 +6945,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1621 problematic external links found in 240 specifications
+=> 1625 problematic external links found in 240 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
@@ -7039,6 +7080,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [Touch Events](https://www.w3.org/TR/touch-events/):
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+- [Tracking Preference Expression (DNT)](https://www.w3.org/TR/tracking-dnt/):
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/):
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [UI Events](https://www.w3.org/TR/uievents/):
@@ -7075,7 +7119,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/):
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 
-=> 89 problematic external links found in 70 specifications
+=> 91 problematic external links found in 71 specifications
 
 
 ## External links that use a dated URL
@@ -7314,6 +7358,47 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2006/WD-css3-page-20061010`](https://www.w3.org/TR/2006/WD-css3-page-20061010)
 - [Referrer Policy](https://www.w3.org/TR/referrer-policy/):
      * [`https://www.w3.org/TR/2010/REC-wsc-ui-20100812/`](https://www.w3.org/TR/2010/REC-wsc-ui-20100812/)
+- [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/):
+     * [`https://www.w3.org/TR/2001/REC-SVG-20010904/`](https://www.w3.org/TR/2001/REC-SVG-20010904/)
+     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/)
+     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/)
+     * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/)
+     * [`https://www.w3.org/TR/2009/REC-xmlbase-20090128/`](https://www.w3.org/TR/2009/REC-xmlbase-20090128/)
+     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/)
+     * [`https://www.w3.org/TR/1999/REC-xslt-19991116`](https://www.w3.org/TR/1999/REC-xslt-19991116)
+     * [`https://www.w3.org/TR/2007/REC-xslt20-20070123/`](https://www.w3.org/TR/2007/REC-xslt20-20070123/)
+     * [`https://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/`](https://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/)
+     * [`https://www.w3.org/TR/2008/REC-SMIL3-20081201/`](https://www.w3.org/TR/2008/REC-SMIL3-20081201/)
+     * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/)
+     * [`https://www.w3.org/TR/2002/REC-xhtml1-20020801/`](https://www.w3.org/TR/2002/REC-xhtml1-20020801/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/)
+     * [`https://www.w3.org/TR/2001/REC-MathML2-20010221/`](https://www.w3.org/TR/2001/REC-MathML2-20010221/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/)
+     * [`https://www.w3.org/TR/2006/REC-xml-20060816/`](https://www.w3.org/TR/2006/REC-xml-20060816/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/)
+     * [`https://www.w3.org/TR/2006/REC-xsl11-20061205/`](https://www.w3.org/TR/2006/REC-xsl11-20061205/)
+     * [`https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/`](https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/struct/`](https://www.w3.org/TR/1999/REC-html401-19991224/struct/)
+     * [`https://www.w3.org/TR/2004/REC-rdf-primer-20040210/`](https://www.w3.org/TR/2004/REC-rdf-primer-20040210/)
+     * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/)
+     * [`https://www.w3.org/TR/2002/WD-XHTMLplusMathMLplusSVG-20020809/`](https://www.w3.org/TR/2002/WD-XHTMLplusMathMLplusSVG-20020809/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/)
+     * [`https://www.w3.org/TR/2000/REC-ATAG10-20000203/`](https://www.w3.org/TR/2000/REC-ATAG10-20000203/)
+     * [`https://www.w3.org/TR/2002/REC-UAAG10-20021217/`](https://www.w3.org/TR/2002/REC-UAAG10-20021217/)
+     * [`https://www.w3.org/TR/2008/REC-WCAG20-20081211/`](https://www.w3.org/TR/2008/REC-WCAG20-20081211/)
+     * [`https://www.w3.org/TR/2000/NOTE-SVG-access-20000807/`](https://www.w3.org/TR/2000/NOTE-SVG-access-20000807/)
+     * [`https://www.w3.org/TR/2005/REC-charmod-20050215/`](https://www.w3.org/TR/2005/REC-charmod-20050215/)
+     * [`https://www.w3.org/TR/2003/REC-PNG-20031110/`](https://www.w3.org/TR/2003/REC-PNG-20031110/)
+     * [`https://www.w3.org/TR/2010/REC-xlink11-20100506/`](https://www.w3.org/TR/2010/REC-xlink11-20100506/)
+     * [`https://www.w3.org/TR/2009/REC-xml-names-20091208/`](https://www.w3.org/TR/2009/REC-xml-names-20091208/)
+     * [`https://www.w3.org/TR/2010/REC-MathML3-20101021/`](https://www.w3.org/TR/2010/REC-MathML3-20101021/)
+     * [`https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/`](https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/)
+     * [`https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/`](https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/)
+     * [`https://www.w3.org/TR/2009/PR-css3-selectors-20091215/`](https://www.w3.org/TR/2009/PR-css3-selectors-20091215/)
+     * [`https://www.w3.org/TR/2009/WD-SVGCompositing-20090430/`](https://www.w3.org/TR/2009/WD-SVGCompositing-20090430/)
+     * [`https://www.w3.org/TR/2006/WD-Window-20060407/`](https://www.w3.org/TR/2006/WD-Window-20060407/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/):
      * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/)
      * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/)
@@ -7368,6 +7453,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2014/WD-SVG2-20140211/`](https://www.w3.org/TR/2014/WD-SVG2-20140211/)
 - [SVG Strokes](https://www.w3.org/TR/svg-strokes/):
      * [`https://www.w3.org/TR/2015/WD-SVG2-20150409/`](https://www.w3.org/TR/2015/WD-SVG2-20150409/)
+- [Tracking Preference Expression (DNT)](https://www.w3.org/TR/tracking-dnt/):
+     * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 - [UI Events](https://www.w3.org/TR/uievents/):
      * [`https://www.w3.org/TR/2004/REC-xml-20040204/`](https://www.w3.org/TR/2004/REC-xml-20040204/)
 - [WebIDL Level 1](https://www.w3.org/TR/WebIDL-1/):
@@ -7382,6 +7469,6 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
-=> 237 problematic external links found in 64 specifications
+=> 278 problematic external links found in 66 specifications
 
 

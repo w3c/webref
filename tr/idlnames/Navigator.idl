@@ -194,6 +194,32 @@ partial interface Navigator {
   [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;
 };
 
+// Source: Tracking Preference Expression (DNT) (https://www.w3.org/TR/tracking-dnt/)
+partial interface Navigator {
+    readonly attribute DOMString? doNotTrack;
+};
+
+// Source: Tracking Preference Expression (DNT) (https://www.w3.org/TR/tracking-dnt/)
+partial interface Navigator {
+    Promise<TrackingExResult> storeTrackingException (
+      TrackingExData properties
+    );
+};
+
+// Source: Tracking Preference Expression (DNT) (https://www.w3.org/TR/tracking-dnt/)
+partial interface Navigator {
+  Promise<void> removeTrackingException (
+    TrackingExData properties
+  );
+};
+
+// Source: Tracking Preference Expression (DNT) (https://www.w3.org/TR/tracking-dnt/)
+partial interface Navigator {
+  Promise<boolean> trackingExceptionExists (
+    TrackingExData properties
+  );
+};
+
 // Source: Vibration API (Second Edition) (https://www.w3.org/TR/vibration/)
 partial interface Navigator {
     boolean vibrate(VibratePattern pattern);

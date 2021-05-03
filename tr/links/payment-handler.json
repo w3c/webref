@@ -8,18 +8,18 @@
     "https://github.com/w3c/payment-handler/issues": [],
     "https://www.w3.org/Payments/WG/": [],
     "https://github.com/w3c/payment-handler/issues/": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/83744/status": [],
-    "https://www.w3.org/2019/Process-20190301/": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
     "https://www.w3.org/TR/service-workers-1/": [
       "service-worker-concept",
-      "service-worker-registration-concept",
       "service-worker-global-scope",
-      "extendableevent",
+      "extendableevent-interface",
       "dictdef-extendableeventinit",
+      "service-worker-registration-concept",
       "fire-functional-event-algorithm",
       "dfn-extend-lifetime-promises",
       "client-visibilitystate-attribute",
@@ -41,26 +41,35 @@
       "dom-paymentrequest",
       "paymentcurrencyamount-dictionary",
       "paymentdetailsmodifier-dictionary",
+      "dom-paymentshippingoption",
+      "dom-addresserrors",
+      "dom-addressinit",
       "id-attribute",
       "paymentdetailsinit-dictionary",
       "dom-paymentoptions",
+      "dom-paymentdetailsbase-shippingoptions",
+      "paymentdetailsbase-dictionary",
       "dom-paymentmethoddata-supportedmethods",
       "show-method",
       "dfn-json-serialize",
       "payment-method-changed-algorithm",
       "dom-paymentmethodchangeevent",
       "updatewith-method",
+      "paymentrequest-updated-algorithm",
+      "dom-paymentrequestupdateevent",
+      "dom-paymentoptions-requestshipping",
+      "dom-paymentoptions-requestpayername",
+      "dom-paymentoptions-requestpayeremail",
+      "dom-paymentoptions-requestpayerphone",
       "user-accepts-the-payment-request-algorithm",
       "dom-paymentresponse",
       "dom-paymentresponse-methodname",
-      "dom-paymentresponse-details"
-    ],
-    "https://dom.spec.whatwg.org/": [
-      "firing-events",
-      "dom-event-istrusted",
-      "dispatch-flag",
-      "stop-propagation-flag",
-      "stop-immediate-propagation-flag"
+      "dom-paymentresponse-details",
+      "dom-paymentresponse-shippingaddress",
+      "dom-paymentresponse-shippingoption",
+      "dom-paymentresponse-payername",
+      "dom-paymentresponse-payeremail",
+      "dom-paymentresponse-payerphone"
     ],
     "https://html.spec.whatwg.org/": [
       "user-interaction-task-source",
@@ -68,67 +77,69 @@
       "workerglobalscope",
       "the-link-element",
       "unordered-set-of-unique-space-separated-tokens",
-      "ascii-case-insensitive",
       "attr-link-sizes",
-      "context-object",
       "relevant-settings-object",
       "api-base-url",
-      "concept-url-scheme",
       "eventhandler",
       "event-handlers",
       "event-handler-event-type",
       "ascii-serialisation-of-an-origin",
-      "structured-clone",
-      "triggered-by-user-activation",
+      "concept-origin",
       "top-level-browsing-context",
       "navigate",
       "structuredserialize",
       "structureddeserialize",
       "queue-a-microtask",
-      "global-object",
-      "concept-events-trusted"
+      "concept-relevant-global"
     ],
     "https://www.w3.org/TR/payment-method-basic-card/": [
       "method-id",
       "dom-basiccardrequest-supportednetworks",
       "dom-basiccardrequest-supportedtypes"
     ],
+    "https://www.w3.org/TR/WebCryptoAPI/": [],
     "https://heycam.github.io/webidl/": [
       "SameObject",
       "SecureContext",
       "Exposed",
       "idl-DOMString",
       "idl-promise",
+      "idl-undefined",
+      "idl-sequence",
       "idl-boolean",
       "idl-any",
-      "idl-sequence",
-      "idl-void",
+      "a-new-promise",
       "invalidstateerror",
+      "idl-DOMException",
       "notallowederror",
+      "exceptiondef-typeerror",
       "idl-object",
       "idl-USVString",
+      "this",
       "idl-frozen-array",
-      "dfn-DOMException",
       "operationerror",
-      "dfn-throw",
-      "dfn-convert-idl-to-ecmascript-value"
-    ],
-    "https://tc39.es/ecma262/": [
-      "sec-promise-objects",
-      "sec-native-error-types-used-in-this-standard-typeerror",
-      "sec-object-internal-methods-and-internal-slots",
-      "sec-json.stringify"
+      "upon-rejection",
+      "upon-fulfillment",
+      "dfn-convert-ecmascript-to-idl-value"
     ],
     "https://www.w3.org/TR/appmanifest/": [
       "fetching-image-resources"
     ],
     "https://www.w3.org/TR/payment-method-id/": [
-      "payment-method-identifiers-(pmis)",
-      "standardized-payment-method-identifiers",
-      "url-based-payment-method-identifiers"
+      "dfn-pmi",
+      "dfn-standardized-payment-method-identifier",
+      "dfn-url-based-payment-method-identifier"
+    ],
+    "https://infra.spec.whatwg.org/": [
+      "ascii-case-insensitive"
     ],
     "https://mimesniff.spec.whatwg.org/": [
       "valid-mime-type"
+    ],
+    "https://url.spec.whatwg.org/": [
+      "concept-url-scheme",
+      "concept-url-origin",
+      "concept-url-parser"
     ],
     "https://www.w3.org/TR/payment-method-manifest/": [
       "ingest-payment-method-manifests",
@@ -139,18 +150,18 @@
     "https://github.com/w3c/payment-handler/issues/117": [],
     "https://github.com/w3c/payment-handler/issues/123": [],
     "https://github.com/w3c/payment-handler/issues/115": [],
-    "https://url.spec.whatwg.org/": [
-      "concept-url-parser"
+    "https://dom.spec.whatwg.org/": [
+      "dom-event-istrusted",
+      "dispatch-flag",
+      "stop-propagation-flag",
+      "stop-immediate-propagation-flag"
     ],
-    "https://github.com/w3c/payment-handler/issues/128": [],
-    "https://www.w3.org/2001/tag/doc/promises-guide": [
-      "upon-rejection",
-      "upon-fulfillment"
+    "https://tc39.es/ecma262/": [
+      "sec-object-internal-methods-and-internal-slots",
+      "sec-json.stringify"
     ],
-    "https://tools.ietf.org/html/bcp14": [],
-    "https://tools.ietf.org/html/rfc2119": [],
-    "https://tools.ietf.org/html/rfc6454": [],
-    "https://tools.ietf.org/html/rfc8174": [],
-    "https://www.w3.org/TR/WebCryptoAPI/": []
+    "https://datatracker.ietf.org/doc/html/bcp14": [],
+    "https://datatracker.ietf.org/doc/html/rfc2119": [],
+    "https://datatracker.ietf.org/doc/html/rfc8174": []
   }
 }

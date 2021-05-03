@@ -1,0 +1,8 @@
+// Source: Resize Observer (https://www.w3.org/TR/resize-observer-1/)
+[Constructor(Element target)
+]
+interface ResizeObservation {
+    readonly attribute Element target;
+    readonly attribute ResizeObserverBoxOptions observedBox;
+    readonly attribute sequence<ResizeObserverSize> lastReportedSizes;
+};

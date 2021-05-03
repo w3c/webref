@@ -62,10 +62,11 @@
       "id": "dom-serviceworkerregistration-paymentmanager",
       "href": "https://www.w3.org/TR/payment-handler/#dom-serviceworkerregistration-paymentmanager",
       "linkingText": [
-        "ServiceWorkerRegistration.paymentManager",
         "paymentManager"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "ServiceWorkerRegistration.paymentManager"
+      ],
       "type": "attribute",
       "for": [
         "ServiceWorkerRegistration"
@@ -101,10 +102,11 @@
       "id": "dom-paymentmanager-instruments",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentmanager-instruments",
       "linkingText": [
-        "PaymentManager.instruments",
         "instruments"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PaymentManager.instruments"
+      ],
       "type": "attribute",
       "for": [
         "PaymentManager"
@@ -122,10 +124,11 @@
       "id": "dom-paymentmanager-userhint",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentmanager-userhint",
       "linkingText": [
-        "PaymentManager.userHint",
         "userHint"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PaymentManager.userHint"
+      ],
       "type": "attribute",
       "for": [
         "PaymentManager"
@@ -138,6 +141,129 @@
         "number": "3.2.2"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "dom-paymentmanager-enabledelegations",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentmanager-enabledelegations",
+      "linkingText": [
+        "enableDelegations()",
+        "enableDelegations(delegations)"
+      ],
+      "localLinkingText": [
+        "PaymentManager.enableDelegations",
+        "PaymentManager.enableDelegations()",
+        "enableDelegations"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "enabledelegations-method",
+        "title": "enableDelegations() method",
+        "number": "3.2.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-paymentdelegation",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentdelegation",
+      "linkingText": [
+        "PaymentDelegation"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paymentdelegation-enum",
+        "title": "PaymentDelegation enum",
+        "number": "3.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-paymentdelegation-shippingaddress",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentdelegation-shippingaddress",
+      "linkingText": [
+        "shippingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentDelegation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paymentdelegation-enum",
+        "title": "PaymentDelegation enum",
+        "number": "3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-paymentdelegation-payername",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentdelegation-payername",
+      "linkingText": [
+        "payerName"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentDelegation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paymentdelegation-enum",
+        "title": "PaymentDelegation enum",
+        "number": "3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-paymentdelegation-payerphone",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentdelegation-payerphone",
+      "linkingText": [
+        "payerPhone"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentDelegation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paymentdelegation-enum",
+        "title": "PaymentDelegation enum",
+        "number": "3.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-paymentdelegation-payeremail",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentdelegation-payeremail",
+      "linkingText": [
+        "payerEmail"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PaymentDelegation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paymentdelegation-enum",
+        "title": "PaymentDelegation enum",
+        "number": "3.3"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dom-paymentinstruments",
@@ -153,7 +279,7 @@
       "heading": {
         "id": "paymentinstruments-interface",
         "title": "PaymentInstruments interface",
-        "number": "3.3"
+        "number": "3.4"
       },
       "definedIn": "heading"
     },
@@ -171,7 +297,7 @@
       "heading": {
         "id": "paymentinstruments-interface",
         "title": "PaymentInstruments interface",
-        "number": "3.3"
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -179,12 +305,14 @@
       "id": "dom-paymentinstruments-delete",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-delete",
       "linkingText": [
-        "PaymentInstruments.delete()",
-        "PaymentInstruments.delete",
         "delete()",
+        "delete(instrumentKey)"
+      ],
+      "localLinkingText": [
+        "PaymentInstruments.delete",
+        "PaymentInstruments.delete()",
         "delete"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PaymentInstruments"
@@ -194,7 +322,7 @@
       "heading": {
         "id": "delete-method",
         "title": "delete() method",
-        "number": "3.3.1"
+        "number": "3.4.1"
       },
       "definedIn": "heading"
     },
@@ -202,12 +330,14 @@
       "id": "dom-paymentinstruments-get",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-get",
       "linkingText": [
-        "PaymentInstruments.get()",
-        "PaymentInstruments.get",
         "get()",
+        "get(instrumentKey)"
+      ],
+      "localLinkingText": [
+        "PaymentInstruments.get",
+        "PaymentInstruments.get()",
         "get"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PaymentInstruments"
@@ -217,7 +347,7 @@
       "heading": {
         "id": "get-method",
         "title": "get() method",
-        "number": "3.3.2"
+        "number": "3.4.2"
       },
       "definedIn": "heading"
     },
@@ -225,12 +355,13 @@
       "id": "dom-paymentinstruments-keys",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-keys",
       "linkingText": [
-        "PaymentInstruments.keys()",
+        "keys()"
+      ],
+      "localLinkingText": [
         "PaymentInstruments.keys",
-        "keys()",
+        "PaymentInstruments.keys()",
         "keys"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PaymentInstruments"
@@ -240,7 +371,7 @@
       "heading": {
         "id": "keys-method",
         "title": "keys() method",
-        "number": "3.3.3"
+        "number": "3.4.3"
       },
       "definedIn": "heading"
     },
@@ -258,7 +389,7 @@
       "heading": {
         "id": "keys-method",
         "title": "keys() method",
-        "number": "3.3.3"
+        "number": "3.4.3"
       },
       "definedIn": "prose"
     },
@@ -266,12 +397,14 @@
       "id": "dom-paymentinstruments-has",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-has",
       "linkingText": [
-        "PaymentInstruments.has()",
-        "PaymentInstruments.has",
         "has()",
+        "has(instrumentKey)"
+      ],
+      "localLinkingText": [
+        "PaymentInstruments.has",
+        "PaymentInstruments.has()",
         "has"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PaymentInstruments"
@@ -281,7 +414,7 @@
       "heading": {
         "id": "has-method",
         "title": "has() method",
-        "number": "3.3.4"
+        "number": "3.4.4"
       },
       "definedIn": "heading"
     },
@@ -289,12 +422,14 @@
       "id": "dom-paymentinstruments-set",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-set",
       "linkingText": [
-        "PaymentInstruments.set()",
-        "PaymentInstruments.set",
         "set()",
+        "set(instrumentKey, details)"
+      ],
+      "localLinkingText": [
+        "PaymentInstruments.set",
+        "PaymentInstruments.set()",
         "set"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PaymentInstruments"
@@ -304,7 +439,7 @@
       "heading": {
         "id": "set-method",
         "title": "set() method",
-        "number": "3.3.5"
+        "number": "3.4.5"
       },
       "definedIn": "heading"
     },
@@ -312,12 +447,13 @@
       "id": "dom-paymentinstruments-clear",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentinstruments-clear",
       "linkingText": [
-        "PaymentInstruments.clear()",
+        "clear()"
+      ],
+      "localLinkingText": [
         "PaymentInstruments.clear",
-        "clear()",
+        "PaymentInstruments.clear()",
         "clear"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PaymentInstruments"
@@ -327,7 +463,7 @@
       "heading": {
         "id": "clear-method",
         "title": "clear() method",
-        "number": "3.3.6"
+        "number": "3.4.6"
       },
       "definedIn": "heading"
     },
@@ -345,7 +481,7 @@
       "heading": {
         "id": "paymentinstrument-dictionary",
         "title": "PaymentInstrument dictionary",
-        "number": "3.3.7"
+        "number": "3.4.7"
       },
       "definedIn": "heading"
     },
@@ -365,7 +501,7 @@
       "heading": {
         "id": "paymentinstrument-dictionary",
         "title": "PaymentInstrument dictionary",
-        "number": "3.3.7"
+        "number": "3.4.7"
       },
       "definedIn": "dt"
     },
@@ -385,7 +521,7 @@
       "heading": {
         "id": "paymentinstrument-dictionary",
         "title": "PaymentInstrument dictionary",
-        "number": "3.3.7"
+        "number": "3.4.7"
       },
       "definedIn": "dt"
     },
@@ -405,7 +541,7 @@
       "heading": {
         "id": "paymentinstrument-dictionary",
         "title": "PaymentInstrument dictionary",
-        "number": "3.3.7"
+        "number": "3.4.7"
       },
       "definedIn": "dt"
     },
@@ -425,7 +561,7 @@
       "heading": {
         "id": "paymentinstrument-dictionary",
         "title": "PaymentInstrument dictionary",
-        "number": "3.3.7"
+        "number": "3.4.7"
       },
       "definedIn": "dt"
     },
@@ -443,7 +579,7 @@
       "heading": {
         "id": "imageobject-dictionary",
         "title": "ImageObject dictionary",
-        "number": "3.3.8"
+        "number": "3.4.8"
       },
       "definedIn": "heading"
     },
@@ -463,7 +599,7 @@
       "heading": {
         "id": "imageobject-dictionary",
         "title": "ImageObject dictionary",
-        "number": "3.3.8"
+        "number": "3.4.8"
       },
       "definedIn": "dt"
     },
@@ -483,7 +619,7 @@
       "heading": {
         "id": "imageobject-dictionary",
         "title": "ImageObject dictionary",
-        "number": "3.3.8"
+        "number": "3.4.8"
       },
       "definedIn": "dt"
     },
@@ -503,7 +639,7 @@
       "heading": {
         "id": "imageobject-dictionary",
         "title": "ImageObject dictionary",
-        "number": "3.3.8"
+        "number": "3.4.8"
       },
       "definedIn": "dt"
     },
@@ -521,7 +657,7 @@
       "heading": {
         "id": "convert-image-objects",
         "title": "Convert image objects",
-        "number": "3.3.9"
+        "number": "3.4.9"
       },
       "definedIn": "heading"
     },
@@ -529,10 +665,11 @@
       "id": "dom-serviceworkerglobalscope-oncanmakepayment",
       "href": "https://www.w3.org/TR/payment-handler/#dom-serviceworkerglobalscope-oncanmakepayment",
       "linkingText": [
-        "ServiceWorkerGlobalScope.oncanmakepayment",
         "oncanmakepayment"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "ServiceWorkerGlobalScope.oncanmakepayment"
+      ],
       "type": "attribute",
       "for": [
         "ServiceWorkerGlobalScope"
@@ -568,12 +705,15 @@
       "id": "dom-canmakepaymentevent-constructor",
       "href": "https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent-constructor",
       "linkingText": [
-        "CanMakePaymentEvent.constructor()",
-        "CanMakePaymentEvent.constructor",
         "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "CanMakePaymentEvent.constructor",
+        "CanMakePaymentEvent.constructor()",
         "constructor"
       ],
-      "localLinkingText": [],
       "type": "constructor",
       "for": [
         "CanMakePaymentEvent"
@@ -591,10 +731,11 @@
       "id": "dom-canmakepaymentevent-toporigin",
       "href": "https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent-toporigin",
       "linkingText": [
-        "CanMakePaymentEvent.topOrigin",
         "topOrigin"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "CanMakePaymentEvent.topOrigin"
+      ],
       "type": "attribute",
       "for": [
         "CanMakePaymentEvent"
@@ -612,10 +753,11 @@
       "id": "dom-canmakepaymentevent-paymentrequestorigin",
       "href": "https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent-paymentrequestorigin",
       "linkingText": [
-        "CanMakePaymentEvent.paymentRequestOrigin",
         "paymentRequestOrigin"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "CanMakePaymentEvent.paymentRequestOrigin"
+      ],
       "type": "attribute",
       "for": [
         "CanMakePaymentEvent"
@@ -633,10 +775,11 @@
       "id": "dom-canmakepaymentevent-methoddata",
       "href": "https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent-methoddata",
       "linkingText": [
-        "CanMakePaymentEvent.methodData",
         "methodData"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "CanMakePaymentEvent.methodData"
+      ],
       "type": "attribute",
       "for": [
         "CanMakePaymentEvent"
@@ -672,12 +815,14 @@
       "id": "dom-canmakepaymentevent-respondwith",
       "href": "https://www.w3.org/TR/payment-handler/#dom-canmakepaymentevent-respondwith",
       "linkingText": [
-        "CanMakePaymentEvent.respondWith()",
-        "CanMakePaymentEvent.respondWith",
         "respondWith()",
+        "respondWith(canMakePaymentResponse)"
+      ],
+      "localLinkingText": [
+        "CanMakePaymentEvent.respondWith",
+        "CanMakePaymentEvent.respondWith()",
         "respondWith"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "CanMakePaymentEvent"
@@ -791,10 +936,11 @@
       "id": "dom-serviceworkerglobalscope-onpaymentrequest",
       "href": "https://www.w3.org/TR/payment-handler/#dom-serviceworkerglobalscope-onpaymentrequest",
       "linkingText": [
-        "ServiceWorkerGlobalScope.onpaymentrequest",
         "onpaymentrequest"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "ServiceWorkerGlobalScope.onpaymentrequest"
+      ],
       "type": "attribute",
       "for": [
         "ServiceWorkerGlobalScope"
@@ -809,10 +955,10 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-paymentmethodchangeresponse",
-      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentmethodchangeresponse",
+      "id": "dom-paymentrequestdetailsupdate",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestdetailsupdate",
       "linkingText": [
-        "PaymentMethodChangeResponse"
+        "PaymentRequestDetailsUpdate"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -820,22 +966,22 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-paymentmethodchangeresponse",
-        "title": "The PaymentMethodChangeResponse",
+        "id": "the-paymentrequestdetailsupdate",
+        "title": "The PaymentRequestDetailsUpdate",
         "number": "5.2"
       },
       "definedIn": "heading"
     },
     {
-      "id": "dom-paymentmethodchangeresponse-error",
-      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentmethodchangeresponse-error",
+      "id": "dom-paymentrequestdetailsupdate-error",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestdetailsupdate-error",
       "linkingText": [
         "error"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PaymentMethodChangeResponse"
+        "PaymentRequestDetailsUpdate"
       ],
       "access": "public",
       "informative": false,
@@ -847,15 +993,15 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-paymentmethodchangeresponse-total",
-      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentmethodchangeresponse-total",
+      "id": "dom-paymentrequestdetailsupdate-total",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestdetailsupdate-total",
       "linkingText": [
         "total"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PaymentMethodChangeResponse"
+        "PaymentRequestDetailsUpdate"
       ],
       "access": "public",
       "informative": false,
@@ -867,15 +1013,15 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-paymentmethodchangeresponse-modifiers",
-      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentmethodchangeresponse-modifiers",
+      "id": "dom-paymentrequestdetailsupdate-modifiers",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestdetailsupdate-modifiers",
       "linkingText": [
         "modifiers"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PaymentMethodChangeResponse"
+        "PaymentRequestDetailsUpdate"
       ],
       "access": "public",
       "informative": false,
@@ -887,22 +1033,62 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-paymentmethodchangeresponse-paymentmethoderrors",
-      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentmethodchangeresponse-paymentmethoderrors",
+      "id": "dom-paymentrequestdetailsupdate-shippingoptions",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestdetailsupdate-shippingoptions",
+      "linkingText": [
+        "shippingOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentRequestDetailsUpdate"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shippingoptions-member",
+        "title": "shippingOptions member",
+        "number": "5.2.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-paymentrequestdetailsupdate-paymentmethoderrors",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestdetailsupdate-paymentmethoderrors",
       "linkingText": [
         "paymentMethodErrors"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PaymentMethodChangeResponse"
+        "PaymentRequestDetailsUpdate"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "paymentmethoderrors-member",
         "title": "paymentMethodErrors member",
-        "number": "5.2.4"
+        "number": "5.2.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-paymentrequestdetailsupdate-shippingaddresserrors",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestdetailsupdate-shippingaddresserrors",
+      "linkingText": [
+        "shippingAddressErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentRequestDetailsUpdate"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shippingaddresserrors-member",
+        "title": "shippingAddressErrors member",
+        "number": "5.2.6"
       },
       "definedIn": "heading"
     },
@@ -928,12 +1114,15 @@
       "id": "dom-paymentrequestevent-constructor",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-constructor",
       "linkingText": [
-        "PaymentRequestEvent.constructor()",
-        "PaymentRequestEvent.constructor",
         "constructor()",
+        "constructor(type)",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "PaymentRequestEvent.constructor",
+        "PaymentRequestEvent.constructor()",
         "constructor"
       ],
-      "localLinkingText": [],
       "type": "constructor",
       "for": [
         "PaymentRequestEvent"
@@ -951,10 +1140,11 @@
       "id": "dom-paymentrequestevent-toporigin",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-toporigin",
       "linkingText": [
-        "PaymentRequestEvent.topOrigin",
         "topOrigin"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PaymentRequestEvent.topOrigin"
+      ],
       "type": "attribute",
       "for": [
         "PaymentRequestEvent"
@@ -972,10 +1162,11 @@
       "id": "dom-paymentrequestevent-paymentrequestorigin",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-paymentrequestorigin",
       "linkingText": [
-        "PaymentRequestEvent.paymentRequestOrigin",
         "paymentRequestOrigin"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PaymentRequestEvent.paymentRequestOrigin"
+      ],
       "type": "attribute",
       "for": [
         "PaymentRequestEvent"
@@ -993,10 +1184,11 @@
       "id": "dom-paymentrequestevent-paymentrequestid",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-paymentrequestid",
       "linkingText": [
-        "PaymentRequestEvent.paymentRequestId",
         "paymentRequestId"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PaymentRequestEvent.paymentRequestId"
+      ],
       "type": "attribute",
       "for": [
         "PaymentRequestEvent"
@@ -1014,10 +1206,11 @@
       "id": "dom-paymentrequestevent-methoddata",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-methoddata",
       "linkingText": [
-        "PaymentRequestEvent.methodData",
         "methodData"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PaymentRequestEvent.methodData"
+      ],
       "type": "attribute",
       "for": [
         "PaymentRequestEvent"
@@ -1035,10 +1228,11 @@
       "id": "dom-paymentrequestevent-total",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-total",
       "linkingText": [
-        "PaymentRequestEvent.total",
         "total"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PaymentRequestEvent.total"
+      ],
       "type": "attribute",
       "for": [
         "PaymentRequestEvent"
@@ -1056,10 +1250,11 @@
       "id": "dom-paymentrequestevent-modifiers",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-modifiers",
       "linkingText": [
-        "PaymentRequestEvent.modifiers",
         "modifiers"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PaymentRequestEvent.modifiers"
+      ],
       "type": "attribute",
       "for": [
         "PaymentRequestEvent"
@@ -1077,10 +1272,11 @@
       "id": "dom-paymentrequestevent-instrumentkey",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-instrumentkey",
       "linkingText": [
-        "PaymentRequestEvent.instrumentKey",
         "instrumentKey"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PaymentRequestEvent.instrumentKey"
+      ],
       "type": "attribute",
       "for": [
         "PaymentRequestEvent"
@@ -1098,10 +1294,11 @@
       "id": "dom-paymentrequestevent-requestbillingaddress",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-requestbillingaddress",
       "linkingText": [
-        "PaymentRequestEvent.requestBillingAddress",
         "requestBillingAddress"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PaymentRequestEvent.requestBillingAddress"
+      ],
       "type": "attribute",
       "for": [
         "PaymentRequestEvent"
@@ -1116,15 +1313,61 @@
       "definedIn": "heading"
     },
     {
+      "id": "dom-paymentrequestevent-paymentoptions",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-paymentoptions",
+      "linkingText": [
+        "paymentOptions"
+      ],
+      "localLinkingText": [
+        "PaymentRequestEvent.paymentOptions"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paymentoptions-attribute",
+        "title": "paymentOptions attribute",
+        "number": "5.3.9"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-paymentrequestevent-shippingoptions",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-shippingoptions",
+      "linkingText": [
+        "shippingOptions"
+      ],
+      "localLinkingText": [
+        "PaymentRequestEvent.shippingOptions"
+      ],
+      "type": "attribute",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shippingoptions-attribute",
+        "title": "shippingOptions attribute",
+        "number": "5.3.10"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "dom-paymentrequestevent-openwindow",
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-openwindow",
       "linkingText": [
-        "PaymentRequestEvent.openWindow()",
-        "PaymentRequestEvent.openWindow",
         "openWindow()",
+        "openWindow(url)"
+      ],
+      "localLinkingText": [
+        "PaymentRequestEvent.openWindow",
+        "PaymentRequestEvent.openWindow()",
         "openWindow"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PaymentRequestEvent"
@@ -1134,7 +1377,7 @@
       "heading": {
         "id": "openwindow-method",
         "title": "openWindow() method",
-        "number": "5.3.9"
+        "number": "5.3.11"
       },
       "definedIn": "heading"
     },
@@ -1144,11 +1387,13 @@
       "linkingText": [
         "changePaymentMethod(methodName, methodDetails)",
         "changePaymentMethod()",
-        "PaymentRequestEvent.changePaymentMethod()",
+        "changePaymentMethod(methodName)"
+      ],
+      "localLinkingText": [
         "PaymentRequestEvent.changePaymentMethod",
+        "PaymentRequestEvent.changePaymentMethod()",
         "changePaymentMethod"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PaymentRequestEvent"
@@ -1158,7 +1403,57 @@
       "heading": {
         "id": "changepaymentmethod-method",
         "title": "changePaymentMethod() method",
-        "number": "5.3.10"
+        "number": "5.3.12"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-paymentrequestevent-changeshippingaddress",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-changeshippingaddress",
+      "linkingText": [
+        "changeShippingAddress(shippingAddress)",
+        "changeShippingAddress()"
+      ],
+      "localLinkingText": [
+        "PaymentRequestEvent.changeShippingAddress",
+        "PaymentRequestEvent.changeShippingAddress()",
+        "changeShippingAddress"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "changeshippingaddress-method",
+        "title": "changeShippingAddress() method",
+        "number": "5.3.13"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-paymentrequestevent-changeshippingoption",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-changeshippingoption",
+      "linkingText": [
+        "changeShippingOption(shippingOption)",
+        "changeShippingOption()"
+      ],
+      "localLinkingText": [
+        "PaymentRequestEvent.changeShippingOption",
+        "PaymentRequestEvent.changeShippingOption()",
+        "changeShippingOption"
+      ],
+      "type": "method",
+      "for": [
+        "PaymentRequestEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "changeshippingoption-method",
+        "title": "changeShippingOption() method",
+        "number": "5.3.14"
       },
       "definedIn": "heading"
     },
@@ -1167,12 +1462,13 @@
       "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequestevent-respondwith",
       "linkingText": [
         "respondWith(handlerResponsePromise)",
-        "respondWith()",
-        "PaymentRequestEvent.respondWith()",
+        "respondWith()"
+      ],
+      "localLinkingText": [
         "PaymentRequestEvent.respondWith",
+        "PaymentRequestEvent.respondWith()",
         "respondWith"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PaymentRequestEvent"
@@ -1182,7 +1478,7 @@
       "heading": {
         "id": "respondwith-method-0",
         "title": "respondWith() method",
-        "number": "5.3.11"
+        "number": "5.3.15"
       },
       "definedIn": "heading"
     },
@@ -1200,7 +1496,7 @@
       "heading": {
         "id": "paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.12"
+        "number": "5.3.16"
       },
       "definedIn": "heading"
     },
@@ -1220,7 +1516,7 @@
       "heading": {
         "id": "paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.12"
+        "number": "5.3.16"
       },
       "definedIn": "prose"
     },
@@ -1240,7 +1536,7 @@
       "heading": {
         "id": "paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.12"
+        "number": "5.3.16"
       },
       "definedIn": "prose"
     },
@@ -1260,7 +1556,7 @@
       "heading": {
         "id": "paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.12"
+        "number": "5.3.16"
       },
       "definedIn": "prose"
     },
@@ -1280,7 +1576,7 @@
       "heading": {
         "id": "paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.12"
+        "number": "5.3.16"
       },
       "definedIn": "prose"
     },
@@ -1300,7 +1596,7 @@
       "heading": {
         "id": "paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.12"
+        "number": "5.3.16"
       },
       "definedIn": "prose"
     },
@@ -1320,7 +1616,7 @@
       "heading": {
         "id": "paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.12"
+        "number": "5.3.16"
       },
       "definedIn": "prose"
     },
@@ -1340,7 +1636,47 @@
       "heading": {
         "id": "paymentrequesteventinit-dictionary",
         "title": "PaymentRequestEventInit dictionary",
-        "number": "5.3.12"
+        "number": "5.3.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-paymentrequesteventinit-paymentoptions",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequesteventinit-paymentoptions",
+      "linkingText": [
+        "paymentOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentRequestEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paymentrequesteventinit-dictionary",
+        "title": "PaymentRequestEventInit dictionary",
+        "number": "5.3.16"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-paymentrequesteventinit-shippingoptions",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymentrequesteventinit-shippingoptions",
+      "linkingText": [
+        "shippingOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentRequestEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "paymentrequesteventinit-dictionary",
+        "title": "PaymentRequestEventInit dictionary",
+        "number": "5.3.16"
       },
       "definedIn": "prose"
     },
@@ -1358,7 +1694,7 @@
       "heading": {
         "id": "methoddata-population-algorithm",
         "title": "MethodData Population Algorithm",
-        "number": "5.3.13"
+        "number": "5.3.17"
       },
       "definedIn": "heading"
     },
@@ -1376,7 +1712,7 @@
       "heading": {
         "id": "modifiers-population-algorithm",
         "title": "Modifiers Population Algorithm",
-        "number": "5.3.14"
+        "number": "5.3.18"
       },
       "definedIn": "heading"
     },
@@ -1387,9 +1723,9 @@
         "[[windowClient]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "idl",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "internal-slots",
@@ -1423,9 +1759,9 @@
         "[[fetchedImage]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "idl",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "internal-slots",
@@ -1441,9 +1777,9 @@
         "[[respondWithCalled]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "idl",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "internal-slots",
@@ -1584,6 +1920,106 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-paymenthandlerresponse-payername",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymenthandlerresponse-payername",
+      "linkingText": [
+        "payerName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentHandlerResponse"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "payername-attribute",
+        "title": "payerName attribute",
+        "number": "7.1.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-paymenthandlerresponse-payeremail",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymenthandlerresponse-payeremail",
+      "linkingText": [
+        "payerEmail"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentHandlerResponse"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "payeremail-attribute",
+        "title": "payerEmail attribute",
+        "number": "7.1.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-paymenthandlerresponse-payerphone",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymenthandlerresponse-payerphone",
+      "linkingText": [
+        "payerPhone"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentHandlerResponse"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "payerphone-attribute",
+        "title": "payerPhone attribute",
+        "number": "7.1.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-paymenthandlerresponse-shippingaddress",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymenthandlerresponse-shippingaddress",
+      "linkingText": [
+        "shippingAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentHandlerResponse"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shippingaddress-attribute",
+        "title": "shippingAddress attribute",
+        "number": "7.1.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-paymenthandlerresponse-shippingoption",
+      "href": "https://www.w3.org/TR/payment-handler/#dom-paymenthandlerresponse-shippingoption",
+      "linkingText": [
+        "shippingOption"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PaymentHandlerResponse"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shippingoption-attribute",
+        "title": "shippingOption attribute",
+        "number": "7.1.7"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "dfn-change-payment-method-algorithm",
       "href": "https://www.w3.org/TR/payment-handler/#dfn-change-payment-method-algorithm",
       "linkingText": [
@@ -1602,6 +2038,24 @@
       "definedIn": "heading"
     },
     {
+      "id": "dfn-change-payment-details-algorithm",
+      "href": "https://www.w3.org/TR/payment-handler/#dfn-change-payment-details-algorithm",
+      "linkingText": [
+        "Change Payment Details Algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "change-payment-details-algorithm",
+        "title": "Change Payment Details Algorithm",
+        "number": "7.3"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "dfn-respond-to-paymentrequest-algorithm",
       "href": "https://www.w3.org/TR/payment-handler/#dfn-respond-to-paymentrequest-algorithm",
       "linkingText": [
@@ -1615,7 +2069,7 @@
       "heading": {
         "id": "respond-to-paymentrequest-algorithm",
         "title": "Respond to PaymentRequest Algorithm",
-        "number": "7.3"
+        "number": "7.4"
       },
       "definedIn": "heading"
     },
@@ -1740,6 +2194,23 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-paymentdetailsbase",
+      "href": "https://www.w3.org/TR/payment-handler/#dfn-paymentdetailsbase",
+      "linkingText": [
+        "paymentDetailsBase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "10. Dependencies"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-paymentmethoddata",
       "href": "https://www.w3.org/TR/payment-handler/#dfn-paymentmethoddata",
       "linkingText": [
@@ -1774,10 +2245,78 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-paymentshippingoption",
+      "href": "https://www.w3.org/TR/payment-handler/#dfn-paymentshippingoption",
+      "linkingText": [
+        "PaymentShippingOption"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "10. Dependencies"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-addressinit",
+      "href": "https://www.w3.org/TR/payment-handler/#dfn-addressinit",
+      "linkingText": [
+        "AddressInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "10. Dependencies"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-addresserrors",
+      "href": "https://www.w3.org/TR/payment-handler/#dfn-addresserrors",
+      "linkingText": [
+        "AddressErrors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "10. Dependencies"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-paymentmethodchangeevent",
       "href": "https://www.w3.org/TR/payment-handler/#dfn-paymentmethodchangeevent",
       "linkingText": [
         "PaymentMethodChangeEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "10. Dependencies"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-paymentrequestupdateevent",
+      "href": "https://www.w3.org/TR/payment-handler/#dfn-paymentrequestupdateevent",
+      "linkingText": [
+        "PaymentRequestUpdateEvent"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1893,10 +2432,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-json-serializable",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-json-serializable",
+      "id": "dfn-paymentrequest-updated-algorithm",
+      "href": "https://www.w3.org/TR/payment-handler/#dfn-paymentrequest-updated-algorithm",
       "linkingText": [
-        "JSON-serializable"
+        "PaymentRequest updated algorithm"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1910,10 +2449,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-promise",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-promise",
+      "id": "dfn-json-serializable",
+      "href": "https://www.w3.org/TR/payment-handler/#dfn-json-serializable",
       "linkingText": [
-        "Promise"
+        "JSON-serializable"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1944,81 +2483,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-typeerror",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-typeerror",
-      "linkingText": [
-        "TypeError"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-json-stringify",
       "href": "https://www.w3.org/TR/payment-handler/#dfn-json-stringify",
       "linkingText": [
         "JSON.stringify"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-payment-method-identifiers",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-payment-method-identifiers",
-      "linkingText": [
-        "payment method identifiers",
-        "payment method identifier"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-standardized-payment-method-identifiers",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-standardized-payment-method-identifiers",
-      "linkingText": [
-        "standardized payment method identifiers",
-        "standardized payment method identifier"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-url-based-payment-method-identifiers",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-url-based-payment-method-identifiers",
-      "linkingText": [
-        "URL-based payment method identifiers",
-        "URL-based payment method identifier"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2141,366 +2609,6 @@
       "href": "https://www.w3.org/TR/payment-handler/#dfn-supportedtypes",
       "linkingText": [
         "supportedTypes"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-global-object",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-global-object",
-      "linkingText": [
-        "global object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-top-level-browsing-context",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-top-level-browsing-context",
-      "linkingText": [
-        "top-level browsing context"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-structured-clone",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-structured-clone",
-      "linkingText": [
-        "structured clone"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-event-handler",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-event-handler",
-      "linkingText": [
-        "event handler"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-event-handler-event-type",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-event-handler-event-type",
-      "linkingText": [
-        "event handler event type"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-trusted-event",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-trusted-event",
-      "linkingText": [
-        "trusted event"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-user-interaction-task-source",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-user-interaction-task-source",
-      "linkingText": [
-        "user interaction task source"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-origins",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-origins",
-      "linkingText": [
-        "origins",
-        "origin"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-fulfillment",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-fulfillment",
-      "linkingText": [
-        "fulfillment"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-rejection",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-rejection",
-      "linkingText": [
-        "rejection"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-fires",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-fires",
-      "linkingText": [
-        "fires"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-dispatch-flag",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-dispatch-flag",
-      "linkingText": [
-        "dispatch flag"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-stop-propagation-flag",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-stop-propagation-flag",
-      "linkingText": [
-        "stop propagation flag"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-istrusted",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-istrusted",
-      "linkingText": [
-        "isTrusted"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-stop-immediate-propagation-flag",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-stop-immediate-propagation-flag",
-      "linkingText": [
-        "stop immediate propagation flag"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-throws",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-throws",
-      "linkingText": [
-        "throws",
-        "throw"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-converting",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-converting",
-      "linkingText": [
-        "converting",
-        "converting an ECMAScript value to a dictionary"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-domexception",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-domexception",
-      "linkingText": [
-        "DOMException"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-invalidstateerror",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-invalidstateerror",
-      "linkingText": [
-        "InvalidStateError"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-notallowederror",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-notallowederror",
-      "linkingText": [
-        "NotAllowedError"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "10. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-operationerror",
-      "href": "https://www.w3.org/TR/payment-handler/#dfn-operationerror",
-      "linkingText": [
-        "OperationError"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2722,6 +2830,40 @@
       "href": "https://www.w3.org/TR/payment-handler/#dfn-try-activate",
       "linkingText": [
         "Try Activate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "10. Dependencies"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-extendableevent",
+      "href": "https://www.w3.org/TR/payment-handler/#dfn-extendableevent",
+      "linkingText": [
+        "ExtendableEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "10. Dependencies"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-extendableeventinit",
+      "href": "https://www.w3.org/TR/payment-handler/#dfn-extendableeventinit",
+      "linkingText": [
+        "ExtendableEventInit"
       ],
       "localLinkingText": [],
       "type": "dfn",
