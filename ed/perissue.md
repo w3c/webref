@@ -4747,6 +4747,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Content Index](https://wicg.github.io/content-index/spec/):
      * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/):
+     * [`https://html.spec.whatwg.org/#concept-document-csp-list`](https://html.spec.whatwg.org/#concept-document-csp-list)
      * [`https://fetch.spec.whatwg.org/#concept-request-target-browsing-context`](https://fetch.spec.whatwg.org/#concept-request-target-browsing-context)
      * [`https://w3c.github.io/reporting/#group`](https://w3c.github.io/reporting/#group)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/):
@@ -5094,6 +5095,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-grid/#propdef-grid-row-gap`](https://drafts.csswg.org/css-grid/#propdef-grid-row-gap)
      * [`https://drafts.csswg.org/css-multicol/#propdef-column-gap`](https://drafts.csswg.org/css-multicol/#propdef-column-gap)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-cue-text`](https://w3c.github.io/webvtt/#webvtt-file-using-cue-text)
+     * [`https://w3c.github.io/webappsec-csp/#run-document-csp-initialization`](https://w3c.github.io/webappsec-csp/#run-document-csp-initialization)
+     * [`https://w3c.github.io/webappsec-csp/#parse-response-csp`](https://w3c.github.io/webappsec-csp/#parse-response-csp)
      * [`https://w3c.github.io/manifest/#dfn-manifest`](https://w3c.github.io/manifest/#dfn-manifest)
      * [`https://www.w3.org/TR/css3-color/#css2-system`](https://www.w3.org/TR/css3-color/#css2-system)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/):
@@ -5184,6 +5187,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/reporting-1/#visible-to-reporting-observers`](https://www.w3.org/TR/reporting-1/#visible-to-reporting-observers)
      * [`https://url.spec.whatwg.org/#concept-URL`](https://url.spec.whatwg.org/#concept-URL)
 - [Origin Policy](https://wicg.github.io/origin-policy/):
+     * [`https://html.spec.whatwg.org/#concept-document-csp-list`](https://html.spec.whatwg.org/#concept-document-csp-list)
      * [`https://xhr.spec.whatwg.org/#sync-xhr`](https://xhr.spec.whatwg.org/#sync-xhr)
      * [`https://fetch.spec.whatwg.org/#concept-body-wait`](https://fetch.spec.whatwg.org/#concept-body-wait)
      * [`https://wicg.github.io/feature-policy/#serialized-feature-policy`](https://wicg.github.io/feature-policy/#serialized-feature-policy)
@@ -5236,6 +5240,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webappsec-secure-contexts/#secure-contexts`](https://w3c.github.io/webappsec-secure-contexts/#secure-contexts)
 - [Preload](https://w3c.github.io/preload/):
      * [`https://mimesniff.spec.whatwg.org/#parsable-mime-type`](https://mimesniff.spec.whatwg.org/#parsable-mime-type)
+- [Private Network Access](https://wicg.github.io/private-network-access/):
+     * [`https://html.spec.whatwg.org/#concept-document-csp-list`](https://html.spec.whatwg.org/#concept-document-csp-list)
 - [Proximity Sensor](https://w3c.github.io/proximity/):
      * [`https://w3c.github.io/sensors/#sensor-readings`](https://w3c.github.io/sensors/#sensor-readings)
 - [Push API](https://w3c.github.io/push-api/):
@@ -5440,7 +5446,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 569 problematic external links found in 151 specifications
+=> 574 problematic external links found in 152 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

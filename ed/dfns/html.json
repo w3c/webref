@@ -3827,6 +3827,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "is-local",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#is-local",
+      "linkingText": [
+        "is local"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "local-scheme",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#local-scheme",
       "linkingText": [
@@ -4353,24 +4371,6 @@
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#concept-internal-response",
       "linkingText": [
         "internal response"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "Dependencies",
-        "number": "2.1.9"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "concept-response-csp-list",
-      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#concept-response-csp-list",
-      "linkingText": [
-        "CSP list"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -12701,6 +12701,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "blob-url-entry-environment",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#blob-url-entry-environment",
+      "linkingText": [
+        "environment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "cleanup-indexed-database-transactions",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#cleanup-indexed-database-transactions",
       "linkingText": [
@@ -18445,28 +18463,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "initialize-a-global-object's-csp-list",
-      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#initialize-a-global-object's-csp-list",
+      "id": "run-csp-initialization-for-a-document",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#run-csp-initialization-for-a-document",
       "linkingText": [
-        "Initialize a global object's CSP list"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "Dependencies",
-        "number": "2.1.9"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "initialize-a-document's-csp-list",
-      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#initialize-a-document's-csp-list",
-      "linkingText": [
-        "Initialize a Document's CSP list"
+        "Run CSP initialization for a Document"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -18629,6 +18629,24 @@
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#contains-a-header-delivered-content-security-policy",
       "linkingText": [
         "contains a header-delivered Content Security Policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-response-csp",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#parse-response-csp",
+      "linkingText": [
+        "Parse a response's Content Security Policies"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -22679,6 +22697,26 @@
       "definedIn": "pre"
     },
     {
+      "id": "concept-document-policy-container",
+      "href": "https://html.spec.whatwg.org/multipage/dom.html#concept-document-policy-container",
+      "linkingText": [
+        "policy container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-document-object",
+        "title": "The Document object",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "concept-document-referrer-policy",
       "href": "https://html.spec.whatwg.org/multipage/dom.html#concept-document-referrer-policy",
       "linkingText": [
@@ -22708,26 +22746,6 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-document-object",
-        "title": "The Document object",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "concept-document-csp-list",
-      "href": "https://html.spec.whatwg.org/multipage/dom.html#concept-document-csp-list",
-      "linkingText": [
-        "CSP list"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "Document"
-      ],
-      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-document-object",
@@ -71784,6 +71802,132 @@
       "definedIn": "prose"
     },
     {
+      "id": "policy-container",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#policy-container",
+      "linkingText": [
+        "policy container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-containers",
+        "title": "Policy containers",
+        "number": "7.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "policy-container-csp-list",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#policy-container-csp-list",
+      "linkingText": [
+        "CSP list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "policy-containers",
+        "title": "Policy containers",
+        "number": "7.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "clone-a-policy-container",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#clone-a-policy-container",
+      "linkingText": [
+        "clone a policy container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "policy-containers",
+        "title": "Policy containers",
+        "number": "7.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "requires-storing-the-policy-container-in-history",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#requires-storing-the-policy-container-in-history",
+      "linkingText": [
+        "requires storing the policy container in history"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "policy-containers",
+        "title": "Policy containers",
+        "number": "7.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "creating-a-policy-container-from-a-fetch-response",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#creating-a-policy-container-from-a-fetch-response",
+      "linkingText": [
+        "create a policy container from a fetch response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "policy-containers",
+        "title": "Policy containers",
+        "number": "7.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "determining-navigation-params-policy-container",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#determining-navigation-params-policy-container",
+      "linkingText": [
+        "determine navigation params policy container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "policy-containers",
+        "title": "Policy containers",
+        "number": "7.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-worker-policy-container",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#initialize-worker-policy-container",
+      "linkingText": [
+        "initialize a worker global scope's policy container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "policy-containers",
+        "title": "Policy containers",
+        "number": "7.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "browsing-session",
       "href": "https://html.spec.whatwg.org/multipage/history.html#browsing-session",
       "linkingText": [
@@ -71797,7 +71941,7 @@
       "heading": {
         "id": "browsing-sessions",
         "title": "Browsing sessions",
-        "number": "7.9.1"
+        "number": "7.10.1"
       },
       "definedIn": "prose"
     },
@@ -71817,7 +71961,7 @@
       "heading": {
         "id": "browsing-sessions",
         "title": "Browsing sessions",
-        "number": "7.9.1"
+        "number": "7.10.1"
       },
       "definedIn": "prose"
     },
@@ -71837,7 +71981,7 @@
       "heading": {
         "id": "browsing-sessions",
         "title": "Browsing sessions",
-        "number": "7.9.1"
+        "number": "7.10.1"
       },
       "definedIn": "prose"
     },
@@ -71855,7 +71999,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -71875,7 +72019,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -71893,7 +72037,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -71911,7 +72055,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -71929,7 +72073,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -71947,7 +72091,25 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "she-policy-container",
+      "href": "https://html.spec.whatwg.org/multipage/history.html#she-policy-container",
+      "linkingText": [
+        "policy container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-session-history-of-browsing-contexts",
+        "title": "The session history of browsing contexts",
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -71965,7 +72127,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -71983,7 +72145,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -72001,7 +72163,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -72019,7 +72181,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -72037,7 +72199,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -72055,7 +72217,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -72075,7 +72237,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "dt"
     },
@@ -72095,7 +72257,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "dt"
     },
@@ -72113,7 +72275,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -72131,7 +72293,7 @@
       "heading": {
         "id": "the-session-history-of-browsing-contexts",
         "title": "The session history of browsing contexts",
-        "number": "7.9.2"
+        "number": "7.10.2"
       },
       "definedIn": "prose"
     },
@@ -72149,7 +72311,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "pre"
     },
@@ -72167,7 +72329,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "pre"
     },
@@ -72185,7 +72347,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72203,7 +72365,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72221,7 +72383,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72241,7 +72403,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72261,7 +72423,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72281,7 +72443,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72301,7 +72463,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72321,7 +72483,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72341,7 +72503,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72359,7 +72521,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72377,7 +72539,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72395,7 +72557,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72413,7 +72575,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72431,7 +72593,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72449,7 +72611,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72469,7 +72631,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72489,7 +72651,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72507,7 +72669,7 @@
       "heading": {
         "id": "the-history-interface",
         "title": "The History interface",
-        "number": "7.9.3"
+        "number": "7.10.3"
       },
       "definedIn": "prose"
     },
@@ -72527,7 +72689,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72547,7 +72709,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72565,7 +72727,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "pre"
     },
@@ -72583,7 +72745,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72601,7 +72763,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72619,7 +72781,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72637,7 +72799,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72655,7 +72817,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72675,7 +72837,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72695,7 +72857,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72715,7 +72877,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72735,7 +72897,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72755,7 +72917,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72775,7 +72937,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72795,7 +72957,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72815,7 +72977,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72835,7 +72997,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72855,7 +73017,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72875,7 +73037,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72895,7 +73057,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72915,7 +73077,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72933,7 +73095,7 @@
       "heading": {
         "id": "the-location-interface",
         "title": "The Location interface",
-        "number": "7.9.5"
+        "number": "7.10.5"
       },
       "definedIn": "prose"
     },
@@ -72951,7 +73113,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -72969,7 +73131,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -72987,7 +73149,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73005,7 +73167,25 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "navigation-params-policy-container",
+      "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-policy-container",
+      "linkingText": [
+        "policy container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigating-across-documents",
+        "title": "Navigating across documents",
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73023,7 +73203,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73041,7 +73221,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73059,7 +73239,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73077,7 +73257,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73095,7 +73275,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73113,7 +73293,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73131,7 +73311,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73149,7 +73329,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73167,7 +73347,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73185,7 +73365,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73203,7 +73383,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73221,7 +73401,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "dt"
     },
@@ -73239,7 +73419,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73257,7 +73437,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73275,7 +73455,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73293,7 +73473,25 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigation-historypolicycontainer",
+      "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-historypolicycontainer",
+      "linkingText": [
+        "historyPolicyContainer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "navigating-across-documents",
+        "title": "Navigating across documents",
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73311,7 +73509,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73329,7 +73527,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73347,7 +73545,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73365,7 +73563,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73383,7 +73581,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73401,7 +73599,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73419,7 +73617,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73437,7 +73635,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73455,7 +73653,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73473,7 +73671,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73491,7 +73689,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73509,7 +73707,7 @@
       "heading": {
         "id": "navigating-across-documents",
         "title": "Navigating across documents",
-        "number": "7.10.1"
+        "number": "7.11.1"
       },
       "definedIn": "prose"
     },
@@ -73527,7 +73725,7 @@
       "heading": {
         "id": "read-html",
         "title": "Page load processing model for HTML files",
-        "number": "7.10.2"
+        "number": "7.11.2"
       },
       "definedIn": "prose"
     },
@@ -73545,7 +73743,7 @@
       "heading": {
         "id": "read-xml",
         "title": "Page load processing model for XML files",
-        "number": "7.10.3"
+        "number": "7.11.3"
       },
       "definedIn": "heading"
     },
@@ -73563,7 +73761,7 @@
       "heading": {
         "id": "read-text",
         "title": "Page load processing model for text files",
-        "number": "7.10.4"
+        "number": "7.11.4"
       },
       "definedIn": "heading"
     },
@@ -73581,7 +73779,7 @@
       "heading": {
         "id": "read-multipart-x-mixed-replace",
         "title": "Page load processing model for multipart/x-mixed-replace resources",
-        "number": "7.10.5"
+        "number": "7.11.5"
       },
       "definedIn": "heading"
     },
@@ -73599,7 +73797,7 @@
       "heading": {
         "id": "read-media",
         "title": "Page load processing model for media",
-        "number": "7.10.6"
+        "number": "7.11.6"
       },
       "definedIn": "heading"
     },
@@ -73617,7 +73815,7 @@
       "heading": {
         "id": "read-plugin",
         "title": "Page load processing model for content that uses plugins",
-        "number": "7.10.7"
+        "number": "7.11.7"
       },
       "definedIn": "heading"
     },
@@ -73635,7 +73833,7 @@
       "heading": {
         "id": "read-plugin",
         "title": "Page load processing model for content that uses plugins",
-        "number": "7.10.7"
+        "number": "7.11.7"
       },
       "definedIn": "prose"
     },
@@ -73653,7 +73851,7 @@
       "heading": {
         "id": "read-ua-inline",
         "title": "Page load processing model for inline content that doesn't have a DOM",
-        "number": "7.10.8"
+        "number": "7.11.8"
       },
       "definedIn": "heading"
     },
@@ -73671,7 +73869,7 @@
       "heading": {
         "id": "scroll-to-fragid",
         "title": "Navigating to a fragment",
-        "number": "7.10.9"
+        "number": "7.11.9"
       },
       "definedIn": "prose"
     },
@@ -73689,7 +73887,7 @@
       "heading": {
         "id": "scroll-to-fragid",
         "title": "Navigating to a fragment",
-        "number": "7.10.9"
+        "number": "7.11.9"
       },
       "definedIn": "prose"
     },
@@ -73707,7 +73905,7 @@
       "heading": {
         "id": "scroll-to-fragid",
         "title": "Navigating to a fragment",
-        "number": "7.10.9"
+        "number": "7.11.9"
       },
       "definedIn": "prose"
     },
@@ -73725,7 +73923,7 @@
       "heading": {
         "id": "scroll-to-fragid",
         "title": "Navigating to a fragment",
-        "number": "7.10.9"
+        "number": "7.11.9"
       },
       "definedIn": "prose"
     },
@@ -73743,7 +73941,7 @@
       "heading": {
         "id": "scroll-to-fragid",
         "title": "Navigating to a fragment",
-        "number": "7.10.9"
+        "number": "7.11.9"
       },
       "definedIn": "prose"
     },
@@ -73761,7 +73959,7 @@
       "heading": {
         "id": "history-traversal",
         "title": "History traversal",
-        "number": "7.10.10"
+        "number": "7.11.10"
       },
       "definedIn": "prose"
     },
@@ -73779,7 +73977,7 @@
       "heading": {
         "id": "history-traversal",
         "title": "History traversal",
-        "number": "7.10.10"
+        "number": "7.11.10"
       },
       "definedIn": "prose"
     },
@@ -73797,7 +73995,7 @@
       "heading": {
         "id": "history-traversal",
         "title": "History traversal",
-        "number": "7.10.10"
+        "number": "7.11.10"
       },
       "definedIn": "prose"
     },
@@ -73815,7 +74013,7 @@
       "heading": {
         "id": "history-traversal",
         "title": "History traversal",
-        "number": "7.10.10"
+        "number": "7.11.10"
       },
       "definedIn": "prose"
     },
@@ -73833,7 +74031,7 @@
       "heading": {
         "id": "history-traversal",
         "title": "History traversal",
-        "number": "7.10.10"
+        "number": "7.11.10"
       },
       "definedIn": "prose"
     },
@@ -73851,7 +74049,7 @@
       "heading": {
         "id": "persisted-user-state-restoration",
         "title": "Persisted history entry state",
-        "number": "7.10.10.1"
+        "number": "7.11.10.1"
       },
       "definedIn": "prose"
     },
@@ -73869,7 +74067,7 @@
       "heading": {
         "id": "persisted-user-state-restoration",
         "title": "Persisted history entry state",
-        "number": "7.10.10.1"
+        "number": "7.11.10.1"
       },
       "definedIn": "prose"
     },
@@ -73887,7 +74085,7 @@
       "heading": {
         "id": "persisted-user-state-restoration",
         "title": "Persisted history entry state",
-        "number": "7.10.10.1"
+        "number": "7.11.10.1"
       },
       "definedIn": "prose"
     },
@@ -73905,7 +74103,7 @@
       "heading": {
         "id": "the-popstateevent-interface",
         "title": "The PopStateEvent interface",
-        "number": "7.10.10.2"
+        "number": "7.11.10.2"
       },
       "definedIn": "pre"
     },
@@ -73923,7 +74121,7 @@
       "heading": {
         "id": "the-popstateevent-interface",
         "title": "The PopStateEvent interface",
-        "number": "7.10.10.2"
+        "number": "7.11.10.2"
       },
       "definedIn": "pre"
     },
@@ -73943,7 +74141,7 @@
       "heading": {
         "id": "the-popstateevent-interface",
         "title": "The PopStateEvent interface",
-        "number": "7.10.10.2"
+        "number": "7.11.10.2"
       },
       "definedIn": "prose"
     },
@@ -73961,7 +74159,7 @@
       "heading": {
         "id": "the-hashchangeevent-interface",
         "title": "The HashChangeEvent interface",
-        "number": "7.10.10.3"
+        "number": "7.11.10.3"
       },
       "definedIn": "pre"
     },
@@ -73979,7 +74177,7 @@
       "heading": {
         "id": "the-hashchangeevent-interface",
         "title": "The HashChangeEvent interface",
-        "number": "7.10.10.3"
+        "number": "7.11.10.3"
       },
       "definedIn": "pre"
     },
@@ -73999,7 +74197,7 @@
       "heading": {
         "id": "the-hashchangeevent-interface",
         "title": "The HashChangeEvent interface",
-        "number": "7.10.10.3"
+        "number": "7.11.10.3"
       },
       "definedIn": "prose"
     },
@@ -74019,7 +74217,7 @@
       "heading": {
         "id": "the-hashchangeevent-interface",
         "title": "The HashChangeEvent interface",
-        "number": "7.10.10.3"
+        "number": "7.11.10.3"
       },
       "definedIn": "prose"
     },
@@ -74037,7 +74235,7 @@
       "heading": {
         "id": "the-pagetransitionevent-interface",
         "title": "The PageTransitionEvent interface",
-        "number": "7.10.10.4"
+        "number": "7.11.10.4"
       },
       "definedIn": "pre"
     },
@@ -74055,7 +74253,7 @@
       "heading": {
         "id": "the-pagetransitionevent-interface",
         "title": "The PageTransitionEvent interface",
-        "number": "7.10.10.4"
+        "number": "7.11.10.4"
       },
       "definedIn": "pre"
     },
@@ -74075,7 +74273,7 @@
       "heading": {
         "id": "the-pagetransitionevent-interface",
         "title": "The PageTransitionEvent interface",
-        "number": "7.10.10.4"
+        "number": "7.11.10.4"
       },
       "definedIn": "prose"
     },
@@ -74093,7 +74291,7 @@
       "heading": {
         "id": "loading-documents",
         "title": "Loading documents",
-        "number": "7.10.11"
+        "number": "7.11.11"
       },
       "definedIn": "prose"
     },
@@ -74111,7 +74309,7 @@
       "heading": {
         "id": "loading-documents",
         "title": "Loading documents",
-        "number": "7.10.11"
+        "number": "7.11.11"
       },
       "definedIn": "prose"
     },
@@ -74129,7 +74327,7 @@
       "heading": {
         "id": "loading-documents",
         "title": "Loading documents",
-        "number": "7.10.11"
+        "number": "7.11.11"
       },
       "definedIn": "prose"
     },
@@ -74147,7 +74345,7 @@
       "heading": {
         "id": "unloading-documents",
         "title": "Unloading documents",
-        "number": "7.10.12"
+        "number": "7.11.12"
       },
       "definedIn": "prose"
     },
@@ -74165,7 +74363,7 @@
       "heading": {
         "id": "unloading-documents",
         "title": "Unloading documents",
-        "number": "7.10.12"
+        "number": "7.11.12"
       },
       "definedIn": "prose"
     },
@@ -74183,7 +74381,7 @@
       "heading": {
         "id": "unloading-documents",
         "title": "Unloading documents",
-        "number": "7.10.12"
+        "number": "7.11.12"
       },
       "definedIn": "prose"
     },
@@ -74201,7 +74399,7 @@
       "heading": {
         "id": "unloading-documents",
         "title": "Unloading documents",
-        "number": "7.10.12"
+        "number": "7.11.12"
       },
       "definedIn": "prose"
     },
@@ -74219,7 +74417,7 @@
       "heading": {
         "id": "unloading-documents",
         "title": "Unloading documents",
-        "number": "7.10.12"
+        "number": "7.11.12"
       },
       "definedIn": "prose"
     },
@@ -74237,7 +74435,7 @@
       "heading": {
         "id": "unloading-documents",
         "title": "Unloading documents",
-        "number": "7.10.12"
+        "number": "7.11.12"
       },
       "definedIn": "prose"
     },
@@ -74255,7 +74453,7 @@
       "heading": {
         "id": "unloading-documents",
         "title": "Unloading documents",
-        "number": "7.10.12"
+        "number": "7.11.12"
       },
       "definedIn": "prose"
     },
@@ -74273,7 +74471,7 @@
       "heading": {
         "id": "unloading-documents",
         "title": "Unloading documents",
-        "number": "7.10.12"
+        "number": "7.11.12"
       },
       "definedIn": "prose"
     },
@@ -74291,7 +74489,7 @@
       "heading": {
         "id": "the-beforeunloadevent-interface",
         "title": "The BeforeUnloadEvent interface",
-        "number": "7.10.12.1"
+        "number": "7.11.12.1"
       },
       "definedIn": "pre"
     },
@@ -74311,7 +74509,7 @@
       "heading": {
         "id": "the-beforeunloadevent-interface",
         "title": "The BeforeUnloadEvent interface",
-        "number": "7.10.12.1"
+        "number": "7.11.12.1"
       },
       "definedIn": "prose"
     },
@@ -74329,7 +74527,7 @@
       "heading": {
         "id": "aborting-a-document-load",
         "title": "Aborting a document load",
-        "number": "7.10.13"
+        "number": "7.11.13"
       },
       "definedIn": "prose"
     },
@@ -74347,7 +74545,7 @@
       "heading": {
         "id": "aborting-a-document-load",
         "title": "Aborting a document load",
-        "number": "7.10.13"
+        "number": "7.11.13"
       },
       "definedIn": "prose"
     },
@@ -74365,7 +74563,7 @@
       "heading": {
         "id": "the-x-frame-options-header",
         "title": "The `X-Frame-Options` header",
-        "number": "7.10.14"
+        "number": "7.11.14"
       },
       "definedIn": "prose"
     },
@@ -74938,6 +75136,26 @@
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin",
       "linkingText": [
         "origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "environment settings object"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "environment-settings-objects",
+        "title": "Environment settings objects",
+        "number": "8.1.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "concept-settings-object-policy-container",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container",
+      "linkingText": [
+        "policy container"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -84535,6 +84753,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "concept-workerglobalscope-policy-container",
+      "href": "https://html.spec.whatwg.org/multipage/workers.html#concept-workerglobalscope-policy-container",
+      "linkingText": [
+        "policy container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-workerglobalscope-common-interface",
+        "title": "The WorkerGlobalScope common interface",
+        "number": "10.2.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "concept-workerglobalscope-referrer-policy",
       "href": "https://html.spec.whatwg.org/multipage/workers.html#concept-workerglobalscope-referrer-policy",
       "linkingText": [
@@ -84559,26 +84797,6 @@
       "href": "https://html.spec.whatwg.org/multipage/workers.html#concept-workerglobalscope-embedder-policy",
       "linkingText": [
         "embedder policy"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "WorkerGlobalScope"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-workerglobalscope-common-interface",
-        "title": "The WorkerGlobalScope common interface",
-        "number": "10.2.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "concept-workerglobalscope-csp-list",
-      "href": "https://html.spec.whatwg.org/multipage/workers.html#concept-workerglobalscope-csp-list",
-      "linkingText": [
-        "CSP list"
       ],
       "localLinkingText": [],
       "type": "dfn",

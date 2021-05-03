@@ -1000,6 +1000,7 @@ No informative reference to this spec from other specs.
      * [`https://url.spec.whatwg.org/#default-port`](https://url.spec.whatwg.org/#default-port)
      * [`https://w3c.github.io/reporting/#visible-to-reportingobservers`](https://w3c.github.io/reporting/#visible-to-reportingobservers)
 - Broken external links:
+     * [`https://html.spec.whatwg.org/#concept-document-csp-list`](https://html.spec.whatwg.org/#concept-document-csp-list)
      * [`https://fetch.spec.whatwg.org/#concept-request-target-browsing-context`](https://fetch.spec.whatwg.org/#concept-request-target-browsing-context)
      * [`https://w3c.github.io/reporting/#group`](https://w3c.github.io/reporting/#group)
 - External links to outdated specs:
@@ -6460,7 +6461,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Crawled URL: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
-- Crawled version: 30 April 2021
+- Crawled version: 03 May 2021
 - Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Latest published version: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Shortname: device-posture
@@ -8184,7 +8185,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 30 April 2021
+- Crawled version: 3 May 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -8795,6 +8796,8 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-grid/#propdef-grid-row-gap`](https://drafts.csswg.org/css-grid/#propdef-grid-row-gap)
      * [`https://drafts.csswg.org/css-multicol/#propdef-column-gap`](https://drafts.csswg.org/css-multicol/#propdef-column-gap)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-cue-text`](https://w3c.github.io/webvtt/#webvtt-file-using-cue-text)
+     * [`https://w3c.github.io/webappsec-csp/#run-document-csp-initialization`](https://w3c.github.io/webappsec-csp/#run-document-csp-initialization)
+     * [`https://w3c.github.io/webappsec-csp/#parse-response-csp`](https://w3c.github.io/webappsec-csp/#parse-response-csp)
      * [`https://w3c.github.io/manifest/#dfn-manifest`](https://w3c.github.io/manifest/#dfn-manifest)
      * [`https://www.w3.org/TR/css3-color/#css2-system`](https://www.w3.org/TR/css3-color/#css2-system)
 - External links that use a dated URL:
@@ -10949,6 +10952,7 @@ No informative reference to this spec from other specs.
 - External links that neither target definitions nor headings:
      * [`https://html.spec.whatwg.org/#concept-document-feature-policy`](https://html.spec.whatwg.org/#concept-document-feature-policy)
 - Broken external links:
+     * [`https://html.spec.whatwg.org/#concept-document-csp-list`](https://html.spec.whatwg.org/#concept-document-csp-list)
      * [`https://xhr.spec.whatwg.org/#sync-xhr`](https://xhr.spec.whatwg.org/#sync-xhr)
      * [`https://fetch.spec.whatwg.org/#concept-body-wait`](https://fetch.spec.whatwg.org/#concept-body-wait)
      * [`https://wicg.github.io/feature-policy/#serialized-feature-policy`](https://wicg.github.io/feature-policy/#serialized-feature-policy)
@@ -11816,6 +11820,8 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
 - External links that neither target definitions nor headings:
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#concept-document-csp-list`](https://html.spec.whatwg.org/#concept-document-csp-list)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -17377,7 +17383,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 28 April 2021
+- Crawled version: 3 May 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Shortname: webtransport
 

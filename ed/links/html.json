@@ -384,6 +384,7 @@
       "http-origin",
       "abnf",
       "http-scheme",
+      "is-local",
       "local-scheme",
       "fetch-scheme",
       "http-cors-protocol",
@@ -413,7 +414,6 @@
       "concept-response-header-list",
       "concept-response-body",
       "concept-internal-response",
-      "concept-response-csp-list",
       "concept-response-location-url",
       "concept-response-timing-info",
       "concept-request",
@@ -626,7 +626,8 @@
       "snapshot-state",
       "BlobURLStore",
       "blob-url-entry",
-      "blob-url-entry-object"
+      "blob-url-entry-object",
+      "blob-url-entry-environment"
     ],
     "https://tools.ietf.org/html/rfc2397": [
       "section-2"
@@ -1182,8 +1183,7 @@
       "grammardef-serialized-policy",
       "enforced",
       "parse-serialized-policy",
-      "initialize-global-object-csp",
-      "initialize-document-csp",
+      "run-document-csp-initialization",
       "should-block-inline",
       "should-block-navigation-request",
       "should-block-navigation-response",
@@ -1192,7 +1192,8 @@
       "allow-base-for-document",
       "frame-ancestors",
       "sandbox",
-      "contains-a-header-delivered-content-security-policy"
+      "contains-a-header-delivered-content-security-policy",
+      "parse-response-csp"
     ],
     "https://w3c.github.io/ServiceWorker/": [
       "dfn-active-worker",
