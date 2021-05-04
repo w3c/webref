@@ -1,0 +1,1160 @@
+{
+  "spec": {
+    "title": "Open Screen Protocol",
+    "url": "https://w3c.github.io/openscreenprotocol/"
+  },
+  "dfns": [
+    {
+      "id": "open-screen-protocol-agent",
+      "href": "https://w3c.github.io/openscreenprotocol/#open-screen-protocol-agent",
+      "linkingText": [
+        "open screen protocol agent",
+        "osp agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "title": "Terminology",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "controller",
+      "href": "https://w3c.github.io/openscreenprotocol/#controller",
+      "linkingText": [
+        "controller"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "title": "Terminology",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "receiver",
+      "href": "https://w3c.github.io/openscreenprotocol/#receiver",
+      "linkingText": [
+        "receiver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "title": "Terminology",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "media-sender",
+      "href": "https://w3c.github.io/openscreenprotocol/#media-sender",
+      "linkingText": [
+        "media sender"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "title": "Terminology",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "media-receiver",
+      "href": "https://w3c.github.io/openscreenprotocol/#media-receiver",
+      "linkingText": [
+        "media receiver"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "title": "Terminology",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "advertising-agent",
+      "href": "https://w3c.github.io/openscreenprotocol/#advertising-agent",
+      "linkingText": [
+        "advertising agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "title": "Discovery with mDNS",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "display-name",
+      "href": "https://w3c.github.io/openscreenprotocol/#display-name",
+      "linkingText": [
+        "display name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "title": "Discovery with mDNS",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "listening-agent",
+      "href": "https://w3c.github.io/openscreenprotocol/#listening-agent",
+      "linkingText": [
+        "listening agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "title": "Discovery with mDNS",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "agent-fingerprint",
+      "href": "https://w3c.github.io/openscreenprotocol/#agent-fingerprint",
+      "linkingText": [
+        "agent fingerprint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "discovery",
+        "title": "Discovery with mDNS",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "agent-certificate",
+      "href": "https://w3c.github.io/openscreenprotocol/#agent-certificate",
+      "linkingText": [
+        "agent certificate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "certificates",
+        "title": "Agent Certificates",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "suspicious-agent",
+      "href": "https://w3c.github.io/openscreenprotocol/#suspicious-agent",
+      "linkingText": [
+        "suspicious agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "local-active-mitigations",
+        "title": "Local active network attackers",
+        "number": "12.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "verified-display-name",
+      "href": "https://w3c.github.io/openscreenprotocol/#verified-display-name",
+      "linkingText": [
+        "verified display name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "instance-names",
+        "title": "Instance and Display Names",
+        "number": "12.6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "agent-info-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#agent-info-request",
+      "linkingText": [
+        "agent-info-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "agent-info-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#agent-info-response",
+      "linkingText": [
+        "agent-info-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "agent-info-event",
+      "href": "https://w3c.github.io/openscreenprotocol/#agent-info-event",
+      "linkingText": [
+        "agent-info-event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "agent-info",
+      "href": "https://w3c.github.io/openscreenprotocol/#agent-info",
+      "linkingText": [
+        "agent-info"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "agent-status-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#agent-status-request",
+      "linkingText": [
+        "agent-status-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "agent-status-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#agent-status-response",
+      "linkingText": [
+        "agent-status-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "auth-capabilities",
+      "href": "https://w3c.github.io/openscreenprotocol/#auth-capabilities",
+      "linkingText": [
+        "auth-capabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "auth-initiation-token",
+      "href": "https://w3c.github.io/openscreenprotocol/#auth-initiation-token",
+      "linkingText": [
+        "auth-initiation-token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "auth-spake2-need-psk",
+      "href": "https://w3c.github.io/openscreenprotocol/#auth-spake2-need-psk",
+      "linkingText": [
+        "auth-spake2-need-psk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "auth-spake2-handshake",
+      "href": "https://w3c.github.io/openscreenprotocol/#auth-spake2-handshake",
+      "linkingText": [
+        "auth-spake2-handshake"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "auth-spake2-confirmation",
+      "href": "https://w3c.github.io/openscreenprotocol/#auth-spake2-confirmation",
+      "linkingText": [
+        "auth-spake2-confirmation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "auth-status",
+      "href": "https://w3c.github.io/openscreenprotocol/#auth-status",
+      "linkingText": [
+        "auth-status"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-url-availability-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-url-availability-request",
+      "linkingText": [
+        "presentation-url-availability-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-url-availability-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-url-availability-response",
+      "linkingText": [
+        "presentation-url-availability-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-url-availability-event",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-url-availability-event",
+      "linkingText": [
+        "presentation-url-availability-event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-start-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-start-request",
+      "linkingText": [
+        "presentation-start-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-start-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-start-response",
+      "linkingText": [
+        "presentation-start-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-termination-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-termination-request",
+      "linkingText": [
+        "presentation-termination-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-termination-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-termination-response",
+      "linkingText": [
+        "presentation-termination-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-termination-event",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-termination-event",
+      "linkingText": [
+        "presentation-termination-event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-connection-open-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-connection-open-request",
+      "linkingText": [
+        "presentation-connection-open-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-connection-open-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-connection-open-response",
+      "linkingText": [
+        "presentation-connection-open-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-connection-close-event",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-connection-close-event",
+      "linkingText": [
+        "presentation-connection-close-event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-change-event",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-change-event",
+      "linkingText": [
+        "presentation-change-event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "presentation-connection-message",
+      "href": "https://w3c.github.io/openscreenprotocol/#presentation-connection-message",
+      "linkingText": [
+        "presentation-connection-message"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "remote-playback-availability-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#remote-playback-availability-request",
+      "linkingText": [
+        "remote-playback-availability-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "remote-playback-availability-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#remote-playback-availability-response",
+      "linkingText": [
+        "remote-playback-availability-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "remote-playback-availability-event",
+      "href": "https://w3c.github.io/openscreenprotocol/#remote-playback-availability-event",
+      "linkingText": [
+        "remote-playback-availability-event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "remote-playback-start-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#remote-playback-start-request",
+      "linkingText": [
+        "remote-playback-start-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "remote-playback-start-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#remote-playback-start-response",
+      "linkingText": [
+        "remote-playback-start-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "remote-playback-termination-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#remote-playback-termination-request",
+      "linkingText": [
+        "remote-playback-termination-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "remote-playback-termination-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#remote-playback-termination-response",
+      "linkingText": [
+        "remote-playback-termination-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "remote-playback-termination-event",
+      "href": "https://w3c.github.io/openscreenprotocol/#remote-playback-termination-event",
+      "linkingText": [
+        "remote-playback-termination-event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "remote-playback-modify-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#remote-playback-modify-request",
+      "linkingText": [
+        "remote-playback-modify-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "remote-playback-modify-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#remote-playback-modify-response",
+      "linkingText": [
+        "remote-playback-modify-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "remote-playback-state-event",
+      "href": "https://w3c.github.io/openscreenprotocol/#remote-playback-state-event",
+      "linkingText": [
+        "remote-playback-state-event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "text-track-cue",
+      "href": "https://w3c.github.io/openscreenprotocol/#text-track-cue",
+      "linkingText": [
+        "text-track-cue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "media-time",
+      "href": "https://w3c.github.io/openscreenprotocol/#media-time",
+      "linkingText": [
+        "media-time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "audio-frame",
+      "href": "https://w3c.github.io/openscreenprotocol/#audio-frame",
+      "linkingText": [
+        "audio-frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "video-frame",
+      "href": "https://w3c.github.io/openscreenprotocol/#video-frame",
+      "linkingText": [
+        "video-frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "data-frame",
+      "href": "https://w3c.github.io/openscreenprotocol/#data-frame",
+      "linkingText": [
+        "data-frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "streaming-capabilities-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#streaming-capabilities-request",
+      "linkingText": [
+        "streaming-capabilities-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "streaming-capabilities-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#streaming-capabilities-response",
+      "linkingText": [
+        "streaming-capabilities-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "streaming-session-start-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#streaming-session-start-request",
+      "linkingText": [
+        "streaming-session-start-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "streaming-session-start-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#streaming-session-start-response",
+      "linkingText": [
+        "streaming-session-start-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "streaming-session-modify-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#streaming-session-modify-request",
+      "linkingText": [
+        "streaming-session-modify-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "streaming-session-modify-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#streaming-session-modify-response",
+      "linkingText": [
+        "streaming-session-modify-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "streaming-session-terminate-request",
+      "href": "https://w3c.github.io/openscreenprotocol/#streaming-session-terminate-request",
+      "linkingText": [
+        "streaming-session-terminate-request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "streaming-session-terminate-response",
+      "href": "https://w3c.github.io/openscreenprotocol/#streaming-session-terminate-response",
+      "linkingText": [
+        "streaming-session-terminate-response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "streaming-session-terminate-event",
+      "href": "https://w3c.github.io/openscreenprotocol/#streaming-session-terminate-event",
+      "linkingText": [
+        "streaming-session-terminate-event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "audio-encoding-offer",
+      "href": "https://w3c.github.io/openscreenprotocol/#audio-encoding-offer",
+      "linkingText": [
+        "audio-encoding-offer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "video-encoding-offer",
+      "href": "https://w3c.github.io/openscreenprotocol/#video-encoding-offer",
+      "linkingText": [
+        "video-encoding-offer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "data-encoding-offer",
+      "href": "https://w3c.github.io/openscreenprotocol/#data-encoding-offer",
+      "linkingText": [
+        "data-encoding-offer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "streaming-session-sender-stats-event",
+      "href": "https://w3c.github.io/openscreenprotocol/#streaming-session-sender-stats-event",
+      "linkingText": [
+        "streaming-session-sender-stats-event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "streaming-session-receiver-stats-event",
+      "href": "https://w3c.github.io/openscreenprotocol/#streaming-session-receiver-stats-event",
+      "linkingText": [
+        "streaming-session-receiver-stats-event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "appendix-a",
+        "title": "Appendix A: Messages"
+      },
+      "definedIn": "pre"
+    }
+  ]
+}

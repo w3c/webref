@@ -20,7 +20,7 @@
 <body>
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/w3c/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
-  <p>390 specifications were crawled in this report.</p>
+  <p>395 specifications were crawled in this report.</p>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -88,7 +88,11 @@
   </section>
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
   <h2>List of specifications with invalid WebIDL content</h2>
-  <p>=&gt; 0 specification found</p>
+  <ul>
+  <li><a href="https://drafts.csswg.org/web-animations-2/">Web Animations Level 2</a></li>
+  </ul>
+  <p>=&gt; 1 specification found</p>
+  <p>WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features</p>
   </section>
   <section id="list-of-specifications-with-obsolete-webidl-constructs" class="level2">
   <h2>List of specifications with obsolete WebIDL constructs</h2>
@@ -1957,6 +1961,7 @@
   <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/aria/core-aam/core-aam.html"><code>https://w3c.github.io/aria/core-aam/core-aam.html</code></a> but does not list it in its references</li>
   </ul></li>
+  <li><a href="https://wicg.github.io/sanitizer-api/">HTML Sanitizer API</a> links to <a href="https://www.w3.org/TR/payment-request/"><code>https://www.w3.org/TR/payment-request/</code></a> but does not list it in its references</li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a> links to:
   <ul>
   <li><a href="https://spec.whatwg.org/"><code>https://spec.whatwg.org/</code></a> but does not list it in its references</li>
@@ -2179,6 +2184,7 @@
   <li><a href="https://w3c.github.io/webappsec-upgrade-insecure-requests/">Upgrade Insecure Requests</a> links to <a href="https://w3c.github.io/webappsec/specs/mixedcontent/"><code>https://w3c.github.io/webappsec/specs/mixedcontent/</code></a> but does not list it in its references</li>
   <li><a href="https://wicg.github.io/ua-client-hints/">User-Agent Client Hints</a> links to <a href="https://w3c.github.io/fingerprinting-guidance/"><code>https://w3c.github.io/fingerprinting-guidance/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/graphics-aria/">WAI-ARIA Graphics Module</a> links to <a href="https://w3c.github.io/aria/"><code>https://w3c.github.io/aria/</code></a> but does not list it in its references</li>
+  <li><a href="https://drafts.csswg.org/web-animations-2/">Web Animations Level 2</a> links to <a href="https://www.w3.org/TR/animation-timing/"><code>https://www.w3.org/TR/animation-timing/</code></a> but does not list it in its references</li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> links to <a href="https://w3c.github.io/mediacapture-fromelement/"><code>https://w3c.github.io/mediacapture-fromelement/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 3</a> links to:
   <ul>
@@ -2232,7 +2238,7 @@
   </ul></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 611 missing references for links found in 168 specifications</p>
+  <p>=&gt; 613 missing references for links found in 170 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -2498,6 +2504,7 @@
   <li><a href="https://w3c.github.io/core-aam/"><code>https://w3c.github.io/core-aam/</code></a> but related reference &quot;core-aam-1.2&quot; uses URL <a href="https://www.w3.org/TR/core-aam-1.2/"><code>https://www.w3.org/TR/core-aam-1.2/</code></a></li>
   <li><a href="https://www.w3.org/TR/html/"><code>https://www.w3.org/TR/html/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
   </ul></li>
+  <li><a href="https://wicg.github.io/sanitizer-api/">HTML Sanitizer API</a> links to <a href="https://w3c.github.io/DOM-Parsing/"><code>https://w3c.github.io/DOM-Parsing/</code></a> but related reference &quot;DOM-Parsing&quot; uses URL <a href="https://www.w3.org/TR/DOM-Parsing/"><code>https://www.w3.org/TR/DOM-Parsing/</code></a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a> links to <a href="https://w3c.github.io/manifest/"><code>https://w3c.github.io/manifest/</code></a> but related reference &quot;MANIFEST&quot; uses URL <a href="https://www.w3.org/TR/appmanifest/"><code>https://www.w3.org/TR/appmanifest/</code></a></li>
   <li><a href="https://wicg.github.io/video-rvfc/">HTMLVideoElement.requestVideoFrameCallback()</a> links to <a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
   <li><a href="https://w3c.github.io/webrtc-identity/">Identity for WebRTC 1.0</a> links to <a href="https://w3c.github.io/webrtc-pc/"><code>https://w3c.github.io/webrtc-pc/</code></a> but related reference &quot;WEBRTC&quot; uses URL <a href="https://www.w3.org/TR/webrtc/"><code>https://www.w3.org/TR/webrtc/</code></a></li>
@@ -2568,6 +2575,11 @@
   <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS3VAL&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/"><code>https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/</code></a> but related reference &quot;CSS-ROUND-DISPLAY-1&quot; uses URL <a href="https://www.w3.org/TR/css-round-display-1/"><code>https://www.w3.org/TR/css-round-display-1/</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/openscreenprotocol/">Open Screen Protocol</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/presentation-api/"><code>https://w3c.github.io/presentation-api/</code></a> but related reference &quot;PRESENTATION-API&quot; uses URL <a href="https://www.w3.org/TR/presentation-api/"><code>https://www.w3.org/TR/presentation-api/</code></a></li>
+  <li><a href="https://w3c.github.io/remote-playback/"><code>https://w3c.github.io/remote-playback/</code></a> but related reference &quot;REMOTE-PLAYBACK&quot; uses URL <a href="https://www.w3.org/TR/remote-playback/"><code>https://www.w3.org/TR/remote-playback/</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/sensors/"><code>https://w3c.github.io/sensors/</code></a> but related reference &quot;GENERIC-SENSOR&quot; uses URL <a href="https://www.w3.org/TR/generic-sensor/"><code>https://www.w3.org/TR/generic-sensor/</code></a></li>
@@ -2606,6 +2618,7 @@
   <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   </ul></li>
+  <li><a href="https://wicg.github.io/scheduling-apis/">Prioritized Task Scheduling</a> links to <a href="https://www.w3.org/TR/requestidlecallback/"><code>https://www.w3.org/TR/requestidlecallback/</code></a> but related reference &quot;REQUESTIDLECALLBACK&quot; uses URL <a href="https://w3c.github.io/requestidlecallback/"><code>https://w3c.github.io/requestidlecallback/</code></a></li>
   <li><a href="https://wicg.github.io/private-network-access/">Private Network Access</a> links to <a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
   <li><a href="https://quirks.spec.whatwg.org/">Quirks Mode Standard</a> links to <a href="https://www.w3.org/TR/cssom-1/"><code>https://www.w3.org/TR/cssom-1/</code></a> but related reference &quot;CSSOM&quot; uses URL <a href="https://drafts.csswg.org/cssom/"><code>https://drafts.csswg.org/cssom/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a> links to <a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
@@ -2725,6 +2738,11 @@
   <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME&quot; uses URL <a href="https://www.w3.org/TR/hr-time-3/"><code>https://www.w3.org/TR/hr-time-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a> but related reference &quot;HR-TIME&quot; uses URL <a href="https://www.w3.org/TR/hr-time-3/"><code>https://www.w3.org/TR/hr-time-3/</code></a></li>
   </ul></li>
+  <li><a href="https://drafts.csswg.org/web-animations-2/">Web Animations Level 2</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/dom/"><code>https://www.w3.org/TR/dom/</code></a> but related reference &quot;DOM&quot; uses URL <a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a></li>
+  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML&quot; uses URL <a href="https://html.spec.whatwg.org/multipage/"><code>https://html.spec.whatwg.org/multipage/</code></a></li>
+  </ul></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a> links to <a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
   <li><a href="https://w3c.github.io/webauthn/">Web Authentication: An API for accessing Public Key Credentials - Level 3</a> links to:
   <ul>
@@ -2776,7 +2794,7 @@
   <li><a href="https://immersive-web.github.io/webxr-gamepads-module/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   <li><a href="https://immersive-web.github.io/webxr-hand-input/">WebXR Hand Input Module - Level 1</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   </ul>
-  <p>=&gt; 338 inconsistent references for links found in 178 specifications</p>
+  <p>=&gt; 344 inconsistent references for links found in 182 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   <section id="external-links-to-private-terms" class="level2">
@@ -3083,6 +3101,12 @@
   <li><a href="https://html.spec.whatwg.org/#rendered-legend"><code>https://html.spec.whatwg.org/#rendered-legend</code></a></li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a>:
+  <ul>
+  <li><a href="https://drafts.csswg.org/css-inline-3/#ascent-metric"><code>https://drafts.csswg.org/css-inline-3/#ascent-metric</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-inline-3/#descent-metric"><code>https://drafts.csswg.org/css-inline-3/#descent-metric</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-inline-3/#line-gap-metric"><code>https://drafts.csswg.org/css-inline-3/#line-gap-metric</code></a></li>
+  </ul></li>
+  <li><a href="https://drafts.csswg.org/css-fonts-5/">CSS Fonts Module Level 5</a>:
   <ul>
   <li><a href="https://drafts.csswg.org/css-inline-3/#ascent-metric"><code>https://drafts.csswg.org/css-inline-3/#ascent-metric</code></a></li>
   <li><a href="https://drafts.csswg.org/css-inline-3/#descent-metric"><code>https://drafts.csswg.org/css-inline-3/#descent-metric</code></a></li>
@@ -3423,6 +3447,11 @@
   <li><a href="https://html.spec.whatwg.org/#row-group-header"><code>https://html.spec.whatwg.org/#row-group-header</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#ping"><code>https://html.spec.whatwg.org/#ping</code></a></li>
   </ul></li>
+  <li><a href="https://wicg.github.io/sanitizer-api/">HTML Sanitizer API</a>:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/#plaintext-state"><code>https://html.spec.whatwg.org/#plaintext-state</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#rcdata-state"><code>https://html.spec.whatwg.org/#rcdata-state</code></a></li>
+  </ul></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>:
   <ul>
   <li><a href="https://mimesniff.spec.whatwg.org/#rules-for-text-or-binary"><code>https://mimesniff.spec.whatwg.org/#rules-for-text-or-binary</code></a></li>
@@ -3758,6 +3787,24 @@
   <li><a href="https://w3c.github.io/vibration/#dfn-validate-and-normalize"><code>https://w3c.github.io/vibration/#dfn-validate-and-normalize</code></a></li>
   <li><a href="https://w3c.github.io/vibration/#dfn-perform-vibration"><code>https://w3c.github.io/vibration/#dfn-perform-vibration</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/openscreenprotocol/">Open Screen Protocol</a>:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/#media-element"><code>https://html.spec.whatwg.org/#media-element</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#timeline-offset"><code>https://html.spec.whatwg.org/#timeline-offset</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#poster-frame"><code>https://html.spec.whatwg.org/#poster-frame</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-mediaerror-code"><code>https://html.spec.whatwg.org/#concept-mediaerror-code</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#official-playback-position"><code>https://html.spec.whatwg.org/#official-playback-position</code></a></li>
+  <li><a href="https://w3c.github.io/presentation-api/#dfn-controlling-user-agent"><code>https://w3c.github.io/presentation-api/#dfn-controlling-user-agent</code></a></li>
+  <li><a href="https://w3c.github.io/presentation-api/#dfn-receiving-user-agent"><code>https://w3c.github.io/presentation-api/#dfn-receiving-user-agent</code></a></li>
+  <li><a href="https://w3c.github.io/presentation-api/#dfn-presentation-request-url"><code>https://w3c.github.io/presentation-api/#dfn-presentation-request-url</code></a></li>
+  <li><a href="https://w3c.github.io/presentation-api/#dfn-available-presentation-display"><code>https://w3c.github.io/presentation-api/#dfn-available-presentation-display</code></a></li>
+  <li><a href="https://w3c.github.io/remote-playback/#dfn-remote-playback-devices"><code>https://w3c.github.io/remote-playback/#dfn-remote-playback-devices</code></a></li>
+  <li><a href="https://w3c.github.io/remote-playback/#dfn-initiate-remote-playback"><code>https://w3c.github.io/remote-playback/#dfn-initiate-remote-playback</code></a></li>
+  <li><a href="https://w3c.github.io/remote-playback/#dfn-media-element-state"><code>https://w3c.github.io/remote-playback/#dfn-media-element-state</code></a></li>
+  <li><a href="https://w3c.github.io/remote-playback/#dfn-compatible-remote-playback-device"><code>https://w3c.github.io/remote-playback/#dfn-compatible-remote-playback-device</code></a></li>
+  <li><a href="https://w3c.github.io/remote-playback/#dfn-availability-sources-set"><code>https://w3c.github.io/remote-playback/#dfn-availability-sources-set</code></a></li>
+  <li><a href="https://w3c.github.io/remote-playback/#dfn-remote-playback-source"><code>https://w3c.github.io/remote-playback/#dfn-remote-playback-source</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a>:
   <ul>
   <li><a href="https://w3c.github.io/sensors/#low-level"><code>https://w3c.github.io/sensors/#low-level</code></a></li>
@@ -3896,6 +3943,14 @@
   <li><a href="https://html.spec.whatwg.org/#session-history"><code>https://html.spec.whatwg.org/#session-history</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#allowed-to-navigate"><code>https://html.spec.whatwg.org/#allowed-to-navigate</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#navigate-fragid"><code>https://html.spec.whatwg.org/#navigate-fragid</code></a></li>
+  </ul></li>
+  <li><a href="https://wicg.github.io/scheduling-apis/">Prioritized Task Scheduling</a>:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/#concept-task-runnable"><code>https://html.spec.whatwg.org/#concept-task-runnable</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-task-steps"><code>https://html.spec.whatwg.org/#concept-task-steps</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#task-queue"><code>https://html.spec.whatwg.org/#task-queue</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#event-loop-processing-model"><code>https://html.spec.whatwg.org/#event-loop-processing-model</code></a></li>
+  <li><a href="https://dom.spec.whatwg.org/#abortcontroller-signal"><code>https://dom.spec.whatwg.org/#abortcontroller-signal</code></a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/priority-hints/">Priority Hints</a>:
   <ul>
@@ -4199,11 +4254,47 @@
   <li><a href="https://html.spec.whatwg.org/#event-loop-processing-model"><code>https://html.spec.whatwg.org/#event-loop-processing-model</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#run-the-animation-frame-callbacks"><code>https://html.spec.whatwg.org/#run-the-animation-frame-callbacks</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#session-history-entry"><code>https://html.spec.whatwg.org/#session-history-entry</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-2/#iteration-composite-operation"><code>https://drafts.csswg.org/web-animations-2/#iteration-composite-operation</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-2/#iteration-composite-operation-accumulate"><code>https://drafts.csswg.org/web-animations-2/#iteration-composite-operation-accumulate</code></a></li>
   <li><a href="https://drafts.csswg.org/css-easing-1/#input-progress-value"><code>https://drafts.csswg.org/css-easing-1/#input-progress-value</code></a></li>
   <li><a href="https://drafts.csswg.org/css-easing-1/#before-flag"><code>https://drafts.csswg.org/css-easing-1/#before-flag</code></a></li>
   <li><a href="https://drafts.csswg.org/css-animations-2/#owning-element"><code>https://drafts.csswg.org/css-animations-2/#owning-element</code></a></li>
   <li><a href="https://drafts.csswg.org/css-transitions-2/#owning-element"><code>https://drafts.csswg.org/css-transitions-2/#owning-element</code></a></li>
   <li><a href="https://drafts.csswg.org/css-style-attr/#style-attribute"><code>https://drafts.csswg.org/css-style-attr/#style-attribute</code></a></li>
+  </ul></li>
+  <li><a href="https://drafts.csswg.org/web-animations-2/">Web Animations Level 2</a>:
+  <ul>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#animation-effect"><code>https://drafts.csswg.org/web-animations-1/#animation-effect</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#current-time"><code>https://drafts.csswg.org/web-animations-1/#current-time</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#unresolved"><code>https://drafts.csswg.org/web-animations-1/#unresolved</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#finished-play-state"><code>https://drafts.csswg.org/web-animations-1/#finished-play-state</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#iteration-progress"><code>https://drafts.csswg.org/web-animations-1/#iteration-progress</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#keyframe-effect"><code>https://drafts.csswg.org/web-animations-1/#keyframe-effect</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#time-value"><code>https://drafts.csswg.org/web-animations-1/#time-value</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#ready"><code>https://drafts.csswg.org/web-animations-1/#ready</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#current-finished-promise"><code>https://drafts.csswg.org/web-animations-1/#current-finished-promise</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#pause-an-animation"><code>https://drafts.csswg.org/web-animations-1/#pause-an-animation</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#cancel-an-animation"><code>https://drafts.csswg.org/web-animations-1/#cancel-an-animation</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#active-interval"><code>https://drafts.csswg.org/web-animations-1/#active-interval</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#end-delay"><code>https://drafts.csswg.org/web-animations-1/#end-delay</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#active-time"><code>https://drafts.csswg.org/web-animations-1/#active-time</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#active-phase"><code>https://drafts.csswg.org/web-animations-1/#active-phase</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#fill-mode"><code>https://drafts.csswg.org/web-animations-1/#fill-mode</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#before-phase"><code>https://drafts.csswg.org/web-animations-1/#before-phase</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#after-phase"><code>https://drafts.csswg.org/web-animations-1/#after-phase</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#iteration-duration"><code>https://drafts.csswg.org/web-animations-1/#iteration-duration</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#iteration-count"><code>https://drafts.csswg.org/web-animations-1/#iteration-count</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#iteration-start"><code>https://drafts.csswg.org/web-animations-1/#iteration-start</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#overall-progress"><code>https://drafts.csswg.org/web-animations-1/#overall-progress</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#simple-iteration-progress"><code>https://drafts.csswg.org/web-animations-1/#simple-iteration-progress</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#directed-progress"><code>https://drafts.csswg.org/web-animations-1/#directed-progress</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#playback-direction"><code>https://drafts.csswg.org/web-animations-1/#playback-direction</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#effect-value"><code>https://drafts.csswg.org/web-animations-1/#effect-value</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#target-property"><code>https://drafts.csswg.org/web-animations-1/#target-property</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#current-iteration"><code>https://drafts.csswg.org/web-animations-1/#current-iteration</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#in-effect"><code>https://drafts.csswg.org/web-animations-1/#in-effect</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#target-element"><code>https://drafts.csswg.org/web-animations-1/#target-element</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#update-the-timing-properties-of-an-animation-effect"><code>https://drafts.csswg.org/web-animations-1/#update-the-timing-properties-of-an-animation-effect</code></a></li>
   </ul></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a>:
   <ul>
@@ -4605,7 +4696,7 @@
   <li><a href="https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm"><code>https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 1240 problematic external links found in 194 specifications</p>
+  <p>=&gt; 1298 problematic external links found in 199 specifications</p>
   </section>
   <section id="external-links-that-neither-target-definitions-nor-headings" class="level2">
   <h2>External links that neither target definitions nor headings</h2>
@@ -6253,6 +6344,12 @@
   <li><a href="https://www.w3.org/TR/core-aam-1.1/#ariaPosinset"><code>https://www.w3.org/TR/core-aam-1.1/#ariaPosinset</code></a></li>
   <li><a href="https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document"><code>https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document</code></a></li>
   </ul></li>
+  <li><a href="https://wicg.github.io/sanitizer-api/">HTML Sanitizer API</a>:
+  <ul>
+  <li><a href="https://dom.spec.whatwg.org/#interface-Document"><code>https://dom.spec.whatwg.org/#interface-Document</code></a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/#widl-Element-innerHTML"><code>https://w3c.github.io/DOM-Parsing/#widl-Element-innerHTML</code></a></li>
+  <li><a href="https://w3c.github.io/DOM-Parsing/#widl-DOMParser-parseFromString-Document-DOMString-str-SupportedType-type"><code>https://w3c.github.io/DOM-Parsing/#widl-DOMParser-parseFromString-Document-DOMString-str-SupportedType-type</code></a></li>
+  </ul></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>:
   <ul>
   <li><a href="https://dom.spec.whatwg.org/#dom-element-setAttribute"><code>https://dom.spec.whatwg.org/#dom-element-setAttribute</code></a></li>
@@ -6398,6 +6495,13 @@
   <li><a href="https://www.w3.org/TR/reporting-1/#visible-to-reporting-observers"><code>https://www.w3.org/TR/reporting-1/#visible-to-reporting-observers</code></a></li>
   <li><a href="https://url.spec.whatwg.org/#concept-URL"><code>https://url.spec.whatwg.org/#concept-URL</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/openscreenprotocol/">Open Screen Protocol</a>:
+  <ul>
+  <li><a href="https://w3c.github.io/presentation-api/#dfn-presentation"><code>https://w3c.github.io/presentation-api/#dfn-presentation</code></a></li>
+  <li><a href="https://w3c.github.io/presentation-api/#dfn-presentation-id"><code>https://w3c.github.io/presentation-api/#dfn-presentation-id</code></a></li>
+  <li><a href="https://w3c.github.io/presentation-api/#presentationconnection"><code>https://w3c.github.io/presentation-api/#presentationconnection</code></a></li>
+  <li><a href="https://w3c.github.io/remote-playback/#dfn-media-resources"><code>https://w3c.github.io/remote-playback/#dfn-media-resources</code></a></li>
+  </ul></li>
   <li><a href="https://wicg.github.io/origin-policy/">Origin Policy</a>:
   <ul>
   <li><a href="https://html.spec.whatwg.org/#concept-document-csp-list"><code>https://html.spec.whatwg.org/#concept-document-csp-list</code></a></li>
@@ -6471,6 +6575,11 @@
   <li><a href="https://w3c.github.io/preload/">Preload</a>:
   <ul>
   <li><a href="https://mimesniff.spec.whatwg.org/#parsable-mime-type"><code>https://mimesniff.spec.whatwg.org/#parsable-mime-type</code></a></li>
+  </ul></li>
+  <li><a href="https://wicg.github.io/scheduling-apis/">Prioritized Task Scheduling</a>:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/#concept-source"><code>https://html.spec.whatwg.org/#concept-source</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-document"><code>https://html.spec.whatwg.org/#concept-document</code></a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/private-network-access/">Private Network Access</a>:
   <ul>
@@ -6671,6 +6780,12 @@
   <li><a href="https://w3c.github.io/hr-time/#domhighrestimestamp"><code>https://w3c.github.io/hr-time/#domhighrestimestamp</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#dfn-present"><code>https://heycam.github.io/webidl/#dfn-present</code></a></li>
   </ul></li>
+  <li><a href="https://drafts.csswg.org/web-animations-2/">Web Animations Level 2</a>:
+  <ul>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#target-effect"><code>https://drafts.csswg.org/web-animations-1/#target-effect</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#animation-playback-rate"><code>https://drafts.csswg.org/web-animations-1/#animation-playback-rate</code></a></li>
+  <li><a href="https://drafts.csswg.org/web-animations-1/#before-flag"><code>https://drafts.csswg.org/web-animations-1/#before-flag</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/manifest-app-info/">Web App Manifest - Application Information</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/accname-1.2/#dfn-accessible-description"><code>https://www.w3.org/TR/accname-1.2/#dfn-accessible-description</code></a></li>
@@ -6770,7 +6885,7 @@
   <li><a href="https://immersive-web.github.io/layers/#session"><code>https://immersive-web.github.io/layers/#session</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 573 problematic external links found in 151 specifications</p>
+  <p>=&gt; 585 problematic external links found in 155 specifications</p>
   </section>
   <section id="external-links-to-terms-that-no-longer-exist-in-the-latest-version-of-the-targeted-specification" class="level2">
   <h2>External links to terms that no longer exist in the latest version of the targeted specification</h2>
@@ -6962,6 +7077,10 @@
   <ul>
   <li><a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a></li>
   </ul></li>
+  <li><a href="https://drafts.csswg.org/web-animations-2/">Web Animations Level 2</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
+  </ul></li>
   <li><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/2dcontext/"><code>https://www.w3.org/TR/2dcontext/</code></a></li>
@@ -6985,7 +7104,7 @@
   <li><a href="https://www.w3.org/TR/cors/"><code>https://www.w3.org/TR/cors/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 58 problematic external links found in 49 specifications</p>
+  <p>=&gt; 59 problematic external links found in 50 specifications</p>
   </section>
   <section id="external-links-that-use-a-dated-url" class="level2">
   <h2>External links that use a dated URL</h2>

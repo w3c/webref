@@ -1,0 +1,1033 @@
+{
+  "spec": {
+    "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+    "url": "https://w3c.github.io/webauthn/"
+  },
+  "headings": [
+    {
+      "id": "profile-and-date",
+      "level": 2,
+      "title": "Editor’s Draft, 22 April 2021"
+    },
+    {
+      "id": "abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "sctn-intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "sctn-spec-roadmap",
+      "level": 3,
+      "title": "Specification Roadmap",
+      "number": "1.1"
+    },
+    {
+      "id": "sctn-use-cases",
+      "level": 3,
+      "title": "Use Cases",
+      "number": "1.2"
+    },
+    {
+      "id": "sctn-usecase-registration",
+      "level": 4,
+      "title": "Registration",
+      "number": "1.2.1"
+    },
+    {
+      "id": "sctn-usecase-authentication",
+      "level": 4,
+      "title": "Authentication",
+      "number": "1.2.2"
+    },
+    {
+      "id": "sctn-usecase-new-device-registration",
+      "level": 4,
+      "title": "New Device Registration",
+      "number": "1.2.3"
+    },
+    {
+      "id": "sctn-other-configurations",
+      "level": 4,
+      "title": "Other Use Cases and Configurations",
+      "number": "1.2.4"
+    },
+    {
+      "id": "sctn-sample-scenarios",
+      "level": 3,
+      "title": "Sample API Usage Scenarios",
+      "number": "1.3"
+    },
+    {
+      "id": "sctn-sample-registration",
+      "level": 4,
+      "title": "Registration",
+      "number": "1.3.1"
+    },
+    {
+      "id": "sctn-sample-registration-with-platform-authenticator",
+      "level": 4,
+      "title": "Registration Specifically with User-Verifying Platform Authenticator",
+      "number": "1.3.2"
+    },
+    {
+      "id": "sctn-sample-authentication",
+      "level": 4,
+      "title": "Authentication",
+      "number": "1.3.3"
+    },
+    {
+      "id": "sctn-sample-aborting",
+      "level": 4,
+      "title": "Aborting Authentication Operations",
+      "number": "1.3.4"
+    },
+    {
+      "id": "sctn-sample-decommissioning",
+      "level": 4,
+      "title": "Decommissioning",
+      "number": "1.3.5"
+    },
+    {
+      "id": "sctn-platform-impl-guidance",
+      "level": 3,
+      "title": "Platform-Specific Implementation Guidance",
+      "number": "1.4"
+    },
+    {
+      "id": "sctn-conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
+    },
+    {
+      "id": "sctn-conforming-user-agents",
+      "level": 3,
+      "title": "User Agents",
+      "number": "2.1"
+    },
+    {
+      "id": "sct-domstring-backwards-compatibility",
+      "level": 4,
+      "title": "Enumerations as DOMString types",
+      "number": "2.1.1"
+    },
+    {
+      "id": "sctn-conforming-authenticators",
+      "level": 3,
+      "title": "Authenticators",
+      "number": "2.2"
+    },
+    {
+      "id": "sctn-conforming-authenticators-u2f",
+      "level": 4,
+      "title": "Backwards Compatibility with FIDO U2F",
+      "number": "2.2.1"
+    },
+    {
+      "id": "sctn-conforming-relying-parties",
+      "level": 3,
+      "title": "WebAuthn Relying Parties",
+      "number": "2.3"
+    },
+    {
+      "id": "sctn-conforming-all-classes",
+      "level": 3,
+      "title": "All Conformance Classes",
+      "number": "2.4"
+    },
+    {
+      "id": "sctn-dependencies",
+      "level": 2,
+      "title": "Dependencies",
+      "number": "3"
+    },
+    {
+      "id": "sctn-terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "4"
+    },
+    {
+      "id": "sctn-api",
+      "level": 2,
+      "title": "Web Authentication API",
+      "number": "5"
+    },
+    {
+      "id": "iface-pkcredential",
+      "level": 3,
+      "title": "PublicKeyCredential Interface",
+      "number": "5.1"
+    },
+    {
+      "id": "sctn-credentialcreationoptions-extension",
+      "level": 4,
+      "title": "CredentialCreationOptions Dictionary Extension",
+      "number": "5.1.1"
+    },
+    {
+      "id": "sctn-credentialrequestoptions-extension",
+      "level": 4,
+      "title": "CredentialRequestOptions Dictionary Extension",
+      "number": "5.1.2"
+    },
+    {
+      "id": "sctn-createCredential",
+      "level": 4,
+      "title": "Create a New Credential - PublicKeyCredential’s [[Create]](origin, options, sameOriginWithAncestors) Method",
+      "number": "5.1.3"
+    },
+    {
+      "id": "sctn-getAssertion",
+      "level": 4,
+      "title": "Use an Existing Credential to Make an Assertion - PublicKeyCredential’s [[Get]](options) Method",
+      "number": "5.1.4"
+    },
+    {
+      "id": "sctn-discover-from-external-source",
+      "level": 5,
+      "title": "PublicKeyCredential’s [[DiscoverFromExternalSource]](origin, options, sameOriginWithAncestors) Method",
+      "number": "5.1.4.1"
+    },
+    {
+      "id": "sctn-storeCredential",
+      "level": 4,
+      "title": "Store an Existing Credential - PublicKeyCredential’s [[Store]](credential, sameOriginWithAncestors) Method",
+      "number": "5.1.5"
+    },
+    {
+      "id": "sctn-preventSilentAccessCredential",
+      "level": 4,
+      "title": "Preventing Silent Access to an Existing Credential - PublicKeyCredential’s [[preventSilentAccess]](credential, sameOriginWithAncestors) Method",
+      "number": "5.1.6"
+    },
+    {
+      "id": "sctn-isUserVerifyingPlatformAuthenticatorAvailable",
+      "level": 4,
+      "title": "Availability of User-Verifying Platform Authenticator - PublicKeyCredential’s isUserVerifyingPlatformAuthenticatorAvailable() Method",
+      "number": "5.1.7"
+    },
+    {
+      "id": "iface-authenticatorresponse",
+      "level": 3,
+      "title": "Authenticator Responses (interface AuthenticatorResponse)",
+      "number": "5.2"
+    },
+    {
+      "id": "iface-authenticatorattestationresponse",
+      "level": 4,
+      "title": "Information About Public Key Credential (interface AuthenticatorAttestationResponse)",
+      "number": "5.2.1"
+    },
+    {
+      "id": "sctn-public-key-easy",
+      "level": 5,
+      "title": "Easily accessing credential data",
+      "number": "5.2.1.1"
+    },
+    {
+      "id": "iface-authenticatorassertionresponse",
+      "level": 4,
+      "title": "Web Authentication Assertion (interface AuthenticatorAssertionResponse)",
+      "number": "5.2.2"
+    },
+    {
+      "id": "dictionary-credential-params",
+      "level": 3,
+      "title": "Parameters for Credential Generation (dictionary PublicKeyCredentialParameters)",
+      "number": "5.3"
+    },
+    {
+      "id": "dictionary-makecredentialoptions",
+      "level": 3,
+      "title": "Options for Credential Creation (dictionary PublicKeyCredentialCreationOptions)",
+      "number": "5.4"
+    },
+    {
+      "id": "dictionary-pkcredentialentity",
+      "level": 4,
+      "title": "Public Key Entity Description (dictionary PublicKeyCredentialEntity)",
+      "number": "5.4.1"
+    },
+    {
+      "id": "dictionary-rp-credential-params",
+      "level": 4,
+      "title": "Relying Party Parameters for Credential Generation (dictionary PublicKeyCredentialRpEntity)",
+      "number": "5.4.2"
+    },
+    {
+      "id": "dictionary-user-credential-params",
+      "level": 4,
+      "title": "User Account Parameters for Credential Generation (dictionary PublicKeyCredentialUserEntity)",
+      "number": "5.4.3"
+    },
+    {
+      "id": "dictionary-authenticatorSelection",
+      "level": 4,
+      "title": "Authenticator Selection Criteria (dictionary AuthenticatorSelectionCriteria)",
+      "number": "5.4.4"
+    },
+    {
+      "id": "enum-attachment",
+      "level": 4,
+      "title": "Authenticator Attachment Enumeration (enum AuthenticatorAttachment)",
+      "number": "5.4.5"
+    },
+    {
+      "id": "enum-residentKeyRequirement",
+      "level": 4,
+      "title": "Resident Key Requirement Enumeration (enum ResidentKeyRequirement)",
+      "number": "5.4.6"
+    },
+    {
+      "id": "enum-attestation-convey",
+      "level": 4,
+      "title": "Attestation Conveyance Preference Enumeration (enum AttestationConveyancePreference)",
+      "number": "5.4.7"
+    },
+    {
+      "id": "dictionary-assertion-options",
+      "level": 3,
+      "title": "Options for Assertion Generation (dictionary PublicKeyCredentialRequestOptions)",
+      "number": "5.5"
+    },
+    {
+      "id": "sctn-abortoperation",
+      "level": 3,
+      "title": "Abort Operations with AbortSignal",
+      "number": "5.6"
+    },
+    {
+      "id": "sctn-extensions-inputs-outputs",
+      "level": 3,
+      "title": "WebAuthn Extensions Inputs and Outputs",
+      "number": "5.7"
+    },
+    {
+      "id": "iface-authentication-extensions-client-inputs",
+      "level": 4,
+      "title": "Authentication Extensions Client Inputs (dictionary AuthenticationExtensionsClientInputs)",
+      "number": "5.7.1"
+    },
+    {
+      "id": "iface-authentication-extensions-client-outputs",
+      "level": 4,
+      "title": "Authentication Extensions Client Outputs (dictionary AuthenticationExtensionsClientOutputs)",
+      "number": "5.7.2"
+    },
+    {
+      "id": "iface-authentication-extensions-authenticator-inputs",
+      "level": 4,
+      "title": "Authentication Extensions Authenticator Inputs (CDDL type AuthenticationExtensionsAuthenticatorInputs)",
+      "number": "5.7.3"
+    },
+    {
+      "id": "iface-authentication-extensions-authenticator-outputs",
+      "level": 4,
+      "title": "Authentication Extensions Authenticator Outputs (CDDL type AuthenticationExtensionsAuthenticatorOutputs)",
+      "number": "5.7.4"
+    },
+    {
+      "id": "sctn-supporting-data-structures",
+      "level": 3,
+      "title": "Supporting Data Structures",
+      "number": "5.8"
+    },
+    {
+      "id": "dictionary-client-data",
+      "level": 4,
+      "title": "Client Data Used in WebAuthn Signatures (dictionary CollectedClientData)",
+      "number": "5.8.1"
+    },
+    {
+      "id": "clientdatajson-serialization",
+      "level": 5,
+      "title": "Serialization",
+      "number": "5.8.1.1"
+    },
+    {
+      "id": "clientdatajson-verification",
+      "level": 5,
+      "title": "Limited Verification Algorithm",
+      "number": "5.8.1.2"
+    },
+    {
+      "id": "clientdatajson-development",
+      "level": 5,
+      "title": "Future development",
+      "number": "5.8.1.3"
+    },
+    {
+      "id": "enum-credentialType",
+      "level": 4,
+      "title": "Credential Type Enumeration (enum PublicKeyCredentialType)",
+      "number": "5.8.2"
+    },
+    {
+      "id": "dictionary-credential-descriptor",
+      "level": 4,
+      "title": "Credential Descriptor (dictionary PublicKeyCredentialDescriptor)",
+      "number": "5.8.3"
+    },
+    {
+      "id": "enum-transport",
+      "level": 4,
+      "title": "Authenticator Transport Enumeration (enum AuthenticatorTransport)",
+      "number": "5.8.4"
+    },
+    {
+      "id": "sctn-alg-identifier",
+      "level": 4,
+      "title": "Cryptographic Algorithm Identifier (typedef COSEAlgorithmIdentifier)",
+      "number": "5.8.5"
+    },
+    {
+      "id": "enum-userVerificationRequirement",
+      "level": 4,
+      "title": "User Verification Requirement Enumeration (enum UserVerificationRequirement)",
+      "number": "5.8.6"
+    },
+    {
+      "id": "sctn-permissions-policy",
+      "level": 3,
+      "title": "Permissions Policy integration",
+      "number": "5.9"
+    },
+    {
+      "id": "sctn-iframe-guidance",
+      "level": 3,
+      "title": "Using Web Authentication within iframe elements",
+      "number": "5.10"
+    },
+    {
+      "id": "sctn-authenticator-model",
+      "level": 2,
+      "title": "WebAuthn Authenticator Model",
+      "number": "6"
+    },
+    {
+      "id": "sctn-authenticator-data",
+      "level": 3,
+      "title": "Authenticator Data",
+      "number": "6.1"
+    },
+    {
+      "id": "sctn-sign-counter",
+      "level": 4,
+      "title": "Signature Counter Considerations",
+      "number": "6.1.1"
+    },
+    {
+      "id": "sctn-fido-u2f-sig-format-compat",
+      "level": 4,
+      "title": "FIDO U2F Signature Format Compatibility",
+      "number": "6.1.2"
+    },
+    {
+      "id": "sctn-authenticator-taxonomy",
+      "level": 3,
+      "title": "Authenticator Taxonomy",
+      "number": "6.2"
+    },
+    {
+      "id": "sctn-authenticator-attachment-modality",
+      "level": 4,
+      "title": "Authenticator Attachment Modality",
+      "number": "6.2.1"
+    },
+    {
+      "id": "sctn-credential-storage-modality",
+      "level": 4,
+      "title": "Credential Storage Modality",
+      "number": "6.2.2"
+    },
+    {
+      "id": "sctn-authentication-factor-capability",
+      "level": 4,
+      "title": "Authentication Factor Capability",
+      "number": "6.2.3"
+    },
+    {
+      "id": "sctn-authenticator-ops",
+      "level": 3,
+      "title": "Authenticator Operations",
+      "number": "6.3"
+    },
+    {
+      "id": "sctn-op-lookup-credsource-by-credid",
+      "level": 4,
+      "title": "Lookup Credential Source by Credential ID Algorithm",
+      "number": "6.3.1"
+    },
+    {
+      "id": "sctn-op-make-cred",
+      "level": 4,
+      "title": "The authenticatorMakeCredential Operation",
+      "number": "6.3.2"
+    },
+    {
+      "id": "sctn-op-get-assertion",
+      "level": 4,
+      "title": "The authenticatorGetAssertion Operation",
+      "number": "6.3.3"
+    },
+    {
+      "id": "sctn-op-cancel",
+      "level": 4,
+      "title": "The authenticatorCancel Operation",
+      "number": "6.3.4"
+    },
+    {
+      "id": "sctn-strings",
+      "level": 3,
+      "title": "String Handling",
+      "number": "6.4"
+    },
+    {
+      "id": "sctn-strings-truncation",
+      "level": 4,
+      "title": "String Truncation",
+      "number": "6.4.1"
+    },
+    {
+      "id": "sctn-strings-langdir",
+      "level": 4,
+      "title": "Language and Direction Encoding",
+      "number": "6.4.2"
+    },
+    {
+      "id": "sctn-attestation",
+      "level": 3,
+      "title": "Attestation",
+      "number": "6.5"
+    },
+    {
+      "id": "sctn-attested-credential-data",
+      "level": 4,
+      "title": "Attested Credential Data",
+      "number": "6.5.1"
+    },
+    {
+      "id": "sctn-encoded-credPubKey-examples",
+      "level": 5,
+      "title": "Examples of credentialPublicKey Values Encoded in COSE_Key Format",
+      "number": "6.5.1.1"
+    },
+    {
+      "id": "sctn-attestation-formats",
+      "level": 4,
+      "title": "Attestation Statement Formats",
+      "number": "6.5.2"
+    },
+    {
+      "id": "sctn-attestation-types",
+      "level": 4,
+      "title": "Attestation Types",
+      "number": "6.5.3"
+    },
+    {
+      "id": "sctn-generating-an-attestation-object",
+      "level": 4,
+      "title": "Generating an Attestation Object",
+      "number": "6.5.4"
+    },
+    {
+      "id": "sctn-signature-attestation-types",
+      "level": 4,
+      "title": "Signature Formats for Packed Attestation, FIDO U2F Attestation, and Assertion Signatures",
+      "number": "6.5.5"
+    },
+    {
+      "id": "sctn-rp-operations",
+      "level": 2,
+      "title": "WebAuthn Relying Party Operations",
+      "number": "7"
+    },
+    {
+      "id": "sctn-registering-a-new-credential",
+      "level": 3,
+      "title": "Registering a New Credential",
+      "number": "7.1"
+    },
+    {
+      "id": "sctn-verifying-assertion",
+      "level": 3,
+      "title": "Verifying an Authentication Assertion",
+      "number": "7.2"
+    },
+    {
+      "id": "sctn-defined-attestation-formats",
+      "level": 2,
+      "title": "Defined Attestation Statement Formats",
+      "number": "8"
+    },
+    {
+      "id": "sctn-attstn-fmt-ids",
+      "level": 3,
+      "title": "Attestation Statement Format Identifiers",
+      "number": "8.1"
+    },
+    {
+      "id": "sctn-packed-attestation",
+      "level": 3,
+      "title": "Packed Attestation Statement Format",
+      "number": "8.2"
+    },
+    {
+      "id": "sctn-packed-attestation-cert-requirements",
+      "level": 4,
+      "title": "Packed Attestation Statement Certificate Requirements",
+      "number": "8.2.1"
+    },
+    {
+      "id": "sctn-tpm-attestation",
+      "level": 3,
+      "title": "TPM Attestation Statement Format",
+      "number": "8.3"
+    },
+    {
+      "id": "sctn-tpm-cert-requirements",
+      "level": 4,
+      "title": "TPM Attestation Statement Certificate Requirements",
+      "number": "8.3.1"
+    },
+    {
+      "id": "sctn-android-key-attestation",
+      "level": 3,
+      "title": "Android Key Attestation Statement Format",
+      "number": "8.4"
+    },
+    {
+      "id": "sctn-key-attstn-cert-requirements",
+      "level": 4,
+      "title": "Android Key Attestation Statement Certificate Requirements",
+      "number": "8.4.1"
+    },
+    {
+      "id": "sctn-android-safetynet-attestation",
+      "level": 3,
+      "title": "Android SafetyNet Attestation Statement Format",
+      "number": "8.5"
+    },
+    {
+      "id": "sctn-fido-u2f-attestation",
+      "level": 3,
+      "title": "FIDO U2F Attestation Statement Format",
+      "number": "8.6"
+    },
+    {
+      "id": "sctn-none-attestation",
+      "level": 3,
+      "title": "None Attestation Statement Format",
+      "number": "8.7"
+    },
+    {
+      "id": "sctn-apple-anonymous-attestation",
+      "level": 3,
+      "title": "Apple Anonymous Attestation Statement Format",
+      "number": "8.8"
+    },
+    {
+      "id": "sctn-extensions",
+      "level": 2,
+      "title": "WebAuthn Extensions",
+      "number": "9"
+    },
+    {
+      "id": "sctn-extension-id",
+      "level": 3,
+      "title": "Extension Identifiers",
+      "number": "9.1"
+    },
+    {
+      "id": "sctn-extension-specification",
+      "level": 3,
+      "title": "Defining Extensions",
+      "number": "9.2"
+    },
+    {
+      "id": "sctn-extension-request-parameters",
+      "level": 3,
+      "title": "Extending Request Parameters",
+      "number": "9.3"
+    },
+    {
+      "id": "sctn-client-extension-processing",
+      "level": 3,
+      "title": "Client Extension Processing",
+      "number": "9.4"
+    },
+    {
+      "id": "sctn-authenticator-extension-processing",
+      "level": 3,
+      "title": "Authenticator Extension Processing",
+      "number": "9.5"
+    },
+    {
+      "id": "sctn-defined-extensions",
+      "level": 2,
+      "title": "10. Defined Extensions"
+    },
+    {
+      "id": "sctn-appid-extension",
+      "level": 3,
+      "title": "FIDO AppID Extension (appid)",
+      "number": "10.1"
+    },
+    {
+      "id": "sctn-appid-exclude-extension",
+      "level": 3,
+      "title": "FIDO AppID Exclusion Extension (appidExclude)",
+      "number": "10.2"
+    },
+    {
+      "id": "sctn-uvm-extension",
+      "level": 3,
+      "title": "User Verification Method Extension (uvm)",
+      "number": "10.3"
+    },
+    {
+      "id": "sctn-authenticator-credential-properties-extension",
+      "level": 3,
+      "title": "Credential Properties Extension (credProps)",
+      "number": "10.4"
+    },
+    {
+      "id": "sctn-large-blob-extension",
+      "level": 3,
+      "title": "Large blob storage extension (largeBlob)",
+      "number": "10.5"
+    },
+    {
+      "id": "sctn-automation",
+      "level": 2,
+      "title": "11. User Agent Automation"
+    },
+    {
+      "id": "sctn-automation-webdriver-capability",
+      "level": 3,
+      "title": "WebAuthn WebDriver Extension Capability",
+      "number": "11.1"
+    },
+    {
+      "id": "sctn-authenticator-extension-capabilities",
+      "level": 4,
+      "title": "Authenticator Extension Capabilities",
+      "number": "11.1.1"
+    },
+    {
+      "id": "sctn-automation-virtual-authenticators",
+      "level": 3,
+      "title": "Virtual Authenticators",
+      "number": "11.2"
+    },
+    {
+      "id": "sctn-automation-add-virtual-authenticator",
+      "level": 3,
+      "title": "Add Virtual Authenticator",
+      "number": "11.3"
+    },
+    {
+      "id": "sctn-automation-remove-virtual-authenticator",
+      "level": 3,
+      "title": "Remove Virtual Authenticator",
+      "number": "11.4"
+    },
+    {
+      "id": "sctn-automation-add-credential",
+      "level": 3,
+      "title": "Add Credential",
+      "number": "11.5"
+    },
+    {
+      "id": "sctn-automation-get-credentials",
+      "level": 3,
+      "title": "Get Credentials",
+      "number": "11.6"
+    },
+    {
+      "id": "sctn-automation-remove-credential",
+      "level": 3,
+      "title": "Remove Credential",
+      "number": "11.7"
+    },
+    {
+      "id": "sctn-automation-remove-all-credentials",
+      "level": 3,
+      "title": "Remove All Credentials",
+      "number": "11.8"
+    },
+    {
+      "id": "sctn-automation-set-user-verified",
+      "level": 3,
+      "title": "Set User Verified",
+      "number": "11.9"
+    },
+    {
+      "id": "sctn-IANA",
+      "level": 2,
+      "title": "12. IANA Considerations"
+    },
+    {
+      "id": "sctn-att-fmt-reg-update",
+      "level": 3,
+      "title": "WebAuthn Attestation Statement Format Identifier Registrations Updates",
+      "number": "12.1"
+    },
+    {
+      "id": "sctn-att-fmt-reg",
+      "level": 3,
+      "title": "WebAuthn Attestation Statement Format Identifier Registrations",
+      "number": "12.2"
+    },
+    {
+      "id": "sctn-extensions-reg-update",
+      "level": 3,
+      "title": "WebAuthn Extension Identifier Registrations Updates",
+      "number": "12.3"
+    },
+    {
+      "id": "sctn-extensions-reg",
+      "level": 3,
+      "title": "WebAuthn Extension Identifier Registrations",
+      "number": "12.4"
+    },
+    {
+      "id": "sctn-security-considerations",
+      "level": 2,
+      "title": "13. Security Considerations"
+    },
+    {
+      "id": "sctn-credentialIdSecurity",
+      "level": 3,
+      "title": "Credential ID Unsigned",
+      "number": "13.1"
+    },
+    {
+      "id": "sctn-client-authenticator-proximity",
+      "level": 3,
+      "title": "Physical Proximity between Client and Authenticator",
+      "number": "13.2"
+    },
+    {
+      "id": "sctn-security-considerations-authenticator",
+      "level": 3,
+      "title": "Security considerations for authenticators",
+      "number": "13.3"
+    },
+    {
+      "id": "sctn-cert-hierarchy",
+      "level": 4,
+      "title": "Attestation Certificate Hierarchy",
+      "number": "13.3.1"
+    },
+    {
+      "id": "sctn-ca-compromise",
+      "level": 4,
+      "title": "Attestation Certificate and Attestation Certificate CA Compromise",
+      "number": "13.3.2"
+    },
+    {
+      "id": "sctn-security-considerations-rp",
+      "level": 3,
+      "title": "Security considerations for Relying Parties",
+      "number": "13.4"
+    },
+    {
+      "id": "sctn-rp-benefits",
+      "level": 4,
+      "title": "Security Benefits for WebAuthn Relying Parties",
+      "number": "13.4.1"
+    },
+    {
+      "id": "sctn-seccons-visibility",
+      "level": 4,
+      "title": "Visibility Considerations for Embedded Usage",
+      "number": "13.4.2"
+    },
+    {
+      "id": "sctn-cryptographic-challenges",
+      "level": 4,
+      "title": "Cryptographic Challenges",
+      "number": "13.4.3"
+    },
+    {
+      "id": "sctn-attestation-limitations",
+      "level": 4,
+      "title": "Attestation Limitations",
+      "number": "13.4.4"
+    },
+    {
+      "id": "sctn-revoked-attestation-certificates",
+      "level": 4,
+      "title": "Revoked Attestation Certificates",
+      "number": "13.4.5"
+    },
+    {
+      "id": "sctn-credential-loss-key-mobility",
+      "level": 4,
+      "title": "Credential Loss and Key Mobility",
+      "number": "13.4.6"
+    },
+    {
+      "id": "sctn-unprotected-account-detection",
+      "level": 4,
+      "title": "Unprotected account detection",
+      "number": "13.4.7"
+    },
+    {
+      "id": "sctn-privacy-considerations",
+      "level": 2,
+      "title": "14. Privacy Considerations"
+    },
+    {
+      "id": "sctn-privacy-attacks",
+      "level": 3,
+      "title": "De-anonymization Prevention Measures",
+      "number": "14.1"
+    },
+    {
+      "id": "sctn-non-correlatable-credentials",
+      "level": 3,
+      "title": "Anonymous, Scoped, Non-correlatable Public Key Credentials",
+      "number": "14.2"
+    },
+    {
+      "id": "sctn-biometric-privacy",
+      "level": 3,
+      "title": "Authenticator-local Biometric Recognition",
+      "number": "14.3"
+    },
+    {
+      "id": "sctn-privacy-considerations-authenticator",
+      "level": 3,
+      "title": "Privacy considerations for authenticators",
+      "number": "14.4"
+    },
+    {
+      "id": "sctn-attestation-privacy",
+      "level": 4,
+      "title": "Attestation Privacy",
+      "number": "14.4.1"
+    },
+    {
+      "id": "sctn-pii-privacy",
+      "level": 4,
+      "title": "Privacy of personally identifying information Stored in Authenticators",
+      "number": "14.4.2"
+    },
+    {
+      "id": "sctn-privacy-considerations-client",
+      "level": 3,
+      "title": "Privacy considerations for clients",
+      "number": "14.5"
+    },
+    {
+      "id": "sctn-make-credential-privacy",
+      "level": 4,
+      "title": "Registration Ceremony Privacy",
+      "number": "14.5.1"
+    },
+    {
+      "id": "sctn-assertion-privacy",
+      "level": 4,
+      "title": "Authentication Ceremony Privacy",
+      "number": "14.5.2"
+    },
+    {
+      "id": "sctn-os-account-privacy",
+      "level": 4,
+      "title": "Privacy Between Operating System Accounts",
+      "number": "14.5.3"
+    },
+    {
+      "id": "sctn-privacy-considerations-rp",
+      "level": 3,
+      "title": "Privacy considerations for Relying Parties",
+      "number": "14.6"
+    },
+    {
+      "id": "sctn-user-handle-privacy",
+      "level": 4,
+      "title": "User Handle Contents",
+      "number": "14.6.1"
+    },
+    {
+      "id": "sctn-username-enumeration",
+      "level": 4,
+      "title": "Username Enumeration",
+      "number": "14.6.2"
+    },
+    {
+      "id": "sctn-credential-id-privacy-leak",
+      "level": 4,
+      "title": "Privacy leak via credential IDs",
+      "number": "14.6.3"
+    },
+    {
+      "id": "sctn-accessiblility-considerations",
+      "level": 2,
+      "title": "15. Accessibility Considerations"
+    },
+    {
+      "id": "sctn-acknowledgements",
+      "level": 2,
+      "title": "16. Acknowledgements"
+    },
+    {
+      "id": "index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

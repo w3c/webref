@@ -1,0 +1,405 @@
+{
+  "spec": {
+    "title": "Open Screen Protocol",
+    "url": "https://w3c.github.io/openscreenprotocol/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": 1,
+      "title": "Open Screen Protocol"
+    },
+    {
+      "id": "subtitle",
+      "level": 2,
+      "title": "Editor’s Draft, 18 March 2021"
+    },
+    {
+      "id": "abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.1"
+    },
+    {
+      "id": "requirements",
+      "level": 2,
+      "title": "Requirements",
+      "number": "2"
+    },
+    {
+      "id": "requirements-general",
+      "level": 3,
+      "title": "General Requirements",
+      "number": "2.1"
+    },
+    {
+      "id": "requirements-presentation-api",
+      "level": 3,
+      "title": "Presentation API Requirements",
+      "number": "2.2"
+    },
+    {
+      "id": "requirements-remote-playback",
+      "level": 3,
+      "title": "Remote Playback API Requirements",
+      "number": "2.3"
+    },
+    {
+      "id": "requirements-non-functional",
+      "level": 3,
+      "title": "Non-Functional Requirements",
+      "number": "2.4"
+    },
+    {
+      "id": "discovery",
+      "level": 2,
+      "title": "Discovery with mDNS",
+      "number": "3"
+    },
+    {
+      "id": "transport",
+      "level": 2,
+      "title": "Transport and metadata discovery with QUIC",
+      "number": "4"
+    },
+    {
+      "id": "tls-13",
+      "level": 3,
+      "title": "TLS 1.3",
+      "number": "4.1"
+    },
+    {
+      "id": "certificates",
+      "level": 3,
+      "title": "Agent Certificates",
+      "number": "4.2"
+    },
+    {
+      "id": "metadata",
+      "level": 3,
+      "title": "Metadata Discovery",
+      "number": "4.3"
+    },
+    {
+      "id": "messages",
+      "level": 2,
+      "title": "Messages delivery using CBOR and QUIC streams",
+      "number": "5"
+    },
+    {
+      "id": "message-compatibility",
+      "level": 3,
+      "title": "Type Key Backwards Compatibility",
+      "number": "5.1"
+    },
+    {
+      "id": "authentication",
+      "level": 2,
+      "title": "Authentication",
+      "number": "6"
+    },
+    {
+      "id": "authentication-with-spake2",
+      "level": 3,
+      "title": "Authentication with SPAKE2",
+      "number": "6.1"
+    },
+    {
+      "id": "presentation-protocol",
+      "level": 2,
+      "title": "Presentation Protocol",
+      "number": "7"
+    },
+    {
+      "id": "presentation-api",
+      "level": 3,
+      "title": "Presentation API",
+      "number": "7.1"
+    },
+    {
+      "id": "remote-playback-protocol",
+      "level": 2,
+      "title": "Remote Playback Protocol",
+      "number": "8"
+    },
+    {
+      "id": "remote-playback-state-and-controls",
+      "level": 3,
+      "title": "Remote Playback State and Controls",
+      "number": "8.1"
+    },
+    {
+      "id": "remote-playback-api",
+      "level": 3,
+      "title": "Remote Playback API",
+      "number": "8.2"
+    },
+    {
+      "id": "streaming-protocol",
+      "level": 2,
+      "title": "Streaming Protocol",
+      "number": "9"
+    },
+    {
+      "id": "streaming-protocol-capabilities",
+      "level": 3,
+      "title": "Streaming Protocol Capabilities",
+      "number": "9.1"
+    },
+    {
+      "id": "streaming-sessions",
+      "level": 3,
+      "title": "Sessions",
+      "number": "9.2"
+    },
+    {
+      "id": "streaming-audio",
+      "level": 3,
+      "title": "Audio",
+      "number": "9.3"
+    },
+    {
+      "id": "streaming-video",
+      "level": 3,
+      "title": "Video",
+      "number": "9.4"
+    },
+    {
+      "id": "streaming-data",
+      "level": 3,
+      "title": "Data",
+      "number": "9.5"
+    },
+    {
+      "id": "streaming-feedback",
+      "level": 3,
+      "title": "Feedback",
+      "number": "9.6"
+    },
+    {
+      "id": "streaming-stats",
+      "level": 3,
+      "title": "Stats",
+      "number": "9.7"
+    },
+    {
+      "id": "requests-responses-watches",
+      "level": 2,
+      "title": "10. Requests, Responses, and Watches"
+    },
+    {
+      "id": "protocol-extensions",
+      "level": 2,
+      "title": "11. Protocol Extensions"
+    },
+    {
+      "id": "protocol-extension-fields",
+      "level": 3,
+      "title": "Protocol Extension Fields",
+      "number": "11.1"
+    },
+    {
+      "id": "security-privacy",
+      "level": 2,
+      "title": "12. Security and Privacy"
+    },
+    {
+      "id": "threat-models",
+      "level": 3,
+      "title": "Threat Models",
+      "number": "12.1"
+    },
+    {
+      "id": "passive-network-attackers",
+      "level": 4,
+      "title": "Passive Network Attackers",
+      "number": "12.1.1"
+    },
+    {
+      "id": "active-network-attackers",
+      "level": 4,
+      "title": "Active Network Attackers",
+      "number": "12.1.2"
+    },
+    {
+      "id": "denial-of-service",
+      "level": 4,
+      "title": "Denial of Service",
+      "number": "12.1.3"
+    },
+    {
+      "id": "same-origin-policy-violations",
+      "level": 4,
+      "title": "Same-Origin Policy Violations",
+      "number": "12.1.4"
+    },
+    {
+      "id": "security-privacy-questions",
+      "level": 3,
+      "title": "Open Screen Protocol Security and Privacy Considerations",
+      "number": "12.2"
+    },
+    {
+      "id": "personally-identifiable-information",
+      "level": 4,
+      "title": "Personally Identifiable Information & High-Value Data",
+      "number": "12.2.1"
+    },
+    {
+      "id": "cross-origin-state",
+      "level": 4,
+      "title": "Cross Origin State Considerations",
+      "number": "12.2.2"
+    },
+    {
+      "id": "origin-access-devices",
+      "level": 4,
+      "title": "Origin Access to Other Devices",
+      "number": "12.2.3"
+    },
+    {
+      "id": "incognito-mode",
+      "level": 4,
+      "title": "Incognito Mode",
+      "number": "12.2.4"
+    },
+    {
+      "id": "persistent-state",
+      "level": 4,
+      "title": "Persistent State",
+      "number": "12.2.5"
+    },
+    {
+      "id": "other-considerations",
+      "level": 4,
+      "title": "Other Considerations",
+      "number": "12.2.6"
+    },
+    {
+      "id": "presentation-api-considerations",
+      "level": 3,
+      "title": "Presentation API Considerations",
+      "number": "12.3"
+    },
+    {
+      "id": "remote-playback-considerations",
+      "level": 3,
+      "title": "Remote Playback API Considerations",
+      "number": "12.4"
+    },
+    {
+      "id": "security-mitigations",
+      "level": 3,
+      "title": "Mitigation Strategies",
+      "number": "12.5"
+    },
+    {
+      "id": "local-passive-mitigations",
+      "level": 4,
+      "title": "Local passive network attackers",
+      "number": "12.5.1"
+    },
+    {
+      "id": "local-active-mitigations",
+      "level": 4,
+      "title": "Local active network attackers",
+      "number": "12.5.2"
+    },
+    {
+      "id": "remote-active-mitigations",
+      "level": 4,
+      "title": "Remote active network attackers",
+      "number": "12.5.3"
+    },
+    {
+      "id": "denial-of-service-mitigations",
+      "level": 4,
+      "title": "Denial of service",
+      "number": "12.5.4"
+    },
+    {
+      "id": "malicious-input-mitigations",
+      "level": 4,
+      "title": "Malicious input",
+      "number": "12.5.5"
+    },
+    {
+      "id": "security-ui",
+      "level": 3,
+      "title": "User Interface Considerations",
+      "number": "12.6"
+    },
+    {
+      "id": "instance-names",
+      "level": 4,
+      "title": "Instance and Display Names",
+      "number": "12.6.1"
+    },
+    {
+      "id": "appendix-a",
+      "level": 2,
+      "title": "Appendix A: Messages"
+    },
+    {
+      "id": "appendix-b",
+      "level": 2,
+      "title": "Appendix B: Message Type Key Ranges"
+    },
+    {
+      "id": "index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
