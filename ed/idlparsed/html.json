@@ -15334,6 +15334,22 @@
         },
         "extAttrs": []
       },
+      "PredefinedColorSpace": {
+        "fragment": "enum PredefinedColorSpace { \"srgb\", \"display-p3\" };",
+        "type": "enum",
+        "name": "PredefinedColorSpace",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "display-p3"
+          }
+        ],
+        "extAttrs": []
+      },
       "CanvasFillRule": {
         "fragment": "enum CanvasFillRule { \"nonzero\", \"evenodd\" };",
         "type": "enum",
@@ -15351,7 +15367,7 @@
         "extAttrs": []
       },
       "CanvasRenderingContext2DSettings": {
-        "fragment": "dictionary CanvasRenderingContext2DSettings {\n  boolean alpha = true;\n  boolean desynchronized = false;\n};",
+        "fragment": "dictionary CanvasRenderingContext2DSettings {\n  boolean alpha = true;\n  boolean desynchronized = false;\n  PredefinedColorSpace colorSpace = \"srgb\";\n};",
         "type": "dictionary",
         "name": "CanvasRenderingContext2DSettings",
         "inheritance": null,
@@ -15389,6 +15405,24 @@
             "default": {
               "type": "boolean",
               "value": false
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "colorSpace",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PredefinedColorSpace"
+            },
+            "default": {
+              "type": "string",
+              "value": "srgb"
             },
             "required": false
           }
@@ -17877,7 +17911,7 @@
         "partial": false
       },
       "CanvasImageData": {
-        "fragment": "interface mixin CanvasImageData {\n  // pixel manipulation\n  ImageData createImageData([EnforceRange] long sw, [EnforceRange] long sh);\n  ImageData createImageData(ImageData imagedata);\n  ImageData getImageData([EnforceRange] long sx, [EnforceRange] long sy, [EnforceRange] long sw, [EnforceRange] long sh);\n  undefined putImageData(ImageData imagedata, [EnforceRange] long dx, [EnforceRange] long dy);\n  undefined putImageData(ImageData imagedata, [EnforceRange] long dx, [EnforceRange] long dy, [EnforceRange] long dirtyX, [EnforceRange] long dirtyY, [EnforceRange] long dirtyWidth, [EnforceRange] long dirtyHeight);\n};",
+        "fragment": "interface mixin CanvasImageData {\n  // pixel manipulation\n  ImageData createImageData([EnforceRange] long sw, [EnforceRange] long sh, optional ImageDataSettings settings = {});\n  ImageData createImageData(ImageData imagedata);\n  ImageData getImageData([EnforceRange] long sx, [EnforceRange] long sy, [EnforceRange] long sw, [EnforceRange] long sh, optional ImageDataSettings settings = {});\n  undefined putImageData(ImageData imagedata, [EnforceRange] long dx, [EnforceRange] long dy);\n  undefined putImageData(ImageData imagedata, [EnforceRange] long dx, [EnforceRange] long dy, [EnforceRange] long dirtyX, [EnforceRange] long dirtyY, [EnforceRange] long dirtyWidth, [EnforceRange] long dirtyHeight);\n};",
         "type": "interface mixin",
         "name": "CanvasImageData",
         "inheritance": null,
@@ -17938,6 +17972,24 @@
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "settings",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ImageDataSettings"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -18078,6 +18130,24 @@
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "settings",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ImageDataSettings"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -19984,8 +20054,33 @@
         ],
         "partial": false
       },
+      "ImageDataSettings": {
+        "fragment": "dictionary ImageDataSettings {\n  PredefinedColorSpace colorSpace;\n};",
+        "type": "dictionary",
+        "name": "ImageDataSettings",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "colorSpace",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PredefinedColorSpace"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "ImageData": {
-        "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface ImageData {\n  constructor(unsigned long sw, unsigned long sh);\n  constructor(Uint8ClampedArray data, unsigned long sw, optional unsigned long sh);\n\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n  readonly attribute Uint8ClampedArray data;\n};",
+        "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface ImageData {\n  constructor(unsigned long sw, unsigned long sh, optional ImageDataSettings settings = {});\n  constructor(Uint8ClampedArray data, unsigned long sw, optional unsigned long sh, optional ImageDataSettings settings = {});\n\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n  readonly attribute Uint8ClampedArray data;\n  readonly attribute PredefinedColorSpace colorSpace;\n};",
         "type": "interface",
         "name": "ImageData",
         "inheritance": null,
@@ -20023,6 +20118,24 @@
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "settings",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ImageDataSettings"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -20078,6 +20191,24 @@
                 "default": null,
                 "optional": true,
                 "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "settings",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ImageDataSettings"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
               }
             ],
             "extAttrs": []
@@ -20122,6 +20253,21 @@
               "nullable": false,
               "union": false,
               "idlType": "Uint8ClampedArray"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "colorSpace",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PredefinedColorSpace"
             },
             "extAttrs": [],
             "special": "",
@@ -38113,7 +38259,9 @@
         "BlobCallback",
         "OffscreenCanvas"
       ],
-      "CanvasRenderingContext2DSettings": [],
+      "CanvasRenderingContext2DSettings": [
+        "PredefinedColorSpace"
+      ],
       "CanvasRenderingContext2D": [
         "HTMLCanvasElement",
         "CanvasRenderingContext2DSettings",
@@ -38166,7 +38314,8 @@
         "CanvasImageSource"
       ],
       "CanvasImageData": [
-        "ImageData"
+        "ImageData",
+        "ImageDataSettings"
       ],
       "CanvasPathDrawingStyles": [
         "CanvasLineCap",
@@ -38187,7 +38336,13 @@
         "DOMMatrix2DInit"
       ],
       "TextMetrics": [],
-      "ImageData": [],
+      "ImageDataSettings": [
+        "PredefinedColorSpace"
+      ],
+      "ImageData": [
+        "ImageDataSettings",
+        "PredefinedColorSpace"
+      ],
       "Path2D": [
         "Path2D",
         "DOMMatrix2DInit",

@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% May 03, 2021
+% May 04, 2021
 
 390 specifications were crawled in this report.
 
@@ -299,8 +299,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `"round"` with type `enum-value` for [`CanvasLineJoin`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinejoin)
     * `"bevel"` with type `enum-value` for [`CanvasLineJoin`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinejoin)
     * `"miter"` with type `enum-value` for [`CanvasLineJoin`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinejoin)
-    * `constructor(sw, sh)` with type `constructor` for [`ImageData`](https://html.spec.whatwg.org/multipage/canvas.html#imagedata), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
-    * `constructor(data, sw, sh)` with type `constructor` for [`ImageData`](https://html.spec.whatwg.org/multipage/canvas.html#imagedata), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
+    * `constructor(sw, sh, settings)` with type `constructor` for [`ImageData`](https://html.spec.whatwg.org/multipage/canvas.html#imagedata), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
+    * `constructor(data, sw, sh, settings)` with type `constructor` for [`ImageData`](https://html.spec.whatwg.org/multipage/canvas.html#imagedata), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `constructor(path)` with type `constructor` for [`Path2D`](https://html.spec.whatwg.org/multipage/canvas.html#path2d), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `type` with type `dict-member` for [`ImageEncodeOptions`](https://html.spec.whatwg.org/multipage/canvas.html#imageencodeoptions), but found [`type`](https://html.spec.whatwg.org/multipage/infrastructure.html#concept-response-type) with type `dfn`
     * `quality` with type `dict-member` for [`ImageEncodeOptions`](https://html.spec.whatwg.org/multipage/canvas.html#imageencodeoptions), but found [`quality`](https://html.spec.whatwg.org/multipage/canvas.html#image-encode-options-quality) with type `dfn`
@@ -1097,8 +1097,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `drawImage(image, dx, dy)` with type `method` for [`CanvasDrawImage`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage), but found [`drawImage`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage) with type `method` for `CanvasDrawImage`
     * `drawImage(image, dx, dy, dw, dh)` with type `method` for [`CanvasDrawImage`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage), but found [`drawImage`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage) with type `method` for `CanvasDrawImage`
     * `drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)` with type `method` for [`CanvasDrawImage`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage), but found [`drawImage`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage) with type `method` for `CanvasDrawImage`
-    * `createImageData(sw, sh)` with type `method` for [`CanvasImageData`](https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata), but found [`createImageData()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createimagedata) with type `method` for `CanvasImageData`
-    * `createImageData(imagedata)` with type `method` for [`CanvasImageData`](https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata), but found [`createImageData()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createimagedata) with type `method` for `CanvasImageData`
     * `putImageData(imagedata, dx, dy)` with type `method` for [`CanvasImageData`](https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata), but found [`putImageData()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-putimagedata) with type `method` for `CanvasImageData`
     * `putImageData(imagedata, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight)` with type `method` for [`CanvasImageData`](https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata), but found [`putImageData()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-putimagedata) with type `method` for `CanvasImageData`
     * `setLineDash(segments)` with type `method` for [`CanvasPathDrawingStyles`](https://html.spec.whatwg.org/multipage/canvas.html#canvaspathdrawingstyles), but found [`setLineDash()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-setlinedash) with type `method` for `CanvasPathDrawingStyles`
@@ -1129,7 +1127,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `setStreams(...streams)` with type `method` for [`RTCRtpSender`](https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender), but found [`setStreams()`](https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-setstreams) with type `method` for `RTCRtpSender`
     * `addTrack(track, ...streams)` with type `method` for [`RTCPeerConnection`](https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection), but found [`addTrack()`](https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addtrack) with type `method` for `RTCPeerConnection`
 
-=> 60 properties without definition found in 2 specifications
+=> 58 properties without definition found in 2 specifications
 
 
 ## Missing references based on document links
@@ -3438,6 +3436,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://webassembly.github.io/spec/js-api/#compile-a-webassembly-module`](https://webassembly.github.io/spec/js-api/#compile-a-webassembly-module)
      * [`https://webassembly.github.io/spec/js-api/#exported-function`](https://webassembly.github.io/spec/js-api/#exported-function)
      * [`https://fetch.spec.whatwg.org/#concept-body-consume-body`](https://fetch.spec.whatwg.org/#concept-body-consume-body)
+- [WebCodecs](https://w3c.github.io/webcodecs/):
+     * [`https://html.spec.whatwg.org/#live`](https://html.spec.whatwg.org/#live)
 - [WebDriver](https://w3c.github.io/webdriver/):
      * [`https://html.spec.whatwg.org/#2d-context-creation-algorithm`](https://html.spec.whatwg.org/#2d-context-creation-algorithm)
      * [`https://html.spec.whatwg.org/#a-serialisation-of-the-bitmap-as-a-file`](https://html.spec.whatwg.org/#a-serialisation-of-the-bitmap-as-a-file)
@@ -3721,7 +3721,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1239 problematic external links found in 193 specifications
+=> 1240 problematic external links found in 194 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -5425,8 +5425,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webdriver/#dfn-intermediary-node`](https://w3c.github.io/webdriver/#dfn-intermediary-node)
      * [`https://w3c.github.io/webdriver/#dfn-get-a-property`](https://w3c.github.io/webdriver/#dfn-get-a-property)
      * [`https://w3c.github.io/webdriver/#dfn-window-handle`](https://w3c.github.io/webdriver/#dfn-window-handle)
-- [WebGPU](https://gpuweb.github.io/gpuweb/):
-     * [`https://html.spec.whatwg.org/#cross-origin-isolated`](https://html.spec.whatwg.org/#cross-origin-isolated)
 - [WebOTP API](https://wicg.github.io/web-otp/):
      * [`https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors`](https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/):
@@ -5446,7 +5444,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 574 problematic external links found in 152 specifications
+=> 573 problematic external links found in 151 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

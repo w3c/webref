@@ -59,6 +59,78 @@
       "definedIn": "dt"
     },
     {
+      "id": "progressive-image",
+      "href": "https://w3c.github.io/webcodecs/#progressive-image",
+      "linkingText": [
+        "Progressive Image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "progressive-image-frame-generation",
+      "href": "https://w3c.github.io/webcodecs/#progressive-image-frame-generation",
+      "linkingText": [
+        "Progressive Image Frame Generation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "primary-image-track",
+      "href": "https://w3c.github.io/webcodecs/#primary-image-track",
+      "linkingText": [
+        "Primary Image Track"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "codec-processing-model",
+      "href": "https://w3c.github.io/webcodecs/#codec-processing-model",
+      "linkingText": [
+        "Codec Processing Model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "codec-processing-model-section",
+        "title": "Codec Processing Model",
+        "number": "2"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "control-thread",
       "href": "https://w3c.github.io/webcodecs/#control-thread",
       "linkingText": [
@@ -1153,6 +1225,24 @@
       "href": "https://w3c.github.io/webcodecs/#output-videoframes",
       "linkingText": [
         "Output VideoFrames"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-algorithms",
+        "title": "Algorithms",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "create-a-videoframe",
+      "href": "https://w3c.github.io/webcodecs/#create-a-videoframe",
+      "linkingText": [
+        "Create a VideoFrame"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -5526,6 +5616,1566 @@
         "id": "raw-media-algorithms",
         "title": "Algorithms",
         "number": "9.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder",
+      "linkingText": [
+        "ImageDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-interface",
+        "title": "ImageDecoder Interface",
+        "number": "10.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecoder-imagedecoder-init-init",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-imagedecoder-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ImageDecoder/ImageDecoder(init)",
+        "ImageDecoder/constructor(init)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-interface",
+        "title": "ImageDecoder Interface",
+        "number": "10.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecoder-decode-options-options",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-decode-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ImageDecoder/decode(options)",
+        "ImageDecoder/decode()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-interface",
+        "title": "ImageDecoder Interface",
+        "number": "10.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecoder-istypesupported-type-type",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-istypesupported-type-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ImageDecoder/isTypeSupported(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-interface",
+        "title": "ImageDecoder Interface",
+        "number": "10.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecoder-imagetracklist-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-imagetracklist-slot",
+      "linkingText": [
+        "[[ImageTrackList]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-complete-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-complete-slot",
+      "linkingText": [
+        "[[complete]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-completed-promise-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-completed-promise-slot",
+      "linkingText": [
+        "[[completed promise]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-codec-implementation-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-codec-implementation-slot",
+      "linkingText": [
+        "[[codec implementation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-encoded-data-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-encoded-data-slot",
+      "linkingText": [
+        "[[encoded data]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-prefer-animation-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-prefer-animation-slot",
+      "linkingText": [
+        "[[prefer animation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-pending-decode-promises-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-pending-decode-promises-slot",
+      "linkingText": [
+        "[[pending decode promises]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-internal-selected-track-index-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-internal-selected-track-index-slot",
+      "linkingText": [
+        "[[internal selected track index]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-tracks-established-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-tracks-established-slot",
+      "linkingText": [
+        "[[tracks established]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-closed-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-closed-slot",
+      "linkingText": [
+        "[[closed]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-progressive-frame-generations-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-progressive-frame-generations-slot",
+      "linkingText": [
+        "[[progressive frame generations]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-imagedecoder",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-imagedecoder",
+      "linkingText": [
+        "ImageDecoder(init)",
+        "constructor(init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-constructor",
+        "title": "Constructor",
+        "number": "10.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "configure-the-image-decoder",
+      "href": "https://w3c.github.io/webcodecs/#configure-the-image-decoder",
+      "linkingText": [
+        "configure the image decoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-constructor",
+        "title": "Constructor",
+        "number": "10.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "decode-track-metadata",
+      "href": "https://w3c.github.io/webcodecs/#decode-track-metadata",
+      "linkingText": [
+        "decode track metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-constructor",
+        "title": "Constructor",
+        "number": "10.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-imagedecoder-complete",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-complete",
+      "linkingText": [
+        "complete"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-attributes",
+        "title": "Attributes",
+        "number": "10.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-completed",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-completed",
+      "linkingText": [
+        "completed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-attributes",
+        "title": "Attributes",
+        "number": "10.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-tracks",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-tracks",
+      "linkingText": [
+        "tracks"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-attributes",
+        "title": "Attributes",
+        "number": "10.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-decode",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-decode",
+      "linkingText": [
+        "decode(options)",
+        "decode()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-methods",
+        "title": "Methods",
+        "number": "10.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-reset",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-reset",
+      "linkingText": [
+        "reset()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-methods",
+        "title": "Methods",
+        "number": "10.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-close",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-methods",
+        "title": "Methods",
+        "number": "10.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-istypesupported",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoder-istypesupported",
+      "linkingText": [
+        "isTypeSupported(type)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-methods",
+        "title": "Methods",
+        "number": "10.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-fetch-stream-data-loop",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder-fetch-stream-data-loop",
+      "linkingText": [
+        "Fetch Stream Data Loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-establish-tracks",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder-establish-tracks",
+      "linkingText": [
+        "Establish Tracks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-get-default-selected-track-index",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder-get-default-selected-track-index",
+      "linkingText": [
+        "Get Default Selected Track Index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-update-tracks",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder-update-tracks",
+      "linkingText": [
+        "Update Tracks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "track-update-struct",
+      "href": "https://w3c.github.io/webcodecs/#track-update-struct",
+      "linkingText": [
+        "track update struct"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "track-update-struct-track-index",
+      "href": "https://w3c.github.io/webcodecs/#track-update-struct-track-index",
+      "linkingText": [
+        "track index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "track update struct"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "track-update-struct-frame-count",
+      "href": "https://w3c.github.io/webcodecs/#track-update-struct-frame-count",
+      "linkingText": [
+        "frame count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "track update struct"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "imagedecoder-decode-complete-frame",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder-decode-complete-frame",
+      "linkingText": [
+        "Decode Complete Frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-decode-progressive-frame",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder-decode-progressive-frame",
+      "linkingText": [
+        "Decode Progressive Frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-resolve-decode",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder-resolve-decode",
+      "linkingText": [
+        "Resolve Decode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-reject-infeasible-decode",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder-reject-infeasible-decode",
+      "linkingText": [
+        "Reject Infeasible Decode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-fatally-reject-bad-data",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder-fatally-reject-bad-data",
+      "linkingText": [
+        "Fatally Reject Bad Data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-check-type-support",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder-check-type-support",
+      "linkingText": [
+        "Check Type Support"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-reset-imagedecoder",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder-reset-imagedecoder",
+      "linkingText": [
+        "Reset ImageDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-close-imagedecoder",
+      "href": "https://w3c.github.io/webcodecs/#imagedecoder-close-imagedecoder",
+      "linkingText": [
+        "Close ImageDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedefdef-imagebuffersource",
+      "href": "https://w3c.github.io/webcodecs/#typedefdef-imagebuffersource",
+      "linkingText": [
+        "ImageBufferSource"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-imagedecoderinit",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-imagedecoderinit",
+      "linkingText": [
+        "ImageDecoderInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valid-imagedecoderinit",
+      "href": "https://w3c.github.io/webcodecs/#valid-imagedecoderinit",
+      "linkingText": [
+        "valid ImageDecoderInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-image-mime-type",
+      "href": "https://w3c.github.io/webcodecs/#valid-image-mime-type",
+      "linkingText": [
+        "valid image MIME type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-imagedecoderinit-type",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderinit-data",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderinit-premultiplyalpha",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-premultiplyalpha",
+      "linkingText": [
+        "premultiplyAlpha"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderinit-colorspaceconversion",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-colorspaceconversion",
+      "linkingText": [
+        "colorSpaceConversion"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderinit-desiredwidth",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-desiredwidth",
+      "linkingText": [
+        "desiredWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderinit-desiredheight",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-desiredheight",
+      "linkingText": [
+        "desiredHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderinit-preferanimation",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderinit-preferanimation",
+      "linkingText": [
+        "preferAnimation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-imagedecodeoptions",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-imagedecodeoptions",
+      "linkingText": [
+        "ImageDecodeOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecodeoptions-interface",
+        "title": "ImageDecodeOptions Interface",
+        "number": "10.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecodeoptions-frameindex",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecodeoptions-frameindex",
+      "linkingText": [
+        "frameIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecodeOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecodeoptions-interface",
+        "title": "ImageDecodeOptions Interface",
+        "number": "10.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecodeoptions-completeframesonly",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecodeoptions-completeframesonly",
+      "linkingText": [
+        "completeFramesOnly"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecodeOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecodeoptions-interface",
+        "title": "ImageDecodeOptions Interface",
+        "number": "10.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-imagedecoderesult",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-imagedecoderesult",
+      "linkingText": [
+        "ImageDecodeResult"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderesult-interface",
+        "title": "ImageDecodeResult Interface",
+        "number": "10.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecoderesult-image",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderesult-image",
+      "linkingText": [
+        "image"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecodeResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderesult-interface",
+        "title": "ImageDecodeResult Interface",
+        "number": "10.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderesult-complete",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagedecoderesult-complete",
+      "linkingText": [
+        "complete"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecodeResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderesult-interface",
+        "title": "ImageDecodeResult Interface",
+        "number": "10.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagetracklist",
+      "href": "https://w3c.github.io/webcodecs/#imagetracklist",
+      "linkingText": [
+        "ImageTrackList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-interface",
+        "title": "ImageTrackList Interface",
+        "number": "10.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagetracklist-__getter__-index-index",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetracklist-__getter__-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ImageTrackList/__getter__(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-interface",
+        "title": "ImageTrackList Interface",
+        "number": "10.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagetracklist-ready-promise-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetracklist-ready-promise-slot",
+      "linkingText": [
+        "[[ready promise]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetracklist-track-list-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetracklist-track-list-slot",
+      "linkingText": [
+        "[[track list]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetracklist-selected-index-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetracklist-selected-index-slot",
+      "linkingText": [
+        "[[selected index]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetracklist-ready",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetracklist-ready",
+      "linkingText": [
+        "ready"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-attributes",
+        "title": "Attributes",
+        "number": "10.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetracklist-length",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetracklist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-attributes",
+        "title": "Attributes",
+        "number": "10.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetracklist-selectedindex",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetracklist-selectedindex",
+      "linkingText": [
+        "selectedIndex"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-attributes",
+        "title": "Attributes",
+        "number": "10.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetracklist-selectedtrack",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetracklist-selectedtrack",
+      "linkingText": [
+        "selectedTrack"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-attributes",
+        "title": "Attributes",
+        "number": "10.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagetrack",
+      "href": "https://w3c.github.io/webcodecs/#imagetrack",
+      "linkingText": [
+        "ImageTrack"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-interface",
+        "title": "ImageTrack Interface",
+        "number": "10.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagetrack-imagedecoder-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetrack-imagedecoder-slot",
+      "linkingText": [
+        "[[ImageDecoder]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-imagetracklist-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetrack-imagetracklist-slot",
+      "linkingText": [
+        "[[ImageTrackList]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-animated-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetrack-animated-slot",
+      "linkingText": [
+        "[[animated]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-frame-count-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetrack-frame-count-slot",
+      "linkingText": [
+        "[[frame count]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-repetition-count-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetrack-repetition-count-slot",
+      "linkingText": [
+        "[[repetition count]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-selected-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetrack-selected-slot",
+      "linkingText": [
+        "[[selected]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-animated",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetrack-animated",
+      "linkingText": [
+        "animated"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-attributes",
+        "title": "Attributes",
+        "number": "10.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-framecount",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetrack-framecount",
+      "linkingText": [
+        "frameCount"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-attributes",
+        "title": "Attributes",
+        "number": "10.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-repetitioncount",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetrack-repetitioncount",
+      "linkingText": [
+        "repetitionCount"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-attributes",
+        "title": "Attributes",
+        "number": "10.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-onchange",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetrack-onchange",
+      "linkingText": [
+        "onchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-attributes",
+        "title": "Attributes",
+        "number": "10.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-selected",
+      "href": "https://w3c.github.io/webcodecs/#dom-imagetrack-selected",
+      "linkingText": [
+        "selected"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-attributes",
+        "title": "Attributes",
+        "number": "10.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-imagetrack-change",
+      "href": "https://w3c.github.io/webcodecs/#eventdef-imagetrack-change",
+      "linkingText": [
+        "change"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-eventsummary",
+        "title": "Event Summary",
+        "number": "10.7.3"
       },
       "definedIn": "dt"
     }

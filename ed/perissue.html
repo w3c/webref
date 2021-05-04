@@ -333,8 +333,8 @@
   <li><code>&quot;round&quot;</code> with type <code>enum-value</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvaslinejoin"><code>CanvasLineJoin</code></a></li>
   <li><code>&quot;bevel&quot;</code> with type <code>enum-value</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvaslinejoin"><code>CanvasLineJoin</code></a></li>
   <li><code>&quot;miter&quot;</code> with type <code>enum-value</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvaslinejoin"><code>CanvasLineJoin</code></a></li>
-  <li><code>constructor(sw, sh)</code> with type <code>constructor</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#imagedata"><code>ImageData</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor"><code>constructor</code></a> with type <code>dfn</code> for <code>custom element definition</code></li>
-  <li><code>constructor(data, sw, sh)</code> with type <code>constructor</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#imagedata"><code>ImageData</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor"><code>constructor</code></a> with type <code>dfn</code> for <code>custom element definition</code></li>
+  <li><code>constructor(sw, sh, settings)</code> with type <code>constructor</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#imagedata"><code>ImageData</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor"><code>constructor</code></a> with type <code>dfn</code> for <code>custom element definition</code></li>
+  <li><code>constructor(data, sw, sh, settings)</code> with type <code>constructor</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#imagedata"><code>ImageData</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor"><code>constructor</code></a> with type <code>dfn</code> for <code>custom element definition</code></li>
   <li><code>constructor(path)</code> with type <code>constructor</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#path2d"><code>Path2D</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor"><code>constructor</code></a> with type <code>dfn</code> for <code>custom element definition</code></li>
   <li><code>type</code> with type <code>dict-member</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#imageencodeoptions"><code>ImageEncodeOptions</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/infrastructure.html#concept-response-type"><code>type</code></a> with type <code>dfn</code></li>
   <li><code>quality</code> with type <code>dict-member</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#imageencodeoptions"><code>ImageEncodeOptions</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/canvas.html#image-encode-options-quality"><code>quality</code></a> with type <code>dfn</code></li>
@@ -1219,8 +1219,6 @@
   <li><code>drawImage(image, dx, dy)</code> with type <code>method</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage"><code>CanvasDrawImage</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage"><code>drawImage</code></a> with type <code>method</code> for <code>CanvasDrawImage</code></li>
   <li><code>drawImage(image, dx, dy, dw, dh)</code> with type <code>method</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage"><code>CanvasDrawImage</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage"><code>drawImage</code></a> with type <code>method</code> for <code>CanvasDrawImage</code></li>
   <li><code>drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)</code> with type <code>method</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage"><code>CanvasDrawImage</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage"><code>drawImage</code></a> with type <code>method</code> for <code>CanvasDrawImage</code></li>
-  <li><code>createImageData(sw, sh)</code> with type <code>method</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata"><code>CanvasImageData</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createimagedata"><code>createImageData()</code></a> with type <code>method</code> for <code>CanvasImageData</code></li>
-  <li><code>createImageData(imagedata)</code> with type <code>method</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata"><code>CanvasImageData</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createimagedata"><code>createImageData()</code></a> with type <code>method</code> for <code>CanvasImageData</code></li>
   <li><code>putImageData(imagedata, dx, dy)</code> with type <code>method</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata"><code>CanvasImageData</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-putimagedata"><code>putImageData()</code></a> with type <code>method</code> for <code>CanvasImageData</code></li>
   <li><code>putImageData(imagedata, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight)</code> with type <code>method</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata"><code>CanvasImageData</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-putimagedata"><code>putImageData()</code></a> with type <code>method</code> for <code>CanvasImageData</code></li>
   <li><code>setLineDash(segments)</code> with type <code>method</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvaspathdrawingstyles"><code>CanvasPathDrawingStyles</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-setlinedash"><code>setLineDash()</code></a> with type <code>method</code> for <code>CanvasPathDrawingStyles</code></li>
@@ -1254,7 +1252,7 @@
   <li><code>addTrack(track, ...streams)</code> with type <code>method</code> for <a href="https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection"><code>RTCPeerConnection</code></a>, but found <a href="https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addtrack"><code>addTrack()</code></a> with type <code>method</code> for <code>RTCPeerConnection</code></li>
   </ul></li>
   </ul>
-  <p>=&gt; 60 properties without definition found in 2 specifications</p>
+  <p>=&gt; 58 properties without definition found in 2 specifications</p>
   </section>
   <section id="missing-references-based-on-document-links" class="level2">
   <h2>Missing references based on document links</h2>
@@ -4286,6 +4284,10 @@
   <li><a href="https://webassembly.github.io/spec/js-api/#exported-function"><code>https://webassembly.github.io/spec/js-api/#exported-function</code></a></li>
   <li><a href="https://fetch.spec.whatwg.org/#concept-body-consume-body"><code>https://fetch.spec.whatwg.org/#concept-body-consume-body</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/webcodecs/">WebCodecs</a>:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/#live"><code>https://html.spec.whatwg.org/#live</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/webdriver/">WebDriver</a>:
   <ul>
   <li><a href="https://html.spec.whatwg.org/#2d-context-creation-algorithm"><code>https://html.spec.whatwg.org/#2d-context-creation-algorithm</code></a></li>
@@ -4603,7 +4605,7 @@
   <li><a href="https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm"><code>https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 1239 problematic external links found in 193 specifications</p>
+  <p>=&gt; 1240 problematic external links found in 194 specifications</p>
   </section>
   <section id="external-links-that-neither-target-definitions-nor-headings" class="level2">
   <h2>External links that neither target definitions nor headings</h2>
@@ -6737,10 +6739,6 @@
   <li><a href="https://w3c.github.io/webdriver/#dfn-get-a-property"><code>https://w3c.github.io/webdriver/#dfn-get-a-property</code></a></li>
   <li><a href="https://w3c.github.io/webdriver/#dfn-window-handle"><code>https://w3c.github.io/webdriver/#dfn-window-handle</code></a></li>
   </ul></li>
-  <li><a href="https://gpuweb.github.io/gpuweb/">WebGPU</a>:
-  <ul>
-  <li><a href="https://html.spec.whatwg.org/#cross-origin-isolated"><code>https://html.spec.whatwg.org/#cross-origin-isolated</code></a></li>
-  </ul></li>
   <li><a href="https://wicg.github.io/web-otp/">WebOTP API</a>:
   <ul>
   <li><a href="https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors"><code>https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors</code></a></li>
@@ -6772,7 +6770,7 @@
   <li><a href="https://immersive-web.github.io/layers/#session"><code>https://immersive-web.github.io/layers/#session</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 574 problematic external links found in 152 specifications</p>
+  <p>=&gt; 573 problematic external links found in 151 specifications</p>
   </section>
   <section id="external-links-to-terms-that-no-longer-exist-in-the-latest-version-of-the-targeted-specification" class="level2">
   <h2>External links to terms that no longer exist in the latest version of the targeted specification</h2>

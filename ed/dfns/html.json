@@ -14123,6 +14123,60 @@
       "definedIn": "prose"
     },
     {
+      "id": "'srgb'",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#'srgb'",
+      "linkingText": [
+        "'srgb'"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "'display-p3'",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#'display-p3'",
+      "linkingText": [
+        "'display-p3'"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "'relative-colorimetric'",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#'relative-colorimetric'",
+      "linkingText": [
+        "'relative-colorimetric'"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "default-object-size",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#default-object-size",
       "linkingText": [
@@ -54580,6 +54634,24 @@
       "definedIn": "pre"
     },
     {
+      "id": "predefinedcolorspace",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#predefinedcolorspace",
+      "linkingText": [
+        "PredefinedColorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "2dcontext",
+        "title": "The 2D rendering context",
+        "number": "4.12.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "canvasfillrule",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasfillrule",
       "linkingText": [
@@ -55156,6 +55228,24 @@
       "definedIn": "pre"
     },
     {
+      "id": "imagedatasettings",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#imagedatasettings",
+      "linkingText": [
+        "ImageDataSettings"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "2dcontext",
+        "title": "The 2D rendering context",
+        "number": "4.12.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "imagedata",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#imagedata",
       "linkingText": [
@@ -55232,6 +55322,24 @@
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-desynchronized",
       "linkingText": [
         "desynchronized"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "2dcontext",
+        "title": "The 2D rendering context",
+        "number": "4.12.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "concept-canvas-color-space",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-color-space",
+      "linkingText": [
+        "color space"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -55324,6 +55432,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-canvasrenderingcontext2dsettings-colorspace",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvasrenderingcontext2dsettings-colorspace",
+      "linkingText": [
+        "colorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CanvasRenderingContext2DSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "2dcontext",
+        "title": "The 2D rendering context",
+        "number": "4.12.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "concept-canvas-set-bitmap-dimensions",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-set-bitmap-dimensions",
       "linkingText": [
@@ -55351,6 +55479,46 @@
       "type": "attribute",
       "for": [
         "CanvasRenderingContext2D"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "2dcontext",
+        "title": "The 2D rendering context",
+        "number": "4.12.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-predefinedcolorspace-srgb",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-srgb",
+      "linkingText": [
+        "srgb"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PredefinedColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "2dcontext",
+        "title": "The 2D rendering context",
+        "number": "4.12.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-predefinedcolorspace-display-p3",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-display-p3",
+      "linkingText": [
+        "display-p3"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "PredefinedColorSpace"
       ],
       "access": "public",
       "informative": false,
@@ -58023,7 +58191,27 @@
       "id": "dom-imagedata",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedata",
       "linkingText": [
-        "ImageData()"
+        "new ImageData(sw, sh, settings)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ImageData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-imagedata-with-data",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedata-with-data",
+      "linkingText": [
+        "new ImageData(data, sw, sh, settings)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -58043,7 +58231,27 @@
       "id": "dom-context-2d-createimagedata",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createimagedata",
       "linkingText": [
-        "createImageData()"
+        "createImageData(sw, sh, settings)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CanvasImageData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-context-2d-createimagedata-imagedata",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createimagedata-imagedata",
+      "linkingText": [
+        "createImageData(imagedata)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -58063,7 +58271,7 @@
       "id": "dom-context-2d-getimagedata",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-getimagedata",
       "linkingText": [
-        "getImageData(sx, sy, sw, sh)"
+        "getImageData(sx, sy, sw, sh, settings)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -58080,10 +58288,64 @@
       "definedIn": "prose"
     },
     {
-      "id": "create-an-imagedata-object",
-      "href": "https://html.spec.whatwg.org/multipage/canvas.html#create-an-imagedata-object",
+      "id": "initialize-an-imagedata-object",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#initialize-an-imagedata-object",
       "linkingText": [
-        "create an ImageData object"
+        "initialize an ImageData object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-imagedata-settings",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#initialize-imagedata-settings",
+      "linkingText": [
+        "settings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-imagedata-source",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#initialize-imagedata-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-imagedata-defaultcolorspace",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#initialize-imagedata-defaultcolorspace",
+      "linkingText": [
+        "defaultColorSpace"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -58147,6 +58409,46 @@
       "type": "attribute",
       "for": [
         "ImageData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-imagedata-colorspace",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedata-colorspace",
+      "linkingText": [
+        "colorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-manipulation",
+        "title": "Pixel manipulation",
+        "number": "4.12.5.1.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-imagedatasettings-colorspace",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagedatasettings-colorspace",
+      "linkingText": [
+        "colorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDataSettings"
       ],
       "access": "public",
       "informative": false,
@@ -59244,6 +59546,24 @@
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#offscreencontext2d-alpha",
       "linkingText": [
         "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-offscreen-2d-rendering-context",
+        "title": "The offscreen 2D rendering context",
+        "number": "4.12.5.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "offscreencontext2d-color-space",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#offscreencontext2d-color-space",
+      "linkingText": [
+        "color space"
       ],
       "localLinkingText": [],
       "type": "dfn",

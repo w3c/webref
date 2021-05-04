@@ -1,0 +1,9 @@
+// Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
+interface ImageTrackList {
+  getter ImageTrack (unsigned long index);
+
+  readonly attribute Promise<undefined> ready;
+  readonly attribute unsigned long length;
+  readonly attribute long selectedIndex;
+  readonly attribute ImageTrack? selectedTrack;
+};

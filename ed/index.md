@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% May 03, 2021
+% May 04, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -6717,6 +6717,7 @@ Normative references to this spec from:
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Serial API](https://wicg.github.io/serial/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
+- [WebCodecs](https://w3c.github.io/webcodecs/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -6896,6 +6897,7 @@ Normative references to this spec from:
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
+- [WebCodecs](https://w3c.github.io/webcodecs/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
@@ -8244,8 +8246,8 @@ No informative reference to this spec from other specs.
      * `"round"` with type `enum-value` for [`CanvasLineJoin`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinejoin)
      * `"bevel"` with type `enum-value` for [`CanvasLineJoin`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinejoin)
      * `"miter"` with type `enum-value` for [`CanvasLineJoin`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinejoin)
-     * `constructor(sw, sh)` with type `constructor` for [`ImageData`](https://html.spec.whatwg.org/multipage/canvas.html#imagedata), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
-     * `constructor(data, sw, sh)` with type `constructor` for [`ImageData`](https://html.spec.whatwg.org/multipage/canvas.html#imagedata), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
+     * `constructor(sw, sh, settings)` with type `constructor` for [`ImageData`](https://html.spec.whatwg.org/multipage/canvas.html#imagedata), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
+     * `constructor(data, sw, sh, settings)` with type `constructor` for [`ImageData`](https://html.spec.whatwg.org/multipage/canvas.html#imagedata), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
      * `constructor(path)` with type `constructor` for [`Path2D`](https://html.spec.whatwg.org/multipage/canvas.html#path2d), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
      * `type` with type `dict-member` for [`ImageEncodeOptions`](https://html.spec.whatwg.org/multipage/canvas.html#imageencodeoptions), but found [`type`](https://html.spec.whatwg.org/multipage/infrastructure.html#concept-response-type) with type `dfn`
      * `quality` with type `dict-member` for [`ImageEncodeOptions`](https://html.spec.whatwg.org/multipage/canvas.html#imageencodeoptions), but found [`quality`](https://html.spec.whatwg.org/multipage/canvas.html#image-encode-options-quality) with type `dfn`
@@ -8372,8 +8374,6 @@ No informative reference to this spec from other specs.
      * `drawImage(image, dx, dy)` with type `method` for [`CanvasDrawImage`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage), but found [`drawImage`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage) with type `method` for `CanvasDrawImage`
      * `drawImage(image, dx, dy, dw, dh)` with type `method` for [`CanvasDrawImage`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage), but found [`drawImage`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage) with type `method` for `CanvasDrawImage`
      * `drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)` with type `method` for [`CanvasDrawImage`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage), but found [`drawImage`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage) with type `method` for `CanvasDrawImage`
-     * `createImageData(sw, sh)` with type `method` for [`CanvasImageData`](https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata), but found [`createImageData()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createimagedata) with type `method` for `CanvasImageData`
-     * `createImageData(imagedata)` with type `method` for [`CanvasImageData`](https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata), but found [`createImageData()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-createimagedata) with type `method` for `CanvasImageData`
      * `putImageData(imagedata, dx, dy)` with type `method` for [`CanvasImageData`](https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata), but found [`putImageData()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-putimagedata) with type `method` for `CanvasImageData`
      * `putImageData(imagedata, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight)` with type `method` for [`CanvasImageData`](https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata), but found [`putImageData()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-putimagedata) with type `method` for `CanvasImageData`
      * `setLineDash(segments)` with type `method` for [`CanvasPathDrawingStyles`](https://html.spec.whatwg.org/multipage/canvas.html#canvaspathdrawingstyles), but found [`setLineDash()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-setlinedash) with type `method` for `CanvasPathDrawingStyles`
@@ -10626,6 +10626,7 @@ Normative references to this spec from:
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [WebCodecs](https://w3c.github.io/webcodecs/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
@@ -10633,7 +10634,6 @@ Informative references to this spec from:
 
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
-- [WebCodecs](https://w3c.github.io/webcodecs/)
 
 
 ## Mixed Content Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -11525,7 +11525,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Crawled URL: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
-- Crawled version: 21 April 2021
+- Crawled version: 03 May 2021
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Shortname: pointerevents3
@@ -13685,6 +13685,7 @@ Normative references to this spec from:
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web Serial API](https://wicg.github.io/serial/)
+- [WebCodecs](https://w3c.github.io/webcodecs/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 - [WebTransport](https://w3c.github.io/webtransport/)
 
@@ -15123,7 +15124,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Crawled URL: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
-- Crawled version: 26 April 2021
+- Crawled version: 3 May 2021
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Shortname: WebIDL-1
@@ -15656,7 +15657,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- Crawled version: 30 April 2021
+- Crawled version: 3 May 2021
 - Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Latest published version: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Shortname: webcodecs
@@ -15665,6 +15666,8 @@ No informative reference to this spec from other specs.
 
 - Inconsistent references for links: 
      * [`https://w3c.github.io/media-capabilities/`](https://w3c.github.io/media-capabilities/), related reference "MEDIA-CAPABILITIES" uses URL [`https://www.w3.org/TR/media-capabilities/`](https://www.w3.org/TR/media-capabilities/)
+- External links to private terms:
+     * [`https://html.spec.whatwg.org/#live`](https://html.spec.whatwg.org/#live)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -17214,7 +17217,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 1 May 2021
+- Crawled version: 3 May 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
@@ -17224,12 +17227,12 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#the-image-argument-is-not-origin-clean`](https://html.spec.whatwg.org/#the-image-argument-is-not-origin-clean)
      * [`https://html.spec.whatwg.org/#concept-canvas-origin-clean`](https://html.spec.whatwg.org/#concept-canvas-origin-clean)
      * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
-- Broken external links:
-     * [`https://html.spec.whatwg.org/#cross-origin-isolated`](https://html.spec.whatwg.org/#cross-origin-isolated)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [WebGPU](https://gpuweb.github.io/gpuweb/)
 
 No informative reference to this spec from other specs.
 
