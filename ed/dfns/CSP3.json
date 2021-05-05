@@ -303,6 +303,42 @@
       "definedIn": "prose"
     },
     {
+      "id": "parse-response-csp",
+      "href": "https://w3c.github.io/webappsec-csp/#parse-response-csp",
+      "linkingText": [
+        "Parse response’s Content Security Policies"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parse-response-csp",
+        "title": "Parse response’s Content Security Policies",
+        "number": "2.2.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "abstract-opdef-parse-a-responses-content-security-policies",
+      "href": "https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-responses-content-security-policies",
+      "linkingText": [
+        "parse a response’s Content Security Policies"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parse-response-csp",
+        "title": "Parse response’s Content Security Policies",
+        "number": "2.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "directives",
       "href": "https://w3c.github.io/webappsec-csp/#directives",
       "linkingText": [
@@ -1465,28 +1501,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "embedding-document",
-      "href": "https://w3c.github.io/webappsec-csp/#embedding-document",
+      "id": "run-document-csp-initialization",
+      "href": "https://w3c.github.io/webappsec-csp/#run-document-csp-initialization",
       "linkingText": [
-        "embedding document"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "html-integration",
-        "title": "Integration with HTML",
-        "number": "4.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "initialize-document-csp",
-      "href": "https://w3c.github.io/webappsec-csp/#initialize-document-csp",
-      "linkingText": [
-        "Initialize a Document's CSP list"
+        "Run CSP initialization for a Document"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1494,27 +1512,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "initialize-document-csp",
-        "title": "Initialize a Document's CSP list",
+        "id": "run-document-csp-initialization",
+        "title": "Run CSP initialization for a Document",
         "number": "4.2.1"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "initialize-global-object-csp",
-      "href": "https://w3c.github.io/webappsec-csp/#initialize-global-object-csp",
-      "linkingText": [
-        "Initialize a global object’s CSP list"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "initialize-global-object-csp",
-        "title": "Initialize a global object’s CSP list",
-        "number": "4.2.2"
       },
       "definedIn": "heading"
     },
@@ -1532,7 +1532,7 @@
       "heading": {
         "id": "should-block-inline",
         "title": "Should element’s inline type behavior be blocked by Content Security Policy?",
-        "number": "4.2.4"
+        "number": "4.2.3"
       },
       "definedIn": "heading"
     },
@@ -1550,7 +1550,7 @@
       "heading": {
         "id": "should-block-navigation-request",
         "title": "Should navigation request of type be blocked by Content Security Policy?",
-        "number": "4.2.5"
+        "number": "4.2.4"
       },
       "definedIn": "heading"
     },
@@ -1568,7 +1568,7 @@
       "heading": {
         "id": "should-block-navigation-response",
         "title": "Should navigation response to navigation request of type in target be blocked by Content Security Policy?",
-        "number": "4.2.6"
+        "number": "4.2.5"
       },
       "definedIn": "heading"
     },

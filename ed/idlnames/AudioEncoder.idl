@@ -7,7 +7,7 @@ interface AudioEncoder {
   readonly attribute long encodeQueueSize;
 
   undefined configure(AudioEncoderConfig config);
-  undefined encode(AudioFrame frame);
+  undefined encode(AudioData data);
   Promise<undefined> flush();
   undefined reset();
   undefined close();
