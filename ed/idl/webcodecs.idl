@@ -316,7 +316,7 @@ interface ImageDecoder {
   readonly attribute Promise<undefined> completed;
   readonly attribute ImageTrackList tracks;
 
-  Promise<ImageDecodeResult> decode(optional ImageDecodeOptions options);
+  Promise<ImageDecodeResult> decode(optional ImageDecodeOptions options = {});
   undefined reset();
   undefined close();
 
@@ -344,6 +344,7 @@ dictionary ImageDecodeResult {
   required boolean complete;
 };
 
+[Exposed=(Window,DedicatedWorker)]
 interface ImageTrackList {
   getter ImageTrack (unsigned long index);
 
@@ -353,6 +354,7 @@ interface ImageTrackList {
   readonly attribute ImageTrack? selectedTrack;
 };
 
+[Exposed=(Window,DedicatedWorker)]
 interface ImageTrack : EventTarget {
   readonly attribute boolean animated;
   readonly attribute unsigned long frameCount;

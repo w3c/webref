@@ -31,10 +31,14 @@
       },
       "functions": {
         "Window": [
-          "Plane"
+          "Plane",
+          "ImageTrackList",
+          "ImageTrack"
         ],
         "DedicatedWorker": [
-          "Plane"
+          "Plane",
+          "ImageTrackList",
+          "ImageTrack"
         ]
       }
     },
@@ -3481,7 +3485,7 @@
         "extAttrs": []
       },
       "ImageDecoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageDecoder {\n  constructor(ImageDecoderInit init);\n\n  readonly attribute boolean complete;\n  readonly attribute Promise<undefined> completed;\n  readonly attribute ImageTrackList tracks;\n\n  Promise<ImageDecodeResult> decode(optional ImageDecodeOptions options);\n  undefined reset();\n  undefined close();\n\n  static Promise<boolean> isTypeSupported(DOMString type);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageDecoder {\n  constructor(ImageDecoderInit init);\n\n  readonly attribute boolean complete;\n  readonly attribute Promise<undefined> completed;\n  readonly attribute ImageTrackList tracks;\n\n  Promise<ImageDecodeResult> decode(optional ImageDecodeOptions options = {});\n  undefined reset();\n  undefined close();\n\n  static Promise<boolean> isTypeSupported(DOMString type);\n};",
         "type": "interface",
         "name": "ImageDecoder",
         "inheritance": null,
@@ -3595,7 +3599,9 @@
                   "union": false,
                   "idlType": "ImageDecodeOptions"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -3934,7 +3940,7 @@
         "partial": false
       },
       "ImageTrackList": {
-        "fragment": "interface ImageTrackList {\n  getter ImageTrack (unsigned long index);\n\n  readonly attribute Promise<undefined> ready;\n  readonly attribute unsigned long length;\n  readonly attribute long selectedIndex;\n  readonly attribute ImageTrack? selectedTrack;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrackList {\n  getter ImageTrack (unsigned long index);\n\n  readonly attribute Promise<undefined> ready;\n  readonly attribute unsigned long length;\n  readonly attribute long selectedIndex;\n  readonly attribute ImageTrack? selectedTrack;\n};",
         "type": "interface",
         "name": "ImageTrackList",
         "inheritance": null,
@@ -4041,11 +4047,28 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "ImageTrack": {
-        "fragment": "interface ImageTrack : EventTarget {\n  readonly attribute boolean animated;\n  readonly attribute unsigned long frameCount;\n  readonly attribute unrestricted float repetitionCount;\n  attribute EventHandler onchange;\n  attribute boolean selected;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrack : EventTarget {\n  readonly attribute boolean animated;\n  readonly attribute unsigned long frameCount;\n  readonly attribute unrestricted float repetitionCount;\n  attribute EventHandler onchange;\n  attribute boolean selected;\n};",
         "type": "interface",
         "name": "ImageTrack",
         "inheritance": "EventTarget",
@@ -4126,7 +4149,24 @@
             "readonly": false
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       }
     },
@@ -4143,7 +4183,9 @@
         "AudioData",
         "VideoFrame",
         "Plane",
-        "ImageDecoder"
+        "ImageDecoder",
+        "ImageTrackList",
+        "ImageTrack"
       ],
       "DedicatedWorker": [
         "AudioDecoder",
@@ -4155,7 +4197,9 @@
         "AudioData",
         "VideoFrame",
         "Plane",
-        "ImageDecoder"
+        "ImageDecoder",
+        "ImageTrackList",
+        "ImageTrack"
       ]
     },
     "dependencies": {

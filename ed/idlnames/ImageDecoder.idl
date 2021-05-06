@@ -7,7 +7,7 @@ interface ImageDecoder {
   readonly attribute Promise<undefined> completed;
   readonly attribute ImageTrackList tracks;
 
-  Promise<ImageDecodeResult> decode(optional ImageDecodeOptions options);
+  Promise<ImageDecodeResult> decode(optional ImageDecodeOptions options = {});
   undefined reset();
   undefined close();
 

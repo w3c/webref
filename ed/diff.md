@@ -7,7 +7,7 @@
 - Initial URL: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
-- Spec could not be rendered: *INS* Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
+- Spec could not be rendered: *DEL* Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
     at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
     at runMicrotasks (<anonymous>)
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
@@ -17,13 +17,5 @@
     at async Promise.all (index 274)
     at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)
     at async Promise.all (index 0)
-
-
-## Web Animations Level 2
-
-- Initial URL: [https://drafts.csswg.org/web-animations-2/](https://drafts.csswg.org/web-animations-2/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/web-animations-2/](https://drafts.csswg.org/web-animations-2/)
-- Unknown WebIDL names used: *DEL* void
 
 
