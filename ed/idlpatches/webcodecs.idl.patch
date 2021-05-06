@@ -1,0 +1,42 @@
+From eca7e4d91906cea0618e575db264b08fe6506e6c Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 6 May 2021 10:34:42 +0200
+Subject: [PATCH] [PATCH] Exposed and default value for WebCodecs
+
+https://github.com/w3c/webcodecs/pull/229
+---
+ ed/idl/webcodecs.idl | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/ed/idl/webcodecs.idl b/ed/idl/webcodecs.idl
+index 2d0615ac3..aae4aa012 100644
+--- a/ed/idl/webcodecs.idl
++++ b/ed/idl/webcodecs.idl
+@@ -316,7 +316,7 @@ interface ImageDecoder {
+   readonly attribute Promise<undefined> completed;
+   readonly attribute ImageTrackList tracks;
+ 
+-  Promise<ImageDecodeResult> decode(optional ImageDecodeOptions options);
++  Promise<ImageDecodeResult> decode(optional ImageDecodeOptions options = {});
+   undefined reset();
+   undefined close();
+ 
+@@ -344,6 +344,7 @@ dictionary ImageDecodeResult {
+   required boolean complete;
+ };
+ 
++[Exposed=(Window,DedicatedWorker)]
+ interface ImageTrackList {
+   getter ImageTrack (unsigned long index);
+ 
+@@ -353,6 +354,7 @@ interface ImageTrackList {
+   readonly attribute ImageTrack? selectedTrack;
+ };
+ 
++[Exposed=(Window,DedicatedWorker)]
+ interface ImageTrack : EventTarget {
+   readonly attribute boolean animated;
+   readonly attribute unsigned long frameCount;
+-- 
+2.31.0.windows.1
+
