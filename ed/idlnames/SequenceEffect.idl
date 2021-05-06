@@ -2,7 +2,7 @@
 [Exposed=Window]
 interface SequenceEffect : GroupEffect {
   constructor(sequence<AnimationEffect>? children,
-              optional (unrestricted double or EffectTiming) timing);
+              optional (unrestricted double or EffectTiming) timing = {});
 
   SequenceEffect clone ();
 };

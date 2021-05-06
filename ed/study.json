@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-05-06T06:56:41.415Z",
+  "date": "2021-05-06T13:05:39.142Z",
   "stats": {
     "crawled": 395,
-    "errors": 0,
+    "errors": 1,
     "studied": 395
   },
   "results": [
@@ -17504,7 +17504,7 @@
     {
       "title": "Device Posture API",
       "shortname": "device-posture",
-      "date": "04 May 2021",
+      "date": "",
       "url": "https://www.w3.org/TR/device-posture/",
       "release": {
         "url": "https://www.w3.org/TR/device-posture/",
@@ -17516,12 +17516,17 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://w3c.github.io/device-posture/",
+      "crawled": {
+        "url": "https://w3c.github.io/screen-fold/",
+        "repository": "https://github.com/w3c/screen-fold",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "report": {
-        "noNormativeRefs": false,
+        "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 274)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -17535,16 +17540,6 @@
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [
-            "https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts"
-          ],
-          "notDfn": [],
-          "brokenLinks": [],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -17981,11 +17976,6 @@
               "url": "https://www.w3.org/TR/cssom-view-1/",
               "title": "CSSOM View Module",
               "crawled": "https://drafts.csswg.org/cssom-view/"
-            },
-            {
-              "url": "https://www.w3.org/TR/device-posture/",
-              "title": "Device Posture API",
-              "crawled": "https://w3c.github.io/device-posture/"
             },
             {
               "url": "https://www.w3.org/TR/orientation-event/",
@@ -20797,11 +20787,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/device-posture/",
-              "title": "Device Posture API",
-              "crawled": "https://w3c.github.io/device-posture/"
-            },
-            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
@@ -22204,7 +22189,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "5 May 2021",
+      "date": "6 May 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -32469,11 +32454,6 @@
               "crawled": "https://w3c.github.io/device-memory/"
             },
             {
-              "url": "https://www.w3.org/TR/device-posture/",
-              "title": "Device Posture API",
-              "crawled": "https://w3c.github.io/device-posture/"
-            },
-            {
               "url": "https://www.w3.org/TR/orientation-event/",
               "title": "DeviceOrientation Event Specification",
               "crawled": "https://w3c.github.io/deviceorientation/"
@@ -34637,11 +34617,6 @@
               "url": "https://wicg.github.io/custom-state-pseudo-class/",
               "title": "Custom State Pseudo Class",
               "crawled": "https://wicg.github.io/custom-state-pseudo-class/"
-            },
-            {
-              "url": "https://www.w3.org/TR/device-posture/",
-              "title": "Device Posture API",
-              "crawled": "https://w3c.github.io/device-posture/"
             },
             {
               "url": "https://dom.spec.whatwg.org/",
@@ -36860,11 +36835,6 @@
               "crawled": "https://drafts.csswg.org/css-page-3/"
             },
             {
-              "url": "https://www.w3.org/TR/device-posture/",
-              "title": "Device Posture API",
-              "crawled": "https://w3c.github.io/device-posture/"
-            },
-            {
               "url": "https://www.w3.org/TR/mediaqueries-5/",
               "title": "Media Queries Level 5",
               "crawled": "https://drafts.csswg.org/mediaqueries-5/"
@@ -38669,11 +38639,6 @@
               "url": "https://www.w3.org/TR/requestidlecallback/",
               "title": "Cooperative Scheduling of Background Tasks",
               "crawled": "https://w3c.github.io/requestidlecallback/"
-            },
-            {
-              "url": "https://www.w3.org/TR/device-posture/",
-              "title": "Device Posture API",
-              "crawled": "https://w3c.github.io/device-posture/"
             },
             {
               "url": "https://www.w3.org/TR/orientation-event/",
@@ -49966,7 +49931,7 @@
     {
       "title": "Service Workers Nightly",
       "shortname": "service-workers-1",
-      "date": "5 May 2021",
+      "date": "6 May 2021",
       "url": "https://www.w3.org/TR/service-workers-1/",
       "release": {
         "url": "https://www.w3.org/TR/service-workers-1/",
@@ -51107,11 +51072,6 @@
               "url": "https://compat.spec.whatwg.org/",
               "title": "Compatibility Standard",
               "crawled": "https://compat.spec.whatwg.org/"
-            },
-            {
-              "url": "https://www.w3.org/TR/device-posture/",
-              "title": "Device Posture API",
-              "crawled": "https://w3c.github.io/device-posture/"
             },
             {
               "url": "https://html.spec.whatwg.org/multipage/",
@@ -52937,7 +52897,7 @@
     {
       "title": "Web Animations Level 2",
       "shortname": "web-animations-2",
-      "date": "5 May 2021",
+      "date": "6 May 2021",
       "url": "https://drafts.csswg.org/web-animations-2/",
       "nightly": {
         "url": "https://drafts.csswg.org/web-animations-2/",
@@ -52952,9 +52912,7 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "void"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -53916,11 +53874,6 @@
               "url": "https://www.w3.org/TR/device-memory-1/",
               "title": "Device Memory 1",
               "crawled": "https://w3c.github.io/device-memory/"
-            },
-            {
-              "url": "https://www.w3.org/TR/device-posture/",
-              "title": "Device Posture API",
-              "crawled": "https://w3c.github.io/device-posture/"
             },
             {
               "url": "https://www.w3.org/TR/orientation-event/",
@@ -55177,7 +55130,7 @@
     {
       "title": "WebAssembly Core Specification",
       "shortname": "wasm-core-1",
-      "date": "5 May 2021",
+      "date": "6 May 2021",
       "url": "https://www.w3.org/TR/wasm-core-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-core-1/",
@@ -55218,7 +55171,7 @@
     {
       "title": "WebAssembly JavaScript Interface",
       "shortname": "wasm-js-api-1",
-      "date": "5 May 2021",
+      "date": "6 May 2021",
       "url": "https://www.w3.org/TR/wasm-js-api-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -55282,7 +55235,7 @@
     {
       "title": "WebAssembly Web API",
       "shortname": "wasm-web-api-1",
-      "date": "5 May 2021",
+      "date": "6 May 2021",
       "url": "https://www.w3.org/TR/wasm-web-api-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-web-api-1/",

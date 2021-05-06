@@ -14,8 +14,8 @@ partial interface AnimationEffect {
     readonly attribute AnimationEffect? previousSibling;
     readonly attribute AnimationEffect? nextSibling;
 
-    void before (AnimationEffect... effects);
-    void after (AnimationEffect... effects);
-    void replace (AnimationEffect... effects);
-    void remove ();
+    undefined before (AnimationEffect... effects);
+    undefined after (AnimationEffect... effects);
+    undefined replace (AnimationEffect... effects);
+    undefined remove ();
 };

@@ -49,7 +49,7 @@
         "extAttrs": []
       },
       "GroupEffect": {
-        "fragment": "[Exposed=Window]\ninterface GroupEffect {\n  constructor(sequence<AnimationEffect>? children,\n              optional (unrestricted double or EffectTiming) timing);\n\n  readonly attribute AnimationNodeList  children;\n  readonly attribute AnimationEffect?   firstChild;\n  readonly attribute AnimationEffect?   lastChild;\n  GroupEffect clone ();\n\n  void prepend (AnimationEffect... effects);\n  void append (AnimationEffect... effects);\n};",
+        "fragment": "[Exposed=Window]\ninterface GroupEffect {\n  constructor(sequence<AnimationEffect>? children,\n              optional (unrestricted double or EffectTiming) timing = {});\n\n  readonly attribute AnimationNodeList  children;\n  readonly attribute AnimationEffect?   firstChild;\n  readonly attribute AnimationEffect?   lastChild;\n  GroupEffect clone ();\n\n  undefined prepend (AnimationEffect... effects);\n  undefined append (AnimationEffect... effects);\n};",
         "type": "interface",
         "name": "GroupEffect",
         "inheritance": null,
@@ -111,7 +111,9 @@
                     }
                   ]
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -187,7 +189,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -219,7 +221,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -324,7 +326,7 @@
         "partial": false
       },
       "SequenceEffect": {
-        "fragment": "[Exposed=Window]\ninterface SequenceEffect : GroupEffect {\n  constructor(sequence<AnimationEffect>? children,\n              optional (unrestricted double or EffectTiming) timing);\n\n  SequenceEffect clone ();\n};",
+        "fragment": "[Exposed=Window]\ninterface SequenceEffect : GroupEffect {\n  constructor(sequence<AnimationEffect>? children,\n              optional (unrestricted double or EffectTiming) timing = {});\n\n  SequenceEffect clone ();\n};",
         "type": "interface",
         "name": "SequenceEffect",
         "inheritance": "GroupEffect",
@@ -386,7 +388,9 @@
                     }
                   ]
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -439,7 +443,7 @@
         "extAttrs": []
       },
       "EffectCallback": {
-        "fragment": "callback EffectCallback = void (double? progress,\n                                (Element or CSSPseudoElement) currentTarget,\n                                Animation animation);",
+        "fragment": "callback EffectCallback = undefined (double? progress,\n                                (Element or CSSPseudoElement) currentTarget,\n                                Animation animation);",
         "type": "callback",
         "name": "EffectCallback",
         "idlType": {
@@ -448,7 +452,7 @@
           "generic": "",
           "nullable": false,
           "union": false,
-          "idlType": "void"
+          "idlType": "undefined"
         },
         "arguments": [
           {
@@ -579,7 +583,7 @@
       ],
       "AnimationEffect": [
         {
-          "fragment": "[Exposed=Window]\npartial interface AnimationEffect {\n    // Timing hierarchy\n    readonly attribute GroupEffect?     parent;\n    readonly attribute AnimationEffect? previousSibling;\n    readonly attribute AnimationEffect? nextSibling;\n\n    void before (AnimationEffect... effects);\n    void after (AnimationEffect... effects);\n    void replace (AnimationEffect... effects);\n    void remove ();\n};",
+          "fragment": "[Exposed=Window]\npartial interface AnimationEffect {\n    // Timing hierarchy\n    readonly attribute GroupEffect?     parent;\n    readonly attribute AnimationEffect? previousSibling;\n    readonly attribute AnimationEffect? nextSibling;\n\n    undefined before (AnimationEffect... effects);\n    undefined after (AnimationEffect... effects);\n    undefined replace (AnimationEffect... effects);\n    undefined remove ();\n};",
           "type": "interface",
           "name": "AnimationEffect",
           "inheritance": null,
@@ -638,7 +642,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -670,7 +674,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -702,7 +706,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [
                 {
@@ -734,7 +738,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [],
               "extAttrs": [],
@@ -914,8 +918,7 @@
       ],
       "AnimationEffect": [
         "GroupEffect",
-        "AnimationEffect",
-        "void"
+        "AnimationEffect"
       ],
       "EffectTiming": [],
       "OptionalEffectTiming": [],
@@ -924,8 +927,7 @@
         "AnimationEffect",
         "EffectTiming",
         "AnimationNodeList",
-        "GroupEffect",
-        "void"
+        "GroupEffect"
       ],
       "AnimationNodeList": [
         "AnimationEffect"
@@ -947,7 +949,6 @@
       "AnimationTimeline",
       "Animation",
       "AnimationEffect",
-      "void",
       "EffectTiming",
       "OptionalEffectTiming",
       "ComputedEffectTiming",

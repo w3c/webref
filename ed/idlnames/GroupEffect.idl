@@ -2,13 +2,13 @@
 [Exposed=Window]
 interface GroupEffect {
   constructor(sequence<AnimationEffect>? children,
-              optional (unrestricted double or EffectTiming) timing);
+              optional (unrestricted double or EffectTiming) timing = {});
 
   readonly attribute AnimationNodeList  children;
   readonly attribute AnimationEffect?   firstChild;
   readonly attribute AnimationEffect?   lastChild;
   GroupEffect clone ();
 
-  void prepend (AnimationEffect... effects);
-  void append (AnimationEffect... effects);
+  undefined prepend (AnimationEffect... effects);
+  undefined append (AnimationEffect... effects);
 };

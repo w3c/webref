@@ -21,6 +21,14 @@
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/w3c/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>395 specifications were crawled in this report.</p>
+  <section id="specifications-that-could-not-be-rendered" class="level2">
+  <h2>Specifications that could not be rendered</h2>
+  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
+  <ul>
+  <li><a href="%5Bobject%20Object%5D">Device Posture API</a>: <code>Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23) at runMicrotasks (&lt;anonymous&gt;) at processTicksAndRejections (internal/process/task_queues.js:93:5) at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9) at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24) at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24) at async Promise.all (index 274) at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21) at async Promise.all (index 0)</code></li>
+  </ul>
+  <p>=&gt; 1 specification found</p>
+  </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -162,9 +170,8 @@
   <li><code>WebAppManifest</code> used in <a href="https://w3c.github.io/web-share-target/">Web Share Target API</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>, <a href="https://wicg.github.io/portals/">Portals</a>, <a href="https://svgwg.org/specs/animations/">SVG Animations</a>, <a href="https://w3c.github.io/uievents/">UI Events</a></li>
   <li><code>bigint</code> used in <a href="https://w3c.github.io/webrtc-encoded-transform/">WebRTC Encoded Transform</a></li>
-  <li><code>void</code> used in <a href="https://drafts.csswg.org/web-animations-2/">Web Animations Level 2</a></li>
   </ul>
-  <p>=&gt; 5 WebIDL names found</p>
+  <p>=&gt; 4 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -3295,10 +3302,6 @@
   <ul>
   <li><a href="https://html.spec.whatwg.org/#internals-target"><code>https://html.spec.whatwg.org/#internals-target</code></a></li>
   </ul></li>
-  <li><a href="https://w3c.github.io/device-posture/">Device Posture API</a>:
-  <ul>
-  <li><a href="https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts"><code>https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts</code></a></li>
-  </ul></li>
   <li><a href="https://w3c.github.io/deviceorientation/">DeviceOrientation Event Specification</a>:
   <ul>
   <li><a href="https://compat.spec.whatwg.org/#event-orientationchange"><code>https://compat.spec.whatwg.org/#event-orientationchange</code></a></li>
@@ -4699,7 +4702,7 @@
   <li><a href="https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm"><code>https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 1301 problematic external links found in 199 specifications</p>
+  <p>=&gt; 1300 problematic external links found in 198 specifications</p>
   </section>
   <section id="external-links-that-neither-target-definitions-nor-headings" class="level2">
   <h2>External links that neither target definitions nor headings</h2>

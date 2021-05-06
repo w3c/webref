@@ -1,11 +1,11 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-05-06T06:56:41.415Z",
+  "date": "2021-05-06T13:05:39.142Z",
   "options": {},
   "stats": {
     "crawled": 395,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -743,7 +743,7 @@
         "https://drafts.csswg.org/web-animations-2/"
       ],
       "crawled": "https://drafts.csswg.org/web-animations-2/",
-      "date": "5 May 2021",
+      "date": "6 May 2021",
       "links": "links/web-animations-2.json",
       "refs": "refs/web-animations-2.json",
       "idl": "idl/web-animations-2.idl",
@@ -1061,7 +1061,7 @@
         "https://www.w3.org/html/wg/drafts/html/master/webappapis.html"
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
-      "date": "5 May 2021",
+      "date": "6 May 2021",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -10402,16 +10402,14 @@
         "https://www.w3.org/TR/device-posture/",
         "https://w3c.github.io/screen-fold/"
       ],
-      "crawled": "https://w3c.github.io/device-posture/",
-      "date": "04 May 2021",
-      "links": "links/device-posture.json",
-      "refs": "refs/device-posture.json",
-      "idl": "idl/device-posture.idl",
-      "generator": "respec",
-      "dfns": "dfns/device-posture.json",
-      "headings": "headings/device-posture.json",
-      "ids": "ids/device-posture.json",
-      "idlparsed": "idlparsed/device-posture.json"
+      "crawled": {
+        "url": "https://w3c.github.io/screen-fold/",
+        "repository": "https://github.com/w3c/screen-fold",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:378:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:79:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:234:24)\n    at async Promise.all (index 274)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:240:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://www.w3.org/TR/DOM-Parsing/",
@@ -13591,7 +13589,7 @@
         "https://www.w3.org/TR/service-workers/"
       ],
       "crawled": "https://w3c.github.io/ServiceWorker/",
-      "date": "5 May 2021",
+      "date": "6 May 2021",
       "links": "links/service-workers-1.json",
       "refs": "refs/service-workers-1.json",
       "idl": "idl/service-workers.idl",
@@ -14481,7 +14479,7 @@
         "https://webassembly.github.io/spec/core/bikeshed/"
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
-      "date": "5 May 2021",
+      "date": "6 May 2021",
       "links": "links/wasm-core-1.json",
       "refs": "refs/wasm-core-1.json",
       "generator": "bikeshed",
@@ -14521,7 +14519,7 @@
         "https://webassembly.github.io/spec/js-api/"
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
-      "date": "5 May 2021",
+      "date": "6 May 2021",
       "links": "links/wasm-js-api-1.json",
       "refs": "refs/wasm-js-api-1.json",
       "idl": "idl/wasm-js-api.idl",
@@ -14564,7 +14562,7 @@
         "https://webassembly.github.io/spec/web-api/"
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
-      "date": "5 May 2021",
+      "date": "6 May 2021",
       "links": "links/wasm-web-api-1.json",
       "refs": "refs/wasm-web-api-1.json",
       "idl": "idl/wasm-web-api.idl",
