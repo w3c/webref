@@ -15501,7 +15501,7 @@
         "partial": false
       },
       "CanvasState": {
-        "fragment": "interface mixin CanvasState {\n  // state\n  undefined save(); // push state on state stack\n  undefined restore(); // pop state stack and restore state\n};",
+        "fragment": "interface mixin CanvasState {\n  // state\n  undefined save(); // push state on state stack\n  undefined restore(); // pop state stack and restore state\n  undefined reset(); // reset the rendering context to its default state\n};",
         "type": "interface mixin",
         "name": "CanvasState",
         "inheritance": null,
@@ -15524,6 +15524,21 @@
           {
             "type": "operation",
             "name": "restore",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "reset",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
