@@ -915,7 +915,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Contact Picker API {data-spec=true data-anomaly=true data-unknownExposedNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## Contact Picker API {data-spec=true data-anomaly=true data-unknownExposedNames=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -928,12 +928,15 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown [Exposed] names used: `SecureContext`
+- Unknown WebIDL names used: `PaymentAddress`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - External links to private terms:
      * [`https://html.spec.whatwg.org/#concept-request-origin`](https://html.spec.whatwg.org/#concept-request-origin)
 - Broken external links:
      * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
+     * [`https://www.w3.org/TR/payment-request/#physical-addresses`](https://www.w3.org/TR/payment-request/#physical-addresses)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentaddress`](https://www.w3.org/TR/payment-request/#dom-paymentaddress)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7715,7 +7718,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
-- Crawled version: 03 May 2021
+- Crawled version: 07 May 2021
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Shortname: geolocation-API
@@ -9302,7 +9305,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
 - Crawled URL: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
-- Crawled version: 26 April 2021
+- Crawled version: 07 May 2021
 - Editor's Draft: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
 - Latest published version: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
 - Shortname: image-resource
@@ -11269,7 +11272,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Payment Handler API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+## Payment Handler API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -11282,6 +11285,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `AddressErrors`, `AddressInit`, `PaymentOptions`, `PaymentShippingOption`
 - External links to private terms:
      * [`https://www.w3.org/TR/payment-request/#dfn-payment-method`](https://www.w3.org/TR/payment-request/#dfn-payment-method)
 - Broken external links:
@@ -11292,7 +11296,21 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/service-workers-1/#dfn-uninstalling-flag`](https://www.w3.org/TR/service-workers-1/#dfn-uninstalling-flag)
      * [`https://www.w3.org/TR/payment-request/#canmakepayment()-method`](https://www.w3.org/TR/payment-request/#canmakepayment()-method)
      * [`https://www.w3.org/TR/payment-request/#show()-method`](https://www.w3.org/TR/payment-request/#show()-method)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentshippingoption`](https://www.w3.org/TR/payment-request/#dom-paymentshippingoption)
+     * [`https://www.w3.org/TR/payment-request/#dom-addresserrors`](https://www.w3.org/TR/payment-request/#dom-addresserrors)
+     * [`https://www.w3.org/TR/payment-request/#dom-addressinit`](https://www.w3.org/TR/payment-request/#dom-addressinit)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions`](https://www.w3.org/TR/payment-request/#dom-paymentoptions)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentdetailsbase-shippingoptions`](https://www.w3.org/TR/payment-request/#dom-paymentdetailsbase-shippingoptions)
      * [`https://www.w3.org/TR/payment-request/#dfn-json-serialize`](https://www.w3.org/TR/payment-request/#dfn-json-serialize)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestshipping`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestshipping)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayername`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayername)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayeremail`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayeremail)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayerphone`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayerphone)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingaddress`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingaddress)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingoption`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingoption)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-payername`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-payername)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-payeremail`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-payeremail)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-payerphone`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-payerphone)
      * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes)
      * [`https://www.w3.org/TR/appmanifest/#fetching-image-resources`](https://www.w3.org/TR/appmanifest/#fetching-image-resources)
 
@@ -11313,7 +11331,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/payment-method-id/](https://www.w3.org/TR/payment-method-id/)
 - Crawled URL: [https://w3c.github.io/payment-method-id/](https://w3c.github.io/payment-method-id/)
-- Crawled version: 03 September 2019
+- Crawled version: 07 May 2021
 - Editor's Draft: [https://w3c.github.io/payment-method-id/](https://w3c.github.io/payment-method-id/)
 - Latest published version: [https://www.w3.org/TR/payment-method-id/](https://www.w3.org/TR/payment-method-id/)
 - Shortname: payment-method-id
@@ -11376,20 +11394,27 @@ Informative references to this spec from:
 - [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
 
 
-## Payment Method: Basic Card {data-spec=true data-missingDfns=true data-ok=true}
+## Payment Method: Basic Card {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Crawled URL: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
-- Crawled version: 13 February 2020
+- Crawled version: 07 May 2021
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Shortname: payment-method-basic-card
 
 ### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- Unknown WebIDL names used: `AddressErrors`, `PaymentAddress`
+- Broken external links:
+     * [`https://www.w3.org/TR/payment-request/#dfn-options`](https://www.w3.org/TR/payment-request/#dfn-options)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestbillingaddress`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestbillingaddress)
+     * [`https://www.w3.org/TR/payment-request/#creating-a-paymentaddress-from-user-provided-input`](https://www.w3.org/TR/payment-request/#creating-a-paymentaddress-from-user-provided-input)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentaddress`](https://www.w3.org/TR/payment-request/#dom-paymentaddress)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentaddress-postalcode`](https://www.w3.org/TR/payment-request/#dom-paymentaddress-postalcode)
+     * [`https://www.w3.org/TR/payment-request/#dom-addresserrors`](https://www.w3.org/TR/payment-request/#dom-addresserrors)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -11409,7 +11434,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Crawled URL: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
-- Crawled version: 05 May 2021
+- Crawled version: 07 May 2021
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
@@ -13413,7 +13438,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
 - Crawled URL: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
-- Crawled version: 05 April 2021
+- Crawled version: 07 May 2021
 - Editor's Draft: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
 - Latest published version: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
 - Shortname: screen-wake-lock
@@ -15104,7 +15129,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 27 April 2021
+- Crawled version: 07 May 2021
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest

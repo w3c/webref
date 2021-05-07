@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-05-07T01:47:12.862Z",
+  "date": "2021-05-07T06:57:40.714Z",
   "stats": {
     "crawled": 395,
     "errors": 0,
@@ -1835,7 +1835,9 @@
         "unknownExposedNames": [
           "SecureContext"
         ],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "PaymentAddress"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -1862,7 +1864,9 @@
           ],
           "notDfn": [],
           "brokenLinks": [
-            "https://dom.spec.whatwg.org/#context-object"
+            "https://dom.spec.whatwg.org/#context-object",
+            "https://www.w3.org/TR/payment-request/#physical-addresses",
+            "https://www.w3.org/TR/payment-request/#dom-paymentaddress"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -21114,7 +21118,7 @@
     {
       "title": "Geolocation API",
       "shortname": "geolocation-API",
-      "date": "03 May 2021",
+      "date": "07 May 2021",
       "url": "https://www.w3.org/TR/geolocation-API/",
       "release": {
         "url": "https://www.w3.org/TR/geolocation-API/",
@@ -34170,7 +34174,7 @@
     {
       "title": "Image Resource",
       "shortname": "image-resource",
-      "date": "26 April 2021",
+      "date": "07 May 2021",
       "url": "https://www.w3.org/TR/image-resource/",
       "release": {
         "url": "https://www.w3.org/TR/image-resource/",
@@ -38892,7 +38896,12 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AddressErrors",
+          "AddressInit",
+          "PaymentOptions",
+          "PaymentShippingOption"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -38930,7 +38939,21 @@
             "https://www.w3.org/TR/service-workers-1/#dfn-uninstalling-flag",
             "https://www.w3.org/TR/payment-request/#canmakepayment()-method",
             "https://www.w3.org/TR/payment-request/#show()-method",
+            "https://www.w3.org/TR/payment-request/#dom-paymentshippingoption",
+            "https://www.w3.org/TR/payment-request/#dom-addresserrors",
+            "https://www.w3.org/TR/payment-request/#dom-addressinit",
+            "https://www.w3.org/TR/payment-request/#dom-paymentoptions",
+            "https://www.w3.org/TR/payment-request/#dom-paymentdetailsbase-shippingoptions",
             "https://www.w3.org/TR/payment-request/#dfn-json-serialize",
+            "https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestshipping",
+            "https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayername",
+            "https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayeremail",
+            "https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayerphone",
+            "https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingaddress",
+            "https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingoption",
+            "https://www.w3.org/TR/payment-request/#dom-paymentresponse-payername",
+            "https://www.w3.org/TR/payment-request/#dom-paymentresponse-payeremail",
+            "https://www.w3.org/TR/payment-request/#dom-paymentresponse-payerphone",
             "https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes",
             "https://www.w3.org/TR/appmanifest/#fetching-image-resources"
           ],
@@ -38944,7 +38967,7 @@
     {
       "title": "Payment Method Identifiers",
       "shortname": "payment-method-id",
-      "date": "03 September 2019",
+      "date": "07 May 2021",
       "url": "https://www.w3.org/TR/payment-method-id/",
       "release": {
         "url": "https://www.w3.org/TR/payment-method-id/",
@@ -39087,7 +39110,7 @@
     {
       "title": "Payment Method: Basic Card",
       "shortname": "payment-method-basic-card",
-      "date": "13 February 2020",
+      "date": "07 May 2021",
       "url": "https://www.w3.org/TR/payment-method-basic-card/",
       "release": {
         "url": "https://www.w3.org/TR/payment-method-basic-card/",
@@ -39106,7 +39129,10 @@
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [],
+        "unknownIdlNames": [
+          "AddressErrors",
+          "PaymentAddress"
+        ],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -39136,13 +39162,28 @@
             }
           ]
         },
-        "ok": true
+        "xrefs": {
+          "notExported": [],
+          "notDfn": [],
+          "brokenLinks": [
+            "https://www.w3.org/TR/payment-request/#dfn-options",
+            "https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestbillingaddress",
+            "https://www.w3.org/TR/payment-request/#creating-a-paymentaddress-from-user-provided-input",
+            "https://www.w3.org/TR/payment-request/#dom-paymentaddress",
+            "https://www.w3.org/TR/payment-request/#dom-paymentaddress-postalcode",
+            "https://www.w3.org/TR/payment-request/#dom-addresserrors"
+          ],
+          "evolvingLinks": [],
+          "outdatedSpecs": [],
+          "datedUrls": []
+        },
+        "ok": false
       }
     },
     {
       "title": "Payment Request API",
       "shortname": "payment-request",
-      "date": "05 May 2021",
+      "date": "07 May 2021",
       "url": "https://www.w3.org/TR/payment-request/",
       "release": {
         "url": "https://www.w3.org/TR/payment-request/",
@@ -49232,7 +49273,7 @@
     {
       "title": "Screen Wake Lock API",
       "shortname": "screen-wake-lock",
-      "date": "05 April 2021",
+      "date": "07 May 2021",
       "url": "https://www.w3.org/TR/screen-wake-lock/",
       "release": {
         "url": "https://www.w3.org/TR/screen-wake-lock/",
@@ -53088,7 +53129,7 @@
     {
       "title": "Web Application Manifest",
       "shortname": "appmanifest",
-      "date": "27 April 2021",
+      "date": "07 May 2021",
       "url": "https://www.w3.org/TR/appmanifest/",
       "release": {
         "url": "https://www.w3.org/TR/appmanifest/",
