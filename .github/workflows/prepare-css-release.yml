@@ -1,13 +1,13 @@
-name: "@webref/idl: Prepare release PR if needed"
+name: "@webref/css: Prepare release PR if needed"
 
 on:
   push:
     branches:
       - master
     paths:
-      - 'ed/idl/**'
-      - 'ed/idlpatches/**'
-      - 'packages/idl/**'
+      - 'ed/css/**'
+      - 'ed/csspatches/**'
+      - 'packages/css/**'
   workflow_dispatch:
 
 jobs:
@@ -31,6 +31,6 @@ jobs:
       run: npm test
 
     - name: Prepare a pre-release pull request if needed
-      run: node tools/prepare-release.js idl
+      run: node tools/prepare-release.js css
       with:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

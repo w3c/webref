@@ -1,0 +1,33 @@
+# Publish a new package when a pre-release PR is merged.
+#
+# Job does nothing if PR that was merged is not a pre-release PR.
+
+name: "Publish @webref package if needed"
+
+on:
+  pull_requests:
+    branches:
+      - 'release-*'
+    types: [closed]
+
+jobs:
+  release:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14.x
+
+    - name: Checkout webref
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Release package if needed
+      run: node tools/release-package.js ${{ github.event.pull_request.number }}
+      with:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
