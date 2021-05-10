@@ -69,6 +69,16 @@ function computeDiff(type) {
     `diff ${installedFiles} packages/${type} --ignore-trailing-space --exclude=package.json --unified=3 || echo -n`,
     { encoding: "utf8" });
 
+  // Diff includes added/removed files but they are hard to detect inline,
+  // let's extract them and list them separately
+  const reAdded = new RegExp(`^Only in packages/${type}: (.*)$`, "gm");
+  const added = Array.from(diff.matchAll(reAdded)).map(res => res[1]);
+  diff = diff.replace(reAdded, "");
+
+  const reDeleted = new RegExp(`^Only in ${installedFiles.replace(/\\/g, "\\\\")}: (.*)$`, "gm");
+  const deleted = Array.from(diff.matchAll(reDeleted)).map(res => res[1]);
+  diff = diff.replace(reDeleted, "");
+
   // Clean up tmp folder
   try {
     rimraf.sync(tmpFolder);
@@ -85,6 +95,25 @@ function computeDiff(type) {
   diff = diff
     .replace(/\-n\s*$/, "")
     .replace(new RegExp(tmpFolder.replace(/\\/g, "\\\\\\\\"), "g"), "webref");
+
+  // Prepend diff with new and deleted files
+  diff = diff
+    .replace(/\n+(diff --ignore-trailing-space )/g, "\n\n$1")
+    .trim();
+
+  if (deleted.length > 0) {
+    diff = "Released package files that no longer exist in the repo:\n" +
+      deleted.map(file => `- ${file}`).join("\n") +
+      "\n\n" +
+      diff;
+  }
+
+  if (added.length > 0) {
+    diff = "New repo files that are not yet in the released package:\n" +
+      added.map(file => `- ${file}`).join("\n") +
+      "\n\n" +
+      diff;
+  }
 
   return diff;
 }
