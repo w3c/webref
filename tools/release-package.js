@@ -120,7 +120,7 @@ const GH_TOKEN = (() => {
   }
 })();
 if (!GH_TOKEN) {
-  console.error("Env variable GH_TOKEN must be set to some personal access token");
+  console.error("GH_TOKEN must be set to some personal access token as an env variable or in a config.json file");
   process.exit(1);
 }
 
@@ -132,8 +132,8 @@ const NPM_TOKEN = (() => {
   }
 })();
 if (!NPM_TOKEN) {
-  console.error("Env variable NPM_TOKEN must be set to an npm token");
-  process.exit(2);
+  console.error("NPM_TOKEN must be set to an npm token as an env variable or in a config.json file");
+  process.exit(1);
 }
 
 // Note: npm-publish has a bug and needs an "INPUT_TOKEN" env variable:
@@ -155,4 +155,5 @@ releasePackage(prereleasePR)
   })
   .catch(err => {
     console.error(err);
+    process.exit(1);
   });

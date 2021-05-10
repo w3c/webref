@@ -64,9 +64,9 @@ function computeDiff(type) {
   // The "diff" command exits with a non zero status code when there is a diff,
   // which would throw an exception. Final "echo" command turns that status
   // code to 0 to avoid the exception.
-  const installedIdl = path.join(tmpFolder, "node_modules", "@webref", type);
+  const installedFiles = path.join(tmpFolder, "node_modules", "@webref", type);
   let diff = execSync(
-    `diff ${installedIdl} packages/${type} --ignore-trailing-space --exclude=package.json --unified=3 || echo -n`,
+    `diff ${installedFiles} packages/${type} --ignore-trailing-space --exclude=package.json --unified=3 || echo -n`,
     { encoding: "utf8" });
 
   // Clean up tmp folder
@@ -102,7 +102,7 @@ async function prepareRelease(type) {
 
   console.log("Look for a pending pre-release PR");
   const searchResponse = await octokit.search.issuesAndPullRequests({
-    q: `repo:${owner}/${repo} type:pr state:open 📦 Release @webref/${type}@ in:title`
+    q: `repo:${owner}/${repo} type:pr state:open head:release-${type}-`
   });
   const found = searchResponse?.data?.items?.[0];
 
@@ -153,7 +153,7 @@ async function prepareRelease(type) {
   const latestCommitResponse = await octokit.repos.getCommit({
     owner, repo, ref: "HEAD"
   });
-  const latestCommitSha = latestCommitResponse?.data?.sha;
+  const latestCommitSha = latestCommitResponse.data.sha;
   console.log(`- HEAD is at ${latestCommitSha}`);
 
   console.log();
@@ -230,7 +230,7 @@ async function prepareRelease(type) {
 
 ✍ If any change needs to be made before release, **do not add a commit** to this pull request. Changes should rather be handled in a separate pull request and pushed to the default branch. You may leave this pull request open in the meantime, or close it. The pre-release job will automatically update this pull request or create a new one once the updates have made their way to the default branch.
 
-🛈 Merging this pull request will bump the patch part of the version number in \`packages/${type}/package.json\` so that a new release cycle may begin.
+🛈 The actual change introduced by this pull request is a version bump in \`packages/${type}/package.json\`. You should not need to review that change to decide on whether a new release should be issued. The bumped version is not the version that will be released when this pull request is merged, but rather the version that will be released next time.
 
 \`\`\`diff
 ${diff}
@@ -284,7 +284,7 @@ const GH_TOKEN = (() => {
   }
 })();
 if (!GH_TOKEN) {
-  console.error("Env variable GH_TOKEN must be set to some personal access token");
+  console.error("GH_TOKEN must be set to some personal access token as an env variable or in a config.json file");
   process.exit(1);
 }
 
@@ -302,4 +302,5 @@ prepareRelease(packageType)
   })
   .catch(err => {
     console.error(err);
+    process.exit(1);
   });
