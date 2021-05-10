@@ -2061,7 +2061,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Fetch Standard](https://fetch.spec.whatwg.org/) links to:
     * [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/) but related reference "HR-TIME-2" uses URL [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/)
     * [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/) but related reference "HR-TIME-2" uses URL [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/)
-    * [`https://www.w3.org/TR/resource-timing-2/`](https://www.w3.org/TR/resource-timing-2/) but related reference "RESOURCE-TIMING-2" uses URL [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/)
+    * [`https://www.w3.org/TR/resource-timing-2/`](https://www.w3.org/TR/resource-timing-2/) but related reference "RESOURCE-TIMING" uses URL [`https://w3c.github.io/resource-timing/`](https://w3c.github.io/resource-timing/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/) links to [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - [File API](https://w3c.github.io/FileAPI/) links to [`https://w3c.github.io/media-source/`](https://w3c.github.io/media-source/) but related reference "MEDIA-SOURCE" uses URL [`https://www.w3.org/TR/media-source/`](https://www.w3.org/TR/media-source/)
 - [File System Access](https://wicg.github.io/file-system-access/) links to:
@@ -2415,7 +2415,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#parse-error-duplicate-attribute`](https://html.spec.whatwg.org/#parse-error-duplicate-attribute)
      * [`https://html.spec.whatwg.org/#parse-errors`](https://html.spec.whatwg.org/#parse-errors)
      * [`https://fetch.spec.whatwg.org/#concept-main-fetch`](https://fetch.spec.whatwg.org/#concept-main-fetch)
-     * [`https://fetch.spec.whatwg.org/#concept-http-network-fetch`](https://fetch.spec.whatwg.org/#concept-http-network-fetch)
      * [`https://url.spec.whatwg.org/#concept-base-url`](https://url.spec.whatwg.org/#concept-base-url)
      * [`https://url.spec.whatwg.org/#default-port`](https://url.spec.whatwg.org/#default-port)
      * [`https://w3c.github.io/reporting/#visible-to-reportingobservers`](https://w3c.github.io/reporting/#visible-to-reportingobservers)
@@ -3803,7 +3802,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1301 problematic external links found in 199 specifications
+=> 1300 problematic external links found in 199 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4835,6 +4834,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/reporting/#group`](https://w3c.github.io/reporting/#group)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/):
      * [`https://w3c.github.io/webappsec-csp/#port-part-match`](https://w3c.github.io/webappsec-csp/#port-part-match)
+     * [`https://fetch.spec.whatwg.org/#concept-response-csp-list`](https://fetch.spec.whatwg.org/#concept-response-csp-list)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/):
      * [`https://html.spec.whatwg.org/#dom-window-requestanimationframe`](https://html.spec.whatwg.org/#dom-window-requestanimationframe)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/):
@@ -5278,8 +5278,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/remote-playback/#dfn-media-resources`](https://w3c.github.io/remote-playback/#dfn-media-resources)
 - [Origin Policy](https://wicg.github.io/origin-policy/):
      * [`https://html.spec.whatwg.org/#concept-document-csp-list`](https://html.spec.whatwg.org/#concept-document-csp-list)
+     * [`https://w3c.github.io/webappsec-csp/#set-response-csp-list`](https://w3c.github.io/webappsec-csp/#set-response-csp-list)
      * [`https://xhr.spec.whatwg.org/#sync-xhr`](https://xhr.spec.whatwg.org/#sync-xhr)
      * [`https://fetch.spec.whatwg.org/#concept-body-wait`](https://fetch.spec.whatwg.org/#concept-body-wait)
+     * [`https://fetch.spec.whatwg.org/#concept-response-csp-list`](https://fetch.spec.whatwg.org/#concept-response-csp-list)
      * [`https://wicg.github.io/feature-policy/#serialized-feature-policy`](https://wicg.github.io/feature-policy/#serialized-feature-policy)
      * [`https://wicg.github.io/feature-policy/#feature-policy-header`](https://wicg.github.io/feature-policy/#feature-policy-header)
      * [`https://infra.spec.whatwg.org/#parse-json-into-infra-values`](https://infra.spec.whatwg.org/#parse-json-into-infra-values)
@@ -5559,7 +5561,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 602 problematic external links found in 155 specifications
+=> 605 problematic external links found in 155 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
