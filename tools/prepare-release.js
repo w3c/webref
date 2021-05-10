@@ -26,10 +26,9 @@ const os = require("os");
 const { execSync } = require("child_process");
 const rimraf = require("rimraf");
 
-// Repository to process and PR reviewers
+// Repository to process
 const owner = "w3c";
 const repo = "webref";
-const reviewers = ["dontcallmedom", "foolip", "tidoust"];
 
 // Current package version in npm
 let latestReleasedVersion = "";
@@ -143,7 +142,7 @@ async function prepareRelease(type) {
     null;
   const pendingPR = pendingPRResponse?.data;
   console.log(pendingPR ?
-    `- Found pending pre-release PR: ${pendingPR.title} (${pendingPR.number})` :
+    `- Found pending pre-release PR: ${pendingPR.title} (#${pendingPR.number})` :
     "- No pending pre-release PR");
 
   console.log();
@@ -287,16 +286,6 @@ ${diff}
       head: prRef,
       base: defaultBranch,
       title, body
-    });
-
-    // Note: If script gets run locally by one of the reviewers, the following
-    // command will fail because a review cannot be requested from the PR
-    // author. That won't happen when the script gets run by a bot.
-    console.log(`- Assign reviewers ${reviewers.join(", ")}`);
-    await octokit.pulls.requestReviewers({
-      owner, repo,
-      pull_number: prResponse.data.number,
-      reviewers
     });
   }
 }
