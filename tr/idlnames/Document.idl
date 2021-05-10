@@ -162,11 +162,6 @@ partial interface Document {
     readonly attribute boolean wasDiscarded;
 };
 
-// Source: Private Network Access (https://wicg.github.io/private-network-access/)
-partial interface Document {
-  readonly attribute AddressSpace addressSpace;
-};
-
 // Source: Text Fragments (https://wicg.github.io/scroll-to-text-fragment/)
 partial interface Document {
     [SameObject] readonly attribute FragmentDirective fragmentDirective;

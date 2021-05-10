@@ -1,0 +1,7 @@
+// Source: Prioritized Task Scheduling (https://wicg.github.io/scheduling-apis/)
+[Exposed=(Window,Worker)]
+interface TaskController : AbortController {
+  constructor(optional TaskPriority priority = "user-visible");
+
+  undefined setPriority(TaskPriority priority);
+};

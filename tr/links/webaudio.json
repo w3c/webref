@@ -6,11 +6,12 @@
   "links": {
     "https://www.w3.org/TR/": [],
     "https://www.w3.org/2011/audio/": [],
+    "https://www.w3.org/2020/Process-20200915/": [
+      "allow-new-features"
+    ],
     "https://github.com/WebAudio/web-audio-api/issues/new": [],
     "https://lists.w3.org/Archives/Public/public-audio/": [],
-    "https://www.w3.org/2020/Process-20200915/": [
-      "dfn-wide-review"
-    ],
+    "https://www.w3.org/2002/09/wbs/myQuestionnaires": [],
     "https://webaudio.github.io/web-audio-api/implementation-report.html": [],
     "https://www.w3.org/Consortium/Patent-Policy-20200915/": [
       "def-essential",
@@ -20,11 +21,12 @@
     "https://html.spec.whatwg.org/": [
       "audio",
       "video",
+      "media-element-event-task-source",
       "eventhandler",
       "concept-relevant-global",
       "concept-document-window",
       "fully-active",
-      "queue-a-task",
+      "queue-a-media-element-task",
       "htmlmediaelement",
       "sticky-activation",
       "concept-current-everything",
@@ -40,6 +42,8 @@
       "messageport",
       "workletglobalscope",
       "structureddeserialize",
+      "queue-a-task",
+      "errorevent",
       "messagechannel",
       "dom-messagechannel-port1",
       "dom-messagechannel-port2",
@@ -49,6 +53,12 @@
       "dom-messageport-close",
       "ports-and-garbage-collection",
       "in-parallel",
+      "task-queue",
+      "prepare-to-run-script",
+      "current-settings-object",
+      "prepare-to-run-a-callback",
+      "clean-up-after-running-a-callback",
+      "clean-up-after-running-script",
       "perform-a-microtask-checkpoint",
       "unloading-document-cleanup-steps"
     ],
@@ -98,13 +108,15 @@
       "construct-a-callback-function",
       "dictionary-to-es",
       "idl-record",
-      "idl-frozen-array"
+      "idl-frozen-array",
+      "web-idl-arguments-list",
+      "web-idl-arguments-list-converting"
     ],
     "https://dom.spec.whatwg.org/": [
       "eventtarget",
       "event",
-      "dictdef-eventinit",
-      "concept-event-fire"
+      "concept-event-fire",
+      "dictdef-eventinit"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/audioWorklet": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/currentTime": [],
@@ -128,7 +140,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createOscillator": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPanner": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createPeriodicWave": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createScriptProcessor": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createStereoPanner": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/createWaveShaper": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/BaseAudioContext/decodeAudioData": [],
@@ -137,6 +148,9 @@
       "sec-detacharraybuffer",
       "sec-data-blocks",
       "sec-createbytedatablock",
+      "sec-get-o-p",
+      "sec-completion-record-specification-type",
+      "sec-call",
       "sec-toboolean"
     ],
     "https://mimesniff.spec.whatwg.org/": [
@@ -147,8 +161,8 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/baseLatency": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/outputLatency": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/close": [],
-    "https://w3c.github.io/mediacapture-fromelement/": [
-      "dom-htmlmediaelement-capturestream()"
+    "https://www.w3.org/TR/mediacapture-fromelement/": [
+      "dom-htmlmediaelement-capturestream"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaElementSource": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioContext/createMediaStreamDestination": [],
@@ -160,7 +174,7 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioContextOptions": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioContextOptions/latencyHint": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioContextOptions/sampleRate": [],
-    "https://www.w3.org/TR/hr-time-2/": [
+    "https://www.w3.org/TR/hr-time-3/": [
       "dom-domhighrestimestamp"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/OfflineAudioContext": [],
@@ -208,11 +222,8 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/ended_event": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/onended": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/onended": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/start": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/start": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioScheduledSourceNode/stop": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/stop": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/AnalyserNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/fftSize": [],
@@ -245,7 +256,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/upX": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/upY": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioListener/upZ": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode": [],
     "https://en.wikipedia.org/wiki/Low-pass_filter": [],
     "https://en.wikipedia.org/wiki/Q_factor": [],
     "https://en.wikipedia.org/wiki/High-pass_filter": [],
@@ -256,6 +266,7 @@
     ],
     "https://en.wikipedia.org/wiki/Group_delay": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/BiquadFilterNode": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/Q": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/detune": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode/frequency": [],
@@ -272,6 +283,13 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/ConstantSourceNode/offset": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode/ConvolverNode": [],
+    "https://infra.spec.whatwg.org/": [
+      "map-exists",
+      "code-unit",
+      "struct",
+      "struct-item",
+      "ordered-map"
+    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode/buffer": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode/normalize": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/DelayNode": [],
@@ -285,12 +303,13 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/reduction": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/release": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode/threshold": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/GainNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/GainNode/GainNode": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/GainNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/GainNode/gain": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/IIRFilterNode": [],
     "https://en.wikipedia.org/wiki/Infinite_impulse_response": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/IIRFilterNode/IIRFilterNode": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/IIRFilterNode": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/IIRFilterNode/getFrequencyResponse": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaElementAudioSourceNode/MediaElementAudioSourceNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaElementAudioSourceNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaElementAudioSourceNode/mediaElement": [],
@@ -302,12 +321,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioDestinationNode/stream": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceNode/MediaStreamAudioSourceNode": [],
-    "https://infra.spec.whatwg.org/": [
-      "code-unit",
-      "struct",
-      "struct-item",
-      "ordered-map"
-    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceNode/mediaStream": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceOptions": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamAudioSourceOptions/mediaStream": [],
@@ -315,8 +328,8 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceNode/MediaStreamTrackAudioSourceNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceOptions": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrackAudioSourceOptions/mediaStreamTrack": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode": [],
     "https://en.wikipedia.org/wiki/Aliasing": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/OscillatorNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode/detune": [],
     "https://en.wikipedia.org/wiki/Cent_(music)": [],
@@ -339,8 +352,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/positionZ": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/refDistance": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/rolloffFactor": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/setOrientation": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/PannerNode/setPosition": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave/PeriodicWave": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/PeriodicWave": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode": [],
@@ -353,11 +364,15 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorklet": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletGlobalScope": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletGlobalScope/registerProcessor": [],
-    "https://www.ecma-international.org/ecma-262/6.0/": [
+    "https://tc39.es/ecma262/": [
       "sec-isconstructor",
       "sec-get-o-p",
       "sec-ecmascript-data-types-and-values",
-      "sec-iscallable"
+      "sec-setintegritylevel",
+      "sec-returnifabrupt-shorthands",
+      "sec-iscallable",
+      "sec-throwcompletion",
+      "sec-native-error-types-used-in-this-standard-typeerror"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletNode/AudioWorkletNode": [],
@@ -369,20 +384,14 @@
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletProcessor": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletProcessor/AudioWorkletProcessor": [],
-    "https://www.w3.org/TR/html50/": [
-      "the-errorevent-interface"
-    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/AudioWorkletProcessor/port": [],
-    "https://www.ecma-international.org/ecma-262/": [
-      "sec-setintegritylevel"
-    ],
     "https://openal.org/": [],
     "https://en.wikipedia.org/wiki/Head-related_transfer_function": [],
-    "https://w3ctag.github.io/security-questionnaire/": [
+    "https://www.w3.org/TR/security-privacy-questionnaire/": [
       "questions"
     ],
     "https://audiofingerprint.openwpm.com/": [],
-    "https://sec.cs.ucl.ac.uk/users/smurdoch/talks/eurobsdcon07hotornot.pdf": [],
+    "https://murdoch.is/talks/eurobsdcon07hotornot.pdf": [],
     "https://pdfs.semanticscholar.org/cfd2/6a17234696593919df3f880a235d6ac5871d.pdf": [],
     "https://w3c.github.io/hr-time/": [
       "sec-privacy-security"
@@ -390,6 +399,26 @@
     "https://padenot.github.io/web-audio-perf/": [
       "latency"
     ],
+    "https://github.com/WebAudio/web-audio-api/pull/2333": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2334": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2331": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2328": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2318": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2317": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2312": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2311": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2310": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2308": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2307": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2306": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2304": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2301": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2286": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2277": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2273": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2256": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2250": [],
+    "https://github.com/WebAudio/web-audio-api/pull/2298": [],
     "https://github.com/WebAudio/web-audio-api/pull/2201": [],
     "https://github.com/WebAudio/web-audio-api/issues/2191": [],
     "https://github.com/WebAudio/web-audio-api/pull/2210": [],
@@ -500,7 +529,6 @@
     "https://github.com/WebAudio/web-audio-api/issues/1741": [],
     "https://github.com/WebAudio/web-audio-api/issues/1745": [],
     "https://github.com/WebAudio/web-audio-api/issues/1743": [],
-    "https://tc39.es/ecma262/": [],
     "https://tools.ietf.org/html/rfc2119": [],
     "https://www.w3.org/TR/webrtc/": [],
     "https://www.w3.org/TR/2dcontext/": [],

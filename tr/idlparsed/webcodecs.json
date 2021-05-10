@@ -13,8 +13,9 @@
           "VideoEncoder",
           "EncodedAudioChunk",
           "EncodedVideoChunk",
-          "AudioFrame",
-          "VideoFrame"
+          "AudioData",
+          "VideoFrame",
+          "ImageDecoder"
         ],
         "DedicatedWorker": [
           "AudioDecoder",
@@ -23,16 +24,21 @@
           "VideoEncoder",
           "EncodedAudioChunk",
           "EncodedVideoChunk",
-          "AudioFrame",
-          "VideoFrame"
+          "AudioData",
+          "VideoFrame",
+          "ImageDecoder"
         ]
       },
       "functions": {
         "Window": [
-          "Plane"
+          "Plane",
+          "ImageTrackList",
+          "ImageTrack"
         ],
         "DedicatedWorker": [
-          "Plane"
+          "Plane",
+          "ImageTrackList",
+          "ImageTrack"
         ]
       }
     },
@@ -276,7 +282,7 @@
         "partial": false
       },
       "AudioDecoderInit": {
-        "fragment": "dictionary AudioDecoderInit {\n  required AudioFrameOutputCallback output;\n  required WebCodecsErrorCallback error;\n};",
+        "fragment": "dictionary AudioDecoderInit {\n  required AudioDataOutputCallback output;\n  required WebCodecsErrorCallback error;\n};",
         "type": "dictionary",
         "name": "AudioDecoderInit",
         "inheritance": null,
@@ -291,7 +297,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AudioFrameOutputCallback"
+              "idlType": "AudioDataOutputCallback"
             },
             "default": null,
             "required": true
@@ -315,10 +321,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "AudioFrameOutputCallback": {
-        "fragment": "callback AudioFrameOutputCallback = undefined(AudioFrame output);",
+      "AudioDataOutputCallback": {
+        "fragment": "callback AudioDataOutputCallback = undefined(AudioData output);",
         "type": "callback",
-        "name": "AudioFrameOutputCallback",
+        "name": "AudioDataOutputCallback",
         "idlType": {
           "type": "return-type",
           "extAttrs": [],
@@ -338,7 +344,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AudioFrame"
+              "idlType": "AudioData"
             },
             "default": null,
             "optional": false,
@@ -658,7 +664,7 @@
         "extAttrs": []
       },
       "AudioEncoder": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioEncoder {\n  constructor(AudioEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(AudioEncoderConfig config);\n  undefined encode(AudioFrame frame);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioEncoderSupport> isConfigSupported(AudioEncoderConfig config);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioEncoder {\n  constructor(AudioEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(AudioEncoderConfig config);\n  undefined encode(AudioData data);\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<AudioEncoderSupport> isConfigSupported(AudioEncoderConfig config);\n};",
         "type": "interface",
         "name": "AudioEncoder",
         "inheritance": null,
@@ -761,7 +767,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "frame",
+                "name": "data",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -769,7 +775,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AudioFrame"
+                  "idlType": "AudioData"
                 },
                 "default": null,
                 "optional": false,
@@ -2367,10 +2373,10 @@
         ],
         "extAttrs": []
       },
-      "AudioFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioFrame {\n  constructor(AudioFrameInit init);\n  readonly attribute unsigned long long timestamp;\n  readonly attribute AudioBuffer? buffer;\n  undefined close();\n};",
+      "AudioData": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat sampleFormat;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute unsigned long allocationSize;\n  readonly attribute unsigned long long duration;\n  readonly attribute unsigned long long timestamp;\n\n  undefined copyTo([AllowShared] BufferSource destination, unsigned long planeNumber);\n  AudioData clone();\n  undefined close();\n};",
         "type": "interface",
-        "name": "AudioFrame",
+        "name": "AudioData",
         "inheritance": null,
         "members": [
           {
@@ -2386,7 +2392,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "AudioFrameInit"
+                  "idlType": "AudioDataInit"
                 },
                 "default": null,
                 "optional": false,
@@ -2394,6 +2400,96 @@
               }
             ],
             "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "sampleFormat",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioSampleFormat"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "sampleRate",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "numberOfFrames",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "numberOfChannels",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "allocationSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "duration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           },
           {
             "type": "attribute",
@@ -2411,19 +2507,74 @@
             "readonly": true
           },
           {
-            "type": "attribute",
-            "name": "buffer",
+            "type": "operation",
+            "name": "copyTo",
             "idlType": {
-              "type": "attribute-type",
+              "type": "return-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
-              "idlType": "AudioBuffer"
+              "idlType": "undefined"
             },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "destination",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "AllowShared",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "planeNumber",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
             "extAttrs": [],
-            "special": "",
-            "readonly": true
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "clone",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioData"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
           },
           {
             "type": "operation",
@@ -2461,12 +2612,72 @@
         ],
         "partial": false
       },
-      "AudioFrameInit": {
-        "fragment": "dictionary AudioFrameInit {\n  required unsigned long long timestamp;\n  required AudioBuffer buffer;\n};",
+      "AudioDataInit": {
+        "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat sampleFormat;\n  required float sampleRate;\n  required unsigned long numberOfFrames;\n  required unsigned long numberOfChannels;\n  required unsigned long long timestamp;\n  required BufferSource data;\n};",
         "type": "dictionary",
-        "name": "AudioFrameInit",
+        "name": "AudioDataInit",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "sampleFormat",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioSampleFormat"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "sampleRate",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "float"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "numberOfFrames",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "numberOfChannels",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true
+          },
           {
             "type": "field",
             "name": "timestamp",
@@ -2484,7 +2695,7 @@
           },
           {
             "type": "field",
-            "name": "buffer",
+            "name": "data",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -2492,7 +2703,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "AudioBuffer"
+              "idlType": "BufferSource"
             },
             "default": null,
             "required": true
@@ -2501,8 +2712,44 @@
         "extAttrs": [],
         "partial": false
       },
+      "AudioSampleFormat": {
+        "fragment": "enum AudioSampleFormat {\n  \"U8\",\n  \"S16\",\n  \"S32\",\n  \"FLT\",\n  \"S16P\",\n  \"S32P\",\n  \"FLTP\",\n};",
+        "type": "enum",
+        "name": "AudioSampleFormat",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "U8"
+          },
+          {
+            "type": "enum-value",
+            "value": "S16"
+          },
+          {
+            "type": "enum-value",
+            "value": "S32"
+          },
+          {
+            "type": "enum-value",
+            "value": "FLT"
+          },
+          {
+            "type": "enum-value",
+            "value": "S16P"
+          },
+          {
+            "type": "enum-value",
+            "value": "S32P"
+          },
+          {
+            "type": "enum-value",
+            "value": "FLTP"
+          }
+        ],
+        "extAttrs": []
+      },
       "VideoFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoFrame {\n  constructor(ImageBitmap imageBitmap, optional VideoFrameInit frameInit = {});\n  constructor(PixelFormat pixelFormat, sequence<(Plane or PlaneInit)> planes,\n              optional VideoFrameInit frameInit = {});\n\n  readonly attribute PixelFormat format;\n  readonly attribute FrozenArray<Plane> planes;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute unsigned long cropLeft;\n  readonly attribute unsigned long cropTop;\n  readonly attribute unsigned long cropWidth;\n  readonly attribute unsigned long cropHeight;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;\n  readonly attribute unsigned long long? timestamp;\n\n  undefined destroy();\n  VideoFrame clone();\n\n  Promise<ImageBitmap> createImageBitmap(\n    optional ImageBitmapOptions options = {});\n\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor(sequence<(Plane or PlaneInit)> planes,\n              VideoFramePlaneInit init);\n\n  readonly attribute PixelFormat format;\n  readonly attribute FrozenArray<Plane>? planes;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute unsigned long cropLeft;\n  readonly attribute unsigned long cropTop;\n  readonly attribute unsigned long cropWidth;\n  readonly attribute unsigned long cropHeight;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;\n  readonly attribute unsigned long long? timestamp;\n\n  VideoFrame clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoFrame",
         "inheritance": null,
@@ -2512,7 +2759,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "imageBitmap",
+                "name": "image",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -2520,7 +2767,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ImageBitmap"
+                  "idlType": "CanvasImageSource"
                 },
                 "default": null,
                 "optional": false,
@@ -2528,7 +2775,7 @@
               },
               {
                 "type": "argument",
-                "name": "frameInit",
+                "name": "init",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -2550,22 +2797,6 @@
           {
             "type": "constructor",
             "arguments": [
-              {
-                "type": "argument",
-                "name": "pixelFormat",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "PixelFormat"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
               {
                 "type": "argument",
                 "name": "planes",
@@ -2610,7 +2841,7 @@
               },
               {
                 "type": "argument",
-                "name": "frameInit",
+                "name": "init",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -2618,12 +2849,10 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "VideoFrameInit"
+                  "idlType": "VideoFramePlaneInit"
                 },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
+                "default": null,
+                "optional": false,
                 "variadic": false
               }
             ],
@@ -2651,7 +2880,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "FrozenArray",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": [
                 {
@@ -2820,21 +3049,6 @@
           },
           {
             "type": "operation",
-            "name": "destroy",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
             "name": "clone",
             "idlType": {
               "type": "return-type",
@@ -2850,44 +3064,16 @@
           },
           {
             "type": "operation",
-            "name": "createImageBitmap",
+            "name": "close",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ImageBitmap"
-                }
-              ]
+              "idlType": "undefined"
             },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ImageBitmapOptions"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           }
@@ -2913,11 +3099,66 @@
         "partial": false
       },
       "VideoFrameInit": {
-        "fragment": "dictionary VideoFrameInit {\n  unsigned long codedWidth;\n  unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  unsigned long long duration;\n  unsigned long long timestamp;\n};",
+        "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;\n  unsigned long long timestamp;\n};",
         "type": "dictionary",
         "name": "VideoFrameInit",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "duration",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "timestamp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "VideoFramePlaneInit": {
+        "fragment": "dictionary VideoFramePlaneInit {\n  required PixelFormat format;\n  required unsigned long codedWidth;\n  required unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  unsigned long long duration;\n  unsigned long long timestamp;\n};",
+        "type": "dictionary",
+        "name": "VideoFramePlaneInit",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "format",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PixelFormat"
+            },
+            "default": null,
+            "required": true
+          },
           {
             "type": "field",
             "name": "codedWidth",
@@ -2931,7 +3172,7 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -2946,7 +3187,7 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -3242,6 +3483,691 @@
           }
         ],
         "extAttrs": []
+      },
+      "ImageDecoder": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageDecoder {\n  constructor(ImageDecoderInit init);\n\n  readonly attribute boolean complete;\n  readonly attribute Promise<undefined> completed;\n  readonly attribute ImageTrackList tracks;\n\n  Promise<ImageDecodeResult> decode(optional ImageDecodeOptions options = {});\n  undefined reset();\n  undefined close();\n\n  static Promise<boolean> isTypeSupported(DOMString type);\n};",
+        "type": "interface",
+        "name": "ImageDecoder",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "init",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ImageDecoderInit"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "complete",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "completed",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "tracks",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ImageTrackList"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "decode",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ImageDecodeResult"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ImageDecodeOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "reset",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "close",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "isTypeSupported",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "ImageBufferSource": {
+        "fragment": "typedef (BufferSource or ReadableStream) ImageBufferSource;",
+        "type": "typedef",
+        "name": "ImageBufferSource",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ReadableStream"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "ImageDecoderInit": {
+        "fragment": "dictionary ImageDecoderInit {\n  required DOMString type;\n  required ImageBufferSource data;\n  PremultiplyAlpha premultiplyAlpha = \"default\";\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  unsigned long desiredWidth;\n  unsigned long desiredHeight;\n  boolean preferAnimation;\n};",
+        "type": "dictionary",
+        "name": "ImageDecoderInit",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "data",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ImageBufferSource"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "premultiplyAlpha",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PremultiplyAlpha"
+            },
+            "default": {
+              "type": "string",
+              "value": "default"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "colorSpaceConversion",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ColorSpaceConversion"
+            },
+            "default": {
+              "type": "string",
+              "value": "default"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "desiredWidth",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "desiredHeight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "preferAnimation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ImageDecodeOptions": {
+        "fragment": "dictionary ImageDecodeOptions {\n  unsigned long frameIndex = 0;\n  boolean completeFramesOnly = true;\n};",
+        "type": "dictionary",
+        "name": "ImageDecodeOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "frameIndex",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "completeFramesOnly",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ImageDecodeResult": {
+        "fragment": "dictionary ImageDecodeResult {\n  required VideoFrame image;\n  required boolean complete;\n};",
+        "type": "dictionary",
+        "name": "ImageDecodeResult",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "image",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "VideoFrame"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "complete",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "ImageTrackList": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrackList {\n  getter ImageTrack (unsigned long index);\n\n  readonly attribute Promise<undefined> ready;\n  readonly attribute unsigned long length;\n  readonly attribute long selectedIndex;\n  readonly attribute ImageTrack? selectedTrack;\n};",
+        "type": "interface",
+        "name": "ImageTrackList",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ImageTrack"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          },
+          {
+            "type": "attribute",
+            "name": "ready",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "selectedIndex",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "selectedTrack",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "ImageTrack"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "ImageTrack": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrack : EventTarget {\n  readonly attribute boolean animated;\n  readonly attribute unsigned long frameCount;\n  readonly attribute unrestricted float repetitionCount;\n  attribute EventHandler onchange;\n  attribute boolean selected;\n};",
+        "type": "interface",
+        "name": "ImageTrack",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "animated",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "frameCount",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "repetitionCount",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unrestricted float"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "onchange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "selected",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
       }
     },
     "idlExtendedNames": {},
@@ -3254,9 +4180,12 @@
         "VideoEncoder",
         "EncodedAudioChunk",
         "EncodedVideoChunk",
-        "AudioFrame",
+        "AudioData",
         "VideoFrame",
-        "Plane"
+        "Plane",
+        "ImageDecoder",
+        "ImageTrackList",
+        "ImageTrack"
       ],
       "DedicatedWorker": [
         "AudioDecoder",
@@ -3265,9 +4194,12 @@
         "VideoEncoder",
         "EncodedAudioChunk",
         "EncodedVideoChunk",
-        "AudioFrame",
+        "AudioData",
         "VideoFrame",
-        "Plane"
+        "Plane",
+        "ImageDecoder",
+        "ImageTrackList",
+        "ImageTrack"
       ]
     },
     "dependencies": {
@@ -3279,7 +4211,7 @@
         "AudioDecoderSupport"
       ],
       "AudioDecoderInit": [
-        "AudioFrameOutputCallback",
+        "AudioDataOutputCallback",
         "WebCodecsErrorCallback"
       ],
       "VideoDecoder": [
@@ -3297,7 +4229,7 @@
         "AudioEncoderInit",
         "CodecState",
         "AudioEncoderConfig",
-        "AudioFrame",
+        "AudioData",
         "AudioEncoderSupport"
       ],
       "AudioEncoderInit": [
@@ -3350,30 +4282,59 @@
       "EncodedVideoChunkInit": [
         "EncodedVideoChunkType"
       ],
-      "AudioFrame": [
-        "AudioFrameInit",
-        "AudioBuffer"
+      "AudioData": [
+        "AudioDataInit",
+        "AudioSampleFormat",
+        "AudioData"
       ],
-      "AudioFrameInit": [
-        "AudioBuffer"
+      "AudioDataInit": [
+        "AudioSampleFormat"
       ],
       "VideoFrame": [
-        "ImageBitmap",
+        "CanvasImageSource",
         "VideoFrameInit",
-        "PixelFormat",
         "Plane",
         "PlaneInit",
-        "VideoFrame",
-        "ImageBitmapOptions"
+        "VideoFramePlaneInit",
+        "PixelFormat",
+        "VideoFrame"
       ],
       "VideoFrameInit": [],
+      "VideoFramePlaneInit": [
+        "PixelFormat"
+      ],
       "Plane": [],
-      "PlaneInit": []
+      "PlaneInit": [],
+      "ImageDecoder": [
+        "ImageDecoderInit",
+        "ImageTrackList",
+        "ImageDecodeResult",
+        "ImageDecodeOptions"
+      ],
+      "ImageDecoderInit": [
+        "ImageBufferSource",
+        "PremultiplyAlpha",
+        "ColorSpaceConversion"
+      ],
+      "ImageDecodeOptions": [],
+      "ImageDecodeResult": [
+        "VideoFrame"
+      ],
+      "ImageTrackList": [
+        "ImageTrack"
+      ],
+      "ImageTrack": [
+        "EventTarget",
+        "EventHandler"
+      ]
     },
     "externalDependencies": [
-      "AudioBuffer",
-      "ImageBitmap",
-      "ImageBitmapOptions"
+      "CanvasImageSource",
+      "ReadableStream",
+      "PremultiplyAlpha",
+      "ColorSpaceConversion",
+      "EventTarget",
+      "EventHandler"
     ],
     "hasObsoleteIdl": false
   }

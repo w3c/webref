@@ -37,6 +37,11 @@ partial interface mixin WindowOrWorkerGlobalScope {
   readonly attribute FrozenArray<DOMString> originPolicyIds;
 };
 
+// Source: Prioritized Task Scheduling (https://wicg.github.io/scheduling-apis/)
+partial interface mixin WindowOrWorkerGlobalScope {
+  readonly attribute Scheduler scheduler;
+};
+
 // Source: High Resolution Time (https://www.w3.org/TR/hr-time-3/)
 partial interface mixin WindowOrWorkerGlobalScope {
   [Replaceable] readonly attribute Performance performance;

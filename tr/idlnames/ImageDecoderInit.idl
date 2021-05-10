@@ -1,0 +1,10 @@
+// Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
+dictionary ImageDecoderInit {
+  required DOMString type;
+  required ImageBufferSource data;
+  PremultiplyAlpha premultiplyAlpha = "default";
+  ColorSpaceConversion colorSpaceConversion = "default";
+  unsigned long desiredWidth;
+  unsigned long desiredHeight;
+  boolean preferAnimation;
+};

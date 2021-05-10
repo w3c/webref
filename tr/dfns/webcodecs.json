@@ -59,6 +59,78 @@
       "definedIn": "dt"
     },
     {
+      "id": "progressive-image",
+      "href": "https://www.w3.org/TR/webcodecs/#progressive-image",
+      "linkingText": [
+        "Progressive Image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "progressive-image-frame-generation",
+      "href": "https://www.w3.org/TR/webcodecs/#progressive-image-frame-generation",
+      "linkingText": [
+        "Progressive Image Frame Generation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "primary-image-track",
+      "href": "https://www.w3.org/TR/webcodecs/#primary-image-track",
+      "linkingText": [
+        "Primary Image Track"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "codec-processing-model",
+      "href": "https://www.w3.org/TR/webcodecs/#codec-processing-model",
+      "linkingText": [
+        "Codec Processing Model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "codec-processing-model-section",
+        "title": "Codec Processing Model",
+        "number": "2"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "control-thread",
       "href": "https://www.w3.org/TR/webcodecs/#control-thread",
       "linkingText": [
@@ -380,10 +452,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "callbackdef-audioframeoutputcallback",
-      "href": "https://www.w3.org/TR/webcodecs/#callbackdef-audioframeoutputcallback",
+      "id": "callbackdef-audiodataoutputcallback",
+      "href": "https://www.w3.org/TR/webcodecs/#callbackdef-audiodataoutputcallback",
       "linkingText": [
-        "AudioFrameOutputCallback"
+        "AudioDataOutputCallback"
       ],
       "localLinkingText": [],
       "type": "callback",
@@ -398,15 +470,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-audioframeoutputcallback-output",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audioframeoutputcallback-output",
+      "id": "dom-audiodataoutputcallback-output",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodataoutputcallback-output",
       "linkingText": [
         "output"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioFrameOutputCallback"
+        "AudioDataOutputCallback"
       ],
       "access": "public",
       "informative": false,
@@ -659,10 +731,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "output-audioframes",
-      "href": "https://www.w3.org/TR/webcodecs/#output-audioframes",
+      "id": "output-audiodata",
+      "href": "https://www.w3.org/TR/webcodecs/#output-audiodata",
       "linkingText": [
-        "Output AudioFrames"
+        "Output AudioData"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1167,6 +1239,24 @@
       "definedIn": "dt"
     },
     {
+      "id": "create-a-videoframe",
+      "href": "https://www.w3.org/TR/webcodecs/#create-a-videoframe",
+      "linkingText": [
+        "Create a VideoFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-algorithms",
+        "title": "Algorithms",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "reset-videodecoder",
       "href": "https://www.w3.org/TR/webcodecs/#reset-videodecoder",
       "linkingText": [
@@ -1262,15 +1352,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-audioencoder-encode-frame-frame",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-encode-frame-frame",
+      "id": "dom-audioencoder-encode-data-data",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-encode-data-data",
       "linkingText": [
-        "frame"
+        "data"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioEncoder/encode(frame)"
+        "AudioEncoder/encode(data)"
       ],
       "access": "public",
       "informative": false,
@@ -1542,7 +1632,7 @@
       "id": "dom-audioencoder-encode",
       "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-encode",
       "linkingText": [
-        "encode(frame)"
+        "encode(data)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -4042,10 +4132,28 @@
       "definedIn": "dt"
     },
     {
-      "id": "audioframe",
-      "href": "https://www.w3.org/TR/webcodecs/#audioframe",
+      "id": "media-resource",
+      "href": "https://www.w3.org/TR/webcodecs/#media-resource",
       "linkingText": [
-        "AudioFrame"
+        "media resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "raw-media-memory-model-reference-counting",
+        "title": "Reference Counting",
+        "number": "9.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "audiodata",
+      "href": "https://www.w3.org/TR/webcodecs/#audiodata",
+      "linkingText": [
+        "AudioData"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -4053,38 +4161,78 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audioframe-interface",
-        "title": "AudioFrame Interface",
-        "number": "9.1"
+        "id": "audiodata-interface",
+        "title": "AudioData Interface",
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-audioframe-audioframe-init-init",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audioframe-audioframe-init-init",
+      "id": "dom-audiodata-audiodata-init-init",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-audiodata-init-init",
       "linkingText": [
         "init"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioFrame/AudioFrame(init)",
-        "AudioFrame/constructor(init)"
+        "AudioData/AudioData(init)",
+        "AudioData/constructor(init)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audioframe-interface",
-        "title": "AudioFrame Interface",
-        "number": "9.1"
+        "id": "audiodata-interface",
+        "title": "AudioData Interface",
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-audioframeinit",
-      "href": "https://www.w3.org/TR/webcodecs/#dictdef-audioframeinit",
+      "id": "dom-audiodata-copyto-destination-planenumber-destination",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-copyto-destination-planenumber-destination",
       "linkingText": [
-        "AudioFrameInit"
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioData/copyTo(destination, planeNumber)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-interface",
+        "title": "AudioData Interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiodata-copyto-destination-planenumber-planenumber",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-copyto-destination-planenumber-planenumber",
+      "linkingText": [
+        "planeNumber"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioData/copyTo(destination, planeNumber)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-interface",
+        "title": "AudioData Interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-audiodatainit",
+      "href": "https://www.w3.org/TR/webcodecs/#dictdef-audiodatainit",
+      "linkingText": [
+        "AudioDataInit"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -4092,150 +4240,673 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audioframe-interface",
-        "title": "AudioFrame Interface",
-        "number": "9.1"
+        "id": "audiodata-interface",
+        "title": "AudioData Interface",
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-audioframeinit-timestamp",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audioframeinit-timestamp",
+      "id": "dom-audiodatainit-sampleformat",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodatainit-sampleformat",
+      "linkingText": [
+        "sampleFormat"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDataInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-interface",
+        "title": "AudioData Interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiodatainit-samplerate",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodatainit-samplerate",
+      "linkingText": [
+        "sampleRate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDataInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-interface",
+        "title": "AudioData Interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiodatainit-numberofframes",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodatainit-numberofframes",
+      "linkingText": [
+        "numberOfFrames"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDataInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-interface",
+        "title": "AudioData Interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiodatainit-numberofchannels",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodatainit-numberofchannels",
+      "linkingText": [
+        "numberOfChannels"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDataInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-interface",
+        "title": "AudioData Interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiodatainit-timestamp",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodatainit-timestamp",
       "linkingText": [
         "timestamp"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AudioFrameInit"
+        "AudioDataInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audioframe-interface",
-        "title": "AudioFrame Interface",
-        "number": "9.1"
+        "id": "audiodata-interface",
+        "title": "AudioData Interface",
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-audioframeinit-buffer",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audioframeinit-buffer",
+      "id": "dom-audiodatainit-data",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodatainit-data",
       "linkingText": [
-        "buffer"
+        "data"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "AudioFrameInit"
+        "AudioDataInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audioframe-interface",
-        "title": "AudioFrame Interface",
-        "number": "9.1"
+        "id": "audiodata-interface",
+        "title": "AudioData Interface",
+        "number": "9.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-audioframe-detached-slot",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audioframe-detached-slot",
+      "id": "dom-audiodata-detached-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-detached-slot",
       "linkingText": [
         "[[detached]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AudioFrame"
+        "AudioData"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audioframe-internal-slots",
+        "id": "audiodata-internal-slots",
         "title": "Internal Slots",
-        "number": "9.1.1"
+        "number": "9.2.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-audioframe-audioframe",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audioframe-audioframe",
+      "id": "dom-audiodata-resource-reference-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-resource-reference-slot",
       "linkingText": [
-        "AudioFrame(init)",
+        "[[resource reference]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-sample-format-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-sample-format-slot",
+      "linkingText": [
+        "[[sample format]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-sample-rate-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-sample-rate-slot",
+      "linkingText": [
+        "[[sample rate]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-number-of-frames-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-number-of-frames-slot",
+      "linkingText": [
+        "[[number of frames]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-number-of-channels-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-number-of-channels-slot",
+      "linkingText": [
+        "[[number of channels]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-timestamp-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-timestamp-slot",
+      "linkingText": [
+        "[[timestamp]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-audiodata",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-audiodata",
+      "linkingText": [
+        "AudioData(init)",
         "constructor(init)"
       ],
       "localLinkingText": [],
       "type": "constructor",
       "for": [
-        "AudioFrame"
+        "AudioData"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audioframe-constructors",
+        "id": "audiodata-constructors",
         "title": "Constructors",
-        "number": "9.1.2"
+        "number": "9.2.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-audioframe-timestamp",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audioframe-timestamp",
+      "id": "dom-audiodata-sampleformat",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-sampleformat",
+      "linkingText": [
+        "sampleFormat"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-attributes",
+        "title": "Attributes",
+        "number": "9.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-samplerate",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-samplerate",
+      "linkingText": [
+        "sampleRate"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-attributes",
+        "title": "Attributes",
+        "number": "9.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-numberofframes",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-numberofframes",
+      "linkingText": [
+        "numberOfFrames"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-attributes",
+        "title": "Attributes",
+        "number": "9.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-numberofchannels",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-numberofchannels",
+      "linkingText": [
+        "numberOfChannels"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-attributes",
+        "title": "Attributes",
+        "number": "9.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-allocationsize",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-allocationsize",
+      "linkingText": [
+        "allocationSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-attributes",
+        "title": "Attributes",
+        "number": "9.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-timestamp",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-timestamp",
       "linkingText": [
         "timestamp"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AudioFrame"
+        "AudioData"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audioframe-attributes",
+        "id": "audiodata-attributes",
         "title": "Attributes",
-        "number": "9.1.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-audioframe-buffer",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audioframe-buffer",
+      "id": "dom-audiodata-duration",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-duration",
       "linkingText": [
-        "buffer"
+        "duration"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "AudioFrame"
+        "AudioData"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audioframe-attributes",
+        "id": "audiodata-attributes",
         "title": "Attributes",
-        "number": "9.1.3"
+        "number": "9.2.3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-audioframe-close",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audioframe-close",
+      "id": "dom-audiodata-copyto",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-copyto",
+      "linkingText": [
+        "copyTo(destination, planeNumber)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-methods",
+        "title": "Methods",
+        "number": "9.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-clone",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-clone",
+      "linkingText": [
+        "clone()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-methods",
+        "title": "Methods",
+        "number": "9.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodata-close",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-close",
       "linkingText": [
         "close()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "AudioFrame"
+        "AudioData"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audioframe-methods",
+        "id": "audiodata-methods",
         "title": "Methods",
-        "number": "9.1.4"
+        "number": "9.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "clone-audiodata",
+      "href": "https://www.w3.org/TR/webcodecs/#clone-audiodata",
+      "linkingText": [
+        "Clone AudioData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-algorithms",
+        "title": "Algorithms",
+        "number": "9.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-audiosampleformat",
+      "href": "https://www.w3.org/TR/webcodecs/#enumdef-audiosampleformat",
+      "linkingText": [
+        "AudioSampleFormat"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-format",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiosampleformat-u8",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-u8",
+      "linkingText": [
+        "\"U8\"",
+        "U8"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-format",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosampleformat-s16",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-s16",
+      "linkingText": [
+        "\"S16\"",
+        "S16"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-format",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosampleformat-s32",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-s32",
+      "linkingText": [
+        "\"S32\"",
+        "S32"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-format",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosampleformat-flt",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-flt",
+      "linkingText": [
+        "\"FLT\"",
+        "FLT"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-format",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosampleformat-s16p",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-s16p",
+      "linkingText": [
+        "\"S16P\"",
+        "S16P"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-format",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosampleformat-s32p",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-s32p",
+      "linkingText": [
+        "\"S32P\"",
+        "S32P"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-format",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosampleformat-fltp",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-fltp",
+      "linkingText": [
+        "\"FLTP\"",
+        "FLTP"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-format",
+        "title": "Audio Sample Format",
+        "number": "9.3"
       },
       "definedIn": "dt"
     },
@@ -4253,143 +4924,95 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "9.2"
+        "number": "9.4"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframe-videoframe-imagebitmap-frameinit-imagebitmap",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-imagebitmap-frameinit-imagebitmap",
+      "id": "dom-videoframe-videoframe-image-init-image",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-image-init-image",
       "linkingText": [
-        "imageBitmap"
+        "image"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "VideoFrame/VideoFrame(imageBitmap, frameInit)",
-        "VideoFrame/constructor(imageBitmap, frameInit)",
-        "VideoFrame/VideoFrame(imageBitmap)",
-        "VideoFrame/constructor(imageBitmap)"
+        "VideoFrame/VideoFrame(image, init)",
+        "VideoFrame/constructor(image, init)",
+        "VideoFrame/VideoFrame(image)",
+        "VideoFrame/constructor(image)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "9.2"
+        "number": "9.4"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframe-videoframe-imagebitmap-frameinit-frameinit",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-imagebitmap-frameinit-frameinit",
+      "id": "dom-videoframe-videoframe-image-init-init",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-image-init-init",
       "linkingText": [
-        "frameInit"
+        "init"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "VideoFrame/VideoFrame(imageBitmap, frameInit)",
-        "VideoFrame/constructor(imageBitmap, frameInit)",
-        "VideoFrame/VideoFrame(imageBitmap)",
-        "VideoFrame/constructor(imageBitmap)"
+        "VideoFrame/VideoFrame(image, init)",
+        "VideoFrame/constructor(image, init)",
+        "VideoFrame/VideoFrame(image)",
+        "VideoFrame/constructor(image)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "9.2"
+        "number": "9.4"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframe-videoframe-pixelformat-planes-frameinit-pixelformat",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-pixelformat-planes-frameinit-pixelformat",
-      "linkingText": [
-        "pixelFormat"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "VideoFrame/VideoFrame(pixelFormat, planes, frameInit)",
-        "VideoFrame/constructor(pixelFormat, planes, frameInit)",
-        "VideoFrame/VideoFrame(pixelFormat, planes)",
-        "VideoFrame/constructor(pixelFormat, planes)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframe-videoframe-pixelformat-planes-frameinit-planes",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-pixelformat-planes-frameinit-planes",
+      "id": "dom-videoframe-videoframe-planes-init-planes",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-planes-init-planes",
       "linkingText": [
         "planes"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "VideoFrame/VideoFrame(pixelFormat, planes, frameInit)",
-        "VideoFrame/constructor(pixelFormat, planes, frameInit)",
-        "VideoFrame/VideoFrame(pixelFormat, planes)",
-        "VideoFrame/constructor(pixelFormat, planes)"
+        "VideoFrame/VideoFrame(planes, init)",
+        "VideoFrame/constructor(planes, init)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "9.2"
+        "number": "9.4"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframe-videoframe-pixelformat-planes-frameinit-frameinit",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-pixelformat-planes-frameinit-frameinit",
+      "id": "dom-videoframe-videoframe-planes-init-init",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-planes-init-init",
       "linkingText": [
-        "frameInit"
+        "init"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "VideoFrame/VideoFrame(pixelFormat, planes, frameInit)",
-        "VideoFrame/constructor(pixelFormat, planes, frameInit)",
-        "VideoFrame/VideoFrame(pixelFormat, planes)",
-        "VideoFrame/constructor(pixelFormat, planes)"
+        "VideoFrame/VideoFrame(planes, init)",
+        "VideoFrame/constructor(planes, init)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "9.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframe-createimagebitmap-options-options",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-createimagebitmap-options-options",
-      "linkingText": [
-        "options"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "VideoFrame/createImageBitmap(options)",
-        "VideoFrame/createImageBitmap()"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.2"
+        "number": "9.4"
       },
       "definedIn": "pre"
     },
@@ -4407,167 +5030,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "9.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeinit-codedwidth",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeinit-codedwidth",
-      "linkingText": [
-        "codedWidth"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeinit-codedheight",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeinit-codedheight",
-      "linkingText": [
-        "codedHeight"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeinit-cropleft",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeinit-cropleft",
-      "linkingText": [
-        "cropLeft"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeinit-croptop",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeinit-croptop",
-      "linkingText": [
-        "cropTop"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeinit-cropwidth",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeinit-cropwidth",
-      "linkingText": [
-        "cropWidth"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeinit-cropheight",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeinit-cropheight",
-      "linkingText": [
-        "cropHeight"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeinit-displaywidth",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeinit-displaywidth",
-      "linkingText": [
-        "displayWidth"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeinit-displayheight",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeinit-displayheight",
-      "linkingText": [
-        "displayHeight"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.2"
+        "number": "9.4"
       },
       "definedIn": "pre"
     },
@@ -4587,7 +5050,7 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "9.2"
+        "number": "9.4"
       },
       "definedIn": "pre"
     },
@@ -4607,7 +5070,245 @@
       "heading": {
         "id": "videoframe-interface",
         "title": "VideoFrame Interface",
-        "number": "9.2"
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-videoframeplaneinit",
+      "href": "https://www.w3.org/TR/webcodecs/#dictdef-videoframeplaneinit",
+      "linkingText": [
+        "VideoFramePlaneInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframeplaneinit-format",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-format",
+      "linkingText": [
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFramePlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframeplaneinit-codedwidth",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-codedwidth",
+      "linkingText": [
+        "codedWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFramePlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframeplaneinit-codedheight",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-codedheight",
+      "linkingText": [
+        "codedHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFramePlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframeplaneinit-cropleft",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-cropleft",
+      "linkingText": [
+        "cropLeft"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFramePlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframeplaneinit-croptop",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-croptop",
+      "linkingText": [
+        "cropTop"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFramePlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframeplaneinit-cropwidth",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-cropwidth",
+      "linkingText": [
+        "cropWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFramePlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframeplaneinit-cropheight",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-cropheight",
+      "linkingText": [
+        "cropHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFramePlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframeplaneinit-displaywidth",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-displaywidth",
+      "linkingText": [
+        "displayWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFramePlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframeplaneinit-displayheight",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-displayheight",
+      "linkingText": [
+        "displayHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFramePlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframeplaneinit-duration",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFramePlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframeplaneinit-timestamp",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-timestamp",
+      "linkingText": [
+        "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFramePlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
       },
       "definedIn": "pre"
     },
@@ -4627,7 +5328,27 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-resource-reference-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-resource-reference-slot",
+      "linkingText": [
+        "[[resource reference]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4647,7 +5368,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4667,7 +5388,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4687,7 +5408,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4707,7 +5428,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4727,7 +5448,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4747,7 +5468,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4767,7 +5488,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4787,7 +5508,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4807,7 +5528,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4827,7 +5548,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4847,7 +5568,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4867,7 +5588,7 @@
       "heading": {
         "id": "videoframe-internal-slots",
         "title": "Internal Slots",
-        "number": "9.2.1"
+        "number": "9.4.1"
       },
       "definedIn": "dt"
     },
@@ -4875,10 +5596,10 @@
       "id": "dom-videoframe-videoframe",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe",
       "linkingText": [
-        "VideoFrame(imageBitmap, frameInit)",
-        "constructor(imageBitmap, frameInit)",
-        "VideoFrame(imageBitmap)",
-        "constructor(imageBitmap)"
+        "VideoFrame(image, init)",
+        "constructor(image, init)",
+        "VideoFrame(image)",
+        "constructor(image)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -4890,18 +5611,16 @@
       "heading": {
         "id": "videoframe-constructors",
         "title": "Constructors",
-        "number": "9.2.2"
+        "number": "9.4.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-videoframe-videoframe-pixelformat-planes-frameinit",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-pixelformat-planes-frameinit",
+      "id": "dom-videoframe-videoframe-planes-init",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-planes-init",
       "linkingText": [
-        "VideoFrame(pixelFormat, planes, frameInit)",
-        "constructor(pixelFormat, planes, frameInit)",
-        "VideoFrame(pixelFormat, planes)",
-        "constructor(pixelFormat, planes)"
+        "VideoFrame(planes, init)",
+        "constructor(planes, init)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -4913,7 +5632,7 @@
       "heading": {
         "id": "videoframe-constructors",
         "title": "Constructors",
-        "number": "9.2.2"
+        "number": "9.4.2"
       },
       "definedIn": "prose"
     },
@@ -4933,7 +5652,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "9.2.3"
+        "number": "9.4.3"
       },
       "definedIn": "dt"
     },
@@ -4953,7 +5672,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "9.2.3"
+        "number": "9.4.3"
       },
       "definedIn": "dt"
     },
@@ -4973,7 +5692,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "9.2.3"
+        "number": "9.4.3"
       },
       "definedIn": "dt"
     },
@@ -4993,7 +5712,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "9.2.3"
+        "number": "9.4.3"
       },
       "definedIn": "dt"
     },
@@ -5013,7 +5732,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "9.2.3"
+        "number": "9.4.3"
       },
       "definedIn": "dt"
     },
@@ -5033,7 +5752,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "9.2.3"
+        "number": "9.4.3"
       },
       "definedIn": "dt"
     },
@@ -5053,7 +5772,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "9.2.3"
+        "number": "9.4.3"
       },
       "definedIn": "dt"
     },
@@ -5073,7 +5792,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "9.2.3"
+        "number": "9.4.3"
       },
       "definedIn": "dt"
     },
@@ -5093,7 +5812,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "9.2.3"
+        "number": "9.4.3"
       },
       "definedIn": "dt"
     },
@@ -5113,7 +5832,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "9.2.3"
+        "number": "9.4.3"
       },
       "definedIn": "dt"
     },
@@ -5133,7 +5852,7 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "9.2.3"
+        "number": "9.4.3"
       },
       "definedIn": "dt"
     },
@@ -5153,29 +5872,9 @@
       "heading": {
         "id": "videoframe-attributes",
         "title": "Attributes",
-        "number": "9.2.3"
+        "number": "9.4.3"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "dom-videoframe-destroy",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-destroy",
-      "linkingText": [
-        "destroy()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "VideoFrame"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-methods",
-        "title": "Methods",
-        "number": "9.2.4"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dom-videoframe-clone",
@@ -5193,16 +5892,15 @@
       "heading": {
         "id": "videoframe-methods",
         "title": "Methods",
-        "number": "9.2.4"
+        "number": "9.4.4"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-videoframe-createimagebitmap",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-createimagebitmap",
+      "id": "dom-videoframe-close",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-close",
       "linkingText": [
-        "createImageBitmap(options)",
-        "createImageBitmap()"
+        "close()"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -5214,15 +5912,15 @@
       "heading": {
         "id": "videoframe-methods",
         "title": "Methods",
-        "number": "9.2.4"
+        "number": "9.4.4"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
-      "id": "valid-videoframeinit",
-      "href": "https://www.w3.org/TR/webcodecs/#valid-videoframeinit",
+      "id": "valid-videoframeplaneinit",
+      "href": "https://www.w3.org/TR/webcodecs/#valid-videoframeplaneinit",
       "linkingText": [
-        "valid VideoFrameInit"
+        "valid VideoFramePlaneInit"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -5232,9 +5930,67 @@
       "heading": {
         "id": "videoframe-algorithms",
         "title": "Algorithms",
-        "number": "9.2.5"
+        "number": "9.4.5"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
+    },
+    {
+      "id": "videoframe-initialize-frame-from-other-frame",
+      "href": "https://www.w3.org/TR/webcodecs/#videoframe-initialize-frame-from-other-frame",
+      "linkingText": [
+        "Initialize Frame From Other Frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-algorithms",
+        "title": "Algorithms",
+        "number": "9.4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "videoframe-initialize-frame-with-resource-and-size",
+      "href": "https://www.w3.org/TR/webcodecs/#videoframe-initialize-frame-with-resource-and-size",
+      "linkingText": [
+        "Initialize Frame With Resource and Size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-algorithms",
+        "title": "Algorithms",
+        "number": "9.4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "clone-videoframe",
+      "href": "https://www.w3.org/TR/webcodecs/#clone-videoframe",
+      "linkingText": [
+        "Clone VideoFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-algorithms",
+        "title": "Algorithms",
+        "number": "9.4.5"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "plane",
@@ -5250,7 +6006,7 @@
       "heading": {
         "id": "plane-interface",
         "title": "Plane Interface",
-        "number": "9.3"
+        "number": "9.5"
       },
       "definedIn": "pre"
     },
@@ -5270,7 +6026,7 @@
       "heading": {
         "id": "plane-interface",
         "title": "Plane Interface",
-        "number": "9.3"
+        "number": "9.5"
       },
       "definedIn": "pre"
     },
@@ -5288,7 +6044,7 @@
       "heading": {
         "id": "plane-interface",
         "title": "Plane Interface",
-        "number": "9.3"
+        "number": "9.5"
       },
       "definedIn": "pre"
     },
@@ -5308,7 +6064,7 @@
       "heading": {
         "id": "plane-interface",
         "title": "Plane Interface",
-        "number": "9.3"
+        "number": "9.5"
       },
       "definedIn": "pre"
     },
@@ -5328,7 +6084,7 @@
       "heading": {
         "id": "plane-interface",
         "title": "Plane Interface",
-        "number": "9.3"
+        "number": "9.5"
       },
       "definedIn": "pre"
     },
@@ -5348,7 +6104,7 @@
       "heading": {
         "id": "plane-interface",
         "title": "Plane Interface",
-        "number": "9.3"
+        "number": "9.5"
       },
       "definedIn": "pre"
     },
@@ -5368,27 +6124,7 @@
       "heading": {
         "id": "plane-internal-slots",
         "title": "Internal Slots",
-        "number": "9.3.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-plane-plane-buffer-slot",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-plane-plane-buffer-slot",
-      "linkingText": [
-        "[[plane buffer]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Plane"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "plane-internal-slots",
-        "title": "Internal Slots",
-        "number": "9.3.1"
+        "number": "9.5.1"
       },
       "definedIn": "dt"
     },
@@ -5408,7 +6144,7 @@
       "heading": {
         "id": "plane-attributes",
         "title": "Attributes",
-        "number": "9.3.2"
+        "number": "9.5.2"
       },
       "definedIn": "dt"
     },
@@ -5428,7 +6164,7 @@
       "heading": {
         "id": "plane-attributes",
         "title": "Attributes",
-        "number": "9.3.2"
+        "number": "9.5.2"
       },
       "definedIn": "dt"
     },
@@ -5448,7 +6184,7 @@
       "heading": {
         "id": "plane-attributes",
         "title": "Attributes",
-        "number": "9.3.2"
+        "number": "9.5.2"
       },
       "definedIn": "dt"
     },
@@ -5468,7 +6204,7 @@
       "heading": {
         "id": "plane-methods",
         "title": "Methods",
-        "number": "9.3.3"
+        "number": "9.5.3"
       },
       "definedIn": "prose"
     },
@@ -5486,7 +6222,7 @@
       "heading": {
         "id": "pixel-format",
         "title": "Pixel Format",
-        "number": "9.4"
+        "number": "9.6"
       },
       "definedIn": "pre"
     },
@@ -5507,15 +6243,336 @@
       "heading": {
         "id": "pixel-format",
         "title": "Pixel Format",
-        "number": "9.4"
+        "number": "9.6"
       },
       "definedIn": "dt"
     },
     {
-      "id": "clone-frame",
-      "href": "https://www.w3.org/TR/webcodecs/#clone-frame",
+      "id": "imagedecoder",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder",
       "linkingText": [
-        "Clone Frame"
+        "ImageDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-interface",
+        "title": "ImageDecoder Interface",
+        "number": "10.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecoder-imagedecoder-init-init",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-imagedecoder-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ImageDecoder/ImageDecoder(init)",
+        "ImageDecoder/constructor(init)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-interface",
+        "title": "ImageDecoder Interface",
+        "number": "10.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecoder-decode-options-options",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-decode-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ImageDecoder/decode(options)",
+        "ImageDecoder/decode()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-interface",
+        "title": "ImageDecoder Interface",
+        "number": "10.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecoder-istypesupported-type-type",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-istypesupported-type-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ImageDecoder/isTypeSupported(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-interface",
+        "title": "ImageDecoder Interface",
+        "number": "10.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecoder-imagetracklist-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-imagetracklist-slot",
+      "linkingText": [
+        "[[ImageTrackList]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-complete-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-complete-slot",
+      "linkingText": [
+        "[[complete]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-completed-promise-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-completed-promise-slot",
+      "linkingText": [
+        "[[completed promise]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-codec-implementation-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-codec-implementation-slot",
+      "linkingText": [
+        "[[codec implementation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-encoded-data-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-encoded-data-slot",
+      "linkingText": [
+        "[[encoded data]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-prefer-animation-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-prefer-animation-slot",
+      "linkingText": [
+        "[[prefer animation]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-pending-decode-promises-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-pending-decode-promises-slot",
+      "linkingText": [
+        "[[pending decode promises]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-internal-selected-track-index-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-internal-selected-track-index-slot",
+      "linkingText": [
+        "[[internal selected track index]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-tracks-established-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-tracks-established-slot",
+      "linkingText": [
+        "[[tracks established]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-closed-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-closed-slot",
+      "linkingText": [
+        "[[closed]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-progressive-frame-generations-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-progressive-frame-generations-slot",
+      "linkingText": [
+        "[[progressive frame generations]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-imagedecoder",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-imagedecoder",
+      "linkingText": [
+        "ImageDecoder(init)",
+        "constructor(init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-constructor",
+        "title": "Constructor",
+        "number": "10.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "configure-the-image-decoder",
+      "href": "https://www.w3.org/TR/webcodecs/#configure-the-image-decoder",
+      "linkingText": [
+        "configure the image decoder"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -5523,9 +6580,1230 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "raw-media-algorithms",
+        "id": "imagedecoder-constructor",
+        "title": "Constructor",
+        "number": "10.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "decode-track-metadata",
+      "href": "https://www.w3.org/TR/webcodecs/#decode-track-metadata",
+      "linkingText": [
+        "decode track metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-constructor",
+        "title": "Constructor",
+        "number": "10.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-imagedecoder-complete",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-complete",
+      "linkingText": [
+        "complete"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-attributes",
+        "title": "Attributes",
+        "number": "10.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-completed",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-completed",
+      "linkingText": [
+        "completed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-attributes",
+        "title": "Attributes",
+        "number": "10.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-tracks",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-tracks",
+      "linkingText": [
+        "tracks"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-attributes",
+        "title": "Attributes",
+        "number": "10.2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-decode",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-decode",
+      "linkingText": [
+        "decode(options)",
+        "decode()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-methods",
+        "title": "Methods",
+        "number": "10.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-reset",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-reset",
+      "linkingText": [
+        "reset()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-methods",
+        "title": "Methods",
+        "number": "10.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-close",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-methods",
+        "title": "Methods",
+        "number": "10.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoder-istypesupported",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoder-istypesupported",
+      "linkingText": [
+        "isTypeSupported(type)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-methods",
+        "title": "Methods",
+        "number": "10.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-fetch-stream-data-loop",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-fetch-stream-data-loop",
+      "linkingText": [
+        "Fetch Stream Data Loop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
         "title": "Algorithms",
-        "number": "9.5"
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-establish-tracks",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-establish-tracks",
+      "linkingText": [
+        "Establish Tracks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-get-default-selected-track-index",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-get-default-selected-track-index",
+      "linkingText": [
+        "Get Default Selected Track Index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-update-tracks",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-update-tracks",
+      "linkingText": [
+        "Update Tracks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "track-update-struct",
+      "href": "https://www.w3.org/TR/webcodecs/#track-update-struct",
+      "linkingText": [
+        "track update struct"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "track-update-struct-track-index",
+      "href": "https://www.w3.org/TR/webcodecs/#track-update-struct-track-index",
+      "linkingText": [
+        "track index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "track update struct"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "track-update-struct-frame-count",
+      "href": "https://www.w3.org/TR/webcodecs/#track-update-struct-frame-count",
+      "linkingText": [
+        "frame count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "track update struct"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "imagedecoder-decode-complete-frame",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-decode-complete-frame",
+      "linkingText": [
+        "Decode Complete Frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-decode-progressive-frame",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-decode-progressive-frame",
+      "linkingText": [
+        "Decode Progressive Frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-resolve-decode",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-resolve-decode",
+      "linkingText": [
+        "Resolve Decode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-reject-infeasible-decode",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-reject-infeasible-decode",
+      "linkingText": [
+        "Reject Infeasible Decode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-fatally-reject-bad-data",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-fatally-reject-bad-data",
+      "linkingText": [
+        "Fatally Reject Bad Data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-check-type-support",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-check-type-support",
+      "linkingText": [
+        "Check Type Support"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-reset-imagedecoder",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-reset-imagedecoder",
+      "linkingText": [
+        "Reset ImageDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagedecoder-close-imagedecoder",
+      "href": "https://www.w3.org/TR/webcodecs/#imagedecoder-close-imagedecoder",
+      "linkingText": [
+        "Close ImageDecoder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ImageDecoder"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoder-algorithms",
+        "title": "Algorithms",
+        "number": "10.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedefdef-imagebuffersource",
+      "href": "https://www.w3.org/TR/webcodecs/#typedefdef-imagebuffersource",
+      "linkingText": [
+        "ImageBufferSource"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-imagedecoderinit",
+      "href": "https://www.w3.org/TR/webcodecs/#dictdef-imagedecoderinit",
+      "linkingText": [
+        "ImageDecoderInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valid-imagedecoderinit",
+      "href": "https://www.w3.org/TR/webcodecs/#valid-imagedecoderinit",
+      "linkingText": [
+        "valid ImageDecoderInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-image-mime-type",
+      "href": "https://www.w3.org/TR/webcodecs/#valid-image-mime-type",
+      "linkingText": [
+        "valid image MIME type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-imagedecoderinit-type",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderinit-data",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderinit-premultiplyalpha",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-premultiplyalpha",
+      "linkingText": [
+        "premultiplyAlpha"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderinit-colorspaceconversion",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-colorspaceconversion",
+      "linkingText": [
+        "colorSpaceConversion"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderinit-desiredwidth",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-desiredwidth",
+      "linkingText": [
+        "desiredWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderinit-desiredheight",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-desiredheight",
+      "linkingText": [
+        "desiredHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderinit-preferanimation",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-preferanimation",
+      "linkingText": [
+        "preferAnimation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecoderInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderinit-interface",
+        "title": "ImageDecoderInit Interface",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-imagedecodeoptions",
+      "href": "https://www.w3.org/TR/webcodecs/#dictdef-imagedecodeoptions",
+      "linkingText": [
+        "ImageDecodeOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecodeoptions-interface",
+        "title": "ImageDecodeOptions Interface",
+        "number": "10.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecodeoptions-frameindex",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecodeoptions-frameindex",
+      "linkingText": [
+        "frameIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecodeOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecodeoptions-interface",
+        "title": "ImageDecodeOptions Interface",
+        "number": "10.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecodeoptions-completeframesonly",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecodeoptions-completeframesonly",
+      "linkingText": [
+        "completeFramesOnly"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecodeOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecodeoptions-interface",
+        "title": "ImageDecodeOptions Interface",
+        "number": "10.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-imagedecoderesult",
+      "href": "https://www.w3.org/TR/webcodecs/#dictdef-imagedecoderesult",
+      "linkingText": [
+        "ImageDecodeResult"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderesult-interface",
+        "title": "ImageDecodeResult Interface",
+        "number": "10.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagedecoderesult-image",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoderesult-image",
+      "linkingText": [
+        "image"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecodeResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderesult-interface",
+        "title": "ImageDecodeResult Interface",
+        "number": "10.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagedecoderesult-complete",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagedecoderesult-complete",
+      "linkingText": [
+        "complete"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ImageDecodeResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagedecoderesult-interface",
+        "title": "ImageDecodeResult Interface",
+        "number": "10.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagetracklist",
+      "href": "https://www.w3.org/TR/webcodecs/#imagetracklist",
+      "linkingText": [
+        "ImageTrackList"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-interface",
+        "title": "ImageTrackList Interface",
+        "number": "10.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagetracklist-__getter__-index-index",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetracklist-__getter__-index-index",
+      "linkingText": [
+        "index"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ImageTrackList/__getter__(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-interface",
+        "title": "ImageTrackList Interface",
+        "number": "10.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagetracklist-ready-promise-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetracklist-ready-promise-slot",
+      "linkingText": [
+        "[[ready promise]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetracklist-track-list-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetracklist-track-list-slot",
+      "linkingText": [
+        "[[track list]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetracklist-selected-index-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetracklist-selected-index-slot",
+      "linkingText": [
+        "[[selected index]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetracklist-ready",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetracklist-ready",
+      "linkingText": [
+        "ready"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-attributes",
+        "title": "Attributes",
+        "number": "10.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetracklist-length",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetracklist-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-attributes",
+        "title": "Attributes",
+        "number": "10.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetracklist-selectedindex",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetracklist-selectedindex",
+      "linkingText": [
+        "selectedIndex"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-attributes",
+        "title": "Attributes",
+        "number": "10.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetracklist-selectedtrack",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetracklist-selectedtrack",
+      "linkingText": [
+        "selectedTrack"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrackList"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-attributes",
+        "title": "Attributes",
+        "number": "10.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "imagetrack",
+      "href": "https://www.w3.org/TR/webcodecs/#imagetrack",
+      "linkingText": [
+        "ImageTrack"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-interface",
+        "title": "ImageTrack Interface",
+        "number": "10.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagetrack-imagedecoder-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetrack-imagedecoder-slot",
+      "linkingText": [
+        "[[ImageDecoder]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-imagetracklist-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetrack-imagetracklist-slot",
+      "linkingText": [
+        "[[ImageTrackList]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-animated-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetrack-animated-slot",
+      "linkingText": [
+        "[[animated]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-frame-count-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetrack-frame-count-slot",
+      "linkingText": [
+        "[[frame count]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-repetition-count-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetrack-repetition-count-slot",
+      "linkingText": [
+        "[[repetition count]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-selected-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetrack-selected-slot",
+      "linkingText": [
+        "[[selected]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-internal-slots",
+        "title": "Internal Slots",
+        "number": "10.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-animated",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetrack-animated",
+      "linkingText": [
+        "animated"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-attributes",
+        "title": "Attributes",
+        "number": "10.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-framecount",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetrack-framecount",
+      "linkingText": [
+        "frameCount"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-attributes",
+        "title": "Attributes",
+        "number": "10.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-repetitioncount",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetrack-repetitioncount",
+      "linkingText": [
+        "repetitionCount"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-attributes",
+        "title": "Attributes",
+        "number": "10.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-onchange",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetrack-onchange",
+      "linkingText": [
+        "onchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-attributes",
+        "title": "Attributes",
+        "number": "10.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagetrack-selected",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-imagetrack-selected",
+      "linkingText": [
+        "selected"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetrack-attributes",
+        "title": "Attributes",
+        "number": "10.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "eventdef-imagetrack-change",
+      "href": "https://www.w3.org/TR/webcodecs/#eventdef-imagetrack-change",
+      "linkingText": [
+        "change"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "ImageTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagetracklist-eventsummary",
+        "title": "Event Summary",
+        "number": "10.7.3"
       },
       "definedIn": "dt"
     }

@@ -120,6 +120,7 @@ interface HTMLElement : Element {
   [CEReactions] attribute DOMString autocapitalize;
 
   [CEReactions] attribute [LegacyNullToEmptyString] DOMString innerText;
+  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerText;
 
   ElementInternals attachInternals();
 };
@@ -1265,11 +1266,14 @@ typedef (HTMLOrSVGImageElement or
          ImageBitmap or
          OffscreenCanvas) CanvasImageSource;
 
+enum PredefinedColorSpace { "srgb", "display-p3" };
+
 enum CanvasFillRule { "nonzero", "evenodd" };
 
 dictionary CanvasRenderingContext2DSettings {
   boolean alpha = true;
   boolean desynchronized = false;
+  PredefinedColorSpace colorSpace = "srgb";
 };
 
 enum ImageSmoothingQuality { "low", "medium", "high" };
@@ -1302,6 +1306,7 @@ interface mixin CanvasState {
   // state
   undefined save(); // push state on state stack
   undefined restore(); // pop state stack and restore state
+  undefined reset(); // reset the rendering context to its default state
 };
 
 interface mixin CanvasTransform {
@@ -1399,9 +1404,9 @@ interface mixin CanvasDrawImage {
 
 interface mixin CanvasImageData {
   // pixel manipulation
-  ImageData createImageData([EnforceRange] long sw, [EnforceRange] long sh);
+  ImageData createImageData([EnforceRange] long sw, [EnforceRange] long sh, optional ImageDataSettings settings = {});
   ImageData createImageData(ImageData imagedata);
-  ImageData getImageData([EnforceRange] long sx, [EnforceRange] long sy, [EnforceRange] long sw, [EnforceRange] long sh);
+  ImageData getImageData([EnforceRange] long sx, [EnforceRange] long sy, [EnforceRange] long sw, [EnforceRange] long sh, optional ImageDataSettings settings = {});
   undefined putImageData(ImageData imagedata, [EnforceRange] long dx, [EnforceRange] long dy);
   undefined putImageData(ImageData imagedata, [EnforceRange] long dx, [EnforceRange] long dy, [EnforceRange] long dirtyX, [EnforceRange] long dirtyY, [EnforceRange] long dirtyWidth, [EnforceRange] long dirtyHeight);
 };
@@ -1487,15 +1492,20 @@ interface TextMetrics {
   readonly attribute double ideographicBaseline;
 };
 
+dictionary ImageDataSettings {
+  PredefinedColorSpace colorSpace;
+};
+
 [Exposed=(Window,Worker),
  Serializable]
 interface ImageData {
-  constructor(unsigned long sw, unsigned long sh);
-  constructor(Uint8ClampedArray data, unsigned long sw, optional unsigned long sh);
+  constructor(unsigned long sw, unsigned long sh, optional ImageDataSettings settings = {});
+  constructor(Uint8ClampedArray data, unsigned long sw, optional unsigned long sh, optional ImageDataSettings settings = {});
 
   readonly attribute unsigned long width;
   readonly attribute unsigned long height;
   readonly attribute Uint8ClampedArray data;
+  readonly attribute PredefinedColorSpace colorSpace;
 };
 
 [Exposed=(Window,Worker)]

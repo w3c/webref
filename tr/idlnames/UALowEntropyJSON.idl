@@ -1,6 +1,6 @@
 // Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 dictionary UALowEntropyJSON {
-  FrozenArray<NavigatorUABrandVersion> brands;
+  sequence<NavigatorUABrandVersion> brands;
   boolean mobile;
   DOMString platform;
 };

@@ -39,7 +39,7 @@
         "extAttrs": []
       },
       "MediaSessionAction": {
-        "fragment": "enum MediaSessionAction {\n  \"play\",\n  \"pause\",\n  \"seekbackward\",\n  \"seekforward\",\n  \"previoustrack\",\n  \"nexttrack\",\n  \"skipad\",\n  \"stop\",\n  \"seekto\"\n};",
+        "fragment": "enum MediaSessionAction {\n  \"play\",\n  \"pause\",\n  \"seekbackward\",\n  \"seekforward\",\n  \"previoustrack\",\n  \"nexttrack\",\n  \"skipad\",\n  \"stop\",\n  \"seekto\",\n  \"togglemicrophone\",\n  \"togglecamera\",\n  \"hangup\"\n};",
         "type": "enum",
         "name": "MediaSessionAction",
         "values": [
@@ -78,12 +78,24 @@
           {
             "type": "enum-value",
             "value": "seekto"
+          },
+          {
+            "type": "enum-value",
+            "value": "togglemicrophone"
+          },
+          {
+            "type": "enum-value",
+            "value": "togglecamera"
+          },
+          {
+            "type": "enum-value",
+            "value": "hangup"
           }
         ],
         "extAttrs": []
       },
       "MediaSessionActionHandler": {
-        "fragment": "callback MediaSessionActionHandler = void(MediaSessionActionDetails details);",
+        "fragment": "callback MediaSessionActionHandler = undefined(MediaSessionActionDetails details);",
         "type": "callback",
         "name": "MediaSessionActionHandler",
         "idlType": {
@@ -92,7 +104,7 @@
           "generic": "",
           "nullable": false,
           "union": false,
-          "idlType": "void"
+          "idlType": "undefined"
         },
         "arguments": [
           {
@@ -115,7 +127,7 @@
         "extAttrs": []
       },
       "MediaSession": {
-        "fragment": "[Exposed=Window]\ninterface MediaSession {\n  attribute MediaMetadata? metadata;\n\n  attribute MediaSessionPlaybackState playbackState;\n\n  void setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);\n\n  void setPositionState(optional MediaPositionState state = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface MediaSession {\n  attribute MediaMetadata? metadata;\n\n  attribute MediaSessionPlaybackState playbackState;\n\n  undefined setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);\n\n  undefined setPositionState(optional MediaPositionState state = {});\n\n  undefined setMicrophoneActive(boolean active);\n\n  undefined setCameraActive(boolean active);\n};",
         "type": "interface",
         "name": "MediaSession",
         "inheritance": null,
@@ -159,7 +171,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -207,7 +219,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -226,6 +238,70 @@
                   "type": "dictionary"
                 },
                 "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setMicrophoneActive",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "active",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "setCameraActive",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "active",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": null,
+                "optional": false,
                 "variadic": false
               }
             ],
@@ -567,7 +643,7 @@
         "partial": false
       },
       "MediaSessionActionDetails": {
-        "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n};",
+        "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n  double? seekOffset;\n  double? seekTime;\n  boolean? fastSeek;\n};",
         "type": "dictionary",
         "name": "MediaSessionActionDetails",
         "inheritance": null,
@@ -586,17 +662,7 @@
             },
             "default": null,
             "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "MediaSessionSeekActionDetails": {
-        "fragment": "dictionary MediaSessionSeekActionDetails : MediaSessionActionDetails {\n  double? seekOffset;\n};",
-        "type": "dictionary",
-        "name": "MediaSessionSeekActionDetails",
-        "inheritance": "MediaSessionActionDetails",
-        "members": [
+          },
           {
             "type": "field",
             "name": "seekOffset",
@@ -611,17 +677,7 @@
             },
             "default": null,
             "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "MediaSessionSeekToActionDetails": {
-        "fragment": "dictionary MediaSessionSeekToActionDetails : MediaSessionActionDetails {\n  required double seekTime;\n  boolean? fastSeek;\n};",
-        "type": "dictionary",
-        "name": "MediaSessionSeekToActionDetails",
-        "inheritance": "MediaSessionActionDetails",
-        "members": [
+          },
           {
             "type": "field",
             "name": "seekTime",
@@ -630,12 +686,12 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "double"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -718,7 +774,6 @@
       "MediaSession": [
         "MediaMetadata",
         "MediaSessionPlaybackState",
-        "void",
         "MediaSessionAction",
         "MediaSessionActionHandler",
         "MediaPositionState"
@@ -734,17 +789,10 @@
       "MediaPositionState": [],
       "MediaSessionActionDetails": [
         "MediaSessionAction"
-      ],
-      "MediaSessionSeekActionDetails": [
-        "MediaSessionActionDetails"
-      ],
-      "MediaSessionSeekToActionDetails": [
-        "MediaSessionActionDetails"
       ]
     },
     "externalDependencies": [
-      "Navigator",
-      "void"
+      "Navigator"
     ],
     "hasObsoleteIdl": false
   }

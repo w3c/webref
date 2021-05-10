@@ -291,6 +291,7 @@
       "concept-shadow-including-inclusive-ancestor",
       "concept-tree-first-child",
       "concept-tree-next-sibling",
+      "concept-tree-previous-sibling",
       "in-a-document",
       "concept-slot",
       "slot-name",
@@ -322,6 +323,7 @@
       "concept-element-attributes-change-ext",
       "concept-element-attribute",
       "concept-cd-data",
+      "concept-cd-replace",
       "concept-child-text-content",
       "concept-descendant-text-content",
       "interface-event",
@@ -384,6 +386,7 @@
       "http-origin",
       "abnf",
       "http-scheme",
+      "is-local",
       "local-scheme",
       "fetch-scheme",
       "http-cors-protocol",
@@ -413,7 +416,6 @@
       "concept-response-header-list",
       "concept-response-body",
       "concept-internal-response",
-      "concept-response-csp-list",
       "concept-response-location-url",
       "concept-response-timing-info",
       "concept-request",
@@ -552,6 +554,8 @@
       "gb18030",
       "big5",
       "windows-1252",
+      "utf-16le",
+      "utf-16be",
       "x-user-defined",
       "iso-8859-8",
       "iso-2022-jp"
@@ -626,7 +630,8 @@
       "snapshot-state",
       "BlobURLStore",
       "blob-url-entry",
-      "blob-url-entry-object"
+      "blob-url-entry-object",
+      "blob-url-entry-environment"
     ],
     "https://tools.ietf.org/html/rfc2397": [
       "section-2"
@@ -761,6 +766,7 @@
       "indexsizeerror",
       "hierarchyrequesterror",
       "invalidcharactererror",
+      "nomodificationallowederror",
       "notfounderror",
       "notsupportederror",
       "invalidstateerror",
@@ -878,7 +884,12 @@
       "opaque-black",
       "the-color-property",
       "named-color",
-      "transparent-black"
+      "transparent-black",
+      "valdef-color-srgb",
+      "valdef-color-display-p3",
+      "valdef-color-profile-rendering-intent-relative-colorimetric",
+      "predefined",
+      "untagged"
     ],
     "https://drafts.csswg.org/css-box/": [
       "content-area",
@@ -1182,8 +1193,7 @@
       "grammardef-serialized-policy",
       "enforced",
       "parse-serialized-policy",
-      "initialize-global-object-csp",
-      "initialize-document-csp",
+      "run-document-csp-initialization",
       "should-block-inline",
       "should-block-navigation-request",
       "should-block-navigation-response",
@@ -1192,7 +1202,8 @@
       "allow-base-for-document",
       "frame-ancestors",
       "sandbox",
-      "contains-a-header-delivered-content-security-policy"
+      "contains-a-header-delivered-content-security-policy",
+      "parse-response-csp"
     ],
     "https://w3c.github.io/ServiceWorker/": [
       "dfn-active-worker",
@@ -2737,6 +2748,9 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/StorageEvent": [],
+    "https://www.w3.org/TR/REC-xml/": [
+      "sec-guessing"
+    ],
     "https://ln.hixie.ch/?start=1037910467&count=1": [],
     "https://www.w3.org/TR/SVGMobile12/": [
       "ScriptContentProcessing"
@@ -2865,7 +2879,6 @@
     "https://tools.ietf.org/html/rfc7578": [],
     "https://w3c.github.io/screen-orientation/": [],
     "https://www.unicode.org/reports/tr6/": [],
-    "https://webstore.iec.ch/publication/6169": [],
     "https://w3c.github.io/webappsec-subresource-integrity/": [],
     "https://svgwg.org/svg2-draft/": [],
     "https://www.torproject.org/": [],

@@ -16,8 +16,3 @@ interface WorkerGlobalScope : EventTarget {
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 WorkerGlobalScope includes WindowOrWorkerGlobalScope;
-
-// Source: Private Network Access (https://wicg.github.io/private-network-access/)
-partial interface WorkerGlobalScope {
-  readonly attribute AddressSpace addressSpace;
-};

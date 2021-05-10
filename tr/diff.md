@@ -1,103 +1,86 @@
-% Diff between report from "May 03, 2021" and reference report from "April 26, 2021"
+% Diff between report from "May 10, 2021" and reference report from "May 03, 2021"
 % Reffy
-% May 03, 2021
+% May 10, 2021
 
-## Client Hints Infrastructure
+## CSS Fonts Module Level 5
 
-- Initial URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
+- Initial URL: [https://drafts.csswg.org/css-fonts-5/](https://drafts.csswg.org/css-fonts-5/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
-- Missing references for links: *INS* https://www.w3.org/TR/permissions-policy/
+- Editor's Draft: [https://drafts.csswg.org/css-fonts-5/](https://drafts.csswg.org/css-fonts-5/)
+- This specification was not in the reference crawl report.
 
 
-## Constructable Stylesheet Objects
+## HTML Sanitizer API
 
-- Initial URL: [https://wicg.github.io/construct-stylesheets/](https://wicg.github.io/construct-stylesheets/)
+- Initial URL: [https://wicg.github.io/sanitizer-api/](https://wicg.github.io/sanitizer-api/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/construct-stylesheets/](https://wicg.github.io/construct-stylesheets/)
+- Editor's Draft: [https://wicg.github.io/sanitizer-api/](https://wicg.github.io/sanitizer-api/)
+- This specification was not in the reference crawl report.
+
+
+## Media Session Standard
+
+- Initial URL: [https://www.w3.org/TR/mediasession/](https://www.w3.org/TR/mediasession/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/mediasession/](https://w3c.github.io/mediasession/)
 - Unknown WebIDL names used: *DEL* void
 
 
-## CSS Layout API Level 1
+## Open Screen Protocol
 
-- Initial URL: [https://www.w3.org/TR/css-layout-api-1/](https://www.w3.org/TR/css-layout-api-1/)
+- Initial URL: [https://www.w3.org/TR/openscreenprotocol/](https://www.w3.org/TR/openscreenprotocol/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.css-houdini.org/css-layout-api-1/](https://drafts.css-houdini.org/css-layout-api-1/)
-- Invalid WebIDL content found: *INS* false / *DEL* true
-- Obsolete WebIDL constructs found: *INS* false
-- Unknown WebIDL names used: *INS* CSS, void
-
-
-## CSS Typed OM Level 1
-
-- Initial URL: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.css-houdini.org/css-typed-om-1/](https://drafts.css-houdini.org/css-typed-om-1/)
-- Unknown [Exposed] names used: *DEL* LayoutWorklet
-
-
-## Image Resource
-
-- Initial URL: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
-- Missing references for links: *INS* https://www.w3.org/TR/wai-aria/
-
-
-## Payment Handler API
-
-- Initial URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
-- Unknown WebIDL names used: *DEL* void
-
-
-## Resize Observer
-
-- Initial URL: [https://www.w3.org/TR/resize-observer-1/](https://www.w3.org/TR/resize-observer-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/resize-observer/](https://drafts.csswg.org/resize-observer/)
-- Invalid WebIDL content found: *INS* false / *DEL* true
-- Obsolete WebIDL constructs found: *INS* false
-- Unknown WebIDL names used: *INS* void
-
-
-## Scalable Vector Graphics (SVG) 1.1 (Second Edition)
-
-- Initial URL: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
+- Editor's Draft: [https://w3c.github.io/openscreenprotocol/](https://w3c.github.io/openscreenprotocol/)
 - This specification was not in the reference crawl report.
 
 
-## Tracking Preference Expression (DNT)
+## Prioritized Task Scheduling
 
-- Initial URL: [https://www.w3.org/TR/tracking-dnt/](https://www.w3.org/TR/tracking-dnt/)
+- Initial URL: [https://wicg.github.io/scheduling-apis/](https://wicg.github.io/scheduling-apis/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/dnt/drafts/tracking-dnt.html](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
+- Editor's Draft: [https://wicg.github.io/scheduling-apis/](https://wicg.github.io/scheduling-apis/)
 - This specification was not in the reference crawl report.
 
 
-## Web App Manifest - Application Information
+## Private Network Access
 
-- Initial URL: [https://www.w3.org/TR/manifest-app-info/](https://www.w3.org/TR/manifest-app-info/)
+- Initial URL: [https://wicg.github.io/private-network-access/](https://wicg.github.io/private-network-access/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/manifest-app-info/](https://w3c.github.io/manifest-app-info/)
+- Editor's Draft: [https://wicg.github.io/private-network-access/](https://wicg.github.io/private-network-access/)
+- Obsolete WebIDL constructs found: *DEL* false
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+- Missing references for WebIDL names: *DEL* Document
+
+
+## Web Animations Level 2
+
+- Initial URL: [https://drafts.csswg.org/web-animations-2/](https://drafts.csswg.org/web-animations-2/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://drafts.csswg.org/web-animations-2/](https://drafts.csswg.org/web-animations-2/)
 - This specification was not in the reference crawl report.
 
 
-## WebCodecs
+## Web Audio API
 
-- Initial URL: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
+- Initial URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- This specification was not in the reference crawl report.
+- Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
+- Missing references for links: *INS* https://www.w3.org/TR/mediacapture-fromelement/, https://www.w3.org/TR/security-privacy-questionnaire/ / *DEL* https://w3c.github.io/mediacapture-fromelement/, https://www.w3.org/TR/html50/
 
 
-## WebCodecs
+## Web Authentication: An API for accessing Public Key Credentials - Level 2
 
-- Initial URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
+- Initial URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
+- Crawled URL: [https://www.w3.org/TR/webauthn-2/](https://www.w3.org/TR/webauthn-2/)
+- Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - This specification is not in the new crawl report.
+
+
+## Web Authentication: An API for accessing Public Key Credentials - Level 3
+
+- Initial URL: [https://www.w3.org/TR/webauthn-3/](https://www.w3.org/TR/webauthn-3/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
+- This specification was not in the reference crawl report.
 
 

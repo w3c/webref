@@ -1,0 +1,14 @@
+// Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
+dictionary VideoFramePlaneInit {
+  required PixelFormat format;
+  required unsigned long codedWidth;
+  required unsigned long codedHeight;
+  unsigned long cropLeft;
+  unsigned long cropTop;
+  unsigned long cropWidth;
+  unsigned long cropHeight;
+  unsigned long displayWidth;
+  unsigned long displayHeight;
+  unsigned long long duration;
+  unsigned long long timestamp;
+};
