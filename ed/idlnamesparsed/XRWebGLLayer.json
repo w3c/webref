@@ -5,7 +5,7 @@
       "title": "WebXR Device API",
       "url": "https://www.w3.org/TR/webxr/"
     },
-    "fragment": "[SecureContext, Exposed=Window]\ninterface XRWebGLLayer: XRLayer {\n  constructor(XRSession session,\n             XRWebGLRenderingContext context,\n             optional XRWebGLLayerInit layerInit = {});\n  // Attributes\n  readonly attribute boolean antialias;\n  readonly attribute boolean ignoreDepthValues;\n\n  [SameObject] readonly attribute WebGLFramebuffer? framebuffer;\n  readonly attribute unsigned long framebufferWidth;\n  readonly attribute unsigned long framebufferHeight;\n\n  // Methods\n  XRViewport? getViewport(XRView view);\n\n  // Static Methods\n  static double getNativeFramebufferScaleFactor(XRSession session);\n};",
+    "fragment": "[SecureContext, Exposed=Window]\ninterface XRWebGLLayer: XRLayer {\n  constructor(XRSession session,\n             XRWebGLRenderingContext context,\n             optional XRWebGLLayerInit layerInit = {});\n  // Attributes\n  readonly attribute boolean antialias;\n  readonly attribute boolean ignoreDepthValues;\n  attribute float? fixedFoveation;\n\n  [SameObject] readonly attribute WebGLFramebuffer? framebuffer;\n  readonly attribute unsigned long framebufferWidth;\n  readonly attribute unsigned long framebufferHeight;\n\n  // Methods\n  XRViewport? getViewport(XRView view);\n\n  // Static Methods\n  static double getNativeFramebufferScaleFactor(XRSession session);\n};",
     "href": "https://immersive-web.github.io/webxr/#xrwebgllayer"
   },
   "extended": [],
