@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% May 10, 2021
+% May 11, 2021
 
 395 specifications were crawled in this report.
 
@@ -148,17 +148,14 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 
 ## List of WebIDL names not defined in the specifications crawled
 
-- `AddressErrors` used in [Payment Handler API](https://w3c.github.io/payment-handler/), [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
-- `AddressInit` used in [Payment Handler API](https://w3c.github.io/payment-handler/)
+- `AddressErrors` used in [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - `PaymentAddress` used in [Contact Picker API](https://wicg.github.io/contact-api/spec/), [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
-- `PaymentOptions` used in [Payment Handler API](https://w3c.github.io/payment-handler/)
-- `PaymentShippingOption` used in [Payment Handler API](https://w3c.github.io/payment-handler/)
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [UI Events](https://w3c.github.io/uievents/)
 - `bigint` used in [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 
-=> 9 WebIDL names found
+=> 6 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -5301,21 +5298,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/service-workers-1/#dfn-uninstalling-flag`](https://www.w3.org/TR/service-workers-1/#dfn-uninstalling-flag)
      * [`https://www.w3.org/TR/payment-request/#canmakepayment()-method`](https://www.w3.org/TR/payment-request/#canmakepayment()-method)
      * [`https://www.w3.org/TR/payment-request/#show()-method`](https://www.w3.org/TR/payment-request/#show()-method)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentshippingoption`](https://www.w3.org/TR/payment-request/#dom-paymentshippingoption)
-     * [`https://www.w3.org/TR/payment-request/#dom-addresserrors`](https://www.w3.org/TR/payment-request/#dom-addresserrors)
-     * [`https://www.w3.org/TR/payment-request/#dom-addressinit`](https://www.w3.org/TR/payment-request/#dom-addressinit)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions`](https://www.w3.org/TR/payment-request/#dom-paymentoptions)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentdetailsbase-shippingoptions`](https://www.w3.org/TR/payment-request/#dom-paymentdetailsbase-shippingoptions)
      * [`https://www.w3.org/TR/payment-request/#dfn-json-serialize`](https://www.w3.org/TR/payment-request/#dfn-json-serialize)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestshipping`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestshipping)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayername`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayername)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayeremail`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayeremail)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayerphone`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayerphone)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingaddress`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingaddress)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingoption`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingoption)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-payername`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-payername)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-payeremail`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-payeremail)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-payerphone`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-payerphone)
      * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes)
      * [`https://www.w3.org/TR/appmanifest/#fetching-image-resources`](https://www.w3.org/TR/appmanifest/#fetching-image-resources)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/):
@@ -5561,7 +5544,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 605 problematic external links found in 155 specifications
+=> 591 problematic external links found in 155 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

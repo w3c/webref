@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% May 10, 2021
+% May 11, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -2567,6 +2567,7 @@ Normative references to this spec from:
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
+- [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -3862,7 +3863,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-layout-api-1/](https://www.w3.org/TR/css-layout-api-1/)
 - Crawled URL: [https://drafts.css-houdini.org/css-layout-api-1/](https://drafts.css-houdini.org/css-layout-api-1/)
-- Crawled version: 20 April 2021
+- Crawled version: 10 May 2021
 - Editor's Draft: [https://drafts.css-houdini.org/css-layout-api-1/](https://drafts.css-houdini.org/css-layout-api-1/)
 - Latest published version: [https://www.w3.org/TR/css-layout-api-1/](https://www.w3.org/TR/css-layout-api-1/)
 - Shortname: css-layout-api-1
@@ -4229,7 +4230,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 
 No informative reference to this spec from other specs.
 
@@ -4240,7 +4243,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
 - Crawled URL: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
-- Crawled version: 8 April 2021
+- Crawled version: 10 May 2021
 - Editor's Draft: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
 - Latest published version: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
 - Shortname: cssom-1
@@ -6220,7 +6223,6 @@ Normative references to this spec from:
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
-- [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 No informative reference to this spec from other specs.
@@ -7377,6 +7379,7 @@ Normative references to this spec from:
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
+- [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
@@ -10529,7 +10532,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
 - Crawled URL: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
-- Crawled version: 21 April 2021
+- Crawled version: 11 May 2021
 - Editor's Draft: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
 - Latest published version: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
 - Shortname: media-source
@@ -11274,20 +11277,19 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Payment Handler API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
+## Payment Handler API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Crawled URL: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
-- Crawled version: 28 April 2021
+- Crawled version: 10 May 2021
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Shortname: payment-handler
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `AddressErrors`, `AddressInit`, `PaymentOptions`, `PaymentShippingOption`
 - External links to private terms:
      * [`https://www.w3.org/TR/payment-request/#dfn-payment-method`](https://www.w3.org/TR/payment-request/#dfn-payment-method)
 - Broken external links:
@@ -11298,21 +11300,7 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/service-workers-1/#dfn-uninstalling-flag`](https://www.w3.org/TR/service-workers-1/#dfn-uninstalling-flag)
      * [`https://www.w3.org/TR/payment-request/#canmakepayment()-method`](https://www.w3.org/TR/payment-request/#canmakepayment()-method)
      * [`https://www.w3.org/TR/payment-request/#show()-method`](https://www.w3.org/TR/payment-request/#show()-method)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentshippingoption`](https://www.w3.org/TR/payment-request/#dom-paymentshippingoption)
-     * [`https://www.w3.org/TR/payment-request/#dom-addresserrors`](https://www.w3.org/TR/payment-request/#dom-addresserrors)
-     * [`https://www.w3.org/TR/payment-request/#dom-addressinit`](https://www.w3.org/TR/payment-request/#dom-addressinit)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions`](https://www.w3.org/TR/payment-request/#dom-paymentoptions)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentdetailsbase-shippingoptions`](https://www.w3.org/TR/payment-request/#dom-paymentdetailsbase-shippingoptions)
      * [`https://www.w3.org/TR/payment-request/#dfn-json-serialize`](https://www.w3.org/TR/payment-request/#dfn-json-serialize)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestshipping`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestshipping)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayername`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayername)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayeremail`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayeremail)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayerphone`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayerphone)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingaddress`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingaddress)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingoption`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingoption)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-payername`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-payername)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-payeremail`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-payeremail)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-payerphone`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-payerphone)
      * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes)
      * [`https://www.w3.org/TR/appmanifest/#fetching-image-resources`](https://www.w3.org/TR/appmanifest/#fetching-image-resources)
 

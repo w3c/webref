@@ -37,6 +37,10 @@ interface GPUSupportedFeatures {
     readonly setlike<DOMString>;
 };
 
+enum GPUPredefinedColorSpace {
+    "srgb",
+};
+
 interface mixin NavigatorGPU {
     [SameObject] readonly attribute GPU gpu;
 };
