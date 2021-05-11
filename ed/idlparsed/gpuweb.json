@@ -28,6 +28,7 @@
           "GPUTexture",
           "GPUTextureUsage",
           "GPUTextureView",
+          "GPUExternalTexture",
           "GPUSampler",
           "GPUBindGroupLayout",
           "GPUShaderStage",
@@ -801,7 +802,7 @@
         "extAttrs": []
       },
       "GPUDevice": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), Serializable]\ninterface GPUDevice : EventTarget {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    readonly attribute object limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), Serializable]\ninterface GPUDevice : EventTarget {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    readonly attribute object limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n    GPUExternalTexture importExternalTexture(GPUExternalTextureDescriptor descriptor);\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
         "type": "interface",
         "name": "GPUDevice",
         "inheritance": "EventTarget",
@@ -972,6 +973,38 @@
                   "type": "dictionary"
                 },
                 "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "importExternalTexture",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUExternalTexture"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "descriptor",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUExternalTextureDescriptor"
+                },
+                "default": null,
+                "optional": false,
                 "variadic": false
               }
             ],
@@ -2665,6 +2698,68 @@
         ],
         "extAttrs": []
       },
+      "GPUExternalTexture": {
+        "fragment": "[Exposed=Window]\ninterface GPUExternalTexture {\n};",
+        "type": "interface",
+        "name": "GPUExternalTexture",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "GPUExternalTextureDescriptor": {
+        "fragment": "dictionary GPUExternalTextureDescriptor : GPUObjectDescriptorBase {\n    required HTMLVideoElement source;\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n};",
+        "type": "dictionary",
+        "name": "GPUExternalTextureDescriptor",
+        "inheritance": "GPUObjectDescriptorBase",
+        "members": [
+          {
+            "type": "field",
+            "name": "source",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HTMLVideoElement"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "colorSpace",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUPredefinedColorSpace"
+            },
+            "default": {
+              "type": "string",
+              "value": "srgb"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "GPUSampler": {
         "fragment": "[Exposed=Window]\ninterface GPUSampler {\n};",
         "type": "interface",
@@ -3106,7 +3201,7 @@
         "partial": false
       },
       "GPUBindGroupLayoutEntry": {
-        "fragment": "dictionary GPUBindGroupLayoutEntry {\n    required GPUIndex32 binding;\n    required GPUShaderStageFlags visibility;\n\n    GPUBufferBindingLayout buffer;\n    GPUSamplerBindingLayout sampler;\n    GPUTextureBindingLayout texture;\n    GPUStorageTextureBindingLayout storageTexture;\n};",
+        "fragment": "dictionary GPUBindGroupLayoutEntry {\n    required GPUIndex32 binding;\n    required GPUShaderStageFlags visibility;\n\n    GPUBufferBindingLayout buffer;\n    GPUSamplerBindingLayout sampler;\n    GPUTextureBindingLayout texture;\n    GPUStorageTextureBindingLayout storageTexture;\n    GPUExternalTextureBindingLayout externalTexture;\n};",
         "type": "dictionary",
         "name": "GPUBindGroupLayoutEntry",
         "inheritance": null,
@@ -3197,6 +3292,21 @@
               "nullable": false,
               "union": false,
               "idlType": "GPUStorageTextureBindingLayout"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "externalTexture",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUExternalTextureBindingLayout"
             },
             "default": null,
             "required": false
@@ -3503,6 +3613,15 @@
         "extAttrs": [],
         "partial": false
       },
+      "GPUExternalTextureBindingLayout": {
+        "fragment": "dictionary GPUExternalTextureBindingLayout {\n};",
+        "type": "dictionary",
+        "name": "GPUExternalTextureBindingLayout",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      },
       "GPUBindGroup": {
         "fragment": "[Exposed=Window]\ninterface GPUBindGroup {\n};",
         "type": "interface",
@@ -3572,7 +3691,7 @@
         "partial": false
       },
       "GPUBindingResource": {
-        "fragment": "typedef (GPUSampler or GPUTextureView or GPUBufferBinding) GPUBindingResource;",
+        "fragment": "typedef (GPUSampler or GPUTextureView or GPUBufferBinding or GPUExternalTexture) GPUBindingResource;",
         "type": "typedef",
         "name": "GPUBindingResource",
         "idlType": {
@@ -3605,6 +3724,14 @@
               "nullable": false,
               "union": false,
               "idlType": "GPUBufferBinding"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUExternalTexture"
             }
           ]
         },
@@ -10386,6 +10513,15 @@
           "includes": "GPUObjectBase"
         }
       ],
+      "GPUExternalTexture": [
+        {
+          "fragment": "GPUExternalTexture includes GPUObjectBase;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "GPUExternalTexture",
+          "includes": "GPUObjectBase"
+        }
+      ],
       "GPUSampler": [
         {
           "fragment": "GPUSampler includes GPUObjectBase;",
@@ -10594,6 +10730,7 @@
         "GPUTexture",
         "GPUTextureUsage",
         "GPUTextureView",
+        "GPUExternalTexture",
         "GPUSampler",
         "GPUBindGroupLayout",
         "GPUShaderStage",
@@ -10668,6 +10805,8 @@
         "GPUTextureDescriptor",
         "GPUSampler",
         "GPUSamplerDescriptor",
+        "GPUExternalTexture",
+        "GPUExternalTextureDescriptor",
         "GPUBindGroupLayout",
         "GPUBindGroupLayoutDescriptor",
         "GPUPipelineLayout",
@@ -10729,6 +10868,14 @@
         "GPUTextureAspect",
         "GPUIntegerCoordinate"
       ],
+      "GPUExternalTexture": [
+        "GPUObjectBase"
+      ],
+      "GPUExternalTextureDescriptor": [
+        "GPUObjectDescriptorBase",
+        "HTMLVideoElement",
+        "GPUPredefinedColorSpace"
+      ],
       "GPUSampler": [
         "GPUObjectBase"
       ],
@@ -10752,7 +10899,8 @@
         "GPUBufferBindingLayout",
         "GPUSamplerBindingLayout",
         "GPUTextureBindingLayout",
-        "GPUStorageTextureBindingLayout"
+        "GPUStorageTextureBindingLayout",
+        "GPUExternalTextureBindingLayout"
       ],
       "GPUBufferBindingLayout": [
         "GPUBufferBindingType",
@@ -10770,6 +10918,7 @@
         "GPUTextureFormat",
         "GPUTextureViewDimension"
       ],
+      "GPUExternalTextureBindingLayout": [],
       "GPUBindGroup": [
         "GPUObjectBase"
       ],
@@ -11071,6 +11220,7 @@
     },
     "externalDependencies": [
       "EventTarget",
+      "HTMLVideoElement",
       "ImageBitmap",
       "HTMLCanvasElement",
       "OffscreenCanvas",

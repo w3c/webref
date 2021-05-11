@@ -6507,7 +6507,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Crawled URL: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
-- Crawled version: 04 May 2021
+- Crawled version: 11 May 2021
 - Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
 - Latest published version: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Shortname: device-posture
@@ -17457,7 +17457,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 10 May 2021
+- Crawled version: 11 May 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 
