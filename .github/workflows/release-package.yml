@@ -20,8 +20,10 @@ jobs:
       with:
         node-version: 14.x
 
-    - name: Checkout webref
+    - name: Checkout latest version of release script
       uses: actions/checkout@v2
+      with:
+        ref: master
 
     - name: Install dependencies
       run: npm ci
