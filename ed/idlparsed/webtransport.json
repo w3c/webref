@@ -155,46 +155,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "DatagramTransport": {
-        "fragment": "interface mixin DatagramTransport {\n    readonly attribute unsigned short maxDatagramSize;\n    readonly attribute DatagramDuplexStream datagrams;\n};",
-        "type": "interface mixin",
-        "name": "DatagramTransport",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "maxDatagramSize",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "datagrams",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DatagramDuplexStream"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "DatagramDuplexStream": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface DatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
         "type": "interface",
@@ -253,7 +213,7 @@
         "partial": false
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute WebTransportState state;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n  attribute EventHandler onstatechange;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute WebTransportState state;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n  attribute EventHandler onstatechange;\n\n  readonly attribute unsigned short maxDatagramSize;\n  readonly attribute DatagramDuplexStream datagrams;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -433,6 +393,36 @@
             "extAttrs": [],
             "special": "",
             "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "maxDatagramSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "datagrams",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DatagramDuplexStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [
@@ -997,13 +987,6 @@
           "extAttrs": [],
           "target": "WebTransport",
           "includes": "BidirectionalStreamsTransport"
-        },
-        {
-          "fragment": "WebTransport includes DatagramTransport;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "WebTransport",
-          "includes": "DatagramTransport"
         }
       ]
     },
@@ -1035,9 +1018,6 @@
         "BidirectionalStream",
         "ReadableStream"
       ],
-      "DatagramTransport": [
-        "DatagramDuplexStream"
-      ],
       "DatagramDuplexStream": [
         "ReadableStream",
         "WritableStream"
@@ -1048,9 +1028,9 @@
         "WebTransportState",
         "WebTransportCloseInfo",
         "EventHandler",
+        "DatagramDuplexStream",
         "UnidirectionalStreamsTransport",
-        "BidirectionalStreamsTransport",
-        "DatagramTransport"
+        "BidirectionalStreamsTransport"
       ],
       "WebTransportOptions": [
         "RTCDtlsFingerprint"

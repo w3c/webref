@@ -18,11 +18,6 @@ interface mixin BidirectionalStreamsTransport {
     readonly attribute ReadableStream incomingBidirectionalStreams;
 };
 
-interface mixin DatagramTransport {
-    readonly attribute unsigned short maxDatagramSize;
-    readonly attribute DatagramDuplexStream datagrams;
-};
-
 [Exposed=(Window,Worker)]
 interface DatagramDuplexStream {
   readonly attribute ReadableStream readable;
@@ -39,11 +34,13 @@ interface WebTransport {
   readonly attribute Promise<WebTransportCloseInfo> closed;
   undefined close(optional WebTransportCloseInfo closeInfo = {});
   attribute EventHandler onstatechange;
+
+  readonly attribute unsigned short maxDatagramSize;
+  readonly attribute DatagramDuplexStream datagrams;
 };
 
 WebTransport includes UnidirectionalStreamsTransport;
 WebTransport includes BidirectionalStreamsTransport;
-WebTransport includes DatagramTransport;
 
 dictionary WebTransportOptions {
   boolean allowPooling;
