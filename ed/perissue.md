@@ -5114,7 +5114,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html/#submit-button-state-typesubmit`](https://www.w3.org/TR/html/#submit-button-state-typesubmit)
      * [`https://www.w3.org/TR/html/#element-attrdef-label-for`](https://www.w3.org/TR/html/#element-attrdef-label-for)
      * [`https://www.w3.org/TR/html/#element-attrdef-output-for`](https://www.w3.org/TR/html/#element-attrdef-output-for)
-     * [`https://www.w3.org/TR/html/#element-attrdef-formelements-form`](https://www.w3.org/TR/html/#element-attrdef-formelements-form)
      * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formaction`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formaction)
      * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formenctype`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formenctype)
      * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formmethod`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formmethod)
@@ -5142,7 +5141,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html/#element-attrdef-input-multiple`](https://www.w3.org/TR/html/#element-attrdef-input-multiple)
      * [`https://www.w3.org/TR/html/#element-attrdef-select-multiple`](https://www.w3.org/TR/html/#element-attrdef-select-multiple)
      * [`https://www.w3.org/TR/html/#element-attrdef-media-muted`](https://www.w3.org/TR/html/#element-attrdef-media-muted)
-     * [`https://www.w3.org/TR/html/#element-attrdef-formelements-name`](https://www.w3.org/TR/html/#element-attrdef-formelements-name)
      * [`https://www.w3.org/TR/html/#element-attrdef-form-name`](https://www.w3.org/TR/html/#element-attrdef-form-name)
      * [`https://www.w3.org/TR/html/#element-attrdef-iframe-name`](https://www.w3.org/TR/html/#element-attrdef-iframe-name)
      * [`https://www.w3.org/TR/html/#element-attrdef-object-name`](https://www.w3.org/TR/html/#element-attrdef-object-name)
@@ -5153,8 +5151,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html/#element-attrdef-details-open`](https://www.w3.org/TR/html/#element-attrdef-details-open)
      * [`https://www.w3.org/TR/html/#element-attrdef-input-placeholder`](https://www.w3.org/TR/html/#element-attrdef-input-placeholder)
      * [`https://www.w3.org/TR/html/#element-attrdef-textarea-placeholder`](https://www.w3.org/TR/html/#element-attrdef-textarea-placeholder)
-     * [`https://www.w3.org/TR/html/#element-attrdef-input-readonly`](https://www.w3.org/TR/html/#element-attrdef-input-readonly)
-     * [`https://www.w3.org/TR/html/#element-attrdef-textarea-readonly`](https://www.w3.org/TR/html/#element-attrdef-textarea-readonly)
      * [`https://www.w3.org/TR/html/#tabular-data`](https://www.w3.org/TR/html/#tabular-data)
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaSetsize`](https://www.w3.org/TR/core-aam-1.1/#ariaSetsize)
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaPosinset`](https://www.w3.org/TR/core-aam-1.1/#ariaPosinset)
@@ -5543,7 +5539,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 590 problematic external links found in 155 specifications
+=> 586 problematic external links found in 155 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

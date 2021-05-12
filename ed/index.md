@@ -2515,7 +2515,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 11 May 2021
+- Crawled version: 12 May 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -7066,7 +7066,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encrypted-media/](https://www.w3.org/TR/encrypted-media/)
 - Crawled URL: [https://w3c.github.io/encrypted-media/](https://w3c.github.io/encrypted-media/)
-- Crawled version: 11 May 2021
+- Crawled version: 12 May 2021
 - Editor's Draft: [https://w3c.github.io/encrypted-media/](https://w3c.github.io/encrypted-media/)
 - Latest published version: [https://www.w3.org/TR/encrypted-media/](https://www.w3.org/TR/encrypted-media/)
 - Shortname: encrypted-media
@@ -7218,7 +7218,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 10 May 2021
+- Crawled version: 12 May 2021
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -8009,7 +8009,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
-- Crawled version: 26 April 2021
+- Crawled version: 12 May 2021
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
 - Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Shortname: html-aam-1.0
@@ -8141,7 +8141,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/html/#submit-button-state-typesubmit`](https://www.w3.org/TR/html/#submit-button-state-typesubmit)
      * [`https://www.w3.org/TR/html/#element-attrdef-label-for`](https://www.w3.org/TR/html/#element-attrdef-label-for)
      * [`https://www.w3.org/TR/html/#element-attrdef-output-for`](https://www.w3.org/TR/html/#element-attrdef-output-for)
-     * [`https://www.w3.org/TR/html/#element-attrdef-formelements-form`](https://www.w3.org/TR/html/#element-attrdef-formelements-form)
      * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formaction`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formaction)
      * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formenctype`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formenctype)
      * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formmethod`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formmethod)
@@ -8169,7 +8168,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/html/#element-attrdef-input-multiple`](https://www.w3.org/TR/html/#element-attrdef-input-multiple)
      * [`https://www.w3.org/TR/html/#element-attrdef-select-multiple`](https://www.w3.org/TR/html/#element-attrdef-select-multiple)
      * [`https://www.w3.org/TR/html/#element-attrdef-media-muted`](https://www.w3.org/TR/html/#element-attrdef-media-muted)
-     * [`https://www.w3.org/TR/html/#element-attrdef-formelements-name`](https://www.w3.org/TR/html/#element-attrdef-formelements-name)
      * [`https://www.w3.org/TR/html/#element-attrdef-form-name`](https://www.w3.org/TR/html/#element-attrdef-form-name)
      * [`https://www.w3.org/TR/html/#element-attrdef-iframe-name`](https://www.w3.org/TR/html/#element-attrdef-iframe-name)
      * [`https://www.w3.org/TR/html/#element-attrdef-object-name`](https://www.w3.org/TR/html/#element-attrdef-object-name)
@@ -8180,8 +8178,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/html/#element-attrdef-details-open`](https://www.w3.org/TR/html/#element-attrdef-details-open)
      * [`https://www.w3.org/TR/html/#element-attrdef-input-placeholder`](https://www.w3.org/TR/html/#element-attrdef-input-placeholder)
      * [`https://www.w3.org/TR/html/#element-attrdef-textarea-placeholder`](https://www.w3.org/TR/html/#element-attrdef-textarea-placeholder)
-     * [`https://www.w3.org/TR/html/#element-attrdef-input-readonly`](https://www.w3.org/TR/html/#element-attrdef-input-readonly)
-     * [`https://www.w3.org/TR/html/#element-attrdef-textarea-readonly`](https://www.w3.org/TR/html/#element-attrdef-textarea-readonly)
      * [`https://www.w3.org/TR/html/#tabular-data`](https://www.w3.org/TR/html/#tabular-data)
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaSetsize`](https://www.w3.org/TR/core-aam-1.1/#ariaSetsize)
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaPosinset`](https://www.w3.org/TR/core-aam-1.1/#ariaPosinset)
@@ -8265,7 +8261,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 11 May 2021
+- Crawled version: 12 May 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -10532,7 +10528,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
 - Crawled URL: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
-- Crawled version: 11 May 2021
+- Crawled version: 12 May 2021
 - Editor's Draft: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
 - Latest published version: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
 - Shortname: media-source
@@ -11659,7 +11655,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Crawled URL: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
-- Crawled version: 03 May 2021
+- Crawled version: 12 May 2021
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Shortname: pointerevents3
@@ -14148,7 +14144,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 28 April 2021
+- Crawled version: 12 May 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
