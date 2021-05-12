@@ -4787,10 +4787,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#dom-document-activeelement`](https://html.spec.whatwg.org/#dom-document-activeelement)
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
      * [`https://html.spec.whatwg.org/#e-mail-state-(type=email)`](https://html.spec.whatwg.org/#e-mail-state-(type=email))
+     * [`https://heycam.github.io/webidl/#dfn-DOMException`](https://heycam.github.io/webidl/#dfn-DOMException)
      * [`https://url.spec.whatwg.org/#syntax-url-absolute`](https://url.spec.whatwg.org/#syntax-url-absolute)
      * [`https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment`](https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment)
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
-     * [`https://heycam.github.io/webidl/#dfn-DOMException`](https://heycam.github.io/webidl/#dfn-DOMException)
 
 => 917 problematic external links found in 70 specifications
 
@@ -5520,7 +5520,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/accname-1.1/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.1/#dfn-accessible-name)
      * [`https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum`](https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum)
      * [`https://drafts.csswg.org/css-box/#visibility-prop`](https://drafts.csswg.org/css-box/#visibility-prop)
-     * [`https://www.w3.org/TR/geometry-1/#dom-domrect`](https://www.w3.org/TR/geometry-1/#dom-domrect)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/):
      * [`https://w3c.github.io/webdriver/#dfn-intermediary-node`](https://w3c.github.io/webdriver/#dfn-intermediary-node)
      * [`https://w3c.github.io/webdriver/#dfn-get-a-property`](https://w3c.github.io/webdriver/#dfn-get-a-property)
@@ -5544,7 +5543,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 591 problematic external links found in 155 specifications
+=> 590 problematic external links found in 155 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
