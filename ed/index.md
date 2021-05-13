@@ -2592,7 +2592,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 6 May 2021
+- Crawled version: 13 May 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Latest published version: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Shortname: css-color-5
@@ -2606,6 +2606,7 @@ This specification looks good!
 Normative references to this spec from:
 
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 
 Informative references to this spec from:
@@ -3749,7 +3750,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Crawled URL: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
-- Crawled version: 30 April 2021
+- Crawled version: 13 May 2021
 - Editor's Draft: [https://drafts.csswg.org/css-images-4/](https://drafts.csswg.org/css-images-4/)
 - Latest published version: [https://www.w3.org/TR/css-images-4/](https://www.w3.org/TR/css-images-4/)
 - Shortname: css-images-4
@@ -5887,19 +5888,20 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Typed OM Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## CSS Typed OM Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
 - Crawled URL: [https://drafts.css-houdini.org/css-typed-om-1/](https://drafts.css-houdini.org/css-typed-om-1/)
-- Crawled version: 22 January 2021
+- Crawled version: 12 May 2021
 - Editor's Draft: [https://drafts.css-houdini.org/css-typed-om-1/](https://drafts.css-houdini.org/css-typed-om-1/)
 - Latest published version: [https://www.w3.org/TR/css-typed-om-1/](https://www.w3.org/TR/css-typed-om-1/)
 - Shortname: css-typed-om-1
 
 ### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `CSSPercentishArray`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
 - External links to private terms:
@@ -11842,7 +11844,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/scheduling-apis/](https://wicg.github.io/scheduling-apis/)
 - Crawled URL: [https://wicg.github.io/scheduling-apis/](https://wicg.github.io/scheduling-apis/)
-- Crawled version: 12 May 2021
+- Crawled version: 13 May 2021
 - Editor's Draft: [https://wicg.github.io/scheduling-apis/](https://wicg.github.io/scheduling-apis/)
 - Shortname: scheduling-apis
 
@@ -13817,7 +13819,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 11 May 2021
+- Crawled version: 13 May 2021
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -17451,7 +17453,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 12 May 2021
+- Crawled version: 13 May 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Shortname: gpuweb
 

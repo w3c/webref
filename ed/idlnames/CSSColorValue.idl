@@ -8,6 +8,7 @@ interface CSSColorValue : CSSStyleValue {
     CSSLCH toLCH();
     CSSLab toLab();
     CSSColor toColor(CSSKeywordish colorspace);
+    CSSDeviceCMYK toDeviceCMYK();
 
     [Exposed=Window] static CSSColorValue parse(USVString cssText);
 };

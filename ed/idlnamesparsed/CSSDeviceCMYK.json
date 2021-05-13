@@ -1,12 +1,12 @@
 {
-  "name": "CSSRGB",
+  "name": "CSSDeviceCMYK",
   "defined": {
     "spec": {
       "title": "CSS Typed OM Level 1",
       "url": "https://www.w3.org/TR/css-typed-om-1/"
     },
-    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSRGB : CSSColorValue {\n    constructor(CSSNumberish r, CSSNumberish g, CSSNumberish b, optional CSSNumberish alpha = 1);\n    attribute CSSNumberish r;\n    attribute CSSNumberish g;\n    attribute CSSNumberish b;\n    attribute CSSNumberish alpha;\n};",
-    "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssrgb"
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSDeviceCMYK : CSSColorValue {\n    constructor(CSSNumberish c, CSSNumberish m, CSSNumberish y, CSSNumberish k, optional CSSNumberish alpha = 1);\n    attribute CSSNumberish c;\n    attribute CSSNumberish m;\n    attribute CSSNumberish y;\n    attribute CSSNumberish k;\n    attribute CSSNumberish alpha;\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssdevicecmyk"
   },
   "extended": [],
   "inheritance": {

@@ -6624,6 +6624,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-csscolorvalue-todevicecmyk",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolorvalue-todevicecmyk",
+      "linkingText": [
+        "toDeviceCMYK()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSColorValue"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-csscolorvalue-parse",
       "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolorvalue-parse",
       "linkingText": [
@@ -7190,26 +7210,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-cssgray-alpha",
-      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssgray-alpha",
-      "linkingText": [
-        "alpha"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "CSSGray"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "colorvalue-objects",
-        "title": "CSSColorValue objects",
-        "number": "4.6"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "csslch",
       "href": "https://drafts.css-houdini.org/css-typed-om-1/#csslch",
       "linkingText": [
@@ -7517,8 +7517,10 @@
       "id": "dom-csscolor-csscolor",
       "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolor-csscolor",
       "linkingText": [
-        "CSSColor(variant)",
-        "constructor(variant)"
+        "CSSColor(colorspace, channels, alpha)",
+        "constructor(colorspace, channels, alpha)",
+        "CSSColor(colorspace, channels)",
+        "constructor(colorspace, channels)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -7535,16 +7537,220 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-csscolor-csscolor-variant-variant",
-      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolor-csscolor-variant-variant",
+      "id": "dom-csscolor-csscolor-colorspace-channels-alpha-colorspace",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolor-csscolor-colorspace-channels-alpha-colorspace",
       "linkingText": [
-        "variant"
+        "colorspace"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "CSSColor/CSSColor(variant)",
-        "CSSColor/constructor(variant)"
+        "CSSColor/CSSColor(colorspace, channels, alpha)",
+        "CSSColor/constructor(colorspace, channels, alpha)",
+        "CSSColor/CSSColor(colorspace, channels)",
+        "CSSColor/constructor(colorspace, channels)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscolor-csscolor-colorspace-channels-alpha-channels",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolor-csscolor-colorspace-channels-alpha-channels",
+      "linkingText": [
+        "channels"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSColor/CSSColor(colorspace, channels, alpha)",
+        "CSSColor/constructor(colorspace, channels, alpha)",
+        "CSSColor/CSSColor(colorspace, channels)",
+        "CSSColor/constructor(colorspace, channels)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscolor-csscolor-colorspace-channels-alpha-alpha",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolor-csscolor-colorspace-channels-alpha-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSColor/CSSColor(colorspace, channels, alpha)",
+        "CSSColor/constructor(colorspace, channels, alpha)",
+        "CSSColor/CSSColor(colorspace, channels)",
+        "CSSColor/constructor(colorspace, channels)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cssdevicecmyk",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssdevicecmyk",
+      "linkingText": [
+        "CSSDeviceCMYK"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssdevicecmyk-cssdevicecmyk",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssdevicecmyk-cssdevicecmyk",
+      "linkingText": [
+        "CSSDeviceCMYK(c, m, y, k, alpha)",
+        "constructor(c, m, y, k, alpha)",
+        "CSSDeviceCMYK(c, m, y, k)",
+        "constructor(c, m, y, k)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSDeviceCMYK"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssdevicecmyk-cssdevicecmyk-c-m-y-k-alpha-c",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssdevicecmyk-cssdevicecmyk-c-m-y-k-alpha-c",
+      "linkingText": [
+        "c"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSDeviceCMYK/CSSDeviceCMYK(c, m, y, k, alpha)",
+        "CSSDeviceCMYK/constructor(c, m, y, k, alpha)",
+        "CSSDeviceCMYK/CSSDeviceCMYK(c, m, y, k)",
+        "CSSDeviceCMYK/constructor(c, m, y, k)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssdevicecmyk-cssdevicecmyk-c-m-y-k-alpha-m",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssdevicecmyk-cssdevicecmyk-c-m-y-k-alpha-m",
+      "linkingText": [
+        "m"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSDeviceCMYK/CSSDeviceCMYK(c, m, y, k, alpha)",
+        "CSSDeviceCMYK/constructor(c, m, y, k, alpha)",
+        "CSSDeviceCMYK/CSSDeviceCMYK(c, m, y, k)",
+        "CSSDeviceCMYK/constructor(c, m, y, k)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssdevicecmyk-cssdevicecmyk-c-m-y-k-alpha-y",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssdevicecmyk-cssdevicecmyk-c-m-y-k-alpha-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSDeviceCMYK/CSSDeviceCMYK(c, m, y, k, alpha)",
+        "CSSDeviceCMYK/constructor(c, m, y, k, alpha)",
+        "CSSDeviceCMYK/CSSDeviceCMYK(c, m, y, k)",
+        "CSSDeviceCMYK/constructor(c, m, y, k)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssdevicecmyk-cssdevicecmyk-c-m-y-k-alpha-k",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssdevicecmyk-cssdevicecmyk-c-m-y-k-alpha-k",
+      "linkingText": [
+        "k"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSDeviceCMYK/CSSDeviceCMYK(c, m, y, k, alpha)",
+        "CSSDeviceCMYK/constructor(c, m, y, k, alpha)",
+        "CSSDeviceCMYK/CSSDeviceCMYK(c, m, y, k)",
+        "CSSDeviceCMYK/constructor(c, m, y, k)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssdevicecmyk-cssdevicecmyk-c-m-y-k-alpha-alpha",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssdevicecmyk-cssdevicecmyk-c-m-y-k-alpha-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSDeviceCMYK/CSSDeviceCMYK(c, m, y, k, alpha)",
+        "CSSDeviceCMYK/constructor(c, m, y, k, alpha)",
+        "CSSDeviceCMYK/CSSDeviceCMYK(c, m, y, k)",
+        "CSSDeviceCMYK/constructor(c, m, y, k)"
       ],
       "access": "public",
       "informative": false,
@@ -7816,6 +8022,66 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-cssgray-cssgray-l-optional-alpha",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssgray-cssgray-l-optional-alpha",
+      "linkingText": [
+        "CSSGray(l, optional alpha)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSGray"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssgray-l",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssgray-l",
+      "linkingText": [
+        "l"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSGray"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssgray-alpha",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssgray-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSGray"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-csslch-csslch-l-c-h-optional-alpha",
       "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csslch-csslch-l-c-h-optional-alpha",
       "linkingText": [
@@ -8036,6 +8302,26 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-csscolor-channels",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolor-channels",
+      "linkingText": [
+        "channels"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSColor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-csscolor-alpha",
       "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-csscolor-alpha",
       "linkingText": [
@@ -8045,6 +8331,126 @@
       "type": "attribute",
       "for": [
         "CSSColor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssdevicecmyk-cssdevicecmyk-c-m-y-k-optional-alpha",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssdevicecmyk-cssdevicecmyk-c-m-y-k-optional-alpha",
+      "linkingText": [
+        "CSSDeviceCMYK(c, m, y, k, optional alpha)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSDeviceCMYK"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssdevicecmyk-c",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssdevicecmyk-c",
+      "linkingText": [
+        "c"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSDeviceCMYK"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssdevicecmyk-m",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssdevicecmyk-m",
+      "linkingText": [
+        "m"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSDeviceCMYK"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssdevicecmyk-y",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssdevicecmyk-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSDeviceCMYK"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssdevicecmyk-k",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssdevicecmyk-k",
+      "linkingText": [
+        "k"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSDeviceCMYK"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "colorvalue-objects",
+        "title": "CSSColorValue objects",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssdevicecmyk-alpha",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#dom-cssdevicecmyk-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSDeviceCMYK"
       ],
       "access": "public",
       "informative": false,

@@ -33,7 +33,8 @@
           "CSSGray",
           "CSSLCH",
           "CSSLab",
-          "CSSColor"
+          "CSSColor",
+          "CSSDeviceCMYK"
         ],
         "Worker": [
           "CSSUnparsedValue",
@@ -62,7 +63,8 @@
           "CSSGray",
           "CSSLCH",
           "CSSLab",
-          "CSSColor"
+          "CSSColor",
+          "CSSDeviceCMYK"
         ],
         "PaintWorklet": [
           "CSSUnparsedValue",
@@ -91,7 +93,8 @@
           "CSSGray",
           "CSSLCH",
           "CSSLab",
-          "CSSColor"
+          "CSSColor",
+          "CSSDeviceCMYK"
         ],
         "LayoutWorklet": [
           "CSSUnparsedValue",
@@ -120,7 +123,8 @@
           "CSSGray",
           "CSSLCH",
           "CSSLab",
-          "CSSColor"
+          "CSSColor",
+          "CSSDeviceCMYK"
         ]
       },
       "functions": {
@@ -3719,7 +3723,7 @@
         "partial": false
       },
       "CSSColorValue": {
-        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    CSSRGB toRGB();\n    CSSHSL toHSL();\n    CSSHWB toHWB();\n    CSSGray toGray();\n    CSSLCH toLCH();\n    CSSLab toLab();\n    CSSColor toColor(CSSKeywordish colorspace);\n\n    [Exposed=Window] static CSSColorValue parse(USVString cssText);\n};",
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    CSSRGB toRGB();\n    CSSHSL toHSL();\n    CSSHWB toHWB();\n    CSSGray toGray();\n    CSSLCH toLCH();\n    CSSLab toLab();\n    CSSColor toColor(CSSKeywordish colorspace);\n    CSSDeviceCMYK toDeviceCMYK();\n\n    [Exposed=Window] static CSSColorValue parse(USVString cssText);\n};",
         "type": "interface",
         "name": "CSSColorValue",
         "inheritance": "CSSStyleValue",
@@ -3843,6 +3847,21 @@
                 "variadic": false
               }
             ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "toDeviceCMYK",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSDeviceCMYK"
+            },
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           },
@@ -4850,7 +4869,7 @@
         "partial": false
       },
       "CSSColor": {
-        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColor : CSSColorValue {\n    constructor(sequence<(DOMString or CSSNumberish)> variant);\n    /* CSSColor([\"foo\", 0, 1, .5], [\"bar\", \"yellow\"], 1, fallbackColor) */\n    /* or just make the alpha and fallback successive optional args? */\n};",
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColor : CSSColorValue {\n    constructor(CSSKeywordish colorspace, sequence<CSSNumberish> channels, optional CSSNumberish alpha = 1);\n    attribute CSSKeywordish colorspace;\n    attribute CSSPercentishArray channels;\n    attribute CSSNumberish alpha;\n};",
         "type": "interface",
         "name": "CSSColor",
         "inheritance": "CSSColorValue",
@@ -4860,7 +4879,23 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "variant",
+                "name": "colorspace",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSKeywordish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "channels",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -4874,34 +4909,278 @@
                       "extAttrs": [],
                       "generic": "",
                       "nullable": false,
-                      "union": true,
-                      "idlType": [
-                        {
-                          "type": null,
-                          "extAttrs": [],
-                          "generic": "",
-                          "nullable": false,
-                          "union": false,
-                          "idlType": "DOMString"
-                        },
-                        {
-                          "type": null,
-                          "extAttrs": [],
-                          "generic": "",
-                          "nullable": false,
-                          "union": false,
-                          "idlType": "CSSNumberish"
-                        }
-                      ]
+                      "union": false,
+                      "idlType": "CSSNumberish"
                     }
                   ]
                 },
                 "default": null,
                 "optional": false,
                 "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "alpha",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "1"
+                },
+                "optional": true,
+                "variadic": false
               }
             ],
             "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "colorspace",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSKeywordish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "channels",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSPercentishArray"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "alpha",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                },
+                {
+                  "value": "LayoutWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "CSSDeviceCMYK": {
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSDeviceCMYK : CSSColorValue {\n    constructor(CSSNumberish c, CSSNumberish m, CSSNumberish y, CSSNumberish k, optional CSSNumberish alpha = 1);\n    attribute CSSNumberish c;\n    attribute CSSNumberish m;\n    attribute CSSNumberish y;\n    attribute CSSNumberish k;\n    attribute CSSNumberish alpha;\n};",
+        "type": "interface",
+        "name": "CSSDeviceCMYK",
+        "inheritance": "CSSColorValue",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "c",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "m",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "y",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "k",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "alpha",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSNumberish"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "1"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "c",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "m",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "y",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "k",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "alpha",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           }
         ],
         "extAttrs": [
@@ -6173,7 +6452,8 @@
         "CSSGray",
         "CSSLCH",
         "CSSLab",
-        "CSSColor"
+        "CSSColor",
+        "CSSDeviceCMYK"
       ],
       "Worker": [
         "CSSStyleValue",
@@ -6210,7 +6490,8 @@
         "CSSGray",
         "CSSLCH",
         "CSSLab",
-        "CSSColor"
+        "CSSColor",
+        "CSSDeviceCMYK"
       ],
       "PaintWorklet": [
         "CSSStyleValue",
@@ -6247,7 +6528,8 @@
         "CSSGray",
         "CSSLCH",
         "CSSLab",
-        "CSSColor"
+        "CSSColor",
+        "CSSDeviceCMYK"
       ],
       "LayoutWorklet": [
         "CSSStyleValue",
@@ -6284,7 +6566,8 @@
         "CSSGray",
         "CSSLCH",
         "CSSLab",
-        "CSSColor"
+        "CSSColor",
+        "CSSDeviceCMYK"
       ]
     },
     "dependencies": {
@@ -6433,6 +6716,7 @@
         "CSSLab",
         "CSSColor",
         "CSSKeywordish",
+        "CSSDeviceCMYK",
         "CSSColorValue"
       ],
       "CSSRGB": [
@@ -6464,6 +6748,12 @@
       ],
       "CSSColor": [
         "CSSColorValue",
+        "CSSKeywordish",
+        "CSSNumberish",
+        "CSSPercentishArray"
+      ],
+      "CSSDeviceCMYK": [
+        "CSSColorValue",
         "CSSNumberish"
       ]
     },
@@ -6473,7 +6763,8 @@
       "ElementCSSInlineStyle",
       "CSS",
       "DOMMatrix",
-      "DOMMatrixReadOnly"
+      "DOMMatrixReadOnly",
+      "CSSPercentishArray"
     ],
     "hasObsoleteIdl": false
   }

@@ -1,7 +1,8 @@
 // Source: CSS Typed OM Level 1 (https://www.w3.org/TR/css-typed-om-1/)
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSColor : CSSColorValue {
-    constructor(sequence<(DOMString or CSSNumberish)> variant);
-    /* CSSColor(["foo", 0, 1, .5], ["bar", "yellow"], 1, fallbackColor) */
-    /* or just make the alpha and fallback successive optional args? */
+    constructor(CSSKeywordish colorspace, sequence<CSSNumberish> channels, optional CSSNumberish alpha = 1);
+    attribute CSSKeywordish colorspace;
+    attribute CSSPercentishArray channels;
+    attribute CSSNumberish alpha;
 };

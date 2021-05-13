@@ -326,6 +326,7 @@ interface CSSColorValue : CSSStyleValue {
     CSSLCH toLCH();
     CSSLab toLab();
     CSSColor toColor(CSSKeywordish colorspace);
+    CSSDeviceCMYK toDeviceCMYK();
 
     [Exposed=Window] static CSSColorValue parse(USVString cssText);
 };
@@ -384,7 +385,18 @@ interface CSSLab : CSSColorValue {
 
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSColor : CSSColorValue {
-    constructor(sequence<(DOMString or CSSNumberish)> variant);
-    /* CSSColor(["foo", 0, 1, .5], ["bar", "yellow"], 1, fallbackColor) */
-    /* or just make the alpha and fallback successive optional args? */
+    constructor(CSSKeywordish colorspace, sequence<CSSNumberish> channels, optional CSSNumberish alpha = 1);
+    attribute CSSKeywordish colorspace;
+    attribute CSSPercentishArray channels;
+    attribute CSSNumberish alpha;
+};
+
+[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
+interface CSSDeviceCMYK : CSSColorValue {
+    constructor(CSSNumberish c, CSSNumberish m, CSSNumberish y, CSSNumberish k, optional CSSNumberish alpha = 1);
+    attribute CSSNumberish c;
+    attribute CSSNumberish m;
+    attribute CSSNumberish y;
+    attribute CSSNumberish k;
+    attribute CSSNumberish alpha;
 };
