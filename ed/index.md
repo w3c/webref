@@ -7721,7 +7721,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
-- Crawled version: 07 May 2021
+- Crawled version: 13 May 2021
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Shortname: geolocation-API
@@ -13686,7 +13686,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Crawled URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
-- Crawled version: 6 May 2021
+- Crawled version: 13 May 2021
 - Editor's Draft: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
 - Latest published version: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Shortname: service-workers-1
@@ -15802,7 +15802,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wasm-core-1/](https://www.w3.org/TR/wasm-core-1/)
 - Crawled URL: [https://webassembly.github.io/spec/core/bikeshed/](https://webassembly.github.io/spec/core/bikeshed/)
-- Crawled version: 12 May 2021
+- Crawled version: 13 May 2021
 - Editor's Draft: [https://webassembly.github.io/spec/core/bikeshed/](https://webassembly.github.io/spec/core/bikeshed/)
 - Latest published version: [https://www.w3.org/TR/wasm-core-1/](https://www.w3.org/TR/wasm-core-1/)
 - Shortname: wasm-core-1
@@ -15827,7 +15827,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Crawled URL: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
-- Crawled version: 12 May 2021
+- Crawled version: 13 May 2021
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Shortname: wasm-js-api-1
@@ -15858,7 +15858,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Crawled URL: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
-- Crawled version: 12 May 2021
+- Crawled version: 13 May 2021
 - Editor's Draft: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Shortname: wasm-web-api-1
