@@ -875,28 +875,40 @@
       "number": "6.2.4.3"
     },
     {
+      "id": "sec-isprivatereference",
+      "title": "IsPrivateReference ( V )",
+      "level": 4,
+      "number": "6.2.4.4"
+    },
+    {
       "id": "sec-getvalue",
       "title": "GetValue ( V )",
       "level": 4,
-      "number": "6.2.4.4"
+      "number": "6.2.4.5"
     },
     {
       "id": "sec-putvalue",
       "title": "PutValue ( V, W )",
       "level": 4,
-      "number": "6.2.4.5"
+      "number": "6.2.4.6"
     },
     {
       "id": "sec-getthisvalue",
       "title": "GetThisValue ( V )",
       "level": 4,
-      "number": "6.2.4.6"
+      "number": "6.2.4.7"
     },
     {
       "id": "sec-initializereferencedbinding",
       "title": "InitializeReferencedBinding ( V, W )",
       "level": 4,
-      "number": "6.2.4.7"
+      "number": "6.2.4.8"
+    },
+    {
+      "id": "sec-makeprivatereference",
+      "title": "MakePrivateReference ( baseValue, privateIdentifier )",
+      "level": 4,
+      "number": "6.2.4.9"
     },
     {
       "id": "sec-property-descriptor-specification-type",
@@ -975,6 +987,24 @@
       "title": "CopyDataBlockBytes ( toBlock, toIndex, fromBlock, fromIndex, count )",
       "level": 4,
       "number": "6.2.8.3"
+    },
+    {
+      "id": "sec-privateelement-specification-type",
+      "title": "The PrivateElement Specification Type",
+      "level": 3,
+      "number": "6.2.9"
+    },
+    {
+      "id": "sec-classfielddefinition-record-specification-type",
+      "title": "The ClassFieldDefinition Record Specification Type",
+      "level": 3,
+      "number": "6.2.10"
+    },
+    {
+      "id": "sec-private-names",
+      "title": "Private Names",
+      "level": 3,
+      "number": "6.2.11"
     },
     {
       "id": "sec-abstract-operations",
@@ -1389,6 +1419,48 @@
       "title": "CopyDataProperties ( target, source, excludedItems )",
       "level": 3,
       "number": "7.3.25"
+    },
+    {
+      "id": "sec-privateelementfind",
+      "title": "PrivateElementFind ( P, O )",
+      "level": 3,
+      "number": "7.3.26"
+    },
+    {
+      "id": "sec-privatefieldadd",
+      "title": "PrivateFieldAdd ( P, O, value )",
+      "level": 3,
+      "number": "7.3.27"
+    },
+    {
+      "id": "sec-privatemethodoraccessoradd",
+      "title": "PrivateMethodOrAccessorAdd ( method, O )",
+      "level": 3,
+      "number": "7.3.28"
+    },
+    {
+      "id": "sec-privateget",
+      "title": "PrivateGet ( P, O )",
+      "level": 3,
+      "number": "7.3.29"
+    },
+    {
+      "id": "sec-privateset",
+      "title": "PrivateSet ( P, O, value )",
+      "level": 3,
+      "number": "7.3.30"
+    },
+    {
+      "id": "sec-definefield",
+      "title": "DefineField ( receiver, fieldRecord )",
+      "level": 3,
+      "number": "7.3.31"
+    },
+    {
+      "id": "sec-initializeinstanceelements",
+      "title": "InitializeInstanceElements ( O, constructor )",
+      "level": 3,
+      "number": "7.3.32"
     },
     {
       "id": "sec-operations-on-iterator-objects",
@@ -2033,196 +2105,220 @@
       "number": "9.1.2.6"
     },
     {
+      "id": "sec-privateenvironment-records",
+      "title": "PrivateEnvironment Records",
+      "level": 2,
+      "number": "9.2"
+    },
+    {
+      "id": "sec-privateenvironment-record-operations",
+      "title": "PrivateEnvironment Record Operations",
+      "level": 3,
+      "number": "9.2.1"
+    },
+    {
+      "id": "sec-newprivateenvironment",
+      "title": "NewPrivateEnvironment ( outerPrivEnv )",
+      "level": 4,
+      "number": "9.2.1.1"
+    },
+    {
+      "id": "sec-resolve-private-identifier",
+      "title": "ResolvePrivateIdentifier ( privEnv, identifier )",
+      "level": 4,
+      "number": "9.2.1.2"
+    },
+    {
       "id": "sec-code-realms",
       "title": "Realms",
       "level": 2,
-      "number": "9.2"
+      "number": "9.3"
     },
     {
       "id": "sec-createrealm",
       "title": "CreateRealm ( )",
       "level": 3,
-      "number": "9.2.1"
+      "number": "9.3.1"
     },
     {
       "id": "sec-createintrinsics",
       "title": "CreateIntrinsics ( realmRec )",
       "level": 3,
-      "number": "9.2.2"
+      "number": "9.3.2"
     },
     {
       "id": "sec-setrealmglobalobject",
       "title": "SetRealmGlobalObject ( realmRec, globalObj, thisValue )",
       "level": 3,
-      "number": "9.2.3"
+      "number": "9.3.3"
     },
     {
       "id": "sec-setdefaultglobalbindings",
       "title": "SetDefaultGlobalBindings ( realmRec )",
       "level": 3,
-      "number": "9.2.4"
+      "number": "9.3.4"
     },
     {
       "id": "sec-execution-contexts",
       "title": "Execution Contexts",
       "level": 2,
-      "number": "9.3"
+      "number": "9.4"
     },
     {
       "id": "sec-getactivescriptormodule",
       "title": "GetActiveScriptOrModule ( )",
       "level": 3,
-      "number": "9.3.1"
+      "number": "9.4.1"
     },
     {
       "id": "sec-resolvebinding",
       "title": "ResolveBinding ( name [ , env ] )",
       "level": 3,
-      "number": "9.3.2"
+      "number": "9.4.2"
     },
     {
       "id": "sec-getthisenvironment",
       "title": "GetThisEnvironment ( )",
       "level": 3,
-      "number": "9.3.3"
+      "number": "9.4.3"
     },
     {
       "id": "sec-resolvethisbinding",
       "title": "ResolveThisBinding ( )",
       "level": 3,
-      "number": "9.3.4"
+      "number": "9.4.4"
     },
     {
       "id": "sec-getnewtarget",
       "title": "GetNewTarget ( )",
       "level": 3,
-      "number": "9.3.5"
+      "number": "9.4.5"
     },
     {
       "id": "sec-getglobalobject",
       "title": "GetGlobalObject ( )",
       "level": 3,
-      "number": "9.3.6"
+      "number": "9.4.6"
     },
     {
       "id": "sec-jobs",
       "title": "Jobs and Host Operations to Enqueue Jobs",
       "level": 2,
-      "number": "9.4"
+      "number": "9.5"
     },
     {
       "id": "sec-jobcallback-records",
       "title": "JobCallback Records",
       "level": 3,
-      "number": "9.4.1"
+      "number": "9.5.1"
     },
     {
       "id": "sec-hostmakejobcallback",
       "title": "HostMakeJobCallback ( callback )",
       "level": 3,
-      "number": "9.4.2"
+      "number": "9.5.2"
     },
     {
       "id": "sec-hostcalljobcallback",
       "title": "HostCallJobCallback ( jobCallback, V, argumentsList )",
       "level": 3,
-      "number": "9.4.3"
+      "number": "9.5.3"
     },
     {
       "id": "sec-hostenqueuepromisejob",
       "title": "HostEnqueuePromiseJob ( job, realm )",
       "level": 3,
-      "number": "9.4.4"
+      "number": "9.5.4"
     },
     {
       "id": "sec-initializehostdefinedrealm",
       "title": "InitializeHostDefinedRealm ( )",
       "level": 2,
-      "number": "9.5"
+      "number": "9.6"
     },
     {
       "id": "sec-agents",
       "title": "Agents",
       "level": 2,
-      "number": "9.6"
+      "number": "9.7"
     },
     {
       "id": "sec-agentsignifier",
       "title": "AgentSignifier ( )",
       "level": 3,
-      "number": "9.6.1"
+      "number": "9.7.1"
     },
     {
       "id": "sec-agentcansuspend",
       "title": "AgentCanSuspend ( )",
       "level": 3,
-      "number": "9.6.2"
+      "number": "9.7.2"
     },
     {
       "id": "sec-agent-clusters",
       "title": "Agent Clusters",
       "level": 2,
-      "number": "9.7"
+      "number": "9.8"
     },
     {
       "id": "sec-forward-progress",
       "title": "Forward Progress",
       "level": 2,
-      "number": "9.8"
+      "number": "9.9"
     },
     {
       "id": "sec-weakref-processing-model",
       "title": "Processing Model of WeakRef and FinalizationRegistry Objects",
       "level": 2,
-      "number": "9.9"
+      "number": "9.10"
     },
     {
       "id": "sec-weakref-invariants",
       "title": "Objectives",
       "level": 3,
-      "number": "9.9.1"
+      "number": "9.10.1"
     },
     {
       "id": "sec-liveness",
       "title": "Liveness",
       "level": 3,
-      "number": "9.9.2"
+      "number": "9.10.2"
     },
     {
       "id": "sec-weakref-execution",
       "title": "Execution",
       "level": 3,
-      "number": "9.9.3"
+      "number": "9.10.3"
     },
     {
       "id": "sec-weakref-host-hooks",
       "title": "Host Hooks",
       "level": 3,
-      "number": "9.9.4"
+      "number": "9.10.4"
     },
     {
       "id": "sec-host-cleanup-finalization-registry",
       "title": "HostEnqueueFinalizationRegistryCleanupJob ( finalizationRegistry )",
       "level": 4,
-      "number": "9.9.4.1"
+      "number": "9.10.4.1"
     },
     {
       "id": "sec-clear-kept-objects",
       "title": "ClearKeptObjects ( )",
       "level": 2,
-      "number": "9.10"
+      "number": "9.11"
     },
     {
       "id": "sec-addtokeptobjects",
       "title": "AddToKeptObjects ( object )",
       "level": 2,
-      "number": "9.11"
+      "number": "9.12"
     },
     {
       "id": "sec-cleanup-finalization-registry",
       "title": "CleanupFinalizationRegistry ( finalizationRegistry )",
       "level": 2,
-      "number": "9.12"
+      "number": "9.13"
     },
     {
       "id": "sec-ordinary-and-exotic-objects-behaviours",
@@ -2454,7 +2550,7 @@
     },
     {
       "id": "sec-ordinaryfunctioncreate",
-      "title": "OrdinaryFunctionCreate ( functionPrototype, sourceText, ParameterList, Body, thisMode, Scope )",
+      "title": "OrdinaryFunctionCreate ( functionPrototype, sourceText, ParameterList, Body, thisMode, Scope, PrivateScope )",
       "level": 3,
       "number": "10.2.3"
     },
@@ -2489,22 +2585,28 @@
       "number": "10.2.7"
     },
     {
+      "id": "sec-definemethodproperty",
+      "title": "DefineMethodProperty ( key, homeObject, closure, enumerable )",
+      "level": 3,
+      "number": "10.2.8"
+    },
+    {
       "id": "sec-setfunctionname",
       "title": "SetFunctionName ( F, name [ , prefix ] )",
       "level": 3,
-      "number": "10.2.8"
+      "number": "10.2.9"
     },
     {
       "id": "sec-setfunctionlength",
       "title": "SetFunctionLength ( F, length )",
       "level": 3,
-      "number": "10.2.9"
+      "number": "10.2.10"
     },
     {
       "id": "sec-functiondeclarationinstantiation",
       "title": "FunctionDeclarationInstantiation ( func, argumentsList )",
       "level": 3,
-      "number": "10.2.10"
+      "number": "10.2.11"
     },
     {
       "id": "sec-built-in-function-objects",
@@ -4751,8 +4853,8 @@
       "number": "15.7.4"
     },
     {
-      "id": "sec-static-semantics-nonconstructormethoddefinitions",
-      "title": "Static Semantics: NonConstructorMethodDefinitions",
+      "id": "sec-static-semantics-nonconstructorelements",
+      "title": "Static Semantics: NonConstructorElements",
       "level": 3,
       "number": "15.7.5"
     },
@@ -4763,28 +4865,58 @@
       "number": "15.7.6"
     },
     {
+      "id": "sec-static-semantics-allprivateidentifiersvalid",
+      "title": "Static Semantics: AllPrivateIdentifiersValid",
+      "level": 3,
+      "number": "15.7.7"
+    },
+    {
+      "id": "sec-static-semantics-privateboundidentifiers",
+      "title": "Static Semantics: PrivateBoundIdentifiers",
+      "level": 3,
+      "number": "15.7.8"
+    },
+    {
+      "id": "sec-static-semantics-containsarguments",
+      "title": "Static Semantics: ContainsArguments",
+      "level": 3,
+      "number": "15.7.9"
+    },
+    {
+      "id": "sec-runtime-semantics-classfielddefinitionevaluation",
+      "title": "Runtime Semantics: ClassFieldDefinitionEvaluation",
+      "level": 3,
+      "number": "15.7.10"
+    },
+    {
+      "id": "sec-static-semantics-classelementevaluation",
+      "title": "Runtime Semantics: ClassElementEvaluation",
+      "level": 3,
+      "number": "15.7.11"
+    },
+    {
       "id": "sec-runtime-semantics-classdefinitionevaluation",
       "title": "Runtime Semantics: ClassDefinitionEvaluation",
       "level": 3,
-      "number": "15.7.7"
+      "number": "15.7.12"
     },
     {
       "id": "sec-default-constructor-functions",
       "title": "Default Constructor Functions",
       "level": 4,
-      "number": "15.7.7.1"
+      "number": "15.7.12.1"
     },
     {
       "id": "sec-runtime-semantics-bindingclassdeclarationevaluation",
       "title": "Runtime Semantics: BindingClassDeclarationEvaluation",
       "level": 3,
-      "number": "15.7.8"
+      "number": "15.7.13"
     },
     {
       "id": "sec-class-definitions-runtime-semantics-evaluation",
       "title": "Runtime Semantics: Evaluation",
       "level": 3,
-      "number": "15.7.9"
+      "number": "15.7.14"
     },
     {
       "id": "sec-async-function-definitions",
@@ -5238,7 +5370,7 @@
     },
     {
       "id": "sec-evaldeclarationinstantiation",
-      "title": "EvalDeclarationInstantiation ( body, varEnv, lexEnv, strict )",
+      "title": "EvalDeclarationInstantiation ( body, varEnv, lexEnv, privateEnv, strict )",
       "level": 4,
       "number": "19.2.1.3"
     },
