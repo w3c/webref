@@ -12,12 +12,6 @@ interface mixin UnidirectionalStreamsTransport {
 dictionary SendStreamParameters {
 };
 
-interface mixin BidirectionalStreamsTransport {
-    Promise<BidirectionalStream> createBidirectionalStream();
-    /* a ReadableStream of BidirectionalStream objects */
-    readonly attribute ReadableStream incomingBidirectionalStreams;
-};
-
 [Exposed=(Window,Worker)]
 interface DatagramDuplexStream {
   readonly attribute ReadableStream readable;
@@ -37,10 +31,13 @@ interface WebTransport {
 
   readonly attribute unsigned short maxDatagramSize;
   readonly attribute DatagramDuplexStream datagrams;
+
+  Promise<BidirectionalStream> createBidirectionalStream();
+  /* a ReadableStream of BidirectionalStream objects */
+  readonly attribute ReadableStream incomingBidirectionalStreams;
 };
 
 WebTransport includes UnidirectionalStreamsTransport;
-WebTransport includes BidirectionalStreamsTransport;
 
 dictionary WebTransportOptions {
   boolean allowPooling;
