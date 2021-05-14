@@ -319,15 +319,8 @@ interface CSSImageValue : CSSStyleValue {
 
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSColorValue : CSSStyleValue {
-    CSSRGB toRGB();
-    CSSHSL toHSL();
-    CSSHWB toHWB();
-    CSSGray toGray();
-    CSSLCH toLCH();
-    CSSLab toLab();
-    CSSColor toColor(CSSKeywordish colorspace);
-    CSSDeviceCMYK toDeviceCMYK();
-
+    readonly attribute CSSKeywordValue colorSpace;
+    CSSColorValue to(CSSKeywordish colorSpace);
     [Exposed=Window] static CSSColorValue parse(USVString cssText);
 };
 
@@ -359,13 +352,6 @@ interface CSSHWB : CSSColorValue {
 };
 
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
-interface CSSGray : CSSColorValue {
-    constructor(CSSNumberish gray, optional CSSNumberish alpha = 1);
-    attribute CSSNumberish gray;
-    attribute CSSNumberish alpha;
-};
-
-[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSLCH : CSSColorValue {
     constructor(CSSNumberish l, CSSNumberish c, CSSNumericValue h, optional CSSNumberish alpha = 1);
     attribute CSSNumberish l;
@@ -385,8 +371,8 @@ interface CSSLab : CSSColorValue {
 
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSColor : CSSColorValue {
-    constructor(CSSKeywordish colorspace, sequence<CSSNumberish> channels, optional CSSNumberish alpha = 1);
-    attribute CSSKeywordish colorspace;
+    constructor(CSSKeywordish colorSpace, sequence<CSSNumberish> channels, optional CSSNumberish alpha = 1);
+    attribute CSSKeywordish colorSpace;
     attribute CSSPercentishArray channels;
     attribute CSSNumberish alpha;
 };

@@ -16,7 +16,7 @@
         "title": "CSS Typed OM Level 1",
         "url": "https://www.w3.org/TR/css-typed-om-1/"
       },
-      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    CSSRGB toRGB();\n    CSSHSL toHSL();\n    CSSHWB toHWB();\n    CSSGray toGray();\n    CSSLCH toLCH();\n    CSSLab toLab();\n    CSSColor toColor(CSSKeywordish colorspace);\n    CSSDeviceCMYK toDeviceCMYK();\n\n    [Exposed=Window] static CSSColorValue parse(USVString cssText);\n};",
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    readonly attribute CSSKeywordValue colorSpace;\n    CSSColorValue to(CSSKeywordish colorSpace);\n    [Exposed=Window] static CSSColorValue parse(USVString cssText);\n};",
       "href": "https://drafts.css-houdini.org/css-typed-om-1/#csscolorvalue"
     },
     "extended": [],

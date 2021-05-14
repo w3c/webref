@@ -5,7 +5,7 @@
       "title": "CSS Typed OM Level 1",
       "url": "https://www.w3.org/TR/css-typed-om-1/"
     },
-    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColor : CSSColorValue {\n    constructor(CSSKeywordish colorspace, sequence<CSSNumberish> channels, optional CSSNumberish alpha = 1);\n    attribute CSSKeywordish colorspace;\n    attribute CSSPercentishArray channels;\n    attribute CSSNumberish alpha;\n};",
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColor : CSSColorValue {\n    constructor(CSSKeywordish colorSpace, sequence<CSSNumberish> channels, optional CSSNumberish alpha = 1);\n    attribute CSSKeywordish colorSpace;\n    attribute CSSPercentishArray channels;\n    attribute CSSNumberish alpha;\n};",
     "href": "https://drafts.css-houdini.org/css-typed-om-1/#csscolor"
   },
   "extended": [],
@@ -16,7 +16,7 @@
         "title": "CSS Typed OM Level 1",
         "url": "https://www.w3.org/TR/css-typed-om-1/"
       },
-      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    CSSRGB toRGB();\n    CSSHSL toHSL();\n    CSSHWB toHWB();\n    CSSGray toGray();\n    CSSLCH toLCH();\n    CSSLab toLab();\n    CSSColor toColor(CSSKeywordish colorspace);\n    CSSDeviceCMYK toDeviceCMYK();\n\n    [Exposed=Window] static CSSColorValue parse(USVString cssText);\n};",
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    readonly attribute CSSKeywordValue colorSpace;\n    CSSColorValue to(CSSKeywordish colorSpace);\n    [Exposed=Window] static CSSColorValue parse(USVString cssText);\n};",
       "href": "https://drafts.css-houdini.org/css-typed-om-1/#csscolorvalue"
     },
     "extended": [],
