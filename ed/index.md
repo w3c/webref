@@ -268,7 +268,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
-- Crawled version: 13 May 2021
+- Crawled version: 15 May 2021
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -336,10 +336,10 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/wai-aria-1.1/#banner`](https://www.w3.org/TR/wai-aria-1.1/#banner)
      * [`https://www.w3.org/TR/wai-aria-1.1/#button`](https://www.w3.org/TR/wai-aria-1.1/#button)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-pressed`](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#checkbox`](https://www.w3.org/TR/wai-aria-1.1/#checkbox)
      * [`https://www.w3.org/TR/wai-aria-1.1/#cell`](https://www.w3.org/TR/wai-aria-1.1/#cell)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-colindex)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#checkbox`](https://www.w3.org/TR/wai-aria-1.1/#checkbox)
      * [`https://www.w3.org/TR/wai-aria-1.1/#columnheader`](https://www.w3.org/TR/wai-aria-1.1/#columnheader)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-sort`](https://www.w3.org/TR/wai-aria-1.1/#aria-sort)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-selected`](https://www.w3.org/TR/wai-aria-1.1/#aria-selected)
@@ -8007,7 +8007,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
-- Crawled version: 12 May 2021
+- Crawled version: 15 May 2021
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
 - Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Shortname: html-aam-1.0
