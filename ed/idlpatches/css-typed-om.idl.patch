@@ -1,0 +1,31 @@
+From 19fbd9a43ddae066c864e4dbcd3493cd96e7aadb Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 17 May 2021 14:21:51 +0200
+Subject: [PATCH] Restore previous definition for CSSColor
+
+https://github.com/w3c/css-houdini-drafts/issues/1041
+---
+ ed/idl/css-typed-om.idl | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+
+diff --git a/ed/idl/css-typed-om.idl b/ed/idl/css-typed-om.idl
+index 9be9a1a76..262d2884e 100644
+--- a/ed/idl/css-typed-om.idl
++++ b/ed/idl/css-typed-om.idl
+@@ -371,10 +371,9 @@ interface CSSLab : CSSColorValue {
+ 
+ [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
+ interface CSSColor : CSSColorValue {
+-    constructor(CSSKeywordish colorSpace, sequence<CSSNumberish> channels, optional CSSNumberish alpha = 1);
+-    attribute CSSKeywordish colorSpace;
+-    attribute CSSPercentishArray channels;
+-    attribute CSSNumberish alpha;
++    constructor(sequence<(DOMString or CSSNumberish)> variant);
++    /* CSSColor(["foo", 0, 1, .5], ["bar", "yellow"], 1, fallbackColor) */
++    /* or just make the alpha and fallback successive optional args? */
+ };
+ 
+ [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
+-- 
+2.31.1.windows.1
+
