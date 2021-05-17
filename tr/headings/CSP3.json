@@ -5,9 +5,9 @@
   },
   "headings": [
     {
-      "id": "subtitle",
+      "id": "profile-and-date",
       "level": 2,
-      "title": "W3C Working Draft, 16 April 2021"
+      "title": "W3C Working Draft, 12 May 2021"
     },
     {
       "id": "abstract",
@@ -85,6 +85,12 @@
       "number": "2.2.2"
     },
     {
+      "id": "parse-response-csp",
+      "level": 4,
+      "title": "Parse response’s Content Security Policies",
+      "number": "2.2.3"
+    },
+    {
       "id": "framework-directives",
       "level": 3,
       "title": "Directives",
@@ -151,28 +157,22 @@
       "number": "4.1"
     },
     {
-      "id": "set-response-csp-list",
-      "level": 4,
-      "title": "Set response’s CSP list",
-      "number": "4.1.1"
-    },
-    {
       "id": "report-for-request",
       "level": 4,
       "title": "Report Content Security Policy violations for request",
-      "number": "4.1.2"
+      "number": "4.1.1"
     },
     {
       "id": "should-block-request",
       "level": 4,
       "title": "Should request be blocked by Content Security Policy?",
-      "number": "4.1.3"
+      "number": "4.1.2"
     },
     {
       "id": "should-block-response",
       "level": 4,
       "title": "Should response to request be blocked by Content Security Policy?",
-      "number": "4.1.4"
+      "number": "4.1.3"
     },
     {
       "id": "html-integration",
@@ -181,39 +181,39 @@
       "number": "4.2"
     },
     {
-      "id": "initialize-document-csp",
+      "id": "run-document-csp-initialization",
       "level": 4,
-      "title": "Initialize a Document's CSP list",
+      "title": "Run CSP initialization for a Document",
       "number": "4.2.1"
-    },
-    {
-      "id": "initialize-global-object-csp",
-      "level": 4,
-      "title": "Initialize a global object’s CSP list",
-      "number": "4.2.2"
     },
     {
       "id": "get-csp-of-object",
       "level": 4,
       "title": "Retrieve the CSP list of an object",
-      "number": "4.2.3"
+      "number": "4.2.2"
     },
     {
       "id": "should-block-inline",
       "level": 4,
       "title": "Should element’s inline type behavior be blocked by Content Security Policy?",
-      "number": "4.2.4"
+      "number": "4.2.3"
     },
     {
       "id": "should-block-navigation-request",
       "level": 4,
       "title": "Should navigation request of type be blocked by Content Security Policy?",
-      "number": "4.2.5"
+      "number": "4.2.4"
     },
     {
       "id": "should-block-navigation-response",
       "level": 4,
       "title": "Should navigation response to navigation request of type in target be blocked by Content Security Policy?",
+      "number": "4.2.5"
+    },
+    {
+      "id": "run-global-object-csp-initialization",
+      "level": 4,
+      "title": "Run CSP initialization for a global object.",
       "number": "4.2.6"
     },
     {
@@ -613,16 +613,10 @@
       "number": "6.2.2"
     },
     {
-      "id": "sandbox-response",
-      "level": 5,
-      "title": "sandbox Response Check",
-      "number": "6.2.2.1"
-    },
-    {
       "id": "sandbox-init",
       "level": 5,
       "title": "sandbox Initialization",
-      "number": "6.2.2.2"
+      "number": "6.2.2.1"
     },
     {
       "id": "directives-navigation",

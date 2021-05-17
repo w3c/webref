@@ -1,12 +1,12 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
 [Exposed=(Window,DedicatedWorker)]
 interface VideoFrame {
-  constructor(ImageBitmap imageBitmap, optional VideoFrameInit frameInit = {});
-  constructor(PixelFormat pixelFormat, sequence<(Plane or PlaneInit)> planes,
-              optional VideoFrameInit frameInit = {});
+  constructor(CanvasImageSource image, optional VideoFrameInit init = {});
+  constructor(sequence<(Plane or PlaneInit)> planes,
+              VideoFramePlaneInit init);
 
   readonly attribute PixelFormat format;
-  readonly attribute FrozenArray<Plane> planes;
+  readonly attribute FrozenArray<Plane>? planes;
   readonly attribute unsigned long codedWidth;
   readonly attribute unsigned long codedHeight;
   readonly attribute unsigned long cropLeft;
@@ -18,10 +18,6 @@ interface VideoFrame {
   readonly attribute unsigned long long? duration;
   readonly attribute unsigned long long? timestamp;
 
-  undefined destroy();
   VideoFrame clone();
-
-  Promise<ImageBitmap> createImageBitmap(
-    optional ImageBitmapOptions options = {});
-
+  undefined close();
 };

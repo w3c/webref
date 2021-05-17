@@ -1,8 +1,0 @@
-// Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
-[Exposed=(Window,DedicatedWorker)]
-interface AudioFrame {
-  constructor(AudioFrameInit init);
-  readonly attribute unsigned long long timestamp;
-  readonly attribute AudioBuffer? buffer;
-  undefined close();
-};

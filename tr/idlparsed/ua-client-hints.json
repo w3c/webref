@@ -57,7 +57,7 @@
         "partial": false
       },
       "UADataValues": {
-        "fragment": "dictionary UADataValues {\n  FrozenArray<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString platform;\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platformVersion;\n  DOMString uaFullVersion;\n};",
+        "fragment": "dictionary UADataValues {\n  sequence<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString platform;\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platformVersion;\n  DOMString uaFullVersion;\n};",
         "type": "dictionary",
         "name": "UADataValues",
         "inheritance": null,
@@ -69,7 +69,7 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
               "idlType": [
@@ -196,7 +196,7 @@
         "partial": false
       },
       "UALowEntropyJSON": {
-        "fragment": "dictionary UALowEntropyJSON {\n  FrozenArray<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString platform;\n};",
+        "fragment": "dictionary UALowEntropyJSON {\n  sequence<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString platform;\n};",
         "type": "dictionary",
         "name": "UALowEntropyJSON",
         "inheritance": null,
@@ -208,7 +208,7 @@
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
               "idlType": [

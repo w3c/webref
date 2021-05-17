@@ -5,7 +5,11 @@ interface MediaSession {
 
   attribute MediaSessionPlaybackState playbackState;
 
-  void setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);
+  undefined setActionHandler(MediaSessionAction action, MediaSessionActionHandler? handler);
 
-  void setPositionState(optional MediaPositionState state = {});
+  undefined setPositionState(optional MediaPositionState state = {});
+
+  undefined setMicrophoneActive(boolean active);
+
+  undefined setCameraActive(boolean active);
 };

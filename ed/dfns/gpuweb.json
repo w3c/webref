@@ -1621,6 +1621,44 @@
       "definedIn": "heading"
     },
     {
+      "id": "enumdef-gpupredefinedcolorspace",
+      "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpupredefinedcolorspace",
+      "linkingText": [
+        "GPUPredefinedColorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-spaces",
+        "title": "Color Spaces",
+        "number": "3.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpupredefinedcolorspace-srgb",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupredefinedcolorspace-srgb",
+      "linkingText": [
+        "\"srgb\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUPredefinedColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-spaces",
+        "title": "Color Spaces",
+        "number": "3.8"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "navigatorgpu",
       "href": "https://gpuweb.github.io/gpuweb/#navigatorgpu",
       "linkingText": [
@@ -5536,6 +5574,142 @@
       "definedIn": "prose"
     },
     {
+      "id": "gpuexternaltexture",
+      "href": "https://gpuweb.github.io/gpuweb/#gpuexternaltexture",
+      "linkingText": [
+        "GPUExternalTexture"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-external-texture",
+        "title": "GPUExternalTexture",
+        "number": "6.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-gpuexternaltexture-destroyed-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuexternaltexture-destroyed-slot",
+      "linkingText": [
+        "[[destroyed]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUExternalTexture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-external-texture",
+        "title": "GPUExternalTexture",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-gpuexternaltexturedescriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuexternaltexturedescriptor",
+      "linkingText": [
+        "GPUExternalTextureDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "external-texture-creation",
+        "title": "Importing External Textures",
+        "number": "6.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuexternaltexturedescriptor-source",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuexternaltexturedescriptor-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUExternalTextureDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "external-texture-creation",
+        "title": "Importing External Textures",
+        "number": "6.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuexternaltexturedescriptor-colorspace",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuexternaltexturedescriptor-colorspace",
+      "linkingText": [
+        "colorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUExternalTextureDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "external-texture-creation",
+        "title": "Importing External Textures",
+        "number": "6.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpudevice-importexternaltexture",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-importexternaltexture",
+      "linkingText": [
+        "importExternalTexture(descriptor)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "external-texture-creation",
+        "title": "Importing External Textures",
+        "number": "6.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpudevice-importexternaltexture-descriptor-descriptor",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpudevice-importexternaltexture-descriptor-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "GPUDevice/importExternalTexture(descriptor)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "external-texture-creation",
+        "title": "Importing External Textures",
+        "number": "6.4.1"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "gpusampler",
       "href": "https://gpuweb.github.io/gpuweb/#gpusampler",
       "linkingText": [
@@ -6535,6 +6709,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpubindgrouplayoutentry-externaltexture",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindgrouplayoutentry-externaltexture",
+      "linkingText": [
+        "externalTexture"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUBindGroupLayoutEntry"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bind-group-layout-creation",
+        "title": "Creation",
+        "number": "8.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "binding-member",
       "href": "https://gpuweb.github.io/gpuweb/#binding-member",
       "linkingText": [
@@ -7227,6 +7421,24 @@
         "number": "8.1.1"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-gpuexternaltexturebindinglayout",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuexternaltexturebindinglayout",
+      "linkingText": [
+        "GPUExternalTextureBindingLayout"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bind-group-layout-creation",
+        "title": "Creation",
+        "number": "8.1.1"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dom-gpubindgrouplayout-entrymap-slot",

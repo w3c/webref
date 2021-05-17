@@ -49,27 +49,23 @@
       "attr-meta-http-equiv-content-security-policy",
       "the-link-element",
       "attr-meta-content",
-      "run-a-worker",
+      "policy-container-csp-list",
+      "policy-container",
       "initialise-the-document-object",
       "prepare-a-script",
       "update-a-style-block",
-      "bc-container-document",
       "the-base-element",
       "set-the-frozen-base-url",
       "attr-base-href",
       "process-a-navigate-fetch",
       "process-a-navigate-response",
-      "concept-document-csp-list",
-      "an-iframe-srcdoc-document",
-      "process-the-iframe-attributes",
-      "source-browsing-context",
-      "dedicatedworkerglobalscope",
-      "concept-WorkerGlobalScope-owner-set",
-      "sharedworkerglobalscope",
-      "concept-document-window",
+      "run-a-worker",
+      "concept-document-policy-container",
+      "concept-settings-object-policy-container",
       "current-settings-object",
       "concept-realm-global",
       "queue-a-task",
+      "concept-document-window",
       "relevant-settings-object",
       "nested-browsing-context",
       "the-iframe-element",
@@ -85,17 +81,21 @@
       "dom-settimeout",
       "dom-setinterval",
       "the-style-element",
+      "an-iframe-srcdoc-document",
       "attr-iframe-sandbox",
+      "forced-sandboxing-flag-set",
+      "sandboxing-flag-set",
       "parse-a-sandboxing-directive",
       "sandboxed-scripts-browsing-context-flag",
       "sandboxed-origin-browsing-context-flag",
-      "forced-sandboxing-flag-set",
+      "bc-container-document",
       "ascii-serialisation-of-an-origin",
       "the-form-element",
       "concept-origin-scheme",
       "parse-error-duplicate-attribute",
       "parse-errors",
-      "attr-nonce"
+      "attr-nonce",
+      "source-browsing-context"
     ],
     "https://tc39.github.io/ecma262": [
       "sec-eval-x",
@@ -106,19 +106,17 @@
     "https://fetch.spec.whatwg.org/": [
       "http-scheme",
       "local-scheme",
-      "concept-request",
       "concept-response",
+      "extract-header-list-values",
+      "concept-response-header-list",
+      "concept-response-url",
+      "concept-request",
       "concept-request-client",
       "concept-request-url",
       "concept-request-current-url",
       "concept-network-error",
       "concept-main-fetch",
-      "concept-response-csp-list",
-      "concept-response-header-list",
-      "concept-http-fetch",
-      "concept-http-network-fetch",
-      "extract-header-list-values",
-      "concept-response-url",
+      "concept-request-policy-container",
       "concept-request-nonce-metadata",
       "concept-request-parser-metadata",
       "concept-request-method",
@@ -135,6 +133,7 @@
       "concept-fetch",
       "concept-request-target-browsing-context",
       "request-destination-script-like",
+      "is-local",
       "concept-response-status",
       "redirect-status",
       "concept-request-integrity-metadata",
@@ -171,22 +170,9 @@
       "string-is",
       "javascript-string-convert"
     ],
-    "https://tools.ietf.org/html/rfc5234": [
-      "appendix-B.1"
-    ],
-    "https://tools.ietf.org/html/rfc3986": [
-      "section-3.1",
-      "section-3.3",
-      "section-4.1",
-      "section-3.2.2"
-    ],
-    "https://tools.ietf.org/html/rfc4648": [
-      "section-4",
-      "section-5"
-    ],
     "https://url.spec.whatwg.org/": [
-      "url",
       "concept-url-origin",
+      "url",
       "concept-url-scheme",
       "concept-url-serializer",
       "concept-url-parser",
@@ -200,14 +186,23 @@
       "concept-ipv6",
       "string-percent-decode"
     ],
+    "https://tools.ietf.org/html/rfc5234": [
+      "appendix-B.1"
+    ],
+    "https://tools.ietf.org/html/rfc3986": [
+      "section-3.1",
+      "section-3.3",
+      "section-4.1",
+      "section-3.2.2"
+    ],
+    "https://tools.ietf.org/html/rfc4648": [
+      "section-4",
+      "section-5"
+    ],
     "https://tools.ietf.org/html/rfc7231": [
       "section-3"
     ],
     "https://github.com/whatwg/html/issues/968": [],
-    "https://www.w3.org/TR/service-workers-1/": [
-      "serviceworkerglobalscope",
-      "serviceworker"
-    ],
     "https://github.com/tc39/ecma262/issues/938": [],
     "https://w3c.github.io/reporting/": [
       "report-type",
@@ -222,6 +217,9 @@
       "idl-DOMString",
       "idl-unsigned-short",
       "idl-unsigned-long"
+    ],
+    "https://www.w3.org/TR/service-workers-1/": [
+      "serviceworker"
     ],
     "https://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/": [],
     "https://www.w3.org/TR/css-cascade-5/": [

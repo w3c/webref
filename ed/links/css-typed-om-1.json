@@ -38,7 +38,9 @@
       "idl-double",
       "idl-long",
       "syntaxerror",
-      "dfn-indexed-property-getter"
+      "dfn-indexed-property-getter",
+      "idl-DOMException",
+      "invalidmodificationerror"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleValue/parse": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleValue/parseAll": [],
@@ -64,7 +66,8 @@
       "code-point",
       "list-remove",
       "tuple",
-      "list-is-empty"
+      "list-is-empty",
+      "ascii-case-insensitive"
     ],
     "https://drafts.csswg.org/css-syntax-3/": [
       "css-parse-something-according-to-a-css-grammar",
@@ -85,13 +88,9 @@
       "propdef-list-style-type",
       "propdef-marker-side"
     ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/entries": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/forEach": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/keys": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/values": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMap": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly/size": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/StylePropertyMapReadOnly": [],
     "https://drafts.csswg.org/cssom-1/": [
       "css-declaration-block",
       "cssstyledeclaration",
@@ -152,6 +151,11 @@
     "https://drafts.csswg.org/css-color-4/": [
       "propdef-color",
       "propdef-opacity",
+      "at-ruledef-profile",
+      "funcdef-rgba",
+      "funcdef-hsla",
+      "funcdef-color",
+      "funcdef-device-cmyk",
       "valdef-color-currentcolor"
     ],
     "https://github.com/w3c/css-houdini-drafts/issues/644": [],
@@ -226,10 +230,6 @@
       "attr-style"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue/CSSUnparsedValue": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue/entries": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue/forEach": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue/keys": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue/values": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnparsedValue": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSVariableReferenceValue/fallback": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSVariableReferenceValue": [],
@@ -309,17 +309,75 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnitValue/unit": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSUnitValue/value": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathValue": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathInvert/value": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathInvert": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMax/values": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMax": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMin/values": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMin": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathNegate/value": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathNegate": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathProduct/values": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathProduct": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathSum/CSSMathSum": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathSum": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathSum/values": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericArray": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathValue/operator": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMax/CSSMathMax": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathMin/CSSMathMin": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathProduct/CSSMathProduct": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathNegate/CSSMathNegate": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMathInvert/CSSMathInvert": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericArray/length": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue": [],
     "https://drafts.fxtf.org/geometry-1/": [
       "dommatrix",
       "dom-dommatrixreadonly-is2d",
       "dommatrixreadonly"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue/CSSTransformValue": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue/is2D": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue/toMatrix": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformValue/length": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMatrixComponent/matrix": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMatrixComponent": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPerspective/CSSPerspective": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPerspective": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSPerspective/length": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/angle": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkew/ax": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkew/ay": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkew": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewX/ax": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewX": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewY/ay": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewY": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformComponent/toString": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformComponent": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate/x": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate/y": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate/z": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformComponent/is2D": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTransformComponent/toMatrix": [],
     "https://www.w3.org/TR/css-transforms-1/": [
       "mathematical-description"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSTranslate/CSSTranslate": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/CSSRotate": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/x": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/y": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSRotate/z": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale/CSSScale": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale/x": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale/y": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSScale/z": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkew/CSSSkew": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewX/CSSSkewX": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSSkewY/CSSSkewY": [],
     "https://drafts.csswg.org/css-transforms-2/": [
       "funcdef-perspective",
       "propdef-backface-visibility",
@@ -342,6 +400,7 @@
       "funcdef-rotatey",
       "funcdef-rotatez"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSSMatrixComponent/CSSMatrixComponent": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSImageValue": [],
     "https://drafts.csswg.org/css-images-4/": [
       "funcdef-image",
@@ -353,6 +412,13 @@
     ],
     "https://www.w3.org/TR/css-color-4/": [
       "predefined"
+    ],
+    "https://drafts.csswg.org/css-color-5/": [
+      "funcdef-rgb",
+      "funcdef-hsl",
+      "funcdef-hwb",
+      "funcdef-lch",
+      "funcdef-lab"
     ],
     "https://www.w3.org/TR/css-properties-values-api-1/": [
       "css-style-value-reification"
@@ -835,6 +901,7 @@
     "https://www.w3.org/TR/css-break-4/": [],
     "https://www.w3.org/TR/css-cascade-5/": [],
     "https://www.w3.org/TR/css-color-3/": [],
+    "https://www.w3.org/TR/css-color-5/": [],
     "https://www.w3.org/TR/css-color-adjust-1/": [],
     "https://www.w3.org/TR/css-contain-2/": [],
     "https://www.w3.org/TR/css-content-3/": [],
@@ -880,7 +947,6 @@
     "https://www.w3.org/TR/cssom-view-1/": [],
     "https://www.w3.org/TR/fill-stroke-3/": [],
     "https://www.w3.org/TR/motion-1/": [],
-    "https://tools.ietf.org/html/rfc2119": [],
-    "https://cie.co.at/publications/colorimetry-part-4-cie-1976-lab-colour-space-1": []
+    "https://tools.ietf.org/html/rfc2119": []
   }
 }

@@ -9,13 +9,14 @@ interface WebTransport {
   readonly attribute Promise<WebTransportCloseInfo> closed;
   undefined close(optional WebTransportCloseInfo closeInfo = {});
   attribute EventHandler onstatechange;
+
+  readonly attribute unsigned short maxDatagramSize;
+  readonly attribute DatagramDuplexStream datagrams;
+
+  Promise<BidirectionalStream> createBidirectionalStream();
+  /* a ReadableStream of BidirectionalStream objects */
+  readonly attribute ReadableStream incomingBidirectionalStreams;
 };
 
 // Source: WebTransport (https://w3c.github.io/webtransport/)
 WebTransport includes UnidirectionalStreamsTransport;
-
-// Source: WebTransport (https://w3c.github.io/webtransport/)
-WebTransport includes BidirectionalStreamsTransport;
-
-// Source: WebTransport (https://w3c.github.io/webtransport/)
-WebTransport includes DatagramTransport;
