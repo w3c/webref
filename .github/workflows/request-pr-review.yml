@@ -1,0 +1,26 @@
+name: "@webref release: Request review of pre-release PR"
+
+on:
+  schedule:
+    - cron: '0 5 * * 4'
+  workflow_dispatch:
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14.x
+
+    - name: Checkout webref
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run:  npm install @octokit/rest
+
+    - name: Request review of pre-release PR
+      run: node tools/request-pr-review.js
+      with:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
