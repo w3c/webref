@@ -30,6 +30,6 @@ jobs:
 
     - name: Release package if needed
       run: node tools/release-package.js ${{ github.event.pull_request.number }}
-      with:
+      env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
