@@ -126,6 +126,12 @@ partial interface Navigator {
   [SecureContext, SameObject] readonly attribute CredentialsContainer credentials;
 };
 
+// Source: Device Posture API (https://www.w3.org/TR/device-posture/)
+[SecureContext, Exposed=(Window)]
+partial interface Navigator {
+  [SameObject] readonly attribute DevicePosture devicePosture;
+};
+
 // Source: Encrypted Media Extensions (https://www.w3.org/TR/encrypted-media/)
 partial interface Navigator {
     [SecureContext] Promise<MediaKeySystemAccess> requestMediaKeySystemAccess(DOMString keySystem,

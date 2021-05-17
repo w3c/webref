@@ -8,6 +8,7 @@
       "constructors": {},
       "functions": {
         "Window": [
+          "Navigator",
           "DevicePosture"
         ]
       }
@@ -107,16 +108,16 @@
       }
     },
     "idlExtendedNames": {
-      "Screen": [
+      "Navigator": [
         {
-          "fragment": "[SecureContext]\npartial interface Screen {\n  [SameObject] readonly attribute DevicePosture posture;\n};",
+          "fragment": "[SecureContext, Exposed=(Window)]\npartial interface Navigator {\n  [SameObject] readonly attribute DevicePosture devicePosture;\n};",
           "type": "interface",
-          "name": "Screen",
+          "name": "Navigator",
           "inheritance": null,
           "members": [
             {
               "type": "attribute",
-              "name": "posture",
+              "name": "devicePosture",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
@@ -143,6 +144,19 @@
               "name": "SecureContext",
               "rhs": null,
               "arguments": []
+            },
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier-list",
+                "value": [
+                  {
+                    "value": "Window"
+                  }
+                ]
+              },
+              "arguments": []
             }
           ],
           "partial": true
@@ -152,11 +166,12 @@
     "globals": {},
     "exposed": {
       "Window": [
+        "Navigator",
         "DevicePosture"
       ]
     },
     "dependencies": {
-      "Screen": [
+      "Navigator": [
         "DevicePosture"
       ],
       "DevicePosture": [
@@ -166,7 +181,7 @@
       ]
     },
     "externalDependencies": [
-      "Screen",
+      "Navigator",
       "EventTarget",
       "EventHandler"
     ],
