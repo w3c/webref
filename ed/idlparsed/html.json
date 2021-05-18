@@ -16098,7 +16098,7 @@
         "partial": false
       },
       "CanvasFillStrokeStyles": {
-        "fragment": "interface mixin CanvasFillStrokeStyles {\n  // colors and styles (see also the CanvasPathDrawingStyles and CanvasTextDrawingStyles interfaces)\n  attribute (DOMString or CanvasGradient or CanvasPattern) strokeStyle; // (default black)\n  attribute (DOMString or CanvasGradient or CanvasPattern) fillStyle; // (default black)\n  CanvasGradient createLinearGradient(double x0, double y0, double x1, double y1);\n  CanvasGradient createRadialGradient(double x0, double y0, double r0, double x1, double y1, double r1);\n  CanvasPattern? createPattern(CanvasImageSource image, [LegacyNullToEmptyString] DOMString repetition);\n\n};",
+        "fragment": "interface mixin CanvasFillStrokeStyles {\n  // colors and styles (see also the CanvasPathDrawingStyles and CanvasTextDrawingStyles interfaces)\n  attribute (DOMString or CanvasGradient or CanvasPattern) strokeStyle; // (default black)\n  attribute (DOMString or CanvasGradient or CanvasPattern) fillStyle; // (default black)\n  CanvasGradient createLinearGradient(double x0, double y0, double x1, double y1);\n  CanvasGradient createRadialGradient(double x0, double y0, double r0, double x1, double y1, double r1);\n  CanvasGradient createConicGradient(double startAngle, double x, double y);\n  CanvasPattern? createPattern(CanvasImageSource image, [LegacyNullToEmptyString] DOMString repetition);\n\n};",
         "type": "interface mixin",
         "name": "CanvasFillStrokeStyles",
         "inheritance": null,
@@ -16358,6 +16358,70 @@
               {
                 "type": "argument",
                 "name": "r1",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "createConicGradient",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CanvasGradient"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "startAngle",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "x",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "y",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",

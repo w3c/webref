@@ -3039,7 +3039,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#prompt-to-unload-a-document`](https://html.spec.whatwg.org/#prompt-to-unload-a-document)
      * [`https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer`](https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer)
      * [`https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry)
-     * [`https://www.w3.org/TR/service-workers-1/#run-service-worker`](https://www.w3.org/TR/service-workers-1/#run-service-worker)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/):
      * [`https://html.spec.whatwg.org/#update-the-image-data`](https://html.spec.whatwg.org/#update-the-image-data)
      * [`https://w3c.github.io/vibration/#dfn-validate-and-normalize`](https://w3c.github.io/vibration/#dfn-validate-and-normalize)
@@ -3797,7 +3796,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1297 problematic external links found in 199 specifications
+=> 1296 problematic external links found in 199 specifications
 
 
 ## External links that neither target definitions nor headings

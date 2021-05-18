@@ -9,6 +9,6 @@ dictionary VideoFramePlaneInit {
   unsigned long cropHeight;
   unsigned long displayWidth;
   unsigned long displayHeight;
-  unsigned long long duration;
-  unsigned long long timestamp;
+  long long duration;     // microseconds
+  long long timestamp;    // microseconds
 };

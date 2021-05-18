@@ -4,6 +4,6 @@ dictionary AudioDataInit {
   required float sampleRate;
   required unsigned long numberOfFrames;
   required unsigned long numberOfChannels;
-  required unsigned long long timestamp;
+  required long long timestamp;    // microseconds
   required BufferSource data;
 };

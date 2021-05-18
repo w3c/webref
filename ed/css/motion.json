@@ -85,7 +85,7 @@
       "value": "path( <string> )"
     },
     "<size>": {
-      "prose": "Decides the path length used when offset-distance is expressed as a percentage, using the distance to the containing box. For <size> values other than sides, the path length is independent of <angle>. It is defined as: <size> = [ closest-side | closest-corner | farthest-side | farthest-corner | sides ] closest-side The perpendicular distance is measured between the initial position and the closest side of the box from it. closest-corner The distance is measured between the initial position and the closest corner of the box from it. farthest-side The perpendicular distance is measured between the initial position and the farthest side of the box from it. farthest-corner The distance is measured between the initial position and the farthest corner of the box from it. sides The distance is measured between the initial position and the intersection of the ray with the box. If the initial position is not within the box, the distance is 0. Note: When the initial position is on one of the edges of the containing block, the closest side takes the edge that the initial position is on, and thus the path length used for percentage offset-distance values is 0. Note: When closest-side or farthest-side are used, and the initial position is outside the box, the sides are considered to extend indefinitely."
+      "prose": "Decides the path length used when offset-distance is expressed as a percentage, using the distance to the containing box. For <size> values other than sides, the path length is independent of <angle>. It is defined as: <size> = [ closest-side | closest-corner | farthest-side | farthest-corner | sides ]"
     }
   }
 }

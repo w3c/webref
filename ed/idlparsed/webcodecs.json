@@ -2014,7 +2014,7 @@
         "extAttrs": []
       },
       "EncodedAudioChunk": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedAudioChunk {\n  constructor(EncodedAudioChunkInit init);\n  readonly attribute EncodedAudioChunkType type;\n  readonly attribute unsigned long long timestamp;  // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo(ArrayBufferView dst);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedAudioChunk {\n  constructor(EncodedAudioChunkInit init);\n  readonly attribute EncodedAudioChunkType type;\n  readonly attribute long long timestamp;    // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo(ArrayBufferView dst);\n};",
         "type": "interface",
         "name": "EncodedAudioChunk",
         "inheritance": null,
@@ -2065,7 +2065,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "extAttrs": [],
             "special": "",
@@ -2140,7 +2140,7 @@
         "partial": false
       },
       "EncodedAudioChunkInit": {
-        "fragment": "dictionary EncodedAudioChunkInit {\n  required EncodedAudioChunkType type;\n  required unsigned long long timestamp;\n  required BufferSource data;\n};",
+        "fragment": "dictionary EncodedAudioChunkInit {\n  required EncodedAudioChunkType type;\n  required long long timestamp;    // microseconds\n  required BufferSource data;\n};",
         "type": "dictionary",
         "name": "EncodedAudioChunkInit",
         "inheritance": null,
@@ -2170,7 +2170,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "default": null,
             "required": true
@@ -2211,7 +2211,7 @@
         "extAttrs": []
       },
       "EncodedVideoChunk": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedVideoChunk {\n  constructor(EncodedVideoChunkInit init);\n  readonly attribute EncodedVideoChunkType type;\n  readonly attribute unsigned long long timestamp;  // microseconds\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo(ArrayBufferView dst);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedVideoChunk {\n  constructor(EncodedVideoChunkInit init);\n  readonly attribute EncodedVideoChunkType type;\n  readonly attribute long long timestamp;    // microseconds\n  readonly attribute long long? duration;    // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo(ArrayBufferView dst);\n};",
         "type": "interface",
         "name": "EncodedVideoChunk",
         "inheritance": null,
@@ -2262,7 +2262,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "extAttrs": [],
             "special": "",
@@ -2277,7 +2277,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "extAttrs": [],
             "special": "",
@@ -2352,7 +2352,7 @@
         "partial": false
       },
       "EncodedVideoChunkInit": {
-        "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  required unsigned long long timestamp;\n  unsigned long long duration;\n  required BufferSource data;\n};",
+        "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  required long long timestamp;    // microseconds\n  long long duration;              // microseconds\n  required BufferSource data;\n};",
         "type": "dictionary",
         "name": "EncodedVideoChunkInit",
         "inheritance": null,
@@ -2382,7 +2382,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "default": null,
             "required": true
@@ -2397,7 +2397,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "default": null,
             "required": false
@@ -2438,7 +2438,7 @@
         "extAttrs": []
       },
       "AudioData": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat sampleFormat;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute unsigned long allocationSize;\n  readonly attribute unsigned long long duration;\n  readonly attribute unsigned long long timestamp;\n\n  undefined copyTo([AllowShared] BufferSource destination, unsigned long planeNumber);\n  AudioData clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat sampleFormat;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute unsigned long allocationSize;\n  readonly attribute long long duration;     // microseconds\n  readonly attribute long long timestamp;    // microseconds\n\n  undefined copyTo([AllowShared] BufferSource destination, unsigned long planeNumber);\n  AudioData clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "AudioData",
         "inheritance": null,
@@ -2549,7 +2549,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "extAttrs": [],
             "special": "",
@@ -2564,7 +2564,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "extAttrs": [],
             "special": "",
@@ -2677,7 +2677,7 @@
         "partial": false
       },
       "AudioDataInit": {
-        "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat sampleFormat;\n  required float sampleRate;\n  required unsigned long numberOfFrames;\n  required unsigned long numberOfChannels;\n  required unsigned long long timestamp;\n  required BufferSource data;\n};",
+        "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat sampleFormat;\n  required float sampleRate;\n  required unsigned long numberOfFrames;\n  required unsigned long numberOfChannels;\n  required long long timestamp;    // microseconds\n  required BufferSource data;\n};",
         "type": "dictionary",
         "name": "AudioDataInit",
         "inheritance": null,
@@ -2752,7 +2752,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "default": null,
             "required": true
@@ -2813,7 +2813,7 @@
         "extAttrs": []
       },
       "VideoFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor(sequence<(Plane or PlaneInit)> planes,\n              VideoFramePlaneInit init);\n\n  readonly attribute PixelFormat format;\n  readonly attribute FrozenArray<Plane>? planes;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute unsigned long cropLeft;\n  readonly attribute unsigned long cropTop;\n  readonly attribute unsigned long cropWidth;\n  readonly attribute unsigned long cropHeight;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;\n  readonly attribute unsigned long long? timestamp;\n\n  VideoFrame clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor(sequence<(Plane or PlaneInit)> planes,\n              VideoFramePlaneInit init);\n\n  readonly attribute PixelFormat format;\n  readonly attribute FrozenArray<Plane>? planes;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute unsigned long cropLeft;\n  readonly attribute unsigned long cropTop;\n  readonly attribute unsigned long cropWidth;\n  readonly attribute unsigned long cropHeight;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute long long? duration;     // microseconds\n  readonly attribute long long? timestamp;    // microseconds\n\n  VideoFrame clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoFrame",
         "inheritance": null,
@@ -3090,7 +3090,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "extAttrs": [],
             "special": "",
@@ -3105,7 +3105,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "extAttrs": [],
             "special": "",
@@ -3163,7 +3163,7 @@
         "partial": false
       },
       "VideoFrameInit": {
-        "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;\n  unsigned long long timestamp;\n};",
+        "fragment": "dictionary VideoFrameInit {\n  long long duration;     // microseconds\n  long long timestamp;    // microseconds\n};",
         "type": "dictionary",
         "name": "VideoFrameInit",
         "inheritance": null,
@@ -3178,7 +3178,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "default": null,
             "required": false
@@ -3193,7 +3193,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "default": null,
             "required": false
@@ -3203,7 +3203,7 @@
         "partial": false
       },
       "VideoFramePlaneInit": {
-        "fragment": "dictionary VideoFramePlaneInit {\n  required PixelFormat format;\n  required unsigned long codedWidth;\n  required unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  unsigned long long duration;\n  unsigned long long timestamp;\n};",
+        "fragment": "dictionary VideoFramePlaneInit {\n  required PixelFormat format;\n  required unsigned long codedWidth;\n  required unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  long long duration;     // microseconds\n  long long timestamp;    // microseconds\n};",
         "type": "dictionary",
         "name": "VideoFramePlaneInit",
         "inheritance": null,
@@ -3353,7 +3353,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "default": null,
             "required": false
@@ -3368,7 +3368,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "long long"
             },
             "default": null,
             "required": false
