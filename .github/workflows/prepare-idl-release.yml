@@ -1,13 +1,24 @@
 name: "@webref/idl: Prepare release PR if needed"
 
 on:
+  # Runs on pushes to default branch on files of interest and after a crawl.
+  # Notes:
+  # - No trigger on changes to "packages/css/**" to avoid re-creating
+  # pre-release PR before package has actually been released.
+  # - Crawl pushes to default branch but that push won't trigger the workflow
+  # (a workflow cannot be triggered by a push made by another workflow). Hence
+  # the need to react on "workflow_run".
+  workflow_run:
+    workflows:
+      - "Update ED report"
+    types:
+      - completed
   push:
     branches:
       - master
     paths:
       - 'ed/idl/**'
       - 'ed/idlpatches/**'
-      - 'packages/idl/**'
   workflow_dispatch:
 
 jobs:
