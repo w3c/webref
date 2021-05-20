@@ -10,25 +10,28 @@
       "value": "srgb | hsl | hwb | xyz | lab | lch"
     },
     "<color-mix()>": {
-      "value": "color-mix( in <color-space> , [ <color> && <percentage [0,100]>? ]#{2})"
+      "value": "color-mix( in <color-space> , [ <color> && <percentage [0,100]>? ]#{2} <hue-adjuster>?)"
+    },
+    "<hue-adjuster>": {
+      "value": "shorter | longer | increasing | decreasing | specified"
     },
     "<color-contrast()>": {
       "value": "color-contrast( <color> vs <color>#{2,} [ to [<number> | AA | AA-large]]? )"
     },
     "<color-adjust()>": {
-      "value": "color-adjust( <color> [ <color-adjuster> && [ in <color-space> ]? ]? )"
+      "value": "color-adjust( <color> <color-adjuster> && [ in <color-space> ]? )"
     },
     "<color-adjuster>": {
-      "value": "[ [ <srgb-adjuster> | <hsl-adjuster> | <hwb-adjuster> | <xyz-adjuster> | <lab-adjuster> | <lch-adjuster> ] | alpha ] <percentage>?"
+      "value": "[ [ <srgb-adjuster> | <hsl-adjuster> | <hwb-adjuster> | <xyz-adjuster> | <lab-adjuster> | <lch-adjuster> ] | alpha ] <percentage>"
     },
     "<srgb-adjuster>": {
       "value": "red | green | blue"
     },
     "<hsl-adjuster>": {
-      "value": "<hue-adjuster> | saturation | lightness"
+      "value": "hue | saturation | lightness"
     },
     "<hwb-adjuster>": {
-      "value": "<hue-adjuster> | whiteness | blackness"
+      "value": "hue | whiteness | blackness"
     },
     "<xyz-adjuster>": {
       "value": "x | y | z"
@@ -37,10 +40,7 @@
       "value": "lightness | a | b"
     },
     "<lch-adjuster>": {
-      "value": "lightness | chroma | <hue-adjuster>"
-    },
-    "<hue-adjuster>": {
-      "value": "hue [shorter | longer | increasing | decreasing | specified ]?"
+      "value": "lightness | chroma | hue"
     },
     "<rgb()>": {
       "value": "rgb( <percentage>{3} [ / <alpha-value> ]? ) | rgb( <number>{3} [ / <alpha-value> ]? ) | rgb( [ from <color> ]? [ <number> | <percentage> ]{3} [ / <alpha-value> ]? )"
@@ -56,6 +56,9 @@
     },
     "<lch()>": {
       "value": "lch([from <color>]? <percentage> <number> <hue> [ / <alpha-value> ]? )"
+    },
+    "<color()>": {
+      "value": "color( [from <color>]? <colorspace-params> [ / <alpha-value> ]? )"
     }
   }
 }
