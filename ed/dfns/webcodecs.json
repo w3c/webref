@@ -59,6 +59,24 @@
       "definedIn": "dt"
     },
     {
+      "id": "temporal-layer",
+      "href": "https://w3c.github.io/webcodecs/#temporal-layer",
+      "linkingText": [
+        "Temporal Layer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "progressive-image",
       "href": "https://w3c.github.io/webcodecs/#progressive-image",
       "linkingText": [
@@ -1488,6 +1506,26 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-encodedaudiochunkoutputcallback-metadata",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedaudiochunkoutputcallback-metadata",
+      "linkingText": [
+        "metadata"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "EncodedAudioChunkOutputCallback"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-interface",
+        "title": "AudioEncoder Interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-audioencoder-codec-implementation-slot",
       "href": "https://w3c.github.io/webcodecs/#dom-audioencoder-codec-implementation-slot",
       "linkingText": [
@@ -1532,6 +1570,46 @@
       "href": "https://w3c.github.io/webcodecs/#dom-audioencoder-error-callback-slot",
       "linkingText": [
         "[[error callback]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audioencoder-active-encoder-config-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-audioencoder-active-encoder-config-slot",
+      "linkingText": [
+        "[[active encoder config]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audioencoder-active-output-config-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-audioencoder-active-output-config-slot",
+      "linkingText": [
+        "[[active output config]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1783,6 +1861,44 @@
       "definedIn": "dt"
     },
     {
+      "id": "dictdef-encodedaudiochunkmetadata",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-encodedaudiochunkmetadata",
+      "linkingText": [
+        "EncodedAudioChunkMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encoded-audio-chunk-metadata",
+        "title": "EncodedAudioChunkMetadata",
+        "number": "5.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-encodedaudiochunkmetadata-decoderconfig",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedaudiochunkmetadata-decoderconfig",
+      "linkingText": [
+        "decoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedAudioChunkMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encoded-audio-chunk-metadata",
+        "title": "EncodedAudioChunkMetadata",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "videoencoder",
       "href": "https://w3c.github.io/webcodecs/#videoencoder",
       "linkingText": [
@@ -1980,10 +2096,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-encodedvideochunkoutputcallback-output",
-      "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkoutputcallback-output",
+      "id": "dom-encodedvideochunkoutputcallback-chunk",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkoutputcallback-chunk",
       "linkingText": [
-        "output"
+        "chunk"
       ],
       "localLinkingText": [],
       "type": "argument",
@@ -2000,10 +2116,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-encodedvideochunkoutputcallback-output_config",
-      "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkoutputcallback-output_config",
+      "id": "dom-encodedvideochunkoutputcallback-metadata",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkoutputcallback-metadata",
       "linkingText": [
-        "output_config"
+        "metadata"
       ],
       "localLinkingText": [],
       "type": "argument",
@@ -2352,6 +2468,64 @@
         "id": "videoencoder-algorithms",
         "title": "Algorithms",
         "number": "6.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-encodedvideochunkmetadata",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-encodedvideochunkmetadata",
+      "linkingText": [
+        "EncodedVideoChunkMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encoded-video-chunk-metadata",
+        "title": "EncodedVideoChunkMetadata",
+        "number": "6.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-encodedvideochunkmetadata-decoderconfig",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkmetadata-decoderconfig",
+      "linkingText": [
+        "decoderConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedVideoChunkMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encoded-video-chunk-metadata",
+        "title": "EncodedVideoChunkMetadata",
+        "number": "6.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-encodedvideochunkmetadata-temporallayerid",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkmetadata-temporallayerid",
+      "linkingText": [
+        "temporalLayerId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedVideoChunkMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encoded-video-chunk-metadata",
+        "title": "EncodedVideoChunkMetadata",
+        "number": "6.6"
       },
       "definedIn": "dt"
     },
@@ -3308,6 +3482,26 @@
       "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-hardwareacceleration",
       "linkingText": [
         "hardwareAcceleration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-scalabilitymode",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-scalabilitymode",
+      "linkingText": [
+        "scalabilityMode"
       ],
       "localLinkingText": [],
       "type": "dict-member",

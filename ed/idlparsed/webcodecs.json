@@ -942,7 +942,7 @@
         "partial": false
       },
       "EncodedAudioChunkOutputCallback": {
-        "fragment": "callback EncodedAudioChunkOutputCallback = undefined(EncodedAudioChunk output);",
+        "fragment": "callback EncodedAudioChunkOutputCallback =\n    undefined (EncodedAudioChunk output,\n               optional EncodedAudioChunkMetadata metadata = {});",
         "type": "callback",
         "name": "EncodedAudioChunkOutputCallback",
         "idlType": {
@@ -969,9 +969,52 @@
             "default": null,
             "optional": false,
             "variadic": false
+          },
+          {
+            "type": "argument",
+            "name": "metadata",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EncodedAudioChunkMetadata"
+            },
+            "default": {
+              "type": "dictionary"
+            },
+            "optional": true,
+            "variadic": false
           }
         ],
         "extAttrs": []
+      },
+      "EncodedAudioChunkMetadata": {
+        "fragment": "dictionary EncodedAudioChunkMetadata {\n  AudioDecoderConfig decoderConfig;\n};",
+        "type": "dictionary",
+        "name": "EncodedAudioChunkMetadata",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "decoderConfig",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioDecoderConfig"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       },
       "VideoEncoder": {
         "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<boolean> isConfigSupported(VideoEncoderConfig config);\n};",
@@ -1270,7 +1313,7 @@
         "partial": false
       },
       "EncodedVideoChunkOutputCallback": {
-        "fragment": "callback EncodedVideoChunkOutputCallback = undefined(EncodedVideoChunk output, VideoDecoderConfig? output_config);",
+        "fragment": "callback EncodedVideoChunkOutputCallback =\n    undefined (EncodedVideoChunk chunk,\n               optional EncodedVideoChunkMetadata metadata = {});",
         "type": "callback",
         "name": "EncodedVideoChunkOutputCallback",
         "idlType": {
@@ -1284,7 +1327,7 @@
         "arguments": [
           {
             "type": "argument",
-            "name": "output",
+            "name": "chunk",
             "extAttrs": [],
             "idlType": {
               "type": "argument-type",
@@ -1300,22 +1343,64 @@
           },
           {
             "type": "argument",
-            "name": "output_config",
+            "name": "metadata",
             "extAttrs": [],
             "idlType": {
               "type": "argument-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
-              "idlType": "VideoDecoderConfig"
+              "idlType": "EncodedVideoChunkMetadata"
             },
-            "default": null,
-            "optional": false,
+            "default": {
+              "type": "dictionary"
+            },
+            "optional": true,
             "variadic": false
           }
         ],
         "extAttrs": []
+      },
+      "EncodedVideoChunkMetadata": {
+        "fragment": "dictionary EncodedVideoChunkMetadata {\n  VideoDecoderConfig decoderConfig;\n  unsigned long temporalLayerId;\n};",
+        "type": "dictionary",
+        "name": "EncodedVideoChunkMetadata",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "decoderConfig",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "VideoDecoderConfig"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "temporalLayerId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       },
       "AudioDecoderSupport": {
         "fragment": "dictionary AudioDecoderSupport {\n  boolean supported;\n  AudioDecoderConfig config;\n};",
@@ -1796,7 +1881,7 @@
         "partial": false
       },
       "VideoEncoderConfig": {
-        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long width;\n  required unsigned long height;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
+        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long width;\n  required unsigned long height;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n  DOMString scalabilityMode;\n};",
         "type": "dictionary",
         "name": "VideoEncoderConfig",
         "inheritance": null,
@@ -1907,6 +1992,21 @@
               "type": "string",
               "value": "allow"
             },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "scalabilityMode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
             "required": false
           }
         ],
@@ -4300,6 +4400,9 @@
         "EncodedAudioChunkOutputCallback",
         "WebCodecsErrorCallback"
       ],
+      "EncodedAudioChunkMetadata": [
+        "AudioDecoderConfig"
+      ],
       "VideoEncoder": [
         "VideoEncoderInit",
         "CodecState",
@@ -4310,6 +4413,9 @@
       "VideoEncoderInit": [
         "EncodedVideoChunkOutputCallback",
         "WebCodecsErrorCallback"
+      ],
+      "EncodedVideoChunkMetadata": [
+        "VideoDecoderConfig"
       ],
       "AudioDecoderSupport": [
         "AudioDecoderConfig"

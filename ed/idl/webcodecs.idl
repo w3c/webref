@@ -70,7 +70,13 @@ dictionary AudioEncoderInit {
   required WebCodecsErrorCallback error;
 };
 
-callback EncodedAudioChunkOutputCallback = undefined(EncodedAudioChunk output);
+callback EncodedAudioChunkOutputCallback =
+    undefined (EncodedAudioChunk output,
+               optional EncodedAudioChunkMetadata metadata = {});
+
+dictionary EncodedAudioChunkMetadata {
+  AudioDecoderConfig decoderConfig;
+};
 
 [Exposed=(Window,DedicatedWorker)]
 interface VideoEncoder {
@@ -93,7 +99,14 @@ dictionary VideoEncoderInit {
   required WebCodecsErrorCallback error;
 };
 
-callback EncodedVideoChunkOutputCallback = undefined(EncodedVideoChunk output, VideoDecoderConfig? output_config);
+callback EncodedVideoChunkOutputCallback =
+    undefined (EncodedVideoChunk chunk,
+               optional EncodedVideoChunkMetadata metadata = {});
+
+dictionary EncodedVideoChunkMetadata {
+  VideoDecoderConfig decoderConfig;
+  unsigned long temporalLayerId;
+};
 
 dictionary AudioDecoderSupport {
   boolean supported;
@@ -151,6 +164,7 @@ dictionary VideoEncoderConfig {
   unsigned long displayWidth;
   unsigned long displayHeight;
   HardwareAcceleration hardwareAcceleration = "allow";
+  DOMString scalabilityMode;
 };
 
 enum HardwareAcceleration {

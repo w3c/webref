@@ -5,7 +5,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long width;\n  required unsigned long height;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
+    "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long width;\n  required unsigned long height;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n  DOMString scalabilityMode;\n};",
     "href": "https://w3c.github.io/webcodecs/#dictdef-videoencoderconfig"
   },
   "extended": [],

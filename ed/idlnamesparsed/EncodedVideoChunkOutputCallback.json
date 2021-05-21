@@ -5,7 +5,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "callback EncodedVideoChunkOutputCallback = undefined(EncodedVideoChunk output, VideoDecoderConfig? output_config);",
+    "fragment": "callback EncodedVideoChunkOutputCallback =\n    undefined (EncodedVideoChunk chunk,\n               optional EncodedVideoChunkMetadata metadata = {});",
     "href": "https://w3c.github.io/webcodecs/#callbackdef-encodedvideochunkoutputcallback"
   },
   "extended": [],
