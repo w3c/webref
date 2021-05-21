@@ -86,14 +86,20 @@ function computeDiff(type) {
   }
 
   // On Windows, the "echo -n" command actually outputs "-n"
-  // Also replace tmp folder name in diff to make it possible to compare diff
-  // with diff that may already exist in a pending pre-release PR.
+  // Also replace tmp folder name and file date in diff to make it possible to
+  // compare diff with diff that may already exist in a pending pre-release PR
   // Note the diff command doubles backslashes, which also need to be doubled
   // in the string passed to RegExp for them not to be interpreted (In practice,
   // these backslashes also only appear on Windows)
+  // Note: Regexp to replace date looks for lines that start with "---" or "+++"
+  // followed by the right path (that can sometimes be enclosed in double quotes
+  // in Windows environments) and that ends with something that looks like a
+  // full date with time and timezone offset.
   diff = diff
     .replace(/\-n\s*$/, "")
-    .replace(new RegExp(tmpFolder.replace(/\\/g, "\\\\\\\\"), "g"), "webref");
+    .replace(new RegExp(tmpFolder.replace(/\\/g, "\\\\\\\\"), "g"), "webref")
+    .replace(/^(\-\-\- "?webref[^" ]+?"?)\s+[\d\-\s:\.\+]+$/mg, "$1")
+    .replace(/^(\+\+\+ "?packages[^" ]+?"?)\s+[\d\-\s:\.\+]+$/mg, "$1");
 
   // Prepend diff with new and deleted files
   diff = diff
