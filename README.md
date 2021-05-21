@@ -40,4 +40,19 @@ Feel free to raise [issues in this repository](https://github.com/w3c/webref/iss
 
 ## Development notes
 
-- Data update tasks are defined as GitHub Actions. A typical crawl takes about **10mn** to complete. Tasks fail from time to time due to network glitches or temporarily unreachable specs. Well, they also fail from time to time due to bugs, of course...
+GitHub Actions workflows are used to automate most of the tasks in this repo.
+
+### Data update
+
+- [Update ED report](https://github.com/w3c/webref/actions/workflows/update-ed.yml) - crawls the latest version of Editor's Drafts and updates the contents of the [`ed`](ed) folder. Workflow runs every 6 hours. A typical crawl takes about **10mn** to complete.
+- [Update TR report](https://github.com/w3c/webref/actions/workflows/update-tr.yml) - crawls the published version of Editor's Drafts and updates the contents of the [`tr`](tr) folder. Workflow runs once per week on Monday. A typical crawl takes about **10mn** to complete.
+- [Test](https://github.com/w3c/webref/actions/workflows/test.yml): tests the contents of the repo. Runs each time there is a push against the default branch.
+- [Clean up abandoned files](https://github.com/w3c/webref/actions/workflows/cleanup.yml) - Checks the contents of repository to detect orphan crawl files that are no longer targeted by the latest crawl's result and creates a PR to delete these files from the repository. Runs once per week on Wednesday. The crawl workflows does not delete these files automatically because crawl sometimes fails on a spec due to transient network or spec errors.
+
+
+### Releases to NPM
+
+- [`@webref/css`: Prepare release PR if needed]https://github.com/w3c/webref/actions/workflows/prepare-css-release.yml) - Checks latest CSS extracts and create a pre-release PR if a new version of the `@webref/css` npm package should be released. Runs after each crawl and whenever a push is made to the default branch on CSS files (except when this push is on the `packages` folder to avoid re-entrance issues). The pre-release PR details the diff that would be released, and bumps the package version in [`packages/css/package.json`](packages/css/package.json).
+- [`@webref/idl`: Prepare release PR if needed]https://github.com/w3c/webref/actions/workflows/prepare-idl-release.yml) - Checks latest IDL extracts and create a pre-release PR if a new version of the `@webref/idl` npm package should be released. Runs after each crawl and whenever a push is made to the default branch on IDL files (except when this push is on the `packages` folder to avoid re-entrance issues). The pre-release PR details the diff that would be released, and bumps the package version in [`packages/idl/package.json`](packages/idl/package.json).
+- [`@webref` release: Request review of pre-release PR](https://github.com/w3c/webref/actions/workflows/request-pr-review.yml) - Assigns reviewers to pre-release CSS/IDL PRs if they exist. Runs once per week on Thursday.
+- [Publish `@webref` package if needed](https://github.com/w3c/webref/actions/workflows/release-package.yml) - Publishes a new version of the `@webref/css` or `@webref/idl` package to npm and tags the corresponding commit on the default branch. Runs whenever a pre-release PR is merged. Note that the released version is the version that appeared in `packages/css/package.json` or `packages/idl/package.json` **before** the pre-release PR is merged.
