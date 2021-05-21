@@ -2368,6 +2368,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webdriver/#dfn-no-such-window`](https://w3c.github.io/webdriver/#dfn-no-such-window)
      * [`https://w3c.github.io/webdriver/#dfn-url-variables`](https://w3c.github.io/webdriver/#dfn-url-variables)
      * [`https://w3c.github.io/webdriver/#dfn-success`](https://w3c.github.io/webdriver/#dfn-success)
+- [Battery Status API](https://w3c.github.io/battery/):
+     * [`https://html.spec.whatwg.org/#incumbent-settings-object`](https://html.spec.whatwg.org/#incumbent-settings-object)
 - [Beacon](https://w3c.github.io/beacon/):
      * [`https://html.spec.whatwg.org/#entry-settings-object`](https://html.spec.whatwg.org/#entry-settings-object)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/):
@@ -2647,6 +2649,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-syntax-3/#consume-a-url-token`](https://drafts.csswg.org/css-syntax-3/#consume-a-url-token)
      * [`https://drafts.csswg.org/selectors-4/#typedef-wq-name`](https://drafts.csswg.org/selectors-4/#typedef-wq-name)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/):
+     * [`https://html.spec.whatwg.org/#incumbent-settings-object`](https://html.spec.whatwg.org/#incumbent-settings-object)
      * [`https://html.spec.whatwg.org/#familiar-with`](https://html.spec.whatwg.org/#familiar-with)
      * [`https://html.spec.whatwg.org/#rules-for-parsing-integers`](https://html.spec.whatwg.org/#rules-for-parsing-integers)
      * [`https://html.spec.whatwg.org/#live`](https://html.spec.whatwg.org/#live)
@@ -3312,6 +3315,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object)
      * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
      * [`https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object)
+     * [`https://html.spec.whatwg.org/#incumbent-settings-object`](https://html.spec.whatwg.org/#incumbent-settings-object)
      * [`https://html.spec.whatwg.org/#concept-location-ancestor-origins-list`](https://html.spec.whatwg.org/#concept-location-ancestor-origins-list)
      * [`https://wicg.github.io/BackgroundSync/spec/#fire-a-sync-event`](https://wicg.github.io/BackgroundSync/spec/#fire-a-sync-event)
      * [`https://w3c.github.io/payment-handler/#dfn-handling-a-canmakepaymentevent`](https://w3c.github.io/payment-handler/#dfn-handling-a-canmakepaymentevent)
@@ -3392,6 +3396,8 @@ Links in the body of a specification should be to the same document as that poin
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/):
      * [`https://www.w3.org/TR/uievents/#dead-key`](https://www.w3.org/TR/uievents/#dead-key)
      * [`https://www.w3.org/TR/uievents/#compositionupdate`](https://www.w3.org/TR/uievents/#compositionupdate)
+- [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/):
+     * [`https://html.spec.whatwg.org/#incumbent-settings-object`](https://html.spec.whatwg.org/#incumbent-settings-object)
 - [User Timing Level 3](https://w3c.github.io/user-timing/):
      * [`https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry)
      * [`https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer`](https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer)
@@ -3482,6 +3488,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/):
      * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
 - [Web IDL](https://heycam.github.io/webidl/):
+     * [`https://html.spec.whatwg.org/#incumbent-settings-object`](https://html.spec.whatwg.org/#incumbent-settings-object)
      * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
 - [Web Locks API](https://wicg.github.io/web-locks/):
      * [`https://storage.spec.whatwg.org/#storage-shelf`](https://storage.spec.whatwg.org/#storage-shelf)
@@ -3501,6 +3508,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/):
      * [`https://heycam.github.io/webidl/#create-a-namespace-object`](https://heycam.github.io/webidl/#create-a-namespace-object)
+     * [`https://html.spec.whatwg.org/#incumbent-settings-object`](https://html.spec.whatwg.org/#incumbent-settings-object)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/):
      * [`https://webassembly.github.io/spec/js-api/#instantiate-a-promise-of-a-module`](https://webassembly.github.io/spec/js-api/#instantiate-a-promise-of-a-module)
      * [`https://webassembly.github.io/spec/js-api/#asynchronously-compile-a-webassembly-module`](https://webassembly.github.io/spec/js-api/#asynchronously-compile-a-webassembly-module)
@@ -3796,7 +3804,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1295 problematic external links found in 199 specifications
+=> 1301 problematic external links found in 201 specifications
 
 
 ## External links that neither target definitions nor headings
