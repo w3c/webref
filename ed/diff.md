@@ -7,6 +7,6 @@
 - Initial URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
-- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
 
 
