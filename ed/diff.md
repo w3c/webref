@@ -2,3 +2,11 @@
 % Reffy
 % May 23, 2021
 
+## MathML Core
+
+- Initial URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
+- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
+
+
