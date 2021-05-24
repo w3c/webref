@@ -5,7 +5,7 @@
       "title": "Web Animations",
       "url": "https://www.w3.org/TR/web-animations-1/"
     },
-    "fragment": "[Exposed=Window,\n Constructor ((Element or CSSPseudoElement)? target,\n              object? keyframes,\n              optional (unrestricted double or KeyframeEffectOptions) options),\n Constructor (KeyframeEffect source)]\ninterface KeyframeEffect : AnimationEffect {\n    attribute (Element or CSSPseudoElement)? target;\n    attribute IterationCompositeOperation    iterationComposite;\n    attribute CompositeOperation             composite;\n    sequence<object> getKeyframes ();\n    void             setKeyframes (object? keyframes);\n};",
+    "fragment": "[Exposed=Window]\ninterface KeyframeEffect : AnimationEffect {\n    constructor(Element? target,\n                object? keyframes,\n                optional (unrestricted double or KeyframeEffectOptions) options = {});\n    constructor(KeyframeEffect source);\n    attribute Element?           target;\n    attribute CSSOMString?       pseudoElement;\n    attribute CompositeOperation composite;\n    sequence<object> getKeyframes();\n    undefined        setKeyframes(object? keyframes);\n};",
     "href": "https://www.w3.org/TR/web-animations-1/#keyframeeffect"
   },
   "extended": [
@@ -24,7 +24,7 @@
         "title": "Web Animations",
         "url": "https://www.w3.org/TR/web-animations-1/"
       },
-      "fragment": "[Exposed=Window]\ninterface AnimationEffect {\n    EffectTiming         getTiming();\n    ComputedEffectTiming getComputedTiming();\n    void                 updateTiming(optional OptionalEffectTiming timing);\n};",
+      "fragment": "[Exposed=Window]\ninterface AnimationEffect {\n    EffectTiming         getTiming();\n    ComputedEffectTiming getComputedTiming();\n    undefined            updateTiming(optional OptionalEffectTiming timing = {});\n};",
       "href": "https://www.w3.org/TR/web-animations-1/#animationeffect"
     },
     "extended": [

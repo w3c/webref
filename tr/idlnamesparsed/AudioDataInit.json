@@ -5,7 +5,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat sampleFormat;\n  required float sampleRate;\n  required unsigned long numberOfFrames;\n  required unsigned long numberOfChannels;\n  required unsigned long long timestamp;\n  required BufferSource data;\n};",
+    "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat sampleFormat;\n  required float sampleRate;\n  required unsigned long numberOfFrames;\n  required unsigned long numberOfChannels;\n  required long long timestamp;    // microseconds\n  required BufferSource data;\n};",
     "href": "https://www.w3.org/TR/webcodecs/#dictdef-audiodatainit"
   },
   "extended": [],

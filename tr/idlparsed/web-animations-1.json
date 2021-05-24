@@ -22,7 +22,7 @@
     },
     "idlNames": {
       "AnimationTimeline": {
-        "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n    readonly attribute double? currentTime;\n};",
+        "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n    readonly attribute double? currentTime;\n    readonly attribute TimelinePhase phase;\n};",
         "type": "interface",
         "name": "AnimationTimeline",
         "inheritance": null,
@@ -37,6 +37,21 @@
               "nullable": true,
               "union": false,
               "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "phase",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "TimelinePhase"
             },
             "extAttrs": [],
             "special": "",
@@ -85,25 +100,13 @@
         "partial": false
       },
       "DocumentTimeline": {
-        "fragment": "[Exposed=Window,\n Constructor (optional DocumentTimelineOptions options)]\ninterface DocumentTimeline : AnimationTimeline {\n};",
+        "fragment": "[Exposed=Window]\ninterface DocumentTimeline : AnimationTimeline {\n  constructor(optional DocumentTimelineOptions options = {});\n};",
         "type": "interface",
         "name": "DocumentTimeline",
         "inheritance": "AnimationTimeline",
-        "members": [],
-        "extAttrs": [
+        "members": [
           {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
+            "type": "constructor",
             "arguments": [
               {
                 "type": "argument",
@@ -117,21 +120,75 @@
                   "union": false,
                   "idlType": "DocumentTimelineOptions"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
-            ]
+            ],
+            "extAttrs": []
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
           }
         ],
         "partial": false
       },
       "Animation": {
-        "fragment": "[Exposed=Window,\n Constructor (optional AnimationEffect? effect = null,\n              optional AnimationTimeline? timeline)]\ninterface Animation : EventTarget {\n             attribute DOMString                id;\n             attribute AnimationEffect?         effect;\n             attribute AnimationTimeline?       timeline;\n             attribute double?                  startTime;\n             attribute double?                  currentTime;\n             attribute double                   playbackRate;\n    readonly attribute AnimationPlayState       playState;\n    readonly attribute boolean                  pending;\n    readonly attribute Promise<Animation>       ready;\n    readonly attribute Promise<Animation>       finished;\n             attribute EventHandler             onfinish;\n             attribute EventHandler             oncancel;\n    void cancel ();\n    void finish ();\n    void play ();\n    void pause ();\n    void updatePlaybackRate (double playbackRate);\n    void reverse ();\n};",
+        "fragment": "[Exposed=Window]\ninterface Animation : EventTarget {\n    constructor(optional AnimationEffect? effect = null,\n                optional AnimationTimeline? timeline);\n             attribute DOMString                id;\n             attribute AnimationEffect?         effect;\n             attribute AnimationTimeline?       timeline;\n             attribute double?                  startTime;\n             attribute double?                  currentTime;\n             attribute double                   playbackRate;\n    readonly attribute AnimationPlayState       playState;\n    readonly attribute AnimationReplaceState    replaceState;\n    readonly attribute boolean                  pending;\n    readonly attribute Promise<Animation>       ready;\n    readonly attribute Promise<Animation>       finished;\n             attribute EventHandler             onfinish;\n             attribute EventHandler             oncancel;\n             attribute EventHandler             onremove;\n    undefined cancel();\n    undefined finish();\n    undefined play();\n    undefined pause();\n    undefined updatePlaybackRate(double playbackRate);\n    undefined reverse();\n    undefined persist();\n    undefined commitStyles();\n};",
         "type": "interface",
         "name": "Animation",
         "inheritance": "EventTarget",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "effect",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "AnimationEffect"
+                },
+                "default": {
+                  "type": "null"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "timeline",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "AnimationTimeline"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "attribute",
             "name": "id",
@@ -239,6 +296,21 @@
           },
           {
             "type": "attribute",
+            "name": "replaceState",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AnimationReplaceState"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "pending",
             "idlType": {
               "type": "attribute-type",
@@ -331,6 +403,21 @@
             "readonly": false
           },
           {
+            "type": "attribute",
+            "name": "onremove",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
             "type": "operation",
             "name": "cancel",
             "idlType": {
@@ -339,7 +426,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -354,7 +441,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -369,7 +456,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -384,7 +471,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -399,7 +486,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -431,7 +518,37 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "persist",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "commitStyles",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -447,47 +564,6 @@
               "value": "Window"
             },
             "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "effect",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": true,
-                  "union": false,
-                  "idlType": "AnimationEffect"
-                },
-                "default": {
-                  "type": "null"
-                },
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "timeline",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": true,
-                  "union": false,
-                  "idlType": "AnimationTimeline"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ]
           }
         ],
         "partial": false
@@ -516,8 +592,52 @@
         ],
         "extAttrs": []
       },
+      "AnimationReplaceState": {
+        "fragment": "enum AnimationReplaceState { \"active\", \"removed\", \"persisted\" };",
+        "type": "enum",
+        "name": "AnimationReplaceState",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "active"
+          },
+          {
+            "type": "enum-value",
+            "value": "removed"
+          },
+          {
+            "type": "enum-value",
+            "value": "persisted"
+          }
+        ],
+        "extAttrs": []
+      },
+      "TimelinePhase": {
+        "fragment": "enum TimelinePhase { \"inactive\", \"before\", \"active\", \"after\" };",
+        "type": "enum",
+        "name": "TimelinePhase",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "inactive"
+          },
+          {
+            "type": "enum-value",
+            "value": "before"
+          },
+          {
+            "type": "enum-value",
+            "value": "active"
+          },
+          {
+            "type": "enum-value",
+            "value": "after"
+          }
+        ],
+        "extAttrs": []
+      },
       "AnimationEffect": {
-        "fragment": "[Exposed=Window]\ninterface AnimationEffect {\n    EffectTiming         getTiming();\n    ComputedEffectTiming getComputedTiming();\n    void                 updateTiming(optional OptionalEffectTiming timing);\n};",
+        "fragment": "[Exposed=Window]\ninterface AnimationEffect {\n    EffectTiming         getTiming();\n    ComputedEffectTiming getComputedTiming();\n    undefined            updateTiming(optional OptionalEffectTiming timing = {});\n};",
         "type": "interface",
         "name": "AnimationEffect",
         "inheritance": null,
@@ -561,7 +681,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -576,7 +696,9 @@
                   "union": false,
                   "idlType": "OptionalEffectTiming"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -1054,11 +1176,106 @@
         "partial": false
       },
       "KeyframeEffect": {
-        "fragment": "[Exposed=Window,\n Constructor ((Element or CSSPseudoElement)? target,\n              object? keyframes,\n              optional (unrestricted double or KeyframeEffectOptions) options),\n Constructor (KeyframeEffect source)]\ninterface KeyframeEffect : AnimationEffect {\n    attribute (Element or CSSPseudoElement)? target;\n    attribute IterationCompositeOperation    iterationComposite;\n    attribute CompositeOperation             composite;\n    sequence<object> getKeyframes ();\n    void             setKeyframes (object? keyframes);\n};",
+        "fragment": "[Exposed=Window]\ninterface KeyframeEffect : AnimationEffect {\n    constructor(Element? target,\n                object? keyframes,\n                optional (unrestricted double or KeyframeEffectOptions) options = {});\n    constructor(KeyframeEffect source);\n    attribute Element?           target;\n    attribute CSSOMString?       pseudoElement;\n    attribute CompositeOperation composite;\n    sequence<object> getKeyframes();\n    undefined        setKeyframes(object? keyframes);\n};",
         "type": "interface",
         "name": "KeyframeEffect",
         "inheritance": "AnimationEffect",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "target",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "Element"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "keyframes",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "object"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "unrestricted double"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "KeyframeEffectOptions"
+                    }
+                  ]
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "source",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "KeyframeEffect"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "attribute",
             "name": "target",
@@ -1067,25 +1284,8 @@
               "extAttrs": [],
               "generic": "",
               "nullable": true,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Element"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CSSPseudoElement"
-                }
-              ]
+              "union": false,
+              "idlType": "Element"
             },
             "extAttrs": [],
             "special": "",
@@ -1093,14 +1293,14 @@
           },
           {
             "type": "attribute",
-            "name": "iterationComposite",
+            "name": "pseudoElement",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
-              "idlType": "IterationCompositeOperation"
+              "idlType": "CSSOMString"
             },
             "extAttrs": [],
             "special": "",
@@ -1154,7 +1354,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -1187,118 +1387,6 @@
               "value": "Window"
             },
             "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "target",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": true,
-                  "union": true,
-                  "idlType": [
-                    {
-                      "type": null,
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "Element"
-                    },
-                    {
-                      "type": null,
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "CSSPseudoElement"
-                    }
-                  ]
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "keyframes",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": true,
-                  "union": false,
-                  "idlType": "object"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": true,
-                  "idlType": [
-                    {
-                      "type": null,
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "unrestricted double"
-                    },
-                    {
-                      "type": null,
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "KeyframeEffectOptions"
-                    }
-                  ]
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ]
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "source",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "KeyframeEffect"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ]
           }
         ],
         "partial": false
@@ -1587,29 +1675,11 @@
         "partial": false
       },
       "KeyframeEffectOptions": {
-        "fragment": "dictionary KeyframeEffectOptions : EffectTiming {\n    IterationCompositeOperation iterationComposite = \"replace\";\n    CompositeOperation          composite = \"replace\";\n};",
+        "fragment": "dictionary KeyframeEffectOptions : EffectTiming {\n    CompositeOperation composite = \"replace\";\n    CSSOMString?       pseudoElement = null;\n};",
         "type": "dictionary",
         "name": "KeyframeEffectOptions",
         "inheritance": "EffectTiming",
         "members": [
-          {
-            "type": "field",
-            "name": "iterationComposite",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "IterationCompositeOperation"
-            },
-            "default": {
-              "type": "string",
-              "value": "replace"
-            },
-            "required": false
-          },
           {
             "type": "field",
             "name": "composite",
@@ -1627,29 +1697,30 @@
               "value": "replace"
             },
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "pseudoElement",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
-      "IterationCompositeOperation": {
-        "fragment": "enum IterationCompositeOperation {\"replace\", \"accumulate\"};",
-        "type": "enum",
-        "name": "IterationCompositeOperation",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "replace"
-          },
-          {
-            "type": "enum-value",
-            "value": "accumulate"
-          }
-        ],
-        "extAttrs": []
-      },
       "CompositeOperation": {
-        "fragment": "enum CompositeOperation {\"replace\", \"add\", \"accumulate\"};",
+        "fragment": "enum CompositeOperation { \"replace\", \"add\", \"accumulate\" };",
         "type": "enum",
         "name": "CompositeOperation",
         "values": [
@@ -1669,7 +1740,7 @@
         "extAttrs": []
       },
       "CompositeOperationOrAuto": {
-        "fragment": "enum CompositeOperationOrAuto {\"replace\", \"add\", \"accumulate\", \"auto\"};",
+        "fragment": "enum CompositeOperationOrAuto { \"replace\", \"add\", \"accumulate\", \"auto\" };",
         "type": "enum",
         "name": "CompositeOperationOrAuto",
         "values": [
@@ -1693,7 +1764,7 @@
         "extAttrs": []
       },
       "Animatable": {
-        "fragment": "interface mixin Animatable {\n    Animation           animate (object? keyframes,\n                                 optional (unrestricted double or KeyframeAnimationOptions) options);\n    sequence<Animation> getAnimations ();\n};",
+        "fragment": "interface mixin Animatable {\n    Animation           animate(object? keyframes,\n                                optional (unrestricted double or KeyframeAnimationOptions) options = {});\n    sequence<Animation> getAnimations(optional GetAnimationsOptions options = {});\n};",
         "type": "interface mixin",
         "name": "Animatable",
         "inheritance": null,
@@ -1755,7 +1826,9 @@
                     }
                   ]
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -1783,7 +1856,26 @@
                 }
               ]
             },
-            "arguments": [],
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GetAnimationsOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
             "extAttrs": [],
             "special": ""
           }
@@ -1792,7 +1884,7 @@
         "partial": false
       },
       "KeyframeAnimationOptions": {
-        "fragment": "dictionary KeyframeAnimationOptions : KeyframeEffectOptions {\n    DOMString id = \"\";\n};",
+        "fragment": "dictionary KeyframeAnimationOptions : KeyframeEffectOptions {\n    DOMString id = \"\";\n    AnimationTimeline? timeline;\n};",
         "type": "dictionary",
         "name": "KeyframeAnimationOptions",
         "inheritance": "KeyframeEffectOptions",
@@ -1814,17 +1906,100 @@
               "value": ""
             },
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "timeline",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "AnimationTimeline"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GetAnimationsOptions": {
+        "fragment": "dictionary GetAnimationsOptions {\n    boolean subtree = false;\n};",
+        "type": "dictionary",
+        "name": "GetAnimationsOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "subtree",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "AnimationPlaybackEvent": {
-        "fragment": "[Exposed=Window,\n Constructor (DOMString type, optional AnimationPlaybackEventInit eventInitDict)]\ninterface AnimationPlaybackEvent : Event {\n    readonly attribute double? currentTime;\n    readonly attribute double? timelineTime;\n};",
+        "fragment": "[Exposed=Window]\ninterface AnimationPlaybackEvent : Event {\n    constructor(DOMString type, optional AnimationPlaybackEventInit eventInitDict = {});\n    readonly attribute double? currentTime;\n    readonly attribute double? timelineTime;\n};",
         "type": "interface",
         "name": "AnimationPlaybackEvent",
         "inheritance": "Event",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AnimationPlaybackEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "attribute",
             "name": "currentTime",
@@ -1865,45 +2040,6 @@
               "value": "Window"
             },
             "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "type",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "eventInitDict",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "AnimationPlaybackEventInit"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ]
           }
         ],
         "partial": false
@@ -1956,7 +2092,7 @@
     "idlExtendedNames": {
       "Document": [
         {
-          "fragment": "partial interface Document {\n    readonly attribute DocumentTimeline timeline;\n    sequence<Animation> getAnimations();\n};",
+          "fragment": "partial interface Document {\n    readonly attribute DocumentTimeline timeline;\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -1975,7 +2111,19 @@
               "extAttrs": [],
               "special": "",
               "readonly": true
-            },
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "DocumentOrShadowRoot": [
+        {
+          "fragment": "partial interface mixin DocumentOrShadowRoot {\n    sequence<Animation> getAnimations();\n};",
+          "type": "interface mixin",
+          "name": "DocumentOrShadowRoot",
+          "inheritance": null,
+          "members": [
             {
               "type": "operation",
               "name": "getAnimations",
@@ -2013,15 +2161,6 @@
           "target": "Element",
           "includes": "Animatable"
         }
-      ],
-      "CSSPseudoElement": [
-        {
-          "fragment": "CSSPseudoElement includes Animatable;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "CSSPseudoElement",
-          "includes": "Animatable"
-        }
       ]
     },
     "globals": {},
@@ -2036,7 +2175,9 @@
       ]
     },
     "dependencies": {
-      "AnimationTimeline": [],
+      "AnimationTimeline": [
+        "TimelinePhase"
+      ],
       "DocumentTimelineOptions": [
         "DOMHighResTimeStamp"
       ],
@@ -2049,14 +2190,13 @@
         "AnimationEffect",
         "AnimationTimeline",
         "AnimationPlayState",
+        "AnimationReplaceState",
         "Animation",
-        "EventHandler",
-        "void"
+        "EventHandler"
       ],
       "AnimationEffect": [
         "EffectTiming",
         "ComputedEffectTiming",
-        "void",
         "OptionalEffectTiming"
       ],
       "EffectTiming": [
@@ -2073,12 +2213,10 @@
       "KeyframeEffect": [
         "AnimationEffect",
         "Element",
-        "CSSPseudoElement",
         "KeyframeEffectOptions",
         "KeyframeEffect",
-        "IterationCompositeOperation",
-        "CompositeOperation",
-        "void"
+        "CSSOMString",
+        "CompositeOperation"
       ],
       "BaseComputedKeyframe": [
         "CompositeOperationOrAuto"
@@ -2091,24 +2229,26 @@
       ],
       "KeyframeEffectOptions": [
         "EffectTiming",
-        "IterationCompositeOperation",
-        "CompositeOperation"
+        "CompositeOperation",
+        "CSSOMString"
       ],
       "Animatable": [
         "Animation",
-        "KeyframeAnimationOptions"
+        "KeyframeAnimationOptions",
+        "GetAnimationsOptions"
       ],
       "KeyframeAnimationOptions": [
-        "KeyframeEffectOptions"
+        "KeyframeEffectOptions",
+        "AnimationTimeline"
       ],
+      "GetAnimationsOptions": [],
       "Document": [
-        "DocumentTimeline",
+        "DocumentTimeline"
+      ],
+      "DocumentOrShadowRoot": [
         "Animation"
       ],
       "Element": [
-        "Animatable"
-      ],
-      "CSSPseudoElement": [
         "Animatable"
       ],
       "AnimationPlaybackEvent": [
@@ -2123,10 +2263,10 @@
       "DOMHighResTimeStamp",
       "EventTarget",
       "EventHandler",
-      "void",
       "Element",
-      "CSSPseudoElement",
+      "CSSOMString",
       "Document",
+      "DocumentOrShadowRoot",
       "Event",
       "EventInit"
     ],

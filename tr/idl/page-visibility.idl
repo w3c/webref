@@ -4,12 +4,11 @@
 // Source: Page Visibility Level 2 (https://www.w3.org/TR/page-visibility-2/)
 
 enum VisibilityState {
-    "hidden",
-    "visible"
+  "hidden", "visible"
 };
 
 partial interface Document {
-    readonly attribute boolean         hidden;
-    readonly attribute VisibilityState visibilityState;
-             attribute EventHandler    onvisibilitychange;
+  readonly attribute boolean hidden;
+  readonly attribute VisibilityState visibilityState;
+  attribute EventHandler onvisibilitychange;
 };

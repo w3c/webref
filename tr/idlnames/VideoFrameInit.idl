@@ -1,5 +1,5 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
 dictionary VideoFrameInit {
-  unsigned long long duration;
-  unsigned long long timestamp;
+  long long duration;     // microseconds
+  long long timestamp;    // microseconds
 };

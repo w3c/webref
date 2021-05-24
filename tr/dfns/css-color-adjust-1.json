@@ -5,15 +5,73 @@
   },
   "dfns": [
     {
-      "id": "color-schemes",
-      "href": "https://www.w3.org/TR/css-color-adjust-1/#color-schemes",
+      "id": "preferred-color-scheme",
+      "href": "https://www.w3.org/TR/css-color-adjust-1/#preferred-color-scheme",
       "linkingText": [
-        "color schemes"
+        "preferred color scheme"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preferred",
+        "title": "Preferred Color Schemes",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "color-scheme",
+      "href": "https://www.w3.org/TR/css-color-adjust-1/#color-scheme",
+      "linkingText": [
+        "color scheme"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preferred",
+        "title": "Preferred Color Schemes",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "light-color-scheme",
+      "href": "https://www.w3.org/TR/css-color-adjust-1/#light-color-scheme",
+      "linkingText": [
+        "light color scheme"
+      ],
+      "localLinkingText": [
+        "light"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preferred",
+        "title": "Preferred Color Schemes",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dark-color-scheme",
+      "href": "https://www.w3.org/TR/css-color-adjust-1/#dark-color-scheme",
+      "linkingText": [
+        "dark color scheme"
+      ],
+      "localLinkingText": [
+        "dark"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "preferred",
@@ -49,7 +107,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "color-scheme-prop",
@@ -82,8 +140,47 @@
       "id": "valdef-color-scheme-light",
       "href": "https://www.w3.org/TR/css-color-adjust-1/#valdef-color-scheme-light",
       "linkingText": [
-        "light",
+        "light"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color-scheme"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-scheme-prop",
+        "title": "Opting Into a Preferred Color Scheme: the color-scheme property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-color-scheme-dark",
+      "href": "https://www.w3.org/TR/css-color-adjust-1/#valdef-color-scheme-dark",
+      "linkingText": [
         "dark"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "color-scheme"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-scheme-prop",
+        "title": "Opting Into a Preferred Color Scheme: the color-scheme property",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-color-scheme-custom-ident",
+      "href": "https://www.w3.org/TR/css-color-adjust-1/#valdef-color-scheme-custom-ident",
+      "linkingText": [
+        "<custom-ident>"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -176,6 +273,64 @@
       "definedIn": "dt"
     },
     {
+      "id": "propdef-print-color-adjust",
+      "href": "https://www.w3.org/TR/css-color-adjust-1/#propdef-print-color-adjust",
+      "linkingText": [
+        "print-color-adjust"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "print-color-adjust",
+        "title": "Ink Economy: the print-color-adjust property",
+        "number": "4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-print-color-adjust-economy",
+      "href": "https://www.w3.org/TR/css-color-adjust-1/#valdef-print-color-adjust-economy",
+      "linkingText": [
+        "economy"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "print-color-adjust"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "print-color-adjust",
+        "title": "Ink Economy: the print-color-adjust property",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-print-color-adjust-exact",
+      "href": "https://www.w3.org/TR/css-color-adjust-1/#valdef-print-color-adjust-exact",
+      "linkingText": [
+        "exact"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "print-color-adjust"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "print-color-adjust",
+        "title": "Ink Economy: the print-color-adjust property",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "propdef-color-adjust",
       "href": "https://www.w3.org/TR/css-color-adjust-1/#propdef-color-adjust",
       "linkingText": [
@@ -187,51 +342,11 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "perf",
-        "title": "Performance-based Color Schemes: the color-adjust property",
-        "number": "4"
+        "id": "color-adjust",
+        "title": "The color-adjust Shorthand",
+        "number": "4.2"
       },
       "definedIn": "table"
-    },
-    {
-      "id": "valdef-color-adjust-economy",
-      "href": "https://www.w3.org/TR/css-color-adjust-1/#valdef-color-adjust-economy",
-      "linkingText": [
-        "economy"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "color-adjust"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "perf",
-        "title": "Performance-based Color Schemes: the color-adjust property",
-        "number": "4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "valdef-color-adjust-exact",
-      "href": "https://www.w3.org/TR/css-color-adjust-1/#valdef-color-adjust-exact",
-      "linkingText": [
-        "exact"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "color-adjust"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "perf",
-        "title": "Performance-based Color Schemes: the color-adjust property",
-        "number": "4"
-      },
-      "definedIn": "dt"
     }
   ]
 }

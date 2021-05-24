@@ -3,7 +3,7 @@
 interface AnimationEffect {
     EffectTiming         getTiming();
     ComputedEffectTiming getComputedTiming();
-    void                 updateTiming(optional OptionalEffectTiming timing);
+    undefined            updateTiming(optional OptionalEffectTiming timing = {});
 };
 
 // Source: Web Animations Level 2 (https://drafts.csswg.org/web-animations-2/)

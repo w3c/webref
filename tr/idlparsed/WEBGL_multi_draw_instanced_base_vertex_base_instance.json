@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "WEBGL_multi_draw_instanced_base_vertex_base_instance": {
-        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_multi_draw_instanced_base_vertex_base_instance {\n  undefined multiDrawArraysInstancedBaseInstanceWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,\n      (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      (Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      (Uint32Array or sequence<GLuint>) baseInstancesList, GLuint baseInstancesOffset,\n      GLsizei drawCount\n  );\n  undefined multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(\n      GLenum mode,\n      (Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      GLenum type,\n      (Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,\n      (Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      (Int32Array or sequence<GLint>) baseVerticesList, GLuint baseVerticesOffset,\n      (Uint32Array or sequence<GLuint>) baseInstancesList, GLuint baseInstancesOffset,\n      GLsizei drawCount\n  );\n};",
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_multi_draw_instanced_base_vertex_base_instance {\n  undefined multiDrawArraysInstancedBaseInstanceWEBGL(\n      GLenum mode,\n      ([AllowShared] Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,\n      ([AllowShared] Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      ([AllowShared] Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      ([AllowShared] Uint32Array or sequence<GLuint>) baseInstancesList, GLuint baseInstancesOffset,\n      GLsizei drawCount\n  );\n  undefined multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(\n      GLenum mode,\n      ([AllowShared] Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      GLenum type,\n      ([AllowShared] Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,\n      ([AllowShared] Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      ([AllowShared] Int32Array or sequence<GLint>) baseVerticesList, GLuint baseVerticesOffset,\n      ([AllowShared] Uint32Array or sequence<GLuint>) baseInstancesList, GLuint baseInstancesOffset,\n      GLsizei drawCount\n  );\n};",
         "type": "interface",
         "name": "WEBGL_multi_draw_instanced_base_vertex_base_instance",
         "inheritance": null,
@@ -63,7 +63,14 @@
                   "idlType": [
                     {
                       "type": null,
-                      "extAttrs": [],
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
                       "generic": "",
                       "nullable": false,
                       "union": false,
@@ -121,7 +128,14 @@
                   "idlType": [
                     {
                       "type": null,
-                      "extAttrs": [],
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
                       "generic": "",
                       "nullable": false,
                       "union": false,
@@ -179,7 +193,14 @@
                   "idlType": [
                     {
                       "type": null,
-                      "extAttrs": [],
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
                       "generic": "",
                       "nullable": false,
                       "union": false,
@@ -237,7 +258,14 @@
                   "idlType": [
                     {
                       "type": null,
-                      "extAttrs": [],
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
                       "generic": "",
                       "nullable": false,
                       "union": false,
@@ -343,7 +371,14 @@
                   "idlType": [
                     {
                       "type": null,
-                      "extAttrs": [],
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
                       "generic": "",
                       "nullable": false,
                       "union": false,
@@ -417,7 +452,14 @@
                   "idlType": [
                     {
                       "type": null,
-                      "extAttrs": [],
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
                       "generic": "",
                       "nullable": false,
                       "union": false,
@@ -475,7 +517,14 @@
                   "idlType": [
                     {
                       "type": null,
-                      "extAttrs": [],
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
                       "generic": "",
                       "nullable": false,
                       "union": false,
@@ -533,7 +582,14 @@
                   "idlType": [
                     {
                       "type": null,
-                      "extAttrs": [],
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
                       "generic": "",
                       "nullable": false,
                       "union": false,
@@ -591,7 +647,14 @@
                   "idlType": [
                     {
                       "type": null,
-                      "extAttrs": [],
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
                       "generic": "",
                       "nullable": false,
                       "union": false,

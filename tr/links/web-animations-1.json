@@ -4,25 +4,29 @@
     "url": "https://www.w3.org/TR/web-animations-1/"
   },
   "links": {
+    "https://www.w3.org/TR/CSS/": [
+      "future-proofing",
+      "unstable",
+      "proprietary-extension"
+    ],
     "https://www.w3.org/TR/": [],
-    "https://github.com/w3c/fxtf-drafts/issues": [],
-    "https://lists.w3.org/Archives/Public/public-fxtf-archive/": [],
-    "https://lists.w3.org/Archives/Public/public-fx/": [],
-    "https://www.w3.org/Style/CSS/members": [],
-    "https://www.w3.org/Graphics/SVG/WG/": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/Style/CSS/": [],
+    "https://github.com/w3c/csswg-drafts/issues": [],
+    "https://lists.w3.org/Archives/Public/public-css-archive/": [],
+    "https://lists.w3.org/Archives/Public/www-style/": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
+    "https://www.w3.org/Consortium/Patent-Policy-20200915/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/32061/status": [],
-    "https://www.w3.org/2004/01/pp-impl/19480/status": [],
-    "https://www.w3.org/2018/Process-20180201/": [],
     "https://html.spec.whatwg.org/": [
       "animation-frames",
       "document",
       "perform-a-microtask-checkpoint",
       "active-document",
       "dom-document-open",
+      "concept-relevant-realm",
       "media-element",
       "queue-a-task",
       "dom-manipulation-task-source",
@@ -31,24 +35,31 @@
       "concept-document-window",
       "window",
       "eventhandler",
-      "concept-relevant-realm",
+      "being-rendered",
       "event-loop-processing-model",
       "run-the-animation-frame-callbacks",
       "an-entry-with-persisted-user-state",
-      "session-history-entry",
-      "update-the-rendering"
+      "session-history-entry"
     ],
     "https://dom.spec.whatwg.org/": [
       "concept-event-dispatch",
       "concept-event-create",
       "dom-event-type",
-      "eventtarget",
       "element",
-      "concept-node-document",
       "concept-tree-descendant",
+      "eventtarget",
+      "connected",
+      "concept-element-attribute-has",
+      "concept-node-document",
+      "concept-tree-inclusive-descendant",
+      "concept-tree-child",
+      "documentorshadowroot",
+      "concept-document",
+      "concept-shadow-root",
       "event",
       "dictdef-eventinit",
-      "constructing-events"
+      "constructing-events",
+      "shadowroot"
     ],
     "https://github.com/w3c/csswg-drafts/issues/2079": [],
     "https://w3c.github.io/hr-time/": [
@@ -58,28 +69,35 @@
     "https://www.w3.org/TR/hr-time/": [
       "dom-performance-now"
     ],
-    "https://github.com/w3c/csswg-drafts/issues/2080": [],
     "https://heycam.github.io/webidl/": [
+      "reject",
+      "a-promise-resolved-with",
       "dfn-throw",
+      "resolve",
+      "invalidstateerror",
+      "idl-DOMException",
+      "a-new-promise",
       "Exposed",
       "idl-double",
       "idl-DOMString",
       "idl-boolean",
+      "idl-promise",
+      "idl-undefined",
+      "nomodificationallowederror",
       "dfn-present",
       "idl-unrestricted-double",
       "EnforceRange",
       "idl-object",
+      "idl-sequence",
+      "syntaxerror",
       "DOMString-to-es",
       "es-to-dictionary",
       "dfn-convert-ecmascript-to-idl-value",
       "es-to-DOMString",
-      "dfn-nullable-type",
-      "interface-mixin"
+      "dfn-nullable-type"
     ],
     "https://www.ecma-international.org/ecma-262/6.0/": [
       "sec-promise-objects",
-      "sec-promisecapability-records",
-      "sec-promise.resolve",
       "sec-ordinary-object-internal-methods-and-internal-slots-defineownproperty-p-desc",
       "sec-completion-record-specification-type",
       "sec-enumerableownnames",
@@ -92,7 +110,8 @@
       "sec-ecmascript-data-types-and-values"
     ],
     "https://drafts.csswg.org/css-transitions/": [
-      "transition-events"
+      "transition-events",
+      "transitionend"
     ],
     "https://drafts.csswg.org/css-animations/": [
       "events"
@@ -100,24 +119,32 @@
     "https://www.w3.org/TR/SVG/": [
       "MinAttribute"
     ],
+    "https://www.w3.org/TR/css-animations-1/": [
+      "propdef-animation-fill-mode",
+      "propdef-animation-name"
+    ],
+    "https://drafts.csswg.org/web-animations-2/": [
+      "iteration-composite-operation",
+      "iteration-composite-operation-accumulate"
+    ],
     "https://www.w3.org/TR/css-easing-1/": [
-      "timing-function",
-      "linear-timing-function",
+      "easing-function",
+      "linear-easing-function",
       "input-progress-value",
       "before-flag",
-      "typedef-timing-function"
+      "typedef-easing-function"
     ],
-    "https://drafts.csswg.org/css-values-4/": [
+    "https://www.w3.org/TR/css-values-4/": [
       "not-additive",
       "interpolation",
       "combining-values",
-      "accumulation",
-      "addition"
+      "addition",
+      "accumulation"
     ],
-    "https://www.w3.org/TR/css-cascade-4/": [
+    "https://www.w3.org/TR/css-cascade-5/": [
       "computed-value"
     ],
-    "https://www.w3.org/TR/css3-background/": [
+    "https://www.w3.org/TR/css-backgrounds-3/": [
       "propdef-background-origin",
       "propdef-background-image",
       "propdef-border-width",
@@ -135,8 +162,24 @@
       "typedef-custom-property-name"
     ],
     "https://www.w3.org/TR/css-properties-values-api-1/": [
-      "dom-css-registerproperty",
-      "dom-propertydescriptor-syntax"
+      "dom-css-registerproperty"
+    ],
+    "https://drafts.css-houdini.org/css-properties-values-api-1/": [
+      "syntax-definition",
+      "universal-syntax-definition"
+    ],
+    "https://www.w3.org/TR/selectors-4/": [
+      "pseudo-element",
+      "originating-element",
+      "typedef-pseudo-element-selector",
+      "invalid-selector"
+    ],
+    "https://www.w3.org/TR/css-shadow-parts-1/": [
+      "selectordef-part"
+    ],
+    "https://www.w3.org/TR/css-fonts-3/": [
+      "propdef-font-size",
+      "propdef-font-weight"
     ],
     "https://drafts.csswg.org/css-writing-modes-4/": [
       "logical-to-physical"
@@ -154,8 +197,12 @@
     ],
     "https://lists.w3.org/Archives/Public/public-fx/2013AprJun/0184.html": [],
     "https://github.com/w3c/csswg-drafts/issues/2081": [],
-    "https://www.w3.org/TR/css3-animations/": [
-      "propdef-animation-name"
+    "https://drafts.csswg.org/css-animations-2/": [
+      "owning-element",
+      "cssanimation"
+    ],
+    "https://drafts.csswg.org/css-transitions-2/": [
+      "owning-element"
     ],
     "https://www.w3.org/TR/css-will-change-1/": [
       "propdef-will-change"
@@ -163,68 +210,77 @@
     "https://www.w3.org/TR/css-transforms-1/": [
       "propdef-transform"
     ],
-    "https://www.w3.org/TR/css3-positioning/": [
-      "stacking-context"
+    "https://www.w3.org/TR/SVG2/": [
+      "TermStackingContext"
+    ],
+    "https://www.w3.org/TR/css-transitions-1/": [
+      "style-change-event",
+      "before-change-style",
+      "after-change-style"
+    ],
+    "https://infra.spec.whatwg.org/": [
+      "ordered-set",
+      "list-iterate",
+      "list",
+      "list-extend"
+    ],
+    "https://drafts.csswg.org/css-style-attr/": [
+      "style-attribute"
+    ],
+    "https://www.w3.org/TR/css-display-3/": [
+      "propdef-display"
+    ],
+    "https://github.com/whatwg/html/issues/1837": [],
+    "https://drafts.csswg.org/cssom-1/": [
+      "css-declaration-block",
+      "cssstyledeclaration-owner-node",
+      "set-a-css-declaration",
+      "update-style-attribute-for",
+      "cssomstring"
     ],
     "https://github.com/w3c/csswg-drafts/issues/2082": [],
-    "https://www.w3.org/TR/css-pseudo-4/": [
-      "csspseudoelement"
-    ],
-    "https://www.w3.org/TR/CSS21/": [
+    "https://www.w3.org/TR/CSS2/": [
       "propdef-float",
-      "propdef-visibility",
-      "style-sheet",
-      "user-agent",
-      "ignore"
+      "propdef-visibility"
     ],
     "https://www.w3.org/TR/motion-1/": [
       "propdef-offset"
     ],
-    "https://github.com/w3c/csswg-drafts/issues/2054": [],
     "https://svgwg.org/svg2-draft/mimereg.html": [
       "mime-registration"
     ],
     "https://svgwg.org/specs/animation-elements/": [],
     "https://github.com/w3c/csswg-drafts/issues/2083": [],
     "https://www.endemolshine.com.au/": [],
-    "https://www.w3.org/TR/2016/WD-web-animations-1-20160913/": [],
-    "https://github.com/w3c/csswg-drafts/issues/2077": [],
-    "https://github.com/w3c/web-animations/issues/201": [],
-    "https://github.com/w3c/web-animations/issues/186": [],
-    "https://github.com/w3c/csswg-drafts/commits/master/web-animations-1": [],
-    "https://www.w3.org/TR/css-fonts-3/": [
-      "propdef-font-weight"
-    ],
-    "https://www.w3.org/TR/css3-values/": [
+    "https://www.w3.org/TR/2018/WD-web-animations-1-20181011/": [],
+    "https://github.com/w3c/csswg-drafts/issues/3193": [],
+    "https://github.com/w3c/csswg-drafts/commits/main/web-animations-1": [],
+    "https://www.w3.org/TR/css-values-3/": [
       "number-value"
+    ],
+    "https://drafts.csswg.org/css2/": [
+      "valdef-visibility-visible"
     ],
     "https://www.w3.org/TR/css-color-4/": [
       "valdef-color-transparent"
     ],
-    "https://www.w3.org/TR/CSS/": [
-      "future-proofing",
-      "unstable",
-      "proprietary-extension"
+    "https://www.w3.org/TR/CSS21/": [
+      "style-sheet",
+      "user-agent",
+      "ignore"
     ],
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
-    "https://www.w3.org/TR/css-animations-1/": [],
-    "https://www.w3.org/TR/css-backgrounds-3/": [],
     "https://www.w3.org/TR/css-cascade-3/": [],
     "https://www.w3.org/TR/css-logical-1/": [],
-    "https://www.w3.org/TR/css-position-3/": [],
-    "https://www.w3.org/TR/css-transitions-1/": [],
-    "https://www.w3.org/TR/css-values-3/": [],
-    "https://www.w3.org/TR/css-values-4/": [],
-    "https://www.w3.org/TR/CSS2/": [],
+    "https://www.w3.org/TR/css-style-attr/": [],
     "https://www.w3.org/TR/cssom-1/": [],
-    "https://tc39.github.io/ecma262/": [],
-    "https://www.w3.org/TR/hr-time-2/": [],
+    "https://tc39.es/ecma262/": [],
+    "https://www.w3.org/TR/hr-time-3/": [],
     "https://www.w3.org/TR/media-frags/": [],
     "https://tools.ietf.org/html/rfc2119": [],
     "https://www.w3.org/TR/selectors-3/": [],
     "https://www.w3.org/TR/SVG11/": [],
-    "https://www.w3.org/TR/SVG2/": [],
     "https://www.w3.org/TR/css-fonts-4/": [],
     "https://www.w3.org/TR/smil-animation/": []
   }

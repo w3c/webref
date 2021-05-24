@@ -49,7 +49,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "timelines",
@@ -77,15 +77,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "inactive-timeline",
-      "href": "https://www.w3.org/TR/web-animations-1/#inactive-timeline",
+      "id": "monotonically-increasing-timeline",
+      "href": "https://www.w3.org/TR/web-animations-1/#monotonically-increasing-timeline",
       "linkingText": [
-        "inactive timeline"
+        "monotonically increasing timeline"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "monotonically increasing"
+      ],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "timelines",
@@ -167,6 +169,114 @@
       "definedIn": "prose"
     },
     {
+      "id": "timeline-phase",
+      "href": "https://www.w3.org/TR/web-animations-1/#timeline-phase",
+      "linkingText": [
+        "timeline phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "timeline-phases",
+        "title": "Timeline Phase",
+        "number": "4.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "timeline-inactive-phase",
+      "href": "https://www.w3.org/TR/web-animations-1/#timeline-inactive-phase",
+      "linkingText": [
+        "timeline inactive phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "timeline-phases",
+        "title": "Timeline Phase",
+        "number": "4.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "timeline-before-phase",
+      "href": "https://www.w3.org/TR/web-animations-1/#timeline-before-phase",
+      "linkingText": [
+        "timeline before phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "timeline-phases",
+        "title": "Timeline Phase",
+        "number": "4.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "timeline-active-phase",
+      "href": "https://www.w3.org/TR/web-animations-1/#timeline-active-phase",
+      "linkingText": [
+        "timeline active phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "timeline-phases",
+        "title": "Timeline Phase",
+        "number": "4.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "timeline-after-phase",
+      "href": "https://www.w3.org/TR/web-animations-1/#timeline-after-phase",
+      "linkingText": [
+        "timeline after phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "timeline-phases",
+        "title": "Timeline Phase",
+        "number": "4.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "inactive-timeline",
+      "href": "https://www.w3.org/TR/web-animations-1/#inactive-timeline",
+      "linkingText": [
+        "inactive timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "timeline-phases",
+        "title": "Timeline Phase",
+        "number": "4.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "document-timeline",
       "href": "https://www.w3.org/TR/web-animations-1/#document-timeline",
       "linkingText": [
@@ -180,7 +290,7 @@
       "heading": {
         "id": "document-timelines",
         "title": "Document timelines",
-        "number": "4.3.1"
+        "number": "4.3.2"
       },
       "definedIn": "prose"
     },
@@ -198,7 +308,7 @@
       "heading": {
         "id": "document-timelines",
         "title": "Document timelines",
-        "number": "4.3.1"
+        "number": "4.3.2"
       },
       "definedIn": "prose"
     },
@@ -211,12 +321,12 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-documents-default-timeline",
         "title": "The default document timeline",
-        "number": "4.3.2"
+        "number": "4.3.3"
       },
       "definedIn": "prose"
     },
@@ -239,10 +349,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "target-effect",
-      "href": "https://www.w3.org/TR/web-animations-1/#target-effect",
+      "id": "associated-effect",
+      "href": "https://www.w3.org/TR/web-animations-1/#associated-effect",
       "linkingText": [
-        "target effect"
+        "associated effect"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -347,10 +457,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "set-the-target-effect-of-an-animation",
-      "href": "https://www.w3.org/TR/web-animations-1/#set-the-target-effect-of-an-animation",
+      "id": "set-the-associated-effect-of-an-animation",
+      "href": "https://www.w3.org/TR/web-animations-1/#set-the-associated-effect-of-an-animation",
       "linkingText": [
-        "set the target effect of an animation"
+        "set the associated effect of an animation"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -358,9 +468,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "setting-the-target-effect",
-        "title": "Setting the target effect of an animation",
-        "number": "4.4.3"
+        "id": "setting-the-associated-effect",
+        "title": "Setting the associated effect of an animation",
+        "number": "4.4.2"
       },
       "definedIn": "prose"
     },
@@ -376,9 +486,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "setting-the-target-effect",
-        "title": "Setting the target effect of an animation",
-        "number": "4.4.3"
+        "id": "setting-the-associated-effect",
+        "title": "Setting the associated effect of an animation",
+        "number": "4.4.2"
       },
       "definedIn": "prose"
     },
@@ -396,7 +506,7 @@
       "heading": {
         "id": "the-current-time-of-an-animation",
         "title": "The current time of an animation",
-        "number": "4.4.4"
+        "number": "4.4.3"
       },
       "definedIn": "prose"
     },
@@ -414,7 +524,7 @@
       "heading": {
         "id": "setting-the-current-time-of-an-animation",
         "title": "Setting the current time of an animation",
-        "number": "4.4.5"
+        "number": "4.4.4"
       },
       "definedIn": "prose"
     },
@@ -432,7 +542,7 @@
       "heading": {
         "id": "setting-the-current-time-of-an-animation",
         "title": "Setting the current time of an animation",
-        "number": "4.4.5"
+        "number": "4.4.4"
       },
       "definedIn": "prose"
     },
@@ -450,7 +560,7 @@
       "heading": {
         "id": "setting-the-start-time-of-an-animation",
         "title": "Setting the start time of an animation",
-        "number": "4.4.6"
+        "number": "4.4.5"
       },
       "definedIn": "prose"
     },
@@ -466,63 +576,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "waiting-for-the-target-effect",
-        "title": "Waiting for the target effect",
-        "number": "4.4.7"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "resolve-a-promise",
-      "href": "https://www.w3.org/TR/web-animations-1/#resolve-a-promise",
-      "linkingText": [
-        "resolve a Promise"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "promise-objects",
-        "title": "Promise objects",
-        "number": "4.4.8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "reject-a-promise",
-      "href": "https://www.w3.org/TR/web-animations-1/#reject-a-promise",
-      "linkingText": [
-        "reject a Promise"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "promise-objects",
-        "title": "Promise objects",
-        "number": "4.4.8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "create-a-new-resolved-promise",
-      "href": "https://www.w3.org/TR/web-animations-1/#create-a-new-resolved-promise",
-      "linkingText": [
-        "create a new resolved Promise"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "promise-objects",
-        "title": "Promise objects",
-        "number": "4.4.8"
+        "id": "waiting-for-the-associated-effect",
+        "title": "Waiting for the associated effect",
+        "number": "4.4.6"
       },
       "definedIn": "prose"
     },
@@ -540,7 +596,7 @@
       "heading": {
         "id": "the-current-ready-promise",
         "title": "The current ready promise",
-        "number": "4.4.9"
+        "number": "4.4.7"
       },
       "definedIn": "prose"
     },
@@ -558,7 +614,7 @@
       "heading": {
         "id": "playing-an-animation-section",
         "title": "Playing an animation",
-        "number": "4.4.10"
+        "number": "4.4.8"
       },
       "definedIn": "prose"
     },
@@ -576,7 +632,7 @@
       "heading": {
         "id": "playing-an-animation-section",
         "title": "Playing an animation",
-        "number": "4.4.10"
+        "number": "4.4.8"
       },
       "definedIn": "prose"
     },
@@ -594,7 +650,7 @@
       "heading": {
         "id": "pausing-an-animation-section",
         "title": "Pausing an animation",
-        "number": "4.4.11"
+        "number": "4.4.9"
       },
       "definedIn": "prose"
     },
@@ -612,7 +668,7 @@
       "heading": {
         "id": "pausing-an-animation-section",
         "title": "Pausing an animation",
-        "number": "4.4.11"
+        "number": "4.4.9"
       },
       "definedIn": "prose"
     },
@@ -630,15 +686,15 @@
       "heading": {
         "id": "the-current-finished-promise",
         "title": "The current finished promise",
-        "number": "4.4.13"
+        "number": "4.4.11"
       },
       "definedIn": "prose"
     },
     {
-      "id": "target-effect-end",
-      "href": "https://www.w3.org/TR/web-animations-1/#target-effect-end",
+      "id": "associated-effect-end",
+      "href": "https://www.w3.org/TR/web-animations-1/#associated-effect-end",
       "linkingText": [
-        "target effect end"
+        "associated effect end"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -648,7 +704,7 @@
       "heading": {
         "id": "updating-the-finished-state",
         "title": "Updating the finished state",
-        "number": "4.4.14"
+        "number": "4.4.12"
       },
       "definedIn": "prose"
     },
@@ -666,7 +722,7 @@
       "heading": {
         "id": "updating-the-finished-state",
         "title": "Updating the finished state",
-        "number": "4.4.14"
+        "number": "4.4.12"
       },
       "definedIn": "prose"
     },
@@ -684,7 +740,7 @@
       "heading": {
         "id": "updating-the-finished-state",
         "title": "Updating the finished state",
-        "number": "4.4.14"
+        "number": "4.4.12"
       },
       "definedIn": "prose"
     },
@@ -702,7 +758,7 @@
       "heading": {
         "id": "updating-the-finished-state",
         "title": "Updating the finished state",
-        "number": "4.4.14"
+        "number": "4.4.12"
       },
       "definedIn": "prose"
     },
@@ -720,7 +776,7 @@
       "heading": {
         "id": "finishing-an-animation-section",
         "title": "Finishing an animation",
-        "number": "4.4.15"
+        "number": "4.4.13"
       },
       "definedIn": "prose"
     },
@@ -738,7 +794,7 @@
       "heading": {
         "id": "canceling-an-animation-section",
         "title": "Canceling an animation",
-        "number": "4.4.16"
+        "number": "4.4.14"
       },
       "definedIn": "prose"
     },
@@ -756,7 +812,7 @@
       "heading": {
         "id": "speed-control",
         "title": "Speed control",
-        "number": "4.4.17"
+        "number": "4.4.15"
       },
       "definedIn": "prose"
     },
@@ -774,7 +830,7 @@
       "heading": {
         "id": "setting-the-playback-rate-of-an-animation",
         "title": "Setting the playback rate of an animation",
-        "number": "4.4.17.1"
+        "number": "4.4.15.1"
       },
       "definedIn": "prose"
     },
@@ -792,7 +848,7 @@
       "heading": {
         "id": "seamlessly-updating-the-playback-rate-of-an-animation",
         "title": "Seamlessly updating the playback rate of an animation",
-        "number": "4.4.17.2"
+        "number": "4.4.15.2"
       },
       "definedIn": "prose"
     },
@@ -810,7 +866,7 @@
       "heading": {
         "id": "seamlessly-updating-the-playback-rate-of-an-animation",
         "title": "Seamlessly updating the playback rate of an animation",
-        "number": "4.4.17.2"
+        "number": "4.4.15.2"
       },
       "definedIn": "prose"
     },
@@ -828,7 +884,7 @@
       "heading": {
         "id": "seamlessly-updating-the-playback-rate-of-an-animation",
         "title": "Seamlessly updating the playback rate of an animation",
-        "number": "4.4.17.2"
+        "number": "4.4.15.2"
       },
       "definedIn": "prose"
     },
@@ -846,7 +902,7 @@
       "heading": {
         "id": "seamlessly-updating-the-playback-rate-of-an-animation",
         "title": "Seamlessly updating the playback rate of an animation",
-        "number": "4.4.17.2"
+        "number": "4.4.15.2"
       },
       "definedIn": "prose"
     },
@@ -864,7 +920,7 @@
       "heading": {
         "id": "reversing-an-animation-section",
         "title": "Reversing an animation",
-        "number": "4.4.18"
+        "number": "4.4.16"
       },
       "definedIn": "prose"
     },
@@ -882,7 +938,7 @@
       "heading": {
         "id": "play-states",
         "title": "Play states",
-        "number": "4.4.19"
+        "number": "4.4.17"
       },
       "definedIn": "prose"
     },
@@ -900,7 +956,7 @@
       "heading": {
         "id": "play-states",
         "title": "Play states",
-        "number": "4.4.19"
+        "number": "4.4.17"
       },
       "definedIn": "prose"
     },
@@ -918,7 +974,7 @@
       "heading": {
         "id": "play-states",
         "title": "Play states",
-        "number": "4.4.19"
+        "number": "4.4.17"
       },
       "definedIn": "prose"
     },
@@ -936,7 +992,7 @@
       "heading": {
         "id": "play-states",
         "title": "Play states",
-        "number": "4.4.19"
+        "number": "4.4.17"
       },
       "definedIn": "prose"
     },
@@ -954,7 +1010,7 @@
       "heading": {
         "id": "play-states",
         "title": "Play states",
-        "number": "4.4.19"
+        "number": "4.4.17"
       },
       "definedIn": "prose"
     },
@@ -972,7 +1028,7 @@
       "heading": {
         "id": "animation-events-section",
         "title": "Animation events",
-        "number": "4.4.20"
+        "number": "4.4.18"
       },
       "definedIn": "prose"
     },
@@ -990,7 +1046,7 @@
       "heading": {
         "id": "animation-events-section",
         "title": "Animation events",
-        "number": "4.4.20"
+        "number": "4.4.18"
       },
       "definedIn": "prose"
     },
@@ -1008,7 +1064,7 @@
       "heading": {
         "id": "animation-events-section",
         "title": "Animation events",
-        "number": "4.4.20"
+        "number": "4.4.18"
       },
       "definedIn": "prose"
     },
@@ -1026,7 +1082,7 @@
       "heading": {
         "id": "sorting-animation-events",
         "title": "Sorting animation events",
-        "number": "4.4.20.1"
+        "number": "4.4.18.1"
       },
       "definedIn": "prose"
     },
@@ -1044,7 +1100,7 @@
       "heading": {
         "id": "sorting-animation-events",
         "title": "Sorting animation events",
-        "number": "4.4.20.1"
+        "number": "4.4.18.1"
       },
       "definedIn": "prose"
     },
@@ -1062,7 +1118,7 @@
       "heading": {
         "id": "animation-playback-events-section",
         "title": "Animation playback events",
-        "number": "4.4.20.2"
+        "number": "4.4.18.2"
       },
       "definedIn": "prose"
     },
@@ -1080,7 +1136,7 @@
       "heading": {
         "id": "animation-playback-event-types",
         "title": "Types of animation playback events",
-        "number": "4.4.20.3"
+        "number": "4.4.18.3"
       },
       "definedIn": "dt"
     },
@@ -1098,7 +1154,25 @@
       "heading": {
         "id": "animation-playback-event-types",
         "title": "Types of animation playback events",
-        "number": "4.4.20.3"
+        "number": "4.4.18.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "remove-event",
+      "href": "https://www.w3.org/TR/web-animations-1/#remove-event",
+      "linkingText": [
+        "remove event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animation-playback-event-types",
+        "title": "Types of animation playback events",
+        "number": "4.4.18.3"
       },
       "definedIn": "dt"
     },
@@ -1651,7 +1725,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "calculating-the-transformed-progress",
@@ -1841,10 +1915,46 @@
       "definedIn": "prose"
     },
     {
+      "id": "effect-target",
+      "href": "https://www.w3.org/TR/web-animations-1/#effect-target",
+      "linkingText": [
+        "effect target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "keyframe-effects",
+        "title": "Keyframe effects",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "target-element",
       "href": "https://www.w3.org/TR/web-animations-1/#target-element",
       "linkingText": [
         "target element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "keyframe-effects",
+        "title": "Keyframe effects",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "target-pseudo-selector",
+      "href": "https://www.w3.org/TR/web-animations-1/#target-pseudo-selector",
+      "linkingText": [
+        "target pseudo-selector"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1931,6 +2041,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "compute-a-property-value",
+      "href": "https://www.w3.org/TR/web-animations-1/#compute-a-property-value",
+      "linkingText": [
+        "compute a property value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computing-property-values",
+        "title": "Computing property values",
+        "number": "5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "computed-keyframes",
       "href": "https://www.w3.org/TR/web-animations-1/#computed-keyframes",
       "linkingText": [
@@ -1944,7 +2072,7 @@
       "heading": {
         "id": "calculating-computed-keyframes",
         "title": "Calculating computed keyframes",
-        "number": "5.3.2"
+        "number": "5.3.3"
       },
       "definedIn": "prose"
     },
@@ -1962,7 +2090,7 @@
       "heading": {
         "id": "calculating-computed-keyframes",
         "title": "Calculating computed keyframes",
-        "number": "5.3.2"
+        "number": "5.3.3"
       },
       "definedIn": "prose"
     },
@@ -1980,7 +2108,7 @@
       "heading": {
         "id": "calculating-computed-keyframes",
         "title": "Calculating computed keyframes",
-        "number": "5.3.2"
+        "number": "5.3.3"
       },
       "definedIn": "prose"
     },
@@ -1998,7 +2126,7 @@
       "heading": {
         "id": "calculating-computed-keyframes",
         "title": "Calculating computed keyframes",
-        "number": "5.3.2"
+        "number": "5.3.3"
       },
       "definedIn": "prose"
     },
@@ -2016,7 +2144,7 @@
       "heading": {
         "id": "the-effect-value-of-a-keyframe-animation-effect",
         "title": "The effect value of a keyframe effect",
-        "number": "5.3.3"
+        "number": "5.3.4"
       },
       "definedIn": "prose"
     },
@@ -2222,10 +2350,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "iteration-composite-operation",
-      "href": "https://www.w3.org/TR/web-animations-1/#iteration-composite-operation",
+      "id": "replace-state",
+      "href": "https://www.w3.org/TR/web-animations-1/#replace-state",
       "linkingText": [
-        "iteration composite operation"
+        "replace state"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2233,17 +2361,17 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "effect-accumulation-section",
-        "title": "Effect accumulation",
-        "number": "5.5"
+        "id": "animation-replace-state",
+        "title": "Replace state",
+        "number": "5.5.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "iteration-composite-operation-replace",
-      "href": "https://www.w3.org/TR/web-animations-1/#iteration-composite-operation-replace",
+      "id": "active-replace-state",
+      "href": "https://www.w3.org/TR/web-animations-1/#active-replace-state",
       "linkingText": [
-        "iteration composite operation replace"
+        "active replace state"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2251,17 +2379,17 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "effect-accumulation-section",
-        "title": "Effect accumulation",
-        "number": "5.5"
+        "id": "animation-replace-state",
+        "title": "Replace state",
+        "number": "5.5.1"
       },
-      "definedIn": "dt"
+      "definedIn": "prose"
     },
     {
-      "id": "iteration-composite-operation-accumulate",
-      "href": "https://www.w3.org/TR/web-animations-1/#iteration-composite-operation-accumulate",
+      "id": "removed-replace-state",
+      "href": "https://www.w3.org/TR/web-animations-1/#removed-replace-state",
       "linkingText": [
-        "iteration composite operation accumulate"
+        "removed replace state"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2269,11 +2397,67 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "effect-accumulation-section",
-        "title": "Effect accumulation",
-        "number": "5.5"
+        "id": "animation-replace-state",
+        "title": "Replace state",
+        "number": "5.5.1"
       },
-      "definedIn": "dt"
+      "definedIn": "prose"
+    },
+    {
+      "id": "persisted-replace-state",
+      "href": "https://www.w3.org/TR/web-animations-1/#persisted-replace-state",
+      "linkingText": [
+        "persisted replace state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animation-replace-state",
+        "title": "Replace state",
+        "number": "5.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "replaceable-animation",
+      "href": "https://www.w3.org/TR/web-animations-1/#replaceable-animation",
+      "linkingText": [
+        "replaceable animation"
+      ],
+      "localLinkingText": [
+        "replaceable"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "removing-replaced-animations",
+        "title": "Removing replaced animations",
+        "number": "5.5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "remove-replaced-animations",
+      "href": "https://www.w3.org/TR/web-animations-1/#remove-replaced-animations",
+      "linkingText": [
+        "remove replaced animations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "removing-replaced-animations",
+        "title": "Removing replaced animations",
+        "number": "5.5.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "animationtimeline",
@@ -2298,6 +2482,26 @@
       "href": "https://www.w3.org/TR/web-animations-1/#dom-animationtimeline-currenttime",
       "linkingText": [
         "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationTimeline"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationtimeline-interface",
+        "title": "The AnimationTimeline interface",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationtimeline-phase",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-animationtimeline-phase",
+      "linkingText": [
+        "phase"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2373,7 +2577,10 @@
       "id": "dom-documenttimeline-documenttimeline",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-documenttimeline-documenttimeline",
       "linkingText": [
-        "DocumentTimeline(options)"
+        "DocumentTimeline(options)",
+        "constructor(options)",
+        "DocumentTimeline()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -2431,7 +2638,12 @@
       "id": "dom-animation-animation",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-animation-animation",
       "linkingText": [
-        "Animation(effect, timeline)"
+        "Animation(effect, timeline)",
+        "constructor(effect, timeline)",
+        "Animation(effect)",
+        "constructor(effect)",
+        "Animation()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -2628,6 +2840,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-animation-replacestate",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-animation-replacestate",
+      "linkingText": [
+        "replaceState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animation-interface",
+        "title": "The Animation interface",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-animation-pending",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-animation-pending",
       "linkingText": [
@@ -2712,6 +2944,26 @@
       "href": "https://www.w3.org/TR/web-animations-1/#dom-animation-oncancel",
       "linkingText": [
         "oncancel"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animation-interface",
+        "title": "The Animation interface",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animation-onremove",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-animation-onremove",
+      "linkingText": [
+        "onremove"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2868,6 +3120,64 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-animation-persist",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-animation-persist",
+      "linkingText": [
+        "persist()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animation-interface",
+        "title": "The Animation interface",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animation-commitstyles",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-animation-commitstyles",
+      "linkingText": [
+        "commitStyles()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Animation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animation-interface",
+        "title": "The Animation interface",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "commit-computed-styles",
+      "href": "https://www.w3.org/TR/web-animations-1/#commit-computed-styles",
+      "linkingText": [
+        "commit computed styles"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-animation-interface",
+        "title": "The Animation interface",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "enumdef-animationplaystate",
       "href": "https://www.w3.org/TR/web-animations-1/#enumdef-animationplaystate",
       "linkingText": [
@@ -2962,6 +3272,182 @@
         "id": "the-animationplaystate-enumeration",
         "title": "The AnimationPlayState enumeration",
         "number": "6.4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-animationreplacestate",
+      "href": "https://www.w3.org/TR/web-animations-1/#enumdef-animationreplacestate",
+      "linkingText": [
+        "AnimationReplaceState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationreplacestate-enumeration",
+        "title": "The AnimationReplaceState enumeration",
+        "number": "6.4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationreplacestate-active",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-animationreplacestate-active",
+      "linkingText": [
+        "\"active\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationReplaceState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationreplacestate-enumeration",
+        "title": "The AnimationReplaceState enumeration",
+        "number": "6.4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationreplacestate-removed",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-animationreplacestate-removed",
+      "linkingText": [
+        "\"removed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationReplaceState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationreplacestate-enumeration",
+        "title": "The AnimationReplaceState enumeration",
+        "number": "6.4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationreplacestate-persisted",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-animationreplacestate-persisted",
+      "linkingText": [
+        "\"persisted\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AnimationReplaceState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationreplacestate-enumeration",
+        "title": "The AnimationReplaceState enumeration",
+        "number": "6.4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-timelinephase",
+      "href": "https://www.w3.org/TR/web-animations-1/#enumdef-timelinephase",
+      "linkingText": [
+        "TimelinePhase"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-timelinephase-enumeration",
+        "title": "The TimelinePhase enumeration",
+        "number": "6.4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-timelinephase-inactive",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-timelinephase-inactive",
+      "linkingText": [
+        "\"inactive\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TimelinePhase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-timelinephase-enumeration",
+        "title": "The TimelinePhase enumeration",
+        "number": "6.4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-timelinephase-before",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-timelinephase-before",
+      "linkingText": [
+        "\"before\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TimelinePhase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-timelinephase-enumeration",
+        "title": "The TimelinePhase enumeration",
+        "number": "6.4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-timelinephase-active",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-timelinephase-active",
+      "linkingText": [
+        "\"active\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TimelinePhase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-timelinephase-enumeration",
+        "title": "The TimelinePhase enumeration",
+        "number": "6.4.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-timelinephase-after",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-timelinephase-after",
+      "linkingText": [
+        "\"after\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "TimelinePhase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-timelinephase-enumeration",
+        "title": "The TimelinePhase enumeration",
+        "number": "6.4.3"
       },
       "definedIn": "pre"
     },
@@ -3814,7 +4300,10 @@
       "id": "dom-keyframeeffect-keyframeeffect",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-keyframeeffect-keyframeeffect",
       "linkingText": [
-        "KeyframeEffect(target, keyframes, options)"
+        "KeyframeEffect(target, keyframes, options)",
+        "constructor(target, keyframes, options)",
+        "KeyframeEffect(target, keyframes)",
+        "constructor(target, keyframes)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -3894,7 +4383,8 @@
       "id": "dom-keyframeeffect-keyframeeffect-source",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-keyframeeffect-keyframeeffect-source",
       "linkingText": [
-        "KeyframeEffect(source)"
+        "KeyframeEffect(source)",
+        "constructor(source)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -3951,10 +4441,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-keyframeeffect-iterationcomposite",
-      "href": "https://www.w3.org/TR/web-animations-1/#dom-keyframeeffect-iterationcomposite",
+      "id": "dom-keyframeeffect-pseudoelement",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-keyframeeffect-pseudoelement",
       "linkingText": [
-        "iterationComposite"
+        "pseudoElement"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -4413,26 +4903,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-keyframeeffectoptions-iterationcomposite",
-      "href": "https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectoptions-iterationcomposite",
-      "linkingText": [
-        "iterationComposite"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "KeyframeEffectOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-keyframeeffectoptions-dictionary",
-        "title": "The KeyframeEffectOptions dictionary",
-        "number": "6.6.4"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-keyframeeffectoptions-composite",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectoptions-composite",
       "linkingText": [
@@ -4453,80 +4923,24 @@
       "definedIn": "dt"
     },
     {
-      "id": "iterationcompositeoperation",
-      "href": "https://www.w3.org/TR/web-animations-1/#iterationcompositeoperation",
+      "id": "dom-keyframeeffectoptions-pseudoelement",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectoptions-pseudoelement",
       "linkingText": [
-        "IterationCompositeOperation"
+        "pseudoElement"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-iterationcompositeoperation-enumeration",
-        "title": "The IterationCompositeOperation enumeration",
-        "number": "6.7"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "enumdef-iterationcompositeoperation",
-      "href": "https://www.w3.org/TR/web-animations-1/#enumdef-iterationcompositeoperation",
-      "linkingText": [
-        "IterationCompositeOperation"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-iterationcompositeoperation-enumeration",
-        "title": "The IterationCompositeOperation enumeration",
-        "number": "6.7"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-iterationcompositeoperation-replace",
-      "href": "https://www.w3.org/TR/web-animations-1/#dom-iterationcompositeoperation-replace",
-      "linkingText": [
-        "\"replace\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
+      "type": "dict-member",
       "for": [
-        "IterationCompositeOperation"
+        "KeyframeEffectOptions"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "the-iterationcompositeoperation-enumeration",
-        "title": "The IterationCompositeOperation enumeration",
-        "number": "6.7"
+        "id": "the-keyframeeffectoptions-dictionary",
+        "title": "The KeyframeEffectOptions dictionary",
+        "number": "6.6.4"
       },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-iterationcompositeoperation-accumulate",
-      "href": "https://www.w3.org/TR/web-animations-1/#dom-iterationcompositeoperation-accumulate",
-      "linkingText": [
-        "\"accumulate\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "IterationCompositeOperation"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-iterationcompositeoperation-enumeration",
-        "title": "The IterationCompositeOperation enumeration",
-        "number": "6.7"
-      },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "compositeoperation",
@@ -4542,7 +4956,7 @@
       "heading": {
         "id": "the-compositeoperation-enumeration",
         "title": "The CompositeOperation and CompositeOperationOrAuto enumerations",
-        "number": "6.8"
+        "number": "6.7"
       },
       "definedIn": "prose"
     },
@@ -4560,7 +4974,7 @@
       "heading": {
         "id": "the-compositeoperation-enumeration",
         "title": "The CompositeOperation and CompositeOperationOrAuto enumerations",
-        "number": "6.8"
+        "number": "6.7"
       },
       "definedIn": "pre"
     },
@@ -4568,6 +4982,7 @@
       "id": "dom-compositeoperation-replace",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-compositeoperation-replace",
       "linkingText": [
+        "\"replace\"",
         "replace"
       ],
       "localLinkingText": [],
@@ -4581,7 +4996,7 @@
       "heading": {
         "id": "the-compositeoperation-enumeration",
         "title": "The CompositeOperation and CompositeOperationOrAuto enumerations",
-        "number": "6.8"
+        "number": "6.7"
       },
       "definedIn": "dt"
     },
@@ -4589,6 +5004,7 @@
       "id": "dom-compositeoperation-add",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-compositeoperation-add",
       "linkingText": [
+        "\"add\"",
         "add"
       ],
       "localLinkingText": [],
@@ -4602,7 +5018,7 @@
       "heading": {
         "id": "the-compositeoperation-enumeration",
         "title": "The CompositeOperation and CompositeOperationOrAuto enumerations",
-        "number": "6.8"
+        "number": "6.7"
       },
       "definedIn": "dt"
     },
@@ -4610,6 +5026,7 @@
       "id": "dom-compositeoperation-accumulate",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-compositeoperation-accumulate",
       "linkingText": [
+        "\"accumulate\"",
         "accumulate"
       ],
       "localLinkingText": [],
@@ -4623,7 +5040,7 @@
       "heading": {
         "id": "the-compositeoperation-enumeration",
         "title": "The CompositeOperation and CompositeOperationOrAuto enumerations",
-        "number": "6.8"
+        "number": "6.7"
       },
       "definedIn": "dt"
     },
@@ -4641,7 +5058,7 @@
       "heading": {
         "id": "the-compositeoperation-enumeration",
         "title": "The CompositeOperation and CompositeOperationOrAuto enumerations",
-        "number": "6.8"
+        "number": "6.7"
       },
       "definedIn": "pre"
     },
@@ -4649,6 +5066,7 @@
       "id": "dom-compositeoperationorauto-auto",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-compositeoperationorauto-auto",
       "linkingText": [
+        "\"auto\"",
         "auto"
       ],
       "localLinkingText": [],
@@ -4661,7 +5079,7 @@
       "heading": {
         "id": "the-compositeoperation-enumeration",
         "title": "The CompositeOperation and CompositeOperationOrAuto enumerations",
-        "number": "6.8"
+        "number": "6.7"
       },
       "definedIn": "dt"
     },
@@ -4679,7 +5097,7 @@
       "heading": {
         "id": "the-animatable-interface-mixin",
         "title": "The Animatable interface mixin",
-        "number": "6.9"
+        "number": "6.8"
       },
       "definedIn": "pre"
     },
@@ -4697,7 +5115,25 @@
       "heading": {
         "id": "the-animatable-interface-mixin",
         "title": "The Animatable interface mixin",
-        "number": "6.9"
+        "number": "6.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-getanimationsoptions",
+      "href": "https://www.w3.org/TR/web-animations-1/#dictdef-getanimationsoptions",
+      "linkingText": [
+        "GetAnimationsOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animatable-interface-mixin",
+        "title": "The Animatable interface mixin",
+        "number": "6.8"
       },
       "definedIn": "pre"
     },
@@ -4705,7 +5141,8 @@
       "id": "dom-animatable-animate",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-animatable-animate",
       "linkingText": [
-        "animate(keyframes, options)"
+        "animate(keyframes, options)",
+        "animate(keyframes)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -4717,7 +5154,7 @@
       "heading": {
         "id": "the-animatable-interface-mixin",
         "title": "The Animatable interface mixin",
-        "number": "6.9"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -4737,7 +5174,7 @@
       "heading": {
         "id": "the-animatable-interface-mixin",
         "title": "The Animatable interface mixin",
-        "number": "6.9"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -4757,7 +5194,7 @@
       "heading": {
         "id": "the-animatable-interface-mixin",
         "title": "The Animatable interface mixin",
-        "number": "6.9"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -4765,6 +5202,7 @@
       "id": "dom-animatable-getanimations",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-animatable-getanimations",
       "linkingText": [
+        "getAnimations(options)",
         "getAnimations()"
       ],
       "localLinkingText": [],
@@ -4777,7 +5215,47 @@
       "heading": {
         "id": "the-animatable-interface-mixin",
         "title": "The Animatable interface mixin",
-        "number": "6.9"
+        "number": "6.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "relevant-animation",
+      "href": "https://www.w3.org/TR/web-animations-1/#relevant-animation",
+      "linkingText": [
+        "relevant animation"
+      ],
+      "localLinkingText": [
+        "relevant"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-animatable-interface-mixin",
+        "title": "The Animatable interface mixin",
+        "number": "6.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-animatable-getanimations-options-options",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-animatable-getanimations-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Animatable/getAnimations(options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animatable-interface-mixin",
+        "title": "The Animatable interface mixin",
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -4797,7 +5275,47 @@
       "heading": {
         "id": "the-animatable-interface-mixin",
         "title": "The Animatable interface mixin",
-        "number": "6.9"
+        "number": "6.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-keyframeanimationoptions-timeline",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-keyframeanimationoptions-timeline",
+      "linkingText": [
+        "timeline"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KeyframeAnimationOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animatable-interface-mixin",
+        "title": "The Animatable interface mixin",
+        "number": "6.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-getanimationsoptions-subtree",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-getanimationsoptions-subtree",
+      "linkingText": [
+        "subtree"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GetAnimationsOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animatable-interface-mixin",
+        "title": "The Animatable interface mixin",
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -4817,69 +5335,29 @@
       "heading": {
         "id": "extensions-to-the-document-interface",
         "title": "Extensions to the Document interface",
-        "number": "6.10"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-document-getanimations",
-      "href": "https://www.w3.org/TR/web-animations-1/#dom-document-getanimations",
+      "id": "dom-documentorshadowroot-getanimations",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-documentorshadowroot-getanimations",
       "linkingText": [
         "getAnimations()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "Document"
+        "DocumentOrShadowRoot"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "extensions-to-the-document-interface",
-        "title": "Extensions to the Document interface",
+        "id": "extensions-to-the-documentorshadowroot-interface-mixin",
+        "title": "Extensions to the DocumentOrShadowRoot interface mixin",
         "number": "6.10"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-type",
-      "href": "https://www.w3.org/TR/web-animations-1/#dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-type",
-      "linkingText": [
-        "type"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AnimationPlaybackEvent/AnimationPlaybackEvent(type, eventInitDict)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-animationplaybackevent-interface",
-        "title": "The AnimationPlaybackEvent interface",
-        "number": "6.13"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-eventinitdict",
-      "href": "https://www.w3.org/TR/web-animations-1/#dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-eventinitdict",
-      "linkingText": [
-        "eventInitDict"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "AnimationPlaybackEvent/AnimationPlaybackEvent(type, eventInitDict)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-animationplaybackevent-interface",
-        "title": "The AnimationPlaybackEvent interface",
-        "number": "6.13"
-      },
-      "definedIn": "pre"
     },
     {
       "id": "animationplaybackevent",
@@ -4895,7 +5373,53 @@
       "heading": {
         "id": "the-animationplaybackevent-interface",
         "title": "The AnimationPlaybackEvent interface",
-        "number": "6.13"
+        "number": "6.12"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-type",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type, eventInitDict)",
+        "AnimationPlaybackEvent/constructor(type, eventInitDict)",
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type)",
+        "AnimationPlaybackEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "6.12"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-eventinitdict",
+      "href": "https://www.w3.org/TR/web-animations-1/#dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type, eventInitDict)",
+        "AnimationPlaybackEvent/constructor(type, eventInitDict)",
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type)",
+        "AnimationPlaybackEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "6.12"
       },
       "definedIn": "pre"
     },
@@ -4913,7 +5437,7 @@
       "heading": {
         "id": "the-animationplaybackevent-interface",
         "title": "The AnimationPlaybackEvent interface",
-        "number": "6.13"
+        "number": "6.12"
       },
       "definedIn": "pre"
     },
@@ -4921,7 +5445,10 @@
       "id": "dom-animationplaybackevent-animationplaybackevent",
       "href": "https://www.w3.org/TR/web-animations-1/#dom-animationplaybackevent-animationplaybackevent",
       "linkingText": [
-        "AnimationPlaybackEvent(type, eventInitDict)"
+        "AnimationPlaybackEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "AnimationPlaybackEvent(type)",
+        "constructor(type)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -4933,7 +5460,7 @@
       "heading": {
         "id": "the-animationplaybackevent-interface",
         "title": "The AnimationPlaybackEvent interface",
-        "number": "6.13"
+        "number": "6.12"
       },
       "definedIn": "dt"
     },
@@ -4953,7 +5480,7 @@
       "heading": {
         "id": "the-animationplaybackevent-interface",
         "title": "The AnimationPlaybackEvent interface",
-        "number": "6.13"
+        "number": "6.12"
       },
       "definedIn": "dt"
     },
@@ -4973,7 +5500,7 @@
       "heading": {
         "id": "the-animationplaybackevent-interface",
         "title": "The AnimationPlaybackEvent interface",
-        "number": "6.13"
+        "number": "6.12"
       },
       "definedIn": "dt"
     },
@@ -4993,7 +5520,7 @@
       "heading": {
         "id": "the-animationplaybackevent-interface",
         "title": "The AnimationPlaybackEvent interface",
-        "number": "6.13"
+        "number": "6.12"
       },
       "definedIn": "dt"
     },
@@ -5013,7 +5540,7 @@
       "heading": {
         "id": "the-animationplaybackevent-interface",
         "title": "The AnimationPlaybackEvent interface",
-        "number": "6.13"
+        "number": "6.12"
       },
       "definedIn": "dt"
     },
@@ -5050,8 +5577,7 @@
       "informative": false,
       "heading": {
         "id": "animating-shadow-lists",
-        "title": "Animation of box-shadow",
-        "number": "12.3"
+        "title": "Animation of box-shadow"
       },
       "definedIn": "prose"
     }

@@ -274,7 +274,7 @@
             "title": "Web Animations",
             "url": "https://www.w3.org/TR/web-animations-1/"
           },
-          "fragment": "interface mixin Animatable {\n    Animation           animate (object? keyframes,\n                                 optional (unrestricted double or KeyframeAnimationOptions) options);\n    sequence<Animation> getAnimations ();\n};",
+          "fragment": "interface mixin Animatable {\n    Animation           animate(object? keyframes,\n                                optional (unrestricted double or KeyframeAnimationOptions) options = {});\n    sequence<Animation> getAnimations(optional GetAnimationsOptions options = {});\n};",
           "href": "https://www.w3.org/TR/web-animations-1/#animatable"
         },
         "extended": [],

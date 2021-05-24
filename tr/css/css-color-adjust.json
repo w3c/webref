@@ -8,7 +8,7 @@
       "name": "color-scheme",
       "value": "normal | [ light | dark | <custom-ident> ]+",
       "initial": "normal",
-      "appliesTo": "all elements",
+      "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "the keyword normal, or an ordered list of specified color scheme keywords",
@@ -19,15 +19,15 @@
       "name": "forced-color-adjust",
       "value": "auto | none",
       "initial": "auto",
-      "appliesTo": "all elements",
+      "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animatable": "not animatable"
+      "animationType": "not animatable"
     },
-    "color-adjust": {
-      "name": "color-adjust",
+    "print-color-adjust": {
+      "name": "print-color-adjust",
       "value": "economy | exact",
       "initial": "economy",
       "appliesTo": "all elements",
@@ -36,6 +36,17 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete"
+    },
+    "color-adjust": {
+      "name": "color-adjust",
+      "value": "<print-color-adjust>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar"
     }
   },
   "descriptors": {},

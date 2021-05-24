@@ -5,7 +5,7 @@
       "title": "Web Animations",
       "url": "https://www.w3.org/TR/web-animations-1/"
     },
-    "fragment": "[Exposed=Window,\n Constructor (DOMString type, optional AnimationPlaybackEventInit eventInitDict)]\ninterface AnimationPlaybackEvent : Event {\n    readonly attribute double? currentTime;\n    readonly attribute double? timelineTime;\n};",
+    "fragment": "[Exposed=Window]\ninterface AnimationPlaybackEvent : Event {\n    constructor(DOMString type, optional AnimationPlaybackEventInit eventInitDict = {});\n    readonly attribute double? currentTime;\n    readonly attribute double? timelineTime;\n};",
     "href": "https://www.w3.org/TR/web-animations-1/#animationplaybackevent"
   },
   "extended": [],

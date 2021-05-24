@@ -5,7 +5,7 @@
       "title": "Web Animations",
       "url": "https://www.w3.org/TR/web-animations-1/"
     },
-    "fragment": "[Exposed=Window,\n Constructor (optional DocumentTimelineOptions options)]\ninterface DocumentTimeline : AnimationTimeline {\n};",
+    "fragment": "[Exposed=Window]\ninterface DocumentTimeline : AnimationTimeline {\n  constructor(optional DocumentTimelineOptions options = {});\n};",
     "href": "https://www.w3.org/TR/web-animations-1/#documenttimeline"
   },
   "extended": [],
@@ -16,7 +16,7 @@
         "title": "Web Animations",
         "url": "https://www.w3.org/TR/web-animations-1/"
       },
-      "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n    readonly attribute double? currentTime;\n};",
+      "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n    readonly attribute double? currentTime;\n    readonly attribute TimelinePhase phase;\n};",
       "href": "https://www.w3.org/TR/web-animations-1/#animationtimeline"
     },
     "extended": [

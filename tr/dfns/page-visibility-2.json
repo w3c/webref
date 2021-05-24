@@ -12,12 +12,90 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "visibility-states-and-the-visibilitystate-enum",
-        "title": "Visibility states and the VisibilityState enum",
+        "id": "visibility-states",
+        "title": "Visibility states",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-hidden",
+      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-hidden",
+      "linkingText": [
+        "hidden"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "visibility-states",
+        "title": "Visibility states",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-visible",
+      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-visible",
+      "linkingText": [
+        "visible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "visibility-states",
+        "title": "Visibility states",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-determine-the-visibility-state",
+      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-determine-the-visibility-state",
+      "linkingText": [
+        "determine the visibility state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "visibility-states",
+        "title": "Visibility states",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-visibilitystate",
+      "href": "https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate",
+      "linkingText": [
+        "VisibilityState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "visibilitystate-enum",
+        "title": "VisibilityState enum",
         "number": "4"
       },
       "definedIn": "prose"
@@ -29,18 +107,18 @@
         "hidden"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "enum-value",
       "for": [
-        "visibilitystate"
+        "VisibilityState"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "visibility-states-and-the-visibilitystate-enum",
-        "title": "Visibility states and the VisibilityState enum",
+        "id": "visibilitystate-enum",
+        "title": "VisibilityState enum",
         "number": "4"
       },
-      "definedIn": "dt"
+      "definedIn": "prose"
     },
     {
       "id": "dom-visibilitystate-visible",
@@ -49,18 +127,18 @@
         "visible"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "enum-value",
       "for": [
-        "visibilitystate"
+        "VisibilityState"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "visibility-states-and-the-visibilitystate-enum",
-        "title": "Visibility states and the VisibilityState enum",
+        "id": "visibilitystate-enum",
+        "title": "VisibilityState enum",
         "number": "4"
       },
-      "definedIn": "dt"
+      "definedIn": "prose"
     },
     {
       "id": "dom-document-hidden",
@@ -68,73 +146,43 @@
       "linkingText": [
         "hidden"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "localLinkingText": [
+        "Document.hidden"
+      ],
+      "type": "attribute",
       "for": [
-        "document"
+        "Document"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "hidden-attribute",
         "title": "hidden attribute",
         "number": "5.1"
       },
-      "definedIn": "prose"
+      "definedIn": "heading"
     },
     {
-      "id": "dfn-steps-to-determine-if-the-document-is-hidden",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-steps-to-determine-if-the-document-is-hidden",
-      "linkingText": [
-        "steps to determine if the document is hidden"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "hidden-attribute",
-        "title": "hidden attribute",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-visibilitystate",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate",
+      "id": "dom-document-visibilitystate",
+      "href": "https://www.w3.org/TR/page-visibility-2/#dom-document-visibilitystate",
       "linkingText": [
         "visibilityState"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "visibilitystate-attribute",
-        "title": "visibilityState attribute",
-        "number": "5.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-steps-to-determine-the-visibility-state",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-steps-to-determine-the-visibility-state",
-      "linkingText": [
-        "steps to determine the visibility state"
+      "localLinkingText": [
+        "Document.visibilityState"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "visibilitystate-attribute",
         "title": "visibilityState attribute",
         "number": "5.2"
       },
-      "definedIn": "prose"
+      "definedIn": "heading"
     },
     {
       "id": "dom-document-onvisibilitychange",
@@ -142,35 +190,19 @@
       "linkingText": [
         "onvisibilitychange"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
+      "localLinkingText": [
+        "Document.onvisibilitychange"
+      ],
+      "type": "attribute",
       "for": [
-        "document"
+        "Document"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "onvisiblitychange-event-handler",
-        "title": "onvisiblitychange event handler",
+        "id": "onvisibilitychange-event-handler-attribute",
+        "title": "onvisibilitychange event handler attribute",
         "number": "5.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-visibilitychange",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-visibilitychange",
-      "linkingText": [
-        "visibilitychange"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "reacting-to-visibilitychange-changes",
-        "title": "Reacting to visibilitychange changes",
-        "number": "6"
       },
       "definedIn": "heading"
     },
@@ -181,13 +213,31 @@
         "now visible algorithm"
       ],
       "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reacting-to-visibilitychange-changes",
+        "title": "Reacting to \"visibilitychange\" changes",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-external-now-visible-algorithm",
+      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-external-now-visible-algorithm",
+      "linkingText": [
+        "external now visible algorithm"
+      ],
+      "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "reacting-to-visibilitychange-changes",
-        "title": "Reacting to visibilitychange changes",
+        "title": "Reacting to \"visibilitychange\" changes",
         "number": "6"
       },
       "definedIn": "prose"
@@ -199,50 +249,32 @@
         "now hidden algorithm"
       ],
       "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "reacting-to-visibilitychange-changes",
+        "title": "Reacting to \"visibilitychange\" changes",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-external-now-hidden-algorithm",
+      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-external-now-hidden-algorithm",
+      "linkingText": [
+        "external now hidden algorithm"
+      ],
+      "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "reacting-to-visibilitychange-changes",
-        "title": "Reacting to visibilitychange changes",
+        "title": "Reacting to \"visibilitychange\" changes",
         "number": "6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-defaultview",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-defaultview",
-      "linkingText": [
-        "defaultView"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "title": "Terminology",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-pageshow",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-pageshow",
-      "linkingText": [
-        "pageshow"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "title": "Terminology",
-        "number": "8"
       },
       "definedIn": "prose"
     },
@@ -260,25 +292,7 @@
       "heading": {
         "id": "terminology",
         "title": "Terminology",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-top-level-browsing-context",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-top-level-browsing-context",
-      "linkingText": [
-        "top level browsing context"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "title": "Terminology",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "prose"
     },
@@ -296,151 +310,7 @@
       "heading": {
         "id": "terminology",
         "title": "Terminology",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-unload",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-unload",
-      "linkingText": [
-        "unload"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "title": "Terminology",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-document",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dom-document",
-      "linkingText": [
-        "Document"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "title": "Terminology",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-blur",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-blur",
-      "linkingText": [
-        "blur"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "title": "Terminology",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-focus",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-focus",
-      "linkingText": [
-        "focus"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "title": "Terminology",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-queue-a-task",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-queue-a-task",
-      "linkingText": [
-        "queue a task"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "title": "Terminology",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-task-source",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-task-source",
-      "linkingText": [
-        "task source"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "title": "Terminology",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-task",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-task",
-      "linkingText": [
-        "task"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "title": "Terminology",
-        "number": "8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-fire-a-simple-event",
-      "href": "https://www.w3.org/TR/page-visibility-2/#dfn-fire-a-simple-event",
-      "linkingText": [
-        "fire a simple event"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "terminology",
-        "title": "Terminology",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "prose"
     }

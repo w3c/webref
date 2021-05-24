@@ -2,6 +2,7 @@
 [Exposed=Window]
 interface AnimationTimeline {
     readonly attribute double? currentTime;
+    readonly attribute TimelinePhase phase;
 };
 
 // Source: Web Animations Level 2 (https://drafts.csswg.org/web-animations-2/)
