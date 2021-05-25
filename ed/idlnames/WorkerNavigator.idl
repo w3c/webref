@@ -2,9 +2,6 @@
 [Exposed=Worker]
 interface WorkerNavigator {};
 
-// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
-WorkerNavigator includes NavigatorGPU;
-
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 WorkerNavigator includes NavigatorID;
 
@@ -66,3 +63,6 @@ partial interface WorkerNavigator {
 partial interface WorkerNavigator {
   [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;
 };
+
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
+WorkerNavigator includes NavigatorGPU;

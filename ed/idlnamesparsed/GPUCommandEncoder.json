@@ -3,7 +3,7 @@
   "defined": {
     "spec": {
       "title": "WebGPU",
-      "url": "https://gpuweb.github.io/gpuweb/"
+      "url": "https://www.w3.org/TR/webgpu/"
     },
     "fragment": "[Exposed=Window]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpucommandencoder"
@@ -12,7 +12,7 @@
     {
       "spec": {
         "title": "WebGPU",
-        "url": "https://gpuweb.github.io/gpuweb/"
+        "url": "https://www.w3.org/TR/webgpu/"
       },
       "fragment": "GPUCommandEncoder includes GPUObjectBase;"
     }
@@ -24,7 +24,7 @@
       "defined": {
         "spec": {
           "title": "WebGPU",
-          "url": "https://gpuweb.github.io/gpuweb/"
+          "url": "https://www.w3.org/TR/webgpu/"
         },
         "fragment": "interface mixin GPUObjectBase {\n    attribute USVString? label;\n};",
         "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"

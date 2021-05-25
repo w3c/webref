@@ -272,7 +272,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
-- Crawled version: 17 May 2021
+- Crawled version: 25 May 2021
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -993,6 +993,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
+- [Document Policy](https://wicg.github.io/document-policy/)
 - [Preload](https://w3c.github.io/preload/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -6478,7 +6479,7 @@ No informative reference to this spec from other specs.
 - Initial URL: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Crawled URL: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
 - Crawled version: 11 May 2021
-- Editor's Draft: [https://w3c.github.io/screen-fold/](https://w3c.github.io/screen-fold/)
+- Editor's Draft: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
 - Latest published version: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Shortname: device-posture
 
@@ -6530,6 +6531,32 @@ Informative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
+
+
+## Document Policy {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/document-policy/](https://wicg.github.io/document-policy/)
+- Crawled URL: [https://wicg.github.io/document-policy/](https://wicg.github.io/document-policy/)
+- Crawled version: 22 February 2021
+- Editor's Draft: [https://wicg.github.io/document-policy/](https://wicg.github.io/document-policy/)
+- Shortname: document-policy
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/reporting/`](https://w3c.github.io/reporting/), related reference "REPORTING" uses URL [`https://www.w3.org/TR/reporting-1/`](https://www.w3.org/TR/reporting-1/)
+- External links to private terms:
+     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
+     * [`https://html.spec.whatwg.org/#concept-request-origin`](https://html.spec.whatwg.org/#concept-request-origin)
+     * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## DOM Parsing and Serialization {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -6642,6 +6669,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
+- [Document Policy](https://wicg.github.io/document-policy/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
@@ -6846,10 +6874,10 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
-- Crawled URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
+- Initial URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
+- Crawled URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
 - Crawled version: 12 May 2021
-- Editor's Draft: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
+- Editor's Draft: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
 - Shortname: ecmascript
 
 ### Potential issue(s) {.anomalies}
@@ -6862,29 +6890,11 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
-- [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Battery Status API](https://w3c.github.io/battery/)
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [Console Standard](https://console.spec.whatwg.org/)
-- [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
-- [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
-- [DOM Standard](https://dom.spec.whatwg.org/)
 - [Early detection of input events](https://wicg.github.io/is-input-pending/)
-- [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
-- [File API](https://w3c.github.io/FileAPI/)
-- [File System Access](https://wicg.github.io/file-system-access/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
-- [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Idle Detection API](https://wicg.github.io/idle-detection/)
-- [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
-- [Infra Standard](https://infra.spec.whatwg.org/)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
-- [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
-- [Long Tasks API 1](https://w3c.github.io/longtasks/)
-- [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
-- [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
@@ -6892,43 +6902,18 @@ Normative references to this spec from:
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
-- [Permissions](https://w3c.github.io/permissions/)
-- [Portals](https://wicg.github.io/portals/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Push API](https://w3c.github.io/push-api/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
-- [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- [Storage Standard](https://storage.spec.whatwg.org/)
-- [Streams Standard](https://streams.spec.whatwg.org/)
-- [The Storage Access API](https://privacycg.github.io/storage-access/)
-- [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
-- [Web Audio API](https://webaudio.github.io/web-audio-api/)
-- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
-- [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
-- [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
-- [Web Cryptography API](https://w3c.github.io/webcrypto/)
-- [Web IDL](https://heycam.github.io/webidl/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
-- [WebCodecs](https://w3c.github.io/webcodecs/)
-- [WebDriver](https://w3c.github.io/webdriver/)
-- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
-- [WebGPU](https://gpuweb.github.io/gpuweb/)
-- [WebUSB API](https://wicg.github.io/webusb/)
-- [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
 
-- [Cookie Store API](https://wicg.github.io/cookie-store/)
-- [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Tracking Preference Expression (DNT)](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
-- [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
@@ -7220,6 +7205,7 @@ Normative references to this spec from:
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [Document Policy](https://wicg.github.io/document-policy/)
 - [Fetch Metadata Request Headers](https://w3c.github.io/webappsec-fetch-metadata/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
@@ -8919,6 +8905,7 @@ Normative references to this spec from:
 - [Device Memory 1](https://w3c.github.io/device-memory/)
 - [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
+- [Document Policy](https://wicg.github.io/document-policy/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Early detection of input events](https://wicg.github.io/is-input-pending/)
@@ -11580,7 +11567,9 @@ Normative references to this spec from:
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Document Policy](https://wicg.github.io/document-policy/)
 
 
 ## Picture-in-Picture {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -12290,6 +12279,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Crash Reporting](https://wicg.github.io/crash-reporting/)
 - [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
+- [Document Policy](https://wicg.github.io/document-policy/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Intervention Reporting](https://wicg.github.io/intervention-reporting/)
@@ -17421,11 +17411,12 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
+- Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Crawled version: 21 May 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Shortname: gpuweb
+- Latest published version: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
+- Shortname: webgpu
 
 ### Potential issue(s) {.anomalies}
 
@@ -17433,6 +17424,37 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#the-image-argument-is-not-origin-clean`](https://html.spec.whatwg.org/#the-image-argument-is-not-origin-clean)
      * [`https://html.spec.whatwg.org/#concept-canvas-origin-clean`](https://html.spec.whatwg.org/#concept-canvas-origin-clean)
      * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [WebGPU Shading Language](https://gpuweb.github.io/gpuweb/wgsl/)
+
+No informative reference to this spec from other specs.
+
+
+## WebGPU Shading Language {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
+- Crawled URL: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
+- Crawled version: 21 May 2021
+- Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
+- Latest published version: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
+- Shortname: WGSL
+
+### Potential issue(s) {.anomalies}
+
+- External links to private terms:
+     * [`https://gpuweb.github.io/gpuweb/#gpu-command`](https://gpuweb.github.io/gpuweb/#gpu-command)
+     * [`https://gpuweb.github.io/gpuweb/#binding-resource-type`](https://gpuweb.github.io/gpuweb/#binding-resource-type)
+     * [`https://gpuweb.github.io/gpuweb/#binding-type`](https://gpuweb.github.io/gpuweb/#binding-type)
+     * [`https://gpuweb.github.io/gpuweb/#front-facing`](https://gpuweb.github.io/gpuweb/#front-facing)
+     * [`https://gpuweb.github.io/gpuweb/#shader-output-mask`](https://gpuweb.github.io/gpuweb/#shader-output-mask)
+- Broken external links:
+     * [`https://gpuweb.github.io/gpuweb/#dom-gpurenderpipelinedescriptor-samplecount`](https://gpuweb.github.io/gpuweb/#dom-gpurenderpipelinedescriptor-samplecount)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -17590,10 +17612,11 @@ No informative reference to this spec from other specs.
 
 ### Spec info {.info}
 
-- Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
+- Initial URL: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Crawled version: 18 May 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
+- Latest published version: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Shortname: webtransport
 
 ### Potential issue(s) {.anomalies}

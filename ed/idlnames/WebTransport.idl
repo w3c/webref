@@ -1,4 +1,4 @@
-// Source: WebTransport (https://w3c.github.io/webtransport/)
+// Source: WebTransport (https://www.w3.org/TR/webtransport/)
 [Exposed=(Window,Worker)]
 interface WebTransport {
   constructor(USVString url, optional WebTransportOptions options = {});
@@ -18,5 +18,5 @@ interface WebTransport {
   readonly attribute ReadableStream incomingBidirectionalStreams;
 };
 
-// Source: WebTransport (https://w3c.github.io/webtransport/)
+// Source: WebTransport (https://www.w3.org/TR/webtransport/)
 WebTransport includes UnidirectionalStreamsTransport;

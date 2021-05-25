@@ -1,4 +1,4 @@
-// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
 [Exposed=Window, Serializable]
 interface GPUBuffer {
     Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);
@@ -8,5 +8,5 @@ interface GPUBuffer {
     undefined destroy();
 };
 
-// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
 GPUBuffer includes GPUObjectBase;
