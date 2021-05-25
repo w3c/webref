@@ -73,8 +73,11 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## List of specifications with invalid WebIDL content
 
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 
-=> 0 specification found
+=> 1 specification found
+
+WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
 
 ## List of specifications with obsolete WebIDL constructs
@@ -3193,8 +3196,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#concept-cache`](https://fetch.spec.whatwg.org/#concept-cache)
      * [`https://fetch.spec.whatwg.org/#concept-websocket-establish`](https://fetch.spec.whatwg.org/#concept-websocket-establish)
      * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
-     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
-     * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
 - [Proximity Sensor](https://w3c.github.io/proximity/):
      * [`https://w3c.github.io/sensors/#reduce-accuracy`](https://w3c.github.io/sensors/#reduce-accuracy)
      * [`https://w3c.github.io/sensors/#limit-max-frequency`](https://w3c.github.io/sensors/#limit-max-frequency)
@@ -3817,7 +3818,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1309 problematic external links found in 203 specifications
+=> 1307 problematic external links found in 203 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -5182,6 +5183,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/uievents-code/#code-quote`](https://www.w3.org/TR/uievents-code/#code-quote)
 - [Layout Instability API](https://wicg.github.io/layout-instability/):
      * [`https://www.w3.org/TR/css-values-4/#pixel-unit`](https://www.w3.org/TR/css-values-4/#pixel-unit)
+     * [`https://wicg.github.io/visual-viewport/#dom-visualviewport-width`](https://wicg.github.io/visual-viewport/#dom-visualviewport-width)
+     * [`https://wicg.github.io/visual-viewport/#dom-visualviewport-height`](https://wicg.github.io/visual-viewport/#dom-visualviewport-height)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/):
      * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
      * [`https://www.w3.org/TR/css-color-3/#foreground`](https://www.w3.org/TR/css-color-3/#foreground)
@@ -5309,8 +5312,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Prioritized Task Scheduling](https://wicg.github.io/scheduling-apis/):
      * [`https://html.spec.whatwg.org/#concept-source`](https://html.spec.whatwg.org/#concept-source)
      * [`https://html.spec.whatwg.org/#concept-document`](https://html.spec.whatwg.org/#concept-document)
-- [Private Network Access](https://wicg.github.io/private-network-access/):
-     * [`https://html.spec.whatwg.org/#concept-document-csp-list`](https://html.spec.whatwg.org/#concept-document-csp-list)
 - [Proximity Sensor](https://w3c.github.io/proximity/):
      * [`https://w3c.github.io/sensors/#sensor-readings`](https://w3c.github.io/sensors/#sensor-readings)
 - [Push API](https://w3c.github.io/push-api/):
@@ -5516,7 +5517,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 584 problematic external links found in 155 specifications
+=> 585 problematic external links found in 154 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

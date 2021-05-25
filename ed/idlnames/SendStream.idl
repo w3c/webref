@@ -1,6 +1,6 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
 [ Exposed=(Window,Worker) ]
 interface SendStream : WritableStream /* of Uint8Array */ {
-  readonly attribute Promise<StreamAbortInfo> writingAborted;
-  undefined abortWriting(optional StreamAbortInfo abortInfo = {});
+  readonly attribute Promise<StreamAbortInfo> remoteCanceled;
+  undefined reset(optional StreamAbortInfo abortInfo = {});
 };

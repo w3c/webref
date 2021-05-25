@@ -2555,7 +2555,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 24 May 2021
+- Crawled version: 25 May 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Latest published version: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Shortname: css-color-5
@@ -6909,6 +6909,7 @@ Normative references to this spec from:
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
+- [WebGPU](https://gpuweb.github.io/gpuweb/)
 
 Informative references to this spec from:
 
@@ -9497,6 +9498,7 @@ Normative references to this spec from:
 - [Portals](https://wicg.github.io/portals/)
 - [Prioritized Task Scheduling](https://wicg.github.io/scheduling-apis/)
 - [Private Click Measurement](https://privacycg.github.io/private-click-measurement/)
+- [Private Network Access](https://wicg.github.io/private-network-access/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
@@ -9854,6 +9856,8 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp`](https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp)
 - Broken external links:
      * [`https://www.w3.org/TR/css-values-4/#pixel-unit`](https://www.w3.org/TR/css-values-4/#pixel-unit)
+     * [`https://wicg.github.io/visual-viewport/#dom-visualviewport-width`](https://wicg.github.io/visual-viewport/#dom-visualviewport-width)
+     * [`https://wicg.github.io/visual-viewport/#dom-visualviewport-height`](https://wicg.github.io/visual-viewport/#dom-visualviewport-height)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -11914,7 +11918,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/private-network-access/](https://wicg.github.io/private-network-access/)
 - Crawled URL: [https://wicg.github.io/private-network-access/](https://wicg.github.io/private-network-access/)
-- Crawled version: 5 May 2021
+- Crawled version: 25 May 2021
 - Editor's Draft: [https://wicg.github.io/private-network-access/](https://wicg.github.io/private-network-access/)
 - Shortname: private-network-access
 
@@ -11928,12 +11932,8 @@ No informative reference to this spec from other specs.
      * [`https://fetch.spec.whatwg.org/#concept-cache`](https://fetch.spec.whatwg.org/#concept-cache)
      * [`https://fetch.spec.whatwg.org/#concept-websocket-establish`](https://fetch.spec.whatwg.org/#concept-websocket-establish)
      * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
-     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
-     * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
 - External links that neither target definitions nor headings:
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
-- Broken external links:
-     * [`https://html.spec.whatwg.org/#concept-document-csp-list`](https://html.spec.whatwg.org/#concept-document-csp-list)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -14846,18 +14846,19 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Visual Viewport API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+## Visual Viewport API {data-spec=true data-anomaly=true data-hasInvalidIdl=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
 - Crawled URL: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
-- Crawled version: 24 February 2020
+- Crawled version: 25 May 2021
 - Editor's Draft: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
 - Shortname: visual-viewport
 
 ### Potential issue(s) {.anomalies}
 
+- Invalid WebIDL content found
 - External links to private terms:
      * [`https://www.w3.org/TR/css-overflow-4/#classic-scrollbars`](https://www.w3.org/TR/css-overflow-4/#classic-scrollbars)
      * [`https://www.w3.org/TR/cssom-view-1/#page-zoom`](https://www.w3.org/TR/cssom-view-1/#page-zoom)
@@ -17413,7 +17414,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 21 May 2021
+- Crawled version: 25 May 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Latest published version: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Shortname: webgpu
@@ -17440,7 +17441,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
-- Crawled version: 21 May 2021
+- Crawled version: 25 May 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
 - Latest published version: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Shortname: WGSL
@@ -17614,7 +17615,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 18 May 2021
+- Crawled version: 25 May 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Latest published version: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Shortname: webtransport

@@ -2,64 +2,12 @@
 % Reffy
 % May 25, 2021
 
-## Document Policy
+## Visual Viewport API
 
-- Initial URL: [https://wicg.github.io/document-policy/](https://wicg.github.io/document-policy/)
+- Initial URL: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/document-policy/](https://wicg.github.io/document-policy/)
-- This specification was not in the reference crawl report.
-
-
-## ECMAScript® 2022 Language Specification
-
-- Initial URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
-- This specification was not in the reference crawl report.
-
-
-## ECMAScript® 2022 Language Specification
-
-- Initial URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
-- Crawled URL: [https://tc39.es/ecma262/](https://tc39.es/ecma262/)
-- This specification is not in the new crawl report.
-
-
-## WebGPU
-
-- Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- This specification was not in the reference crawl report.
-
-
-## WebGPU
-
-- Initial URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- This specification is not in the new crawl report.
-
-
-## WebGPU Shading Language
-
-- Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
-- This specification was not in the reference crawl report.
-
-
-## WebTransport
-
-- Initial URL: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- This specification was not in the reference crawl report.
-
-
-## WebTransport
-
-- Initial URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- This specification is not in the new crawl report.
+- Editor's Draft: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
+- Invalid WebIDL content found: *INS* true / *DEL* false
+- Obsolete WebIDL constructs found: *DEL* false
 
 

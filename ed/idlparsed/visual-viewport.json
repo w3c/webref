@@ -4,233 +4,47 @@
     "url": "https://wicg.github.io/visual-viewport/"
   },
   "idlparsed": {
-    "jsNames": {
-      "constructors": {},
-      "functions": {
-        "Window": [
-          "VisualViewport"
-        ]
+    "name": "WebIDLParseError",
+    "bareMessage": "No opening bracket after FrozenArray",
+    "context": "Syntax error at line 18, since `interface VisualViewport`:\n  readonly attribute FrozenArray segments;\n                                 ^",
+    "line": 18,
+    "input": "segments;\n\n  attribute EventHandler onresize",
+    "tokens": [
+      {
+        "type": "identifier",
+        "value": "segments",
+        "trivia": " ",
+        "line": 18,
+        "index": 64
+      },
+      {
+        "type": "inline",
+        "value": ";",
+        "trivia": "",
+        "line": 18,
+        "index": 65
+      },
+      {
+        "type": "inline",
+        "value": "attribute",
+        "trivia": "\n\n  ",
+        "line": 20,
+        "index": 66
+      },
+      {
+        "type": "identifier",
+        "value": "EventHandler",
+        "trivia": " ",
+        "line": 20,
+        "index": 67
+      },
+      {
+        "type": "identifier",
+        "value": "onresize",
+        "trivia": " ",
+        "line": 20,
+        "index": 68
       }
-    },
-    "idlNames": {
-      "VisualViewport": {
-        "fragment": "[Exposed=Window]\ninterface VisualViewport : EventTarget {\n  readonly attribute double offsetLeft;\n  readonly attribute double offsetTop;\n\n  readonly attribute double pageLeft;\n  readonly attribute double pageTop;\n\n  readonly attribute double width;\n  readonly attribute double height;\n\n  readonly attribute double scale;\n\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n};",
-        "type": "interface",
-        "name": "VisualViewport",
-        "inheritance": "EventTarget",
-        "members": [
-          {
-            "type": "attribute",
-            "name": "offsetLeft",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "offsetTop",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "pageLeft",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "pageTop",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "width",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "height",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "scale",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "onresize",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "onscroll",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      }
-    },
-    "idlExtendedNames": {
-      "Window": [
-        {
-          "fragment": "partial interface Window {\n  [SameObject, Replaceable] readonly attribute VisualViewport visualViewport;\n};",
-          "type": "interface",
-          "name": "Window",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "attribute",
-              "name": "visualViewport",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "VisualViewport"
-              },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "SameObject",
-                  "rhs": null,
-                  "arguments": []
-                },
-                {
-                  "type": "extended-attribute",
-                  "name": "Replaceable",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
-              "special": "",
-              "readonly": true
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        }
-      ]
-    },
-    "globals": {},
-    "exposed": {
-      "Window": [
-        "VisualViewport"
-      ]
-    },
-    "dependencies": {
-      "Window": [
-        "VisualViewport"
-      ],
-      "VisualViewport": [
-        "EventTarget",
-        "EventHandler"
-      ]
-    },
-    "externalDependencies": [
-      "Window",
-      "EventTarget",
-      "EventHandler"
-    ],
-    "hasObsoleteIdl": false
+    ]
   }
 }

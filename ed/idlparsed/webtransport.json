@@ -700,14 +700,14 @@
         "partial": false
       },
       "SendStream": {
-        "fragment": "[ Exposed=(Window,Worker) ]\ninterface SendStream : WritableStream /* of Uint8Array */ {\n  readonly attribute Promise<StreamAbortInfo> writingAborted;\n  undefined abortWriting(optional StreamAbortInfo abortInfo = {});\n};",
+        "fragment": "[ Exposed=(Window,Worker) ]\ninterface SendStream : WritableStream /* of Uint8Array */ {\n  readonly attribute Promise<StreamAbortInfo> remoteCanceled;\n  undefined reset(optional StreamAbortInfo abortInfo = {});\n};",
         "type": "interface",
         "name": "SendStream",
         "inheritance": "WritableStream",
         "members": [
           {
             "type": "attribute",
-            "name": "writingAborted",
+            "name": "remoteCanceled",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -731,7 +731,7 @@
           },
           {
             "type": "operation",
-            "name": "abortWriting",
+            "name": "reset",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -820,14 +820,14 @@
         "partial": false
       },
       "ReceiveStream": {
-        "fragment": "[ Exposed=(Window,Worker) ]\ninterface ReceiveStream : ReadableStream /* of Uint8Array */ {\n  readonly attribute Promise<StreamAbortInfo> readingAborted;\n  undefined abortReading(optional StreamAbortInfo abortInfo = {});\n};",
+        "fragment": "[ Exposed=(Window,Worker) ]\ninterface ReceiveStream : ReadableStream /* of Uint8Array */ {\n  readonly attribute Promise<StreamAbortInfo> remoteReset;\n};",
         "type": "interface",
         "name": "ReceiveStream",
         "inheritance": "ReadableStream",
         "members": [
           {
             "type": "attribute",
-            "name": "readingAborted",
+            "name": "remoteReset",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -848,40 +848,6 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "abortReading",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "abortInfo",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "StreamAbortInfo"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
           }
         ],
         "extAttrs": [

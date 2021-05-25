@@ -5,7 +5,7 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "[ Exposed=(Window,Worker) ]\ninterface SendStream : WritableStream /* of Uint8Array */ {\n  readonly attribute Promise<StreamAbortInfo> writingAborted;\n  undefined abortWriting(optional StreamAbortInfo abortInfo = {});\n};",
+    "fragment": "[ Exposed=(Window,Worker) ]\ninterface SendStream : WritableStream /* of Uint8Array */ {\n  readonly attribute Promise<StreamAbortInfo> remoteCanceled;\n  undefined reset(optional StreamAbortInfo abortInfo = {});\n};",
     "href": "https://w3c.github.io/webtransport/#sendstream"
   },
   "extended": [],
