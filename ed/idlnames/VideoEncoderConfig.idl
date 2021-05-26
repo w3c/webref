@@ -1,11 +1,11 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
 dictionary VideoEncoderConfig {
   required DOMString codec;
-  unsigned long long bitrate;
-  required unsigned long width;
-  required unsigned long height;
-  unsigned long displayWidth;
-  unsigned long displayHeight;
+  [EnforceRange] unsigned long long bitrate;
+  [EnforceRange] required unsigned long width;
+  [EnforceRange] required unsigned long height;
+  [EnforceRange] unsigned long displayWidth;
+  [EnforceRange] unsigned long displayHeight;
   HardwareAcceleration hardwareAcceleration = "allow";
   DOMString scalabilityMode;
 };

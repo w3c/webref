@@ -1,7 +1,7 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
 dictionary AudioEncoderConfig {
   required DOMString codec;
-  unsigned long sampleRate;
-  unsigned long numberOfChannels;
-  unsigned long long bitrate;
+  [EnforceRange] unsigned long sampleRate;
+  [EnforceRange] unsigned long numberOfChannels;
+  [EnforceRange] unsigned long long bitrate;
 };

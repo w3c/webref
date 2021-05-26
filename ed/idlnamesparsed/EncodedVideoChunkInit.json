@@ -5,7 +5,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  required long long timestamp;    // microseconds\n  long long duration;              // microseconds\n  required BufferSource data;\n};",
+    "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  [EnforceRange] required long long timestamp;    // microseconds\n  [EnforceRange] long long duration;              // microseconds\n  required BufferSource data;\n};",
     "href": "https://w3c.github.io/webcodecs/#dictdef-encodedvideochunkinit"
   },
   "extended": [],

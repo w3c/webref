@@ -5,7 +5,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "dictionary VideoFramePlaneInit {\n  required PixelFormat format;\n  required unsigned long codedWidth;\n  required unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  long long duration;     // microseconds\n  long long timestamp;    // microseconds\n};",
+    "fragment": "dictionary VideoFramePlaneInit {\n  required PixelFormat format;\n  [EnforceRange] required unsigned long codedWidth;\n  [EnforceRange] required unsigned long codedHeight;\n  [EnforceRange] unsigned long cropLeft;\n  [EnforceRange] unsigned long cropTop;\n  [EnforceRange] unsigned long cropWidth;\n  [EnforceRange] unsigned long cropHeight;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] long long duration;     // microseconds\n  [EnforceRange] long long timestamp;    // microseconds\n};",
     "href": "https://w3c.github.io/webcodecs/#dictdef-videoframeplaneinit"
   },
   "extended": [],

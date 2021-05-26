@@ -4,7 +4,7 @@ dictionary ImageDecoderInit {
   required ImageBufferSource data;
   PremultiplyAlpha premultiplyAlpha = "default";
   ColorSpaceConversion colorSpaceConversion = "default";
-  unsigned long desiredWidth;
-  unsigned long desiredHeight;
+  [EnforceRange] unsigned long desiredWidth;
+  [EnforceRange] unsigned long desiredHeight;
   boolean preferAnimation;
 };

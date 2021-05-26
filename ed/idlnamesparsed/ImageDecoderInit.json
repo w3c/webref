@@ -5,7 +5,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "dictionary ImageDecoderInit {\n  required DOMString type;\n  required ImageBufferSource data;\n  PremultiplyAlpha premultiplyAlpha = \"default\";\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  unsigned long desiredWidth;\n  unsigned long desiredHeight;\n  boolean preferAnimation;\n};",
+    "fragment": "dictionary ImageDecoderInit {\n  required DOMString type;\n  required ImageBufferSource data;\n  PremultiplyAlpha premultiplyAlpha = \"default\";\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  [EnforceRange] unsigned long desiredWidth;\n  [EnforceRange] unsigned long desiredHeight;\n  boolean preferAnimation;\n};",
     "href": "https://w3c.github.io/webcodecs/#dictdef-imagedecoderinit"
   },
   "extended": [],
