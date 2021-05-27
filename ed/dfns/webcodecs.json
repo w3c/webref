@@ -23,6 +23,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "key-chunk",
+      "href": "https://w3c.github.io/webcodecs/#key-chunk",
+      "linkingText": [
+        "Key Chunk",
+        "Key Frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "internal-pending-output",
       "href": "https://w3c.github.io/webcodecs/#internal-pending-output",
       "linkingText": [
@@ -568,6 +587,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-audiodecoder-key-chunk-required-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiodecoder-key-chunk-required-slot",
+      "linkingText": [
+        "[[key chunk required]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-audiodecoder-audiodecoder",
       "href": "https://w3c.github.io/webcodecs/#dom-audiodecoder-audiodecoder",
       "linkingText": [
@@ -1058,6 +1097,46 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videodecoder-active-decoder-config-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-active-decoder-config-slot",
+      "linkingText": [
+        "[[active decoder config]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videodecoder-key-chunk-required-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-key-chunk-required-slot",
+      "linkingText": [
+        "[[key chunk required]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videodecoder-videodecoder",
       "href": "https://w3c.github.io/webcodecs/#dom-videodecoder-videodecoder",
       "linkingText": [
@@ -1243,24 +1322,6 @@
       "href": "https://w3c.github.io/webcodecs/#output-videoframes",
       "linkingText": [
         "Output VideoFrames"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "videodecoder-algorithms",
-        "title": "Algorithms",
-        "number": "4.5"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "create-a-videoframe",
-      "href": "https://w3c.github.io/webcodecs/#create-a-videoframe",
-      "linkingText": [
-        "Create a VideoFrame"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3066,10 +3127,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videodecoderconfig-cropleft",
-      "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-cropleft",
+      "id": "dom-videodecoderconfig-displayaspectwidth",
+      "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-displayaspectwidth",
       "linkingText": [
-        "cropLeft"
+        "displayAspectWidth"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -3086,90 +3147,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videodecoderconfig-croptop",
-      "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-croptop",
+      "id": "dom-videodecoderconfig-displayaspectheight",
+      "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-displayaspectheight",
       "linkingText": [
-        "cropTop"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoDecoderConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "video-decoder-config",
-        "title": "VideoDecoderConfig",
-        "number": "7.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videodecoderconfig-cropwidth",
-      "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-cropwidth",
-      "linkingText": [
-        "cropWidth"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoDecoderConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "video-decoder-config",
-        "title": "VideoDecoderConfig",
-        "number": "7.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videodecoderconfig-cropheight",
-      "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-cropheight",
-      "linkingText": [
-        "cropHeight"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoDecoderConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "video-decoder-config",
-        "title": "VideoDecoderConfig",
-        "number": "7.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videodecoderconfig-displaywidth",
-      "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-displaywidth",
-      "linkingText": [
-        "displayWidth"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoDecoderConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "video-decoder-config",
-        "title": "VideoDecoderConfig",
-        "number": "7.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videodecoderconfig-displayheight",
-      "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-displayheight",
-      "linkingText": [
-        "displayHeight"
+        "displayAspectHeight"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -4503,15 +4484,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-audiodata-copyto-destination-planenumber-destination",
-      "href": "https://w3c.github.io/webcodecs/#dom-audiodata-copyto-destination-planenumber-destination",
+      "id": "dom-audiodata-allocationsize-options-options",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiodata-allocationsize-options-options",
       "linkingText": [
-        "destination"
+        "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioData/copyTo(destination, planeNumber)"
+        "AudioData/allocationSize(options)"
       ],
       "access": "public",
       "informative": false,
@@ -4523,15 +4504,35 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-audiodata-copyto-destination-planenumber-planenumber",
-      "href": "https://w3c.github.io/webcodecs/#dom-audiodata-copyto-destination-planenumber-planenumber",
+      "id": "dom-audiodata-copyto-destination-options-destination",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiodata-copyto-destination-options-destination",
       "linkingText": [
-        "planeNumber"
+        "destination"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "AudioData/copyTo(destination, planeNumber)"
+        "AudioData/copyTo(destination, options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-interface",
+        "title": "AudioData Interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiodata-copyto-destination-options-options",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiodata-copyto-destination-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AudioData/copyTo(destination, options)"
       ],
       "access": "public",
       "informative": false,
@@ -4922,26 +4923,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-audiodata-allocationsize",
-      "href": "https://w3c.github.io/webcodecs/#dom-audiodata-allocationsize",
-      "linkingText": [
-        "allocationSize"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AudioData"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audiodata-attributes",
-        "title": "Attributes",
-        "number": "9.2.3"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-audiodata-timestamp",
       "href": "https://w3c.github.io/webcodecs/#dom-audiodata-timestamp",
       "linkingText": [
@@ -4982,10 +4963,30 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-audiodata-allocationsize",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiodata-allocationsize",
+      "linkingText": [
+        "allocationSize(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioData"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-methods",
+        "title": "Methods",
+        "number": "9.2.4"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-audiodata-copyto",
       "href": "https://w3c.github.io/webcodecs/#dom-audiodata-copyto",
       "linkingText": [
-        "copyTo(destination, planeNumber)"
+        "copyTo(destination, options)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -5042,6 +5043,24 @@
       "definedIn": "dt"
     },
     {
+      "id": "compute-copy-element-count",
+      "href": "https://w3c.github.io/webcodecs/#compute-copy-element-count",
+      "linkingText": [
+        "Compute Copy Element Count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-algorithms",
+        "title": "Algorithms",
+        "number": "9.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "clone-audiodata",
       "href": "https://w3c.github.io/webcodecs/#clone-audiodata",
       "linkingText": [
@@ -5056,6 +5075,84 @@
         "id": "audiodata-algorithms",
         "title": "Algorithms",
         "number": "9.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-audiodatacopytooptions",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-audiodatacopytooptions",
+      "linkingText": [
+        "AudioDataCopyToOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-copy-to-options",
+        "title": "AudioDataCopyToOptions",
+        "number": "9.2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-audiodatacopytooptions-planeindex",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiodatacopytooptions-planeindex",
+      "linkingText": [
+        "planeIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDataCopyToOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-copy-to-options",
+        "title": "AudioDataCopyToOptions",
+        "number": "9.2.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodatacopytooptions-frameoffset",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiodatacopytooptions-frameoffset",
+      "linkingText": [
+        "frameOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDataCopyToOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-copy-to-options",
+        "title": "AudioDataCopyToOptions",
+        "number": "9.2.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodatacopytooptions-framecount",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiodatacopytooptions-framecount",
+      "linkingText": [
+        "frameCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AudioDataCopyToOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-copy-to-options",
+        "title": "AudioDataCopyToOptions",
+        "number": "9.2.6"
       },
       "definedIn": "dt"
     },
@@ -6229,6 +6326,24 @@
         "number": "9.4.4"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "create-a-videoframe",
+      "href": "https://w3c.github.io/webcodecs/#create-a-videoframe",
+      "linkingText": [
+        "Create a VideoFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-algorithms",
+        "title": "Algorithms",
+        "number": "9.4.5"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "valid-videoframeplaneinit",

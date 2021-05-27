@@ -7,11 +7,11 @@ interface AudioData {
   readonly attribute float sampleRate;
   readonly attribute unsigned long numberOfFrames;
   readonly attribute unsigned long numberOfChannels;
-  readonly attribute unsigned long allocationSize;
   readonly attribute long long duration;     // microseconds
   readonly attribute long long timestamp;    // microseconds
 
-  undefined copyTo([AllowShared] BufferSource destination, unsigned long planeNumber);
+  unsigned long allocationSize(AudioDataCopyToOptions options);
+  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);
   AudioData clone();
   undefined close();
 };

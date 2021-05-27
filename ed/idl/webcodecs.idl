@@ -140,12 +140,8 @@ dictionary VideoDecoderConfig {
   BufferSource description;
   [EnforceRange] unsigned long codedWidth;
   [EnforceRange] unsigned long codedHeight;
-  [EnforceRange] unsigned long cropLeft;
-  [EnforceRange] unsigned long cropTop;
-  [EnforceRange] unsigned long cropWidth;
-  [EnforceRange] unsigned long cropHeight;
-  [EnforceRange] unsigned long displayWidth;
-  [EnforceRange] unsigned long displayHeight;
+  [EnforceRange] unsigned long displayAspectWidth;
+  [EnforceRange] unsigned long displayAspectHeight;
   HardwareAcceleration hardwareAcceleration = "allow";
 };
 
@@ -237,11 +233,11 @@ interface AudioData {
   readonly attribute float sampleRate;
   readonly attribute unsigned long numberOfFrames;
   readonly attribute unsigned long numberOfChannels;
-  readonly attribute unsigned long allocationSize;
   readonly attribute long long duration;     // microseconds
   readonly attribute long long timestamp;    // microseconds
 
-  undefined copyTo([AllowShared] BufferSource destination, unsigned long planeNumber);
+  unsigned long allocationSize(AudioDataCopyToOptions options);
+  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);
   AudioData clone();
   undefined close();
 };
@@ -253,6 +249,12 @@ dictionary AudioDataInit {
   [EnforceRange] required unsigned long numberOfChannels;
   [EnforceRange] required long long timestamp;    // microseconds
   required BufferSource data;
+};
+
+dictionary AudioDataCopyToOptions {
+  required unsigned long planeIndex;
+  unsigned long frameOffset = 0;
+  unsigned long frameCount;
 };
 
 enum AudioSampleFormat {

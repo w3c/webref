@@ -1647,7 +1647,7 @@
         "partial": false
       },
       "VideoDecoderConfig": {
-        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long cropLeft;\n  [EnforceRange] unsigned long cropTop;\n  [EnforceRange] unsigned long cropWidth;\n  [EnforceRange] unsigned long cropHeight;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
+        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
         "type": "dictionary",
         "name": "VideoDecoderConfig",
         "inheritance": null,
@@ -1728,7 +1728,7 @@
           },
           {
             "type": "field",
-            "name": "cropLeft",
+            "name": "displayAspectWidth",
             "extAttrs": [
               {
                 "type": "extended-attribute",
@@ -1750,95 +1750,7 @@
           },
           {
             "type": "field",
-            "name": "cropTop",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "cropWidth",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "cropHeight",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "displayWidth",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "displayHeight",
+            "name": "displayAspectHeight",
             "extAttrs": [
               {
                 "type": "extended-attribute",
@@ -2685,7 +2597,7 @@
         "extAttrs": []
       },
       "AudioData": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat sampleFormat;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute unsigned long allocationSize;\n  readonly attribute long long duration;     // microseconds\n  readonly attribute long long timestamp;    // microseconds\n\n  undefined copyTo([AllowShared] BufferSource destination, unsigned long planeNumber);\n  AudioData clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat sampleFormat;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute long long duration;     // microseconds\n  readonly attribute long long timestamp;    // microseconds\n\n  unsigned long allocationSize(AudioDataCopyToOptions options);\n  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);\n  AudioData clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "AudioData",
         "inheritance": null,
@@ -2774,21 +2686,6 @@
           },
           {
             "type": "attribute",
-            "name": "allocationSize",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
             "name": "duration",
             "idlType": {
               "type": "attribute-type",
@@ -2816,6 +2713,38 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "allocationSize",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AudioDataCopyToOptions"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
           },
           {
             "type": "operation",
@@ -2854,7 +2783,7 @@
               },
               {
                 "type": "argument",
-                "name": "planeNumber",
+                "name": "options",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -2862,7 +2791,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "unsigned long"
+                  "idlType": "AudioDataCopyToOptions"
                 },
                 "default": null,
                 "optional": false,
@@ -3046,6 +2975,64 @@
             },
             "default": null,
             "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AudioDataCopyToOptions": {
+        "fragment": "dictionary AudioDataCopyToOptions {\n  required unsigned long planeIndex;\n  unsigned long frameOffset = 0;\n  unsigned long frameCount;\n};",
+        "type": "dictionary",
+        "name": "AudioDataCopyToOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "planeIndex",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "frameOffset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "frameCount",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -4763,11 +4750,13 @@
       "AudioData": [
         "AudioDataInit",
         "AudioSampleFormat",
+        "AudioDataCopyToOptions",
         "AudioData"
       ],
       "AudioDataInit": [
         "AudioSampleFormat"
       ],
+      "AudioDataCopyToOptions": [],
       "VideoFrame": [
         "CanvasImageSource",
         "VideoFrameInit",
