@@ -73,11 +73,8 @@ Basically all specifications have normative dependencies on some other specifica
 
 ## List of specifications with invalid WebIDL content
 
-- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 
-=> 1 specification found
-
-WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
+=> 0 specification found
 
 
 ## List of specifications with obsolete WebIDL constructs
@@ -5181,8 +5178,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/uievents-code/#code-quote`](https://www.w3.org/TR/uievents-code/#code-quote)
 - [Layout Instability API](https://wicg.github.io/layout-instability/):
      * [`https://www.w3.org/TR/css-values-4/#pixel-unit`](https://www.w3.org/TR/css-values-4/#pixel-unit)
-     * [`https://wicg.github.io/visual-viewport/#dom-visualviewport-width`](https://wicg.github.io/visual-viewport/#dom-visualviewport-width)
-     * [`https://wicg.github.io/visual-viewport/#dom-visualviewport-height`](https://wicg.github.io/visual-viewport/#dom-visualviewport-height)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/):
      * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
      * [`https://www.w3.org/TR/css-color-3/#foreground`](https://www.w3.org/TR/css-color-3/#foreground)
@@ -5515,7 +5510,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 585 problematic external links found in 154 specifications
+=> 583 problematic external links found in 154 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

@@ -115,6 +115,11 @@ partial interface Window {
     [SameObject] readonly attribute SpeechSynthesis speechSynthesis;
 };
 
+// Source: Visual Viewport API (https://wicg.github.io/visual-viewport/)
+partial interface Window {
+  [SameObject, Replaceable] readonly attribute VisualViewport visualViewport;
+};
+
 // Source: CSS Spatial Navigation Level 1 (https://www.w3.org/TR/css-nav-1/)
 partial interface Window {
     undefined navigate(SpatialNavigationDirection dir);

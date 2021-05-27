@@ -12,6 +12,8 @@ interface VisualViewport : EventTarget {
 
   readonly attribute double scale;
 
+  readonly attribute FrozenArray<DOMRect> segments;
+
   attribute EventHandler onresize;
   attribute EventHandler onscroll;
 };

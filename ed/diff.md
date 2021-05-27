@@ -2,11 +2,12 @@
 % Reffy
 % May 27, 2021
 
-## Private Network Access
+## Visual Viewport API
 
-- Initial URL: [https://wicg.github.io/private-network-access/](https://wicg.github.io/private-network-access/)
+- Initial URL: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/private-network-access/](https://wicg.github.io/private-network-access/)
-- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-secure-contexts/
+- Editor's Draft: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
+- Invalid WebIDL content found: *INS* false / *DEL* true
+- Obsolete WebIDL constructs found: *INS* false
 
 
