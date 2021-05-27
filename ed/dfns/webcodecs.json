@@ -5157,6 +5157,60 @@
       "definedIn": "dt"
     },
     {
+      "id": "audio-sample-type",
+      "href": "https://w3c.github.io/webcodecs/#audio-sample-type",
+      "linkingText": [
+        "audio sample type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-formats",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sample",
+      "href": "https://w3c.github.io/webcodecs/#sample",
+      "linkingText": [
+        "sample"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-formats",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "frame",
+      "href": "https://w3c.github.io/webcodecs/#frame",
+      "linkingText": [
+        "frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-formats",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "enumdef-audiosampleformat",
       "href": "https://w3c.github.io/webcodecs/#enumdef-audiosampleformat",
       "linkingText": [
@@ -5168,7 +5222,7 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audio-sample-format",
+        "id": "audio-sample-formats",
         "title": "Audio Sample Format",
         "number": "9.3"
       },
@@ -5189,7 +5243,7 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audio-sample-format",
+        "id": "audio-sample-formats",
         "title": "Audio Sample Format",
         "number": "9.3"
       },
@@ -5210,7 +5264,28 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audio-sample-format",
+        "id": "audio-sample-formats",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosampleformat-s24",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-s24",
+      "linkingText": [
+        "\"S24\"",
+        "S24"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-formats",
         "title": "Audio Sample Format",
         "number": "9.3"
       },
@@ -5231,7 +5306,7 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audio-sample-format",
+        "id": "audio-sample-formats",
         "title": "Audio Sample Format",
         "number": "9.3"
       },
@@ -5252,7 +5327,28 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audio-sample-format",
+        "id": "audio-sample-formats",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosampleformat-u8p",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-u8p",
+      "linkingText": [
+        "\"U8P\"",
+        "U8P"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-formats",
         "title": "Audio Sample Format",
         "number": "9.3"
       },
@@ -5273,7 +5369,28 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audio-sample-format",
+        "id": "audio-sample-formats",
+        "title": "Audio Sample Format",
+        "number": "9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiosampleformat-s24p",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-s24p",
+      "linkingText": [
+        "\"S24P\"",
+        "S24P"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AudioSampleFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audio-sample-formats",
         "title": "Audio Sample Format",
         "number": "9.3"
       },
@@ -5294,7 +5411,7 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audio-sample-format",
+        "id": "audio-sample-formats",
         "title": "Audio Sample Format",
         "number": "9.3"
       },
@@ -5315,11 +5432,101 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "audio-sample-format",
+        "id": "audio-sample-formats",
         "title": "Audio Sample Format",
         "number": "9.3"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "interleaved",
+      "href": "https://w3c.github.io/webcodecs/#interleaved",
+      "linkingText": [
+        "interleaved"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-buffer-arrangement",
+        "title": "Arrangement of audio buffer",
+        "number": "9.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "planar",
+      "href": "https://w3c.github.io/webcodecs/#planar",
+      "linkingText": [
+        "planar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-buffer-arrangement",
+        "title": "Arrangement of audio buffer",
+        "number": "9.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "minimum-value",
+      "href": "https://w3c.github.io/webcodecs/#minimum-value",
+      "linkingText": [
+        "minimum value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-samples-magnitude",
+        "title": "Magnitude of the audio samples",
+        "number": "9.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "maximum-value",
+      "href": "https://w3c.github.io/webcodecs/#maximum-value",
+      "linkingText": [
+        "maximum value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-samples-magnitude",
+        "title": "Magnitude of the audio samples",
+        "number": "9.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bias-value",
+      "href": "https://w3c.github.io/webcodecs/#bias-value",
+      "linkingText": [
+        "bias value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audio-samples-magnitude",
+        "title": "Magnitude of the audio samples",
+        "number": "9.3.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "videoframe",

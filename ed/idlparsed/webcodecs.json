@@ -3039,7 +3039,7 @@
         "partial": false
       },
       "AudioSampleFormat": {
-        "fragment": "enum AudioSampleFormat {\n  \"U8\",\n  \"S16\",\n  \"S32\",\n  \"FLT\",\n  \"S16P\",\n  \"S32P\",\n  \"FLTP\",\n};",
+        "fragment": "enum AudioSampleFormat {\n  \"U8\",\n  \"S16\",\n  \"S24\",\n  \"S32\",\n  \"FLT\",\n  \"U8P\",\n  \"S16P\",\n  \"S24P\",\n  \"S32P\",\n  \"FLTP\",\n};",
         "type": "enum",
         "name": "AudioSampleFormat",
         "values": [
@@ -3053,6 +3053,10 @@
           },
           {
             "type": "enum-value",
+            "value": "S24"
+          },
+          {
+            "type": "enum-value",
             "value": "S32"
           },
           {
@@ -3061,7 +3065,15 @@
           },
           {
             "type": "enum-value",
+            "value": "U8P"
+          },
+          {
+            "type": "enum-value",
             "value": "S16P"
+          },
+          {
+            "type": "enum-value",
+            "value": "S24P"
           },
           {
             "type": "enum-value",
