@@ -13490,7 +13490,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Crawled URL: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
-- Crawled version: 21 January 2021
+- Crawled version: 28 May 2021
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Shortname: selection-api
