@@ -28,7 +28,7 @@
         "title": "Measure Memory API",
         "url": "https://wicg.github.io/performance-measure-memory/"
       },
-      "fragment": "partial interface Performance {\n  [CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();\n};"
+      "fragment": "partial interface Performance {\n  [Exposed=(Window,ServiceWorker,SharedWorker), CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();\n};"
     },
     {
       "spec": {

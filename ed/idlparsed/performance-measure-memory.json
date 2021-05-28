@@ -230,7 +230,7 @@
     "idlExtendedNames": {
       "Performance": [
         {
-          "fragment": "partial interface Performance {\n  [CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();\n};",
+          "fragment": "partial interface Performance {\n  [Exposed=(Window,ServiceWorker,SharedWorker), CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();\n};",
           "type": "interface",
           "name": "Performance",
           "inheritance": null,
@@ -257,6 +257,25 @@
               },
               "arguments": [],
               "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "Exposed",
+                  "rhs": {
+                    "type": "identifier-list",
+                    "value": [
+                      {
+                        "value": "Window"
+                      },
+                      {
+                        "value": "ServiceWorker"
+                      },
+                      {
+                        "value": "SharedWorker"
+                      }
+                    ]
+                  },
+                  "arguments": []
+                },
                 {
                   "type": "extended-attribute",
                   "name": "CrossOriginIsolated",

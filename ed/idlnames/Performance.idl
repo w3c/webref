@@ -20,7 +20,7 @@ partial interface Performance {
 
 // Source: Measure Memory API (https://wicg.github.io/performance-measure-memory/)
 partial interface Performance {
-  [CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();
+  [Exposed=(Window,ServiceWorker,SharedWorker), CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();
 };
 
 // Source: Navigation Timing Level 2 (https://www.w3.org/TR/navigation-timing-2/)
