@@ -13,7 +13,10 @@
       "percentages": "relative to the width of the reference box (for the first value) or the height (for the second value)",
       "computedValue": "the keyword none or a pair of computed <length-percentage> values and an absolute length",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value, but see below for none"
+      "animationType": "by computed value, but see below for none",
+      "styleDeclaration": [
+        "translate"
+      ]
     },
     "rotate": {
       "name": "rotate",
@@ -24,7 +27,10 @@
       "percentages": "n/a",
       "computedValue": "the keyword none, or an <angle> with an axis consisting of a list of three <number>s",
       "canonicalOrder": "per grammar",
-      "animationType": "as SLERP, but see below for none"
+      "animationType": "as SLERP, but see below for none",
+      "styleDeclaration": [
+        "rotate"
+      ]
     },
     "scale": {
       "name": "scale",
@@ -35,7 +41,10 @@
       "percentages": "n/a",
       "computedValue": "the keyword none, or a list of 3 <number>s",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value, but see below for none"
+      "animationType": "by computed value, but see below for none",
+      "styleDeclaration": [
+        "scale"
+      ]
     },
     "transform-style": {
       "name": "transform-style",
@@ -47,7 +56,11 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
-      "usedValue": "flat if a grouping property is present, specified keyword otherwise"
+      "usedValue": "flat if a grouping property is present, specified keyword otherwise",
+      "styleDeclaration": [
+        "transform-style",
+        "transformStyle"
+      ]
     },
     "perspective": {
       "name": "perspective",
@@ -58,7 +71,10 @@
       "percentages": "N/A",
       "computedValue": "the keyword none or an absolute length",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "perspective"
+      ]
     },
     "perspective-origin": {
       "name": "perspective-origin",
@@ -69,7 +85,11 @@
       "percentages": "refer to the size of the reference box",
       "computedValue": "see background-position",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "perspective-origin",
+        "perspectiveOrigin"
+      ]
     },
     "backface-visibility": {
       "name": "backface-visibility",
@@ -80,7 +100,11 @@
       "percentages": "N/A",
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "backface-visibility",
+        "backfaceVisibility"
+      ]
     }
   },
   "descriptors": {},

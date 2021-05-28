@@ -13,7 +13,11 @@
       "percentages": "n/a",
       "computedValue": "as defined for <basic-shape> (with <shape-box> following, if supplied); else the computed <image>; else the keyword as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "as defined for <basic-shape>, otherwise discrete"
+      "animationType": "as defined for <basic-shape>, otherwise discrete",
+      "styleDeclaration": [
+        "shape-outside",
+        "shapeOutside"
+      ]
     },
     "shape-image-threshold": {
       "name": "shape-image-threshold",
@@ -24,7 +28,11 @@
       "percentages": "n/a",
       "computedValue": "specified number, clamped to the range [0,1]",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "shape-image-threshold",
+        "shapeImageThreshold"
+      ]
     },
     "shape-margin": {
       "name": "shape-margin",
@@ -35,7 +43,11 @@
       "percentages": "refer to the inline size of the containing block",
       "computedValue": "computed <length-percentage> value",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "shape-margin",
+        "shapeMargin"
+      ]
     }
   },
   "descriptors": {},

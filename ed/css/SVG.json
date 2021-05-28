@@ -13,7 +13,10 @@
       "percentages": "refer to the width of the current SVG viewport (see Units)",
       "media": "visual",
       "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "cx"
+      ]
     },
     "cy": {
       "name": "cy",
@@ -24,7 +27,10 @@
       "percentages": "refer to the height of the current SVG viewport (see Units)",
       "media": "visual",
       "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "cy"
+      ]
     },
     "r": {
       "name": "r",
@@ -35,7 +41,10 @@
       "percentages": "refer to the normalized diagonal of the current SVG viewport (see Units)",
       "media": "visual",
       "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "r"
+      ]
     },
     "rx": {
       "name": "rx",
@@ -46,7 +55,10 @@
       "percentages": "refer to the width of the current SVG viewport (see Units)",
       "media": "visual",
       "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "rx"
+      ]
     },
     "ry": {
       "name": "ry",
@@ -57,7 +69,10 @@
       "percentages": "refer to the height of the current SVG viewport (see Units)",
       "media": "visual",
       "computedValue": "an absolute length or percentage",
-      "animatableType": "by computed value"
+      "animatableType": "by computed value",
+      "styleDeclaration": [
+        "ry"
+      ]
     },
     "x": {
       "name": "x",
@@ -68,7 +83,10 @@
       "percentages": "refer to the width of the current SVG viewport (see Units)",
       "media": "visual",
       "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "x"
+      ]
     },
     "y": {
       "name": "y",
@@ -79,7 +97,10 @@
       "percentages": "refer to the height of the current SVG viewport (see Units)",
       "media": "visual",
       "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "y"
+      ]
     },
     "vector-effect": {
       "name": "vector-effect",
@@ -90,7 +111,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "vector-effect",
+        "vectorEffect"
+      ]
     },
     "d": {
       "name": "d",
@@ -101,7 +126,10 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "See prose"
+      "animationType": "See prose",
+      "styleDeclaration": [
+        "d"
+      ]
     },
     "inline-size": {
       "name": "inline-size",
@@ -112,7 +140,11 @@
       "percentages": "Refer to the width (for horizontal text) or height (for vertical text) of the current SVG viewport (see Units)",
       "media": "visual",
       "computedValue": "an absolute length or percentage",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "inline-size",
+        "inlineSize"
+      ]
     },
     "shape-inside": {
       "name": "shape-inside",
@@ -123,7 +155,11 @@
       "percentages": "Relative to the ‘viewBox’",
       "media": "visual",
       "computedValue": "computed lengths for <shape>, the absolute URI for <uri>, otherwise as specified",
-      "animationType": "See Interpolation of Basic Shapes"
+      "animationType": "See Interpolation of Basic Shapes",
+      "styleDeclaration": [
+        "shape-inside",
+        "shapeInside"
+      ]
     },
     "shape-subtract": {
       "name": "shape-subtract",
@@ -134,7 +170,11 @@
       "percentages": "Relative to the ‘viewBox’",
       "media": "visual",
       "computedValue": "computed lengths for any <basic-shape>, the absolute URI for <uri>, otherwise as specified",
-      "animationType": "See Interpolation of Basic Shapes"
+      "animationType": "See Interpolation of Basic Shapes",
+      "styleDeclaration": [
+        "shape-subtract",
+        "shapeSubtract"
+      ]
     },
     "shape-margin": {
       "name": "shape-margin",
@@ -145,7 +185,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "an absolute length",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "shape-margin",
+        "shapeMargin"
+      ]
     },
     "text-anchor": {
       "name": "text-anchor",
@@ -156,7 +200,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-anchor",
+        "textAnchor"
+      ]
     },
     "fill": {
       "name": "fill",
@@ -167,7 +215,10 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified, but with <color> values computed and <url> values made absolute",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "fill"
+      ]
     },
     "fill-rule": {
       "name": "fill-rule",
@@ -178,7 +229,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "fill-rule",
+        "fillRule"
+      ]
     },
     "fill-opacity": {
       "name": "fill-opacity",
@@ -189,7 +244,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "the specified value converted to a number, clamped to the range [0,1]",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "fill-opacity",
+        "fillOpacity"
+      ]
     },
     "stroke": {
       "name": "stroke",
@@ -200,7 +259,10 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified, but with <color> values computed and <url> values made absolute",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "stroke"
+      ]
     },
     "stroke-opacity": {
       "name": "stroke-opacity",
@@ -211,7 +273,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "the specified value converted to a number, clamped to the range [0,1]",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "stroke-opacity",
+        "strokeOpacity"
+      ]
     },
     "stroke-width": {
       "name": "stroke-width",
@@ -222,7 +288,11 @@
       "percentages": "refer to the normalized diagonal of the current SVG viewport (see Units)",
       "media": "visual",
       "computedValue": "an absolute length or percentage, numbers converted to absolute lengths first",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "stroke-width",
+        "strokeWidth"
+      ]
     },
     "stroke-linecap": {
       "name": "stroke-linecap",
@@ -233,7 +303,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "stroke-linecap",
+        "strokeLinecap"
+      ]
     },
     "stroke-linejoin": {
       "name": "stroke-linejoin",
@@ -244,7 +318,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "stroke-linejoin",
+        "strokeLinejoin"
+      ]
     },
     "stroke-miterlimit": {
       "name": "stroke-miterlimit",
@@ -255,7 +333,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "stroke-miterlimit",
+        "strokeMiterlimit"
+      ]
     },
     "stroke-dasharray": {
       "name": "stroke-dasharray",
@@ -266,7 +348,11 @@
       "percentages": "refer to the normalized diagonal of the current SVG viewport (see Units)",
       "media": "visual",
       "computedValue": "as comma separated list of absolute lengths or percentages, numbers converted to absolute lengths first, or keyword specified",
-      "animationType": "See prose"
+      "animationType": "See prose",
+      "styleDeclaration": [
+        "stroke-dasharray",
+        "strokeDasharray"
+      ]
     },
     "stroke-dashoffset": {
       "name": "stroke-dashoffset",
@@ -277,7 +363,11 @@
       "percentages": "refer to the normalized diagonal of the current SVG viewport (see Units)",
       "media": "visual",
       "computedValue": "an absolute length or percentage, numbers converted to absolute lengths first",
-      "animationType": "by computed value"
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "stroke-dashoffset",
+        "strokeDashoffset"
+      ]
     },
     "marker-start": {
       "name": "marker-start",
@@ -288,7 +378,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified, but with <url> values (that are part of a <marker-ref>) made absolute",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "marker-start",
+        "markerStart"
+      ]
     },
     "marker-mid": {
       "name": "marker-mid",
@@ -299,7 +393,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified, but with <url> values (that are part of a <marker-ref>) made absolute",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "marker-mid",
+        "markerMid"
+      ]
     },
     "marker-end": {
       "name": "marker-end",
@@ -310,7 +408,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified, but with <url> values (that are part of a <marker-ref>) made absolute",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "marker-end",
+        "markerEnd"
+      ]
     },
     "marker": {
       "name": "marker",
@@ -321,7 +423,10 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "see individual properties",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "marker"
+      ]
     },
     "paint-order": {
       "name": "paint-order",
@@ -332,7 +437,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "paint-order",
+        "paintOrder"
+      ]
     },
     "color-interpolation": {
       "name": "color-interpolation",
@@ -343,7 +452,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "color-interpolation",
+        "colorInterpolation"
+      ]
     },
     "shape-rendering": {
       "name": "shape-rendering",
@@ -354,7 +467,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "shape-rendering",
+        "shapeRendering"
+      ]
     },
     "text-rendering": {
       "name": "text-rendering",
@@ -365,7 +482,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-rendering",
+        "textRendering"
+      ]
     },
     "image-rendering": {
       "name": "image-rendering",
@@ -376,7 +497,11 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "image-rendering",
+        "imageRendering"
+      ]
     },
     "pointer-events": {
       "name": "pointer-events",
@@ -387,13 +512,25 @@
       "percentages": "N/A",
       "media": "visual",
       "computedValue": "as specified",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "pointer-events",
+        "pointerEvents"
+      ]
     },
     "stop-color": {
-      "name": "stop-color"
+      "name": "stop-color",
+      "styleDeclaration": [
+        "stop-color",
+        "stopColor"
+      ]
     },
     "stop-opacity": {
-      "name": "stop-opacity"
+      "name": "stop-opacity",
+      "styleDeclaration": [
+        "stop-opacity",
+        "stopOpacity"
+      ]
     }
   },
   "descriptors": {},

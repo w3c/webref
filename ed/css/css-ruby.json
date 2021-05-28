@@ -6,7 +6,10 @@
   "properties": {
     "display": {
       "name": "display",
-      "newValues": "ruby | ruby-base | ruby-text | ruby-base-container | ruby-text-container"
+      "newValues": "ruby | ruby-base | ruby-text | ruby-base-container | ruby-text-container",
+      "styleDeclaration": [
+        "display"
+      ]
     },
     "ruby-position": {
       "name": "ruby-position",
@@ -17,7 +20,11 @@
       "percentages": "n/a",
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "ruby-position",
+        "rubyPosition"
+      ]
     },
     "ruby-merge": {
       "name": "ruby-merge",
@@ -28,7 +35,11 @@
       "percentages": "n/a",
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type"
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "ruby-merge",
+        "rubyMerge"
+      ]
     },
     "ruby-align": {
       "name": "ruby-align",
@@ -39,7 +50,11 @@
       "percentages": "n/a",
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type"
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "ruby-align",
+        "rubyAlign"
+      ]
     },
     "ruby-overhang": {
       "name": "ruby-overhang",
@@ -50,7 +65,11 @@
       "percentages": "n/a",
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type"
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "ruby-overhang",
+        "rubyOverhang"
+      ]
     }
   },
   "descriptors": {},

@@ -12,7 +12,11 @@
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "silent, or a keyword value and optionally also a decibel offset (if not zero)",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-volume",
+        "voiceVolume"
+      ]
     },
     "voice-balance": {
       "name": "voice-balance",
@@ -22,7 +26,11 @@
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "the specified value resolved to a <number> between -100 and 100 (inclusive)",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-balance",
+        "voiceBalance"
+      ]
     },
     "speak": {
       "name": "speak",
@@ -32,7 +40,10 @@
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "specified value",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "speak"
+      ]
     },
     "speak-as": {
       "name": "speak-as",
@@ -42,7 +53,11 @@
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "specified value",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "speak-as",
+        "speakAs"
+      ]
     },
     "pause-before": {
       "name": "pause-before",
@@ -52,7 +67,11 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "specified value",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "pause-before",
+        "pauseBefore"
+      ]
     },
     "pause-after": {
       "name": "pause-after",
@@ -62,7 +81,11 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "specified value",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "pause-after",
+        "pauseAfter"
+      ]
     },
     "pause": {
       "name": "pause",
@@ -72,7 +95,10 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "N/A (see individual properties)",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "pause"
+      ]
     },
     "rest-before": {
       "name": "rest-before",
@@ -82,7 +108,11 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "specified value",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rest-before",
+        "restBefore"
+      ]
     },
     "rest-after": {
       "name": "rest-after",
@@ -92,7 +122,11 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "specified value",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rest-after",
+        "restAfter"
+      ]
     },
     "rest": {
       "name": "rest",
@@ -102,7 +136,10 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "N/A (see individual properties)",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rest"
+      ]
     },
     "cue-before": {
       "name": "cue-before",
@@ -112,7 +149,11 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "specified value",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "cue-before",
+        "cueBefore"
+      ]
     },
     "cue-after": {
       "name": "cue-after",
@@ -122,7 +163,11 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "specified value",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "cue-after",
+        "cueAfter"
+      ]
     },
     "cue": {
       "name": "cue",
@@ -132,7 +177,10 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "N/A (see individual properties)",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "cue"
+      ]
     },
     "voice-family": {
       "name": "voice-family",
@@ -142,7 +190,11 @@
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "specified value",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-family",
+        "voiceFamily"
+      ]
     },
     "voice-rate": {
       "name": "voice-rate",
@@ -152,7 +204,11 @@
       "inherited": "yes",
       "percentages": "refer to default value",
       "computedValue": "a keyword value, and optionally also a percentage relative to the keyword (if not 100%)",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-rate",
+        "voiceRate"
+      ]
     },
     "voice-pitch": {
       "name": "voice-pitch",
@@ -162,7 +218,11 @@
       "inherited": "yes",
       "percentages": "refer to inherited value",
       "computedValue": "one of the predefined pitch keywords if only the keyword is specified by itself, otherwise an absolute frequency calculated by converting the keyword value (if any) to a fixed frequency based on the current voice-family and by applying the specified relative offset (if any)",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-pitch",
+        "voicePitch"
+      ]
     },
     "voice-range": {
       "name": "voice-range",
@@ -172,7 +232,11 @@
       "inherited": "yes",
       "percentages": "refer to inherited value",
       "computedValue": "one of the predefined pitch keywords if only the keyword is specified by itself, otherwise an absolute frequency calculated by converting the keyword value (if any) to a fixed frequency based on the current voice-family and by applying the specified relative offset (if any)",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-range",
+        "voiceRange"
+      ]
     },
     "voice-stress": {
       "name": "voice-stress",
@@ -182,7 +246,11 @@
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "specified value",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-stress",
+        "voiceStress"
+      ]
     },
     "voice-duration": {
       "name": "voice-duration",
@@ -192,7 +260,11 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "specified value",
-      "canonicalOrder": "per grammar"
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-duration",
+        "voiceDuration"
+      ]
     }
   },
   "descriptors": {},

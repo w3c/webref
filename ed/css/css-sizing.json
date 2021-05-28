@@ -13,7 +13,10 @@
       "percentages": "relative to width/height of containing block",
       "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type, recursing into fit-content()"
+      "animationType": "by computed value type, recursing into fit-content()",
+      "styleDeclaration": [
+        "width"
+      ]
     },
     "height": {
       "name": "height",
@@ -24,7 +27,10 @@
       "percentages": "relative to width/height of containing block",
       "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type, recursing into fit-content()"
+      "animationType": "by computed value type, recursing into fit-content()",
+      "styleDeclaration": [
+        "height"
+      ]
     },
     "min-width": {
       "name": "min-width",
@@ -35,7 +41,11 @@
       "percentages": "relative to width/height of containing block",
       "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
-      "animatable": "by computed value, recursing into fit-content()"
+      "animatable": "by computed value, recursing into fit-content()",
+      "styleDeclaration": [
+        "min-width",
+        "minWidth"
+      ]
     },
     "min-height": {
       "name": "min-height",
@@ -46,7 +56,11 @@
       "percentages": "relative to width/height of containing block",
       "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
-      "animatable": "by computed value, recursing into fit-content()"
+      "animatable": "by computed value, recursing into fit-content()",
+      "styleDeclaration": [
+        "min-height",
+        "minHeight"
+      ]
     },
     "max-width": {
       "name": "max-width",
@@ -57,7 +71,11 @@
       "percentages": "relative to width/height of containing block",
       "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
-      "animatable": "by computed value, recursing into fit-content()"
+      "animatable": "by computed value, recursing into fit-content()",
+      "styleDeclaration": [
+        "max-width",
+        "maxWidth"
+      ]
     },
     "max-height": {
       "name": "max-height",
@@ -68,7 +86,11 @@
       "percentages": "relative to width/height of containing block",
       "computedValue": "as specified, with <length-percentage> values computed",
       "canonicalOrder": "per grammar",
-      "animatable": "by computed value, recursing into fit-content()"
+      "animatable": "by computed value, recursing into fit-content()",
+      "styleDeclaration": [
+        "max-height",
+        "maxHeight"
+      ]
     },
     "box-sizing": {
       "name": "box-sizing",
@@ -79,13 +101,21 @@
       "percentages": "N/A",
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete"
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "box-sizing",
+        "boxSizing"
+      ]
     },
     "column-width": {
       "name": "column-width",
       "newValues": "min-content | max-content | fit-content(<length-percentage>)",
       "computedValue": "as specified, with <length-percentage> values computed",
-      "animationType": "by computed value type"
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "column-width",
+        "columnWidth"
+      ]
     }
   },
   "descriptors": {},
