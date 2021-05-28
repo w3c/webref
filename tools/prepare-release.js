@@ -191,9 +191,33 @@ async function prepareRelease(type) {
   console.log(`- HEAD is at ${latestCommitSha}`);
 
   console.log();
+  console.log("Prepare pre-release PR title and body");
+  const title = `📦 Release @webref/${type}@${version}`;
+  const body = `
+**⚠ NEVER add commits to this pull request.**
+
+🤖 This pull request was automatically created to facilitate human review of \`@webref/${type}\` changes.
+
+🧐 Please review the diff below and version numbers. If all looks good, merge this pull request to release the changes to npm.
+
+📦 Latest released \`@webref/${type}\` package was **v${latestReleasedVersion}**. Merging this pull request will release **v${version}**. Make sure that the bump is the right one for the changes.
+
+✍ If any change needs to be made before release, **do not add a commit** to this pull request. Changes should rather be handled in a separate pull request and pushed to the default branch. You may leave this pull request open in the meantime, or close it. The pre-release job will automatically update this pull request or create a new one once the updates have made their way to the default branch.
+
+🛈 The actual change introduced by this pull request is a version bump in \`packages/${type}/package.json\`. You should not need to review that change to decide on whether a new release should be issued. The bumped version is not the version that will be released when this pull request is merged, but rather the version that will be released next time.
+
+\`\`\`diff
+${diff}
+\`\`\``;
+  console.log(`- title: ${title}`);
+
+  console.log();
   console.log("Prepare branch for pre-release PR");
   const prRef = `release-${type}-${uid}`;
-  const commitBumpedVersion = !(pendingPR && pendingPR.base.sha === latestCommitSha);
+  const commitBumpedVersion =       // Create a new branch for the PR if:
+    !pendingPR ||                   // 1. it does not exist yet; or
+    pendingPR.title !== title ||    // 2. version to release has changed; or
+    pendingPR.body !== body;        // 3. diff has changed
   if (commitBumpedVersion) {
     console.log(`- Create new branch ${prRef} for the PR`);
     await octokit.git.createRef({
@@ -203,7 +227,7 @@ async function prepareRelease(type) {
     });
   }
   else {
-    console.log("- Pre-release PR already based on latest commit, no need to update the branch");
+    console.log("- No additional changes to release, no need to rebase existing pre-release PR");
   }
 
   console.log();
@@ -252,24 +276,6 @@ async function prepareRelease(type) {
 
   console.log();
   console.log("Create/Update pre-release PR");
-  const title = `📦 Release @webref/${type}@${version}`;
-  const body = `
-**⚠ NEVER add commits to this pull request.**
-
-🤖 This pull request was automatically created to facilitate human review of \`@webref/${type}\` changes.
-
-🧐 Please review the diff below and version numbers. If all looks good, merge this pull request to release the changes to npm.
-
-📦 Latest released \`@webref/${type}\` package was **v${latestReleasedVersion}**. Merging this pull request will release **v${version}**. Make sure that the bump is the right one for the changes.
-
-✍ If any change needs to be made before release, **do not add a commit** to this pull request. Changes should rather be handled in a separate pull request and pushed to the default branch. You may leave this pull request open in the meantime, or close it. The pre-release job will automatically update this pull request or create a new one once the updates have made their way to the default branch.
-
-🛈 The actual change introduced by this pull request is a version bump in \`packages/${type}/package.json\`. You should not need to review that change to decide on whether a new release should be issued. The bumped version is not the version that will be released when this pull request is merged, but rather the version that will be released next time.
-
-\`\`\`diff
-${diff}
-\`\`\``;
-
   if (pendingPR) {
     if (pendingPR.title === title && pendingPR.body === body) {
       console.log("- Pre-release PR already exists and no need to update title and body");
