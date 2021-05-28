@@ -153,7 +153,7 @@ async function prepareRelease(type) {
 
   console.log();
   console.log("Compute diff between package and repo contents");
-  const diff = computeDiff(type);
+  let diff = computeDiff(type);
   console.log(`- Diff length: ${diff?.length}`);
   if (!diff) {
     if (pendingPR) {
@@ -167,6 +167,19 @@ async function prepareRelease(type) {
 
     console.log("- No diff found, return");
     return;
+  }
+  if (diff.length > 60000) {
+    console.log("- Diff is too long, dump it to the console and truncate");
+    console.log();
+    console.log("----- DIFF BEGINS -----")
+    console.log(diff);
+    console.log("----- DIFF ENDS -----")
+    diff = `IMPORTANT:
+- Diff is too long to render in a PR description: ${diff.length} characters
+- First 60000 characters shown below
+- Check the action log for the full diff
+
+${diff.substring(0, 60000)}`;
   }
 
   console.log();
