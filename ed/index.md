@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% May 28, 2021
+% May 29, 2021
 
 ## [No title found for https://drafts.fxtf.org/geometry/] {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
 
@@ -566,7 +566,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
 - Crawled URL: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
-- Crawled version: 27 May 2021
+- Crawled version: 29 May 2021
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
 - Latest published version: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
 - Shortname: battery-status
